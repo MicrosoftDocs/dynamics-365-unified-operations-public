@@ -112,7 +112,8 @@ To affect both the state of the **New** and **Delete** buttons and the associate
 | Form.Datasources.&lt;FirstMasterDatasource&gt;.AllowDelete | No    | The form doesn't allow record deletion. The form has a disabled system-defined **Delete** button.            |
 | Form.Datasources.&lt;FirstMasterDatasource&gt;.AllowDelete | Yes   | The form allows record deletion. The form has an enabled system-defined **Delete** button (if it's visible). |
 
-**Note:** If the form has a New record action, that button control overrides the enabled state of the system-defined **New** button.
+> [!NOTE]
+> If the form has a New record action, that button control overrides the enabled state of the system-defined **New** button.
 
 ### How do I change the behavior of the New task (either by clicking the button or by using the keyboard shortcut)?
 
@@ -127,31 +128,33 @@ There are three mechanisms for changing the behavior of the New task:
 
 - (Recommended) Use eventing. In particular, there are pre-events and post-events for record creation and deletion, where you can put code that is meant to run before and after these actions. See the following code example.
 
-      [Form]
-      public class Form1 extends FormRun
-      {
-          public void init()
-          {
-              super();
-              element.dataHelper().RecordCreating += eventhandler(this.PreRecordCreate);
-              element.dataHelper().RecordCreated  += eventhandler(this.PostRecordCreate);
-              // similar methods exist for deletion:
-              // element.dataHelper().RecordDeleting, element.dataHelper().RecordDeleted
-              //
-              // explicit actions can be triggered via:
-              // element.dataHelper().RecordCreate(), element.dataHelper().RecordDelete()        
-          }
-          public void PreRecordCreate(FormRunServiceArgs _cancellableArgs)
-          {
-              //  I can add my logic here that gets invoked before the global creation task
-              // if I need to, I can cancel the "super" of the task by doing:
-              // _cancellableArgs.cancel()
-          }
-          public void PostRecordCreate()
-          {
-              //  I can add my logic here that gets invoked after the global creation task
-          }
-      }
+    ```xpp
+    [Form]
+    public class Form1 extends FormRun
+    {
+        public void init()
+        {
+            super();
+            element.dataHelper().RecordCreating += eventhandler(this.PreRecordCreate);
+            element.dataHelper().RecordCreated  += eventhandler(this.PostRecordCreate);
+            // similar methods exist for deletion:
+            // element.dataHelper().RecordDeleting, element.dataHelper().RecordDeleted
+            //
+            // explicit actions can be triggered via:
+            // element.dataHelper().RecordCreate(), element.dataHelper().RecordDelete()        
+        }
+        public void PreRecordCreate(FormRunServiceArgs _cancellableArgs)
+        {
+            //  I can add my logic here that gets invoked before the global creation task
+            // if I need to, I can cancel the "super" of the task by doing:
+            // _cancellableArgs.cancel()
+        }
+        public void PostRecordCreate()
+        {
+            //  I can add my logic here that gets invoked after the global creation task
+        }
+    }
+    ```
 
 - Create an override on the **create()** or **delete()** method on the corresponding data source.
 
@@ -203,13 +206,15 @@ The remaining system-defined buttons are added during **Form.Init**. They are ad
 -   For system-defined buttons that have pre-eventing/post-eventing (for example, **New**, **Delete**, and **Edit**), you can subscribe to the appropriate events. See the corresponding sections for **New**/**Delete** and **Edit** buttons for information about specific events for those buttons.
 -   For system-defined buttons that don't call a task directly (for example, **SystemDefinedShowMenuButton** and **SystemDefinedShowListButton**), you can register an override on the button through a **registerOverrideMethod()** call to have additional code run when the system-defined button is clicked.
 
-        public void overrideFunction(FormCommandButtonControl _command)
-            {
-                // Put any pre-super code here 
-               // This serves as the call to super()
-                _command.clicked(); 
-                // Put any post-super code here
-            }
+    ```xpp
+    public void overrideFunction(FormCommandButtonControl _command)
+        {
+            // Put any pre-super code here 
+            // This serves as the call to super()
+            _command.clicked(); 
+            // Put any post-super code here
+        }
+    ```
 
 ### How do I suppress any of these system-defined buttons on a form, but without suppressing any corresponding task?
 
@@ -221,17 +226,18 @@ In general, we don't recommend that you suppress any of the system buttons. Thei
 
 However, if you must suppress one of these buttons (strongly discouraged), you can find the control via code and set its visibility to **false**, as shown in the following code example. Use SysSystemDefinedButtons macros, where they are available, to reference the button names.
 
-    FormCommandButtonControl attachButton;
+```xpp
+FormCommandButtonControl attachButton;
 
-       public void init()
-       {
-            #SysSystemDefinedButtons
+    public void init()
+    {
+        #SysSystemDefinedButtons
 
-            super();
+        super();
 
-            attachButton= this.control(this.controlId(#SystemDefinedAttachButton)) as FormCommandButtonControl; 
-            attachButton.visible(false); 
-        }
-
+        attachButton= this.control(this.controlId(#SystemDefinedAttachButton)) as FormCommandButtonControl; 
+        attachButton.visible(false); 
+    }
+```
 
 

@@ -176,7 +176,8 @@ Create a new entity that is named **FMVehicleRateEntity**, and add it to the pro
 #### Test your project
 
 -   Build your project again, and run the following X++ code to test your project.
-```
+
+```xml
 /// <summary>
     /// Runs the class with the specified arguments.
     /// </summary>

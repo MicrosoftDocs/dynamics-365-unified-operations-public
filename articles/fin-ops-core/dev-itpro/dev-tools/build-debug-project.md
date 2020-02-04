@@ -76,6 +76,71 @@ The rental company has had unfortunate events when customers rent cars using cre
 ## Add the validation code
 In the **FinalizeRentalCheckout** method, you saw that the developer added code to call the delegate that’s used to determine the validity of the rental. To solve the problem of expired credit cards, you’ll add an event handler, which you’ll use to verify that that the credit card isn’t expired. To simplify the lab, the handler will be added in the same file that contains the delegate. Use the following code as inspiration. Rather than copying and pasting the code, type it in manually to see the IntelliSense features in action. These features add to the high level of productivity that Visual Studio users expect.
 
+```xpp
+[SubscribesTo(classstr(FMRentalCheckoutProcessor), 
+    delegatestr(FMRentalCheckoutProcessor, RentalTransactionAboutTobeFinalizedEvent))]
+public static void RentalFinalizedEventHandler(FMRental rentalrecord, Struct rentalConfirmation)
+{
+    FMPaymentInformation paymentInfo;
+    date ccExpiryDate, lastDayOfExpiryMonth;
+    str s;
+
+    select firstonly * from paymentInfo where paymentinfo.RecId == rentalRecord.PaymentInformationId;
+
+    if (paymentInfo)
+    {
+        // Check if the payment info is valid
+        // For now, we will check if the credit card is expired
+        // Credit cards expire on the last day of the month indicated
+        ccExpiryDate = mkdate(1, str2int(paymentInfo.ExpirationMonth), paymentInfo.ExpirationYear);
+        lastDayOfExpiryMonth = endmth(ccExpiryDate);
+
+        if (lastDayOfExpiryMonth < today())
+        {
+            rentalConfirmation.value('OktoRent', false);
+            s = "Credit card validation failed for rental ";
+        }
+        else
+        {
+            s = "Credit card validation succeeded for rental ";
+        }
+
+        info (s + rentalrecord.RentalId);
+    }
+    else
+    {
+        rentalConfirmation.value('OktoRent', false);
+        info ("No Credit card available for " + rentalrecord.RentalId);
+    }
+}
+```
+
+The preceding code is straightforward. The method is marked as handler for the relevant delegate by using the **SubscribesTo** attribute, as shown. In the code, the customer record is retrieved, and then the credit card date is compared to today's date. If the expiration date of the credit card is in the past, the event handler sets a value in the **RentalConfirmation** structure to signal that the customer isn't eligible to rent a vehicle. The idea is that any number of handlers can subscribe to the delegate. If any handler determines that a rental should not proceed, it sets the **OkToRent** flag to false. A superior implementation might refrain from doing any analysis if it determines that the **OkToRent** flag has already been set to false.
+
+1.  Be sure that you're working in the FMRentalCheckoutProcessor.xpp file. Begin by adding the new event handler definition to the FMRentalCheckoutProcessor class. Add the following code on an empty line just above the brace (}) that marks the end of the class definition.
+
+    ```xpp
+    public static void RentalFinalizedEventHandler(FMRental rentalrecord, Struct rentalConfirmation)
+    {
+
+    }
+    ```
+
+2.  Add the attributes to the beginning of the event handler. These attributes indicate which delegate the event handler is subscribing to.
+
+    ```xpp
+        [SubscribesTo(classstr(FMRentalCheckoutProcessor),
+            delegatestr(FMRentalCheckoutProcessor, RentalTransactionAboutTobeFinalizedEvent))]
+            public static void RentalFinalizedEventHandler(FMRental rentalrecord, Struct 
+                                                                           RentalConfirmation)
+        {
+
+        }
+    ```
+
+3.  Now, add the code that checks the credit card expiration value. The completed method should look similar to the following code.
+
+    ```xpp
     [SubscribesTo(classstr(FMRentalCheckoutProcessor), 
         delegatestr(FMRentalCheckoutProcessor, RentalTransactionAboutTobeFinalizedEvent))]
     public static void RentalFinalizedEventHandler(FMRental rentalrecord, Struct rentalConfirmation)
@@ -84,12 +149,12 @@ In the **FinalizeRentalCheckout** method, you saw that the developer added code 
         date ccExpiryDate, lastDayOfExpiryMonth;
         str s;
 
-        select firstonly * from paymentInfo where paymentinfo.RecId == rentalRecord.PaymentInformationId;
+        select firstonly * from PaymentInfo where paymentinfo.RecId == rentalRecord.PaymentInformationId;
 
         if (paymentInfo)
         {
             // Check if the payment info is valid
-            // For now, we will check if the credit card is expired
+            // For now we will check if the credit card is expired
             // Credit cards expire on the last day of the month indicated
             ccExpiryDate = mkdate(1, str2int(paymentInfo.ExpirationMonth), paymentInfo.ExpirationYear);
             lastDayOfExpiryMonth = endmth(ccExpiryDate);
@@ -112,64 +177,7 @@ In the **FinalizeRentalCheckout** method, you saw that the developer added code 
             info ("No Credit card available for " + rentalrecord.RentalId);
         }
     }
-
-The preceding code is straightforward. The method is marked as handler for the relevant delegate by using the **SubscribesTo** attribute, as shown. In the code, the customer record is retrieved, and then the credit card date is compared to today's date. If the expiration date of the credit card is in the past, the event handler sets a value in the **RentalConfirmation** structure to signal that the customer isn't eligible to rent a vehicle. The idea is that any number of handlers can subscribe to the delegate. If any handler determines that a rental should not proceed, it sets the **OkToRent** flag to false. A superior implementation might refrain from doing any analysis if it determines that the **OkToRent** flag has already been set to false.
-
-1.  Be sure that you're working in the FMRentalCheckoutProcessor.xpp file. Begin by adding the new event handler definition to the FMRentalCheckoutProcessor class. Add the following code on an empty line just above the brace (}) that marks the end of the class definition.
-
-        public static void RentalFinalizedEventHandler(FMRental rentalrecord, Struct rentalConfirmation)
-        {
-
-        }
-
-2.  Add the attributes to the beginning of the event handler. These attributes indicate which delegate the event handler is subscribing to.
-
-            [SubscribesTo(classstr(FMRentalCheckoutProcessor),
-               delegatestr(FMRentalCheckoutProcessor, RentalTransactionAboutTobeFinalizedEvent))]
-               public static void RentalFinalizedEventHandler(FMRental rentalrecord, Struct 
-                                                                           RentalConfirmation)
-            {
-
-            }
-
-3.  Now, add the code that checks the credit card expiration value. The completed method should look similar to the following code.
-
-        [SubscribesTo(classstr(FMRentalCheckoutProcessor), 
-            delegatestr(FMRentalCheckoutProcessor, RentalTransactionAboutTobeFinalizedEvent))]
-        public static void RentalFinalizedEventHandler(FMRental rentalrecord, Struct rentalConfirmation)
-        {
-            FMPaymentInformation paymentInfo;
-            date ccExpiryDate, lastDayOfExpiryMonth;
-            str s;
-
-            select firstonly * from PaymentInfo where paymentinfo.RecId == rentalRecord.PaymentInformationId;
-
-            if (paymentInfo)
-            {
-                // Check if the payment info is valid
-                // For now we will check if the credit card is expired
-                // Credit cards expire on the last day of the month indicated
-                ccExpiryDate = mkdate(1, str2int(paymentInfo.ExpirationMonth), paymentInfo.ExpirationYear);
-                lastDayOfExpiryMonth = endmth(ccExpiryDate);
-
-                if (lastDayOfExpiryMonth < today())
-                {
-                    rentalConfirmation.value('OktoRent', false);
-                    s = "Credit card validation failed for rental ";
-                }
-                else
-                {
-                    s = "Credit card validation succeeded for rental ";
-                }
-
-                info (s + rentalrecord.RentalId);
-            }
-            else
-            {
-                rentalConfirmation.value('OktoRent', false);
-                info ("No Credit card available for " + rentalrecord.RentalId);
-            }
-        }
+    ```
 
 4.  Make sure the handler and the delegate are separated by exactly one blank line.
 5.  On the toolbar in Visual Studio, click **Save**.
@@ -177,8 +185,10 @@ The preceding code is straightforward. The method is marked as handler for the r
 7.  On the **Debug** menu, click **Delete All Breakpoints**.
 8.  Place a new breakpoint in the event-handler method at the line that contains the following statement:
 
-        if (lastDayOfExpiryMonth < today())
-
+    ```xpp
+    if (lastDayOfExpiryMonth < today())
+    ```
+    
 9.  Start the Fleet Management sample with debugging active by pressing F5.
 10. Browse to the **Current rentals** page, as described starting in step 11 of the previous section. Select one of the reservations, and click **Edit**.
 11. In the **Customer** drop-down list, select Adrian Lannin from the list, and then click **Save**. Execution pauses at the breakpoint that you set in the event-handler method.

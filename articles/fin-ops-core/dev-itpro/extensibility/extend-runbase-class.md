@@ -48,7 +48,7 @@ To avoid collisions with other eventual extensions, we followed these best pract
 
 The following example shows how to implement this scenario.
 
-```
+```xpp
 [ExtensionOf(classStr(SysUserLogCleanup))]
 final class MySysUserLogCleanup_Extension
 {

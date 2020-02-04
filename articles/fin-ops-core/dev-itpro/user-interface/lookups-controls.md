@@ -97,23 +97,28 @@ An error may occur if you create multiple lookup forms when the lookup button is
 
 Using SelectedControl() to determine which control is hosting a lookup is unsupported. While it may work in some cases, it will fail in others. For example, in disambiguation lookups, no control is selected on the parent form since the act of leaving the control is what triggers a disambiguation lookup. As an alternative to using SelectedControl(), there are a few other ways to retrieve the control that is hosting the lookup:
 -   Check the ‘selectTarget’ of the lookup form.
-
-        FormStringControl selectTarget = formRun.selectTarget();
+    ```xpp
+    FormStringControl selectTarget = formRun.selectTarget();
+    ```
 
 -   Check the ‘callerFormControl’ on the lookup form args. Note that SysTableLookup::getCallerControl(Args args) encapsulates that call.
-
-        FormStringControl argsCallerFormControl = args.callerFormControl();
-
+    ```xpp
+    FormStringControl argsCallerFormControl = args.callerFormControl();
+    ```
+    
 Note that the selectTarget and callerFormControl will be set automatically if the lookup form instance is spun up automatically by the kernel. If the form instance is created in app code, these can be set manually as shown below.
-    public void lookup()
-    {
-        Args args = new Args(formStr(<formName>));
-        args.caller(element);
-        args.callerFormControl(this);
-        FormRun formRun = classfactory.formRunClass(args);
-        formRun.init();
-        this.performFormLookup(formRun);
-    }
+
+```xpp
+public void lookup()
+{
+    Args args = new Args(formStr(<formName>));
+    args.caller(element);
+    args.callerFormControl(this);
+    FormRun formRun = classfactory.formRunClass(args);
+    formRun.init();
+    this.performFormLookup(formRun);
+}
+```
 
 ### Creating a slider dialog (instead of a lookup form) when the lookup button is used
 

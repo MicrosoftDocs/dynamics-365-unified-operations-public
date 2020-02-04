@@ -49,20 +49,24 @@ The old **insertItem()** method in the **PopupMenu** class returned an identifie
 
 #### Before
 
-    public void context()
-    {
-        ...
-        int listCreateRoot = listMenu.insertItem("@SYS5480");
-        ...
+```xpp
+public void context()
+{
+    ...
+    int listCreateRoot = listMenu.insertItem("@SYS5480");
+    ...
+```
 
 #### After
 
-    [Form]
-    public class MainAccount extends FormRun
-    {
-        ...
-        public const int listCreateRoot = 1;
-        ...
+```xpp
+[Form]
+public class MainAccount extends FormRun
+{
+    ...
+    public const int listCreateRoot = 1;
+    ...
+```
 
 ### Step 2. Build the context menu
 
@@ -93,54 +97,58 @@ This section illustrates the migration of a context menu from Dynamics AX 2012 t
 
 ### Original code
 
-    public void context()
-    {       
-        PopupMenu  listMenu        = new PopupMenu(element.hWnd());
-        int        listCreateRoot  = listMenu.insertItem("@SYS5480");
-        int        selectedMenu;
-        selectedMenu = listMenu.draw();
-        switch (selectedMenu)
-        {
-            case -1:
-                break;
-            case listCreateRoot:
-                mainAccount_ds.create();
-                break;
-            default:
-                break;
-        }
+```xpp
+public void context()
+{       
+    PopupMenu  listMenu        = new PopupMenu(element.hWnd());
+    int        listCreateRoot  = listMenu.insertItem("@SYS5480");
+    int        selectedMenu;
+    selectedMenu = listMenu.draw();
+    switch (selectedMenu)
+    {
+        case -1:
+            break;
+        case listCreateRoot:
+            mainAccount_ds.create();
+            break;
+        default:
+            break;
     }
+}
+```
 
 ### Migrated code
 
-    // Define new form-level constant for each context menu option
-    public const int listCreateRoot = 1;
-    // Define new override on the control for building the context menu
-    public str getContextMenuOptions()
+```xpp
+// Define new form-level constant for each context menu option
+public const int listCreateRoot = 1;
+// Define new override on the control for building the context menu
+public str getContextMenuOptions()
+{
+    str ret;
+    ContextMenu menu = new ContextMenu(); 
+    ContextMenuOption option = ContextMenuOption::Create("@SYS5480", listCreateRoot);
+    List menuOptions = new List(Types::Class); 
+    // Add label and ID of menu option
+    menuOptions.addEnd(option); 
+    menu.ContextMenuOptions(menuOptions);
+    return menu.Serialize();
+}
+// Define new override on the control for processing the user selection
+public void selectedMenuOption(int selectedOption)
+{
+    switch (selectedOption)
     {
-        str ret;
-        ContextMenu menu = new ContextMenu(); 
-        ContextMenuOption option = ContextMenuOption::Create("@SYS5480", listCreateRoot);
-        List menuOptions = new List(Types::Class); 
-        // Add label and ID of menu option
-        menuOptions.addEnd(option); 
-        menu.ContextMenuOptions(menuOptions);
-        return menu.Serialize();
+        case -1:
+            break;
+        case listCreateRoot:
+            mainAccount_ds.create();
+            break;
+        default:
+            break;
     }
-    // Define new override on the control for processing the user selection
-    public void selectedMenuOption(int selectedOption)
-    {
-        switch (selectedOption)
-        {
-            case -1:
-                break;
-            case listCreateRoot:
-                mainAccount_ds.create();
-                break;
-            default:
-                break;
-        }
-    }
+}
+```
 
 ## UX guidelines for context menus
 As you migrate context menus, consider the following guidelines:

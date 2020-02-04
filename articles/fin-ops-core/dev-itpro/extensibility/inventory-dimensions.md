@@ -47,7 +47,8 @@ In addition to the 15 existing dimensions, Microsoft supports 10 generic dimensi
 - 1 real-based
 - 1 utcdatetime-based
  
-  This brings the total number of inventory dimensions in the standard application to 25:
+This brings the total number of inventory dimensions in the standard application to 25:
+
 - 4 product dimensions: Color, Size, Style, and Config
 - 5 tracking dimensions: Serial, Batch, Owner, Profile (Russia only), and GTD (Russia only)
 - 6 storage dimensions: Site, Warehouse, Location, Status, License Plate, and Pallet (for upgrade and migration only)
@@ -75,7 +76,7 @@ To reference the new dimension in a strongly-typed fashion, the ISV introduces a
  
 **Example: InventDimStyle_Extension** 
 
-```
+```xpp
 /// <summary>
 /// The <c>InventDimStyle_Extension</c> class extends the <c>InventDim</c> table with behavior for the style dimension.
 /// </summary>
@@ -104,7 +105,7 @@ final class InventDimStyle_Extension
 
 The dimensions can be referenced like this.
 
-```
+```xpp
 //Setting a value
 inventDim.parmISVDim("Some value");
 

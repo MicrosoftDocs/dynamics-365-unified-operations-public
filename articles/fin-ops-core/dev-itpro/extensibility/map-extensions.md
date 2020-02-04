@@ -47,17 +47,21 @@ For example, if a new field named **AccountingGroupId** and a new method named *
 
 If you add business logic to the **ApplicationSuite** model, and that logic queries the new **AccountingGroupId** field and the table map record is of type **ISV1Header**, a runtime error occurs.
 
-        SalesPurchTable      headerTable;
-        ...
-        ...
-        if (headerTable.AccountingGroupId)
+```xpp
+SalesPurchTable      headerTable;
+...
+...
+if (headerTable.AccountingGroupId)
+```
 
 Similarly, if you add business logic to the **ApplicationSuite** model, and that logic queries **validateAccountingGroup**, then a runtime error occurs.
 
-        SalesPurchTable      headerTable;
-        ...
-        ...
-        if (headerTable.validateAccountingGroup())
+```xpp
+SalesPurchTable      headerTable;
+...
+...
+if (headerTable.validateAccountingGroup())
+```
 
 As a result, the solution is broken, unless you add mapping to the new field and add the new method to the **ISV1Header** table. 
 
