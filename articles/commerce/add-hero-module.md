@@ -31,7 +31,7 @@ ms.dyn365.ops.version:
 
 # Content block module
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic covers content block modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.

@@ -48,15 +48,15 @@ If the file migration process isn’t able to complete without failure, this may
 
 If you use Print management, the references to network printers from AX 2012 won’t be valid. You must set up and reference network printers on the **Document routing** page. For more information, see [Install the Document Routing Agent to enable network printing](../analytics/install-document-routing-agent.md).
 
-## Retail
+## Commerce
 
 After you complete the upgrade from AX 2012, you must configure registers and devices.
 
-To configure a register, click **Retail** > **Channels** > **Retail stores**. Select the row for the retail channel, and then expand the **Registers** FactBox. Click **More**, click **New**, and complete the setup of the register.
+To configure a register, click **Retail and Commerce** > **Channels** > **Stores**. Select the row for the channel, and then expand the **Registers** FactBox. Click **More**, click **New**, and complete the setup of the register.
 
-To configure a device, click **Retail** > **Channel setup** > **POS Setup**, and then click **New**.
+To configure a device, click **Retail and Commerce** > **Channel setup** > **POS Setup**, and then click **New**.
 
-Additionally, you must run all jobs (9999) for the channel database. Click **Retail** > **Headquarters setup** > **Retail scheduler** > **Channel database**. Select the row for the appropriate channel database, and then click **Full data sync**. Select the **9999** (**All jobs**) distribution schedule, and then click **OK**. Click **OK** again to run the job.
+Additionally, you must run all jobs (9999) for the channel database. Click **Retail and Commerce** > **Headquarters setup** > **Commerce scheduler** > **Channel database**. Select the row for the appropriate channel database, and then click **Full data sync**. Select the **9999** (**All jobs**) distribution schedule, and then click **OK**. Click **OK** again to run the job.
 
 ## Service industries
 

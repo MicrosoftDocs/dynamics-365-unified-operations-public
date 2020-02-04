@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Preview features in Platform update 32 for Finance and Operations apps (February 2020)
+title: What's new or changed in Platform update 32 for Finance and Operations apps (February 2020)
 description: This topic lists the features that are in preview in Platform update 32 for Finance and Operations apps. 
 author: sericks007
 manager: AnnBe
-ms.date: 12/09/2019
+ms.date: 01/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -29,12 +29,11 @@ ms.search.validFrom: 2019-11-30
 ms.dyn365.ops.version: Platform update 32
 
 ---
-# Preview features in Platform update 32 for Finance and Operations apps (February 2020)
+# What's new or changed in Platform update 32 for Finance and Operations apps (February 2020)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
-This topic lists the preview features that are new or changed for Platform update 32 for Finance and Operations apps. This version has a build number of 7.0.5493 and is available on the following schedule:
+This topic lists features that are new or changed for Platform update 32 for Finance and Operations apps. This version has a build number of 7.0.5493 and is available on the following schedule:
 
 - **Preview release:** December 2019
 - **General availability (self-update):** January 2020

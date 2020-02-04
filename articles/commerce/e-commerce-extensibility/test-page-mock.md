@@ -5,7 +5,7 @@ title: Test modules by using page mocks
 description: This topic describes how to test modules by using page mocks.
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -30,7 +30,6 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Test modules by using page mocks
 
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 This topic describes how to test modules by using page mocks.
@@ -43,7 +42,7 @@ Page mock files are stored under the /src/pageMocks directory. They can be loade
 
 ## Create a new page mock
 
-To create a new page mock, create a blank .json file under the /src/pageMocks directory, such as **/src/pageMocks/campaignPage.json**.
+To create a new page mock, create a blank .json file under the /src/pageMocks directory, such as **/src/pageMocks/campaign-page.json**.
 
 ## Example
 
@@ -64,24 +63,19 @@ The following example shows a page mock that adds two instances of the same modu
                         "primary": [
                             {
                                 "id": "ProductFeature__0",
-                                "typeName": "productFeature",
+                                "typeName": "product-feature",
                                 "config": {
                                     "imageAlignment": "left",
-                                    "productTitle": "Ethiopian Natural Limu",
-                                    "productDetails": "Every 12 oz bag of our coffee is small batch roasted per order to guarantee freshness.  Available in a light or medium-dark roast.",
-                                    "productImage": {
-                                        "src" : "https://bit.ly/2LupO8u",
-                                        "altText" : "Ethiopian Natural Limu"
-                                    },
-                                    "buttonText": "Buy Now"
+                                    "buttonText": "Buy Now",
+                                    "productIds": "68719490621"
                                 }
                             },
                             {
                                 "id": "ProductFeature__1",
-                                "typeName": "productFeature",
+                                "typeName": "product-feature",
                                 "config": {
                                     "imageAlignment": "right",
-                                    "productIds": "22565430170",
+                                    "productIds": "68719498121",
                                     "buttonText": "Buy Now"
                                 }
                             }
@@ -94,21 +88,21 @@ The following example shows a page mock that adds two instances of the same modu
     "renderingContext": {
         "gridSettings": {
             "xs": {
-                "w":767
+                "w": 767
             },
             "sm": {
-                "w":991
+                "w": 991
             },
             "md": {
-                "w":1199
+                "w": 1199
             },
             "lg": {
-                "w":1599
+                "w": 1599
             },
             "xl": {
-                "w":1600
+                "w": 1600
             }
-        },        
+        },
         "staticContext": {
             "staticCdnUrl": "/_scnr/"
         },
@@ -116,12 +110,13 @@ The following example shows a page mock that adds two instances of the same modu
     },
     "statusCode": 200
 }
-
 ```
 
-Every page defines a root (**core-root** in the example above) that controls the page HTMl structure with slots for "HTML Head", "Body Begin", "Body" and "Body End". The **body** then must have a page container module. In this example, the **default-page** page container is used.
+Every page defines a root (**core-root** in the example above) that controls the page HTML structure with slots for "HTML Head", "Body Begin", "Body" and "Body End". The **body** then must have a page container module. In this example, the **default-page** page container is used.
 
 The **modules** section lists the modules that are included inside the page arranged by named slots. The **default-page** page container has a slot that is named **primary**. This container is responsible for laying out the modules that are included inside it. In this example, the **productFeature** module is rendered two times in a row with the mock data defined in the **config** section for each.
+
+The preceding example can be accessed by using the following URL: `https://localhost:4000/page?mock=campaign-page`.
 
 ## Additional resources
 

@@ -31,7 +31,7 @@ ms.dyn365.ops.version:
 
 # Account management pages and modules
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic covers account management pages and modules in Microsoft Dynamics 365 Commerce.

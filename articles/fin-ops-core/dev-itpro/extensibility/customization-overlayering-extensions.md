@@ -3,7 +3,7 @@
 
 title: Customize through extension and overlayering
 description: This topic discusses the two methods of customizing source code and metadata of model elements -  overlayering and extensions and details supported extension capabilities.
-author: robadawy
+author: jorisdg
 manager: AnnBe
 ms.date: 09/25/2018
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 26961
 ms.assetid: 8a2b3107-247d-4362-8d4d-6ee6257abfcc
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
