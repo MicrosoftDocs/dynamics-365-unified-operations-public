@@ -91,23 +91,23 @@ The following data action managers are available:
 - TransferOrdersDataActions
 - WarehousesDataActions
 
-For a list of all the available Commerce Scale Unit APIs in each data action manager, see [Retail Server Customer and Consumer APIs](https://docs.microsoft.com/dynamics365/retail/dev-itpro/retail-server-customer-consumer-api).
+For a list of all the available Retail Server APIs in each data action manager, see [Retail Server Customer and Consumer APIs](https://docs.microsoft.com/dynamics365/retail/dev-itpro/retail-server-customer-consumer-api).
 
-## Commerce Scale Unit proxy data methods
+## Retail Server proxy data methods
 
-The Commerce Scale Unit proxy is closely linked to the [Data Action Framework](data-actions.md). Therefore, for every Commerce Scale Unit API, there are two exposed Commerce Scale Unit proxy methods:
+The Retail Server proxy is closely linked to the [Data Action Framework](data-actions.md). Therefore, for every Retail Server API, there are two exposed Retail Server proxy methods:
 
 - **The createInput method** – This method creates an **IActionInput** class that can be used either to run a [page load data action](page-load-data-action.md), or to do a direct state update or fetch via the **actionContext.update()** or **actionContext.get()** methods. This method is always named **create{RETAIL\_SERVER\_API\_NAME}Input**.
 - **The action method** – This method can be invoked on its own as an [event-based data action](event-based-data-actions.md), or it can be added inside another action method to create a [data action chain](chain-data-actions.md). This method is always named **{RETAIL\_SERVER\_API\_NAME}Async**.
 
-## Create a page load Commerce Scale Unit proxy data action
+## Create a page load Retail Server proxy data action
 
-When you want to attach a Commerce Scale Unit proxy API call to a module so that it will run when a page is loaded, you must create a new data action. The process resembles the process for creating a standard page load data action.
+When you want to attach a Retail Server proxy API call to a module so that it will run when a page is loaded, you must create a new data action. The process resembles the process for creating a standard page load data action.
 
-In this example, you will create a module that uses the Commerce Scale Unit proxy to get all the categories that are available for the configured channel when a page is loaded. To start, you must identify the correct Retail Server proxy API to use. For this example, this API is the **GetCategories** API that is provided by the **CategoriesDataActions** data action manager. You can then construct a data action that can be used in a module definition. In general, to complete this task, you must do two things:
+In this example, you will create a module that uses the Retail Server proxy to get all the categories that are available for the configured channel when a page is loaded. To start, you must identify the correct Retail Server proxy API to use. For this example, this API is the **GetCategories** API that is provided by the **CategoriesDataActions** data action manager. You can then construct a data action that can be used in a module definition. In general, to complete this task, you must do two things:
 
-- Provide a **createInput** method that calls the Commerce Scale Unit proxy **createInput** method for the desired API and passes it any contextual data that you want (for example, the channel ID).
-- Have the action method of the new data action be the **retailAction** method that is provided by the Commerce Scale Unit proxy. The **retailAction** method is designed to parse the input that is passed to it and call the corresponding Commerce Scale Unit proxy API.
+- Provide a **createInput** method that calls the Retail Server proxy **createInput** method for the desired API and passes it any contextual data that you want (for example, the channel ID).
+- Have the action method of the new data action be the **retailAction** method that is provided by the Retail Server proxy. The **retailAction** method is designed to parse the input that is passed to it and call the corresponding Retail Server proxy API.
 
 Under the **src\\actions** directory, create a file for a new data action. For this example, the file is named **get-category-list.ts**, and it contains the following code.
 
@@ -220,7 +220,7 @@ export interface IProductFeatureData {
 }
 ```
 
-## Call a Commerce Scale Unit proxy API directly in module code
+## Call a Retail Server proxy API directly in module code
 
 
 The following example shows how to call the **getCategories** Commerce API by using the Commerce proxy **getCategoriesAsync** wrapper API. This API call returns a list of all categories, and the sample code logs them to the console.
