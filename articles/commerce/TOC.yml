@@ -580,7 +580,7 @@
           href:	add-reco-list-to-page.md
         - name:	Enable product recommendations
           href:	enable-product-recommendations.md
-        - name:
+        - name: Personalized recommendations
           items:
           - name: Enable personalized recommendations
           - href: personalized-recommendations.md
