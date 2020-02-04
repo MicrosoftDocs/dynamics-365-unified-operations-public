@@ -128,7 +128,9 @@ Select the **Optional** tab to configure optional settings.
 + **Pause between steps** - Number of seconds to pause between test steps during the automated execution of a test case. Default is 0. Set this value to force a pause during test execution for auditing or investigation purposes. A pause can also be specified for an
 individual test case by changing the parameter “Pause between steps (Seconds)” in the General tab of
 the Excel parameter file of a test case.
-+ **Fail test on first validation error** - By default, If a test case has multiple validation steps, and there is a validation failure, the test case will stop executing on the first failure and will be marked as failed. If you prefer that test cases keep running until all validations are completed, uncheck this option. This allows the test suite to evaluate all validations.
++ **Fail test on first validation error** - By default, If a test case has multiple validation steps, and there is a validation failure, the test case will stop executing on the first failure and will be marked as failed. If you prefer that test cases keep running until all validations are completed, uncheck this option. This allows the test case to evaluate all validations.
++ **Abort test suite execution on failure** - By default, execution of a test suite continues even when one of the test cases fail. By setting this option to true, the test run will abort if a test case fails. The remainder of the test cases will have a status of “Not Executed”.
++ **Cloud provider** - Select the provider of the cloud tenant of your test environment. Supported providers are Global (Public cloud) and China (Sovereign cloud).
 
 ### Configure the test environment to trust the connection
 
