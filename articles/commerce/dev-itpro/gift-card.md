@@ -5,7 +5,7 @@ title: Support for external gift cards
 description: This topic provides information about the support for external gift cards that is now available in Microsoft Dynamics 365 Commerce.
 author: sericks007
 manager: AnnBe
-ms.date: 10/10/2017
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-retail
@@ -43,7 +43,7 @@ The external gift card must be configured for both the Headquarters and the POS.
 
 ## Headquarters configuration
 
-1. Search for **hardware profile** to open the **POS hardware profile** page.
+1. In Dynamics 365 Commerce Headquarters, search for **Hardware profiles** to open the **POS hardware profile** page.
 2. On the **POS hardware profile** page, follow these steps:
 
    1. On the navigation bar on the left side of the page, select **Virtual**.
@@ -58,39 +58,56 @@ The external gift card must be configured for both the Headquarters and the POS.
       > [!NOTE]
       > You can also use the **New** button to create multiple payment connectors. In this way, you can take advantage of the support for multiple connectors that has been added to the solution. You can then have different payment connectors for different payment methods. For example, all credit cards can be processed through one connector, but the gift card can be processed through a different connector.
 
-3. Search for **payment methods** to open the **Payment methods** page.
-4. Select **New**, and then follow these steps:
+### Card Types
+
+1. Search for **Card Types** 
+2. Click **New**, add the following values, and then click **Save**:
+
+| Field Name     | Value              |
+|----------------|--------------------|
+| Card ID        | EXTGC              |
+| Card type name | External Gift Card |
+| Card types     | Gift card          |
+| Card issuer    | *Any description*  |
+
+### Payment Methods
+
+1. Search for **Payment methods** to open the **Payment methods** page.
+2. Click **New**, and then follow these steps:
 
     1. In the **Payment method** field, enter **12**.
     2. In the **Payment method name** field, enter **External Gift Card**.
     3. In the **Default function** field, select **Card**.
     4. Select **Save**.
 
-5. Open the **All stores** page.
-6. In the list, select the **Houston** store.
-7. On the Action Pane, select **Set up** &gt; **Payment methods**.
-8. Select **New**.
-9. In the **Payment method** field, enter **12**. The **Payment method name** and **Function** fields should then be set automatically.
-10. On the **General** FastTab, set the following fields:
+3. Open the **All stores** page.
+4. In the list, select the **Houston** store.
+5. On the Action Pane, click **Set up** &gt; **Payment methods**.
+6. Click **New**.
+7. In the **Payment method** field, enter **12**. The **Payment method name** and **Function** fields should then be set automatically.
+8. On the **General** FastTab, set the following fields:
 
     - Set the **Operation name** field to **Pay gift card**.
     - Set the **Connector name** field to **TestConnector**.
 
-11. On the **Posting** FastTab, set the **Gift card item number** field to **0010**.
+9. On the **Posting** FastTab, set the **Gift card item number** field to **0010**.
 
     ![Setting the Gift card item number field](./media/05_02.png)
 
-12. Select **Save**.
-13. Select **Card setup** and click **New** to map the gift card created in step 4 to the newly created external gift card payment method.  
-14. Open the **Button grid** page.
-15. In the navigation bar on the left side of the page, search for **F2S1M**, and select the filtered option.
-16. On the Action Pane, select **Designer** to download the button designer application.
-17. When the grid designer appears, right-click on an empty (gray) area, and then select **New button**.
+10. Click **Save**.
+11. Click **Card setup** and click **New** to map the gift card created in step 4 to the newly created external gift card payment method.
+
+### Update button grid
+
+1. Go to the **Button grid** page.
+2. In the navigation bar on the left side of the page, search for **F2S1M**, and select the filtered option.
+3. On the Action Pane, click **Designer** to download the button designer application.
+4. When the grid designer appears, right-click on an empty (gray) area, and then click **New button**.
 
     ![New button](./media/07.png)
 
-18. Right-click the new button, and then select **Button properties**.
-19. Set the **Action**, **Payment type**, and **Text on button** properties according to the following matrix.
+5. Right-click the new button, and then select **Button properties**.
+6. Set the **Action**, **Payment type**, and **Text on button** properties according to the following matrix.
 
     | Action            | Payment type       | Text on button        |
     |-------------------|--------------------|-----------------------|
@@ -103,16 +120,15 @@ The external gift card must be configured for both the Headquarters and the POS.
 
     ![Completed button layout](./media/10.png)
 
-20. Close the designer.
-21. Search for **Distribution Schedule**.
-22. In the navigation bar on the left side of the page, search for **1090**, **1115**, and **1070**.
-23. On the Action Pane, select **Run now**.
-24. Check the status of the job by searching for **Download sessions**.
-25. Wait until **Applied** appears next to all the jobs, and then close the browser.
+7. Close the designer.
+8. Search for **Distribution Schedule**.
+9. In the navigation bar on the left side of the page, search for **1090**, **1115**, and **1070**.
+10. On the Action Pane, click **Run now**.
+11. Check the status of the job by searching for **Download sessions**.
+12. Wait until **Applied** appears next to all the jobs, and then close the browser.
 
-## Reset IIS if you're using Commerce Scale Unit
-
-If you're using a Commerce Scale Unit that is located in the store, open a Command Prompt window as an administrator, and enter **iisreset**. Otherwise, wait for the Commerce Scale Unit to be updated.
+    > [!NOTE]
+    > If you are using Retail Commerce Scale Unit (RCSU) that is located in the store, you need to perform an IIS rest to clear the cache. You can either do this through the IIS application or open an admin Command Prompt window and enter `iisreset`. Otherwise, wait for the RCSU to be updated.
 
 ## Update merchant properties
 

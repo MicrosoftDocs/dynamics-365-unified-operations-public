@@ -84,6 +84,8 @@
           items:
           - name: What's new or changed in Commerce home page
             href: get-started/whats-new-home-page.md
+          - name: Commerce version 10.0.9 (April 2020)
+            href: get-started/whats-new-10-0-9.md
           - name: Commerce version 10.0.8 (February 2020)
             href: get-started/whats-new-10-0-8.md
           - name: Retail version 10.0.7 (January 2020)
@@ -411,7 +413,9 @@
           - name: Set up and design receipt formats
             href: receipt-templates-printing.md
           - name: Send email receipts from Modern POS (MPOS)
-            href: email-receipts.md           
+            href: email-receipts.md 
+          - name: Reset receipt numbers
+            href: reset_receipt_number_sequence.md
         - name: Create functionality profiles for sales representatives 
           href: tasks/configure-functionality-profile-sales-representative.md
         - name: Create financial dimensions for retail channels and configure values on stores 
@@ -660,6 +664,8 @@
           href: payment-methods-restrictions.md
         - name: Return items across multiple customer orders and invoices
           href: multireturn.md	
+        - name: Create and update a returns and refunds policy for a channel
+          href: refund_policy_returns.md
     - name: Manage your customers  
       items:
       - name: Clienteling
