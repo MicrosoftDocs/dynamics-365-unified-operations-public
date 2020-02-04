@@ -31,7 +31,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Video player module
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 This topic covers video player modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
@@ -112,9 +111,5 @@ To add a video player module to a new page and set the required properties, foll
 [Carousel module](add-carousel.md)
 
 [Content rich block module](add-content-rich-block.md)
-
-[Content placement module](add-content-placement-modules.md)
-
-[Feature module](add-feature-module.md)
 
 [Hero module](add-hero-module.md)
