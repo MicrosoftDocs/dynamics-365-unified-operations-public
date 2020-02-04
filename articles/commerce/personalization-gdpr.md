@@ -95,6 +95,6 @@ The following example shows how a retailer can accomplish this task.
 
 [Add product recommendation lists to pages](add-reco-list-to-page.md)
 
-[Add recommendations panel to POS devices](add-recommendations-control-pos-screen)
+[Add recommendations panel to POS devices](add-recommendations-control-pos-screen.md)
 
 [Product collection module overview](product-collection-module-overview.md)
