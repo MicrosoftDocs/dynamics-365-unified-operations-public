@@ -128,7 +128,7 @@ export default createObservableDataAction({
 ```
 
 
-The **get-category-list.ts** file exports a data action that can be registered on a module to get the list of all categories from whatever channel has been configured for the project. Because this approach requires much less custom code to make the HTTP call than manual communication with Commerce Scale Unit, we recommend that you always call Commerce Scale Unit by using the Commerce Scale Unit proxy.
+The **get-category-list.ts** file exports a data action that can be registered on a module to get the list of all categories from whatever channel has been configured for the project. Because this approach requires much less custom code to make the HTTP call than manual communication with Retail Server, we recommend that you always call Retail Server by using the Retail Server proxy.
 
 The following example shows how the **get-category-list** data action can be registered in the **"module" \> "dataActions"** node in the module definition file.
 
