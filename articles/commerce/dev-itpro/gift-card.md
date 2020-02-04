@@ -5,7 +5,7 @@ title: Support for external gift cards
 description: This topic provides information about the support for external gift cards that is now available in Microsoft Dynamics 365 Commerce.
 author: sericks007
 manager: AnnBe
-ms.date: 10/10/2017
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-retail
@@ -43,7 +43,7 @@ The external gift card must be configured for both the Headquarters and the POS.
 
 ## Headquarters configuration
 
-1. In AX/HQ, search for **Hardware profiles** to open the **POS hardware profile** page.
+1. In Dynamics 365 Commerce Headquarters, search for **Hardware profiles** to open the **POS hardware profile** page.
 2. On the **POS hardware profile** page, follow these steps:
 
    1. On the navigation bar on the left side of the page, select **Virtual**.
