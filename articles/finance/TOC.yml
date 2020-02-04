@@ -2419,6 +2419,8 @@
             href: localizations/rus-transport-tax-declaration.md
           - name: Land tax declaration
             href: localizations/rus-land-tax-declaration.md
+          - name: Profit tax declaration
+            href: localizations/rus-profit-tax-declaration.md
         - name: Organization administration
           items:    
           - name: Tax registration info related to address
