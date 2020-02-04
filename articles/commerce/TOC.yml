@@ -583,9 +583,9 @@
         - name: Personalized recommendations
           items:
           - name: Enable personalized recommendations
-          - href: personalized-recommendations.md
+            href: personalized-recommendations.md
           - name: Opt out of personalized recommendations 
-          - href: personalization-gdpr.md
+            href: personalization-gdpr.md
         - name: Create curated product recommendation lists		
           href:	create-editorial-recommendation-lists.md
         - name:	Manage AI-ML-based product recommendation results	
