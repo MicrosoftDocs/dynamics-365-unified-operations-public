@@ -45,7 +45,7 @@ The header module includes a site logo, links to the navigation hierarchy, links
 
 A header module supports **Logo image**, **Logo link**, and **My account links** properties. 
 
-The **Logo image** and **Logo link** properties are used to define a logo on the page. For more information, see [Add a logo](add-a-logo.md). 
+The **Logo image** and **Logo link** properties are used to define a logo on the page. For more information, see [Add a logo](add-logo.md). 
 
 The **My account links** property can be used to define account pages that the site owner wants to show quick links for in the header.
 
