@@ -61,7 +61,7 @@ The external gift card must be configured for both the Headquarters and the POS.
 ### Card Types
 
 1. Search for **Card Types** 
-2. Select **New**, add the following values, and click **Save**:
+2. Click **New**, add the following values, and then click **Save**:
 
 | Field Name     | Value              |
 |----------------|--------------------|
@@ -73,7 +73,7 @@ The external gift card must be configured for both the Headquarters and the POS.
 ### Payment Methods
 
 1. Search for **Payment methods** to open the **Payment methods** page.
-2. Select **New**, and then follow these steps:
+2. Click **New**, and then follow these steps:
 
     1. In the **Payment method** field, enter **12**.
     2. In the **Payment method name** field, enter **External Gift Card**.
@@ -82,8 +82,8 @@ The external gift card must be configured for both the Headquarters and the POS.
 
 3. Open the **All stores** page.
 4. In the list, select the **Houston** store.
-5. On the Action Pane, select **Set up** &gt; **Payment methods**.
-6. Select **New**.
+5. On the Action Pane, click **Set up** &gt; **Payment methods**.
+6. Click **New**.
 7. In the **Payment method** field, enter **12**. The **Payment method name** and **Function** fields should then be set automatically.
 8. On the **General** FastTab, set the following fields:
 
@@ -94,15 +94,15 @@ The external gift card must be configured for both the Headquarters and the POS.
 
     ![Setting the Gift card item number field](./media/05_02.png)
 
-10. Select **Save**.
-11. Select **Card setup** and click **New** to map the gift card created in step 4 to the newly created external gift card payment method.
+10. Click **Save**.
+11. Click **Card setup** and click **New** to map the gift card created in step 4 to the newly created external gift card payment method.
 
-### Update Button Grid
+### Update button grid
 
-1. Open the **Button grid** page.
+1. Go to the **Button grid** page.
 2. In the navigation bar on the left side of the page, search for **F2S1M**, and select the filtered option.
-3. On the Action Pane, select **Designer** to download the button designer application.
-4. When the grid designer appears, right-click on an empty (gray) area, and then select **New button**.
+3. On the Action Pane, click **Designer** to download the button designer application.
+4. When the grid designer appears, right-click on an empty (gray) area, and then click **New button**.
 
     ![New button](./media/07.png)
 
@@ -123,7 +123,7 @@ The external gift card must be configured for both the Headquarters and the POS.
 7. Close the designer.
 8. Search for **Distribution Schedule**.
 9. In the navigation bar on the left side of the page, search for **1090**, **1115**, and **1070**.
-10. On the Action Pane, select **Run now**.
+10. On the Action Pane, click **Run now**.
 11. Check the status of the job by searching for **Download sessions**.
 12. Wait until **Applied** appears next to all the jobs, and then close the browser.
 
