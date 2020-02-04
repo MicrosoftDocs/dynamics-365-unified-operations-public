@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Respond to requests for personal data in Talent
-description: This topic describes how you, as a data controller, can use Microsoft Dynamics 365 Talent as a data processor to help you respond to a request for data under the European Union's General Data Protection Regulation (GDPR).
+title: Respond to requests for personal data in Human Resources
+description: This topic describes how you, as a data controller, can use Microsoft Dynamics 365 Human Resources as a data processor to help you respond to a request for data under the European Union's General Data Protection Regulation (GDPR).
 author: shielasogge
 manager: AnnBe
 ms.date: 01/31/2018
@@ -30,13 +30,13 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 
-# Respond to requests for personal data in Talent
+# Respond to requests for personal data in Human Resources
 
 [!include [banner](../includes/banner.md)]
 
-This topic can help both businesses that use Microsoft Dynamics 365 Talent, and also partners and independent software vendors (ISVs), when they comply with data subject rights (DSR) requests. For more information about the European Union's General Data Protection Regulation (GDPR) and the related resources that Microsoft provides, see [General Data Protection Regulation overview](./gdpr-guide.md).
+This topic can help both businesses that use Microsoft Dynamics 365 Human Resources, and also partners and independent software vendors (ISVs), when they comply with data subject rights (DSR) requests. For more information about the European Union's General Data Protection Regulation (GDPR) and the related resources that Microsoft provides, see [General Data Protection Regulation overview](./gdpr-guide.md).
 
-For Talent, Microsoft acts as a processor. As a data processor, Talent provides processes and features that let you comply with your GDPR obligations as a data controller.
+For Human Resources, Microsoft acts as a processor. As a data processor, Human Resources provides processes and features that let you comply with your GDPR obligations as a data controller.
 
 ## Rights
 
@@ -50,7 +50,7 @@ Data subjects have the following rights under the GDPR, and a data controller mi
 
 ### Right to modify\*
 
-+ Use advanced search and filters to find the data that should be corrected, and correct the data directly in Talent.
++ Use advanced search and filters to find the data that should be corrected, and correct the data directly in Human Resources.
 
 \* You might find that some data that qualifies as personal data can't be modified directly in the product or feature. Typically, this data is part of a financial transaction or other business data that is kept "as is" for compliance with financial laws (for example, tax laws), prevention of fraud (such as security audit trail), or compliance with industry certifications. As the controller, it's your responsibility to correct inaccurate or incomplete personal data.
 
@@ -74,12 +74,12 @@ The following options are available to help you port personal data in response t
 
 ## Additional notes that apply to requests for personal data
 
-+ Personal data that is found in Microsoft Power BI is generated from the information that is entered in Talent and then transferred to that application for reporting purposes. Any request for personal data should be fulfilled from the information in Talent, by using tools such as reports, Export to Excel, and the Person search report. You should not need to do additional reporting from Power BI to fulfill a DSR request. 
-+ Talent doesn't export documents that are attached to records. These attachments must be manually downloaded and shared with the individual who has made the DSR.
++ Personal data that is found in Microsoft Power BI is generated from the information that is entered in Human Resources and then transferred to that application for reporting purposes. Any request for personal data should be fulfilled from the information in Human Resources, by using tools such as reports, Export to Excel, and the Person search report. You should not need to do additional reporting from Power BI to fulfill a DSR request. 
++ Human Resources doesn't export documents that are attached to records. These attachments must be manually downloaded and shared with the individual who has made the DSR.
 + If transactional data is associated with a master record, that record can't be deleted. 
 + Similarly, transactions that have been posted or completed can't be deleted.
 
-### Reasons why certain personal data may not be modified or deleted in Talent
+### Reasons why certain personal data may not be modified or deleted in Human Resources
 
 The following table lists several reasons why personal data modification or deletion is restricted in certain scenarios.
 
@@ -91,7 +91,7 @@ The following table lists several reasons why personal data modification or dele
 
 ## Additional information
 
-Only terminated workers can be deleted from Talent. Follow these steps to delete terminated workers.
+Only terminated workers can be deleted from Human Resources. Follow these steps to delete terminated workers.
 
 + Delete position assignments. 
 

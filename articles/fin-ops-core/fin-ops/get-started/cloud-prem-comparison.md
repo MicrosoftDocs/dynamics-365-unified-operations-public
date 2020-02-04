@@ -37,8 +37,8 @@ This topic shows a comparison of features available in cloud vs. on-premises for
 
 - [Dynamics 365 Finance](cloud-prem-comparison.md#dynamics-365-finance)
 - [Dynamics 365 Supply Chain Management](cloud-prem-comparison.md#dynamics-365-supply-chain-management)
-- [Dynamics 365 Retail](cloud-prem-comparison.md#dynamics-365-retail)
-- [Dynamics 365 Talent](cloud-prem-comparison.md#dynamics-365-talent)
+- [Dynamics 365 Commerce](cloud-prem-comparison.md#dynamics-365-commerce)
+- [Dynamics 365 Human Resources](cloud-prem-comparison.md#dynamics-365-human-resources)
 
 Information about the [development and administration features](cloud-prem-comparison.md#development-and-administration-features) is included, as well.
 
@@ -150,15 +150,15 @@ The following tables list the application areas. Cloud and on-premises support i
 | Support                              |                                                                                           | Yes       | Yes             |
 |                                      | Access to Support via the Help & Support menu                                             | Yes       | No              |
 
-## Dynamics 365 Retail 
+## Dynamics 365 Commerce 
 
-To see a list of retail capabilities that are available in on-premises deployments, see [Retail capabilities that are available in on-premises deployments](../../../retail/retail-onprem.md).
+To see a list of capabilities that are available in on-premises deployments, see [Retail capabilities that are available in on-premises deployments](../../../retail/retail-onprem.md).
 
-## Dynamics 365 Talent 
+## Dynamics 365 Human Resources 
 
 | **Area**         | **Feature**         | **Cloud** | **On-premises** |
 |------------------|---------------------|-----------|-----------------|
-| All Talent areas | All Talent features | Yes       | No              |
+| All Human Resources areas | All Human Resources features | Yes       | No              |
 
 ## Development and administration features
 

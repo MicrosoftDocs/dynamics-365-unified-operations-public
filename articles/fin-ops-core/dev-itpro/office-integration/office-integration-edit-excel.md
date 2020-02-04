@@ -95,25 +95,27 @@ A custom lookup can be shown for an Entity field.
     -   SysODataCollectionAttribute(str &lt;name&gt;, Types &lt;type&gt;, “Value”)
 -   Return – The method should return a list of strings.
 
-Example:  
+**Example** 
 
-    public class ExportToExcel_SimpleEntity extends common
+```xpp
+public class ExportToExcel_SimpleEntity extends common
+{
+    [SysODataActionAttribute("Lookup_StringLookupField", true),
+    SysODataCollectionAttribute("return", Types::String, "Value")]
+    public List lookup_StringLookupField()
     {
-        [SysODataActionAttribute("Lookup_StringLookupField", true),
-        SysODataCollectionAttribute("return", Types::String, "Value")]
-        public List lookup_StringLookupField()
+        List lookupList = new List(Types::String);
+        const int items = 5;
+
+        for (int item = 0; item < items; item++)
         {
-            List lookupList = new List(Types::String);
-            const int items = 5;
-
-            for (int item = 0; item < items; item++)
-            {
-                lookupList.addEnd(strfmt('%1 - %2 (%3)', this.StringField, this.IntField, item));
-            }
-
-            return lookupList;
+            lookupList.addEnd(strfmt('%1 - %2 (%3)', this.StringField, this.IntField, item));
         }
+
+        return lookupList;
     }
+}
+```
 
 ## How does the app get injected into a workbook to start building a template?
 
@@ -180,56 +182,58 @@ An explicit button can be added for Open in Excel experiences. The label shown o
 
 An example of this code can be found on the **LedgerJournalTable** form (**General ledger** &gt; **Journals** &gt; **General journal**) in the **Clicked** method on the **OpenLinesInExcel** button.
 
-        [Control("Button")]
-        class OpenLinesInExcel
-        {
-            /// <summary>
-            /// Opens the current journal in Excel for line entry and editing
-            /// </summary>
-            public void clicked()
-            {
-                super();
+```xpp
+[Control("Button")]
+class OpenLinesInExcel
+{
+    /// <summary>
+    /// Opens the current journal in Excel for line entry and editing
+    /// </summary>
+    public void clicked()
+    {
+        super();
 
-                const str templateName = resourceStr(LedgerJournalLineEntryTemplate);
+        const str templateName = resourceStr(LedgerJournalLineEntryTemplate);
                 DocuTemplate template = DocuTemplate::findTemplate(OfficeAppApplicationType::Excel, templateName);
 
-                // Ensure the template was present
-                if (template && template.TemplateID == templateName)
-                {
-                    Map filtersToApply = new Map(Types::String, Types::String);
+        // Ensure the template was present
+        if (template && template.TemplateID == templateName)
+        {
+            Map filtersToApply = new Map(Types::String, Types::String);
 
-                    // Create lines filter
-                    ExportToExcelFilterBuilder filterBuilder = new ExportToExcelFilterBuilder(tablestr(LedgerJournalLineEntity));
-                    str filterString = filterBuilder.areEqual(fieldstr(LedgerJournalLineEntity, JournalBatchNumber), LedgerJournalTable.JournalNum);
-                    filtersToApply.insert(tablestr(LedgerJournalLineEntity), filterString);
+            // Create lines filter
+            ExportToExcelFilterBuilder filterBuilder = new ExportToExcelFilterBuilder(tablestr(LedgerJournalLineEntity));
+            str filterString = filterBuilder.areEqual(fieldstr(LedgerJournalLineEntity, JournalBatchNumber), LedgerJournalTable.JournalNum);
+            filtersToApply.insert(tablestr(LedgerJournalLineEntity), filterString);
 
-                    // Create header filter
-                    filterBuilder = new ExportToExcelFilterBuilder(tablestr(LedgerJournalHeaderEntity));
-                    filterString = filterBuilder.areEqual(fieldstr(LedgerJournalHeaderEntity, JournalBatchNumber), LedgerJournalTable.JournalNum);
-                    filtersToApply.insert(tablestr(LedgerJournalHeaderEntity), filterString);
+            // Create header filter
+            filterBuilder = new ExportToExcelFilterBuilder(tablestr(LedgerJournalHeaderEntity));
+            filterString = filterBuilder.areEqual(fieldstr(LedgerJournalHeaderEntity, JournalBatchNumber), LedgerJournalTable.JournalNum);
+            filtersToApply.insert(tablestr(LedgerJournalHeaderEntity), filterString);
 
-                    // Generate the workbook using the template and filters
-                    DocuTemplateRender renderer = new DocuTemplateRender();
-                    str documentUrl = renderer.renderTemplateToStorage(template, filtersToApply);
+            // Generate the workbook using the template and filters
+            DocuTemplateRender renderer = new DocuTemplateRender();
+            str documentUrl = renderer.renderTemplateToStorage(template, filtersToApply);
 
-                    // Pass the workbook to the user
-                    if (documentUrl)
-                    {
-                        Browser b = new Browser();
-                        b.navigate(documentUrl, false, false);
-                    }
-                    else
-                    {
-                        error(strFmt("@ApplicationFoundation:DocuTemplateGenerationFailed", templateName));
-                    }
-                }
-                else
-                {
-                    warning(strFmt("@ApplicationFoundation:DocuTemplateNotFound", templateName));
-                }
+            // Pass the workbook to the user
+            if (documentUrl)
+            {
+                Browser b = new Browser();
+                b.navigate(documentUrl, false, false);
             }
-
+            else
+            {
+                error(strFmt("@ApplicationFoundation:DocuTemplateGenerationFailed", templateName));
+            }
         }
+        else
+        {
+            warning(strFmt("@ApplicationFoundation:DocuTemplateNotFound", templateName));
+        }
+    }
+
+}
+```
 
 The following image shows the **General ledger** &gt; **Journals** &gt; **General journal** form with the **Open lines in Excel** button highlighted. 
 
@@ -237,69 +241,73 @@ The following image shows the **General ledger** &gt; **Journals** &gt; **Genera
 
 To programmatically add generated and template Open in Excel options, Open in Excel options can be added by implementing the ExportToExcelIGeneratedCustomExport and ExportToExcelITemplateCustomExport interfaces. This allows the addition of options to forms where the entity or template doesn’t have the same table as the root datasource. An example of when you would use this capability is on forms without a datasource, potentially containing only a collection of form parts. The following example adds generated and template Open in Excel options programmatically to the **FMRental** form.
 
-    [Form]
-    public class FMRental extends FormRun implements ExportToExcelIGeneratedCustomExport, ExportToExcelITemplateCustomExport
-    {    
-    ...
-        public List getExportOptions()
+```xpp
+[Form]
+public class FMRental extends FormRun implements ExportToExcelIGeneratedCustomExport, ExportToExcelITemplateCustomExport
+{    
+...
+    public List getExportOptions()
+    {
+        List exportOptions = new List(Types::Class);
+
+        ExportToExcelExportOption exportOption = ExportToExcelExportOption::construct(ExportToExcelExportType::CustomGenerated, int2str(1));
+        exportOption.setDisplayNameWithDataEntity(tablestr(FMRentalEntity));
+        exportOptions.addEnd(exportOption);
+
+        ExportToExcelExportOption exportOption2 = ExportToExcelExportOption::construct(ExportToExcelExportType::CustomTemplate, int2str(2));
+        exportOption2.displayName("Analyze rentals");
+        exportOptions.addEnd(exportOption2);
+
+        return exportOptions;
+    }
+
+    public ExportToExcelDataEntityContext getDataEntityContext(ExportToExcelExportOption _exportOption)
+    {
+        ExportToExcelDataEntityContext context = null;
+
+        if (_exportOption.id() == int2str(1))
         {
-            List exportOptions = new List(Types::Class);
-
-            ExportToExcelExportOption exportOption = ExportToExcelExportOption::construct(ExportToExcelExportType::CustomGenerated, int2str(1));
-            exportOption.setDisplayNameWithDataEntity(tablestr(FMRentalEntity));
-            exportOptions.addEnd(exportOption);
-
-            ExportToExcelExportOption exportOption2 = ExportToExcelExportOption::construct(ExportToExcelExportType::CustomTemplate, int2str(2));
-            exportOption2.displayName("Analyze rentals");
-            exportOptions.addEnd(exportOption2);
-
-            return exportOptions;
+            context = ExportToExcelDataEntityContext::construct(tablestr(FMRentalEntity), tablefieldgroupstr(FMRentalEntity, AutoReport));
         }
 
-        public ExportToExcelDataEntityContext getDataEntityContext(ExportToExcelExportOption _exportOption)
+        return context;
+    }
+
+    public System.IO.Stream getTemplate(ExportToExcelExportOption _exportOption)
+    {
+        System.IO.Stream stream = null;
+
+        if (_exportOption.id() == int2str(2))
         {
-            ExportToExcelDataEntityContext context = null;
-
-            if (_exportOption.id() == int2str(1))
-            {
-                context = ExportToExcelDataEntityContext::construct(tablestr(FMRentalEntity), tablefieldgroupstr(FMRentalEntity, AutoReport));
-            }
-
-            return context;
+            stream = Microsoft.Dynamics.Ax.Xpp.MetadataSupport::GetResourceContentStream(resourcestr(FMRentalEditableExportTemplate));
         }
 
-        public System.IO.Stream getTemplate(ExportToExcelExportOption _exportOption)
-        {
-            System.IO.Stream stream = null;
+        return stream;
+    }
 
-            if (_exportOption.id() == int2str(2))
-            {
-                stream = Microsoft.Dynamics.Ax.Xpp.MetadataSupport::GetResourceContentStream(resourcestr(FMRentalEditableExportTemplate));
-            }
-
-            return stream;
-        }
-
-        public void updateTemplateSettings(ExportToExcelExportOption _exportOption, Microsoft.Dynamics.Platform.Integration.Office.ExportToExcelHelper.SettingsEditor _settingsEditor)
-        {
-        }
-    ...
+    public void updateTemplateSettings(ExportToExcelExportOption _exportOption, Microsoft.Dynamics.Platform.Integration.Office.ExportToExcelHelper.SettingsEditor _settingsEditor)
+    {
+    }
+...
+```
 
 ## How do I add a filter for a programmatically-added template Open in Excel option?
 
 A template Open in Excel option can be programmatically added by implementing the ExportToExcelITemplateCustomExport interface and providing a template in the getTemplate method. A filter for that option can be programmatically added by using the ExportToExcelFilterBuilder API in the updateTemplateSettings method.
 
-    public void updateTemplateSettings(ExportToExcelExportOption _exportOption, Microsoft.Dynamics.Platform.Integration.Office.ExportToExcelHelper.SettingsEditor _settingsEditor)
+```xpp
+public void updateTemplateSettings(ExportToExcelExportOption _exportOption, Microsoft.Dynamics.Platform.Integration.Office.ExportToExcelHelper.SettingsEditor _settingsEditor)
 
-    {
+{
 
-    _settingsEditor.SetFilterExpression(tableStr(RetailTmpBulkProductAttributeValueEntity), element.getExportToExcelFilterExpression());
+_settingsEditor.SetFilterExpression(tableStr(RetailTmpBulkProductAttributeValueEntity), element.getExportToExcelFilterExpression());
 
-    DictDataEntity dictDataEntity = new DictDataEntity(tableNum(RetailTmpBulkProductAttributeValueEntity));
+DictDataEntity dictDataEntity = new DictDataEntity(tableNum(RetailTmpBulkProductAttributeValueEntity));
 
-    _settingsEditor.SetFilterExpressionByPublicName(dictDataEntity.publicEntityName(), element.getExportToExcelFilterExpression());
+_settingsEditor.SetFilterExpressionByPublicName(dictDataEntity.publicEntityName(), element.getExportToExcelFilterExpression());
 
-    }
+}
+```
 
 After a filter has been added programmatically, the resulting filter can be viewed in the Excel Add-in using the **Filter** button. The following image shows the Excel Add-in with the **Filter** button highlighted.
 

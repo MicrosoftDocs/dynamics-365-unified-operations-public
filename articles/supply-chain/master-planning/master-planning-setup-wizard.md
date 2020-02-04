@@ -188,7 +188,7 @@ In the wizard, the following values are entered for Contoso Manufacturer:
 Contoso Retailer is a distribution company in the fashion industry. It uses master planning to calculate when purchase orders should be placed, based on its forecasted sales. Here are some of its characteristics:
 
 - Contoso Retailer uses a demand forecast to predict sales. Purchase orders will be planned according to the forecast.
-- Retail stores use requisitions for replenishment.
+- Stores use requisitions for replenishment.
 - The lead time from the main warehouse to each store is approximately two weeks for all items.
 
 In the wizard, the following values are entered for Contoso Retailer:
@@ -212,4 +212,4 @@ In the wizard, the following values are entered for Contoso Retailer:
     - **Question:** "Do you want to include demand from approved requisitions to replenish retail stores?"
     - **Answer:** "Yes, as defined in this master plan." **1 day** is entered.
 
-    Contoso uses the approved requisitions from its retail stores to create planned purchase orders to replenish those stores. Because master planning is run every day, the requisitions from the last day will be included in the planning.
+    Contoso uses the approved requisitions from its stores to create planned purchase orders to replenish those stores. Because master planning is run every day, the requisitions from the last day will be included in the planning.

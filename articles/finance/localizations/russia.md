@@ -112,6 +112,7 @@ This topic provides information about functionality that supports Russian regula
 - [Assessed tax declaration](rus-assessed-tax-declaration.md)
 - [Transport tax declaration](rus-transport-tax-declaration.md)
 - [Land tax declaration](rus-land-tax-declaration.md)
+- [Profit tax declaration](rus-profit-tax-declaration.md)
 
 ## Organization administration
 

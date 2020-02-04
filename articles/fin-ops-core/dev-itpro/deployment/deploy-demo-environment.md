@@ -2,7 +2,7 @@
 # required metadata
 
 title: Deploy a demo environment
-description: This topic explains how to deploy a demo environment on Microsoft Azure using Microsoft Dynamics Lifecycle Services (LCS). This applies to Dynamics 365 Finance, Supply Chain Management, and Retail.
+description: This topic explains how to deploy a demo environment on Microsoft Azure using Microsoft Dynamics Lifecycle Services (LCS). This applies to Dynamics 365 Finance, Supply Chain Management, and Commerce.
 author: sarvanisathish
 manager: AnnBe
 ms.date: 10/01/2019
@@ -37,7 +37,7 @@ This topic explains how to deploy a demo environment on Microsoft Azure using Mi
 
 - Dynamics 365 Finance
 - Dynamics 365 Supply Chain Management
-- Dynamics 365 Retail
+- Dynamics 365 Commerce
 
 ## Prerequisites
 Before you begin your deployment, the following prerequisites must be in place:
@@ -53,7 +53,7 @@ Use this procedure to deploy a demo environment on Azure using LCS.
 2. Select the Azure environment topology, and then select **Demo**.
 3. Select a topology.
     - For Finance and Operations, select the most recent Azure Resource Manager (ARM) topology for Finance and Operations.
-    - For Retail, select **Dynamics 365 for Retail - Demo**.
+    - For Commerce, select **Dynamics 365 for Commerce - Demo**.
 4. In the **Deploy environment** dialog box, enter the name of the environment. This name should be unique in the Azure subscription. To make environments easy to identify, consider forming an acronym using the user’s name and the topology.
 5. Select the size of the virtual machine (VM). All the sizes for VMs that are enabled for ARM end with v2. You must use D* v2 sizes for Finance and Operations workloads. We recommend D12v2.
 6. Set the **Instances** field to 1.
@@ -75,4 +75,4 @@ To log on to your demo environment, do the following.
 2. Scroll to the right and in the **Environment details** pane, under **Cloud services**, click the appropriate link:
 
       - **Log on to Finance and Operations**
-      - **Log on to Retail**
+      - **Log on to Commerce**
