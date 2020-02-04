@@ -3240,7 +3240,7 @@
             - name: Defer execution of a sequence element
               href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md
             - name: Defer execution of a XML element
-              hfer: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md
+              href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md
         - name: Use Electronic reporting solutions in Finance and Operations
           items: 
           - name: Configure the framework
