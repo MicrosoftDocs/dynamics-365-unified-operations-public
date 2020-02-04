@@ -31,6 +31,7 @@ ms.dyn365.ops.version:
 
 # Alert module
 
+
 [!include [banner](includes/banner.md)]
 
 This topic covers alert modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
