@@ -2,7 +2,7 @@
 # required metadata
 
 title: Call Retail Server APIs
-description: This topic explains how to call application programming interfaces (APIs) for Microsoft Dynamics 365 Commerce Scale Unit from a data action or directly from module code.
+description: This topic explains how to call application programming interfaces (APIs) for Microsoft Dynamics 365 Retail Server from a data action or directly from module code.
 author: samjarawan
 manager: annbe
 ms.date: 01/31/2020
@@ -32,21 +32,21 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to call application programming interfaces (APIs) for Microsoft Dynamics 365 Commerce Scale Unit from a data action or directly from module code.
+This topic explains how to call application programming interfaces (APIs) for Microsoft Dynamics 365 Retail Server from a data action or directly from module code.
 
 ## Overview
 
-To call Commerce Scale Unit APIs, you must use the Commerce Scale Unit proxy library that Commerce Scale Unit provides. This proxy library is also known as TypeScriptProxy or TSProxy. It allows for streamlined communication with Commerce Scale Unit from JavaScript-based or TypeScript-based environments.
+To call Retail Server APIs, you must use the Retail Server proxy library that Retail Server provides. This proxy library is also known as TypeScriptProxy or TSProxy. It allows for streamlined communication with Retail Server from JavaScript-based or TypeScript-based environments.
 
-## Install the Commerce Scale Unit proxy
+## Install the Retail Server proxy
 
 
-The Commerce Scale Unit proxy is available for download via the Dynamics 365 npm feed and should be added by default. If it isn't there, you can get it by adding a reference in the packages.json file.
+The Retail Server proxy is available for download via the Dynamics 365 npm feed and should be added by default. If it isn't there, you can get it by adding a reference in the packages.json file.
 
 
 To install the proxy in your software development kit (SDK) development environment, follow these steps.
 
-1. Determine your current active version of Commerce Scale Unit. This version will be the version of the Commerce Scale Unit NuGet package that you use for back-end extensibility.
+1. Determine your current active version of Retail Servert. This version will be the version of the Retail Servert NuGet package that you use for back-end extensibility.
 1. In the **package.json** file, add the following entry in the **dependencies** section. (This entry might already be present and have up-to-date version information.)
 
     ```json
@@ -55,11 +55,11 @@ To install the proxy in your software development kit (SDK) development environm
 
 1. Run **yarn install**.
 
-You should now have access to the correct Commerce Scale Unit proxy for your project. You might see that a reference is already included as part of the Store Starter Kit.
+You should now have access to the correct Retail Server proxy for your project. You might see that a reference is already included as part of the Store Starter Kit.
 
-## Commerce Scale Unit proxy data action managers
+## Retail Server proxy data action managers
 
-The Commerce Scale Unit proxy contains a set of APIs that communicate internally with Commerce Scale Unit via HTTP. These APIs are all available through a set of data action managers. To import the code for these data action managers, you can use the following import paths.
+The Retail Server proxy contains a set of APIs that communicate internally with Retail Server via HTTP. These APIs are all available through a set of data action managers. To import the code for these data action managers, you can use the following import paths.
 
 ```typescript
 // Generic example
