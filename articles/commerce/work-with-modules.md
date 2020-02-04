@@ -32,7 +32,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes how and when to use modules in Microsoft Dynamics 365 Commerce.
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 ## Overview
@@ -130,8 +129,6 @@ To configure a container module on a page, follow these steps.
 [Work with fragments](work-with-fragments.md)
 
 [Add a container module to a page](add-container-module.md)
-
-[Add content placement modules to a page](add-content-placement-modules.md)
 
 [Work with publish groups](publish-groups.md)
 
