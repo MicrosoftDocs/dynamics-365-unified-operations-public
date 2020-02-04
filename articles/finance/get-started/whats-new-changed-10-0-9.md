@@ -42,11 +42,11 @@ This topic lists features that are new or changed for Microsoft Dynamics 365 Fin
 
 The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. 
 
-- [Daily statement of Treasures accountability ](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/daily-statement-treasurers-accountability)
+- [Daily statement of Treasures accountability ](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/daily-statement-treasurers-accountability)
 
- - [Update bank balances when posting transactions using advanced ledger entry](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/update-bank-balances-when-posting-transactions-using-advanced-ledger-entry)
+ - [Update bank balances when posting transactions using advanced ledger entry](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/update-bank-balances-when-posting-transactions-using-advanced-ledger-entry)
  
- - [Vendor bidding – RFQ questions from vendors and summarized responses](https://docs.microsoft.com/en-us/business-applications-release-notes/april19/dynamics365-finance-operations/vendor-bidding)
+ - [Vendor bidding – RFQ questions from vendors and summarized responses](https://docs.microsoft.com/business-applications-release-notes/april19/dynamics365-finance-operations/vendor-bidding)
 
 ## Additional resources
 
