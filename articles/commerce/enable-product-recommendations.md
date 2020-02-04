@@ -64,7 +64,7 @@ By default, the AI-ML-based product recommendation list provides suggested value
 
 ## Show recommendations on POS devices
 
-After enabling recommendations in Commerce back office, the recommendations panel must be added to the control POS screen using the layout tool. To learn about this process, see [Add a recommendations control to the transaction screen on POS devices](../retail/add-recommendations-control-pos-screen.md). 
+After enabling recommendations in Commerce back office, the recommendations panel must be added to the control POS screen using the layout tool. To learn about this process, see [Add a recommendations control to the transaction screen on POS devices](add-recommendations-control-pos-screen.md). 
 
 ## Enable personalized recommendations
 
