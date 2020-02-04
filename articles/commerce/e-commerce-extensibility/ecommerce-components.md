@@ -5,7 +5,7 @@ title: e-Commerce components
 description: This topic contains a high-level summary of some frequently used configuration components that the Microsoft Dynamics 365 Commerce online software development kit (SDK) provides access to.
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -30,7 +30,6 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # e-Commerce components
 
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 This topic contains a high-level summary of some frequently used configuration components that the Microsoft Dynamics 365 Commerce online software development kit (SDK) provides access to.
@@ -57,7 +56,9 @@ You can create custom data actions and use them in your modules. Custom data act
 
 ## Themes
 
-Themes contain sitewide Cascading Style Sheets (CSS) style definitions. They also let you add custom, module-specific CSS style definitions. You can set a site theme in the authoring tools. All pages then use that theme by default. You can add more themes, and set them on a template, a layout, or a specific page. This capability is useful if you want to change the theme for a campaign or a temporary seasonal change. You can set the theme on the whole site or a subset of pages.
+Themes contain site-wide Sassy Cascading Style Sheets (SCSS) style definitions. They also let you add custom, module-specific SCSS style definitions. You can set a site theme in the authoring tools. All pages then use that theme by default. You can add more themes, and set them on a template, a layout, or a specific page. This capability is useful if you want to change the theme for a campaign or a temporary seasonal change. You can set the theme on the whole site or a subset of pages.
+
+Themes can also override module views (including starter kit modules), and can add module definition extensions to extend the configurations and resources on a module. Because themes can change the look and feel of all modules (custom and starter kit) without requiring that modules be cloned, they allow for better serviceability.
 
 ## Script injectors
 

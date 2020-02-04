@@ -5,7 +5,7 @@ title: Set up a development environment
 description: This topic describes how to set up a development environment for Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -30,7 +30,6 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Set up a development environment
 
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 This topic describes how to set up a development environment for Microsoft Dynamics 365 Commerce.
@@ -65,7 +64,11 @@ Go to the [Yarn site](https://yarnpkg.com), and download and install the latest 
 
 The Online SDK provides everything that you require to extend your online channel. It even lets you create new modules, data actions, and themes.
 
-The SDK configuration package is available through the [Msdyn365.Commerce.Online GitHub repository](https://github.com/microsoft/Msdyn365.Commerce.Online). Either download or clone the repo to a local folder on your development machine.
+The SDK configuration package is available through the [Msdyn365.Commerce.Online GitHub repository (repo)](https://github.com/microsoft/Msdyn365.Commerce.Online). Download or clone the repo to a local folder on your development computer. To clone the repo, use the following command.
+
+```
+git clone https://github.com/microsoft/Msdyn365.Commerce.Online.git
+```
 
 > [!NOTE]
 > The whole SDK and Store Starter Kit (SSK) won't be downloaded and installed until you run the **yarn** command. For more information, see the [Download SDK dependencies](#download-sdk-dependencies) section later in this topic.
@@ -78,14 +81,14 @@ We recommend that you use a source code repository to manage your configuration 
 
 To download the SDK dependency packages, follow these steps.
 
-1. At a command prompt, go to the root folder of the e-Commerce SDK (**c:\\repos\\MyEcommerceSite** in the following example).
+1. At a command prompt, go to the root folder of the e-Commerce SDK (**c:\\repos\\Msdyn365.Commerce.Online** in the following example).
 2. To get all the latest dependency packages that are required, run the **yarn** command.
 
     > [!IMPORTANT]
     > This step should be done after you've completed any update to the packages.json file.
 
     ```
-    c:\repos\MyEcommerceSite>yarn
+    c:\repos\Msdyn365.Commerce.Online>yarn
     ```
 
     This command can take several minutes to run.
@@ -97,10 +100,10 @@ To run your Node app, follow these steps.
 1. Run the **yarn start** command to open the Node app.
 
     ```
-    c:\repos\MyEcommerceSite>yarn start
+    c:\repos\Msdyn365.Commerce.Online>yarn start
     ```
 
-This command can take up to a minute to run. When it's completed, you will see output that indicates that the server has been started. The output also shows the allocated port number (**4000**, by default).
+This command can take up to a minute to run. When it's completed, you will see output that indicates that the server has been started. The output also shows the allocated port number (4000 by default, but you can change the value in the .env file).
 
 2. To test that your Node app is running correctly, open the following URLs in a web browser:
 
@@ -111,41 +114,41 @@ This command can take up to a minute to run. When it's completed, you will see o
 
 ## Create a new module
 
-To add a new module that is named **campaignBanner**, run the **yarn msdyn365 add-module MODULE\_NAME** command. Here is an example.
+To add a new module that is named **product-feature**, run the **yarn msdyn365 add-module MODULE\_NAME** command. Here is an example.
 
 ```
-c:\repos\MyEcommerceSite>yarn msdyn365 add-module campaignBanner
+c:\repos\Msdyn365.Commerce.Online>yarn msdyn365 add-module product-feature
 ```
 
-This command can take up to a minute to run. It adds a new module under \\src\\modules\\campaignBanner.
+This command can take up to a minute to run. It adds a new module under \\src\\modules\\product-feature.
 
-## Clone an existing core module
+## Clone an existing starter kit module
 
-Several of the available core modules can be cloned, such as the alert, banner, and hero modules.
+Several of the available starter kit modules can be cloned. These modules include the carousel, content-block, and header modules. A cloned module is a copy of the module and has a new name. Unlike the starter kit modules, cloned modules don't get regular service updates. Instead of cloning a module to make layout changes, you might want to extend the views on the module.
 
-For example, to modify the hero module, run the **yarn msdyn365 clone STARTER\_KIT\_MODULE\_NAME NEW\_MODULE\_NAME** command to pull down the source code. Here is an example.
+For example, to modify the content-block module, run the **yarn msdyn365 clone STARTER\_KIT\_MODULE\_NAME NEW\_MODULE\_NAME** command to pull down the source code. Here is an example.
 
 ```
-c:\repos\MyEcommerceSite>yarn msdyn365 clone hero heroExtended
+c:\repos\Msdyn365.Commerce.Online>yarn msdyn365 clone content-block super-content-block
 ```
 
-You can find the hero module under \\src\\modules\\heroExtended.
+You can find the hero module under \\src\\modules\\super-content-block.
 
 ## Preview modules
 
-To preview a specific module (for example, campaignBanner) in a local web browser, follow these steps.
+To preview a specific module (for example, product-feature) in a local web browser, follow these steps.
 
-1. At a command prompt, open your Node app by running the **yarn start** command.
+1. At a command prompt, open your Node app by running the **yarn start** command from the root of your SDK.
 
     ```
-    c:\repos\MyEcommerceSite>yarn start
+    c:\repos\Msdyn365.Commerce.Online>yarn start
     ```
 
 1. In a web browser, open the following URLs. Notice the module name in the **"type=MODULE\_NAME"** query string parameter.
 
-    * `https://localhost:4000/modules?type=campaignBanner`
-    * `https://localhost:4000/modules?type=hero`
-    * `https://localhost:4000/modules?type=banner`
+    * `https://localhost:4000/modules?type=product-feature`
+    * `https://localhost:4000/modules?type=content-block`
+    * `https://localhost:4000/modules?type=super-content-block`
     
 ## Adding an SSL certificate
 
