@@ -31,6 +31,7 @@ ms.dyn365.ops.version:
 
 # Carousel module
 
+
 [!include [banner](includes/banner.md)]
 
 This topic covers carousel modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
