@@ -5,7 +5,7 @@ title: Example of Deploying Help on Azure
 description: This topic walks you through an example of how you can deploy Dynamics 365 Help content to an Azure web app. 
 author: edupont04
 manager: AnnBe
-ms.date: 11/26/2019
+ms.date: 02/04/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -109,7 +109,7 @@ Next, you add the HTML files to the web app. You can use an FTP client such as F
 
 Next, you will create a storage account with a Blob container that will store JSON files that are used by the search service that you will [create](#searchservice) and [configure](#searchconfig) later.
 
-These JSON files can be generated from your Help files by the ConvertHtmlToJson tool that is part of the Custom Help Toolkit. For more information, see [Use the ConvertHtmlToJson tool to generate JSON files](custom-help-toolkit.md#json).
+These JSON files can be generated from your Help files by the ConvertHtmlToJson tool that is part of the Custom Help Toolkit. For more information, see [Custom Help Toolkit: The Convert HTML To JSON tool](custom-help-toolkit-ConvertHtmlToJson.md).
 
 ### To create storage for the JSON files
 
@@ -217,7 +217,7 @@ Next, you configure the search service to have an index of your content.
 4. If you prepared custom Help content for multiple languages, repeat these steps to create a unique index for each language.
 
 > [!NOTE]
-> If you customize the index, such as by adding or renaming a field, you must update the Document.cs file in the AzureSearchCustomHelp solution in the development environment. For more information, see [Connect your Help website with the Help pane](deploy.md#extendhelppane).
+> If you customize the index, such as by adding or renaming a field, you must update the Document.cs file in the AzureSearchCustomHelp solution in the development environment. For more information, see [Connect your Help website with the Help pane](connect-help-pane.md).
 
 ### To create an indexer
 

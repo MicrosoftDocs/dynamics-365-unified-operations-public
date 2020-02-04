@@ -30,8 +30,7 @@ ms.dyn365.ops.version: Operations
 
 ---
 
-
-# <a name="extendhelppane"></a>Connect your Help website with the Help pane
+# Connect your Help website with the Help pane
 
 [!include [banner](../includes/banner.md)]
 
@@ -43,9 +42,9 @@ This involves the following steps:
 2. Assign a language index
 3. Customize language fallback
 
-## Extend the Help pane and assign the language index
+## <a name="extendhelppane"></a>Extend the Help pane and assign the language index in Visual Studio
 
-***
+The **Help Pane extension** folder of the toolkit contains the **AzureSearchCustomHelp** solution that you can open in the Finance and Operations development environment. The same folder also contains the **HelppaneOption.axpp** project that you can then import into the solution in Visual Studio.  
 
 ### To extend the Help pane
 

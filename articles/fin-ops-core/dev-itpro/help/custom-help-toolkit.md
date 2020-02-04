@@ -5,7 +5,7 @@ title: Custom Help Toolkit
 description: This topic describes the components in the custom help toolkit for Finance and Operations apps. 
 author: edupont04
 manager: AnnBe
-ms.date: 01/14/2020
+ms.date: 02/04/2020
 ms.topic: article
 ms.service: dynamics-ax-platform
 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Operations
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft has published a GitHub repository with scripts and tools that can help you prepare content so that it can be accessed from the Help pane in the client that is used by the finance and operations apps. This way, users of custom solutions that are based on Dynamics 365 Finance, Supply Chain Management, Retail, or Talent can have access to context-sensitive Help.  
+Microsoft has published a GitHub repository with scripts and tools that can help you prepare content so that it can be accessed from the Help pane in the client that is used by the Finance and Operations apps. This way, users of custom solutions that are based on Finance and Operations apps can have access to context-sensitive Help.  
 
 ## Tools in the toolkit
 
@@ -40,7 +40,7 @@ The toolkit is available at [https://github.com/microsoft/dynamics365f-o-custom-
 
 - HtmlFromRepoGenerator tool
 
-    For more information, see [Custom Help Toolkit: The HTML Locale Changer tool](custom-help-toolkit-HtmlLocaleChanger.md)
+    For more information, see [Custom Help Toolkit: The HTML From Repos Generator tool](custom-help-toolkit-HtmlFromRepoGenerator.md)
 
 - Convert HTML to JSON tool
 
@@ -52,23 +52,25 @@ The toolkit is available at [https://github.com/microsoft/dynamics365f-o-custom-
 
 - Help Pane extension Visual Studio project
 
+    For more information, see [Connect your Help website with the Help pane](connect-help-pane.md)
+
 - REST API index creation scripts
 
 - AX 2012 metadata scripts
 
+    For more information, see [Convert Dynamics AX custom Help for use in Dynamics 365](migrate-dynamicsax2012.md)
+
 > [!NOTE]
 > The first version of this toolkit is available as a release in the GitHub repo.  
 
+## Other products
 
-## <a name="helppane"></a>Use the development environment to extend the Help pane
-
-The **Help Pane extension** folder of the toolkit contains the **AzureSearchCustomHelp** solution that you can open in the Finance and Operations development environment. The same folder also contains the **HelppaneOption.axpp** project that you can then import into the solution in Visual Studio.  
-
-For an example of how to extend the Help, see [Connect your Help website with the Help pane](deploy.md#extendhelppane).  
+Some of the tools in the toolkit can be used for custom help for solutions that are based on other Microsoft products, such as Dynamics 365 Business Central.
 
 ## See also
 
 [Deploying Custom Help](deploy.md)  
 [Example of Deploying Custom Help on Azure](walkthrough-help-azure.md)  
+[Connect your Help website with the Help pane](connect-help-pane.md)
 [Language and locale descriptors in across product and Help](language-locale.md)  
 [Convert Dynamics AX custom Help for use in Dynamics 365](migrate-dynamicsax2012.md)  
