@@ -31,7 +31,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Opt in to use ratings and reviews
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 This topic explains how to opt in to use ratings and reviews on your Microsoft Dynamics 365 Commerce site.
