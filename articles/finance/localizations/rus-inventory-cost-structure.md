@@ -94,9 +94,7 @@ close](https://docs.microsoft.com/dynamics365/supply-chain/cost-management/inven
 
 4.  In the **Specification** field, select **All**.
 
-![](media/2612b9bb2bb5683d5a29f431d6382501.png)
-
->   A screenshot of a social media post Description automatically generated
+    ![](media/3%20Close%20inventory.png)
 
 5.  Select **OK**.
 
@@ -130,7 +128,7 @@ values](https://docs.microsoft.com/dynamics365/supply-chain/cost-management/adju
 5.  In the **Select on-hand inventory** dialog box, specify the inventory
     dimensions that should be shown after the adjustment is done.
 
-![](media/9ee9d6c358f207f153884ec648dc5022.png)
+![](media/4%20Select%20on-hand%20inventory.png)
 
 >   A screenshot of a cell phone Description automatically generated
 
