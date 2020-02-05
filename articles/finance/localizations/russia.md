@@ -99,10 +99,6 @@ This topic provides information about functionality that supports Russian regula
 - [Cash flow management](rus-cash-flow.md)
 - [Allocation of miscellaneous charges in proportion to weight and volume](rus-miscellaneous-charges.md)
 - [Third party miscellaneous charges](rus-third-party-misc-charges.md)
-- [Agreements overview](rus-agreements.md)
-  - [Set up and create agreements](rus-set-up-and-create-agreements.md)
-  - [Register transactions with reference to agreements](rus-register-transactions-with-reference-to-agreements.md)
-  - [Inquiries and reports with agreements](rus-inquiries-and-report-with-agreements)
 
 ## Inventory
 - [Goods in transit from vendor](rus-goods-transit-vendor.md)
