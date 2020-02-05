@@ -81,7 +81,7 @@ Customers are provided with one free "develop and test" environment hosted in Mi
 
 Additional develop and build environments can either be purchased or hosted in your own Azure subscription. To deploy an environment in your own subscription, go to the **Cloud-hosted environment** page.
 
-![Cloud-hosted instances](media/CloudHostedPicture.JPG)
+![Cloud-hosted instances](media/CloudHostedPicture.jpg)
 
 ## Cloud environment that is provisioned through LCS
 
