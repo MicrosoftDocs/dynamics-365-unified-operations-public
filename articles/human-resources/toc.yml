@@ -29,6 +29,8 @@
         href: hr-admin-integration-choose-technology.md
       - name: Configure Common Data Service integration
         href: hr-admin-integration-common-data-service.md
+      - name: Common Data Service entities
+        href: hr-developer-entities.md
       - name: Configure integration with Finance
         href: hr-admin-integration-finance.md
       - name: Configure integration with Dayforce
@@ -133,7 +135,7 @@
       href: hr-developer-overview.md
     - name: Extend with Power Apps and Power Automate
       href: hr-developer-power-apps.md
-    - name: Human Resources entities in Common Data Service
+    - name: Common Data Service entities
       href: hr-developer-entities.md
     - name: Custom fields
       href: hr-developer-custom-fields.md
