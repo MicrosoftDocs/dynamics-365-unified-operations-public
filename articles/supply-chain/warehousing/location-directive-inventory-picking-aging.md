@@ -37,7 +37,7 @@ When inventory is first received/created in the warehouse, the system updates th
 
 ## Enable the location directive inventory picking aging feature
 
-Before you can use this feature, you must enable it on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the feature status and enable it if needed. Here, the feature is listed as:
+Before you can use this feature, it must be enabled on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the feature status and enable it if needed. Here, the feature is listed as:
 
 - **Module** - Warehouse management
 - **Feature name** - Warehouse location status
