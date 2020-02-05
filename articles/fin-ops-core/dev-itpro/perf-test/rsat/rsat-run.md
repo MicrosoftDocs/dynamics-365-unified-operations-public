@@ -126,3 +126,19 @@ You need version 1.200 or newer for response times to be available.
 ## Save your work
 To preserve your work, select **Upload**. This will upload test automation files, including Excel test parameter files, of all selected test cases to Azure DevOps for future use.
 After test automation files are uploaded to Azure DevOps, the next time you use the Regression suite automation tool, even from a different computer, you can simply use **Load** and then **Run**, without generating test execution files or editing Excel parameter files.
+
+## Process Compliance
+RSAT provides capabilities to manage readiness of test cases and a sign-off process for test runs.
+
+![process compliance file](media/rsat-process-compliance-settings.png)
+
+### Enforce test case readiness
+You can set the test case to not execute unless it’s in “Ready” status in Azure DevOps. Enable this by checking
+“Enforce test case readiness” on the Settings->Process tab. The default is unchecked.
+
+### Signoffs
+When your test run completes, RSAT can create sign-off work items in Azure DevOps. Use the Settings->Process
+menu and check “Sign-off tasks”. Set the type of work item you would like to create for each person signing off.
+You can select “Functional”, “IT Manager” and “Team Manager” roles to sign-offs and specify their email
+addresses. This will create the work items in Azure DevOps and assign them to owners for approval.
+
