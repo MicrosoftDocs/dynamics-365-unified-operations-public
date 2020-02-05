@@ -43,9 +43,9 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 
 The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. Additional links point to additional documentation or videos that are currently available for that feature. Some of these features may also have been included a previous incremental release, but weren't announced in previous *What's new* topic, so we are adding them here. Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
-- [XXX](https://docs.microsoft.com/dynamics365-release-plan/2019wave2) - For more information, see [XXXX](../warehousing/warehouse-management-overview.md).
-- [XXX](https://docs.microsoft.com/dynamics365-release-plan/2019wave2) - For more information, see [XXXX](../warehousing/warehouse-management-overview.md).
-- [XXX](https://docs.microsoft.com/dynamics365-release-plan/2019wave2) - For more information, see [XXXX](../warehousing/warehouse-management-overview.md).
+- [XXX](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index) - For more information, see [XXXX](../warehousing/warehouse-management-overview.md).
+- [XXX](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index) - For more information, see [XXXX](../warehousing/warehouse-management-overview.md).
+- [XXX](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index) - For more information, see [XXXX](../warehousing/warehouse-management-overview.md).
 
 
 ## Additional resources
@@ -58,11 +58,11 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.9 includes Platform update 3
 
 For information about the bug fixes included in each of the updates that are part of 10.0.9, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=415034&dbType=3&qc=7bdf05cf1859a5a56f4b9c0dae88fa1653d489181b3a2c1f19429225daf5724b).
 
-### Dynamics 365: 2019 release wave 2 plan
+### Dynamics 365: 2020 release wave 1 plan
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365: 2019 release wave 2 plan](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365: 2020 release wave 1 plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
 
