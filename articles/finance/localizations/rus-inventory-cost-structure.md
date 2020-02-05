@@ -338,7 +338,7 @@ of miscellaneous charges.
 6.  On the **Inventory transactions** page, on the Action Pane, on the
     **Inventory** tab, in the **Costing** group, select **Cost explorer**.
 
-    ![](media/13_Cost%20structure.png)
+    ![](media/13_Cost_explorer.png)
 
 On the **Settlements** and **Cost explorer** pages, the miscellaneous charges
 codes that have the **Item** debit type and the **Ledger account** credit type
