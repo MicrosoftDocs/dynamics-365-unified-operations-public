@@ -151,7 +151,7 @@ Native (or "Device" as the type is named in the hardware profile) printers can b
 
 ### Windows
 
-The **Windows** device type is used for printers only. When a Windows printer is configured in the hardware profile, the specific printer name must be provided. When Modern POS encounters print events, if a Windows printer is configured, the event will be passed to the specified Windows printer. The user won't be prompted to select a printer.
+The **Windows** device type is used for printers only. When a Windows printer is configured in the hardware profile, the specific printer name must be provided. When Modern POS encounters print events, if a Windows printer is configured, the event will be passed to the specified Windows printer. The user won't be prompted to select a printer. Windows printers are not supported for IIS hardware stations. 
 
 ### Network
 
@@ -160,15 +160,15 @@ Network-addressable cash drawers, receipt printers, and payment terminals can be
 ## Hardware station deployment options
 ### IPC (built-in)
 
-The Interprocess Communications (IPC) hardware station is built into the Modern POS for Windows application. To use the IPC hardware station, assign a hardware profile to a register that will use the Modern POS for Windows application. Then create a hardware station of the **Dedicated** type for the store where the register will be used. When you start Modern POS, the IPC hardware station will be active, and the POS peripherals that have been configured will be ready to use. If you temporarily don't require the local hardware for some reason, use the **Manage hardware stations** operation to turn off the hardware station capabilities. Modern POS can also use the IPC hardware station to communicate directly with network peripherals.
+The Interprocess Communications (IPC) hardware station is built into the Modern POS for Windows application. To use the IPC hardware station, assign a hardware profile to a register that will use the Modern POS for Windows or Android applications. Then create a hardware station of the **Dedicated** type for the store where the register will be used. Start the Modern POS in non-drawer mode and use the use the **Manage hardware stations** operation to turn on the hardware station capabilities, the dedicated hardware station will be active by default. Next, log out of the Modern POS, then log back in and open a shift and the peripherals configured in the hardware profile will be usable. 
 
 ### IIS
 
-You can use the IIS or stand-alone version of the hardware station in two ways. The descriptor “IIS” implies that the POS application connects to the hardware station via Microsoft Internet Information Services. The POS application connects to the IIS hardware station via web services that run on a computer where the devices are connected. When IIS is used, the retail peripherals that are connected to a hardware station can be used by any POS register that is on the same network as the IIS hardware station. Because only Modern POS for Windows includes built-in support for retail peripherals, all other Modern POS applications must use the IIS hardware station to communicate with POS peripherals that are configured in the hardware profile. Therefore, each instance of the IIS hardware station requires a computer that runs the web service and application that communicates with the devices. The IIS hardware station is required for all non-Windows Modern POS applications.
+You can use the IIS or stand-alone version of the hardware station in two ways. The descriptor “IIS” implies that the POS application connects to the hardware station via Microsoft Internet Information Services. The POS application connects to the IIS hardware station via web services that run on a computer where the devices are connected. When IIS is used, the retail peripherals that are connected to a hardware station can be used by any POS register that is on the same network as the IIS hardware station. Because only Modern POS for Windows and Android include built-in support for retail peripherals, all other Modern POS applications must use the IIS hardware station to communicate with POS peripherals that are configured in the hardware profile. Therefore, each instance of the IIS hardware station requires a computer that runs the web service and application that communicates with the devices. 
 
 #### Dedicated
 
-Modern POS uses hardware stations of the **Dedicated** type to detect that peripherals are directly connected to the computer where the app is being used. However, the **Dedicated** type can also be used for IIS hardware stations. In a traditional, fixed POS scenario that uses Cloud POS as the POS application, the **Dedicated** hardware station type is used for IIS hardware stations that are deployed on the same computer that is running Cloud POS. From a retail peripherals perspective, the dedicated IIS hardware station has better retail peripheral support for traditional, fixed POS scenarios. Dedicated hardware stations support all peripherals that are supported in the hardware profile.
+Modern POS clients for Windows and Android include **Dedicated** or built-in hardware stations. Those clients can communicate directly with peripherals using business logic that is built into the applications. The Android application only supports network devices. For more information on peripheral support for the Android, visit the (Set up POS hybrid app on Android and iOS)[https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp] article.
 
 #### Shared
 
@@ -590,7 +590,7 @@ The following peripherals were tested by using the IPC hardware station that is 
 |--------------|----------|-----------|-------------------------|
 | Epson        | Tm-T88IV | OPOS      |                         |
 | Epson        | TM-T88V  | OPOS      |                         |
-| Star         | TSP650II | OPOS      |                         |
+| Epson        | TM-T88   | Custom    | Connected via network   |
 | Star         | TSP650II | Custom    | Connected via network   |
 | Star         | mPOP     | OPOS      | Connected via Bluetooth |
 | HP           | F7M67AA  | OPOS      | Powered USB             |
@@ -627,6 +627,7 @@ The following peripherals were tested by using the IPC hardware station that is 
 | APG          | Atwood    | Custom    | Connected via network   |
 | Star         | SMD2-1317 | OPOS      |                         |
 | HP           | QT457AA   | OPOS      |                         |
+| Epson        |           | Custom    | Connected to network Epson printer via DK port |
 
 #### Line display
 
@@ -665,9 +666,8 @@ The following peripherals were tested by using a dedicated (not shared) IIS hard
 |--------------|----------|-----------|---------------------------|
 | Epson        | Tm-T88IV | OPOS      |                           |
 | Epson        | TM-T88V  | OPOS      |                           |
-| Star         | TSP650II | OPOS      |                           |
+| Epson        | TM-T88V  | Custom    | Connected via netowrk     |
 | Star         | TSP650II | Custom    | Connected via network     |
-| Star         | TSP100   | OPOS      | Requires TSP650II drivers |
 | HP           | F7M67AA  | OPOS      | Powered USB               |
 
 #### Bar code scanner
@@ -699,6 +699,7 @@ The following peripherals were tested by using a dedicated (not shared) IIS hard
 | APG          | Atwood    | Custom    | Connected via network |
 | Star         | SMD2-1317 | OPOS      |                       |
 | HP           | QT457AA   | OPOS      |                       |
+| Epson        |           | Custom    | Connected to network Epson printer via DK port |
 
 #### Line display
 
@@ -737,7 +738,7 @@ The following peripherals were tested by using a shared IIS hardware station tog
 |--------------|----------|-----------|---------------------------|
 | Epson        | Tm-T88IV | OPOS      |                           |
 | Epson        | TM-T88V  | OPOS      |                           |
-| Star         | TSP650II | OPOS      |                           |
+| Epson        | TM-T88   | Custom    | Connected via network     |
 | Star         | TSP650II | Custom    | Connected via network     |
 | Star         | TSP100   | OPOS      | Requires TSP650II drivers |
 | HP           | F7M67AA  | OPOS      | Powered USB               |
@@ -756,6 +757,8 @@ The following peripherals were tested by using a shared IIS hardware station tog
 | APG          | Atwood    | Custom    | Connected via network |
 | Star         | SMD2-1317 | OPOS      |                       |
 | HP           | QT457AA   | OPOS      |                       |
+| Epson        |           | Custom    | Connected to network Epson printer via DK port |
+
 
 ## Troubleshooting
 ### Modern POS can detect the hardware station in its list for selection, but it can’t complete the pairing
