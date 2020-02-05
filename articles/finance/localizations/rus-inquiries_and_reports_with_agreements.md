@@ -10,34 +10,31 @@ Viewing agreement amounts
     **Sales agreement** tab, in the **Related information** section, select
     **Agreement amount** to open the **Customer transactions** page.
 
-![](media/c3f679c16450f48ca5118e8c9d11bb8c.png)
-
->   A screenshot of a computer Description automatically generated
-
-1.  In the **Start date** and **End date** fields, specify the period that you
+   ![](media/14_Customer_transactions.png)
+2.  In the **Start date** and **End date** fields, specify the period that you
     want to analyze agreement amounts for.
 
-2.  In the lower part of the page, in the **Totals** section, review the
+3.  In the lower part of the page, in the **Totals** section, review the
     following information:
 
--   The **Start balance** field shows the balance on the start date.
+     -   The **Start balance** field shows the balance on the start date.
 
--   The **End balance** field shows the balance on the end date.
+     -   The **End balance** field shows the balance on the end date.
 
--   The **Amount debited** and **Amount credited** fields show the corresponding
-    amounts under the agreement for the period.
+     -   The **Amount debited** and **Amount credited** fields show the corresponding
+         amounts under the agreement for the period.
 
-1.  In the upper and middle parts of the page, review the transactions on the
+4.  In the upper and middle parts of the page, review the transactions on the
     counterparty for the debt that has occurred and for the repayment of that
     debt:
 
--   The **Amount** field shows the transaction amount.
+    -   The **Amount** field shows the transaction amount.
 
--   The **Balance** field shows the undelivered amount.
+    -   The **Balance** field shows the undelivered amount.
 
--   The **Description** field shows the transaction description.
+    -   The **Description** field shows the transaction description.
 
-1.  Select **Voucher** to view the ledger transactions.
+5.  Select **Voucher** to view the ledger transactions.
 
 ### View purchase agreement amounts
 
@@ -45,11 +42,9 @@ Viewing agreement amounts
     **Purchase agreement** tab, in the **Related information** section, select
     **Agreement amount** to open the **Vendor transactions** page.
 
-![](media/2787756a88fdbcdba39d776a6cac6a63.png)
+   ![](media/15_Vendor_transactions.png)
 
->   A screenshot of a social media post Description automatically generated
-
-1.  Review the amounts as described in the previous section of this topic, [View
+2.  Review the amounts as described in the previous section of this topic, [View
     sales agreement amounts](#view-sales-agreement-amounts).
 
 Viewing orders and invoices that are linked to the agreement
@@ -62,16 +57,16 @@ Viewing orders and invoices that are linked to the agreement
 2.  On the **Sales agreement** tab, in the **Related information** section,
     follow any of these steps:
 
--   Select **Linked sales orders** to view the details of the sales orders that
+    -   Select **Linked sales orders** to view the details of the sales orders that
     are linked to the sales agreement.
 
--   Select **Linked services invoices** to view the details of the free text
+    -   Select **Linked services invoices** to view the details of the free text
     invoices that are linked to the sales agreement.
 
--   Select **Nonlinked sales orders** to view the details of the sales orders
+    -   Select **Nonlinked sales orders** to view the details of the sales orders
     that are **not** linked to the sales agreement.
 
--   Select **Nonlinked services invoices** to view the details of the free text
+    -   Select **Nonlinked services invoices** to view the details of the free text
     invoices that are **not** linked to the sales agreement.
 
 ### View purchase orders that are linked to purchase agreements
@@ -81,10 +76,10 @@ Viewing orders and invoices that are linked to the agreement
 2.  On the **Purchase agreement** tab, in the **Related information** section,
     follow any of these steps:
 
--   Select **Linked purchases** to view the details of the purchase orders that
+    -   Select **Linked purchases** to view the details of the purchase orders that
     are linked to the purchase agreement.
 
--   Select **Nonlinked purchases** to view the details of the purchase orders
+    -   Select **Nonlinked purchases** to view the details of the purchase orders
     that are **not** linked to the purchase agreement.
 
 Generating an Act of adjustment
@@ -112,23 +107,23 @@ time, the total debt of the counterparty is estimated.
 An Act of adjustment contains the following data in the context of the customer
 or vendor and its agreements:
 
--   The expanded total balance on the counterparty (agreement) at the beginning
-    and the end of the period. The expanded total balance is the balance of
-    invoices or credit notes, and the balance on advances or refunds.
+   -  The expanded total balance on the counterparty (agreement) at the beginning
+      and the end of the period. The expanded total balance is the balance of
+      invoices or credit notes, and the balance on advances or refunds.
 
--   Information about unpaid invoices of the previous period (payables or
-    receivables), their payment, and their offset (settlement) in the current
-    period.
+   -  Information about unpaid invoices of the previous period (payables or
+      receivables), their payment, and their offset (settlement) in the current
+      period.
 
--   Information about received or shipped invoices or credit notes for the
-    period that is under review, together with information about their payment
-    and netting (settlement).
+   -  Information about received or shipped invoices or credit notes for the
+      period that is under review, together with information about their payment
+      and netting (settlement).
 
--   Information about advances or refunds (unsettled payments of the current
-    period).
+   -  Information about advances or refunds (unsettled payments of the current
+      period).
 
--   Information about advances or refunds of past periods (unsettled payments of
-    past periods).
+   -  Information about advances or refunds of past periods (unsettled payments of
+      past periods).
 
 ### Generate an Act of adjustment for a customer
 
@@ -136,47 +131,47 @@ or vendor and its agreements:
 
 2.  In the **Counteragent** section, specify the following details:
 
--   In the **Customer account** field, select the customer to generate the Act
-    of adjustment for.
+    -   In the **Customer account** field, select the customer to generate the Act
+        of adjustment for.
 
--   If the counterparty is both a customer and a vendor at the same time, set
-    the **Counteragent** parameter to **Yes** to create sections for both the
-    customer and the associated vendor.
+    -   If the counterparty is both a customer and a vendor at the same time, set
+        the **Counteragent** parameter to **Yes** to create sections for both the
+        customer and the associated vendor.
 
--   In the **Date interval code** field, select the code for the reporting
-    period.
+    -   In the **Date interval code** field, select the code for the reporting
+        period.
 
--   In the **From date** and **To date** fields, select the start and end dates
-    of the reporting period.
+    -   In the **From date** and **To date** fields, select the start and end dates
+        of the reporting period.
 
-1.  In the **Currency** section, specify the following details:
+3.  In the **Currency** section, specify the following details:
 
--   In the **Currency type** field, select the type of the transaction currency:
-    **Accounting currency** or **Indicated currency**.
+    -   In the **Currency type** field, select the type of the transaction currency:
+        **Accounting currency** or **Indicated currency**.
 
--   In the **Currency** field, select the transaction currency. This field is
-    available only if you select **Indicated currency** in the **Currency type**
-    field.
+    -   In the **Currency** field, select the transaction currency. This field is
+        available only if you select **Indicated currency** in the **Currency type**
+        field.
 
-1.  In the **Setup** section, specify the following details:
+4.  In the **Setup** section, specify the following details:
 
--   Set the **By data of counteragent** option to **Yes** if you want data to be
-    automatically entered in the section that is intended to be filled in by the
-    counterparty.
+    -   Set the **By data of counteragent** option to **Yes** if you want data to be
+        automatically entered in the section that is intended to be filled in by the
+        counterparty.
 
--   Set the **Delete zero balance** option to **Yes** to exclude invoice balance
-    lines from the report if they have a balance of 0 (zero) or a balance that
-    equals the amount of the invoice.
+    -   Set the **Delete zero balance** option to **Yes** to exclude invoice balance
+        lines from the report if they have a balance of 0 (zero) or a balance that
+        equals the amount of the invoice.
 
--   Set the **Agreements** option to **Yes** to generate the Act of adjustment
-    in the context of agreements.
+    -   Set the **Agreements** option to **Yes** to generate the Act of adjustment
+        in the context of agreements.
 
--   Set the **Documents** option to **Yes** to generate the Act of adjustment in
-    the context of documents that form debt.
+    -   Set the **Documents** option to **Yes** to generate the Act of adjustment in
+        the context of documents that form debt.
 
-1.  Select **OK**.
+5.  Select **OK**.
 
-![A screenshot of a cell phone Description automatically generated](media/e1aaaa32d44da7200bb7e564776a7a6e.png)
+    ![](media/16_Act_of_adjustment_(customers).png)
 
 *\> Note*.
 
@@ -189,7 +184,7 @@ line, and then, on the Action Pane, select **Transactions**.
 
 \>
 
-![A screenshot of a computer Description automatically generated](media/cb4d988bdec09fd09f4edf9ab80c8242.png)
+![](media/17_Act_of_adjustment.png)
 
 ### Generate an Act of adjustment for a vendor
 
