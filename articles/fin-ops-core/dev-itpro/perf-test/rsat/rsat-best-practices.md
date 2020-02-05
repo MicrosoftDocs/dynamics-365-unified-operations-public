@@ -101,9 +101,9 @@ In the web client, open the Task recorder pane and start editing the recording u
 
 ![Edit recording option](media/edit-recording.png)
   
-When you finish editing, save or download the recording, then play it back in the client and verify that all the steps work correctly.
+When you finish editing, play it back in the client and verify that all the steps work correctly.
 
 ![Playback recording option](media/playback-recording.png)
  
-After playing back an edited recording, save it. It is then ready to be used by RSAT.
+After playing back an edited recording (Playback is required), save it. It is then ready to be used by RSAT.
 
