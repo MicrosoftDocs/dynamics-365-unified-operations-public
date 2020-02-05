@@ -55,7 +55,7 @@ When you select **New**, test automation files are generated in your working dir
  
 You can also generate **test execution files** only without overwriting your parameter files. Use submenu **New > Generate Execution Files** to only regenerate execution files and leave Excel files unaffected. 
 
-This is required when you install a new version of the tool or modify a recording file, you can update your execution files while preserving the test parameter files.
+Generating test execution files is required when you install a new version of the tool, modify or load a recording file. This way you can update your execution files while preserving the test parameter files.
 
 ![Generate Test Execution files only menu item](media/generate-execution-files.png)
 
