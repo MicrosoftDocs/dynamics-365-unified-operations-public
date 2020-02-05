@@ -146,7 +146,7 @@ agreements](https://docs.microsoft.com/dynamics365/supply-chain/sales-marketing/
             registered for the agreement. If you don't set this field, a default value
             is taken from the **Accounts receivable parameters** page.
 
-    ![](media/6_Sales_agreements.png)
+   ![](media/6_Sales_agreements.png)
 
 8.  On the **Terms** FastTab, in the **Payment** section, set the fields for
     payment terms. In the **Payment day** field, select a calendar of payment
