@@ -103,6 +103,7 @@ This topic provides information about functionality that supports Russian regula
 ## Inventory
 - [Goods in transit from vendor](rus-goods-transit-vendor.md)
 - [Customs declaration numbers](rus-custom-declaration-number.md)
+- [Inventory cost structure](rus-inventory-cost-structure.md)
 
 ## Reporting
 
