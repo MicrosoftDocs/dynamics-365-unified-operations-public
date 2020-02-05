@@ -113,27 +113,27 @@ agreements](https://docs.microsoft.com/dynamics365/supply-chain/sales-marketing/
         checked for all counterparty agreements and for the total counterparty
         limit.
 
->   **\> Note:**
+    >   **\> Note:**
 
->   \> When you settle invoices with payments that belong to different
->   agreements, limit control is done according to the agreement that the
->   payment is assigned to.
+    >   \> When you settle invoices with payments that belong to different
+    >   agreements, limit control is done according to the agreement that the
+    >   payment is assigned to.
 
->   \> If you cancel the settlement of invoices and payments that belong to
->   different agreements, limit control is done according to the agreement that
->   the invoice is assigned to.
+    >   \> If you cancel the settlement of invoices and payments that belong to
+    >   different agreements, limit control is done according to the agreement that
+    >   the invoice is assigned to.
 
->   \> When you settle invoices with payments that don't indicate that they
->   belong to the agreement, limit control is done by the counterparty.
+    >   \> When you settle invoices with payments that don't indicate that they
+    >   belong to the agreement, limit control is done by the counterparty.
 
->   \> When you settle invoices that don't indicate that they belong to the
->   agreement with payments that belong to the agreement, limit control is done
->   according to the agreement that the payment is assigned to.
+    >   \> When you settle invoices that don't indicate that they belong to the
+    >   agreement with payments that belong to the agreement, limit control is done
+    >   according to the agreement that the payment is assigned to.
 
->   \> If you cancel the settlement of invoices that don't indicate that they
->   belong to the agreement and payments that belong to the agreement, limit
->   control is done by a contractor. Invoices that have an open balance and
->   don't indicate an agreement are included.
+    >   \> If you cancel the settlement of invoices that don't indicate that they
+    >   belong to the agreement and payments that belong to the agreement, limit
+    >   control is done by a contractor. Invoices that have an open balance and
+    >   don't indicate an agreement are included.
 
    -   In the **Posting profile** section, specify the following details:
 
@@ -146,7 +146,7 @@ agreements](https://docs.microsoft.com/dynamics365/supply-chain/sales-marketing/
             registered for the agreement. If you don't set this field, a default value
             is taken from the **Accounts receivable parameters** page.
 
-   ![](media/6_Sales_agreements.png)
+    ![](media/6_Sales_agreements.png)
 
 8.  On the **Terms** FastTab, in the **Payment** section, set the fields for
     payment terms. In the **Payment day** field, select a calendar of payment
