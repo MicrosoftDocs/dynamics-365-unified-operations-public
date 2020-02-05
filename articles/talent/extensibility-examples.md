@@ -2,7 +2,7 @@
 # required metadata
 
 title: Extend Talent with Power Apps and Power Automate
-description: This topic describes some examples of extensibility scenarios for Microsoft Dynamics 365 Talent that use Microsoft Power Apps and Microsoft Power Automate.
+description: This topic describes some examples of extensibility scenarios for Microsoft Dynamics 365 HumanResources and Attract that use Microsoft Power Apps and Microsoft Power Automate.
 author: negudava
 manager: Annbe
 ms.date: 05/01/2019
@@ -60,19 +60,21 @@ When a candidate submits a form, Microsoft Power Automate captures the form subm
 To download the **Power Automate – Form Connect** template and Custom Entity Structure, go to [Power Automate – Form Connect](https://go.microsoft.com/fwlink/?linkid=2081988) on the Microsoft Download Center.
 
 
-## Integration with Office 365
+## Integration with Office 365, PowerAutomate
 
-The **Integration with Office 365** app can be used to extract team information for signed-in users from Microsoft Office 365. It references workers in Talent to extract employee identification types. Managers can check  expiration dates of employee identification types and can send a reminder if the employee identification type is expiring. Identification types include driver's license, passport, and other acceptable forms of ID.
+The **Integration with Office 365** app can be used to extract team information for signed-in users from Microsoft Office 365. It references workers in Talent to extract employee identification types. Managers can check  expiration dates of employee identification types and can send an outlook reminder if the employee identification type is expiring. PowerAutomate is integrated with PowerApp to  send this reminder. Confirmation will be sent back to PowerApp from PowerAutomate when the reminder is sent.  Identification types include driver's license, passport, and other acceptable forms of ID.
 
 You can extend this app for other scenarios. For example, you can use it to show team vacation information, calendar events, and any team-specific events.
 
-To download the **Integration with Office 365** app , go to [Integration with Office 365](https://go.microsoft.com/fwlink/?linkid=2081787) on the Microsoft Download Center.
+To download the **Integration with Office 365, PowerAutomate** app , go to [Integration with Office 365](https://go.microsoft.com/fwlink/?linkid=2081787) on the Microsoft Download Center.
 
 ## Power Automate – SQL Connect and execute
 
 The **Power Automate – SQL Connect and execute** template connects to Microsoft SQL Server and enables SQL queries to be run.
 
 Although this template is designed to read and update SQL tables, it can be extended so that it can be used for other scenarios. For example, it can be used to fill a staging table in Common Data Service with records from SQL Server, and to periodically synchronize the staging table by using an incremental push from SQL Server.
+
+Advanced Query is integrated with Flow to enable Data transformation and incremental push.
 
 To download the **Power Automate – SQL Connect and execute** template, go to [Power Automate – SQL Connect and execute](https://go.microsoft.com/fwlink/?linkid=2081789) on the Microsoft Download Center.
 
