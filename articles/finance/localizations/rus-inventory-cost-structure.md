@@ -61,7 +61,7 @@ Preliminary setup
     -   In the **Type** field in the **Credit** section, you can select only
         **Ledger account**.
 
-[](media/2%20Charges%20codes.png)
+    ![](media/2%20Charges%20codes.png)
 
 Adjustment of item cost in terms of miscellaneous charges codes
 -----------------------------------------------------------------
