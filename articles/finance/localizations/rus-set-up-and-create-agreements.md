@@ -27,8 +27,8 @@ Create sales agreement classifications
 
 ![](media/1_Sales_agreement_classifications.png)
 
-*Note*. You can't delete an agreement classification that is used for existing
-agreements.
+>   *Note*. You can't delete an agreement classification that is used for existing
+>   agreements.
 
 Create purchase agreement classifications
 -----------------------------------------
