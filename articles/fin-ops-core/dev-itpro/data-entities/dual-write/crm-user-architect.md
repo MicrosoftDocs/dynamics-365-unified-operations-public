@@ -44,7 +44,7 @@ At the start, most of these changes are coming from dual-write solutions. The pl
 + Common Data Service platform is getting revised, which includes the following:
     - 'Decimal' data type replaces 'Money'.
     - New 'Date Effectivity' framework accommodates past, present, and future data at the same place.
-    - More support for 'Currency' and 'Exchange Rates,' including revision of Exchange Rate API.
+    - More support for 'Currency' and 'Exchange Rates,' and this includes the revision of Exchange Rate API.
     - Unit conversions are now possible.
 
-For more information about dual-write, see [Dual-write overview](dual-write-purpose.md). 
+For more information about dual-write, see the [Dual-write overview](dual-write-purpose.md). 
