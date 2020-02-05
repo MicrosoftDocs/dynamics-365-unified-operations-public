@@ -61,7 +61,7 @@ Preliminary setup
     -   In the **Type** field in the **Credit** section, you can select only
         **Ledger account**.
 
-    ![](media/1_Charges_codes.png)
+![](media/1_Charges_codes.png)
 
 Adjustment of item cost in terms of miscellaneous charges codes
 -----------------------------------------------------------------
@@ -138,8 +138,6 @@ values](https://docs.microsoft.com/dynamics365/supply-chain/cost-management/adju
     entered in the inventory settlement after the adjustment is posted.
 
     ![](media/4_On-hand.png)
-
->   A screenshot of a computer Description automatically generated
 
 8.  To enter the charges code on all lines of the **On hands** page, on the
     Action Pane, select **Adjustment \> Charges code**.
