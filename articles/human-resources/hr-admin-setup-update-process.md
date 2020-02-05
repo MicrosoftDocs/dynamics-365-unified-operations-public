@@ -5,7 +5,7 @@ title: Update process
 description: 
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 02/05/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
