@@ -41,6 +41,8 @@ This topic provides information about functionality that supports Russian regula
 - [Set up exchange rates for currency transactions](rus-exchange-difference.md)
 - [Import currency exchange rates](../general-ledger/import-currency-exchange-rates.md)
 - [Ledger translation](rus-ledger-translation-procedure.md)
+- [Turnover balance statement reports](rus-turnover-balance-statement-reports.md)
+- [Account activity reports](rus-account-activity-reports.md)
 
 ## Advance holders
 
