@@ -52,21 +52,11 @@ You can provide direct feedback or report issues to:  D365BenefitsPreview@micros
 
 ## Benefits management known issues
 
-### Life events
-
-When processing life events, the user will receive an error:
-
-Coverage start date must be between *beginning of plan period* and *end of plan period*.
-
-The life event will continue to process as expected.
-
 ### Eligibility processing
 
 When running eligibility for benefits that use a 1-5X Salary, % of Salary, and Flat Amount coverage amount, the benefit details date must be set to the employee start date in **Employment history**, with hours worked, payment frequency and annual benefits salary amount. If fixed compensation exists for the worker, enter in the hours worked along with the payment frequency, and the annual salary amount will calculate. If the employee is salaried, the hours worked isn't needed. We recommend that when creating new workers, enter fixed compensation first. To update the benefit details record:  Navigate to **Worker > Worker history > Employment details**. Adjust the date to workers start date.
 
-### Employee-self service
-
-Employees can select a plan that they aren't qualified for and check out.  For example: A worker doesn't have any dependents, but is allowed to select a medical plan with a family coverage option.
+### Employee self-service
 
 Employee amount isn’t being calculated when updating the coverage amount for life insurance. For example, when an employee is offered a life insurance plan, they can select up to $50,000 in coverage at a cost of $.36 per $1,000 of coverage.  When the employee updates the coverage amount, the employee’s associated cost remains at zero.
 
