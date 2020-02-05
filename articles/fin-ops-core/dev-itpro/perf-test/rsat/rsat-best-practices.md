@@ -37,6 +37,8 @@ This topic describes how to use the Regression suite automation tool (RSAT)/Task
 
 ## Authoring test cases using the Task recorder
 
+When authoring task recordings for RSAT, follow these practices
+
 1. Make sure all your recordings start on the main dashboard.
 2. Keep individual recordings short and focus on a business task performed by one user, like creating a sales order. This simplifies maintainability and reusability of test cases.
 3. Chart controls are not supported. Any task recording actions related to charts will be ignored by RSAT during test case playback.
@@ -61,33 +63,35 @@ This topic describes how to use the Regression suite automation tool (RSAT)/Task
   
    ![Set locale, date, time, and number format](media/locale.png)
 
-The following are typical usage sequences.
+## Management of local recording files
 
-**Sequence A: Load > New > Edit > Run > Upload**
+RSAT relies on Azure DevOps to store and manage test recording files (aka task recordings). When RSAT loads a
+test plan from Azure DevOps, associated files are downloaded to the current **working directory** (defined in RSAT
+settings) on your local machine.
+As of version 1.200.42264.6, managing local recording files has become simpler. You can make changes in Task
+recorder and test them with RSAT without going through BPM or Azure DevOps. Using task recorder, when you
+complete authoring or modifying a recording, save it as a developer recording directly on your local disk.
 
-1. Select **Load**.
-2. Select a test cases.
-3. If some test cases have no parameter file, select **New** to generate them. 
-4. Optional: Edit Excel file to run tests with different parameters.
-5. Select **Run**.
-6. Optional: After a successful run, select **Upload** to upload all generated automation files (including Excel test parameter files) to Azure DevOps. 
+![Save as developer recording](media/rsat-save-as-developer-recording.png)
 
-**Sequence B: Load > Edit > Run > Upload**
+Place the recording file under the working directory associated with the test case. For example, if your configured working directory is C:\Users\<username>\Documents\RSAT the recording file for test case 1234 will be located under C:\Users\<username>\Documents\RSAT\1234\attachments. You must name the developer recording file **Recording.xml**. Alternatively, you can name the recording file **-Test Case Title-.xml**, where -Test Case Title- is the DevOps title of the test case.
 
-1. Select **Load**. If all parameter files already exist, you do not need to select **New** to regenerate them.
-2. Optional: Edit Excel file to run tests with different parameters.
-3. Select **Run**.
-4. Optional: After a successful run, select **Upload** to upload all generated automation files (including Excel test parameter files) to Azure DevOps. 
+This is an example working directory folder structure. You can open this directory directly from RSAT by clicking the folder icon.
 
-**Sequence C: Load > New (for all test cases) > Run > Upload**
+![Working directory example](media/rsat-working-directory-example.png)
 
-This sequence is recommended after installing a new version of the tool. 
+Each test case has its own folder, named after the ID of the test case. Test case attachments (recording files, automation files and Excel parameter files) are downloaded into attachments folder. Here’s an example: 
 
-1. Select **Load**. 
-2. Select all test cases in the test plan and select **New**.
-3. Edit Excel parameter files.
-4. Select **Run**.
-5. After a successful run, select **Upload** to upload all generated test artifacts to Azure DevOps. 
+![Test case attachments](media/rsat-test-case-attachments.png)
+
+The generatorLogs directory contains logfiles and does not have any user modifiable files. It can be ignored unless you are specifically asked to provide logfiles from this directory by RSAT support.
+
+### Commit a recording file to Azure DevOps
+When a recording is tested and finalized, use RSAT to upload it and commit it to Azure DevOps. The upload button has two options “Upload automation files” or “Upload recording file”. The second option will only upload your recording file to Azure DevOps.
+
+NOTE:
+-	If you are on a version of RSAT older than 1.200.37255.0 and upgrade to the latest version, you will need to reload your test cases from Azure DevOps to download them into the correct directory. Unless you reload, RSAT will fail with a “file not found” error.
+-	If you are working across several DevOps projects, it is recommended that you use a different working directory for each project. This is to prevent attachment files from multiple projects getting co-mingled in the same directory structure.
 
 ## How to modify a Task recording
 
