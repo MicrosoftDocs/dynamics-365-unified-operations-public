@@ -79,10 +79,22 @@ You must configure a SMTP server to send email receipts. 
     -   **E-mail ID **- This should already be populated as *EmailRecpt*.
     -   **Subject **- Enter a title for the email receipts.
     -   **Language **- Specify the language.
-    -   **Email **- Insert the following string: *&lt;pre&gt;%message%&lt;/pre&gt;.*
-    -   If you want to have more than just the receipt in the message, click the **E-mail message** button to fill out the template for the body of the email messages to be sent. If you want the receipt to appear (in MPOS), insert the placeholder *%message%.*
+    -   **Email **- Insert the following string:
+    
+
+    ``` xml
+    <pre>
+    %message%
+    </pre>
+    ```
+
+-   If you want to have more than just the receipt in the message, click the **E-mail message** button to fill out the template for the body of the email messages to be sent. The placeholder *%message%.* is used to insert the receipt from MPOS. 
 
 This is the only placeholder that will be replaced when sending MPOS receipts. To get more placeholder options, you'll need to create customization on the MPOS side.
+
+It is advised to to put the html content into notepad and save it as a .txt file before uploading. This will help to preserve receipt alignment and reduce header and footer space in the emailed receipt
+
+The logo and bar code from the printed receipt will not be included in the emailed receipt version. To include the logo, create a generic html em-mail template and embed the placeholder. Including bar codes in the emailed receipt requires customization. 
 
 Depending on the settings that you configured, you'll need to run the respective distribution schedule jobs to sync the changes to MPOS.
 
