@@ -36,25 +36,25 @@ agreement is similar for all the other journals.
     field, select the number of the agreement that the transaction is registered
     for.
 
->   The **Document title** field is automatically set to the title of the
->   agreement.
+    The **Document title** field is automatically set to the title of the
+    agreement.
 
-![A screenshot of a computer Description automatically generated](media/abbbc0391cf8f0b9ddb34bf06ea3ee8e.png)
+![](media/10_Vendor_payments.png)
 
 The transaction for the counterparty will have a link to the agreement number.
 To view transactions for a counterparty, follow one of these steps.
 
--   On the **All vendors** page, on the Action Pane, on the **Vendor** tab, in
-    the **Transactions** section, select **Transactions**. On the **Financial
-    dimensions** tab, the **Agreement** field shows information about the
-    agreement that the transaction is registered for.
+   -   On the **All vendors** page, on the Action Pane, on the **Vendor** tab, in
+       the **Transactions** section, select **Transactions**. On the **Financial
+       dimensions** tab, the **Agreement** field shows information about the
+       agreement that the transaction is registered for.
 
--   On the **All customers** page, on the Action Pane, on the **Customer** tab,
-    in the **Transactions** section, select **Transactions**. Then, in the upper
-    pane, in the **Page options** section, select **Change view \> Details
-    view**. On the **Financial dimensions** FastTab, the **Agreement** field
-    shows information about the agreement that the transaction is registered
-    for.
+   -   On the **All customers** page, on the Action Pane, on the **Customer** tab,
+       in the **Transactions** section, select **Transactions**. Then, in the upper
+       pane, in the **Page options** section, select **Change view \> Details
+       view**. On the **Financial dimensions** FastTab, the **Agreement** field
+       shows information about the agreement that the transaction is registered
+       for.
 
 Registering accounts receivable or accounts payable, and including an indication of the agreement
 -------------------------------------------------------------------------------------------------
@@ -77,14 +77,12 @@ specify a customer or vendor agreement.
 2.  On the **Free text invoice header** FastTab, in the **Agreement** section,
     in the **Agreement ID** field, select the number of the agreement.
 
->   The **Document title** field is automatically set to the title of the
->   agreement.
+    The **Document title** field is automatically set to the title of the
+    agreement.
 
-![](media/1ce0d847f2cb1e78bd1901208e79c5c2.png)
+    ![](media/11_Free_text_invoice.png)
 
->   A screenshot of a computer screen Description automatically generated
-
-1.  Specify other details, and post the invoice.
+3.  Specify other details, and post the invoice.
 
 ### Register accounts receivable and accounts payable from general journals
 
@@ -96,14 +94,12 @@ specify a customer or vendor agreement.
     section, in the **Agreement ID** field, select the number of the agreement
     that the transaction is registered for.
 
->   The **Document title** field is automatically set to the title of the
->   agreement.
+    The **Document title** field is automatically set to the title of the
+    agreement.
 
-![](media/11229d473f16c5e55942414528646f71.png)
+    ![](media/12_Journal_voucher.png)
 
->   A screenshot of a computer screen Description automatically generated
-
-1.  Specify other details, and then, on the Action Pane, select **Post** to post
+4.  Specify other details, and then, on the Action Pane, select **Post** to post
     the transaction.
 
 Settling factures on a counterparty in the context of agreements
@@ -120,25 +116,23 @@ dimension control for settlements
 2.  On the **Collect** tab, in the **Settle** section, select **Facture and
     payment settlement**.
 
-![](media/52a0e041e93967688bd59244c500f059.png)
+    ![](media/13_Facture_and_payment_settlement.png)
 
->   A screenshot of a computer Description automatically generated
-
-1.  In the upper and lower panes, set the following options to select
+3.  In the upper and lower panes, set the following options to select
     transactions:
 
--   In the **Look in** field, select **Agreement**.
+    -   In the **Look in** field, select **Agreement**.
 
--   In the **Agreement ID** field, select an agreement that you want to settle
-    transactions for.
+    -   In the **Agreement ID** field, select an agreement that you want to settle
+        transactions for.
 
->   The transactions that include the selected agreement are shown.
+    The transactions that include the selected agreement are shown.
 
-1.  Use the **Mark** check boxes to select the reimbursement transaction for
+4.  Use the **Mark** check boxes to select the reimbursement transaction for
     settlement in the upper pane and the disbursement transaction in the lower
     pane.
 
-2.  On the Action Pane, select **Update** to settle the counteragent
+5.  On the Action Pane, select **Update** to settle the counteragent
     transaction.
 
 ### Settle factures on a vendor in the context of agreements
