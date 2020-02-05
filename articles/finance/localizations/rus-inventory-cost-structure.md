@@ -61,7 +61,7 @@ Preliminary setup
     -   In the **Type** field in the **Credit** section, you can select only
         **Ledger account**.
 
-    ![](media/2%20Charges%20codes.png)
+    ![](media/1_Charges_codes.png)
 
 Adjustment of item cost in terms of miscellaneous charges codes
 -----------------------------------------------------------------
@@ -94,7 +94,7 @@ close](https://docs.microsoft.com/dynamics365/supply-chain/cost-management/inven
 
 4.  In the **Specification** field, select **All**.
 
-    ![](media/3%20Close%20inventory.png)
+    ![](media/2_Close_inventory.png)
 
 5.  Select **OK**.
 
@@ -128,9 +128,7 @@ values](https://docs.microsoft.com/dynamics365/supply-chain/cost-management/adju
 5.  In the **Select on-hand inventory** dialog box, specify the inventory
     dimensions that should be shown after the adjustment is done.
 
-![](media/4%20Select%20on-hand%20inventory.png)
-
->   A screenshot of a cell phone Description automatically generated
+    ![](media/3_Select_on-hand_inventory.png)
 
 6.  Select **OK**. The **On-hand** page shows the inventory lines that you
     selected for adjustment, together with the specified inventory dimensions.
@@ -139,7 +137,7 @@ values](https://docs.microsoft.com/dynamics365/supply-chain/cost-management/adju
     a charges code for the item. The selected miscellaneous charge code is
     entered in the inventory settlement after the adjustment is posted.
 
-![](media/9fd6a1bfbd8c894666d4d64b43e56f3b.png)
+    ![](media/4_On-hand.png)
 
 >   A screenshot of a computer Description automatically generated
 
@@ -154,9 +152,7 @@ values](https://docs.microsoft.com/dynamics365/supply-chain/cost-management/adju
         the value in the **Charges code** field will be adjusted only on the line
         that is selected on the **On hands** page.
 
-![](media/bbac0f84c45290ea37b9f045ec9c0c40.png)
-
->   A screenshot of a cell phone Description automatically generated
+    ![](media/5_Change_misc._charges_code.png)
 
 10. Select **OK**.
 
@@ -175,9 +171,7 @@ values](https://docs.microsoft.com/dynamics365/supply-chain/cost-management/adju
 
 13. In the **Note** field, enter a note about the adjustment.
 
-![](media/ec1927b99460b606a0f25112003c1e8e.png)
-
->   A screenshot of a cell phone Description automatically generated
+    ![](media/6_Adjustment_of_on-hand_inventory.png)
 
 14. Select **OK** to post the adjustment.
 
@@ -209,9 +203,7 @@ following way:
     the inventory receipt transactions that must be adjusted, and then select
     **OK**.
 
-![](media/edd29ffb6f437820171db19d1ff608b1.png)
-
->   A screenshot of a cell phone Description automatically generated
+    ![](media/7_Adjust_transactions.png)
 
 6.  Select charges codes for items, and post the adjustment, as described in the
     [Adjust on-hand inventory](#adjust-on-hand-inventory) section earlier in
@@ -246,23 +238,17 @@ rus-inventory-adjustment-wizard.md).
 7.  On the **Selection result** page, review the items or item transactions that
     have been selected for adjustment, and then select **Next**.
 
-![](media/3c9d1c7aa1583b6138520157fdeba113.png)
-
->   A screenshot of a computer Description automatically generated
+    ![](media/8_Selection_result.png)
 
 8.  On the **Functions for calculating adjustment amounts** page, select the
     method for calculating adjustment amounts, and then select **Next**.
 
-![](media/939b076bb8deebe5f55dfe42331ede00.png)
-
->   A screenshot of a social media post Description automatically generated
+    ![](media/9_Functions_for_calculating_adjustments_amounts.png)
 
 9.  On the **Results of allocation** page, review the allocation results. In the
     **Charges code** field, select a charge code for a line.
 
-![](media/04409ee027a43182032c62435503d26b.png)
-
->   A screenshot of a computer screen Description automatically generated
+    ![](media/10_Results_of_allocation.png)
 
 10. Select **Next**.
 
@@ -300,9 +286,7 @@ rus-inventory-adjustment-wizard.md).
             **No**, the adjustment will be assigned to the account that is specified in
             the **Corr. account** field.
 
-![](media/da40f85b78957e86641be1cdc812f46a.png)
-
->   A picture containing screenshot Description automatically generated
+    ![](media/11_Posting.png)
 
 Select **Next**.
 
@@ -352,7 +336,7 @@ of miscellaneous charges.
     >   standard method of miscellaneous charges allocation was used to perform the
     >   cost adjustment operation.
 
-![](media/b6bd28ef6301f0750cf341e5e32b6e57.png)
+![](media/12_Settlements.png)
 
 >   A screenshot of a social media post Description automatically generated
 
