@@ -29,9 +29,10 @@ ms.dyn365.ops.version: Release 10.0.8
 
 # Change work pool on work
 
-This features adds a **Change work pool** button to the action panel for work items, which makes it easy for warehouse managers to change the work pool of existing work. It enables managers to react quickly to changes on the shop floor and improves their ability to streamline physical processes by changing situations.
+This features adds a **Change work pool** button to the action panel for work items, which makes it easy for warehouse managers to change the work pool of existing work. It enables managers to react quickly to changes on the warehouse shop floor and improves their ability to adapt to changing situations and need of transfering work to another work pool.
 
 <!-- KFM: What do you mean by "improves their ability to streamline physical processes by changing situations"? -->
+<!-- Mirza: I  have changed it above, please review it is more clear now."? -->
 
 ## Enable the change work pool feature
 
@@ -41,6 +42,7 @@ Before you begin trying to set up or use this feature, you must make sure it's a
 - **Feature name**: Change work pool on work
 
 <!-- KFM: Add this?: "If you don't see the feature listed here, then it may have become a standard part of the product since this documentation was written, in which case you can proceed with the remaining sections of this topic and all of the described features should be available to you." -->
+<!-- Mirza: Agree" -->
 
 ## Set up the change work pool feature
 
