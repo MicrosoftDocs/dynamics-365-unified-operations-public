@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 # ROBOTS: HrmParameters, HcmSharedParameters
-# ms.search.form: HrmParameters, HcmSharedParameters
+# ms.search.form: HrmParameters, HcmSharedParameters, DefaultDashboard
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: Talent July 2017 update
 In Microsoft Dynamics 365 Talent it's easy to modify the user interface and set options that make the software more intuitive for your needs. This topic includes links to topics that provide information on how to adapt the user interface to your preferences. The topic also includes links to information that can help you find information in the system efficiently and accurately. 
 
 > [!NOTE] 
-> The following products are closely related: Dynamics 365 Finance; Dynamics 365 Retail; and Dynamics 365 Talent. The same functionality may appear in all three products. As a result, in topics that are primarily related to Retail, the product name will be Dynamics 365 Retail; in topics that are primarily related to Talent, the product name will be Dynamics 365 Talent; and in topics that are related to the core product, the product name will be Dynamics 365 Finance. Topics that are written for one product may apply to the same functionality in a related product.
+> The following products are closely related: Dynamics 365 Finance; Dynamics 365 Commerce; and Dynamics 365 Talent. The same functionality may appear in all three products. As a result, in topics that are primarily related to Commerce, the product name will be Dynamics 365 Commerce; in topics that are primarily related to Talent, the product name will be Dynamics 365 Talent; and in topics that are related to the core product, the product name will be Dynamics 365 Finance. Topics that are written for one product may apply to the same functionality in a related product.
 
 ## Personalizing Talent 
 The following topics show how to set up many features in Talent that make it easier for you to get your work done in a timely manner. 

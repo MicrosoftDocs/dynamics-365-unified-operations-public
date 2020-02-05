@@ -62,7 +62,7 @@ This procedure is created for users with the assigned role of system administrat
 6. Click OK.
 
 ## Review ER format execution’s results
-    * Review the generated XML file.  
+Review the generated XML file.  
 1. Close the page.
 2. Go to Tax > Declarations > Foreign trade > Intrastat.
     * Open this form containing Intrastat transactions that have been included to the generated electronic document.  

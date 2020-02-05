@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Deploy a new e-Commerce tenant
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic describes how to deploy a new e-Commerce site by using Microsoft Dynamics Lifecycle Services (LCS).

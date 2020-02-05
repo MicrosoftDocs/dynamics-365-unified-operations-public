@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Content rich block module
-description: This topic covers content rich block modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+title: Text block module
+description: This topic covers text block modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -27,74 +27,59 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Content rich block module
+# Text block module
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
-This topic covers content rich block modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+This topic covers text block modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-A content rich block module is a special container that one or more content rich block items can be put inside. Content rich block modules are used for textual content on a page. This content can be either informational or promotional.
+A text block module is a module that is used to add textual content. This content can be informational or promotional.
 
-Content rich block modules are driven by data from the content management system (CMS) and can be put on any page. They are stand-alone modules that don't depend on page context or any other modules.
+Text block modules are driven by data from the content management system (CMS) and can be put on any page. They are stand-alone modules that don't depend on page context or any other modules.
 
-## Examples of content rich block modules in e-Commerce
+## Examples of text block modules in e-Commerce
 
-Content rich block modules can be used in the following ways:
+Text block modules can be used in the following ways:
 
 * To showcase product features on a product details page.
 * For informational purposes on any page. For example, they can explain the benefits of loyalty programs, describe shipping and return policies, answer frequently asked questions, or provide "about us" content.
 * To add custom messages on a product details page. (for example, "Free shipping for orders over $50").
 * For disclaimers and contact details on product details pages, cart pages, checkout pages, and other pages (for example, "Shipping and returns are subject to store policies").
 
-## Content rich block module properties
+## Text block module properties
 
-| Property name     | Value                                 | Property |
-|-------------------|---------------------------------------|----------|
-| Number of columns | A number from **1** through **4**     | The number of columns in the content rich block. There can be up to four columns. |
-| Width             | **Fill container** or **Fill screen** | If the value is set to **Fill container**, the items inside the container are restricted to the width of the container. If the value is set to **Fill screen**, the items aren't restricted to the container width but can go into full-screen mode. You can change the value to achieve the desired layout. |
+| Property name     | Value                                            | Description |
+|-------------------|--------------------------------------------------|-------------|
+| Rich text         | Rich text                                        | Paragraph text. Some basic rich text capabilities are supported, such as bold, underlined, and italic text. |
+| Custom class name | A Cascading Style Sheets (CSS) class name        | The name of a custom CSS class that a developer provides to format this module. The class name should be defined in the theme pack. |
+| Font size         | **Small**, **Medium**, **Large**, or **X-Large** | The font size of the content. |
 
-## Content rich block item module properties
+## Add a text block module to a page
 
-| Property name | Value          | Description |
-|---------------|----------------|-------------|
-| Paragraph     | Paragraph text | The text that accompanies each content rich block item. Some basic rich text capabilities are supported, such as bold, underlined, and italic text. |
+To add a text block module to a new page and set the required properties, follow these steps.
 
-## Add a content rich block module to a page
-
-To add a content rich block module to a new page and set the required properties, follow these steps.
-
-1. Create a page template that is named **Content template**.
-1. In the **Main** slot of the default page, add a content rich block module.
-1. Check in the template, and publish it.
+1. Create a page template that is named **Content template**. 
+1. In the **Body** slot, add a **Default page** module.
+1. Finish editing the template, and publish it.
 1. Use the content template that you just created to create a page that is named **Content page**.
-1. In the **Main** slot of the new page, add a content rich block module.
-1. In the properties of the content rich block module, set number of columns to **2**.
-1. In the content rich block module, select **Add a module**, and add a content rich block item (for example, **item1**).
-1. In the new content rich block item, add paragraph text.
-1. In the content rich block module, select **Add a module**, and add a content rich block item (for example, **item2**).
-1. In the new content rich block item, add paragraph text.
-1. Save the page, and preview the changes. You should see two rich text blocks in a two-column view.
-1. Check in the page, and publish it.
-
-> [!NOTE]
-> If you add a third content rich block item, it will be stacked below the two items that you previously added. By changing the number of columns and items in the container, you can achieve different layouts for textual content.
+1. In the **Main** slot of the new page, add a container module.
+1. In the property pane for the container module, set the **Width** property to **Fill container**.
+1. Add a text block module to the container module. 
+1. In the property pane of the text block module, add text to the **Rich text** field.
+1. Finish editing the page, and publish it.
 
 ## Additional resources
 
 [Starter kit overview](starter-kit-overview.md)
 
-[Alert module](add-alert.md)
+[Promo banner module](add-alert.md)
 
 [Carousel module](add-carousel.md)
 
-[Content placement module](add-content-placement-modules.md)
-
-[Feature module](add-feature-module.md)
-
-[Hero module](add-hero-module.md)
+[Content block module](add-hero-module.md)
 
 [Video player module](add-video-player.md)
 
