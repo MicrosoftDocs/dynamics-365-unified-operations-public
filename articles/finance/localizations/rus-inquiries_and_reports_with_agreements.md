@@ -43,7 +43,7 @@ Viewing agreement amounts
     **Purchase agreement** tab, in the **Related information** section, select
     **Agreement amount** to open the **Vendor transactions** page.
 
-   ![](media/15_Vendor_transactions.png)
+    ![](media/15_Vendor_transactions.png)
 
 2.  Review the amounts as described in the previous section of this topic, [View
     sales agreement amounts](#view-sales-agreement-amounts).
@@ -95,12 +95,12 @@ and netting transactions that are posted during the reporting period. An Act of
 adjustment can be generated in the context of invoices or agreements, or for the
 customer or vendor as a whole.
 
-\> NOTE
+> NOTE
 
-\> The settlement is the only basis for determining the timeliness of debt
-repayment, and for determining value-added tax (VAT), the tax base for income
-tax, and other details. Therefore, an Act of adjustment reflects the documents
-of debt repayment in the context of the documents that form the debt.
+> The settlement is the only basis for determining the timeliness of debt
+  repayment, and for determining value-added tax (VAT), the tax base for income
+  tax, and other details. Therefore, an Act of adjustment reflects the documents
+  of debt repayment in the context of the documents that form the debt.
 
 When generate an Act of adjustment, if the customer is a vendor at the same
 time, the total debt of the counterparty is estimated.
