@@ -52,20 +52,29 @@ For a **Trial** or **Partner** project:
 
 1. Create a connection between a LCS project and your Azure subscription. You will need your Azure subscription ID and authorize the use of the subscription.
 2. Select **+** under **Environments** to deploy.
+
     ![LCS Onboard methodology](media/access-instances-5.jpeg)
+    
 3. Select an application and platform version.
 4. Select an environment topology. You can choose to either use a cloud hosted environment or download a VHD. For more information, see [Sign up for preview subscriptions](sign-up-preview-subscription.md).
+
     ![Select environment topology](media/access-instances-2.jpeg)
+    
 5. If you chose a cloud-hosted environment, select which Azure connector you want to use. Then select **Deploy**.
+
     ![Deploy environment](media/access-instances-3.jpeg)
+    
 6. if you did not choose a cloud-hosted environment, select a VHD to download.
 
 For a **Customer Implementation** project:
 1. Log on to your LCS Implementation project.
 2. Select **Configure** to deploy.
+
     ![Develop, test, and configure](media/access-instances-6.jpeg)
+    
 3. Select an application and platform version.
 4. Specify the settings and select **Save**.
+
     ![Deployment settings](media/access-instances-7.jpeg)
 
 Customers are provided with one free "develop and test" environment hosted in Microsoft's Azure subscription. Under "Develop and test", there are two types of environments, **Develop** and **Build and Test**. For development and customization activities, configure a **Develop** environment. **Build and Test** environments are not supported for standard development activities. Instead, they are used for daily build and test automation. For more information, see [Deploy and use an environment that supports continuous build and test automation](../perf-test/continuous-build-test-automation.md).  
@@ -114,9 +123,9 @@ A virtual hard disk (VHD) is made available for download from LCS, so that you c
 5. After the download is complete, run the executuable file that you downloded, accept the software license agreement, and choose a file path to extract the VHD to.
 6. This creates a local VHD file that you can use to run a local Virtual Machine (VM).
 
-### Retail configuration
+### Commerce configuration
 
-Follow the steps in this section if you are also configuring for Retail.
+Follow the steps in this section if you are also configuring for Commerce.
 
 To use the downloadable VHD for POS customizations, you must also follow this step.
 
@@ -133,7 +142,9 @@ Follow these steps to run the VM from Hyper-V Manager.
    - User name: **Administrator**
    - Password: <strong>pass@word1</strong>
 
-   **Tip:** You can resize the VM window by changing the screen resolution. Right-click the desktop on the VM, and then click **Screen resolution**. Select a resolution that works well for your display.
+    > [!TIP]
+    > You can resize the VM window by changing the screen resolution. Right-click the desktop on the VM, and then click **Screen resolution**. Select a resolution that works well for your display.
+   
 5. Provision the administrator user. For more information, see the next section.
 6. Start the Batch Manager Service. This step is required if you're running batch jobs or workflows.
    1.  Open a **Command Prompt** window as an administrator.
@@ -141,7 +152,7 @@ Follow these steps to run the VM from Hyper-V Manager.
 
    You can also start the service from the **Services** window.
 
-#### Retail configuration
+#### Commerce configuration
 
 For POS customizations, you must also follow these steps on the guest VM.
 
@@ -155,9 +166,9 @@ For developer access, you must be an administrator on the instance. To provision
 1.  From the desktop, run the admin user provisioning tool as an administrator (right-click the icon, and then click **Run as administrator**).
 2.  Enter your email address, and then click **Submit**.
 
-### Retail configuration
+### Commerce configuration
 
-Follow the steps in this section if you are also configuring for Retail.
+Follow the steps in this section if you are also configuring for Commerce.
 
 #### For Dynamics 365 for Operations, Version 1611
 
@@ -186,6 +197,7 @@ Follow the steps in this section if you are also configuring for Retail.
                Write-Host "SignInName:$($u.SignInName) UserId: $($u.ObjectId)" 
             } 
         }
+        
     [![Command in the Windows PowerShell ISE window](./media/retailconfig02-1024x529.png)](./media/retailconfig02.png)
 
 4.  Update the following SQL script, and run it in on AXDB for that environment. Supply values for the following parameters from the preceding Windows PowerShell script output:
@@ -211,8 +223,8 @@ Follow the steps in this section if you are also configuring for Retail.
 
 5.  Reset Internet Information Services (IIS) by running **IISRESET** in an elevated **Command Prompt** window.
 6.  Update the Real-time service profile to use the new admin user.
-    1.  Click **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Real-time service profiles**.
-    2.  Click **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Real-time service profiles**.
+    1.  Click **Retail and Commerce** &gt; **Headquarters setup** &gt; **Commerce scheduler** &gt; **Real-time service profiles**.
+    2.  Click **Retail and Commerce** &gt; **Headquarters setup** &gt; **Commerce scheduler** &gt; **Real-time service profiles**.
     3.  Edit the JBB record so that it uses the user that you used earlier (for example, **administrator@contosoax7.onmicrosoft.com**).
     4.  Run CDX Job 1070 (Staff) for the default channel database.
     5.  Verify that the job succeeded by viewing the **Download Sessions** page on the client.
@@ -221,9 +233,11 @@ Follow the steps in this section if you are also configuring for Retail.
 
 After the user is provisioned as an administrator, that user can access the instance on the computer by navigating to the following base URL: `https://usnconeboxax1aos.cloud.onebox.dynamics.com`. If you're using version control and plan to connect multiple development VMs to the same Azure DevOps project, rename your local VM. For instructions, see [Rename a local development (VHD) environment](../migration-upgrade/vso-machine-renaming.md).
 
-#### Retail configuration
+#### Commerce configuration
 
-The URL of the Retail Cloud POS app is: `https://usnconeboxax1pos.cloud.onebox.dynamics.com` After you complete the configuration steps, this VM is provisioned with your Azure AD tenant. Your Azure AD admin account is mapped to a cashier worker account in demo data. You can use this cashier account to easily activate a Retail POS device in this environment.
+The URL of the POS app is: <https://usnconeboxax1pos.cloud.onebox.dynamics.com/> 
+
+The URL of the Cloud POS app is: `https://usnconeboxax1pos.cloud.onebox.dynamics.com` After you complete the configuration steps, this VM is provisioned with your Azure AD tenant. Your Azure AD admin account is mapped to a cashier worker account in demo data. You can use this cashier account to easily activate a POS device in this environment.
 
 -   Cashier user ID: **000160**
 -   Cashier password: **123**
@@ -241,9 +255,9 @@ On a VM, you can find most of the application configuration by opening the web.c
     -   **DataAccess.Database** – This key holds the name of the database.
     -   **Aos.AppRoot** – This key points to the root folder of the Application Object Server (AOS) web application.
 
-### Retail configuration
+### Commerce configuration
 
-The Retail software development kit (SDK) is available at C:\RetailSDK. For more information about how to use and customize retail applications, see the following topics:
+The software development kit (SDK) is available at C:\RetailSDK. For more information about how to use and customize applications, see the following topics:
 -   [Retail software development kit (SDK) architecture](../../../retail/dev-itpro/retail-sdk/retail-sdk-overview.md)
 -   [Retail point of sale (POS) device activation](../../../retail/dev-itpro/retail-device-activation.md)
 
@@ -254,6 +268,4 @@ To restart the local runtime and redeploy all the packages, follow these steps.
 2.  Right-click **AOSDeploy.cmd**, and then click **Run as administrator**.
 
 This process might take a while. The process is completed when the cmd.exe window closes. If you just want to restart AOS (without redeploying the runtime), run **iisreset** from an administrator **Command Prompt** window, or restart AOSWebApplication from IIS.
-
-
 
