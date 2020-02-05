@@ -68,7 +68,7 @@ POS peripherals are devices that are explicitly supported for POS functions. The
 
 ### Hardware station
 
-Navigation: Click **Retail** &gt; **Channels** &gt; **Retail stores** &gt; **All retail stores**. Select a store, and then click the **Hardware stations** FastTab. The **Hardware station** setting is a channel-level setting that is used to define instances where the retail peripheral logic will be deployed. This setting at the channel level is used to determine characteristics of the hardware station. It's also used to list hardware stations that are available for a Modern POS instance in a given store. The hardware station is built into the Modern POS program for Windows. The hardware station can also be deployed independently as a stand-alone Microsoft Internet Information Services (IIS) program. In this case, it can be accessed via a network.
+Navigation: Click **Retail** &gt; **Channels** &gt; **Retail stores** &gt; **All retail stores**. Select a store, and then click the **Hardware stations** FastTab. The **Hardware station** setting is a channel-level setting that is used to define instances where the retail peripheral logic will be deployed. This setting at the channel level is used to determine characteristics of the hardware station. It's also used to list hardware stations that are available for a Modern POS instance in a given store. The hardware station is built into the Modern POS programs for Windows and Android. The hardware station can also be deployed independently as a stand-alone Microsoft Internet Information Services (IIS) program. In this case, it is accessed via network.
 
 ### Hardware profile
 
@@ -134,6 +134,7 @@ Receipt printing at the POS is optimized for OPOS. OPOS tends to be much faster 
 -   When Windows drivers are used, images are rendered before printing occurs. Therefore, printing tends to be slower than it is on printers that use OPOS controls.
 -   Devices that are connected through the printer (“daisy-chained”) might not work correctly when Windows drivers are used. For example, the cash drawer might not open, or the slip printer might not word as you expect.
 -   OPOS also supports a more extensive set of variables that are specific to retail receipt printers, such as paper cutting or slip printing.
+-   Windows printers are not supported through the IIS hardware station. 
 
 If OPOS controls are available for the Windows printer that you're using, the printer should still work correctly with Microsoft Dynamics 365 for Retail.
 
@@ -149,30 +150,25 @@ Keyboard wedge devices send data to the computer as if that data were typed on a
 
 Native (or "Device" as the type is named in the hardware profile) printers can be configured to prompt the user to select a printer that is configured for the computer. When a printer of the **Device** type is configured, if Modern POS encounters a print command, the user is prompted to select a printer in a list. This behavior differs from the behavior for Windows drivers, because the **Windows** printer type in the hardware profile doesn't show a list of printers. Instead, it requires that a named printer be provided in the **Device name** field.
 
-### Windows
-
-The **Windows** device type is used for printers only. When a Windows printer is configured in the hardware profile, the specific printer name must be provided. When Modern POS encounters print events, if a Windows printer is configured, the event will be passed to the specified Windows printer. The user won't be prompted to select a printer. Windows printers are not supported for IIS hardware stations. 
-
 ### Network
 
 Network-addressable cash drawers, receipt printers, and payment terminals can be used over a network, either directly through the Interprocess Communications (IPC) hardware station that is built into the Modern POS for Windows application or through the IIS hardware station for other Modern POS clients.
 
 ## Hardware station deployment options
-### IPC (built-in)
 
-The Interprocess Communications (IPC) hardware station is built into the Modern POS for Windows application. To use the IPC hardware station, assign a hardware profile to a register that will use the Modern POS for Windows or Android applications. Then create a hardware station of the **Dedicated** type for the store where the register will be used. Start the Modern POS in non-drawer mode and use the use the **Manage hardware stations** operation to turn on the hardware station capabilities, the dedicated hardware station will be active by default. Next, log out of the Modern POS, then log back in and open a shift and the peripherals configured in the hardware profile will be usable. 
-
-### IIS
-
-You can use the IIS or stand-alone version of the hardware station in two ways. The descriptor “IIS” implies that the POS application connects to the hardware station via Microsoft Internet Information Services. The POS application connects to the IIS hardware station via web services that run on a computer where the devices are connected. When IIS is used, the retail peripherals that are connected to a hardware station can be used by any POS register that is on the same network as the IIS hardware station. Because only Modern POS for Windows and Android include built-in support for retail peripherals, all other Modern POS applications must use the IIS hardware station to communicate with POS peripherals that are configured in the hardware profile. Therefore, each instance of the IIS hardware station requires a computer that runs the web service and application that communicates with the devices. 
-
-#### Dedicated
+### Dedicated
 
 Modern POS clients for Windows and Android include **Dedicated** or built-in hardware stations. Those clients can communicate directly with peripherals using business logic that is built into the applications. The Android application only supports network devices. For more information on peripheral support for the Android, visit the (Set up POS hybrid app on Android and iOS)[https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp] article.
 
-#### Shared
+To use the dedicated hardware station, assign a hardware profile to a register that will use the Modern POS for Windows or Android applications. Then create a hardware station of the **Dedicated** type for the store where the register will be used. Start the Modern POS in non-drawer mode and use the use the **Manage hardware stations** operation to turn on the hardware station capabilities, the dedicated hardware station will be active by default. Next, log out of the Modern POS, then log back in and open a shift and the peripherals configured in the hardware profile will be usable. 
 
-Shared hardware stations are intended to be used by multiple POS devices through the course of the day. Shared hardware stations are optimized to support only cash drawers, receipt printers, and payment terminals. You can't directly connect stand-alone bar code scanners, MSRs, line displays, scales, or other devices. Otherwise, conflicts will occur when multiple POS devices try to claim those peripherals at the same time. Here is how conflicts are managed for supported devices:
+### Shared 
+
+Also sometimes referred to as the "IIS" hardware station, “IIS” implying that the POS application connects to the hardware station via Microsoft Internet Information Services. The POS application connects to the IIS hardware station via web services that run on a computer where the devices are connected. When the shared hardware station is used, the retail peripherals that are connected to a hardware station can be used by any POS register that is on the same network as the IIS hardware station. Because only Modern POS for Windows and Android include built-in support for retail peripherals, all other Modern POS applications must use the IIS hardware station to communicate with POS peripherals that are configured in the hardware profile. Therefore, each instance of the IIS hardware station requires a computer that runs the web service and application that communicates with the devices. 
+
+The shared hardware station can be used to allow multiple point of sale clients to share peripherals or can be used to manage a committed set or peripherals for a single point of sale. 
+
+When a hardware station is used to support sharing of peripherals between multiple POS clients, only cash drawers, receipt printers, and payment terminals should be used. You can't directly connect stand-alone bar code scanners, MSRs, line displays, scales, or other devices. Otherwise, conflicts will occur when multiple POS devices try to claim those peripherals at the same time. Here is how conflicts are managed for supported devices:
 
 -   **Cash drawer** – The cash drawer is opened via an event that is sent to the device. The only issue that can occur when a cash drawer is called occurs if the cash drawer is already open. In the case of shared hardware stations, the cash drawer should be set to **Shared** in the hardware profile. This setting prevents the POS from checking whether the cash drawer is already open when it sends open commands.
 -   **Receipt printer** – If two receipt printing commands are sent to the hardware station at the same time, one of the commands can be lost, depending on the device. Some devices have internal memory or pooling that can prevent this issue. If a print command isn't successful, the cashier receives an error message and can retry the print command from the POS.
@@ -190,7 +186,7 @@ You can specify IP addresses for network peripherals in two places. If the Moder
 
 #### Cloud POS, Modern POS for iOS, and Modern POS for Android
 
-The logic that drives physically connected and network-addressable peripherals is contained in the hardware station. Therefore, for all POS clients except Modern POS for Windows, an IIS hardware station must be deployed and active to enable the POS to communicate with peripherals, regardless of whether those peripherals are physically connected to a hardware station or addressed over the network.
+The logic that drives physically connected and network-addressable peripherals is contained in the hardware station. Therefore, for all POS clients except Modern POS for Windows and Android, an IIS hardware station must be deployed and active to enable the POS to communicate with peripherals, regardless of whether those peripherals are physically connected to a hardware station or addressed over the network.
 
 ## Setup and configuration
 ### Hardware station installation
@@ -200,6 +196,10 @@ For information, see [Retail hardware station configuration and installation](re
 ### Modern POS for Windows setup and configuration
 
 For information, see [Retail Modern POS configuration and installation](retail-modern-pos-device-activation.md).
+
+### Modern POS for Android and iOS setup and configuration
+
+For information, see (Set up POS hybrid app on Android and iOS)[https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp].
 
 ### OPOS device setup and configuration
 
@@ -219,18 +219,18 @@ The following table shows the topologies and deployment scenarios that are suppo
 |-------------|----------------------|----------------------|
 | Windows app | Yes                  | Yes                  |
 | Cloud POS   | No                   | Yes                  |
-| Android     | No                   | Yes                  |
+| Android     | Yes                  | Yes                  |
 | iOS         | No                   | Yes                  |
 
 ### Network peripherals
 
-Network peripherals can be supported directly through the hardware station that is built into the Modern POS for Windows application. For all other clients, you must deploy an IIS hardware station.
+Network peripherals can be supported directly through the hardware station that is built into the Modern POS for Windows and Android applications. For all other clients, you must deploy an IIS hardware station.
 
 | Client      | IPC hardware station | IIS hardware station |
 |-------------|----------------------|----------------------|
 | Windows app | Yes                  | Yes                  |
 | Cloud POS   | No                   | Yes                  |
-| Android     | No                   | Yes                  |
+| Android     | Yes                  | Yes                  |
 | iOS         | No                   | Yes                  |
 
 ## Supported device types by hardware station type
@@ -334,9 +334,9 @@ Network peripherals can be supported directly through the hardware station that 
 </tbody>
 </table>
 
-### All Modern POS clients that have a dedicated IIS hardware station
+### All Modern POS clients that have a committed "Shared" IIS hardware station
 
-**Note:** When the IIS hardware station is “dedicated,” there is a one-to-one relationship between the POS client and the hardware station.
+**Note:** When the IIS hardware station is “committed” there is a one-to-one relationship between the POS client and the hardware station.
 
 <table>
 <colgroup>
@@ -354,7 +354,6 @@ Network peripherals can be supported directly through the hardware station that 
 <td>Printer</td>
 <td><ul>
 <li>OPOS</li>
-<li>Windows driver <strong>Note:</strong> For Windows printers on a network, the user of the hardware station must have permission to access the printer.</li>
 <li>Network</li>
 </ul></td>
 </tr>
@@ -362,7 +361,6 @@ Network peripherals can be supported directly through the hardware station that 
 <td>Printer 2</td>
 <td><ul>
 <li>OPOS</li>
-<li>Windows driver</li>
 <li>Network</li>
 </ul></td>
 </tr>
@@ -418,7 +416,7 @@ Network peripherals can be supported directly through the hardware station that 
 </tbody>
 </table>
 
-### All Modern POS clients that have a shared IIS hardware station
+### All Modern POS clients shared an IIS hardware station
 
 **Note:** When the IIS hardware station is “shared,” multiple devices can use the hardware station at the same time. For this scenario, you should use only the devices that are listed in the following table. If you try to share devices that aren't listed here, such as bar code scanners and MSRs, errors will occur when multiple devices try to claim the same peripheral. In the future, such a configuration will be explicitly prevented.
 
@@ -438,7 +436,6 @@ Network peripherals can be supported directly through the hardware station that 
 <td>Printer</td>
 <td><ul>
 <li>OPOS</li>
-<li>Windows driver <strong>Note:</strong> For Windows printers on a network, the user of the hardware station must have permission to access the printer.</li>
 <li>Network</li>
 </ul></td>
 </tr>
@@ -446,7 +443,6 @@ Network peripherals can be supported directly through the hardware station that 
 <td>Printer 2</td>
 <td><ul>
 <li>OPOS</li>
-<li>Windows driver</li>
 <li>Network</li>
 </ul></td>
 </tr>
@@ -490,7 +486,11 @@ This configuration is the most typical configuration for traditional, fixed POS 
 7.  Install and activate Modern POS for Windows.
 8.  Start Modern POS for Windows, and begin to use the connected peripheral devices.
 
-### All Modern POS clients that have a dedicated IIS hardware station
+### Modern POS for Android with an IPC (built-in) hardware station
+
+**New for 10.0.8** - Epson network printers and cash drawers connected to those printers via DK port are now supported for the Modern POS fo Android app. For details, visit the (Set up POS hybrid app on Android and iOS)[https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp] article.
+
+### All Modern POS clients that have a committed, shared IIS hardware station
 
 This configuration can be used for all Modern POS clients that have a hardware station that is used exclusively by one POS register. To set up this configuration, follow these steps.
 
@@ -736,7 +736,7 @@ The following peripherals were tested by using a shared IIS hardware station tog
 
 | Manufacturer | Model    | Interface | Comments                  |
 |--------------|----------|-----------|---------------------------|
-| Epson        | Tm-T88IV | OPOS      |                           |
+| Epson        | TM-T88IV | OPOS      |                           |
 | Epson        | TM-T88V  | OPOS      |                           |
 | Epson        | TM-T88   | Custom    | Connected via network     |
 | Star         | TSP650II | Custom    | Connected via network     |
