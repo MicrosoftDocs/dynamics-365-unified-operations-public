@@ -42,8 +42,8 @@ At the start, most of these changes are coming from dual-write solutions. The pl
 + Common Data Service has new concepts like 'Company' and 'Party'. These concepts will impact all applications built on Common Data Service, including Sales, Marketing, Customer Service, and Field Service. 
 + 'Activities' and 'Notes' are unified and expanded to support both C1s (users of the system) and C2s (customers of the system). 
 + Common Data Service platform is getting revised, which includes the following:
-    - 'Money' data type is replaced with decimal.
-    - Date Effectivity framework has been introduced to accommodate past, present, and future data at the same place.
+    - 'Decimal' data type replaces 'Money'.
+    - New 'Date Effectivity' framework accommodates past, present, and future data at the same place.
     - More support for 'Currency' and 'Exchange Rates,' including revision of Exchange Rate API.
     - Unit conversions are now possible.
 
