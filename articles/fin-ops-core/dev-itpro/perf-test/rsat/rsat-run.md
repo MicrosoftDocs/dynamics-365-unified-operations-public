@@ -83,6 +83,9 @@ on a warning message, set “Fail on Warning message” to “True” in the Gen
 **Abort test suite execution on failure** 
 By setting “Abort test suite execution on failure” to “True”, the test suite will abort execution if this test case fails. The remainder of the test cases will have a status of “Not Executed”. The default is “False”.
 
+**Pause between steps**
+Number of seconds to pause between test steps. Default is 0.
+
 ### Infolog and message validation
 Excel parameter files that are generated using version 1.200 or newer contain a **MessageValidation** tab.
 
