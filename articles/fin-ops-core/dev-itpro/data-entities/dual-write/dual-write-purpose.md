@@ -42,9 +42,9 @@ Dual-write is an out-of-the-box infrastructure that provides seamless near-real-
 
 Dual-write provides a tightly coupled, bi-directional integration between Dynamics 365 for Finance and Operations and the Common Data Service. Any create, read, update change in Dynamics 365 for Finance and Operations results in writes, in near-real-time, to the Common Data Service and vice versa. This tight data integration provides a 'One Dynamics 365' user experience to our customers.
 
-![Data relationship between apps](../media/dual-write-overview-picture1.png)
+![Data relationship between apps](media/dual-write-overview-picture1.png)
 
-![Aspects of dual-write](../media/dual-write-aspects.PNG)
+![Aspects of dual-write](media/dual-write-aspects.PNG)
 
 Dual-write infrastructure is extensible and reliable with the following key features: 
 
