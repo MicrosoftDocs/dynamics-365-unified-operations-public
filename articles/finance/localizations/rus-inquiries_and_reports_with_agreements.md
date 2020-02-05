@@ -174,16 +174,14 @@ or vendor and its agreements:
 
     ![](media/16_Act_of_adjustment_(customers).png)
 
-*\> Note*.
+> *Note*.
 
-\> To view the customer transactions that have generated a line, select the
-line, and then, on the Action Pane, select **Transactions**.
+> To view the customer transactions that have generated a line, select the
+  line, and then, on the Action Pane, select **Transactions**.
 
-\> To change the report parameters, on the Action Pane, select **Select**.
+> To change the report parameters, on the Action Pane, select **Select**.
 
-\> To print the report, on the Action Pane, select **Print**.
-
-\>
+> To print the report, on the Action Pane, select **Print**.
 
 ![](media/17_Act_of_adjustment.png)
 
