@@ -10,7 +10,8 @@ Viewing agreement amounts
     **Sales agreement** tab, in the **Related information** section, select
     **Agreement amount** to open the **Customer transactions** page.
 
-   ![](media/14_Customer_transactions.png)
+    ![](media/14_Customer_transactions.png)
+   
 2.  In the **Start date** and **End date** fields, specify the period that you
     want to analyze agreement amounts for.
 
