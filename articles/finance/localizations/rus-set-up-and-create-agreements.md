@@ -62,13 +62,13 @@ agreements](https://docs.microsoft.com/dynamics365/supply-chain/sales-marketing/
         field, select the sales agreement classification that the agreement belongs
         to.
 
->   On the **General** FastTab, in the **Document** section, the **Sales
->   agreement ID** field is set based on the number sequence that is specified
->   for the agreement classification.
+    On the **General** FastTab, in the **Document** section, the **Sales
+    agreement ID** field is set based on the number sequence that is specified
+    for the agreement classification.
 
 4.  Select **OK**.
 
-![](media/3_Create_sales_agreement.png)
+    ![](media/3_Create_sales_agreement.png)
 
 5.  On the **Sales agreements** page, on the **Sales agreement header** FastTab,
     specify the following details:
@@ -84,10 +84,10 @@ agreements](https://docs.microsoft.com/dynamics365/supply-chain/sales-marketing/
     -   In the **Status** field, select the status of the agreement: **On-hold**,
         **Effective**, or **Closed**.
 
->   *Note.* Transactions can be posted only for agreements that have a status of
->   **Effective**.
+    >   *Note.* Transactions can be posted only for agreements that have a status of
+    >   **Effective**.
 
-![](media/4_Sales_agreements.png)
+    ![](media/4_Sales_agreements.png)
 
 6.  Switch to the **Header** view, and then, on the **General** FastTab, follow
     these steps:
