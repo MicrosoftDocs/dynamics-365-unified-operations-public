@@ -2415,6 +2415,8 @@
             href: localizations/rus-goods-transit-vendor.md
           - name: Customs declaration numbers
             href: localizations/rus-custom-declaration-number.md
+          - name: Inventory cost structure
+            href: localizations/rus-inventory-cost-structure.md
         - name: Reporting
           items:
           - name: Financial reporting
