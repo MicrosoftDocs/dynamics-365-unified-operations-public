@@ -131,7 +131,5 @@ To configure a container module on a page, follow these steps.
 
 [Add a container module to a page](add-container-module.md)
 
-[Add content placement modules to a page](add-content-placement-modules.md)
-
 [Work with publish groups](publish-groups.md)
 

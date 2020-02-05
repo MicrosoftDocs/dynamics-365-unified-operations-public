@@ -107,8 +107,6 @@ The following table shows the list types that are available for selection in the
 
 [Content rich block module](add-content-rich-block.md)
 
-[Content placement module](add-content-placement-modules.md)
-
 [Container module](add-container-module.md)
 
 [Buy box module](add-buy-box.md)
