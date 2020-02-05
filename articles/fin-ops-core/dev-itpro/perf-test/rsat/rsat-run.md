@@ -75,6 +75,17 @@ By default, tests are executed using the admin role. If you want to run the test
 ### Run a test in the context of a specific company
 The **General** tab of the Excel parameter file also allows you to specify the name of a legal entity (Company). The test will run in the context of this company. You can specify your default company in the **Settings** dialog box of the tool.
 
+### Other notable test case execution settings
+
+![rsat excel general tab](media/rsat-excel-general-tab.png)
+
+**Fail on warning message in the infolog**
+By default, test cases fail when an error occurs or when a validation step fails. If you want a test case to also fail
+on a warning message, set “Fail on Warning message” to “True” in the General tab of the Excel parameter file of
+the test case. A common example where this is useful is a test cases that adds a duplicate customer. The default is “False”.
+
+**Abort test suite execution on failure** By setting “Abort test suite execution on failure” to “True” in the Excel parameter file the test suite will abort execution if this test case fails. The remainder of the test cases will have a status of “Not Executed”. The default is “False”.
+
 ### Infolog and message validation
 Excel parameter files that are generated using version 1.200 or newer contain a **MessageValidation** tab.
 
