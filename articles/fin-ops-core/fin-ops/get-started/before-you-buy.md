@@ -48,7 +48,7 @@ The following considerations must be taken when you choose on-premises as a depl
 - Regulatory and compliance needs that are not available in the cloud certifications.
 - Disconnected business process with intermittent internet connectivity required to access Microsoft Dynamics Lifecycle Services (LCS) for application lifecycle management.
 - [Features not implemented in on-premises deployments](features-not-implemented-on-prem.md).
-- [System requirements for on-premises deployments](system-requirements-on-prem.md#minimum-infrastructure-requirements).
+- [System requirements for on-premises deployments](system-requirements-on-prem.md).
 
 > [!IMPORTANT]
 > On-premises deployments of Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, or Dynamics 365 Commerce are not supported on any public cloud infrastructure, including Microsoft Azure.
