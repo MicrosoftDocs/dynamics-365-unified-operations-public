@@ -3,7 +3,7 @@
 
 title: Removed or deprecated features in Lifecycle Services (LCS)
 description: This topic describes features that have been removed, or that are planned for removal from Microsoft Dynamics Lifecycle Services (LCS).
-author: sericks007
+author: AngelMarshall
 manager: AnnBe
 ms.date: 02/05/2020
 ms.topic: article
@@ -22,7 +22,7 @@ ms.search.scope: Operations
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: sericks
+ms.author: tsmarsha
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 ---
