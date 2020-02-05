@@ -29,14 +29,7 @@ ms.dyn365.ops.version: Release 10.0.8
 
 # Work line details
 
-Work line details provide all the information needed to get a good overview of the work being planned and executed in the warehouse. You can switch between viewing all work lines or only the open work lines for a specific company. The details provided for each line include: work status, item number, location, work quantity, load ID, shipment ID, and more.
-
-While work directly with a work order in the system, you can: <!-- KAMAYBAC: Is it OK to refer to this as a "work order"? -->
-
-- Change the location of any opened work line (which will override the location directive setup)
-- Cancel any work line
-- Adjust quantities
-- View transactions behind any work line
+The **Work line details** page shows a comprehensive, sortable, and filterable list of the individual work lines in your system. It provides all the information needed to get a complete overview of the work being planned and executed in the warehouse. You can easily switch between viewing all work lines or only the open work lines. Details provided for each line include: work status, item number, location, work quantity, load ID, shipment ID, and more.
 
 ## Enable the location directive inventory picking aging feature
 
@@ -45,15 +38,30 @@ Before you can use this feature, it must be enabled on your system. Administrato
 - **Module** - Warehouse management
 - **Feature name** - Work line details
 
-## Feature demo
+## Open and use the Work line details page
+
+To view the list or work line details, go to **Warehouse management > Work > Work line details**. From here you can do the following:
+
+- Use the **Filter** field to search for lines having a specific value for any available parameter (including many parameters that aren't shown as columns in the table)
+- Use the **Show closed** check box to choose to show or hide closed lines
+- Select **Display dimensions** to open the **Dimensions display** pane, where you can choose to show or hide various dimension columns in the table.
+- Select any column heading to to open a menu where you can choose to sort or filter the list by values in that column
+- Select a work line and then select **Change location** to change the location for that work line (which will override the location directive setup)
+- Select a work line and then select **Cancel work line** to open a pane where you can partially or fully reduce the quantity of that work line
+- Adjust quantities <!-- KAMAYBAC: seems like we can only reduce quantities. Is that right? If so, the above point covers this. -->
+- View transactions behind any work line  <!-- KAMAYBAC: What does this mean? How do we do this? -->
+
+## Try out the feature
 
 This section provides a three-part example of how to work with work line details.
 
+<!-- KAMAYBAC: I think we should consider removing this demo. It seems hard to set up, and doesn't really show anything that isn't already easy to understand in the list provided above. Though the extra details about what happens when changing quantities should be clarified and kept.  -->
+
 ### Enable sample data
 
-To work through these demos using the sample records and values specified here, you must be on a system with the standard [demo data](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) installed, and you must select the **USMF** legal entity before you begin.
+To work through this demo using the sample records and values specified here, you must be on a system with the standard [demo data](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) installed, and you must select the **USMF** legal entity before you begin.
 
-You can also use these demos as guidance for how to use this feature when working on a production system, but then you must then substitute your own values, and you may be missing some types of required records that would otherwise be provided by the standard demo data.
+You can also use this demo as guidance for how to use this feature when working on a production system, but then you must then substitute your own values, and you may be missing some types of required records that would otherwise be provided by the standard demo data.
 
 ### Make sure the demo setup includes enough available inventory
 
@@ -64,29 +72,33 @@ If you are working with **USMF** demo data, then start by making sure your syste
 
 To confirm that you have enough inventory available and make adjustments as needed:
 
-1. Go to **Warehouse management > Setup > Location directives** and find out which picking locations are used for sales order picking at warehouse 51 (see also [Control warehouse work by using work templates and location directives](control-warehouse-location-directives.md)). <!-- KAMAYBAC: What am I looking for here? Seems like I am already expecting to use warehouse 51--isn't that the location? I don't see anything useful here. -->
+1. Go to **Warehouse management > Setup > Location directives** and find out which picking locations are used for sales order picking at warehouse 51 (see also [Control warehouse work by using work templates and location directives](control-warehouse-location-directives.md)). <!-- KAMAYBAC: What am I looking for here? How can I use this? -->
 1. Check the inventory levels at the relevant locations. <!-- where/how do I do this? Can we give a link? -->
 1. Adjust inventory as required. You can create manual movements, use replenishment, or apply any other flow as needed to adjust the inventory. <!-- where/how do I do this? Can we give a link? -->
 
 ### Part 1: Create picking work
 
-Before you start creating work, make sure that your warehouse is set up to respond to work requests as expected.
+Before you start creating work, make sure that your warehouse is set up to respond to work requests as expected. <!-- where/how do I do this? Can we give a link?-->
+
+Create some picking work by doing the following:
 
 1. Go to **Accounts receivable > Orders > All sales orders**.
+1. Select **New** to open the **Create sales order** pane.
+1. In the **Create sales order** pane, make the following settings:
+    - On the **Customer** FastTab, set **Customer account** to "US-001".
+    - On the **General** FastTab, set **Warehouse** to "51".
+1. Select **OK** to create the sales order and close the pane.
+1. Your new sales order opens. It includes a new, empty row in the **Sales order lines** table. For this order line, set **Item number** to "M9200", **Quantity** to "20" and **Unit** to "ea".
+1. Select the new order line, open the **Inventory** drop-down list and select **Reservation**.
+1. The **Reservation** page opens. Select **Reserve lot** to reserve your selected line's full quantity in the warehouse.
+1. Close the **Reservation** page to return to your sales order.
+1. Open the **Warehouse** tab and select **Release to warehouse**. The system creates a shipment, adds it to a new load, and creates the required work.
+1. Create a second sales order for the same **Customer account** and **Warehouse** as before. Add the following two order lines to this order:
+    - Line 1: **Item number** "M9200", **Quantity** "25", **Unit** "ea"
+    - Line 2: **Item number** "M9202", **Quantity** "10", **Unit** "ea"
+1. As you did previously, reserve the inventory for each of these two order lines (one at a time) and then release the order to warehouse.
 
-
-Navigate to _Accounts receivable_ - _Sales orders_ - _ All sales order_. Click New to create a new sales order. Pick any customer. In the _General_ section specify Warehouse 51.
-
-1. Sales order 1 (any customer): Add a new line to the sales order, item M9200, quantity 20 ea.
-2. Sales order 2 (any customer): Add a new line to the sales order, item M9200, quantity 25 ea. Add a second line for item M9202, quantity 10 ea.
-
-Before releasing the orders to warehouse, ensure there is enough inventory on the pick locations for all the items on the orders.
-
-Default Contoso data should support this scenario but review the Location Directive setting to be sure what picking locations are used for sales order picking. You can create manual movements, use replenishment, or any other flow if needed to adjust the inventory.
-
-Reserve the inventory and Release it to warehouse. Two different Work IDs should have been created.
-
-### Part 2: Change the location
+### Part 2: Change the location for a work line
 
 Navigate to _Warehouse management_ - _Work_ - _Work line details_ and open the form.
 
