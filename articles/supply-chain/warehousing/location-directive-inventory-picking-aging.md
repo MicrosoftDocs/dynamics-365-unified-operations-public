@@ -103,7 +103,7 @@ Do the following:
 1. Select **New** to open the **Create sales order** pane.
 1. In the **Create sales order** pane, make the following settings:
     - On the **Customer** FastTab, set **Customer account** to "US-001".
-    - ON the **General** FastTab, set **Warehouse** to "63".
+    - On the **General** FastTab, set **Warehouse** to "63".
 1. Select **OK** to create the sales order and close the pane.
 1. Your new sales order opens. It includes a new, empty row in the **Sales order lines** table. For this order line, set **Item number** to "A0001", **Quantity** to "1" and **Unit** to "Pcs".
 1. Open the **Inventory** drop-down list at the top of the **Sales order lines** table and select **Reservation** to open the **Reservation** page.
