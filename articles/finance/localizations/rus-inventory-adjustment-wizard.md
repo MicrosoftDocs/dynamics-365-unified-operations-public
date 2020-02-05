@@ -1,10 +1,10 @@
 ---
 # required metadata
 title: Inventory adjustment wizard  
-description: This topic provides information about .
+description: This topic provides information about the Inventory adjustment wizard which is used ot adjust on-hand inventory and transactions.
 author: v-nadyuz
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 02/05/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 8.1
 [!include [banner](../includes/banner.md)]
 
 
-The **Inventory adjustment** wizard is used to adjust on-hand inventory or inventory transactions. Before you adjust on-hand inventory, it must be closed. For more information about inventory closing, see [Inventory close](https://docs.microsoft.com/dynamics365/supply-chain/cost-management/inventory-close) and Inventory cost structure (here will be link to the topic from content deliverable 148943).
+The **Inventory adjustment** wizard is used to adjust on-hand inventory or inventory transactions. Before you adjust on-hand inventory, it must be closed. For more information about inventory closing, see [Inventory close](https://docs.microsoft.com/dynamics365/supply-chain/cost-management/inventory-close) and [Inventory cost structure](us-inventory-cost-structure.md).
 
 You can adjust the amount of an item in the warehouse in a settlement with an arbitrary ledger account, and you can post a negative adjustment as a reversal.
 
