@@ -57,7 +57,7 @@ For more information, see [Deployment options](../../dev-itpro/deployment/choose
 
 ## Step three: Buy and manage a subscription
 
-To explore subscription options, go to the [Dynamics 365](https://www.microsoft.com/dynamics365/pricing) pricing page. This page includes several different plans to fit your organization's needs.
+To explore subscription options, go to the [Dynamics 365 pricing](https://www.microsoft.com/dynamics365/pricing) page. This page includes several different plans to fit your organization's needs.
 
 There are many ways to buy a subscription:
 
