@@ -37,7 +37,7 @@ This topic describes how to use the Regression suite automation tool (RSAT)/Task
 
 ## Authoring test cases using the Task recorder
 
-When authoring task recordings for RSAT, follow these practices
+When authoring task recordings for RSAT, follow these practices:
 
 1. Make sure all your recordings start on the main dashboard.
 2. Keep individual recordings short and focus on a business task performed by one user, like creating a sales order. This simplifies maintainability and reusability of test cases.
