@@ -2401,14 +2401,6 @@
             href: localizations/rus-miscellaneous-charges.md
           - name: Third party miscellaneous charges
             href: localizations/rus-third-party-misc-charges.md
-          - name: Agreements
-            href: localizations/rus-agreements
-            - name: Set up and create agreements
-            href: localizations/rus-set-up-and-create-agreements
-            - name: Register transactions with reference to agreements
-            href: localizations/rus-register-transactions-with-reference-to-agreements
-            - name: Inquiries and reports with agreements
-            href: localizations/rus-inquiries-and-report-with-agreements
         - name: Inventory
           items:
           - name: Goods in transit from vendor
