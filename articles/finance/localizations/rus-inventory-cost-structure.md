@@ -333,14 +333,12 @@ of miscellaneous charges.
     >   standard method of miscellaneous charges allocation was used to perform the
     >   cost adjustment operation.
 
-![](media/12_Settlements.png)
-
->   A screenshot of a social media post Description automatically generated
+    ![](media/12_Settlements.png)
 
 6.  On the **Inventory transactions** page, on the Action Pane, on the
     **Inventory** tab, in the **Costing** group, select **Cost explorer**.
 
-![A screenshot of a social media post Description automatically generated](media/5c02e7c9b4444f1033a92826f9525f35.png)
+    ![](media/13_Cost%20structure.png)
 
 On the **Settlements** and **Cost explorer** pages, the miscellaneous charges
 codes that have the **Item** debit type and the **Ledger account** credit type
