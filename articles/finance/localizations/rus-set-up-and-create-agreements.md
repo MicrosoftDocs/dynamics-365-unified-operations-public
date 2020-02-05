@@ -25,7 +25,7 @@ Create sales agreement classifications
 
 5.  Select **Save**.
 
-![A screenshot of a computer screen Description automatically generated](media/3f0786c751990e1df70a879e653503b8.png)
+![](media/1_Sales_agreement_classifications.png)
 
 *Note*. You can't delete an agreement classification that is used for existing
 agreements.
@@ -40,7 +40,7 @@ Create purchase agreement classifications
     [Create sales agreement
     classifications](#create-sales-agreement-classifications).
 
-![A screenshot of a computer Description automatically generated](media/a688faed24f205ebcb70da198c9c1bdf.png)
+![](media/2_Purchase_agreement_classifications.png)
 
 Create a sales agreement
 ------------------------
@@ -56,60 +56,54 @@ agreements](https://docs.microsoft.com/dynamics365/supply-chain/sales-marketing/
 3.  In the **Create sales agreement** dialog box, on the **Customer** FastTab,
     specify the following details:
 
--   In the **Customer account** field, select a customer account.
+    -   In the **Customer account** field, select a customer account.
 
--   In the **Document** section, in the **Sales agreement classification**
-    field, select the sales agreement classification that the agreement belongs
-    to.
+    -   In the **Document** section, in the **Sales agreement classification**
+        field, select the sales agreement classification that the agreement belongs
+        to.
 
 >   On the **General** FastTab, in the **Document** section, the **Sales
 >   agreement ID** field is set based on the number sequence that is specified
 >   for the agreement classification.
 
-1.  Select **OK**.
+4.  Select **OK**.
 
-![](media/749554fd2ac83c7e579205b0dad845bd.png)
+![](media/3_Create_sales_agreement.png)
 
->   A screenshot of a cell phone Description automatically generated
-
-1.  On the **Sales agreements** page, on the **Sales agreement header** FastTab,
+5.  On the **Sales agreements** page, on the **Sales agreement header** FastTab,
     specify the following details:
 
--   In the **Currency** field, specify the currency for the agreement.
+    -   In the **Currency** field, specify the currency for the agreement.
 
--   In the **Effective date** field, specify the effective date for the
-    agreement.
+    -   In the **Effective date** field, specify the effective date for the
+        agreement.
 
--   In the **Expiration date** field, specify the expiration date for the
-    agreement.
+    -   In the **Expiration date** field, specify the expiration date for the
+        agreement.
 
--   In the **Status** field, select the status of the agreement: **On-hold**,
-    **Effective**, or **Closed**.
+    -   In the **Status** field, select the status of the agreement: **On-hold**,
+        **Effective**, or **Closed**.
 
 >   *Note.* Transactions can be posted only for agreements that have a status of
 >   **Effective**.
 
-![](media/313a47c5c8c4410fe5340189fb7f7ce3.png)
+![](media/4_Sales_agreements.png)
 
->   A screenshot of a computer screen Description automatically generated
-
-1.  Switch to the **Header** view, and then, on the **General** FastTab, follow
+6.  Switch to the **Header** view, and then, on the **General** FastTab, follow
     these steps:
 
--   In the **Document** section, specify the following details:
+    -   In the **Document** section, specify the following details:
 
-    -   In the **Document title** field, specify the title for the agreement.
+        -   In the **Document title** field, specify the title for the agreement.
 
-    -   In the **Date** field, specify the date of the agreement.
+        -   In the **Date** field, specify the date of the agreement.
 
--   In the **Subject of an agreement** section, in the **Subject of an
-    agreement** field, enter a comment or notes about the agreement.
+    -   In the **Subject of an agreement** section, in the **Subject of an
+        agreement** field, enter a comment or notes about the agreement.
 
-![](media/6d3c0c09bdc087cb4f49d785c2abed96.png)
+![](media/5_Sales_agreements.png)
 
->   A screenshot of a computer Description automatically generated
-
-1.  On the **Financial** FastTab, follow these steps:
+7.  On the **Financial** FastTab, follow these steps:
 
     -   In the **Agreement sum** section, in the **Agreement sum** field,
         specify the sum of the agreement.
@@ -141,37 +135,33 @@ agreements](https://docs.microsoft.com/dynamics365/supply-chain/sales-marketing/
 >   control is done by a contractor. Invoices that have an open balance and
 >   don't indicate an agreement are included.
 
--   In the **Posting profile** section, specify the following details:
+    -   In the **Posting profile** section, specify the following details:
 
--   In the **Posting profile** field, if you specify an agreement for
-    transactions, you can select the counterparty posting profile that should be
-    used when transactions are posted.
+    -   In the **Posting profile** field, if you specify an agreement for
+        transactions, you can select the counterparty posting profile that should be
+        used when transactions are posted.
 
--   In the **Posting profile with prepayment journal voucher** field, you can
-    select a separate posting profile that should be used when a prepayment is
-    registered for the agreement. If you don't set this field, a default value
-    is taken from the **Accounts receivable parameters** page.
+    -   In the **Posting profile with prepayment journal voucher** field, you can
+        select a separate posting profile that should be used when a prepayment is
+        registered for the agreement. If you don't set this field, a default value
+        is taken from the **Accounts receivable parameters** page.
 
-![](media/f6fd7a0bea668fe5b97ace9184bd2d57.png)
+![](media/6_Sales_agreements.png)
 
->   A screenshot of a computer Description automatically generated
-
-1.  On the **Terms** FastTab, in the **Payment** section, set the fields for
+8.  On the **Terms** FastTab, in the **Payment** section, set the fields for
     payment terms. In the **Payment day** field, select a calendar of payment
     days.
 
-2.  On the **Contact information** FastTab, specify contact information for the
+9.  On the **Contact information** FastTab, specify contact information for the
     agreement.
 
-![](media/f2bf12654883520c5cbae4469cb12e1a.png)
+![](media/7_Sales_agreements.png)
 
->   A screenshot of a computer screen Description automatically generated
-
-1.  On the **Financial dimensions** FastTab, specify financial dimensions. When
+10.  On the **Financial dimensions** FastTab, specify financial dimensions. When
     you specify an agreement in a document, the financial dimensions of the
     agreement are entered into the document dimension.
 
-2.  Select **Save**.
+11.  Select **Save**.
 
 ### Set up a commission
 
@@ -186,7 +176,7 @@ agreements](https://docs.microsoft.com/dynamics365/supply-chain/sales-marketing/
     [Register sales
     commissions](https://docs.microsoft.com/dynamics365/supply-chain/sales-marketing/tasks/register-sales-commissions).
 
-![A screenshot of a computer Description automatically generated](media/4839417900e734f4a7d8bb9696bd9088.png)
+![](media/8_Commission_calculation.png)
 
 Create a purchase agreement
 ---------------------------
@@ -203,23 +193,21 @@ agreement](https://docs.microsoft.com/dynamics365/supply-chain/procurement/tasks
 3.  In the **Create purchase agreement** dialog box, on the **Vendor** FastTab,
     specify the following details:
 
--   In the **Vendor account** field, select a vendor account.
+    -   In the **Vendor account** field, select a vendor account.
 
--   In the **Document** section, in the **Purchase agreement classification**
-    field, select the purchase agreement classification that the agreement
-    belongs to.
+    -   In the **Document** section, in the **Purchase agreement classification**
+        field, select the purchase agreement classification that the agreement
+        belongs to.
 
 >   On the **General** FastTab, in the **Document** section, the **Purchase
 >   agreement** field is set based on the number sequence that is specified for
 >   the agreement classification.
 
-1.  Select **OK**.
+4.  Select **OK**.
 
-![](media/3d1e578614692d4cfc45779dfd5a5ba5.png)
+![](media/9_Create_purchase_agreement.png)
 
->   A screenshot of a cell phone Description automatically generated
-
-1.  On the **Purchase agreements** page, specify the details as described in the
+5.  On the **Purchase agreements** page, specify the details as described in the
     [Create a sales agreement](#create-a-sales-agreement) section earlier in
     this topic.
 
