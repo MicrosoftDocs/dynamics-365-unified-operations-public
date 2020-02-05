@@ -59,7 +59,7 @@ When you allocate miscellaneous charges on a purchase order, inventory settlemen
     - In the **Type** field in the **Debit** section, you can select only **Item**.
     - In the **Type** field in the **Credit** section, you can select only **Ledger account**.
 
-![](media/1_Charges_codes.png)
+![Charges codes page](media/1_Charges_codes.png)
 
 ## Adjustment of item cost in terms of miscellaneous charges codes
 
@@ -73,14 +73,14 @@ You can specify existing miscellaneous charges codes when you adjust item cost o
 
 ### <a name="close-inventory"></a>Close inventory
 
-Before you adjust on-hand inventory, you must close the inventory. For more information about inventory closing, see [Inventory close](https://docs.microsoft.com/dynamics365/supply-chain/cost-management/inventory-close).
+Before you adjust on-hand inventory, you must close the inventory. For more information about inventory closing, see [Inventory close](../../supply-chain/cost-management/inventory-close.md).
 
 1. Go to **Inventory management** \> **Periodic tasks** \> **Closing and adjustment**.
 2. On the Action Pane, select **Close procedure** \> **Close inventory**.
 3. In the **Close inventory** dialog box, in the **Close inventory up to** field, specify the date that the inventory will be closed by.
 4. In the **Specification** field, select **All**.
 
-    ![](media/2_Close_inventory.png)
+    ![Close inventory dialog box](media/2_Close_inventory.png)
 
 5. Select **OK**.
 
@@ -94,7 +94,7 @@ Before you can adjust transactions, you must verify that the inventory wasn't cl
 
 ### <a name="adjust-on-hand-inventory"></a>Adjust on-hand inventory
 
-For more information about the adjustment of on-hand inventory, see [Adjust on-hand inventory cost values](https://docs.microsoft.com/dynamics365/supply-chain/cost-management/adjust-hand-inventory-cost-values).
+For more information about the adjustment of on-hand inventory, see [Adjust on-hand inventory cost values](../../supply-chain/cost-management/adjust-hand-inventory-cost-values.md).
 
 1.  Close the inventory as described in the [Close inventory](#close-inventory) section earlier in this topic.
 2.  Go to **Inventory management** \> **Periodic tasks** \> **Closing and adjustment**.
@@ -102,12 +102,12 @@ For more information about the adjustment of on-hand inventory, see [Adjust on-h
 4.  On the Action Pane, select **Select**.
 5.  In the **Select on-hand inventory** dialog box, specify the inventory dimensions that should be shown after the adjustment is done.
 
-    ![](media/3_Select_on-hand_inventory.png)
+    ![Select on-hand inventory parameters dialog box](media/3_Select_on-hand_inventory.png)
 
 6.  Select **OK**. The **On-hand** page shows the inventory lines that you selected for adjustment, together with the specified inventory dimensions.
 7.  Select the line for an item, and then, in the **Charges code** field, select a charges code for the item. The selected miscellaneous charge code is entered in the inventory settlement after the adjustment is posted.
 
-    ![](media/4_On-hand.png)
+    ![On-hand page](media/4_On-hand.png)
 
 8.  To enter the charges code on all lines of the **On hands** page, on the Action Pane, select **Adjustment** \> **Charges code**.
 9.  In the **Change Misc. charge code** dialog box, set the following values:
@@ -115,7 +115,7 @@ For more information about the adjustment of on-hand inventory, see [Adjust on-h
     - In the **Charges code** field, select a charges code.
     - Set the **Apply to all** option to **Yes**. If this option is set to **No**, the value in the **Charges code** field will be adjusted only on the line that is selected on the **On hands** page.
 
-    ![](media/5_Change_misc._charges_code.png)
+    ![Chang Misc. charge code dialog box](media/5_Change_misc._charges_code.png)
 
 10. Select **OK**.
 11. On the Action Pane, select **Post**.
@@ -127,7 +127,7 @@ For more information about the adjustment of on-hand inventory, see [Adjust on-h
 
 13. In the **Note** field, enter a note about the adjustment.
 
-    ![](media/6_Adjustment_of_on-hand_inventory.png)
+    ![Adjustment of on-hand inventory dialog box](media/6_Adjustment_of_on-hand_inventory.png)
 
 14. Select **OK** to post the adjustment.
 
@@ -144,7 +144,7 @@ When you post an adjustment, the general ledger offset account is defined in the
 4. On the Action Pane, select **Select**.
 5. In the **Adjust transactions** dialog box, specify selection criteria for the inventory receipt transactions that must be adjusted, and then select **OK**.
 
-    ![](media/7_Adjust_transactions.png)
+    ![Adjust transactions dialog box](media/7_Adjust_transactions.png)
 
 6. Select charges codes for items, and post the adjustment, as described in the [Adjust on-hand inventory](#adjust-on-hand-inventory) section earlier in this topic. The general ledger offset account will be defined according to the same principle.
 
@@ -164,15 +164,15 @@ For more information, see [Inventory adjustment wizard](rus-inventory-adjustment
 6. Specify selection criteria, and then select **OK**.
 7. On the **Selection result** page, review the items or item transactions that have been selected for adjustment, and then select **Next**.
 
-    ![](media/8_Selection_result.png)
+    ![Selection result page](media/8_Selection_result.png)
 
 8. On the **Functions for calculating adjustment amounts** page, select the method for calculating adjustment amounts, and then select **Next**.
 
-    ![](media/9_Functions_for_calculating_adjustments_amounts.png)
+    ![Functions for calculating adjustment amounts page](media/9_Functions_for_calculating_adjustments_amounts.png)
 
 9. On the **Results of allocation** page, review the allocation results. In the **Charges code** field, select a charge code for a line.
 
-    ![](media/10_Results_of_allocation.png)
+    ![Results of allocation page](media/10_Results_of_allocation.png)
 
 10. Select **Next**.
 11. On the **Posting** page, specify the details for posting the adjustment:
@@ -189,7 +189,7 @@ For more information, see [Inventory adjustment wizard](rus-inventory-adjustment
      - If the miscellaneous charges code isn't entered on the item line, and if the **Corr. account profit/loss** option on the **Posting** page is set to **Yes**, the adjustment will be assigned, in the usual way, to the offset profit or loss account that is set up on the **Inventory** tab of the **Posting** page (**Inventory management \> Setup \> Posting \> Posting**).
      - If the miscellaneous charges code isn't entered on the item line, and if the **Corr. account profit/loss** option on the **Posting** page is set to **No**, the adjustment will be assigned to the account that is specified in the **Corr. account** field.
 
-    ![](media/11_Posting.png)
+   ![Posting page](media/11_Posting.png)
 
 12. Select **Next**.
 13. On the **Finish** page, select the **Show ledger voucher list** check box to show the ledger voucher list.
@@ -206,18 +206,18 @@ On the **Settlements** page, you can view inventory cost adjustment transactions
 5. On the **Settlements** page, review the following information:
 
     - The **Charges code** field shows the miscellaneous charges code that has been allocated to the item receipt transaction.
-    - The **Vendor account** field shows the account of the vendor that the miscellaneous charges were bought from. For more information about how to buy miscellaneous charges from a third-party vendor, see [Third party miscellaneous charges](https://docs.microsoft.com/dynamics365/finance/localizations/rus-third-party-misc-charges).
+    - The **Vendor account** field shows the account of the vendor that the miscellaneous charges were bought from. For more information about how to buy miscellaneous charges from a third-party vendor, see [Third party miscellaneous charges](rus-third-party-misc-charges.md).
 
     - The **Invoice** field shows the invoice number of the miscellaneous chargespurchase.
 
     > [!NOTE]
     > If the **Vendor account** and **Invoice** fields are blank, the standard method of miscellaneous charges allocation was used to perform the cost adjustment operation.
 
-    ![](media/12_Settlements.png)
+    ![Settlements page](media/12_Settlements.png)
 
 6. On the **Inventory transactions** page, on the Action Pane, on the **Inventory** tab, in the **Costing** group, select **Cost explorer**.
 
-    ![](media/13_Cost_explorer.png)
+    ![Cost explorer page](media/13_Cost_explorer.png)
 
 On the **Settlements** and **Cost explorer** pages, the miscellaneous charges codes that have the **Item** debit type and the **Ledger account** credit type are shown as a separate line. The miscellaneous charges codes that have other debit and credit types are included in the item cost price as direct charges (standard functionality). They aren't allocated on the **Settlements** page. Therefore, they aren't shown as a separate line on the **Cost explorer** page.
 
