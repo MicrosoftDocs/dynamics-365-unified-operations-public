@@ -48,7 +48,7 @@ Changes described in this section apply to build number 8.1.2697. The numbers in
  
 ### Can't delete workers that don't have employment records - (386157)
 
-This change adds a delete option in the **Workers without employment** form. Workers appear in this form when no future, active, or historical employments exist for the worker. In this release, delete is only enabled for System Administrators. However, in next week's release, security will be updated to allow all users with the HR assistant role to remove employments. You can also make these changes manually by following the following steps.
+This change adds a delete option in the **Workers without employment** form. Workers appear in this form when no future, active, or historical employments exist for the worker. In this release, delete is only enabled for System Administrators. However, in next week's release, security will be updated to allow all users with the HR assistant role to remove employees without employments. You can also make these changes manually by following the following steps.
 
 1. Go to **Security configuration**.
 2. In the **Privileges** tab, filter the **Privileges** list to **Maintain workers**.

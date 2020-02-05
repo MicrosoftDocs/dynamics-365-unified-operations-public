@@ -5,7 +5,7 @@ title: Add a copyright notice
 description: This topic describes how to add a copyright notice to your e-Commerce website.
 author: psimolin
 manager: AnnBe
-ms.date: 12/12/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Add a copyright notice
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic describes how to add a copyright notice to your e-Commerce website.
@@ -54,8 +54,8 @@ To add a copyright notice to the bottom of every page that uses a specific templ
 1. In the navigation pane, select the ellipsis button (**...**) next to **Footer**, and then select **Add Module**.
 1. In the dialog box, select **Footer category**, and then select **OK**.
 1. In the navigation pane, select the ellipsis button next to **Footer category**, and then select **Add Module**.
-1. In the dialog box, select **Content rich block item**, and then select **OK**.
-1. In the navigation pane, select **Content rich block item**.
+1. In the dialog box, select **Text block**, and then select **OK**.
+1. In the navigation pane, select **Text block**.
 1. In the properties pane on the right, in the **Paragraph** field, add your copyright message. For example, enter **(C) Fabrikam 2019**.
 1. Select **Save**, select **Check In**, and then select **Publish**.
 1. Go to **Templates**, select the template, and then select **Check Out**.

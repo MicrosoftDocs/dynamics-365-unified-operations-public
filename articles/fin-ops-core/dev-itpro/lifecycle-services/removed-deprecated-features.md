@@ -3,9 +3,9 @@
 
 title: Removed or deprecated features in Lifecycle Services (LCS)
 description: This topic describes features that have been removed, or that are planned for removal from Microsoft Dynamics Lifecycle Services (LCS).
-author: sericks007
+author: AngelMarshall
 manager: AnnBe
-ms.date: 12/02/2019
+ms.date: 02/05/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -22,7 +22,7 @@ ms.search.scope: Operations
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: sericks
+ms.author: tsmarsha
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 ---
@@ -58,7 +58,7 @@ This list is provided so that you can consider these removals and deprecations a
 </tr>
 <tr>
 <td><strong>Status</strong></td>
-<td>Deprecated: The flowchart diagrams component in BPM is expected to be removed by early February 2020. The following functionality will be removed:
+<td>Deprecated: The flowchart diagrams component in BPM is expected to be removed in 2020. The following functionality will be removed:
 <ul>
 <li>Existing flowcharts will be unavailable for viewing or editing. The shape properties that are associated with flowchart activities will also be unavailable, because the whole <strong>Flowchart</strong> tab will be removed. These flowcharts include both the default flowcharts that are automatically generated and customized flowcharts that are modified based on those default flowcharts.</li>
 <li>The legacy fit/gap analysis feature will be unavailable. Therefore, no gap list will be automatically created or available for export.

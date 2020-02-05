@@ -103,6 +103,7 @@ This topic provides information about functionality that supports Russian regula
 ## Inventory
 - [Goods in transit from vendor](rus-goods-transit-vendor.md)
 - [Customs declaration numbers](rus-custom-declaration-number.md)
+- [Inventory cost structure](rus-inventory-cost-structure.md)
 
 ## Reporting
 
@@ -112,6 +113,7 @@ This topic provides information about functionality that supports Russian regula
 - [Assessed tax declaration](rus-assessed-tax-declaration.md)
 - [Transport tax declaration](rus-transport-tax-declaration.md)
 - [Land tax declaration](rus-land-tax-declaration.md)
+- [Profit tax declaration](rus-profit-tax-declaration.md)
 
 ## Organization administration
 

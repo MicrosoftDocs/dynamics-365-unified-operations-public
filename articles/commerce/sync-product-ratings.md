@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Sync product ratings in Dynamics 365 Retail
-description: This topic describes how to sync product ratings in Microsoft Dynamics 365 Retail.
+title: Sync product ratings
+description: This topic describes how to sync product ratings in Microsoft Dynamics 365 Commerce.
 author:  gvrmohanreddy 
 manager: annbe
 ms.date: 02/03/2019
@@ -70,7 +70,7 @@ The following illustration shows an example of the subjob details in Commerce.
 
 > [!NOTE]
 > If you don't find the **RetailProductRating** subjob, you might already have run the **Sync product ratings** job and the **1040 CDX** job before you initialized the commerce scheduler. In this case, follow these steps to run the **Full data sync** job.
->
+
 > 1. Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Channel database**. Alternatively, search for "Channel database."
 > 1. Select the channel database to sync.
 > 1. On the action pane, select **Full data sync**.
@@ -96,7 +96,7 @@ The following illustration shows an example of batch job configuration in Commer
 
 To verify that the **Sync product ratings** batch job was successful, follow these steps.
 
-1. Go to **Retail and Commerce \> System administrator \> Inquiries \> Batch jobs** or, if you're using a Commerce-only stock keeping unit (SKU), **Commerce \> Inquiries and reports \> Batch jobs** instead. Alternatively, search for "Batch jobs."
+1. Go to **Retail and Commerce \> System administrator \> Inquiries \> Batch jobs** or, if you're using a Commerce-only stock keeping unit (SKU), **Retail and Commerce \> Inquiries and reports \> Batch jobs** instead. Alternatively, search for "Batch jobs."
 1. To view the details of the batch job, in the batch job list, in the **Job description** column, search for a description that contains "Pull product ratings."
 1. Select the job ID to view the batch job details, such as the scheduled start date/time and the recurrence text.
 

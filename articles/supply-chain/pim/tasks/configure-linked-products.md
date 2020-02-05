@@ -34,7 +34,7 @@ This procedure walks through configuring linked products. This procedure uses th
 
 1. Go to Product information management > Products > Released products.
 2. In the list, find and select the desired record.
-3. On the Action Pane, click Retail.
+3. On the Action Pane, click Retail and Commerce.
 4. Click Linked products.
 5. Click Edit.
 6. In the Linked product number field, click the drop-down button to open the lookup.
