@@ -227,7 +227,7 @@ rus-inventory-adjustment-wizard.md).
     -   **Transactions** – Adjust transactions.
 
 5.  Select **Next**. Either the **Select on-hand inventory** page or the
-    **InventTransAdjustment** page appears, depending on the method of
+    **Adjust transactions** page appears, depending on the method of
     adjustment that you selected.
 
 6.  Specify selection criteria, and then select **OK**.
