@@ -62,47 +62,54 @@ This section explains how to create a class library that has a TMS engine implem
 7. In the ThirdPartyTMSEngines project, add references to Supply Chain Management–specific assemblies:
    -   Application assemblies that enable X++ types to be referenced. These assemblies can be found in the following locations. \[Packages root\] is the path of the location where all the deployed assemblies are placed, such as C:\\Packages.
 
-           [Packages root]\ApplicationPlatform\bin\Dynamics.AX.ApplicationPlatform.dll
-           [Packages root]\ApplicationFoundation\bin\Dynamics.AX.ApplicationFoundation.dll
-           [Packages root]\ApplicationSuite\bin\Dynamics.AX.ApplicationSuite.dll
-
+        ```xpp
+        [Packages root]\ApplicationPlatform\bin\Dynamics.AX.ApplicationPlatform.dll
+        [Packages root]\ApplicationFoundation\bin\Dynamics.AX.ApplicationFoundation.dll
+        [Packages root]\ApplicationSuite\bin\Dynamics.AX.ApplicationSuite.dll
+        ```
+        
    -   Framework assemblies that enable access to data, LINQ, and auxiliary functions. All these assembles can be found in \[Packages root\]\\bin.
 
-           Microsoft.Dynamics.ApplicationPlatform.Environment.dll
-           Microsoft.Dynamics.AX.Data.Core.dll
-           Microsoft.Dynamics.AX.Framework.Linq.Data.AdoNet.dll
-           Microsoft.Dynamics.AX.Framework.Linq.Data.dll
-           Microsoft.Dynamics.AX.Framework.Linq.Data.Interface.dll
-           Microsoft.Dynamics.AX.Framework.Linq.Data.Msil.dll
-           Microsoft.Dynamics.AX.Server.Core.dll
-           Microsoft.Dynamics.AX.Xpp.AxShared.dll
-           Microsoft.Dynamics.AX.Xpp.Support.dll
+        ```xpp 
+        Microsoft.Dynamics.ApplicationPlatform.Environment.dll
+        Microsoft.Dynamics.AX.Data.Core.dll
+        Microsoft.Dynamics.AX.Framework.Linq.Data.AdoNet.dll
+        Microsoft.Dynamics.AX.Framework.Linq.Data.dll
+        Microsoft.Dynamics.AX.Framework.Linq.Data.Interface.dll
+        Microsoft.Dynamics.AX.Framework.Linq.Data.Msil.dll
+        Microsoft.Dynamics.AX.Server.Core.dll
+        Microsoft.Dynamics.AX.Xpp.AxShared.dll
+        Microsoft.Dynamics.AX.Xpp.Support.dll
+        ```
 
    -   The core TMS assembly (which contains engines) and the TMS base assembly (which contains helpers, constants, data transfer class definitions, and so on). These assemblies can be found in the following locations.
 
-           [Packages root]\ApplicationSuite\bin\Microsoft.Dynamics.AX.Tms.dll
-           [Packages root]\ApplicationSuite\bin\Microsoft.Dynamics.AX.Tms.Base.dll
-
+        ```xpp
+        [Packages root]\ApplicationSuite\bin\Microsoft.Dynamics.AX.Tms.dll
+        [Packages root]\ApplicationSuite\bin\Microsoft.Dynamics.AX.Tms.Base.dll
+        ```
 8. Rename the C\# class that is automatically generated in the ThirdPartyTMSEngines project to **SampleRatingEngine**.
 9. Implement the engine. Because we are creating a rate engine in this example, we inherit from the base class for rate engines. The base class implements most of the rate engine interface (**TMSFwkIRateEngine**). We just have to implement the rate method. To keep this example simple, we will make this method register a hard-coded rate of 100. You can create engines that implement any of the engine interfaces, such as **TMSFwkIAccessorialEngine**. All the engine interfaces are defined in X++.
 
-       namespace ThirdPartyTMSEngines
-       {
-           using Dynamics.AX.Application;
-           using Microsoft.Dynamics.Ax.Tms.Base.Data;
-           using Microsoft.Dynamics.Ax.Tms.Base.Utility;
-           using Microsoft.Dynamics.Ax.Tms.Bll;
-           using System.Xml.Linq;
-           public class SampleRatingEngine : BaseRateEngine
-           {
-               public override RatingDto rate(TmsTransactionFacade transactionFacade, XElement shipment, TMSRateMasterCode rateMasterCode)
-               {
-                   XElement re = shipment.RetrieveOrCreateRatingEntity(this.RatingDto);
-                   re.AddRate(TmsRateType.Rate, 100);
-                   return this.RatingDto;
-               }
-           }
-       }
+    ```xpp
+    namespace ThirdPartyTMSEngines
+    {
+        using Dynamics.AX.Application;
+        using Microsoft.Dynamics.Ax.Tms.Base.Data;
+        using Microsoft.Dynamics.Ax.Tms.Base.Utility;
+        using Microsoft.Dynamics.Ax.Tms.Bll;
+        using System.Xml.Linq;
+        public class SampleRatingEngine : BaseRateEngine
+        {
+            public override RatingDto rate(TmsTransactionFacade transactionFacade, XElement shipment, TMSRateMasterCode rateMasterCode)
+            {
+               XElement re = shipment.RetrieveOrCreateRatingEntity(this.RatingDto);
+               re.AddRate(TmsRateType.Rate, 100);
+               return this.RatingDto;
+            }
+        }
+    }
+    ```
 
 10. Build the solution.
 11. Add a new reference to the TMSThirdParty project. The reference should point to the ThirdPartyTMSEngines project. When you've finished, your solution should look like this. 

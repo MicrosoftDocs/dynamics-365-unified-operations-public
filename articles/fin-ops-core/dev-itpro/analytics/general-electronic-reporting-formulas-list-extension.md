@@ -62,7 +62,7 @@ Here are the recommended steps for introducing a new function for Electronic rep
 
 Here is an example.
 
-```
+```xpp
 /// <summary>
 /// Returns the characters from the middle of a text string, given a starting position and length.
 /// </summary>

@@ -113,7 +113,7 @@ This procedure is intended for users who have the System administrator or Electr
     * Version 1.1 of this model mapping configuration has been uploaded to LCS by using the LCS project for the ER repository that was previously configured.   
 
 ## Evaluate ER configuration dependencies
-    * We will delete created configurations from the system and download them back from the LCS repository.  
+We will delete created configurations from the system and download them back from the LCS repository.  
 1. In the tree, select 'Sample data model\Sample mapping'.
 2. Click Delete.
 3. Click Yes.

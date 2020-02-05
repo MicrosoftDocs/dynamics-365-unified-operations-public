@@ -81,6 +81,8 @@ To add a promo banner module to a page and set the required properties, follow t
 
 > [!NOTE]
 > A promo banner is typically used in the page header slot or a subheader slot.
+
+
 ## Additional resources
 
 [Starter kit overview](starter-kit-overview.md)
