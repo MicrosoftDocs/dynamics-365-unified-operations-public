@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Run Regression suite automation tool test cases
+title: Run test cases using the Regression Suite Automation Tool (RSAT)
 description: This topic explains how to load test cases from Azure DevOps, generate automation files, modify test parameters, run tests, investigate results, and save your work back to Azure DevOps.
 author: robadawy
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Run Regression suite automation tool test cases
+# Run test cases using the Regression Suite Automation Tool (RSAT)
 
 [!include [banner](../../includes/banner.md)]
 
