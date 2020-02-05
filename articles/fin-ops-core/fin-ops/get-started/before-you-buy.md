@@ -3,7 +3,7 @@
 
 title: Before you buy
 description: Step-by-step guidance to use when you're considering purchasing Dynamics 365 Finance, Dynamics 365 Supply Chain Management, or Dynamics 365 Commerce.  
-author: kfend
+author: ShellyBakke
 manager: AnnBe
 ms.date: 02/05/2020
 ms.topic: article
@@ -23,7 +23,7 @@ ms.search.scope: Core, Operations
 ms.custom: 21761
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kfend
+ms.author: smiller
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
 
