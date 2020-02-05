@@ -51,7 +51,7 @@ The following considerations must be taken when you choose on-premises as a depl
 - [System requirements for on-premises deployments](system-requirements-on-prem.md).
 
 > [!IMPORTANT]
-> On-premises deployments of Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, or Dynamics 365 Commerce are not supported on any public cloud infrastructure, including Microsoft Azure.
+> On-premises deployments are not supported on any public cloud infrastructure, including Microsoft Azure.
 
 For more information, see [Deployment options](../../dev-itpro/deployment/choose-deployment-type.md).
 
