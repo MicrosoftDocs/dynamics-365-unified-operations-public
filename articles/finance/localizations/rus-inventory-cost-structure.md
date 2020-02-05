@@ -208,8 +208,7 @@ following way:
     this topic. The general ledger offset account will be defined according to
     the same principle.
 
-Use a wizard to adjust item cost 
----------------------------------
+### Use a wizard to adjust item cost 
 
 For more information, see [Inventory adjustment wizard](
 rus-inventory-adjustment-wizard.md).
@@ -286,7 +285,7 @@ rus-inventory-adjustment-wizard.md).
 
     ![](media/11_Posting.png)
 
-Select **Next**.
+    Select **Next**.
 
 12. On the **Finish** page, select the **Show ledger voucher list** check box to
     show the ledger voucher list.
