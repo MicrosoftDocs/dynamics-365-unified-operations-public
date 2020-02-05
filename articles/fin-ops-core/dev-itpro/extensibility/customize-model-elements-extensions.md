@@ -351,7 +351,7 @@ This is an example of adding event handler methods on existing controls.
 
 2.  Paste the event handler method in a class of the Fleet Management Extension model and add X++ code to implement it.
 
-<!-- -->
+    <!-- -->
 
     ```xpp
     /// <summary>
@@ -367,14 +367,14 @@ This is an example of adding event handler methods on existing controls.
     
 -   When implementing the AddLine\_OnClicked event handler, you can access the button control instance using the **sender** parameter.
 
-<!-- -->
+    <!-- -->
     ```xpp
     FormButtonControl button = sender as FormButtonControl;
     ```
 
 -   If you need to access the parent form or any of its variables, this example shows how to access the **FormRun** instance and one of its data sources.
 
-<!-- -->
+    <!-- -->
     ```xpp
     FormRun fr;
     fr = sender.formRun();

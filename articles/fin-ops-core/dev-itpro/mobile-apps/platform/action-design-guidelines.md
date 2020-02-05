@@ -77,39 +77,43 @@ Lookups for fields in the mobile app don't have a correlation to the advanced lo
 
 If you don't see the property for the existing list view page or can't access the **Control properties** dialog box when you're designing your action, you might be using an older build of the app. In this case, you can still add rich lookup functionality by using a business logic file.
 
-    function main(metadataService, dataService, cacheService, $q) { 
-        return { 
-            appInit: function (appMetadata) { 
-                metadataService.configureLookup(
-                    // specify the name of the Action to add the lookup to
-                    'Add-Reservation',                      
-                    // specify the name of the Action’s field to add the lookup to
-                    'FMRental_Customer',                    
-                    { 
-                        // specify the name of the Page for the Entity for the lookup
+```xpp
+function main(metadataService, dataService, cacheService, $q) { 
+    return { 
+        appInit: function (appMetadata) { 
+            metadataService.configureLookup(
+                // specify the name of the Action to add the lookup to
+                'Add-Reservation',                      
+                // specify the name of the Action’s field to add the lookup to
+                'FMRental_Customer',                    
+                { 
+                    // specify the name of the Page for the Entity for the lookup
                         lookupPage: 'All-Customers',          
-                        // specify the Page’s field which contains the value to set on the lookup
-                     // this value should be the same value you can type into the field on the Form
+                    // specify the Page’s field which contains the value to set on the lookup
+                // this value should be the same value you can type into the field on the Form
                         valueField: 'FMCustomer_RecId',        
                         // specify the Page’s field which contains the value to display to the user
                         // this value is only used for display. The value field is passed to the Form
                         displayField: 'FMCustomer_FullName',  
                         // set this to true to enable the rich lookup
                         showLookupPage: true                  
-                    }
-                );
-            }, 
-        }; 
-    }
+                }
+            );
+        }, 
+    }; 
+}
+```
 
 ### How do I prevent an action from appearing in the list of actions for a page?
 
 To prevent an action from appearing in the list of actions for any page, call the following code from the **appInit()** section of your business logic. In this code, **action-name** is the name of your action (as specified in the **Action name** field in the designer).
 
-    function main(metadataService, dataService, cacheService, $q) { 
-        return { 
-            appInit: function (appMetadata) { 
-                metadataService.configureAction('action-name', { visible: false });
-            }, 
-        }; 
-    }
+```xpp
+function main(metadataService, dataService, cacheService, $q) { 
+    return { 
+        appInit: function (appMetadata) { 
+            metadataService.configureAction('action-name', { visible: false });
+        }, 
+    }; 
+}
+```

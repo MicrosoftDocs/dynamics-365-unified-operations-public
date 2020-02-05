@@ -49,7 +49,7 @@ In this naming convention:
 
 ## Examples
 
-```
+```xpp
 AtlCreatorCostGroup
 
 AtlCreatorCustomer
@@ -67,7 +67,7 @@ In this naming convention, `<EntityPropertyName>` is the name of the property th
 
 ### Example
 
-```
+```xpp
 item = new AtlCreatorProductsReleasedVariant()
     .setItemId('DemoItem')
     .setColor(ecoResColor)

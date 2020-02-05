@@ -167,7 +167,7 @@ When Winlogbeat runs on an Orchestrator node, the **Tags** field can be changed 
 
 Winlogbeat includes a service installer. Microsoft used this installer to set up Winlogbeat as a service on each node. Press the Windows logo key+R to start the Run tool, and then run the following command.
 
-```Console
+```powershell
 powershell.exe -ExecutionPolicy Bypass -File C:\ELK\Winlogbeat\install-service-winlogbeat.ps1
 ```
 

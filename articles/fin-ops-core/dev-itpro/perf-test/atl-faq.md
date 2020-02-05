@@ -56,7 +56,7 @@ In most of the cases, the order of the chained fluent setters doesn't matter. Ho
 
 ### Option 1
 
-```
+```xpp
 salesLine.setQuantity(10).setUnitPrice(100).setAmount(2000).save()
 ```
 
@@ -64,7 +64,7 @@ This option produces a sales line where the amount == 2,000, because the amount 
 	
 ### Option 2
 
-```
+```xpp
 salesLine.setAmount(2000).setQuantity(10).setUnitPrice(100).save()
 ```
 

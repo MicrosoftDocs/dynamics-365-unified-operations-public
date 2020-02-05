@@ -56,7 +56,7 @@ When you create the `AtlEntity` class, you can also complete these tasks:
 - Add a `default` method to `AtlData` classes.
 - Override the `setMainRecordField` method to call the `modifiedField(_fieldId)` method on the table.
 
-    ```
+    ```xpp
     protected void setMainRecordField(FieldId _fieldId, anytype _value)
     {
         super(_fieldId, _value);

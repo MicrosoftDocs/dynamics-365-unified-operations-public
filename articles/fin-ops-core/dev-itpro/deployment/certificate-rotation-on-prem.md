@@ -87,7 +87,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 
     ```powershell
     .\Get-DeploymentSettings.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
-    `````
+    ```
 
 
 ## Activate new certificates within Service Fabric cluster
@@ -219,14 +219,14 @@ Continue this process following [Troubleshoot on-premises deployments](troublesh
 
 > [!NOTE]
 >  Note that the Client, Data Signing, and Encipherment certificates will only be replaced. You will also need to recreate the Credentials.json file, as described in [Encrypt credentials](setup-deploy-on-premises-pu12.md#encryptcred).
-
+>
 > Before you continue, you need to make a backup of the local Dynamics database.
 
 1. In LCS, select the "Full Details" link for the environment where you want to change the certificates.
 
 2. Select **Maintain** and then select **Update Settings**.
 
-	!Apply update settings[](media/addf4f1d0c0a86d840a6a412f774e474.png)
+	![Apply update settings](media/addf4f1d0c0a86d840a6a412f774e474.png)
 
 3. Change the thumbprints to the new ones that you have previously configured (you can find these in the ConfigTemplate.xml file in the InfrastructureScripts folder).
 

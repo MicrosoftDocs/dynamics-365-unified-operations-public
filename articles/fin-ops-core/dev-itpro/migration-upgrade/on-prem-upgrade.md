@@ -182,15 +182,15 @@ An overview of each path is given below:
 8.  Using the Command Prompt from step 6, execute the following
     commands:
 
-    a.  AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml
+    a.  `AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml`
 
-    b.  AxUpdateInstaller.exe import -runbookfile=upgrade.xml
+    b.  `AxUpdateInstaller.exe import -runbookfile=upgrade.xml`
 
-    c.  AxUpdateInstaller.exe execute -runbookid=upgrade
+    c.  `AxUpdateInstaller.exe execute -runbookid=upgrade`
 
-    During the execution of Cleanup for data upgrade you may encounter an error: Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN.\' on category \'Error\'.
+    During the execution of Cleanup for data upgrade you may encounter an error: `Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN.\' on category \'Error\'.`
 
-    To resolve this, re-run the step with this command: AxUpdateInstaller.exe execute -runbookid=upgrade -rerunstep=\<failed-step\>
+    To resolve this, re-run the step with this command: `AxUpdateInstaller.exe execute -runbookid=upgrade -rerunstep=\<failed-step\>`
 
 9.  If you have customizations from ISVs or VARs, verify if you have to run some post data upgrade scripts.
 
@@ -272,11 +272,11 @@ An overview of each path is given below:
 
     c.  Execute
 
-        A.  AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml
+        A. AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml
 
-        B.  AxUpdateInstaller.exe import -runbookfile=upgrade.xml
+        B. AxUpdateInstaller.exe import -runbookfile=upgrade.xml
 
-        C.  AxUpdateInstaller.exe execute -runbookid=upgrade
+        C. AxUpdateInstaller.exe execute -runbookid=upgrade
 
 9.  If you have any application extensions or customizations install them now into the VHD, otherwise the upgrade process will remove any data related to customizations. Check with your ISV or VAR if you need to prepare your environment in any way before the upgrade.
 
@@ -307,15 +307,15 @@ An overview of each path is given below:
 
 8.  Using the Command Prompt from step 5, execute the following commands:
 
-    a.  AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml
+    a.  `AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml`
 
-    b.  AxUpdateInstaller.exe import -runbookfile=upgrade.xml
+    b.  `AxUpdateInstaller.exe import -runbookfile=upgrade.xml`
 
-    c.  AxUpdateInstaller.exe execute -runbookid=upgrade
+    c.  `AxUpdateInstaller.exe execute -runbookid=upgrade`
 
-    During the execution of Cleanup for data upgrade you may encounter an error: Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN.\' on category \'Error\'.
+    During the execution of Cleanup for data upgrade you may encounter an error: `Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN.\' on category \'Error\'.`
 
-    To resolve this, re-run the step with this command: AxUpdateInstaller.exe execute -runbookid=upgrade -rerunstep=\<failed-step\>
+    To resolve this, re-run the step with this command: `AxUpdateInstaller.exe execute -runbookid=upgrade -rerunstep=\<failed-step\>`
 
 9.  Once the upgrade process has finished successfully, back up the newly upgraded database. If you have customizations from ISVs or VARs check if you have to run some post data upgrade scripts.
 
@@ -384,15 +384,15 @@ An overview of each path is given below:
 
 8.  Using the Command Prompt from step 6, execute the following commands:
 
-    a.  AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml
+    a.  `AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml`
 
-    b.  AxUpdateInstaller.exe import -runbookfile=upgrade.xml
+    b.  `AxUpdateInstaller.exe import -runbookfile=upgrade.xml`
 
-    c.  AxUpdateInstaller.exe execute -runbookid=upgrade
+    c.  `AxUpdateInstaller.exe execute -runbookid=upgrade`
 
-    During the execution of Cleanup for data upgrade you may encounter an error: Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN.\' on category \'Error\'.
+    During the execution of Cleanup for data upgrade you may encounter an error: `Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN.\' on category \'Error\'.`
 
-    To resolve this issue, re-run the step with this command: AxUpdateInstaller.exe execute -runbookid=upgrade -rerunstep=\<failed-step\>
+    To resolve this issue, re-run the step with this command: `AxUpdateInstaller.exe execute -runbookid=upgrade -rerunstep=\<failed-step\>`
 
 9.  If you have customizations from ISVs or VARs, check if you have to run some post data upgrade scripts.
 

@@ -55,7 +55,7 @@ In Tier 2 or higher environments, including Production, you will run through the
    - **If you're upgrading from the July 2017 release (also known as 7.2, build 7.2.11792.56024):** No hotfix is required for this version.
    - After you install application hotfixes required in this step, run a full database synchronization. This step is especially important for golden database environments. A full database synchronization fills the SysSetupLog table, which is used when the database is upgraded. Don't run the database synchronization from Microsoft Visual Studio for this step, because the SysSetup interface won't be triggered. To trigger the SysSetup interface, run the following command from an Administrator **Command Prompt** window.
 
-     ```
+     ```Console
      cd J:\AosService\WebRoot\bin>
 
      Microsoft.Dynamics.AX.Deployment.Setup.exe -bindir "J:\AosService\PackagesLocalDirectory" -metadatadir        J:\AosService\PackagesLocalDirectory -sqluser axdeployuser -sqlserver localhost -sqldatabase axdb -setupmode sync -syncmode fullall -isazuresql false -sqlpwd \<password for axdeployuser\>
@@ -69,7 +69,7 @@ In Tier 2 or higher environments, including Production, you will run through the
 
 5. If you're upgrading a database that began as a standard demo data database, you must also run the following script. This step is required, because the demo data contains bad records for some kernel X++ classes.
 
-    ```
+    ```sql
     delete from classidtable where id >= 0xf000 and id <= 0xffff
     ```
 
@@ -103,7 +103,7 @@ To obtain the latest data upgrade deployable package for a target environment th
 
 3. Rename the original database by adding the suffix **\_orig**. Rename the newly restored database so that it has the same name as the original database. In this way, the two databases switch places.
 
-    ```
+    ```sql
     ALTER DATABASE <original Dynamics 365 database> MODIFY NAME = <original Dynamics 365 database>_ORIG
     ALTER DATABASE imported_new MODIFY NAME = <original Dynamics 365 database>
     ```
@@ -122,7 +122,7 @@ To obtain the latest data upgrade deployable package for a target environment th
 
 Run the following SQL against the upgraded database to make sure that change tracking is enabled at the database level. You must specify the name of your database in the **alter database** command.
 
-```
+```sql
 ALTER DATABASE [<your AX database name>] SET CHANGE_TRACKING = ON (CHANGE_RETENTION = 6 DAYS, AUTO_CLEANUP = ON)
 ```
 
@@ -138,7 +138,7 @@ This section provides information that can help you troubleshoot various issues.
 
 A data upgrade deployable package enables the runbook to be rerun in a more granular manner than a typical deployable package. The data upgrade scripts begin to be run at Step 5 of the runbook. If you experience a failure during Step 5, view the output in the command window to learn which substep you reached. For example, if you reached substep 5.3, use the following command to rerun from that substep.
 
-```
+```Console
 AXUpdateInstaller.exe execute -runbookid=upgrade -rerunstep=5.3
 ```
 
@@ -148,7 +148,7 @@ When you're debugging, you don't have to rerun the whole data upgrade piece and 
 
 Upgrade scripts run in X++ by using a batch process that the runbook installer starts. In Application Explorer in Visual Studio, some classes that you can view are prefixed with **ReleaseUpdate**. If an upgrade script fails during the runbook process, you can learn more about the reason for the error by opening Microsoft SQL Server Management Studio and running the following code to query ReleaseUpdateScriptsErrorLog.
 
-```
+```sql
 select \* from RELEASEUPDATESCRIPTSERRORLOG
 ```
 
@@ -178,7 +178,7 @@ When you upgrade a database, you might receive the following error message durin
 
 This issue is a known issue that will be resolved in a future hotfix. The workaround is to delete the duplicate rows from the table by running the following SQL script against the database from Management Studio.
 
-```
+```sql
 delete RS from ResourceSetup as RS
 join ResResourceIdentifier as RRI on RRI.RecId = RS.Resource_
 join WrkCtrTable as WCT on WCT.RecId = RRI.RefRecId
@@ -194,7 +194,7 @@ When you upgrade a database, you might receive the following error message durin
 
 This issue is a known issue that will be resolved in a future release. The workaround is to create a missing field in several tables by running the following SQL script against the database from Management Studio.
 
-```
+```sql
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -277,19 +277,19 @@ When you upgrade a database, you might receive the following error message durin
 
 This issue is a known issue that will be resolved in a future release. The workaround is to delete all records in the InventDistinctProduct table and then resume the runbook from the current step. The records in the InventDistinctProduct table are disposable. They will be regenerated the first time that Finance and Operations is started, when an item is created, or when MRP is run. To delete all records in InventDistinctProduct, run the following query against the current database from Management Studio.
 
-```
+```sql
 truncate table InventDistinctProduct
 ```
 
 To resume the runbook from the current step, run the following command.
 
-```
+```Console
 axupdateinstaller execute -runbookid=<your runbook name> -rerunstep=<the last step number>
 ```
 
 For example, you can use this command.
 
-```
+```Console
 axupdateinstaller execute -runbookid=dataupgrade -rerunstep=5.4
 ```
 
@@ -301,7 +301,7 @@ When you upgrade a demo database, you might receive the following error message 
 
 Because you're upgrading demo data, look in the TrvUnreconciledExpenseTransaction table, which is where the expense line is. Change the currency to **USD**. (Because the data is demo data, you don't have to be careful to preserve this expense line.)
 
-```
+```sql
 update TrvUnreconciledExpenseTransaction
 set transactioncurrencycode = 'USD'
 where transactioncurrencycode = 'INR'
@@ -363,7 +363,7 @@ This error is caused by a failure in the pre-sync or the post-sync substep of th
 
 2. In Management Studio, run the following **SELECT** statement.
 
-    ```
+    ```sql
     SELECT * FROM RELEASEUPDATELOG
     ```
 

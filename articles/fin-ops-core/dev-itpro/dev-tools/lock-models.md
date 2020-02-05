@@ -77,10 +77,12 @@ public void DoSomething(int arg)
 
 In your model that depends on model M, you want to take advantage of all the great functionality that the **DoSomething** class offers. Therefore, you have the following code.
 
-    {
-        var c = new SomeClass();
-        c.DoSomething(42);
-    }
+```xpp
+{
+    var c = new SomeClass();
+    c.DoSomething(42);
+}
+```
 
 Later, your vendor (perhaps Microsoft) releases a new, updated version of the model that you depend on (model M). When this model is released, we must support the public interface, because things must run without recompilation. Suppose that we changed the method signature by adding another parameter, as shown here.
 
