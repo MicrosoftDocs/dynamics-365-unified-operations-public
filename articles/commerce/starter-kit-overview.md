@@ -5,7 +5,7 @@ title: Starter kit overview
 description: This topic presents an overview of the Microsoft Dynamics 365 Commerce starter kit.
 author:  anupamar-ms
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -47,10 +47,10 @@ Themes can be applied to the modules in the starter kit to change their look and
 The following types of modules are provided in the starter kit:
 
 - **Container module** – A container module is a simple module that acts as a host for other modules. It controls the layout of the modules that are inside it.
-- **Marketing modules** – Marketing modules include hero, feature, content placement, content rich block, video player, and carousel modules. All these modules can be used to showcase content. They can be put on any page and are driven by data from the content management system (CMS).
+- **Marketing modules** – Marketing modules include content block, text block, video player, and carousel modules. All these modules can be used to showcase content. They can be put on any page and are driven by data from the content management system (CMS).
 - **Header and footer modules** – Header and footer modules appear in the header and footer of all site pages. These modules can be configured as required through properties.
 - **Search modules** – Products can be discovered by using the search module in the header. Search results appear on the search results page. Products can also be discovered on category pages, which are dedicated pages for each category that is supported in the channel navigation hierarchy. In addition, refiner modules can be used to further filter results on search results and category pages.
-- **Product details page modules** – Product details pages use several modules to show product information. The buy box module lets customers view products and add them to the cart. Other modules such, as the tech specs module, show the product details. The ratings and reviews module can used to view and provide reviews.
+- **Product details page modules** – Product details pages use several modules to show product information. The buy box module lets customers view products and add them to the cart. Other modules, such as the tech specs module, show the product details. The ratings and reviews module can used to view and provide reviews.
 - **Buy online pick up in store module** – The buy online pick up in store module is integrated with Bing Maps. It can be used to find nearby stores where customers can pick up products that they have purchased.
 - **Purchase modules** – Purchase modules include the cart module, which can be used to add items to the cart. The checkout module captures the shipping address, delivery options, and gift card, loyalty program, and credit card information, so that an order can be processed. After an order is placed, the order confirmation module can be used to show the confirmation details.
 - **Account management modules** – The sign-in module lets customers sign in to an existing account, and the sign-up module lets them create a new account. After an account is created, the order history module can be used to view recent orders, and the order details module can be used to view order details.

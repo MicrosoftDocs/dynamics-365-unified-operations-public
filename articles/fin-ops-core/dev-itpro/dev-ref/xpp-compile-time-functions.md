@@ -36,8 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic lists the compile-time functions and describes their syntax, parameters, and return values.
 
-Overview
---------
+# Overview
 
 Compile-time functions are executed early during compilation of X++ code. They should be used wherever possible in X++ code to make the code resilient to changes to the metadata stored in the Application Explorer. Compile-time functions have their input value verified by the compiler. If the input value is not found to match any existing object in the Application Explorer, the compiler issues an error. The inputs to these functions must be literals, because the compiler cannot determine the value that a variable contains at run time. A compile-time function is a metadata assertion function. It takes arguments that represents an entity in the Application Explorer and validates the arguments at compile time. It has no effect at run time. Attributes are classes that inherit from the **SysAttribute** class. To support the validation of form, report, query, and menu metadata, use the **AutoDeclaration** property on controls. Most of these functions retrieve metadata about items that are in the Application Explorer. Some common compile time functions are as follows:
 
@@ -57,7 +56,9 @@ Validates that the specified attribute class exists in the Application Explorer;
 
 ### Syntax
 
-    str classStr(class class)
+```xpp
+str classStr(class class)
+```
 
 ### Parameters
 
@@ -74,22 +75,25 @@ The name of the attribute.
 This is a compile-time function. For more information, see [Overview](#overview).
 
 ### Example
-
-    static void attributeStrExample(Args _args)
-    {
-        str s;
-        ;
-        s = attributeStr(AifDocumentOperationAttribute);
-        print s;
-        pause;
-    }
+```xpp
+static void attributeStrExample(Args _args)
+{
+    str s;
+    ;
+    s = attributeStr(AifDocumentOperationAttribute);
+    print s;
+    pause;
+}
+``` 
 
 ## classNum
 Retrieves the ID of the specified class.
 
 ### Syntax
 
-    int classNum(class class)
+```xpp
+int classNum(class class)
+```
 
 ### Parameters
 
@@ -107,21 +111,25 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    static void classNumExample(Args _args)
-    {
-        int i;
-        ;
-        i = classNum(Global);
-        print i;
-        pause;
-    }
+```xpp
+static void classNumExample(Args _args)
+{
+    int i;
+    ;
+    i = classNum(Global);
+    print i;
+    pause;
+}
+```
 
 ## classStr
 Retrieves the name of a class as a string.
 
 ### Syntax
 
-    str classStr(class class)
+```xpp
+str classStr(class class)
+```
 
 ### Parameters
 
@@ -139,21 +147,25 @@ Use this function instead of literal text to retrieve a string that contains the
 
 ### Example
 
-    static void clStrExample(Args _args)
-    {
-        str s;
-        ;
-        s = classStr(Global);
-        print s;
-        pause;
-    }
+```xpp
+static void clStrExample(Args _args)
+{
+    str s;
+    ;
+    s = classStr(Global);
+    print s;
+    pause;
+}
+```
 
 ## configurationKeyNum
 Retrieves the ID of the specified configuration key.
 
 ### Syntax
 
-    int configurationKeyNum(str keyname)
+```xpp
+int configurationKeyNum(str keyname)
+```
 
 ### Parameters
 
@@ -171,21 +183,25 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    static void configurationKeyNum(Args _args)
-    {
-        int i;
-        ;
-        i = configurationKeyNum(AIF);
-        print i;
-        pause;
-    }
+```xpp
+static void configurationKeyNum(Args _args)
+{
+    int i;
+    ;
+    i = configurationKeyNum(AIF);
+    print i;
+    pause;
+}
+```
 
 ## configurationKeyStr
 Retrieves the name of a configuration key as a string.
 
 ### Syntax
 
-    str configurationKeyStr(str keyname)
+```xpp
+str configurationKeyStr(str keyname)
+```
 
 ### Parameters
 
@@ -203,21 +219,25 @@ Use this function instead of literal text to retrieve a string that contains the
 
 ### Example
 
-    static void configurationKeyStrExample(Args _args)
-    {
-        str s;
-        ;
-        s = configurationKeyStr(AIF);
-        print s;
-        pause;
-    }
+```xpp
+static void configurationKeyStrExample(Args _args)
+{
+    str s;
+    ;
+    s = configurationKeyStr(AIF);
+    print s;
+    pause;
+}
+```
 
 ## dataEntityDataSourceStr
 Retrieves the name of a data source of a data entity.
 
 ### Syntax
 
-    str dataEntityDataSourceStr(str dataEntity, str dataSource)
+```xpp
+str dataEntityDataSourceStr(str dataEntity, str dataSource)
+```
 
 ### Parameters
 
@@ -236,14 +256,16 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    No example.
+No example.
 
 ## delegateStr
 Returns the name of the delegate.
 
 ### Syntax
 
-    str delegateStr(str class, str instanceDelegate)
+```xpp
+str delegateStr(str class, str instanceDelegate)
+```
 
 ### Parameters
 
@@ -262,14 +284,16 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    No example.
+No example.
 
 ## dimensionHierarchyLevelStr
 Returns the name of the dimension hierarchy level.
 
 ### Syntax
 
-    str dimensionHierarchyLevelStr(str dimensionHierarchyLevel)
+```xpp
+str dimensionHierarchyLevelStr(str dimensionHierarchyLevel)
+```
 
 ### Parameters
 
@@ -287,14 +311,16 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    No example.
+No example.
 
 ## dimensionHierarchyStr
 Returns the name of the dimension hierarchy.
 
 ### Syntax
 
-    str dimensionHierarchyStr(str dimensionHierarchy)
+```xpp
+str dimensionHierarchyStr(str dimensionHierarchy)
+```
 
 ### Parameters
 
@@ -312,14 +338,16 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    No example.
+No example.
 
 ## dimensionReferenceStr
 Returns the name of the dimension reference.
 
 ### Syntax
 
-    str dimensionReferenceStr(str dimensionReference)
+```xpp
+str dimensionReferenceStr(str dimensionReference)
+```
 
 ### Parameters
 
@@ -337,14 +365,16 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    No example.
+No example.
 
 ## dutyStr
 Retrieves a string that represents the name of the specified security duty.
 
 ### Syntax
 
-    str dutyStr(str securityDuty)
+```xpp
+str dutyStr(str securityDuty)
+```
 
 ### Parameters
 
@@ -362,14 +392,16 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    No example.
+No example.
 
 ## enumCnt
 Retrieves the number of elements in the specified enumeration type.
 
 ### Syntax
 
-    int enumCnt(enum enumtype)
+```xpp
+int enumCnt(enum enumtype)
+```
 
 ### Parameters
 
@@ -387,14 +419,18 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    enumCnt(NoYes); //Returns 2, as the two elements are Yes and No.
+```xpp
+enumCnt(NoYes); //Returns 2, as the two elements are Yes and No.
+```
 
 ## enumLiteralStr
 Indicates whether the specified string is an element of the specified enumeration type.
 
 ### Syntax
 
-    enumLiteralStr(enum enum, string str)
+```xpp
+\enumLiteralStr(enum enum, string str)
+```
 
 ### Parameters
 
@@ -412,20 +448,23 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    static void getEnumValueAsString()
-    {
-        str i;
-        i = enumLiteralStr(ABCEnum, "valueInABCEnum");
-        print i;
-        pause;
-    }
+```xpp
+static void getEnumValueAsString()
+{
+    str i;
+    i = enumLiteralStr(ABCEnum, "valueInABCEnum");
+    print i;
+    pause;
+}
+```
 
 ## enumNum
 Retrieves the ID of the specified enumeration type.
 
 ### Syntax
-
-    int enumNum(enum enum)
+```xpp
+int enumNum(enum enum)
+```
 
 ### Parameters
 
@@ -443,21 +482,25 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    static void enumNum(Args _args)
-    {
-        int i;
-        ;
-        i = enumNum(ABC);
-        print i;
-        pause;
-    }
+```xpp
+static void enumNum(Args _args)
+{
+    int i;
+    ;
+    i = enumNum(ABC);
+    print i;
+    pause;
+}
+```
 
 ## enumStr
 Retrieves the name of an enumeration as a string.
 
 ### Syntax
 
-    str enumStr(enum enum)
+```xpp
+str enumStr(enum enum)
+```
 
 ### Parameters
 
@@ -475,21 +518,25 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    static void enumStrExample(Args _args)
-    {
-        str s;
-        ;
-        s = enumStr(ABC);
-        print s;
-        pause;
-    }
+```xpp
+static void enumStrExample(Args _args)
+{
+    str s;
+    ;
+    s = enumStr(ABC);
+    print s;
+    pause;
+}
+```
 
 ## extendedTypeNum
 Retrieves the ID of the specified extended data type.
 
 ### Syntax
 
-    int extendedTypeNum(int str)
+```xpp
+int extendedTypeNum(int str)
+```
 
 ### Parameters
 
@@ -507,25 +554,29 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    static void EDTNum(Args _args)
-    {
-        int i;
-        str s;
-        ;
+```xpp
+static void EDTNum(Args _args)
+{
+    int i;
+    str s;
+    ;
 
-        i = extendedTypeNum(AccountName);
-        s = extendedTypeStr(AccountName);
-        print  int2Str(i);
-        print  s;
-        pause;
-    }
+    i = extendedTypeNum(AccountName);
+    s = extendedTypeStr(AccountName);
+    print  int2Str(i);
+    print  s;
+    pause;
+}
+```
 
 ## extendedTypeStr
 Retrieves the name of an extended data type as a string.
 
 ### Syntax
 
-    str extendedTypeStr(int str)
+```xpp
+str extendedTypeStr(int str)
+```
 
 ### Parameters
 
@@ -543,25 +594,29 @@ Use this function instead of literal text to return a string that contains the e
 
 ### Example
 
-    static void EDTStr(Args _args)
-    {
-        int i;
-        str s;
-        ;
+```xpp
+static void EDTStr(Args _args)
+{
+    int i;
+    str s;
+    ;
 
-        i = extendedTypeNum(AccountName);
-        s = extendedTypeStr(AccountName);
-        print  int2Str(i);
-        print  s;
-        pause;
-    }
+    i = extendedTypeNum(AccountName);
+    s = extendedTypeStr(AccountName);
+    print  int2Str(i);
+    print  s;
+    pause;
+}
+```
 
 ## fieldNum
 Returns the ID number of the specified field.
 
 ### Syntax
 
-    int fieldNum(str tableName, str fieldName)
+```xpp
+int fieldNum(str tableName, str fieldName)
+```
 
 ### Parameters
 
@@ -582,25 +637,29 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 The following example prints the number of the **CashDisc** field in the **CustTable** table.
 
-    static void fieldNumExample(Args _args)
-    {
-        int myInt;
-        ;
+```xpp
+static void fieldNumExample(Args _args)
+{
+    int myInt;
+    ;
 
-        myInt = fieldNum(CustTable, CashDisc);
-        Global::info(strfmt("CashDisc has a field ID of %1 in the CustTable table.", myInt));
-    }
-    /****Infolog Display
-    Message (10:40:00 am)
-    CashDisc has a field ID of 10 in the CustTable table.
-    ****/
+    myInt = fieldNum(CustTable, CashDisc);
+    Global::info(strfmt("CashDisc has a field ID of %1 in the CustTable table.", myInt));
+}
+/****Infolog Display
+Message (10:40:00 am)
+CashDisc has a field ID of 10 in the CustTable table.
+****/
+```
 
 ## fieldPName
 Retrieves the label of the specified field.
 
 ### Syntax
 
-    str fieldPName(str tableid, str fieldid)
+```xpp
+str fieldPName(str tableid, str fieldid)
+```
 
 ### Parameters
 
@@ -621,25 +680,29 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 The following example prints the label of the **CashDisc** field.
 
-    static void fieldPNameExample(Args _arg)
-    {
-        str myText;
-        ;
+```xpp
+static void fieldPNameExample(Args _arg)
+{
+    str myText;
+    ;
 
-        myText = fieldPName(CustTable, CashDisc);
-        Global::info(strfmt("%1 is the label of the CashDisc field.", myText));
-    }
-    /****Infolog Display
-    Message (02:00:57 pm)
-    Cash discount is the label of the CashDisc field.
-    ****/
+    myText = fieldPName(CustTable, CashDisc);
+    Global::info(strfmt("%1 is the label of the CashDisc field.", myText));
+}
+/****Infolog Display
+Message (02:00:57 pm)
+Cash discount is the label of the CashDisc field.
+****/
+```
 
 ## fieldStr
 Retrieves the field name of the specified field.
 
 ### Syntax
 
-    str fieldStr(str tableid, str fieldid)
+```xpp
+str fieldStr(str tableid, str fieldid)
+```
 
 ### Parameters
 
@@ -660,25 +723,29 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 The following example assigns the name of the **CashDisc** field to the *myText* variable.
 
-    static void fieldStrExample(Args _arg)
-    {
-        str myText;
-        ;
+```xpp
+static void fieldStrExample(Args _arg)
+{
+    str myText;
+    ;
 
-        myText = fieldStr(CustTable, CashDisc);
-        Global::info(strfmt("%1 is the specified field.", myText));
-    }
-    /****Infolog Display
-    Message (09:11:52 am)
-    CashDisc is the specified field.
-    ****/
+    myText = fieldStr(CustTable, CashDisc);
+    Global::info(strfmt("%1 is the specified field.", myText));
+}
+/****Infolog Display
+Message (09:11:52 am)
+CashDisc is the specified field.
+****/
+```
 
 ## formControlStr
 Causes the X++ compiler to check whether the control exists on the form, and to replace the function call with a string of the valid control name.
 
 ### Syntax
 
-    str formControlStr(formName, controlName)
+```xpp
+str formControlStr(formName, controlName)
+```
 
 ### Parameters
 
@@ -697,14 +764,16 @@ A compile error is issued if the compiler determines that the control does not e
 
 ### Example
 
-    No example.
+No example.
 
 ## formDataFieldStr
 Returns the name of a data field in a form.
 
 ### Syntax
 
-    str formDataFieldStr(str formName, str dataSource, str dataField)
+```xpp
+str formDataFieldStr(str formName, str dataSource, str dataField)
+```
 
 ### Parameters
 
@@ -724,14 +793,18 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    str a = formDataFieldStr(FMVehicle, FMModelRate, RatePerDay);
+```xpp
+str a = formDataFieldStr(FMVehicle, FMModelRate, RatePerDay);
+```
 
 ## formDataSourceStr
 Returns the name of a data source in a form.
 
 ### Syntax
 
-    str formDataSourceStr(str formName, str dataSource)
+```xpp
+str formDataSourceStr(str formName, str dataSource)
+```
 
 ### Parameters
 
@@ -750,14 +823,18 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    str b = formDataSourceStr(FMVehicle, FMModelRate);
+```xpp
+str b = formDataSourceStr(FMVehicle, FMModelRate);
+```
 
 ## formMethodStr
 Returns the name of a method of a form.
 
 ### Syntax
 
-    str formMethodStr(str formName, str methodName)
+```xpp
+str formMethodStr(str formName, str methodName)
+```
 
 ### Parameters
 
@@ -778,14 +855,18 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 The following example prints the name of the **showDialog** method.
 
-    str c = formMethodStr(Batch,showDialog);
+```xpp
+str c = formMethodStr(Batch,showDialog);
+```
 
 ## formStr
 Retrieves the name of a form.
 
 ### Syntax
 
-    str formStr(str form)
+```xpp
+str formStr(str form)
+```
 
 ### Parameters
 
@@ -805,23 +886,27 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 The following example prints the name of the InventDim form.
 
-    static void formStrExample(Args _arg)
-    {
-        ;
+```xpp
+static void formStrExample(Args _arg)
+{
+    ;
 
-        Global::info(formStr(InventDim));
-    }
-    /****Infolog Display
-    Message (11:04:39 am)
-    InventDim
-    ****/
+    Global::info(formStr(InventDim));
+}
+/****Infolog Display
+Message (11:04:39 am)
+InventDim
+****/
+```
 
 ## identifierStr
 Converts the specified identifier to a string.
 
 ### Syntax
 
-    str identifierStr(str ident)
+```xpp
+str identifierStr(str ident)
+```
 
 ### Parameters
 
@@ -841,26 +926,30 @@ You will receive a best practice warning if you use the **identifierStr** functi
 
 The following code example assigns the *myvar* variable name to the *thevar* variable.
 
-    static void indentifierStrExample(Args _args)
-    {
-        str myvar;
-        str thevar
-        ;
+```xpp
+static void indentifierStrExample(Args _args)
+{
+    str myvar;
+    str thevar
+    ;
 
-        thevar = "[" + identifierStr(myvar) + "]";
-        Global::info(strfmt(thevar));
-    }
-    /****Infolog Display
-    Message (09:19:49 am)
-    [myvar]
-    ****/
+    thevar = "[" + identifierStr(myvar) + "]";
+    Global::info(strfmt(thevar));
+}
+/****Infolog Display
+Message (09:19:49 am)
+[myvar]
+****/
+```
 
 ## indexNum
 Converts the specified index to a number.
 
 ### Syntax
 
-    int indexNum(str tableid, str indexid)
+```xpp
+int indexNum(str tableid, str indexid)
+```
 
 ### Parameters
 
@@ -881,23 +970,27 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 The following example returns the index value of the Party index.
 
-    static void indexNumExample(Args _arg)
-    {
-        ;
+```xpp
+static void indexNumExample(Args _arg)
+{
+    ;
 
-        Global::info(strfmt("%1 is the index number of Party.", indexNum(CustTable, Party)));
-    }
-    /****Infolog Display
-    Message (11:28:03 am)
-    3 is the index number of Party.
-    ****/
+    Global::info(strfmt("%1 is the index number of Party.", indexNum(CustTable, Party)));
+}
+/****Infolog Display
+Message (11:28:03 am)
+3 is the index number of Party.
+****/
+```
 
 ## indexStr
 Converts the specified index to a string.
 
 ### Syntax
 
-    str indexStr(str tableid, str indexid)
+```xpp
+str indexStr(str tableid, str indexid)
+```
 
 ### Parameters
 
@@ -918,25 +1011,29 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 The following example assigns the **CashDisc** index value to the *myText* variable.
 
-    static void fieldStrExample(Args _arg)
-    {
-        str myText;
-        ;
+```xpp
+static void fieldStrExample(Args _arg)
+{
+    str myText;
+    ;
 
-        myText = fieldStr(CustTable, CashDisc);
-        Global::info(strfmt("%1 is the specified index.", myText));
-    }
-    /****Infolog Display
-    Message (09:11:52 am)
-    CashDisc is the specified index.
-    ****/
+    myText = fieldStr(CustTable, CashDisc);
+    Global::info(strfmt("%1 is the specified index.", myText));
+}
+/****Infolog Display
+Message (09:11:52 am)
+CashDisc is the specified index.
+****/
+```
 
 ## licenseCodeNum
 Validates that the specified license code exists in the Application Explorer; if not, a compiler error occurs.
 
 ### Syntax
 
-    int licenseCodeNum(str codename)
+```xpp
+int licenseCodeNum(str codename)
+```
 
 ### Parameters
 
@@ -954,25 +1051,29 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    static void licenseCodeNumExample(Args args)
-    {
-        int i;
-        ;
+```xpp
+static void licenseCodeNumExample(Args args)
+{
+    int i;
+    ;
 
-        i = licenseCodeNum(SysMorphX);
-        Global::info(strfmt("%1 is the license code number for SysMorphX.", i));
-    }
-    /****Infolog Display
-    Message (01:52:35 pm)
-    24 is the license code number for SysMorphX.
-    ****/
+    i = licenseCodeNum(SysMorphX);
+    Global::info(strfmt("%1 is the license code number for SysMorphX.", i));
+}
+/****Infolog Display
+Message (01:52:35 pm)
+24 is the license code number for SysMorphX.
+****/
+```
 
 ## licenseCodeStr
 Validates that the specified license code exists in the Application Explorer; if not, a compiler error occurs.
 
 ### Syntax
 
-    str licenseCodeStr(str codename)
+```xpp
+str licenseCodeStr(str codename)
+```
 
 ### Parameters
 
@@ -990,25 +1091,29 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    static void licenseCodeStrExample(Args _arg)
-    {
-        str s;
-        ;
+```xpp
+static void licenseCodeStrExample(Args _arg)
+{
+    str s;
+    ;
 
-        s = licenseCodeStr(SysMorphX);
-        Global::info(strfmt("%1 is the license code string for SysMorphX.", s));
-    }
-    /****Infolog Display
-    Message (02:33:56 pm)
-    SysMorphX is the license code string for SysMorphX.
-    ****/
+    s = licenseCodeStr(SysMorphX);
+    Global::info(strfmt("%1 is the license code string for SysMorphX.", s));
+}
+/****Infolog Display
+Message (02:33:56 pm)
+SysMorphX is the license code string for SysMorphX.
+****/
+```
 
 ## literalStr
 Validates that the specified string can be a literal string; if not, a compiler error occurs.
 
 ### Syntax
 
-    str literalStr(int str)
+```xpp
+str literalStr(int str)
+```
 
 ### Parameters
 
@@ -1026,21 +1131,25 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    {
-        str s;
-        ;
+```xpp
+{
+    str s;
+    ;
 
-        s = literalStr("This is a literal str");
-        print s;
-        pause;
-    }
+    s = literalStr("This is a literal str");
+    print s;
+    pause;
+}
+```
 
 ## maxDate
 Retrieves the maximum value allowed for a variable of type date.
 
 ### Syntax
 
-    date maxDate()
+```xpp
+date maxDate()
+```
 
 ### Return Value
 
@@ -1052,21 +1161,25 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    static void maxDateExample(Args _arg)
-    {
-        date maximumDate;
-        ;
-        maximumDate = maxDate();
-        print maximumDate;
-        pause;
-    }
+```xpp
+static void maxDateExample(Args _arg)
+{
+    date maximumDate;
+    ;
+    maximumDate = maxDate();
+    print maximumDate;
+    pause;
+}
+```
 
 ## maxInt
 Retrieves the maximum signed value that can be stored in an **int** type.
 
 ### Syntax
 
-    int maxInt()
+```xpp
+int maxInt()
+```
 
 ### Return Value
 
@@ -1078,20 +1191,24 @@ Any other integer will be less than or equal to the returned value. This is a co
 
 ### Example
 
-    static void maxIntExample(Args _arg)
-    {
-        int i;
-        ;
-        print "The maximum value for type int is " + int2Str(maxInt());
-        pause;
-    }
+```xpp
+static void maxIntExample(Args _arg)
+{
+    int i;
+    ;
+    print "The maximum value for type int is " + int2Str(maxInt());
+    pause;
+}
+```
 
 ## measurementStr
 Returns the name of a measurement.
 
 ### Syntax
 
-    str measurementStr(str measurement)
+```xpp
+str measurementStr(str measurement)
+```
 
 ### Parameters
 
@@ -1109,14 +1226,16 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    No example.
+No example.
 
 ## measureStr
 Returns the name of a measure.
 
 ### Syntax
 
-    str measureStr(str measure)
+```xpp
+str measureStr(str measure)
+```
 
 ### Parameters
 
@@ -1134,14 +1253,16 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    No example.
+No example.
 
 ## menuItemActionStr
 Validates that the specified menu item action exists in the Application Object Tree (Application Explorer); if it does not, a compiler error occurs.
 
 ### Syntax
 
-    str menuItemActionStr(class menuitem)
+```xpp
+str menuItemActionStr(class menuitem)
+```
 
 ### Parameters
 
@@ -1159,29 +1280,33 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    {
-        str s1, s2, s3, s4;
-        ;
+```xpp
+{
+    str s1, s2, s3, s4;
+    ;
 
-        s1 = menuItemActionStr(AssetCopy);
-        s2 = menuItemDisplayStr(Address);
-        s3 = menuItemOutputStr(AssetBarcode);
-        s4 = menuStr(Administration);
+    s1 = menuItemActionStr(AssetCopy);
+    s2 = menuItemDisplayStr(Address);
+    s3 = menuItemOutputStr(AssetBarcode);
+    s4 = menuStr(Administration);
 
-        print "menuItemActionStr for AssetCopy is " + s1;
-        print "menuItemDisplayStr for Address is " + s2;
-        print "menuItemOutputStr for AssetBarcode is " + s3;
-        print "menuStr for Administration is " + s4;
+    print "menuItemActionStr for AssetCopy is " + s1;
+    print "menuItemDisplayStr for Address is " + s2;
+    print "menuItemOutputStr for AssetBarcode is " + s3;
+    print "menuStr for Administration is " + s4;
 
-        pause;
-    }
+    pause;
+}
+```
 
 ## menuItemDisplayStr
 Validates that the specified menu item display exists in the Application Explorer; if it does not, a compiler error occurs.
 
 ### Syntax
 
-    str menuitemdisplaystr(class menuItem)
+```xpp
+str menuitemdisplaystr(class menuItem)
+```
 
 ### Parameters
 
@@ -1199,29 +1324,33 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    {
-        str s1, s2, s3, s4;
-        ;
+```xpp
+{
+    str s1, s2, s3, s4;
+    ;
 
-        s1 = menuItemActionStr(AssetCopy);
-        s2 = menuItemDisplayStr(Address);
-        s3 = menuItemOutputStr(AssetBarcode);
-        s4 = menuStr(Administration);
+    s1 = menuItemActionStr(AssetCopy);
+    s2 = menuItemDisplayStr(Address);
+    s3 = menuItemOutputStr(AssetBarcode);
+    s4 = menuStr(Administration);
 
-        print "menuItemActionStr for AssetCopy is " + s1;
-        print "menuItemDisplayStr for Address is " + s2;
-        print "menuItemOutputStr for AssetBarcode is " + s3;
-        print "menuStr for Administration is " + s4;
+    print "menuItemActionStr for AssetCopy is " + s1;
+    print "menuItemDisplayStr for Address is " + s2;
+    print "menuItemOutputStr for AssetBarcode is " + s3;
+    print "menuStr for Administration is " + s4;
 
-        pause;
-    }
+    pause;
+}
+```
 
 ## menuItemOutputStr
 Validates that the specified menu item output exists in the Application Explorer; if not, a compiler error occurs.
 
 ### Syntax
 
-    str menuItemOutputStr(class menuitem)
+```xpp
+str menuItemOutputStr(class menuitem)
+```
 
 ### Parameters
 
@@ -1239,29 +1368,33 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    {
-        str s1, s2, s3, s4;
-        ;
+```xpp
+{
+    str s1, s2, s3, s4;
+    ;
 
-        s1 = menuItemActionStr(AssetCopy);
-        s2 = menuItemDisplayStr(Address);
-        s3 = menuItemOutputStr(AssetBarcode);
-        s4 = menuStr(Administration);
+    s1 = menuItemActionStr(AssetCopy);
+    s2 = menuItemDisplayStr(Address);
+    s3 = menuItemOutputStr(AssetBarcode);
+    s4 = menuStr(Administration);
 
-        print "menuItemActionStr for AssetCopy is " + s1;
-        print "menuItemDisplayStr for Address is " + s2;
-        print "menuItemOutputStr for AssetBarcode is " + s3;
-        print "menuStr for Administration is " + s4;
+    print "menuItemActionStr for AssetCopy is " + s1;
+    print "menuItemDisplayStr for Address is " + s2;
+    print "menuItemOutputStr for AssetBarcode is " + s3;
+    print "menuStr for Administration is " + s4;
 
-        pause;
-    }
+    pause;
+}
+```
 
 ## menuStr
 Validates that the specified menu exists in the Application Explorer; if not, a compiler error occurs.
 
 ### Syntax
 
-    str menuStr(class menu)
+```xpp
+str menuStr(class menu)
+```
 
 ### Parameters
 
@@ -1279,29 +1412,33 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    {
-        str s1, s2, s3, s4;
-        ;
+```xpp
+{
+    str s1, s2, s3, s4;
+    ;
 
-        s1 = menuItemActionStr(AssetCopy);
-        s2 = menuItemDisplayStr(Address);
-        s3 = menuItemOutputStr(AssetBarcode);
-        s4 = menuStr(Administration);
+    s1 = menuItemActionStr(AssetCopy);
+    s2 = menuItemDisplayStr(Address);
+    s3 = menuItemOutputStr(AssetBarcode);
+    s4 = menuStr(Administration);
 
-        print "menuItemActionStr for AssetCopy is " + s1;
-        print "menuItemDisplayStr for Address is " + s2;
-        print "menuItemOutputStr for AssetBarcode is " + s3;
-        print "menuStr for Administration is " + s4;
+    print "menuItemActionStr for AssetCopy is " + s1;
+    print "menuItemDisplayStr for Address is " + s2;
+    print "menuItemOutputStr for AssetBarcode is " + s3;
+    print "menuStr for Administration is " + s4;
 
-        pause;
-    }
+    pause;
+}
+```
 
 ## methodStr
 Validates that the specified method exists in the specified class; if it does not, a compiler error occurs.
 
 ### Syntax
 
-    str methodStr(class class, int method)
+```xpp
+str methodStr(class class, int method)
+```
 
 ### Parameters
 
@@ -1320,23 +1457,27 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    {
-        #define.timeout(50)
-        str s;
-        SysHelpInitTimeOut SysHelpInitTimeOut;
-        ;
+```xpp
+{
+    #define.timeout(50)
+    str s;
+    SysHelpInitTimeOut SysHelpInitTimeOut;
+    ;
 
-        s = methodStr(SysHelpInitTimeOut, timeout);
-        print s;
-        pause;
-    }
+    s = methodStr(SysHelpInitTimeOut, timeout);
+    print s;
+    pause;
+}
+```
 
 ## minInt
 Retrieves the minimum signed value that can be stored in an **int** type.
 
 ### Syntax
 
-    int minInt()
+```xpp
+int minInt()
+```
 
 ### Return Value
 
@@ -1348,21 +1489,25 @@ Any other integer value will be greater than or equal to the returned value. Thi
 
 ### Example
 
-    static void minIntExample(Args _arg)
-    {
-        int i;
-        ;
-        i = minInt();
-        print "minInt() is " + int2Str(i);    
-        pause;
-    }
+```xpp
+static void minIntExample(Args _arg)
+{
+    int i;
+    ;
+    i = minInt();
+    print "minInt() is " + int2Str(i);    
+    pause;
+}
+```
 
 ## privilegeStr
 Returns the name of the privilege.
 
 ### Syntax
 
-    str privilegeStr(str privilege)
+```xpp
+str privilegeStr(str privilege)
+```
 
 ### Parameters
 
@@ -1380,14 +1525,16 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    No example.
+No example.
 
 ## queryDatasourceStr
 Causes the X++ compiler to check whether the data source exists on the query, and to replace the function call with a string of the valid data source name.
 
 ### Syntax
 
-    str queryDataSourceStr(queryName, dataSourceName)
+```xpp
+str queryDataSourceStr(queryName, dataSourceName)
+```
 
 ### Parameters
 
@@ -1406,14 +1553,16 @@ A compile error is issued if the compiler determines that the data source does n
 
 ### Example
 
-    No example.
+No example.
 
 ## queryMethodStr
 Returns the name of a method of a query.
 
 ### Syntax
 
-    str queryMethodStr(str queryName, str methodName)
+```xpp
+str queryMethodStr(str queryName, str methodName)
+```
 
 ### Parameters
 
@@ -1432,14 +1581,16 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    No example.
+No example.
 
 ## queryStr
 Retrieves a string that represents an existing query.
 
 ### Syntax
 
-    str queryStr(str query)
+```xpp
+str queryStr(str query)
+```
 
 ### Parameters
 
@@ -1457,25 +1608,29 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    static void queryStrExample(Args _arg)
-    {
-        str myText;
-        ;
+```xpp
+static void queryStrExample(Args _arg)
+{
+    str myText;
+    ;
 
-        myText = queryStr(AssetTable);
-        Global::info(strfmt("%1 is the name of the query.",myText));
-    }
-    /****Infolog Display
-    Message (09:45:16 am)
-    AssetTable is the name of the query.
-    ****/
+    myText = queryStr(AssetTable);
+    Global::info(strfmt("%1 is the name of the query.",myText));
+}
+/****Infolog Display
+Message (09:45:16 am)
+AssetTable is the name of the query.
+****/
+```
 
 ## reportStr
 Retrieves a string that represents the name of the specified report.
 
 ### Syntax
 
-    str reportStr(str report)
+```xpp
+str reportStr(str report)
+```
 
 ### Parameters
 
@@ -1495,25 +1650,29 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 The following example assigns the name of the **AssetAddition** report to the *MyTxt* variable.
 
-    static void reportStrExample(Args _args)
-    {
-        str MyTxt;
-        ;
+```xpp
+static void reportStrExample(Args _args)
+{
+    str MyTxt;
+    ;
 
-        MyTxt = reportStr(AssetAddition);
-        Global::info(strfmt("%1 is the name of the report.", MyTxt));
-    }
-    /****Infolog Display.
-    Message (10:46:36 am)
-    AssetAddition is the name of the report.
-    ****/
+    MyTxt = reportStr(AssetAddition);
+    Global::info(strfmt("%1 is the name of the report.", MyTxt));
+}
+/****Infolog Display.
+Message (10:46:36 am)
+AssetAddition is the name of the report.
+****/
+```
 
 ## resourceStr
 Validates that the specified resource exists in the Application Explorer; if it does not, a compiler error occurs.
 
 ### Syntax
 
-    str resourceStr(str resourcename)
+```xpp
+str resourceStr(str resourcename)
+```
 
 ### Parameters
 
@@ -1531,18 +1690,22 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    {
-        print "Str for resource StyleSheet_Help_Axapta is " 
-            + resourceStr(StyleSheet_Help_Axapta);
-        pause;
-    }
+```xpp
+{
+    print "Str for resource StyleSheet_Help_Axapta is " 
+        + resourceStr(StyleSheet_Help_Axapta);
+    pause;
+}
+```
 
 ## roleStr
 Retrieves a string that represents the name of the specified security role.
 
 ### Syntax
 
-    str roleStr(str securityRole)
+```xpp
+str roleStr(str securityRole)
+```
 
 ### Parameters
 
@@ -1560,14 +1723,16 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    No example.
+No example.
 
 ## ssrsReportStr
 Retrieves a string that represents the name of the specified report. Use this function when you want to specify the report that should be run by a report controller class.
 
 ### Syntax
 
-    str ssrsReportStr(str report, str design)
+```xpp
+str ssrsReportStr(str report, str design)
+```
 
 ### Parameters
 
@@ -1586,26 +1751,30 @@ The **ssrsReportStr** function parses the two values that are passed to it, to v
 
 ### Example
 
-    public static void main(Args _args)
-    {
-        // Initializing the object for a controller class, in this case, the class named AssetListingController.
-        SrsReportRunController controller = new AssetListingController();
+```xpp
+public static void main(Args _args)
+{
+    // Initializing the object for a controller class, in this case, the class named AssetListingController.
+    SrsReportRunController controller = new AssetListingController();
 
-        // Getting the properties of the called object (in this case AssetListing MenuItem)
-        controller.parmArgs(_args);
-        // Setting the Report name for the controller.
-        controller.parmReportName(ssrsReportStr(AssetListing, Report));
+    // Getting the properties of the called object (in this case AssetListing MenuItem)
+    controller.parmArgs(_args);
+    // Setting the Report name for the controller.
+    controller.parmReportName(ssrsReportStr(AssetListing, Report));
 
-        // Initiate the report execution.
-        controller.startOperation();
-    }
+    // Initiate the report execution.
+    controller.startOperation();
+}
+```
 
 ## staticDelegateStr
 Returns the name of a static delegate.
 
 ### Syntax
 
-    str staticDelegateStr(str class, str delegate)
+```xpp
+str staticDelegateStr(str class, str delegate)
+```
 
 ### Parameters
 
@@ -1624,14 +1793,16 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    No example.
+No example.
 
 ## staticMethodStr
 Validates that the specified static method exists in the specified class; if it does not, a compiler error occurs.
 
 ### Syntax
 
-    str staticMethodStr(class class, int method)
+```xpp
+str staticMethodStr(class class, int method)
+```
 
 ### Parameters
 
@@ -1650,14 +1821,16 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    No example.
+No example.
 
 ## tableCollectionStr
 Validates that the specified table collection exists in the Application Explorer; if it does not, a compiler error occurs.
 
 ### Syntax
 
-    str tableCollectionStr(class tablecollection)
+```xpp
+str tableCollectionStr(class tablecollection)
+```
 
 ### Parameters
 
@@ -1675,14 +1848,16 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    No example.
+No example.
 
 ## tableFieldGroupStr
 Retrieves the name of a field group as a string.
 
 ### Syntax
 
-    str tableFieldGroupStr(str tableName, str fieldGroupName)
+```xpp
+str tableFieldGroupStr(str tableName, str fieldGroupName)
+```
 
 ### Parameters
 
@@ -1703,23 +1878,27 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 The following example retrieves the name of the **Editing** field group as a string.
 
-    static void tableFieldGroupStrExample(Args _arg)
-    {
-        ;
+```xpp
+static void tableFieldGroupStrExample(Args _arg)
+{
+    ;
 
-        Global::info(tableFieldGroupStr(AccountingDistribution, Editing));
-    }
-    /****Infolog Display
-    Message (03:14:54 pm)
-    Editing
-    ****/
+    Global::info(tableFieldGroupStr(AccountingDistribution, Editing));
+}
+/****Infolog Display
+Message (03:14:54 pm)
+Editing
+****/
+```
 
 ## tableMethodStr
 Validates that the specified method exists in the specified table; if it does not, a compiler error occurs.
 
 ### Syntax
 
-    str tableMethodStr(int table, int method)
+```xpp
+str tableMethodStr(int table, int method)
+```
 
 ### Parameters
 
@@ -1738,14 +1917,16 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    No example.
+No example.
 
 ## tableNum
 Retrieves the table ID of the specified table.
 
 ### Syntax
 
-    int tableNum(str table)
+```xpp
+int tableNum(str table)
+```
 
 ### Parameters
 
@@ -1765,26 +1946,30 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 The following example sets the **tableID** variable to 77, which is the **ID** of the **CustTable** table.
 
-    static void tableNumExample(Args _args)
-    {
-        int tableID;
-        ;
+```xpp
+static void tableNumExample(Args _args)
+{
+    int tableID;
+    ;
 
-        tableID = tableNum(CustTable);
-        Global::info(strfmt("%1 is the table ID for the CustTable table.", tableID));
+    tableID = tableNum(CustTable);
+    Global::info(strfmt("%1 is the table ID for the CustTable table.", tableID));
 
-    }
-    /****Infolog Display
-    Message (11:15:54 am)
-    77 is the table ID for the CustTable table.
-    ****/
+}
+/****Infolog Display
+Message (11:15:54 am)
+77 is the table ID for the CustTable table.
+****/
+```
 
 ## tablePName
 Retrieves a string that contains the printable name of the specified table.
 
 ### Syntax
 
-    str tablePName(str table)
+```xpp
+str tablePName(str table)
+```
 
 ### Parameters
 
@@ -1804,25 +1989,29 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 The following example assigns the label of the **CustTable** table to the *MyText* variable.
 
-    static void tablePNameExample(Args _args)
-    {
-        str MyText;
-        ;
+```xpp
+static void tablePNameExample(Args _args)
+{
+    str MyText;
+    ;
 
-        MyText = tablePname(CustTable);
-        Global::info(strfmt("%1 is the label of the CustTable table.", MyText));
-    }
-    /**** Infolog Display.
-    Message (12:13:53 pm)
-    Customers is the label of the CustTable table.
-    ****/
+    MyText = tablePname(CustTable);
+    Global::info(strfmt("%1 is the label of the CustTable table.", MyText));
+}
+/**** Infolog Display.
+Message (12:13:53 pm)
+Customers is the label of the CustTable table.
+****/
+```
 
 ## tableStaticMethodStr
 Validates that the specified static method exists in the specified table; if it does not, a compiler error occurs.
 
 ### Syntax
 
-    str tableStaticMethodStr(int table, int method)
+```xpp
+str tableStaticMethodStr(int table, int method)
+```
 
 ### Parameters
 
@@ -1841,14 +2030,16 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    No example.
+No example.
 
 ## tableStr
 Retrieves a string that contains the name the specified table.
 
 ### Syntax
 
-    str tableStr(str table)
+```xpp
+str tableStr(str table)
+```
 
 ### Parameters
 
@@ -1868,25 +2059,29 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 The following example assigns the name of the **CustTable** table to the *MyTxt* variable.
 
-    static void tableStrExample(Args _args)
-    {
-        str MyTxt;
-        ;
+```xpp
+static void tableStrExample(Args _args)
+{
+    str MyTxt;
+    ;
 
-        MyTxt = tableStr(CustTable);
-        Global::info(strfmt("%1 is the str output of the input of CustTable.", MyTxt));
-    }
-    /**** Infolog Display. 
-    Message (01:21:49 pm)
-    CustTable is the str output of the input of CustTable.
-    ****/
+    MyTxt = tableStr(CustTable);
+    Global::info(strfmt("%1 is the str output of the input of CustTable.", MyTxt));
+}
+/**** Infolog Display. 
+Message (01:21:49 pm)
+CustTable is the str output of the input of CustTable.
+****/
+```
 
 ## tileStr
 Retrieves a string that represents the name of the specified tile.
 
 ### Syntax
 
-    str tileStr(str tile)
+```xpp
+str tileStr(str tile)
+```
 
 ### Parameters
 
@@ -1904,14 +2099,16 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    No example.
+No example.
 
 ## varStr
 Retrieves a string that contains the name of the specified variable.
 
 ### Syntax
 
-    str varStr(str var)
+```xpp
+str varStr(str var)
+```
 
 ### Parameters
 
@@ -1929,26 +2126,30 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    static void varStrExample(Args _arg)
-    {
-        str myString;
-        anytype myVariable;
-        ;
+```xpp
+static void varStrExample(Args _arg)
+{
+    str myString;
+    anytype myVariable;
+    ;
 
-        myString = varStr(myVariable);
-        Global::info(strfmt("%1 is the variable name.", myString));
-    }
-    /****Infolog Display.
-    Message (02:26:56 pm)
-    myVariable is the variable name.
-    ****/
+    myString = varStr(myVariable);
+    Global::info(strfmt("%1 is the variable name.", myString));
+}
+/****Infolog Display.
+Message (02:26:56 pm)
+myVariable is the variable name.
+****/
+```
 
 ## webActionItemStr
 Validates that the specified web action item exists in the Application Explorer; if it does not, a compiler error occurs.
 
 ### Syntax
 
-    str webActionItemStr(class webactionitem)
+```xpp
+str webActionItemStr(class webactionitem)
+```
 
 ### Parameters
 
@@ -1966,13 +2167,15 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    {
-        str s;
-        ;
-        s = webActionItemStr(EPFlushData);
-        print "webactionitem str is " + s;
-        pause;
-    }
+```xpp
+{
+    str s;
+    ;
+    s = webActionItemStr(EPFlushData);
+    print "webactionitem str is " + s;
+    pause;
+}
+```
 
 ## webDisplayContentItemStr
 Validates that the specified web display content item exists in the Application Explorer; if it does not, a compiler error occurs.
@@ -1997,21 +2200,25 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    {
-        str s;
-        ;
+```xpp
+{
+    str s;
+    ;
 
-        s = webDisplayContentItemStr(EPAdmin);
-        print "string for webcontent display item EPAdmin is " + s;
-        pause;
-    }
+    s = webDisplayContentItemStr(EPAdmin);
+    print "string for webcontent display item EPAdmin is " + s;
+    pause;
+}
+```
 
 ## webFormStr
 Validates that the specified web form exists in the Application Explorer; if it does not, a compiler error occurs.
 
 ### Syntax
 
-    str webFormStr(str name)
+```xpp
+str webFormStr(str name)
+```
 
 ### Parameters
 
@@ -2029,20 +2236,24 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    {
-        str s;
-        ;
-        s = webFormStr(EPAdmin);
-        print "String for web form EPAdmin is " + s;
-        pause;
-    }
+```xpp
+{
+    str s;
+    ;
+    s = webFormStr(EPAdmin);
+    print "String for web form EPAdmin is " + s;
+    pause;
+}
+```
 
 ## webletItemStr
 Validates that the specified weblet item exists in the Application Explorer; if it does not, a compiler error occurs.
 
 ### Syntax
 
-    str webletItemStr(class webletitem)
+```xpp
+str webletItemStr(class webletitem)
+```
 
 ### Parameters
 
@@ -2060,20 +2271,24 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    {
-        str s;
-        ;
-        s = webletItemStr(WebFormWeblet);
-        print "String for WebFormWeblet is " + s;
-        pause;
-    }
+```xpp
+{
+    str s;
+    ;
+    s = webletItemStr(WebFormWeblet);
+    print "String for WebFormWeblet is " + s;
+    pause;
+}
+```
 
 ## webMenuStr
 Validates that the specified web menu exists in the Application Explorer; if it does not, a compiler error occurs.
 
 ### Syntax
 
-    str webMenuStr(str name)
+```xpp
+str webMenuStr(str name)
+```
 
 ### Parameters
 
@@ -2091,20 +2306,24 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    {
-        str s;
-        ;
-        s = webMenuStr(ECPAdmin);
-        print "String for web menu ECPAdmin is " + s;
-        pause;
-    }
+```xpp
+{
+    str s;
+    ;
+    s = webMenuStr(ECPAdmin);
+    print "String for web menu ECPAdmin is " + s;
+    pause;
+}
+```
 
 ## webOutputContentItemStr
 Validates that the specified web output content item exists in the Application Explorer; if it does not, a compiler error occurs.
 
 ### Syntax
 
-    str webOutputContentItemStr(class weboutputcontentitem)
+```xpp
+str webOutputContentItemStr(class weboutputcontentitem)
+```
 
 ### Parameters
 
@@ -2122,20 +2341,24 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    {
-        str s;
-        ;
-        s = webOutputContentItemStr(EPPriceList);
-        print "string for weboutput content item EPPriceList is " + s;
-        pause;
-    }
+```xpp
+{
+    str s;
+    ;
+    s = webOutputContentItemStr(EPPriceList);
+    print "string for weboutput content item EPPriceList is " + s;
+    pause;
+}
+```
 
 ## webpageDefStr
 Validates that the specified Web page definition exists in the Application Explorer; if it does not, a compiler error occurs.
 
 ### Syntax
 
-    str webpageDefStr(str pagename)
+```xpp
+str webpageDefStr(str pagename)
+```
 
 ### Parameters
 
@@ -2153,14 +2376,16 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    No example.
+No example.
 
 ## webReportStr
 Validates that the specified web report exists in the Application Explorer; if it does not, a compiler error occurs.
 
 ### Syntax
 
-    str webReportStr(str name)
+```xpp
+str webReportStr(str name)
+```
 
 ### Parameters
 
@@ -2178,20 +2403,24 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    {
-        str s;
-        ;
-        s = webReportStr(EPCSSSalesConfirm);
-        print "String for web report EPCSSalesConfirm is " + s;
-        pause;
-    }
+```xpp
+{
+    str s;
+    ;
+    s = webReportStr(EPCSSSalesConfirm);
+    print "String for web report EPCSSalesConfirm is " + s;
+    pause;
+}
+```
 
 ## websiteDefStr
 Validates that the specified web-site definition exists in the Application Explorer; if it does not, a compiler error occurs.
 
 ### Syntax
 
-    str websiteDefStr(str resourcename)
+```xpp
+str websiteDefStr(str resourcename)
+```
 
 ### Parameters
 
@@ -2209,21 +2438,25 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    {
-        str s;
-        ;
+```xpp
+{
+    str s;
+    ;
 
-        s = websiteDefStr(AxSiteDef_1033_xip);
-        print "string for web site definition AxSiteDef_1033_xip is " + s;
-        pause;
-    }
+    s = websiteDefStr(AxSiteDef_1033_xip);
+    print "string for web site definition AxSiteDef_1033_xip is " + s;
+    pause;
+}
+```
 
 ## webSiteTempStr
 Validates that the specified web-site template exists in the Application Explorer; if it does not, a compiler error occurs.
 
 ### Syntax
 
-    str websiteTempStr(str resourcename)
+```xpp
+str websiteTempStr(str resourcename)
+```
 
 ### Parameters
 
@@ -2241,14 +2474,16 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    No example.
+No example.
 
 ## webStaticFileStr
 Validates that the specified web static file exists in the Application Explorer; if it does not, a compiler error occurs.
 
 ### Syntax
 
-    str webStaticFileStr(str pagename)
+```xpp
+str webStaticFileStr(str pagename)
+```
 
 ### Parameters
 
@@ -2266,21 +2501,25 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    {
-        str s;
-        ;
+```xpp
+{
+    str s;
+    ;
 
-        s = webStaticFileStr(AXEP);
-        print "string for web static file AXEP is " + s;
-        pause;
-    }
+    s = webStaticFileStr(AXEP);
+    print "string for web static file AXEP is " + s;
+    pause;
+}
+```
 
 ## webUrlItemStr
 Validates that the specified web URL item exists in the Application Explorer; if it does not, a compiler error occurs.
 
 ### Syntax
 
-    str webUrlItemStr(class weburlitem)
+```xpp
+str webUrlItemStr(class weburlitem)
+```
 
 ### Parameters
 
@@ -2298,21 +2537,25 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    {
-        str s;
-        ;
+```xpp
+{
+    str s;
+    ;
 
-        s = webUrlItemStr(EPAdmin);
-        print "string for web url item EPAdmin is " + s;
-        pause;
-    }
+    s = webUrlItemStr(EPAdmin);
+    print "string for web url item EPAdmin is " + s;
+    pause;
+}
+```
 
 ## webWebPartStr
 Validates that the specified web part exists in the Application Explorer; if it does not, a compiler error occurs.
 
 ### Syntax
 
-    str webWebpartStr(str resourcename)
+```xpp
+str webWebpartStr(str resourcename)
+```
 
 ### Parameters
 
@@ -2330,21 +2573,25 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    {
-        str s;
-        ;
+```xpp
+{
+    str s;
+    ;
 
-        s = webWebpartStr(AxWebParts_cab);
-        print "string for web part AxWebParts_cab is " + s;
-        pause;
-    }
+    s = webWebpartStr(AxWebParts_cab);
+    print "string for web part AxWebParts_cab is " + s;
+    pause;
+}
+```
 
 ## workflowApprovalStr
 Retrieves the name of a workflow approval in the Application Object Tree (Application Explorer) as a string.
 
 ### Syntax
 
-    str workflowapprovalstr(approval approval)
+```xpp
+str workflowapprovalstr(approval approval)
+```
 
 ### Parameters
 
@@ -2364,21 +2611,25 @@ Use this function instead of literal text to retrieve a string that contains the
 
 The following code example sets the variable *str s* to **MyWorkflowApproval** which is the name of the workflow approval in the Application Explorer.
 
-    static void MyWorkflowApprovalStrExample(Args _args)
-    {
-        str s;
-        ;
-        s = workflowapprovalstr(MyWorkflowApproval);
-        print s;
-        pause;
-    }
+```xpp
+static void MyWorkflowApprovalStrExample(Args _args)
+{
+    str s;
+    ;
+    s = workflowapprovalstr(MyWorkflowApproval);
+    print s;
+    pause;
+}
+```
 
 ## workflowCategoryStr
 Retrieves the name of a workflow category in the Application Object Tree (Application Explorer) as a string.
 
 ### Syntax
 
-    str workflowcategorystr(category category)
+```xpp
+str workflowcategorystr(category category)
+```
 
 ### Parameters
 
@@ -2398,21 +2649,25 @@ Use this function instead of literal text to retrieve a string that contains the
 
 The following code example sets the variable *str s* to **MyWorkflowCategory** which is the name of the workflow category in the Application Explorer.
 
-    static void MyWorkflowCategoryStrExample(Args _args)
-    {
-        str s;
-        ;
-        s = workflowcategorystr(MyWorkflowCategory);
-        print s;
-        pause;
-    }
+```xpp
+static void MyWorkflowCategoryStrExample(Args _args)
+{
+    str s;
+    ;
+    s = workflowcategorystr(MyWorkflowCategory);
+    print s;
+    pause;
+}
+```
 
 ## workflowTaskStr
 Retrieves the name of a workflow task in the Application Object Tree (Application Explorer) as a string.
 
 ### Syntax
 
-    str workflowtaskstr(task task)
+```xpp
+str workflowtaskstr(task task)
+```
 
 ### Parameters
 
@@ -2432,21 +2687,25 @@ Use this function instead of literal text to retrieve a string that contains the
 
 The following code example sets the variable *str s* to **MyWorkflowTask** which is the name of the workflow task in the Application Explorer.
 
-    static void MyWorkflowTaskStrExample(Args _args)
-    {
-        str s;
-        ;
-        s = workflowtaskstr(MyWorkflowTask);
-        print s;
-        pause;
-    }
+```xpp
+static void MyWorkflowTaskStrExample(Args _args)
+{
+    str s;
+    ;
+    s = workflowtaskstr(MyWorkflowTask);
+    print s;
+    pause;
+}
+```
 
 ## workflowTypeStr
 Validates that the specified workflow type exists in the Application Explorer; if it does not, a compiler error occurs.
 
 ### Syntax
 
-    str workflowTypeStr(str workflow)
+```xpp
+str workflowTypeStr(str workflow)
+```
 
 ### Parameters
 
@@ -2464,14 +2723,15 @@ This is a compile-time function. For more information, see [Overview](#overview)
 
 ### Example
 
-    static void workFlowTypeStrExample(Args _args)
-    {
-        str s;
-        ;
-        s = workFlowTypeStr(BudgetAccountEntryType);
-        print s;
-        pause;
-    }
-
+```xpp
+static void workFlowTypeStrExample(Args _args)
+{
+    str s;
+    ;
+    s = workFlowTypeStr(BudgetAccountEntryType);
+    print s;
+    pause;
+}
+```
 
 
