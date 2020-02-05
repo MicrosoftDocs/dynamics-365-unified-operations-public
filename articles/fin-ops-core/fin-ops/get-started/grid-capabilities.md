@@ -61,7 +61,9 @@ There are two ways to configure a column to show a total:
   2. It will save your preference for seeing a total on this column. 
   3. It will initiate a totals calculation for this column and any others you’ve previously configured to see totals. The time it takes for a total to be shown is directly related to the size of the dataset you are totalling.  
 
-- Once the footer has been shown, you can alternatively click on the **Show total** button in the footer region at the bottom of the column that you are interested in seeing a total for. If there are no configured columns, then the **Show total** button will be visible for all numeric columns. Once there is at least one column configured for totals, the **Show total** buttons will only be available on hover or focus. This action simply saves your preference for seeing a total in this column for future visits to this page, and this state is indicated by the dash that appears in this column in the footer (or a total will show immediately if the dataset is sufficiently small).
+- Once the footer has been shown, you can alternatively click on the **Show total** button in the footer region at the bottom of the column that you are interested in seeing a total for. If there are no configured columns, then the **Show total** button will be visible for all numeric columns. 
+
+  Once there is at least one column configured for totals, the **Show total** buttons will only be available on hover or focus. This action simply saves your preference for seeing a total in this column for future visits to this page, and this state is indicated by the dash that appears in this column in the footer (or a total will show immediately if the dataset is sufficiently small).
 
 If you make a mistake and no longer want to see a total in a particular column, right-click on the column and select **Hide total** or select the **Hide total** button in the footer in that column. This preference will also be saved for future visits to the page. 
 
