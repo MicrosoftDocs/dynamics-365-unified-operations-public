@@ -53,7 +53,8 @@ You can only split loads that meet all of the following criteria:
 - There are no LoadLineWorkLineDetails (these are created as a result of LP consolidation on the staging location, which isn't supported by confirm and transfer).
 - No inventory is currently at a packing location awaiting packing (inventory picked to the pack station, but not yet packed, isn't supported by confirm and transfer).
 
-<!-- KFM: What kind of thing is "LoadLineWorkLineDetails"--can we make a real word or phrase out of this? Also, what is a "LP"? -->  
+<!-- KFM: What kind of thing is "LoadLineWorkLineDetails"--can we make a real word or phrase out of this? Also, what is a "LP"? -->
+<!-- Mirza: It should say Load Line data,  LP is License plate -->  
 
 > [!NOTE]
 > This functionality is different from the transport-load feature, which should be used in warehouses that are never able to plan and create loads prior to picking, but instead load the available transportation space after picking is completed.
@@ -68,6 +69,7 @@ Before you begin trying to set up or use this feature, you must make sure it's a
 - **Feature name**: Confirm and transfer
 
 <!-- KFM: Add this?: "If you don't see the feature listed here, then it may have become a standard part of the product since this documentation was written, in which case you can proceed with the remaining sections of this topic and all of the described features should be available to you." -->
+<!-- Mirza: agree -->  
 
 ## Set up confirm and transfer
 
@@ -89,6 +91,7 @@ KFM: I'm not sure what to do with the following text. I think maybe it belongs i
 
     In this demo, I will show the _Split quantity to new load_. No additional setup is needed for the other option, as it is a user decision at execution.
  -->
+ <!-- Mirza: yes this could be kept at the start after info that user is informed about feature management  -->  
 
 ### Prepare your work templates
 
