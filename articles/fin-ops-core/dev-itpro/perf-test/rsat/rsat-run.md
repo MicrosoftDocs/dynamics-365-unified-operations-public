@@ -53,15 +53,17 @@ When you select **New**, test automation files are generated in your working dir
 
 ![List of test cases that were loaded](media/rsat-test-cases.png)
  
-You can also generate binary and XML files only without overwriting your parameter files. Use submenu **New > Generate Execution Files** to only regenerate execution files and leave Excel files unaffected. This is typical when you install a new version of the tool, you can update your execution files while preserving the test parameter files.
+You can also generate **test execution files** only without overwriting your parameter files. Use submenu **New > Generate Execution Files** to only regenerate execution files and leave Excel files unaffected. 
+
+This is required when you install a new version of the tool or modify a recording file, you can update your execution files while preserving the test parameter files.
 
 ![Generate Test Execution files only menu item](media/generate-execution-files.png)
 
 ## Modify test parameters
 
-This section describes how to modify Excel files to specify input and validation parameters for your test run. Select one or more test cases you want to modify and select **Edit**. This will open an Excel window for each selected test case. Alternatively, you can open the Excel files directly from the working directory. 
+This section describes how to modify Excel files to specify input and validation parameters for your test run. Select one or more test cases you want to modify and select click on the Microsoft Excel icon in the toolbar. This will open an Excel window for each selected test case. Alternatively, you can open the Excel files directly from the working directory. 
 
-In addition to the **General** tab, the Excel file contains a data tab for every form that the test case visits.
+In addition to the **General** tab, the Excel parameter file contains a data tab for every form that the test case visits.
 
 Select the desired form (Excel tab) that you want to edit and identify the parameter values that you want to change. Values are identified by their control name. If you are not sure which control is correct, open the form in the application, right-click the control whose value you want to change, and select **form information**.
 
