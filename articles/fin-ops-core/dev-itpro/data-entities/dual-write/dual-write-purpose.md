@@ -44,7 +44,7 @@ Dual-write provides a tightly coupled, bi-directional integration between Dynami
 
 ![Data relationship between apps](../media/dual-write-overview-picture1.png)
 
-![Aspects of dual-write](../media/dual-write-aspects-3.PNG)
+![Aspects of dual-write](../media/dual-write-aspects.PNG)
 
 Dual-write infrastructure is extensible and reliable with the following key features: 
 
