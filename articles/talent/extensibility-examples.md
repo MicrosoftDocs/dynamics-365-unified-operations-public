@@ -2,10 +2,10 @@
 # required metadata
 
 title: Extend Talent with Power Apps and Power Automate
-description: This topic describes some examples of extensibility scenarios for Microsoft Dynamics 365 HumanResources and Attract that use Microsoft Power Apps and Microsoft Power Automate.
+description: This article describes some examples of extensibility scenarios for Microsoft Dynamics 365 Talent - Attract that use Microsoft Power Apps and Microsoft Power Automate.
 author: negudava
 manager: Annbe
-ms.date: 05/01/2019
+ms.date: 02/05/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -24,14 +24,14 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: negudava
-ms.search.validFrom: 2019-03-04
+ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Talent October 2018 update
 
 ---
 
 # Extend Talent with Power Apps and Power Automate
 
-This topic describes some examples of extensibility scenarios for Microsoft Dynamics 365 Talent that use Microsoft Power Apps and Microsoft Power Automate. You can import the solution package that is associated with each example into your Power Apps environment. You can then use the packages either as guidance or as starting points to implement scenarios that are applicable to your organization.
+This topic describes some examples of extensibility scenarios for Microsoft Dynamics 365 Talent: Attract that use Microsoft Power Apps and Microsoft Power Automate. You can import the solution package that is associated with each example into your Power Apps environment. You can then use the packages either as guidance or as starting points to implement scenarios that are applicable to your organization.
 
 > [!IMPORTANT]
 > If you want to use the templates and app that are described in this topic "as is," be sure to test them to make sure that they cover all the scenarios that are specific to your implementation.
@@ -59,25 +59,6 @@ When a candidate submits a form, Microsoft Power Automate captures the form subm
 
 To download the **Power Automate – Form Connect** template and Custom Entity Structure, go to [Power Automate – Form Connect](https://go.microsoft.com/fwlink/?linkid=2081988) on the Microsoft Download Center.
 
-
-## Integration with Office 365, PowerAutomate
-
-The **Integration with Office 365** app can be used to extract team information for signed-in users from Microsoft Office 365. It references workers in Talent to extract employee identification types. Managers can check  expiration dates of employee identification types and can send an outlook reminder if the employee identification type is expiring. PowerAutomate is integrated with PowerApp to  send this reminder. Confirmation will be sent back to PowerApp from PowerAutomate when the reminder is sent.  Identification types include driver's license, passport, and other acceptable forms of ID.
-
-You can extend this app for other scenarios. For example, you can use it to show team vacation information, calendar events, and any team-specific events.
-
-To download the **Integration with Office 365, PowerAutomate** app , go to [Integration with Office 365](https://go.microsoft.com/fwlink/?linkid=2081787) on the Microsoft Download Center.
-
-## Power Automate – SQL Connect and execute
-
-The **Power Automate – SQL Connect and execute** template connects to Microsoft SQL Server and enables SQL queries to be run.
-
-Although this template is designed to read and update SQL tables, it can be extended so that it can be used for other scenarios. For example, it can be used to fill a staging table in Common Data Service with records from SQL Server, and to periodically synchronize the staging table by using an incremental push from SQL Server.
-
-Advanced Query is integrated with Flow to enable Data transformation and incremental push.
-
-To download the **Power Automate – SQL Connect and execute** template, go to [Power Automate – SQL Connect and execute](https://go.microsoft.com/fwlink/?linkid=2081789) on the Microsoft Download Center.
-
 ## Power Automate – SharePoint Integration
 
 The **Power Automate – SharePoint Integration** template can be used to read data from a Microsoft SharePoint list, compare the list with field values for any Common Data Service entity, and send the results of the comparison as a notification email. 
@@ -89,14 +70,14 @@ This template can be extended so that it can be used for any scenario that invol
 To download the **Power Automate – SharePoint Integration** template, go to [Power Automate – SharePoint Integration](https://go.microsoft.com/fwlink/?linkid=2082109) on the Microsoft Download Center.
 
 ## Referral App
+
 You can use the Referral App to add candidates to a shared talent pool. The referrer can enter **Firstname**, **Lastname**, **Email**, and **Linkedln URL** when submitting a candidate. The candidate source metadata is then populated with the referrer’s information.
 
-You can embed this app in Employee self-service (ESS) for submitting referrals, or you can be use it as a hyperlink in the Corporate Portal and run as a stand-alone app.
+You can embed this app in Employee self-service for submitting referrals, or you can be use it as a hyperlink in the Corporate Portal and run as a stand-alone app.
 
 To download **Referral App**, go to [Dynamics 365 Talent extensibility solution: Referral App](https://www.microsoft.com/download/details.aspx?id=58497) on the Microsoft Download Center. You can import this app and customize it to add additional functionality.
 
 ## Additional resources
 
-[The Microsoft Power Platform](https://docs.microsoft.com/power-platform/admin/admin-documentation)
-
+[The Microsoft Power Platform](https://docs.microsoft.com/power-platform/admin/admin-documentation)</br>
 [Migrate app between tenants and environments](https://docs.microsoft.com/power-platform/admin/environment-and-tenant-migration)
