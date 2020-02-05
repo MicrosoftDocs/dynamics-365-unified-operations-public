@@ -43,7 +43,7 @@ Scenario 3: [Consolidate shipments using Release to warehouse from Load planning
 
 Scenario 4: [Consolidate shipments using Shipment consolidation workbench form](../warehousing/consolidate-shipments-manual-workbench.md)
 
-Scenario 5: [Consolidate shipments manually in “Consolidate shipments” form](../warehousing/consolidate-shipments-manual-form.md)
+Scenario 5: [Consolidate shipments manually in Consolidate shipments form](../warehousing/consolidate-shipments-manual-form.md)
 
 ## Related articles and demo scripts
 
