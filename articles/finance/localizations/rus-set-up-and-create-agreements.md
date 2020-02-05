@@ -199,13 +199,13 @@ agreement](https://docs.microsoft.com/dynamics365/supply-chain/procurement/tasks
         field, select the purchase agreement classification that the agreement
         belongs to.
 
->   On the **General** FastTab, in the **Document** section, the **Purchase
->   agreement** field is set based on the number sequence that is specified for
->   the agreement classification.
+    On the **General** FastTab, in the **Document** section, the **Purchase
+    agreement** field is set based on the number sequence that is specified for
+    the agreement classification.
 
 4.  Select **OK**.
 
-![](media/9_Create_purchase_agreement.png)
+    ![](media/9_Create_purchase_agreement.png)
 
 5.  On the **Purchase agreements** page, specify the details as described in the
     [Create a sales agreement](#create-a-sales-agreement) section earlier in
