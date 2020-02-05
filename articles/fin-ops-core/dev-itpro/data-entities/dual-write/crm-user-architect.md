@@ -40,7 +40,7 @@ Dual-write automates the data flow between Finance and Operations apps and Commo
 
 At the start, most of these changes are coming from dual-write solutions. The plan is to merge these solutions to the Common Data Service platform soon. We recommend the users to understand dual-write and embrace it from start to avoid future surprises. Some of the crucial revisions are: 
 + Common Data Service has new concepts like company and party. These concepts will impact all applications built on Common Data Service, including Sales, Marketing, Customer Service, and Field Service. 
-+ 'Activities' and 'Notes' are unified and expanded to support both C1s (users of the system) and C2s (customers of the system). 
++ Activities and notes are unified and expanded to support both C1s (users of the system) and C2s (customers of the system). 
 + Common Data Service platform is getting revised, which includes the following:
     - Decimal data type will replace money.
     - New **Date Effectivity** framework will accommodate past, present, and future data at the same place.
