@@ -101,7 +101,7 @@ agreements](https://docs.microsoft.com/dynamics365/supply-chain/sales-marketing/
     -   In the **Subject of an agreement** section, in the **Subject of an
         agreement** field, enter a comment or notes about the agreement.
 
-![](media/5_Sales_agreements.png)
+    ![](media/5_Sales_agreements.png)
 
 7.  On the **Financial** FastTab, follow these steps:
 
@@ -135,18 +135,18 @@ agreements](https://docs.microsoft.com/dynamics365/supply-chain/sales-marketing/
 >   control is done by a contractor. Invoices that have an open balance and
 >   don't indicate an agreement are included.
 
-    -   In the **Posting profile** section, specify the following details:
+   -   In the **Posting profile** section, specify the following details:
 
-    -   In the **Posting profile** field, if you specify an agreement for
-        transactions, you can select the counterparty posting profile that should be
-        used when transactions are posted.
+   -   In the **Posting profile** field, if you specify an agreement for
+       transactions, you can select the counterparty posting profile that should be
+       used when transactions are posted.
 
-    -   In the **Posting profile with prepayment journal voucher** field, you can
-        select a separate posting profile that should be used when a prepayment is
-        registered for the agreement. If you don't set this field, a default value
-        is taken from the **Accounts receivable parameters** page.
+   -   In the **Posting profile with prepayment journal voucher** field, you can
+       select a separate posting profile that should be used when a prepayment is
+       registered for the agreement. If you don't set this field, a default value
+       is taken from the **Accounts receivable parameters** page.
 
-![](media/6_Sales_agreements.png)
+   ![](media/6_Sales_agreements.png)
 
 8.  On the **Terms** FastTab, in the **Payment** section, set the fields for
     payment terms. In the **Payment day** field, select a calendar of payment
