@@ -137,14 +137,14 @@ agreements](https://docs.microsoft.com/dynamics365/supply-chain/sales-marketing/
 
    -   In the **Posting profile** section, specify the following details:
 
-   -   In the **Posting profile** field, if you specify an agreement for
-       transactions, you can select the counterparty posting profile that should be
-       used when transactions are posted.
+        -   In the **Posting profile** field, if you specify an agreement for
+            transactions, you can select the counterparty posting profile that should be
+            used when transactions are posted.
 
-   -   In the **Posting profile with prepayment journal voucher** field, you can
-       select a separate posting profile that should be used when a prepayment is
-       registered for the agreement. If you don't set this field, a default value
-       is taken from the **Accounts receivable parameters** page.
+        -   In the **Posting profile with prepayment journal voucher** field, you can
+            select a separate posting profile that should be used when a prepayment is
+            registered for the agreement. If you don't set this field, a default value
+            is taken from the **Accounts receivable parameters** page.
 
    ![](media/6_Sales_agreements.png)
 
@@ -155,13 +155,13 @@ agreements](https://docs.microsoft.com/dynamics365/supply-chain/sales-marketing/
 9.  On the **Contact information** FastTab, specify contact information for the
     agreement.
 
-![](media/7_Sales_agreements.png)
+    ![](media/7_Sales_agreements.png)
 
-10.  On the **Financial dimensions** FastTab, specify financial dimensions. When
+10. On the **Financial dimensions** FastTab, specify financial dimensions. When
     you specify an agreement in a document, the financial dimensions of the
     agreement are entered into the document dimension.
 
-11.  Select **Save**.
+11. Select **Save**.
 
 ### Set up a commission
 
