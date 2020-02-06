@@ -5,7 +5,7 @@ title: Preview features in Platform update 33 for Finance and Operations apps (A
 description: This topic lists the features that are in preview in Platform update 33 for Finance and Operations apps. 
 author: sericks007
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 02/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -63,7 +63,7 @@ To learn more about the feature, see [Grid capabilities](../../fin-ops/get-start
 To read a description of this feature, see [Embed third-party apps - Phase 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/embed-third-party-apps--phase-2) in the release plan.
 
 ### Recommended fields
-To read a description of this feature, see [Recommended fields](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/recommended-fields) in the release plan.
+To read a description of this feature, see [Recommended fields](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/recommended-fields) in the release plan.
 
 ### New task recorder capabilities: Resizable task recorder pane 
 To read a description of this feature, see [New task recorder capabilities for RSAT](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/new-task-recorder-capabilities-rsat) in the release plan.
