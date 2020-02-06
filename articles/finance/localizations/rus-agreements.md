@@ -1,65 +1,65 @@
-Agreements
-==========
+---
+# required metadata
+title: Agreements
+description: This topic provides information about sales and purchase agreements for Russian localization.
+author: v-nadyuz
+manager: AnnBe
+ms.date: 02/06/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
 
-In standard Microsoft Dynamics 365 Finance functionality, there are sales
-agreements and purchase agreements. For more information about these agreement
-types, see [Sales agreements
-overview](https://docs.microsoft.com/dynamics365/supply-chain/sales-marketing/sales-agreements),
-[Enter sales
-agreements](https://docs.microsoft.com/dynamics365/supply-chain/sales-marketing/tasks/enter-sales-agreements),
-[Fulfill sales
-agreements](https://docs.microsoft.com/dynamics365/supply-chain/sales-marketing/tasks/fulfill-sales-agreements),
-[Purchase
-agreements](https://docs.microsoft.com/dynamics365/supply-chain/procurement/purchase-agreements),
-[Create a purchase
-agreement](https://docs.microsoft.com/dynamics365/supply-chain/procurement/tasks/create-purchase-agreement),
-and [Create a purchase release order from a purchase
-agreement](https://docs.microsoft.com/dynamics365/supply-chain/procurement/tasks/create-purchase-release-order-purchase-agreement).
+# optional metadata
 
-In the Russian localization, the following extensions are included in the
-settings:
+# ms.search.form:  
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kfend
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: Russia
+# ms.search.industry: 
+ms.author: shylaw
+ms.search.validFrom: 2018-10-28
+ms.dyn365.ops.version: 8.1
 
--   Agreements are numbered within the agreement classification.
+---
 
--   In the **Associated classification** field, you can select a purchase
-    agreement classification that is related to the current sales agreement
-    classification and a sales agreement classification that is related to the
-    current purchase agreement classification.
+# Agreements
+[!include [banner](../includes/banner.md)]
 
--   You can specify a date and subject for the agreement.
+In standard Microsoft Dynamics 365 Finance functionality, there are sales agreements and purchase agreements. For more information about these agreement types, see:
 
--   You can set financial information, such as the agreement amount, credit
-    limit, and posting profile parameters.
+- [Sales agreements overview](../../supply-chain/sales-marketing/sales-agreements.md)
+- [Enter sales agreements](../../supply-chain/sales-marketing/tasks/enter-sales-agreements.md)
+- [Fulfill sales agreements](../../supply-chain/sales-marketing/tasks/fulfill-sales-agreements.md)
+- [Purchase agreements](../../supply-chain/procurement/purchase-agreements.md)
+- [Create a purchase agreement](../../supply-chain/procurement/tasks/create-purchase-agreement.md)
+- [Create a purchase release order from a purchase agreement](../../supply-chain/procurement/tasks/create-purchase-release-order-purchase-agreement.md)
 
--   You can specify contact information for the agreement.
+In the Russian localization, the following extensions are included in the settings:
 
--   You can set a commission for sales agreements.
+- Agreements are numbered within the agreement classification.
+- In the **Associated classification** field, you can select a purchase agreement classification that is related to the current sales agreement classification and a sales agreement classification that is related to the current purchase agreement classification.
+- You can specify a date and subject for the agreement.
+- You can set financial information, such as the agreement amount, credit limit, and posting profile parameters.
+- You can specify contact information for the agreement.
+- You can set a commission for sales agreements.
 
-When you create an agreement, you can set up payment parameters in the usual
-way.
+When you create an agreement, you can set up payment parameters in the usual way.
 
-In the Russian localization, you can create a calendar of payment days. You can
-then specify this calendar in the **Payment day** field. You can also complete
-the following operations, inquiries, and reports, and include an indication of
-the agreement:
+In the Russian localization, you can create a calendar of payment days. You can then specify this calendar in the **Payment day** field. You can also complete the following operations, inquiries, and reports, and include an indication of the agreement:
 
--   Register a payment from the customer or a payment to the vendor.
-
--   Register accounts receivable or accounts payable on the **Free text
-    invoice** and **General journals** pages.
-
--   Settle factures on a counterparty in the context of agreements.
-
--   View balances and amounts for the agreement.
-
--   Create an Act of adjustment for the counterparty.
+- Register a payment from the customer or a payment to the vendor.
+- Register accounts receivable or accounts payable on the **Free text invoice** and **General journals** pages.
+- Settle factures on a counterparty in the context of agreements.
+- View balances and amounts for the agreement.
+- Create an Act of adjustment for the counterparty.
 
 Find more details in the following topics:
 
--   [Set up and create agreements](rus-set-up-and-create-agreements.md)
-
--   [Register transactions with reference to
-    agreements](rus-register-transactions-with-reference-to-agreements.md)
-
--   [Inquiries and reports with
-    agreements](rus-inquiries_and_reports_with_agreements.md)
+- [Set up and create agreements](rus-set-up-and-create-agreements.md)
+- [Register transactions with reference to agreements](rus-register-transactions-with-reference-to-agreements.md)
+- [Inquiries and reports with agreements](rus-inquiries_and_reports_with_agreements.md)
