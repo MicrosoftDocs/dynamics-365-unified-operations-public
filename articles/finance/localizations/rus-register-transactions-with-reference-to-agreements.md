@@ -133,4 +133,4 @@ Find more details in the following topics:
 
 - [Agreements](rus-agreements.md)
 - [Set up and create agreements](rus-set-up-and-create-agreements.md)
-- [Inquiries and reports with agreements](rus-inquiries_and_reports_with_agreements.md)
+- [Inquiries and reports with agreements](rus-inquiries-reports-agreements.md)
