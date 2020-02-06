@@ -118,7 +118,8 @@ In each monthly update we will be adding additional extension points, so check t
 | SelectZipCodeInfoClientRequestHandler               | Executed when you key in zip code in address add/edit view in POS. |
 | CreateStartingAmountTransactionClientRequestHandler | Executed when you do a start amount declaration in POS. |
 | LoyaltyCardPointsBalanceOperationRequestHandler     | Executed when you do a loyalty card balance operation in POS. |
-| GetReportParametersClientRequestHandler     	      | Executed when you do a report parameter. If your POS report need input parameter this dialog will get executed to capture the parameters. |	
+| GetReportParametersClientRequestHandler     	      | Executed when you do a report parameter. If your POS report need input parameter this dialog will get executed to capture the parameters. |
+| GetPickingAndReceivingOrdersClientRequestHandler     	      | Executed when orders fetched for picking and receiving processing. |
 
 
 **Tender counting request handler**
