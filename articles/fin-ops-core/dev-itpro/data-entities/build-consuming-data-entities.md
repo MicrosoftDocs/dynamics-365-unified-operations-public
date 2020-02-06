@@ -43,6 +43,7 @@ Throughout this tutorial, baseUrl refers to the base URL of the instance.
 
 - In the cloud environment, the base URL is obtained from Microsoft Dynamics Lifecycle Services (LCS).
 - On a [local virtual machine (VM)](../dev-tools/access-instances.md#vm-that-is-running-on-premises), the base URL is `https://usnconeboxax1aos.cloud.onebox.dynamics.com`.
+- Download FMLab sample code to C:. For details, see [FMLab sample code](https://github.com/Microsoft/FMLab).
 
 ## Key concepts
 - Developing a data entity in Microsoft Visual Studio
@@ -299,7 +300,7 @@ You've now created a navigation property between **FMRentalEntity** and **FMCust
 In this section, you will use some of the standard OData syntax to navigate and query the OData entities that are exposed in the Fleet Management model. First, follow these steps to enable Internet Explorer to view JSON formatted data.
 
 1. Close all Internet Explorer windows.
-2. Go to C:\\FMLab, and select and double-click the json.ie.reg file.
+2. Go to C:\\FMLab, and select and double-click the json-ie.reg file.
 3. In the **Registry Editor** dialog box, click **Yes**.
 4. Click **OK**.
 
