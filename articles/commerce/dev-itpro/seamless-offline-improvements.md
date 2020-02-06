@@ -42,7 +42,7 @@ Internal gift cards carry a dependency on the real-time service because the bala
 
 To prevent a gift card from getting into an unusable state in scenarios where the gift card is added to a transaction and the POS then loses connectivity, Commerce has a configurable parameter which allows the transaction with a gift card line to be concluded while offline. When this parameter is enabled, gift card transactions that are forced offline will be saved with offline transactions and synchronize to Commerce Headquarters when the offline transactions are synchronized. The synchronization will also unlock the gift card so it may be used at another terminal. 
 
-![Offline gift card setting](media/gift.png)
+![Offline gift card setting](../media/gift.png)
 
 Commerce parameters are typically cached, so once this parameter is updated and the distribution schedule is initiated to synchronize it to the channel, the change make take up to 24 hours to take effect. Resetting Internet Information Services (IIS) can make the changes effective immediately. 
 
@@ -50,7 +50,7 @@ Commerce parameters are typically cached, so once this parameter is updated and 
 
 Like internal gift cards, credit memos also are centrally managed in Commerce Headquarters. Commerce has a parameter that supports concluding credit memo transactions while offline. This parameter functions the same as the gift card parameter mentioned above. If the parameter is enabled and a credit memo is forced offline, it will synchronize back to the channel database along with other transactions that were performed while offline. 
 
-![Offline credit memo setting](media/creditmemo.png)
+![Offline credit memo setting](../media/creditmemo.png)
 
 Commerce parameters are typically cached, so once this parameter is updated and the distribution schedule is initiated to synchronize it to the channel, the change make take up to 24 hours to take effect. Resetting IIS can make the changes effective immediately. 
 
