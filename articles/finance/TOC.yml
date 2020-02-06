@@ -2419,6 +2419,8 @@
             href: localizations/rus-custom-declaration-number.md
           - name: Inventory cost structure
             href: localizations/rus-inventory-cost-structure.md
+          - name: Inventory adjustment wizard
+            href: localizations/rus-inventory-adjustment-wizard.md
         - name: Reporting
           items:
           - name: Financial reporting
