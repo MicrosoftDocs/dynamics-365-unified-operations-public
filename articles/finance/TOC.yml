@@ -2401,6 +2401,16 @@
             href: localizations/rus-miscellaneous-charges.md
           - name: Third party miscellaneous charges
             href: localizations/rus-third-party-misc-charges.md
+          - name: Agreements
+            items:
+            - name: Agreements overview
+              href: localizations/rus-agreements.md
+            - name: Set up and create agreements
+              href: localizations/rus-set-up-and-create-agreements.md
+            - name: Register transactions with reference to agreements
+              href: localizations/rus-register-transactions-with-reference-to-agreements.md
+            - name: Inquiries and reports with agreements
+              href: localizations/rus-inquiries-reports-agreements.md
         - name: Inventory
           items:
           - name: Goods in transit from vendor
@@ -2409,6 +2419,8 @@
             href: localizations/rus-custom-declaration-number.md
           - name: Inventory cost structure
             href: localizations/rus-inventory-cost-structure.md
+          - name: Inventory adjustment wizard
+            href: localizations/rus-inventory-adjustment-wizard.md
         - name: Reporting
           items:
           - name: Financial reporting
