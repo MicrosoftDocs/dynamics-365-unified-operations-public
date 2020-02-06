@@ -113,9 +113,11 @@ It was originally communicated that the package would be found on the **All Bina
 
 ### Deployment of my environment fails with error on duplicate objects
 By default, in Visual Studio when an object is extended, it is created with a name of Object.*Extension1*. This name could clash if Microsoft introduces new extensions of the same object. If this occurs, your deployment will fail with an error similar to the following:
-```
+
+```Console
 Exception calling "CreateRuntimeProvider" with "1" argument(s): "Runtime metadata is invalid because the same metadata artifact has been defined in multiple assemblies. \nFirst 10 conflicting names: SystemAdministration.Extension1. \nSee metadata events for complete list."
 ```
+
 To prevent this from occurring, ensure that you compile your extensions on an 10.0.X developer machine. To resolve this issue, rename any of your extension objects with a vanity extension naming convention, such as SystemAdministration.*Customer*.
 
 ### Deployment on my environment fails with error on DVTs or ETWs
