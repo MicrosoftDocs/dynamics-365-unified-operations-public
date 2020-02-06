@@ -2410,7 +2410,7 @@
             - name: Register transactions with reference to agreements
               href: localizations/rus-register-transactions-with-reference-to-agreements.md
             - name: Inquiries and reports with agreements
-              href: localizations/rus-inquiries-and-report-with-agreements.md
+              href: localizations/rus-inquiries-and-reports-with-agreements.md
         - name: Inventory
           items:
           - name: Goods in transit from vendor
