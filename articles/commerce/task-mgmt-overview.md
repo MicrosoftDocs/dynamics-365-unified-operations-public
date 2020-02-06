@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Task management for managers and workers
-description: This topic provides an overview of task management in Microsoft Dynamics 365 Commerce.
+title: Task management overview
+description: This topic provides an overview of task management for managers and workers in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 manager: annbe
 ms.date: 02/10/2020
@@ -23,24 +23,25 @@ ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: 
 ms.author: gmohanv
-ms.search.validFrom: 2020-04-03
+ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
 ---
 
-# Task management for managers and workers
+# Task management overview
 
 [!include [banner](includes/banner.md)]
 
-This topic provides an overview of task management in Microsoft Dynamics 365 Commerce.
+This topic provides an overview of task management for managers and workers in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-Ensuring that tasks are performed by right person at right time is always difficult. Retailers want to empower their Firstline workers in notifying on upcoming tasks, provide business context along with a task so that Firstline workers complete the tasks at right time. Dynamics 365 Commerce's Task Management is a productivity feature, for Firstline manager (Regional/Store) and Firstline workers, that gives an ability to create tasks lists , manage assignment criteria, and track status, in an integrated way between Backoffice and POS applications. 
+Ensuring that tasks are performed by the right person at the right time in a retail environment is always difficult. Retailers want the ability to notify workers of upcoming tasks along with the related business context so that workers can complete the tasks correctly and on time.  
 
-At a high level, Task management feature covers the following scenarios:
+Task management in Dynamics 365 Commerce is a productivity feature that enables managers and workers to create tasks lists, manage assignment criteria, and track status and to integrate these tasks between back office and point of sale (POS) applications. 
 
-- Ability for HQ persona to create tasks lists for the retail stores and track status by store or by worker, and also create tasks recurrently e.g. Thursday night closing checklist. 
-- Ability for store managers to assign tasks to individual Firstline workers in the store, notify on upcoming or past due tasks, update the status, and create ad-hoc tasks within the POS application. Firstline workers see notifications, view task details, and update the task status in POS.
+Commerce task management enables headquarters persona to create tasks lists for retail stores and track status by store or by worker, and also create recurrent tasks (for example, "Thursday night closing checklist"). 
+
+The task management feature also empowers store managers to assign tasks to individual workers, send notifications on upcoming or past due tasks, update task status, and create ad-hoc tasks within the POS application. Workers will see notifications, view task details, and update task status at POS.
 
 The following diagram shows the conceptual architecture of task management in Dynamics 365 Commerce.
   
