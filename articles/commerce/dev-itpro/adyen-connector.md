@@ -172,7 +172,7 @@ The Dynamics 365 Payment Connector for Adyen takes advantage of the device-agnos
 | Dineromail | Standard | ✔ | ✔ | ✔ |
 | JCB | Standard | ✔ | ✔ | ✔ |
 | Union Pay* | Standard | ✔ | Not applicable | Not applicable |
-| Interac Debit | Standard | Support will be added in a future release. | Support will be added in a future release. | Support will be added in a future release. |
+| Interac Debit | Standard | ✔ | Support will be added in a future release. | Support will be added in a future release. |
 
 *Adyen does not support recurring tokens for Union Pay, so it cannot be used for card not present purchases.
 
@@ -298,7 +298,7 @@ To process payments across point of sale (POS) terminals, a call center, or e-Co
     | Service account ID | Auto populated unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes (such as invoicing) should use. | Yes | Yes | *Guid* |
     | Version | Enter the version of the Dynamics 365 Payment Connector for Adyen to use. Currently, only version V001 is supported. | Yes | Yes | V001 |
     | Gateway environment | Enter the Adyen gateway environment to map to. The possible values are **Test** and **Live**. You should set this field to **Live** only for production devices and transactions. | Yes | Yes | Live |
-    | Optional Domain | Enter the domain to use when payment requests are made to Adyen. | No | No | https://terminal-api-live.adyen.com/sync |
+    | Optional Domain | The optional domain is required for Live environments and should be obtained by contacting Adyen. | Live only | No | Contact Adyen |
     | Merchant account ID | Enter the unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | MerchantIdenfier |
     | Terminal architecture | This field must be set to **Cloud** for the `Payment service account`. | Yes | Yes | Cloud |
     | Local Password phrase | This field is used only for the POS payment terminal integration and should be left blank. | No | Yes | *Leave this field blank.* |
