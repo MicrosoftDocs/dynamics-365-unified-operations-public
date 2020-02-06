@@ -82,7 +82,7 @@ You might receive the error message for one of the following reasons:
 
 - The certificate wasn't installed on the Application Object Server (AOS) machine. To verify that the certificate can be found on the AOS machine, run the following Microsoft Windows PowerShell script.
 
-    ```
+    ```Console
     cd Cert:\LocalMachine\My
     Get-ChildItem | Where-Object { $_.Subject -like "CN=<name of your certificate>" }
     ```
@@ -219,7 +219,7 @@ Microsoft.CE.VaultSDK.SecretProviderException: InteractiveClientId was not speci
 
 This issue occurs when the **SelfSigningCertificateThumbprint** field is left blank in the CloudEnvironment.Config file. In the CloudEnvironment.Config file, find the following line, and paste in the thumbprint of the certificate that you created and installed.
 
-```
+```xml
 \<ExecutionConfigurations Key="SelfSigningCertificateThumbprint" Value="" />
 ```
 
@@ -233,7 +233,7 @@ This issue occurs when the **SelfSigningCertificateThumbprint** field is left bl
 
 Run the following Windows PowerShell script on the development machine.
 
-```
+```powershell
 Set-ItemProperty HKLM:\SOFTWARE\Microsoft\.NETFramework\v4.0.30319 -Name SchUseStrongCrypto -Value 1 -Type dword -Force -Confirm:$false
 if ((Test-Path HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319)) 
 {
