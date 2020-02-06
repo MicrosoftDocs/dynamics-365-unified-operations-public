@@ -62,4 +62,4 @@ Find more details in the following topics:
 
 - [Set up and create agreements](rus-set-up-and-create-agreements.md)
 - [Register transactions with reference to agreements](rus-register-transactions-with-reference-to-agreements.md)
-- [Inquiries and reports with agreements](rus-inquiries_and_reports_with_agreements.md)
+- [Inquiries and reports with agreements](rus-inquiries-reports-agreements.md)
