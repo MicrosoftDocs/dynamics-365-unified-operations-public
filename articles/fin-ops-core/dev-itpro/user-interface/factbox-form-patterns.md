@@ -142,10 +142,10 @@ This section will have answers to frequently asked questions that are related to
         class More
         {
         public void clicked()
-                {    
-                    super();  
-                    FormPartUtil::openShowMoreForm(element, <TableName>);     
-                }
+            {    
+                super();  
+                FormPartUtil::openShowMoreForm(element, <TableName>);     
+            }
         }
         ```
 
