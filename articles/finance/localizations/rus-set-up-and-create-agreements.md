@@ -54,7 +54,7 @@ You can view all purchase agreements on the **Purchase agreements** list page an
 
 ## <a name="create-sales-agreement"></a>Create a sales agreement
 
-For more information about how to create sales agreements, see [Enter sales agreements](https://docs.microsoft.com/dynamics365/supply-chain/sales-marketing/tasks/enter-sales-agreements).
+For more information about how to create sales agreements, see [Enter sales agreements](../../supply-chain/sales-marketing/tasks/enter-sales-agreements.md).
 
 1. Go to **Accounts receivable** \> **Orders** \> **Sales agreements** or **Sales and marketing** \> **Sales agreements** \> **Sales agreements**.
 2. On the Action Pane, select **New** to create a sales agreement.
@@ -128,7 +128,7 @@ For more information about how to create sales agreements, see [Enter sales agre
 
 1. On the **Sales agreements** page, select the agreement that you want to set up a commission for.
 2.  On the **Sales agreement** tab, in the **Setup** section, select **Commission calculation**.
-3.  On the **Commission calculation** page, set up a commission for the selected agreement. For more information about how to set up commissions, see [Register sales commissions](https://docs.microsoft.com/dynamics365/supply-chain/sales-marketing/tasks/register-sales-commissions).
+3.  On the **Commission calculation** page, set up a commission for the selected agreement. For more information about how to set up commissions, see [Register sales commissions](../../supply-chain/sales-marketing/tasks/register-sales-commissions.md).
 
 ![Commission calculation page](media/8_Commission_calculation.png)
 
@@ -163,4 +163,4 @@ Find more details in the following topics:
 
 - [Agreements](rus-agreements.md)
 - [Register transactions with reference to agreements](rus-register-transactions-with-reference-to-agreements.md)
-- [Inquiries and reports with agreements](rus-inquiries_and_reports_with_agreements.md)
+- [Inquiries and reports with agreements](rus-inquiries-reports-agreements.md)
