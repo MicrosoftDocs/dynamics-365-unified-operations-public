@@ -5,7 +5,7 @@ title: Personalize the user experience
 description: This topic explains how you can personalize the app.
 author: jasongre
 manager: AnnBe
-ms.date: 01/07/2020
+ms.date: 02/05/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -65,7 +65,7 @@ As you use the app, many of your selections are stored to make the system easier
 Implicit personalizations are personalizations that you make just by interacting with controls that store their current visible state.
 
 - **Grid column widths** – You can adjust the width of a column in a grid by selecting the sizing bar to the left or right of the column header, and then sliding it left or right until the column is the desired width. The app stores the width that you set for a column. Then, the next time that you open the page that includes that grid, the column will be resized to that width.
-- **Grid column totals** - (Only available with the [new grid]() enabled) You can decide whether or not a total should be shown at the bottom of any numeric column in a grid as well as whether the grid footer is visible. The app stores this data so that these preferences are remembered the next time you open the page. See the [Grid capabilities]() article for more information. 
+- **Grid column totals** - (Only available with the new grid control enabled) You can decide whether or not a total should be shown at the bottom of any numeric column in a grid as well as whether the grid footer is visible. The app stores this data so that these preferences are remembered the next time you open the page. See the [Grid capabilities](grid-capabilities.md) topic for more information. 
 - **FastTabs** – Some pages have expandable sections that are known as *FastTabs*. The app stores information about the FastTabs that you've expanded and collapsed. Then, the next time that you open the page, the same FastTabs will be either expanded or collapsed, based on your last interaction with the page. In some cases, you can help improve system performance by collapsing a FastTab, because the app doesn't have to retrieve the information for FastTabs until they are expanded. As is explained later this topic, you can also change the order of the FastTabs on a page.
 - **Fact Boxes** – Some pages have a **Related information** pane that shows read-only information that is related to the current subject of the page. Each section in the **Related information** pane is known as a *Fact Box*. You can expand or collapse the **Related information** pane, and you can also expand or collapse individual Fact Boxes. The app stores these preferences. Then, the next time that you open the page, the **Related information** pane and the individual Fact Boxes will be either expanded or collapsed, based on your last interaction with the page. In some cases, you can help improve system performance by collapsing a FactBox, because the app doesn't have to retrieve the information for FactBoxes until they are expanded.
 - **Action Panes** – An *Action Pane* appears near the top of most pages. The Action Pane contains buttons for many of the actions that you can perform on the current page. These buttons are often organized on tabs. You can "pin" the whole Action Pane open, or you can have it collapsed by default. Then, the next time that you open the page, the Action Pane will be either open or collapsed, based on your last interaction with the page. If you pinned the Action Pane open, the last tab that you used will be shown.

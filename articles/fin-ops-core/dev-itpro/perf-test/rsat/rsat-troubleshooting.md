@@ -42,9 +42,11 @@ To troubleshoot issues with the tool during Playback operation, open the develop
 ## Authentication certificate and installation
 
 + The authentication certificate must be created and installed by an administrator on the same computer where RSAT is installed. If it is not created by an admin, you will encounter the following error message when you try to run a test case.  
-  ```
+
+  ```Text
   Cannot access Finance and Operations environment. Verify your settings and make sure the environment is available.
   ```
+
 + If you have used a previous version of RSAT on the same computer, close it and uninstall it before installing a new version.
 
 ## Screen resolution
@@ -59,7 +61,7 @@ Your desktop resolution should be set to 100% to run the tests successfully. To 
 
 If you are testing against a Standard Acceptance Test Sandbox environment (Tier2) or any other multi-box environment, and you may receive one of the following errors when you run a test.
 
-```
+```Text
 There was no endpoint listening at https://<yourURL>soap.sandbox.operations.dynamics.com/Services/AxUserManagement/Service.svc/ws2007FedHttp that could accept the message. This is often caused by an incorrect address or SOAP action…
 
 An error occurred while making the HTTP request to <Hostname>/Services/AxUserManagement/Service.svc/ws2007FedHttp. This could be due to the fact that the server certificate is not configured properly with HTTP.SYS in the HTTPS case. This could also be caused by a mismatch of the security binding between the client and the server.
@@ -67,7 +69,7 @@ An error occurred while making the HTTP request to <Hostname>/Services/AxUserMan
 
 Assuming that you have specified the correct SOAP hostname in the settings dialog box, run the following PowerShell scripts on your client computer where the test tool is installed.
 
-```PowerShell
+```powershell
 Set-ItemProperty HKLM:\SOFTWARE\Microsoft\.NETFramework\v4.0.30319 -Name SchUseStrongCrypto -Value 1 -Type dword -Force -Confirm:$false
 
 if ((Test-Path HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319))  { Set-ItemProperty HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319 -Name SchUseStrongCrypto -Value 1 -Type dword -Force -Confirm:$false}
@@ -79,7 +81,7 @@ You can also manually set the registry keys.
 
 You may receive the following error when running a test case, or the error details may contain the following messages.
 
-```
+```Text
 <Message>The type initializer for 'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' threw an exception.</Message>
 <Message>Could not enumerate AX users</Message>  (InnerError)`
 ```

@@ -52,13 +52,13 @@ This topic only describes the differences between the **Field Service Products (
 
 The **Field Service Products (Supply Chain Management to Field Service)** template includes one mapping that isn't included in the **Products (Supply Chain Management to Sales) – Direct** template. This mapping ensures that the required Field Service-specific field **Service Product Type** is set correctly.
 
-```
+```Text
 FIELDSERVICEPRODUCTTYPE        Fn        msdyn_fieldserciveproducttype
 ```
 
 The following value mapping is used.
 
-```
+```Text
 inventory     :  690970000
 nonInventory  :  690970001 
 service       :  690970002 

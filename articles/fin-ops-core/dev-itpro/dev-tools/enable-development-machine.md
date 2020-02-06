@@ -55,9 +55,9 @@ To enable a new user account to develop on the VM, the user account must be an a
 
     **Examples**
 
-        > ProvisionAxDeveloper.ps1 RDXP00DB20RAINM RDXP00DB20RAINM\username1
+    -  `ProvisionAxDeveloper.ps1 RDXP00DB20RAINM RDXP00DB20RAINM\username1`
 
-        > ProvisionAxDeveloper.ps1 -databaseservername RDXP00DB20RAINM -users RDXP00DB20RAINM\username1,RDXP00DB20RAINM\username2
+    -  `ProvisionAxDeveloper.ps1 -databaseservername RDXP00DB20RAINM -users RDXP00DB20RAINM\username1,RDXP00DB20RAINM\username2`
 
 4.  If more than one user account will be developing on the same version control workspace, you need to make the workspace public.
     1.  In Visual Studio, open **Source Control Explorer**, select the workspace drop-down and select **Manage workspaces**.

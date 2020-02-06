@@ -65,8 +65,10 @@ If you want to create a database that can be used for Entity Store, you must fir
 1. Under **DbServer – Security**, set the **generateUser** flags for **axdwadmin** and **axdwruntimeuser** to **True**. The scripts that you run in the next step will then create those two users. You will be prompted to set passwords for the users.
 2. Run the following scripts.
 
-        .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName EntityStore
-        .\Configure-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName EntityStore
+    ```powershell
+    .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName EntityStore
+    .\Configure-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName EntityStore
+    ```
 
     The Initialize-Database.ps1 script performs the following actions:
 
@@ -85,21 +87,23 @@ If you want to create a database that can be used for Entity Store, you must fir
 
 Create a Credentials.json file as shown here. The **AosDWAuth** category is optional and is used only if Entity Store is enabled.
 
-    {
-        "AosPrincipal": {
-            "AccountPassword": "<encryptedDomainUserPassword>"
-        },
-        "AosSqlAuth": {
-            "SqlUser": "<encryptedSqlUser>",
-            "SqlPwd": "<encryptedSqlPassword>"
-        },
-        "AosDWAuth": {
-            "DWUser": "<encryptedDWUser>",
-            "DWPwd": "<encryptedDWPassword>",
-            "DWRuntimeUser": "<encryptedDWRuntimeUser>",
-            "DWRuntimePwd": "<encryptedDWRuntimePassword>"
-        }
+```json
+{
+    "AosPrincipal": {
+        "AccountPassword": "<encryptedDomainUserPassword>"
+    },
+    "AosSqlAuth": {
+        "SqlUser": "<encryptedSqlUser>",
+        "SqlPwd": "<encryptedSqlPassword>"
+    },
+    "AosDWAuth": {
+        "DWUser": "<encryptedDWUser>",
+        "DWPwd": "<encryptedDWPassword>",
+        "DWRuntimeUser": "<encryptedDWRuntimeUser>",
+        "DWRuntimePwd": "<encryptedDWRuntimePassword>"
     }
+}
+```
 
 Here is an explanation of the preceding code lines:
 

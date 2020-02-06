@@ -5,7 +5,7 @@ title: Control warehouse work by using work templates and location directives
 description: This topic describes how to use work templates and location directives to determine how and where work is carried out in the warehouse.
 author: perlynne
 manager: AnnBe
-ms.date: 09/21/2018
+ms.date: 02/05/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -157,7 +157,7 @@ Select to use batch strategies for the items that are batch enabled. If a line i
 ### Strategy
 
 -	**Consolidate** - This strategy is used to consolidate items in a particular location when similar items are already available. This works only for the put type of location directive. Common setup for put will be to consolidate on the first action line, and then on second try to put without consolidation. Consolidating goods makes later picking more efficient.
--	**Match packing quantity** - This strategy is used to verify whether a pick location has the specified packing quantity. This will only work for location directive of type Pick. 
+-	**Match packing quantity** - This strategy will find a location that contains a license plate that has the exact quantity required. It cannot be used with locations that are not license plate controlled. This strategy only works for a Pick work type location directive.
 -	**FEFO batch reservation** - This strategy is used when inventory is located using a batch expiration date and is allocated for batch reservation. You can only use this strategy for batch enabled items. This only works for a Pick work type location directive. 
 -	**Round up to a full LP** - This strategy is used to round up the inventory quantity to match the license plate (LP) quantity that is assigned to the items to be picked. You can only use this strategy for the replenishment type of location directive of type Pick. 
 -	**Empty location with no incoming work** - This strategy is used to locate empty locations. The location is considered empty if it has no physical inventory and no expected incoming work. This strategy is used only for a Put type of location directive. 

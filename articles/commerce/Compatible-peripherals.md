@@ -40,25 +40,25 @@ Devices listed on this page have been tested for compatiblity with Dynamics 365 
 
 | Date tested | Tested by | Manufacturer | Mfg website | Support email | Support telephone | Model name | Driver name | Driver version | Firmware version | Driver type | Connection | Driver download link |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 10/17/2017 | HP | HP | http://www.hp.com | support@hp.com | | HPTD620Display | HPTD620Display | 6.6.5.6 | 1.02.11 | OPOS | USB | http://www.hp.com |
+| 10/17/2017 | HP | HP | https://www.hp.com | support@hp.com | | HPTD620Display | HPTD620Display | 6.6.5.6 | 1.02.11 | OPOS | USB | https://www.hp.com |
 
 ### MSR
 
 | Date tested | Tested by | Manufacturer | Mfg website | Support email | Support telephone | Model name | Driver name | Driver version | Firmware version | Driver type | Connection | Driver download link |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 10/17/2017 | HP | HP | http://www.hp.com | support@hp.com | | HPSinglenoSRDMSR | HPSinglenoSRDMSR | 3.29 | 5.37 | OPOS | USB | http://www.hp.com |
+| 10/17/2017 | HP | HP | https://www.hp.com | support@hp.com | | HPSinglenoSRDMSR | HPSinglenoSRDMSR | 3.29 | 5.37 | OPOS | USB | https://www.hp.com |
 
 ### Printer
 
 | Date tested | Tested by | Manufacturer | Mfg website | Support email | Support telephone | Model name | Driver name | Driver version | Firmware version | Driver type | Connection | Driver download link |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 10/17/2017 | HP | HP | http://www.hp.com | support@hp.com | | H300 | H300 | 1.14.1.19 | 1.61B | OPOS | USB | http://www.hp.com |
+| 10/17/2017 | HP | HP | https://www.hp.com | support@hp.com | | H300 | H300 | 1.14.1.19 | 1.61B | OPOS | USB | https://www.hp.com |
 
 ### Bar code scanner
 
 | Date tested | Tested by | Manufacturer | Mfg website | Support email | Support telephone | Model name | Driver name | Driver version | Firmware version | Driver type | Connection | Driver download link |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 10/17/2017 | HP | HP | http://www.hp.com | support@hp.com | | N3680-HP | N3680-HP | 1.14.0.5 | DX000010BAA | OPOS | USB | http://www.hp.com |
+| 10/17/2017 | HP | HP | https://www.hp.com | support@hp.com | | N3680-HP | N3680-HP | 1.14.0.5 | DX000010BAA | OPOS | USB | https://www.hp.com |
 
 > [!NOTE]
 > This compatiblity list is new as September 2018. The list will grow over time as devices are tested successfully and results are submitted to Microsoft.

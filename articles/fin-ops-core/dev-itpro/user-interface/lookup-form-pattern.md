@@ -156,13 +156,17 @@ This section will have answers to frequently asked questions that are related to
     -   To do this, follow these steps:
         1.  Call the **SysLookup::tab2ComboBox** method post **super** in form **run()** to populate the combo box with captions from visible tabs in the lookup.
 
-                // Generate view combobox based on tabs
-                tab2ComboBoxItemMap = SysLookup::tab2ComboBox(Tab, switchView);
+            ```xpp
+            // Generate view combobox based on tabs
+            tab2ComboBoxItemMap = SysLookup::tab2ComboBox(Tab, switchView);
+            ```
 
         2.  Override **modified()** on the combo box to update the visible tab, based on the selected value in the combo box.
 
-                Tab.tabChanged(Tab.tabValue(), tab2ComboBoxItemMap.lookup(this.selection()));
-
+            ```xpp
+            Tab.tabChanged(Tab.tabValue(), tab2ComboBoxItemMap.lookup(this.selection()));
+            ```
+            
 ### Open issues
 
 -   **Can we incorporate the most recently used values into lookups?**

@@ -78,7 +78,7 @@ This topic explains how to update the local agent. The latest version of the loc
 
 > [!NOTE]
 > If you require an older version of the local agent for your current deployments, download it from the Asset library in Microsoft Dynamics Lifecycle Services (LCS). To download Local agent version 1.1.0, go to **Shared Asset Library -> Model** and click on Dynamics 365 for Finance and Operations on-premises - Local agent v1.1.0**.
-
+>
 > You must have version 2.0.0 or later to deploy Platform update 12 and complete update flows.
 
 1. In LCS, select **Project settings** > **On-prem connectors**.
@@ -98,7 +98,7 @@ This topic explains how to update the local agent. The latest version of the loc
 3. Copy the localagent-config.json file to C:\\DynamicsAgent\\LocalAgent.
 4. In a **Command Prompt** window, go to C:\\DynamicsAgent\\LocalAgent, and run the following command.
 
-    ```
+    ```Console
     LocalAgentCLI.exe Cleanup <path of localagent-config.json>
     ```
 
@@ -109,7 +109,7 @@ This topic explains how to update the local agent. The latest version of the loc
 6. Verify that the local agent has been successfully cleaned up by looking in Service Fabric Explorer and making sure that there are no apps in the **Deployed Applications** section in the **Orchestrator** nodes.
 7. After the local agent is successfully cleaned up, run the following command.
 
-    ```
+    ```Console
     LocalAgentCLI.exe Install <path of localagent-config.json>
     ```
 
