@@ -5,7 +5,7 @@ title: Build and consume data entities
 description: This tutorial shows how to build an entity and how to consume some out-of-band (OOB) entities in an integration scenario.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 10/14/2019
+ms.date: 02/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -36,13 +36,18 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This tutorial shows how to build an entity and how to consume some out-of-band (OOB) entities in an integration scenario. You will also preview how these data entities will be consumed in various integrations scenarios, such as data import and export, integration, and OData services.
 
+When you are ready to build your first entity for production, you will need to:
+- Create your own package and model. For more information, see [Models and packages](../dev-tools/models.md).
+- Create a new project and set the model property to the one that you just created.
+
 ## Prerequisites
 This tutorial requires that you access an environment by using Remote Desktop, and that you be provisioned as an administrator on the instance.
 
 Throughout this tutorial, baseUrl refers to the base URL of the instance.
 
 - In the cloud environment, the base URL is obtained from Microsoft Dynamics Lifecycle Services (LCS).
-- On a local virtual machine (VM), the base URL is `https://usnconeboxax1aos.cloud.onebox.dynamics.com`.
+- On a [local virtual machine (VM)](../dev-tools/access-instances.md#vm-that-is-running-on-premises), the base URL is `https://usnconeboxax1aos.cloud.onebox.dynamics.com`.
+- Download FMLab sample code to C:. For details, see [FMLab sample code](https://github.com/Microsoft/FMLab).
 
 ## Key concepts
 - Developing a data entity in Microsoft Visual Studio
@@ -93,7 +98,7 @@ Staging tables are used in import/export scenarios to provide intermediary stora
 4. In the **Data entity** wizard, specify the properties for the data entity that you're creating. Use the values that are shown in the following screen shot.
 
     > [!NOTE]
-    > The name of an entity must not have '_' or any numeric digits (0…9). Using these characters may result in mapping errors later.
+    > The name of an entity must not have '\_' or any numeric digits (0…9). Using these characters may result in mapping errors later.
 
     [![Data Entity Wizard](./media/data-entity-wizard.png)](./media/data-entity-wizard.png)
 
@@ -173,7 +178,7 @@ One of the most common ways of interacting with data entities is through X++, by
 1. In Solution Explorer, click **Add** &gt; **New item** &gt; **Runnable class** to add a runnable class to your project.
 2. Copy and paste the following code into the class to test your data entity.
 
-    ```
+    ```xpp
     public static void main(Args _args)
     {
         FMLabCustomerEntity customer;
@@ -216,7 +221,7 @@ After you create your data entity, you can validate import/export.
 
 1. Create a sample CSV file that you can import. Copy the following text, and save it as **FM Lab Customer Import.csv**.
 
-    ```
+    ```Console
     CELLPHONE,DRIVERSLICENSE,EMAIL,FIRSTNAME,LASTNAME,CUSTOMERGROUP,ADDRESSLINE1,ADDRESSLINE2,CITY,STATE,ZIPCODE,COUNTRY(999) 555-0100,S615-3939-2349,chris.spencer@adatum.com,Chris,Spencer,adv\_mem\_1,444 Main Street,,Orlando,FL,77899,US(188) 555-0101,S615-3939-2350,Ichiro.lannin@blueyonderairlines.com,Ichiro,Lannin,non\_mem\_1,12 Long Street,,New York City,NY,99087,US(777) 555-0102,S615-3939-2351,josh.smith@fourthcoffee.com,Josh,Smith,adv\_mem\_1,9606 122th Avenue,,Sydney,TX,99874,US(456) 555-0103,S615-3939-2352,Vince@fabrikam.us,Vince,Ahmed,non\_mem\_1,123 Microsoft Way,Unit 87,Seattle,WA,90001,US(345) 555-0104,S615-3939-2353,tony.parker@lucernepublishing.com,Tony,Parker,non\_mem\_1,12012 11th PLNE,Apt 160,San Francisco,CA,75645,US(312) 555-0105,S615-3939-2354,Julia@fineartschool.net,Julia,Natarajan,exec\_mem\_1,449 Long Street,Apt 160,Bruxelles,ID,34213,US
     ```
 
@@ -299,7 +304,7 @@ You've now created a navigation property between **FMRentalEntity** and **FMCust
 In this section, you will use some of the standard OData syntax to navigate and query the OData entities that are exposed in the Fleet Management model. First, follow these steps to enable Internet Explorer to view JSON formatted data.
 
 1. Close all Internet Explorer windows.
-2. Go to C:\\FMLab, and select and double-click the json.ie.reg file.
+2. Go to C:\\FMLab, and select and double-click the json-ie.reg file.
 3. In the **Registry Editor** dialog box, click **Yes**.
 4. Click **OK**.
 
@@ -327,7 +332,7 @@ You can now use Internet Explorer to explore some OData URIs.
 
 6. To retrieve all the **Rental** records, together with all details of the customers, enter the following URL: \[baseURL\]/data/FleetRentals?$expand=CustomerRole The following example shows a **Rental** record, together with details of the linked customer, in JSON format.
 
-    ```
+    ```Text
     "@odata.context":"https://testax32aos.cloud.test.dynamics.com/en/data/$metadata#FleetRentals","value":
     {  
         { 
@@ -359,7 +364,7 @@ Actions provide a way to inject behaviors into the data model. In Dynamics 'AX 7
 1. In Solution Explorer, right-click **FMRentalEntity**, and then select **View code**.
 2. Copy the following code lines, and paste them into the **Code** window.
 
-    ```
+    ```xpp
     public class FMRentalEntity extends common
     {
         [SysODataActionAttribute("ReturnRental", true)]
@@ -387,7 +392,7 @@ In this section, you will use a console application to consume the OData endpoin
 5. In Solution Explorer, double-click **OdataProxyGenerator.tt**.
 6. In the code editor, replace the following string with your organization's URL.
 
-    ```
+    ```xpp
     <baseURL> public const string MetadataDocumentUri = "<baseURL>/data/"
     ```
 
@@ -428,7 +433,7 @@ During an export, column names will be exported in uppercase. Imports are not ca
 ### Max join limits
 During entity development, take care to ensure that the overall structure of the entity does not exceed the max join limit of 26. This is the default limit. Increasing the join limit is not recomended becaues it can have unintended consequences. If this limit is exceeded, the entity will most likely fail to process records and will result in the following SQL error. It is also recomended to manage the total number of columns in the entity to avoid this error.
 
-```
+```Console
 Cannot create a row of size xxx which is greater than the allowable maximum row size of 8060
 ```
 

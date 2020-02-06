@@ -102,15 +102,15 @@ To obtain support for Azure, use the resources listed in the following table.
 </tr>
 <tr class="odd">
 <td>Ask the community</td>
-<td>Go to the <a href="http://www.windowsazure.com/support/forums/">Azure forums</a> page to get help with your questions from the Azure community.</td>
+<td>Go to the <a href="https://www.windowsazure.com/support/forums/">Azure forums</a> page to get help with your questions from the Azure community.</td>
 </tr>
 <tr class="even">
 <td>Use the Azure services dashboard</td>
-<td>Go to the <a href="http://www.windowsazure.com/support/service-dashboard/">Azure services dashboard</a> page to get the current status of the Azure platform and services.</td>
+<td>Go to the <a href="https://www.windowsazure.com/support/service-dashboard/">Azure services dashboard</a> page to get the current status of the Azure platform and services.</td>
 </tr>
 <tr class="odd">
 <td>Enter a support ticket with the Azure support team</td>
-<td>Go to the <a href="http://www.windowsazure.com/support/options/">Azure support options</a> page, and click Get Support to open a support ticket. The Azure support team can help you resolve issues related to:
+<td>Go to the <a href="https://www.windowsazure.com/support/options/">Azure support options</a> page, and click Get Support to open a support ticket. The Azure support team can help you resolve issues related to:
 <ul>
 <li>Requests to increase the size of your Azure subscription</li>
 <li>Errors when using the Azure management portal</li>

@@ -184,19 +184,21 @@ Follow the steps in this section if you are also configuring for Commerce.
 2.  Install [Azure Active Directory Module for Windows PowerShell (64-bit version)](https://go.microsoft.com/fwlink/p/?linkid=236297).
 3.  Query Azure AD for your tenant and user ID. Open a Windows PowerShell Integrated Scripting Environment (ISE) window with administrative privileges, and run the following command. You will be prompted for Azure AD credentials. Use the same user account that you used in the admin user provisioning tool earlier.
 
-        $msocred = Get-Credential 
-        Connect-MsolService -Credential $msocred 
-        $company = Get-MsolCompanyInformation 
-        Write-Host "TenantID: $($company.ObjectId)" 
-        $msocred.UserName 
-        $users = Get-MsolUser -SearchString "$($msocred.username)" 
-        foreach($u in $users) 
+    ```powershell
+    $msocred = Get-Credential 
+    Connect-MsolService -Credential $msocred 
+    $company = Get-MsolCompanyInformation 
+    Write-Host "TenantID: $($company.ObjectId)" 
+    $msocred.UserName 
+    $users = Get-MsolUser -SearchString "$($msocred.username)" 
+    foreach($u in $users) 
+    { 
+        if($u.SignInName -eq $msocred.UserName) 
         { 
-            if($u.SignInName -eq $msocred.UserName) 
-            { 
-               Write-Host "SignInName:$($u.SignInName) UserId: $($u.ObjectId)" 
-            } 
-        }
+            Write-Host "SignInName:$($u.SignInName) UserId: $($u.ObjectId)" 
+        } 
+    }
+    ```
         
     [![Command in the Windows PowerShell ISE window](./media/retailconfig02-1024x529.png)](./media/retailconfig02.png)
 
@@ -206,20 +208,21 @@ Follow the steps in this section if you are also configuring for Commerce.
     -   **UserId** – For example, a036b5d8-bc8c-4abe-8eec-17516ea913ec
 
     <!-- -->
-
-        DECLARE @TenantId NVARCHAR(1024)         DECLARE @UserId NVARCHAR(1024) 
-        SET @TenantId = ‘‘ 
-        SET @UserId = ‘‘ 
-        IF(LEN(@TenantId) > 0 AND LEN(@UserId) > 0) 
-            BEGIN 
-            UPDATE AxDBRAIN.dbo.SYSSERVICECONFIGURATIONSETTING SET [VALUE] = @TenantId WHERE [NAME] = ‘TENANTID’ 
-            UPDATE RetailHoustonStore.ax.SYSSERVICECONFIGURATIONSETTING SET [VALUE] = @TenantId WHERE [NAME] = ‘TENANTID’ 
-            UPDATE AxDBRAIN.dbo.RETAILSTAFFTABLE SET EXTERNALIDENTITYID = @TenantId, EXTERNALIDENTITYSUBID = @UserId WHERE STAFFID = ‘000160’
-            END 
-        ELSE 
-            BEGIN 
-            RAISERROR (15600, -1, -1, ‘TenantId and UserId must be set before running this script’) 
-            END
+    ```sql
+    DECLARE @TenantId NVARCHAR(1024)         DECLARE @UserId NVARCHAR(1024) 
+    SET @TenantId = ‘‘ 
+    SET @UserId = ‘‘ 
+    IF(LEN(@TenantId) > 0 AND LEN(@UserId) > 0) 
+        BEGIN 
+        UPDATE AxDBRAIN.dbo.SYSSERVICECONFIGURATIONSETTING SET [VALUE] = @TenantId WHERE [NAME] = ‘TENANTID’ 
+        UPDATE RetailHoustonStore.ax.SYSSERVICECONFIGURATIONSETTING SET [VALUE] = @TenantId WHERE [NAME] = ‘TENANTID’ 
+        UPDATE AxDBRAIN.dbo.RETAILSTAFFTABLE SET EXTERNALIDENTITYID = @TenantId, EXTERNALIDENTITYSUBID = @UserId WHERE STAFFID = ‘000160’
+        END 
+    ELSE 
+        BEGIN 
+        RAISERROR (15600, -1, -1, ‘TenantId and UserId must be set before running this script’) 
+        END
+    ```
 
 5.  Reset Internet Information Services (IIS) by running **IISRESET** in an elevated **Command Prompt** window.
 6.  Update the Real-time service profile to use the new admin user.

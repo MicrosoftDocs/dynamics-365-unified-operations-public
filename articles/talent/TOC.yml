@@ -240,6 +240,8 @@
       href: process-auditing.md
     - name: Extensibility in Attract
       href: extensibility-attract.md
+    - name: Extend Talent with Power Apps and Power Automate
+      href: extensibility-examples.md
   - name: Troubleshoot Attract and Onboard
     items:
     - name: Troubleshoot posting jobs to LinkedIn
