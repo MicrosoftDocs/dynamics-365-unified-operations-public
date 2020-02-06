@@ -5,7 +5,7 @@ title: Extend Talent with Power Apps and Power Automate
 description: This article describes some examples of extensibility scenarios for Microsoft Dynamics 365 Human Resources that use Microsoft Power Apps and Microsoft Power Automate.
 author: negudava
 manager: Annbe
-ms.date: 02/05/2020
+ms.date: 02/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-human-resources
