@@ -35,7 +35,7 @@ Microsoft Dynamics 365 Talent is a true software as a service (SaaS) that provid
 
 ## Update policy
 
-Updates are released on a regular cadence to all environments. Talent is supported according to the [Microsoft Lifecycle policy](https://support.microsoft.com/en-us/hub/4095338/microsoft-lifecycle-policy), which provides consistent and predictable guidelines for the availability of support.
+Updates are released on a regular cadence to all environments. Talent is supported according to the [Microsoft Lifecycle policy](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy), which provides consistent and predictable guidelines for the availability of support.
 
 ## Release cadence
 
@@ -86,7 +86,7 @@ The following dates are exceptions to the regular release schedule:
 
 You can find out what's in the works for Talent and what we've released in the following locations:
 
-- [Dynamics 365 Talent roadmap](https://dynamics.microsoft.com/en-us/roadmap/talent/)
+- [Dynamics 365 Talent roadmap](https://dynamics.microsoft.com/roadmap/talent/)
 
 - [Dynamics 365 Release Plans](https://docs.microsoft.com/dynamics365/release-plans/)
 

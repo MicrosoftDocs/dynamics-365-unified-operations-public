@@ -85,7 +85,7 @@ And below is the illustration describes how authorization works for Service to s
 
 **Prerequisite:** You must have an Azure subscription and admin access to Azure Active Directory (Azure AD).
 
-Before any clients can communicate with the services, they must be registered in (Azure AD). These steps will help you register an application with (Azure AD). The steps are explained in the [Azure app registration training guide](https://docs.microsoft.com/en-us/azure/active-directory/develop/app-registrations-training-guide-for-app-registrations-legacy-users). For specific configuration in this process, the following additional information must be used in context.
+Before any clients can communicate with the services, they must be registered in (Azure AD). These steps will help you register an application with (Azure AD). The steps are explained in the [Azure app registration training guide](https://docs.microsoft.com/azure/active-directory/develop/app-registrations-training-guide-for-app-registrations-legacy-users). For specific configuration in this process, the following additional information must be used in context.
 
 Select **Microsoft Dynamics ERP (Microsoft.ERP)**. If you search for **Microsoft Dynamics ERP** in the search field within **Select an API** it might appear to be unavailable. In that case, make sure that you search for the full name, as shown above.
 Under **Delegated permissions**, you must select, at a minimum, the following options:
