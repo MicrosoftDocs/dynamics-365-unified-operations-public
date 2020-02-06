@@ -5,7 +5,7 @@ title: Sync product ratings in Dynamics 365 Commerce
 description: This topic describes how to sync product ratings in Microsoft Dynamics 365 Commerce.
 author:  gvrmohanreddy 
 manager: annbe
-ms.date: 02/03/2019
+ms.date: 02/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -69,7 +69,7 @@ The following illustration shows an example of the subjob details in Commerce.
 ![Details of the RetailProductRating subjob](media/rnr-hq-ratings-sub-job.png)
 
 > [!NOTE]
-> If you don't find the **RetailProductRating** subjob, you might already have run the **Sync product ratings** job and the **1040 CDX** job before you initialized the commerce scheduler. In this case, follow these steps to run the **Full data sync** job.
+> If you don't find the **RetailProductRating** subjob, you might already have run the **Sync product ratings** job and the **1040 CDX** job before you initialized the Commerce scheduler. In this case, follow these steps to run the **Full data sync** job.
 
 > 1. Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Channel database**. Alternatively, search for "Channel database."
 > 1. Select the channel database to sync.
