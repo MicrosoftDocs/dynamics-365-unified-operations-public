@@ -1,137 +1,210 @@
 # Zone threshold replenishment
 
-# Released in version 10.0.2
-#
-# About
+Zone based replenishment uses a min/max [replenishment](replenishment.md) strategy but evaluates entire warehouse zones instead of just individual locations. This helps make it faster for warehouse managers to find out when additional inventory is needed within a picking zone.
 
-Zone based replenishment is a feature which utilizes min/max replenishment strategy but evaluates entire warehouse zones, if set, instead of just individual locations. This gives companies the ability to better and faster determine whether additional inventory is needed within a picking zone.
+The set up for this feature is similar to the setup for location-based replenishment, except that when you are setting up a template for min/max replenishment, you can now also make a setting that specifies whether the threshold should be evaluated per location or per zone. When setting up an evaluation based on zone, you must add specific zones to the zone selection query.
 
-The setup for the new feature is very similar to location-based replenishment. As new replenishment template is created for min/max replenishment, the user can simply specify whether the threshold should be evaluated per Location or per Zone. In case of zones, specific zones are then added to the Zone selection query and those will be evaluated by the newly created replenishment template when processed.
+As with location-based min/max replenishment, zone-based min/max replenishment is based on setting up a minimum threshold of inventory that triggers the creation of replenishment work for selected items and item variants. This replenishment work will increase inventory up to the configured maximum threshold for the zone.
 
-Just like location-based min/max replenishment, the zone-based min/max replenishment is based on setting up a minimum threshold of inventory that triggers the creation of replenishment work order for selected items and item variants. In return, replenishment will be created for quantity that increases inventory up to the desired zone maximum threshold.
+Unlike location-based min/max replenishment, zone replenishment does not require fixed locations to evaluate whether locations should store a certain item or not. Zone-based replenishment therefore allows you to use min/max replenishment without fixed locations for each item or item variant within the warehouse. When a quantity in the zone falls below the specified minimum, replenishment will be created, and location directives will determine which specific location to put the inventory into.
 
-Key difference with current location-based min/max replenishment is that zone replenishment does not require fixed locations to evaluate whether locations should store a certain item or not. Zone based replenishment therefore allows you to use min/max replenishment without fixed locations for each item or item variant within the warehouse. When the quantity in the zone falls below the specified minimum, replenishment will be created, and location directives will find what specific location to put the inventory to.
+<!-- KAMAYBAC: It seems like this feature isn't under Feature Management. Is that right? -->
 
-# Setup
+<a name="setup"></a>
 
-## Directive codes
+## Set up zone-based replenishment
 
-Navigate to _Warehouse management -  Setup -Directive codes_ and create a new directive code
+To set up zone-based replenishment, you must configure several parts of the system. This section introduces those various settings and provides demo-data values that you can enter if you would like to work through the demo-data example given at the end of this topic.
 
-- Directive code – _Zone replen_
-- Directive description – _Zone replenishment_
+### Set up your directive codes
 
-## Replenishment template
+[Directive codes](control-warehouse-location-directives.md) enable you to be more specific when defining which location template to use in a work template.
 
-Navigate to _Warehouse management  - Setup - Replenishment - Replenishment_ templates and create new Replenishment template with Replenishment type set as Min/max.
+#### View and edit directive codes
 
-In **Overview** section, enter the following:
+To view or edit your directive codes, go to **Warehouse management > Setup > Directive codes**.
 
-- --Replenish template – _Zone min/max replen_
-- --Description – _Zone min/max replenishment_
-- --Replenishment type – _Minimum or maximum_
+#### Prepare sample-data directive codes
 
-In the **Replenishment template details** , the following setup must be specified:
+To prepare demo data for use with the example given at the end of this topic, create a new directive code as follows:
 
-- --Sequence number 1
-- --Description – _Pick zone replenishment_
-- --Replenishment unit – _each (ea)_
-- --Directive code – This will tie Replenishment template with the Location directive put - _Zone replen_
-- --Minimum quantity – the minimum quantity of the item within the zone. The quantity at which the replenishment will be triggered - _50_
-- --Maximum quantity – the maximum quantity of the item within the zone – _150_
-- --Unit – The unit the min and max relate to - _ea_
-- --Demand increment – _Round up_
-- --Replenish empty fixed locations – _Yes_
-- --Replenish only fixed locations – _No_
-- --Product query mode – _Product query_
-- --Warehouse - _61_
-- --Threshold scope – This will determine whether the template should evaluate Locations or Zone - _Zone_
+1. Select the **USMF** legal entity to work with the demo data.
+1. Go to **Warehouse management > Setup > Directive codes**.
+1. Select **New** on the Action Pane to add a new row to the table and enter the following values for it:
+    - **Directive code** – "Zone replen"
+    - **Directive description** – "Zone replenishment"
+1. Select **Save** to save the new code.
 
-In the **Select products query** , select item A0001.
+### Set up your replenishment templates
 
-In the **Select zones to replenish** query, select zone FLOOR.
+[Min/Max replenishment templates](tasks/set-up-min-max-replenishment-process.md) are the primary mechanism for maintaining optimal levels in picking locations. This is where you must set up the rules by which you will replenish inventory in the warehouse, including for zone-based replenishment.
 
-## Location directives
+#### View and edit replenishment templates
 
-Unlike Location based min/max replenishment, zone-based replenishment will require the setup of Put location directive, because the system evaluates the whole zone instead of just the outbound work pick location and inheriting the replenishment put location from there.
+To view or edit your replenishment templates, go to **Warehouse management > Setup > Replenishment > Replenishment > templates**.
 
-Navigate to Warehouse management _-_ Setup _-_ Location directives
+#### Prepare a sample-data replenishment template
 
-1. Create new **Pick Location directive** for Work order type Replenishment:
+To prepare demo data for use with the example given at the end of this topic, do the following:
 
-- --Name – _Zone pick_
-- --Work order type – _Pick_
-- --Site – _6_
-- --Warehouse – _61_
-- --Directive code – _leave empty_
-- --Multi SKU – _No_
+1. Select the **USMF** legal entity to work with the demo data.
+1. Go to **Warehouse management > Setup > Replenishment > Replenishment > templates**.
+1. Select **Edit** to put the page in edit mode.
+1. Select **New** on the Action Pane to add a new row to the **Overview** table and enter the following values for it:
+    - **Replenish template** – "Zone min/max replen"
+    - **Description** – "Zone min/max replenishment"
+    - **Replenishment type** – "Minimum or maximum"
+1. With the new row still selected in the **Overview** table, select **New** above the **Replenishment template details** table to add a new row to that table. Make the following settings for the new row:
+    - **Sequence number** - Enter "1".
+    - **Description** – Enter "Pick zone replenishment"
+    - **Replenishment unit** – Select "ea".
+    - **Directive code** – This will link this replenishment template with a location directive. Select the sample-data directive code that you just created: "Zone replen".
+    - **Minimum quantity** – This sets the quantity at which replenishment will be triggered. Enter "50".
+    - **Maximum quantity** – This sets the maximum quantity of an item that can be present in a zone. Generated replenishment work will increase inventory to this quantity. Enter "150".
+    - **Unit** – Sets the unit for the min and max values. Select "ea".
+    - **Demand increment** – Select "Round up".
+    - **Replenish empty fixed locations** – Select this check box.
+    - **Replenish only fixed locations** –  Deselect this check box.
+    - **Product query mode** – Select "Product query".
+    - **Replenishment threshold scope** – Sets whether the template should evaluate by zone or by specific location. Select "Zone".
+    - **Warehouse** - Select "61".
+1. Select **Select products** above the **Replenishment template details** table to open the **Product query** pane. Add a row with the following values to the **Range** table:
+    - **Table** - "Items"
+    - **Derived table** - "Items"
+    - **Field** - "Item number"
+    - **Criteria** - "A0001"
+1. Select **OK** to save your query and close the pane.
+1. Select **Select zones to replenish** above the **Replenishment template details** table to open the **Zone query** pane. Add a row with the following values to the **Range** table:
+    - **Table** - "Warehouse zone"
+    - **Derived table** - "Warehouse zone"
+    - **Field** - "Zone ID"
+    - **Criteria** - "FLOOR"
 
-In the lines section, create a new Line with the following setup:
+### Set up your location directives
 
-- --Sequence number – _1_
-- --From quantity – _0_
-- --To quantity – _10000000_
-- --Locate quantity – _None_
-- --Allow split – _Yes_
+Unlike location-based min/max replenishment, zone-based replenishment requires you to set up a put-location directive because the system evaluates the whole zone instead of just the outbound work pick location.
 
-In the Location directive Actions, create a new line with the following setup:
+#### View and edit location directives
 
-- --Sequence number – _1_
-- --Name – _Pick from bulk_
-- --Fixed location usage – _Fixed and non-fixed locations_
-- --Strategy – _None_
+To view or edit your replenishment templates, go to **Warehouse management > Setup > Location directives**.
 
-On the Location Directive Actions Query, select the locations you want to replenish from:
+#### Prepare sample-data location directives
 
-- --Table: Locations; Derived table: Locations, Field: Zone ID; Criteria: BULK
+To prepare demo data for use with the example given at the end of this topic, you need two location directives, one for pick and one for put.
 
-1. Create new **Put Location directive** for Work order type Replenishment:
+To create the replenishment pick directive, do the following:
 
-- --Name – _Zone put_
-- --Work order type – _Put_
-- --Site – _6_
-- --Warehouse – _61_
-- --Directive code – _Zone replen –_ here the Replenishment template line is linked with the Put Location directive
-- --Multi SKU – _No_
+1. Select the **USMF** legal entity to work with the demo data.
+1. Go to **Warehouse management > Setup > Location directives**.
+1. In the left pane, set **Work order type** to "Replenishment".
+1. Select **New** on the Action Pane to create a new directive and make the following settings:
+    - **Name** – Enter "Zone pick"
+    - **Work type** – Select "Pick"
+    - **Site** - Select "6"
+    - **Warehouse** - Select "61"
+    - **Directive code** – leave empty
+    - **Multi SKU** – Set to "No"
+1. Select **Save** to create a directive with your settings so far.
+1. In the **Lines** FastTab, select **New** to add a new line to the table and then make the following settings for it:
+    - **Sequence number** – Enter "1"
+    - **From quantity** – Enter "0"
+    - **To quantity** – Enter "10000000"
+    - **Locate quantity** – Select "None"
+    - **Allow split** – Select this check box (yes)
+1. Select **Save** to save the new line.
+1. With your new line still selected in the **Lines** table, select **New** on the **Location directive actions** FastTab to add a new action to the table and then make the following settings for it:
+    - **Sequence number** – Enter "1"
+    - **Name** – Enter "Pick from bulk"
+    - **Fixed location usage** – Select "Fixed and non-fixed locations"
+    - **Strategy** – Select "None"
+1. Select **Save** to save the new action.
+1. With your action still selected in the **Location directive actions** table, select **Edit query** on the **Location directive actions** FastTab.
+1. A query pane opens, which lets you select the locations you want to replenish from. Select **Add** on the **Range** tab to add a new row to the table here and then make the following settings for the new row:
+    - **Table** - "Locations"
+    - **Derived table** - "Locations"
+    - **Field** - "Zone ID"
+    - **Criteria** - "BULK"
+1. Select **OK** to save your query and close the pane.
+1. Select **Save** to save your location directive.
 
-In the lines section, create a new Line with the following setup:
+To create the replenishment put directive, do the following:
 
-- --Sequence number – _1_
-- --From quantity – 0
-- --To quantity – _1000000_
-- --Locate quantity – _None_
-- --Allow split – _Yes_
+1. Continue working on the **Location directives** page and in the left pane, make sure **Work order type** is still to "Replenishment".
+1. Select **New** on the Action Pane to create another new directive and make the following settings:
+    - **Name** – Enter "Zone put"
+    - **Work order type** – Select "Put"
+    - **Site** - Select "6"
+    - **Warehouse** - Select "61"
+    - **Directive code** – Select "Zone replen". This will link this location directive with the replenishment template we created earlier using the code we also created earlier.
+    - **Multi SKU** – Set to "No"
+1. Select **Save** to create a directive with your settings so far.
+1. In the **Lines** FastTab, select **New** to add a new line to the table and then make the following settings for it:
+    - **Sequence number** – Enter "1"
+    - **From quantity** – Enter "0"
+    - **To quantity** – Enter "10000000"
+    - **Locate quantity** – Select "None"
+    - **Allow split** – Select this check box (yes)
+1. Select **Save** to save the new line.
+1. With your new line still selected in the **Lines** table, select **New** on the **Location directive actions** FastTab to add a new action to the table and then make the following settings for it:
+    - **Sequence number** – Enter "1"
+    - **Name** – Enter "Zone put"
+    - **Fixed location usage** – Select "Fixed and non-fixed locations"
+    - **Strategy** – Select "Consolidate"
+1. Select **Save** to save the new action.
+1. With your action still selected in the **Location directive actions** table, select **Edit query** on the **Location directive actions** FastTab.
+1. A query pane opens, which lets you select the zone you want to replenish to. This should be the same as Zone specified on the Replenishment template. Select **Add** on the **Range** tab to add a new row to the table here and then make the following settings for the new row:
+    - **Table** - "Locations"
+    - **Derived table** - "Locations"
+    - **Field** - "Zone ID"
+    - **Criteria** - "FLOOR"
+1. Select **OK** to save your query and close the pane.
+1. Select **Save** to save your location directive.
 
-In the Location directive Actions, create a new line with the following setup:
+## Try out the feature
 
-- --Sequence number – _1_
-- --Name – _Zone put_
-- --Fixed location usage – _Fixed and non-fixed locations_
-- --Strategy – _Consolidate_
+This section provides a sample scenario that illustrates how to work with this feature.
 
-On the Location Directive Actions Query, specify the Zone where replenishment should occur to. This should be the same as Zone specified on the Replenishment template:
+### Prepare the sample data required for this sample scenario
 
-- --Table: Locations; Derived table: Locations, Field: Zone ID; Criteria: FLOOR
+Before you start working through the scenario, you must activate sample data and set up the feature as described here.
 
-# Demo
+#### Use the USMF legal entity
 
-## Inventory on-hand
+To work through this sample scenario using the sample records and values specified here, you must be on a system with the standard [demo data](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) installed, and you must select the **USMF** legal entity before you begin.
 
-1. Ensure there is on-hand inventory for item A0001 on two different locations within the pick zone specified on the replenishment template line. This is to simulate how the calculation occurs for the whole zone, instead of only for a single location. The total quantity should be under the Minimum quantity specified on the Replenishment template line. Use any of the warehouse processes to adjust inventory if needed.
-2. Ensure there is enough inventory for item A0001 on the bulk location where the replenishment work should pick the items from.
+#### Prepare additional sample data
 
-## Run Zone min/max replenishment
+After you have selected the **USMF** legal entity, add the additional required sample data as described in [Set up zone-based replenishment](#setup).
 
-Navigate to Warehouse management _-_ Replenishment _-_ Replenishments
+#### Check your on-hand inventory
 
-In the Records to include section, click on Filter, and select the Zone min/max replen Replenishment template. Click OK to run the replenishment template.
+Do the following to make sure your system includes enough inventory to support the sample scenario:
 
-Replenishment work will be created to pick inventory from the BULK zone and replenishment it to the FLOOR zone.
+1. Ensure there is on-hand inventory for item A0001 at two different locations within the pick zone specified on the replenishment template line. This is to simulate how the calculation occurs for the whole zone, instead of only for a single location. The total quantity should be under the **Minimum quantity** specified on the replenishment template line. Use any of the warehouse processes to adjust inventory if needed.
+2. Ensure there is enough inventory for item A0001 at the bulk location where the replenishment work should pick the items from.
 
-# Appendix
+### Sample scenario: Run zone min/max replenishment
 
-- To setup Replenishment work to go to the desired zone you can link the replenishment template lines and location directives through one of two ways:
-  - The first way is to edit the location directive header query and filter the replenishment template lines selected.
-  - The second way is to use a directive code on the replenishment template line and match it to the Put location directive.
-- If dynamic locations are used, replenishment work will be created to the first available location, or to a location that already contains inventory, if the location directive action is setup to use the Consolidate strategy.
-- If fixed locations are used and replenished, standard min/max replenishment should be used.
+Once you have all the prerequisite sample data in place, you can trigger a replenishment by doing the following:
+
+1. Go to **Warehouse management > Replenishment > Replenishments**.
+1. The **Replenishment** pane opens. In the **Records to include** FastTab, select **Filter**.
+1. The **Inquiry** pane opens. On the **Range** tab, edit the default table row provided as follows:
+    - **Table** - Select "Replenishment templates".
+    - **Derived table** - Select "Replenishment templates".
+    - **Field** - Select "Replenishment template".
+    - **Criteria** - Select "Zone min/max replen". This is the replenishment template that you should have created while preparing the demo data for this scenario.
+1. Select **OK** to save the query and go back to the **Replenishment** pane.
+1. Select **OK** on the **Replenishment** pane to run the Replenishment template.
+
+Replenishment work will now be created to pick inventory from the BULK zone and replenishment it to the FLOOR zone.
+
+## Notes and tips
+
+Here are a few notes and tips for working with this feature:
+
+- To set up replenishment work that goes to the desired zone, you can link the replenishment template lines and location directives in either of the following ways:
+  - Edit the location directive header query and filter the selected replenishment template lines.
+  - Use a directive code on the replenishment template line and match it to the put location directive.
+- If you are using dynamic locations, replenishment work will be created for the first available location, or for a location that already contains inventory, if the location directive action is setup to use the **Consolidate** strategy.
+- If you are using fixed locations instead of zones, you should use standard min/max replenishment.
