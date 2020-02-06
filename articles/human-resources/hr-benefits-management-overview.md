@@ -58,9 +58,9 @@ When running eligibility for benefits that use a 1-5X Salary, % of Salary, and F
 
 ### Employee self-service
 
-Employee amount isn’t being calculated when updating the coverage amount for life insurance. For example, when an employee is offered a life insurance plan, they can select up to $50,000 in coverage at a cost of $.36 per $1,000 of coverage.  When the employee updates the coverage amount, the employee’s associated cost remains at zero.
+Employee amount doesn't calculate when updating the coverage amount for life insurance. For example, when an employee is offered a life insurance plan, they can select up to $50,000 in coverage at a cost of $.36 per $1,000 of coverage.  When the employee updates the coverage amount, the employee’s associated cost remains at zero.
 
-For a benefit plan that only allows a single selection of that plan type, the user will receive an error if they attempt to waive a plan after selecting a plan. For example, a user selects a medical plan and places it in their cart. The user then selects **Waive** for another medical plan. The user will receive an error.
+For a benefit plan that only allows a single selection of that plan type, the user receives an error if they attempt to waive a plan after selecting a plan. For example, a user selects a medical plan and places it in their cart. The user then selects **Waive** for another medical plan. The user will receive an error.
 
 
 

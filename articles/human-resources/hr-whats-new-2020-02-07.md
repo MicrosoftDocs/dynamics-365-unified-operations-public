@@ -2,13 +2,13 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Human Resources (February 7, 2020)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources.
+description: This article describes features that are either new or changed in Microsoft Dynamics 365 Human Resources.
 author: Darinkramer
 manager: AnnBe
-ms.date: 2/4/2020
+ms.date: 02/07/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
+ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata
@@ -17,7 +17,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -29,21 +29,21 @@ ms.search.validFrom: 2020-02-07
 ms.dyn365.ops.version: Human Resources
 
 ---
-# "What's new or changed in Dynamics 365 Human Resources (February 7, 2020)"
+# What's new or changed in Dynamics 365 Human Resources (February 7, 2020)
 
-This topic describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.2835. The numbers in parentheses in some headings refer to support numbers in Microsoft Dynamics Lifecycle Services (LCS).
+This article describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.2835. The numbers in parentheses in some headings refer to support numbers in Microsoft Dynamics Lifecycle Services (LCS).
 
-## Learning Analytics doesn't show the course if the classroom is blank - (388289)
+## Learning analytics doesn't show the course if the classroom is blank (388289)
 
-The learning analytics analytics page has been updated to display the course if the classroom is empty.
+The learning analytics page now displays the course if the classroom is empty.
 
-## Position lookup not taking timezone into account - (405344)
+## Position lookup doesn't take the time zone into account (405344)
 
-With this change the lookup for open positions will now take into account the timezone when validating if a position is open.
+The lookup for open positions now takes into account the time zone when validating if a position is open.
 
-## Current balance analysis view not updated with the correct current leave balance after submitting time off requests - (409756)
+## Current balance analysis view doesn't update with the correct current leave balance after submitting time-off requests (409756)
 
-The current balance has now been updated to include the submitted time off requests.
+The current balance now includes the submitted time-off requests.
 
 ## In preview
 
@@ -57,9 +57,9 @@ The following preview features are available on February 3, 2020:
 
 ### Platform update 32 
 
-Platform update 32 will be available soon. [Find out more information about Platform update 32 here](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32) .
+Platform update 32 will be available soon. [Find out more information about Platform update 32 here](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32).
 
-### Updated CDS Solution
+### Updated Common Data Service Solution
 
 A new Common Data Service solution will be available soon with the following changes:
 
@@ -70,7 +70,7 @@ A new Common Data Service solution will be available soon with the following cha
 | **Employment** entity changes | <ul><li>**Financial dimensions** added</li><li>**Termination reason** added</li><li>**Termination date** renamed from **Transition date**</li><li>**Probation date** added</li></ul> |
 | **Worker address** entity changes | <ul><li>**Street address** added</li><li>**Address line 1**, **Address line 2**, and **Address line 3** marked for deprecation</li></ul> |
 | New variable compensation setup entities | <ul><li>**Compensation variable plan type**</li><li>**Compensation variable plan**</li><li>**Vesting rules**</li><li>**Compensation variable plan level**</li></ul> |
-| New **Worker calendar employment** entity | <ul><li>**Work calendar entity** added</li></ul> |
-| New **Payroll position detail** entity | <ul><li>**Payroll position detail** added</li></ul> |
-| New **Title** entity | <ul><li>**Title** added</li></ul> |
-*The new "Title" entity will be included in the sync process between HR and CDS but will not initially be referenced from Job Position or Job entities.
+| New **Worker calendar employment** entity | **Work calendar entity** added |
+| New **Payroll position detail** entity | **Payroll position detail** added |
+| New **Title** entity | **Title** added. The new **Title** entity will be included in the sync process between Human Resources and Common Data Service, but won't initially be referenced from **Job Position** or **Job** entities. |
+
