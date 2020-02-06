@@ -38,7 +38,7 @@ For customers who are on one of the new license types that were added in October
 System admins can [assign licenses to users](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) in the [Microsoft 365 admin center](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center?view=o365-worldwide).
 
 ## Associate an external user with a license (new license types only)
-Users external to the tenant that the environment was deployed into need to be represented in the host tenant directory (AAD) so they can be assigned licenses. Those external users should be [added to the tenant in AAD as guest users](https://docs.microsoft.com/en-us/azure/active-directory/b2b/add-users-administrator) and then assigned the appropriate licenses.
+Users external to the tenant that the environment was deployed into need to be represented in the host tenant directory (AAD) so that they can be assigned licenses. Those external users should be [added to the tenant in AAD as guest users](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator) and then assigned the appropriate licenses.
 
 ## Add a new user
 1. Go to **System administration \> Users \> Users**.
