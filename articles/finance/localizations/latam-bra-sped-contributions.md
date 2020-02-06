@@ -156,7 +156,7 @@ Go to **Fiscal books > Setup > PIS and COFINS tables > Revenue source per item**
 </table>
 
 
-## Generate an EFD contributions text file
+# Generate an EFD contributions text file
 
 1.	Go to **Fiscal books > Common > Booking period, select the related booking period and then select the **Tax statements > EFD Contributions > Execute**
 2.	In the **Type of situation** field, select the type of situation.
