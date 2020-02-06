@@ -2402,13 +2402,13 @@
           - name: Third party miscellaneous charges
             href: localizations/rus-third-party-misc-charges.md
           - name: Agreements
-            href: localizations/rus-agreements
-            - name: Set up and create agreements
-            href: localizations/rus-set-up-and-create-agreements
-            - name: Register transactions with reference to agreements
-            href: localizations/rus-register-transactions-with-reference-to-agreements
-            - name: Inquiries and reports with agreements
-            href: localizations/rus-inquiries-and-report-with-agreements
+            href: localizations/rus-agreements.md
+          - name: Set up and create agreements
+            href: localizations/rus-set-up-and-create-agreements.md
+          - name: Register transactions with reference to agreements
+            href: localizations/rus-register-transactions-with-reference-to-agreements.md
+          - name: Inquiries and reports with agreements
+            href: localizations/rus-inquiries-and-report-with-agreements.md
         - name: Inventory
           items:
           - name: Goods in transit from vendor
