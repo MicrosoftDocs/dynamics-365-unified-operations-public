@@ -34,9 +34,9 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [banner](includes/preview-feature.md)]
 
-As competition for resources increases, you must offer a rich set of benefits to attract and retain your best employees. The benefits you offer can range from the standard medical and dental coverage options to expanded services, like adoption assistance, recreation programs, and clothing allowances. The Benefits management preview feature in Microsoft Dynamics 365 Human Resources provides you with a flexible solution that supports a wide variety of benefit options, along with an easy-to-use employee experience that showcases your offerings.
+To remain competitive, you must offer a rich set of benefits to attract and retain your best employees. In addition to standard benefits like medical and dental coverage, you might also want to offer expanded services like adoption assistance, recreation programs, and clothing allowances. The Benefits management preview feature in Microsoft Dynamics 365 Human Resources provides you with a flexible solution that supports a wide variety of benefit options. Human Resources also includes an easy-to-use employee experience that showcases your offerings.
 
-- Enhanced benefits plans let you create and manage unique benefit plans and support complex benefit rate tables and nested tiers. You can easily create benefit programs, bundles, and auto-enrollment rules for a seamless employee experience.
+- Enhanced benefits plans let you create and manage unique benefit plans and support complex benefit rate tables and nested tiers. You can easily create benefit programs, bundles, and auto-enrollment rules for an easier employee experience.
 
 - Flex credit programs let you prorate to support retirement and other life events.
 
@@ -46,7 +46,7 @@ As competition for resources increases, you must offer a rich set of benefits to
 
 - Qualified life event processing integrates with Employee self service, and also supports future life events.
 
-If you would like to access the demo data, you will need to re-deploy your sandbox environment.
+If you would like to access the demo data, you'll need to redeploy your sandbox environment.
 
 You can provide direct feedback or report issues to:  D365BenefitsPreview@microsoft.com.
 
@@ -54,7 +54,7 @@ You can provide direct feedback or report issues to:  D365BenefitsPreview@micros
 
 ### Eligibility processing
 
-When running eligibility for benefits that use a 1-5X Salary, % of Salary, and Flat Amount coverage amount, the benefit details date must be set to the employee start date in **Employment history**, with hours worked, payment frequency and annual benefits salary amount. If fixed compensation exists for the worker, enter in the hours worked along with the payment frequency, and the annual salary amount will calculate. If the employee is salaried, the hours worked isn't needed. We recommend that when creating new workers, enter fixed compensation first. To update the benefit details record:  Navigate to **Worker > Worker history > Employment details**. Adjust the date to workers start date.
+When running eligibility for benefits that use a 1-5X Salary, % of Salary, and Flat Amount coverage amount, you must set the **Benefit details** date to the **Employee start date** in **Employment history**. You must also include **Hours worked**, **Payment frequency**, and **Annual benefits salary amount**. If the worker has fixed compensation, enter **Hours worked** and **Payment frequency**. The annual salary amount will calculate. If the employee is salaried, you don't need to enter **Hours worked**. We recommend that when creating new workers, enter fixed compensation first. To update the benefit details record, navigate to **Worker > Worker history > Employment details**. Adjust the date to the worker's start date.
 
 ### Employee self-service
 
@@ -62,24 +62,9 @@ Employee amount doesn't calculate when updating the coverage amount for life ins
 
 For a benefit plan that only allows a single selection of that plan type, the user receives an error if they attempt to waive a plan after selecting a plan. For example, a user selects a medical plan and places it in their cart. The user then selects **Waive** for another medical plan. The user will receive an error.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Enable Benefits management
 
-Benefits management is a preview feature, and is only available in **Sandbox** environments. These articles describe how to turn on preview features in Human Resources. They also provide information about which existing features in Human Resources that Benefits management replaces or are disabled once you turn on Benefits management.
+Benefits management is a preview feature, and is only available in **Sandbox** environments. These articles describe how to turn on preview features in Human Resources. They also tell which existing features in Human Resources that Benefits management replaces or are disabled once you turn on Benefits management.
 
 - [Manage features](hr-admin-manage-features.md)
 - [Preview feature: Benefits management](hr-admin-manage-features.md?preview-feature-benefits-management)
