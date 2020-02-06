@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.8
 
 The **Work line details** page shows a comprehensive, sortable, and filterable list of the individual work lines in your system. It provides a complete overview of work being planned and executed in the warehouse. You can easily switch between viewing all work lines or only the open work lines. Details provided for each line include: work status, item number, location, work quantity, load ID, shipment ID, and more.
 
-## Enable the location directive inventory picking aging feature
+## Enable the work line details feature
 
 Before you can use this feature, it must be enabled on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the feature status and enable it if needed. Here, the feature is listed as:
 
