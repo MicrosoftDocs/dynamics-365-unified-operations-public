@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.8
 
 # Work line details
 
-The **Work line details** page shows a comprehensive, sortable, and filterable list of the individual work lines in your system. It provides all the information needed to get a complete overview of the work being planned and executed in the warehouse. You can easily switch between viewing all work lines or only the open work lines. Details provided for each line include: work status, item number, location, work quantity, load ID, shipment ID, and more.
+The **Work line details** page shows a comprehensive, sortable, and filterable list of the individual work lines in your system. It provides a complete overview of work being planned and executed in the warehouse. You can easily switch between viewing all work lines or only the open work lines. Details provided for each line include: work status, item number, location, work quantity, load ID, shipment ID, and more.
 
 ## Enable the location directive inventory picking aging feature
 
@@ -42,20 +42,20 @@ Before you can use this feature, it must be enabled on your system. Administrato
 
 To view the list or work line details, go to **Warehouse management > Work > Work line details**. From here you can do the following:
 
-- Use the **Filter** field to search for lines having a specific value for any available parameter (including many parameters that aren't shown as columns in the table)
-- Use the **Show closed** check box to choose to show or hide closed lines
+- Use the **Filter** field to search for lines having a specific value for any available parameter (including many parameters that aren't shown as columns in the table).
+- Use the **Show closed** check box to show or hide closed lines.
 - Select **Display dimensions** to open the **Dimensions display** pane, where you can choose to show or hide various dimension columns in the table.
-- Select any column heading to to open a menu where you can choose to sort or filter the list by values in that column
-- Select a work line and then select **Change location** to change the location for that work line (which will override the location directive setup)
-- Select a work line and then select **Cancel work line** to open a pane where you can partially or fully reduce the quantity of that work line
-- Adjust quantities <!-- KAMAYBAC: seems like we can only reduce quantities. Is that right? If so, the above point covers this. -->
-- View transactions behind any work line  <!-- KAMAYBAC: What does this mean? How do we do this? -->
+- Select any column heading to to open a menu where you can choose to sort or filter the list by values in that column.
+- Select a work line and then select **Change location** to open a pane where you can change the location for that work line (which will override the location directive setup).
+- Select a work line and then select **Cancel work line** to open a pane where you can partially or fully reduce the quantity of that work line.
+- Adjust quantities. <!-- KAMAYBAC: seems like we can only reduce quantities. Is that right? If so, the above point covers this. -->
+- View transactions behind any work line.  <!-- KAMAYBAC: What does this mean? How do we do this? -->
 
 ## Try out the feature
 
 This section provides a three-part example of how to work with work line details.
 
-<!-- KAMAYBAC: I think we should consider removing this demo. It seems hard to set up, and doesn't really show anything that isn't already easy to understand in the list provided above. Though the extra details about what happens when changing quantities should be clarified and kept.  -->
+<!-- KAMAYBAC: I think we should remove this demo. The setup seems difficult, and then the demos don't even reference the demo data. I think we could keep just parts 2 and 3 as generic procedures. -->
 
 ### Enable sample data
 
@@ -73,12 +73,12 @@ If you are working with **USMF** demo data, then start by making sure your syste
 To confirm that you have enough inventory available and make adjustments as needed:
 
 1. Go to **Warehouse management > Setup > Location directives** and find out which picking locations are used for sales order picking at warehouse 51 (see also [Control warehouse work by using work templates and location directives](control-warehouse-location-directives.md)). <!-- KAMAYBAC: What am I looking for here? How can I use this? -->
-1. Check the inventory levels at the relevant locations. <!-- where/how do I do this? Can we give a link? -->
-1. Adjust inventory as required. You can create manual movements, use replenishment, or apply any other flow as needed to adjust the inventory. <!-- where/how do I do this? Can we give a link? -->
+1. Check the inventory levels at the relevant locations. <!-- KAMAYBAC: where/how do I do this? Can we give a link? -->
+1. Adjust inventory as required. You can create manual movements, use replenishment, or apply any other flow as needed to adjust the inventory. <!-- KAMAYBAC: where/how do I do this? Can we give a link? -->
 
 ### Part 1: Create picking work
 
-Before you start creating work, make sure that your warehouse is set up to respond to work requests as expected. <!-- where/how do I do this? Can we give a link?-->
+Before you start creating work, make sure that your warehouse is set up to respond to work requests as expected. <!-- KAMAYBAC: where/how do I do this? Can we give a link?-->
 
 Create some picking work by doing the following:
 
@@ -94,26 +94,30 @@ Create some picking work by doing the following:
 1. Close the **Reservation** page to return to your sales order.
 1. Open the **Warehouse** tab and select **Release to warehouse**. The system creates a shipment, adds it to a new load, and creates the required work.
 1. Create a second sales order for the same **Customer account** and **Warehouse** as before. Add the following two order lines to this order:
-    - Line 1: **Item number** "M9200", **Quantity** "25", **Unit** "ea"
-    - Line 2: **Item number** "M9202", **Quantity** "10", **Unit** "ea"
+    - Line 1 - **Item number** "M9200", **Quantity** "25", **Unit** "ea"
+    - Line 2 - **Item number** "M9202", **Quantity** "10", **Unit** "ea"
 1. As you did previously, reserve the inventory for each of these two order lines (one at a time) and then release the order to warehouse.
 
 ### Part 2: Change the location for a work line
 
-Navigate to _Warehouse management_ - _Work_ - _Work line details_ and open the form.
+1. Go to **Warehouse management > Work > Work line details**.
+1. Find and select one of the work lines that you created for this demo.
+1. Select **Change location** on the Action Pane.
+1. The **Select new location** pane opens. Open the **Location** drop-down list here and choose a new location for this work line.
+1. Select **OK** to apply your change and close the pane.
 
-Select a work line and click on &#39;Change location&#39; in the action bar. Enter the new location that should be associated with the work line. If the location you selected has available inventory (for a pick) or if it matches the location type validation (for a put), the location on the work line will be updated.
+> [!IMPORTANT]
+> You will only be permitted to submit location changes when the new location has sufficient inventory available (for a pick), or if it passes location-type validation (for a put).
 
-### Part 3: Cancel a work line
+### Part 3: Change the quantity of or cancel a work line
 
-Navigate to _Warehouse management_ - _Work_ - _Work line details_ and open the form.
+1. Go to **Warehouse management > Work > Work line details**.
+1. Find and select one of the work lines that you created for this demo. (Note that you can only cancel or change quantities for work lines with a **Work type** of "pick".)
+1. Select **Cancel work** on the Action Pane.
+1. The **Quantity to cancel** pane opens. Edit the **Quantity** field here to set the quantity to *subtract from* the currently quantity set for the line. By default, the **Quantity** field shows the full quantity.
+    - If you cancel the full quantity, then the **Work status** will be changed to "Canceled", but the **Work quantity** will still show the original value.
+    - If you cancel just part of the quantity, then **Work quantity** will update to show the new value, but the **Work status** won't change.
+1. Select **OK** to apply your change and close the pane.
 
-Select a work line and click on &#39;Cancel work line&#39; in the action bar. Cancel full quantity for this example but be aware that you can also cancel only part of the quantity.
-
-Note that the first Pick work line has been cancelled.
-
-Let&#39;s continue with this example and cancel only a partial quantity of the second pick line. Select the second line on the Work line details form and press &#39;Cancel work line&#39;. In the new screen, specify qty 7ea.
-
-Now, the new line will have qty 3, as we have cancelled 7ea (10ea - 7ea).
-
-Note that only the Work created quantity field on the matching Load line will be changed as a result. The user must take other measures to remove the obsolete quantity from the load line, otherwise it won&#39;t be possible to be ship confirmed (unless under delivery is set up correctly).
+> [!IMPORTANT]
+> If you cancel just part of the quantity for a work line, then you must also take other measures to remove the obsolete quantity from the load line, otherwise it won't be possible to be ship confirmed (unless under delivery is set up correctly). <!-- KAMAYBAC: We should clarify this note and add links for how to do these things. I'm not familiar with the terms "ship confirmed" and "under delivery", so I'm not sure we are using them correctly. -->
