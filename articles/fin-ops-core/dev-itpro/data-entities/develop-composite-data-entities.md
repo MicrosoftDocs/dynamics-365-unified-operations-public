@@ -47,7 +47,7 @@ Sales Header and Sales Line are two different entities in the system. In case th
 
 Based on the linked entities, these entities can be exposed as an XML document with embedded element tags for entities. XML is the only way to expose a composite entity in data management.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <Document>
 
@@ -124,7 +124,7 @@ For local testing the composite entity metadata needs to be refreshed.
 
 2. Alternately, you can write the following job to refresh the composite entity list metadata.
 
-    ```
+    ```xpp
     DMFDataPopulation::refreshCompositeEntityList();
     ```
 

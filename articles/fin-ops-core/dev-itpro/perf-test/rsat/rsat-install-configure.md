@@ -139,22 +139,22 @@ After creating the certificate, configure AOS to trust the test automation conne
 
 5.	Update the **wif.config** file by adding a new authority entry, as shown in the following example. Use **127.0.0.1** for the authority name and paste your certificate thumbprint.
 
-```
-<issuerNameRegistry type="Microsoft.Dynamics.AX.Security.SharedUtility.AxIssuerNameRegistry, Microsoft.Dynamics.AX.Security.SharedUtility">
+    ```xml
+    <issuerNameRegistry type="Microsoft.Dynamics.AX.Security.SharedUtility.AxIssuerNameRegistry, Microsoft.Dynamics.AX.Security.SharedUtility">
         <authority name="CN=127.0.0.1">
-          <keys>
-            <add thumbprint="ccbc124d0a119xxxxxxxxxxxxxxxxxxxx841e797" />
-          </keys>
-             <validIssuers>
-            <add name="CN=127.0.0.1" />
-          </validIssuers>
+            <keys>
+                <add thumbprint="ccbc124d0a119xxxxxxxxxxxxxxxxxxxx841e797" />
+            </keys>
+                <validIssuers>
+                    <add name="CN=127.0.0.1" />
+                </validIssuers>
         </authority>
-```
+    ```
 
 ## Installation on multiple machines
 If you install RSAT on more than one computer, you need to generate a new certificate for every RSAT installation. The certificate must be generated and installed on the same computer as RSAT. You can have more than one thumbprint entry in the AOS wif.config file if you want your AOS to trust connections from more than one client where RSAT is installed. The following example shows multiple thumbprints nodes.
 
-```
+```xml
 <keys>
     <add thumbprint="ccbc124d0a119xxxxxxxxxxxxxxxxxxxx841e797" />
     <add thumbprint="bbbbbbbbbbbbbbxxxxxxxxxxxxxxxxxxxx999999" />
@@ -193,14 +193,14 @@ You must generate the certificate file on the RSAT client computer. **The certif
 2. Open a command line window as Administrator.
 3. Go to the folder where you installed the Windows SDK. Your exact folder may be different, depending on where you have installed the windows SDK). You can also use Windows Kits 8.1.
 
-    ```
+    ```Console
     cd c:\Program Files (x86)\Windows Kits\10\bin\10.0.17763.0\x64
     ```
 
 4. Run the following command. When you are prompted to enter a private key password, enter **None**. 
 
-    ```
-	makecert.exe -n "CN=127.0.0.1" -ss My -sr LocalMachine -a sha256 -len 2048 -cy end -r -eku 1.3.6.1.5.5.7.3.1 c:\temp\authCert.cer
+    ```Console
+    makecert.exe -n "CN=127.0.0.1" -ss My -sr LocalMachine -a sha256 -len 2048 -cy end -r -eku 1.3.6.1.5.5.7.3.1 c:\temp\authCert.cer
     ````
 
 ### Install the certificate to the Trusted Root
