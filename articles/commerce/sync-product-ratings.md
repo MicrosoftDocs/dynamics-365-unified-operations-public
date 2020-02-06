@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Sync product ratings
+title: Sync product ratings in Dynamics 365 Commerce
 description: This topic describes how to sync product ratings in Microsoft Dynamics 365 Commerce.
 author:  gvrmohanreddy 
 manager: annbe
