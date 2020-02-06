@@ -140,14 +140,61 @@ The record is generated based on tax transactions that meet the following criter
 
 
 ## M410 (PIS) and M810 (Cofins)
-Record MA410 and M810 in SPED EFD - Contributions text files is automatically generated for those revenue transactions with fiscal value set to 2:Exempt or 3:without debit/credit. 
+Record **M410** and **M810** in SPED EFD - Contributions text files is automatically generated for those revenue transactions with fiscal value set to 2:Exempt or 3:without debit/credit. 
 
 The implementation of layout 006 introduces changes in the determination of field 02 (NAT_REC) by introducing an additional configuration instead of  using specific fixed values as defined in previous layout versions.
 
 ### Prerequisites
-Before to generate PIS and COFINS tax assessment and  enable the generation of records M410 and M810 with the correct revenue source determination , go to Fiscal books > Setup > PIS and COFINS tables > Revenue sources code, and select the following parameters:
+Before to generate PIS and COFINS tax assessment and  enable the generation of records M410 and M810 with the correct revenue source determination , go to **Fiscal books > Setup > PIS and COFINS tables > Revenue sources code**, and select the following parameters:
 
+<table>
+  <tr>
+    <th>Field</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Revenue source type</td>
+    <td>Select the type of revenue source according to the relationship included in the tables for detailing the nature of revenue by tax situation, for example tables 4.3.10, 4.3.11, etc. These tables are published by the tax authority.</td>
+  </tr>
+  <tr>
+    <td>Revenue source code</td>
+    <td>Enter the revenue source code</td>
+  </tr>
+  <tr>
+    <td>Description</td>
+    <td>Enter a description of revenue source code</td>
+  </tr>
+  <tr>
+    <td>Valid from and to date</td>
+    <td>Enter the valid dates where this revenue source is applicable for.</td>
+  </tr>
+</table>
 
+Go to **Fiscal books > Setup > PIS and COFINS tables > Revenue source per item** to specify the setup of revenue source determination.
 
-
-
+<table>
+  <tr>
+    <th>Field</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Item code</td>
+    <td>Specify whether the revenue source determination applies to a item code, a group of items, or all items:</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>**Table** – The source revenue applies to a single item code. Select the item code in the Item relation field.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>**Group** – The source revenue applies to an item group. Select the item group in the Item relation field.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>**All** – The source revenue applies to all items. Leave the Item relation field blank.</td>
+  </tr>
+  <tr>
+    <td>Item relation</td>
+    <td>If Table is selected in the item code field, select the item code that is associated with the revenue source. If Group is selected, select a item group. If All is selected, leave this field blank.</td>
+  </tr>
+</table>
