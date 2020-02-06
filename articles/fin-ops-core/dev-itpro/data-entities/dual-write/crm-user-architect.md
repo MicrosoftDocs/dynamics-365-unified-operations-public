@@ -47,4 +47,4 @@ At the start, most of these changes are coming from dual-write solutions. The pl
     - More support for currency and exchange rates, and this includes the revision of **Exchange Rate** API.
     - Unit conversions will be possible.
 
-For more information about dual-write, see the [Dual-write overview](dual-write-purpose.md). 
+For more information about dual-write, see [Dual-write overview](dual-write-purpose.md). 
