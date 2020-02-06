@@ -45,8 +45,7 @@ To set up requirements for SPED EFD – Contributions text files, follow these s
 
     The **EFD – Contributions parameters** page appears, where you can enter the required information for SPED EFD - Contributions text files.
 
-3.  In the **File location** field, enter the location where the SPED EFD - Contributions text files should be saved.
-4.  In the **Type of activity** field, select the activity type:
+3.  In the **Type of activity** field, select the activity type:
 
     - Industrial or equivalent
     - Services
@@ -54,8 +53,8 @@ To set up requirements for SPED EFD – Contributions text files, follow these s
     - Financial activity
     - Real estate activity
     - Others
-
-5.  In the **Layout version** field, select the version of the SPED EFD - Contributions layout.
+4.  Set the **Large company** option to **Yes** to identify the size of company. This option is used in SPED REINF statements.
+5.  In the **Layout version** field, select the version of the SPED EFD - 
 6.  In the **Legal entity type** field, select the type of legal entity.
 7.  In the **Company type** field, select the type of company:
 
@@ -88,6 +87,16 @@ To set up requirements for SPED EFD – Contributions text files, follow these s
     - **Detailed** – List all individual transactions on the fiscal report.
 
 17. On the **Fiscal establishment** FastTab, enter the required SPED ECD information.
+
+18. On the **Rule for taxation code** FastTab, select  the taxation code and fiscal value to avoid the generation of records C100 and D100. 
+
+## Record 0900
+
+Record 0900 in SPED EFD - Contributions text files is automatically generated to detail the composition of the revenues for the specified booking period. The generation of this record is mandatory whenever the original SPED EFD-Contributions file is transmitted
+after the regular delivery time (after the 10th working day of the 2nd month of booking period)
+
+The generation of this record is available from layout version 006 and select this option during the execution of SPED EFD-Contributions file.
+
 
 ## Record 0111
 
@@ -128,3 +137,17 @@ The record is generated based on tax transactions that meet the following criter
 </tr>
 </tbody>
 </table>
+
+
+## M410 (PIS) and M810 (Cofins)
+Record MA410 and M810 in SPED EFD - Contributions text files is automatically generated for those revenue transactions with fiscal value set to 2:Exempt or 3:without debit/credit. 
+
+The implementation of layout 006 introduces changes in the determination of field 02 (NAT_REC) by introducing an additional configuration instead of  using specific fixed values as defined in previous layout versions.
+
+### Prerequisites
+Before to generate PIS and COFINS tax assessment and  enable the generation of records M410 and M810 with the correct revenue source determination , go to Fiscal books > Setup > PIS and COFINS tables > Revenue sources code, and select the following parameters:
+
+
+
+
+
