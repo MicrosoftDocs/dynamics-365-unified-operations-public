@@ -2,7 +2,7 @@
 # required metadata
 
 title: Seamless offline switch for gift card and credit memo operations
-description: This topic provides an overview of improvements made to seamless offline switch for certain payment types. 
+description: This topic provides an overview of improvements that provide a seamless offline switch for specific payment types. 
 author: rubendel
 manager: AnnBe
 ms.date: 02/06/2020
@@ -34,28 +34,27 @@ ms.dyn365.ops.version: 10.0.8
 
 [!include [banner](../includes/banner.md)]
 
-When a point of sale (POS) device loses connection with the channel database, most POS operations and transactions that are in progress may proceed after the cashier receives a warning that the channel database connection was lost. In certain cases, transactions may have elements that rely on the real-time service, and those elements may not be supported when offline. This topic describes some functionality that helps to reduce the impact when such scenarios occur. 
+If a point of sale (POS) device loses its connection to the channel database, most POS operations and transactions that were in progress can proceed after the cashier receives a warning message about the loss of connectivity. However, in some cases, transactions have elements that rely on the real-time service, and those elements aren't supported when the POS is offline. This topic describes some functionality that helps reduce the impact of lost connectivity in these scenarios.
 
-## Conclude gift card transactions in offline mode
+## Completing gift card transactions in offline mode
 
-Internal gift cards carry a dependency on the real-time service because the balance for the gift card must be maintained centrally within Dynamics 365 Commerce Headquarters. To prevent fraud or other sync issues, gift cards are locked as soon as they are added to a transaction. The locking function ensures that the gift card can't be used on multiple terminals at the same time. When a transaction concludes, the gift card is then updated and unlocked. 
+Internal gift cards depend on the real-time service, because the balance for the gift cards must be centrally maintained in Microsoft Dynamics 365 Commerce Headquarters. To help prevent fraud or other synchronization issues, gift cards are locked as soon as they are added to a transaction. The locking function ensures that a gift card can't be used on multiple terminals at the same time. When a transaction is completed, the gift card is updated and unlocked.
 
-To prevent a gift card from getting into an unusable state in scenarios where the gift card is added to a transaction and the POS then loses connectivity, Commerce has a configurable parameter which allows the transaction with a gift card line to be concluded while offline. When this parameter is enabled, gift card transactions that are forced offline will be saved with offline transactions and synchronize to Commerce Headquarters when the offline transactions are synchronized. The synchronization will also unlock the gift card so it may be used at another terminal. 
+However, if the POS loses connectivity after a gift card has been added to a transaction, the gift card can become unusable. To help prevent this situation, Dynamics 365 Commerce has a parameter that enables transactions that include a gift card line to be completed while the POS is offline. When this parameter is turned on, gift card transactions that are forced offline will be saved together with offline transactions, and they will be synced to Commerce Headquarters when the offline transactions are synced. The synchronization will also unlock the gift card so that it can be used at another terminal.
 
 ![Offline gift card setting](../media/gift.png)
 
-Commerce parameters are typically cached, so once this parameter is updated and the distribution schedule is initiated to synchronize it to the channel, the change make take up to 24 hours to take effect. Resetting Internet Information Services (IIS) can make the changes effective immediately. 
+Commerce parameters are typically cached. Therefore, after the setting of this parameter is updated, and the distribution schedule is initiated to sync the change to the channel, the change can take up to 24 hours to take effect. To make the change effective immediately, reset Microsoft Internet Information Services (IIS).
 
-## Conclude credit memo transaction in offline mode
+## Completing credit memo transactions in offline mode
 
-Like internal gift cards, credit memos also are centrally managed in Commerce Headquarters. Commerce has a parameter that supports concluding credit memo transactions while offline. This parameter functions the same as the gift card parameter mentioned above. If the parameter is enabled and a credit memo is forced offline, it will synchronize back to the channel database along with other transactions that were performed while offline. 
+Like internal gift cards, credit memos are centrally maintained in Commerce Headquarters. Commerce has a parameter that enables credit memo transactions to be completed while the POS is offline. This parameter works like the gift card parameter that was mentioned in the previous section. When the parameter is turned on, credit memo transactions that are forced offline will be synced back to the channel database, together with other transactions that were performed while the POS was offline.
 
 ![Offline credit memo setting](../media/creditmemo.png)
 
-Commerce parameters are typically cached, so once this parameter is updated and the distribution schedule is initiated to synchronize it to the channel, the change make take up to 24 hours to take effect. Resetting IIS can make the changes effective immediately. 
-
+Commerce parameters are typically cached. Therefore, after the setting of this parameter is updated, and the distribution schedule is initiated to sync the change to the channel, the change can take up to 24 hours to take effect. To make the change effective immediately, reset IIS.
 
 ## Related topics
 
-- [Offline point of sale (POS) functionality](https://docs.microsoft.com/en-us/dynamics365/retail/pos-offline-functionality)
-- [Online and offline point of sale (POS) operations](https://docs.microsoft.com/en-us/dynamics365/retail/pos-operations)
+- [Offline point of sale (POS) functionality](https://docs.microsoft.com/dynamics365/retail/pos-offline-functionality)
+- [Online and offline point of sale (POS) operations](https://docs.microsoft.com/dynamics365/retail/pos-operations)
