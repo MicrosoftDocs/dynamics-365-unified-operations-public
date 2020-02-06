@@ -43,7 +43,7 @@ This article describes some examples of extensibility scenarios for Microsoft Dy
 
 ## Integration with Office 365, Power Automate
 
-The **Integration with Office 365** app can be used to extract team information for signed-in users from Microsoft Office 365. It references workers in Human Resources to extract employee identification types. Managers can check expiration dates of employee identification types and can send an outlook reminder if the employee identification type is expiring. Power Automate is integrated with Power App to send this reminder. Confirmation will be sent back to Power App from Power Automate when the reminder is sent. Identification types include driver's license, passport, and other acceptable forms of ID.
+The **Integration with Office 365** app can be used to extract team information for signed-in users from Microsoft Office 365. It references workers in Human Resources to extract employee identification types. Managers can check expiration dates of employee ID types. They can also send an email reminder if the employee ID type is expiring. Power Automate integrates with Power Apps to send this reminder. Confirmation will be sent back to Power Apps from Power Automate when the reminder is sent. Identification types include driver's license, passport, and other acceptable forms of ID.
 
 You can extend this app for other scenarios. For example, you can use it to show team vacation information, calendar events, and any team-specific events.
 
@@ -53,7 +53,7 @@ To download the **Integration with Office 365, Power Automate** app, go to [Inte
 
 The **Power Automate – SQL Connect and execute** template connects to Microsoft SQL Server and enables SQL queries to be run.
 
-Although this template is designed to read and update SQL tables, you can extend it and use it for other scenarios. For example, you can use it fill a staging table in Common Data Service with records from SQL Server, and to periodically synchronize the staging table by using an incremental push from SQL Server.
+Although this template reads and updates SQL tables, you can extend it and use it for other scenarios. For example, you can use it to fill a staging table in Common Data Service with records from SQL Server, and to periodically synchronize the staging table by using an incremental push from SQL Server.
 
 Advanced Query is integrated with Flow to enable Data transformation and incremental push.
 
