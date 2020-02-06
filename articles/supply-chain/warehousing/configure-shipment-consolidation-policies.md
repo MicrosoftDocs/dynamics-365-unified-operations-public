@@ -93,7 +93,7 @@ The master data needed to filtering is described first, and is a precondition fo
 1. Go to **Warehouse management \> Setup \> Product filters \> Product filters** and create two  filter codes of **Code 4** filter title.
     1. For example, **Flammable** and **Explosive**.
 
-2. Go to **Product information management \> Products \> Released products** and set up two different WHS-enabled items with **Flammable** product filter code (**Code 4** field on the **Warehouse** FastTab) and one item with **Explosive** product filter code.
+2. Go to **Product information management \> Products \> Released products** and set up two WHS-enabled itemsб one item with **Flammable** product filter code (**Code 4** field on the **Warehouse** FastTab) and another one with **Explosive** product filter code.
 
 ### Mode of delivery
 
