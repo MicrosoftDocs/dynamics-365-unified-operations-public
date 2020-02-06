@@ -200,7 +200,7 @@ You must generate the certificate file on the RSAT client computer. **The certif
 4. Run the following command. When you are prompted to enter a private key password, enter **None**. 
 
     ```Console
-	makecert.exe -n "CN=127.0.0.1" -ss My -sr LocalMachine -a sha256 -len 2048 -cy end -r -eku 1.3.6.1.5.5.7.3.1 c:\temp\authCert.cer
+    makecert.exe -n "CN=127.0.0.1" -ss My -sr LocalMachine -a sha256 -len 2048 -cy end -r -eku 1.3.6.1.5.5.7.3.1 c:\temp\authCert.cer
     ````
 
 ### Install the certificate to the Trusted Root
