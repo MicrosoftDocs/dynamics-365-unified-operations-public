@@ -42,7 +42,7 @@ This tutorial requires that you access an environment by using Remote Desktop, a
 Throughout this tutorial, baseUrl refers to the base URL of the instance.
 
 - In the cloud environment, the base URL is obtained from Microsoft Dynamics Lifecycle Services (LCS).
-- On a [local virtual machine (VM)](../dev-tools/access-instances#vm-that-is-running-on-premises), the base URL is `https://usnconeboxax1aos.cloud.onebox.dynamics.com`.
+- On a [local virtual machine (VM)](../dev-tools/access-instances.md#vm-that-is-running-on-premises), the base URL is `https://usnconeboxax1aos.cloud.onebox.dynamics.com`.
 
 ## Key concepts
 - Developing a data entity in Microsoft Visual Studio
