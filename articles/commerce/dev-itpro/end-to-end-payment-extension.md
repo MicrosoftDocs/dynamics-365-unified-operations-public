@@ -109,25 +109,30 @@ namespace Contoso.Commerce.HardwareStation.PaymentSample
             {
                 return new[]
                 {
-                    typeof(OpenPaymentTerminalDeviceRequest),
-                    typeof(BeginTransactionPaymentTerminalDeviceRequest),
-                    typeof(LockPaymentTerminalDeviceRequest),
-                    typeof(UpdateLineItemsPaymentTerminalDeviceRequest),
-                    typeof(CancelOperationPaymentTerminalDeviceRequest),
-                    typeof(AuthorizePaymentTerminalDeviceRequest),
-                    typeof(CapturePaymentTerminalDeviceRequest),
-                    typeof(VoidPaymentTerminalDeviceRequest),
-                    typeof(RefundPaymentTerminalDeviceRequest),
-                    typeof(FetchTokenPaymentTerminalDeviceRequest),
-                    typeof(EndTransactionPaymentTerminalDeviceRequest),
-                    typeof(ClosePaymentTerminalDeviceRequest),
-                    typeof(ActivateGiftCardPaymentTerminalRequest),
-                    typeof(AddBalanceToGiftCardPaymentTerminalRequest),
-                    typeof(GetGiftCardBalancePaymentTerminalRequest),
-                    typeof(GetPrivateTenderPaymentTerminalDeviceRequest)
+                        typeof(LockPaymentTerminalDeviceRequest),
+                        typeof(OpenPaymentTerminalDeviceRequest),
+                        typeof(ClosePaymentTerminalDeviceRequest),
+                        typeof(BeginTransactionPaymentTerminalDeviceRequest),
+                        typeof(EndTransactionPaymentTerminalDeviceRequest),
+                        typeof(UpdateLineItemsPaymentTerminalDeviceRequest),
+                        typeof(AuthorizePaymentTerminalDeviceRequest),
+                        typeof(CapturePaymentTerminalDeviceRequest),
+                        typeof(VoidPaymentTerminalDeviceRequest),
+                        typeof(RefundPaymentTerminalDeviceRequest),
+                        typeof(FetchTokenPaymentTerminalDeviceRequest),
+                        typeof(ExecuteTaskPaymentTerminalDeviceRequest),
+                        typeof(ActivateGiftCardPaymentTerminalRequest),
+                        typeof(AddBalanceToGiftCardPaymentTerminalRequest),
+                        typeof(GetGiftCardBalancePaymentTerminalRequest),
+                        typeof(GetPrivateTenderPaymentTerminalDeviceRequest),
+                        typeof(CancelOperationPaymentTerminalDeviceRequest),
+                        typeof(GetTransactionReferencePaymentTerminalDeviceRequest),
+                        typeof(GetTransactionByTransactionReferencePaymentTerminalDeviceRequest),
+                        typeof(CashoutGiftCardPaymentTerminalRequest)
                 };
             }
         }
+
 
         /// <summary>
         /// Executes the payment device simulator operation based on the incoming request type.
@@ -191,6 +196,11 @@ The following table describes all supported requests types that a payment connec
 | GetGiftCardBalancePaymentTerminalRequest | This request is called when the balance on the gift card is being retrieved. |
 | GetPrivateTenderPaymentTerminalDeviceRequest | This request is called when gift card numbers are retrieved from the payment terminal for gift card flows (for example, Issue gift card, Pay by gift card, or Add to gift card). |
 | ExecuteTaskPaymentTerminalDeviceRequest | This extension request can be invoked from the POS through customizations. It is used to enable additional payment-related flows. |
+| GetTransactionReferencePaymentTerminalDeviceRequest | This request is called to check the correlation ID. It is used for duplicate payment protection. |
+| GetTransactionByTransactionReferencePaymentTerminalDeviceRequest | This request is used to obtain the previous transaction by correlation ID. |
+| CashoutGiftCardPaymentTerminalRequest | This request is called when a the cash out gift card operation is executed from the POS. |
+
+
 
 ##### OpenPaymentTerminalDeviceRequest
 ###### Signature
