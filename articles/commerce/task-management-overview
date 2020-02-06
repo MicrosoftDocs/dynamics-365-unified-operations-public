@@ -1,17 +1,19 @@
 ---
 # required metadata
-title: [Task Management Overview]
+
+title: Task management for managers and workers
 description: [Dynamics 365 Commerce's Task Management is a productivity feature, for Firstline manager (Regional/Store) and Firstline workers, that gives an ability to create tasks lists , manage assignment criteria, and track status, in an integrated way between Backoffice and POS applications.]
-author: [gvrmohanreddy]
-manager: jeffb l
+author: gvrmohanreddy
+manager: annbe
 ms.date: 12/23/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
 ms.technology: 
+
 # optional metadata
-# ms.search.form:  
-#ROBOTS: 
+
+ms.search.form:  
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
@@ -19,13 +21,15 @@ ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
-# ms.search.industry: 
+ms.search.industry: 
 ms.author: gmohanv
 ms.search.validFrom: 2020-04-03
 ms.dyn365.ops.version: 10.0.9
 ---
 
-# Task management for Managers and Workers
+# Task management for managers and workers
+
+[!include [banner](includes/banner.md)]
 
 ## Overview
 
@@ -45,12 +49,15 @@ A task defines a specific piece of work or an action that someone must complete 
  
 
 
-**This document covers the following topics:**
+This section covers the following topics, follow the links to proceed.
 
-1. [Setup task management](https://docs.microsoft.com/en-us/dynamics365/)
+- [Setup task management](https://docs.microsoft.com/en-us/dynamics365/)
 
-2. [Creating task lists and tasks](https://docs.microsoft.com/en-us/dynamics365/)
+- [Creating task lists and tasks](https://docs.microsoft.com/en-us/dynamics365/)
 
-3. [Process to assign task lists to store or employees](https://docs.microsoft.com/en-us/dynamics365/)
+- [Process to assign task lists to store or employees](https://docs.microsoft.com/en-us/dynamics365/)
 
-4. [POS task management](https://docs.microsoft.com/en-us/dynamics365/)
+- [POS task management](https://docs.microsoft.com/en-us/dynamics365/)
+
+## Additional resources
+
