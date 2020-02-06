@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Set up parameters for SPED EFD
-description: This topic explains how to set up parameters for SPED EFD for Brazil. 
+title: Set SPED EFD Contributions 
+description: This topic explains how to set up parameters and generate for SPED EFD for Brazil. 
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/27/2018
@@ -27,6 +27,14 @@ ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 
 ---
+
+SPED EFD Contributions is an specific statement that all Brazilian companies must submit to report the Social Contribution Tax on Gross Revenue for Social Integration Program (PIS) and for the Social Contribution Tax on Gross Revenue for Social Security Financing (COFINS).
+
+The SPED EFD Contributions file consolidates information of all fiscal establishment and it must be submitted on a monthly base. The text file includes fiscal documents with PIS and COFINS taxable and non-taxable revenue and the cost or expenses with credit of PIS and COFINS tax.
+
+In accordance with the resolution RFB nº 1.052/2010, the EFD PIS/COFINS files must be issued by Legal entities that already has the obligation to issue Accounting and Fiscal SPED and will be considered valid after the reception of magnetic file.
+
+
 
 # Set up parameters for SPED EFD 
 
@@ -92,7 +100,7 @@ To set up requirements for SPED EFD – Contributions text files, follow these s
 
 ## Record 0900
 
-Record 0900 in SPED EFD - Contributions text files is automatically generated to detail the composition of the revenues for the specified booking period. The generation of this record is mandatory whenever the original SPED EFD-Contributions file is transmitted
+Record 0900 in SPED EFD - Contributions text file is automatically generated to detail the composition of the revenues for the specified booking period. The generation of this record is mandatory whenever the original SPED EFD-Contributions file is transmitted
 after the regular delivery time (after the 10th working day of the 2nd month of booking period)
 
 The generation of this record is available from layout version 006 and select this option during the execution of SPED EFD-Contributions file.
@@ -183,18 +191,31 @@ Go to **Fiscal books > Setup > PIS and COFINS tables > Revenue source per item**
   </tr>
   <tr>
     <td></td>
-    <td>**Table** – The source revenue applies to a single item code. Select the item code in the Item relation field.</td>
+    <td>Table – The source revenue applies to a single item code. Select the item code in the Item relation field.</td>
   </tr>
   <tr>
     <td></td>
-    <td>**Group** – The source revenue applies to an item group. Select the item group in the Item relation field.</td>
+    <td>Group – The source revenue applies to an item group. Select the item group in the Item relation field.</td>
   </tr>
   <tr>
     <td></td>
-    <td>**All** – The source revenue applies to all items. Leave the Item relation field blank.</td>
+    <td>All – The source revenue applies to all items. Leave the Item relation field blank.</td>
   </tr>
   <tr>
     <td>Item relation</td>
     <td>If Table is selected in the item code field, select the item code that is associated with the revenue source. If Group is selected, select a item group. If All is selected, leave this field blank.</td>
   </tr>
 </table>
+
+
+## Generate an EFD contributions text file
+
+1.	Go to **Fiscal books > Common > Booking period, select the related booking period and then select the **Tax statements > EFD Contributions > Execute**
+2.	In the **Type of situation** field, select the type of situation.
+4.	In the **File type** field, select either **Original** or **Substitute** .
+6.	In the **Layout version** field, select that latest version available. 
+7.	In the **Identification reason** field, select the related indentification
+8.  Set Late submition as **Yes** to generate the record 0900. 
+
+Note: Select the **Batch** action and specify the options for batch processing execution. You might use batch processing if the file should be generated later or on a server instead of on your computer.
+
