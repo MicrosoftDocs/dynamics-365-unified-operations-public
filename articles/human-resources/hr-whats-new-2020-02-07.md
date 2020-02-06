@@ -64,7 +64,7 @@ Platform update 32 will be available soon. [Find out more information about Plat
 A new Common Data Service solution will be available soon with the following changes:
 
 | Description | Change |
-| --- | --- |
+| ----------------------------------------- | --- |
 | **Job/Position** entity changes | **Compensation region** added</br>**Financial dimensions** added |
 | **Worker** entity changes | **Name sequence** added</br>**Works from home** added</br>**Language** added</br>**Seniority date** added</br>**Anniversary date** added</br>**Original hire date** added |
 | **Employment** entity changes | **Financial dimensions** added</br>**Termination reason** added</br>**Termination date** renamed from **Transition date**</br>**Probation date** added |
