@@ -1,5 +1,70 @@
 {
-  "redirections": [
+  "redirections": [    {
+      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/dual-write-bootstrap.md",
+      "redirect_url": "dual-write/bootstrap-company-data",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/dual-write-company.md",
+      "redirect_url": "dual-write/company-data",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/dual-write-customer.md",
+      "redirect_url": "dual-write/customer-mapping",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/dual-write-overview.md",
+      "redirect_url": "dual-write/dual-write-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/dual-write-troubleshooting.md",
+      "redirect_url": "dual-write/dual-write-troubleshooting",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/dual-write-initial.md",
+      "redirect_url": "dual-write/initial-sync",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/dual-write-ledger.md",
+      "redirect_url": "dual-write/ledger-mapping",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/dual-write-organization.md",
+      "redirect_url": "dual-write/organization-mapping",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/dual-write-product.md",
+      "redirect_url": "dual-write/product-mapping",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/dual-write-sites-and-warehouses.md",
+      "redirect_url": "dual-write/sites-warehouses-mapping",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/dual-write-tax.md",
+      "redirect_url": "dual-write/tax-mapping",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/dual-write-vendor.md",
+      "redirect_url": "dual-write/vendor-mapping",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/dual-write-vendor-switch.md",
+      "redirect_url": "dual-write/vendor-switch",
+      "redirect_document_id": "false"
+    },
+
     {
       "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/license-sizing-estimator-lcs.md",
       "redirect_url": "https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/license-sizing-estimator-lcs",
