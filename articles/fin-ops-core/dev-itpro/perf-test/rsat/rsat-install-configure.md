@@ -161,7 +161,7 @@ After creating the certificate, configure AOS to trust the test automation conne
                     <add name="CN=127.0.0.1" />
                 </validIssuers>
         </authority>
-```
+    ```
 
 #### If you have no Remote Desktop access to the server
 
