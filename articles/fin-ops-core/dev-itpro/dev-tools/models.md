@@ -49,6 +49,8 @@ You use the **Create model** wizard to create new models. You can access this wi
 -   **A model that is deployed in its own package** – You can use this type of model to create new model elements, and extend the metadata and business logic of referenced models. The wizard lets you select the referenced models. This type of model is compiled into its own assembly and binaries, and will simplify and reduce the cost of upgrades, deployment, and application lifecycle management in general.
 -   **A model that is a part of an existing package** – You can use this type of model to perform advanced customizations, such as overlayering source code and metadata.
 
+The **Create model** wizard will ask which layer to use. Select **usr**. This layer will store User customizations. If needed, in the future you can patch your customizations using the **usp** layer. If there are multiple versions of the same object in different layers, then the top layer will take precedence and will be used.
+
 When the **Create model** wizard is completed, if you chose to create a new project, you will be prompted to specify a name and location for it.
 
 ## Updating model parameters
