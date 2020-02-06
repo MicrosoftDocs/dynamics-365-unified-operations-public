@@ -66,7 +66,7 @@ The following example shows how to add a static method to an entity. You must ma
 - You must enable change tracking on the tables that are part of the query.
 - Create a join between the entity and the change tracking query (on the root table) to determine which records have changed in the entity.
 
-```
+```xpp
 public static Query defaultCTQuery()
     {
         Query q;

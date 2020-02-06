@@ -70,56 +70,58 @@ You can create new test cases to test the functionality in an application.
 1. In the first line of the code for the new class, indicate that the class extends the SysTestCase class.
 1. Add the following code to define the methods for the class. These methods define two additional tests.
 
-        class FMUnitTestSample extends SysTestCase
+    ```xpp
+    class FMUnitTestSample extends SysTestCase
+    {
+        public void setup()
         {
-            public void setup()
-            {
-                // Reset the test data to be sure things are clean
-                FMDataHelper::main(null);
-            }
-
-            [SysTestMethodAttribute]
-            public void testFMTotalsEngine()
-            {
-                FMRental rental;
-                FMTotalsEngine fmTotals;
-                FMRentalTotal fmRentalTotal;
-                FMRentalCharge rentalCharge;
-                FMRentalTotal expectedtotal;
-                str rentalID = '000022';
-
-                // Find a known rental
-                rental = FMRental::find(rentalID);
-
-                // Get the rental charges associated with the rental
-                // Data is seeded randomly, so this will change for each run
-                select sum(ExtendedAmount) from rentalCharge
-                        where rentalCharge.RentalId == rental.RentalId;
-
-                fmTotals = FMTotalsEngine::construct();
-                fmTotals.calculateRentalVehicleRate(rental);
-
-                // Get the totals from the engine
-                fmRentalTotal = fmTotals.totals(rental);
-
-                // Set the expected amount
-                expectedTotal = rental.VehicleRateTotal + rentalCharge.ExtendedAmount;
-
-                this.assertEquals(expectedTotal,fmRentalTotal);
-            }
-
-            [SysTestMethodAttribute]
-            public void testFMCarValidateField()
-            {
-                FMCarClass fmCar;
-
-                fmCar.NumberOfDoors = -1;
-                this.assertFalse(fmCar.validateField(Fieldnum("FMCarClass", "NumberOfDoors")));
-
-                fmCar.NumberOfDoors = 4;
-                this.assertTrue(fmCar.validateField(Fieldnum("FMCarClass", "NumberOfDoors")));
-            }
+            // Reset the test data to be sure things are clean
+            FMDataHelper::main(null);
         }
+
+        [SysTestMethodAttribute]
+        public void testFMTotalsEngine()
+        {
+            FMRental rental;
+            FMTotalsEngine fmTotals;
+            FMRentalTotal fmRentalTotal;
+            FMRentalCharge rentalCharge;
+            FMRentalTotal expectedtotal;
+            str rentalID = '000022';
+
+            // Find a known rental
+            rental = FMRental::find(rentalID);
+
+            // Get the rental charges associated with the rental
+            // Data is seeded randomly, so this will change for each run
+            select sum(ExtendedAmount) from rentalCharge
+                    where rentalCharge.RentalId == rental.RentalId;
+
+            fmTotals = FMTotalsEngine::construct();
+            fmTotals.calculateRentalVehicleRate(rental);
+
+            // Get the totals from the engine
+            fmRentalTotal = fmTotals.totals(rental);
+
+            // Set the expected amount
+            expectedTotal = rental.VehicleRateTotal + rentalCharge.ExtendedAmount;
+
+            this.assertEquals(expectedTotal,fmRentalTotal);
+        }
+
+        [SysTestMethodAttribute]
+        public void testFMCarValidateField()
+        {
+            FMCarClass fmCar;
+
+            fmCar.NumberOfDoors = -1;
+            this.assertFalse(fmCar.validateField(Fieldnum("FMCarClass", "NumberOfDoors")));
+
+            fmCar.NumberOfDoors = 4;
+            this.assertTrue(fmCar.validateField(Fieldnum("FMCarClass", "NumberOfDoors")));
+        }
+    }
+    ```
 
 1. Save the new class. After the save is complete, you will see the additional two test cases in **Test Explorer**. Right-click on the FleetManagementUnitTestSample project in **Solution Explorer**, and then click **Build.**
 1.  On the **View** menu, open **Test Explorer**. 
