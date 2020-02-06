@@ -36,15 +36,15 @@ ms.search.validFrom: 2020-01-06
 
 [!include [banner](../../includes/preview-banner.md)]
 
-Dual-write automates the data flow between Finance and Operations apps and Common Data Service. Concepts in model-driven apps like the customer, contact, quotation, and order will scale to mid and upper-mid market customers. 
+Dual-write automates the data flow between Finance and Operations apps and Common Data Service. Concepts in model-driven apps in Dynamics 365 like customer, contact, quotation, and order will scale to mid- and upper-mid market customers. 
 
-At the start, most of these changes are coming from dual-write solutions. The plan is to merge these solutions to the Common Data Service platform soon. We recommend the users to understand dual-write and embrace it from start to avoid future surprises. Some of the crucial revisions are: 
+At the start, most of these changes are coming from dual-write solutions. Later, we will merge these solutions to the Common Data Service platform. We recommend that you understand dual-write and embrace it from start to avoid future surprises. Some of the crucial revisions are: 
 + Common Data Service has new concepts like company and party. These concepts will impact all applications built on Common Data Service, including Sales, Marketing, Customer Service, and Field Service. 
 + Activities and notes are unified and expanded to support both C1s (users of the system) and C2s (customers of the system). 
-+ Common Data Service platform is getting revised, which includes the following:
++ Changes in the Common Data Service platform include:
     - The decimal data type will replace the money data type.
-    - New **Date Effectivity** framework will accommodate past, present, and future data at the same place.
-    - More support for currency and exchange rates, and this includes the revision of **Exchange Rate** API.
-    - Unit conversions will be possible.
+    - Date effectivity will support past, present, and future data in the same place.
+    - There will be more support for currency and exchange rates, including a revision of the **Exchange Rate** API.
+    - Unit conversions will be supported.
 
-For more information about dual-write, see [Dual-write overview](dual-write-purpose.md). 
+For more information about dual-write, see [Dual-write overview](dual-write-overview.md). 
