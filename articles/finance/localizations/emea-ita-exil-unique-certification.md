@@ -2,7 +2,7 @@
 # required metadata
 
 title: Unique certification
-description: This topic provides information about unique certification for companies in Italy.
+description: This topic provides information about the Unique certification for companies in Italy.
 author: ilkond
 manager: AnnBe
 ms.date: 02/03/2020
@@ -32,30 +32,30 @@ ms.dyn365.ops.version: 10.0.9
 
 [!include [banner](../includes/banner.md)]
 
-In Italy, withholding tax agents must electronically communicate the Unique certification to the Revenue agency to certify the following:
+In Italy, withholding tax agents must electronically communicate the Unique certification to the revenue agency to certify the following information:
 
--	Incomes of dependent employments
--	Self-employed incomes
--	Commissions
--	Other incomes
+- Income of dependent employments
+- Self-employed income
+- Commissions
+- Other income
 
 ## Prerequisites
 
-The following prerequisites must be met before the feature functionality can be used:
+The following prerequisites must be met before the functionality can be used:
 
 - The primary address of the legal entity must be in Italy.
-- The feature, **Unique certification** must be enabled in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+- The **Unique certification** feature must be turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
 
-## Set up Unique certification
+## Set up the Unique certification
 
-### Set up number sequences
+### Set up a number sequence
 
-1. Go to **General ledger** > **Ledger setup** >** General ledger parameters**.
+1. Go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
 2. On the **Number sequences** tab, in the **Unique certification Id** field, define a number sequence.
 
-### Set up Unique certification revenue typology
+### Set up a revenue typology for the Unique certification
 
-**Revenue typology** must to be set up on the **Vendors** page, in the **Invoice and delivery** section, in the **Revenue typology** field.
+You must set up a revenue typology in the **Revenue typology** field in the **Invoice and delivery** section of the **Vendors** page.
 
 You can import the list of possible revenue typology values by using the **Setup Unique certification values** (UniqueCertificationValueEntity) entity and the Data management framework. For more information, see [Data import and export jobs overview](../../dev-itpro/data-entities/data-import-export-job.md).
 
@@ -66,27 +66,26 @@ The source data that is used to import revenue typology values can be presented 
 - ACTIVE
 - VALUEDESCRIPTION
 
-Revenue topology values can be manually editted by going to **Tax** > **Setup** > **Withholding tax** > **Setup Unique certification values**.
+You can manually edit revenue topology values by going to **Tax** \> **Setup** \> **Withholding tax** \> **Setup Unique certification values**.
 
-### Set up Unique certification format
+### Set up a format for the Unique certification
 
-1. Go to **General ledger** > **Ledger setup** > **General ledger parameters**.
-2. On the **Withholding tax** tab, in the **Unique Certification format mapping** field, define the Electronic reporting format that will be used for Unique certification generation.
+1. Go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
+2. On the **Withholding tax** tab, in the **Unique Certification format mapping** field, define the Electronic reporting (ER) format that should be used to generate the Unique certification.
 
-## Create Unique certification
+## Generate the Unique certification
 
-1. To create a new Unique certification declaration, go to **Tax** > **Declarations** > **Withholding tax** > **Unique Certification**.
+1. Go to **Tax** \> **Declarations** \> **Withholding tax** \> **Unique Certification**.
 2. Select **New**.
 
-> [!NOTE]
-> The reporting year of the declaration will be automatically assigned as the previous year of the current system's date.
+    > [!NOTE]
+    > The year before the year of the current system date is automatically assigned as the reporting year of the declaration.
 
-3. In the **Tilte-page** section, enter the company information and the information about the person in charge of communicating the Unique certification to the Revenue agency.
-4. Select **Generate** to create the certifications for each recipient and automatically populate the other sections. The **Vendor** section contains the list of the recipients (vendors) and the informantion about vendors details. 
-5. Select **Generate details** to populate the declaration with the details of vendors transactions.
-6. In **Withholding tax** section, there are the amounts of each vendor certification. The amounts are calculated and sorted by the withholding tax codes.
+3. In the **Title-page** section, enter the company information and the information about the person who is in charge of communicating the Unique certification to the revenue agency.
+4. Select **Generate** to create the certifications for each recipient and to automatically fill in the other sections. The **Vendor** section contains the list of recipients (vendors) and the vendor details.
+5. Select **Generate details** to enter the details of vendors transactions in the declaration.
+6. The **Withholding tax** section shows the amounts of each vendor certification. The amounts are calculated and sorted by withholding tax code.
 
-## Process Unique certification
+## Process the Unique certification
 
-When Unique certification is created and populated with data, you can select **Validate** to validate the data before the output file is generated. After the output file is validated, select **Export** to generate the output electronic file in the legally required format.
-
+After the Unique certification is generated and filled with data, you can select **Validate** to validate the data before the output file is generated. After the output file is validated, select **Export** to generate the electronic output file in the legally required format.
