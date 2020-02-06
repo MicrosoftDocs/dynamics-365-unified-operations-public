@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 8.1
 
 ## Viewing agreement amounts
 
-### <a name="view-sales-agreement-amounts"></a>View sales agreement amounts
+### <a name="sales-agreement-amounts"></a>View sales agreement amounts
 
 1. On the **Sales agreements** page, select an agreement, and then, on the **Sales agreement** tab, in the **Related information** section, select **Agreement amount** to open the **Customer transactions** page.
 
@@ -60,7 +60,7 @@ ms.dyn365.ops.version: 8.1
 
     ![Vendor transactions page](media/15_Vendor_transactions.png)
 
-2. Review the amounts as described in the previous section of this topic, [View sales agreement amounts](#view-sales-agreement-amounts).
+2. Review the amounts as described in the previous section of this topic, [View sales agreement amounts](#sales-agreement-amounts).
 
 ## Viewing orders and invoices that are linked to the agreement
 
