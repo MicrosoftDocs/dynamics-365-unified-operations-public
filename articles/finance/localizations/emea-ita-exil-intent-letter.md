@@ -2,7 +2,7 @@
 # required metadata
 
 title: Intent letters - Invoicing usual exporters
-description: This topic provides information about how to set up intent letters and use them when issuing invoices.
+description: This topic provides information about how to set up intent letters and how to use them when you issue invoices.
 author: ilkond
 manager: AnnBe
 ms.date: 02/03/2020
@@ -34,69 +34,73 @@ ms.dyn365.ops.version: 10.0.9
 
 [!include [banner](../includes/preview-banner.md)]
 
-To be able to receive a supply of goods or services free of sales tax in Italy, companies that are considered usual exporters must send an intent declaration (a numbered and dated letter) to the Italian tax authorities and to compamies' contragents. 
+To receive a supply of goods or services free of sales tax in Italy, companies that are categorized as usual exporters must send an intent declaration (a numbered and dated letter) to the Italian tax authorities and to company counteragents.
  
-
 ## Prerequisites
 
-The following prerequisites must be met before invoicing.
+The following prerequisites must be met before you invoice:
 
 - The primary address of the legal entity must be in Italy.
-- The feature **Intent letters - invoicing of usual exporters** must be enabled. Go to the **Feature management** workspace to enable the feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+- The **Intent letters - invoicing of usual exporters** feature must be turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Set up Accounts receivable parameters
 
-1. Go to **Accounts receivable** > **Setup** > **Accounts receivable parameters**.
-2. On the **Ledger and sales tax** tab, in **Usual exporters** section, in **Usual exporter sales tax group** field, define a salex tax group specific for usual exportrs.
-3. Additionally, if you want to activate the automatic assignment of intent letters during invoicing, enable the **Automatic intent letter assignment** parameter.
+1. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
+2. On the **Ledger and sales tax** tab, on **Usual exporters** FastTab, in **Usual exporter sales tax group** field, define a sales tax group that is used only for usual exporters.
+3. Set the **Automatic intent letter assignment** option to **Yes** to turn on the automatic assignment of intent letters during invoicing.
 
-![Set up AR parameters](media/emea-ita-exil-intent-AR-parm.jpg)
+![Setting up Accounts receivable parameters](media/emea-ita-exil-intent-AR-parm.jpg)
 
-## Set up Sales tax codes
+## Set up sales tax codes
 
-In **Tax > Indirect taxes > Sales tax > Sales tax code**, for the selected Sales tax code, in **General** section, turn on **Affect intent letters** parameter.
+1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax code**.
+2. Select a sales tax code, and then, on the **General** FastTab, in the **Invoicing** section, set the **Affect intent letters** option to **Yes**.
 
-![Set up Sales tax code](media/emea-ita-exil-intent-tax-setup.jpg)
+![Setting up a sales tax code](media/emea-ita-exil-intent-tax-setup.jpg)
 
-## Set up Customers
+## Set up customers
 
-1. Go to **Accounts receivable** > **Customers** > **All customers**.
-2. Select a customer in the list, and in the **Invoice and delivery** section, mark the **Usual exporter** field to specify that the customer belongs to the group of usual exporters.
+1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
+2. Select a customer, and then, in the **Invoice and delivery** section, mark the **Usual exporter** field to indicate that the customer belongs to the group of usual exporters.
 
-## Set up intent letters number sequence
+## Set up a number sequence for intent letters
 
-1. Go to **Accounts receivable** > **Setup** > **Accounts receivable parameters**.
-2. On the **Number sequences** tab, in **Internal letter number** field, specify the reference to the number sequence that will be used for intent letters numbering.
+1. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
+2. On the **Number sequences** tab, in **Internal letter number** field, specify the reference to the number sequence that will be used to number intent letters.
 
-## Create intent letters
-You can create a new intent letter for a selected customer. 
+## Create an intent letter
 
-1. Go to **Accounts receivable** > **Customers** > **All customers**.
-2. Select a customer in the list, select the **Sell** tab, and in the **Setup** group, select **Setup** > **Intent letters**.
+Follow these steps to create an intent letter for a selected customer.
 
-![Intent letter](media/emea-ita-exil-intent-new-cust.jpg)
+1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
+2. Select a customer, and then, on the Action Pane, on the **Sell** tab, in the **Setup** group, select **Setup** \> **Intent letters**.
 
-3. Select **New** and enter the data of a new intent letter.
+    ![Intent letters command on the Sell tab of the Action Pane](media/emea-ita-exil-intent-new-cust.jpg)
 
-![New intent letter](media/emea-ita-exil-intent-new-cust2.jpg)
+3. Select **New**.
 
-Alternatively, you can create a new intent letter for any applicable customer by going to **Accounts receivable** > **Intent letters** > **Intent letters**.
+    ![New button](media/emea-ita-exil-intent-new-cust2.jpg)
+
+4. Enter the data for the new intent letter.
+
+Alternatively, you can create an intent letter for any applicable customer by going to **Accounts receivable** \> **Intent letters** \> **Intent letters**.
 
 The following actions are available for existing intent letters:
--	**Close intent letter** - Close an open intent letter.
--	**Cancel intent letter** - Cancel an intent letter. This operation will require a reason for cancellation.
--	**Update sales orders** - Update existing applicable sales orders with the reference to the intent letter.
--	**Open intent letter**  - Open a close intent letter.
--	**Posted sales tax** - Show the sales tax transactions related to the selected intent letter.
 
-## Use intent letters
-When you create a new sales order or a new free text invoice for a customer who is categorized as usual exporter, and the creation date is whithin the intent letter validity period, then the **Usual exporter Sales Tax Group** will be used in the order/invoice and the intent letter number will be populated if the automatic intent letters assignment parameter is activated.
+- **Close intent letter** – Close an open intent letter.
+- **Cancel intent letter** – Cancel an intent letter. This operation requires a reason for cancellation.
+- **Update sales orders** – Update existing applicable sales orders with the reference to an intent letter.
+- **Open intent letter** – Open an intent letter that was closed.
+- **Posted sales tax** – Show the sales tax transactions that are related to the selected intent letter.
 
-![New order](media/emea-ita-exil-intent-new-order.jpg)
+## Using intent letters
 
-If the amount of the invoice transaction does not exceed the amount of the intent letter, it will not be the subject for the sales tax calculation. 
+When you create a sales order or a free text invoice for a customer who is categorized as a usual exporter, if the creation date is in the validity period of the intent letter, the **Usual exporter sales tax group** value is used in the order or invoice. Additionally, the intent letter number is entered if the **Automatic intent letter assignment** option is set to **Yes**.
 
-The details of the intent letter will be also included into a printable layout of the invoice. 
+![New sales order](media/emea-ita-exil-intent-new-order.jpg)
+
+The amount of the invoice transaction will be subject to sales tax calculation only if it exceeds the amount of the intent letter.
+
+The details of the intent letter will be also included in a printable layout of the invoice.
 
 ![Print invoice](media/emea-ita-exil-intent-inv-print.jpg)
-
