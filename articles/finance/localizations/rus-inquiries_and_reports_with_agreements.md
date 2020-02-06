@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 8.1
 
 ## Viewing agreement amounts
 
-### View sales agreement amounts
+### <a name="view-sales-agreements"></a>View sales agreement amounts
 
 1. On the **Sales agreements** page, select an agreement, and then, on the **Sales agreement** tab, in the **Related information** section, select **Agreement amount** to open the **Customer transactions** page.
 
