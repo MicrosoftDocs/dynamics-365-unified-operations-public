@@ -5,7 +5,7 @@ title: Build and consume data entities
 description: This tutorial shows how to build an entity and how to consume some out-of-band (OOB) entities in an integration scenario.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 10/14/2019
+ms.date: 02/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -42,7 +42,7 @@ This tutorial requires that you access an environment by using Remote Desktop, a
 Throughout this tutorial, baseUrl refers to the base URL of the instance.
 
 - In the cloud environment, the base URL is obtained from Microsoft Dynamics Lifecycle Services (LCS).
-- On a local virtual machine (VM), the base URL is `https://usnconeboxax1aos.cloud.onebox.dynamics.com`.
+- On a [local virtual machine (VM)](../dev-tools/access-instances.md#vm-that-is-running-on-premises), the base URL is `https://usnconeboxax1aos.cloud.onebox.dynamics.com`.
 
 ## Key concepts
 - Developing a data entity in Microsoft Visual Studio
