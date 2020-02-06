@@ -93,7 +93,7 @@ Staging tables are used in import/export scenarios to provide intermediary stora
 4. In the **Data entity** wizard, specify the properties for the data entity that you're creating. Use the values that are shown in the following screen shot.
 
     > [!NOTE]
-    > The name of an entity must not have '_' or any numeric digits (0…9). Using these characters may result in mapping errors later.
+    > The name of an entity must not have '\_' or any numeric digits (0…9). Using these characters may result in mapping errors later.
 
     [![Data Entity Wizard](./media/data-entity-wizard.png)](./media/data-entity-wizard.png)
 
