@@ -38,9 +38,20 @@ Before you can use commission settlement on payment, the following prerequisites
 - The primary address of the legal entity must be in Italy.
 - In the **Feature management** workspace, turn on the **Commission settlement on payments** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
 
-## Set up...
+## Set up commission settlement by default
+In the Account receivable parameters (**Account receivable**/> **Setup**/> **Account receivable parameters**, tab **Settlement**, FastTab **Other**) set up **Commission settlement** method which will be used when creating sales order. 
+The field **Commission settlement** has two values:
+-	**On invoice**, if the commissions are made during the invoice process
+-	**On payment**, if the commissions are made during the payment process
+## Set up commission calculation
+A user may additional setup of commission calculation for **On payment** commission in **Sales and marketing**/> **Commissions**/> **Commission calculation**.
+If the **Payment thresholds** is set to **Yes** it is possible to specify two boundaries for commissions calculation:
+-	If the reached commission amount (in percentage on the reachable amount) is below the lower threshold, no commissions are accrued.
+-	When the upper bound is reached the whole reachable amount is accrued.
+-	Within the two boundaries, commissions normally accrue.
 
-Define...
+
+
 
 ## Use...
 
