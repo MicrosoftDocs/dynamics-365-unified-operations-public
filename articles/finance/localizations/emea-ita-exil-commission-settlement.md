@@ -32,10 +32,9 @@ ms.dyn365.ops.version: 10.0.10
 
 [!include [banner](../includes/banner.md)]
 
-In Italy, ...
-
+In Italy many companies use to settle the commissions to their sales agents when the invoices are paid by their customers and not when the invoice is issued. The reason is to lead the agents to debt collection.
 ## Prerequisites
-
+Before you can use commission settlement on payment, the following prerequisites must be met:
 - The primary address of the legal entity must be in Italy.
 - In the **Feature management** workspace, turn on the **Commission settlement on payments** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
 
