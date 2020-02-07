@@ -18,16 +18,16 @@ show information in the context of customers, vendors, and advance holders.
 3.  In the **From date** and **To date** fields, select the start and end of the
     report generation period.
 
->   *Note.* If you don't manually set these fields, values are entered based on
->   the selected date interval code.
+    >   *Note.* If you don't manually set these fields, values are entered based on
+    >   the selected date interval code.
 
 4.  In the **Currency type** field, select the currency type for the report:
     **Accounting currency**, **Reporting currency**, or **Indicated currency**.
 
 5.  In the **Currency** field, select the transaction currency.
 
->   *Note.* This field is available only if you select **Indicated currency** in
->   the **Currency type** field.
+    >   *Note.* This field is available only if you select **Indicated currency** in
+    >   the **Currency type** field.
 
 6.  In the **Main account** field, select the account to generate the report
     for.
@@ -41,8 +41,8 @@ show information in the context of customers, vendors, and advance holders.
     **ExpenseAndIncomeCode**, and **Worker** fields, specify dimension codes if
     you want to select transactions that have specific codes for the report.
 
->   *Note.* If you leave these fields blank, the system will select transactions
->   that have *any* dimension code for the report.
+    >   *Note.* If you leave these fields blank, the system will select transactions
+    >   that have *any* dimension code for the report.
 
 9.  Set the **Print ranges** option to **Yes** to view the query terms when you
     print the report.
@@ -54,8 +54,8 @@ show information in the context of customers, vendors, and advance holders.
 
 12. Set the **Totals only** option to **Yes** to view only total accounts.
 
->   *Note.* This option is available only if you set the **Total accounts**
->   option to **Yes**.
+    >   *Note.* This option is available only if you set the **Total accounts**
+    >   option to **Yes**.
 
 13. Set the **Show transactions** option to **Yes** to show the contractor
     transactions.
@@ -95,16 +95,16 @@ show information in the context of customers, vendors, and advance holders.
 3.  In the **From date** and **To date** fields, select the start and end of the
     report generation period.
 
->   *Note.* If you don't manually set these fields, values are entered based on
->   the selected date interval code.
+    >   *Note.* If you don't manually set these fields, values are entered based on
+    >   the selected date interval code.
 
 4.  In the **Currency type** field, select the currency type for the report:
     **Accounting currency**, **Reporting currency**, and **Indicated currency**.
 
 5.  In the **Currency** field, select the transaction currency.
 
->   *Note.* This field is activated available only if you select **Indicated
->   currency** in the **Currency type** field.
+    >   *Note.* This field is activated available only if you select **Indicated
+    >   currency** in the **Currency type** field.
 
 6.  In the **Main account** field, select the account to generate the report
     for.
@@ -118,8 +118,8 @@ show information in the context of customers, vendors, and advance holders.
     **ExpenseAndIncomeCode**, and **Worker** fields, specify dimension codes if
     you want to select transactions that have specific codes for the report.
 
->   *Note.* If you leave these fields blank, the system will select transactions
->   that have *any* dimension code for the report.
+    >   *Note.* If you leave these fields blank, the system will select transactions
+    >   that have *any* dimension code for the report.
 
 9.  Set the **Print ranges** option to **Yes** to view the query terms when you
     print the report.
@@ -131,8 +131,8 @@ show information in the context of customers, vendors, and advance holders.
 
 12. Set the **Totals only** option to **Yes** to view only total accounts.
 
->   *Note.* This option is available only if you set the **Total accounts**
->   option to **Yes**.
+    >   *Note.* This option is available only if you set the **Total accounts**
+    >   option to **Yes**.
 
 13. Set the **Show transactions** option to **Yes** to show the contractor
     transactions.
@@ -171,16 +171,16 @@ show information in the context of customers, vendors, and advance holders.
 3.  In the **From date** and **To date** fields, select the start and end of the
     report generation period.
 
->   *Note.* If you don't manually set these fields, values are entered based on
->   the selected date interval code.
+    >   *Note.* If you don't manually set these fields, values are entered based on
+    >   the selected date interval code.
 
 4.  In the **Currency type** field, select the currency type for the report:
     **Accounting currency**, **Reporting currency**, or **Indicated currency**.
 
 5.  In the **Currency** field, select the transaction currency.
 
->   *Note.* This field is available only if you select **Indicated currency** in
->   the **Currency type** field.
+    >   *Note.* This field is available only if you select **Indicated currency** in
+    >   the **Currency type** field.
 
 6.  In the **Main account** field, select the account to generate the report
     for.
@@ -194,8 +194,8 @@ show information in the context of customers, vendors, and advance holders.
     **ExpenseAndIncomeCode**, and **Worker** fields, specify dimension codes if
     you want to select transactions that have specific codes for the report.
 
->   *Note.* If you leave these fields blank, the system will select transactions
->   that have *any* dimension code for the report.
+    >   *Note.* If you leave these fields blank, the system will select transactions
+    >   that have *any* dimension code for the report.
 
 9.  Set the **Print ranges** option to **Yes** to view the query terms when you
     print the report.
@@ -207,8 +207,8 @@ show information in the context of customers, vendors, and advance holders.
 
 12. Set the **Totals only** option to **Yes** to view only total accounts.
 
->   *Note.* This option is available only if you set the **Total accounts**
->   option to **Yes**.
+    >   *Note.* This option is available only if you set the **Total accounts**
+    >   option to **Yes**.
 
 13. Set the **Show transactions** option to **Yes** to show the contractor
     transactions.
@@ -245,16 +245,16 @@ account that is in correspondence with other accounts.
 3.  In the **From date** and **To date** fields, select the start and end of the
     report generation period.
 
->   *Note.* If you don't manually set these fields, values are entered based on
->   the selected date interval code.
+    >   *Note.* If you don't manually set these fields, values are entered based on
+    >   the selected date interval code.
 
 4.  In the **Currency type** field, select the currency type for the report:
     **Accounting currency**, **Reporting currency**, or **Indicated currency**.
 
 5.  In the **Currency** field, select the transaction currency.
 
->   *Note.* This field is available only if you select **Indicated currency** in
->   the **Currency type** field.
+    >   *Note.* This field is available only if you select **Indicated currency** in
+    >   the **Currency type** field.
 
 6.  In the **Main account** field, select the account to generate the report
     for.
@@ -271,8 +271,8 @@ account that is in correspondence with other accounts.
     **ExpenseAndIncomeCode**, and **Worker** fields, specify dimension codes if
     you want to select transactions that have specific codes for the report.
 
->   *Note.* If you leave these fields blank, the system will select transactions
->   that have *any* dimension code for the report.
+    >   *Note.* If you leave these fields blank, the system will select transactions
+    >   that have *any* dimension code for the report.
 
 10. Set the **Print ranges** option to **Yes** to view the query terms when you
     print the report.
@@ -284,8 +284,8 @@ account that is in correspondence with other accounts.
 
 13. Set the **Totals only** option to **Yes** to view only total accounts.
 
->   *Note.* This option is available only if you set the **Total accounts**
->   option to **Yes**.
+    >   *Note.* This option is available only if you set the **Total accounts**
+    >   option to **Yes**.
 
 14. Set the **Show transactions** option to **Yes** to show the accountable
     person transactions.
