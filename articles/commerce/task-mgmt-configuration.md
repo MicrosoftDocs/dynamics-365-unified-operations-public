@@ -55,7 +55,7 @@ To configure task management permissions for store managers, follow these steps.
 > [!NOTE]
 > In a scenario where a non-manager persona needs task management permissions in POS, you can either grant permission to the individual, or create a new permission group with **allow task management** enabled for non-managers. 
 
-The following image shows
+The following image shows how to configure task management permissions for store managers.
 
 ![Dynamics 365 Commerce - Task management configuration](media/HQ-POS-Tasks-Notifications-User-Permission.png)
 
@@ -89,7 +89,7 @@ To configure POS notification for tasks, follow these steps.
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS \> Operations**.
 1. Search for the **Task management (1400)** operation, and then select the **Enable notifications** check box. 
 
-The following image shows
+The following image shows the POS operations screen.
 
 ![Task management configuration](media/HQ-POS-Tasks-Notifications.png)
   
