@@ -42,9 +42,9 @@ To get started using Lifecycle Services, see the [Lifecycle Services (LCS) user 
 
 ## January 2020 wave 1
 
-| **Area** | **Feature**   | **Release plan**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Admin APIs | Database movement RESTful APIs in Lifecycle Services | [2019 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/planned-features#cloud-operations-and-lifecycle-services) |
+| **Area** | **Feature**   |
+| :-------------- | :------------ |
+| Admin APIs |[ Database movement RESTful APIs in Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/database-movement-restful-apis-lifecycle-services) |
 
 ## LCS releases before November 2019
 For information about LCS releases that occurrred before November 2019, see the [blog posts published by the Lifecycle Services team on the Dynamics 365 blog](https://cloudblogs.microsoft.com/dynamics365/author/lifecycle-services-team/).
