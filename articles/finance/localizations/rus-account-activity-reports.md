@@ -31,16 +31,16 @@ rightmost column.
 3.  In the **From date** and **To date** fields, select the start and end of the
     report generation period.
 
->   *Note.* If you don't manually set these fields, values are entered based on
->   the selected date interval code.
+    >   *Note.* If you don't manually set these fields, values are entered based on
+    >   the selected date interval code.
 
 4.  In the **Currency type** field, select the currency type for the report:
     **Accounting currency**, **Reporting currency**, or **Indicated currency**.
 
 5.  In the **Currency** field, select the transaction currency.
 
->   *Note.* This field is available only if you select **Indicated currency** in
->   the **Currency type** field.
+    >   *Note.* This field is available only if you select **Indicated currency** in
+    >   the **Currency type** field.
 
 6.  Set the **To debit accounts** option to **Yes** if you want the debit for
     the selected accounts to appear as a header line. If this option is set to
@@ -50,8 +50,8 @@ rightmost column.
     **ExpenseAndIncomeCode**, and **Worker** fields, specify dimension codes if
     you want to select transactions that have specific codes for the report.
 
->   *Note.* If you leave these fields blank, the system will select transactions
->   that have *any* dimension code for the report.
+    >   *Note.* If you leave these fields blank, the system will select transactions
+    >   that have *any* dimension code for the report.
 
 8.  In the **Posting layer** field, select the posting layer.
 
@@ -65,23 +65,23 @@ rightmost column.
 
 12. Set the **Totals only** option to **Yes** to view only total accounts.
 
->   *Note.* This option is available only if you set the **Total accounts**
->   option to **Yes**.
+    >   *Note.* This option is available only if you set the **Total accounts**
+    >   option to **Yes**.
 
-   ![](media/1_Turnover_sheet_with_correspondence.jpg)
+    ![](media/1_Turnover_sheet_with_correspondence.jpg)
 
 13. Select **ОК** to generate the report.
 
-   ![](media/2_Activity_of_account.jpg)
+![](media/2_Activity_of_account.jpg)
 
->   *Note.*
+>  *Note.*
 >
->   -   Select **Voucher** to view the ledger transactions that generated the
->       activity.
+>  -   Select **Voucher** to view the ledger transactions that generated the
+>      activity.
 >
->   -   Select **Select** to change the report generation parameters.
+>  -   Select **Select** to change the report generation parameters.
 >
->   -   Select **Print** to print the report in Microsoft Excel.
+>  -   Select **Print** to print the report in Microsoft Excel.
 
    ![](media/3_Activity_of_account.jpg)
 
