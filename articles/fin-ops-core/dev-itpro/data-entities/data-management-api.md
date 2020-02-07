@@ -312,7 +312,7 @@ The **ExportToPackage** API is used to initiate an export of a data package. Thi
 POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.ExportToPackage
 BODY
 {
-    "definitionGroupId":"<Data project Id>",
+    "definitionGroupId":"<Data project name>",
     "packageName":"<Name to use for downloaded file.>",
     "executionId":"<Execution Id if it is a rerun>",
     "reExecute":<bool>,
