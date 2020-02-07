@@ -58,7 +58,7 @@ The following image shows the **My tasks** tab of the Commerce POS application.
 
 The following image shows the **Tasks list** tab of the Commerce POS application.
 
-![Dynamics 365 Commerce - Task management](media/POS-task-lists-management.png)
+![Task management - "Tasks list" tab of the Commerce POS application](media/POS-task-lists-management.png)
 
 ## Additional resources
 
