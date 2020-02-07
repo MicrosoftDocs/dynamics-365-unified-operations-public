@@ -2295,6 +2295,10 @@
             href: general-ledger/import-currency-exchange-rates.md
           - name: Ledger translation
             href: localizations/rus-ledger-translation-procedure.md
+          - name: Turnover balance statement reports
+            href: localizations/rus-turnover-balance-statement-reports.md
+          - name: Account activity reports
+            href: localizations/rus-account-activity-reports.md
         - name: Advance holders
           items:
           - name: Russia advance holders overview
