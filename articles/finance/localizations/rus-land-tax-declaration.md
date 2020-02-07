@@ -147,7 +147,7 @@ Here is an overview of the steps for setting up land tax:
 
 3.  Set the following values for the tax allowance.
 
-    | **Field**       | **Description**                                                                                                                                                                                                                       |
+    | Field       | Description                                                                                                                                                                                                                       |
     |-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Privilege       | Enter the tax allowance code.                                                                                                                                                                                                         |
     | Type of tax     | Select **Land tax**.                                                                                                                                                                                                                  |
@@ -293,11 +293,12 @@ company divisions.
     same as the location of the organization's head office.
 
     > [!NOTE]
-    For land assets that are located in territories that differ from
+    > For land assets that are located in territories that differ from
     the organization's main location, the tax authority that land tax is
     reported to is defined as the tax authority that has the same OKTMO code as
-    the separate division that is associated with the land location. For
-    information about how to associate a fixed asset with a location, see the
+    the separate division that is associated with the land location. 
+    
+    > For information about how to associate a fixed asset with a location, see the
     [Specify the location of the land](#specify-the-location-of-the-land)
     section later in this topic.
 
@@ -514,12 +515,12 @@ change in cadastral value.
     specify any other values that have changed: **Category**, **Cadastral
     number**, **Owned share numerator**, or **Owned share denominator**.
 
-    > [!NOTE]
-    > If this change is the first change in cadastral value, you must also create a line for the previous values that were originally entered in the fixed asset record.
-    > 
-    > When the line for the change in cadastral value is created, corresponding fields in the fixed asset record can no longer be edited. They show the actual values from the tax reporting data history record.
-   >
-   > Use the **History of tax reporting data** page to define the history of tax allowance changes.
+    >  [!NOTE]
+    >  If this change is the first change in cadastral value, you must also create a line for the previous values that were originally entered in the fixed asset record.
+    >  
+    >  When the line for the change in cadastral value is created, corresponding fields in the fixed asset record can no longer be edited. They show the actual values from the tax reporting data history record.
+    >  
+    >  Use the **History of tax reporting data** page to define the history of tax allowance changes.
 
 7.  In the **Land tax exemption (art 387)** field, specify the code for the tax
     allowance as an exemption from tax in accordance with federal law.
@@ -556,7 +557,7 @@ changes, follow these steps to specify the new cadastral cost in each territory.
     specify any other values that have changed: **Owned share numerator** or
     **Owned share denominator**.
 
->  !NOTE] 
+>  [!NOTE] 
 >  If this change is the first change in cadastral value, you must also create a line for the previous values that were originally entered in the distribution record.
 >
 >  When the line for the change in cadastral value is created, corresponding fields in the distribution record can no longer be edited. They show the actual values from the history record.
@@ -736,7 +737,7 @@ Generate a land tax declaration
     imported. (Most of the data that is imported is presented in the Russian
     language.)
 
-    | **Processing**       | **Processing code**  | **Name**                               |
+    | Processing       | Processing code  | Name                               |
     |----------------------|----------------------|----------------------------------------|
     | Land tax declaration | ЗемНалог 5.06 (2018) | Декларация по земельному налогу (2018) |
 
@@ -796,7 +797,7 @@ quarter.
 12. In the **Electronic reporting parameters** dialog box, on the **Parameter**
     FastTab, set the following values.
 
-    | **Field**                                                        | **Description**                                                                                                                             |
+    | Field                                                        | Description                                                                                                                             |
     |------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
     | At place of                                                      | Select the place where the declaration is submitted: **Ground location** or **Registration of the largest taxpayer**.                       |
     | Correction number                                                | Enter the number of the correction if you didn't specify it in step 7.                                                                      |
