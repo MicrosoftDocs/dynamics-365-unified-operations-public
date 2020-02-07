@@ -432,7 +432,9 @@ Today is:  2009-01-13
 ## datetime2Str
 Converts a **utcdatetime** value into a string.
 
-    str datetime2Str(utcdatetime datetime [, int flags = DateFlags::None])
+```xpp
+str datetime2Str(utcdatetime datetime [, int flags = DateFlags::None])
+```
 
 ### Parameters
 

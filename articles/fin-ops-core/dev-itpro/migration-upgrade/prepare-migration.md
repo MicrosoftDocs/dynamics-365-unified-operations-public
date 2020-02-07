@@ -178,10 +178,12 @@ As part of the auto-migration, the Action Pane rule is run to identify redundant
 2.  Replace the TODO and the line of code as shown below.
     -   The state of the system-defined **Delete** button is controlled by the AllowDelete property on the firstmaster datasource. By setting AllowDelete to false, the delete task is kept from executing when the keyboard shortcut is used.
 
-            // Delete button
-            /* TODO: (Code Upgrade) [Action Pane Rule] Please consider moving all references to the form task override method and remove the control: DeleteCmdButton */
-            deleteCmdButton.enabled(purchCommitmentHeader && purchCommitmentHeader.canDelete());
-            PurchCommitmentHeader_DS.allowDelete(purchCommitmentHeader && purchCommitmentHeader.canDelete());
+        ```xpp
+        // Delete button
+        /* TODO: (Code Upgrade) [Action Pane Rule] Please consider moving all references to the form task override method and remove the control: DeleteCmdButton */
+        deleteCmdButton.enabled(purchCommitmentHeader && purchCommitmentHeader.canDelete());
+        PurchCommitmentHeader_DS.allowDelete(purchCommitmentHeader && purchCommitmentHeader.canDelete());
+        ```
 
 3.  In the editor, find and remove DeleteCmdButton from the form design. 
 
@@ -196,18 +198,20 @@ As part of the auto-migration, the Action Pane rule is run to identify redundant
 
 6.  Because the visibility of the **Edit** button is controlled by the View/Edit mode of the form, you will need to modify this code so it sets that property. Replace the TODO and the line of code as shown in the following graphic.
 
-        /* TODO: (Code Upgrade) [Action Pane Rule] Please consider moving all references to the form task override method and remove the control: EditCmdButton */
-        editCmdButton.enabled(purchCommitmentHeader && isInDraftOrUnderRevisionStatus && !isInWorkFlowReviewState && !isLineReferenced);
+    ```xpp
+    /* TODO: (Code Upgrade) [Action Pane Rule] Please consider moving all references to the form task override method and remove the control: EditCmdButton */
+    editCmdButton.enabled(purchCommitmentHeader && isInDraftOrUnderRevisionStatus && !isInWorkFlowReviewState && !isLineReferenced);
 
-        if(purchCommitmentHeader && isInDraftOrUnderRevisionStatus && !isInWorkFlowReviewState && !isLineReferenced)
-        {
-            element.design().ViewEditMode(ViewEditMode::Auto);
-        }
-        else
-        {
-            element.design().ViewEditMode(ViewEditMode::View);
+    if(purchCommitmentHeader && isInDraftOrUnderRevisionStatus && !isInWorkFlowReviewState && !isLineReferenced)
+    {
+        element.design().ViewEditMode(ViewEditMode::Auto);
+    }
+    else
+    {
+        element.design().ViewEditMode(ViewEditMode::View);
 
-        }
+    }
+    ```
 
 7.  Double-click the other TODO for this button.
 
@@ -215,71 +219,75 @@ As part of the auto-migration, the Action Pane rule is run to identify redundant
 
 8.  Inspect the code on the modeled **Edit** button. This logic will need to be moved to the form’s task() method.
 
-        [Control("CommandButton")]
-        class EditCmdButton
+    ```xpp
+    [Control("CommandButton")]
+    class EditCmdButton
+    {
+        /* TODO: (Code Upgrade) [Action Pane Rule] Please consider moving this button code to the task override method and remove the control EditCmdButton. */
+        void clicked()
         {
-            /* TODO: (Code Upgrade) [Action Pane Rule] Please consider moving this button code to the task override method and remove the control EditCmdButton. */
-            void clicked()
+            if (purchCommitmentHeader.WorkflowApprovalState ==     
+                PurchCommitmentWorkflowApprovalState_PSN::Approved)
             {
-                if (purchCommitmentHeader.WorkflowApprovalState ==     
-                    PurchCommitmentWorkflowApprovalState_PSN::Approved)
-                {
-                    if (Box::yesNo(strFmt("@SPS2140", purchCommitmentHeader.CommitmentNumber), 
-                        DialogButton::No) == DialogButton::Yes)
-                    {
-                        super();
-
-                        PurchCommitmentHeader_PSN::setWorkflowState(purchCommitmentHeader.RecId, 
-                          PurchCommitmentWorkflowApprovalState_PSN::NotSubmitted);
-                    }
-                }
-                else
+                if (Box::yesNo(strFmt("@SPS2140", purchCommitmentHeader.CommitmentNumber), 
+                    DialogButton::No) == DialogButton::Yes)
                 {
                     super();
+
+                    PurchCommitmentHeader_PSN::setWorkflowState(purchCommitmentHeader.RecId, 
+                        PurchCommitmentWorkflowApprovalState_PSN::NotSubmitted);
                 }
             }
+            else
+            {
+                super();
+            }
         }
+    }
+    ```
 
 9.  On the left side of the Visual Studio designer, right-click **Methods** &gt; **Override**, and select **Task**, to add an override for the form’s Task method.
 10. Update the task method as shown below so that the code from above is triggered when the system-defined **Edit** button is clicked.
 
+    ```xpp
+    /// 
+        ///
         /// 
-            ///
-            /// 
-            /// 
-            /// 
-            public int task(int _taskId)
+        /// 
+        /// 
+        public int task(int _taskId)
+        {
+            #Task
+            int ret;
+
+            switch (_taskId)
             {
-                #Task
-                int ret;
+                case #taskEditRecord:
 
-                switch (_taskId)
-                {
-                    case #taskEditRecord:
-
-                        if (purchCommitmentHeader.WorkflowApprovalState == PurchCommitmentWorkflowApprovalState_PSN::Approved)
-                        {
-                            if (Box::yesNo(strFmt("@SPS2140", purchCommitmentHeader.CommitmentNumber), DialogButton::No) == DialogButton::Yes)
-                            {
-                                ret = super(_taskId);
-
-                                PurchCommitmentHeader_PSN::setWorkflowState(purchCommitmentHeader.RecId, PurchCommitmentWorkflowApprovalState_PSN::NotSubmitted);
-                            }
-                        }
-                        else
+                    if (purchCommitmentHeader.WorkflowApprovalState == PurchCommitmentWorkflowApprovalState_PSN::Approved)
+                    {
+                        if (Box::yesNo(strFmt("@SPS2140", purchCommitmentHeader.CommitmentNumber), DialogButton::No) == DialogButton::Yes)
                         {
                             ret = super(_taskId);
+
+                            PurchCommitmentHeader_PSN::setWorkflowState(purchCommitmentHeader.RecId, PurchCommitmentWorkflowApprovalState_PSN::NotSubmitted);
                         }
-
-                        break;
-
-                    default:
+                    }
+                    else
+                    {
                         ret = super(_taskId);
-                        break;
-                }
+                    }
 
-                return ret;
+                    break;
+
+                default:
+                    ret = super(_taskId);
+                    break;
             }
+
+            return ret;
+        }
+    ```
 
 11. In the Editor, find and remove the **EditCmdButton** from the form design. 
 
@@ -319,9 +327,11 @@ In Finance and Operations, X++ is completely intermediate-language (IL) based an
 13. Stop debugging.
 14. To fix the exception, change the method declaration from FormBuildStringControl to FormBuildCheckBoxControl.
 
-        protected FormBuildStringControl getBuildControl()
-        protected FormBuildCheckBoxControl getBuildControl()
-
+    ```xpp
+    protected FormBuildStringControl getBuildControl()
+    protected FormBuildCheckBoxControl getBuildControl()
+    ```
+    
 15. Rebuild the project, and press **Ctrl+F5**. The form should open successfully because the casting error is resolved.
 
     [![a](./media/a-1024x576.png)](./media/a.png)

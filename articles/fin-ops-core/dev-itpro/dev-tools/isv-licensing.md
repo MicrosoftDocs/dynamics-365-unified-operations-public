@@ -158,9 +158,10 @@ Follow these steps to enable licensing for your solution.
     | usercount       | Optional: The number that custom validation logic can use as required. This could be users, but is not limited to users. |
 
     Here is an example.
-
-        C:\AOSService\PackagesLocalDirectory\Bin\axutil genlicense /file:c:\templicense.txt /certificatepath:c:\tempisvcert.pfx /licensecode:ISVLicenseCode /customer:TAEOfficial.ccsctp.net /serialnumber:4dbfcf74-c5a6-4727-b638-d56e51d1f381 /password:********
-
+ 
+    ```Console
+    C:\AOSService\PackagesLocalDirectory\Bin\axutil genlicense /file:c:\templicense.txt /certificatepath:c:\tempisvcert.pfx /licensecode:ISVLicenseCode /customer:TAEOfficial.ccsctp.net /serialnumber:4dbfcf74-c5a6-4727-b638-d56e51d1f381 /password:********
+    ``` 
 
 
 3.  Import the license into the target environment.
@@ -180,7 +181,9 @@ Follow these steps to enable licensing for your solution.
 
     Here is an example.
 
-        C:\AOSService\PackagesLocalDirectory\Bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --setupmode importlicensefile --metadatadir c:\packages --bindir c:\packages --sqlserver . --sqldatabase axdbrain --sqluser AOSUser --sqlpwd ******** --licensefilename c:\templicense.txt
+    ```Console
+    C:\AOSService\PackagesLocalDirectory\Bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --setupmode importlicensefile --metadatadir c:\packages --bindir c:\packages --sqlserver . --sqldatabase axdbrain --sqluser AOSUser --sqlpwd ******** --licensefilename c:\templicense.txt
+    ```
 
 4.  The corresponding configuration key will be available and enabled on the **License configuration** page. By default, the configuration is enabled. For example, see the **ISVConfigurationKey1** configuration key in the following screenshot. 
 
@@ -221,25 +224,35 @@ For Platform update 32 and earlier:
 
 1.  For test purposes, create a self-signed CA certificate. Use the Visual Studio tools prompt to run the following command.
 
-        makecert -r -pe -n "CN=IsvCertTestAuthority O=IsvCertTestAuthority" -ss CA -sr LocalMachine -a sha256 -len 2048 -cy authority -sky signature -b 01/01/2016 -sv c:\temp\CA.pvk c:\temp\CA.cer
+    ```Console
+    makecert -r -pe -n "CN=IsvCertTestAuthority O=IsvCertTestAuthority" -ss CA -sr LocalMachine -a sha256 -len 2048 -cy authority -sky signature -b 01/01/2016 -sv c:\temp\CA.pvk c:\temp\CA.cer
+    ```
 
     For more information, see the [MakeCert](https://msdn.microsoft.com/library/windows/desktop/aa386968(v=vs.85).aspx) documentation.
 
 2.  Create a certificate by using the CA.
 
-        makecert -pe -n "CN=IsvCertTest O=IsvCertTest" -ss ISVStore -sr LocalMachine -a sha256 -len 2048 -cy end -sky signature -eku 1.3.6.1.5.5.7.3.3 -ic c:\temp\ca.cer -iv c:\temp\ca.pvk -b **/**/**** -sv c:\temp\isvcert.pvk c:\temp\isvcert.cer
+    ```Console
+    makecert -pe -n "CN=IsvCertTest O=IsvCertTest" -ss ISVStore -sr LocalMachine -a sha256 -len 2048 -cy end -sky signature -eku 1.3.6.1.5.5.7.3.3 -ic c:\temp\ca.cer -iv c:\temp\ca.pvk -b **/**/**** -sv c:\temp\isvcert.pvk c:\temp\isvcert.cer
+    ```
 
 3.  Convert the ISV certificate to PFX format.
 
-        pvk2pfx -pvk c:\temp\isvcert.pvk -spc c:\temp\isvcert.cer -pfx c:\temp\isvcert.pfx -po ********
+    ```Console
+    pvk2pfx -pvk c:\temp\isvcert.pvk -spc c:\temp\isvcert.cer -pfx c:\temp\isvcert.pfx -po ********
+    ```
 
 4.  For a test scenario, import the self-signed CA certificate manually on all the AOS instances.
 
-        certutil -addstore root c:\temp\ca.cer
+    ```Console
+    certutil -addstore root c:\temp\ca.cer
+    ```
 
     However, if a self-signed ISV certificate was used, that certificate must be imported instead of the CA certificate.
 
-        certutil -addstore root c:\temp\isvcert.cer
+    ```Console
+    certutil -addstore root c:\temp\isvcert.cer
+    ```
 
 For Platform update 33 and later:
 
@@ -266,3 +279,4 @@ For Platform update 33 and later:
         ```
 
 2. Import the exported *cer* file into the **Trusted Root Certificate Authorities\Certificates** folder for the local machine.
+

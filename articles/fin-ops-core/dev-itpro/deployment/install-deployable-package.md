@@ -103,7 +103,7 @@ Based on the topology information in the DefaultTopologyData.xml file, you must 
 
 - On any VM, run the following command to generate the runbook.
 
-    ```
+    ```Console
     AXUpdateInstaller.exe generate -runbookid=[runbookID] -topologyfile=[topologyFile] -servicemodelfile=[serviceModelFile] -runbookfile=[runbookFile]
     ```
 
