@@ -4,7 +4,7 @@
 title: Data management package REST API
 description: This topic describes the Data management framework's package REST API.
 author: Sunil-Garg
-ms.date: 12/04/2019
+ms.date: 02/07/2019
 manager: AnnBe
 ms.topic: article
 ms.prod: 
