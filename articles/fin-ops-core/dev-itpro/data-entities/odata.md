@@ -88,7 +88,7 @@ The following are the high-level features that are enabled for the OData service
     - $orderby
     - $skip
     - $top
-    - $expand
+    - $expand (only first level expansion is supported)
     - $select
 
 - The OData service supports serving driven paging with a maximum page size of 1,000.
