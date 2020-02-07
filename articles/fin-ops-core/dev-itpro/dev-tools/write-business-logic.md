@@ -5,7 +5,7 @@ title: Write business logic by using C# and X++ source code
 description: The primary goal of this tutorial is to illustrate the interoperability between C# and X++ in Microsoft Dynamics AX. In this tutorial, you’ll write business logic in C# source code and in X++ source code. 
 author: pvillads
 manager: AnnBe
-ms.date: 11/26/2019
+ms.date: 02/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
