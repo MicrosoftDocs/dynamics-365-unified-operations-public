@@ -147,8 +147,15 @@ The PDF conversion option can be turned on only for file components that are use
 
 > [!NOTE]
 > This feature is a preview feature and is subject to the terms of use that are described in [Supplemental Terms of Use for Microsoft Dynamics 365 Previews](https://go.microsoft.com/fwlink/?linkid=2105274).
->
+
+> [!NOTE]
 > The PDF conversion option is implemented only for cloud deployments.
+>
+> The maximum number of pages of the produced PDF document is limited to 300 pages.
+>
+> The only landscape page orientation is currently supported in the PDF document that is produced from an Excel output.
+>
+> The only common system fonts of the Window operating system are used for the conversion of an output that contains no embedded fonts.
 
 ### Use the PDF conversion option
 
