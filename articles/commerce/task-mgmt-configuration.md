@@ -36,36 +36,33 @@ This topic describes how to configure task management features in Microsoft Dyna
 
 ## Overview
 
-For Commerce managers and employees to be able to use Dynamics 365 Commerce task management features, task management must first be configured. Configuration steps include granting permissions to managers and employees, distributing permissions to point of sale (POS) clients, setting up POS notifications, and configuring the tasks tile on a POS application home page. 
+For Commerce managers and employees to be able to use Dynamics 365 Commerce task management features, task management must first be configured. Configuration steps include granting permissions to managers and employees, distributing permissions to point of sale (POS) clients, setting up POS notifications, and configuring the tasks tile on a POS application home screen. 
 
 ## Configure permissions for store managers
 
-Every worker in the store can view all tasks assigned to the given store, and update status for tasks that are assigned to them. However, personas like store managers need task management permissions to manage tasks assigned to the store and even create ad-hoc tasks. 
+Every worker in the store can view all tasks assigned to the given store, and update status for tasks that are assigned to them. However, personas like store managers need task management permissions to manage tasks assigned to the store and create ad-hoc tasks. 
 
 To configure task management permissions for store managers, follow these steps.
 
 1. Go to **Retail and Commerce \> Employees \> Permissions Groups**.
 1. Select a specific permission group (for example, **Manager**), and then select **Edit**. 
 1. On the **Permissions** tab, select **Yes** for **Allow task management**.
-
-
-1. On the **Notifications** tab, add the **Task management** operation, and then enter a value for **Display order**, e.g. 2 in your already have Order fulfillment notifications.  
-1. For more details on configurating POS notification and what jobs to be run refer to [Show order notifications in the point of sale (POS)](https://docs.microsoft.com/en-us/dynamics365/retail/notifications-pos?toc=/dynamics365/commerce/toc.json) .
+1. On the **Notifications** tab, add the **Task management** operation, and then enter a value for **Display order**, for example "2" if you already have order fulfillment notifications displayed first.  
 	
 > [!NOTE]
 > In a scenario where a non-manager persona needs task management permissions in POS, you can either grant permission to the individual, or create a new permission group with **allow task management** enabled for non-managers. 
 
 The following image shows how to configure task management permissions for store managers.
 
-![Dynamics 365 Commerce - Task management configuration](media/HQ-POS-Tasks-Notifications-User-Permission.png)
+![How to configure task management permissions for store managers](media/HQ-POS-Tasks-Notifications-User-Permission.png)
 
 ## Configure permissions for employees
 
-Employees need to have permissions configured to create tasks lists, manage assignment criteria, and configure recurrence for any task lists. This is done by assigning the employee the retail task manager role.
+Employees need to have permissions configured to create tasks lists, manage assignment criteria, and configure the recurrence of any task lists. This is done by assigning the employee the retail task manager role.
 
 To configure permissions for an employee, follow these steps. 
 
-1. Go to **Retail and Commerce \> Employees \> Users** 
+1. Go to **Retail and Commerce \> Employees \> Users**.
 1. Find and select a specific employee. 
 1. On the employee's role tab, select **+ Assign roles**.
 1. On the **Assign roles to user** flyout menu, find the **Retail task manager** role and then select **OK**.
@@ -91,11 +88,13 @@ To configure POS notification for tasks, follow these steps.
 
 The following image shows the POS operations screen.
 
-![Task management configuration](media/HQ-POS-Tasks-Notifications.png)
+![Task management - POS operations screen](media/HQ-POS-Tasks-Notifications.png)
+
+For more details on configurating POS notification, see [Show order notifications in the point of sale (POS)](notifications-pos.md).
   
 ## Configure the tasks tile on a POS application home screen
 
-Before configuring the task tile on a POS application home page, see [**Screen layouts for the point of sale (POS)**](pos-screen-layouts.md) to learn on how to configure and add new buttons to a POS screen layout.
+Before configuring the task tile on a POS application home page, see [**Screen layouts for the point of sale (POS)**](pos-screen-layouts.md) to learn how to configure and add new buttons to a POS screen layout.
 
 To configure the tasks tile on a POS application home page, follow these steps.
 
@@ -107,7 +106,6 @@ To configure the tasks tile on a POS application home page, follow these steps.
 The following image shows an example of a task tile on a POS home screen.
 
 ![Task management - Task tile on a POS home screen](media/POS-home-screen-tasks-button-image.png)
-
 
 ## Additional resources
 
