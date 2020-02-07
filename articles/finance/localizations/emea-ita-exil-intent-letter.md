@@ -5,7 +5,7 @@ title: Intent letters - Invoicing usual exporters
 description: This topic provides information about how to set up intent letters and how to use them when you issue invoices.
 author: ilkond
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 02/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -61,7 +61,7 @@ The following prerequisites must be met before you invoice:
 ## Set up customers
 
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
-2. Select a customer, and then, in the **Invoice and delivery** section, mark the **Usual exporter** field to indicate that the customer belongs to the group of usual exporters.
+2. Select a customer, and then, in the **Invoice and delivery** section, select the **Usual exporter** option to indicate that the customer belongs to the group of usual exporters.
 
 ## Set up a number sequence for intent letters
 
@@ -74,13 +74,7 @@ Follow these steps to create an intent letter for a selected customer.
 
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
 2. Select a customer, and then, on the Action Pane, on the **Sell** tab, in the **Setup** group, select **Setup** \> **Intent letters**.
-
-    ![Intent letters command on the Sell tab of the Action Pane](media/emea-ita-exil-intent-new-cust.jpg)
-
 3. Select **New**.
-
-    ![New button](media/emea-ita-exil-intent-new-cust2.jpg)
-
 4. Enter the data for the new intent letter.
 
 Alternatively, you can create an intent letter for any applicable customer by going to **Accounts receivable** \> **Intent letters** \> **Intent letters**.
