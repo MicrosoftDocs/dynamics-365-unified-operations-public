@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: POS Inbound Inventory Operation
-description: This topic describes capabilities of the POS Inbound Inventory operation
+title: POS inbound inventory operation
+description: This topic describes capabilities of the POS inbound inventory operation.
 author: hhaines
 manager: annbe
 
-ms.date: 01/23/2020
+ms.date: 02/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -32,43 +32,44 @@ ms.dyn365.ops.version: 10.0.9
 
 ---
 
-# Inbound Inventory Operations in POS
+# Inbound inventory operations in POS
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
-## Inbound Inventory Operations in POS
 
-The **Inbound operations** is a new POS operation that is available for public preview beginning with the April 2020 release (10.0.9/PU33). This operation, along with the new **Outbound operation** is intended to replace the existing **Picking and receiving** POS operation.  These operations will be generally available with the May 2020 (10.0.10) release.
+"Inbound operations"  and "outbound operations" in the point of sale (POS) operation replace "picking and receiving" in POS in Commerce versions 10.0.10 and higher.
 
 > [!NOTE] 
->After May 2020, any new features that will be added to the POS application related to store inventory receiving against purchase orders and transfer orders will be made to the new **Inbound operations** operation. It is recommended that users who are currently leveraging the existing **Picking and receiving** operation in the POS begin to establish a strategy for moving off of this operation and onto the new Inbound an Outbound operations.   The **Picking and receiving** POS operation is not going to be removed from the product, but there will be no additional investments made to this operation from a functional or performance perspective after the 10.0.9 release.
+> Any new features that are added to the POS application related to store inventory receiving against purchase orders and transfer orders will be made to the inbound operations operation beginning with version 10.0.10. We recommend that users who are currently using the picking and receiving operation in POS establish a strategy for moving off of this operation and onto the new inbound and outbound operations. The picking and receiving POS operation will not be removed from the product, but there will be no additional investments made to this operation from a functional or performance perspective after version 10.0.9.
 
-## Pre-requisite: Using the Asynchronous Document Framework
+## Prerequisite: asynchronous document framework
 
-The new **Inbound operation** contains performance improvements to ensure that users with high volumes of receipt postings across many stores or companies with large inventory documents can process these documents to HQ without time-outs or unnecessary failures.   This capability requires the use of an asynchronous document framework.
+The inbound operation contains performance improvements to ensure that users with high volumes of receipt postings across many stores or companies with large inventory documents can process these documents to Commerce Headquarters (HQ) without time outs or unnecessary failures. This capability requires the use of an asynchronous document framework.
 
-With the asynchronous document framework, users will now be able to commit their inbound document changes from POS to HQ and move onto other tasks while the processing to HQ occurs in the background.   Users can check on the status of the document through the POS **Inbound operation** document list page as desired to ensure the posting was successful.  Users will also be able to see any documents that failed to post to HQ from within the POS application through the **Inbound operation** active document list.  For any failed documents, POS users can make corrections to the document and retry processing of the document to HQ.
+With the asynchronous document framework, users can commit their inbound document changes from POS to HQ and move onto other tasks while the processing to HQ occurs in the background. Users can check the status of the document through the POS **Inbound operation** document list page to ensure the posting was successful. Users can also see any documents that failed to post to HQ from within the POS application through the inbound operation active document list. If a document fails, POS users can make corrections to the document and retry processing to HQ.
 
-**The async document framework must be configured before a company attempts to use the Inbound operation in POS.**
+> [!IMPORTANT] 
+> The asynchronous document framework must be configured before a company attempts to use the inbound operation in POS.
 
-To configure the asynchronous document framework, perform the following tasks:
+To configure the asynchronous document framework, complete the following tasks.
 
-**Create and configure a new number sequence**
+### Create and configure a new number sequence
 
-  1. On the **Organization administration>Number sequences>Number Sequences** page, create a new number sequence.
-  2. Enter a user-defined information in the **Number sequence code** and **Name** fields
-  3. Expand the **References** section, click **Add** and choose **Commerce parameters** in the **Area**
-  4. Choose **Retail document operation identifier** for the **Reference** field
-  5. To ensure there are no performance issues, the **Continuous** setting found in the **General>Setup** section of this form should be set to **No**.
+  1. On the **Organization administration > Number sequences > Number Sequences** page, create a new number sequence.
+  2. Enter user-defined information in the **Number sequence code** and **Name** fields.
+  3. Expand the **References** section. Click **Add** and then choose **Commerce parameters** in the **Area** field.
+  4. Choose **Retail document operation identifier** for the **Reference** field.
+  5. To ensure there are no performance issues, set the **Continuous** parameter in the **General > Setup** section to **No**.
 
-**Create and schedule two new batch jobs for the document processing and monitoring tasks.**  
+### Create and schedule two new batch jobs for the document processing and monitoring tasks  
 
-These jobs will be used to process documents that have failed or timed out or when the number of active inventory documents in processing from POS exceeds a system configured value.
+The batch jobs you create will be used to process documents that have failed or timed out, or when the number of active inventory documents in processing from POS exceeds a system-configured value.
 
-  1. From the **System Administration>Inquiries>Batch jobs** page, configure 2 new batch jobs
-      - Configure one job to run the **RetailDocumentOperationMonitorBatch** class
-      - Configure another job to run the **RetailDocumentOperationProcessingBatch** class
-  2. Schedule these batch jobs to run on recurrence.  A suggested schedule would be to run them every 5 minutes.
+  1. From the **System Administration > Inquiries > Batch jobs** page, configure two new batch jobs.
+      - Configure one job to run the **RetailDocumentOperationMonitorBatch** class.
+      - Configure another job to run the **RetailDocumentOperationProcessingBatch** class.
+  2. Schedule these batch jobs to run on recurrence. For example, set the schedule to run every five minutes.
 
 ## Pre-requisite: Adding the Inbound operation to your POS screen layout
 
