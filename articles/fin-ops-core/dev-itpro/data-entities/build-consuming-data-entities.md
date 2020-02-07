@@ -36,6 +36,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This tutorial shows how to build an entity and how to consume some out-of-band (OOB) entities in an integration scenario. You will also preview how these data entities will be consumed in various integrations scenarios, such as data import and export, integration, and OData services.
 
+When you are ready to build your first entity for production, you will need to:
+- Create your own package and model. For more information, see [Models and packages](../dev-tools/models.md).
+- Create a new project and set the model property to the one that you just created.
+
 ## Prerequisites
 This tutorial requires that you access an environment by using Remote Desktop, and that you be provisioned as an administrator on the instance.
 
