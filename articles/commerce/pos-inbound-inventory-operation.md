@@ -43,7 +43,7 @@ ms.dyn365.ops.version: 10.0.9
 > [!NOTE] 
 > Any new features that are added to the POS application related to store inventory receiving against purchase orders and transfer orders will be made to the inbound operations operation beginning with version 10.0.10. We recommend that users who are currently using the picking and receiving operation in POS establish a strategy for moving off of this operation and onto the new inbound and outbound operations. The picking and receiving POS operation will not be removed from the product, but there will be no additional investments made to this operation from a functional or performance perspective after version 10.0.9.
 
-## Prerequisite: asynchronous document framework
+## Prerequisite: configure asynchronous document framework
 
 The inbound operation contains performance improvements to ensure that users with high volumes of receipt postings across many stores or companies with large inventory documents can process these documents to Commerce Headquarters (HQ) without time outs or unnecessary failures. This capability requires the use of an asynchronous document framework.
 
@@ -71,44 +71,44 @@ The batch jobs you create will be used to process documents that have failed or 
       - Configure another job to run the **RetailDocumentOperationProcessingBatch** class.
   2. Schedule these batch jobs to run on recurrence. For example, set the schedule to run every five minutes.
 
-## Pre-requisite: Adding the Inbound operation to your POS screen layout
+## Prerequisite: add inbound operation to the POS screen layout
 
-To leverage the **Inbound operation** feature, your organization must first configure the **Inbound operations** POS operation on one or more of your [POS screen layouts](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts).  Please ensure you have properly tested and trained your users on the new operation before deploying it in a production environment.
+To use the inbound operation functionality, your organization must first configure the inbound operations POS operation on one or more of your [POS screen layouts](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts). Ensure that you have properly tested and trained your users on the new operation before deploying it in a production environment.
 
-##Inbound operation – overview
+## Overview of inbound operation
 
-The **Inbound operations** will allow the POS user to perform the following tasks
+The inbound operations will allow the POS user to perform the following tasks.
 
-1. Receive inventory into store stock from confirmed **Purchase order** documents or from shipped **Transfer order** documents
-2. View information about historical inventory receipts for a period of 7 days after the document has been fully received
-3. Create new inbound **Transfer order** requests
+- Receive inventory into store stock from confirmed purchase order documents or from shipped transfer order documents.
+- View information about historical inventory receipts for a period of 7 days after the document has been fully received.
+- Create new inbound transfer order requests.
 
-Upon launching the **Inbound operation** from the POS application, users will be presented with a list page view of open purchase order and/or transfer order documents that have inventory lines that are scheduled to be received by the user&#39;s current store.    The user can scroll this list or use the search feature to locate a document and select it.
+When launching the inbound operation from the POS application, users will be presented with a list page view of open purchase order and transfer order documents that have inventory lines that are scheduled to be received by the user's current store. The user can scroll this list or use the search feature to locate a document and select it.
 
-This Inbound inventory document list will contain 3 different tabs:
+This inbound inventory document list has 3 tabs.
 
-- **Active** :  This tab shows documents that are fully or partially open and still contain lines or quantities on lines that are remaining to be received.
-- **Draft** :  This tab shows Inbound transfer order request that the store has created, but has only saved locally and has not submitted them to HQ for processing.
-- **Complete** :  This tab shows a list of Purchase or Transfer order documents that have been fully received by the store over the past 7 days.  This tab is for informational purposes only.   All information viewed about these documents will be read-only data for the store.
+- **Active**: This tab shows documents that are fully or partially open and still contain lines or quantities on lines that are still to be received.
+- **Draft**: This tab shows inbound transfer order requests that the store has created and have been saved locally and not submitted to HQ for processing.
+- **Complete**: This tab shows a list of purchase or transfer order documents that have been fully received by the store over the past 7 days. This tab is for informational purposes only. All of the information about the documents is read-only data for the store.
 
-When viewing documents in any of the 3 tabs, the **Status** field can be used to help understand the stage the document is in:
+When viewing documents in any of the tabs, the **Status** field can be used to help understand the stage the document is in.
 
-- **Draft** : This Transfer order document is only saved locally to the store&#39;s channel database.  No information about this transfer order request has been submitted to HQ at this time.
-- **Requested** :  The Purchase order or Transfer order is created in HQ and is fully open.  No receipts have yet to be processed against the document.  In the case of a Purchase order document type, receiving can begin at any time for documents in the Requested status.
-- **Partially shipped** : Used when the Transfer order document has one or more lines or partial line quantities that have been posted as shipped by the outbound warehouse.   These shipped lines would now be available for receiving through the Inbound operation.
-- **Fully shipped** : Used when the Transfer order has had all its lines and full line quantities posted as shipped by the outbound warehouse.  This entire document would be available for receiving through the Inbound operation.
-- **Partially received** : Some of the lines or line quantities on the Purchase order or Transfer order document have been received by the store, but some lines remain open.
-- **Fully received** : All lines and quantities on the Purchase order or Transfer order document have been fully received.  These documents will only be accessible on the Completed view tab and will be read-only by the store users.
-- **In progress** : this status will be seen by users using other devices to inform them that the document is being actively worked on by another user.
-- **Paused:** this status will be shown after a user has chosen the Pause receiving function to temporarily stop the receiving process with the intent to return to it soon.
-- **Processing in**  **HQ:** The document has been submitted to HQ from the POS application and has not yet been successfully posted to HQ.   This document is running through the Async document posting process.  Once the document successfully posts to HQ is should update to a **Fully received** or **Partially received** status.
-- **Processing failed** : This document was posted to HQ and rejected.  The user will be able to see the reason the posting failed as in the Details panel.   This document will need to be edited and issues fixed with the data and re-submitted back to HQ to attempt to process again.
+- **Draft**: The transfer order document is only saved locally to the store's channel database. No information about the transfer order request has been submitted to HQ at that time.
+- **Requested**: The purchase order or transfer order is created in HQ and is fully open. No receipts have yet to be processed against the document. In the case of a purchase order document type, receiving can begin at any time for documents in the requested status.
+- **Partially shipped**: The transfer order document has one or more lines or partial line quantities that have been posted as shipped by the outbound warehouse. These shipped lines are available for receiving through the inbound operation.
+- **Fully shipped**: The transfer order has had all its lines and full line quantities posted as shipped by the outbound warehouse. The entire document is available for receiving through the inbound operation.
+- **Partially received**: Some of the lines or line quantities on the purchase order or transfer order document have been received by the store, but some lines remain open.
+- **Fully received**: All lines and quantities on the purchase order or transfer order document have been fully received. The documents are only accessible on the **Complete** tab and are read-only by the store users.
+- **In progress**: This is to inform device uers that the document is being actively worked on by another user.
+- **Paused**: This status is displayed after a user has chosen the **Pause receiving** function to temporarily stop the receiving process.
+- **Processing in HQ**: The document was submitted to HQ from the POS application and has not yet been successfully posted to HQ. The document is running through the async document posting process. Once the document successfully posts to HQ, it should update to a **Fully received** or **Partially received** status.
+- **Processing failed**: The document was posted to HQ and rejected. The user will be able to see the reason the posting failed in the **Details** panel. The document will need to be edited and data issues fixed, and then re-submitted to HQ to attempt to process again.
 
-Selecting any of the document lines from the list will display a **Details** panel where the user can view additional information about the document including a progress bar detailing how many items remain to be processed, as well as shipment and date info.  If the document has failed to process to HQ, error messages related to the failure will also be available on this **Details** panel.
+Selecting any of the document lines from the list will display a **Details** panel where the user can view additional information about the document, including shipment and date information, and a progress bar detailing how many items remain to be processed. If the document failed to process to HQ, error messages related to the failure will also be available on the **Details** panel.
 
-From the document list page view, users may use the **Order details** function from the App bar to view the document details.  This is how the user can also begin to initiate receipt processing on eligible document lines.
+From the document list page view, users can use the **Order details** function from the app bar to view the document details. The user can also begin to initiate receipt processing on eligible document lines.
 
-The document list page view also provides users with an option for creating a new inbound Transfer order request for their store.  These documents remain in a draft state and can be adjusted or deleted until they are Submitted to HQ for processing.  Once submitted to HQ, these transfer order lines can no longer be changed from the POS application.
+The document list page view also provides users with an option for creating a new inbound transfer order request for their store. These documents remain in a draft state and can be adjusted or deleted until they are submitted to HQ for processing. Once submitted to HQ, the transfer order lines can no longer be changed from the POS application.
 
 ## Inbound operation – receiving process
 
