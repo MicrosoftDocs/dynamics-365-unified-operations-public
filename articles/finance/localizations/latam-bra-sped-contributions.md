@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set SPED EFD contributions 
-description: This topic explains how to set up parameters and generate the SPED EFD Contributions for Brazil. 
+description: This topic explains how to set up parameters and generate the SPED EFD - Contributions statement for Brazil. 
 author: sndray
 manager: AnnBe
 ms.date: 02/06/2020
@@ -32,16 +32,16 @@ ms.dyn365.ops.version: 7.3
 
 [!include [banner](../includes/banner.md)]
 
-SPED EFD Contributions is a specific statement that is generated in the **Fiscal books** module that gathers information about Social Contribution tax on Gross Revenue for Social Integration Program (PIS) and  Social Security Financing program (COFINS).
+The SPED EFD - Contributions statement is generated in the **Fiscal books** module. It gathers information about social contribution tax on gross revenue for the Social Integration Program (PIS) and the Contribution for Social Security Financing (COFINS).
 
-Complete the following steps to set up requirements for SPED EFD – Contributions text files.
+Follow these steps to set up the requirements for SPED EFD - Contributions text files.
 
-1.  Select **Fiscal books** \> **Setup** \> **Tax statements parameters**.
-2.  Select **EFD - Contributions**, and then, on the **Setup parameters** FastTab, select **Open**.
+1. Select **Fiscal books** \> **Setup** \> **Tax statements parameters**.
+2. Select **EFD - Contributions**, and then, on the **Setup parameters** FastTab, select **Open**.
 
     The **EFD – Contributions parameters** page appears, where you can enter the required information for SPED EFD - Contributions text files.
 
-3.  In the **Type of activity** field, select the activity type:
+3. In the **Type of activity** field, select the activity type:
 
     - Industrial or equivalent
     - Services
@@ -49,10 +49,11 @@ Complete the following steps to set up requirements for SPED EFD – Contributio
     - Financial activity
     - Real estate activity
     - Others
-4.  Set the **Large company** option to **Yes** to identify the size of company. This option is used in SPED REINF statements.
-5.  In the **Layout version** field, select the version of the SPED EFD. 
-6.  In the **Legal entity type** field, select the type of legal entity.
-7.  In the **Company type** field, select the type of company:
+
+4. Set the **Large company** option to **Yes** to identify the size of company. This option is used in SPED REINF statements.
+5. In the **Layout version** field, select the version of the SPED EFD layout. 
+6. In the **Legal entity type** field, select the type of legal entity.
+7. In the **Company type** field, select the type of company:
 
     - PJ in general
     - PJ member of financial system
@@ -83,88 +84,89 @@ Complete the following steps to set up requirements for SPED EFD – Contributio
     - **Detailed** – List all individual transactions on the fiscal report.
 
 17. On the **Fiscal establishment** FastTab, enter the required SPED ECD information.
+18. On the **Rule for taxation code** FastTab, select the taxation code and fiscal value to prevent records C100 and D100 from being generated.
 
-18. On the **Rule for taxation code** FastTab, select the taxation code and fiscal value to avoid the generation of records C100 and D100. 
-
-## Special requirements for version 006 and later
+## Special requirements for layout version 006 and later
 
 ### Record 0900
 
-Record 0900 in SPED EFD - The contributions text file is automatically generated to detail the revenue composition for the specified booking period. Generating this record is mandatory when the original SPED EFD-Contributions file is transmitted after the regular delivery time, which is the after the 10th working day of the second month of booking period.
+Record 0900 in the SPED EFD - Contributions text files is automatically generated to provide details about the revenue composition for the specified booking period. Generation of this record is mandatory when the original SPED EFD - Contributions file is transmitted after the regular delivery time (that is, after the tenth working day of the second month of the booking period).
 
-The generated record is available from layout version 006. Select this option when the SPED EFD-Contributions file is executed.
+The generated record is available in layout version 006 and later. Select this option when the SPED EFD - Contributions file is run.
 
+### M410 (PIS) and M810 (COFINS)
 
-### M410 (PIS) and M810 (Cofins)
-Record **M410** and **M810** in SPED EFD - The contributions text files are automatically generated for those revenue transactions with a fiscal value set to 2:Exempt or 3:without debit/credit. 
+Records M410 and M810 in the SPED EFD - Contributions text files are automatically generated for revenue transactions where a fiscal value is set to **2:Exempt** or **3:without debit/credit**.
 
-The implementation of layout 006 introduces changes in the determination of field 02 (NAT_REC) by introducing an additional configuration, instead of using specific fixed values as defined in previous layout versions.
+The implementation of layout version 006 changes the way that field 02 (**NAT\_REC**) is determined. In this layout version, an additional configuration is used. In previous layout versions, specific fixed values were used.
 
 ## Prerequisites
-Before you generate PIS and COFINS tax assessment and enable the generation of records M410 and M810 with the correct revenue source determination, go to **Fiscal books** > **Setup** > **PIS and COFINS tables** > **Revenue sources code**, and select the following parameters:
+
+Before you generate PIS and COFINS tax assessments and enable the generation of records M410 and M810 that have the correct revenue source determination, go to **Fiscal books** \> **Setup** \> **PIS and COFINS tables** \> **Revenue sources code**, and select the following parameters.
 
 <table>
-  <tr>
-    <th>Field</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>Revenue source type</td>
-    <td>Select the type of revenue source according to the relationship included in the tables for detailing the nature of revenue by tax situation, for example tables 4.3.10, 4.3.11, etc. These tables are published by the tax authority.</td>
-  </tr>
-  <tr>
-    <td>Revenue source code</td>
-    <td>Enter the revenue source code.</td>
-  </tr>
-  <tr>
-    <td>Description</td>
-    <td>Enter a description of revenue source code.</td>
-  </tr>
-  <tr>
-    <td>Valid from and to date</td>
-    <td>Enter the valid dates for when this revenue source is applicable.</td>
-  </tr>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Revenue source type</td>
+<td>Select the type of revenue source, according to the relationship that is included in the tables that provide details about the nature of revenue by tax situation (for example, tables 4.3.10 and 4.3.11). These tables are published by the tax authority.</td>
+</tr>
+<tr>
+<td>Revenue source code</td>
+<td>Enter the code for the revenue source.</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Enter a description of the revenue source code.</td>
+</tr>
+<tr>
+<td>Valid from and to date</td>
+<td>Enter the dates when this revenue source is applicable.</td>
+</tr>
+</tbody>
 </table>
 
-Go to **Fiscal books** > **Setup** > **PIS and COFINS tables** > **Revenue source per item** to specify the setup of revenue source determination.
+Go to **Fiscal books** \> **Setup** \> **PIS and COFINS tables** \> **Revenue source per item** to set up the revenue source determination.
 
 <table>
-  <tr>
-    <th>Field</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>Item code</td>
-    <td>Specify whether the revenue source determination applies to a item code, a group of items, or all items:</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>Table – The source revenue applies to a single item code. Select the item code in the **Item relation** field.</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>Group – The source revenue applies to an item group. Select the item group in the **Item relation** field.</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>All – The source revenue applies to all items. Leave the **Item relation** field blank.</td>
-  </tr>
-  <tr>
-    <td>Item relation</td>
-    <td>If **Table** is selected in the **Item code** field, select the item code that is associated with the revenue source. If **Group** is selected, select a item group. If **All** is selected, leave this field blank.</td>
-  </tr>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Item code</td>
+<td>Specify whether the revenue source determination applies to an item code, a group of items, or all items:
+<ul>
+<li><strong>Table</strong> – The source revenue applies to a single item code. If you select this option, select the item code in the <strong>Item relation</strong> field.</li>
+<li><strong>Group</strong> – The source revenue applies to an item group. If you select this option, select the item group in the <strong>Item relation</strong> field.</li>
+<li><strong>All</strong> – The source revenue applies to all items. If you select this option, leave the <strong>Item relation</strong> field blank.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Item relation</td>
+<td>If you selected <strong>Table</strong> in the <strong>Item code</strong> field, select the item code that is associated with the revenue source. If you selected <strong>Group</strong>, select an item group. If you selected <strong>All</strong>, leave this field blank.</td>
+</tr>
+</tbody>
 </table>
 
+## Generate a SPED EFD - Contributions text file
 
-## Generate an EFD contributions text file
-
-1.	Go to **Fiscal books** > **Common** > **Booking period**, select the related booking period and then select **Tax statement**s > **EFD Contributions** > **Execute**.
-2.	In the **Type of situation** field, select the type of situation.
-4.	In the **File type** field, select **Original** or **Substitute**.
-6.	In the **Layout version** field, select the latest version available. 
-7.	In the **Identification reason** field, select the related identification.
-8.  Set **Late submition** to **Yes** to generate record, 0900. 
+1. Go to **Fiscal books** \> **Common** \> **Booking period**.
+2. Select the related booking period, and then select **Tax statements** \> **EFD Contributions** \> **Execute**.
+3. In the **Type of situation** field, select the type of situation.
+4. In the **File type** field, select **Original** or **Substitute**.
+5. In the **Layout version** field, select the latest version that is available.
+6. In the **Identification reason** field, select the related identification.
+7. Set the **Late submission** option to **Yes** to generate record 0900.
 
 > [!NOTE]
-> Select **Batch** and specify the options for batch processing execution. You might use batch processing if the file should be generated later or on a server instead of on your computer.
-
+> To use batch processing, select **Batch**, and then specify the options for batch processing execution. You might use batch processing if the file should be generated later, or if it should be generated on a server instead of on your computer.
