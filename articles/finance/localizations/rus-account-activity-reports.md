@@ -83,7 +83,7 @@ rightmost column.
 >
 >  -   Select **Print** to print the report in Microsoft Excel.
 
-   ![](media/3_Activity_of_account.jpg)
+       ![](media/3_Activity_of_account.jpg)
 
 General ledger report
 ---------------------
