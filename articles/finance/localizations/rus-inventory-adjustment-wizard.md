@@ -4,7 +4,7 @@ title: Inventory adjustment wizard
 description: This topic provides information about the Inventory adjustment wizard which is used ot adjust on-hand inventory and transactions.
 author: v-nadyuz
 manager: AnnBe
-ms.date: 02/05/2020
+ms.date: 02/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 8.1
 [!include [banner](../includes/banner.md)]
 
 
-The **Inventory adjustment** wizard is used to adjust on-hand inventory or inventory transactions. Before you adjust on-hand inventory, it must be closed. For more information about inventory closing, see [Inventory close](https://docs.microsoft.com/dynamics365/supply-chain/cost-management/inventory-close) and [Inventory cost structure](us-inventory-cost-structure.md).
+The **Inventory adjustment** wizard is used to adjust on-hand inventory or inventory transactions. Before you adjust on-hand inventory, it must be closed. For more information about inventory closing, see [Inventory close](../../supply-chain/cost-management/inventory-close.md) and [Inventory cost structure](rus-inventory-cost-structure.md).
 
 You can adjust the amount of an item in the warehouse in a settlement with an arbitrary ledger account, and you can post a negative adjustment as a reversal.
 
@@ -46,7 +46,7 @@ Before you can adjust item cost by using miscellaneous charges and the **Invento
 
 Additionally, before you can adjust item cost in a secondary currency, verify that you've completed the prerequisites in the Inventory valuation in secondary currency (here will be link to the topic from content deliverable 148936) topic.
 
-## Adjust item cost by using the Inventory adjustment wizard
+## <a name="adjust-item-cost-using-inventory-adjustment-wizard"></a>Adjust item cost by using the Inventory adjustment wizard
 
 1. Go to **Inventory management \> Periodic tasks \> Closing and adjustment** or **Inventory management \> Periodic tasks \> Closing and adjustment in currency**.
 2. On the Action Pane, select **Adjustment \> Wizard**.
@@ -64,7 +64,7 @@ Additionally, before you can adjust item cost in a secondary currency, verify th
 
 7. On the **Selection result** page, you can view the on-hand items or item transactions that are selected for adjustment. Select the ellipsis button (**…**), and then select **Print** to print the list of lines for adjustment.
     
-    ![](media/1%20Selection%20result.png)
+    ![Selection result page](media/1%20Selection%20result.png)
 
 8. Select **Next**.
 9. On the **Functions for calculating adjustment amounts** page, select the method for calculating adjustment amounts:
@@ -76,7 +76,7 @@ Additionally, before you can adjust item cost in a secondary currency, verify th
     - **Percent** (For more information, see the [Method for calculating a percentage adjustment](#method-for-calculating-a-percentage-adjustment) section.)
     - **From ledger account** (For more information, see the [Method for calculating adjustment amounts from a ledger account](#method-for-calculating-adjustment-amounts-from-a-ledger-account) section.)
         
-     ![](media/2%20Functions%20for%20calculating%20adjustment%20amounts.png)
+     ![Functions for calculating adjustment amounts page](media/2%20Functions%20for%20calculating%20adjustment%20amounts.png)
 
 10. Select **Next**.
 11. Set the parameters for the selected method of adjustment. The parameters vary, depending on the method that you selected.
@@ -87,11 +87,11 @@ Additionally, before you can adjust item cost in a secondary currency, verify th
         > [!NOTE]
         > Alternatively, select the ellipsis button (**…**), and then select **Functions \> Charges code** to open the **Change Misc. charge code** page. Then, in the **Charges code** field, select the charges code for a line. To apply the charges code that you entered to all lines, set the **Apply to all** option to **Yes**.
         
-        ![](media/3%20Change%20misc.%20charge%20code.png)
+        ![Results of allocation page](media/3%20Change%20misc.%20charge%20code.png)
 
     - In the **Amount of allocation** field, you can manually edit allocation amounts, except the amounts that are calculated by using the **From ledger account** method. When you manually edit this field, the allocation amount must be either negative for all lines or positive for all lines.
     
-    ![](media/4%20Results%20of%20allocation.png)
+    ![Results of allocation page, Amount of allocation field](media/4%20Results%20of%20allocation.png)
 
 13. Select **Next**.
 14. On the **Posting** page, specify the details for posting the adjustment:
@@ -112,7 +112,7 @@ Additionally, before you can adjust item cost in a secondary currency, verify th
          - If the miscellaneous charges code isn't entered on the item line, and the **Corr. account profit/loss** option on the **Posting** page is set to **Yes**, the adjustment is assigned in the standard manner to the offset profit or loss account that is set up on the **Inventory** tab of the **Posting** page (**Inventory management \> Setup \> Posting \> Posting**).
          - If the miscellaneous charges code isn't entered on the item line, and the **Corr. account profit/loss** option on the **Posting** page is set to **No**, the adjustment is assigned to the account that is specified in the **Corr. account** field.
                 
-     ![](media/5%20Posting.png)
+     ![Posting page](media/5%20Posting.png)
 
 15. Select **Next**.
 16. On the **Finish** page, select the **Show ledger voucher list** check box to show the list of ledger vouchers that are posted, and then select **Finish** to post the adjustment.
@@ -121,61 +121,61 @@ To cancel adjustments that are done by the wizard, on the **Closing and adjustme
 
 ### Method for calculating an adjustment to a fixed cost price
 
-1. Open the **Inventory adjustment** wizard, select the method of adjustment, and select on-hand items or item transactions, as described in the [Adjust item cost by using the Inventory adjustment wizard](#adjust-item-cost-by-using-the-inventory-adjustment-wizard) section.
+1. Open the **Inventory adjustment** wizard, select the method of adjustment, and select on-hand items or item transactions, as described in the [Adjust item cost by using the Inventory adjustment wizard](#adjust-item-cost-using-inventory-adjustment-wizard) section.
 2. On the **Functions for calculating adjustment amounts** page, select **Fixed cost price**, and then select **Next**.
 3. On the **Adjustment to fixed cost price** page, in the **Price** field, enter the fixed cost price, and then select **Next**.
 
-    ![](media/6%20Adjustment%20to%20fixed%20cost%20price.png)
+    ![Adjustment to fixed cost price page](media/6%20Adjustment%20to%20fixed%20cost%20price.png)
 
-4. Complete the remaining steps of the adjustment as described in the [Adjust item cost by using the Inventory adjustment wizard](#adjust-item-cost-by-using-the-inventory-adjustment-wizard) section.
+4. Complete the remaining steps of the adjustment as described in the [Adjust item cost by using the Inventory adjustment wizard](#adjust-item-cost-using-inventory-adjustment-wizard) section.
 
 ### Method for calculating an adjustment by using an amount
 
-1. Open the **Inventory adjustment** wizard, select the method of adjustment, and select on-hand items or item transactions, as described in the [Adjust item cost by using the Inventory adjustment wizard](#adjust-item-cost-by-using-the-inventory-adjustment-wizard) section.
+1. Open the **Inventory adjustment** wizard, select the method of adjustment, and select on-hand items or item transactions, as described in the [Adjust item cost by using the Inventory adjustment wizard](#adjust-item-cost-using-inventory-adjustment-wizard) section.
 2. On the **Functions for calculating adjustment amounts** page, select **Amount**, and then select **Next**.
 3. On the **Adjustment with amount** page, set the following fields:
 
     - In the **Amount** field, enter the amount.
     - In the **Allocation principle** field, select **Value** or **Quantity**.
 
-    ![](media/7%20Adjustment%20with%20amount.png)
+    ![Functions for calculating adjustment amounts page](media/7%20Adjustment%20with%20amount.png)
 
 4. Select **Next**.
 5. Complete the remaining steps of the adjustment as described in the [Adjust item cost by using the Inventory adjustment wizard(#adjust-item-cost-by-using-the-inventory-adjustment-wizard) section.
 
 ### Method for calculating an adjustment to a value
 
-1. Open the **Inventory adjustment** wizard, select the method of adjustment, and select on-hand items or item transactions, as described in the [Adjust item cost by using the Inventory adjustment wizard](#adjust-item-cost-by-using-the-inventory-adjustment-wizard) section.
+1. Open the **Inventory adjustment** wizard, select the method of adjustment, and select on-hand items or item transactions, as described in the [Adjust item cost by using the Inventory adjustment wizard](#adjust-item-cost-using-inventory-adjustment-wizard) section.
 2. On the **Functions for calculating adjustment amounts** page, select **Value**, and then select **Next**.
 3. On the **Adjustment to value** page, set the following fields:
 
     - In the **Value** field, enter the value.
     - In the **Allocation principle** field, select **Value** or **Quantity**.
 
-    ![](media/8%20Adjustment%20to%20value.png)
+    ![Functions for calculating adjustment amounts page](media/8%20Adjustment%20to%20value.png)
 
 4. Select **Next**.
 5.  Complete the remaining steps of the adjustment as described in the [Adjust item cost by using the Inventory adjustment wizard(#adjust-item-cost-by-using-the-inventory-adjustment-wizard) section.
 
 ### Method for calculating a percentage adjustment
 
-1. Start the **Inventory adjustment** wizard, select the method of adjustment, and select on-hand items or item transactions, as described in the [Adjust item cost by using the Inventory adjustment wizard](#adjust-item-cost-by-using-the-inventory-adjustment-wizard) section.
+1. Start the **Inventory adjustment** wizard, select the method of adjustment, and select on-hand items or item transactions, as described in the [Adjust item cost by using the Inventory adjustment wizard](#adjust-item-cost-using-inventory-adjustment-wizard) section.
 2. On the **Functions for calculating adjustment amounts** page, select **Percent**, and then select **Next**.
 3. On the **Percentage adjustment** page, set the following fields:
 
     - In the **Percent** field, enter the percentage.
     - In the **Adjust** field, select **Positive on-hand inventory** or **On-hand inventory total**.
 
-    ![](media/9%20Percentage%20adjustment.png)
+    ![Functions for calculating adjustment amounts page](media/9%20Percentage%20adjustment.png)
 
 4. Select **Next**.
-5. Complete the remaining steps of the adjustment as described in the [Adjust item cost by using the Inventory adjustment wizard](#adjust-item-cost-by-using-the-inventory-adjustment-wizard) section.
+5. Complete the remaining steps of the adjustment as described in the [Adjust item cost by using the Inventory adjustment wizard](#adjust-item-cost-using-inventory-adjustment-wizard) section.
 
 ### Method for calculating adjustment amounts from a ledger account
 
 This method lets you determine the adjustment amount based on the balance of the main account on a specific date. The adjustment amount can be all balances and the values of the selected combinations of financial dimensions. This method can be used, for example, to close specific accounts, such as procurement costs or warehouse maintenance costs, on the item cost price of inventory.
 
-1. Open the **Inventory adjustment** wizard, select the method of adjustment, and select on-hand items or item transactions, as described in the [Adjust item cost by using the Inventory adjustment wizard](#adjust-item-cost-by-using-the-inventory-adjustment-wizard) section.
+1. Open the **Inventory adjustment** wizard, select the method of adjustment, and select on-hand items or item transactions, as described in the [Adjust item cost by using the Inventory adjustment wizard](#adjust-item-cost-using-inventory-adjustment-wizard) section.
 2. On the **Functions for calculating adjustment amounts** page, select **From ledger account**, and then select **Next**.
 3. On the **Balance from ledger account or dimensions** page, set the following fields:
 
@@ -184,16 +184,16 @@ This method lets you determine the adjustment amount based on the balance of the
     - Select the **Balance account** option to determine the account balance, or select the **Balance from ledger account and dimensions** option to determine an account balance by using specific dimension values.
     - In the **Dimension set** field, select the set of dimensions to determine the account balance from. This field is available only if the **Balance from ledger account and dimensions** option is selected.
 
-    ![](media/10%20Balance%20from%20ledger%20account%20or%20dimensions.png)
+    ![Balance from ledger acount or dimensions page](media/10%20Balance%20from%20ledger%20account%20or%20dimensions.png)
 
 4. Select **Next**.
 5. Select the amounts to include in the adjustment. You can use the **Select all** and **Deselect all** links to select and clear all lines.
 6. In the **Allocation principle** field, select **Value** or **Quantity**.
 
-    ![](media/11%20Balance%20from%20ledger%20account%20or%20dimensions.png)
+    ![Balance from ledger account or dimensions page, Allocation principle field](media/11%20Balance%20from%20ledger%20account%20or%20dimensions.png)
 
 7. Select **Next**.
-8. Complete the remaining steps of the adjustment as described in the [Adjust item cost by using the Inventory adjustment wizard](#adjust-item-cost-by-using-the-inventory-adjustment-wizard) section.
+8. Complete the remaining steps of the adjustment as described in the [Adjust item cost by using the Inventory adjustment wizard](#adjust-item-cost-using-inventory-adjustment-wizard) section.
 
 This method determines the balance of the account in the context of financial dimensions only to determine the amount of the adjustment. It doesn't automatically close the balance on the dimensions at the item cost price of the inventory.
 
@@ -219,6 +219,6 @@ On account 26.100, the **Department** dimension accumulates the amounts that you
 7. Select **Next**.
 8. On the next page, select the lines for the **Department** dimension values from which the balances should be assigned to the inventory of the selected warehouse or warehouses, and then select **Next**.
 9. Set the **Corr. account profit/loss** option to **Yes**, and set the **Corr. account** field.
-10. Complete the remaining steps of the adjustment as described in the [Adjust item cost by using the Inventory adjustment wizard](#adjust-item-cost-by-using-the-inventory-adjustment-wizard) section. Repeat the allocation operation for all warehouses and dimensions that you want to do allocation for.
+10. Complete the remaining steps of the adjustment as described in the [Adjust item cost by using the Inventory adjustment wizard](#adjust-item-cost-using-inventory-adjustment-wizard) section. Repeat the allocation operation for all warehouses and dimensions that you want to do allocation for.
 
 As you've seen, the system lets you determine the adjustment amount based on the balance on the account in the context of the dimensions. You can also allocate it to the cost price of inventory or warehouse receipts.
