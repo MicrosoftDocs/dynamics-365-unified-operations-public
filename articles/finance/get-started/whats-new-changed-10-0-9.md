@@ -47,6 +47,26 @@ The following features are included in this release. The feature titles link to 
  - [Update bank balances when posting transactions using advanced ledger entry](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/update-bank-balances-when-posting-transactions-using-advanced-ledger-entry)
  
  - [Vendor bidding – RFQ questions from vendors and summarized responses](https://docs.microsoft.com/business-applications-release-notes/april19/dynamics365-finance-operations/vendor-bidding)
+ 
+ - [Extended Italian localization: separate accounts for credit notes](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-separate-accounts-credit-notes)
+ 
+ - [Extended Italian localization: sales invoice lines sorting by packing slips](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-sales-invoice-lines-sorting-packing-slips)
+ 
+ - [Extended Italian localization: miscellaneous charges per kilogram in Intrastat declaration](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-miscellaneous-charges-per-kilogram-intrastat-declaration)
+ 
+ - [Extended Italian localization: bank account setup enhancement](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-bank-account-setup-enhancement)
+ 
+ - [Extended Italian localization: posting invoices with zero amount](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-posting-invoices-zero-amount)
+ 
+ - [Extended Italian localization: advanced notes management](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-advanced-notes-management)
+
+- [Extended Italian localization: improved inquiry on debit/credit](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-improved-inquiry-debitcredit)
+
+- [Extended Italian localization: tax invoice for goods delivered for free](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-tax-invoice-goods-delivered-free)
+
+- [Extended Swiss localization: QR-bill implementation](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-swiss-localization-qr-bill-implementation)
+
+- [Extended French localization: ISO 20022 format for international payment and treasury transfer](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-french-localization-iso20022-format-international-payment-treasury-transfer)
 
 ## Additional resources
 
