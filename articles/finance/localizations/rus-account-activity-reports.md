@@ -76,14 +76,14 @@ rightmost column.
 
 >  *Note.*
 >
->  -   Select **Voucher** to view the ledger transactions that generated the
+>  -  Select **Voucher** to view the ledger transactions that generated the
 >      activity.
 >
->  -   Select **Select** to change the report generation parameters.
+>  -  Select **Select** to change the report generation parameters.
 >
->  -   Select **Print** to print the report in Microsoft Excel.
+>  -  Select **Print** to print the report in Microsoft Excel.
 
-       ![](media/3_Activity_of_account.jpg)
+   ![](media/3_Activity_of_account.jpg)
 
 General ledger report
 ---------------------
