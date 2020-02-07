@@ -47,7 +47,7 @@ However, to reflect the operational model of the business, tracking dimensions (
 - The business relies on its warehouse operations to manage picking of quantities that have batch or serial numbers after the quantities have been found in the warehousing storage space. This model is often referred to as *Batch-below\[location\]*. It's typically used when a product's batch or serial number identification isn't important to the customers who place the demand with the selling company.
 - If batch or serial numbers are part of a customer's order specification, and they are recorded on the demand order, the warehouse operations that find the quantities in the warehouse are constrained by the specific requested numbers and aren't allowed to change them. This model is referred to as *Batch-above\[location\]*.
 
-In these scenarios, the challenge is that only one inventory reservation hierarchy can be assigned to each released product. Therefore, for the WHS to handle tracked items, after the hierarchy assignment determines when the batch or serial number should be reserved (either when the demand order is taken or during the warehouse picking work), this timing can't be changed on an ad-hoc basis.
+In these scenarios, the challenge is that only one inventory reservation hierarchy can be assigned to each released product. Therefore, for the WMS to handle tracked items, after the hierarchy assignment determines when the batch or serial number should be reserved (either when the demand order is taken or during the warehouse picking work), this timing can't be changed on an ad-hoc basis.
 
 ## Flexible reservation for batch-tracked items
 
@@ -156,7 +156,7 @@ For this example, demo data must be installed, and you must use the **USMF** dem
     > [!NOTE]
     > Reservation of the quantity on a sales order line can be done across multiple batches. Likewise, reservation of the same batch can be done against multiple locations and license plates (if license plates are enabled for the locations).
     >
-    > Reservation of a specific batch for the quantity on a sales order line can also be partial. For example, the total quantity of 100 units can be reserved so that a specific batch is committed to 20 units, whereas 80 units are reserved at the site and warehouse levels for any available batch. In this case, the WHS will handle picking operations by using two separate work lines.
+    > Reservation of a specific batch for the quantity on a sales order line can also be partial. For example, the total quantity of 100 units can be reserved so that a specific batch is committed to 20 units, whereas 80 units are reserved at the site and warehouse levels for any available batch. In this case, the WMS will handle picking operations by using two separate work lines.
 
 7. Go to **Product information management** \> **Products** \> **Released products**. Select your item, and then select **Manage inventory** \> **View** \> **Transactions**.
 
