@@ -31,16 +31,16 @@ rightmost column.
 3.  In the **From date** and **To date** fields, select the start and end of the
     report generation period.
 
-    *Note.* If you don't manually set these fields, values are entered based on
-    the selected date interval code.
+>   *Note.* If you don't manually set these fields, values are entered based on
+>   the selected date interval code.
 
 4.  In the **Currency type** field, select the currency type for the report:
     **Accounting currency**, **Reporting currency**, or **Indicated currency**.
 
 5.  In the **Currency** field, select the transaction currency.
 
-    *Note.* This field is available only if you select **Indicated currency** in
-    the **Currency type** field.
+>   *Note.* This field is available only if you select **Indicated currency** in
+>   the **Currency type** field.
 
 6.  Set the **To debit accounts** option to **Yes** if you want the debit for
     the selected accounts to appear as a header line. If this option is set to
@@ -53,41 +53,37 @@ rightmost column.
 >   *Note.* If you leave these fields blank, the system will select transactions
 >   that have *any* dimension code for the report.
 
-1.  In the **Posting layer** field, select the posting layer.
+8.  In the **Posting layer** field, select the posting layer.
 
-2.  Set the **Print ranges** option to **Yes** to view the query terms when you
+9.  Set the **Print ranges** option to **Yes** to view the query terms when you
     print the report.
 
-3.  Set the **Delete zero line** option to **Yes** if you don't want to print
+10. Set the **Delete zero line** option to **Yes** if you don't want to print
     lines or columns that have 0 (zero) values.
 
-4.  Set the **Total accounts** option to **Yes** to total the accounts.
+11. Set the **Total accounts** option to **Yes** to total the accounts.
 
-5.  Set the **Totals only** option to **Yes** to view only total accounts.
+12. Set the **Totals only** option to **Yes** to view only total accounts.
 
-    *Note.* This option is available only if you set the **Total accounts**
-    option to **Yes**.
+>   *Note.* This option is available only if you set the **Total accounts**
+>   option to **Yes**.
 
-![](media/563c2c2bbdd7de3c3b7e7081dc77eb2b.jpg)
+   ![](media/1_Turnover_sheet_with_correspondence.jpg)
 
->   A screenshot of a cell phone Description automatically generated
+13. Select **ОК** to generate the report.
 
-1.  Select **ОК** to generate the report.
+   ![](media/2_Activity_of_account.jpg)
 
-![A screenshot of a cell phone Description automatically generated](media/22c10c915243ad3481f298882919ac8b.jpg)
+>   *Note.*
+>
+>   -   Select **Voucher** to view the ledger transactions that generated the
+>       activity.
+>
+>   -   Select **Select** to change the report generation parameters.
+>
+>   -   Select **Print** to print the report in Microsoft Excel.
 
-*Note.*
-
--   Select **Voucher** to view the ledger transactions that generated the
-    activity.
-
--   Select **Select** to change the report generation parameters.
-
--   Select **Print** to print the report in Microsoft Excel.
-
-![](media/9d58c015900d677aa04440e9ef9f92a9.jpg)
-
->   A screenshot of a cell phone Description automatically generated
+   ![](media/3_Activity_of_account.jpg)
 
 General ledger report
 ---------------------
@@ -107,16 +103,16 @@ each account in the chart of accounts.
 3.  In the **From date** and **To date** fields, select the start and end of the
     report generation period.
 
-    *Note.* If you don't manually set these fields, values are entered based on
-    the selected date interval code.
+>   *Note.* If you don't manually set these fields, values are entered based on
+>   the selected date interval code.
 
 4.  In the **Currency type** field, select the currency type for the report:
     **Accounting currency**, **Reporting currency**, or **Indicated currency**.
 
 5.  In the **Currency** field, select the transaction currency.
 
-    *Note.* This field is available only if you select **Indicated currency** in
-    the **Currency type** field.
+>   *Note.* This field is available only if you select **Indicated currency** in
+>   the **Currency type** field.
 
 6.  In the **From main account** and **To main account** fields, specify the
     range of accounts to generate the report for.
@@ -128,53 +124,49 @@ each account in the chart of accounts.
 >   *Note.* If you leave these fields blank, the system will select transactions
 >   that have *any* dimension code for the report.
 
-1.  Set the **Print ranges** option to **Yes** to view the query terms when you
+8.  Set the **Print ranges** option to **Yes** to view the query terms when you
     print the report.
 
-2.  Set the **Delete zero line** option to **Yes** if you don't want to print
+9.  Set the **Delete zero line** option to **Yes** if you don't want to print
     lines or columns that have 0 (zero) values.
 
-3.  Set the **Total accounts** option to **Yes** to total the accounts.
+10. Set the **Total accounts** option to **Yes** to total the accounts.
 
-4.  Set the **Totals only** option to **Yes** to view only total accounts.
+11. Set the **Totals only** option to **Yes** to view only total accounts.
 
-    *Note.* This option is available only if you set the **Total accounts**
-    option to **Yes**.
+>   *Note.* This option is available only if you set the **Total accounts**
+>   option to **Yes**.
 
-5.  Set the **Debit activity** option to **Yes** to print the detailed account
+12. Set the **Debit activity** option to **Yes** to print the detailed account
     turnovers in debit correspondence.
 
-6.  Set the **Credit activity** option to **Yes** to print the detailed account
+13. Set the **Credit activity** option to **Yes** to print the detailed account
     turnovers in credit correspondence.
 
-7.  Set the **Use periods** option to **Yes** to print the report by interval,
+14. Set the **Use periods** option to **Yes** to print the report by interval,
     according to the reporting period. Set this option to **No** to print the
     report by months.
 
-![](media/94b924117049ce4f9a2a7c763c283397.jpg)
+    ![](media/4_General_ledger.jpg)
 
->   A screenshot of a cell phone Description automatically generated
+15. Select **ОК** to generate the report.
 
-1.  Select **ОК** to generate the report.
+    ![](media/5_Account_activity.jpg)
 
-![A screenshot of a cell phone Description automatically generated](media/afd55046015024a62dce369c1ff05e0a.jpg)
+>   *Note.*
+>
+>   -   Select **Voucher** to view the ledger transactions that generated the
+>       activity.
+>
+>   -   Select the total account cell to open the transactions on all accounts that
+>       are included in the range of the specified total account, and that generated
+>       activity on the total account.
+>
+>   -   Select **Select** to change the report generation parameters.
+>
+>   -   Select **Print** to print the report in Excel.
 
-*Note.*
-
--   Select **Voucher** to view the ledger transactions that generated the
-    activity.
-
--   Select the total account cell to open the transactions on all accounts that
-    are included in the range of the specified total account, and that generated
-    activity on the total account.
-
--   Select **Select** to change the report generation parameters.
-
--   Select **Print** to print the report in Excel.
-
-![](media/6506da8b69f9459ea0983a773c9ce7a7.jpg)
-
->   A screenshot of a cell phone Description automatically generated
+   ![](media/6_Account_activity.jpg)
 
 Review of account report
 ------------------------
@@ -195,16 +187,16 @@ period.
 3.  In the **From date** and **To date** fields, select the start and end of the
     report generation period.
 
-    *Note.* If you don't manually set these fields, values are entered based on
-    the selected date interval code.
+>   *Note.* If you don't manually set these fields, values are entered based on
+>   the selected date interval code.
 
 4.  In the **Currency type** field, select the currency type for the report:
     **Accounting currency**, **Reporting currency**, or **Indicated currency**.
 
 5.  In the **Currency** field, select the transaction currency.
 
-    *Note.* This field is available only if you select **Indicated currency** in
-    the **Currency type** field.
+>   *Note.* This field is available only if you select **Indicated currency** in
+>   the **Currency type** field.
 
 6.  In the **Main account** field, select the account to generate the report
     for.
@@ -216,41 +208,37 @@ period.
 >   *Note.* If you leave these fields blank, the system will select transactions
 >   that have *any* dimension code for the report.
 
-1.  Set the **Print ranges** option to **Yes** to view the query terms when you
+8.  Set the **Print ranges** option to **Yes** to view the query terms when you
     print the report.
 
-2.  Set the **Total accounts** option to **Yes** to total the accounts.
+9.  Set the **Total accounts** option to **Yes** to total the accounts.
 
-3.  Set the **Totals only** option to **Yes** to view only total accounts.
+10. Set the **Totals only** option to **Yes** to view only total accounts.
 
-    *Note.* This option is available only if you set the **Total accounts**
-    option to **Yes**.
+>   *Note.* This option is available only if you set the **Total accounts**
+>   option to **Yes**.
 
-4.  Set the **Main accounts only** option to **Yes** to view only main accounts.
+11. Set the **Main accounts only** option to **Yes** to view only main accounts.
 
-![](media/c17d3005d0db44ce7adcfffabd2e5d0c.jpg)
+    ![](media/7_Review_of_account.jpg)
 
->   A screenshot of a cell phone Description automatically generated
-
-1.  On the **Records to include** tab, you can select **Filter** to specify
+12. On the **Records to include** tab, you can select **Filter** to specify
     filter criteria.
 
-2.  Select **ОК** to generate the report.
+13. Select **ОК** to generate the report.
 
-![A screenshot of a cell phone Description automatically generated](media/9f2cfb7ea76aae2ad3387672e0f22138.jpg)
+    ![](media/8_Review_of_account.jpg)
 
-*Note.*
+>   *Note.*
+>
+>   -   Select **Voucher** to view the ledger transactions that generated the
+>       activity.
+>
+>   -   Select **Select** to change the report generation parameters.
+>
+>   -   Select **Print** to print the report in Excel.
 
--   Select **Voucher** to view the ledger transactions that generated the
-    activity.
-
--   Select **Select** to change the report generation parameters.
-
--   Select **Print** to print the report in Excel.
-
-![](media/8ef1ddaa38e46933d06df803ec1639b6.jpg)
-
->   A screenshot of a cell phone Description automatically generated
+   ![](media/9_Review_of_account.jpg)
 
 Journal order/account activity report
 -------------------------------------
@@ -268,16 +256,16 @@ recalculation of the balance for each transaction.
 3.  In the **From date** and **To date** fields, select the start and end of the
     report generation period.
 
-    *Note.* If you don't manually set these fields, values are entered based on
-    the selected date interval code.
+>   *Note.* If you don't manually set these fields, values are entered based on
+>   the selected date interval code.
 
 4.  In the **Currency type** field, select the currency type for the report:
     **Accounting currency**, **Reporting currency**, or **Indicated currency**.
 
 5.  In the **Currency** field, select the transaction currency.
 
-    *Note.* This field is available only if you select **Indicated currency** in
-    the **Currency type** field.
+>   *Note.* This field is available only if you select **Indicated currency** in
+>   the **Currency type** field.
 
 6.  In the **Main account** field, select the account to generate the report
     for. If you select a total account, the report will be generated for the
@@ -290,42 +278,40 @@ recalculation of the balance for each transaction.
 >   *Note.* If you leave these fields blank, the system will select transactions
 >   that have *any* dimension code for the report.
 
-1.  Set the **Print ranges** option to **Yes** to view the query terms when you
+8.  Set the **Print ranges** option to **Yes** to view the query terms when you
     print the report.
 
-2.  Set the **Total accounts** option to **Yes** to total the accounts.
+9.  Set the **Total accounts** option to **Yes** to total the accounts.
 
-3.  Set the **Totals only** option to **Yes** to view only total accounts.
+10. Set the **Totals only** option to **Yes** to view only total accounts.
 
-    *Note.* This option is available only if you set the **Total accounts**
-    option to **Yes**.
+>   *Note.* This option is available only if you set the **Total accounts**
+>   option to **Yes**.
 
-4.  Set the **Debit activity** option to **Yes** to print the detailed account
+11. Set the **Debit activity** option to **Yes** to print the detailed account
     turnovers in debit correspondence.
 
-5.  Set the **Credit activity** option to **Yes** to print the detailed account
+12. Set the **Credit activity** option to **Yes** to print the detailed account
     turnovers in credit correspondence.
 
-![](media/a94c873da1ee2aaca1f72a4216edfd8e.jpg)
+    ![](media/10_Journal_order_account_activity.jpg)
 
->   A screenshot of a cell phone Description automatically generated
-
-1.  On the **Records to include** tab, you can select **Filter** to specify
+13. On the **Records to include** tab, you can select **Filter** to specify
     filter criteria.
 
-2.  Select **ОК** to generate the report in Excel.
+14. Select **ОК** to generate the report in Excel.
 
-![A screenshot of a cell phone Description automatically generated](media/b191594c22459a225a8074a581d75662.jpg)
+    ![](media/11_Journal_order_and_account_activity.jpg)
 
-*Note.*
-
--   Select **Voucher** to view the ledger transactions that generated the
-    activity.
-
--   Select the total account cell to open the transactions on all accounts that
-    are included in the range of the specified total account, and that generated
-    activity on the total account.
-
--   Select **Select** to change the report generation parameters.
-
--   Select **Print** to print the report in Excel.
+>   *Note.*
+>   
+>   -   Select **Voucher** to view the ledger transactions that generated the
+>       activity.
+>
+>   -   Select the total account cell to open the transactions on all accounts that
+>   are included in the range of the specified total account, and that generated
+>   activity on the total account.
+>
+>   -   Select **Select** to change the report generation parameters.
+>
+>   -   Select **Print** to print the report in Excel.
