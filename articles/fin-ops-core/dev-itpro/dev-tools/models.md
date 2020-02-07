@@ -2,10 +2,10 @@
 # required metadata
 
 title: Models and packages
-description: This article describes the concept of models and packages. It also explains how to use the Development tools in Microsoft Visual Studio to create new models, how to update the parameters of existing models, and how to visualize dependencies between models.
+description: This topic describes the concept of models and packages. It also explains how to use the Development tools in Microsoft Visual Studio to create new models, how to update the parameters of existing models, and how to visualize dependencies between models.
 author: jorisdg
 manager: AnnBe
-ms.date: 05/30/2017
+ms.date: 02/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article describes the concept of models and packages. It also explains how to use the development tools in Microsoft Visual Studio to create new models, how to update the parameters of existing models, and how to visualize dependencies between models.
+This topic describes the concept of models and packages. It also explains how to use the development tools in Microsoft Visual Studio to create new models, how to update the parameters of existing models, and how to visualize dependencies between models.
 
 To work with models in the model store, you use tools in Microsoft Visual Studio. You can create new models and change parameters for existing models.
 
@@ -49,7 +49,7 @@ You use the **Create model** wizard to create new models. You can access this wi
 -   **A model that is deployed in its own package** – You can use this type of model to create new model elements, and extend the metadata and business logic of referenced models. The wizard lets you select the referenced models. This type of model is compiled into its own assembly and binaries, and will simplify and reduce the cost of upgrades, deployment, and application lifecycle management in general.
 -   **A model that is a part of an existing package** – You can use this type of model to perform advanced customizations, such as overlayering source code and metadata.
 
-The **Create model** wizard will ask which layer to use. Select **usr**. This layer will store User customizations. If needed, in the future you can patch your customizations using the **usp** layer. If there are multiple versions of the same object in different layers, then the top layer will take precedence and will be used.
+In the **Create model** wizard, select **usr** for the layer. This layer will store user customizations. If needed, you can patch your customizations using the **usp** layer. If there are multiple versions of the same object in different layers, then the top layer will take precedence and will be used.
 
 When the **Create model** wizard is completed, if you chose to create a new project, you will be prompted to specify a name and location for it.
 
@@ -69,34 +69,36 @@ The updated model parameters become effective only after you restart Visual Stud
 ## Viewing package dependencies
 You can create a graphical representation that shows which packages and their models have dependencies on other packages. On the **Dynamics 365** menu, point to **Model Management**, and then click **View package dependencies**. A Directed Graph Markup Language (DGML) diagram will be generated for the current packages and their models. This diagram is a collection of interdependent nodes, each of which represents a package. Each node lists all the models that belong to that package. Additional tools let you enhance or simplify the diagram. For example, you can add comments, move nodes around, or remove nodes. You can also view package dependencies of a single model by following these steps:
 
-1.  Make sure the Application Explorer is in Model view: Right-click on the AOT node and select Model view.
+1.  Make sure the Application Explorer is in Model view: Right-click the AOT node and select **Model view**.
 2.  Right-click on any model and select **View package dependencies** > **View outgoing references.**
 
 This will generate a graph of all packages that the selected model depends on. 
 
-![view dependencies](./media/viewdependencies2.png) 
+![View dependencies](./media/viewdependencies2.png) 
 
-![directory dependencies](./media/directorydependencies.png)
+![Directory dependencies](./media/directorydependencies.png)
 
 ## Deleting a model
-On a development or test environment, follow these steps to delete a model.
+In a development or test environment, follow these steps to delete a model.
 
 The following steps assume the local model store folder is C:\AOSService\PackagesLocalDirectory and your model is named MyModel1.
 
-If your model belongs to its own package (For example: An extension package with no other models in the package):
-1. Stop the following services: The AOS web service and the Batch Management Service
-2. Delete the package folder  C:\AOSService\PackagesLocalDirectory\MyModel1
-3. Restart the services from step 1
-4. If Visual Studio is running, refresh your models (Visual Studio > Dynamics 365 > Model management > Refresh models)
-5. In Visual Studio, perform a full database synchronization (Visual Studio > Dynamics 365 > Synchronize database...)
+If your model belongs to its own package. For example an extension package with no other models in the package.
 
-If your model belongs to a package with multiple models (For example, MyModel1 overlays Application Suite):
-1. Stop the following services: The AOS web service and the Batch Management Service
-2. Delete the model folder  C:\AOSService\PackagesLocalDirectory\<PackageName>\MyModel1 (In this example PackageName=ApplicationSuite)
-3. Restart the services from step 1
-4. In Visual Studio, refresh your models (Visual Studio > Dynamics 365 > Model management > Refresh models)
-5. In Visual Studio, build the package that the deleted models belonged to (Visual Studio > Dynamics 365 > Build models...)
-6. In Visual Studio, perform a full database synchronization (Visual Studio > Dynamics 365 > Synchronize database...)
+1. Stop the following services: AOS web service and Batch Management service.
+2. Delete the package folder C:\AOSService\PackagesLocalDirectory\MyModel1.
+3. Restart the services that were stopped in step 1.
+4. If Visual Studio is running, refresh your models (**Visual Studio > Dynamics 365 > Model management > Refresh models**)
+5. In Visual Studio, perform a full database synchronization (**Visual Studio > Dynamics 365 > Synchronize database**).
+
+If your model belongs to a package with multiple models. For example, the MyModel1 overlays Application Suite.
+
+1. Stop the following services: AOS web service and  Batch Management service.
+2. Delete the model folder C:\AOSService\PackagesLocalDirectory\<PackageName>\MyModel1. In this example. PackageName=ApplicationSuite.
+3. Restart the services that were stopped in step 1.
+4. In Visual Studio, refresh your models (**Visual Studio > Dynamics 365 > Model management > Refresh models**).
+5. In Visual Studio, build the package that the deleted models belonged to (**Visual Studio > Dynamics 365 > Build models**).
+6. In Visual Studio, perform a full database synchronization (**Visual Studio > Dynamics 365 > Synchronize database**).
 
 ## Additional resources
 
@@ -105,6 +107,3 @@ If your model belongs to a package with multiple models (For example, MyModel1 o
 [Develop and customize home page](developer-home-page.md)
 
 [Export and import models](models-export-import.md)
-
-
-
