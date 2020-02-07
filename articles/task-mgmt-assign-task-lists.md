@@ -2,8 +2,8 @@
 # required metadata
 
 title: Assign task lists
-description: [Dynamics 365 Commerce's Task Management is a productivity feature, for Firstline manager (Regional/Store) and Firstline workers, that gives an ability to create tasks lists , manage assignment criteria, and track status, in an integrated way between Backoffice and POS applications.]
-author: [gvrmohanreddy]
+description: This topic describes how to assign task lists in Dynamics 365 Commerce.
+author: gvrmohanreddy
 manager: annbe
 ms.date: 02/10/2020
 ms.topic: article
@@ -32,13 +32,17 @@ ms.dyn365.ops.version: Release 10.0.9
 
 [!include [banner](includes/banner.md)]
 
+This topic describes how to assign task lists in Dynamics 365 Commerce.
+
 ## Overview
 
-A task list can be assigned to multiple stores or employees based on requirements. For e.g. you are a regional manager for 20 stores, and want to assign **Holiday season preparation** task list to all of 20 stores you are managing.  Dynamics 365 Commerce's task management process allows you to assign a task list to multiple stores or employees or combination.
+Task management in Dynamics 365 Commerce enables you to assign a task list to multiple stores or employees or combination of the two. For example, a regional manager for 20 stores may want to assign the **Holiday season preparation** task list to all 20 stores.
 
-## Start assignment process
+## Start the task list assignment process
 
-1. Go to **Retail and Commerce > Task management > Task management administration**  
+To start the task list assignment process, follow these steps.
+
+1. Go to **Retail and Commerce \> Task management \> Task management administration**  
 1. Select a tasks list that you want to assign. 
 1. Click on **Start process**. 
 1. On **Start process** flyout under **General** tab, give a **Process name** (e.g. East region stores) and set **Target date**.
@@ -49,7 +53,7 @@ See below screenshot for more details:
 ![Dynamics 365 Commerce - Task management](media/HQ-Assign-Tasks-Lists.png)
 
 
-## Assign a task lists recurrently
+## Assign task lists recurrently
 
 Retailer may have recurrent tasks e.g. Thursday closure checklist or First day of the month checklist etc. and wants to assign the task list recurrently.  
 
@@ -65,17 +69,18 @@ The following image shows
 
 ![Dynamics 365 Commerce - Task management](media/HQ-Assign-Tasks-Lists-Recurrently.png)
 
-## Track tasks lists status form Headquarters
+## Track tasks lists status
 
-As a Regional or Store manager you may want to check the status of tasks lists assigned to multiple stores and/or employees so that you can follow-up with stores or workers who has not completed the tasks on time. Dynamics 365 Commerce's Backoffice allows you to view the status of tasks lists, and even reassign a task or change status of a task. 
+As a regional or store manager, you may want to check the status of tasks lists assigned to multiple stores or employees so that you can follow up with stores or workers who may not have completed tasks on time. Dynamics 365 Commerce back office allows you to view the status of tasks lists, reassign tasks, or change the status of a task. 
 
+To track task list status for all tasks, follow these steps.
 
-1. Go to **Retail and Commerce > Task management > Task management processes**
-1. Click on **All checklists** to view the status of all tasks list assigned to various stores.  
+1. Go to **Retail and Commerce \> Task management \> Task management processes**
+1. Select **All checklists** to view the status of all task lists assigned to various stores.  
 
-As a Headquarters persona, you may have tasks assigned to you to perform within the Backoffice. Follow below steps to view your own tasks, or all tasks and update the status: 
+To track task list status for all tasks assigned to you, follow these steps.
 
-1. Go to **Retail and Commerce > Task management > Task management processes**
-1. Click on **My tasks or All tasks** to view tasks and update the status of tasks assigned to you.  
+1. Go to **Retail and Commerce \> Task management \> Task management processes**
+1. Select **My tasks or All tasks** to view or update the status of tasks assigned to you.  
  
 ## Additional resources
