@@ -5,7 +5,7 @@ title: What's new in Lifecycle Services (LCS)
 description: This topic provides links to the LCS release notes, major announcements, and more. 
 author: laneswenka
 manager: AnnBe
-ms.date: 02/04/2020
+ms.date: 02/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -44,7 +44,7 @@ To get started using Lifecycle Services, see the [Lifecycle Services (LCS) user 
 
 | **Area** | **Feature**   |
 | :-------------- | :------------ |
-| Admin APIs |[ Database movement RESTful APIs in Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/database-movement-restful-apis-lifecycle-services) |
+| Admin APIs |[ Database movement RESTful APIs in Lifecycle Services](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/database-movement-restful-apis-lifecycle-services) |
 
 ## LCS releases before November 2019
 For information about LCS releases that occurrred before November 2019, see the [blog posts published by the Lifecycle Services team on the Dynamics 365 blog](https://cloudblogs.microsoft.com/dynamics365/author/lifecycle-services-team/).
