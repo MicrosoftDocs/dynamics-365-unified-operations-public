@@ -35,9 +35,9 @@ This topic provides an overview of task management for managers and workers in M
 
 ## Overview
 
-Ensuring that tasks are performed by the right person at the right time in a retail environment is always difficult. Retailers want the ability to notify workers of upcoming tasks along with the related business context so that workers can complete the tasks correctly and on time.  
+Ensuring that tasks are performed by the right person at the right time in a retail environment is always difficult. Retailers need the ability to notify workers of upcoming tasks with the related business context so that tasks can be completed correctly and on time.  
 
-Task management in Dynamics 365 Commerce is a productivity feature that enables managers and workers to create tasks lists, manage assignment criteria, and track task status while integrating these operations between back office and point of sale (POS) applications. 
+Task management in Dynamics 365 Commerce is a productivity feature that enables managers and workers to create tasks lists, manage assignment criteria, and track task status while integrating these operations between Commerce back office and point of sale (POS) applications. 
 
 Commerce task management enables headquarters persona to create tasks lists for retail stores and track status by store or by worker, and also create recurrent tasks (for example, "Thursday night closing checklist"). 
 
@@ -45,16 +45,8 @@ The task management feature also empowers store managers to assign tasks to indi
 
 The following diagram shows the conceptual architecture of task management in Dynamics 365 Commerce.
   
-![Dynamics 365 Commerce - Task management](media/Tasks-management-conceptual-architecture.png)
+![Task management - Conceptual architecture of task management in Dynamics 365 Commerce](media/Tasks-management-conceptual-architecture.png)
   
-## Task list and tasks
-
-
- 
- 
-This section covers the following topics, follow the links to proceed.
-
-
 ## Additional resources
 
 - [Set up task management](https://docs.microsoft.com/en-us/dynamics365/)
