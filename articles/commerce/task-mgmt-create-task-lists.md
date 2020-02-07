@@ -61,19 +61,19 @@ To add tasks to a task list, follow these steps.
 1. For **Task link**, provide a link based on the nature of the task.
    
 > [!TIP] 
-> Though it's technically feasible to assign a task to someone while creating the task, try to avoid assigning task while creating task list.  You can assign the tasks once the list is instantiated for individual stores. 
+> Though it's technically feasible to assign a task to someone while creating a task list, try to avoid assigning tasks during task list creation. You can assign the tasks once the list is instantiated for individual stores. 
 
 ## Use task links to improve workers productivity
  
-Dynamics 365 Commerce offers a way to link a task to a specific POS operation e.g. Run sales report, or online training video for new employee orientation task, or Backoffice operation e.g. product kits. This feature helps task owners to jump start with the task as clicking on task link navigate them to appropriate operation.
+Dynamics 365 Commerce offers a way to link a task to a specific POS operation, for example a "run sales" report, an online training video for new employee orientation task, or a back office operation. This feature helps task owners get the information they need to efficiently complete a task.
 
-Linking tasks while creating a task
+To add task links while creating a task, follow these steps.
 
 1. Under the **Tasks** tab of an existing task list, select **Edit**.
-1. Select the **Task link** drop down menu.
-1. Select **Menu item** to configure a back office operation, for example "Product kits."
-1. Select **POS operation** to configure a POS operation, for example "Sales reports."
-1. Select **URL** to configure an absolute URL.
+1. Select the **Task link** drop down menu, and then do one or more of the following steps.
+    - Select **Menu item** to configure a back office operation, for example "Product kits."
+    - Select **POS operation** to configure a POS operation, for example "Sales reports."
+    - Select **URL** to configure an absolute URL.
 
 The following image shows the selection of task links on the **Edit task** flyout menu.
 
@@ -81,7 +81,7 @@ The following image shows the selection of task links on the **Edit task** flyou
 
 **Enable a POS operation to be linkable to a task**
 
-To enable a POS operation to be linked with a task, follow below steps:
+To enable a POS operation to be linked with a task, follow these steps:
 
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS \> Operations**.
 1. Select **Edit**, identify the preferred POS operation, and then select the **Enable Task Management** check box. 
