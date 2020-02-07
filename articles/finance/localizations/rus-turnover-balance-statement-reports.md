@@ -147,7 +147,7 @@ show information in the context of customers, vendors, and advance holders.
 
 16. Select **ОК** to generate the report.
 
-![](media/5_Vendor_turnover_registerc.jpg)
+![](media/5_Vendor_turnover_register.jpg)
 
 >   *Note.*
 >
