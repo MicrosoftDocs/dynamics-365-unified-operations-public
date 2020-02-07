@@ -110,16 +110,16 @@ From the document list page view, users can use the **Order details** function f
 
 The document list page view also provides users with an option for creating a new inbound transfer order request for their store. These documents remain in a draft state and can be adjusted or deleted until they are submitted to HQ for processing. Once submitted to HQ, the transfer order lines can no longer be changed from the POS application.
 
-## Inbound operation – receiving process
+## Receiving process
 
-Once the user has selected a Purchase order or Transfer order document from the Active tab, they may click the **Order details** function to begin the receiving process.
+Once the user has selected a purchase order or transfer order document from the **Active** tab, they must click the **Order details** function to begin the receiving process.
 
-By default, the user will be shown the **Receiving now** view.   This view is optimized for barcode scanning.  This view can be used to build a list of the items the user has scanned to be received.   At this time, a user can begin to scan item barcodes to start the receiving process.
+By default, the **Receiving now** view is displayed. This view is optimized for barcode scanning and can be used to build a list of the items the user has scanned to be received. A user can begin to scan item barcodes to start the receiving process.
 
-As a user scans item barcodes using the **Receiving now** view, the application will validate the item against the selected Purchase or Transfer order document to ensure the item scanned matches a valid item on the document.   From the **Receiving now** view, a scan of a barcode assumes a quantity of 1 has been received (unless the barcode has a quantity embedded).    Users can repeatedly scan barcodes from this view to build a list of all the items and quantities for their receipt.
+As a user scans item barcodes using the **Receiving now** view, the application will validate the item against the selected purchase or transfer order document to ensure the item scanned matches a valid item on the document. From the **Receiving now** view, a scan of a barcode assumes a quantity of 1 has been received, unless the barcode has a quantity embedded. Users can repeatedly scan barcodes from this view to build a list of all the items and quantities for their receipt.
 
-> [!Example]
->A user is receiving a purchase order that contains 10 units of barcode 5657900266, the user can scan that barcode 10 times to continually update the **Receiving now** field by 1 unit per scan.  The **Receiving now** field for that items line will show a quantity of 10 received when the user has finished the scans.
+### Example scenario
+A user receives a purchase order that contains 10 units of barcode "5657900266". The user can scan that barcode 10 times to continually update the **Receiving now** field by 1 unit per scan. The **Receiving now** field for that items line will show a quantity of 10 received when the user has finished the scans.
 
 Alternatively, if the user prefers to not scan the barcode for each item received in a large quantity scenario and would instead prefer to enter the quantity manually, the user can scan the barcode once to add the item to the **Receiving now** list, then touch the associated line on the **Receiving now** list to edit the **Receiving quantity** for the item through the Details panel that appears on the right side of the screen.
 
