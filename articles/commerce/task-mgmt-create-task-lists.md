@@ -58,7 +58,7 @@ To add tasks to a task list, follow these steps.
 1. Enter a +/- integer value for **Due data offset from target date**, for example enter **-2** if you want the task to be completed two days before the task list's due date.    
 1. For **Notes**, provide detailed instructions. 
 1. For **Contact person**, provide the name of a subject matter expert in case the task owner needs help.
-1. For **Task link**, provide a link based on the nature of the task. Read below for more information on Task link feature. 
+1. For **Task link**, provide a link based on the nature of the task.
    
 > [!TIP] 
 > Though it's technically feasible to assign a task to someone while creating the task, try to avoid assigning task while creating task list.  You can assign the tasks once the list is instantiated for individual stores. 
@@ -69,28 +69,31 @@ Dynamics 365 Commerce offers a way to link a task to a specific POS operation e.
 
 Linking tasks while creating a task
 
-1. Click on **Task link** dropdown
-1. Choose  **Menu item** for configuring a Backoffice operation, e.g. Product kits
-1. Choose **POS operation** for configuring a POS operation, e.g. Sales reports.
-1. Choose **URL** for configuring absolute URL. e.g. [http://mydomain.com/training/orientation(http://mydomain.com/training/orientation) 
+1. Under the **Tasks** tab of an existing task list, select **Edit**.
+1. Select the **Task link** drop down menu.
+1. Select **Menu item** to configure a back office operation, for example "Product kits."
+1. Select **POS operation** to configure a POS operation, for example "Sales reports."
+1. Select **URL** to configure an absolute URL.
 
-The following image shows
+The following image shows the selection of task links on the **Edit task** flyout menu.
 
-![Dynamics 365 Commerce - Task management](media/HQ-POS-Tasks-Linking.png)
+![Task management - Selection of task links](media/HQ-POS-Tasks-Linking.png)
 
 **Enable a POS operation to be linkable to a task**
 
 To enable a POS operation to be linked with a task, follow below steps:
 
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS \> Operations**.
-2. Click **Edit**,  and identify the preferred POS operation, and then select **Enable Task Management** check box. 
-
-The following image shows
-
-![Dynamics 365 Commerce - Task management](media/HQ-POS-Operations-Allow-Task-Linking.png)
+1. Select **Edit**, identify the preferred POS operation, and then select the **Enable Task Management** check box. 
 
 ## Additional resources
 
+[Task management overview](task-mgmt-overview.md)
 
+[Configure task management](task-mgmt-configure.md)
+
+[Assign task lists to stores or employees](task-mgmt-assign-lists.md)
+
+[POS task management](task-mgmt-POS.md)
 
 
