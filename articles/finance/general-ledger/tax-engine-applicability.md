@@ -71,19 +71,22 @@ Select the tax component CGST, and click the pencil icon, to check the detailed 
 The condition is actually an [Electronic Reporting](../../dev-itpro/analytics/general-electronic-reporting.md) expression. It is comprised of the fields on the left in **Data source**, and **Functions** on the right. For a list of supported functions, see [Functions](../../dev-itpro/analytics/general-electronic-reporting-formula-designer.md#supported-functions). 
 
 The following condition means that *Taxable Document Type* cannot be "Invent transfer order receive", "Invent transfer order shipment", or "Invent transfer order". This also means that either HSN Code or SAC should be specified.
-```
+
+```sql
 AND(Header.'Taxable Document Type'<>"Invent transfer order receive",
     Header.'Taxable Document Type'<>"Invent transfer order shipment",
     Header.'Taxable Document Type'<>"Invent transfer order", 
     OR(NOT(Header.Lines.'HSN Code'=""), NOT(Header.Lines.SAC=""))
    )
 ```
+
 ### Enable GST for intra-state inventory transfer order
 In this scenario, suppose that the Indian government requires you to calculate GST for intra-state inventory transfer orders if the GST registration numbers are different between the ship from and ship to warehouse. 
 
 #### Structure of the Data source in the formula designer
 On the leftmost side of the formula designer, you can find all the fields that are defined in the taxable document and tax document, and the reference model that is defined in the taxable document.
-```
+
+```Text
 Header
 └───Header fields
 └───Lines
@@ -93,9 +96,11 @@ Header
 |               └───Tax measures
 Reference models
 ```
+
 #### Change the applicability condition
 To change the applicability condition, go to **Header > Lines > GST Registration number** and **Header > Lines > Party GST Registration number**. These represent the GST registration numbers for the ship from and ship to warehouse. The condition can be changed to the following.
-```
+
+```Text
 AND(
     OR(
        AND(
@@ -115,6 +120,7 @@ AND(
     OR(NOT(Header.Lines.'HSN Code'=""), NOT(Header.Lines.SAC=""))
    )
 ```
+
 Select the field from the data source, and use **Add data source** to add the field into the formula. Make sure to use single quotes for the data source field if there is an empty space in the name, like 'Taxable Document Type'. Use a double quote for the value if there is an empty space, like "Inventory transfer order".
 
 Click **Test** to test your formula after you are done with editing.
@@ -134,7 +140,8 @@ A lookup is a matrix. The relation of each line is *OR*, and the relation of eac
 In the screenshot above, all the data for the lookup of tax type GST comes from the configuration, so the **Source type** is **Configuration**.
 
 If you convert the lookup of GST into a condition, it will look like following.
-``` 
+
+```Text 
 OR(
     AND(Exempt=Exempt.No,
         AND('Tax Direction' = "Sales tax receivable",
@@ -152,6 +159,7 @@ OR(
     )
 )
 ```
+
 ### Lookup for dynamic applicability rules
 Many applicability rules depend on the runtime data. For example, some tax components are only applicable for a certain good or service, so a different type of tax transaction results in a different tax rate. 
 
