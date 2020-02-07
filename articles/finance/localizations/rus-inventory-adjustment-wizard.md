@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 8.1
 [!include [banner](../includes/banner.md)]
 
 
-The **Inventory adjustment** wizard is used to adjust on-hand inventory or inventory transactions. Before you adjust on-hand inventory, it must be closed. For more information about inventory closing, see [Inventory close](https://docs.microsoft.com/dynamics365/supply-chain/cost-management/inventory-close) and [Inventory cost structure](us-inventory-cost-structure.md).
+The **Inventory adjustment** wizard is used to adjust on-hand inventory or inventory transactions. Before you adjust on-hand inventory, it must be closed. For more information about inventory closing, see [Inventory close](../../supply-chain/cost-management/inventory-close.md) and [Inventory cost structure](rus-inventory-cost-structure.md).
 
 You can adjust the amount of an item in the warehouse in a settlement with an arbitrary ledger account, and you can post a negative adjustment as a reversal.
 
@@ -46,7 +46,7 @@ Before you can adjust item cost by using miscellaneous charges and the **Invento
 
 Additionally, before you can adjust item cost in a secondary currency, verify that you've completed the prerequisites in the Inventory valuation in secondary currency (here will be link to the topic from content deliverable 148936) topic.
 
-## Adjust item cost by using the Inventory adjustment wizard
+## <a name="adjust-item-cost-using-inventory-adjustment-wizard"></a>Adjust item cost by using the Inventory adjustment wizard
 
 1. Go to **Inventory management \> Periodic tasks \> Closing and adjustment** or **Inventory management \> Periodic tasks \> Closing and adjustment in currency**.
 2. On the Action Pane, select **Adjustment \> Wizard**.
@@ -121,7 +121,7 @@ To cancel adjustments that are done by the wizard, on the **Closing and adjustme
 
 ### Method for calculating an adjustment to a fixed cost price
 
-1. Open the **Inventory adjustment** wizard, select the method of adjustment, and select on-hand items or item transactions, as described in the [Adjust item cost by using the Inventory adjustment wizard](#adjust-item-cost-by-using-the-inventory-adjustment-wizard) section.
+1. Open the **Inventory adjustment** wizard, select the method of adjustment, and select on-hand items or item transactions, as described in the [Adjust item cost by using the Inventory adjustment wizard](#adjust-item-cost-using-inventory-adjustment-wizard) section.
 2. On the **Functions for calculating adjustment amounts** page, select **Fixed cost price**, and then select **Next**.
 3. On the **Adjustment to fixed cost price** page, in the **Price** field, enter the fixed cost price, and then select **Next**.
 
