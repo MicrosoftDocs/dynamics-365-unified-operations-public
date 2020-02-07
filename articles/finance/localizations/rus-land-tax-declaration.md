@@ -297,7 +297,7 @@ company divisions.
     the organization's main location, the tax authority that land tax is
     reported to is defined as the tax authority that has the same OKTMO code as
     the separate division that is associated with the land location. 
-    
+    >
     > For information about how to associate a fixed asset with a location, see the
     [Specify the location of the land](#specify-the-location-of-the-land)
     section later in this topic.
@@ -515,12 +515,12 @@ change in cadastral value.
     specify any other values that have changed: **Category**, **Cadastral
     number**, **Owned share numerator**, or **Owned share denominator**.
 
-    >  [!NOTE]
-    >  If this change is the first change in cadastral value, you must also create a line for the previous values that were originally entered in the fixed asset record.
+    > [!NOTE]
+    > If this change is the first change in cadastral value, you must also create a line for the previous values that were originally entered in the fixed asset record.
     >  
-    >  When the line for the change in cadastral value is created, corresponding fields in the fixed asset record can no longer be edited. They show the actual values from the tax reporting data history record.
+    > When the line for the change in cadastral value is created, corresponding fields in the fixed asset record can no longer be edited. They show the actual values from the tax reporting data history record.
     >  
-    >  Use the **History of tax reporting data** page to define the history of tax allowance changes.
+    > Use the **History of tax reporting data** page to define the history of tax allowance changes.
 
 7.  In the **Land tax exemption (art 387)** field, specify the code for the tax
     allowance as an exemption from tax in accordance with federal law.
@@ -557,10 +557,10 @@ changes, follow these steps to specify the new cadastral cost in each territory.
     specify any other values that have changed: **Owned share numerator** or
     **Owned share denominator**.
 
->  [!NOTE] 
->  If this change is the first change in cadastral value, you must also create a line for the previous values that were originally entered in the distribution record.
+> [!NOTE] 
+> If this change is the first change in cadastral value, you must also create a line for the previous values that were originally entered in the distribution record.
 >
->  When the line for the change in cadastral value is created, corresponding fields in the distribution record can no longer be edited. They show the actual values from the history record.
+> When the line for the change in cadastral value is created, corresponding fields in the distribution record can no longer be edited. They show the actual values from the history record.
 
 Calculate land tax registers
 ----------------------------
