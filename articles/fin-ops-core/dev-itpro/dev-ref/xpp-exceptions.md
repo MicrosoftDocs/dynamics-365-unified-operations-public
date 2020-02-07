@@ -74,7 +74,7 @@ throw new InvalidOperationException("This function is not allowed");
 
 Also in Platform update 31 or later, the **throw** keyword can be used by itself inside a catch block. In such a case, **throw** will behave like the **rethrow** statement in C\#. The original exception, exception message and its context such as call stack will be rethrown and be available to any catch statements in calling code.
 
-```
+```xpp
 try
 {
     throw Exception::error;

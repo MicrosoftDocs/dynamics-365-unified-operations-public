@@ -63,7 +63,7 @@ We recommend that you put the SDK in a source control system such as Visual Stud
     -  However, the publishing of the web storefront from RetailSDK will drop the files at C:\\inetpub\\RetailWeb\\Storefront.
     -  Hence, the physical path of the RetailStorefrontWebSite must be updated to point to “C:\\inetpub\\RetailWeb\\Storefront” to access web storefront on the same ports as before. Another option would be to create a new website and have that point to the inetpub location.
 
-6.  Browse to http://localhost:55080 or access the https://usnconeboxax1ecom.cloud.onebox.dynamics.com/en/ to see a test asp.net website.
+6.  Browse to `http://localhost:55080` or access `https://usnconeboxax1ecom.cloud.onebox.dynamics.com/` to see a test asp.net website.
 
 ### Enabling anonymous access
 

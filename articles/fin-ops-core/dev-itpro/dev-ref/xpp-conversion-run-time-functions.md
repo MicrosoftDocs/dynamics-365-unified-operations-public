@@ -41,7 +41,9 @@ any2Date
 
 Converts an **anytype** value to a **date** value.
 
-    date any2Date(anytype object)
+```xpp
+date any2Date(anytype object)
+```
 
 ### Parameters
 
@@ -59,28 +61,32 @@ The *object* parameter can be of most data types, but useful output is obtained 
 
 ### Example
 
-    static void any2DateExample(Args _args)
-    {
-            date myDate;
-            str s;
-            int i;
-            s = "2010 6 17"; // A string object, of yyyy mm dd.
-            myDate = any2Date(s);
-            Global::info(strFmt("%1  is output, from input of "2010 6 17"", myDate));
-            i = 40361; // An int object, which represents the number of days from 1900/01/01.
-            myDate = any2Date(i);
-            Global::info(strFmt("%1  is output, from input of 40361", myDate));
-    }
-    /**** Infolog display.
-    Message (04:44:15 pm)
-    6/17/2010 is output, from input of "2010 6 17"
-    7/4/2010 is output, from input of 40361
-    ****/
+```xpp
+static void any2DateExample(Args _args)
+{
+    date myDate;
+    str s;
+    int i;
+    s = "2010 6 17"; // A string object, of yyyy mm dd.
+    myDate = any2Date(s);
+    Global::info(strFmt("%1  is output, from input of "2010 6 17"", myDate));
+    i = 40361; // An int object, which represents the number of days from 1900/01/01.
+    myDate = any2Date(i);
+    Global::info(strFmt("%1  is output, from input of 40361", myDate));
+}
+/**** Infolog display.
+Message (04:44:15 pm)
+6/17/2010 is output, from input of "2010 6 17"
+7/4/2010 is output, from input of 40361
+****/
+```
 
 ## any2Enum
 Converts an **anytype** value to the **Name** property value of an element in the target enum.
 
-    enum any2Enum(anytype object)
+```xpp
+enum any2Enum(anytype object)
+```
 
 ### Parameters
 
@@ -98,28 +104,32 @@ The *object* parameter can be of most data types, but useful data is obtained on
 
 ### Example
 
-    static void any2EnumExample(Args _args)
-    {
-            NoYes myNoYes;  // NoYes is an enum.
-            int i;
-            str s;
-            i = 0;  // An int that will be converted.
-            myNoYes = any2Enum(i);
-            Global::info(strfmt("'%1' - is the output, from input of the %2 as int.", myNoYes, i));
-            s = "1";  // A str that will be converted.
-            myNoYes = any2Enum(s);
-            Global::info(strfmt("'%1' - is the output, from input of the %2 as str.", myNoYes, s));
-            /**** Infolog display.
-            Message (01:05:32 pm)
-            'No' - is the output, from input of the 0 as int.
-            'Yes' - is the output, from input of the 1 as str.
-            ****/
-    }
+```xpp
+static void any2EnumExample(Args _args)
+{
+    NoYes myNoYes;  // NoYes is an enum.
+    int i;
+    str s;
+    i = 0;  // An int that will be converted.
+    myNoYes = any2Enum(i);
+    Global::info(strfmt("'%1' - is the output, from input of the %2 as int.", myNoYes, i));
+    s = "1";  // A str that will be converted.
+    myNoYes = any2Enum(s);
+    Global::info(strfmt("'%1' - is the output, from input of the %2 as str.", myNoYes, s));
+    /**** Infolog display.
+    Message (01:05:32 pm)
+    'No' - is the output, from input of the 0 as int.
+    'Yes' - is the output, from input of the 1 as str.
+    ****/
+}
+```
 
 ## any2Guid
 Converts the specified **anytype** object to a GUID object.
 
-    guid any2Guid(anytype object)
+```xpp
+guid any2Guid(anytype object)
+```
 
 ### Parameters
 
@@ -134,7 +144,9 @@ A GUID object.
 ## any2Int
 Converts an **anytype** value to an **int** value.
 
-    int any2Int(anytype object)
+```xpp
+int any2Int(anytype object)
+```
 
 ### Parameters
 
@@ -152,33 +164,37 @@ The *object* parameter can be of most data types, but useful data is obtained on
 
 ### Example
 
-    static void any2IntExample(Args _args)
-    {
-            int myInt;
-            str s;
-            NoYes a;
-            real r;
-            s = "31";
-            myInt = any2Int(s);
-            Global::info(strfmt("%1 is the output, from input of 31 as a str value.", myInt));
-            a = NoYes::No;
-            myInt = any2Int(a);
-            Global::info(strfmt("%1 is the output, from input of NoYes::No as an enum value.", myInt));
-            r = 5.34e2;
-            myInt = any2Int(r);
-            Global::info(strfmt("%1 is the output, from the input of 5.34e2 as a real value.", myInt));
-    }
-    /**** Infolog display.
-    Message (02:23:59 pm)
-    31 is the output, from input of 31 as a str value.
-    0 is the output, from input of NoYes::No as an enum value.
-    534 is the output, from the input of 5.34e2 as a real value.
-    ****/
+```xpp
+static void any2IntExample(Args _args)
+{
+    int myInt;
+    str s;
+    NoYes a;
+    real r;
+    s = "31";
+    myInt = any2Int(s);
+    Global::info(strfmt("%1 is the output, from input of 31 as a str value.", myInt));
+    a = NoYes::No;
+    myInt = any2Int(a);
+    Global::info(strfmt("%1 is the output, from input of NoYes::No as an enum value.", myInt));
+    r = 5.34e2;
+    myInt = any2Int(r);
+    Global::info(strfmt("%1 is the output, from the input of 5.34e2 as a real value.", myInt));
+}
+/**** Infolog display.
+Message (02:23:59 pm)
+31 is the output, from input of 31 as a str value.
+0 is the output, from input of NoYes::No as an enum value.
+534 is the output, from the input of 5.34e2 as a real value.
+****/
+```
 
 ## any2Int64
 Converts an **anytype** object to an **int64** object.
 
-    int64 any2Int64(anytype object)
+```xpp
+int64 any2Int64(anytype object)
+```
 
 ### Parameters
 
@@ -193,7 +209,9 @@ An **int64** object.
 ## any2Real
 Converts an **anytype** value to a **real** value.
 
-    real any2Real(anytype object)
+```xpp
+real any2Real(anytype object)
+```
 
 ### Parameters
 
@@ -211,33 +229,37 @@ The *object* parameter can be of most data types, but useful output is obtained 
 
 ### Example
 
-    static void any2RealExample(Args _args)
-    {
-            real myReal;
-            str s;
-            int i;
-            NoYes a;
-            s = "5.12";
-            myReal = any2Real(s);
-            Global::info(strfmt("%1 is the output from the input of 5.12 as a str object", myReal));
-            i = 64;
-            myReal = any2Real(i);
-            Global::info(strfmt("%1 is the output from the input of 64 as an int object", myReal));
-            a = NoYes::Yes;
-            myReal = any2Real(a);
-            Global::info(strfmt("%1 is the output from the input of NoYes::Yes as an enum object", myReal));
-    }
-    /****Infolog display.
-    Message (02:43:57 pm)
-    5.12 is the output from the input of 5.12 as a str object
-    64.00 is the output from the input of 64 as an int object
-    1.00 is the output from the input of NoYes::Yes as an enum object
-    ****/
+```xpp
+static void any2RealExample(Args _args)
+{
+    real myReal;
+    str s;
+    int i;
+    NoYes a;
+    s = "5.12";
+    myReal = any2Real(s);
+    Global::info(strfmt("%1 is the output from the input of 5.12 as a str object", myReal));
+    i = 64;
+    myReal = any2Real(i);
+    Global::info(strfmt("%1 is the output from the input of 64 as an int object", myReal));
+    a = NoYes::Yes;
+    myReal = any2Real(a);
+    Global::info(strfmt("%1 is the output from the input of NoYes::Yes as an enum object", myReal));
+}
+/****Infolog display.
+Message (02:43:57 pm)
+5.12 is the output from the input of 5.12 as a str object
+64.00 is the output from the input of 64 as an int object
+1.00 is the output from the input of NoYes::Yes as an enum object
+****/
+```
 
 ## any2Str
 Converts an **anytype** value to a **str** value.
 
-    str any2Str(anytype object)
+```xpp
+str any2Str(anytype object)
+```
 
 ### Parameters
 
@@ -255,22 +277,24 @@ The *object* parameter can be of most data types, but useful output is obtained 
 
 ### Example
 
-    static void any2StrExample(Args _args)
-    {
-            str myStr;
-            anytype a;
-            a = "Any to string";
-            myStr = any2Str(a);
-            Global::info(strFmt("%1 is output, from input of Any to string as a str value", myStr));
-            a = NoYes::Yes;
-            myStr = any2Str(a);
-            Global::info(strFmt("%1 is output, from input of NoYes::Yes as an enumeration", myStr));
-    }
-    /****Infolog Display
-    Message (09:08:46 am)
-    Any to string is output, from input of Any to string as a str value
-    1 is output, from input of NoYes::Yes as an enumeration
-    ****/
+```xpp
+static void any2StrExample(Args _args)
+{
+    str myStr;
+    anytype a;
+    a = "Any to string";
+    myStr = any2Str(a);
+    Global::info(strFmt("%1 is output, from input of Any to string as a str value", myStr));
+    a = NoYes::Yes;
+    myStr = any2Str(a);
+    Global::info(strFmt("%1 is output, from input of NoYes::Yes as an enumeration", myStr));
+}
+/****Infolog Display
+Message (09:08:46 am)
+Any to string is output, from input of Any to string as a str value
+1 is output, from input of NoYes::Yes as an enumeration
+****/
+```
 
 ## anytodate
 See [any2Date](#any2date).
@@ -297,7 +321,9 @@ See [any2Str](#any2str).
 
 Converts a character in a string to the ASCII value of the character.
 
-    int char2Num(str text, int position)
+```xpp
+int char2Num(str text, int position)
+```
 
 ### Parameters
 
@@ -312,13 +338,17 @@ The ASCII value of the character as an **int** object.
 
 ### Remarks
 
-    char2Num("ABCDEFG",3); //Returns the numeric value of C, which is 67.
-    char2Num("ABCDEFG",1); //Returns the numeric value of A, which is 65.
+```xpp
+char2Num("ABCDEFG",3); //Returns the numeric value of C, which is 67.
+char2Num("ABCDEFG",1); //Returns the numeric value of A, which is 65.
+```
 
 ## date2Num
 Converts a date to an integer that corresponds to the number of days since January 1, 1900.
 
-    int date2Num(date _date)
+```xpp
+int date2Num(date _date)
+```
 
 ### Parameters
 
@@ -332,20 +362,24 @@ The number of days between January 1, 1900, and the specified date.
 
 ### Example
 
-    //Returns the value377.
-    date2Num(1311901);
-    static void date2NumExample(Args _arg)
-    {
-            date d = today();
-            int i;
-            i = date2Num(d);
-            print i;
-    }
+```xpp
+//Returns the value377.
+date2Num(1311901);
+static void date2NumExample(Args _arg)
+{
+    date d = today();
+    int i;
+    i = date2Num(d);
+    print i;
+}
+```
 
 ## date2Str
 Converts the specified date to a string.
 
-    str date2Str(date date, int sequence, int day, int separator1, int month, int separator2, int year [, int flags = DateFlags::None])
+```xpp
+str date2Str(date date, int sequence, int day, int separator1, int month, int separator2, int year [, int flags = DateFlags::None])
+```
 
 ### Parameters
 
@@ -372,26 +406,28 @@ MorphX allocates valid values to the formatting parameters if the specified valu
 
 The following example displays the current date in the sequence of year, month, and day.
 
-    static void Job2(Args _args)
-    {
-            date currentDate = today();
-            str s;
-            int iEnum;
-            s = date2Str
-            (currentDate, 
-                    321,
-                    DateDay::Digits2,
-                    DateSeparator::Hyphen, // separator1
-                    DateMonth::Digits2,
-                    DateSeparator::Hyphen, // separator2
-                    DateYear::Digits4
-            );
-            info("Today is:  " + s);
-    }
-    /** Example Infolog output
-    Message (12:36:21 pm)
-    Today is:  2009-01-13
-    **/
+```xpp
+static void Job2(Args _args)
+{
+    date currentDate = today();
+    str s;
+    int iEnum;
+    s = date2Str
+    (currentDate, 
+        321,
+        DateDay::Digits2,
+        DateSeparator::Hyphen, // separator1
+        DateMonth::Digits2,
+        DateSeparator::Hyphen, // separator2
+        DateYear::Digits4
+    );
+    info("Today is:  " + s);
+}
+/** Example Infolog output
+Message (12:36:21 pm)
+Today is:  2009-01-13
+**/
+```
 
 ## datetime2Str
 Converts a **utcdatetime** value into a string.
@@ -423,18 +459,22 @@ The default behavior of this function is to generate the string in left-to-right
 
 ### Example
 
-    static void jobTestDatetime2str( Args _args )
-    {
-            utcdatetime utc2 = 1959-06-17T15:44:33;
-            str s3;
-            s3 = datetime2Str( utc2 );
-            info( s3 );
-    }
+```xpp
+static void jobTestDatetime2str( Args _args )
+{
+    utcdatetime utc2 = 1959-06-17T15:44:33;
+    str s3;
+    s3 = datetime2Str( utc2 );
+    info( s3 );
+}
+```
 
 ## enum2Str
 Converts the specified enumerated text to a character representation.
 
-    str enum2Str(enum enum)
+```xpp
+str enum2Str(enum enum)
+```
 
 ### Parameters
 
@@ -450,17 +490,21 @@ The value of the enumeration as a string.
 
 The following example returns the string "Not included." This is the label for the **IncludeNot** value of the **ListCode** enumeration type.
 
-    static void enum2StrExample(Args _arg)
-    {
-            ListCode l;
-            l =  ListCode::IncludeNot;
-            print enum2Str(l);
-    }
+```xpp
+static void enum2StrExample(Args _arg)
+{
+    ListCode l;
+    l =  ListCode::IncludeNot;
+    print enum2Str(l);
+}
+```
 
 ## guid2Str
 Converts the specified GUID object to the equivalent string.
 
-    str guid2String(guid _uuid)
+```xpp
+str guid2String(guid _uuid)
+```
 
 ### Parameters
 
@@ -474,23 +518,27 @@ The string equivalent of the specified GUID object.
 
 ### Example
 
-    static void guid2StrExample()
-    {
-            guid _guid;
-            str stringGuid;
-            _guid = Global::guidFromString("{12345678-1234-1234-1234-123456789abc}");
-            print strfmt("GUID is %1", _guid);
-            stringGuid = guid2str(_guid);
-            info("String GUID is " + stringGuid);
-    }
-    /**** Output to Infolog
-    String GUID is {12345678-1234-1234-1234-123456789ABC}
-    ****/
+```xpp
+static void guid2StrExample()
+{
+    guid _guid;
+    str stringGuid;
+    _guid = Global::guidFromString("{12345678-1234-1234-1234-123456789abc}");
+    print strfmt("GUID is %1", _guid);
+    stringGuid = guid2str(_guid);
+    info("String GUID is " + stringGuid);
+}
+/**** Output to Infolog
+String GUID is {12345678-1234-1234-1234-123456789ABC}
+****/
+```
 
 ## int2Str
 Converts an integer to the equivalent string.
 
-    str int2Str(int integer)
+```xpp
+str int2Str(int integer)
+```
 
 ### Parameters
 
@@ -504,16 +552,20 @@ A string representation of the integer.
 
 ### Example
 
-    static void int2StrExample(Args _arg)
-    {
-            print "This is int2Str, value is " + int2Str(intMax());
-            print "This is int642Str, value is " + int642Str(int64Max());
-    }
+```xpp
+static void int2StrExample(Args _arg)
+{
+    print "This is int2Str, value is " + int2Str(intMax());
+    print "This is int642Str, value is " + int642Str(int64Max());
+}
+```
 
 ## int642Str
 Converts the specified *integer* parameter to the equivalent text string.
 
-    str int642Str(int64 integer)
+```xpp
+str int642Str(int64 integer)
+```
 
 ### Parameters
 
@@ -527,16 +579,20 @@ The equivalent text string of the *integer* parameter.
 
 ### Example
 
-    static void example()
-    {
-            print "This is int2Str, value is " + int2Str(intMax());
-            print "This is int642Str, value is " + int642Str(int64Max());
-    }
+```xpp
+static void example()
+{
+    print "This is int2Str, value is " + int2Str(intMax());
+    print "This is int642Str, value is " + int642Str(int64Max());
+}
+```
 
 ## num2Char
 Converts an integer to the corresponding ASCII character.
 
-    str num2Char(int figure)
+```xpp
+str num2Char(int figure)
+```
 
 ### Parameters
 
@@ -550,18 +606,22 @@ The character that is represented by the specified integer.
 
 ### Example
 
-    static void num2CharExample(Args _arg)
-    {
-            str s;
-            s = num2Char(42);
-            // Prints an asterisk * -the character represented by 42.
-            print s;
-    }
+```xpp
+static void num2CharExample(Args _arg)
+{
+    str s;
+    s = num2Char(42);
+    // Prints an asterisk * -the character represented by 42.
+    print s;
+}
+```
 
 ## num2Date
 Retrieves the date that corresponds to the specified number of days after January 1, 1900.
 
-    date num2Date(int _days)
+```xpp
+date num2Date(int _days)
+```
 
 ### Parameters
 
@@ -575,12 +635,16 @@ The date that is the number of days that is specified by the *\_days* parameter 
 
 ### Remarks
 
-    num2Date(366); //Returns the date 01/01/1901 (1 January 1901).
+```xpp
+num2Date(366); //Returns the date 01/01/1901 (1 January 1901).
+```
 
 ## num2Str
 Converts a real number to a string.
 
-    str num2Str(real number, int character, int decimals, int separator1, int separator2)
+```xpp
+str num2Str(real number, int character, int decimals, int separator1, int separator2)
+```
 
 ### Parameters
 
@@ -617,25 +681,31 @@ Here are the possible values for the *separator2* parameter:
 
 In the following code example, the first call to the **num2str** method provides **16** for the *decimals* parameter, and the second call provides **17**.
 
-    static void Job_Num2Str(Args _args)
-    {
-            real realNum = 0.1294567890123456777; // 19 decimals places.
-            info(Num2Str(realNum, 0, 16, DecimalSeparator::Dot, ThousandSeparator::Space)); // 16 decimal places
-            info(Num2Str(realNum, 0, 17, DecimalSeparator::Dot, ThousandSeparator::Space)); // 17 decimal places
-    }
+```xpp
+static void Job_Num2Str(Args _args)
+{
+    real realNum = 0.1294567890123456777; // 19 decimals places.
+    info(Num2Str(realNum, 0, 16, DecimalSeparator::Dot, ThousandSeparator::Space)); // 16 decimal places
+    info(Num2Str(realNum, 0, 17, DecimalSeparator::Dot, ThousandSeparator::Space)); // 17 decimal places
+}
+```
 
 ### Output
 
 The messages are in the following Infolog output. The first number in the output contains 16 decimal place digits, whereas the second number contains only two decimal place digits.
 
-    Message (10:18:12)
-    0.1294567890123457
-    0.13
+```xpp
+Message (10:18:12)
+0.1294567890123457
+0.13
+```
 
 ## str2Date
 Converts the specified string to a **date** value.
 
-    date str2Date(str _text, str _sequence)
+```xpp
+date str2Date(str _text, str _sequence)
+```
 
 ### Parameters
 
@@ -658,22 +728,28 @@ Use the following values to specify the positions of the day, month, and year in
 
 For example, if the sequence in the string is month, year, and then day, the *\_sequence* parameter must be **231**. A **0** (zero) date is returned if the input parameters specify an invalid date. The following two examples specify an invalid date.
 
-    str2Date("31/12/44", 123) // Year must be four digits to reach the minimum of January 1 1901.
-    str2Date("31/12/2044", 213) // 213 means the month occurs first in the string, but 31 cannot be a month.
+```xpp
+str2Date("31/12/44", 123) // Year must be four digits to reach the minimum of January 1 1901.
+str2Date("31/12/2044", 213) // 213 means the month occurs first in the string, but 31 cannot be a month.
+```
 
 ### Example
 
-    static void str2DateExample(Args _arg)
-    {
-            date d;
-            d = str2Date("22/11/2007", 123);
-            print d;
-    }
+```xpp
+static void str2DateExample(Args _arg)
+{
+    date d;
+    d = str2Date("22/11/2007", 123);
+    print d;
+}
+```
 
 ## str2Datetime
 Generates a **utcdatetime** value from the specified string of date and time information.
 
-    utcdatetime str2datetime( str text, int sequence )
+```xpp
+utcdatetime str2datetime( str text, int sequence )
+```
 
 ### Parameters
 
@@ -690,9 +766,11 @@ A **utcdatetime** value that represents the specified date and time.
 
 The syntax requirements for the date portion of the *text* parameter are flexible. The variety of valid formats is the same as in the **date2str** function. Each of the following calls to **str2datetime** is valid, and all of them produce the same output.
 
-    utc3 = str2datetime( "1985/02/25 23:04:59" ,321 );
-    utc3 = str2datetime( "Feb-1985-25 11:04:59 pm" ,231 );
-    utc3 = str2datetime( "2 25 1985 11:04:59 pm" ,123 );
+```xpp
+utc3 = str2datetime( "1985/02/25 23:04:59" ,321 );
+utc3 = str2datetime( "Feb-1985-25 11:04:59 pm" ,231 );
+utc3 = str2datetime( "2 25 1985 11:04:59 pm" ,123 );
+```
 
 Each component of the date time is represented by a digit in the *sequence* parameter:
 
@@ -704,19 +782,23 @@ For example, year, month, day order is **321**. All valid values contain each of
 
 ### Example
 
-    static void JobTestStr2datetime( Args _args )
-    {
-            utcdatetime utc3;
-            str sTemp;
-            utc3 = str2datetime( "1985/02/25 23:04:59" ,321 );
-            sTemp = datetime2str( utc3 );
-            print( "sTemp == " + sTemp );
-    }
+```xpp
+static void JobTestStr2datetime( Args _args )
+{
+    utcdatetime utc3;
+    str sTemp;
+    utc3 = str2datetime( "1985/02/25 23:04:59" ,321 );
+    sTemp = datetime2str( utc3 );
+    print( "sTemp == " + sTemp );
+}
+```
 
 ## str2Enum
 Retrieves the enum element for which the localized **Label** property value matches the input string.
 
-    enum str2Enum(enum _type, str _text)
+```xpp
+enum str2Enum(enum _type, str _text)
+```
 
 ### Parameters
 
@@ -737,30 +819,34 @@ The related function **enum2str** returns the value of a **Label** property from
 
 To avoid string mismatches that are caused by localization to other spoken languages, we recommend that you use the **enum2str** function to generate the input into the **str2enum** function. The following example shows the appropriate way to use the **str2enum** function together with the **enum2str** function.
 
-    static void str2Enum_AcrossLangs(Args _arg)
-    {
-            BankAccountType bat;
-            str sEnumValueLabelLocalized;
-            int nInt;
-            // enum2str.
-            sEnumValueLabelLocalized = enum2str(BankAccountType::SavingsAccount);
-            info("Localized friendly string: "
-                    + sEnumValueLabelLocalized);
-            // str2enum.
-            bat = str2Enum(bat, sEnumValueLabelLocalized);
-            nInt = bat;
-            info("nInt = " + int2str(nInt));
-            /********** Actual output:
-            Message (04:32:12 pm)
-            Localized friendly string: Savings account
-            nInt = 1
-            **********/
-    }
+```xpp
+static void str2Enum_AcrossLangs(Args _arg)
+{
+    BankAccountType bat;
+    str sEnumValueLabelLocalized;
+    int nInt;
+    // enum2str.
+    sEnumValueLabelLocalized = enum2str(BankAccountType::SavingsAccount);
+    info("Localized friendly string: "
+        + sEnumValueLabelLocalized);
+    // str2enum.
+    bat = str2Enum(bat, sEnumValueLabelLocalized);
+    nInt = bat;
+    info("nInt = " + int2str(nInt));
+    /********** Actual output:
+    Message (04:32:12 pm)
+    Localized friendly string: Savings account
+    nInt = 1
+    **********/
+}
+```
 
 ## str2Guid
 Converts a string to a GUID object.
 
-    Guid str2Guid(str text)
+```xpp
+Guid str2Guid(str text)
+```
 
 ### Parameters
 
@@ -779,7 +865,9 @@ For example, a valid value for the *guid* parameter is **{12345678-1234-abCD-345
 ## str2Int
 Converts a string to the equivalent integer.
 
-    int str2Int(str _text)
+```xpp
+int str2Int(str _text)
+```
 
 ### Parameters
 
@@ -793,17 +881,21 @@ The integer equivalent of the specified string.
 
 ### Example
 
-    static void str2IntExample(Args _arg)
-    {
-            int i;
-            i = str2Int("1234567890");
-            print "i = " + int2Str(i);
-    }
+```xpp
+static void str2IntExample(Args _arg)
+{
+    int i;
+    i = str2Int("1234567890");
+    print "i = " + int2Str(i);
+}
+```
 
 ## str2Int64
 Converts a string into an **Int64** value.
 
-    int str2Int64(str text)
+```xpp
+int str2Int64(str text)
+```
 
 ### Parameters
 
@@ -817,23 +909,27 @@ The **Int64** value of the specified string.
 
 ### Example
 
-    static void str2Int64Example(Args _args)
-    {
-            str myStr;
-            str tooBig;
-            Int64 myInt64;
-            myStr = "1234567890";
-            tooBig = int642str(int64Max()+1);
-            myInt64 = str2Int64(mystr);
-            print strfmt ("int64: %1",myInt64);
-            myInt64 = str2Int64(tooBig);
-            print strfmt ("Too big int64: %1",myInt64);
-    }
+```xpp
+static void str2Int64Example(Args _args)
+{
+    str myStr;
+    str tooBig;
+    Int64 myInt64;
+    myStr = "1234567890";
+    tooBig = int642str(int64Max()+1);
+    myInt64 = str2Int64(mystr);
+    print strfmt ("int64: %1",myInt64);
+    myInt64 = str2Int64(tooBig);
+    print strfmt ("Too big int64: %1",myInt64);
+}
+```
 
 ## str2Num
 Converts a string to a real number.
 
-    real str2Num(str _text)
+```xpp
+real str2Num(str _text)
+```
 
 ### Parameters
 
@@ -849,48 +945,54 @@ The real number if the specified string contains a valid number; otherwise, **0*
 
 The following examples show how this function is used.
 
-    str2Num("123.45") returns the value 123.45.
-    str2Num("a123") returns the value 0.0.
-    str2Num("123a") returns the value 123.00.
+```xpp
+str2Num("123.45") returns the value 123.45.
+str2Num("a123") returns the value 0.0.
+str2Num("123a") returns the value 123.00.
+```
 
 Scanning occurs from left to right and ends when a character can't be converted to part of a real number.
 
 ### Example
 
-    static void str2NumToReal(Args _arg)
-    {
-            real r;
-            str s;
-            r = str2Num("3.15");
-            s = strFmt("r = %1", r);
-            info(s);
-    }
-    /*** Infolog output.
-    Message_@SYS14327 (02:36:12 pm)
-    r = 3.15
-    ***/
+```xpp
+static void str2NumToReal(Args _arg)
+{
+    real r;
+    str s;
+    r = str2Num("3.15");
+    s = strFmt("r = %1", r);
+    info(s);
+}
+/*** Infolog output.
+Message_@SYS14327 (02:36:12 pm)
+r = 3.15
+***/
 
-    static void str2NumExponentialSyntax(Args _args)
-    {
-            Qty qty1, qty2, qty3;
-            qty1 = str2num('1e-3'); // Bad syntax by the user.
-            qty2 = str2num('1.e-3');
-            qty3 = str2num('1.0e-3');
-            info(strfmt('Result: %1; Expected: %2', num2str(qty1, 0,3,2,0), '0.001'));
-            info(strfmt('Result: %1; Expected: %2', num2str(qty2, 0,3,2,0), '0.001'));
-            info(strfmt('Result: %1; Expected: %2', num2str(qty3, 0,3,2,0), '0.001'));
-    }
-    /*** Infolog output. The first result differs from expectations.
-    Message_@SYS14327 (02:20:55 pm)
-    Result: 1,000; Expected: 0.001
-    Result: 0,001; Expected: 0.001
-    Result: 0,001; Expected: 0.001
-    ***/
+static void str2NumExponentialSyntax(Args _args)
+{
+    Qty qty1, qty2, qty3;
+    qty1 = str2num('1e-3'); // Bad syntax by the user.
+    qty2 = str2num('1.e-3');
+    qty3 = str2num('1.0e-3');
+    info(strfmt('Result: %1; Expected: %2', num2str(qty1, 0,3,2,0), '0.001'));
+    info(strfmt('Result: %1; Expected: %2', num2str(qty2, 0,3,2,0), '0.001'));
+    info(strfmt('Result: %1; Expected: %2', num2str(qty3, 0,3,2,0), '0.001'));
+}
+/*** Infolog output. The first result differs from expectations.
+Message_@SYS14327 (02:20:55 pm)
+Result: 1,000; Expected: 0.001
+Result: 0,001; Expected: 0.001
+Result: 0,001; Expected: 0.001
+***/
+```
 
 ## str2Time
 Converts a string to a **timeOfDay** value.
 
-    int str2Time(str _text)
+```xpp
+int str2Time(str _text)
+```
 
 ### Parameters
 
@@ -904,22 +1006,28 @@ The number of seconds between midnight and the *\_text* parameter; otherwise, **
 
 ### Remarks
 
-    str2Time("05:01:37") //Returns the value 18097.
-    str2Time("7 o'clock") //Returns the value -1.
+```xpp
+str2Time("05:01:37") //Returns the value 18097.
+str2Time("7 o'clock") //Returns the value -1.
+```
 
 ### Example
 
-    static void str2TimeExample(Args _arg)
-    {
-            int i;
-            i = str2Time("11:30");
-            print i;
-    }
+```xpp
+static void str2TimeExample(Args _arg)
+{
+    int i;
+    i = str2Time("11:30");
+    print i;
+}
+```
 
 ## time2Str
 Converts a **timeOfDay** value to a string that includes hours, minutes, and seconds.
 
-    str time2Str(int _time, int _separator, int _timeFormat)
+```xpp
+str time2Str(int _time, int _separator, int _timeFormat)
+```
 
 ### Parameters
 
@@ -939,20 +1047,24 @@ The value of the *\_time* parameter is the number of seconds since midnight.
 
 ### Example
 
-    static void TimeJob4(Args _args)
-    {
-            timeOfDay theTime = timeNow();
-            info( time2Str(theTime, TimeSeparator::Colon, TimeFormat::AMPM) );
-    }
-    /**
-    Message (04:33:56 pm)
-    04:33:56 pm
-    **/
+```xpp
+static void TimeJob4(Args _args)
+{
+    timeOfDay theTime = timeNow();
+    info( time2Str(theTime, TimeSeparator::Colon, TimeFormat::AMPM) );
+}
+/**
+Message (04:33:56 pm)
+04:33:56 pm
+**/
+```
 
 ## uint2Str
 Converts an integer to a string. The assumption is that the integer is unsigned.
 
-    str uint2Str(int integer)
+```xpp
+str uint2Str(int integer)
+```
 
 ### Parameters
 
@@ -968,8 +1080,9 @@ The string equivalent to the specified unsigned integer.
 
 Use this function instead of the **int2str** function for very large integers, such as record IDs.
 
-    info(int2str(3123456789)); //returns -1171510507 as a string.
-    info(uint2str(3123456789)); //returns 3123456789 as a string.
-
+```xpp
+info(int2str(3123456789)); //returns -1171510507 as a string.
+info(uint2str(3123456789)); //returns 3123456789 as a string.
+```
 
 

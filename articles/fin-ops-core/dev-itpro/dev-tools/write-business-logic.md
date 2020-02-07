@@ -5,7 +5,7 @@ title: Write business logic by using C# and X++ source code
 description: The primary goal of this tutorial is to illustrate the interoperability between C# and X++ in Microsoft Dynamics AX. In this tutorial, you’ll write business logic in C# source code and in X++ source code. 
 author: pvillads
 manager: AnnBe
-ms.date: 11/26/2019
+ms.date: 02/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -100,7 +100,7 @@ In this section, you add C\# code for a method named CheckDriversLicense. The me
 8.  In **Solution Explorer**, right-click **DriversLicenseChecker.cs**, and then click **View Code**.
 9.  Add the following three using statements to the **DriversLicenseEvaluator** namespace, to reduce the verbosity of code that references external classes. using Dynamics.AX.Application; using Microsoft.Dynamics.AX.Framework.Linq.Data; using Microsoft.Dynamics.AX.Xpp; Your C\# code should now look something like the following example.
 
-    ```xpp
+    ```csharp
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -124,7 +124,7 @@ In this section, you add C\# code for a method named CheckDriversLicense. The me
     > [!TIP] 
     > If you prefer, you can paste in the code from the DriversLicenseChecker.cs file in the C:\\FMLab directory.
 
-    ```xpp
+    ```csharp
     public class DriversLicenseChecker
     {
         public static bool CheckDriversLicense(long customerId)
@@ -193,7 +193,7 @@ When an attempt is made to add a record to a table, the OnValidateWrite event is
 
 In C\#, write the following event handler method and add it to the DriversLicenseChecker class.
 
-```xpp
+```csharp
 public static void OnValidatedWriteHandler(Common table, DataEventArgs args)
 {
     var validateEventArgs = args as ValidateEventArgs;
@@ -270,7 +270,7 @@ In this section, you set breakpoints and run the Fleet application under the Vis
 4.  Set a breakpoint on that line of code. You do this by clicking in the left margin at that line. A red dot displays when the breakpoint is set.
 5.  In the CheckDriversLicense method, set another breakpoint at the following line.
 
-    ```xpp
+    ```csharp
     if (string.IsNullOrEmpty(customer.DriverLicense))
     ```
 ### Run the test

@@ -5,7 +5,7 @@ title: Overview of product details pages
 description: This topic provides an overview of product details pages (PDPs) in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -48,7 +48,7 @@ The top of a PDP has a header that shows all the product categories and other pa
 
 ## Buy box module
 
-The most important module on a PDP is the buy box module. Therefore, it's the first item in the main section of the page. A buy box module is a container module and hosts several modules that contain the most important information about the product. This information includes the product name, product images, the description, the price, and product ratings.
+The most important module on a PDP is the buy box module, which appears as the first item in the main section of the page. A buy box module shows important product information, such as the product name, the product description, the product price, product images, and product ratings.
 
 The buy box module lets the customer select product options (for example, a size, style, and color) and add the product to the cart. It also lets the customer buy the product online and pick it up in a store. The buy online and pick up in store module uses integration with Bing Maps application programming interfaces (APIs) to find nearby stores or stores in another location that the customer specifies.
 
@@ -69,13 +69,19 @@ Different types of recommendation lists are available:
 - Algorithmically generated recommendation lists, such as **Trending**, **Best Selling**, and **New**, can be used on PDPs. Although these lists might not be directly related to the product on the PDP, they are another way to help customers find products that might interest them. These types of lists don't require a product ID. They are generic lists that are generated based on shopping patterns across the site.
 - Editorial lists are manually curated lists. For example, a retailer might decide to manually curate lists of products that it wants to showcase.
 
-## Ratings and reviews module
+## Ratings and reviews modules
 
-The ratings and reviews module shows ratings and reviews that have been provided by other customers. It also lets a customer write his or her own review of the product. Additionally, it includes a histogram that shows the ratings trend for the product. For more details, see [Ratings and reviews overview](ratings-reviews-overview.md).
+Three modules can be used to show and add reviews:
+
+- **Reviews** – This module lists ratings and reviews that have been provided by other customers. Customers can sort and filter the reviews. This module also lets customers like or dislike reviews, and report issues.
+- **Write review** – This module lets customers write their own reviews of a product.
+- **Ratings histogram** – This module includes a histogram that shows the ratings trend for a product.
+
+For more details, see [Ratings and reviews overview](ratings-reviews-overview.md).
 
 ## Marketing modules
 
-If marketing content is unique to a specific product, any marketing module can be added to the PDP. You can add marketing modules to a PDP by "enriching" the page. 
+If marketing content is unique to a specific product, any marketing module can be added to the PDP. You can add marketing modules to a PDP by "enriching" the page. For more details, see [Enrich a product page](enrich-product-page.md).
 
 ## Additional resources
 
@@ -86,3 +92,5 @@ If marketing content is unique to a specific product, any marketing module can b
 [Overview of cart and checkout pages](quick-tour-cart-checkout.md)
 
 [Overview of account management pages](quick-tour-account-management.md)
+
+[Enrich a product details page](enrich-product-page.md)

@@ -34,7 +34,6 @@ Data task automation lets you easily repeat many types of data tasks and validat
 
 > [!IMPORTANT]
 > Data task automation isn't currently supported for on-premises environments.
-> 
 > The user who executes data task automation must be in the same tenant as the application environment and LCS project.
 
 We recommend the following approach for data task automation.

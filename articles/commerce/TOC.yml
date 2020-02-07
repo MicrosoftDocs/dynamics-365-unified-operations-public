@@ -860,17 +860,13 @@
             href: add-container-module.md
         - name: Marketing modules
           items:
-          - name: Alert module 
+          - name: Promo banner module 
             href: add-alert.md
           - name: Carousel module
             href: add-carousel.md
-          - name: Content placement module
-            href: add-content-placement-modules.md
-          - name: Content rich block module
+          - name: Text block module
             href: add-content-rich-block.md
-          - name: Feature module
-            href: add-feature-module.md
-          - name: Hero module
+          - name: Content block module
             href: add-hero-module.md 
           - name: Video player module
             href: add-video-player.md

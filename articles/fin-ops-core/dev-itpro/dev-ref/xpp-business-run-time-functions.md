@@ -43,8 +43,9 @@ Calculates the number of periods that are required for the current investment va
 
 ### Syntax
 
-    real cTerm(real interest, real future_value, real current_value)
-
+```xpp
+real cTerm(real interest, real future_value, real current_value)
+```
 ### Parameters
 
 | Parameter      | Description                   |
@@ -63,23 +64,26 @@ The *current\_value* and *future\_value* parameters must have the same prefixed 
 
 ### Example
 
-    static void cTermExample(Args _arg)
-    {
-        real r;
-        ;
-        r = cTerm(10.0, 500.00, 100.00);
-        print "The cTerm is " + num2Str(r, 2, 2, 1, 1);
-        pause;
-    }
+```xpp
+static void cTermExample(Args _arg)
+{
+    real r;
+    ;
+    r = cTerm(10.0, 500.00, 100.00);
+    print "The cTerm is " + num2Str(r, 2, 2, 1, 1);
+    pause;
+}
+```
 
-ddb
----
+## ddb
 
 Calculates the accelerated depreciation of an asset.
 
 ### Syntax
 
-    real ddb(real price, real scrap, real life, int period)
+```xpp
+real ddb(real price, real scrap, real life, int period)
+```
 
 ### Parameters
 
@@ -112,17 +116,20 @@ If (Book value for Period n) – ((Book value for Period n) × 2 ÷ Life) &lt; R
 
 In all other cases: Depreciation = (Book value for Period n) × 2 ÷ Life The **syd** and **sln** functions also calculate the depreciation of an asset. The **syd** and **ddb** functions enables higher depreciation for the earlier years, whereas **sln** calculates a linear depreciation.
 
-    ddb(12000,2000,10,1); //Returns the value 2400.
-    ddb(12000,2000,10,3); //Returns the value 1536.
+```xpp
+ddb(12000,2000,10,1); //Returns the value 2400.
+ddb(12000,2000,10,3); //Returns the value 1536.
+```
 
-dg
---
+## dg
 
 Calculates the contribution ratio, which is based on the sales price and the purchase price. If the value of the *sale* parameter is **0.0**, the calculation can't be done.
 
 ### Syntax
 
-    real dg(real sale, real purchase)
+```xpp
+real dg(real sale, real purchase)
+```
 
 ### Parameters
 
@@ -137,18 +144,21 @@ The contribution ratio.
 
 ### Remarks
 
-    dg(1000,300); //Returns the value 0.7.
-    dg(100,30); //Returns the value 0.7.
-    dg(20000, 11000); //Returns the value 0.45.
+```xpp
+dg(1000,300); //Returns the value 0.7.
+dg(100,30); //Returns the value 0.7.
+dg(20000, 11000); //Returns the value 0.45.
+```
 
-fV
---
+## fV
 
 Calculates the future value of an investment.
 
 ### Syntax
 
-    real fV(real amount, real interest, real life)
+```xpp
+real fV(real amount, real interest, real life)
+```
 
 ### Parameters
 
@@ -164,15 +174,18 @@ The future value of the investment.
 
 ### Remarks
 
-    fV(100,0.14,10); //Returns the value 1933.73.
-    fV(400,0.10,5); //Returns the value 2442.04.
+```xpp
+fV(100,0.14,10); //Returns the value 1933.73.
+fV(400,0.10,5); //Returns the value 2442.04.
+```
 
-idg
----
+## idg
 
 Calculates the sale price, based on the purchase price and the contribution ratio.
 
-    real idg(real purchase, real contribution_ratio)
+```xpp
+real idg(real purchase, real contribution_ratio)
+```
 
 ### Parameters
 
@@ -189,13 +202,17 @@ The sale price.
 
 If the contribution ratio is equal to **1.0**, the calculation can't be done. The **idg** function is the inverse of the **dg** function.
 
-    idg(300,0.7); //Returns the value 1000.
-    idg(11000,0.45); //Returns the value 20000.
+```xpp
+idg(300,0.7); //Returns the value 1000.
+idg(11000,0.45); //Returns the value 20000.
+```
 
 ## intvMax
 Retrieves the number of intervals for the specified period when the period is divided into parts as specified by the *func* parameter.
 
-    int intvMax(date input_date, date ref_date, int func)
+```xpp
+int intvMax(date input_date, date ref_date, int func)
+```
 
 ### Parameters
 
@@ -224,21 +241,25 @@ Here are the possible values for the *func* parameter:
 
 ### Example
 
-    static void intvMaxExample()
-    {
-        date refDate = str2Date("4/9/2007", 213);
-        date inputDate = str2Date("10/5/2007", 213);
-        int numberOfIntervals;
-        ;
-        numberOfIntervals = intvMax(inputDate, refDate, intvScale::YearMonth);
-        print numberOfIntervals;
-        pause;
-    }
+```xpp
+static void intvMaxExample()
+{
+    date refDate = str2Date("4/9/2007", 213);
+    date inputDate = str2Date("10/5/2007", 213);
+    int numberOfIntervals;
+    ;
+    numberOfIntervals = intvMax(inputDate, refDate, intvScale::YearMonth);
+    print numberOfIntervals;
+    pause;
+}
+```
 
 ## intvName
 Returns the name of the interval that is the specified number of intervals ahead of the specified date.
 
-    str intvName(date input_date, int col, enum func)
+```xpp
+str intvName(date input_date, int col, enum func)
+```
 
 ### Parameters
 
@@ -258,25 +279,29 @@ For example, if the *func* parameter is the **IntvScale::WeekDay** enumeration v
 
 ### Example
 
-    static void intvNameExample(Args _args)
-    {
-        date refDate = 2672010;
-        str name;
-        ;
-        name = intvName(refDate, 3,  intvScale::WeekDay);
-        Global::info(strfmt("%1 is the output, which indicates the day of the week 3 days after 26\7\2010.", name));
-    }
-    /**** Infolog display.
-    Message (09:56:55 am)
-    Thu is the output, which indicates the day of the week 3 days after 2672010.
-    ****/
+```xpp
+static void intvNameExample(Args _args)
+{
+    date refDate = 2672010;
+    str name;
+    ;
+    name = intvName(refDate, 3,  intvScale::WeekDay);
+    Global::info(strfmt("%1 is the output, which indicates the day of the week 3 days after 26\7\2010.", name));
+}
+/**** Infolog display.
+Message (09:56:55 am)
+Thu is the output, which indicates the day of the week 3 days after 2672010.
+****/
+```
 
 ## intvNo
 Calculates the number of intervals between two dates when you divide the time into the specified intervals.
 
 ### Syntax
 
-    int intvNo(date input_date, date ref_date, int func)
+```xpp
+int intvNo(date input_date, date ref_date, int func)
+```
 
 ### Parameters
 
@@ -292,24 +317,28 @@ The number of intervals between the dates that are specified by the *ref\_date* 
 
 ### Example
 
-    static void intvNoExample(Args _args)
-    {
-        date inputDate = str2Date("1/1/2007", 213);
-        date refDate = str2Date("3/1/2007", 213);
-        int noOfIntervals;
-        ;
-        noOfIntervals = intvNo(refDate, inputDate, intvScale::Month);
-        print noOfIntervals;
-        pause;
-        //noOfIntervals now holds the difference in months between March and January (2).
-    }
+```xpp
+static void intvNoExample(Args _args)
+{
+    date inputDate = str2Date("1/1/2007", 213);
+    date refDate = str2Date("3/1/2007", 213);
+    int noOfIntervals;
+    ;
+    noOfIntervals = intvNo(refDate, inputDate, intvScale::Month);
+    print noOfIntervals;
+    pause;
+    //noOfIntervals now holds the difference in months between March and January (2).
+}
+```
 
 ## intvNorm
 Returns the normalized date for the period.
 
 ### Syntax
 
-    date intvNorm(date input_date, date ref_date, int func)
+```xpp
+date intvNorm(date input_date, date ref_date, int func)
+```
 
 ### Parameters
 
@@ -329,20 +358,23 @@ The returned date will equal the date of the first day in the interval in which 
 
 ### Example
 
-    static void example()
-    {
-        print intvNorm(today(), today()-1, IntVScale::WeekDay);
-        pause;
-    }
+```xpp
+static void example()
+{
+    print intvNorm(today(), today()-1, IntVScale::WeekDay);
+    pause;
+}
+```
 
-pmt
----
+## pmt
 
 Calculates the amount that must be paid every period to repay a loan.
 
 ### Syntax
 
-    real pmt(real principal, real interest, real life)
+```xpp
+real pmt(real principal, real interest, real life)
+```
 
 ### Parameters
 
@@ -362,17 +394,20 @@ The *life* and *interest* parameters must be expressed in the same time units. T
 
 ### Example
 
-    pmt(4000,0.14,4); //Returns the value 1372.82.
-    pmt(10000,0.10,20); //Returns the value 1174.60.
+```xpp
+pmt(4000,0.14,4); //Returns the value 1372.82.
+pmt(10000,0.10,20); //Returns the value 1174.60.
+```
 
-pt
---
+## pt
 
 Retrieves the sum of a number plus a specified percentage of that number.
 
 ### Syntax
 
-    real pt(real amount, real percentage)
+```xpp
+real pt(real amount, real percentage)
+```
 
 ### Parameters
 
@@ -387,17 +422,20 @@ The number that is equal to ((<em>amount *× *percentage</em>) + <em>amount</em>
 
 ### Remarks
 
-    pt(2000.0,0.10); //Returns the value 2200.0.
-    pt(20.0,0.10); //Returns the value 22.0.
+```xpp
+pt(2000.0,0.10); //Returns the value 2200.0.
+pt(20.0,0.10); //Returns the value 22.0.
+```
 
-pv
---
+## pv
 
 Calculates the present value of an annuity, where an amount is received over multiple periods and the interest rate is deducted for each period.
 
 ### Syntax
 
-    real pv(real amount, real interest, real life)
+```xpp
+real pv(real amount, real interest, real life)
+```
 
 ### Parameters
 
@@ -413,14 +451,18 @@ The current value of an annuity.
 
 ### Remarks
 
-    pv(300,0.14,4); //Returns the value 874.11.
+```xpp
+pv(300,0.14,4); //Returns the value 874.11.
+```
 
 ## rate
 Calculates the interest that is required for the current investment value to attain the future value over the specified number of periods.
 
 ### Syntax
 
-    real rate(real _future_value, real _current_value, real _terms)
+```xpp
+real rate(real _future_value, real _current_value, real _terms)
+```
 
 ### Parameters
 
@@ -436,16 +478,19 @@ The calculated interest rate.
 
 ### Remarks
 
-    rate(10000,1000,20); //Returns the value 0.12.
+```xpp
+rate(10000,1000,20); //Returns the value 0.12.
+```
 
-sln
----
+## sln
 
 Retrieves the constant depreciation amount for the specified asset for each depreciation period.
 
 ### Syntax
 
-    real sln(real price, real scrap, real life)
+```xpp
+real sln(real price, real scrap, real life)
+```
 
 ### Parameters
 
@@ -461,23 +506,26 @@ The depreciation amount.
 
 ### Example
 
-    static void slnExample(Args _arg)
-    {
-        real r;
-        ;
-        r = sln(100.00, 50.00, 50.00);
-        print r;
-        pause;
-    }
+```xpp
+static void slnExample(Args _arg)
+{
+    real r;
+    ;
+    r = sln(100.00, 50.00, 50.00);
+    print r;
+    pause;
+}
+```
 
-syd
----
+## syd
 
 Calculates the depreciation of an asset over a specified period.
 
 ### Syntax
 
-    real syd(real _price, real _scrap, real _life, int _period)
+```xpp
+real syd(real _price, real _scrap, real _life, int _period)
+```
 
 ### Parameters
 
@@ -500,23 +548,27 @@ In contrast to the **sln** function, the **syd** function can allow for an accel
 
 In the following examples, the periodic depreciation is calculated for an asset that has a purchase price of 10,000, a scrap value of 2,000, and a life of 5. In comparison, **sln(10000,2000,5)** would calculate 1600.00 for each period.
 
-    // Returns the value 2666.67 (for the 1st period).
-    syd(10000,2000,5,1);
-    // Returns the value 2133.33 (for the 2nd period).
-    syd(10000,2000,5,2);
-    // Returns the value 1600.00 (for the 3rd period).
-    syd(10000,2000,5,3);
-    // Returns the value 1066.67 (for the 4th period).
-    syd(10000,2000,5,4);
-    // Returns the value 533.33 (for 5th - and final- period).
-    syd(10000,2000,5,5);
+```xpp
+// Returns the value 2666.67 (for the 1st period).
+syd(10000,2000,5,1);
+// Returns the value 2133.33 (for the 2nd period).
+syd(10000,2000,5,2);
+// Returns the value 1600.00 (for the 3rd period).
+syd(10000,2000,5,3);
+// Returns the value 1066.67 (for the 4th period).
+syd(10000,2000,5,4);
+// Returns the value 533.33 (for 5th - and final- period).
+syd(10000,2000,5,5);
+```
 
 ## term
 Calculates the number of periods that an investment must run for.
 
 ### Syntax
 
-    real term(real amount, real interest, real future_value)
+```xpp
+real term(real amount, real interest, real future_value)
+```
 
 ### Parameters
 
@@ -532,12 +584,13 @@ The number of periods that the investment must run for.
 
 ### Example
 
-    static void termExample(Args _args)
-    {
-        print term(400,0.08,5000);  //returns the value '9.01'.
-        print term(100,0.14,3000);  //returns the value '12.58'.
-        pause;
-    }
-
+```xpp
+static void termExample(Args _args)
+{
+    print term(400,0.08,5000);  //returns the value '9.01'.
+    print term(100,0.14,3000);  //returns the value '12.58'.
+    pause;
+}
+```
 
 

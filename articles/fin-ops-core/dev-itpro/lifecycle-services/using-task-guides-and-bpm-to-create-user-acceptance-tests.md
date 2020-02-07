@@ -119,7 +119,7 @@ After configuration is complete, synchronize the BPM library with a Azure DevOps
 
     ![VSTS Sync1](./media/vsts_sync_1.png "VSTS Sync1")
 
-You can also start Azure DevOps synchronization from the toolbar in a BPM library. Select the ellipsis button (…), and then select **Azure DevOps sync**.
+    You can also start Azure DevOps synchronization from the toolbar in a BPM library. Select the ellipsis button (…), and then select **Azure DevOps sync**.
 
     ![VSTS Sync2](./media/vsts_sync_2.png "VSTS Sync2")
 

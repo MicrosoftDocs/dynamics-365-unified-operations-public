@@ -70,6 +70,8 @@
           items:
           - name: What's new or changed in Finance home page
             href: get-started/whats-new-home-page.md
+          - name: Finance version 10.0.9 (April 2020)
+            href: get-started/whats-new-changed-10-0-9.md
           - name: Finance version 10.0.8 (February 2020)
             href: get-started/whats-new-changed-10-0-8.md
           - name: Finance version 10.0.7 (January 2020)
@@ -1967,12 +1969,16 @@
           href: localizations/emea-ita-exil-misc-charges-intrastat.md
         - name: Advanced notes management
           href: localizations/emea-ita-exil-structured-notes.md
+        - name: Intent letters - Invoicing usual exporters
+          href: localizations/emea-ita-exil-intent-letter.md
         - name: Tax invoice for goods delivered for free
           href: localizations/emea-ita-exil-goods-for-free.md
         - name: Improved inquiry on debit or credit settlements
           href: localizations/emea-ita-exil-improved-inquiry-settlement.md
         - name: General ledger simulations (Italy)
           href: localizations/emea-ita-exil-general-ledger-simulations.md
+        - name: Unique certification
+          href: localizations/emea-ita-exil-unique-certification.md
       - name: Japan
         items:
         - name: Japan overview
@@ -2291,6 +2297,10 @@
             href: general-ledger/import-currency-exchange-rates.md
           - name: Ledger translation
             href: localizations/rus-ledger-translation-procedure.md
+          - name: Turnover balance statement reports
+            href: localizations/rus-turnover-balance-statement-reports.md
+          - name: Account activity reports
+            href: localizations/rus-account-activity-reports.md
         - name: Advance holders
           items:
           - name: Russia advance holders overview
@@ -2399,12 +2409,26 @@
             href: localizations/rus-miscellaneous-charges.md
           - name: Third party miscellaneous charges
             href: localizations/rus-third-party-misc-charges.md
+          - name: Agreements
+            items:
+            - name: Agreements overview
+              href: localizations/rus-agreements.md
+            - name: Set up and create agreements
+              href: localizations/rus-set-up-and-create-agreements.md
+            - name: Register transactions with reference to agreements
+              href: localizations/rus-register-transactions-with-reference-to-agreements.md
+            - name: Inquiries and reports with agreements
+              href: localizations/rus-inquiries-reports-agreements.md
         - name: Inventory
           items:
           - name: Goods in transit from vendor
             href: localizations/rus-goods-transit-vendor.md
           - name: Customs declaration numbers
             href: localizations/rus-custom-declaration-number.md
+          - name: Inventory cost structure
+            href: localizations/rus-inventory-cost-structure.md
+          - name: Inventory adjustment wizard
+            href: localizations/rus-inventory-adjustment-wizard.md
         - name: Reporting
           items:
           - name: Financial reporting

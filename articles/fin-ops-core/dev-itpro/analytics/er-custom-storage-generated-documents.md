@@ -64,7 +64,7 @@ In the current topology, [create a new ER format](tasks/er-format-configuration-
 
 To specify how documents that an ER format generates are routed, you must configure [Electronic reporting (ER) destinations](electronic-reporting-destinations.md). In each ER destination that is configured to store generated documents as files, you must specify a document type of the Document management framework. Different document types can be used to route documents that different ER formats generate.
 
-1. Add a new [document type](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) for the ER format that you created or imported earlier. In the illustration that follows, the document type is **FileX**.
+1. Add a new [document type](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) for the ER format that you created or imported earlier. In the illustration that follows, the document type is **FileX**.
 2. To differentiate this document type from other document types, include a specific keyword in its name. For example, in the illustration that follows, the name is **(LOCAL) folder**.
 3. In the **Class** field, specify **Attach file**.
 4. In the **Group** field, specify **File**.
@@ -78,7 +78,7 @@ To specify how documents that an ER format generates are routed, you must config
 
 Review the code of the **insertFile()** method of the **ERDocuManagement** class. Notice that the **AttachingFile()** event is raised while the generated file is attached to a record.
 
-```
+```xpp
 /// <summary>
 /// Inserts file as attachment in Document Management.
 /// </summary>
@@ -139,7 +139,7 @@ The **AttachingFile()** event is raised when the following ER destinations are p
     1. Store generated files in a folder of the local file system of the server that runs the Application Object Server (AOS) service.
     2. Store these generated files only when the new document type (for example, the **FileX** type that has the "(LOCAL)" keyword in its name) is used while a file is attached to the record in the ER execution job log.
 
-    ```
+    ```xpp
     class ERDocuSubscriptionSample
     {
         void new()
