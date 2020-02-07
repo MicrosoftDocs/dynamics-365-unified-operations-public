@@ -1834,8 +1834,6 @@
             href: e-commerce-extensibility/add-module-config-fields.md
           - name: Preview and debug modules
             href: e-commerce-extensibility/test-module.md 
-          - name: Debug modules
-            href: e-commerce-extensibility/debug-modules.md
           - name: Test modules by using mocks
             href: e-commerce-extensibility/test-module-mock.md
           - name: Test modules by using page mocks
