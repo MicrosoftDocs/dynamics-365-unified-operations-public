@@ -6,7 +6,7 @@ description: This topic provides information about Open Data Protocol (OData) an
 author: Sunil-Garg
 manager: AnnBe
 
-ms.date: 12/11/2019
+ms.date: 02/07/2020
 
 ms.topic: article
 ms.prod: 
@@ -88,7 +88,7 @@ The following are the high-level features that are enabled for the OData service
     - $orderby
     - $skip
     - $top
-    - $expand (only first level expansion is supported)
+    - $expand (only first-level expansion is supported)
     - $select
 
 - The OData service supports serving driven paging with a maximum page size of 1,000.
