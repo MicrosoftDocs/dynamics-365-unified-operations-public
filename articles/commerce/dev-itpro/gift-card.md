@@ -33,10 +33,10 @@ ms.dyn365.ops.version: Application update 4
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes setup steps for enabling external gift cards in the Modern POS and Call Center.
+This article describes setup steps for enabling external gift cards in the Modern POS, Call Center and Storefront.
 
       > [!NOTE]
-      > External gift card support for Call Center is new for 10.0.10
+      > External gift card support for Call Center is new for 10.0.10. Support for external gift cards in the Storefront will be added in a future version.  
 
 Microsoft Dynamics 365 Commerce supports both "internal" and "external" gift cards. Internal gift cards are entirely managed from within Dynamics 365 Commerce, while external gift cards are administered by a third party. If a retailer's operations are entirely run within Dynamics, then sometimes internal gift cards are the best solution. For complex enterprises that span multiple geographies and point of sale systems, it is often best to use a third party to manage gift card balances and to allow gift cards to be used across those systems.
 
@@ -177,31 +177,72 @@ In this example, any gift card with the first 4 digits of **6036** will map to t
 
 ## External gift cards for Call Center and Storefront
 
-Note: This feature is new for 10.0.9 and must be enabled through the **Omni-channel payments** tab in **Commerce shared parameters**.
+Note: This feature is new for 10.0.9 and must be enabled through the **Omni-channel payments** tab in **Commerce shared parameters**. Support for gift cards in the out of box storefront will come in a future release. **Use omni-channel payments** should also be enabled. 
 
 ![Enable advanced external gift card](./media/Configure external gift.png)
 
 ### Setup
 
-1. In the back office, navigate to **Payment services** and configure the payment services account for the Call Center. Each payment connector will have different setup step. The payment service used by the call center is the one marked as "Default" in the payment services setup. For an example of how to set up payment services, visit the [documentation for the Adyen payment connector](https://docs.microsoft.com/en-us/dynamics365/retail/dev-itpro/adyen-connector?tabs=8-1-3).
+#### Payment services setup
+In the back office, navigate to **Payment services** and configure the payment services account for the Call Center. Each payment connector will have different setup steps. The payment service used by the call center is the one marked as "Default" in the payment services setup. 
+
+##### Adyen external gift card setup
+
+For an example of how to set up payment services, visit the [documentation for the Adyen payment connector](https://docs.microsoft.com/en-us/dynamics365/retail/dev-itpro/adyen-connector?tabs=8-1-3).
+
+#### Test connector external gift card setup
+
+To set up external gift cards for the test connector, select **Dyn Online** and in the **Supported Tender Types** field add *;GiftCard* after *Debit*. Next click **Credit card types** and assign a payment journal to the gift card payment method.
+  
    > [!NOTE]
    > In the out of box Adyen connector, gift card is configured by default. Follow instructions in the above linked documentation for specifying the gift card provider in the merchant properties of the payment connector. 
-2. Search for **payment methods** to open the **Payment methods** page.
-3. Select **New**, and then follow these steps:
 
-    1. In the **Payment method** field, enter **12**.
-    2. In the **Payment method name** field, enter **External Gift Card**.
-    3. In the **Default function** field, select **Card**.
-    4. Select **Save**.
-    
-5. Open the **All call centers** page.
-6. In the list, select a call center.
-7. On the Action Pane, select **Set up** &gt; **Payment methods**.
-8. Select **New**.
-9. In the **Payment method** field, enter **12**. The **Payment method name** and **Function** fields should then be set automatically.
-10. On the **General** fasttab, select the connector to be used for the external gift card. 
+#### Gift card product setup
 
-11. Expand the **Posting** fasttab and specify a general ledger account for the external gift cards. In demo data, **112129** can be used, for example. 
+1. Navigate to **Style group** and click **New**.
+2. Provide a name and description such as **Gift** and **Gift card style group**.
+3. Add styles to suit the types of gift cards available, such as **Physical** and **Email**, then save.
+3. Navigate to **Product masters** and click **New**. 
+4. Provide a product number such as **Gift**, assign a retail category and for the **Product dimension group** select **Style**, then click **OK**.
+5. On the product master, select the style group **Gift** created in step 2.
+6. Select **Product** &gt; **Dimension groups** and assign the **Storage dimension group** and **Tracking dimension group**, then click **Save**.
+7. Click **Product variants**, then **Variant suggestions**, edit the gift card variant numbers as needed and click **Create**.
+
+![External gift card product variants](./media/VariantSuggestions.png)
+
+8. Click **Release products**, click **Next**, click **Next**, select a company such as **USRT**, then click **Next**, and finally **Next** to release the product master.  
+9. Navigate to **Modes of delivery**. Select the **Electronic** mode of delivery and add the **Email** gift card variant.
+10. Select a shipping mode of deliver and add the **Physical** gift card variant and **Save**.
+11. Navigate to **Process modes of delivery**
+
+
+
+
+#### Call Center setup
+
+1. Navigate to **All call centers** 
+2. In the list, select a call center.
+3. On the Action Pane, select **Channel** &gt; **Channel users**, then add a user and click **Save**, then close the channel users form. Users must be call center users when accessing **Customer service** and creating orders for Call Center capabilities to be enabled. 
+4. Back on the Call Center form, select **Set up** &gt; **Payment methods**.
+4. Select **New**.
+5. In the **Payment method** field, enter **12**. The **Payment method name** and **Function** fields should then be set automatically.
+6. On the **General** fasttab, select the connector to be used for the external gift card. 
+7. Click **Card setup** and click **New** to map the gift card payment method to the external gift card payment method.
+11. Expand the **Posting** fasttab and specify general ledger accounts for the external gift cards. In demo data, **112140** can be used for general ledger account number. 
+11. Click **Save**, then click **Card setup**.
+12. Click **New** and select the external gift card previously created and click **Save**.
+13. Close the **Card setup** page and refresh the payment methods page.
+14. Select the external gift card payment method and assign the **TestConnector* under **Gift card account**.
+15. On the **Posting** fasttab, assign the gift card item number.
+16. Click **Save**, then click **Card setup**.
+17. The **Card setup** page for the internal gift card page will now provide the additional configuration parameters **Check expiration date** and **PIN required**. Set those as required by the external gift card provider.
+
+
+
+
+
+
+
 
 
 
