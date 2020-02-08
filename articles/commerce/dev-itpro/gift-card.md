@@ -33,13 +33,76 @@ ms.dyn365.ops.version: Application update 4
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes setup steps for enabling external gift cards in the Modern POS, Call Center, and Storefront.
+This article describes setup steps for enabling external gift cards in the Modern POS and Call Center.
+
+      > [!NOTE]
+      > External gift card support for Call Center is new for 10.0.10
 
 Microsoft Dynamics 365 Commerce supports both "internal" and "external" gift cards. Internal gift cards are entirely managed from within Dynamics 365 Commerce, while external gift cards are administered by a third party. If a retailer's operations are entirely run within Dynamics, then sometimes internal gift cards are the best solution. For complex enterprises that span multiple geographies and point of sale systems, it is often best to use a third party to manage gift card balances and to allow gift cards to be used across those systems.
 
 Similar to other card payment types, external gift card support must be built into the payment connector in use. The out of box payment connector for Adyen supports external gift cards through SVS and Givex through the POS, call center, and e-commerce storefront.
 
-## Configuration for external gift cards in POS
+## External gift card setup
+
+      > [!NOTE]
+      > Some setup steps assume demo data is in use. Steps may vary depending depending on dataset in use.
+
+### Card Types
+
+1. Search for **Card Types** 
+2. Click **New**, add the following values, and then click **Save**:
+
+| Field Name     | Value              |
+|----------------|--------------------|
+| Card ID        | EXTGC              |
+| Card type name | External Gift Card |
+| Card types     | Gift card          |
+| Card issuer    | *Any description*  |
+
+### Card Numbers
+
+1. Without navigating from the card types form, select the newly created gift card, then click **Card numbers**.
+2. Provide the card number range to be used for external gift cards and click **Save**.
+
+
+| Field Name         | Value              |
+|--------------------|--------------------|
+| Card number from   | 6036               |
+| Card number to     | 6036               |
+| Digits to identify | 4                  |
+
+In this example, any gift card with the first 4 digits of **6036** will map to the gift card set up in the **Card types** section.
+
+### Payment Methods
+
+1. Search for **Payment methods** to open the **Payment methods** page.
+2. Click **New**, and then follow these steps:
+
+    1. In the **Payment method** field, enter **12**.
+    2. In the **Payment method name** field, enter **External Gift Card**.
+    3. In the **Default function** field, select **Card**.
+    4. Select **Save**.
+
+### Store setup
+
+1. Open the **All stores** page.
+2. In the list, select the **San Francisco** store.
+3. On the Action Pane, click **Set up** &gt; **Payment methods**.
+4. Click **New**.
+5. In the **Payment method** field, enter **12**. The **Payment method name** and **Function** fields should then be set automatically.
+6. On the **General** FastTab, set the following fields:
+
+    - Set the **Operation name** field to **Pay gift card**.
+    - Set the **Connector name** field to **TestConnector**.
+
+9. On the **Posting** FastTab, set the **Gift card item number** field to **0010**.
+
+    ![Setting the Gift card item number field](./media/05_02.png)
+
+10. Click **Save**.
+11. Click **Card setup** and click **New** to map the gift card payment method to the newly created external gift card payment method for the San Francisco store.
+
+## POS setup
 
 1. In Dynamics 365 Commerce Headquarters, search for **Hardware profiles** to open the **POS hardware profile** page.
 2. On the **POS hardware profile** page, follow these steps:
@@ -55,46 +118,7 @@ Similar to other card payment types, external gift card support must be built in
 
       > [!NOTE]
       > You can also use the **New** button to create multiple payment connectors. In this way, you can take advantage of the support for multiple connectors that has been added to the solution. You can then have different payment connectors for different payment methods. For example, all credit cards can be processed through one connector, but the gift card can be processed through a different connector.
-
-### Card Types
-
-1. Search for **Card Types** 
-2. Click **New**, add the following values, and then click **Save**:
-
-| Field Name     | Value              |
-|----------------|--------------------|
-| Card ID        | EXTGC              |
-| Card type name | External Gift Card |
-| Card types     | Gift card          |
-| Card issuer    | *Any description*  |
-
-### Payment Methods
-
-1. Search for **Payment methods** to open the **Payment methods** page.
-2. Click **New**, and then follow these steps:
-
-    1. In the **Payment method** field, enter **12**.
-    2. In the **Payment method name** field, enter **External Gift Card**.
-    3. In the **Default function** field, select **Card**.
-    4. Select **Save**.
-
-3. Open the **All stores** page.
-4. In the list, select the **Houston** store.
-5. On the Action Pane, click **Set up** &gt; **Payment methods**.
-6. Click **New**.
-7. In the **Payment method** field, enter **12**. The **Payment method name** and **Function** fields should then be set automatically.
-8. On the **General** FastTab, set the following fields:
-
-    - Set the **Operation name** field to **Pay gift card**.
-    - Set the **Connector name** field to **TestConnector**.
-
-9. On the **Posting** FastTab, set the **Gift card item number** field to **0010**.
-
-    ![Setting the Gift card item number field](./media/05_02.png)
-
-10. Click **Save**.
-11. Click **Card setup** and click **New** to map the gift card created in step 4 to the newly created external gift card payment method.
-
+      
 ### Update button grid
 
 1. Go to the **Button grid** page.
