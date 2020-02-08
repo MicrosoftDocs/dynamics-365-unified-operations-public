@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Copy Variables to chain test cases
+title: Copy variables to chain test cases
 description: This topic shows how the Regression Suite Automation Tool can be used to chain test cases, which is the ability of a test to pass values to other tests. 
 author: robadawy
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Copy Variables to chain test cases
+# Copy variables to chain test cases
 
 [!include [banner](../../includes/banner.md)]
 
