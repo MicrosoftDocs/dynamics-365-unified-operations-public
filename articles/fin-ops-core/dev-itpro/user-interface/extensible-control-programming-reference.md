@@ -55,12 +55,16 @@ The runtime class defines the public, developer-facing API for your control. It 
 ## Runtime: Class declaration
 Declare an X++ class that extends <strong>FormTemplateControl</strong> or a type derived from <strong>FormTemplateControl</strong><em>. ***FormTemplateControl</em>* contains basic properties that are necessary for every control, such as the Template ID and the Resource Bundle. The following example extends the base control class, <strong>FormTemplateControl</strong>.
 
-    class MyControl extends FormTemplateControl
+```xpp
+class MyControl extends FormTemplateControl
+```
 
 ## Runtime: FormControlAttribute
 You must apply the **FormControlAttribute** attribute to the X++ class declaration.
 
-    [FormControlAttribute(<Template ID>, <Resource Bundle Path>, <Build class name>))]
+```xpp
+[FormControlAttribute(<Template ID>, <Resource Bundle Path>, <Build class name>))]
+```
 
 You must supply the following arguments:
 
@@ -70,8 +74,10 @@ You must supply the following arguments:
 
 The following example shows a typical class and attribute declaration for a control named "MyControl".
 
-    [FormControlAttribute('MyControl', '/resources/html/MyControl', classStr(MyControlBuild))]
-    class MyControl extends FormTemplateControl
+```xpp
+[FormControlAttribute('MyControl', '/resources/html/MyControl', classStr(MyControlBuild))]
+class MyControl extends FormTemplateControl
+```
 
 ## Runtime: FormCommandAttribute
 The **FormCommandAttribute** is applied to a method in your control class, which allows the method to be called from a control’s JavaScript class. A method with this attribute applied is called a **command.** Use the **FormCommandAttribute** on only the X++ methods that need to be accessed directly from the control’s JavaScript class. An X++ method serving as a command can only accept string arguments. The method must perform the necessary operations to serialize or deserialize the string arguments into other types. The **FormCommandAttribute** has no effect on the behavior of the X++ method when the method is used from within X++. The **FormCommandAttribute** exposes the X++ method as an external endpoint that is accessible from JavaScript. As such, every command should be threat modeled and tested for exploits, and should perform validation on all of its arguments. The underlying X++ method should be declared private so that it is not accessible from X++. If X++ code needs to access this method’s behavior, then a separate X++ method should be declared as public without the **FormCommandAttribute.** This public method should contain any shared code that is needed by both X++ and JavaScript. The private X++ method with the **FormCommandAttribute** can then call this public method to access the shared code. This practice allows the command to perform logic that is specific to calls coming from JavaScript (such as argument type deserialization, argument validation, security validation, etc.) before executing the core shared X++ logic. You supply the following arguments to the **FormCommandAttribute** constructor:
@@ -85,11 +91,13 @@ The **FormCommandAttribute** is applied to a method in your control class, which
 
 The following example declares a command with the name of "SetText".
 
-    [FormCommandAttribute("SetText")]
-    private void setText(str value)
-    {
-        // Add implementation code here.
-    }
+```xpp
+[FormCommandAttribute("SetText")]
+private void setText(str value)
+{
+    // Add implementation code here.
+}
+```
 
 ## Runtime: FormPropertyAttribute
 The **FormPropertyAttribute** is applied to a method in your control class, which allows an X++ method to be called as a **FormProperty** getter/setter from the control's JavaScript class. A method with this attribute applied is called a **property.** Only use the **FormPropertyAttribute** on those X++ methods which need to be accessed directly from the control’s JavaScript class. The **FormPropertyAttribute** has no effect on the behavior of the X++ method when the method is used from within X++. Every property exposes an endpoint to the browser. As such, every property should be threat modeled and tested for exploits. The underlying X++ method should be declared private so that it is not accessible from other X++ code. If other X++ code needs to access the property, then declare a separate public X++ method without the **FormPropertyAttibute,** and move the shared property logic to this method. Then call this method from the private X++ method with the **FormPropertyAttribute. This practice allows the property to perform logic that is specific to calls coming from JavaScript (such as argument type deserialization, argument validation, security validation, etc.) before executing the core shared X++ logic.** The underlying X++ method must accept and return the desired type of the property. If the desired type if an EDT, the property must accept and return the base type of the EDT. The supported property types are:
@@ -109,7 +117,7 @@ You supply the following arguments to the **FormPropertyAttribute** constructor:
 
 The following example shows a typical property declaration. Most properties share the same boilerplate code for getting/setting, as shown below. The textProperty variable is the backing FormProperty field for this property.
 
-```
+```xpp
 [FormPropertyAttribute(FormPropertyKind::Value, "Text", true)
 private str parmText(str _value = textProperty.parmValue())
 {
@@ -133,7 +141,7 @@ private str parmText(str _value = textProperty.parmValue())
 
 The following example shows a **FormProperty** being used in a typical controls’ X++ runtime class.
 
-```
+```xpp
 [FormControlAttribute("MyControl", "/resources/html/MyControl", classStr(BuildMyControl))]
 class MyControl extends FormTemplateControl
 {             
@@ -183,44 +191,46 @@ The **applyBuild** method on a control’s X++ runtime class is called as a part
 ## Runtime: FormBindingUtil::initbinding method
 The **FormBindingUtil** is an API provided by the control framework. It is used to bind FormProperties to data fields and data methods on a data source. The following example binds the data field with name "Value" on the data source with name "DataSource1" to the textProperty FormProperty of the runtime class.
 
-    [FormControlAttribute("MyControl", "/resources/html/MyControl", classStr(BuildMyControl))]
-    class MyControl extends FormTemplateControl
+```xpp
+[FormControlAttribute("MyControl", "/resources/html/MyControl", classStr(BuildMyControl))]
+class MyControl extends FormTemplateControl
+{
+    FormProperty textProperty;
+
+    public void new(FormBuildControl _build, FormRun _formRun)
     {
-        FormProperty textProperty;
+        super(_build, _formRun);
+        this.setTemplateId("MyControl");
+        this.setResourceBundleName("/resources/html/MyControl");
+        textProperty = this.addProperty(
+        methodStr(MyControl, parmText), Types::String);
+    }
 
-        public void new(FormBuildControl _build, FormRun _formRun)
-        {
-            super(_build, _formRun);
-            this.setTemplateId("MyControl");
-            this.setResourceBundleName("/resources/html/MyControl");
-            textProperty = this.addProperty(
-            methodStr(MyControl, parmText), Types::String);
-        }
-
-        public void applyBuild()
-        {
-            BuildMyControl build;
+    public void applyBuild()
+    {
+        BuildMyControl build;
             
-            super();
+        super();
            
-            build = this.build();
-            if(build)
-            {
-                this.parmText(FormBindingUtil::initBinding(
-                "DataSource1", "Value", this.formRun()));
-            }
-        }
-
-        [FormPropertyAttribute(FormPropertyKind::Value, "Text", true)
-        private str parmText(str _value = textProperty.parmValue())
+        build = this.build();
+        if(build)
         {
-            if(!prmIsDefault(_value))
-            {
-                textProperty.setValueOrBinding(_value);
-            }
-            return textProperty.parmValue();
+            this.parmText(FormBindingUtil::initBinding(
+            "DataSource1", "Value", this.formRun()));
         }
     }
+
+    [FormPropertyAttribute(FormPropertyKind::Value, "Text", true)
+    private str parmText(str _value = textProperty.parmValue())
+    {
+        if(!prmIsDefault(_value))
+        {
+            textProperty.setValueOrBinding(_value);
+        }
+        return textProperty.parmValue();
+    }
+}
+```
 
 ## Design time: The X++ build class
 The build class defines the design time behavior of your control. This class determines which properties appear in the property sheet, and how the control behaves when it is modeled in the Form designer. The job of the design time class is to capture design time information for the runtime class to access later on.
@@ -228,30 +238,34 @@ The build class defines the design time behavior of your control. This class det
 ## Design time: Class declaration & FormDesignControlAttribute
 The FormDesignControlAttribute is necessary for the control to appear in the Visual Studio Form designer when right-clicking on the design node of the form. If the FromDesignControlAttribute is missing, then the control can only be added to a form via imperative X++ code (i.e. via the addControlEx method on the form).
 
-    [FormDesignControlAttribute("MyControl")]
-    class MyControlBuild extends FormBuildControl
-    {
+```xpp
+[FormDesignControlAttribute("MyControl")]
+class MyControlBuild extends FormBuildControl
+{
 
-    }
+}
+```
 
 ## Design time: FormDesignPropertyAttribute
 Placing this attribute on a method in the design time class will result in a new property with the name specified by the first argument (and in the section specified by the second argument) appearing the property sheet for this control, with the corresponding X++ method operating as the getter/setter for the property.
 
-    [FormDesignControlAttribute("MyControl")]
-    class MyControlBuild extends FormBuildControl
-    {
-        str text; 
+```xpp
+[FormDesignControlAttribute("MyControl")]
+class MyControlBuild extends FormBuildControl
+{
+    str text; 
 
-        [FormDesignPropertyAttribute("Text", "Data")]
-        public str Text(str _value = text)
+    [FormDesignPropertyAttribute("Text", "Data")]
+    public str Text(str _value = text)
+    {
+        if(!prmIsDefault(_value))
         {
-            if(!prmIsDefault(_value))
-            {
-                text = _value;
-            }
-            return text;
+            text = _value;
         }
+        return text;
     }
+}
+```
 
 ## Design time: FormDesignProperty** **Attribute
 There are a number of FormDesignProperty attributes which may be applied alongside the standard FormDesignPropertyAttribute for specialized behavior in the property sheet. The specialized behavior includes enabling the property as a combobox which allows selecting from a list of a values. The different types of lists that used are enumerated below. Whenever the user selects an item from the combobox, the string name of that item is passed into the X++ method getter/setter with the attribute.
@@ -279,62 +293,66 @@ There are a number of FormDesignProperty attributes which may be applied alongsi
 
 The following example shows standard properties used to allow a Form developer to specify the Data Source and Data Field for the design time class.
 
-    [FormDesignControlAttribute("MyControl")]
-    class MyControlBuild extends FormBuildControl
+```xpp
+[FormDesignControlAttribute("MyControl")]
+class MyControlBuild extends FormBuildControl
+{
+    str dataSource; 
+    str dataField;
+    str dataMethod;
+
+    [FormDesignPropertyAttribute("Data source", "Data"),
+     FormDesignPropertyDataSourceAttribute]
+    public str DataSource(str _value = dataSource)
     {
-        str dataSource; 
-        str dataField;
-        str dataMethod;
-
-        [FormDesignPropertyAttribute("Data source", "Data"),
-         FormDesignPropertyDataSourceAttribute]
-        public str DataSource(str _value = dataSource)
+        if(!prmIsDefault(_value))
         {
-            if(!prmIsDefault(_value))
-            {
-                dataSource = _value;
-            }
-            return dataSource;
+            dataSource = _value;
         }
-
-        [FormDesignPropertyAttribute("Data Field", "Data"),
-         FormDesignPropertyDataFieldAttribute(methodStr(MyControlBuild, DataSource))]
-        public str DataField(str _value = dataField)
-        {
-            if(!prmIsDefault(dataField))
-            {
-                dataField = _value;
-            }
-            return dataField;
-        }
-
-        [FormDesignPropertyAttribute("Data Method", "Data"),
-         FormDesignPropertyDataMethodAttribute(methodStr(MyControlBuild, DataSource))]
-        public str DataMethod(str _value = dataMethod)
-        {
-            if(!prmIsDefault(dataMethod))
-            {
-                dataMethod = _value;
-            }
-            return dataMethod;
-        }
+        return dataSource;
     }
+
+    [FormDesignPropertyAttribute("Data Field", "Data"),
+     FormDesignPropertyDataFieldAttribute(methodStr(MyControlBuild, DataSource))]
+    public str DataField(str _value = dataField)
+    {
+        if(!prmIsDefault(dataField))
+        {
+            dataField = _value;
+        }
+        return dataField;
+    }
+
+    [FormDesignPropertyAttribute("Data Method", "Data"),
+     FormDesignPropertyDataMethodAttribute(methodStr(MyControlBuild, DataSource))]
+    public str DataMethod(str _value = dataMethod)
+    {
+        if(!prmIsDefault(dataMethod))
+        {
+            dataMethod = _value;
+        }
+        return dataMethod;
+    }
+}
+```
 
 A control with a design time class like the one above can then bind to the specified data source and data field inside of the applyBuild method, as show below.
 
-    public void applyBuild()
+```xpp
+public void applyBuild()
+{
+    BuildMyControl build;
+
+    super();
+
+    build = this.build();
+    if(build)
     {
-        BuildMyControl build;
-
-        super();
-
-        build = this.build();
-        if(build)
-        {
-            this.parmText(FormBindingUtil::initBinding(
-            build.DataSource(), build.DataField(), this.formRun(), build.DataMethod()));
-        }
+        this.parmText(FormBindingUtil::initBinding(
+        build.DataSource(), build.DataField(), this.formRun(), build.DataMethod()));
     }
+}
+```
 
 If you supply both a data field and data method to FormBindingUtil::initBinding, the data field binding will override the data method binding.
 
@@ -347,11 +365,15 @@ The following section documents the HTML attributes that are used in the control
 
 **data-dyn-bind**, the data binding attribute, standardizes many common DOM manipulations - such as modifying an element’s attributes, properties and CSS, or handling DOM events - through a declarative HTML-based API. The data binding attribute allows for these behaviors without requiring complex JavaScript. Using the data binding attribute rather than writing complex JavaScript can save the control developer valuable time by making things such as designing, debugging and maintaining the control much easier. However, complex JavaScript is still available when scenarios require its use. The data binding attribute binds HTML element behaviors to values supplied by the control developer. The values supplied can be simple JavaScript [variables](https://www.w3schools.com/js/js_variables.asp), JavaScript [comparison](https://www.w3schools.com/js/js_comparisons.asp) or [arithmetic](https://www.w3schools.com/js/js_arithmetic.asp) expressions, JavaScript [functions](https://www.w3schools.com/js/js_functions.asp) and JSON [objects](https://www.w3schools.com/js/js_json_objects.asp). The values supplied can also be observable variables, created using the APIs described in this document. The way in which the supplied value is bound to the HTML element is determined by the binding handler that is used with the data binding attribute. A list of all supported binding handlers is provided in this document. The data binding attribute requires the following syntax when used with any binding handler. The syntax for **data-dyn-bind** is:
 
-    data-dyn-bind="[first binding handler]: [value to bind to]"
+```xpp
+data-dyn-bind="[first binding handler]: [value to bind to]"
+```
 
 The data binding attribute accepts a comma-separated list of binding handler-value pairs, so you can supply more than one binding handler to the binding attribute at a time. The following example binds the **visible** property of the div element to true, and binds the **textContent** property of the div element to "Hi".
 
-    data-dyn-bind="text: 'Hi', visible: true"
+```xpp
+data-dyn-bind="text: 'Hi', visible: true"
+```
 
 The data binding attribute is a custom HTML attribute understood by the control framework. The data binding attribute can be applied to any HTML element. Some HTML elements may not have the behavior which the binding handler modifies. For example, using the text binding handler on an **&lt;svg&gt;** element will not show the text since the **&lt;svg&gt;** element does not have a textContent property. The control framework reads and executes the data bindings specified in the control’s template at runtime. The lifecycle for the control in the browser can be summarized as follows:
 
@@ -373,7 +395,7 @@ The **attr** binding handler applies the supplied HTML attribute and value to th
 
 The following example creates the title and name attributes and sets their value.
 
-```
+```xpp
 <!-- the markup in the HTML template -->
 <div data-dyn-bind="attr: {title: 'Hello', name: 'Greeting'}"></div>
 
@@ -383,7 +405,7 @@ The following example creates the title and name attributes and sets their value
 
 The following example uses expressions and functions. However, using JavaScript functions as in-line HTML like the example below is not recommended.
 
-```
+```xpp
 <!-- the markup in the HTML template -->
 <div data-dyn-bind="attr: {title: false? 'Hello':'World', name: function(){return 'Greetings';}()}"></div>
 
@@ -407,7 +429,7 @@ The function to call when the event is raised.
 
 The following example shows an alert message “Hello” when the element is clicked.
 
-```
+```xpp
 // In your control’s code-behind JS file
 <script>
 ... // boilerplate code
@@ -424,7 +446,7 @@ self.ElementClicked = function (event) {
 
 The following example prevents the click event on child elements from bubbling up to parent elements. The example below will show only one alert with message “Hello” when the child element is clicked.
 
-```
+```xpp
 // In your control’s code-behind JS file
 <script>
 ... // boilerplate code
@@ -452,7 +474,7 @@ self.ElementClicked = function (event) {
 
 The following example prevents the browser default behavior from executing. For anchor tags, the default hyperlink behavior is prevented, so the browser will not navigate to the link when the element is clicked.
 
-```
+```xpp
 // In your control’s code-behind JS file
 <script>
 ... // boilerplate code
@@ -487,7 +509,7 @@ The CSS class name to add to the element.
 
 The condition on which to add the CSS class name. If the condition evaluates to true, the CSS class name is added. If the condition evaluates to false, the CSS class name is removed. If a supplied condition takes a dependency on an observable (via $dyn.value), then the condition will be re-evaluated whenever the observable value changes, and the associated CSS class name will be added/removed based on the new condition. The following example adds the CSS class names "red", "green", and "yellow".
 
-```
+```xpp
 // In your control’s code-behind JS file
 <script>
 ... // boilerplate code
@@ -513,7 +535,7 @@ Subscribes the supplied event handler to the specified DOM event. For a list of 
 
 For details on the arguments to the event binding handler, see [jQuery - .bind()](https://api.jquery.com/bind/). The following example subscribes to the mouseover event and shows an alert when the element is hovered.
 
-```
+```xpp
 // In your control’s code-behind JS file
 <script>
 ... // boilerplate code
@@ -541,7 +563,7 @@ The list of items to bind the child element to. If an array list is supplied, th
 
 When inside the scope of the **foreach,** the following scope variables are useful and can be used on the repeatable child element: $data, index, control, your own scope variables. The following example uses **foreach** to render a span element for each color in the array.
 
-```
+```xpp
 // In your control’s code-behind JS file
 <script>
 ... // boilerplate code
@@ -564,7 +586,7 @@ self.colors = ['Red','Blue','Green'];
 
 The following examples shows a nested **foreach** binding. This example showcases how to use the index framework scope variable and custom scope variables to access the binding context from the parent element.
 
-```
+```xpp
     // In your control’s code-behind JS file
 <script>
 ... // boilerplate code
@@ -623,7 +645,7 @@ Conditionally renders and binds the child elements of the element with this bind
 
 Determines whether to render the children elements. The following example conditionally binds the **show** and **text** elements.
 
-```
+```xpp
     // In your control’s code-behind JS file
 <script>
 ... // boilerplate code
@@ -668,7 +690,7 @@ Determines the height in pixels of the element on which the binding handler is a
 
 Determines the width in pixels of the element on which the binding handler is applied. The following example specifies the size of **MyControl.**
 
-```
+```xpp
 <!-- the markup in the HTML template -->
 <!-- this boilerplate binding ensures that the control’s container is sized based on the height and width properties -->
 <div id="MyControl" data-dyn-bind="sizing: $dyn.layout.sizing($control)"></div>
@@ -677,7 +699,7 @@ Determines the width in pixels of the element on which the binding handler is ap
 
 The following example makes the control large or small depending on the value of the **bigbox** variable.
 
-```
+```xpp
 // Later on, the value of the “show” observable changes to true
 <script>
 ...
@@ -702,7 +724,7 @@ Binds to the textContent property of the element. The text binding handler is me
 
 The text to bind to. The following example binds the textContext property of the div element to the text property on the control.
 
-```
+```xpp
 // In your control’s code-behind JS file
 <script>
 ... // boilerplate code
@@ -727,7 +749,7 @@ Creates an HTML scope variable with the supplied name and value. The created sco
 
 The object array whose keys are the scope variable names and whose values are the initial values for the scope variables. The following example creates scope variables named "Hello" and "World" and displays their values.
 
-```
+```xpp
 <!-- the markup in the HTML template -->
 <div data-dyn-bind="vars: {$myVar: 'Hello', $myObs: $dyn.observable('World')}">
 <span data-dyn-bind="text: $dyn.format('{0} {1}!', $myVar, $myObs)">
@@ -757,7 +779,7 @@ Sets the visibility of the element. Always supply the visible binding handler on
 
 Determines whether the element is visible or not. The following example sets the visibility of the control's outermost div element.
 
-```
+```xpp
 // In your control’s code-behind JS file
 <script>
 ... // boilerplate code
@@ -777,7 +799,7 @@ Scope variables can be used when binding values to binding handlers. Scope varia
 
 The *$control* scope variable provides the bindings in the HTML template with access to the properties and functions on the control’s JavaScript instance. The following example binds visibility of the div element to the of Visible property of the control.
 
-```
+```xpp
 <div id="MyControl" data-dyn-bind="visible: $control.Visible"></div>
 ```
 
@@ -794,7 +816,7 @@ The $index scope variable provides a 0-based index of the array item when in a *
 
 The **Visible** property is inherited from the base JavaScript class (via **$dyn.ui.Controls.apply**). There is also a **Visible** property in X++ that the runtime class in inherits from the base **FormControl** X++ class. Simply bind this property to the visible binding handler and place it on the root element of the HTML template for your control. The framework takes care of the rest. The following example shows how to use the Visible property.
 
-```
+```xpp
 <!-- the markup in the HTML template -->
 <div id="MyControl" data-dyn-bind="visible: $control.Visible"></div>
 ```
@@ -806,7 +828,7 @@ The **Visible** property is inherited from the base JavaScript class (via **$dyn
 
 Subscribes a function to changes of an observable. We recommend that you use dispose.
 
-```
+```xpp
 $dyn.observe(observable, observer, [context], [disposableObserver])
 ```
 
@@ -834,13 +856,13 @@ Unsubscribes the supplied DisposableObserver
 
 Observable, ID, Dispose function (public) used to unsubscribe The following example subscribes to the myObs observable, and executes the supplied function whenever the myObs observable value changes.
 
-```
+```xpp
 $dyn.observe(myObs, function (value) { console.log(value);});
 ```
 
 The following example shows how a function can automatically subscribe to observables simply by accessing the observable using $dyn.value. The first function is treated like an observable whose value is dependent upon the value of two other observables (FirstName and LastName). Every time one of the observables  (FirstName or LastName) changes its value, then the first function has also changed its value. When this happens, the second function (the callback function) will log the concatenation of the observable values to the console.
 
-```
+```xpp
 self.FirstName = $dyn.observable("Joanne");
 self.LastName = $dyn.observable("Gordon");
 $dyn.observe(
@@ -857,7 +879,7 @@ $dyn.observe(
 
 The following example performs similarly to the previous example. However, this example uses a computed observable, named myComp, to handle the concatenation.
 
-```
+```xpp
 self.FirstName = $dyn.observable("Joanne");
 self.LastName = $dyn.observable("Gordon");
 self.myComp = $dyn.computed(function () {
@@ -881,7 +903,7 @@ $dyn.observe(
 
 Creates an observable variable.
 
-```
+```xpp
 $dyn.observable([initial value])
 ```
 
@@ -897,7 +919,9 @@ The value to initialize the observable to.
 
 The newly created observable The following example creates and observable variable named "Hello".
 
-    var greeting = $dyn.observable("Hello");
+```xpp
+var greeting = $dyn.observable("Hello");
+```
 
 #### $dyn.value
 
@@ -905,7 +929,7 @@ The newly created observable The following example creates and observable variab
 
 Accesses the value of an observable variable. When **$dyn.value** is called from inside of an observer function (such as an observer passed to **$dyn.observe** or **$dyn.computed**, as well as the binding expression passed to a binding handler) a dependency on the observable is created. This will cause the binding handler or callback to re-execute whenever the value of the observable changes. Because this dependency is created automatically when using **$dyn.value**, it is important to only use **$dyn.value** when you intentionally wish to create such a dependency. If you wish to access the value of an observable without creating a dependency, you should use $dyn.peek.
 
-```
+```xpp
 $dyn.value(observable)
 ```
 
@@ -921,7 +945,7 @@ The observable property whose value to access.
 
 The current value in the observable property The following example returns the value of variable named observable and prints it to the console.
 
-```
+```xpp
 console.log($dyn.value(observable));
 ```
 
@@ -931,7 +955,7 @@ console.log($dyn.value(observable));
 
 Accesses the value of an observable variable, without creating a dependency. For more information about dependency, see the $dyn.value function.
 
-```
+```xpp
 $dyn.peek(observable)
 ```
 
@@ -947,7 +971,7 @@ The observable whose value to access.
 
 The current value in the observable The following example returns the value of variable named observable and prints it to the console.
 
-```
+```xpp
 console.log($dyn.peek(observable));
 ```
 
@@ -957,7 +981,7 @@ console.log($dyn.peek(observable));
 
 Wraps a function with an observability scope. If observables are accessed from inside of the function by using the **$dyn.value** function, then the function will re-execute whenever the values of those observables change. Observables that are accessed by using **$dyn.peek** will not cause the function to re-execute when their values change.
 
-```
+```xpp
 $dyn.computed(observer, [context], [disposableObserver])
 ```
 
@@ -1006,7 +1030,7 @@ The arguments to pass to the supplied function.
 
 The callback function to call when the supplied Function has returned. The callback will be passed any values that are returned by the function that is called. The following example calls the **apply** function on the **printName** function.
 
-```
+```xpp
 self.Name = "Joanne M Gordon";
 var printName = function () {
     console.log(this.Name);
@@ -1016,7 +1040,7 @@ $dyn.callFunction(printName, self);
 
 The following example calls the **getWholeName** function.
 
-```
+```xpp
 var getWholeName = function (first, middle, last) {
     var wholeName = first + " " + middle + " " + last;
     return wholeName;
@@ -1054,7 +1078,7 @@ The string after formatting has been applied The following example builds a stri
 
 ##### Example 1
 
-```
+```xpp
 var first = "Joanne";
 var middle = "M";
 var last = "Gordon";
@@ -1079,7 +1103,7 @@ The label ID, as specified to the Globalization API.
 
 The label string in the current culture, if the Identifier is found. Otherwise, returns the supplied Identifier as a string. The following example returns and prints the label named "greeting".
 
-```
+```xpp
 Globalize.addCultureInfo("en", {
     messages: {
         "greeting": "Hello!"

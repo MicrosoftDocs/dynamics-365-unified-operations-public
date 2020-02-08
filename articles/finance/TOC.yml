@@ -1969,6 +1969,8 @@
           href: localizations/emea-ita-exil-misc-charges-intrastat.md
         - name: Advanced notes management
           href: localizations/emea-ita-exil-structured-notes.md
+        - name: Intent letters - Invoicing usual exporters
+          href: localizations/emea-ita-exil-intent-letter.md
         - name: Tax invoice for goods delivered for free
           href: localizations/emea-ita-exil-goods-for-free.md
         - name: Improved inquiry on debit or credit settlements
@@ -2295,6 +2297,10 @@
             href: general-ledger/import-currency-exchange-rates.md
           - name: Ledger translation
             href: localizations/rus-ledger-translation-procedure.md
+          - name: Turnover balance statement reports
+            href: localizations/rus-turnover-balance-statement-reports.md
+          - name: Account activity reports
+            href: localizations/rus-account-activity-reports.md
         - name: Advance holders
           items:
           - name: Russia advance holders overview

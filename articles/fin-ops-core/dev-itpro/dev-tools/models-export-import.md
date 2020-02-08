@@ -42,22 +42,30 @@ Export a model into a model file for distribution
 
 To export an existing model into a model file, use the ModelUtil.exe tool and the **-export** directive. This tool is located in the packages bin folder (typically, c:\\packages\\bin or i:\\AosService\\PackagesLocalDirectory\\bin).
 
-    ModelUtil.exe -export -metadatastorepath=[path of the metadata store] -modelname=[name of the model to export] -outputpath=[path of the folder where the model file should be saved]
+```Console
+ModelUtil.exe -export -metadatastorepath=[path of the metadata store] -modelname=[name of the model to export] -outputpath=[path of the folder where the model file should be saved]
+```
 
 **Example**
 
-    ModelUtil.exe -export -metadatastorepath=c:\packages -modelname="FleetManagement" -outputpath=c:\temp
+```Console
+ModelUtil.exe -export -metadatastorepath=c:\packages -modelname="FleetManagement" -outputpath=c:\temp
+```
 
 The preceding example creates an .axmodel file under c:\\temp. Typically, you then upload the model file to the Asset Library of the customer project or the Microsoft Dynamics Lifecycle Services (LCS) solution project.
 
 ## Install a model in a development environment
 To install a model file in a development environment, use the ModelUtil.exe tool and the **-import** directive.
 
-    ModelUtil.exe -import -metadatastorepath=[path of the metadata store where model should be imported] -file=[full path of the file to import]
+```Console
+ModelUtil.exe -import -metadatastorepath=[path of the metadata store where model should be imported] -file=[full path of the file to import]
+```
 
 If the model already exists in your development environment, you must first delete it by using the **-delete** directive.
 
-    ModelUtil.exe -delete -metadatastorepath=[path of the metadata store] -modelname=[name of the model to delete]
+```Console
+ModelUtil.exe -delete -metadatastorepath=[path of the metadata store] -modelname=[name of the model to delete]
+```
     
 > [!NOTE]
 > If you're using an older version, you can use the -replace parameter to replace standard models (like Foundation) for overlayering.    
@@ -65,9 +73,12 @@ If the model already exists in your development environment, you must first dele
 ## Resolve conflicts
 If you install a model on a development environment that contains customizations to that model (in a higher-layer), you may have to resolve code or metadata conflicts. You can use the development tools to create a project that groups all items that have conflicts.
 
-1. Under <strong>Dynamics 365 **&gt; **AddIns</strong>, click <strong>Create Project from Conflicts</strong>.
+1. Under <strong>Dynamics 365 &gt; AddIns</strong>, click <strong>Create Project from Conflicts</strong>.
 2. In the dialog box, select the model to check for conflicts. This is the model that contains customizations to elements in the newly installed baseline model.
-3. Click **Create project**. A project is generated that contains only the elements in that model that have conflicts. [![AddUpdate\_MetaHotfix](./media/addupdate_metahotfix.png)](./media/addupdate_metahotfix.png)
+3. Click **Create project**. A project is generated that contains only the elements in that model that have conflicts. 
+
+    [![AddUpdate\_MetaHotfix](./media/addupdate_metahotfix.png)](./media/addupdate_metahotfix.png)
+
 4. Open the designer for the conflicting element to view and resolve conflicts by using the tools that are provided. 
 
 <!--For an introduction to conflict resolution tools that are available in a development environment, see the [Resolve conflicts using Visual Studio tools](https://mix.office.com/watch/1rl75ei2cs6d7) Microsoft Office Mix.-->
