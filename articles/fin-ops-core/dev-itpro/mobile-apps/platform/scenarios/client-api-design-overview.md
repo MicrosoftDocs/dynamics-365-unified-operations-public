@@ -79,7 +79,7 @@ The following code is a modified segment of business logic code from a Reservati
 
 After a control is created that doesn't have any children or items, the control name just has to be written in quotation marks (see **FMCustomer\_FullName** in the following code). However, if any customization will be applied to that control, the code must be blocked, and the **name** label must be used (see **FMCustomer\_Image** in the following code).
 
-```
+```json
 // Page root container
 "flexFlow":"column nowrap",
 "items":[

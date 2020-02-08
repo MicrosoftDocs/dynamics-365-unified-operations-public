@@ -38,7 +38,7 @@ You can view a demo and try the Microsoft Dynamics 365 Talent: Onboard app for f
 > [!NOTE]
 > The free trial requires a business email account.
 
-You can purchase a subscription to Onboard as either a stand-alone app or part of Dynamics 365 Talent. Talent is a comprehensive human capital management (HCM) system that includes Dynamics 365 Talent: Attract, Onboard, and Core HR. For more information about how to purchase Onboard, see the [Onboard product page](https://dynamics.microsoft.com/talent/onboard/).
+You can purchase a subscription to Onboard as either a stand-alone app or part of Dynamics 365 Talent. For more information about how to purchase Onboard, see the [Onboard product page](https://dynamics.microsoft.com/talent/onboard/).
 
 During the trial or purchase process, you will set up your Microsoft 365 email address and password. Be sure to make a note of these values.
 

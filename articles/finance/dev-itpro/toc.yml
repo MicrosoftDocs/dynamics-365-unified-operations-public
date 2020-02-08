@@ -862,7 +862,7 @@
       href: ../../dev-itpro/gdpr/gdpr-extend-person-search-report.md?toc=/dynamics365/unified-operations/financials/toc.json
     - name: Manage access to sensitive data
       href: ../../dev-itpro/gdpr/gdpr-auditing-sensitive-data.md?toc=/dynamics365/unified-operations/financials/toc.json
-    - name: Respond to requests for personal data using Talent
+    - name: Respond to requests for personal data using Human Resources
       href: ../../dev-itpro/gdpr/respond-dsr-request-talent.md?toc=/dynamics365/unified-operations/financials/toc.json
     - name: Respond to requests for personal data in AX 2012
       href: ../../dev-itpro/gdpr/gdpr-ax2012.md?toc=/dynamics365/unified-operations/financials/toc.json

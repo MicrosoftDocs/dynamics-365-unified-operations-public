@@ -64,7 +64,7 @@ This procedure is for a feature that was added in Dynamics 365 for Operations ve
 11. In the tree, select 'Customer invoice model'.
 
 ## Create the derived model to support access to the Document Management files.
-    * You will create our own configuration of the Customer invoice model deriving it from the configuration provided by Microsoft. You will use this configuration to implement access to the Document Management files and make them available for electronic documents that you will create based on this model.  
+You will create our own configuration of the Customer invoice model deriving it from the configuration provided by Microsoft. You will use this configuration to implement access to the Document Management files and make them available for electronic documents that you will create based on this model.  
 1. Click Create configuration to open the drop dialog.
 2. In the New field, enter 'Derive from Name: Customer invoice model, Microsoft'.
 3. In the Name field, type 'Customer invoice model (custom)'.

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure a Commerce preview environment
+title: Configure a Dynamics 365 Commerce preview environment
 description: This topic explains how to configure a Microsoft Dynamics 365 Commerce preview environment after it's provisioned.
 author: psimolin
 manager: annbe
@@ -28,9 +28,9 @@ ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
 ---
 
-# Configure a Commerce preview environment
+# Configure a Dynamics 365 Commerce preview environment
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic explains how to configure a Microsoft Dynamics 365 Commerce preview environment after it's provisioned.
@@ -146,13 +146,13 @@ To configure optional features for your Commerce preview environment, see [Confi
 
 ## Additional resources
 
-[Commerce preview environment overview](cpe-overview.md)
+[Dynamics 365 Commerce preview environment overview](cpe-overview.md)
 
-[Provision a Commerce preview environment](provisioning-guide.md)
+[Provision a Dynamics 365 Commerce preview environment](provisioning-guide.md)
 
-[Configure optional features for a Commerce preview environment](cpe-optional-features.md)
+[Configure optional features for a Dynamics 365 Commerce preview environment](cpe-optional-features.md)
 
-[Commerce preview environment FAQ](cpe-faq.md)
+[Dynamics 365 Commerce preview environment FAQ](cpe-faq.md)
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
@@ -161,5 +161,3 @@ To configure optional features for your Commerce preview environment, see [Confi
 [Microsoft Azure portal](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce website](https://aka.ms/Dynamics365CommerceWebsite)
-
-[Help resources for Dynamics 365 Retail](../retail/index.md)

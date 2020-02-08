@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Overview of cart and checkout pages
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic provides an overview of the cart and checkout pages in Microsoft Dynamics 365 Commerce.
@@ -68,11 +68,11 @@ The main body of the checkout page is where all the order information is collect
 
 ### Shipping address
 
-A shipping address is required if items must be shipped. The format of shipping addresses for each locale can be configured in Dynamics 365 Retail. For example, if the items will be shipped to the United States, the shipping address must include a street address, state, and ZIP Code. Some basic input validation is done for shipping address fields, such as validation for alphanumeric characters, maximum length, and numbers. Although the validity of the address itself isn't verified, this verification can be done by using customized third-party services.
+A shipping address is required if items must be shipped. The format of shipping addresses for each locale can be configured in Dynamics 365 Commerce. For example, if the items will be shipped to the United States, the shipping address must include a street address, state, and ZIP Code. Some basic input validation is done for shipping address fields, such as validation for alphanumeric characters, maximum length, and numbers. Although the validity of the address itself isn't verified, this verification can be done by using customized third-party services.
 
 The shipping address is applied to all items in the cart that the "ship" option is selected for. If you use the checkout flow that is provided in the online starter kit, individual cart items can't be shipped to different addresses. If you require this capability, it can be implemented through customization of the checkout modules.
 
-After the shipping address is provided, the shipping methods that are available from the Dynamics 365 Commerce online store are shown. The shipping methods and the addresses that they support can be configured in Retail.
+After the shipping address is provided, the shipping methods that are available from the Dynamics 365 Commerce online store are shown. The shipping methods and the addresses that they support can be configured in Commerce.
 
 ### Payment
 

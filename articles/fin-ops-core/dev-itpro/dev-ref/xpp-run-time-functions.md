@@ -46,11 +46,15 @@ The X++ language provides nearly 200 system functions that aren't part of any cl
 
 The logic of the X++ run-time functions is also implemented in the following .NET assembly.
 
-    Microsoft.Dynamics.AX.Xpp.Support.DLL
+```xpp
+Microsoft.Dynamics.AX.Xpp.Support.DLL
+```
 
 Inside this assembly, the X++ run-time functions are implemented as static methods of the following class.
 
-    Microsoft.Dynamics.AX.Xpp.PredefinedFunctions
+```xpp
+Microsoft.Dynamics.AX.Xpp.PredefinedFunctions
+```
 
 ## Categories and functions
 The following table lists and describes only the categories of X++ functions. These categories are intended to help you understand the many functions. However, the categories don't represent any formal construct.
@@ -175,7 +179,9 @@ static void beepExample(Args _args)
 ## newGuid
 Creates a globally unique identifier (GUID).
 
-    guid newGuid()
+```xpp
+guid newGuid()
+```
 
 ### Return value
 
@@ -185,18 +191,22 @@ A GUID.
 
 The following example creates a GUID.
 
-    static void newGuidExample(Args _arg)
-    {
-            guid myGuid;
+```xpp
+static void newGuidExample(Args _arg)
+{
+    guid myGuid;
 
-            myGuid = newguid();
-            print strfmt("The GUID is: %1", myGuid);
-    }
+    myGuid = newguid();
+    print strfmt("The GUID is: %1", myGuid);
+}
+```
 
 ## sleep
 Pauses the execution of the current thread for the specified number of milliseconds.
 
-    int sleep(int _duration)
+```xpp
+int sleep(int _duration)
+```
 
 ### Parameters
 
@@ -210,15 +220,16 @@ The number of milliseconds that the thread actually paused.
 
 ### Example
 
-    static void sleepExample(Args _arg)
-    {
-            int seconds = 10;
-            int i;
+```xpp
+static void sleepExample(Args _arg)
+{
+    int seconds = 10;
+    int i;
 
-            i = sleep(seconds*1000);
-            print "job slept for " + int2str(i/1000) + " seconds";
-    }
-
+    i = sleep(seconds*1000);
+    print "job slept for " + int2str(i/1000) + " seconds";
+}
+```
 
 
 

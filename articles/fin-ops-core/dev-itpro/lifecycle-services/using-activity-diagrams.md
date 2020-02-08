@@ -93,7 +93,7 @@ To view or upload a Visio file, follow these steps.
 
     In this case, enter the following text in the **Process steps** field.
 
-    ```
+    ```Text
     Step 1
     =SubStep 1.1
     =SubStep 1.2

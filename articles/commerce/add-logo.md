@@ -5,7 +5,7 @@ title: Add a logo
 description: This topic describes how to add a logo to your site in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 manager: AnnBe
-ms.date: 12/12/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.5
 
 # Add a logo
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic describes how to add a logo to your site in Microsoft Dynamics 365 Commerce.
@@ -47,7 +47,7 @@ You can add a logo directly to a template, layout, or page. In this way, you can
 
 Before you can add a logo to all the pages of your site, you must complete these tasks.
 
-1. Upload your logo to the digital assets manager, which you can access from the **Assets** page.
+1. Upload your logo to the Media Library.
 1. Create a header fragment. For more information about how to create and use fragments, see [Work with fragments](work-with-fragments.md).
 1. Include the header fragment in the template that the pages of your site use for their layout and module options. For more information about templates, see [Work with templates](work-with-templates.md).
 
@@ -55,13 +55,11 @@ Before you can add a logo to all the pages of your site, you must complete these
 
 To add a logo to the header fragment for your site, follow these steps.
 
-1. In the navigation pane on the left, select **Fragments**, and then select the header fragment that you created.
-2. Select **Check out**.
-3. Expand the **Header** slot and the **Logo** slot.
-4. Select the ellipsis button (**...**) for the **Logo** slot, and then select **Add module**.
-5. Select the logo module.
-6. In the properties pane on the right, configure the logo module so that it shows your logo.
-7. Save the header fragment, check it in, and publish it.
+1. In the navigation pane on the left, select **Page Fragments**.
+1. Select the header fragment that you created, and then select **Edit**.
+1. Expand the header module.
+1. In the property pane for the header module, provide an image and link for the logo. 
+1. Save the header fragment, finish editing it, and publish it.
 
 After you publish the updated header fragment, all site pages that use the template that contains the header fragment will show your logo.
 

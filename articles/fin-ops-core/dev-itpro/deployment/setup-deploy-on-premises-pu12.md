@@ -240,13 +240,13 @@ The following is an example of a Service Fabric Server certificate combined with
 
 #### Subject name
 
-```
+```Text
 CN = *.d365ffo.onprem.contoso.com
 ```
 
 #### Subject alternative names
 
-```
+```Text
 DNS Name=ax.d365ffo.onprem.contoso.com
 DNS Name=sf.d365ffo.onprem.contoso.com
 DNS Name=*.d365ffo.onprem.contoso.com
@@ -413,13 +413,13 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
 
 3. If you're using SSL certificates that were already generated, skip the Certificate generation and update the thumbprints in the configTemplate.xml file. The certificates need to be installed in the CurrentUser\My store and their private keys must be exportable.
 
-> [!WARNING]
-> Because of a leading not-printable special character, which is difficult to determine when present, the cert manager should not be used to copy thumbprints. If the not-printable special character is present, you will get the error, **X509 certificate not valid**. To retrieve the thumbprints, see results from PowerShell commands or run the following commands in PowerShell.
-> ```powershell
-> dir cert:\CurrentUser\My
-> dir cert:\LocalMachine\My
-> dir cert:\LocalMachine\Root
-> ```
+    > [!WARNING]
+    > Because of a leading not-printable special character, which is difficult to determine when present, the cert manager should not be used to copy thumbprints. If the not-printable special character is present, you will get the error, **X509 certificate not valid**. To retrieve the thumbprints, see results from PowerShell commands or run the following commands in PowerShell.
+    > ```powershell
+    > dir cert:\CurrentUser\My
+    > dir cert:\LocalMachine\My
+    > dir cert:\LocalMachine\Root
+    > ```
 
 4. Specify a semi-colon separated list of users or groups in the **ProtectTo** tag for each certificate. Only Active directory users and groups specified in the **ProtectTo** tag will have permissions to import the certificates that are exported using the scripts. Passwords are not supported by the script to protect the exported certificates
 
@@ -702,11 +702,11 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
 3. On the **Model** tab, select the demo data for the release that you want and download the zip file.
 
-| Release | Demo data |
-|-------|------|
-| On-premises General Availability (GA) release | Dynamics 365 for Operations on-premises - Demo data |
-| On-premises Platform Update 11 Nov 2017 release | Dynamics 365 for Operations on-premises, Enterprise edition - Update 11 Demo data |
-| On-premises Platform Update 12 Mar 2018 release | Dynamics 365 for Operations on-premises, Enterprise edition - Update 12 Demo data |
+    | Release | Demo data |
+    |-------|------|
+    | On-premises General Availability (GA) release | Dynamics 365 for Operations on-premises - Demo data |
+    | On-premises Platform Update 11 Nov 2017 release | Dynamics 365 for Operations on-premises, Enterprise edition - Update 11 Demo data |
+    | On-premises Platform Update 12 Mar 2018 release | Dynamics 365 for Operations on-premises, Enterprise edition - Update 12 Demo data |
 
 4. The zip file contains empty and demo data .bak files. Select the .bak file, based on your requirements. For example, if you require demo data, download the AxBootstrapDB_Demodata.bak file.
 
@@ -963,7 +963,7 @@ If the previous remoting PowerShell window was accidentally closed and CredSSP w
 
 2. For new deployments, select your environment topology, and then complete the wizard to start your deployment.
 
-![Deploy](./media/Deploy.png)
+    ![Deploy](./media/Deploy.png)
 
 3. If you have an existing Platform update 8 or Platform update 11 deployment: 
     - Update the local agent. See [Update the local agent](../lifecycle-services/update-local-agent.md) for more details.
@@ -971,24 +971,25 @@ If the previous remoting PowerShell window was accidentally closed and CredSSP w
     - Deploy Platform update 12 while going through the steps in [Reconfigure environments to take a new platform or topology](../lifecycle-services/reconfigure-environment.md).
 4. LCS will assemble the Service Fabric application packages for your environment during the preparation phase. It then sends a message to the local agent to start deployment. You will notice the **Preparing** status as below.
 
-![Preparing](./media/Preparing.png)
+    ![Preparing](./media/Preparing.png)
 
-Click **Full details** to take you to the environment details page, as shown below.
+    Click **Full details** to take you to the environment details page, as shown below.
 
-![Details_Preparing](./media/Details_Preparing.png)
+    ![Details_Preparing](./media/Details_Preparing.png)
 
 5. The local agent will now pick up the deployment request, start the deployment, and communicate back to LCS when the environment is ready. When deployment starts, the status will change to **Deploying**, as shown.
 
-![Deploying](./media/Deploying.png)
+    ![Deploying](./media/Deploying.png)
 
-![Details_Deploying](./media/Details_Deploying.png)
+    ![Details_Deploying](./media/Details_Deploying.png)
 
-If the deployment fails, the **Reconfigure** button will become available for your environment in LCS, as shown below. Fix the underlying issue, click **Reconfigure**, update any configuration changes, and click **Deploy** to retry the deployment.
+    If the deployment fails, the **Reconfigure** button will become available for your environment in LCS, as shown below. Fix the underlying issue, click **Reconfigure**, update any configuration changes, and click **Deploy** to retry the deployment.
 
-![Failed](./media/Failed.png)
+    ![Failed](./media/Failed.png)
 
-See the [Reconfigure environments to take a new platform or topology](../lifecycle-services/reconfigure-environment.md) topic for details about how to reconfigure. The following graphic shows a successful deployment.
-![Deployed](./media/Deployed.png)
+    See the [Reconfigure environments to take a new platform or topology](../lifecycle-services/reconfigure-environment.md) topic for details about how to reconfigure. The following graphic shows a successful deployment.
+
+    ![Deployed](./media/Deployed.png)
 
 ### <a name="connect"></a> 22. Connect to your Finance + Operations environment
 In your browser, navigate to https://[yourD365FOdomain]/namespaces/AXSF, where yourD365FOdomain is the domain name that you defined in the [Plan your domain name and DNS zones](#plandomain) section of this topic.

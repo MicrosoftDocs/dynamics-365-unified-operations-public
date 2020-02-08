@@ -6,7 +6,7 @@ description: This topic provides information about Open Data Protocol (OData) an
 author: Sunil-Garg
 manager: AnnBe
 
-ms.date: 12/11/2019
+ms.date: 02/07/2020
 
 ms.topic: article
 ms.prod: 
@@ -88,7 +88,7 @@ The following are the high-level features that are enabled for the OData service
     - $orderby
     - $skip
     - $top
-    - $expand
+    - $expand (only first-level expansion is supported)
     - $select
 
 - The OData service supports serving driven paging with a maximum page size of 1,000.
@@ -201,7 +201,7 @@ Links between OData entities are described by a navigation property. Navigation 
 #### Adding actions on OData entities
 Actions let you inject behaviors into the data model. To add actions, add a method to the updatable view, and decorate that method with specific attributes. Here is an example.
 
-```
+```xpp
 [SysODataActionAttribute("CalcMaintenanceDuration", true)]
 public int CalculateMaintenanceDuration()
 {
@@ -212,17 +212,16 @@ public int CalculateMaintenanceDuration()
 
 In this example, the **SysODataActionAttribute** class decorates the **CalculateMaintenanceDuration** method that is exposed as an action. The first argument of the attribute is the publicly exposed name of the action, and the second argument indicates whether this action is always available. Methods that are exposed as actions can return any primitive type or another public updatable view. After this method is exposed, it appears in the OData $metadata. Here is an example.
 
-```
+```xml
 <Action Name="CalcMaintenanceDuration" IsBound="true">
     <Parameter Name="ViewMaintenance" Type="Microsoft.Dynamics.AX.Resources.ViewMaintenance"/>
     <ReturnType Type="Edm.String" />
 </Action>
-
 ```
 
 The following example of an OData action takes in a parameter and returns a list.
 
-```
+```xpp
 [SysODataActionAttribute("GetColors", true),
     SysODataCollectionAttribute("return", Types::Record, "CarColor")]
 public List GetColorsByAvailability(boolean onlyAvailableVehicles)
@@ -280,7 +279,7 @@ The OData batch framework uses *changesets*. Each changeset contains a list of r
 
 The **SaveChangesOptions.BatchWithSingleChangeset** option in **SaveChanges()** helps guarantee that all requests are bundled into a single changeset.
 
-```
+```xpp
 public static void CreateProductColors(Resources context)
 {
     var productColorsCollection = new DataServiceCollection<ProductColor>(context);
@@ -302,7 +301,7 @@ When you create a new record by using an OData client, as shown in example 1, pr
 
 **Example 1**
 
-```
+```xpp
 public static void CreateVendor(Resources context)
 {
     var vendorCollection = new DataServiceCollection<Vendor>(context);
@@ -315,7 +314,7 @@ public static void CreateVendor(Resources context)
 
 **Example 2**
 
-```
+```xpp
 public static void CreateVendor(Resources context)
 {
     var vendorCollection = new DataServiceCollection<Vendor>(context);

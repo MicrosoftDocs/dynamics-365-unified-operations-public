@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Create a new Commerce product hierarchy
-description: This topic describes how to create a new Commerce product hierarchy in Microsoft Dynamics 365 Commerce.
+title: Create a new product hierarchy
+description: This topic describes how to create a new product hierarchy in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
 ms.date: 01/27/2020
@@ -28,12 +28,12 @@ ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
 
 ---
-# Create a new Commerce product hierarchy
+# Create a new product hierarchy
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
-This topic describes how to create a new Commerce   product hierarchy in Microsoft Dynamics 365 Commerce.
+This topic describes how to create a new product hierarchy in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
@@ -41,7 +41,7 @@ Dynamics 365 Commerce supports multiple retail channels. These retail channels i
 
 A Commerce product hierarchy is used to define the overall product hierarchy for your organization. You can use a Commerce product hierarchy for merchandising, pricing and promotions, reporting, and assortment planning. Only one Commerce product hierarchy can be assigned per organization.
 
-## Create and configure a Commerce product hierarchy
+## Create and configure a product hierarchy
 
 To create and configure a Commerce product hierarchy, follow these steps.
 
@@ -79,8 +79,8 @@ Category attribute groups can also be assigned to each group as required.
 
 ## Additional resources
 
-[Retail hierarchies](../retail/retail-hierarchies.md?toc=/dynamics365/commerce/toc.json)
+[Retail hierarchies](retail-hierarchies.md)
 
-[Manage retail product categories and products ](../retail/category-management-product-creation.md?toc=/dynamics365/commerce/toc.json)
+[Manage product categories and products ](category-management-product-creation.md)
 
-[Change the sort order for merchandizing entities](../retail/custom-order-categories-nav-retail-prod-hierarchy.md?toc=/dynamics365/commerce/toc.json)
+[Change the sort order for merchandizing entities](custom-order-categories-nav-retail-prod-hierarchy.md)

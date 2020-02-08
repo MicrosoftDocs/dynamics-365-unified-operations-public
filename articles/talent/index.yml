@@ -19,14 +19,6 @@ metadata:
 productDirectory:
   items:
     # Card
-    - title: "Dynamics 365 Talent: Core HR"
-      # imageSrc should be square in ratio with no whitespace
-      imageSrc: /dynamics365/images/CoreHR_color.svg
-      links:
-        - url: talent-welcome.md
-          text: Overview
-        - url: talent-get-started.md
-          text: Get started
     - title: "Dynamics 365 Talent: Attract"
       # imageSrc should be square in ratio with no whitespace
       imageSrc: /dynamics365/images/Attract_color.svg

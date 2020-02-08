@@ -51,7 +51,7 @@ In this example, you will create a configuration for sample company, Litware, In
 4. Click ‘Create configuration’ button to complete the configuration creation task
 
 ## Create a data model
-    * You're creating a new data model for the selected configuration. This configuration version will have a status of Draft.  
+You're creating a new data model for the selected configuration. This configuration version will have a status of Draft.  
 1. Click Designer.
 
 ## Define the structure of a party participating in a payment process

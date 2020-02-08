@@ -40,18 +40,18 @@ Perform the following steps in **each** node of type **OrchestratorType** in the
 1. Use remote access to connect to the Orchestrator virtual machine (VM).
 2. Execute the following PowerShell script to retrieve the path of the ```machine.config``` file.
 
-	```Powershell
+	```powershell
 	[System.Runtime.InteropServices.RuntimeEnvironment]::SystemConfigurationFile
 	```
 
 3. Edit the ```machine.config``` file to add the following code example.
 
-	```XML
-		<system.net>
-			<defaultProxy enabled="true" >
-				<proxy <<<SET YOUR PROXY SETTINGS>> />
-	   	 	</defaultProxy>
-    	</system.net>
+	```xml
+	<system.net>
+		<defaultProxy enabled="true" >
+			<proxy <<<SET YOUR PROXY SETTINGS>> />
+	   	</defaultProxy>
+    </system.net>
 	```
 
 4. Save the file.
@@ -62,7 +62,8 @@ The above procedure must be performed for all Orchestrator node VMs.
 ## Whitelist URLs
 
 The LocalAgent needs to communicate with Azure resources. As a result, the following URLs should be whitelisted on the proxy or firewalls so that all **OrchestratorType** nodes can access them:
-```
+
+```Text
 - lcsapi.lcs.dynamics.com
 - login.windows.net
 - uswelcs1lcm.queue.core.windows.net

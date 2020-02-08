@@ -114,7 +114,7 @@ This step requires that you the install Power BI desktop tool that can be downlo
 1.  Select the ellipsis (…) icon next to the **SalesCubeV2\_CustomerInvoices** entity. Right-click and select **New Column**.
 2.  Enter the following expression in the **Formula editor** window.
 
-    ```
+    ```xpp
     FKCustomer = CONCATENATE(CONCATENATE(SalesCubeV2_CustomerInvoices[DATAAREAID], "-"), SalesCubeV2_CustomerInvoices[ORDERACCOUNT])
     ```
 
@@ -129,7 +129,7 @@ This step requires that you the install Power BI desktop tool that can be downlo
 5.  Next, create a similar field in the **SalesCubeV2\_Customer** table. Select the ellipsis (…) icon next to **SalesCubeV2\_Customer** entity. Right-click and select **New Column**.
 6.  Enter the following expression in the **Formula editor** window.
 
-    ```
+    ```xpp
     FKCustomer = CONCATENATE(CONCATENATE(SalesCubeV2_Customer[DATAAREAID], "-"), SalesCubeV2_Customer[CUSTOMER])
     ```
 

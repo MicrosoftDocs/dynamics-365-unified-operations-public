@@ -39,9 +39,11 @@ Follow these steps to use the Subscription estimator tool.
 
 1. In LCS, open the project that is associated with the implementation project.
 2. At the top of the page, select the hamburger icon, and then select **Subscription estimator**.
-[![subscription estimator](./media/subscription_estimator_01.png)](./media/subscription_estimator_01.png)
+
+    [![subscription estimator](./media/subscription_estimator_01.png)](./media/subscription_estimator_01.png)
+
 3. Download the sample usage profile.
-4. Answer the required questions on each tab. If you're a Retail customer, be sure to answer the questions on the **Retail and Commerce** tab.
+4. Answer the required questions on each tab. If you're a Commerce customer, be sure to answer the questions on the **Retail and Commerce** tab.
 5. Save the usage profile locally.
 6. To upload the usage profile, select **New estimate**, name the estimate, and then upload the usage profile.
 7. After the upload is completed, select **Mark as Active** to activate an estimate. An active estimate is required in order to configure a production deployment.
@@ -64,3 +66,4 @@ When there is a valid active estimate, the **Configure** button becomes availabl
 - **Estimate created but does not meet requirements** – This error occurs if transaction lines that are entered aren't within the limits of the Subscription estimation tool. To resolve this error, create a support request, and attach the usage profile. Your instance can then be manually sized.
 
 If you receive any other error message or encounter any other issue, create a support request, and attach your active estimate so that the support team can address the issue.
+ 

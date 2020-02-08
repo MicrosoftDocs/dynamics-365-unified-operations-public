@@ -5,7 +5,7 @@ title: Request properties object
 description: This topic covers the request properties object in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -30,7 +30,6 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Request properties object
 
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 This topic covers the request properties object in Microsoft Dynamics 365 Commerce.
@@ -152,6 +151,118 @@ interface IRequestContext {
     cookies: ICookieContext;
 }
 ```
+
+## Test a module that has an authenticated signed-in state
+
+Some modules might require that the state be **signed-in**. To test these modules, you can create a test page mock that has user authentication information.
+
+To get started, follow these steps.
+
+1. Load the e-Commerce webpage that you're working on, and sign in or create a new account.
+1. Open your web browser's debugging tools. For example, if you're using Google Chrome, you can open the developer tools by pressing the **F12** key. 
+1. Enter **\_\_\_initialData\_\_\_.requestContext.user** in the console to get the user information. (User information is available in the **\_\_\_initialData\_\_\_.requestContext.user** global JavaScript variable.)
+1. Add the module that must be tested to a page mock.
+1. In the **renderingContext** section of the page mock, add the following **userContext** section. 
+
+    ```
+    "userContext": {
+        "token": "<TOKEN>",
+        "isAuthenticated": true,
+        "signInUrl": "https://dev.fabrikam.com/fedev/_msdyn365/signin",
+        "signOutUrl": "https://dev.fabrikam.com/fedev/_msdyn365/signout",
+        "signUpUrl": "https://dev.fabrikam.com/fedev/_msdyn365/signup",
+        "editProfileUrl": "https://dev.fabrikam.com/fedev/_msdyn365/editprofile",
+        "signinName": "<User Name>",
+        "firstName": "<User First Name>",
+        "lastName": "<User Last Name>",
+        "tenantId": "",
+        "customerAccountNumber": "<User Account Number(HQ)>",
+        "name": "<User Name>",
+        "emailAddress": "<User Email Address>"
+    },
+    ```
+
+1. Update the user information from the web browser's debugging tools.
+
+The user information can now be obtained in the React component from within the **this.props.context.request.user** object.
+
+Here in an example of the page mock.
+
+```
+{
+    "exception": null,
+    "pageRoot": {
+        "id": "core-root_0",
+        "typeName": "core-root",
+        "modules": {
+            "body": [
+                {
+                    "id": "default-page_0",
+                    "typeName": "default-page",
+                    "modules": {
+                        "primary": [
+                            {
+                                "id": "ProductFeature__0",
+                                "typeName": "product-feature",
+                                "config": {
+                                    "imageAlignment": "left",
+                                    "productTitle": "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses",
+                                    "productDetails": "High-quality and pioneered with the perfect blend of timeless classic and modern technology with hint of old school glamor.",
+                                    "productImage": {
+                                        "src" : "https://bit.ly/33cMGxr",
+                                        "altText" : "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses"
+                                    },
+                                    "buttonText": "Buy Now"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    "renderingContext": {
+        "gridSettings": {
+            "xs": {
+                "w":767
+            },
+            "sm": {
+                "w":991
+            },
+            "md": {
+                "w":1199
+            },
+            "lg": {
+                "w":1599
+            },
+            "xl": {
+                "w":1600
+            }
+        },        
+        "staticContext": {
+            "staticCdnUrl": "/_scnr/"
+        },
+        "locale": "en-us",
+        "userContext": {
+            "token": "<TOKEN>",
+            "isAuthenticated": true,
+            "signInUrl": "https://dev.fabrikam.com/fedev/_msdyn365/signin",
+            "signOutUrl": "https://dev.fabrikam.com/fedev/_msdyn365/signout",
+            "signUpUrl": "https://dev.fabrikam.com/fedev/_msdyn365/signup",
+            "editProfileUrl": "https://dev.fabrikam.com/fedev/_msdyn365/editprofile",
+            "signinName": "<User Name>",
+            "firstName": "<User First Name>",
+            "lastName": "<User Last Name>",
+            "tenantId": "",
+            "customerAccountNumber": "<User Account Number(HQ)>",
+            "name": "<User Name>",
+            "emailAddress": "<User Email Address>"
+        },
+    },
+    "statusCode": 200
+}
+```
+
 ## Additional resources
 
 [App settings](app-settings.md)

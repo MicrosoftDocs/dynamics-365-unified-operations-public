@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.8
 ---
 # Work with CSS override files
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic describes why, when, and how to use Cascading Style Sheets (CSS) override files in Microsoft Dynamics 365 Commerce.

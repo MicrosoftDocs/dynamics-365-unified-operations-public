@@ -600,7 +600,7 @@ The following features and functionality are out of scope for Mexican localizati
 
         - Sites Services for Microsoft Dynamics ERP
         - Commerce Services for Microsoft Dynamics ERP
-        - Modern POS and Retail server
+        - Modern POS and RCommerce Scale Unit
 
     - **Retailers**
     - **Fiscal printer features**
