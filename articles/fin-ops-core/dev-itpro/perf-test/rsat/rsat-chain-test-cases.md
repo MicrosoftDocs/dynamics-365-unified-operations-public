@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Copy Variables to Chain test cases
+title: Copy Variables to chain test cases
 description: This topic shows how the Regression Suite Automation Tool can be used to chain test cases, which is the ability of a test to pass values to other tests. 
 author: robadawy
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Copy Variables to Chain test cases
+# Copy Variables to chain test cases
 
 [!include [banner](../../includes/banner.md)]
 
@@ -57,11 +57,11 @@ In the image below, two different variables are used in a formula.
  
 ![Creating a formula in Excel](media/formulas.png)
 
-## Use variables in Message Validation
+## Use variables in message validation
 
-You can also use a saved variable as part of a string in the Message Validation tab. Here is an example that validates that the message "Customer account {{variable name}} already exists." appears in the infolog during test execution( {{variable name}} is a variable copied during the recording).
+You can also use a saved variable as part of a string in the Message Validation tab. Here is an example that validates that the message `Customer account {{variable name}} already exists.` It appears in the infolog during test execution. `{{variable name}}` is a variable that is copied during the recording.
+
+Saved (Copied) variables can be used within the same test case or across more than one test case in the same test suite.
 
 ![message with variable](media/rsat-message-with-variable.png)
 
-Note
-- Saved (Copied) variables can be used within the same test case or across more than one test case in the same test suite.
