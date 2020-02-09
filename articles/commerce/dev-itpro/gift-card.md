@@ -313,7 +313,36 @@ The **Retail email notification type** for gift cards issued via email is **Issu
 1. As a Call Center user, navigate to **Customer Service**.
 2. Add a customer using the **Search** function.
 3. Click **New sales order**
-4. 
+4. Click **Header** and add a valid mode of delivery, then click **Lines**.
+5. In the **Item number** field, enter the gift card item number.
+6. Specify the **Variant number** is using product master.
+7. Specify the **Unit price** for the gift card.
+
+   > [!NOTE]
+   > If modes of delivery are mapped to variants. Gift cards that have **Electronic** modes of delivery specified should have the gift card type on the **Packing** tab set to **Email** automatically. 
+
+8. In the **Line details** fasttab, select the **Packing** tab. 
+9. For virtual gift cards, specify the **Buyer name**, **Buyer email**, **Recipient name**, **Recipient email**, and **Gift message**.
+10. For physical gift cards, specify the **Buyer name**, **Recipient name**, and **Gift message**.
+11. Select the **Price and discount** tab and specify a **Reason code** for the price override.
+12. Click **Complete**, add payment, and submit the order. 
+
+#### Paying with external gift cards in Call Center
+
+1. As a Call Center user, create an order and click **Complete**.
+2. Select the **Payments** fasttab and click **Add**.
+3. Select the external gift card payment method and enter the number and PIN, if applicable. For the test connector, **61234** may be used as the number and the PIN is not validated. 
+4. Use percent amount or payment amount to define the payment amount. 
+
+![External gift card payment in Call Center](media/PayInCallCenter.png)
+
+5. Click **OK**.
+6. Click **Submit** to complete the order. 
+
+#### Activating in Call Center
+
+
+
 ## Troubleshooting 
 
 ### Issue: An error occurs when you start the HardwareStationConfigurationUtility program
