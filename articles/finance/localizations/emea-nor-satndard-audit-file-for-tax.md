@@ -104,17 +104,22 @@ To associate sales tax codes that are used in Finance with Norwegian standard VA
 
 As the documentation explains, in Norwegian SAF-T Financial data, main accounts that are used in Finance must be associated with Norwegian standard accounts for the purpose of SAF-T reporting. The Norwegian standard accounts are available at <https://github.com/Skatteetaten/saf-t>.
 
-To associate main accounts that are used in Finance with Norwegian standard accounts, follow these steps.
 
-1. In Finance, go to **General ledger** \> **Chart of accounts** \> **Accounts** \> **Main accounts**.
-2. On the **Main accounts** page, select the **Main account** record, and then, on the Action Pane, select **Edit**.
-3. On the **General** FastTab, in the **Standard general ledger account** section, in the **Standard account** field, select **Standard account**.
+Starting from **version 54.61**, the electronic reporting format **“SAF-T Format (NO)”** supports the setup of **Standard accounts** for the **Main accounts** of the company by using **Application specific parameters**.
 
-![Standard account field on the Main accounts page](media/nor-saf-standard-main-accounts.jpg)
+To associate **Main accounts** that are used in Finance with Norwegian standard accounts via **Application specific parameters** follow the following steps:
 
-You must define all the standard accounts on the **Standard general ledger accounts** page before you can select them for a main account. To quickly access the **Standard general ledger accounts** page from the **Main accounts** page, right-click the **Standard account** field, and then select **View details**.
+1. Open the **Electronic reporting** workspace, in the configuration tree, select the **“SAF-T Format (NO)”** electronic reporting format. 
+2. Make sure that company you are working is the company for which you want to set up the **Application specific parameters**.
+3. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
+4. Select the version of the format that you want to use on the left side of the **Application specific parameters** page.
+5. On the **Lookup** FastTab, select **StandardMainAccount_Lookup**, and then specify criteria on the **Conditions** FastTab by adding lines for each **Result** value which must be used in the selected company. If several **Main accounts** in the selected company must result the same **Standard account**, add a separate line for each **Main account** and specify the same **Standard account** for each one.
+6. Select the value, **NA** as the last condition in the list. It must be set to **\*Not blank\*** in **Main account** column. Verify the value in the **Line** column that **“NA”** is the last condition in the table.
+7. When you've finished setting up conditions, change the value of the **State** field to **Completed**, save your changes, and close the page.
 
-![View details command on the shortcut menu for the Standard account field](media/nor-saf-standard-main-account-setup.jpg)
+![Standard account field on the Main accounts page](media/nor-saf-standard-main-accounts-appsppar.jpg)
+
+You can easily export the setup of application-specific parameters from one version of a report and import it into another version by selecting **Export** or **Import** on the Action Pane. You can also export the setup from one report and import it into the same report in another company if the Main accounts are the same in both companies.
 
 ## Generate the Norwegian SAF-T Financial data report
 
