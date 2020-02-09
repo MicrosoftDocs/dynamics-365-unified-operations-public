@@ -105,21 +105,21 @@ To associate sales tax codes that are used in Finance with Norwegian standard VA
 As the documentation explains, in Norwegian SAF-T Financial data, main accounts that are used in Finance must be associated with Norwegian standard accounts for the purpose of SAF-T reporting. The Norwegian standard accounts are available at <https://github.com/Skatteetaten/saf-t>.
 
 
-Starting from **version 54.61 “SAF-T Format (NO)”** electronic reporting format supports setup of **Standard accounts** for **Main accounts** of the company via **Application specific parameters**.
+Starting from **version 54.61**, the electronic reporting format **“SAF-T Format (NO)”** supports the setup of **Standard accounts** for the **Main accounts** of the company by using **Application specific parameters**.
 
 To associate **Main accounts** that are used in Finance with Norwegian standard accounts via **Application specific parameters** follow the following steps:
 
-1.	Open **Electronic reporting** workspace, select in the configuration tree **“SAF-T Format (NO)”** electronic reporting format. 
-2.	Make sure that company you are working is the company you want to do **Application specific parameters** setup.
-3.	On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
-4.	Select the version of the format that you want to use on the left side of the **Application specific parameters** page.
-5.	Select **StandardMainAccount_Lookup** on the **Lookups** FastTab, and then specify criteria on the **Conditions** FastTab by adding lines for each **Result** value which must be used in the selected company. If several **Main accounts** in the selected company must result the same **Standard account**, add separate line for each **Main account** and specify the same **Standard account** for each of them.
-6.	Set up **NA** value as the last condition in the list. It must be set to **\*Not blank\*** in **Main account** column. Check by the value in the **Line** column that **“NA”** is the last condition in the table.
-7.	When you've finished setting up conditions, change the value of the **State** field to **Completed**, save your changes, and close the page.
+1. Open the **Electronic reporting** workspace, in the configuration tree, select the **“SAF-T Format (NO)”** electronic reporting format. 
+2. Make sure that company you are working is the company for which you want to set up the **Application specific parameters**.
+3. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
+4. Select the version of the format that you want to use on the left side of the **Application specific parameters** page.
+5. On the **Lookup** FastTab, select **StandardMainAccount_Lookup**, and then specify criteria on the **Conditions** FastTab by adding lines for each **Result** value which must be used in the selected company. If several **Main accounts** in the selected company must result the same **Standard account**, add a separate line for each **Main account** and specify the same **Standard account** for each one.
+6. Select the value, **NA** as the last condition in the list. It must be set to **\*Not blank\*** in **Main account** column. Verify the value in the **Line** column that **“NA”** is the last condition in the table.
+7. When you've finished setting up conditions, change the value of the **State** field to **Completed**, save your changes, and close the page.
 
 ![Standard account field on the Main accounts page](media/nor-saf-standard-main-accounts-appsppar.jpg)
 
-You can easily export the setup of application-specific parameters from one version of a report and import it into another version  by using Export and Import buttons on the Action pane. You can also export the setup from one report and import it into the same report in another company if Main accounts are the same in both companies.
+You can easily export the setup of application-specific parameters from one version of a report and import it into another version by selecting **Export** or **Import** on the Action Pane. You can also export the setup from one report and import it into the same report in another company if the Main accounts are the same in both companies.
 
 ## Generate the Norwegian SAF-T Financial data report
 
