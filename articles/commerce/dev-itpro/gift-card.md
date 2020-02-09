@@ -211,12 +211,34 @@ To set up external gift cards for the test connector, select **Dyn Online** and 
 ![External gift card product variants](./media/VariantSuggestions.png)
 
 8. Click **Release products**, click **Next**, click **Next**, select a company such as **USRT**, then click **Next**, and finally **Next** to release the product master.  
-9. Navigate to **Modes of delivery**. Select the **Electronic** mode of delivery and add the **Email** gift card variant.
+9. Navigate to **Modes of delivery**. Select the **Electronic** mode of delivery and add the **Email** gift card variant. Ensure that applicable call centers and online channels are included. 
 10. Select a shipping mode of deliver and add the **Physical** gift card variant and **Save**.
-11. Navigate to **Process modes of delivery**
+11. Navigate to **Process delivery modes** and click **OK**.
 
+   > [!NOTE]
+   > Gift cards are not currently supported for MPOS customer order creation or for pickup in store.
 
+12. Navigate to **Released products by category** and select the external gift card item. 
+13. Assign the following attributes:
+   
+    | Fasttab           | Field               | Value                 |
+    |-------------------|-------------------- |-----------------------|
+    | General           | Item model group    | MA_Retail             |   
+    | Purchase          | Purchase order unit | ea                    |
+    | Sell              | Sales order unit    | ea                    |
+    | Sell              | Allow price adjust  | Yes                   |
+    | Manage inventory  | Inventory unit      | ea                    |
+    | Manage costs      | Posting item group  | Any     |
 
+14. Click **Save**
+
+#### Setup notification emails for virtual gift cards
+
+For information related to email setup, visit (Configure email functionality)[https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/configure-email-functionality-in-microsoft-dynamics-ax].
+
+To set up email notifications for retail, vist the (email notification profile article)[https://docs.microsoft.com/en-us/dynamics365/commerce/email-notification-profiles].
+
+The **Retail email notification type** for gift cards issued via email is **Issue gift card**.
 
 #### Call Center setup
 
