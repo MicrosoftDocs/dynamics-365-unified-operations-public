@@ -339,10 +339,6 @@ The **Retail email notification type** for gift cards issued via email is **Issu
 5. Click **OK**.
 6. Click **Submit** to complete the order. 
 
-#### Activating in Call Center
-
-
-
 ## Troubleshooting 
 
 ### Issue: An error occurs when you start the HardwareStationConfigurationUtility program
