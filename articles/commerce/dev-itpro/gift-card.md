@@ -183,7 +183,7 @@ When using the test connector to demonstrate external gift card support, the car
 
 Note: This feature is new for 10.0.9 and must be enabled through the **Omni-channel payments** tab in **Commerce shared parameters**. Support for gift cards in the out of box storefront will come in a future release. **Use omni-channel payments** should also be enabled. 
 
-![Enable advanced external gift card](./media/Configure external gift.png)
+![Enable advanced external gift card](.articles/commerce/media/Payments/Configure-external-gift.png)
 
 ### Tokenization
 
@@ -211,11 +211,7 @@ The Call center and Storefront channels are different from POS in that gift card
 
 If product variants are used, the person creating the gift card order will be prompted to select the variant. That product variant will then have its own relevant appliable mode of delivery available.
 
-![Example of gift card variants](./media/externalgc.png)
-
 Modes of delivery must support the type of gift card. For example, a gift card product variant of style "Physical" must be mapped to a mode of delivery related to shipping, and a gift card product variant of style "e-mail" must be mapped to an electronic mode of delivery. 
-
-![Example of gift card variants](./media/externalgc1.png)
 
 The electronic mode of delivery is defined on the **Customer orders** tab in **Commerce parameters**. 
 
@@ -256,10 +252,13 @@ The following steps illustrate how to set up an external gift card using product
 6. Select **Product** &gt; **Dimension groups** and assign the **Storage dimension group** and **Tracking dimension group**, then click **Save**.
 7. Click **Product variants**, then **Variant suggestions**, edit the gift card variant numbers as needed and click **Create**.
 
-![External gift card product variants](./media/VariantSuggestions.png)
+![External gift card product variants](.articles/commerce/media/Payments/VariantSuggestions.png)
 
 8. Click **Release products**, click **Next**, click **Next**, select a company such as **USRT**, then click **Next**, and finally **Next** to release the product master.  
 9. Navigate to **Modes of delivery**. Select the **Electronic** mode of delivery and add the **Email** gift card variant. Ensure that applicable call centers and online channels are included. 
+
+![Electronic mode of delivery](.articles/commerce/media/Payments/EmailMoD.png)
+
 10. Select a shipping mode of deliver and add the **Physical** gift card variant and **Save**.
 11. Navigate to **Process delivery modes** and click **OK**.
 
