@@ -83,7 +83,7 @@ In this example, any gift card with the first 4 digits of **6036** will map to t
     3. In the **Default function** field, select **Card**.
     4. Select **Save**.
 
-### Store setup
+## Store setup
 
 1. Open the **All stores** page.
 2. In the list, select the **San Francisco** store.
@@ -195,7 +195,7 @@ Where an external gift card number is saved for later reference. For example, on
 
 When an external gift card is used for a purchase, the tender line for the gift card is saved as a prepayment. This means that the funds for the purchase are captured at the time of order creation. 
 
-External gift cards are not eligible for refund. This partly to prevent refunding to a gift card that has been discarded by the user. If an unprocessed order includes an external gift card as payment and the customer wishes to cancel the order, a new gift card or some other form of credit must be issued to the user.  
+External gift cards are not eligible for refund. This partly to prevent refunding to a gift card that has been discarded by the user. If an unprocessed order includes an external gift card as payment and the customer wishes to cancel the order, a new gift card or some other form of credit must be issued to the customer.  
 
 Gift cards lines which are being issued as part of an order may be cancelled prior to fulfillment. 
 
@@ -204,8 +204,6 @@ Gift cards lines which are being issued as part of an order may be cancelled pri
 Physical gift cards and virtual gift cards have distinct fulfillment methods. Physical gift cards, or those that map to a shipping type mode of delivery, must be issued directly with the gift card provider as part of order processing. The gift card number must then be mapped to the order line as part of the pick list registration process, upon completion the masked gift card number is saved back to the order line. The issued gift card is then activated as part of order invoicing.  
 
 Virtual gift cards are issued as part of order invoicing. When a gift card line is marked as "Packed", it becomes eligible for issuance. Issuance of virtual gift cards occurs as part of invoicing. Upon invoicing, the gift card number is obtained from the provider through the payment connector. The number for the activated gift card is then sent to the gift card recipient via email. Upon invoicing, the masked gift car number is then saved back to the order line. 
-
-![Example of gift card variants](./media/Virtualgcsalesorderline.png)
 
 ### Using modes of delivery for gift card products in Call Center and e-Commerce
 
