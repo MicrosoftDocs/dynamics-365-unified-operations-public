@@ -183,7 +183,7 @@ When using the test connector to demonstrate external gift card support, the car
 
 Note: This feature is new for 10.0.9 and must be enabled through the **Omni-channel payments** tab in **Commerce shared parameters**. Support for gift cards in the out of box storefront will come in a future release. **Use omni-channel payments** should also be enabled. 
 
-![Enable advanced external gift card](.articles/commerce/media/Payments/Configure-external-gift.png)
+![Enable advanced external gift card](.media/Configure-external-gift.png)
 
 ### Tokenization
 
