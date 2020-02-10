@@ -42,6 +42,13 @@ This topic lists the preview features that are new or changed for Platform updat
 
 For more information about Platform update 34, see [Additional resources](whats-new-platform-update-33.md#additional-resources).
 
+## Features included in this release
+
+- [Feature name](URL to feature description in the Release plans) - For more information, see [title of content that contains details about the feature](URL to the content that contains details about the feature).
+- [Feature name](URL to feature description in the Release plans) - For more information, see [title of content that contains details about the feature](URL to the content that contains details about the feature).
+- [Feature name](URL to feature description in the Release plans) - For more information, see [title of content that contains details about the feature](URL to the content that contains details about the feature).
+- [Feature name](URL to feature description in the Release plans) - For more information, see [title of content that contains details about the feature](URL to the content that contains details about the feature).
+- [Feature name](URL to feature description in the Release plans) - For more information, see [title of content that contains details about the feature](URL to the content that contains details about the feature).
 
 
 ## Additional resources
