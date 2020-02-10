@@ -912,6 +912,18 @@
         items:
         - name: Build custom response pages for 4xx/5xx status code errors
           href: build-pages-400-500-errors.md
+    - name: Manage tasks 
+      items:
+      - name: Task management overview
+        href: task-mgmt-overview.md
+      - name: Configure task management
+        href: task-mgmt-configure.md
+      - name: Create task lists and add tasks
+        href: task-mgmt-create-lists.md
+      - name: Assign task lists to stores or employees
+        href: task-mgmt-assign-lists.md
+      - name: Task management in POS
+        href: task-mgmt-pos.md
     - name: Fraud protection 
       items:
       - name:	Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce	
