@@ -1,12 +1,45 @@
+---
+# required metadata
 
+title: Supported fonts
+description: Finance and Operations apps include access to over 270 standard business-ready fonts available for documents rendered by the cloud-hosted service. 
+author: TJVass
+manager: AnnBe
+ms.date: 02/10/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
 
-The following list captures the portfolio of **Font Families** available for
-documents produced using **SSRS Services** in **Dynamics 365 for Finance &
-Operations**
+# optional metadata
 
-**RELEASE:**  App 8.3 + PU32 or later
+# ms.search.form:  [Operations AOT form name to tie this topic to]
+audience: IT Pro
+# ms.devlang: 
+ms.reviewer: kfend
+ms.search.scope: Operations, Core
+# ms.tgt_pltfrm: 
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.search.region: Global
+# ms.search.industry: [leave blank for most, retail, public sector]
+ms.author: tjvass
+ms.search.validFrom: 2020-02-29
+ms.dyn365.ops.version: Platform update 33
+---
 
-| FONT FAMILY              | SOURCE      |
+# Supported fonts
+
+[!include[banner](../includes/banner.md)]
+
+Finance and Operations apps include access to over 270 standard business-ready fonts available for documents rendered by the cloud-hosted service. 
+
+This portfolio will continue to grow as the service expands into new regions and industries. However, the service no longer supports the installation of custom fonts in customer environments. Requests to expand the collection of fonts supported by the service will be considered on a case-by-case basis.
+
+The following list captures the portfolio of font families available for documents produced using SQL Server Reporting Services (SSRS) services in Finance and Operations apps.
+
+## Application version 8.3 with Platfrom Update 32 or later
+
+| Font family             | Source      |
 |--------------------------|-------------|
 | Agency FB                | Office Font |
 | Algerian                 | Office Font |
@@ -282,11 +315,9 @@ Operations**
 | Yu Gothic UI Semibold    | D365 Font   |
 | Yu Gothic UI Semilight   | D365 Font   |
 
-\--------------------------------------------------------------------------------------------------------
+## Application version 8.0 with Platform update 23
 
-**RELEASE:**  App 8.0 + PU23
-
-|     | FONT FAMILY              |
+|     | Font family             |
 |-----|--------------------------|
 | 1   | Agency FB                |
 | 2   | Algerian                 |
