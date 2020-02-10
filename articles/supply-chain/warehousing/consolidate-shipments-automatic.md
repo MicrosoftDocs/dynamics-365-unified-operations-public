@@ -249,7 +249,7 @@ First, update the wave template that will be used during releasing.
 1. Go to **Warehouse management > Setup > Waves > Wave template**.
 1. In the **Wave template type** field, select **Shipping**.
 1. Find and select wave template that is associated with a warehouse that was used in the order sets. For example, if **24** warehouse was used, select **24 Shipping Default** wave template.
-1. Click **Edit** and select **Yes** in the **Process wave at release to warehouse** field.
+1. Click **Edit** and select **No** in the **Process wave at release to warehouse** field.
 
 Then, perform release to warehouse.
 
