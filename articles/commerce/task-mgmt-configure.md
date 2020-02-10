@@ -67,7 +67,7 @@ To configure permissions for an employee, follow these steps.
 1. On the **User's roles** FastTab, select **Assign roles**.
 1. In the **Assign roles to user** dialog box, select the **Retail task manager** role, and then select **OK**.
 
-### Distribute permissions to POS clients
+## Distribute permissions to POS clients
 
 Before employees can use POS clients, permissions must be distributed and synced to those clients.
 
