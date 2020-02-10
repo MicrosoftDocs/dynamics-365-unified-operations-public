@@ -96,4 +96,4 @@ To configure a POS operation so that it can be linked to a task, follow these st
 
 [Assign task lists to stores or employees](task-mgmt-assign-lists.md)
 
-[POS task management](task-mgmt-POS.md)
+[Task management in POS](task-mgmt-POS.md)
