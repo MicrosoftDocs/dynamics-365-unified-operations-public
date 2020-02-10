@@ -115,4 +115,4 @@ The following illustration shows an example of a **Tasks** tile on a POS home pa
 
 [Assign task lists to stores or employees](task-mgmt-assign-lists.md)
 
-[POS task management](task-mgmt-POS.md)
+[Task management in POS](task-mgmt-POS.md)
