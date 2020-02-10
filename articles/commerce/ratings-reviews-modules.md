@@ -3,13 +3,15 @@
 title: Ratings and reviews modules
 description: This topic covers ratings and reviews modules and describes how to add them to product details pages in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-manager: jeffblu
-ms.date: 1/22/2020
+manager: annbe
+ms.date: 02/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
 ms.technology: 
+
 # optional metadata
+
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 
@@ -20,13 +22,19 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anupamar
-ms.search.validFrom: 2019-10-31
+ms.author: gmohanv
+ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.6
 ---
+
+
+
+
 ## Overview
+
 Ratings and reviews on e-Commerce websites help customers learn about products before they make a purchase decision, by showing them what other customers think about those products. For e-Commerce websites, ratings and reviews are also a mechanism for collecting customer feedback about products. 
 Ratings are shown on product list pages, category list pages, search results pages, and other site pages. Ratings histograms and product reviews are shown on product details pages (PDPs). A **Write a review** button lets customers submit ratings and reviews for a product.
+
 ## Ratings and reviews modules on PDPs 
 Three modules show the ratings and reviews summary on PDPs:
 - Write review module
@@ -34,12 +42,17 @@ Three modules show the ratings and reviews summary on PDPs:
 - Ratings histogram module
  
 The following illustration shows what the ratings and reviews modules look like on a PDP.
+
 ![Ratings and reviews modules on a PDP](media/rnr-eCommerce-pdp-reviews-modules_design.png)
+
 > [!TIP] 
 > For information about how to optimize PDP templates and layouts so that you can share the configurations for ratings and reviews modules among multiple PDPs on your e-Commerce site, see [Templates and layouts overview](templates-layouts-overview.md).
+
 The following illustration shows how the **Add module** dialog box presents ratings and reviews modules in Dynamics 365 Commerce.
 ![Add module dialog box](media/rnr-eCommerce-pdp-adding-rnr-modules.png)
+
 ### Write review module
+
 The write review module includes a **Write a review** button that lets users sign in, assign a rating, and write a review of a product. This module also lets users edit a rating or review that they previously submitted. This module typically appears above the ratings histogram and product reviews list modules on a PDP.
 The following illustration shows the **Write a review** dialog box that appears when a customer selects **Write a review**. The customer can use this dialog box to submit a rating and a review.
 ![Write a review dialog box](media/rnr-eCommerce-write-review-module.png)
@@ -47,12 +60,16 @@ The following table shows the write review module property that needs to be conf
 | Property name | Value        | Property description                 |
 |---------------|--------------|--------------------------------------|
 | Name          | Write review | The name of the write review module. |
+
 ### Ratings histogram module
+
 The ratings histogram module shows a ratings histogram. This module typically appears between the write review module and the product reviews list module on a PDP.
 The ratings histogram module requires no configuration. You just have to add the module in the PDP template. 
 The following illustrations shows what a PDP template looks like in Dynamics 365 Commerce when ratings and reviews modules are configured for display on PDPs.
 ![PDP template when ratings and reviews are configured for display on PDPs](media/rnr-eCommerce-pdp-reviews-modules.png)
+
 ### Product reviews list module
+
 The product reviews list module shows a list of product reviews together with sort, filter, and pagination options. This module typically appears after the ratings histogram module on a PDP.
 The following table shows the product reviews list module properties that need to be configured in the authoring tool.
 
@@ -69,9 +86,15 @@ The product reviews list module includes a slot where you can add a ratings hist
 
 ## Additional resources
 [Starter kit overview](starter-kit-overview.md)
+
 [Container module](add-container-module.md)
+
 [Cart module](add-cart-module.md)
+
 [Checkout module](add-checkout-module.md)
+
 [Order confirmation module](order-confirmation-module.md)
+
 [Header module](author-header-module.md)
+
 [Footer module](author-footer-module.md)
