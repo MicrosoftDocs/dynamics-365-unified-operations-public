@@ -43,10 +43,18 @@ Filtering capabilities for RCS Global repository have been improved to include t
 Filters can be applied, either singularly or multi-select, to allow the user to easily find specific or related configuration. 
 For example, if a user wants to find all configurable business documents related to 'vendor invoice' they can select this filter & apply to see all related configurations. 
 They can also overlay country/region code if they want to refine the search further by selecting country code & clicking apply filters.  
-
-Filtered results can then be imported either individually or as a set by selecting the group of configuration & clicking 'import'.
-
-For example - Filtering by tag type Business document type: 
+For example - Filtering section and options:
 
 [![Global repo filter form section](./media/ER-ExtLookup-Lookup1.gif)](./media/ER-ExtLookup-Lookup1.gif)
+
+Applied filtering on 'Business document type' = Vendor invoice: 
+
+[![Applied filter for business document type](./media/ER-ExtLookup-Lookup1.gif)](./media/ER-ExtLookup-Lookup1.gif)
+
+Filtered results can then be imported either individually or as a set by selecting the group of configuration & clicking 'import'.
+For example - 
+
+[![Import filtered configs](./media/ER-ExtLookup-Lookup1.gif)](./media/ER-ExtLookup-Lookup1.gif)
+
+
 
