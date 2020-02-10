@@ -2,7 +2,7 @@
 # required metadata
 
 title: Assign task lists to stores or employees
-description: This topic describes how to assign task lists to stores or employees in Dynamics 365 Commerce.
+description: This topic describes how to assign task lists to stores or employees in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 manager: annbe
 ms.date: 02/10/2020
@@ -32,55 +32,61 @@ ms.dyn365.ops.version: Release 10.0.9
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to assign task lists to stores or employees in Dynamics 365 Commerce.
+This topic describes how to assign task lists to stores or employees in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-Task management in Dynamics 365 Commerce enables you to assign a task list to multiple stores or employees or a combination of the two. For example, a regional manager for 20 stores may want to assign the **Holiday season preparation** task list to all 20 stores.
+Task management in Dynamics 365 Commerce lets you assign a task list to multiple stores or employees, or to a combination of stores and employees. For example, a regional manager for 20 stores might want to assign the **Holiday season preparation** task list to all 20 stores.
 
 ## Start the task list assignment process
 
-To start the task list assignment process, follow these steps.
+To start the process of assigning a task list, follow these steps.
 
 1. Go to **Retail and Commerce \> Task management \> Task management administration**.
-1. Select a task list that you want to assign. 
-1. Select **Start process**. 
-1. Under the **General** tab on the **Start process** flyout menu, enter a **Process name** (for example, "East region stores") and then enter the **Target date**.
-1. On the **Stores** tab, use the **Organization hierarchy** filter to find and add all the stores to which the task list needs to be assigned to. 
-1. Select **OK** to start the process and assign the tasks lists to the selected stores or employees. 
+1. Select the task list to assign.
+1. Select **Start process**.
+1. In the **Start process** dialog box, on the **General** tab, in the **Process name** field, enter a name (for example, **East region stores**).
+1. In the **Target date** field, specify a date.
+1. To assign the task list to stores, on the **Stores** tab, use the **Organization hierarchy** filter to find and select the stores.
 
-The following image shows an example of how to find and select stores on the **Start process** flyout menu.
+    To assign the task list to employees, on the **Workers** tab, find and select the employees.
 
-![Task management - How to find and select stores](media/HQ-Assign-Tasks-Lists.png)
+1. Select **OK** to start the process. The tasks list is assigned to the selected stores or employees.
 
-## Assign task lists recurrently
+The following illustration shows an example of how to find and select stores in the **Start process** dialog box.
 
-Retailer may have recurrent tasks e.g. Thursday closure checklist or First day of the month checklist etc. and wants to assign the task list recurrently.  
+![Finding and selecting stores in the Start process dialog box](media/HQ-Assign-Tasks-Lists.png)
 
-1. Go to **Retail and Commerce > Task management > Task management administration**.  
-1. Select a task list that you want to assign. 
-1. Select **Start process**. 
-1. Enter a value for **Recurrence target date offset in days**, for example 4 days so that the target date will be set as the recurrent date + 4 days.
-1. On the **Running in the background** tab, select **Recurrence**.
-1. On the **Define recurrence** flyout menu, enter the frequency criteria, and then select **OK**. 
+## Assign task lists on a recurring basis
 
-The following image shows where to enter frequency criteria on the **Define recurrence** flyout menu.
+Retailer sometimes have recurrent tasks, such as "Thursday closure checklist" or "First day of the month checklist." Therefore, they might want to assign the task list on a recurring basis.
 
-![Task management - Where to enter frequency criteria](media/HQ-Assign-Tasks-Lists-Recurrently.png)
+1. Go to **Retail and Commerce \> Task management \> Task management administration**.
+1. Select the task list to assign.
+1. Select **Start process**.
+1. In the **Start process** dialog box, on the **General** tab, in the **Process name** field, enter a name.
+1. Set the **Recurrence** option to **Yes**.
+1. In the **Recurrence target date offset in days** field, enter a number of days. For example, if you enter **4**, the target date is the recurrence date plus four days.
+1. On the **Run in the background** tab, select **Recurrence**.
+1. In the **Define recurrence** dialog box, enter the frequency criteria, and then select **OK**.
 
-## Track task lists status
+The following illustration shows an example of how to enter frequency criteria in the **Define recurrence** dialog box.
 
-As a regional or store manager, you may want to check the status of task lists assigned to multiple stores or employees so that you can follow up with stores or workers who may not have completed tasks on time. Dynamics 365 Commerce back office allows you to view the status of tasks lists, reassign tasks, or change the status of a task. 
+![Entering frequency criteria in the Define recurrence dialog box](media/HQ-Assign-Tasks-Lists-Recurrently.png)
 
-To track task list status for all tasks, follow these steps.
+## Track task list status
 
-1. Go to **Retail and Commerce \> Task management \> Task management processes**
-1. Select **All checklists** to view the status of all task lists assigned to various stores.  
+If you're a regional manager or store manager, you might want to track the status of task lists that have been assigned to multiple stores or employees. You can then follow up with stores or workers that didn't complete their assigned tasks on time. Commerce back office lets you view the status of task lists, reassign tasks, or change the status of a task.
 
-To track task list status for all tasks assigned to you, follow these steps.
+To track the task list status for all tasks, follow these steps.
 
-1. Go to **Retail and Commerce \> Task management \> Task management processes**
-1. Select **My tasks or All tasks** to view or update the status of tasks assigned to you.  
+1. Go to **Retail and Commerce \> Task management \> Task management processes**.
+1. Select the **All task lists** tab to view the status of all task lists that are assigned to various stores.
+
+To track the task list status for all tasks that are assigned to you, follow these steps.
+
+1. Go to **Retail and Commerce \> Task management \> Task management processes**.
+1. Select the **My tasks** or **All tasks** tab to view or update the status of tasks that are assigned to you.
 
 ## Additional resources
 
