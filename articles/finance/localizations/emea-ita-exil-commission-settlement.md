@@ -50,6 +50,23 @@ If the **Payment thresholds** is set to **Yes** it is possible to specify two bo
 -	When the upper bound is reached the whole reachable amount is accrued.
 -	Within the two boundaries, commissions normally accrue.
 
+_Example_:
+
+Consider the following scenario:
+-	Invoice total amount 1000€ 
+-	Lower limit 10% 
+-	Upper 80% 
+
+Consider the following payments:
+1.	50€ (5%)  >  Since commissions are below the threshold (10%), no accrual occurs.
+2.	100€ (10% of the total) > The invoice is settled at 15%, so commissions accrue with that percentage
+3.	500€ (other 50% of the total amount of the invoice) > The invoice is settled at 65%, commission are also accrued at 65%
+4.	200€ (20%) > Invoice is settled ad 85%, above the upper threshold so commissions become fully settled (at 100%)
+5.	Any further payment doesn’t change the accrued amount because it already reached the top, but accrual transactions are still created 
+
+Another setup can be added to the single agent who belongs to a specify group. The setup of the employee has the priority in comparison to the setup on sales commission calculation.
+
+
 
 
 
