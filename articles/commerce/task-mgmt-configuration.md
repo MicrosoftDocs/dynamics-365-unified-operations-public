@@ -40,7 +40,7 @@ Before Dynamics 365 Commerce managers and employees can use the task management 
 
 ## Configure permissions for store managers
 
-Every worker in a given store can view all tasks that are assigned to that store. They can also update the status of the tasks that are assigned to them. However, personas such as store managers must have task management permissions to manage tasks that are assigned to the store and to create ad-hoc tasks.
+Every worker in a given store can view all tasks that are assigned to that store. They can also update the status of the tasks that are assigned to them. However, personas such as store managers must have task management permissions to manage tasks that are assigned to the store and to create single-purpose tasks.
 
 To configure task management permissions for store managers, follow these steps.
 
