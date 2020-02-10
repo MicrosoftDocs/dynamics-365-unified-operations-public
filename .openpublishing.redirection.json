@@ -1,5 +1,11 @@
 {
-  "redirections": [    {
+  "redirections": [
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/extensibility/NamingGuidelines.md",
+      "redirect_url": "naming-guidelines-extensions",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/fin-ops-core/dev-itpro/data-entities/dual-write-bootstrap.md",
       "redirect_url": "dual-write/bootstrap-company-data",
       "redirect_document_id": "false"
