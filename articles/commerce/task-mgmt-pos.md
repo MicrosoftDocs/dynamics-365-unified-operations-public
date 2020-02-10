@@ -36,7 +36,7 @@ This topic describes task management in the Microsoft Dynamics 365 Commerce poin
 
 ## Overview
 
-The Dynamics 365 Commerce POS application has task management features that let store managers and workers manage tasks and update task status. Store workers can access tasks either by selecting the **Tasks** tile on the POS home page or by selecting task notifications. By default, store workers are taken to the **My tasks** tab, where they can view the tasks that are assigned to them. However, they can easily switch to the **All tasks**, **Past due tasks**, and **Task lists** tabs.
+The Dynamics 365 Commerce POS application has task management features that let store managers and workers manage tasks and update task status. Store workers can access tasks either by selecting the **Tasks** tile on the POS home page or by selecting task notifications. By default, store workers are taken to the **My tasks** tab, where they can view the tasks that are assigned to them. However, they can easily switch to the **Overdue tasks**, **Open tasks**, and **Task lists** tabs.
 
 ## Task operations for store managers
 
@@ -45,7 +45,7 @@ Store managers can perform the following task operations in the POS application 
 - **Assign** – Assign selected tasks to a store worker.
 - **Task status** – Change the status of selected tasks.
 - **Filter** – By default, only active tasks are shown. However, by applying filters, managers can view all tasks, even tasks that have been completed or canceled.
-- **New task** – Create a task under an existing task list, or create an ad-hoc task.
+- **New task** – Create a task under an existing task list, or create an single-purpose task.
 
 Store workers can perform the following task operations in the POS application by using the buttons on the command bar:
 
