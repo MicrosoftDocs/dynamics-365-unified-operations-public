@@ -87,7 +87,7 @@ The following illustration shows what this configuration looks like in Dynamics 
 
 ## Configure ratings and reviews modules on product details page
 
-For information on this topic, see [Configure ratings and reviews modules on product details page](ratings-reviews-modules.md).
+For information on this topic, see [Configure ratings and reviews modules on product details pages](ratings-reviews-modules.md).
 
 ## Additional resources
 
@@ -97,6 +97,6 @@ For information on this topic, see [Configure ratings and reviews modules on pro
 
 [Manage ratings and reviews](manage-reviews.md)
 
-[Configure ratings and reviews modules on product details page](ratings-reviews-modules.md
+[Configure ratings and reviews modules on product details pages](ratings-reviews-modules.md)
 
 [Sync product ratings in Dynamics 365 Retail](sync-product-ratings.md)
