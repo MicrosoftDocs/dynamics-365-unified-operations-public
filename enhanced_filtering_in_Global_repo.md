@@ -45,16 +45,14 @@ For example, if a user wants to find all configurable business documents related
 They can also overlay country/region code if they want to refine the search further by selecting country code & clicking apply filters.  
 For example - Filtering section and options:
 
-[![Global repo filter form section](./media/ER-ExtLookup-Lookup1.gif)](./media/ER-ExtLookup-Lookup1.gif)
+[![Filter section for Global repository](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/417079-enhanced-filtering/RCS_Enhanced%20filter_section.JPG)](./media/ER-ExtLookup-Lookup1.gif)
 
 Applied filtering on 'Business document type' = Vendor invoice: 
 
-[![Applied filter for business document type](./media/ER-ExtLookup-Lookup1.gif)](./media/ER-ExtLookup-Lookup1.gif)
+[![Applied filter for business document type](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/417079-enhanced-filtering/RCS_Enhanced%20filtering_Applied.JPG)](./media/ER-ExtLookup-Lookup1.gif)
 
 Filtered results can then be imported either individually or as a set by selecting the group of configuration & clicking 'import'.
-For example - 
 
-[![Import filtered configs](./media/ER-ExtLookup-Lookup1.gif)](./media/ER-ExtLookup-Lookup1.gif)
 
 
 
