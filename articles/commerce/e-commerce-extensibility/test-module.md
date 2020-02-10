@@ -5,7 +5,7 @@ title: Preview and debug a module
 description: This topic describes how to test a module by previewing and debugging it in a web browser.
 author: samjarawan
 manager: annbe
-ms.date: 01/31/2020
+ms.date: 02/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -104,8 +104,6 @@ The previously opened window should gain focus. The application isn't actually r
 [Clone a starter kit module](clone-starter-module.md)
 
 [Add module configuration fields](add-module-config-fields.md)
-
-[Debug modules](debug-modules.md)
 
 [Test modules by using module mocks](test-module-mock.md)
 
