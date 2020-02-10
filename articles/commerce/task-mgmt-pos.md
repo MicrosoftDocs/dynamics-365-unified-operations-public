@@ -2,7 +2,7 @@
 # required metadata
 
 title: Task management in POS
-description: This topic describes task management in Dynamics 365 Commerce's point of sale (POS) application.
+description: This topic describes task management in the Microsoft Dynamics 365 Commerce point of sale (POS) application.
 author: gvrmohanreddy
 manager: annbe
 ms.date: 02/10/2020
@@ -32,33 +32,33 @@ ms.dyn365.ops.version: Release 10.0.9
 
 [!include [banner](includes/banner.md)]
 
-This topic describes task management in Dynamics 365 Commerce's point of sale (POS) application.
+This topic describes task management in the Microsoft Dynamics 365 Commerce point of sale (POS) application.
 
 ## Overview
 
-Dynamics 365 Commerce's POS application has task management features that enable store managers and workers to manage tasks and update task status. Store workers can access tasks from the task tile on the POS home screen or by selecting task notifications. By default, store workers will land on the **My tasks** tab to view tasks assigned to them and can easily switch to view **All tasks**, **Past due tasks**, and **Task lists** tabs. 
+The Dynamics 365 Commerce POS application has task management features that let store managers and workers manage tasks and update task status. Store workers can access tasks either by selecting the **Tasks** tile on the POS home page or by selecting task notifications. By default, store workers are taken to the **My tasks** tab, where they can view the tasks that are assigned to them. However, they can easily switch to the **All tasks**, **Past due tasks**, and **Task lists** tabs.
 
-## Tasks operations for store managers
+## Task operations for store managers
 
-Store managers can perform the following task operations in the POS application using command bar actions:
+Store managers can perform the following task operations in the POS application by using the buttons on the command bar:
 
-- **Assign Tasks**: Assign selected task(s) to a store worker.
-- **Tasks status**: Change the status of selected task(s).
-- **Filter**: By default, only active tasks are displayed. By using the filter option, managers can view all tasks, including completed or canceled tasks. 
-- **New task**: Create a task under an existing task list, or create an ad hoc task.
+- **Assign** – Assign selected tasks to a store worker.
+- **Task status** – Change the status of selected tasks.
+- **Filter** – By default, only active tasks are shown. However, by applying filters, managers can view all tasks, even tasks that have been completed or canceled.
+- **New task** – Create a task under an existing task list, or create an ad-hoc task.
 
-Store workers can perform the following task operations in the POS application using command bar actions:
+Store workers can perform the following task operations in the POS application by using the buttons on the command bar:
 
-- **Task status**: Change the status of selected task(s).
-- **Filter**: By default, only active tasks are displayed. By using the filter option, workers can view all tasks, including completed or canceled tasks.
+- **Task status** – Change the status of selected tasks.
+- **Filter** – By default, only active tasks are shown. However, by applying filters, workers can view all tasks, even tasks that have been completed or canceled.
 
-The following image shows the **My tasks** tab of the Commerce POS application.
+The following illustration shows the **My tasks** tab in the Commerce POS application.
 
-![Task management - "My tasks" tab of the Commerce POS application](media/POS-task-management.png)
+![My tasks tab in the Commerce POS application](media/POS-task-management.png)
 
-The following image shows the **Tasks list** tab of the Commerce POS application.
+The following illustration shows the **Task lists** tab.
 
-![Task management - "Tasks list" tab of the Commerce POS application](media/POS-task-lists-management.png)
+![Task lists tab in the Commerce POS application](media/POS-task-lists-management.png)
 
 ## Additional resources
 
@@ -69,4 +69,3 @@ The following image shows the **Tasks list** tab of the Commerce POS application
 [Create task lists and add tasks](task-mgmt-create-lists.md)
 
 [Assign task lists to stores or employees](task-mgmt-assign-lists.md)
-
