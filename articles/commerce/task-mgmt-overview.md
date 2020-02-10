@@ -41,7 +41,7 @@ Task management is a productivity feature in Dynamics 365 Commerce that lets man
 
 Headquarters personas can use task management to create task lists for retail stores, and to track status by store or worker. They can also create recurrent tasks (for example, "Thursday night closing checklist").
 
-Store managers can use task management to assign tasks to individual workers, send notifications about upcoming tasks or tasks that are past due, update task status, and create ad-hoc tasks in the POS application. Workers can then see notifications, view task details, and update task status at the POS.
+Store managers can use task management to assign tasks to individual workers, send notifications about upcoming tasks or tasks that are past due, update task status, and create single-purpose tasks in the POS application. Workers can then see notifications, view task details, and update task status at the POS.
 
 The following illustration shows the conceptual architecture of task management in Commerce.
 
