@@ -5,7 +5,7 @@ title: Preview features in Platform update 33 for Finance and Operations apps (A
 description: This topic lists the features that are in preview in Platform update 33 for Finance and Operations apps. 
 author: sericks007
 manager: AnnBe
-ms.date: 02/06/2020
+ms.date: 02/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -75,7 +75,7 @@ To read a description of this feature, see [Finance and Operations licensing](ht
 
 ### Platform update 33 bug fixes
 
-For information about the bug fixes that are included in each update that is part of Platform update 32, sign in to LCS, and view [this KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=415033&dbType=3&qc=f7859b6f64b35924c4b067d8264f80b2d56abb8e1af2491c2c27a1f56b7f9bfb).
+For information about the bug fixes that are included in each update, sign in to LCS, and view [this KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=415033&dbType=3&qc=f7859b6f64b35924c4b067d8264f80b2d56abb8e1af2491c2c27a1f56b7f9bfb).
 
 ### Dynamics 365: 2020 release wave 1 plan
 
