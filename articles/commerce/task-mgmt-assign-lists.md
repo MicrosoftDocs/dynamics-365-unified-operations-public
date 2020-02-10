@@ -96,4 +96,4 @@ To track the task list status for all tasks that are assigned to you, follow the
 
 [Create task lists and add tasks](task-mgmt-create-lists.md)
 
-[POS task management](task-mgmt-POS.md)
+[Task management in POS](task-mgmt-POS.md)
