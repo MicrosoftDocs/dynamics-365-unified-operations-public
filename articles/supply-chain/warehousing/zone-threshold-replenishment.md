@@ -1,6 +1,6 @@
 # Zone threshold replenishment
 
-Zone based replenishment uses a min/max [replenishment](replenishment.md) strategy but evaluates entire warehouse zones instead of just individual locations. This helps make it faster for warehouse managers to find out when additional inventory is needed within a picking zone.
+Zone based replenishment uses a min/max [replenishment](replenishment.md) strategy, but evaluates entire warehouse zones instead of just individual locations. This helps make it faster for warehouse managers to find out when additional inventory is needed within a picking zone.
 
 The set up for this feature is similar to the setup for location-based replenishment, except that when you are setting up a template for min/max replenishment, you can now also make a setting that specifies whether the threshold should be evaluated per location or per zone. When setting up an evaluation based on zone, you must add specific zones to the zone selection query.
 
@@ -18,7 +18,7 @@ To set up zone-based replenishment, you must configure several parts of the syst
 
 ### Set up your directive codes
 
-[Directive codes](control-warehouse-location-directives.md) enable you to be more specific when defining which location template to use in a work template.
+[Directive codes](control-warehouse-location-directives.md) enable you to be more specific when defining which location template to use in a work template. Each code establishes a common value that you can refer to when configuring each type of template.
 
 #### View and edit directive codes
 
@@ -26,7 +26,7 @@ To view or edit your directive codes, go to **Warehouse management > Setup > Dir
 
 #### Prepare sample-data directive codes
 
-To prepare demo data for use with the example given at the end of this topic, create a new directive code as follows:
+Here is an example for how to prepare a directive code. If you're planning to work through the example at the end of this topic, then use the sample-data values provided here. Otherwise, use your own values.
 
 1. Select the **USMF** legal entity to work with the demo data.
 1. Go to **Warehouse management > Setup > Directive codes**.
@@ -45,7 +45,7 @@ To view or edit your replenishment templates, go to **Warehouse management > Set
 
 #### Prepare a sample-data replenishment template
 
-To prepare demo data for use with the example given at the end of this topic, do the following:
+Here is an example for how to prepare a replenishment template. If you're planning to work through the example at the end of this topic, then use the sample-data values provided here. Otherwise, use your own values.
 
 1. Select the **USMF** legal entity to work with the demo data.
 1. Go to **Warehouse management > Setup > Replenishment > Replenishment > templates**.
@@ -82,17 +82,17 @@ To prepare demo data for use with the example given at the end of this topic, do
 
 ### Set up your location directives
 
-Unlike location-based min/max replenishment, zone-based replenishment requires you to set up a put-location directive because the system evaluates the whole zone instead of just the outbound work pick location.
+Unlike location-based min/max replenishment, zone-based replenishment requires you to set up both pick-location and put-location directives because the system evaluates the whole zone instead of just the outbound work pick location.
 
 #### View and edit location directives
 
-To view or edit your replenishment templates, go to **Warehouse management > Setup > Location directives**.
+To view or edit your replenishment templates, go to **Warehouse management > Setup > Location directives**. See the next section of examples of how to use the settings here to create the required pick-location and put-location directives.
 
 #### Prepare sample-data location directives
 
 To prepare demo data for use with the example given at the end of this topic, you need two location directives, one for pick and one for put.
 
-To create the replenishment pick directive, do the following:
+##### Create a replenishment pick directive
 
 1. Select the **USMF** legal entity to work with the demo data.
 1. Go to **Warehouse management > Setup > Location directives**.
@@ -127,7 +127,7 @@ To create the replenishment pick directive, do the following:
 1. Select **OK** to save your query and close the pane.
 1. Select **Save** to save your location directive.
 
-To create the replenishment put directive, do the following:
+##### Create a replenishment put directive
 
 1. Continue working on the **Location directives** page and in the left pane, make sure **Work order type** is still to "Replenishment".
 1. Select **New** on the Action Pane to create another new directive and make the following settings:
@@ -166,7 +166,7 @@ This section provides a sample scenario that illustrates how to work with this f
 
 ### Prepare the sample data required for this sample scenario
 
-Before you start working through the scenario, you must activate sample data and set up the feature as described here.
+Before you start working through the scenario, you must activate sample data and set up the feature as described in this section and in the previous sections of this topic.
 
 #### Use the USMF legal entity
 
@@ -180,8 +180,10 @@ After you have selected the **USMF** legal entity, add the additional required s
 
 Do the following to make sure your system includes enough inventory to support the sample scenario:
 
-1. Ensure there is on-hand inventory for item A0001 at two different locations within the pick zone specified on the replenishment template line. This is to simulate how the calculation occurs for the whole zone, instead of only for a single location. The total quantity should be under the **Minimum quantity** specified on the replenishment template line. Use any of the warehouse processes to adjust inventory if needed.
-2. Ensure there is enough inventory for item A0001 at the bulk location where the replenishment work should pick the items from.
+1. Ensure there is on-hand inventory for item A0001 at two different locations within the pick zone specified on the replenishment template, but still less total inventory than required by the **Minimum quantity** specified on the replenishment template. This is to simulate how the calculation occurs for the whole zone, instead of only for a single location. Use any of the warehouse processes to adjust inventory if needed.
+2. Ensure there is enough inventory for item A0001 at the bulk location where the replenishment work should pick the items from. The total inventory must be greater than the quantity required by the **Maximum quantity** specified on the replenishment template.
+
+<!-- KAMAYBAC: Can we give links for how to do these things? -->
 
 ### Sample scenario: Run zone min/max replenishment
 
@@ -197,7 +199,7 @@ Once you have all the prerequisite sample data in place, you can trigger a reple
 1. Select **OK** to save the query and go back to the **Replenishment** pane.
 1. Select **OK** on the **Replenishment** pane to run the Replenishment template.
 
-Replenishment work will now be created to pick inventory from the BULK zone and replenishment it to the FLOOR zone.
+Replenishment work will now be created to pick inventory from the BULK zone and replenish it to the FLOOR zone.
 
 ## Notes and tips
 
@@ -207,4 +209,4 @@ Here are a few notes and tips for working with this feature:
   - Edit the location directive header query and filter the selected replenishment template lines.
   - Use a directive code on the replenishment template line and match it to the put location directive.
 - If you are using dynamic locations, replenishment work will be created for the first available location, or for a location that already contains inventory, if the location directive action is setup to use the **Consolidate** strategy.
-- If you are using fixed locations instead of zones, you should use standard min/max replenishment.
+- If you are using fixed locations instead of zones, you should use [standard min/max replenishment](tasks/set-up-min-max-replenishment-process.md).
