@@ -5,7 +5,7 @@ title: Configure ratings and reviews
 description: This topic describes how to configure your e-Commerce site to show customer ratings and reviews in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 02/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -31,17 +31,13 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Configure ratings and reviews
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 This topic describes how to configure your e-Commerce site to show customer ratings and reviews in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-Ratings and reviews on e-Commerce websites help customers learn about products before they make a purchase decision, by showing them what other customers think about those products. For e-Commerce websites, ratings and reviews are also a mechanism for collecting customer feedback about products. 
-
-This document illustrates how to configure ratings and review for your e-Commerce website on Microsoft Dynamics 365 Commerce.
-
+Ratings and reviews on e-Commerce websites help customers learn about products before they make a purchase decision by showing them what other customers think about those products. For e-Commerce websites, ratings and reviews are also a mechanism for collecting customer feedback about products. 
 
 ## Configure a site to show ratings and reviews
 
@@ -89,9 +85,9 @@ The following illustration shows what this configuration looks like in Dynamics 
 
 ![Configuring the link for the privacy and policy page](media/rnr-eCommerce-rnr-privacy-policy-link.png)
 
-## Configure Ratings and reviews modules on product details page
+## Configure ratings and reviews modules on product details page
 
-Refer to [Ratings and reviews modules](ratings-reviews-modules.md)
+For information on this topic, see [Configure ratings and reviews modules on product details page](ratings-reviews-modules.md).
 
 ## Additional resources
 
@@ -100,5 +96,7 @@ Refer to [Ratings and reviews modules](ratings-reviews-modules.md)
 [Opt in to use ratings and reviews](opt-in-ratings-reviews.md)
 
 [Manage ratings and reviews](manage-reviews.md)
+
+[Configure ratings and reviews modules on product details page](ratings-reviews-modules.md
 
 [Sync product ratings in Dynamics 365 Retail](sync-product-ratings.md)
