@@ -39,281 +39,281 @@ The following list captures the portfolio of font families available for documen
 
 ## Application version 8.3 with Platfrom Update 32 or later
 
-| Font family             | Source      |
-|--------------------------|-------------|
-| Agency FB                | Office Font |
-| Algerian                 | Office Font |
-| Arial                    | D365 Font   |
-| Arial Black              | D365 Font   |
-| Arial Narrow             | D365 Font   |
-| Arial Rounded MT Bold    | Office Font |
-| Baskerville Old Face     | Office Font |
-| Bauhaus 93               | Office Font |
-| BC C128 HD Medium        | D365 Font   |
-| BC C128 HD Narrow        | D365 Font   |
-| BC C128 HD Wide          | D365 Font   |
-| BC C128 Medium           | D365 Font   |
-| BC C128 Narrow           | D365 Font   |
-| BC C128 Wide             | D365 Font   |
-| BC C39 2 to 1 HD Medium  | D365 Font   |
-| BC C39 2 to 1 HD Narrow  | D365 Font   |
-| BC C39 2 to 1 HD Wide    | D365 Font   |
-| BC C39 2 to 1 Medium     | D365 Font   |
-| BC C39 2 to 1 Narrow     | D365 Font   |
-| BC C39 2 to 1 Wide       | D365 Font   |
-| BC C39 3 to 1 HD Medium  | D365 Font   |
-| BC C39 3 to 1 HD Narrow  | D365 Font   |
-| BC C39 3 to 1 HD Wide    | D365 Font   |
-| BC C39 3 to 1 Medium     | D365 Font   |
-| BC C39 3 to 1 Narrow     | D365 Font   |
-| BC C39 3 to 1 Wide       | D365 Font   |
-| BC CBar 2 to 1 HD Medium | D365 Font   |
-| BC CBar 2 to 1 HD Narrow | D365 Font   |
-| BC CBar 2 to 1 HD Wide   | D365 Font   |
-| BC CBar 2 to 1 Medium    | D365 Font   |
-| BC CBar 2 to 1 Narrow    | D365 Font   |
-| BC CBar 2 to 1 Wide      | D365 Font   |
-| BC CBar 3 to 1 HD Medium | D365 Font   |
-| BC CBar 3 to 1 HD Narrow | D365 Font   |
-| BC CBar 3 to 1 HD Wide   | D365 Font   |
-| BC CBar 3 to 1 Medium    | D365 Font   |
-| BC CBar 3 to 1 Narrow    | D365 Font   |
-| BC CBar 3 to 1 Wide      | D365 Font   |
-| BC I25 HD Medium         | D365 Font   |
-| BC I25 HD Narrow         | D365 Font   |
-| BC I25 HD Wide           | D365 Font   |
-| BC I25 Medium            | D365 Font   |
-| BC I25 Narrow            | D365 Font   |
-| BC I25 Wide              | D365 Font   |
-| BC Postnet               | D365 Font   |
-| BC UPC HD Medium         | D365 Font   |
-| BC UPC HD Narrow         | D365 Font   |
-| BC UPC HD Wide           | D365 Font   |
-| BC UPC Medium            | D365 Font   |
-| BC UPC Narrow            | D365 Font   |
-| BC UPC Wide              | D365 Font   |
-| Bell MT                  | Office Font |
-| Berlin Sans FB           | Office Font |
-| Berlin Sans FB Demi      | Office Font |
-| Bernard MT Condensed     | Office Font |
-| Blackadder ITC           | Office Font |
-| Bodoni MT                | Office Font |
-| Bodoni MT Black          | Office Font |
-| Bodoni MT Condensed      | Office Font |
-| Bodoni MT Poster Compres | Office Font |
-| Book Antiqua             | Office Font |
-| Bookman Old Style        | Office Font |
-| Bookshelf Symbol 7       | Office Font |
-| Bradley Hand ITC         | Office Font |
-| Britannic Bold           | Office Font |
-| Broadway                 | Office Font |
-| Brush Script MT          | Office Font |
-| Buxton Sketch            | Office Font |
-| Calibri                  | D365 Font   |
-| Calibri Light            | D365 Font   |
-| Californian FB           | Office Font |
-| Calisto MT               | Office Font |
-| Cambria                  | D365 Font   |
-| Cambria Math             | D365 Font   |
-| Candara                  | D365 Font   |
-| Castellar                | Office Font |
-| Centaur                  | Office Font |
-| Century                  | Office Font |
-| Century Gothic           | Office Font |
-| Century Schoolbook       | Office Font |
-| Chiller                  | Office Font |
-| Colonna MT               | Office Font |
-| Comic Sans MS            | D365 Font   |
-| Consolas                 | D365 Font   |
-| Constantia               | D365 Font   |
-| Cooper Black             | Office Font |
-| Copperplate Gothic Bold  | Office Font |
-| Copperplate Gothic Light | Office Font |
-| Corbel                   | D365 Font   |
-| Courier New              | D365 Font   |
-| Curlz MT                 | Office Font |
-| DengXian                 | Office Font |
-| Dotum                    | D365 Font   |
-| DotumChe                 | D365 Font   |
-| Ebrima                   | D365 Font   |
-| Edwardian Script ITC     | Office Font |
-| Elephant                 | Office Font |
-| Engravers MT             | Office Font |
-| Eras Bold ITC            | Office Font |
-| Eras Demi ITC            | Office Font |
-| Eras Light ITC           | Office Font |
-| Eras Medium ITC          | Office Font |
-| Felix Titling            | Office Font |
-| Footlight MT Light       | Office Font |
-| Forte                    | Office Font |
-| Franklin Gothic Book     | Office Font |
-| Franklin Gothic Demi     | Office Font |
-| Franklin Gothic Demi Con | Office Font |
-| Franklin Gothic Heavy    | Office Font |
-| Franklin Gothic Medium   | D365 Font   |
-| Franklin Gothic Medium C | Office Font |
-| Freestyle Script         | Office Font |
-| French Script MT         | Office Font |
-| Gabriola                 | D365 Font   |
-| Gadugi                   | D365 Font   |
-| Garamond                 | Office Font |
-| Georgia                  | D365 Font   |
-| Gigi                     | Office Font |
-| Gill Sans MT             | Office Font |
-| Gill Sans MT Condensed   | Office Font |
-| Gill Sans MT Ext Condens | Office Font |
-| Gill Sans Ultra Bold     | Office Font |
-| Gill Sans Ultra Bold Con | Office Font |
-| Gloucester MT Extra Cond | Office Font |
-| Goudy Old Style          | Office Font |
-| Goudy Stout              | Office Font |
-| Gulim                    | D365 Font   |
-| GulimChe                 | D365 Font   |
-| Haettenschweiler         | Office Font |
-| Harlow Solid Italic      | Office Font |
-| Harrington               | Office Font |
-| High Tower Text          | Office Font |
-| IDAutomationMICR         | D365 Font   |
-| Impact                   | D365 Font   |
-| Imprint MT Shadow        | Office Font |
-| Informal Roman           | Office Font |
-| Javanese Text            | D365 Font   |
-| Jokerman                 | Office Font |
-| Juice ITC                | Office Font |
-| Kristen ITC              | Office Font |
-| Kunstler Script          | Office Font |
-| Leelawadee               | Office Font |
-| Leelawadee UI            | D365 Font   |
-| Leelawadee UI Semilight  | D365 Font   |
-| Lucida Bright            | Office Font |
-| Lucida Calligraphy       | Office Font |
-| Lucida Console           | D365 Font   |
-| Lucida Fax               | Office Font |
-| Lucida Handwriting       | Office Font |
-| Lucida Sans              | Office Font |
-| Lucida Sans Typewriter   | Office Font |
-| Lucida Sans Unicode      | D365 Font   |
-| Magneto                  | Office Font |
-| Maiandra GD              | Office Font |
-| Malgun Gothic            | D365 Font   |
-| Malgun Gothic Semilight  | D365 Font   |
-| Marlett                  | D365 Font   |
-| Matura MT Script Capital | Office Font |
-| MICR E13B 2.1            | D365 Font   |
-| Microsoft Himalaya       | D365 Font   |
-| Microsoft JhengHei       | D365 Font   |
-| Microsoft JhengHei Light | D365 Font   |
-| Microsoft JhengHei UI    | D365 Font   |
-| Microsoft JhengHei UI Li | Office Font |
-| Microsoft MHei           | Office Font |
-| Microsoft NeoGothic      | Office Font |
-| Microsoft New Tai Lue    | D365 Font   |
-| Microsoft PhagsPa        | D365 Font   |
-| Microsoft Sans Serif     | D365 Font   |
-| Microsoft Tai Le         | D365 Font   |
-| Microsoft Uighur         | Office Font |
-| Microsoft YaHei          | D365 Font   |
-| Microsoft YaHei Light    | D365 Font   |
-| Microsoft YaHei UI       | D365 Font   |
-| Microsoft YaHei UI Light | D365 Font   |
-| Microsoft Yi Baiti       | D365 Font   |
-| MingLiU                  | D365 Font   |
-| MingLiU-ExtB             | D365 Font   |
-| MingLiU_HKSCS            | D365 Font   |
-| MingLiU_HKSCS-ExtB       | D365 Font   |
-| Mistral                  | Office Font |
-| Modern No. 20            | Office Font |
-| Mongolian Baiti          | D365 Font   |
-| Monotype Corsiva         | Office Font |
-| MS Gothic                | D365 Font   |
-| MS Outlook               | Office Font |
-| MS PGothic               | D365 Font   |
-| MS Reference Sans Serif  | Office Font |
-| MS Reference Specialty   | Office Font |
-| MS UI Gothic             | D365 Font   |
-| MT Extra                 | Office Font |
-| MV Boli                  | D365 Font   |
-| Myanmar Text             | D365 Font   |
-| Niagara Engraved         | Office Font |
-| Niagara Solid            | Office Font |
-| Nirmala UI               | D365 Font   |
-| Nirmala UI Semilight     | D365 Font   |
-| NSimSun                  | D365 Font   |
-| OCR A Extended           | Office Font |
-| OCRB                     | D365 Font   |
-| Old English Text MT      | Office Font |
-| Onyx                     | Office Font |
-| Palace Script MT         | Office Font |
-| Palatino Linotype        | D365 Font   |
-| Papyrus                  | Office Font |
-| Parchment                | Office Font |
-| Perpetua                 | Office Font |
-| Perpetua Titling MT      | Office Font |
-| Playbill                 | Office Font |
-| PMingLiU                 | D365 Font   |
-| PMingLiU-ExtB            | D365 Font   |
-| Poor Richard             | Office Font |
-| Pristina                 | Office Font |
-| Rage Italic              | Office Font |
-| Ravie                    | Office Font |
-| Rockwell                 | Office Font |
-| Rockwell Condensed       | Office Font |
-| Rockwell Extra Bold      | Office Font |
-| Script MT Bold           | Office Font |
-| Segoe Marker             | Office Font |
-| Segoe MDL2 Assets        | D365 Font   |
-| Segoe Print              | D365 Font   |
-| Segoe Script             | D365 Font   |
-| Segoe UI                 | D365 Font   |
-| Segoe UI Black           | D365 Font   |
-| Segoe UI Emoji           | D365 Font   |
-| Segoe UI Historic        | D365 Font   |
-| Segoe UI Light           | D365 Font   |
-| Segoe UI Semibold        | D365 Font   |
-| Segoe UI Semilight       | D365 Font   |
-| Segoe UI Symbol          | D365 Font   |
-| Segoe WP                 | Office Font |
-| Segoe WP Black           | Office Font |
-| Segoe WP Light           | Office Font |
-| Segoe WP Semibold        | Office Font |
-| Segoe WP SemiLight       | Office Font |
-| Showcard Gothic          | Office Font |
-| SimSun                   | D365 Font   |
-| SimSun-ExtB              | D365 Font   |
-| Sitka Banner             | D365 Font   |
-| Sitka Display            | D365 Font   |
-| Sitka Heading            | D365 Font   |
-| Sitka Small              | D365 Font   |
-| Sitka Subheading         | D365 Font   |
-| Sitka Text               | D365 Font   |
-| SketchFlow Print         | Office Font |
-| Snap ITC                 | Office Font |
-| Stencil                  | Office Font |
-| Sylfaen                  | D365 Font   |
-| Symbol                   | D365 Font   |
-| Tahoma                   | D365 Font   |
-| Tempus Sans ITC          | Office Font |
-| Times New Roman          | D365 Font   |
-| Trebuchet MS             | D365 Font   |
-| Tw Cen MT                | Office Font |
-| Tw Cen MT Condensed      | Office Font |
-| Tw Cen MT Condensed Extr | Office Font |
-| Verdana                  | D365 Font   |
-| Viner Hand ITC           | Office Font |
-| Vivaldi                  | Office Font |
-| Vladimir Script          | Office Font |
-| Webdings                 | D365 Font   |
-| Wide Latin               | Office Font |
-| Wingdings                | D365 Font   |
-| Wingdings 2              | Office Font |
-| Wingdings 3              | Office Font |
-| Yu Gothic                | D365 Font   |
-| Yu Gothic Light          | D365 Font   |
-| Yu Gothic Medium         | D365 Font   |
-| Yu Gothic UI             | D365 Font   |
-| Yu Gothic UI Light       | D365 Font   |
-| Yu Gothic UI Semibold    | D365 Font   |
-| Yu Gothic UI Semilight   | D365 Font   |
+| Font family              | Source              |
+|--------------------------|-----------------------------|
+| Agency FB                | Office font                 |
+| Algerian                 | Office font                 |
+| Arial                    | Finance and Operations font |
+| Arial Black              | Finance and Operations font |
+| Arial Narrow             | Finance and Operations font |
+| Arial Rounded MT Bold    | Office font                 |
+| Baskerville Old Face     | Office font                 |
+| Bauhaus 93               | Office font                 |
+| BC C128 HD Medium        | Finance and Operations font |
+| BC C128 HD Narrow        | Finance and Operations font |
+| BC C128 HD Wide          | Finance and Operations font |
+| BC C128 Medium           | Finance and Operations font |
+| BC C128 Narrow           | Finance and Operations font |
+| BC C128 Wide             | Finance and Operations font |
+| BC C39 2 to 1 HD Medium  | Finance and Operations font |
+| BC C39 2 to 1 HD Narrow  | Finance and Operations font |
+| BC C39 2 to 1 HD Wide    | Finance and Operations font |
+| BC C39 2 to 1 Medium     | Finance and Operations font |
+| BC C39 2 to 1 Narrow     | Finance and Operations font |
+| BC C39 2 to 1 Wide       | Finance and Operations font |
+| BC C39 3 to 1 HD Medium  | Finance and Operations font |
+| BC C39 3 to 1 HD Narrow  | Finance and Operations font |
+| BC C39 3 to 1 HD Wide    | Finance and Operations font |
+| BC C39 3 to 1 Medium     | Finance and Operations font |
+| BC C39 3 to 1 Narrow     | Finance and Operations font |
+| BC C39 3 to 1 Wide       | Finance and Operations font |
+| BC CBar 2 to 1 HD Medium | Finance and Operations font |
+| BC CBar 2 to 1 HD Narrow | Finance and Operations font |
+| BC CBar 2 to 1 HD Wide   | Finance and Operations font |
+| BC CBar 2 to 1 Medium    | Finance and Operations font |
+| BC CBar 2 to 1 Narrow    | Finance and Operations font |
+| BC CBar 2 to 1 Wide      | Finance and Operations font |
+| BC CBar 3 to 1 HD Medium | Finance and Operations font |
+| BC CBar 3 to 1 HD Narrow | Finance and Operations font |
+| BC CBar 3 to 1 HD Wide   | Finance and Operations font |
+| BC CBar 3 to 1 Medium    | Finance and Operations font |
+| BC CBar 3 to 1 Narrow    | Finance and Operations font |
+| BC CBar 3 to 1 Wide      | Finance and Operations font |
+| BC I25 HD Medium         | Finance and Operations font |
+| BC I25 HD Narrow         | Finance and Operations font |
+| BC I25 HD Wide           | Finance and Operations font |
+| BC I25 Medium            | Finance and Operations font |
+| BC I25 Narrow            | Finance and Operations font |
+| BC I25 Wide              | Finance and Operations font |
+| BC Postnet               | Finance and Operations font |
+| BC UPC HD Medium         | Finance and Operations font |
+| BC UPC HD Narrow         | Finance and Operations font |
+| BC UPC HD Wide           | Finance and Operations font |
+| BC UPC Medium            | Finance and Operations font |
+| BC UPC Narrow            | Finance and Operations font |
+| BC UPC Wide              | Finance and Operations font |
+| Bell MT                  | Office font                 |
+| Berlin Sans FB           | Office font                 |
+| Berlin Sans FB Demi      | Office font                 |
+| Bernard MT Condensed     | Office font                 |
+| Blackadder ITC           | Office font                 |
+| Bodoni MT                | Office font                 |
+| Bodoni MT Black          | Office font                 |
+| Bodoni MT Condensed      | Office font                 |
+| Bodoni MT Poster Compres | Office font                 |
+| Book Antiqua             | Office font                 |
+| Bookman Old Style        | Office font                 |
+| Bookshelf Symbol 7       | Office font                 |
+| Bradley Hand ITC         | Office font                 |
+| Britannic Bold           | Office font                 |
+| Broadway                 | Office font                 |
+| Brush Script MT          | Office font                 |
+| Buxton Sketch            | Office font                 |
+| Calibri                  | Finance and Operations font |
+| Calibri Light            | Finance and Operations font |
+| Californian FB           | Office font                 |
+| Calisto MT               | Office font                 |
+| Cambria                  | Finance and Operations font |
+| Cambria Math             | Finance and Operations font |
+| Candara                  | Finance and Operations font |
+| Castellar                | Office font                 |
+| Centaur                  | Office font                 |
+| Century                  | Office font                 |
+| Century Gothic           | Office font                 |
+| Century Schoolbook       | Office font                 |
+| Chiller                  | Office font                 |
+| Colonna MT               | Office font                 |
+| Comic Sans MS            | Finance and Operations font |
+| Consolas                 | Finance and Operations font |
+| Constantia               | Finance and Operations font |
+| Cooper Black             | Office font                 |
+| Copperplate Gothic Bold  | Office font                 |
+| Copperplate Gothic Light | Office font                 |
+| Corbel                   | Finance and Operations font |
+| Courier New              | Finance and Operations font |
+| Curlz MT                 | Office font                 |
+| DengXian                 | Office font                 |
+| Dotum                    | Finance and Operations font |
+| DotumChe                 | Finance and Operations font |
+| Ebrima                   | Finance and Operations font |
+| Edwardian Script ITC     | Office font                 |
+| Elephant                 | Office font                 |
+| Engravers MT             | Office font                 |
+| Eras Bold ITC            | Office font                 |
+| Eras Demi ITC            | Office font                 |
+| Eras Light ITC           | Office font                 |
+| Eras Medium ITC          | Office font                 |
+| Felix Titling            | Office font                 |
+| Footlight MT Light       | Office font                 |
+| Forte                    | Office font                 |
+| Franklin Gothic Book     | Office font                 |
+| Franklin Gothic Demi     | Office font                 |
+| Franklin Gothic Demi Con | Office font                 |
+| Franklin Gothic Heavy    | Office font                 |
+| Franklin Gothic Medium   | Finance and Operations font |
+| Franklin Gothic Medium C | Office font                 |
+| Freestyle Script         | Office font                 |
+| French Script MT         | Office font                 |
+| Gabriola                 | Finance and Operations font |
+| Gadugi                   | Finance and Operations font |
+| Garamond                 | Office font                 |
+| Georgia                  | Finance and Operations font |
+| Gigi                     | Office font                 |
+| Gill Sans MT             | Office font                 |
+| Gill Sans MT Condensed   | Office font                 |
+| Gill Sans MT Ext Condens | Office font                 |
+| Gill Sans Ultra Bold     | Office font                 |
+| Gill Sans Ultra Bold Con | Office font                 |
+| Gloucester MT Extra Cond | Office font                 |
+| Goudy Old Style          | Office font                 |
+| Goudy Stout              | Office font                 |
+| Gulim                    | Finance and Operations font |
+| GulimChe                 | Finance and Operations font |
+| Haettenschweiler         | Office font                 |
+| Harlow Solid Italic      | Office font                 |
+| Harrington               | Office font                 |
+| High Tower Text          | Office font                 |
+| IDAutomationMICR         | Finance and Operations font |
+| Impact                   | Finance and Operations font |
+| Imprint MT Shadow        | Office font                 |
+| Informal Roman           | Office font                 |
+| Javanese Text            | Finance and Operations font |
+| Jokerman                 | Office font                 |
+| Juice ITC                | Office font                 |
+| Kristen ITC              | Office font                 |
+| Kunstler Script          | Office font                 |
+| Leelawadee               | Office font                 |
+| Leelawadee UI            | Finance and Operations font |
+| Leelawadee UI Semilight  | Finance and Operations font |
+| Lucida Bright            | Office font                 |
+| Lucida Calligraphy       | Office font                 |
+| Lucida Console           | Finance and Operations font |
+| Lucida Fax               | Office font                 |
+| Lucida Handwriting       | Office font                 |
+| Lucida Sans              | Office font                 |
+| Lucida Sans Typewriter   | Office font                 |
+| Lucida Sans Unicode      | Finance and Operations font |
+| Magneto                  | Office font                 |
+| Maiandra GD              | Office font                 |
+| Malgun Gothic            | Finance and Operations font |
+| Malgun Gothic Semilight  | Finance and Operations font |
+| Marlett                  | Finance and Operations font |
+| Matura MT Script Capital | Office font                 |
+| MICR E13B 2.1            | Finance and Operations font |
+| Microsoft Himalaya       | Finance and Operations font |
+| Microsoft JhengHei       | Finance and Operations font |
+| Microsoft JhengHei Light | Finance and Operations font |
+| Microsoft JhengHei UI    | Finance and Operations font |
+| Microsoft JhengHei UI Li | Office font                 |
+| Microsoft MHei           | Office font                 |
+| Microsoft NeoGothic      | Office font                 |
+| Microsoft New Tai Lue    | Finance and Operations font |
+| Microsoft PhagsPa        | Finance and Operations font |
+| Microsoft Sans Serif     | Finance and Operations font |
+| Microsoft Tai Le         | Finance and Operations font |
+| Microsoft Uighur         | Office font                 |
+| Microsoft YaHei          | Finance and Operations font |
+| Microsoft YaHei Light    | Finance and Operations font |
+| Microsoft YaHei UI       | Finance and Operations font |
+| Microsoft YaHei UI Light | Finance and Operations font |
+| Microsoft Yi Baiti       | Finance and Operations font |
+| MingLiU                  | Finance and Operations font |
+| MingLiU-ExtB             | Finance and Operations font |
+| MingLiU_HKSCS            | Finance and Operations font |
+| MingLiU_HKSCS-ExtB       | Finance and Operations font |
+| Mistral                  | Office font                 |
+| Modern No. 20            | Office font                 |
+| Mongolian Baiti          | Finance and Operations font |
+| Monotype Corsiva         | Office font                 |
+| MS Gothic                | Finance and Operations font |
+| MS Outlook               | Office font                 |
+| MS PGothic               | Finance and Operations font |
+| MS Reference Sans Serif  | Office font                 |
+| MS Reference Specialty   | Office font                 |
+| MS UI Gothic             | Finance and Operations font |
+| MT Extra                 | Office font                 |
+| MV Boli                  | Finance and Operations font |
+| Myanmar Text             | Finance and Operations font |
+| Niagara Engraved         | Office font                 |
+| Niagara Solid            | Office font                 |
+| Nirmala UI               | Finance and Operations font |
+| Nirmala UI Semilight     | Finance and Operations font |
+| NSimSun                  | Finance and Operations font |
+| OCR A Extended           | Office font                 |
+| OCRB                     | Finance and Operations font |
+| Old English Text MT      | Office font                 |
+| Onyx                     | Office font                 |
+| Palace Script MT         | Office font                 |
+| Palatino Linotype        | Finance and Operations font |
+| Papyrus                  | Office font                 |
+| Parchment                | Office font                 |
+| Perpetua                 | Office font                 |
+| Perpetua Titling MT      | Office font                 |
+| Playbill                 | Office font                 |
+| PMingLiU                 | Finance and Operations font |
+| PMingLiU-ExtB            | Finance and Operations font |
+| Poor Richard             | Office font                 |
+| Pristina                 | Office font                 |
+| Rage Italic              | Office font                 |
+| Ravie                    | Office font                 |
+| Rockwell                 | Office font                 |
+| Rockwell Condensed       | Office font                 |
+| Rockwell Extra Bold      | Office font                 |
+| Script MT Bold           | Office font                 |
+| Segoe Marker             | Office font                 |
+| Segoe MDL2 Assets        | Finance and Operations font |
+| Segoe Print              | Finance and Operations font |
+| Segoe Script             | Finance and Operations font |
+| Segoe UI                 | Finance and Operations font |
+| Segoe UI Black           | Finance and Operations font |
+| Segoe UI Emoji           | Finance and Operations font |
+| Segoe UI Historic        | Finance and Operations font |
+| Segoe UI Light           | Finance and Operations font |
+| Segoe UI Semibold        | Finance and Operations font |
+| Segoe UI Semilight       | Finance and Operations font |
+| Segoe UI Symbol          | Finance and Operations font |
+| Segoe WP                 | Office font                 |
+| Segoe WP Black           | Office font                 |
+| Segoe WP Light           | Office font                 |
+| Segoe WP Semibold        | Office font                 |
+| Segoe WP SemiLight       | Office font                 |
+| Showcard Gothic          | Office font                 |
+| SimSun                   | Finance and Operations font |
+| SimSun-ExtB              | Finance and Operations font |
+| Sitka Banner             | Finance and Operations font |
+| Sitka Display            | Finance and Operations font |
+| Sitka Heading            | Finance and Operations font |
+| Sitka Small              | Finance and Operations font |
+| Sitka Subheading         | Finance and Operations font |
+| Sitka Text               | Finance and Operations font |
+| SketchFlow Print         | Office font                 |
+| Snap ITC                 | Office font                 |
+| Stencil                  | Office font                 |
+| Sylfaen                  | Finance and Operations font |
+| Symbol                   | Finance and Operations font |
+| Tahoma                   | Finance and Operations font |
+| Tempus Sans ITC          | Office font                 |
+| Times New Roman          | Finance and Operations font |
+| Trebuchet MS             | Finance and Operations font |
+| Tw Cen MT                | Office font                 |
+| Tw Cen MT Condensed      | Office font                 |
+| Tw Cen MT Condensed Extr | Office font                 |
+| Verdana                  | Finance and Operations font |
+| Viner Hand ITC           | Office font                 |
+| Vivaldi                  | Office font                 |
+| Vladimir Script          | Office font                 |
+| Webdings                 | Finance and Operations font |
+| Wide Latin               | Office font                 |
+| Wingdings                | Finance and Operations font |
+| Wingdings 2              | Office font                 |
+| Wingdings 3              | Office font                 |
+| Yu Gothic                | Finance and Operations font |
+| Yu Gothic Light          | Finance and Operations font |
+| Yu Gothic Medium         | Finance and Operations font |
+| Yu Gothic UI             | Finance and Operations font |
+| Yu Gothic UI Light       | Finance and Operations font |
+| Yu Gothic UI Semibold    | Finance and Operations font |
+| Yu Gothic UI Semilight   | Finance and Operations font |
 
 ## Application version 8.0 with Platform update 23
 
