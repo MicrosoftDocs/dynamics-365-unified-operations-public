@@ -39,7 +39,7 @@ Before you can use commission settlement on payment, the following prerequisites
 - In the **Feature management** workspace, turn on the **Commission settlement on payments** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Set up commission settlement by default
-In the Account receivable parameters (**Account receivable**/> **Setup**/> **Account receivable parameters**, tab **Settlement**, FastTab **Other**) set up **Commission settlement** method which will be used when creating sales order. 
+In the Account receivable parameters (**Account receivable**/> **Setup**/> **Account receivable parameters**, tab **Settlement**, FastTab **Other**) set up **Commission settlement** method which will be used when creating sales order by default. 
 The field **Commission settlement** has two values:
 -	**On invoice**, if the commissions are made during the invoice process
 -	**On payment**, if the commissions are made during the payment process
