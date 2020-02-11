@@ -37,7 +37,7 @@ This topic describes how to create a new call center channel in Microsoft Dynami
 
 ## Overview
 
-In Dynamics 365 Commerce, a call center is a type of retail channel that can be defined in the application. Defining a channel for your call center entities allows the system to tie specific data and order processing defaults to sales orders. A company can define multiple call center channels in Commerce. 
+In Dynamics 365 Commerce, a call center is a type of retail channel that can be defined in the application. Defining a channel for your call center entities allows the system to tie specific data and order processing defaults to sales orders. While a company can define multiple call center channels in Commerce, it is important to note that an individual user may only be linked to one call center channel. 
 
 Before you create a new call center channel, ensure that you have completed the [Channel set up prerequisites](channels-prerequisites.md).
 
@@ -45,16 +45,17 @@ Before you create a new call center channel, ensure that you have completed the 
 
 To create and configure a new call center channel, follow these steps.
 
-1. In the navigation pane, go to **Modules \> Channels \> Call centers \> All call centers**.
+1. In the navigation pane, go to **Retail and Commerce \> Channels \> Call centers \> All call centers**.
 1. On the action pane, select **New**.
 1. In the **Name** field, provide a name for the new channel.
 1. Select the appropriate **Legal entity** from the drop down.
-1. Select the appropriate **Warehouse** location from the drop down.
-1. In the **Default customer** field, provide a valid default customer.
-1. In the **Email notification profile** field, provide a valid email notification profile.
-1. Provide a **Price override** info code. Note you may need to create an info code for this first.
-1. Provide a **Hold code** info code. Note you may need to create an info code for this first.
-1. Provide a **Credit** info code. Note you may need to create an info code for this first.
+1. Select the appropriate **Warehouse** location from the drop down, this location will be used as the default on sales orders created for this call center channel, unless other defaults have been defined at the customer or item level.
+1. In the **Default customer** field, provide a valid default customer, this data is used to assist in auto-populating defaults when new customer records are created.  When creating call center orders, it is not advisable to create orders for the default customer.
+1. In the **Email notification profile** field, provide a valid email notification profile.  As call center orders are created and processed, the email notification profile is used to trigger automated email alerts to customers with information about their order status.
+1. Provide a **Price override** info code. Note you may need to create an info code for this first.  This infocode provides the set of reason codes that the user will be prompted to choose from when using the price override functionality on a call center order.
+1. Provide a **Hold code** info code. Note you may need to create an info code for this first.  This infocode provides the set of optional reason codes that the user will be prompted to choose from when placing an order on hold.
+1. Provide a **Credit** info code. Note you may need to create an info code for this first.  This infocode provides the set of reason codes that the user can choose from when using the order credit functionality of call center to give misc refunds to the customer for customer service reasons.
+1. Optionally add financial dimension setup in the **Financial dimensions** fasttab.  The dimensions entered here will default on any sales order created in this call center channel.
 1. Select **Save**.
 
 The following image shows the creation of a new call center channel.
@@ -75,13 +76,13 @@ The following image shows **Modes of delivery** and **Payment methods** set up o
 
 ### Set up payment methods
 
-To set up payment methods, for each payment type supported on this channel follow these steps.
+To set up payment methods, for each payment type supported on this channel follow these steps.  It is important to note that users will be required to select from pre-defined payment methods to link them to the call center channel.  Before setting up your call center payment methods, first set up your master methods of payment in **Retail and Commerce \> Channel setup \> Payment methods \> Payment methods**
 
 1. On the action pane, select the **Set up** tab, and then select **Payment methods**.
 1. On the action pane, select **New**.
-1. In the navigation pane, select a desired payment method.
-1. In the **General** section, provide an **Operation name** and configure any other desired settings.
-1. Configure any additional settings as required for the payment type.
+1. In the navigation pane, select a desired payment method from the pre-defined payments available.
+1. Configure any additional settings as required for the payment type.  For credit cards, gift cards or loyalty cards, additional setup is required by selecting the **Card setup** function. 
+1. Configure proper posting accounts for the payment type in the **Posting** section
 1. On the action pane, select **Save**.
 
 The following image shows an example of a cash payment method.
@@ -92,15 +93,36 @@ The following image shows an example of a cash payment method.
 
 You can see the configured modes of delivery by selecting **Modes of delivery** from the **Set up** tab on the **Action pane**.  
 
-To change or add a mode of delivery, follow these steps.
+To change or add a mode of delivery to be associated to the call center channel, follow these steps.
 
-1. In the navigation pane, go to **Modules \> Inventory management \> Modes of delivery**.
+1. From the Call center modes of delivery form, select **Manage modes of delivery**
 1. On the action pane, select **New** to create a new mode of delivery, or select an existing mode.
-1. In the **Retail channels** section, select **Add line** to add the channel. Adding channels using organization nodes instead of adding each channel individually can streamline adding channels.
+1. In the **Retail channels** section, select **Add line** to add the call center channel. Adding channels using organization nodes instead of adding each channel individually can streamline adding channels.
+1. It's important to ensure the mode of delivery has been configured with data on the **Products** fasttab and the **Addresses** fasttab.  If no products or delivery addresses are valid for the mode of delivery, choosing it during order entry will result in errors.
+1. After any changes have been made to the call center mode of delivery configurations, the **Process delivery modes** job must be run to explode the change matrix.  This job can be found by navigating to **Retail and Commerce \> Retail and Commerce IT \> Process delivery modes**
 
 The following image shows an example of a mode of delivery.
 
 ![Set up modes of delivery](media/channel-setup-retail-7.png)
+
+### Set up Channel users
+
+In order to create a sales order that is linked to this call center channel from the HQ client, the user creating the sales order must be linked to the call center channel.  There is currently no ability to manually link a sales order created in HQ to the call center channel, the link is systematic and is based on the user and their relationship to the call center channel.  A user may only be linked to one call center channel.
+
+1. On the action pane, select the **Channel** tab, and then select **Channel users**.
+1. On the action pane, select **New**.
+1. Choose an existing **User ID** from the dropdown selection list to link this user to the call center channel
+
+After the channel user setup is completed,once this user creates a new sales order in HQ, they will note the sales order will be linked to their associated call center channel and any configurations for this channel will be applied systematically to the sales order.   A user can confirm which call center channel the sales order is linked to by viewing the channel name reference on the sales order header.
+
+
+### Set up Price groups
+
+Price groups are optional, but when used can control which sales prices will be offered to customers placing orders in the call center channel.  If a price groups have not been configured for the customer, or if catalog price groups are not being applied to the sales order using the **Source code ID** field on the call center order header, then the application will leverage the channel price group to locate item prices.  If no price group is found on the call center channel, then default item master prices will be used. 
+
+1. On the action pane, select the **Channel** tab, and then select **Price groups**.
+1. On the action pane, select **New**.
+1. Choose a **Retail price group** from the dropdown selection list
 
 ## Additional resources
 
