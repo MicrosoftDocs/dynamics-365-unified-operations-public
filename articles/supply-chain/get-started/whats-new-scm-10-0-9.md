@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.9 (Mar
 description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.9. 
 author: kamaybac
 manager: AnnBe
-ms.date: 02/05/2020
+ms.date: 02/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,7 +25,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kamaybac
-ms.search.validFrom: 2020-02-05 
+ms.search.validFrom: 2020-02-11 
 ms.dyn365.ops.version: 10.0.9
 
 ---
@@ -41,12 +41,31 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 
 ## Features included in this release
 
-The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. Additional links point to additional documentation or videos that are currently available for that feature. Some of these features may also have been included a previous incremental release, but weren't announced in previous *What's new* topic, so we are adding them here. Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
+The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. Additional links point to additional documentation that is currently available for that feature. Some of these features may also have been included a previous incremental release, but weren't announced in previous *What's new* topic, so we are adding them here. Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
-- [XXX](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index) - For more information, see [XXXX](../warehousing/warehouse-management-overview.md).
-- [XXX](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index) - For more information, see [XXXX](../warehousing/warehouse-management-overview.md).
-- [XXX](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index) - For more information, see [XXXX](../warehousing/warehouse-management-overview.md).
-
+- [Advanced load building during a wave](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/advanced-load-building-during-wave)
+- [Auto-release shipment for cross dock](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/auto-release-shipment-cross-dock)  - For more information, see [Auto-release shipment for cross-docking](../warehousing/auto-release-shipment-for-cross-docking.md).
+- [Consolidate shipment enhancements](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/consolidate-shipment-enhancements)
+- [Cross-docking](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/planned-cross-docking)
+- [Inbound quality check](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inbound-quality-check)
+- [Outbound sorting](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/outbound-sorting)
+- [Put to wall/Put to store](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/put-wallput-store)
+- [Put-away clusters](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/put-away-clusters)
+- [Wave label printing enhancements](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-label-printing-enhancements)
+- [Receive sortation](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/receive-sortation)
+- [Warehouse slotting](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-slotting)
+- [Flexible warehouse-level dimension reservation](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/flexible-warehouse-level-dimension-reservation)
+- [Further catch weight integration 10.0.1](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.1)
+- [Further catch weight integration 10.0.2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.2)
+- [Further catch weight integration 10.0.3](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.3)
+- [Further catch weight integration 10.0.4](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.4)
+- [Further catch weight integration 10.0.5](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.5)
+- [Further catch weight integration 10.0.6](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.6)
+- [Further catch weight integration 10.0.7](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.7)
+- [Packing vs. storage dimensions](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/packing-vs.-storage-dimensions)
+- [Quality management for warehouse processes](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/quality-management-warehouse-processes)
+- [Small package shipping (SPS)](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/small-package-shipping-sps)
+- [Wave step code](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-step-code)
 
 ## Additional resources
 
