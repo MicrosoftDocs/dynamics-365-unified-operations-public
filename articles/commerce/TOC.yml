@@ -478,6 +478,8 @@
             href: dev-itpro/adyen-connector.md
           - name: Saving online payment instruments with the Adyen connector
             href: dev-itpro/adyen-connector-listpi.md
+          - name: Seamless offline switch for gift card and credit memo operations
+            href: dev-itpro/seamless-offline-improvements.md
           - name: Set up pay invoice scenarios 
             href: payinvoice.md
           - name: Duplicate payments prevention 
