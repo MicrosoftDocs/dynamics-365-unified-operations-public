@@ -59,6 +59,7 @@ The schema of the CSV is as follows:
 An example set of redirect rows may look like the following:
 
 ``https://www.oldsite.com/shop, https://www.newsite.com/allstores, 301``
+
 ``https://www.oldsite.com/news, https://www.newsite.com/updates, 301``
 
 > [!IMPORTANT]
@@ -93,12 +94,16 @@ Once the file is uploaded successfully, select the Toggle button to "On" to acti
 
 An uploaded URL redirects CSV file can be downloaded for reference or editing.
 
-In order to download the currently uploaded CSV, navigate to your Site and go to **Site Settings > General** in the left hand menu.
+In order to download the currently uploaded CSV, navigate to your Site and go to **Site Settings \> General** in the left hand menu.
 
 Within the "URL Redirect Mapping" section, select the "Download" button. (This button will be grayed out if no CSV has been uploaded). A save file dialogue will be prompted to save the file to your machine.
 
 If making additions, deletions, or edits to the CSV; once completed, use the "Replace" button (which should show in place of the original 'Upload' button) to upload the edited file. Notice that upon re-upload, the Toggle will switch back to "Off".  Change the Toggle to "On" and **Save & Publish** the General settings page to commit these changes. This will then activate the newly uploaded file. Again, allow up to 15 minutes for the changes to occur. 
 
-## Turn off the bulk redirect mappings
+## Turn off bulk redirect mappings
 
 If a bulk redirect CSV has been uploaded and is active; to turn the redirects off- go to **Site Settings > General** and select the "Replace" button. Upload a new CSV with valid but non-existent Source and Target URLs. (Example: 'https://www.com,https://www.com,301'. Set the Toggle to "On" and click **Save & Publish** on the General settings page to commit the changes.
+
+## Additional resources
+
+
