@@ -1,7 +1,7 @@
 
 # DAS-2 report
 
-[!include [banner](../includes/banner.md)]
+
 
 French legal entities doing business with self-employed professionals must provide to the tax authorities the DAS-2 declaration report  
 The DAS-2 is an annual fiscal declaration that includes all payments of these type of vendors > 1200 EUR  and it should be generated in Excel format. Once the report is generated, the legal entity save this file in the ETAFI (CEGID) environment, then the file is validated and converted into to EDI structure to be finally transmitted.   
