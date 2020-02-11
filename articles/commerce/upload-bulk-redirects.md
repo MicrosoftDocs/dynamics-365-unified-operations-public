@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title:Upload Bulk URL redirect mappings in Commerce 
-description: This topic reviews the upload of a CSV mapping reference file to redirect URLs to new Commerce URLs.
+title: Upload bulk URL redirect mappings 
+description: This topic describes how to upload a mapping reference file to redirect URLs in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-manager: BrendanSullivanMSFT
-ms.date: 01/20/2020
+manager: annbe
+ms.date: 02/11/2020
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -24,19 +24,25 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: brshoo
-ms.search.validFrom: 2019-08-30
+ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: 
 
 ---
 
-# Upload Bulk URL redirect mappings in Commerce
+# Upload bulk URL redirect mappings
+
+[!include [banner](includes/banner.md)]
+
+This topic describes how to upload a mapping reference file to redirect URLs in Microsoft Dynamics 365 Commerce.
 
 This topic describes the process of uploading a CSV mapping file to redirect your web traffic from previous site URLs to your updated Commerce site URLs. This article covers the CSV format, the upload process, and updating process for handling bulk URL redirects.
 
 ## Overview
-When creating your new site on Dynamics 365 Commerce, the URLs from your previous site will likely differ once you make the DNS switch with your domain when going live on the new Commerce built site. For specific URLs, you can redirect traffic hitting the old URL to send to the new URL- keeping your visitors landing in the desired location. Redirections help avoid broken links for your customers and persist your established SEO results. A redirect can be configured in DNS manually for a link- but when multiple links need to be redirected; manually configuring becomes tedius. That's why Commerce built the capability to upload a data file with the redirect mappings for your Site. Within the SiteBuilder Site Settings, your System Admin can now upload and publish a redirect CSV to handle these link redirects in bulk.
 
-## The redirect CSV File
+When creating your new e-commerce site on Dynamics 365 Commerce, the URLs from your previous site will likely differ once you make the Domain Name System (DNS) switch with your domain when going live on the new Commerce-built site. For specific URLs, you can redirect traffic using the old URL to the new URL, ensuring that your site visitors land in the desired location. Redirects help avoid broken links for your customers and maintain your established SEO results. Although redirects can be configured in DNS manually for a single link, when multiple links need to be redirected manual configuration becomes tedious. Commerce solves this issue with the capability to upload a data file with bulk redirect mappings for your site. Within the site builder site settings, your system admin can upload and publish a comma-separated values (CSV) file to handle these link redirects in bulk.
+
+## The redirect CSV file
+
 Commerce supports a simple yet specific CSV file to handle the redirect URLs. This section will cover the schema and rules of the CSV file. 
 
 The schema of the CSV is as follows:
@@ -66,9 +72,9 @@ So a sample set of redirect rows may look like the following:
 - **No Query String URLs** supported. The current solution will not execute query strings provided as source or target URLs.
 - CSV must be a valid CSV format. Use comma-separated, no header, new-line valid CSV data and file formatting.
 
-## Uploading the CSV
+## Upload the CSV
 
-The bulk redirect CSV can be uploaded in the Commerce SiteBuilder Tool. User must be an Administrator for the site they are uploading the bulk redirect CSV. 
+The bulk redirect CSV can be uploaded in the Commerce site builder Tool. User must be an administrator for the site they are uploading the bulk redirect CSV. 
 
 From Home, navigate to the Site that will receive the bulk URL redirects.
 
@@ -82,7 +88,7 @@ Once the file is uploaded successfully, select the Toggle button to "On" to acti
 
 Only one CSV per site can be loaded and active at any given time.
 
-## Updating the CSV
+## Update the CSV file
 
 An uploaded URL redirects CSV file can be downloaded for reference or editing.
 
@@ -92,6 +98,6 @@ Within the "URL Redirect Mapping" section, select the "Download" button. (This b
 
 If making additions, deletions, or edits to the CSV; once completed, use the "Replace" button (which should show in place of the original 'Upload' button) to upload the edited file. Notice that upon re-upload, the Toggle will switch back to "Off".  Change the Toggle to "On" and **Save & Publish** the General settings page to commit these changes. This will then activate the newly uploaded file. Again, allow up to 15 minutes for the changes to occur. 
 
-## Turning off the bulk redirect mappings
+## Turn off the bulk redirect mappings
 
 If a bulk redirect CSV has been uploaded and is active; to turn the redirects off- go to **Site Settings > General** and select the "Replace" button. Upload a new CSV with valid but non-existent Source and Target URLs. (Example: 'https://www.com,https://www.com,301'. Set the Toggle to "On" and click **Save & Publish** on the General settings page to commit the changes.
