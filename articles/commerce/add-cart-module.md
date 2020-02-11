@@ -50,7 +50,7 @@ The cart module has a **Heading** property that can be set to values such as **S
 ## Modules that can be used in a cart module
 
 - **Text block** – This module supports custom messaging in the cart module. The messages are driven by the content management system (CMS). Any message can be added, such as "For issues with your order, contact 1-800-Fabrikam."
-- **Store selector** – This module shows a list of nearby stores where an item is available for pickup. It lets users enter a location to find stores that are nearby. The store selector module is integrated with the Bing Maps Geocoding application programming interface (API) to convert the location to a latitude and longitude. A Bing Maps API key is required and must be added to the Retail shared parameters page in Dynamics 365 Retail. This module supports two properties, **Search radius** and **Terms of service link**. The **Search radius** property defines the search radius for stores, in miles. If no value is specified, the default search radius, 50 miles, is used. If Bings Maps or any external service is used, the **Terms of service link** property can be used to provide a link to the terms of service. A terms of service link is required for the Bing Maps service. 
+- **Store selector** – This module shows a list of nearby stores where an item is available for pickup. It lets users enter a location to find stores that are nearby. For more details refer to [Store Selector module](store-selector.md).
 
 ## Cart module settings
 
