@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Configure ratings and reviews
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic describes how to configure your e-Commerce site to show customer ratings and reviews in Microsoft Dynamics 365 Commerce.

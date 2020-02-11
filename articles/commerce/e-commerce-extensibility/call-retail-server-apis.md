@@ -1,11 +1,12 @@
 ---
 # required metadata
 
+
 title: Call Retail Server APIs
 description: This topic explains how to call application programming interfaces (APIs) for Microsoft Dynamics 365 Retail Server from a data action or directly from module code.
 author: samjarawan
 manager: annbe
-ms.date: 10/25/2019
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -30,7 +31,6 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Call Retail Server APIs
 
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 This topic explains how to call application programming interfaces (APIs) for Microsoft Dynamics 365 Retail Server from a data action or directly from module code.
@@ -41,11 +41,13 @@ To call Retail Server APIs, you must use the Retail Server proxy library that Re
 
 ## Install the Retail Server proxy
 
-The Retail Server proxy is available for download via the Dynamics 365 npm feed. You can get it by adding a reference in the packages.json file.
 
-To install the Retail Server proxy in your software development kit (SDK) development environment, follow these steps.
+The Retail Server proxy is available for download via the Dynamics 365 npm feed and should be added by default. If it isn't there, you can get it by adding a reference in the packages.json file.
 
-1. Determine your current active version of Retail Server. This version will be the version of the Retail Server NuGet package that you use for Retail Server back-end extensibility.
+
+To install the proxy in your software development kit (SDK) development environment, follow these steps.
+
+1. Determine your current active version of Retail Servert. This version will be the version of the Retail Servert NuGet package that you use for back-end extensibility.
 1. In the **package.json** file, add the following entry in the **dependencies** section. (This entry might already be present and have up-to-date version information.)
 
     ```json
@@ -108,10 +110,10 @@ In this example, you will create a module that uses the Retail Server proxy to g
 - Provide a **createInput** method that calls the Retail Server proxy **createInput** method for the desired API and passes it any contextual data that you want (for example, the channel ID).
 - Have the action method of the new data action be the **retailAction** method that is provided by the Retail Server proxy. The **retailAction** method is designed to parse the input that is passed to it and call the corresponding Retail Server proxy API.
 
-Under the **src\\actions** directory, create a file for a new data action. For this example, the file is named **getCategoryList.ts**, and it contains the following code.
+Under the **src\\actions** directory, create a file for a new data action. For this example, the file is named **get-category-list.ts**, and it contains the following code.
 
 ```typescript
-import { IAction, createObservableDataAction, ICreateActionContext, } from '@msdyn365-commerce/core';
+import { createObservableDataAction, IAction, ICreateActionContext } from '@msdyn365-commerce/core';
 import { Category, retailAction } from '@msdyn365-commerce/retail-proxy';
 import { createGetCategoriesInput } from '@msdyn365-commerce/retail-proxy/dist/DataActions/CategoriesDataActions.g';
 
@@ -121,28 +123,40 @@ import { createGetCategoriesInput } from '@msdyn365-commerce/retail-proxy/dist/D
 export default createObservableDataAction({
     action: <IAction<Category[]>>retailAction,
     input: (context: ICreateActionContext) => {
-        console.log('Creating the input');
-        console.log(context);
-        return createGetCategoriesInput({ Paging: { Top: 10 } }, context.requestContext.apiSettings.channelId);
+        return createGetCategoriesInput({ Paging: { Top: 0 } }, context.requestContext.apiSettings.channelId);
     }
 });
 ```
 
-The **getCategoryList.ts** file exports a data action that can be registered on a module to get the first 10 categories from whatever channel has been configured for the project. Because this approach requires much less custom code to make the HTTP call than manual communication with Retail Server, we recommend that you call Retail Server only by using the Retail Server proxy.
 
-The following example shows how the **getCategoryList** data action can be registered in the **"module" \> "dataActions"** node in the module definition file.
+The **get-category-list.ts** file exports a data action that can be registered on a module to get the list of all categories from whatever channel has been configured for the project. Because this approach requires much less custom code to make the HTTP call than manual communication with Retail Server, we recommend that you always call Retail Server by using the Retail Server proxy.
+
+The following example shows how the **get-category-list** data action can be registered in the **"module" \> "dataActions"** node in the module definition file.
+
 
 ```json
 {
     "$type": "contentModule",
     "friendlyName": "Product Feature",
-    "name": "productFeature",
+    "name": "product-feature",
     "description": "Feature module used to highlight a product.",
-    "categories": ["storytelling"],
-    "tags": [""],
+    "categories": [
+        "storytelling"
+    ],
+    "tags": [
+        ""
+    ],
     "dataActions": {
-        "categories":{
-            "path": "../../actions/getCategoryList",
+        "products": {
+            "path": "@msdyn365-commerce-modules/retail-actions/dist/lib/get-simple-products",
+            "runOn": "server"
+        },
+        "productReviews": {
+            "path": "../../actions/getproductreviews",
+            "runOn": "server"
+        },
+        "categories": {
+            "path": "../../actions/get-category-list",
             "runOn": "server"
         }
     },
@@ -158,6 +172,39 @@ The following example shows how the **getCategoryList** data action can be regis
             "default": "left",
             "scope": "module",
             "group": "Layout Properties"
+        },
+        "productTitle": {
+            "type": "string",
+            "friendlyName": "Product Title",
+            "description": "Product placement title"
+        },
+        "productDetails": {
+            "type": "richText",
+            "friendlyName": "Product Details",
+            "description": "Rich text representing the featured product details"
+        },
+        "productImage": {
+            "type": "image",
+            "friendlyName": "Product Image",
+            "description": "Image representing the featured product"
+        },
+        "buttonText": {
+            "type": "string",
+            "friendlyName": "Button Text",
+            "description": "Text to show on the call to action button"
+        },
+        "productIds": {
+            "friendlyName": "Product ID",
+            "description": "Provide a Product Id that the module will display",
+            "type": "string",
+            "scope": "module",
+            "group": "Content Properties"
+        }
+    },
+    "resources": {
+        "resourceKey": {
+            "comment": "resource description",
+            "value": "resource value"
         }
     }
 }
@@ -166,7 +213,8 @@ The following example shows how the **getCategoryList** data action can be regis
 The module **data.ts** file also requires an entry for the return type of the data action. The following example shows a sample module **data.ts** file. After it's implemented, the property can be accessed from the module's view file by using the **this.props.data.** object.
 
 ```typescript
-import { AsyncResult , Category, SimpleProduct } from '@msdyn365-commerce/retail-proxy';
+
+import { AsyncResult, Category, SimpleProduct } from '@msdyn365-commerce/retail-proxy';
 export interface IProductFeatureData {
     products: AsyncResult<SimpleProduct>[];
     categories: AsyncResult<Category[]>;
@@ -175,13 +223,19 @@ export interface IProductFeatureData {
 
 ## Call a Retail Server proxy API directly in module code
 
-The following example shows how to call the **getCategories** Retail API by using the Retail proxy **getCategoriesAsync** wrapper API. This API call returns a list of all categories.
+
+The following example shows how to call the **getCategories** Commerce API by using the Commerce proxy **getCategoriesAsync** wrapper API. This API call returns a list of all categories, and the sample code logs them to the console.
 
 ```typescript
 import * as React from 'react';
-import { IProductFeatureData } from './productFeature.data';
-import { imageAlignment, IProductFeatureProps } from './productFeature.props.autogenerated';
+
 import { getCategoriesAsync } from '@msdyn365-commerce/retail-proxy/dist/DataActions/CategoriesDataActions.g';
+import { IProductFeatureData } from './product-feature.data';
+import { imageAlignment, IProductFeatureProps} from './product-feature.props.autogenerated';
+
+export interface IProductFeatureViewProps extends IProductFeatureProps<{}> {
+    productName: string;
+}
 
 /**
  *
@@ -189,17 +243,33 @@ import { getCategoriesAsync } from '@msdyn365-commerce/retail-proxy/dist/DataAct
  * @extends {React.PureComponent<IProductFeatureProps<IProductFeatureData>>}
  */
 class ProductFeature extends React.PureComponent<IProductFeatureProps<IProductFeatureData>> {
-    public render(): JSX.Element {
-        ...
-        getCategoriesAsync({ callerContext: this.props.context.actionContext },this.props.context.request.apiSettings.channelId)
-            .then(categoryList => {
-                let categories = '';
-                for (let i=0; i < categoryList.length; i++) {
-                    categories += `${categoryList[i].Name}, `;
-                }
-                console.log(categories);
-            })
-...
+    public render(): JSX.Element | null {
+        const {
+            config,
+        } = this.props;
+
+        // set default product info values from config values if available
+        let ProductName = config.productTitle ? config.productTitle : 'No product name defined';
+
+        getCategoriesAsync({ callerContext: this.props.context.actionContext }, this.props.context.request.apiSettings.channelId)
+        .then(categoryList2 => {
+            let categories2 = '';
+            for (let i = 0; i < categoryList2.length; i++) {
+                categories2 += `${categoryList2[i].Name}, `;
+            }
+            console.log(categories2);
+        });
+
+        const ProductFeatureViewProps = {
+            ...this.props,
+            productName: ProductName,
+        };
+
+        return this.props.renderView(ProductFeatureViewProps) as React.ReactElement;
+    }
+}
+
+export default ProductFeature;
 ```
 
 ## Additional resources

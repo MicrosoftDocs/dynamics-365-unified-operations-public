@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.5
 
 # Product recommendations FAQ
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic provides information about processes and tools that you can use to troubleshoot issues that are related to [product recommendations](product-recommendations.md) or their results.

@@ -95,25 +95,25 @@ A custom lookup can be shown for an Entity field.
     -   SysODataCollectionAttribute(str &lt;name&gt;, Types &lt;type&gt;, “Value”)
 -   Return – The method should return a list of strings.
 
-**Example**  
+**Example** 
 
 ```xpp
 public class ExportToExcel_SimpleEntity extends common
 {
     [SysODataActionAttribute("Lookup_StringLookupField", true),
-	SysODataCollectionAttribute("return", Types::String, "Value")]
-	public List lookup_StringLookupField()
-	{
-		List lookupList = new List(Types::String);
-		const int items = 5;
+    SysODataCollectionAttribute("return", Types::String, "Value")]
+    public List lookup_StringLookupField()
+    {
+        List lookupList = new List(Types::String);
+        const int items = 5;
 
-		for (int item = 0; item < items; item++)
-		{
-			lookupList.addEnd(strfmt('%1 - %2 (%3)', this.StringField, this.IntField, item));
-		}
+        for (int item = 0; item < items; item++)
+        {
+            lookupList.addEnd(strfmt('%1 - %2 (%3)', this.StringField, this.IntField, item));
+        }
 
-		return lookupList;
-	}
+        return lookupList;
+    }
 }
 ```
 
@@ -186,51 +186,52 @@ An example of this code can be found on the **LedgerJournalTable** form (**Gener
 [Control("Button")]
 class OpenLinesInExcel
 {
-	/// <summary>
-	/// Opens the current journal in Excel for line entry and editing
-	/// </summary>
-	public void clicked()
-	{
-		super();
 
-		const str templateName = resourceStr(LedgerJournalLineEntryTemplate);
-		DocuTemplate template = DocuTemplate::findTemplate(OfficeAppApplicationType::Excel, templateName);
+    /// <summary>
+    /// Opens the current journal in Excel for line entry and editing
+    /// </summary>
+    public void clicked()
+    {
+        super();
 
-		// Ensure the template was present
-		if (template && template.TemplateID == templateName)
-		{
-			Map filtersToApply = new Map(Types::String, Types::String);
+        const str templateName = resourceStr(LedgerJournalLineEntryTemplate);
+                DocuTemplate template = DocuTemplate::findTemplate(OfficeAppApplicationType::Excel, templateName);
 
-			// Create lines filter
-			ExportToExcelFilterBuilder filterBuilder = new ExportToExcelFilterBuilder(tablestr(LedgerJournalLineEntity));
-			str filterString = filterBuilder.areEqual(fieldstr(LedgerJournalLineEntity, JournalBatchNumber), LedgerJournalTable.JournalNum);
-			filtersToApply.insert(tablestr(LedgerJournalLineEntity), filterString);
+        // Ensure the template was present
+        if (template && template.TemplateID == templateName)
+        {
+            Map filtersToApply = new Map(Types::String, Types::String);
 
-			// Create header filter
-			filterBuilder = new ExportToExcelFilterBuilder(tablestr(LedgerJournalHeaderEntity));
-			filterString = filterBuilder.areEqual(fieldstr(LedgerJournalHeaderEntity, JournalBatchNumber), LedgerJournalTable.JournalNum);
-			filtersToApply.insert(tablestr(LedgerJournalHeaderEntity), filterString);
+            // Create lines filter
+            ExportToExcelFilterBuilder filterBuilder = new ExportToExcelFilterBuilder(tablestr(LedgerJournalLineEntity));
+            str filterString = filterBuilder.areEqual(fieldstr(LedgerJournalLineEntity, JournalBatchNumber), LedgerJournalTable.JournalNum);
+            filtersToApply.insert(tablestr(LedgerJournalLineEntity), filterString);
 
-			// Generate the workbook using the template and filters
-			DocuTemplateRender renderer = new DocuTemplateRender();
-			str documentUrl = renderer.renderTemplateToStorage(template, filtersToApply);
+            // Create header filter
+            filterBuilder = new ExportToExcelFilterBuilder(tablestr(LedgerJournalHeaderEntity));
+            filterString = filterBuilder.areEqual(fieldstr(LedgerJournalHeaderEntity, JournalBatchNumber), LedgerJournalTable.JournalNum);
+            filtersToApply.insert(tablestr(LedgerJournalHeaderEntity), filterString);
 
-			// Pass the workbook to the user
-			if (documentUrl)
-			{
-				Browser b = new Browser();
-				b.navigate(documentUrl, false, false);
-			}
-			else
-			{
-				error(strFmt("@ApplicationFoundation:DocuTemplateGenerationFailed", templateName));
-			}
-		}
-		else
-		{
-			warning(strFmt("@ApplicationFoundation:DocuTemplateNotFound", templateName));
-		}
-	}
+            // Generate the workbook using the template and filters
+            DocuTemplateRender renderer = new DocuTemplateRender();
+            str documentUrl = renderer.renderTemplateToStorage(template, filtersToApply);
+
+            // Pass the workbook to the user
+            if (documentUrl)
+            {
+                Browser b = new Browser();
+                b.navigate(documentUrl, false, false);
+            }
+            else
+            {
+                error(strFmt("@ApplicationFoundation:DocuTemplateGenerationFailed", templateName));
+            }
+        }
+        else
+        {
+            warning(strFmt("@ApplicationFoundation:DocuTemplateNotFound", templateName));
+        }
+    }
 
 }
 ```
@@ -246,48 +247,49 @@ To programmatically add generated and template Open in Excel options, Open in Ex
 public class FMRental extends FormRun implements ExportToExcelIGeneratedCustomExport, ExportToExcelITemplateCustomExport
 {    
 ...
-	public List getExportOptions()
-	{
-		List exportOptions = new List(Types::Class);
 
-		ExportToExcelExportOption exportOption = ExportToExcelExportOption::construct(ExportToExcelExportType::CustomGenerated, int2str(1));
-		exportOption.setDisplayNameWithDataEntity(tablestr(FMRentalEntity));
-		exportOptions.addEnd(exportOption);
+    public List getExportOptions()
+    {
+        List exportOptions = new List(Types::Class);
 
-		ExportToExcelExportOption exportOption2 = ExportToExcelExportOption::construct(ExportToExcelExportType::CustomTemplate, int2str(2));
-		exportOption2.displayName("Analyze rentals");
-		exportOptions.addEnd(exportOption2);
+        ExportToExcelExportOption exportOption = ExportToExcelExportOption::construct(ExportToExcelExportType::CustomGenerated, int2str(1));
+        exportOption.setDisplayNameWithDataEntity(tablestr(FMRentalEntity));
+        exportOptions.addEnd(exportOption);
 
-		return exportOptions;
-	}
+        ExportToExcelExportOption exportOption2 = ExportToExcelExportOption::construct(ExportToExcelExportType::CustomTemplate, int2str(2));
+        exportOption2.displayName("Analyze rentals");
+        exportOptions.addEnd(exportOption2);
 
-	public ExportToExcelDataEntityContext getDataEntityContext(ExportToExcelExportOption _exportOption)
-	{
-		ExportToExcelDataEntityContext context = null;
+        return exportOptions;
+    }
 
-		if (_exportOption.id() == int2str(1))
-		{
-			context = ExportToExcelDataEntityContext::construct(tablestr(FMRentalEntity), tablefieldgroupstr(FMRentalEntity, AutoReport));
-		}
+    public ExportToExcelDataEntityContext getDataEntityContext(ExportToExcelExportOption _exportOption)
+    {
+        ExportToExcelDataEntityContext context = null;
 
-		return context;
-	}
+        if (_exportOption.id() == int2str(1))
+        {
+            context = ExportToExcelDataEntityContext::construct(tablestr(FMRentalEntity), tablefieldgroupstr(FMRentalEntity, AutoReport));
+        }
 
-	public System.IO.Stream getTemplate(ExportToExcelExportOption _exportOption)
-	{
-		System.IO.Stream stream = null;
+        return context;
+    }
 
-		if (_exportOption.id() == int2str(2))
-		{
-			stream = Microsoft.Dynamics.Ax.Xpp.MetadataSupport::GetResourceContentStream(resourcestr(FMRentalEditableExportTemplate));
-		}
+    public System.IO.Stream getTemplate(ExportToExcelExportOption _exportOption)
+    {
+        System.IO.Stream stream = null;
 
-		return stream;
-	}
+        if (_exportOption.id() == int2str(2))
+        {
+            stream = Microsoft.Dynamics.Ax.Xpp.MetadataSupport::GetResourceContentStream(resourcestr(FMRentalEditableExportTemplate));
+        }
 
-	public void updateTemplateSettings(ExportToExcelExportOption _exportOption, Microsoft.Dynamics.Platform.Integration.Office.ExportToExcelHelper.SettingsEditor _settingsEditor)
-	{
-	}
+        return stream;
+    }
+
+    public void updateTemplateSettings(ExportToExcelExportOption _exportOption, Microsoft.Dynamics.Platform.Integration.Office.ExportToExcelHelper.SettingsEditor _settingsEditor)
+    {
+    }
 ...
 ```
 

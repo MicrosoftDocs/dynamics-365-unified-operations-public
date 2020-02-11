@@ -53,7 +53,7 @@ This topic explains how to subscribe to the preview/partner offer and deploy an 
     > [!IMPORTANT]
     > For this release, we ask that you not use any existing credentials that are associated with other online services, such as Office 365 or Microsoft Dynamics CRM Online.
 
-- **Microsoft account** – Microsoft accounts were formerly known as Passport accounts or Windows Live ID accounts. Currently, Microsoft accounts can't be used with Finance and Operations applications, Microsoft Dynamics 365 Retail, or other Microsoft Online Services. However, Microsoft accounts are still required for Microsoft Connect and other Microsoft Business Solutions sites, such as CustomerSource, PartnerSource, Information Source, and Microsoft Dynamics Community. You will continue to use your Microsoft account to access these services.
+- **Microsoft account** – Microsoft accounts were formerly known as Passport accounts or Windows Live ID accounts. Currently, Microsoft accounts can't be used with Finance and Operations applications, Microsoft Dynamics 365 Commerce, or other Microsoft Online Services. However, Microsoft accounts are still required for Microsoft Connect and other Microsoft Business Solutions sites, such as CustomerSource, PartnerSource, Information Source, and Microsoft Dynamics Community. You will continue to use your Microsoft account to access these services.
 - **Microsoft Office 365 admin center** – Office 365 admin center is the subscription management portal that Office 365 provides for administrators. Office 365 admin center is used to provide management functions for users and subscriptions.
 - **Environments** – You can deploy as many single instances of a virtual machine (VM) as you require. We call these instances *environments*.
 
@@ -80,12 +80,12 @@ To use LCS to manage your environments, you must create a new project.
 3. Sign in by using the account that you used to subscribe.
 4. Select the plus sign (**+**) to create a new project.
 
-    [![Create a project](./media/11-1024x473.jpg)](./media/11.jpg)
+    [![Create a project](./media/11.jpg)](./media/11.jpg)
 
 5. Select the project type.
 6. Enter the project information, and then select **Create**.
 
-    If you plan to evaluate Retail, be sure to select **Microsoft Dynamics 365 Retail** in the **Product name** field.
+    If you plan to evaluate Commerce, be sure to select **Microsoft Dynamics 365 Commerce** in the **Product name** field.
 
     The new project for managing your instance is created.
 

@@ -101,7 +101,7 @@ The following procedure shows how a user in either the System administrator or E
 2. Close the page.
 
 ## Change status of the current version of format configuration
-    * In the next steps, you’ll change the status of the format configuration from Draft to Completed to make it available for payment document generation.  
+In the next steps, you’ll change the status of the format configuration from Draft to Completed to make it available for payment document generation.  
 1. Click Change status.
 2. Click Complete.
 3. In the Description field, type a value.
@@ -111,7 +111,7 @@ The following procedure shows how a user in either the System administrator or E
     * Note that the configuration is saved as completed version 1.1: version 1 of the format based on the version 1 of the data model.  
 
 ## Define effective date for completed version of format
-    * Each format version can be configured as available for usage starting from a certain date. When more than one format version is active on a certain date, the latest format (based on version number) will be selected for usage. The session date value is used for proper version selection.  
+Each format version can be configured as available for usage starting from a certain date. When more than one format version is active on a certain date, the latest format (based on version number) will be selected for usage. The session date value is used for proper version selection.  
 
 ## Restrict access to created format from companies
 1. Expand the ISO Country/region codes section.

@@ -90,6 +90,7 @@ On the new tenant, you will get a new LCS project that you must initiate and set
 6. Re-import all other users that have the correct security identifier (SID) and identity provider.
 7. Run the following commands to update the tenant ID in the appropriate tables:
 
+
 	```sql
     select VALUE from SYSSERVICECONFIGURATIONSETTING where name = 'TENANTID'
     select TENANTID from POWERBICONFIG
@@ -97,7 +98,7 @@ On the new tenant, you will get a new LCS project that you must initiate and set
     select TENANTID from B2BINVITATIONCONFIG
     select TENANTID from RETAILSHAREDPARAMETERS
 	```
-	
+
 8. Fully configure the environments. As part of this step, configure the integration endpoints.
 9. Perform smoke tests on the user acceptance testing (UAT) environment in the new LCS project. These tests should focus on user sign-in, integrations, workflows, printing, reporting, and similar processes that depend on configuration and user information.
 10. If you already had a production environment deployed, you must open a support request to move it to the new tenant after you've finished moving all the sandbox environments and completed UAT. The process of moving a production environment to a new tenant requires an extended downtime of 48 to 72 hours.

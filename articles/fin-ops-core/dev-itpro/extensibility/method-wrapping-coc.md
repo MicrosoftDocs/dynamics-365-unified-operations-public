@@ -38,7 +38,7 @@ The functionality for class extension, or class augmentation, has been improved.
 
 For example, a model contains the following code.
 
-```
+```xpp
 class BusinessLogic1
 {
     str doSomething(int arg) 
@@ -50,7 +50,7 @@ class BusinessLogic1
 
 You can now augment the functionality of the **doSomething** method inside an extension class by reusing the same method name. An extension class must belong to a package that references the model where the augmented class is defined.
 
-```
+```xpp
 [ExtensionOf(classStr(BusinessLogic1))]
 final class BusinessLogic1_Extension
 {
@@ -69,7 +69,7 @@ In this example, the wrapper around **doSomething** and the required use of the 
 
 We now run the following code.
 
-```
+```xpp
 BusinessLogic1 object = new BusinessLogic1();
 info(object.doSomething(33));
 ```
@@ -95,7 +95,7 @@ Methods that have default parameters can be wrapped by extension classes. Howeve
 
 For example, the following simple class has a method that has a default parameter.
 
-``` 
+```xpp
 class Person 
 {
     public void salute(str message = "Hi") {...}
@@ -104,7 +104,7 @@ class Person
 
 In this case, the wrapper method must resemble the following example.
 
-```
+```xpp
 [ExtensionOf(classStr(Person))]
 final class APerson_Extension
 {
@@ -122,7 +122,7 @@ Instance and static methods can be wrapped by extension classes. If a static met
 
 For example, we have the following **A** class.
 
-```
+```xpp
 class A 
 {
     public static void aStaticMethod(int parameter1)
@@ -134,7 +134,7 @@ class A
  
 In this case, the wrapper method must resemble the following example.
 
-```
+```xpp
 [ExtensionOf(classStr(A)]
 final class An_Extension
 {
@@ -168,7 +168,7 @@ Here are some important rules:
 ### Wrapping a base method in an extension of a derived class
 The following example shows how to wrap a base method in an extension of a derived class. For this example, the following class hierarchy is used.
 
-```
+```xpp
 class A
 {
     public void salute(str message)
@@ -183,7 +183,7 @@ class C extends A {}
 
 Therefore, there is one base class, **A**. Two classes, **B** and **C**, are derived from **A**. We will augment or create an extension class of one of the derived classes (in this case, **B**), as shown here.
 
-```
+```xpp
 [ExtensionOf(classStr(B))]
 final class B_Extension
 {
@@ -199,7 +199,7 @@ Although the **B_Extension** class is an extension of **B**, and **B** doesn't h
 
 This behavior becomes clearer if we implement a method that uses these three classes.
 
-```
+```xpp
 class ProgramTest 
 {
     public static void main(Args args)
@@ -225,7 +225,7 @@ As of Platform update 9, you can access protected members from extension classes
 ### The Hookable attribute
 If a method is explicitly marked as **[Hookable(false)]**, the method can't be wrapped in an extension class. In the following example, **anyMethod** can't be wrapped in a class that augments **AnyClass1**.
 
-```
+```xpp
 class AnyClass1 
 {
     [HookableAttribute(false)]
@@ -238,7 +238,7 @@ Public and protected methods that are marked as **final** can't be wrapped in ex
 
 In the following example, the **doSomething** method is explicitly marked as non-wrappable, even though it's a public method. The **doSomethingElse** method is explicitly marked as wrappable, even though it's a final method.
 
-```
+```xpp
 class AnyClass2 
 {
     [Wrappable(false)]

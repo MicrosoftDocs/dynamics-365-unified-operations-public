@@ -78,19 +78,23 @@ The legacy **info()**, **warning()**, and **error()** APIs are still supported. 
 
 [![Message bar types](./media/messaging_messagebartypes.jpg)](./media/messaging_messagebartypes.jpg) 
 
-**Note:** If the messaging API is called from a slider dialog, but that slider dialog is closed before the message appears, the message is shown in a message bar on the slider dialog's parent page. If that slider dialog is closed before the message appears, and there is no parent page (that is, the parent is a workspace), the message is routed to the Message Center. The messaging API never fails to show a message. If an appropriate host page isn't found, the message is sent to the Message Center.
+> [!NOTE]
+> If the messaging API is called from a slider dialog, but that slider dialog is closed before the message appears, the message is shown in a message bar on the slider dialog's parent page. If that slider dialog is closed before the message appears, and there is no parent page (that is, the parent is a workspace), the message is routed to the Message Center. The messaging API never fails to show a message. If an appropriate host page isn't found, the message is sent to the Message Center.
 
 ## The Message() API for explicit add and remove messages
 The messaging system supports the legacy validation message APIs (**info()**, **warning()**/**checkfailed()**, and **error()**), and deterministically routes messages either to a message bar or to the Message Center. The messaging system also clears message bar messages that are related to data validation when the validation is rerun. Additionally, the messaging system includes a new **Message()** API that lets developers explicitly add and remove messages. This API is useful for displaying informational messages about aspects of the user's experience that aren't necessarily related to data validation. In this case, the message should be shown when the current record is displayed.
 
 ![Example of Message API used for informational message](./media/messaging_singlemessagebarinfo.jpg)
 
-    messageId = Message::Add(MessageSeverity::Informational, "The customer is marked as inactive");
+```xpp
+messageId = Message::Add(MessageSeverity::Informational, "The customer is marked as inactive");
+```
 
 The message can then be cleared when a new record is shown on the page.
 
-    Message::Remove(messageId);
-
+```xpp
+Message::Remove(messageId);
+```
 
 The following messaging types are supported: **MessageSeverity::Info**, **MessageSeverity::Warning**, and **MessageSeverity::Error**. Messages that use the **Message()** API are also deterministic. They can be routed to a message bar or the Message Center.
 
@@ -158,18 +162,20 @@ Messages of the **error** type block the user’s interaction by overlaying the 
 ## Messaging from dialogs and slider dialogs
 The deterministic messaging system tries to send messages to the current page. However, not every call from a dialog or slider dialog is routed to that dialog or slider. In some cases, the messaging system sends the message to the parent page instead. This behavior can occur when the messaging system is called while the dialog or slider is being closed. In some cases, the messaging system can be called when the close process for the dialog or slider is started, but the client interrupts the close process for valid reasons. Therefore, there is a "point of no return," after which the messaging system no longer tries to send a message to the dialog or slider, and instead sends the message to the parent page. When the user clicks the **OK** button on the form is entering its closing sequence, shown in the code example that follows.
 
-    closeOK()
-    {
-        // current form
-        super(); // calls close()
-        // parent or message center
-    }
-    Close()
-    {
-        // current form
-        super();// point of no return
-        // parent or message center
-    }
+```xpp
+closeOK()
+{
+    // current form
+    super(); // calls close()
+    // parent or message center
+}
+Close()
+{
+    // current form
+    super();// point of no return
+    // parent or message center
+}
+```
 
 If the client calls **closeOK()** or **close()** directly, then the final result might be the page or the parent page.
 
@@ -197,14 +203,17 @@ If the collection contains one or more calls to **error()**, the message bar is 
 
 **Example**
 
-    myMethod()
-    {
-        Setprefix("Posting Results");
-        Setprefix("Invoice Account: DE-001);
-        Info("Invoice FTI-000002 has been posted);
-    }
+```xpp
+myMethod()
+{
+    Setprefix("Posting Results");
+    Setprefix("Invoice Account: DE-001);
+    Info("Invoice FTI-000002 has been posted);
+}
+```
 
-**Note:** If a collection contains only a parent and a single message, that single message is sent to a message bar, and no SetPrefix window is used.
+> [!NOTE]
+> If a collection contains only a parent and a single message, that single message is sent to a message bar, and no SetPrefix window is used.
 
 ## SetPrefix() and asynchronous processes
 The use of **SetPrefix()** is also deterministic. In other words, if you use **SetPrefix()**, and there is no page context (for example, an asynchronous batch operation), the notification of results is sent to the Message Center, which isn't associated with any page.

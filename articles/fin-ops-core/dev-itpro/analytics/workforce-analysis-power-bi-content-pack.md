@@ -18,7 +18,7 @@ ms.search.form: HcmWorkforceWorkspace
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations, Talent
+ms.search.scope: Core, Operations, Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 264084
 ms.assetid: 8e700583-3a7d-4f5f-9ac8-58c4feed1a02
@@ -40,7 +40,7 @@ This topic describes the **Workforce metrics** Microsoft Power BI content. It ex
 The **Workforce metrics** Power BI content appears in the **Personnel management** workspace if you use one of these products:
 
 - Microsoft Dynamics 365 Finance
-- Microsoft Dynamics 365 Talent
+- Microsoft Dynamics 365 Human Resources
 
 ## Metrics that are included in the Power BI content
 The following table lists the metrics that are shown on each report.

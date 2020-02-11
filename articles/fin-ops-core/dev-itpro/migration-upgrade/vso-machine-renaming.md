@@ -45,10 +45,12 @@ Rename and restart the machine before you start development or connect to Azure 
 ## Update the server name in SQL Server
 Update the server name in Microsoft SQL Server 2016 by running the following commands. 
 
-    sp_dropserver [old_name];
-    GO
-    sp_addserver [new_name], local;
-    GO
+```sql
+sp_dropserver [old_name];
+GO
+sp_addserver [new_name], local;
+GO
+```
 
 In these commands, be sure to replace **old\_name** with the old name of the server and **new\_name** with the new name. By default, the old name is **MININT-F36S5EH**, but you can run **select @@servername** to get the old name. Additionally, be sure to restart the SQL Server service after the commands have finished running.
 
@@ -63,20 +65,28 @@ Update the Azure Storage Emulator, and make sure that it's running. From the **S
 
 This command starts the emulator.
 
-    AzureStorageEmulator.exe start
+```Console
+AzureStorageEmulator.exe start
+```
 
 This command verifies that the emulator is running.
 
-    AzureStorageEmulator.exe status
+```Console
+AzureStorageEmulator.exe status
+```
 
 Try the **init** option with the **-server** switch or the **-forcecreate** switch. Be sure to replace **new\_name** with the new name.
 
-    AzureStorageEmulator.exe init -server new_name
-    AzureStorageEmulator.exe init -forcecreate
+```Console
+AzureStorageEmulator.exe init -server new_name
+AzureStorageEmulator.exe init -forcecreate
+```
 
 If the **init** command fails, delete the storage emulator database by using SQL Server Management Studio. Then try the following command.
 
-    AzureStorageEmulator.exe init
+```Console
+AzureStorageEmulator.exe init
+```
 
 When you run this command, you might receive the following error message: "Error: Cannot create database." However, the emulator will usually still start. You just need the emulator to start.
 
@@ -85,5 +95,7 @@ Update the server name for financial reporting by using a script that is include
 
 Open a Microsoft Windows PowerShell command window as an admin, and run the following command. This command contains the default passwords that might have to be updated. Be sure to replace **new\_name** with the new name.
 
-    cd <update folder>\MROneBox\Scripts\Update
-    .\ConfigureMRDatabase.ps1 -NewAosDatabaseName AxDB -NewAosDatabaseServerName new_name -NewMRDatabaseName ManagementReporter -NewAxAdminUserPassword AOSWebSite@123 -NewMRAdminUserName MRUser -NewMRAdminUserPassword MRWebSite@123 -NewMRRuntimeUserName MRUSer -NewMRRuntimeUserPassword MRWebSite@123 -NewAxMRRuntimeUserName MRUser -NewAxMRRuntimeUserPassword MRWebSite@123
+```powershell
+cd <update folder>\MROneBox\Scripts\Update
+.\ConfigureMRDatabase.ps1 -NewAosDatabaseName AxDB -NewAosDatabaseServerName new_name -NewMRDatabaseName ManagementReporter -NewAxAdminUserPassword AOSWebSite@123 -NewMRAdminUserName MRUser -NewMRAdminUserPassword MRWebSite@123 -NewMRRuntimeUserName MRUSer -NewMRRuntimeUserPassword MRWebSite@123 -NewAxMRRuntimeUserName MRUser -NewAxMRRuntimeUserPassword MRWebSite@123
+```

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up Credit and collections
+title: Set up collections
 description: This article explains how to set up the collections functionality.
 author: ShivamPandey-msft
 manager: AnnBe
@@ -30,11 +30,23 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Set up Credit and collections
+# Set up collections
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to set up the collections functionality.
+This article explains how to set up the collections functionality. You must complete some setup steps when using collections capability. There are also some optional capabilities, including customer pools and collections teams. 
+
+- Aging period definitions
+- Aging snapshots
+- Journal names
+- Reason code for writeoff transactions
+- Collections agents
+- Writeoff account
+- NSF (not sufficient funds) information
+- Outlook settings for those who use the **Collections** page
+- Email addresses
+
+These points are discussed in more detail throughout the rest of this topic. 
 
 Set up aging period definitions
 -------------------------------
@@ -51,10 +63,10 @@ You can set up customer pools to represent groups of customers. You can use cust
 If multiple people in your organization do collections work, you can set up a collections team. You can select the team on the **Accounts receivable parameters** page. If you don't create a collections team, a team is created automatically when you set up collections agents on the **Collections agent** page.
 
 ## Set up a collections case category
-If you will use cases to organize your collections work, set up a case category that has the **Collections** category type. This setup is required only if you want to use the case functionality on the **Collections** page.
+To use cases to organize your collections work, set up a case category that has the **Collections** category type. This is required only if you want to use the case functionality on the **Collections** page.
 
 ## Set up journal names (settlement, writeoff, and NSF)
-Set up the journal names that are used when transactions are processed on the **Collections** page. This processing includes settlement of a transaction, write-off of a transaction, and processing of a not sufficient funds (NSF) payment.
+Set up the journal names that are used when transactions are processed on the **Collections** page. This processing includes settling a transaction, writing off of a transaction, and processing a not sufficient funds (NSF) payment.
 
 | Description | Journal type     |
 |-------------|------------------|
@@ -83,16 +95,19 @@ Update bank accounts so that they have the correct journal when NSF payments are
 ## Set up Outlook settings for users of the Collections page
 Before workers can create activities or send email messages by using the **Collections** page, you must verify that the **Microsoft Outlook synchronization** configuration key is selected, and that Outlook synchronization is set up for those workers.
 
-## Set up email and address settings for collections customer contacts
-Set up email addresses for customer contacts if you want to send email messages to those contacts from the **Collections** page. The collections contact is used as the default contact on the **Collections** page. You can set up a statement address for a customer if statements should use an address other than the primary address. 
+## Set up email and addresses
+You can use email to communicate with both customers and salespeople about collections issues to send email messages from the **Collections** page. 
+
+### Set up email and address settings for collections customer contacts
+Set up email addresses for customer contacts to send email messages to those contacts from the **Collections** page. The collections contact is used as the default contact on the **Collections** page. You can set up a statement address for a customer if statements should use an address other than the primary address. 
 
 On the **Credit and Collections** FastTab for a customer, in the **Collections contact** field, select the person in the customer organization who works with your collections agent. This person is used as the default contact on the **Collections** page, and email messages are sent to him or her. 
 
 > [!NOTE] 
 > If a collections contact isn't specified for a customer, the primary contact for the customer is used. If a primary contact isn't specified, email messages are sent to the first address that is listed on the **Contacts** page.
 
-## Set up email settings for salespeople
-Set up email addresses for salespeople if you want to send email messages to salespeople from the **Collections** page. Set up an email address for each sales representative in each commission sales group. The sales representative who has the **Contact** option selected is the default salesperson that email messages are sent to. 
+### Set up email settings for salespeople
+Set up email addresses for salespeople to send email messages to salespeople from the **Collections** page. Set up an email address for each sales representative in each commission sales group. The sales representative who has the **Contact** option selected is the default salesperson that email messages are sent to. 
 
 If a sales representative isn't specified, the primary salesperson for the customer organization is used. If a primary salesperson isn't specified, email messages are sent to the first salesperson who is listed on the page.
 

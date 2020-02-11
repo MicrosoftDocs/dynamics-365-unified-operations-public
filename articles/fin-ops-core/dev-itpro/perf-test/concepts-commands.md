@@ -49,7 +49,7 @@ In this naming convention:
 
 ## Examples
 
-```
+```xpp
 AtlCommandInventMark
 
 AtlCommandSalesReturnOrderLineRegister
@@ -63,7 +63,7 @@ Command objects should provide fluent setter methods that are used to set the pa
 
 ### Example
 
-```
+```xpp
 salesLine.pick().setInventDims([locationOut]).setQty(pickedQty).execute();
 ```
 
@@ -89,7 +89,7 @@ In this naming convention, `<CommandParameterName>` is the name of the parameter
 
 ### Examples
 
-```
+```xpp
 onHandAdjustment.forItem(item).setQuantity(10).execute();
 	
 picking.forSalesLine(salesLine).setInventDims([warehouse, batch1]).setQuantity(10).execute();

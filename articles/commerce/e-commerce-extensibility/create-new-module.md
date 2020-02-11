@@ -5,7 +5,7 @@ title: Create a new module
 description: This topic describes how to create a new module in Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 02/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -30,7 +30,6 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Create a new module
 
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 This topic describes how to create a new module in Dynamics 365 Commerce.
@@ -43,10 +42,10 @@ To create a new module in Commerce, the online Software Development Kit (SDK) pr
 
 ## Example
 
-The following example shows how to create a module that is named productFeature.
+The following example shows how to create a module that is named **product-feature**.
 
 ```
-yarn msdyn365 add-module productFeature
+yarn msdyn365 add-module product-feature
 ```
 
 It can take 20 to 30 seconds to create a module and generate all the template files for it. After the command has finished running, you can find the new module in the \\src\\modules\\ directory.
@@ -58,16 +57,16 @@ To preview the new module in a local web browser, follow these steps.
 1. At a command prompt, go to your root SDK folder, and run the **yarn start** command. Here is an example.
 
     ```
-    c:\repos\MyEcommerceSite\yarn start
+    c:\repos\Msdyn365.Commerce.Online\yarn start
     ```
 
-2. In a web browser, open the following URL to view the module: `https://localhost:4000/modules?type=productFeature`. Notice the module name in the **type=MODULE\_NAME** query string parameter.
+2. In a web browser, open the following URL to view the module: `https://localhost:4000/modules?type=product-feature`. Notice the module name in the **type=MODULE\_NAME** query string parameter.
 
 ![Module preview](media/create-new-module.png)
 
 ## Module naming conventions
 
-You should use camel case (camelCase) for module names. You should also use whole words whenever you can.
+Module names are case-insensitive. We recommended that you use whole words for module names whenever you can.
 
 ## Additional resources
 
@@ -76,8 +75,6 @@ You should use camel case (camelCase) for module names. You should also use whol
 [Add module configuration fields](add-module-config-fields.md)
 
 [Preview and debug a module](test-module.md)
-
-[Debug modules](debug-modules.md)
 
 [Test modules by using module mocks](test-module-mock.md)
 

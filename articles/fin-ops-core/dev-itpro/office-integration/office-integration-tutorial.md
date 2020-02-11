@@ -205,6 +205,7 @@ Templates that are registered as system-defined templates are loaded at deployme
 11. Open **FMTemplateRegistrations**. The FMTemplateRegistrations.xpp code file should be shown.
 12. Copy one of the existing lines, and change it by providing the template name, resource name, description, display name, and **Apply current record filter** and **List in Open in Office menu** values. The display name is the text that appears as an Open in Excel option. The description appears when the user holds the pointer over that item. The display name and description can be either labels or static strings. The code should resemble the following example.
 
+
      ```xpp
      this.addTemplate(
          OfficeAppApplicationType::Excel, 
@@ -285,12 +286,12 @@ You can create custom lookups to show data options when an enum or relationship 
 4.  Add the **lookup\_Country** code from the following example.
 
     ```xpp
-	public class FMCustomerEntity extends common
-	{
-		[SysODataActionAttribute("FMCustomerEntityCountryCustomLookup", false), //Name in $metadata
-		SysODataCollectionAttribute("_fields", Types::String), //Types in context
-		SysODataFieldLookupAttribute("Country")] //Name of field
-		public static str lookup_Country(Array _fields)
+	  public class FMCustomerEntity extends common
+  	{
+	  	[SysODataActionAttribute("FMCustomerEntityCountryCustomLookup", false), //Name in $metadata
+	  	SysODataCollectionAttribute("_fields", Types::String), //Types in context
+	  	SysODataFieldLookupAttribute("Country")] //Name of field
+	  	public static str lookup_Country(Array _fields)
 		{
 			OfficeAppCustomLookupListResult result = new OfficeAppCustomLookupListResult();
 
@@ -302,9 +303,9 @@ You can create custom lookups to show data options when an enum or relationship 
 
 			return result.serialize();
 		}
-	}
+	  }
     ```
-	
+
 5.  Save the code. If you're asked whether you want to overwrite the existing code or save is as a new file, click **Overwrite**.
 6.  Build the solution (press Ctrl+Shift+B).
 7.  Verify that the change was successful. In Internet Explorer, navigate to **Fleet Management** &gt; **Customers** &gt; **Customer**.

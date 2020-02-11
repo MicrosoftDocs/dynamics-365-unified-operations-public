@@ -50,7 +50,7 @@ The System Administrator account in the target environment (UserId of 'Admin') i
 
 If you have used the Admin User Provisioning Tool on your environment to change the web.config file to a different value, it may not match what is in Lifecycle Services.  If you require a different account, you will need to deallocate and delete the target sandbox, and redeploy by selecting another account. After this, you can perform another refresh database action to restore the data.
 
-## Steps to complete after a database restore for environments that use Retail functionality
+## Steps to complete after a database restore for environments that use Commerce functionality
 [!include [environment-reprovision](../includes/environment-reprovision.md)]
 
 ## Known issues

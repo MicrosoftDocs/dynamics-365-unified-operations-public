@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ## Migrate your code
 
-To migrate your code from Dynamics AX 2012 to Dynamics 365 Finance, Supply Chain Management, or Retail, use the "Migrate and Create Solutions" methodology in Lifecycle Services.
+To migrate your code from Dynamics AX 2012 to Dynamics 365 Finance, Supply Chain Management, or Commerce, use the "Migrate and Create Solutions" methodology in Lifecycle Services.
 
 ## Key concepts
 

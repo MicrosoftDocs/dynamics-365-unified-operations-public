@@ -57,23 +57,25 @@ Here are some guidelines to follow when you write extensible code:
 			
         In the following example, **findOrderHeader** is replaceable.
 
-            private Common findOrderHeader(boolean _forUpdate)
+        ```xpp
+        private Common findOrderHeader(boolean _forUpdate)
+		{
+		    switch (this.InventTransType)
 		    {
-		        switch (this.InventTransType)
-		        {
-		            case InventTransType::Sales:
-		                return this.salesTable(_forUpdate);
+		        case InventTransType::Sales:
+		            return this.salesTable(_forUpdate);
 
-		            default: 
-		                return this.findOrderHeaderDefault(_forUpdate);
-		        }
+		        default: 
+		            return this.findOrderHeaderDefault(_forUpdate);
 		    }
+		}
 
-		    [Replaceable]
-		    protected Common findOrderHeaderDefault(boolean _forUpdate)
-		    {
-		        throw error(Error::wrongUseOfFunction(funcName()));
-		    }
+		[Replaceable]
+		protected Common findOrderHeaderDefault(boolean _forUpdate)
+		{
+		    throw error(Error::wrongUseOfFunction(funcName()));
+		}
+        ```
 
 + **While** – Avoid **while** blocks in the middle of methods, because it becomes more difficult to extend the **while** blocks. Ideally, logic in a **while** block should be in a separate method that enables extensions.
 

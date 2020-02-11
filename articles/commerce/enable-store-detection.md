@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Enable location-based store detection
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic describes how to turn on location-based store detection for your Dynamics 365 Commerce site.

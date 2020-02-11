@@ -50,7 +50,9 @@ To complete these steps, you must first complete the steps in the “Create a co
     The version of the format with the status of Completed will be used by Proseware, Inc. for customization.  
 
 ## Create a new configuration for your custom format of electronic document
-Proseware, Inc. received version 1.1 of BACS (UK fictitious) configuration that contains the initial format to generate electronic payment documents from Litware, Inc. in accordance to their service subscription. Proseware, Inc. wants to start using this as a standard for their country but some customization is required to support specific regional requirements. Proseware, Inc. also wants to keep the ability to upgrade a custom format as soon as a new version of it (with changes to support new country-specific requirements) comes from Litware, Inc. and they want to perform this upgrade with the lowest cost.  To do this, Proseware, Inc. needs to create a configuration using the Litware, Inc. configuration BACS (UK fictitious) as a base.  
+Proseware, Inc. received version 1.1 of BACS (UK fictitious) configuration that contains the initial format to generate electronic payment documents from Litware, Inc. in accordance to their service subscription. Proseware, Inc. wants to start using this as a standard for their country but some customization is required to support specific regional requirements. Proseware, Inc. also wants to keep the ability to upgrade a custom format as soon as a new version of it (with changes to support new country-specific requirements) comes from Litware, Inc. and they want to perform this upgrade with the lowest cost.  
+
+To do this, Proseware, Inc. needs to create a configuration using the Litware, Inc. configuration BACS (UK fictitious) as a base.  
 
 1. Close the page.
 2. Select Proseware, Inc. to make it an active provider.
@@ -189,7 +191,10 @@ Change the status of the updated base format configuration from Draft to Complet
 5. In the list, find and select the desired record.
 
 ## Change the base version for the custom format configuration
-Proseware, Inc. is informed that a new version 1.2 of BACS (UK fictitious) configuration is available to generate electronic payment documents in accordance to recently announced country-specific requirements. Proseware, Inc. wants to start using it as a standard for the country. To do this, Proseware, Inc. needs to change the base configuration version for the custom configuration BACS (UK fictitious custom). Instead of version 1.1 of BACS (UK fictitious) use new version 1.2.  
+
+Proseware, Inc. is informed that a new version 1.2 of BACS (UK fictitious) configuration is available to generate electronic payment documents in accordance to recently announced country-specific requirements. Proseware, Inc. wants to start using it as a standard for the country.  
+
+To do this, Proseware, Inc. needs to change the base configuration version for the custom configuration BACS (UK fictitious custom). Instead of version 1.1 of BACS (UK fictitious) use new version 1.2.  
 
 1. Go to Organization administration > Workspaces > Electronic reporting.
 2. Select the Proseware, Inc. provider to mark it as active.
