@@ -24,7 +24,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: 
-ms.author: 
+ms.author: ramasri
 ms.dyn365.ops.version: 
 ms.search.validFrom: 2020-01-06
 
