@@ -28,9 +28,9 @@ After you've finished downloading the ER configurations from LCS, follow these s
 4. In the **Electronic reporting** workspace, select **Configurations > Setup.**
 5. On the **Conditions** tab, select version 32.14, and create the configuration that will let you set up the mapping between main accounts that are configured in your company and the related tax authority classification of the DAS-2 report:
 
-	a. In the Lookup result field, select the related classification.
-	b. In the Main account field, select the main account used to post the related transactions that belongs to this classification.
-	c. Set the **Status** parameter to *Completed*.
+-In the Lookup result field, select the related classification
+-In the Main account field, select the main account used to post the related transactions that belongs to this classification
+-Set the **Status** parameter to *Completed*.
 
 ### Example
 
