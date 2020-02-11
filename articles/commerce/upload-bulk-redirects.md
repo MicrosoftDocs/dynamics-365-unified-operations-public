@@ -47,38 +47,38 @@ Commerce supports a simple yet specific CSV file to handle the redirect URLs. Th
 
 The schema of the CSV is as follows:
 
-**Source URL, Target URL, Redirection Type (301/302), case sensitivity (default false)**
+``source URL, target URL, redirect type (301/302), case sensitivity (default false)``
 
-To review these fields further:
+- **Source URL**: This is the original URL to be redirected.
+- **Target URL**: This is the target URL that users will be redirected to from the source URL. 
+- **Redirect type**: Use "301" or "302" dependent on the type of redirect you intend to use. 
+  - The **301** redirect type denotes permanent redirects, and are the most common redirect type. This is the best approach for maintaining SEO rankings.
+  - The **302** redirect type denotes temporary redirects, and are less commonly used. This redirect type is best used to maintain link targeting for temporary maintenance or other non-permanent scenarios.
+- **Case sensitivity**: Set this value to "true" if your source URL paths are case sensitive. If true, case sensitivity will be honored for source URL path. If "false" or left blank, case sensitivity is not needed. If left blank, the default value is false.
 
-- **Source URL**: This is the original URL from the previous site (or previously active)
-- **Target URL**: This is the target URL that viewers landing on the Source URL will be directed (the new URL)
-- **Redirection Type**: Use "301" or "302" dependent on the type of redirect you intend to use. 
-  - **301** redirects signal permanent redirects, and are the most common redirect type. This is the best approach for maintaining SEO rankings.
-  - **302** redirects signal temporary redirects, and are less commonly used. This code is best for temporary maintenance or other non-permanent scenarios to maintain link targeting.
-- **case sensitivity**: Set this to "true" if your Source URL paths are case-sensitive. If true, case sensitivity will be honored for paths of the Source URL field. Leave this field blank or set to "false" if case sensitivity is not needed. The default (leaving blank) will be false.
+An example set of redirect rows may look like the following:
 
-So a sample set of redirect rows may look like the following:
+``https://www.oldsite.com/shop, https://www.newsite.com/allstores, 301``
+``https://www.oldsite.com/news, https://www.newsite.com/updates, 301``
 
-*https://www.oldsite.com/shop, https://www.newsite.com/allstores, 301*
+> [!IMPORTANT]
+> The following rules must be followed in order for the bulk redirects to work correctly.
 
-*https://www.oldsite.com/news, https://www.newsite.com/updates, 301*
+- **No header in the CSV file**: The first or topmost row must start with the first redirect row.
+- **No circular entries**: A source URL must not be used as the target in the same row. Also, avoid implementations where a target may link back as a source, either in a different row of the CSV file or a DNS redirect.
+- **Source and target URLs must be in valid URL format**: No spaces or invalid characters can be used in URLs.
+- **No query string URLs are supported**: Commerce will not execute query strings provided as source or target URLs.
+- **CSV file must be in valid CSV format**: CSV file must have comma-separated values, separate lines for each redirect, no header, and valid file formatting.
 
-**<u>Important:</u>** The following **<u>must</u>** be followed in order for the bulk redirects to work correctly:
+## Upload a bulk redirect CSV file
 
-- **<u>No header</u>** in the CSV file. The first or topmost row must start with the first redirect row
-- No circular entries - a source must not also be repeated as the target in the same row. Additionally, avoid a data set where a target may link back as a source via multiple rows (or redirects).
-- The source and target data must be valid URL format (no spaces or invalid characters).
-- **No Query String URLs** supported. The current solution will not execute query strings provided as source or target URLs.
-- CSV must be a valid CSV format. Use comma-separated, no header, new-line valid CSV data and file formatting.
+The bulk redirect CSV file can be uploaded in the Commerce site builder tool. The uploader must be an administrator for the site they are uploading the bulk redirect CSV file to.
 
-## Upload the CSV
-
-The bulk redirect CSV can be uploaded in the Commerce site builder Tool. User must be an administrator for the site they are uploading the bulk redirect CSV. 
+To upload a CSV file, follow these steps.
 
 From Home, navigate to the Site that will receive the bulk URL redirects.
 
-Go to **Site Settings > General** in the left hand menu.
+Go to **Site settings \> General** in the left hand menu.
 
 Within the General page, the section labeled "URL Redirect Mapping" will be utilized.
 
@@ -86,7 +86,8 @@ Have your URL redirect mapping CSV accessible on your machine. In the "URL Redir
 
 Once the file is uploaded successfully, select the Toggle button to "On" to activate the re-directs. Select the **Save & Publish** button at the top of the Site Settings General page in order to commit the upload and toggle changes. The re-directs will now be live (allow up to 15 minutes to see traffic redirecting).
 
-Only one CSV per site can be loaded and active at any given time.
+> [!IMPORTANT]
+> Only one bulk redirect CSV file can be loaded and active per site at any given time.
 
 ## Update the CSV file
 
