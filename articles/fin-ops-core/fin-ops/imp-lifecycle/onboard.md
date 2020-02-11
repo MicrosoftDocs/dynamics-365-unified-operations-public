@@ -39,9 +39,9 @@ After your organization has purchased a subscription to Finance and Operations, 
 
 1. Open an Inprivate/Incognito browser session and go to the [Microsoft 365 Admin Center](https://admin.microsoft.com/).
 2. Sign in with the Tenant Administrator credentials.
-3. Go to **Billing > Subscriptions** and confirm that there is an active **Dynamics 365 Unified Operations** subscription. 
+3. Go to **Billing > Products & services** and confirm that there is an active subscription for the application that you want to deploy. 
    > [!NOTE]
-   > If you do not see a subscription, consult with your Licensing Partner to confirm the status of the subscription transaction as well as the tenant for the subscription. By default, all Microsoft Online Services should be running on the same Azure AD tenant.
+   > If you do not see an active subscription, consult with your Licensing Partner to confirm the status of the subscription transaction as well as the tenant for the subscription. By default, all Microsoft Online Services should be running on the same Azure AD tenant.
 4. If there is an active **Dynamics 365 Unified Operations** subscription displayed, you can proceed to the next step by signing in to LCS to trigger the Implementation Project creation flow.
 5. Open another private browser tab and go to [Lifecycle Services](https://lcs.dynamics.com). Select **Login** to access LCS with your current Tenant Admin credentials.
 6. Accept and confirm any other prompts displayed to complete the Implementation Project provisioning.
