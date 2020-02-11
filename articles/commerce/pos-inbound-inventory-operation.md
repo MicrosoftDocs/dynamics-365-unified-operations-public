@@ -141,7 +141,7 @@ The operation respects the **Blank receipt allowed** configuration on the **Loca
 
 ### Receive all
 
-If desired, users can select the **Receive all** function from the App bar to quickly update the **Receiving now** quantity for all of the document lines to the maximum value that is available to be received for those lines.
+When necessary, users can click the **Receive all** function from the App bar to quickly update the **Receiving now** quantity for all of the document lines to the maximum value that is available to be received for those lines.
 
 ### Cancel receiving
 
@@ -151,7 +151,7 @@ If desired, users can select the **Receive all** function from the App bar to qu
 
 **Pause receiving** can be used if the person who is receiving inventory wants to take a break from the receiving process, for example to perform another operation from the POS such as ringing a customer sale, or perhaps to delay posting the receipt.
 
-When the user selects **Pause receiving**, the document is placed in a **Paused** status. This helps to ensure visibility that the document has data entered but has not yet been committed. When a user wants to resume the receiving process, they can select the **Paused** document and resume receiving by selecting **Order details**. Any previously saved **Receiving now** quantities will be retained and can be viewed from the **Full order list** view.
+When the user clicks **Pause receiving**, the document is placed in a **Paused** status. This helps to ensure visibility that the document has data entered but has not yet been committed. When a user wants to resume the receiving process, they can select the paused document and resume receiving by clicking **Order details**. Any previously saved **Receiving now** quantities will be retained and can be viewed from the **Full order list** view.
 
 ### Finish receiving
 
@@ -159,17 +159,17 @@ When the user finishes entering all of the **Receiving now** quantities for prod
 
 If configured, the user will be prompted to enter a value in the **Receipt number** field when finishing a purchase order receipt. This is typically equivalent to the vendor packing slip identifier. The **Receipt number** data will be stored in the **Product receipt journal** in Commerce Headquarters. Receipt numbers are not captured for transfer order receipts.
 
-With asynchronous document processing, the receipt is submitted through an asynchronous document framework. The time it takes for the document to post will depend on the size of the document (number of lines) and the general processing traffic occurring on the server.   Typically, this process occurs in a matter of seconds. If the document posting fails, the user will be notified through the **Inbound operation** document list with an updated document status of **Processing failed**. Users can view the error messages and reasons for failure in the **Details** panel in POS when the select the failed document. A failed document is unposted and will require the user in POS to return to the document lines through **Order details**. They will need to update the document with any corrections based on the errors. Once the document is corrected, the user may try again to process the document by selecting **Finish receiving** on the App bar.
+With asynchronous document processing, the receipt is submitted through an asynchronous document framework. The time it takes for the document to post will depend on the size of the document (number of lines) and the general processing traffic occurring on the server.   Typically, this process occurs in a matter of seconds. If the document posting fails, the user will be notified through the **Inbound operation** document list with an updated document status of **Processing failed**. Users can view the error messages and reasons for failure in the **Details** panel in POS when the select the failed document. A failed document is unposted and will require the user in POS to return to the document lines through **Order details**. They will need to update the document with any corrections based on the errors. Once the document is corrected, the user may try again to process the document by clicking **Finish receiving** on the App bar.
 
-## Inbound operation – create a new inbound transfer order
+## Create a new inbound transfer order
 
-From the Inbound operation in POS, users can create a new transfer order document.  Users can click the **New** operation from the App bar while in the main **Inbound operation** document list to begin this process.
+From POS, users can create a new transfer order document. Click **New** from the App bar while in the main **Inbound operation** document list to begin this process.
 
-After clicking **New** , the user will be prompted to select a **Transfer from** warehouse/store that will be providing the inventory to the user's store location.  In an inbound transfer request, the user's current store will always be the **Transfer to** warehouse for the transfer order and this cannot be changed.
+After clicking **New** , the user will be prompted to select a **Transfer from** warehouse/store that will provide the inventory to the user's store location. In an inbound transfer request, the user's current store will always be the **Transfer to** warehouse for the transfer order. That value cannot be changed.
 
-Note that the selection of stores/warehouses the user can choose from for the **Transfer from** location will be limited to the selection defined for the store's fulfillment group configuration.
+The selection of stores or warehouses in the **Transfer from** location field will be limited to the selection defined for the store's fulfillment group configuration.
 
-The user can populate **Ship date** , **Receive date** and **Mode of delivery** fields as desired.  Adding a **Note** to be stored with the transfer order header as an attachment to the document in HQ is also an option.
+The user can populate values in the **Ship date**, **Receive date**, and **Mode of delivery** fields as needed. Adding a **Note** to be stored with the transfer order header as an attachment to the document in HQ is also an option.
 
 After the header information has been created, the user will be able to add products to the transfer order.  The user can use the **Add product** function to initiate the process of adding items and requested quantities.  Users may also add a line specific **Note** to the journal lines from the **Details** panel.  These notes will be stored in HQ as a line attachment.
 
