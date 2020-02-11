@@ -129,39 +129,39 @@ The **Receiving now** list view provides a focused view for the user so they can
 
 ### Over-receiving validations
 
-Validations will occur during the receiving process for the document lines, including over-delivery validation.  If a user attempts to receive more inventory than ordered on a purchase order and over-delivery has not been configured, or the amount received is above the configured over-delivery tolerance for the purchase order line, the user will be shown an error and will be prohibited from receiving the excess quantity.
+Validations, including validations for over-delivery, will occur during the receiving process for the document lines. If a user attempts to receive more inventory than ordered on a purchase order and over-delivery is not configured, or the amount received is above the configured over-delivery tolerance for the purchase order line, an error will be displayed and the user will be prohibited from receiving the excess quantity.
 
-Note that over-receiving is never allowed or possible for transfer order documents.  Users will always get errors if they attempt to receive more than was shipped for the transfer order line.
+Over-receiving is not permitted for transfer order documents. Users will always get errors when attempting to receive more than was shipped for the transfer order line.
 
-### Receiving location-controlled items
+### Receiving location controlled items
 
-If the items being received are location controlled, users will be able to choose the location to receive the items into during the receiving process.   It is advised to configure a default receiving location for your store warehouse to make this process more efficient.  Even if a default location is configured, users can override the receiving location on select lines as desired.
+If the items being received are location controlled, users will be able to choose the location to receive the items during the receiving process. It is advised that you configure a default receiving location for your store warehouse to make this process more efficient.  Even if a default location is configured, users can override the receiving location on select lines as needed.
 
-This operation will respect the **Blank receipt allowed** configuration on the **Location** storage dimension and not require a location dimension to be entered if black receipt has been configured.  If blank receipt locations are not allowed for the item, the POS application will error and require a location to be entered before the receipt can be successfully posted to HQ.
+The operation respects the **Blank receipt allowed** configuration on the **Location** storage dimension and does not require a location dimension to be entered if blanck receipt is configured. If blank receipt locations are not allowed for the item, the POS application will display an error and require a location to be entered before the receipt can be successfully posted.
 
-### Receive All
+### Receive all
 
-If desired, users can use the **Receive all** function from the App bar to quickly update the **Receiving now** quantity for all of the document lines to the maximum value that is available to be received for those lines.
+If desired, users can select the **Receive all** function from the App bar to quickly update the **Receiving now** quantity for all of the document lines to the maximum value that is available to be received for those lines.
 
-### Cancel Receiving
+### Cancel receiving
 
-The **Cancel receiving** function on the App bar should only be used if the user wishes to back out of the document and not save any changes.  This may be necessary if the user picked the wrong document initially and does not want any of their previous **Receiving now** data saved.
+**Cancel receiving** on the App bar should only be used if the user wants to back out of the document and not save any changes. This may be necessary if the user picked the wrong document initially and does not want any of their previous receiving data saved.
 
-### Pause Receiving
+### Pause receiving
 
-This can be used if the user who is receiving inventory wishes to take a break from the receiving process, perhaps to perform another operation from the POS (such as ringing a customer sale), or perhaps just to delay posting the receipt to HQ.
+**Pause receiving** can be used if the person who is receiving inventory wants to take a break from the receiving process, for example to perform another operation from the POS such as ringing a customer sale, or perhaps to delay posting the receipt.
 
-When the user chooses **Pause receiving**, the document will be placed in a **Paused** status.  This helps to ensure visibility to the fact that the document has data that has been entered but has not yet been committed to HQ.   When a user wishes to resume the receiving process, they can select the **Paused** document and resume receiving with the **Order details** function. Any previously saved **Receiving now** quantities will be retained and can be viewed from the **Full order list** view.
+When the user selects **Pause receiving**, the document is placed in a **Paused** status. This helps to ensure visibility that the document has data entered but has not yet been committed. When a user wants to resume the receiving process, they can select the **Paused** document and resume receiving by selecting **Order details**. Any previously saved **Receiving now** quantities will be retained and can be viewed from the **Full order list** view.
 
-### Finish Receiving
+### Finish receiving
 
-When the user has completed entering all of the **Receiving now** quantities for products, in order for the receipt to be processed in HQ, the user must click the **Finish receiving** function on the App bar.
+When the user finishes entering all of the **Receiving now** quantities for products, they need to click **Finish receiving** on the App bar to process the receipt.
 
-If configured, the user will be prompted to enter in the **Receipt number** when finishing a purchase order receipt – this is typically equivalent to the vendors packing slip identifier.  This **Receipt number** data will be stored in the **Product receipt journal** in HQ.   Receipt numbers are not capture for transfer order receipts.
+If configured, the user will be prompted to enter a value in the **Receipt number** field when finishing a purchase order receipt. This is typically equivalent to the vendor packing slip identifier. The **Receipt number** data will be stored in the **Product receipt journal** in Commerce Headquarters. Receipt numbers are not captured for transfer order receipts.
 
-With asynchronous document processing, the process of submitting the receipt to HQ will be done through an async document framework.   The time it takes for the document to post to HQ will depend on the size of the document (number of lines) and the general processing traffic happening on the server.   Typically, this process occurs in a matter of seconds.   If for any reason the document posting to HQ fails, users will be notified through the **Inbound operation** document list with an updated document status of **Processing failed**.   Users can view the error messages and reason for failure in the **Details** panel in POS when the select the failed document. A failed document is unposted in HQ and will require the user in POS to return to the document lines through the **Order details** function and update the document with any corrections based on the errors received.  Once correct, the user may try again to process the document using the **Finish receiving** function on the App bar.
+With asynchronous document processing, the receipt is submitted through an asynchronous document framework. The time it takes for the document to post will depend on the size of the document (number of lines) and the general processing traffic occurring on the server.   Typically, this process occurs in a matter of seconds. If the document posting fails, the user will be notified through the **Inbound operation** document list with an updated document status of **Processing failed**. Users can view the error messages and reasons for failure in the **Details** panel in POS when the select the failed document. A failed document is unposted and will require the user in POS to return to the document lines through **Order details**. They will need to update the document with any corrections based on the errors. Once the document is corrected, the user may try again to process the document by selecting **Finish receiving** on the App bar.
 
-## Inbound operation – create a new inbound Transfer order
+## Inbound operation – create a new inbound transfer order
 
 From the Inbound operation in POS, users can create a new transfer order document.  Users can click the **New** operation from the App bar while in the main **Inbound operation** document list to begin this process.
 
