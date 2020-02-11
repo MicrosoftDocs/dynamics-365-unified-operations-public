@@ -56,7 +56,7 @@ For every data source that is marked as cross-company, you can select the record
 
 Therefore, the following expression is valid.
 
-```vb
+```ER Expression
 FILTER (MyTable, MyTable.dataAreaID = $StringUserInputParameter)
 While shown below expressions will not pass the validation:
 FILTER (MyTable, MyTable.dataAreaID = MyTable2RecordsList.MyField)
