@@ -2,7 +2,7 @@
 # required metadata
 
 title: Dual-write overview
-description: Dual-write is an out-of-the-box infrastructure that provides seamless near-real-time interaction between Microsoft Dynamics 365 model-driven applications and Finance and Operations applications.
+description: Dual-write is an infrastructure that provides near-real-time interaction between Microsoft Dynamics 365 model-driven applications and Finance and Operations applications.
 author: shsrav
 manager: AnnBe
 ms.date: 02/06/2020
@@ -24,7 +24,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: 
-ms.author: 
+ms.author: ramasri
 ms.dyn365.ops.version: 
 ms.search.validFrom: 2020-01-06
 
@@ -38,9 +38,9 @@ ms.search.validFrom: 2020-01-06
 
 ## What is dual-write?
 
-Dual-write is an out-of-the-box infrastructure that provides seamless near-real-time interaction between Microsoft Dynamics 365 model-driven applications and Finance and Operations applications. When data on customers, products, people, and operations flow seamlessly beyond application boundaries, it create a digital feedback loop and empowers all departments in an organization.
+Dual-write is an out-of-the-box infrastructure that provides seamless, near-real-time interaction between Microsoft Dynamics 365 model-driven applications and Finance and Operations applications. When data on customers, products, people, and operations flow beyond application boundaries, it create a feedback loop that empowers all departments in an organization.
 
-Dual-write provides a tightly coupled, bi-directional integration between Dynamics 365 for Finance and Operations and the Common Data Service. Any create, read, update change in Finance and Operations results in writes, in near-real-time, to the Common Data Service and vice versa. This tight data integration provides an integrated user experience across the apps.
+Dual-write provides tightly-coupled, bi-directional integration between Dynamics 365 for Finance and Operations and the Common Data Service. Any data change in Finance and Operations apps results in writes, in near-real-time, to the Common Data Service and vice versa. This automated data flow provides an integrated user experience across the apps.
 
 ![Data relationship between apps](media/dual-write-overview-picture1.png)
 
@@ -62,22 +62,22 @@ The dual-write infrastructure is extensible and reliable, and includes the follo
 Dual-write application orchestration harmonizes the concepts between Finance and Operations applications and model-driven apps in Dynamics 365. This integration supports these scenarios:
 
 + Integrated customer master.
-+ Access to customer Loyalty cards and reward points.
++ Access to customer loyalty cards and reward points.
 + Unified product mastering experience.
 + Awareness of organization hierarchy.
 + Integrated vendor master.
 + Access to finance and tax reference data.
-+ Experience Finance & Operations price engine on-demand.
++ Experience price engine on-demand.
 + Integrated prospect to cash experience. 
 + Ability to serve both in-house and customer assets through field agents.
-+ Integrated procure to pay experience.
-+ Integrated Activities and Notes for customer data and documents.
++ Integrated procure-to-pay experience.
++ Integrated activities and notes for customer data and documents.
 + Lookup on-hand inventory availability and details.
-+ Seamless project to cash experience.
-+ Ability to handle multiple addresses and roles through the 'Party' concept.
-+ Single source management for Dynamics 365 users.
++ Project to cash experience.
++ Ability to handle multiple addresses and roles through the party concept.
++ Single source management for users.
 + Integrated channels for retailing and marketing.
 + Visibility to promotions and discounts.
-+ Request to service functions.
++ Request for service functions.
 + Streamline service operations.
  
