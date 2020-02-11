@@ -29,17 +29,17 @@ After you've finished downloading the ER configurations from LCS, follow these s
 5. On the **Conditions** tab, select version 32.14, and create the configuration that will let you set up the mapping between main accounts that are configured in your company and the related tax authority classification of the DAS-2 report:
 
 	a. In the Lookup result field, select the related classification.
-	b. In the Main account field, select the main account used to post the related transactions that belongs to this classification. 
+	b. In the Main account field, select the main account used to post the related transactions that belongs to this classification.
 	c. Set the **Status** parameter to *Completed*.
 
 ### Example
 
+[![Example of cofiguration](./media/emea-fra-das2-report-configuration.png)](./media/emea-fra-das2-report-configuration.png)
 
+In the above configuration line 2,  the main account 622600 that is used to post fee expense transactions is mapped with the classification **H : Fees and Vacations**  established by the tax authority. 
+The line 1 includes the configuration with the classification ZZ is used when the invoice journal has another expense transactions that will not be detailed in DAS-2 report. 
 
-In the above configuration, the line 2 with the main account 622600 that is used to post fee expense transactions is mapped with the classification H : Fees and Vacations established by the tax authority. 
-
-
-Note: Create the same configuration for DAS-2 form
+*Note: Create the same configuration for DAS-2 form
 
 ## Vendor configuration
 
