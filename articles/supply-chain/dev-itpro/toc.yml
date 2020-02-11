@@ -456,8 +456,6 @@
       items:
       - name: Create models and data model elements overview
         href: ../../dev-itpro/dev-tools/create-data-model-elements.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-      - name: Naming guidelines for extensions
-        href: ../../dev-itpro/extensibility/NamingGuidelines.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
       - name: Turn off model customization and deprecate functionality
         href: ../../dev-itpro/dev-tools/lock-models.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Customization Analysis Report
