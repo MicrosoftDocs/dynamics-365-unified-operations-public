@@ -1,34 +1,3 @@
----
-# required metadata
-
-title: DAS-2 report
-description: DAS-2 report is used in French legal entities doing business with self-employed professionals
-author: sndray
-manager: AnnBe
-ms.date: 02/14/2020
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: 
-ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.search.region: France
-ms.search.industry: 
-ms.author: 
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-
----
-
 # DAS-2 report
 
 [!include [banner](../includes/banner.md)]
