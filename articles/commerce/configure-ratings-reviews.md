@@ -85,7 +85,7 @@ The following illustration shows what this configuration looks like in Dynamics 
 
 ![Configuring the link for the privacy and policy page](media/rnr-eCommerce-rnr-privacy-policy-link.png)
 
-## Configure ratings and reviews modules on product details page
+## Configure ratings and reviews modules on product details pages
 
 For information on this topic, see [Configure ratings and reviews modules on product details pages](ratings-reviews-modules.md).
 
