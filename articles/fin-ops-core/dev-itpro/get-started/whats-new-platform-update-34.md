@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 34
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic lists the preview features that are new or changed for Platform update 34 for Finance and Operations apps. This version has a build number of 7.0.5559 and is available on the following schedule:
+This topic lists the preview features that are new or changed for Platform update 34 for Finance and Operations apps. This version has a build number of 7.0.XXXX and is available on the following schedule:
 
 - **Preview release:** March 2020
 - **General availability (self-update):** April 2020
