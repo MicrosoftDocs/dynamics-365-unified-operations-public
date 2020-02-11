@@ -59,7 +59,7 @@ The following instructions show how to embed an app from Power Apps into the web
 
     - The **Name** field indicates the text shown for the button or tab that will contain the embedded app. Oftentimes, you may want to repeat the name of the app in this field.
     - **App ID** is the GUID for the app  that you want to embed. To retrieve this value, find the app on [web.powerapps.com](https://web.powerapps.com) and then locate the **App ID** field under **Details**.
-    - For **Input context for the app**, you can optionally select the field that contains the data that you want to pass to the app as input. See the section later in this topic titled [Building apps that leverages data from Finance and Operations apps](#building-a-power-app-that-leverages-data-sent-from-finance-and-operations-apps) for details on how the app can access the data sent from Finance and Operations apps.
+    - For **Input context for the app**, you can optionally select the field that contains the data that you want to pass to the app as input. See the section later in this topic titled [Building an app that leverages data sent from Finance and Operations apps](#building-an-app-that-leverages-data-sent-from-finance-and-operations-apps) for details on how the app can access the data sent from Finance and Operations apps.
     - Choose the **Application size** that matches the type of app that you're embedding. Select **Thin** for apps built for mobile devices, and **Wide** for apps built for tablets. This ensures a sufficient amount of space is allotted for the embedded app.
     - The **Legal entities** FastTab provides the ability to choose which legal entities the app is available for. The default is to make the app accessible to all legal entities. This option is only available when the [Saved views](saved-views.md) feature is disabled. 
 
@@ -105,7 +105,7 @@ Follow these steps to edit the configuration of an embedded app:
 
 After an app has been embedded onto a page, there are two ways to remove it if needed:
 
-- Go to the **Edit an app** pane using the instructions from the [Editing an embedded app](#editing-an-embedded-power-app) section earlier in this topic. Confirm that the pane displays information for the embedded app that you would like to remove, and then click the **Delete** button.
+- Go to the **Edit an app** pane using the instructions from the [Editing an embedded app](#editing-an-embedded-app) section earlier in this topic. Confirm that the pane displays information for the embedded app that you would like to remove, and then click the **Delete** button.
 - Because the embedded app is saved as personalization data, clearing your page's personalization will also remove any embedded apps on that page. Note that clearing the page's personalization is permanent and cannot be undone. To remove your personalizations on a page, select **Options**, and then **Personalize this page**, and finally the **Clear** button. After refreshing your browser, all the previous personalizations for this page will be removed. See [Personalize the user experience](personalize-user-experience.md) for more information about how to optimize pages using personalization.
 
 ## Appendix
