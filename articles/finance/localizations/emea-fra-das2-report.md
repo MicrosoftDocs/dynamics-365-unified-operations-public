@@ -37,7 +37,8 @@ After you've finished downloading the ER configurations from LCS, follow these s
 [![Example of cofiguration](./media/emea-fra-das2-report-configuration.png)](./media/emea-fra-das2-report-configuration.png)
 
 In the above configuration line 2,  the main account 622600 that is used to post fee expense transactions is mapped with the classification **H : Fees and Vacations**  established by the tax authority. 
-The line 1 includes the configuration with the classification ZZ is used when the invoice journal has another expense transactions that will not be detailed in DAS-2 report. 
+
+The line 1 includes the configuration with the classification **ZZ** is used when the invoice journal has another expense transactions that will not be detailed in DAS-2 report. 
 
 *Note: Create the same configuration for DAS-2 form
 
