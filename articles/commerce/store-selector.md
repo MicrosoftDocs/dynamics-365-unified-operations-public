@@ -70,9 +70,9 @@ The store selector module is integrated with the Bing Maps Geocoding application
 
 In addition, for buy online pick-up in store to work the products should be configured with the &quot;Customer pickup&quot; delivery mode. See for more details on how to configure this delivery mode. If a product is excluded for this delivery mode, the module will not be shown on the respective pages.
 
-image
+![Example of a Store selector module](./media/BOPIS.PNG)
 
-## Examples of Store selector module in e-Commerce
+## Store selector module usage in e-Commerce
 
 - A Store selector module can be used in a product details page to find nearby stores where a product is available for pickup
 
@@ -105,8 +105,8 @@ In addtion, this module can be added to other pages or modules via extensions/cu
 
 [Cart](add-cart.md)
 
-[Quick tour of PDP]
+[Quick tour of PDP](quick-tour-pdp.md)
 
-[Quick tour of Cart and checkout]
+[Quick tour of Cart and checkout](quick-tour-cart-checkout.md)
 
 [Setting up delivery modes]
