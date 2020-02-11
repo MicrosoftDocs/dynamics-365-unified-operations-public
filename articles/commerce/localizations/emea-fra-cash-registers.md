@@ -42,7 +42,7 @@ The functionality consists of the following parts:
 
 ### Common POS features
 
-To learn about POS features that are available to customers in all countries or regions, see [Help resources for Dynamics 365 Retail](../index.md).
+To learn about POS features that are available to customers in all countries or regions, see [Commerce home page](../index.md).
 
 The following POS localization features that are available to customers in all countries or regions can now be used specifically for France:
 
@@ -201,7 +201,7 @@ The archive format is implemented by using [Electronic reporting (ER)](../../dev
 
 ## Setting up Commerce for France
 
-This section describes the Commerce settings that are specific to and recommended for France. For more information, see [Help resources for Dynamics 365 Retail](../index.md).
+This section describes the Commerce settings that are specific to and recommended for France. For more information, see [Commerce home page](../index.md).
 
 To use the France-specific functionality, you must complete these tasks:
 

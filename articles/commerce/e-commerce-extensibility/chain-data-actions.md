@@ -45,7 +45,7 @@ The following examples show data action chaining. First, a product information c
 
 The first example shows a data action that gets product information.
 
-```Typescript
+```typescript
 // get-product.ts
 import { IAction, IActionInput } from '@msdyn365-commerce/action';
 import { SimpleProduct } from '@msdyn365-commerce/commerce-entities';

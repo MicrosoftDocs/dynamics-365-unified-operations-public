@@ -174,7 +174,7 @@ In the second scenario, **Best price only within priority, always compound acros
 
     At this point, all the simple, quantity, and mix-and-match discounts at all priorities have been evaluated and applied.
 
-5. Next, within priority 10, the retail pricing engine evaluates threshold discounts that have the concurrency mode set to **Exclusive**. An **Exclusive** threshold discount can't be applied to a product that already has a discount applied, so a threshold amount is applied and evaluated only on undiscounted products. If more than one of these discounts apply to the transaction, the discounts compete, and the largest discount is applied.
+5. Next, within priority 10, the pricing engine evaluates threshold discounts that have the concurrency mode set to **Exclusive**. An **Exclusive** threshold discount can't be applied to a product that already has a discount applied, so a threshold amount is applied and evaluated only on undiscounted products. If more than one of these discounts apply to the transaction, the discounts compete, and the largest discount is applied.
 6. Next, within priority 10, the pricing engine evaluates threshold discounts that have the concurrency mode set to **Best price** and **Compound**. Because **Best price** and **Compound** are all treated as "best price", these discounts compete for the best discount. The selected threshold discount gets applied to those products which do not have any other types of discounts already applied at priority 10. If there are other discounts, then the threshold discount is not applied because both Best price and Compound discounts are treated as Best price, and only one discount per priority is allowed with this discount concurrency control.
 
     > [!NOTE]
