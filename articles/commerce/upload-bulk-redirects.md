@@ -79,30 +79,40 @@ To upload a CSV file, follow these steps.
 
 From Home, navigate to the Site that will receive the bulk URL redirects.
 
-Go to **Site settings \> General** in the left hand menu.
-
-Within the General page, the section labeled "URL Redirect Mapping" will be utilized.
-
-Have your URL redirect mapping CSV accessible on your machine. In the "URL Redirect Mapping" section, select the "Upload" button. A file picker dialogue will launch. Navigate to and select your bulk mapping CSV file and select 'Open'.
-
-Once the file is uploaded successfully, select the Toggle button to "On" to activate the re-directs. Select the **Save & Publish** button at the top of the Site Settings General page in order to commit the upload and toggle changes. The re-directs will now be live (allow up to 15 minutes to see traffic redirecting).
+1. Go to **Site settings \> General**.
+1. Under **URL Redirect Mapping** select **Upload**. 
+1. In File Explorer, browse to and select your CSV file, and then select **Open**.
+1. Set the toggle key to **On** to activate the redirects. 
+1. On the commmand bar, select **Save and Publish** to commit the changes. The redirects will now be activated (allow up to 15 minutes redirects to take effect).
 
 > [!IMPORTANT]
 > Only one bulk redirect CSV file can be loaded and active per site at any given time.
 
 ## Update the CSV file
 
-An uploaded URL redirects CSV file can be downloaded for reference or editing.
+A previously-uploaded redirect CSV file can be downloaded for reference or editing and reupload.
 
-In order to download the currently uploaded CSV, navigate to your Site and go to **Site Settings \> General** in the left hand menu.
+To update an existing uploaded CSV file, follow these steps.
 
-Within the "URL Redirect Mapping" section, select the "Download" button. (This button will be grayed out if no CSV has been uploaded). A save file dialogue will be prompted to save the file to your machine.
-
-If making additions, deletions, or edits to the CSV; once completed, use the "Replace" button (which should show in place of the original 'Upload' button) to upload the edited file. Notice that upon re-upload, the Toggle will switch back to "Off".  Change the Toggle to "On" and **Save & Publish** the General settings page to commit these changes. This will then activate the newly uploaded file. Again, allow up to 15 minutes for the changes to occur. 
+1. Go to **Site settings > General**.
+1. Under **URL Redirect Mapping**, select **Download**. 
+1. Save the file to your local machine.
+1. Edit the CSV file as appropriate and save it when done.
+1. Under **URL Redirect Mapping**, select **Replace**. 
+1. In File Explorer, browse to and select the replacement CSV file, and then select **Open**
+1. Set the toggle key to **On**.
+1. On the command bar, select **Save and Publish** to commit the changes. The redirects will now be activated (allow up to 15 minutes redirects to take effect).
 
 ## Turn off bulk redirect mappings
 
-If a bulk redirect CSV has been uploaded and is active; to turn the redirects off- go to **Site Settings > General** and select the "Replace" button. Upload a new CSV with valid but non-existent Source and Target URLs. (Example: 'https://www.com,https://www.com,301'. Set the Toggle to "On" and click **Save & Publish** on the General settings page to commit the changes.
+To turn off bulk redirect mappings in an uploaded CSV file, follow these steps.
+
+1. Create and save a new CSV file with valid but non-existent source and target URLs. (For example, ``https://www.com,https://www.com,301``).
+1. Go to **Site settings > General**.
+1. Under **URL Redirect Mapping**, select **Replace**. 
+1. In File Explorer, browse to and select your new replacement CSV file, and then select **Open**
+1. Set the toggle key to **On**.
+1. On the command bar, select **Save and Publish** to commit the changes.
 
 ## Additional resources
 
