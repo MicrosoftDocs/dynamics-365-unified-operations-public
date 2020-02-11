@@ -109,4 +109,4 @@ In addtion, this module can be added to other pages or modules via extensions/cu
 
 [Quick tour of Cart and checkout](quick-tour-cart-checkout.md)
 
-[Setting up delivery modes]
+[Setting up delivery modes](,/appuser-itpro/set-up-modes-of-delivery.md)
