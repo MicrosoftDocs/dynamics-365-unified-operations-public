@@ -256,8 +256,6 @@
             href: data-entities/entity-store-data-lake.md
         - name: Configuration data templates
           href: data-entities/configuration-data-templates.md
-        - name: Track changes to an entity
-          href: data-entities/entity-change-track.md
         - name: Find information about standard data entities
           href: data-entities/data-entities-report.md
         - name: Data templates with multiple worksheets
