@@ -1,0 +1,112 @@
+---
+
+# required metadata
+
+title: Store selector module
+
+description: This topic covers Store selector module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
+
+author:  anupamar-ms
+
+manager: annbe
+
+ms.date: 01/23/2020
+
+ms.topic: article
+
+ms.prod:
+
+ms.service: dynamics-365-commerce
+
+ms.technology:
+
+# optional metadata
+
+# ms.search.form:
+
+# ROBOTS:
+
+audience: Application User
+
+# ms.devlang:
+
+ms.reviewer: v-chgri
+
+ms.search.scope: Retail, Core, Operations
+
+# ms.tgt\_pltfrm:
+
+ms.custom:
+
+ms.assetid:
+
+ms.search.region: Global
+
+ms.search.industry:
+
+ms.author: anupamar
+
+ms.search.validFrom: 2020-02-10
+
+ms.dyn365.ops.version:
+
+---
+
+# Store selector module
+
+
+
+[!include [banner](includes/banner.md)]
+
+This topic covers Store selector module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
+
+## Overview
+
+A Store selector module is used for buy online pick up in store scenario. It shows the list of stores where a product is available for pick-up. Store name, hours including inventory for each store is shown on the store selector module.
+
+The module requires context of a product and a search location to find stores. In the absence of a search location, it defaults to the user&#39;s browser location, provided the user gives consent. The module has an input box which allows the user to enter a location (zipcode, city, state etc) to find stores that are nearby.
+
+The store selector module is integrated with the Bing Maps Geocoding application programming interface (API) to convert the location to a latitude and longitude. A Bing Maps API key is required and must be added to the Retail shared parameters page in Dynamics 365 Commerce.
+
+In addition, for buy online pick-up in store to work the products should be configured with the &quot;Customer pickup&quot; delivery mode. See for more details on how to configure this delivery mode. If a product is excluded for this delivery mode, the module will not be shown on the respective pages.
+
+image
+
+## Examples of Store selector module in e-Commerce
+
+- A Store selector module can be used in a product details page to find nearby stores where a product is available for pickup
+
+- A Store selector module can be used in a cart page on the Cart line to find nearby stores where the product in cart line is available for pickup
+
+
+
+## Store selector module properties
+
+| Property name             | Value                 | Description |
+|---------------------------|-----------------------|-------------|
+| Search radius | number | The Search radius property defines the search radius for stores, in miles. If no value is specified, the default search radius, 50 miles, is used.|
+|Terms of Service | link    |  A terms of service link is required for the Bing Maps service. |
+
+## Add a Store selector module to a page
+
+Store selector module can be added to the Buy box module to show the stores for pick-up on the Product details page.
+
+It can also be added to the Cart module. Adding it to cart module, shows pick-up options on each cart line item.
+
+As mentioned earlier, if the products support &quot;Customer Pickup&quot; delivery mode, the module will render on the PDP or Cart page.
+
+In addtion, this module can be added to other pages or modules via extensions/customizations (requires code).
+
+## Additional resources
+
+[Starter kit overview](starter-kit-overview.md)
+
+[Buy box](add-buybox.md)
+
+[Cart](add-cart.md)
+
+[Quick tour of PDP]
+
+[Quick tour of Cart and checkout]
+
+[Setting up delivery modes]
