@@ -150,6 +150,8 @@
           href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/finance/toc.json
         - name: Saved views
           href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/finance/toc.json
+        - name: Grid capabilites
+          href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/finance/toc.json
         - name: Create and work with custom fields
           href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/finance/toc.json
         - name: Embed PowerApps apps
@@ -3687,6 +3689,4 @@
     href: ../supply-chain/index.md
   - name: Dynamics 365 Commerce
     href: ../commerce/index.md
-  - name: Dynamics 365 Retail
-    href: ../commerce/index.md
-  
+
