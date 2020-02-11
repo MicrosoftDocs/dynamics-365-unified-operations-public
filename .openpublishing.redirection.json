@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/dev-itpro/extensibility/NamingGuidelines.md",
+      "redirect_url": "naming-guidelines-extensions",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/human-resources/hr-welcome.md",
       "redirect_url": "index",
       "redirect_document_id": "false"
