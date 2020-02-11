@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Ratings and reviews modules
-description: This topic covers ratings and reviews modules and describes how to add them to product details pages in Microsoft Dynamics 365 Commerce.
+description: This topic covers ratings and reviews modules used on product details pages in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 manager: annbe
 ms.date: 02/10/2020
@@ -23,19 +23,26 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: gmohanv
-ms.search.validFrom: 2020-02-03
+ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: Release 10.0.6
 ---
 
+# Ratings and reviews modules
 
+[!include [banner](includes/banner.md)]
 
+This topic covers ratings and reviews modules used on product details pages (PDPs) in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-Ratings and reviews on e-Commerce websites help customers learn about products before they make a purchase decision, by showing them what other customers think about those products. For e-Commerce websites, ratings and reviews are also a mechanism for collecting customer feedback about products. 
-Ratings are shown on product list pages, category list pages, search results pages, and other site pages. Ratings histograms and product reviews are shown on product details pages (PDPs). A **Write a review** button lets customers submit ratings and reviews for a product.
+Ratings and reviews on e-Commerce websites help customers learn about products before they make a purchase decision, and are also a mechanism for collecting customer feedback about products. 
+
+Ratings are shown on product list pages, category list pages, search results pages, and other site pages. 
+
+Ratings histograms and product reviews are shown on PDPs. A **Write a review** button lets customers submit ratings and reviews for a product. These PDP features are controlled by ratings and review modules.
 
 ## Ratings and reviews modules on PDPs 
+
 Three modules show the ratings and reviews summary on PDPs:
 - Write review module
 - Product reviews list module
@@ -83,8 +90,8 @@ The product reviews list module includes a slot where you can add a ratings hist
 
 ![Adding a ratings histogram module in a product reviews list module](media/rnr-eCommerce-pdp-rating-histogram-summary.png)
 
-
 ## Additional resources
+
 [Starter kit overview](starter-kit-overview.md)
 
 [Container module](add-container-module.md)
