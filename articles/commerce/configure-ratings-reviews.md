@@ -47,9 +47,9 @@ To configure a site to show ratings and reviews, follow these steps.
 
 1. Go to **Home \> Sites**.
 1. Select the name of your site. 
-1. Go to **Site management \> Extensibility**. 
-1. In the **Review Text Max Length** field, enter the maximum number of characters that review text can have (for example, **1000**). 
-1. In the **Review Title Max Length** field, enter the maximum number of characters that review titles can have (for example, **55**). 
+1. Go to **Site settings \> Extensions**. 
+1. In the **Review text max length** field, enter the maximum number of characters that review text can have (for example, **1000**). 
+1. In the **Review title max length** field, enter the maximum number of characters that review titles can have (for example, **55**). 
 1. Select **Save and Publish**. 
 
 The following illustration shows what this configuration looks like in Dynamics 365 Commerce.
@@ -76,7 +76,7 @@ To configure the link for the privacy and policy page, follow these steps.
 
 1. Go to **Home \> Sites**.
 1. Select the name of your site. 
-1. Go to **Site management \> Extensibility**
+1. Go to **Site settings \> Extensions**.
 1. On the **Routes** tab, under **RNR Privacy and Policy**, select **Add a link**. If a link is already entered, and you want to replace it, select the link. 
 1. In the **Add a link** dialog box, select the link for the privacy and policy page, and then select **OK**. 
 1. Select **Save and Publish**. 
