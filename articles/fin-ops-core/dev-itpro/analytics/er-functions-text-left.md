@@ -38,7 +38,7 @@ The `LEFT` function returns a *String* value that presents the specified number 
 
 ## Syntax
 
-```
+```vb
 LEFT (text, number)
 ```
 

@@ -205,13 +205,14 @@ Templates that are registered as system-defined templates are loaded at deployme
 11. Open **FMTemplateRegistrations**. The FMTemplateRegistrations.xpp code file should be shown.
 12. Copy one of the existing lines, and change it by providing the template name, resource name, description, display name, and **Apply current record filter** and **List in Open in Office menu** values. The display name is the text that appears as an Open in Excel option. The description appears when the user holds the pointer over that item. The display name and description can be either labels or static strings. The code should resemble the following example.
 
-    ```xpp
-    this.addTemplate(
-        OfficeAppApplicationType::Excel, 
-        resourceStr(FleetCustomersBasicTemplate), 
-        resourceStr(FleetCustomersBasicTemplate), 
-        "Template for fleet customers", "Fleet customers basic", NoYes::No, NoYes::Yes);
-    ```
+
+     ```xpp
+     this.addTemplate(
+         OfficeAppApplicationType::Excel, 
+         resourceStr(FleetCustomersBasicTemplate), 
+         resourceStr(FleetCustomersBasicTemplate), 
+         "Template for fleet customers", "Fleet customers basic", NoYes::No, NoYes::Yes);
+     ```
 
 13. Save the code. If you're asked whether you want to overwrite the existing code or save it as a new file, click **Overwrite**.
 14. Build the solution (press Ctrl+Shift+B).
@@ -285,23 +286,24 @@ You can create custom lookups to show data options when an enum or relationship 
 4.  Add the **lookup\_Country** code from the following example.
 
     ```xpp
-    public class FMCustomerEntity extends common
-    {
-        [SysODataActionAttribute("FMCustomerEntityCountryCustomLookup", false), //Name in $metadata
-        SysODataCollectionAttribute("_fields", Types::String), //Types in context
-        SysODataFieldLookupAttribute("Country")] //Name of field
-        public static str lookup_Country(Array _fields)
-        {
-            OfficeAppCustomLookupListResult result = new OfficeAppCustomLookupListResult();
+	  public class FMCustomerEntity extends common
+  	{
+	  	[SysODataActionAttribute("FMCustomerEntityCountryCustomLookup", false), //Name in $metadata
+	  	SysODataCollectionAttribute("_fields", Types::String), //Types in context
+	  	SysODataFieldLookupAttribute("Country")] //Name of field
+	  	public static str lookup_Country(Array _fields)
+		{
+			OfficeAppCustomLookupListResult result = new OfficeAppCustomLookupListResult();
 
-            result.items().value(1, "US");
-            result.items().value(2, "AU");
-            result.items().value(3, "FR");                result.items().value(4, "GR");
-            result.items().value(5, "NZ");
+			result.items().value(1, "US");
+			result.items().value(2, "AU");
+			result.items().value(3, "FR");
+			result.items().value(4, "GR");
+			result.items().value(5, "NZ");
 
-            return result.serialize();
-        }
-    }
+			return result.serialize();
+		}
+	  }
     ```
 
 5.  Save the code. If you're asked whether you want to overwrite the existing code or save is as a new file, click **Overwrite**.

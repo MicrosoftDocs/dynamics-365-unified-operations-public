@@ -38,7 +38,7 @@ The `COUNTIF` function returns an *Integer* value that represents the number of 
 
 ## Syntax
 
-```
+```vb
 COUNTIF (condition range, condition value)
 ```
 

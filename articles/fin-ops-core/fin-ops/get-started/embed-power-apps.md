@@ -80,7 +80,7 @@ An important part of building an app from Power Apps that will be embedded in a 
 
 For example, in the OnStart function of the app, you could set the input data from Finance and Operations apps to a variable like this:
 
-```
+```powerapps
 If(!IsBlank(Param("EntityId")), Set(FinOpsInput, Param("EntityId")), Set(FinOpsInput, ""));
 ```
 
@@ -119,7 +119,7 @@ By default, users can embed apps on any page, either under the Power Apps menu b
 
 The following example shows a new class with the two methods needed to configure where apps can be embedded.
 
-```
+```powerapps
 [ExtensionOf(classStr(FormRunConfigurationPowerAppsConfiguration))]
 
 public final class ClassTest_Extension

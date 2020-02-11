@@ -40,7 +40,7 @@ A module definition file, MODULE\_NAME.definition.json, is used to register a mo
 
 Here is an example of a module definition file.
 
-```
+```json
 {
     "$type": "contentModule",
     "friendlyName": "Product Feature",

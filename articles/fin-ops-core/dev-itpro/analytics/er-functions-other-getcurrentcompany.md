@@ -38,7 +38,7 @@ The `GETCURRENTCOMPANY` function returns a *String* value that represents the co
 
 ## Syntax
 
-```
+```vb
 GETCURRENTCOMPANY ()
 ```
 

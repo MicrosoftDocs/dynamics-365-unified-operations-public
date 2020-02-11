@@ -38,7 +38,7 @@ The `TEXT` function returns the specified number as a *String* value after it ha
 
 ## Syntax
 
-```
+```vb
 TEXT (number)
 ```
 

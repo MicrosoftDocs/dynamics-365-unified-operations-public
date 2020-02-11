@@ -38,7 +38,7 @@ The `NULLCONTAINER` function returns a null *Container (record)* value that has 
 
 ## Syntax
 
-```
+```vb
 NULLCONTAINER (list)
 ```
 

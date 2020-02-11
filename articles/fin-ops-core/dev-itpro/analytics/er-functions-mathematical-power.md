@@ -38,7 +38,7 @@ The `POWER` function returns a *Real* value that represents the result of raisin
 
 ## Syntax
 
-```
+```vb
 POWER (number, power)
 ```
 
