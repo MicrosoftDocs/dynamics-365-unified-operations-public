@@ -38,7 +38,7 @@ ms.dyn365.ops.version: 10.0.9
 [!include [banner](includes/preview-banner.md)]
 
 
-"Inbound operations"  and "outbound operations" in the point of sale (POS) operation replace "picking and receiving" in POS in Commerce versions 10.0.10 and higher.
+"Inbound operations" and "outbound operations" in the point of sale (POS) operation replace "picking and receiving" in POS in Commerce versions 10.0.10 and higher.
 
 > [!NOTE] 
 > Any new features that are added to the POS application related to store inventory receiving against purchase orders and transfer orders will be made to the inbound operations operation beginning with version 10.0.10. We recommend that users who are currently using the picking and receiving operation in POS establish a strategy for moving off of this operation and onto the new inbound and outbound operations. The picking and receiving POS operation will not be removed from the product, but there will be no additional investments made to this operation from a functional or performance perspective after version 10.0.9.
