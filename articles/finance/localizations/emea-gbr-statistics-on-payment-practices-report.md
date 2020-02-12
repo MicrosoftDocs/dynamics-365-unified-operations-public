@@ -69,9 +69,9 @@ payment practices (UK)** along with **Statistics on invoices** (ER model) and
 **Statistics on invoices model mapping** (ER model mapping), before using this
 report.
 
-    Note: Review fix downloading instructions in the topic [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs)
+Review fix downloading instructions in the topic [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs)
 
-# Post invoices and payments
+# Post documents and define the date of receiving the invoice.
 
 Before generating the report, you should post invoices and payments and settle
 them properly. Not settled payments can't be exported in the Payments_made tab,
