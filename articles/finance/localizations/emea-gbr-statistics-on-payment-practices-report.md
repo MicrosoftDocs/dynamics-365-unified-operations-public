@@ -25,6 +25,7 @@ ms.author: anasyash
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: 10.0.8
 
+---
 
 # Overview
 
@@ -68,8 +69,7 @@ payment practices (UK)** along with **Statistics on invoices** (ER model) and
 **Statistics on invoices model mapping** (ER model mapping), before using this
 report.
 
-Note: Review fix downloading instructions in the topic
-[Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs)
+    Note: Review fix downloading instructions in the topic [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs)
 
 # Post invoices and payments
 
