@@ -112,7 +112,7 @@ The document list page view also provides an option for creating a new inbound t
 
 ## Receiving process
 
-Once a purchase order or transfer order document is selected from the **Active** tab, click **Order details** to begin the receiving process.
+Once the user selects a purchase order or transfer order document on the **Active** tab, the user can click **Order details** to begin the receiving process.
 
 By default, the **Receiving now** view is displayed. This view is optimized for barcode scanning and can be used to build a list of the items scanned to be received. You can begin scanning item barcodes to start the receiving process.
 
