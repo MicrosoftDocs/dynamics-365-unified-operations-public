@@ -47,7 +47,7 @@ The Retail Server proxy is available for download via the Dynamics 365 npm feed 
 
 To install the proxy in your software development kit (SDK) development environment, follow these steps.
 
-1. Determine your current active version of Retail Servert. This version will be the version of the Retail Servert NuGet package that you use for back-end extensibility.
+1. Determine your current active version of Retail Server. This version will be the version of the Retail Server NuGet package that you use for back-end extensibility.
 1. In the **package.json** file, add the following entry in the **dependencies** section. (This entry might already be present and have up-to-date version information.)
 
     ```json

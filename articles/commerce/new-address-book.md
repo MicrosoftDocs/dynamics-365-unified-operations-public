@@ -56,7 +56,7 @@ The following image shows the creation of an employee address book for a retail 
 
 [Info codes and info code groups](info-codes-retail.md)  		  
 
-[Retail functionality profile](retail-functionality-profile.md)	  
+[Create a retail functionality profile](retail-functionality-profile.md)	  
 
 [Screen layout overview](pos-screen-layouts.md)		  
 

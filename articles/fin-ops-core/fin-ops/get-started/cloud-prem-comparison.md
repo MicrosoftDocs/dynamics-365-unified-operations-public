@@ -152,7 +152,7 @@ The following tables list the application areas. Cloud and on-premises support i
 
 ## Dynamics 365 Commerce 
 
-To see a list of capabilities that are available in on-premises deployments, see [Retail capabilities that are available in on-premises deployments](../../../retail/retail-onprem.md).
+To see a list of capabilities that are available in on-premises deployments, see [Commerce capabilities that are available in on-premises deployments](../../../retail/retail-onprem.md).
 
 ## Dynamics 365 Human Resources 
 

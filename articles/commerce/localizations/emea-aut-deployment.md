@@ -35,7 +35,7 @@ ms.dyn365.ops.version:
 This topic is a deployment guide that shows how to enable the Dynamics 365 Commerce localization for Austria. The localization consists of several extensions of Commerce components. For example, the extensions let you print custom fields on receipts, register additional audit events, includes samples of the integration with the EFSTA System and
 Electronical Fiscal Register Software. For more information about the localization for Austria, see [Fiscal registration service integration sample for Austria](./emea-aut-fi-sample.md).
 
-Integration samples were developed based on the fiscal integration framework. For details about the fiscal integration functionality, see [Overview of fiscal integration for Retail channels](fiscal-integration-for-retail-channel.md), these samples are part of the Retail software development kit (SDK). For information about how to install and use the SDK, see the [Retail software development kit (SDK) architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md).
+Integration samples were developed based on the fiscal integration framework. For details about the fiscal integration functionality, see [Overview of fiscal integration for Commerce channels](fiscal-integration-for-retail-channel.md), these samples are part of the Retail software development kit (SDK). For information about how to install and use the SDK, see the [Retail software development kit (SDK) architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
 This localization consists of extensions for the Commerce runtime (CRT), Hardware station, and POS. To run this sample, you must modify and build the CRT, Hardware station, and POS projects. We recommend that you use an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system, such as Azure DevOps, where no files have been changed yet.
 
@@ -180,7 +180,7 @@ The Hardware station extension components are included in the Hardware station s
 
 #### Set up the registration process
 
-To enable the registration process, set up Headquarters using the steps below. For more details, see [Set up the fiscal integration for Retail channels](./setting-up-fiscal-integration-for-retail-channel.md).
+To enable the registration process, set up Headquarters using the steps below. For more details, see [Set up the fiscal integration for Commerce channels](./setting-up-fiscal-integration-for-retail-channel.md).
 
 1. Open **Commerce shared parameters** and enable **Fiscal integration** on the **General** tab.
 2. Open **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors** menu. Load connector configuration from RetailSdk. The file is located under SampleExtensions\HardwareStation\Extension.EFRSample\Configuration\ConnectorEFRSampleAustria.xml.
@@ -225,13 +225,13 @@ Follow these steps to create deployable packages that contain Commerce component
 
 3. Make the following changes in the **BuildTools\Customization.settings** package customization configuration file:
 
-        ```xml
-        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.EFRSample.dll" />
-        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll" />
-        <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll" />
-        <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.EFRSample" />
-        ```
+    ```xml
+    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.EFRSample.dll" />
+    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll" />
+    <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll" />
+    <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.EFRSample" />
+    ```
 
 4. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
-5. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create retail deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+5. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 6. Complete the [Set up required parameters in Headquarters](#set-up-required-parameters-in-headquarters)

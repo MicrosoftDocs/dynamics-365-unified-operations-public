@@ -118,7 +118,7 @@ You can use the peripheral simulator to test product bar codes, receipt formats,
 
 #### Assign the hardware profile to a register
 
-1. After the hardware profile is created, go to **Retail and commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **Registers**.
+1. After the hardware profile is created, go to **Retail and Commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **Registers**.
 2. In the **POS registers** list, click the link in the **Register number** field for the register that should use the peripheral simulator.
 3. Click **Edit**.
 4. In the **Profiles** section, in the **Hardware profile** field, select the hardware profile that you created for virtual peripherals.
@@ -537,4 +537,4 @@ For support if you're performing compatibility tests, and for other inquiries, s
 
 ## Additional resources
 
-[Retail peripherals](../retail-peripherals-overview.md)
+[Peripherals](../retail-peripherals-overview.md)

@@ -58,7 +58,7 @@ In some cases, channel performance might not be as good as you expected. Poor pe
 - Additional channel database extensions. Make sure that your custom SQL is efficient and uses correct indexes.
 - Multiple runs of the same custom or built-in CRT SQL queries. If this approach is too expensive, caching in the CRT request handler can be applied, as appropriate.
 
-For more details, see the [Microsoft Dynamics 365 Retail for IT pros and developers](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page) topics.
+For more details, see the [Commerce for IT pros and developers](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page) topics.
 
 When you investigate store performance, follow the suggestions in [Retail Channel performance investigations](https://dynamicsnotes.com/retail-channel-performance-investigations/).
 
@@ -92,6 +92,6 @@ After you've completed a performance fix, you should verify the fix in a test en
 Any fix of a larger performance issue should be followed by a new performance test. Often, a large issue masks other smaller issues. After the top issue is resolved, the next issues can be found and worked on until the performance meets the customer's expectations.
 
 ## Additional resources
-[Set up new environments, Azure DevOps, and branches for Retail projects](./new-environments-visual-studio-teams-branch-retail-projects.md)
+[Set up new environments, Azure DevOps, and branches for Commerce projects](./new-environments-visual-studio-teams-branch-retail-projects.md)
 
 [Update code and environments for Retail projects](./updating-environments.md)
