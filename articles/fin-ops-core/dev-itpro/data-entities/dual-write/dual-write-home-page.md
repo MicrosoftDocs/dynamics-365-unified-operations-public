@@ -24,7 +24,7 @@ ms.custom: 21311
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: 
+ms.author: rhaertle
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -48,16 +48,16 @@ These topics describe dual-write integration.
 + [Company concept in Common Data Service](company-data.md)
 + [Bootstrap with company data FAQ](bootstrap-company-data.md)
 + [Integrated customer master](customer-mapping.md)
-+ [Integrated ledger](ledger-master.md)
++ [Integrated ledger](ledger-mapping.md)
 + [Unified product experience](product-mapping.md)
 + [Integrated vendor master](vendor-mapping.md)
 + [Switch between vendor designs](switch-vendor-design.md)
-+ [Integrated sites and warehouses](sites-warehouses-mappings.md)
++ [Integrated sites and warehouses](sites-warehouses-mapping.md)
 + [Integrated tax master](tax-mapping.md)
-+ [Initial synchronization choices and administration views](initial-synchronization.md)
++ [Initial synchronization choices and administration views](initial-sync.md)
 
 
 ## Support
 
-+ [Troubleshooting data integration](troubleshooting-integration.md) 
++ [Troubleshooting data integration](dual-write-troubleshooting.md) 
 
