@@ -65,7 +65,6 @@ After the LCS **Implementation project** workspace is provisioned, the Microso
 
 All LCS **Implementation projects** will receive an email from the FastTrack team welcoming them to the service after they successfully complete the project onboarding. If project onboarding is not completed within a few weeks after creating an LCS **Implementation project** creation, a reminder will be sent to the project team.
 
-For qualifying projects, FastTrack will email the project team offering an onboarding meeting, which is a 60-minute conference call. For more information about qualifying projects, see [Eligibility for FastTrack](../get-started/fasttrack-dynamics-365-overview.md#eligibility-for-fasttrack). The onboarding meeting is optional. During this call, the FastTrack team will introduce the FastTrack program and discuss important topics such as tenant validation, environment planning, application lifecycle management, and go-live readiness. If necessary, during the call we will assist the team in completing the **Project onboarding**. It is suggested that Project managers and Delivery leads as well as Solution Architects from customer and partner participate in the onboarding meeting. 
 > [!NOTE]
 > All onboarding-related emails from the FastTrack team will originate from Dynamics 365 Onboarding (<ond365@microsoft.com>), so please ensure that any spam blocker/filter allows email from this address.
 
