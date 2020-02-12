@@ -81,7 +81,7 @@ To send email receipts, you must configure a Simple Mail Transfer Protocol (SMTP
 
 ### Set up an email template for receipts
 
-1. Go to **Organization administration &gt; Setup &gt; Email templates**.
+1. Go to **Organization administration &gt; Setup &gt; Organization email templates**.
 2. Press **Ctrl+N** to create a template.
 3. On the **Overview** tab, complete the following fields:
 
