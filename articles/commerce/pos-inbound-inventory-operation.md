@@ -183,4 +183,4 @@ Once in a **Requested** state, the document is visible in the **Active** documen
 
 ## Related topics
 
-[POS outbound inventory operation](pos-outbound-inventory-operation.md)
+[Outbound inventory operation in POS](pos-outbound-inventory-operation.md)
