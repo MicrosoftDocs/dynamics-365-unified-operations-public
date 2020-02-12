@@ -450,12 +450,12 @@
             href: omni-auto-charges.md
           - name: Prorate header charges to matching sales lines
             href: pro-rate-charges-matching-lines.md 
-        - name: Continuity Programs
+        - name: Manage continuity programs
           items:
           - name: Set up continuity programs for call centers 
-          href: set-up-continuity-program.md
+            href: set-up-continuity-program.md
           - name: Define continuity schedules
-          href: tasks/define-continuity-schedules.md
+            href: tasks/define-continuity-schedules.md
         - name: Retail store management 
           items:
           - name: Create and change store hours
