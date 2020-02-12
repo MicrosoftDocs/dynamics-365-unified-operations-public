@@ -58,10 +58,10 @@ Before you begin, you should understand *deployable packages*, *runbooks*, and t
 - **AOT deployable package** – A deployable package that is generated from application metadata and source code. This deployable package is created in a development or build environment.
 - **Application and Platform Binary update package** – A deployable package that contains dynamic-link libraries (DLLs) and other binaries and metadata that the platform and application depend on. This is a package released by Microsoft. This is available from the **All binary updates** tile from LCS.
 - **Platform update package** – A deployable package that contains dynamic-link libraries (DLLs) and other binaries and metadata that the platform depend on. This is a package released by Microsoft. This is available from the **Platform binary updates** tile from LCS.
-- **Retail deployable package** – A combination of various Retail packages that are generated after the Retail code is combined.
-- **Merged package** – A package that is created by combining one package of each type. For example, you can merge one binary update package and one AOT package, or one AOT package and one Retail deployable package. The packages are merged in the Asset library for the project in LCS.
+- **Commerce deployable package** – A combination of various packages that are generated after the Commerce code is combined.
+- **Merged package** – A package that is created by combining one package of each type. For example, you can merge one binary update package and one AOT package, or one AOT package and one Commerce deployable package. The packages are merged in the Asset library for the project in LCS.
 > [!NOTE] 
-> A binary package and a Retail deployable package can't be included in the same merged package.
+> A binary package and a Commerce deployable package can't be included in the same merged package.
 >
 > For information about how to download an update from LCS and what you see in the tiles based on your environment version, see [Download updates from Lifecycle Services (LCS)](../migration-upgrade/download-hotfix-lcs.md).
 >
@@ -121,7 +121,7 @@ If package deployment fails, see the [Troubleshoot package application issues](d
 
 If you are updating a Tier-2 Sandbox or Production environment on application version 8.1.2.x or newer and have initialized Cloud Scale Unit, you will also need to update Commerce channel components. For more information, see [Update Retail Cloud Scale Unit](Update-retail-channel.md).
 
-If you're using components (such as Modern POS), after you've applied updates and extensions in your environment, you must also update your in-store components. For more information, see [Configure, install, and activate Retail Modern POS (MPOS)](../../../retail/retail-modern-pos-device-activation.md).
+If you're using components (such as Modern POS), after you've applied updates and extensions in your environment, you must also update your in-store components. For more information, see [Configure, install, and activate Modern POS (MPOS)](../../../retail/retail-modern-pos-device-activation.md).
 
 ## Packages, runbooks, and the AXUpdateInstaller in depth
 

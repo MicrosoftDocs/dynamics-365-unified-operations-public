@@ -204,7 +204,7 @@ You must complete this procedure before you activate Modern POS for a new worker
     > [!NOTE]
     > The **External identifier** field will remain empty. This behavior is expected. Therefore, you can ignore it.
 
-This procedure should be completed before you activate Retail Cloud POS or Modern POS. For more information, see [Manage Retail activation accounts and validate devices](set-up-activation-accounts-validate-devices-hq.md).
+This procedure should be completed before you activate Retail Cloud POS or Modern POS. For more information, see [Manage activation accounts and validate devices](set-up-activation-accounts-validate-devices-hq.md).
 
 ### Run the Validate Devices for Activation check
 
@@ -325,4 +325,4 @@ On a single-computer system, such as a developer topology or a demo environment,
 
 ## Additional resources
 
-[Install the Retail point of sale (POS) layout designer](install-pos-layout-designer.md)
+[Install the POS layout designer](install-pos-layout-designer.md)
