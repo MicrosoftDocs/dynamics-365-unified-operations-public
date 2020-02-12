@@ -42,13 +42,23 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 
 ## Features included in this release
 
-The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. Additional links point to additional documentation that is currently available for that feature. Some of these features may also have been included a previous incremental release, but weren't announced in previous *What's new* topic, so we are adding them here. Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
+The features listed in this section are included in this release and haven't been announced before. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. Additional links point to additional documentation that is currently available for that feature. 
+
+### Debut features
+
+The following features are entirely new for version 10.0.9. You must enable these features using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
+
+- [Inbound quality check](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inbound-quality-check)
+- [Flexible warehouse-level dimension reservation](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/flexible-warehouse-level-dimension-reservation)
+
+### Features now added to feature management
+
+The following features have been released earlier, but only with limited availability. Some customers may have seen some of these feature before, but as of version 10.0.9, they are available to all customers through [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 - [Advanced load building during a wave](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/advanced-load-building-during-wave)
 - [Auto-release shipment for cross dock](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/auto-release-shipment-cross-dock) - For more information, see [Auto-release shipment for cross-docking](../warehousing/auto-release-shipment-for-cross-docking.md).
 - [Consolidate shipment enhancements](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/consolidate-shipment-enhancements)
 - [Cross-docking](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/planned-cross-docking)
-- [Inbound quality check](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inbound-quality-check)
 - [Inventory aging report storage](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inventory-aging-report-storage)
 - [Master planning progress Gantt chart](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/master-planning-progress-gantt-chart) - For more information, see [Use a Gantt chart to visualize master planning progress](../master-planning/tasks/monitor-master-planning-run#use-a-gantt-chart-to-visualize-master-planning-progress) and also the [MRP performance and usability improvements](https://www.microsoft.com/videoplayer/embed/RE4myrJ) video.
 - [Outbound sorting](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/outbound-sorting)
@@ -59,7 +69,6 @@ The following features are included in this release. The feature titles link to 
 - [Wave label printing enhancements](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-label-printing-enhancements)
 - [Receive sortation](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/receive-sortation)
 - [Warehouse slotting](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-slotting)
-- [Flexible warehouse-level dimension reservation](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/flexible-warehouse-level-dimension-reservation)
 - [Further catch weight integration 10.0.1](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.1) - For more information, see [Catch weight product processing with warehouse management](../warehousing/catch-weight-processing.md) and also the [Catch weight product improvements](https://www.microsoft.com/videoplayer/embed/RE4jzx8) video.
 - [Further catch weight integration 10.0.2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.2) - For more information, see [Catch weight product processing with warehouse management](../warehousing/catch-weight-processing.md) and also the [Catch weight product improvements](https://www.microsoft.com/videoplayer/embed/RE4jzx8) video.
 - [Further catch weight integration 10.0.3](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.3) - For more information, see [Catch weight product processing with warehouse management](../warehousing/catch-weight-processing.md) and also the [Catch weight product improvements](https://www.microsoft.com/videoplayer/embed/RE4jzx8) video.
