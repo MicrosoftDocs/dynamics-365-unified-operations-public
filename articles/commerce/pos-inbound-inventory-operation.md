@@ -75,9 +75,9 @@ The batch jobs you create will be used to process documents that have failed or 
 
 To use the inbound operation functionality, your organization must first configure the **Inbound operation** POS operation on one or more of your [POS screen layouts](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts). Ensure that you have properly tested and trained your users on the new operation before deploying it in a production environment.
 
-## Overview of inbound operation
+## Overview
 
-The inbound operations will allow the POS user to perform the following tasks.
+The **Inbound operation** enables the POS user to perform the following tasks.
 
 - Receive inventory into store stock from confirmed purchase order documents or from shipped transfer order documents.
 - View information about historical inventory receipts for a period of 7 days after the document has been fully received.
