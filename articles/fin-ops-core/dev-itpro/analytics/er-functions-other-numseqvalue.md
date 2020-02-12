@@ -38,19 +38,19 @@ The `NUMSEQVALUE` function returns a *String* value that represents the new gene
 
 ## Syntax 1
 
-```
+```vb
 NUMSEQVALUE (number sequence code)
 ```
 
 ## Syntax 2
 
-```
+```vb
 NUMSEQVALUE (number sequence record ID)
 ```
 
 ## Syntax 3
 
-```
+```vb
 NUMSEQVALUE (number sequence code, scope type, scope ID)
 ```
 

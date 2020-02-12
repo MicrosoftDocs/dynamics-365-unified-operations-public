@@ -44,7 +44,7 @@ Action mocks represent the expected output data of an action. They should be cre
 
 The following example shows the placement of the action mock file.
 
-```
+```text
 src
 |__actions
 |__modules
@@ -54,7 +54,7 @@ src
 
 Alternatively, the mock file can be put under a module.
 
-```
+```text
 src
 |__actions
 |__modules
@@ -81,7 +81,7 @@ If no **CacheKey** value is specified, all actions that have the corresponding *
 
 The following example shows a data action mock that returns product data.
 
-```
+```json
 [
     {
         "CacheObjectType": "Product",

@@ -43,7 +43,7 @@ The .env file that is provided as part of the Dynamics 365 Commerce online softw
 
 The default .env file that is provided with the online SDK should resemble the following example.
 
-```
+```text
 MSDyn365_APP_TYPE=partner
 PORT=4000
 
@@ -70,7 +70,7 @@ The **PORT** variable is required. It defines the port number that is used to pr
 
 The following example shows the syntax for this variable.
 
-```
+```text
 PORT=4000
 ```
 
@@ -84,7 +84,7 @@ The **MSDyn365\_HOST** variable defines the domain name of your customer-facing 
 
 The following example shows the syntax for this variable.
 
-```
+```text
 MSDyn365_HOST=demo.fabrikam.com
 ```
 
@@ -94,7 +94,7 @@ The **MSDyn365Commerce\_BASEURL** variable defines the URL of the Microsoft Dyna
 
 The following example shows the syntax for this variable.
 
-```
+```text
 MSDyn365Commerce_BASEURL=https://fabrikamb1de06d29165320bret.cloud.retail.dynamics.com
 ```
 
@@ -111,7 +111,7 @@ To find the channel operating unit number, follow these steps.
 
 The following example shows the syntax for this variable.
 
-```
+```text
 MSDyn365Commerce_OUN=128
 ```
 
@@ -134,7 +134,7 @@ To find the channel ID, follow these steps.
 
 The following example shows the syntax for this variable.
 
-```
+```text
 MSDyn365Commerce_CHANNELID=68719478279
 ```
 

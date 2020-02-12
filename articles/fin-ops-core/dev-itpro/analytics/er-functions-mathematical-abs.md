@@ -38,7 +38,7 @@ The `ABS` function returns the absolute value (modulus) of the specified number 
 
 ## Syntax
 
-```
+```vb
 ABS (number)
 ```
 

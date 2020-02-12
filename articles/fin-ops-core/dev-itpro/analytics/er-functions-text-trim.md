@@ -38,7 +38,7 @@ The `TRIM` function returns the specified text string as a *String* value after 
 
 ## Syntax
 
-```
+```vb
 TRIM (text )
 ```
 

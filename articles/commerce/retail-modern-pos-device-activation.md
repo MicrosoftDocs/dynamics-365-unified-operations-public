@@ -229,7 +229,7 @@ The device should now be activated and ready to use.
 > To learn more about deployable packages, see the article [Apply a deployable package](../dev-itpro/deployment/apply-deployable-package-system.md).
 
 1. After a Modern POS application is uploaded into the environment, the version of the package can be selected on the device. The package listings should include the new uploaded application.
-2. To update the Modern POS application, follow the steps in the [Download and install Modern POS](#download-and-install-retail-modern-pos) section. To do an in-place update, just run the newer version of the self-service installer. Uninstallation isn't required or recommended. Device activation status will be maintained after the update.
+2. To update the Modern POS application, follow the steps in the [Download and install Modern POS](#download-and-install-modern-pos) section. To do an in-place update, just run the newer version of the self-service installer. Uninstallation isn't required or recommended. Device activation status will be maintained after the update.
 3. The installer will use the currently installed configuration settings. If the configuration file has changed, because of various configuration changes in Commerce, an update won't change the Modern POS application settings.
 
 ## Troubleshooting
