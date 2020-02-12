@@ -106,7 +106,18 @@ report parameters**, fill in the fields:
 | **Date criteria**          | Select one of the following options: **Invoice accounting date**, **Invoice date**, **Invoice receive date** Depending on user's choice, the number of days taken to make payments will be calculated between **Payment date** and respective type of date chosen on the dialog: **Transaction date**, **Invoice date**, **Receive document date** |
 | **From date**, **To date** | Fill in start and end dates of reporting period.                                                                                                                                                                                                                                                                                                   |
 | **Vendor posting profile** | Select vendor profile to generate report only for the selected profile                                                                                                                                                                                                                                                                             |
-| **Print document details** | Select **Yes** to export details of invoice/payment documents on the report.                                                                                                                                                                                                                                                                       |
+| **Print document details** | Select **Yes** to export details of invoice/payment documents on the report.   |
+
+Click **OK** to generate the report.
+
+Review **Payments made** tab:
+
+![Payments made](media/Payments_made.png)
+
+
+Review **Payments due** tab:
+
+![Payments due](media/Payments_due.png)
 
 # Publish reporting on payment practices
 
