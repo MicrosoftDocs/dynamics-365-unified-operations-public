@@ -58,15 +58,15 @@ The health check is operation ID 717 in the **POS Operations** back office form.
 
 | Type | Connection | Details | 
 |---|---|---|
-| Printer | OPOS | Tests basic OPOS functions including **Open** &gt; **Claim** &gt; **Release** &gt; **Close** |
-| Printer | Windows driver | Basic Windows printer health check functions such as those described [here](https://gallery.technet.microsoft.com/scriptcenter/Printer-Health-Check-Up-29da22b2). |
-| Printer | Device |  |
-| Line display | OPOS | Tests basic OPOS functions including **Open** &gt; **Claim** &gt; **Release** &gt; **Close** |
+| Printer | OPOS | Tests basic OPOS functions including: <br> **Open:** <br> **Open** &gt; **ClaimDevice** &gt; **DeviceEnabled=True** <br><br> **Close:**<br>**DeviceEnabled=False** &gt; **ReleaseDevice** &gt; **Close** |
+| Line display | OPOS | Tests basic OPOS functions including: <br> **Open:** <br> **Open** &gt; **ClaimDevice** &gt; **DeviceEnabled=True** <br><br> **Close:**<br>**DeviceEnabled=False** &gt; **ReleaseDevice** &gt; **Close** |
 | Dual display | Windows | Check to ensure a second Windows display is detected by the operating system. | 
-| MSR | OPOS | Tests basic OPOS functions including **Open** &gt; **Claim** &gt; **Release** &gt; **Close** |
-| Drawer | OPOS | Checks drawer open/closed status | 
-| Scale | OPOS | Tests basic OPOS functions including **Open** &gt; **Claim** &gt; **Release** &gt; **Close** |
-| EFT service | Adyen | If the out of box Adyen payment connector is configured, checks the device connection and network connection. |
+| MSR | OPOS | Tests basic OPOS functions including: <br> **Open:** <br> **Open** &gt; **ClaimDevice** &gt; **DeviceEnabled=True** <br><br> **Close:**<br>**DeviceEnabled=False** &gt; **ReleaseDevice** &gt; **Close** |
+| Drawer | OPOS | Tests basic OPOS functions including: <br> **Open:** <br> **Open** &gt; **ClaimDevice** &gt; **DeviceEnabled=True** <br><br> **Close:**<br>**DeviceEnabled=False** &gt; **ReleaseDevice** &gt; **Close** | 
+| Scanner | OPOS | Tests basic OPOS functions including: <br> **Open:** <br> **Open** &gt; **ClaimDevice** &gt; **DeviceEnabled=True** <br><br> **Close:**<br>**DeviceEnabled=False** &gt; **ReleaseDevice** &gt; **Close** | 
+| Scale | OPOS | Tests basic OPOS functions including: <br> **Open:** <br> **Open** &gt; **ClaimDevice** &gt; **DeviceEnabled=True** <br><br> **Close:**<br>**DeviceEnabled=False** &gt; **ReleaseDevice** &gt; **Close**  |
+| PIN pad | OPOS | Tests basic OPOS functions including: <br> **Open:** <br> **Open** &gt; **ClaimDevice** &gt; **DeviceEnabled=True** <br><br> **Close:**<br>**DeviceEnabled=False** &gt; **ReleaseDevice** &gt; **Close**  |
+| Payment terminal | Payments SDK | **Lock** <br> **BeginTransaction** <br> **EndTransaction** <br> **ReleaseDevice** <br> **Close** |
 
 ### Using health check in POS
 
@@ -85,7 +85,7 @@ Custom health checks can also be created to check devices not supported out of b
 ## Related articles
 
 - [Modern POS(MPOS) and Cloud POS Trigger Extensibility](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/modern-pos-trigger-extensibility)
-- (
+
 
 
 
