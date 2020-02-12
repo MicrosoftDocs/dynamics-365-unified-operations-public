@@ -49,6 +49,7 @@ The following features are included in this release. The feature titles link to 
 - [Consolidate shipment enhancements](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/consolidate-shipment-enhancements)
 - [Cross-docking](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/planned-cross-docking)
 - [Inbound quality check](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inbound-quality-check)
+- [Inventory aging report storage](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inventory-aging-report-storage)
 - [Master planning progress Gantt chart](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/master-planning-progress-gantt-chart) - For more information, see [Use a Gantt chart to visualize master planning progress](../master-planning/tasks/monitor-master-planning-run#use-a-gantt-chart-to-visualize-master-planning-progress) and also the [MRP performance and usability improvements](https://www.microsoft.com/videoplayer/embed/RE4myrJ) video.
 - [Outbound sorting](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/outbound-sorting)
 - [Parallelized firming of planned orders](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/parallelized-firming-planned-orders) - For more information, see [Parallelize firming](../master-planning/maintain-planned-orders#parallelize-firming) and also the [MRP performance and usability improvements](https://www.microsoft.com/videoplayer/embed/RE4myrJ) video.
@@ -67,7 +68,12 @@ The following features are included in this release. The feature titles link to 
 - [Further catch weight integration 10.0.6](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.6) - For more information, see [Catch weight product processing with warehouse management](../warehousing/catch-weight-processing.md) and also the [Catch weight product improvements](https://www.microsoft.com/videoplayer/embed/RE4jzx8) video.
 - [Further catch weight integration 10.0.7](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.7) - For more information, see [Catch weight product processing with warehouse management](../warehousing/catch-weight-processing.md) and also the [Catch weight product improvements](https://www.microsoft.com/videoplayer/embed/RE4jzx8) video.
 - [Packing vs. storage dimensions](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/packing-vs.-storage-dimensions)
+- [Purchase agreement enhancements](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/purchase-agreement-enhancements) - For more information, see [Purchase agreements](../procurement/purchase-agreements.md)
+- [Vendor bidding—questions from vendors and summarized responses](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/vendor-bidding-questions-vendors-summarized-responses)
 - [Wave step code](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-step-code)
+
+<!-- - [Self-billing invoice control for procurement](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/self-billing-invoice-control-procurement)
+- [Self-billing invoice control for sales](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/self-billing-invoice-control-sales) -->
 
 ## Additional resources
 
