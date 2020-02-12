@@ -169,7 +169,7 @@ After clicking **New**, the user will be prompted to select a **Transfer from** 
 
 The selection of stores or warehouses in the **Transfer from** location field is limited to the selection defined for the store's fulfillment group configuration.
 
-The user can populate values in the **Ship date**, **Receive date**, and **Mode of delivery** fields as needed. A user can also add a **Note** that will be stored with the transfer order header as an attachment to the document in Headquarters.
+The user can populate values in the **Ship date**, **Receive date**, and **Mode of delivery** fields as needed. A user can also add a **Note** that will be stored with the transfer order header as an attachment to the document in HQ.
 
 After the header information is created, the user can add products to the transfer order. To initiate the process of adding items and requested quantities, the user must click **Add product**. Users may also add a line-specific **Note** to the journal lines from the **Details** panel. The notes will be stored as a line attachment.
 
