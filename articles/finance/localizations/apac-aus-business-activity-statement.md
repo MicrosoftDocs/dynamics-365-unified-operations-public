@@ -172,7 +172,7 @@ For a quarterly BAS format, the following reporting codes must be set up. These 
 
 Create an XML file that contains the following information.
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <DATA>
         <field ID="fA1">BAS1</field>
@@ -190,7 +190,7 @@ Create an XML file that contains the following information.
 
 Before you use the XML file, be sure to change the values for the fields that are used, so that they are appropriate for your company. Here are the values for each field.
 
-```
+```xpp
 case 'fA1' : // Document Identification Number
 case 'fF1' : // FringeATO
 case 'fT2' : // PaygCommRate
