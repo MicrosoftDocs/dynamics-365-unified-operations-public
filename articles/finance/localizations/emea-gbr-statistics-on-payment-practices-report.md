@@ -1,9 +1,32 @@
 ---
+# required metadata
 title: Statistics on payment practices report
----
+description: This topic provides information about statistics on payment practices report
+author: anasyash
+manager: AnnBe
+ms.date: 02/12/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
 
-Overview
-========
+# optional metadata
+
+# ms.search.form:  
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kfend
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: United Kingdom
+# ms.search.industry: 
+ms.author: anasyash
+ms.search.validFrom: 2020-12-02
+ms.dyn365.ops.version: 10.0.8
+
+
+# Overview
 
 Businesses in UK in scope of reporting requirement must prepare and publish
 information about their payment practices and performance in relation to
@@ -27,8 +50,7 @@ as well as the following statistics:
 -   (3) The percentage of payments due within the reporting period which were
     not paid within agreed terms.
 
-Report
-======
+# Report
 
 The report **Statistics on payment practices (UK)** is available which is
 exported in Excel format and has two tabs:
@@ -46,12 +68,10 @@ payment practices (UK)** along with **Statistics on invoices** (ER model) and
 **Statistics on invoices model mapping** (ER model mapping), before using this
 report.
 
-Note: Fix downloading instructions are located here:
-[https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs
-](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs)
+Note: Review fix downloading instructions in the topic
+[Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs)
 
-Post invoices and payments
-==========================
+# Post invoices and payments
 
 Before generating the report, you should post invoices and payments and settle
 them properly. Not settled payments can't be exported in the Payments_made tab,
@@ -74,8 +94,7 @@ Also, you can fill the **Receive document date** after the vendor invoice is
 posted and before it’s fully settled, on **Vendor transactions** page, on the
 **General** tab.
 
-Generate report
-===============
+# Generate report
 
 Go to **Accounts payable \> Inquiries and reports \> Statistics \> Report on
 payment deadlines.** In the opened dialog select **Statistics on payment
@@ -89,8 +108,7 @@ report parameters**, fill in the fields:
 | **Vendor posting profile** | Select vendor profile to generate report only for the selected profile                                                                                                                                                                                                                                                                             |
 | **Print document details** | Select **Yes** to export details of invoice/payment documents on the report.                                                                                                                                                                                                                                                                       |
 
-Publish reporting on payment practices
-======================================
+# Publish reporting on payment practices
 
 After generating the **Statistics report on payment practices** report in Excel,
 you should use the data presented on the report for preparing the final report
