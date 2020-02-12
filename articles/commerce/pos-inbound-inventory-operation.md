@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: POS inbound inventory operation
+title: Inbound inventory operation in POS
 description: This topic describes capabilities of the POS inbound inventory operation.
 author: hhaines
 manager: annbe
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.9
 
 ---
 
-# Inbound inventory operations in POS
+# Inbound inventory operation in POS
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
