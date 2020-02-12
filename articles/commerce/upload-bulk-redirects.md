@@ -41,7 +41,7 @@ When creating your new e-commerce site on Dynamics 365 Commerce, the URLs from y
 
 ## Redirect CSV file
 
-Commerce supports a simple yet specific CSV file to handle the redirect URLs. 
+Commerce supports a simple yet specific CSV file to handle redirect URLs. 
 
 The schema of the CSV is as follows:
 
@@ -69,11 +69,11 @@ An example set of redirect rows may look like the following:
 - **No circular entries**: A source URL must not be used as the target in the same row. Also, avoid implementations where a target URL may link back as a source, either in a different row of the CSV file or a DNS redirect.
 - **Source and target URLs must be in valid URL format**: No spaces or invalid characters can be used in URLs.
 - **No query string URLs are supported**: Commerce will not execute query strings provided as source or target URLs.
-- **CSV file must be in valid CSV format**: CSV file must have comma-separated values, separate lines for each redirect, no header, and valid file formatting.
+- **CSV file must be in valid CSV format**: The CSV file must have comma-separated values, separate lines for each redirect, no header, and valid file formatting.
 
 ## Upload a redirect CSV file
 
-A redirect CSV file can be uploaded using Commerce site builder. The uploader must be an administrator for the site they are uploading the redirect CSV file to.
+A redirect CSV file can be uploaded using Commerce site builder. The uploader must be an administrator for the site to which they are uploading the redirect CSV file.
 
 To upload a redirect CSV file, follow these steps.
 
@@ -89,7 +89,7 @@ To upload a redirect CSV file, follow these steps.
 
 ## Update an uploaded redirect CSV file
 
-A previously-uploaded redirect CSV file can be downloaded for reference or editing and reupload.
+A previously-uploaded redirect CSV file can be downloaded for reference, or for editing and reupload.
 
 To update an existing uploaded CSV file, follow these steps.
 
@@ -99,7 +99,7 @@ To update an existing uploaded CSV file, follow these steps.
 1. Save the file to your local machine.
 1. Edit the CSV file as appropriate and save it when done.
 1. Under **URL Redirect Mapping**, select **Replace**. 
-1. In File Explorer, browse to and select the replacement CSV file, and then select **Open**
+1. In File Explorer, browse to and select the replacement CSV file, and then select **Open**.
 1. Under **URL Redirect Mapping**, set the toggle key to **On** to activate the redirects. 
 1. On the command bar, select **Save and Publish** to commit the changes. Allow up to 15 minutes for the redirects to take effect.
 
@@ -111,7 +111,7 @@ To turn off bulk redirects in an uploaded CSV file, follow these steps.
 1. In Commerce site builder, navigate to the site that will receive the bulk URL redirects.
 1. Go to **Site settings > General**.
 1. Under **URL Redirect Mapping**, select **Replace**. 
-1. In File Explorer, browse to and select your new replacement CSV file, and then select **Open**
+1. In File Explorer, browse to and select your new replacement CSV file, and then select **Open**.
 1. Under **URL Redirect Mapping**, set the toggle key to **On** to activate the redirects. 
 1. On the command bar, select **Save and Publish** to commit the changes. Allow up to 15 minutes for the redirects to stop working.
 
