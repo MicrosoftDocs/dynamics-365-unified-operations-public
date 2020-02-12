@@ -71,9 +71,9 @@ The batch jobs you create will be used to process documents that have failed or 
       - Configure another job to run the **RetailDocumentOperationProcessingBatch** class.
   2. Schedule these batch jobs to run on recurrence. For example, set the schedule to run every five minutes.
 
-## Prerequisite: add inbound operation to the POS screen layout
+## Prerequisite: add Inbound operation to the POS screen layout
 
-To use the inbound operation functionality, your organization must first configure the inbound operations POS operation on one or more of your [POS screen layouts](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts). Ensure that you have properly tested and trained your users on the new operation before deploying it in a production environment.
+To use the inbound operation functionality, your organization must first configure the **Inbound operation** POS operation on one or more of your [POS screen layouts](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts). Ensure that you have properly tested and trained your users on the new operation before deploying it in a production environment.
 
 ## Overview of inbound operation
 
