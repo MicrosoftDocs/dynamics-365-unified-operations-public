@@ -39,7 +39,7 @@ To see what's new or changed in each release of Dynamics 365 Supply Chain Manage
 
 | Version | Build number | Auto-update availability | Learn more |
 |---|---|---|---|
-| 10.0.9 preview | 10.0.383 | April 2020 | [What's new and changed in Dynamics 365 Supply Chain Management version 10.0.9](whats-new-scm-10-0-9.md) |
+| 10.0.9 | 10.0.383 | April 2020 | [What's new and changed in Dynamics 365 Supply Chain Management version 10.0.9](whats-new-scm-10-0-9.md) |
 | 10.0.8 | 10.0.319 | February 2020 | [What's new and changed in Dynamics 365 Supply Chain Management version 10.0.8](whats-new-scm-10-0-8.md) |
 | 10.0.7  | 10.0.283   | January 2020 | [What's new and changed in Dynamics 365 Supply Chain Management version 10.0.7](whats-new-scm-10-0-7.md) |
 | 10.0.6 |   10.0.234   | November 2019  | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.6](whats-new-scm-10-0-6.md) |
