@@ -181,3 +181,6 @@ Once the draft document is successfully submitted to HQ, it appears on the **Act
 
 Once in a **Requested** state, the document is visible in the **Active** document tab, but the document is not yet receivable by the inbound store or warehouse. When some or all of the transfer order has been shipped by the outbound warehouse, receipts can be posted by the inbound store or warehouse in POS. The transfer order documents will move from a **Requested** status to a **Shipped** or **Partially Shipped** status when the outbound side processes them. When the documents are in a **Shipped** or **Partially Shipped** status, the inbound store or warehouse can post receipts against them using the inbound operation receiving process.
 
+## Related topics
+
+[POS outbound inventory operation](pos-outbound-inventory-operation.md)
