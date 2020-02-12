@@ -628,6 +628,8 @@
             href: tasks/push-products-distribution-center-store-buyers-push.md
           - name: Set up rules and parameters for cross-docking and buyer's push  
             href: tasks/set-up-rules-parameters-cross-docking-buyers-push.md
+          - name: POS inbound inventory operation
+            href: pos-inbound-inventory-operation.md
         - name: Purchase orders	  
           items:
           - name: Purchase order overview
