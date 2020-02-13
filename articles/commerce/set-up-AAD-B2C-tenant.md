@@ -310,15 +310,13 @@ To set up a Social Identity Provider:
 
 Once the above AAD B2C provisioning steps are completed, the AAD B2C application must be registered in your Dynamics environment.
 
-In Dynamics, navigate to **Retail>Shared Parameters**
+In Dynamics, navigate to **Retail \> Shared Parameters**
 
 **Under <u>Identity Provider</u>:**
 
 - **Issuer: <***get Issuer from the directions below***>**
 
 **Step 1:** Create meta data address with B2C tenant and policy: https://<<B2CTENANTNAME>>.b2clogin.com/<<B2CTENANTNAME>>.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=<<B2CSIGN-INPOLICY>>
-
- 
 
 **Step 2**: Access metadata address in the browser like [https://d365plc.b2clogin.com/d365plc.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=B2C_1_signinup](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fd365plc.b2clogin.com%2Fd365plc.onmicrosoft.com%2Fv2.0%2F.well-known%2Fopenid-configuration%3Fp%3DB2C_1_signinup&data=02|01|brshoo%40microsoft.com|ce8f344e4b574c6f228708d7413d9c24|72f988bf86f141af91ab2d7cd011db47|1|0|637049605174233576&sdata=nqmbbPG3UUeLhCeCZ%2B5Ec6z%2BNi2H9bIJBXouPVZj5ww%3D&reserved=0)
 
@@ -332,8 +330,6 @@ In Dynamics, navigate to **Retail>Shared Parameters**
 
 Example Identity provider: https://login.fabrikam.com/073405c3-0113-4f43-b5e2-df01266e24ae/v2.0/
 
- 
-
 **Under <u>Relying Parties</u>**
 
 ·    **ClientID**: Set the Client ID as the B2C Application Id (Navigate to your Azure AD B2C – Applications page in the Azure Portal, select ‘Applications’ in the menu, and use the shown Application ID for the B2C application shown). 
@@ -344,35 +340,31 @@ Example B2C Application Id: 5f63f50d-d7e7-4a4e-8534-e87599fc0fd9
 
 ·    **User Type**: Customer
 
- 
-
 Additionally, users must **Disable Manual Number Sequence generation**.
 
+## Additional B2C information
 
-
-## Additional B2C Information
-
-#### Customer Migration
+### Customer migration
 
 If considering migrating customer records from a previous Identity Provider platform, please work with the Dynamics 365 Commerce team to review your customer migration needs.
 
 Additional AAD B2C documentation on customer migration can be found here: [Customer Migration](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-user-migration)
 
-#### Custom Policies
+### Custom policies
 
 For additional information regarding Customizing AAD B2C interactions and policy flows beyond what is offered by B2C standard policies, explore **Custom Policies** and related articles in the AAD B2C Documentation: [Custom policies](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-overview-custom). 
 
-#### Secondary Admin
+### Secondary admin
 
 In the Users section of your B2C tenant; a secondary admin account can be established (optional). This can be a direct account or a general account as needed. If needing to share an account across team resources, a common account can also be created- due to sensitivity of the data stored in AAD B2C- a common account should be monitored closely per your company's security practices.
 
-#### b2clogin.com
+### b2clogin.com
 
 Utilize the default ‘b2clogin.com’ domain (default). This part of the URL will be shown for login or reply URLs; viewable in the browser by users.
 
 
 
-## Providing Commerce with the B2C Application Information
+## Provide Commerce with the B2C application information
 
 Once Setup of the Azure AD B2C Tenant is complete, provide the Commerce Team with the below details. These data points collected will be used in LCS when provisioning your environment.
 
