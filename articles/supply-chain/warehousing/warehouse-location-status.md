@@ -82,7 +82,7 @@ The example scenario requires that you prepare two location profiles as follows:
 
     These parameters control whether the references field on the location are active or not.
 
-1. Select the "PICK-06" profile and repeat step 3 for that profile.
+1. Select the "PICK-06" profile and repeat the previous step for that profile.
 
 ### Example scenario
 
