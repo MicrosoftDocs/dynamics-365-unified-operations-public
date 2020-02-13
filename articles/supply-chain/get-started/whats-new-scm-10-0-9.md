@@ -42,7 +42,7 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 
 ## Features included in this release
 
-The features listed in this section are included in this release and haven't been announced as new before. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. Additional links point to additional documentation that is currently available for that feature.
+The features listed in this section are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. Additional links point to additional documentation that is currently available for that feature.
 
 ### Debut features
 
