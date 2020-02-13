@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Top reasons for customers to embrace dual-write
+title: Top reasons to use dual-write
 description: 
 author: RamaKrishnamoorthy
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.search.validFrom: 2020-01-06
 
 ---
 
-# Top reasons for customers to embrace dual-write
+# Top reasons to use dual-write
 
 [!include [banner](../../includes/banner.md)]
 
