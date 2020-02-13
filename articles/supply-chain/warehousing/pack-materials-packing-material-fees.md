@@ -45,27 +45,43 @@ You can define one or more packing units for an item, for a packing group of ite
 | Even if your company does not pay packing material fees, you can use the functionality to calculate statistics for the weights of packing materials. |
 
 ## Setup requirements for packing material fees
-Before you calculate packing material weights or packing material fees, or both, you must create the following base data:
+Before you calculate packing material weights or packing material fees, or both, you must navigate to **Inventory Management Parameters > General > Packing Materials** and then switch the **Calculate packing material fees** toggle to ‘Yes’.  
+
+Then you must navigate to **Inventory Management > Setup Packing Materials** and create the following base data: 
 
 -   Packing groups – Create packing groups to assign to items.
 -   Packing material codes – Create packing material codes for each type of packing material that is defined.
 -   Packing units – Specify a packing unit for an item, for a packing group, or for all items. For each packing unit, define which packing materials to include, assign weights, and, in the Packing unit factor field, enter the conversion factor from the inventory unit.
 -   Packing material fees – Specify packing material fees per packing material code. For each type of material, define the period of validity, the price per material, the currency, and the unit.
 
+First navigate to **Inventory Management > Setup > Packing Materials > Packing Material Codes.**
+
+Define all the necessary packing materials here. Once you have defined the materials navigate to **Packing Material Fees** to set a fee for your material. 
+
+Once this is done in order to allocate your packing materials go to **Packing material allocation** and create a new allocation and assign it to your Item. You can also assign it to a packing group or all of your items. 
+
 ## Packing units on sales order lines
-When you create a sales order line, the system checks to see whether packing units are specified for the item. If packing units are specified, the system updates the sales order line with the specified packing unit and the packing unit quantity. The packing unit quantity is based on the ordered quantity divided by the number of items in the selected packing unit. If a packing unit has not been specified, you can manually enter a packing unit and a packing unit quantity on the sales order line. You can also change the packing unit and the packing unit quantity when you post the sales order line. This is relevant if the sales order line is only partly delivered or partly invoiced. When you invoice the sales order, packing material transactions are created. Packing material transactions contain the weights of the packing materials for the sales line. You can also modify the transactions after you invoice them, and then create new transactions.
+When you create a sales order to ensure that the system checks to see whether packing units are specified for the item you must navigate to **Inventory Management Parameters > General > Packing Materials** and then switch the **Calculate packing material fees** toggle to 'Yes'. 
+
+If packing units are specified, the system updates the sales order line with the specified packing unit and the packing unit quantity. The packing unit quantity is based on the ordered quantity divided by the number of items in the selected packing unit. If a packing unit has not been specified, you can manually enter a packing unit and a packing unit quantity on the sales order line. You can also change the packing unit and the packing unit quantity when you post the sales order line. This is relevant if the sales order line is only partly delivered or partly invoiced. When you invoice the sales order, packing material transactions are created. Packing material transactions contain the weights of the packing materials for the sales line. You can also modify the transactions after you invoice them, and then create new transactions. 
 
 ## Packing units on purchase order lines
 Packing material transactions for a purchase order line are not created by the system. You create transactions for invoiced purchase order lines manually in the **Packing material transactions** page.
 
 ## Set up customer packaging-material-fee license numbers
-If the customers pay the packaging material fees, specify the customers' packaging-material-fee license numbers in the **Customers** page. When a license number has been assigned to a customer, the packaging material fees are calculated automatically when sales orders are invoiced. After invoicing, the **Calculate fee** check box is cleared in the **Packing material transactions** page, because you do not have to calculate and print a report. You can print the packaging material weights on the invoice, and inform the customers that they pay the fees. 
+When you are creating a sales order if you would like to charge your customer for the packing materials go to **Accounts Receivable > Customers > All Customers**
 
-If your company pays the packaging material fees, do not specify the customer license numbers. After invoicing, the **Calculate fee** check box is selected in the **Packing material transactions** page. This indicates that the fees are calculated when a report is created. You can print the weights on the invoice, and indicate that your company pays the fees.
+Pick the customer that you would like to charge the packing materials for. Navigate to the **Invoice and Delivery** tab and add the companies license number to the 'Packing duty license number' field under **Sales Tax** as well as the 'License number' field under **Packing Material Fee**
+
+Now when you create and invoice a sales order with the item that you have defined the packing material you will be able to see the packing material fees in the invoice.
+
+If you don't want to charge these remove the license numbers for the customers.
+In the scenario that the company pays the fees you will notice that only the weights of the packing materials are displayed on the invoice and not the fees. You will only be able to see the fees in the report navigate to: **Inventory Management > Inquires and Reports > Packing Materials > Calculate Fees**
+
+Here you can specify a range of dates and generate a report with all the packing material fees you owe.
 
 ## Print packaging material weights on invoices
-You can print the packaging material weights on the invoice, and indicate who pays the packaging material fees. The weights are summarized by packaging code.
-
+You can print the packaging material weights on the invoice and indicate who pays the packaging material fees. The weights are summarized by packaging code. In order to do this navigate to **Accounts Receivable Parameters > Updates > Invoice** and switch the **Print packing material weight toggle** to ‘Yes’. 
 
 
 
