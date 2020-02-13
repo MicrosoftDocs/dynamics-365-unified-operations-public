@@ -38,13 +38,13 @@ The `DATETIMEFORMAT` function returns a *String* value that presents a given dat
 
 ## Syntax 1
 
-```ER expression
+```vb
 DATETIMEFORMAT (datetime, format)
 ```
 
 ## Syntax 2
 
-```ER expression
+```vb
 DATETIMEFORMAT (datetime, format, culture)
 ```
 
