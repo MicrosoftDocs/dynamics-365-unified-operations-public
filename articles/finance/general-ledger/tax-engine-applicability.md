@@ -68,7 +68,7 @@ Select the tax component CGST, and click the pencil icon, to check the detailed 
 
 ![CGST condition details](media/gte-tax-document-applicability-cgst-condition.png)
 
-The condition is actually an [Electronic Reporting](../../dev-itpro/analytics/general-electronic-reporting.md) expression. It is comprised of the fields on the left in **Data source**, and **Functions** on the right. For a list of supported functions, see [Functions](../../dev-itpro/analytics/general-electronic-reporting-formula-designer.md#supported-functions). 
+The condition is actually an [Electronic Reporting](../../dev-itpro/analytics/general-electronic-reporting.md) expression. It is comprised of the fields on the left in **Data source**, and **Functions** on the right. For a list of supported functions, see [Formula designer in Electronic reporting (ER)](../../dev-itpro/analytics/general-electronic-reporting-formula-designer.md). 
 
 The following condition means that *Taxable Document Type* cannot be "Invent transfer order receive", "Invent transfer order shipment", or "Invent transfer order". This also means that either HSN Code or SAC should be specified.
 
