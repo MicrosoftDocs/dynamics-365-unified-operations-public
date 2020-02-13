@@ -41,25 +41,27 @@ This topic covers the setup and configuration of your Azure Active Directory B2C
 
 Dynamics 365 Commerce uses Azure Active Directory (AAD) B2C to support user credential and authentication flows. A user can sign up, sign in, and reset their password through these flows. AAD B2C stores sensitive user authentication information, such as username and password. The user record in the B2C tenant will store either a B2C local account record or a B2C social identity provider record. These B2C records will link back to the customer record in the Commerce environment.
 
-## Create an AAD B2C tenant in the Azure portal
+## Create or link to an existing AAD B2C tenant in the Azure portal
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 1. From the Azure portal menu, select **Create a resource**. Be sure to use the subscription and directory that will be connected with your Commerce environment.
 
     ![Create a Resource in Azure Portal](./media/B2CImage_1.png)
 
-1. in the **Search the Marketplace** toolbar, search for "B2C." Or, navigate to **Identity \> Azure Active Directory B2C**.
+1. In the **Search the Marketplace** toolbar, search for "B2C." Or, navigate to **Identity \> Azure Active Directory B2C**.
 1. Once on the **Create New B2C Tenant or Link to existing Tenant** page, use one of the options below that best suits your company's needs:
 
-    - **Create a new Azure AD B2C Tenant**: Use this option to create a new AAD B2C tenant
-        - Enter the **Organization name**, **Initial domain name**, and select the **Country or region**. 
+    - **Create a new Azure AD B2C Tenant**: Use this option to create a new AAD B2C tenant.
+	1. Select **Create a new Azure AD B2C Tenant**.
+	1. Under **Organization name**, enter the organization name.
+	1. Under **Initial domain name**, enter the initial domain name.
+	1. In the **Country or region** drop down menu, select the country or region.
 
      ![Create a new Azure AD Tenant](./media/B2CImage_2.png)
 
-     - **Link an existing Azure AD B2C Tenant to my Azure Subscription**: Use this option if you already have an AAD B2C tenant you want to link to.
-         - Choose the ‘Link an existing Azure AD B2C Tenant to my Azure Subscription’
-         - In the **Azure AD B2C Tenant** drop down menu, choose the appropriate ‘Subscription’ and ‘Resource group’ option 
-         - If you do not have an existing eligible B2C tenant, the message “No eligible B2C Tenants found” option will show in the selection box. Use the ‘Create New’ menu option
+     - **Link an existing Azure AD B2C Tenant to my Azure subscription**: Use this option if you already have an AAD B2C tenant you want to link to.
+	 1. Select **Link an existing Azure AD B2C Tenant to my Azure subscription**.
+         1. In the **Azure AD B2C Tenant** drop down menu, select the appropriate B2C tenant. If the message "No eligible B2C Tenants found" appears in the selection box, you do not have an existing eligible B2C tenant and will need to create a new one.
 
     ![Link an existing Azure AD B2C Tenant to Azure Subscription](./media/B2CImage_3.png)
 
@@ -72,11 +74,11 @@ This link will direct you to the “Welcome to Azure Active Directory B2C” pag
     > [!NOTE]
     > If you have multiple subscriptions within your Azure account or have set up the B2C tenant without linking to an Active subscription, a Troubleshoot banner will direct you to link the tenant to a Subscription.
 
-    ![Warning showing directory has no Active Subscription](./media/B2CImage_5.png)
+![Warning showing directory has no Active Subscription](./media/B2CImage_5.png)
 
 The link will provide the following options:
 
-    ![Options to link B2C Tenant to a Subscription](./media/B2CImage_6.png)
+![Options to link B2C Tenant to a Subscription](./media/B2CImage_6.png)
 
 For example, to switch directories to the location of your target Azure subscription, click on your Account Icon and within the menu, select ‘Switch directory’
 
