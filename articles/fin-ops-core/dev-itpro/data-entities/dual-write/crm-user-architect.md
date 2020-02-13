@@ -36,7 +36,7 @@ ms.search.validFrom: 2020-01-06
 
 [!include [banner](../../includes/preview-banner.md)]
 
-Dual-write automates the data flow between Finance and Operations apps and Common Data Service. In the coming releaseses, concepts in model-driven apps in Dynamics 365 like customer, contact, quotation, and order will scale to mid- and upper-mid market customers. 
+Dual-write automates the data flow between Finance and Operations apps and Common Data Service. In future releases, concepts in model-driven apps in Dynamics 365 like customer, contact, quotation, and order will scale to mid- and upper-mid market customers. 
 
 In the first release, most of these changes are coming from dual-write solutions. In future releases, we will merge these solutions to the Common Data Service platform. We recommend that you understand dual-write and embrace it from start to avoid future surprises. Some of the crucial revisions are: 
 + Common Data Service has new concepts like company and party. These concepts will impact all applications built on Common Data Service, including Sales, Marketing, Customer Service, and Field Service. 
@@ -47,4 +47,4 @@ In the first release, most of these changes are coming from dual-write solutions
     - There will be more support for currency and exchange rates, including a revision of the **Exchange Rate** API.
     - Unit conversions will be supported.
 
-For more information on upcoming changes, see [Data in Common Data Service – phase 1 & 2](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/extensibility/extensibility-roadmap).
+For more information on upcoming changes, see [Data in Common Data Service – phase 1 & 2](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/extensibility/extensibility-roadmap).
