@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Retail hierarchies
+title: Commerce hierarchies
 description: This article describes hierarchies in Dynamics 365 Commerce.
 author: jblucher
 manager: AnnBe
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Retail hierarchies
+# Commerce hierarchies
 
 [!include [banner](includes/banner.md)]
 

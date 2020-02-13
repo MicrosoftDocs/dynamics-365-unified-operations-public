@@ -500,9 +500,9 @@
           href: ../supply-chain/pim/product-information.md?toc=/dynamics365/commerce/toc.json
         - name: Set up retail products 
           href: set-up-retail-products.md
-        - name: Retail product hierarchy 
+        - name: Product hierarchy 
           items:
-          - name: Retail hierarchies 
+          - name: Commerce hierarchies 
             href: retail-hierarchies.md
           - name: Create a new product hierarchy 
             href: create-product-hierarchy.md
