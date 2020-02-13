@@ -26,7 +26,6 @@ ms.author: BriShoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: 
 
-
 ---
 
 # Set up an AAD B2C tenant in Commerce
@@ -102,7 +101,7 @@ To create the B2C application, follow these steps.
 1. Under **Name**, enter the name of the desired AAD B2C application.
 1. Under **Web App/Web API**, for **Include web app / web API** select **Yes**.
 1. For **Allow implicit flow** select **Yes** (the default value).
-1. Under **Reply URL**, enter your dedicated reply URL (for example, ``https://www.fabrikam.com``). See note below for more information on reply URLs and how to format them.
+1. Under **Reply URL**, enter your dedicated reply URL (for example, ``https://www.fabrikam.com``). See [Format reply URLs](#format-reply-URLs) for more information on reply URLs and how to format them.
 1. For **Include native client**, select **No** (the default value).
 1. Select **Create**.
 
@@ -110,23 +109,23 @@ The following image shows settings on the **Azure AD B2c - Applications \> New a
 
 ![Settings for the B2C application](./media/B2CImage_8.png "Settings for the B2C Application")
 
-### Reply URLs and formatting
+### Format reply URLs
 
 Reply URLs are important as they allow a whitelist of the return domains when your site calls AAD B2C to authenticate a user. This allows the return of the authenticated user back to the domain from which they are logging in (your site domain). 
 
-In the **Reply URL** box, you need to add lines for both your site domain and, once your environment is provisioned, the Dynamics-generated URL, each as a separate line. These lines must always use a valid URL format.
+In the **Reply URL** box of the **Azure AD B2c - Applications \> New application** screen, you need to add separate lines for both your site domain and, once your environment is provisioned, the Commerce-generated URL. These URLs must always use a valid URL format, and must be base URLs only (no trailing forward slashes or paths). Also, the following string needs to then be appended to the base URLS: ``/_msdyn365/authresp``, as in the following examples.
 
-In addition, append ``/_msdyn365/authresp**`` to the URLs. No additional forward slashes or directories should be present
-
-Use the same pattern and format for both URLs  … no additional “/” layers should be added at the end, nor additional folders. 
-
-Additionally, add a trailing "/_msdyn365/authresp" to these URLs. These lines must always be supplied in a valid URL format.
-
-	Example Reply URL Lines in B2C App Properties:
-	- https://fabrikam.com/_msdyn365/authresp
-	- https://fabrikam-prod.commerce.dynamics.com/_msdyn365/authresp
+	``https://fabrikam.com/_msdyn365/authresp``
+	``https://fabrikam-prod.commerce.dynamics.com/_msdyn365/authresp``
 
 (for example, 'https://www.(domain).com' and 'https://www.(DynamicsGenerateddomain).com')
+
+
+
+    > [!IMPORTANT]
+    > You need to add separate lines for both your site domain URL and, once your environment is provisioned, the Commerce-generated URL. These URLs must always use a valid URL format, and must be base URLs only (no trailing forward slashes or paths). Also, the following string needs to then be appended to the base URLS: ``/_msdyn365/authresp``, as in the following examples.
+
+
 
 ## Create the user flows
 
