@@ -81,3 +81,26 @@ Dual-write application orchestration harmonizes the concepts between Finance and
 + Request for service functions.
 + Streamline service operations.
  
+## Top reasons to use dual-write
+
+Dual-write provides data integration across Microsoft Dynamics 365 applications. This robust framework links environments together and enables different business applications to work together. Here are the top reasons why you should use dual-write: 
+
++ Dual-write provides tightly-coupled, near-real-time, and bi-directional integration between Finance and Operations apps and model-driven applications in Dynamics 365. This integration makes Microsoft Dynamics 365 the one-stop-shop for all your business solutions. Customers using Dynamics 365 Finance and Dynamics 365 Supply Chain Management, but using non-Microsoft solutions for customer relationship management are moving towards Dynamics 365 for its dual-write support. 
++ Data from customers, products, operations, projects, and IoT flows automatically to Common Data Service through dual-write. This connection is a boon to businesses that are interested in Power Platform expansions.
++ Dual-write infrastructure follows our no-code/low-code principle. You can extend the standard table-to-table maps and include custom maps with minimal engineering effort.
++ Dual-write supports both online and offline modes. Microsoft is the only company offering support for online and offline modes.
+
+## What does dual-write mean for users and architects of customer relationship management products? 
+
+Dual-write automates the data flow between Finance and Operations apps and Common Data Service. In future releases, concepts in model-driven apps in Dynamics 365 like customer, contact, quotation, and order will scale to mid- and upper-mid market customers. 
+
+In the first release, most of the automation is handled by dual-write solutions. In future releases, these solutions will become part of the Common Data Service. Understanding the upcoming changes to the Common Data Service will save you effort in the long run. Some of the crucial revisions are: 
++ Common Data Service will have new concepts like company and party. These concepts will impact all applications built on Common Data Service, including Sales, Marketing, Customer Service, and Field Service. 
++ Activities and notes are unified and expanded to support both C1s (users of the system) and C2s (customers of the system). 
++ Upcoming changes in the Common Data Service include:
+    - The decimal data type will replace the money data type.
+    - Date effectivity will support past, present, and future data in the same place.
+    - There will be more support for currency and exchange rates, including a revision of the **Exchange Rate** API.
+    - Unit conversions will be supported.
+
+For more information on upcoming changes, see [Data in Common Data Service – phase 1 & 2](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/extensibility/extensibility-roadmap).
