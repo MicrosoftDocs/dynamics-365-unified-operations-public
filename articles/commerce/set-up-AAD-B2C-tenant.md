@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set Up an AAD B2C tenant in Commerce
+title: Set up an AAD B2C tenant in Commerce
 description: This topic describes how to set up your Azure Active Directory (AAD) business-to-consumer (B2C) tenants for user site authentication in Dynamics 365 Commerce.
 author: BrianShook
 manager: annbe
@@ -35,7 +35,7 @@ ms.dyn365.ops.version:
 
 This topic describes how to set up your Azure Active Directory (AAD) business-to-consumer (B2C) tenants for user site authentication in Dynamics 365 Commerce.
 
-This topic covers the setup and configuration of your Azure Active Directory B2C tenant and utilizing it in your Dynamics 365 Commerce solution. You will learn how to create your Azure AD (AAD) B2C tenant in the Azure Portal as well as configure the tenant to for your Commerce environment.
+This topic covers the setup and configuration of your Azure Active Directory B2C tenant and utilizing it in your Dynamics 365 Commerce solution. You will learn how to create your Azure AD (AAD) B2C tenant in the Azure Portal as well as configure the tenant for your Commerce environment.
 
 ## Overview
 
@@ -60,8 +60,8 @@ Dynamics 365 Commerce uses Azure Active Directory (AAD) B2C to support user cred
      ![Create a new Azure AD Tenant](./media/B2CImage_2.png)
 
      - **Link an existing Azure AD B2C Tenant to my Azure subscription**: Use this option if you already have an AAD B2C tenant you want to link to.
-	 1. Select **Link an existing Azure AD B2C Tenant to my Azure subscription**.
-         1. In the **Azure AD B2C Tenant** drop down menu, select the appropriate B2C tenant. If the message "No eligible B2C Tenants found" appears in the selection box, you do not have an existing eligible B2C tenant and will need to create a new one.
+        1. Select **Link an existing Azure AD B2C Tenant to my Azure subscription**.
+        1. In the **Azure AD B2C Tenant** drop down menu, select the appropriate B2C tenant. If the message "No eligible B2C Tenants found" appears in the selection box, you do not have an existing eligible B2C tenant and will need to create a new one.
 
     ![Link an existing Azure AD B2C Tenant to Azure Subscription](./media/B2CImage_3.png)
 
@@ -69,10 +69,10 @@ Dynamics 365 Commerce uses Azure Active Directory (AAD) B2C to support user cred
 
     ![Link to new AAD Directory](./media/B2CImage_4.png)
 
-This link will direct you to the “Welcome to Azure Active Directory B2C” page.
+This link will direct you to the "Welcome to Azure Active Directory B2C" page.
 
     > [!NOTE]
-    > If you have multiple subscriptions within your Azure account or have set up the B2C tenant without linking to an Active subscription, a Troubleshoot banner will direct you to link the tenant to a Subscription.
+    > If you have multiple subscriptions within your Azure account or have set up the B2C tenant without linking to an active subscription, a **Troubleshoot** banner will direct you to link the tenant to a subscription.
 
 ![Warning showing directory has no Active Subscription](./media/B2CImage_5.png)
 
@@ -80,49 +80,53 @@ The link will provide the following options:
 
 ![Options to link B2C Tenant to a Subscription](./media/B2CImage_6.png)
 
-For example, to switch directories to the location of your target Azure subscription, click on your Account Icon and within the menu, select ‘Switch directory’
+For example, to switch directories to the location of your target Azure subscription, click on your account symbol and within the menu, select ‘Switch directory’
 
 1. Navigate back to your main Azure directory.
-1. Search “b2c” and select “Azure Active Directory B2C” under the ‘Marketplace’ results offered
-1. This navigates back to the “Create New B2C Tenant or Link to existing Tenant” page. From here, select the ‘Link an existing Azure AD B2C Tenant to my Azure subscription’.
-The newly created B2C Tenant instance should now show as an option in the ‘Azure AD B2C Tenant’ selection bar
+1. Search for "B2C", and then from the results select **Azure Active Directory B2C**. 
+1. On the **Create New B2C Tenant or Link to existing Tenant** page, select **Link an existing Azure AD B2C Tenant to my Azure subscription**. The newly-created B2C tenant instance should now show as an option in the **Azure AD B2C Tenant** selection bar.
 1. Finalize the remaining required fields, selecting the ‘Subscription’, ‘Resource group’ (select or create new), and ‘Resource group location’ items.
-1. Click ‘Create’ to create the link between the new B2C tenant and the existing Azure Subscription
-1. Navigate back to your B2C tenant (Switch Directory and return to your B2C Directory)
+1. Select **Create** to create the link between the new B2C tenant and the existing Azure subscription.
+1. Navigate back to your B2C tenant (switch directory and return to your B2C directory).
 
 ## Create the B2C application
 
-Now that the B2C Tenant is created, you will create a B2C Application within the tenant to interact with the Commerce actions.
+Now that the B2C Tenant is created, you will create a B2C application within the tenant to interact with the Commerce actions.
 
-1. Select “applications” and “Add”
+To create the B2C application, follow these steps.
 
-![Adding a B2C Application to your tenant](./media/B2CImage_7.png "Adding a B2C Application to your tenant")
+1. Select **Applications** and then select **Add**.
 
-2. Enter the following:
+    ![Adding a B2C application to your tenant](./media/B2CImage_7.png)
 
-- ‘Name’ of the desired Azure AD B2C Application
+1. Under **Name**, enter the name of the desired AAD B2C application.
+1. Under **Web App/Web API**, for **Include web app / web API** select **Yes**.
+1. For **Allow implicit flow** select **Yes** (the default value).
+1. Under **Reply URL**, enter your dedicated reply URL (for example, ``https://www.fabrikam.com``). See note below for more information on reply URLs and how to format them.
+1. For **Include native client**, select **No** (the default value).
+1. Select **Create**.
 
-- Set ‘Web App/Web API’ to “yes”
+The following image shows settings on the **Azure AD B2c - Applications \> New application** screen.
 
-- Set ‘Allow implicit flow’ to “yes” (default)
+![Settings for the B2C application](./media/B2CImage_8.png "Settings for the B2C Application")
 
-- Add your dedicated ‘Reply URL’ (example: https://www.fabrikam.com)
+### Reply URLs and formatting
 
-- The ‘Reply URL’s are important as they allow a whitelist of the return domains when your site calls AAD B2C to authenticate a user- allowing the return of the authenticated user back to the domain from which they are logging in (your site domain). For the Reply URL field, you will add lines for both your site domain (example value only: ‘https://www.(yoursitedomain).com’) and, once your environment is provisioned, the Dynamics generated URL, each as a separate line. Use the same pattern and format for both URLs (for example, 'https://www.(domain).com' and 'https://www.(DynamicsGenerateddomain).com' … no additional “/” layers should be added at the end, nor additional folders. **Additionally**, add a trailing "/_msdyn365/authresp" to these URLs. These lines must always be supplied in a valid URL format.
+Reply URLs are important as they allow a whitelist of the return domains when your site calls AAD B2C to authenticate a user. This allows the return of the authenticated user back to the domain from which they are logging in (your site domain). 
+
+In the **Reply URL** box, you need to add lines for both your site domain and, once your environment is provisioned, the Dynamics-generated URL, each as a separate line. These lines must always use a valid URL format.
+
+In addition, append ``/_msdyn365/authresp**`` to the URLs. No additional forward slashes or directories should be present
+
+Use the same pattern and format for both URLs  … no additional “/” layers should be added at the end, nor additional folders. 
+
+Additionally, add a trailing "/_msdyn365/authresp" to these URLs. These lines must always be supplied in a valid URL format.
 
 	Example Reply URL Lines in B2C App Properties:
 	- https://fabrikam.com/_msdyn365/authresp
 	- https://fabrikam-prod.commerce.dynamics.com/_msdyn365/authresp
 
-- Set ‘Native Client’ to “no” (default)
-
-![Settings for the B2C Application](./media/B2CImage_8.png "Settings for the B2C Application")
-
- 
-
-3. Click “Create”
-
-
+(for example, 'https://www.(domain).com' and 'https://www.(DynamicsGenerateddomain).com')
 
 ## Create the user flows
 
