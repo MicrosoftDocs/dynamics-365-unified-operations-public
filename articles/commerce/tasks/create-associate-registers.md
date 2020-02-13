@@ -32,14 +32,14 @@ ms.dyn365.ops.version: Version 7.0.0
 
 This procedure demonstrates how to create a point of sale (POS) register. This procedure uses the demo data company USRT.
 
-1. Go to Retail and commerce > Channel setup > POS setup > Registers.
+1. Go to Retail and Commerce > Channel setup > POS setup > Registers.
 2. Click New.
 3. In the Register number field, type an ID for the new register.
     * The register ID typically includes codes that help map the register to the store to which it belongs, and the location within the store.  
 4. In the Name field, type a descriptive name for the register..
 5. In the Store number field, enter or select a value.
 6. In the Hardware profile field, enter or select a value.
-    * Hardware profiles are used to specify the retail peripherals that will be connected to the register, such as cash drawer and receipt printer.  
+    * Hardware profiles are used to specify the peripherals that will be connected to the register, such as cash drawer and receipt printer.  
 7. In the Visual profile field, enter or select a value.
     * Visual profiles are used to specify the images used in the POS background and login page as well as themes for the POS.  
 8. In the EFT POS register number field, type a value.

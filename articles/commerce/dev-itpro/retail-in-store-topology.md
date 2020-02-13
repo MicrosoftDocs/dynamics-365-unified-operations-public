@@ -46,7 +46,7 @@ This topic provides an overview of the various Dynamics 365 Commerce in-store to
 For a list of operations that are supported when the POS loses connectivity to the HQ, see [Online and offline point of sale (POS) operations](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-operations).
 
 ## Supported deployment and maintenance capabilities
-Mass deployment is supported in Modern POS, but not in Commerce Scale Unit. For more information, see [Mass deployment of Retail self-service components](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-mass-deployment).
+Mass deployment is supported in Modern POS, but not in Commerce Scale Unit. For more information, see [Mass deployment of self-service components](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-mass-deployment).
 
 ## Deployed components
 The following components are deployed through a single installer. This means that they do not need to be installed individually.
@@ -71,11 +71,11 @@ The following components are deployed through a single installer. This means tha
 For more information about MPOS offline mode, see:
 - [Offline point of sale (POS) functionality](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-offline-functionality)
 - [Online and offline point of sale (POS) operations](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-operations)
-- [Mass deployment of Retail self-service components](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-mass-deployment)
+- [Mass deployment of self-service components](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-mass-deployment)
 
 ### Commerce Scale Unit
 The Commerce Scale Unit is a set of components that can be deployed in a customer environment, such as inside a store, that can support continuous operations if connectivity to the back office or headquarters (HQ) is lost. 
 
 For more information, see:
-- [Configure and install retail store scale unit](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-scale-unit-configuration-installation)
-- [Retail Store Scale Unit](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin)
+- [Configure and install Commerce Scale Unit](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-scale-unit-configuration-installation)
+- [Commerce Scale Unit](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin)

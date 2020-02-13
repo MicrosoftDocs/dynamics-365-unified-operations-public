@@ -38,7 +38,7 @@ The `AND` function returns a *Boolean* value of **TRUE** if all the specified co
 
 ## Syntax
 
-```
+```vb
 AND (condition 1[, condition 2, …, condition N])
 ```
 

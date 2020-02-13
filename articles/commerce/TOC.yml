@@ -440,8 +440,6 @@
           href: configure-call-center-delivery.md
         - name: Set up and work with fraud alerts 
           href: set-up-fraud-alerts.md
-        - name: Set up continuity programs for call centers 
-          href: set-up-continuity-program.md
       - name: Additional channel configuration 
         items:
         - name: Add a channel to an organization hierarchy  
@@ -452,6 +450,12 @@
             href: omni-auto-charges.md
           - name: Prorate header charges to matching sales lines
             href: pro-rate-charges-matching-lines.md 
+        - name: Manage continuity programs
+          items:
+          - name: Set up continuity programs for call centers 
+            href: set-up-continuity-program.md
+          - name: Define continuity schedules
+            href: tasks/define-continuity-schedules.md
         - name: Retail store management 
           items:
           - name: Create and change store hours
@@ -462,8 +466,6 @@
           items:
           - name: Configure and work with call center order holds
             href: work-with-order-holds.md
-          - name: Define continuity schedules
-            href: tasks/define-continuity-schedules.md
         - name: Payments
           items:
           - name: Payment methods 
@@ -480,6 +482,8 @@
             href: dev-itpro/adyen-connector.md
           - name: Saving online payment instruments with the Adyen connector
             href: dev-itpro/adyen-connector-listpi.md
+          - name: Seamless offline switch for gift card and credit memo operations
+            href: dev-itpro/seamless-offline-improvements.md
           - name: Set up pay invoice scenarios 
             href: payinvoice.md
           - name: Duplicate payments prevention 
@@ -912,6 +916,18 @@
         items:
         - name: Build custom response pages for 4xx/5xx status code errors
           href: build-pages-400-500-errors.md
+    - name: Manage tasks 
+      items:
+      - name: Task management overview
+        href: task-mgmt-overview.md
+      - name: Configure task management
+        href: task-mgmt-configure.md
+      - name: Create task lists and add tasks
+        href: task-mgmt-create-lists.md
+      - name: Assign task lists to stores or employees
+        href: task-mgmt-assign-lists.md
+      - name: Task management in POS
+        href: task-mgmt-pos.md
     - name: Fraud protection 
       items:
       - name:	Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce	

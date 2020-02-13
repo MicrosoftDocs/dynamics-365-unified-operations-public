@@ -1104,6 +1104,8 @@
           href: public-sector/interest-distribution.md
       - name: Procurement and sourcing in the public sector
         href: public-sector/procurement-sourcing-public-sector.md
+      - name: Calculate the delivery date for a line, based on the lead time
+        href: public-sector/po-delivery-date.md
       - name: Security roles in the public sector
         href: public-sector/security-roles-public-sector.md
       - name: Funds in the public sector

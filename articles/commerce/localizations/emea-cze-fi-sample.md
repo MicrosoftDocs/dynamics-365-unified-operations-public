@@ -108,7 +108,7 @@ The fiscal registration service supports only scenarios where sales tax is inclu
 
 ## Set up Commerce for Czech Republic
 
-This section describes the Commerce settings that are specific to and recommended for the Czech Republic. For more information, see [Help resources for Dynamics 365 Retail](../index.md).
+This section describes the Commerce settings that are specific to and recommended for the Czech Republic. For more information, see [Commerce home page](../index.md).
 
 To use the Czech-specific functionality, you must specify the following settings.
 
@@ -207,7 +207,7 @@ For more information about how to work with receipt formats, see [Set up and des
 
 ### Configure fiscal integration
 
-Complete the fiscal integration setup steps as described in [Set up the fiscal integration for Retail channels](setting-up-fiscal-integration-for-retail-channel.md).
+Complete the fiscal integration setup steps as described in [Set up the fiscal integration for Commerce channels](setting-up-fiscal-integration-for-retail-channel.md).
 
 - [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Note also the settings for the fiscal registration process that are [specific to this fiscal registration service integration sample](#set-up-the-registration-process).
 - [Set error handling settings](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
@@ -358,7 +358,7 @@ The previous procedure enables the extensions that are components of the fiscal 
         ```
 
 3. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
-4. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create retail deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+4. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 5. Complete all the required setup tasks that are described in the [Set up Commerce for Czech Republic](#set-up-commerce-for-czech-republic) section.
 
 ## Design of extensions

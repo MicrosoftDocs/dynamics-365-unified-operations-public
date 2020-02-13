@@ -60,10 +60,10 @@ You can edit the default demo data with any product and category information con
 The extension contains a datafile called 'RecoMockDataset.csv' which allows you to control the dataset used to power the mock recommendations results. The file name can be controlled through extension configuration using the **ext.Recommendations.DemoFilePath** setting. This enables you to have multiple datasets available that can be switched between easily through configuration.
 
 
-```
-  <settings>
+```xml
+<settings>
     <add name="ext.Recommendations.DemoFilePath" value="RecoMockDataset.csv" />
-  </settings>
+</settings>
 ```
 
 ## Additional Resources

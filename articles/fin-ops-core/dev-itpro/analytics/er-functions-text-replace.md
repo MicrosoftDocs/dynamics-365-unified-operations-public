@@ -38,7 +38,7 @@ The `REPLACE` function returns the specified text string as a *String* value aft
 
 ## Syntax
 
-```
+```vb
 REPLACE (text, pattern, replacement, regular expression flag)
 ```
 

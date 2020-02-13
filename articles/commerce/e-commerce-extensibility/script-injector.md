@@ -51,7 +51,7 @@ In some cases, you might have to inject scripts into your site or site pages, bu
 
 To create a custom script injector, use the following command to create a new module. 
 
-```
+```Console
 C:\repos\MySite>yarn msdyn365 add-module myAnalytics
 ```
 

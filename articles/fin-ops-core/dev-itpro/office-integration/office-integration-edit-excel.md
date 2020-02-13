@@ -186,6 +186,7 @@ An example of this code can be found on the **LedgerJournalTable** form (**Gener
 [Control("Button")]
 class OpenLinesInExcel
 {
+
     /// <summary>
     /// Opens the current journal in Excel for line entry and editing
     /// </summary>
@@ -246,6 +247,7 @@ To programmatically add generated and template Open in Excel options, Open in Ex
 public class FMRental extends FormRun implements ExportToExcelIGeneratedCustomExport, ExportToExcelITemplateCustomExport
 {    
 ...
+
     public List getExportOptions()
     {
         List exportOptions = new List(Types::Class);

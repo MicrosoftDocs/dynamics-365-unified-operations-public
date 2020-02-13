@@ -38,7 +38,7 @@ The `NULLDATETIME` function returns a *DateTime* value that represents the **nul
 
 ## Syntax
 
-```
+```vb
 NULLDATETIME ()
 ```
 

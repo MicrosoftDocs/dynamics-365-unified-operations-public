@@ -43,7 +43,7 @@ To override any request in the POS, use the following override handler pattern i
 
 **Example**
 
-```Typescript
+```typescript
 import { PrintPackingSlipClientRequestHandler } from "PosApi/Extend/RequestHandlers/StoreFulfillmentRequestHandlers";
 import { PrintPackingSlipClientRequest, PrintPackingSlipClientResponse } from "PosApi/Consume/SalesOrders";
 import { ClientEntities } from "PosApi/Entities";
@@ -66,7 +66,7 @@ export default class PrintPackingSlipClientRequestHandlerExt extends PrintPackin
 
 After you override the request, update the manifest.json file with the new request handler information.
 
-```Typescript 
+```typescript 
 "requestHandlers": [
     {
         "modulePath": "Handlers/PrintPackingSlipClientRequestHandlerExt"

@@ -39,7 +39,7 @@ Some of the information in these topics can also be found on blogs and pages at 
 
 The information focuses on implementations of Finance and Operations apps that include Commerce functionality.
 
-[Set up new environments, Azure DevOps, and branches for Retail projects](./new-environments-visual-studio-teams-branch-retail-projects.md)
+[Set up new environments, Azure DevOps, and branches for Commerce projects](./new-environments-visual-studio-teams-branch-retail-projects.md)
 
 [Update code and environments for Commerce projects](./updating-environments.md)
 

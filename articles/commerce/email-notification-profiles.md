@@ -45,7 +45,7 @@ For additional email configuration information, see [Configure and send email](h
 
 To create an email notification profile, follow these steps.
 
-1. In the navigation pane, go to **Modules \> Retail and commerce \> Headquarters setup \> Retail Email notification profile**.
+1. In the navigation pane, go to **Modules \> Retail and commerce \> Headquarters setup \> Commerce email notification profile**.
 1. On the action pane, click **New**.
 1. In the **Email notification profile** field, enter a name to identify the profile.
 1. In the **Description** field, enter a relevant description.
@@ -75,16 +75,16 @@ The following image shows some example email template settings.
 
 To create an email event, follow these steps.
 
-1. In the navigation pane, go to **Modules \> Retail and commerce \> Headquarters setup \> Retail Email notification profile**.
+1. In the navigation pane, go to **Modules \> Retail and commerce \> Headquarters setup \> Commerce email notification profile**.
 1. In the list, find and select the desired record. 
 1. Select the email template from the **Email ID** drop-down list.
 1. Select the appropriate **Email notification type** from the drop-down list.
 1. Select the **Active** check box.
 1. On the action pane, select **Save**.
 
-The following image shows some example retail event notification settings.
+The following image shows some example event notification settings.
 
-![Retail event notification settings](media/email-notification-profile.png)
+![Event notification settings](media/email-notification-profile.png)
 
 ## Additional resources
 
