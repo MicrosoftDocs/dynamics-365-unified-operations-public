@@ -53,7 +53,7 @@ The following features are entirely new for version 10.0.9. You must enable thes
 
 ### Features now added to feature management
 
-The following features have been released earlier, but only with limited availability. Some customers may have seen some of these feature before, but as of version 10.0.9, they are available to all customers through [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+The following features have been released earlier, but only with limited availability. Some customers may have seen some of these features before, but as of version 10.0.9, they are available to all customers through [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 - [Advanced load building during a wave](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/advanced-load-building-during-wave)
 - [Auto-release shipment for cross dock](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/auto-release-shipment-cross-dock) - For more information, see [Auto-release shipment for cross-docking](../warehousing/auto-release-shipment-for-cross-docking.md).
