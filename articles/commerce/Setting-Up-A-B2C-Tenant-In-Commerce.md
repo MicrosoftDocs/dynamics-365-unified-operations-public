@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Setting Up an AAD B2C Tenant in Commerce
-description: This topic describes how to set up your AAD B2C Tenants for site authentication of end-user customers in Dynamics 365 Commerce.
-author: Brian Shook
-manager: Brendan Sullivan
-ms.date: 12/20/2019
+title: Set Up an AAD B2C tenant in Commerce
+description: This topic describes how to set up your AAD B2C tenants for user site authentication in Dynamics 365 Commerce.
+author: BrianShook
+manager: annbe
+ms.date: 02/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -16,30 +16,30 @@ ms.technology:
 ms.search.form:  
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: 
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: BrianShook
-ms.search.validFrom: 
+ms.author: BriShoo
+ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: 
 
 
 ---
 
-# Setting up an AAD B2C Tenant in Commerce
+# Set up an AAD B2C tenant in Commerce
+
+[!include [banner](includes/banner.md)]
 
 This topic covers the setup and configuration of your Azure Active Directory B2C tenant and utilizing it in your Dynamics 365 Commerce solution. You will learn how to create your Azure AD (AAD) B2C tenant in the Azure Portal as well as configure the tenant to for your Commerce environment.
-
-
 
 ## Overview
 
 Dynamics 365 Commerce utilizes Azure Active Directory (AAD) B2C to support the end user login and authentication flows. An end user can sign up, sign in, and reset their password through these flows. AAD B2C stores the user's sensitive authentication information, such as their username and password. The user record in the B2C tenant will store either a B2C local account record or a B2C Social Identity Provider login record. These B2C records will link back to your Commerce customer record in the Commerce environment.
 
-## Creating an Azure AD B2C Tenant in Azure Portal
+## Create an Azure AD B2C Tenant in Azure Portal
 
 1. Sign in to the [Azure Portal](https://portal.azure.com/).
 
@@ -85,13 +85,13 @@ Dynamics 365 Commerce utilizes Azure Active Directory (AAD) B2C to support the e
 
 This link will direct you to the “Welcome to Azure Active Directory B2C” page.
 
-**Note**: If you have multiple subscriptions within your Azure account or have set up the B2C tenant without linking to an Active subscription, a Troubleshoot banner will direct you to link the tenant to a Subscription.
+> [!NOTE]
+> If you have multiple subscriptions within your Azure account or have set up the B2C tenant without linking to an Active subscription, a Troubleshoot banner will direct you to link the tenant to a Subscription.
 
  
 
 ![Warning showing directory has no Active Subscription](./media/B2CImage_5.png "Warning showing directory has no Active Subscription")
 
- 
 
 The link will provide the following options:
 
@@ -115,7 +115,7 @@ The newly created B2C Tenant instance should now show as an option in the ‘Azu
 
 
 
-## Creating the B2C Application
+## Create the B2C application
 
 Now that the B2C Tenant is created, you will create a B2C Application within the tenant to interact with the Commerce actions.
 
@@ -151,7 +151,7 @@ Now that the B2C Tenant is created, you will create a B2C Application within the
 
 
 
-## Create the User Flows
+## Create the user flows
 
 User flows are the policies AAD B2C uses to provide secure Sign in, Sign up, Edit Profile, and Forget Password end user experiences. Dynamics 365 Commerce uses these flows to perform the policy actions to interact with the AAD B2C tenant. When an end user interacts with these policies, they are redirected to the AAD B2C tenant to perform the actions.
 
@@ -216,10 +216,7 @@ To create default user policies:
 
 ![Run user flow option in policy flow](./media/B2CImage_23.png "Run user flow option in policy flow")
 
- 
-
 9. Close tab
-   
    
 
 **Profile Editing**
@@ -332,7 +329,7 @@ To set up a Social Identity Provider:
 
 
 
-## Update HQ with the new AAD B2C Information
+## Update headquarters with the new AAD B2C information
 
 Once the above AAD B2C provisioning steps are completed, the AAD B2C application must be registered in your Dynamics environment.
 
@@ -436,3 +433,21 @@ In your B2C Tenant, collect the names of each policy created for User flows to p
 - **b2cEditProfilePolicyId**: "B2C_1A_ProfileEdit"
 - **b2cSignUpSignInPolicyId**: "B2C_1A_signup_signin"
 - **b2cResetPasswordPolicyId**: "B2C_1A_PasswordReset"
+
+## Additional resources
+
+[Configure your domain name](configure-your-domain-name.md)
+
+[Deploy a new e-Commerce site](deploy-ecommerce-site.md)
+
+[Create an e-Commerce site](create-ecommerce-site.md)
+
+[Associate an online site with a channel](associate-site-online-store.md)
+
+[Manage robots.txt files](manage-robots-txt-files.md)
+
+[Set up custom pages for user logins](custom-pages-user-logins.md)
+
+[Add support for a content delivery network (CDN)](add-cdn-support.md)
+
+[Enable location-based store detection](enable-store-detection.md)
