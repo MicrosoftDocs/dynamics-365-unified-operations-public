@@ -2,8 +2,8 @@
 # required metadata
 
 title: Dual-write and customer relationship management products
-description: 
-author: shsrav
+description: Dual-write automates the data flow between Finance and Operations apps and Common Data Service.
+author: ramasri
 manager: AnnBe
 ms.date: 01/06/2020
 ms.topic: article
