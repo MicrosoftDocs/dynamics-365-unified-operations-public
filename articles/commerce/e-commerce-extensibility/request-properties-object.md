@@ -42,7 +42,7 @@ The request properties object represents an HTTP request and includes various da
 
 The following example shows how to access the request properties object from within the request context.
 
-```
+```typescript
 if (this.props.context.request.user.isAuthenticated) {
     userName = this.props.context.request.user.signinName ? this.props.context.request.user.signinName : '';
     firstName = this.props.context.request.user.firstName ? this.props.context.request.user.firstName : '';

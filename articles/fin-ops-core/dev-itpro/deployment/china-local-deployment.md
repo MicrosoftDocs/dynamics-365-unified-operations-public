@@ -68,7 +68,7 @@ Due to certain technical dependencies, the following features listed will not be
 
 -   **Development, build, and testing of customizations** will be unavailable in **Azure DevOps in Mainland China**. However, use of Azure DevOps on-premises will be available in China in April 2019. Also, Azure DevOps can be used in other regions. For more information, see [Developer guide for Azure China 21Vianet](https://docs.microsoft.com/azure/china/china-get-started-developer-guide).
 
--   **Retail cloud scale unit** functionality will be unavailable. However, the [Retail Store Scale Unit](../../../retail/dev-itpro/retail-store-system-begin.md) and Retail Modern Store app will be available in April 2019.
+-   **Commerce Scale Unit** functionality will be unavailable. However, the [Commerce Scale Unit](../../../retail/dev-itpro/retail-store-system-begin.md) and Retail Modern Store app will be available in April 2019.
 
 -   [Set up and maintain vendor collaboration](../../../supply-chain/procurement/set-up-maintain-vendor-collaboration.md) will be unavailable due to Azure Active Directory limitations.
 

@@ -242,7 +242,7 @@ To support these external gift card schemes through the Dynamics 365 Payment Con
 For card not present scenarios, such as e-Commerce or Call Center, special cross-country, cross-currency, and cross-market considerations apply. Please contact <MicrosoftDynamics@adyen.com> for additional details.
 
 #### Supported Dynamics 365 payment features
-The following table shows the set of Dynamics 365 payment features that the Dynamics 365 Payment Connector for Adyen supports. These features use enhancements that were introduced in the payments SDK and some Retail components in December 2018. They aren't exclusive to the Dynamics 365 Payment Connector for Adyen. For more information about how to uptake these enhancements for a different payment connector, see [Create an end-to-end payment integration for a payment terminal](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension).
+The following table shows the set of features that the Dynamics 365 Payment Connector for Adyen supports. These features use enhancements that were introduced in the payments SDK and some components in December 2018. They aren't exclusive to the Dynamics 365 Payment Connector for Adyen. For more information about how to uptake these enhancements for a different payment connector, see [Create an end-to-end payment integration for a payment terminal](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension).
 
 | Scheme | Card present | Card not present |
 |---|:-:|:-:|
@@ -279,7 +279,7 @@ The following prerequisites must be completed before payments can be configured 
 
 To process payments across point of sale (POS) terminals, a call center, or e-Commerce, you must configure a new default payment processor for new credit cards. Follow these steps to configure a default payment processor.
 
-1. Sign in to Retail headquarters, and go to **Accounts receivable \> Payments setup \> Payment services**.
+1. Sign in to Headquarters, and go to **Accounts receivable \> Payments setup \> Payment services**.
 2. On the Action Pane, select **New**, and then, on the **Setup** tab, enter the following information.
 
     | Field | Description | Sample value |

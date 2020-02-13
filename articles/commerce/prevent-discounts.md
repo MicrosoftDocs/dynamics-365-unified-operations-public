@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 There are various reasons why retailers may want to prevent some products from being discounted, either from a promotion or during the sale at the POS.
 
-The following options, which can be found on the **Commerce** tab of released products, will allow the product to be configured to prevent all or manual discounts. The settings can also be specified at the category level from the retail category hierarchy.
+The following options, which can be found on the **Commerce** tab of released products, will allow the product to be configured to prevent all or manual discounts. The settings can also be specified at the category level from the category hierarchy.
 
 - **Prevent all discounts** – Select this option to prevent all types of discounts from being applied to this product. This includes promotions such as mix and match, quantity and threshold discounts, as well as manual line and transaction discounts that are applied during a sale by a POS user.
 - **Prevent manual discounts** – Select this option to only prevent the manual line or transaction discounts that are applied during a sale by a POS user. Products with this option selected are still eligible for promotions, such as mix and match and quantity and threshold discounts.

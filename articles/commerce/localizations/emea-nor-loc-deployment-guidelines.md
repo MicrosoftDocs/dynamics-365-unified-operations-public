@@ -1606,7 +1606,7 @@ Follow these steps to create deployable packages that contain Commerce component
     ```
 
 7. Run **msbuild** for the whole Retail SDK to create deployable packages.
-8. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create retail deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+8. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 
 ### Enable the digital signature in offline mode for Modern POS
 

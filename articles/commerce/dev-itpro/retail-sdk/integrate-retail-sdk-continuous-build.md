@@ -85,7 +85,7 @@ Make sure that this step occurs after the "PowerShell: Generate packages" step (
 
 ## Optional: Referencing a Commerce DLL
 
-You must complete this task only if you must add built Retail binaries to the Retail package. In this case, you must follow these three steps:
+You must complete this task only if you must add built Retail binaries to the package. In this case, you must follow these three steps:
 
 1. Use a normal AXReference in your Commerce project.
 2. Add the corresponding AXReference folder and the XML file inside it to Azure DevOps.

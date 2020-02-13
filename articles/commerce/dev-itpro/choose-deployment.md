@@ -36,7 +36,7 @@ Commerce functionality is available in the following products:
 - Dynamics 365 Commerce
 - Dynamics 365 Finance
  
-Commerce contains core retail functionality that is typically used by most retailers. This tailored functionality improves productivity and helps to ease the on-boarding and training processes for your employees. 
+Commerce contains core functionality that is typically used by most retailers. This tailored functionality improves productivity and helps to ease the on-boarding and training processes for your employees. 
 
 With Commerce, you also have the option to enable additional functionality. This means that you could deploy an environment that has the same functional footprint as a Finance environment.
  

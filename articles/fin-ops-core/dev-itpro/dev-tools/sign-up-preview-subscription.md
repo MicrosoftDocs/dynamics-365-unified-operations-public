@@ -80,7 +80,7 @@ To use LCS to manage your environments, you must create a new project.
 3. Sign in by using the account that you used to subscribe.
 4. Select the plus sign (**+**) to create a new project.
 
-    [![Create a project](./media/11-1024x473.jpg)](./media/11.jpg)
+    [![Create a project](./media/11.jpg)](./media/11.jpg)
 
 5. Select the project type.
 6. Enter the project information, and then select **Create**.

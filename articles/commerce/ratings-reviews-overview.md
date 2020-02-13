@@ -61,4 +61,4 @@ The ratings and reviews solution also provides a business intelligence (BI) temp
 
 [Configure ratings and reviews](configure-ratings-reviews.md)
 
-[Sync product ratings in Dynamics 365 Retail](sync-product-ratings.md)
+[Sync product ratings in Dynamics 365 Commerce](sync-product-ratings.md)

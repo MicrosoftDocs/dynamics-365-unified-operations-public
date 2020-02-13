@@ -38,7 +38,7 @@ The `VALUEIN` function determines whether the specified input matches any value 
 
 ## Syntax
 
-```
+```vb
 VALUEIN (input, list, list item expression)
 ```
 
@@ -66,7 +66,7 @@ The resulting *Boolean* value.
 
 In general, the `VALUEIN` function is translated to a set of **OR** conditions.
 
-```
+```vb
 (input = list.item1.value) OR (input = list.item2.value) OR …
 ```
 
@@ -99,7 +99,7 @@ You define the following data sources in your model mapping:
 
 When a data source is called that has been configured as the `FILTER (In, VALUEIN(In.Port, Port, Port.PortId)` expression, the following SQL statement is generated to return filtered records of the Intrastat table.
 
-```
+```vb
 select … from Intrastat
 exists join TableId from IntrastatPort
 where IntrastatPort.PortId = Intrastat.Port
@@ -116,7 +116,7 @@ You define the following data sources in your model mapping:
 
 When a data source is called that has been configured as the `FILTER (In, VALUEIN (In.dataAreaId, Le, Le.Value)` expression, the final SQL statement contains the following condition.
 
-```
+```vb
 Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 ```
 

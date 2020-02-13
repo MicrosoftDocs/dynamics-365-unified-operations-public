@@ -103,7 +103,7 @@ Filter extensions are also supported in **Show journal view** and **Search order
 6. In the **Search** folder, create a Typescript file that is named **CustomCustomerSearchColumns.ts**.
 7. In the **CustomCustomerSearchColumns.ts** file, add the following **import** statements to import the relevant entities and context.
 
-    ```Typescript
+    ```typescript
     import { ICustomerSearchColumn } from "PosApi/Extend/Views/SearchView";
     import { ICustomColumnsContext } from "PosApi/Extend/Views/CustomListColumns";
     import { ProxyEntities } from "PosApi/Entities";
@@ -111,7 +111,7 @@ Filter extensions are also supported in **Show journal view** and **Search order
 
 8. Add the existing column and the custom column to the file.
 
-    ```Typescript
+    ```typescript
     export default (context: ICustomColumnsContext): ICustomerSearchColumn[] => {
         return [
             {
@@ -155,7 +155,7 @@ Filter extensions are also supported in **Show journal view** and **Search order
 12. In the **en-us** folder, create a file that is named **resources.resjson**.
 13. In the **resources.resjson** file, add the following code.
 
-    ```Typescript
+    ```typescript
     {
         //======================== Sample View extensions strings. ========================
         "string_0" : "Quick compare products",
@@ -177,10 +177,10 @@ Filter extensions are also supported in **Show journal view** and **Search order
     ```
 
 14. In the **SearchExtension** folder, create a folder that is named **DialogSample**.
-15. In the **DialogSample** folder, create a Typescript file that is named **MessageDialog.ts**.
+15. In the **DialogSample** folder, create a TypeScript file that is named **MessageDialog.ts**.
 16. In the **MessageDialog.ts** file, add the following **import** statements to import the relevant entities and context.
 
-    ```Typescript
+    ```typescript
     import { ShowMessageDialogClientRequest, ShowMessageDialogClientResponse, IMessageDialogOptions } from "PosApi/Consume/Dialogs";
     import { IExtensionContext } from "PosApi/Framework/ExtensionContext";
     import { ClientEntities } from "PosApi/Entities";
@@ -188,13 +188,13 @@ Filter extensions are also supported in **Show journal view** and **Search order
 
 17. Create a class that is named **MessageDialog**.
 
-    ```Typescript
+    ```typescript
     export default class MessageDialog {}
     ```
 
 18. In the **MessageDialog** class, add the following **show** method.
 
-    ```Typescript
+    ```typescript
     public static show(context: IExtensionContext, message: string): Promise<void> {
         let promise: Promise<void> = new Promise<void>((resolve: () => void, reject: (reason?: any) => void) => 
         {
@@ -233,7 +233,7 @@ Filter extensions are also supported in **Show journal view** and **Search order
 19. You will now add a custom app bar button in the search view to open a dialog box that contains details about the selected customer. In the **ViewExtensions** folder, create a Typescript file that is named **ViewCustomerSummaryCommand.ts**.
 20. In the **ViewCustomerSummaryCommand.ts** file, add the following **import** statements to import the relevant entities and context.
 
-    ```Typescript
+    ```typescript
     import { ProxyEntities } from "PosApi/Entities";
     import { ArrayExtensions, ObjectExtensions } from "PosApi/TypeExtensions";
     import { IExtensionCommandContext } from "PosApi/Extend/Views/AppBarCommands";
@@ -243,19 +243,19 @@ Filter extensions are also supported in **Show journal view** and **Search order
 
 21. Create a class that is named **ViewCustomerSummaryCommand**, and extend it from **CustomerSearchExtensionCommandBase**.
 
-    ```Typescript
+    ```typescript
     export default class ViewCustomerSummaryCommand extends SearchView.CustomerSearchExtensionCommandBase {}
     ```
 
 22. In the **ViewCustomerSummaryCommand** class, declare a private variable to capture the results when searching for the selected customer.
 
-    ```Typescript
+    ```typescript
     private _customerSearchResults: ProxyEntities.GlobalCustomer[];
     ```
 
 23. Add the class **constructor** method to initialize and clear the search handler.
 
-    ```Typescript
+    ```typescript
     constructor(context: IExtensionCommandContext<SearchView.ICustomerSearchToExtensionCommandMessageTypeMap>) {
         super(context);
         this.id = "viewCustomerSummaryCommand";
@@ -275,7 +275,7 @@ Filter extensions are also supported in **Show journal view** and **Search order
 
 24. Add the **init** method to initialize the **visible** property.
 
-    ```Typescript
+    ```typescript
     protected init(state: SearchView.ICustomerSearchExtensionCommandState): void {
         this.isVisible = true;
     }
@@ -283,7 +283,7 @@ Filter extensions are also supported in **Show journal view** and **Search order
 
 25. Add the **execute** method to handle the app button click handler. The **execute** method reads the data for the selected customer from the handler and shows it in a simple dialog box.
 
-    ```Typescript
+    ```typescript
     protected execute(): void {
         let customer: ProxyEntities.GlobalCustomer = ArrayExtensions.firstOrUndefined(this._customerSearchResults);
         if (!ObjectExtensions.isNullOrUndefined(customer)) {
@@ -298,7 +298,7 @@ Filter extensions are also supported in **Show journal view** and **Search order
 
     The whole code sample should look like this.
 
-    ```Typescript
+    ```typescript
     import { ProxyEntities } from "PosApi/Entities";
     import { ArrayExtensions, ObjectExtensions } from "PosApi/TypeExtensions";
     import { IExtensionCommandContext } from "PosApi/Extend/Views/AppBarCommands";
@@ -357,7 +357,7 @@ Filter extensions are also supported in **Show journal view** and **Search order
 26. In the **SearchExtension** folder, create a JSON file that is named **manifest.json**.
 27. In the **manifest.json** file, add the following code.
 
-    ```Typescript
+    ```typescript
     {
         "$schema": "../manifestSchema.json",
         "name": "Pos_Extensibility_Samples",
@@ -386,7 +386,7 @@ Filter extensions are also supported in **Show journal view** and **Search order
 
 28. In the **POS.Extensions** project, open the **extensions.json** file, and update it with **SearchExtension** samples, so that the POS includes this extension at runtime.
 
-    ```Typescript
+    ```typescript
     {
         "extensionPackages": [
         {
@@ -401,7 +401,7 @@ Filter extensions are also supported in **Show journal view** and **Search order
 
 29. In the **tsconfig.json** file, comment out the extension package folders in the exclude list. The POS uses this file to include or exclude the extension. By default, the list contains the whole excluded extensions list. To include an extension as part of the POS, add the name of the extension folder, and comment out the extension in the exclude list, as shown here.
 
-    ```Typescript
+    ```typescript
     "exclude": [
     "SampleExtensions"
     //"SampleExtensions2",

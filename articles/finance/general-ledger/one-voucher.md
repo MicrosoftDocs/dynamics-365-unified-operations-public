@@ -161,7 +161,7 @@ Organizations often want to post to the general ledger in summary form to minimi
 
 ### Settle multiple unposted payments to the same invoice
 
-This scenario is typically found in retail organizations where customers can use multiple methods of payment to pay for purchases. In this scenario, the organization must be able to record multiple unposted payments and settle them against the customer invoice.
+This scenario is typically found in organizations where customers can use multiple methods of payment to pay for purchases. In this scenario, the organization must be able to record multiple unposted payments and settle them against the customer invoice.
 
 A new feature that was added in Microsoft Dynamics 365 for Operations version 1611 (November 2016) enables multiple unposted payments to be settled against a single invoice. Multiple customer payments no longer have to be entered in a single voucher.
 
