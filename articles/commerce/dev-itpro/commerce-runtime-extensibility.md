@@ -520,7 +520,7 @@ Next, you must create a new CRT service that uses the request and response types
 
 It’s slightly easier to create a single-request service.
 
-```typesript
+```typescript
 public class CrossLoyaltyCardService : SingleRequestHandler
 ```
 
