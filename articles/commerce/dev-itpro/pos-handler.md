@@ -178,7 +178,7 @@ The following example shows how to override the GetSerialNumberClientRequestHand
 
 7.  In the GetSerialNumberClientRequestHandlerExt.ts file, create a new class called GetSerialNumberClientRequestHandlerExtend and extend it from GetSerialNumberClientRequestHandler.
 
-    ```
+    ```typescript
     export default class GetSerialNumberClientRequestHandlerExt extends GetSerialNumberClientRequestHandler { }
 	```
 	

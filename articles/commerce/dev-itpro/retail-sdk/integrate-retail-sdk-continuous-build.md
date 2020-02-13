@@ -77,7 +77,7 @@ This build step enables Microsoft to copy the latest built Commerce binaries to 
 
 Make sure that this step occurs after the "PowerShell: Generate packages" step (see image below). Here are the arguments.
 
-```
+```powershell
 -BuildPackagePath "$(Agent.BuildDirectory)\Packages" -BuildVersion "$(Build.BuildNumber)"
 ```
 

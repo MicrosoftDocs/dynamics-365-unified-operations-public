@@ -73,7 +73,7 @@ The following example shows a module mock data file that is used to mock the **c
 
 The following example shows how to mock the data for a core data action that returns a **SimpleProduct** type.
 
-```
+```json
 [
     {
         "CacheObjectType": "SimpleProduct",

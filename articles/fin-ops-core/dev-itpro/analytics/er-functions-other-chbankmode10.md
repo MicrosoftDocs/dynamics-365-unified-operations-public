@@ -38,7 +38,7 @@ The `CH_BANK_MOD_10` function returns a *String* value that represents a credito
 
 ## Syntax
 
-```
+```ER expression
 CH_BANK_MOD_10 (invoice number digits)
 ```
 

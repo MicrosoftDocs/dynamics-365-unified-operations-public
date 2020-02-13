@@ -66,7 +66,7 @@ The Online SDK provides everything that you require to extend your online channe
 
 The SDK configuration package is available through the [Msdyn365.Commerce.Online GitHub repository (repo)](https://github.com/microsoft/Msdyn365.Commerce.Online). Download or clone the repo to a local folder on your development computer. To clone the repo, use the following command.
 
-```
+```Console
 git clone https://github.com/microsoft/Msdyn365.Commerce.Online.git
 ```
 
@@ -103,7 +103,7 @@ To run your Node app, follow these steps.
     c:\repos\Msdyn365.Commerce.Online>yarn start
     ```
 
-This command can take up to a minute to run. When it's completed, you will see output that indicates that the server has been started. The output also shows the allocated port number (4000 by default, but you can change the value in the .env file).
+    This command can take up to a minute to run. When it's completed, you will see output that indicates that the server has been started. The output also shows the allocated port number (4000 by default, but you can change the value in the .env file).
 
 2. To test that your Node app is running correctly, open the following URLs in a web browser:
 

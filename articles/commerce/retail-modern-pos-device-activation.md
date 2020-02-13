@@ -118,7 +118,9 @@ Before you start the steps that are outlined in this topic, follow these steps.
 
 If you are installing Modern POS for use with an on-premises environment, you must start the installer from a command line as follows:
 
-    ModernPosSetupOffline.exe -UseAdfsAuthentication
+```Console
+ModernPosSetupOffline.exe -UseAdfsAuthentication
+```
 
 The Modern POS installer first extracts the associated files and then starts the installation.
 
@@ -260,13 +262,13 @@ The device should now be activated and ready to use.
     1. Open a **Command Prompt** window as an administrator.
     2. Enter the following command.
 
-        ```
+        ```Console
         lodctr /s:"perf_backup.txt"
         ```
 
     3. Enter the following command.
 
-        ```
+        ```Console
         lodctr /R
         ```
 

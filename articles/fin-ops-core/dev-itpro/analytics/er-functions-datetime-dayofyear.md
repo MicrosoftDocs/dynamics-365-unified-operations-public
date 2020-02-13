@@ -38,7 +38,7 @@ The `DAYOFYEAR` function returns an *Integer* value that represents the number o
 
 ## Syntax
 
-```
+```ER expression
 DAYOFYEAR (date) as Integer
 ```
 

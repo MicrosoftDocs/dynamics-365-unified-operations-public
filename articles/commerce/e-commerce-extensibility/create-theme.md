@@ -53,7 +53,7 @@ The online software development kit (SDK) provides the **add-theme** command-lin
 
 The following example shows how to create a theme that is named **spring-theme**.
 
-```
+```Console
 yarn msdyn365 add-theme spring-theme
 ```
 
@@ -98,7 +98,7 @@ The online SDK provides the **add-view-extension** command-line interface (CLI) 
 
 For example, run the following command to add a new file that is named **product-feature.view.ts** under the **spring-theme** theme's view directory.
 
-```
+```Console
 yarn msdyn365 add-view-extension spring-theme product-feature
 ```
 

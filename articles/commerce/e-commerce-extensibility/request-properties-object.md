@@ -164,7 +164,7 @@ To get started, follow these steps.
 1. Add the module that must be tested to a page mock.
 1. In the **renderingContext** section of the page mock, add the following **userContext** section. 
 
-    ```
+    ```typescript
     "userContext": {
         "token": "<TOKEN>",
         "isAuthenticated": true,
@@ -188,7 +188,7 @@ The user information can now be obtained in the React component from within the 
 
 Here in an example of the page mock.
 
-```
+```typescript
 {
     "exception": null,
     "pageRoot": {

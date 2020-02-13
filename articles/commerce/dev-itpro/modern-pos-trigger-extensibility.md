@@ -59,7 +59,10 @@ In Modern POS and Cloud POS, triggers are either cancelable or non-cancelable.
 ### Guidelines
 
 -   **Trigger registration** – All triggers should be registered by using the **TriggerManager::register** method. The **ApplicationStart**, **PreLogOn**, and **PostLogOn** triggers must be registered inside a function that is called when the **DOMContentLoaded** event is raised. Other triggers can be registered in the same manner, but they can also be registered conditionally.
-    -   **Conditional registration** – If the decision about whether to register a trigger is based on information in the channel, the trigger can be registered conditionally. Conditional registration should be performed inside a **PostLogOn** trigger. **Note:** It's important that the conditional registration be performed only during the first sign-in after the app has been loaded. For an example implementation, see the sample code later in this article.
+    -   **Conditional registration** – If the decision about whether to register a trigger is based on information in the channel, the trigger can be registered conditionally. Conditional registration should be performed inside a **PostLogOn** trigger. 
+    
+    > [!NOTE]
+    > It's important that the conditional registration be performed only during the first sign-in after the app has been loaded. For an example implementation, see the sample code later in this article.
 -   **Trigger implementation** – Each trigger event that is listed in the "Supported trigger events" section has a trigger interface that is associated with it. These trigger interfaces define the contract between the application and the trigger implementations. Each trigger should implement the predefined interface that is associated with the trigger event type that it's registered for.
 
 ### Triggers execution workflow
@@ -181,81 +184,20 @@ Transactions can't have both return and sale operations if a fiscal register is 
 
 4.  Add the following code to the TriggerSample.ts file.
 
-        ///<reference path="ITrigger.ts" />
-        ///<reference path="ApplicationTriggers.ts" />
-        ///<reference path="TransactionTriggers.ts" />
-        module Commerce.Triggers.Samples {
-            "use strict";
-            /**
-             * Implementation of a pre product sale trigger that is used to ensure there are no return lines in the cart.
-             */
-            export class ValidateProductSalePreProductSaleTrigger implements IPreProductSaleTrigger {
-                private static SALE_NOT_ALLOWED_IN_SAME_TRANSACTION_AS_RETURN_ERROR_CODE: string = "Return and sale not allowed in same transaction";
-                /**
-                 * Executes the trigger.
-                 */
-                public execute(options: Operations.IItemSaleOperationOptions): IAsyncResult<ICancelableResult> {
-                    var hasReturnLine: boolean = Session.instance.cart.CartLines.some((cartLine: Proxy.Entities.CartLine): boolean => {
-                        return cartLine.Quantity < 0 && !cartLine.IsVoided;
-                    });
-                    var result: AsyncResult<ICancelableResult> = new AsyncResult<ICancelableResult>(null);
-                    if (hasReturnLine) {
-                        var error: Proxy.Entities.Error =
-                            new Proxy.Entities.Error(ValidateProductSalePreProductSaleTrigger.SALE_NOT_ALLOWED_IN_SAME_TRANSACTION_AS_RETURN_ERROR_CODE);
-                        result.reject([error]);
-                    } else {
-                        result.resolve({ canceled: false });
-                    }
-                    return result;
-                }
-            }
-            /**
-             * Implementation of a post log on trigger that is used to perform conidtional registration of other triggers.
-             */
-            export class ConditionalRegistrationPostLogOnTrigger implements IPostLogOnTrigger {
-                private static alreadyRegistered: boolean = false;
-                /**
-                 * Executes the trigger.
-                 */
-                public execute(options: IPostLogOnTriggerOptions): IVoidAsyncResult {
-                    // Check to ensure the triggers have not already been registered.
-                    if (!ConditionalRegistrationPostLogOnTrigger.alreadyRegistered) {
-                        this.performRegistration();
-                        // Set already registered field to true to prevent duplicate trigger registration.
-                        ConditionalRegistrationPostLogOnTrigger.alreadyRegistered = true;
-                    }
-                    return VoidAsyncResult.createResolved();
-                }
-                /**
-                 * Perform the conditional registration of triggers.
-                 */
-                private performRegistration(): void {
-                    var conditionIsMet: boolean = true;
-                    if (conditionIsMet) {              
-                        TriggerManager.instance.register(
-                            CancelableTriggerType.PreProductSale,
-                            new ValidateProductSalePreProductSaleTrigger());
-                    }
-                }
-            }
-        }
+    ```typescript
+    ///<reference path="ITrigger.ts" />
+    ///<reference path="ApplicationTriggers.ts" />
+    ///<reference path="TransactionTriggers.ts" />
+    module Commerce.Triggers.Samples {
+        "use strict";
         /**
-         * Trigger types that do not support conditional registration should be registered when the DOMContentLoaded event is fired.
-         * @remarks These trigger types include: ApplicationStart, PreLogOn and PostLogOn.
+         * Implementation of a pre product sale trigger that is used to ensure there are no return lines in the cart.
          */
-        document.addEventListener("DOMContentLoaded", function (): void {
-            Commerce.Triggers.TriggerManager.instance.register(
-                Commerce.Triggers.NonCancelableTriggerType.PostLogOn,
-                new Commerce.Triggers.Samples.ConditionalRegistrationPostLogOnTrigger());
-        });
-
-5.  Inspect the TriggerSample.ts file to see the implementation of **IPreProductSaleTrigger**.
-
         export class ValidateProductSalePreProductSaleTrigger implements IPreProductSaleTrigger {
-            private static SALE_NOT_ALLOWED_IN_SAME_TRANSACTION_AS_RETURN_ERROR_CODE: string = "Return and sale not allowed in same transaction";       
+            private static SALE_NOT_ALLOWED_IN_SAME_TRANSACTION_AS_RETURN_ERROR_CODE: string = "Return and sale not allowed in same transaction";
             /**
-            * Executes the trigger.
-            */
+             * Executes the trigger.
+             */
             public execute(options: Operations.IItemSaleOperationOptions): IAsyncResult<ICancelableResult> {
                 var hasReturnLine: boolean = Session.instance.cart.CartLines.some((cartLine: Proxy.Entities.CartLine): boolean => {
                     return cartLine.Quantity < 0 && !cartLine.IsVoided;
@@ -263,62 +205,133 @@ Transactions can't have both return and sale operations if a fiscal register is 
                 var result: AsyncResult<ICancelableResult> = new AsyncResult<ICancelableResult>(null);
                 if (hasReturnLine) {
                     var error: Proxy.Entities.Error =
-                    new Proxy.Entities.Error(ValidateProductSalePreProductSaleTrigger.SALE_NOT_ALLOWED_IN_SAME_TRANSACTION_AS_RETURN_ERROR_CODE);
+                        new Proxy.Entities.Error(ValidateProductSalePreProductSaleTrigger.SALE_NOT_ALLOWED_IN_SAME_TRANSACTION_AS_RETURN_ERROR_CODE);
                     result.reject([error]);
                 } else {
                     result.resolve({ canceled: false });
                 }
                 return result;
-            }    
+            }
         }
-
-6.  Inspect the registration of **ValidateProductSalePreProductSaleTrigger**.
-
         /**
-        * Implementation of a post log on trigger that is used to perform conidtional registration of other triggers.
-        */
+         * Implementation of a post log on trigger that is used to perform conidtional registration of other triggers.
+         */
         export class ConditionalRegistrationPostLogOnTrigger implements IPostLogOnTrigger {
             private static alreadyRegistered: boolean = false;
             /**
-            * Executes the trigger.
-            */
+             * Executes the trigger.
+             */
             public execute(options: IPostLogOnTriggerOptions): IVoidAsyncResult {
                 // Check to ensure the triggers have not already been registered.
                 if (!ConditionalRegistrationPostLogOnTrigger.alreadyRegistered) {
                     this.performRegistration();
-                // Set already registered field to true to prevent duplicate trigger registration.
-                ConditionalRegistrationPostLogOnTrigger.alreadyRegistered = true;
+                    // Set already registered field to true to prevent duplicate trigger registration.
+                    ConditionalRegistrationPostLogOnTrigger.alreadyRegistered = true;
+                }
+                return VoidAsyncResult.createResolved();
             }
-            return VoidAsyncResult.createResolved();
+            /**
+             * Perform the conditional registration of triggers.
+             */
+            private performRegistration(): void {
+                var conditionIsMet: boolean = true;
+                if (conditionIsMet) {              
+                    TriggerManager.instance.register(
+                        CancelableTriggerType.PreProductSale,
+                        new ValidateProductSalePreProductSaleTrigger());
+                }
+            }
         }
+    }
+    /**
+     * Trigger types that do not support conditional registration should be registered when the DOMContentLoaded event is fired.
+     * @remarks These trigger types include: ApplicationStart, PreLogOn and PostLogOn.
+     */
+    document.addEventListener("DOMContentLoaded", function (): void {
+        Commerce.Triggers.TriggerManager.instance.register(
+            Commerce.Triggers.NonCancelableTriggerType.PostLogOn,
+            new Commerce.Triggers.Samples.ConditionalRegistrationPostLogOnTrigger());
+    });
+    ```
+
+5.  Inspect the TriggerSample.ts file to see the implementation of **IPreProductSaleTrigger**.
+
+    ```typescript
+    export class ValidateProductSalePreProductSaleTrigger implements IPreProductSaleTrigger {
+        private static SALE_NOT_ALLOWED_IN_SAME_TRANSACTION_AS_RETURN_ERROR_CODE: string = "Return and sale not allowed in same transaction";       
+        /**
+        * Executes the trigger.
+        */
+        public execute(options: Operations.IItemSaleOperationOptions): IAsyncResult<ICancelableResult> {
+            var hasReturnLine: boolean = Session.instance.cart.CartLines.some((cartLine: Proxy.Entities.CartLine): boolean => {
+                return cartLine.Quantity < 0 && !cartLine.IsVoided;
+            });
+            var result: AsyncResult<ICancelableResult> = new AsyncResult<ICancelableResult>(null);
+            if (hasReturnLine) {
+                var error: Proxy.Entities.Error =
+                new Proxy.Entities.Error(ValidateProductSalePreProductSaleTrigger.SALE_NOT_ALLOWED_IN_SAME_TRANSACTION_AS_RETURN_ERROR_CODE);
+                result.reject([error]);
+            } else {
+                result.resolve({ canceled: false });
+            }
+            return result;
+        }    
+    }
+    ``` 
+
+6.  Inspect the registration of **ValidateProductSalePreProductSaleTrigger**.
+
+    ```typescript
+    /**
+    * Implementation of a post log on trigger that is used to perform conidtional registration of other triggers.
+    */
+    export class ConditionalRegistrationPostLogOnTrigger implements IPostLogOnTrigger {
+        private static alreadyRegistered: boolean = false;
+        /**
+        * Executes the trigger.
+        */
+        public execute(options: IPostLogOnTriggerOptions): IVoidAsyncResult {
+            // Check to ensure the triggers have not already been registered.
+            if (!ConditionalRegistrationPostLogOnTrigger.alreadyRegistered) {
+                this.performRegistration();
+            // Set already registered field to true to prevent duplicate trigger registration.
+            ConditionalRegistrationPostLogOnTrigger.alreadyRegistered = true;
+        }
+        return VoidAsyncResult.createResolved();
+    }
+    ```
 
 7.  Inspect the **performRegistration** method where the trigger is registered.
 
-        private performRegistration(): void {
-            var conditionIsMet: boolean = true;
-            if (conditionIsMet) {
-                //TriggerManager.instance.register(
-                //    CancelableTriggerType.PreConfirmReturnTransaction,
-                //    new ValidateReturnPreConfirmReturnTransactionTrigger());
-                TriggerManager.instance.register(
-                    CancelableTriggerType.PreProductSale,
-                    new ValidateProductSalePreProductSaleTrigger());
-                //TriggerManager.instance.register(
-                //    NonCancelableTriggerType.PostCustomerAdd,
-                //    new GiveBirthDayDiscountTrigger());
-        }
+    ```typescript
+    private performRegistration(): void {
+        var conditionIsMet: boolean = true;
+        if (conditionIsMet) {
+            //TriggerManager.instance.register(
+            //    CancelableTriggerType.PreConfirmReturnTransaction,
+            //    new ValidateReturnPreConfirmReturnTransactionTrigger());
+            TriggerManager.instance.register(
+                CancelableTriggerType.PreProductSale,
+                new ValidateProductSalePreProductSaleTrigger());
+            //TriggerManager.instance.register(
+            //    NonCancelableTriggerType.PostCustomerAdd,
+            //    new GiveBirthDayDiscountTrigger());
+    }
+    ```
 
 8.  Inspect the registration of **PostLogonTrigger** on the **DOMContentLoad** event.
 
-        /**
-        * Trigger types that do not support conditional registration should be registered when the DOMContentLoaded event is fired.
-        * @remarks These trigger types include: ApplicationStart, PreLogOn and PostLogOn.
-        */
-        document.addEventListener("DOMContentLoaded", function (): void {
-            Commerce.Triggers.TriggerManager.instance.register(
-            Commerce.Triggers.NonCancelableTriggerType.PostLogOn,
-            new Commerce.Triggers.Samples.ConditionalRegistrationPostLogOnTrigger());
-        });
+    ```typescript
+    /**
+    * Trigger types that do not support conditional registration should be registered when the DOMContentLoaded event is fired.
+    * @remarks These trigger types include: ApplicationStart, PreLogOn and PostLogOn.
+    */
+    document.addEventListener("DOMContentLoaded", function (): void {
+        Commerce.Triggers.TriggerManager.instance.register(
+        Commerce.Triggers.NonCancelableTriggerType.PostLogOn,
+        new Commerce.Triggers.Samples.ConditionalRegistrationPostLogOnTrigger());
+    });
+    ```
 
 9.  Compile and rebuild Modern POS to verify the implementation:
     1.  Go to **Show Journal**, and select a transaction to return. If the transaction has multiple lines, return one line. A return line should be added in the cart.
