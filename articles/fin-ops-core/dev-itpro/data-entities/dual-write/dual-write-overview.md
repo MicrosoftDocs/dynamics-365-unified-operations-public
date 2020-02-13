@@ -3,7 +3,7 @@
 
 title: Dual-write overview
 description: Dual-write is an infrastructure that provides near-real-time interaction between Microsoft Dynamics 365 model-driven applications and Finance and Operations applications.
-author: shsrav
+author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 02/06/2020
 ms.topic: article
