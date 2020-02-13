@@ -42,7 +42,7 @@ There are several samples in the Retail SDK that demonstrate extensions. This to
 4. Right-click the **SampleExtensions2** folder and select **Include in Project**.
 5. Open the **extensions.json** file and add the extension folder for **SampleExtensions** and **SampleExtensions2**. This means that during runtime POS will include this extension. The **baseUrl** value must exactly match the relative path and extension folder name.
 
-    ```Typescript
+    ```typescript
     {
         "extensionPackages": [
             {
@@ -58,7 +58,7 @@ There are several samples in the Retail SDK that demonstrate extensions. This to
     > In the extension.json file you must include at least two extension folders. If you add only one extension folder, then POS will not load the extension.
 5. Open the **tsconfig.json** file and comment out the extension package folders from the exclude list. POS will use this file to determine whether to compile the extension. By default, the list contains the sample extensions list. If you want to compile any extension to the POS, then you need add the extension folder name and comment out the extension from the extension as shown below. 
 
-    ```Typescript
+    ```typescript
     {
         "extends": "../tsconfigs/tsmodulesconfig",
         "exclude": [
@@ -90,7 +90,7 @@ There are several samples in the Retail SDK that demonstrate extensions. This to
     ```
     If you want to enable other extensions, comment them out from the exclude list. For example, if you want to include **B2BSample**, the code would be as follows. 
     
-    ```Typescript
+    ```typescript
     "exclude": [
         "AuditEventExtensionSample"
         // ,"B2BSample"

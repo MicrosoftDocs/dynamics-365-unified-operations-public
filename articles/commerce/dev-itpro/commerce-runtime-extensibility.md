@@ -100,7 +100,7 @@ Before you learn about the CRT extension patterns, you should understand how a C
 <p>For example, you want to capture and show some additional information to the customer entity in POS. In this case, you can add a post-trigger to fetch all your custom properties for customer, add them to the customer entity as extension properties, and send those extension properties to POS.</p>
 <p>You can also send extension properties from POS to CRT and store them in your custom table. Alternatively, you can do some custom logic based on those properties, or send it to HQ.</p>
 <p>All CRT entities, such as products, customers, transactions, and parameters, support extension properties.</p>
-<blockquote><strong>Note</strong><br>
+<blockquote><strong>Note:</strong><br>
 Attributes are also supported (configuration-driven development). For extension properties, you must create a custom table and store the data. However, attributes are configuration-driven and aren't required in order to create table fields. Therefore, no code is required for read and update operations.</blockquote>
 <p>For details about the attributes, see the following topics:</p>
 <ul>
@@ -408,7 +408,7 @@ To set an extension property on the cart line, you use SaveExtensionPropertiesOn
 
 Here is an example.
 
-```Typescript
+```typescript
 let sampleExtensionProperty = <ProxyEntities.CommerceProperty>{
     Key: "sampleExtensionProperty",
     Value: <ProxyEntities.CommercePropertyValue>{
@@ -420,7 +420,7 @@ this.context.runtime.executeAsync(new SaveExtensionPropertiesOnCartClientRequest
 
 **Reading the extension property from the cart in POS**
 
-```Typescript
+```typescript
 let getCartRequest: GetCurrentCartClientRequest<GetCurrentCartClientResponse> = new GetCurrentCartClientRequest<GetCurrentCartClientResponse>();
 return this.context.runtime.executeAsync(getCartRequest).then((value: ICancelableDataResult<GetCurrentCartClientResponse>) => {
     let cart: Commerce.Proxy.Entities.Cart = (<GetCurrentCartClientResponse>value.data).result;

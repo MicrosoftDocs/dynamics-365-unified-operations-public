@@ -59,26 +59,26 @@ Use the following steps to consume Retail APIs in your extensions.
 
     The pattern is import { api name } from "PosApi/Consume/Module name";
  
-    ```Typescript
+    ```typescript
     import { SaveAttributesOnCartClientRequest, SaveAttributesOnCartClientResponse } from "PosApi/Consume/Cart";
     ```
 
 2.  Import the client entities and proxy entities if required.
 
-    ```Typescript
+    ```typescript
     import { ClientEntities } from "PosApi/Entities";
 
     import { ProxyEntities } from "PosApi/Entities";
     ```
 3.  Declare the API variable and execute it using the POS runtime, which you can access the runtime by using: this.context.runtime.executeAsync("api name")
 
-    ```Typescript
+    ```typescript
     executeAsync<TResponse extends Response>(request: Request<TResponse>): Promise<Client.Entities.ICancelableDataResult<TResponse>>;
     ```
     
     For example, if you want to execute the tender removal, use SaveAttributesOnCartClientRequest api, and refer to the following steps.
  
-    ```Typescript
+    ```typescript
     let attributeValue: ProxyEntities.AttributeTextValue = new ProxyEntities.AttributeTextValueClass();
 
      attributeValue.Name = PreEndTransactionTrigger.B2B_CART_ATTRIBUTE_NAME;
@@ -132,9 +132,8 @@ currentCart = getCurrentCartClientResponse.data.result;
 }
 ```
 **Force void transaction**
-```
+```typescript
  // Force void tarnsaction.
-```Typescript
  let forceVoidTransactionRequest: VoidTransactionOperationRequest<VoidTransactionOperationResponse> =
 
  new VoidTransactionOperationRequest<VoidTransactionOperationResponse>(false, this.context.logger.getNewCorrelationId());

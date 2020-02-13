@@ -58,12 +58,10 @@ In scenarios where a stable internet connection is available and there is low la
 
 ## Get started with Store Scale Unit
 
-To get started, review the following topic on configuring the Commerce Scale Unit, [Configure and install Retail Store Scale Unit](retail-store-scale-unit-configuration-installation.md).
+To get started, review the following topic on configuring the Commerce Scale Unit, [Configure and install Commerce Scale Unit](retail-store-scale-unit-configuration-installation.md).
 
 Additional resources
 --------
 
-[Configure and install Retail Store Scale Unit](retail-store-scale-unit-configuration-installation.md)
-
-
+[Configure and install Commerce Scale Unit](retail-store-scale-unit-configuration-installation.md)
 

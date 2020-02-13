@@ -51,9 +51,9 @@ You must complete the following tasks before you can set up a store:
 3. Set up number sequences for stores, store statements, and statement vouchers.
 4. Configure parameters for Commerce.
 5. Set up the methods of payment that the store accepts.
-6. To process credit card transactions at retail POS registers, you can also set up payment services.
+6. To process credit card transactions at POS registers, you can also set up payment services.
 7. Set up sales tax groups.
-8. Set up retail products. As part of this task, you also set up product hierarchies, product variants, and product assortments.
+8. Set up products. As part of this task, you also set up product hierarchies, product variants, and product assortments.
 9. Set up product price groups.
 10. Set up product pricing. As part of this task, you also set up price adjustments, discounts, and discount periods.
 11. Set up staff members.
@@ -91,5 +91,5 @@ After you enter the details for the store, complete these tasks to send the new 
 Commerce uses organization hierarchies to structure channels. Organization hierarchies represent the relationships between the organizations that make up your business. When you set up stores, you can add them to an organization hierarchy. The stores then share data that is used for assortments, replenishment, and reporting.
 
 > [!NOTE]
-> To use Retail sales functionality, the configuration key for **Multiple ship-to** must be enabled. This configuration key can be found in the **Trade configuration** keys under **System Administration**\> **Setup** \> **License Configuration**. This is required due to Retail functionality that performs various validations based on the delivery address configured at the sales order line level.
+> To use Commerce sales functionality, the configuration key for **Multiple ship-to** must be enabled. This configuration key can be found in the **Trade configuration** keys under **System Administration**\> **Setup** \> **License Configuration**. This is required due to various validations based on the delivery address configured at the sales order line level.
 

@@ -62,7 +62,7 @@ The following features have not yet been implemented in on-premises deployments.
 
 | Feature | Description |
 |---------|-------------|
-| Retail  | To see a list of currently available retail capabilities in on-premises deployments, see [Retail capabilities that are available in on-premises deployments](../../../retail/retail-onprem.md). |
+| Commerce  | To see a list of currently available capabilities in on-premises deployments, see [Commerce capabilities that are available in on-premises deployments](../../../retail/retail-onprem.md). |
 
 ## Features not intended for use in on-premises deployments
 
