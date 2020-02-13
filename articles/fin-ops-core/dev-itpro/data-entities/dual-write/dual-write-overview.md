@@ -38,9 +38,9 @@ ms.search.validFrom: 2020-01-06
 
 ## What is dual-write?
 
-Dual-write is an out-of-the-box infrastructure that provides seamless, near-real-time interaction between Microsoft Dynamics 365 model-driven applications and Finance and Operations applications. When data on customers, products, people, and operations flow beyond application boundaries, it create a feedback loop that empowers all departments in an organization.
+Dual-write is an out-of-the-box infrastructure that provides near-real-time interaction between Microsoft Dynamics 365 model-driven applications and Finance and Operations applications. When data on customers, products, people, and operations flow beyond application boundaries, it empowers all departments in an organization.
 
-Dual-write provides tightly-coupled, bi-directional integration between Dynamics 365 for Finance and Operations and the Common Data Service. Any data change in Finance and Operations apps results in writes, in near-real-time, to the Common Data Service and vice versa. This automated data flow provides an integrated user experience across the apps.
+Dual-write provides tightly-coupled, bi-directional integration between Dynamics 365 for Finance and Operations and the Common Data Service. Any data change in Finance and Operations apps results in writes to the Common Data Service and vice versa. This automated data flow provides an integrated user experience across the apps.
 
 ![Data relationship between apps](media/dual-write-overview-picture1.png)
 
