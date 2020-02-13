@@ -38,7 +38,7 @@ The `ALLITEMSQUERY` function runs as a joined SQL query. It returns a new flatte
 
 ## Syntax
 
-```ER expression
+```vb
 ALLITEMSQUERY (path)
 ```
 
