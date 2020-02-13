@@ -92,12 +92,12 @@ Use the following steps to consume Retail APIs in your extensions.
     new SaveAttributesOnCartClientRequest(attributeValues);
 
     result = this.context.runtime.executeAsync(saveAttributesOnCartRequest);
-
     ```
+
 ### Samples showing how to access APIs
 
 **Get Current cart**
-```
+```typescript
 // Gets the current cart.
 
  let currentCart: ProxyEntities.Cart;
@@ -111,8 +111,9 @@ Use the following steps to consume Retail APIs in your extensions.
 currentCart = getCurrentCartClientResponse.data.result;
 
 ```
+
 **Get Current customer added to cart**
-```
+```typescript
  // Gets the current customer.
 
  let result: Promise<ClientEntities.ICancelableDataResult<GetCustomerClientResponse>>;
@@ -131,6 +132,7 @@ currentCart = getCurrentCartClientResponse.data.result;
 
 }
 ```
+
 **Force void transaction**
 ```typescript
  // Force void tarnsaction.

@@ -47,7 +47,7 @@ If you don’t have admin access in the environment, you will not be able to tes
 4. To debug CRT/RS extensions, attach the CRT/RS project to the IIS Express process.
 5. When you open the Cloud POS project from the Retail SDK, IIS Express may fail with the following error. 
 
-    ```
+    ```Console
     Filename: redirection.config
     Error: Cannot read configuration file
     ``` 
@@ -60,7 +60,7 @@ If you don’t have admin access in the environment, you will not be able to tes
 4. In **applicationhost.config**, change the physcialPath of RetailCloudPos to point to your SDK location.
    For example, physicalPath="K:\RetailSDK\POS\Web". The overall section will look like the following:
    
-    ```
+    ```xml
    <site name="RetailCloudPOs" id="4" serverAutoStart="true">
         <application path="/" applicationPool="Dynamics365">
             <virtualDirectory path="/" physicalPath="K:\RetailSDK\POS\Web" />

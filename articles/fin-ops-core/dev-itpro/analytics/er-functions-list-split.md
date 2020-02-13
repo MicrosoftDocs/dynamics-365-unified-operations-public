@@ -45,8 +45,8 @@ SPLIT (input, length)
 This syntax is used to split the specified input string into substrings, each of which has the specified length.
 
 ## Syntax 2
-vb
-```
+
+```vb
 SPLIT (input, delimiter)
 ```
 

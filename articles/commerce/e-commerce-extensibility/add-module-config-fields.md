@@ -348,7 +348,7 @@ export default ProductFeature;
 
 The following example shows the corresponding module view file that handles the HTML layout.
 
-```
+```json
 /*---------------------------------------------------------------------------------------------
  *  Copyright (c) Microsoft Corporation. All rights reserved.
  *  Licensed under the MIT License. See License.txt in the project root for license information.

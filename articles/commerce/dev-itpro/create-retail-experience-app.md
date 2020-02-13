@@ -62,16 +62,18 @@ You must modify the Retail Experience app solution before it can be loaded corre
 1.  Copy the **entire** Retail SDK folder to a Xamarin-enabled computer. For example, copy it to C:\RetailSdk.
 2.  Open C:\RetailSdk\SampleExtensions\ShoppingApp\Sample.ShoppingApp.sln, and remove the following line.
 
-    ```
+    ```xml
     Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RetailSdk.Sample.ShoppingApp", "RetailSdk.Sample.ShoppingApp.csproj", "{D88688FA-C42E-48BE-8334-5A5855561913}" .
     ```
 
 3.  Open C:\RetailSdk\SampleExtensions\ShoppingApp\iOSShoppingApp.iOS.csproj, and remove following lines.
 
-        <Import Project="......BuildToolsMicrosoft.Dynamics.RetailSdk.Build.props" />
-        <Import Project="......BuildToolsMicrosoft.Dynamics.RetailSdk.Build.settings" />
-        <Import Project="$(SdkRootPath)BuildToolsMicrosoft.Dynamics.RetailSdk.Build.targets" />
-        <HintPath>......ReferencesXamarin.iOS.0.0.0Xamarin.iOS.dll</HintPath>
+    ```xml
+    <Import Project="......BuildToolsMicrosoft.Dynamics.RetailSdk.Build.props" />
+    <Import Project="......BuildToolsMicrosoft.Dynamics.RetailSdk.Build.settings" />
+    <Import Project="$(SdkRootPath)BuildToolsMicrosoft.Dynamics.RetailSdk.Build.targets" />
+    <HintPath>......ReferencesXamarin.iOS.0.0.0Xamarin.iOS.dll</HintPath>
+    ```
 
 4.  In Visual Studio, open Sample.ShoppingApp.sln, and add existing projects from the Droid and iOS folders. (Right-click the solution, and then select **Add** &gt; **Existing Projects in Visual Studio**.)
 5.  Xamarin.Forms fixed an issue with the version 2.3.2.127 that is required for the app. Please upgrade the Xamarin.Forms version as described below:

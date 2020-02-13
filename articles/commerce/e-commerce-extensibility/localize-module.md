@@ -72,7 +72,7 @@ The following example shows a resource schema.
 
 The following example shows a resource file.
 
-``` json
+```json
 {
     "noResultsForRefinersText": {
         "value": "No results found for refinement criteria",
@@ -295,7 +295,7 @@ You can generate global.json files for module resources and authoring resources 
 
 ### Example global.json file
 
-```
+```json
 {
     "nextButtonText": {
         "value": "next",
@@ -310,7 +310,7 @@ You can generate global.json files for module resources and authoring resources 
 
 ### Example fr-fr.json localized file
 
-```
+```json
 {
     "nextButtonText": {
         "value": "prochain",

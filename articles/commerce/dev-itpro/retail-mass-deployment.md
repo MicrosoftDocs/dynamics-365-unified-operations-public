@@ -63,7 +63,7 @@ This section shows examples of commands that are used for self-service mass depl
 
 The following command silently updates the current installation of Modern POS. This command has the standard command structure that is used for silent servicing of components that are currently installed. The structure uses the basic values of **&lt;InstallerName&gt;.exe** and the command for silent installation, **-S**. This command uses the configuration file that is located in the same file location as the installer, if a configuration file exists there.
 
-```
+```Console
 ModernPOSSetup_V72.exe -S
 ```
 
@@ -74,7 +74,7 @@ ModernPOSSetup_V72.exe -S
 
 The following command silently updates the current installation of Commerce Scale Unit by using a specific configuration file. (This configuration file might not be in the same location as the executable file for the installer.) This command skips the prerequisite check and moves on to the installation steps. We recommend that you use this command only for testing and development purposes.
 
-```
+```Console
 StoreSystemSetup_V72.exe -S -C "C:\Temp\StoreSystemSetup_V72_Houston.xml" -SkipPrerequisiteCheck
 ```
 
@@ -94,7 +94,7 @@ The following command silently installs (or updates) Modern POS. It has the stan
 
 This command uses the configuration file that is in the same location as the executable file for the installer, if a configuration file exists there. It should not be used if multiple configuration files are available.
 
-```
+```Console
 ModernPOSSetup_V73.exe -S
 ```
 
@@ -105,7 +105,7 @@ ModernPOSSetup_V73.exe -S
 
 The following command silently installs the current installation of Modern POS by using a specific configuration file. This configuration file might not be in the same location as the executable file for the installer, or multiple configuration files might be available.
 
-```
+```Console
 ModernPOSSetup_V72.exe -S -C "C:\Temp\ModernPOSSetup_V73_Houston-3.xml"
 ```
 
@@ -116,7 +116,7 @@ ModernPOSSetup_V72.exe -S -C "C:\Temp\ModernPOSSetup_V73_Houston-3.xml"
 
 The following command silently installs (or updates) Retail hardware station. It has the standard command structure that is used for silent servicing of components that are currently installed. The structure uses the basic values of **&lt;InstallerName&gt;.exe** and the command for silent installation, **-S**. It also uses the **-SkipMerchantInfo** delimiter to skip the download of merchant account information through the utility. This command uses the configuration file that is in the same location as the executable file for the installer.
 
-```
+```Console
 HardwareStationSetup_V10.exe -S -SkipMerchantInfo
 ```
 
@@ -127,6 +127,6 @@ HardwareStationSetup_V10.exe -S -SkipMerchantInfo
 
 The following command silently installs the current installation of Retail hardware station by using a specific configuration file. This configuration file might not be in the same location as the executable file for the installer, or multiple configuration files might be available.
 
-```
+```Console
 HardwareStationSetup_V10.exe -S -SkipMerchantInfo -C "C:\Temp\HardwareStationSetup_V10__20-19-35.xml"
 ```
