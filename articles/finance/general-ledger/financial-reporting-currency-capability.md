@@ -50,7 +50,7 @@ By default, all report amounts are summarized and presented in the accounting cu
 
 ## Reporting on currency
 By default, any amount appearing on a report will appear as the accounting currency amount. Any of the following actions will cause some level of translation to take place:
-- Modifying the **Currency display** field in the column definition to **Reporting currency from Ledger**, which will bring back translated amounts that's calculated in the Reporting currency
+- Modifying the **Currency display** field in the column definition to **Reporting currency from Ledger**, which will bring back translated amounts that are calculated in the Reporting currency
 - Modifying the **Currency display** field in the column definition to **Transaction currency**, which will force the report to total different currencies together and display the entered amount in the column, regardless of currency
 - Modifying the **Currency display** field in the column definition to any of the **Translate to...** options, which will perform the currency translation within Financial reporting
 
@@ -79,7 +79,7 @@ The exchange rate type defines the table of exchange rates and currencies to be 
 
 ### Setup for Currency translation type
 The Currency translation type will determine how each main account is translated. Currency translation rate type can also be set in multiple locations. 
-- Within the **Main accounts** page within General ledger there is an option for **Currency translation type** on the **Financial reporting** FastTab. 
+- Within the **Main accounts** page in General ledger there is an option for **Currency translation type** on the **Financial reporting** FastTab. 
 - You can also specify an override of a currency translation rate type for a legal entity which will overide the default behavior. 
 
 
@@ -103,9 +103,7 @@ Users can dynamically see the currency symbol, code, and description they have d
 - Currency code (@CurrencyCode)
 - Currency description (@CurrencyDescription)
 
-You can add the auto-text both in the Column Definition and in the Report Definition headers. Additionally, anywhere in a report where a currency symbol is used will update with the appropriate symbol for the currency from Dynamics. 
-
-Currency symbols are used in the following fields:
+You can add the auto-text both in the Column Definition and in the Report Definition headers. Additionally, anywhere in a report where a currency symbol is used will update with the appropriate symbol for the currency from Dynamics. Currency symbols are used in the following fields:
 
 - **Display currency symbol on first row** which is defined in the Report Definition
 - **Use currency format in this row** (CS), which is defined in the Row Definition
