@@ -38,7 +38,8 @@ This topic explains how to create payment packaging for AOS and deploy it in Dyn
 
 Before 10.0.10 release the payment packaging for AOS can be created from the Commerce SDK (previously known as Retail SDK) but staring from 10.0.10 AOS payment packaging can be created only using this new approach. Package created using this approach can be deployed in both Service Fabric and in IaaS environments.
 
-**One important change is previously from the Commerce SDK payment package can be created for both the AOS and commerce channel and cloud components (Commerce Scale unit) but going forward two separate package must be created one for AOS using the Dynamics 365 packaging model and other for the commerce channel and cloud components using the Commerce SDK.**
+> [!NOTE]
+> One important change is previously from the Commerce SDK payment package can be created for both the AOS and commerce channel and cloud components (Commerce Scale unit) but going forward two separate package must be created one for AOS using the Dynamics 365 packaging model and other for the commerce channel and cloud components using the Commerce SDK.
 
 To create payment package which can be deployed both in Dynamics 365 for Commerce service fabric deployments follow the below steps.
 
