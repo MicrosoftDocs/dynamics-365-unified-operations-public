@@ -62,20 +62,22 @@ Dynamics 365 Commerce uses Azure AD B2C to support user credential and authentic
 
     ![Link an existing Azure AD B2C Tenant to Azure Subscription](./media/B2CImage_3.png)
 
-1. Once the new Azure AD B2C directory is created (this may take a few moments), a link to the new directory will appear on the dashboard.
+1. Once the new Azure AD B2C directory is created (this may take a few moments), a link to the new directory will appear on the dashboard. This link will direct you to the "Welcome to Azure Active Directory B2C" page.
 
     ![Link to new AAD Directory](./media/B2CImage_4.png)
 
-This link will direct you to the "Welcome to Azure Active Directory B2C" page.
-
-    > [!NOTE]
-    > If you have multiple subscriptions within your Azure account or have set up the B2C tenant without linking to an active subscription, a **Troubleshoot** banner will direct you to link the tenant to a subscription.
+> [!NOTE]
+> If you have multiple subscriptions within your Azure account or have set up the B2C tenant without linking to an active subscription, a **Troubleshoot** banner will direct you to link the tenant to a subscription.
 
 ![Warning showing directory has no Active Subscription](./media/B2CImage_5.png)
 
 The link will provide the following options:
 
+[???]Image below needs to be converted to text[???]
+
 ![Options to link B2C Tenant to a Subscription](./media/B2CImage_6.png)
+
+[???]What is the purpose of the following procedure? Why is it an example?[???]
 
 For example, to switch directories to the location of your target Azure subscription, click on your account symbol and within the menu, select ‘Switch directory’
 
@@ -100,11 +102,11 @@ To create the B2C application, follow these steps.
 1. For **Include native client**, select **No** (the default value).
 1. Select **Create**.
 
-The following image shows
+The following image shows how to add a B2C application to your tenant.
 
 ![Adding a B2C application to your tenant](./media/B2CImage_7.png)
 
-The following image shows settings on the **Azure AD B2c - Applications \> New application** screen.
+The following image shows settings for the B2C application.
 
 ![Settings for the B2C application](./media/B2CImage_8.png)
 
@@ -138,7 +140,7 @@ The following image shows
 
 ![User Flows menu in Application settings](./media/B2CImage_9.png)
 
-The following image shows
+The following image shows how to select a user flow on the **Add User Flow** menu.
 
 ![Selecting a user flow in the Add User Flow menu](./media/B2CImage_10.png)
 
@@ -167,11 +169,11 @@ To create a sign up and sign in user flow policy, follow these steps.
 1. Select **Run user flow** to view the login domain for the policy. This will appear under **Select domain** (for example, fabrikam.b2clogin.com). 
 1. Close tab.
 
-The following image shows
+The following image shows sign up and sign In policy settings.
 
-![Sign Up and Sign In policy settings](./media/B2CImage_11.png "Sign Up and Sign In policy settings")
+![Sign Up and Sign In policy settings](./media/B2CImage_11.png)
 
-The following image shows
+The following image shows the **Run user flow** option in the policy flow.
 
 ![Run user flow option in policy flow](./media/B2CImage_23.png)
    
@@ -192,7 +194,7 @@ To create a profile editing user flow policy, follow these steps.
     - **User's Object ID** (**Return claim** only)
 1. Select **Create**.
 
-The following image shows
+The following image shows how to create the profile editing user flow.
 
 ![Create the Profile Editing user flow](./media/B2CImage_12.png)
 
@@ -214,7 +216,7 @@ To create a password reset user flow policy, follow these steps.
     - **User's Object ID**
 1. Select **Save**.
 
-The following image shows
+The following image shows how to set "Reset Password using mail address" in the password reset policy.
 
 ![Set "Reset Password using mail address" in Password Reset policy](./media/B2CImage_13.png)
 
@@ -260,19 +262,19 @@ To add and set up a social identity provider, follow these steps.
 - Select each “Identity Provider” that you have set up for your account
 - You may choose to test by clicking “Run user flow”. A new tab will display the login page with the new Identity Provider selection box shown:
 
-The following image shows
+The following image shows how to add a social identity provider to your application.
 
 ![Adding a Social Identity Provider to your application](./media/B2CImage_14.png)
 
-The following image shows
+The following image shows how to select the added social identity provider user flow from the **Identity Providers** menu.
 
 ![Select the added Identity Provider user flow in the 'Identity Providers' menu](./media/B2CImage_15.png)
 
-The following image shows
+The following image shows how to select each social identity provider to enable for your policy.
 
 ![Select each Social Identity Provider to enable for your policy](./media/B2CImage_16.png)
 
-The following image shows
+The following image shows an example of a default sign in screen with social identity provider sign-in button displayed.
 
 ![Example default login screen with Social Identity Provider sign-in button displayed](./media/B2CImage_17.png)
 
