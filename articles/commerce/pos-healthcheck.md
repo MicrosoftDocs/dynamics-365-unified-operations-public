@@ -84,7 +84,7 @@ Custom health checks can also be created to check devices not supported out-of-b
 
 ## Related articles
 
-- [Modern POS (MPOS) and Cloud POS trigger extensibility](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/modern-pos-trigger-extensibility)
+- [Modern POS (MPOS) and Cloud POS trigger extensibility](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/modern-pos-trigger-extensibility)
 
 
 
