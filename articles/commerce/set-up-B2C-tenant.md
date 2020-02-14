@@ -162,13 +162,14 @@ To create default user flow policies, follow these steps.
 | Surname                | Surname           |
 |                        | User’s Object ID  |
 
-    ![Sign Up and Sign In policy settings](./media/B2CImage_11.png "Sign Up and Sign In policy settings")
+
+![Sign Up and Sign In policy settings](./media/B2CImage_11.png "Sign Up and Sign In policy settings")
 
 6. Click “Create”
 7. Click the newly selected to verify
 8. Select “Run user flow” to view the login ‘domain’ for the policy, under the **select domain** header. (ex: fabrikam.b2clogin.com’. 
 
-    ![Run user flow option in policy flow](./media/B2CImage_23.png)
+![Run user flow option in policy flow](./media/B2CImage_23.png)
 
 9. Close tab
    
@@ -176,7 +177,7 @@ To create default user flow policies, follow these steps.
 
 1. In ‘Create a user flow’, select ‘profile editing’
 
-    ![Create the Profile Editing user flow](./media/B2CImage_12.png)
+![Create the Profile Editing user flow](./media/B2CImage_12.png)
 
 1. Enter a “Name” for your ‘Profile editing’ profile
 
