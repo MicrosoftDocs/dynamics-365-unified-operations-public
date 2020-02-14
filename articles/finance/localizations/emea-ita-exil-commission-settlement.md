@@ -77,6 +77,9 @@ By default commision settlement value is inherited from Account receivable param
 There is also the possibility of previewing the sales commission calculation from sales order either for open orders or invoiced  ( **General** tab/> **Related information**/> **Commission preview**).
 ![Preview commission transactions](media/emea-ita-exil-commission-preview.PNG)
 
+    > [!NOTE]
+    > A user can combine sales orders in single invoice If all sales orders for invoicing have the same **Commission settlement** value in sales order headers.
+
 ### Post
 
 When you post...
