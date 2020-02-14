@@ -266,7 +266,7 @@ Regardless of whether there are customizations in the code branches, the followi
     7. Run the Environment reprovisioning tool. (Find the latest version in the LCS Asset library, and deploy it by using the **Maintain** function.)
     8. Verify that the tool succeeded. The following query should show the URLs of all local development machines that were updated.
 
-        ```
+        ```sql
         select * from dbo.RETAILCHANNELPROFILEPROPERTY where ISSYSTEMRECORD = 1
         ```
 

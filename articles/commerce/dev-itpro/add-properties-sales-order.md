@@ -83,10 +83,12 @@ After you create an attribute group, you can assign it to your online store.
 ## Set the attribute on a sales order
 You can add the attribute to a sales order by adding business logic in the commerce runtime. Add the following code to add the attribute to the cart, save the cart, and then create a sales order from the cart.
 
-    var cart = orderManager.GetCart(cartId, accountNumber, false);
-    cart.AttributeValues.Add(new AttributeTextValue { Name = "GiftWrap", TextValue = "Yes" });
-    orderManager.SaveCart(cart);
-    orderManager.CreateOrderFromCart(...);
+```typescript
+var cart = orderManager.GetCart(cartId, accountNumber, false);
+cart.AttributeValues.Add(new AttributeTextValue { Name = "GiftWrap", TextValue = "Yes" });
+orderManager.SaveCart(cart);
+orderManager.CreateOrderFromCart(...);
+```
 
 ## Next steps
 After you create a sales order in the commerce runtime, you can view the new attribute.

@@ -232,7 +232,7 @@ The following procedure describes the configuration that is required to run the 
 
 If you are using the preview version of POS RSAT, after the installation of RSAT, add the following setting in the Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config configuration file. This file is located in main RSAT installation folder (usually C:\Program Files (x86)\Regression Suite Automation Tool).
 
-```Xml
+```xml
 <add key="RetailPos" value="true" />
 ```
 
@@ -247,9 +247,8 @@ If this setting is not used, Retail POS tab will not be shown on the **RSAT Sett
     + **Cloud POS URL** – Enter the URL of the Cloud POS environment where you want to run the test.
     + **Commerce Scale Unit URL** – Enter the Commerce Scale Unit URL that should be used for device activation, if the device hasn't already been activated.
 
-
-> [!NOTE]
-> The Cloud POS and Commerce Scale Unit URL can be obtained from Finance and Operations environment. Navigate to **Retail and Commerce > Channel setup > Channel profiles**. You can also obtain the URLs from the LCS environment page.
+        > [!NOTE]
+        > The Cloud POS and Commerce Scale Unit URL can be obtained from Finance and Operations environment. Navigate to **Retail and Commerce > Channel setup > Channel profiles**. You can also obtain the URLs from the LCS environment page.
    
    + **AAD user email** – Enter the email address of the Azure Active Directory (Azure AD) user that should be used for device activation. The Azure AD user must have permission to activate the device.
    + **AAD password** – Enter the password of the Azure AD user that should be used for device activation.

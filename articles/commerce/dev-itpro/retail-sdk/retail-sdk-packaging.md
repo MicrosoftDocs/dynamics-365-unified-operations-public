@@ -97,7 +97,7 @@ The following configuration settings are available in the Customization.settings
 
 **Example**
 
-```
+```Text
 ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\MyCrtExtension.dll"
 ```
 
@@ -105,7 +105,7 @@ ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\MyCrtExtensio
 
 **Example**
 
-```
+```Text
 ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\MyRetailServerExtension.dll"
 ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\MyRetailServerExtension2.dll"
 ```
@@ -114,7 +114,7 @@ ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\MyRetailServerEx
 
 **Example**
 
-```
+```Text
 ISV_RetailProxy_CustomizableFile Include="$(SdkReferencesPath)\MyRetailProxyExtension.dll"
 ```
 
@@ -122,7 +122,7 @@ ISV_RetailProxy_CustomizableFile Include="$(SdkReferencesPath)\MyRetailProxyExte
 
 **Example**
 
-```
+```Text
 ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\MyHardwareStationExtension.dll"
 ```
 
@@ -130,7 +130,7 @@ ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\MyHardwareSta
 
  **Example**
 
-```
+```Text
 ISV_CustomDatabaseFile_Upgrade_Custom Include="$(SdkRootPath)\Database\Upgrade\Custom\SqlUpdatev1.sql"
 ```
 
@@ -177,8 +177,6 @@ Before you use the package, you must update the following configuration files if
              <add name="ext.myCustomarea.myCustomKey2" value="myCustomValue2" />
         </settings>
     </commerceRuntimeExtensions>
-
-
 ```
 
 - **CommerceRuntime.MPOSOffline.Ext.config** – Register all your CRT extensions, dependent assemblies and extension Key Value pair configurations. The key name for the extension configuration values must be prefixed with "ext." as the CommerceRuntime initialization will enforce this convention and will not load otherwise, additional prefixes can be added to represent the sub-area they control. Ex: "ext.CusomStorageConfig.CustomKeyCart"
@@ -206,8 +204,6 @@ Before you use the package, you must update the following configuration files if
              <add name="ext.myCustomarea.myCustomKey2" value="myCustomValue2" />
         </settings>
     </commerceRuntimeExtensions>
-
-
 ```
 
 - **HardwareStation.Extension.config** – Register all your Hardware station extensions.
@@ -291,7 +287,7 @@ Some of the dependency packages and references have moved to NuGet packages to m
 
 To generate the commerce deployable package, open the MSBuild build Command Prompt window. (On the developer virtual machine, search for **msbuild** on the **Start** menu.) Then run the following command.
 
-```
+```Console
 msbuild /p:Configuration=Release
 ```
 

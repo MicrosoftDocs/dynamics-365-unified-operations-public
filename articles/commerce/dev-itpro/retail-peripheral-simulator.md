@@ -476,7 +476,7 @@ To submit a device so that it can be listed for compatibility with Commerce,  fo
 
 The following example shows the data that is included in the exported file.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>  
 <Report xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Commerce.VirtualPeripherals.Modules">  
    <CreationDateTime>05/27/2017 19:34:50</CreationDateTime>  
