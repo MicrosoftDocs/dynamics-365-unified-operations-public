@@ -5,7 +5,7 @@ title: Convert Dynamics AX 2012 content for Dynamics 365
 description: This topic describes how you can reuse content from Dynamics AX for your Dynamics 365 solution. 
 author: edupont04
 manager: AnnBe
-ms.date: 11/07/2019
+ms.date: 02/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Operations
 
 [!include [banner](../includes/banner.md)]
 
-If you have existing content from Dynamics AX 2012, then you can reuse that for Dynamics 365 Finance, Supply Chain Management, and Retail. However, you must transform the HTML files so that they can be used in the custom Help environment.  
+If you have existing content from Dynamics AX 2012, then you can reuse that for Dynamics 365 Finance, Supply Chain Management, and Commerce. However, you must transform the HTML files so that they can be used in the custom Help environment.  
 
 ## Converting Dynamics AX 2012 content
 
@@ -56,13 +56,15 @@ Microsoft has published a [Custom Help Toolkit](custom-help-toolkit.md) that inc
     <meta name="ms.search.industry" content="cross" />  
     ```
 
+### Running the script
+
 You can run the following command from a Command Prompt window, or you can run the script directly in Windows PowerShell.  
 
 ```powershell
     PowerShell.exe -File run_ax2012.ps1 "Original file location" "New file location"  
 ```
 
-The following metadata values are currently used or are reserved for use in indexing.  
+The following metadata is currently used or are reserved for use in indexing.  
 
 ```yaml
     <meta name="title" content="Title of file" />  
@@ -76,7 +78,7 @@ The following metadata values are currently used or are reserved for use in inde
     <meta name="ms.search.industry" content="cross" />  
 ```
 
-Here is a description of the metadata values:  
+The following table describes the metadata properties:  
 
 |Property  |Description  |
 |----------|-------------|
@@ -85,33 +87,35 @@ Here is a description of the metadata values:
 |ms.search.form | The value contains the Application Object Tree (AOT) name of a form. If a value is present, it’s used for context-sensitive search from the Help pane. |
 |ms.locale |This value indicates the language of the topic. It isn't currently used in the Dynamics 365 Help pane, but it might be used in the future.   |
 
-The following values are used in the Finance and Operations client and will be added to the custom implementation of the Help pane:  
+The following property is used in the Finance and Operations client and will be added to the custom implementation of the Help pane:  
 
 - ms.search.scope
 
-    The value determines which client a Help topic is shown in. One or more values are supported.
-    Values have the following meanings:
+    The value determines which client a Help topic is shown in. You can specify one or more values. The following table describes the values:
 
-    - Core – If this value is present, the topic appears in the Help pane. Otherwise, the topic doesn’t appear in the Help pane. This is set for the part of the Microsoft content that must always be available in the Help pane for users.
-    - Operations – Finance or Supply Chain Management topic.
-    - Retail – Retail topic
-    - Talent – Talent topic
+    |Value|Description|
+    |-----|-----------|
+    |Core|If this value is present, the topic appears in the Help pane. Otherwise, the topic doesn’t appear in the Help pane. </br>This is set for the part of the Microsoft content that must always be available in the Help pane for any user across all supported Dynamics 365 solutions.|
+    |Operations|Applies to solutions based on Dynamics 365 Finance or Supply Chain Management.|
+    |Retail    |Applies to solutions based on Dynamics 365 Commerce.|
+    |Human Resources  |Applies to solutions based on Dynamics 365 Human Resources.|
+    |Talent    |Applies to solutions based on Dynamics 365 Talent (Dynamics 365 Talent: Attract and Onboard apps are being retired. Learn more at [Retiring Dynamics 365 Talent: Attract and Onboard apps](https://community.dynamics.com/365/talent/b/dynamics365fortalent/posts/retiring-dynamics-365-talent-attract-and-onboard-apps).).|
 
-The following values are reserved for future use:
+The following properties are reserved for future use:
 
 - ms.search.region
 
-    In the future, this value will be used to limit the content that is shown to content that is tagged either as global or for the region of the implementation.
+    In the future, this property may be used to limit the content that is shown to content that is tagged either as global or for the region of the implementation.
 - ms.search.validFrom
 
-    In the future, this value will be used to limit the content that is shown to content for a product that was released on a given date or earlier.
+    In the future, this property may be used to limit the content that is shown to content for a product that was released on a given date or earlier.
 - ms.dyn365.ops.version
 
-    In the future, this value will be used to limit the content that is shown to content for a specific version of a product or earlier.
+    In the future, this property may be used to limit the content that is shown to content for a specific version of a product or earlier.
 
 - ms.search.industry
 
-    In the future, this value will be used to limit the content that is shown to content for a specific industry.
+    In the future, this property may be used to limit the content that is shown to content for a specific industry.
 
 ## See also
 

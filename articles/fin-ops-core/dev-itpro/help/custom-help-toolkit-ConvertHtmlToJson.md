@@ -5,7 +5,7 @@ title: Custom Help Toolkit
 description: This topic describes the components in the custom help toolkit for Finance and Operations apps. 
 author: edupont04
 manager: AnnBe
-ms.date: 02/04/2020
+ms.date: 02/14/2020
 ms.topic: article
 ms.service: dynamics-ax-platform
 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Operations
 
 [!include [banner](../includes/banner.md)]
 
-The custom help toolkit includes the **ConvertHtmlToJson** tool that you can use to convert HTML files that are generated with the [HTML From Repos Generator tool](custom-help-toolkit-HtmlFromRepoGenerator.md) to JSON files for use with the search indexing service.  
+The custom help toolkit includes the **ConvertHtmlToJson** tool that you can use to convert HTML files that are generated with the [HTML From Repos Generator tool](custom-help-toolkit-HtmlFromRepoGenerator.md) to JSON files for use with a search indexing service that connects your Help content with the in-product Help pane.  
 
 ## <a name="json"></a>Use the ConvertHtmlToJson tool to generate JSON files
 
@@ -45,7 +45,7 @@ When you run the ConvertHtmlToJson tool, you must specify the location of the HT
 Here is the syntax for ConvertHtmlToJson.exe:  
 
 ```
-ConvertHtmlToJson.exe -h <path> -j <path> -v <true|false>
+ConvertHtmlToJson.exe --h <path> -j <path> --v <true|false>
 ```
 
 Here is an explanation of the parameters:
@@ -56,14 +56,13 @@ Here is an explanation of the parameters:
 |j|Specifies the folder that the JSON files will be saved to.|
 |v|True to enable verbose logging; otherwise false.|
 
-### Examples
+## Examples
 
 The following example generates JSON files without verbose logging:
 
 ```
-HtmlLocaleChanger.exe -h D:\D365-Operations\de -j D:\D365-Operations\json
+HtmlLocaleChanger.exe --h D:\D365-Operations\de --j D:\D365-Operations\json
 ```
-
 
 ## See also
 

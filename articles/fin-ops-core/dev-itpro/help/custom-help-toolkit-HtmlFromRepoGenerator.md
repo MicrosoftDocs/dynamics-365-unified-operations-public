@@ -5,7 +5,7 @@ title: Generate HTML files based on Microsoft's GitHub repos
 description: This topic describes the HtmlFromRepoGenerator tool in the custom help toolkit for Finance and Operations apps. 
 author: edupont04
 manager: AnnBe
-ms.date: 02/04/2020
+ms.date: 02/14/2020
 ms.topic: article
 ms.service: dynamics-ax-platform
 
@@ -55,10 +55,10 @@ In the first version of the toolkit, this tool had the name ConsoleApp.exe but i
 Here is the syntax for HtmlFromRepoGenerator.exe:  
 
 ```
-HtmlFromRepoGenerator.exe -Json <Articles/> -Out <path> -ExternalText <text> [-DoNotClone <true|false>] [-Repo <URL>] [-RemoveGitFolder <true|false>] [-ReplaceUrl <URL>] [-LogsDir <.\logs>] [-EnRepo <URL>] [-EnOut <path>] [-Lng <language code>] [-?[-]]
+HtmlFromRepoGenerator.exe --Json <Articles/> --Out <path> --ExternalText <text> [--DoNotClone <true|false>] [--Repo <URL>] [--RemoveGitFolder <true|false>] [--ReplaceUrl <URL>] [--LogsDir <.\logs>] [--EnRepo <URL>] [--EnOut <path>] [--Lng <language code>] [--?[--]]
 ```
 
-Here is an explanation of the parameters:
+The following table provides an explanation of the parameters:
 
 |Parameter   |Description  |
 |------------|-------------|
@@ -80,41 +80,44 @@ The following additional parameters are used when the tool is run against the lo
 |Lng|Specifies the language value to use for ms.locale metadata in the resulting HTML files. The value must correspond to the value that is used in the Finance and Operations client’s language setting that the Help content is intended for. If this parameter is omitted, en-US is used as a default value. Use the Finance and Operations language name as a parameter. For more information, see [Language and locale descriptors in across product and Help](language-locale.md).|
 |Rtl|Set this parameter if the language uses right-to-left (RTL) formatting. Examples of RTL languages include Arabic and Hebrew.|
 
-### Examples
+## Examples
+
+> [!NOTE]
+> The Microsoft repos contain many files, so the process takes several minutes. If you run the tol against several localization repos, the process takes longer.
 
 The following example clones the en-US repo and generates HTML files for en-US.
 
 ```
-HtmlFromRepoGenerator.exe -json articles/ -out "D:\D365-Operations\en-US" -repo "https://github.com/MicrosoftDocs/Dynamics-365-unified-Operations-public" -externalText "(This is an external link)" -replaceUrl "https://docs.microsoft.com/en-us/dynamics365/supply-chain" -LogsDir D:\D365-Operations\logs\en-US
+HtmlFromRepoGenerator.exe --json articles/ --out "D:\D365-Operations\en-US" --repo "https://github.com/MicrosoftDocs/Dynamics-365-unified-Operations-public" --externalText "(This is an external link)" --replaceUrl "https://docs.microsoft.com/en-us/dynamics365/supply-chain" --LogsDir D:\D365-Operations\logs\en-US
 ```
 
 The following example uses the previously cloned en-US repo and generates HTML files for en-US.
 
 ```
-HtmlFromRepoGenerator.exe -json articles/ -out "D:\D365-Operations\en-US" -externalText "(This is an external link)" -replaceUrl "https://docs.microsoft.com/en-us/dynamics365/supply-chain" -LogsDir D:\D365-
+HtmlFromRepoGenerator.exe --json articles/ --out "D:\D365-Operations\en-US" --externalText "(This is an external link)" --replaceUrl "https://docs.microsoft.com/en-us/dynamics365/supply-chain" --LogsDir D:\D365-
 Operations\logs\en-US
 ```
 
 The following example clones both the de-DE and en-US repos, and generates HTML files for German.
 
 ```
-HtmlFromRepoGenerator.exe -json articles/ -out "D:\D365-Operations\de" -repo "https://github.com/MicrosoftDocs/Dynamics-365-Operations.de-de" -externalText "(This is an external link)" -EnRepo "https://github.com/MicrosoftDocs/Dynamics-365-unified-Operations-public" -EnOut "D:\D365-Operations\en-us" -replaceUrl "https://docs.microsoft.com/de-de/dynamics365/supply-chain" -lng "de" -LogsDir D:\D365-Operations\logs\de
+HtmlFromRepoGenerator.exe --json articles/ --out "D:\D365-Operations\de" --repo "https://github.com/MicrosoftDocs/Dynamics-365-Operations.de-de" --externalText "(This is an external link)" --EnRepo "https://github.com/MicrosoftDocs/Dynamics-365-unified-Operations-public" --EnOut "D:\D365-Operations\en-us" --replaceUrl "https://docs.microsoft.com/de-de/dynamics365/supply-chain" --lng "de" --LogsDir D:\D365-Operations\logs\de
 ```
 
 The following example clones the de-DE repo, uses the existing en-US repo, and then generates HTML files for the *de* client locale.
 
 ```
-HtmlFromRepoGenerator.exe -json articles/ -out "D:\D365-Operations\de" -repo "https://github.com/MicrosoftDocs/Dynamics-365-Operations.de-de" -externalText "(This is an external link)" -EnOut "D:\D365-Operations\en-us" -replaceUrl "https://docs.microsoft.com/de-de/dynamics365/supply-chain" -lng "de" -LogsDir D:\D365-Operations\logs\de
+HtmlFromRepoGenerator.exe --json articles/ --out "D:\D365-Operations\de" --repo "https://github.com/MicrosoftDocs/Dynamics-365-Operations.de-de" --externalText "(This is an external link)" --EnOut "D:\D365-Operations\en-us" --replaceUrl "https://docs.microsoft.com/de-de/dynamics365/supply-chain" --lng "de" --LogsDir D:\D365-Operations\logs\de
 ```
 
 The following example uses the existing de-DE and en-US repos, and then generates HTML files for German. Make sure that the de-DE repo is up to date if you use the existing repo.
 
 ```
-HtmlFromRepoGenerator.exe -json articles/ -out "D:\D365-Operations\de" -DoNotClone -externalText "(This is an external link)" -enOut "D:\D365-Operations\en-us" -replaceUrl "https://docs.microsoft.com/de-de/dynamics365/supply-chain" -lng "de" -LogsDir D:\D365-Operations\logs\de
+HtmlFromRepoGenerator.exe --json articles/ --out "D:\D365-Operations\de" --DoNotClone --externalText "(This is an external link)" --enOut "D:\D365-Operations\en-us" --replaceUrl "https://docs.microsoft.com/de-de/dynamics365/supply-chain" --lng "de" --LogsDir D:\D365-Operations\logs\de
 ```
 
 > [!IMPORTANT]
-> HtmlFromRepoGenerator.exe should not be run repeatedly on a cloned repo, because the folder that contains the files from your clone of the repository is already modified. Therefore, the files no longer contain the correct links that must be replaced. If you must rerun the tool, either let the tool re-clone the repo, or make sure that all local changes are reverted.
+> Do not run HtmlFromRepoGenerator.exe repeatedly on a cloned repo, because the folder that contains the files from your clone of the repository is already modified the first time you run the tool. This means that the files no longer contain any links that must be replaced. If you must rerun the tool, either let the tool re-clone the repo, or make sure that all local changes are reverted.
 
 <!--TODO: Figure out what that alert really means. What is a one-off task and what is a regular task?-->
 
