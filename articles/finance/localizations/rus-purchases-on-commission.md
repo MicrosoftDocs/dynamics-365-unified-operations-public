@@ -33,7 +33,7 @@ The following illustration shows the business process for registering
 intermediary deals. Rectangular elements are reflected in the system. Oval
 elements are present in the business process but aren't reflected in the system.
 
-![A screenshot of a cell phone Description automatically generated](media/38f98f0d22be35c057f19b152abae473.jpg)
+![](media/Purchases_on_commission_english.jpg)
 
 Create a sales agreement for a purchase by an agent
 ---------------------------------------------------
@@ -51,11 +51,9 @@ Create a sales agreement for a purchase by an agent
 
 5.  Specify other details, and then select **OK**.
 
-![](media/5b226776785efbb886d10f42b802ddee.jpg)
+    ![](media/3_Create_sales_agreement.jpg)
 
->   A screenshot of a cell phone Description automatically generated
-
-1.  On the **Sales agreements** page, switch to the **Header** view.
+6.  On the **Sales agreements** page, switch to the **Header** view.
 
 2.  On the **General** FastTab, in the **Document** section, in the **Commission
     agreement** field, select **Purchase by commissioner**.
@@ -68,9 +66,7 @@ Create a sales agreement for a purchase by an agent
 -   In the **Inventory profile** field, select the inventory profile that you
     created earlier.
 
-![](media/a07f826ca4b9ad8edce11851bbfb0655.jpg)
-
->   A screenshot of a cell phone Description automatically generated
+    ![](media/4_Sales_agreements.jpg)
 
 1.  On the Action Pane, on the **Sales agreement** tab, in the **Generate**
     group, select **Confirmation** to update status of the agreement to
@@ -92,7 +88,7 @@ Create inventory owners (suppliers) for a commissioner
 
 6.  Select **Save**.
 
-![A screenshot of a cell phone Description automatically generated](media/a96c64939892760858c60e2d1bfecf8f.jpg)
+![](media/5_Inventory_owners.jpg)
 
 Create inventory owners (principals) for a commissioner
 -------------------------------------------------------
@@ -110,7 +106,7 @@ Create inventory owners (principals) for a commissioner
 
 6.  Select **Save**.
 
-![A screenshot of a cell phone Description automatically generated](media/c6620a6ff5133333028219797d2035dc.jpg)
+![](media/6_Inventory_owners.jpg)
 
 Create a purchase order and update the facture on goods that are purchased for a principal
 ------------------------------------------------------------------------------------------
@@ -130,11 +126,9 @@ Create a purchase order and update the facture on goods that are purchased for a
     owner (supplier) that you created earlier. In this way, you identify the
     supplier on the report for the principal when the facture is reissued.
 
-![](media/424f308a99fb8fa2b22d4d14ef5981f9.jpg)
+    ![](media/7_All_purchase_orders.jpg)
 
->   A screenshot of a social media post Description automatically generated
-
-1.  Specify other purchase order parameters, and create a facture.
+5.  Specify other purchase order parameters, and create a facture.
 
 Create a sales order and generate a sales invoice for goods that are purchased for a principal
 ----------------------------------------------------------------------------------------------
@@ -152,9 +146,7 @@ Create a sales order and generate a sales invoice for goods that are purchased f
 4.  On the **Line details** FastTab, on the **Setup** tab, in the **Inventory**
     section, in the **Reservation** field, select **Automatic**.
 
-![](media/c6c2007f19416b71a018c44c0ef4352d.jpg)
-
->   A screenshot of a cell phone Description automatically generated
+![](media/8_Sales_order.jpg)
 
 1.  On the **Line details** FastTab, on the **Product** tab, in the **Tracking
     dimensions** section, make sure that the **Inventory profile** field is
@@ -208,9 +200,7 @@ Create and print a report for a principal, and reissue the seller's factures to 
     approve the appropriate lines of the seller's factures. To approve all the
     lines on the report, select **Approval \> Approve All**.
 
-![](media/5e79234ac3ec8ba334e0c413762aeae6.jpg)
-
->   A screenshot of a social media post Description automatically generated
+![](media/9_Report_for_principal.jpg)
 
 1.  Select **Facture \> Update facture** to generate reissued factures for the
     principal.
@@ -222,9 +212,7 @@ Create and print a report for a principal, and reissue the seller's factures to 
 
 3.  Specify other required details, and create the facture.
 
-![](media/59ec8e3bc4d01b5db462ecf11a2a836a.jpg)
-
->   A screenshot of a cell phone Description automatically generated
+![](media/10_Update_facture.jpg)
 
 1.  On the **Report for principal** page, follow these steps:
 
@@ -240,7 +228,7 @@ Create and print a report for a principal, and reissue the seller's factures to 
 1.  Select **Print** to open the **Report for principal to Microsoft Excel**
     dialog box, and then select **OK** to print the report for the principal.
 
-![A screenshot of a cell phone Description automatically generated](media/375742e9609f163720a96ad868a20e38.jpg)
+![](media/11_Отчет_коммиссионера.jpg)
 
 Print a facture accounting journal
 ----------------------------------
@@ -255,12 +243,12 @@ The **Issued** worksheet of the facture accounting journal shows the reissued
 vendor's factures. The information about the sellers is presented in columns 10
 through 12.
 
-![A close up of text on a white background Description automatically generated](media/25e30e650d3aa41218a014222d2723a3.jpg)
+![](media/12_Facture_accounting_journal_Part_1.jpg)
 
 The **Received** worksheet of the facture accounting journal shows the original
 seller's factures that were approved in the report for the principal.
 
-![A screenshot of a cell phone Description automatically generated](media/e1622b70f8716bf0ec219d03bfb12d41.jpg)
+![](media/13_Facture_accounting_journal_Part_2.jpg)
 
 Prepayments
 -----------
@@ -284,9 +272,7 @@ be included on the reports for the principals.
     row that has the column names, and then select **Add columns**. Select the
     check box for the **Kind of activity** column, and then select **Insert**.
 
-![](media/40d8f82a602058717aa1cd01ec1169b6.jpg)
-
->   A screenshot of a social media post Description automatically generated
+![](media/14_Customer_payments.jpg)
 
 1.  On the **Vendor payment journal** page, create a vendor prepayment, and then
     select **Lines**.
@@ -294,9 +280,7 @@ be included on the reports for the principals.
 2.  On the **Vendor payments** page, in the **Kind of activity** column, select
     **Commission agent**.
 
-![](media/6c657ca0055dfbe937746a748bd055c0.jpg)
-
->   A screenshot of a social media post Description automatically generated
+![](media/15_Vendor_payments.jpg)
 
 1.  Create a facture for the vendor prepayment.
 
@@ -320,16 +304,14 @@ be included on the reports for the principals.
     **Prepayments** tab, in the **Voucher** field, select the vendor prepayment
     voucher to include the prepayment on the report for the principal.
 
-![](media/a5929ee1448e71266b76412394194605.jpg)
+![](media/16_Report_for_principal.jpg)
 
 >   A screenshot of a social media post Description automatically generated
 
 1.  Select **Transactions** to view the allocated amount in the **Amount in
     reporting currency** field.
 
-![](media/ae5f5cbf002dcdd9431a97cb409bea58.jpg)
-
->   A screenshot of a social media post Description automatically generated
+![](media/17_Vendor_transactions.jpg)
 
 1.  On the **Report for principal** page, approve lines on the **Overview** tab
     and vouchers on the **Prepayments** tab, as described in the [Create and
@@ -351,7 +333,7 @@ principal](../rus-transactions-through-intermediary/rus-transactions-through-int
 section earlier in this topic. The report for the principal has two sections:
 one for shipments and one for prepayments.
 
-![A screenshot of a cell phone Description automatically generated](media/e5a0b0f803f3ee90d0aa82f1b13bd172.jpg)
+![](media/18_Отчет_коммиссионера_о_закупке_товара.jpg)
 
 ### Create a prepayment facture
 
@@ -366,22 +348,18 @@ one for shipments and one for prepayments.
 
 4.  Specify the date of the registration, and then select **OK**.
 
-![](media/7c5ebb9f8abe8b62d36b473290e8dbff.jpg)
-
->   A screenshot of a cell phone Description automatically generated
+![](media/19_Facture_create.jpg)
 
 1.  On the **Report for principal** page, on the **Prepayments** tab, select
     **Principal \> Facture** to view the registered principal's facture for
     prepayment.
 
-![](media/388aebc39b04c408cbdc5727241536ba.jpg)
-
->   A screenshot of a social media post Description automatically generated
+![](media/20_Facture_journal.jpg)
 
 1.  Select **Print \> Original** to print the original facture, or select
     **Print \> Copy** to print the facture copy.
 
-![A close up of a piece of paper Description automatically generated](media/4c4e39f5b278c63769b9a1a4d163f9c1.jpg)
+![](media/21_Счет-фактура.jpg)
 
 ### Create a facture accounting journal
 
@@ -400,13 +378,13 @@ The original factures on the delivery of goods from sellers can be allocated
 among the principals. The **Received** worksheet of the facture accounting
 journal reflects the original factures.
 
-![A screenshot of a cell phone Description automatically generated](media/bf268a73e38ca7c53fa06f8cb201c6e5.jpg)
+![](media/22_Facture_accounting_journal_Part_2.jpg)
 
 The **Issued** worksheet of the facture accounting journal reflects the reissued
 factures (that is, the allocated parts of sellers' factures). The information
 about the sellers is presented in columns 10 through 12.
 
-![A close up of text on a white background Description automatically generated](media/fc71cf3eb2e1acd3132f72addc667ae2.jpg)
+![](media/23_Facture_accounting_journal_Part_1.jpg)
 
 Find more details in the following topics:
 
