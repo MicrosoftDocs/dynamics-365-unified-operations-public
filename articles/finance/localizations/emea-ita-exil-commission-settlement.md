@@ -46,7 +46,7 @@ The field **Commission settlement** has two values:
 -	**On payment**, if the commissions are made during the payment process
 ## Set up commission calculation
 A user may additional setup of commission calculation for **On payment** commission in **Sales and marketing**/> **Commissions**/> **Commission calculation**.
- ![Account receivable parameters](media/emea-ita-exil-commission-%20calculation-setup.PNG)
+ ![Commission calculation setup](media/emea-ita-exil-commission-%20calculation-setup.PNG)
 If the **Payment thresholds** is set to **Yes** it is possible to specify two boundaries for commissions calculation:
 -	If the reached commission amount (in percentage on the reachable amount) is below the lower threshold, no commissions are accrued.
 -	When the upper bound is reached the whole reachable amount is accrued.
@@ -68,12 +68,11 @@ Consider the following payments:
 
 Another setup can be added to the single agent who belongs to a specify group. The setup of the employee has the priority in comparison to the setup on sales commission calculation.
 
+## Set commisiion settlement and preview commision transaction on Sales order page
 
-
-
-
-## Use...
-
+After sales order creation a user may update commission settlement in the sales order header (**Account receivable**/> **Orders**/> **Allsales orders**, **Sales order details** page /> **Header**, **Setup** FastTab).  
+![Commission type in sales order](media/emea-ita-exil-commission-sales-order.png)
+By default commision settlement value is inherited from Account receivable parameters ([Account receivable parameters](Set-up-commission -settlement-by-default.md) ).
 ### Post
 
 When you post...
