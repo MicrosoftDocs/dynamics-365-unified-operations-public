@@ -114,52 +114,55 @@ Azure data lake combines BYOD and Entity store
 Customers use a combination of Analytical workspaces (based on Entity store) as
 well as BYOD for different scenarios.
 
+<to do: add the image \EntityStore-or-BYOD-PPT>
+
 ![](media/642f61ee6087e2ccda71d7ad90e64005.png)
 
- 
+Azure Data Lake combines both these services into a single service that offers "best of both worlds" as follows
+ 
+•	Customers can bring their own Azure Data Lake (ie. Azure Data Lake in their own subscription) and integrate with F&O. F&O will leverage your own data lake to store Entity store data and operate Analytical workspaces. Analytical workspaces continue to work as before.
+ 
+•	Entity store (staged in your Azure Data lake), provides a set of simplified (de-normalized) data structures for easier reporting. Now, your users can be given direct access to data best suited for creating their own reports with a tool of their choice.
+ 
+•	As opposed to exporting data (with BYOD), customers can choose the data they want to be staged in the Azure Data Lake. Data feed service (part of F&O services) keeps the data fresh in the Data Lake.
+ 
+•	Customers can bring their own data into the Data Lake to augment the data provided by F&O. This capability enables easy data mash-up scenarios in the Data Lake.
+o	Using hundreds of ready-made connectors available in tools such as PowerBI data flows and Azure Data factory, data from many external sources can be easily ingested into the data lake
+o	Historical and legacy data (often inherited as a part of transitioning into F&O) can be directly ingested into the Data lake.
+o	Data lakes provide options to ingest non-business data - for an example, device data can be easily ingested into the data lake.
+ 
+•	Cloud based services enable both power users as well as developers to consume this data.
+ 
+  
+ 
+  
+Common Data Model folders
+Data is stored in Azure Data Lake to comply with Common Data Model (CDM) folder standard. This means
+•	Data staged ion Azure Data Lake by F&O is organized into a set of folders 
+•	CDM folders contain metadata definitions in addition to data files - metadata definitions are kept in model files in accordance with the standard specified by CDM language
+•	Presence of metadata (and complying with CDM folder standard) enables Azure and other services to read and transform this data.
 
-Azure Data Lake combines both these services into a single service that offers
-"best of both worlds" as follows
+CDM folder structure form F&O is shown below
 
- 
+ 
 
--   Customers can bring their own Azure Data Lake (ie. Azure Data Lake in their
-    own subscription) and integrate with F&O. F&O will leverage your own data
-    lake to store Entity store data and operate Analytical workspaces.
-    Analytical workspaces continue to work as before.
+For more information on CDM in Azure Data lake see here: https://docs.microsoft.com/en-us/common-data-model/data-lake
+ 
+For an example,
+•	You can attach a CDM folder into PowerBI dataflows as a reference Dataflow. You can work with PowerBI data flows and further re-shape the data, or to create PowerBI datasets and reports
+•	You can use Azure Data Factory or other data transformation tools to further shape the data
+ 
+Similar to F&O, other services (including CDS), Azure IoT as well as a host of third-party tools and service can understand and work with data in CDM folders. The list of services is growing. Following are a few examples
 
->    
+Common Data Service enables exporting data to your own Azure Data Lake
+https://powerapps.microsoft.com/en-us/blog/exporting-cds-data-to-azure-data-lake-preview/ 
 
--   Entity store (staged in your Azure Data lake), provides a set of simplified
-    (de-normalized) data structures for easier reporting. Now, your users can be
-    given direct access to data best suited for creating their own reports with
-    a tool of their choice.
+Power users can transform data in Azure Data Lake using CDS Data Flows. See the following document for more details  
+https://docs.microsoft.com/en-us/common-data-model/data-lake
 
- 
 
--   As opposed to exporting data (with BYOD), customers can choose the data they
-    want to be staged in the Azure Data Lake. Data feed service (part of F&O
-    services) keeps the data fresh in the Data Lake.
 
->    
 
--   Customers can bring their own data into the Data Lake to augment the data
-    provided by F&O. This capability enables easy data mash-up scenarios in the
-    Data Lake.
 
-    -   Using hundreds of ready-made connectors available in tools such as
-        PowerBI data flows and Azure Data factory, data from many external
-        sources can be easily ingested into the data lake
+ 
 
-    -   Historical and legacy data (often inherited as a part of transitioning
-        into F&O) can be directly ingested into the Data lake.
-
-    -   Data lakes provide options to ingest non-business data - for an example,
-        device data can be easily ingested into the data lake.
-
- 
-
--   Cloud based services enable both power users as well as developers to
-    consume this data.
-
- 
