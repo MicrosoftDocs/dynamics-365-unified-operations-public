@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up an B2C tenant in Commerce
+title: Set up a B2C tenant in Commerce
 description: This topic describes how to set up your Azure Active Directory (Azure AD) business-to-consumer (B2C) tenants for user site authentication in Dynamics 365 Commerce.
 author: BrianShook
 manager: annbe
@@ -28,13 +28,11 @@ ms.dyn365.ops.version:
 
 ---
 
-# Set up an AAD B2C tenant in Commerce
+# Set up a B2C tenant in Commerce
 
 [!include [banner](includes/banner.md)]
 
 This topic describes how to set up your Azure Active Directory (Azure AD) business-to-consumer (B2C) tenants for user site authentication in Dynamics 365 Commerce.
-
-This topic covers the setup and configuration of your Azure AD B2C tenant and utilizing it in your Dynamics 365 Commerce solution. You will learn how to create your Azure AD (AAD) B2C tenant in the Azure Portal as well as configure the tenant for your Commerce environment.
 
 ## Overview
 
@@ -95,9 +93,6 @@ Now that the B2C tenant has been created, you will create a B2C application with
 To create the B2C application, follow these steps.
 
 1. Select **Applications** and then select **Add**.
-
-    ![Adding a B2C application to your tenant](./media/B2CImage_7.png)
-
 1. Under **Name**, enter the name of the desired AAD B2C application.
 1. Under **Web App/Web API**, for **Include web app / web API** select **Yes**.
 1. For **Allow implicit flow** select **Yes** (the default value).
@@ -105,9 +100,13 @@ To create the B2C application, follow these steps.
 1. For **Include native client**, select **No** (the default value).
 1. Select **Create**.
 
+The following image shows
+
+![Adding a B2C application to your tenant](./media/B2CImage_7.png)
+
 The following image shows settings on the **Azure AD B2c - Applications \> New application** screen.
 
-![Settings for the B2C application](./media/B2CImage_8.png "Settings for the B2C Application")
+![Settings for the B2C application](./media/B2CImage_8.png)
 
 ### Format reply URLs
 
@@ -141,7 +140,7 @@ The following image shows
 
 The following image shows
 
-![Selecting a user flow in the Add User Flow menu](./media/B2CImage_10.png "Selecting a user flow in the Add User Flow menu")
+![Selecting a user flow in the Add User Flow menu](./media/B2CImage_10.png)
 
 ### Create a sign up and sign in user flow policy
 
@@ -221,59 +220,71 @@ The following image shows
 
 ## Add social identity providers (Optional)
 
-Identity Providers allow for users to utilize their own social accounts as the authentication protocol. Adding multiple identity provider logins are optional for Dynamics 365 Commerce. 
+Social identity providers allow users to use their social accounts for authentication. Adding social identity provider authentication is optional in Dynamics 365 Commerce. 
 
-If not added, the default Azure AD B2C profiles will be the main profiles for your userbase. Users will select their own username (email address of their preference) and set a password. Azure AD B2C will perform the direct authentication of the user. 
+If social identity provider authentication is not added, the default Azure AD B2C profiles will be the main profiles for your user base. Users will select their own username (their preferred email address) and set a password. Azure AD B2C will authenticate users directly. 
 
-If a user utilizes one of the Identity Providers you choose to offer below; an entity is still created in the Azure AD B2C tenant- but Azure AD B2C will authenticate the user’s login against the Identity Provider.
+If social identity provider authentication is added and a user chooses one of the social identity providers offered, an entity is still created in the Azure AD B2C tenant. Azure AD B2C will authenticate the user’s login against the social identity provider.
 
 > [!NOTE]
-> The identity provider login creates a record in the B2C Tenant; but in a different format (as it will call the external Social Identity Provider reference for authentication). The end user can use the same email address across Social Identity Providers, meaning the email username for logins may not be unique to the tenant (Azure AD B2C will enforce unique email only on the B2C Local accounts).
+> The identity provider sign in creates a record in the B2C tenant, but in a different format since it will call the external social identity provider reference for authentication. The user can use the same email address across social identity providers, meaning that the email username used for authentication may not be unique to the tenant. Azure AD B2C will enforce users having a unique email address only on local B2C accounts.
 
-To set up a social identity provider, follow these steps.  
+Before you can add a social identity provider for authentication, you must go to the identity provider's portal and set up an identity provider application as instructed in the Azure AD B2C documentation. A list of links to the documentation is provided below.
 
-1. Go to Identity Providers
-2. Add (directs to ‘Add identity provider’ screen):
+- [Amazon](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-setup-amzn-app)
+- [Azure AD (Single Tenant)](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-setup-oidc-azure-active-directory)
+- [Microsoft Account](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-setup-msa-app)
+- [Facebook](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-setup-fb-app)
+- [GitHub](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-setup-github-app)
+- [Google](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-setup-goog-app)
+- [LinkedIn](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-setup-li-app)
+- [OpenID Connect](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-setup-oidc-idp)
+- [Twitter](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-setup-twitter-app)
 
-   - Name (this name will be displayed to end users in your sign-in sign-up screen)
-   - Select the ‘Identity provider type’ from the Social Identity Providers menu provided
-   - Click “Ok”
-   -  Go to the Identity Provider’s portal and set up an Identity Provider application as instructed in the Azure AD B2C Documentation for the Identity Provider you are adding. Links on Azure AD B2C Documentation for each supported are found here:
+To add and set up a social identity provider, follow these steps.  
 
-		- [Amazon](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-setup-amzn-app)
-		- [Azure AD (Single Tenant)](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-setup-oidc-azure-active-directory)
-		- [Microsoft Account](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-setup-msa-app)
-		- [Facebook](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-setup-fb-app)
-		- [GitHub](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-setup-github-app)
-		- [Google](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-setup-goog-app)
-		- [LinkedIn](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-setup-li-app)
-		- [OpenID Connect](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-setup-oidc-idp)
-		- [Twitter](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-setup-twitter-app)
-  -  Now select the Identity provider’s portal and “Set up the social identity provider”
+1. In the Azure portal, navigate to **Identity Providers**.
+1. Select **Add**. The **Add identity provider** screen appears.
+1. Under **Name**, enter the name to be displayed to users on your sign in screen.
+1. Under **Identity provider type**, select an identity provider from the list.
+1. Select **OK**.
+1. Select **Set up this identity provider** to access the **Set up the social identity provider** screen.
+1. Under **Client ID**, enter the client ID as obtained from the identity provider application setup.
+1. Under **Client secret**, enter the client secret as obtained from the identity provider application setup.
+
+
+[???] Where does this step come from?[???]
+3. Attach User Flow for sign in sign up policies
+
+-  Navigate to **Azure AD B2C – User flows (policies) > {your sign-in sign-up policy} > Identity providers**
+- Select each “Identity Provider” that you have set up for your account
+- You may choose to test by clicking “Run user flow”. A new tab will display the login page with the new Identity Provider selection box shown:
+
+The following image shows
 
 ![Adding a Social Identity Provider to your application](./media/B2CImage_14.png)
 
-Be sure to use the ‘Client ID’ and ‘Client secret’ as obtained in the above setup steps per identity provider chosen
-
-3. Attach User Flow for sign in sign up policies
+The following image shows
 
 ![Select the added Identity Provider user flow in the 'Identity Providers' menu](./media/B2CImage_15.png)
 
--  Navigate to **Azure AD B2C – User flows (policies) > {your sign-in sign-up policy} > Identity providers**
-
-- Select each “Identity Provider” that you have set up for your account
+The following image shows
 
 ![Select each Social Identity Provider to enable for your policy](./media/B2CImage_16.png)
 
-- You may choose to test by clicking “Run user flow”. A new tab will display the login page with the new Identity Provider selection box shown:
+The following image shows
 
 ![Example default login screen with Social Identity Provider sign-in button displayed](./media/B2CImage_17.png)
 
 ## Update headquarters with the new AAD B2C information
 
-Once the above Azure AD B2C provisioning steps are completed, the Azure AD B2C application must be registered in your Dynamics environment.
+Once the Azure AD B2C provisioning steps above are completed, the Azure AD B2C application must be registered in your Dynamics environment.
 
-In Dynamics, navigate to **Retail \> Shared Parameters**
+To update headquarters with the new AAD B2C information, follow these steps.
+
+1. In Dynamics, navigate to **Retail and Commerce \> Shared Parameters**
+
+[???] Section below needs clarification/investigation[???]
 
 **Under <u>Identity Provider</u>:**
 
@@ -307,6 +318,8 @@ Additionally, users must **Disable Manual Number Sequence generation**.
 
 ## Additional B2C information
 
+[???]Intro here - what is this info and why do we need it?[???]
+
 ### Customer migration
 
 If considering migrating customer records from a previous Identity Provider platform, please work with the Dynamics 365 Commerce team to review your customer migration needs.
@@ -326,6 +339,8 @@ In the Users section of your B2C tenant; a secondary admin account can be establ
 Utilize the default ‘b2clogin.com’ domain (default). This part of the URL will be shown for login or reply URLs; viewable in the browser by users.
 
 ## Provide Commerce with the B2C application information
+
+[???]Needs a rewrite[???]
 
 Once Setup of the Azure AD B2C Tenant is complete, provide the Commerce Team with the below details. These data points collected will be used in LCS when provisioning your environment.
 
