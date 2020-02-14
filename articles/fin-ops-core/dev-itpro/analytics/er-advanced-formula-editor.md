@@ -164,6 +164,16 @@ Currently, different colors are used to highlight the following parts of express
 
 [![ER formula editor](./media/ER-AdvEditor-SyntaxColorization.png)](./media/ER-AdvEditor-SyntaxColorization.png)
 
+## Limitations
+
+It is currently supported for the following web browsers:
+
+-   Chrome
+-   Edge
+-   Firefox
+-   Opera
+-   Safari
+
 ## Additional resources
 
 - [Electronic reporting (ER) overview](general-electronic-reporting.md)
