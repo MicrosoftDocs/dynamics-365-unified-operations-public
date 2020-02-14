@@ -253,7 +253,7 @@ prepayment facture that is created.
     >   row that has the column names, and then select **Add columns**. Select the
     >   check box for the **Kind of activity** column, and then select **Insert**.
 
-   ![](media/33_Customer_payments.jpg)
+       ![](media/33_Customer_payments.jpg)
 
 3.  On the **Vendor payment journal** page, create a vendor prepayment that has
     a facture, and then select **Lines**.
@@ -353,7 +353,7 @@ one for shipments and one for prepayments.
 9.  Select **Print \> Original** to print the original facture, or select
     **Print \> Copy** to print the facture copy.
 
-    ![](media/41_Счет-фактура.jpg)
+![](media/41_Счет-фактура.jpg)
 
 ### Create a facture accounting journal
 
@@ -381,7 +381,7 @@ Review the owner that is assigned to an agreement
 4.  Select **Transaction details**. On the **Inventory dimensions** FastTab, you
     can see the owner and the inventory profile.
 
-    ![](media/43_Transaction_details.png)
+![](media/43_Transaction_details.png)
 
 The settings that are described here let you track the commission goods by the
 owner of the goods according to the agreement.
