@@ -149,6 +149,7 @@ Follow these steps to run the VM from Hyper-V Manager.
 6. Start the Batch Manager Service. This step is required if you're running batch jobs or workflows.
    1.  Open a **Command Prompt** window as an administrator.
    2.  Type **net start DynamicsAxBatch**, and then press Enter.
+7. [Apply updates](../../migration-upgrade/upgrade-latest-platform-update.md#apply-a-platform-update-to-environments-that-are-not-connected-to-lcs) as needed.
 
    You can also start the service from the **Services** window.
 
