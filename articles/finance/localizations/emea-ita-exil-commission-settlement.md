@@ -40,11 +40,13 @@ Before you can use commission settlement on payment, the following prerequisites
 
 ## Set up commission settlement by default
 In the Account receivable parameters (**Account receivable**/> **Setup**/> **Account receivable parameters**, tab **Settlement**, FastTab **Other**) set up **Commission settlement** method which will be used when creating sales order by default. 
+ ![Account receivable parameters](media/emea-ita-exil-commission-setup-parameters.PNG)
 The field **Commission settlement** has two values:
 -	**On invoice**, if the commissions are made during the invoice process
 -	**On payment**, if the commissions are made during the payment process
 ## Set up commission calculation
 A user may additional setup of commission calculation for **On payment** commission in **Sales and marketing**/> **Commissions**/> **Commission calculation**.
+ ![Account receivable parameters](media/emea-ita-exil-commission-%20calculation-setup.PNG)
 If the **Payment thresholds** is set to **Yes** it is possible to specify two boundaries for commissions calculation:
 -	If the reached commission amount (in percentage on the reachable amount) is below the lower threshold, no commissions are accrued.
 -	When the upper bound is reached the whole reachable amount is accrued.
