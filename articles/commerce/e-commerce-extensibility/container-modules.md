@@ -5,7 +5,7 @@ title: Container modules
 description: Container modules help you control the layout when you build complex modules or pages out of small component modules. 
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 02/07/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -41,7 +41,7 @@ Configuration settings can also be exposed to page authors. In this way, page au
 
 Container modules are created just like regular modules. However, in the MODULE\_NAME.definition.json file, you must change the **$type** value as shown in the following example.
 
-```
+```json
 "$type": "containerModule"
 ```
 
@@ -66,8 +66,6 @@ Like layout container modules, page container modules can define named slots tha
 [Add module configuration fields](add-module-config-fields.md)
 
 [Preview and debug a module](test-module.md)
-
-[Debug modules](debug-modules.md)
 
 [Test modules by using module mocks](test-module-mock.md)
 

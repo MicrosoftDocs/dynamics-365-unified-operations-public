@@ -54,7 +54,7 @@ To obtain support for Commerce, use the resources in the following table. These 
 <tbody>
 <tr>
 <td>Ask the community.</td>
-<td>Go to the <a href="https://community.dynamics.com/365/retail">Dynamics 365 Retail</a> community page to find help with your questions from the Dynamics 365 community.</td>
+<td>Go to the <a href="https://community.dynamics.com/365/retail">Dynamics 365 Community</a> page to find help with your questions from the Dynamics 365 community.</td>
 </tr>
 <tr>
 <td>Use the Issue search tool.</td>

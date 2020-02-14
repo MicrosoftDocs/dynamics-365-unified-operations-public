@@ -5,6 +5,8 @@
     items:
     - name: What's new or changed in Human Resources
       href: hr-admin-whats-new.md
+    - name: February 7, 2020
+      href: hr-whats-new-2020-02-07.md
     - name: February 3, 2020
       href: hr-whats-new-2020-02-03.md 
   - name: Administrator Guide
@@ -29,6 +31,8 @@
         href: hr-admin-integration-choose-technology.md
       - name: Configure Common Data Service integration
         href: hr-admin-integration-common-data-service.md
+      - name: Common Data Service entities
+        href: hr-developer-entities.md
       - name: Configure integration with Finance
         href: hr-admin-integration-finance.md
       - name: Configure integration with Dayforce
@@ -133,7 +137,7 @@
       href: hr-developer-overview.md
     - name: Extend with Power Apps and Power Automate
       href: hr-developer-power-apps.md
-    - name: Human Resources entities in Common Data Service
+    - name: Common Data Service entities
       href: hr-developer-entities.md
     - name: Custom fields
       href: hr-developer-custom-fields.md

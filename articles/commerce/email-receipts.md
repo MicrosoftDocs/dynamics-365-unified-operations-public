@@ -5,7 +5,7 @@ title: Send email receipts from Modern POS (MPOS)
 description: In Modern Point of Sale (MPOS), you can send receipt emails when a transaction is tendered at the point of sale (POS).  
 author: jashanno
 manager: AnnBe
-ms.date: 06/05/2018
+ms.date: 02/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -55,7 +55,7 @@ To send email receipts, you must configure a Simple Mail Transfer Protocol (SMTP
 
 ### Set email receipt options for a customer
 
-1. Select **Retail and Commerce &gt; Customers &gt; All customers**.
+1. Go to **Retail and Commerce &gt; Customers &gt; All customers**.
 2. On the **All customers** list page, select a customer, and then select **Edit**.
 3. On the customer details page, on the **Commerce** FastTab, in the **Receipt option** field, select an option:
 
@@ -67,22 +67,22 @@ To send email receipts, you must configure a Simple Mail Transfer Protocol (SMTP
 
 ### Set up an email receipt profile
 
-1. Select **Retail and Commerce &gt; Channel setup &gt; POS setup &gt; POS profiles &gt; Receipt profiles**.
-2. Press Ctrl+N to create a receipt profile.
+1. Go to **Retail and Commerce &gt; Channel setup &gt; POS setup &gt; POS profiles &gt; Receipt profiles**.
+2. Press **Ctrl+N** to create a receipt profile.
 3. Enter values in the **Receipt profile ID** and **Description** fields.
 4. On the **General** FastTab, select **Add** to add a receipt type.
 5. Select **Receipt** as the receipt type, and select the receipt format to use for email receipts.
 
 ### Add an email receipt profile to the functionality profile
 
-1. Select **Retail and Commerce &gt; Channel setup &gt; POS setup &gt; POS profiles &gt; Functionality profiles**.
+1. Go to **Retail and Commerce &gt; Channel setup &gt; POS setup &gt; POS profiles &gt; Functionality profiles**.
 2. Select **Edit**.
 3. On the **General** FastTab, in the **Receipt profile ID** field, specify an email receipt profile.
 
 ### Set up an email template for receipts
 
-1. Select **Organization administration &gt; Setup &gt; Email templates**.
-2. Press Ctrl+N to create a template.
+1. Go to **Organization administration &gt; Setup &gt; Organization email templates**.
+2. Press **Ctrl+N** to create a template.
 3. On the **Overview** tab, complete the following fields:
 
     - In the **Email ID** field, enter **EmailRecpt**.
@@ -96,10 +96,22 @@ To send email receipts, you must configure a Simple Mail Transfer Protocol (SMTP
     - Make sure that the **Email ID** field is set to **EmailRecpt**.
     - In the **Subject** field, enter a title for the email receipts.
     - In the **Language** field, specify the language.
-    - In the **Email** field, enter **%message%**.
-    - If you want the messages that are sent to include more than just the receipt, select **Email message**, and fill in the template for the body of the email messages. If you want the receipt to appear in MPOS, insert the placeholder **%message%**.
+   -   **Email**- Insert the following string:
+
+
+    ``` xml
+    <pre>
+    %message%
+    </pre>
+    ```
+
+-   If you want to have more than just the receipt in the message, select **E-mail message** to fill out the template for the body of the email messages to be sent. The placeholder *%message%.* is used to insert the receipt from MPOS. 
 
     The **%message%** placeholder is the only placeholder that will be replaced when MPOS receipts are sent. If you want more placeholder options, you must create a customization on the MPOS side.
+
+It's a best practice to put the HTML content in a text editor, such as Notepad, and save it as a .txt file before uploading. This will help to preserve receipt alignment and reduce header and footer space in the emailed receipt.
+
+The logo and bar code from the printed receipt will not be included in the emailed receipt version. To include the logo, create a generic HTML email template and embed the placeholder. Including bar codes in the emailed receipt requires customization. 
 
 5. Depending on the settings that you configured, you must run the appropriate distribution schedule jobs to synchronize the changes to MPOS.
 

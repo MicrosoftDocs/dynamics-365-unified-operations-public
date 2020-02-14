@@ -32,7 +32,6 @@ ms.dyn365.ops.version: 10.0.5
 
 # Product recommendations overview
 
-
 [!include [banner](includes/banner.md)]
 
 Microsoft Dynamics 365 Commerce can be used to show product recommendations on the e-Commerce website and point of sale (POS) device. Product recommendations are items that a customer might be interested in. The recommendations are based on the purchase trends of other customers in online and brick-and-mortar stores.
@@ -49,6 +48,7 @@ Product recommendations are available for the following scenarios:
 - **On any store page for browsing or landing page in e-Commerce:** If customers or store associates visit a store page, the recommendation engine can suggest products in the **New**, **Best Selling**, and **Trending** lists.
 - **On the Product details page:** If customers or store associates visit a **Product details** page, the recommendation engine suggests additional items that are also likely to be purchased. These items appear in the **People also like** list.
 - **On the Transaction page or the checkout page:** The recommendation engine suggests items, based on the whole list of items in the basket. These items appear in the **Frequently bought together** list.
+- **Personalized recommendations:** Merchandizers can provide signed-in customers a personalized **picks for you** list, in addition to new functionality that allows for existing list scenarios to be personalized based on that customer. To learn more, please see the feature documenation: [enable personalized recommedations.](personalized-recommendations.md)
 
 ## Recommendation service
 
@@ -60,6 +60,10 @@ Product recommendations use the Recommendations machine learning technologies in
 ## Additional resources
 
 [Enable product recommendations](enable-product-recommendations.md)
+
+[Enable personalized recommendations](personalized-recommendations.md)
+
+[Product collection module overview](product-collection-module-overview.md)
 
 [Create curated product recommendation lists](create-editorial-recommendation-lists.md)
 

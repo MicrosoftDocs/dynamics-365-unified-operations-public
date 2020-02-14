@@ -5,7 +5,7 @@ title: Channel database extensions
 description: This topic explains how to extend the channel database.
 author: mugunthanm
 manager: AnnBe
-ms.date: 01/13/2020
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-retail
@@ -125,10 +125,24 @@ CREATE VIEW [ext].[CONTOSORETAILSTOREHOURSVIEW] AS
 2. All the extension tables should have grant permission on **UserRole** and **DeployExtensibilityRole**.
 
     ```sql
-    GRANT EXECUTE ON [ext].[EXTTABLENAME] TO [DeployExtensibilityRole];
-        GO
-        GRANT EXECUTE ON [ext].[EXTTABLENAME] TO [UsersRole];
-        GO
+    --Tables:
+
+    GRANT SELECT, INSERT, UPDATE, DELETE ON OBJECT::[ext].[RETAILCUSTPREFERENCE] TO [UsersRole]
+    GO
+    
+    GRANT SELECT, INSERT, UPDATE, DELETE ON OBJECT::[ext].[RETAILCUSTPREFERENCE] TO [DeployExtensibilityRole]
+    GO
+    
+    --Stored procedures: 
+    
+    GRANT EXECUTE ON [ext].[EXTSTOREDPROCEDURE] TO [UsersRole];
+    GO
+    
+    GRANT EXECUTE ON [ext].[EXTSTOREDPROCEDURE] TO [PublishersRole];
+    GO
+    
+    GRANT EXECUTE ON [ext].[EXTSTOREDPROCEDURE] TO [DeployExtensibilityRole];
+    GO
     ```
 
 3. Grant **DataSyncUsersRole** permission if your table is going to send or eceive data from HQ.

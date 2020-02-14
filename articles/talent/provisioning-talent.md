@@ -51,6 +51,10 @@ After you've created an LCS project, you can provision Talent into an environmen
 
 1. In your LCS project, select the **Talent App Management** tile.
 2. Indicate whether this is a Sandbox or Production instance of Talent. Early preview features may be available in Sandbox instances to allow for early feedback and testing. 
+
+    > [!NOTE]
+    > The Talent instance type cannot be changed once set. Verify the correct instance type is selected before continuing.
+
     > [!NOTE]
     > The Talent instance type is separate from the instance type of the Microsoft Power Apps environment, which you set in the Power Apps Admin center.
 3. Select the **Include Demo Data** option if you want your environment to include the same demo data set used in the Talent Test Drive experience. This is beneficial for long-term demo or training environments, and should never be used for production environments.  Note that you must choose this option upon initial deployment. You cannot update an existing deployment later.

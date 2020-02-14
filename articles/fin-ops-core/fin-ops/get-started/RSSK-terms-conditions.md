@@ -107,7 +107,7 @@ applicable copyright law expressly permits doing so.
 **PACKAGE MANAGERS.** The software includes package managers that give you the option to download other Microsoft and third party software packages to use with your customization packages. Those packages obtained through a package manager are under their own licenses, and not this agreement. Microsoft does not distribute, license, or provide any warranties for any of the third party packages.
 
 
-**THIRD PARTY SOFTWARE.** The software may include third party applications that are licensed to you under this agreement or under their own terms. License terms, notices, and acknowledgements, if any, for the third party applications may be accessible online at <http://aka.ms/thirdpartynotices> or in an accompanying notices file. Even if such applications are governed by other agreements, the disclaimer, limitations on, and exclusions of damages below also apply to the extent allowed by applicable law.
+**THIRD PARTY SOFTWARE.** The software may include third party applications that are licensed to you under this agreement or under their own terms. License terms, notices, and acknowledgements, if any, for the third party applications may be accessible online at <https://aka.ms/thirdpartynotices> or in an accompanying notices file. Even if such applications are governed by other agreements, the disclaimer, limitations on, and exclusions of damages below also apply to the extent allowed by applicable law.
 
 **TIME-SENSITIVE SOFTWARE.**
 
@@ -148,7 +148,7 @@ stand-alone hosted solution for others to use (except as set forth in
 Section 1(b)), or transfer the software or this agreement to any third
 party.
 
-**EXPORT RESTRICTIONS.** You must comply with all domestic and international export laws and regulations that apply to the software, which include restrictions on destinations, end users, and end use. For further information on export restrictions, visit <http://aka.ms/exporting>.
+**EXPORT RESTRICTIONS.** You must comply with all domestic and international export laws and regulations that apply to the software, which include restrictions on destinations, end users, and end use. For further information on export restrictions, visit <https://aka.ms/exporting>.
 
 **SUPPORT SERVICES.** Microsoft is not obligated under this agreement to provide any support services for the software. Any support provided is “as is”, “with all faults”, and without warranty of any kind.
 

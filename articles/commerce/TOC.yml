@@ -34,17 +34,17 @@
           href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/commerce/toc.json
         - name: Create and automate user acceptance tests
           href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/commerce/toc.json   
-      - name: Set up a Commerce preview environment
+      - name: Set up a Dynamics 365 Commerce preview environment
         items:
-        - name: Commerce preview environment overview
+        - name: Dynamics 365 Commerce preview environment overview
           href: cpe-overview.md
-        - name: Provision a Commerce preview environment
+        - name: Provision a Dynamics 365 Commerce preview environment
           href: provisioning-guide.md
-        - name: Configure a Commerce preview environment
+        - name: Configure a Dynamics 365 Commerce preview environment
           href: cpe-post-provisioning.md
-        - name: Configure optional features for a Commerce preview environment
+        - name: Configure optional features for a Dynamics 365 Commerce preview environment
           href: cpe-optional-features.md
-        - name: Commerce preview environment FAQ
+        - name: Dynamics 365 Commerce preview environment FAQ
           href: cpe-faq.md
       - name: Deployment considerations
         items:
@@ -84,6 +84,8 @@
           items:
           - name: What's new or changed in Commerce home page
             href: get-started/whats-new-home-page.md
+          - name: Commerce version 10.0.9 (April 2020)
+            href: get-started/whats-new-10-0-9.md
           - name: Commerce version 10.0.8 (February 2020)
             href: get-started/whats-new-10-0-8.md
           - name: Retail version 10.0.7 (January 2020)
@@ -164,6 +166,8 @@
           href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/commerce/toc.json
         - name: Saved views
           href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/commerce/toc.json
+        - name: Grid capabilites
+          href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/commerce/toc.json
         - name: Create and work with custom fields
           href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/commerce/toc.json
         - name: Embed PowerApps apps
@@ -411,7 +415,9 @@
           - name: Set up and design receipt formats
             href: receipt-templates-printing.md
           - name: Send email receipts from Modern POS (MPOS)
-            href: email-receipts.md           
+            href: email-receipts.md 
+          - name: Reset receipt numbers
+            href: reset_receipt_number_sequence.md
         - name: Create functionality profiles for sales representatives 
           href: tasks/configure-functionality-profile-sales-representative.md
         - name: Create financial dimensions for retail channels and configure values on stores 
@@ -434,8 +440,6 @@
           href: configure-call-center-delivery.md
         - name: Set up and work with fraud alerts 
           href: set-up-fraud-alerts.md
-        - name: Set up continuity programs for call centers 
-          href: set-up-continuity-program.md
       - name: Additional channel configuration 
         items:
         - name: Add a channel to an organization hierarchy  
@@ -446,6 +450,12 @@
             href: omni-auto-charges.md
           - name: Prorate header charges to matching sales lines
             href: pro-rate-charges-matching-lines.md 
+        - name: Manage continuity programs
+          items:
+          - name: Set up continuity programs for call centers 
+            href: set-up-continuity-program.md
+          - name: Define continuity schedules
+            href: tasks/define-continuity-schedules.md
         - name: Retail store management 
           items:
           - name: Create and change store hours
@@ -456,8 +466,6 @@
           items:
           - name: Configure and work with call center order holds
             href: work-with-order-holds.md
-          - name: Define continuity schedules
-            href: tasks/define-continuity-schedules.md
         - name: Payments
           items:
           - name: Payment methods 
@@ -474,6 +482,8 @@
             href: dev-itpro/adyen-connector.md
           - name: Saving online payment instruments with the Adyen connector
             href: dev-itpro/adyen-connector-listpi.md
+          - name: Seamless offline switch for gift card and credit memo operations
+            href: dev-itpro/seamless-offline-improvements.md
           - name: Set up pay invoice scenarios 
             href: payinvoice.md
           - name: Duplicate payments prevention 
@@ -490,9 +500,9 @@
           href: ../supply-chain/pim/product-information.md?toc=/dynamics365/commerce/toc.json
         - name: Set up retail products 
           href: set-up-retail-products.md
-        - name: Retail product hierarchy 
+        - name: Product hierarchy 
           items:
-          - name: Retail hierarchies 
+          - name: Commerce hierarchies 
             href: retail-hierarchies.md
           - name: Create a new product hierarchy 
             href: create-product-hierarchy.md
@@ -570,10 +580,18 @@
         items:
         - name:	Product recommendations overview	
           href:	product-recommendations.md	
+        - name:	Enable ADLS in a Dynamics 365 Commerce environment	
+          href:	enable-ADLS-environment.md	
         - name:	Add product recommendation lists to e-Commerce pages	
           href:	add-reco-list-to-page.md
         - name:	Enable product recommendations
           href:	enable-product-recommendations.md
+        - name: Personalized recommendations
+          items:
+          - name: Enable personalized recommendations
+            href: personalized-recommendations.md
+          - name: Opt out of personalized recommendations 
+            href: personalization-gdpr.md
         - name: Create curated product recommendation lists		
           href:	create-editorial-recommendation-lists.md
         - name:	Manage AI-ML-based product recommendation results	
@@ -660,6 +678,8 @@
           href: payment-methods-restrictions.md
         - name: Return items across multiple customer orders and invoices
           href: multireturn.md	
+        - name: Create and update a returns and refunds policy for a channel
+          href: refund_policy_returns.md
     - name: Manage your customers  
       items:
       - name: Clienteling
@@ -678,7 +698,7 @@
           href: tasks/define-loyalty-schemes.md	
         - name: Process adjustments of loyalty reward points	  
           href: tasks/process-loyalty-reward-point-adjustments.md
-    - name: Statements
+    - name: Manage your financials
       items:
       - name: Statements overview
         href: retail-statements.md
@@ -846,17 +866,13 @@
             href: add-container-module.md
         - name: Marketing modules
           items:
-          - name: Alert module 
+          - name: Promo banner module 
             href: add-alert.md
           - name: Carousel module
             href: add-carousel.md
-          - name: Content placement module
-            href: add-content-placement-modules.md
-          - name: Content rich block module
+          - name: Text block module
             href: add-content-rich-block.md
-          - name: Feature module
-            href: add-feature-module.md
-          - name: Hero module
+          - name: Content block module
             href: add-hero-module.md 
           - name: Video player module
             href: add-video-player.md
@@ -900,6 +916,18 @@
         items:
         - name: Build custom response pages for 4xx/5xx status code errors
           href: build-pages-400-500-errors.md
+    - name: Manage tasks 
+      items:
+      - name: Task management overview
+        href: task-mgmt-overview.md
+      - name: Configure task management
+        href: task-mgmt-configure.md
+      - name: Create task lists and add tasks
+        href: task-mgmt-create-lists.md
+      - name: Assign task lists to stores or employees
+        href: task-mgmt-assign-lists.md
+      - name: Task management in POS
+        href: task-mgmt-pos.md
     - name: Fraud protection 
       items:
       - name:	Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce	
@@ -1802,6 +1830,8 @@
           items:
           - name: Module definition file
             href: e-commerce-extensibility/module-definition-file.md
+          - name: Module React component file
+            href: e-commerce-extensibility/module-react-file.md
           - name: Module view file
             href: e-commerce-extensibility/module-view-file.md
           - name: Module data file
@@ -1822,8 +1852,6 @@
             href: e-commerce-extensibility/add-module-config-fields.md
           - name: Preview and debug modules
             href: e-commerce-extensibility/test-module.md 
-          - name: Debug modules
-            href: e-commerce-extensibility/debug-modules.md
           - name: Test modules by using mocks
             href: e-commerce-extensibility/test-module-mock.md
           - name: Test modules by using page mocks
@@ -1860,8 +1888,10 @@
             href: e-commerce-extensibility/event-based-data-actions.md
           - name: Core data actions
             href: e-commerce-extensibility/core-data-actions.md
-          - name: Call Commerce Scale Unit APIs
+          - name: Call Retail Server APIs
             href: e-commerce-extensibility/call-retail-server-apis.md
+          - name: Call Retail Server extension APIs
+            href: e-commerce-extensibility/call-retail-extension-api.md
         - name: Advanced data action topics
           items:
           - name: Chain data actions
@@ -2046,8 +2076,6 @@
         href: dev-itpro/extension-resource-localization.md
   - name: Finance and Operations apps development and administration 
     href: ../fin-ops-core/dev-itpro/index.md
-  - name: Dynamics 365 Retail
-    href: index.md
   - name: Dynamics 365 Finance
     href: ../finance/index.md
   - name: Dynamics 365 Supply Chain Management 

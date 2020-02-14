@@ -176,7 +176,7 @@ This topic explains how to log events to [Customer Application Insights](https:/
 
 ## Build the deployable package
 
-For detailed information about how to build deployable packages, see [Create retail deployable packages](retail-sdk/retail-sdk-packaging.md).
+For detailed information about how to build deployable packages, see [Create deployable packages](retail-sdk/retail-sdk-packaging.md).
 
 1. Copy the **Contoso.Diagnostic** and **Microsoft.ApplicationInsights** assemblies to the **\\RetailSDK\\References** folder.
 2. Update the **BuildTools\\Customization.settings** file, and add the following entries in the **\<ItemGroup\>** section.
@@ -187,13 +187,13 @@ For detailed information about how to build deployable packages, see [Create ret
     ```
 
 3. Open an MSBuild **Command Prompt** window for Microsoft Visual Studio 2015, and run the **build** command in the root of your Retail SDK folder.
-4. Enter the following command to generate the retail deployable package.
+4. Enter the following command to generate the deployable package.
 
-    ```console
+    ```Console
     msbuild /t:rebuild
     ```
 
-5. In the **RetailSDK\\Packages\\RetailDeployablePackage** folder, find the retail deployable package. Go to the **content.folder** folder, and make sure that your three files are in the package (**Packages\\RetailDeployablePackage\\content.folder\\RetailServer\\Code\\bin\\ext**).
+5. In the **RetailSDK\\Packages\\RetailDeployablePackage** folder, find the deployable package. Go to the **content.folder** folder, and make sure that your three files are in the package (**Packages\\RetailDeployablePackage\\content.folder\\RetailServer\\Code\\bin\\ext**).
 6. Upload the deployable package to your Shared asset library in Microsoft Dynamics Lifecycle Services (LCS).
 7. In LCS, open your environment's main page, and select **Environment Features** \> **Retail and Commerce** \> **Manage**.
 8. Select **Apply Extension**, and select the extension from your library.

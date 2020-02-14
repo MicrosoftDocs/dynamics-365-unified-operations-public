@@ -62,17 +62,19 @@ Next, you create a subjob of the CustTable job to move data in the new table to 
    1.  Start Microsoft Visual Studio, and then, in the Application Object Tree (AOT) find the **RetailCDXSeedData\_AX7** class.
    2.  Add the following method.
 
-           private void C_RetailCustPreference()
-           {
-               jobIDContainer = ['1010'];
-               subjobID = 'RetailCustPreference';
-               axTableName = tableStr(RetailCustPreference);
-               axFieldNames = [
-               fieldStr(RetailCustPreference, AccountNum),
-               fieldStr(RetailCustPreference, EmailOptIn),
-               fieldStr(RetailCustPreference, RecId)
-               ];
-           }
+        ```xpp
+        private void C_RetailCustPreference()
+        {
+            jobIDContainer = ['1010'];
+            subjobID = 'RetailCustPreference';
+            axTableName = tableStr(RetailCustPreference);
+            axFieldNames = [
+            fieldStr(RetailCustPreference, AccountNum),
+            fieldStr(RetailCustPreference, EmailOptIn),
+            fieldStr(RetailCustPreference, RecId)
+            ];
+        }
+        ```
 
    3.  Compile the class.
    4.  Reset Internet Information Services (IIS).
@@ -90,11 +92,13 @@ Next, you create a subjob of the CustTable job to move data in the new table to 
     1.  Search for the following line: **&lt;Table name=“RetailCustTable”&gt;**. There are two instances, at approximately line 29 and line 744.
     2.  Add the following code after the last line in both **&lt;Table name=“RetailCustTable”&gt;** code blocks. You add the code after the **&lt;/Table&gt;** tag.
 
-            <Table name="RetailCustPreference">
-                <LinkGroup>
-                    <Link type="FieldMatch" fieldName="accountNum" parentFieldName="AccountNum" />
-                </LinkGroup>
-            </Table>
+        ```xml
+        <Table name="RetailCustPreference">
+            <LinkGroup>
+                <Link type="FieldMatch" fieldName="accountNum" parentFieldName="AccountNum" />
+            </LinkGroup>
+        </Table>
+        ```
 
 12. After you've finished editing the file, go back to client and the **Retail channel schema** page. In the left navigation pane, click **Dynamics 365 Retail.**
 13. On the **Retail data distribution** tab, click **Import**.

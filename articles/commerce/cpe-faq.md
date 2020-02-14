@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Commerce preview environment FAQ
+title: Dynamics 365 Commerce preview environment FAQ
 description: This topic provides answers to frequently asked questions about the Microsoft Dynamics 365 Commerce preview environment.
 author: v-chgri
 manager: annbe
@@ -28,8 +28,7 @@ ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
 ---
 
-# Commerce preview environment FAQ
-
+# Dynamics 365 Commerce preview environment FAQ
 
 [!include [banner](includes/banner.md)]
 
@@ -87,10 +86,10 @@ If you experience issues when you try to access the Yammer group, you can contac
 
 ## Additional resources
 
-[Commerce preview environment overview](cpe-overview.md)
+[Dynamics 365 Commerce preview environment overview](cpe-overview.md)
 
-[Provision a Commerce preview environment](provisioning-guide.md)
+[Provision a Dynamics 365 Commerce preview environment](provisioning-guide.md)
 
-[Configure a Commerce preview environment](cpe-post-provisioning.md)
+[Configure a Dynamics 365 Commerce preview environment](cpe-post-provisioning.md)
 
-[Configure optional features for a Commerce preview environment](cpe-optional-features.md)
+[Configure optional features for a Dynamics 365 Commerce preview environment](cpe-optional-features.md)

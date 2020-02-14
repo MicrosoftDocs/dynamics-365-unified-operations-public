@@ -56,12 +56,12 @@ Please make sure the headquarters is available. This is required to register the
 
 ## Configure retail channels to use Retail Cloud Scale Unit
 
-1. After Retail Cloud Scale Unit has been deployed, in the head office client go to **Retail > Retail Headquarters > Retail Scheduler setup > Channel database** to ensure that your retail channels are configured to use the database for this Retail Cloud Scale Unit.
+1. After Retail Cloud Scale Unit has been deployed, in the head office client go to **Retail and commerce > Retail Headquarters > Retail Scheduler setup > Channel database** to ensure that your retail channels are configured to use the database for this Retail Cloud Scale Unit.
 2. Go to each retail channel and select the Channel Profile for the corresponding Retail Cloud Scale Unit.
 
 ### Database refresh and Cloud Scale Units
 
-Before you begin, make sure you are familiar with [Steps to complete after a database refresh for environments that use Retail functionality](../database/database-refresh.md#steps-to-complete-after-a-database-refresh-for-environments-that-use-commerce-functionality).
+Before you begin, make sure you are familiar with [Steps to complete after a database refresh for environments that use Commerce functionality](../database/database-refresh.md).
 
 The scale unit channel database records (in the Channel Database form) cannot be moved across environments as part of database refresh. This is because the records represent environment specific configuration.
 
@@ -70,7 +70,7 @@ After database refresh and after the Retail Reprovisioning tool has been execute
 You can issue a re-deployment of the scale unit, without changing any components, by selecting to deploy the same version your scale unit is at already. This can be done in LCS by the following steps:
 
 1. In LCS, on the environment details page, select **Environment features \> Retail**.
-2. On the Retail setup deployment page, select the scale unit you would like to redeploy.
+2. On the setup deployment page, select the scale unit you would like to redeploy.
 3. On the scale unit's operation menu, select **Update**
 4. On the slider, on the drop-down for **Select version**, pick the option **Specify a version**
 5. On the text box under **Specify a version**, type in the version shown for your scale unit, shown besides the **Current version** label
@@ -86,18 +86,18 @@ After you have initialized the first Retail Cloud Scale Unit (RCSU), if you requ
 
 For each additional RCSU that you deploy, it is also recommended that you create a separate channel database group for each RCSU. To do this, follow these steps:
 
-1. In Retail head office, go to **Retail > Retail Headquarters > Retail Scheduler setup > Channel database group**.
+1. In Commerce head office, go to **Retail and commerce > Retail Headquarters > Retail Scheduler setup > Channel database group**.
 2. Create a new channel database group.
-3. Go to the **Retail > Retail Headquarters > Retail Scheduler setup > Channel database** form and select the channel database that corresponds to the newly created RCSU.
+3. Go to the **Retail and commerce > Retail Headquarters > Retail Scheduler setup > Channel database** form and select the channel database that corresponds to the newly created RCSU.
 4. Select **Edit** and select the new channel database group.
 5. Select **Save**.
 6. Select **Run Full data sync** for the selected channel database.
 
-## Additional considerations if you initialize cloud-hosted Retail channel components in an existing environment
+## Additional considerations if you initialize cloud-hosted Commerce channel components in an existing environment
 
-If you're already using cloud-hosted Retail channel components in an environment, initialization of Retail Cloud Scale Unit will help reduce the downtime when those components are updated. Additional planning is required before initialization of Retail Cloud Scale Unit.
+If you're already using cloud-hosted Commerce channel components in an environment, initialization of Retail Cloud Scale Unit will help reduce the downtime when those components are updated. Additional planning is required before initialization of Retail Cloud Scale Unit.
 
-When you initialize your first Cloud Scale Unit in an environment that uses cloud-hosted Retail channel components, the initialization process will migrate your channels associated to the cloud-hosted channel components to the first scale unit. Channels associated with Store Scale units are unaffected.
+When you initialize your first Cloud Scale Unit in an environment that uses cloud-hosted Commerce channel components, the initialization process will migrate your channels associated to the cloud-hosted channel components to the first scale unit. Channels associated with Store Scale units are unaffected.
 
 The migration process is transparent to the channels. After the scale unit initialization starts, the following operations are automatically performed:
 
@@ -118,7 +118,7 @@ Because the Cloud Scale Unit provides dedicated and isolated compute and storage
 
 Here is what occurs during the initialization period:
 
-- Cloud-hosted Retail channels won't work, unless you turn on POS offline capability.
+- Cloud-hosted Commerce channels won't work, unless you turn on POS offline capability.
 - POS devices with offline capability turned on will have reduced functionality.
 - Any e-Commerce clients that depend on Retail Server will be disrupted.
 - Channels that are hosted on Retail Store Scale Units won't be affected.

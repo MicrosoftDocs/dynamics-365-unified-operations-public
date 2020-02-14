@@ -85,14 +85,14 @@ And below is the illustration describes how authorization works for Service to s
 
 **Prerequisite:** You must have an Azure subscription and admin access to Azure Active Directory (Azure AD).
 
-Before any clients can communicate with the services, they must be registered in (Azure AD). These steps will help you register an application with (Azure AD). The steps are explained in the [Azure app registration training guide](https://docs.microsoft.com/en-us/azure/active-directory/develop/app-registrations-training-guide-for-app-registrations-legacy-users). For specific configuration in this process, the following additional information must be used in context.
+Before any clients can communicate with the services, they must be registered in (Azure AD). These steps will help you register an application with (Azure AD). The steps are explained in the [Azure app registration training guide](https://docs.microsoft.com/azure/active-directory/develop/app-registrations-training-guide-for-app-registrations-legacy-users). For specific configuration in this process, the following additional information must be used in context.
 
 Select **Microsoft Dynamics ERP (Microsoft.ERP)**. If you search for **Microsoft Dynamics ERP** in the search field within **Select an API** it might appear to be unavailable. In that case, make sure that you search for the full name, as shown above.
 Under **Delegated permissions**, you must select, at a minimum, the following options:
 
-    - Access Dynamics AX Custom Service
-    - Access Dynamics AX data
-    - Access Dynamics AX online as organization users
+- Access Dynamics AX Custom Service
+- Access Dynamics AX data
+- Access Dynamics AX online as organization users
 
  > [!IMPORTANT]
  > Make sure that you copy the key, because you won't see it again. You will be required to know this secret key to complete your OAuth authentication and receive an Azure AD token.
@@ -115,7 +115,7 @@ You've now finished setting up the prerequisites. After the external application
 
 The following is C\# sample code for getting a token from AAD. In this flow, the user will be presented with a consent form (for cross-tenant application) and a sign-in form.
 
-```
+```csharp
 UriBuilder uri = new UriBuilder ("https://login.windows.net/contoso2ax.onmicrosoft.com");
 
 AuthenticationContext authenticationContext = new AuthenticationContext(uri.ToString());
@@ -129,7 +129,7 @@ string authenticationHeader = authenticationResult.CreateAuthorizationHeader();
 
 To pass the user name and password without showing a pop-up, you can use the following overload of **AcquireToken**.
 
-```
+```csharp
 UserCredential userCred = new UserCredential (username, password);
 authenticationContext.AcquireToken("https://axdynamics1001aos.cloud.dynamics.com", clientId, userCred);
 ```

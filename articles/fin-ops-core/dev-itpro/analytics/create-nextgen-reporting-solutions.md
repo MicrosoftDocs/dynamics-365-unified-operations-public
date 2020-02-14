@@ -194,7 +194,7 @@ The Reporting Framework offers flexibility through service extensions to facilit
 1. In **Solution Explorer**, double-click on the **FMRentalsByCustUIBuilder** class to open the designer.
 2. Locate the class **build** method and update the initialization code as follows
 
-    ```
+    ```xpp
     public void build()
     {
         Dialog dialogLocal = this.dialog();

@@ -53,7 +53,7 @@ Here are some of the top motivations for selecting reports that are hosted on Po
 
 ### Embed a PowerBI.com report in an analytical workspace
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3lP5m]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3lP5m]
 
 The [How to embed PowerBI.com reports](https://www.youtube.com/watch?v=gGWuNJDoi-M&feature=youtu.be) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 

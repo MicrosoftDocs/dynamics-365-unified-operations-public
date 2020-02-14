@@ -70,6 +70,8 @@
           items:
           - name: What's new or changed in Finance home page
             href: get-started/whats-new-home-page.md
+          - name: Finance version 10.0.9 (April 2020)
+            href: get-started/whats-new-changed-10-0-9.md
           - name: Finance version 10.0.8 (February 2020)
             href: get-started/whats-new-changed-10-0-8.md
           - name: Finance version 10.0.7 (January 2020)
@@ -148,6 +150,8 @@
           href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/finance/toc.json
         - name: Saved views
           href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/finance/toc.json
+        - name: Grid capabilites
+          href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/finance/toc.json
         - name: Create and work with custom fields
           href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/finance/toc.json
         - name: Embed PowerApps apps
@@ -302,6 +306,18 @@
       items:
       - name: Accounts receivable home page
         href: accounts-receivable/accounts-receivable.md
+      - name: Establish customer payment terms
+        href: general-ledger/tasks/establish-customer-payment-terms.md
+      - name: Establish customer method of payment
+        href: accounts-receivable/tasks/establish-customer-method-payment.md
+      - name: Establish customer payment fees
+        href: accounts-receivable/tasks/establish-customer-payment-fees.md
+      - name: Customer posting profiles
+        href: accounts-receivable/customer-posting-profiles.md
+      - name: Copy customers by using shared number sequences
+        href: accounts-receivable/copy-customer.md
+      - name: Customer workflow
+        href: accounts-receivable/customer-workflow.md
       - name: Credit and collections in Accounts receivable
         href: accounts-receivable/collections-credit-accounts-receivable.md
       - name: Configure Accounts receivables and credit and collections
@@ -332,60 +348,46 @@
         href: accounts-receivable/credit-card-authorizations.md
       - name: Create a free text invoice
         href: accounts-receivable/create-free-text-invoice-new.md
+      - name: Accounting distributions and subledger journal entries for free text invoices
+        href: accounts-receivable/accounting-distributions-subledger-journal-entries-free-text-invoices.md
       - name: Create a free text invoice template
         href: accounts-receivable/create-free-text-invoice-template-new.md  
       - name: Correct a free text invoice
         href: accounts-receivable/correct-free-text-invoice.md
       - name: Assign a free text invoice template to a customer
         href: accounts-receivable/tasks/assign-free-text-invoice-template-customer.md
+      - name: Set up and process recurring invoices
+        href: accounts-receivable/set-up-process-recurring-invoices.md
       - name: Generate and post recurring free text invoices
         href: accounts-receivable/tasks/post-recurring-free-text-invoices.md
       - name: Create sales order invoices
         href: accounts-receivable/tasks/create-sales-order-invoices.md
-      - name: Set up interest rates for an interest code
-        href: accounts-receivable/set-up-interest-rates-interest-code.md
-      - name: Waive, reinstate, or reverse interest fees
-        href: accounts-receivable/waive-reinstate-reverse-interest-fees.md
-      - name: Process interest
-        href: accounts-receivable/tasks/process-interest.md
       - name: Create a customer invoice
         href: accounts-receivable/configure-customer-invoices.md
-      - name: Deposit customer payments
-        href: accounts-receivable/tasks/deposit-customer-payments.md
-      - name: Establish customer payment terms
-        href: general-ledger/tasks/establish-customer-payment-terms.md
-      - name: Establish customer method of payment
-        href: accounts-receivable/tasks/establish-customer-method-payment.md
-      - name: Establish customer payment fees
-        href: accounts-receivable/tasks/establish-customer-payment-fees.md
+      - name: Customer transactions list page
+        href: accounts-receivable/customer-transactions-list-page.md
       - name: Set up bills of exchange
         href: accounts-receivable/set-up-bills-exchange.md
       - name: Close Accounts receivable
         href: accounts-receivable/close-accounts-receivable.md
-      - name: Create a collection letter sequence
-        href: accounts-receivable/tasks/create-collection-letter-sequence.md
-      - name: Process collection letters
-        href: accounts-receivable/tasks/process-collection-letters.md
-      - name: Create a direct debit mandate for a customer
-        href: accounts-receivable/tasks/create-direct-debit-mandate-customer.md
-      - name: Create an interest code with a range
-        href: accounts-receivable/tasks/create-interest-code-range.md
-      - name: Create a write-off journal for a customer
-        href: accounts-receivable/tasks/create-write-off-journal-customer.md
-      - name: Set up and generate accounts receivable aging information
-        href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
-      - name: Copy customers by using shared number sequences
-        href: accounts-receivable/copy-customer.md
-      - name: Customer workflow
-        href: accounts-receivable/customer-workflow.md
       - name: Payments and settlements
         items:
+        - name: Revenue recognition overview
+          href: accounts-receivable/revenue-recognition-overview.md
         - name: Customer payment overview
           href: cash-bank-management/tasks/customer-payment-overview.md
-        - name: Use a customer payment to settle multiple invoices that span multiple discount periods
-          href: accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md
         - name: Centralized payments for Accounts receivable
           href: accounts-receivable/centralized-payments-accounts-receivable.md
+        - name: Deposit customer payments
+          href: accounts-receivable/tasks/deposit-customer-payments.md
+        - name: SEPA direct debit overview
+          href: accounts-receivable/sepa-direct-debit-overview.md
+        - name: SEPA direct debit mandate
+          href: accounts-receivable/sepa-direct-debit-mandate.md
+        - name: Create a direct debit mandate for a customer
+          href: accounts-receivable/tasks/create-direct-debit-mandate-customer.md
+        - name: Use a customer payment to settle multiple invoices that span multiple discount periods
+          href: accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md
         - name: Settle partial customer payment or final payment before discount
           href: accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md
         - name: Settle a partial customer payment before the discount date with a final payment after the discount date
@@ -398,8 +400,48 @@
           href: accounts-receivable/reimburse-customers.md
         - name: Customer payments for a partial amount
           href: accounts-receivable/customer-payments-partial-amount.md
-        - name: Customer transactions list page
-          href: accounts-receivable/customer-transactions-list-page.md
+      - name: Credit and collections
+        items:
+        - name: Credit and collections overview
+          href: accounts-receivable/cm-credit-and-collections-overview.md
+        - name: Credit management setup
+          href: accounts-receivable/cm-credit-mgmt-setup.md
+        - name: Credit management setup information
+          href: accounts-receivable/cm-setup-information.md
+        - name: Add credit management information for a customer
+          href: accounts-receivable/cm-add-credit-mgmt-information-customer.md
+        - name: Customer credit groups
+          href: accounts-receivable/cm-customer-credit-groups.md
+        - name: Credit limit adjustments
+          href: accounts-receivable/cm-credit-limit-adjustments.md
+        - name: Credit holds for sales orders
+          href: accounts-receivable/cm-sales-order-credit-holds.md
+        - name: Periodic credit management tasks
+          href: accounts-receivable/cm-periodic-tasks.md
+        - name: Collections management key concepts
+          href: accounts-receivable/cm-collections-concepts.md
+        - name: Configure Accounts receivables and credit and collections
+          href: accounts-receivable/accounts-receivables-set-up-overview.md
+        - name: Set up credit and collections
+          href: accounts-receivable/set-up-collections.md
+      - name: Set up interest rates for an interest code
+        href: accounts-receivable/set-up-interest-rates-interest-code.md
+      - name: Create an interest code with a range
+        href: accounts-receivable/tasks/create-interest-code-range.md
+      - name: Waive, reinstate, or reverse interest fees
+        href: accounts-receivable/waive-reinstate-reverse-interest-fees.md
+      - name: Process interest
+        href: accounts-receivable/tasks/process-interest.md
+      - name: Review collections information
+        href: accounts-receivable/tasks/review-collections-information.md
+      - name: Create a collection letter sequence
+        href: accounts-receivable/tasks/create-collection-letter-sequence.md
+      - name: Process collection letters
+        href: accounts-receivable/tasks/process-collection-letters.md
+      - name: Set up and generate accounts receivable aging information
+        href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
+      - name: Create a write-off journal for a customer
+        href: accounts-receivable/tasks/create-write-off-journal-customer.md
     - name: Budgeting
       items:
       - name: Budgeting home page
@@ -602,6 +644,8 @@
         href: expense-management/expense-workflows.md
       - name: Expense management workflow
         href: expense-management/expense-workflow.md
+      - name: Manage expense delegation
+        href: expense-management/manage-expense-delegation.md
       - name: Expense receipt processing
         href: expense-management/expense-receipt-processing.md
       - name: Import and maintain credit card transactions
@@ -1060,6 +1104,8 @@
           href: public-sector/interest-distribution.md
       - name: Procurement and sourcing in the public sector
         href: public-sector/procurement-sourcing-public-sector.md
+      - name: Calculate the delivery date for a line, based on the lead time
+        href: public-sector/po-delivery-date.md
       - name: Security roles in the public sector
         href: public-sector/security-roles-public-sector.md
       - name: Funds in the public sector
@@ -1568,6 +1614,8 @@
           href: localizations/emea-tax-directives.md
         - name: Update how amounts are displayed on reports and documents
           href: localizations/emea-amount-printing-forms.md
+        - name: Use fiscal data from an invoice account
+          href: localizations/use-fiscal-data-from-invoice-account.md
         - name: Value Added Tax (VAT)
           items:
           - name: Set up VAT ID
@@ -1925,10 +1973,16 @@
           href: localizations/emea-ita-exil-misc-charges-intrastat.md
         - name: Advanced notes management
           href: localizations/emea-ita-exil-structured-notes.md
+        - name: Intent letters - Invoicing usual exporters
+          href: localizations/emea-ita-exil-intent-letter.md
         - name: Tax invoice for goods delivered for free
           href: localizations/emea-ita-exil-goods-for-free.md
         - name: Improved inquiry on debit or credit settlements
           href: localizations/emea-ita-exil-improved-inquiry-settlement.md
+        - name: General ledger simulations (Italy)
+          href: localizations/emea-ita-exil-general-ledger-simulations.md
+        - name: Unique certification
+          href: localizations/emea-ita-exil-unique-certification.md
       - name: Japan
         items:
         - name: Japan overview
@@ -2247,6 +2301,10 @@
             href: general-ledger/import-currency-exchange-rates.md
           - name: Ledger translation
             href: localizations/rus-ledger-translation-procedure.md
+          - name: Turnover balance statement reports
+            href: localizations/rus-turnover-balance-statement-reports.md
+          - name: Account activity reports
+            href: localizations/rus-account-activity-reports.md
         - name: Advance holders
           items:
           - name: Russia advance holders overview
@@ -2355,12 +2413,26 @@
             href: localizations/rus-miscellaneous-charges.md
           - name: Third party miscellaneous charges
             href: localizations/rus-third-party-misc-charges.md
+          - name: Agreements
+            items:
+            - name: Agreements overview
+              href: localizations/rus-agreements.md
+            - name: Set up and create agreements
+              href: localizations/rus-set-up-and-create-agreements.md
+            - name: Register transactions with reference to agreements
+              href: localizations/rus-register-transactions-with-reference-to-agreements.md
+            - name: Inquiries and reports with agreements
+              href: localizations/rus-inquiries-reports-agreements.md
         - name: Inventory
           items:
           - name: Goods in transit from vendor
             href: localizations/rus-goods-transit-vendor.md
           - name: Customs declaration numbers
             href: localizations/rus-custom-declaration-number.md
+          - name: Inventory cost structure
+            href: localizations/rus-inventory-cost-structure.md
+          - name: Inventory adjustment wizard
+            href: localizations/rus-inventory-adjustment-wizard.md
         - name: Reporting
           items:
           - name: Financial reporting
@@ -2375,6 +2447,8 @@
             href: localizations/rus-transport-tax-declaration.md
           - name: Land tax declaration
             href: localizations/rus-land-tax-declaration.md
+          - name: Profit tax declaration
+            href: localizations/rus-profit-tax-declaration.md
         - name: Organization administration
           items:    
           - name: Tax registration info related to address
@@ -2807,8 +2881,12 @@
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/dynamics365/finance/toc.json
           - name: Upgrade your format by adopting a new base version of that format
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/dynamics365/finance/toc.json  
-        - name: Formula designer in Electronic reporting
-          href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/dynamics365/finance/toc.json
+        - name: Formula designers in Electronic reporting
+          items:
+          - name: Formula designer
+            href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/dynamics365/finance/toc.json  
+          - name: Advanced formula designer
+            href: ../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md?toc=/dynamics365/finance/toc.json  
         - name: Formula language and functions
           items:
           - name: Formula language
@@ -3177,7 +3255,7 @@
               href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
         - name: Tutorials
           items: 
-          - name: Use JOIN data sources to get data from multiple application tables in Electronic reporting (ER) model mappings
+          - name: Use JOIN data sources to get data from multiple application tables
             href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md
           - name: Configure country context dependent ER model mappings
             href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md
@@ -3185,6 +3263,12 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md
           - name: Set up the parameters of an ER format per legal entity
             href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md
+          - name: Defer execution of ER format elements
+            items: 
+            - name: Defer execution of a sequence element
+              href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md
+            - name: Defer execution of a XML element
+              href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md
         - name: Use Electronic reporting solutions in Finance and Operations
           items: 
           - name: Configure the framework
@@ -3199,8 +3283,24 @@
             items: 
             - name: Destinations overview
               href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md?toc=/dynamics365/finance/toc.json
+            - name: Destination types
+              items:
+                - name: Archive destination
+                  href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-archive.md
+                - name: Email destination
+                  href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-email.md
+                - name: File destination
+                  href:  ../fin-ops-core/dev-itpro/analytics/er-destination-type-file.md
+                - name: Power BI destination
+                  href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-powerbi.md
+                - name: Printer destination
+                  href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-print.md
+                - name: Screen destination
+                  href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md
             - name: Configure destinations
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/finance/toc.json
+          - name: Set up a reference to an ER format
+            href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/finance/toc.json
           - name: Automatically validate generated reports
             items: 
             - name: Trace generated report results and compare them with baseline values
@@ -3591,6 +3691,4 @@
     href: ../supply-chain/index.md
   - name: Dynamics 365 Commerce
     href: ../commerce/index.md
-  - name: Dynamics 365 Retail
-    href: ../commerce/index.md
-  
+

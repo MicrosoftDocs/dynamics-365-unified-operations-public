@@ -38,7 +38,7 @@ The `FILTER` function returns the specified list as a *Record list* value after 
 
 ## Syntax
 
-```
+```vb
 FILTER (list, condition)
 ```
 

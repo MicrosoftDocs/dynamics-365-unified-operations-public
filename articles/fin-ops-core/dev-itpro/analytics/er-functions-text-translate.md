@@ -38,7 +38,7 @@ The `TRANSLATE` function returns the specified text string as a *String* value a
 
 ## Syntax
 
-```
+```vb
 TRANSLATE (text , pattern, replacement)
 ```
 

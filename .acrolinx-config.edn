@@ -1,2 +1,2 @@
 {:allowed-branchname-matches ["^master$"]
- :allowed-filename-matches ["articles/talent"]}
+ :allowed-filename-matches ["articles"]}

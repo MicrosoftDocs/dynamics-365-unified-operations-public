@@ -124,6 +124,11 @@
             "Dynamics 365",
             "Unified Operations",
             "Retail"
+        ],
+           "human-resources/**/**.md": [
+           "Dynamics 365",
+           "Unified Operations",
+           "Human Resources"
         ]
        },
       "breadcrumb_path": {

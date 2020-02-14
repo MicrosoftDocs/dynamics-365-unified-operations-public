@@ -44,10 +44,14 @@ This procedure is created for users with the assigned role of system administrat
 ## Set up foreign trade parameters
 1. Go to Tax > Setup > Foreign trade > Foreign trade parameters.
 2. Click the Number sequences tab.
-    * Archiving details of Intrastat reporting process, we need to identify records of each archive we created. A special number sequence must be configured for that.  
+
+    Archiving details of Intrastat reporting process, we need to identify records of each archive we created. A special number sequence must be configured for that.  
+
 3. Select the ‘Intrastat archive ID’ reference.
 4. In the Number sequence code field, type a value.
-    * In the ‘Number sequence code’ field, enter or select the value ‘Fore_2’.  
+
+    In the ‘Number sequence code’ field, enter or select the value ‘Fore_2’.  
+
 5. ResolveChanges the Number sequence code.
 6. Click Save.
 7. Close the page.
@@ -58,18 +62,23 @@ This procedure is created for users with the assigned role of system administrat
 3. In the tree, select 'Intrastat (model)\Intrastat (format)'.
 4. Click Run.
 5. In the Enter file name field, type 'intrastat2.xml'.
-    * intrastat2.xml  
 6. Click OK.
 
 ## Review ER format execution’s results
-    * Review the generated XML file.  
+Review the generated XML file.  
 1. Close the page.
 2. Go to Tax > Declarations > Foreign trade > Intrastat.
-    * Open this form containing Intrastat transactions that have been included to the generated electronic document.  
+
+    Open this form containing Intrastat transactions that have been included to the generated electronic document.  
+
 3. Click Intrastat archive.
-    * Since the executed ER format contains now settings for application data update, the details of the completed Intrastat reporting have been archived. In this form, you can see the header record of the created archive.  
+
+    Since the executed ER format contains now settings for application data update, the details of the completed Intrastat reporting have been archived. In this form, you can see the header record of the created archive.  
+
 4. Click Details.
-    * In this form, you can see the details for the created archive.  
+
+    In this form, you can see the details for the created archive.  
+
 5. Close the page.
 6. Close the page.
 7. Close the page.

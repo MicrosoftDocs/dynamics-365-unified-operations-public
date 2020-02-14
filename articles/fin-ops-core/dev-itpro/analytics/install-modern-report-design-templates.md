@@ -67,14 +67,14 @@ Follow these steps to install the modern report designs for the application suit
 
 2. Import the model file into your local development environment. To install a model file in a development environment, use the ModelUtil.exe tool and the **-import** directive. Here is an example.
 
-    ```
+    ```Console
     ModelUtil.exe -import -metadatastorepath=[path of the metadata store] -file=[full path of the file to import]
     ```
 
 3. Navigate to the **J:\\AOSService\\PackagesLocalDirectory\\bin** folder.
 4. Run the following command.
 
-    ```
+    ```Console
     ModelUtil.exe -import -metadatastorepath=J:\AOSService\PackagesLocalDirectory -file="E:\Test\AppSuiteModernDesigns.axmodel"
     ```
 

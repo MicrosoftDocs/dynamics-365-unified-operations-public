@@ -51,8 +51,7 @@ To implement a trigger, you must complete these tasks, as shown in the code exam
 3.  Write a trigger implementation in the **OnExecuting** method if business logic must be run before the request is addressed.
 4.  Write a trigger implementation in the **OnExecuted** method if business logic must be run after the request is addressed.
 
-<!-- -->
-
+    ```xml
     /// <summary>
     /// The interface for request trigger.
     /// </summary>
@@ -113,6 +112,7 @@ To implement a trigger, you must complete these tasks, as shown in the code exam
                 //Custom logic
             }
         }
+    ```
 
 ## Trigger CommerceRunTime.config updates for 7.0
 When you extend the CRT, you must write your extension in your own assembly. After you write the trigger extension in your assembly, you must copy the extension library to the Commerce Scale Unit bin folder and add an entry in the **composition** section of the commerceRuntime.config file for the CRT, so that the trigger is loaded at run time. The following example shows a .config file that includes an entry for a trigger implementation in the **CRTExtensionTrigger** assembly. 

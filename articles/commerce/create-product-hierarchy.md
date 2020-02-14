@@ -79,7 +79,7 @@ Category attribute groups can also be assigned to each group as required.
 
 ## Additional resources
 
-[Retail hierarchies](retail-hierarchies.md)
+[commerce hierarchies](retail-hierarchies.md)
 
 [Manage product categories and products ](category-management-product-creation.md)
 

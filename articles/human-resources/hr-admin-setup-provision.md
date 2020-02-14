@@ -41,9 +41,13 @@ To begin, the global administrator should sign in to [Microsoft Dynamics Lifecyc
 To use LCS to manage your Human Resources environments, you must first create an LCS project.
 
 1. Sign in to [LCS](https://lcs.dynamics.com/Logon/Index) by using the account that you used to subscribe to Human Resources.
+
 2. Select the plus sign (**+**) to create a project.
+
 3. Select **Microsoft Dynamics 365 Human Resources** as the product name and product version.
+
 4. Select the **Dynamics 365 Human Resources** methodology.
+
 5. Select **Create**.
 
 For information about how to get started with Human Resources, see the **Human Resources** methodology that you created in your new project. After you've finished creating the project, complete the following procedure to provision your Human Resources environment.
@@ -53,19 +57,25 @@ For information about how to get started with Human Resources, see the **Human R
 After you've created an LCS project, you can provision Human Resources into an environment.
 
 1. In your LCS project, select the **Human Resources App Management** tile.
-2. Indicate whether this is a Sandbox or Production instance of Human Resource. Early preview features may be available in Sandbox instances to allow for early feedback and testing. 
+
+2. Indicate whether this is a Sandbox or Production instance of Human Resource. Early preview features may be available in Sandbox instances to allow for early feedback and testing.
+   
     > [!NOTE]
+    > The Talent instance type cannot be changed once set. Verify the correct instance type is selected before continuing.</br></br>
     > The Human Resources instance type is separate from the instance type of the Microsoft Power Apps environment, which you set in the Power Apps Admin center.
+    
 3. Select the **Include Demo Data** option if you want your environment to include the same demo data set used in the Human Resources Test Drive experience. This is beneficial for long-term demo or training environments, and should never be used for production environments.  Note that you must choose this option upon initial deployment. You cannot update an existing deployment later.
+
 4. Human Resources is always provisioned into a Microsoft Power Apps environment to enable Power Apps integration and extensibility. Read the “Selecting a Power Apps environment” section of this article before you continue. If you don't already have a Power Apps environment, select Manage environments in LCS or navigate to the Power Apps Admin center. Then follow the steps to [Create a Power Apps environment](https://docs.microsoft.com/powerapps/administrator/create-environment).
 
     > [!NOTE]
     > To view existing environments or create new environments, the tenant admin who provisions Human Resources must be assigned to the Power Apps P2 license. If your organization doesn't have a Power Apps P2 license, you can get one from your CSP or from the [Power Apps pricing page](https://powerapps.microsoft.com/pricing/).
 
 5. Select the environment to provision Human Resources into.
+
 6. Select **Yes** to agree to the terms and begin deployment.
 
-    Your new environment appears in the list of environments in the navigation pane on the left. However, you can't start to use the environment until the deployment status is updated to **Deployed**. This process typically takes a few minutes. If the provisioning process is unsuccessful, you must contact Support.
+   Your new environment appears in the list of environments in the navigation pane on the left. However, you can't start to use the environment until the deployment status is updated to **Deployed**. This process typically takes a few minutes. If the provisioning process is unsuccessful, you must contact Support.
 
 7. Select **Log on to Human Resource** to use your new environment.
 
@@ -81,9 +91,13 @@ The integration between Human Resources and the Power Apps environments lets you
 Use the following guidance when determining which Power Apps environment to deploy Human Resources into: 
 
 1. In LCS, select **Manage environments**, or go directly to the Power Apps Admin center where you can view existing environments and create new environments.
+
 2. A single Human Resources environment is mapped to a single Power Apps environment.
-3. A Power Apps environment contains Human Resource, along with the corresponding Power Apps, Power Automate, and Common Data Service applications. If the Power Apps environment is deleted, so are the apps within it. When provisioning a Human Resources environment, you can provision either a **Trial** or **Production** environment. Choose the type of environment based on how the environment will be used. 
+
+3. A Power Apps environment contains Human Resources, along with the corresponding Power Apps, Power Automate, and Common Data Service applications. If the Power Apps environment is deleted, so are the apps within it. When provisioning a Human Resources environment, you can provision either a **Trial** or **Production** environment. Choose the type of environment based on how the environment will be used. 
+
 4. Data integration and testing strategies should be considered, such as Sandbox, UAT, or Production. We recommend that you consider the various implications for your deployment, because it isn't easy to later change which Human Resources environment is mapped to a Power Apps environment.
+
 5. The following Power Apps environments cannot be used for Human Resources and will be filtered from the selection list within LCS:
  
     - **Default Power Apps environments** - Although each tenant is automatically provisioned with a default Power Apps environment, we don't recommend using them with Human Resources because all tenant users have access to the Power Apps environment and could unintentionally corrupt production data when testing and exploring with Power Apps or Power Automate integrations.

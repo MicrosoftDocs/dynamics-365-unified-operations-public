@@ -42,9 +42,9 @@ This page lists the resources that are available for IT pros and developers who 
 ## Components and architecture
 -   [Commerce components](../retail-components.md)
 -   [Modern POS (MPOS) architecture](retail-modern-pos-architecture.md)
--   [Retail Server architecture](retail-server-architecture.md)
+-   [Commerce Scale Unit architecture](retail-server-architecture.md)
 -   [Online store publishing architecture](retail-online-store-publishing-architecture.md)
--   [Retail Channel Performance Power BI  content](../../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
+-   [Retail channel performance PowerBI.com solution](../../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
 
 ## Deployment
 -   [Configure, install, and activate Modern POS (MPOS)](../retail-modern-pos-device-activation.md)
@@ -109,8 +109,8 @@ This page lists the resources that are available for IT pros and developers who 
 
 ## Retail SDK
 - [Retail software development kit (SDK) architecture](retail-sdk/retail-sdk-overview.md)
-- [Retail SDK packaging](retail-sdk/retail-sdk-packaging.md)
-- [Merge the build systems for Retail and Finance](retail-sdk/integrate-retail-sdk-continuous-build.md)
+- [Create deployable packages](retail-sdk/retail-sdk-packaging.md)
+- [Merge the build systems for Commerce and Finance](retail-sdk/integrate-retail-sdk-continuous-build.md)
 - [Retail software development kit (SDK) samples](retail-sdk/retail-sdk-samples.md)
 - [Channel database extensions](channel-db-extensions.md) 
 - [Enable custom Commerce Data Exchange synchronization via extension](cdx-extensibility.md)

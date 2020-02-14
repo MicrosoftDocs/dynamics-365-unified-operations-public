@@ -41,6 +41,8 @@ This topic provides information about functionality that supports Russian regula
 - [Set up exchange rates for currency transactions](rus-exchange-difference.md)
 - [Import currency exchange rates](../general-ledger/import-currency-exchange-rates.md)
 - [Ledger translation](rus-ledger-translation-procedure.md)
+- [Turnover balance statement reports](rus-turnover-balance-statement-reports.md)
+- [Account activity reports](rus-account-activity-reports.md)
 
 ## Advance holders
 
@@ -99,10 +101,17 @@ This topic provides information about functionality that supports Russian regula
 - [Cash flow management](rus-cash-flow.md)
 - [Allocation of miscellaneous charges in proportion to weight and volume](rus-miscellaneous-charges.md)
 - [Third party miscellaneous charges](rus-third-party-misc-charges.md)
+- [Agreements](rus-agreements.md)
+  - [Set up and create agreements](rus-set-up-and-create-agreements.md)
+  - [Register transactions with reference to agreements](rus-register-transactions-with-reference-to-agreements.md)
+  - [Inquiries and reports with agreements](rus-inquiries-reports-agreements.md)
+
 
 ## Inventory
 - [Goods in transit from vendor](rus-goods-transit-vendor.md)
 - [Customs declaration numbers](rus-custom-declaration-number.md)
+- [Inventory cost structure](rus-inventory-cost-structure.md)
+- [Inventory adjustment wizard](rus-inventory-adjustment-wizard.md)
 
 ## Reporting
 
@@ -112,10 +121,11 @@ This topic provides information about functionality that supports Russian regula
 - [Assessed tax declaration](rus-assessed-tax-declaration.md)
 - [Transport tax declaration](rus-transport-tax-declaration.md)
 - [Land tax declaration](rus-land-tax-declaration.md)
+- [Profit tax declaration](rus-profit-tax-declaration.md)
 
 ## Organization administration
 
-- [Registration IDs(emea-registration-ids.md)
+- [Registration IDs](emea-registration-ids.md)
 - [Set up officials](rus-officials.md)
 - [Company divisions](rus-company-divisions.md)
 - [Russian address formats and import from FIAS](rus-russian-address-format-and-import-from-FIAS.md)
