@@ -147,12 +147,10 @@ To create default user flow policies, follow these steps.
 1. In the Azure portal, select **User flows (policies)** in the left navigation pane.
 1. On the **Azure AD B2C – User flows (policies)** page, select **New User Flow**.
 1. On the **Recommended** tab, select **Sign up and sign in**.
-2. Enter a policy ‘Name’. This will show later with the prefix the portal assigns (ex: ‘B2C_1_’…)
-3. Enable Identity Providers (checkbox)
-4. Choose if your company will enforce Multifactor Authentication. If so, enable ‘Multifactor Authentication’ in the menu
-5. Select ‘User attributes and claims’
-
-**Important**: e-Commerce requires the following default options:
+1. Under **Name**, enter a policy name. This name will display afterwards with a prefix the portal assigns (for example, "B2C_1_").
+1. Under **Identity providers**, select the appropriate check box.
+1. Under **Multifactor Authentication**, select the appropriate choice for your company. 
+1. Under **User attributes and claims**, select options to collect attributes or return claims as appropriate. Commerce requires the following default options:
 
 | **Collect  attribute** | **Return  claim** |
 | ---------------------- | ----------------- |
@@ -162,16 +160,14 @@ To create default user flow policies, follow these steps.
 | Surname                | Surname           |
 |                        | User’s Object ID  |
 
+1. Select **Create**.
+1. Click the newly selected to verify
+1. Select **Run user flow** to view the login domain for the policy, under the **select domain** header (for example, fabrikam.b2clogin.com). 
+1. Close tab.
 
 ![Sign Up and Sign In policy settings](./media/B2CImage_11.png "Sign Up and Sign In policy settings")
 
-6. Click “Create”
-7. Click the newly selected to verify
-8. Select “Run user flow” to view the login ‘domain’ for the policy, under the **select domain** header. (ex: fabrikam.b2clogin.com’. 
-
 ![Run user flow option in policy flow](./media/B2CImage_23.png)
-
-9. Close tab
    
 ### Create a profile editing user flow
 
