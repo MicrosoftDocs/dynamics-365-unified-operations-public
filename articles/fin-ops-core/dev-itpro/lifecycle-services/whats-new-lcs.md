@@ -40,11 +40,11 @@ To get started with LCS, see the [Lifecycle Services (LCS) user guide](lcs-user-
 > [!IMPORTANT]
 > LCS features and service changes will no longer be announced via blog posts. Descriptions of LCS features are provided in the [release plans](https://go.microsoft.com/fwlink/?linkid=2010158). This topic lists the features that are included in LCS releases.
 
-## February 2020
+## February 2020 - wave 1
 
 | Area | Feature |
 |------|---------|
-| Admin application programming interfaces (APIs) |[RESTful APIs for database export](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/database-movement-restful-apis-lifecycle-services) |
+| Admin APIs | **Database movement RESTful APIs** - LCS will expose RESTful API endpoints. Documentation that covers how to authenticate and make the appropriate calls to trigger refresh will be provided. To implement this functionality, use Azure LogicApps or other recurrence engines for scheduling and automation. |
 
 ## LCS releases before November 2019
 
