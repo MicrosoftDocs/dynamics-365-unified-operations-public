@@ -6,7 +6,7 @@ title: What's new or changed in Finance and Operations apps home page
 description: This page points you to topics that can help you learn about the new features in the latest Finance and Operations applications.
 author: josaw1
 manager: AnnBe
-ms.date: 01/31/2020
+ms.date: 02/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -50,5 +50,10 @@ To see what's new or changed in each release of a Finance and Operations app, se
 To see what's new or changed in the Platform updates for Finance and Operations apps, see the following topic:
 
 - [What's new or changed in Platform updates](../../dev-itpro/get-started/whats-new-home-page.md)
+
+## Lifecycle Services releases
+To see what's new or changed in Lifecycle Services, see the following topic:
+
+- [What's new or changed in Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/whats-new-lcs.md)
 
 
