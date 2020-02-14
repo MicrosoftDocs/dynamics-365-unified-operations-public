@@ -52,7 +52,7 @@ To see what's new or changed in the Platform updates for Finance and Operations 
 - [What's new or changed in Platform updates](../../dev-itpro/get-started/whats-new-home-page.md)
 
 ## Lifecycle Services releases
-To see what's new or changed in Lifecycle Services (LCS), see the following topic:
+To see what's new or changed in Lifecycle Services, see the following topic:
 
 - [What's new or changed in Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/whats-new-lcs.md)
 
