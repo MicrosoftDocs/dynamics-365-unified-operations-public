@@ -115,8 +115,8 @@ Create a purchase order and update the facture on goods that are purchased for a
 
 2.  On the purchase order line, select an item number.
 
->   *Note.* The **Tracking dimension** field for the item should be set to the
->   inventory profile that you created earlier.
+    >   *Note.* The **Tracking dimension** field for the item should be set to the
+    >   inventory profile that you created earlier.
 
 3.  On the **Line details** FastTab, on the **Product** tab, in the **Tracking
     dimensions** section, in the **Inventory profile** field, select the
@@ -140,8 +140,8 @@ Create a sales order and generate a sales invoice for goods that are purchased f
 
 3.  On the sales order line, select the item number that was purchased earlier.
 
->   *Note.* The **Tracking dimension** field for the item should be set to the
->   inventory profile that you created earlier.
+    >   *Note.* The **Tracking dimension** field for the item should be set to the
+    >   inventory profile that you created earlier.
 
 4.  On the **Line details** FastTab, on the **Setup** tab, in the **Inventory**
     section, in the **Reservation** field, select **Automatic**.
