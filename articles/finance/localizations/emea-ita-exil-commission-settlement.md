@@ -73,6 +73,8 @@ Another setup can be added to the single agent who belongs to a specify group. T
 After sales order creation a user may update commission settlement in the sales order header (**Account receivable**/> **Orders**/> **Allsales orders**, **Sales order details** page /> **Header**, **Setup** FastTab).  
 ![Commission settlement in sales order](media/emea-ita-exil-commission-sales-order.png)
 By default commision settlement value is inherited from Account receivable parameters (**[Set up commission settlement by default](emea-ita-exil-commission-settlement.md#Set-up-commission-settlement-by-default)**).
+
+![Preview commission transactions](media/emea-ita-exil-commission-preview.PNG)
 ### Post
 
 When you post...
