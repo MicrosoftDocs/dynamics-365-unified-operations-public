@@ -39,25 +39,24 @@ ms.dyn365.ops.version: AX 7.0.0
 These topics describe dual-write integration.
 
 + [What is dual-write?](dual-write-overview.md) 
-+ [Top reasons to embrace dual-write](top-reasons.md)
-+ [What does dual-write mean for CRM users and CRM architects?](crm-user-architect.md)
+    - [Top reasons to use dual-write](dual-write-overview.md#top-reasons-to-use-dual-write)
+    - [What does dual-write mean for users and architects of customer relationship management products?](al-write-overview.md#what-does-dual-write-mean-for-users-and-architects-of-customer-relationship-management-products)
 
-## Application orchestration
+## Mapping between concepts in Finance and Operations applications and concepts in model-driven apps in Dynamics 365
 
 + [Organization hierarchy awareness](organization-mapping.md)
 + [Company concept in Common Data Service](company-data.md)
-+ [Bootstrap with company data FAQ](bootstrap-company-data.md)
+    + [Bootstrap with company data FAQ](bootstrap-company-data.md)
 + [Integrated customer master](customer-mapping.md)
 + [Integrated ledger](ledger-mapping.md)
 + [Unified product experience](product-mapping.md)
 + [Integrated vendor master](vendor-mapping.md)
-+ [Switch between vendor designs](switch-vendor-design.md)
+    + [Switch between vendor designs](vendor-switch.md)
 + [Integrated sites and warehouses](sites-warehouses-mapping.md)
 + [Integrated tax master](tax-mapping.md)
-+ [Initial synchronization choices and administration views](initial-sync.md)
-
 
 ## Support
 
++ [Initial synchronization choices and administration views](initial-sync.md)
 + [Troubleshooting data integration](dual-write-troubleshooting.md) 
 
