@@ -1302,6 +1302,8 @@
           href: localizations/latam-bra-complementary-information-icms-st-sped-fiscal-2020-layout-014.md
         - name: SPED fiscal – Layout 014
           href: localizations/latam-bra-sped-fiscal-layout-014.md
+        - name: Set SPED EFD contributions
+          href: localizations/latam-bra-sped-contributions.md
         - name: Parameters for legal entities
           href: localizations/latam-bra-legal-entity-parameters.md
         - name: Set up legal entity parameters
