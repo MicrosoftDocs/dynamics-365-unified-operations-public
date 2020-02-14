@@ -84,14 +84,12 @@ For more details, follow the instructions for applying a binary hotfix in [Apply
 This section describes how to apply a platform update package to a *local development environment* (one that that is not connected to LCS).
 
 ### How to get the platform update package
-Platform update packages are released by Microsoft and can be imported from the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). The package name is prefixed with **Dynamics 365 Unified Operations Platform Update**. Use these steps to import the platform update package:
+Platform update packages are released by Microsoft and can be imported from the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). The package name should contain **X.Y.Z with Platform update **. Use these steps to download the platform update package:
 
 1.  Go to your LCS project's Asset library.
-2.  On the **Software deployable package** tab, click **Import** to create a reference to the platform update package. 
+2.  On the **Software deployable package** tab, click the file name to download the platform update package.
 
     [![Import button](./media/importupgradepackage.png)](./media/importupgradepackage.png)
-
-3.  Select the desired platform update package.
 
 > [!NOTE]
 > The package in the Shared Asset library may not correspond to the latest build (with hotfixes) of the desired platform release. To guarrantee the latest build, use the LCS environment page as described earlier in this article.
