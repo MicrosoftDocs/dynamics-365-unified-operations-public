@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Set up an AAD B2C tenant in Commerce
-description: This topic describes how to set up your Azure Active Directory (AAD) business-to-consumer (B2C) tenants for user site authentication in Dynamics 365 Commerce.
+title: Set up an B2C tenant in Commerce
+description: This topic describes how to set up your Azure Active Directory (Azure AD) business-to-consumer (B2C) tenants for user site authentication in Dynamics 365 Commerce.
 author: BrianShook
 manager: annbe
 ms.date: 02/13/2020
@@ -32,13 +32,13 @@ ms.dyn365.ops.version:
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to set up your Azure Active Directory (AAD) business-to-consumer (B2C) tenants for user site authentication in Dynamics 365 Commerce.
+This topic describes how to set up your Azure Active Directory (Azure AD) business-to-consumer (B2C) tenants for user site authentication in Dynamics 365 Commerce.
 
-This topic covers the setup and configuration of your Azure Active Directory B2C tenant and utilizing it in your Dynamics 365 Commerce solution. You will learn how to create your Azure AD (AAD) B2C tenant in the Azure Portal as well as configure the tenant for your Commerce environment.
+This topic covers the setup and configuration of your Azure AD B2C tenant and utilizing it in your Dynamics 365 Commerce solution. You will learn how to create your Azure AD (AAD) B2C tenant in the Azure Portal as well as configure the tenant for your Commerce environment.
 
 ## Overview
 
-Dynamics 365 Commerce uses Azure Active Directory (AAD) B2C to support user credential and authentication flows. A user can sign up, sign in, and reset their password through these flows. AAD B2C stores sensitive user authentication information, such as username and password. The user record in the B2C tenant will store either a B2C local account record or a B2C social identity provider record. These B2C records will link back to the customer record in the Commerce environment.
+Dynamics 365 Commerce uses Azure AD B2C to support user credential and authentication flows. A user can sign up, sign in, and reset their password through these flows. Azure AD B2C stores sensitive user authentication information, such as username and password. The user record in the B2C tenant will store either a B2C local account record or a B2C social identity provider record. These B2C records will link back to the customer record in the Commerce environment.
 
 ## Create or link to an existing AAD B2C tenant in the Azure portal
 
@@ -64,7 +64,7 @@ Dynamics 365 Commerce uses Azure Active Directory (AAD) B2C to support user cred
 
     ![Link an existing Azure AD B2C Tenant to Azure Subscription](./media/B2CImage_3.png)
 
-1. Once the new AAD B2C directory is created (this may take a few moments), a link to the new directory will appear on the dashboard.
+1. Once the new Azure AD B2C directory is created (this may take a few moments), a link to the new directory will appear on the dashboard.
 
     ![Link to new AAD Directory](./media/B2CImage_4.png)
 
@@ -111,7 +111,7 @@ The following image shows settings on the **Azure AD B2c - Applications \> New a
 
 ### Format reply URLs
 
-Reply URLs are important as they allow a whitelist of the return domains when your site calls AAD B2C to authenticate a user. This allows the return of the authenticated user back to the domain from which they are logging in (your site domain). 
+Reply URLs are important as they allow a whitelist of the return domains when your site calls Azure AD B2C to authenticate a user. This allows the return of the authenticated user back to the domain from which they are logging in (your site domain). 
 
 In the **Reply URL** box of the **Azure AD B2c - Applications \> New application** screen, you need to add separate lines for both your site domain and, once your environment is provisioned, the Commerce-generated URL. These URLs must always use a valid URL format, and must be base URLs only (no trailing forward slashes or paths). Also, the string ``/_msdyn365/authresp`` needs to then be appended to the base URLs, as in the following examples.
 
@@ -120,9 +120,9 @@ In the **Reply URL** box of the **Azure AD B2c - Applications \> New application
 
 ## Create user flow policies
 
-User flows are the policies AAD B2C uses to provide secure sign in, sign up, edit profile, and forget password user experiences. Dynamics 365 Commerce uses these flows to perform the policy actions to interact with the AAD B2C tenant. When a user interacts with these policies, they are redirected to the AAD B2C tenant to perform the actions.
+User flows are the policies Azure AD B2C uses to provide secure sign in, sign up, edit profile, and forget password user experiences. Dynamics 365 Commerce uses these flows to perform the policy actions to interact with the Azure AD B2C tenant. When a user interacts with these policies, they are redirected to the Azure AD B2C tenant to perform the actions.
 
-You can opt to use the default user flows provided by AAD, which will display a page hosted by AAD B2C. Alternately, you can create an HTML page to control the look and feel of these user flow experiences. 
+You can opt to use the default user flows provided by Azure AD, which will display a page hosted by AAD B2C. Alternately, you can create an HTML page to control the look and feel of these user flow experiences. 
 
 To customize the user policy pages for Dynamics 365 Commerce, see [Set up custom pages for user logins](custom-pages-user-logins.md). For additional information, see [Customize the interface of user experiences in Azure Active Directory B2C](https://docs.microsoft.com/en-us/azure/active-directory-b2c/tutorial-customize-ui).
 
@@ -219,7 +219,7 @@ If not added, the default Azure AD B2C profiles will be the main profiles for yo
 If a user utilizes one of the Identity Providers you choose to offer below; an entity is still created in the Azure AD B2C tenant- but Azure AD B2C will authenticate the user’s login against the Identity Provider.
 
 > [!NOTE]
-> The identity provider login creates a record in the B2C Tenant; but in a different format (as it will call the external Social Identity Provider reference for authentication). The end user can use the same email address across Social Identity Providers, meaning the email username for logins may not be unique to the tenant (AAD B2C will enforce unique email only on the B2C Local accounts).
+> The identity provider login creates a record in the B2C Tenant; but in a different format (as it will call the external Social Identity Provider reference for authentication). The end user can use the same email address across Social Identity Providers, meaning the email username for logins may not be unique to the tenant (Azure AD B2C will enforce unique email only on the B2C Local accounts).
 
 To set up a social identity provider, follow these steps.  
 
@@ -263,7 +263,7 @@ Be sure to use the ‘Client ID’ and ‘Client secret’ as obtained in the ab
 
 ## Update headquarters with the new AAD B2C information
 
-Once the above AAD B2C provisioning steps are completed, the AAD B2C application must be registered in your Dynamics environment.
+Once the above Azure AD B2C provisioning steps are completed, the Azure AD B2C application must be registered in your Dynamics environment.
 
 In Dynamics, navigate to **Retail \> Shared Parameters**
 
@@ -303,11 +303,11 @@ Additionally, users must **Disable Manual Number Sequence generation**.
 
 If considering migrating customer records from a previous Identity Provider platform, please work with the Dynamics 365 Commerce team to review your customer migration needs.
 
-Additional AAD B2C documentation on customer migration can be found here: [Customer Migration](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-user-migration)
+Additional Azure AD B2C documentation on customer migration can be found here: [Customer Migration](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-user-migration)
 
 ### Custom policies
 
-For additional information regarding Customizing AAD B2C interactions and policy flows beyond what is offered by B2C standard policies, explore **Custom Policies** and related articles in the AAD B2C Documentation: [Custom policies](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-overview-custom). 
+For additional information regarding Customizing AAD B2C interactions and policy flows beyond what is offered by B2C standard policies, explore **Custom Policies** and related articles in the Azure AD B2C Documentation: [Custom policies](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-overview-custom). 
 
 ### Secondary admin
 
