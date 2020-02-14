@@ -128,23 +128,25 @@ To customize the user policy pages for Dynamics 365 Commerce, see [Set up custom
 
 To create default user flow policies, follow these steps.
 
-1. Go to the ‘User flows (policies)’ menu-item in the Azure AD B2C – User flows (policies) page 
-   
-![User Flows menu in Application settings](./media/B2CImage_9.png)
-
-2. Select **New User Flow**.
+1. In the Azure portal, select **User flows (policies)** in the left navigation pane.
+1. On the **Azure AD B2C – User flows (policies)** page, select **New User Flow**.
 3.  There are three basic flows offered:
     1.  Sign up and sign in
     2.  Profile editing
     3.  Password reset
         
+	
+![User Flows menu in Application settings](./media/B2CImage_9.png)
+
 **The following steps will walk through setting each up for the Dynamics 365 Commerce project:**
 
 ![Selecting a user flow in the Add User Flow menu](./media/B2CImage_10.png "Selecting a user flow in the Add User Flow menu")
 
 ### Create a sign up and sign in user flow
 
-1. Select ‘Sign up and sign in’
+1. In the Azure portal, select **User flows (policies)** in the left navigation pane.
+1. On the **Azure AD B2C – User flows (policies)** page, select **New User Flow**.
+1. On the **Recommended** tab, select **Sign up and sign in**.
 2. Enter a policy ‘Name’. This will show later with the prefix the portal assigns (ex: ‘B2C_1_’…)
 3. Enable Identity Providers (checkbox)
 4. Choose if your company will enforce Multifactor Authentication. If so, enable ‘Multifactor Authentication’ in the menu
