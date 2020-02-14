@@ -101,16 +101,17 @@ Platform update packages are released by Microsoft and can be imported from the 
 ### Install the deployable package
 
 1.  Download the platform update package (AXPlatformUpdate.zip) to your virtual machine (VM).
-2.  Unzip the contents to a local directory.
-3.  Depending on the type of environment that you're upgrading, open the PlatformUpdatePackages.Config file under \\AOSService\\Scripts, and change the **MetaPackage** value.
+2.  Rename the zip file to a.zip. Otherwise you get 'Error 0x80010135: Path too long' during extraction.
+3.  Unzip the contents to a local directory.
+4.  Depending on the type of environment that you're upgrading, open the PlatformUpdatePackages.Config file under \\AOSService\\Scripts, and change the **MetaPackage** value.
     -   If you're upgrading a development or demo environment that contains source code, change the **MetaPackage** value to **dynamicsax-meta-platform-development**.
     -   If you're upgrading a runtime environment, such as a tier-2 sandbox environment or another environment that doesn't contain source code, the default value, **dynamicsax-meta-platform-runtime**, is correct.
 
     > [!NOTE]
     > Step 3 is not applicable when upgrading to Platform update 4 or later.
 
-4.  Follow the instructions for installing a deployable package. See [Install deployable packages from the command line](../deployment/install-deployable-package.md).
-5.  If you're working in a development environment, rebuild your application’s code.
+5.  Follow the instructions for installing a deployable package. See [Install deployable packages from the command line](../deployment/install-deployable-package.md).
+6.  If you're working in a development environment, rebuild your application’s code.
 
 #### Example
 
