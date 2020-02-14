@@ -33,15 +33,15 @@ ms.dyn365.ops.version: Human Resources
 
 This article describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.2867. The numbers in parentheses in some headings refer to support numbers in Microsoft Dynamics Lifecycle Services (LCS).
 
-## Exiting entities compfixedempls and hcmpersonimage should be accessible from OData - (414178)
+## Existing entities CompFixedEmpls and HcmPersonImage should be accessible from OData (414178)
 
-With this weeks release the compfixedempls and hcmpersonimage entities are now public and available via ODAta.
+With this week's release, the **CompFixedEmpls** and **HcmPersonImage** entities are now public and available via ODAta.
 
-## Delete Employment from CDS does not work when employment details are not active - (403193)
+## Delete employment from Common Data Service doesn't work when employment details aren't active (403193)
 
-This change now allows for deletion of employment via CDS when no active employment details exist.
+This change now allows for deleting employment via Common Data Service when no active employment details exist.
 
-## Course registration workflow changes status to complete and errors after second approval - (409749)
+## Course registration workflow changes status to complete and errors after second approval (409749)
 
 Course registration workflow has been updated to allow for multiple approvers.
 
