@@ -40,7 +40,7 @@ These topics describe dual-write integration.
 
 + [What is dual-write?](dual-write-overview.md) 
     - [Top reasons to use dual-write](dual-write-overview.md#top-reasons-to-use-dual-write)
-    - [What does dual-write mean for users and architects of customer relationship management products?](al-write-overview.md#what-does-dual-write-mean-for-users-and-architects-of-customer-relationship-management-products)
+    - [What does dual-write mean for users and architects of customer relationship management products?](dual-write-overview.md#what-does-dual-write-mean-for-users-and-architects-of-customer-relationship-management-products)
 
 ## Mapping between concepts in Finance and Operations applications and concepts in model-driven apps in Dynamics 365
 
