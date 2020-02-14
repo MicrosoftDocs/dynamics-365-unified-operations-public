@@ -370,7 +370,48 @@ As opposed to downloading F&O data from an Azure Data lake into your on-premise
 data warehouses, you can bring your on-premise data into an Azure Data lake. We
 refer to this transformation as modernizing data warehouses.
 
+Planning the transition
+=======================
+
+You can plan your transition to Azure Data lake in multiple stages as shown in
+the diagram below. Each stage yields business benefits that can be justified on
+their own. You can use the following phases as a planning guideline.
+
+![](media/1e037f6e9fd075ffb6f739693664596a.png)
+
  
+
+1.  You may be using BYOD as well as Entity store based analytical workspaces
+    today.
+
+>    
+
+1.  **Easy access to data:** As you get access to Tables, Entities and Aggregate
+    measurements in Azure Data Lake, you will be able to retire BYOD and use the
+    data readily available. This means a reduction in management effort and
+    costs as we discussed above. You may keep the existing downstream data
+    warehouses and pipelines intact to manage project scope and budget.
+
+ ** **
+
+1.  **Enabling power users:** Analytical workspaces will transition to Azure
+    Data lake as a service update. This means, ready-made analytical workspaces
+    are based on the same data that's available in the Azure Data Lake.
+    Analytical workspaces enable easy extensibility to power users. Along with
+    this update, you can enable your power users to use full capabilities of
+    PowerBI.com. Power users can easily combine data from online services as
+    well as data is already available in the Azure Data Lake using capabilities
+    such as PowerBI dataflows. Same reports available in Analytical workspaces
+    can be consumed directly in PowerBI.com
+
+>    
+
+1.  **Modernizing your (legacy) data warehouse** is likely an investment that
+    will bring most benefits. You can move your existing data in your on-premise
+    data warehouse to the cloud. You can rely on cloud based computing services
+    and apply the same transformations on a pay-per use basis. You could also
+    combine your business data with sensor and device data.
+
 
  
 
