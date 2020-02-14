@@ -143,7 +143,7 @@ Data is stored in Azure Data Lake to comply with Common Data Model (CDM) folder 
 •	Presence of metadata (and complying with CDM folder standard) enables Azure and other services to read and transform this data.
 
 CDM folder structure form F&O is shown below
-
+<to do: image ../FnO-CDM-Folder-Structure.png)
  
 
 For more information on CDM in Azure Data lake see here: https://docs.microsoft.com/en-us/common-data-model/data-lake
@@ -160,6 +160,135 @@ https://powerapps.microsoft.com/en-us/blog/exporting-cds-data-to-azure-data-lake
 Power users can transform data in Azure Data Lake using CDS Data Flows. See the following document for more details  
 https://docs.microsoft.com/en-us/common-data-model/data-lake
 
+If you are using BYOD, how you can use Azure Data Lake in the future
+====================================================================
+
+BYOD service is used by customers to extract data from F&O mostly for reporting
+or Analytics. BYOD service requires the customer to provision and maintain a SQL
+Azure database for storing data that are exported from F&O.
+
+Some customers use the exported data in the BYOD for reporting. They can simply
+point reporting tools to the SQL Azure DB and create reports.
+
+Some customers use BYOD as a staging area - where a "snapshot" of the F&O data
+is retained. They have an enterprise data warehouse – they use additional data
+pipelines that copy the data from the BYOD “staging area” to their data
+warehouse. They may also have further downstream processing and transformation
+pipelines.
+
+If you using BYOD today for scenarios above, on-boarding to Azure Data Lake will
+yield several benefits.
+
+ 
+
+Data is already here, no need to export: 
+-----------------------------------------
+
+Azure Data Lake integration enables the user to choose Tables and Entities
+(similar to the BYOD experience). Once chosen, the data is updated in Azure Data
+Lake by the system. The system also continuously exports data as they change
+within F&O. Updated F&O data is reflected in the Azure Data Lake within few
+minutes of a change.
+
+ 
+
+**NOTE:** Table data is refreshed within minutes of a change within F&O.
+Currently the services offers an SLA of data updates within 10 minutes.
+
+ 
+
+With Azure Data Lake integration, customers do not need to monitor and manage
+complex data export and orchestration schedules. Data is updated in the Data
+lake without user intervention.
+
+ 
+
+Reduced cost of data storage
+----------------------------
+
+Data is stored in an Azure Data lake (Gen2), as opposed to an Azure SQL database
+as required by BYOD. Customer gets to use a storage medium much cheaper than
+Azure SQL database.
+
+ 
+
+**NOTE:** Since Azure Data Lake Gen2 is in customer's subscription, the customer
+must pay for data storage as well as I/O costs incurred when reading and writing
+data into the Data Lake. Customer may also incur IO costs due to the data being
+written/ updated in the Data lake by F&O. F&O requires the Data lake be
+provisioned within the same Geo/region as the F&O environment to reduce
+intra-region IO costs.
+
+For an indicative cost, pl. see the calculator here:
+<https://azure.microsoft.com/en-us/pricing/details/storage/data-lake/>
+
+ 
+
+Existing downstream/ consumption pipelines can be preserved
+-----------------------------------------------------------
+
+As we discussed earlier, BYOD is predominantly used in 2 scenarios
+
+1.  Direct access to BYOD by Reporting and other tools
+
+2.  Use BYOD as a temporary staging area to store data while being exported to
+    other downstream systems such as Data warehouses
+
+ 
+
+In case of scenario (1) you may point reporting tools to the Azure SQL database.
+Many reporting tools work with SQL databases since they can read data using
+T-SQL.
+
+In case of (2), if you may use data integration/ transformation tools such as
+Azure data factory. Many data integration tools can consume data from the Azure
+Data Lake directly.
+
+ 
+
+In case of (1) and (2), If you are reading the database using T-SQL, you can
+create a SQL server end-point using Azure Synapse. Azure synapse SQL-on demand
+capability enables querying Azure Data Lake using T-SQL language. Downstream
+tools do not need to be modified since you can preserve the data shape similar
+to BYOD.
+
+ 
+
+Simplified data pipeline for near-real time reporting 
+------------------------------------------------------
+
+In a traditional data warehouse, data is stored in a staging area before it can
+be aggregated and simplified for reporting. You may also have a reporting tools
+that aggregate data for better user experiences. Having multiple data stops (for
+staging, de-normalization and aggregation) increases data staleness – that is
+the time it takes from activity to the time it takes for the reports to reflect
+the results.
+
+ 
+
+Traditional data warehouses built with multiple data stops are ideal for
+reporting on data that changes daily or several times a day. However, if you
+need to report on near-real time data, for an example, for reporting on Retail
+sales data within minutes as they happen, you may need to design a data pipeline
+that has minimal data stops. This pattern is known as the hot-path, cold path
+reporting (also known as Lambda architecture). Having multiple data stops and
+multiple data pipelines adds to complexity and increased management efforts.
+
+ 
+
+Data lake integration enables "warm-path" as the default reporting option. Since
+data is updated within minutes in an Azure Data Lake, this approach may be
+acceptable for most reporting scenarios including cases that involve near-real
+time reporting.
+
+ 
+
+For near-real time reporting, you can minimize data staging and preparation
+steps by using on-demand query (ex. Azure Synapse) and PowerBI direct query mode
+that queries semi-prepared data within the Data lake. For analytical reporting,
+you can de-normalize and aggregate the data within the Data lake.
+
+ 
 
 
 
