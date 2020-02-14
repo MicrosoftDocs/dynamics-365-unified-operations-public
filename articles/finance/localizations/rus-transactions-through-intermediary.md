@@ -67,7 +67,7 @@ Preliminary setup
 
 8.  Select **Save**.
 
-![A screenshot of a computer Description automatically generated](media/0a9c51ce5474f9cf5825f7827eef5eeb.png)
+![](media/1_Inventory_profiles.jpg)
 
 ### Set up the Inventory profile and Owner tracking dimensions
 
@@ -83,16 +83,16 @@ Preliminary setup
 5.  On the **Tracking dimensions** FastTab, set up the Inventory profile and
     Owner tracking dimensions:
 
--   On the **Inventory profile** line, select the **Active**, **Primary
-    stocking**, **Physical inventory**, **Financial inventory**, **Coverage plan
-    by dimensions**, and **Transfer** check boxes.
+    -   On the **Inventory profile** line, select the **Active**, **Primary
+        stocking**, **Physical inventory**, **Financial inventory**, **Coverage plan
+        by dimensions**, and **Transfer** check boxes.
 
--   On the **Owner** line, select the **Active**, **Physical inventory**, and
-    **Transfer** check boxes.
+    -   On the **Owner** line, select the **Active**, **Physical inventory**, and
+        **Transfer** check boxes.
 
-1.  Select **Save**.
+6.  Select **Save**.
 
-![A screenshot of a cell phone Description automatically generated](media/497fe795792a699157dd804119f090aa.jpg)
+![](media/2_Tracking_dimension_groups.jpg)
 
 ### Set up a number sequence for the report for the principal
 
