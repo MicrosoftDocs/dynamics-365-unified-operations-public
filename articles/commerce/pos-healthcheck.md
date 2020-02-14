@@ -39,9 +39,9 @@ This topic describes health check operation in the point of sale (POS).
 
 ## Overview
 
-Retail stores can be complex environments with many applications and devices in use. As operations grow, it can become difficult to ensure that operations are always running smoothly because of dependencies on things like peripherals that can break or accidentally become unplugged over the course of the day. Troubleshooting issues related to devices and services can be very costly for larger merchants and equally frustrating for smaller operations. 
+Retail stores can be complex environments with many applications and devices in use. As operations grow, it can become difficult to ensure that operations are always running smoothly because of dependencies on things like peripherals that can break or accidentally become unplugged over the course of the day. Troubleshooting issues related to devices and services can be costly for larger merchants and equally frustrating for smaller operations. 
 
-Commerce versions 10.0.10 and higher includes an operation which can alleviate some of this pain by providing a method to check devices from the POS outside of normal operations. This health check operation will help retailers detect problems before they occur. 
+Commerce versions 10.0.10 and higher includes an operation that can alleviate some of this pain by providing a method to check devices from the POS outside of normal operations. This health check operation will help retailers detect problems before they occur. 
 
 ## Key terms
 
@@ -52,7 +52,7 @@ Commerce versions 10.0.10 and higher includes an operation which can alleviate s
 
 ## Health check operation
 
-The health check is operation ID 717 on the **POS Operations** page in Commerce Headquarters (HQ). It can be used while the POS is in non-drawer mode, but a hardware station must be active. By default, the health check will only check devices that are configured in the hardware profile for the hardware station active at the time for a register. If a register uses multiple hardware stations over the course of a day, the register will need to connect to them one at a time to perform health checks for those hardware stations. There is  no store-level health check, but this could potentially be done through retail server extensibility. 
+The health check is operation ID 717 on the **POS Operations** page in Commerce Headquarters (HQ). It can be used while the POS is in non-drawer mode, but a hardware station must be active. By default, the health check will only check devices that are configured in the hardware profile for the hardware station active at the time for a register. If a register uses multiple hardware stations over the course of a day, the register will need to connect to them one at a time to perform health checks for those hardware stations. There is  no store-level health check, but this type of check could potentially be done through retail server extensibility. 
 
 ### Out-of-box health checks
 
@@ -70,7 +70,7 @@ The health check is operation ID 717 on the **POS Operations** page in Commerce 
 
 ### Use health check in POS
 
-When the health check operation is invoked in the POS, the configured devices will be listed in a pane on the right side showing device status. To perform a health check on a single device, select the device and then click **Test selected**. To perform a health check for all devices, click **Test all**. The **Test all** function will check all devices one by one and update the status in the **Status** column. The **Last check** column indicates when the health check was last executed for the each device. 
+When the health check operation is invoked in the POS, the configured devices will be listed in a pane on the right side showing device status. To perform a health check on a single device, select the device and then click **Test selected**. To perform a health check for all devices, click **Test all**. The **Test all** function will check all devices one by one and update the status in the **Status** column. The **Last check** column indicates when the health check was last executed for each device. 
 
 If the health check does not encounter an error, the device's status will be **Ok**. If a health check fails, the status will indicate that there was a failure. The pane on the right side will provide details related to the error or instruct the user to contact their system administrator. 
 
@@ -78,7 +78,7 @@ Some devices, such as the OPOS keylock, do not have health checks out-of-box. If
 
 ### Extending health check
 
-The out-of-box health check tests are configured to provide some user friendly messages for common errors, but not all scenarios are covered. Through extensibility, merchants can map user friendly messages to errors that may be specific to their environment. 
+The out-of-box health check tests are configured to provide some user-friendly messages for common errors, but not all scenarios are covered. Through extensibility, merchants can map user-friendly messages to errors that may be specific to their environment. 
 
 Custom health checks can also be created to check devices not supported out-of-box or services upon which the POS may depend. 
 
