@@ -173,7 +173,7 @@ Create and print a report for a principal, and reissue the seller's factures to 
 3.  In the **From date** and **To date** fields, specify the period for the
     report.
 
->   *Note.* You can leave the **From date** field blank.
+    >   *Note.* You can leave the **From date** field blank.
 
 4.  In the **Principal type** field, select **Customer**.
 
@@ -183,9 +183,9 @@ Create and print a report for a principal, and reissue the seller's factures to 
 
 7.  Select **OK**.
 
->   *Note*. To create the headers for all the reports for the principal that are
->   required in the specified period, select **Functions \> Create report
->   headers on shipments**.
+    >   *Note*. To create the headers for all the reports for the principal that are
+    >   required in the specified period, select **Functions \> Create report
+    >   headers on shipments**.
 
 8.  Select **Functions \> Update lines on shipment** to open the **Generate
     report for principal on shipments** dialog box, and then select **OK** to
@@ -268,11 +268,11 @@ be included on the reports for the principals.
     select **Commission agent** to indicate that the prepayment will be re-sent
     to the sellers.
 
->   *Note.* If you don't see the **Kind of activity** column, right-click in the
->   row that has the column names, and then select **Add columns**. Select the
->   check box for the **Kind of activity** column, and then select **Insert**.
+    >   *Note.* If you don't see the **Kind of activity** column, right-click in the
+    >   row that has the column names, and then select **Add columns**. Select the
+    >   check box for the **Kind of activity** column, and then select **Insert**.
 
-   ![](media/14_Customer_payments.jpg)
+       ![](media/14_Customer_payments.jpg)
 
 3.  On the **Vendor payment journal** page, create a vendor prepayment, and then
     select **Lines**.
