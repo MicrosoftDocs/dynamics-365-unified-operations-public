@@ -103,25 +103,24 @@ Platform update packages are released by Microsoft and can be imported from the 
 1.  Download the platform update package (AXPlatformUpdate.zip) to your virtual machine (VM).
 2.  Rename the zip file to a.zip. Otherwise you get 'Error 0x80010135: Path too long' during extraction.
 3.  Unzip the contents to a local directory.
+
+    > [!NOTE]
+    > Step 4 is not applicable when upgrading to Platform update 4 or later.
+
 4.  Depending on the type of environment that you're upgrading, open the PlatformUpdatePackages.Config file under \\AOSService\\Scripts, and change the **MetaPackage** value.
     -   If you're upgrading a development or demo environment that contains source code, change the **MetaPackage** value to **dynamicsax-meta-platform-development**.
     -   If you're upgrading a runtime environment, such as a tier-2 sandbox environment or another environment that doesn't contain source code, the default value, **dynamicsax-meta-platform-runtime**, is correct.
 
-    > [!NOTE]
-    > Step 3 is not applicable when upgrading to Platform update 4 or later.
-
-5.  Follow the instructions for installing a deployable package. See [Install deployable packages from the command line](../deployment/install-deployable-package.md).
-6.  If you're working in a development environment, rebuild your application’s code.
-
-#### Example
-
+5.  Open a Command Prompt window, and go to the folder where you extracted a.zip.
 ```
-AXUpdateInstaller.exe generate -runbookid="OneBoxDev" -topologyfile="DefaultTopologyData.xml" -servicemodelfile="DefaultServiceModelData.xml" -runbookfile="OneBoxDev-runbook.xml"
+    AXUpdateInstaller.exe generate -runbookid="OneBoxDev" -topologyfile="DefaultTopologyData.xml" -servicemodelfile="DefaultServiceModelData.xml" -runbookfile="OneBoxDev-runbook.xml"
 
     AXUpdateInstaller.exe import -runbookfile=OneBoxDev-runbook.xml
 
     AXUpdateInstaller.exe execute -runbookid=OneBoxDev
 ```
+
+6.  If you're working in a development environment, rebuild your application’s code.
 
 ### Install the Visual Studio development tools (Platform update 3 or earlier)
 
