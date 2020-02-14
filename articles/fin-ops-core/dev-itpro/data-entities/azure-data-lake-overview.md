@@ -288,6 +288,90 @@ steps by using on-demand query (ex. Azure Synapse) and PowerBI direct query mode
 that queries semi-prepared data within the Data lake. For analytical reporting,
 you can de-normalize and aggregate the data within the Data lake.
 
+If you are using Analytical workspaces, how you can use Azure Data Lake in the future
+=====================================================================================
+
+Analytical workspaces enable in-context, operational analytics within F&O.
+Analytical workspaces are built as an extension to F&O workspaces - a cockpit
+that provides a birds eye view of business processes. There are over 25
+ready-made Analytical workspaces that provide interactive, near-real time data
+exploration. You can drive action by adding contextual gestures into Analytical
+workspaces - users can act on the findings without leaving the report. There is
+an extensive programming model built into F&O that enables driving ERP action
+and business logic from within an analytical workspace.
+
+ 
+
+You can use ready-made Analytical workspaces from Microsoft (as well as partners
+and ISVs) as a starting point. Or if you have built your own Power BI based
+analytical reports (with BYOD or your own data warehouse), you can pin them into
+Analytical workspaces. In both cases, you can enrich business processes with
+in-context reporting that drives action.
+
+ 
+
+![](media/1bd39a6505d506475b6e360dbbc61b3e.png)
+
+Ready-made analytical workspaces that are part of core F&O solution (or an ISV
+extension) includes reports that are built using Entity store. Entity store
+contains aggregate measurements (ie. Simplified data structures such as fact
+tables and dimensions).
+
+ 
+
+Aggregate measurements will be available in the Azure Data lake as opposed to
+Entity store. If you are using ready-made Analytical workspaces built over
+Entity store, they will be pointed to Azure Data lake in a future monthly
+service update. Microsoft service team will notify you when your Entity store is
+ready to transition to Azure Data lake. You will not need to modify the reports
+themselves - meaning no development work will be required.
+
+ 
+
+If you have pinned your own PowerBI reports to Analytical workspaces, you can
+transition them to Azure data lake at your own schedule.
+
+ 
+
+How you can modernize your existing data warehouse with Azure data Lake
+=======================================================================
+
+While you can make use of Azure Data Lake Integration as a way to transition out
+of BYOD and gain immediate benefits, there's a lot more you can do with the
+benefits offered by Azure Data Lake.
+
+ 
+
+Azure Data Lake is designed to store large amounts of data into hundreds or
+terra bytes or more. Azure data lakes leverage inexpensive storage technology,
+ie. Blog storage, that is used by many underlying services of Azure.
+
+ 
+
+Azure Data Lakes are designed for big data analytics. You can bring your legacy
+and historical data from your own systems into Azure Data Lake. Not only
+business data, you can bring scanned documents and apply machine learning models
+to make sense of the content and sentiments expressed by the authors. You can
+collect signals from devices and vehicles or machines on the shop floor and
+store the data in Data lakes. You can apply machine learning models to detect
+anomalies and patterns in signals and join the results with business data to
+take proactive actions.
+
+ 
+
+Azure Data Lake has many associated services that enables Analytics, data
+transformation as well as applying AI and machine learning. Azure services from
+Microsoft, partners as well as open source tools can be used to reason over the
+data.
+
+ 
+
+As opposed to downloading F&O data from an Azure Data lake into your on-premise
+data warehouses, you can bring your on-premise data into an Azure Data lake. We
+refer to this transformation as modernizing data warehouses.
+
+ 
+
  
 
 
