@@ -43,9 +43,9 @@ Financial reporting includes features that support complex currency reporting re
 ## Filtering by currency
 By default, all report amounts are summarized and presented in the accounting currency of the relevant company. If you need to do additional analysis by the transactions and related currencies, you can do so by setting filters on the report. 
 
-- In the column definition, you can use the **Currency** filter for any amount column, and specify the ISO code of the currency you want to restrict the column to. When you set the column to a specific currency, only transactions entered for that currency will be displayed. 
+- In the column definition, you can use the **Currency** filter for any amount column. You can also  specify the ISO code of the currency you want to restrict the column to. When you set the column to a specific currency, only transactions entered for that currency will be displayed. 
 
-- In the row definition, you can specify a **Row modifier** with the attribute set to **Transaction currency** with a currency code listed as the restriction. As is the case when you restrict a column to a currency, when you restrict the row to a specific currency,  only transactions entered for the matching currency will be displayed. 
+- In the row definition, you can specify a **Row modifier** with the attribute set to **Transaction currency** with a currency code listed as the restriction. When you restrict the row to a specific currency, only transactions that are entered for the matching currency will be displayed. This is also the case when you restrict a column to a currency. 
 
 
 ## Reporting on currency
@@ -124,7 +124,7 @@ You can use Financial reporting to calculate the CTA in two ways:
 
 1. Use the Rounding Adjustments dialog in the row definition
 
-Financial reporting will calculate the amount of the difference from currency calculations using the rounding adjustments calculation. To use this calclation, edit the **Row Definition** and click **Edit > Rounding Adjustment**. Set the total assets row, total liabilities and equities row, and a threshold for maximum variance to silently accept. A line named **Rounding Adjustment** will be created for the rounding difference row and shown upon drill-down of the row you've selected.
+Financial reporting will calculate the amount of the difference from currency calculations using the rounding adjustments calculation. To use this calculation, edit the **Row Definition** and click **Edit > Rounding Adjustment**. Set the total assets row, total liabilities and equities row, and a threshold for maximum variance to silently accept. A line named **Rounding Adjustment** will be created for the rounding difference row and shown upon drill-down of the row you've selected.
  
 2. Create a single line that includes all accounts and use it to calculate the CTA.
 
