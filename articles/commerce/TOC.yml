@@ -366,6 +366,8 @@
               href: dev-itpro/retail-peripheral-simulator.md
             - name: Connect peripherals to the POS
               href: define-maintain-channel-clients-registers-hw-stations.md
+            - name: Health check for POS peripherals and services
+              href: pos-healthcheck.md
           - name: Screen layouts
             items:
             - name: Demo data screen layouts in MPOS/CPOS
