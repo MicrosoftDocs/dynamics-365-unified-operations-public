@@ -30,7 +30,7 @@ The following illustration shows the business process for registering
 intermediary deals. Rectangular elements are reflected in the system. Oval
 elements are present in the business process but aren't reflected in the system.
 
-![A close up of a map Description automatically generated](media/bc04d7e2d63dc4dad0daf31f2e0bebf7.jpg)
+![](media/Sales_on_commission_english.jpg)
 
 Create a purchase agreement for a sale by a commissioner
 --------------------------------------------------------
@@ -49,9 +49,7 @@ Create a purchase agreement for a sale by a commissioner
 
 5.  Specify other details, and then select **OK**.
 
-![](media/f3b13f9425be5cba74a41b9f00bb3c5b.jpg)
-
->   A screenshot of text Description automatically generated
+![](media/24_Create_purchase_agreement.jpg)
 
 1.  On the **Purchase agreements** page, switch to the **Header** view.
 
@@ -66,9 +64,7 @@ Create a purchase agreement for a sale by a commissioner
 -   In the **Inventory profile** field, select the inventory profile that you
     created earlier.
 
-![](media/d32b4dc97a86ac43eade76e3dba1393a.jpg)
-
->   A screenshot of a social media post Description automatically generated
+![](media/25_Purchase_agreements.jpg)
 
 1.  On the Action Pane, on the **Purchase agreement** tab, in the **Generate**
     group, select **Confirmation** to update the status of the agreement to
@@ -113,9 +109,7 @@ Create a purchase order and generate a purchase invoice
 5.  In the **Owner** field, select the owner (principal) that you created
     earlier.
 
-![](media/21b80122c3890ff15905f0c7aca4a83d.jpg)
-
->   A screenshot of a cell phone Description automatically generated
+![](media/26_All_purchase_orders.jpg)
 
 1.  Post the invoice.
 
@@ -138,9 +132,7 @@ Create a sales order and update the facture
 5.  Select a purchase transaction, select **Set mark now**, and then select
     **OK**.
 
-![](media/8fe5bfc82a2e341af207851c904f2582.jpg)
-
->   A screenshot of a social media post Description automatically generated
+![](media/27_Sales_order.jpg)
 
 1.  Specify other sales order parameters, and create a facture.
 
@@ -176,9 +168,7 @@ Create and print a report for a principal, and reissue the buyer's factures to t
 9.  Select **Print** to open the **Report for principal to Microsoft Excel**
     dialog box, and then select **OK** to print the report for the principal.
 
-![](media/28d2027e6e6d94e6dc9a57e1c6bea345.jpg)
-
->   A screenshot of a cell phone Description automatically generated
+![](media/28_Отчет_коммиссионера_о_реализации_товара.jpg)
 
 1.  The principal reissues the facture to the agent, based on the factures that
     the agent issues to the buyer. The principal learns about these factures
@@ -186,9 +176,7 @@ Create and print a report for a principal, and reissue the buyer's factures to t
     select the lines that the principal reissues the facture for, and then
     select **Approval \> Approve all** to approve the lines on the report.
 
-![](media/350be2c842155d9dd2d2a912e5bdbcfb.jpg)
-
->   A screenshot of a social media post Description automatically generated
+![](media/29_Report_for_principal.jpg)
 
 1.  Select **Facture \> Update facture** to generate the factures that were
     reissued by the principal.
@@ -200,9 +188,7 @@ Create and print a report for a principal, and reissue the buyer's factures to t
 
 3.  Specify other required details, and create the facture.
 
-![](media/d7ca7b79768e7abb08295b2f67a63249.jpg)
-
->   A screenshot of a cell phone Description automatically generated
+![](media/30_Update_facture.jpg)
 
 1.  On the **Report for principal** page, follow these steps:
 
@@ -236,12 +222,12 @@ facture accounting journal reflects the allocated parts of the customer's
 factures. The information about the principals is presented in columns 10
 through 12.
 
-![A close up of text on a white background Description automatically generated](media/25e30e650d3aa41218a014222d2723a3.jpg)
+![](media/31_Facture_accounting_journal_Part_1.jpg)
 
 The **Received** worksheet of the facture accounting journal reflects the
 factures that are confirmed by the principal.
 
-![A screenshot of a cell phone Description automatically generated](media/e1622b70f8716bf0ec219d03bfb12d41.jpg)
+![](media/32_Facture_accounting_journal_Part_2.jpg)
 
 Prepayments
 -----------
@@ -267,9 +253,7 @@ prepayment facture that is created.
     row that has the column names, and then select **Add columns**. Select the
     check box for the **Kind of activity** column, and then select **Insert**.
 
-![](media/241a70bc1c01b633f234d1548066216e.jpg)
-
->   A screenshot of a social media post Description automatically generated
+![](media/33_Customer_payments.jpg)
 
 1.  On the **Vendor payment journal** page, create a vendor prepayment that has
     a facture, and then select **Lines**.
@@ -277,9 +261,7 @@ prepayment facture that is created.
 2.  On the **Vendor payments** page, in the **Kind of activity** column, select
     **Commission agent**.
 
-![](media/f31baf8065079195971d3ac89fb83646.jpg)
-
->   A screenshot of a social media post Description automatically generated
+![](media/34_Vendor_payments.jpg)
 
 1.  Create a purchase order and an invoice as described in the [Create a
     purchase order and generate a purchase
@@ -302,16 +284,12 @@ prepayment facture that is created.
     prepayment voucher to include the prepayment on the report for the principal
     that is responsible for VAT prepayment.
 
-![](media/872821443834cb40f8aa712a14ba77c9.jpg)
-
->   A screenshot of a social media post Description automatically generated
+![](media/35_Report_for_principal.jpg)
 
 1.  Select **Transactions** to view the allocated amount in the **Amount in
     reporting currency** field.
 
-![](media/a48eaf25c1b6a496e7e7128c659fdd06.jpg)
-
->   A screenshot of a social media post Description automatically generated
+![](media/36_Customer_transactions.jpg)
 
 1.  On the **Report for principal** page, approve lines on the **Overview** tab
     and vouchers on the **Prepayments** tab, as described in the [Create and
@@ -333,7 +311,7 @@ principal](../rus-transactions-through-intermediary/rus-transactions-through-int
 section earlier in this topic. The report for the principal has two sections:
 one for shipments and one for prepayments.
 
-![A screenshot of a cell phone Description automatically generated](media/55518d9726df5c3426ad96fdd6caa8b4.jpg)
+![](media/37_Отчет_коммиссионера_о_реализации_товара.jpg)
 
 ### Create a prepayment facture
 
@@ -356,9 +334,7 @@ one for shipments and one for prepayments.
 
 1.  Select **OK**.
 
-![](media/0a3b3e276e7ff6f520903cbf7879318f.jpg)
-
->   A screenshot of a cell phone Description automatically generated
+![](media/38_Select_prepayments.jpg)
 
 1.  On the **Create prepayment facture** page, use the **Marked** check box to
     select the relevant prepayment.
@@ -366,22 +342,18 @@ one for shipments and one for prepayments.
 2.  Specify the date of the registration and facture, and then select
     **Create**.
 
-![](media/bb96630eb2ddb9c4cc606f4138f7dd81.jpg)
-
->   A screenshot of a social media post Description automatically generated
+![](media/39_Create_prepayment_facture.jpg)
 
 1.  On the **Report for principal** page, on the **Prepayments** tab, select
     **Principal \> Facture** to view the registered principal's facture for
     prepayment.
 
-![](media/1c18b0af9be1655c0728f807a4a108f7.jpg)
-
->   A screenshot of a social media post Description automatically generated
+![](media/40_Facture_journal.jpg)
 
 1.  Select **Print \> Original** to print the original facture, or select
     **Print \> Copy** to print the facture copy.
 
-![A close up of text on a white background Description automatically generated](media/432f2cec3aa9ffcf3a8d68eeb335ad6b.jpg)
+![](media/41_Счет-фактура.jpg)
 
 ### Create a facture accounting journal
 
@@ -404,14 +376,12 @@ Review the owner that is assigned to an agreement
 3.  Select **Transactions** to review the inventory transactions that are
     associated with the inventory owner.
 
-![](media/ad93b2237a3cdec4ea80f7448a73ae6b.png)
-
->   A screenshot of a computer Description automatically generated
+![](media/42_Inventory_transactions.png)
 
 1.  Select **Transaction details**. On the **Inventory dimensions** FastTab, you
     can see the owner and the inventory profile.
 
-![A screenshot of a computer Description automatically generated](media/7514e5d212363101b03ac3d0ce6eea39.png)
+![](media/43_Transaction_details.png)
 
 The settings that are described here let you track the commission goods by the
 owner of the goods according to the agreement.
