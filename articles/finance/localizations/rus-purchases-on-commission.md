@@ -66,7 +66,7 @@ Create a sales agreement for a purchase by an agent
     -   In the **Inventory profile** field, select the inventory profile that you
         created earlier.
 
-        ![](media/4_Sales_agreements.jpg)
+    ![](media/4_Sales_agreements.jpg)
 
 9.  On the Action Pane, on the **Sales agreement** tab, in the **Generate**
     group, select **Confirmation** to update status of the agreement to
@@ -77,7 +77,7 @@ Create inventory owners (suppliers) for a commissioner
 
 1.  Go to **Inventory management \> Setup \> Dimensions \> Inventory owners**.
 
-2.  Select **New** to create an inventory owner*.*
+2.  Select **New** to create an inventory owner.
 
 3.  In the **Owner** field, enter the code for the owner.
 
