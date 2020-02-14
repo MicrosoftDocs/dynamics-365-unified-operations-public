@@ -40,7 +40,7 @@ To get started with LCS, see the [Lifecycle Services (LCS) user guide](lcs-user-
 > [!IMPORTANT]
 > LCS features and service changes will no longer be announced via blog posts. Descriptions of LCS features are provided in the [release plans](https://go.microsoft.com/fwlink/?linkid=2010158). This topic lists the features that are included in LCS releases.
 
-## February 2020 - Wave 2
+## February 2020 - Wave 1
 
 | Area | Feature |
 |------|---------|
