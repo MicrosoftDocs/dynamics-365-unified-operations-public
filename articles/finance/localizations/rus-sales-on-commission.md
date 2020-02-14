@@ -64,7 +64,7 @@ Create a purchase agreement for a sale by a commissioner
     -   In the **Inventory profile** field, select the inventory profile that you
         created earlier.
 
-        ![](media/25_Purchase_agreements.jpg)
+    ![](media/25_Purchase_agreements.jpg)
 
 9.  On the Action Pane, on the **Purchase agreement** tab, in the **Generate**
     group, select **Confirmation** to update the status of the agreement to
@@ -99,8 +99,8 @@ Create a purchase order and generate a purchase invoice
 
 3.  On the purchase order line, select the item number that was sold earlier.
 
-    *Note.* The **Tracking dimension** field for the item should be set to the
-    inventory profile that you created earlier.
+    >   *Note.* The **Tracking dimension** field for the item should be set to the
+    >   inventory profile that you created earlier.
 
 4.  On the **Line details** FastTab, on the **Product** tab, in the **Tracking
     dimensions** section, make sure that the **Inventory profile** field is
@@ -120,8 +120,8 @@ Create a sales order and update the facture
 
 2.  On sales order line, select the item number.
 
->   *Note.* The **Tracking dimension** field for the item should be set to the
->   inventory profile that you created earlier.
+    >   *Note.* The **Tracking dimension** field for the item should be set to the
+    >   inventory profile that you created earlier.
 
 3.  On the **Line details** FastTab, on the **Product** tab, in the **Tracking
     dimensions** section, select the inventory profile and owner (principal)
@@ -147,7 +147,7 @@ Create and print a report for a principal, and reissue the buyer's factures to t
 3.  In the **From date** and **To date** fields, specify the period for the
     report.
 
->   *Note.* You can leave the **From date** field blank.
+    >   *Note.* You can leave the **From date** field blank.
 
 4.  In the **Principal type** field, select **Vendor**.
 
@@ -157,9 +157,9 @@ Create and print a report for a principal, and reissue the buyer's factures to t
 
 7.  Select **OK**.
 
->   *Note.* To create the headers for all the reports for the principal that are
->   required in the specified period, select **Functions \> Create report
->   headers on shipments**.
+    >   *Note.* To create the headers for all the reports for the principal that are
+    >   required in the specified period, select **Functions \> Create report
+    >   headers on shipments**.
 
 8.  Select **Functions \> Update lines on shipment** to open the **Generate
     report for principal on shipments** dialog box, and then select **OK** to
@@ -249,9 +249,9 @@ prepayment facture that is created.
     select **Commission agent** to indicate that the prepayment is subject to
     transfer to the principal.
 
->   *Note.* If you don't see the **Kind of activity** column, right-click in the
->   row that has the column names, and then select **Add columns**. Select the
->   check box for the **Kind of activity** column, and then select **Insert**.
+    >   *Note.* If you don't see the **Kind of activity** column, right-click in the
+    >   row that has the column names, and then select **Add columns**. Select the
+    >   check box for the **Kind of activity** column, and then select **Insert**.
 
    ![](media/33_Customer_payments.jpg)
 
@@ -329,8 +329,8 @@ one for shipments and one for prepayments.
     (approved lines from the report for the principal and prepayments from
     vendor payment journals).
 
->   *Note.* If you leave the **Vendor account** field blank, all prepayments
->   will be selected for processing.
+    >   *Note.* If you leave the **Vendor account** field blank, all prepayments
+    >   will be selected for processing.
 
 5.  Select **OK**.
 
