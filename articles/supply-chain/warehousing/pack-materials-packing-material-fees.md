@@ -41,7 +41,7 @@ Packing material weights and fees are calculated for sales order lines and for p
 You can define one or more packing units for an item, for a packing group of items, or for all items. A packing unit consists of the packing materials, their weights, and the number of items that are included in the packing unit. A packing material code is assigned to each type of packing material that is defined. Based on the packing material code, you can specify a price for a specified period. The packing material fee is calculated based on this information.
 
 > [!NOTE]
-> Even if your company does not pay packing material fees, you can use the functionality to calculate statistics for the weights of packing materials. |
+> Even if your company does not pay packing material fees, you can use the functionality to calculate statistics for the weights of packing materials.
 
 ## Set up packing material fees
 
