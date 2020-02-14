@@ -135,14 +135,17 @@ To create default user flow policies, follow these steps.
     2.  Profile editing
     3.  Password reset
         
-	
+The following image shows
+
 ![User Flows menu in Application settings](./media/B2CImage_9.png)
 
-**The following steps will walk through setting each up for the Dynamics 365 Commerce project:**
+The following image shows
 
 ![Selecting a user flow in the Add User Flow menu](./media/B2CImage_10.png "Selecting a user flow in the Add User Flow menu")
 
-### Create a sign up and sign in user flow
+### Create a sign up and sign in user flow policy
+
+To create a sign up and sign in user flow policy, follow these steps.
 
 1. In the Azure portal, select **User flows (policies)** in the left navigation pane.
 1. On the **Azure AD B2C – User flows (policies)** page, select **New User Flow**.
@@ -161,55 +164,62 @@ To create default user flow policies, follow these steps.
 |                        | User’s Object ID  |
 
 1. Select **Create**.
-1. Click the newly selected to verify
-1. Select **Run user flow** to view the login domain for the policy, under the **select domain** header (for example, fabrikam.b2clogin.com). 
+1. Click the newly selected to verify [???]
+1. Select **Run user flow** to view the login domain for the policy. This will appear under **Select domain** (for example, fabrikam.b2clogin.com). 
 1. Close tab.
+
+The following image shows
 
 ![Sign Up and Sign In policy settings](./media/B2CImage_11.png "Sign Up and Sign In policy settings")
 
+The following image shows
+
 ![Run user flow option in policy flow](./media/B2CImage_23.png)
    
-### Create a profile editing user flow
+### Create a profile editing user flow policy
 
-1. In ‘Create a user flow’, select ‘profile editing’
+To create a profile editing user flow policy, follow these steps.
+
+1. In the Azure portal, select **User flows (policies)** in the left navigation pane.
+1. On the **Azure AD B2C – User flows (policies)** page, select **New User Flow**.
+1. On the **Recommended** tab, select **Profile editing**.
+1. Under **Name**, enter a or the profile editing user flow. This name will display afterwards with a prefix the portal assigns (for example, "B2C_1_").
+1. Under **Identity providers**, select **Local Account SignIn**.
+1. Under **User attributes**, select the following:
+    - **Email Addresses** (**Return claim** only)
+    - **Given Name** (**Collect attribute** and **Return claim**)
+    - **Identity Provider** (**Return claim** only)
+    - **Surname** (**Collect attribute** and **Return claim**)
+    - **User's Object ID** (**Return claim** only)
+1. Select **Create**.
+
+The following image shows
 
 ![Create the Profile Editing user flow](./media/B2CImage_12.png)
 
-1. Enter a “Name” for your ‘Profile editing’ profile
+### Create a password reset user flow policy
 
-2.  Ensure the “Local Account SignIn” is selected
+To create a password reset user flow policy, follow these steps.
 
-3. For ‘User attributes’, select:
-   1.  Email Addresses (‘Return claim’ only)
-   2.  Given Name (‘Collect attribute’ and ‘Return claim’)
-   3.  Identity Provider (‘Return claim’ only)
-   4. Surname (‘Collect attribute’ and ‘Return claim’)
-   5. User’s Object ID (‘Return claim’ only)
+1. In the Azure portal, select **User flows (policies)** in the left navigation pane.
+1. On the **Azure AD B2C – User flows (policies)** page, select **New User Flow**.
+1. On the **Recommended** tab, select **Password Reset**.
+1. Under **Name**, enter a name for the password reset user flow.
+1. Under **Identity providers**, select **Reset password using email address**.
+1. Select **Create**.
+1. Under **Application claims**, select the following:
+    - **Email**
+    - **Addresses**
+    - **Given Name**
+    - **Surname**
+    - **User's Object ID**
+1. Select **Save**.
 
-4. Click “Create”
-
-### Create a password reset user flow
-
-1.   In ‘Create a user flow’, select the ‘Password Reset’
+The following image shows
 
 ![Set "Reset Password using mail address" in Password Reset policy](./media/B2CImage_13.png)
 
-2.  Enter a “Name” for your ‘Password reset’ profile
-
-3.  Select ‘Reset password using email address’
-
-4.  Click “Create”
-
-5.  Navigate to “Application claims”. Select:
-	1. Email 
-	2. Addresses
-	3. Given Name
-	4. Surname
-	5. User’s Object ID
-
-6.  Click “Save”
-
-## Add Social Identity Providers (Optional)
+## Add social identity providers (Optional)
 
 Identity Providers allow for users to utilize their own social accounts as the authentication protocol. Adding multiple identity provider logins are optional for Dynamics 365 Commerce. 
 
@@ -228,8 +238,7 @@ To set up a social identity provider, follow these steps.
    - Name (this name will be displayed to end users in your sign-in sign-up screen)
    - Select the ‘Identity provider type’ from the Social Identity Providers menu provided
    - Click “Ok”
-
-	-  Go to the Identity Provider’s portal and set up an Identity Provider application as instructed in the Azure AD B2C Documentation for the Identity Provider you are adding. Links on Azure AD B2C Documentation for each supported are found here:
+   -  Go to the Identity Provider’s portal and set up an Identity Provider application as instructed in the Azure AD B2C Documentation for the Identity Provider you are adding. Links on Azure AD B2C Documentation for each supported are found here:
 
 		- [Amazon](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-setup-amzn-app)
 		- [Azure AD (Single Tenant)](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-setup-oidc-azure-active-directory)
