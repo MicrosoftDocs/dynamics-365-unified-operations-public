@@ -80,9 +80,7 @@ There is also the possibility of previewing the sales commission calculation fro
 > [!NOTE]
 > A user can combine sales orders in single invoice If all sales orders for invoicing have the same **Commission settlement** value in sales order headers.
 
-### Post
-
-When you post...
-
+### Overview commission transactions in a sales order invoice
+A user may overview commision transaction on **Invoice journal** page list (**Account receivable**/> **Inquiries and reports**/ **Invoices**/> **Invoice journal**, **Invoice** tab/> **Details**/> **Commission transactions**).
 > [!NOTE]
-> Warning...
+> When posting invoice, commission transactions are created only if **Commission settlement** value is **On invoice** in sales order header. If **Commission settlement** value is **On payment** in sales order header then commision transactions are created only after settling the invoice and a payment.  
