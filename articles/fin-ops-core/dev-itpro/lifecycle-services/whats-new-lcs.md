@@ -5,7 +5,7 @@ title: What's new in Lifecycle Services (LCS)
 description: This topic provides links to the release plans, major announcements, and more for Microsoft Dynamics Lifecycle Services (LCS). 
 author: laneswenka
 manager: AnnBe
-ms.date: 02/07/2020
+ms.date: 02/014/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -40,7 +40,7 @@ To get started with LCS, see the [Lifecycle Services (LCS) user guide](lcs-user-
 > [!IMPORTANT]
 > LCS features and service changes will no longer be announced via blog posts. Descriptions of LCS features are provided in the [release plans](https://go.microsoft.com/fwlink/?linkid=2010158). This topic lists the features that are included in each LCS release.
 
-## January 2020 wave 1
+## February 2020
 
 | Area | Feature |
 |------|---------|
