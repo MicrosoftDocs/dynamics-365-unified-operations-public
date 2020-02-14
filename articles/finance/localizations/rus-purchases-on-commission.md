@@ -55,20 +55,20 @@ Create a sales agreement for a purchase by an agent
 
 6.  On the **Sales agreements** page, switch to the **Header** view.
 
-2.  On the **General** FastTab, in the **Document** section, in the **Commission
+7.  On the **General** FastTab, in the **Document** section, in the **Commission
     agreement** field, select **Purchase by commissioner**.
 
-3.  On the **Financial** FastTab, in the **Inventory profile** section, specify
+8.  On the **Financial** FastTab, in the **Inventory profile** section, specify
     the following details:
 
--   In the **Kind of activity** field, select **Commission agent**.
+    -   In the **Kind of activity** field, select **Commission agent**.
 
--   In the **Inventory profile** field, select the inventory profile that you
-    created earlier.
+    -   In the **Inventory profile** field, select the inventory profile that you
+        created earlier.
 
-    ![](media/4_Sales_agreements.jpg)
+        ![](media/4_Sales_agreements.jpg)
 
-1.  On the Action Pane, on the **Sales agreement** tab, in the **Generate**
+9.  On the Action Pane, on the **Sales agreement** tab, in the **Generate**
     group, select **Confirmation** to update status of the agreement to
     **Effective**.
 
@@ -115,8 +115,8 @@ Create a purchase order and update the facture on goods that are purchased for a
 
 2.  On the purchase order line, select an item number.
 
-    *Note.* The **Tracking dimension** field for the item should be set to the
-    inventory profile that you created earlier.
+>   *Note.* The **Tracking dimension** field for the item should be set to the
+>   inventory profile that you created earlier.
 
 3.  On the **Line details** FastTab, on the **Product** tab, in the **Tracking
     dimensions** section, in the **Inventory profile** field, select the
@@ -140,27 +140,27 @@ Create a sales order and generate a sales invoice for goods that are purchased f
 
 3.  On the sales order line, select the item number that was purchased earlier.
 
-    *Note.* The **Tracking dimension** field for the item should be set to the
-    inventory profile that you created earlier.
+>   *Note.* The **Tracking dimension** field for the item should be set to the
+>   inventory profile that you created earlier.
 
 4.  On the **Line details** FastTab, on the **Setup** tab, in the **Inventory**
     section, in the **Reservation** field, select **Automatic**.
 
-![](media/8_Sales_order.jpg)
+    ![](media/8_Sales_order.jpg)
 
-1.  On the **Line details** FastTab, on the **Product** tab, in the **Tracking
+5.  On the **Line details** FastTab, on the **Product** tab, in the **Tracking
     dimensions** section, make sure that the **Inventory profile** field is
     automatically set to the inventory profile that you created earlier.
 
-2.  In the **Owner** field, select the owner (principal) that you created
+6.  In the **Owner** field, select the owner (principal) that you created
     earlier.
 
-3.  On the **Sales order lines** FastTab, select **Inventory \> Marking**.
+7.  On the **Sales order lines** FastTab, select **Inventory \> Marking**.
 
-4.  Select a purchase transaction, select **Set mark now**, and then select
+8.  Select a purchase transaction, select **Set mark now**, and then select
     **OK**.
 
-5.  Post the invoice.
+9.  Post the invoice.
 
 Create and print a report for a principal, and reissue the seller's factures to the principal
 ---------------------------------------------------------------------------------------------
@@ -173,7 +173,7 @@ Create and print a report for a principal, and reissue the seller's factures to 
 3.  In the **From date** and **To date** fields, specify the period for the
     report.
 
-    *Note.* You can leave the **From date** field blank.
+>   *Note.* You can leave the **From date** field blank.
 
 4.  In the **Principal type** field, select **Customer**.
 
@@ -183,9 +183,9 @@ Create and print a report for a principal, and reissue the seller's factures to 
 
 7.  Select **OK**.
 
-    *Note*. To create the headers for all the reports for the principal that are
-    required in the specified period, select **Functions \> Create report
-    headers on shipments**.
+>   *Note*. To create the headers for all the reports for the principal that are
+>   required in the specified period, select **Functions \> Create report
+>   headers on shipments**.
 
 8.  Select **Functions \> Update lines on shipment** to open the **Generate
     report for principal on shipments** dialog box, and then select **OK** to
@@ -200,32 +200,32 @@ Create and print a report for a principal, and reissue the seller's factures to 
     approve the appropriate lines of the seller's factures. To approve all the
     lines on the report, select **Approval \> Approve All**.
 
-![](media/9_Report_for_principal.jpg)
+    ![](media/9_Report_for_principal.jpg)
 
-1.  Select **Facture \> Update facture** to generate reissued factures for the
+11. Select **Facture \> Update facture** to generate reissued factures for the
     principal.
 
-2.  On the **Update facture** page, in the **Commission trade** section, make
+12. On the **Update facture** page, in the **Commission trade** section, make
     sure that the **Seller** and **Facture** fields are automatically set. If
     they are blank, select the supplier in the **Seller** field and the number
     of the purchase facture that was created in the **Facture** field.
 
-3.  Specify other required details, and create the facture.
+13. Specify other required details, and create the facture.
 
-![](media/10_Update_facture.jpg)
+    ![](media/10_Update_facture.jpg)
 
-1.  On the **Report for principal** page, follow these steps:
+14. On the **Report for principal** page, follow these steps:
 
--   Select **Principal \> Invoice journal** to view the principal's invoice.
+    -   Select **Principal \> Invoice journal** to view the principal's invoice.
 
--   Select **Principal \> Facture** to view the principal's facture.
+    -   Select **Principal \> Facture** to view the principal's facture.
 
--   Select **Inquiries \> Invoice journal** to view the seller's original
-    invoice.
+    -   Select **Inquiries \> Invoice journal** to view the seller's original
+        invoice.
 
--   Select **Inquiries \> Facture** to view the seller's original facture.
+    -   Select **Inquiries \> Facture** to view the seller's original facture.
 
-1.  Select **Print** to open the **Report for principal to Microsoft Excel**
+15. Select **Print** to open the **Report for principal to Microsoft Excel**
     dialog box, and then select **OK** to print the report for the principal.
 
 ![](media/11_Отчет_коммиссионера.jpg)
@@ -268,58 +268,56 @@ be included on the reports for the principals.
     select **Commission agent** to indicate that the prepayment will be re-sent
     to the sellers.
 
-    *Note.* If you don't see the **Kind of activity** column, right-click in the
-    row that has the column names, and then select **Add columns**. Select the
-    check box for the **Kind of activity** column, and then select **Insert**.
+>   *Note.* If you don't see the **Kind of activity** column, right-click in the
+>   row that has the column names, and then select **Add columns**. Select the
+>   check box for the **Kind of activity** column, and then select **Insert**.
 
-![](media/14_Customer_payments.jpg)
+   ![](media/14_Customer_payments.jpg)
 
-1.  On the **Vendor payment journal** page, create a vendor prepayment, and then
+3.  On the **Vendor payment journal** page, create a vendor prepayment, and then
     select **Lines**.
 
-2.  On the **Vendor payments** page, in the **Kind of activity** column, select
+4.  On the **Vendor payments** page, in the **Kind of activity** column, select
     **Commission agent**.
 
-![](media/15_Vendor_payments.jpg)
+    ![](media/15_Vendor_payments.jpg)
 
-1.  Create a facture for the vendor prepayment.
+5.  Create a facture for the vendor prepayment.
 
-2.  Create a purchase order and a facture as described in the [Create a purchase
+6.  Create a purchase order and a facture as described in the [Create a purchase
     order and update the facture on goods that are purchased for a
     principal](../rus-transactions-through-intermediary/rus-transactions-through-intermediary.docx#_Create_a_purchase)
     section earlier in this topic.
 
-3.  Create a sales order and an invoice as described in the [Create a sales
+7.  Create a sales order and an invoice as described in the [Create a sales
     order and generate a sales invoice for goods that are purchased for a
     principal](../rus-transactions-through-intermediary/rus-transactions-through-intermediary.docx#_Create_a_sales)
     section earlier in this topic.
 
-4.  Create a report for the principal, and update the lines on shipments, as
+8.  Create a report for the principal, and update the lines on shipments, as
     described in the [Create and print a report for a principal, and reissue the
     seller's factures to the
     principal](../rus-transactions-through-intermediary/rus-transactions-through-intermediary.docx#_Create_report_for_1)
     section earlier in this topic.
 
-5.  In the bottom part of the **Report for principal** page, on the
+9.  In the bottom part of the **Report for principal** page, on the
     **Prepayments** tab, in the **Voucher** field, select the vendor prepayment
     voucher to include the prepayment on the report for the principal.
 
-![](media/16_Report_for_principal.jpg)
+    ![](media/16_Report_for_principal.jpg)
 
->   A screenshot of a social media post Description automatically generated
-
-1.  Select **Transactions** to view the allocated amount in the **Amount in
+10. Select **Transactions** to view the allocated amount in the **Amount in
     reporting currency** field.
 
-![](media/17_Vendor_transactions.jpg)
+    ![](media/17_Vendor_transactions.jpg)
 
-1.  On the **Report for principal** page, approve lines on the **Overview** tab
+11. On the **Report for principal** page, approve lines on the **Overview** tab
     and vouchers on the **Prepayments** tab, as described in the [Create and
     print a report for a principal, and reissue the seller's factures to the
     principal](../rus-transactions-through-intermediary/rus-transactions-through-intermediary.docx#_Create_report_for_1)
     section.
 
-2.  You can create a facture, and view the principal's invoice (or facture) or
+12. You can create a facture, and view the principal's invoice (or facture) or
     the original invoice (or facture), as described in the [Create and print a
     report for a principal, and reissue the seller's factures to the
     principal](../rus-transactions-through-intermediary/rus-transactions-through-intermediary.docx#_Create_report_for_1)
@@ -348,15 +346,15 @@ one for shipments and one for prepayments.
 
 4.  Specify the date of the registration, and then select **OK**.
 
-![](media/19_Facture_create.jpg)
+    ![](media/19_Facture_create.jpg)
 
-1.  On the **Report for principal** page, on the **Prepayments** tab, select
+5.  On the **Report for principal** page, on the **Prepayments** tab, select
     **Principal \> Facture** to view the registered principal's facture for
     prepayment.
 
-![](media/20_Facture_journal.jpg)
+    ![](media/20_Facture_journal.jpg)
 
-1.  Select **Print \> Original** to print the original facture, or select
+6.  Select **Print \> Original** to print the original facture, or select
     **Print \> Copy** to print the facture copy.
 
 ![](media/21_Счет-фактура.jpg)
