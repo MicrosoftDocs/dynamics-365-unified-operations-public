@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new in Lifecycle Services (LCS)
+title: What's new or changed in Lifecycle Services (LCS)
 description: This topic provides links to the release plans, major announcements, and more for Microsoft Dynamics Lifecycle Services (LCS). 
 author: laneswenka
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.8
 
 ---
 
-# What's new in Lifecycle Services (LCS)
+# What's new or changed in Lifecycle Services (LCS)
 
 [!include [banner](../includes/banner.md)]
 
