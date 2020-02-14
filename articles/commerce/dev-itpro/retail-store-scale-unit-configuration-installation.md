@@ -245,7 +245,7 @@ The last steps require validation and verification that the Azure application ID
 3. In Headquarters, go to **Retail and Commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Commerce shared parameters**.
 4. Select **Identity providers**.
 5. On the **Identity providers** FastTab, select **Add**.
-6. In the new **Issuer** row, enter the URL of the newly installed Commerce Scale Unit. At the end of the URL, add **/auth**. The URL will resemble `https://<My Case-Sensitive Computer Name>:<Port Number>/CommerceScaleUnitServer/auth`.
+6. In the new **Issuer** row, enter the URL of the newly installed Commerce Scale Unit. At the end of the URL, add **/auth**. The URL will resemble `https://<My Case-Sensitive Computer Name>:<Port Number>/RetailServer/auth`.
 
     > [!NOTE]
     > The URL described above is case sensitive.
@@ -265,7 +265,7 @@ The last steps require validation and verification that the Azure application ID
     - In the **ClientId** column, enter **Modern POS**. Set the **Type** field to **Public** and the **UserType** field to **Worker**.
 
 12. On the Action Pane, select **Save**.
-13. In Commerce, go to **Retail and Commerce** &gt; **Retail and Commerce IT** &gt; **Distribution Schedule**, and run CDX Job **1110**.
+13. In Commerce, go to **Retail and commerce** &gt; **Retail and commerce IT** &gt; **Distribution Schedule**, and run CDX Job **1110**.
 14. When you've finished, return to the installer, and select **Finish**.
 
     The final page of the installer includes valuable information that you can use to test and validate that all components work correctly. Keep this page open until you've completed the validation.
@@ -353,14 +353,14 @@ On the second computer, run the Commerce Scale Unit Self-service installer as de
 
 10. If Cloud POS is configured for use, a client ID is shown. You must add this client ID to the **Commerce shared parameters** page.
 
-    1. In Commerce, go to **Retail and Commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Commerce shared parameters**.
+    1. In Commerce, go to **Retail and commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Commerce shared parameters**.
     2. Select **Identity providers**.
     3. On the **Identity providers** FastTab, select the provider that begins with `HTTPS://sts.windows.net/`. The values on the **Relying parties** FastTab are set, based on your selection.
     4. On the **Relying parties** FastTab, select **Add**. Enter the client ID that is listed in the Commerce Scale Unit installer. Set the **Type** field to **Public** and the **UserType** field to **Worker**. Then, on the Action Pane, select **Save**.
     5. Select the new relying party, and then, on the **Server resource IDs** FastTab, select **Add**. In the **Server Resource ID** column, enter `https://retailstorescaleunit.retailserver.com`.
     6. On the Action Pane, select **Save**.
 
-11. In Commerce, go to **Retail and Commerce** &gt; **Headquarters setup** &gt; **Commerce scheduler** &gt; **Channel database**, and follow these steps:
+11. In Commerce, go to **Retail and commerce** &gt; **Headquarters setup** &gt; **Commerce scheduler** &gt; **Channel database**, and follow these steps:
 
     1. Select the channel database that you created at the beginning of this topic.
     2. On the Action Pane, select **Full Sync** &gt; **Job 9999**. Full synchronization might require several minutes.
