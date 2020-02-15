@@ -1790,7 +1790,7 @@
               href: localizations/apac-ind-GST-define-gstin-numbers-number-sequences.md
             - name: Define HSN codes and Service Accounting Codes
               href: localizations/apac-ind-GST-hsn-service-accounting-codes.md
-	    - name: Create tax rate type
+            - name: Create tax rate type
               href: localization/apac-ind-GST-create-tax-rate-type.md
             - name: Create main accounts for the GST posting type
               href: localizations/apac-ind-GST-create-main-accounts-GST-posting-type.md
