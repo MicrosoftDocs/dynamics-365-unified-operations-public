@@ -3,7 +3,7 @@
 
 title: Define Tax Rate Type and assign it to relevant master data  
 description: This topic explains how to define Tax Rate Type and assign it to the relevant master data. This task is part of the master data setup that is required to make the India localization solution for Goods and Services Tax (GST) available.
-author: riluan 
+author: yijialuan 
 manager: kfend
 ms.date: 02/15/2020
 ms.topic: article
