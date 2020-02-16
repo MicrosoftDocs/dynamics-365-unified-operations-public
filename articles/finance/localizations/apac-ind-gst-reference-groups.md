@@ -55,3 +55,29 @@ Follow these steps to create a GST reference number sequence group and assign it
     | Accounts payable    | Revised invoice          | The **Revised invoice** number sequence is used when vendor revised purchase invoices are posted that have GST transactions together with reverse charge transactions, and that have a reference to the existing invoice. |
     | Accounts payable    | Advanced payment voucher | The **Advance payment voucher** number sequence is used when vendor advance payment transactions that have GST transactions are posted. |
     | Accounts payable    | GST invoice              | The **GST invoice** number sequence is used when vendor purchases are posted that have GST transactions together with reverse charge transactions. |
+# Type of supply and GST number sequence refrence ID generation 
+
+Under GST law the broader classification of the type of supply is as below: 
+
+1. Taxable Supply 
+- Standard Rated Supply. Example 12% 
+- Zero Rated Supply – Example 0% 
+2. Non-Taxable Supply
+- Exempt Supply (Excluded under the GST Act)
+- Out of scope supply (Outside of GST act) 
+3. Non GST Supply
+- No tax type applicable 
+- VAT applicable 
+
+The India GST number sequence logic works as per the condition provided below for updating invoice reference ID: 
+
+- If the Tax rate is not zero, the sequence will be picked from GST tax Invoice reference ID. 
+- If the Tax rate is zero (Tax rate in every sales order line is zero or exempt or non-GST), the sequence will be picked from BOS (Bill of supply);
+- If an item is marked as “Exempted item” than irrespective of a tax rate, number sequence will be picked from BOS (Bill of supply) 
+- If an item is marked as “Non-GST” supply than even any other tax type is applied on the transaction or not, number sequence will be picked from BOS (Bill of supply) 
+- If Tax value is zero and the Tax rate is not zero, the sequence will be picked from the tax invoice reference ID. Example. For some case the tax rate = 0.06, base amount = 0.02, thus tax amount is rounded to 0, but the tax rate is not zero (it is 0.06), thus will not consider as BOS (the system will consider normal taxable sales invoice reference ID )
+- If some transaction lines are taxable and other transactions lines are exempted system will generate GST transaction ID for tax invoice (means if a single item is taxable – Tax invoice Id will generate) 
+- If intra-state stock transfer, HSN/SAC code is not selected for any transaction line, the number sequence will not be picked up any Bill of supply or tax Invoice reference ID for both shipment and receipt.  
+- If intra-state stock transfer order is marked as exempt in the header than the number sequence will be picked from BOS (Bill of supply) reference ID.
+- In stock transfer receipt transaction system will copy the shipment transaction id when the number sequence reference ID is generated for shipment transaction.
+
