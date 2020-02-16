@@ -71,7 +71,7 @@ There are a number of resources to help you learn more about Compliance Manager 
 
 - [Advancing intelligence, management, and security to empower the modern workplace](https://blogs.office.com/2017/09/25/advancing-intelligence-management-and-security-to-empower-the-modern-workplace/) (Office, September 2017)
 
-- [New Microsoft 365 features to accelerate GDPR compliance](https://blogs.microsoft.com/microsoftsecure/2017/09/25/new-microsoft-365-features-to-accelerate-gdpr-compliance/) (Microsft Secure, September 2017)
+- [New Microsoft 365 features to accelerate GDPR compliance](https://blogs.microsoft.com/microsoftsecure/2017/09/25/new-microsoft-365-features-to-accelerate-gdpr-compliance/) (Microsoft Secure, September 2017)
 
 
 ## Additional resources
