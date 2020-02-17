@@ -60,7 +60,7 @@ This section provides examples for how to set up and use FIFO and LIFO strategie
 
 To work through these demos using the sample records and values specified here, you must be on a system with the standard [demo data](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) installed, and you must select the **USMF** legal entity before you begin.
 
-You can also use these demos as guidance for how to use this feature when working on a production system, but then you must then substitute your own values, and you may be missing some types of required records that would otherwise be provided by the standard demo data.
+You can also use these demos as guidance for how to use this feature when working on a production system, but then you must substitute your own values for each setting described here.
 
 <a name="demo-set-up"></a>
 
