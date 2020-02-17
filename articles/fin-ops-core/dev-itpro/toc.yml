@@ -8,38 +8,50 @@
       href: index.md
     - name: What's new or changed
       items:
-      - name: Preview features in Platform update 32 (February 2020)
-        href: get-started/whats-new-platform-update-32.md
-      - name: Platform update 31 (January 2020)
-        href: get-started/whats-new-platform-update-31.md
-      - name: Platform update 30 (November 2019)
-        href: ../fin-ops/get-started/whats-new-platform-update-30.md
-      - name: Platform update 29 (October 2019)
-        href: ../fin-ops/get-started/whats-new-platform-update-29.md
-      - name: Platform update 28 (July 2019)
-        href: ../fin-ops/get-started/whats-new-platform-update-28.md 
-      - name: Platform update 27 (June 2019)
-        href: ../fin-ops/get-started/whats-new-platform-update-27.md 
-      - name: Platform update 26 (May 2019)
-        href: ../fin-ops/get-started/whats-new-platform-update-26.md 
-      - name: Platform update 25 (April 2019)
-        href: ../fin-ops/get-started/whats-new-platform-25.md 
-      - name: Platform update 24 (March 2019)
-        href: ../fin-ops/get-started/whats-new-platform-update-24.md
-      - name: Platform update 23 (January 2019)
-        href: ../fin-ops/get-started/whats-new-platform-update-23.md
-      - name: Platform update 22 (December 2018)
-        href: ../fin-ops/get-started/whats-new-platform-update-22.md
-      - name: Platform update 21 (November 2018)
-        href: ../fin-ops/get-started/whats-new-platform-update-21.md
-      - name: Platform update 20 (September 2018)
-        href: ../fin-ops/get-started/whats-new-platform-update-20.md
-      - name: Platform update 15 (March 2018)
-        href: ../fin-ops/get-started/whats-new-platform-update-15.md  
-      - name: What's new or changed in previous versions
+      - name: What's new or changed in Finance and Operations apps
+        href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
+      - name: What's new or changed in Platform updates
         items:
-        - name: What's new or changed in Finance and Operations home page
-          href: ../fin-ops/get-started/whats-new-changed.md
+        - name: What's new or changed in Platform updates home page
+          href: get-started/whats-new-home-page.md
+        - name: Platform update 33 (April 2020)
+          href: get-started/whats-new-platform-update-33.md
+        - name: Platform update 32 (February 2020)
+          href: get-started/whats-new-platform-update-32.md
+        - name: Platform update 31 (January 2020)
+          href: get-started/whats-new-platform-update-31.md
+        - name: Platform update 30 (November 2019)
+          href: ../fin-ops/get-started/whats-new-platform-update-30.md
+        - name: Platform update 29 (October 2019)
+          href: ../fin-ops/get-started/whats-new-platform-update-29.md
+        - name: Platform update 28 (July 2019)
+          href: ../fin-ops/get-started/whats-new-platform-update-28.md 
+        - name: Platform update 27 (June 2019)
+          href: ../fin-ops/get-started/whats-new-platform-update-27.md 
+        - name: Platform update 26 (May 2019)
+          href: ../fin-ops/get-started/whats-new-platform-update-26.md 
+        - name: Platform update 25 (April 2019)
+          href: ../fin-ops/get-started/whats-new-platform-25.md 
+        - name: Platform update 24 (March 2019)
+          href: ../fin-ops/get-started/whats-new-platform-update-24.md
+        - name: Platform update 23 (January 2019)
+          href: ../fin-ops/get-started/whats-new-platform-update-23.md
+        - name: Platform update 22 (December 2018)
+          href: ../fin-ops/get-started/whats-new-platform-update-22.md
+        - name: Platform update 21 (November 2018)
+          href: ../fin-ops/get-started/whats-new-platform-update-21.md
+        - name: Platform update 20 (September 2018)
+          href: ../fin-ops/get-started/whats-new-platform-update-20.md
+        - name: Platform update 15 (March 2018)
+          href: ../fin-ops/get-started/whats-new-platform-update-15.md 
+      - name: Removed or deprecated features
+        href: migration-upgrade/deprecated-features.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
+      - name: AX 2012 features that were postponed
+        href: ../fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
+      - name: Features not implemented in on-premises deployments
+        href: ../fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
+      - name: End of mainstream support for Microsoft Dynamics AX 2009 and 2012
+        href: ../fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
     - name: Business events
       items:
       - name: Business events overview
@@ -133,35 +145,35 @@
           - name: Synchronous, bidirectional integration
             items: 
             - name: Near-real time data integration
-              href: data-entities/dual-write-overview.md
+              href: data-entities/dual-write/dual-write-overview.md
             - name: Organization hierarchy on Common Data Service
-              href: data-entities/dual-write-organization.md
+              href: data-entities/dual-write/organization-mapping.md
             - name: Company integration
               items:
               - name: Company concept in Common Data Services
-                href: data-entities/dual-write-company.md
+                href: data-entities/dual-write/company-data.md
               - name: Bootstrap with company data
-                href: data-entities/dual-write-bootstrap.md
+                href: data-entities/dual-write/bootstrap-company-data.md
             - name: Integrated customer master
-              href: data-entities/dual-write-customer.md
+              href: data-entities/dual-write/customer-mapping.md
             - name: Integrated ledger
-              href: data-entities/dual-write-ledger.md            
+              href: data-entities/dual-write/ledger-mapping.md            
             - name: Unified product experience
-              href: data-entities/dual-write-product.md
+              href: data-entities/dual-write/product-mapping.md
             - name: Vendor integration
               items:
               - name: Integrated vendor master
-                href: data-entities/dual-write-vendor.md
+                href: data-entities/dual-write/vendor-mapping.md
               - name: Switch between vendor designs
-                href: data-entities/dual-write-vendor-switch.md
+                href: data-entities/dual-write/vendor-switch.md
             - name: Integrated sites and warehouses
-              href: data-entities/dual-write-sites-and-warehouses.md
+              href: data-entities/dual-write/sites-warehouses-mapping.md
             - name: Integrated tax master
-              href: data-entities/dual-write-tax.md
+              href: data-entities/dual-write/tax-mapping.md
             - name: Initial synchronization
-              href: data-entities/dual-write-initial.md
+              href: data-entities/dual-write/initial-sync.md
             - name: Troubleshooting data integration
-              href: data-entities/dual-write-troubleshooting.md
+              href: data-entities/dual-write/dual-write-troubleshooting.md
           - name: Asynchronous, unidirectional integration
             items:
             - name: Configure a prospect to cash scenario
@@ -912,7 +924,7 @@
           href: gdpr/gdpr-extend-person-search-report.md
         - name: Manage access to sensitive data
           href: gdpr/gdpr-auditing-sensitive-data.md
-        - name: Respond to requests for personal data using Talent
+        - name: Respond to requests for personal data using Human Resources
           href: gdpr/respond-dsr-request-talent.md
         - name: Respond to requests for personal data in AX 2012
           href: gdpr/gdpr-ax2012.md
@@ -928,7 +940,7 @@
           href: lifecycle-services/lcs-works-lcs.md
         - name: LCS for partners
           href: lifecycle-services/getting-started-lcs.md
-        - name: What's new
+        - name: What's new or changed in Lifecycle Services
           href: lifecycle-services/whats-new-lcs.md
         - name: Known issues
           href: lifecycle-services/known-issues.md
@@ -1672,6 +1684,6 @@
     href: ../../supply-chain/index.md
   - name: Dynamics 365 Finance 
     href: ../../finance/index.md
-  - name: Dynamics 365 Retail
-    href: ../../retail/index.md
+  - name: Dynamics 365 Commerce
+    href: ../../commerce/index.md
    

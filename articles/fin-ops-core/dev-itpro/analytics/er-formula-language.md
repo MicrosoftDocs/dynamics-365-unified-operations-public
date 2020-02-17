@@ -159,7 +159,7 @@ ER lets you extend the list of functions that are used in ER expressions. Some e
 
 You can create compound expressions that use functions from different categories, provided that the data types match. When you use functions together, match the data type of the output from one function to the input data type that is required by another function. For example, to avoid a possible "list-is-empty" error in a binding of a field to an ER format element, combine functions from the [List](er-functions-category-list.md) category with a function from the [Logical](er-functions-category-logical.md) category, as the following example shows. Here, the formula uses the [IF](er-functions-logical-if.md) function to test whether the **IntrastatTotals** list is empty before it returns the value of the required aggregation from that list. If the **IntrastatTotals** list is empty, the formula returns **0** (zero).
 
-```
+```vb
 IF(ISEMPTY(IntrastatTotals), 0.0, IntrastatTotals.aggregated.'$AmountMSTRounded') 
 ```
 
@@ -167,7 +167,7 @@ IF(ISEMPTY(IntrastatTotals), 0.0, IntrastatTotals.aggregated.'$AmountMSTRounded'
 
 Often, you can get the same data transformation result in multiple ways, by using functions from different categories or different functions from the same category. For example, the previous expression can also be configured by using the [COUNT](er-functions-list-count.md) function from the [List](er-functions-category-list.md) category.
 
-```
+```vb
 IF(COUNT (IntrastatTotals)=0, 0.0, IntrastatTotals.aggregated.'$AmountMSTRounded') 
 ```
 

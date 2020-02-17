@@ -34,8 +34,6 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
-
 Information about hazardous materials is set up in Product information management. This module also provides documents that can be printed through warehouse management.
 
 When you ship materials that are classified as dangerous goods, additional paperwork must be included with the shipments. The hazardous materials functionality lets customers store classification information and relate it to release items. This information can then be used to help prepare shipping documentation.

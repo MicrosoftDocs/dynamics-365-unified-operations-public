@@ -62,6 +62,7 @@ When Task recorder has determined which instruction label to use (via one of the
 ## Case study
 Let's use the Checkbox control as a case study for improvement. Currently, an instruction label isn't specified for the Checkbox via either method 1 or method 2 (see the previous section of this article). Therefore, the general-purpose property instruction label is used instead. If someone records selecting the Checkbox for a field that is named **Show infolog on failure**, the Task recorder output currently looks like this:
 
+
 > In the Show infolog on failure field, enter True.
 
 However, typical end users might not know what it means to set a Checkbox to **True**. Therefore, a suggested improvement is for the Checkbox to produce a label that looks like this:
@@ -88,18 +89,19 @@ Finally, the Checkbox should have a second instruction label for “example valu
 
 The following code example shows how property change events are logged to Task recorder by an X++ control. Similar application programming interfaces (APIs) exist for C++ kernel controls. Command events have a similar API.
 
-    [FormPropertyAttribute(FormPropertyKind::Value, #MyPropertyName)]
-        public str value(str_value = valueProperty.parmValue())
+```xpp
+[FormPropertyAttribute(FormPropertyKind::Value, #MyPropertyName)]
+    public str value(str_value = valueProperty.parmValue())
+    {
+        if(!prmIsDefault(_value))
         {
-            if(!prmIsDefault(_value))
+            using (var scope = SysTaskRecorder::addPropertyUserAction(#MyPropertyName, this, _value, [OptionalInstructionLabelIDOverride], [OptionalValueLabelOverride], [OptionalControlLabelOverride]))
             {
-                using (var scope = SysTaskRecorder::addPropertyUserAction(#MyPropertyName, this, _value, [OptionalInstructionLabelIDOverride], [OptionalValueLabelOverride], [OptionalControlLabelOverride]))
-                {
-                    // Property set logic goes here
-                    valueProperty.setValueOrBinding(_value);
-                }
+                // Property set logic goes here
+                valueProperty.setValueOrBinding(_value);
             }
         }
-
+    }
+```
 
 

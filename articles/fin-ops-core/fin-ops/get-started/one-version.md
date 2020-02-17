@@ -59,7 +59,7 @@ Customers can always choose to apply the update at an earlier time, or if there 
 
 ### What does the service update contain?
 
-For release 8.1 and later, service updates will contain application (including financial, reporting, and Retail) and platform changes that are critical improvements to the service including regulatory updates. New experiences will be configurable. The service updates are backward compatible. There will be a single version representing this update.
+For release 8.1 and later, service updates will contain application (including financial, reporting, and Commerce) and platform changes that are critical improvements to the service including regulatory updates. New experiences will be configurable. The service updates are backward compatible. There will be a single version representing this update.
 
 ### What is a regulatory update?
 
@@ -235,36 +235,36 @@ Customer reported issues are searchable via Lifecycle Services Issue Search.  Yo
 
 Refer to the [Process for moving to the latest update](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update#scenario-3-upgrade-to-the-latest-application-release-1) topic to learn how to upgrade to the latest application. Updating from [8.0 to 8.1](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/appupdate-80-81) will not require any data upgrade and will be a self-serve update with much reduced downtime.
 
-## Retail service updates
+## Commerce service updates
 
-### What options are available to minimize impact to my Retail cloud components?
+### What options are available to minimize impact to my Commerce cloud components?
 
-Retail cloud components will require the same down time as your Dynamics 365 headquarters. In an upcoming release, the Retail Cloud Scale Unit (RCSU) will be available to reduce and further schedule updates to your deployment. Please refer to our published release information on our [documentation](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-retail/planned-features) and [release notes](https://docs.microsoft.com/business-applications-release-notes/#pivot=products&panel=products1) sites for additional details on RCSU.
+Commerce cloud components will require the same down time as your Dynamics 365 headquarters. In an upcoming release, the Retail Cloud Scale Unit (RCSU) will be available to reduce and further schedule updates to your deployment. Please refer to our published release information on our [documentation](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-retail/planned-features) and [release notes](https://docs.microsoft.com/business-applications-release-notes/#pivot=products&panel=products1) sites for additional details on RCSU.
 
-### Will there be options to take individual hotfixes for my retail solution components?
+### Will there be options to take individual hotfixes for my commerce solution components?
 
-All fixes and updates for retail components will be cumulative.
+All fixes and updates for commerce components will be cumulative.
 
 ### What are the maintenance downtime requirements that may impact channel operations?
 
-For retailers with a business need for redundancy, Modern POS offline capability allows core retail POS operations to be available for use while disconnected from the internet or while the cloud environment is being updated. Stores operating with Retail Store Scale Unit will also continue to operate with support for core POS operations during cloud maintenance windows. For more information, see [Online and offline point of sale (POS) operations](../../../retail/pos-operations.md).
+For retailers with a business need for redundancy, Modern POS offline capability allows core POS operations to be available for use while disconnected from the internet or while the cloud environment is being updated. Stores operating with Commerce Scale Unit will also continue to operate with support for core POS operations during cloud maintenance windows. For more information, see [Online and offline point of sale (POS) operations](../../../retail/pos-operations.md).
 
 ### When will I need to update my in-store components?
 
 All in-instore components must be running released software that is less than one year old in order to maintain support. Customers are responsible for updating self-hosted components (such as components installed in stores or in privately managed datacenters) and ensuring that the installed versions of these components are actively supported.
 
-### Will there continue to be backward compatibility for the in-store retail components?
+### Will there continue to be backward compatibility for the in-store components?
 
-Updates to components hosted in the cloud will continue to preserve backward compatibility with component versions self-hosted by the Retailer (such as components installed in stores or in privately managed datacenters - Modern Point of Sale, Retail Store Scale Unit, Hardware Station) for 12 months after the release date for that version. Self-hosted components do not need to be updated at the same time as cloud-hosted components and can be updated on a separate cadence allowing time to roll-out updates to stores.
+Updates to components hosted in the cloud will continue to preserve backward compatibility with component versions self-hosted by the retailer (such as components installed in stores or in privately managed datacenters - Modern Point of Sale, Commerce Scale Unit, Hardware Station) for 12 months after the release date for that version. Self-hosted components do not need to be updated at the same time as cloud-hosted components and can be updated on a separate cadence allowing time to roll-out updates to stores.
 
 ### What options are available for updating in-store components across my organization?
 
 Customers can choose to update self-hosted components manually at each store or use mass update tools such as Microsoft System Center Configuration Manager, Microsoft Intune, etc.
 
-### What options do I have to slowly enable new functionality across my retail channels?
+### What options do I have to slowly enable new functionality across my channels?
 
 Microsoft provides several mechanisms to progressively roll-out and enable functional enhancements across stores, devices, and users.
 
 - **Screen layout designer** – Most visual elements in POS are configured and centrally managed by an administrative user in the customer organization. This means that new POS operations will not automatically be displayed on POS unless explicitly configured for inclusion in corresponding screen layouts. Screen layouts are configured using Screen layout designer and can be specific to a store or POS device. For more information, see [Screen layouts for the point of sale (POS)](../../../retail/pos-screen-layouts.md).
-- **Functionality profiles, POS permissions, Retail parameters** – Significant elements of functionality in POS are typically configurable by the user. This can be configured through functionality profiles, POS permissions, retail parameters, or other controls which allow for device, register, store, or user-level functionality control in applicable scenarios.
-- **Modern Point of Sale and Retail Store Scale Unit** – Because Modern Point of Sale and Retail Store Scale Unit are self-hosted by the retailer, topologies which include either of these components enable roll out of updates at a separate (and slower) cadence, and in a more granular fashion than with cloud-only topologies.
+- **Functionality profiles, POS permissions, Commerce parameters** – Significant elements of functionality in POS are typically configurable by the user. This can be configured through functionality profiles, POS permissions, commerce parameters, or other controls which allow for device, register, store, or user-level functionality control in applicable scenarios.
+- **Modern Point of Sale and Commerce Scale Unit** – Because Modern Point of Sale and Commerce Scale Unit are self-hosted by the retailer, topologies which include either of these components enable roll out of updates at a separate (and slower) cadence, and in a more granular fashion than with cloud-only topologies.

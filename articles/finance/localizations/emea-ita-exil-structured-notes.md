@@ -32,8 +32,6 @@ ms.dyn365.ops.version: 10.0.8
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
-
 The Advanced notes management feature lets you set up predefined notes that apply to all or specific customers, vendors, and products. You can then add these notes to specific business documents.
 
 ## Prerequisites

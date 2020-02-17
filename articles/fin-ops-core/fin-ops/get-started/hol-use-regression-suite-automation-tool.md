@@ -99,7 +99,7 @@ In previous versions of RSAT, you could validate values only if a control value 
 
 - To use this feature, open the **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** file under the RSAT installation folder (for example, **C:\\Program Files (x86)\\Regression Suite Automation Tool**), and change the value in the following element from **false** to **true**.
 
-    ```
+    ```xml
     <add key="AddOperatorFieldsToExcelValidation" value="false" />
     ```
 
@@ -142,7 +142,7 @@ This feature creates a folder that contains the logs of the test cases that have
 
 - To use this feature, open the **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** file under the RSAT installation folder (for example, **C:\\Program Files (x86)\\Regression Suite Automation Tool**), and change the value in the following element from **false** to **true**.
 
-    ```
+    ```xml
     <add key="LogGeneration" value="false" />
     ```
 
@@ -161,7 +161,7 @@ This feature takes screenshots of the steps that were performed during task reco
 
 - To use this feature, open the **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** file under the RSAT installation folder (for example, **C:\\Program Files (x86)\\Regression Suite Automation Tool**), and change the value of the following element from **false** to **true**.
 
-    ```
+    ```xml
     <add key="VerboseSnapshotsEnabled" value="false" />
     ```
 
@@ -202,7 +202,7 @@ The following illustration shows the business processes for this scenario in RSA
 - Use Azure Point-In-Time restore to rerun tests in non-Tier 1 environments.
 - Although you can use the **RANDOM** and **NOW** Excel functions to generate a unique combination, the effort is considerably high. Here is an example.
 
-    ```
+    ```Excel
     product = "AT" &TEXT(NOW(),"yyymmddhhmm")
     ```
 
@@ -223,23 +223,23 @@ The following illustration shows the business processes for this scenario in RSA
 
 ## Advanced scripting
 
-### Command line
+### CLI
 
-RSAT can be called from a **Command Prompt** window.
+RSAT can be called from a **Command Prompt** or **PowerShell** window.
 
 > [!NOTE]
 > Verify that the **TestRoot** environment variable is set to the RSAT installation path. (In Microsoft Windows, open **Control Panel**, select **System and Security \> System \> Advanced system settings**, and then select **Environment Variables**.)
 
-1. Open a **Command Prompt** window as an admin.
-2. Run the tool from the installation directory.
+1. Open a **Command Prompt** or **PowerShell** window as an admin.
+2. Navigate to the RSAT installation directory.
 
-    ```
+    ```Console
     cd "c:\Program Files (x86)\Regression Suite Automation Tool\"
     ```
 
 3. List all commands.
 
-    ```
+    ```Console
     C:\Program Files (x86)\Regression Suite Automation Tool>Microsoft.Dynamics.RegressionSuite.ConsoleApp.exe help
 
     Usage:
@@ -248,22 +248,278 @@ RSAT can be called from a **Command Prompt** window.
         Microsoft.Dynamics.RegressionSuite.ConsoleApp.exe /settings "C:\Path to\file.settings" command
 
     Available commands:
-        list
-        listtestsuite suite_name
-        download test_case_id output_dir
-        generate test_case_id output_dir
-        generatederived parent_test_case_id test_plan_id test_suite_id
-        generatetestonly test_case_id output_dir
-        edit excel_file
-        playback excel_file
-        playbackmany excel_file1 [excel_file2 [.. excel_fileN]]
-        playbackbyid test_case_id1 [test_case_id2 [.. test_case_idN]]
-        playbacksuite suite_name
-        clear
-        help
+        ?
         about
+        cls
+        download
+        edit
+        generate
+        generatederived
+        generatetestonly
+        generatetestsuite
+        help
+        list
+        listtestplans
+        listtestsuite
+        listtestsuitenames
+        playback
+        playbackbyid
+        playbackmany
+        playbacksuite
         quit
+        upload
+        uploadrecording
+        usage
     ```
+
+#### ? 
+Shows help about all available commands and their parameters.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``?``**``[command]``
+
+##### Optional parameters
+
+**``command``**
+
+
+Where ``[command]`` is one of the commands specified below.
+
+
+#### about
+Displays the current version.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``about``**
+
+#### cls
+Clears the screen.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``cls``**
+
+
+#### download
+Downloads attachments for the specified test case to the output directory. 
+You can use the ``list`` command to get all available test cases. Use any value from the first column as a **test_case_id** parameter.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``download``**``[test_case_id] [output_dir]``
+
+##### Required parameters
+**``test_case_id``** Represents the test case ID.  
+**``output_dir``** Represents the output directory. The directory must exist.
+
+##### Examples
+
+``download 123 c:\temp\rsat``   
+``download 765 c:\rsat\last``
+
+
+#### edit
+Allows you to open parameters file in Excel program and edit it.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``edit``**``[excel_file]``
+
+##### Required parameters
+**``excel_file``** Must contain a full path to an existing Excel file.
+
+##### Examples
+``edit c:\RSAT\TestCase_123_Base.xlsx``  
+``edit e:\temp\TestCase_456_Base.xlsx``
+
+
+#### generate
+Generates test execution and parameter files for the specified test case in the output directory.
+You can use the ``list`` command to get all available test cases. Use any value from the first column as a **test_case_id** parameter.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generate``**``[test_case_id] [output_dir]``
+
+##### Required parameters
+**``test_case_id``** Represents the test case ID.  
+**``output_dir``** Represents the output directory. The directory must exist.
+
+##### Examples
+``generate 123 c:\temp\rsat``  
+``generate 765 c:\rsat\last``
+
+
+#### generatederived
+Generates a new test case, derived from the provided test case. 
+You can use the ``list`` command to get all available test cases. Use any value from the first column as a **test_case_id** parameter.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatederived``**``[parent_test_case_id] [test_plan_id] [test_suite_id]``
+
+##### Required parameters
+**``parent_test_case_id``** Represents the parent test case ID.  
+**``test_plan_id``** Represents the test plan ID.  
+**``test_suite_id``** Represents the test suite ID.
+
+##### Examples
+``generatederived 123 8901 678``
+
+
+#### generatetestonly
+Generates only test execution file for the specified test case in the output directory. 
+You can use the ``list`` command to get all available test cases. Use any value from the first column as a **test_case_id** parameter.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestonly``**``[test_case_id] [output_dir]``
+
+##### Required parameters
+**``test_case_id``** Represents the test case ID.  
+**``output_dir``** Represents the output directory. The directory must exist.
+
+##### Examples
+``generatetestonly 123 c:\temp\rsat``  
+``generatetestonly 765 c:\rsat\last``
+
+
+#### generatetestsuite
+Generates all test cases for the specified suite in the output directory.
+You can use ``listtestsuitenames`` command to get all available test suits. Use any value from the column as a **test_suite_name** parameter.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestsuite``**``[test_suite_name] [output_dir]``
+
+##### Required parameters
+**``test_suite_name``** Represents the test suite name.  
+**``output_dir``** Represents the output directory. The directory must exist.
+
+##### Examples
+``generatetestsuite Tests c:\temp\rsat``   
+``generatetestsuite Purchase c:\rsat\last``
+
+
+#### help
+Identical to the [?](####?) command
+
+
+#### list
+Lists all available test cases.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``list``**
+
+
+#### listtestplans
+Lists all available test plans.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestplans``**
+
+
+#### listtestsuite
+Lists test cases for the specified test suite. 
+You can use ``listtestsuitenames`` command to get all available test suites. Use any value from first column as **suite_name** parameter.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuite``**``[suite_name]``
+
+##### Required parameters
+**``suite_name``** Name of the desired suite.
+
+##### Examples
+``listtestsuite "sample suite name"``  
+``listtestsuite NameOfTheSuite``
+
+
+#### listtestsuitenames
+Lists all available test suites.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuitenames``**
+
+
+#### playback
+Plays back a test case using an Excel file.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playback``**``[excel_file]``
+
+##### Required parameters
+**``excel_file``** A full path to the Excel file. File must exist. 
+
+##### Examples
+``
+playback c:\RSAT\TestCaseParameters\sample1.xlsx
+playback e:\temp\test.xlsx
+``
+
+
+#### playbackbyid
+Plays back multiple test cases at once.
+You can use the ``list`` command to get all available test cases. Use any value from the first column as a **test_case_id** parameter.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackbyid``**``[test_case_id1] [test_case_id2] ... [test_case_idN]``
+
+##### Required parameters
+**``test_case_id1``** ID of exisiting test case.  
+**``test_case_id2``** ID of exisiting test case.  
+**``test_case_idN``** ID of exisiting test case.  
+
+##### Examples
+``playbackbyid 878``  
+``playbackbyid 2345 667 135``
+
+
+#### playbackmany
+Plays back many test cases at once, using Excel files.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackmany``**``[excel_file1] [excel_file2] ... [excel_fileN]``
+
+##### Required parameters
+**``excel_file1``** Full path to the Excel file. File must exist.  
+**``excel_file2``** Full path to the Excel file. File must exist.  
+**``excel_fileN``** Full path to the Excel file. File must exist.  
+
+##### Examples
+``playbackmany c:\RSAT\TestCaseParameters\param1.xlsx``  
+``playbackmany e:\temp\test.xlsx f:\rsat\sample1.xlsx c:\RSAT\sample2.xlsx``
+
+
+#### playbacksuite
+Plays back all test cases from the specified test suite. 
+You can use ``listtestsuitenames`` command to get all available test suites. Use any value from first column as **suite_name** parameter.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbacksuite``**``[suite_name]``
+
+##### Required parameters
+**``suite_name``** Name of the desired suite.
+
+##### Examples
+``playbacksuite suiteName``  
+``playbacksuite sample_suite``
+
+
+#### quit
+Closes the  application.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``quit``**
+
+
+#### upload
+Uploads all files belonging to the specified test suite or test cases.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``upload``**``[suite_name] [testcase_id]``
+
+#### Required parameters
+**``suite_name``** All files belonging to the specified test suite will be uploaded.
+**``testcase_id``** All files beloning to the specified test case(s) will be uploaded.
+
+##### Examples
+``upload sample_suite``  
+``upload 123``  
+``upload 123 456``
+
+
+#### uploadrecording
+Uploads only recording file belonging to the specified test cases.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``uploadrecording``**``[testcase_id]``
+
+##### Required parameters
+**``testcase_id``** Recording file belonging to the specified test cases will be uploaded.
+
+##### Examples
+``uploadrecording 123``  
+``uploadrecording 123 456``
+
+
+#### usage
+Shows two ways to invoke this application: one using a default setting file, another one providing a setting file.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``usage``**
+
 
 ### Windows PowerShell examples
 
@@ -281,7 +537,7 @@ The following example uses one parameter, **start**, to define the first number 
 
 Open Microsoft Windows PowerShell Integrated Scripting Environment (ISE) in admin mode, and paste the following code into the window that is named **Untitled1.ps1**.
 
-```
+```powershell
 param ( [int]$start = 1, [int]$nr = 1 )
 function UpdateCustomer
 {
@@ -320,7 +576,7 @@ for ($i = $start; $i -lt $start + $nr; $i++ )
 
 The following example uses an Open Data Protocol (OData) call to find the order status of a purchase order. If the status isn't **invoiced**, you can, for example, call an RSAT test case that posts the invoice.
 
-```
+```xpp
 function Odata_Get
 {
     Param ( [string] $environment, [string] $cmd )

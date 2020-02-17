@@ -1,6 +1,87 @@
 {
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/dev-itpro/extensibility/NamingGuidelines.md",
+      "redirect_url": "naming-guidelines-extensions",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/human-resources/hr-welcome.md",
+      "redirect_url": "index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/talent-welcome.md",
+      "redirect_url": "index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/dual-write-bootstrap.md",
+      "redirect_url": "dual-write/bootstrap-company-data",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/dual-write-company.md",
+      "redirect_url": "dual-write/company-data",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/dual-write-customer.md",
+      "redirect_url": "dual-write/customer-mapping",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/dual-write-overview.md",
+      "redirect_url": "dual-write/dual-write-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/dual-write-troubleshooting.md",
+      "redirect_url": "dual-write/dual-write-troubleshooting",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/dual-write-initial.md",
+      "redirect_url": "dual-write/initial-sync",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/dual-write-ledger.md",
+      "redirect_url": "dual-write/ledger-mapping",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/dual-write-organization.md",
+      "redirect_url": "dual-write/organization-mapping",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/dual-write-product.md",
+      "redirect_url": "dual-write/product-mapping",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/dual-write-sites-and-warehouses.md",
+      "redirect_url": "dual-write/sites-warehouses-mapping",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/dual-write-tax.md",
+      "redirect_url": "dual-write/tax-mapping",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/dual-write-vendor.md",
+      "redirect_url": "dual-write/vendor-mapping",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/dual-write-vendor-switch.md",
+      "redirect_url": "dual-write/vendor-switch",
+      "redirect_document_id": "false"
+    },
+
+    {
       "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/license-sizing-estimator-lcs.md",
       "redirect_url": "https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/license-sizing-estimator-lcs",
       "redirect_document_id": "false"
@@ -12243,6 +12324,1768 @@
     {
       "source_path": "articles/financials/public-sector/tasks/set-up-purchase-agreement-classifications-public-sector.md",
       "redirect_url": "..//dynamics365/finance/public-sector/tasks/set-up-purchase-agreement-classifications-public-sector",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/hr-copy-instance.md",
+      "redirect_url": "/dynamics365/human-resources/hr-admin-setup-copy-instance",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/remove-talent-environment.md",
+      "redirect_url": "/dynamics365/human-resources/hr-admin-setup-remove-instance",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/data-integration.md",
+      "redirect_url": "/dynamics365/human-resources/hr-admin-integration-choose-technology",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/hr-common-data-service-integration.md",
+      "redirect_url": "/dynamics365/human-resources/hr-admin-integration-common-data-service",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/talent-financeandoperations-integration.md",
+      "redirect_url": "/dynamics365/human-resources/hr-admin-integration-finance",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/configure-payroll-integration.md",
+      "redirect_url": "/dynamics365/human-resources/hr-admin-integration-dayforce",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/tutorial-integration-recurring-export.md",
+      "redirect_url": "/dynamics365/human-resources/hr-admin-integration-recurring-data-export",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/talent-fo-integration.md",
+      "redirect_url": "/dynamics365/human-resources/hr-admin-troubleshooting-integration-faq",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/talent-batch-history-cleanup.md",
+      "redirect_url": "/dynamics365/human-resources/hr-admin-troubleshooting-batch-history",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/analytic-reports-not-updated.md",
+      "redirect_url": "/dynamics365/human-resources/hr-admin-troubleshooting-analytic-reports",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/create-envi-powerapps-admin-ctr.md",
+      "redirect_url": "/dynamics365/human-resources/hr-admin-troubleshooting-power-apps",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/client-disconnects.md",
+      "redirect_url": "/dynamics365/human-resources/hr-admin-troubleshooting-disconnect",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/avoid-text-truncation-position-hierarchy-visio.md",
+      "redirect_url": "/dynamics365/human-resources/hr-admin-troubleshooting-truncate",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/run-compensation-process.md",
+      "redirect_url": "/dynamics365/human-resources/hr-admin-troubleshooting-compensation",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/save-play-task-guides-lcs.md",
+      "redirect_url": "/dynamics365/human-resources/hr-admin-troubleshooting-task-guide",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/security-roles-addresses.md",
+      "redirect_url": "/dynamics365/human-resources/hr-admin-troubleshooting-private-addresses",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/talent-not-in-home-cds.md",
+      "redirect_url": "/dynamics365/human-resources/hr-admin-troubleshooting-not-in-apps",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/talent-reporting-options.md",
+      "redirect_url": "/dynamics365/human-resources/hr-admin-troubleshooting-reporting",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/corehrentities.md",
+      "redirect_url": "/dynamics365/human-resources/hr-developer-entities",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/corehr-custom-fields.md",
+      "redirect_url": "/dynamics365/human-resources/hr-developer-custom-fields",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/api-odata-authentication.md",
+      "redirect_url": "/dynamics365/human-resources/hr-developer-api-authentication",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/api-myleaverequests-overview.md",
+      "redirect_url": "/dynamics365/human-resources/hr-developer-api-myleaverequests-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/api-myleaverequests-submit.md",
+      "redirect_url": "/dynamics365/human-resources/hr-developer-api-myleaverequests-submit",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/set-up-company-specific-hr-parameters.md",
+      "redirect_url": "/dynamics365/human-resources/hr-setup-parameters",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/set-up-hr-parameters-across-legal-entities.md",
+      "redirect_url": "/dynamics365/human-resources/hr-setup-shared-parameters",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/workflow-manage-employee-information.md",
+      "redirect_url": "/dynamics365/human-resources/hr-setup-workflows",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/date-time-fields-in-talent.md",
+      "redirect_url": "/dynamics365/human-resources/hr-setup-date-time-fields",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/departments-jobs-positions.md",
+      "redirect_url": "/dynamics365/human-resources/hr-personnel-departments-jobs-positions",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/create-job.md",
+      "redirect_url": "/dynamics365/human-resources/hr-personnel-jobs",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/define-new-departments.md",
+      "redirect_url": "/dynamics365/human-resources/hr-personnel-define-departments",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/create-department-add-department-hierarchy.md",
+      "redirect_url": "/dynamics365/human-resources/hr-personnel-add-department-hierarchy",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/define-new-jobs.md",
+      "redirect_url": "/dynamics365/human-resources/hr-personnel-define-jobs",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/create-calendar-working-times.md",
+      "redirect_url": "/dynamics365/human-resources/hr-personnel-create-working-time-calendar",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/personnel-actions-faq.md",
+      "redirect_url": "/dynamics365/human-resources/hr-personnel-actions-faq",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/modify-reporting-relationships-position.md",
+      "redirect_url": "/dynamics365/human-resources/hr-personnel-modify-reporting-relationships-position",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/enter-worker-information.md",
+      "redirect_url": "/dynamics365/human-resources/hr-personnel-enter-worker-information",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/loan-item-worker.md",
+      "redirect_url": "/dynamics365/human-resources/hr-personnel-loan-item-worker",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/create-loan-items.md",
+      "redirect_url": "/dynamics365/human-resources/hr-personnel-create-loan-items",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/loan-items.md",
+      "redirect_url": "/dynamics365/human-resources/hr-personnel-loan-items",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/develop-succession-plan.md",
+      "redirect_url": "/dynamics365/human-resources/hr-personnel-develop-succession-plan",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/enter-project-timesheets.md",
+      "redirect_url": "/dynamics365/human-resources/hr-personnel-enter-project-timesheets",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/mass-hire-projects.md",
+      "redirect_url": "/dynamics365/human-resources/hr-personnel-mass-hire-projects",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/create-mass-hire-project.md",
+      "redirect_url": "/dynamics365/human-resources/hr-personnel-create-mass-hire-project",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/set-up-positions.md",
+      "redirect_url": "/dynamics365/human-resources/hr-personnel-set-up-positions",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/set-up-injury-illness-information.md",
+      "redirect_url": "/dynamics365/human-resources/hr-personnel-set-up-injury-illness-information",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/maintain-employee-injury-illness-information.md",
+      "redirect_url": "/dynamics365/human-resources/hr-personnel-maintain-employee-injury-illness-information",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/compensation-plans.md",
+      "redirect_url": "/dynamics365/human-resources/hr-compensation-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/set-up-compensation-grids.md",
+      "redirect_url": "/dynamics365/human-resources/hr-compensation-grids",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/create-fixed-compensation-plans.md",
+      "redirect_url": "/dynamics365/human-resources/hr-compensation-fixed-plans",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/develop-salary-compensation-structure-plan.md",
+      "redirect_url": "/dynamics365/human-resources/hr-compensation-structure",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/create-variable-compensation-plans.md",
+      "redirect_url": "/dynamics365/human-resources/hr-compensation-variable-plans",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/enroll-employee-fixed-compensation-plan.md",
+      "redirect_url": "/dynamics365/human-resources/hr-compensation-enroll-employees-fixed",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/enroll-employee-variable-compensation-plan.md",
+      "redirect_url": "/dynamics365/human-resources/hr-compensation-enroll-employees-variable",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/define-compensation-process-calculate-results.md",
+      "redirect_url": "/dynamics365/human-resources/hr-compensation-define-process",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/process-compensation.md",
+      "redirect_url": "/dynamics365/human-resources/hr-compensation-process",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/manage-benefit-program.md",
+      "redirect_url": "/dynamics365/human-resources/hr-benefits-management-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/benefit-eligibility-policies.md",
+      "redirect_url": "/dynamics365/human-resources/hr-benefits-eligibility-policies",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/benefit-eligibility-process.md",
+      "redirect_url": "/dynamics365/human-resources/hr-benefits-eligibility-process",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/define-benefit-eligibility-rules-policies.md",
+      "redirect_url": "/dynamics365/human-resources/hr-benefits-define-eligibility-rules",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/deliver-employee-benefits-program.md",
+      "redirect_url": "/dynamics365/human-resources/hr-benefits-deliver-employee-benefits-program",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/create-new-benefit.md",
+      "redirect_url": "/dynamics365/human-resources/hr-benefits-create",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/enroll-remove-benefits-workers.md",
+      "redirect_url": "/dynamics365/human-resources/hr-benefits-enroll-workers",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/manage-benefit-expiration-dates.md",
+      "redirect_url": "/dynamics365/human-resources/hr-benefits-expiration-dates",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/generate-aca-reports.md",
+      "redirect_url": "/dynamics365/human-resources/hr-benefits-aca-reports",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/performance-management-overview.md",
+      "redirect_url": "/dynamics365/human-resources/hr-develop-performance-management-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/skills.md",
+      "redirect_url": "/dynamics365/human-resources/hr-develop-skills",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/add-your-performance-journal-send-praise-someone.md",
+      "redirect_url": "/dynamics365/human-resources/hr-develop-add-performance-journal",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/create-goal.md",
+      "redirect_url": "/dynamics365/human-resources/hr-develop-create-goal",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/create-performance-review.md",
+      "redirect_url": "/dynamics365/human-resources/hr-develop-create-performance-review",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/courses.md",
+      "redirect_url": "/dynamics365/human-resources/hr-learning-courses",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/questionnaires.md",
+      "redirect_url": "/dynamics365/human-resources/hr-learning-questionnaires",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/design-questionnaires.md",
+      "redirect_url": "/dynamics365/human-resources/hr-learning-design-questionnaires",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/distribute-questionnaires.md",
+      "redirect_url": "/dynamics365/human-resources/hr-learning-distribute-questionnaires",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/distribute-questionnaires-scheduling.md",
+      "redirect_url": "/dynamics365/human-resources/hr-learning-distribute-questionnaires-scheduling",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/evaluate-questionnaire-results.md",
+      "redirect_url": "/dynamics365/human-resources/hr-learning-evaluate-questionnaire-results",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/analyze-questionnaire-results.md",
+      "redirect_url": "/dynamics365/human-resources/hr-learning-analyze-questionnaire-results",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/create-open-ended-question.md",
+      "redirect_url": "/dynamics365/human-resources/hr-learning-create-open-ended-question",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/create-closed-ended-question.md",
+      "redirect_url": "/dynamics365/human-resources/hr-learning-create-closed-ended-question",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/make-question-dependent-answer-previous-question.md",
+      "redirect_url": "/dynamics365/human-resources/hr-learning-depending-question",
+      "source_path": "articles/retail/add-recommendations-control-pos-screen.md",
+      "redirect_url": "/dynamics365/commerce/add-recommendations-control-pos-screen",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/analyze-sales-trends-patterns.md",
+      "redirect_url": "/dynamics365/commerce/analyze-sales-trends-patterns",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/Apply-multiple-retail-discounts.md",
+      "redirect_url": "/dynamics365/commerce/Apply-multiple-retail-discounts",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/assess-customer-product-profitability.md",
+      "redirect_url": "/dynamics365/commerce/assess-customer-product-profitability",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/assortments.md",
+      "redirect_url": "/dynamics365/commerce/assortments",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/attribute-attributegroups-lifecycle.md",
+      "redirect_url": "/dynamics365/commerce/attribute-attributegroups-lifecycle",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/batch.md",
+      "redirect_url": "/dynamics365/commerce/batch",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/call-center-catalogs.md",
+      "redirect_url": "/dynamics365/commerce/call-center-catalogs",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/call-center-functionality.md",
+      "redirect_url": "/dynamics365/commerce/call-center-functionality",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/cash-denominations.md",
+      "redirect_url": "/dynamics365/commerce/cash-denominations",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/cash-mgmt.md",
+      "redirect_url": "/dynamics365/commerce/cash-mgmt",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/category-management-product-creation.md",
+      "redirect_url": "/dynamics365/commerce/category-management-product-creation",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/charge-send.md",
+      "redirect_url": "/dynamics365/commerce/charge-send",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/clienteling-overview.md",
+      "redirect_url": "/dynamics365/commerce/clienteling-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/Compatible-peripherals.md",
+      "redirect_url": "/dynamics365/commerce/Compatible-peripherals",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/configure-call-center-delivery.md",
+      "redirect_url": "/dynamics365/commerce/configure-call-center-delivery",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/cost.md",
+      "redirect_url": "/dynamics365/commerce/cost",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/custom-order-categories-nav-retail-prod-hierarchy.md",
+      "redirect_url": "/dynamics365/commerce/custom-order-categories-nav-retail-prod-hierarchy",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/customer-orders-overview.md",
+      "redirect_url": "/dynamics365/commerce/customer-orders-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/define-channel-specific-discounts.md",
+      "redirect_url": "/dynamics365/commerce/define-channel-specific-discounts",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/define-maintain-channel-clients-registers-hw-stations.md",
+      "redirect_url": "/dynamics365/commerce/define-maintain-channel-clients-registers-hw-stations",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/define-maintain-retail-channels.md",
+      "redirect_url": "/dynamics365/commerce/define-maintain-retail-channels",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/demo-data.md",
+      "redirect_url": "/dynamics365/commerce/demo-data",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/disable-consistency-check-rule.md",
+      "redirect_url": "/dynamics365/commerce/disable-consistency-check-rule",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dom.md",
+      "redirect_url": "/dynamics365/commerce/dom",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/duplicate-payment-protection.md",
+      "redirect_url": "/dynamics365/commerce/duplicate-payment-protection",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/edit-audit-retail-transactions.md",
+      "redirect_url": "/dynamics365/commerce/edit-audit-retail-transactions",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/email-receipts.md",
+      "redirect_url": "/dynamics365/commerce/email-receipts",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/enable-configure-retail-functionality.md",
+      "redirect_url": "/dynamics365/commerce/enable-configure-retail-functionality",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/extended-logon.md",
+      "redirect_url": "/dynamics365/commerce/extended-logon",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/hide-non-carrier-modes.md",
+      "redirect_url": "/dynamics365/commerce/hide-non-carrier-modes",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/hybrid-customer-orders.md",
+      "redirect_url": "/dynamics365/commerce/hybrid-customer-orders",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/implementation-considerations-devices.md",
+      "redirect_url": "/dynamics365/commerce/implementation-considerations-devices",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/index.md",
+      "redirect_url": "/dynamics365/commerce/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/info-codes-retail.md",
+      "redirect_url": "/dynamics365/commerce/info-codes-retail",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/install-pos-layout-designer.md",
+      "redirect_url": "/dynamics365/commerce/install-pos-layout-designer",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/monitor-sales-margin-performance.md",
+      "redirect_url": "/dynamics365/commerce/monitor-sales-margin-performance",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/MPOS-or-CPOS.md",
+      "redirect_url": "/dynamics365/commerce/MPOS-or-CPOS",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/multireturn.md",
+      "redirect_url": "/dynamics365/commerce/multireturn",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/Notifications-POS.md",
+      "redirect_url": "/dynamics365/commerce/Notifications-POS",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/omni-auto-charges.md",
+      "redirect_url": "/dynamics365/commerce/omni-auto-charges",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/omni-channel-payments.md",
+      "redirect_url": "/dynamics365/commerce/omni-channel-payments",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/online-stores.md",
+      "redirect_url": "/dynamics365/commerce/online-stores",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/Open-URL-in-POS.md",
+      "redirect_url": "/dynamics365/commerce/Open-URL-in-POS",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/optimal-combination-overlapping-discounts.md",
+      "redirect_url": "/dynamics365/commerce/optimal-combination-overlapping-discounts",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/Order-fulfillment-overview.md",
+      "redirect_url": "/dynamics365/commerce/Order-fulfillment-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/Order-fulfillment-POS-setup.md",
+      "redirect_url": "/dynamics365/commerce/Order-fulfillment-POS-setup",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/orderexchanges.md",
+      "redirect_url": "/dynamics365/commerce/orderexchanges",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/payinvoice.md",
+      "redirect_url": "/dynamics365/commerce/payinvoice",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/payment-connector-data-fields.md",
+      "redirect_url": "/dynamics365/commerce/payment-connector-data-fields",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/payment-methods-restrictions.md",
+      "redirect_url": "/dynamics365/commerce/payment-methods-restrictions",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/payment-methods.md",
+      "redirect_url": "/dynamics365/commerce/payment-methods",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/pos-application-user-language-settings.md",
+      "redirect_url": "/dynamics365/commerce/pos-application-user-language-settings",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/pos-image.md",
+      "redirect_url": "/dynamics365/commerce/pos-image",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/pos-offline-functionality.md",
+      "redirect_url": "/dynamics365/commerce/pos-offline-functionality",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/pos-operations.md",
+      "redirect_url": "/dynamics365/commerce/pos-operations",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/pos-sales-groups-track-commissions.md",
+      "redirect_url": "/dynamics365/commerce/pos-sales-groups-track-commissions",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/pos-screen-layouts.md",
+      "redirect_url": "/dynamics365/commerce/pos-screen-layouts",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/POS-search-improvements.md",
+      "redirect_url": "/dynamics365/commerce/POS-search-improvements",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/pos-suspend-recall-transactions.md",
+      "redirect_url": "/dynamics365/commerce/pos-suspend-recall-transactions",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/prevent-discounts.md",
+      "redirect_url": "/dynamics365/commerce/prevent-discounts",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/price-adjustments-discounts.md",
+      "redirect_url": "/dynamics365/commerce/price-adjustments-discounts",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/price-management.md",
+      "redirect_url": "/dynamics365/commerce/price-management",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/price-report.md",
+      "redirect_url": "/dynamics365/commerce/price-report",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/pro-rate-charges-matching-lines.md",
+      "redirect_url": "/dynamics365/commerce/pro-rate-charges-matching-lines",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/product-recommendations-demo-data.md",
+      "redirect_url": "/dynamics365/commerce/product-recommendations-demo-data",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/product-variants-POS.md",
+      "redirect_url": "/dynamics365/commerce/product-variants-POS",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/product.md",
+      "redirect_url": "/dynamics365/commerce/product",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/receipt-templates-printing.md",
+      "redirect_url": "/dynamics365/commerce/receipt-templates-printing",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/retail-components.md",
+      "redirect_url": "/dynamics365/commerce/retail-components",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/retail-coupons.md",
+      "redirect_url": "/dynamics365/commerce/retail-coupons",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/retail-discounts-overview.md",
+      "redirect_url": "/dynamics365/commerce/retail-discounts-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/retail-hardware-station-configuration-installation.md",
+      "redirect_url": "/dynamics365/commerce/retail-hardware-station-configuration-installation",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/retail-hierarchies.md",
+      "redirect_url": "/dynamics365/commerce/retail-hierarchies",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/retail-modern-pos-device-activation.md",
+      "redirect_url": "/dynamics365/commerce/retail-modern-pos-device-activation",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/retail-onprem.md",
+      "redirect_url": "/dynamics365/commerce/retail-onprem",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/retail-peripherals-overview.md",
+      "redirect_url": "/dynamics365/commerce/retail-peripherals-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/retail-shipping-discount.md",
+      "redirect_url": "/dynamics365/commerce/retail-shipping-discount",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/retail-statements.md",
+      "redirect_url": "/dynamics365/commerce/retail-statements",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/retail-support.md",
+      "redirect_url": "/dynamics365/commerce/retail-support",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/retail-time-attendance.md",
+      "redirect_url": "/dynamics365/commerce/retail-time-attendance",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/sales-performance-products.md",
+      "redirect_url": "/dynamics365/commerce/sales-performance-products",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/sell-return-outside-assortments.md",
+      "redirect_url": "/dynamics365/commerce/sell-return-outside-assortments",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/serialized-inventory.md",
+      "redirect_url": "/dynamics365/commerce/serialized-inventory",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/set-up-activation-accounts-validate-devices-hq.md",
+      "redirect_url": "/dynamics365/commerce/set-up-activation-accounts-validate-devices-hq",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/set-up-assortments.md",
+      "redirect_url": "/dynamics365/commerce/set-up-assortments",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/set-up-bar-code-masks.md",
+      "redirect_url": "/dynamics365/commerce/set-up-bar-code-masks",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/set-up-bar-codes.md",
+      "redirect_url": "/dynamics365/commerce/set-up-bar-codes",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/set-up-continuity-program.md",
+      "redirect_url": "/dynamics365/commerce/set-up-continuity-program",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/set-up-customer-loyalty-program.md",
+      "redirect_url": "/dynamics365/commerce/set-up-customer-loyalty-program",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/set-up-fraud-alerts.md",
+      "redirect_url": "/dynamics365/commerce/set-up-fraud-alerts",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/set-up-manage-images-retail-mpos.md",
+      "redirect_url": "/dynamics365/commerce/set-up-manage-images-retail-mpos",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/set-up-order-processing-options.md",
+      "redirect_url": "/dynamics365/commerce/set-up-order-processing-options",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/set-up-retail-products.md",
+      "redirect_url": "/dynamics365/commerce/set-up-retail-products",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/set-up-rfm-analysis.md",
+      "redirect_url": "/dynamics365/commerce/set-up-rfm-analysis",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/shift-drawer-management.md",
+      "redirect_url": "/dynamics365/commerce/shift-drawer-management",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/statement-posting-EOD.md",
+      "redirect_url": "/dynamics365/commerce/statement-posting-EOD",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/store-performance-information.md",
+      "redirect_url": "/dynamics365/commerce/store-performance-information",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/task-recorder-retail-pos.md",
+      "redirect_url": "/dynamics365/commerce/task-recorder-retail-pos",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/tender_based_discounts.md",
+      "redirect_url": "/dynamics365/commerce/tender_based_discounts",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/trickle-feed.md",
+      "redirect_url": "/dynamics365/commerce/trickle-feed",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/valid-checker.md",
+      "redirect_url": "/dynamics365/commerce/valid-checker",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/work-with-order-holds.md",
+      "redirect_url": "/dynamics365/commerce/work-with-order-holds",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/work-with-payments.md",
+      "redirect_url": "/dynamics365/commerce/work-with-payments",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/work-with-store-inventory.md",
+      "redirect_url": "/dynamics365/commerce/work-with-store-inventory",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/add-customer-preference-channel.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/add-customer-preference-channel",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/add-extension-properties.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/add-extension-properties",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/add-new-custom-control-mpos-screen-layout.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/add-new-custom-control-mpos-screen-layout",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/add-POS-operations.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/add-POS-operations",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/add-properties-sales-order.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/add-properties-sales-order",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/adyen-connector-listPI.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/adyen-connector-listPI",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/adyen-connector.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/adyen-connector",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/call-crt-service-offline.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/call-crt-service-offline",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/cdx-extensibility.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/cdx-extensibility",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/channel-db-extensions.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/channel-db-extensions",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/choose-deployment.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/choose-deployment",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/cloud-dev-box.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/cloud-dev-box",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/commerce-application-insights.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/commerce-application-insights",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/commerce-runtime-extensibility-trigger.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/commerce-runtime-extensibility-trigger",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/commerce-runtime-extensibility.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/commerce-runtime-extensibility",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/commerce-runtime-overview.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/commerce-runtime-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/configure-authentication-providers.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/configure-authentication-providers",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/configure-online-store.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/configure-online-store",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/create-retail-experience-app.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/create-retail-experience-app",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/create-windows-installer-payment-connector.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/create-windows-installer-payment-connector",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/crt-services.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/crt-services",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/custom-field-pos-totals.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/custom-field-pos-totals",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/customer-attributes.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/customer-attributes",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/define-retail-channel-communications-cdx.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/define-retail-channel-communications-cdx",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/deploy-payment-connector.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/deploy-payment-connector",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/dev-retail-home-page.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/dev-retail-home-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/DFP.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/DFP",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/duplicate-payment-protection.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/duplicate-payment-protection",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/ecommerce-platform-sdk.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/ecommerce-platform-sdk",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/end-to-end-payment-extension.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/end-to-end-payment-extension",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/extend-commerce-data-exchange.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/extend-commerce-data-exchange",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/extend-metadata.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/extend-metadata",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/extend-pos-notification.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/extend-pos-notification",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/extend-retail-server-odata-controller.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/extend-retail-server-odata-controller",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/extension-resource-localization.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/extension-resource-localization",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/extensions-shipping-carrier-integration.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/extensions-shipping-carrier-integration",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/gift-card-cash-out.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/gift-card-cash-out",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/gift-card.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/gift-card",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/hardware-device-extension.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/hardware-device-extension",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/hardware-station-extensibility.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/hardware-station-extensibility",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/hybridApp.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/hybridApp",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/linked-refunds.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/linked-refunds",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/manage-bing-maps.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/manage-bing-maps",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/manage-secrets.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/manage-secrets",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/modern-pos-trigger-extensibility.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/modern-pos-trigger-extensibility",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/n-1-installation-configuration.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/n-1-installation-configuration",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/new-environments-visual-studio-teams-branch-retail-projects",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/order-attributes.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/order-attributes",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/overview-upgrade-n-minus1.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/overview-upgrade-n-minus1",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/PA-DSS-Certification.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/PA-DSS-Certification",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/payment-custom-error-messages.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/payment-custom-error-messages",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/payments-retail.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/payments-retail",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/pos-api-extension.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/pos-api-extension",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/POS-APIs.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/POS-APIs",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/pos-app-signing-certificate.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/pos-app-signing-certificate",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/pos-control-non-screen.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/pos-control-non-screen",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/pos-custom-control.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/pos-custom-control",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/pos-custom-transaction-column.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/pos-custom-transaction-column",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/pos-custom-transaction.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/pos-custom-transaction",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/pos-dual-display-extension.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/pos-dual-display-extension",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/pos-handler.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/pos-handler",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/pos-override-handler.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/pos-override-handler",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/pos-payment-extension.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/pos-payment-extension",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/pos-rsat.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/pos-rsat",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/pos-run-samples.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/pos-run-samples",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/pos-trigger-printing.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/pos-trigger-printing",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/pos-view-extension.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/pos-view-extension",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/retail-component-events-diagnostics-troubleshooting.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-component-events-diagnostics-troubleshooting",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/retail-device-activation.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-device-activation",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/retail-implementation-testing-performance.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-implementation-testing-performance",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/retail-in-store-topology.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-in-store-topology",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/retail-mass-deployment.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-mass-deployment",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/retail-modern-pos-architecture.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-modern-pos-architecture",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/retail-online-store-publishing-architecture.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-online-store-publishing-architecture",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/retail-peripheral-simulator.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-peripheral-simulator",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/retail-POS-activation-changes.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-POS-activation-changes",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/retail-server-architecture.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-server-architecture",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/retail-server-customer-consumer-api.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-server-customer-consumer-api",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/retail-server-extension.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-server-extension",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/retail-store-scale-unit-configuration-installation.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-store-scale-unit-configuration-installation",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/retail-store-system-begin.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-store-system-begin",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/RetailSDK-update.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/RetailSDK-update",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/secure-retail-cloud-pos.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/secure-retail-cloud-pos",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/store-hours.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/store-hours",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/trigger-example-blocking-transaction.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/trigger-example-blocking-transaction",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/trigger-example-return-policy.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/trigger-example-return-policy",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/typescript-proxy-retail-pos.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/typescript-proxy-retail-pos",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/UpcomingSDKChanges.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/UpcomingSDKChanges",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/updating-environments.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/updating-environments",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/view-pos-extension-package-details.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/view-pos-extension-package-details",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/retail-sdk/loyalty-extension-sample.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/loyalty-extension-sample",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/retail-sdk-extensibility-samples",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/retail-sdk/retail-sdk-overview.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/retail-sdk-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/retail-sdk/retail-sdk-packaging.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/retail-sdk-packaging",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/retail-sdk/retail-sdk-samples.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/retail-sdk-samples",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/get-started/april-whats-new.md",
+      "redirect_url": "/dynamics365/commerce/get-started/april-whats-new",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/get-started/before-you-buy.md",
+      "redirect_url": "/dynamics365/commerce/get-started/before-you-buy",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/get-started/system-requirements.md",
+      "redirect_url": "/dynamics365/commerce/get-started/system-requirements",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/get-started/whats-new-10-0-1.md",
+      "redirect_url": "/dynamics365/commerce/get-started/whats-new-10-0-1",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/get-started/whats-new-10-0-2.md",
+      "redirect_url": "/dynamics365/commerce/get-started/whats-new-10-0-2",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/get-started/whats-new-10-0-3.md",
+      "redirect_url": "/dynamics365/commerce/get-started/whats-new-10-0-3",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/get-started/whats-new-10-0-5.md",
+      "redirect_url": "/dynamics365/commerce/get-started/whats-new-10-0-5",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/get-started/whats-new-10-0-6.md",
+      "redirect_url": "/dynamics365/commerce/get-started/whats-new-10-0-6",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/get-started/whats-new-10-0-7.md",
+      "redirect_url": "/dynamics365/commerce/get-started/whats-new-10-0-7",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/get-started/whats-new-10-0-8.md",
+      "redirect_url": "/dynamics365/commerce/get-started/whats-new-10-0-8",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/get-started/whats-new-home-page.md",
+      "redirect_url": "/dynamics365/commerce/get-started/whats-new-home-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/get-started/whats-new.md",
+      "redirect_url": "/dynamics365/commerce/get-started/whats-new",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/localizations/apac-ind-cash-registers.md",
+      "redirect_url": "/dynamics365/commerce/localizations/apac-ind-cash-registers",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/localizations/apac-ind-loc-deployment-guidelines.md",
+      "redirect_url": "/dynamics365/commerce/localizations/apac-ind-loc-deployment-guidelines",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/localizations/apac-ind-n-1-for-india.md",
+      "redirect_url": "/dynamics365/commerce/localizations/apac-ind-n-1-for-india",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/localizations/emea-aut-deployment.md",
+      "redirect_url": "/dynamics365/commerce/localizations/emea-aut-deployment",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/localizations/emea-aut-fi-sample.md",
+      "redirect_url": "/dynamics365/commerce/localizations/emea-aut-fi-sample",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/localizations/emea-cze-fi-sample.md",
+      "redirect_url": "/dynamics365/commerce/localizations/emea-cze-fi-sample",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/localizations/emea-eeu-advance-invoices-for-retail.md",
+      "redirect_url": "/dynamics365/commerce/localizations/emea-eeu-advance-invoices-for-retail",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/localizations/emea-eeu-deployment.md",
+      "redirect_url": "/dynamics365/commerce/localizations/emea-eeu-deployment",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/localizations/emea-eeu-petty-cash-for-retail.md",
+      "redirect_url": "/dynamics365/commerce/localizations/emea-eeu-petty-cash-for-retail",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/localizations/emea-eeu-retail-invoices.md",
+      "redirect_url": "/dynamics365/commerce/localizations/emea-eeu-retail-invoices",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/localizations/emea-fra-cash-registers.md",
+      "redirect_url": "/dynamics365/commerce/localizations/emea-fra-cash-registers",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/localizations/emea-fra-deployment.md",
+      "redirect_url": "/dynamics365/commerce/localizations/emea-fra-deployment",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/localizations/emea-ita-customer-information.md",
+      "redirect_url": "/dynamics365/commerce/localizations/emea-ita-customer-information",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/localizations/emea-ita-fpi-sample.md",
+      "redirect_url": "/dynamics365/commerce/localizations/emea-ita-fpi-sample",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/localizations/emea-nor-cash-registers.md",
+      "redirect_url": "/dynamics365/commerce/localizations/emea-nor-cash-registers",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/localizations/emea-nor-loc-deployment-guidelines.md",
+      "redirect_url": "/dynamics365/commerce/localizations/emea-nor-loc-deployment-guidelines",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/localizations/emea-pol-customer-information.md",
+      "redirect_url": "/dynamics365/commerce/localizations/emea-pol-customer-information",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/localizations/emea-pol-fpi-sample.md",
+      "redirect_url": "/dynamics365/commerce/localizations/emea-pol-fpi-sample",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/localizations/emea-swe-cash-registers.md",
+      "redirect_url": "/dynamics365/commerce/localizations/emea-swe-cash-registers",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/localizations/emea-swe-fi-sample.md",
+      "redirect_url": "/dynamics365/commerce/localizations/emea-swe-fi-sample",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/localizations/fiscal-integration-for-retail-channel.md",
+      "redirect_url": "/dynamics365/commerce/localizations/fiscal-integration-for-retail-channel",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/localizations/retail-sdk-control-unit-sample.md",
+      "redirect_url": "/dynamics365/commerce/localizations/retail-sdk-control-unit-sample",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/localizations/setting-up-fiscal-integration-for-retail-channel.md",
+      "redirect_url": "/dynamics365/commerce/localizations/setting-up-fiscal-integration-for-retail-channel",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/tasks/base-price-trade-agreements.md",
+      "redirect_url": "/dynamics365/commerce/tasks/base-price-trade-agreements",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/tasks/category-pricing-rules-trade-agreements.md",
+      "redirect_url": "/dynamics365/commerce/tasks/category-pricing-rules-trade-agreements",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/tasks/configure-credit-card-processing.md",
+      "redirect_url": "/dynamics365/commerce/tasks/configure-credit-card-processing",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/tasks/configure-functionality-profile-sales-representative.md",
+      "redirect_url": "/dynamics365/commerce/tasks/configure-functionality-profile-sales-representative",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/tasks/create-associate-device.md",
+      "redirect_url": "/dynamics365/commerce/tasks/create-associate-device",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/tasks/create-associate-hardware-station.md",
+      "redirect_url": "/dynamics365/commerce/tasks/create-associate-hardware-station",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/tasks/create-associate-registers.md",
+      "redirect_url": "/dynamics365/commerce/tasks/create-associate-registers",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/tasks/create-calculate-post-statement-retail-store.md",
+      "redirect_url": "/dynamics365/commerce/tasks/create-calculate-post-statement-retail-store",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/tasks/create-call-center-orders.md",
+      "redirect_url": "/dynamics365/commerce/tasks/create-call-center-orders",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/tasks/create-financial-dimensions-pos.md",
+      "redirect_url": "/dynamics365/commerce/tasks/create-financial-dimensions-pos",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/tasks/create-financial-dimensions-retail-channels.md",
+      "redirect_url": "/dynamics365/commerce/tasks/create-financial-dimensions-retail-channels",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/tasks/create-online-channel-define-channel-attributes.md",
+      "redirect_url": "/dynamics365/commerce/tasks/create-online-channel-define-channel-attributes",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/tasks/create-pos-permission-groups.md",
+      "redirect_url": "/dynamics365/commerce/tasks/create-pos-permission-groups",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/tasks/create-pos-visual-profile-2016-02.md",
+      "redirect_url": "/dynamics365/commerce/tasks/create-pos-visual-profile-2016-02",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/tasks/create-product-packages-purchase-orders.md",
+      "redirect_url": "/dynamics365/commerce/tasks/create-product-packages-purchase-orders",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/tasks/define-call-center-channel-channel-attributes.md",
+      "redirect_url": "/dynamics365/commerce/tasks/define-call-center-channel-channel-attributes",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/tasks/define-channel-attributes.md",
+      "redirect_url": "/dynamics365/commerce/tasks/define-channel-attributes",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/tasks/define-continuity-schedules.md",
+      "redirect_url": "/dynamics365/commerce/tasks/define-continuity-schedules",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/tasks/define-loyalty-programs.md",
+      "redirect_url": "/dynamics365/commerce/tasks/define-loyalty-programs",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/tasks/define-loyalty-reward-points.md",
+      "redirect_url": "/dynamics365/commerce/tasks/define-loyalty-reward-points",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/tasks/define-loyalty-schemes.md",
+      "redirect_url": "/dynamics365/commerce/tasks/define-loyalty-schemes",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/tasks/design-relationships-between-organizational-units.md",
+      "redirect_url": "/dynamics365/commerce/tasks/design-relationships-between-organizational-units",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/tasks/manage-assortments-2016-11.md",
+      "redirect_url": "/dynamics365/commerce/tasks/manage-assortments-2016-11",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/tasks/parameter-configurations-retail-statements.md",
+      "redirect_url": "/dynamics365/commerce/tasks/parameter-configurations-retail-statements",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/tasks/payment-configurations-retail-statements.md",
+      "redirect_url": "/dynamics365/commerce/tasks/payment-configurations-retail-statements",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/tasks/perform-self-service-download-hardware-station.md",
+      "redirect_url": "/dynamics365/commerce/tasks/perform-self-service-download-hardware-station",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/tasks/posting-online-sales-payments.md",
+      "redirect_url": "/dynamics365/commerce/tasks/posting-online-sales-payments",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/tasks/process-loyalty-reward-point-adjustments.md",
+      "redirect_url": "/dynamics365/commerce/tasks/process-loyalty-reward-point-adjustments",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/tasks/push-products-distribution-center-store-buyers-push.md",
+      "redirect_url": "/dynamics365/commerce/tasks/push-products-distribution-center-store-buyers-push",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/tasks/retail-price-adjustments.md",
+      "redirect_url": "/dynamics365/commerce/tasks/retail-price-adjustments",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/tasks/run-job-calculate-statements.md",
+      "redirect_url": "/dynamics365/commerce/tasks/run-job-calculate-statements",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/tasks/run-job-post-statements.md",
+      "redirect_url": "/dynamics365/commerce/tasks/run-job-post-statements",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/tasks/run-out-box-reports.md",
+      "redirect_url": "/dynamics365/commerce/tasks/run-out-box-reports",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/tasks/set-up-rules-parameters-cross-docking-buyers-push.md",
+      "redirect_url": "/dynamics365/commerce/tasks/set-up-rules-parameters-cross-docking-buyers-push",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/tasks/store-configurations-retail-statements.md",
+      "redirect_url": "/dynamics365/commerce/tasks/store-configurations-retail-statements",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/tasks/use-continuity-program.md",
+      "redirect_url": "/dynamics365/commerce/tasks/use-continuity-program",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/tasks/worker.md",
+      "redirect_url": "/dynamics365/commerce/tasks/worker",
       "redirect_document_id": "false"
     }
   ]

@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Create a page URL
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic covers the basic concepts and procedures for creating a page URL on your site.

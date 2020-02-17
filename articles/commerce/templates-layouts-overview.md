@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Templates and layouts overview
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Templates are a foundational element of the Microsoft Dynamics 365 Commerce page model. If your goal is to maximize efficiency and consistency for site authoring workflows, it's important that you learn how to take advantages of templates for your website. Early decisions about template structure are important, and can significantly affect cost and agility for daily, seasonal, and site-wide brand updates. Well-structured templates have other benefits too. For example, they help improve site-wide search engine optimization (SEO) scores and minimize bug counts.

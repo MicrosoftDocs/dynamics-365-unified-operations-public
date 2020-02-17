@@ -5,7 +5,7 @@ title: Workflow business events
 description: Workflow business events are generated at various points in the processing of a workflow.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 01/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -28,7 +28,6 @@ ms.dyn365.ops.version: Platform update 24
 
 # Workflow business events
 [!include[banner](../includes/banner.md)]
-[!include[preview banner](../includes/preview-banner.md)]
 
 Workflow business events are generated at various points in the processing of a workflow.   
 
@@ -93,8 +92,8 @@ For a step-by-step guide to setting up work item completion in Microsoft Power A
 ## Templates for work item completion in Power Automate
 
 The following templates for work item completion in Power Automate are available:
-- [Complete Dynamics 365 for Finance and Operations workflow work items (PU26)](https://flow.microsoft.com/en-us/galleries/public/templates/efb564143834442283c41e19cdc2a6bb/complete-dynamics-365-for-finance-and-operations-workflow-work-items-pu26/)
-- [Complete Dynamics 365 for Finance and Operations workflow work items (PU29)](https://flow.microsoft.com/en-us/galleries/public/templates/ebeccaa6f7aa40899828d8d01151d268/complete-dynamics-365-for-finance-and-operations-workflow-work-items-pu29/)
+- [Complete Dynamics 365 for Finance and Operations workflow work items (PU26)](https://flow.microsoft.com/galleries/public/templates/efb564143834442283c41e19cdc2a6bb/complete-dynamics-365-for-finance-and-operations-workflow-work-items-pu26/)
+- [Complete Dynamics 365 for Finance and Operations workflow work items (PU29)](https://flow.microsoft.com/galleries/public/templates/ebeccaa6f7aa40899828d8d01151d268/complete-dynamics-365-for-finance-and-operations-workflow-work-items-pu29/)
 
 The Platform update 29 version gets completion options from the business event payload. These options were added in Platform update 29, and presented to the user via the approval action. 
 

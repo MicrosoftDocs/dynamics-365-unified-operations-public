@@ -34,7 +34,7 @@ This procedure walks through the steps to create and process a Cross-dock to dis
 
 1. Go to All purchase orders.
 2. Select a purchase order in the list and click the link to open the order.
-3. On the Action Pane, click Retail.
+3. On the Action Pane, click Retail and Commerce.
 4. Click Cross docking.
 5. Click Edit.
     * The category can be used to filter the items in the Lines section.  

@@ -43,7 +43,7 @@ The .env file that is provided as part of the Dynamics 365 Commerce online softw
 
 The default .env file that is provided with the online SDK should resemble the following example.
 
-```
+```text
 MSDyn365_APP_TYPE=partner
 PORT=4000
 
@@ -70,7 +70,7 @@ The **PORT** variable is required. It defines the port number that is used to pr
 
 The following example shows the syntax for this variable.
 
-```
+```text
 PORT=4000
 ```
 
@@ -84,17 +84,17 @@ The **MSDyn365\_HOST** variable defines the domain name of your customer-facing 
 
 The following example shows the syntax for this variable.
 
-```
+```text
 MSDyn365_HOST=demo.fabrikam.com
 ```
 
 ## MSDyn365Commerce_BASEURL
 
-The **MSDyn365Commerce\_BASEURL** variable defines the URL of the Microsoft Dynamics 365 Retail Server. When this variable is set, local development and testing can be done against Dynamics 365 Retail application programming interfaces (APIs). If you set this variable, you must also set the **MSDyn365Commerce\_CHANNELID**, **MSDyn365Commerce\_OUN**, and **MSDyn365Commerce\_CATALOGID** variables.
+The **MSDyn365Commerce\_BASEURL** variable defines the URL of the Microsoft Dynamics 365 Commerce Scale Unit. When this variable is set, local development and testing can be done against application programming interfaces (APIs). If you set this variable, you must also set the **MSDyn365Commerce\_CHANNELID**, **MSDyn365Commerce\_OUN**, and **MSDyn365Commerce\_CATALOGID** variables.
 
 The following example shows the syntax for this variable.
 
-```
+```text
 MSDyn365Commerce_BASEURL=https://fabrikamb1de06d29165320bret.cloud.retail.dynamics.com
 ```
 
@@ -104,14 +104,14 @@ The **MSDyn365Commerce\_OUN** variable defines the operating unit number for the
 
 To find the channel operating unit number, follow these steps.
 
-1. Go to the Dynamics 365 Retail website.
+1. Go to the Commerce website.
 1. In the search field at the top of the page, enter **Online channels**, and then select the channel to use. You should see an **Operating unit number** column, as shown in the following illustration.
 
-    ![Operating unit number column on the Dynamics 365 Retail website](media/operating-unit-number.png)
+    ![Operating unit number column on the Dynamics 365 Commerce website](media/operating-unit-number.png)
 
 The following example shows the syntax for this variable.
 
-```
+```text
 MSDyn365Commerce_OUN=128
 ```
 
@@ -125,7 +125,7 @@ The **MSDyn365Commerce\_CHANNELID** variable defines the online channel that you
 
 To find the channel ID, follow these steps.
 
-1. Go to the Dynamics 365 Retail website.
+1. Go to the Dynamics 365 Commerce website.
 1. In the search field at the top of the page, enter **Online channels**, and then select the channel to use.
 1. On the Action Pane, on the **Options** tab, in the **Page options** group, select **Record Info**.
 1. In the **Record information** dialog box, the value of the **Record-ID** field is the channel ID. Copy this value.
@@ -134,7 +134,7 @@ To find the channel ID, follow these steps.
 
 The following example shows the syntax for this variable.
 
-```
+```text
 MSDyn365Commerce_CHANNELID=68719478279
 ```
 

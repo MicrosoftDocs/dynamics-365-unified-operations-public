@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 The Person search report for Finance and Operations apps is backed by an intelligent search processor that is designed to manage a collection of entities for a single person. The Person search report searches Finance and Operations data and creates a set of resulting identifiers. Each result references a search category (for example, Customer) and a result record in a related table. For information about using the Person search report, refer the [Person search report](gdpr-person-search-report.md) topic.
 
 > [!NOTE]
-> The Person search is available for Dynamics 365 Finance, Supply Chain Management, Retail, and Talent. The Person search report is not currently available for Microsoft Dynamics AX 2012.
+> The Person search is available for Dynamics 365 Finance, Supply Chain Management, Commerce, and Human Resources. The Person search report is not currently available for Microsoft Dynamics AX 2012.
 
 ## Add another entity to the default template
 
@@ -54,7 +54,7 @@ In this example, you will create a new processor class.
 2. Create a class that extends the **PersonSearchProcessor** class and includes the **PersonSearchProcessorFactoryAttribute** attribute, with the new person search module area as a parameter. 
 3. In the **PersonSearchProcessor** extended class, override the **doSearch** method with your desired search logic. As shown in the following example, extend the **PersonSearchResult** table to create new table relationships.
 
-    ```
+    ```xpp
     PersonSearchResultCategory::Customer needs a relation:PersonSearchResult.ResultRecId = CustTable.RecId,PersonSearchResult.ResultTableId = CustTable.TableId
     ```
 

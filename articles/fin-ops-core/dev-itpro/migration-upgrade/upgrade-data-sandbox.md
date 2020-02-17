@@ -74,15 +74,15 @@ To create a database copy, make a backup of the original database, and restore i
 
 Here is an example of the code that creates a database copy. You must modify this example to reflect your specific database names.
 
-```
-    BACKUP DATABASE [AxDB] TO  DISK = N'D:\Backups\axdb_copyForUpgrade.bak' WITH NOFORMAT, NOINIT,  
-    NAME = N'AxDB_copyForUpgrade-Full Database Backup', SKIP, NOREWIND, NOUNLOAD, COMPRESSION,  STATS = 10
-    GO
+```sql
+BACKUP DATABASE [AxDB] TO  DISK = N'D:\Backups\axdb_copyForUpgrade.bak' WITH NOFORMAT, NOINIT,  
+NAME = N'AxDB_copyForUpgrade-Full Database Backup', SKIP, NOREWIND, NOUNLOAD, COMPRESSION,  STATS = 10
+GO
 
-    RESTORE DATABASE [AxDB_copyForUpgrade] FROM  DISK = N'D:\Backups\axdb_copyForUpgrade.bak'   WITH  FILE = 1,  
-    MOVE N'AXDBBuild_Data' TO N'F:\MSSQL_DATA\AxDB_copyForUpgrade.mdf',  
-    MOVE N'AXDBBuild_Log' TO N'G:\MSSQL_LOGS\AxDB_CopyForUpgrade.ldf',  
-    NOUNLOAD,  STATS = 5
+RESTORE DATABASE [AxDB_copyForUpgrade] FROM  DISK = N'D:\Backups\axdb_copyForUpgrade.bak'   WITH  FILE = 1,  
+MOVE N'AXDBBuild_Data' TO N'F:\MSSQL_DATA\AxDB_copyForUpgrade.mdf',  
+MOVE N'AXDBBuild_Log' TO N'G:\MSSQL_LOGS\AxDB_CopyForUpgrade.ldf',  
+NOUNLOAD,  STATS = 5
 ```
 ## Run the T-SQL script to prepare the database
 
@@ -90,98 +90,98 @@ This script prepares the database by removing users, removing procedures related
 
 After the copy is created, run the following Transact-SQL (T-SQL) script against it.
 
-```
-    --remove NT users as these are not supported in Azure SQL Database
-    declare 
-    @SQL varchar(255),
-    @UserName varchar(255)
+```sql
+--remove NT users as these are not supported in Azure SQL Database
+declare 
+@SQL varchar(255),
+@UserName varchar(255)
 
-    set quoted_identifier off
+set quoted_identifier off
 
-    declare     userCursor CURSOR for
-    select name from sys.sysusers where (isntuser = 1 or isntgroup =1) and name <> 'dbo'
+declare     userCursor CURSOR for
+select name from sys.sysusers where (isntuser = 1 or isntgroup =1) and name <> 'dbo'
 
-    OPEN userCursor
-        FETCH userCursor into @UserName
-        WHILE @@Fetch_Status = 0
-          BEGIN
-            set @SQL = 'DROP USER [' + @UserName + ']'
-            exec(@SQL)
-            FETCH userCursor into @UserName
-          END
-    CLOSE userCursor
-    DEALLOCATE userCursor
+OPEN userCursor
+    FETCH userCursor into @UserName
+    WHILE @@Fetch_Status = 0
+       BEGIN
+           set @SQL = 'DROP USER [' + @UserName + ']'
+           exec(@SQL)
+           FETCH userCursor into @UserName
+       END
+CLOSE userCursor
+DEALLOCATE userCursor
 
-    go
+go
 
-    --remove any AX 2012 RTM model store procedures that still exist
-    declare 
-    @SQL varchar(255),
-    @procname varchar(255)
+--remove any AX 2012 RTM model store procedures that still exist
+declare 
+@SQL varchar(255),
+@procname varchar(255)
 
-    set quoted_identifier off
+set quoted_identifier off
 
-    declare     procCursor CURSOR for
-    select name from sys.procedures where name like 'XI_%' or name like 'XU_%'
+declare     procCursor CURSOR for
+select name from sys.procedures where name like 'XI_%' or name like 'XU_%'
 
-    OPEN procCursor
-        FETCH procCursor into @procname
-        WHILE @@Fetch_Status = 0
-          BEGIN
-            set @SQL = 'DROP PROCEDURE [' + @procname + ']'
-            exec(@SQL)
-            FETCH procCursor into @procname
-          END
-    CLOSE procCursor
-    DEALLOCATE procCursor
+OPEN procCursor
+    FETCH procCursor into @procname
+    WHILE @@Fetch_Status = 0
+       BEGIN
+           set @SQL = 'DROP PROCEDURE [' + @procname + ']'
+           exec(@SQL)
+           FETCH procCursor into @procname
+       END
+CLOSE procCursor
+DEALLOCATE procCursor
 
-    go
+go
 
-    --If you receive a message that you cannot delete users because they own a schema, then check which schema the user owns. 
-    --Either change the ownership to another user (for example to dbo) or drop the schema if it does not contain any objects. 
-    --The examples below are for an AX 2012 demo environment. You will need to edit this for your specific environment.
+--If you receive a message that you cannot delete users because they own a schema, then check which schema the user owns. 
+--Either change the ownership to another user (for example to dbo) or drop the schema if it does not contain any objects. 
+--The examples below are for an AX 2012 demo environment. You will need to edit this for your specific environment.
 
-        if exists (select 1 from sys.schemas where name = 'contoso\admin')
-    begin
-        drop schema [contoso\admin]
-    end
-    if exists (select 1 from sys.schemas where name = 'contoso\Domain Users')
-    begin
-        drop schema [CONTOSO\Domain Users]
-    end
-    go
+    if exists (select 1 from sys.schemas where name = 'contoso\admin')
+begin
+    drop schema [contoso\admin]
+end
+if exists (select 1 from sys.schemas where name = 'contoso\Domain Users')
+begin
+    drop schema [CONTOSO\Domain Users]
+end
+go
 
-    --drop all views in the current database because some refresh the tempDB, which is not a supported action in Azure SQL Databases
-    declare 
-    @SQL2 varchar(255),
-    @ViewName varchar(255)
+--drop all views in the current database because some refresh the tempDB, which is not a supported action in Azure SQL Databases
+declare 
+@SQL2 varchar(255),
+@ViewName varchar(255)
 
-    set quoted_identifier off
+set quoted_identifier off
 
-    declare     viewCursor CURSOR for
+declare     viewCursor CURSOR for
 
-    select viewname = v.name
-    from sys.views v
-    order by v.name
+select viewname = v.name
+from sys.views v
+order by v.name
 
-    OPEN viewCursor
+OPEN viewCursor
 
-    FETCH viewCursor into @ViewName
-        WHILE @@Fetch_Status = 0
-          BEGIN
-            set @SQL2 = 'DROP VIEW ' + @ViewName
-            exec(@SQL2)
-            FETCH viewCursor into @ViewName
-          END
-    CLOSE viewCursor
-    DEALLOCATE viewCursor
-    go
+FETCH viewCursor into @ViewName
+    WHILE @@Fetch_Status = 0
+       BEGIN
+           set @SQL2 = 'DROP VIEW ' + @ViewName
+           exec(@SQL2)
+           FETCH viewCursor into @ViewName
+       END
+CLOSE viewCursor
+DEALLOCATE viewCursor
+go
 
-    -- Drop the following procedure because it contains a tempDB reference that is not supported in Azure SQL Database
-    If exists (select 1 from sys.procedures where name = 'MaintainShipCarrierRole')
-    begin
-        drop procedure MaintainShipCarrierRole
-    end
+-- Drop the following procedure because it contains a tempDB reference that is not supported in Azure SQL Database
+If exists (select 1 from sys.procedures where name = 'MaintainShipCarrierRole')
+begin
+    drop procedure MaintainShipCarrierRole
+end
 ```
 
 ## Export the copied database to a bacpac file
@@ -199,7 +199,7 @@ This step is important, because the export will have to be done again during the
 
 Next, open a **Command Prompt** window as an administrator, and run the following commands.
 
-```
+```Console
 cd C:\Program Files (x86)\Microsoft SQL Server\130\DAC\bin\
 
 SqlPackage.exe /a:export /ssn:localhost /sdn:<database to export> /tf:D:\Exportedbacpac\my.bacpac /p:CommandTimeout=1200 /p:VerifyFullTextDocumentTypesSupported=false
@@ -239,10 +239,10 @@ For performance reasons, we recommend that you put the bacpac file on drive D on
 
 Open a **Command Prompt** window as an administrator, and run the following commands.
 
-```
-    cd C:\Program Files (x86)\Microsoft SQL Server\130\DAC\bin\
+```Console
+cd C:\Program Files (x86)\Microsoft SQL Server\130\DAC\bin\
 
-    SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:<azure sql database server name>.database.windows.net /tu:sqladmin /tp:<password from LCS> /tdn:<New database name> /p:CommandTimeout=1200 /p:DatabaseEdition=Premium /p:DatabaseServiceObjective=<Service objective>
+SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:<azure sql database server name>.database.windows.net /tu:sqladmin /tp:<password from LCS> /tdn:<New database name> /p:CommandTimeout=1200 /p:DatabaseEdition=Premium /p:DatabaseServiceObjective=<Service objective>
 ```
 
 Here is an explanation of the parameters:
@@ -267,35 +267,35 @@ Run the following script against the imported database. The script performs the 
 -   Sets the correct performance parameters
 -   Enables the SQL Query Store feature
 
-```
-    CREATE USER axdeployuser FROM LOGIN axdeployuser
-    EXEC sp_addrolemember 'db_owner', 'axdeployuser'
+```sql
+CREATE USER axdeployuser FROM LOGIN axdeployuser
+EXEC sp_addrolemember 'db_owner', 'axdeployuser'
 
-    CREATE USER axdbadmin WITH PASSWORD = 'password from lcs'
-    EXEC sp_addrolemember 'db_owner', 'axdbadmin'
+CREATE USER axdbadmin WITH PASSWORD = 'password from lcs'
+EXEC sp_addrolemember 'db_owner', 'axdbadmin'
 
-    CREATE USER axruntimeuser WITH PASSWORD = 'password from lcs'
-    EXEC sp_addrolemember 'db_datareader', 'axruntimeuser'
-    EXEC sp_addrolemember 'db_datawriter', 'axruntimeuser'
+CREATE USER axruntimeuser WITH PASSWORD = 'password from lcs'
+EXEC sp_addrolemember 'db_datareader', 'axruntimeuser'
+EXEC sp_addrolemember 'db_datawriter', 'axruntimeuser'
 
-    CREATE USER axmrruntimeuser WITH PASSWORD = 'password from lcs'
-    EXEC sp_addrolemember 'ReportingIntegrationUser', 'axmrruntimeuser'
-    EXEC sp_addrolemember 'db_datareader', 'axmrruntimeuser'
-    EXEC sp_addrolemember 'db_datawriter', 'axmrruntimeuser'
+CREATE USER axmrruntimeuser WITH PASSWORD = 'password from lcs'
+EXEC sp_addrolemember 'ReportingIntegrationUser', 'axmrruntimeuser'
+EXEC sp_addrolemember 'db_datareader', 'axmrruntimeuser'
+EXEC sp_addrolemember 'db_datawriter', 'axmrruntimeuser'
 
-    CREATE USER axretailruntimeuser WITH PASSWORD = 'password from lcs'
-    EXEC sp_addrolemember 'UsersRole', 'axretailruntimeuser'
-    EXEC sp_addrolemember 'ReportUsersRole', 'axretailruntimeuser'
+CREATE USER axretailruntimeuser WITH PASSWORD = 'password from lcs'
+EXEC sp_addrolemember 'UsersRole', 'axretailruntimeuser'
+EXEC sp_addrolemember 'ReportUsersRole', 'axretailruntimeuser'
 
-    CREATE USER axretaildatasyncuser WITH PASSWORD = 'password from lcs'
-    EXEC sp_addrolemember 'DataSyncUsersRole', 'axretaildatasyncuser'
+CREATE USER axretaildatasyncuser WITH PASSWORD = 'password from lcs'
+EXEC sp_addrolemember 'DataSyncUsersRole', 'axretaildatasyncuser'
 
-    ALTER DATABASE SCOPED CONFIGURATION  SET MAXDOP=2
-    ALTER DATABASE SCOPED CONFIGURATION  SET LEGACY_CARDINALITY_ESTIMATION=ON
-    ALTER DATABASE SCOPED CONFIGURATION  SET PARAMETER_SNIFFING= ON
-    ALTER DATABASE SCOPED CONFIGURATION  SET QUERY_OPTIMIZER_HOTFIXES=OFF
-    ALTER DATABASE imported-database-name SET COMPATIBILITY_LEVEL = 130;
-    ALTER DATABASE imported-database-name SET QUERY_STORE = ON;
+ALTER DATABASE SCOPED CONFIGURATION  SET MAXDOP=2
+ALTER DATABASE SCOPED CONFIGURATION  SET LEGACY_CARDINALITY_ESTIMATION=ON
+ALTER DATABASE SCOPED CONFIGURATION  SET PARAMETER_SNIFFING= ON
+ALTER DATABASE SCOPED CONFIGURATION  SET QUERY_OPTIMIZER_HOTFIXES=OFF
+ALTER DATABASE imported-database-name SET COMPATIBILITY_LEVEL = 130;
+ALTER DATABASE imported-database-name SET QUERY_STORE = ON;
 ```
 
 ## Run the data upgrade deployable package

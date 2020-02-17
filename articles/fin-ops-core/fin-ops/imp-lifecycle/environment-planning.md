@@ -63,7 +63,9 @@ You can use the following environment types for your project:
 | Tier-1 | Tier-2 and higher |
 |--------|-------------------|
 | Single-box environment | Multi-box environment |
-| All components are installed on the same server, a Virtual Machine. These components include Application Object Server (AOS), the database, Dynamics 365 Retail, and Management Reporter. These components include Application Object Server (AOS), the database, Dynamics 365  Retail, and Management Reporter. | Components are installed on multiple cloud services, and typically include more than one Application Object Server (AOS). |
+
+| All components are installed on the same server. These components include Application Object Server (AOS), the database, Dynamics 365 Commerce, and Management Reporter. | Components are installed on multiple servers. |
+
 | Microsoft SQL Server is used. | [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/) is used. |
 | The architecture differs from the architecture of the production environment to maximize efficiency and cost of the development team. | The architecture is the same as the architecture of the production environment, even though this type of environment has a different sizing and isn't enabled for disaster recovery. |
 | The environment can be deployed in various ways. For example, it can be deployed as an add-on, it can be cloud-hosted, or it can be deployed as an environment image (VHD). | The environment can be deployed only as a standard environment or an add-on environment. It can't be cloud-hosted. |

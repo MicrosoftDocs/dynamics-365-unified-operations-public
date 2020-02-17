@@ -22,7 +22,7 @@ ms.search.scope: Talent, Core
 # ms.custom: 7521
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: trkeya
+ms.author: anbichse
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update 
 

@@ -486,37 +486,38 @@ The second step is to define a table that has the fields that are returned from 
 13. Click **SysDataCacheContextId**. In the **Properties** window, set the **Map Field To** property to **SysDataCacheContextId**. **Note:** If the field doesn't appear in the list, you might have to save the table first, by pressing **Ctrl+S**.
 14. Press **F7** to view the table’s code. Alternatively, right-click **FMTReturnAndPickupTableCache**, and then click **View Code**.
 15. Add the following display methods to the table. The form will use these methods later.
-
-        public display FMTName fullName()
-        {
-            return this.FirstName + ' ' + this.LastName;
-        }
-        public display container customerImage()
-        {
-            ImageReference imgRef;
-            container imgContainer = this.Image;
-            if(imgContainer == connull())
+    ```xpp
+    public display FMTName fullName()
+    {
+        return this.FirstName + ' ' + this.LastName;
+    }
+    public display container customerImage()
+    {
+        ImageReference imgRef;
+        container imgContainer = this.Image;
+        if(imgContainer == connull())
             {
                 imgRef = ImageReference::constructForSymbol("Person");
                 imgContainer = imgRef.pack();
             }
             return imgContainer;
-        }
-        public display str rentalVehicle()
+    }
+    public display str rentalVehicle()
+    {
+        FMTVehicle vehicle;
+        str value;
+        if(this.Vehicle == 0)
         {
-            FMTVehicle vehicle;
-            str value;
-            if(this.Vehicle == 0)
-            {
-                value = "No vehicle assigned";
-            }
-            else
-            {
-                select vehicle where vehicle.RecId == this.Vehicle;
-                value = vehicle.Description;
-            }
-            return value;
+            value = "No vehicle assigned";
         }
+        else
+        {
+            select vehicle where vehicle.RecId == this.Vehicle;
+            value = vehicle.Description;
+        }
+        return value;
+    }
+    ```
 
 16. Press **Ctrl+S** to save.
 
@@ -530,27 +531,29 @@ The third step is to create a class that defines the relationship between the ca
 4.  If the new **FMTPickupAndReturnClass** class isn’t already open in the designer, double-click it in Solution Explorer.
 5.  Add the following code to the class.
 
-        [SysDataSetExtension(classStr(FMTPickupAndReturnClass)), // The name of this class
-        SysDataSetCacheTableExtension(tableStr(FMTPickupAndReturnTableCache))] // The name of the cache table
-        class FMTPickupAndReturnClass extends SysDataSetQuery implements SysIDataSet
+    ```xpp
+    [SysDataSetExtension(classStr(FMTPickupAndReturnClass)), // The name of this class
+    SysDataSetCacheTableExtension(tableStr(FMTPickupAndReturnTableCache))] // The name of the cache table
+    class FMTPickupAndReturnClass extends SysDataSetQuery implements SysIDataSet
+    {
+        public SysDataCacheRefreshFrequency parmRefreshFrequency()
         {
-            public SysDataCacheRefreshFrequency parmRefreshFrequency()
-            {
-                return 600; // Cache refresh frequency, in seconds.
-            }
-            public SysQueryableIdentifier parmQueryableIdentifier()
-            {
-                return queryStr(FMTPickupAndReturnQuery); // The name of the query.
-            }
-            public SysDataCacheTypeId parmCacheTypeId()
-            {
-                return tableNum(FMTPickupAndReturnTableCache); // The name of the table.
-            }
-            public static FMTPickupAndReturnClass construct()
-            {
-                return new FMTPickupAndReturnClass();
-            }
+            return 600; // Cache refresh frequency, in seconds.
         }
+        public SysQueryableIdentifier parmQueryableIdentifier()
+        {
+            return queryStr(FMTPickupAndReturnQuery); // The name of the query.
+        }
+        public SysDataCacheTypeId parmCacheTypeId()
+        {
+            return tableNum(FMTPickupAndReturnTableCache); // The name of the table.
+        }
+        public static FMTPickupAndReturnClass construct()
+        {
+            return new FMTPickupAndReturnClass();
+        }
+    }
+    ```
 
 6.  Press **Ctrl+S** to save.
 
@@ -568,15 +571,17 @@ After you've set up the data cache, you can start to use the cache in your forms
 8.  Press **F7** to view code for the form.
 9.  Instrument the form so that it can react to data caching, as shown in the following code.
 
-        [Form]
-        public class FMTReturningTodayPart extends FormRun implements SysIDataSetConsumerForm
+    ```xpp
+    [Form]
+    public class FMTReturningTodayPart extends FormRun implements SysIDataSetConsumerForm
+    {
+        public void registerDatasourceOnQueryingEvent()
         {
-            public void registerDatasourceOnQueryingEvent()
-            {
-                FMTPickupAndReturnTableCache_DS.OnQueryExecuting += 
-                    eventhandler(this.parmDataSetFormQueryEventHandler().prepareDataSet);
-            }
+            FMTPickupAndReturnTableCache_DS.OnQueryExecuting += 
+                eventhandler(this.parmDataSetFormQueryEventHandler().prepareDataSet);
         }
+    }
+    ```
 
 10. Press **Ctrl+S** to save.
 
@@ -587,47 +592,51 @@ Actions that are performed from the workspace might expect records from the base
 1.  In Solution Explorer, double-click the **FmtCompleteRental** form to open it in the designer.
 2.  Press **F7** to view the form’s code.
 
-        public void init()
+    ```xpp
+    public void init()
+    {
+        //If this form was opened with a Rental as context
+        if(element.args() != null && element.args().record() != null && element.args().record().TableId == tablenum(FMTRental))
         {
-            //If this form was opened with a Rental as context
-            if(element.args() != null && element.args().record() != null && element.args().record().TableId == tablenum(FMTRental))
+            //Get the Rental context
+            rentalDS = FormDataUtil::getFormDataSource(element.args().record());
+            rental = element.args().record();
+            if(rental != null)
             {
-                //Get the Rental context
-                rentalDS = FormDataUtil::getFormDataSource(element.args().record());
-                rental = element.args().record();
-                if(rental != null)
-                {
-                    select firstonly forupdate vehicle where vehicle.RecId == rental.Vehicle;
-                }
+                select firstonly forupdate vehicle where vehicle.RecId == rental.Vehicle;
             }
-            super();
         }
+        super();
+    }
+    ```
 
 3.  Update the **init()** method so that it matches the following code.
 
-        public void init()
+    ```xpp
+    public void init()
+    {
+        //If this form was opened with a record context
+        if(element.args() != null && element.args().record() != null))
         {
-            //If this form was opened with a record context
-            if(element.args() != null && element.args().record() != null))
+            //Get that context
+            rentalDS = FormDataUtil::getFormDataSource(element.args().record());
+            if(element.args().record().TableId == tableNum(FMTPickupAndReturnTableCache))
             {
-                //Get that context
-                rentalDS = FormDataUtil::getFormDataSource(element.args().record());
-                if(element.args().record().TableId == tableNum(FMTPickupAndReturnTableCache))
-                {
-                    FMTPickupAndReturnTableCache cacheRecord = element.args().record();
-                    select firstonly forupdate rental where rental.RentalId == cacheRecord.RentalId;
-                }
-                else if(element.args().record().TableId == tableNum(FMTRental))
-                {
-                    rental = element.args().record();
-                }
-                if(rental != null)
-                {
-                    select firstonly forupdate vehicle where vehicle.RecId == rental.Vehicle;
-                }
+                FMTPickupAndReturnTableCache cacheRecord = element.args().record();
+                select firstonly forupdate rental where rental.RentalId == cacheRecord.RentalId;
             }
-            super();
+            else if(element.args().record().TableId == tableNum(FMTRental))
+            {
+                rental = element.args().record();
+            }
+            if(rental != null)
+            {
+                select firstonly forupdate vehicle where vehicle.RecId == rental.Vehicle;
+            }
         }
+        super();
+    }
+    ```
 
 4.  Press **Ctrl+S** to save.
 
@@ -656,15 +665,17 @@ You must make sure that your lists remain up to date after a user performs an ac
 2.  Press **F7** to view the code for the form.
 3.  Locate the **clicked()** code for **OKButton**. Near the end of this method is a research call on the calling form’s data source. Just before that line of code, add the following **if** statement to delete the processed rental from the cache table.
 
-        . . .
-        if(rentalDS.table() == tableNum(FMTPickupAndReturnTableCache))
-        {
-            //Delete updated record from backing cache
-            FMTPickupAndReturnTableCache cacheRecord = element.args().record();
-            cacheRecord.delete();
-        }
-        rentalDS.research(true);
-        }
+    ```xpp
+    . . .
+    if(rentalDS.table() == tableNum(FMTPickupAndReturnTableCache))
+    {
+        //Delete updated record from backing cache
+        FMTPickupAndReturnTableCache cacheRecord = element.args().record();
+        cacheRecord.delete();
+    }
+    rentalDS.research(true);
+    }
+    ```
 
 4.  Press **Ctrl+S** to save.
 

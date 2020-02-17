@@ -50,9 +50,11 @@ To be able to reach your on-premises resources with the app, you will need to cr
 ## Create an application entry in AD FS
 For a successful authentication exchange between AD FS and Finance + Operations, an application entry must be registered in AD FS under an AD FS application group. To create this application entry, run the following Windows PowerShell commands on a machine where the AD FS is installed. The user account must have enough permissions to administer AD FS.
 
-1.  Enter the following command in the Windows PowerShell console to create the application entry  
-    
-        Add-AdfsClient -Name 'Dynamics 365 for Finance and Operations - Warehousing' -ClientId ([guid]::NewGuid()) -ClientType Confidential -GenerateClientSecret -RedirectUri '\<Resource URL\>' -ADUserPrincipalName '\<Admin user\>' 
+1.  Enter the following command in the Windows PowerShell console to create the application entry.  
+
+    ```powershell
+    Add-AdfsClient -Name 'Dynamics 365 for Finance and Operations - Warehousing' -ClientId ([guid]::NewGuid()) -ClientType Confidential -GenerateClientSecret -RedirectUri '\<Resource URL\>' -ADUserPrincipalName '\<Admin user\>' 
+    ```
 
     - The \<Resource URL\> can, for example, be `https://ax.d365ffo.onprem.contoso.com` (where `https://ax.d365ffo.onprem.contoso.com`
 is the URL to access Finance + Operations).
@@ -62,7 +64,9 @@ is the URL to access Finance + Operations).
 
 3.  Run the following command to grant permission to the application.  
     
-        Grant-AdfsApplicationPermission -ClientRoleIdentifier '\<Client ID received in previous steps\>' -ServerRoleIdentifier '\<Resource URL\>' -ScopeNames 'openid'
+    ```powershell
+    Grant-AdfsApplicationPermission -ClientRoleIdentifier '\<Client ID received in previous steps\>' -ServerRoleIdentifier '\<Resource URL\>' -ScopeNames 'openid'
+    ```
 
 ## Create and configure a user account
 
@@ -75,8 +79,7 @@ To enable Finance + Operations to use your AD FS application, you must create a 
     
     b.  Create a new user.
     
-    c.  Assign the warehouse mobile device user role, as shown in the example
-        screenshot.
+    c.  Assign the warehouse mobile device user role, as shown in the example screenshot.
 
     ![Create and configure a user](media/wmapp-users.png)
 

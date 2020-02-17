@@ -56,7 +56,7 @@ You can open the **Formula designer** page when you perform any of the following
 - Define the conditions for process control validations.
 - Define the message text for process control validations.
 
-## <a name="Binding">Data binding</a>
+## <a name="Binding"></a>Data binding
 
 The ER formula designer can be used to define an expression that transforms data that is received from data sources, so that the data can be entered in the data consumer in the following ways at runtime:
 
@@ -74,7 +74,7 @@ The following illustration shows how an expression of this type can be used. In 
 
 At runtime, the designed formula, `ROUND (Intrastat.AmountMST, 2)`, rounds the value of the **AmountMST** field for each record in the Intrastat table to two decimal places. It then enters the rounded value in the **Transaction.InvoicedAmount** component of the **Tax reporting** data model.
 
-## <a name="Transformation">Data formatting</a>
+## <a name="Transformation"></a>Data formatting
 
 The ER formula designer can be used to define an expression that formats data that is received from data sources, so that the data can be sent as part of the generating electronic document. You might have formatting that must be applied as a typical rule that should be reused for a format. In this case, you can introduce that formatting one time in the format configuration, as a named transformation that has a formatting expression. This named transformation can then be linked to many format components where the output must be formatted according to the formatting expression that you created.
 
@@ -92,7 +92,7 @@ If you have formatting that must be applied individually, you can introduce that
 
 [![Applying formatting to an individual component](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)
 
-## <a name="Validation">Process flow control</a>
+## <a name="Validation"></a>Process flow control
 
 The ER formula designer can be used to define expressions that control the process flow of generating electronic documents. You can perform the following tasks:
 
@@ -117,7 +117,7 @@ The ER formula designer can also be used to generate a file name for a generatin
 
 [![Process flow control](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
 
-## <a name="Enabled">Document content control</a>
+## <a name="Enabled"></a>Document content control
 
 The ER formula designer can be used to configure expressions that control what data will be put into generated electronic documents at runtime. The expressions can enable or disable the output of specific elements of the format, depending on processing data and configured logic. These expressions can be entered for a single format element in the **Enabled** field on the **Mapping** tab of the **Operations designer** page. You can enter the expressions as a logic condition that returns a *Boolean* value:
 
@@ -144,7 +144,7 @@ The following illustration shows expressions of this type. (Version 11.12.11 of 
 > 
 > Based on this setup, the message that is generated for each debtor payment, the **Ustrd** XML element, will contain either the text of payment notes or, when that text is blank, a comma-separated list of the invoice numbers that are used to settle the payment.
 
-## <a name="TestFormula">Validation of configured formulas</a>
+## <a name="TestFormula"></a>Validation of configured formulas
 
 On the **Formula designer** page, select **Test** to validate how the configured formula works.
 

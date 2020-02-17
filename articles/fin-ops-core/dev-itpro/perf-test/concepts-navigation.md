@@ -40,13 +40,13 @@ To simplify the discoverability of generation methods for test data, a set of na
 
 Navigation should start from the root object, the module must be specified, and then the entity must be specified together with the test data methods.
 
-```
+```xpp
 data.module().entity().testDataMethod();
 ```
 
 ### Examples
 
-```
+```xpp
 modelGroup = data.invent().modelGroups().fifo();
 
 itemBuilder = data.products().items().whsBuilder();
@@ -108,7 +108,7 @@ The plural of the entity name should be used as the name of the entity navigatio
 
 #### Examples
 
-```
+```xpp
 data.products().items();
 
 data.whs().warehouses();
@@ -120,7 +120,7 @@ data.whs().warehouses();
 
 #### Examples
 
-```
+```xpp
 AtlDataProductsItems
 
 AtlDataInventChargeGroups
@@ -140,7 +140,7 @@ The helpers navigation node should be named `helpers`.
 
 #### Examples
 
-```
+```xpp
 data.helpers();
 
 data.whs().helpers();
@@ -152,7 +152,7 @@ data.whs().helpers();
 
 #### Examples
 
-```
+```xpp
 AtlDataHelpers
 
 AtlDataWHSHelpers
