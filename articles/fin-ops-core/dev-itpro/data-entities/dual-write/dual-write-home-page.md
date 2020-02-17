@@ -2,7 +2,7 @@
 # required metadata
 
 title: Dual-write home page
-description: 
+description: This topic provides links to information about dual-write.
 author: robinarh
 manager: AnnBe
 ms.date: 02/08/2020
@@ -38,25 +38,29 @@ ms.dyn365.ops.version: AX 7.0.0
 
 These topics describe dual-write integration.
 
-+ [What is dual-write?](dual-write-overview.md) 
++ [What is dual-write?](dual-write-overview.md)
+
     - [Top reasons to use dual-write](dual-write-overview.md#top-reasons-to-use-dual-write)
     - [What does dual-write mean for users and architects of customer relationship management products?](dual-write-overview.md#what-does-dual-write-mean-for-users-and-architects-of-customer-relationship-management-products)
 
-## Mapping between concepts in Finance and Operations applications and concepts in model-driven apps in Dynamics 365
+## Mapping between concepts in Finance and Operations applications and concepts in model-driven apps in Microsoft Dynamics 365
 
 + [Organization hierarchy awareness](organization-mapping.md)
 + [Company concept in Common Data Service](company-data.md)
+
     + [Bootstrap with company data FAQ](bootstrap-company-data.md)
+
 + [Integrated customer master](customer-mapping.md)
 + [Integrated ledger](ledger-mapping.md)
 + [Unified product experience](product-mapping.md)
 + [Integrated vendor master](vendor-mapping.md)
+
     + [Switch between vendor designs](vendor-switch.md)
+
 + [Integrated sites and warehouses](sites-warehouses-mapping.md)
 + [Integrated tax master](tax-mapping.md)
 
 ## Support
 
 + [Initial synchronization choices and administration views](initial-sync.md)
-+ [Troubleshooting data integration](dual-write-troubleshooting.md) 
-
++ [Troubleshooting data integration](dual-write-troubleshooting.md)
