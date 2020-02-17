@@ -5,7 +5,7 @@ title: Create a new module
 description: This topic describes how to create a new module in Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 01/31/2020
+ms.date: 02/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -44,7 +44,7 @@ To create a new module in Commerce, the online Software Development Kit (SDK) pr
 
 The following example shows how to create a module that is named **product-feature**.
 
-```
+```Console
 yarn msdyn365 add-module product-feature
 ```
 
@@ -56,7 +56,7 @@ To preview the new module in a local web browser, follow these steps.
 
 1. At a command prompt, go to your root SDK folder, and run the **yarn start** command. Here is an example.
 
-    ```
+    ```Console
     c:\repos\Msdyn365.Commerce.Online\yarn start
     ```
 
@@ -75,8 +75,6 @@ Module names are case-insensitive. We recommended that you use whole words for m
 [Add module configuration fields](add-module-config-fields.md)
 
 [Preview and debug a module](test-module.md)
-
-[Debug modules](debug-modules.md)
 
 [Test modules by using module mocks](test-module-mock.md)
 

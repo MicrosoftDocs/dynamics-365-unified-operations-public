@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up coupons for retail sales
-description: This topic provides an overview of retail coupons and explains how to set them up.
+description: This topic provides an overview of coupons and explains how to set them up.
 author: scott-tucker
 manager: AnnBe
 ms.date: 05/22/2017

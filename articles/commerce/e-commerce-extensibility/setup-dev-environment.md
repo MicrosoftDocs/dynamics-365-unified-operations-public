@@ -66,7 +66,7 @@ The Online SDK provides everything that you require to extend your online channe
 
 The SDK configuration package is available through the [Msdyn365.Commerce.Online GitHub repository (repo)](https://github.com/microsoft/Msdyn365.Commerce.Online). Download or clone the repo to a local folder on your development computer. To clone the repo, use the following command.
 
-```
+```Console
 git clone https://github.com/microsoft/Msdyn365.Commerce.Online.git
 ```
 
@@ -87,7 +87,7 @@ To download the SDK dependency packages, follow these steps.
     > [!IMPORTANT]
     > This step should be done after you've completed any update to the packages.json file.
 
-    ```
+    ```Console
     c:\repos\Msdyn365.Commerce.Online>yarn
     ```
 
@@ -99,11 +99,11 @@ To run your Node app, follow these steps.
 
 1. Run the **yarn start** command to open the Node app.
 
-    ```
+    ```Console
     c:\repos\Msdyn365.Commerce.Online>yarn start
     ```
 
-This command can take up to a minute to run. When it's completed, you will see output that indicates that the server has been started. The output also shows the allocated port number (4000 by default, but you can change the value in the .env file).
+    This command can take up to a minute to run. When it's completed, you will see output that indicates that the server has been started. The output also shows the allocated port number (4000 by default, but you can change the value in the .env file).
 
 2. To test that your Node app is running correctly, open the following URLs in a web browser:
 
@@ -116,7 +116,7 @@ This command can take up to a minute to run. When it's completed, you will see o
 
 To add a new module that is named **product-feature**, run the **yarn msdyn365 add-module MODULE\_NAME** command. Here is an example.
 
-```
+```Console
 c:\repos\Msdyn365.Commerce.Online>yarn msdyn365 add-module product-feature
 ```
 
@@ -128,7 +128,8 @@ Several of the available starter kit modules can be cloned. These modules includ
 
 For example, to modify the content-block module, run the **yarn msdyn365 clone STARTER\_KIT\_MODULE\_NAME NEW\_MODULE\_NAME** command to pull down the source code. Here is an example.
 
-```
+
+```Console
 c:\repos\Msdyn365.Commerce.Online>yarn msdyn365 clone content-block super-content-block
 ```
 
@@ -140,6 +141,10 @@ To preview a specific module (for example, product-feature) in a local web brows
 
 1. At a command prompt, open your Node app by running the **yarn start** command from the root of your SDK.
 
+
+    ```Console
+    c:\repos\MyEcommerceSite>yarn start
+=======
     ```
     c:\repos\Msdyn365.Commerce.Online>yarn start
     ```

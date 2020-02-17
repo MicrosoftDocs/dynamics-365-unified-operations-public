@@ -118,7 +118,9 @@ Before you start the steps that are outlined in this topic, follow these steps.
 
 If you are installing Modern POS for use with an on-premises environment, you must start the installer from a command line as follows:
 
-    ModernPosSetupOffline.exe -UseAdfsAuthentication
+```Console
+ModernPosSetupOffline.exe -UseAdfsAuthentication
+```
 
 The Modern POS installer first extracts the associated files and then starts the installation.
 
@@ -204,7 +206,7 @@ You must complete this procedure before you activate Modern POS for a new worker
     > [!NOTE]
     > The **External identifier** field will remain empty. This behavior is expected. Therefore, you can ignore it.
 
-This procedure should be completed before you activate Retail Cloud POS or Modern POS. For more information, see [Manage Retail activation accounts and validate devices](set-up-activation-accounts-validate-devices-hq.md).
+This procedure should be completed before you activate Retail Cloud POS or Modern POS. For more information, see [Manage activation accounts and validate devices](set-up-activation-accounts-validate-devices-hq.md).
 
 ### Run the Validate Devices for Activation check
 
@@ -229,7 +231,7 @@ The device should now be activated and ready to use.
 > To learn more about deployable packages, see the article [Apply a deployable package](../dev-itpro/deployment/apply-deployable-package-system.md).
 
 1. After a Modern POS application is uploaded into the environment, the version of the package can be selected on the device. The package listings should include the new uploaded application.
-2. To update the Modern POS application, follow the steps in the [Download and install Modern POS](#download-and-install-retail-modern-pos) section. To do an in-place update, just run the newer version of the self-service installer. Uninstallation isn't required or recommended. Device activation status will be maintained after the update.
+2. To update the Modern POS application, follow the steps in the [Download and install Modern POS](#download-and-install-modern-pos) section. To do an in-place update, just run the newer version of the self-service installer. Uninstallation isn't required or recommended. Device activation status will be maintained after the update.
 3. The installer will use the currently installed configuration settings. If the configuration file has changed, because of various configuration changes in Commerce, an update won't change the Modern POS application settings.
 
 ## Troubleshooting
@@ -260,13 +262,13 @@ The device should now be activated and ready to use.
     1. Open a **Command Prompt** window as an administrator.
     2. Enter the following command.
 
-        ```
+        ```Console
         lodctr /s:"perf_backup.txt"
         ```
 
     3. Enter the following command.
 
-        ```
+        ```Console
         lodctr /R
         ```
 
@@ -325,4 +327,4 @@ On a single-computer system, such as a developer topology or a demo environment,
 
 ## Additional resources
 
-[Install the Retail point of sale (POS) layout designer](install-pos-layout-designer.md)
+[Install the POS layout designer](install-pos-layout-designer.md)

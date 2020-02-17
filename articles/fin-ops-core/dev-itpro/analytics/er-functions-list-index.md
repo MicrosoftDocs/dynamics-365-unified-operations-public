@@ -38,7 +38,7 @@ The `INDEX` function returns a *Container (record)* value that is selected by us
 
 ## Syntax
 
-```
+```vb
 INDEX (list, index)
 ```
 

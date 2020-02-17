@@ -5,7 +5,7 @@ title: Preview and debug a module
 description: This topic describes how to test a module by previewing and debugging it in a web browser.
 author: samjarawan
 manager: annbe
-ms.date: 01/31/2020
+ms.date: 02/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -44,7 +44,7 @@ To preview a module in a local web browser, follow these steps.
 
 1. At a command prompt, go to your root SDK folder, and run the **yarn start** command. Here is an example.
 
-    ```
+    ```Console
     c:\repos\Msdyn365.Commerce.Online\yarn start
     ```
 
@@ -79,7 +79,7 @@ From the view that is opened, you can attach a debugger to the running Node.js a
 
 To inform Node.js that you want to attach a debugger, start your application by using the following command.
 
-```
+```Console
 yarn start --inspect-brk
 ```
 
@@ -104,8 +104,6 @@ The previously opened window should gain focus. The application isn't actually r
 [Clone a starter kit module](clone-starter-module.md)
 
 [Add module configuration fields](add-module-config-fields.md)
-
-[Debug modules](debug-modules.md)
 
 [Test modules by using module mocks](test-module-mock.md)
 

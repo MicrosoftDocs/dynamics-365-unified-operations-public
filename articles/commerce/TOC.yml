@@ -166,6 +166,8 @@
           href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/commerce/toc.json
         - name: Saved views
           href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/commerce/toc.json
+        - name: Grid capabilites
+          href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/commerce/toc.json
         - name: Create and work with custom fields
           href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/commerce/toc.json
         - name: Embed PowerApps apps
@@ -438,8 +440,6 @@
           href: configure-call-center-delivery.md
         - name: Set up and work with fraud alerts 
           href: set-up-fraud-alerts.md
-        - name: Set up continuity programs for call centers 
-          href: set-up-continuity-program.md
       - name: Additional channel configuration 
         items:
         - name: Add a channel to an organization hierarchy  
@@ -450,6 +450,12 @@
             href: omni-auto-charges.md
           - name: Prorate header charges to matching sales lines
             href: pro-rate-charges-matching-lines.md 
+        - name: Manage continuity programs
+          items:
+          - name: Set up continuity programs for call centers 
+            href: set-up-continuity-program.md
+          - name: Define continuity schedules
+            href: tasks/define-continuity-schedules.md
         - name: Retail store management 
           items:
           - name: Create and change store hours
@@ -460,8 +466,6 @@
           items:
           - name: Configure and work with call center order holds
             href: work-with-order-holds.md
-          - name: Define continuity schedules
-            href: tasks/define-continuity-schedules.md
         - name: Payments
           items:
           - name: Payment methods 
@@ -478,6 +482,8 @@
             href: dev-itpro/adyen-connector.md
           - name: Saving online payment instruments with the Adyen connector
             href: dev-itpro/adyen-connector-listpi.md
+          - name: Seamless offline switch for gift card and credit memo operations
+            href: dev-itpro/seamless-offline-improvements.md
           - name: Set up pay invoice scenarios 
             href: payinvoice.md
           - name: Duplicate payments prevention 
@@ -494,9 +500,9 @@
           href: ../supply-chain/pim/product-information.md?toc=/dynamics365/commerce/toc.json
         - name: Set up retail products 
           href: set-up-retail-products.md
-        - name: Retail product hierarchy 
+        - name: Product hierarchy 
           items:
-          - name: Retail hierarchies 
+          - name: Commerce hierarchies 
             href: retail-hierarchies.md
           - name: Create a new product hierarchy 
             href: create-product-hierarchy.md
@@ -910,6 +916,18 @@
         items:
         - name: Build custom response pages for 4xx/5xx status code errors
           href: build-pages-400-500-errors.md
+    - name: Manage tasks 
+      items:
+      - name: Task management overview
+        href: task-mgmt-overview.md
+      - name: Configure task management
+        href: task-mgmt-configure.md
+      - name: Create task lists and add tasks
+        href: task-mgmt-create-lists.md
+      - name: Assign task lists to stores or employees
+        href: task-mgmt-assign-lists.md
+      - name: Task management in POS
+        href: task-mgmt-pos.md
     - name: Fraud protection 
       items:
       - name:	Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce	
@@ -1834,8 +1852,6 @@
             href: e-commerce-extensibility/add-module-config-fields.md
           - name: Preview and debug modules
             href: e-commerce-extensibility/test-module.md 
-          - name: Debug modules
-            href: e-commerce-extensibility/debug-modules.md
           - name: Test modules by using mocks
             href: e-commerce-extensibility/test-module-mock.md
           - name: Test modules by using page mocks
@@ -2060,8 +2076,6 @@
         href: dev-itpro/extension-resource-localization.md
   - name: Finance and Operations apps development and administration 
     href: ../fin-ops-core/dev-itpro/index.md
-  - name: Dynamics 365 Retail
-    href: index.md
   - name: Dynamics 365 Finance
     href: ../finance/index.md
   - name: Dynamics 365 Supply Chain Management 

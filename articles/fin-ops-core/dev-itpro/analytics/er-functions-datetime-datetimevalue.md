@@ -38,13 +38,13 @@ The `DATETIMEVALUE` function returns a *DateTime* value that is converted from a
 
 ## Syntax 1
 
-```
+```vb
 DATETIMEVALUE (text, format)
 ```
 
 ## Syntax 2
 
-```
+```vb
 DATETIMEVALUE (text, format, culture)
 ```
 

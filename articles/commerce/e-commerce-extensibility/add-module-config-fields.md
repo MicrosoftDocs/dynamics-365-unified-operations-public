@@ -5,7 +5,7 @@ title: Add module configuration fields
 description: This topic describes how to add module configuration fields in Microsoft Dynamics 365 Commerce. 
 author: samjarawan
 manager: annbe
-ms.date: 01/31/2020
+ms.date: 02/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -50,7 +50,7 @@ To add configuration fields, you add an entry in the **config** section of the m
 
 In the following example of a module definition file, an **imageAlignment** configuration field has been added so that page authors can configure the alignment of an image inside a module. There are two enumeration (enum) options: **"Left"** (the default option) and **"Right"**. 
 
-```
+```json
 {
     "$type": "contentModule",
     "friendlyName": "Product Feature",
@@ -103,7 +103,7 @@ The **config** section of the module definition file contains a list of all the 
 
 The following example shows how the various supported data types are used.
 
-```
+```json
 {
     "$type": "contentModule",
     "friendlyName": "Sample Config",
@@ -266,7 +266,7 @@ In the following example, the module creator has given this field a default valu
 
 The following example shows how to set a mock value for a new configuration field in the **mocks/MODULE\_NAME.json** file. Mock data is useful when a module is rendered in a local development environment.
 
-```
+```json
 {
     "id": "R1Module1",
     "config": {
@@ -348,7 +348,7 @@ export default ProductFeature;
 
 The following example shows the corresponding module view file that handles the HTML layout.
 
-```
+```json
 /*---------------------------------------------------------------------------------------------
  *  Copyright (c) Microsoft Corporation. All rights reserved.
  *  Licensed under the MIT License. See License.txt in the project root for license information.
@@ -410,8 +410,6 @@ export default ProductFeatureView;
 [Clone a starter kit module](clone-starter-module.md)
 
 [Preview and debug a module](test-module.md)
-
-[Debug modules](debug-modules.md)
 
 [Test modules by using module mocks](test-module-mock.md)
 

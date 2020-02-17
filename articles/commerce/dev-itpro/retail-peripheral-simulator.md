@@ -118,7 +118,7 @@ You can use the peripheral simulator to test product bar codes, receipt formats,
 
 #### Assign the hardware profile to a register
 
-1. After the hardware profile is created, go to **Retail and commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **Registers**.
+1. After the hardware profile is created, go to **Retail and Commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **Registers**.
 2. In the **POS registers** list, click the link in the **Register number** field for the register that should use the peripheral simulator.
 3. Click **Edit**.
 4. In the **Profiles** section, in the **Hardware profile** field, select the hardware profile that you created for virtual peripherals.
@@ -476,7 +476,7 @@ To submit a device so that it can be listed for compatibility with Commerce,  fo
 
 The following example shows the data that is included in the exported file.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>  
 <Report xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Commerce.VirtualPeripherals.Modules">  
    <CreationDateTime>05/27/2017 19:34:50</CreationDateTime>  
@@ -537,4 +537,4 @@ For support if you're performing compatibility tests, and for other inquiries, s
 
 ## Additional resources
 
-[Retail peripherals](../retail-peripherals-overview.md)
+[Peripherals](../retail-peripherals-overview.md)

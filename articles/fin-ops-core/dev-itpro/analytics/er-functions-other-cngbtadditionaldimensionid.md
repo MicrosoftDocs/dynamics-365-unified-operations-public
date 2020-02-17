@@ -38,7 +38,7 @@ The `CN_GBT_ADDITIONALDIMENSIONID` function returns a *String* value that repres
 
 ## Syntax
 
-```
+```vb
 CN_GBT_ADDITIONALDIMENSIONID (text, number)
 ```
 

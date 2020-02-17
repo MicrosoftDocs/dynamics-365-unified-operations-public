@@ -5,7 +5,7 @@ title: Test modules by using page mocks
 description: This topic describes how to test modules by using page mocks.
 author: samjarawan
 manager: annbe
-ms.date: 01/31/2020
+ms.date: 02/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -48,7 +48,7 @@ To create a new page mock, create a blank .json file under the /src/pageMocks di
 
 The following example shows a page mock that adds two instances of the same module to a page but uses different mock data for each instance.
 
-```
+```json
 {
     "exception": null,
     "pageRoot": {
@@ -127,8 +127,6 @@ The preceding example can be accessed by using the following URL: `https://local
 [Add module configuration fields](add-module-config-fields.md)
 
 [Preview and debug a module](test-module.md)
-
-[Debug modules](debug-modules.md)
 
 [Test modules by using module mocks](test-module-mock.md)
 

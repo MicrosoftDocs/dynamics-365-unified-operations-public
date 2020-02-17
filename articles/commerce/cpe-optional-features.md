@@ -67,8 +67,8 @@ If you want to evaluate Digital Asset Management features by ingesting new omni-
 
 ### Update the media base URL
 
-1. Sign in to Dynamics 365 Retail.
-1. Use the menu on the left to go to **Modules \> Retail \> Channel setup \> Channel profiles**.
+1. Sign in to Dynamics 365 Commerce.
+1. Use the menu on the left to go to **Modules \> Retail and commerce \> Channel setup \> Channel profiles**.
 1. Select **Edit**.
 1. Under **Profile properties**, replace the value for the **Media Server Base URL** property with the media base URL that you created earlier.
 1. In the list on the left, under the **Default** channel, select the other channel.
@@ -81,7 +81,7 @@ If you want to evaluate Digital Asset Management features by ingesting new omni-
 > [!NOTE]
 > The SMTP server or email service that you enter here must be accessible from the Azure subscription that you're using for the environment.
 
-1. Sign in to Retail.
+1. Sign in to Commerce.
 1. Use the menu on the left to go to **Modules \> System administration \> Setup \> Email \> Email parameters**.
 1. On the **SMTP settings** tab, in the **Outgoing mail server** field, enter the FQDN or IP address of your SMTP server or email service.
 1. In the **SMTP port number** field, enter the port number. (If you aren't using Secure Sockets Layer \[SSL\], the default port number is **25**.)
@@ -96,7 +96,7 @@ If you want to evaluate Digital Asset Management features by ingesting new omni-
 
 For each transactional event that you want to send emails for, you must update the email template with a valid sender email address.
 
-1. Sign in to Retail.
+1. Sign in to Commerce.
 1. Use the menu on the left to go to **Modules \> Organization administration \> Setup \> Organization email templates**.
 1. Select **Show list**.
 1. For each template in the list, follow these steps:
@@ -119,7 +119,7 @@ You might want to customize the email templates so that they use different image
     - Pick order template
 
 1. Customize the templates by using a text or HTML editor. See the list of [supported tokens](#supported-tokens-in-the-email-template) later in this topic.
-1. Sign in to Retail.
+1. Sign in to Commerce.
 1. Use the menu on the left to go to **Modules \> Organization administration \> Setup \> Organization email templates**.
 1. Expand the list on the left to see all the templates.
 1. For each template that you want to customize, follow these steps:
