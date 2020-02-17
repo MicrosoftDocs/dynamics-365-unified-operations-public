@@ -52,7 +52,7 @@ Create the first sales order.
 **Sales order 1**:
 
 - In the **Customer account** field, select **US-001**;
-- In the **Mode of delivery** field, select **Air**.
+- In the **Mode of delivery** field, select **Airwa-Air**.
 
 Add an order line to the sales order.
 
@@ -67,7 +67,7 @@ Create the second sales order.
 **Sales order 2**:
 
 - In the **Customer account** field, select **US-001**;
-- In the **Mode of delivery** field, select **Air**.
+- In the **Mode of delivery** field, select **Airwa-Air**.
 
 Add an order line to the sales order.
 
@@ -96,7 +96,7 @@ Add two order lines to the sales order.
 
 - In the **Item number** field, select **A0002** (an item without filter code 4);
 - In the **Quantity** field, enter **1.00**;
-- In the **Mode of delivery** field, select **Air**;
+- In the **Mode of delivery** field, select **Airwa-Air**;
 - Click **Inventory > Reservation** and then **Reserve lot** to reserve the order line.
 
 ### Order set 2
@@ -253,7 +253,7 @@ Expected result:
 
 - Four shipments are created:
   - The first three shipments created using **CustomerMode** shipment consolidation policy;
-  - The fourth shipment (without **Air** mode of delivery) is created using **CustomerOrderNo** shipment consolidation policy.
+  - The fourth shipment (without **Airways** transportation mode of delivery) is created using **CustomerOrderNo** shipment consolidation policy.
 
 ### Order set 2 related shipments
 

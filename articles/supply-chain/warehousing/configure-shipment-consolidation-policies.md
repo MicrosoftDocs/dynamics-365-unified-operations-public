@@ -53,7 +53,7 @@ To set up default shipment consolidation policies on a brand new environment, fo
     2. A **Default** policy will be created for **Transfer orders** policy type.
 
         > [!NOTE]
-        > Both policies will have the same set of fields taken into consideration by legacy logic, including order number (consolidate lines into shipments based on order number, warehouse, mode of delivery, address, etc.).
+        > Both policies will have the same set of fields taken into consideration by legacy logic, including order number (consolidate lines into shipments based on order number, warehouse, transportation mode of delivery, address, etc.).
 
 ### Default policies setup – upgrading an environment with warehouses already configured for cross-order consolidation
 
@@ -71,13 +71,13 @@ To set up default shipment consolidation policies on an environment where wareho
     1. A **CrossOrder** policy will be created for **Sales orders** policy type.
 
         > [!NOTE]
-        > The **CrossOrder** policy will have the same set of fields taken into consideration by legacy logic, excluding order number (consolidate lines into shipments based on warehouse, mode of delivery, address, etc.)
+        > The **CrossOrder** policy will have the same set of fields taken into consideration by legacy logic, excluding order number (consolidate lines into shipments based on warehouse, transportation mode of delivery, address, etc.)
 
     2. A **Default** policy will be created for **Sales orders** policy type.
     3. A **Default** policy will be created for **Transfer orders** policy type.
 
         > [!NOTE]
-        > Both **Default** policies will have the same set of fields taken into consideration by legacy logic, including order number (consolidate lines into shipments based on order number, warehouse, mode of delivery, address, etc.).
+        > Both **Default** policies will have the same set of fields taken into consideration by legacy logic, including order number (consolidate lines into shipments based on order number, warehouse, transportation mode of delivery, address, etc.).
 
 10. Select **CrossOrder** policy and click **Edit query**.
     - In the list, note that warehouses with the **Consolidate shipment at release to warehouse** set to **Yes** were included in the query.
@@ -95,10 +95,16 @@ The master data needed to filtering is described first, and is a precondition fo
 
 2. Go to **Product information management \> Products \> Released products** and set up two WHS-enabled itemsб one item with **Flammable** product filter code (**Code 4** field on the **Warehouse** FastTab) and another one with **Explosive** product filter code.
 
-### Mode of delivery
+### Transportation mode of delivery
 
-1. Go to **Sales and marketing \> Setup \> Distribution \> Modes of delivery** and create a mode of delivery that is different from a default mode of delivery used by the customer.
-    1. For example, customer **US-001**, default mode of delivery is **10**, another mode of delivery would be **Air**.
+1. Go to **Transportation management > Setup > Carriers > Modes** and create a new transportation mode that will be used for consolidation query.
+    1. For example, **Airways**.
+
+1. Go to **Transportation management > Setup > Carriers > Shipping carries** and create a new carrier with **Airways** mode.
+    1. For example, **Airways**.
+1. Then expand **Services** FastTab and add **Air** carrier service with **Air** transportation method.
+     > [!NOTE]
+     > **Mode of delivery** field is automatically filled in with **Airwa-Air** value. When **Airwa-Air** mode of delivery is used on a sales order, **Airways** transportation mode will be used on related shipment.
 
 ### Order pool
 
@@ -116,7 +122,7 @@ This setup assumes that Scenario 1 described above has been already executed.
 Example of a business case:
 
 - “Customer+Mode” policy
-  - Query: Specific Customer account, specific Transportation mode of delivery “Air”
+  - Query: Specific Customer account, specific Mode of delivery “Airwa-Air”
   - Consolidation with open shipments is off
   - Consolidation is per order id (separate shipments per order, warehouse, etc.)
 
@@ -134,18 +140,18 @@ To create a shipment consolidation policy that covers mentioned above business c
 1. In the list, find and select the **Customer account** record.
 1. In the **Criteria** field, enter or select a value, for example, **US-001**.
 1. In the list, find or add the **Sales order lines.Mode of delivery** record.
-1. In the **Criteria** field, enter or select a value, for example, **Air**.
+1. In the **Criteria** field, enter or select a value, for example, **Airwa-Air**.
 1. Click **OK**.
 
 > [!NOTE]
-> All order lines with the specified mode of delivery **Air** of customer **US-001** will not be consolidated across orders. This is used as a first sequence in case we consolidate shipments for all other modes of delivery for this customer.
+> All order lines with the specified mode of delivery **Airwa-Air** of customer **US-001** will not be consolidated across orders. This is used as a first sequence in case we consolidate shipments for all other modes of delivery for this customer.
 
 #### Add Policy 2
 
 Example of a business case:
 
 - “Hazardous goods” policy
-  - Query: Specific “hazardous” filter code, specific Transportation modes of delivery “Air, Sea”
+  - Query: Specific “hazardous” filter code, specific “Airways” transportation modes of delivery 
   - Consolidation with open shipments is on
   - Consolidation is across orders (separate shipments per account, warehouse, etc. but within the item group specified in the query)
 
@@ -229,7 +235,7 @@ To create a shipment consolidation policy that covers mentioned above business c
 1. Click **OK**.
 
 > [!NOTE]
-> All order lines where sales orders belong to the same Order pool will be consolidated into one shipment across sales orders for the same account, warehouse, and mode of delivery. Order pool can be replaced with any other field setting a group of customers apart and defaulting to the sales order header. This can be used if the customer and not the warehouse (like in the legacy logic) is driving the need for consolidation.
+> All order lines where sales orders belong to the same Order pool will be consolidated into one shipment across sales orders for the same account, warehouse, and transportation mode of delivery. Order pool can be replaced with any other field setting a group of customers apart and defaulting to the sales order header. This can be used if the customer and not the warehouse (like in the legacy logic) is driving the need for consolidation.
 
 #### Add Policy 5
 

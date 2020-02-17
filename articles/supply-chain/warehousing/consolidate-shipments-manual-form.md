@@ -97,6 +97,9 @@ Release all sales orders from the order set using instructions above.
 1. Close the **Shipment consolidation** form.
 1. Find and select a shipment created when Sales order 3 was released to warehouse (this shipment **Shipment consolidation policy** field set to **Default**).
 1. On the Action Pane, on the **Shipments** tab, click **Consolidate shipments**.
+1. Verify there are no shipments suggested for consolidation.
+1. Click **Show filters** icon to open **Filters** pane.
+1. Remove **Order number** filter and click **Apply**.
 1. Verify shipments suggested for consolidation:
     - There is only one shipment with the same policy suggested for consolidation.
 
