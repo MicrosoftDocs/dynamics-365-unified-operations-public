@@ -58,9 +58,9 @@ Before you can calculate packing material weights, packing material fees, or bot
     - **Packing units** – Specify a packing unit for an item, for a packing group, or for all items. For each packing unit, define which packing materials to include, and assign weights. In the **Packing unit factor** field, enter the conversion factor from the inventory unit. <!-- KFM: I don't see "Packing units" here. Do we mean "Packing material allocation"? We mention that later in this procedure, so maybe we should remove this bullet? -->
     - **Packing material fees** – Specify packing material fees per packing material code. For each type of material, define the period of validity, the price per material, the currency, and the unit.
 
-1. Go to **Inventory Management > Setup > Packing Materials > Packing Material Codes** and define all the necessary packing materials here
+1. Go to **Inventory Management > Setup > Packing Materials > Packing Material Codes** and define all the necessary packing materials here.
 
-1. Go to **Packing Material Fees** and set a fee for your material.
+1. Go to **Inventory Management > Setup > Packing Materials > Packing Material Fees** and set a fee for your material.
 
 1. To allocate your packing materials, go to **Inventory Management > Setup > Packing Material > Packing material allocation**. Create a new allocation and assign it to your item. You can also assign it to a packing group or to all of your items.
 
@@ -95,13 +95,11 @@ If sales orders for a given customer should include charges for packing material
 1. Expand the **Invoice and Delivery** FastTab and make the following settings here:
 
     - Under the **Sales tax** heading, enter the company's license number in the **Packing duty license number** field.
-    - Under the **Packing Material Fee** heading, enter the company's license number in the **License number** field. <!-- KFM: Are we entering the same license number in both fields? Or can we provide a more specific name for each of these licenses? -->
+    - Under the **Packing Material Fee** heading, enter the company's license number in the **License number** field.
 
 Now when you create and invoice a sales order that includes one or more items with packing materials, you will be able to see the packing material fees on the invoice.
 
-For customers that shouldn't pay packing material fees, delete the license numbers mentioned in the previous procedure.
-
-Invoices for customers that don't pay packing material fees show the weights of the materials, but not the fees. To see the fees your company will owe, go to **Inventory Management > Inquires and Reports > Packing material reports > Packing material fee calculation**. Here you can specify a range of dates and generate a report with all the packing material fees you owe for that period. <!-- KFM: It was hard to figure out who was paying for what and when in this paragraph. I think I got it right, but please confirm. -->
+For customers that shouldn't pay packing material fees, delete the license numbers mentioned in the previous procedure. Invoices for customers that don't pay packing material fees show the weights of the materials, but not the fees. To see the fees your company will owe, go to **Inventory Management > Inquires and Reports > Packing material reports > Packing material fee calculation**. Here you can specify a range of dates and generate a report with all the packing material fees you owe for that period.
 
 ## Print packaging material weights on invoices
 
