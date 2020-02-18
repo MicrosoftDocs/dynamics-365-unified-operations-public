@@ -99,7 +99,7 @@ To create the B2C application in Azure AD B2C, follow these steps.
 1. Under **Name**, enter the name of the desired AAD B2C application.
 1. Under **Web App/Web API**, for **Include web app / web API** select **Yes**.
 1. For **Allow implicit flow** select **Yes** (the default value).
-1. Under **Reply URL**, enter your dedicated reply URL. See [Format reply URLs](#format-reply-URLs) below for information on reply URLs and how to format them here.
+1. Under **Reply URL**, enter your dedicated reply URLs. See [Reply URLs](#reply-URLs) below for information on reply URLs and how to format them here.
 1. For **Include native client**, select **No** (the default value).
 1. Select **Create**.
 
@@ -114,11 +114,11 @@ The following image shows settings for the B2C application.
 
 -->
 
-### Format reply URLs
+### Reply URLs
 
 Reply URLs are important as they allow a whitelist of the return domains when your site calls Azure AD B2C to authenticate a user. This allows the return of the authenticated user back to the domain from which they are logging in (your site domain). 
 
-In the **Reply URL** box of the **Azure AD B2c - Applications \> New application** screen, you need to add separate lines for both your site domain and, once your environment is provisioned, the Commerce-generated URL. These URLs must always use a valid URL format, and must be base URLs only (no trailing forward slashes or paths). The string ``/_msdyn365/authresp`` then needs to be appended to the base URLs, as in the following examples.
+In the **Reply URL** box of the **Azure AD B2c - Applications \> New application** screen, you need to add separate lines for both your site domain and (once your environment is provisioned) the Commerce-generated URL. These URLs must always use a valid URL format, and must be base URLs only (no trailing forward slashes or paths). The string ``/_msdyn365/authresp`` then needs to be appended to the base URLs, as in the following examples.
 
 	``https://fabrikam.com/_msdyn365/authresp``
 	``https://fabrikam-prod.commerce.dynamics.com/_msdyn365/authresp``
@@ -131,14 +131,15 @@ You can opt to use the default user flows provided by Azure AD, which will displ
 
 To customize the user policy pages for Dynamics 365 Commerce, see [Set up custom pages for user logins](custom-pages-user-logins.md). For additional information, see [Customize the interface of user experiences in Azure Active Directory B2C](https://docs.microsoft.com/en-us/azure/active-directory-b2c/tutorial-customize-ui).
 
+<!--
 To create default user flow policies, follow these steps.
 
 1. In the Azure portal, select **User flows (policies)** in the left navigation pane.
 1. On the **Azure AD B2C – User flows (policies)** page, select **New User Flow**.
 3.  There are three basic flows offered:
-    1.  Sign up and sign in
-    2.  Profile editing
-    3.  Password reset
+    1. Sign up and sign in
+    2. Profile editing
+    3. Password reset
         
 The following image shows
 
@@ -147,6 +148,7 @@ The following image shows
 The following image shows how to select a user flow on the **Add User Flow** menu.
 
 ![Selecting a user flow in the Add User Flow menu](./media/B2CImage_10.png)
+-->
 
 ### Create a sign up and sign in user flow policy
 
@@ -160,18 +162,18 @@ To create a sign up and sign in user flow policy, follow these steps.
 1. Under **Multifactor Authentication**, select the appropriate choice for your company. 
 1. Under **User attributes and claims**, select options to collect attributes or return claims as appropriate. Commerce requires the following default options:
 
-| **Collect  attribute** | **Return  claim** |
-| ---------------------- | ----------------- |
-|                        | Email Addresses   |
-| Given Name             | Given Name        |
-|                        | Identity Provider |
-| Surname                | Surname           |
-|                        | User’s Object ID  |
+    | **Collect  attribute** | **Return  claim** |
+    | ---------------------- | ----------------- |
+    |                        | Email Addresses   |
+    | Given Name             | Given Name        |
+    |                        | Identity Provider |
+    | Surname                | Surname           |
+    |                        | User’s Object ID  |
 
 1. Select **Create**.
 1. Click the newly selected to verify [???]
 1. Select **Run user flow** to view the login domain for the policy. This will appear under **Select domain** (for example, fabrikam.b2clogin.com). 
-1. Close tab.
+1. Close the tab.
 
 The following image shows sign up and sign In policy settings.
 
