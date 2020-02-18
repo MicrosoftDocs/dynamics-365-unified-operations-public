@@ -280,7 +280,7 @@ The following image shows how to select the added social identity provider user 
 ![Select the added Identity Provider user flow in the 'Identity Providers' menu](./media/B2CImage_15.png)
 -->
 
-The following image shows an example of how to select each social identity provider to enable for your policy on the Azure AD B2C **Identity Providers** page.
+The following image shows an example of how to select identity providers on the Azure AD B2C **Identity Providers** page.
 
 ![Select each Social Identity Provider to enable for your policy](./media/B2CImage_16.png)
 
@@ -288,13 +288,13 @@ The following image shows an example of a default sign-in screen with a social i
 
 ![Example default login screen with Social Identity Provider sign-in button displayed](./media/B2CImage_17.png)
 
-## Update headquarters with the new AAD B2C information
+## Update Commerce headquarters with the new Azure AD B2C information
 
-Once the Azure AD B2C provisioning steps above are completed, the Azure AD B2C application must be registered in your Dynamics environment.
+Once the Azure AD B2C provisioning steps above are completed, the Azure AD B2C application must be registered in your Dynamics 365 Commerce environment.
 
 To update headquarters with the new AAD B2C information, follow these steps.
 
-1. In Dynamics, navigate to **Retail and Commerce \> Shared Parameters**
+1. In Commerce, go to **Retail and Commerce \> Shared Parameters**.
 
 [???] Section below needs clarification/investigation[???]
 
@@ -330,31 +330,27 @@ Additionally, users must **Disable Manual Number Sequence generation**.
 
 ## Additional B2C information
 
-[???]Intro here - what is this info and why do we need it?[???]
-
 ### Customer migration
 
-If considering migrating customer records from a previous Identity Provider platform, please work with the Dynamics 365 Commerce team to review your customer migration needs.
+If you are considering migrating customer records from a previous identity provider platform, please work with the Dynamics 365 Commerce team to review your customer migration needs.
 
-Additional Azure AD B2C documentation on customer migration can be found here: [Customer Migration](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-user-migration)
+For additional Azure AD B2C documentation on customer migration, see [Migrate users to Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-user-migration).
 
 ### Custom policies
 
-For additional information regarding Customizing AAD B2C interactions and policy flows beyond what is offered by B2C standard policies, explore **Custom Policies** and related articles in the Azure AD B2C Documentation: [Custom policies](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-overview-custom). 
+For additional information regarding customizing Azure AD B2C interactions and policy flows beyond what is offered by B2C standard policies, see [Custom policies in Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-overview-custom). 
 
 ### Secondary admin
 
-In the Users section of your B2C tenant; a secondary admin account can be established (optional). This can be a direct account or a general account as needed. If needing to share an account across team resources, a common account can also be created- due to sensitivity of the data stored in AAD B2C- a common account should be monitored closely per your company's security practices.
+An optional, secondary administrator account can be added in the **Users** section of your B2C tenant. This can be a direct account or a general account. If you need to share an account across team resources, a common account can also be created. Due to the sensitivity of the data stored in Azure AD B2C, a common account should be monitored closely per your company's security practices.
 
 ### b2clogin.com
 
-Utilize the default ‘b2clogin.com’ domain (default). This part of the URL will be shown for login or reply URLs; viewable in the browser by users.
+Use the default ‘b2clogin.com’ domain (default). This part of the URL will be shown for sign-in or reply URLs, and will be viewable in the browser by users.
 
 ## Provide Commerce with the B2C application information
 
-[???]Needs a rewrite[???]
-
-Once Setup of the Azure AD B2C Tenant is complete, provide the Commerce Team with the below details. These data points collected will be used in LCS when provisioning your environment.
+Once setup of the Azure AD B2C tenant is completed, provide the Dynamics 365 Commerce team with the details below. These data points will be used in Microsoft Lifecycle Services (LCS) when provisioning your environment.
 
 Navigate to the “Properties” section of your B2C Application. If needed, use the top search bar in the portal to search Azure AD B2C, select the result for your domain, and go to “Applications”.
 
