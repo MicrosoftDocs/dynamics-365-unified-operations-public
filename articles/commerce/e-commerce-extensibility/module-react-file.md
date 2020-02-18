@@ -42,7 +42,7 @@ The default template of a module breaks up the React component and view into two
 
 ## Example 
 
-The following example shows a React component file.
+The following example shows the default React component file for a new module.
 
 ```typescript
 /*---------------------------------------------------------------------------------------------
