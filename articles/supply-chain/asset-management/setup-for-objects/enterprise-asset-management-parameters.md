@@ -105,6 +105,10 @@ The fields described in the following list all relate to calculated rating score
   - Assuming that no responsible worker and responsible worker group have been selected on a work order to be scheduled - you add and subtract the rating score values in the examples in the **Preferred worker**, **Preferred worker group**, **Asset location**, and **Start date** fields above, you get a total of 3,010.00. This means a high score for the worker who is already selected as preferred worker as well as included in the preferred worker group on the work order, and the worker is also located in the same facility as the asset for which a job needs to be scheduled. This means there is a good chance that the worker in question will be selected to complete the job during work order scheduling.  
   - If the value "0.00" is inserted in one of the eight fields above, that rating score will not be used during work order scheduling.  
 
-**Document types** link - Select the document types that should be available for printing attachments related to a work order report. This is done by selecting a document type in the **Available** section and selecting ![forward arrow](media/15-setup-for-objects.png). If you want to remove a selected document type, select the document type in the **Selected** section and select ![back arrow](media/16-setup-for-objects.png).
+**Document types** link
 
-**Number sequences** link - Select the required number sequences in this section. There are two number sequences for assets: one for manually created assets and one for assets created through pending assets.
+Select the document types that should be available for printing attachments related to a work order report. This is done by selecting a document type in the **Available** section and selecting ![forward arrow](media/15-setup-for-objects.png). If you want to remove a selected document type, select the document type in the **Selected** section and select ![back arrow](media/16-setup-for-objects.png).
+
+**Number sequences** link
+
+Select the required number sequences in this section. There are two number sequences for assets: one for manually created assets and one for assets created through pending assets.
