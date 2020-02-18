@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 10.0.5
 In case system on-hand quantity is negative, the planning engine will assume zero to avoid over supply. First Planning Optimization aggregates on-hand to the lowest level of coverage dimensions (e.g. aggregate on the warehouse level if location is not a coverage dimension). Then, if the on-hand on the lowest level of coverage dimensions is still negative, the system will assume that on-hand is zero.
 
 ## Example 1
-**Coverage code** is **Min./Max.**. **Minimum** is 15 pcs and **Maximum** is 25 pcs for Warehouse 13.
+**Coverage code** is **Min./Max.**, **Minimum** is 15 pcs and **Maximum** is 25 pcs for Warehouse 13.
 The lowest level of coverage dimensions is warehouse and we have the following on-hand recorded on location level.
 -	On-hand is 20 pcs on Site 1, Warehouse 13, Location 1  
 -	On-hand is -8 pcs on Site 1 Warehouse 13, Location 2
