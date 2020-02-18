@@ -898,7 +898,7 @@
           items:
           - name: Buy box module
             href: add-buy-box.md
-          - name: Ratings and review modules
+          - name: Ratings and reviews modules
             href: ratings-reviews-modules.md
         - name: Purchase modules
           items:
