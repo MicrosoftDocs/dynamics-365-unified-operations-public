@@ -67,7 +67,7 @@ Dynamics 365 Commerce uses Azure AD B2C to support user credential and authentic
     ![Link to new AAD Directory](./media/B2CImage_4.png)
 
 > [!NOTE]
-> If you have multiple subscriptions within your Azure account or have set up the B2C tenant without linking to an active subscription, a **Troubleshoot** banner will direct you to link the tenant to a subscription. Select the troubleshooting message and follow the instructions to resolve the subscription issues.
+> If you have multiple subscriptions within your Azure account or have set up the B2C tenant without linking to an active subscription, a **Troubleshoot** banner will direct you to link the tenant to a subscription. Select the troubleshooting message and follow the instructions to resolve the subscription issue.
 
 The following image shows an example of an Azure AD B2C **Troubleshoot** banner.
 
@@ -91,9 +91,9 @@ For example, to switch directories to the location of your target Azure subscrip
 
 ## Create the B2C application
 
-Now that the B2C tenant has been created, you will create a B2C application within the tenant to interact with the Commerce actions.
+Once the B2C tenant has been created, you will create a B2C application within the tenant to interact with the Commerce actions.
 
-To create the B2C application, follow these steps.
+To create the B2C application in Azure AD B2C, follow these steps.
 
 1. Select **Applications** and then select **Add**.
 1. Under **Name**, enter the name of the desired AAD B2C application.
@@ -103,6 +103,7 @@ To create the B2C application, follow these steps.
 1. For **Include native client**, select **No** (the default value).
 1. Select **Create**.
 
+<!--
 The following image shows how to add a B2C application to your tenant.
 
 ![Adding a B2C application to your tenant](./media/B2CImage_7.png)
@@ -111,11 +112,13 @@ The following image shows settings for the B2C application.
 
 ![Settings for the B2C application](./media/B2CImage_8.png)
 
+-->
+
 ### Format reply URLs
 
 Reply URLs are important as they allow a whitelist of the return domains when your site calls Azure AD B2C to authenticate a user. This allows the return of the authenticated user back to the domain from which they are logging in (your site domain). 
 
-In the **Reply URL** box of the **Azure AD B2c - Applications \> New application** screen, you need to add separate lines for both your site domain and, once your environment is provisioned, the Commerce-generated URL. These URLs must always use a valid URL format, and must be base URLs only (no trailing forward slashes or paths). Also, the string ``/_msdyn365/authresp`` needs to then be appended to the base URLs, as in the following examples.
+In the **Reply URL** box of the **Azure AD B2c - Applications \> New application** screen, you need to add separate lines for both your site domain and, once your environment is provisioned, the Commerce-generated URL. These URLs must always use a valid URL format, and must be base URLs only (no trailing forward slashes or paths). The string ``/_msdyn365/authresp`` then needs to be appended to the base URLs, as in the following examples.
 
 	``https://fabrikam.com/_msdyn365/authresp``
 	``https://fabrikam-prod.commerce.dynamics.com/_msdyn365/authresp``
