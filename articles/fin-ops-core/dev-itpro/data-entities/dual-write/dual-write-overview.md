@@ -44,9 +44,7 @@ Dual-write provides tightly coupled, bidirectional integration between Finance a
 
 ![Data relationship between apps](media/dual-write-overview-picture1.png)
 
-Dual-write has two aspects: an *infrastructure* aspect (circled in red in the following illustration) and an *application* aspect (circled in blue).
-
-![Aspects of dual-write](media/dual-write-aspects.PNG)
+Dual-write has two aspects: an *infrastructure* aspect and an *application* aspect.
 
 ### Infrastructure
 
