@@ -294,38 +294,30 @@ Once the Azure AD B2C provisioning steps above are completed, the Azure AD B2C a
 To update headquarters with the new AAD B2C information, follow these steps.
 
 1. In Commerce, go to **Retail and Commerce \> Shared Parameters**.
+1. Under **Identity Provider**, do the following:
+    1. In the **Issuer** box, enter the issuer URL.
+    1. In the **Name** box, enter a name for your issuer record.
+    1. In the **Type** box, enter **Azure AD B2C** (id_token).
+1. Under **Relying Parties**, do the following:
+    1. In the **ClientID** box, enter your B2C application ID. You can find this in the **Application ID** box of your B2C application's properties page.
+    1. In the **Type** box, enter **Public**.
+    1. In the **User Type** box, enter **Customer**.
+1. Select **Disable Manual Number Sequence generation**.
 
-[???] Section below needs clarification/investigation[???]
+### Obtain issuer URL
 
-**Under <u>Identity Provider</u>:**
+To obtain your issuer URL, follow these steps.
 
-- **Issuer: <***get Issuer from the directions below***>**
-
-**Step 1:** Create meta data address with B2C tenant and policy: https://<<B2CTENANTNAME>>.b2clogin.com/<<B2CTENANTNAME>>.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=<<B2CSIGN-INPOLICY>>
-
-**Step 2**: Access metadata address in the browser like [https://d365plc.b2clogin.com/d365plc.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=B2C_1_signinup](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fd365plc.b2clogin.com%2Fd365plc.onmicrosoft.com%2Fv2.0%2F.well-known%2Fopenid-configuration%3Fp%3DB2C_1_signinup&data=02|01|brshoo%40microsoft.com|ce8f344e4b574c6f228708d7413d9c24|72f988bf86f141af91ab2d7cd011db47|1|0|637049605174233576&sdata=nqmbbPG3UUeLhCeCZ%2B5Ec6z%2BNi2H9bIJBXouPVZj5ww%3D&reserved=0)
-
-**Step 3**: Copy issuer url
+1. Create a metadata address URL in the following format using your B2C tenant and policy: ``https://<B2CTENANTNAME>.b2clogin.com/<B2CTENANTNAME>.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=<B2CSIGN-INPOLICY>``
+    - Example: ``https://d365plc.b2clogin.com/d365plc.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=B2C_1_signinup``.
+1. Enter the metadata address URL into a browser address bar.
+1. Copy the issuer URL.
 
 ![Copy the Issuer URL from metadata address](./media/B2CImage_18.png "Copy the Issuer URL from metadata address")
 
-- **Name:** Enter a name value for your issuer record for the Identity Providers table
+Example metadata address URL: ``https://d365plc.b2clogin.com/d365plc.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=B2C_1_signinup``.
 
-- **Type:** Azure AD B2C (id_token)
-
-Example Identity provider: https://login.fabrikam.com/073405c3-0113-4f43-b5e2-df01266e24ae/v2.0/
-
-**Under <u>Relying Parties</u>**
-
-·    **ClientID**: Set the Client ID as the B2C Application Id (Navigate to your Azure AD B2C – Applications page in the Azure Portal, select ‘Applications’ in the menu, and use the shown Application ID for the B2C application shown). 
-
-Example B2C Application Id: 5f63f50d-d7e7-4a4e-8534-e87599fc0fd9
-
-·    **Type**: Public
-
-·    **User Type**: Customer
-
-Additionally, users must **Disable Manual Number Sequence generation**.
+Example identity provider issuer URL: ``https://login.fabrikam.com/073405c3-0113-4f43-b5e2-df01266e24ae/v2.0/``.
 
 ## Additional B2C information
 
