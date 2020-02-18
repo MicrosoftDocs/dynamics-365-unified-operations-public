@@ -40,28 +40,25 @@ A module view file is a TypeScript (.ts) file that controls a module's view. It'
 
 ## Example 
 
-The following example shows a module view file.
+The following example shows the default module view file for a new module.
 
 ```typescript
-/*---------------------------------------------------------------------------------------------
- *  Copyright (c) Microsoft Corporation. All rights reserved.
- *  Licensed under the MIT License. See License.txt in the project root for license information.
- *--------------------------------------------------------------------------------------------*/
+/*!
+ * Copyright (c) Microsoft Corporation.
+ * All rights reserved. See LICENSE in the project root for license information.
+ */
+
 import * as React from 'react';
 import { IProductFeatureViewProps } from './product-feature';
 
-const ProductFeatureView: React.FC<IProductFeatureViewProps> = props => {
-    const { title, resourceSample } = props;
-
+export default (props: IProductFeatureViewProps) => {
     return (
         <div className='row'>
-            <h2>Config Value: {title}</h2>
-            <h2>Resource Value: {resourceSample}</h2>
+            <h2>Config Value: {props.config.showText}</h2>
+            <h2>Resource Value: {props.resources.resourceKey}</h2>
         </div>
     );
 };
-
-export default ProductFeatureView;
 ```
 
 ## Additional resources
