@@ -76,7 +76,7 @@ In addition, an admin can refresh any aggregate measurement on demand by selecti
 > When the automated refresh is enabled, in some cases the system may disable refresh of Aggregate measurements. You must revisit aggregate measurements and validate that appropriate refresh intervals have been applied by the system.
 >
 
-## Entity store data in Azure Data Lake (full push)
+## Entity store data in Azure Data Lake (full push and trickle feed)
 
 > [!IMPORTANT]
 > This feature is currently in public preview. Do not enable this feature in production environments.
@@ -101,13 +101,7 @@ The following sections describe each task in more detail.
     - **Performance:** We recommend that you select **Standard**.
     - **Account kind:** You must select **StorageV2**.
 
-3. In the **Advanced options** dialog box, turn off the **Data Lake storage Gen2 (preview)** option.
-
-    > [!NOTE]
-    > This will be made available in a later update. Until then, you can't consume data by using Azure Data Lake Storage APIs.
-    >
-    > If you aren't part of the preview program for Data Lake Storage Gen2, you might not see the **Data Lake storage Gen2 (preview)** option.
-
+3. In the **Advanced options** dialog box, you will see an option **Data Lake storage Gen2**. Select **enable** under Hierarchical namespaces feature. If you disable this option you can't consume data written by F&O with services such as Power BI data flows. 
 4. Select **Review and create**. When the deployment is completed, the new resource will be shown in the Azure portal.
 5. Select the resource, and then select **Settings** \> **Access keys**.
 6. Make a note of the connection string value, because you will have to provide it later.
