@@ -34,11 +34,11 @@ ms.dyn365.ops.version: 10.0.10
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how to create commerce (CRT) APIs (requests) to execute asynchronously. Commerce API framework is enhanced to support asynchronous execution of extensions commerce request. Before this framework enhancement the request can be executed only synchronously. It means that any long operation (I/O operation, database query, network request, etc.) blocks execution thread. Adding of asynchronous model support to the Commerce Runtime will provide ability to use asynchronous versions of such operations thus unblocking execution thread.
+This topic describes how to create new business logic (APIs) using the new async framework and then expose the the new API as a web services to be consumed by POS. The new API, an extension commerce request, will execute asynchronously. The commerce API framework supports asynchronous execution of extensions commerce requests. Before this framework enhancement a request could be executed only synchronously. That meant that any long operation (I/O operation, database query, network request, etc.) blocked the execution thread. The addition of asynchronous model support to the Commerce Runtime lets you use asynchronous versions of operations, thus unblocking the execution thread.
 
-The commerce API framework supports the async/await model for the extension request to execute asynchronously and this allows to [simplify](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await) business logic when some work should be performed in parallel.
+The commerce API framework supports the async/await model for extension requests. These extension requests can execute asynchronously. Using the async/await model [simplifies](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await) the business logic when some work should or can be be performed in parallel.
 
-It is recommended to use asynchronous commerce API framework for all new extension APIs and use OOB asynchronous commerce in extensions.
+You should use the asynchronous commerce API framework for all new extension APIs and use out-of-box asynchronous commerce extensions.
 
 Note: This topic is applicable for Dynamics 365 for Commerce version 10.0.10 or greater.
 
