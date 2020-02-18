@@ -51,11 +51,15 @@ There are two types of container modules: layout container modules and page cont
 
 Layout container modules are useful when you must make a complex module out of multiple simple modules, and you want to control the layout of those simple modules. For example, you can use a header layout container module that is made up of required or optional sub-modules, such as search, sign-in, and navigation modules. The purpose of the layout container is to provide an adaptive layout.
 
+See [Create a layout container module](create-layout-container.md) for more information.
+
 ## Page container modules
 
 Page container modules contain the core structure for page authoring. For example, you can create a page container where slots are defined for the header area, main content area, and footer area. A page container is just a module that controls the layout of a set of named slots, and that can be embedded only at the root of a page. Each page must have only one page container. This page container is added to a template in the authoring tools.
 
 Like layout container modules, page container modules can define named slots that are exposed to template authors. Page authors can configure which modules go into each slot, and the rendering code for the container controls the layout of those slots. Configuration settings can also be exposed to page authors, so that they can do additional configuration of the layout.
+
+See [Create a page container module](create-page-containers.md) for more information.
 
 ## Additional resources
 
@@ -70,9 +74,5 @@ Like layout container modules, page container modules can define named slots tha
 [Test modules by using module mocks](test-module-mock.md)
 
 [Test modules by using page mocks](test-page-mock.md)
-
-[Create a layout container module](create-layout-container.md)
-
-[Create a page container module](create-page-containers.md)
 
 [Localize a module](localize-module.md)
