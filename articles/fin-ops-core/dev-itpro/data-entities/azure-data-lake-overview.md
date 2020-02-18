@@ -114,9 +114,7 @@ Azure data lake combines BYOD and Entity store
 Customers use a combination of Analytical workspaces (based on Entity store) as
 well as BYOD for different scenarios.
 
-<to do: add the image \EntityStore-or-BYOD-PPT>
-
-![](media/642f61ee6087e2ccda71d7ad90e64005.png)
+![Comparison of Anlytical workspaces/ entity store with BYOD](./media/EntityStore-or-BYOD-PPT.png)
 
 Azure Data Lake combines both these services into a single service that offers "best of both worlds" as follows
  
@@ -133,8 +131,7 @@ o	Data lakes provide options to ingest non-business data - for an example, devic
  
 •	Cloud based services enable both power users as well as developers to consume this data.
  
-  
- 
+![Power users as well as Developers can use Azure Data Lake](./media/PowerUsers-Developers-LoveThis-PPT.png)
   
 Common Data Model folders
 Data is stored in Azure Data Lake to comply with Common Data Model (CDM) folder standard. This means
@@ -142,9 +139,8 @@ Data is stored in Azure Data Lake to comply with Common Data Model (CDM) folder 
 •	CDM folders contain metadata definitions in addition to data files - metadata definitions are kept in model files in accordance with the standard specified by CDM language
 •	Presence of metadata (and complying with CDM folder standard) enables Azure and other services to read and transform this data.
 
-CDM folder structure form F&O is shown below
-<to do: image ../FnO-CDM-Folder-Structure.png)
- 
+CDM folder structure from F&O is shown below
+![CDM folder structure from F&O](./media/FnO-CDM-Folder-Structure.png)
 
 For more information on CDM in Azure Data lake see here: https://docs.microsoft.com/en-us/common-data-model/data-lake
  
@@ -308,9 +304,7 @@ analytical reports (with BYOD or your own data warehouse), you can pin them into
 Analytical workspaces. In both cases, you can enrich business processes with
 in-context reporting that drives action.
 
- 
-
-![](media/1bd39a6505d506475b6e360dbbc61b3e.png)
+![Analytical workspaces](./media/Customers-Love-analyticalWorkspaces.png)
 
 Ready-made analytical workspaces that are part of core F&O solution (or an ISV
 extension) includes reports that are built using Entity store. Entity store
@@ -377,7 +371,7 @@ You can plan your transition to Azure Data lake in multiple stages as shown in
 the diagram below. Each stage yields business benefits that can be justified on
 their own. You can use the following phases as a planning guideline.
 
-![](media/1e037f6e9fd075ffb6f739693664596a.png)
+![Planning th transition to Azure Data Lake](./media/ADLS-rollout-roadmap.png )
 
  
 
