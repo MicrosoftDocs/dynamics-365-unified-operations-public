@@ -50,7 +50,7 @@ Go to the [Visual Studio Code site](https://code.visualstudio.com), and download
 
 Node.js is a JavaScript runtime that is built on [Chrome's V8 JavaScript Engine](https://v8.dev/).
 
-Go to the [Node.js site](https://nodejs.org), and download and install the latest Long Term Support (LTS) build.
+Currently version 10.x is the only supported version and the MSI installer can be found here: [Node.js](https://nodejs.org/dist/latest-v10.x/).  Newer versions may work on development environments but are not fully supported.
 
 If you rely on other versions of Node.js for other projects, we recommend that you use [Node Version Manager (nvm)](https://github.com/creationix/nvm) to help guarantee that each version runs in its own isolated environment.
 
@@ -58,13 +58,13 @@ If you rely on other versions of Node.js for other projects, we recommend that y
 
 Yarn is a dependency management tool that helps guarantee that you have all the latest packages that you require for e-Commerce extensibility.
 
-Go to the [Yarn site](https://yarnpkg.com), and download and install the latest stable build.
+Currently version 1.x is the only supported version and the installer can be found here: [Yarn site](https://classic.yarnpkg.com).  As newer versions are supported, this document will be updated.
 
 ## Install the Online SDK and Store Starter Kit
 
-The Online SDK provides everything that you require to extend your online channel. It even lets you create new modules, data actions, and themes.
+The Online SDK provides everything that you require to extend your online channel with new modules, data actions, and themes.
 
-The SDK configuration package is available through the [Msdyn365.Commerce.Online GitHub repository (repo)](https://github.com/microsoft/Msdyn365.Commerce.Online). Download or clone the repo to a local folder on your development computer. To clone the repo, use the following command.
+The SDK configuration package is available through the [Msdyn365.Commerce.Online GitHub repository (repo)](https://github.com/microsoft/Msdyn365.Commerce.Online). Download or clone the repo to a local folder on your development computer. To clone the repo, use the following command (Note you will need [Git tools](https://git-scm.com/downloads) installed for the command to work).
 
 ```Console
 git clone https://github.com/microsoft/Msdyn365.Commerce.Online.git
@@ -114,26 +114,26 @@ To run your Node app, follow these steps.
 
 ## Create a new module
 
-To add a new module that is named **product-feature**, run the **yarn msdyn365 add-module MODULE\_NAME** command. Here is an example.
+To add a new module, run the **yarn msdyn365 add-module MODULE\_NAME** command. Here is an example creating a module named **product-feature**.
 
 ```Console
 c:\repos\Msdyn365.Commerce.Online>yarn msdyn365 add-module product-feature
 ```
 
-This command can take up to a minute to run. It adds a new module under \\src\\modules\\product-feature.
+This command can take several seconds to run. It adds a new module under \\src\\modules\\product-feature.
 
 ## Clone an existing starter kit module
 
 Several of the available starter kit modules can be cloned. These modules include the carousel, content-block, and header modules. A cloned module is a copy of the module and has a new name. Unlike the starter kit modules, cloned modules don't get regular service updates. Instead of cloning a module to make layout changes, you might want to extend the views on the module.
 
-For example, to modify the content-block module, run the **yarn msdyn365 clone STARTER\_KIT\_MODULE\_NAME NEW\_MODULE\_NAME** command to pull down the source code. Here is an example.
+For example, to modify the content-block module, run the **yarn msdyn365 clone STARTER\_KIT\_MODULE\_NAME NEW\_MODULE\_NAME** command to pull down the source code. Here is an example.  Once a module is clones, you may need to fix up references in the code, running **yarn start** will hilight any errors that need fixing.
 
 
 ```Console
 c:\repos\Msdyn365.Commerce.Online>yarn msdyn365 clone content-block super-content-block
 ```
 
-You can find the hero module under \\src\\modules\\super-content-block.
+You can find the new module under \\src\\modules\\super-content-block.
 
 ## Preview modules
 
@@ -143,9 +143,6 @@ To preview a specific module (for example, product-feature) in a local web brows
 
 
     ```Console
-    c:\repos\MyEcommerceSite>yarn start
-=======
-    ```
     c:\repos\Msdyn365.Commerce.Online>yarn start
     ```
 
