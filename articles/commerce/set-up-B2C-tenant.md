@@ -265,20 +265,16 @@ To add and set up a social identity provider, follow these steps.
 1. Select **Set up this identity provider** to access the **Set up the social identity provider** screen.
 1. Under **Client ID**, enter the client ID as obtained from the identity provider application setup.
 1. Under **Client secret**, enter the client secret as obtained from the identity provider application setup.
-
-
-[???] Where does this step come from?[???]
-3. Attach User Flow for sign in sign up policies
-
--  Navigate to **Azure AD B2C – User flows (policies) > {your sign-in sign-up policy} > Identity providers**
-- Select each “Identity Provider” that you have set up for your account
-- You may choose to test by clicking “Run user flow”. A new tab will display the login page with the new Identity Provider selection box shown:
+1. Attach user flow for sign in sign up policies:
+    - Go to **Azure AD B2C – User flows (policies) \> {your sign-in sign-up policy} \> Identity providers**
+    - Select each identity provider you have set up for your account.
+    - You may choose to test by clicking “Run user flow”. A new tab will display the login page with the new Identity Provider selection box shown:
 
 The following image shows how to add a social identity provider to your application.
 
 ![Adding a Social Identity Provider to your application](./media/B2CImage_14.png)
 
-The following image shows how to select the added social identity provider user flow from the **Identity Providers** menu.
+The following image shows how to select the added social identity provider user flow from the **Identity Providers** page.
 
 ![Select the added Identity Provider user flow in the 'Identity Providers' menu](./media/B2CImage_15.png)
 
