@@ -61,3 +61,6 @@ In summary, if a user does not get the proper notification from the Action Cente
 
 ## Workflow editor has trouble starting under ADFS 
 When running under Active Directory Federation Services (AD FS) in an upgraded environment, the workflow editor may have trouble starting. If it does, make sure that the URL "https://dynamicsaxworkfloweditor/" is added to the property **Microsoft Dynamics 365 for Operations On-premises - Workflow - Native application** in the ADFS settings.
+
+## Why am I getting SQL deadlocks on workflow processing? 
+The default field value for the **Number of workflow items per batch** on the **Workflow parameters** form is 0. A value of 0 causes the  default behavior of 20 items per batch. Be careful when adjusting this value since a high number of items per batch (>40) can cause SQL deadlocks.
