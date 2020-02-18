@@ -1,6 +1,35 @@
+---
+# required metadata
+
+title: Quality check
+description: Use this feature to enable warehouse workers to perform quick quality spot checks while receiving items to the inbound dock area.
+author: mirzaab
+manager: AnnBe
+ms.date: 02/18/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form:  [Operations AOT form name to tie this topic to]
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kamaybac
+ms.search.scope:  Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.search.region: Global
+# ms.search.industry: [leave blank for most, retail, public sector]
+ms.author: mirzaab
+ms.search.validFrom: 2020-02-18
+ms.dyn365.ops.version: Release 10.0.8
+---
+
 # Quality check
 
-With this functionality, you can perform rapid quality checks on the spot at the time of receiving to the inbound dock area. These spot checks are beneficial when inspecting packaging or any other easily recognizable part of the item. It serves as a quick look to see if anything is standing out as faulty before stocking the inventory to its location.
+Use this feature to enable warehouse workers to perform quick quality spot checks while receiving items to the inbound dock area. These spot checks are beneficial when inspecting packaging or any other easily recognizable part of the item. The feature guides workers to take a quick look to see if anything is obviously faulty before stocking the inventory to its location.
 
 This functionality offers an alternative to the existing quality check process, offering more flexibility and faster processing. <!-- can we link to documentation for that existing functionality? How can we tell this feature apart from that functionality? Should this feature be called "quality spot check" "flexible quality check" or "advanced quality check" or something like that? -->
 
@@ -25,11 +54,11 @@ Before you can use this feature, it must be enabled on your system. Administrato
 
 ## Set up and try out this feature
 
-This section provides an example of how to set up and use this feature.
+This section provides guidelines and an example of how to set up and use this feature.
 
 ### Enable sample data
 
-To work through this example using the sample records and values specified here, you must be on a system with the standard [demo data](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) installed, and you must select the **USMF** legal entity before you begin.
+To work through the [example scenario](#example-scenario) using the sample records and values specified here, you must be on a system with the standard [demo data](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) installed, and you must select the **USMF** legal entity before you begin.
 
 You can also use this example as guidance for how to use this feature when working on a production system, but then you must substitute your own values for each setting described here.
 
@@ -101,44 +130,61 @@ For more information about work templates, see [Control warehouse work by using 
 
 ### Set up a location directive to handle quality failures
 
-Navigate to _Warehouse management - Setup - Location directives_ and change the Work order type to Quality In Quality Check. Create a new record:
+<!-- KFM: Briefly describe what this is and why we are doing this. -->
 
-- Name: 51 To Quality
-- Work type: Put
-- Site: 5
-- Warehouse: 51
-
-Create a line:
-
-- From quantity: 1
-- To quantity: 1000000
-
-Create a Location Directive Action:
-
-- Name: Quality
-
-Open the edit query for the action and add a range for Locations – Location = QMS
+1. Go to **Warehouse management > Setup > Location directives**.
+1. Set **Work order type** to "Purchase orders" to start working with location directives of that type.
+1. Create or select a location directive for handling quality failures.<br>If you're preparing USMF sample data, then select **New** to create a new location directive and enter the following settings for the new directive:
+    - **Name** - "51 To Quality"
+    - **Work type** - "Put"
+    - **Site** - "5"
+    - **Warehouse** - "51"
+1. Select **Save** to save your directive.
+1. In the **Lines** area, set up your lines as needed. <!-- KFM: what is this setting for, and why are we doing this? What affect will the recommended settings have? --><br>If you're preparing USMF sample data, then select **New** to add a new row to the table and enter the following settings for the new row:
+    - **From quantity** - "1"
+    - **To quantity** - "1000000"
+1. Select **Save** to save the new line.
+1. With a line still selected, in the **Location directive actions** area, set up actions for that line as needed. Repeat for each line. <!-- KFM: what is this setting for, and why are we doing this? What affect will the recommended settings have? --><br>If you're preparing USMF sample data, then select the line you just created, select **New** to add a new action for that line, and enter the following settings for the new action: <!-- What does this name mean? What about the other settings--can we link to more information about them? -->
+    - **Name** - "Quality"
+1. In the **Location directive actions** area, select an action and then select **Edit query** to open a pane where you can edit the query for the selected action.
+1. On the **Range** tab, select **Add** to add a new row to the query. <!-- KFM: what is this setting for, and why are we doing this? What affect will the recommended settings have? -->Make the following settings for the new line:
+    - **Table** - "Locations"
+    - **Derived table** - "Locations"
+    - **Field** - "Location"
+    - **Criteria** - "QMS" <!-- KFM: what does this mean? What will it do? Is this for sample data, or always? -->
 
 ### Set up mobile device menu items
 
-Navigate to _Warehouse management -  Setup - Mobile device  - Mobile device menu items_. Select Purchase Put-away.
+<!-- KFM: Briefly describe what this is and why we are doing this. -->
 
-In the Work classes grid, add a new record for QC Check
+1. Go to **Warehouse management > Setup > Mobile device > Mobile device menu items**.
+1. Create or select the mobile device menu item where you'd like to include a quality check option.<br>If you're preparing USMF sample data, then select the 
+"Purchase Put-away" item.
+1. In the **Work classes** area, select **New** to add a row to the table.
+1. For the new row set **Work class ID** to the name of the [work class](#work-class) that you created earlier for quality-control work.<br>(If you're preparing USMF sample data, then set **Work class ID** to "QC Check".)
 
-### Try out the feature
+<a name="example-scenario"></a>
 
-Navigate to _Procurement and sourcing - Purchase orders - All purchase orders_ and create a new order. Specify Vendor account = 104 and Warehouse = 51.
+### Example scenario
 
-Add a line for item M9203, quantity 3 PL.
+Once you have enabled and set up all of the sample data described previously in this topic, do the following to try out this feature:
 
-Open the mobile device and navigate to _Inbound - Purchase Line Receive_. Enter your purchase order number and LineNum 1. Receive 1 PL.
+1. Go to **Procurement and sourcing > Purchase orders > All purchase orders**.
+1. Select **New**. 
+1. The **Create purchase order** pane opens. Enter the following settings here:
+    - **Vendor account** - "104"
+    - **Warehouse** - "51"
+1. Select **OK** to close the pane and open your new order.
+1. The **Purchase order lines** section already contains a new, blank line. Enter the following values for it:
+    - **Item number** - "M9203"
+    - **Quantity** - "3"
+    - **Unit** - "PL"
+1. Sign in to a mobile device and go to **Inbound > Purchase Line Receive**. Enter your purchase order number and LineNum 1. Receive 1 PL. <!-- KFM: We need to explain this more clearly. We also need to explain or link to how to run the emulator. I don't know how, so I couldn't confirm this. -->
+1. Return to Supply Chain Management with your purchase order still open. In the **Purchase order lines** area, select **Work details**.
+1. The **Work** page opens. Copy the **Target license plate ID** shown here for the created put-away work.
+1. Sign in to a mobile device and go to **Inbound > Purchase Put-away**. EEnter the license plate you copied. Confirm the pick from RECV. <!-- KFM: We need to explain this more clearly. I couldn't confirm this. -->
+1. On the quality check page, select **Reject**. <!-- KFM: We need to explain this more clearly. Where are we, still in the mobile device? -->
 
-Click on Work details from the purchase order line action bar. Copy the Target license plate from the created putaway work.
+The original purchase order put-away work will be completed (the put location will be overridden to RECV) and you will now be directed to complete the put of the newly created Quality in quality check work. Confirm the Put to QMS. <!-- KFM: We need more detail here. I don't understand what is going on. Change from passive to active voice so we know who is doing what. -->
 
-On the mobile device navigate to _Inbound -  Purchase Put-away_. Enter the license plate you copied. Confirm the pick from RECV.
-
-On the quality check screen, choose &#39;Reject&#39;.
-
-The original purchase order putaway work will be completed (the put location will be overridden to RECV) and you will now be directed to complete the put of the newly created Quality in quality check work. Confirm the Put to QMS.
-
-A quality order has been created, and can be processed using normal quality procedures.
+When you have finished this procedure, you will have created a quality order, which you can then process using normal quality procedures. <!-- KFM: What are "normal quality procedures"? Do we have a link for that? -->
