@@ -127,7 +127,12 @@ In the **Reply URL** box of the **Azure AD B2c - Applications \> New application
 
 User flows are the policies Azure AD B2C uses to provide secure sign in, sign up, edit profile, and forget password user experiences. Dynamics 365 Commerce uses these flows to perform the policy actions to interact with the Azure AD B2C tenant. When a user interacts with these policies, they are redirected to the Azure AD B2C tenant to perform the actions.
 
-You can opt to use the default user flows provided by Azure AD, which will display a page hosted by AAD B2C. Alternately, you can create an HTML page to control the look and feel of these user flow experiences. 
+Azure AD B2C provides three basic user flow types:
+- Sign up and sign in
+- Profile editing
+- Password reset
+
+You can choose to use the default user flows provided by Azure AD, which will display a page hosted by AAD B2C. Alternately, you can create an HTML page to control the look and feel of these user flow experiences. 
 
 To customize the user policy pages for Dynamics 365 Commerce, see [Set up custom pages for user logins](custom-pages-user-logins.md). For additional information, see [Customize the interface of user experiences in Azure Active Directory B2C](https://docs.microsoft.com/en-us/azure/active-directory-b2c/tutorial-customize-ui).
 
@@ -172,8 +177,7 @@ To create a sign up and sign in user flow policy, follow these steps.
 
 1. Select **Create**.
 1. Click the newly selected to verify [???]
-1. Select **Run user flow** to view the login domain for the policy. This will appear under **Select domain** (for example, fabrikam.b2clogin.com). 
-1. Close the tab.
+1. Select **Run user flow** to view the sign up/sign in domain for the policy. This will appear under **Select domain** (for example, fabrikam.b2clogin.com). 
 
 The following image shows sign up and sign In policy settings.
 
