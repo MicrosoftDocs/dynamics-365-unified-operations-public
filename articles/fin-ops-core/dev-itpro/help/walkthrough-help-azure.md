@@ -262,6 +262,6 @@ Next, you configure the search service to have an index of your content.
 
 ## See also
 
-[Deploying Custom Help](deploy.md)  
+[Custom Help Overview](custom-help-overview)  
 [Custom Help Toolkit](custom-help-toolkit.md)  
 [Language and locale descriptors in across product and Help](language-locale.md)  

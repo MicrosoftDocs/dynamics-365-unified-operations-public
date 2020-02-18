@@ -5,7 +5,7 @@ title: Connect the Help system
 description: This topic describes the components of the Help system for certain Dynamics 365 apps, and provides an overview of how to connect them and a summary of how to create custom help. 
 author: margoc
 manager: AnnBe
-ms.date: 01/30/2020
+ms.date: 02/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Connect the Help system
+# Configure the Help experience for Finance and Operations apps
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,20 +38,20 @@ This topic describes the components of the Help system for Finance and Operation
 
 ## Help architecture
 
-The following illustration shows the parts of the Help system. The in-product Help system pulls articles from https://docs.microsoft.com and other connected websites, as well as task guides stored in Business Process Modeler in Lifecycle Services (LCS).
+The Finance and Operations apps come with conceptual overviews and other articles that publish to the [https://docs.microsoft.com/dynamics365/](/dynamics365/) site. This location is then accessible from the in-product Help pane. The following illustration shows the parts of the Help system. The in-product Help system pulls articles from https://docs.microsoft.com and other connected websites, as well as task guides stored in Business Process Modeler in Lifecycle Services (LCS).
 
 [![Help architecture](./media/help-architecture.png)](./media/help-architecture.png)
 
 ## Adding Task guides
 
 > [!NOTE]
-> The **Task guides** tab is currently not available in Dynamics 365 Human Resources or Commerce. We are currently working to enable this functionality in a future release. The Task guides in the Getting Started experience in Human Resources remain available to cover basic functionality. Procedural help is also available on the docs.microsoft.com site for both Human Resources and Commerce.
+> The **Task guides** tab is currently not available in Dynamics 365 Human Resources or Commerce. <!--We are currently working to enable this functionality in a future release.--> The Task guides in the Getting Started experience in Human Resources remain available to cover basic functionality. Procedural help is also available on the [https://docs.microsoft.com/dynamics365/](/dynamics365/) site for both Human Resources and Commerce.
 
-Using the **System Parameters** page, system administrators connect the pieces of the Help system for an implementation.
+Using the **System Parameters** page, system administrators can configure access to the relevant task guide libraries for an implementation.
 
 [![System Parameters form with Help settings](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png)
 
-On the **System parameters** page, follow these steps:
+To configure task guides for a solution, on the **System parameters** page, follow these steps:
 
 > [!IMPORTANT]
 > The first time that you open the **Help** tab, you must connect to Lifecycle Services. Be sure to click the link in the middle of the form, wait for the connection, close the dialog box, and then click **OK** to get to the **System Parameters** page.
@@ -76,7 +76,7 @@ Translated Task guides were first shipped in the May 2016 APQC Unified Library, 
 
 ## Adding custom help
 
-You can use task guides to create custom help, or connect a website to the Help pane.
+You can use task guides to create custom help, or connect a custom help website to the Help pane.
 
 ### Create custom help with task guides
 
@@ -86,16 +86,16 @@ For partners, if you promote a library to be a corporate library, and include it
 
 ### Connect a custom help site
 
-Finance and Operations apps are rarely used out-of-the-box. Rather, the solution is customized and extended to fit the organization's needs. Similarly, you can customize and extend the Help experience, including adding custom help to the in-product help pane.  
+Finance and Operations apps are rarely used out-of-the-box. Rather, the solution is customized and extended to fit the organization's needs. Similarly, you can customize and extend the Help experience, including adding custom help to the in-product Help pane.  
 
-Microsoft has provided a toolkit with sample code to help you deploy and connect custom Help to the Help pane. In [Deploying custom Help](../../dev-itpro/help/deploy.md), you can read about how you can set up a custom Help solution by publishing content as HTML to a website, make the content searchable, and extending the Help pane to connect to the website.  
+Microsoft has provided a toolkit to help you deploy and connect custom Help to the Help pane. In [Custom Help Overview](../../dev-itpro/help/custom-help-overview), you can read about how you can set up a custom Help solution by publishing content as HTML to a website, making the content searchable, and extending the Help pane to connect to the website.  
 
 If you want to collaborate with Microsoft on tools and processes for customizing help, please fill in the form at [https://aka.ms/customhelpfeedback](https://aka.ms/customhelpfeedback).  
 
 ## See also
 
 [Help overview](help-overview.md)  
-[Deploying custom help](../../dev-itpro/help/deploy.md)  
+[Custom Help Overview](../../dev-itpro/help/custom-help-overview)  
 [Task recorder overview](../../dev-itpro/user-interface/task-recorder.md)  
 [How to create a task recording to use as documentation or training](../../dev-itpro/user-interface/task-recorder-training-docs.md)  
 [Custom Help GitHub repository](https://github.com/microsoft/dynamics356f-o-custom-help)  

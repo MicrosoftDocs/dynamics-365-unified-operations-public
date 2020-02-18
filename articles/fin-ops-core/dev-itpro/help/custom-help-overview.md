@@ -5,7 +5,7 @@ title: Deploy your custom Help
 description: This topic describes how you can extend the Microsoft Help to reflect your solution and then connect that to the Help pane in Finance and Operations apps. 
 author: edupont04
 manager: AnnBe
-ms.date: 02/14/2020
+ms.date: 02/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Operations
 
 ---
 
-# Deploying custom help
+# Custom Help Overview
 
 [!include [banner](../includes/banner.md)]
 
@@ -41,7 +41,7 @@ You can connect solution-specific and customer-specific help content with the [H
 
 :::image type="content" source="../../fin-ops/get-started/media/help-architecture.png" alt-text="Diagram showing a customized help solution and the Help pane.":::
 
-## Plan the Help system
+## Custom help scenarios
 
 Depending on the customer's solution, Help content can come from different sources. In the following, we assume that you are a consultant from a Dynamics 365 partner who wants to add custom Help to their customer's solution, and that you want to connect the customer's Help solution with the in-product Help pane. We start with a very simple scenario and then show two slightly more complex variants.  
 
@@ -51,7 +51,7 @@ In this simplified scenario, the partner deploys conceptual Help for their custo
 
 :::image type="content" source="../media/help-architecture-custom1.png" alt-text="Diagram showing the Help pane with one custom help website connected and no task guides.":::
 
-As a result, when a user opens the Help pane, they are offered links to Help from the partner's website as well as from *docs.microsoft.com*.
+As a result, when a user opens the Help pane, they are offered links to Help from the partner's website as well as from *docs.microsoft.com*. The in-product Help pane shows context-sensitive links to Help content on the connected websites based on specific metadata values
 
 If that scenario is too simple, then let us look at a couple of variants.
 
@@ -80,7 +80,7 @@ In order to connect your Help content with the product, you must customize the i
 You can see an example of how to get these pieces in place in [Example of Deploying Custom Help on Azure](walkthrough-help-azure.md).
 
 > [!TIP]
-> We recommend that you deploy your Help content to an Azure Web App. For more information, see [Deploying custom help sites](website.md).
+> We recommend that you deploy your Help content to an Azure Web App. For more information, see [Deploying custom help sites](custom-help-websites.md).
 
 ## Process
 
@@ -90,8 +90,8 @@ The following table outlines the mains steps with links to further guidance.
 
 |Objective |Learn more  |
 |----------|------------|
-|I want to understand the end-to-end process |See the previous section |
-|I want to host my Help content on Azure |See [Deploying custom help sites](website.md)         |
+|I want to understand the end-to-end process |See the scenarios in the previous section |
+|I want to host my Help content on Azure |See [Deploying custom help sites](custom-help-websites.md)         |
 |I want to customize Microsoft's Help content |See [Extend, Customize, and Collaborate on the Help](contributor-guide.md)        |
 |I just want a copy of Microsoft's content, thanks| See [Custom Help Toolkit: The HTML From Repos Generator tool](custom-help-toolkit-HtmlFromRepoGenerator.md)  |
 |I want to reuse my Dynamics AX content|See [Convert Dynamics AX custom Help for use in Dynamics 365](migrate-dynamicsax2012.md)  |
@@ -99,10 +99,10 @@ The following table outlines the mains steps with links to further guidance.
 
 ## See also
 
-[Deploying custom help sites on Azure](website.md)  
+[Deploying custom help sites on Azure](custom-help-websites.md)  
 [Connect your Help website with the Help pane](connect-help-pane.md)  
 [Example of Deploying Custom Help on Azure](walkthrough-help-azure.md)  
 [Running the Custom Help Toolkit](custom-help-toolkit.md)  
 [Language and locale descriptors in across product and Help](language-locale.md)  
-[Connect the Help system](../../fin-ops/get-started/help-connect.md)  
+[Configure the Help experience for Finance and Operations apps](../../fin-ops/get-started/help-connect.md)  
 [Help system](../../fin-ops/get-started/help-overview.md)  

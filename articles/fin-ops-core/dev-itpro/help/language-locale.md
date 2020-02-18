@@ -33,7 +33,7 @@ The client used by Finance and Operations apps supports many languages and local
 1. The value of the ```ms.locale``` property in each HTML file must match the locale of the content.  
 2. The content must be uploaded to a folder with the same name as the locale on the website that hosts the content.  
 
-For more information, see [Deploying custom Help](deploy.md) and [Example of Deploying Custom Help on Azure](walkthrough-help-azure.md).  
+For more information, see [Custom Help Overview](custom-help-overview) and [Example of Deploying Custom Help on Azure](walkthrough-help-azure.md).  
 
 ## Languages and descriptors
 
@@ -92,6 +92,6 @@ Most translation services treat certain languages as variants of another languag
 
 ## See also
 
-[Deploying custom Help](deploy.md)  
+[Custom Help Overview](custom-help-overview)  
 [Running the Custom Help Toolkit](custom-help-toolkit.md)  
 

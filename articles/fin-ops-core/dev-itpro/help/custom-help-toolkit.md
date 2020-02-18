@@ -69,7 +69,7 @@ Some of the tools in the toolkit can be used for custom help for solutions that 
 
 ## See also
 
-[Deploying Custom Help](deploy.md)  
+[Custom Help Overview](custom-help-overview)  
 [Example of Deploying Custom Help on Azure](walkthrough-help-azure.md)  
 [Connect your Help website with the Help pane](connect-help-pane.md)
 [Language and locale descriptors in across product and Help](language-locale.md)  

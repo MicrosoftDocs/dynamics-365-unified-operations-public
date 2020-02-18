@@ -467,9 +467,9 @@
       - name: Deploy custom help
         items:
         - name: Deploying custom Help
-          href: help/deploy.md
+          href: help/custom-help-overview
         - name: Deploying help websites on Azure
-          href: help/website.md
+          href: help/custom-help-websites.md
         - name: Language and locale descriptors in across product and Help
           href: help/language-locale.md
         - name: Example of deploying custom Help on Azure

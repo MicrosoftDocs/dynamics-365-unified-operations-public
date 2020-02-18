@@ -119,5 +119,5 @@ The following properties are reserved for future use:
 
 ## See also
 
-[Deploying custom Help](deploy.md)  
+[Custom Help Overview](custom-help-overview)  
 [Custom Help Toolkit](custom-help-toolkit.md)  

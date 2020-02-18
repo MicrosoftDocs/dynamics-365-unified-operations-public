@@ -5,7 +5,7 @@ title: Help system
 description: This topic provides an overview of the Help system.
 author: edupont04
 manager: AnnBe
-ms.date: 11/01/2019
+ms.date: 02/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Users of the following products can get access to context-sensitive Help and other content based on the same Help system:
 
-- Dynamics 365 Finance 
+- Dynamics 365 Finance
 - Dynamics 365 Commerce
 - Dynamics 365 Supply Chain Management
 - Dynamics 365 Human Resources
@@ -47,14 +47,14 @@ You can access product-specific help from the Help pane in whichever product you
 
 ## Help on docs.microsoft.com
 
-The docs.microsoft.com site ([docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/)) is the primary source of product documentation for the applications listed above. The site offers the following features:
+The docs.microsoft.com site ([docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/)) is the default source of product documentation for the applications listed above. The site offers the following features:
 
 - **Access to the most up-to-date content** – The site gives us a faster and more flexible way to create, deliver, and update product documentation. Therefore, it helps to ensure that you have access to the latest technical information.
 - **Content that is written by experts** – The site provides a richer set of product documentation that can be enhanced by community members both inside and outside Microsoft.
 
-You can also find our content with any search engine. We recommend that for best results, you use a site search, such as ```site:docs.microsoft.com dynamics 365 "search term"```.
+You can also find our content with any search engine. We recommend that for best results, you use a site search, such as `site:docs.microsoft.com dynamics 365 "search term"`.
 
-### Use an RSS feed
+### Get notified of changes with an RSS feed
 
 To subscribe to an RSS feed of all updates to the content, use the following link from a browser that supports RSS feeds, such as Internet Explorer, or an RSS feed manager:
 
@@ -105,6 +105,8 @@ You can use Task recorder to create your own custom Task guides. For more inform
 
 ## In-product Help
 
+Some fields have field descriptions to help users get unblocked. To help users get started, get unblocked, and learn more, the in-product Help pane provides context-sensitive access to content.  
+
 To access Help content, either click the **Help** (**?**) icon and then choose Help, or press Ctrl+Shift+?. In both cases, the Help pane opens. From the Help pane, you can access articles or Task guides that are relevant to the product area that you are accessing Help from.
 
 ![Help pane](./media/help-pane-wiki.png)
@@ -153,7 +155,7 @@ Translated Task guides are released in libraries with "All languages" in the tit
 You can create help for your users by creating custom Task guides, or connect your own website to the Help pane. For details, see:
 
 - [Task recorder resource](../../dev-itpro/user-interface/task-recorder.md)  
-- [Deploying custom Help](../../dev-itpro/help/deploy.md)  
+- [Custom Help Overview](../../dev-itpro/help/custom-help-overview)  
 
 ## Additional resources
 
