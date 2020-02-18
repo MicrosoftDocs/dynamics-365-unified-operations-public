@@ -48,8 +48,8 @@ The features listed in this section are included in this release. The feature ti
 
 The following features are new for version 10.0.9. You must enable these features using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
-- [Compare item price storage](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/compare-item-price-storage) - For more information, see [Compare item prices storage report](../cost-management/compare-item-price.md)
-- [Flexible warehouse-level dimension reservation](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/flexible-warehouse-level-dimension-reservation) - For more information, see [Flexible warehouse-level dimension reservation policy](../warehousing/flexible-warehouse-level-dimension-reservation.md)
+- [Compare item price storage](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/compare-item-price-storage) - For more information, see [Compare item prices storage report](../cost-management/compare-item-price.md).
+- [Flexible warehouse-level dimension reservation](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/flexible-warehouse-level-dimension-reservation) - For more information, see [Flexible warehouse-level dimension reservation policy](../warehousing/flexible-warehouse-level-dimension-reservation.md).
 - [Inbound quality check](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inbound-quality-check)
 
 ### Features now added to feature management
