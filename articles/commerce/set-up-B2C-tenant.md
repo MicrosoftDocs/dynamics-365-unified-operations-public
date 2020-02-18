@@ -93,9 +93,9 @@ For example, to switch directories to the location of your target Azure subscrip
 
 Once the B2C tenant has been created, you will create a B2C application within the tenant to interact with the Commerce actions.
 
-To create the B2C application in Azure AD B2C, follow these steps.
+To create the B2C application, follow these steps.
 
-1. Select **Applications** and then select **Add**.
+1. In the Azure portal, select **Applications** and then select **Add**.
 1. Under **Name**, enter the name of the desired AAD B2C application.
 1. Under **Web App/Web API**, for **Include web app / web API** select **Yes**.
 1. For **Allow implicit flow** select **Yes** (the default value).
@@ -218,7 +218,7 @@ To create a password reset user flow policy, follow these steps.
 1. Under **Name**, enter a name for the password reset user flow.
 1. Under **Identity providers**, select **Reset password using email address**.
 1. Select **Create**.
-1. Under **Application claims**, select the following:
+1. Under **Application claims**, select the following check boxes:
     - **Email**
     - **Addresses**
     - **Given Name**
@@ -236,10 +236,10 @@ Social identity providers allow users to use their social accounts for authentic
 
 If social identity provider authentication is not added, the default Azure AD B2C profiles will be the main profiles for your user base. Users will select their own username (their preferred email address) and set a password. Azure AD B2C will authenticate users directly. 
 
-If social identity provider authentication is added and a user chooses one of the social identity providers offered, an entity is still created in the Azure AD B2C tenant. Azure AD B2C will authenticate the user’s login against the social identity provider.
+If social identity provider authentication is added and a user chooses one of the social identity providers offered, an entity is still created in the Azure AD B2C tenant. Azure AD B2C will then authenticate the user's credentials with the social identity provider.
 
 > [!NOTE]
-> The identity provider sign in creates a record in the B2C tenant, but in a different format since it will call the external social identity provider reference for authentication. The user can use the same email address across social identity providers, meaning that the email username used for authentication may not be unique to the tenant. Azure AD B2C will enforce users having a unique email address only on local B2C accounts.
+> The identity provider sign in creates a record in the B2C tenant, but in a different format than local accounts since it will call the external social identity provider reference for authentication. The user can use the same email address across social identity providers, meaning that the email username used for authentication may not be unique to the tenant. Azure AD B2C will only enforce that users have a unique email address on local B2C accounts.
 
 Before you can add a social identity provider for authentication, you must go to the identity provider's portal and set up an identity provider application as instructed in the Azure AD B2C documentation. A list of links to the documentation is provided below.
 
@@ -252,6 +252,8 @@ Before you can add a social identity provider for authentication, you must go to
 - [LinkedIn](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-li-app)
 - [OpenID Connect](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-oidc-idp)
 - [Twitter](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-setup-twitter-app)
+
+### Add and set up a social identity provider
 
 To add and set up a social identity provider, follow these steps.  
 
