@@ -295,7 +295,7 @@ To update headquarters with the new AAD B2C information, follow these steps.
 
 1. In Commerce, go to **Retail and Commerce \> Shared Parameters**.
 1. Under **Identity Provider**, do the following:
-    1. In the **Issuer** box, enter the issuer URL.
+    1. In the **Issuer** box, enter the identity provider issuer URL. To find your issuer URL, see [Obtain issuer URL](#obtain-issuer-URL) below.
     1. In the **Name** box, enter a name for your issuer record.
     1. In the **Type** box, enter **Azure AD B2C** (id_token).
 1. Under **Relying Parties**, do the following:
@@ -306,18 +306,17 @@ To update headquarters with the new AAD B2C information, follow these steps.
 
 ### Obtain issuer URL
 
-To obtain your issuer URL, follow these steps.
+To obtain your identity provider issuer URL, follow these steps.
 
 1. Create a metadata address URL in the following format using your B2C tenant and policy: ``https://<B2CTENANTNAME>.b2clogin.com/<B2CTENANTNAME>.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=<B2CSIGN-INPOLICY>``
     - Example: ``https://d365plc.b2clogin.com/d365plc.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=B2C_1_signinup``.
 1. Enter the metadata address URL into a browser address bar.
-1. Copy the issuer URL.
+1. In the metadata, copy the identity provider issuer URL (the value for **"issuer"**).
+    - Example: ``https://login.fabrikam.com/073405c3-0113-4f43-b5e2-df01266e24ae/v2.0/``.
 
+<!--
 ![Copy the Issuer URL from metadata address](./media/B2CImage_18.png "Copy the Issuer URL from metadata address")
-
-Example metadata address URL: ``https://d365plc.b2clogin.com/d365plc.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=B2C_1_signinup``.
-
-Example identity provider issuer URL: ``https://login.fabrikam.com/073405c3-0113-4f43-b5e2-df01266e24ae/v2.0/``.
+-->
 
 ## Additional B2C information
 
