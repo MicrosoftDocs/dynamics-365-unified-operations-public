@@ -44,16 +44,48 @@ The .env file that is provided as part of the Dynamics 365 Commerce online softw
 The default .env file that is provided with the online SDK should resemble the following example.
 
 ```text
+### Environment File ##################################################################
+# This is a simple configuration 
+# Online documentation for this file is available at 
+# https://docs.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/configure-env-file
+########################################################################################
+
+# MSDyn365_APP_TYPE variable is required. It can be set only to the value partner.
+
 MSDyn365_APP_TYPE=partner
+
+# PORT variable is required. It defines the port number that is used to preview your Node 
+#   application when the Node server is started by using the yarn start command. The default value is 4000
+
 PORT=4000
 
-### Partner Level Settings
-# MSDyn365_HOST=<Partner Host Here>
-# MSDyn365Commerce_BASEURL=<Retail Server Base URL Here>
-# MSDyn365Commerce_CHANNELID=<Retail Server Channel ID Here>
-# MSDyn365Commerce_CATALOGID=<Retail Server Catalog ID Here>
-# MSDyn365Commerce_OUN=<Retail Server OUN Here>
-# MSDyn365Commerce_BASEIMAGEURL=<Retail Server Base Image URL Here>
+# MSDyn365_HOST variable defines the domain name of your customer-facing e-Commerce site. 
+#   When this variable is set, if the URL https://localhost:4000/ is opened in a development environment, 
+#   your e-Commerce site will be rendered locally. If your site is protected through Azure Active Directory 
+#   (Azure AD) credentials, a prompt for a user name and password will appear.
+
+MSDyn365_HOST=
+
+# MSDyn365Commerce_BASEURL variable defines the URL of the Microsoft Dynamics 365 Retail Server. 
+#   When this variable is set, local development and testing can be done against Dynamics 365 Retail 
+#   application programming interfaces (APIs). If you set this variable, you must also set the 
+#   MSDyn365Commerce_CHANNELID, MSDyn365Commerce_OUN, and MSDyn365Commerce_CATALOGID variables.
+# MSDyn365Commerce_OUN variable defines the operating unit number for the channel.
+# MSDyn365Commerce_CATALOGID variable defines the catalog ID for the online store that you're connecting to. 
+#   Currently, only the value 0 (zero) is supported.
+# MSDyn365Commerce_CHANNELID variable defines the online channel that you're connecting to.
+
+MSDyn365Commerce_BASEURL=
+MSDyn365Commerce_CHANNELID=
+MSDyn365Commerce_CATALOGID=
+MSDyn365Commerce_OUN=
+
+# MSDyn365Commerce_BASEIMAGEURL variable defines the URL for a website's image assets. 
+#   The URL follows a pattern and must be manually generated. For more information, 
+#   see online product documentation.
+
+MSDyn365Commerce_BASEIMAGEURL=
+
 ```
 
 Two of the variables in the .env file, **MSDyn365\_APP\_TYPE** and **PORT**, are required and have preset values. All the other variables are optional. The optional variables enable your development environment to get data from live environments. This data is then rendered in the local development Node server.
