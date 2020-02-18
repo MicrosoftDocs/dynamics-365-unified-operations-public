@@ -2048,6 +2048,8 @@
           href: dev-itpro/retail-sdk/retail-sdk-samples.md
         - name: Log extension events to Application Insights
           href: dev-itpro/commerce-application-insights.md
+        - name: Create async Commerce (CRT) APIs in your business logic
+          href: dev-itpro/async-commerce-extension.md
       - name: Payment connector extensibility
         items:
         - name: Create a payment integration for a payment terminal
