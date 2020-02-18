@@ -80,7 +80,7 @@ The following example shows the addition of a **slots** section that contains tw
 }
 ```
 
-The following example shows the module's React view file, campaignContainer.view.tsx, which uses the slots for the container.
+The following example shows the module's React view file, campaignContainer.view.tsx, which uses the slots for the container.  Note this example uses a single React/View file and the campaignContainer.tsx can be deleted.
 
 ```typescript
 import * as React from 'react';
