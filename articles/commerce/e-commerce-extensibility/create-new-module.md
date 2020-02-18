@@ -69,6 +69,7 @@ To preview the new module in a local web browser, follow these steps.
 Module names are case-insensitive. We recommended that you use whole words for module names whenever you can.
 
 ## Additional resources
+[CLI command reference](li-command-reference.md)
 
 [Clone a starter kit module](clone-starter-module.md)
 
