@@ -43,7 +43,9 @@ These topics describe dual-write integration.
     - [Top reasons to use dual-write](dual-write-overview.md#top-reasons-to-use-dual-write)
     - [What does dual-write mean for users and architects of customer relationship management products?](dual-write-overview.md#what-does-dual-write-mean-for-users-and-architects-of-customer-relationship-management-products)
 
-## Mapping between concepts in Finance and Operations applications and concepts in model-driven apps in Microsoft Dynamics 365
+## Mapping concepts between apps
+
+These topics describe mapping between concepts in Finance and Operations applications and concepts in model-driven apps in Microsoft Dynamics 365.
 
 + [Organization hierarchy awareness](organization-mapping.md)
 + [Company concept in Common Data Service](company-data.md)
