@@ -5,7 +5,7 @@ title: Data import and export jobs overview
 description: Use the Data management workspace to create and manage data import and export jobs.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 09/16/2019
+ms.date: 02/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -205,4 +205,4 @@ moving window thereby, always leaving the history for the specified number of da
 -   **Recurring batch** – The clean-up job can be run as a one-time, manual execution, or it can be also scheduled for recurring execution in batch. The batch can be scheduled using the **Run in background** settings, which is the standard batch set up.
 
 > [!NOTE]
-> If it is observed that records in the staging tables are not cleaned up completely, ensure that the clean up job is scheduled to run in recurrance. As explained above, in any given clean up exeuction, the job will only clean up as many execution ID's as it could within the provided maximum hours. Hence, to continue cleaning up of the remaining (if at all) of the staging records, the job must be scheduled to run periodically.
+> If records in the staging tables are not cleaned up completely, ensure that the cleanup job is scheduled to run in recurrence. As explained above, in any clean up execution the job will only clean up as many execution ID's as is possible within the provided maximum hours. In order to continue cleanup of any remaining staging records, the job must be scheduled to run periodically.
