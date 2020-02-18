@@ -60,7 +60,7 @@ yarn msdyn365 clone content-block super-content-block
 It can take up to a minute to clone a module. After the command has finished running, you can find the new module in the \\src\\modules\\ directory.
 
 > [!NOTE]
-> Module dependencies aren't automatically pulled down when you clone a module. Before you build the module, you must run Yarn and fix any missing dependencies.
+> Module dependencies aren't automatically pulled down when you clone a module. Before you build the module, you must run Yarn and fix any missing dependencies.  You may also need fix up some refereces inside the module source code if there are any errors when running the "yarn start" command.
 
 ## Preview a module
 
