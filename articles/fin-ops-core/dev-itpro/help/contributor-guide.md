@@ -100,6 +100,7 @@ You can use the [Dynamics 365 Translation Service](/dynamics365/fin-ops-core/dev
 
 ## See also
 
+[Convert Dynamics AX custom Help for use in Dynamics 365](migrate-dynamicsax2012.md)  
 [Docs Contributor Guide](/contribute/)  
 [Docs Authoring Pack for Visual Studio Code](/contribute/how-to-write-docs-auth-pack)  
 [Getting started with writing and formatting on GitHub](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)  

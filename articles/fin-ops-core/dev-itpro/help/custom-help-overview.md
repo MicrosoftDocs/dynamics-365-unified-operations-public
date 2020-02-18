@@ -71,7 +71,7 @@ There are, of course, more complex deployments in the real world, and by adding 
 
 ## Custom help sites
 
-In order to connect your Help content with the product, you must customize the in-product Help pane with your content. This requires the following elements:
+In order to the product to your Help content, you must customize the in-product Help pane to search your content. This requires the following elements:
 
 - Your content is available on a website
 - Your content is indexed by a search service
@@ -80,22 +80,24 @@ In order to connect your Help content with the product, you must customize the i
 You can see an example of how to get these pieces in place in [Example of Deploying Custom Help on Azure](walkthrough-help-azure.md).
 
 > [!TIP]
-> We recommend that you deploy your Help content to an Azure Web App. For more information, see [Deploying custom help sites](custom-help-websites.md).
+> We recommend that you deploy your Help content to an Azure web app. For more information, see [Deploying custom help sites](custom-help-websites.md).
 
 ## Process
 
 The end-to-end process depends on the actual customer's solution and the users' expectations. We provide a toolkit with tools that can help in different ways, and we provide guidance for the main steps and some of the quirks. However, some steps are very particular to tools or processes that are not directly tied to Dynamics 365, and so we have to refer to external guidance. But if you want to share your own learnings with other administrators, you can either contribute to this documentation through the link at the bottom of the page, or join the Dynamics 365 community.
 
-The following table outlines the mains steps with links to further guidance.
+The following table outlines the main objectives that administrators typically have for configuring the Help experience.
 
 |Objective |Learn more  |
 |----------|------------|
 |I want to understand the end-to-end process |See the scenarios in the previous section |
-|I want to host my Help content on Azure |See [Deploying custom help sites](custom-help-websites.md)         |
+|I want to set up a website for my Help content |See [Deploying custom help sites](custom-help-websites.md)         |
+|I want to add my content to the Help pane |See [Connect your Help website with the Help pane](connect-help-pane.md)  |
+|I want to give my users a customized in-product help experience that reflects their actual solution|See [Deploying custom help sites](custom-help-websites.md), [Connect your Help website with the Help pane](connect-help-pane.md), and [Create documentation or training with Task Recorder](../user-interface/task-recorder-training-docs.md) |
+|I want to reuse my existing Dynamics AX content|See [Convert Dynamics AX custom Help for use in Dynamics 365](migrate-dynamicsax2012.md)  |
 |I want to customize Microsoft's Help content |See [Extend, Customize, and Collaborate on the Help](contributor-guide.md)        |
 |I just want a copy of Microsoft's content, thanks| See [Custom Help Toolkit: The HTML From Repos Generator tool](custom-help-toolkit-HtmlFromRepoGenerator.md)  |
-|I want to reuse my Dynamics AX content|See [Convert Dynamics AX custom Help for use in Dynamics 365](migrate-dynamicsax2012.md)  |
-|I want to add my content to the Help pane |See [Connect your Help website with the Help pane](connect-help-pane.md)  |
+|Our technical writers want guidance for how to convert our legacy content into MarkDown for a better Help customization story going forward|See [Moving to MarkDown](migrate-dynamicsax2012.md#moving-to-markdown) |
 
 ## See also
 

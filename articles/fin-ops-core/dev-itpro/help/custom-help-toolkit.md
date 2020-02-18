@@ -38,15 +38,15 @@ Microsoft has published a GitHub repository with scripts and tools that can help
 
 The toolkit is available at [https://github.com/microsoft/dynamics365f-o-custom-help/](https://github.com/microsoft/dynamics365f-o-custom-help/) and provides the following tools as well as the source code for the tools:
 
-- HtmlFromRepoGenerator tool
+- HTML From Repos Generator tool
 
     For more information, see [Custom Help Toolkit: The HTML From Repos Generator tool](custom-help-toolkit-HtmlFromRepoGenerator.md)
 
 - Convert HTML to JSON tool
 
-    For more information, see [Custom Help Toolkit: The Convert HTML To JSON tool](custom-help-toolkit-ConvertHtmlToJson.md)
+    For more information, see [Custom Help Toolkit: The Convert HTML to JSON tool](custom-help-toolkit-ConvertHtmlToJson.md)
 
-- HtmlLocaleChanger tool
+- HTML Locale Changer tool
 
     For more information, see [Custom Help Toolkit: The HTML Locale Changer tool](custom-help-toolkit-HtmlLocaleChanger.md)
 
@@ -65,7 +65,7 @@ The toolkit is available at [https://github.com/microsoft/dynamics365f-o-custom-
 
 ## Other products
 
-Some of the tools in the toolkit can be used for custom help for solutions that are based on other Microsoft products, such as Dynamics 365 Business Central.
+Some of the tools in the toolkit can be used for custom help for solutions that are based on other Microsoft products, such as Dynamics 365 Business Central. However, this is currently not officially supported by Microsoft.
 
 ## See also
 

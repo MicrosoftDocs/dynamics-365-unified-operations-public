@@ -5,7 +5,7 @@ title: Convert Dynamics AX 2012 content for Dynamics 365
 description: This topic describes how you can reuse content from Dynamics AX for your Dynamics 365 solution. 
 author: edupont04
 manager: AnnBe
-ms.date: 02/14/2020
+ms.date: 02/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -117,7 +117,16 @@ The following properties are reserved for future use:
 
     In the future, this property may be used to limit the content that is shown to content for a specific industry.
 
+## Moving to MarkDown
+
+If you want to customize or extend the Microsoft Help, you can fork our public repo for either the source repo in English (US) at [https://github.com/MicrosoftDocs/Dynamics-365-unified-Operations-public](https://github.com/MicrosoftDocs/Dynamics-365-unified-Operations-public), or one of the related repos with translations into the supported languages. For more information, see [Extend, Customize, and Collaborate on the Help](contributor-guide.md).  
+
+Converting your existing content to MarkDown can be done using third-party tools, including but not limited to [PanDoc](https://pandoc.org) or the [Writage](https://writage.com) plugin for Word.  
+
+When you have converted your content to MarkDown, you can use a Git repo in Azure DevOps as your source repository, create a private or public repo in GitHub, or set up a project in [MkDocs](https://www.mkdocs.org/), for example. Then you can use open source tools such as [DocFx](https://dotnet.github.io/docfx/) to generate content for your website. In general, working in MarkDown means that you have access to a world of open source tools and do not have a hard dependency on Microsoft providing you with tools.  
+
 ## See also
 
-[Custom Help Overview](custom-help-websites.md)  
+[Deploying custom help sites](custom-help-websites.md)  
+[Custom Help Overview](custom-help-overview.md)  
 [Custom Help Toolkit](custom-help-toolkit.md)  
