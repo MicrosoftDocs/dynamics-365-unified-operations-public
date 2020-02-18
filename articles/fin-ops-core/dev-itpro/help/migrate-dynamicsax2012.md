@@ -119,5 +119,5 @@ The following properties are reserved for future use:
 
 ## See also
 
-[Custom Help Overview](custom-help-overview)  
+[Custom Help Overview](custom-help-websites.md)  
 [Custom Help Toolkit](custom-help-toolkit.md)  

@@ -88,14 +88,14 @@ For partners, if you promote a library to be a corporate library, and include it
 
 Finance and Operations apps are rarely used out-of-the-box. Rather, the solution is customized and extended to fit the organization's needs. Similarly, you can customize and extend the Help experience, including adding custom help to the in-product Help pane.  
 
-Microsoft has provided a toolkit to help you deploy and connect custom Help to the Help pane. In [Custom Help Overview](../../dev-itpro/help/custom-help-overview), you can read about how you can set up a custom Help solution by publishing content as HTML to a website, making the content searchable, and extending the Help pane to connect to the website.  
+Microsoft has provided a toolkit to help you deploy and connect custom Help to the Help pane. In [Custom Help Overview](../../dev-itpro/help/custom-help-websites.md), you can read about how you can set up a custom Help solution by publishing content as HTML to a website, making the content searchable, and extending the Help pane to connect to the website.  
 
 If you want to collaborate with Microsoft on tools and processes for customizing help, please fill in the form at [https://aka.ms/customhelpfeedback](https://aka.ms/customhelpfeedback).  
 
 ## See also
 
 [Help overview](help-overview.md)  
-[Custom Help Overview](../../dev-itpro/help/custom-help-overview)  
+[Custom Help Overview](../../dev-itpro/help/custom-help-websites.md)  
 [Task recorder overview](../../dev-itpro/user-interface/task-recorder.md)  
 [How to create a task recording to use as documentation or training](../../dev-itpro/user-interface/task-recorder-training-docs.md)  
 [Custom Help GitHub repository](https://github.com/microsoft/dynamics356f-o-custom-help)  

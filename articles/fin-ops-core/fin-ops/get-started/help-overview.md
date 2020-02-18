@@ -155,7 +155,7 @@ Translated Task guides are released in libraries with "All languages" in the tit
 You can create help for your users by creating custom Task guides, or connect your own website to the Help pane. For details, see:
 
 - [Task recorder resource](../../dev-itpro/user-interface/task-recorder.md)  
-- [Custom Help Overview](../../dev-itpro/help/custom-help-overview)  
+- [Custom Help Overview](../../dev-itpro/help/custom-help-websites.md)  
 
 ## Additional resources
 

@@ -28,7 +28,7 @@ ms.author: edupont
 
 The source files for the Help for the Microsoft's Finance and Operations apps are available in public GitHub repos so that administrators can easily extend and customize the content for specific solutions. In this section, you can learn about working with the GitHub repos and MarkDown files.  
 
-For information about authoring MarkDown files in GitHub repos, see the [Docs Contributor Guide](/contribute/). For information about deploying custom Help, see [Custom Help Overview](custom-help-overview).  
+For information about authoring MarkDown files in GitHub repos, see the [Docs Contributor Guide](/contribute/). For information about deploying custom Help, see [Custom Help Overview](custom-help-websites.md).  
 
 ## Contribute to the content
 
