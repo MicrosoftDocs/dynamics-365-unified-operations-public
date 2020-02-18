@@ -41,8 +41,11 @@ In case system on-hand quantity is negative, the planning engine will assume zer
 The lowest level of coverage dimensions is warehouse and we have the following on-hand recorded on location level.
 -	On-hand is 20 pcs on Site 1, Warehouse 13, Location 1  
 -	On-hand is -8 pcs on Site 1 Warehouse 13, Location 2
+
 The aggregated on-hand for Warehouse 13 is 20 pcs - 8 pcs = 12 pcs
+
 In this case the planning engine will use the aggregated on-hand of 12 pcs for Warehouse 13.
+
 Result will be a planned order of 25 pcs - 12 pcs = 13 pcs, to refill from 12 pcs to 25 pcs
 
 ## Example 2
@@ -50,8 +53,11 @@ Result will be a planned order of 25 pcs - 12 pcs = 13 pcs, to refill from 12 pc
 The lowest level of coverage dimensions is warehouse and we have the following on-hand recorded on location level.
 -	On-hand is 4 pcs on Site 1, Warehouse 13, Location 1  
 -	On-hand is -8 pcs on Site 1 Warehouse 13, Location 2
+
 The aggregated on-hand for Warehouse 13 is 4 pcs - 8 pcs = -4 pcs (less than 0)
+
 In this case the planning engine will assume on-hand is 0 pcs (zero) and not -4 pcs for Warehouse 13.
+
 Result will be a planned order of 25pcs – 0 pcs = 25 pcs, to refill from 0 pcs to 25 pcs
 
 > [!NOTE]
