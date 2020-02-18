@@ -352,25 +352,32 @@ Use the default ‘b2clogin.com’ domain (default). This part of the URL will b
 
 Once setup of the Azure AD B2C tenant is completed, provide the Dynamics 365 Commerce team with the details below. These data points will be used in Microsoft Lifecycle Services (LCS) when provisioning your environment.
 
-Navigate to the “Properties” section of your B2C Application. If needed, use the top search bar in the portal to search Azure AD B2C, select the result for your domain, and go to “Applications”.
+To collect the required application information, follow these steps.
 
-![Navigate to the B2C Application within your tenant](./media/B2CImage_19.png "Navigate to the B2C Application within your tenant")
+1. In the Azure portal, go to **Home \> Azure AD B2C - Applications**. 
+1. Select your application, and then in the left navigation pane select **Properties** to obtain the application details.
+1. From the **Application ID** box, collect the application ID of the B2C application created in your B2C tenant.
+1. Under **Reply URL**, collect the reply URL.
+1. Go to **Home \> Azure AD B2C – User flows (policies)**, and then collect the names of each user flow policy.
+1. Send the collected application information to the Commerce team.
 
-Select the Application and then go to the “Properties” tab for the Application details.
+The following image shows an example of the **Azure AD B2C - Applications** page.
 
-![Select the Properties menu of your B2C Application](./media/B2CImage_20.png "Select the Properties menu of your B2C Application")
+![Navigate to the B2C Application within your tenant](./media/B2CImage_19.png)
 
-B2C Application ID is the Application ID of the B2C application created in your B2C tenant per the above steps. (Note: In HQ, 
+<!--
+![Select the Properties menu of your B2C Application](./media/B2CImage_20.png)
+-->
 
-Collect the set Reply URL also:
+The following image shows an example of an application **Properties** page in Azure AD B2C. 
 
 ![Copy the Application ID from the B2C Application's Properties](./media/B2CImage_21.png)
 
-In your B2C Tenant, collect the names of each policy created for User flows to provide to the Commerce Team:
+The following image shows an example of user flow policies on the **Azure AD B2C – User flows (policies)** page.
 
 ![Collect the names of each B2C policy flow](./media/B2CImage_22.png)
 
-<u>Example Data Only</u>: Provide the following data points to Commerce (in the future, this information will be entered via LCS):
+The following list is an example set of data points to provide to the Commerce team.
 
 - **b2cLoginCustomDomain**: "d365ecom.b2clogin.com"
 - **b2cTenantName**: "d365ecom"
