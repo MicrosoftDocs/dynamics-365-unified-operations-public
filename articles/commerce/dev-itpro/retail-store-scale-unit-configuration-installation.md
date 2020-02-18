@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how you can use self-service to configure Commerce Scale Unit in Microsoft Dynamics 365 Commerce Headquarters, download it, and install it on one or more computers in a brick-and-mortar store. Commerce Scale Unit combines the Commerce channel database, Commerce Async Client, Commerce Scale Unit, and Cloud point of sale (POS) components. A Commerce environment already provides these components. However, you can now configure them so that they work locally in a store, in either a single-computer setup (the default option) or a multiple-computer setup. This topic also explains how to uninstall and troubleshoot Commerce Scale Unit.
+This topic explains how you can use self-service to configure a Commerce Scale Unit (Formerly titled as Retail Store Scale Unit) in Microsoft Dynamics 365 Commerce Headquarters, download it, and install it on one or more computers in a brick-and-mortar store. Commerce Scale Unit combines the Commerce channel database, Commerce Async Client, Retail Server, and Cloud point of sale (POS) components. A Commerce environment already provides these components in the cloud. However, you can now configure them so that they work locally in a store or datacenter, in either a single-computer setup (the default option) or a multiple-computer setup. This topic also explains how to uninstall and troubleshoot Commerce Scale Unit.
 
 > [!IMPORTANT]
 > It is critical to note that this component utilizes a server certificate in addition to Azure Service to Service authentication.  Both the generated Azure web application keys (Formerly called Secrets) and the server certificate must be managed for expiration.  By default, a certificate and a generated Azure web application key expires in one calendar year (365 days).
@@ -52,7 +52,7 @@ This topic explains how you can use self-service to configure Commerce Scale Uni
 
 ## Configure a new Commerce Scale Unit
 
-To create a functioning Commerce Scale Unit, complete the procedures in all sections of this topic through the "Run the Commerce Scale Unit installer" section. To complete the configuration and installation, you must first do the initial configuration in Headquarters. Next, you must complete the installation. Finally, you must return to Headquarters to finish the configuration, so that Commerce Scale Unit works correctly.
+To create a functioning Commerce Scale Unit, complete the procedures in all sections of this topic until the "Multiple-computer installation" section. To complete the configuration and installation, you must first do the initial configuration in Headquarters. Next, you must complete the installation. Finally, you must return to Headquarters to finish the configuration, so that Commerce Scale Unit works correctly.
 
 > [!IMPORTANT]
 > For on-premises deployments, perform the following steps:
@@ -81,12 +81,9 @@ To create a functioning Commerce Scale Unit, complete the procedures in all sect
     You can also add channels that don't use this database. In this way, you keep the data for those channels in the Commerce Scale Unit channel database. The channels that actively use this database can then access that data locally.
     
     > [!IMPORTANT]
-    > For on-premises deployments, select the **Download** button on the Action pane and select **Commerce Scale Unit Scale Unit**.  This will cause a known error and initiate the upload logic so that the following step in this document can be correctly completed. Allow for one minute while the upload logic completes.
+    > For on-premises deployments, select the **Download** button on the Action pane and select **Commerce Scale Unit package**.  This will cause a known error and initiate the upload logic so that the following step in this document can be correctly completed. Allow for at least one minute to pass while the upload logic completes.
 
-8. On the **Store Scale Unit package** FastTab, in the **Name** field, select the appropriate Commerce Scale Unit package.
-
-    Each environment generates a base Commerce Scale Unit package. Therefore, this field always contains at least one option.
-
+8. On the **Commerce Scale Unit package** FastTab, in the **Package reference** field, select the appropriate Commerce Scale Unit package.  Each environment generates a base Commerce Scale Unit package. Therefore, this field always contains at least one option.
 9. On the Action Pane, select **Save**.
 10. Go to **Retail and Commerce** &gt; **Channel setup** &gt; **Channel profiles**.
 11. On the Action Pane, select **New**.
@@ -97,8 +94,8 @@ To create a functioning Commerce Scale Unit, complete the procedures in all sect
 
 13. On the Action Pane, select **Save**.
 14. On the **Profile properties** FastTab for the new channel profile, select **Add**.
-15. In the **Property key** field, select **Commerce Scale Unit URL**.
-16. In the **Property value** field, enter the URL of the Commerce Scale Unit that should be installed.
+15. In the **Property key** field, select **Retail Server URL**.
+16. In the **Property value** field, enter the URL of the Retail Server that will be installed.
 
     The standard format for the URL of Commerce Scale Unit is **https://&lt;Computer Name&gt;:&lt;Port&gt;/RetailServer/Commerce**. In this format, **&lt;Computer Name&gt;** is either the fully qualified domain name (FQDN) of the computer where Commerce Scale Unit is installed or, for systems that aren't joined to a domain, the full computer name. **&lt;Port&gt;** is the port number that should be used in the installation. The port number must be a value between 1 and 65535. If you're using the default HTTPS port (443), you don't have to specify the port number.
 
@@ -106,7 +103,7 @@ To create a functioning Commerce Scale Unit, complete the procedures in all sect
 18. In the **Property key** field, select **Cloud POS URL**.
 19. In the **Property value** field, enter the URL of the Cloud POS instance that should be installed for Commerce Scale Unit.
 
-    The standard format for the URL of Cloud POS is **https://&lt;Computer Name&gt;:&lt;Port&gt;/POS**. In this format, **&lt;Computer Name&gt;** is either the FQDN of the computer where Commerce Scale Unit is installed or, for systems that aren't joined to a domain, the full computer name. **&lt;Port&gt;** is the port number that should be used in the installation. The port number must be a value between 1 and 65535. If you're using the default HTTPS port (443), you don't have to specify the port number.
+    The standard format for the URL of Cloud POS is **https://&lt;Computer Name&gt;:&lt;Port&gt;/POS**. In this format, **&lt;Computer Name&gt;** is either the FQDN of the computer where the Commerce Scale Unit is installed or, for systems that aren't joined to a domain, the full computer name. **&lt;Port&gt;** is the port number that will be used in the installation. The port number must be a value between 1 and 65535. If you're using the default HTTPS port (443), you don't have to specify the port number.
 
 20. On the Action Pane, select **Save**.
 
