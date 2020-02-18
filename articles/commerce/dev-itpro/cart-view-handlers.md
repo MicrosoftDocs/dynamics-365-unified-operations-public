@@ -141,3 +141,49 @@ Custom fields in Totals panel:
 |------------------------------------|---------------------------------------------------------|-----------------------------------------|
 | CartViewTotalsPanelCustomFieldBase | public computeValue(cart: ProxyEntities.Cart): string { }    | Compute the value for the custom field. |
 
+Custom columns in Lines grid:
+-----------------------------
+
+| Base class                | Events                                                           | Description                                            |
+|---------------------------|------------------------------------------------------------------|--------------------------------------------------------|
+| CustomLinesGridColumnBase | public title(): string {   }            | Set the title for the custom column.                   |
+|                           | public computeValue(cartLine: ProxyEntities.CartLine): string {} | Compute the value for the custom column.               |
+|                           | public alignment(): CustomGridColumnAlignment { }       **Supported values:**                                             
+                                                                    
+  enum CustomGridColumnAlignment {                                                                                    
+  Left = 0,                                                                                                                      
+  Right = 1                                                                                                                          
+  }                                                                 | Set the Left or right alignment for the custom column. |
+
+Custom columns in Payment grid:
+-------------------------------
+
+| Base class                   | Events                                                            | Description                                            |
+|------------------------------|-------------------------------------------------------------------|--------------------------------------------------------|
+| CustomPaymentsGridColumnBase | public title(): string { }                                        | Set the title for the custom column.                   |
+|                              | public computeValue(cartLine: ProxyEntities.CartLine): string { } | Compute the value for the custom column.               |
+|                              | public alignment(): CustomGridColumnAlignment { }                 
+                                                                     
+  **Supported values:**                                              
+                                                                     
+  enum CustomGridColumnAlignment {                                                                                           
+  Left = 0,                                                                                                                
+  Right = 1                                                                                                                  
+  }                                                                  | Set the Left or right alignment for the custom column. |
+
+Custom columns in Delivery grid:
+
+| Base class                   | Events                                                            | Description                                            |
+|------------------------------|-------------------------------------------------------------------|--------------------------------------------------------|
+| CustomDeliveryGridColumnBase | public title(): string { }                                        | Set the title for the custom column.                   |
+|                              | public computeValue(cartLine: ProxyEntities.CartLine): string { } | Compute the value for the custom column.               |
+|                              | public alignment(): CustomGridColumnAlignment { }                 
+                                                                     
+  **Supported values:**                                                                                      
+  enum CustomGridColumnAlignment {                                                                                   
+  Left = 0,                                                                                                            
+  Right = 1                                                          
+                                                                     
+  }                                                                  | Set the Left or right alignment for the custom column. |
+
+
