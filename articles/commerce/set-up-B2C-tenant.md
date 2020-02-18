@@ -45,7 +45,7 @@ Dynamics 365 Commerce uses Azure AD B2C to support user credential and authentic
 
     ![Create a Resource in Azure Portal](./media/B2CImage_1.png)
 
-1. In the **Search the Marketplace** toolbar, search for "B2C." Or, navigate to **Identity \> Azure Active Directory B2C**.
+1. Go to to **Identity \> Azure Active Directory B2C**.
 1. Once on the **Create New B2C Tenant or Link to existing Tenant** page, use one of the options below that best suits your company's needs:
 
     - **Create a new Azure AD B2C Tenant**: Use this option to create a new AAD B2C tenant.
@@ -56,7 +56,7 @@ Dynamics 365 Commerce uses Azure AD B2C to support user credential and authentic
 
      ![Create a new Azure AD Tenant](./media/B2CImage_2.png)
 
-     - **Link an existing Azure AD B2C Tenant to my Azure subscription**: Use this option if you already have an AAD B2C tenant you want to link to.
+     - **Link an existing Azure AD B2C Tenant to my Azure subscription**: Use this option if you already have an Azure AD B2C tenant you want to link to.
         1. Select **Link an existing Azure AD B2C Tenant to my Azure subscription**.
         1. In the **Azure AD B2C Tenant** drop down menu, select the appropriate B2C tenant. If the message "No eligible B2C Tenants found" appears in the selection box, you do not have an existing eligible B2C tenant and will need to create a new one.
 
@@ -67,17 +67,16 @@ Dynamics 365 Commerce uses Azure AD B2C to support user credential and authentic
     ![Link to new AAD Directory](./media/B2CImage_4.png)
 
 > [!NOTE]
-> If you have multiple subscriptions within your Azure account or have set up the B2C tenant without linking to an active subscription, a **Troubleshoot** banner will direct you to link the tenant to a subscription.
+> If you have multiple subscriptions within your Azure account or have set up the B2C tenant without linking to an active subscription, a **Troubleshoot** banner will direct you to link the tenant to a subscription. Select the troubleshooting message and follow the instructions to resolve the subscription issues.
+
+The following image shows an example of an Azure AD B2C **Troubleshoot** banner.
 
 ![Warning showing directory has no Active Subscription](./media/B2CImage_5.png)
 
+<!--
 The link will provide the following options:
 
-[???]Image below needs to be converted to text[???]
-
 ![Options to link B2C Tenant to a Subscription](./media/B2CImage_6.png)
-
-[???]What is the purpose of the following procedure? Why is it an example?[???]
 
 For example, to switch directories to the location of your target Azure subscription, click on your account symbol and within the menu, select ‘Switch directory’
 
@@ -87,6 +86,8 @@ For example, to switch directories to the location of your target Azure subscrip
 1. Finalize the remaining required fields, selecting the ‘Subscription’, ‘Resource group’ (select or create new), and ‘Resource group location’ items.
 1. Select **Create** to create the link between the new B2C tenant and the existing Azure subscription.
 1. Navigate back to your B2C tenant (switch directory and return to your B2C directory).
+
+-->
 
 ## Create the B2C application
 
