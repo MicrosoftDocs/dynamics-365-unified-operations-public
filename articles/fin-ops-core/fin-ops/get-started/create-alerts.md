@@ -5,7 +5,7 @@ title: Create alert rules
 description: This topic provides information about alerts and explains how to create an alert rule so that you're notified about events such as a date that arrives or a specific change that occurs.
 author: tjvass
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 02/19/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -36,11 +36,11 @@ ms.dyn365.ops.version: Platform update 15
 
 Before you set up an alert rule, decide when or in what situations you want to receive alerts. When you know which event you want to be notified about, find the page where the data that causes that event appears. The event can be a date that arrives or a specific change that occurs. Therefore, you must find the page where the date is specified, or where the field that changes or the new record that is created appears. After you have this information, you can create the alert rule.
 
-When you create an alert rule, you define the criteria that must be met before an alert is triggered. You can think of criteria as a match between the occurrence of an event and the fulfillment of specific conditions. When an event occurs, the system starts to perform a check according to the conditions that are set up. 
+When you create an alert rule, you define the criteria that must be met before an alert is triggered. Criteria is basically the match between the occurrence of an event and the fulfillment of specific conditions. When an event occurs, the system starts to perform a check according to the conditions that are set up.
 
 ## Ensure the alert batch jobs are running
 
-The batch jobs for data change and due date alerts need to be running for the alert conditions to be processed and the notifications to be sent. The batch jobs can be run by going to **System administration** > **Periodic tasks** > **Alerts** and adding a new batch job for **Change based alerts** and/or **Due date alerts**. If a long and frequently running batch job is desired, then click **Recurrence** and set **No end date** with a **Recurrence pattern** of **Minutes** and a **Count** of **1**.
+The batch jobs for data change and due date alerts need to be running for the alert conditions to be processed and the notifications to be sent. To run batch jobs, go to **System administration** > **Periodic tasks** > **Alerts** and add a new batch job for **Change based alerts** and/or **Due date alerts**. If a long and frequently running batch job is needed, select **Recurrence** and set **No end date** with a **Recurrence pattern** of **Minutes** and a **Count** of **1**.
 
 ## Events
 
@@ -60,7 +60,7 @@ Changes that occur can be initiated by a user. For example, a user changes the d
 
 ## Conditions
 
-On the **Alert me for** FastTab of the **Create alert rule** dialog box, you can use conditions to control when you're alerted about events.
+On the **Alert me for** FastTab in the **Create alert rule** dialog box, you can use conditions to control when you're alerted about events.
 
 For example, you can specify that the system should alert you when the status of purchase orders changes, but only if the status matches a specific set of conditions. Specifically, you want to be alerted when the status of a purchase order is set to **Received**. This change in status is the event that triggers the alert.
 
@@ -83,7 +83,7 @@ On the **Alert me with** FastTab of the **Create alert rule** dialog box, you ca
 
 ## Alerts as business events
 
-Alerts can be sent externally using the business events framework. When creating an alert, set **Organization-wide** to **No** and set set **Send externally** to **Yes**. Once you have the alert triggering the business event, you can trigger a flow built in Power Automate using the **When a business event occurs** trigger on the Finance and Operations connector, or explicitly send the event to a business events endpoint via the **Business events catalog**.
+Alerts can be sent externally using the business events framework. When creating an alert, set **Organization-wide** to **No** and set **Send externally** to **Yes**. After you have the alert triggering the business event, you can trigger a flow built in Power Automate using the **When a business event occurs** trigger on the Finance and Operations connector, or explicitly send the event to a business events endpoint via the **Business events catalog**.
 
 ## Create an alert rule
 
@@ -92,7 +92,7 @@ Alerts can be sent externally using the business events framework. When creating
 2. On the Action Pane, on the **Options** tab, in the **Share** group, select **Create alert rule**.
 3. In the **Create alert rule** dialog box, in the **Field** field, select the field to monitor.
 4. In the **Event** field, select the type of event.
-5. On the **Alert me for** FastTab, select the desired option. If you want to send the alert as a business event, ensure that **Organization-wide** is set to No.
+5. On the **Alert me for** FastTab, select the desired option. If you want to send the alert as a business event, ensure that **Organization-wide** is set to **No**.
 6. If the alert rule should become inactive on a specific date, on the **Alert me until** FastTab, select an end date.
 7. On the **Alert me with** FastTab, in the **Subject** field, accept the default subject heading for the email message, or enter a new subject. The text is used as the subject heading for the email message that you receive when an alert is triggered. If you want to send the alert as a business event, set **Send externally** to **Yes**.
 8. In the **Message** field, enter an optional message. The text is used as the message that you receive when an alert is triggered.
