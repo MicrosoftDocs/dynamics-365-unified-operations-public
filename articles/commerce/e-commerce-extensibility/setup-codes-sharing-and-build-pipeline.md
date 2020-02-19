@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Setup code sharing and build pipeline
+title: Setup Azure DevOps code sharing and build pipeline
 description: This topic describes how to setup code sharing with Azure DevOps and a build pipeline for your Microsoft Dynamics 365 Commerce online extensibility code. 
 author: samjarawan
 manager: annbe
@@ -28,7 +28,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Add module configuration fields
+# Setup Azure DevOps code sharing and build pipeline
 
 [!include [banner](../includes/banner.md)]
 
