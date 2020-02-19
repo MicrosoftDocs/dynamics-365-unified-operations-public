@@ -29,6 +29,7 @@ ms.search.validFrom: 2020-02-07
 ms.dyn365.ops.version: Human Resources
 
 ---
+
 # What's new or changed in Dynamics 365 Human Resources (February 12, 2020)
 
 This article describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.2867. The numbers in parentheses in some headings refer to support numbers in Microsoft Dynamics Lifecycle Services (LCS).
@@ -74,3 +75,9 @@ A new Common Data Service solution will be available soon with the following cha
 | New **Payroll position detail** entity | **Payroll position detail** added |
 | New **Title** entity | **Title** added. The new **Title** entity will be included in the sync process between Human Resources and Common Data Service, but won't initially be referenced from **Job Position** or **Job** entities. |
 
+## See also
+
+[What's new or changed in Human Resources](hr-admin-whats-n32.md)</br>
+[Overview of Dynamics 365 Human Resources 2019 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Update process](hr-admin-setup-update-process.md)</br>
+[Manage features](hr-admin-manage-features.md)
