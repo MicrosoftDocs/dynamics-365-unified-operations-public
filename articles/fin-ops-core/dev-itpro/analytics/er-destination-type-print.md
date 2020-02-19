@@ -70,6 +70,11 @@ The **Printer** destination is implemented only for cloud deployments.
 > [!NOTE]
 > The **Convert to PDF** option doesn't have to be turned on when you configure the **Printer** destination. The PDF conversion for printing purposes will occur even if the option is turned off.
 
+Still, you need to turn on the **Convert to PDF** option if you want to print out an outbound document in Excel format using a particular [page orientation](electronic-reporting-destinations.md#SelectPdfPageOrientation).
+
+1. Set the **Convert to PDF** field to **Yes** to make the **Page orientation** option available.
+2. in the **Page orientation** field, select the desired page oritation.
+
 ## Additional resources
 
 - [Electronic reporting (ER) overview](general-electronic-reporting.md)
