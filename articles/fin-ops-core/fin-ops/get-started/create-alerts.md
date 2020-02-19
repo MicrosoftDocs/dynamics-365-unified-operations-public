@@ -36,7 +36,11 @@ ms.dyn365.ops.version: Platform update 15
 
 Before you set up an alert rule, decide when or in what situations you want to receive alerts. When you know which event you want to be notified about, find the page where the data that causes that event appears. The event can be a date that arrives or a specific change that occurs. Therefore, you must find the page where the date is specified, or where the field that changes or the new record that is created appears. After you have this information, you can create the alert rule.
 
-When you create an alert rule, you define the criteria that must be met before an alert is triggered. You can think of criteria as a match between the occurrence of an event and the fulfillment of specific conditions. When an event occurs, the system starts to perform a check according to the conditions that are set up.
+When you create an alert rule, you define the criteria that must be met before an alert is triggered. You can think of criteria as a match between the occurrence of an event and the fulfillment of specific conditions. When an event occurs, the system starts to perform a check according to the conditions that are set up. 
+
+## Ensure the alert batch jobs are running
+
+The batch jobs for data change and due date alerts need to be running for the alert conditions to be processed and the notifications to be sent. The batch jobs can be run by going to **System administration** > **Periodic tasks** > **Alerts** and adding a new batch job for **Change based alerts** and/or **Due date alerts**. If a long and frequently running batch job is desired, then click **Recurrence** and set **No end date** with a **Recurrence pattern** of **Minutes** and a **Count** of **1**.
 
 ## Events
 
@@ -75,16 +79,21 @@ On the **Alert me with** FastTab of the **Create alert rule** dialog box, you ca
 
 ## User ID
 
-On the **Alert me with** FastTab of the **Create alert rule** dialog box, you can specify which user should receive the alert messages. By default, your user ID is selected. This option is restricted to organization administrators.
+On the **Alert me with** FastTab of the **Create alert rule** dialog box, you can specify which user should receive the alert messages. By default, your user ID is selected. The ability to change the user receiving the alert is restricted to organization administrators.
+
+## Alerts as business events
+
+Alerts can be sent externally using the business events framework. When creating an alert, set **Organization-wide** to **No** and set set **Send externally** to **Yes**. Once you have the alert triggering the business event, you can trigger a flow built in Power Automate using the **When a business event occurs** trigger on the Finance and Operations connector, or explicitly send the event to a business events endpoint via the **Business events catalog**.
 
 ## Create an alert rule
 
+0. Ensure the alert batch jobs are running (see above).
 1. Open the page that contains the data to monitor.
 2. On the Action Pane, on the **Options** tab, in the **Share** group, select **Create alert rule**.
 3. In the **Create alert rule** dialog box, in the **Field** field, select the field to monitor.
 4. In the **Event** field, select the type of event.
-5. On the **Alert me for** FastTab, select an option.
+5. On the **Alert me for** FastTab, select the desired option. If you want to send the alert as a business event, ensure that **Organization-wide** is set to No.
 6. If the alert rule should become inactive on a specific date, on the **Alert me until** FastTab, select an end date.
-7. On the **Alert me with** FastTab, in the **Subject** field, accept the default subject heading for the email message, or enter a new subject. The text is used as the subject heading for the email message that you receive when an alert is triggered.
+7. On the **Alert me with** FastTab, in the **Subject** field, accept the default subject heading for the email message, or enter a new subject. The text is used as the subject heading for the email message that you receive when an alert is triggered. If you want to send the alert as a business event, set **Send externally** to **Yes**.
 8. In the **Message** field, enter an optional message. The text is used as the message that you receive when an alert is triggered.
 9. Select **OK** to save the settings and create the alert rule.
