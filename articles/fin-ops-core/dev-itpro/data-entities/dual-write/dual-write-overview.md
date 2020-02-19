@@ -42,7 +42,7 @@ Dual-write is an out-of-box infrastructure that provides near-real-time interact
 
 Dual-write provides tightly coupled, bidirectional integration between Finance and Operations apps and Common Data Service. Any data change in Finance and Operations apps causes writes to Common Data Service, and any data change in Common Data Service causes writes to Finance and Operations apps. This automated data flow provides an integrated user experience across the apps.
 
-![Data relationship between apps](media/dual-write-overview.png)
+![Data relationship between apps](media/dual-write-overview.jpg)
 
 Dual-write has two aspects: an *infrastructure* aspect and an *application* aspect.
 
