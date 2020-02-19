@@ -5,7 +5,7 @@ title: Container modules
 description: Container modules help you control the layout when you build complex modules or pages out of small component modules. 
 author: samjarawan
 manager: annbe
-ms.date: 02/07/2019
+ms.date: 02/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -51,7 +51,7 @@ There are two types of container modules: layout container modules and page cont
 
 Layout container modules are useful when you must make a complex module out of multiple simple modules, and you want to control the layout of those simple modules. For example, you can use a header layout container module that is made up of required or optional sub-modules, such as search, sign-in, and navigation modules. The purpose of the layout container is to provide an adaptive layout.
 
-See [Create a layout container module](create-layout-container.md) for more information.
+For more information, see [Create a layout container module](create-layout-container.md).
 
 ## Page container modules
 
@@ -59,7 +59,7 @@ Page container modules contain the core structure for page authoring. For exampl
 
 Like layout container modules, page container modules can define named slots that are exposed to template authors. Page authors can configure which modules go into each slot, and the rendering code for the container controls the layout of those slots. Configuration settings can also be exposed to page authors, so that they can do additional configuration of the layout.
 
-See [Create a page container module](create-page-containers.md) for more information.
+For more information, see [Create a page container module](create-page-containers.md).
 
 ## Additional resources
 
