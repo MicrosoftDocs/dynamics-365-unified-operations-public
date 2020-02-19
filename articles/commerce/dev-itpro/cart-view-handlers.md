@@ -107,7 +107,17 @@ export default class CartViewController extends CartView.CartExtensionViewContro
 }
 ```
 
-## Custom control: base classes for consuming cart view events in Cart view UI extensions
+## Base classes for consuming Cart view events in Cart view UI extensions
+
+There are several base classes for consuming events in the UI:
+
++ Custom controls
++ Custom fields in the Totals panel
++ Custom columns in Lines grid
++ Custom columns in Payment grid
++ Custom columns in Delivery grid
+
+## Custom control
 
 | Base class                | Events                                | Description                        |
 |---------------------------|---------------------------------------|------------------------------------|
@@ -126,7 +136,7 @@ export default class CartViewController extends CartView.CartExtensionViewContro
 |------------------------------------|---------------------------------------------------------|-----------------------------------------|
 | **CartViewTotalsPanelCustomFieldBase** | public computeValue(cart: ProxyEntities.Cart): string { }    | Compute the value for the custom field. |
 
-## Custom columns in Lines grid: base classes for consuming Cart view events in Cart view UI extensions:
+## Custom columns in Lines grid
 
 
 | Base class                | Events                                                           | Description                                            |
@@ -136,7 +146,7 @@ export default class CartViewController extends CartView.CartExtensionViewContro
 |                           | public alignment(): CustomGridColumnAlignment { }       **Supported values:** enum CustomGridColumnAlignment { Left = 0, Right = 1 }  | Set the Left or right alignment for the custom column. |
  
 
-## Custom columns in Payment grid: base classes for consuming Cart view events in Cart view UI extensions:
+## Custom columns in Payment grid
 
 -------------------------------
 
@@ -147,14 +157,14 @@ export default class CartViewController extends CartView.CartExtensionViewContro
 |                              | public alignment(): CustomGridColumnAlignment { } <br>**Supported values:** enum CustomGridColumnAlignment { Left = 0, Right = 1 }  | Set the Left or right alignment for the custom column. |
 
 
-## Custom columns in Delivery grid: base classes for consuming Cart view events in Cart view UI extensions:
+## Custom columns in Delivery grid
 
 
 | Base class                   | Events                                                            | Description                                            |
 |------------------------------|-------------------------------------------------------------------|--------------------------------------------------------|
 | **CustomDeliveryGridColumnBase** | public title(): string { }                                        | Set the title for the custom column.                   |
 |                              | public computeValue(cartLine: ProxyEntities.CartLine): string { } | Compute the value for the custom column.               |
-|                              | public alignment(): CustomGridColumnAlignment { }     <br>  **Supported values:** enum CustomGridColumnAlignment { Left = 0, Right = 1 }  | Set the Left or right alignment for the custom column. |
+|                              | public alignment(): CustomGridColumnAlignment { } <br>**Supported values:** enum CustomGridColumnAlignment { Left = 0, Right = 1 }  | Set the Left or right alignment for the custom column. |
 
 
 
