@@ -78,7 +78,7 @@ The aggregated on-hand for Warehouse 13 is *4 pcs. &minus; 8 pcs. = &minus;4 pcs
 
 In this case, the planning engine will assume on-hand is 0 pcs. and not &minus;4 pcs. for Warehouse 13.  
 
-The result will be a planned order of *25 pcs. &minus; 0 pcs. = 25 pcs.*, to refill from 0 pcs. to 25 pcs.
+The result will be a planned order of *25 pcs. &minus; 0 pcs. = 25 pcs.*, thereby refilling from 0 pcs. to 25 pcs.
 
 ## Related resources
 
