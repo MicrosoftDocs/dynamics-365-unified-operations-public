@@ -81,7 +81,7 @@ We plan to provide monthly updates of platform and application after Microsoft D
 
 ## Why wasn't my extensibility request accepted?
 
-Some extensibility requests break changes. Some of the more common potentially breaking requests are listed here along with potential workarounds. In addition, read [Creating extensions](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/extensibility/add-enum-value) to understand the existing platform extension capabilities and [Tips for logging extensibility requests](https://blogs.msdn.microsoft.com/mfp/2018/09/15/tips-for-logging-extensibility-requests/) to learn more about how to create solid requests if a capability doesn't exist in the latest release.
+Some extensibility requests break changes. Some of the more common potentially breaking requests are listed here along with potential workarounds. In addition, read [Creating extensions](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/extensibility/add-enum-value) to understand the existing platform extension capabilities and [Tips for logging extensibility requests](https://community.dynamics.com/365/financeandoperations/b/mfp/posts/tips-for-logging-extensibility-requests) to learn more about how to create solid requests if a capability doesn't exist in the latest release.
 
 ### Why can't EDT.StringSize be made extensible?
 
@@ -107,7 +107,7 @@ Some extensibility requests break changes. Some of the more common potentially b
 
 ### Why can't Security Privileges be made extensible?
 - Request: Make Security Privilege changeable via extension.
-- Problem: The ability to change the Security Privilege would result in breaking changes because this are the lowest level of security metadata.
+- Problem: The ability to change the Security Privilege would result in breaking changes because this is the lowest level of security metadata.
 - Workaround: Create a new Security Privilege if needed and use that.
 
 ### Why should I avoid calling and extending APIs that are marked with InternalUseOnlyAttribute?
