@@ -46,7 +46,10 @@ For more information about upcoming features or the update process for Human Res
 
 To see what's new or changed in each weekly release of Human Resources, see the following articles:
 
-[February 18, 2020](hr-whats-new-2020-02-18.md)[February 12, 2020](hr-whats-new-2020-02-12.md)[February 7, 2020](hr-whats-new-2020-02-07.md)[February 3, 2020](hr-whats-new-2020-02-03.md)
+[February 18, 2020](hr-whats-new-2020-02-18.md)</br>
+[February 12, 2020](hr-whats-new-2020-02-12.md)</br>
+[February 7, 2020](hr-whats-new-2020-02-07.md)</br>
+[February 3, 2020](hr-whats-new-2020-02-03.md)
 
 ## See also
 
