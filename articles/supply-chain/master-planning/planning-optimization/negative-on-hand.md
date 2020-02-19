@@ -53,13 +53,13 @@ Warehouse 13 is configured as follows:
 The lowest level of coverage dimensions is *warehouse* and we have the following on-hand quantities recorded at the *location* level:
 
 - **Site 1, Warehouse 13, Location 1**:  20 pcs.
-- **Site 1 Warehouse 13, Location 2**: -8 pcs.
+- **Site 1 Warehouse 13, Location 2**: &minus;8 pcs.
 
-The aggregated on-hand quantity for Warehouse 13 is *20 pcs. - 8 pcs. = 12 pcs*.
+The aggregated on-hand quantity for Warehouse 13 is *20 pcs. &minus; 8 pcs. = 12 pcs*.
 
 In this case, the planning engine will use an aggregated on-hand quantity of 12 pcs. for Warehouse 13.
 
-The result will be a planned order of *25 pcs - 12 pcs = 13 pcs*, thereby refilling from 12 pcs. to 25 pcs.
+The result will be a planned order of *25 pcs. &minus; 12 pcs. = 13 pcs.*, thereby refilling from 12 pcs. to 25 pcs.
 
 ## Example 2
 
@@ -72,13 +72,13 @@ Warehouse 13 is configured as follows:
 The lowest level of coverage dimensions is *warehouse* and we have the following on-hand quantities recorded at the *location* level:
 
 - **Site 1, Warehouse 13, Location 1**:  4 pcs.
-- **Site 1 Warehouse 13, Location 2**: -8 pcs.
+- **Site 1 Warehouse 13, Location 2**: &minus;8 pcs.
 
-The aggregated on-hand for Warehouse 13 is *4 pcs. - 8 pcs. = -4 pcs.* (less than zero).
+The aggregated on-hand for Warehouse 13 is *4 pcs. &minus; 8 pcs. = &minus;4 pcs.* (less than zero).
 
-In this case, the planning engine will assume on-hand is 0 pcs. and not -4 pcs. for Warehouse 13.  
+In this case, the planning engine will assume on-hand is 0 pcs. and not &minus;4 pcs. for Warehouse 13.  
 
-The result will be a planned order of *25 pcs. – 0 pcs. = 25 pcs.*, to refill from 0 pcs. to 25 pcs.
+The result will be a planned order of *25 pcs. &minus; 0 pcs. = 25 pcs.*, to refill from 0 pcs. to 25 pcs.
 
 ## Related resources
 
