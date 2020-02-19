@@ -74,11 +74,11 @@ You can also use this example as guidance for how to use this feature when worki
 
 1. Make the following settings for the new row:
 
-    - **Quality check template name** - Enter a name that identifies this policy.<br>(If you're preparing USMF sample data, then enter "Dock check".)
-    - **Acceptance policy** - <!-- KFM: Briefly what this setting is for -->Select one of the following (If you're preparing USMF sample data, then select "Prompt user".):
+    - **Quality check template name** - Enter a name that identifies this policy.<br>(if you're preparing USMF sample data, then enter "Dock check".)
+    - **Acceptance policy** - <!-- KFM: Briefly what this setting is for -->Select one of the following. (If you're preparing USMF sample data, then select "Prompt user".)
         - **Auto reject** - <!-- KFM: Briefly describe this option -->
         - **Prompt user** - <!-- KFM: Briefly describe this option -->
-    - **Quality processing policy** - <!-- KFM: Briefly what this setting is for -->Select one of the following (If you're preparing USMF sample data, then select "Create quality order".):
+    - **Quality processing policy** - <!-- KFM: Briefly what this setting is for -->Select one of the following. (If you're preparing USMF sample data, then select "Create quality order".)
         - **Create work only** - <!-- KFM: Briefly describe this option -->
         - **Create quality order** - <!-- KFM: Briefly describe this option -->
     - **Test group** - <!-- KFM: Briefly what this setting is for. Where do these values come from? What is "Destructive testing" for? --><br>(If you're preparing USMF sample data, then select "Enclosure".)
