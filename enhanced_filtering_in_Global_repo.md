@@ -30,19 +30,18 @@ ms.dyn365.ops.version: AX 10.0.9
 
 ---
 
-# Allow users to leverage enhanced filtering options to search configuration in the Global repository.
+# Enhanced filtering options for finding configurations in the Global repository
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
-
-Filtering capabilities for RCS Global repository have been improved to include the option to filter using the following: 
-- Country/region - ISO country codes and 
+This topic describes enhanced filtering capabilities for RCS Global repository, which have been improved to include the following filters: 
+- Country/region - ISO country codes  
 - Tags - for functional/feature area; Industry; Business document type 
 
-Filters can be applied, either singularly or multi-select, to allow the user to easily find specific or related configuration. 
-For example, if a user wants to find all configurable business documents related to 'vendor invoice' they can select this filter & apply to see all related configurations. 
-They can also overlay country/region code if they want to refine the search further by selecting country code & clicking apply filters.  
+You can apply filters, either individually or in groups, to find specific or related configurations. For example, to find all configurable business documents related to vendor invoices, you can select and apply the **Business document type** filter to see all related configurations. 
+
+You can also overlay a country/region code to further refine a search by selecting the country code & clicking **Apply filter**.  
 For example - Filtering section and options:
 
 [![Filter section for Global repository](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/417079-enhanced-filtering/RCS_Enhanced%20filter_section.JPG)](./media/ER-ExtLookup-Lookup1.gif)
@@ -51,7 +50,7 @@ Applied filtering on 'Business document type' = Vendor invoice:
 
 [![Applied filter for business document type](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/417079-enhanced-filtering/RCS_Enhanced%20filtering_Applied.JPG)](./media/ER-ExtLookup-Lookup1.gif)
 
-Filtered results can then be imported either individually or as a set by selecting the group of configuration & clicking 'import'.
+Filtered results can then be imported, either individually or as a set, by selecting the group of configurations, and then clicking **Import**.
 
 
 
