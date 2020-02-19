@@ -41,9 +41,9 @@ Platform update 32 is now available. For more information, see [What's new or ch
 
 The new **Worker** form now remembers  search values when you change the view options and apply changes.
 
-## Compensation anagement summary tiles in preview feature redirect to wrong form (401861)
+## Compensation management summary tiles in preview feature redirect to wrong form (401861)
 
-Fixed and variable compensation management tiles now disaplay the correct records when opening the new **Worker** form. Applies only when you've enabled the streamlined employee form preview feature in feature management.
+Fixed and variable compensation management tiles now display the correct records in the new **Worker** form. Applies only to the streamlined employee form preview feature. You can enable this preview feature in **Feature management**. For more information, see [Manage features](hr-admin-manage-features.md).
 
 ## Empty Status field for some leave request records in Common Data Service (414915)
 
@@ -51,9 +51,9 @@ This change corrects an issue in Common Data Service when the **Status** field i
 
 ## Skill gap analysis only possible for assigned job (411390)
 
-You can now perform a skill gap analysis on any job defined in Human Resources.
+You can now do a skill gap analysis on any job defined in Human Resources.
 
-## System currency is not syncing from Common Data Service to Human Resources in new environments (418011)
+## System currency doesn't sync from Common Data Service to Human Resources in new environments (418011)
 
 The system currency in Common Data Service can now sync to Human Resources.
 
@@ -67,19 +67,18 @@ The system currency in Common Data Service can now sync to Human Resources.
 
 ### Updated Common Data Service solution
 
-A new Common Data Service solution will soon be available with the following changes:
+A new Common Data Service solution will be available soon with the following changes:
 
 | Description | Change |
-| --- | --- |
-| **Job/Position** entity changes | <ul><li>**Compensation region** added</li><li>**Financial dimensions** added</li></ul> |
-| **Worker** entity changes | <ul><li>**Name sequence** added</li><li>**Works from home** added</li><li>**Language** added</li><li>**Seniority date** added</li><li>**Anniversary date** added</li><li>**Original hire date** added</li></ul> |
-| **Employment** entity changes | <ul><li>**Financial dimensions** added</li><li>**Termination reason** added</li><li>**Termination date** renamed from **Transition date**</li><li>**Probation date** added</li></ul> |
-| **Worker address** entity changes | <ul><li>**Street address** added</li><li>**Address line 1**, **Address line 2**, and **Address line 3** marked for deprecation</li></ul> |
-| New variable compensation setup entities | <ul><li>**Compensation variable plan type**</li><li>**Compensation variable plan**</li><li>**Vesting rules**</li><li>**Compensation variable plan level**</li></ul> |
-| New **Worker calendar employment** entity | <ul><li>**Work calendar entity** added</li></ul> |
-| New **Payroll position detail** entity | <ul><li>**Payroll position detail** added</li></ul> |
-| New **Title** entity | <ul><li>**Title** added</li></ul> |
-*The new "Title" entity will be included in the sync process between HR and CDS but will not initially be referenced from Job Position or Job entities.
+| ----------------------------------------- | --- |
+| **Job/Position** entity changes | **Compensation region** added</br>**Financial dimensions** added |
+| **Worker** entity changes | **Name sequence** added</br>**Works from home** added</br>**Language** added</br>**Seniority date** added</br>**Anniversary date** added</br>**Original hire date** added |
+| **Employment** entity changes | **Financial dimensions** added</br>**Termination reason** added</br>**Termination date** renamed from **Transition date**</br>**Probation date** added |
+| **Worker address** entity changes | **Street address** added</br>**Address line 1**, **Address line 2**, and **Address line 3** marked for deprecation |
+| New variable compensation setup entities | **Compensation variable plan type**</br>**Compensation variable plan**</br>**Vesting rules**</br>**Compensation variable plan level** |
+| New **Worker calendar employment** entity | **Work calendar entity** added |
+| New **Payroll position detail** entity | **Payroll position detail** added |
+| New **Title** entity | **Title** added. The new **Title** entity will be included in the sync process between Human Resources and Common Data Service. It won't be initially referenced from **Job Position** or **Job** entities. |
 
 ## See also
 
