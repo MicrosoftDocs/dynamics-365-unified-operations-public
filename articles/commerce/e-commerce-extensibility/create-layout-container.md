@@ -5,7 +5,7 @@ title: Create a layout container module
 description: This topic describes how to create, test, and preview a layout container module.
 author: samjarawan
 manager: annbe
-ms.date: 02/07/2020
+ms.date: 02/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -80,7 +80,7 @@ The following example shows the addition of a **slots** section that contains tw
 }
 ```
 
-The following example shows the module's React view file, campaignContainer.view.tsx, which uses the slots for the container.  Note this example uses a single React/View file and the campaignContainer.tsx can be deleted.
+The following example shows the module's React view file, campaignContainer.view.tsx, which uses the slots for the container. Note that this example uses a single React/View file, and that the campaignContainer.tsx can be deleted.
 
 ```typescript
 import * as React from 'react';
