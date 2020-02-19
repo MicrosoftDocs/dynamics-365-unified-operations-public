@@ -2,7 +2,7 @@
 # required metadata
 
 title: Refresh database
-description: This topic explains how to perform a refresh of a database for Microsoft Dynamics 365 Finance.
+description: This topic explains how to perform a point-in-time restore of a Production database to a Sandbox for Microsoft Dynamics 365 Finance.
 author: LaneSwenka
 manager: AnnBe
 ms.date: 08/15/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Refresh database
+# Point-in-time restore Prod to Sandbox
 
 [!include [banner](../includes/banner.md)]
 
-You can use Microsoft Dynamics Lifecycle Services (LCS) to perform a refresh of the database to a sandbox user acceptance testing (UAT) environment. A database refresh lets you copy the transactional and financial reporting databases of your production environment into the target, sandbox UAT environment. If you have another sandbox environment, you can also copy the databases from that environment to your target, sandbox UAT environment.
+You can use Microsoft Dynamics Lifecycle Services (LCS) to perform a point-in-time restore (PITR) of the Production database to a sandbox user acceptance testing (UAT) environment. Microsoft maintains [automated backups](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups) according to Microsoft Azure SQL defaults, up to a maximum of 30 days.  
 
 > [!IMPORTANT]
 > Copying production data to your sandbox environment for the purpose of production reporting is not supported.
@@ -43,16 +43,16 @@ You can use Microsoft Dynamics Lifecycle Services (LCS) to perform a refresh of 
 With the goal of providing Data Application Lifecycle Management (also referred to as *DataALM*) capabilities to our customers without relying on human or manual processes, the Lifecycle Services team has introduced an automated **Refresh database** action. This process is outlined below:
 
 1. Visit your target sandbox on the **Environment Details** page, and click the **Maintain** \> **Move database** menu option.
-2. Select the **Refresh database** option and choose your source environment.
-3. Note the warnings and review the list of data elements that are not copied from the source environment.
-4. The refresh operation will begin immediately.
+2. Select the **Point-in-time restore Prod to Sandbox** option and choose your desired point in time.
+3. Note the warnings and review the list of data elements that are not copied from the source environment's previous point in time.
+4. The restore operation will begin immediately.
 
-### Refresh operation failed
+### Restore operation failed
 In case of failure, the option to perform a rollback is available.  By clicking the **Rollback** option after the operation has initially failed, your target sandbox environment will be restored to the state it was before the refresh began. This is made possible by the Azure SQL point-in-time restore capability to restore the database. This is often required if a customization, that is present in the target sandbox, cannot complete a database synchronization with the newly refreshed data.
 
 To determine the root cause of the failure, use the available buttons to download the runbook logs before you start the rollback operation.  
 
-### Data elements that aren't copied during refresh
+### Data elements that aren't copied during restore copy
 When refreshing a production environment to a sandbox environment, or a sandbox environment to another sandbox environment, there are certain elements of the database that are not copied over to the target environment. These elements include:
 
 * Email addresses in the LogisticsElectronicAddress table.
@@ -75,7 +75,7 @@ If you have used the Admin User Provisioning Tool on your environment to change 
 
 An environment can't be refreshed from one tenant to another. This restriction applies even to .onmicrosoft.com tenants. You should make sure that the admin accounts in the source and target environments are from the same tenant domain.
 
-### Conditions of a database refresh
+### Conditions of a PITR copy of Production to Sandbox
 Here is the list of requirements and conditions of operation for a database refresh:
 
 - A refresh performs a delete on the original target database. 
@@ -90,12 +90,12 @@ Here is the list of requirements and conditions of operation for a database refr
 - The source environment's allocated database capacity must be smaller than the target environment's maximum database capacity.
 
 
-## Steps to complete after a database refresh for environments that use Commerce functionality
+## Steps to complete after a restore for environments that use Commerce functionality
 [!include [environment-reprovision](../includes/environment-reprovision.md)]
 
 ## Known issues
 
-### Refresh is denied for environments running Platform update 20 or earlier
+### Restore is denied for environments running Platform update 20 or earlier
 The database refresh process can't currently be completed if the environment is running Platform update 20 or earlier. For more information, see the [list of currently supported platform updates](../migration-upgrade/versions-update-policy.md).
 
 ### Incompatible version of Financial Reporting between source and target environments

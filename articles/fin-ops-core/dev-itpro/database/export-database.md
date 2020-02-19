@@ -50,14 +50,14 @@ When you export a database backup from an environment, some elements of the data
 
 * Email addresses in the LogisticsElectronicAddress table.
 * Batch job history in the BatchJobHistory, BatchHistory, and BatchConstraintHistory tables.
-* SMTP password in the SysEmailSMTPPassword table.
 * SMTP Relay server in the SysEmailParameters table.
 * Print Management settings in the PrintMgmtSettings and PrintMgmtDocInstance tables.
 * Environment-specific records in the SysServerConfig, SysServerSessions, SysCorpNetPrinters, SysClientSessions, BatchServerConfig, and BatchServerGroup tables.
 * Document attachments in the DocuValue table. These attachments include any Microsoft Office templates that were overwritten in the source environment.
-* Connection string in the PersonnellIntegrationConfiguration table
 * All users except the admin will be set to **Disabled** status.
 * All batch jobs are set to **Withhold** status.
+* All users will have their partition value reset to the "initial" partition record ID.
+* All Microsoft-encrypted fields will be cleared, as they cannot be decrypted on a different database server.  For example, the Password field in the SysEmailSMTPPassword table.
 
 ### Known issues
 

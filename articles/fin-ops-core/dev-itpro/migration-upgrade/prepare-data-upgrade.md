@@ -80,9 +80,7 @@ In AX 2012, users are authenticated against an on-premises Active Directory serv
 
    - Import users from a file. This option is faster. We recommend that you use this option when many users must be updated.
 
-     1. In a comma-separated values (CSV) file, create the mapping between AX 2012 users and Azure AD email addresses. Your IT department can export a similar mapping from your on-premises Active Directory Domain Services.
-
-         ![CSV file with a mapping of AX 2012 users to Azure AD email addresses](media/userToAzureADEmailAddressMapping.png)
+     1. In a comma-separated values (CSV) file, create the mapping between AX 2012 users and Azure AD email addresses. Your IT department can export a similar mapping from your on-premises Active Directory Domain Services.  The file should have 2 columns, for **UserId** and **EmailAddress**.  *The first row is treated as a header row and is ignored on the later import.*
 
      2. After the file is ready, click **Import from file**, browse to the file, and import it.
 

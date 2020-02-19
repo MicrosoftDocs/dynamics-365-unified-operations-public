@@ -58,8 +58,6 @@ If you have used the Admin User Provisioning Tool on your environment to change 
 ### Point-in-time restore breaks the chain of available restore points
 The restore database process always creates a new database based on a previous point-in-time snapshot.  Because of this, the new database does not have any restore history, but does begin to accrue new restore points going forward. This means that after performing point-in-time restore you will not be able to do so again using the same restore date and time.  
 
-Going forward, the Lifecycle Services team will work to improve point-in-time restore by leveraging the restore history of deleted databases.  This will allow continual restore back to the same point-in-time for scenarios such as destructive testing.  This will be fixed in an upcoming release of LCS.
-
 ### Restore is denied for environments running Platform update 3 or earlier
 The restore database process cannot be completed if the environment is running Platform update 3 or earlier. For more information, see the [list of currently supported Platform updates](..//migration-upgrade/versions-update-policy.md).
 
