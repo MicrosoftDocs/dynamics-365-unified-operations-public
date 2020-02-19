@@ -57,8 +57,8 @@ Async methods added in the Commerce API framework:
 | Class.Interface           | Method     | Description                                  |
 |---------------------------|------------|----------------------------------------------|
 | **SingleAsyncRequestHandler** | Task\<TResponse\> Process                     | Execute method to be overridden by each derived class.                    |
-|                               | Task<Response> Execute                         | Represents the entry point of the request handler.                     |
-| **IRequestHandlerAsync**      | Task<Response> Execute (Request request)   | The async request handler interface.                                       |
+|                               | Task\<Response\> Execute                         | Represents the entry point of the request handler.                     |
+| **IRequestHandlerAsync**      | Task\<Response\> Execute (Request request)   | The async request handler interface.                                       |
 | **IRequestTriggerAsync**      | Task OnExecuting(Request request)             | Invoked before request has been processed by **IRequestHandler**.      |
 |                               | Task OnExecuted(Request request, Response response) | Invoked after request has been processed by **IRequestHandler**. |
 
