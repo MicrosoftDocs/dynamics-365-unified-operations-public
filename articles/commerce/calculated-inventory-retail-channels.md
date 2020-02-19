@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Release 10.0.10
 
 This topic describes how a company can use Microsoft Dynamics 365 Commerce to view estimated on-hand availability for products in the online and store channels.
 
-## Accuracy of caluculation
+## Accuracy of calculation
 
 Commerce uses multiple servers and databases to ensure scalability and performance. Therefore, it's important that you understand that the available inventory values that are provided through the point of sale (POS) application, the e-Commerce inventory availability application programming interfaces (APIs), and the on-hand inventory pages in Commerce Headquarters might not be 100-percent accurate in real time. If transactions that are created for products in the online or store channel haven't yet been synced to the Commerce Headquarters server and database, the on-hand inventory pages in Commerce Headquarters might not show an accurate real-time inventory value for those products. Conversely, if you configured your company so that users in Commerce Headquarters or other integrated applications can sell, receive, return, or otherwise adjust inventory out of a store or online warehouse, the POS or online channel might not have all the information that is required to show an accurate real-time on-hand value for items.
 
