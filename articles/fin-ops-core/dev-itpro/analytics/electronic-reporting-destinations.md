@@ -163,6 +163,21 @@ To turn on PDF conversion for a file destination, select the **Convert to PDF** 
 
 [![Turning on PDF conversion for a file destination](./media/ER_Destinations-TurnOnPDFConversion.png)](./media/ER_Destinations-TurnOnPDFConversion.png)
 
+### <a name="SelectPdfPageOrientation">Select page orientation for PDF conversion</a>
+
+You can specify the desired page orientation for PDF conversion of an output in Excel format while you configure an ER destintion. When you turned on the **Convert to PDF** check box to enable PDF conversion for a file destination producing an output in Excel format, the **Page orientation** option becomes available in the **PDF conversion settings** Fast tab. Select the desired page oritation in the **Page orientation** field.
+
+[![Selecting page orientation for PDF conversion](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
+
+> [!NOTE]
+> To use page orientation selection, you must install Microsoft Dynamics 365 Finance version 10.0.10 (May 2020) or onward.
+
+> [!NOTE]
+> The selected page orientation is applied for conversion of all worksheets of an output in Excel format.
+
+> [!NOTE]
+> The page orientation for conversion of an output in Word format to PDF is taken from the convertible document.
+
 ## Security considerations
 
 Two types of privileges and duties are used for ER destinations. One type controls a user's overall ability to maintain the destinations that are configured for a legal entity (that is, it controls access to the **Electronic reporting destinations** page). The other type controls an application user's ability to override, at runtime, the destination settings that an ER developer or ER functional consultant has configured.
