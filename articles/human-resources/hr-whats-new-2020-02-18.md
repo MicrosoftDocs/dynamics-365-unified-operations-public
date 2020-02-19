@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 Human Resources (February 12, 2020)
+title: What's new or changed in Dynamics 365 Human Resources (February 18, 2020)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Human Resources.
 author: Darinkramer
 manager: AnnBe
-ms.date: 02/07/2020
+ms.date: 02/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-human-resources
@@ -25,42 +25,47 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: dkrame
-ms.search.validFrom: 2020-02-07
+ms.search.validFrom: 2020-02-18
 ms.dyn365.ops.version: Human Resources
 
 ---
+# What's new or changed in Dynamics 365 Human Resources (February 18, 2020)
 
-# What's new or changed in Dynamics 365 Human Resources (February 12, 2020)
+This article describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.2903. The numbers in parentheses in some headings refer to LCS support numbers for reference.
 
-This article describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.2867. The numbers in parentheses in some headings refer to support numbers in Microsoft Dynamics Lifecycle Services (LCS).
+## Platform update 32 
 
-## Existing entities CompFixedEmpls and HcmPersonImage should be accessible from OData (414178)
+Platform update 32 is now available. For more information, see [What's new or changed in Platform update 32 for Finance and Operations (February 2020)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32).
 
-With this week's release, the **CompFixedEmpls** and **HcmPersonImage** entities are now public and available via ODAta.
+## Search values are remembered when changing view options in streamlined employee form (383833)
 
-## Delete employment from Common Data Service doesn't work when employment details aren't active (403193)
+The new **Worker** form now remembers  search values when you change the view options and apply changes.
 
-This change now allows for deleting employment via Common Data Service when no active employment details exist.
+## Compensation management summary tiles in preview feature redirect to wrong form (401861)
 
-## Course registration workflow changes status to complete and errors after second approval (409749)
+Fixed and variable compensation management tiles now display the correct records in the new **Worker** form. Applies only to the streamlined employee form preview feature. You can enable this preview feature in **Feature management**. For more information, see [Manage features](hr-admin-manage-features.md).
 
-Course registration workflow has been updated to allow for multiple approvers.
+## Empty Status field for some leave request records in Common Data Service (414915)
+
+This change corrects an issue in Common Data Service when the **Status** field in a leave request is set to **Review**. Common Data Service now reflects the status.
+
+## Skill gap analysis only possible for assigned job (411390)
+
+You can now do a skill gap analysis on any job defined in Human Resources.
+
+## System currency doesn't sync from Common Data Service to Human Resources in new environments (418011)
+
+The system currency in Common Data Service can now sync to Human Resources.
 
 ## In preview
 
-The following preview features are available on February 3, 2020:
+- [Leave and absence preview features](hr-leave-and-absence-overview.md?leave-and-absence-preview-features)
 
-- **Leave and absence preview features** - For more information, see [Leave and absence preview features](hr-leave-and-absence-overview.md?leave-and-absence-preview-features).
-
-- **Benefits management preview feature** - For more information, including known issues, see [Benefits management overview](hr-benefits-management-overview.md).
+- [Benefits management preview features](hr-benefits-management-overview.md)
 
 ## Coming soon
 
-### Platform update 32 
-
-Platform update 32 will be available soon. [Find out more information about Platform update 32 here](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32).
-
-### Updated Common Data Service Solution
+### Updated Common Data Service solution
 
 A new Common Data Service solution will be available soon with the following changes:
 
