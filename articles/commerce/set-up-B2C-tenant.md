@@ -196,7 +196,7 @@ To create a profile editing user flow policy, follow these steps.
 1. On the **Recommended** tab, select **Profile editing**.
 1. Under **Name**, enter a or the profile editing user flow. This name will display afterwards with a prefix the portal assigns (for example, "B2C_1_").
 1. Under **Identity providers**, select **Local Account SignIn**.
-1. Under **User attributes**, select the following:
+1. Under **User attributes**, select the following check boxes:
     - **Email Addresses** (**Return claim** only)
     - **Given Name** (**Collect attribute** and **Return claim**)
     - **Identity Provider** (**Return claim** only)
