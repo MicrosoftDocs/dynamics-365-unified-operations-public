@@ -144,7 +144,7 @@ export default class CartViewController extends CartView.CartExtensionViewContro
 |------------------------------|-------------------------------------------------------------------|--------------------------------------------------------|
 | **CustomPaymentsGridColumnBase** | public title(): string { }                                        | Set the title for the custom column.                   |
 |                              | public computeValue(cartLine: ProxyEntities.CartLine): string { } | Compute the value for the custom column.               |
-|                              | public alignment(): CustomGridColumnAlignment { }       **Supported values:** enum CustomGridColumnAlignment { Left = 0, Right = 1 }  | Set the Left or right alignment for the custom column. |
+|                              | public alignment(): CustomGridColumnAlignment { } <br>**Supported values:** enum CustomGridColumnAlignment { Left = 0, Right = 1 }  | Set the Left or right alignment for the custom column. |
 
 
 ## Custom columns in Delivery grid: base classes for consuming Cart view events in Cart view UI extensions:
@@ -154,7 +154,7 @@ export default class CartViewController extends CartView.CartExtensionViewContro
 |------------------------------|-------------------------------------------------------------------|--------------------------------------------------------|
 | **CustomDeliveryGridColumnBase** | public title(): string { }                                        | Set the title for the custom column.                   |
 |                              | public computeValue(cartLine: ProxyEntities.CartLine): string { } | Compute the value for the custom column.               |
-|                              | public alignment(): CustomGridColumnAlignment { }       **Supported values:** enum CustomGridColumnAlignment { Left = 0, Right = 1 }  | Set the Left or right alignment for the custom column. |
+|                              | public alignment(): CustomGridColumnAlignment { }     <br>  **Supported values:** enum CustomGridColumnAlignment { Left = 0, Right = 1 }  | Set the Left or right alignment for the custom column. |
 
 
 
