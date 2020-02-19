@@ -30,7 +30,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Configure theme settings
 
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 This topic describes how to configure theme settings in Microsoft Dynamics 365 Commerce.
