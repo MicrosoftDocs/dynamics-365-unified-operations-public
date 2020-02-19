@@ -5,7 +5,7 @@ title: Module React component file
 description: This topic provides information about the module React component file in Microsoft Dynamics 365 Commerce. 
 author: samjarawan
 manager: annbe
-ms.date: 01/31/2020
+ms.date: 02/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
