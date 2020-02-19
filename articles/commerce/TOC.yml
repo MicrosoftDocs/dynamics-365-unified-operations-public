@@ -634,6 +634,8 @@
             href: pos-inbound-inventory-operation.md
           - name: Outbound inventory operation in POS
             href: pos-outbound-inventory-operation.md
+          - name: Calculate inventory availability for retail channels
+            href: calculated-inventory-retail-channels.md
         - name: Purchase orders	  
           items:
           - name: Purchase order overview
