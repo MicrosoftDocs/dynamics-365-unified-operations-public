@@ -5,7 +5,7 @@ title: Module definition file
 description: This topic covers the module definition file in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 01/31/2020
+ms.date: 02/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -141,7 +141,7 @@ The following example shows a module definition file that includes data action r
 Each data action is declared with its name and the following properties:
 
 * **"path"** – The path of the data action. The path can be a local path or the path of a core action included in the SDK (for example, **"@msdyn365-commerce-modules/retail-actions/dist/lib/get-selected-variant"**).
-* **"runOn"** – A setting that controls where the data action is run. Valid values are **server** or **client**.  The default if not specified is to run server side.
+* **"runOn"** – A setting that controls where the data action is run. Valid values are **server** or **client**.  If no value is specified, the default value is **server**.
 
 In the above example, after the data action is registered, the module automatically runs it on the server, and binds the result to the **testResult** property which should be defined in the module's data.ts file.
 
