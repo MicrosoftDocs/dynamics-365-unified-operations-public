@@ -36,38 +36,28 @@ ms.dyn365.ops.version: 10.0.10
 
 This topic explains how extensions can consume the POS view events and handlers for custom scenarios. For example, the Cart view in POS exposes multiple events and handlers so that your extensions can perform custom business flows based on events. The extensions can subscribe to an event and receive notification when the that event occurs.
 
-## Cart view
+## Cart view event handlers
 
-The base class to consume the cart view handlers is **CartViewController**.
+The base class to consume the cart view handlers is **CartExtensionViewControllerBase**.
 
-```csharp
+```typescript
 export default class CartViewController extends CartView.CartExtensionViewControllerBase {
 }
 ```
 
 | Base class       | Events/Handlers            | Description                                                       |
-|---------------------------------|-------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
-| CartExtensionViewControllerBase | cartLineSelectedHandler: (data: CartLineSelectedData) =&gt; void;                         | The handler for the cart line selected message.                   |
-|                                 | cartLineSelectionClearedHandler: () =&gt; void;                                           | The handler for the cart line selection cleared message.          |
-|                                 | tenderLineSelectedHandler: (data: TenderLineSelectedData) =&gt; void;                     | The handler for the tender line selected message.                 |
-|                                 | protected tenderLineSelectionClearedHandler: () =&gt; void;                               | The handler for the tender line selection cleared message.        |
-|                                 | protected cartChangedHandler: (data: CartChangedData) =&gt; void;                         | The handler for the cart changed message.                         |
-|                                 | protected processingAddItemOrCustomerChangedHandler: (processing: boolean) =&gt; void;    | The handler for adding item or customer processing state message. |
-|                                 | protected setSelectedCartLines(setSelectedCartLinesData: SetSelectedCartLinesData): void; | Selects the cart lines shown on the page.                         |
+|------------------|----------------------------|-------------------------------------------------------------------|
+| **CartExtensionViewControllerBase** | cartLineSelectedHandler: (data: CartLineSelectedData) =\> void;     | The handler for the cart line selected message.   |
+|                                     | cartLineSelectionClearedHandler: () =\> void;                       | The handler for the cart line selection cleared message.          |
+|                                     | tenderLineSelectedHandler: (data: TenderLineSelectedData) =\> void; | The handler for the tender line selected message.                 |
+|                                     | protected tenderLineSelectionClearedHandler: () =\> void;           | The handler for the tender line selection cleared message.        |
+|                                     | protected cartChangedHandler: (data: CartChangedData) =\> void;     | The handler for the cart changed message.                         |
+|                                     | protected processingAddItemOrCustomerChangedHandler: (processing: boolean) =\> void;    | The handler for adding item or customer processing state message. |
+|                                     | protected setSelectedCartLines(setSelectedCartLinesData: SetSelectedCartLinesData): void; | Selects the cart lines shown on the page.                     |
 
-**Sample code to consume the cart view events:**
+The following code example shows how to consume Cart view events.
 
-```Typescript
-
-/**
- * SAMPLE CODE NOTICE
- * 
- * THIS SAMPLE CODE IS MADE AVAILABLE AS IS.  MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
- * OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.
- * THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
- * NO TECHNICAL SUPPORT IS PROVIDED.  YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
- */
-
+```typescript
 import { ProxyEntities } from "PosApi/Entities";
 import { IExtensionCartViewControllerContext } from "PosApi/Extend/Views/CartView";
 import * as CartView from "PosApi/Extend/Views/CartView";
@@ -116,55 +106,53 @@ export default class CartViewController extends CartView.CartExtensionViewContro
     }
 }
 ```
-Base classes for consuming cart view events in cart view UI extensions:
-=======================================================================
 
-Custom control:
----------------
+## Custom control: base classes for consuming cart view events in Cart view UI extensions
 
-| Base class                | Events                                                                                    | Description                                                       |
-|---------------------------|-------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
-| CartViewCustomControlBase | cartLineSelectedHandler: (data: CartLineSelectedData) =&gt; void;                         | The handler for the cart line selected message.                   |
-|                           | cartLineSelectionClearedHandler: () =&gt; void;                                           | The handler for the cart line selection cleared message.          |
-|                           | tenderLineSelectedHandler: (data: TenderLineSelectedData) =&gt; void;                     | The handler for the tender line selected message.                 |
-|                           | protected tenderLineSelectionClearedHandler: () =&gt; void;                               | The handler for the tender line selection cleared message.        |
-|                           | protected cartChangedHandler: (data: CartChangedData) =&gt; void;                         | The handler for the cart changed message.                         |
-|                           | protected processingAddItemOrCustomerChangedHandler: (processing: boolean) =&gt; void;    | The handler for adding item or customer processing state message. |
+| Base class                | Events                                | Description                        |
+|---------------------------|---------------------------------------|------------------------------------|
+| **CartViewCustomControlBase** | cartLineSelectedHandler: (data: CartLineSelectedData) =\> void;                         | The handler for the cart line selected message.                   |
+|                           | cartLineSelectionClearedHandler: () =\> void;                                           | The handler for the cart line selection cleared message.          |
+|                           | tenderLineSelectedHandler: (data: TenderLineSelectedData) =\> void;                     | The handler for the tender line selected message.                 |
+|                           | protected tenderLineSelectionClearedHandler: () =\> void;                               | The handler for the tender line selection cleared message.        |
+|                           | protected cartChangedHandler: (data: CartChangedData) =\> void;                         | The handler for the cart changed message.                         |
+|                           | protected processingAddItemOrCustomerChangedHandler: (processing: boolean) =\> void;    | The handler for adding item or customer processing state message. |
 |                           | protected setSelectedCartLines(setSelectedCartLinesData: SetSelectedCartLinesData): void; | Selects the cart lines shown on the page.                         |
 
-Custom fields in Totals panel:
-------------------------------
+## Custom fields in Totals panel: base classes for consuming Cart view events in Cart view UI extensions
+
 
 | Base class                         | Events                                                  | Description                             |
 |------------------------------------|---------------------------------------------------------|-----------------------------------------|
-| CartViewTotalsPanelCustomFieldBase | public computeValue(cart: ProxyEntities.Cart): string { }    | Compute the value for the custom field. |
+| **CartViewTotalsPanelCustomFieldBase** | public computeValue(cart: ProxyEntities.Cart): string { }    | Compute the value for the custom field. |
 
-Custom columns in Lines grid:
------------------------------
+## Custom columns in Lines grid: base classes for consuming Cart view events in Cart view UI extensions:
+
 
 | Base class                | Events                                                           | Description                                            |
 |---------------------------|------------------------------------------------------------------|--------------------------------------------------------|
-| CustomLinesGridColumnBase | public title(): string {   }            | Set the title for the custom column.                   |
+| **CustomLinesGridColumnBase** | public title(): string {   }            | Set the title for the custom column.                   |
 |                           | public computeValue(cartLine: ProxyEntities.CartLine): string {} | Compute the value for the custom column.               |
 |                           | public alignment(): CustomGridColumnAlignment { }       **Supported values:** enum CustomGridColumnAlignment { Left = 0, Right = 1 }  | Set the Left or right alignment for the custom column. |
  
 
-Custom columns in Payment grid:
+## Custom columns in Payment grid: base classes for consuming Cart view events in Cart view UI extensions:
+
 -------------------------------
 
 | Base class                   | Events                                                            | Description                                            |
 |------------------------------|-------------------------------------------------------------------|--------------------------------------------------------|
-| CustomPaymentsGridColumnBase | public title(): string { }                                        | Set the title for the custom column.                   |
+| **CustomPaymentsGridColumnBase** | public title(): string { }                                        | Set the title for the custom column.                   |
 |                              | public computeValue(cartLine: ProxyEntities.CartLine): string { } | Compute the value for the custom column.               |
 |                              | public alignment(): CustomGridColumnAlignment { }       **Supported values:** enum CustomGridColumnAlignment { Left = 0, Right = 1 }  | Set the Left or right alignment for the custom column. |
 
 
-Custom columns in Delivery grid:
-------------------------------
+## Custom columns in Delivery grid: base classes for consuming Cart view events in Cart view UI extensions:
+
 
 | Base class                   | Events                                                            | Description                                            |
 |------------------------------|-------------------------------------------------------------------|--------------------------------------------------------|
-| CustomDeliveryGridColumnBase | public title(): string { }                                        | Set the title for the custom column.                   |
+| **CustomDeliveryGridColumnBase** | public title(): string { }                                        | Set the title for the custom column.                   |
 |                              | public computeValue(cartLine: ProxyEntities.CartLine): string { } | Compute the value for the custom column.               |
 |                              | public alignment(): CustomGridColumnAlignment { }       **Supported values:** enum CustomGridColumnAlignment { Left = 0, Right = 1 }  | Set the Left or right alignment for the custom column. |
 
