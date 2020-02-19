@@ -73,4 +73,8 @@ You can delete database logs. You can select all logs for a particular table, sp
 
   ## Consistency Check for database log triggers
 
+As of **Platform Update 34** a consistency check functionality has been added, it is executed as part of the Database log wizard and will be executed once you click the finish button or through a consistency check button in the Database log setup form which will recreate any missing database log trigger and drop any orphaned database log trigger for which no corresponding configuration is found.
+The new consistency check functionality will allow to quickly detect and fix any inconsistency between the current configuration and the database triggers used to implement the logging functionality.
 
+
+1.  Click **System administration** \> **Inquiries** \> **Database** \> **Database log**. Click **Consistency check**.
