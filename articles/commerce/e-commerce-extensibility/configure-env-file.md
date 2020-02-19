@@ -5,7 +5,7 @@ title: Configure a development environment (.env) file
 description: This topic describes how to configure the development environment (.env) file that is used in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 02/20/2019
+ms.date: 02/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
