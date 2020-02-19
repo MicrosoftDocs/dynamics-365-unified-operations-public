@@ -203,8 +203,6 @@ You can choose tables and Entities to be staged in the Azure Data Lake using the
 same UI. Launch the UI by navigating to **System Administration \> Export to
 Azure Data Lake** menu
 
- 
-
 Choose **Configure Data feeds for export to Lake** option. You will see the form
 that enables choosing data.
 
@@ -212,7 +210,7 @@ Choose tables tab lets to choose data tables to be staged in the Azure Data
 Lake. You can search for tables either using the display name or the system
 name. You can also see if the table is already being synced.
 
- 
+You can choose one or more tables and select the **Add tables** option. The tables will be added to Azure Data Lake.
 
 ![Choose Tables](./media/Export-Tables-toData-lake-unselected.png)
 
@@ -228,7 +226,7 @@ Data Lake.
 
 ![Choose using Entities](./media/Export-Entities-toData-lake-unselected.png)
 
- 
+Simlar to adding tables, you can choose one or more Entities  
 
 Monitor Tables in Data Lake
 ---------------------------
