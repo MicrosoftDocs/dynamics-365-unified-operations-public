@@ -5,7 +5,7 @@ title: Configure a development environment (.env) file
 description: This topic describes how to configure the development environment (.env) file that is used in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 02/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -67,7 +67,7 @@ PORT=4000
 MSDyn365_HOST=
 
 # MSDyn365Commerce_BASEURL variable defines the URL of the Microsoft Dynamics 365 Retail Server. 
-#   When this variable is set, local development and testing can be done against Dynamics 365 Retail 
+#   When this variable is set, local development and testing can be done against Dynamics 365 Retail Server
 #   application programming interfaces (APIs). If you set this variable, you must also set the 
 #   MSDyn365Commerce_CHANNELID, MSDyn365Commerce_OUN, and MSDyn365Commerce_CATALOGID variables.
 # MSDyn365Commerce_OUN variable defines the operating unit number for the channel.
