@@ -144,7 +144,9 @@
             href: data-entities/data-integration-cds.md
           - name: Synchronous, bidirectional integration
             items: 
-            - name: Near-real time data integration
+            - name: Dual-write home page
+              href: data-entities/dual-write/dual-write-home-page.md
+            - name: Dual-write overview
               href: data-entities/dual-write/dual-write-overview.md
             - name: Organization hierarchy on Common Data Service
               href: data-entities/dual-write/organization-mapping.md
