@@ -40,7 +40,7 @@ Dynamics 365 Commerce lets you apply a theme to your whole online site, individu
 
 Themes include Sassy Cascading Style Sheets (SCSS) files that you can use to format your site pages and modules. They can optionally also contain module view and definition extensions, so that modules can render different views, depending on the theme that is selected. 
 
-After a theme is created and uploaded to your production site, you can use the Site Builder tool to set the theme for the site. You can set the site's theme in a template, in a layout, or on a single page. When an online page is rendered, the appropriate theme is applied, so that all the modules on that page have a consistent look and feel. The Site Builder tool also lets you upload additional CSS overrides. In that way, you can make changes on top of the selected theme.
+After a theme is created and uploaded to your production site, you can use the site builder tool to set the theme for the site. You can set the site's theme in a template, in a layout, or on a single page. When an online page is rendered, the appropriate theme is applied, so that all the modules on that page have a consistent look and feel. The site builder tool also lets you upload additional CSS overrides. In that way, you can make changes on top of the selected theme.
 
 The following illustration shows how a theme is selected for a page in Dynamics 365 Commerce. Notice that the page container (**Default page**) is selected, and the **Theme** field for the page appears in the properties pane on the right.
 
@@ -48,12 +48,17 @@ The following illustration shows how a theme is selected for a page in Dynamics 
 
 A theme can be set on the master page in a similar manner. In this case, the theme is applied to all pages that are derived from the master page. Note that if the **locked** property is turned off, individual pages can override the theme.
 
+## General instructions to create a custom theme
+•	Create a new theme using the CLI command “yarn msdyn365 add-theme NEW_THEME_NAME” which will create a theme in the “/src/themes/” folder.
+•	Under the styles directory you will find the SCSS entry point file for the theme which uses name pattern “THEME_NAME.theme.scss”.  
+•	Themes are created as special modules and contain a definition file which includes the theme friendly name and description, as well as a template react component.
+•	There is no limit to the number of “.scss” files your theme may contain.
+•	Your theme entry point may import other “.scss” files using relative paths.
+
 ## Best practices
 
-- There is no limit to the number of SCSS files that your theme can contain.
-- Your theme entry point can import other SCSS files by using relative paths.
 - Starter kit modules are built by using Bootstrap 4 classes. Therefore, we recommend that every theme include either Bootstrap 4 or Bootstrap 4 RTL as the  SCSS framework.
-- If you want to take advantage of starter kit modules that are built by using Font Awesome glyph icons, **font-awesome** should be included in the SCSS file. The following example shows how to include **font-awesome** in an SCSS file.
+- If you want to take advantage of starter kit modules that are built by using Font Awesome glyph icons, **font-awesome** should be included in the SCSS file. The following example shows how to include **Bootstrap** and **font-awesome** in an SCSS file.
 
 
     ```css
@@ -61,20 +66,6 @@ A theme can be set on the master page in a similar manner. In this case, the the
     @import "bootstrap/scss/bootstrap";
     ...
     ```
-
-## Consume SCSS files that are distributed by using Node Package Manager
-
-Some dependencies, such as Bootstrap and Font Awesome, are distributed by using Node Package Manager (npm) packages. If these dependencies are used in your SCSS file, they must also be referenced in the packages.json file for your software development kit (SDK).
-
-To meet this requirement, edit the **packages.json** file in the root folder of the SDK, and add references for the dependencies. In the following example, a reference has been added for the Bootstrap dependency.
-
-```css
-"dependencies": {
-    …
-    "bootstrap": "^4.3.1",
-    …
-}
-```
 
 ## Recommended structure for a custom theme
 
