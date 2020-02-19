@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create Async Commerce (CRT) APIs in your business logic
+title: Create async Commerce (CRT) APIs in your business logic
 description: This topic describes how to create commerce (CRT) APIs (requests) to execute asynchronously.
 author: mugunthanm
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.10
 
 ---
 
-# Create Async Commerce (CRT) APIs in your business logic
+# Create async Commerce (CRT) APIs in your business logic
 
 [!include [banner](../../includes/banner.md)]
 
