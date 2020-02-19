@@ -531,6 +531,8 @@
           href: cost-management/costing-sheets.md
         - name: Simulate cost changes by using a costing version for planned costs
           href: cost-management/simulate-cost-changes-costing-version-planned-costs.md
+        - name: Compare item prices storage report
+          href: cost-management/compare-item-price.md
       - name: Inventory accounting
         items:
         - name: Cost objects
