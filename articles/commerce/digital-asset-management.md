@@ -5,8 +5,8 @@
 title: Digital asset management
 description: This topic describes the digital asset management capabilities of the Microsoft Dynamics 365 Commerce product.
 author: psimolin
-manager: brendans
-ms.date: 01/22/2020
+manager: annbe
+ms.date: 02/24/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -32,18 +32,30 @@ ms.dyn365.ops.version:
 
 # Asset management overview
 
-The e-Commerce feature of the Microsoft Dynamics 365 Commerce product offers rich digital asset management functionality.
-* Support for image assets
-* Support for video assets
-* Support for other type of binary assets such as PDF- and Office-documents
-* Support for localized images
-* Support for folder uploads
-* Support for custom cropping of image assets
-* Support for omni-channel image assets (product, product variants, catalog, category, worker and customer images)
+[!include [banner](../includes/banner.md)]
 
-Digital assets are channel-specific with the exception of omni-channel assets which are e-Commerce environment wide by default. Digital assets and the management features can be located from under the "Assets"-tab within a site.
+This topic describes the digital asset management capabilities of the Microsoft Dynamics 365 Commerce product.
 
-## How to upload an image
+## Overview
+
+Dynamics 365 Commerce features rich digital asset management functionality, including support for the following:
+- Image assets
+- Video assets
+- Other type of binary assets such as PDF- and Office-documents
+- Localized images
+- Folder uploads
+- Custom cropping of image assets
+- Omni-channel image assets (product, product variants, catalog, category, worker and customer images)
+
+Digital assets are channel-specific, with the exception of omni-channel assets which are e-commerce environment-wide by default. Digital assets and the management features are located under **Assets** in the left navigation pane within a site.
+
+## Upload images
+
+
+### Upload an image
+
+To bulk upload a folder of images, follow these steps.
+
 To upload an image, first navigate to the "Assets"-tab. Assets for selected site, channel and locale are shown in the middle pane.
 
 ![Assets tab](./media/dam-screenshot1.png)
@@ -74,9 +86,10 @@ After the upload completes, you will see the images appear in the middle pane an
 
 Note: You should always upload the version of the image with highest resolution and quality. The image resizer component will automatically optimize the image for different viewports/breakpoints.
 
-## How to upload a folder of images
+### Upload a folder of images
 
-In order to bulk upload a folder of images, perform the following steps:
+To bulk upload a folder of images, follow these steps.
+
 1. Navigate to the "Assets"-tab of the site
 1. Click "Upload" from the action bar, then choose "Upload folder"
 1. Select the folder you want to upload, then click "Upload"
@@ -85,7 +98,7 @@ In order to bulk upload a folder of images, perform the following steps:
 1. Folder upload will start and you will be shown a progress bar while waiting
 1. After upload has finished, you are sent back to the "Assets"-view
 
-## Omni-channel image naming
+### Naming conventions for omni-channel images 
 
 If you have configured the DAM as the omni-channel image backend, you can use image categories to indicate which category the uploaded image belongs to. There is also a naming convention that needs to be followed to make sure that images are retrieved correctly by other channels (such as POS).
 
@@ -100,7 +113,7 @@ The default naming convention varies based on the category:
 
 Note: Image assets with category are also automatically tagged with the category as keyword to allow searching for assets of specific category
 
-# How to upload a video
+## Upload a video
 
 Uploading a video follows almost the same steps as uploading an image.
 
@@ -124,7 +137,7 @@ If single video is being uploaded, you will be able to specify the following inf
 
 Note: You should always upload the version of the video with highest bitrate and resolution. The video will be converted automatically to be suitable for different viewports/breakpoints.
 
-# Uploading other binaries
+## Upload other binary assets
 
 Digital asset management also supports other types of binary assets. For example, you might want to upload a PDF-, Excel-, Word- or PowerPoint-document.
 
@@ -142,12 +155,16 @@ The upload process is similar to image and video assets.
 List is allowed document types
 * JPG, JPEG, PNG, GIF, MP4, MPG, MPEG, AVI, WMV, DOC, DOCX, ODT, PDF, RTF, TXT, XLS, XLSX, ODS, PPT, PPTX, ODP, INDD, PS, QXP, EPUB, MP3, TGZ, JAR, RAR, TAR, ZIP, 7Z, SVG, JS, XML, CSS, CS
 
-# Defining custom focal point and custom cropping for an image
+# Define custom focal point and custom cropping for an image
 
 When an image is uploaded to the DAM, the system attempts to determine the focal point of the image. For example, if the image has a person on it, the system will set the focal point to the face of the person by default. In most cases the automatically set focal point and cropping works very well for all viewports. Occasionally you might want to adjust the focal point or define custom crop for an image to ensure that specific part of the image is always visible or if the image needs to be cropped in a certain special way.
 
 In order to manually set a focal point or define custom cropping for specific module and viewport, you need to follow these steps:
-### Focal point
+
+### Define a custom focal point for an image
+
+To define a custom focal point for an image, follow these steps.
+
 1. Make sure you have the "Assets"-tab selected
 1. Select the image asset you want to modify
 1. Make sure the image asset is checked out to you. Check out if necessary by clicking "Check Out"
@@ -160,7 +177,10 @@ In order to manually set a focal point or define custom cropping for specific mo
 
 ![Focal point](./media/dam-screenshot6.png)
 
-### Custom cropping
+### Define custom cropping for an image
+
+To define custom cropping for an image, follow these steps.
+
 1. Make sure you have the "Assets"-tab selected
 1. Select the image asset you want to modify
 1. Make sure the image asset is checked out to you. Check out if necessary by clicking "Check Out"
@@ -175,3 +195,5 @@ In order to manually set a focal point or define custom cropping for specific mo
 ![Custom crop](./media/dam-screenshot7.png)
 
 Manually set focal point or custom cropping will be reflected on the image almost immediately.
+
+## Additional resources
