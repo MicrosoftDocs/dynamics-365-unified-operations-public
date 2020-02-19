@@ -29,11 +29,10 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
 
 ---
+# Cancel a planning job
 
 [!include [banner](../../includes/banner.md)]
 [!include [banner](../../includes/preview-banner.md)]
-
-# Cancel a planning job
 
 In Microsoft Dynamics 365 Supply Chain Management, you can cancel an active planning job that uses the Planning Optimization functionality.
 
