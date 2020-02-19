@@ -40,6 +40,12 @@ To get started with LCS, see the [Lifecycle Services (LCS) user guide](lcs-user-
 > [!IMPORTANT]
 > LCS features and service changes will no longer be announced via blog posts. Descriptions of LCS features are provided in the [release plans](https://go.microsoft.com/fwlink/?linkid=2010158). This topic lists the features that are included in LCS releases.
 
+## February 2020 - wave 2
+
+| Area | Feature |
+|------|---------|
+| Environment actions | **Platform update 20 required for database movement operations** - Starting in March 2020, the ability to perform database movement operations (refresh, import, export, and point-in-time restore) will require a minimum of Platform update 20. This change will help support the stability of the service. |
+
 ## February 2020 - wave 1
 
 | Area | Feature |
