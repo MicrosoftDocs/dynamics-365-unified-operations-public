@@ -51,7 +51,7 @@ The following preview features are available on February 3, 2020:
 
 - **Leave and absence preview features** - For more information, see [Leave and absence preview features](hr-leave-and-absence-overview.md?leave-and-absence-preview-features).
 
-- **Benefits management preview feature** - For more information, including known issues, see [Benefits management overview](hr-benefits-management-overview.md).
+- **Benefits management preview feature** - For more information, including known issues, sees [Benefits management overview](hr-benefits-management-overview.md).
 
 ## Coming soon
 
@@ -72,5 +72,11 @@ A new Common Data Service solution will be available soon with the following cha
 | New variable compensation setup entities | **Compensation variable plan type**</br>**Compensation variable plan**</br>**Vesting rules**</br>**Compensation variable plan level** |
 | New **Worker calendar employment** entity | **Work calendar entity** added |
 | New **Payroll position detail** entity | **Payroll position detail** added |
-| New **Title** entity | **Title** added. The new **Title** entity will be included in the sync process between Human Resources and Common Data Service, but won't initially be referenced from **Job Position** or **Job** entities. |
+| New **Title** entity | **Title** added. The new **Title** entity will be included in the sync process between Human Resources and Common Data Service. It won't be initially referenced from **Job Position** or **Job** entities. |
 
+## See also
+
+[What's new or changed in Human Resources](hr-admin-whats-new.md)</br>
+[Overview of Dynamics 365 Human Resources 2019 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Update process](hr-admin-setup-update-process.md)</br>
+[Manage features](hr-admin-manage-features.md)
