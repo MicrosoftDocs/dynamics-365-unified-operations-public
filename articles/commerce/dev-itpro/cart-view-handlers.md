@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: POS Cart view events and handlers.
+title: POS Cart view events and handlers
 description: This topic explains how extensions can consume the POS view events and handlers for custom scenarios.
-author: RobinARH
+author: mugunthanm
 manager: AnnBe
 ms.date: 02/13/2020
 ms.topic: article
@@ -20,8 +20,8 @@ audience: Developer
 ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
-ms.custom: 17771
-ms.assetid: c54d34a5-32e2-4d0d-a1c2-4a9940d95ade
+ms.custom:
+ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mumani
@@ -34,20 +34,18 @@ ms.dyn365.ops.version: 10.0.10
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how extensions can consume the POS view events and handlers for custom scenarios.
-Ex: Cart view in POS exposes multiple events and handlers to extensions to perform custom business flows based on the events happened. Extensions can subscribe to these events and gets notified when the that events happened.
+This topic explains how extensions can consume the POS view events and handlers for custom scenarios. For example, the Cart view in POS exposes multiple events and handlers so that your extensions can perform custom business flows based on events. The extensions can subscribe to an event and receive notification when the that event occurs.
 
-**POS view events and handlers:**
+## Cart view
 
-**Cart view:**
+The base class to consume the cart view handlers is **CartViewController**.
 
-**Base class to consume the cart view handlers:**
-
+```csharp
 export default class CartViewController extends CartView.CartExtensionViewControllerBase {
-
 }
+```
 
-| Base class                      | Events/Handlers                                                                           | Description                                                       |
+| Base class       | Events/Handlers            | Description                                                       |
 |---------------------------------|-------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
 | CartExtensionViewControllerBase | cartLineSelectedHandler: (data: CartLineSelectedData) =&gt; void;                         | The handler for the cart line selected message.                   |
 |                                 | cartLineSelectionClearedHandler: () =&gt; void;                                           | The handler for the cart line selection cleared message.          |
