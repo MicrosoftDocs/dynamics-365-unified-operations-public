@@ -53,6 +53,8 @@ Location directives are used to determine which location should be replenished. 
 In addition to creating a template, you must specify some replenishment settings in the wave template. The wave template should contain a wave step for replenishment that is run only if an item isn't successfully allocated. This replenishment wave step uses a wave step code to determine which replenishment template should be used. In addition to having a wave step for replenishment, you must make sure that **Replenish** is selected in the **Methods** section of the wave template. 
 
 The **Replenishment template** page includes an **Allow wave demand to use unreserved quantities** check box. Select this check box if demand replenishment should be able to deduct unreserved quantities from work that is generated from the selected replenishment template. To enable demand replenishment templates to use this logic, select this check box for every existing replenishment template. When demand replenishment is triggered in the warehouse, it will deduct the demand from existing replenishment work that has unreserved quantities, if the work originates from replenishment templates where the **Allow wave demand to use unreserved quantities** check box is selected.
+**Replenishment unit** is the minimum unit to replenish and replenishment must be a whole multiple of the unit. 
+The system will try to round up to the highest unit possible when creating work.
 
 Demand replenishment is supported for sales orders, transfer orders, production orders, and kanbans. 
 
