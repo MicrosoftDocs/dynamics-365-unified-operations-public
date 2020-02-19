@@ -31,7 +31,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Package configurations and deploy them to an online environment
 
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 This topic describes how to package configurations and deploy them to your Microsoft Dynamics 365 Commerce online environment.
