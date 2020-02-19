@@ -5,7 +5,7 @@ title: Clone a starter kit module
 description: This topic describes how to clone a starter kit module.
 author: samjarawan
 manager: annbe
-ms.date: 02/07/2020
+ms.date: 02/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -60,7 +60,7 @@ yarn msdyn365 clone content-block super-content-block
 It can take up to a minute to clone a module. After the command has finished running, you can find the new module in the \\src\\modules\\ directory.
 
 > [!NOTE]
-> Module dependencies aren't automatically pulled down when you clone a module. Before you build the module, you must run Yarn and fix any missing dependencies.  You may also need fix up some refereces inside the module source code if there are any errors when running the "yarn start" command.
+> Module dependencies aren't automatically pulled down when you clone a module. Before you build the module, you must run Yarn and fix any missing dependencies. You may also need to fix some references inside the module source code if there are any errors when running the "yarn start" command.
 
 ## Preview a module
 
