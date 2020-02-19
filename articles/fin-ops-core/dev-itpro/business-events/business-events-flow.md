@@ -5,7 +5,7 @@ title: Business events in Microsoft Power Automate
 description: This topics provides information abou the business events that are available for consumption in Microsoft Power Automate via the application connector.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 07/19/2019
+ms.date: 02/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -50,9 +50,9 @@ After the **when a business event happens** trigger is added to a flow, the foll
 
 When the flow is saved, a subscription to the selected business event is added into the environment instance. As part of the subscription process, the required endpoint is set up, and the corresponding business event is activated.
 
-If either the trigger or the flow is deleted or disabled, the business event is automatically unsubscribed from.
+If the trigger is deleted or the flow is turned off, then the business event endpoint will be automatically deleted.
 
-Multiple flows can subscribe to the same business event in different legal entities or in the same legal entity.
+Multiple flows can subscribe to the same business event in different legal entities or in the same legal entity. Note that the default endpoint limit per event is ten. If needed, adjust the **Endpoints allowed per event** on the **Business event parameters** page.
 
 > [!NOTE]
 > The Power Automate endpoint must not be configured manually. The endpoint will automatically get created from Power Automate as explained above.
