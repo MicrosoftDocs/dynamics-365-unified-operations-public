@@ -48,17 +48,18 @@ The following illustration shows how a theme is selected for a page in Dynamics 
 
 A theme can be set on the master page in a similar manner. In this case, the theme is applied to all pages that are derived from the master page. Note that if the **locked** property is turned off, individual pages can override the theme.
 
-## General instructions to create a custom theme
-- Create a new theme using the CLI command "yarn msdyn365 add-theme NEW_THEME_NAME", which will create a theme in the "/src/themes/" folder.
-- Under the styles directory, you will find the SCSS entry point file for the theme which uses the name pattern "THEME_NAME.theme.scss". 
-- Themes are created as special modules and contain definition files which include the theme-friendly name and description, as well as a template react component.
-- There is no limit to the number of ".scss" files your theme may contain.
-- Your theme entry point may import other ".scss" files using relative paths.
+## General guidelines for creating a custom theme
+
+- Create a new theme by using the **yarn msdyn365 add-theme NEW_THEME_NAME** command-line interface (CLI) command. This command will create a theme in the /src/themes/ folder.
+- Under the styles directory, you will find the SCSS entry point file for the theme. This file uses the naming pattern **THEME_NAME.theme.scss**. 
+- Themes are created as special modules. They contain definition files that include the theme's friendly name and description, and also a template React component.
+- There is no limit to the number of .scss files that your theme can contain.
+- Your theme entry point can import other .scss files by using relative paths.
 
 ## Best practices
 
 - Starter kit modules are built by using Bootstrap 4 classes. Therefore, we recommend that every theme include either Bootstrap 4 or Bootstrap 4 RTL as the  SCSS framework.
-- If you want to take advantage of starter kit modules that are built by using Font Awesome glyph icons, **font-awesome** should be included in the SCSS file. The following example shows how to include **Bootstrap** and **font-awesome** in a SCSS file.
+- If you want to take advantage of starter kit modules that are built by using Font Awesome glyph icons, you should include **font-awesome** in the SCSS file. The following example shows how to include **Bootstrap** and **font-awesome** in a SCSS file.
 
     ```css
     $fa-font-path: 'https://use.fontawesome.com/releases/v5.2.0/webfonts' !default;
