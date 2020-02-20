@@ -95,9 +95,9 @@ The **config** section of the module definition file contains a list of all the 
 * **"type"** – The type of the configuration. The possible values are **"string"**, **"bool"**, **"number"**, **"integer"**, **"richText"**, **"image"**, **"imageSettings"**, **"css"**, **"video"**, and **"array"**.
 * **"enum"** – For an enumerator type, the value must be set to **"string"**.
 * **"default"** – The default value that is set if no value is set in the authoring tools.
-* **"scope"** – This field is used to scope the configuration to either a specific module instance or all modules on the site. Possible values are **"module"** and **"site"**. If the value is set to **"site"**, the module configuration doesn't appear on a page and can't be configured there. It appears and can only be configured at the site level. In this way, the value can be set one time for the entire site. The default value if this is not set is "module".
+* **"scope"** – This field is used to scope the configuration to either a specific module instance or all modules on the site. Possible values are **"module"** and **"site"**. If the value is set to **"site"**, the module configuration doesn't appear on a page and can't be configured there. It appears and can be configured only at the site level. In this way, the value can be set one time for the entire site. If you don't set this field, the default value is **"module"**.
 * **"group"** – Groups are used to organize the configurations into organized groups in the authoring tools.
-* **"required"** – A boolean flag that specifies whether or not a property must be set on the module. When set to **true**, the authoring tools will show an error if the required property isn't set, and an error will be displayed when the module is rendered.
+* **"required"** – A Boolean flag that specifies whether a property must be set on the module. If the value is set to **true**, the authoring tools will show an error if the required property isn't set, and an error will be shown when the module is rendered.
 * **"resources"** – This field is used for localization resources.
 * **"definitions"** - This field can contain complex config type definitions, which can be referenced in the config sections as extended types.
 
