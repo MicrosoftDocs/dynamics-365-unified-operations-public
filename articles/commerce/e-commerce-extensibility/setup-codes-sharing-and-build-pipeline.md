@@ -111,27 +111,27 @@ Open Visual studio Code. Open folder “c:\repos\<DevOpsProjectName>”  (Note: 
 
 ![Create a pipeline](media/code-sharing-7.png)
 
-1. Select the **Use the classic editor** link.
+2. Select the **Use the classic editor** link.
 
 ![Select classic editor](media/code-sharing-8.png)
 
-1. Select the repository <DevOpsProjectName> followed by the continue button.
+3. Select the repository <DevOpsProjectName> followed by the continue button.
 
 ![Select repository](media/code-sharing-9.png)
 
-1. Choose an empty job template.
+4. Choose an empty job template.
 
 ![Choose an empty job template](media/code-sharing-10.png)
 
-1. Select the **+** button next to "Agent job 1" to add a new agent job.
+5. Select the **+** button next to "Agent job 1" to add a new agent job.
 
 ![Add new agent job](media/code-sharing-11.png)
 
-1. Search for the "PowerShell" task and select the "Add button".
+6. Search for the "PowerShell" task and select the "Add button".
 
 ![Add PowerShell task](media/code-sharing-12.png)
 
-1. Select the new "PowerShell Script" item and copy the below script and set the **Type** to Inline.
+7. Select the new "PowerShell Script" item and copy the below script and set the **Type** to Inline.
 
   ```console
   yarn
@@ -140,15 +140,38 @@ Open Visual studio Code. Open folder “c:\repos\<DevOpsProjectName>”  (Note: 
   
 ![Configure task](media/code-sharing-13.png)
 
-1. Expand the **Advanced** secting and change the working directory to **$(Build.SourcesDirectory)**
+8. Expand the **Advanced** secting and change the working directory to **$(Build.SourcesDirectory)**
 
 ![Set working directory](media/code-sharing-14.png)
 
-1. Add "Copy files" agent by selecting the **+** next to "Agent job 1" and searching for "copy" followed by selecting the "Add" button.
+9. Add "Copy files" agent by selecting the **+** next to "Agent job 1" and searching for "copy" followed by selecting the "Add" button.
 
 ![Add copy files agent](media/code-sharing-15.png)
 
-1. Set the **Source Folder** to "$(Build.SourcesDirectory)", **Contents** to "*.zip" and **Target Folder** to "$(Build.ArtifactStagingDirectory)"
+10. Set the **Source Folder** to "$(Build.SourcesDirectory)", **Contents** to "*.zip" and **Target Folder** to "$(Build.ArtifactStagingDirectory)"
 
-![Configure Copy Files task](media/code-sharing-15.png)
+![Configure Copy Files task](media/code-sharing-16.png)
 
+11. Add "Publish Pipeline Artifacts" agent by selecting the **+** next to "Agent job 1" and searching for "publish" followed by selecting the "Add" button.
+
+![Add Publish Pipline Artifacts agent](media/code-sharing-17.png)
+
+12. Select the "Publish Pipeline Artifact" and set the **File or directory patj** to "$(Build.ArtifactStagingDirectory)" and the **Artifact name** to "drop".
+
+![Configure Publish Pipline Artifacts agent](media/code-sharing-18.png)
+
+13. Save and queue a build.
+
+![Save and queue a build](media/code-sharing-19.png)
+
+14. Ensure **Agent Specification** is set to "vs2017-win2016" and click the "Save and run" button.
+
+![Save and run](media/code-sharing-20.png)
+
+Tools that you commonly use to build, test, and run JavaScript apps - like npm, Node, Yarn, and Gulp - are pre-installed on Microsoft-hosted agents in Azure Pipelines. For the exact version of Node.js and npm that is preinstalled, refer to Microsoft-hosted agents. To install a specific version of these tools on Microsoft-hosted agents, add the Node Tool Installer task to the beginning of your process. "VS2017-win2016" comes with yarn pre-installed.
+
+15. Check agent job logs for completions
+
+![Agent Job logs](media/code-sharing-21.png)
+
+16. After the job is completed, download the deployable package.
