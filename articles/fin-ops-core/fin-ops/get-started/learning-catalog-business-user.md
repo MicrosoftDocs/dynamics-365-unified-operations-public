@@ -1,17 +1,17 @@
 ---
 title: Business User's Learning Catalog
 description: Find all the training options for Finance and Operations.
-author: margoc
+author: loreleishannonmsft
 ms.topic: article
-ms.date: 01/08/2020
-ms.author: margoc
+ms.date: 02/19/2020
+ms.author: v-lshann
 ---
 
 # Business Users Learning Catalog
 
 Did you just get a new application to use? 
 
-The following catalog is organized from core knowledge to specific domains, and from most basic to most advanced. If content exists in multiple formats, we'll let you know, so that you can choose the training format that best meets your needs. For more information, see Training content formats. 
+The following catalog is organized from core knowledge to specific domains, and from most basic to most advanced. If content exists in multiple formats, we'll let you know, so that you can choose the training format that best meets your needs. 
  
 
 ## Get started
@@ -65,7 +65,7 @@ Content | Description  | Format   | Length    |
 | [Work with Accounts receivable in Dynamics 365 Finance](https://docs.microsoft.com/learn/paths/work-accounts-receivable-dyn365-finance/)                                            | You need to configure the Accounts receivable module in Dynamics 365 for Finance and Operations to create customer invoices, post packing slips, and use free text invoices that are not related to sales orders. In this learning path you will also learn how to perform daily tasks in accounts receivable.                                                                                                                                    | Free, self-paced online learning path | 5.5 hours |
 | [Configure and use budgeting in Dynamics 365 Finance](https://docs.microsoft.com/learn/paths/configure-use-budgeting-dyn365-finance/)                                               | Every organization, whether it is private or public, sets financial and operational goals by creating budgets. With the collaborative and process-driven nature of budget planning, you can make your budget process more efficient.                                                                                                                                                                                                              | Free, self-paced online learning path | 2.5 hours |
 | [Configure and manage fixed assets in Dynamics 365 Finance](https://docs.microsoft.com/learn/paths/configure-manage-fixed-assets-dyn365-finance/)                                   | You can set up and enter acquisition information for fixed assets, and then manage them by depreciating them and setting a capitalization threshold. The way in which fixed assets are handled must correspond with both international accounting standards and the accounting legislation in each country or region.                                                                                                                             | Free, self-paced online learning path | 4 hours   |
-| [Get started with cost accounting in Dynamics 365 Finance](https://docs.microsoft.com/learn/modules/get-started-cost-accounting-dyn365-finance/)                                    | Cost accounting lets you collect data from various sources, such as the general ledger, sub-ledgers, budgets, and statistical information. You can then analyze, summarize, and evaluate cost data so that management can make the best possible decisions for price updates, budgets, cost control, and so on.                                                                                                                                   | Free, self-paced online module        | 0.5 hours |
+| [Get started with cost accounting in Dynamics 365 Finance](https://docs.microsoft.com/learn/modules/get-started-cost-accounting-dyn365-finance/)                                    | Cost accounting lets you collect data from various sources, such as the general ledger, sub-ledgers, budgets, and statistical information. You can then analyze, summarize, and evaluate cost data so that management can make the best possible decisions for price updates, budgets, cost control, and more.                                                                                                                                   | Free, self-paced online module        | 0.5 hours |
 | [Configure and perform periodic processes in Dynamics 365 Finance](https://docs.microsoft.com/learn/modules/configure-periodic-processes-dyn365-finance/)                     | You can complete closing procedures for a period or a year. Closing processes prepare the system for a new period. Learn how to prepare, configure and perform periodic processes in Dynamics 365 for Finance and Operations.                                                                                                                                                                                                                     | Free, self-paced online module        | 2.5 hours |
 ## Exam
 | Content  | Description   | Format   | Length    | 
