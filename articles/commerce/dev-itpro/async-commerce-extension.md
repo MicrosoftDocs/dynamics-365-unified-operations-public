@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Create async Commerce (CRT) APIs in your business logic
-description: This topic describes how to create commerce (CRT) APIs (requests) to execute asynchronously.
+title: Create asynchronous Commerce (CRT) APIs in your business logic
+description: This topic explains how to create Commerce (CRT) application programming interfaces (APIs) (that is, requests) that run asynchronously.
 author: mugunthanm
 manager: AnnBe
 ms.date: 02/13/2020
@@ -30,57 +30,60 @@ ms.dyn365.ops.version: 10.0.10
 
 ---
 
-# Create async Commerce (CRT) APIs in your business logic
+# Create asynchronous Commerce (CRT) APIs in your business logic
 
 [!include [banner](../../includes/banner.md)]
 
 > [!NOTE]
-> This topic is applicable for Dynamics 365 for Commerce version 10.0.10 or greater.
+> This topic applies to Microsoft Dynamics 365 Commerce version 10.0.10 and later.
 
+This topic explains how to create new business logic (that is, application programming interfaces \[APIs\]) by using the new asynchronous framework, and then expose the new APIs as web services that can be consumed by the point of sale (POS). The new APIs, or extension Commerce requests, run asynchronously. The Commerce API framework supports asynchronous execution of extension Commerce requests.
 
-This topic describes how to create new business logic (APIs) using the new async framework and then expose the the new API as a web services to be consumed by POS. The new API, an extension commerce request, will execute asynchronously. The Commerce API framework supports asynchronous execution of extensions commerce requests. Before this framework enhancement a request could be executed only synchronously. That meant that any long operation (I/O operation, database query, network request, etc.) blocked the execution thread. The addition of asynchronous model support to the Commerce Runtime lets you use asynchronous versions of operations, thus unblocking the execution thread.
+Before this framework enhancement was made, requests could be run only synchronously. Therefore, any long operations, such as input/output (I/O) operations, database queries, or network requests, blocked the execution thread. Now that support for the asynchronous model has been added to the Commerce runtime (CRT), you can use asynchronous versions of operations. Therefore, the execution thread is unblocked.
 
-The Commerce API framework supports the async/await model for extension requests. These extension requests can execute asynchronously. Using the async/await model [simplifies](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/async/how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await) the business logic when some work should or can be be performed in parallel.
+The Commerce API framework supports the async/await model for extension requests. These extension requests can run asynchronously. By using the async/await model, you [simplify](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/async/how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await) the business logic when some work should or can be done in parallel.
 
-You should use the asynchronous commerce API framework for all new extension APIs and use out-of-box asynchronous commerce extensions.
+You should use the asynchronous Commerce API framework for all new extension APIs, and you should use out-of-box asynchronous Commerce extensions.
 
-Async classes/interface added in the Commerce API framework:
+The following asynchronous classes and interfaces were added in the Commerce API framework.
 
-| Class                         | Description                                                  |
-|-------------------------------|--------------------------------------------------------------|
-| **SingleAsyncRequestHandler** | Base class for async handlers that support only one request. |
-| **IRequestHandlerAsync**      | The async request handler interface.                         |
-| **IRequestTriggerAsync**      | The interface for request trigger.                           |
+| Class                     | Description |
+|---------------------------|-------------|
+| SingleAsyncRequestHandler | The base class for asynchronous handlers that support only one request. |
+| IRequestHandlerAsync      | The interface for the asynchronous request handler. |
+| IRequestTriggerAsync      | The interface for the request trigger. |
 
-Async methods added in the Commerce API framework:
+The following asynchronous methods were added in the Commerce API framework.
 
-| Class.Interface           | Method     | Description                                  |
-|---------------------------|------------|----------------------------------------------|
-| **SingleAsyncRequestHandler** | Task\<TResponse\> Process                     | Execute method to be overridden by each derived class.                    |
-|                               | Task\<Response\> Execute                         | Represents the entry point of the request handler.                     |
-| **IRequestHandlerAsync**      | Task\<Response\> Execute (Request request)   | The async request handler interface.                                       |
-| **IRequestTriggerAsync**      | Task OnExecuting(Request request)             | Invoked before request has been processed by **IRequestHandler**.      |
-|                               | Task OnExecuted(Request request, Response response) | Invoked after request has been processed by **IRequestHandler**. |
+| Class.Interface           | Method                                              | Description |
+|---------------------------|-----------------------------------------------------|-------------|
+| SingleAsyncRequestHandler | Task\<TResponse\> Process                           | The execute method that will be overridden by each derived class. |
+|                           | Task\<Response\> Execute                            | The method that represents the entry point of the request handler. |
+| IRequestHandlerAsync      | Task\<Response\> Execute (Request request)          | The interface for the asynchronous request handler. |
+| IRequestTriggerAsync      | Task OnExecuting(Request request)                   | The method that is invoked before the request has been processed by **IRequestHandler**. |
+|                           | Task OnExecuted(Request request, Response response) | The method that is invoked after the request has been processed by **IRequestHandler**. |
 
 Asynchronous execution is supported for these scenarios:
 
-+ New Commerce APIs.
-    - Asynchronous Commerce Runtime API.
-    - Asynchronous Retail server controller.
-+ Overriding the executing commerce API handler.
-+ Pre- and post-triggers.
++ New Commerce APIs
+
+    - Asynchronous Commerce Runtime API
+    - Asynchronous Retail server controller
+
++ Overrides of the Commerce API handler that is running
++ Pre-triggers and post-triggers
 
 ## Create a new asynchronous Commerce Runtime API
 
-To create a new async commerce API, you need to create these classes.
+To create a new asynchronous Commerce API, you must create three classes:
 
 + Create the request class by implementing the **Request** class.
-+ Create the async response class by implementing the **Response** class.
-+ Create the async handler class.
++ Create the asynchronous response class by implementing the **Response** class.
++ Create the asynchronous handler class.
 
-To create these classes, follow these steps:
+To create the classes, follow these steps.
 
-1.  Create the request class.
+1. Create the request class.
 
     ```C#
     namespace Contoso
@@ -109,7 +112,7 @@ To create these classes, follow these steps:
     }
     ```
 
-2.  Create the response class.
+2. Create the response class.
 
     ```C#
     namespace Contoso
@@ -145,8 +148,8 @@ To create these classes, follow these steps:
         }
     }
     ```
-    
-3.  Create the async handler.
+
+3. Create the asynchronous handler.
 
     ```C#
     using Contoso.Commerce.Runtime.AsyncSample.Messages;
@@ -177,10 +180,10 @@ To create these classes, follow these steps:
         }
     }
     ```
-    
+
 ## Create a new asynchronous Retail server controller
 
-To create an asynchronous retail server controller extension, extend the controller class from **CommerceControllerAsync** class, as shown in the following code examples.
+To create an asynchronous Retail server controller extension, extend the controller class from the **CommerceControllerAsync** class, as shown in the following example.
 
 ```C#
 namespace Microsoft.Dynamics.Retail.RetailServerLibrary.ODataControllers
@@ -227,7 +230,7 @@ namespace Microsoft.Dynamics.Retail.RetailServerLibrary.ODataControllers
         /// Retrieves the entity information based on <see cref="key"/> input.
         /// </summary>
         /// <param name="key">key input.</param>
-        /// <returns>Instance of <see cref="MyEntity"/> that contains entities found by by input text.</returns>
+        /// <returns>Instance of <see cref="MyEntity"/> that contains entities found by input text.</returns>
         public async Task<MyEntity> GetMyEntityAsync(string key)
         {
             ThrowIf.Null(key, nameof(key));
@@ -239,14 +242,13 @@ namespace Microsoft.Dynamics.Retail.RetailServerLibrary.ODataControllers
 
     }
 }
-
 ```
 
 ## Override an out-of-box request handler asynchronously
 
-To override the supported out-of-box request handler follow this pattern:
+To override the supported out-of-box request handler, follow this pattern.
 
-Ex: To override the OOB GetScanResultRequestHandler, override the handler and return the response using Task and await.
+For example, to override the out-of-box **GetScanResultRequestHandler** handler, override the handler, and return the response by using **Task** and **await**.
 
 ```C#
 namespace Contoso
@@ -319,12 +321,11 @@ namespace Contoso
         }
     }
 }
-
 ```
 
-## Create trigger asynchronously
+## Create a trigger asynchronously
 
-To execute the logic in the trigger asynchronously, extend trigger your class from IRequestTriggerAsync interface and add the logic.
+To run the logic in the trigger asynchronously, extend trigger your class from the **IRequestTriggerAsync** interface, and add the logic.
 
 ```C#
 namespace Contoso
@@ -403,4 +404,3 @@ namespace Contoso
     }
 }
 ```
-    
