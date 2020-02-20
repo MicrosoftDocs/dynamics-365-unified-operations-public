@@ -5,7 +5,7 @@ title: Export a database
 description: This topic explains how to export a database for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 02/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
