@@ -140,8 +140,8 @@ class Pgm_CSharp
         }
         else
         {
-            Console .Error .WriteLine(".Error is like .Out," + " but can be for warnings, 3.");
-            Console .Error .WriteLine(".Error is like .Out," + " but is for errors, 4.");
+            Console .Error .WriteLine(".Error is like .Out, but can be for warnings, 3.");
+            Console .Error .WriteLine(".Error is like .Out, but is for errors, 4.");
         }
     }
 }
