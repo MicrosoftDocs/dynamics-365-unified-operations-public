@@ -33,3 +33,24 @@ ms.dyn365.ops.version:
 [!include [banner](../includes/banner.md)]
 
 This topic describes how to crop images in Microsoft Dynamics 365 Commerce.
+
+## Define custom cropping for an image
+
+To define custom cropping for an image, follow these steps.
+
+1. Make sure you have the "Assets"-tab selected
+1. Select the image asset you want to modify
+1. Make sure the image asset is checked out to you. Check out if necessary by clicking "Check Out"
+1. Click "Edit Focal Point"
+1. Image will be opened in edit mode and you will see the focal point editor in the view
+1. Click "Edit View by Module"
+1. Choose the module, view type, placement and viewport you wish to set the custom crop rules on e.g. Hero, Wide, Hero Image Settings, Medium
+1. View is overlaid with the area representing the crop region. Move and resize the crop region as you wish. Aspect ratio is automatically maintained.
+1. Click "Check In"
+1. Click "Publish"
+
+![Custom crop](./media/dam-screenshot7.png)
+
+Manually set focal point or custom cropping will be reflected on the image almost immediately.
+
+## Additional resources
