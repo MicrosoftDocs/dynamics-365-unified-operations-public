@@ -978,10 +978,8 @@ static void JobRs008a_Exceptions(Args _args)
     int iIndex = 77;
     try
     {
-        info("On purpose, this uses an invalid index for this array: "
-            + sStrings[iIndex]);
-        warning("This message does not appear in the Infolog,"
-            + " it is unreached code.");
+        info("On purpose, this uses an invalid index for this array: " + sStrings[iIndex]);
+        warning("This message does not appear in the Infolog," + " it is unreached code.");
     }
     // Next is a catch for some of the values of
     // the X++ Exception enumeration.
@@ -1042,22 +1040,16 @@ public class Pgm_CSharp
         string[] sStrings = new string[4];
         try
         {
-            Console.WriteLine
-                ("On purpose, this uses an invalid index"
-                + " for this array: " + sStrings[77]);
-            Console.Error.WriteLine
-                ("This message does not appear in the Infolog,"
-                + " it is unreached code.");
+            Console.WriteLine("On purpose, this uses an invalid index for this array: " + sStrings[77]);
+            Console.Error.WriteLine("This message does not appear in the Infolog, it is unreached code.");
         }
         catch (NullReferenceException exc)
         {
-            Console.WriteLine("(e1) In catch block for -- "
-                + exc.GetType().ToString() );
+            Console.WriteLine("(e1) In catch block for -- " + exc.GetType().ToString() );
         }
         catch (IndexOutOfRangeException exc)
         {
-            Console.WriteLine("(e2) In catch block for -- "
-                + exc.GetType().ToString() );
+            Console.WriteLine("(e2) In catch block for -- " + exc.GetType().ToString() );
         }
         // In C#, System.Exception is the base of all
         // .NET Framework exception classes.
@@ -1065,9 +1057,7 @@ public class Pgm_CSharp
         // this next catch.
         catch (Exception exc)
         {
-            Console.WriteLine
-                ("This last 'catch' is of the abstract"
-                + " base type Exception: "
+            Console.WriteLine("This last 'catch' is of the abstract base type Exception: "
                 + exc.GetType().ToString());
         }
         // The preceding catch of System.Exception makes this catch of
@@ -1079,9 +1069,7 @@ public class Pgm_CSharp
         //}
         finally
         {
-            Console.WriteLine
-                ("'finally' is not an X++ keyword,"
-                + " although it is in C#.");
+            Console.WriteLine("'finally' is not an X++ keyword, although it is in C#.");
         }
         Console.WriteLine("End of program.");
     }
@@ -1122,11 +1110,9 @@ static void JobRs008b_ExceptionsAndRetry(Args _args)
     }
     catch (Exception::Error)
     {
-        print("In catch of -- Exception::Error (will retry)."
-            + " Entering catch.");
+        print("In catch of -- Exception::Error (will retry)." + " Entering catch.");
         ++iIndex;
-        print("In catch of -- Exception::Error (will retry).
-            + " Leaving catch.");
+        print("In catch of -- Exception::Error (will retry). + " Leaving catch.");
         // Here is the retry statement.
         retry;
     }
