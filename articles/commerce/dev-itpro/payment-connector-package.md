@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create payment packaging for AOS in Service Fabric deployments.
+title: Create payment packaging for Application Explorer in Service Fabric deployments
 description: This topic explains how to create payment packaging for Application Explorer and deploy it in Dynamics 365 for Commerce service fabric environments.
 author: mugunthanm
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.10
 
 ---
 
-# Create payment packaging for AOS in Service Fabric deployments
+# Create payment packaging for Application Explorer in Service Fabric deployments
 
 [!include [banner](../../includes/banner.md)]
 
