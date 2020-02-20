@@ -47,7 +47,11 @@ This article describes the steps that are required in order to set up an exchang
 -   **The framework** – The import currency exchange rates framework that coordinates the retrieval of exchange rates from providers and appropriate storage of the exchange rates.
 
 ## Conceptual/class model
-The following illustration shows the main interfaces and classes that make up the exchange rate provider framework, and the relationships among them. New exchange rate providers should be derived from the **IExchangeRateProvider** interface. Exchange rate providers are written in X++. Because X++ is a .NET language, it's easy to use the Microsoft .NET Framework in our provider. [![Conceptual/class model of the exchange rate provider framework](./media/exchangerates.png)](./media/exchangerates.png) Here are the interfaces and classes that are shown in the illustration:
+The following illustration shows the main interfaces and classes that make up the exchange rate provider framework, and the relationships among them. New exchange rate providers should be derived from the **IExchangeRateProvider** interface. Exchange rate providers are written in X++. Because X++ is a .NET language, it's easy to use the Microsoft .NET Framework in our provider. 
+
+[![Conceptual/class model of the exchange rate provider framework](./media/exchangerates.png)](./media/exchangerates.png) 
+
+Here are the interfaces and classes that are shown in the illustration:
 
 - **IExchangeRateProvider** – By implementing this interface, you enable the exchange rate provider framework to recognize a class as an exchange rate provider.
 - **IExchangeRateProviderFrameworkFactory** – This interface enables the exchange rate provider to construct various types of provider framework classes that represent some of the interfaces in the illustration.
