@@ -57,11 +57,13 @@ Simple migration scenario – SMAServiceOrderTable form
 
 ##### Dynamics AX 2012
 
-    /* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
-    public void jumpRef()
-    {
-        ExpenseCost_LedgerDimension.jumpRef();
-    }
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
+public void jumpRef()
+{
+    ExpenseCost_LedgerDimension.jumpRef();
+}
+```
 
 ##### Dynamics AX for Operations
 
@@ -75,11 +77,13 @@ Because this method only calls the **jumpRef()** method on the control and doesn
 
 ##### Dynamics AX 2012
 
-    /* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
-    public void jumpRef()
-    {
-        ExpenseCost_LedgerDimension.jumpRef();
-    }
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
+public void jumpRef()
+{
+    ExpenseCost_LedgerDimension.jumpRef();
+}
+```
 
 ##### Dynamics AX for Operations
 
@@ -89,13 +93,15 @@ Because this method only calls the **jumpRef()** method on the control and doesn
 
 ##### Dynamics AX 2012
 
-    /* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
-    public void loadSegments()
-    {
-        super();
-        /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
-        // dimDynamicAccountController.loadSegments();
-    }
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
+public void loadSegments()
+{
+    super();
+    /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
+    // dimDynamicAccountController.loadSegments();
+}
+```
 
 ##### Dynamics AX for Operations
 
@@ -105,53 +111,57 @@ Because this method only calls the **loadSegments()** method on the control and 
 
 ##### Dynamics AX 2012
 
-    /* TODO: (Code Upgrade) [Segmented entry control] Fix controller usage, if any, in this method based on the migration guidance */
-    public void lookup()
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] Fix controller usage, if any, in this method based on the migration guidance */
+public void lookup()
+{
+    switch (smaServiceOrderLine.OffsetAccountTypeExpense)
     {
-        switch (smaServiceOrderLine.OffsetAccountTypeExpense)
-        {
-            case LedgerJournalACType::Bank:
-                BankAccountTable::lookupBankAccount(this);
-                break;
-            case LedgerJournalACType::Cust:
-                CustTable::lookupCustomer(this);
-                break;
-            case LedgerJournalACType::FixedAssets:
-                AssetTable::lookupAccountNum(this);
-                break;
-            case LedgerJournalACType::Project:
-                ProjTable::lookupProjId(this, smaServiceOrderLine);
-                break;
-            case LedgerJournalACType::Vend:
-                VendTable::lookupVendor(this);
-                break;
-            default:
-                super();
-                break;
-            }
+        case LedgerJournalACType::Bank:
+            BankAccountTable::lookupBankAccount(this);
+            break;
+        case LedgerJournalACType::Cust:
+            CustTable::lookupCustomer(this);
+            break;
+        case LedgerJournalACType::FixedAssets:
+            AssetTable::lookupAccountNum(this);
+            break;
+        case LedgerJournalACType::Project:
+            ProjTable::lookupProjId(this, smaServiceOrderLine);
+            break;
+        case LedgerJournalACType::Vend:
+            VendTable::lookupVendor(this);
+            break;
+        default:
+            super();
+            break;
     }
+}
+```
 
 ##### Dynamics AX for Operations
 
 This method implements a custom lookup for the control. Therefore, leave the method as it is. Just remove the TODO. To hook up custom lookups, you must override the SEC’s **checkUseCustomLookup** method. Here is an example.
 
-    public boolean checkUseCustomLookup(int _accountTypeEnumValue, int _secondaryAccountTypeEnumValue)
+```xpp
+public boolean checkUseCustomLookup(int _accountTypeEnumValue, int _secondaryAccountTypeEnumValue)
+{
+    boolean ret;
+    switch(_accountTypeEnumValue)
     {
-        boolean ret;
-        switch(_accountTypeEnumValue)
-        {
-            case LedgerJournalACType::Bank:
-            case LedgerJournalACType::Cust:
-            case LedgerJournalACType::FixedAssets:
-            case LedgerJournalACType::Project:
-            case LedgerJournalACType::Vend:
-                ret = true;
-                break;
-            default:
-                ret = false;
-        }
-        return ret;
-     }
+        case LedgerJournalACType::Bank:
+        case LedgerJournalACType::Cust:
+        case LedgerJournalACType::FixedAssets:
+        case LedgerJournalACType::Project:
+        case LedgerJournalACType::Vend:
+            ret = true;
+            break;
+        default:
+            ret = false;
+    }
+    return ret;
+}
+```
 
 Additionally, make sure that the **closeSelectRecord** method on the custom lookup form is overridden. For an example, see the **CustTableLookup** form.
 
@@ -159,13 +169,15 @@ Additionally, make sure that the **closeSelectRecord** method on the custom look
 
 ##### Dynamics AX 2012
 
-    /* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
-    public void segmentValueChanged(SegmentValueChangedEventArgs _e)
-    {
-        super(_e);
-        /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
-        // dimDynamicAccountController.segmentValueChanged(_e);
-    }
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
+public void segmentValueChanged(SegmentValueChangedEventArgs _e)
+{
+    super(_e);
+    /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
+    // dimDynamicAccountController.segmentValueChanged(_e);
+}
+```
 
 ##### Dynamics AX for Operations
 
@@ -175,15 +187,17 @@ Because this method only calls the **segmentValueChanged()** method on the contr
 
 ##### Dynamics AX 2012
 
-    /* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
-    public boolean validate()
-    {
-        boolean isValid;
-        isValid = super();
-        /* TODO: (Code Upgrade) [Segmented entry control] This statement can be removed if there is no custom logic */
-        // isValid = dimDynamicAccountController.validate() && isValid;
-        return isValid;
-    }
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
+public boolean validate()
+{
+    boolean isValid;
+    isValid = super();
+    /* TODO: (Code Upgrade) [Segmented entry control] This statement can be removed if there is no custom logic */
+    // isValid = dimDynamicAccountController.validate() && isValid;
+    return isValid;
+}
+```
 
 ##### Dynamics AX for Operations
 
@@ -195,9 +209,11 @@ Because this method only calls the **validate()** method on the control and does
 
 Finally, go back to the first TODO, for the controller variable declaration.
 
-    /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
-    /* 'dimDynamicAccountController' controller object is used with 'ExpenseCost_LedgerDimension' segmented entry controls.*/
-    DimensionDynamicAccountController dimDynamicAccountController;
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
+/* 'dimDynamicAccountController' controller object is used with 'ExpenseCost_LedgerDimension' segmented entry controls.*/
+DimensionDynamicAccountController dimDynamicAccountController;
+```
 
 ##### Dynamics AX for Operations
 
@@ -236,14 +252,16 @@ The **dimDynamicAccountController** variable is no longer used on the form. Ther
 
 ##### Dynamics AX 2012
 
-    /* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
-    // </GEEPL>
-    public void jumpRef()
-    {
-        LedgerJournalTrans_AccountNum.jumpRef();
-        LedgerJournalTrans_AccountNum1.jumpRef();
-        Group4_AccountNum.jumpRef();
-    }
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
+// </GEEPL>
+public void jumpRef()
+{
+    LedgerJournalTrans_AccountNum.jumpRef();
+    LedgerJournalTrans_AccountNum1.jumpRef();
+    Group4_AccountNum.jumpRef();
+}
+```
 
 ##### Dynamics AX for Operations
 
@@ -257,13 +275,15 @@ Because this method only calls the **jumpRef()** method on the control and doesn
 
 The **OffsetLedgerDimension** field’s **jumpRef()** method:
 
-    /* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
-    public void jumpRef()
-    {
-        GridOffsetAccount.jumpRef();
-        LedgerJournalTrans_OffsetAccount1.jumpRef();
-        Group4_OffsetAccount.jumpRef();
-    }
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
+public void jumpRef()
+{
+    GridOffsetAccount.jumpRef();
+    LedgerJournalTrans_OffsetAccount1.jumpRef();
+    Group4_OffsetAccount.jumpRef();
+}
+```
 
 ##### Dynamics AX for Operations
 
@@ -277,13 +297,15 @@ Because this method only calls the **jumpRef()** method on the control and doesn
 
 ##### Dynamics AX 2012
 
-    /* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
-    public void jumpRef()
-    {
-        LedgerJournalTrans_AccountNum.jumpRef();
-        LedgerJournalTrans_AccountNum1.jumpRef();
-        Group4_AccountNum.jumpRef();
-    }
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
+public void jumpRef()
+{
+    LedgerJournalTrans_AccountNum.jumpRef();
+    LedgerJournalTrans_AccountNum1.jumpRef();
+    Group4_AccountNum.jumpRef();
+}
+```
 
 ##### Dynamics AX for Operations
 
@@ -293,84 +315,96 @@ Because this method only calls the **jumpRef()** method on the control and doesn
 
 ##### Dynamics AX 2012
 
-    /* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
-    public void loadSegments()
-    {
-        super();
-        LedgerJournalTrans_AccountNum.parmJournalName(ledgerJournalTable.JournalName);
-        LedgerJournalTrans_AccountNum1.parmJournalName(ledgerJournalTable.JournalName);
-        Group4_AccountNum.parmJournalName(ledgerJournalTable.JournalName);
-        LedgerJournalTrans_AccountNum.parmCurrency(ledgerJournalTrans.CurrencyCode);
-        LedgerJournalTrans_AccountNum1.parmCurrency(ledgerJournalTrans.CurrencyCode);
-        Group4_AccountNum.parmCurrency(ledgerJournalTrans.CurrencyCode);
-        LedgerJournalTrans_AccountNum.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
-        LedgerJournalTrans_AccountNum1.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
-        Group4_AccountNum.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
-        LedgerJournalTrans_AccountNum.parmControlDate(ledgerJournalTrans.TransDate);
-        LedgerJournalTrans_AccountNum1.parmControlDate(ledgerJournalTrans.TransDate);
-        Group4_AccountNum.parmControlDate(ledgerJournalTrans.TransDate);
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
+public void loadSegments()
+{
+    super();
+    LedgerJournalTrans_AccountNum.parmJournalName(ledgerJournalTable.JournalName);
+    LedgerJournalTrans_AccountNum1.parmJournalName(ledgerJournalTable.JournalName);
+    Group4_AccountNum.parmJournalName(ledgerJournalTable.JournalName);
+    LedgerJournalTrans_AccountNum.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    LedgerJournalTrans_AccountNum1.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    Group4_AccountNum.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    LedgerJournalTrans_AccountNum.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
+    LedgerJournalTrans_AccountNum1.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
+    Group4_AccountNum.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
+    LedgerJournalTrans_AccountNum.parmControlDate(ledgerJournalTrans.TransDate);
+    LedgerJournalTrans_AccountNum1.parmControlDate(ledgerJournalTrans.TransDate);
+    Group4_AccountNum.parmControlDate(ledgerJournalTrans.TransDate);
 
-        /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
-        // dimAccountController.loadSegments();
-        currentMainAccountId = dimAccountController.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
-    }
+    /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
+    // dimAccountController.loadSegments();
+    currentMainAccountId = dimAccountController.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
+}
+```
 
 ##### Dynamics AX for Operations
 
 1.  Update the **initLedger()** method.
 
-        void initLedger()
+    ```xpp
+    void initLedger()
+    {
+        TransDate   dateFrom   = dateNull();
+        TransDate   dateTo     = systemDateGet();
+        if (element.args().dataset() == tableNum(LedgerJournalTable))
         {
-            TransDate   dateFrom   = dateNull();
-            TransDate   dateTo     = systemDateGet();
-            if (element.args().dataset() == tableNum(LedgerJournalTable))
-            {
-                ledgerJournalTable = element.args().record();
-                journalNum         = ledgerJournalTable.JournalNum;
-                LedgerJournalTrans_AccountNum.parmJournalName(ledgerJournalTable.JournalName);
-                LedgerJournalTrans_AccountNum1.parmJournalName(ledgerJournalTable.JournalName);
-                Group4_AccountNum.parmJournalName(ledgerJournalTable.JournalName);
-        . . .
+            ledgerJournalTable = element.args().record();
+            journalNum         = ledgerJournalTable.JournalNum;
+            LedgerJournalTrans_AccountNum.parmJournalName(ledgerJournalTable.JournalName);
+            LedgerJournalTrans_AccountNum1.parmJournalName(ledgerJournalTable.JournalName);
+            Group4_AccountNum.parmJournalName(ledgerJournalTable.JournalName);
+    . . .
+    ```
 
 2.  Update the code in the **LedgerJournalTrans** data source’s **active()** method. **Note:** The **getValue()** method should be called only if the account type is set to **Ledger**. Otherwise, a call to this method will cause an invalid function call.
 
-        . . .
-        LedgerJournalTrans_AccountNum.parmCurrency(ledgerJournalTrans.CurrencyCode);
-        LedgerJournalTrans_AccountNum1.parmCurrency(ledgerJournalTrans.CurrencyCode);
-        Group4_AccountNum.parmCurrency(ledgerJournalTrans.CurrencyCode);
-        LedgerJournalTrans_AccountNum.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
-        LedgerJournalTrans_AccountNum1.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
-        Group4_AccountNum.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
-        LedgerJournalTrans_AccountNum.parmControlDate(ledgerJournalTrans.TransDate);
-        LedgerJournalTrans_AccountNum1.parmControlDate(ledgerJournalTrans.TransDate);
-        Group4_AccountNum.parmControlDate(ledgerJournalTrans.TransDate);
-        if (ledgerJournalTrans.AccountType == LedgerJournalACType::Ledger)
-        {
-            currentMainAccountId = LedgerJournalTrans_AccountNum.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
-        }
-        else
-        {
-            currentMainAccountId = 0;
-        }
-        return ret;
+    ```xpp
+    . . .
+    LedgerJournalTrans_AccountNum.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    LedgerJournalTrans_AccountNum1.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    Group4_AccountNum.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    LedgerJournalTrans_AccountNum.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
+    LedgerJournalTrans_AccountNum1.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
+    Group4_AccountNum.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
+    LedgerJournalTrans_AccountNum.parmControlDate(ledgerJournalTrans.TransDate);
+    LedgerJournalTrans_AccountNum1.parmControlDate(ledgerJournalTrans.TransDate);
+    Group4_AccountNum.parmControlDate(ledgerJournalTrans.TransDate);
+    if (ledgerJournalTrans.AccountType == LedgerJournalACType::Ledger)
+    {
+        currentMainAccountId = LedgerJournalTrans_AccountNum.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
+    }
+    else
+    {
+        currentMainAccountId = 0;
+    }
+    return ret;
+    ```
 
 3.  Add the following code to the **modified()** method of the **LedgerJournalTrans** data source’s **CurrencyCode** field.
 
-        LedgerJournalTrans_AccountNum.parmCurrency(ledgerJournalTrans.CurrencyCode);
-        LedgerJournalTrans_AccountNum1.parmCurrency(ledgerJournalTrans.CurrencyCode);
-        Group4_AccountNum.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    ```xpp
+    LedgerJournalTrans_AccountNum.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    LedgerJournalTrans_AccountNum1.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    Group4_AccountNum.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    ```
 
 4.  Add the following code to the **modified()** method of the **LedgerJournalTrans** data source’s **Company** field.
 
-        LedgerJournalTrans_AccountNum.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
-        LedgerJournalTrans_AccountNum1.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
-        Group4_AccountNum.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
+   ```xpp
+    LedgerJournalTrans_AccountNum.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
+    LedgerJournalTrans_AccountNum1.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
+    Group4_AccountNum.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
+    ```
 
 5.  Add the following code to the **modified()** method of the **LedgerJournalTrans** data source’s **TransDate** field.
 
-        LedgerJournalTrans_AccountNum.parmControlDate(ledgerJournalTrans.TransDate);
-        LedgerJournalTrans_AccountNum1.parmControlDate(ledgerJournalTrans.TransDate);
-        Group4_AccountNum.parmControlDate(ledgerJournalTrans.TransDate);
+    ```xpp
+    LedgerJournalTrans_AccountNum.parmControlDate(ledgerJournalTrans.TransDate);
+    LedgerJournalTrans_AccountNum1.parmControlDate(ledgerJournalTrans.TransDate);
+    Group4_AccountNum.parmControlDate(ledgerJournalTrans.TransDate);
+    ```
 
 6.  Delete the **loadSegments()** method.
 
@@ -378,24 +412,26 @@ Because this method only calls the **jumpRef()** method on the control and doesn
 
 ##### Dynamics AX 2012
 
-    /* TODO: (Code Upgrade) [Segmented entry control] Fix controller usage, if any, in this method based on the migration guidance */
-    public void lookup()
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] Fix controller usage, if any, in this method based on the migration guidance */
+public void lookup()
+{
+    // Polish sale disposal may require to filter asset that are not
+    // marked for sale. lookupAccountNum method needs the ledgerJournalTrans_Asset.TransType
+    // value to filter appropriately the assets. Thus, ledgerJournalTrans_Asset is
+    // passed to accountNumLookup metho jumpRef d.
+    // <GEEPL>
+    if (!ledgerJournalEngine.accountNumLookup(ledgerJournalTrans_AccountNum,
+        ledgerJournalTrans,
+        ledgerJournalTrans.OffsetAccountType,
+        ledgerJournalTrans.parmOffsetAccount(),
+        ledgerJournalTrans_Asset))
     {
-        // Polish sale disposal may require to filter asset that are not
-        // marked for sale. lookupAccountNum method needs the ledgerJournalTrans_Asset.TransType
-        // value to filter appropriately the assets. Thus, ledgerJournalTrans_Asset is
-        // passed to accountNumLookup metho jumpRef d.
-        // <GEEPL>
-        if (!ledgerJournalEngine.accountNumLookup(ledgerJournalTrans_AccountNum,
-            ledgerJournalTrans,
-            ledgerJournalTrans.OffsetAccountType,
-            ledgerJournalTrans.parmOffsetAccount(),
-            ledgerJournalTrans_Asset))
-        {
-            super();
-        }
-        // </GEEPL>
+        super();
     }
+    // </GEEPL>
+}
+```
 
 ##### Dynamics AX for Operations
 
@@ -405,9 +441,42 @@ This method implements a custom lookup for the control. Therefore, leave the met
 
 ##### Dynamics AX 2012
 
-    /* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
-    public void segmentValueChanged(SegmentValueChangedEventArgs _e)
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
+public void segmentValueChanged(SegmentValueChangedEventArgs _e)
+{
+    // <GIN>
+    if (TaxWithholdParameters_IN::checkTaxParameters()
+        && ledgerJournalTrans.TaxWithholdCode_IN != '')
     {
+        if (Box::okCancel("@GLS222698",
+            DialogButton::Cancel) == DialogButton::Cancel)
+        {
+            return;
+        }
+    }
+    // </GIN>
+    super(_e);
+
+    /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
+    // dimAccountController.segmentValueChanged(_e);
+    currentMainAccountId = ledgerJournalEngine.onPrimaryAccountSegmentChanged(dimAccountController, currentMainAccountId, ledgerJournalTrans);
+}
+```
+
+##### Dynamics AX for Operations
+
+1.  Override the **onSegmentChanged()** method on the control, and add the following code to it.
+
+    ```xpp
+    /// <summary>
+    /// Event handler for the segment changed event.
+    /// </summary>
+    /// <param name = "_segment">The segment that has been changed.</param>
+    public void onSegmentChanged(DimensionControlSegment _segment)
+    {
+        super(_segment);
+
         // <GIN>
         if (TaxWithholdParameters_IN::checkTaxParameters()
             && ledgerJournalTrans.TaxWithholdCode_IN != '')
@@ -418,44 +487,15 @@ This method implements a custom lookup for the control. Therefore, leave the met
                 return;
             }
         }
+
         // </GIN>
-        super(_e);
-
-        /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
-        // dimAccountController.segmentValueChanged(_e);
-        currentMainAccountId = ledgerJournalEngine.onPrimaryAccountSegmentChanged(dimAccountController, currentMainAccountId, ledgerJournalTrans);
-    }
-
-##### Dynamics AX for Operations
-
-1.  Override the **onSegmentChanged()** method on the control, and add the following code to it.
-
-        /// <summary>
-        /// Event handler for the segment changed event.
-        /// </summary>
-        /// <param name = "_segment">The segment that has been changed.</param>
-        public void onSegmentChanged(DimensionControlSegment _segment)
+        if (_segment.parmName() == mainAccountDimAttrName)
         {
-            super(_segment);
-
-            // <GIN>
-            if (TaxWithholdParameters_IN::checkTaxParameters()
-                && ledgerJournalTrans.TaxWithholdCode_IN != '')
-            {
-                if (Box::okCancel("@GLS222698",
-                    DialogButton::Cancel) == DialogButton::Cancel)
-                {
-                    return;
-                }
-            }
-
-            // </GIN>
-            if (_segment.parmName() == mainAccountDimAttrName)
-            {
-                previousMainAccountId = currentMainAccountId;
-            }
-            currentMainAccountId = ledgerJournalEngine.onPrimaryAccountSegmentChanged(LedgerJournalTrans_AccountNum, currentMainAccountId, ledgerJournalTrans);
+            previousMainAccountId = currentMainAccountId;
         }
+        currentMainAccountId = ledgerJournalEngine.onPrimaryAccountSegmentChanged(LedgerJournalTrans_AccountNum, currentMainAccountId, ledgerJournalTrans);
+    }
+    ```
 
 2.  Delete the **segmentValueChanged()** method. **Note:** The preceding code for the **onSegmentChanged()** method will not compile, because the **onPrimaryAccountSegmentChanged()** method expects a controller object, but this code passes an instance of the SEC. To call methods on the control instance, you must change the method’s signature and its implementation accordingly. This method is used by more than 50 callers. Therefore, you would also have to update all those calls. Alternatively, you can add a new method that follows this guidance.
 
@@ -463,16 +503,18 @@ This method implements a custom lookup for the control. Therefore, leave the met
 
 ##### Dynamics AX 2012
 
-    /* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
-    public boolean validate()
-    {
-        boolean isValid;
-        isValid = super();
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
+public boolean validate()
+{
+    boolean isValid;
+    isValid = super();
 
-        /* TODO: (Code Upgrade) [Segmented entry control] This statement can be removed if there is no custom logic */
-        // isValid = dimAccountController.validate() && isValid;
-        return isValid;
-    }
+    /* TODO: (Code Upgrade) [Segmented entry control] This statement can be removed if there is no custom logic */
+    // isValid = dimAccountController.validate() && isValid;
+    return isValid;
+}
+```
 
 ##### Dynamics AX for Operations
 
@@ -486,41 +528,45 @@ Because this method only calls the **validate()** method on the control and does
 
 ##### Dynamics AX 2012
 
-    /* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
-    void gotFocus()
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
+void gotFocus()
+{
+    super();
+    if (ledgerJournalTable.FixedOffsetAccount)
     {
-        super();
+        gridOffsetAccount.allowEdit(ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger);
+    }
+    else if (!gridOffsetAccount.allowEdit())
+    {
+        gridOffsetAccount.allowEdit(true);
+    }
+}
+```
+
+##### Dynamics AX for Operations
+
+1.  Add the following code to the **initLedger()** method, after the code that updates the ledgerJournalTable buffer.
+
+    ```xpp
+    . . .
+    if (element.args().dataset() == tableNum(LedgerJournalTable))
+    {
+        ledgerJournalTable = element.args().record();
+        journalNum         = ledgerJournalTable.JournalNum;
+        LedgerJournalTrans_AccountNum.parmJournalName(ledgerJournalTable.JournalName);
+        LedgerJournalTrans_AccountNum1.parmJournalName(ledgerJournalTable.JournalName);
+        Group4_AccountNum.parmJournalName(ledgerJournalTable.JournalName);
         if (ledgerJournalTable.FixedOffsetAccount)
-        {
+        {               
             gridOffsetAccount.allowEdit(ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger);
         }
         else if (!gridOffsetAccount.allowEdit())
         {
             gridOffsetAccount.allowEdit(true);
         }
-    }
-
-##### Dynamics AX for Operations
-
-1.  Add the following code to the **initLedger()** method, after the code that updates the ledgerJournalTable buffer.
-
-        . . .
-        if (element.args().dataset() == tableNum(LedgerJournalTable))
-        {
-            ledgerJournalTable = element.args().record();
-            journalNum         = ledgerJournalTable.JournalNum;
-            LedgerJournalTrans_AccountNum.parmJournalName(ledgerJournalTable.JournalName);
-            LedgerJournalTrans_AccountNum1.parmJournalName(ledgerJournalTable.JournalName);
-            Group4_AccountNum.parmJournalName(ledgerJournalTable.JournalName);
-            if (ledgerJournalTable.FixedOffsetAccount)
-            {               
-                gridOffsetAccount.allowEdit(ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger);
-            }
-            else if (!gridOffsetAccount.allowEdit())
-            {
-                gridOffsetAccount.allowEdit(true);
-            }
-        . . .
+    . . .
+    ```
 
 2.  Delete the **gotFocus()** method.
 
@@ -528,13 +574,15 @@ Because this method only calls the **validate()** method on the control and does
 
 ##### Dynamics AX 2012
 
-    /* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
-    public void jumpRef()
-    {
-        GridOffsetAccount.jumpRef();
-        LedgerJournalTrans_OffsetAccount1.jumpRef();
-        Group4_OffsetAccount.jumpRef();
-    }
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
+public void jumpRef()
+{
+    GridOffsetAccount.jumpRef();
+    LedgerJournalTrans_OffsetAccount1.jumpRef();
+    Group4_OffsetAccount.jumpRef();
+}
+```
 
 ##### Dynamics AX for Operations
 
@@ -544,129 +592,143 @@ Because this method only calls the **jumpRef()** method on the control and doesn
 
 ##### Dynamics AX 2012
 
-    /* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
-    public void loadSegments()
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
+public void loadSegments()
+{
+    super();
+    GridOffsetAccount.parmJournalName(ledgerJournalTable.JournalName);
+    LedgerJournalTrans_OffsetAccount1.parmJournalName(ledgerJournalTable.JournalName);
+    Group4_OffsetAccount.parmJournalName(ledgerJournalTable.JournalName);
+    GridOffsetAccount.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    LedgerJournalTrans_OffsetAccount1.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    Group4_OffsetAccount.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    GridOffsetAccount.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
+    LedgerJournalTrans_OffsetAccount1.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
+    Group4_OffsetAccount.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
+    GridOffsetAccount.parmControlDate(ledgerJournalTrans.TransDate);
+    LedgerJournalTrans_OffsetAccount1.parmControlDate(ledgerJournalTrans.TransDate);
+    Group4_OffsetAccount.parmControlDate(ledgerJournalTrans.TransDate);
+
+    /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
+    // dimOffsetAccountController.loadSegments();
+    currentOffsetMainAccountId = dimOffsetAccountController.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
+
+    // Lock the main account segment if "Fixed offset account" is selected in Journal Names
+    if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
     {
-        super();
-        GridOffsetAccount.parmJournalName(ledgerJournalTable.JournalName);
-        LedgerJournalTrans_OffsetAccount1.parmJournalName(ledgerJournalTable.JournalName);
-        Group4_OffsetAccount.parmJournalName(ledgerJournalTable.JournalName);
-        GridOffsetAccount.parmCurrency(ledgerJournalTrans.CurrencyCode);
-        LedgerJournalTrans_OffsetAccount1.parmCurrency(ledgerJournalTrans.CurrencyCode);
-        Group4_OffsetAccount.parmCurrency(ledgerJournalTrans.CurrencyCode);
-        GridOffsetAccount.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
-        LedgerJournalTrans_OffsetAccount1.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
-        Group4_OffsetAccount.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
-        GridOffsetAccount.parmControlDate(ledgerJournalTrans.TransDate);
-        LedgerJournalTrans_OffsetAccount1.parmControlDate(ledgerJournalTrans.TransDate);
-        Group4_OffsetAccount.parmControlDate(ledgerJournalTrans.TransDate);
-
-        /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
-        // dimOffsetAccountController.loadSegments();
-        currentOffsetMainAccountId = dimOffsetAccountController.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
-
-        // Lock the main account segment if "Fixed offset account" is selected in Journal Names
-        if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
-        {
-            GridOffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
-            LedgerJournalTrans_OffsetAccount1.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
-            Group4_OffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
-        }
+        GridOffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+        LedgerJournalTrans_OffsetAccount1.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+        Group4_OffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
     }
+}
+```
 
 ##### Dynamics AX for Operations
 
 1.  Update the **initLedger()** method. **Note:** The **getValue()** method should be called only if the account type is set to **Ledger**. Otherwise, a call to this method will cause an invalid function call.
 
-        void initLedger()
+    ```xpp
+    void initLedger()
+    {
+        TransDate   dateFrom   = dateNull();
+        TransDate   dateTo     = systemDateGet();
+        if (element.args().dataset() == tableNum(LedgerJournalTable))
         {
-            TransDate   dateFrom   = dateNull();
-            TransDate   dateTo     = systemDateGet();
-            if (element.args().dataset() == tableNum(LedgerJournalTable))
+            ledgerJournalTable = element.args().record();
+            journalNum         = ledgerJournalTable.JournalNum;
+            GridOffsetAccount.parmJournalName(ledgerJournalTable.JournalName);
+            LedgerJournalTrans_OffsetAccount1.parmJournalName(ledgerJournalTable.JournalName);
+            Group4_OffsetAccount.parmJournalName(ledgerJournalTable.JournalName);
+            if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
             {
-                ledgerJournalTable = element.args().record();
-                journalNum         = ledgerJournalTable.JournalNum;
-                GridOffsetAccount.parmJournalName(ledgerJournalTable.JournalName);
-                LedgerJournalTrans_OffsetAccount1.parmJournalName(ledgerJournalTable.JournalName);
-                Group4_OffsetAccount.parmJournalName(ledgerJournalTable.JournalName);
-                if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
-                {
-                    currentOffsetMainAccountId = GridOffsetAccount.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
-                }
-                else
-                {
-                    currentOffsetMainAccountId = 0;
-                }
+                currentOffsetMainAccountId = GridOffsetAccount.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
+            }
+            else
+            {
+                currentOffsetMainAccountId = 0;
+            }
 
-                // Lock the main account segment if "Fixed offset account" is selected in Journal Names
-                if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
-                {
-                    GridOffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
-                }
-        . . .
+            // Lock the main account segment if "Fixed offset account" is selected in Journal Names
+            if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
+            {
+                GridOffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+            }
+    . . .
+    ```
 
 2.  Update the code in the **LedgerJournalTrans** data source’s **active()** method. **Note:** The **getValue()** method should be called only if the account type is set to **Ledger**. Otherwise, a call to this method will cause an invalid function call.
 
-        . . .
-        GridOffsetAccount.parmCurrency(ledgerJournalTrans.CurrencyCode);
-        LedgerJournalTrans_OffsetAccount1.parmCurrency(ledgerJournalTrans.CurrencyCode);
-        Group4_OffsetAccount.parmCurrency(ledgerJournalTrans.CurrencyCode);
-        GridOffsetAccount.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
-        LedgerJournalTrans_OffsetAccount1.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
-        Group4_OffsetAccount.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
-        GridOffsetAccount.parmControlDate(ledgerJournalTrans.TransDate);
-        LedgerJournalTrans_OffsetAccount1.parmControlDate(ledgerJournalTrans.TransDate);
-        Group4_OffsetAccount.parmControlDate(ledgerJournalTrans.TransDate);
-        if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
-        {
-            currentOffsetMainAccountId = GridOffsetAccount.getValue( DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
-        }
-        else
-        {
-            currentOffsetMainAccountId = 0;
-        }
+    ```xpp
+    . . .
+    GridOffsetAccount.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    LedgerJournalTrans_OffsetAccount1.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    Group4_OffsetAccount.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    GridOffsetAccount.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
+    LedgerJournalTrans_OffsetAccount1.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
+    Group4_OffsetAccount.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
+    GridOffsetAccount.parmControlDate(ledgerJournalTrans.TransDate);
+    LedgerJournalTrans_OffsetAccount1.parmControlDate(ledgerJournalTrans.TransDate);
+    Group4_OffsetAccount.parmControlDate(ledgerJournalTrans.TransDate);
+    if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
+    {
+        currentOffsetMainAccountId = GridOffsetAccount.getValue( DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
+    }
+    else
+    {
+        currentOffsetMainAccountId = 0;
+    }
 
-        // Lock the main account segment if "Fixed offset account" is selected in Journal Names
-        if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
-        { 
-            GridOffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
-        }
-        return ret;
+    // Lock the main account segment if "Fixed offset account" is selected in Journal Names
+    if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
+    { 
+        GridOffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+    }
+    return ret;
+    ```
 
 3.  Add the following code to the **modified()** method of the **LedgerJournalTrans** data source’s **CurrencyCode** field.
 
-        GridOffsetAccount.parmCurrency(ledgerJournalTrans.CurrencyCode);
-        LedgerJournalTrans_OffsetAccount1.parmCurrency(ledgerJournalTrans.CurrencyCode);
-        Group4_OffsetAccount.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    ```xpp
+    GridOffsetAccount.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    LedgerJournalTrans_OffsetAccount1.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    Group4_OffsetAccount.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    ```
 
 4.  Add the following code to the **modified()** method of the **LedgerJournalTrans** data source’s **OffsetCompany** field.
 
-        GridOffsetAccount.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
-        LedgerJournalTrans_OffsetAccount1.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
-        Group4_OffsetAccount.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
+    ```xpp
+    GridOffsetAccount.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
+    LedgerJournalTrans_OffsetAccount1.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
+    Group4_OffsetAccount.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
+    ```
 
 5.  Add the following code to the **modified()** method of the **LedgerJournalTrans** data source’s **TransDate** field.
 
-        GridOffsetAccount.parmControlDate(ledgerJournalTrans.TransDate);
-        LedgerJournalTrans_OffsetAccount1.parmControlDate(ledgerJournalTrans.TransDate);
-        Group4_OffsetAccount.parmControlDate(ledgerJournalTrans.TransDate);
+    ```xpp
+    GridOffsetAccount.parmControlDate(ledgerJournalTrans.TransDate);
+    LedgerJournalTrans_OffsetAccount1.parmControlDate(ledgerJournalTrans.TransDate);
+    Group4_OffsetAccount.parmControlDate(ledgerJournalTrans.TransDate);
+    ```
 
 6.  Add the following code to the **modified()** method of the **LedgerJournalTrans** data source’s **OffsetAccountType** field. **Note:** The **getValue()** method should be called only if the account type is set to **Ledger**. Otherwise, a call to this method cause an invalid function call.
 
-        if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
-        {
-            currentOffsetMainAccountId = GridOffsetAccount.getValue( DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
-        }
-        else
-        {
-            currentOffsetMainAccountId = 0;
-        }
+    ```xpp
+    if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
+    {
+        currentOffsetMainAccountId = GridOffsetAccount.getValue( DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
+    }
+    else
+    {
+        currentOffsetMainAccountId = 0;
+    }
 
-        // Lock the main account segment if "Fixed offset account" is selected in Journal Names
-        if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
-        {
-            GridOffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
-        }
+    // Lock the main account segment if "Fixed offset account" is selected in Journal Names
+    if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
+    {
+        GridOffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+    }
+    ```
 
 7.  Delete the **loadSegments()** method.
 
@@ -674,32 +736,36 @@ Because this method only calls the **jumpRef()** method on the control and doesn
 
 ##### Dynamics AX 2012
 
-    /* TODO: (Code Upgrade) [Segmented entry control] Fix controller usage, if any, in this method based on the migration guidance */
-    public void lookup()
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] Fix controller usage, if any, in this method based on the migration guidance */
+public void lookup()
+{
+    // Find the current segment index value
+    int currentSegmentIndex = dimOffsetAccountController.parmControl().currentSegmentIndex();
+    if ((ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger &&
+        dimOffsetAccountController.getDimensionAttributeByControlIndex(currentSegmentIndex) != DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount)) ||
+        !ledgerJournalEngine.offsetAccountNumLookUp(gridOffsetAccount, ledgerJournalTrans))
     {
-        // Find the current segment index value
-        int currentSegmentIndex = dimOffsetAccountController.parmControl().currentSegmentIndex();
-        if ((ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger &&
-            dimOffsetAccountController.getDimensionAttributeByControlIndex(currentSegmentIndex) != DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount)) ||
-            !ledgerJournalEngine.offsetAccountNumLookUp(gridOffsetAccount, ledgerJournalTrans))
-        {
-            super();
-        }
+        super();
     }
+}
+```
 
 ##### Dynamics AX for Operations
 
 This method implements a custom lookup for the control. Therefore, keep the method, but replace the controller with the control instance. In this case, because the method is overridden on the **GridOffsetAccount** control, even though **dimOffsetAccountController** was used for three different SEC instances (based on the mapping that is shown in the TODOs on controller variable declarations), we must replace the controller with only one SEC instance. Therefore, the code will look like this.
 
-    public void lookup()
+```xpp
+public void lookup()
+{
+    // Find the current segment index value
+    int currentSegmentIndex = GridOffsetAccount.getCurrentSegmentIndex();
+    if ((ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger && GridOffsetAccount.getDimensionAttributeByControlIndex(currentSegmentIndex) != DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount)) || !ledgerJournalEngine.offsetAccountNumLookUp(gridOffsetAccount, ledgerJournalTrans))
     {
-        // Find the current segment index value
-        int currentSegmentIndex = GridOffsetAccount.getCurrentSegmentIndex();
-        if ((ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger && GridOffsetAccount.getDimensionAttributeByControlIndex(currentSegmentIndex) != DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount)) || !ledgerJournalEngine.offsetAccountNumLookUp(gridOffsetAccount, ledgerJournalTrans))
-        {
-            super();
-        }
+        super();
     }
+}
+```
 
 To hook up custom lookups, you must override the SEC’s **checkUseCustomLookup** method. Additionally, make sure that the **closeSelectRecord** method on the custom lookup form is overridden. For an example, see the **CustTableLookup** form.
 
@@ -707,29 +773,33 @@ To hook up custom lookups, you must override the SEC’s **checkUseCustomLookup*
 
 ##### Dynamics AX 2012
 
-    /* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
-    public void segmentValueChanged(SegmentValueChangedEventArgs _e)
-    {
-        super(_e);
-        /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
-        // dimOffsetAccountController.segmentValueChanged(_e);
-        currentOffsetMainAccountId = ledgerJournalEngine.onOffsetAccountSegmentChanged(dimOffsetAccountController, currentOffsetMainAccountId, ledgerJournalTrans);
-    }
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
+public void segmentValueChanged(SegmentValueChangedEventArgs _e)
+{
+    super(_e);
+    /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
+    // dimOffsetAccountController.segmentValueChanged(_e);
+    currentOffsetMainAccountId = ledgerJournalEngine.onOffsetAccountSegmentChanged(dimOffsetAccountController, currentOffsetMainAccountId, ledgerJournalTrans);
+}
+```
 
 ##### Dynamics AX for Operations
 
 1.  Override the **onSegmentChanged()** method on the control, and add the following code to it.
 
-        /// <summary>
-        /// Event handler for the segment changed event.
-        /// </summary>
-        /// <param name = "_segment">The segment that was modified.</param>
-        public void onSegmentChanged(DimensionControlSegment _segment)
-        {
-            super(_segment);
-            currentOffsetMainAccountId = ledgerJournalEngine.onOffsetAccountSegmentChanged(
-            GridOffsetAccount, currentOffsetMainAccountId, ledgerJournalTrans);
-        }
+    ```xpp
+    /// <summary>
+    /// Event handler for the segment changed event.
+    /// </summary>
+    /// <param name = "_segment">The segment that was modified.</param>
+    public void onSegmentChanged(DimensionControlSegment _segment)
+    {
+        super(_segment);
+        currentOffsetMainAccountId = ledgerJournalEngine.onOffsetAccountSegmentChanged(
+        GridOffsetAccount, currentOffsetMainAccountId, ledgerJournalTrans);
+    }
+    ```
 
 2.  Delete the **segmentValueChanged()** method. **Note:** The preceding code for the **onSegmentChanged()** method will not compile, because the **onOffsetAccountSegmentChanged()** method expects a controller object, but this code passes an instance of the SEC. To call methods on the control instance, you must change the method’s signature and its implementation accordingly. This method is used by more than 50 callers. Therefore, you would also have to update all those calls. Alternatively, you can add a new method that follows this guidance.
 
@@ -737,16 +807,18 @@ To hook up custom lookups, you must override the SEC’s **checkUseCustomLookup*
 
 ##### Dynamics AX 2012
 
-    /* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
-    public boolean validate()
-    {
-        boolean isValid;
-        isValid = super();
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
+public boolean validate()
+{
+    boolean isValid;
+    isValid = super();
 
-        /* TODO: (Code Upgrade) [Segmented entry control] This statement can be removed if there is no custom logic */
-        // isValid = dimOffsetAccountController.validate() && isValid;
-        return isValid;
-    }
+    /* TODO: (Code Upgrade) [Segmented entry control] This statement can be removed if there is no custom logic */
+    // isValid = dimOffsetAccountController.validate() && isValid;
+    return isValid;
+}
+```
 
 ##### Dynamics AX for Operations
 
@@ -760,13 +832,15 @@ Because this method only calls the **validate()** method on the control and does
 
 ##### Dynamics AX 2012
 
-    /* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
-    public void jumpRef()
-    {
-        LedgerJournalTrans_AccountNum.jumpRef();
-        LedgerJournalTrans_AccountNum1.jumpRef();
-        Group4_AccountNum.jumpRef();
-    }
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
+public void jumpRef()
+{
+    LedgerJournalTrans_AccountNum.jumpRef();
+    LedgerJournalTrans_AccountNum1.jumpRef();
+    Group4_AccountNum.jumpRef();
+}
+```
 
 ##### Dynamics AX for Operations
 
@@ -776,27 +850,29 @@ Because this method only calls the **jumpRef()** method on the control and doesn
 
 ##### Dynamics AX 2012
 
-    /* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
-    public void loadSegments()
-    {
-        super();
-        LedgerJournalTrans_AccountNum.parmJournalName(ledgerJournalTable.JournalName);
-        LedgerJournalTrans_AccountNum1.parmJournalName(ledgerJournalTable.JournalName);
-        Group4_AccountNum.parmJournalName(ledgerJournalTable.JournalName);
-        LedgerJournalTrans_AccountNum.parmCurrency(ledgerJournalTrans.CurrencyCode);
-        LedgerJournalTrans_AccountNum1.parmCurrency(ledgerJournalTrans.CurrencyCode);
-        Group4_AccountNum.parmCurrency(ledgerJournalTrans.CurrencyCode);
-        LedgerJournalTrans_AccountNum.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
-        LedgerJournalTrans_AccountNum1.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
-        Group4_AccountNum.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
-        LedgerJournalTrans_AccountNum.parmControlDate(ledgerJournalTrans.TransDate);
-        LedgerJournalTrans_AccountNum1.parmControlDate(ledgerJournalTrans.TransDate);
-        Group4_AccountNum.parmControlDate(ledgerJournalTrans.TransDate);
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
+public void loadSegments()
+{
+    super();
+    LedgerJournalTrans_AccountNum.parmJournalName(ledgerJournalTable.JournalName);
+    LedgerJournalTrans_AccountNum1.parmJournalName(ledgerJournalTable.JournalName);
+    Group4_AccountNum.parmJournalName(ledgerJournalTable.JournalName);
+    LedgerJournalTrans_AccountNum.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    LedgerJournalTrans_AccountNum1.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    Group4_AccountNum.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    LedgerJournalTrans_AccountNum.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
+    LedgerJournalTrans_AccountNum1.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
+    Group4_AccountNum.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
+    LedgerJournalTrans_AccountNum.parmControlDate(ledgerJournalTrans.TransDate);
+    LedgerJournalTrans_AccountNum1.parmControlDate(ledgerJournalTrans.TransDate);
+    Group4_AccountNum.parmControlDate(ledgerJournalTrans.TransDate);
 
-        /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
-        // dimAccountController.loadSegments();
-        currentMainAccountId = dimAccountController.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
-    }
+    /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
+    // dimAccountController.loadSegments();
+    currentMainAccountId = dimAccountController.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
+}
+```
 
 ##### Dynamics AX for Operations
 
@@ -806,14 +882,16 @@ The steps for migrating this method are the same as the steps for migrating the 
 
 ##### Dynamics AX 2012
 
-    /* TODO: (Code Upgrade) [Segmented entry control] Fix controller usage, if any, in this method based on the migration guidance */
-    public void lookup()
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] Fix controller usage, if any, in this method based on the migration guidance */
+public void lookup()
+{
+    if (!ledgerJournalEngine.accountNumLookup(ledgerJournalTrans_AccountNum1, ledgerJournalTrans))
     {
-        if (!ledgerJournalEngine.accountNumLookup(ledgerJournalTrans_AccountNum1, ledgerJournalTrans))
-        {
-            super();
-        }
+        super();
     }
+}
+```
 
 ##### Dynamics AX for Operations
 
@@ -823,29 +901,33 @@ This method implements a custom lookup for the control. Therefore, leave the met
 
 ##### Dynamics AX 2012
 
-    /* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
-    public void segmentValueChanged(SegmentValueChangedEventArgs _e)
-    {
-        super(_e);
-        /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
-        // dimAccountController.segmentValueChanged(_e);
-        currentMainAccountId = ledgerJournalEngine.onPrimaryAccountSegmentChanged(dimAccountController, currentMainAccountId, ledgerJournalTrans);
-    }
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
+public void segmentValueChanged(SegmentValueChangedEventArgs _e)
+{
+    super(_e);
+    /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
+    // dimAccountController.segmentValueChanged(_e);
+    currentMainAccountId = ledgerJournalEngine.onPrimaryAccountSegmentChanged(dimAccountController, currentMainAccountId, ledgerJournalTrans);
+}
+```
 
 ##### Dynamics AX for Operations
 
 1.  Override the **onSegmentChanged()** method on the control, and add the following code to it.
 
-        /// <summary>
-        /// The event handler when a segment is modified.
-        /// </summary>
-        /// <param name = "_segment">The segment that was modified.</param>
-        public void onSegmentChanged(DimensionControlSegment _segment)
-        {
-            super(_segment);
-            currentMainAccountId = ledgerJournalEngine.onPrimaryAccountSegmentChanged(
-            LedgerJournalTrans_AccountNum1, currentMainAccountId, ledgerJournalTrans);
-        }
+    ```
+    /// <summary>
+    /// The event handler when a segment is modified.
+    /// </summary>
+    /// <param name = "_segment">The segment that was modified.</param>
+    public void onSegmentChanged(DimensionControlSegment _segment)
+    {
+        super(_segment);
+        currentMainAccountId = ledgerJournalEngine.onPrimaryAccountSegmentChanged(
+        LedgerJournalTrans_AccountNum1, currentMainAccountId, ledgerJournalTrans);
+    }
+    ```
 
 2.  Delete the **segmentValueChanged()** method. **Note:** The preceding code for the **onSegmentChanged()** method will not compile, because the **onPrimaryAccountSegmentChanged()** method expects a controller object, but this code passes an instance of the SEC. To call methods on the control instance, you must change the method’s signature and its implementation accordingly. This method is used by more than 50 callers. Therefore, you would also have to update all of those calls. Alternatively, you can add a new method that follows this guidance.
 
@@ -853,15 +935,17 @@ This method implements a custom lookup for the control. Therefore, leave the met
 
 ##### Dynamics AX 2012
 
-    /* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
-    public boolean validate()
-    {
-        boolean isValid;
-        isValid = super();
-        /* TODO: (Code Upgrade) [Segmented entry control] This statement can be removed if there is no custom logic */
-        // isValid = dimAccountController.validate() && isValid;
-        return isValid;
-    }
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
+public boolean validate()
+{
+    boolean isValid;
+    isValid = super();
+    /* TODO: (Code Upgrade) [Segmented entry control] This statement can be removed if there is no custom logic */
+    // isValid = dimAccountController.validate() && isValid;
+    return isValid;
+}
+```
 
 ##### Dynamics AX for Operations
 
@@ -875,13 +959,15 @@ Because this method only calls the **validate()** method on the control and does
 
 ##### Dynamics AX 2012
 
-    /* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
-    public void jumpRef()
-    {
-        GridOffsetAccount.jumpRef();
-        LedgerJournalTrans_OffsetAccount1.jumpRef();
-        Group4_OffsetAccount.jumpRef();
-    }
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
+public void jumpRef()
+{
+    GridOffsetAccount.jumpRef();
+    LedgerJournalTrans_OffsetAccount1.jumpRef();
+    Group4_OffsetAccount.jumpRef();
+}
+```
 
 ##### Dynamics AX for Operations
 
@@ -891,34 +977,36 @@ Because this method only calls the **jumpRef()** method on the control and doesn
 
 ##### Dynamics AX 2012
 
-    /* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
-    public void loadSegments()
-    {
-        super();
-        GridOffsetAccount.parmJournalName(ledgerJournalTable.JournalName);
-        LedgerJournalTrans_OffsetAccount1.parmJournalName(ledgerJournalTable.JournalName);
-        Group4_OffsetAccount.parmJournalName(ledgerJournalTable.JournalName);
-        GridOffsetAccount.parmCurrency(ledgerJournalTrans.CurrencyCode);
-        LedgerJournalTrans_OffsetAccount1.parmCurrency(ledgerJournalTrans.CurrencyCode);
-        Group4_OffsetAccount.parmCurrency(ledgerJournalTrans.CurrencyCode);
-        GridOffsetAccount.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
-        LedgerJournalTrans_OffsetAccount1.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
-        Group4_OffsetAccount.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
-        GridOffsetAccount.parmControlDate(ledgerJournalTrans.TransDate);
-        LedgerJournalTrans_OffsetAccount1.parmControlDate(ledgerJournalTrans.TransDate);
-        Group4_OffsetAccount.parmControlDate(ledgerJournalTrans.TransDate);
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
+public void loadSegments()
+{
+    super();
+    GridOffsetAccount.parmJournalName(ledgerJournalTable.JournalName);
+    LedgerJournalTrans_OffsetAccount1.parmJournalName(ledgerJournalTable.JournalName);
+    Group4_OffsetAccount.parmJournalName(ledgerJournalTable.JournalName);
+    GridOffsetAccount.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    LedgerJournalTrans_OffsetAccount1.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    Group4_OffsetAccount.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    GridOffsetAccount.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
+    LedgerJournalTrans_OffsetAccount1.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
+    Group4_OffsetAccount.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
+    GridOffsetAccount.parmControlDate(ledgerJournalTrans.TransDate);
+    LedgerJournalTrans_OffsetAccount1.parmControlDate(ledgerJournalTrans.TransDate);
+    Group4_OffsetAccount.parmControlDate(ledgerJournalTrans.TransDate);
 
-        /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
-        // dimOffsetAccountController.loadSegments();
-        currentOffsetMainAccountId = dimOffsetAccountController.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
-        // Lock the main account segment if "Fixed offset account" is selected in Journal Names
-        if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
-        {
-            GridOffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
-            LedgerJournalTrans_OffsetAccount1.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
-            Group4_OffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
-        }
+    /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
+    // dimOffsetAccountController.loadSegments();
+    currentOffsetMainAccountId = dimOffsetAccountController.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
+    // Lock the main account segment if "Fixed offset account" is selected in Journal Names
+    if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
+    {
+        GridOffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+        LedgerJournalTrans_OffsetAccount1.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+        Group4_OffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
     }
+}
+```
 
 ##### Dynamics AX for Operations
 
@@ -926,58 +1014,64 @@ The migration steps for the **GridOffsetAccount.loadSegments()** method already 
 
 1.  Add a line of code to the **LedgerJournalTrans** data source’s **active** method.
 
-        if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
-        {
-            currentOffsetMainAccountId = GridOffsetAccount.getValue(
-            DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
-        }
-        else
-        {
-            currentOffsetMainAccountId = 0;
-        }
+    ```xpp
+    if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
+    {
+        currentOffsetMainAccountId = GridOffsetAccount.getValue(
+        DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
+    }
+    else
+    {
+        currentOffsetMainAccountId = 0;
+    }
 
-        // Lock the main account segment if "Fixed offset account" is selected in Journal Names
-        if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
-        {
-            GridOffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
-            LedgerJournalTrans_OffsetAccount1.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
-        }
+    // Lock the main account segment if "Fixed offset account" is selected in Journal Names
+    if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
+    {
+        GridOffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+        LedgerJournalTrans_OffsetAccount1.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+    }
+    ```
 
 2.  Make the same change in the **modified()** method of the **LedgerJournalTrans** data source’s **OffsetAccountType** field.
 
-        if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
-        {
-            currentOffsetMainAccountId = GridOffsetAccount.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
-        }
-        else
-        {
-            currentOffsetMainAccountId = 0;
-        }
+    ```xpp
+    if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
+    {
+        currentOffsetMainAccountId = GridOffsetAccount.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
+    }
+    else
+    {
+        currentOffsetMainAccountId = 0;
+    }
 
-        // Lock the main account segment if "Fixed offset account" is selected in Journal Names
-        if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
-        {
-            GridOffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
-            LedgerJournalTrans_OffsetAccount1.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
-        }
+    // Lock the main account segment if "Fixed offset account" is selected in Journal Names
+    if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
+    {
+        GridOffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+        LedgerJournalTrans_OffsetAccount1.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+    }
+    ```
 
 3.  Make the same change in the **initLedger()** method.
 
-        if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
-        {
-            currentOffsetMainAccountId = GridOffsetAccount.getValue( DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
-        }
-        else
-        {
-            currentOffsetMainAccountId = 0;
-        }
+    ```xpp
+    if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
+    {
+        currentOffsetMainAccountId = GridOffsetAccount.getValue( DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
+    }
+    else
+    {
+        currentOffsetMainAccountId = 0;
+    }
 
-        // Lock the main account segment if "Fixed offset account" is selected in Journal Names
-        if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
-        {
-            GridOffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
-            LedgerJournalTrans_OffsetAccount1.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
-        }
+    // Lock the main account segment if "Fixed offset account" is selected in Journal Names
+    if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
+    {
+        GridOffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+        LedgerJournalTrans_OffsetAccount1.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+    }
+    ```
 
 4.  Delete the **loadSegments()** method.
 
@@ -985,32 +1079,36 @@ The migration steps for the **GridOffsetAccount.loadSegments()** method already 
 
 ##### Dynamics AX 2012
 
-    /* TODO: (Code Upgrade) [Segmented entry control] Fix controller usage, if any, in this method based on the migration guidance */
-    public void lookup()
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] Fix controller usage, if any, in this method based on the migration guidance */
+public void lookup()
+{
+    // Find the current segment index value
+    int currentSegmentIndex = dimOffsetAccountController.parmControl().currentSegmentIndex();
+    if ((ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger &&
+        dimOffsetAccountController.getDimensionAttributeByControlIndex(currentSegmentIndex) != DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount)) ||
+        !ledgerJournalEngine.offsetAccountNumLookUp(ledgerJournalTrans_OffsetAccount1, ledgerJournalTrans))
     {
-        // Find the current segment index value
-        int currentSegmentIndex = dimOffsetAccountController.parmControl().currentSegmentIndex();
-        if ((ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger &&
-            dimOffsetAccountController.getDimensionAttributeByControlIndex(currentSegmentIndex) != DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount)) ||
-            !ledgerJournalEngine.offsetAccountNumLookUp(ledgerJournalTrans_OffsetAccount1, ledgerJournalTrans))
-        {
-            super();
-        }
+        super();
     }
+}
+```
 
 ##### Dynamics AX for Operations
 
 This method implements a custom lookup for the control. Therefore, keep the method, but replace the controller with the control instance. In this case, because the method is overridden on the **LedgerJournalTrans\_OffsetAccount1** control, even though **dimOffsetAccountController** was used for three different SEC instances (based on the mapping that is shown in the TODOs on controller variable declarations), we must replace the controller with only one SEC instance. Therefore, the code will look like this.
 
-    public void lookup()
+```xpp
+public void lookup()
+{
+    // Find the current segment index value
+    int currentSegmentIndex = LedgerJournalTrans_OffsetAccount1.getCurrentSegmentIndex();
+    if ((ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger && LedgerJournalTrans_OffsetAccount1.getDimensionAttributeByControlIndex(currentSegmentIndex) != DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount)) || !ledgerJournalEngine.offsetAccountNumLookUp(ledgerJournalTrans_OffsetAccount1, ledgerJournalTrans))
     {
-        // Find the current segment index value
-        int currentSegmentIndex = LedgerJournalTrans_OffsetAccount1.getCurrentSegmentIndex();
-        if ((ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger && LedgerJournalTrans_OffsetAccount1.getDimensionAttributeByControlIndex(currentSegmentIndex) != DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount)) || !ledgerJournalEngine.offsetAccountNumLookUp(ledgerJournalTrans_OffsetAccount1, ledgerJournalTrans))
-        {
-            super();
-        }
+        super();
     }
+}
+```
 
 To hook up custom lookups, you must override the SEC’s **checkUseCustomLookup** method. Additionally, make sure that the **closeSelectRecord** method on the custom lookup form is overridden. For an example, see the **CustTableLookup** form.
 
@@ -1018,30 +1116,34 @@ To hook up custom lookups, you must override the SEC’s **checkUseCustomLookup*
 
 ##### Dynamics AX 2012
 
-    /* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
-    public void segmentValueChanged(SegmentValueChangedEventArgs _e)
-    {
-        super(_e);
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
+public void segmentValueChanged(SegmentValueChangedEventArgs _e)
+{
+    super(_e);
 
-        /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
-        // dimOffsetAccountController.segmentValueChanged(_e);
-        currentOffsetMainAccountId = ledgerJournalEngine.onOffsetAccountSegmentChanged(dimOffsetAccountController, currentOffsetMainAccountId, ledgerJournalTrans);
-    }
+    /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
+    // dimOffsetAccountController.segmentValueChanged(_e);
+    currentOffsetMainAccountId = ledgerJournalEngine.onOffsetAccountSegmentChanged(dimOffsetAccountController, currentOffsetMainAccountId, ledgerJournalTrans);
+}
+```
 
 ##### Dynamics AX for Operations
 
 1.  Override the **onSegmentChanged()** method on the control, and add the following code to it.
 
-        /// <summary>
-        /// The event handler when a segment is modified.
-        /// </summary>
-        /// <param name = "_segment">The segment that was modified.</param>
-        public void onSegmentChanged(DimensionControlSegment _segment)
-        {
-            super(_segment);
-            currentOffsetMainAccountId = ledgerJournalEngine.onOffsetAccountSegmentChanged(
-            LedgerJournalTrans_OffsetAccount1, currentOffsetMainAccountId, ledgerJournalTrans);
-        }
+    ```xpp
+    /// <summary>
+    /// The event handler when a segment is modified.
+    /// </summary>
+    /// <param name = "_segment">The segment that was modified.</param>
+    public void onSegmentChanged(DimensionControlSegment _segment)
+    {
+        super(_segment);
+        currentOffsetMainAccountId = ledgerJournalEngine.onOffsetAccountSegmentChanged(
+        LedgerJournalTrans_OffsetAccount1, currentOffsetMainAccountId, ledgerJournalTrans);
+    }
+    ```
 
 2.  Delete the **segmentValueChanged()** method. **Note:** The preceding code for the **onSegmentChanged()** method will not compile, because the **onOffsetAccountSegmentChanged()** method expects a controller object, but this code passes an instance of the SEC. To call methods on the control instance, you must change the method’s signature and its implementation accordingly. This method is used by more than 50 callers. Therefore, you would also have to update all those calls. Alternatively, you can add a new method that follows this guidance.
 
@@ -1049,16 +1151,18 @@ To hook up custom lookups, you must override the SEC’s **checkUseCustomLookup*
 
 ##### Dynamics AX 2012
 
-    /* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
-    public boolean validate()
-    {
-        boolean isValid;
-        isValid = super();
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
+public boolean validate()
+{
+    boolean isValid;
+    isValid = super();
 
-        /* TODO: (Code Upgrade) [Segmented entry control] This statement can be removed if there is no custom logic */
-        // isValid = dimOffsetAccountController.validate() && isValid;
-        return isValid;
-    }
+    /* TODO: (Code Upgrade) [Segmented entry control] This statement can be removed if there is no custom logic */
+    // isValid = dimOffsetAccountController.validate() && isValid;
+    return isValid;
+}
+```
 
 ##### Dynamics AX for Operations
 
@@ -1072,11 +1176,13 @@ Because this method only calls the **validate()** method on the control and does
 
 ##### Dynamics AX 2012
 
-    /* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
-    public void jumpRef()
-    {
-        CustPaymJournalFee_CustAccount.jumpRef();
-    }
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
+public void jumpRef()
+{
+    CustPaymJournalFee_CustAccount.jumpRef();
+}
+```
 
 ##### Dynamics AX for Operations
 
@@ -1086,44 +1192,56 @@ Because this method only calls the **jumpRef()** method on the control and doesn
 
 ##### Dynamics AX 2012
 
-    /* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
-    public void loadSegments()
-    {
-        super();
-        CustPaymJournalFee_CustAccount.parmJournalName(ledgerJournalTable.JournalName);
-        CustPaymJournalFee_CustAccount.parmCurrency(custVendPaymJournalFee.FeeCurrency);
-        CustPaymJournalFee_CustAccount.parmControlDate(ledgerJournalTrans.TransDate);
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
+public void loadSegments()
+{
+    super();
+    CustPaymJournalFee_CustAccount.parmJournalName(ledgerJournalTable.JournalName);
+    CustPaymJournalFee_CustAccount.parmCurrency(custVendPaymJournalFee.FeeCurrency);
+    CustPaymJournalFee_CustAccount.parmControlDate(ledgerJournalTrans.TransDate);
 
-        /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
-        // dimPaymentFeeAccountController.loadSegments();
-        currentPaymentFeeMainAccountId = dimPaymentFeeAccountController.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
-    }
+    /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
+    // dimPaymentFeeAccountController.loadSegments();
+    currentPaymentFeeMainAccountId = dimPaymentFeeAccountController.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
+}
+```
 
 ##### Dynamics AX for Operations
 
 1.  Update the **initLedger()** method.
 
-        ledgerJournalTable = element.args().record();
-        journalNum = ledgerJournalTable.JournalNum;
-        LedgerJournalTrans_AccountNum.parmJournalName(ledgerJournalTable.JournalName);
-        LedgerJournalTrans_AccountNum1.parmJournalName(ledgerJournalTable.JournalName); Group4_AccountNum.parmJournalName(ledgerJournalTable.JournalName); CustPaymJournalFee_CustAccount.parmJournalName(ledgerJournalTable.JournalName);
-        . . .
+    ```xpp
+    ledgerJournalTable = element.args().record();
+    journalNum = ledgerJournalTable.JournalNum;
+    LedgerJournalTrans_AccountNum.parmJournalName(ledgerJournalTable.JournalName);
+    LedgerJournalTrans_AccountNum1.parmJournalName(ledgerJournalTable.JournalName); Group4_AccountNum.parmJournalName(ledgerJournalTable.JournalName); CustPaymJournalFee_CustAccount.parmJournalName(ledgerJournalTable.JournalName);
+    . . .
+    ```
 
 2.  Add the following code to the **CustVendPaymJournalFee** data source’s **active()** method. **Note:** The method doesn't exist, so you must override it.
 
-        CustPaymJournalFee_CustAccount.parmCurrency(custVendPaymJournalFee.FeeCurrency);
+    ```xpp
+    CustPaymJournalFee_CustAccount.parmCurrency(custVendPaymJournalFee.FeeCurrency);
+    ```
 
 3.  Add the following code to the **modified()** method of the **CustVendPaymJournalFee** data source’s **FeeCurrency** field. **Note:** The method doesn't exist, so you must override it.
 
-        CustPaymJournalFee_CustAccount.parmCurrency(custVendPaymJournalFee.FeeCurrency);
+    ```xpp
+    CustPaymJournalFee_CustAccount.parmCurrency(custVendPaymJournalFee.FeeCurrency);
+    ```
 
 4.  Add the following code to the **LedgerJournalTrans** data source’s **active()** method.
 
-        CustPaymJournalFee_CustAccount.parmControlDate(ledgerJournalTrans.TransDate);
+    ```xpp
+    CustPaymJournalFee_CustAccount.parmControlDate(ledgerJournalTrans.TransDate);
+    ```
 
 5.  Add the following code to the **modified()** method of the **LedgerJournalTrans** data source’s **TransDate** field.
 
-        CustPaymJournalFee_CustAccount.parmControlDate(ledgerJournalTrans.TransDate);
+    ```xpp
+    CustPaymJournalFee_CustAccount.parmControlDate(ledgerJournalTrans.TransDate);
+    ```
 
 6.  Delete the **loadSegments()** method.
 
@@ -1131,54 +1249,58 @@ Because this method only calls the **jumpRef()** method on the control and doesn
 
 ##### Dynamics AX 2012
 
-    /* TODO: (Code Upgrade) [Segmented entry control] Fix controller usage, if any, in this method based on the migration guidance */
-    public void lookup()
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] Fix controller usage, if any, in this method based on the migration guidance */
+public void lookup()
+{
+    if (custVendPaymJournalFee.Module == ModuleCustVend::Cust)
     {
-        if (custVendPaymJournalFee.Module == ModuleCustVend::Cust)
+        if (custVendPaymJournalFee.LedgerJournalACType == LedgerJournalACType::Cust)
         {
-            if (custVendPaymJournalFee.LedgerJournalACType == LedgerJournalACType::Cust)
-            {
-                CustTable::lookupCustomer(this, ledgerJournalTrans.Company);
-            }
-            else if (custVendPaymJournalFee.LedgerJournalACType == LedgerJournalACType::Ledger)
-            {
-                super();
-            }
+            CustTable::lookupCustomer(this, ledgerJournalTrans.Company);
         }
-        else if (custVendPaymJournalFee.Module == ModuleCustVend::Vend)
+        else if (custVendPaymJournalFee.LedgerJournalACType == LedgerJournalACType::Ledger)
         {
-            if (custVendPaymJournalFee.LedgerJournalACType == LedgerJournalACType::Vend)
-            {
-                VendTable::lookupVendor(this, ledgerJournalTrans.Company);
-            }
-            else if (custVendPaymJournalFee.LedgerJournalACType == LedgerJournalACType::Ledger)
-            {
-                super();
-            }
+            super();
         }
     }
+    else if (custVendPaymJournalFee.Module == ModuleCustVend::Vend)
+    {
+        if (custVendPaymJournalFee.LedgerJournalACType == LedgerJournalACType::Vend)
+        {
+            VendTable::lookupVendor(this, ledgerJournalTrans.Company);
+        }
+        else if (custVendPaymJournalFee.LedgerJournalACType == LedgerJournalACType::Ledger)
+        {
+            super();
+        }
+    }
+}
+```
 
 ##### Dynamics AX for Operations
 
 This method implements a custom lookup for the control. Therefore, leave the method as it is. Just remove the TODO. To hook up custom lookups, you must override the SEC’s **checkUseCustomLookup** method. Here is an example.
 
-    public boolean checkUseCustomLookup(int _accountTypeEnumValue, int _secondaryAccountTypeEnumValue)
+```xpp
+public boolean checkUseCustomLookup(int _accountTypeEnumValue, int _secondaryAccountTypeEnumValue)
+{
+    boolean ret;
+    switch(_accountTypeEnumValue)
     {
-        boolean ret;
-        switch(_accountTypeEnumValue)
-        {
-            case LedgerJournalACType::Bank:
-            case LedgerJournalACType::Cust:
-            case LedgerJournalACType::FixedAssets:
-            case LedgerJournalACType::Project:
-            case LedgerJournalACType::Vend:
-                ret = true;
-                break;
-            default:
-                ret = false;
-        }
-        return ret;
+        case LedgerJournalACType::Bank:
+        case LedgerJournalACType::Cust:
+        case LedgerJournalACType::FixedAssets:
+        case LedgerJournalACType::Project:
+        case LedgerJournalACType::Vend:
+            ret = true;
+            break;
+        default:
+            ret = false;
     }
+    return ret;
+}
+```
 
 Additionally, make sure that the **closeSelectRecord** method on the custom lookup form is overridden. For an example, see the **CustTableLookup** form.
 
@@ -1186,30 +1308,34 @@ Additionally, make sure that the **closeSelectRecord** method on the custom look
 
 ##### Dynamics AX 2012
 
-    /* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
-    public void segmentValueChanged(SegmentValueChangedEventArgs _e)
-    {
-        super(_e);
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
+public void segmentValueChanged(SegmentValueChangedEventArgs _e)
+{
+    super(_e);
 
-        /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
-        // dimPaymentFeeAccountController.segmentValueChanged(_e);
-        currentPaymentFeeMainAccountId = ledgerJournalEngine.onPrimaryAccountSegmentChanged(dimPaymentFeeAccountController, currentPaymentFeeMainAccountId, ledgerJournalTrans);
-    }
+    /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
+    // dimPaymentFeeAccountController.segmentValueChanged(_e);
+    currentPaymentFeeMainAccountId = ledgerJournalEngine.onPrimaryAccountSegmentChanged(dimPaymentFeeAccountController, currentPaymentFeeMainAccountId, ledgerJournalTrans);
+}
+```
 
 ##### Dynamics AX for Operations
 
 1.  Override the **onSegmentChanged()** method on the control, and add the following code to it.
 
-        /// <summary>
-        /// The event handler when a segment is modified.
-        /// </summary>
-        /// <param name = "_segment">The segment that was modified.</param>
-        public void onSegmentChanged(DimensionControlSegment _segment)
-        {
-            super(_segment);
-            currentPaymentFeeMainAccountId = ledgerJournalEngine.onPrimaryAccountSegmentChanged(
-            CustPaymJournalFee_CustAccount, currentPaymentFeeMainAccountId, ledgerJournalTrans);
-        }
+    ```xpp
+    /// <summary>
+    /// The event handler when a segment is modified.
+    /// </summary>
+    /// <param name = "_segment">The segment that was modified.</param>
+    public void onSegmentChanged(DimensionControlSegment _segment)
+    {
+        super(_segment);
+        currentPaymentFeeMainAccountId = ledgerJournalEngine.onPrimaryAccountSegmentChanged(
+        CustPaymJournalFee_CustAccount, currentPaymentFeeMainAccountId, ledgerJournalTrans);
+    }
+    ```
 
 2.  Delete the **segmentValueChanged()** method. **Note:** The preceding code for the **onSegmentChanged()** method will not compile, because the **onPrimaryAccountSegmentChanged()** method expects a controller object, but this code passes an instance of the SEC. To call methods on the control instance, you must change the method’s signature and its implementation accordingly. This method is used by more than 50 callers. Therefore, you would also have to update all those calls. Alternatively, you can add a new method that can follow this guidance.
 
@@ -1217,16 +1343,18 @@ Additionally, make sure that the **closeSelectRecord** method on the custom look
 
 ##### Dynamics AX 2012
 
-    /* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
-    public boolean validate()
-    {
-        boolean isValid;
-        isValid = super();
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
+public boolean validate()
+{
+    boolean isValid;
+    isValid = super();
 
-        /* TODO: (Code Upgrade) [Segmented entry control] This statement can be removed if there is no custom logic */
-        // isValid = dimPaymentFeeAccountController.validate() && isValid;
-        return isValid;
-    }
+    /* TODO: (Code Upgrade) [Segmented entry control] This statement can be removed if there is no custom logic */
+    // isValid = dimPaymentFeeAccountController.validate() && isValid;
+    return isValid;
+}
+```
 
 ##### Dynamics AX for Operations
 
@@ -1240,13 +1368,15 @@ Because this method only calls the **validate()** method on the control and does
 
 ##### Dynamics AX 2012
 
-    /* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
-    public void jumpRef()
-    {
-        LedgerJournalTrans_AccountNum.jumpRef();
-        LedgerJournalTrans_AccountNum1.jumpRef();
-        Group4_AccountNum.jumpRef();
-    }
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
+public void jumpRef()
+{
+    LedgerJournalTrans_AccountNum.jumpRef();
+    LedgerJournalTrans_AccountNum1.jumpRef();
+    Group4_AccountNum.jumpRef();
+}
+```
 
 ##### Dynamics AX for Operations
 
@@ -1256,27 +1386,29 @@ Because this method only calls the **jumpRef()** method on the control and doesn
 
 ##### Dynamics AX 2012
 
-    /* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
-    public void loadSegments()
-    {
-        super();
-        LedgerJournalTrans_AccountNum.parmJournalName(ledgerJournalTable.JournalName);
-        LedgerJournalTrans_AccountNum1.parmJournalName(ledgerJournalTable.JournalName);
-        Group4_AccountNum.parmJournalName(ledgerJournalTable.JournalName);
-        LedgerJournalTrans_AccountNum.parmCurrency(ledgerJournalTrans.CurrencyCode);
-        LedgerJournalTrans_AccountNum1.parmCurrency(ledgerJournalTrans.CurrencyCode);
-        Group4_AccountNum.parmCurrency(ledgerJournalTrans.CurrencyCode);
-        LedgerJournalTrans_AccountNum.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
-        LedgerJournalTrans_AccountNum1.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
-        Group4_AccountNum.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
-        LedgerJournalTrans_AccountNum.parmControlDate(ledgerJournalTrans.TransDate);
-        LedgerJournalTrans_AccountNum1.parmControlDate(ledgerJournalTrans.TransDate);
-        Group4_AccountNum.parmControlDate(ledgerJournalTrans.TransDate);
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
+public void loadSegments()
+{
+    super();
+    LedgerJournalTrans_AccountNum.parmJournalName(ledgerJournalTable.JournalName);
+    LedgerJournalTrans_AccountNum1.parmJournalName(ledgerJournalTable.JournalName);
+    Group4_AccountNum.parmJournalName(ledgerJournalTable.JournalName);
+    LedgerJournalTrans_AccountNum.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    LedgerJournalTrans_AccountNum1.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    Group4_AccountNum.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    LedgerJournalTrans_AccountNum.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
+    LedgerJournalTrans_AccountNum1.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
+    Group4_AccountNum.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
+    LedgerJournalTrans_AccountNum.parmControlDate(ledgerJournalTrans.TransDate);
+    LedgerJournalTrans_AccountNum1.parmControlDate(ledgerJournalTrans.TransDate);
+    Group4_AccountNum.parmControlDate(ledgerJournalTrans.TransDate);
 
-        /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
-        // dimAccountController.loadSegments();
-        currentMainAccountId = dimAccountController.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
-    }
+    /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
+    // dimAccountController.loadSegments();
+    currentMainAccountId = dimAccountController.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
+}
+```
 
 ##### Dynamics AX for Operations
 
@@ -1286,14 +1418,16 @@ The steps for migrating this method are the same as the steps for migrating the 
 
 ##### Dynamics AX 2012
 
-    /* TODO: (Code Upgrade) [Segmented entry control] Fix controller usage, if any, in this method based on the migration guidance */
-    public void lookup()
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] Fix controller usage, if any, in this method based on the migration guidance */
+public void lookup()
+{
+    if (!ledgerJournalEngine.accountNumLookup(group4_AccountNum, ledgerJournalTrans))
     {
-        if (!ledgerJournalEngine.accountNumLookup(group4_AccountNum, ledgerJournalTrans))
-        {
-            super();
-        }
+        super();
     }
+}
+```
 
 ##### Dynamics AX for Operations
 
@@ -1303,33 +1437,37 @@ This method implements a custom lookup for the control. Therefore, leave the met
 
 ##### Dynamics AX 2012
 
-    /* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
-    public void segmentValueChanged(SegmentValueChangedEventArgs _e)
-    {
-        super(_e);
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
+public void segmentValueChanged(SegmentValueChangedEventArgs _e)
+{
+    super(_e);
 
-        /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
-        // dimAccountController.segmentValueChanged(_e);
-        currentMainAccountId = ledgerJournalEngine.onPrimaryAccountSegmentChanged(dimAccountController, currentMainAccountId, ledgerJournalTrans);
-    }
+    /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
+    // dimAccountController.segmentValueChanged(_e);
+    currentMainAccountId = ledgerJournalEngine.onPrimaryAccountSegmentChanged(dimAccountController, currentMainAccountId, ledgerJournalTrans);
+}
+```
 
 ##### Dynamics AX for Operations
 
 1.  Override the **onSegmentChanged()** method on the control, and add the following code to it.
 
-        /// <summary>
-        /// The event handler for the segment change event.
-        /// </summary>
-        /// <param name = "_segment">The segment that was modified.</param>
-        public void onSegmentChanged(DimensionControlSegment _segment)
+    ```xpp
+    /// <summary>
+    /// The event handler for the segment change event.
+    /// </summary>
+    /// <param name = "_segment">The segment that was modified.</param>
+    public void onSegmentChanged(DimensionControlSegment _segment)
+    {
+        super(_segment);
+        if (_segment.parmName() == mainAccountDimAttrName)
         {
-            super(_segment);
-            if (_segment.parmName() == mainAccountDimAttrName)
-            {
-                previousMainAccountId = currentMainAccountId;
-            }
-            currentMainAccountId = ledgerJournalEngine.onPrimaryAccountSegmentChanged(Group4_AccountNum, currentMainAccountId, ledgerJournalTrans);
+            previousMainAccountId = currentMainAccountId;
         }
+        currentMainAccountId = ledgerJournalEngine.onPrimaryAccountSegmentChanged(Group4_AccountNum, currentMainAccountId, ledgerJournalTrans);
+    }
+    ```
 
 2.  Delete the **segmentValueChanged()** method. **Note:** The preceding code for the **onSegmentChanged()** method will not compile, because the **onPrimaryAccountSegmentChanged()** method expects a controller object, but this code passes an instance of the SEC. To call methods on the control instance, you must change the method’s signature and its implementation accordingly. This method is used by more than 50 callers. Therefore, you would also have to update all those calls. Alternatively, you can add a new method that follows this guidance.
 
@@ -1337,16 +1475,18 @@ This method implements a custom lookup for the control. Therefore, leave the met
 
 ##### Dynamics AX 2012
 
-    /* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
-    public boolean validate()
-    {
-        boolean isValid;
-        isValid = super();
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
+public boolean validate()
+{
+    boolean isValid;
+    isValid = super();
 
-        /* TODO: (Code Upgrade) [Segmented entry control] This statement can be removed if there is no custom logic */
-        // isValid = dimAccountController.validate() && isValid;
-        return isValid;
-    }
+    /* TODO: (Code Upgrade) [Segmented entry control] This statement can be removed if there is no custom logic */
+    // isValid = dimAccountController.validate() && isValid;
+    return isValid;
+}
+```
 
 ##### Dynamics AX for Operations
 
@@ -1360,35 +1500,39 @@ Because this method only calls the **validate()** method on the control and does
 
 ##### Dynamics AX 2012
 
-    /* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
-    void gotFocus()
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
+void gotFocus()
+{
+    super();
+    if (ledgerJournalTable.FixedOffsetAccount)
     {
-        super();
-        if (ledgerJournalTable.FixedOffsetAccount)
-        {
-            group4_OffsetAccount.allowEdit(ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger);
-        }
-        else if (!group4_OffsetAccount.allowEdit())
-        {
-            group4_OffsetAccount.allowEdit(true);
-        }
+        group4_OffsetAccount.allowEdit(ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger);
     }
+    else if (!group4_OffsetAccount.allowEdit())
+    {
+        group4_OffsetAccount.allowEdit(true);
+    }
+}
+```
 
 ##### Dynamics AX for Operations
 
 1.  Update the code in the **initLedger()** method, after the code that updates the ledgerJournalTable buffer.
 
-        . . .
-        if (ledgerJournalTable.FixedOffsetAccount)
-        {
-            gridOffsetAccount.allowEdit(ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger); group4_OffsetAccount.allowEdit(ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger);
-        }
-        else if (!gridOffsetAccount.allowEdit())
-        {
-            gridOffsetAccount.allowEdit(true);
-            group4_OffsetAccount.allowEdit(true);
-        }
-        . . .
+    ```xpp
+    . . .
+    if (ledgerJournalTable.FixedOffsetAccount)
+    {
+        gridOffsetAccount.allowEdit(ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger); group4_OffsetAccount.allowEdit(ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger);
+    }
+    else if (!gridOffsetAccount.allowEdit())
+    {
+        gridOffsetAccount.allowEdit(true);
+        group4_OffsetAccount.allowEdit(true);
+    }
+    . . .
+    ```
 
 2.  Delete the **gotFocus()** method.
 
@@ -1396,13 +1540,15 @@ Because this method only calls the **validate()** method on the control and does
 
 ##### Dynamics AX 2012
 
-    /* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
-    public void jumpRef()
-    {
-        GridOffsetAccount.jumpRef();
-        LedgerJournalTrans_OffsetAccount1.jumpRef();
-        Group4_OffsetAccount.jumpRef();
-    }
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
+public void jumpRef()
+{
+    GridOffsetAccount.jumpRef();
+    LedgerJournalTrans_OffsetAccount1.jumpRef();
+    Group4_OffsetAccount.jumpRef();
+}
+```
 
 ##### Dynamics AX for Operations
 
@@ -1412,35 +1558,37 @@ Because this method only calls the **jumpRef()** method on the control and doesn
 
 ##### Dynamics AX 2012
 
-    /* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
-    public void loadSegments()
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
+public void loadSegments()
+{
+    super();
+    GridOffsetAccount.parmJournalName(ledgerJournalTable.JournalName);
+    LedgerJournalTrans_OffsetAccount1.parmJournalName(ledgerJournalTable.JournalName);
+    Group4_OffsetAccount.parmJournalName(ledgerJournalTable.JournalName);
+    GridOffsetAccount.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    LedgerJournalTrans_OffsetAccount1.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    Group4_OffsetAccount.parmCurrency(ledgerJournalTrans.CurrencyCode);
+    GridOffsetAccount.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
+    LedgerJournalTrans_OffsetAccount1.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
+    Group4_OffsetAccount.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
+    GridOffsetAccount.parmControlDate(ledgerJournalTrans.TransDate);
+    LedgerJournalTrans_OffsetAccount1.parmControlDate(ledgerJournalTrans.TransDate);
+    Group4_OffsetAccount.parmControlDate(ledgerJournalTrans.TransDate);
+
+    /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
+    // dimOffsetAccountController.loadSegments();
+    currentOffsetMainAccountId = dimOffsetAccountController.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
+
+    // Lock the main account segment if "Fixed offset account" is selected in Journal Names
+    if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
     {
-        super();
-        GridOffsetAccount.parmJournalName(ledgerJournalTable.JournalName);
-        LedgerJournalTrans_OffsetAccount1.parmJournalName(ledgerJournalTable.JournalName);
-        Group4_OffsetAccount.parmJournalName(ledgerJournalTable.JournalName);
-        GridOffsetAccount.parmCurrency(ledgerJournalTrans.CurrencyCode);
-        LedgerJournalTrans_OffsetAccount1.parmCurrency(ledgerJournalTrans.CurrencyCode);
-        Group4_OffsetAccount.parmCurrency(ledgerJournalTrans.CurrencyCode);
-        GridOffsetAccount.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
-        LedgerJournalTrans_OffsetAccount1.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
-        Group4_OffsetAccount.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
-        GridOffsetAccount.parmControlDate(ledgerJournalTrans.TransDate);
-        LedgerJournalTrans_OffsetAccount1.parmControlDate(ledgerJournalTrans.TransDate);
-        Group4_OffsetAccount.parmControlDate(ledgerJournalTrans.TransDate);
-
-        /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
-        // dimOffsetAccountController.loadSegments();
-        currentOffsetMainAccountId = dimOffsetAccountController.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
-
-        // Lock the main account segment if "Fixed offset account" is selected in Journal Names
-        if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
-        {
-            GridOffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
-            LedgerJournalTrans_OffsetAccount1.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
-            Group4_OffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
-        }
+        GridOffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+        LedgerJournalTrans_OffsetAccount1.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+        Group4_OffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
     }
+}
+```
 
 ##### Dynamics AX for Operations
 
@@ -1448,58 +1596,64 @@ The migration steps for the **GridOffsetAccount.loadSegments()** method already 
 
 1.  Update the code in the **LedgerJournalTrans** data source’s **active** method.
 
-        if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
-        {
-            currentOffsetMainAccountId = GridOffsetAccount.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
-        }
-        else
-        {
-            currentOffsetMainAccountId = 0;
-        }
+    ```xpp
+    if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
+    {
+        currentOffsetMainAccountId = GridOffsetAccount.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
+    }
+    else
+    {
+        currentOffsetMainAccountId = 0;
+    }
 
-        // Lock the main account segment if "Fixed offset account" is selected in Journal Names
-        if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
-        {
-            GridOffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
-            LedgerJournalTrans_OffsetAccount1.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
-            Group4_OffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
-        }
+    // Lock the main account segment if "Fixed offset account" is selected in Journal Names
+    if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
+    {
+        GridOffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+        LedgerJournalTrans_OffsetAccount1.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+        Group4_OffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+    }
+    ```
 
 2.  Make the same change in the **modified()** method of the **LedgerJournalTrans** data source’s **OffsetAccountType** field.
 
-        if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
-        {
-            currentOffsetMainAccountId = GridOffsetAccount.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
-        }
-        else
-        {
-            currentOffsetMainAccountId = 0;
-        }
-        // Lock the main account segment if "Fixed offset account" is selected in Journal Names
-        if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
-        {
-            GridOffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
-            LedgerJournalTrans_OffsetAccount1.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
-            Group4_OffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
-        }
+    ```xpp
+    if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
+    {
+        currentOffsetMainAccountId = GridOffsetAccount.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
+    }
+    else
+    {
+        currentOffsetMainAccountId = 0;
+    }
+    // Lock the main account segment if "Fixed offset account" is selected in Journal Names
+    if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
+    {
+        GridOffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+        LedgerJournalTrans_OffsetAccount1.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+        Group4_OffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+    }
+    ```
 
 3.  Make the same change in the **initLedger()** method.
 
-        if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
-        {
-            currentOffsetMainAccountId = GridOffsetAccount.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
-        }
-        else
-        {
-            currentOffsetMainAccountId = 0;
-        }
-        // Lock the main account segment if "Fixed offset account" is selected in Journal Names
-        if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
-        {
-            GridOffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
-            LedgerJournalTrans_OffsetAccount1.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
-            Group4_OffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
-        }
+    ```xpp
+    if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
+    {
+        currentOffsetMainAccountId = GridOffsetAccount.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
+    }
+    else
+    {
+        currentOffsetMainAccountId = 0;
+    }
+    // Lock the main account segment if "Fixed offset account" is selected in Journal Names
+    if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
+    {
+        GridOffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+        LedgerJournalTrans_OffsetAccount1.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+        Group4_OffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+    }
+    ```
 
 4.  Delete the **loadSegments()** method.
 
@@ -1507,14 +1661,16 @@ The migration steps for the **GridOffsetAccount.loadSegments()** method already 
 
 ##### Dynamics AX 2012
 
-    /* TODO: (Code Upgrade) [Segmented entry control] Fix controller usage, if any, in this method based on the migration guidance */
-    public void lookup()
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] Fix controller usage, if any, in this method based on the migration guidance */
+public void lookup()
+{
+    if (!ledgerJournalEngine.offsetAccountNumLookUp(group4_OffsetAccount, ledgerJournalTrans))
     {
-        if (!ledgerJournalEngine.offsetAccountNumLookUp(group4_OffsetAccount, ledgerJournalTrans))
-        {
-            super();
-        }
+        super();
     }
+}
+```
 
 ##### Dynamics AX for Operations
 
@@ -1524,30 +1680,34 @@ This method implements a custom lookup for the control. Therefore, leave the met
 
 ##### Dynamics AX 2012
 
-    /* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
-    public void segmentValueChanged(SegmentValueChangedEventArgs _e)
-    {
-        super(_e);
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] For custom implementation, code in this method needs to be moved elsewhere based on the migration guidance */
+public void segmentValueChanged(SegmentValueChangedEventArgs _e)
+{
+    super(_e);
 
-        /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
-        // dimOffsetAccountController.segmentValueChanged(_e);
-        currentOffsetMainAccountId = ledgerJournalEngine.onOffsetAccountSegmentChanged(dimOffsetAccountController, currentOffsetMainAccountId, ledgerJournalTrans);
-    }
+    /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
+    // dimOffsetAccountController.segmentValueChanged(_e);
+    currentOffsetMainAccountId = ledgerJournalEngine.onOffsetAccountSegmentChanged(dimOffsetAccountController, currentOffsetMainAccountId, ledgerJournalTrans);
+}
+```
 
 ##### Dynamics AX for Operations
 
 1.  Override the **onSegmentChanged()** method on the control, and add the following code to it.
 
-        /// <summary>
-        /// The event handler for the segment change event.
-        /// </summary>
-        /// <param name = "_segment">The segment that was modified.</param>
-        public void onSegmentChanged(DimensionControlSegment _segment)
-        {
-            super(_segment);
-            currentOffsetMainAccountId = ledgerJournalEngine.onOffsetAccountSegmentChanged(
-            Group4_OffsetAccount, currentOffsetMainAccountId, ledgerJournalTrans);
-        }
+    ```xpp
+    /// <summary>
+    /// The event handler for the segment change event.
+    /// </summary>
+    /// <param name = "_segment">The segment that was modified.</param>
+    public void onSegmentChanged(DimensionControlSegment _segment)
+    {
+        super(_segment);
+        currentOffsetMainAccountId = ledgerJournalEngine.onOffsetAccountSegmentChanged(
+        Group4_OffsetAccount, currentOffsetMainAccountId, ledgerJournalTrans);
+    }
+    ```
 
 2.  Delete the **segmentValueChanged()** method. **Note:** The preceding code for the **onSegmentChanged()** method will not compile, because the **onOffsetAccountSegmentChanged()** method expects a controller object, but this code passes an instance of the SEC. To call methods on the control instance, you must change the method’s signature and its implementation accordingly. This method is used by more than 50 callers. Therefore, you would also have to update all those calls. Alternatively, you can add a new method that follows this guidance.
 
@@ -1555,16 +1715,18 @@ This method implements a custom lookup for the control. Therefore, leave the met
 
 ##### Dynamics AX 2012
 
-    /* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
-    public boolean validate()
-    {
-        boolean isValid;
-        isValid = super();
+```xpp
+/* TODO: (Code Upgrade) [Segmented entry control] This method can be removed if there is no custom implementation */
+public boolean validate()
+{
+    boolean isValid;
+    isValid = super();
 
-        /* TODO: (Code Upgrade) [Segmented entry control] This statement can be removed if there is no custom logic */
-        // isValid = dimOffsetAccountController.validate() && isValid;
-        return isValid;
-    }
+    /* TODO: (Code Upgrade) [Segmented entry control] This statement can be removed if there is no custom logic */
+    // isValid = dimOffsetAccountController.validate() && isValid;
+    return isValid;
+}
+```
 
 ##### Dynamics AX for Operations
 
