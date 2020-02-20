@@ -100,8 +100,8 @@ static void JobRs001a_HelloWorld(Args _args)
     {
         // These two methods are also from the Global class.
         // The + operator concatenates two strings.
-        warning("This is like info," + " but is for warnings, 3.");
-        error("This is like info," + " but is for errors, 4.");
+        warning("This is like info, but is for warnings, 3.");
+        error("This is like info, but is for errors, 4.");
     }
 }
 ```
