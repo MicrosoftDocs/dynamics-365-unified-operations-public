@@ -50,7 +50,7 @@ Go to the [Visual Studio Code site](https://code.visualstudio.com), and download
 
 Node.js is a JavaScript runtime that is built on [Chrome's V8 JavaScript Engine](https://v8.dev/).
 
-Currently, version 10.x is the only supported version. The MSI installer can be found here: [Node.js](https://nodejs.org/dist/latest-v10.x/). Newer versions may work on development environments but are not fully supported.
+Currently, version 10.x is the only supported version. You can find the Windows Installer (MSI) package file on the [Node.js website](https://nodejs.org/dist/latest-v10.x/). Although newer versions might work in development environments, they aren't fully supported.
 
 If you rely on other versions of Node.js for other projects, we recommend that you use [Node Version Manager (nvm)](https://github.com/creationix/nvm) to help guarantee that each version runs in its own isolated environment.
 
@@ -58,13 +58,13 @@ If you rely on other versions of Node.js for other projects, we recommend that y
 
 Yarn is a dependency management tool that helps guarantee that you have all the latest packages that you require for e-Commerce extensibility.
 
-Currently, version 1.x is the only supported version. The installer can be found here: [Yarn site](https://classic.yarnpkg.com). As newer versions are supported, this document will be updated.
+Currently, version 1.x is the only supported version. You can find the installer on the [Yarn website](https://classic.yarnpkg.com). As newer versions become supported, this document will be updated.
 
 ## Install the Online SDK and Store Starter Kit
 
 The Online SDK provides everything that you require to extend your online channel with new modules, data actions, and themes.
 
-The SDK configuration package is available through the [Msdyn365.Commerce.Online GitHub repository (repo)](https://github.com/microsoft/Msdyn365.Commerce.Online). Download or clone the repo to a local folder on your development computer. To clone the repo, use the following command (you will need [Git tools](https://git-scm.com/downloads) installed for the command to work).
+The SDK configuration package is available through the [Msdyn365.Commerce.Online GitHub repository (repo)](https://github.com/microsoft/Msdyn365.Commerce.Online). Download or clone the repo to a local folder on your development computer. To clone the repo, use the following command. (This command will work only if you have [Git tools](https://git-scm.com/downloads) installed.)
 
 ```Console
 git clone https://github.com/microsoft/Msdyn365.Commerce.Online.git
@@ -114,7 +114,7 @@ To run your Node app, follow these steps.
 
 ## Create a new module
 
-To add a new module, run the **yarn msdyn365 add-module MODULE\_NAME** command. Here is an example that creates a module named **product-feature**.
+To add a new module, run the **yarn msdyn365 add-module MODULE\_NAME** command. For example, the following command creates a module that is named **product-feature**.
 
 ```Console
 c:\repos\Msdyn365.Commerce.Online>yarn msdyn365 add-module product-feature
@@ -126,7 +126,7 @@ This command can take several seconds to run. It adds a new module under \\src\\
 
 Several of the available starter kit modules can be cloned. These modules include the carousel, content-block, and header modules. A cloned module is a copy of the module and has a new name. Unlike the starter kit modules, cloned modules don't get regular service updates. Instead of cloning a module to make layout changes, you might want to extend the views on the module.
 
-For example, to modify the content-block module, run the **yarn msdyn365 clone STARTER\_KIT\_MODULE\_NAME NEW\_MODULE\_NAME** command to pull down the source code. Here is an example:
+For example, to modify the content-block module, run the **yarn msdyn365 clone STARTER\_KIT\_MODULE\_NAME NEW\_MODULE\_NAME** command to pull down the source code. Here is an example.
 
 
 ```Console
@@ -136,7 +136,7 @@ c:\repos\Msdyn365.Commerce.Online>yarn msdyn365 clone content-block super-conten
 You can find the new module under \\src\\modules\\super-content-block.
 
 > [!NOTE]
-> Once a module is cloned, you may need to fix up references in the code. Running **yarn start** will highlight any errors that need fixing.
+> After a module is cloned, you might have to fix up references in the code. You can run **yarn start** to highlight any errors that must be fixed.
 
 ## Preview modules
 
