@@ -82,11 +82,11 @@ The following example shows a theme definition file.
 
 SCSS files are stored under the **...\\src\\themes\\THEME\_NAME\\styles** directory. By default, this directory includes a **THEME\_NAME.theme.scss** file. This file is the entry point SCSS file. You can add other SCSS files and directories to the directory as you require.
 
-Here is an example file name and path for the **spring** theme: **...\\src\\themes\\spring\\styles\\spring.theme.scss**.
+For example, the file name and path of the **spring** theme might be **...\\src\\themes\\spring\\styles\\spring.theme.scss**.
 
 ## Theme module view extensions
 
-Themes provide the ability to include customized module view extensions. This customization is generally used to change the default layout of a module for the selected theme, and it's supported for both starter kit modules and custom modules. For example, you might want to add a new button to a starter kit module to support additional features. By creating a view extension, you can avoid having to create a full copy of the starter kit module by using the **clone** CLI command. In some cases, you might want to extend the module definition and also add more configuration properties, slots, or resources. For more information about how to create definition extensions, see the [Create a module view extension](#create-a-module-view-extension) section later in this topic.
+Themes let you include customized module view extensions. This customization is generally used to change the default layout of a module for the selected theme, and it's supported for both starter kit modules and custom modules. For example, you might want to add a new button to a starter kit module to support additional features. By creating a view extension, you can avoid having to use the **clone** CLI command to create a full copy of the starter kit module. In some cases, you might want to extend the module definition and also add more configuration properties, slots, or resources. For more information about how to create definition extensions, see the [Create a module view extension](#create-a-module-view-extension) section later in this topic.
 
 View extensions are stored under the **...\\src\\themes\\THEME\_NAME\\views** directory and follow a naming pattern that resembles the naming pattern for module views (**MODULE\_NAME.view.tsx**). For example, a view extension might be named **product-feature.view.tsx**. If a view extension exists in the selected theme, the React component will call it instead of the default view file. Therefore, view extensions can be written exactly like a module view that is used for a module.
 
@@ -94,7 +94,7 @@ In general, you might want to examine the existing view file for one of the star
 
 ### Create a module view extension
 
-The online SDK provides the **add-view-extension** command-line interface (CLI) command. To create a new module view extension in Commerce, you run the command **yarn msdyn365 add-view-extension THEME\_NAME MODULE\_NAME**, replacing **THEME\_NAME** with the name of the them that you want to add the view extension to and **MODULE\_NAME** with the name of the module that you're extending.
+The online SDK provides the **add-view-extension** CLI command. To create a new module view extension in Commerce, you run the command **yarn msdyn365 add-view-extension THEME\_NAME MODULE\_NAME**, replacing **THEME\_NAME** with the name of the them that you want to add the view extension to and **MODULE\_NAME** with the name of the module that you're extending.
 
 For example, run the following command to add a new file that is named **product-feature.view.ts** under the **spring-theme** theme's view directory.
 
