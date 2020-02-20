@@ -5,7 +5,7 @@ title: Database movement operations home page
 description: This topic provides links to quick start guides and tutorials available for Database Movement features in Lifecycle Services. 
 author: laneswenka
 manager: AnnBe
-ms.date: 03/11/2019
+ms.date: 02/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
