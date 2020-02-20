@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Refresh database
-description: This topic explains how to perform a point-in-time restore of a Production database to a Sandbox for Microsoft Dynamics 365 Finance.
+title: Point-in-time restore of the production database to a sandbox environment
+description: You can use Microsoft Dynamics Lifecycle Services (LCS) to perform a point-in-time restore (PITR) of the Production database to a sandbox user acceptance testing (UAT) environment.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 02/20/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-platform
+ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -20,21 +20,20 @@ audience: IT Pro, Developer
 ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm:
-ms.custom: 257614
-ms.assetid: 558598db-937e-4bfe-80c7-a861be021db1
+# ms.custom: 
 ms.search.region: Global
 # ms.search.industry:
 ms.author: laneswenka
-ms.search.validFrom: 2016-09-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2020-02-29
+ms.dyn365.ops.version: Platform update 33
 
 ---
 
-# Point-in-time restore Prod to Sandbox
+# Point-in-time restore of the production database to a sandbox environment
 
 [!include [banner](../includes/banner.md)]
 
-You can use Microsoft Dynamics Lifecycle Services (LCS) to perform a point-in-time restore (PITR) of the Production database to a sandbox user acceptance testing (UAT) environment. Microsoft maintains [automated backups](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups) according to Microsoft Azure SQL defaults, up to a maximum of 30 days.  
+You can use Microsoft Dynamics Lifecycle Services (LCS) to perform a point-in-time restore (PITR) of the production database to a user acceptance testing (UAT) sandbox environment. Microsoft maintains [automated backups](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups) according to Microsoft Azure SQL defaults, up to a maximum of 30 days.  
 
 > [!IMPORTANT]
 > Copying production data to your sandbox environment for the purpose of production reporting is not supported.
@@ -42,7 +41,7 @@ You can use Microsoft Dynamics Lifecycle Services (LCS) to perform a point-in-ti
 ## Self-service database refresh
 With the goal of providing Data Application Lifecycle Management (also referred to as *DataALM*) capabilities to our customers without relying on human or manual processes, the Lifecycle Services team has introduced an automated **Refresh database** action. This process is outlined below:
 
-1. Visit your target sandbox on the **Environment Details** page, and click the **Maintain** \> **Move database** menu option.
+1. Visit your target sandbox environment on the **Environment Details** page, and select **Maintain** \> **Move database**.
 2. Select the **Point-in-time restore Prod to Sandbox** option and choose your desired point in time.
 3. Note the warnings and review the list of data elements that are not copied from the source environment's previous point in time.
 4. The restore operation will begin immediately.
@@ -113,13 +112,13 @@ For customers that are using version 8.1 or later:
 3. Verify that the error has been resolved.
 
 For customers that are using version 8.0 or earlier:
-1. Review the Environment history of your source environment. Specifically, look for any "Platform and application binary package" that might have been deployed to the source environment and not the target environment.
+1. Review the environment history of your source environment. Specifically, look for any "Platform and application binary package" that might have been deployed to the source environment and not the target environment.
 2. Apply this binary package to your target environment.
 3. Verify that the error has been resolved.
 
 ### Incompatible application versions between source and target environments
-The database refresh process (self-service or via service request) cannot be completed if the Application release of your source and target environment are not the same. This is because the data upgrade process is not executed by database movement operations such as refresh, and data loss can occur.
+The database refresh process (self-service or via service request) cannot be completed if the application release of your source and target environment are not the same. This is because the data upgrade process is not executed by database movement operations such as refresh, and data loss can occur.
 
-If upgrading your sandbox UAT environment to a newer Application version (for example, 7.3 to 8.1), be sure to perform the database refresh action prior to starting the upgrade. After your sandbox is upgraded to the newer version, you cannot restore an older production environment database in to the sandbox UAT environment.
+If upgrading your sandbox UAT environment to a newer application version (for example, 7.3 to 8.1), be sure to perform the database refresh action prior to starting the upgrade. After your sandbox is upgraded to the newer version, you cannot restore an older production environment database in to the sandbox UAT environment.
 
 Conversely, if your production environment is newer than your target sandbox, you will need to either upgrade the target sandbox prior to the refresh or simply deallocate, delete, and redeploy prior to performing the refresh.
