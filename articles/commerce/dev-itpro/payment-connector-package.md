@@ -44,7 +44,7 @@ Before the 10.0.10 release you use the Commerce SDK (previously known as the Ret
 To create a payment package that you can deploy in Dynamics 365 for Commerce service fabric deployments follow the below steps.
 
 > [!NOTE]
-> There is no change in how how you create the package for the commerce channel and cloud components using the Commerce SDK. For more information, see [Create and deploy connector](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/deploy-payment-connector).
+> There is no change in how how you create the package for the commerce channel and cloud components using the Commerce SDK. For more information, see [Create and deploy connector](deploy-payment-connector).
 
 ## Steps to create AOS payment package starting 10.0.10
 
@@ -88,8 +88,8 @@ To create a payment package that you can deploy in Dynamics 365 for Commerce ser
 
 ## Apply a deployable package
 
-To apply a deployable package to an environment, see [Apply updates to cloud environments](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/apply-deployable-package-system).
+To apply a deployable package to an environment, see [Apply updates to cloud environments](../../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system).
 
 ## Remove a deployable package
 
-To uninstall or remove a deployable package from an environment, see [Uninstall a package](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/uninstall-deployable-package).
+To uninstall or remove a deployable package from an environment, see [Uninstall a package](../../fin-ops-core/dev-itpro/deployment/uninstall-deployable-package).
