@@ -19,7 +19,7 @@ Database logging is intended to track single transactions. It is not intended fo
 
 ## Security for database logging
 
-Database logs can contain sensitive data. By default, any user who has database access can query the database log table (sysdatabaselog) by using Business Connector, X++, or alerts, or by querying the database directly. To protect data, restrict permissions on the sysdatabaselog table.
+Database logs can contain sensitive data. By default, any user who has database access can query the database log table (sysdatabaselog) by using  X++, or alerts, or by querying the database directly. To protect data, restrict permissions on the sysdatabaselog table for on premise deployments.
 
 ## Database logging and performance
 
@@ -46,6 +46,8 @@ Our recommended practices include the following:
 
 
   - Consider increasing how often you perform SQL Server transaction log backups after you have configured database logging.
+      > [!NOTE]
+    > <P>Applicable Only to On premise deployments with local SQL Server.</P>
 
 ## Set up database logging
 
@@ -73,8 +75,10 @@ You can delete database logs. You can select all logs for a particular table, sp
 
   ## Consistency Check for database log triggers
 
-As of **Platform Update 34** a consistency check functionality has been added, it is executed as part of the Database log wizard and will be executed once you click the finish button or through a consistency check button in the Database log setup form which will recreate any missing database log trigger and drop any orphaned database log trigger for which no corresponding configuration is found.
-The new consistency check functionality will allow to quickly detect and fix any inconsistency between the current configuration and the database triggers used to implement the logging functionality.
+As of **Platform Update 34** a consistency check functionality has been added, it is executed as part of the Database log wizard and will be executed once you click the finish button or through a consistency check button in the Database log setup form.
+
+Consistency Check will recreate any missing database log trigger and drop any orphaned database log trigger for which no corresponding configuration is found.
+The new functionality will quickly detect and fix any inconsistency between the current configuration and the database triggers used to implement the logging functionality.
 
 
 1.  Click **System administration** \> **Inquiries** \> **Database** \> **Database log**. Click **Consistency check**.
