@@ -35,8 +35,8 @@ ms.dyn365.ops.version: AX 10.0.9
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes enhanced filtering capabilities for RCS Global repository, which have been improved to include the following filters: 
-- Country/region - ISO country codes  
+This topic describes enhanced filtering capabilities for Regulatory Cinfigurationservices (RCS) Global repository, which have been improved to include the following filters: 
+- Country/region - based on ISO country codes  
 - Tags - for functional/feature area; Industry; Business document type 
 
 You can apply filters, either individually or in groups, to find specific or related configurations. For example, to find all configurable business documents related to vendor invoices, you can select and apply the **Business document type** filter to see all related configurations. 
