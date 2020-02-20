@@ -5,7 +5,7 @@ title: Self-service upgrade to the latest version
 description: This topic explains the process for moving to the latest update of Finance and Operations.
 author: laneswenka
 manager: AnnBe
-ms.date: 10/23/2019
+ms.date: 02/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
