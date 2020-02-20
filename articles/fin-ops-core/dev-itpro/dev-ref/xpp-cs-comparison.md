@@ -1320,10 +1320,8 @@ class XppClass
     {
         XppClass myXppClass = new XppClass();
         // Subscribe two event handler methods to the delegate.
-        myXppClass.myDelegate += eventHandler
-            (myXppClass.myEventSubscriberMethod2);
-        myXppClass.myDelegate += eventHandler
-            (XppClass::myEventSubscriberMethod3);
+        myXppClass.myDelegate += eventHandler(myXppClass.myEventSubscriberMethod2);
+        myXppClass.myDelegate += eventHandler(XppClass::myEventSubscriberMethod3);
         // Raise the event by calling the delegate one time,
         // which calls all the subscribed event handler methods.
         myXppClass.myDelegate(_stringFromJob);
