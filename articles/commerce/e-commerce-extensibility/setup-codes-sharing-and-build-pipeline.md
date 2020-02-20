@@ -140,11 +140,15 @@ Open Visual studio Code. Open folder “c:\repos\<DevOpsProjectName>”  (Note: 
   
 ![Configure task](media/code-sharing-13.png)
 
-1. Expand the **Advanced** sectin and change the working directory to **$(Build.SourcesDirectory)**
+1. Expand the **Advanced** secting and change the working directory to **$(Build.SourcesDirectory)**
 
 ![Set working directory](media/code-sharing-14.png)
 
 1. Add "Copy files" agent by selecting the **+** next to "Agent job 1" and searching for "copy" followed by selecting the "Add" button.
 
 ![Add copy files agent](media/code-sharing-15.png)
+
+1. Set the **Source Folder** to "$(Build.SourcesDirectory)", **Contents** to "*.zip" and **Target Folder** to "$(Build.ArtifactStagingDirectory)"
+
+![Configure Copy Files task](media/code-sharing-15.png)
 
