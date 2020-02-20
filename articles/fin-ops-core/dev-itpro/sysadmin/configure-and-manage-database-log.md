@@ -63,8 +63,7 @@ You can delete database logs. You can select all logs for a particular table, sp
 
 
 > [!NOTE]
-> <P>To enable auditing, records that have been signed cannot be deleted from logs. For more information, see <A href="fin-ops/organization-administration/electronic-signature-overview.md</A>.</P>
-
+> <P>Records that have been electronically signed cannot be deleted from logs.</P>
 
 
 1.  Click **System administration** \> **Inquiries** \> **Database** \> **Database log**. Click **Clean up log**.
@@ -76,7 +75,6 @@ You can delete database logs. You can select all logs for a particular table, sp
   ## Consistency Check for database log triggers
 
 As of **Platform Update 34** a consistency check functionality has been added, it is executed as part of the Database log wizard and will be executed once you click the finish button or through a consistency check button in the Database log setup form.
-
 Consistency Check will recreate any missing database log trigger and drop any orphaned database log trigger for which no corresponding configuration is found.
 The new functionality will quickly detect and fix any inconsistency between the current configuration and the database triggers used to implement the logging functionality.
 
