@@ -63,7 +63,7 @@ You can delete database logs. You can select all logs for a particular table, sp
 
 
 > [!NOTE]
-> <P>To enable auditing, records that have been signed cannot be deleted from logs. For more information, see <A href="electronic-signature-overview.md">Electronic signature overview</A>.</P>
+> <P>To enable auditing, records that have been signed cannot be deleted from logs. For more information, see <A href="fin-ops/organization-administration/electronic-signature-overview.md</A>.</P>
 
 
 
