@@ -325,7 +325,7 @@ namespace Contoso
 
 ## Create a trigger asynchronously
 
-To run the logic in the trigger asynchronously, extend trigger your class from the **IRequestTriggerAsync** interface, and add the logic.
+To run the logic in the trigger asynchronously, extend the **IRequestTriggerAsync** interface, and add the logic.
 
 ```C#
 namespace Contoso
