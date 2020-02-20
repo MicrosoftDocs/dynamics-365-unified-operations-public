@@ -392,7 +392,7 @@ public void loadSegments()
 
 4.  Add the following code to the **modified()** method of the **LedgerJournalTrans** data source’s **Company** field.
 
-   ```xpp
+    ```xpp
     LedgerJournalTrans_AccountNum.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
     LedgerJournalTrans_AccountNum1.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
     Group4_AccountNum.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
@@ -916,7 +916,7 @@ public void segmentValueChanged(SegmentValueChangedEventArgs _e)
 
 1.  Override the **onSegmentChanged()** method on the control, and add the following code to it.
 
-    ```
+    ```xpp
     /// <summary>
     /// The event handler when a segment is modified.
     /// </summary>
