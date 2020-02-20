@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 10.0.9
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes enhanced filtering capabilities for Regulatory Cinfigurationservices (RCS) Global repository, which have been improved to include the following filters: 
+This topic describes enhanced filtering capabilities for Regulatory Configuration services (RCS) Global repository, which have been improved to include the following filters: 
 - Country/region - based on ISO country codes  
 - Tags - for functional/feature area; Industry; Business document type 
 
