@@ -50,8 +50,8 @@ To get started with LCS, see the [Lifecycle Services (LCS) user guide](lcs-user-
 
 | Area | Feature |
 |------|---------|
-| Admin APIs | **Database movement RESTful APIs** - LCS will expose RESTful API endpoints. Documentation that covers how to authenticate and make the appropriate calls to trigger refresh will be provided. To implement this functionality, use Azure LogicApps or other recurrence engines for scheduling and automation. |
+| Admin APIs | **Database movement RESTful APIs** - LCS will expose RESTful API endpoints. Documentation that covers how to authenticate and make the appropriate calls to trigger refresh will be provided. To implement this functionality, use Microsoft Azure Logic Apps or other recurrence engines for scheduling and automation. |
 
 ## LCS releases before November 2019
 
-For information about LCS releases that occurred before November 2019, see the [blog posts that the Lifecycle Services team published on the Dynamics 365 blog](https://cloudblogs.microsoft.com/dynamics365/author/lifecycle-services-team/).
+For information about LCS releases that occurred before November 2019, see the blog posts that the Lifecycle Services team published on the [Dynamics 365 blog](https://cloudblogs.microsoft.com/dynamics365/author/lifecycle-services-team/).
