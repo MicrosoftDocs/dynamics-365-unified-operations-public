@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create payment packaging for Application Explorer in Service Fabric deployments
-description: This topic explains how to create payment packaging for Application Explorer and deploy it in Dynamics 365 for Commerce service fabric environments.
+description: This topic explains how to create payment packaging for Application Explorer and deploy it in Microsoft Azure Service Fabric environments for Dynamics 365 Commerce.
 author: mugunthanm
 manager: AnnBe
 ms.date: 02/13/2020
@@ -34,62 +34,59 @@ ms.dyn365.ops.version: 10.0.10
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to create payment packaging for Application Explorer and deploy it in Dynamics 365 Commerce service fabric environments.
+This topic explains how to create payment packaging for Application Explorer and deploy it in Microsoft Azure Service Fabric environments for Dynamics 365 Commerce.
 
-Before the 10.0.10 release you use the Commerce SDK (previously known as the Retail SDK) to create payment packaging. Starting with 10.0.10 AOS payment packaging can be created only by using Visual Studio. Packages created using this approach can be deployed in both Service Fabric and in IaaS environments.
-
-> [!NOTE]
-> Before 10.0.10, you can create one payment package for both Application Explorer and the commerce channel and cloud components (Commerce Scale unit). Starting with 10.0.01, you must create two packages, one for Application Explorer by using the Dynamics 365 packaging model and another the commerce channel and cloud components by using the Commerce SDK. The previous approach for creating Application Explorer payment packaging using Commerce SDK will be deprecated starting 10.0.10.
-
-To create a payment package that you can deploy in Dynamics 365 for Commerce service fabric deployments follow the below steps.
+In releases that are earlier than 10.0.10, you use the Commerce software development kit (SDK) to create payment packaging. (The Commerce SDK was previously known as the Retail SDK.) In the 10.0.10 release and later, you can use only Visual Studio to create Application Object Server (AOS) payment packaging. Packages that you create by using this approach can be deployed in both Service Fabric environments and infrastructure as a service (IaaS) environments.
 
 > [!NOTE]
-> There is no change in how how you create the package for the commerce channel and cloud components using the Commerce SDK. For more information, see [Create and deploy connector](deploy-payment-connector.md).
+> In releases that are earlier than 10.0.10, you can create a single payment package and use it both for Application Explorer and for the commerce channel and cloud components (Commerce Scale unit). In the 10.0.10 release, you must create two packages. One package is for Application Explorer, and you create it by using the Dynamics 365 packaging model. The other package is for the commerce channel and cloud components, and you create it by using the Commerce SDK. The previous approach, where the Commerce SDK is used to create Application Explorer payment packaging, is obsolete (deprecated) as of the 10.0.10 release.
 
-## Steps to create AOS payment package starting 10.0.10
+To create a payment package that you can deploy in Commerce Service Fabric deployments, follow the steps in the next section.
 
-1.  Click the **Dynamics 365** menu in the Visual Studio menu bar and choose **Model Management > Create model**.
+> [!NOTE]
+> The steps for using the Commerce SDK to create the package for the commerce channel and cloud components haven't changed. For more information, see [Create and deploy connector](deploy-payment-connector.md).
 
-    ![CCreate Model](./media/Model.png)
-   
-2.  In the Create model window enter the model name, publisher and other required details and click **Next**. 
-    
-    The model name must be prefixed or start with **RetailPaymentConnectors**. After the **RetailPaymentConnectors** prefix add the custom model name information, for example, **RetailPaymentConnectorsCustomConnector**. Only model names that begin with this prefix will load in the Dynamics 365 for commerce payment connector options.
+## Create an AOS payment package in the 10.0.10 release
 
-    ![Create Model](./media/CreateModel.png)
+1. In Visual Studio, on the **Dynamics 365** menu, select **Model Management \> Create model**.
 
-3.  Select **Create new package** and click **Next**.
+    ![Create model command](./media/Model.png)
 
-    ![Select package](./media/SelectPackage.png)
+2. Enter the model name, the model publisher, and other required details. Then select **Next**.
 
-4.  Select the required referenced package and click **Next**.
+    The model name must be prefixed with (that is, start with) **RetailPaymentConnectors**. After this prefix, add information about the custom model name. For example, the model that you create might be named **RetailPaymentConnectorsCustomConnector**. Only model names that begin with the **RetailPaymentConnectors** prefix will load in the Commerce payment connector options.
 
-5.  Click **Finish** to complete the model creation.
+    ![Add parameters page in the Create model wizard](./media/CreateModel.png)
 
-6.  In Solution Explorer, select the project and right-click **References**, and then click **Add Reference**.
+3. Select the **Create new package** option, and then select **Next**.
 
-    ![Add reference](./media/AddReference.png)
+    ![Select package page in the Create model wizard](./media/SelectPackage.png)
 
-7.  Add all the payment connector assemblies and their dependencies as references to the project.
+4. Select the required referenced package, and then select **Next**.
+5. Select **Finish** to finish creating the model.
+6. In Solution Explorer, select the project, right-click **References**, and then select **Add Reference**.
 
-    ![Reference](./media/Reference.png)
+    ![Add Reference command](./media/AddReference.png)
 
-8.  If you don’t have any other payment X++ extensions related to the payment connector, then build the solution.
+7. Add all the payment connector assemblies and their dependencies to the project as references.
 
-9.  Create the deployable package by slecting the **Dynamics 365 > Deploy > Create Deployment Package.** Select the model created in step 2, specify the package file location, and then click **Create**.
+    ![Add Reference dialog box](./media/Reference.png)
 
-    ![Create deployable package](./media/Create.png)
+8. If you don't have any other payment X++ extensions that are related to the payment connector, build the solution.
+9. To create the deployable package, on the **Dynamics 365** menu, select **Deploy \> Create Deployment Package**.
+10. Select the model that you created earlier, specify the location of the package file, and then select **Create**.
 
-10. Visual Studio will build the model and create the deployable package.
+    ![Create Deployment Package dialog box](./media/Create.png)
 
-11. After you create the deployable package, sign into Microsoft Dynamics Lifecycle Services (LCS), and then, in your LCS project, click the **Asset Library** tile.
+    Visual Studio builds the model and creates the deployable package.
 
-12. Upload the deployable package that you created.
+10. After the deployable package has been created, sign in to Microsoft Dynamics Lifecycle Services (LCS), and then, in your LCS project, select the **Asset Library** tile.
+11. Upload the deployable package that you created.
 
 ## Apply a deployable package
 
-To apply a deployable package to an environment, see [Apply updates to cloud environments](../../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md).
+For information about how to apply a deployable package to an environment, see [Apply updates to cloud environments](../../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md).
 
 ## Remove a deployable package
 
-To uninstall or remove a deployable package from an environment, see [Uninstall a package](../../fin-ops-core/dev-itpro/deployment/uninstall-deployable-package.md).
+For information about how to uninstall or remove a deployable package from an environment, see [Uninstall a package](../../fin-ops-core/dev-itpro/deployment/uninstall-deployable-package.md).
