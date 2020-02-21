@@ -35,95 +35,78 @@ ms.dyn365.ops.version: Platform update 34
 What is Azure Data Lake?
 ------------------------
 
-Azure Data Lake is a technology designed to enable big data Analytics and AI in
+Azure Data Lake is a technology designed to enable big data analytics and AI in
 the Azure cloud. When referring to Azure Data Lake, we specifically refer to
 Azure Data Lake Gen2 (ADLS) based storage technology.
 
- 
-
 Data lakes provide cheap cloud storage compared to a relational database. This
-enables storing large amounts of data in the cloud - both business data
+enables storing large amounts of data in the cloud--both business data
 (traditionally stored in business systems and data warehouses) to device and
-sensor data such as signals from devices. In addition to cheap storage, Azure
+sensor data, such as signals from devices. In addition to cheap storage, Azure
 Data lake supports a range of tools and programming languages that enable
-Reporting, querying and transforming large amounts of data.
+reporting, querying, and transforming large amounts of data.
 
- 
+For an overview of Azure Data Lake Gen2, see [Introduction to Azure Data Lake storage Gen 2](
+https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction).
 
-For an overview of Azure Data Lake Gen2, pl. see the documents here:
-<https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction>\>
-
- 
-
-Dynamics 365 products including Finance and Operations (F&O) leverages Azure
-Data Lake for AI and Analytics scenarios thereby providing enabling customers to
-leverage the strengths and cost advances offered by this technology. Following
-sections offer an overview of scenarios.
+Dynamics 365 products, including Finance and Operations apps, leverage Azure
+Data Lake for AI and analytics scenarios, thereby enabling customers to
+leverage the strengths and cost advances offered by this technology. The following
+sections offer an overview of the scenarios.
 
 Analytical workspaces
 ---------------------
 
-Analytical workspaces provide contextual and actionable insights within F&O.
-Analytical workspaces provide a birds-eye view of a business process – enables
+Analytical workspaces provide contextual and actionable insights within Finance and Operations apps.
+Analytical workspaces provide a birds-eye view of a business process, which enables
 your users to get relevant information immediately. They can also take action
 then and there.
 
-Analytical workspaces leverage embedded PowerBI technology to provide rich,
-interactive visuals over F&O data. Using Analytical workspaces is fun and
-exciting – it invites your users to explore data.
+Analytical workspaces leverage embedded Power BI technology to provide rich,
+interactive visuals over Finance and Operations data. Using analytical workspaces is fun and
+exciting –- it invites your users to explore data.
 
- 
-
-Analytical workspaces can be leveraged for operational Analytics scenarios in 2
-ways
+Analytical workspaces can be leveraged for operational analytics scenarios in two
+ways:
 
 -   Use and extend the ready-made analytical workspaces without the need to
     build from scratch
 
--   Built your own PowerBI based analytical reports
+-   Built your own Power BI based analytical reports
 
  
 
-See the section below
-
-<https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/embed-power-bi-workspaces?toc=/dynamics365/commerce/toc.json>
-
- 
+For more information, see [Embedded Power BI in workspaces](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/embed-power-bi-workspaces?toc=/dynamics365/finance/toc.json).
 
 BYOD
 ----
 
-Bring your Own Database (BYOD) is a service that enables, customers to extract
-data from F&O into their own data warehouses. BYOD is recommended when you need
-to combine data from F&O with other systems as well as with reporting with
+Bring your own database (BYOD) is a service that enables, customers to extract
+data from Finance and Operations apps into their own data warehouses. BYOD is recommended when you need
+to combine data from Finance and Operations apps with other systems, as well as with reporting with
 legacy data.
 
- 
+For more information, see [Bring your own database (BYOD)](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database).
 
-See more on BYOD here:
-<https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database>
-
- 
-
-Azure data lake combines BYOD and Entity store
+Azure Data Lake combines BYOD and Entity store
 ----------------------------------------------
 
-Customers use a combination of Analytical workspaces (based on Entity store) as
-well as BYOD for different scenarios.
+Customers use a combination of analytical workspaces (based on Entity store), as
+well as BYOD, for different scenarios.
 
 ![Comparison of Anlytical workspaces/ entity store with BYOD](./media/EntityStore-or-BYOD-PPT.png)
 
-Azure Data Lake combines both these services into a single service that offers "best of both worlds" as follows
+Azure Data Lake combines both these services into a single service that offers "best of both worlds" as follows:
  
-•	Customers can bring their own Azure Data Lake (ie. Azure Data Lake in their own subscription) and integrate with F&O. F&O will leverage your own data lake to store Entity store data and operate Analytical workspaces. Analytical workspaces continue to work as before.
+•	Customers can bring their own Azure Data Lake (ie. Azure Data Lake in their own subscription) and integrate with Finance and Operations apps. Finance and Operations apps will leverage your own data lake to store Entity store data and operate analytical workspaces. Analytical workspaces continue to work as before.
  
-•	Entity store (staged in your Azure Data lake), provides a set of simplified (de-normalized) data structures for easier reporting. Now, your users can be given direct access to data best suited for creating their own reports with a tool of their choice.
+•	Entity store (staged in your Azure Data Lake), provides a set of simplified (de-normalized) data structures for easier reporting. Now, your users can be given direct access to data best suited for creating their own reports with a tool of their choice.
  
-•	As opposed to exporting data (with BYOD), customers can choose the data they want to be staged in the Azure Data Lake. Data feed service (part of F&O services) keeps the data fresh in the Data Lake.
+•	As opposed to exporting data (with BYOD), customers can choose the data they want to be staged in the Azure Data Lake. Data feed service (part of Finance and Operations services) keeps the data fresh in the data lake.
  
-•	Customers can bring their own data into the Data Lake to augment the data provided by F&O. This capability enables easy data mash-up scenarios in the Data Lake.
-o	Using hundreds of ready-made connectors available in tools such as PowerBI data flows and Azure Data factory, data from many external sources can be easily ingested into the data lake
-o	Historical and legacy data (often inherited as a part of transitioning into F&O) can be directly ingested into the Data lake.
+•	Customers can bring their own data into the data lake to augment the data provided by Finance and Operations apps. This capability enables easy data mash-up scenarios in the data lake.
+o	Using hundreds of ready-made connectors available in tools such as Power BI data flows and Azure Data factory, data from many external sources can be easily ingested into the data lake.
+o	Historical and legacy data (often inherited as a part of transitioning to Finance and Operations apps) can be directly ingested into the data lake.
 o	Data lakes provide options to ingest non-business data - for an example, device data can be easily ingested into the data lake.
  
 •	Cloud based services enable both power users as well as developers to consume this data.
