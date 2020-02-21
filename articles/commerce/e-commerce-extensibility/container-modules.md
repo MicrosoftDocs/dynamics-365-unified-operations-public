@@ -30,7 +30,6 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Container modules
 
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 Container modules help you control the layout when you build complex modules or pages out of small component modules. For example, a container module might be a header, footer, or buy box module that has nested modules inside it.
