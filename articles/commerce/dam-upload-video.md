@@ -59,7 +59,9 @@ To upload a video in site builder, follow these steps.
 
 If you are uploading multiple types of assets simultaneously (for example, images and videos), in the **Upload Media Item** dialog box you will only be able to specify the keywords, whether the files should be published immediately after upload, and whether closed captions should be automatically generated for video files. All the assets will share the same keywords.
 
+<!--
 ![Video](./media/dam-screenshot4.png)
+-->
 
 > [NOTE]
 > You should always upload the version of the video with highest bitrate and resolution. The video will be converted automatically to be suitable for different viewports and their breakpoints.
