@@ -2,8 +2,8 @@
 
 # required metadata
 
-title: Digital asset management
-description: This topic describes the digital asset management capabilities of the Microsoft Dynamics 365 Commerce product.
+title: Digital asset management overview
+description: This topic provides an overview of digital asset management in Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
 ms.date: 02/24/2020
@@ -30,11 +30,11 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 
 ---
 
-# Asset management overview
+# Digital asset management overview
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the digital asset management capabilities of the Microsoft Dynamics 365 Commerce product.
+This topic provides an overview of digital asset management in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
@@ -49,9 +49,7 @@ Dynamics 365 Commerce features rich digital asset management functionality, incl
 
 Digital assets are channel-specific, with the exception of omni-channel assets which are e-commerce environment-wide by default. Digital assets and the management features are located under **Assets** in the left navigation pane within a site.
 
-## Upload images
-
-
+<!--
 ### Upload an image
 
 To bulk upload a folder of images, follow these steps.
@@ -196,4 +194,16 @@ To define custom cropping for an image, follow these steps.
 
 Manually set focal point or custom cropping will be reflected on the image almost immediately.
 
+-->
+
 ## Additional resources
+
+[Upload images](dam-upload-images.md)
+
+[Upload video](dam-upload-video.md)
+
+[Upload files](dam-upload-files.md)
+
+[Crop images](dam-crop-images.md)
+
+[Customize image focal points](dam-custom-focal-point.md)
