@@ -4,7 +4,7 @@ title: Upload images
 description: This topic describes how to upload images in Microsoft Dynamics 365 Commerce product.
 author: psimolin
 manager: annbe
-ms.date: 02/24/2020
+ms.date: 02/26/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -38,6 +38,16 @@ This topic describes how to upload images in Microsoft Dynamics 365 Commerce pro
 
 
 ## Upload an image
+
+To upload images in site builder, follow these steps.
+
+1. In the left navigation pane, select **Media Library**.
+1. On the command bar, select **Upload \> Upload Media Items**.
+1. In the File Explorer window, navigate to and select one or more image files to upload, and then select **Open**.
+1. In the **Upload Media Item** dialog box, enter the required title and alt text.
+1. Enter optional description and keywords and select a category if desired. 
+1. If you want to publish the image(s) after immediately upload, select the **Publish media items after upload** check box
+1. Select **OK**.
 
 To bulk upload a folder of images, follow these steps.
 
