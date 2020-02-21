@@ -5,7 +5,7 @@ title: Support for external gift cards
 description: This topic provides information about the support for external gift cards that is now available in Microsoft Dynamics 365 Commerce.
 author: sericks007
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 02/21/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-retail
@@ -202,7 +202,7 @@ Gift cards lines that are issued as part of an order can be canceled before fulf
 
 Physical gift cards and virtual gift cards have distinct fulfillment methods.
 
-Physical gift cards are gift cards that are mapped to a mode of delivery of the shipping type. They must be issued directly with the gift card provider as part of order processing. The gift card number must then be mapped to the order line as part of the pick list registration process. Next, the masked gift card number is saved back to the order line. The gift card that is issued is then activated as part of order invoicing.
+Physical gift cards are gift cards that are mapped to a mode of delivery of the **Shipping** type. They must be issued directly through the gift card provider as part of order processing. The gift card number must then be mapped to the order line as part of the pick list registration process. Next, the masked gift card number is saved back to the order line. The gift card that is issued is then activated as part of order invoicing.
 
 Virtual gift cards are issued as part of order invoicing. When a gift card line is marked as **Packed**, it becomes eligible to be issued. Virtual gift cards are issued as part of invoicing. When invoicing occurs, the gift card number is obtained from the provider through the payment connector. The number for the activated gift card is then sent to the gift card recipient via email. When invoicing occurs, the masked gift card number is then saved back to the order line.
 
@@ -296,7 +296,7 @@ For the storefront, the gift card must also be included in the storefront's asso
 
 For information about email setup, see [Configure email functionality](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/configure-email-functionality-in-microsoft-dynamics-ax).
 
-For information about how to set up email notifications for retail, see [Set up an email notification profile](https://docs.microsoft.com/dynamics365/commerce/email-notification-profiles).
+For information about how to set up email notifications for Commerce, see [Set up an email notification profile](https://docs.microsoft.com/dynamics365/commerce/email-notification-profiles).
 
 For gift cards that are issued via email, the value of the **Retail email notification type** field is **Issue gift card**.
 
@@ -355,7 +355,7 @@ For gift cards that are issued via email, the value of the **Retail email notifi
 3. Select the external gift card payment method, and enter the number and PIN, if applicable. For the test connector, **61234** can be used as the number, and the PIN isn't validated.
 4. Use a percentage amount or a payment amount to define the payment amount.
 
-    ![External gift card payment in the call center](media/PayInCallCenter.png)
+    ![External gift card payment in the call center](media/PayinCallCenter.png)
 
 5. Select **OK**.
 6. Select **Submit** to complete the order.
