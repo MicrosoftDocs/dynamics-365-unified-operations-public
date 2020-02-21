@@ -57,7 +57,10 @@ After you save the class, each test appears in Test Explorer, just as a C\# test
 
 [![Example of test appearing in Test Explorer](./media/2_support.png)](./media/2_support.png) 
 
-In Test Explorer, you can run the tests, or you can debug the test case by right-clicking and running or debugging the selected tests. **Note:** Before you can run tests, you must build the project so that it includes tests. 
+In Test Explorer, you can run the tests, or you can debug the test case by right-clicking and running or debugging the selected tests. 
+
+> [!NOTE]
+> Before you can run tests, you must build the project so that it includes tests. 
 
 [![Example of right-clicking to run or debug selected tests](./media/3_support.png)](./media/3_support.png) 
 
