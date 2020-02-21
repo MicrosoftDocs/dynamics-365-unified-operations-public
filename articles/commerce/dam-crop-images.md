@@ -1,3 +1,5 @@
+---
+
 # required metadata
 
 title: Crop images
@@ -34,9 +36,9 @@ ms.dyn365.ops.version:
 
 This topic describes how to crop images in Microsoft Dynamics 365 Commerce.
 
-## Define custom cropping for an image
+## Crop an image
 
-To define custom cropping for an image, follow these steps.
+To crop an image, follow these steps.
 
 1. Make sure you have the "Assets"-tab selected
 1. Select the image asset you want to modify
@@ -54,3 +56,13 @@ To define custom cropping for an image, follow these steps.
 Manually set focal point or custom cropping will be reflected on the image almost immediately.
 
 ## Additional resources
+
+[Digital asset management overview](dam-overview.md)
+
+[Upload images](dam-upload-images.md)
+
+[Upload video](dam-upload-video.md)
+
+[Upload files](dam-upload-files.md)
+
+[Customize image focal points](dam-custom-focal-point.md)
