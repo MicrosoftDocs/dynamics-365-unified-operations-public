@@ -70,10 +70,8 @@ Before a Dynamics 365 Commerce channel can be created, several prerequisite task
 ## Call Center channel prerequisites
 
 - Call center parameters
-- Call center refund methods
-- Rental types
-- Payment services
-- Order hold codes
+- [Call center order and refund payment methods](https://docs.microsoft.com/en-us/dynamics365/commerce/work-with-payments)
+- [Call center modes of delivery and charges](https://docs.microsoft.com/en-us/dynamics365/commerce/configure-call-center-delivery)
 
 ## Online channel prerequisites
 
