@@ -573,9 +573,11 @@ ledgerDimensionAccountController.setValues(ledgerJournalTrans.DefaultDimension, 
 
 A map of the dimension specifiers must be created that can then be sent into the **Segmented Entry** control's **setDimensionSpecifiers** method.
 
-    Map defaultDimensionSpecifiers = LedgerDimensionDefaultingEngine::getDefaultDimensionSpecifiers(ledgerJournalTable.DefaultDimension);
+```xpp
+Map defaultDimensionSpecifiers = LedgerDimensionDefaultingEngine::getDefaultDimensionSpecifiers(ledgerJournalTable.DefaultDimension);
 
-    TmpLedgerJournalSplitLines_LedgerAccount.setDimensionSpecifiers(defaultDimensionSpecifiers, false);
+TmpLedgerJournalSplitLines_LedgerAccount.setDimensionSpecifiers(defaultDimensionSpecifiers, false);
+```
 
 > [!NOTE]
 > You can add anything to the dimension specifiers map before it's sent to the control. You can also create a new map here. (See the **onSegmentChangedForPrimaryAccount** method in the **LedgerJournalEngine** class for similar logic.)
