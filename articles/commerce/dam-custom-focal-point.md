@@ -1,7 +1,9 @@
+---
+
 # required metadata
 
-title: Define custom focal points for images
-description: This topic describes how to define custom focal points for images in Microsoft Dynamics 365 Commerce.
+title: Customize image focal points
+description: This topic describes how to customize image focal points in Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
 ms.date: 02/24/2020
@@ -28,13 +30,13 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 
 ---
 
-# Define custom focal points for images
+# Customize image focal points
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to define custom focal points for images in Microsoft Dynamics 365 Commerce.
+This topic describes how to customize image focal points in Microsoft Dynamics 365 Commerce.
 
-# Define custom focal point and custom cropping for an image
+# Overview
 
 When an image is uploaded to the DAM, the system attempts to determine the focal point of the image. For example, if the image has a person on it, the system will set the focal point to the face of the person by default. In most cases the automatically set focal point and cropping works very well for all viewports. Occasionally you might want to adjust the focal point or define custom crop for an image to ensure that specific part of the image is always visible or if the image needs to be cropped in a certain special way.
 
@@ -57,3 +59,13 @@ To define a custom focal point for an image, follow these steps.
 ![Focal point](./media/dam-screenshot6.png)
 
 ## Additional resources
+
+[Digital asset management overview](dam-overview.md)
+
+[Upload images](dam-upload-images.md)
+
+[Upload video](dam-upload-video.md)
+
+[Upload files](dam-upload-files.md)
+
+[Crop images](dam-crop-images.md)
