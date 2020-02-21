@@ -26,6 +26,7 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Platform update 34
+
 ---
 
 # Azure Data Lake overveiw
