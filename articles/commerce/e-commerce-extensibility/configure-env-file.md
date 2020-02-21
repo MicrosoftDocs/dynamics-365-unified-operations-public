@@ -30,7 +30,6 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Configure a development environment (.env) file
 
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 This topic describes how to configure the .env file that is used for the development environment in Microsoft Dynamics 365 Commerce.
