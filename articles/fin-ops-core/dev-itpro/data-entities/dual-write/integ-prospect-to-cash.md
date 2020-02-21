@@ -40,7 +40,7 @@ Converting a prospect to a customer over a successful business deal and continuo
 
 Dynamics 365 users can access the processing states and invoice information on their application interface in real-time. Also, this helps businesses to handle functions like product stocking, inventory handling and fulfillment inside Supply chain application without recreating the quote/order.
 
-![dual-write data flow in prospect-to-cash diagram](../dual-write/media/dual-write-prospect-to-cash[1].PNG)
+![dual-write data flow in prospect-to-cash diagram](../dual-write/media/dual-write-prospect-to-cash[1].png)
 
 ## Preconditions and mapping setup
 Before sales quotations are synchronized, it's important that you update the following settings.
