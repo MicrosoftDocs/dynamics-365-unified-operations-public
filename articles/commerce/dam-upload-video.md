@@ -1,6 +1,6 @@
 # required metadata
 
-title: Upload images
+title: Upload videos
 description: This topic describes how to upload videos in Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
@@ -28,7 +28,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 
 ---
 
-# Upload images
+# Upload videos
 
 [!include [banner](../includes/banner.md)]
 
@@ -36,7 +36,14 @@ This topic describes how to upload videos in Microsoft Dynamics 365 Commerce.
 
 ## Upload a video
 
-Uploading a video follows almost the same steps as uploading an image.
+If single video is being uploaded, you will be able to specify the following information in the **Upload Media Item** dialog box.
+
+- **Title, Description, Keywords** - Metadata
+- **Automatically generate closed captions** - Specifies whether closed captions should be automatically generated for the video
+- **Closed Caption** - Specifies the closed captions to be used
+- **Regular Audio** - Specifies the regular audio track
+- **Thumbnail** - Specifies the thumbnail for the video. If not specified, it will be generated automatically
+- **Descriptive Audio** -Specifies the descriptive audio track
 
 To upload a video in site builder, follow these steps.
 
@@ -48,17 +55,21 @@ To upload a video in site builder, follow these steps.
 1. If you want to publish the image(s) after immediately upload, select the **Publish media items after upload** check box
 1. Select **OK**.
 
-If you are uploading multiple types of assets at the same time (e.g. images and videos), in the "Upload Assets"-dialog you will only be able to specify the keywords, publishing information and if closed captions are generated automatically for video files. All the assets will share the specific keywords.
-
-If single video is being uploaded, you will be able to specify the following information in the "Upload Asset"-dialog:
-* *Title, Description, Keywords* - Meta data
-* *Automatically generate closed captions* - If closed captions should be automatically generated for the video
-* *Closed Caption* - Manually specify the closed captions to be used
-* *Regular Audio* - Manually specify the regular audio track
-* *Thumbnail* - Specify the thumbnail for the video. If not specified, it will be generated automatically
-* *Descriptive Audio* - Manually specify the descriptive audio track
+If you are uploading multiple types of assets simultaneously (for example, images and videos), in the **Upload Media Item** dialog box you will only be able to specify the keywords, whether the files should be published immediately after upload, and whether closed captions should be automatically generated for video files. All the assets will share the same keywords.
 
 ![Video](./media/dam-screenshot4.png)
 
 > [NOTE]
-> You should always upload the version of the video with highest bitrate and resolution. The video will be converted automatically to be suitable for different viewports/breakpoints.
+> You should always upload the version of the video with highest bitrate and resolution. The video will be converted automatically to be suitable for different viewports and their breakpoints.
+
+## Additional resources
+
+[Digital asset management overview](dam-overview.md)
+
+[Upload images](dam-upload-images.md)
+
+[Upload files](dam-upload-files.md)
+
+[Crop images](dam-crop-images.md)
+
+[Customize image focal points](dam-custom-focal-point.md)
