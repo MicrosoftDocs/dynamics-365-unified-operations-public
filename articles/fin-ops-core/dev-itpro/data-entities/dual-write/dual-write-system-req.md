@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: System requirements
+title: System requirements for dual-write
 description: 
 author: ramasri
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# System requirements
+# System requirements for dual-write
 
 [!include [banner](../../includes/banner.md)]
 

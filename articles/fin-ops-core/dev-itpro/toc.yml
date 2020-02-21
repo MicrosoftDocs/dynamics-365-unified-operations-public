@@ -148,6 +148,10 @@
               href: data-entities/dual-write/dual-write-home-page.md
             - name: Dual-write overview
               href: data-entities/dual-write/dual-write-overview.md
+            - name: Dual-write setup
+              items:
+                - name: System requirements for dual-write
+                  href: data-entities/dual-write/dual-write-system-req.md
             - name: Organization hierarchy on Common Data Service
               href: data-entities/dual-write/organization-mapping.md
             - name: Company integration

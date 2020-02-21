@@ -43,6 +43,11 @@ These topics describe dual-write integration.
     - [Top reasons to use dual-write](dual-write-overview.md#top-reasons-to-use-dual-write)
     - [What does dual-write mean for users and architects of customer relationship management products?](dual-write-overview.md#what-does-dual-write-mean-for-users-and-architects-of-crm-products)
     
+## Dual-write setup
+
++ [System requirements for dual-write](dual-write-system-req.md)
+
+
 ## Mapping concepts between apps
 
 These topics describe mapping between concepts in Finance and Operations applications and concepts in model-driven apps in Microsoft Dynamics 365.
