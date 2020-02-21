@@ -39,7 +39,7 @@ Azure Data Lake is a technology designed to enable big data analytics and AI in 
 
 Data lakes provide cheap cloud storage compared to a relational database. This enables storing large amounts of data in the cloud--both business data (traditionally stored in business systems and data warehouses) to device and sensor data, such as signals from devices. In addition to cheap storage, Azure Data Lake supports a range of tools and programming languages that enable reporting, querying, and transforming large amounts of data.
 
-For an overview of Azure Data Lake Gen2, see [Introduction to Azure Data Lake storage Gen 2](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction).
+For an overview of Azure Data Lake Gen2, see [Introduction to Azure Data Lake storage Gen 2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction).
 
 Dynamics 365 products, including Finance and Operations apps, leverage Azure Data Lake for AI and analytics scenarios, thereby enabling customers to leverage the strengths and cost advances offered by this technology. The following sections offer an overview of the scenarios.
 
@@ -56,14 +56,14 @@ Analytical workspaces can be leveraged for operational analytics scenarios in tw
 
 - Built your own Power BI based analytical reports
 
-For more information, see [Embedded Power BI in workspaces](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/embed-power-bi-workspaces?toc=/dynamics365/finance/toc.json).
+For more information, see [Embedded Power BI in workspaces](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/embed-power-bi-workspaces?toc=/dynamics365/finance/toc.json).
 
 BYOD
 ----
 
 Bring your own database (BYOD) is a service that enables customers to extract data from Finance and Operations apps into their own data warehouses. BYOD is recommended when you need to combine data from Finance and Operations apps with other systems, as well as with reporting with legacy data.
 
-For more information, see [Bring your own database (BYOD)](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database).
+For more information, see [Bring your own database (BYOD)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database).
 
 Azure Data Lake combines BYOD and Entity store
 ----------------------------------------------
@@ -99,7 +99,7 @@ CDM folder structure from Finance and Operations apps is shown below.
 
 ![CDM folder structure from F&O](./media/FnO-CDM-Folder-Structure.png)
 
-For more information on CDM in Azure Data lake see [Use the Common Data Model to optimize Azure Data Lake Storage Gen2](https://docs.microsoft.com/en-us/common-data-model/data-lake).
+For more information on CDM in Azure Data lake see [Use the Common Data Model to optimize Azure Data Lake Storage Gen2](https://docs.microsoft.com/common-data-model/data-lake).
  
 For an example:
 - You can attach a CDM folder into Power BI dataflows as a reference Dataflow. You can work with Power BI data flows and further re-shape the data, or to create Power BI datasets and reports.
@@ -109,7 +109,7 @@ Similar to Finance and Operations apps, other services (including CDS), Azure Io
 
 - Common Data Service enables exporting data to your own Azure Data Lake. For more information, see [Exporting CDS data to Azure Data Lake is Generally Available](https://powerapps.microsoft.com/en-us/blog/exporting-cds-data-to-azure-data-lake-preview/).
 
-- Power users can transform data in Azure Data Lake using CDS Data Flows. For more information, see [Use the Common Data Model to optimize Azure Data Lake Storage Gen2](https://docs.microsoft.com/en-us/common-data-model/data-lake).
+- Power users can transform data in Azure Data Lake using CDS Data Flows. For more information, see [Use the Common Data Model to optimize Azure Data Lake Storage Gen2](https://docs.microsoft.com/common-data-model/data-lake).
 
 If you are using BYOD, how you can use Azure Data Lake in the future
 ====================================================================
@@ -140,7 +140,7 @@ Data is stored in an Azure Data lake (Gen2), as opposed to an Azure SQL database
 > [!Note]
 > Since Azure Data Lake Gen2 is in customer's subscription, the customer must pay for data storage as well as I/O costs incurred when reading and writing data into the data lake. Customer may also incur IO costs due to the data being written/updated in the data lake by Finance and Operations apps. Finance and Operations apps requires the data lake be provisioned within the same Geo/region as the Finance and Opertations environment to reduce intra-region IO costs.
 
-For an indicative cost, please see the [Azure Data Lake Storage Gen2 pricing](https://azure.microsoft.com/en-us/pricing/details/storage/data-lake/) page.
+For an indicative cost, please see the [Azure Data Lake Storage Gen2 pricing](https://azure.microsoft.com/pricing/details/storage/data-lake/) page.
 
 Existing downstream/ consumption pipelines can be preserved
 -----------------------------------------------------------
