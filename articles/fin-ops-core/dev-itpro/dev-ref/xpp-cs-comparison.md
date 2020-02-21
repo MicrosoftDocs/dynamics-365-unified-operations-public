@@ -879,7 +879,7 @@ dictKeyValue.Add(xx ,xx.ToString() + “_Value”);
 
 Enumerators are used to loop through the key-value collections in both X++ and C\# as shown in the following code examples.
 
-```
+```xpp
 // X++ 
 enumer = mapKeyValue.getEnumerator();
 while (enumer.moveNext())

@@ -45,9 +45,8 @@ Compile-time functions are executed early during compilation of X++ code. They s
 -   `evalBuf`– Evaluates the input string of X++ code, and then returns the results as a string.
 -   `literalStr` – retrieves a label ID when given the string representation of a label, such as the string `"@SYS12345"`. For example, `myLabel.exists(literalStr("@SYS12345"));`.
 
-| **Note**                                                         |
-|------------------------------------------------------------------|
-| X++ compile time functions cannot be called from a .NET program. |
+> [!NOTE]
+> X++ compile time functions cannot be called from a .NET program.
 
 ### Functions
 
@@ -2182,7 +2181,9 @@ Validates that the specified web display content item exists in the Application 
 
 ### Syntax
 
-    str webDisplayContentItemStr(class webdisplaycontentitem)
+```xpp
+str webDisplayContentItemStr(class webdisplaycontentitem)
+```
 
 ### Parameters
 
