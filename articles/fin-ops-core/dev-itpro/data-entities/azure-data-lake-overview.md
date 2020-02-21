@@ -32,8 +32,7 @@ ms.dyn365.ops.version: Platform update 34
 
 [!include [banner](../includes/banner.md)]
 
-What is Azure Data Lake?
-------------------------
+## What is Azure Data Lake?
 
 Azure Data Lake is a technology designed to enable big data analytics and AI in the Azure cloud. When referring to Azure Data Lake, we specifically refer to Azure Data Lake Gen2 (ADLS) based storage technology.
 
@@ -43,8 +42,7 @@ For an overview of Azure Data Lake Gen2, see [Introduction to Azure Data Lake st
 
 Dynamics 365 products, including Finance and Operations apps, leverage Azure Data Lake for AI and analytics scenarios, thereby enabling customers to leverage the strengths and cost advances offered by this technology. The following sections offer an overview of the scenarios.
 
-Analytical workspaces
----------------------
+## Analytical workspaces
 
 Analytical workspaces provide contextual and actionable insights within Finance and Operations apps. Analytical workspaces provide a birds-eye view of a business processes, which enable your users to get relevant information immediately. They can also take action then and there.
 
@@ -58,15 +56,13 @@ Analytical workspaces can be leveraged for operational analytics scenarios in tw
 
 For more information, see [Embedded Power BI in workspaces](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/embed-power-bi-workspaces?toc=/dynamics365/finance/toc.json).
 
-BYOD
-----
+## BYOD
 
 Bring your own database (BYOD) is a service that enables customers to extract data from Finance and Operations apps into their own data warehouses. BYOD is recommended when you need to combine data from Finance and Operations apps with other systems, as well as with reporting with legacy data.
 
 For more information, see [Bring your own database (BYOD)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database).
 
-Azure Data Lake combines BYOD and Entity store
-----------------------------------------------
+## Azure Data Lake combines BYOD and Entity store
 
 Customers use a combination of analytical workspaces (based on Entity store) and BYOD for different scenarios.
 
@@ -90,6 +86,7 @@ Azure Data Lake combines both these services into a single service that offers "
 ![Power users as well as Developers can use Azure Data Lake](./media/PowerUsers-Developers-LoveThis-PPT.png)
   
 ## Common Data Model folders
+
 Data is stored in Azure Data Lake to comply with Common Data Model (CDM) folder standard. This means:
 - Data staged in Azure Data Lake by Finance and Operations apps is organized into a set of folders. 
 - CDM folders contain metadata definitions in addition to data files - metadata definitions are kept in model files in accordance with the standard specified by CDM language.
@@ -111,8 +108,7 @@ Similar to Finance and Operations apps, other services (including CDS), Azure Io
 
 - Power users can transform data in Azure Data Lake using CDS Data Flows. For more information, see [Use the Common Data Model to optimize Azure Data Lake Storage Gen2](https://docs.microsoft.com/common-data-model/data-lake).
 
-If you are using BYOD, how you can use Azure Data Lake in the future
-====================================================================
+## If you are using BYOD, how you can use Azure Data Lake in the future
 
 BYOD service is used by customers to extract data from Finance and Operations apps mostly for reporting or analytics. BYOD service requires the customer to provision and maintain a SQL Azure database for storing data that are exported from Finance and Operations apps.
 
@@ -122,8 +118,7 @@ Some customers use BYOD as a staging area - where a "snapshot" of the Finance an
 
 If you using BYOD today for scenarios above, on-boarding to Azure Data Lake will yield several benefits.
 
-Data is already here, no need to export: 
------------------------------------------
+## Data is already here, no need to export
 
 Azure Data Lake integration enables the user to choose tables and entities (similar to the BYOD experience). Once chosen, the data is updated in Azure Data Lake by the system. The system also continuously exports data as they change within Finance and Operations apps. Updated Finance and Operations data is reflected in the Azure Data Lake within few minutes of a change.
 
@@ -132,8 +127,7 @@ Azure Data Lake integration enables the user to choose tables and entities (simi
 
 With Azure Data Lake integration, customers do not need to monitor and manage complex data export and orchestration schedules. Data is updated in the Data lake without user intervention.
 
-Reduced cost of data storage
-----------------------------
+## Reduced cost of data storage
 
 Data is stored in an Azure Data lake (Gen2), as opposed to an Azure SQL database as required by BYOD. Customer gets to use a storage medium much cheaper than Azure SQL database.
 
@@ -142,8 +136,7 @@ Data is stored in an Azure Data lake (Gen2), as opposed to an Azure SQL database
 
 For an indicative cost, please see the [Azure Data Lake Storage Gen2 pricing](https://azure.microsoft.com/pricing/details/storage/data-lake/) page.
 
-Existing downstream/ consumption pipelines can be preserved
------------------------------------------------------------
+## Existing downstream/ consumption pipelines can be preserved
 
 As we discussed earlier, BYOD is predominantly used in 2 scenarios
 
@@ -157,8 +150,7 @@ In case of scenario 2, if you may use data integration/transformation tools such
 
 In case of scenario 1 and 2, if you are reading the database using T-SQL, you can create a SQL server end-point using Azure Synapse. Azure synapse SQL-on demand capability enables querying Azure Data Lake using T-SQL language. Downstream tools do not need to be modified since you can preserve the data shape similar to BYOD.
 
-Simplified data pipeline for near-real time reporting 
-------------------------------------------------------
+## Simplified data pipeline for near-real time reporting 
 
 In a traditional data warehouse, data is stored in a staging area before it can be aggregated and simplified for reporting. You may also have a reporting tools that aggregate data for better user experiences. Having multiple data stops (for staging, de-normalization, and aggregation) increases data staleness – that is the time it takes from activity to the time it takes for the reports to reflect the results.
 
@@ -168,8 +160,7 @@ Data lake integration enables "warm-path" as the default reporting option. Since
 
 For near-real time reporting, you can minimize data staging and preparation steps by using on-demand query (ex. Azure Synapse) and Power BI direct query mode that queries semi-prepared data within the data lake. For analytical reporting, you can de-normalize and aggregate the data within the data lake.
 
-If you are using analytical workspaces, how you can use Azure Data Lake in the future
-=====================================================================================
+## If you are using analytical workspaces, how you can use Azure Data Lake in the future
 
 Analytical workspaces enable in-context, operational analytics within Finance and Operations apps. Analytical workspaces are built as an extension to Finance and Operations workspaces - a cockpit that provides a bird's eye view of business processes. There are over 25 ready-made analytical workspaces that provide interactive, near-real time data exploration. You can drive action by adding contextual gestures into analytical workspaces - users can act on the findings without leaving the report. There is an extensive programming model built into Finance and Operations apps that enable driving ERP action and business logic from within an analytical workspace.
 
@@ -183,8 +174,7 @@ Aggregate measurements will be available in the Azure Data Lake as opposed to En
 
 If you have pinned your own Power BI reports to analytical workspaces, you can transition them to Azure Data Lake at your own schedule.
 
-How you can modernize your existing data warehouse with Azure Data Lake
-=======================================================================
+## How you can modernize your existing data warehouse with Azure Data Lake
 
 While you can make use of Azure Data Lake integration as a way to transition out of BYOD and gain immediate benefits, there's a lot more you can do with the benefits offered by Azure Data Lake.
 
@@ -196,8 +186,7 @@ Azure Data Lake has many associated services that enables analytics, data transf
 
 As opposed to downloading Finance and Operations data from an Azure Data Lake into your on-premises data warehouses, you can bring your on-premises data into an Azure Data Lake. We refer to this transformation as modernizing data warehouses.
 
-Planning the transition
-=======================
+## Planning the transition
 
 You can plan your transition to Azure Data Lake in multiple stages as shown in the diagram below. Each stage yields business benefits that can be justified on their own. You can use the following phases as a planning guideline.
 
