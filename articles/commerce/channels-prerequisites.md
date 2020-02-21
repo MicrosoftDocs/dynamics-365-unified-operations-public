@@ -5,7 +5,7 @@ title: Channel setup prerequisites
 description: This topic presents an overview of channels setup prerequisites in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 01/27/2020
+ms.date: 02/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -44,7 +44,7 @@ Before a Dynamics 365 Commerce channel can be created, several prerequisite task
 
 ## Initialization
 
-- [Initialize seed data](../retail/enable-configure-retail-functionality.md)
+- [Initialize seed data](enable-configure-retail-functionality.md)
 
 ## Global prerequisities required for all channel types
 
@@ -61,17 +61,17 @@ Before a Dynamics 365 Commerce channel can be created, several prerequisite task
 
 ## Retail channel prerequisites
 
-- [Info codes and info code groups](https://docs.microsoft.com/en-us/dynamics365/retail/info-codes-retail?toc=/dynamics365/commerce/toc.json)
+- [Info codes and info code groups](info-codes-retail.md)
 - [Set up a retail functionality profile](retail-functionality-profile.md)
 - [Set up an employee address book](new-address-book.md)
-- [Set up a screen layout](https://docs.microsoft.com/en-us/dynamics365/retail/pos-screen-layouts?toc=/dynamics365/commerce/toc.json)
-- [Set up a hardware station](https://docs.microsoft.com/en-us/dynamics365/retail/retail-hardware-station-configuration-installation?toc=/dynamics365/commerce/toc.json)
+- [Set up a screen layout](pos-screen-layouts.md)
+- [Set up a hardware station](retail-hardware-station-configuration-installation.md)
 
 ## Call Center channel prerequisites
 
 - Call center parameters
-- [Call center order and refund payment methods](https://docs.microsoft.com/en-us/dynamics365/commerce/work-with-payments)
-- [Call center modes of delivery and charges](https://docs.microsoft.com/en-us/dynamics365/commerce/configure-call-center-delivery)
+- [Call center order and refund payment methods](work-with-payments.md)
+- [Call center modes of delivery and charges](configure-call-center-delivery.md)
 
 ## Online channel prerequisites
 
