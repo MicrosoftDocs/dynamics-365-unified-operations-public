@@ -1,3 +1,4 @@
+---
 # required metadata
 
 title: Upload images
@@ -110,3 +111,13 @@ The default naming convention varies based on the category:
 > Image assets with category are also automatically tagged with the category as keyword to allow searching for assets of specific category.
 
 ## Additional resources
+
+[Digital asset management overview](dam-overview.md)
+
+[Upload video](dam-upload-video.md)
+
+[Upload files](dam-upload-files.md)
+
+[Crop images](dam-crop-images.md)
+
+[Customize image focal points](dam-custom-focal-point.md)
