@@ -9,7 +9,7 @@ manager: AnnBe
 ms.date: 02/21/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -21,8 +21,7 @@ audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+# ms.custom: NotInToc
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: milindav
