@@ -2,10 +2,11 @@
 # required metadata
 
 title: Azure Data Lake overview
-description: This topic provides information about...
+description: This topic provides an overview of Azure Data Lake, which is a technology designed to enable big data analytics and AI in
+the Azure cloud.
 author: MilindaV2
 manager: AnnBe
-ms.date: 01/15/2020
+ms.date: 02/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,14 +20,13 @@ audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
 ms.search.scope: Operations
-
 # ms.tgt_pltfrm: 
-ms.custom: 96283
+ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: milindav
-ms.search.validFrom: 2020-03-01
+ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Platform Update 34
 
 ---
