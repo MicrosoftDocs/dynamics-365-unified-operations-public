@@ -83,6 +83,7 @@ This page lists the resources that are available for IT pros and developers who 
 - [Add custom controls to POS views that aren't screen layout designer-based](pos-control-non-screen.md)
 - [Development in cloud-hosted development environments without admin access](cloud-dev-box.md)
 - [Test recorder and Regression suite automation tool for Cloud POS](pos-rsat.md)
+- [POS Cart view events and handlers](cart-view-handlers.md)
 
 ## Integrating Commerce
 -   [Create and apply branding to the Retail Experience app](create-retail-experience-app.md)

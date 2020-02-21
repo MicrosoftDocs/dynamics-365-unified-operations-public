@@ -2000,6 +2000,8 @@
           href: dev-itpro/pos-run-samples.md
         - name: Device management implementation guidance
           href: implementation-considerations-devices.md
+        - name: POS Cart view events and handlers
+          href: dev-itpro/cart-view-handlers.md
       - name: Hardware Station extensibility
         items:
         - name: Hardware Station and extensibility
