@@ -43,13 +43,15 @@ A custom unit test adapter is available in Visual Studio. This adapter lets test
 ## Author unit/component test code by using the SysTest Framework
 When you create a project in Visual Studio, you can add an X++ unit test. You extend the class with **SysTestCase**, and then either add the **SysTestMethodAttribute** attribute or prefix the case with "test" in the method name.
 
-    class FMUnitTestSample extends SysTestCase
+```xpp
+class FMUnitTestSample extends SysTestCase
+{
+    [SysTestMethod]
+    public void testTotalsEngineConfig()
     {
-        [SysTestMethod]
-        public void testTotalsEngineConfig()
-        {
-        }
     }
+}
+```
 
 After you save the class, each test appears in Test Explorer, just as a C\# test would appear. 
 
