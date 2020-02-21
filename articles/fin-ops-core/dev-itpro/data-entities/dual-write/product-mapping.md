@@ -113,7 +113,7 @@ Note that the synchronization of products happens from Finance and Operations ap
 
 Product dimensions are characteristics that identify a product variant. The four product dimensions (Color, Size, Style, and Configuration) are also mapped to Common Data Service to define the product variants. The following illustration shows the data model for the product dimension Color. The same model is applied to Sizes, Styles and Configurations. 
 
-![Data model for products](media/dual-write-product-2.PNG)
+![Data model for products](media/dual-write-product-two.png)
 
 [!include [product colors](includes/EcoResProductColorEntity-msdyn-productcolor.md)]
 
@@ -149,7 +149,7 @@ Default order settings define the site and warehouse where items will be sourced
 
 The units of measure and its respective conversions is available in the Common Data Service following the data model shown in the diagram.
 
-![Data model for products](media/dual-write-product-3.PNG)
+![Data model for products](media/dual-write-product-three.png)
 
 The unit of measure concept is integrated between Finance and Operations apps and other Dynamics 365 apps. For each unit class in a Finance and Operations app, a unit group is created in a Dynamics 365 app, which contains the units belonging to the unit class. A default base unit is also created for every unit group. 
 
