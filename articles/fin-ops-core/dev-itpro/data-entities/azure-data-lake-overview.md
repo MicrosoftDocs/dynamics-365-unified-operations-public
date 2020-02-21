@@ -15,7 +15,6 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-# ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
@@ -27,7 +26,6 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Platform Update 34
-
 ---
 
 # Azure Data Lake overveiw
