@@ -5,7 +5,7 @@ title: Online and offline point of sale (POS) operations
 description: This topic provides details about the point of sale (POS) operations in Dynamics 365 Commerce. It specifies where in the application the operations can be invoked, and whether they are available in offline mode.
 author: jblucher
 manager: AnnBe
-ms.date: 05/21/2019
+ms.date: 02/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -71,7 +71,7 @@ The following columns specify where the operations can be invoked:
 | 310 | Calculate total | When discount calculation is delayed, this operation initiates the calculation for the current transaction. | Yes | Yes | No | Yes | No |
 | 642 | Carry Out All Products | Set the mode of delivery for all lines to **Carryout**. | Yes | Yes | No | Yes\* | No |
 | 641 | Carry Out Selected Products | Set the mode of delivery for the selected lines to **Carryout**. | Yes | Yes | No | Yes\* | No |
-| 647 | Change mode of delivery | Change mode of delivery for a preconfigured shipping saleslines. | Yes | Yes | No | No| No |
+| 647 | Change mode of delivery | Change mode of delivery for preconfigured shipping sales lines. | Yes | Yes | No | No| No |
 | 1215 | Change password | This operation lets the POS user change his or her password. | Yes | Yes | Yes | No | No |
 | 123 | Change unit of measure | Change the unit of measure for the selected line item. | Yes | Yes | No | Yes | No |
 | 639 | Clear default sales representative on transaction | Remove the commission sales group (sales rep) from the transaction. | Yes | Yes | No | Yes | No |
@@ -108,7 +108,7 @@ The following columns specify where the operations can be invoked:
 | 1218 | Force unlock peripheral | The system uses this operation internally to unlock POS peripherals. | Not applicable | Not applicable | Not applicable | Not applicable | No |
 | 520 | Gift card balance | Show the balance of a gift card. | Yes | Yes | No | No | No |
 | 708 | Inactivate device | Inactivate the current device, so that it can't be used as a POS register. | No | No | No | No | No |
-| 804 | Inbound operation | Access the features of inbound store inventory management | Yes | No | Yes | No| No |
+| 804 | Inbound operation | Access the features of inbound store inventory management. | Yes | No | Yes | No| No |
 | 517 | Income accounts | Record money that is put into the cash drawer for a reason other than a sale. | Yes | Yes | Yes | Yes | No |
 | 801 | Inventory lookup | Look up available, on order, and available-to-promise (ATP) quantities for the current store and other available locations. | Yes | Yes | Yes | No | No |
 | 122 | Invoice comment | This operation lets the user enter a comment about the current transaction. | Yes | Yes | No | Yes | No |
