@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Out-of-the-box setup from Lifecycle Services
-description: 
-author: ramasri
+title: Dual-write setup from Lifecycle Services
+description:
+author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 01/06/2020
 ms.topic: article
@@ -24,19 +24,19 @@ ms.custom:
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: 
-ms.author: 
+ms.author: ramasri
 ms.dyn365.ops.version: 
 ms.search.validFrom: 2020-01-06
 
 ---
 
-# Out-of-the-box setup from Lifecycle Services
+# Dual-write setup from Lifecycle Services
 
 [!include [banner](../../includes/banner.md)]
 
 [!include [banner](../../includes/preview-banner.md)]
 
-This topic explains the procedure to set up the dual-write connection between a new Finance and Operations environment and a new Common Data Service environment from Microsoft Dynamics Lifecycle Services (LCS).
+This topic explains how to set up the dual-write connection between a new Finance and Operations environment and a new Common Data Service environment from Microsoft Dynamics Lifecycle Services (LCS).
 
 ## Prerequisites
 
@@ -46,18 +46,18 @@ This topic explains the procedure to set up the dual-write connection between a 
 ## Steps
 
 Perform the following steps to complete the dual-write connection setup:
-1. Navigate to your **project** in Lifecycle Services.
+1. Navigate to your project in Lifecycle Services.
 2. Click on **Configure** to deploy a new environment.
-3. Select the **version**. 
-4. Select the **topology**. If only one is available, it is selected automatically.
-5. Complete the tasks in the **deployment wizard**. 
+3. Select the version. 
+4. Select the topology. If only one is available, it is selected automatically.
+5. Complete the tasks in the **Deployment Wizard**. 
 6. If your tenant has a Common Data Service environment already provisioned, then you will have the option to select that environment in this tab. 
     1. Select the **Common Data Service** tab.
     2. Toggle the **Configure CDS** button **ON**.
     3. Select the **environment** from the drop-down that you want to integrate your Finance and Operations data. The drop-down has the environments where the active user has admin privileges.
     4. Check the **Agree** box if you agree to the terms and conditions.
     
-        ![](../dual-write/media/dual_write_setup_002[1].jpg)
+        ![](../dual-write/media/lcs_setup_1.jpg)
         
 7. If your tenant does not have a Common Data Service environment, a new one will be provisioned.
     1. Select the **Common Data Service** tab.
