@@ -152,6 +152,8 @@
               items:
                 - name: System requirements for dual-write
                   href: data-entities/dual-write/dual-write-system-req.md
+                - name: Supported scenarios for dual-write setup
+                  href: data-entities/dual-write/connection-setup.md
             - name: Organization hierarchy on Common Data Service
               href: data-entities/dual-write/organization-mapping.md
             - name: Company integration
