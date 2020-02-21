@@ -203,7 +203,7 @@ This is an informational message that highlights the need to call <strong>skip</
 <tr class="even">
 <td>How to fix it</td>
 <td>The following examples show when the rule will fail or pass. Use these examples as guidelines to refactor your code.
-<pre><code lang="xpp">ttsbegin;
+<pre lang="xpp"><code>ttsbegin;
 try {
 }
 // fail
@@ -268,7 +268,7 @@ catch(Exception::UpdateConflictNotRecovered) {}</code></pre></td>
 <ul>
 <li>Set the <strong>Cache Data Method</strong> property to <strong>Yes</strong>.</li>
 <li><p>Set the <strong>Cache Data Method</strong> property to <strong>Auto</strong>, and mark the data method of the table with the <strong>SysClientCacheDataMethodAttribute</strong> attribute. Here is an example.</p>
-<pre><code lang="xpp">[SysClientCacheDataMethodAttribute(true)]
+<pre lang="xpp"><code>[SysClientCacheDataMethodAttribute(true)]
 Display TransDate myDateMethod()
 {
     ...
