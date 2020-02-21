@@ -5,7 +5,7 @@ title: Set up and deploy on-premises environments (Platform update 12 and later)
 description: This topic provides information about how to plan, set up, and deploy Dynamics 365 Finance + Operations (on-premises) with Platform update 12 and later.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 10/15/2019
+ms.date: 02/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -54,7 +54,7 @@ The Finance + Operations application consists of three main components:
 These components depend on the following system software:
 
 - Microsoft Windows Server 2016 (only English OS installations are supported)
-- Microsoft SQL Server 2016 SP1, which has the following features:
+- Microsoft SQL Server 2016 SP1 and SP2 (from Platfrom update 33), which has the following features:
   - Full-text index search is enabled.
   - SQL Server Reporting Services (SSRS) - This is deployed on BI virtual machines.
   - SQL Server Integration Services (SSIS) - This is deployed on AOS virtual machines.
@@ -148,7 +148,7 @@ Before you start the setup, the following prerequisites must be in place. The se
 
 - Active Directory Domain Services (AD DS) must be installed and configured in your network.
 - AD FS must be deployed.
-- SQL Server 2016 SP1 must be installed on the SSRS machines.
+- SQL Server 2016 SP2 must be installed on the SSRS machines.
 - SQL Server Reporting Services 2016 must be installed in **Native** mode on the SSRS machines.
 
 The following prerequisite software is installed on the VMs by the infrastructure setup scripts downloaded from LCS.
@@ -634,7 +634,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
 ### <a name="setupsql"></a> 13. Set up SQL Server
 
-1. Install SQL Server 2016 SP1 with high availability. (Unless you're deploying in a sandbox environment, where one instance of SQL Server is sufficient. You may want to install SQL Server with high availability in sandbox environments to test high-availability scenarios.)
+1. Install SQL Server 2016 SP2 with high availability. (Unless you're deploying in a sandbox environment, where one instance of SQL Server is sufficient. You may want to install SQL Server with high availability in sandbox environments to test high-availability scenarios.)
 
     > [!IMPORTANT]
     > You must enable the [SQL Server and Windows Authentication mode](https://docs.microsoft.com/sql/database-engine/configure-windows/change-server-authentication-mode).
@@ -680,7 +680,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
     1. Import the certificate into LocalMachine\\My, unless you are setting up Always-On, in which case the certificate already exists on the node.
     2. Grant certificate permissions to the service account that is used to run the SQL service. In Microsoft Management Console (MMC), right-click the certificate (**certlm.msc**), and then select **Tasks** \> **Manage Private Keys**.
-    3. Add the certificate thumbprint to HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\*MSSQL.x*\\MSSQLServer\\SuperSocketNetLib\\Certificate. For example, with SQL Server 2016 SP1: HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\MSSQL13.MSSQLSERVER\\MSSQLServer\\SuperSocketNetLib\\Certificate
+    3. Add the certificate thumbprint to HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\*MSSQL.x*\\MSSQLServer\\SuperSocketNetLib\\Certificate. For example, with SQL Server 2016 SP2: HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\MSSQL13.MSSQLSERVER\\MSSQLServer\\SuperSocketNetLib\\Certificate
         1. From the start menu, type **regedit**, then select **regedit** to open the registry editor.
         2. Navigate to the certificate, right-click **Modify**, then replace the value with the certificate thumbprint.
     4. In Microsoft SQL Server Configuration Manager, set **ForceEncryption** to **Yes**.
