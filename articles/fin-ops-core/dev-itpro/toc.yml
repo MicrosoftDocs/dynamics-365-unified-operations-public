@@ -326,6 +326,8 @@
           href: database/import-database.md
         - name: Database point-in-time restore
           href: database/database-point-in-time-restore.md
+        - name: Point-in-time restore of the production database to a sandbox environment
+          href: database/database-pitr-prod-sandbox.md
       - name: Tutorials
         items:
         - name: Refresh for training purposes
