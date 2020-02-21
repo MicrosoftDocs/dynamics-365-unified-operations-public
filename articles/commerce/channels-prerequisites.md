@@ -51,9 +51,9 @@ Before a Dynamics 365 Commerce channel can be created, several prerequisite task
 - [Define and configure your legal entity structure](channels-legal-entities.md) 
 - [Configure your organizational hierarchy](channels-org-hierarchies.md)
 - [Set up a warehouse](channels-setup-warehouse.md)
-- [Configure sales tax](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/indirect-taxes-overview?toc=/dynamics365/commerce/toc.json)
+- [Configure sales tax](https://docs.microsoft.com/dynamics365/finance/general-ledger/indirect-taxes-overview?toc=/dynamics365/commerce/toc.json)
 - [Set up an email notification profile](email-notification-profiles.md)
-- [Set up number sequences](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview?toc=/dynamics365/commerce/toc.json)
+- [Set up number sequences](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview?toc=/dynamics365/commerce/toc.json)
 - [Set up a default customer and address book](default-customer.md)
 <!--
 - [Configure commerce parameters](commerce-parameters.md)
