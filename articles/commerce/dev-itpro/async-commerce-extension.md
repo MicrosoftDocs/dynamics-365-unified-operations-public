@@ -37,31 +37,59 @@ ms.dyn365.ops.version: 10.0.10
 > [!NOTE]
 > This topic applies to Microsoft Dynamics 365 Commerce version 10.0.10 and later.
 
-This topic explains how to create new business logic (that is, application programming interfaces \[APIs\]) by using the new asynchronous framework, and then expose the new APIs as web services that can be consumed by the point of sale (POS). The new APIs, or extension Commerce requests, run asynchronously. The Commerce API framework supports asynchronous execution of extension Commerce requests.
+This topic describes how to create new business logic (CRT - Commerce runtime) (that is, application programming interfaces \[APIs\]) commerce (CRT) APIs (requests) to execute using asynchronous programming model. Commerce API framework is enhanced to support asynchronous programming model for extensions and OOB commerce handlers. Before this framework enhancement the request can be executed only synchronously, it means that any long operation (I/O operation, database query, network request, etc.) blocks execution thread. Adding of asynchronous model support to the Commerce Runtime will provide ability to use asynchronous versions of such operations thus unblocking execution thread.
 
-Before this framework enhancement was made, requests could be run only synchronously. Therefore, any long operations, such as input/output (I/O) operations, database queries, or network requests, blocked the execution thread. Now that support for the asynchronous model has been added to the Commerce runtime (CRT), you can use asynchronous versions of operations. Therefore, the execution thread is unblocked.
-
-The Commerce API framework supports the async/await model for extension requests. These extension requests can run asynchronously. By using the async/await model, you [simplify](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/async/how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await) the business logic when some work should or can be done in parallel.
+The commerce API framework now supports the **Task** and **Task<T>** supported by the **async** and **await** keywords for the extension CRT request handlers. It is recommended to use asynchronous commerce API framework for all new extension APIs and use OOB asynchronous commerce in extensions.
 
 You should use the asynchronous Commerce API framework for all new extension APIs, and you should use out-of-box asynchronous Commerce extensions.
 
+
+
+
+## Async classes/interface added in the Commerce API framework:
+
+
 The following asynchronous classes and interfaces were added in the Commerce API framework.
 
-| Class                     | Description |
+| Class/Interface                     | Description |
 |---------------------------|-------------|
 | SingleAsyncRequestHandler | The base class for asynchronous handlers that support only one request. |
 | IRequestHandlerAsync      | The interface for the asynchronous request handler. |
 | IRequestTriggerAsync      | The interface for the request trigger. |
+| CommerceControllerAsync   | The base class for asynchronous extension Retail server controller class. |
+| DatabaseContext           | The base class for asynchronous database execution methods. |
+
+
 
 The following asynchronous methods were added in the Commerce API framework.
 
-| Class.Interface           | Method                                              | Description |
+| Class/Interface           | Method                                              | Description |
 |---------------------------|-----------------------------------------------------|-------------|
 | SingleAsyncRequestHandler | Task\<TResponse\> Process                           | The execute method that will be overridden by each derived class. |
 |                           | Task\<Response\> Execute                            | The method that represents the entry point of the request handler. |
 | IRequestHandlerAsync      | Task\<Response\> Execute (Request request)          | The interface for the asynchronous request handler. |
 | IRequestTriggerAsync      | Task OnExecuting(Request request)                   | The method that is invoked before the request has been processed by **IRequestHandler**. |
-|                           | Task OnExecuted(Request request, Response response) | The method that is invoked after the request has been processed by **IRequestHandler**. |
+| IRequestTriggerAsync      | Task OnExecuted(Request request, Response response) | The method that is invoked after the request has been processed by **IRequestHandler**. |
+| DatabaseContext           | async Task<Tuple<int, PagedResult<T>>> ExecuteStoredProcedureAsync<T>(string procedureName, ParameterSet parameters, QueryResultSettings resultSettings) | Executes the stored procedure using the specified parameters. |
+| DatabaseContext           | async Task<ReadOnlyCollection<T>> ExecuteNonPagedStoredProcedureAsync<T>(string procedureName, ParameterSet parameters, QueryResultSettings resultSettings) where T : CommerceEntity, new() | Executes the stored procedure using the specified parameters, non-paginated. |
+|DatabaseContext            | async Task<Tuple<PagedResult<T1>, ReadOnlyCollection<T2>>> ExecuteStoredProcedureAsync<T1, T2>(string procedureName, ParameterSet parameters, QueryResultSettings resultSettings) where T1 : CommerceEntity, new() where T2 : CommerceEntity, new() | Executes the specified stored procedure. |
+| DatabaseContext                          | async Task<Tuple<int, Tuple<PagedResult<T1>, ReadOnlyCollection<T2>>>> ExecuteStoredProcedureAsync<T1, T2>(string procedureName, ParameterSet parameters, ParameterSet outputParameters, QueryResultSettings resultSettings) where T1 : CommerceEntity, new() where T2 : CommerceEntity, new() | Executes the specified stored procedure. |
+|DatabaseContext                        | async Task<Tuple<PagedResult<T1>, ReadOnlyCollection<T2>, ReadOnlyCollection<T3>>> ExecuteStoredProcedureAsync<T1, T2, T3>(string procedureName, ParameterSet parameters, QueryResultSettings resultSettings) where T1 : CommerceEntity, new() where T2 : CommerceEntity, new() where T3 : CommerceEntity, new() | Executes the specified stored procedure. |
+| DatabaseContext                          | async Task<Tuple<int, Tuple<PagedResult<T1>, ReadOnlyCollection<T2>, ReadOnlyCollection<T3>>>> ExecuteStoredProcedureAsync<T1, T2, T3>(string procedureName, ParameterSet parameters, ParameterSet outputParameters, QueryResultSettings resultSettings) where T1 : CommerceEntity, new() where T2 : CommerceEntity, new()  where T3 : CommerceEntity, new() | Executes the specified stored procedure. |
+| DatabaseContext                           | async Task<Tuple<PagedResult<T1>, ReadOnlyCollection<T2>, ReadOnlyCollection<T3>, ReadOnlyCollection<T4>>> ExecuteStoredProcedureAsync<T1, T2, T3, T4>(string procedureName, ParameterSet parameters, QueryResultSettings resultSettings) where T1 : CommerceEntity, new() where T2 : CommerceEntity, new() where T3 : CommerceEntity, new() where T4 : CommerceEntity, new() | Executes the specified stored procedure. |
+| DatabaseContext           | async Task<Tuple<int, Tuple<PagedResult<T1>, ReadOnlyCollection<T2>, ReadOnlyCollection<T3>, ReadOnlyCollection<T4>>>> ExecuteStoredProcedureAsync<T1, T2, T3, T4>(string procedureName, ParameterSet parameters, ParameterSet outputParameters, QueryResultSettings resultSettings) where T1 : CommerceEntity, new() where T2 : CommerceEntity, new() where T3 : CommerceEntity, new() where T4 : CommerceEntity, new() | Executes the specified stored procedure. |
+|DatabaseContext   | async Task<Tuple<PagedResult<T1>, ReadOnlyCollection<T2>, ReadOnlyCollection<T3>, ReadOnlyCollection<T4>, ReadOnlyCollection<T5>, ReadOnlyCollection<T6>, ReadOnlyCollection<T7>, Tuple<ReadOnlyCollection<T8>>>> ExecuteStoredProcedureAsync<T1, T2, T3, T4, T5, T6, T7, T8>(string procedureName, ParameterSet parameters, QueryResultSettings resultSettings) where T1 : CommerceEntity, new() where T2 : CommerceEntity, new() where T3 : CommerceEntity, new() where T4 : CommerceEntity, new() where T5 : CommerceEntity, new() where T6 : CommerceEntity, new() where T7 : CommerceEntity, new() where T8 : CommerceEntity, new() | Executes the specified stored procedure.. |
+| DatabaseContext    | Task<Tuple<int, Tuple<PagedResult<T1>, ReadOnlyCollection<T2>, ReadOnlyCollection<T3>, ReadOnlyCollection<T4>, ReadOnlyCollection<T5>, ReadOnlyCollection<T6>, ReadOnlyCollection<T7>, Tuple<ReadOnlyCollection<T8>>>>> ExecuteStoredProcedureAsync<T1, T2, T3, T4, T5, T6, T7, T8>(string procedureName, ParameterSet parameters, ParameterSet outputParameters, QueryResultSettings resultSettings) where T1 : CommerceEntity, new() where T2 : CommerceEntity, new() where T3 : CommerceEntity, new() where T4 : CommerceEntity, new() where T5 : CommerceEntity, new() where T6 : CommerceEntity, new() where T7 : CommerceEntity, new() where T8 : CommerceEntity, new() | Executes the specified stored procedure. |
+| DatabaseContext       | Task<ReadOnlyCollection<T>> ExecuteStoredProcedureScalarCollectionAsync<T>(string procedureName, ParameterSet parameters, QueryResultSettings resultSettings)                   | Executes a query that returns a collection of single results. |
+| DatabaseContext       | Task<int> ExecuteStoredProcedureNonQueryAsync(string procedureName, ParameterSet parameters, QueryResultSettings resultSettings) | Executes the specified stored procedure with the specified parameters. |
+| DatabaseContext       | Task<int> ExecuteStoredProcedureScalarAsync(string procedureName, ParameterSet parameters, QueryResultSettings resultSettings) | Executes the stored procedure using the specified parameters and returns the return value. |
+| DatabaseContext      | Task OnExecuting(Request request)                   | Executes the stored procedure using the specified parameters and returns the return value. |
+| DatabaseContext      | Task<int> ExecuteStoredProcedureScalarAsync(string procedureName, ParameterSet parameters, ParameterSet outputParameters, QueryResultSettings resultSettings) | Executes the stored procedure using the specified parameters and returns the return value. |
+| DatabaseContext       | Task<PagedResult<T>> ReadEntityAsync<T>(IDatabaseQuery query) where T : CommerceEntity, new()  | Reads an entity from the database. |
+| DatabaseContext       | Task ExecuteNonQueryAsync(IDatabaseQuery query)                   | Executes a query that has no output. |
+| DatabaseContext       | Task<T> ExecuteScalarAsync<T>(IDatabaseQuery query)                   | Executes a query that has no output. |
+| DatabaseContext       | Task<ReadOnlyCollection<T>> ExecuteScalarCollectionAsync<T>(IDatabaseQuery query)                   |Executes a query that returns a collection of single results. |
+    
 
 Asynchronous execution is supported for these scenarios:
 
