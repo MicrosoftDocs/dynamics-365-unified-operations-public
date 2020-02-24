@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 10.0.10
 
 This topic describes the process of adding an automated posting task to the Vendor invoice workflow so that the invoice is posted using a batch. Posting invoices in a batch lets the workflow process continue without having to wait for the posting to finish, which improves the overall performance of all the tasks submitted to the workflow.
 
-The **Post the vendor invoice using a batch** task that automates posting vendor invoices in a batch must not be used in the same workflow configuration as the **Post vendor invoices** automated task. **Post the vendor invoice using a batch** should be the last element in the workflow configuration.
+The **Post the vendor invoice using a batch** task that automates batch posting for vendor invoices must not be used in the same workflow configuration as the **Post vendor invoices** automated task. **Post the vendor invoice using a batch** should be the last element in the workflow configuration.
 
 To post a vendor invoice in a batch using this automated workflow task, be sure that the **Add an automated task to the Vendor invoice workflow for posting the vendor invoice using a batch job** parameter on the **Feature management** page is turned on. 
 Vendor invoice workflows are configured from the **Accounts payable > Setup > Accounts payable workflows** navigation. 
