@@ -70,7 +70,6 @@ The following table shows the POS views that currently support extensions. It al
 | SearchStockCountView            | No                            | Yes                          | No                                   |
 | StockCountDetailsView           | No                            | Yes                          | No                                   |
 | ResumeCartView                  | No                            | Yes                          | Yes                                    |
-| OrderFulfillmentView            | No                            | No                           | Yes                                   |
 | InventoryLookupMatrixView       | No                            | No                           | Yes                                   |
 | SuspendTransactionView          | No                            | Yes                          | No                               |   
 | ManageShiftView                 | No                            | No                           | Yes                               |  
@@ -78,7 +77,7 @@ The following table shows the POS views that currently support extensions. It al
 | SearchReceiptsView              | No                            | No                           | Yes                               |
 | StockCountDetailsView           | No                            | No                           | Yes                               |
 | TransferOrderDetailsView        | No                            | No                           | Yes                               |
-| FulfillmentLineView             | No                            | Yes                          | No                               |
+| FulfillmentLineView             | No                            | Yes                          | Yes                               |
 | ReturnTransactionView           | No                            | Yes                          | Yes                               |
 | PickingAndReceivingDetailsView  | No                            | Yes                          | Yes                    |
 | PickingAndReceivingDetailsView (Advanced warehouse)  | No                            | Yes                          | Yes           |
