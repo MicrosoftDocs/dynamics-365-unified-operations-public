@@ -49,25 +49,16 @@ To create a payment package that you can deploy in Commerce Service Fabric deplo
 ## Create an AOS payment package in the 10.0.10 release
 
 1. In Visual Studio, on the **Dynamics 365** menu, select **Model Management \> Create model**.
-
-    ![Create model command](./media/Model.png)
-
 2. Enter the model name, the model publisher, and other required details. Then select **Next**.
 
-    The model name must be prefixed with (that is, start with) **RetailPaymentConnectors**. After this prefix, add information about the custom model name. For example, the model that you create might be named **RetailPaymentConnectorsCustomConnector**. Only model names that begin with the **RetailPaymentConnectors** prefix will load in the Commerce payment connector options.
+    The model name must be prefixed with (that is, start with) **RetailPaymentConnectors**. After this prefix, add information about the custom model name. For example, the model that you create might be named **RetailPaymentConnectorsCustomConnector**. Only model names that begin with the **RetailPaymentConnectors** prefix will be loaded in the Commerce payment connector options.
 
     ![Add parameters page in the Create model wizard](./media/CreateModel.png)
 
 3. Select the **Create new package** option, and then select **Next**.
-
-    ![Select package page in the Create model wizard](./media/SelectPackage.png)
-
 4. Select the required referenced package, and then select **Next**.
 5. Select **Finish** to finish creating the model.
 6. In Solution Explorer, select the project, right-click **References**, and then select **Add Reference**.
-
-    ![Add Reference command](./media/AddReference.png)
-
 7. Add all the payment connector assemblies and their dependencies to the project as references.
 
     ![Add Reference dialog box](./media/Reference.png)
