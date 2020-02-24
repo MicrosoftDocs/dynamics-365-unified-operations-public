@@ -1347,6 +1347,8 @@ update SQLSYSTEMVARIABLES set VALUE = 12 where parm = 'SYSTIMEZONESVERSION'
 
 Make sure that all network printers that have been installed on the AOS server are running as the Windows service account that the AXService.EXE process is running as.
 
+For more information on how to configure Network Printers in On-Premises environments check this article: [Install network printer devices in on-premises environments](../analytics/install-network-printer-onprem.md)
+
 ## Ax-DatabaseSynchronize isn't populated with events
 
 In Platform update 20 and later, there is database synchronization log issue where the synchronization logs aren't written under **Ax-DatabaseSynchronize** in Event Viewer.
