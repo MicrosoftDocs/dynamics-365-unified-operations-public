@@ -5,7 +5,7 @@ title: Define a tax configuration and deploy it to legal entities
 description: This topic explains how to define a tax configuration, and then deploy it to one or more legal entities. 
 author: EricWang
 manager: RichardLuan
-ms.date: 06/05/2019
+ms.date: 02/24/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-applications
@@ -51,7 +51,7 @@ ms.dyn365.ops.version: 10.0.4
 
     The configuration that you activated is updated as the current configuration. 
     > [NOTE]
-    > It's suggested to mark **Skip model mapping** if the configuration is the standard configuration (which is provided by Microsoft), or extended configuration without adding/modifying model mapping.
+    > Select the **Skip model mapping** check box if the configuration is the standard configuration provided by Microsoft, or the extended configuration without added or modified model mapping.
 
 10. Select the **Report configurations** tab.
 
