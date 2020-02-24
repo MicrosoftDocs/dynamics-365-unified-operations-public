@@ -37,14 +37,11 @@ ms.dyn365.ops.version: 10.0.10
 > [!NOTE]
 > This topic applies to Microsoft Dynamics 365 Commerce version 10.0.10 and later.
 
-This topic describes how to create new business logic (CRT - Commerce runtime) (that is, application programming interfaces \[APIs\]) commerce (CRT) APIs (requests) to execute using asynchronous programming model. Commerce API framework is enhanced to support asynchronous programming model for extensions and OOB commerce handlers. Before this framework enhancement the request can be executed only synchronously, it means that any long operation (I/O operation, database query, network request, etc.) blocks execution thread. Adding of asynchronous model support to the Commerce Runtime will provide ability to use asynchronous versions of such operations thus unblocking execution thread.
+This topic explains how to create new business logic (that is, application programming interfaces \[APIs\]) for the Commerce Runtime (CRT) by using the new asynchronous framework. The Commerce API framework now supports an asynchronous programming model for extensions and out-of-box Commerce handlers.	
 
-The commerce API framework now supports the **Task** and **Task<T>** supported by the **async** and **await** keywords for the extension CRT request handlers. It is recommended to use asynchronous commerce API framework for all new extension APIs and use OOB asynchronous commerce in extensions.
+Before this framework enhancement was made, requests could be run only synchronously. Therefore, any long operations, such as input/output (I/O) operations, database queries, or network requests, blocked the execution thread. Now that support for the asynchronous model has been added to the Commerce runtime (CRT), you can use asynchronous versions of operations. Therefore, the execution thread is unblocked.	
 
-You should use the asynchronous Commerce API framework for all new extension APIs, and you should use out-of-box asynchronous Commerce extensions.
-
-
-
+The Commerce API framework now supports the **Task** and **Task<T>** that are supported by the **async** and **await** keywords for the extension CRT request handlers. You should use the asynchronous Commerce API framework for all new extension APIs and the out-of-box asynchronous Commerce API in extensions.
 
 ## Async classes/interface added in the Commerce API framework:
 
