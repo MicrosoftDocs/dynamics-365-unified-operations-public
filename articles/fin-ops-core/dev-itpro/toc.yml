@@ -156,34 +156,39 @@
                   href: data-entities/dual-write/connection-setup.md
                 - name: Dual-write setup from Lifecycle Services
                   href: data-entities/dual-write/lcs-setup.md
-            - name: Organization hierarchy on Common Data Service
-              href: data-entities/dual-write/organization-mapping.md
-            - name: Company integration
+            - name: Dual-write application support
               items:
-              - name: Company concept in Common Data Services
-                href: data-entities/dual-write/company-data.md
-              - name: Bootstrap with company data
-                href: data-entities/dual-write/bootstrap-company-data.md
-            - name: Integrated customer master
-              href: data-entities/dual-write/customer-mapping.md
-            - name: Integrated ledger
-              href: data-entities/dual-write/ledger-mapping.md            
-            - name: Unified product experience
-              href: data-entities/dual-write/product-mapping.md
-            - name: Vendor integration
-              items:
-              - name: Integrated vendor master
-                href: data-entities/dual-write/vendor-mapping.md
-              - name: Switch between vendor designs
-                href: data-entities/dual-write/vendor-switch.md
-            - name: Integrated sites and warehouses
-              href: data-entities/dual-write/sites-warehouses-mapping.md
-            - name: Integrated tax master
-              href: data-entities/dual-write/tax-mapping.md
-            - name: Initial synchronization
-              href: data-entities/dual-write/initial-sync.md
-            - name: Troubleshooting data integration
-              href: data-entities/dual-write/dual-write-troubleshooting.md
+                  - name: Finance and tax data
+                    - name: Access to finance and tax reference data
+                      href: data-entities/dual-write/finance-tax-reference.md
+                    - name: Integrated ledger
+                      href: data-entities/dual-write/ledger-mapping.md            
+                    - name: Integrated tax master
+                      href: data-entities/dual-write/tax-mapping.md
+                - name: Organization hierarchy on Common Data Service
+                  href: data-entities/dual-write/organization-mapping.md
+                - name: Company integration
+                  items:
+                  - name: Company concept in Common Data Services
+                    href: data-entities/dual-write/company-data.md
+                  - name: Bootstrap with company data
+                    href: data-entities/dual-write/bootstrap-company-data.md
+                - name: Integrated customer master
+                  href: data-entities/dual-write/customer-mapping.md
+                - name: Unified product experience
+                  href: data-entities/dual-write/product-mapping.md
+                - name: Vendor integration
+                  items:
+                  - name: Integrated vendor master
+                    href: data-entities/dual-write/vendor-mapping.md
+                  - name: Switch between vendor designs
+                    href: data-entities/dual-write/vendor-switch.md
+                - name: Integrated sites and warehouses
+                  href: data-entities/dual-write/sites-warehouses-mapping.md
+                - name: Initial synchronization
+                  href: data-entities/dual-write/initial-sync.md
+                - name: Troubleshooting data integration
+                  href: data-entities/dual-write/dual-write-troubleshooting.md
           - name: Asynchronous, unidirectional integration
             items:
             - name: Configure a prospect to cash scenario
