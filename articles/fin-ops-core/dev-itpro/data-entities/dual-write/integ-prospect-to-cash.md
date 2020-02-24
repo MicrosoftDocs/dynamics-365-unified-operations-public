@@ -3,7 +3,7 @@
 
 title: Prospect to cash
 description: 
-author: ramasri
+author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 01/27/2020
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: 
-ms.author: 
+ms.author: ramasri
 ms.dyn365.ops.version: 
 ms.search.validFrom: 2020-01-27
 

@@ -158,13 +158,14 @@
                   href: data-entities/dual-write/lcs-setup.md
             - name: Dual-write application support
               items:
-                  - name: Finance and tax data
-                    - name: Access to finance and tax reference data
-                      href: data-entities/dual-write/finance-tax-reference.md
-                    - name: Integrated ledger
-                      href: data-entities/dual-write/ledger-mapping.md            
-                    - name: Integrated tax master
-                      href: data-entities/dual-write/tax-mapping.md
+                - name: Finance and tax data
+                  items:
+                  - name: Access to finance and tax reference data
+                    href: data-entities/dual-write/finance-tax-reference.md
+                  - name: Integrated ledger
+                    href: data-entities/dual-write/ledger-mapping.md            
+                  - name: Integrated tax master
+                    href: data-entities/dual-write/tax-mapping.md
                 - name: Organization hierarchy on Common Data Service
                   href: data-entities/dual-write/organization-mapping.md
                 - name: Company integration
