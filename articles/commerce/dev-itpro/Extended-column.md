@@ -1,0 +1,210 @@
+---
+# required metadata
+
+title: Pre extended column in Channel Database
+description: This topic explains how the pre extended column in channel database is consumed for extensions.
+author: mugunthanm
+manager: AnnBe
+ms.date: 02/13/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-365-commerce
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Developer
+# ms.devlang: 
+ms.reviewer: rhaertle
+ms.search.scope: Operations, Retail
+# ms.tgt_pltfrm: 
+ms.custom:
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: mumani
+ms.search.validFrom: 2020-02-02
+ms.dyn365.ops.version: 10.0.10
+
+---
+
+# Pre extended column in Channel Database
+
+[!include [banner](../../includes/banner.md)]
+
+Some of the column are pre extended in channel database, it means the length of these columns are more than the column length in the D365 for Commerce HQ.
+
+Ex: The INVENTSERIALID field length in HQ database is 20 character but in channel database is 50 characters. The reason for this change is the channel database field column length are not extensible, and theses fields are mostly commonly extended, so field lengths are increased OOB to support extension scenarios, for extending other channel database field length please file an extension request or support ticket.
+
+Even though the fields are extended in channel database, extension must also **extend HQ database using the EDT extension model and the corresponding POS or CRT UI or request to support the inputs**.
+
+If the HQ database is not extended, then during the P-Job sync between channel and HQ database will be failed or the extra characters will be truncated. Similarly if the POS UI or CRT is not extended then POS UI or CRT validation will prevent entering more than the default character length, the default length is decided based on the base column length in HQ database.
+
+Ex: The INVENTSERIALID field length in channel database is 50 characters but the POS UI to accept the serial number is only 20 characters long, so both the POS UI and HQ database must be extend to support this scenario.
+
+Similarly the STREET field length in channel database is extend to 400 characters but there is validation in CRT will prevent accepting more than the default HQ database character length to overcome this extend both the CRT request handler (ValidateAddressLengthServiceRequest) and the HQ database to accept 400 characters for STREET field .
+
+Note: Extending the POS UI or CRT handlers is not required for some fields because it may be read only fields in POS. Ex: ECORES product related fields are read only because there is no write scenario for products in POS (Product creation is not supported in POS).
+
+**Sample code to override the ValidateAddressLengthServiceRequest handler:**
+
+```C#
+
+/**
+ * SAMPLE CODE NOTICE
+ * 
+ * THIS SAMPLE CODE IS MADE AVAILABLE AS IS.  MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
+ * OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.
+ * THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
+ * NO TECHNICAL SUPPORT IS PROVIDED.  YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
+ */
+
+namespace Contoso
+{
+    namespace Commerce.Runtime.ReceiptsSample
+    {
+        using System;
+        using System.Collections.Generic;
+        using Microsoft.Dynamics.Commerce.Runtime;
+        using Microsoft.Dynamics.Commerce.Runtime.Messages;
+        using Microsoft.Dynamics.Commerce.Runtime.Services.Messages;
+
+
+        public class ValidateAddressLengthServiceRequestExt : IRequestHandler
+        {
+
+            private static int maxDefaultFullAddressColumnLength = 250;
+            private static int maxDefaultStreetColumnLength = 250;
+            private static int maxDefaultCountyColumnLength = 10;
+
+            /// <summary>
+            /// Gets the collection of supported request types by this handler.
+            /// </summary>
+            public IEnumerable<Type> SupportedRequestTypes
+            {
+                get
+                {
+                    return new[]
+                    {
+                        typeof(ValidateAddressLengthServiceRequest),
+                    };
+                }
+            }
+
+            public Response Execute(Request request)
+            {
+                if (request == null)
+                {
+                    return null;
+                }
+
+                ValidateAddressLengthServiceRequest validateAddressLengthServiceRequest = (ValidateAddressLengthServiceRequest)request;
+
+
+
+                var validationFailures = new List<DataValidationFailure>();
+
+                // Add custom logic to check your desired length.
+
+                if (!string.IsNullOrEmpty(validateAddressLengthServiceRequest?.Address?.FullAddress) && validateAddressLengthServiceRequest.Address.FullAddress.Length > maxDefaultFullAddressColumnLength)
+                {
+                    validationFailures.Add(new DataValidationFailure(
+                        DataValidationErrors.Microsoft_Dynamics_Commerce_Runtime_AddressLengthExceeded,
+                        string.Format("The full address exceeds the maximum number of {0} characters allowed.", maxDefaultFullAddressColumnLength))
+                    {
+                        LocalizedMessageParameters = new object[] { maxDefaultFullAddressColumnLength }
+                    });
+                }
+
+                // Add custom logic to check your desired length.
+
+                if (!string.IsNullOrEmpty(validateAddressLengthServiceRequest?.Address?.Street) && validateAddressLengthServiceRequest.Address.Street.Length > maxDefaultStreetColumnLength)
+                {
+                    validationFailures.Add(new DataValidationFailure(
+                        DataValidationErrors.Microsoft_Dynamics_Commerce_Runtime_StreetLengthExceeded,
+                        string.Format("The street exceeds the maximum number of {0} characters allowed.", maxDefaultStreetColumnLength))
+                    {
+                        LocalizedMessageParameters = new object[] { maxDefaultStreetColumnLength }
+                    });
+                }
+
+                // Add custom logic to check your desired length.
+
+                if (!string.IsNullOrEmpty(validateAddressLengthServiceRequest?.Address?.County) && validateAddressLengthServiceRequest.Address.County.Length > maxDefaultCountyColumnLength)
+                {
+                    validationFailures.Add(new DataValidationFailure(
+                        DataValidationErrors.Microsoft_Dynamics_Commerce_Runtime_CountyLengthExceeded,
+                        string.Format("The county exceeds the maximum number of {0} characters allowed.", maxDefaultCountyColumnLength))
+                    {
+                        LocalizedMessageParameters = new object[] { maxDefaultCountyColumnLength }
+                    });
+                }
+
+                if (validationFailures.Count > 0)
+                {
+                    throw new DataValidationException(DataValidationErrors.Microsoft_Dynamics_Commerce_Runtime_AggregateValidationError, validationFailures, "An error occurred when validating the address.");
+                }
+
+                return new NullResponse();
+            }
+        }
+    }
+}
+
+
+```
+
+**Pre extended columns in channel database:**
+
+| Table                         | Column                                                                        | Length        | Extension in CRT      | Extension in POS                    |
+|-------------------------------|-------------------------------------------------------------------------------|---------------|-----------------------|-------------------------------------|
+| INVENTSERIAL                  | INVENTSERIALID                                                                | nvarchar(50)  |                       | GetSerialNumberClientRequestHandler |
+| LOGISTICSPOSTALADDRESS        | ADDRESS                                                                       | nvarchar(500) | ValidateAddressLength |                                     |
+| LOGISTICSPOSTALADDRESS        | STREET                                                                        | nvarchar(400) | ValidateAddressLength |                                     |
+| LOGISTICSPOSTALADDRESS        | COUNTY                                                                        | nvarchar(60)  | ValidateAddressLength |                                     |
+| LOGISTICSADDRESSCITY          | COUNTYID                                                                      | nvarchar(60)  |                       |                                     |
+| LOGISTICSADDRESSCOUNTY        | COUNTYID                                                                      | nvarchar(60)  |                       |                                     |
+| LOGISTICSADDRESSDISTRICT      | COUNTYID_RU                                                                  | nvarchar(60)  |                       |                                     |
+| LOGISTICSADDRESSZIPCODE       | STREETNAME                                                                    | nvarchar(400) |                       |                                     |
+| LOGISTICSADDRESSZIPCODE       | COUNTY                                                                        | nvarchar(60)  |                       |                                     |
+| RETAILASYNCADDRESS            | STREET                                                                        | nvarchar(400) |                       |                                     |
+| RETAILASYNCADDRESS            | COUNTY                                                                        | nvarchar(60)  |                       |                                     |
+| RETAILASYNCCUSTOMER           | STREET                                                                        | nvarchar(400) |                       |                                     |
+| RETAILASYNCCUSTOMER           | COUNTY                                                                        | nvarchar(60)  |                       |                                     |
+| RETAILFISCALDOCUMENT_BR      | FEADDRESSSTREET                                                               | nvarchar(400) |                       |                                     |
+| RETAILFISCALDOCUMENT_BR      | THIRDPARTYADDRESSSTREET                                                       | nvarchar(400) |                       |                                     |
+| RETAILTAXFILTERS              | COUNTYID                                                                      | nvarchar(60)  |                       |                                     |
+| RETAILTRANSACTIONADDRESSTRANS | STREET                                                                        | nvarchar(400) |                       |                                     |
+| RETAILTRANSACTIONADDRESSTRANS | COUNTY                                                                        | nvarchar(60)  |                       |                                     |
+| RETAILTRANSACTIONSALESTRANS   | INVENTBATCHID                                                                 | nvarchar(50)  |                       |                                     |
+| RETAILTRANSACTIONSALESTRANS   | INVENTSERIALID                                                                | nvarchar(50)  |                       |                                     |
+| RETAILTRANSACTIONSALESTRANS   | WAREHOUSELOCATION                                                             | nvarchar(60)  |                       |                                     |
+| INVENTDIM                     | INVENTBATCHID                                                                 | nvarchar(50)  |                       |                                     |
+| INVENTDIM                     | INVENTSERIALID                                                                | nvarchar(50)  |                       |                                     |
+| INVENTDIM                     | CONFIGID                                                                      | nvarchar(60)  |                       |                                     |
+| INVENTDIM                     | INVENTCOLORID                                                                 | nvarchar(60)  |                       |                                     |
+| INVENTDIM                     | INVENTSIZEID                                                                  | nvarchar(60)  |                       |                                     |
+| INVENTDIM                     | INVENTSTYLEID                                                                 | nvarchar(60)  |                       |                                     |
+| INVENTDIM                     | WMSLOCATIONID                                                                 | nvarchar(60)  |                       |                                     |
+| ECORESCOLOR                   | NAME                                                                          | nvarchar(60)  |                       |                                     |
+| ECORESSTYLE                   | NAME                                                                          | nvarchar(60)  |                       |                                     |
+| ECORESCONFIGURATION           | NAME                                                                          | nvarchar(60)  |                       |                                     |
+| ECORESSIZE                    | NAME                                                                          | nvarchar(60)  |                       |                                     |
+| RETAILTABLEFIELDID            | TABLENAME                                                                     | nvarchar(81)  |                       |                                     |
+|                               | FIELDNAME                                                                     | nvarchar(81)  |                       |                                     |
+| RETAILTRANSACTIONTAXTRANSGTE  | TAXCOMPONENT                                                                  | nvarchar(60)  |                       |                                     |
+| TAXCOMPONENTTABLE_IN         | COMPONENT                                                                     | nvarchar(60)  |                       |                                     |
+| WMSLOCATION                   | INPUTLOCATION                                                                 | nvarchar(60)  |                       |                                     |
+|                               | WMSLOCATIONID                                                                 | nvarchar(60)  |                       |                                     |
+| INVENTLOCATION                | RBODEFAULTWMSLOCATIONID                                                       | nvarchar(60)  |                       |                                     |
+|                               | WMSLOCATIONIDDEFAULTISSUE                                                     | nvarchar(60)  |                       |                                     |
+|                               | WMSLOCATIONIDDEFAULTRECEIPT                                                   | nvarchar(60)  |                       |                                     |
+| PRICEDISCTABLE                | CONSTRAINT I_137462222_1904821809: { "action": "replace-line", "value": "CONSTRAINT [I_PRICEDISCTABLE_RECID] PRIMARY KEY CLUSTERED (  [RECID] )  "CONSTRAINT I_PRICEDISCTABLE_RECID": { "action": "remove-line" }     |               |                       |                                     |
+| OMOPERATINGUNIT               | OMOPERATINGUNITNUMBER                                                         | nvarchar(30)  |                       |                                     |
+| RETAILPARAMETERS              | USEADVANCEDAUTOCHARGE INT NULL DEFAULT(0)                                     |               |                       |                                     |
+|                               | GIFTCARDINQUIRYPRINTHISTORY INT NULL DEFAULT(0)                               |               |                       |                                     |
+| RETAILINFOCODETABLE           | PRINTINPUTONFISCALRECEIPT \[int\] NULL DEFAULT (0) PRINTTEXTONFISCALRECEIPT [nvarchar] (50) NULL DEFAULT('')                    |               |                       |                                     |
+| RETAILINFORMATIONSUBCODETABLE | PRINTTEXTONFISCALRECEIPT [nvarchar](50) NULL DEFAULT('')                    |               |                       |                                     |
+
