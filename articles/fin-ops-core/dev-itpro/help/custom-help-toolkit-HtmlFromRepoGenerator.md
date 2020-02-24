@@ -5,7 +5,7 @@ title: Generate HTML files based on Microsoft's GitHub repos
 description: This topic describes the HtmlFromRepoGenerator tool in the custom help toolkit for Finance and Operations apps. 
 author: edupont04
 manager: AnnBe
-ms.date: 02/14/2020
+ms.date: 02/24/2020
 ms.topic: article
 ms.service: dynamics-ax-platform
 
@@ -32,7 +32,9 @@ ms.dyn365.ops.version: Operations
 
 [!include [banner](../includes/banner.md)]
 
-The custom help toolkit includes the HtmlFromRepoGenerator tool that you can use to get MarkDown files from Microsoft's GitHub repos and generate HTML files for further processing.  
+The custom help toolkit includes the **HtmlFromRepoGenerator** tool that gets Microsoft's content in MarkDown format and prepares it for customization in HTML format.  
+
+The tool can help automate how you get Microsoft's content and prepare it for customization and deployment to a custom help website.
 
 ## <a name="consoleapp"></a>Use the HtmlFromRepoGenerator tool to get MarkDown files and generate HTML files
 
@@ -40,14 +42,17 @@ HtmlFromRepoGenerator.exe provides functionality that supports the creation of c
 
 - Clone a Microsoft documentation repo
 
-    If you already have a clone of the Microsoft repo, your can run HtmlFromRepoGenerator without this command.
+    If you already have a clone of the Microsoft repo, run HtmlFromRepoGenerator.exe without this command.
 
-- Remove developer and administrator content from your clone of the Microsoft repo.
-- Update links to files that are no longer in the clone.
-- Update the **ms.locale** value to match the language options that are supported by the Finance and Operations client.
+- Remove developer and administrator content from your clone of the Microsoft repo
+- Update links to files that are no longer in the clone
+- Update the **ms.locale** value to match the language options that are supported by the Finance and Operations client
 
-    The Finance and Operations client uses different language descriptors compared to the corresponding documentation repos on GitHub. For localized Help to be called, the language indicators of the content that has been downloaded from GitHub localized repos must be changed so that they match the language descriptors of the Finance and Operations client.
+    The client uses other language descriptors than the corresponding GitHub repos. For localized Help to be called, the language indicators in the content from GitHub must be changed so that they match how the client understands languages.
 - Generate HTML files that can be used for publishing.
+
+    The HTML files are in the **d365F-O** subfolder.
+
 - Compare a localized Microsoft repo to the en-US repo to identify discrepancies and update the links accordingly.
 
 In the first version of the toolkit, this tool had the name ConsoleApp.exe but is now renamed.  
@@ -66,18 +71,18 @@ The following table provides an explanation of the parameters:
 |Out |Specifies the folder where your existing clone is, or the folder to clone the repo to. If you run HtmlFromRepoGenerator to clone a repo, this folder must not already exist. Use the language name as the folder name as described in [Language and locale descriptors in across product and Help](language-locale.md). |
 |ExternalText |Specifies text that must be added to the updated links if HtmlFromRepoGenerator must replace the original links.|
 |DoNotClone |Set this parameter when you run the tool against previously cloned repos. |
-|Repo |Specifies the repo URL. This parameter is not required if you are using a previously cloned repo. Examples of Microsoft documentation repo URLs include *https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-public* for English (US) and *https://github.com/MicrosoftDocs/Dynamics-365-Operations.de-de* for German (Germany).|
-|RemoveGitFolder|Specifies whether to remove the .git folder.|
-|ReplaceUrl|Specifies the URL that is used to replace links between files when those files are not present. This parameter is intended to be used to turn relative links into absolute links.|
+|Repo |Specifies the repo URL. This parameter is not required if you run the tool based on a previously cloned repo. Examples of Microsoft documentation repo URLs include *https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-public* for English (US) and *https://github.com/MicrosoftDocs/Dynamics-365-Operations.de-de* for German (Germany).|
+|RemoveGitFolder|Specifies whether to remove the `.git` folder.|
+|ReplaceUrl|Specifies the URL must replace links between files when the target files are not present. This parameter is intended to be used to turn relative links into absolute links.|
 |LogsDir|Specifies the folder to save logs files to.|
 
 The following additional parameters are used when the tool is run against the localized Microsoft documentation repos:
 
 |Parameter   |Description  |
 |------------|-------------|
-|EnRepo|Specifies the URL of the en-US repo. This parameter is not required if the repo is already cloned. The Microsoft documentation repo URL for English (US) is [https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-public](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-public).|
-|EnOut|Specifies the folder where the en-US repo exists or the folder that it should be cloned to. This folder should not exist if the repo is being cloned by the tool.|
-|Lng|Specifies the language value to use for ms.locale metadata in the resulting HTML files. The value must correspond to the value that is used in the Finance and Operations client’s language setting that the Help content is intended for. If this parameter is omitted, en-US is used as a default value. Use the Finance and Operations language name as a parameter. For more information, see [Language and locale descriptors in across product and Help](language-locale.md).|
+|EnRepo|Specifies the URL of the en-US repo. This parameter is not required if you run the tool based on a previously cloned repo. The Microsoft documentation repo URL for English (US) is [https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-public](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-public).|
+|EnOut|Specifies the folder where the en-US repo exists, or the folder that it must be cloned to. This folder must not already exist if you run the tool based on a previously cloned repo.|
+|Lng|Specifies the language value to use for `ms.locale` metadata in the generated HTML files. The value must correspond to the value that is specified in the Finance and Operations client’s language settings. If this parameter is not set, the tool uses en-US. For more information, see [Language and locale descriptors in across product and Help](language-locale.md).|
 |Rtl|Set this parameter if the language uses right-to-left (RTL) formatting. Examples of RTL languages include Arabic and Hebrew.|
 
 ## Examples

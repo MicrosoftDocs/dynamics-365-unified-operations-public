@@ -5,7 +5,7 @@ title: Custom Help Toolkit
 description: This topic describes the components in the custom help toolkit for Finance and Operations apps. 
 author: edupont04
 manager: AnnBe
-ms.date: 02/14/2020
+ms.date: 02/24/2020
 ms.topic: article
 ms.service: dynamics-ax-platform
 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Operations
 
 [!include [banner](../includes/banner.md)]
 
-The custom help toolkit includes the **HTML Locale Changer** tool that you can use to process HTML files that are generated with the [HTML From Repos Generator tool](custom-help-toolkit-HtmlFromRepoGenerator.md) for further processing.  
+The custom help toolkit includes the **HTML Locale Changer** tool that you can use to process HTML files that are generated with the [HTML From Repos Generator tool](custom-help-toolkit-HtmlFromRepoGenerator.md).  
 
 ## <a name="htmllocale"></a>Use the HTML Locale Changer tool to align locales
 
@@ -56,7 +56,7 @@ Here is an explanation of the parameters:
 The following example changes the locale <!--from *de-de* to *de-at*--> with verbose logging:
 
 ```
-HtmlLocaleChanger.exe --h D:\D365-Operations\de --v
+HtmlLocaleChanger.exe --h D:\D365-Operations\d365F-O\supply-chain\de --v
 ```
 
 ## See also
