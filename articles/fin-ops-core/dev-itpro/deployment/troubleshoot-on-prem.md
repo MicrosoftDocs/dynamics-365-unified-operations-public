@@ -5,7 +5,7 @@ title: Troubleshoot on-premises deployments
 description: This topic provides troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises).
 author: sarvanisathish
 manager: AnnBe
-ms.date: 01/31/2020
+ms.date: 02/24/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-platform
@@ -1347,7 +1347,7 @@ update SQLSYSTEMVARIABLES set VALUE = 12 where parm = 'SYSTIMEZONESVERSION'
 
 Make sure that all network printers that have been installed on the AOS server are running as the Windows service account that the AXService.EXE process is running as.
 
-For more information on how to configure Network Printers in On-Premises environments check this article: [Install network printer devices in on-premises environments](../analytics/install-network-printer-onprem.md)
+For more information about how to configure network printers in on-premises environments, see [Install network printer devices in on-premises environments](../analytics/install-network-printer-onprem.md)
 
 ## Ax-DatabaseSynchronize isn't populated with events
 
