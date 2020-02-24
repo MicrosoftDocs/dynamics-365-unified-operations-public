@@ -46,6 +46,17 @@ This list is intended to help you consider these removals and deprecations for y
 
 Detailed information about objects in Finance and Operations can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations.
 
+## Finance 10.0.8 with Platform update 32
+
+### Workflow request change dialog adjusted to remove user selection dropdown to secure and simplify
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | This was a security issue since the request for change could be sent to an user that it shouldn't be. This was also a usability issue since it forced the user to determine who the workflow originator was and manually select them.  |
+| **Replaced by another feature?**   | No |
+| **Product areas affected**         | Workflow |
+| **Deployment option**              | All |
+| **Status**                         | The user selection dropdown was removed from the request change dialog as of Finance and Operations 10.0.8 with Platform update 32. Request change requests will be automatically sent to the originator as intended and as documented in [Actions in workflow approval processes](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/workflow-actions?toc=%2Fdynamics365%2Fcommerce%2Ftoc.json#request-change) |
+
 ## Finance 10.0.7 with Platform update 31
 
 ### Chinese voucher types without Account groups selection
