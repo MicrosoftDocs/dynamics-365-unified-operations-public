@@ -86,6 +86,7 @@ The following tables list the application areas. Cloud and on-premises support i
 |                                      | Task recorder - Save or load task recordings from the BPM library                         | Yes       | No              |
 | Support                              |                                                                                           | Yes       | Yes             |
 |                                      | Access to Support via the Help & Support menu                                             | Yes       | No              |
+|                                      | Business events                                                                           | Yes       | Yes (either internet connectivity is required or custom endpoints must be implemented to send/recieve business events within intranet)              |
 
 ## Dynamics 365 Supply Chain Management 
 
