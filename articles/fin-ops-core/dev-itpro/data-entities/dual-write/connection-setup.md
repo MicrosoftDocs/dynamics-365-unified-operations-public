@@ -46,7 +46,6 @@ The supported setup scenarios are:
 + [A new Finance and Operations instance and an existing Common Data Service instance](#new-existing)
 + [A new Finance and Operations instance with demo data and a new Common Data Service instance](#new-demo-new)
 + [A new Finance and Operations instance with demo data and an existing Common Data Service instance](#new-demo-existing)
-+ [An existing Finance and Operations instance and a new Common Data Service instance](#existing-new)
 + [An existing Finance and Operations instance and a new or existing Common Data Service instance](#existing-existing)
 
 ## <a id="new-new"/>New Finance and Operations instance and new Common Data Service instance
