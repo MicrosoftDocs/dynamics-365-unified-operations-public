@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 # Budget planning overview
 
 [!include [banner](../includes/banner.md)]
-[!include preview banner]
+[!include [preview banner](../includes/preview-banner.md)]
 
 This article introduces budget planning, and contains information to help you configure budget planning and set up budget planning processes.
 
