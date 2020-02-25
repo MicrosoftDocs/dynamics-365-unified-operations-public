@@ -44,7 +44,7 @@
           href: ../fin-ops/get-started/whats-new-platform-update-20.md
         - name: Platform update 15 (March 2018)
           href: ../fin-ops/get-started/whats-new-platform-update-15.md 
-      - name: Removed or deprecated features in platform updates
+      - name: Removed or deprecated platform features
         href: get-started/removed-deprecated-features-platform-updates.md
       - name: Removed or deprecated features in previous releases
         href: migration-upgrade/deprecated-features.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
