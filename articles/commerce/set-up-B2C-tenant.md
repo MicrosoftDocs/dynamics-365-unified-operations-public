@@ -280,22 +280,6 @@ To obtain your identity provider issuer URL, follow these steps.
 1. In the metadata, copy the identity provider issuer URL (the value for **"issuer"**).
     - Example: ``https://login.fabrikam.com/073405c3-0113-4f43-b5e2-df01266e24ae/v2.0/``.
 
-## Additional B2C information
-
-### Customer migration
-
-If you are considering migrating customer records from a previous identity provider platform, please work with the Dynamics 365 Commerce team to review your customer migration needs.
-
-For additional Azure AD B2C documentation on customer migration, see [Migrate users to Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-user-migration).
-
-### Custom policies
-
-For additional information regarding customizing Azure AD B2C interactions and policy flows beyond what is offered by B2C standard policies, see [Custom policies in Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-overview-custom). 
-
-### Secondary admin
-
-An optional, secondary administrator account can be added in the **Users** section of your B2C tenant. This can be a direct account or a general account. If you need to share an account across team resources, a common account can also be created. Due to the sensitivity of the data stored in Azure AD B2C, a common account should be monitored closely per your company's security practices.
-
 ## Provide Commerce with the B2C application information
 
 Once setup of the Azure AD B2C tenant is completed, provide the Dynamics 365 Commerce team with the details below. These data points will be used in Microsoft Lifecycle Services (LCS) when provisioning your environment.
@@ -330,6 +314,22 @@ The following list is an example set of data points to provide to the Commerce t
 - **b2cEditProfilePolicyId**: "B2C_1A_ProfileEdit"
 - **b2cSignUpSignInPolicyId**: "B2C_1A_signup_signin"
 - **b2cResetPasswordPolicyId**: "B2C_1A_PasswordReset"
+
+## Additional B2C information
+
+### Customer migration
+
+If you are considering migrating customer records from a previous identity provider platform, please work with the Dynamics 365 Commerce team to review your customer migration needs.
+
+For additional Azure AD B2C documentation on customer migration, see [Migrate users to Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-user-migration).
+
+### Custom policies
+
+For additional information regarding customizing Azure AD B2C interactions and policy flows beyond what is offered by B2C standard policies, see [Custom policies in Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-overview-custom). 
+
+### Secondary admin
+
+An optional, secondary administrator account can be added in the **Users** section of your B2C tenant. This can be a direct account or a general account. If you need to share an account across team resources, a common account can also be created. Due to the sensitivity of the data stored in Azure AD B2C, a common account should be monitored closely per your company's security practices.
 
 ## Additional resources
 
