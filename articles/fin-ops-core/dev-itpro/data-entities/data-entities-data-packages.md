@@ -297,17 +297,17 @@ For enabling flights in a production environment, a support case must be logged 
         add key="DataAccess.FlightingServiceCatalogID" value="12719367"
 - After making the above change, perform an IISReset on all AOS's. 
 
-```
-INSERT INTO SYSFLIGHTING
-([FLIGHTNAME]
-,[ENABLED]
-,[FLIGHTSERVICEID]
-,[PARTITION]
-,[RECID]
-,[RECVERSION]
-)
-VALUES ('name', 1, 12719367, PARTITION, RECID, 1)
-```
+    ```sql
+    INSERT INTO SYSFLIGHTING
+    ([FLIGHTNAME]
+    ,[ENABLED]
+    ,[FLIGHTSERVICEID]
+    ,[PARTITION]
+    ,[RECID]
+    ,[RECVERSION]
+    )
+    VALUES ('name', 1, 12719367, PARTITION, RECID, 1)
+    ```
 
  - Partition - Partition ID from the environment, which can be obtained by querying (select) for any record. Every record will have a partition ID that must be copied and used here.
  - RecID - Same ID as partition. However, if multiple flights are enabled, then this can be partition ID + 'n' to ensure it has a unique value
