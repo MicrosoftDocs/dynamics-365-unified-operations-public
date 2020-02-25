@@ -192,6 +192,8 @@
                   href: data-entities/dual-write/in-house-assets.md
                 - name: Integrated worker, job, and position
                   href: data-entities/dual-write/integrated-hr.md
+                - name: Support for Field Service solutions and Project Service Automation solutions
+                  href: data-entities/dual-write/field-service-project-service-automation.md
                 - name: Initial synchronization
                   href: data-entities/dual-write/initial-sync.md
                 - name: Troubleshooting data integration
