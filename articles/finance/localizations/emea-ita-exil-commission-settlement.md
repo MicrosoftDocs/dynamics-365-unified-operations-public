@@ -39,13 +39,13 @@ Before you can use commission settlement on payment, the following prerequisites
 - In the **Feature management** workspace, turn on the **Commission settlement on payments** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Set up commission settlement by default
-In the Account receivable parameters (**Account receivable**/> **Setup**/> **Account receivable parameters**, tab **Settlement**, FastTab **Other**) set up **Commission settlement** method which will be used when creating sales order by default. 
+In the Account receivable parameters (**Accounts receivable** \> **Setup** \> **Account receivable parameters**, tab **Settlement**, FastTab **Other**) set up **Commission settlement** method which will be used when creating sales order by default. 
  ![Account receivable parameters](media/emea-ita-exil-commission-setup-parameters.PNG)
 The field **Commission settlement** has two values:
--	**On invoice**, if the commissions are made during the invoice process
--	**On payment**, if the commissions are made during the payment process
+-	**On invoice** - commissions are charged during the invoice process.
+-	**On payment** - commissions are charged during the payment process.
 ## Set up commission calculation
-A user may additional setup of commission calculation for **On payment** commission in **Sales and marketing**/> **Commissions**/> **Commission calculation**.
+A user may additional setup of commission calculation for **On payment** commission in **Sales and marketing** \> **Commissions** \> **Commission calculation**.
  ![Commission calculation setup](media/emea-ita-exil-commission-%20calculation-setup.PNG)
 If the **Payment thresholds** is set to **Yes** it is possible to specify two boundaries for commissions calculation:
 -	If the reached commission amount (in percentage on the reachable amount) is below the lower threshold, no commissions are accrued.
@@ -70,18 +70,18 @@ Another setup can be added to the single agent who belongs to a specify group. T
 
 ## Set commisiion settlement and preview commision transaction on Sales order page
 
-After sales order creation a user may update commission settlement in the sales order header (**Account receivable**/> **Orders**/> **Allsales orders**, **Sales order details** page /> **Header**, **Setup** FastTab).  
+After sales order creation a user may update commission settlement in the sales order header (**Accounts receivable**\> **Orders**\> **Allsales orders**, **Sales order details** page \> **Header**, **Setup** FastTab).  
 ![Commission settlement in sales order](media/emea-ita-exil-commission-sales-order.png)
 By default commision settlement value is inherited from Account receivable parameters (**[Set up commission settlement by default](emea-ita-exil-commission-settlement.md#Set-up-commission-settlement-by-default)**).
 
-There is also the possibility of previewing the sales commission calculation from sales order either for open orders or invoiced  ( **General** tab/> **Related information**/> **Commission preview**).
+There is also the possibility of previewing the sales commission calculation from sales order either for open orders or invoiced  (**General** tab \> **Related information** \> **Commission preview**).
 ![Preview commission transactions](media/emea-ita-exil-commission-preview.PNG)
 
 > [!NOTE]
 > A user can combine sales orders in single invoice If all sales orders for invoicing have the same **Commission settlement** value in sales order headers.
 
 ### Overview commission transactions in a sales order invoice
-A user may overview commision transaction on **Invoice journal** page list (**Account receivable**/> **Inquiries and reports**/ **Invoices**/> **Invoice journal**, **Invoice** tab/> **Details**/> **Commission transactions**).
+A user may overview commision transaction on **Invoice journal** page list (**Accounts receivable** \> **Inquiries and reports** \> **Invoices** \> **Invoice journal**, **Invoice** tab \> **Details** \> **Commission transactions**).
 
 > [!NOTE]
-> When posting invoice, commission and voucher transactions are created only if **Commission settlement** value is **On invoice** in sales order header. If **Commission settlement** value is **On payment** in sales order header then commision and vourcher transactions are created only after settling the invoice and a payment.  
+> When posting invoice, the system creates commission and voucher transactions). If **Commission settlement** value is **On invoice** in sales order header the system creates **Settlement** record (**Settlement** tab). If **Commission settlement** value is **On payment** in sales order header, **Settlement** record (**Settlement** tab) is created only after settling the invoice and a payment.  
