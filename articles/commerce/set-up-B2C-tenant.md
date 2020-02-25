@@ -282,51 +282,52 @@ To obtain your identity provider issuer URL, follow these steps.
 
 ## Provide Commerce with the B2C application information
 
-## Provide Commerce with the B2C application information
-
-Once setup of the Azure AD B2C tenant is completed, provide the Dynamics 365 Commerce team with the details below. These data points will be entered in Site Builder and associated to your Sites.
+Once setup of the Azure AD B2C tenant is completed, you must provide details of the Azure AD B2C tenant to Dynamics 365 Commerce. These data points will be entered in site builder to be associated with your sites.
 
 ### Collect the required application information
 
 To collect the required application information, follow these steps.
 
-1. In the Azure portal, go to **Home > Azure AD B2C - Applications**.
+1. In the Azure portal, go to **Home \> Azure AD B2C - Applications**.
 1. Select your application, and then in the left navigation pane select **Properties** to obtain the application details.
-1. From the **Application ID** box, collect the application ID of the B2C application created in your B2C tenant. This will be entered as the "Client GUID" in Site Builder.
+1. From the **Application ID** box, collect the application ID of the B2C application created in your B2C tenant. This will later be entered as the **Client GUID** in site builder.
 1. Under **Reply URL**, collect the reply URL.
-1. Go to **Home > Azure AD B2C – User flows (policies)**, and then collect the names of each user flow policy.
+1. Go to **Home \> Azure AD B2C – User flows (policies)**, and then collect the names of each user flow policy.
 
-### Add your AAD B2C Tenant to Commerce
+### Add your AAD B2C tenant application information to Commerce
 
-To add your AAD B2C Tenant to Commerce, follow these steps.
+To add your AAD B2C tenant application information to Commerce, follow these steps.
 
-1. Go to your **Home** section in Site Builder for your environment
-1. Drop down **Tenant Settings** menu from the left menu options
-1. Select **B2C Settings**. 
-1. Select **Manage** to the right of the B2C Applications list (note: If your tenant is already showing in the B2C Applications list, then it has already been added by an admin user. Verify the items in step 6 were filled out to match your intended B2C Application.)
+1. Sign in as an administrator to Commerce site builder for your environment.
+1. In the left navigation pane, select **Tenant Settings**  to expand it.
+1. Under **Tenant Settings**, select **B2C Settings**. 
+1. In the main window next **B2C Applications**, select **Manage**. (If your tenant appears in the B2C Applications list, then it was already added by an administrator. Verify that the items in step 6 below match your B2C Application.)
 1. Select **Add B2C Application**.
-1. Fill out the following required items in the form displayed, using values from your B2C tenant and application. Fields that are not required (those without an asterisk) may be left blank.
+1. Enter the following required items in the form displayed, using values from your B2C tenant and application. Fields that are not required (those without an asterisk) may be left blank.
 
-    - **Application Name**: Fabrikam B2C {*Name for your B2C Application*}
-    - **Tenant Name**: Fabrikam {*Name of your B2C Tenant*}
-    - **Forget Password Policy ID**: B2C_1_PasswordReset
-    - **Signup Signin Policy ID**: B2C_1_signup_signin
-    - **Client GUID**: 22290eb2-c52e-42e9-8b35-a2b0a3bcb9e6 {*The B2C Application ID*}
-    - **Edit Profile Policy ID**: B2C_1A_ProfileEdit
-1. Select **OK** and you should now see your B2C Application listed by the Application Name in the menu.
+    - **Application Name**: The name for your B2C Application, for example "Fabrikam B2C".
+    - **Tenant Name**: The name of your B2C Tenant, for example "Fabrikam".
+    - **Forget Password Policy ID**: The forget password user flow policy ID, for example "B2C_1_PasswordReset".
+    - **Signup Signin Policy ID**: The sign up and sign in user flow policy ID, for example "B2C_1_signup_signin".
+    - **Client GUID**: The B2C Application ID, for example "22290eb2-c52e-42e9-8b35-a2b0a3bcb9e6".
+    - **Edit Profile Policy ID**: The profile editing user flow policy ID, for example "B2C_1A_ProfileEdit".
+
+1. Select **OK**. You should now see the name of your B2C application appear in the list.
 
 ### Associate the B2C application to your site and channel
 
-> [!Warning]
-> If your site is already associated with a B2C application, changing to a different B2C application will remove the current references established for users already signed up in this environment. Any credentials associated with the currently-assigned B2C application will not be available to users if changed. Only update the B2C application if you are setting up the channel's B2C application for the first time or if you intend to have users re-sign up with new logins to this channel with the new B2C Application you are now associating. Take caution when associating channels to B2C Applications, name Applications clearly. If a Channel is not associated to a B2C Application in the below steps, users logging into that Channel for your site will be entered into the B2C Application showing as **default** in the Tenant Settings>B2C Settings list of B2C Applications.
+> [!WARNING]
+> If your site is already associated with a B2C application, changing to a different B2C application will remove the current references established for users already signed up in this environment. If changed, any credentials associated with the currently-assigned B2C application will not be available to users. Only update the B2C application if you are setting up the channel's B2C application for the first time or if you intend to have users re-sign up with new credentials to this channel with the new B2C application. Take caution when associating channels to B2C applications, and name applications clearly. If a channel is not associated to a B2C application in the steps below, users signing into that channel for your site will be entered into the B2C application showing as **default** in the **Tenant Settings \> B2C Settings** list of B2C applications.
 
 To associate the B2C application to your site and channel, follow these steps.
 
-1. Navigate to the site and drop down the **Site Settings** menu.
-1. Select **Channels**
-1. Select the Channel and on the right-hand menu that displays for the Channel, select your B2C Application name in the **Select B2C Application** drop down.
-1. Select **Close**
-1. Select **Save and Publish** to commit the changes made.
+1. Navigate to your site in Commerve site builder.
+1. In the left navigation pane, select **Site Settings** to expand it.
+1. Below **Site Settings**, select **Channels**.
+1. In the main window under **Channels**, select your channel.
+1. In the channel properties pane on the right, select your B2C application name from the **Select B2C Application** drop down menu.
+1. Select **Close**, and then select **Save and Publish**.
+
 The following image shows an example of the **Azure AD B2C - Applications** page.
 
 ![Navigate to the B2C Application within your tenant](./media/B2CImage_19.png)
