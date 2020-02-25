@@ -130,27 +130,42 @@ Sales invoices are created in Supply Chain Management and synchronized to Sales.
 
 ## Templates
 
-For information about the **Account** and **Contact** entities, see [Integrated customer master](customer-mapping.md).
+Prospect-to-cash includes a collection of core entity maps that work together during data interaction, as shown in the following table.
 
-For information about the **Product** and **Pricelist** entities, see [Unified product mastering experience](product-mapping.md).
+Finance and Operations apps      | Model-driven app in Dynamics 365 | Description
+---------------------------------|----------------------------------|------------
+Sales invoice headers V2         | invoices                         |
+Sales invoice lines V2           | invoicedetails                   |
+CDS sales order headers          | salesorders                      |
+CDS sales order lines            | salesorderdetails                |
+Sales order origin codes         | msdyn_salesorderorigins          |
+CDS sales quotation header       | quotes                           |
+CDS sales quotation lines        | quotedetails                     |
 
-Other templates:
+Related core entity maps for prospect-to-cash are:
++ [Customers V3 to accounts](customer-mapping.md#customers-v3-to-accounts)
++ [CDS Contacts V2 to contacts](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/customer-mapping#cds-contacts-v2-to-contacts)
++ [Customers V3 to contacts](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/customer-mapping#customers-v3-to-contacts)
++ [Released products V2 to msdyn_sharedproductdetails](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/product-mapping#released-products-v2-to-msdyn_sharedproductdetails)
++ [All products to msdyn_globalproducts](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/product-mapping#all-products-to-msdyn_globalproducts)
++ [Pricelist]()
 
-Finance and Operations  apps | Model-driven apps in Dynamics 365 apps | Description
------------------------|--------------------------------|---
-CDS sales quotation header | Quotes |
-CDS sales quotation lines | Quote Details |
-CDS sales order headers | SalesOrders |
-CDS sales order lines | SalesOrderDetails |
-Invoice Header | Invoices |
-Invoice Lines | InvoiceDetails |
+[!include [banner](../../includes/dual-write-symbols.md)]
 
-+ FO.SalesQuotationHeaderCDSEntity to CDS.quote
-+ FO.SalesQuotationLineCDSEntity to CDS.QuoteDetails
-+ FO.SalesOrderHeaderCDSEntity to CDS.salesorder
-+ FO.SalesOrderLineCDSEntity to CDS.salesorderdetails
-+ FO.SalesInvoiceHeaderV2Entity to CDS.invoice
-+ FO.SalesInvoiceLineV2Entity to CDS.invoicedetail
+[!include [sales invoice](includes/SalesInvoiceHeaderV2Entity-invoice.md)]
+
+[!include [sales invoice line](includes/SalesInvoiceLineV2Entity-invoicedetail.md)]
+
+[!include [sales order header](includes/SalesOrderHeaderCDSEntity-salesorder.md)]
+
+[!include [sales order line](includes/SalesOrderLineCDSEntity-salesorderdetails.md)]
+
+[!include [sales order origin](includes/SalesOrderOriginEntity-msdyn-salesorderorigin)]
+
+[!include [sales quotation header](includes/SalesQuotationHeaderCDSEntity-quote.md)]
+
+[!include [sales quotation line](includes/SalesQuotationLineCDSEntity-QuoteDetails)]
+
 
 
 ### FO.SalesQuotationHeaderCDSEntity to CDS.quote
