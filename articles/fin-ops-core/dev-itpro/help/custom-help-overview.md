@@ -2,10 +2,10 @@
 # required metadata
 
 title: Deploy your custom Help
-description: This topic describes how you can extend the Microsoft Help to reflect your solution and then connect that to the Help pane in Finance and Operations apps. 
+description: Learn how to extend the Microsoft Help to reflect your solution and then connect that to the Help pane in Finance and Operations apps. 
 author: edupont04
 manager: AnnBe
-ms.date: 02/18/2020
+ms.date: 02/25/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Operations
 
 [!include [banner](../includes/banner.md)]
 
-You can connect solution-specific and customer-specific help content with the [Help pane](../../fin-ops/get-started/help-overview.md#in-product-help) in the Finance and Operations client if your solution is based on Dynamics 365 Finance, Supply Chain Management, or Commerce. Finance and Operations apps are rarely used out-of-the-box. Rather, the solution is customized and extended to fit the organization's needs. Similarly, you can customize and extend the Help experience. This topic describes the main steps and decision points.  
+You can connect solution-specific and customer-specific help content with the [Help pane](../../fin-ops/get-started/help-overview.md#in-product-help) in the Finance and Operations client if your solution is based on Dynamics 365 Finance, Supply Chain Management, or Commerce. Finance and Operations apps are rarely used as-is. Rather, the solution is customized and extended to fit the organization's needs. Similarly, you can customize and extend the Help experience. This topic describes the main steps and decision points.  
 
 > [!NOTE]
 > Users of Finance and Operations apps can create [custom task guides](/../../fin-ops/get-started/help-connect.md#create-custom-help-with-task-guides) to supplement conceptual content that describes the functionality of their solution. These conceptual descriptions are referred to as Help and can be provided by Microsoft, partners, and the organization itself. For more information, see [Help system](../../fin-ops/get-started/help-overview.md).
@@ -43,15 +43,15 @@ You can connect solution-specific and customer-specific help content with the [H
 
 ## Custom help scenarios
 
-Depending on the customer's solution, Help content can come from different sources. In the following, we assume that you are a consultant from a Dynamics 365 partner who wants to add custom Help to their customer's solution, and that you want to connect the customer's Help solution with the in-product Help pane. We start with a very simple scenario and then show two slightly more complex variants.  
+Depending on the customer's solution, Help content can come from different sources. In the following, we assume that you are a consultant from a Dynamics 365 partner who wants to add custom Help to their customer's solution. You also want to connect the customer's Help solution with the in-product Help pane. We start with a simple scenario and then show two slightly more complex variants.  
 
-For the sake of simplicity, we're assuming that the customer uses a solution based on Dynamics 365 Supply Chain Management with a large module added by the partner. There are no significant customizations of the core product functionality, and the users will not create or use task guides.  
+For the sake of simplicity, we're assuming that the customer uses a solution based on Dynamics 365 Supply Chain Management with a large module added by you. There are no significant customizations of the core product functionality, and the users do not use task guides.  
 
-In this simplified scenario, the partner deploys conceptual Help for their custom module to a website and then connects that website to the in-product Help pane as illustrated in the following diagram.  
+In this simplified scenario, you deploy conceptual Help to a website that describes your customizations. You then connect that website to the in-product Help pane as illustrated in the following diagram.  
 
 :::image type="content" source="../media/help-architecture-custom1.png" alt-text="Diagram showing the Help pane with one custom help website connected and no task guides.":::
 
-As a result, when a user opens the Help pane, they are offered links to Help from the partner's website as well as from *docs.microsoft.com*. The in-product Help pane shows context-sensitive links to Help content on the connected websites based on specific metadata values
+As a result, when a user opens the Help pane, they get links to Help from the partner's website and from *docs.microsoft.com*. The in-product Help pane shows context-sensitive links to Help content on the connected websites based on specific metadata values.
 
 If that scenario is too simple, then let us look at a couple of variants.
 
@@ -63,15 +63,15 @@ In the first variant, the partner makes significant customizations of the core p
 
 ### Variant 2
 
-In the second variant, one partner makes significant customizations of the core product and also customize Microsoft's Help and deploy that customized content to their own website. The customer also uses a module provided by another partner, who has published their content to a website, and the internal administrator decides to connect both websites to their solution's Help pane.
+In the second variant, one partner makes significant customizations of the core product and also customizes Microsoft's Help. they then deploy the customized Help and Help for their own functionality to their own website. The customer also uses a module provided by another partner, who has published their content to a different website. So the internal administrator decides to connect both websites to their solution's Help pane.
 
 :::image type="content" source="../media/help-architecture-custom3.png" alt-text="Diagram showing the Help pane with two custom help websites connected and no task guides.":::
 
-There are, of course, more complex deployments in the real world, and by adding task guides, each customer can get the custom user assistance experience that they prefer.
+There are more complex deployments in the real world, and by adding task guides, each customer can get the custom user assistance experience that they prefer.
 
 ## Custom help sites
 
-In order to the product to your Help content, you must customize the in-product Help pane to search your content. This requires the following elements:
+In order for the product to connect to your Help content, you must customize the in-product Help pane to search your content. This requires the following elements:
 
 - Your content is available on a website
 - Your content is indexed by a search service
@@ -84,7 +84,7 @@ You can see an example of how to get these pieces in place in [Example of Deploy
 
 ## Process
 
-The end-to-end process depends on the actual customer's solution and the users' expectations. We provide a toolkit with tools that can help in different ways, and we provide guidance for the main steps and some of the quirks. However, some steps are very particular to tools or processes that are not directly tied to Dynamics 365, and so we have to refer to external guidance. But if you want to share your own learnings with other administrators, you can either contribute to this documentation through the link at the bottom of the page, or join the Dynamics 365 community.
+The end-to-end process depends on the actual customer's solution and the users' expectations. We provide a toolkit with tools that can help in different ways, and we provide guidance for the main steps and some of the quirks. However, some steps are very particular to tools or processes that are not directly tied to Dynamics 365, and so we have to refer to external guidance. But if you want to share your own learnings with other administrators, you can either contribute to this documentation through the link at the bottom of the page, or join the [Dynamics 365 community](https://community.dynamics.com/).
 
 The following table outlines the main objectives that administrators typically have for configuring the Help experience.
 
