@@ -150,7 +150,7 @@ Related core entity maps for prospect-to-cash are:
 + [All products to msdyn_globalproducts](product-mapping.md#all-products-to-msdyn_globalproducts)
 + [Pricelist]()
 
-[!include [banner](../../includes/dual-write-symbols.md)]
+[!include [symbols](../../includes/dual-write-symbols.md)]
 
 [!include [sales invoice](includes/SalesInvoiceHeaderV2Entity-invoice.md)]
 

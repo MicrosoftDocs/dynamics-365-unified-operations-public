@@ -188,6 +188,8 @@
                   href: data-entities/dual-write/sites-warehouses-mapping.md
                 - name: Prospect to cash in dual-write
                   href: data-entities/dual-write/dual-write-prospect-to-cash.md
+                - name: In-house assets for servicing
+                  href: data-entities/dual-write/in-house-assets.md
                 - name: Initial synchronization
                   href: data-entities/dual-write/initial-sync.md
                 - name: Troubleshooting data integration
