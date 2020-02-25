@@ -98,7 +98,7 @@ This topic provides information about functionality that supports Russian regula
 - [Create and post budget journals for fixed asset acquisitions](rus-post-budget-fixed-asset-acquisition.md)
 - [Transfer fixed assets](rus-fixed-asset-transfer.md)
 
-### Not valuable fixed assets, and working closes
+### Not valuable fixed assets, and working clothes
 - [Not valuable fixed assets](rus-not-valuable-assets.md)
 - [Working clothes/special rigging](rus-working-clothes-instruments-accounting.md)
 
