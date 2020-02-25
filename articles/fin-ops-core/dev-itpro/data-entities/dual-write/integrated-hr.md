@@ -36,39 +36,56 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [preview banner](../../includes/preview-banner.md)]
 
-Worker data can be mastered in more than one Dynamics 365 application. For example, Human Resource data can be managed in Dynamics 
-365 Human Resources, Retail and Supply Chain. Regardless of where the data originates, it is integrated behind the scenes. Integrated 
-worker master helps businesses to have the flexibility to master worker data in any Dynamics 365 application but provides a 
-comprehensive view of the information to the Dynamics 365 application suite.
+Worker data can be mastered in more than one Dynamics 365 application. For example, Human Resource (HR) data can be managed in Dynamics 365 Human Resources, Dynamics 365 Commerce, and Dynamics 365 Supply Chain Management. Regardless of where the data originates, it is integrated behind the scenes. Integrated worker gives you the flexibility to master worker data in any Dynamics 365 application but provides a comprehensive view of the information in Dynamics 365 apps.
 
 ## Human Resources
 
-HR data is a well-defined in applications. Therefore, the integration of HR data just involves harmonizing the HR data between the 
-two applications.
+HR data is well-defined in applications. Therefore, the integration of HR data just involves mapping the HR data between the two applications.
 
 ## Templates
 
-Human Resource data includes information about employees and contractors, positions and jobs. A collection of entity maps work 
-together during data interaction, as shown in the following table.
+Human Resource data includes information about employees and contractors, positions and jobs. A collection of entity maps work together during data interaction, as shown in the following table.
 
-Finance and Operations | Other Dynamics 365 apps | Description
+Finance and Operations apps | Model-driven app in Dynamics 365 | Description
 -----------------------|--------------------------------|---
-Worker | CDSWorkers | This template synchronizes worker information.
-Employment | CDS employment | This template synchronizes employment and employment details information.
-Employment details | CDS Employment | 
-Position types | CDS Position Type | 
-Position | CDS Job Position | This template synchronizes position/details and position assignment/hierarchy information.
-Position details | CDS Job Position | 
-Position duration | CDS Job Position | 
-Position Hierarchy | CDS Job Position | 
-Position worker assignments | CDS Position Worker Assignment | 
-Job | CDS Job | This template synchronizes Job information
-Job detail | CDS Job | 
-Compensation job function | CDS Job Function | 
-Compensation job type | CDS Job type | 
+Compensation job function | cdm_jobfunctions |
+Compensation job type | cdm_jobtypes |
+Employment | cdm_employments |
+Employment detail | cdm_employments |
+Jobs | cdm_jobs |
+Job detail | cdm_jobs |
+Position details | cdm_jobpositions |
+Position durations | cdm_jobpositions |
+Position hierarchies | cdm_jobpositions |
+Position type | cdm_positiontypes |
+Position worker assignments | cdm_positionworkerassignmentmaps |
+Worker | cdm_workers | Workers are classified in Finance and Supply Chain Management as employees or contractors. CDS can also classify workers as volunteers. Volunteers will become contractors when the data is transformed back into Finance and Supply Chain Management. |
 
+[!include [symbols](../../includes/dual-write-symbols.md)]
 
-Workers are classified in Finance and Supply Chain Management as employees or contractors. CDS can also classify workers as volunteers. Volunteers will become contractors when the data is transformed back into Finance and Supply Chain Management.
+[!include [](includes/JobFunction-cdm-jobfunctions.md)]
+
+[!include [](includes/JobType-cdm-jobtypes.md)]
+
+[!include [](includes/Employment-cdm-employments.md)]
+
+[!include [](includes/EmploymentDetail-cdm-employments.md)]
+
+[!include [](includes/Job-cdm-jobs.md)]
+
+[!include [](includes/JobDetail-cdm-jobs.md)]
+
+[!include [](includes/PositionDetail-cdm-jobpositions.md)]
+
+[!include [](includes/PositionDuration-cdm-jobpositions.md)]
+
+[!include [](includes/PositionHierarchy-cdm-jobpositions.md)]
+
+[!include [](includes/PositionType-cdm-positiontypes.md)]
+
+[!include [](includes/PositionWorkerAssignment-cdm-positionworkerassignmentmaps.md)]
+
+[!include [](includes/Worker-cdm-workers.md)]
 
 ### Workers to CDS Workers
 This template synchronizes data between Finance / Supply Chain Management apps and Common Data Service.

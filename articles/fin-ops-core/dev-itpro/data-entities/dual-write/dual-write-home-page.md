@@ -68,6 +68,8 @@ These topics describe mapping between concepts in Finance and Operations applica
 + [Integrated sites and warehouses](sites-warehouses-mapping.md)
 + [Integrated tax master](tax-mapping.md)
 + [Prospect to cash in dual-write](dual-write-prospect-to-cash.md)
++ [In-house assets for servicing](in-house-assets.md)
++ [Integrated worker, job, and position](integrated-hr.md)
 
 ## Support
 
