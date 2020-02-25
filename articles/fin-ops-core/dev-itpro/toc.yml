@@ -187,7 +187,7 @@
                 - name: Integrated sites and warehouses
                   href: data-entities/dual-write/sites-warehouses-mapping.md
                 - name: Prospect to cash in dual-write
-                  href: data-entities/dual-write/integ-prospect-to-cash.md
+                  href: data-entities/dual-write/dual-write-prospect-to-cash.md
                 - name: Initial synchronization
                   href: data-entities/dual-write/initial-sync.md
                 - name: Troubleshooting data integration
