@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Removed or deprecated features for Finance and Operations
-description: This topic describes features that have been removed, or that are planned for removal.
+title: Removed or deprecated features in Platform updates
+description: This topic describes features that have been removed, or that are planned for removal in Platform updates of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 10/08/2019
+ms.date: 02/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,28 +20,35 @@ audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
-ms.custom: 21821
-ms.assetid: 31019808-4cbf-47d7-b1ba-d791db4281ae
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: sericks
-ms.search.validFrom: 2016-02-28 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.search.validFrom: 2020-02-29 
+ms.dyn365.ops.version: Platform update 33
 
 ---
 
-# Removed or deprecated features for Finance and Operations
+# Removed or deprecated features in Platform updates
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes features that have been removed or deprecated for Finance and Operations.
+This topic describes features that have been removed, or that are planned for removal in Platform updates of Finance and Operations apps.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
 This list is intended to help you consider these removals and deprecations for your own planning. 
 
-> [!NOTE]
-> Starting with the Finance and Operations July 2017 release with Platform update 8, the type of deployments are noted for each removed or deprecated feature. All of the previous releases mentioned in this topic supported cloud deployments only.
+> [!Note]
+> Detailed information about objects in Finance and Operations can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
 
-Detailed information about objects in Finance and Operations can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations.
+## Platform update 32
+
+### Workflow request change dialog adjusted to remove user selection dropdown to secure and simplify
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | This was a security issue since the request for change could be sent to an user that it shouldn't be. This was also a usability issue since it forced the user to determine who the workflow originator was and manually select them.  |
+| **Replaced by another feature?**   | No |
+| **Product areas affected**         | Workflow |
+| **Deployment option**              | All |
+| **Status**                         | The user selection dropdown was removed from the request change dialog as Platform update 32. Request change requests will be automatically sent to the originator as intended and as documented in [Actions in workflow approval processes](../../fin-ops/organization-administration/workflow-actions?toc=%2Fdynamics365%2Fcommerce%2Ftoc.json#request-change) |
