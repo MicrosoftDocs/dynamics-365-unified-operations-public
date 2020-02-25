@@ -51,4 +51,4 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | No |
 | **Product areas affected**         | Workflow |
 | **Deployment option**              | All |
-| **Status**                         | The user selection dropdown was removed from the request change dialog as Platform update 32. Request change requests will be automatically sent to the originator as intended and as documented in [Actions in workflow approval processes](../../fin-ops/organization-administration/workflow-actions?toc=%2Fdynamics365%2Fcommerce%2Ftoc.json#request-change) |
+| **Status**                         | The user selection dropdown was removed from the request change dialog as Platform update 32. Request change requests will be automatically sent to the originator as intended and as documented in [Actions in workflow approval processes](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/workflow-actions?toc=%2Fdynamics365%2Fcommerce%2Ftoc.json#request-change) |
