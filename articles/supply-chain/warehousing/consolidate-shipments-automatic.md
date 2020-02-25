@@ -217,6 +217,8 @@ Create another two identical sales orders.
 **Sales order 5 and 6**:
 
 - In the **Customer account** field, select **US-007**.
+- In the **Site** field, select **6**.
+- In the **Warehouse** field, select **61**.
 - In the **Pool** field, select **ShipCons**.
 
 Add an order line to each sales order.
@@ -231,6 +233,8 @@ Create another two identical sales orders.
 **Sales order 7 and 8**:
 
 - In the **Customer account** field, select **US-007**;
+- In the **Site** field, select **6**.
+- In the **Warehouse** field, select **61**.
 - Leave **Pool** field empty.
 
 Add an order line to each sales order.
@@ -248,7 +252,7 @@ First, update the wave template that will be used during releasing.
 
 1. Go to **Warehouse management > Setup > Waves > Wave template**.
 1. In the **Wave template type** field, select **Shipping**.
-1. Find and select wave template that is associated with a warehouse that was used in the order sets. For example, if **24** warehouse was used, select **24 Shipping Default** wave template.
+1. Find and select wave template that is associated with a warehouse that was used in the order sets. For example, if **24** warehouse was used, select **24 Shipping Default** wave template. If **61** warehouse was used, select **61 Shipping** wave template.
 1. Click **Edit** and select **No** in the **Process wave at release to warehouse** field.
 
 Then, perform release to warehouse.
@@ -273,9 +277,9 @@ Now, using instructions above, release to warehouse each of created set of order
 
 Expected result:
 
-- Four shipments are created:
-  - The first three shipments created using **CustomerMode** shipment consolidation policy;
-  - The fourth shipment (without **Airways** transportation mode of delivery) is created using **CustomerOrderNo** shipment consolidation policy.
+- Two shipments are created:
+  - The first shipment contains three lines and is created using **CustomerMode** shipment consolidation policy;
+  - The second shipment (without **Airways** transportation mode of delivery) is created using **CustomerOrderNo** shipment consolidation policy.
 
 ### Release sales orders from Order set 2
 
@@ -314,10 +318,11 @@ Expected result:
 
 Expected result:
 
-- Three shipments are created:
+- Four shipments are created:
   - Lines from two orders for **US-003** customer are grouped into one shipment using **Order pool** shipment consolidation policy;
   - Lines from two orders for **US-004** customer are grouped into one shipment using **Order pool** shipment consolidation policy;
-  - Lines from four orders for **US-007** customer are grouped into one shipment using **CrossOrder** shipment consolidation policy.
+  - Lines from sales orders 5 and 6 for **US-007** customer are grouped into one shipment using **Order pool** shipment consolidation policy;
+  - Lines from sales orders 7 and 8 for **US-007** customer are grouped into one shipment using **CrossOrder** shipment consolidation policy.
 
 ## Related articles and demo scripts
 

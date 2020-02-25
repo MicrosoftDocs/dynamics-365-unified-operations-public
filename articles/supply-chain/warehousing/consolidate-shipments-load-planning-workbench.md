@@ -241,9 +241,9 @@ Using instructions above, verify shipments that are created or updated as a resu
 
 Expected result:
 
-- Four shipments are created:
-  - The first three shipments created using **CustomerMode** shipment consolidation policy;
-  - The fourth shipment (without **Airways** transportation mode of delivery) is created using **CustomerOrderNo**.
+- Two shipments are created:
+  - The first shipment contains three lines and is created using **CustomerMode** shipment consolidation policy;
+  - The second shipment (without **Airways** transportation mode of delivery) is created using **CustomerOrderNo** shipment consolidation policy.
 
 ### Release Order set 2 within one load
 
@@ -268,7 +268,8 @@ Expected result:
 - Three shipments are created:
   - Lines from two orders for **US-003** customer are grouped into one shipment using **Order pool** shipment consolidation policy;
   - Lines from two orders for **US-004** customer are grouped into one shipment using **Order pool** shipment consolidation policy;
-  - Lines from four orders for **US-007** customer are grouped into one shipment using **CrossOrder** shipment consolidation policy.
+  - Lines from sales orders 5 and 6 for **US-007** customer are grouped into one shipment using **Order pool** shipment consolidation policy;
+  - Lines from sales orders 7 and 8 for **US-007** customer are grouped into one shipment using **CrossOrder** shipment consolidation policy.
 
 ## Related articles and demo scripts
 
