@@ -105,17 +105,6 @@ To create the B2C application, follow these steps.
 1. For **Include native client**, select **No** (the default value).
 1. Select **Create**.
 
-<!--
-The following image shows how to add a B2C application to your tenant.
-
-![Adding a B2C application to your tenant](./media/B2CImage_7.png)
-
-The following image shows settings for the B2C application.
-
-![Settings for the B2C application](./media/B2CImage_8.png)
-
--->
-
 ### Reply URLs
 
 Reply URLs are important as they allow a whitelist of the return domains when your site calls Azure AD B2C to authenticate a user. This allows the return of the authenticated user back to the domain from which they are logging in (your site domain). 
@@ -137,25 +126,6 @@ Azure AD B2C provides three basic user flow types:
 You can choose to use the default user flows provided by Azure AD, which will display a page hosted by AAD B2C. Alternately, you can create an HTML page to control the look and feel of these user flow experiences. 
 
 To customize the user policy pages for Dynamics 365 Commerce, see [Set up custom pages for user logins](custom-pages-user-logins.md). For additional information, see [Customize the interface of user experiences in Azure Active Directory B2C](https://docs.microsoft.com/en-us/azure/active-directory-b2c/tutorial-customize-ui).
-
-<!--
-To create default user flow policies, follow these steps.
-
-1. In the Azure portal, select **User flows (policies)** in the left navigation pane.
-1. On the **Azure AD B2C – User flows (policies)** page, select **New User Flow**.
-3.  There are three basic flows offered:
-    1. Sign up and sign in
-    2. Profile editing
-    3. Password reset
-        
-The following image shows
-
-![User Flows menu in Application settings](./media/B2CImage_9.png)
-
-The following image shows how to select a user flow on the **Add User Flow** menu.
-
-![Selecting a user flow in the Add User Flow menu](./media/B2CImage_10.png)
--->
 
 ### Create a sign up and sign in user flow policy
 
@@ -275,12 +245,6 @@ The following image shows examples of the **Add identity provider** and **Set up
 
 ![Adding a Social Identity Provider to your application](./media/B2CImage_14.png)
 
-<!--
-The following image shows how to select the added social identity provider user flow from the **Identity Providers** page.
-
-![Select the added Identity Provider user flow in the 'Identity Providers' menu](./media/B2CImage_15.png)
--->
-
 The following image shows an example of how to select identity providers on the Azure AD B2C **Identity Providers** page.
 
 ![Select each Social Identity Provider to enable for your policy](./media/B2CImage_16.png)
@@ -316,10 +280,6 @@ To obtain your identity provider issuer URL, follow these steps.
 1. In the metadata, copy the identity provider issuer URL (the value for **"issuer"**).
     - Example: ``https://login.fabrikam.com/073405c3-0113-4f43-b5e2-df01266e24ae/v2.0/``.
 
-<!--
-![Copy the Issuer URL from metadata address](./media/B2CImage_18.png "Copy the Issuer URL from metadata address")
--->
-
 ## Additional B2C information
 
 ### Customer migration
@@ -335,10 +295,6 @@ For additional information regarding customizing Azure AD B2C interactions and p
 ### Secondary admin
 
 An optional, secondary administrator account can be added in the **Users** section of your B2C tenant. This can be a direct account or a general account. If you need to share an account across team resources, a common account can also be created. Due to the sensitivity of the data stored in Azure AD B2C, a common account should be monitored closely per your company's security practices.
-
-### b2clogin.com
-
-Use the default ‘b2clogin.com’ domain (default). This part of the URL will be shown for sign-in or reply URLs, and will be viewable in the browser by users.
 
 ## Provide Commerce with the B2C application information
 
@@ -356,10 +312,6 @@ To collect the required application information, follow these steps.
 The following image shows an example of the **Azure AD B2C - Applications** page.
 
 ![Navigate to the B2C Application within your tenant](./media/B2CImage_19.png)
-
-<!--
-![Select the Properties menu of your B2C Application](./media/B2CImage_20.png)
--->
 
 The following image shows an example of an application **Properties** page in Azure AD B2C. 
 
