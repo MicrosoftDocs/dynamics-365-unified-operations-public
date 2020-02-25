@@ -63,27 +63,27 @@ Worker | cdm_workers | Workers are classified in Finance and Supply Chain Manage
 
 [!include [symbols](../../includes/dual-write-symbols.md)]
 
-[!include [](includes/JobFunction-cdm-jobfunctions.md)]
+[!include [job function](includes/JobFunction-cdm-jobfunctions.md)]
 
-[!include [](includes/JobType-cdm-jobtypes.md)]
+[!include [job type](includes/JobType-cdm-jobtypes.md)]
 
-[!include [](includes/Employment-cdm-employments.md)]
+[!include [employment](includes/Employment-cdm-employments.md)]
 
-[!include [](includes/EmploymentDetail-cdm-employments.md)]
+[!include [employment detail](includes/EmploymentDetail-cdm-employments.md)]
 
-[!include [](includes/Job-cdm-jobs.md)]
+[!include [job](includes/Job-cdm-jobs.md)]
 
-[!include [](includes/JobDetail-cdm-jobs.md)]
+[!include [job detail](includes/JobDetail-cdm-jobs.md)]
 
-[!include [](includes/PositionDetail-cdm-jobpositions.md)]
+[!include [position detail](includes/PositionDetail-cdm-jobpositions.md)]
 
-[!include [](includes/PositionDuration-cdm-jobpositions.md)]
+[!include [position duration](includes/PositionDuration-cdm-jobpositions.md)]
 
-[!include [](includes/PositionHierarchy-cdm-jobpositions.md)]
+[!include [position hierarchy](includes/PositionHierarchy-cdm-jobpositions.md)]
 
-[!include [](includes/PositionType-cdm-positiontypes.md)]
+[!include [position type](includes/PositionType-cdm-positiontypes.md)]
 
-[!include [](includes/PositionWorkerAssignment-cdm-positionworkerassignmentmaps.md)]
+[!include [position worker assignment](includes/PositionWorkerAssignment-cdm-positionworkerassignmentmaps.md)]
 
-[!include [](includes/Worker-cdm-workers.md)]
+[!include [worker](includes/Worker-cdm-workers.md)]
 

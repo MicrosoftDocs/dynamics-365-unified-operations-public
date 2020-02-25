@@ -60,7 +60,7 @@ In Dynamics 365 Sales, go to **Settings > Administration > System settings > Sal
 
 The number sequences for Supply Chain Management and Sales are not connected when syncing and creating a quotation and order in Sales and Supply Chain Management. If a sales order is created in Sales, it is synchronized to Supply Chain Management with the same sales order number. To ensure that the the sales order number isn't duplicated, you must use different number sequencing systems in the two environments.
 
-For example, suppose that Supply Chain Management number sequence is **1,2,3,4,5...**, and the Sales number sequencing is **100,99,97,...**." The number sequencing will eventually overlap as sales orders are created in Supply Chain Management and Sales. If we create a 100 sales orders in Sales, then we eventually will generate a number that already exists in Supply Chain Management. Instead, Supply Chain Management  could use a number sequence like "F1, F2, F3..." and Sale could use a number sequence like "C1, C2, C3...". These sequences will not produce duplicate sales order numbers.
+For example, suppose that Supply Chain Management number sequence is **1,2,3,4,5...**, and the Sales number sequencing is **100,99,97,...**." The number sequencing will eventually overlap as sales orders are created in Supply Chain Management and Sales. If we create a 100 sales orders in Sales, then we eventually will generate a number that already exists in Supply Chain Management. Instead, Supply Chain Management  could use a number sequence like **F1, F2, F3...** and Sale could use a number sequence like **C1, C2, C3...**. These sequences will not produce duplicate sales order numbers.
 
 ## Sales quotation
 
@@ -86,7 +86,7 @@ Suppose you have this sales order:
 + Sales: Quantity = 3, per-line discount = $10.00
 + Supply Chain Management: Quantity = 3, line discount amount = $3.33, sales charge = -$0.01
 
-If you cynchronization from Supply Chain Management to Sales, then:
+If you synchronization from Supply Chain Management to Sales, then:
 
 + Supply Chain Management: Quantity = 3, line discount amount = $3.33, sales charge = -$0.01
 + Sales: Quantity = 3, per-line discount = (3 × $3.33) + $0.01 = $10.00

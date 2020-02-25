@@ -60,27 +60,27 @@ Asset management warranty | msdyn_warranties |
 
 [!include [symbols](../../includes/dual-write-symbols.md)]
 
-[!include [](includes/AssetManagementAssetLifecycleModels-msdyn-assetlifecyclemodels.md)]
+[!include [lifecycle models](includes/AssetManagementAssetLifecycleModels-msdyn-assetlifecyclemodels.md)]
 
-[!include [](includes/AssetManagementAssetLifecycleStates-msdyn-assetlifecyclestates.md)]
+[!include [lifecycle states](includes/AssetManagementAssetLifecycleStates-msdyn-assetlifecyclestates.md)]
 
-[!include [](includes/AssetManagementAssets-msdyn-customerassets.md)]
+[!include [assets](includes/AssetManagementAssets-msdyn-customerassets.md)]
 
-[!include [](includes/AssetManagementAssetTypes-msdyn-customerassetcategories.md)]
+[!include [asset types](includes/AssetManagementAssetTypes-msdyn-customerassetcategories.md)]
 
-[!include [](includes/AssetManagementFunctionalLocationLifecycleModels-msdyn-functionallocationlifecyclemodels.md)]
+[!include [functional location lifecycle models](includes/AssetManagementFunctionalLocationLifecycleModels-msdyn-functionallocationlifecyclemodels.md)]
 
-[!include [](includes/AssetManagementFunctionalLocationLifecycleStates-msdyn-functionallocationlifecyclestates.md)]
+[!include [functional location lifecycle states](includes/AssetManagementFunctionalLocationLifecycleStates-msdyn-functionallocationlifecyclestates.md)]
 
-[!include [](includes/AssetManagementFunctionalLocations-msdyn-functionallocations.md)]
+[!include [functional locations](includes/AssetManagementFunctionalLocations-msdyn-functionallocations.md)]
 
-[!include [](includes/AssetManagementFunctionalLocationTypes-msdyn-functionallocationtypes.md)]
+[!include [functional location types](includes/AssetManagementFunctionalLocationTypes-msdyn-functionallocationtypes.md)]
 
-[!include [](includes/AssetManagementManufacturers-msdyn-manufacturers.md)]
+[!include [manufacturers](includes/AssetManagementManufacturers-msdyn-manufacturers.md)]
 
-[!include [](includes/AssetManagementModels-msdyn-models.md)]
+[!include [models](includes/AssetManagementModels-msdyn-models.md)]
 
-[!include [](includes/AssetManagementWarranty-msdyn-warranties.md)]
+[!include [warranty](includes/AssetManagementWarranty-msdyn-warranties.md)]
 
 
 
