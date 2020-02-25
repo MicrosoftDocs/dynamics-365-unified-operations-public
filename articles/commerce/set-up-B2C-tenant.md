@@ -294,6 +294,18 @@ To collect the required application information, follow these steps.
 1. Under **Reply URL**, collect the reply URL.
 1. Go to **Home \> Azure AD B2C – User flows (policies)**, and then collect the names of each user flow policy.
 
+The following image shows an example of the **Azure AD B2C - Applications** page.
+
+![Navigate to the B2C Application within your tenant](./media/B2CImage_19.png)
+
+The following image shows an example of an application **Properties** page in Azure AD B2C. 
+
+![Copy the Application ID from the B2C Application's Properties](./media/B2CImage_21.png)
+
+The following image shows an example of user flow policies on the **Azure AD B2C – User flows (policies)** page.
+
+![Collect the names of each B2C policy flow](./media/B2CImage_22.png)
+
 ### Add your AAD B2C tenant application information to Commerce
 
 To add your AAD B2C tenant application information to Commerce, follow these steps.
@@ -309,7 +321,7 @@ To add your AAD B2C tenant application information to Commerce, follow these ste
     - **Tenant Name**: The name of your B2C Tenant, for example "Fabrikam".
     - **Forget Password Policy ID**: The forget password user flow policy ID, for example "B2C_1_PasswordReset".
     - **Signup Signin Policy ID**: The sign up and sign in user flow policy ID, for example "B2C_1_signup_signin".
-    - **Client GUID**: The B2C Application ID, for example "22290eb2-c52e-42e9-8b35-a2b0a3bcb9e6".
+    - **Client GUID**: The B2C application ID, for example "22290eb2-c52e-42e9-8b35-a2b0a3bcb9e6".
     - **Edit Profile Policy ID**: The profile editing user flow policy ID, for example "B2C_1A_ProfileEdit".
 
 1. Select **OK**. You should now see the name of your B2C application appear in the list.
@@ -327,19 +339,6 @@ To associate the B2C application to your site and channel, follow these steps.
 1. In the main window under **Channels**, select your channel.
 1. In the channel properties pane on the right, select your B2C application name from the **Select B2C Application** drop down menu.
 1. Select **Close**, and then select **Save and Publish**.
-
-The following image shows an example of the **Azure AD B2C - Applications** page.
-
-![Navigate to the B2C Application within your tenant](./media/B2CImage_19.png)
-
-The following image shows an example of an application **Properties** page in Azure AD B2C. 
-
-![Copy the Application ID from the B2C Application's Properties](./media/B2CImage_21.png)
-
-The following image shows an example of user flow policies on the **Azure AD B2C – User flows (policies)** page.
-
-![Collect the names of each B2C policy flow](./media/B2CImage_22.png)
-
 
 ## Additional B2C information
 
