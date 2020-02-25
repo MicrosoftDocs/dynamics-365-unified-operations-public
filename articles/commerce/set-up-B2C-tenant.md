@@ -280,9 +280,9 @@ To obtain your identity provider issuer URL, follow these steps.
 1. In the metadata, copy the identity provider issuer URL (the value for **"issuer"**).
     - Example: ``https://login.fabrikam.com/073405c3-0113-4f43-b5e2-df01266e24ae/v2.0/``.
 
-## Provide Commerce with the B2C application information
+## Configure your B2C tenant in Commerce site builder
 
-Once setup of the Azure AD B2C tenant is completed, you must provide details of the Azure AD B2C tenant to Dynamics 365 Commerce. These data points will be entered in site builder to be associated with your sites.
+Once setup of your Azure AD B2C tenant is completed, you must configure the B2C tenant in Commerce site builder. Configuration steps include collecting B2C application information from the Azure portal, entering that B2C application information into site builder, and then associating the B2C application with your site and channel.
 
 ### Collect the required application information
 
@@ -306,7 +306,9 @@ The following image shows an example of user flow policies on the **Azure AD B2C
 
 ![Collect the names of each B2C policy flow](./media/B2CImage_22.png)
 
-### Add your AAD B2C tenant application information to Commerce
+### Enter your AAD B2C tenant application information into Commerce
+
+You must enter details of the Azure AD B2C tenant into Commerce site builder before associating the B2C tenant with your site(s).
 
 To add your AAD B2C tenant application information to Commerce, follow these steps.
 
@@ -333,7 +335,7 @@ To add your AAD B2C tenant application information to Commerce, follow these ste
 
 To associate the B2C application to your site and channel, follow these steps.
 
-1. Navigate to your site in Commerve site builder.
+1. Navigate to your site in Commerce site builder.
 1. In the left navigation pane, select **Site Settings** to expand it.
 1. Below **Site Settings**, select **Channels**.
 1. In the main window under **Channels**, select your channel.
