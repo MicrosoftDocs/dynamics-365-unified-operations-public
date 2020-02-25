@@ -144,10 +144,10 @@ CDS sales quotation lines        | quotedetails                     |
 
 Related core entity maps for prospect-to-cash are:
 + [Customers V3 to accounts](customer-mapping.md#customers-v3-to-accounts)
-+ [CDS Contacts V2 to contacts](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/customer-mapping#cds-contacts-v2-to-contacts)
-+ [Customers V3 to contacts](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/customer-mapping#customers-v3-to-contacts)
-+ [Released products V2 to msdyn_sharedproductdetails](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/product-mapping#released-products-v2-to-msdyn_sharedproductdetails)
-+ [All products to msdyn_globalproducts](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/product-mapping#all-products-to-msdyn_globalproducts)
++ [CDS Contacts V2 to contacts](customer-mapping#cds-contacts-v2-to-contacts)
++ [Customers V3 to contacts](customer-mapping#customers-v3-to-contacts)
++ [Released products V2 to msdyn_sharedproductdetails](product-mapping#released-products-v2-to-msdyn_sharedproductdetails)
++ [All products to msdyn_globalproducts](product-mapping#all-products-to-msdyn_globalproducts)
 + [Pricelist]()
 
 [!include [banner](../../includes/dual-write-symbols.md)]
@@ -160,11 +160,11 @@ Related core entity maps for prospect-to-cash are:
 
 [!include [sales order line](includes/SalesOrderLineCDSEntity-salesorderdetails.md)]
 
-[!include [sales order origin](includes/SalesOrderOriginEntity-msdyn-salesorderorigin)]
+[!include [sales order origin](includes/SalesOrderOriginEntity-msdyn-salesorderorigin.md)]
 
 [!include [sales quotation header](includes/SalesQuotationHeaderCDSEntity-quote.md)]
 
-[!include [sales quotation line](includes/SalesQuotationLineCDSEntity-QuoteDetails)]
+[!include [sales quotation line](includes/SalesQuotationLineCDSEntity-QuoteDetails.md)]
 
 
 
