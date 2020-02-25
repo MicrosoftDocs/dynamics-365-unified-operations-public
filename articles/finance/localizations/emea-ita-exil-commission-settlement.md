@@ -84,4 +84,4 @@ There is also the possibility of previewing the sales commission calculation fro
 A user may overview commision transaction on **Invoice journal** page list (**Accounts receivable** \> **Inquiries and reports** \> **Invoices** \> **Invoice journal**, **Invoice** tab \> **Details** \> **Commission transactions**).
 
 > [!NOTE]
-> When posting invoice, the system creates commission and voucher transactions). If **Commission settlement** value is **On invoice** in sales order header the system creates **Settlement** record (**Settlement** tab). If **Commission settlement** value is **On payment** in sales order header, **Settlement** record (**Settlement** tab) is created only after settling the invoice and a payment.  
+> When posting invoice, the system creates commission and voucher transactions). If **Commission settlement** value is **On invoice** in sales order header, the system creates **Settlement** record (**Settlement** tab). If **Commission settlement** value is **On payment** in sales order header, **Settlement** record (**Settlement** tab) is created only after settling the invoice and a payment.  
