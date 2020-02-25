@@ -47,11 +47,11 @@ This list is intended to help you consider these removals and deprecations for y
 ### Workflow request change dialog adjusted to remove user selection dropdown to secure and simplify
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | This was a security issue since the request for change could be sent to an user that it shouldn't be. This was also a usability issue since it forced the user to determine who the workflow originator was and manually select them.  |
+| **Reason for deprecation/removal** | This was a security issue since the request for change could be sent to a user that it shouldn't be. This was also a usability issue since it forced the user to determine who the workflow originator was and manually select them.  |
 | **Replaced by another feature?**   | No |
 | **Product areas affected**         | Workflow |
 | **Deployment option**              | All |
-| **Status**                         | The user selection dropdown was removed from the request change dialog as Platform update 32. Request change requests will be automatically sent to the originator as intended and as documented in [Actions in workflow approval processes](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/workflow-actions?toc=%2Fdynamics365%2Fcommerce%2Ftoc.json#request-change) |
+| **Status**                         | The user selection drop-down list was removed from the request change dialog as of Platform update 32. Request change requests will be automatically sent to the originator as intended and as documented in [Actions in workflow approval processes](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/workflow-actions?toc=%2Fdynamics365%2Fcommerce%2Ftoc.json#request-change) |
 
 ## Previous annoucements about removed or deprecated features
 To learn more about features that have been removed or deprecated in previous releases, see [Removed or deprecated features for Finance and Operations](../migration-upgrade/deprecated-features.md).
