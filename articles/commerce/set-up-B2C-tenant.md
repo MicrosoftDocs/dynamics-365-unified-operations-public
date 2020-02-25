@@ -53,14 +53,14 @@ Dynamics 365 Commerce uses Azure AD B2C to support user credential and authentic
         1. Under **Organization name**, enter the organization name.
         1. Under **Initial domain name**, enter the initial domain name.
         1. In the **Country or region** drop down menu, select the country or region.
-	1. Select **Create** to create the tenant.
+        1. Select **Create** to create the tenant.
 
      ![Create a new Azure AD Tenant](./media/B2CImage_2.png)
 
      - **Link an existing Azure AD B2C Tenant to my Azure subscription**: Use this option if you already have an Azure AD B2C tenant you want to link to.
         1. Select **Link an existing Azure AD B2C Tenant to my Azure subscription**.
         1. In the **Azure AD B2C Tenant** drop down menu, select the appropriate B2C tenant. If the message "No eligible B2C Tenants found" appears in the selection box, you do not have an existing eligible B2C tenant and will need to create a new one.
-	1. For **Resource group**, select **Create new**. Enter a **Name** for the resource group that will contain the tenant, select the **Resource group location**, and then select **Create**.
+        1. For **Resource group**, select **Create new**. Enter a **Name** for the resource group that will contain the tenant, select the **Resource group location**, and then select **Create**.
 
     ![Link an existing Azure AD B2C Tenant to Azure Subscription](./media/B2CImage_3.png)
 
