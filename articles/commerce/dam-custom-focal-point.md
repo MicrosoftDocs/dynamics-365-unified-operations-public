@@ -3,10 +3,10 @@
 # required metadata
 
 title: Customize image focal points
-description: This topic describes how to customize image focal points in Microsoft Dynamics 365 Commerce.
+description: This topic describes how to customize image focal points in Microsoft Dynamics 365 Commerce site builder.
 author: psimolin
 manager: annbe
-ms.date: 02/24/2020
+ms.date: 02/26/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -34,27 +34,23 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to customize image focal points in Microsoft Dynamics 365 Commerce.
+This topic describes how to customize image focal points in Microsoft Dynamics 365 Commerce site builder.
 
 # Overview
 
-When an image is uploaded to the DAM, the system attempts to determine the focal point of the image. For example, if the image has a person on it, the system will set the focal point to the face of the person by default. In most cases the automatically set focal point and cropping works very well for all viewports. Occasionally you might want to adjust the focal point or define custom crop for an image to ensure that specific part of the image is always visible or if the image needs to be cropped in a certain special way.
-
-In order to manually set a focal point or define custom cropping for specific module and viewport, you need to follow these steps:
+When an image is uploaded to the Media Library, the system attempts to determine the focal point of the image. For example, if the image has a person on it, the system will set the focal point to the face of the person by default. In most cases the automatically set focal point works well for all viewports, but sometimes you might want to adjust the focal point to ensure that a specific part of the image is always visible.
 
 ### Define a custom focal point for an image
 
 To define a custom focal point for an image, follow these steps.
 
-1. Make sure you have the "Assets"-tab selected
-1. Select the image asset you want to modify
-1. Make sure the image asset is checked out to you. Check out if necessary by clicking "Check Out"
-1. Click "Edit Focal Point"
-1. Image will be opened in edit mode and you will see the focal point editor in the view
-1. Current focal point is marked with a double circle
-1. In order to manually specify a focal point, click the image on the point you want the focal point to be set at
-1. Click "Check In"
-1. Click "Publish"
+1. In the left navigation pane of Commerce site builder, select **Media Library**.
+1. In the main window, select the image you want to modify.
+1. On the command bar, select **Edit** to check out the file.
+1. Select the image to enter **Edit Mode**.
+1. Under **Edit Mode**, select **Change Focal Point**. A circular focal point control appears over the image.
+1. Select the focal point control to move it over the desired focal point.
+1. When done, on the command bar select **Save**, and then select **Finish editing**.
 
 ![Focal point](./media/dam-screenshot6.png)
 
