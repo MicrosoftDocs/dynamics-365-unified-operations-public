@@ -3131,6 +3131,8 @@
           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
         - name: Select data model definitions when you create formats
           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
+        - name: Enhanced filtering options for finding configurations in the Global repository
+          href: ../finance/localizations/enhanced_filtering_in_Global_repo.md          
         - name: Generate reports by adding content as raw XML
           href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/finance/toc.json
         - name: (ER) Cross-company data sources in Electronic reporting
