@@ -3,10 +3,10 @@
 # required metadata
 
 title: Upload files
-description: This topic describes how to upload binary files other than images and videos in Microsoft Dynamics 365 Commerce.
+description: This topic describes how to upload binary files other than images and videos in Microsoft Dynamics 365 Commerce site builder.
 author: psimolin
 manager: annbe
-ms.date: 02/24/2020
+ms.date: 02/26/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -34,25 +34,59 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to upload files other than images and videos in Microsoft Dynamics 365 Commerce.
+This topic describes how to upload files other than images and videos in Microsoft Dynamics 365 Commerce site builder.
 
 ## Upload a file
 
-Digital asset management also supports other types of binary assets. For example, you might want to upload a PDF-, Excel-, Word- or PowerPoint-document.
+Digital asset management also supports the uploading of binary assets other than images or videos. For example, you might want to upload Microsoft Excel, Microsoft Word, Microsoft PowerPoint, or PDF documents.
 
-To upload a file, follow these steps.
+The following document types are supported:
+- 7Z
+- AVI
+- CS
+- CSS
+- DOC
+- DOCX
+- EPUB
+- GIF
+- INDD
+- JAR
+- JPG
+- JPEG
+- JS
+- MP3
+- MP4
+- MPEG
+- MPG
+- ODP
+- ODS
+- ODT
+- PDF
+- PNG
+- PPT
+- PPTX
+- PS
+- QXP
+- RAR
+- RTF
+- SVG
+- TAR
+- TGZ
+- TXT
+- WMV
+- XLS
+- XLSX
+- XML
+- ZIP
 
-1. Click "Upload"
-1. Click "Upload Assets"
-1. Select one or more files and click "Open"
-1. Enter meta data and other information
-1. Click "Ok"
+To upload a file to site builder, follow these steps.
 
-- **Title, Description, Keywords** - Metadata of the file or files
-- **Publish assets after upload** - Whether the file or files are published right after upload finishes
-
-List is allowed document types
-* JPG, JPEG, PNG, GIF, MP4, MPG, MPEG, AVI, WMV, DOC, DOCX, ODT, PDF, RTF, TXT, XLS, XLSX, ODS, PPT, PPTX, ODP, INDD, PS, QXP, EPUB, MP3, TGZ, JAR, RAR, TAR, ZIP, 7Z, SVG, JS, XML, CSS, CS
+1. In the left navigation pane of Commerce site builder, select **Media Library**.
+1. On the command bar, select **Upload \> Upload Media Items**.
+1. In File Explorer, select one or more files and then select **Open**.
+1. In the **Upload Media Item** dialog box, enter title, description, and keyword metadata as needed.
+1. To publish the file(s) immediately after upload, select the **Publish media items after upload** check box.
+1. Select **OK**.
 
 ## Additional resources
 
