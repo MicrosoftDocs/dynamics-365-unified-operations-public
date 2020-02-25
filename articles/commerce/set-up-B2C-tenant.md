@@ -45,7 +45,7 @@ Dynamics 365 Commerce uses Azure AD B2C to support user credential and authentic
 
     ![Create a Resource in Azure Portal](./media/B2CImage_1.png)
 
-1. Go to to **Identity \> Azure Active Directory B2C**.
+1. Go to **Identity \> Azure Active Directory B2C**.
 1. Once on the **Create New B2C Tenant or Link to existing Tenant** page, use one of the options below that best suits your company's needs:
 
     - **Create a new Azure AD B2C Tenant**: Use this option to create a new AAD B2C tenant.
@@ -101,7 +101,7 @@ To create the B2C application, follow these steps.
 1. Under **Name**, enter the name of the desired AAD B2C application.
 1. Under **Web App/Web API**, for **Include web app / web API** select **Yes**.
 1. For **Allow implicit flow** select **Yes** (the default value).
-1. Under **Reply URL**, enter your dedicated reply URLs. See [Reply URLs](#reply-URLs) below for information on reply URLs and how to format them here.
+1. Under **Reply URL**, enter your dedicated reply URLs. See [Reply URLs](#reply-urls) below for information on reply URLs and how to format them here.
 1. For **Include native client**, select **No** (the default value).
 1. Select **Create**.
 
@@ -125,7 +125,7 @@ Azure AD B2C provides three basic user flow types:
 
 You can choose to use the default user flows provided by Azure AD, which will display a page hosted by AAD B2C. Alternately, you can create an HTML page to control the look and feel of these user flow experiences. 
 
-To customize the user policy pages for Dynamics 365 Commerce, see [Set up custom pages for user logins](custom-pages-user-logins.md). For additional information, see [Customize the interface of user experiences in Azure Active Directory B2C](https://docs.microsoft.com/en-us/azure/active-directory-b2c/tutorial-customize-ui).
+To customize the user policy pages for Dynamics 365 Commerce, see [Set up custom pages for user logins](custom-pages-user-logins.md). For additional information, see [Customize the interface of user experiences in Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/tutorial-customize-ui).
 
 ### Create a sign up and sign in user flow policy
 
@@ -261,7 +261,7 @@ To update headquarters with the new AAD B2C information, follow these steps.
 
 1. In Commerce, go to **Retail and Commerce \> Shared Parameters**.
 1. Under **Identity Provider**, do the following:
-    1. In the **Issuer** box, enter the identity provider issuer URL. To find your issuer URL, see [Obtain issuer URL](#obtain-issuer-URL) below.
+    1. In the **Issuer** box, enter the identity provider issuer URL. To find your issuer URL, see [Obtain issuer URL](#obtain-issuer-url) below.
     1. In the **Name** box, enter a name for your issuer record.
     1. In the **Type** box, enter **Azure AD B2C** (id_token).
 1. Under **Relying Parties**, do the following:
