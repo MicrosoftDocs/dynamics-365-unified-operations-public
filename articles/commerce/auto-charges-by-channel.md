@@ -1,8 +1,8 @@
 ---
 # required metadata
-title: [Omni-channel advanced auto charges]
-description: [Dynamics 365 Commerce's advanced auto charges for applying fees for transaction header or lines, based on channel or order creation. For e.g. if you want to apply recycling fees for group of products sold in all stores in California state, USA] 
-author: [gvrmohanreddy]
+title: Omni-channel advanced auto charges
+description: Dynamics 365 Commerce's advanced auto charges for applying fees for transaction header or lines, based on channel or order creation. For e.g. if you want to apply recycling fees for group of products sold in all stores in California state, USA 
+author: gvrmohanreddy
 manager: jeffbl
 ms.date: 2/12/2020
 ms.topic: article
