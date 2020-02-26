@@ -2,7 +2,7 @@
 # required metadata
 
 title: Help system
-description: This topic provides an overview of the Help system.
+description: Get an overview of the Help system for the Finance and Operations apps.
 author: edupont04
 manager: AnnBe
 ms.date: 02/26/2020
@@ -36,10 +36,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Users of the following products can get access to context-sensitive Help and other content based on the same Help system:
 
-- Dynamics 365 Finance
 - Dynamics 365 Commerce
-- Dynamics 365 Supply Chain Management
+- Dynamics 365 Finance
 - Dynamics 365 Human Resources
+- Dynamics 365 Supply Chain Management
 
 You can access product-specific help from the Help pane in all products.  
 
@@ -49,8 +49,8 @@ You can access product-specific help from the Help pane in all products.
 
 The docs.microsoft.com site ([docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/)) is the default source of product documentation for the applications listed above. The site offers the following features:
 
-- **Access to the most up-to-date content** – The site gives us a faster and more flexible way to create, deliver, and update product documentation. This way, we are better able to give you access to the latest technical information.
-- **Content that is written by experts** – The site provides a richer set of product documentation that can be enhanced by community members both inside and outside Microsoft.
+- **Access to the most up-to-date content** – The site gives us a faster and more flexible way to create, deliver, and update product documentation. This way, you have easy access to the latest technical information.
+- **Content that is written by experts** – Content on the site is open to contributions by community members both inside and outside Microsoft.
 
 You can also find our content with any search engine. We recommend that for best results, you use a site search, such as `site:docs.microsoft.com dynamics 365 "search term"`.
 
@@ -90,7 +90,7 @@ For more information, see the [Docs Contributor Guide](https://docs.microsoft.co
 
 A Task guide is a controlled, guided, interactive experience that leads you through the steps of a task, or business process. You can open (play) a Task guide from the Help pane. When you first click a Task guide, the Help pane will show the step-by-step instructions for the task. Localized Task guides are available.
 
-Microsoft shipped Task guide libraries for releases through December 2017 for Dynamics 365 for Finance and Operations. The section [Help system](help-overview.md#accessing-task-guides-from-the-help-pane) describes how to find the correct Task guides for your product.
+Microsoft shipped Task guide libraries for releases through December 2017 for Dynamics 365 for Finance and Operations. The section [Accessing Task guides from the Help pane](#accessing-task-guides-from-the-help-pane) describes how to find the correct Task guides for your product.
 
 ![Task guide reading view](./media/task-guide-ops.png)
 
@@ -107,23 +107,22 @@ You can use Task recorder to create your own custom Task guides. For more inform
 
 Some fields have field descriptions to help users get unblocked. To help users get started, get unblocked, and learn more, the in-product Help pane provides context-sensitive access to content.  
 
-To access Help content, click the **Help** (**?**) icon and then choose Help. Alternatively, press Ctrl+Shift+?. In both cases, the Help pane opens. From the Help pane, you can access conceptual articles or Task guides that are relevant to the product area that you are accessing Help from.
+To access Help content, click the **Help** (**?**) icon and then choose Help or press Ctrl+Shift+?. In both cases, the Help pane opens. From the Help pane, you can access conceptual articles or Task guides that are relevant to the product area that you currently in.
 
 ![Help pane](./media/help-pane-ops-help.png)
 
 ### Accessing help topics from the Help pane
 
-From the Help pane, you can access articles that apply to the client. When you first open the Help pane and click the **Help** tab, you'll see the articles that apply to the page that you're currently on. If no articles are found, you can enter keywords to refine your search. Choose an article in the Help pane, and a new tab opens in your browser and displays the article.
+From the Help pane, you can access articles that apply to the client. When you first open the Help pane, the **Help** tab shows the articles that apply to the page that you're currently on. If no articles are found, you can enter keywords to refine your search. Choose an article in the Help pane, and a new tab opens in your browser and displays the article.
 
 > [!IMPORTANT]
 > This section does not apply to Dynamics 365 Human Resources. The Help system for Human Resources is automatically connected to Task guides for the product. Also, you cannot create custom Task guides for Human Resources.
 
-
 ### Accessing Task guides from the Help pane
 
-Before you can access Task guides from the Help pane, a System administrator has to go to the **System parameters** page in Finance, Supply Chain Management, and Commerce and configure some settings.
+Before you can access Task guides from the Help pane, a System administrator has to go to the **System parameters** page in Finance, Supply Chain Management, or Commerce and configure some settings. For more information, see [Adding Task guides](help-connect.md#adding-task-guides).
 
-> [!NOTE]
+<!--> [!NOTE]
 > - In order to configure help, you must be signed in with an account in the same tenant as the tenant in which the app is deployed.
 > - It is not possible to connect to an LCS library from an instance of the app running in a local virtual hard drive (VHD).
 
@@ -137,7 +136,7 @@ On the **System parameters** page, follow these steps:
 
 2. Select the Lifecycle Services project to connect to.
 3. Select BPM libraries (within the selected project) to retrieve task recordings from.
-4. Set the display order of the BPM libraries. This setting determines the order in which task recordings from the libraries will appear in the Help pane.
+4. Set the display order of the BPM libraries. This setting determines the order in which task recordings from the libraries will appear in the Help pane.-->
 
 After a System administrator has completed these steps, you can open the Help pane and click the **Task guides** tab. You'll now see the Task guides that apply to the page that you're currently on. If no Task guides are found, you can enter keywords to refine your search. After you click a Task guide in the Help pane, the Help pane shows the step-by-step instructions, and you can play the task guide.
 
@@ -159,17 +158,15 @@ You can create help for your users by creating custom Task guides, or connect yo
 
 ## Additional resources
 
-- [Task recorder resources](../../dev-itpro/user-interface/task-recorder.md)
-
 The following table lists our websites. Sites that have an asterisk (\*) next to the name require that you sign in by using an account that is associated with a service plan.
 
-| Site                                                                                           | Description |
-|------------------------------------------------------------------------------------------------|-------------|
-| [Docs.microsoft.com](/dynamics365/)                                                            | Hosts or links to all product documentation for Dynamics 365. |
-| [Microsoft Learn](https://docs.microsoft.com/learn/)                                           | Microsoft's free eLearning site. |
-| [Lifecycle Services](https://lcs.dynamics.com/)\*                                              | Provides a cloud-based collaborative workspace that customers and partners can use to manage projects from pre-sales to implementation and operations. This site is useful in all phases of an implementation. |
-| [Support blog](https://aka.ms/AXSupportBlog)                                                    | Provides tips and tricks that are posted by the Support team. |
+| Site     | Description |
+|----------|-------------|
+| [Docs.microsoft.com](/dynamics365/)   | Hosts or links to all product documentation for Dynamics 365. |
+| [Microsoft Learn](https://docs.microsoft.com/learn/)     | Microsoft's free eLearning site. |
+| [Lifecycle Services](https://lcs.dynamics.com/)\*    | Provides a cloud-based collaborative workspace that customers and partners can use to manage projects from pre-sales to implementation and operations. This site is useful in all phases of an implementation. |
+| [Support blog](https://aka.ms/AXSupportBlog)   | Provides tips and tricks that are posted by the Support team. |
 | [Docs.microsoft.com/previous versions](/previous-versions/dynamics/) | Hosts content from previous releases. |
-| [Dynamics Community](https://community.dynamics.com/)                                          | Hosts blogs, forums, and videos. |
-| [Microsoft.com/dynamics365/](https://www.microsoft.com/dynamics365/home)                       | Provides evaluation and sales information. |
-| [CustomerSource](https://mbs.microsoft.com/customersource/)\*                                  | Hosts training resources, downloadable reports, and white papers, and is the primary support site for service plan holders. May require a service plan to access some resources on the site. |
+| [Dynamics Community](https://community.dynamics.com/)   | Hosts blogs, forums, and videos. |
+| [Microsoft.com/dynamics365/](https://www.microsoft.com/dynamics365/home)   | Provides evaluation and sales information. |
+| [CustomerSource](https://mbs.microsoft.com/customersource/)\*    | Hosts training resources, downloadable reports, and white papers, and is the primary support site for service plan holders. May require a service plan to access some resources on the site. |

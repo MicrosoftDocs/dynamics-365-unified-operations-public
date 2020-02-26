@@ -2,10 +2,10 @@
 # required metadata
 
 title: Connect the Help system
-description: This topic describes the components of the Help system for certain Dynamics 365 apps, and provides an overview of how to connect them and a summary of how to create custom help. 
+description: Learn about the components of the Help system for certain Dynamics 365 apps. Get an overview of how to connect them and a summary of how to create custom help. 
 author: margoc
 manager: AnnBe
-ms.date: 02/18/2020
+ms.date: 02/26/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,20 +34,26 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the components of the Help system for Finance and Operations apps, such as Dynamics 365 Finance, Supply Chain Management, Commerce, and Human Resources. It provides an overview of how to connect these components and a summary of how to create custom help.
+In this article, you find an overview of the components of the Help system for Finance and Operations apps, such as Dynamics 365 Finance, Supply Chain Management, Commerce, and Human Resources. You can also learn how to connect these components and a summary of how to create custom help.  
 
 ## Help architecture
 
-The Finance and Operations apps come with conceptual overviews and other articles that publish to the [https://docs.microsoft.com/dynamics365/](/dynamics365/) site. This location is then accessible from the in-product Help pane. The following illustration shows the parts of the Help system. The in-product Help system pulls articles from https://docs.microsoft.com and other connected websites, as well as task guides stored in Business Process Modeler in Lifecycle Services (LCS).
+The Finance and Operations apps come with conceptual overviews and other articles that publish to the [https://docs.microsoft.com/dynamics365/](/dynamics365/) site. This content is then accessible from the in-product Help pane. The following illustration shows the parts of the Help system.  
 
 [![Help architecture](./media/help-architecture.png)](./media/help-architecture.png)
+
+The in-product Help system pulls articles from https://docs.microsoft.com and other connected websites, as well as task guides stored in Business Process Modeler in Lifecycle Services (LCS).
 
 ## Adding Task guides
 
 > [!NOTE]
-> The **Task guides** tab is currently not available in Dynamics 365 Human Resources or Commerce. <!--We are currently working to enable this functionality in a future release.--> The Task guides in the Getting Started experience in Human Resources remain available to cover basic functionality. Procedural help is also available on the [https://docs.microsoft.com/dynamics365/](/dynamics365/) site for both Human Resources and Commerce.
+> The **Task guides** tab is currently not available in Dynamics 365 Human Resources or Commerce. <!--We are currently working to enable this functionality in a future release.--> The Task guides in the Getting Started experience in Human Resources remain available to cover basic functionality. For both Human Resources and Commerce. procedural help is also available on the [https://docs.microsoft.com/dynamics365/](/dynamics365/) site.
 
 Using the **System Parameters** page, system administrators can configure access to the relevant task guide libraries for an implementation.
+
+> [!NOTE]
+> - In order to configure help, you must be signed in with an account in the same tenant as the tenant in which the app is deployed.
+> - It is not possible to connect to an LCS library from an instance of the app running in a local virtual hard drive (VHD).
 
 [![System Parameters form with Help settings](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png)
 
@@ -60,13 +66,13 @@ To configure task guides for a solution, on the **System parameters** page, foll
 
 1. Select the Lifecycle Services project to connect to.
 2. Select the BPM libraries (within the selected project) to retrieve task recordings from.
-3. Set the display order of the BPM libraries. This determines the order in which task recordings from the libraries will appear in the **Help** pane.
+3. Set the display order of the BPM libraries to define the order in which task recordings from the libraries will appear in the **Help** pane.
 
 After you complete these steps, you can open the **Help** pane and click the **Task guides** tab. You'll now see the task guides that apply to the page that you're currently on in Finance and Operations apps. If no task guides are found, you can enter keywords to refine your search.
 
 ### Showing translated task guides
 
-Translated Task guides were first shipped in the May 2016 APQC Unified Library, and the Getting Started library. In the relevant Dynamics 365 app, to see localized Task guide help, make sure that you are connected to the May library. The language that a Task guide appears in is controlled for each user by the Language settings under **Options** &gt; **Preferences**.
+Translated Task guides were first shipped in the May 2016 APQC Unified Library, and the Getting Started library. To see localized Task guide help, make sure that your Dynamics 365 solution is connected to the May library. Users can change the language that a Task guide appears in by changing the Language settings under **Options** &gt; **Preferences**.
 
 > [!NOTE]
 > Even though many Task guides have been translated, right now the client is not showing the translated Task guide names. Also, only the task guides that were released in February 2016 are available in translation in the May library. We will release an updated library with additional translations.
@@ -80,17 +86,17 @@ You can use task guides to create custom help, or connect a custom help website 
 
 ### Create custom help with task guides
 
-You can create custom help for Finance, Supply Chain Management, and Commerce by creating task recordings that reflect your implementation, and saving them to an LCS Business Process Library. You cannot create custom task guides for Human Resources.
+You can create custom help for the supported apps by creating task recordings that reflect your implementation, and saving them to an LCS Business Process Library. You cannot create custom task guides for Human Resources.
 
-For partners, if you promote a library to be a corporate library, and include it in a solution, it will be available to your customers. You can also make a copy of the APQC Unified global library, and then open your copy, open task recordings from it, modify them, and save the recordings with your changes. For more information, see [Task recorder resources](../../dev-itpro/user-interface/task-recorder.md).
+As a partner, if you promote a library to be a corporate library, and include it in a solution, it will be available to your customers. You can also make a copy of the APQC Unified global library, and then open the task recordings in the copy, modify them, and save the recordings with your changes. For more information, see [Task recorder resources](../../dev-itpro/user-interface/task-recorder.md).
 
 ### Connect a custom help site
 
 Finance and Operations apps are rarely used out-of-the-box. Rather, the solution is customized and extended to fit the organization's needs. Similarly, you can customize and extend the Help experience, including adding custom help to the in-product Help pane.  
 
-Microsoft has provided a toolkit to help you deploy and connect custom Help to the Help pane. In [Custom Help Overview](../../dev-itpro/help/custom-help-websites.md), you can read about how you can set up a custom Help solution by publishing content as HTML to a website, making the content searchable, and extending the Help pane to connect to the website.  
+Microsoft has provided a toolkit to help you deploy and connect custom Help to the Help pane. In [Custom Help Overview](../../dev-itpro/help/custom-help-overview.md), you can read about how you can set up a custom Help solution that is connected to the Help pane.  
 
-If you want to collaborate with Microsoft on tools and processes for customizing help, please fill in the form at [https://aka.ms/customhelpfeedback](https://aka.ms/customhelpfeedback).  
+If you want to collaborate with Microsoft on tools and processes for customizing help, fill in the form at [https://aka.ms/customhelpfeedback](https://aka.ms/customhelpfeedback).  
 
 ## See also
 
