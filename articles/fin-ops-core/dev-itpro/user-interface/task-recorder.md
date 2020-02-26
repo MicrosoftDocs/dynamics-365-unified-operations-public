@@ -38,9 +38,9 @@ This topic describes how to use Task recorder to record client functions.
 
 ## Overview
 
-### The new Task recorder
+### The Task recorder
 
-Task recorder has been rebuilt from the ground up. The focus of the rebuild was on high responsiveness, a flexible extensibility application programming interface (API), and seamless integration with consumers of business process recordings. Integration of Task recorder with the [Business process modeler (BPM)](https://bpm.lcs.dynamics.com) tool in Microsoft Dynamics Lifecycle (LCS) has been kept, so that users can continue to produce rich business process diagrams from recordings, and use them to analyze and design their applications.
+Task recorder for Finance and Operations has been rebuilt from the ground up since Dynamics AX 2012. The focus of the rebuild was on high responsiveness, a flexible extensibility application programming interface (API), and seamless integration with consumers of business process recordings. Integration of Task recorder with the [Business process modeler (BPM)](https://bpm.lcs.dynamics.com) tool in Microsoft Dynamics Lifecycle (LCS) has been kept, so that users can continue to produce rich business process diagrams from recordings, and use them to analyze and design their applications.
 
 Task recorder can now automatically generate application regression tests from business process recordings and play back previously recorded processes. These new features also include new gestures that let users take full advantage of the powerful new Task recorder.
 
