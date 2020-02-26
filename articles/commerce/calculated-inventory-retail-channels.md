@@ -5,7 +5,7 @@ title: Calculate inventory availability for retail channels
 description: This topic describes the options that are available for showing the on-hand inventory for the store and online channels.
 author: hhainesms
 manager: annbe
-ms.date: 02/11/2020
+ms.date: 02/25/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -107,7 +107,9 @@ To update the servers, follow these steps.
 1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
 1. Run the **1070** (**Channel configuration**) job.
 
-After the configuration is completed, the information that is provided about physically available inventory no longer uses a real-time service call when a user in the POS application uses the **Inventory lookup** operation. Instead, data about physically available inventory for the current store and all the stores in the fulfillment group is calculated based on the last-known snapshot that was delivered to the channel database from Commerce Headquarters. The snapshot value is further refined by the channel-side calculation to adjust the physically available value, based on additional sales or return transactions that exist for the selected product in the channel database and that are included in the last synchronized snapshot from the 1130 job. If the channel database doesn't contain transactional data for any of the warehouses or stores in the fulfillment group, it contains no additional transactions that can be factored into a recalculation of the value. Therefore, the best estimate of on-hand inventory that can be shown for those warehouses or stores is the data from the last-known snapshot.
+After the configuration is completed, the information that is provided about physically available inventory no longer uses a real-time service call when a user in the POS application uses the **Inventory lookup** operation (standard and matrix views). Instead, data about physically available inventory for the current store and all the stores in the fulfillment group is calculated based on the last-known snapshot that was delivered to the channel database from Commerce Headquarters. The snapshot value is further refined by the channel-side calculation to adjust the physically available value, based on additional sales or return transactions that exist for the selected product in the channel database that were not included in the last synchronized snapshot from the 1130 job. If the channel database doesn't contain transactional data for any of the warehouses or stores in the fulfillment group, it contains no additional transactions that can be factored into a recalculation of the value. Therefore, the best estimate of on-hand inventory that can be shown for those warehouses or stores is the data from the last-known Commerce Headquarters snapshot.
+
+The **Order fulfillment** screens of POS also leverage the channel side calculation to show on-hand inventory for items when an order fulfillment line is selected and a user views the **Details** panel for on-hand inventory for the selected item.
 
 ## Optimize your inventory data
 
@@ -121,6 +123,6 @@ To ensure the best possible estimate of inventory, it's critical that you use th
 - **1130 (Product availability)** – This job is found on the **Distribution schedules** page and should be run immediately after the **Product availability** job. This job transports the inventory snapshot data from Commerce Headquarters to the channel databases.
 
 > [!NOTE]
-> For performance reasons, when channel-side inventory availability calculations are used to make an inventory availability request, the calculation uses a cache to determine whether enough time has passed to justify running the logic again. The default cache is set to 60 seconds. For example, you turned on channel-side calculation for your store and looked at the on-hand inventory for a product on the **Inventory lookup** page. If one unit of the product is then sold, the **Inventory lookup** page won't show the reduced inventory until the cache has been cleared. After users post transactions in POS, they should wait 60 seconds before they verify that the on-hand inventory has been reduced.
+> For performance reasons, when channel-side inventory availability calculations are used to make an inventory availability request using the e-Commerce API's or the new POS channel-side inventory logic, the calculation uses a cache to determine whether enough time has passed to justify running the calculation logic again. The default cache is set to 60 seconds. For example, you turned on channel-side calculation for your store and viewed the on-hand inventory for a product on the **Inventory lookup** page. If one unit of the product is then sold, the **Inventory lookup** page won't show the reduced inventory until the cache has been cleared. After users post transactions in POS, they should wait 60 seconds before they verify that the on-hand inventory has been reduced.
 
 If your business scenario requires a smaller cache time, contact your product support representative for help.
