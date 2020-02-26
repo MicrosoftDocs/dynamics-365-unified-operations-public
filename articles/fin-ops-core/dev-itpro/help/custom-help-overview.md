@@ -5,7 +5,7 @@ title: Deploy your custom Help
 description: Learn how to extend the Microsoft Help to reflect your solution and then connect that to the Help pane in Finance and Operations apps. 
 author: edupont04
 manager: AnnBe
-ms.date: 02/25/2020
+ms.date: 02/26/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -45,7 +45,7 @@ You can connect solution-specific and customer-specific help content with the [H
 
 Depending on the customer's solution, Help content can come from different sources. In the following, we assume that you are a consultant from a Dynamics 365 partner who wants to add custom Help to their customer's solution. You also want to connect the customer's Help solution with the in-product Help pane. We start with a simple scenario and then show two slightly more complex variants.  
 
-For the sake of simplicity, we're assuming that the customer uses a solution based on Dynamics 365 Supply Chain Management with a large module added by you. There are no significant customizations of the core product functionality, and the users do not use task guides.  
+For the sake of simplicity, we're assuming that the customer uses a solution based on Dynamics 365 Supply Chain Management with a large module added by a partner that you work for. There are no significant customizations of the core product functionality, and the users do not use task guides.  
 
 In this simplified scenario, you deploy conceptual Help to a website that describes your customizations. You then connect that website to the in-product Help pane as illustrated in the following diagram.  
 
@@ -63,7 +63,7 @@ In the first variant, the partner makes significant customizations of the core p
 
 ### Variant 2
 
-In the second variant, one partner makes significant customizations of the core product and also customizes Microsoft's Help. they then deploy the customized Help and Help for their own functionality to their own website. The customer also uses a module provided by another partner, who has published their content to a different website. So the internal administrator decides to connect both websites to their solution's Help pane.
+In the second variant, one partner makes significant customizations of the core product and also customizes Microsoft's Help. They then deploy the customized Help and Help for their own functionality to their own website. The customer also uses a module provided by another partner, who has published their content to a different website. So the internal administrator decides to connect both websites to their solution's Help pane.
 
 :::image type="content" source="../media/help-architecture-custom3.png" alt-text="Diagram showing the Help pane with two custom help websites connected and no task guides.":::
 

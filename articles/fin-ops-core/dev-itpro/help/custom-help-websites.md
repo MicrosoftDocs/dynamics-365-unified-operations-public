@@ -5,7 +5,7 @@ title: Deploy a custom Help website hosted in Azure
 description: This topic describes how you can extend the Microsoft Help to reflect your solution and then connect that to the Help pane in Finance and Operations apps. 
 author: edupont04
 manager: AnnBe
-ms.date: 02/18/2020
+ms.date: 02/26/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -53,7 +53,11 @@ There are several different ways of getting your content hosted on Azure. In [Ex
 
 ### Content and search indexing
 
-In order to make links to your custom help available in the in-product Help pane, the content must be discoverable. This means customizing the Help pane to consume the content through a search index. In [Example of Deploying Custom Help on Azure](walkthrough-help-azure.md), the search index is based on JSON files that are generated from the HTML files with your custom help content. You then make a search services generate a map of the content as defined by these JSON files. This search index is then used by the in-product Help pane to generate context-sensitive links to content based on where the user is in the product's user interface.  
+In order to make links to your custom help available in the in-product Help pane, the content must be discoverable. The in-product Help pane generates links to context-sensitive content based on a search string that is sent to the configured Help websites. The search string includes information about the form that the Help pane was activated from and searches for content that contains that form as part of the article's metadata.  
+
+Your custom Help website must be able to return relevant links based on the metadata in the search query. This means customizing the Help pane to consume the content through a search index.  
+
+All websites support searches using different technologies. In [Example of Deploying Custom Help on Azure](walkthrough-help-azure.md), the search index is based on JSON files that are generated from the HTML files with your custom help content. You then make a search service generate a map of the content as defined by these JSON files. This search index is then used by the in-product Help pane to generate context-sensitive links to content based on where the user is in the product's user interface.  
 
 ## Reuse Dynamics AX 2012 content
 

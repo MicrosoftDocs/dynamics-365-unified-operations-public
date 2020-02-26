@@ -5,7 +5,7 @@ title: Example of Deploying Help on Azure
 description: This topic walks you through an example of how you can deploy Dynamics 365 Help content to an Azure web app. 
 author: edupont04
 manager: AnnBe
-ms.date: 02/04/2020
+ms.date: 02/26/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -42,7 +42,13 @@ But in this section, we will take your through the steps for setting up a web ap
 
 ## Get started
 
-First, you must clone the GitHub repo with the [Custom Help Toolkit](custom-help-toolkit.md). The toolkit is available at [https://github.com/microsoft/dynamics365f-o-custom-help/](https://github.com/microsoft/dynamics365f-o-custom-help/).  
+First, you must have content that you want to deploy to a website so that it can be accessed by the in-product Help pane. You can include a copy of Microsoft's content in your website, or you can deploy content that only describes your own functionality. For different scenarios of how how custom help matches the concrete solutions, see [Custom Help Overview](custom-help-overview.md).  
+
+If you want to include Microsoft's content, you must clone the GitHub repo manually or by using the [Custom Help Toolkit](custom-help-toolkit.md). The toolkit is available at [https://github.com/microsoft/dynamics365f-o-custom-help/](https://github.com/microsoft/dynamics365f-o-custom-help/).  
+
+If you want to publish just your own content, you must have it available as HTML files. In [Extend, Customize, and Collaborate on the Help](contributor-guide.md), we suggest that you do what we do on the docs.microsoft.com sites: Create the content in MarkDown files and then use DocFx.exe to generate HTML files. The [HTML From Repos Generator tool](custom-help-toolkit-HtmlFromRepoGenerator.md) can help you prepare the HTML files even if you do not fork Microsoft's content.  
+
+### Deploy the content to Azure
 
 In the following we assume that you have an Azure account and a valid subscription. If you don't have an [Azure subscription](/azure/guides/developer/azure-developer-guide#understanding-accounts-subscriptions-and-billing), create an account before you begin. You can start with a free account for 12 months. For more information, see [Create your Azure free account today](https://azure.microsoft.com/free/).  
 
@@ -58,7 +64,7 @@ The general process for creating your Azure resources consists of the following 
 
     - The Storage account stores JSON files  
 
-        The JSON files are your Help files converted to JSON and are used to generate an index of your content for search purposes.  
+        The JSON files are your Help files converted to JSON so tht they can used to generate an index of your content for search purposes. For more information, see [Content and search indexing](custom-help-websites.md#content-and-search-indexing).  
 
     - The Search service performs indexing  
 
@@ -109,7 +115,7 @@ Next, you add the HTML files to the web app. You can use an FTP client such as F
 
 Next, you will create a storage account with a Blob container that will store JSON files that are used by the search service that you will [create](#searchservice) and [configure](#searchconfig) later.
 
-These JSON files can be generated from your Help files by the ConvertHtmlToJson tool that is part of the Custom Help Toolkit. For more information, see [Custom Help Toolkit: The Convert HTML To JSON tool](custom-help-toolkit-ConvertHtmlToJson.md).
+You can generate these JSON files from your Help files with the ConvertHtmlToJson tool that is part of the Custom Help Toolkit. For more information, see [Convert HTML To JSON tool](custom-help-toolkit-ConvertHtmlToJson.md).
 
 ### To create storage for the JSON files
 
@@ -153,17 +159,17 @@ In the previous section, you created a search service. You must now configure it
 
 1. In Postman, create a new POST request that has the following parameters:
 
-    - URL: https://AzureSearchServicename.search.windows.net/datasources?api-version=2017-11-11 
+    - **URL**: https://[AzureSearchServicename].search.windows.net/datasources?api-version=2017-11-11 
 
-        Replace *AzureSearchServicename* with the name of your search service.
-    - Type (on the Authorization tab): No Auth
-    - Content-Type (on the Headers tab): application/json
-    - api-key (on the Headers tab): The admin key found in your Azure Search service
+        Replace *[AzureSearchServicename]* with the name of your search service.
+    - **Type** (on the Authorization tab): No Auth
+    - **Content-Type** (on the Headers tab): application/json
+    - **api-key** (on the Headers tab): The admin key found in your Azure Search service
 2. On the Body tab, paste the following text.
 
     ```
     {
-        "name" : "datasourcename",
+        "name" : "[datasourcename]",
         "type" : "azureblob",
         "credentials" : { "connectionString" : "DefaultEndpointsProtocol=https;AccountName=[StorageAccountName];AccountKey=[key];EndpointSuffix=core.windows.net" },
         "container" : { "name" : "[JSONStorageContainerName]" }
@@ -171,10 +177,10 @@ In the previous section, you created a search service. You must now configure it
 
     ```
     Replace the following parameters with the relevant values:  
-        - *datasourcename*: Specify a name for the data source, such as *customhelpdatasource*.  
-        - [*StorageAccountName*]: Specify the storage account name, such as *customhelpstorage*.  
-        - [*key*]: Specify the access key for your storage account, such as */Equl2ErBeArcbW8mxQdFDRP9fxPcnNOaUayMqfgxiZ6h/LhKSUchTf0m6Z8HgBOTBzUdaPvQu4bpdflej p6w==*.  
-        - [*JSONStorageContainerName*]: Specify the name of your BLOB container, such as *customhelpcontainer*.  
+        - **[datasourcename]**: Specify a name for the data source, such as *customhelpdatasource*.  
+        - **[StorageAccountName]**: Specify the storage account name, such as *customhelpstorage*.  
+        - **[key]**: Specify the access key for your storage account, such as */Equl2ErBeArcbW8mxQdFDRP9fxPcnNOaUayMqfgxiZ6h/LhKSUchTf0m6Z8HgBOTBzUdaPvQu4bpdflej p6w==*.  
+        - **[JSONStorageContainerName]**: Specify the name of your BLOB container, such as *customhelpcontainer*.  
 3. Choose **Send**, and make sure that the value in the **Status** field is **201 Created**.  
 
 Next, you configure the search service to have an index of your content.
@@ -183,10 +189,10 @@ Next, you configure the search service to have an index of your content.
 
 1. In Postman, create a new POST request that has the following parameters:
 
-    - URL: https://[AzureSearchServicename].search.windows.net/indexes?api-version=2017-11-11 
-    - Type (on the Authorization tab): No Auth
-    - Content-Type (on the Headers tab): application/json
-    - api-key (on the Headers tab): The admin key found in your Azure Search service
+    - **URL**: https://[AzureSearchServicename].search.windows.net/indexes?api-version=2017-11-11 
+    - **Type** (on the Authorization tab): No Auth
+    - **Content-Type** (on the Headers tab): application/json
+    - **api-key** (on the Headers tab): The admin key found in your Azure Search service
 2. On the Body tab, paste the following text.
 
     > [!NOTE]
@@ -223,18 +229,18 @@ Next, you configure the search service to have an index of your content.
 
 1. In Postman, create a new POST request that has the following parameters:
 
-    - URL: https://[AzureSearchServicename].search.windows.net/indexers?api-version=2017-11-11
-    - Type (on the Authorization tab): No Auth
-    - Content-Type (on the Headers tab): application/json
-    - api-key (on the Headers tab): The admin key found in your Azure Search service  
+    - **URL**: https://[AzureSearchServicename].search.windows.net/indexers?api-version=2017-11-11
+    - **Type** (on the Authorization tab): No Auth
+    - **Content-Type** (on the Headers tab): application/json
+    - **api-key** (on the Headers tab): The admin key found in your Azure Search service  
 
 2. On the Body tab, paste the following text.
 
     ```
     {
-        "name" : "IndexerName",
-        "dataSourceName" : "DatasourceName",
-        "targetIndexName" : "IndexName",
+        "name" : "[IndexerName]",
+        "dataSourceName" : "[DatasourceName]",
+        "targetIndexName" : "[IndexName]",
         "schedule" : { "interval" : "PT10H" },
         "parameters" : { "configuration" : { "parsingMode" : "json" } },
         "fieldMappings" : [
@@ -249,9 +255,9 @@ Next, you configure the search service to have an index of your content.
 
 3. Replace the following parameters with the relevant values:
 
-    - IndexerName: Specify the name of the indexer that should be created, such as *indexerenus*.
-    - DatasourceName: Specify the name of the data source, such as *customhelpdatasource*.
-    - IndexName: Specify the name of the index, such as *indexenus*.
+    - **[IndexerName]**: Specify the name of the indexer that should be created, such as *indexerenus*.
+    - **[DatasourceName]**: Specify the name of the data source, such as *customhelpdatasource*.
+    - **[IndexName]**: Specify the name of the index, such as *indexenus*.
 
 4. Click Send, and make sure that the value in the **Status** field is *201 Created*.
 5. You may want to manually run the indexer from Azure Search Service for the first time.
