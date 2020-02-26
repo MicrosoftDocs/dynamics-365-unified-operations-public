@@ -33,18 +33,18 @@ ms.dyn365.ops.version: 10.0.4
 [!include [banner](../includes/banner.md)]
 
 1. Expand the **Tax component** node, and select the **Rate** node.
-2. In the **Value** field, enter the tax rate. The remaining fields are for determining the rate. In the standard GST configuration, there are several pre-defined fields including **HSN**, **SAC**, and **Consumption state**. You can select the fields that are relevant to your business to determine the rate. 
+2. In the **Value** field, enter the tax rate. The remaining fields are used to determine the rate. In the standard GST configuration, there are several pre-defined fields, including **Consumption state**, **HSN code**, and **SAC**. You can select the fields relevant to your business to determine the rate. 
 
     ![Tax rates](media/tax-rate.png)
 
-    Leaving any input fields as empty means all values are accepted. Using the following table as an example, the rate is 12% if *HSN* is 998313 no matter what the value of the *Party GST Registration Number* is. 
+    If you leave any input fields empty, then all values are accepted. For example, in the following table, if **HSN** is *998313* and  **Party GST Registration Number** is empty, then the rate is *12%*. 
 
-      | HSN    | Party GST Registration Number | Value |
+     | HSN    | Party GST Registration Number | Value |
      | ------ | ----------------------------- | ----- |
      | 998313 |                               | 12%   |
 
      > [!NOTE]
-     > Use the [Tax rate type](apac-ind-GST-create-tax-rate-type.md) instead of the HSN/SAC to determine the tax rate. You can import the [standard GST configurations](apac-ind-gst.md#gst-configurations) which support tax rate type, or you extend the earlier configuration by adding tax rate type into the lookup. Please note tax rate type is supported from 10.0.5.
+     > You can use the [Tax rate type](apac-ind-GST-create-tax-rate-type.md) instead of the HSN and SAC to determine the tax rate. You can also import the [standard GST configurations](apac-ind-gst.md#gst-configurations), which supports tax rate type, or you can extend the earlier configuration by adding tax rate type into the lookup. The tax rate type is supported as of Dynamics 365 Finance version 10.0.5 (October 2019).
 
 3. Select the **Reverse Charge Percentage** node, and in the **Value** field, enter the reverse charge percentage.
 
@@ -62,28 +62,26 @@ ms.dyn365.ops.version: 10.0.4
 
 ## Import/export tax setup
 
-Prepare the tax setup in Microsoft Excel, and then import the data in to the tax setup. 
+Prepare the tax setup in Microsoft Excel, and then import the data into the tax setup. 
 
 1. In the rate table, select **Export**. 
-2. Open the exported CSV file in Excel, and prepare the tax setup there.
+2. Open the exported CSV file in Excel, prepare the tax setup, and save the file.
 3. In the rate table, select **Import**, choose the file, and then load the data into the setup.
 
 ## Validate tax setup
 
-Any incorrect tax setup can cause severe problems afterward, and it's hard to detect. Common mistakes in tax setup include duplicates tax setup record, entering non-exist master data. 
+Incorrect tax setup can cause problems that are hard to detect. Common mistakes in tax setup include duplicate tax setup records or entering non-exist master data. 
 
 ### Duplicate tax setup records
 
-Duplicate tax setup refers to records with same input fields. Following is an example, the two records have the same input fields *HSN:998313, Party GST Registration Number:*, but they result into different value.
+Duplicate tax setup refers to records with the same values in input fields. Following is an example of two records with the same values for **HSN** and **Party GST Registration Number**, however, they result with two different values.
 
     | HSN    | Party GST Registration Number | Value |
     | ------ | ----------------------------- | ----- |
     | 998313 |                               | 12%   |
     | 998313 |                               | 15%   |
 
-To resolve and prevent this issue, enable **Tax setup validation** in [Feature Management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-
-With the feature enabled, the system will check for duplicates when you enter new data through the UI or when you import the tax setup from a CSV file. 
+To resolve and prevent this issue, enable **Tax setup validation** in [Feature Management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). With this feature enabled, the system will check for duplicates when you enter new data through the UI or when you import the tax setup from a CSV file. 
 
 To check for existing dupclicates, select **Show Duplicates**, and then delete the unwanted records.
 
