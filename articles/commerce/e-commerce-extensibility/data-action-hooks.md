@@ -58,7 +58,7 @@ yarn msdyn365 add-data-action get-address-hook
 
 Next, replace the file with the below template code and add the appropriate code to the event you are interested in.
 
-``typescript
+```typescript
 /*!
  * Copyright (c) Microsoft Corporation.
  * All rights reserved. See LICENSE in the project root for license information.
