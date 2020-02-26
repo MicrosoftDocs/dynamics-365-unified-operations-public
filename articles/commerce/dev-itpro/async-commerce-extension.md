@@ -37,11 +37,11 @@ ms.dyn365.ops.version: 10.0.10
 > [!NOTE]
 > This topic applies to Microsoft Dynamics 365 Commerce version 10.0.10 and later.
 
-This topic explains how to create new business logic (that is, application programming interfaces \[APIs\]) for the Commerce Runtime (CRT) by using the new asynchronous framework. The Commerce API framework now supports an asynchronous programming model for extensions and out-of-box Commerce handlers.	
+This topic explains how to create new business logic (application programming interfaces, or APIs) for the Commerce Runtime (CRT) by using the new asynchronous framework. The Commerce API framework now supports an asynchronous programming model for extensions and out-of-box Commerce handlers.	
 
-Before this framework enhancement was made, requests could be run only synchronously. Therefore, any long operations, such as input/output (I/O) operations, database queries, or network requests, blocked the execution thread. Now that support for the asynchronous model has been added to the Commerce runtime (CRT), you can use asynchronous versions of operations. Therefore, the execution thread is unblocked.	
+Before this framework enhancement was added, requests could be run only synchronously. Long operations, like input/output (I/O) operations, database queries, or network requests, blocked the execution thread. Now that support for the asynchronous model has been added to the Commerce runtime (CRT), you can use asynchronous versions of these operations. Asynchronous requests unblock the execution thread.	
 
-The Commerce API framework now supports the **Task** and **Task<T>** that are supported by the **async** and **await** keywords for the extension CRT request handlers. You should use the asynchronous Commerce API framework for all new extension APIs and the out-of-box asynchronous Commerce API in extensions.
+The Commerce API framework now supports the **Task** and **Task\<T\>** classes that are supported by the **async** and **await** keywords for the extension CRT request handlers. You should use the asynchronous Commerce API framework for all new extension APIs and the out-of-box asynchronous Commerce API in extensions.
 
 ## Async classes/interface added in the Commerce API framework:
 
