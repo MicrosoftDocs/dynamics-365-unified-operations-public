@@ -32,7 +32,7 @@ ms.dyn365.ops.version:
 
 # Digital asset management overview
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic provides an overview of digital asset management in Microsoft Dynamics 365 Commerce site builder.
 
