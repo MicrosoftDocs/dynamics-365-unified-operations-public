@@ -36,6 +36,10 @@ ms.dyn365.ops.version:
 
 This topic describes how to upload videos in Microsoft Dynamics 365 Commerce site builder.
 
+## Overview
+
+The Commerce site builder Media Library allows you to upload videos. You should always upload the version of a video with the highest bitrate and resolution, since the video will be automatically converted to be suitable for different viewports and their breakpoints.
+
 ## Upload a video
 
 If single video is being uploaded, you will be able to specify the following information in the **Upload Media Item** dialog box.
@@ -57,14 +61,7 @@ To upload a video in site builder, follow these steps.
 1. If you want to publish the image(s) after immediately upload, select the **Publish media items after upload** check box
 1. Select **OK**.
 
-If you are uploading multiple types of assets simultaneously (for example, images and videos), in the **Upload Media Item** dialog box you will only be able to specify the keywords, whether the files should be published immediately after upload, and whether closed captions should be automatically generated for video files. All the assets will share the same keywords.
-
-<!--
-![Video](./media/dam-screenshot4.png)
--->
-
-> [NOTE]
-> You should always upload the version of the video with highest bitrate and resolution. The video will be converted automatically to be suitable for different viewports and their breakpoints.
+If you are uploading multiple types of assets simultaneously (for example, images and videos), in the **Upload Media Item** dialog box you will only be able to specify keywords, whether the files should be published immediately after upload, and whether closed captions should be automatically generated for video files. All the assets will share the same keywords.
 
 ## Additional resources
 
