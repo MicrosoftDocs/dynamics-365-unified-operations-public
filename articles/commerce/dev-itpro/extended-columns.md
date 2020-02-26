@@ -2,7 +2,7 @@
 # required metadata
 
 title: Pre extended column in Channel Database
-description: This topic explains how the pre extended column in channel database is consumed for extensions.
+description: This topic explains how the pre-extended columns in the Channel Database are consumed for extensions.
 author: mugunthanm
 manager: AnnBe
 ms.date: 02/13/2020
@@ -34,15 +34,17 @@ ms.dyn365.ops.version: 10.0.10
 
 [!include [banner](../../includes/banner.md)]
 
-Some of the column are pre extended in channel database, it means the length of these columns are more than the column length in the D365 for Commerce HQ.
+Some columns in the Channel Database are pre-extended. Pre-extended means that the column length in the Channel Database is greater than the column length in Commerce HQ.
 
-Ex: The INVENTSERIALID field length in HQ database is 20 character but in channel database is 50 characters. The reason for this change is the channel database field column length are not extensible, and theses fields are mostly commonly extended, so field lengths are increased OOB to support extension scenarios, for extending other channel database field length please file an extension request or support ticket.
+For example, the **INVENTSERIALID** field length in the Commerce HQ database is 20 characters, but in channel database it is 50 characters. The reason for this change is the Channel Database field column length are not extensible, and theses fields are commonly extended, so field lengths are increased out-of-box to support extension scenarios. 
 
-Even though the fields are extended in channel database, extension must also **extend HQ database using the EDT extension model and the corresponding POS or CRT UI or request to support the inputs**.
+If you need to extend a field that is not already pre-extended, then you must file an extension request or support ticket.
 
-If the HQ database is not extended, then during the P-Job sync between channel and HQ database will be failed or the extra characters will be truncated. Similarly if the POS UI or CRT is not extended then POS UI or CRT validation will prevent entering more than the default character length, the default length is decided based on the base column length in HQ database.
+Even though the fields are extended in the Channel Database, your extension must also extend the field in the HQ database using the EDT extension model and extend the corresponding POS or CRT UI.
 
-Ex: The INVENTSERIALID field length in channel database is 50 characters but the POS UI to accept the serial number is only 20 characters long, so both the POS UI and HQ database must be extend to support this scenario.
+If the HQ database is not extended, then during the P-Job sync between Channel Database and HQ database will either fail or the extra characters will be truncated. Similarly if the POS UI or CRT is not extended then POS UI or CRT validation will prevent entering more than the default character length. The default length is determined by the base column length in HQ database.
+
+For example, suppose that the **INVENTSERIALID** field length in channel database is 50 characters, but the POS UI accepts serial number only up to 20 characters long. In this scenario, you must extend the field in both the POS UI and HQ database.
 
 Similarly the STREET field length in channel database is extend to 400 characters but there is validation in CRT will prevent accepting more than the default HQ database character length to overcome this extend both the CRT request handler (ValidateAddressLengthServiceRequest) and the HQ database to accept 400 characters for STREET field .
 
