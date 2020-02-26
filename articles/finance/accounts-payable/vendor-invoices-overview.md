@@ -94,6 +94,14 @@ This option assumes that at least one product receipt has been posted for the pu
 
 For more information, see [Record vendor invoice and match against received quantity](../accounts-payable/tasks/record-vendor-invoice-match-against-received-quantity.md).
 
+## Configure an automated task for vendor invoice workflow
+
+You can add an automated posting task to the Vendor invoice workflow so that invoices are processed in a batch. Posting invoices in a batch lets the workflow process continue without having to wait for the posting to finish, which improves the overall performance of all the tasks submitted to the workflow.
+
+The **Post the vendor invoice using a batch** task must not be used in the same workflow as the **Post vendor invoices** automated task. Also, the **Post the vendor invoice using a batch** task should be the last element in the workflow configuration.
+
+To post a vendor invoice in a batch, on the **Feature management** page, turn on the **Add an automated task to the Vendor invoice workflow for posting the vendor invoice using a batch job** parameter. Vendor invoice workflows are configured by going to **Accounts payable > Setup > Accounts payable workflows**. 
+
 ## Working with multiple invoices
 
 You can work with multiple invoices at the same time and post them all at the same time. If you must create multiple invoices, use the **Pending vendor invoices** page. If you must post and print multiple vendor invoices, use the invoice approval journal. If you're using the invoice approval journal, at least one product receipt must be posted for the purchase order, and an invoice for the purchase order must be posted in an invoice register. The financial information for the invoice comes from the invoice that was posted in the register.
