@@ -1,0 +1,90 @@
+---
+# required metadata
+
+title: What's new or changed in Dynamics 365 Finance version 10.0.10 Preview (April 2020)
+description: This topic describes features that are either new or changed in Dynamics 365 Finance version 10.0.8.
+author: roschlom
+manager: AnnBe
+ms.date: 02/03/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Developer, IT Pro
+# ms.devlang: 
+ms.reviewer: roschlom
+ms.search.scope:  Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: roschlom
+ms.search.validFrom: 2020-03-02 
+ms.dyn365.ops.version: 10.0.10
+
+---
+#Preview features in Dynamics 365 Finance version 10.0.10 Preview (March 2020)
+
+[!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
+This topic lists features that are new or changed for Microsoft Dynamics 365 Finance, preview version 10.0.9. This version has a build number of 10.0.383 and is available as follows:
+
+- **Preview release:** March 2020
+- **General availability (self-update):** April 2020
+- **Auto-update:** May 2020
+
+The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. 
+
+- [Budget planning query optimization for performance](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/budget-planning-query-optimization-performance)
+
+ - [Date range for Posted transactions by journals report](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/date-range-posted-transactions-journals-report)
+ 
+ - [Add Vendor ID, Customer ID, Vendor Name and Customer Name to the voucher transactions list page](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/add-vendor-id-customer-id-vendor-name-customer-name-voucher-transactions-list-page)
+ 
+ - [Prohibit submission to workflow when the invoice total and registered invoice total are not equal](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/prohibit-submission-workflow-when-invoice-total-registered-invoice-total-are-not-equal)
+ 
+ - [Update bank balances when posting transactions using advanced ledger entry](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/update-bank-balances-when-posting-transactions-using-advanced-ledger-entry)
+ 
+ - [Allow filtering the Tax 1099 detail report by reporting year](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/allow-filtering-tax-1099-detail-report-reporting-year)
+ 
+
+ 
+## Additional resources
+
+### Platform update 33
+
+Microsoft Dynamics 365 Finance 10.0.9 includes Platform update 33. To learn more, see [Preview features in Platform update 33](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-33.md).
+
+
+### Bug fixes and additional enhancements
+For information about the bug fixes included in each of the updates that are part of 10.0.7, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=400368&dbType=3&qc=8405de0733ac4045859057a4e710a3ef07637ce2485f6a317ea49efe6f67f35f).
+
+#### Add vendor ID and vendor name to the Posted projects list page
+Enabling this feature will display the Vendor ID and Vendor name on the **Posted projects list page** for any project-related purchase order expenses.
+
+#### Enable default accounting setup for project
+This feature will enable the ability to view and edit default accounting setup data, such as, default financial dimensions and sales tax groups from the project list page or the project contracts list page. When enabled, there will be a **Show default accounting** menu on the **Project** tab of the **All projects list page** and from the **Project contract** tab of the **Project contracts list page**. Clicking **Show default accounting** will open a side fact box form where you can view and manage specific accounting setup information from the list page instead of having to open the detailed form.
+
+### Dynamics 365: 2020 release wave 1 plan
+
+Wondering about upcoming and recently released capabilities in any of our business apps or platform?
+
+Check out the [Dynamics 365: 2020 release wave 1 plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+
+### Removed and deprecated features
+
+The [Removed or deprecated features](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
+
+- A *removed* feature is no longer available in the product.
+- A *deprecated* feature is not in active development and may be removed in a future update.
+
+Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
+
+For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
