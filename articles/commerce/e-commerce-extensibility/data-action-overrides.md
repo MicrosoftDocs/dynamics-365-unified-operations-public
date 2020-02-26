@@ -2,7 +2,7 @@
 # required metadata
 
 title: Data action overrides
-description: This topic describes how to call Microsoft Dynamics 365 Retail Server extension APIs from data actions or directly from module code.
+description: This topic describes how to overrride default module data actions with custom data actions.
 author: samjarawan
 manager: annbe
 ms.date: 02/20/2020
