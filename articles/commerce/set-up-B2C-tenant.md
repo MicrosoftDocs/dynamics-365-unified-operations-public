@@ -257,18 +257,25 @@ The following image shows an example of a default sign-in screen with a social i
 
 Once the Azure AD B2C provisioning steps above are completed, the Azure AD B2C application must be registered in your Dynamics 365 Commerce environment.
 
-To update headquarters with the new AAD B2C information, follow these steps.
+To update headquarters with the new Azure AD B2C information, follow these steps.
 
-1. In Commerce, go to **Retail and Commerce \> Commerce shared parameters**.
-1. Under **Identity Provider**, do the following:
+1. In Commerce, go to **Commerce Shared Parameters** and select **Identity Providers** in the left menu.
+1. Under **Identity Providers**, do the following:
     1. In the **Issuer** box, enter the identity provider issuer URL. To find your issuer URL, see [Obtain issuer URL](#obtain-issuer-url) below.
     1. In the **Name** box, enter a name for your issuer record.
-    1. In the **Type** box, enter **Azure AD B2C** (id_token).
-1. Under **Relying Parties**, do the following:
+    1. In the **Type** box, enter **Azure AD B2C (id_token)**.
+1. Under **Relying Parties**, with the above B2C identity provider item selected, do the following:
     1. In the **ClientID** box, enter your B2C application ID. You can find this in the **Application ID** box of your B2C application's properties page.
     1. In the **Type** box, enter **Public**.
     1. In the **User Type** box, enter **Customer**.
-1. Select **Disable Manual Number Sequence generation**.
+1. On the action pane, select **Save**.
+1. In the Commerce search box, search for **Number sequences** (Organization administration > Number sequences).
+1. Under the action pane, select **Edit** under **Maintain**.
+1. On the **General** fast tab, slect **No** for **Manual**.
+1. On the action pane, select **Save**. 
+1. In the Commerce search box, search for **Distribution schedule**
+1. Select job **1110: Global configuration** and the select **Run Now**.
+1. On the action pane, select **Save**. 
 
 ### Obtain issuer URL
 
