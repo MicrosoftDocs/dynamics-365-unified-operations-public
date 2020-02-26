@@ -259,7 +259,7 @@ Once the Azure AD B2C provisioning steps above are completed, the Azure AD B2C a
 
 To update headquarters with the new AAD B2C information, follow these steps.
 
-1. In Commerce, go to **Retail and Commerce \> Retail shared parameters**.
+1. In Commerce, go to **Retail and Commerce \> Commerce shared parameters**.
 1. Under **Identity Provider**, do the following:
     1. In the **Issuer** box, enter the identity provider issuer URL. To find your issuer URL, see [Obtain issuer URL](#obtain-issuer-url) below.
     1. In the **Name** box, enter a name for your issuer record.
