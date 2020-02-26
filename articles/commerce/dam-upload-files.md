@@ -2,7 +2,7 @@
 
 # required metadata
 
-title: Upload files
+title: Upload files other than images and videos
 description: This topic describes how to upload binary files other than images and videos in Microsoft Dynamics 365 Commerce site builder.
 author: psimolin
 manager: annbe
@@ -30,15 +30,15 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 
 ---
 
-# Upload files
+# Upload files other than images and videos
 
 [!include [banner](../includes/banner.md)]
 
 This topic describes how to upload files other than images and videos in Microsoft Dynamics 365 Commerce site builder.
 
-## Upload a file
+## Overview
 
-Digital asset management also supports the uploading of binary assets other than images or videos. For example, you might want to upload Microsoft Excel, Microsoft Word, Microsoft PowerPoint, or PDF documents.
+The Commerce site builder Media Library supports the uploading of binary assets other than images or videos. For example, you might want to upload Microsoft Excel, Microsoft Word, Microsoft PowerPoint, or PDF files.
 
 The following document types are supported:
 - 7Z
@@ -79,9 +79,11 @@ The following document types are supported:
 - XML
 - ZIP
 
-To upload a file to site builder, follow these steps.
+## Upload a file
 
-1. In the left navigation pane of Commerce site builder, select **Media Library**.
+To upload a file to Commerce site builder, follow these steps.
+
+1. In the left navigation pane, select **Media Library**.
 1. On the command bar, select **Upload \> Upload Media Items**.
 1. In File Explorer, select one or more files and then select **Open**.
 1. In the **Upload Media Item** dialog box, enter title, description, and keyword metadata as needed.
