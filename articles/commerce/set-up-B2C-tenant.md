@@ -5,7 +5,7 @@ title: Set up a B2C tenant in Commerce
 description: This topic describes how to set up your Azure Active Directory (Azure AD) business-to-consumer (B2C) tenants for user site authentication in Dynamics 365 Commerce.
 author: BrianShook
 manager: annbe
-ms.date: 02/28/2020
+ms.date: 02/26/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -148,8 +148,6 @@ To create a sign up and sign in user flow policy, follow these steps.
     |                        | User’s Object ID  |
 
 1. Select **Create**.
-1. Click the newly selected to verify [???]
-1. Select **Run user flow** to view the sign up/sign in domain for the policy. This will appear under **Select domain** (for example, fabrikam.b2clogin.com). 
 
 The following image an example of the Azure AD B2C sign up and sign in user flow.
 
@@ -274,8 +272,8 @@ To update headquarters with the new Azure AD B2C information, follow these steps
 1. On the **General** fast tab, slect **No** for **Manual**.
 1. On the action pane, select **Save**. 
 1. In the Commerce search box, search for **Distribution schedule**
-1. Select job **1110: Global configuration** and the select **Run Now**.
-1. On the action pane, select **Save**. 
+1. In the left navigation menu of the **Distribution schedules** page, select job **1110 Global configuration**.
+1. On the action pane, select **Run Now**.
 
 ### Obtain issuer URL
 
