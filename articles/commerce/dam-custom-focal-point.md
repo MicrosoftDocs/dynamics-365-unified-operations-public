@@ -38,7 +38,7 @@ This topic describes how to customize image focal points in Microsoft Dynamics 3
 
 # Overview
 
-When an image is uploaded to the Media Library, the system attempts to determine the focal point of the image. For example, if the image has a person on it, the system will set the focal point to the face of the person by default. In most cases the automatically set focal point works well for all viewports, but sometimes you might want to adjust the focal point to ensure that a specific part of the image is always visible.
+When an image is uploaded to the Commerce site builder Media Library, the system attempts to determine the focal point of the image. For example, if the image has a person on it, the system will set the focal point to the face of the person by default. In most cases the automatically set focal point works well for all viewports, but sometimes you may want to adjust the focal point to ensure that a specific part of the image is always visible.
 
 ### Define a custom focal point for an image
 
@@ -51,8 +51,6 @@ To define a custom focal point for an image, follow these steps.
 1. Under **Edit Mode**, select **Change Focal Point**. A circular focal point control appears over the image.
 1. Select the focal point control to move it over the desired focal point.
 1. When done, on the command bar select **Save**, and then select **Finish editing**.
-
-![Focal point](./media/dam-screenshot6.png)
 
 ## Additional resources
 
