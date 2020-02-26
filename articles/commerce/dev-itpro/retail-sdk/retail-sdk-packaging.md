@@ -67,7 +67,7 @@ There are two ways to generate a commerce deployable package. You can use the Co
 
 ## Retail SDK build tools – Customization settings
 
-Most of the configuration values that the Retail SDK uses to build and package customizations are set in the BuildTools\\Customization.setting files. These values define metadata that controls how binaries, components, and packages are named, versioned, and code-signed. After you define this metadata, the Retail SDK build system uses it to identify the customization assets and package them for all the Commerce components.
+Most of the configuration values that the Retail SDK uses to build and package customizations are set in the BuildTools\\Customization.settings files. These values define metadata that controls how binaries, components, and packages are named, versioned, and code-signed. After you define this metadata, the Retail SDK build system uses it to identify the customization assets and package them for all the Commerce components.
 
 The following configuration settings are available in the Customization.settings file:
 
@@ -77,16 +77,16 @@ The following configuration settings are available in the Customization.settings
 - **CustomName** – Specify the custom name for the assembly.
 - **CustomDescription** – Specify the description for the assembly.
 - **CustomPublisher** – Specify the publisher for the assembly.
-- **CustomPublisherDisplayName** – Specify the copyright for the assembly.
+- **CustomPublisherDisplayName** – Specify the publisher display name.
 - **SignAssembly** – Specify **True** to sign the assembly during the build.
 - **DelaySign** – Specify **True** to delay signing of the assets during the build.
 - **AssemblyOriginatorKeyFile** – Specify the strong name key to use to sign the assembly.
 - **ModernPOSPackageCertificateKeyFile** – Specify the Personal Information Exchange (PFX) file to use to sign Modern POS and Hardware station.
 - **RetailServerLibraryPathForProxyGeneration** – Specify the customized Commerce Scale Unit assembly to use for proxy generation (both TypeScript and C\# proxies).
 
-    For 7.1 and earlier versions, you must specify the name of the Retail Server assembly here.
+    For Retail SDK version '7.1' and earlier versions, you must specify the name of the Retail Server assembly here.
 
-    For 7.2 and later versions, use the commerce generator tool for proxy generation. However, if you're using the proxy on the e-commerce client side, specify the assembly name here.
+    For Retail SDK version '7.2' and later versions, use the commerce generator tool for proxy generation. However, if you're using the proxy on the e-commerce client side, specify the assembly name here.
 
 - The **ItemGroup** section includes the following settings:
 
@@ -145,9 +145,9 @@ For more details about Channel database extensions, see [Channel database extens
 
 ## Update the extension configuration files
 
-If you have any new extensions in CRT, Commerce Scale Unit, Hardware station, or proxy, you should register the details of the extension assemblies in the \<composition\> section of the relevant extension configuration file. You can find all the extension configuration files in the ...\\RetailSDK\\Assets folder. Because all extensions are loaded based on the information in the extension configuration files, you must register your assemblies there.
+If you have any new extensions in CRT, Commerce Scale Unit, Hardware station, or Retail proxies, you must register the details of the extension assemblies in the \<composition\> section of the relevant extension configuration file. You can find all the extension configuration files in the ...\\RetailSDK\\Assets folder. Because all extensions are loaded based on the information in the extension configuration files, you must register your assemblies there.
 
-Before you use the package, you must update the following configuration files if you have any customization in that area:
+Before you generate the package, you must update the following configuration files if you have any customization in that area:
 
 
 - **CommerceRuntime.Ext.config** – Register all your CRT extensions and dependent assemblies. Also this is where you need to include the Commerce Scale Unit extension dependent assemblies.
@@ -285,7 +285,7 @@ Some of the dependency packages and references have moved to NuGet packages to m
 
 ## Generate a commerce deployable package
 
-To generate the commerce deployable package, open the MSBuild build Command Prompt window. (On the developer virtual machine, search for **msbuild** on the **Start** menu.) Then run the following command.
+To generate the commerce deployable package, open a common prompt windows for MSBuild . (On the developer virtual machine, search for **msbuild** on the **Start** menu.) Then run the following command.
 
 ```Console
 msbuild /p:Configuration=Release
