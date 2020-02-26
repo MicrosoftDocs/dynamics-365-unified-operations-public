@@ -103,7 +103,7 @@ This topic provides information about functionality that supports Russian regula
 - [Working clothes/special rigging](rus-working-clothes-instruments-accounting.md)
 
 ### Printing forms
-- [Printing forms for fixed assets](printing-forms-fixed-assets)
+- [Printing forms for fixed assets](printing-forms-fixed-assets.md)
 
 ## Accounts payable and receivable
 - [Credit note corrections](rus-credit-note-correction.md)
