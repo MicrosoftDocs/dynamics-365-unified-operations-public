@@ -2,7 +2,7 @@
 # required metadata
 
 title: Removed or deprecated features in previous releases
-description: This topic describes features that have been removed, or that are planned for removal from of Dynamics 365 for Finance and Operations and previous releases.
+description: This topic describes features that have been removed, or that were planned for removal from Dynamics 365 for Finance and Operations and previous releases of that product.
 author: sericks007
 manager: AnnBe
 ms.date: 02/26/2019
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-> [!NOTE]
+> [!IMPORTANT]
 > This topic is no longer updated. To see a current list of features that have been removed or deprecated from Finance and Operations apps, search for **"Removed or deprecated features"** content that relates to the app you're using.
 
 This topic describes features that have been removed or deprecated from Dynamics 365 for Finance and Operations and previous releases of that product.
