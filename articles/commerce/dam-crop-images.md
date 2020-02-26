@@ -36,7 +36,11 @@ ms.dyn365.ops.version:
 
 This topic describes how to crop images in Microsoft Dynamics 365 Commerce site builder.
 
-## Crop an image in site builder
+## Overview
+
+The Commerce site builder Media Library allows you to crop images to optimize them for different module types and viewports.
+
+## Crop an image
 
 To crop an image in site builder, follow these steps.
 
@@ -49,12 +53,10 @@ To crop an image in site builder, follow these steps.
 1. Select the view type from the **View type** drop down menu.
 1. Select the image placement from the **Placement** drop down menu.
 1. Select the viewport size from the **Viewport** drop down menu.
-1. The image is overlaid with the area representing the crop region. Move and resize the crop region as needed. The aspect ratio is automatically maintained.
+1. The image is overlaid with the area representing the crop region. Move and resize the crop region as needed. The aspect ratio will be maintained automatically.
 1. When done, on the command bar select **Save**, and then select **Finish editing**. 
 
-![Custom crop](./media/dam-screenshot7.png)
-
-Custom cropping will be reflected on the image almost immediately.
+After custom cropping is completed, image modifications will take effect almost immediately.
 
 ## Additional resources
 
