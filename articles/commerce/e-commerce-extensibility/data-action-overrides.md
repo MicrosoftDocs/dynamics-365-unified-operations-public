@@ -29,6 +29,7 @@ ms.search.validFrom: 2020-01-22
 ms.dyn365.ops.version: Release 10.0.8
 
 ---
+
 # Data action overrides
 
 [!include [banner](../includes/banner.md)]
