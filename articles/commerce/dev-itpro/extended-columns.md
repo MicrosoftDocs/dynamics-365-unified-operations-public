@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Pre extended column in Channel Database
+title: Pre-extended columns in the Channel Database
 description: This topic explains how the pre-extended columns in the Channel Database are consumed for extensions.
 author: mugunthanm
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.10
 
 ---
 
-# Pre extended column in Channel Database
+# Pre-extended columns in the Channel Database
 
 [!include [banner](../../includes/banner.md)]
 
