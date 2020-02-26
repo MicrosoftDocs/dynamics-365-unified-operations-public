@@ -133,7 +133,11 @@ To turn off the bulk redirects in an uploaded redirect CSV file, follow these st
 
 [Manage robots.txt files](manage-robots-txt-files.md)
 
+[Set up a B2C tenant in Commerce](set-up-B2C-tenant.md)
+
 [Set up custom pages for user logins](custom-pages-user-logins.md)
+
+[Configure multiple B2C tenants in a Commerce environment](configure-multi-B2C-tenants.md)
 
 [Add support for a content delivery network (CDN)](add-cdn-support.md)
 
