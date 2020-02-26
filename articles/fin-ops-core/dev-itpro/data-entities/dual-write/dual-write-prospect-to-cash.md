@@ -106,9 +106,9 @@ New fields have been added to the **Order** entity and appear on the page. Most 
     + Picked
     + Cancelled
     
-    This table shows how the processing status is mapped to the CRM status code:
+    This table shows how the processing status is mapped to the **CRM status code**:
     
-    Processing Status   | CRM Statuscode 
+    Processing Status   | CRM Status code 
     --------------------|----------------
     Active              | New/Pending/Onhold
     Confirmed/Picked    | In Progress
