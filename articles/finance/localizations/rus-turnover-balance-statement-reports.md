@@ -235,3 +235,21 @@ On the **Report archive** page, you can view reports and download them in Excel 
 5. Select **Report output** to print the report.
 6. Select **Export to Microsoft Excel** to open the **Export to Excel** page, and then select **Download** to download the report in Excel format.
 7. Select **View** to view the report.
+
+## Pre-calculate transactional data
+
+You can pre-calculate transactional data to improve performance.
+
+1. Click **General ledger** \> **Ledger setup** \> **General ledger parameters**.
+2. On the **Ledger** tab, in the **Turnover balance statement** section, set the **Use pre-calculated data** option to **Yes**.
+3. Click **General ledger** \> **Periodic tasks** \> **Pre-calculate transactional data**.
+4. On the **Pre-calculate transactional data** page, on the **Parameters** FastTab, in the **Report type** field, select the type of the    report from the following:
+   - Customer turnover register
+   - Vendor turnover register
+   - General ledger
+   - Advance holder turnover register
+   
+   ![](media/11_Pre-calculate_transactional_data.jpg)
+   
+5. Click **OK** to pre-calculate transactional data.
+
