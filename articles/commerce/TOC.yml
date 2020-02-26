@@ -1082,6 +1082,8 @@
         items:
          - name: Document Reporting Services overview
            href: ../fin-ops-core/dev-itpro/analytics/document-reporting-services.md?toc=/dynamics365/commerce/toc.json
+         - name: Supported fonts
+           href: ../fin-ops-core/dev-itpro/analytics/supported-fonts.md?toc=/dynamics365/commerce/toc.json
          - name: Configure SSRS for on-premises deployments
            href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/commerce/toc.json
          - name: Printing
@@ -2058,6 +2060,8 @@
           href: dev-itpro/retail-sdk/retail-sdk-samples.md
         - name: Log extension events to Application Insights
           href: dev-itpro/commerce-application-insights.md
+        - name: Create async Commerce (CRT) APIs in your business logic
+          href: dev-itpro/async-commerce-extension.md
         - name: Pre-extended columns in the Channel Database
           href: dev-itpro/extended-columns.md
       - name: Payment connector extensibility
@@ -2076,6 +2080,8 @@
           href: payment-connector-data-fields.md
         - name: Enable duplicate payment protection for payment connector
           href: dev-itpro/duplicate-payment-protection.md
+        - name: Create payment packaging for Application Explorer in Service Fabric deployments
+          href: dev-itpro/payment-connector-package.md
       - name: Third-party e-Commerce extensibility
         items:
         - name: Configure online stores

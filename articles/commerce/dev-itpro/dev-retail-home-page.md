@@ -107,6 +107,7 @@ This page lists the resources that are available for IT pros and developers who 
 - [Add properties to sales orders](add-properties-sales-order.md)
 - [Manage secrets for retail channels](manage-secrets.md)
 - [Log extension events to Application Insights](commerce-application-insights.md)
+- [Create async Commerce (CRT) APIs in your business logic](async-commerce-extension.md)
 - [Pre-extended columns in the Channel Database](extended-columns.md)
 
 ## Retail SDK
@@ -138,3 +139,4 @@ This page lists the resources that are available for IT pros and developers who 
 - [Implementing a payment connector and payment device (white paper)](https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device_update.pdf)
 - [Create Windows installers for payment connectors](create-windows-installer-payment-connector.md)
 - [Deploy payment connectors](deploy-payment-connector.md)
+- [Create payment packaging for Application Explorer in Service Fabric deployments](payment-connector-package.md)
