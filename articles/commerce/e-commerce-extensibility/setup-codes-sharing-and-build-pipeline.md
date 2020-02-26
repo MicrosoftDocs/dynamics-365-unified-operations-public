@@ -174,4 +174,14 @@ Tools that you commonly use to build, test, and run JavaScript apps - like npm, 
 
 ![Agent Job logs](media/code-sharing-21.png)
 
-16. After the job is completed, download the deployable package.
+16. After the job is completed, you can download the deployable package by selecting the "Runs" tab in the **Pipelines** section, and select the run.
+
+![Pipeline runs](media/code-sharing-22.png)
+
+17. Select the **published** link under the **Artifacts:** section.
+
+![Published artifacts](media/code-sharing-23.png)
+
+18. Expand the "drop** folder to see the zip file that was created as part of the run.  The file can now be downloaded.
+
+![Published artifacts](media/code-sharing-24.png)
