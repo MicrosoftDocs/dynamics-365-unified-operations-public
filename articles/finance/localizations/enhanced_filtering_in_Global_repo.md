@@ -35,18 +35,17 @@ ms.dyn365.ops.version: AX 10.0.9
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes enhanced filtering capabilities for Regulatory Configuration services (RCS) Global repository, which have been improved to include the following filters: 
-- Country/region - based on ISO country codes  
-- Tags - for functional/feature area; Industry; Business document type 
+This topic describes enhanced filtering capabilities for Regulatory Configuration Services (RCS) Global repository, which have been improved to include the following filters: 
+- **Country/region** - based on ISO country codes  
+- **Tags** - for functional/feature area; Industry; Business document type 
 
-You can apply filters, either individually or in groups, to find specific or related configurations. For example, to find all configurable business documents related to vendor invoices, you can select and apply the **Business document type** filter to see all related configurations. 
+You can apply filters, either individually or in groups, to find specific or related configurations. For example, to find all configurable business documents related to vendor invoices, you can apply the **Business document type** filter. 
 
-You can also overlay a country/region code to further refine a search by selecting the country code and clicking **Apply filter**.  
-For example - Filtering section and options:
+You can further refine a search by selecting the country code and clicking **Apply filter**.  
 
 [![Filter section for Global repository](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/417079-enhanced-filtering/RCS_Enhanced%20filter_section.JPG)](./media/ER-ExtLookup-Lookup1.gif)
 
-Applied filtering on 'Business document type' = Vendor invoice: 
+The following example shows the results when filtering on **Business document type**. 
 
 [![Applied filter for business document type](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/417079-enhanced-filtering/RCS_Enhanced%20filtering_Applied.JPG)](./media/ER-ExtLookup-Lookup1.gif)
 
