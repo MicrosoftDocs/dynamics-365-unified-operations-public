@@ -75,22 +75,6 @@ The following image shows an example of an Azure AD B2C **Troubleshoot** banner.
 
 ![Warning showing directory has no Active Subscription](./media/B2CImage_5.png)
 
-<!--
-The link will provide the following options:
-
-![Options to link B2C Tenant to a Subscription](./media/B2CImage_6.png)
-
-For example, to switch directories to the location of your target Azure subscription, click on your account symbol and within the menu, select ‘Switch directory’
-
-1. Navigate back to your main Azure directory.
-1. Search for "B2C", and then from the results select **Azure Active Directory B2C**. 
-1. On the **Create New B2C Tenant or Link to existing Tenant** page, select **Link an existing Azure AD B2C Tenant to my Azure subscription**. The newly-created B2C tenant instance should now show as an option in the **Azure AD B2C Tenant** selection bar.
-1. Finalize the remaining required fields, selecting the ‘Subscription’, ‘Resource group’ (select or create new), and ‘Resource group location’ items.
-1. Select **Create** to create the link between the new B2C tenant and the existing Azure subscription.
-1. Navigate back to your B2C tenant (switch directory and return to your B2C directory).
-
--->
-
 ## Create the B2C application
 
 Once the B2C tenant has been created, you will create a B2C application within the tenant to interact with the Commerce actions.
@@ -111,8 +95,8 @@ Reply URLs are important as they allow a whitelist of the return domains when yo
 
 In the **Reply URL** box of the **Azure AD B2c - Applications \> New application** screen, you need to add separate lines for both your site domain and (once your environment is provisioned) the Commerce-generated URL. These URLs must always use a valid URL format, and must be base URLs only (no trailing forward slashes or paths). The string ``/_msdyn365/authresp`` then needs to be appended to the base URLs, as in the following examples.
 
-	``https://fabrikam.com/_msdyn365/authresp``
-	``https://fabrikam-prod.commerce.dynamics.com/_msdyn365/authresp``
+- ``https://fabrikam.com/_msdyn365/authresp``
+- ``https://fabrikam-prod.commerce.dynamics.com/_msdyn365/authresp``
 
 ## Create user flow policies
 
