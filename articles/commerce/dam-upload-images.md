@@ -51,6 +51,9 @@ When uploading an image or folder of images, the following information can be sp
     - **Product, Category, Customer, Employee, Catalog**: Used for Dynamics 365 Commerce omni-channel image or images.
 - **Publish assets after upload**: When this check box is selected, the image or images are published immediately after upload.
 
+> [!NOTE]
+> Image assets with a category assigned are also automatically tagged with the category as a keyword to allow searching for assets of specific category.
+
 ### Naming conventions for omni-channel images 
 
 If you have configured the Media Library as the omni-channel image backend, you can use image categories to indicate which category the uploaded image belongs to. There is also a naming convention that needs to be followed to make sure that images are retrieved correctly by other channels, such as point of sale (POS).
@@ -63,9 +66,6 @@ The default naming convention varies based on the category:
 - Product images should be named "**/Products/\{ProductNumber\}_000_001.png**"
     - 001 is the sequence of the image and it can be 001, 002, 003, 004 or 005
 - Product variant images should be named "**/Products/\{ProductNumber\}\_\{Size\}\_\{Color\}\_\{Style\}\_000_001.png**"
-
-> [!NOTE]
-> Image assets with a category assigned are also automatically tagged with the category as a keyword to allow searching for assets of specific category.
 
 ## Upload an image
 
@@ -89,41 +89,6 @@ To bulk upload a folder of images in site builder, follow these steps.
 1. In the **Upload Media Items** dialog box, enter optional keywords and select a category if desired. 
 1. If you want to publish the images in the folder immediately after upload, select the **Publish media items after upload** check box
 1. Select **OK**.
-
-
-<!--
-To bulk upload a folder of images, follow these steps.
-
-To upload an image, first navigate to the "Assets"-tab. Assets for selected site, channel and locale are shown in the middle pane.
-
-![Assets tab](./media/dam-screenshot1.png)
-
-In order to upload a new image, click "Upload" from the action bar, then click "Upload Assets". File dialog will open which allows you to select one or more image assets. Supported image formats are JPEG, PNG and GIF.
-
-![Upload](./media/dam-screenshot2.png)
-
-After selecting the images you wish to upload, click "Open" (title might vary per browser). The tool will perform image path validation and you will be shown the "Upload Asset"- or "Upload Assets"-dialog depending on the number of images selected.
-
-Single image:
-![Single image](./media/dam-screenshot3.png)
-
-Multiple images:
-![Multiple images](./media/dam-screenshot4.png)
-
-This dialog allows entering the image meta data, image category information and whether the assets should be published automatically after upload. If more than one image is being uploaded, only category, keywords and publishing information can be entered.
-
-- **Title, Alt Text, Description, Keywords**: Metadata of the image or images
-- **Select category**:
-    - **None**: e-Commerce storytelling image
-    - **Product, Category, Customer, Employee, Catalog**: Dynamics 365 Commerce Omni-channel image
-- **Publish assets after upload**: Whether the image or images are published right after upload finishes
-
-After entering the information, click OK. Image upload will start. If you are uploading multiple images, you will see the progress dialog on the screen.
-
-After the upload completes, you will see the images appear in the middle pane and you can start using them.
-
-Note: You should always upload the version of the image with highest resolution and quality. The image resizer component will automatically optimize the image for different viewports/breakpoints.
--->
 
 ## Additional resources
 
