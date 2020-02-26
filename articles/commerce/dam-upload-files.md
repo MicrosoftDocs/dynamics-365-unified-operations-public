@@ -32,7 +32,7 @@ ms.dyn365.ops.version:
 
 # Upload files other than images and videos
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic describes how to upload files other than images and videos in Microsoft Dynamics 365 Commerce site builder.
 
