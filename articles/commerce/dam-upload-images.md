@@ -37,6 +37,35 @@ This topic describes how to upload images in Microsoft Dynamics 365 Commerce pro
 
 ## Overview
 
+Commerce site builder allows you to upload images, either singly or in bulk using folders.
+
+You should always upload the version of the image with highest resolution and quality. The image resizer component will automatically optimize the image for different viewports/breakpoints.
+
+### Naming conventions for omni-channel images 
+
+If you have configured the Media Library as the omni-channel image backend, you can use image categories to indicate which category the uploaded image belongs to. There is also a naming convention that needs to be followed to make sure that images are retrieved correctly by other channels, such as point of sale (POS).
+
+The default naming convention varies based on the category:
+- Catalog images should be named "**/Catalogs/\{LanguageId\}/\{CatalogName\}.jpg**"
+- Category images should be named "**/Categories/\{CategoryName\}.png**"
+- Customer images should be named "**/Customers/\{CustomerNumber\}.jpg**"
+- Employee images should be named "**/Workers/\{WorkerNumber\}.jpg**"
+- Product images should be named "**/Products/\{ProductNumber\}_000_001.png**"
+    - 001 is the sequence of the image and it can be 001, 002, 003, 004 or 005
+- Product variant images should be named "**/Products/\{ProductNumber\}\_\{Size\}\_\{Color\}\_\{Style\}\_000_001.png**"
+
+> [!NOTE]
+> Image assets with a category assigned are also automatically tagged with the category as a keyword to allow searching for assets of specific category.
+
+### Image information specified during upload
+
+When uploading an image or folder of images, the dialog box 
+
+- **Title, Alt Text, Description, Keywords**: Metadata of the image or images. Title and alt text are required values.
+- **Select category**:
+    - **None**: Used for an e-Commerce storytelling image or images
+    - **Product, Category, Customer, Employee, Catalog**: Used for Dynamics 365 Commerce omni-channel image or images.
+- **Publish assets after upload**: When check box is selected, the image or images are published immediately after upload.
 
 ## Upload an image
 
@@ -52,7 +81,7 @@ To upload an image in site builder, follow these steps.
 
 ## Upload a folder of images
 
-To bulk upload a folder of images, follow these steps.
+To bulk upload a folder of images in site builder, follow these steps.
 
 1. In the left navigation pane, select **Media Library**.
 1. On the command bar, select **Upload \> Upload Folder**.
@@ -61,22 +90,8 @@ To bulk upload a folder of images, follow these steps.
 1. If you want to publish the images in the folder immediately after upload, select the **Publish media items after upload** check box
 1. Select **OK**.
 
-## Naming conventions for omni-channel images 
 
-If you have configured the DAM as the omni-channel image backend, you can use image categories to indicate which category the uploaded image belongs to. There is also a naming convention that needs to be followed to make sure that images are retrieved correctly by other channels (such as POS).
-
-The default naming convention varies based on the category:
-* Catalog images should be named "**/Catalogs/\{LanguageId\}/\{CatalogName\}.jpg**"
-* Category images should be named "**/Categories/\{CategoryName\}.png**"
-* Customer images should be named "**/Customers/\{CustomerNumber\}.jpg**"
-* Employee images should be named "**/Workers/\{WorkerNumber\}.jpg**"
-* Product images should be named "**/Products/\{ProductNumber\}_000_001.png**"
-	* 001 is the sequence of the image and it can be 001, 002, 003, 004 or 005
-* Product variant images should be named "**/Products/\{ProductNumber\} ^ ^ \{Size\} ^ \{Color\} ^\{Style\}_000_001.png**"
-
-> [!NOTE]
-> Image assets with a category assigned are also automatically tagged with the category as a keyword to allow searching for assets of specific category.
-
+<!--
 To bulk upload a folder of images, follow these steps.
 
 To upload an image, first navigate to the "Assets"-tab. Assets for selected site, channel and locale are shown in the middle pane.
@@ -108,6 +123,7 @@ After entering the information, click OK. Image upload will start. If you are up
 After the upload completes, you will see the images appear in the middle pane and you can start using them.
 
 Note: You should always upload the version of the image with highest resolution and quality. The image resizer component will automatically optimize the image for different viewports/breakpoints.
+-->
 
 ## Additional resources
 
