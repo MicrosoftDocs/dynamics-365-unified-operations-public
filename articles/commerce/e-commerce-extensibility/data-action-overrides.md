@@ -2,11 +2,10 @@
 # required metadata
 
 title: Data action overrides
-description: 
-This topic describes how to overrride default module data actions with custom data actions.
+description: This topic describes how to overrride default module data actions with custom data actions.
 author: samjarawan
 manager: annbe
-ms.date: 02/20/2020
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -25,11 +24,10 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: samjar
-ms.search.validFrom: 2020-01-22
-ms.dyn365.ops.version: Release 10.0.8
+ms.search.validFrom: 2020-01-31
+ms.dyn365.ops.version: Release 10.0.10
 
 ---
-
 # Data action overrides
 
 [!include [banner](../includes/banner.md)]
