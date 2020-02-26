@@ -54,7 +54,7 @@ In Dynamics 365 Sales, go to **Settings > Administration > System settings > Sal
 
 ### Site and warehouse
 
-**Site** and **warehouse** are required fields for quotation and order lines in Supply Chain Management. So, in case each product is assigned to a site and warehouse on the “Default order settings” entity, then system has been configured to auto-populate them when a user tries to add the product to the quotation line or order line.
+**Site** and **warehouse** are required fields for quotation and order lines in Supply Chain Management. If you configure the **Defualt order settings** with the site and warehouse, then those fields will auto-populate when you add a product to the quotation line or order line. 
 
 ### Number Sequencing for quotation and Order
 
@@ -76,8 +76,8 @@ You can create sales orders in either Sales or Supply Chain Management. If you c
 
 + You can activate and synchronize orders from Sales only if all the Order Products consist of products coming from Finance and Operations apps. Therefore, there can be no write-in products.
 + Discount calculation and rounding:
-    –	The discount calculation model in Sales differs from the discount calculation model in Supply Chain Management. In Supply Chain Management, the final discount amount on a sales line can be the result of a combination of discount amounts and discount percentages. If this final discount amount is divided by the quantity on the line, rounding can occur. However, this rounding isn't considered if a rounded per-unit discount amount is synchronized to Sales. To help guarantee that the full discount amount from a sales line in Supply Chain Management is correctly synchronized to Sales, the full amount must be synchronized without being divided by the line quantity. Therefore, you must define the **Discount calculation method** as **Line item** in Sales.
-    –	When a sales order line is synchronized from Sales to Supply Chain Management, the full line discount amount is used. Because Supply Chain Management has no field that can store the full discount amount for a line, the amount is divided by the quantity and stored in the **Line discount** field. Any rounding that occurs in this division is stored in the **Sales charges** field on the sales line.
+    – The discount calculation model in Sales differs from the discount calculation model in Supply Chain Management. In Supply Chain Management, the final discount amount on a sales line can be the result of a combination of discount amounts and discount percentages. If this final discount amount is divided by the quantity on the line, rounding can occur. However, this rounding isn't considered if a rounded per-unit discount amount is synchronized to Sales. To guarantee that the full discount amount from a sales line in Supply Chain Management is correctly synchronized to Sales, the full amount must be synchronized without being divided by the line quantity. Therefore, you must define the **Discount calculation method** as **Line item** in Sales.
+    – When a sales order line is synchronized from Sales to Supply Chain Management, the full line discount amount is used. Because Supply Chain Management has no field that can store the full discount amount for a line, the amount is divided by the quantity and stored in the **Line discount** field. Any rounding that occurs in this division is stored in the **Sales charges** field on the sales line.
 
 ### Example: synchronization from Sales to Supply Chain Management
 
@@ -148,7 +148,7 @@ Related core entity maps for prospect-to-cash are:
 + [Customers V3 to contacts](customer-mapping.md#customers-v3-to-contacts)
 + [Released products V2 to msdyn_sharedproductdetails](product-mapping.md#released-products-v2-to-msdyn_sharedproductdetails)
 + [All products to msdyn_globalproducts](product-mapping.md#all-products-to-msdyn_globalproducts)
-+ [Pricelist]()
++ [Pricelist](product-mapping.md)
 
 [!include [symbols](../../includes/dual-write-symbols.md)]
 
