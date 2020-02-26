@@ -50,19 +50,11 @@ Similarly the STREET field length in channel database is extend to 400 character
 
 Note: Extending the POS UI or CRT handlers is not required for some fields because it may be read only fields in POS. Ex: ECORES product related fields are read only because there is no write scenario for products in POS (Product creation is not supported in POS).
 
-**Sample code to override the ValidateAddressLengthServiceRequest handler:**
+## Sample code to override the ValidateAddressLengthServiceRequest handler
+
+The following code examples overrides the **ValidateAddressLengthServiceRequest** handler.
 
 ```C#
-
-/**
- * SAMPLE CODE NOTICE
- * 
- * THIS SAMPLE CODE IS MADE AVAILABLE AS IS.  MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
- * OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.
- * THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
- * NO TECHNICAL SUPPORT IS PROVIDED.  YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
- */
-
 namespace Contoso
 {
     namespace Commerce.Runtime.ReceiptsSample
@@ -110,11 +102,13 @@ namespace Contoso
 
                 // Add custom logic to check your desired length.
 
-                if (!string.IsNullOrEmpty(validateAddressLengthServiceRequest?.Address?.FullAddress) && validateAddressLengthServiceRequest.Address.FullAddress.Length > maxDefaultFullAddressColumnLength)
+                if (!string.IsNullOrEmpty(validateAddressLengthServiceRequest?.Address?.FullAddress) 
+                && validateAddressLengthServiceRequest.Address.FullAddress.Length > maxDefaultFullAddressColumnLength)
                 {
                     validationFailures.Add(new DataValidationFailure(
                         DataValidationErrors.Microsoft_Dynamics_Commerce_Runtime_AddressLengthExceeded,
-                        string.Format("The full address exceeds the maximum number of {0} characters allowed.", maxDefaultFullAddressColumnLength))
+                        string.Format("The full address exceeds the maximum number of {0} characters allowed.",
+                        maxDefaultFullAddressColumnLength))
                     {
                         LocalizedMessageParameters = new object[] { maxDefaultFullAddressColumnLength }
                     });
@@ -122,7 +116,8 @@ namespace Contoso
 
                 // Add custom logic to check your desired length.
 
-                if (!string.IsNullOrEmpty(validateAddressLengthServiceRequest?.Address?.Street) && validateAddressLengthServiceRequest.Address.Street.Length > maxDefaultStreetColumnLength)
+                if (!string.IsNullOrEmpty(validateAddressLengthServiceRequest?.Address?.Street) 
+                && validateAddressLengthServiceRequest.Address.Street.Length > maxDefaultStreetColumnLength)
                 {
                     validationFailures.Add(new DataValidationFailure(
                         DataValidationErrors.Microsoft_Dynamics_Commerce_Runtime_StreetLengthExceeded,
@@ -134,7 +129,8 @@ namespace Contoso
 
                 // Add custom logic to check your desired length.
 
-                if (!string.IsNullOrEmpty(validateAddressLengthServiceRequest?.Address?.County) && validateAddressLengthServiceRequest.Address.County.Length > maxDefaultCountyColumnLength)
+                if (!string.IsNullOrEmpty(validateAddressLengthServiceRequest?.Address?.County) 
+                && validateAddressLengthServiceRequest.Address.County.Length > maxDefaultCountyColumnLength)
                 {
                     validationFailures.Add(new DataValidationFailure(
                         DataValidationErrors.Microsoft_Dynamics_Commerce_Runtime_CountyLengthExceeded,
@@ -146,7 +142,8 @@ namespace Contoso
 
                 if (validationFailures.Count > 0)
                 {
-                    throw new DataValidationException(DataValidationErrors.Microsoft_Dynamics_Commerce_Runtime_AggregateValidationError, validationFailures, "An error occurred when validating the address.");
+                    throw new DataValidationException(DataValidationErrors.Microsoft_Dynamics_Commerce_Runtime_AggregateValidationError,
+                    validationFailures, "An error occurred when validating the address.");
                 }
 
                 return new NullResponse();
@@ -155,10 +152,11 @@ namespace Contoso
     }
 }
 
-
 ```
 
-**Pre extended columns in channel database:**
+## Pre-extended columns in Channel Database
+
+The columns that are pre-extended are listed in the following table.
 
 | Table                         | Column                                                                        | Length        | Extension in CRT      | Extension in POS                    |
 |-------------------------------|-------------------------------------------------------------------------------|---------------|-----------------------|-------------------------------------|
