@@ -40,18 +40,6 @@ The following Human Resources entities are available in Common Data Service.
 
 ## Benefit entities
 
-**Benefit calculation frequency**
-
-| **Fields**        | **Data type** | **Required** | **Searchable** |
-|-------------------|---------------|--------------|----------------|
-| Description       | Text          |              | X              |
-| Frequency Control | Option set    | X            | X              |
-| Is Immutable      | Two options   |              | X              |
-| Name              | Text          | X            | X              |
-
-
-## Benefit entities
-
 | Name | Entity |
 | --- | --- |
 | Benefit Calculation Frequency | cdm_benefitcalculationfrequency |

@@ -66,8 +66,8 @@ You can also create position-based leave benefits, such as executive-only benefi
 
       | Accrual period basis | Description |
       | --- | --- |
-      | Plan start date | The accrual period start date is the date the plan is available. |
-      | Employee-specific date | The accrual period start date depends on an employee event:</br><ul><li>Custom (you must specify an accrual date basis for each individual enrollment)</li><li>Anniversary date</li><li>Original hire date</li><li>Seniority date</li><li>Worker's adjusted start date</li><li>Worker's start date</li></ul> |
+      | **Plan start date** | The accrual period start date is the date the plan is available. |
+      | **Employee-specific date** | The accrual period start date depends on an employee event:</br><ul><li>Custom (you must specify an accrual date basis for each individual enrollment)</li><li>Anniversary date</li><li>Original hire date</li><li>Seniority date</li><li>Worker's adjusted start date</li><li>Worker's start date</li></ul> |
 
    3. Select an option from the **Accrual award date** dropdown box:
 
