@@ -42,7 +42,7 @@ The Commerce site builder Media Library allows you to upload videos. You should 
 
 ### Video information specified during upload
 
-If single video is being uploaded, you will be able to specify the following information in the **Upload Media Item** dialog box.
+When uploading a video, the following information can be specified.
 
 - **Title, Description, Keywords**: Metadata of the video.
 - **Automatically generate closed captions**: Specifies whether closed captions should be automatically generated for the video.
