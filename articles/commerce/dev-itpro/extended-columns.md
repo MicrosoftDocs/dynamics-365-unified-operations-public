@@ -52,7 +52,7 @@ Extending the POS UI or CRT handlers is not required for some fields because the
 
 ## Sample code to override the ValidateAddressLengthServiceRequest handler
 
-The following code examples overrides the **ValidateAddressLengthServiceRequest** handler.
+The following code example overrides the **ValidateAddressLengthServiceRequest** handler.
 
 ```C#
 namespace Contoso
