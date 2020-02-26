@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Removed or deprecated features for Finance and Operations
-description: This topic describes features that have been removed, or that are planned for removal.
+title: Removed or deprecated features in previous releases
+description: This topic describes features that have been removed, or that are planned for removal from of Dynamics 365 for Finance and Operations and previous releases.
 author: sericks007
 manager: AnnBe
-ms.date: 10/08/2019
+ms.date: 02/26/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,21 +30,21 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Removed or deprecated features for Finance and Operations
+# Removed or deprecated features in previous releases
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes features that have been removed or deprecated for Finance and Operations.
+> [!NOTE]
+> This topic is no longer updated. To see a current list of features that have been removed or deprecated from Finance and Operations apps, search for **"Removed or deprecated features"** content that relates to the app you're using.
+
+This topic describes features that have been removed or deprecated from Dynamics 365 for Finance and Operations and previous releases of that product.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
 This list is intended to help you consider these removals and deprecations for your own planning. 
 
-> [!NOTE]
-> Starting with the Finance and Operations July 2017 release with Platform update 8, the type of deployments are noted for each removed or deprecated feature. All of the previous releases mentioned in this topic supported cloud deployments only.
-
-Detailed information about objects in Finance and Operations can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations.
+Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
 
 ## Finance 10.0.7 with Platform update 31
 
