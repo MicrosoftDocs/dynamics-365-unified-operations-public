@@ -41,6 +41,16 @@ Commerce site builder allows you to upload images, either singly or in bulk usin
 
 You should always upload the version of the image with highest resolution and quality. The image resizer component will automatically optimize the image for different viewports/breakpoints.
 
+### Image information specified during upload
+
+When uploading an image or folder of images, the following information can be specified.
+
+- **Title, Alt Text, Description, Keywords**: Metadata of the image or images. Title and alt text are required values.
+- **Select category**:
+    - **None**: Used for an e-Commerce storytelling image or images
+    - **Product, Category, Customer, Employee, Catalog**: Used for Dynamics 365 Commerce omni-channel image or images.
+- **Publish assets after upload**: When this check box is selected, the image or images are published immediately after upload.
+
 ### Naming conventions for omni-channel images 
 
 If you have configured the Media Library as the omni-channel image backend, you can use image categories to indicate which category the uploaded image belongs to. There is also a naming convention that needs to be followed to make sure that images are retrieved correctly by other channels, such as point of sale (POS).
@@ -56,16 +66,6 @@ The default naming convention varies based on the category:
 
 > [!NOTE]
 > Image assets with a category assigned are also automatically tagged with the category as a keyword to allow searching for assets of specific category.
-
-### Image information specified during upload
-
-When uploading an image or folder of images, the dialog box 
-
-- **Title, Alt Text, Description, Keywords**: Metadata of the image or images. Title and alt text are required values.
-- **Select category**:
-    - **None**: Used for an e-Commerce storytelling image or images
-    - **Product, Category, Customer, Employee, Catalog**: Used for Dynamics 365 Commerce omni-channel image or images.
-- **Publish assets after upload**: When check box is selected, the image or images are published immediately after upload.
 
 ## Upload an image
 
