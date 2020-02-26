@@ -40,16 +40,18 @@ This topic describes how to upload videos in Microsoft Dynamics 365 Commerce sit
 
 The Commerce site builder Media Library allows you to upload videos. You should always upload the version of a video with the highest bitrate and resolution, since the video will be automatically converted to be suitable for different viewports and their breakpoints.
 
-## Upload a video
+### Video information specified during upload
 
 If single video is being uploaded, you will be able to specify the following information in the **Upload Media Item** dialog box.
 
-- **Title, Description, Keywords** - Metadata
-- **Automatically generate closed captions** - Specifies whether closed captions should be automatically generated for the video
-- **Closed Caption** - Specifies the closed captions to be used
-- **Regular Audio** - Specifies the regular audio track
-- **Thumbnail** - Specifies the thumbnail for the video. If not specified, it will be generated automatically
-- **Descriptive Audio** -Specifies the descriptive audio track
+- **Title, Description, Keywords**: Metadata of the video.
+- **Automatically generate closed captions**: Specifies whether closed captions should be automatically generated for the video.
+- **Closed Caption**: Specifies the closed captions to be used.
+- **Regular Audio**: Specifies the regular audio track to be used.
+- **Thumbnail**: Specifies the thumbnail for the video. If not specified, it will be generated automatically.
+- **Descriptive Audio**: Specifies the descriptive audio track to be used.
+
+## Upload a video
 
 To upload a video in site builder, follow these steps.
 
