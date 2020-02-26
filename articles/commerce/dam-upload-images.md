@@ -33,7 +33,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to upload images in Microsoft Dynamics 365 Commerce product site builder.
+This topic describes how to upload images in Microsoft Dynamics 365 Commerce site builder.
 
 ## Overview
 
@@ -41,7 +41,7 @@ The Commerce site builder Media Library allows you to upload images, either sing
 
 ### Image information specified during upload
 
-When uploading an image or folder of images, the following information can be specified.
+When uploading an image, the following information can be specified.
 
 - **Title, Alt Text, Description, Keywords**: Metadata of the image or images. Title and alt text are required values.
 - **Select category**:
