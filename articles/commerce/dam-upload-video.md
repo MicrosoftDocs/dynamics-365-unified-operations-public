@@ -3,7 +3,7 @@
 # required metadata
 
 title: Upload videos
-description: This topic describes how to upload videos in Microsoft Dynamics 365 Commerce.
+description: This topic describes how to upload videos in Microsoft Dynamics 365 Commerce site builder.
 author: psimolin
 manager: annbe
 ms.date: 02/26/2020
@@ -34,7 +34,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to upload videos in Microsoft Dynamics 365 Commerce.
+This topic describes how to upload videos in Microsoft Dynamics 365 Commerce site builder.
 
 ## Upload a video
 
