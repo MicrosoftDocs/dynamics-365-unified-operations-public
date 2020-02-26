@@ -59,14 +59,17 @@ These topics describe mapping between concepts in Finance and Operations applica
     + [Bootstrap with company data FAQ](bootstrap-company-data.md)
 
 + [Integrated customer master](customer-mapping.md)
-+ [Integrated ledger](ledger-mapping.md)
 + [Unified product experience](product-mapping.md)
 + [Integrated vendor master](vendor-mapping.md)
 
     + [Switch between vendor designs](vendor-switch.md)
 
++ [Access to finance and tax reference data](finance-tax-reference.md)
+
+    + [Integrated ledger](ledger-mapping.md)
+    + [Integrated tax master](tax-mapping.md)
+
 + [Integrated sites and warehouses](sites-warehouses-mapping.md)
-+ [Integrated tax master](tax-mapping.md)
 + [Prospect to cash in dual-write](dual-write-prospect-to-cash.md)
 + [In-house assets for servicing](in-house-assets.md)
 + [Integrated worker, job, and position](integrated-hr.md)
