@@ -47,16 +47,16 @@ When uploading an image or folder of images, the following information can be sp
 
 - **Title, Alt Text, Description, Keywords**: Metadata of the image or images. Title and alt text are required values.
 - **Select category**:
-    - **None**: Used for an e-Commerce storytelling image or images
+    - **None**: Used for an e-Commerce storytelling image or images.
     - **Product, Category, Customer, Employee, Catalog**: Used for Dynamics 365 Commerce omni-channel image or images.
 - **Publish assets after upload**: When this check box is selected, the image or images are published immediately after upload.
 
 > [!NOTE]
-> Image assets with a category assigned are also automatically tagged with the category as a keyword to allow searching for assets of specific category.
+> Image assets with a category assigned are also automatically tagged with the category as a keyword to aid searching for assets of a specific category.
 
 ### Naming conventions for omni-channel images 
 
-If you have configured the Media Library as the omni-channel image backend, you can use image categories to indicate which category the uploaded image belongs to. There is also a naming convention that needs to be followed to make sure that images are retrieved correctly by other channels, such as point of sale (POS).
+If you have configured the Media Library as the omni-channel image backend, you can use image categories to indicate which category the uploaded image belongs to. There is also a naming convention that should be followed to ensure that images are retrieved correctly by other channels, such as point of sale (POS).
 
 The default naming convention varies based on the category:
 - Catalog images should be named "**/Catalogs/\{LanguageId\}/\{CatalogName\}.jpg**"
@@ -76,7 +76,7 @@ To upload an image in site builder, follow these steps.
 1. In the File Explorer window, navigate to and select one or more image files to upload, and then select **Open**.
 1. In the **Upload Media Item** dialog box, enter the required title and alt text.
 1. Enter optional description and keywords and select a category if desired. 
-1. If you want to publish the image(s) immediately after upload, select the **Publish media items after upload** check box
+1. If you want to publish the image(s) immediately after upload, select the **Publish media items after upload** check box.
 1. Select **OK**.
 
 ## Upload a folder of images
@@ -87,7 +87,7 @@ To bulk upload a folder of images in site builder, follow these steps.
 1. On the command bar, select **Upload \> Upload Folder**.
 1. In the File Explorer window, navigate to and select a folder to upload, and then select **Open**.
 1. In the **Upload Media Items** dialog box, enter optional keywords and select a category if desired. 
-1. If you want to publish the images in the folder immediately after upload, select the **Publish media items after upload** check box
+1. If you want to publish the images in the folder immediately after upload, select the **Publish media items after upload** check box.
 1. Select **OK**.
 
 ## Additional resources
