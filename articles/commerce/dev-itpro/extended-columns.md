@@ -46,9 +46,9 @@ If the HQ database is not extended, then during the P-Job sync between Channel D
 
 For example, suppose that the **INVENTSERIALID** field length in channel database is 50 characters, but the POS UI accepts serial number only up to 20 characters long. In this scenario, you must extend the field in both the POS UI and HQ database.
 
-Similarly the STREET field length in channel database is extend to 400 characters but there is validation in CRT will prevent accepting more than the default HQ database character length to overcome this extend both the CRT request handler (ValidateAddressLengthServiceRequest) and the HQ database to accept 400 characters for STREET field .
+As another example, suppose that the **STREET** field length in Channel Database is extended to 400 characters, while validation in CRT prevents accepting more than the default HQ database length. To accommodate this scenario, you must extend both the CRT request handler (**ValidateAddressLengthServiceRequest**) and the HQ database to accept 400 characters for the **STREET** field.
 
-Note: Extending the POS UI or CRT handlers is not required for some fields because it may be read only fields in POS. Ex: ECORES product related fields are read only because there is no write scenario for products in POS (Product creation is not supported in POS).
+Extending the POS UI or CRT handlers is not required for some fields because they might be read-only fields in POS. For example, **ECORES** product-related fields are read-only because there is no write scenario for products in POS. This is because product creation is not supported in POS.
 
 ## Sample code to override the ValidateAddressLengthServiceRequest handler
 
