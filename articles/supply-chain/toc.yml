@@ -679,6 +679,8 @@
         items:
         - name: Document Reporting Services overview
           href: ../fin-ops-core/dev-itpro/analytics/document-reporting-services.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Supported fonts
+          href: ../fin-ops-core/dev-itpro/analytics/supported-fonts.md?toc=/dynamics365/supply-chain/toc.json
         - name: Configure SSRS for on-premises deployments
           href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/supply-chain/toc.json
         - name: Printing
