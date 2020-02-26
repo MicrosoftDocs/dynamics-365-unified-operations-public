@@ -107,7 +107,7 @@ To create the B2C application, follow these steps.
 
 ### Reply URLs
 
-Reply URLs are important as they allow a whitelist of the return domains when your site calls Azure AD B2C to authenticate a user. This allows the return of the authenticated user back to the domain from which they are logging in (your site domain). 
+Reply URLs are important as they allow a whitelist of the return domains when your site calls Azure AD B2C to authenticate a user. This allows the return of the authenticated user back to the domain from which they are signing into (your site domain). 
 
 In the **Reply URL** box of the **Azure AD B2c - Applications \> New application** screen, you need to add separate lines for both your site domain and (once your environment is provisioned) the Commerce-generated URL. These URLs must always use a valid URL format, and must be base URLs only (no trailing forward slashes or paths). The string ``/_msdyn365/authresp`` then needs to be appended to the base URLs, as in the following examples.
 
@@ -194,7 +194,7 @@ To create a password reset user flow policy, follow these steps.
     - **Given Name**
     - **Surname**
     - **User's Object ID**
-1. Select **Save**.
+1. Select **Create**.
 
 The following image shows where to set "Reset Password using mail address" in the Azure AD B2C password reset user flow.
 
@@ -374,6 +374,10 @@ An optional, secondary administrator account can be added in the **Users** secti
 [Associate an online site with a channel](associate-site-online-store.md)
 
 [Manage robots.txt files](manage-robots-txt-files.md)
+
+[Upload URL redirects in bulk](upload-bulk-redirects.md)
+
+[Configure multiple B2C tenants in a Commerce environment](configure-multi-B2C-tenants.md)
 
 [Set up custom pages for user logins](custom-pages-user-logins.md)
 
