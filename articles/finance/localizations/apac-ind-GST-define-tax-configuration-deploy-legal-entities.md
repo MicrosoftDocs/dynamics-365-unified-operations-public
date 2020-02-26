@@ -51,7 +51,7 @@ ms.dyn365.ops.version: 10.0.4
 
     The configuration that you activated is updated as the current configuration. 
     > [NOTE]
-    > Select the **Skip model mapping** check box if the configuration is the standard configuration provided by Microsoft, or the extended configuration without added or modified model mapping.
+    > Select the **Skip model mapping** check box if you're using the standard configuration provided by Microsoft or the extended configuration without added or modified model mapping.
 
 10. Select the **Report configurations** tab.
 
