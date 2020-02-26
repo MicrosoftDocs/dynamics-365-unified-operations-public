@@ -40,8 +40,10 @@ This topic explains how to set up a dual-write connection between a new Finance 
 
 ## Prerequisites
 
-- The user should be from the customer's tenant.
-- The user should be an administrator on both Finance and Operations and Common Data Service environments.
+Setting up a dual-write connection is an adminstrator's task.
+
++ You must be have access to the tenant.
++ You must be an administrator on both Finance and Operations and Common Data Service environments.
 
 ## Steps
 
