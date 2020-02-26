@@ -31,7 +31,7 @@ ms.dyn365.ops.version:
 
 # Upload images
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic describes how to upload images in Microsoft Dynamics 365 Commerce site builder.
 
