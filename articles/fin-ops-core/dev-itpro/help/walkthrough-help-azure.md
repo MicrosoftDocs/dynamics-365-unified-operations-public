@@ -5,7 +5,7 @@ title: Example of Deploying Help on Azure
 description: This topic walks you through an example of how you can deploy Dynamics 365 Help content to an Azure web app. 
 author: edupont04
 manager: AnnBe
-ms.date: 02/26/2020
+ms.date: 02/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -38,7 +38,7 @@ You can set up an Azure web app and host your content there for easy integration
 
 There are several different ways of getting your content hosted on Azure. For example, you can set up Azure Blob storage with your Help as HTML files, set up a web app to consume that content, and then set up a search service that indexes your Blob storage. For more information, see [Azure Blob storage documentation](/azure/storage/blobs/).  
 
-But in this section, we will take your through the steps for setting up a web app, a storage account, and a search service, using tools and scripts that are part of the [Custom Help Toolkit](custom-help-toolkit.md).  
+But in this article, we will take you through the steps for setting up a web app to host your content and a search service to make the content discoverable by the in-product Help pane, using tools and scripts that are part of the [Custom Help Toolkit](custom-help-toolkit.md).  
 
 ## Get started
 
@@ -48,9 +48,7 @@ If you want to include Microsoft's content, you must clone the GitHub repo manua
 
 If you want to publish just your own content, you must have it available as HTML files. In [Extend, Customize, and Collaborate on the Help](contributor-guide.md), we suggest that you do what we do on the docs.microsoft.com sites: Create the content in MarkDown files and then use DocFx.exe to generate HTML files. The [HTML From Repos Generator tool](custom-help-toolkit-HtmlFromRepoGenerator.md) can help you prepare the HTML files even if you do not fork Microsoft's content.  
 
-### Deploy the content to Azure
-
-In the following we assume that you have an Azure account and a valid subscription. If you don't have an [Azure subscription](/azure/guides/developer/azure-developer-guide#understanding-accounts-subscriptions-and-billing), create an account before you begin. You can start with a free account for 12 months. For more information, see [Create your Azure free account today](https://azure.microsoft.com/free/).  
+### Process overview
 
 The general process for creating your Azure resources consists of the following steps:
 
@@ -60,7 +58,7 @@ The general process for creating your Azure resources consists of the following 
 
     - The Web App stores and serves HTML files  
 
-        The HTML files contain your Help content.  
+        The HTML files contain your Help content, no matter if it's based on Microsoft's content or not.  
 
     - The Storage account stores JSON files  
 
@@ -74,7 +72,9 @@ The general process for creating your Azure resources consists of the following 
 4. [Upload JSON files](#jsonstorage) into Blob storage in the Storage container, in a subfolder that corresponds to the HTML language subfolder.  
 5. [Configure the Search service](#searchconfig) to have a data source, index, and indexer on the Search service by using the REST API.
 
-    In this example, we use an API tool, Postman, to make the REST API calls. The [REST API CREATION.txt file](https://github.com/microsoft/dynamics365f-o-custom-help/tree/master/Help%20Pane%20extension) contains sample REST API requests to create a data source, index, and indexer. You must create language-specific indexes to use a language-specific index analyzer.
+    In this example, we use an API tool, [Postman](https://www.postman.com/), to make the REST API calls. The [REST API CREATION.txt file](https://github.com/microsoft/dynamics365f-o-custom-help/tree/master/Help%20Pane%20extension) contains sample REST API requests to create a data source, index, and indexer. You must create language-specific indexes to use a language-specific index analyzer.
+
+In the following we assume that you have an Azure account and a valid subscription. If you don't have an [Azure subscription](/azure/guides/developer/azure-developer-guide#understanding-accounts-subscriptions-and-billing), create an account before you begin. You can start with a free account for 12 months. For more information, see [Create your Azure free account today](https://azure.microsoft.com/free/).  
 
 ## <a name="resgr"></a>Create a resource group
 
@@ -93,7 +93,7 @@ To host your content, you can create a web app in Azure. For more information, s
 
 1. In the [Azure portal](https://portal.azure.com/), go to your resource group, choose **Add**, choose **Web App**, and then fill in the fields in the form.  
 
-    You must specify a name for the web app, the Azure region, the runtime stack, and other information. We recommend that you choose the latest version of .NET Core as the runtime.<!--TODO: Is that safe to assume?-->For more information, see [Create an ASP.NET Core web app in Azure](/azure/app-service/app-service-web-get-started-dotnet).
+    You must specify a name for the web app, the Azure region, the runtime stack, and other information. We recommend that you choose the latest version of .NET Core as the runtime<!--TODO: Is that safe to assume?-->, running Windows. For more information, see [Create an ASP.NET Core web app in Azure](/azure/app-service/app-service-web-get-started-dotnet).
 
 2. In the new web app, create or reset your deployment credentials. You will need the user name and password that you create here in the next step when you upload the HTML files.  
 
@@ -103,7 +103,7 @@ Next, you add the HTML files to the web app. You can use an FTP client such as F
 
 ### <a name="uploadhtml"></a>To upload HTML files
 
-1. Start an FTP client such as FileZilla.
+1. Start an FTP client such as [FileZilla](https://filezilla-project.org/), [Visual Studio](https://www.visualstudio.com/vs/community/), [Cyberduck](https://cyberduck.io/), or [WinSCP](https://winscp.net/index.php). For best practices around uploading files to a web app, see [Deploy your app to Azure App Service using FTP/S](/azure/app-service/deploy-ftp).
 
 2. Enter the host (FTP hostname value from the **Overview** tab in the web app) and user name (**FTP/deployment username** value from the **Overview** tab), enter the password (from the **Deployment credentials** tab), and then click **Quickconnect**.  
 3. Under */site/wwwroot* on the host, create a language subfolder that has the relevant language name. Upload the HTML files and other associated files to the language subfolder.  
