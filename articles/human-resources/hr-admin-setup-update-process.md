@@ -5,7 +5,7 @@ title: Update process
 description: 
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/05/2020
+ms.date: 02/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -25,7 +25,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: anbichse
-ms.search.validFrom: 2020-02-03
+ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
 
 ---
@@ -36,13 +36,13 @@ Microsoft Dynamics 365 Human Resources is a true software as a service (SaaS) th
 
 ## Update policy
 
-Updates are released on a regular cadence to all environments. Human Resources is supported according to the [Microsoft Lifecycle policy](https://support.microsoft.com/en-us/hub/4095338/microsoft-lifecycle-policy), which provides consistent and predictable guidelines for the availability of support.
+Updates are released on a regular cadence to all environments. Human Resources is supported according to the [Microsoft Lifecycle policy](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy), which provides consistent and predictable guidelines for the availability of support.
 
 ## Release cadence
 
 Human Resources updates are applied to all environments automatically. Human Resources provides two types of releases:
 
-- **Service updates**: Updates occur every two weeks that include bug fixes and new features. Service updates also include applicable Platform updates when they release. To get an idea of when Platform updates are released, see [Table 3: Platform releases](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy#table-3-platform-releases). Biweekly updates have a staged global rollout across regions. For more information about biweekly updates, see [What's new or changed in Dynamics 365 Human Resources](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-admin-whats-new).
+- **Service updates**: Updates occur every two weeks that include bug fixes and new features. Service updates also include applicable Platform updates when they release. To get an idea of when Platform updates are released, see [Table 3: Platform releases](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy#table-3-platform-releases). Biweekly updates have a staged global rollout across regions. For more information about biweekly updates, see [What's new or changed in Dynamics 365 Human Resources](hr-admin-whats-new.md).
 
     All supported data centers update every two weeks, unless otherwise noted. US, Australia, Europe, UK, Asia, and Canada regions are included in biweekly updates. 
 
@@ -53,9 +53,9 @@ Human Resources updates are applied to all environments automatically. Human Res
 
 When needed, Human Resources also provides the following types of fixes:
 
-- **Revision (hotfix)**: bug fixes that can occur either with or apart from a biweekly service update release
+- **Revision (hotfix)**: Bug fixes that can occur either with or apart from a biweekly service update release
 
-- **Emergency fix**: proactive and reactive hotfixes that are standalone in nature, can include configuration-only or code changes to resolve live site issues, and can occur apart from a biweekly service update release
+- **Emergency fix**: Proactive and reactive hotfixes that are standalone in nature, can include configuration-only or code changes to resolve live site issues, and can occur apart from a biweekly service update release
 
 Releases are reviewed, tested, and validated on an internal environment. After builds are signed off, they're then deployed to production.
 
@@ -106,7 +106,7 @@ While testing preview features or trying new capabilities, you might find items 
 
 ## See also
 
-- [Dynamics 365 and Power Platform Release Plans](https://docs.microsoft.com/dynamics365/release-plans)
-- [What's new or changed in Dynamics 365 Human Resource](hr-admin-whats-new.md)
-- [Software lifecycle policy](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
+[Dynamics 365 and Power Platform Release Plans](https://docs.microsoft.com/dynamics365/release-plans)</br>
+[What's new or changed in Dynamics 365 Human Resource](hr-admin-whats-new.md)</br>
+[Software lifecycle policy](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
 
