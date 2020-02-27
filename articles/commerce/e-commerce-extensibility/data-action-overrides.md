@@ -5,7 +5,7 @@ title: Data action overrides
 description: This topic describes how to overrride default module data actions with custom data actions.
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 02/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -127,4 +127,14 @@ export default createObservableDataAction<Address[]>({
 });
 ```
 
+## Additional resources
 
+[Chain data actions](chain-data-actions.md)
+
+[Batch data actions](batch-data-actions.md)
+
+[Create an observable data action](create-observable-data-action.md)
+
+[Share state across modules](share-state-across-modules.md)
+
+[Data action hooks](data-action-hooks.md)
