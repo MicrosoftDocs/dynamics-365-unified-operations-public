@@ -47,7 +47,7 @@ You can further refine a search by selecting the country code and clicking **App
 
 The following example shows the results when filtering on **Business document type**. 
 
-[![Applied filter for business document type](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/417079-enhanced-filtering/RCS_Global repo_Filtering + import.JPG)](./media/ER-ExtLookup-Lookup1.gif)
+[![Applied filter and Import for business document type] (https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/417079-Enhanced-filtering/RCS_Global%20repo_Filtering%20+%20import.JPG).](./media/ER-ExtLookup-Lookup1.gif)
 
 Filtered results can be imported into users RCS or Dynamics 365 Finance environment, either individually or as a set (by selecting the group of configurations) and clicking **Import**.
 
