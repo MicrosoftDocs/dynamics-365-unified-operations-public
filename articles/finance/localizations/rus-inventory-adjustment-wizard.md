@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Inventory adjustment wizard  
-description: This topic provides information about the Inventory adjustment wizard which is used ot adjust on-hand inventory and transactions.
+description: This topic provides information about the Inventory adjustment wizard which is used to adjust on-hand inventory and transactions.
 author: v-nadyuz
 manager: AnnBe
 ms.date: 02/07/2020

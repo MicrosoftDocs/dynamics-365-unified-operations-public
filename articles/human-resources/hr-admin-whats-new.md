@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Human Resources
-description: 
+description: Each week, we provide a new release for Microsoft Dynamics 365 Human Resources. The articles listed in this topic detail the changes made each week.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020

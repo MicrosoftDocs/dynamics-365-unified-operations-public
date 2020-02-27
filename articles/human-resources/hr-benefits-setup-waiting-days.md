@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure waiting days
-description: 
+description: In Microsoft Dynamics 365 Human Resources, waiting days establish a monthly milestone to use for benefit plans. 
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020

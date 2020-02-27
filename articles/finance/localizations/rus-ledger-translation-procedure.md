@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Ledger translation (Russia)
-description: This topic provides information about using translation to transfer accounting transactiosn from one company to another.
+description: This topic provides information about using translation to transfer accounting transactions from one company to another.
 author: anasyash
 manager: AnnBe
 ms.date: 10/02/2019

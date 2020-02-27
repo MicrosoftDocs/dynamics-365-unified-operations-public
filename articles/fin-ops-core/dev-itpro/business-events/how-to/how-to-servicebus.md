@@ -2,7 +2,7 @@
 # required metadata
 
 title: Business events and Azure Service Bus
-description: This topic explains how to configure a Microsft Azure Service Bus endpoint and how to consume a business event from Service Bus.
+description: This topic explains how to configure a Microsoft Azure Service Bus endpoint and how to consume a business event from Service Bus.
 author: ibenbouzid
 manager: AnnBe
 ms.date: 11/04/2019

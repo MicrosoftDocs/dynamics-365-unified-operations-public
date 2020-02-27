@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up payment frequencies
-description: 
+description: Microsoft Dynamics 365 Human Resources uses payment frequencies to calculate the annual benefit salary, determine the benefit premium amount an employee pays each pay period, and define the frequency payments are made to providers.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
