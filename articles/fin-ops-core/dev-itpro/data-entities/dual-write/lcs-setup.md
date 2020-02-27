@@ -59,7 +59,7 @@ Perform the following steps to complete the dual-write connection setup:
     3. Select the environment from the drop-down that you want to integrate with your Finance and Operations data. The drop-down has the environments where you have admin privileges.
     4. Check the **Agree** box if you agree to the terms and conditions.
     
-        ![](../dual-write/media/lcs_setup_1.jpg)
+        ![](../dual-write/media/lcs_setup_1.png)
         
 7. If your tenant does not have a Common Data Service environment, a new one will be provisioned.
     1. Select the **Common Data Service** tab.
@@ -69,19 +69,19 @@ Perform the following steps to complete the dual-write connection setup:
     5. Select the default language and currency for this environment. **Note:** You cannot change the language and currency later.
     6. Check the **Agree** box if you agree to the terms and conditions.
     
-        ![](../dual-write/media/lcs_setup_3.jpg)
+        ![](../dual-write/media/lcs_setup_2.png)
         
 8. Complete the tasks in the **Deployment Wizard**. 
 9. After the environment is in **Deployed** state, navigate to the **Environment Details** page, 
 10. The Common Data Service environment information section will show the names of the Common Data Service and Finance and Operations environments that are linked.
 
-    ![](../dual-write/media/lcs_setup_4.jpg)
+    ![](../dual-write/media/lcs_setup_3.png)
     
 11. To complete the link, an administrator of the Finance and Operations environment must log in to LCS and click the **Link to CDS for Apps** button. The **Environment Details** page lists the administrator's contact information.
 12. After the link is complete, the status updates to **Environment linking successfully completed**.
 13. To navigate to the data integration workspace in Finance and Operations environment and control the templates that you want to enable or disable, click on the **Link to CDS for Apps** button.    
 
-    ![](../dual-write/media/lcs_setup_5.jpg)
+    ![](../dual-write/media/lcs_setup_4.png)
 
 > [!NOTE]
 > You cannot unlink environments by using Lifecycle services. If you want to unlink an environment, navigate to the **Data Integration** workspace in the Finance and Operations environment and click the **Unlink** button on the toolbar.
