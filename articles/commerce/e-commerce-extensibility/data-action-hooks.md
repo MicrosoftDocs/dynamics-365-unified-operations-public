@@ -5,7 +5,7 @@ title: Data action hooks
 description: This topic describes how to hook into data action pre/post events to further process data if needed.
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 02/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -96,5 +96,17 @@ createDataActionHook({
 });
 ```
 
-Note you'll need to change the **Action_ID** to the data action ID you are adding event hooks to.  The module library list of data actions can be found under the SDK …\Msdyn365.Commerce.Online\node_modules\@msdyn365-commerce-modules\retail-actions\dist\lib directory.
+>[!NOTE]
+> You'll need to change the **Action_ID** to the data action ID you are adding event hooks to.  The module library list of data actions can be found under the SDK …\Msdyn365.Commerce.Online\node_modules\@msdyn365-commerce-modules\retail-actions\dist\lib directory.
 
+## Additional resources
+
+[Chain data actions](chain-data-actions.md)
+
+[Batch data actions](batch-data-actions.md)
+
+[Create an observable data action](create-observable-data-action.md)
+
+[Share state across modules](share-state-across-modules.md)
+
+[Data action overrides](data-action-overrides.md)
