@@ -44,10 +44,12 @@
           href: ../fin-ops/get-started/whats-new-platform-update-20.md
         - name: Platform update 15 (March 2018)
           href: ../fin-ops/get-started/whats-new-platform-update-15.md 
-      - name: Removed or deprecated platform features
-        href: get-started/removed-deprecated-features-platform-updates.md
-      - name: Removed or deprecated features in previous releases
-        href: migration-upgrade/deprecated-features.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
+      - name: Removed or deprecated features
+        items:
+        - name: Removed or deprecated platform features
+          href: get-started/removed-deprecated-features-platform-updates.md
+        - name: Removed or deprecated features in previous releases
+          href: migration-upgrade/deprecated-features.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
       - name: AX 2012 features that were postponed
         href: ../fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
       - name: Features not implemented in on-premises deployments
