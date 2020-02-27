@@ -5,7 +5,7 @@ title: Create deployable packages
 description: This topic explains how to create a deployable package for Microsoft Dynamics 365 Commerce.
 author: mugunthanm
 manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 02/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -84,9 +84,9 @@ The following configuration settings are available in the Customization.settings
 - **ModernPOSPackageCertificateKeyFile** – Specify the Personal Information Exchange (PFX) file to use to sign Modern POS and Hardware station.
 - **RetailServerLibraryPathForProxyGeneration** – Specify the customized Commerce Scale Unit assembly to use for proxy generation (both TypeScript and C\# proxies).
 
-    For Retail SDK version '7.1' and earlier versions, you must specify the name of the Retail Server assembly here.
+    For Retail SDK version 7.1 and earlier versions, you must specify the name of the Retail Server assembly here.
 
-    For Retail SDK version '7.2' and later versions, use the commerce generator tool for proxy generation. However, if you're using the proxy on the e-commerce client side, specify the assembly name here.
+    For Retail SDK version 7.2 and later versions, use the commerce generator tool for proxy generation. However, if you're using the proxy on the e-Commerce client side, specify the assembly name here.
 
 - The **ItemGroup** section includes the following settings:
 
@@ -285,7 +285,7 @@ Some of the dependency packages and references have moved to NuGet packages to m
 
 ## Generate a commerce deployable package
 
-To generate the commerce deployable package, open a common prompt windows for MSBuild . (On the developer virtual machine, search for **msbuild** on the **Start** menu.) Then run the following command.
+To generate the commerce deployable package, open a command prompt windows for MSBuild. (On the developer virtual machine, search for **msbuild** on the **Start** menu.) Then run the following command.
 
 ```Console
 msbuild /p:Configuration=Release
