@@ -36,6 +36,8 @@ ms.dyn365.ops.version: AX 7.3.0
 
 On the **Project Service Automation integration parameters** page, you can configure how default data is entered when you integrate Dynamics 365 Project Service Automation with Dynamics 365 Finance. For projects to be successfully synchronized from Project Service Automation to Finance, you must set up the following fields.
 
+To open the **Project Service Automation integration parameters** page, go to 
+
 > [!NOTE]
 > - Project task integration, expense transaction categories, hour estimates, expense estimates, and functionality locking are available in version 8.0.
 > - Actuals integration is available in version 8.0.1 or later.
