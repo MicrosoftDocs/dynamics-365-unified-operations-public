@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Message center, message bar, and message details API
+title: Messaging APIs: Action center, message bar, and message details
 description: This topic describes the messaging system.
 author: sericks007
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Message center, message bar, and message details API
+# Messaging APIs: Action center, message bar, and message details
 
 [!include [banner](../includes/banner.md)]
 
@@ -47,17 +47,17 @@ Microsoft Dynamics AX 2012 has an all-purpose, "one size fits all" window that d
 -   The control that is used to display messages is deterministic and based on form context.
 
 ## Legacy API support: info(), warning()/checkfailed(), and error()
-The legacy **info()**, **warning()**, and **error()** application programming interfaces (APIs) are still supported. However, they now sit upon the framework's new messaging system, and their destination is deterministic. In other words, it uses the context of the call to determine the best way to present the message to the user. In general, if the use of the API originated from a form, the message appears in a message bar on that same form. (A drop dialog and a slider dialog are both considered forms.) **Note:** There are a few exceptions to this rule. If the message API was called from a slider dialog, and that dialog was closed, the message appears on the slider's parent form. Alternatively, if that slider was closed, and it was hosted by a workspace, the message is routed to the Message center. The message API never "eats" a message. If an appropriate host form isn't found, the message is sent to the Message center. The following screen shot shows the info, warning/checkfailed, and error bars. 
+The legacy **info()**, **warning()**, and **error()** application programming interfaces (APIs) are still supported. However, they now sit upon the framework's new messaging system, and their destination is deterministic. In other words, it uses the context of the call to determine the best way to present the message to the user. In general, if the use of the API originated from a form, the message appears in a message bar on that same form. (A drop dialog and a slider dialog are both considered forms.) **Note:** There are a few exceptions to this rule. If the message API was called from a slider dialog, and that dialog was closed, the message appears on the slider's parent form. Alternatively, if that slider was closed, and it was hosted by a workspace, the message is routed to the Action center. The message API never "eats" a message. If an appropriate host form isn't found, the message is sent to the Action center. The following screen shot shows the info, warning/checkfailed, and error bars. 
 
 [![Screen shot showing the info, warning/checkfailed, and error bars](./media/1_api.jpg)](./media/1_api.jpg)
 
 ## Message API and batch or asynchronous operations
-If **info()**, **warning()**/**checkfailed()**, or **error()** is called from an asynchronous process (for example, a batch), there is no form context to consider, and the messages are sent to the Message center. (To open the Message center, click the flag icon on the navigation bar.) 
+If **info()**, **warning()**/**checkfailed()**, or **error()** is called from an asynchronous process (for example, a batch), there is no form context to consider, and the messages are sent to the Action center. (To open the Action center, click the flag icon on the navigation bar.) 
 
-[![Messages in Message center](./media/2_api.png)](./media/2_api.png)
+[![Messages in Action center](./media/2_api.png)](./media/2_api.png)
 
 ## Legacy API support: SetPrefix()
-This version also supports the **SetPrefix()** API. This too remains backward-compatible. However, the results of **SetPrefix()** don't actively interrupt the user. Instead, the results are collected and stored (as in previous versions), and a message bar or Message center notification is presented to the user. This notification indicates that the related task has been completed, and that it might have messages that the user should review. The "Notification of results" message actually uses the task's first call to **SetPrefix()** to frame the message. This behavior is similar to the behavior in previous versions, where the first call was the "title" of the results. In this example, "Posting Results" comes from the application's first call to **SetPrefix()**.
+This version also supports the **SetPrefix()** API. This too remains backward-compatible. However, the results of **SetPrefix()** don't actively interrupt the user. Instead, the results are collected and stored (as in previous versions), and a message bar or Action center notification is presented to the user. This notification indicates that the related task has been completed, and that it might have messages that the user should review. The "Notification of results" message actually uses the task's first call to **SetPrefix()** to frame the message. This behavior is similar to the behavior in previous versions, where the first call was the "title" of the results. In this example, "Posting Results" comes from the application's first call to **SetPrefix()**.
 
 [![SetPrefix example](./media/3_api.png)](./media/3_api.png) 
 
@@ -71,10 +71,10 @@ The user can then click **Message Details** to open the new **Message details** 
 | Warning      | A *warning* alerts the user about a condition that might cause a problem in the future. Data that is in an incorrect state isn’t an error. However, an attempt to use that data might cause an error, and therefore invalid data triggers a warning. You express data validation issues by using the **warning()** or **checkfailed()** API. |
 | Error        | An *error* alerts a user about a problem that has already occurred. A user action that has failed triggers an error. You express a passive error (non-interrupting) by using the **error()** API. You express an interrupting error to the user by using the **box::** API.                                                                  |
 
-The messaging system is deterministic. Results are displayed in either a message bar or the Message center, depending where the message is called from in the code:
+The messaging system is deterministic. Results are displayed in either a message bar or the Action center, depending where the message is called from in the code:
 
 -   For messages that are the result of synchronous form actions (actions where the user must wait for the result), the results are displayed in a message bar on the current form. The exceptions are messages for a slider dialog that was closed just after the action was started. Those messages appear on the parent form.
--   For asynchronous (disconnected) actions, where the user can continue to do other tasks while the action is being processed, the results are displayed in the Message center.
+-   For asynchronous (disconnected) actions, where the user can continue to do other tasks while the action is being processed, the results are displayed in the Action center.
 
 If a synchronous or other form action or evaluation produces an error, there can be two types of errors:
 
