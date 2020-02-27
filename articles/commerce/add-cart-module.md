@@ -5,7 +5,7 @@ title: Cart module
 description: This topic covers cart modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 02/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -50,7 +50,7 @@ The cart module has a **Heading** property that can be set to values such as **S
 ## Modules that can be used in a cart module
 
 - **Text block** – This module supports custom messaging in the cart module. The messages are driven by the content management system (CMS). Any message can be added, such as "For issues with your order, contact 1-800-Fabrikam."
-- **Store selector** – This module shows a list of nearby stores where an item is available for pickup. It lets users enter a location to find stores that are nearby. For more details refer to [Store Selector module](store-selector.md).
+- **Store selector** – This module shows a list of nearby stores where an item is available for pickup. It lets users enter a location to find stores that are nearby. For more information on this module, see [Store Selector module](store-selector.md).
 
 ## Cart module settings
 
@@ -85,7 +85,7 @@ To add a cart module to a new page and set the required properties, follow these
 
 [Container module](add-container-module.md)
 
-[Store Selector module](store-selector.md)
+[Store selector module](store-selector.md)
 
 [Buy box module](add-buy-box.md)
 
