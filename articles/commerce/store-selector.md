@@ -48,7 +48,9 @@ The store selector module can be added to a buy box module on the product detail
 
 For the BOPIS scenario to work, products should be configured with the "customer pickup" delivery mode. Otherwise, the module will not be shown on the respective pages. For details on how to configure the delivery mode, see [Set up modes of delivery](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 
-![Example of a Store selector module](./media/BOPIS.PNG)
+The following image shows an example of a store selector module used on a PDP.
+
+![Example of a store selector module](./media/BOPIS.PNG)
 
 ## Store selector module usage in e-Commerce
 
