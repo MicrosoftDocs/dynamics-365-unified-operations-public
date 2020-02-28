@@ -36,7 +36,7 @@ This topic describes how to hook into pre- and post- data action events to furth
 
 ## Overview
 
-The set of modules included with the Dynamics 365 Commerce software development kit (SDK) module library use preexisting data actions to fetch data for the modules to use. You may have scenarios where you want to change some business logic in the data action layer. In addition to support for data action overrides, the Commerce platform also has the ability to hook into pre- and post- data action events.
+The set of modules included with the Dynamics 365 Commerce software development kit (SDK) use preexisting actions to fetch data for the modules to use. You may have scenarios where you want to change some business logic in the data action layer. In addition to support for data action overrides, the Commerce platform also has the ability to hook into pre- and post- data action events.
 
 ## Supported data action hook events
 
@@ -50,7 +50,7 @@ The following data action hook events are supported:
 
 To use a data action hook, you can leverage the **add-data-action** command-line interface (CLI) command to create the file. The following example creates a data action file named "get-address-hook.action.ts" under the "\src\actions" directory.
 
-```console
+```Console
 yarn msdyn365 add-data-action get-address-hook
 ```
 
