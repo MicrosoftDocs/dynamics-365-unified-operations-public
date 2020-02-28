@@ -2,10 +2,10 @@
 # required metadata
 
 title: Data action hooks
-description: This topic describes how to hook into data action pre/post events to further process data if needed.
+description: This topic describes how to hook into pre- and post- data action events to further process data if needed.
 author: samjarawan
 manager: annbe
-ms.date: 02/20/2020
+ms.date: 02/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -32,31 +32,29 @@ ms.dyn365.ops.version: Release 10.0.10
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to hook into data action pre/post events to further process data if needed.
+This topic describes how to hook into pre- and post- data action events to further process data if needed.
 
 ## Overview
 
-The set of modules included with the module library use pre-existing data actions to fetch data for the module to use.  You may have scenarios where you want to change some business logic in the data action layer. Along with [data action overrides](data-action-overrides.md) the Commerce e-Commerce platform has the ability to hook into pre and post data action events.
+The set of modules included with the Dynamics 365 Commerce module library use preexisting data actions to fetch data for the modules to use. You may have scenarios where you want to change some business logic in the data action layer. In addition to support for data action overrides, the Commerce platform also has the ability to hook into pre- and post- data action events.
 
-## Supported hook events
+## Supported data action hook events
 
-The following list of hooks are supported:
-1. **prehook** - runs before the action starts to modify the data action input.  Note this is only applied to uncached data actions.
-1. **preReadOnlyHook** - runs before the action start but cannot modify the data action input.  Note this can be applied to both cached and uncached data actions.
-1. **postHook** - runs after the data action completes and can modify the data action output.  Note this is only applied to unchached data actions.
-1. **postReadOnlyHook** - runs after the data action completes but cannot modify the data action output.  This is supported on both cached and uncached data actions.
+The following data action hook events are supported:
+- **prehook**: Runs before the action starts to modify the data action input. Note that this is only applied to uncached data actions.
+- **preReadOnlyHook**: Runs before the action starts but cannot modify the data action input. Note that this can be applied to both cached and uncached data actions.
+- **postHook**: Runs after the data action completes and can modify the data action output. Note that this is only applied to uncached data actions.
+- **postReadOnlyHook**: Runs after the data action completes but cannot modify the data action output. This is supported on both cached and uncached data actions.
 
-rendered by the module but perhaps may want to alter the business logic in the data action.  With data action overrides, you can override the registered action by creating a new action with the same action id. Overriding a data action will cause all previous uses of the data action, either through import or inclusion in the module definition.json file, to use your new data action.
+## Use data action hooks
 
-## Using data action hooks
-
-To use a data action hook you can leverage the **add-data-action** CLI to create the file.  The below example will create a data action file "get-address-hook.action.ts" under the "\src\actions" directory.
+To use a data action hook, you can leverage the **add-data-action** command-line interface (CLI) command to create the file. The following example creates a data action file named "get-address-hook.action.ts" under the "\src\actions" directory.
 
 ```console
 yarn msdyn365 add-data-action get-address-hook
 ```
 
-Next, replace the file with the below template code and add the appropriate code to the event you are interested in.
+Next, you replace the code in the data action file with the following template code and then add appropriate code to the event you are interested in.
 
 ```typescript
 /*!
@@ -97,7 +95,7 @@ createDataActionHook({
 ```
 
 >[!NOTE]
-> You'll need to change the **Action_ID** to the data action ID you are adding event hooks to.  The module library list of data actions can be found under the SDK …\Msdyn365.Commerce.Online\node_modules\@msdyn365-commerce-modules\retail-actions\dist\lib directory.
+> You'll need to change the **Action_ID** to the data action ID you are adding event hooks to. The module library list of data actions can be found under the SDK …\Msdyn365.Commerce.Online\node_modules\@msdyn365-commerce-modules\retail-actions\dist\lib directory.
 
 ## Additional resources
 
