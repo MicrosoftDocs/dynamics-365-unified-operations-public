@@ -56,7 +56,7 @@ The following sections list the tables that are set up as examples in the **Germ
 
 ### General ledger
 
-The following tables show the General leger data structure definitions.
+The following tables show the General ledger data structure definitions.
 
 #### Sachkonten
 
