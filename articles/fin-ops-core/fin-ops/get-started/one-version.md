@@ -91,9 +91,9 @@ Customers on version 8.1 or later will only be able to apply the 8.1.x or v10.x 
 
 Yes, customers who are on version 7.3 are able to schedule platform updates directly in Lifecycle Services. A delay/pause experience is also available.
 
-### Do these updates apply to on-premises?
+### Service updates for on-premises
 
-Refer to the [Software lifecycle policy and on-premises releases](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/on-prem-version-update-policy?toc=/fin-and-ops/toc.json) topic for the specific expiration dates of the version that you are on. They will have a 3 service update expiry in general. However, the process of the updates outlined in this topic only apply to the cloud service.
+The policy and schedule for service updates are now the same for both cloud and on-premises. This includes for example the option to delay applying up to 3 consecutive updates. They way to apply updates are however slightly different, see [Apply updates to on-premises deployments] (https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/apply-updates-on-premises#update-an-on-premises-deployment).
 
 ## Process
 
