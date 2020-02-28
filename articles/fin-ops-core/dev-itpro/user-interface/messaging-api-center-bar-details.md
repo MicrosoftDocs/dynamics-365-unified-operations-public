@@ -36,34 +36,107 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes the messaging system.
 
-Message API
+Introduction
 -----------
 
-Microsoft Dynamics AX 2012 has an all-purpose, "one size fits all" window that displays a list of the most calls to **info()**, **warning()**, and **error()**. This window was appropriately and generically named the "Information Log," or “Infolog” for short. Although the Infolog was a useful tool in some cases, its “one size fits all” approach was deemed ineffective for differentiating severity and determining whether the user should be interrupted. A new messaging system improves the experience. This richer, more powerful messaging system that includes the following features:
+Microsoft Dynamics AX 2012 has an all-purpose, "one size fits all" window that displays a list of the most calls to **info()**, **warning()**, and **error()**. This window was appropriately and generically named the "Information Log," or “Infolog” for short. Although the Infolog was a useful tool in some cases, its “one size fits all” approach was deemed ineffective for differentiating severity and determining whether the user should be interrupted. A new messaging system was created for Finance and Operations apps to improve this experience. This richer, more powerful messaging system includes the following features:
 
 -   Improved association of a message with its context (form versus global).
 -   Improved level of interruption (none, subtle, and interrupting).
 -   Improved clarity between types of messages and their use.
 -   The control that is used to display messages is deterministic and based on form context.
 
-## Legacy API support: info(), warning()/checkfailed(), and error()
-The legacy **info()**, **warning()**, and **error()** application programming interfaces (APIs) are still supported. However, they now sit upon the framework's new messaging system, and their destination is deterministic. In other words, it uses the context of the call to determine the best way to present the message to the user. In general, if the use of the API originated from a form, the message appears in a message bar on that same form. (A drop dialog and a slider dialog are both considered forms.) **Note:** There are a few exceptions to this rule. If the message API was called from a slider dialog, and that dialog was closed, the message appears on the slider's parent form. Alternatively, if that slider was closed, and it was hosted by a workspace, the message is routed to the Action center. The message API never "eats" a message. If an appropriate host form isn't found, the message is sent to the Action center. The following screen shot shows the info, warning/checkfailed, and error bars. 
+## info(), warning()/checkfailed(), and error() [Legacy APIs]
+The legacy **info()**, **warning()**, and **error()** application programming interfaces (APIs) are still supported; however, these APIs now sit upon the framework's new messaging system. Within this new messaging system, messages are routed deterministically to the message or Action center by using the context of the API call to determine the best way to present the message to the user. In general, if the use of the API originated from a form, the message appears in a message bar on that same form. (Drop dialogs and slider dialogs are both considered forms.) 
 
-[![Screen shot showing the info, warning/checkfailed, and error bars](./media/1_api.jpg)](./media/1_api.jpg)
+The following illustration shows **info**, **warning**/**checkfailed**, and **error** message bars that correspond to page actions, or synchronous-authored messages that come from **info()**, **warning()**, and **error()**. 
 
-## Message API and batch or asynchronous operations
+[![Screenshot showing info, warning/checkfailed, and error messages](./media/1_api.jpg)](./media/1_api.jpg)
+
+> [!NOTE]
+> If these APIs are called from a slider dialog, but that slider dialog is closed before the message appears, the message is shown in a message bar on the slider dialog's parent page. If that slider dialog is closed before the message appears, and there is no parent page, the message is routed to the Action center. The messaging API never fails to show a message. If an appropriate host page isn't found, the message is sent to the Action center.
+
 If **info()**, **warning()**/**checkfailed()**, or **error()** is called from an asynchronous process (for example, a batch), there is no form context to consider, and the messages are sent to the Action center. (To open the Action center, click the flag icon on the navigation bar.) 
 
-[![Messages in Action center](./media/2_api.png)](./media/2_api.png)
+[![Messages the in Action center](./media/2_api.png)](./media/2_api.png)
 
-## Legacy API support: SetPrefix()
-This version also supports the **SetPrefix()** API. This too remains backward-compatible. However, the results of **SetPrefix()** don't actively interrupt the user. Instead, the results are collected and stored (as in previous versions), and a message bar or Action center notification is presented to the user. This notification indicates that the related task has been completed, and that it might have messages that the user should review. The "Notification of results" message actually uses the task's first call to **SetPrefix()** to frame the message. This behavior is similar to the behavior in previous versions, where the first call was the "title" of the results. In this example, "Posting Results" comes from the application's first call to **SetPrefix()**.
+## SetPrefix() [Legacy API]
+Finance and Operations apps also supports the **SetPrefix()** API for backwards compatibility. However, in this messaging system, the results of **SetPrefix()** don't actively interrupt the user; instead, the results are collected and stored (as in previous versions), and a message bar or Action center notification is presented to the user. This notification indicates that the related task has been completed, and that it might have messages that the user should review. The "Notification of results" message actually uses the task's first call to **SetPrefix()** to frame the message. This behavior is similar to the behavior in previous versions, where the first call was the "title" of the results. In this example, "Posting Results" comes from the application's first call to **SetPrefix()**.
 
 [![SetPrefix example](./media/3_api.png)](./media/3_api.png) 
 
-The user can then click **Message Details** to open the new **Message details** pane. 
+The user can then click **Message details** to open the new **Message details** pane. 
 
 [![Message details pane](./media/4_api.png)](./media/4_api.png)
+
+## Message() 
+The **Message** API is new addition to Finance and Operations and provides some unique capabilities not offered by the legacy valiation message APIs (**info()**, **warning()**/**checkfailed()**, and **error()**). 
+
+First, the **Message()** API gives developers more control over the lifecycle of a message by allowing them to explicitly add and remove messages. This API can be useful when validation messages need to be removed at times other than when a save boundary has been crossed, or for displaying informational messages about aspects of the user's experience that aren't necessarily related to data validation. In this example, the message is shown when the current record is displayed.
+
+![Example of the Message::Add API used for informational message](./media/messaging_singlemessagebarinfo.jpg)
+
+```xpp
+messageId = Message::Add(MessageSeverity::Informational, "The customer is marked as inactive");
+```
+
+The message can then be cleared when a new record is shown on the page.
+
+```xpp
+Message::Remove(messageId);
+```
+
+Secondly, starting in 10.0.10 / Platform update 34, the **Message::AddAction()** method can be used to embed an action within a message. This method supports adding a single action that is associated with a display or action menu item, which is then visualized as a link button.  
+
+![Example of the Message:AddAction API used for embedding an action in a message](./media/messaging_singlemessagebarinfo.jpg)
+
+```xpp
+messageId = Message::Add(MessageSeverity::Informational, "The customer is marked as inactive", "Activate customer", MessageActionType::ActionMenuItem, );
+```
+
+The following messaging types are supported: **MessageSeverity::Info**, **MessageSeverity::Warning**, and **MessageSeverity::Error**. Messages that use the **Message()** API are also deterministic. They can be routed to a message bar or the Action center.
+
+## SystemNotificationsManager() 
+The **SystemNotificationsManager()** API is also a new addition to Finance and Operations messaging system and targets notifications designed to be sent to the Action center. This API provides the following features: 
+
+-  Associating one or more actions to the notification 
+-  Routing a notification to a set of users, or to all the users in one or more security roles
+-  Defining an expiration date for the notification
+-  Tracking the state of the notification (e.g. you can mark a notification as "Completed")  
+
+![Example of a message sent using the SystemNotificationsManager API](./media/messaging_singlemessagebarinfo.jpg)
+
+```xpp
+// Set up the notification 
+SystemNotificationDataContract notification = new SystemNotificationDataContract();
+notification.Roles(roles);
+notification.Title("Export to Excel finished");
+notification.RuleId('ExcelStaticExport');
+notification.Message("We finished your export from the Customers page");
+notification.ExpirationDateTime(DateTimeUtil::addHours(DateTimeUtil::utcNow(), 48));
+
+// Set up the action associated with the notification
+SystemNotificationActionDataContract action = new SystemNotificationActionDataContract();
+action.Message("Click to download");
+action.Type(SystemNotificationActionType::AxActionMenuFunction);
+
+SystemNotificationMenuFunctionDataContract actionData = new SystemNotificationMenuFunctionDataContract();
+actionData.MenuItemName(menuItemActionStr(ExportToExcelStaticOpenFileAction));
+actionData.Data(fileName);
+action.Data(FormJsonSerializer::serializeClass(actionData));
+notification.Actions().value(1, action);
+
+SystemNotificationsManager::AddNotification(notification);
+```
+
+The message can then be cleared when a new record is shown on the page.
+
+```xpp
+Message::Remove(messageId);
+```
+
+
+
 
 | Message type | Description                                                                                                                                                                                                                                                                                                                                  |
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
