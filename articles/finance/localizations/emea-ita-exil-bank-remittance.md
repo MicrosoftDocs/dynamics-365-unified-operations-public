@@ -32,12 +32,15 @@ ms.dyn365.ops.version: 10.0.10
 
 [!include [banner](../includes/banner.md)]
 
-In Italy, ...
+This topic 
 
 ## Prerequisites
 
+Before you can post financial transactions for invoices that have a total amount of 0 (zero), the following prerequisites must be met:
+
 - The primary address of the legal entity must be in Italy.
 - In the **Feature management** workspace, turn on the **Configurable posting profiles for banks and remittance types** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+
 
 ## Set up...
 
