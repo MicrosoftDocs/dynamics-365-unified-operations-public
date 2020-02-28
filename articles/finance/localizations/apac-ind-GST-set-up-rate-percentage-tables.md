@@ -33,11 +33,11 @@ ms.dyn365.ops.version: 10.0.4
 [!include [banner](../includes/banner.md)]
 
 1. Expand the **Tax component** node, and select the **Rate** node.
-2. In the **Value** field, enter the tax rate. All the other fields are for determining the rate. In the standard GST configuration, there are lots of pre-defined fields like HSN, SAC, Consumption State,etc.. You can pick the ones which are relevant to your business to determine the rate. 
+2. In the **Value** field, enter the tax rate. All the other fields (input fields) are for determining the rate. In the standard GST configuration, there are lots of pre-defined fields like HSN, SAC, Consumption State,etc.. You can pick the ones which are relevant to your business to determine the rate. 
 
     ![Tax rates](media/tax-rate.png)
 
-    Leaving any input fields as empty means it accepts all values. Take the simplifed rate table below as an example, the rate is 12% if *HSN* is 998313 no matter what is the value of *Party GST Registration Number*. 
+    The logical relationship among the input fields are **AND**. Leaving any input fields as empty means it accepts all values. Take the simplifed rate table below as an example, the rate is 12% if *HSN* is 998313 and no matter what is the value of *Party GST Registration Number*. 
 
     | HSN    | Party GST Registration Number | Value |
     | ------ | ----------------------------- | ----- |

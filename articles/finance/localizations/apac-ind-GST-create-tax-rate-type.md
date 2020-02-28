@@ -53,7 +53,7 @@ In most of the taxation systems, there is concept of tax rate type, like standar
 | 0%    | Nil       | Basic foods, including: fish, meat, dairy, vegetables, bread,   salt. Postal services. Books and newspapers. Accomodiation below Rs 999 per   night                                                           |
 | 5%    | Low       | Household necessities such as edible   oil, sugar, spices, tea, and coffee (except instant) are included.   Coal , Mishti/Mithai (Indian Sweets) and Life-saving drugs are also covered   under this GST slab |
 | 12%   | Standard1 | This includes computers and processed food                                                                                                                                                                    |
-| 18%   | Standard2 | Hair oil, toothpaste and soaps, capital goods and industrial   intermediaries are covered in this slab                                                                                                        |
+| 18%   | Standard2 | Hair oil, toothpaste and soaps, capital goods and industrial   intermediaries are covered in this                                                                                                             |
 | 28%   | High      | Luxury items such as small cars , consumer durables like AC and   Refrigerators, premium cars, cigarettes and aerated drinks , High-end   motorcycles  are included here.                                     |
 
 ## When to use tax rate type
@@ -86,7 +86,7 @@ Users can also import the tax rate type via its data entity **Tax rate type**
 
 ## Assign tax rate type to relevant taxable master data
 
-You can associate the Tax Rate Type to following taxable master data, and they are all supported by data entity.
+You can associate the Tax Rate Type to following taxable master data, and they are all supported by data entity. With it attached, when you create taxable transactions with these master data, like sales order, sales invoice, etc., the attached tax rate type will be defaulted in the transaction and further be respected for rate determinated.
 
 - Released Product
 - Procurement/Sales categories
