@@ -93,7 +93,7 @@ Yes, customers who are on version 7.3 are able to schedule platform updates dire
 
 ### Service updates for on-premises
 
-The policy and schedule for service updates are now the same for both cloud and on-premises. This includes for example the option to delay applying up to 3 consecutive updates. They way to apply updates are however slightly different, see [Apply updates to on-premises deployments] (https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/apply-updates-on-premises#update-an-on-premises-deployment).
+The policy and schedule for service updates are now the same for both cloud and on-premises. This includes for example the option to delay applying up to 3 consecutive updates. They way to apply updates are however slightly different, see [Apply updates to on-premises deployments] (https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/deployment/apply-updates-on-premises#update-an-on-premises-deployment).
 
 ## Process
 
