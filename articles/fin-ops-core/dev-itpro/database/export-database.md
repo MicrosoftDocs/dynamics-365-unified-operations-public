@@ -57,7 +57,7 @@ When you export a database backup from an environment, some elements of the data
 * All users except the admin will be set to **Disabled** status.
 * All batch jobs are set to **Withhold** status.
 * All users will have their partition value reset to the "initial" partition record ID.
-* All Microsoft-encrypted fields will be cleared, as they cannot be decrypted on a different database server.  For example, the Password field in the SysEmailSMTPPassword table.
+* All Microsoft-encrypted fields will be cleared, because they can't be decrypted on a different database server. An example is the **Password** field in the SysEmailSMTPPassword table.
 
 ### Known issues
 
