@@ -49,12 +49,12 @@ To crop an image in site builder, follow these steps.
 1. On the command bar, select **Edit** to check out the file.
 1. Select the image to enter **Edit Mode**.
 1. Under **Edit Mode**, select **Edit View by Module**.
-1. Select the module type from the **Module** drop down menu.
-1. Select the view type from the **View type** drop down menu.
-1. Select the image placement from the **Placement** drop down menu.
-1. Select the viewport size from the **Viewport** drop down menu.
+1. From the **Module** drop-down menu, select the module type.
+1. From the **View type** drop-down menu, select the view type.
+1. From the **Placement** drop-down menu, select the image placement.
+1. From the **Viewport** drop-down menu, select the viewport size.
 1. The image is overlaid with the area representing the crop region. Move and resize the crop region as needed. The aspect ratio will be maintained automatically.
-1. When done, on the command bar select **Save**, and then select **Finish editing**. 
+1. When you're done, on the command bar, select **Save**, and then select **Finish editing**. 
 
 After custom cropping is completed, image modifications will take effect almost immediately.
 
