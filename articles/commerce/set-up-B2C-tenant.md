@@ -52,14 +52,14 @@ Dynamics 365 Commerce uses Azure AD B2C to support user credential and authentic
         1. Select **Create a new Azure AD B2C Tenant**.
         1. Under **Organization name**, enter the organization name.
         1. Under **Initial domain name**, enter the initial domain name.
-        1. In the **Country or region** drop down menu, select the country or region.
+        1. For **Country or region**, select the country or region.
         1. Select **Create** to create the tenant.
 
      ![Create a new Azure AD Tenant](./media/B2CImage_2.png)
 
      - **Link an existing Azure AD B2C Tenant to my Azure subscription**: Use this option if you already have an Azure AD B2C tenant you want to link to.
         1. Select **Link an existing Azure AD B2C Tenant to my Azure subscription**.
-        1. In the **Azure AD B2C Tenant** drop down menu, select the appropriate B2C tenant. If the message "No eligible B2C Tenants found" appears in the selection box, you do not have an existing eligible B2C tenant and will need to create a new one.
+        1. For **Azure AD B2C Tenant**, select the appropriate B2C tenant. If the message "No eligible B2C Tenants found" appears in the selection box, you do not have an existing eligible B2C tenant and will need to create a new one.
         1. For **Resource group**, select **Create new**. Enter a **Name** for the resource group that will contain the tenant, select the **Resource group location**, and then select **Create**.
 
     ![Link an existing Azure AD B2C Tenant to Azure Subscription](./media/B2CImage_3.png)
@@ -83,8 +83,8 @@ To create the B2C application, follow these steps.
 
 1. In the Azure portal, select **Applications** and then select **Add**.
 1. Under **Name**, enter the name of the desired AAD B2C application.
-1. Under **Web App/Web API**, for **Include web app / web API** select **Yes**.
-1. For **Allow implicit flow** select **Yes** (the default value).
+1. Under **Web App/Web API**, for **Include web app / web API**, select **Yes**.
+1. For **Allow implicit flow**, select **Yes** (the default value).
 1. Under **Reply URL**, enter your dedicated reply URLs. See [Reply URLs](#reply-urls) below for information on reply URLs and how to format them here.
 1. For **Include native client**, select **No** (the default value).
 1. Select **Create**.
@@ -93,7 +93,7 @@ To create the B2C application, follow these steps.
 
 Reply URLs are important as they allow a whitelist of the return domains when your site calls Azure AD B2C to authenticate a user. This allows the return of the authenticated user back to the domain from which they are signing into (your site domain). 
 
-In the **Reply URL** box of the **Azure AD B2c - Applications \> New application** screen, you need to add separate lines for both your site domain and (once your environment is provisioned) the Commerce-generated URL. These URLs must always use a valid URL format, and must be base URLs only (no trailing forward slashes or paths). The string ``/_msdyn365/authresp`` then needs to be appended to the base URLs, as in the following examples.
+In the **Reply URL** box on the **Azure AD B2c - Applications \> New application** screen, you need to add separate lines for both your site domain and (once your environment is provisioned) the Commerce-generated URL. These URLs must always use a valid URL format and must be base URLs only (no trailing forward slashes or paths). The string ``/_msdyn365/authresp`` then needs to be appended to the base URLs, as in the following examples.
 
 - ``https://fabrikam.com/_msdyn365/authresp``
 - ``https://fabrikam-prod.commerce.dynamics.com/_msdyn365/authresp``
@@ -133,7 +133,7 @@ To create a sign up and sign in user flow policy, follow these steps.
 
 1. Select **Create**.
 
-The following image an example of the Azure AD B2C sign up and sign in user flow.
+The following image is an example of the Azure AD B2C sign up and sign in user flow.
 
 ![Sign Up and Sign In policy settings](./media/B2CImage_11.png)
 
@@ -148,7 +148,7 @@ To create a profile editing user flow policy, follow these steps.
 1. In the Azure portal, select **User flows (policies)** in the left navigation pane.
 1. On the **Azure AD B2C – User flows (policies)** page, select **New User Flow**.
 1. On the **Recommended** tab, select **Profile editing**.
-1. Under **Name**, enter a or the profile editing user flow. This name will display afterwards with a prefix the portal assigns (for example, "B2C_1_").
+1. Under **Name**, enter the profile editing user flow. This name will display afterwards with a prefix the portal assigns (for example, "B2C_1_").
 1. Under **Identity providers**, select **Local Account SignIn**.
 1. Under **User attributes**, select the following check boxes:
     - **Email Addresses** (**Return claim** only)
@@ -180,7 +180,7 @@ To create a password reset user flow policy, follow these steps.
     - **User's Object ID**
 1. Select **Create**.
 
-The following image shows where to set "Reset Password using mail address" in the Azure AD B2C password reset user flow.
+The following image shows where to set **Reset Password using mail address** in the Azure AD B2C password reset user flow.
 
 ![Set "Reset Password using mail address" in Password Reset policy](./media/B2CImage_13.png)
 
@@ -220,7 +220,7 @@ To add and set up a social identity provider, follow these steps.
 1. Under **Client ID**, enter the client ID as obtained from the identity provider application setup.
 1. Under **Client secret**, enter the client secret as obtained from the identity provider application setup.
 1. Attach user flow for sign in sign up policies:
-1. Go to **Azure AD B2C – User flows (policies) \> {your sign-in sign-up policy} \> Identity providers**
+1. Go to **Azure AD B2C – User flows (policies) \> {your sign-in sign-up policy} \> Identity providers**.
 1. To attach the sign in/sign up user flow policy, select each identity provider you have set up for your account. To test these, select **Run user flow** for each identity provider. A new tab will display the sign-in page displaying the new identity provider selection box.
 
 The following image shows examples of the **Add identity provider** and **Set up the social identity provider** screens in Azure AD B2C.
@@ -253,7 +253,7 @@ To update headquarters with the new Azure AD B2C information, follow these steps
 1. On the action pane, select **Save**.
 1. In the Commerce search box, search for **Number sequences** (Organization administration > Number sequences).
 1. Under the action pane, select **Edit** under **Maintain**.
-1. On the **General** fast tab, slect **No** for **Manual**.
+1. On the **General** fast tab, select **No** for **Manual**.
 1. On the action pane, select **Save**. 
 1. In the Commerce search box, search for **Distribution schedule**
 1. In the left navigation menu of the **Distribution schedules** page, select job **1110 Global configuration**.
@@ -320,7 +320,9 @@ To add your AAD B2C tenant application information to Commerce, follow these ste
 ### Associate the B2C application to your site and channel
 
 > [!WARNING]
-> If your site is already associated with a B2C application, changing to a different B2C application will remove the current references established for users already signed up in this environment. If changed, any credentials associated with the currently-assigned B2C application will not be available to users. Only update the B2C application if you are setting up the channel's B2C application for the first time or if you intend to have users re-sign up with new credentials to this channel with the new B2C application. Take caution when associating channels to B2C applications, and name applications clearly. If a channel is not associated to a B2C application in the steps below, users signing into that channel for your site will be entered into the B2C application showing as **default** in the **Tenant Settings \> B2C Settings** list of B2C applications.
+> If your site is already associated with a B2C application, changing to a different B2C application will remove the current references established for users already signed up in this environment. If changed, any credentials associated with the currently-assigned B2C application will not be available to users. 
+> 
+> Only update the B2C application if you are setting up the channel's B2C application for the first time or if you intend to have users re-sign up with new credentials to this channel with the new B2C application. Take caution when associating channels to B2C applications, and name applications clearly. If a channel is not associated to a B2C application in the steps below, users signing into that channel for your site will be entered into the B2C application showing as **default** in the **Tenant Settings \> B2C Settings** list of B2C applications.
 
 To associate the B2C application to your site and channel, follow these steps.
 
