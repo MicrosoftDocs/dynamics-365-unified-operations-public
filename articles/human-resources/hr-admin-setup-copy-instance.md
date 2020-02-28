@@ -2,7 +2,7 @@
 # required metadata
 
 title: Copy an instance
-description: 
+description: You can use Microsoft Dynamics Lifecycle Services (LCS) to copy a Microsoft Dynamics 365 Human Resources database to a sandbox environment.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020

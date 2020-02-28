@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Human Resources
-description: 
+description: Each week, we provide a new release for Microsoft Dynamics 365 Human Resources. The articles listed in this topic detail the changes made each week.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -46,6 +46,7 @@ For more information about upcoming features or the update process for Human Res
 
 To see what's new or changed in each weekly release of Human Resources, see the following articles:
 
+[February 25, 2020](hr-whats-new-2020-02-25.md)</br>
 [February 18, 2020](hr-whats-new-2020-02-18.md)</br>
 [February 12, 2020](hr-whats-new-2020-02-12.md)</br>
 [February 7, 2020](hr-whats-new-2020-02-07.md)</br>

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Business events in Microsoft Power Automate
-description: This topics provides information abou the business events that are available for consumption in Microsoft Power Automate via the application connector.
+description: This topic provides information about the business events that are available for consumption in Microsoft Power Automate via the application connector.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 02/18/2020

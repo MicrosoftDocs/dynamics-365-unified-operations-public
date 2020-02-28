@@ -2,7 +2,7 @@
 # required metadata
 
 title: Regulatory updates
-description: This topic provides a list of planned and released reguatory updates for Microsoft Dynamics 365 Finance.
+description: This topic provides a list of planned and released regulatory updates for Microsoft Dynamics 365 Finance.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/29/2020
