@@ -51,7 +51,7 @@ A new feature switch called **Enable filter auto charges by channel** is created
 	5. Go to **Retail and Commerce** > ** Retail and Commerce IT** > **Distribution schedule** then run **1110 Global configuration** CDX job to propagate the configuration changes. 
 
 > [!WARNING]
-> If you decide to disable **Enable filter auto charges by channel** switch after using the feature, you will notice that **Retail channel relation** dropdown disappearing under **Auto charges**. Review all auto-charges rules and make necessary changes to the rules those configured using channel relation, as some auto charges rules may become duplicative to an existing auto-charge that was configured without the channel.  
+> If you decide to deactivate the **Enable filter auto charges by channel** switch after using the feature, the **Retail channel relation** drop down under **Auto charges** will disappear and you will lose all existing configurations. If removing **Retail channel relation** configurations would result in duplicate auto-charges rules then deactivation will fail. Please review all auto-charges rules and make the necessary changes.
 
 
 **Configure organization hierarchy purpose**
