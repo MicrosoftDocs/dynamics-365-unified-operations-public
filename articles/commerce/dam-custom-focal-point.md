@@ -50,7 +50,7 @@ To define a custom focal point for an image, follow these steps.
 1. Select the image to enter **Edit Mode**.
 1. Under **Edit Mode**, select **Change Focal Point**. A circular focal point control appears over the image.
 1. Select the focal point control to move it over the desired focal point.
-1. When done, on the command bar select **Save**, and then select **Finish editing**.
+1. When you're done, on the command bar select **Save**, and then select **Finish editing**.
 
 ## Additional resources
 
