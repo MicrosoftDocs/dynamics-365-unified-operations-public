@@ -44,6 +44,9 @@ Before you can post financial transactions for invoices that have a total amount
 
 ## Set up...
 
+![Bank account setup](media/emea-ita-exil-different%20accounts%20per%20company%20bank%26remittance%20type.PNG)
+
+
 Define...
 
 ## Use...
