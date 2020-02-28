@@ -65,10 +65,10 @@ Open the **Days overdue** tab if the blocking rule applies to customer with one 
    - For the **Table** range, the lookup will provide a list of customers to select. 
    - Select a **Group** if the rule applies to a customer credit group.
    - Select **All** if the rule applies to all customers. 
-3. Select **Risk group** to use criteria for applying a credit management hold on customers that are grouped by a commont set of factors, such as their Dun and Bradstreet rating, the number of years that they've been in business, the amount of time they've been your customer, and so on.  
+3. Select **Risk group** to use criteria for applying a credit management hold on customers that are grouped by a common set of factors, such as their Dun and Bradstreet rating, the number of years that they've been in business, the amount of time they've been your customer, and so on.  
 4. Select the type of rule that you are setting up. The **Blocking** option will create a rule that blocks an order. The **Exclusion** option will create a rule that will exclude another rule from blocking an order. 
 5. Select a **Value type**. The default entry is a fixed number of days. If you are creating an exclusion, you can specify a fixed number of days or an amount instead. 
-6. Enter the number of days **Overdue** that will be allowed for the selected blocking rule before an order is placed on credit management hold for review. The number of days overdue represents an additional number of grace days that are added to the number of  days beyond the payment due date that the invoice can have before it is considered overdue. If you specified the **Value type** as an amount for an exclusion, then enter an amnount and a currency for that amount.
+6. Enter the number of days **Overdue** that will be allowed for the selected blocking rule before an order is placed on credit management hold for review. The number of days overdue represents an additional number of grace days that are added to the number of  days beyond the payment due date that the invoice can have before it is considered overdue. If you specified the **Value type** as an amount for an exclusion, then enter an amount and a currency for that amount.
 
 ### Accounts status
 
@@ -115,8 +115,7 @@ Open the **Overdue Amount** tab if the blocking rule applies to customers with o
    - Select **Blocking** to create a rule that blocks an order. 
    - Select **Exclusion** to create a rule that will exclude another rule from blocking an order. 
 5. Enter the **Overdue amount** for the selected blocking rule before an order is placed on credit management hold for review. 
-6. Select the **Value type** that defines the type of value that will be used to also test how much of the credit limit has been used. Blocking rules require a percentage but an exclusion can have a fixed amount or percentage.
-shold. The Threshold relates to the Credit limit.
+6. Select the **Value type** that defines the type of value that will be used to also test how much of the credit limit has been used. Blocking rules require a percentage but an exclusion can have a fixed amount or percentage. The Threshold relates to the Credit limit.
 7. Enter the **Credit limit threshold** value for the selected rule before a customer goes on credit management hold. This can be an amount or a percentage based on the value type select in the value type.
 8. The rule checks that the **Overdue amount** is exceeded and the **Credit limit threshold** is exceeded. 
 
@@ -195,7 +194,7 @@ The behavior of the **Credit limit used** rule will change based on the settings
 
 Orders can be excluded from credit management even if there are rules in place. 
 
-- If you change the settings **Exclude customer from credit management** in **All customers > select a customer > Credit and collections fasttab** to **Yes**, then no orders for that customer will be processed
+- If you change the settings **Exclude customer from credit management** in **All customers > Select a customer > Credit and collections** FastTab to **Yes**, then no orders for that customer will be processed
 - If you change the value **Exclude from credit management** on the **sales orders header** in the **Credit management fast tab** to **Yes**, then the credit management rules will not be processed. This setting can only be done by the credit clerk or credit manager.
 
 ## Processing orders on hold using the credit management hold list
@@ -214,7 +213,7 @@ A sales order can be placed in the hold list for the following reasons:
 8. The payment terms differ from the default payment terms for the customer.
 9. The settlement discounts differ from the default settlement discount for the customer.
 
-The blocking reason is displayed for each sales order in the hold list. If there are more than one reason for the hold, the reason will show as **Multiple**. You can use the **Blocking reasons** menu on the Action Pane to view all of the reasons why the sales order was placed on hold. You can also view the **Blocking reasons** in a factbox.
+The blocking reason is displayed for each sales order in the hold list. If there are more than one reason for the hold, the reason will show as **Multiple**. You can use the **Blocking reasons** menu on the Action Pane to view all of the reasons why the sales order was placed on hold. You can also view the **Blocking reasons** in a FactBox.
 
 ### Releasing orders from the hold list for processing
 
