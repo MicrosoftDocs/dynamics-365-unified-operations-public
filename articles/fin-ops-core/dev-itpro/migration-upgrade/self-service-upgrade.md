@@ -61,9 +61,9 @@ If you choose to upgrade your sandbox environment to version 8.1.3 with PU 23 an
 ### Targeted release schedule
 
 > [!NOTE]
-> The dates in this table are subject to change.  Upgrade is available at minimum 2 weeks after the GA date for new customers.  It is at maximum 6 weeks after GA date for new customers. In addition, **Upgrade support with a target version of application 7.3 ends in March, 2020.**
+> The dates in this table are subject to change. Upgrades are available a minimum of two weeks and a maximum of six weeks after the date of general availability (GA) for new customers. In addition, **support for upgrades that have a target version of application 7.3 ends in March 2020**.
 
-| Selectable versions | General availability (GA) of the latest version for new customers | GA of the latest version for UPGRADE |
+| Selectable versions | GA of the latest version for new customers | GA of the latest version for upgrade |
 |---|---|---|
 | 7.3 with PU 23 – PU 25<br>8.1.3 with PU 23 – 10.0.1 with PU 25 | Week of April 8, 2019 | Week of April 29, 2019 |
 | 7.3 with PU 24 – PU 26<br>10.0.0 with PU 24 – 10.0.2 with PU 26 | Week of May 13, 2019 | Week of May 27, 2019 |
