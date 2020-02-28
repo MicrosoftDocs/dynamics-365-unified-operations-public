@@ -36,7 +36,7 @@ This topic describes how to hook into pre- and post- data action events to furth
 
 ## Overview
 
-The set of modules included with the Dynamics 365 Commerce module library use preexisting data actions to fetch data for the modules to use. You may have scenarios where you want to change some business logic in the data action layer. In addition to support for data action overrides, the Commerce platform also has the ability to hook into pre- and post- data action events.
+The set of modules included with the Dynamics 365 Commerce software development kit (SDK) module library use preexisting data actions to fetch data for the modules to use. You may have scenarios where you want to change some business logic in the data action layer. In addition to support for data action overrides, the Commerce platform also has the ability to hook into pre- and post- data action events.
 
 ## Supported data action hook events
 
@@ -95,7 +95,7 @@ createDataActionHook({
 ```
 
 >[!NOTE]
-> You'll need to change the **Action_ID** to the data action ID you are adding event hooks to. The module library list of data actions can be found under the SDK …\Msdyn365.Commerce.Online\node_modules\@msdyn365-commerce-modules\retail-actions\dist\lib directory.
+> You'll need to change the **Action_ID** to the data action ID you are adding event hooks to. The module library list of data actions can be found in the …\Msdyn365.Commerce.Online\node_modules\@msdyn365-commerce-modules\retail-actions\dist\lib directory of the SDK.
 
 ## Additional resources
 
