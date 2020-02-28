@@ -50,7 +50,7 @@ The following features are included in this release. The feature titles link to 
  
  - [Prohibit submission to workflow when the invoice total and registered invoice total are not equal](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/prohibit-submission-workflow-when-invoice-total-registered-invoice-total-are-not-equal)
  
- - [Update bank balances when posting transactions using advanced ledger entry](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/update-bank-balances-when-posting-transactions-using-advanced-ledger-entry)
+ - [Allow Interest distribution and Escheatment to use feature – Lets you update bank balances when posting advanced ledger entries](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/allow-interest-distribution-escheatment-use-feature--lets-update-bank-balances-when-posting-advanced-ledger-entries)
  
  - [Allow filtering the Tax 1099 detail report by reporting year](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/allow-filtering-tax-1099-detail-report-reporting-year)
  
