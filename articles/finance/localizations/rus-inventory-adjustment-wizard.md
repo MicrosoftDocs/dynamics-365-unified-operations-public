@@ -184,7 +184,7 @@ This method lets you determine the adjustment amount based on the balance of the
     - Select the **Balance account** option to determine the account balance, or select the **Balance from ledger account and dimensions** option to determine an account balance by using specific dimension values.
     - In the **Dimension set** field, select the set of dimensions to determine the account balance from. This field is available only if the **Balance from ledger account and dimensions** option is selected.
 
-    ![Balance from ledger acount or dimensions page](media/10%20Balance%20from%20ledger%20account%20or%20dimensions.png)
+    ![Balance from ledger account or dimensions page](media/10%20Balance%20from%20ledger%20account%20or%20dimensions.png)
 
 4. Select **Next**.
 5. Select the amounts to include in the adjustment. You can use the **Select all** and **Deselect all** links to select and clear all lines.
