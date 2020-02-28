@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Define Tax Rate Type and assign it to relevant master data  
-description: This topic explains how to define Tax Rate Type and assign it to the relevant master data. This task is part of the master data setup that is required to make the India localization solution for Goods and Services Tax (GST) available.
+title: Define a tax rate type and assign it to relevant master data  
+description: This topic explains how to define the tax rate type and assign it to the relevant master data. 
 author: yijialuan 
 manager: kfend
-ms.date: 02/15/2020
+ms.date: 02/24/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-applications
@@ -32,36 +32,39 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-To make the India localization solution for Goods and Services Tax (GST) in Microsoft Dynamics 365 Finance available, you must complete the following master data setup:
+This topic explains how to define the tax rate type and assign it to the relevant master data. This task is part of the master data setup that is required to make the India localization solution for Goods and Services Tax (GST) available.
 
-- Define a business vertical.
-- Update the state code and union territory.
-- Create a Goods and Services Tax Identification Number (GSTIN) master.
-- Define GSTINs for the legal entity, warehouse, vendor, or customer masters.
-- Define Harmonized System of Nomenclature (HSN) codes and Service Accounting Codes (SACs).
-- Define Tax rate type
-- Create main accounts for the GST posting type.
-- Create a tax settlement period.
-- Attach the GSTIN to a tax registration group.
+To make the India localization solution GST available in Dynamics 365 Finance, you must complete the following master data setup:
 
-## What is tax rate type
+- Define a business vertical
+- Update the state code and union territory
+- Create a Goods and Services Tax Identification Number (GSTIN) master
+- Define GSTINs for the legal entity, warehouse, vendor, or customer masters
+- Define Harmonized System of Nomenclature (HSN) codes and Service Accounting Codes (SACs)
+- Define tax rate type
+- Create main accounts for the GST posting type
+- Create a tax settlement period
+- Attach the GSTIN to a tax registration group
 
-In most of the taxation systems, there is concept of tax rate type, like standard tax rate, reduced tax rate, super reduced tax rate, etc.. In India GST, there are following five slabs:
+## Tax rate type
 
-| Rates | Type      | Products                                                                                                                                                                                                      |
-| ----- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0%    | Nil       | Basic foods, including: fish, meat, dairy, vegetables, bread,   salt. Postal services. Books and newspapers. Accomodiation below Rs 999 per   night                                                           |
-| 5%    | Low       | Household necessities such as edible   oil, sugar, spices, tea, and coffee (except instant) are included.   Coal , Mishti/Mithai (Indian Sweets) and Life-saving drugs are also covered   under this GST slab |
-| 12%   | Standard1 | This includes computers and processed food                                                                                                                                                                    |
-| 18%   | Standard2 | Hair oil, toothpaste and soaps, capital goods and industrial   intermediaries are covered in this                                                                                                             |
-| 28%   | High      | Luxury items such as small cars , consumer durables like AC and   Refrigerators, premium cars, cigarettes and aerated drinks , High-end   motorcycles  are included here.                                     |
+In most taxation systems, there is the concept of a tax rate type, such as standard tax rate, reduced tax rate and super reduced tax rate. In India GST, there are five types as shown in the following table:
+
+| Rates | Type      | Products                                                                                                                                                     |
+| ----- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 0%    | Nil       | Basic foods, including fish, meat, dairy, vegetables, bread, and salt. Postal services. Books and newspapers. Accomodation below Rs 999 per night.           |
+| 5%    | Low       | Household necessities, such as consumable oil, sugar, spices, tea, and coffee (except instant). Coal, Mmishti/mithai (Indian sweets), and life-saving drugs. |
+| 12%   | Standard1 | Computers and processed food.                                                                                                                                |
+| 18%   | Standard2 | Hair oil, toothpaste and soaps. Capital goods. Industrial intermediaries.                                                                                    |
+| 28%   | High      | Luxury items, such as small cars, consumer durables like AC and refrigerators, premium cars, cigarettes, carbonated beverages, and high-end motorcycles.     |
 
 ## When to use tax rate type
 
-It's not mandatory to setup the Tax Rate Type. In the standard GST configuration, HSN/SAC is used to determne the GST rate. For users who maintain lots of [HSN/SAC](apac-ind-GST-hsn-service-accounting-codes.md), it's time consuming to do the [tax setup](apac-ind-GST-set-up-rate-percentage-tables.md), and it also takes longer time to for the tax engine to pick up the tax rate.
+It's not mandatory to set up the tax rate type. In the standard GST configuration, HSN codes and SACs are used to determine the GST rate. For users who maintain multiple [HSN codes and SACs](apac-ind-GST-hsn-service-accounting-codes.md), it's time consuming to complete the [tax setup](apac-ind-GST-set-up-rate-percentage-tables.md), and it also takes longer for the tax engine to pick up the tax rate.
 
-With the tax rate type, ideally the tax setup for the GST rate can be simplied into just a few records. There might a bit more records if consider the scenarios of tax exemptation, reverse charge, etc., but it is still much lesser than setting up rate rate by HSN/SAC.
-| Tax Rate Type | Rate |
+With the tax rate type, the tax setup for the GST rate can be simplified with just a few records, however, there will be more records if you consider the scenarios such as tax exemptations and reverse charges.
+
+| Tax rate type | Rate |
 | ------------- | ---- |
 | Nil           | 0%   |
 | Low           | 5%   |
@@ -70,24 +73,24 @@ With the tax rate type, ideally the tax setup for the GST rate can be simplied i
 | High          | 28%  |
 
 > [!NOTE]
-> Use tax rate type does not mean you do not need to define HSN/SAC which is mandatory from GSTR perspective. 
+> When using the tax rate type, HSN and SAC definitions are required for GSTR. 
 
-## Define tax rate type
+## Define a tax rate type
 
 1. Go to **Product information management** \> **Products** \> **Released products**.
-2. Open one released product.
-3. In the **General** fasttab, find the Tax rate type.
-4. Right click the arrow and click the context menu: **View details**.
-5. Enter the name and description of the tax rate types you want to add.
+2. Select and open a released product. 
+3. On the **General** fast tab, find the **Tax rate type** field.
+4. Right-click the field and select **View details**.
+5. Enter the name and description of the tax rate type you want to add.
 
-![Define tax rate type](media/IND-define-tax-rate-type.png)
+    ![Define tax rate type](media/IND-define-tax-rate-type.png)
 
-Users can also import the tax rate type via its data entity **Tax rate type**
+You can also import the tax rate type by using its data entity, **Tax rate type**.
 
-## Assign tax rate type to relevant taxable master data
+## Assign a tax rate type to relevant taxable master data
 
-You can associate the Tax Rate Type to following taxable master data, and they are all supported by data entity. With it attached, when you create taxable transactions with these master data, like sales order, sales invoice, etc., the attached tax rate type will be defaulted in the transaction and further be respected for rate determinated.
+You can associate the Tax Rate Type to following taxable master data where it will all be supported by data entity. With it is attached, when you create taxable transactions with these master data, like sales order, sales invoice, etc., the attached tax rate type will be defaulted in the transaction and further be used for rate determinated.
 
-- Released Product
+- Released product
 - Procurement/Sales categories
 - Charge code
