@@ -56,7 +56,7 @@ The following illustration shows **info**, **warning**/**checkfailed**, and **er
 > [!NOTE]
 > If these APIs are called from a slider dialog, but that slider dialog is closed before the message appears, the message is shown in a message bar on the slider dialog's parent page. If that slider dialog is closed before the message appears, and there is no parent page, the message is routed to the Action center. The messaging API never fails to show a message. If an appropriate host page isn't found, the message is sent to the Action center.
 
-If **info()**, **warning()**/**checkfailed()**, or **error()** is called from an asynchronous process (for example, a batch), there is no form context to consider, and the messages are sent to the Action center. (To open the Action center, click the **Show messages** button on the navigation bar.) 
+If **info()**, **warning()**/**checkfailed()**, or **error()** is called from an asynchronous process (for example, a batch), there is no form context to consider, and the messages are sent to the Action center. (To open the Action center, click the **Show messages** button on the navigation bar.) The following illustration shows examples of each type of message in the Action center. 
 
 [![Messages the in Action center](./media/2_api.png)](./media/2_api.png)
 
@@ -89,7 +89,7 @@ The message can then be cleared when a new record is shown on the page.
 Message::Remove(messageId);
 ```
 
-Secondly, starting in 10.0.10 / Platform update 34, the **Message::AddAction()** method can be used to embed an action within a message. This method supports adding a single action that is associated with a display or action menu item, which is then visualized as a link button. Note that these actions only appear for messages that are routed to the message bar currently.  
+Secondly, starting in 10.0.10 / Platform update 34, the **Message::AddAction()** method can be used to embed an action within a message (though this is only currently supported for messages that are routed to the message bar). This method supports adding a single action that is associated with a display or action menu item, which is then visualized as a link button. In this example, a message is triggered for a system administrator indicating a particular required batch job is not running and exposes an action to go directly to the Batch jobs page.  
 
 ![Example of the Message:AddAction API used for embedding an action in a message](./media/cli-messageAddAction.png)
 
@@ -112,12 +112,14 @@ The **SystemNotificationsManager()** API is also a new addition to the Finance a
 -  Defining an expiration date for the notification
 -  Tracking the state of the notification (e.g. you can mark a notification as "Completed")  
 
+In this example, a notification is raised after an export to Excel is completed by a user. The message will be available in the Action center for the next 48 hours, after which the link to the exported file is no longer available.   
+
 ![Example of a message sent using the SystemNotificationsManager API](./media/cli-systemNotification.png)
 
 ```xpp
 // Set up the notification 
 SystemNotificationDataContract notification = new SystemNotificationDataContract();
-notification.Roles(roles);
+notification.Users().values(1, curUserId());
 notification.Title("Export to Excel finished");
 notification.RuleId('ExcelStaticExport');
 notification.Message("We finished your export from the Customers page");
