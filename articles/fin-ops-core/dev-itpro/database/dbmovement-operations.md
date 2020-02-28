@@ -43,7 +43,7 @@ Learn how to perform the individual operations on your Standard or Premier Accep
 * [Export a database](export-database.md)
 * [Import a database](import-database.md)
 * [Point-in-time restore (PITR)](database-point-in-time-restore.md)
-* [Point-in-time restore Prod to Sandbox](database-pitr-prod-sandbox.md)
+* [Point-in-time restore of the production database to a sandbox environment](database-pitr-prod-sandbox.md)
 
 ## Step-by-step tutorials
 Learn how to achieve common implementation scenarios using DataALM to your advantage:
