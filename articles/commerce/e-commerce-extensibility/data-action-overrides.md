@@ -2,7 +2,7 @@
 # required metadata
 
 title: Data action overrides
-description: This topic describes how to overrride default module data actions with custom data actions.
+description: This topic describes how to overrride default module data actions with custom data actions in Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
 ms.date: 02/28/2020
@@ -32,14 +32,15 @@ ms.dyn365.ops.version: Release 10.0.10
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to overrride default module data actions with custom data actions.
+This topic describes how to overrride default module data actions with custom data actions in Dynamics 365 Commerce.
 
 ## Overview
 
-The set of modules included with the module library use pre-existing data actions to fetch data for the module to use.  There may be times when you want to have a module use a custom data action but do not want to clone the module since you won't be changing the UX rendered by the module but perhaps may want to alter the business logic in the data action.  With data action overrides, you can override the registered action by creating a new action with the same action id. Overriding a data action will cause all previous uses of the data action, either through import or inclusion in the module definition.json file, to use your new data action.
+The set of modules included with the Dynamics 365 Commerce module library use preexisting data actions to fetch data for the modules to use. There may be times when you want to have a module use a custom data action to alter the business logic of a registered data action, but do not want to clone the module because you won't be changing the UX rendered by the module. With data action overrides, you can override the registered action by creating a new action with the same action ID. Overriding a data action will cause all previous uses of the data action, either through import or inclusion in the module definition.json file, to use your new data action.
 
-## ID naming convention
-Each data action has a data action id. Which is assigned by the data action creator when createObservableDataAction is called through the "id" property. The id should follow the convention [package name]/[module name]/[action name]
+## Data action ID naming convention
+
+Each data action has a data action ID that is assigned by the data action creator for when the createObservableDataAction method is called through the "id" property. The data action ID should follow the naming convention of [package name]/[module name]/[action name], as in the following example.
 
 ```typescript
 export default createObservableDataAction({
@@ -49,17 +50,17 @@ export default createObservableDataAction({
 });
 ```
 
-## Example
+##  Data action override example
 
 To override the get-address data action you need to create a new data action that uses the get-address ID inside of the /src/actions folder.
 
-The below command will create a new data action under the \src\actions directory.
+The following command will create a new data action under the \src\actions directory.
 
 ```console
 yarn msdyn365 add-data-action custom-get-address
 ```
 
-Next replace the default template code with your code.  In the example below, note the data action **ID** is the same as used in the …\Msdyn365.Commerce.Online\node_modules\@msdyn365-commerce-modules\retail-actions\dist\lib\get-address.js data action **@msdyn365-commerce-modules/retail-actions/get-address**.
+Next, you replace the default template code with your code. In the example below, note that the data action ID is the same as used in the ...\Msdyn365.Commerce.Online\node_modules\@msdyn365-commerce-modules\retail-actions\dist\lib\get-address.js data action **@msdyn365-commerce-modules/retail-actions/get-address**.
 
 ```typescript
 import { CacheType, IAction, IActionContext, IActionInput, ICommerceApiSettings } from '@msdyn365-commerce/core';
