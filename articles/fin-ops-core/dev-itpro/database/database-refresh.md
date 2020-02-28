@@ -64,7 +64,7 @@ When refreshing a production environment to a sandbox environment, or a sandbox 
 * All users except the admin will be set to **Disabled** status.
 * All batch jobs are set to **Withhold** status.
 * All users will have their partition value reset to the "initial" partition record ID.
-* All Microsoft-encrypted fields will be cleared, as they cannot be decrypted on a different database server.  For example, the Password field in the SysEmailSMTPPassword table.
+* All Microsoft-encrypted fields will be cleared, because they can't be decrypted on a different database server. An example is the **Password** field in the SysEmailSMTPPassword table.
 
 Some of these elements aren't copied because they are environment-specific. Examples include BatchServerConfig and SysCorpNetPrinters records. Other elements aren't copied because of the volume of support tickets. For example, duplicate emails might be sent because Simple Mail Transfer Protocol (SMTP) is still enabled in the UAT environment, invalid integration messages might be sent because batch jobs are still enabled, and users might be enabled before admins can perform post-refresh cleanup activities.
 
@@ -78,7 +78,7 @@ An environment can't be refreshed from one tenant to another. This restriction a
 ### Conditions of a database refresh
 Here is the list of requirements and conditions of operation for a database refresh:
 
-- A refresh performs a delete on the original target database. 
+- A refresh performs a delete operation on the original target database.
 - The target environment will be available until the database copy has reached the target server. After that point, the environment will be offline until the refresh process is completed.
 - The refresh will affect only the application and Financial Reporting databases.
 - Documents in Azure blob storage are not copied from one environment to another. This means that attached document handling documents and templates won't be changed and will remain in their current state.
@@ -87,15 +87,14 @@ Here is the list of requirements and conditions of operation for a database refr
 - All data management framework with recurring import and export jobs must be fully processed and stopped in the target system prior to initiating the restore. In addition, we recommend that you select the database from the source after all recurring import and export jobs have been fully processed. This will ensure there are no orphaned files in Azure storage from either system. This is important because orphaned files cannot be processed after the database is restored in the target environment. After the restore, the integration jobs can be resumed.
 - Any user with a role of Project owner or Environment manager in LCS will have access to the SQL and machine credentials for all non-production environments.
 - The databases must be hosted in the same Azure geographic region.
-- The source environment's allocated database capacity must be smaller than the target environment's maximum database capacity.
-
+- The allocated database capacity of the source environment must be less than the maximum database capacity of the target environment.
 
 ## Steps to complete after a database refresh for environments that use Commerce functionality
 [!include [environment-reprovision](../includes/environment-reprovision.md)]
 
 ## Known issues
 
-### Refresh is denied for environments running Platform update 20 or earlier
+### Refresh is denied for environments that run Platform update 20 or earlier
 The database refresh process can't currently be completed if the environment is running Platform update 20 or earlier. For more information, see the [list of currently supported platform updates](../migration-upgrade/versions-update-policy.md).
 
 ### Incompatible version of Financial Reporting between source and target environments
