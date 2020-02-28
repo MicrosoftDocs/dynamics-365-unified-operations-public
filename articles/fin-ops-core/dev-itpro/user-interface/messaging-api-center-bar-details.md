@@ -91,7 +91,7 @@ Message::Remove(messageId);
 
 Secondly, starting in 10.0.10 / Platform update 34, the **Message::AddAction()** method can be used to embed an action within a message. This method supports adding a single action that is associated with a display or action menu item, which is then visualized as a link button. Note that these actions only appear for messages that are routed to the message bar currently.  
 
-![Example of the Message:AddAction API used for embedding an action in a message](./media/cli-messageAddAction.jpg)
+![Example of the Message:AddAction API used for embedding an action in a message](./media/cli-messageAddAction.png)
 
 ```xpp
 MenuItemMessageAction actionData = new MenuItemMessageAction();
@@ -112,7 +112,7 @@ The **SystemNotificationsManager()** API is also a new addition to the Finance a
 -  Defining an expiration date for the notification
 -  Tracking the state of the notification (e.g. you can mark a notification as "Completed")  
 
-![Example of a message sent using the SystemNotificationsManager API](./media/cli-systemNotification.jpg)
+![Example of a message sent using the SystemNotificationsManager API](./media/cli-systemNotification.png)
 
 ```xpp
 // Set up the notification 
