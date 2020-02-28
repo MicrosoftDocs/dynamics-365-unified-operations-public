@@ -36,7 +36,7 @@ This topic describes how to overrride default module data actions with custom da
 
 ## Overview
 
-The set of modules included with the Dynamics 365 Commerce module library use preexisting data actions to fetch data for the modules to use. There may be times when you want to have a module use a custom data action to alter the business logic of a registered data action, but do not want to clone the module because you won't be changing the UX rendered by the module. With data action overrides, you can override the registered action by creating a new action with the same action ID. Overriding a data action will cause all previous uses of the data action, either through import or inclusion in the module definition.json file, to use your new data action.
+The set of modules included with the Dynamics 365 Commerce software development kit (SDK) module library use preexisting data actions to fetch data for the modules to use. There may be times when you want to have a module use a custom data action to alter the business logic of a registered data action, but do not want to clone the module because you won't be changing the UX rendered by the module. With data action overrides, you can override the registered action by creating a new action with the same action ID. Overriding a data action will cause all previous uses of the data action, either through import or inclusion in the module definition.json file, to use your new data action.
 
 ## Data action ID naming convention
 
