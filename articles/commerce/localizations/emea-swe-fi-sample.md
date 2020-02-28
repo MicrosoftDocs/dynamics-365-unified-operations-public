@@ -3,7 +3,7 @@
 
 title: Control unit integration sample for Sweden
 description: This topic provides an overview of the fiscal integration sample for Sweden.
-author:
+author: sepism
 manager: annbe
 ms.date: 10/08/2019
 ms.topic: article

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Update process
-description: 
+description: Microsoft Dynamics 365 Human Resources is a true software as a service (SaaS) that provides continuous, touchless service updates for application and platform changes.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Provision Human Resources
-description: 
+description: This article walks you through the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/18/2020

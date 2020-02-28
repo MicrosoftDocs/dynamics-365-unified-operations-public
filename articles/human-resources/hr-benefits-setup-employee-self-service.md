@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure employee self service
-description: 
+description: In Microsoft Dynamics 365 Human Resources, you can configure tiles for top-level navigation in Employee self service.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
