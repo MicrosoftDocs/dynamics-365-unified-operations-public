@@ -51,7 +51,7 @@ The legacy **info()**, **warning()**, and **error()** application programming in
 
 The following illustration shows **info**, **warning**/**checkfailed**, and **error** message bars that correspond to page actions, or synchronous-authored messages that come from **info()**, **warning()**, and **error()**. 
 
-[![Screenshot showing info, warning/checkfailed, and error messages](./media/1_api.jpg)](./media/1_api.jpg)
+[![Screenshot showing info, warning/checkfailed, and error messages](./media/cli-legacyMessages.png)](./media/cli-legacyMessages.png)
 
 > [!NOTE]
 > If these APIs are called from a slider dialog, but that slider dialog is closed before the message appears, the message is shown in a message bar on the slider dialog's parent page. If that slider dialog is closed before the message appears, and there is no parent page, the message is routed to the Action center. The messaging API never fails to show a message. If an appropriate host page isn't found, the message is sent to the Action center.
@@ -77,7 +77,7 @@ The **Message** API is a new addition since Dynamics AX 2012 and provides some u
 
 First, the **Message()** API gives developers more control over the lifecycle of a message by allowing them to explicitly add and remove messages. This API can be useful when validation messages need to be removed at times other than when a save boundary has been crossed, or for displaying informational messages about aspects of the user's experience that aren't necessarily related to data validation. In this example, the message is shown when the current record is displayed.
 
-![Example of the Message::Add API used for informational message](./media/messaging_singlemessagebarinfo.jpg)
+![Example of the Message::Add API used for informational message](./media/cli-legacyInfo.png)
 
 ```xpp
 messageId = Message::Add(MessageSeverity::Informational, "The customer is marked as inactive");
@@ -91,7 +91,7 @@ Message::Remove(messageId);
 
 Secondly, starting in 10.0.10 / Platform update 34, the **Message::AddAction()** method can be used to embed an action within a message. This method supports adding a single action that is associated with a display or action menu item, which is then visualized as a link button. Note that these actions only appear for messages that are routed to the message bar currently.  
 
-![Example of the Message:AddAction API used for embedding an action in a message](./media/messaging_singlemessagebarinfo.jpg)
+![Example of the Message:AddAction API used for embedding an action in a message](./media/cli-messageAddAction.jpg)
 
 ```xpp
 MenuItemMessageAction actionData = new MenuItemMessageAction();
