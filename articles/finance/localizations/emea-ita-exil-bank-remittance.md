@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.10
 
 [!include [banner](../includes/banner.md)]
 
-This topic 
+This functionality allows a user to set up different posting profiles for remittance of bills of exchange (remit for collection and remit discount) and promissory note in company bank accounts in addition to general functionality settings (See [Set up bills of exchange](https://docs.microsoft.com/en-us/dynamics365/finance/accounts-receivable/set-up-bills-exchange) to set up general  bill of exchange functionality). 
 
 ## Prerequisites
 
