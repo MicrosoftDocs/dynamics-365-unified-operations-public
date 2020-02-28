@@ -139,7 +139,7 @@ In this procedure, you will register a new application with Azure AD, and give i
 5. Select **Next**.
 6. Set the required parameter values.
 
-    <img alt="Service Bus dndpoint" src="../../media/BEF-Howto-servicebus-08.png" width="70%">
+    <img alt="Service Bus endpoint" src="../../media/BEF-Howto-servicebus-08.png" width="70%">
 
 7. Select **OK**.
 
