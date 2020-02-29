@@ -5,7 +5,7 @@ title: Configure a development environment (.env) file
 description: This topic describes how to configure the development environment (.env) file that is used in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 02/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -30,7 +30,6 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Configure a development environment (.env) file
 
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 This topic describes how to configure the .env file that is used for the development environment in Microsoft Dynamics 365 Commerce.
@@ -43,17 +42,49 @@ The .env file that is provided as part of the Dynamics 365 Commerce online softw
 
 The default .env file that is provided with the online SDK should resemble the following example.
 
-```
+```text
+### Environment File ##################################################################
+# This is a simple configuration 
+# Online documentation for this file is available at 
+# https://docs.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/configure-env-file
+########################################################################################
+
+# MSDyn365_APP_TYPE variable is required. It can be set only to the value partner.
+
 MSDyn365_APP_TYPE=partner
+
+# PORT variable is required. It defines the port number that is used to preview your Node 
+#   application when the Node server is started by using the yarn start command. The default value is 4000
+
 PORT=4000
 
-### Partner Level Settings
-# MSDyn365_HOST=<Partner Host Here>
-# MSDyn365Commerce_BASEURL=<Retail Server Base URL Here>
-# MSDyn365Commerce_CHANNELID=<Retail Server Channel ID Here>
-# MSDyn365Commerce_CATALOGID=<Retail Server Catalog ID Here>
-# MSDyn365Commerce_OUN=<Retail Server OUN Here>
-# MSDyn365Commerce_BASEIMAGEURL=<Retail Server Base Image URL Here>
+# MSDyn365_HOST variable defines the domain name of your customer-facing e-Commerce site. 
+#   When this variable is set, if the URL https://localhost:4000/ is opened in a development environment, 
+#   your e-Commerce site will be rendered locally. If your site is protected through Azure Active Directory 
+#   (Azure AD) credentials, a prompt for a user name and password will appear.
+
+MSDyn365_HOST=
+
+# MSDyn365Commerce_BASEURL variable defines the URL of the Microsoft Dynamics 365 Retail Server. 
+#   When this variable is set, local development and testing can be done against Dynamics 365 Retail Server
+#   application programming interfaces (APIs). If you set this variable, you must also set the 
+#   MSDyn365Commerce_CHANNELID, MSDyn365Commerce_OUN, and MSDyn365Commerce_CATALOGID variables.
+# MSDyn365Commerce_OUN variable defines the operating unit number for the channel.
+# MSDyn365Commerce_CATALOGID variable defines the catalog ID for the online store that you're connecting to. 
+#   Currently, only the value 0 (zero) is supported.
+# MSDyn365Commerce_CHANNELID variable defines the online channel that you're connecting to.
+
+MSDyn365Commerce_BASEURL=
+MSDyn365Commerce_CHANNELID=
+MSDyn365Commerce_CATALOGID=
+MSDyn365Commerce_OUN=
+
+# MSDyn365Commerce_BASEIMAGEURL variable defines the URL for a website's image assets. 
+#   The URL follows a pattern and must be manually generated. For more information, 
+#   see online product documentation.
+
+MSDyn365Commerce_BASEIMAGEURL=
+
 ```
 
 Two of the variables in the .env file, **MSDyn365\_APP\_TYPE** and **PORT**, are required and have preset values. All the other variables are optional. The optional variables enable your development environment to get data from live environments. This data is then rendered in the local development Node server.
@@ -70,7 +101,7 @@ The **PORT** variable is required. It defines the port number that is used to pr
 
 The following example shows the syntax for this variable.
 
-```
+```text
 PORT=4000
 ```
 
@@ -84,17 +115,17 @@ The **MSDyn365\_HOST** variable defines the domain name of your customer-facing 
 
 The following example shows the syntax for this variable.
 
-```
+```text
 MSDyn365_HOST=demo.fabrikam.com
 ```
 
 ## MSDyn365Commerce_BASEURL
 
-The **MSDyn365Commerce\_BASEURL** variable defines the URL of the Microsoft Dynamics 365 Retail Server. When this variable is set, local development and testing can be done against Dynamics 365 Retail application programming interfaces (APIs). If you set this variable, you must also set the **MSDyn365Commerce\_CHANNELID**, **MSDyn365Commerce\_OUN**, and **MSDyn365Commerce\_CATALOGID** variables.
+The **MSDyn365Commerce\_BASEURL** variable defines the URL of the Microsoft Dynamics 365 Commerce Scale Unit. When this variable is set, local development and testing can be done against application programming interfaces (APIs). If you set this variable, you must also set the **MSDyn365Commerce\_CHANNELID**, **MSDyn365Commerce\_OUN**, and **MSDyn365Commerce\_CATALOGID** variables.
 
 The following example shows the syntax for this variable.
 
-```
+```text
 MSDyn365Commerce_BASEURL=https://fabrikamb1de06d29165320bret.cloud.retail.dynamics.com
 ```
 
@@ -104,14 +135,14 @@ The **MSDyn365Commerce\_OUN** variable defines the operating unit number for the
 
 To find the channel operating unit number, follow these steps.
 
-1. Go to the Dynamics 365 Retail website.
+1. Go to the Commerce website.
 1. In the search field at the top of the page, enter **Online channels**, and then select the channel to use. You should see an **Operating unit number** column, as shown in the following illustration.
 
-    ![Operating unit number column on the Dynamics 365 Retail website](media/operating-unit-number.png)
+    ![Operating unit number column on the Dynamics 365 Commerce website](media/operating-unit-number.png)
 
 The following example shows the syntax for this variable.
 
-```
+```text
 MSDyn365Commerce_OUN=128
 ```
 
@@ -125,7 +156,7 @@ The **MSDyn365Commerce\_CHANNELID** variable defines the online channel that you
 
 To find the channel ID, follow these steps.
 
-1. Go to the Dynamics 365 Retail website.
+1. Go to the Dynamics 365 Commerce website.
 1. In the search field at the top of the page, enter **Online channels**, and then select the channel to use.
 1. On the Action Pane, on the **Options** tab, in the **Page options** group, select **Record Info**.
 1. In the **Record information** dialog box, the value of the **Record-ID** field is the channel ID. Copy this value.
@@ -134,7 +165,7 @@ To find the channel ID, follow these steps.
 
 The following example shows the syntax for this variable.
 
-```
+```text
 MSDyn365Commerce_CHANNELID=68719478279
 ```
 

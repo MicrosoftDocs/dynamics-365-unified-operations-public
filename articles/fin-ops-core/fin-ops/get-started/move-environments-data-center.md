@@ -77,7 +77,7 @@ After you've saved your data, follow these steps.
 
 > [!NOTE]
 > - The movement of files that are stored in Azure Blob Storage isn't supported in sandbox environments.
-> - Retail customers should be aware that extra steps are required for Retail components to work correctly after a move. For more information, see [Data management overview](../../dev-itpro/data-entities/data-entities-data-packages.md).
+> - Commerce customers should be aware that extra steps are required for components to work correctly after a move. For more information, see [Data management overview](../../dev-itpro/data-entities/data-entities-data-packages.md).
 
 ## Move production environments
 

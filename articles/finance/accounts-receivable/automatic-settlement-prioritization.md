@@ -5,7 +5,7 @@ title: Automatic settlement and prioritization
 description: This topic describes how transactions are settled if you select Automatic settlement on the Accounts receivable parameters page. It also explains how automatic settlement can be used in combination with the payment priority.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 10/26/2017
+ms.date: 01/30/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -82,7 +82,7 @@ If there is no user-defined settlement priority, transactions are automatically 
 | Invoice 1     | 8/15/2015  | 10001   | 100.00                         | 100.00           | 0.00    | USD      |
 | Invoice 2     | 9/1/2015   | 10002   | 250.00                         | 250.00           | 0.00    | USD      |
 | Invoice 3     | 10/15/2015 |         | 500.00                         | 350.00           | 150.00  | USD      |
-| Interest note | 10/15/2015 |         | 7.00                           | 0.00             | 0.00    | USD      |
+| Interest note | 10/15/2015 |         | 7.00                           | 0.00             | 7.00    | USD      |
 
 
 

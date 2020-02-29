@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Select page layouts
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic explains how to create and select page layouts in Microsoft Dynamics 365 Commerce.
@@ -79,4 +79,6 @@ To select a different layout for an existing page, follow these steps.
 [Enrich a product page](enrich-product-page.md)
 
 [Enrich a category landing page](enrich-category-page.md)
+
+[Verify page content accessibility](verify-accessibility.md)
 

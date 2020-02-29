@@ -62,18 +62,20 @@ The **CustomerList** view has its **AllowCrossCompany** property set to **No**, 
 
 Given the preceding information about the **CustomerList** view, the system creates the view in the underlying SQL Server system by generating and then running the following SQL **Create View** statement.
 
-    CREATE VIEW [dbo].[CUSTOMERLIST] 
-    AS 
-        SELECT T1.accountnum AS ACCOUNTNUM, 
-               T1.dataareaid AS DATAAREAID,  -- AllowCrossCompany =No caused this line.
-               T1.partition  AS PARTITION, 
-               T1.recid      AS RECID, 
-               T2.partition  AS PARTITION#2, 
-               T2.name       AS NAME 
-        FROM   custtable T1 
-               CROSS JOIN dirpartytable T2 
-        WHERE  ( T1.party = T2.recid 
-                 AND ( T1.partition = T2.partition ) ) 
+```sql
+CREATE VIEW [dbo].[CUSTOMERLIST] 
+AS 
+       SELECT T1.accountnum AS ACCOUNTNUM, 
+              T1.dataareaid AS DATAAREAID,  -- AllowCrossCompany =No caused this line.
+              T1.partition  AS PARTITION, 
+              T1.recid      AS RECID, 
+              T2.partition  AS PARTITION#2, 
+              T2.name       AS NAME 
+       FROM   custtable T1 
+              CROSS JOIN dirpartytable T2 
+       WHERE ( T1.party = T2.recid 
+              AND ( T1.partition = T2.partition ) ) 
+```
 
 ### Making DirPartyTable the root data source
 
@@ -81,18 +83,20 @@ Given the preceding information about the **CustomerList** view, the system crea
 
 By swapping the positions of the two data source tables in the **CustomerList** view, you make the DirPartyTable table the root data source.
 
-    CREATE VIEW [dbo].[CUSTOMERLISTPARTY] 
-    AS 
-        SELECT T1.name       AS NAME, 
-               T1.partition  AS PARTITION, 
-               T1.recid      AS RECID, 
-               T2.partition  AS PARTITION#2, 
-               T2.accountnum AS ACCOUNTNUM 
-        FROM   dirpartytable T1 
-               CROSS JOIN custtable T2 
-        WHERE  ( T2.party = T1.recid 
-                 AND ( T2.partition = T1.partition ) ) 
-    go 
+```sql
+CREATE VIEW [dbo].[CUSTOMERLISTPARTY] 
+AS 
+       SELECT T1.name       AS NAME, 
+              T1.partition  AS PARTITION, 
+              T1.recid      AS RECID, 
+              T2.partition  AS PARTITION#2, 
+              T2.accountnum AS ACCOUNTNUM 
+       FROM   dirpartytable T1 
+              CROSS JOIN custtable T2 
+       WHERE  ( T2.party = T1.recid 
+              AND ( T2.partition = T1.partition ) ) 
+go 
+```
 
 In this case, the SQL **Create View** statement is the same, except for the following two differences:
 
@@ -120,15 +124,17 @@ The following screen shot shows the value set for the **PrimaryCompanyContext** 
 
 When the **PrimaryCompanyContext** value is set to a non-empty value, the entity can't behave as a shared entity. The **dataAreaId** field is added to the SQL **Create View** statement.
 
-    CREATE VIEW [dbo].[FMCUSTGROUPENTITY] 
-    AS 
-        SELECT T1.custgroup   AS GROUPNAME, 
-               T1.description AS DESCRIPTION, 
-               T1.dataareaid  AS DATAAREAID,   -- dataAreaId is added. 
-               T1.recversion  AS RECVERSION, 
-               T1.partition   AS PARTITION, 
-               T1.recid       AS RECID 
-        FROM   fmcustgroup T1 
+```sql
+CREATE VIEW [dbo].[FMCUSTGROUPENTITY] 
+AS 
+       SELECT T1.custgroup   AS GROUPNAME, 
+              T1.description AS DESCRIPTION, 
+              T1.dataareaid  AS DATAAREAID,   -- dataAreaId is added. 
+              T1.recversion  AS RECVERSION, 
+              T1.partition   AS PARTITION, 
+              T1.recid       AS RECID 
+       FROM   fmcustgroup T1 
+```
 
 ## Run time: The behavior of data entities for crosscompany
 In the context of X++ code, the cross-company behavior of data entities resembles the behavior of tables. If the **PrimaryCompanyContext** property for an entity has no value and is empty, the entity behaves like a shared table.
@@ -168,15 +174,17 @@ However, a **dataAreaId** field from the FMCustGroup table is mapped to the **FM
 > [!NOTE]
 > Although the terms *legal entity* and *data entity* both use the word *entity*, don't confuse them. Legal entities and data entities are two entirely different concepts. When the **PrimaryCompanyContext** property is empty, the SQL **Create View** statement usually contains no mention of a system **dataAreaId** column. However, in the current example, **dataAreaId** is "half-mentioned" because of the **LegalEntity** regular field on the data entity. This field is shown in the following SQL statement.
 
-    CREATE VIEW [dbo].[FMCUSTOMERGROUPGLOBALENTITY] 
-    AS 
-        SELECT T1.custgroup   AS NAME, 
-               T1.description AS DESCRIPTION, 
-               T1.dataareaid  AS LEGALENTITY,   -- dataAreadId is named LegalEntity. 
-               T1.recversion  AS RECVERSION, 
-               T1.partition   AS PARTITION, 
-               T1.recid       AS RECID 
-        FROM   fmcustgroup T1 
+```sql
+CREATE VIEW [dbo].[FMCUSTOMERGROUPGLOBALENTITY] 
+AS 
+       SELECT T1.custgroup   AS NAME, 
+              T1.description AS DESCRIPTION, 
+              T1.dataareaid  AS LEGALENTITY,   -- dataAreadId is named LegalEntity. 
+              T1.recversion  AS RECVERSION, 
+              T1.partition   AS PARTITION, 
+              T1.recid       AS RECID 
+       FROM   fmcustgroup T1 
+```
 
 ### Purpose of this example
 

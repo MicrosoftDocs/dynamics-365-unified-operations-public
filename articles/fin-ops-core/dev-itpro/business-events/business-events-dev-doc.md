@@ -94,7 +94,7 @@ The process of implementing an extension of the **BusinessEventsBase** class is 
 
 1. Implement a static **newFrom\<my\_buffer\>** method. The \<my\_buffer\> part of the method name is typically the table buffer that is used to initialize the business event contract.
 
-    ```
+    ```xpp
     static public SalesInvoicePostedBusinessEvent
     newFromCustInvoiceJour(CustInvoiceJour _custInvoiceJour)
     {
@@ -107,9 +107,9 @@ The process of implementing an extension of the **BusinessEventsBase** class is 
 
 2. Extend the **BusinessEventsBase** class.
 
-    ```
+    ```xpp
     [BusinessEvents(classStr(SalesInvoicePostedBusinessEventContract),
-    "AccountsReceivable:SalesOrderInvoicePostedBusinessEventName","AccountsReceivable:SalesOrderInvoicePostedBusinessEventDescription",ModuleAxapta::SalesOrder)]
+    'AccountsReceivable:SalesOrderInvoicePostedBusinessEventName','AccountsReceivable:SalesOrderInvoicePostedBusinessEventDescription',ModuleAxapta::SalesOrder)]
     public class SalesInvoicePostedBusinessEvent extends BusinessEventsBase
     ```
 
@@ -117,7 +117,7 @@ The process of implementing an extension of the **BusinessEventsBase** class is 
 
 3. Implement a private **new** method. This method is called only from the static constructor method.
 
-    ```
+    ```xpp
     private void new()
     {
     }
@@ -125,7 +125,7 @@ The process of implementing an extension of the **BusinessEventsBase** class is 
 
 4. Implement private **parm** methods to maintain internal state.
 
-    ```
+    ```xpp
     private CustInvoiceJour parmCustInvoiceJour(CustInvoiceJour _custInvoiceJour = custInvoiceJour)
     {
         custInvoiceJour = _custInvoiceJour;
@@ -135,7 +135,7 @@ The process of implementing an extension of the **BusinessEventsBase** class is 
 
 5. Implement the **buildContract** method. Note that you need an **EventContract** stub for this step.
 
-    ```
+    ```xpp
     [Wrappable(true), Replaceable(true)]
     public BusinessEventsContract buildContract()
     {
@@ -148,7 +148,7 @@ The process of implementing an extension of the **BusinessEventsBase** class is 
 
 Here is the complete implementation of the "Sales order invoice posted" business event.
 
-```
+```xpp
 /// <summary>
 /// Sales order invoice posted business event.
 /// </summary>
@@ -197,7 +197,7 @@ The process of implementing a business event contract involves extending the **B
 
 1. Extend the **BusinessEventContract** class.
 
-    ```
+    ```xpp
     [DataContract]
     public final class SalesInvoicePostedBusinessEventContract extends
     BusinessEventsContract
@@ -207,7 +207,7 @@ The process of implementing a business event contract involves extending the **B
 
 2. Add private variables to hold the contract state.
 
-    ```
+    ```xpp
     private CustInvoiceAccount invoiceAccount;
     private CustInvoiceId invoiceId;
     private SalesIdBase salesId;
@@ -220,7 +220,7 @@ The process of implementing a business event contract involves extending the **B
 
 3. Implement a private initialization method.
 
-    ```
+    ```xpp
     private void initialize(CustInvoiceJour _custInvoiceJour)
     {
         invoiceAccount = _custInvoiceJour.InvoiceAccount;
@@ -238,7 +238,7 @@ The process of implementing a business event contract involves extending the **B
 
 4. Implement a static constructor method.
 
-    ```
+    ```xpp
     public static SalesInvoicePostedBusinessEventContract
     newFromCustInvoiceJour(CustInvoiceJour _custInvoiceJour)
     {
@@ -252,7 +252,7 @@ The process of implementing a business event contract involves extending the **B
 
 5. Implement **parm** methods to access the contract state.
 
-    ```
+    ```xpp
     [DataMember('InvoiceAccount'), BusinessEventsDataMember("@AccountsReceivable:InvoiceAccount")]
     public CustInvoiceAccount parmInvoiceAccount(CustInvoiceAccount _invoiceAccount = invoiceAccount)
     {
@@ -267,7 +267,7 @@ The process of implementing a business event contract involves extending the **B
 > - **RecId** values should not be part of a business event's payload. Use the alternate key (AK) instead.
 > - Enumeration (enum) values must be converted to their symbol value before they can be published. Use the **enum2Symbol** method to convert an enum's value to the symbol string. Here is an example:
 >
->    ```
+>    ```xpp
 >    status = enum2Symbol(enumNum(CustVendDisputeStatus), _custDispute.Status);
 >    ```
 
@@ -275,7 +275,7 @@ In some cases, population of the data contract's internal state requires that yo
 
 Here is the complete implementation of the "Sales order invoice posted" business event contract.
 
-```
+```xpp
 /// <summary>
 /// The data contract for a SalesInvoicePostedBusinessEvent
 /// </summary>
@@ -381,7 +381,7 @@ The sending of a business event is linked to the commit of the underlying transa
 
 The business events framework determines whether a business event is published to a consumer. As a general rule, applications should always send a business event, regardless of whether the business event is enabled. If significant additional logic is required, or if the logic for sending a business event has a performance impact, an application can check whether a specific business event is enabled before it runs business logic that is associated with sending business events. This check is done through the **BusinessEventsConfigurationReader::isBusinessEventEnabled** method.
 
-```
+```xpp
 if (BusinessEventsConfigurationReader::isBusinessEventEnabled(classStr(CollectionStatusUpdatedBusinessEvent)))
 {
     while select dispute
@@ -414,7 +414,7 @@ This example shows how to extend the **CustFreeTextInvoicePostedBusinessEventCon
 
 Create a contract that consists of the standard business event contract plus any additional information that must be included in the payload.
 
-```
+```xpp
 [DataContract]
 public class CustFreeTextInvoicePostedBusinessEventExtendedContract
 extends BusinessEventsContract
@@ -431,7 +431,7 @@ extends BusinessEventsContract
 
 Create an **initialize** method that initializes the value of the private contract.
 
-```
+```xpp
 private void initialize(CustFreeTextInvoicePostedBusinessEventContract
 _custFreeTextInvoicePostedBusinessEventContract)
 {
@@ -444,7 +444,7 @@ _custFreeTextInvoicePostedBusinessEventContract)
 
 Create a static **newFrom** method that takes the standard contract as an argument and calls the **initialize** method.
 
-```
+```xpp
 public static CustFreeTextInvoicePostedBusinessEventExtendedContract
 newFromCustFreeTextInvoicePostedBusinessEventContract(CustFreeTextInvoicePostedBusinessEventContract
 _custFreeTextInvoicePostedBusinessEventContract)
@@ -459,7 +459,7 @@ _custFreeTextInvoicePostedBusinessEventContract)
 
 Copy the **parm** methods from the standard data contract, and modify each method so that it gets and sets values in the class's standard contract instance.
 
-```
+```xpp
 [DataMember('InvoiceAccount')]
 public CustInvoiceAccount parmInvoiceAccount(CustInvoiceAccount _invoiceAccount
 = custFreeTextInvoicePostedBusinessEventContract.parmInvoiceAccount())
@@ -477,7 +477,7 @@ custFreeTextInvoicePostedBusinessEventContract.parmInvoiceId())
 
 #### Step 5: Add parm methods for additional payload data
 
-```
+```xpp
 [DataMember('CustomerClassification')]
 public CustomerClassification parmCustomerClassification(CustomerClassification
 _customerClassification = customerClassification)
@@ -489,7 +489,7 @@ _customerClassification = customerClassification)
 
 Here is the complete implementation of the extended business contract.
 
-```
+```xpp
 [DataContract]
 public class CustFreeTextInvoicePostedBusinessEventExtendedContract
 extends BusinessEventsContract
@@ -579,7 +579,7 @@ extends BusinessEventsContract
 
 Provide a build contract implementation that calls **next** to load the standard business event contract and populates any payload extensions. Here is the complete class.
 
-```
+```xpp
 [ExtensionOf(classStr(CustFreeTextInvoicePostedBusinessEvent))]
 public final class FreeTextInvoicePostedBusinessEventContract_Extension
 {
@@ -606,7 +606,7 @@ The Business Events framework supports the payload context concept. Payload cont
 
 A custom payload context must be extended from the **BusinessEventsCommitLogPayloadContext** class.
 
-```
+```xpp
 class CustomCommitLogPayloadContext extends BusinessEventsCommitLogPayloadContext
 {
     private utcdatetime eventTime;
@@ -622,7 +622,7 @@ class CustomCommitLogPayloadContext extends BusinessEventsCommitLogPayloadContex
 
 A Chain of Command (CoC) extension must be written for the **BusinessEventsSender.buildPayloadContext** method, so that it can construct the new payload context type.
 
-```
+```xpp
 [ExtensionOf(classStr(BusinessEventsSender))]
 public final class CustomPayloadContextBusinessEventsSender_Extension
 {
@@ -646,7 +646,7 @@ Adapters that consume payload context are written in such a way that they expose
 
 The **BusinessEventsServiceBusAdapter** has the CoC method that is named **addProperties**.
 
-```
+```xpp
 [ExtensionOf(classStr(BusinessEventsServiceBusAdapter))]
 public final class CustomBusinessEventsServiceBusAdapter_Extension
 {
@@ -693,7 +693,7 @@ The new table then holds the definition of the custom fields that are required t
 
 The new endpoint adapter class must implement the **IBusinessEventsEndpoint** interface. It must also be decorated with the **BusinessEventsEndpointAttribute** attribute.
 
-```
+```xpp
 [BusinessEventsEndpoint(BusinessEventsEndpointType::CustomEndpoint)]
 public class CustomEndpointAdapter implements IBusinessEventsEndpoint
 {
@@ -701,7 +701,7 @@ public class CustomEndpointAdapter implements IBusinessEventsEndpoint
 
 The **initialize** method should be implemented to check the type of the **BusinessEventsEndpoint** buffer that is passed in, and then, if the buffer is of the correct type, initialize it, as shown in the following example.
 
-```
+```xpp
 if (!(_endpoint is CustomBusinessEventsEndpoint))
 {
     BusinessEventsEndpointManager::logUnknownEndpointRecord(tableStr(CustomBusinessEventsEndpoint),
@@ -727,7 +727,7 @@ The custom field input should be bound to the new table and field that you creat
 
 ![Business event endpoint](../media/customendpoint5.png)
 
-```
+```xpp
 [ExtensionOf(formStr(BusinessEventsEndpointConfiguration))]
 final public class CustomBusinessEventsEndpointConfiguration_Extension
 {
@@ -762,7 +762,7 @@ The serialization of business events uses FormJsonSerializer to serialize object
 
 To get the human-readable format, use the extended data type (EDT) that is named **DateTimeIso8601** as the type of the value in the data contract. Alternatively, use an EDT that is derived from the **DateTimeIso8601** EDT.
 
-```X++
+```xpp
 [DataMember("TestIsoEdtUtcDateTime")]
 public DateTimeIso8601 testIsoEdtUtcDateTime(DateTimeIso8601 _value = this._testIsoDateTime)
 {

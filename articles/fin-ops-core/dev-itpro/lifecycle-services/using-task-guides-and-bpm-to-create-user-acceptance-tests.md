@@ -1,7 +1,7 @@
 ---
 title: Create and automate user acceptance tests
 description: This topic provides information about using Task guides and BPM to create and execute acceptance test suites.
-author: robadawy
+author: jorisdg
 manager: AnnBe
 ms.date: 10/02/2018
 ms.topic: article
@@ -22,7 +22,7 @@ ms.custom: 13301
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 
@@ -119,7 +119,7 @@ After configuration is complete, synchronize the BPM library with a Azure DevOps
 
     ![VSTS Sync1](./media/vsts_sync_1.png "VSTS Sync1")
 
-You can also start Azure DevOps synchronization from the toolbar in a BPM library. Select the ellipsis button (…), and then select **Azure DevOps sync**.
+    You can also start Azure DevOps synchronization from the toolbar in a BPM library. Select the ellipsis button (…), and then select **Azure DevOps sync**.
 
     ![VSTS Sync2](./media/vsts_sync_2.png "VSTS Sync2")
 

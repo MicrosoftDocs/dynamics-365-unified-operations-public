@@ -5,7 +5,7 @@ title: Product lifecycle state overview
 description: A product lifecycle state documents the lifecycle state of a released product or product variant.  
 author: cvocph
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -86,12 +86,8 @@ working with non-reusable product configuration variants, with a product lifecyc
 
 ## Default migration, import, and export 
 
-The product lifecycle states are not supported by data entities, and the lifecycle state cannot be set to a variable state through the 
-released product data entities.
-
--  On migration from previous releases, the lifecycle state of all products and product variants will be blank.  
--  When importing released products through a data entity, the default lifecycle state will be applied on creation.  
--  When importing released product variants through a data entity, the product lifecycle state of the released product master will be imported.   
+The product lifecycle states are supported by data entities, and the lifecycle state can be set to a variable state through either the 
+released product data entity or the released variant data entity.
 
 ## Find obsolete products and products variants 
 

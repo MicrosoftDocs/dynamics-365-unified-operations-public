@@ -5,7 +5,7 @@ title: Golden configuration promotion
 description: This topic explains a golden configuration promotion for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 11/21/2019
+ms.date: 01/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -73,7 +73,7 @@ Because of a technical limitation that is related to the certificate that is use
 | SysOAuthUserTokens.EncryptedAccessToken                  | This field is used internally by Application Object Server (AOS). It can be ignored. |
 | SysOAuthUserTokens.EncryptedRefreshToken                 | This field is used internally by AOS. It can be ignored. |
 
-### If you're running Retail components, document encrypted and environment-specific values
+### If you're running Commerce components, document encrypted and environment-specific values
 
 The values on the following pages are either environment-specific or encrypted in the database. Therefore, all the imported values will be incorrect.
 
@@ -84,7 +84,7 @@ The values on the following pages are either environment-specific or encrypted i
 
 Because you must delete database users before you can export the source SQL Server database, you should create a copy of that database. You can then work with the copy instead of modifying the original database. The following script backs up the default AxDB database and then restores it to the same instance under a new name. To use this script, first verify that the path D:\\backups exists.
 
-```
+```sql
 BACKUP DATABASE [AxDB] TO DISK = N'D:\Backups\axdb_golden.bak' WITH NOFORMAT, NOINIT,
 NAME = N'AxDB_golden-Full Database Backup', SKIP, NOREWIND, NOUNLOAD, COMPRESSION, STATS = 10
 GO
@@ -105,7 +105,7 @@ Run the following script against the AxDB\_CopyForExport database that you creat
 
 A successful export and import of the database requires all these changes.
 
-```
+```sql
 update sysglobalconfiguration
 set value = 'SQLAZURE'
 where name = 'BACKENDDB'
@@ -136,7 +136,7 @@ Open a **Command Prompt** window, and run the following commands.
 > [!IMPORTANT]
 > The 140 folder reflects the current version. You must use the version that is available in your sandbox environment. Therefore, you might have to install the [latest version of Microsoft SQL Server Management Studio](https://msdn.microsoft.com/library/mt238290.aspx) in your development environment.
 
-```
+```Console
 cd C:\Program Files (x86)\Microsoft SQL Server\140\DAC\bin\
 SqlPackage.exe /a:export /ssn:localhost /sdn:<database to export> /tf:D:\Exportedbacpac\my.bacpac /p:CommandTimeout=1200 /p:VerifyFullTextDocumentTypesSupported=false
 ```
@@ -172,7 +172,7 @@ When you're ready to do a mock go-live or actual go-live, you can copy the UAT e
 3. In the **Sandbox to Production** dialog box, follow these steps:
 
     1. In the **Source environment name** field, select the sandbox environment to copy the database from.
-    2. Set the **Preferred downtime start date** and **Preferred downtime end date** fields. The end date must be at least one hour after the start date. To help guarantee that resources are available to run the request, submit your request at least 24 hours before your preferred downtime window.
+    2. Set the **Preferred downtime start date** and **Preferred downtime end date** fields. The end date must be at least four hours after the start date. To help ensure that resources are available to run the request, it's recommended to submit your request at least 24 hours before your preferred downtime window.
     3. Select the check boxes at the bottom to agree to the terms.
 
 ## Reconfigure environment specific settings

@@ -221,9 +221,11 @@ This section explores the control criteria in more detail.
 
 -   To enable the form developer to determine the control layout and size, set the width and height that are specified by the form developer on the control by using the $dyn.layout.sizing API, as shown in the following code. This is standard code that should be applied to all HTML control templates.
 
-        <div id="MyControl" data-dyn-bind="
-        sizing: $dyn.layout.sizing($data)>
-        </div>
+    ```xml
+    <div id="MyControl" data-dyn-bind="
+    sizing: $dyn.layout.sizing($data)>
+    </div>
+    ```
 
 #### Task Recorder recording support
 

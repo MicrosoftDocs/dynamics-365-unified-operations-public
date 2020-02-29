@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.5
 
 # Manage e-Commerce users and roles
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic explains how to grant users access to the authoring environment for your Microsoft Dynamics 365 Commerce site.

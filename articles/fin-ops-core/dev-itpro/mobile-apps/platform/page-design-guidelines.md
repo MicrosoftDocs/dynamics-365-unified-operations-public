@@ -67,7 +67,7 @@ If you want just a details view for an entity, it's likely that the entity is a 
 3.  Make sure that the form that is used for the details view can be filtered on a unique key field by using the filter pane.
 4.  In the designer, make sure that the list view page is linked to the details view page. Click the list, open the properties, and then set the details view page by using the lookup. 
 
-![Linking the list view page to the details view page](media/listtodetailsdesigner.png)
+    ![Linking the list view page to the details view page](media/listtodetailsdesigner.png)
 
 ### How do I add a reference field that enables navigation to a related entity?
 
@@ -75,13 +75,13 @@ If you want just a details view for an entity, it's likely that the entity is a 
 2.  Make sure that the page contains the reference field from the entity that is being referenced.
 3.  Make sure that the referenced field is bound to the referenced entity’s data source, and that the referenced entity is *outer joined* (1-0..1) or *inner joined* (1-1) to the data source for the entity that contains the reference. For example, in the following illustration, FMRental is the entity that contains the reference, and FMVehicle is the referenced entity.
 
-![Binding the referenced field to the referenced entity’s data source](media/relatedentityform.png)
+    ![Binding the referenced field to the referenced entity’s data source](media/relatedentityform.png)
 
 4.  Make sure that you've created a separate details view page for the entity that is being referenced.
 5.  Make sure that the reference field has been added to the page.
 6.  In the designer, make sure that the reference field has been linked to the details view for the referenced entity. For example, in the following illustration, Vehicle-details is the details view page for the referenced entity.
 
-![Linking the reference field to the details view for the referenced entity](media/referencepagedesigner.png)
+     ![Linking the reference field to the details view for the referenced entity](media/referencepagedesigner.png)
 
 ### How do I add a list that contains items from a related entity to a details view page?
 
@@ -101,40 +101,44 @@ If you want just a details view for an entity, it's likely that the entity is a 
 5.  Use the same form to create a separate list view page that contains only a list that has the desired fields from the related entity.
 6.  On the details view page, add a PageLinkControl that links to the list view page. Currently, you must use business logic to add the PageLinkControl. The following example show the code that Fleet Management uses.
 
-        function main(metadataService, dataService, cacheService, $q) { 
-            return { 
-                appInit: function (appMetadata) { 
-                    metadataService.addLink( 
-                        'Customer-details', // the Page to add the link to 
-                        'Customer-rentals', // the Page the link goes to 
-                        'cust-rentals-nav-control', // unique name for the control 
-                        'Rentals', // text to display for the link in the UI 
-                        true, // show/hide the count for items on the linked page 
-                        ); 
-                }, 
-            }; 
-        }
+    ```xpp
+    function main(metadataService, dataService, cacheService, $q) { 
+        return { 
+            appInit: function (appMetadata) { 
+                metadataService.addLink( 
+                    'Customer-details', // the Page to add the link to 
+                    'Customer-rentals', // the Page the link goes to 
+                    'cust-rentals-nav-control', // unique name for the control 
+                    'Rentals', // text to display for the link in the UI 
+                    true, // show/hide the count for items on the linked page 
+                    ); 
+            }, 
+        }; 
+    }
+    ```
 
 ###### How do I read data from a hidden page?
 
 1.  Identify or create a page that contains the controls with the data that you want.
 2.  Refer to the following code example, which hides the page from the navigation menus, and accesses data on the page using the provided APIs. Note that 'My-Hidden-Page' and 'My-Field-Id' are the names of the page and control, respectively, and can be found when viewing the corresponding page in the designer.
 
-        function main(metadataService, dataService, cacheService, $q) {
-            myField1Value = ''; // This variable will be populated in appInit, and can then be used elsewhere in the business logic. 
-            return { 
-                appInit: function (appMetadata) { 
-                    var myHiddenPage = metadataService.findPage('My-Hidden-Page');
-                    if(myHiddenPage) {
-                        var dataPromise = dataService.getPageData(myHiddenPage.Id,'','',0);
-                        dataPromise.then(function (result) {
-                            var myField1Id = metadataService.findControl(myHiddenPage, 'My-Field-1').Id;
-                            myField1Value = result.data[myField1Id];
-                        }
+    ```xpp
+    function main(metadataService, dataService, cacheService, $q) {
+        myField1Value = ''; // This variable will be populated in appInit, and can then be used elsewhere in the business logic. 
+        return { 
+            appInit: function (appMetadata) { 
+                var myHiddenPage = metadataService.findPage('My-Hidden-Page');
+                if(myHiddenPage) {
+                    var dataPromise = dataService.getPageData(myHiddenPage.Id,'','',0);
+                    dataPromise.then(function (result) {
+                        var myField1Id = metadataService.findControl(myHiddenPage, 'My-Field-1').Id;
+                        myField1Value = result.data[myField1Id];
                     }
-            }; 
-        }
-        
+                }
+        }; 
+    }
+    ```
+
 ### How do I adjust the number of records returned in a list page using list fetch size?
 
 The number of records returned in a list page is controlled by the **List fetch size** value. The default is 50 records. The **List fetch size** indicates the maximum number of records returned by a page when it first loads, and the maximum number of records returned  when search is used to find a specific set of records. Be careful not to make the value too large or it may negatively affect the user experience.

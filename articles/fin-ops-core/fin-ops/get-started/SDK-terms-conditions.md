@@ -5,7 +5,7 @@ title: MICROSOFT PREVIEW SOFTWARE LICENSE TERMS
 description: These license terms are an agreement between you and Microsoft Corporation (or one of its affiliates). 
 author: ShellyBakke
 manager: AnnBe
-ms.date: 049/26/2019
+ms.date: 09/26/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -55,7 +55,7 @@ THE RIGHTS BELOW. BY USING THE SOFTWARE, YOU ACCEPT THIS AGREEMENT.
 
 **e) Compliance Obligations.**  Any websites you develop with the software that interoperate with an instance of the Dynamics 365 for Finance and Operations online service must comply with the obligations of any third party materials that you incorporated into such websites, including but not limited to the inclusion of a Notices file. You are solely responsible for all compliance with respect to any third party materials included in your websites.
 
-**f)  Third Party Software.** The software may include third party applications that are licensed to you under this agreement or under their own terms. License terms, notices, and acknowledgements, if any, for the third party applications may be accessible online at <http://aka.ms/thirdpartynotices> or in an accompanying notices file. Even if such applications are governed by other agreements, the disclaimer, limitations on, and exclusions of damages below also apply to the extent allowed by applicable law.
+**f)  Third Party Software.** The software may include third party applications that are licensed to you under this agreement or under their own terms. License terms, notices, and acknowledgements, if any, for the third party applications may be accessible online at <https://aka.ms/thirdpartynotices> or in an accompanying notices file. Even if such applications are governed by other agreements, the disclaimer, limitations on, and exclusions of damages below also apply to the extent allowed by applicable law.
 
 **PACKAGE MANAGERS.** The software includes package managers that give you the option to download other Microsoft and third party software packages to use with your customization packages. Those packages obtained through a package manager are under their own licenses, and not this agreement. Microsoft does not distribute, license, or provide any warranties for any of the third party packages.
 
@@ -90,7 +90,7 @@ when it stops running.
 
 1. share, publish, distribute, or lend the software, provide the software as a stand-alone hosted solution for others to use (except as set forth in Section 1(b)), or transfer the software or this agreement to any third party.
 
-**EXPORT RESTRICTIONS.** You must comply with all domestic and international export laws and regulations that apply to the software, which include restrictions on destinations, end users, and end use. For further information on export restrictions, visit <http://aka.ms/exporting>.
+**EXPORT RESTRICTIONS.** You must comply with all domestic and international export laws and regulations that apply to the software, which include restrictions on destinations, end users, and end use. For further information on export restrictions, visit <https://aka.ms/exporting>.
 
 **SUPPORT SERVICES.** Microsoft is not obligated under this agreement to provide any support services for the software. Any support provided is “as is”, “with all faults”, and without warranty of any kind.
 

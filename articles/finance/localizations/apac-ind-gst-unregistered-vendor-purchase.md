@@ -40,13 +40,13 @@ This topic walks you through creating a purchase order that includes a taxable i
 3. Validate the tax details of a purchase order.
   1. On the Action Pane, on the **Purchase** tab, in the **Tax** group, click **Tax document** to review the calculated taxes.
   
-    > **Example:**
-    > -   **Taxable value:** 10,000.00
-    > -   **CGST:** 10 percent; **Reverse charge percentage:** 100 percent
-    > -   **SGST:** 10 percent; **Reverse charge percentage:** 100 percent
+        **Example:**
+        -   **Taxable value:** 10,000.00
+        -   **CGST:** 10 percent; **Reverse charge percentage:** 100 percent
+        -   **SGST:** 10 percent; **Reverse charge percentage:** 100 percent
     
-  > [!NOTE]
-  > The **Party GST Registration Number** field is blank on the **Purchase order** FastTab. This means that the dealer is not registered as a dealer.
+        > [!NOTE]
+        > The **Party GST Registration Number** field is blank on the **Purchase order** FastTab. This means that the dealer is not registered as a dealer.
 
 7.  Close the page.
 8.  Click **Confirm**.
@@ -59,8 +59,8 @@ This topic walks you through creating a purchase order that includes a taxable i
 11. On the **Overview** tab, click **Tax document**.
 12. Click the **Purchase invoice** FastTab.
 13. Click the **Setup** tab.
-  > [!NOTE]
-  > The **Transaction ID** will be generated from the number sequence that was defined for the reference **GST invoice** in the **Tax information** for the **Reference number sequence group**.
+    > [!NOTE]
+    > The **Transaction ID** will be generated from the number sequence that was defined for the reference **GST invoice** in the **Tax information** for the **Reference number sequence group**.
 
 14. Close the page.
 15. Click **Voucher** to validate the financial entries.

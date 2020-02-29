@@ -113,7 +113,7 @@ This procedure is intended for users who have the System administrator or Electr
     * Version 1.1 of this model mapping configuration has been uploaded to LCS by using the LCS project for the ER repository that was previously configured.   
 
 ## Evaluate ER configuration dependencies
-    * We will delete created configurations from the system and download them back from the LCS repository.  
+We will delete created configurations from the system and download them back from the LCS repository.  
 1. In the tree, select 'Sample data model\Sample mapping'.
 2. Click Delete.
 3. Click Yes.
@@ -144,4 +144,3 @@ This procedure is intended for users who have the System administrator or Electr
 26. In the tree, expand 'Sample data model'.
     * Note that the model ‘Sample mapping’ mapping configuration has been downloaded together with the selected data model configuration. The two files are downloaded together because ‘Sample mapping’ has been defined as implementing the selected data model, and because it’s applicable for the application. The ‘Sample mapping (alternative)’ configuration hasn’t been downloaded because the condition for the required application version isn’t satisfied.   
     * If you sign in to Finance and Operations, register the same provider, access the same LCS project, and download the same data model configuration, the ‘Sample mapping (alternative)’ configuration will download, whereas the ‘Sample mapping’ configuration will be skipped.  
-

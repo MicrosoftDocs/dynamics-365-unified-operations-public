@@ -5,7 +5,7 @@ title: Development and continuous delivery FAQ
 description: This topic summarizes answers to questions that are frequently asked by ISVs and partners, especially regarding guidelines about development, testing, delivery, and lifecycle management.
 author: RobinARH
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 01/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -24,7 +24,7 @@ ms.custom: 202614
 ms.assetid: bc80fee3-8f54-43c4-9162-f058056c956c
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 
@@ -40,9 +40,9 @@ This topic summarizes answers to questions that are frequently asked by ISVs and
 
 ### Do I customize (overlayer) or use extensions?
 
-Extensibility is the only customization framework in Finance, Supply Chain, and Retail. Overlayering isn't supported.
+Extensibility is the only customization framework in Finance, Supply Chain, and Commerce. Overlayering isn't supported.
 
-Dynamics 365 Finance, Supply Chain, and Retail are extensively customized by partners, value added resellers (VARs), and even some customers. The ability to customize the product is a strength that has historically been supported through overlayering of the application code. The move to the cloud, together with more agile servicing and frequent updates, requires a less intrusive customization model, so that updates are less likely to affect custom solutions. This new model is called *extensibility* and has replaced customization through overlayering.
+Dynamics 365 Finance, Supply Chain, and Commerce are extensively customized by partners, value added resellers (VARs), and even some customers. The ability to customize the product is a strength that has historically been supported through overlayering of the application code. The move to the cloud, together with more agile servicing and frequent updates, requires a less intrusive customization model, so that updates are less likely to affect custom solutions. This new model is called *extensibility* and has replaced customization through overlayering.
 
 For more information, see [Extensibility home page](../extensibility/extensibility-home-page.md) and the [Develop and customize home page](developer-home-page.md).
 
@@ -147,7 +147,7 @@ If you are a Microsoft partner developing code for more than one customer, we re
 ## Customer implementation LCS projects
 ### How many sandbox environments do I need within an LCS customer implementation project?
 
-A customer subscription comes with three environments by default: a dev or build environment, a tier-2 sandbox environment, and a production environment. You can use the tier-2 sandbox environment as a configuration and a UAT environment before the application goes live in production. After configuring the sandbox with the code and data that you need to go live (also known as your *gold configuration*), you can run your validation on the same environment. When your validation passes, restore your sandbox database to the point in time of its gold configuration. You can then deploy your code to production and copy the sandbox database to your production environment. You can also chose to have more than one sandbox environment that is is tier-2 or higher, especially after your application is live. One sandbox can be used as a pre-production UAT environment, and ther other sandboxes can be used for configuration, upgrade or other scenarios. You can purchase additional tier-2 or higher sandboxes. 
+A customer subscription comes with three environments by default: a dev or build environment, a tier-2 sandbox environment, and a production environment. You can use the tier-2 sandbox environment as a configuration and a UAT environment before the application goes live in production. After configuring the sandbox with the code and data that you need to go live (also known as your *gold configuration*), you can run your validation on the same environment. When your validation passes, restore your sandbox database to the point in time of its gold configuration. You can then deploy your code to production and copy the sandbox database to your production environment. You can also choose to have more than one sandbox environment that is tier-2 or higher, especially after your application is live. One sandbox can be used as a pre-production UAT environment, and the other sandboxes can be used for configuration, upgrade or other scenarios. You can purchase additional tier-2 or higher sandboxes. 
 
 The following servicing requests and tools are supported by LCS, which may help you decide whether one tier-2 sandbox is sufficient for your implementation.
 

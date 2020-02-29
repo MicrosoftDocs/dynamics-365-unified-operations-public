@@ -73,8 +73,8 @@ The following examples illustrate this point. You can't assume that the caller w
 
 | Pattern        | Synchronous programming paradigm    | Asynchronous programming paradigm |
 |----------------|-------------------------------------|-----------------------------------|
-| OData          | DbResourceContextaveChanges         | DbResourceContextaveChangesAsync |
-| Custom service | httpRequestetResponse               | httpRequesteginGetResponse |
+| OData          | DbResourceContextSaveChanges         | DbResourceContextSaveChangesAsync |
+| Custom service | httpRequestGetResponse               | httpRequestBeginGetResponse |
 | SOAP           | UserSessionServiceGetUserSessionInfo | UserSessionServiceGetUserSessionInfoAsync |
 | Batch data API | ImportFromPackage                   | [BeginInvoke](/dotnet/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously) |
 

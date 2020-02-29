@@ -64,7 +64,9 @@ Access to data is controlled through the existing form-level queries. When a for
 ## Usage
 The URL Generator is a .NET library that is accessible from X++, under the following namespace.
 
-    Microsoft.Dynamics.AX.Framework.Utilities.UrlHelper.UrlGenerator
+```xpp
+Microsoft.Dynamics.AX.Framework.Utilities.UrlHelper.UrlGenerator
+```
 
 #### Requirements
 
@@ -81,7 +83,7 @@ The URL Generator must be used from code running on the AOS, in an active user s
 
 #### Example
 
-```
+```xpp
 // gets the generator instance
 var generator     = new Microsoft.Dynamics.AX.Framework.Utilities.UrlHelper.UrlGenerator();
 var currentHost   = new System.Uri(UrlUtility::getUrl());

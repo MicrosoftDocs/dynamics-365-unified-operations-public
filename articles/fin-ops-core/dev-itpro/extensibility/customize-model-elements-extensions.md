@@ -3,7 +3,7 @@
 
 title: Customize model elements through extension
 description: In this tutorial, you’ll become familiar with the Fleet Management Extension model. To demonstrate extension capabilities, this model contains elements that extend the functionality of the Fleet Management application.
-author: robadawy
+author: jorisdg
 manager: AnnBe
 ms.date: 11/08/2017
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 11184
 ms.assetid: 3190f6e2-698a-4cfa-9a2d-a6c57354920a
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -272,36 +272,39 @@ This section shows how you can use the Visual Studio tools to create and interac
 14. In **Solution Explorer**, double-click **FEVehicleEventHandlers** to open the code editor.
 15. Right-click and paste the event handler method that you copied in step 12.
 
-        Class FMVehicleEventHandlers
+    ```xpp
+    Class FMVehicleEventHandlers
+    {
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        [DataEventHandler(tableStr(FMVehicle), DataEventType::ValidatedWrite)]
+        public static void FMVehicle_onValidatedWrite(Common sender, DataEventArgs e)
         {
-            /// <summary>
-            ///
-            /// </summary>
-            /// <param name="sender"></param>
-            /// <param name="e"></param>
-            [DataEventHandler(tableStr(FMVehicle), DataEventType::ValidatedWrite)]
-            public static void FMVehicle_onValidatedWrite(Common sender, DataEventArgs e)
-            {
-            }
         }
-
+    }
+    ```
 
 
 16. Insert the following code into the **FMVehicle\_onValidatedWrite** event handler. This code validates that the number of cylinders can't be greater than 8.
 
-           [DataEventHandler(tableStr(FMVehicle), DataEventType::ValidatedWrite)]
-            public static void FMVehicle_onValidatedWrite(Common sender, DataEventArgs e)
-            {
-                ValidateEventArgs validateArgs = e as ValidateEventArgs;
-                FMVehicle vehicle = sender as FMVehicle;
-                boolean result = validateArgs.parmValidateResult();
+    ```xpp
+    [DataEventHandler(tableStr(FMVehicle), DataEventType::ValidatedWrite)]
+    public static void FMVehicle_onValidatedWrite(Common sender, DataEventArgs e)
+        {
+            ValidateEventArgs validateArgs = e as ValidateEventArgs;
+            FMVehicle vehicle = sender as FMVehicle;
+            boolean result = validateArgs.parmValidateResult();
 
-                if (vehicle.NumberOfCylinders > 8)
-                {
-                    result = checkFailed("Invalid number of cylinders.");
-                    validateArgs.parmValidateResult(result);
-                }
+            if (vehicle.NumberOfCylinders > 8)
+            {
+                result = checkFailed("Invalid number of cylinders.");
+                validateArgs.parmValidateResult(result);
             }
+        }
+    ```
 
 17. Save FMVehicleEventHandlers class 
 
@@ -348,8 +351,9 @@ This is an example of adding event handler methods on existing controls.
 
 2.  Paste the event handler method in a class of the Fleet Management Extension model and add X++ code to implement it.
 
-<!-- -->
+    <!-- -->
 
+    ```xpp
     /// <summary>
     ///
     /// </summary>
@@ -359,39 +363,69 @@ This is an example of adding event handler methods on existing controls.
     public static void AddLine_OnClicked(FormControl sender, FormControlEventArgs e)
     {
     }
-
+    ```
+    
 -   When implementing the AddLine\_OnClicked event handler, you can access the button control instance using the **sender** parameter.
 
-<!-- -->
-
+    <!-- -->
+    ```xpp
     FormButtonControl button = sender as FormButtonControl;
+    ```
 
 -   If you need to access the parent form or any of its variables, this example shows how to access the **FormRun** instance and one of its data sources.
 
-<!-- -->
-
+    <!-- -->
+    ```xpp
     FormRun fr;
     fr = sender.formRun();
     var frDs = fr.dataSource("FMRental");
+    ``` 
 
 ## Experiment with event handlers on form data sources
 Just like tables, form controls and other element types, form data sources and form data source fields provide framework-level events. The following example shows how you can use the ValidatingWrite event on a form data source or the Validating event on a form data source field to validate user input on the FMRental form. This functionality is available as of Platform Update 7.
 
-```
-    /// <summary>
-    /// When saving a new rental, prevent setting the start mileage on the FMRental form to a value that is equal to 1
-    /// </summary>
-    [FormDataSourceEventHandler(formDataSourceStr(FMRental, FMRental), FormDataSourceEventType::ValidatingWrite)]
-    public static void FMRental_OnValidatingWrite(FormDataSource sender, FormDataSourceEventArgs e)
+```xpp
+/// <summary>
+/// When saving a new rental, prevent setting the start mileage on the FMRental form to a value that is equal to 1
+/// </summary>
+[FormDataSourceEventHandler(formDataSourceStr(FMRental, FMRental), FormDataSourceEventType::ValidatingWrite)]
+public static void FMRental_OnValidatingWrite(FormDataSource sender, FormDataSourceEventArgs e)
+{
+    var datasource = sender as FormDataSource;
+    var args = e as FormDataSourceCancelEventArgs;
+    if (args != null && datasource != null)
     {
-        var datasource = sender as FormDataSource;
-        var args = e as FormDataSourceCancelEventArgs;
-        if (args != null && datasource != null)
+        FMRental record = datasource.cursor() as FMRental;
+        if (record.recId == 0)
+        {
+            if(record.startmileage == 1)
+            {
+                boolean doCancel = !checkFailed("Start Mileage = 1 is not allowed");
+                args.cancel(doCancel);
+            }
+        }
+    }
+}
+```
+
+```xpp
+/// <summary>
+/// Prevent changing the start mileage field on the FMRental form to a value that is equal to 1
+/// </summary>
+[FormDataFieldEventHandler(formDataFieldStr(FMRental, FMRental, StartMileage), FormDataFieldEventType::Validating)]
+public static void StartMileage_OnValidating(FormDataObject sender, FormDataFieldEventArgs e)
+{
+    var dataObject = sender as FormDataObject;
+    var args = e as FormDataFieldCancelEventArgs;
+    if (args != null && dataObject != null)
+    {
+        var datasource = dataObject.datasource() as FormDataSource;
+        if (datasource != null)
         {
             FMRental record = datasource.cursor() as FMRental;
-            if (record.recId == 0)
+            if (record.RecId > 0)
             {
-                if(record.startmileage == 1)
+                if (record.StartMileage == 1 )
                 {
                     boolean doCancel = !checkFailed("Start Mileage = 1 is not allowed");
                     args.cancel(doCancel);
@@ -399,44 +433,20 @@ Just like tables, form controls and other element types, form data sources and f
             }
         }
     }
-```
-```
-    /// <summary>
-    /// Prevent changing the start mileage field on the FMRental form to a value that is equal to 1
-    /// </summary>
-    [FormDataFieldEventHandler(formDataFieldStr(FMRental, FMRental, StartMileage), FormDataFieldEventType::Validating)]
-    public static void StartMileage_OnValidating(FormDataObject sender, FormDataFieldEventArgs e)
-    {
-        var dataObject = sender as FormDataObject;
-        var args = e as FormDataFieldCancelEventArgs;
-        if (args != null && dataObject != null)
-        {
-            var datasource = dataObject.datasource() as FormDataSource;
-            if (datasource != null)
-            {
-                FMRental record = datasource.cursor() as FMRental;
-                if (record.RecId > 0)
-                {
-                    if (record.StartMileage == 1 )
-                    {
-                        boolean doCancel = !checkFailed("Start Mileage = 1 is not allowed");
-                        args.cancel(doCancel);
-                    }
-                }
-            }
-        }
-    }
+}
 ```
 ## Experiment with table extension display and edit methods
 Extension methods enable you to extend tables by creating new display and edit methods on these tables without over-layering X++ code (Extension method must belong to a class named with an \_Extension suffix). For example, this class shows how you can extend the FMVehicle table with an extension display method named CupHoldersDisplay.
 
-    public static class FMVehicle_Extension
+```xpp
+public static class FMVehicle_Extension
+{
+    public static display int CupHoldersDisplay(FMVehicle vehicle)
     {
-       public static display int CupHoldersDisplay(FMVehicle vehicle)
-       {
-         return 7;
-       }
+        return 7;
     }
+}
+```
 
 On a form or form extension, you can bind a control to this display method by setting "Data Source = FMVehicle" and "Data method = "FMVehicle\_Extension::CupHoldersDisplay" as the image below shows.
 

@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw1
-ms.search.scope:  Operations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.7
 # What's new and changed in Dynamics 365 Supply Chain Management 10.0.7 (January 2020)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 This topic describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.7. This version has a build number of 10.0.283, and is available as follows:
 

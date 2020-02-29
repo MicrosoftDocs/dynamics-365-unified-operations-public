@@ -48,16 +48,18 @@ The HierarchyViewer control shows, at most, three levels on a single branch at a
 ## Business logic interaction
 The HierarchyViewer control offers data visualization and navigation. The HierarchyViewer control is a read-only control. It can be used to select an entity (employee, product, or organization), and corresponding data can then be managed though other display and input fields on the form, outside the HierarchyViewer control. This is accomplished by a selection event that is raised on each user focus on each node.
 
-    public void init(){
-        …    
-        // HierarchyViewer is the auto-declared name for the control.
-        // handleNodeSelected is your event handler.
-        HierarchyViewer.notfiyNodeSelected += eventhandler(element.handleNodeSelected);
-    }
-    public void handeNodeSelected(int _nodeId)
-    {
-        // do something
-    }
+```xpp
+public void init(){
+    …    
+    // HierarchyViewer is the auto-declared name for the control.
+    // handleNodeSelected is your event handler.
+    HierarchyViewer.notfiyNodeSelected += eventhandler(element.handleNodeSelected);
+}
+public void handeNodeSelected(int _nodeId)
+{
+    // do something
+}
+```
 
 ## Authoring a HierarchyViewer instance
 To create a HierarchyViewer instance:
@@ -71,36 +73,42 @@ The HierarchyViewer control is primarily a visually interactive way of navigatin
 
 A typical use of the control is to initialize a server-side “in-memory” map of the hierarchy and then dynamically update the control as the user interactively explores the hierarchy by using load-on-demand semantics.
 
-    public void init()
+```xpp
+public void init()
+{
+    HcmPositionNode node;
+    nodeMap = new Map(Types::Int64, Types::Class);
+    hierarchyMap = new Map(Types::Int64, Types::Int64);
+    firstNodeId = 0;
+    // Initialize the organization node
+    node = HcmPositionNode::newParameters(this.getNextNodeId(), HcmPositionNodeType::Enterprise, -1, 0, "@SYS317690", "");
+    rootNode = node;
+    if (selectedNode == null)
     {
-        HcmPositionNode node;
-        nodeMap = new Map(Types::Int64, Types::Class);
-        hierarchyMap = new Map(Types::Int64, Types::Int64);
-        firstNodeId = 0;
-        // Initialize the organization node
-        node = HcmPositionNode::newParameters(this.getNextNodeId(), HcmPositionNodeType::Enterprise, -1, 0, "@SYS317690", "");
-        rootNode = node;
-        if (selectedNode == null)
-        {
-            selectedNode = rootNode;
-        }
-        this.insertNewNodeAndUpdateParent(node);
+        selectedNode = rootNode;
     }
+    this.insertNewNodeAndUpdateParent(node);
+}
+```
 
 Override the **applyBuild** method of the control. This is where you will pass the instance of your controller class.
 
+```xpp
     public void applyBuild()
-    {
-        super();
-        YourControllerClass controller = new YourControllerClass();
-        this.initControl(controller);
-    }
+{
+    super();
+    YourControllerClass controller = new YourControllerClass();
+    this.initControl(controller);
+}
+```
 
 You don’t have to populate the whole node structure. Instead, you can populate nodes on demand.
 
-    public void initHcmPositionFromCurrentNode(HcmPosition _hcmPosition)
-    protected void insertNewNodeAndLoadDescendants(HcmPositionNode _node, int _depth, HcmPositionNode _parentNode = null, Common _common = null)
-    protected void loadNodeDescendants(HcmPositionNode _node, int _depth, Common _common = null)
+```xpp
+public void initHcmPositionFromCurrentNode(HcmPosition _hcmPosition)
+protected void insertNewNodeAndLoadDescendants(HcmPositionNode _node, int _depth, HcmPositionNode _parentNode = null, Common _common = null)
+protected void loadNodeDescendants(HcmPositionNode _node, int _depth, Common _common = null)
+```
 
 ## Changing node visuals
 You can't change node visuals. The intended design is for the control to offer a set of unbound controls that have a default layout that you can manipulate by using an **ExtendedStyle** property to offer a predefined set of alternatives that the author can select.

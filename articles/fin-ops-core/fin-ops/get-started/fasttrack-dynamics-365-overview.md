@@ -45,12 +45,16 @@ To get started with FastTrack, your project must meet the minimum license requir
 
 After your **Implementation project** workspace is provisioned in Microsoft Dynamics Lifecycle Services (LCS), the FastTrack team will contact your project team to onboard the project and provide information about the program. No action is required on your part. You just have to make sure that the user information in LCS is up to date, and that the email addresses in the setup are monitored.
 
-### Tiered services 
+| FastTrack program | Revenue | TechTalks | Workshops | Workshop follow-ups | Dedicated FastTrack engineering resources |
+| --- | --- | --- | --- | --- | --- |
+| **Dynamics 365 FastTrack** <br></br> **Business process applications** <br></br> Dynamics 365 Finance <br></br> Dynamics 365 Supply Chain Management <br></br> Dynamics 365 Retail <br></br> Dynamics 365 Human Resources\* | Combined annual adjusted revenue of $300,000 or more | All included | All included | All included | Included |
+| **FastTrack Essentials** <br></br> Dynamics 365 Finance <br></br> Dynamics 365 Supply Chain Management <br></br> Dynamics 365 Retail <br></br> Dynamics 365 Human Resources | Combined annual adjusted revenue < $300,000 | All included | Pre go-live assessment | Not included | Not included |
 
-| Number of seats                                                                         | TechTalks | Workshops     | Assessments                  | Designated FastTrack solution architect | Community |
-|-----------------------------------------------------------------------------------------|-----------|---------------|------------------------------|----------------------------------------|-----------|
-| 20–149 combined eligible App or Plan user subscription licenses, or the equivalent      | ✓         | Not available | Go-live assessment via email | Not available                          | ✓         |
-| 150 or more combined eligible App or Plan user subscription licenses, or the equivalent | ✓         | ✓             | Go-live assessment workshop  | ✓                                      | ✓         |
+We will announce FastTrack coverage later this year for these applications:
+
+- Dynamics 365 Guides
+- Dynamics 365 Remote Assist
+- Dynamics 365 Layout
 
 ### FastTrack for services
 

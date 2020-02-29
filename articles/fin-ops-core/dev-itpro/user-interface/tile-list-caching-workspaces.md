@@ -61,7 +61,9 @@ Count tiles that show values that represent pending work should be fairly respon
 
 See the "Common mistakes and tips for query optimization" section for details about how to evaluate and improve query performance to achieve these execution speeds. For tiles that have backing queries and can't meet the 25-ms execution speed threshold, the refresh frequency on the tile should be set to one of the lower values (for example, 10 minutes or 24 hours). If the values must be updated more frequently for tiles that have less-efficient queries (which should be rare), you can add the following code to manually refresh the cache when an action is taken that will affect the cached set.
 
-    TileDataService::forceRefresh(tilestr(<tileName>), formRun)
+```xpp
+TileDataService::forceRefresh(tilestr(<tileName>), formRun)
+```
 
 An example of a data set that might not change often is products that have no configuration. A tile that shows this count might have a refresh frequency of 10 minutes. However, the tile count might still appear responsive if the products form is instrumented to force-refresh the data cache when a configuration is defined for a product that previously had no configuration.
 
@@ -91,35 +93,39 @@ Next, you must define a table that contains a set of fields that match the field
 
 The third step is to create a class that defines the relationship between the cache query and the cache table. This class requires that a few attributes be defined, and it must also extend and implement the appropriate framework data caching classes. The following code shows the corresponding class from the Reservation Management workspace.
 
-    [SysDataSetExtension(classStr(FMPickupAndReturn)), // The name of this class
-    SysDataSetCacheTableExtension(tableStr(FMPickupAndReturnCache))] // The name of the cache table
-    class FMPickupAndReturn extends SysDataSetQuery implements SysIDataSet
+```xpp
+[SysDataSetExtension(classStr(FMPickupAndReturn)), // The name of this class
+SysDataSetCacheTableExtension(tableStr(FMPickupAndReturnCache))] // The name of the cache table
+class FMPickupAndReturn extends SysDataSetQuery implements SysIDataSet
+{
+    public SysDataCacheRefreshFrequency parmRefreshFrequency()
     {
-        public SysDataCacheRefreshFrequency parmRefreshFrequency()
-        {
-            return 600; // Cache refresh frequency, in seconds.
-        }
-        public SysQueryableIdentifier parmQueryableIdentifier()
-        {
-            return queryStr(FMPickupAndReturnQuery); // The name of the query.
-        }
-        public SysDataCacheTypeId parmCacheTypeId()
-        {
-            return tableNum(FMPickupAndReturnCache); // The name of the table.
-        }
-        public static FMPickupAndReturn construct()
-        {
-            return new FMPickupAndReturn();
-        }
+        return 600; // Cache refresh frequency, in seconds.
     }
+    public SysQueryableIdentifier parmQueryableIdentifier()
+    {
+        return queryStr(FMPickupAndReturnQuery); // The name of the query.
+    }
+    public SysDataCacheTypeId parmCacheTypeId()
+    {
+        return tableNum(FMPickupAndReturnCache); // The name of the table.
+    }
+    public static FMPickupAndReturn construct()
+    {
+        return new FMPickupAndReturn();
+    }
+}
+```
 
 In some circumstances, you might also have to implement the **parmQueryableToCacheMapping()** method. This method is required when at least one column name in your cache table doesn't match the name of the corresponding column in the backing table (for example, if you must add two fields that have the same name but are from different tables). In this case, you can implement this method to define the column mapping between the cache table and the backing tables. The syntax is the same as the syntax for the **Query::Insert\_RecordSet()** method (<https://msdn.microsoft.com/library/query.insert_recordset.aspx>).
 
-    public Map parmQueryableToCacheMapping()
-    {
-        Map sourceToTargetMap = super();
-        return sourceToTargetMap;
-    }
+```xpp
+public Map parmQueryableToCacheMapping()
+{
+    Map sourceToTargetMap = super();
+    return sourceToTargetMap;
+}
+```
 
 ### Form implementation
 
@@ -131,19 +137,21 @@ After you've built your cache query, table, and class, you’re ready to use the
 
 The following code is an example from the **FMPickingUpTodayPart** form, which is one of the tabbed lists on the Reservation Management workspace.
 
-    [Form]public class FMPickingUpTodayPart extends FormRun
-    implements SysIFilterConsumerForm, SysIDataSetConsumerForm, SysIFilterEventHandler
-    {
-        public void registerDatasourceOnQueryingEvent()
-        {    
-            FMPickupAndReturnCache_DS.OnQueryExecuting += eventhandler(this.parmDataSetFormQueryEventHandler().prepareDataSet);    
-            FMPickupAndReturnCache_DS.OnQueryExecuting +=eventhandler(this.parmFilterFormQueryEventHandler().applyFilter);    
-        }
-        public void onFilterChanged()
-        {    
-            FMPickupAndReturnCache_DS.executeQuery();    
-        }    
+```xpp
+[Form]public class FMPickingUpTodayPart extends FormRun
+implements SysIFilterConsumerForm, SysIDataSetConsumerForm, SysIFilterEventHandler
+{
+    public void registerDatasourceOnQueryingEvent()
+    {    
+        FMPickupAndReturnCache_DS.OnQueryExecuting += eventhandler(this.parmDataSetFormQueryEventHandler().prepareDataSet);    
+        FMPickupAndReturnCache_DS.OnQueryExecuting +=eventhandler(this.parmFilterFormQueryEventHandler().applyFilter);    
     }
+    public void onFilterChanged()
+    {    
+        FMPickupAndReturnCache_DS.executeQuery();    
+    }    
+}
+```
 
 ### Additional examples
 

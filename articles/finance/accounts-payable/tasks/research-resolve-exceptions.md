@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Research/Resolve exceptions
+title: Research or resolve exceptions
 description: Vendor invoice policies are run when you post a vendor invoice by using the Vendor invoice page and when you open the vendor invoice Policy violations page. 
 author: abruer
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: abruer
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Research/Resolve exceptions
+# Research or resolve exceptions
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

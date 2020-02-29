@@ -5,7 +5,7 @@ title: Data management error descriptions
 description: This topic describes the error messages that you might encounter in data management.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 10/09/2018
+ms.date: 01/08/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -51,3 +51,7 @@ One of the scenarios where this can happen is when the environment, such as the 
 
 ## XML is not in correct format-Exception from HRESULT: 0xC0010009
 This is a generic message that covers all XML formatting issues in the file. For example, the data project has mappings for columns that do not exist in the file that is being used for the operation. This can happen if certain columns were removed from the file and this file is now used. Either fix the mapping in the data project or fix the file to have all the columns as expected.
+
+## Error while uploading a file during export
+When running an export on a development environment, an error could occur relating to not being able to upload the export file. This could occur if Azure storage emulator is not available or an older version of the emulator is installed. To resolve this issue, install the latest emulator, re-start the virtual machine (VM), and re-run the export job. The storage emulator can be installed from [Azure storage emulator](https://docs.microsoft.com/azure/storage/common/storage-use-emulator).
+

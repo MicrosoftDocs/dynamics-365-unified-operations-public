@@ -5,7 +5,7 @@ title: Export a copy of the standard user acceptance testing (UAT) database
 description: This topic explains a database export scenario for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 07/08/2019
+ms.date: 01/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -70,11 +70,9 @@ After you've downloaded a database backup (.bacpac) file, you can begin the manu
 - Keep a copy of the existing AxDB database, so that you can revert to it later if you must.
 - Import the new database under a new name, such as **AxDB\_fromProd**.
 
-To help guarantee the best performance, copy the \*.bacpac file to the local computer that you're importing from. Open a **Command Prompt** window, and run the following commands.
+To ensure the best performance, copy the \*.bacpac file to the local computer that you're importing from. Download sqlpackage .NET Core for Windows from [Get sqlpackage .NET Core for Windows](https://docs.microsoft.com/sql/tools/sqlpackage-download?view=sql-server-ver15#get-sqlpackage-net-core-for-windows). Open a **Command Prompt** window, and run the following commands from the sqlpackage .NET Core folder.
 
-```
-cd C:\Program Files (x86)\Microsoft SQL Server\140\DAC\bin
-
+```Console
 SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:localhost /tdn:<target database name> /p:CommandTimeout=1200
 ```
 
@@ -91,7 +89,7 @@ Here is an explanation of the parameters:
 
 Run the following SQL script against the imported database. This script adds back the users that you deleted from the source database and correctly links them to the SQL logins for this SQL Server instance. The script also turns change tracking back on. Remember to edit the final **ALTER DATABASE** statement so that it uses the name of your database.
 
-```
+```sql
 CREATE USER axdeployuser FROM LOGIN axdeployuser
 EXEC sp_addrolemember 'db_owner', 'axdeployuser'
 
@@ -158,7 +156,7 @@ DEALLOCATE retail_ftx;
 
 If change tracking was turned on in the source database, be sure to turn it on in the newly provisioned database in the target environment. To turn on change tracking, use the **ALTER DATABASE** command.
 
-```
+```sql
 ALTER DATABASE [your database name] SET CHANGE_TRACKING = ON (CHANGE_RETENTION = 6 DAYS, AUTO_CLEANUP = ON);
 ```
 
@@ -246,7 +244,7 @@ This issue can occur when the platform build number of the current environment i
 - Use the **Updates** tiles on the environment page in LCS to upgrade the platform in the current environment so that it matches the platform in the source environment.
 - Run the following query to adjust the expected version in the database.
 
-    ```
+    ```sql
     UPDATE SQLSYSTEMVARIABLES
 
     SET VALUE = 138
