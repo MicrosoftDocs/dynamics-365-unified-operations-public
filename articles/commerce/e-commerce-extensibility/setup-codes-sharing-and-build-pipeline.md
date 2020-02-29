@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Setup Azure DevOps code sharing and build pipeline
-description: This topic describes how to setup code sharing with Azure DevOps and a build pipeline for your Microsoft Dynamics 365 Commerce online extensibility code. 
+title: Set up Azure DevOps code sharing and build pipeline
+description: This topic describes how to set up code sharing with Azure DevOps and a build pipeline for your Microsoft Dynamics 365 Commerce online extensibility code. 
 author: samjarawan
 manager: annbe
-ms.date: 02/07/2020
+ms.date: 02/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -32,41 +32,42 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to setup code sharing with Azure DevOps and a build pipeline for your Microsoft Dynamics 365 Commerce online extensibility code. 
+This topic describes how to set up code sharing with Azure DevOps and a build pipeline for your Microsoft Dynamics 365 Commerce online extensibility code. 
 
 ## Overview
-Leveraging [Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/user-guide/what-is-azure-devops?view=azure-devops) will allow your team to plan work, collaborate on code development, and automate the building of your Dynamics 365 Commerce e-Commerce deployment packages.
 
-In this article we will guide you through the steps needed to:
-* Create a GitHub repo for Dynamics 365 Commerce online SDK
-* Configure a build pipeline to generate a Dynamics 365 Commerce online deployable package
+Leveraging [Azure DevOps](https://docs.microsoft.com/azure/devops/user-guide/what-is-azure-devops?view=azure-devops) will allow your team to plan work, collaborate on code development, and automate the building of your Dynamics 365 Commerce e-Commerce deployment packages.
+
+This topic will guide you through the steps needed to:
+* Create a GitHub repository (repo) for the Dynamics 365 Commerce online software development kit (SDK).
+* Configure a build pipeline to generate a Dynamics 365 Commerce online deployable package.
 
 
-##  Create an Azure DevOps Repo
-1. You can create an Azure DevOps GitHub repo project from you existing Azure DevOps service subscription or a new Azure DevOps subscription.  For more detail see [Azure DevOps Service](https://azure.microsoft.com/en-us/pricing/details/devops/azure-devops-services/). To get started with a free trial account see the [Get started with Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/user-guide/sign-up-invite-teammates?view=azure-devops quickstart guide.
+##  Create an Azure DevOps Github repo
 
-2. Once the Azure DevOps service is set up for your organization, create a new Azure DevOps project.
+You can create an Azure DevOps GitHub repo project from a new or existing Azure DevOps service subscription. For more information, see [Azure DevOps Service](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/). To get started with a free trial account, see the [Get started with Azure DevOps](https://docs.microsoft.com/azure/devops/user-guide/sign-up-invite-teammates?view=azure-devops) quickstart guide.
 
-![Create new project](media/code-sharing-1.png)
+To create an Azure DevOps Github repo, follow these steps.
 
-3. Provide a project name and description.  Select private or enterprise visibility so that it's locked to your organization and developers.
+1. Once the Azure DevOps service is set up for your organization, create a new Azure DevOps project.
 
-![Provide project name](media/code-sharing-2.png)
+    ![Create new project](media/code-sharing-1.png)
 
-4. Install Git. Git is a free and open source distributed version control system.  We’ll be using git to clone our SDK code. Navigate to https://git-scm.com/downloads followed by downloading and installing the latest build.  You should be able to accept all the default install values.
+1. Provide a project name and description. Select private or enterprise visibility so that it's accessible to your organization and developers.
 
-5. Install Visual Studio Code. Visual Studio Code is a lightweight source code editor which runs on your desktop and is available for Windows, macOS and Linux.  It comes with built in support for JavaScript, TypeScript and Node.js.
-Navigate to https://code.visualstudio.com and download the latest stable build. Once downloaded launch the installer and you should be able to leave all values at their defaults during the install and accept the user license agreement.
+    ![Provide project name](media/code-sharing-2.png)
 
-6. Clone the Microsoft Dynamics 365 Commerce Online SDK/Starter kit. The SDK will give you everything you need to extend your e-Commerce site including the ability to create new modules, data actions and themes. 
+1. We'll be using Git, a free and open source distributed version control system, to clone our SDK code. Go to https://git-scm.com/downloads to download and install the latest build. You should be able to accept all the default install values.
 
-The SDK configuration package is available through the following GitHub repository: https://github.com/microsoft/Msdyn365.Commerce.Online  
+1. Install Visual Studio Code. Visual Studio Code is a lightweight source code editor that runs on your desktop and is available for Windows, macOS, and Linux. It comes with built in support for JavaScript, TypeScript, and Node.js. Go to https://code.visualstudio.com to download the latest stable build. Once downloaded, launch the installer and accept the user license agreement. You should be able accept all the default install values.
 
-There are two ways to get the SDK configuration packages to your development machine.  
+1. Clone the Microsoft Dynamics 365 Commerce Online SDK. The SDK will give you everything you need to extend your e-Commerce site including the ability to create new modules, data actions, and themes. The SDK configuration package is available through the following GitHub repository: https://github.com/microsoft/Msdyn365.Commerce.Online.
 
-You can either directly download it from the GitHub repo or clone the repo. To clone, start off by launching a Command Prompt with Administrator privileges and create a directory to hold your e-Commerce site code, we’ll use “c:\repos” below. 
+There are two ways to get the SDK configuration packages to your development machine: you can either download it directly from the GitHub repo, or you can clone the repo. 
 
-From the new directory perform a “git clone YOUR_GIT_REPO”. 
+To clone your repo, follow these steps.
+    1. Launch a command prompt with administrator privileges and create a directory to hold your e-Commerce site code (for example, "c:\repos"). 
+    1. From the new directory, enter **git clone <YOUR_GIT_REPO>**, where <YOUR_GIT_REPO> is your Git repo. Since you're only pulling from the git repository once, you can remove the .git folder, which is a hidden directory under the root.
 
 ```console
 md c:\repos
@@ -75,36 +76,34 @@ git clone https://github.com/microsoft/Msdyn365.Commerce.Online.git
 cd Msdyn365.Commerce.Online
 ```
 
-Since you’re only pulling from the git repository once, you can remove .git folder to unlink, which is a hidden directory under the root.
+1. Clone the Azure DevOps GitHub project repo:
+    1. Under the **Repos** on the left navigation pane, select **Files**.
+    1. Select the "copy" symbol to copy the URL.
 
-7. We'll now clone the Azure DevOps GitHub project repo. Select the "Files" tab under the **Repos** section on the left tab bar.  Select the "copy" icon to copy the URL.
+        ![Clone Azure DevOps repo](media/code-sharing-3.png)
 
-![Clone Azure DevOps repo](media/code-sharing-3.png)
+    1. Launch a command prompt with administrator privileges and create a directory to hold your e-Commerce site code (for example, "c:\repos"). 
+    1. From the new directory, enter **git clone <AZURE_DEVOPS_GIT_REPO>**, where <AZURE_DEVOPS_GIT_REPO> is the Azure DevOps GitHub project repo. A new, empty folder with the name of the Azure DevOps project will be created.
 
-To clone, start off by launching a Command Prompt with Administrator privileges and go to the directory to hold your Azure DevOps repo code, we’ll use “c:\repos” below. 
-
-From the new directory perform a “git clone YOUR_GIT_REPO”. 
 ```console
 cd c:\repos
 git clone https://xxxxxx.dev.azure.com/<DevOpsProjectName>/_git/< DevOpsProjectName>
 ```
 
-A new folder with name of the Azure DevOps project will be created with no contents.
+1. Copy all of the contents of "C:\repos\Msdyn365.Commerce.Online" to "C:\repos\<DevOpsProjectName>". Do not copy the hidden .git folder.
 
-8. Copy all the contents of “C:\repos\Msdyn365.Commerce.Online” to “C:\repos\<DevOpsProjectName>”
-Open Visual studio Code. Open folder “c:\repos\<DevOpsProjectName>”  (Note: Do not copy the hidden .git folder over)
+1. With Visual Studio Code, open the folder "c:\repos\<DevOpsProjectName>". When you select the source control tab on the left, Visual Studio Code will show the new changes to be committed.
+1. To commit all of the changes to Git, enter a description in the text box at the top of the **SOURCE CONTROL: GIT** pane, and then select the "Commit" checkmark symbol above it. When prompted when to stage all you cahnges and commit them directly, select **Yes**.
 
-9. Open Visual studio Code. Open folder “c:\repos\<DevOpsProjectName>”.  Visual studio code will show the new changes to be committed when you select the source control tab on the left hand side.  Commit all changes to Git by selecting the "Commit all" checkbox at the top.  Enter a check in description when prompted.
+    ![Commit changes](media/code-sharing-4.png)
 
-![Commit changes](media/code-sharing-4.png)
+1. Select the ellipsis symbol ("...") to the right of the checkmark symbol, and in the flyout that appears select **Push** to push the changes to the repo.  
 
-10. Select the "..." menu at the top and then "Push" to push the changes to the repo.  
+    ![Push changes](media/code-sharing-5.png)
 
-![Push changes](media/code-sharing-5.png)
+In Azure DevOps, you should now see the new files.
 
-11. If you now go to the repo files in Azure DevOps, you can see the new files.
-
-![New files in Azure DevOps](media/code-sharing-6.png)
+    ![New files in Azure DevOps](media/code-sharing-6.png)
 
 ## Create a new build pipeline
 1. In Azure DevOps select **Pipelines** under the **Pipelines** tab on the left followed by the **Create Pipeline** button.
