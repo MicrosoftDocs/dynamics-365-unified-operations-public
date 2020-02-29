@@ -56,7 +56,7 @@ This topic only describes the differences between the two templates:
 
 The **Field Service Products with Inventory unit (Supply Chain Management to Field Service)** template includes one mapping that isn't included in the **Field Service Products (Supply Chain Managementto Field Service)** template. This mapping ensures that the Inventory unit needed for inventory level synchronization is included.
 
-```
+```Text
 INVENTORYUNITSYMBOL [INVENTORYUNITSYMBOL]         Fn        msdynce_inventoryunit.name [Inventory Unit(Name)] 
 ```
 

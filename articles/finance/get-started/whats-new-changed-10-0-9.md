@@ -48,6 +48,8 @@ The following features are included in this release. The feature titles link to 
  
  - [Vendor bidding – RFQ questions from vendors and summarized responses](https://docs.microsoft.com/business-applications-release-notes/april19/dynamics365-finance-operations/vendor-bidding)
  
+ - [Credit management](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/credit-management)
+ 
  - [Extended Italian localization: separate accounts for credit notes](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-separate-accounts-credit-notes)
  
  - [Extended Italian localization: sales invoice lines sorting by packing slips](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-sales-invoice-lines-sorting-packing-slips)

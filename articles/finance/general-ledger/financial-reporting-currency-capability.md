@@ -58,7 +58,9 @@ Additionally, the following actions will also cause translation:
 - Use of a reporting tree to summarize multiple legal entities with different accounting currencies. Amounts will be translated to the accounting currency based on the legal entity specified in the report definition or the current company context if the @ANY company is used in the report definition. You will see the currency being used in Report Designer near the top of the page with text stating "Values will be displayed in USD" when US dollar is the accounting currency of the current company. 
 - Using the **Currency** button in the web report viewer will cause one additional version of the report to be generated, overriding the accounting currency if it wasn't previously specified. 
 Using the **Include all reporting currencies** button in Report Designer will cause additional versions of the report to be generated using translated data for each currency selected. 
-Note that this option should only be used if you expect to use these versions are expected, since it takes additional resources to generate the additional reports. 
+
+> [!Note]
+> This option should only be used if these versions are expected, since it takes additional resources to generate the additional reports. 
 
 For amounts being translated within Financial reporting, the following types of translation are available for use, and are specified within each main account.
 

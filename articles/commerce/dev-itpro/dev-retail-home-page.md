@@ -83,6 +83,7 @@ This page lists the resources that are available for IT pros and developers who 
 - [Add custom controls to POS views that aren't screen layout designer-based](pos-control-non-screen.md)
 - [Development in cloud-hosted development environments without admin access](cloud-dev-box.md)
 - [Test recorder and Regression suite automation tool for Cloud POS](pos-rsat.md)
+- [POS Cart view events and handlers](cart-view-handlers.md)
 
 ## Integrating Commerce
 -   [Create and apply branding to the Retail Experience app](create-retail-experience-app.md)
@@ -106,6 +107,7 @@ This page lists the resources that are available for IT pros and developers who 
 -   [Add properties to sales orders](add-properties-sales-order.md)
 -   [Manage secrets for retail channels](manage-secrets.md)
 -   [Log extension events to Application Insights](commerce-application-insights.md)
+-   [Create async Commerce (CRT) APIs in your business logic](async-commerce-extension.md)
 
 ## Retail SDK
 - [Retail software development kit (SDK) architecture](retail-sdk/retail-sdk-overview.md)
@@ -136,3 +138,4 @@ This page lists the resources that are available for IT pros and developers who 
 - [Implementing a payment connector and payment device (white paper)](https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device_update.pdf)
 - [Create Windows installers for payment connectors](create-windows-installer-payment-connector.md)
 - [Deploy payment connectors](deploy-payment-connector.md)
+- [Create payment packaging for Application Explorer in Service Fabric deployments](payment-connector-package.md)

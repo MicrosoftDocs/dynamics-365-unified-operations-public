@@ -942,6 +942,8 @@
           href: general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md
         - name: Set up sales tax reporting codes
           href: general-ledger/tasks/set-up-sales-tax-reporting-codes.md
+        - name: Dual currency support for sales tax
+          href: general-ledger/dual-currency-for-tax.md          
         - name: Sales tax specification by ledger transaction report
           href: general-ledger/Sales-tax-specification-by-ledger-transaction-report.md
         - name: Set up sales tax settlement periods
@@ -2813,6 +2815,8 @@
         items:
         - name: Document Reporting Services overview
           href: ../fin-ops-core/dev-itpro/analytics/document-reporting-services.md?toc=/dynamics365/finance/toc.json
+        - name: Supported fonts
+          href: ../fin-ops-core/dev-itpro/analytics/supported-fonts.md?toc=/dynamics365/finance/toc.json
         - name: Configure SSRS for on-premises deployments
           href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/finance/toc.json
         - name: Printing

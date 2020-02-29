@@ -148,7 +148,7 @@
           href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/supply-chain/toc.json
         - name: Saved views
           href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/supply-chain/toc.json
-        - name: Grid capabilites
+        - name: Grid capabilities
           href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/supply-chain/toc.json
         - name: Create and work with custom fields
           href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/supply-chain/toc.json
@@ -531,6 +531,8 @@
           href: cost-management/costing-sheets.md
         - name: Simulate cost changes by using a costing version for planned costs
           href: cost-management/simulate-cost-changes-costing-version-planned-costs.md
+        - name: Compare item prices storage report
+          href: cost-management/compare-item-price.md
       - name: Inventory accounting
         items:
         - name: Cost objects
@@ -677,6 +679,8 @@
         items:
         - name: Document Reporting Services overview
           href: ../fin-ops-core/dev-itpro/analytics/document-reporting-services.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Supported fonts
+          href: ../fin-ops-core/dev-itpro/analytics/supported-fonts.md?toc=/dynamics365/supply-chain/toc.json
         - name: Configure SSRS for on-premises deployments
           href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/supply-chain/toc.json
         - name: Printing
@@ -1064,7 +1068,9 @@
       - name: Planning Optimization
         items:
         - name: Planning Optimization overview
-          href: master-planning/planning-optimization/planning-optimization-overview.md 
+          href: master-planning/planning-optimization/planning-optimization-overview.md
+        - name: Negative on-hand is treated as zero on-hand
+          href: master-planning/planning-optimization/negative-on-hand.md 
         - name: Get started with Planning Optimization
           href: master-planning/planning-optimization/get-started.md
         - name: Planning Optimization fit analysis

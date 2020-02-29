@@ -630,6 +630,12 @@
             href: tasks/push-products-distribution-center-store-buyers-push.md
           - name: Set up rules and parameters for cross-docking and buyer's push  
             href: tasks/set-up-rules-parameters-cross-docking-buyers-push.md
+          - name: Inbound inventory operation in POS
+            href: pos-inbound-inventory-operation.md
+          - name: Outbound inventory operation in POS
+            href: pos-outbound-inventory-operation.md
+          - name: Calculate inventory availability for retail channels
+            href: calculated-inventory-retail-channels.md
         - name: Purchase orders	  
           items:
           - name: Purchase order overview
@@ -732,6 +738,18 @@
         href: tasks/store-configurations-retail-statements.md
       - name: Posting of online sales and payments 
         href: tasks/posting-online-sales-payments.md
+    - name: Manage worker tasks 
+      items:
+      - name: Task management overview
+        href: task-mgmt-overview.md
+      - name: Configure task management
+        href: task-mgmt-configure.md
+      - name: Create task lists and add tasks
+        href: task-mgmt-create-lists.md
+      - name: Assign task lists to stores or employees
+        href: task-mgmt-assign-lists.md
+      - name: Task management in POS
+        href: task-mgmt-pos.md
     - name: Manage your e-Commerce site 
       items:
       - name: Online store overview
@@ -886,6 +904,8 @@
           items:
           - name: Buy box module
             href: add-buy-box.md
+          - name: Ratings and reviews modules
+            href: ratings-reviews-modules.md
         - name: Purchase modules
           items:
           - name: Cart module
@@ -916,18 +936,6 @@
         items:
         - name: Build custom response pages for 4xx/5xx status code errors
           href: build-pages-400-500-errors.md
-    - name: Manage tasks 
-      items:
-      - name: Task management overview
-        href: task-mgmt-overview.md
-      - name: Configure task management
-        href: task-mgmt-configure.md
-      - name: Create task lists and add tasks
-        href: task-mgmt-create-lists.md
-      - name: Assign task lists to stores or employees
-        href: task-mgmt-assign-lists.md
-      - name: Task management in POS
-        href: task-mgmt-pos.md
     - name: Fraud protection 
       items:
       - name:	Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce	
@@ -1074,6 +1082,8 @@
         items:
          - name: Document Reporting Services overview
            href: ../fin-ops-core/dev-itpro/analytics/document-reporting-services.md?toc=/dynamics365/commerce/toc.json
+         - name: Supported fonts
+           href: ../fin-ops-core/dev-itpro/analytics/supported-fonts.md?toc=/dynamics365/commerce/toc.json
          - name: Configure SSRS for on-premises deployments
            href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/commerce/toc.json
          - name: Printing
@@ -1992,6 +2002,8 @@
           href: dev-itpro/pos-run-samples.md
         - name: Device management implementation guidance
           href: implementation-considerations-devices.md
+        - name: POS Cart view events and handlers
+          href: dev-itpro/cart-view-handlers.md
       - name: Hardware Station extensibility
         items:
         - name: Hardware Station and extensibility
@@ -2048,6 +2060,8 @@
           href: dev-itpro/retail-sdk/retail-sdk-samples.md
         - name: Log extension events to Application Insights
           href: dev-itpro/commerce-application-insights.md
+        - name: Create async Commerce (CRT) APIs in your business logic
+          href: dev-itpro/async-commerce-extension.md
       - name: Payment connector extensibility
         items:
         - name: Create a payment integration for a payment terminal
@@ -2064,6 +2078,8 @@
           href: payment-connector-data-fields.md
         - name: Enable duplicate payment protection for payment connector
           href: dev-itpro/duplicate-payment-protection.md
+        - name: Create payment packaging for Application Explorer in Service Fabric deployments
+          href: dev-itpro/payment-connector-package.md
       - name: Third-party e-Commerce extensibility
         items:
         - name: Configure online stores

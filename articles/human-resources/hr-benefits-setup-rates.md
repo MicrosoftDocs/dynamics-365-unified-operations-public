@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure rates
-description: 
+description: Rates in Microsoft Dynamics 365 Human Resources define how much employers and employees contribute for a benefit.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
