@@ -62,7 +62,7 @@ Follow these steps to specify that a field is a link.
 
 1. Add the following lines to the **appInit** method. You call the **configureControl** method, and pass in the page name and control name. You then supply the **LinkType** value for the control. The following values are supported: **Telephone**, **Email**, and **Url**.
 
-    ```
+    ```xpp
     metadataService.configureControl('PageName', 'ControlName', { LinkType: 'Telephone' });
     metadataService.configureControl('PageName', ' ControlName ', { LinkType: 'Email' });
     metadataService.configureControl('PageName', ' ControlName ', { LinkType: 'Url' });

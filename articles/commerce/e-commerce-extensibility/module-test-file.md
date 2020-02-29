@@ -5,7 +5,7 @@ title: Module test file
 description: This topic covers the module test file in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -30,7 +30,6 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Module test file
 
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 This topic covers the module test file in Microsoft Dynamics 365 Commerce.
@@ -43,7 +42,7 @@ The module test file is used for local unit testing. It contains the mock data t
 
 The following example shows a default test file that is created for a new module.
 
-```
+```typescript
 /*---------------------------------------------------------------------------------------------
  *  Copyright (c) Microsoft Corporation. All rights reserved.
  *  Licensed under the MIT License. See License.txt in the project root for license information.
@@ -95,6 +94,8 @@ Note that the mock data fields are set inside this file.
 ## Additional resources
 
 [Module definition file](module-definition-file.md)
+
+[Module React component file](module-react-file.md)
 
 [Module view file](module-view-file.md)
 

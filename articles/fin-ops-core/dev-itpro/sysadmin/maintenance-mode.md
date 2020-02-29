@@ -55,7 +55,11 @@ Turning maintenance mode on and off for your sandbox and production environment 
 ## Turn maintenance mode on and off in DevTest/Demo environments hosted in a Microsoft subscription
 1. Establish an RDP connection to the developer machine.
 2. On the developer machine, sign in to SQL Server by using the credentials for the axdbadmin user from LCS. Then switch to the AXDB database, and run the following command.
-      update SQLSYSTEMVARIABLES SET VALUE = 1 where PARM = 'CONFIGURATIONMODE'
+
+    ```Console
+    update SQLSYSTEMVARIABLES SET VALUE = 1 where PARM = 'CONFIGURATIONMODE'
+    ```
+
 3. Restart the **World Wide Web Publishing Service** to reset IIS.
 4. After the service is restarted, the system will be in maintenance mode.
 5. When you've completed your maintenance mode activities, repeat steps 2 and 3, but set the value to 0 in step 2.
@@ -66,8 +70,12 @@ You can turn on maintenance mode locally by running the following command.
 
 > [!Note]
 > On some virtual machines (VMs), the exact location of the Deployment.Setup.exe tool might differ. Check AosServiceWebRootbin.
-
-    J:\AosService\PackagesLocalDirectory\Bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --metadatadir J:\AosService\PackagesLocalDirectory --bindir J:\AosService\PackagesLocalDirectory\Bin --sqlserver . --sqldatabase axdb --sqluser axdbadmin --sqlpwd ********* --setupmode maintenancemode --isinmaintenancemode true
+>
+>
+>    ```Console
+>    J:\AosService\PackagesLocalDirectory\Bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --metadatadir J:\AosService\PackagesLocalDirectory --bindir 
+>    J:\AosService\PackagesLocalDirectory\Bin --sqlserver . --sqldatabase axdb --sqluser axdbadmin --sqlpwd ********* --setupmode maintenancemode --isinmaintenancemode true
+>    ```
 
 The following table describes the parameters that are used in this command.
 
@@ -91,5 +99,7 @@ If you try to access the system while in maintenance mode, but you aren't a syst
 
 You can turn off maintenance mode by running the following command.
 
-    J:\AosService\PackagesLocalDirectory\Bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --metadatadir J:\AosService\PackagesLocalDirectory --bindir J:\AosService\PackagesLocalDirectory\Bin --sqlserver . --sqldatabase axdb --sqluser axdbadmin --sqlpwd ********* --setupmode maintenancemode --isinmaintenancemode false
+```Console
+J:\AosService\PackagesLocalDirectory\Bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --metadatadir J:\AosService\PackagesLocalDirectory --bindir J:\AosService\PackagesLocalDirectory\Bin --sqlserver . --sqldatabase axdb --sqluser axdbadmin --sqlpwd ********* --setupmode maintenancemode --isinmaintenancemode false
+```
 

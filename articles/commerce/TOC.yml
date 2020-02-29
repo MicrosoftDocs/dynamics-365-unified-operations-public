@@ -1,8 +1,8 @@
-- name: Dynamics 365 Commerce (Preview)
+- name: Dynamics 365 Commerce
   items:
-  - name: Dynamics 365 Commerce (Preview)
+  - name: Dynamics 365 Commerce
     items:
-    - name: Dynamics 365 Commerce (Preview)
+    - name: Dynamics 365 Commerce
       href: index.md
     - name: Get started
       items:
@@ -34,17 +34,17 @@
           href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/commerce/toc.json
         - name: Create and automate user acceptance tests
           href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/commerce/toc.json   
-      - name: Set up a Commerce preview environment
+      - name: Set up a Dynamics 365 Commerce preview environment
         items:
-        - name: Commerce preview environment overview
+        - name: Dynamics 365 Commerce preview environment overview
           href: cpe-overview.md
-        - name: Provision a Commerce preview environment
+        - name: Provision a Dynamics 365 Commerce preview environment
           href: provisioning-guide.md
-        - name: Configure a Commerce preview environment
+        - name: Configure a Dynamics 365 Commerce preview environment
           href: cpe-post-provisioning.md
-        - name: Configure optional features for a Commerce preview environment
+        - name: Configure optional features for a Dynamics 365 Commerce preview environment
           href: cpe-optional-features.md
-        - name: Commerce preview environment FAQ
+        - name: Dynamics 365 Commerce preview environment FAQ
           href: cpe-faq.md
       - name: Deployment considerations
         items:
@@ -55,7 +55,7 @@
         - name: Cloud deployment
           href: ../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/commerce/toc.json
         - name: System requirements for cloud deployments
-          href: ../retail/get-started/system-requirements.md?toc=/dynamics365/commerce/toc.json
+          href: get-started/system-requirements.md
         - name: On-premises deployment
           href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/commerce/toc.json
         - name: System requirements for on-premises deployments
@@ -71,23 +71,25 @@
       - name: Upgrade and N-1 support
         items:
         - name: Upgrade and N-1 support for Retail
-          href: ../retail/dev-itpro/overview-upgrade-n-minus1.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/overview-upgrade-n-minus1.md
         - name: Phased Rollout (N-1) installation, configuration, and cutover
-          href: ../retail/dev-itpro/n-1-installation-configuration.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/n-1-installation-configuration.md
         - name: Upgrade the Retail channel extension to the latest Retail SDK
-          href: ../retail/dev-itpro/retailSDK-update.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/retailSDK-update.md
       - name: What's new or changed
         items:
-        - name: Retail version 10.0.7
-          href: ../retail/get-started/whats-new-10-0-7.md?toc=/dynamics365/commerce/toc.json
-        - name: Retail version 10.0.6
-          href: ../retail/get-started/whats-new-10-0-6.md?toc=/dynamics365/commerce/toc.json
-        - name: What's new or changed in previous versions
+        - name: What's new or changed in Finance and Operations apps
+          href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/commerce/toc.json
+        - name: What's new or changed in Commerce
           items:
-          - name: What's new or changed in Finance and Operations home page
-            href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md
-          - name: Finance and Operations, Enterprise edition 7.3
-            href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/commerce/toc.json
+          - name: What's new or changed in Commerce home page
+            href: get-started/whats-new-home-page.md
+          - name: Commerce version 10.0.9 (April 2020)
+            href: get-started/whats-new-10-0-9.md
+          - name: Commerce version 10.0.8 (February 2020)
+            href: get-started/whats-new-10-0-8.md
+          - name: Retail version 10.0.7 (January 2020)
+            href: get-started/whats-new-10-0-7.md
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features in Finance and Operations
@@ -164,6 +166,8 @@
           href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/commerce/toc.json
         - name: Saved views
           href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/commerce/toc.json
+        - name: Grid capabilites
+          href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/commerce/toc.json
         - name: Create and work with custom fields
           href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/commerce/toc.json
         - name: Embed PowerApps apps
@@ -180,44 +184,44 @@
       items:
       - name: Architecture
         items:
-        - name: Retail components
-          href: ../retail/retail-components.md?toc=/dynamics365/commerce/toc.json
-        - name: Retail Server architecture
-          href: ../retail/dev-itpro/retail-server-architecture.md?toc=/dynamics365/commerce/toc.json
+        - name: Commerce components
+          href: retail-components.md
+        - name: Commerce Scale Unit architecture
+          href: dev-itpro/retail-server-architecture.md
         - name: Select an in-store topology
-          href: ../retail/dev-itpro/retail-in-store-topology.md?toc=/dynamics365/commerce/toc.json
-        - name: Commerce Data Exchange and retail channel communications
-          href: ../retail/dev-itpro/define-retail-channel-communications-cdx.md?toc=/dynamics365/commerce/toc.json
-        - name: Retail Modern POS architecture
-          href: ../retail/dev-itpro/retail-modern-pos-architecture.md?toc=/dynamics365/commerce/toc.json
-        - name: Retail online store publishing architecture
-          href: ../retail/dev-itpro/retail-online-store-publishing-architecture.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/retail-in-store-topology.md
+        - name: Commerce Data Exchange and commerce channel communications
+          href: dev-itpro/define-retail-channel-communications-cdx.md
+        - name: Modern POS architecture
+          href: dev-itpro/retail-modern-pos-architecture.md
+        - name: Online store publishing architecture
+          href: dev-itpro/retail-online-store-publishing-architecture.md
         - name: Retail Channel Performance Power BI content
           href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/commerce/toc.json
         - name: Payment Application Data Security Standards (PA-DSS) certification
-          href: ../retail/dev-itpro/PA-DSS-Certification.md?toc=/dynamics365/commerce/toc.json
-        - name: Retail capabilities available in on-premises deployments
-          href: ../retail/retail-onprem.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/PA-DSS-Certification.md
+        - name: Commerce capabilities available in on-premises deployments
+          href: retail-onprem.md
       - name: Deployment and hotfixes
         items:
-        - name: Retail Store Scale Unit
-          href: ../retail/dev-itpro/retail-store-system-begin.md?toc=/dynamics365/commerce/toc.json
-        - name: Configure and install Retail Store Scale Unit
-          href: ../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md?toc=/dynamics365/commerce/toc.json
-        - name: Retail Modern POS configuration and installation
-          href: ../retail/retail-modern-pos-device-activation.md?toc=/dynamics365/commerce/toc.json
-        - name: Manage Retail accounts and devices from headquarters
-          href: ../retail/set-up-activation-accounts-validate-devices-hq.md?toc=/dynamics365/commerce/toc.json
-        - name: Retail POS device activation
-          href: ../retail/dev-itpro/retail-device-activation.md?toc=/dynamics365/commerce/toc.json
+        - name: Commerce Scale Unit
+          href: dev-itpro/retail-store-system-begin.md
+        - name: Configure and install Commerce Scale Unit
+          href: dev-itpro/retail-store-scale-unit-configuration-installation.md
+        - name: Modern POS configuration and installation
+          href: retail-modern-pos-device-activation.md
+        - name: Manage accounts and devices from headquarters
+          href: set-up-activation-accounts-validate-devices-hq.md
+        - name: POS device activation
+          href: dev-itpro/retail-device-activation.md
         - name: Help secure Cloud POS in shared environments
-          href: ../retail/dev-itpro/secure-retail-cloud-pos.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/secure-retail-cloud-pos.md
         - name: Retail Hardware Station configuration and installation
-          href: ../retail/retail-hardware-station-configuration-installation.md?toc=/dynamics365/commerce/toc.json
-        - name: Mass deployment of Retail self-service components
-          href: ../retail/dev-itpro/retail-mass-deployment.md?toc=/dynamics365/commerce/toc.json
+          href: retail-hardware-station-configuration-installation.md
+        - name: Mass deployment of self-service components
+          href: dev-itpro/retail-mass-deployment.md
         - name: Retail component events for diagnostics and troubleshooting
-          href: ../retail/dev-itpro/retail-component-events-diagnostics-troubleshooting.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
         - name: Apply a deployable package
           href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
       - name: Implementation lifecycle management
@@ -248,570 +252,750 @@
           href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/commerce/toc.json 
         - name: Multiple LCS projects and production environments on one Azure AD tenant
           href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/commerce/toc.json  
-        - name: Implement Finance and Operations Retail projects
-          href: ../retail/dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md?toc=/dynamics365/commerce/toc.json
-        - name: Set up new environments, Azure DevOps, and branches for Retail projects
-          href: ../retail/dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md?toc=/dynamics365/commerce/toc.json
-        - name: Update code and environments for Retail projects
-          href: ../retail/dev-itpro/updating-environments.md?toc=/dynamics365/commerce/toc.json
+        - name: Implement Finance and Operations Commerce projects
+          href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
+        - name: Set up new environments, Azure DevOps, and branches for Commerce projects
+          href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
+        - name: Update code and environments for Commerce projects
+          href: dev-itpro/updating-environments.md
         - name: Testing and performance issues
-          href: ../retail/dev-itpro/retail-implementation-testing-performance.md?toc=/dynamics365/commerce/toc.json   
-    - name: System administration
+          href: dev-itpro/retail-implementation-testing-performance.md
+    - name: Set up your channels 
       items:
-      - name: Environment configuration
+      - name: Channels overview
+        href: channels-overview.md	  
+      - name: Channel prerequisites
         items:
-        - name: Add links to your organization's legal terms and privacy statement
-          href: ../fin-ops-core/dev-itpro/sysadmin/legal-terms-privacy-statement.md?toc=/dynamics365/commerce/toc.json
-        - name: Manage Bing Maps
-          href: ../retail/dev-itpro/manage-bing-maps.md?toc=/dynamics365/commerce/toc.json
-    - name: Channel setup and management
-      items:
-      - name: Core cross-channel setup
-        items:
-        - name: Initialize seed data in new Retail environments
-          href: ../retail/enable-configure-retail-functionality.md?toc=/dynamics365/commerce/toc.json
-        - name: Info codes and info code groups
-          href: ../retail/info-codes-retail.md?toc=/dynamics365/commerce/toc.json     
-      - name: Store channel management 
-        items:
-        - name: Set up retail channels
-          href: ../retail/define-maintain-retail-channels.md?toc=/dynamics365/commerce/toc.json
-        - name: Create and change store hours
-          href: ../retail/dev-itpro/store-hours.md?toc=/dynamics365/commerce/toc.json
-        - name: Configure and install Retail hardware station
-          href: ../retail/retail-hardware-station-configuration-installation.md?toc=/dynamics365/commerce/toc.json
-        - name: Modern Point of Sale (MPOS) and Cloud POS
+        - name: Channel setup prerequisites
+          href: channels-prerequisites.md
+        - name: General prerequisites
+          items:
+          - name: Organizations and organizational hierarchies
+            items:
+            - name: Organizations and organizational hierarchies overview
+              href: ../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json
+            - name: Plan your organizational hierarchy
+              href: ../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/commerce/toc.json
+            - name: Create legal entities
+              href: channels-legal-entities.md	  
+            - name: Set up organization hierarchies
+              href: channels-org-hierarchies.md
+            - name: Create an operating unit
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/commerce/toc.json
+            - name: Define the relationships between organizational units
+              href: tasks/design-relationships-between-organizational-units.md
+          - name: Warehouse setup
+            href: channels-setup-warehouse.md
+          - name: Sales tax setup	
+            items:
+            - name: Sales tax overview
+              href: ../finance/general-ledger/indirect-taxes-overview.md?toc=/dynamics365/commerce/toc.json
+            - name: Sales tax calculation methods
+              href:	../finance/general-ledger/sales-tax-calculation-methods-origin-field.md?toc=/dynamics365/commerce/toc.json		
+            - name: Sales tax assignment and overrides			
+              href:	../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?toc=/dynamics365/commerce/toc.json		
+            - name: Whole amount and interval calculation options for sales tax codes
+              href: ../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=/dynamics365/commerce/toc.json
+          - name: Set up an email notification profile 
+            href: email-notification-profiles.md
+          - name: Number sequences 
+            items:
+            - name: Number sequences overview
+              href: ../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/retail/toc.json
+            - name: Set up number sequences on an individual basis
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/retail/toc.json
+            - name: Set up number sequence using a wizard
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/retail/toc.json
+          - name: Set up a default customer and address book 
+            href: default-customer.md
+        - name: Retail channel prerequisites
+          items:
+          - name: Info codes and info code groups	  
+            href: info-codes-retail.md  		  
+          - name: Create a retail functionality profile		  
+            href: retail-functionality-profile.md	  
+          - name: Create a new address book 		  
+            href: new-address-book.md
+          - name: Screen layout overview
+            href: pos-screen-layouts.md
+        - name: Online channel prerequisites 
+          items:
+          - name: Create an online functionality profile
+            href: online-functionality-profile.md	
+      - name: Set up a retail channel 
+        items: 
+        - name: Set up a retail channel
+          href: channel-setup-retail.md		
+        - name: Configure retail workers 
+          href: tasks/worker.md
+        - name: Modern Point of Sale (MPOS) and Cloud POS 
           items:
           - name: Choose between MPOS and Cloud POS
-            href: ../retail/MPOS-or-CPOS.md?toc=/dynamics365/commerce/toc.json
+            href: MPOS-or-CPOS.md
           - name: Online and offline POS operations
-            href: ../retail/pos-operations.md?toc=/dynamics365/commerce/toc.json
-          - name: Device activation of a customized Retail MPOS
-            href: ../retail/dev-itpro/retail-POS-activation-changes.md?toc=/dynamics365/commerce/toc.json
+            href: pos-operations.md
+          - name: Device activation of a customized Modern POS
+            href: dev-itpro/retail-POS-activation-changes.md
           - name: Demo data screen layouts in MPOS and Cloud POS
-            href: ../retail/demo-data.md?toc=/dynamics365/commerce/toc.json
+            href: demo-data.md
           - name: Product and customer search in the POS
-            href: ../retail/POS-search-improvements.md?toc=/dynamics365/commerce/toc.json
+            href: POS-search-improvements.md
           - name: Search for products and product variants during order entry
             href: ../supply-chain/pim/search-products-product-variants.md?toc=/dynamics365/commerce/toc.json
           - name: Cash management improvements
-            href: ../retail/cash-mgmt.md?toc=/dynamics365/commerce/toc.json
+            href: cash-mgmt.md
           - name: Inventory lookup in the POS
-            href: ../retail/product-variants-POS.md?toc=/dynamics365/commerce/toc.json
+            href: product-variants-POS.md
           - name: Suspend and resume transactions in the POS
-            href: ../retail/pos-suspend-recall-transactions.md?toc=/dynamics365/commerce/toc.json
+            href: pos-suspend-recall-transactions.md
           - name: Offline POS functionality
-            href: ../retail/pos-offline-functionality.md?toc=/dynamics365/commerce/toc.json
+            href: pos-offline-functionality.md
           - name: Shift and cash drawer management
-            href: ../retail/shift-drawer-management.md?toc=/dynamics365/commerce/toc.json
+            href: shift-drawer-management.md
           - name: Cash out gift card balance
-            href: ../retail/dev-itpro/gift-card-cash-out.md?toc=/dynamics365/commerce/toc.json
+            href: dev-itpro/gift-card-cash-out.md
           - name: Ship orders from another store
-            href: ../retail/charge-send.md?toc=/dynamics365/commerce/toc.json
+            href: charge-send.md
           - name: Hide non-carrier delivery modes from POS shipment dialog
-            href: ../retail/hide-non-carrier-modes.md?toc=/dynamics365/commerce/toc.json
+            href: hide-non-carrier-modes.md
           - name: Task recorder and Help for MPOS and Cloud POS
-            href: ../retail/task-recorder-retail-pos.md?toc=/dynamics365/commerce/toc.json
+            href: task-recorder-retail-pos.md
           - name: Hardware peripherals
             items:
-            - name: Retail peripherals
-              href: ../retail/retail-peripherals-overview.md?toc=/dynamics365/commerce/toc.json
-            - name: Retail peripheral simulator
-              href: ../retail/dev-itpro/retail-peripheral-simulator.md?toc=/dynamics365/commerce/toc.json
+            - name: Peripherals
+              href: retail-peripherals-overview.md
+            - name: Peripheral simulator
+              href: dev-itpro/retail-peripheral-simulator.md
             - name: Connect peripherals to the POS
-              href: ../retail/define-maintain-channel-clients-registers-hw-stations.md?toc=/dynamics365/commerce/toc.json
+              href: define-maintain-channel-clients-registers-hw-stations.md
           - name: Screen layouts
             items:
             - name: Demo data screen layouts in MPOS/CPOS
-              href: ../retail/demo-data.md?toc=/dynamics365/commerce/toc.json
+              href: demo-data.md
             - name: Screen layouts for the POS
-              href: ../retail/pos-screen-layouts.md?toc=/dynamics365/commerce/toc.json
-            - name: Install the Retail POS layout designer
-              href: ../retail/install-pos-layout-designer.md?toc=/dynamics365/commerce/toc.json
+              href: pos-screen-layouts.md
+            - name: Install the POS layout designer
+              href: install-pos-layout-designer.md
             - name: Choose notification settings
-              href: ../retail/Notifications-POS.md?toc=/dynamics365/commerce/toc.json
+              href: Notifications-POS.md
             - name: POS application and user language settings
-              href: ../retail/pos-application-user-language-settings.md?toc=/dynamics365/commerce/toc.json
+              href: pos-application-user-language-settings.md
             - name: Set up and manage images for MPOS
-              href: ../retail/set-up-manage-images-retail-mpos.md?toc=/dynamics365/commerce/toc.json
+              href: set-up-manage-images-retail-mpos.md
             - name: Client images in POS
-              href: ../retail/pos-image.md?toc=/dynamics365/commerce/toc.json
+              href: pos-image.md
           - name: Customer orders
             items:
             - name: Customer orders in MPOS
-              href: ../retail/customer-orders-overview.md?toc=/dynamics365/commerce/toc.json
+              href: customer-orders-overview.md
             - name: Hybrid customer orders
-              href: ../retail/hybrid-customer-orders.md?toc=/dynamics365/commerce/toc.json
+              href: hybrid-customer-orders.md
           - name: Sales associates
             items:
             - name: Track commissions in the POS using sales groups
-              href: ../retail/pos-sales-groups-track-commissions.md?toc=/dynamics365/commerce/toc.json
+              href: pos-sales-groups-track-commissions.md
           - name: Device activation
             items:
             - name: Configure, install and activate MPOS
-              href: ../retail/retail-modern-pos-device-activation.md?toc=/dynamics365/commerce/toc.json
+              href: retail-modern-pos-device-activation.md
             - name: Set up extended logon functionality for MPOS and Cloud POS
-              href: ../retail/extended-logon.md?toc=/dynamics365/commerce/toc.json
-            - name: Manage Retail activation accounts and validate devices
-              href: ../retail/set-up-activation-accounts-validate-devices-hq.md?toc=/dynamics365/commerce/toc.json
-          - name: Receipts
-            items:
-            - name: Set up and design receipt formats
-              href: ../retail/receipt-templates-printing.md?toc=/dynamics365/commerce/toc.json
-            - name: Send email receipts from MPOS
-              href: ../retail/email-receipts.md?toc=/dynamics365/commerce/toc.json
-      - name: Online channel management 
+              href: extended-logon.md
+            - name: Manage activation accounts and validate devices
+              href: set-up-activation-accounts-validate-devices-hq.md
+          - name: Create financial dimensions for POS registers and configure dimension values on registers 
+            href: tasks/create-financial-dimensions-pos.md
+          - name: Create POS permissions group 
+            href: tasks/create-pos-permission-groups.md
+          - name: Create POS visual profiles 
+            href: tasks/create-pos-visual-profile-2016-02.md
+        - name: Configure and install Retail hardware station 
+          href: retail-hardware-station-configuration-installation.md
+        - name: Receipts
+          items:
+          - name: Set up and design receipt formats
+            href: receipt-templates-printing.md
+          - name: Send email receipts from Modern POS (MPOS)
+            href: email-receipts.md 
+          - name: Reset receipt numbers
+            href: reset_receipt_number_sequence.md
+        - name: Create functionality profiles for sales representatives 
+          href: tasks/configure-functionality-profile-sales-representative.md
+        - name: Create financial dimensions for retail channels and configure values on stores 
+          href: tasks/create-financial-dimensions-retail-channels.md
+      - name: Set up an online channel
         items:
-        - name: Online store overview
-          href: online-store-overview.md
-        - name: Create an e-Commerce site
-          items:
-          - name: Configure your domain name
-            href: configure-your-domain-name.md
-          - name: Deploy a new e-Commerce tenant
-            href: deploy-ecommerce-site.md
-          - name: Set up an online store channel
-            href: ../retail/online-stores.md?toc=/dynamics365/commerce/toc.json            
-          - name: Create an e-Commerce site
-            href: create-ecommerce-site.md
-          - name: Associate an e-Commerce site with an online channel
-            href: associate-site-online-store.md
-          - name: Set up custom pages for user sign-ins
-            href: custom-pages-user-logins.md
-          - name: Add support for a content delivery network (CDN)
-            href: add-cdn-support.md
-          - name: Enable location-based store detection
-            href: enable-store-detection.md
-        - name: Sample site overview
-          items:
-          - name: Overview of the home page
-            href: quick-tour-home-page.md
-          - name: Overview of default category landing page and search results page
-            href: category-search-page-overview.md 
-          - name: Overview of product details pages
-            href: quick-tour-pdp.md
-          - name: Overview of cart and checkout pages
-            href: quick-tour-cart-checkout.md
-          - name: Overview of of account management pages
-            href: quick-tour-account-management.md
-        - name: Manage your site settings
-          items:
-          - name: Authoring page overview
-            href: authoring-home-overview.md
-          - name: Manage users and roles
-            href: manage-ecommerce-users-roles.md
-          - name: Search engine optimization (SEO) considerations for your site
-            href: search-engine-optimization-considerations.md
-          - name: Manage Content Security Policy (CSP)
-            href: manage-csp.md
-        - name: Manage your site content 
-          items:
-          - name: Ways to add content
-            href: add-manage-content.md
-          - name: Page model glossary
-            href: page-elements-overview.md
-          - name: Document states and lifecycle
-            href: document-states-overview.md
-          - name: Work with publish groups
-            href: publish-groups.md
-          - name: Brand your site and add store details
-            items:
-            - name: Add a logo
-              href: add-logo.md 
-            - name: Select a site theme
-              href: select-site-theme.md
-            - name: Work with CSS override files
-              href: css-override-files.md
-            - name: Add a favicon
-              href: add-favicon.md
-            - name: Add a welcome message
-              href: add-welcome-message.md 
-            - name: Add a copyright notice
-              href: add-copyright-notice.md
-            - name: Add languages
-              href: add-languages-to-site.md
-            - name: Add script code to site pages to support telemetry
-              href: add-telemetry.md
-          - name: Modules
-            items:
-            - name: Work with modules
-              href: work-with-modules.md
-          - name: Fragments
-            items:
-            - name: Work with fragments
-              href: work-with-fragments.md
-          - name: Templates
-            items:
-            - name: Templates and layouts overview
-              href: templates-layouts-overview.md
-            - name: Work with templates
-              href: work-with-templates.md
-            - name: Work with preset layouts
-              href: work-with-layouts.md
-          - name: Pages
-            items:
-            - name: Modify an existing site page
-              href: modify-existing-page.md
-            - name: Add a new site page
-              href: add-new-page.md
-            - name: Select page layouts
-              href: select-page-layouts.md
-            - name: Manage SEO metadata
-              href: manage-seo-metadata.md
-            - name: Save, preview, and publish a page
-              href: save-preview-publish-page.md
-            - name: Enrich a product page
-              href: enrich-product-page.md
-            - name: Enrich a category landing page
-              href: enrich-category-page.md
-          - name: Site navigation
-            items:
-            - name: Customize site navigation
-              href: customize-site-navigation.md
-            - name: Create a page URL
-              href: create-page-URL.md
-        - name: Starter kit
-          items: 
-          - name: Starter kit overview
-            href: starter-kit-overview.md
-          - name: Container modules
-            items:
-            - name: Container module
-              href: add-container-module.md
-          - name: Marketing modules
-            items:
-            - name: Alert module 
-              href: add-alert.md
-            - name: Carousel module
-              href: add-carousel.md
-            - name: Content placement module
-              href: add-content-placement-modules.md
-            - name: Content rich block module
-              href: add-content-rich-block.md
-            - name: Feature module
-              href: add-feature-module.md
-            - name: Hero module
-              href: add-hero-module.md 
-            - name: Video player module
-              href: add-video-player.md
-          - name: Header and footer modules
-            items:
-            - name: Header module
-              href: author-header-module.md
-            - name: Footer module
-              href: author-footer-module.md
-          - name: Product detail page modules
-            items:
-            - name: Buy box module
-              href: add-buy-box.md
-          - name: Purchase modules
-            items:
-            - name: Cart module
-              href: add-cart-module.md
-            - name: Checkout module
-              href: add-checkout-module.md
-            - name: Order confirmation module
-              href: order-confirmation-module.md 
-          - name: Account management modules
-            items:
-            - name: Account management pages and modules
-              href: account-management.md
-          - name: Product collection modules
-            items:
-            - name: Product collection modules
-              href: product-collection-module-overview.md
-        - name: Search
-          items:
-          - name: Default category landing page and search results page
-            href: category-search-page-overview.md
-          - name: Cloud-powered search overview
-            href: cloud-powered-search-overview.md
-        - name: Reporting
-          items:
-          - name: Generate online channel reports
-            href: generate-reports.md
-        - name: Error handling
-          items:
-          - name: Build custom response pages for 4xx/5xx status code errors
-            href: build-pages-400-500-errors.md
-      - name: Call center channel management
+        - name: Set up an online channel
+          href: channel-setup-online.md
+      - name: Set up a call center channel
         items:
         - name: Call center sales functionality
-          href: ../retail/call-center-functionality.md?toc=/dynamics365/commerce/toc.json
-        - name: Set up call center channels
-          href: ../retail/set-up-order-processing-options.md?toc=/dynamics365/commerce/toc.json
-        - name: Call center catalogs
-          href: ../retail/call-center-catalogs.md?toc=/dynamics365/commerce/toc.json
-        - name: Configure delivery modes and charges
-          href: ../retail/configure-call-center-delivery.md?toc=/dynamics365/commerce/toc.json
-        - name: Set up and work with fraud alerts
-          href: ../retail/set-up-fraud-alerts.md?toc=/dynamics365/commerce/toc.json
-        - name: Set up continuity programs for call centers
-          href: ../retail/set-up-continuity-program.md?toc=/dynamics365/commerce/toc.json
-        - name: Configure and work with call center order holds
-          href: ../retail/work-with-order-holds.md?toc=/dynamics365/commerce/toc.json
-    - name: Omni-channel configuration
+          href: call-center-functionality.md
+        - name: Set up a call center channel  
+          href: channel-setup-callcenter.md
+        - name: Call center catalogs 
+          href: call-center-catalogs.md
+        - name: Set up call center order processing options
+          href: set-up-order-processing-options.md
+        - name: Configure call center delivery modes and charges
+          href: configure-call-center-delivery.md
+        - name: Set up and work with fraud alerts 
+          href: set-up-fraud-alerts.md
+      - name: Additional channel configuration 
+        items:
+        - name: Add a channel to an organization hierarchy  
+          href: channel-add-to-org-hierarchy.md
+        - name: Advanced auto charges 
+          items:
+          - name: Configure and use advanced auto charges 
+            href: omni-auto-charges.md
+          - name: Prorate header charges to matching sales lines
+            href: pro-rate-charges-matching-lines.md 
+        - name: Manage continuity programs
+          items:
+          - name: Set up continuity programs for call centers 
+            href: set-up-continuity-program.md
+          - name: Define continuity schedules
+            href: tasks/define-continuity-schedules.md
+        - name: Retail store management 
+          items:
+          - name: Create and change store hours
+            href: dev-itpro/store-hours.md
+          - name: Commerce Scale Unit
+            href: dev-itpro/retail-store-system-begin.md
+        - name: Call center management 
+          items:
+          - name: Configure and work with call center order holds
+            href: work-with-order-holds.md
+        - name: Payments
+          items:
+          - name: Payment methods 
+            href: payment-methods.md
+          - name: Payment methods in call centers 
+            href: work-with-payments.md
+          - name: Credit card setup, authorization, and capture
+            href: ../finance/accounts-receivable/credit-card-authorizations.md?toc=/dynamics365/commerce/toc.json
+          - name: Configure cash denominations for the POS
+            href: cash-denominations.md
+          - name: Configure credit card processing
+            href: tasks/configure-credit-card-processing.md
+          - name: Adyen payment connector
+            href: dev-itpro/adyen-connector.md
+          - name: Saving online payment instruments with the Adyen connector
+            href: dev-itpro/adyen-connector-listpi.md
+          - name: Seamless offline switch for gift card and credit memo operations
+            href: dev-itpro/seamless-offline-improvements.md
+          - name: Set up pay invoice scenarios 
+            href: payinvoice.md
+          - name: Duplicate payments prevention 
+            href: duplicate-payment-protection.md
+          - name: Omni-channel payments overview 
+            href: omni-channel-payments.md
+          - name: Payments FAQ 
+            href: dev-itpro/payments-retail.md     
+    - name: Merchandizing your products and services  
       items:
-      - name: Products and merchandising
+      - name: Categories, products, and assortments 
         items:
-        - name: Product information overview
+        - name: Product information overview 
           href: ../supply-chain/pim/product-information.md?toc=/dynamics365/commerce/toc.json
-        - name: Retail hierarchies
-          href: ../retail/retail-hierarchies.md?toc=/dynamics365/commerce/toc.json
-        - name: Manage attributes and attribute groups
-          href: ../retail/attribute-attributegroups-lifecycle.md?toc=/dynamics365/commerce/toc.json
-        - name: Set up retail products
-          href: ../retail/set-up-retail-products.md?toc=/dynamics365/commerce/toc.json
-        - name: Manage retail product categories and products
-          href: ../retail/category-management-product-creation.md?toc=/dynamics365/commerce/toc.json
-        - name: Product dimensions
-          href: ../supply-chain/pim/product-dimensions.md?toc=/dynamics365/commerce/toc.json
-        - name: Assortment management
-          href: ../retail/assortments.md?toc=/dynamics365/commerce/toc.json
-        - name: Set up assortments
-          href: ../retail/set-up-assortments.md?toc=/dynamics365/commerce/toc.json
-        - name: Set up bar codes
-          href: ../retail/set-up-bar-codes.md?toc=/dynamics365/commerce/toc.json
-        - name: Set up bar code masks
-          href: ../retail/set-up-bar-code-masks.md?toc=/dynamics365/commerce/toc.json
-        - name: Change the sort order for merchandising entities
-          href: ../retail/custom-order-categories-nav-retail-prod-hierarchy.md?toc=/dynamics365/commerce/toc.json
-      - name: Pricing and discounts
+        - name: Set up retail products 
+          href: set-up-retail-products.md
+        - name: Product hierarchy 
+          items:
+          - name: Commerce hierarchies 
+            href: retail-hierarchies.md
+          - name: Create a new product hierarchy 
+            href: create-product-hierarchy.md
+          - name: Manage product categories and products 
+            href: category-management-product-creation.md
+          - name: Change the sort order for merchandizing entities 
+            href: custom-order-categories-nav-retail-prod-hierarchy.md
+        - name: Product dimensions 
+          items:
+          - name: Product dimensions 
+            href: ../supply-chain/pim/product-dimensions.md?toc=/dynamics365/retail/toc.json
+          - name: Create a variant group 
+            href: create-variant-group.md
+        - name: Create a new product
+          items:
+          - name: Create a new product overview
+            href: create-new-product.md
+          - name: Manage product categories and products 
+            href: category-management-product-creation.md
+        - name: Product attributes 
+          items:
+          - name: Attributes and attribute groups 
+            href: attribute-attributegroups-lifecycle.md
+          - name: Define channel attributes 
+            href: tasks/define-channel-attributes.md
+        - name: Channel hierarchies 
+          items:
+          - name: Create a channel navigation hierarchy
+            href: create-channel-hierarchy.md
+          - name: Configure channel to use a channel navigation hierarchy 
+            href: configure-channel-hierarchy.md
+        - name: Assortments
+          items:
+          - name: Assortment management
+            href: assortments.md
+          - name: Set up assortments 
+            href: set-up-assortments.md
+          - name: Manage assortments
+            href: tasks/manage-assortments-2016-11.md
+        - name: Bar codes 
+          items:
+          - name: Set up bar codes 
+            href: set-up-bar-codes.md
+          - name: Set up bar code masks 
+            href: set-up-bar-code-masks.md
+      - name: Pricing and discounts 
         items:
-        - name: Retail discounts
-          href: ../retail/retail-discounts-overview.md?toc=/dynamics365/commerce/toc.json
-        - name: Retail sales price management
-          href: ../retail/price-management.md?toc=/dynamics365/commerce/toc.json
-        - name: Price adjustments and discounts
-          href: ../retail/price-adjustments-discounts.md?toc=/dynamics365/commerce/toc.json
-        - name: Apply multiple discounts to a product
-          href: ../retail/Apply-multiple-retail-discounts.md?toc=/dynamics365/commerce/toc.json
-        - name: Determine the optimal combination of overlapping discounts
-          href: ../retail/optimal-combination-overlapping-discounts.md?toc=/dynamics365/commerce/toc.json
-        - name: Define channel-specific discounts
-          href: ../retail/define-channel-specific-discounts.md?toc=/dynamics365/commerce/toc.json
-        - name: Options for preventing discounts for retail products
-          href: ../retail/prevent-discounts.md?toc=/dynamics365/commerce/toc.json
-        - name: Tender-based discounts
-          href: ../retail/tender_based_discounts.md?toc=/dynamics365/commerce/toc.json
-        - name: Shipping discount overview
-          href: ../retail/retail-shipping-discount.md?toc=/dynamics365/commerce/toc.json
-        - name: Set up coupons for retail sales
-          href: ../retail/retail-coupons.md?toc=/dynamics365/commerce/toc.json
-        - name: Retail price reports
-          href: ../retail/price-report.md?toc=/dynamics365/commerce/toc.json
-      - name: Loyalty
+        - name: Discounts
+          href: retail-discounts-overview.md
+        - name: Sales price management 
+          href: price-management.md
+        - name: Price adjustments and discounts 
+          href: price-adjustments-discounts.md
+        - name: Apply multiple discounts to a product 
+          href: apply-multiple-retail-discounts.md
+        - name: Determine the optimal combination of overlapping discounts 
+          href: optimal-combination-overlapping-discounts.md
+        - name: Define channel-specific discounts 
+          href: define-channel-specific-discounts.md
+        - name: Options for preventing discounts for retail products 
+          href: prevent-discounts.md
+        - name: Tender-based discounts 
+          href: tender_based_discounts.md
+        - name: Shipping discount overview 
+          href: retail-shipping-discount.md
+        - name: Set up coupons  
+          href: retail-coupons.md
+        - name: Price reports 
+          href: price-report.md
+        - name: Create channel-specific trade agreements 
+          href: tasks/base-price-trade-agreements.md
+        - name: Create trade agreements using category pricing rules
+          href: tasks/category-pricing-rules-trade-agreements.md
+      - name: Recommendations 
         items:
-        - name: Loyalty overview
-          href: ../retail/set-up-customer-loyalty-program.md?toc=/dynamics365/commerce/toc.json
-        - name: Clienteling overview
-          href: ../retail/clienteling-overview.md?toc=/dynamics365/commerce/toc.json
-      - name: Payments
+        - name:	Product recommendations overview	
+          href:	product-recommendations.md	
+        - name:	Enable ADLS in a Dynamics 365 Commerce environment	
+          href:	enable-ADLS-environment.md	
+        - name:	Add product recommendation lists to e-Commerce pages	
+          href:	add-reco-list-to-page.md
+        - name:	Enable product recommendations
+          href:	enable-product-recommendations.md
+        - name: Personalized recommendations
+          items:
+          - name: Enable personalized recommendations
+            href: personalized-recommendations.md
+          - name: Opt out of personalized recommendations 
+            href: personalization-gdpr.md
+        - name: Create curated product recommendation lists		
+          href:	create-editorial-recommendation-lists.md
+        - name:	Manage AI-ML-based product recommendation results	
+          href: modify-product-recommendation-results.md
+        - name:	Get product recommendations using demo data	
+          href:	product-recommendations-demo-data.md
+        - name:	Product recommendations FAQ
+          href: faq-recommendations.md
+        - name: POS experiences
+          items:
+          - name: Product recommendations on POS
+            href: product.md
+          - name: Add a recommendations control to the transaction screen on POS devices
+            href: add-recommendations-control-pos-screen.md
+      - name: Ratings and reviews 
         items:
-        - name: Payment methods
-          href: ../retail/payment-methods.md?toc=/dynamics365/commerce/toc.json
-        - name: Payment methods in call centers
-          href: ../retail/work-with-payments.md?toc=/dynamics365/commerce/toc.json
-        - name: Credit card setup, authorization, and capture
-          href: ../finance/accounts-receivable/credit-card-authorizations.md?toc=/dynamics365/commerce/toc.json
-        - name: Configure cash denominations for the POS
-          href: ../retail/cash-denominations.md?toc=/dynamics365/commerce/toc.json
-        - name: Configure credit card processing
-          href: ../retail/tasks/configure-credit-card-processing.md?toc=/dynamics365/commerce/toc.json
-        - name: Dynamics 365 Payment Connector for Adyen
-          href: ../retail/dev-itpro/adyen-connector.md?toc=/dynamics365/commerce/toc.json
-        - name: Saving online payment instruments with the Adyen connector
-          href: ../retail/dev-itpro/adyen-connector-listPI.md?toc=/dynamics365/commerce/toc.json
-        - name: Set up pay invoice scenarios
-          href: ../retail/payinvoice.md?toc=/dynamics365/commerce/toc.json
-        - name: Duplicate payments prevention
-          href: ../retail/duplicate-payment-protection.md?toc=/dynamics365/commerce/toc.json
-        - name: Omni-channel payments overview
-          href: ../retail/omni-channel-payments.md?toc=/dynamics365/commerce/toc.json
-        - name: Payments FAQ
-          href: ../retail/dev-itpro/payments-retail.md?toc=/dynamics365/commerce/toc.json
-      - name: Advanced auto charges
+        - name: Ratings and reviews overview
+          href:	ratings-reviews-overview.md	
+        - name: Opt in to use ratings and reviews		
+          href:	opt-in-ratings-reviews.md
+        - name:	Manage ratings and reviews	
+          href:	manage-reviews.md
+        - name:	Configure ratings and reviews	
+          href:	configure-ratings-reviews.md
+        - name:	Sync product ratings
+          href:	sync-product-ratings.md
+      - name: Manage your inventory  
         items:
-        - name: Configure and use advanced auto charges
-          href: ../retail/omni-auto-charges.md?toc=/dynamics365/commerce/toc.json
-        - name: Prorate header charges to matching sales lines
-          href: ../retail/pro-rate-charges-matching-lines.md?toc=/dynamics365/commerce/toc.json
-      - name: Sales tax
+        - name:	Inventory   
+          items:
+          - name: Store inventory management  
+            href: work-with-store-inventory.md
+          - name: Working with serialized items 
+            href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md?toc=/dynamics365/commerce/toc.json
+          - name: Push products from distribution center to store using buyer's push 
+            href: tasks/push-products-distribution-center-store-buyers-push.md
+          - name: Set up rules and parameters for cross-docking and buyer's push  
+            href: tasks/set-up-rules-parameters-cross-docking-buyers-push.md
+          - name: Inbound inventory operation in POS
+            href: pos-inbound-inventory-operation.md
+          - name: Outbound inventory operation in POS
+            href: pos-outbound-inventory-operation.md
+          - name: Calculate inventory availability for retail channels
+            href: calculated-inventory-retail-channels.md
+        - name: Purchase orders	  
+          items:
+          - name: Purchase order overview
+            href: ../supply-chain/procurement/purchase-order-overview.md?toc=/dynamics365/commerce/toc.json
+          - name: Create purchase orders
+            href: ../supply-chain/procurement/purchase-order-creation.md?toc=/dynamics365/commerce/toc.json
+          - name: Product receipt against purchase orders
+            href: ../supply-chain/procurement/product-receipt-against-purchase-orders.md?toc=/dynamics365/commerce/toc.json
+          - name: Approve and confirm purchase orders
+            href: ../supply-chain/procurement/purchase-order-approval-confirmation.md?toc=/dynamics365/commerce/toc.json
+          - name: Purchase order approval mobile workspace
+            href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
+          - name: Create product packages for purchase orders
+            href: tasks/create-product-packages-purchase-orders.md
+    - name: Manage your orders
+      items:
+      - name:	Sales orders   
         items:
-        - name: Sales tax overview
-          href: ../finance/general-ledger/indirect-taxes-overview.md?toc=/dynamics365/commerce/toc.json
-        - name: Sales tax calculation methods in the Origin field
-          href: ../finance/general-ledger/sales-tax-calculation-methods-origin-field.md?toc=/dynamics365/commerce/toc.json
-        - name: Sales tax assignment and overrides
-          href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?toc=/dynamics365/commerce/toc.json
-        - name: Whole amount and Interval calculation options for sales tax codes
-          href: ../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=/dynamics365/commerce/toc.json    
-      - name: Purchase orders
-        items:
-        - name: Purchase order overview
-          href: ../supply-chain/procurement/purchase-order-overview.md?toc=/dynamics365/commerce/toc.json
-        - name: Create purchase orders
-          href: ../supply-chain/procurement/purchase-order-creation.md?toc=/dynamics365/commerce/toc.json
-        - name: Product receipt against purchase orders
-          href: ../supply-chain/procurement/product-receipt-against-purchase-orders.md?toc=/dynamics365/commerce/toc.json
-        - name: Approve and confirm purchase orders
-          href: ../supply-chain/procurement/purchase-order-approval-confirmation.md?toc=/dynamics365/commerce/toc.json
-        - name: Purchase order approval mobile workspace
-          href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
-      - name: Inventory
-        items:
-        - name: Store inventory management
-          href: ../retail/work-with-store-inventory.md?toc=/dynamics365/commerce/toc.json
-        - name: Working with serialized items
-          href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md?toc=/dynamics365/commerce/toc.json
-      - name: Statements
-        items:
-        - name: Retail statements
-          href: ../retail/retail-statements.md?toc=/dynamics365/commerce/toc.json
-        - name: Retail transaction consistency checker
-          href: ../retail/valid-checker.md?toc=/dynamics365/commerce/toc.json
-        - name: Disable rules in retail transaction consistency checker
-          href: ../retail/disable-consistency-check-rule.md?toc=/dynamics365/commerce/toc.json
-        - name: Edit and audit retail store transactions
-          href: ../retail/edit-audit-retail-transactions.md?toc=/dynamics365/commerce/toc.json
-        - name: Create, calculate, and post statements for a retail store
-          href: ../retail/tasks/create-calculate-post-statement-retail-store.md?toc=/dynamics365/commerce/toc.json
-        - name: Improvements to statement posting functionality
-          href: ../retail/statement-posting-EOD.md?toc=/dynamics365/commerce/toc.json
-        - name: Trickle feed-based order creation for retail store transactions
-          href: ../retail/trickle-feed.md?toc=/dynamics365/commerce/toc.json
-        - name: Create, calculate, and post statements for a retail store
-          href: ../retail/tasks/create-calculate-post-statement-retail-store.md?toc=/dynamics365/commerce/toc.json
-        - name: Improvements to statement posting functionality
-          href: ../retail/statement-posting-EOD.md?toc=/dynamics365/commerce/toc.json
-        - name: Improved handling of batch tracked items
-          href: ../retail/batch.md?toc=/dynamics365/commerce/toc.json
-        - name: Configure Retail parameters that affect retail statements
-          href: ../retail/tasks/parameter-configurations-retail-statements.md?toc=/dynamics365/commerce/toc.json
-        - name: Configure payment method settings that affect retail statements
-          href: ../retail/tasks/payment-configurations-retail-statements.md?toc=/dynamics365/commerce/toc.json
-        - name: Configure and run a job to calculate statements
-          href: ../retail/tasks/run-job-calculate-statements.md?toc=/dynamics365/commerce/toc.json
-        - name: Configure and run a job to post statements
-          href: ../retail/tasks/run-job-post-statements.md?toc=/dynamics365/commerce/toc.json
-        - name: Configure store settings that affect retail statements
-          href: ../retail/tasks/store-configurations-retail-statements.md?toc=/dynamics365/commerce/toc.json
-      - name: Distributed order management (DOM)
+        - name: Create a call center order 
+          href: tasks/create-call-center-orders.md
+      - name: Distributed order management	  
         items:
         - name: DOM overview
-          href: ../retail/dom.md?toc=/dynamics365/commerce/toc.json
+          href: dom.md
         - name: Cost configuration
-          href: ../retail/cost.md?toc=/dynamics365/commerce/toc.json
-      - name: Order fulfillment and processing
+          href: cost.md
+      - name: Order fulfillment and processing 
         items:
         - name: Store order fulfillment
-          href: ../retail/Order-fulfillment-overview.md?toc=/dynamics365/commerce/toc.json
+          href: order-fulfillment-overview.md
         - name: Set up order fulfillment for stores
-          href: ../retail/Order-fulfillment-POS-setup.md?toc=/dynamics365/commerce/toc.json
-        - name: Show order notifications in the POS
-          href: ../retail/Notifications-POS.md?toc=/dynamics365/commerce/toc.json
-      - name: Returns
+          href: order-fulfillment-pos-setup.md
+        - name: Show order notifications in POS
+          href: notifications-pos.md
+        - name: Sell continuity programs and process sales orders
+          href: tasks/use-continuity-program.md
+      - name:	Returns  
         items:
         - name: Linked refunds
-          href: ../retail/dev-itpro/linked-refunds.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/linked-refunds.md
         - name: Sell and return products not included in a store's assortment
-          href: ../retail/sell-return-outside-assortments.md?toc=/dynamics365/commerce/toc.json
+          href: sell-return-outside-assortments.md
         - name: Configure and process an exchange on a return order
-          href: ../retail/orderexchanges.md?toc=/dynamics365/commerce/toc.json
+          href: orderexchanges.md
         - name: Restrict payment methods for returns without a receipt
-          href: ../retail/payment-methods-restrictions.md?toc=/dynamics365/commerce/toc.json
+          href: payment-methods-restrictions.md
         - name: Return items across multiple customer orders and invoices
-          href: ../retail/multireturn.md?toc=/dynamics365/commerce/toc.json
-    - name: Ratings and reviews
+          href: multireturn.md	
+        - name: Create and update a returns and refunds policy for a channel
+          href: refund_policy_returns.md
+    - name: Manage your customers  
       items:
-      - name: Ratings and reviews overview
-        href: ratings-reviews-overview.md
-      - name: Opt in to use ratings and reviews 
-        href: opt-in-ratings-reviews.md 
-      - name: Manage ratings and reviews
-        href: manage-reviews.md
-      - name: Configure ratings and reviews
-        href: configure-ratings-reviews.md
-      - name: Sync product ratings in Dynamics 365 Retail
-        href: sync-product-ratings.md
-    - name: Product recommendations
+      - name: Clienteling
+        items:
+        - name: Clienteling overview
+          href: clienteling-overview.md	
+      - name: Loyalty 
+        items:
+        - name: Loyalty	overview  
+          href: set-up-customer-loyalty-program.md
+        - name: Define loyalty programs	  
+          href: tasks/define-loyalty-programs.md
+        - name: Define loyalty reward points	  
+          href: tasks/define-loyalty-reward-points.md	
+        - name: Define loyalty schemes	  
+          href: tasks/define-loyalty-schemes.md	
+        - name: Process adjustments of loyalty reward points	  
+          href: tasks/process-loyalty-reward-point-adjustments.md
+    - name: Manage your financials
       items:
-      - name: Product recommendations overview
-        href: product-recommendations.md
-      - name: Add product recommendations lists to e-Commerce pages
-        href: add-reco-list-to-page.md
-      - name: Enable product recommendations
-        href: enable-product-recommendations.md
-      - name: Create curated product recommendation lists
-        href: create-editorial-recommendation-lists.md
-      - name: Manage AI-ML-based product recommendation results
-        href: modify-product-recommendation-results.md
-      - name: Get product recommendations using demo data
-        href: product-recommendations-demo-data.md
-      - name: Product recommendations FAQ
-        href: faq-recommendations.md
-      - name: POS experiences
+      - name: Statements overview
+        href: retail-statements.md
+      - name: Transaction consistency checker 
+        href: valid-checker.md
+      - name: Disable rules in retail transaction consistency checker
+        href: disable-consistency-check-rule.md
+      - name: Edit and audit retail store transactions
+        href: edit-audit-retail-transactions.md
+      - name: Create, calculate and post statements for a retail store
+        href: tasks/create-calculate-post-statement-retail-store.md
+      - name: Improvements to statement posting functionality
+        href: statement-posting-eod.md
+      - name: Trickle feed-based order creation for retail store transactions 
+        href: trickle-feed.md
+      - name: Create, calculate and post statements for a retail store 
+        href: tasks/create-calculate-post-statement-retail-store.md
+      - name: Improvements to statement posting functionality 
+        href: statement-posting-eod.md
+      - name: Improved handling of batch tracked items
+        href: batch.md
+      - name: Configure Commerce parameters that affect statements 
+        href: tasks/parameter-configurations-retail-statements.md
+      - name: Configure payment method settings that affect retail statements 
+        href: tasks/payment-configurations-retail-statements.md
+      - name: Configure and run a job to calculate statements 
+        href: tasks/run-job-calculate-statements.md
+      - name: Configure and run a job to post statements 
+        href: tasks/run-job-post-statements.md
+      - name: Configure store settings that affect retail statements
+        href: tasks/store-configurations-retail-statements.md
+      - name: Posting of online sales and payments 
+        href: tasks/posting-online-sales-payments.md
+    - name: Manage worker tasks 
+      items:
+      - name: Task management overview
+        href: task-mgmt-overview.md
+      - name: Configure task management
+        href: task-mgmt-configure.md
+      - name: Create task lists and add tasks
+        href: task-mgmt-create-lists.md
+      - name: Assign task lists to stores or employees
+        href: task-mgmt-assign-lists.md
+      - name: Task management in POS
+        href: task-mgmt-pos.md
+    - name: Manage your e-Commerce site 
+      items:
+      - name: Online store overview
+        href: online-store-overview.md
+      - name: Create an e-Commerce site
+        items:
+        - name: Configure your domain name
+          href: configure-your-domain-name.md
+        - name: Deploy a new e-Commerce tenant
+          href: deploy-ecommerce-site.md
+        - name: Set up an online store channel
+          href: online-stores.md            
+        - name: Create an e-Commerce site
+          href: create-ecommerce-site.md
+        - name: Associate an e-Commerce site with an online channel
+          href: associate-site-online-store.md
+        - name: Manage robots.txt files
+          href: manage-robots-txt-files.md
+        - name: Set up custom pages for user sign-ins
+          href: custom-pages-user-logins.md
+        - name: Add support for a content delivery network (CDN)
+          href: add-cdn-support.md
+        - name: Enable location-based store detection
+          href: enable-store-detection.md
+      - name: Sample site overview
+        items:
+        - name: Overview of the home page
+          href: quick-tour-home-page.md
+        - name: Overview of default category landing page and search results page
+          href: category-search-page-overview.md 
+        - name: Overview of product details pages
+          href: quick-tour-pdp.md
+        - name: Overview of cart and checkout pages
+          href: quick-tour-cart-checkout.md
+        - name: Overview of of account management pages
+          href: quick-tour-account-management.md
+      - name: Manage your site settings
+        items:
+        - name: Authoring page overview
+          href: authoring-home-overview.md
+        - name: Manage users and roles
+          href: manage-ecommerce-users-roles.md
+        - name: Search engine optimization (SEO) considerations for your site
+          href: search-engine-optimization-considerations.md
+        - name: Manage Content Security Policy (CSP)
+          href: manage-csp.md
+      - name: Manage your site content 
+        items:
+        - name: Ways to add content
+          href: add-manage-content.md
+        - name: Page model glossary
+          href: page-elements-overview.md
+        - name: Document states and lifecycle
+          href: document-states-overview.md
+        - name: Work with publish groups
+          href: publish-groups.md
+        - name: Brand your site and add store details
+          items:
+          - name: Add a logo
+            href: add-logo.md 
+          - name: Select a site theme
+            href: select-site-theme.md
+          - name: Work with CSS override files
+            href: css-override-files.md
+          - name: Add a favicon
+            href: add-favicon.md
+          - name: Add a welcome message
+            href: add-welcome-message.md 
+          - name: Add a copyright notice
+            href: add-copyright-notice.md
+          - name: Add languages
+            href: add-languages-to-site.md
+          - name: Add script code to site pages to support telemetry
+            href: add-telemetry.md
+        - name: Modules
+          items:
+          - name: Work with modules
+            href: work-with-modules.md
+        - name: Fragments
+          items:
+          - name: Work with fragments
+            href: work-with-fragments.md
+        - name: Templates
+          items:
+          - name: Templates and layouts overview
+            href: templates-layouts-overview.md
+          - name: Work with templates
+            href: work-with-templates.md
+          - name: Work with preset layouts
+            href: work-with-layouts.md
+        - name: Pages
+          items:
+          - name: Modify an existing site page
+            href: modify-existing-page.md
+          - name: Add a new site page
+            href: add-new-page.md
+          - name: Select page layouts
+            href: select-page-layouts.md
+          - name: Manage SEO metadata
+            href: manage-seo-metadata.md
+          - name: Save, preview, and publish a page
+            href: save-preview-publish-page.md
+          - name: Enrich a product page
+            href: enrich-product-page.md
+          - name: Enrich a category landing page
+            href: enrich-category-page.md
+          - name: Verify page content accessibility
+            href: verify-accessibility.md
+        - name: Site navigation
+          items:
+          - name: Customize site navigation
+            href: customize-site-navigation.md
+          - name: Create a page URL
+            href: create-page-URL.md
+      - name: Make your site compliant
+        items:
+        - name: Compliance overview
+          href: compliance-overview.md
+        - name: Accessibility features and capabilities
+          href: accessibility.md
+        - name: Cookie compliance
+          href: cookie-compliance.md
+        - name: Add a privacy policy page
+          href: add-privacy-page.md
+      - name: Starter kit
         items: 
-        - name: Product recommendations on POS 
-          href: ../retail/product.md?toc=/dynamics365/commerce/toc.json
-        - name: Add a recommendations control on POS devices
-          href: ../retail/add-recommendations-control-pos-screen.md?toc=/dynamics365/commerce/toc.json
+        - name: Starter kit overview
+          href: starter-kit-overview.md
+        - name: Container modules
+          items:
+          - name: Container module
+            href: add-container-module.md
+        - name: Marketing modules
+          items:
+          - name: Promo banner module 
+            href: add-alert.md
+          - name: Carousel module
+            href: add-carousel.md
+          - name: Text block module
+            href: add-content-rich-block.md
+          - name: Content block module
+            href: add-hero-module.md 
+          - name: Video player module
+            href: add-video-player.md
+        - name: Header and footer modules
+          items:
+          - name: Header module
+            href: author-header-module.md
+          - name: Footer module
+            href: author-footer-module.md
+        - name: Product detail page modules
+          items:
+          - name: Buy box module
+            href: add-buy-box.md
+          - name: Ratings and reviews modules
+            href: ratings-reviews-modules.md
+        - name: Purchase modules
+          items:
+          - name: Cart module
+            href: add-cart-module.md
+          - name: Checkout module
+            href: add-checkout-module.md
+          - name: Order confirmation module
+            href: order-confirmation-module.md 
+        - name: Account management modules
+          items:
+          - name: Account management pages and modules
+            href: account-management.md
+        - name: Product collection modules
+          items:
+          - name: Product collection modules
+            href: product-collection-module-overview.md
+      - name: Search
+        items:
+        - name: Default category landing page and search results page
+          href: category-search-page-overview.md
+        - name: Cloud-powered search overview
+          href: cloud-powered-search-overview.md
+      - name: Reporting
+        items:
+        - name: Generate online channel reports
+          href: generate-reports.md
+      - name: Error handling
+        items:
+        - name: Build custom response pages for 4xx/5xx status code errors
+          href: build-pages-400-500-errors.md
+    - name: Fraud protection 
+      items:
+      - name:	Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce	
+        href:	dev-itpro/DFP.md
     - name: Monitoring and analysis
       items:
       - name: Monitor sales and margin performance
-        href: ../retail/monitor-sales-margin-performance.md?toc=/dynamics365/commerce/toc.json
+        href: monitor-sales-margin-performance.md
       - name: Analyze sales trends and patterns
-        href: ../retail/analyze-sales-trends-patterns.md?toc=/dynamics365/commerce/toc.json
+        href: analyze-sales-trends-patterns.md
       - name: Assess sales performance by product
-        href: ../retail/sales-performance-products.md?toc=/dynamics365/commerce/toc.json
+        href: sales-performance-products.md
       - name: Assess customer and product profitability
-        href: ../retail/assess-customer-product-profitability.md?toc=/dynamics365/commerce/toc.json
+        href: assess-customer-product-profitability.md
       - name: Analyze store performance
-        href: ../retail/store-performance-information.md?toc=/dynamics365/commerce/toc.json
+        href: store-performance-information.md
       - name: Set up Recency, Frequency, and Monetary (RFM) analysis
-        href: ../retail/set-up-rfm-analysis.md?toc=/dynamics365/commerce/toc.json
+        href: set-up-rfm-analysis.md
     - name: Localization and regulatory features
       items:
-      - name: Fiscal integration overview for Retail channel
-        href: ../retail/localizations/fiscal-integration-for-retail-channel.md?toc=/dynamics365/commerce/toc.json
-      - name: Set up fiscal integration for Retail channel
-        href: ../retail/localizations/setting-up-fiscal-integration-for-retail-channel.md?toc=/dynamics365/commerce/toc.json
+      - name: Fiscal integration overview for Commerce channel
+        href: localizations/fiscal-integration-for-retail-channel.md
+      - name: Set up fiscal integration for Commerce channel
+        href: localizations/setting-up-fiscal-integration-for-retail-channel.md
       - name: Austria
         items:
         - name: Fiscal registration service integration sample for Austria
-          href: ../retail/localizations/emea-aut-fi-sample.md?toc=/dynamics365/commerce/toc.json
+          href: localizations/emea-aut-fi-sample.md
       - name: Eastern Europe
         items: 
-        - name: Advance invoices for Retail for Eastern Europe
-          href: ../retail/localizations/emea-eeu-advance-invoices-for-retail.md?toc=/dynamics365/commerce/toc.json
-        - name: Petty cash management for Retail for Eastern Europe
-          href: ../retail/localizations/emea-eeu-petty-cash-for-retail.md?toc=/dynamics365/commerce/toc.json
-        - name: Retail customer invoices and return sales orders in Eastern European countries
-          href: ../retail/localizations/emea-eeu-retail-invoices.md?toc=/dynamics365/commerce/toc.json
+        - name: Advance invoices for Commerce for Eastern Europe
+          href: localizations/emea-eeu-advance-invoices-for-retail.md
+        - name: Petty cash management for Commerce for Eastern Europe
+          href: localizations/emea-eeu-petty-cash-for-retail.md
+        - name: Customer invoices and return sales orders in Eastern European countries
+          href: localizations/emea-eeu-retail-invoices.md
         - name: Deployment guidelines for cash registers for Czech Republic, Hungary, and Poland
-          href: ../retail/localizations/emea-eeu-deployment.md?toc=/dynamics365/commerce/toc.json
+          href: localizations/emea-eeu-deployment.md
         - name: Fiscal printer integration sample for Poland
-          href: ../retail/localizations/emea-pol-fpi-sample.md?toc=/dynamics365/commerce/toc.json
+          href: localizations/emea-pol-fpi-sample.md
         - name: Fiscal registration service integration sample for Czech Republic
-          href: ../retail/localizations/emea-cze-fi-sample.md?toc=/dynamics365/commerce/toc.json
+          href: localizations/emea-cze-fi-sample.md
       - name: France
         items:
         - name: Cash register functionality
-          href: ../retail/localizations/emea-fra-cash-registers.md?toc=/dynamics365/commerce/toc.json
+          href: localizations/emea-fra-cash-registers.md
         - name: Deployment guidelines for cash registers
-          href: ../retail/localizations/emea-fra-deployment.md?toc=/dynamics365/commerce/toc.json
+          href: localizations/emea-fra-deployment.md
       - name: India
         items:
         - name: Goods and Services Tax (GST) integration for cash registers
-          href: ../retail/localizations/apac-ind-cash-registers.md?toc=/dynamics365/commerce/toc.json
+          href: localizations/apac-ind-cash-registers.md
         - name: Deployment guidelines for cash registers
-          href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/dynamics365/commerce/toc.json
+          href: localizations/apac-ind-loc-deployment-guidelines.md
         - name: Support for upgrade and N-1 for India
-          href: ../retail/localizations/apac-ind-n-1-for-india.md?toc=/dynamics365/commerce/toc.json
+          href: localizations/apac-ind-n-1-for-india.md
       - name: Italy
         items:
         - name: Fiscal printer integration sample for Italy
-          href: ../retail/localizations/emea-ita-fpi-sample.md?toc=/dynamics365/commerce/toc.json
+          href: localizations/emea-ita-fpi-sample.md
       - name: Mexico
         items:
         - name: Global CFDI e-invoices for Mexico
@@ -819,63 +1003,15 @@
       - name: Norway
         items:
         - name: Cash register functionality
-          href: ../retail/localizations/emea-nor-cash-registers.md?toc=/dynamics365/commerce/toc.json
+          href: localizations/emea-nor-cash-registers.md
         - name: Deployment guidelines for cash registers
-          href: ../retail/localizations/emea-nor-loc-deployment-guidelines.md?toc=/dynamics365/commerce/toc.json
+          href: localizations/emea-nor-loc-deployment-guidelines.md
       - name: Sweden
         items:
         - name: Cash register functionality
-          href: ../retail/localizations/emea-swe-cash-registers.md?toc=/dynamics365/commerce/toc.json
-        - name: Sample for Retail POS integration with control units
-          href: ../retail/localizations/retail-sdk-control-unit-sample.md?toc=/dynamics365/commerce/toc.json
-    - name: Retail tasks
-      items:
-      - name: Create channel-specific trade agreements
-        href: ../retail/tasks/base-price-trade-agreements.md?toc=/dynamics365/commerce/toc.json
-      - name: Create trade agreements using category pricing rules
-        href: ../retail/tasks/category-pricing-rules-trade-agreements.md?toc=/dynamics365/commerce/toc.json
-      - name: Configure functionality profiles for sales representatives
-        href: ../retail/tasks/configure-functionality-profile-sales-representative.md?toc=/dynamics365/commerce/toc.json
-      - name: Create call center orders
-        href: ../retail/tasks/create-call-center-orders.md?toc=/dynamics365/commerce/toc.json
-      - name: Create financial dimensions for POS registers and configure dimension values on registers
-        href: ../retail/tasks/create-financial-dimensions-pos.md?toc=/dynamics365/commerce/toc.json
-      - name: Create financial dimensions for retail channels and configure dimension values on stores
-        href: ../retail/tasks/create-financial-dimensions-retail-channels.md?toc=/dynamics365/commerce/toc.json
-      - name: Create POS permission groups
-        href: ../retail/tasks/create-pos-permission-groups.md?toc=/dynamics365/commerce/toc.json
-      - name: Create POS visual profiles
-        href: ../retail/tasks/create-pos-visual-profile-2016-02.md?toc=/dynamics365/commerce/toc.json
-      - name: Create product packages for purchase orders
-        href: ../retail/tasks/create-product-packages-purchase-orders.md?toc=/dynamics365/commerce/toc.json
-      - name: Create call center channels and define channel attributes
-        href: ../retail/tasks/define-call-center-channel-channel-attributes.md?toc=/dynamics365/commerce/toc.json
-      - name: Define channel attributes
-        href: ../retail/tasks/define-channel-attributes.md?toc=/dynamics365/commerce/toc.json
-      - name: Define continuity schedules
-        href: ../retail/tasks/define-continuity-schedules.md?toc=/dynamics365/commerce/toc.json
-      - name: Define loyalty programs
-        href: ../retail/tasks/define-loyalty-programs.md?toc=/dynamics365/commerce/toc.json
-      - name: Define loyalty reward points
-        href: ../retail/tasks/define-loyalty-reward-points.md?toc=/dynamics365/commerce/toc.json
-      - name: Define loyalty schemes
-        href: ../retail/tasks/define-loyalty-schemes.md?toc=/dynamics365/commerce/toc.json
-      - name: Design the relationships between organizational units
-        href: ../retail/tasks/design-relationships-between-organizational-units.md?toc=/dynamics365/commerce/toc.json
-      - name: Manage assortments
-        href: ../retail/tasks/manage-assortments-2016-11.md?toc=/dynamics365/commerce/toc.json
-      - name: Post online sales and payments
-        href: ../retail/tasks/posting-online-sales-payments.md?toc=/dynamics365/commerce/toc.json
-      - name: Process adjustments of loyalty reward points
-        href: ../retail/tasks/process-loyalty-reward-point-adjustments.md?toc=/dynamics365/commerce/toc.json
-      - name: Push products from distribution centers to stores via buyer's push
-        href: ../retail/tasks/push-products-distribution-center-store-buyers-push.md?toc=/dynamics365/commerce/toc.json
-      - name: Set up rules and parameters for cross-docking and buyer's push
-        href: ../retail/tasks/set-up-rules-parameters-cross-docking-buyers-push.md?toc=/dynamics365/commerce/toc.json
-      - name: Selling continuity programs and processing sales orders
-        href: ../retail/tasks/use-continuity-program.md?toc=/dynamics365/commerce/toc.json
-      - name: Configure retail workers
-        href: ../retail/tasks/worker.md?toc=/dynamics365/commerce/toc.json
+          href: localizations/emea-swe-cash-registers.md
+        - name: Sample for POS integration with control units
+          href: localizations/retail-sdk-control-unit-sample.md
     - name: Intelligence
       items:
       - name: Intelligence home page
@@ -944,42 +1080,44 @@
           href: ../fin-ops-core/dev-itpro/analytics/workforce-analysis-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
       - name: Document reporting and printing
         items:
-        - name: Document Reporting Services overview
-          href: ../fin-ops-core/dev-itpro/analytics/document-reporting-services.md?toc=/dynamics365/commerce/toc.json
-        - name: Configure SSRS for on-premises deployments
-          href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/commerce/toc.json
-        - name: Printing
-          items:
-          - name: Document printing overview
-            href: ../fin-ops-core/dev-itpro/analytics/print-documents.md?toc=/dynamics365/commerce/toc.json
-          - name: Install the Document Routing Agent to enable network printing
-            href: ../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md?toc=/dynamics365/commerce/toc.json
-          - name: Upgrade the Document Routing Agent
-            href: ../fin-ops-core/dev-itpro/analytics/upgrade-document-routing-agent.md?toc=/dynamics365/commerce/toc.json
-          - name: Install network printer devices in on-premises environments
-            href: ../fin-ops-core/dev-itpro/analytics/install-network-printer-onprem.md?toc=/dynamics365/commerce/toc.json
-          - name: Document generation, publishing, and printing in on-premises deployments
-            href: ../fin-ops-core/dev-itpro/analytics/printing-capabilities-on-premises.md?toc=/dynamics365/commerce/toc.json
-          - name: Run the Document Routing Agent as a Windows service
-            href: ../fin-ops-core/dev-itpro/analytics/run-document-routing-agent-as-windows-service.md?toc=/dynamics365/commerce/toc.json
-        - name: Help prevent long-running reports from timing out
-          href: ../fin-ops-core/dev-itpro/analytics/prevent-long-running-reports-timing-out.md?toc=/dynamics365/commerce/toc.json
-        - name: Available SQL Server Reporting Services reports
-          href: ../fin-ops-core/dev-itpro/analytics/SSRS-report.md?toc=/dynamics365/commerce/toc.json
-        - name: Create reporting solutions
-          href: ../fin-ops-core/dev-itpro/analytics/create-nextgen-reporting-solutions.md?toc=/dynamics365/commerce/toc.json
-        - name: Install report design templates
-          href: ../fin-ops-core/dev-itpro/analytics/install-modern-report-design-templates.md?toc=/dynamics365/commerce/toc.json
-        - name: Customize App Suite reports by using extensions
-          href: ../fin-ops-core/dev-itpro/analytics/customize-app-suite-reports-with-extensions.md?toc=/dynamics365/commerce/toc.json
-        - name: Expand Application Suite report data sets
-          href: ../fin-ops-core/dev-itpro/analytics/expand-app-suite-report-data-sets.md?toc=/dynamics365/commerce/toc.json
-        - name: Extend report menu items to redirect user navigation
-          href: ../fin-ops-core/dev-itpro/analytics/extend-report-menu-items.md?toc=/dynamics365/commerce/toc.json
-        - name: Create custom designs for business documents
-          href: ../fin-ops-core/dev-itpro/analytics/custom-designs-business-docs.md?toc=/dynamics365/commerce/toc.json
-        - name: Preview PDF documents with an embedded viewer
-          href: ../fin-ops-core/dev-itpro/analytics/preview-pdf-documents.md?toc=/dynamics365/commerce/toc.json
+         - name: Document Reporting Services overview
+           href: ../fin-ops-core/dev-itpro/analytics/document-reporting-services.md?toc=/dynamics365/commerce/toc.json
+         - name: Supported fonts
+           href: ../fin-ops-core/dev-itpro/analytics/supported-fonts.md?toc=/dynamics365/commerce/toc.json
+         - name: Configure SSRS for on-premises deployments
+           href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/commerce/toc.json
+         - name: Printing
+           items:
+           - name: Document printing overview
+             href: ../fin-ops-core/dev-itpro/analytics/print-documents.md?toc=/dynamics365/commerce/toc.json
+           - name: Install the Document Routing Agent to enable network printing
+             href: ../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md?toc=/dynamics365/commerce/toc.json
+           - name: Upgrade the Document Routing Agent
+             href: ../fin-ops-core/dev-itpro/analytics/upgrade-document-routing-agent.md?toc=/dynamics365/commerce/toc.json
+           - name: Install network printer devices in on-premises environments
+             href: ../fin-ops-core/dev-itpro/analytics/install-network-printer-onprem.md?toc=/dynamics365/commerce/toc.json
+           - name: Document generation, publishing, and printing in on-premises deployments
+             href: ../fin-ops-core/dev-itpro/analytics/printing-capabilities-on-premises.md?toc=/dynamics365/commerce/toc.json
+           - name: Run the Document Routing Agent as a Windows service
+             href: ../fin-ops-core/dev-itpro/analytics/run-document-routing-agent-as-windows-service.md?toc=/dynamics365/commerce/toc.json
+         - name: Help prevent long-running reports from timing out
+           href: ../fin-ops-core/dev-itpro/analytics/prevent-long-running-reports-timing-out.md?toc=/dynamics365/commerce/toc.json
+         - name: Available SQL Server Reporting Services reports
+           href: ../fin-ops-core/dev-itpro/analytics/SSRS-report.md?toc=/dynamics365/commerce/toc.json
+         - name: Create reporting solutions
+           href: ../fin-ops-core/dev-itpro/analytics/create-nextgen-reporting-solutions.md?toc=/dynamics365/commerce/toc.json
+         - name: Install report design templates
+           href: ../fin-ops-core/dev-itpro/analytics/install-modern-report-design-templates.md?toc=/dynamics365/commerce/toc.json
+         - name: Customize App Suite reports by using extensions
+           href: ../fin-ops-core/dev-itpro/analytics/customize-app-suite-reports-with-extensions.md?toc=/dynamics365/commerce/toc.json
+         - name: Expand Application Suite report data sets
+           href: ../fin-ops-core/dev-itpro/analytics/expand-app-suite-report-data-sets.md?toc=/dynamics365/commerce/toc.json
+         - name: Extend report menu items to redirect user navigation
+           href: ../fin-ops-core/dev-itpro/analytics/extend-report-menu-items.md?toc=/dynamics365/commerce/toc.json
+         - name: Create custom designs for business documents
+           href: ../fin-ops-core/dev-itpro/analytics/custom-designs-business-docs.md?toc=/dynamics365/commerce/toc.json
+         - name: Preview PDF documents with an embedded viewer
+           href: ../fin-ops-core/dev-itpro/analytics/preview-pdf-documents.md?toc=/dynamics365/commerce/toc.json
       - name: Electronic reporting
         items:
         - name: Electronic reporting overview
@@ -1018,6 +1156,252 @@
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/dynamics365/commerce/toc.json  
         - name: Formula designer in Electronic reporting
           href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/dynamics365/commerce/toc.json
+        - name: Formula language and functions
+          items:
+          - name: Formula language
+            href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/commerce/toc.json  
+          - name: Functions
+            items:
+            - name: Date and time 
+              items: 
+              - name: Date and time functions
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-datetime.md?toc=/dynamics365/commerce/toc.json
+              - name: AddDays
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-adddays.md?toc=/dynamics365/commerce/toc.json
+              - name: DateFormat
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-dateformat.md?toc=/dynamics365/commerce/toc.json
+              - name: DateTimeFormat
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimeformat.md?toc=/dynamics365/commerce/toc.json
+              - name: DateTimeValue
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimevalue.md?toc=/dynamics365/commerce/toc.json
+              - name: DateToDateTime
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetodatetime.md?toc=/dynamics365/commerce/toc.json
+              - name: DateValue
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datevalue.md?toc=/dynamics365/commerce/toc.json
+              - name: DayOfYear
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-dayofyear.md?toc=/dynamics365/commerce/toc.json
+              - name: Days
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-days.md?toc=/dynamics365/commerce/toc.json
+              - name: Now
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-now.md?toc=/dynamics365/commerce/toc.json
+              - name: NullDate
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-nulldate.md?toc=/dynamics365/commerce/toc.json
+              - name: NullDateTime
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-nulldatetime.md?toc=/dynamics365/commerce/toc.json
+              - name: SessionNow
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessionnow.md?toc=/dynamics365/commerce/toc.json
+              - name: SessionToday
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/commerce/toc.json
+            - name: List 
+              items: 
+              - name: List functions
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-list.md?toc=/dynamics365/commerce/toc.json
+              - name: AllItems
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-allitems.md?toc=/dynamics365/commerce/toc.json
+              - name: AllItemsQuery
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-allitemsquery.md?toc=/dynamics365/commerce/toc.json
+              - name: Count
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-count.md?toc=/dynamics365/commerce/toc.json
+              - name: EmptyList
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-emptylist.md?toc=/dynamics365/commerce/toc.json
+              - name: Enumerate
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-enumerate.md?toc=/dynamics365/commerce/toc.json
+              - name: Filter
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-filter.md?toc=/dynamics365/commerce/toc.json
+              - name: First
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-first.md?toc=/dynamics365/commerce/toc.json
+              - name: FirstOrNull
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-firstornull.md?toc=/dynamics365/commerce/toc.json
+              - name: Index
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-index.md?toc=/dynamics365/commerce/toc.json
+              - name: IsEmpty
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-isempty.md?toc=/dynamics365/commerce/toc.json
+              - name: List
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/commerce/toc.json
+              - name: ListOfFields
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffields.md?toc=/dynamics365/commerce/toc.json
+              - name: ListOfFirstItem
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?toc=/dynamics365/commerce/toc.json
+              - name: OrderBy
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?toc=/dynamics365/commerce/toc.json
+              - name: Reverse
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?toc=/dynamics365/commerce/toc.json
+              - name: Split
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?toc=/dynamics365/commerce/toc.json
+              - name: SplitList
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-splitlist.md?toc=/dynamics365/commerce/toc.json
+              - name: SplitListByLimit
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-splitlistbylimit.md?toc=/dynamics365/commerce/toc.json
+              - name: StringJoin
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-stringjoin.md?toc=/dynamics365/commerce/toc.json
+              - name: Where
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-where.md?toc=/dynamics365/commerce/toc.json
+            - name: Logical
+              items: 
+              - name: Logical functions
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-logical.md?toc=/dynamics365/commerce/toc.json
+              - name: And
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-and.md?toc=/dynamics365/commerce/toc.json
+              - name: Case
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-case.md?toc=/dynamics365/commerce/toc.json
+              - name: If
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-if.md?toc=/dynamics365/commerce/toc.json
+              - name: Not
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-not.md?toc=/dynamics365/commerce/toc.json
+              - name: Or
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-or.md?toc=/dynamics365/commerce/toc.json
+              - name: ValueIn
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valuein.md?toc=/dynamics365/commerce/toc.json
+            - name: Mathematical
+              items: 
+              - name: Mathematical functions
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-mathematical.md?toc=/dynamics365/commerce/toc.json
+              - name: Abs
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-abs.md?toc=/dynamics365/commerce/toc.json
+              - name: Power
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-power.md?toc=/dynamics365/commerce/toc.json
+              - name: Round
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-round.md?toc=/dynamics365/commerce/toc.json
+              - name: RoundDown
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-rounddown.md?toc=/dynamics365/commerce/toc.json
+              - name: RoundUp
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-roundup.md?toc=/dynamics365/commerce/toc.json
+            - name: Records
+              items: 
+              - name: Record functions
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-record.md?toc=/dynamics365/commerce/toc.json
+              - name: NullContainer
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-record-nullcontainer.md?toc=/dynamics365/commerce/toc.json
+              - name: EmptyRecord
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-record-emptyrecord.md?toc=/dynamics365/commerce/toc.json
+            - name: Text
+              items: 
+              - name: Text functions
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-text.md?toc=/dynamics365/commerce/toc.json
+              - name: Char
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-char.md?toc=/dynamics365/commerce/toc.json
+              - name: Concatenate
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-concatenate.md?toc=/dynamics365/commerce/toc.json
+              - name: Format
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-format.md?toc=/dynamics365/commerce/toc.json
+              - name: GetEnumValueByName
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-getenumvaluebyname.md?toc=/dynamics365/commerce/toc.json
+              - name: GuidValue
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-guidvalue.md?toc=/dynamics365/commerce/toc.json
+              - name: JsonValue
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-jsonvalue.md?toc=/dynamics365/commerce/toc.json
+              - name: Left
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-left.md?toc=/dynamics365/commerce/toc.json
+              - name: Len
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-len.md?toc=/dynamics365/commerce/toc.json
+              - name: Lower
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-lower.md?toc=/dynamics365/commerce/toc.json
+              - name: Mid
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-mid.md?toc=/dynamics365/commerce/toc.json
+              - name: NumberFormat
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numberformat.md?toc=/dynamics365/commerce/toc.json
+              - name: NumeralsToText
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numeralstotext.md?toc=/dynamics365/commerce/toc.json
+              - name: PadLeft
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-padleft.md?toc=/dynamics365/commerce/toc.json
+              - name: QrCode
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?toc=/dynamics365/commerce/toc.json
+              - name: Replace
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-replace.md?toc=/dynamics365/commerce/toc.json
+              - name: Right
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-right.md?toc=/dynamics365/commerce/toc.json
+              - name: Text
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/commerce/toc.json
+              - name: Translate
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-translate.md?toc=/dynamics365/commerce/toc.json
+              - name: Trim
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-trim.md?toc=/dynamics365/commerce/toc.json
+              - name: Upper
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-upper.md?toc=/dynamics365/commerce/toc.json
+            - name: Data collection
+              items: 
+              - name: Data collection functions
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-data-collection.md?toc=/dynamics365/commerce/toc.json
+              - name: CollectedList
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-collectedlist.md?toc=/dynamics365/commerce/toc.json
+              - name: CountIF
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-countif.md?toc=/dynamics365/commerce/toc.json
+              - name: CountIFs
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-countifs.md?toc=/dynamics365/commerce/toc.json
+              - name: FormatElementName
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-formatelementname.md?toc=/dynamics365/commerce/toc.json
+              - name: SumIF
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-sumif.md?toc=/dynamics365/commerce/toc.json
+              - name: SumIFs
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-sumifs.md?toc=/dynamics365/commerce/toc.json
+            - name: Other
+              items: 
+              - name: Other (business domain–specific) functions
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-other.md?toc=/dynamics365/commerce/toc.json
+              - name: CH_Bank_Mod_10
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-chbankmode10.md?toc=/dynamics365/commerce/toc.json
+              - name: CN_GBT_AdditionalDimensionID
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-cngbtadditionaldimensionid.md?toc=/dynamics365/commerce/toc.json
+              - name: ConvertCurrency
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-convertcurrency.md?toc=/dynamics365/commerce/toc.json
+              - name: CurCredRef
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-curcredref.md?toc=/dynamics365/commerce/toc.json
+              - name: FA_Balance
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-fabalance.md?toc=/dynamics365/commerce/toc.json
+              - name: CH_Bank_Mod_10
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-chbankmode10.md?toc=/dynamics365/commerce/toc.json
+              - name: FA_Sum
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-fasum.md?toc=/dynamics365/commerce/toc.json
+              - name: GetCurrentCompany
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-getcurrentcompany.md?toc=/dynamics365/commerce/toc.json
+              - name: ISOCredRef
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-isocredref.md?toc=/dynamics365/commerce/toc.json
+              - name: IsValidCharacterISO7064
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-isvalidchariso7064.md?toc=/dynamics365/commerce/toc.json
+              - name: Mod_97
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-mod97.md?toc=/dynamics365/commerce/toc.json
+              - name: NumSeqValue
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-numseqvalue.md?toc=/dynamics365/commerce/toc.json
+              - name: RoundAmount
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-roundamount.md?toc=/dynamics365/commerce/toc.json
+              - name: TableName2ID
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-tablename2id.md?toc=/dynamics365/commerce/toc.json
+            - name: Type conversion
+              items: 
+              - name: Type conversion functions
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-type-conversion.md?toc=/dynamics365/commerce/toc.json
+              - name: Int64Value
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-int64value.md?toc=/dynamics365/commerce/toc.json
+              - name: IntValue
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-intvalue.md?toc=/dynamics365/commerce/toc.json
+              - name: NumberValue
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-numbervalue.md?toc=/dynamics365/commerce/toc.json
+              - name: Value
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-value.md?toc=/dynamics365/commerce/toc.json
+              - name: "Date and Time category: DateTimeValue"
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimevalue.md?toc=/dynamics365/commerce/toc.json
+              - name: "Date and Time category: DateToDateTime"
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetodatetime.md?toc=/dynamics365/commerce/toc.json
+              - name: "Date and Time category: DateValue"
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datevalue.md?toc=/dynamics365/commerce/toc.json
+              - name: "List category: List"
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/commerce/toc.json
+              - name: "List category: ListOfFields"
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffields.md?toc=/dynamics365/commerce/toc.json
+              - name: "List category: Split"
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?toc=/dynamics365/commerce/toc.json
+              - name: "List category: StringJoin"
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-stringjoin.md?toc=/dynamics365/commerce/toc.json
+              - name: "Text category: Char"
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-char.md?toc=/dynamics365/commerce/toc.json
+              - name: "Text category: GuidValue"
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-guidvalue.md?toc=/dynamics365/commerce/toc.json
+              - name: "Text category: NumberFormat"
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numberformat.md?toc=/dynamics365/commerce/toc.json
+              - name: "Text category: QrCode"
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?toc=/dynamics365/commerce/toc.json
+              - name: "Text category: Text"
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/commerce/toc.json
         - name: Manage ER model mapping in separate ER configurations
           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/commerce/toc.json
         - name: Select data model definitions when you create formats
@@ -1140,6 +1524,16 @@
               href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/commerce/toc.json
             - name: Import configurations from RCS
               href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
+        - name: Tutorials
+          items: 
+          - name: Use JOIN data sources to get data from multiple application tables in Electronic reporting (ER) model mappings
+            href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/commerce/toc.json
+          - name: Configure country context dependent ER model mappings
+            href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/commerce/toc.json
+          - name: Configure ER formats to use parameters that are specified per legal entity
+            href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=/dynamics365/commerce/toc.json
+          - name: Set up the parameters of an ER format per legal entity
+            href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=/dynamics365/commerce/toc.json
         - name: Use Electronic reporting solutions in Finance and Operations
           items: 
           - name: Configure the framework
@@ -1172,8 +1566,12 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/commerce/toc.json
           - name: Trace execution of ER formats to troubleshoot performance issues
             href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/commerce/toc.json
-          - name: Business document management overview
-            href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/commerce/toc.json
+          - name: Business document management 
+            items:
+            - name: Business document management overview
+              href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/commerce/toc.json
+            - name: Add new fields to a business document template in Microsoft Excel
+              href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/commerce/toc.json
         - name: ER framework API
           items: 
           - name: Extend the list of Electronic reporting functions
@@ -1222,7 +1620,7 @@
           href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?toc=/dynamics365/commerce/toc.json
         - name: Bring your own database
           href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/commerce/toc.json
-    - name: Mobile app
+    - name: Finance and Operations (Dynamics 365) mobile app
       items:
       - name: Mobile app home page
         href: ../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/dynamics365/commerce/toc.json
@@ -1414,10 +1812,10 @@
         href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json
       - name: Date/time data and time zones
         href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/commerce/toc.json
-    - name: Development
+    - name: Extensibility
       items: 
       - name: Commerce development and extensibility
-        href: ../retail/dev-itpro/dev-retail-home-page.md?toc=/dynamics365/commerce/toc.json
+        href: dev-itpro/dev-retail-home-page.md
       - name: Online channel extensibility
         items:
         - name: Online channel extensibility overview
@@ -1442,6 +1840,8 @@
           items:
           - name: Module definition file
             href: e-commerce-extensibility/module-definition-file.md
+          - name: Module React component file
+            href: e-commerce-extensibility/module-react-file.md
           - name: Module view file
             href: e-commerce-extensibility/module-view-file.md
           - name: Module data file
@@ -1462,8 +1862,6 @@
             href: e-commerce-extensibility/add-module-config-fields.md
           - name: Preview and debug modules
             href: e-commerce-extensibility/test-module.md 
-          - name: Debug modules
-            href: e-commerce-extensibility/debug-modules.md
           - name: Test modules by using mocks
             href: e-commerce-extensibility/test-module-mock.md
           - name: Test modules by using page mocks
@@ -1502,6 +1900,8 @@
             href: e-commerce-extensibility/core-data-actions.md
           - name: Call Retail Server APIs
             href: e-commerce-extensibility/call-retail-server-apis.md
+          - name: Call Retail Server extension APIs
+            href: e-commerce-extensibility/call-retail-extension-api.md
         - name: Advanced data action topics
           items:
           - name: Chain data actions
@@ -1537,161 +1937,161 @@
       - name: Retail SDK
         items:
         - name: Retail SDK architecture
-          href: ../retail/dev-itpro/retail-sdk/retail-sdk-overview.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/retail-sdk/retail-sdk-overview.md
         - name: Upcoming changes in the Retail SDK
-          href: ../retail/dev-itpro/UpcomingSDKChanges.md?toc=/dynamics365/commerce/toc.json
-        - name: Merge the build systems for Retail and Finance and Operations
-          href: ../retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/UpcomingSDKChanges.md
+        - name: Merge the build systems for Commerce and Finance and Operations
+          href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
         - name: Retail SDK extensibility samples
-          href: ../retail/dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md?toc=/dynamics365/commerce/toc.json
-        - name: Create retail deployable packages
-          href: ../retail/dev-itpro/retail-sdk/retail-sdk-packaging.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
+        - name: Create deployable packages
+          href: dev-itpro/retail-sdk/retail-sdk-packaging.md
         - name: Development in cloud-hosted dev environments without admin access
-          href: ../retail/dev-itpro/cloud-dev-box.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/cloud-dev-box.md
       - name: Point of sale extensibility
         items:
-        - name: Retail POS screen layouts
-          href: ../retail/pos-screen-layouts.md?toc=/dynamics365/commerce/toc.json
+        - name: POS screen layouts
+          href: pos-screen-layouts.md
         - name: Open URL in POS
-          href: ../retail/Open-URL-in-POS.md?toc=/dynamics365/commerce/toc.json
+          href: Open-URL-in-POS.md
         - name: Install the POS Layout designer
-          href: ../retail/install-pos-layout-designer.md?toc=/dynamics365/commerce/toc.json
+          href: install-pos-layout-designer.md
         - name: Extend the POS Dual display view
-          href: ../retail/dev-itpro/pos-dual-display-extension.md?toc=/dynamics365/commerce/toc.json
-        - name: Retail Modern POS and Cloud POS trigger extensibility
-          href: ../retail/dev-itpro/modern-pos-trigger-extensibility.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/pos-dual-display-extension.md
+        - name: Modern POS and Cloud POS trigger extensibility
+          href: dev-itpro/modern-pos-trigger-extensibility.md
         - name: Add custom controls to POS views
-          href: ../retail/dev-itpro/pos-custom-control.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/pos-custom-control.md
         - name: Add POS operations to POS layouts using Button grid designer
-          href: ../retail/dev-itpro/add-POS-operations.md  
-        - name: Retail POS APIs
-          href: ../retail/dev-itpro/POS-APIs.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/add-POS-operations.md  
+        - name: POS APIs
+          href: dev-itpro/POS-APIs.md
         - name: POS payment extension
-          href: ../retail/dev-itpro/pos-payment-extension.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/pos-payment-extension.md
         - name: Support for external gift cards
-          href: ../retail/dev-itpro/gift-card.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/gift-card.md
         - name: Create and apply branding to the Retail Experience app
-          href: ../retail/dev-itpro/create-retail-experience-app.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/create-retail-experience-app.md
         - name: Set up POS Hybrid app on Android and iOS
-          href: ../retail/dev-itpro/hybridApp.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/hybridApp.md
         - name: Override POS request handler
-          href: ../retail/dev-itpro/pos-handler.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/pos-handler.md
         - name: View POS extension package information
-          href: ../retail/dev-itpro/view-pos-extension-package-details.md?toc=/dynamics365/commerce/toc.json
-        - name: Test recorder and Regression suite automation tool for Retail Cloud POS
-          href: ../retail/dev-itpro/pos-rsat.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/view-pos-extension-package-details.md
+        - name: Test recorder and Regression suite automation tool for Cloud POS
+          href: dev-itpro/pos-rsat.md
         - name: Add custom fields to the POS Totals panel
-          href: ../retail/dev-itpro/custom-field-pos-totals.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/custom-field-pos-totals.md
         - name: Show custom notifications in POS
-          href: ../retail/dev-itpro/extend-pos-notification.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/extend-pos-notification.md
         - name: Sign MPOS with code signing certificate
-          href: ../retail/dev-itpro/pos-app-signing-certificate.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/pos-app-signing-certificate.md
         - name: Extend POS views to add custom columns and app bar buttons
-          href: ../retail/dev-itpro/pos-view-extension.md?toc=/dynamics365/commerce/toc.json
-        - name: Add custom controls to Retail Modern POS transaction pages
-          href: ../retail/dev-itpro/pos-custom-transaction.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/pos-view-extension.md
+        - name: Add custom controls to Modern POS transaction pages
+          href: dev-itpro/pos-custom-transaction.md
         - name: Add custom columns to a POS transaction grid
-          href: ../retail/dev-itpro/pos-custom-transaction-column.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/pos-custom-transaction-column.md
         - name: Call POS APIs or operations from POS extensions
-          href: ../retail/dev-itpro/pos-api-extension.md?toc=/dynamics365/commerce/toc.json
-        - name: Retail Modern POS triggers and printing
-          href: ../retail/dev-itpro/pos-trigger-printing.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/pos-api-extension.md
+        - name: Modern POS triggers and printing
+          href: dev-itpro/pos-trigger-printing.md
         - name: Add custom controls to non-screen designer-based POS views
-          href: ../retail/dev-itpro/pos-control-non-screen.md?toc=/dynamics365/commerce/toc.json
-        - name: Run the Retail POS samples
-          href: ../retail/dev-itpro/pos-run-samples.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/pos-control-non-screen.md
+        - name: Run the POS samples
+          href: dev-itpro/pos-run-samples.md
         - name: Device management implementation guidance
-          href: ../retail/implementation-considerations-devices.md?toc=/dynamics365/commerce/toc.json
+          href: implementation-considerations-devices.md
+        - name: POS Cart view events and handlers
+          href: dev-itpro/cart-view-handlers.md
       - name: Hardware Station extensibility
         items:
         - name: Hardware Station and extensibility
-          href: ../retail/dev-itpro/hardware-station-extensibility.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/hardware-station-extensibility.md
         - name: Integrate POS with a new hardware device
-          href: ../retail/dev-itpro/hardware-device-extension.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/hardware-device-extension.md
       - name: Retail Server extensibility
         items:
         - name: Extend a Retail Server OData controller
-          href: ../retail/dev-itpro/extend-retail-server-odata-controller.md?toc=/dynamics365/commerce/toc.json
-        - name: Create a Web API controller for Retail Server
-          href: ../retail/dev-itpro/odata-controllers-api.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/extend-retail-server-odata-controller.md
         - name: Retail Server customer and consumer APIs
-          href: ../retail/dev-itpro/retail-server-customer-consumer-api.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/retail-server-customer-consumer-api.md
         - name: Extend the default Retail Server metadata controller
-          href: ../retail/dev-itpro/extend-metadata.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/extend-metadata.md
         - name: Call the CRT service in offline mode
-          href: ../retail/dev-itpro/call-crt-service-offline.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/call-crt-service-offline.md
         - name: Create new Retail Server extension
-          href: ../retail/dev-itpro/retail-server-extension.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/retail-server-extension.md
         - name: Retail Typescript and C# proxies
-          href: ../retail/dev-itpro/typescript-proxy-retail-pos.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/typescript-proxy-retail-pos.md
       - name: Commerce Runtime (CRT) extensibility
         items:
         - name: CRT architecture and configuration
-          href: ../retail/dev-itpro/commerce-runtime-overview.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/commerce-runtime-overview.md
         - name: CRT services
-          href: ../retail/dev-itpro/crt-services.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/crt-services.md
         - name: CRT and Retail Server extensibility
-          href: ../retail/dev-itpro/commerce-runtime-extensibility.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/commerce-runtime-extensibility.md
         - name: Add customer preference data to channel databases
-          href: ../retail/dev-itpro/add-customer-preference-channel.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/add-customer-preference-channel.md
         - name: Manage secrets for Retail channels
-          href: ../retail/dev-itpro/manage-secrets.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/manage-secrets.md
         - name: Add properties to sales orders
-          href: ../retail/dev-itpro/add-properties-sales-order.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/add-properties-sales-order.md
         - name: CRT extensibility and triggers
-          href: ../retail/dev-itpro/commerce-runtime-extensibility-trigger.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/commerce-runtime-extensibility-trigger.md
         - name: Block transactions using triggers
-          href: ../retail/dev-itpro/trigger-example-blocking-transaction.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/trigger-example-blocking-transaction.md
         - name: Implement a return policy using triggers
-          href: ../retail/dev-itpro/trigger-example-return-policy.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/trigger-example-return-policy.md
         - name: Loyalty extension
-          href: ../retail/dev-itpro/retail-sdk/loyalty-extension-sample.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/retail-sdk/loyalty-extension-sample.md
         - name: Extension points for packing slips
-          href: ../retail/dev-itpro/extensions-shipping-carrier-integration.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/extensions-shipping-carrier-integration.md
         - name: Channel database extensions
-          href: ../retail/dev-itpro/channel-db-extensions.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/channel-db-extensions.md
         - name: Enable custom CDX synchronization via extension
-          href: ../retail/dev-itpro/cdx-extensibility.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/cdx-extensibility.md
         - name: Define and set order attributes
-          href: ../retail/dev-itpro/order-attributes.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/order-attributes.md
         - name: Customer attributes
-          href: ../retail/dev-itpro/customer-attributes.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/customer-attributes.md
         - name: CRT SDK samples
-          href: ../retail/dev-itpro/retail-sdk/retail-sdk-samples.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/retail-sdk/retail-sdk-samples.md
         - name: Log extension events to Application Insights
-          href: ../retail/dev-itpro/commerce-application-insights.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/commerce-application-insights.md
+        - name: Create async Commerce (CRT) APIs in your business logic
+          href: dev-itpro/async-commerce-extension.md
       - name: Payment connector extensibility
         items:
         - name: Create a payment integration for a payment terminal
-          href: ../retail/dev-itpro/end-to-end-payment-extension.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/end-to-end-payment-extension.md
         - name: Implementing a payment connector and payment device (white paper)
           href: https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The Guide to Implementing Payment Connector and Payment Device_update.pdf
         - name: Deploy payment connectors
-          href: ../retail/dev-itpro/deploy-payment-connector.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/deploy-payment-connector.md
         - name: Create custom localized error messages for payment terminal extensions
-          href: ../retail/dev-itpro/payment-custom-error-messages.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/payment-custom-error-messages.md
         - name: Create Windows installers for payment connectors
-          href: ../retail/dev-itpro/create-windows-installer-payment-connector.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/create-windows-installer-payment-connector.md
         - name: Payment data use
-          href: ../retail/payment-connector-data-fields.md?toc=/dynamics365/commerce/toc.json
+          href: payment-connector-data-fields.md
         - name: Enable duplicate payment protection for payment connector
-          href: ../retail/dev-itpro/duplicate-payment-protection.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/duplicate-payment-protection.md
+        - name: Create payment packaging for Application Explorer in Service Fabric deployments
+          href: dev-itpro/payment-connector-package.md
       - name: Third-party e-Commerce extensibility
         items:
         - name: Configure online stores
-          href: ../retail/dev-itpro/configure-online-store.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/configure-online-store.md
         - name: Configure authentication providers
-          href: ../retail/dev-itpro/configure-authentication-providers.md?toc=/dynamics365/commerce/toc.json
-        - name: e-Commerce platform
-          href: ../retail/dev-itpro/ecommerce-platform.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/configure-authentication-providers.md
         - name: e-Commerce platform SDK
-          href: ../retail/dev-itpro/ecommerce-platform-sdk.md?toc=/dynamics365/commerce/toc.json
-      - name: Localize Retail extension resources and label files
-        href: ../retail/dev-itpro/extension-resource-localization.md?toc=/dynamics365/commerce/toc.json
+          href: dev-itpro/ecommerce-platform-sdk.md
+      - name: Localize Commerce extension resources and label files
+        href: dev-itpro/extension-resource-localization.md
   - name: Finance and Operations apps development and administration 
     href: ../fin-ops-core/dev-itpro/index.md
-  - name: Dynamics 365 Retail
-    href: ../retail/index.md
   - name: Dynamics 365 Finance
     href: ../finance/index.md
   - name: Dynamics 365 Supply Chain Management 

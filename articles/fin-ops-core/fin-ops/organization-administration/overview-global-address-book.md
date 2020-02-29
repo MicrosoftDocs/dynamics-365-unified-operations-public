@@ -3,7 +3,7 @@
 
 title: Global address book overview
 description: The global address book can help you understand the relationships among people and organizations that are associated with your organization. For example, a customer may also be a vendor in a marketing campaign, or a worker in your organization may also be a vendor.
-author: ShivamPandey-msft
+author: msftbrking
 manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 23521
 ms.assetid: bb6c02fa-cd91-4ca8-a58c-020502b19074
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shpandey
+ms.author: brking
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

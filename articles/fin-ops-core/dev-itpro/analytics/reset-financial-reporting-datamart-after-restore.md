@@ -33,34 +33,28 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to reset the Financial reporting data mart for the following versions of Microsoft Dynamics 365 Finance:
+This topic explains how to reset the Financial reporting data mart for Microsoft Dynamics 365 Finance. The data mart can be reset in multiple ways, depending on the user's role and access to the client or infrastructure.
 
-- Financial reporting release 7.2.6.0 and later
-- Financial reporting release 7.0.10000.4 and later
-- Microsoft Dynamics 365 Finance + Operations (on-premises) 
+In specific scenarios, you might have to reset the data mart for Financial reporting. Here are some examples:
 
-To get Financial reporting release 7.2.6.0, you can download KB 4052514 from <https://fix.lcs.dynamics.com/Issue/Resolved?kb=4052514>.
+- The application database was restored, but the data mart database wasn't restored.
+- You see incorrect data for a period, and you've determined that the issue isn't a report design issue.
+- You see incorrect data for a period, and records appear under integration attempts on Report designer integration status page (start the Report designer and select **Tools** > **Integration status**).
+- Support instructs you to reset the data mart as part of a troubleshooting step.
 
-## Reset the Financial reporting data mart for Financial reporting release 7.2.6.0 and later
+You should reset the data mart only when a small amount of processing is occurring on the database. Financial reporting will be unavailable during the reset process.
+
+> [!NOTE]
+> A reset of the data mart doesn't affect any report definitions that define the structure of reports. Nevertheless, it's always a good idea to have a backup of your reports. For information about how to back up report definitions, see the note at the end of this topic.
 
 ### Reset the Financial reporting data mart from Report designer
 
 > [!NOTE]
-> The steps in this process are supported for Financial reporting release 7.2.6.0 and later. If you have an earlier release, contact the Support team for assistance.
+> The steps in this process are supported for Financial reporting release 7.2.6.0 and later.
 
 To find the version of report designer, watch this video: [How to find the version of Report designer](https://www.youtube.com/watch?v=icfA5Q3kp4w)
 
-In specific scenarios, you might have to reset the data mart for Financial reporting. You can complete this task in the Report designer client. Here are some scenarios where you might have to reset the data mart:
-
-- The application database was restored, but the data mart database wasn't restored.
-- You see incorrect data for a period.
-- Support instructs you to reset the data mart as part of a troubleshooting step.
-
-The data mart reset should be done only during times when the amount of processing on the database is small. Financial reporting will be unavailable during the reset process.
-
-#### Reset the data mart
-
-To reset the data mart, in Report designer, on the **Tools** menu, select **Reset Data Mart**. The dialog box that appears has two sections: **Statistics** and **Reset**.
+To reset the data mart, in Report designer, on the **Tools** menu, select **Reset Data Mart** as shown in the following illustration. The dialog box that appears has two sections: **Statistics** and **Reset**.
 
 [![Reset Data Mart dialog box](./media/Reset-72.jpg)](./media/Reset-72.jpg)
 
@@ -70,19 +64,13 @@ The **Integration attempts** grid shows how many times the system has tried to i
 
 ##### Data status
 
-The **Data status** grid provides a snapshot of the transactions, exchange rates, and dimension values in the data mart. A large number of stale records indicates that numerous updates to the records have occurred. This situation might cause slower report generation times.
+The **Data status** grid provides a snapshot of the transactions, exchange rates, and dimension values in the data mart. A large number of stale records indicates that numerous updates to the records have occurred. This situation might increase the time that is required to generate reports.
 
 ##### Misaligned main account categories
 
 If you're using a release that is earlier than Financial reporting release 7.2.1, you might have to reset the data mart if you rename accounts and move accounts between account categories. These actions can cause main account categories to become misaligned. The **Misaligned main account categories** field shows whether you're experiencing that issue.
 
-### Reset the data mart in Financial reporting release 7.2.6.0
-
-To reset the data mart in Financial reporting release 7.2.6.0 and earlier, in the **Reset Data Mart** dialog box, select the **Reset data mart** check box, and then select **OK**. You should reset the data mart only during scheduled downtime.
-
-[![Reset data mart check box](./media/Reset-72.jpg)](./media/Reset-72.jpg)
-
-### Reset the data mart and select a reason in Financial reporting release 7.3.0
+### Reset the data mart and select a reason
 
 If you determine that a data mart reset is required, select the **Reset data mart** check box, and then select a reason in the **Reason** field. The following options are available:
 
@@ -97,7 +85,7 @@ If you determine that a data mart reset is required, select the **Reset data mar
 
 #### Clear users and companies
 
-Select the **Clear users and companies** check box if you restored your database, but you then made changes to users or companies. You should rarely have to select this check box.
+Select the **Clear users and companies** check box if you restored your database, but then changed users or companies. You should rarely have to select this check box.
 
 When you're ready to start the reset process, select **OK**. You're prompted to confirm that you're ready to start the process. Note that Financial reporting won't be available during the reset and the initial data integration that occurs afterward.
 
@@ -106,49 +94,22 @@ If you want to review the status of the integration, select **Tools** &gt; **Int
 [![View the status of the integration](./media/New-integration.PNG)](./media/New-integration.PNG)
 
 > [!NOTE]
-> The reset is finished when all mappings show the status of RanToCompletion and the Integration Status window says "Integration complete" in the bottom-left corner.
+> The reset is finished when all mappings show a status of **RanToCompletion**, and an "Integration complete" message appears in the lower-left corner of the **Integration Status** dialog box.
 
-## Reset the Financial reporting data mart for Financial reporting release 7.0.10000.4 and later
+## Reset the Financial reporting data mart through Windows PowerShell
 
 If you ever restore your database from a backup or copy the database from another environment, you must follow the steps in this section to help guarantee that the Financial reporting data mart correctly uses the restored database.
 
 > [!NOTE]
-> The steps in this process are supported for Microsoft Dynamics AX application version 7.0.1 (May 2016) (application build 7.0.1265.23014 and Financial reporting build 7.0.10000.4) and later. If you have an earlier version, contact Support for assistance.
-
-### Export report definitions
-
-First, follow these steps to export the report designs from Report designer.
-
-1. In Report designer, select **Company** &gt; **Building Block Groups**.
-2. Select the building block group to export, and then select **Export**.
-
-    > [!NOTE]
-    > For Finance and Operations, only one building block group is supported, **Default**.
-
-3. Select the report definitions to export:
-
-    - To export all your report definitions and the associated building blocks, select **Select All**.
-    - To export specific reports, rows, columns, trees, or dimension sets, select the appropriate tab, and then select the items to export. Press and hold the Ctrl key to select multiple items on a tab. When you select reports to export, the associated rows, columns, trees, and dimension sets are selected.
-
-4. Select **Export**.
-5. Enter a file name, and select a secure location where you want to save the exported report definitions.
-6. Select **Save**.
-
-You can copy or upload the file to a secure location. In this way, the file can be imported into a different environment later. For information about how to use a Microsoft Azure storage account, see [Transfer data with the AzCopy Command-Line Utility](/azure/storage/storage-use-azcopy).
-
-> [!NOTE]
-> Microsoft doesn't provide a storage account as part of your Finance and Operations agreement. You must either purchase a storage account or use a storage account from a separate Azure subscription.
-
-> [!WARNING]
-> Be aware of the behavior of drive D on Azure virtual machines (VMs). Don't permanently store your exported building block groups on drive D. For more information about temporary drives, see [Understanding the temporary drive on Windows Azure Virtual Machines](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
+> The steps in this process are supported for Microsoft Dynamics 365 Finance application version 7.0.1 (May 2016) (application build 7.0.1265.23014 and Financial reporting build 7.0.10000.4) and later. If you have an earlier version, contact Support for assistance.
 
 ### Stop services
 
 The following Microsoft Windows services will have open connections to the Finance and Operations database. Therefore, you must use Microsoft Remote Desktop to connect to all the computers in the environment and then use services.msc to stop these services.
 
-- World wide web publishing service (on all Application Object Servers [AOS] computers)
+- World wide web publishing service (on all Application Object Servers \[AOS\] computers)
 - Batch Management Service (on non-private AOS computers only)
-- Management Reporter 2012 Process Service (on Business intelligence [BI] computers only)
+- Management Reporter 2012 Process Service (on Business intelligence \[BI\] computers only)
 
 ### Reset
 
@@ -156,9 +117,9 @@ The following Microsoft Windows services will have open connections to the Finan
 
 Download the latest MinorVersionDataUpgrade.zip package. For instructions about how to find and download the correct version of the data upgrade package, see the section [Upgrade data in development or demo environments](../migration-upgrade/upgrade-data-to-latest-update.md#select-the-correct-data-upgrade-deployable-package) in the Upgrade data in development, demo, or sandbox environments topic.
 
-An upgrade isn't required in order to download the MinorVersionDataUpgrade.zip package. Therefore, you just have follow the steps in the "Download the latest data upgrade deployable package" section of that topic. You can skip all the other steps in the topic.
+An upgrade isn't required in order to download the MinorVersionDataUpgrade.zip package. Therefore, you just have to follow the steps in the "Download the latest data upgrade deployable package" section of that topic. You can skip all the other steps in the topic.
 
-#### Run scripts against the database
+#### Run prerequisite SQL scripts against the database
 
 Run the following scripts against the database (not against the Financial reporting database):
 
@@ -167,11 +128,11 @@ Run the following scripts against the database (not against the Financial report
 
 These scripts help guarantee that the users, roles, and change tracking settings are correct.
 
-#### Run a Windows PowerShell command to reset the database
+#### Run a Windows PowerShell script to reset the database
 
 On the AOS computer, start Microsoft Windows PowerShell as an administrator, and run the following commands to reset the integration between application and Financial reporting.
 
-```
+```powershell
 F:
 cd F:\MRApplicationService\MRInstallDirectory
 Import-Module .\Server\MRDeploy\MRDeploy.psd1
@@ -179,7 +140,7 @@ Reset-DatamartIntegration -Reason OTHER -ReasonDetail "<reason for resetting>" -
 ```
 
 > [!NOTE]
-> - SkipMRTableReset preserves tree unit security if you are using it.
+> - SkipMRTableReset preserves tree unit security if you're using it.
 > - If you get an error that a parameter cannot be found that matches SkipMRTableReset, you can remove the parameter and try again (later versions have updated the default behavior to include this switch).
 
 Here is an explanation of the parameters in the **Reset-DatamartIntegration** command:
@@ -199,31 +160,48 @@ Use services.msc to restart the services that you stopped earlier:
 - Batch Management Service (on non-private AOS computers only)
 - Management Reporter 2012 Process Service (on BI computers only)
 
-#### Import report definitions
+## Reset the Financial reporting data mart for Dynamics 365 Finance + Operations (on-premises) through SQL Server Management Studio
 
-Import your report designs from Report designer by using the file that was created during the export.
-
-1. In Report designer, select **Company** &gt; **Building Block Groups**.
-2. Select the building block group to export, and then select **Export**.
-
-    > [!NOTE]
-    > Only one building block group is supported, **Default**.
-
-3. Select the **Default** building block, and then select **Import**.
-4. Select the file that contains the exported report definitions, and then select **Open**.
-5. In the **Import** dialog box, select the report definitions to import:
-
-    - To import all the report definitions and the associated building blocks, select **Select All**.
-    - To import specific reports, rows, columns, trees, or dimension sets, select the reports, rows, columns, trees, or dimension sets to import.
-
-6. Select **Import**.
-
-## Reset the Financial reporting data mart for Dynamics 365 Finance + Operations (on-premises) 
-
-1. Instruct all users to exit Report designer and the Financial reporting area.
+1. Instruct all users to close Report designer and exit the Financial reporting area.
 2. Run the following script against the Financial reporting database (MRDB).
 
-    ```
+    ```sql
+    ------------------------------------------------------------------------------------------
+    ---- Set service into disabled mode
+    ------------------------------------------------------------------------------------------
+
+    --setup for servicing mode
+    BEGIN TRANSACTION
+    IF NOT EXISTS(SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME = 'Servicing')
+    BEGIN 
+        EXEC ('CREATE SCHEMA Servicing') 
+    END
+
+    IF (DATABASE_PRINCIPAL_ID('GeneralUser') IS NULL)
+    BEGIN
+        CREATE ROLE [GeneralUser] AUTHORIZATION [dbo];
+    END
+    ALTER AUTHORIZATION ON SCHEMA::Servicing TO [GeneralUser]
+
+    IF NOT EXISTS(SELECT NAME FROM SYS.TABLES WHERE Name = 'ServicingLock')
+    BEGIN 
+        CREATE TABLE [Servicing].[ServicingLock] ([Name] nvarchar(255) not null, [Value] int not null, [LastServiceTimestamp] datetime      null)
+    END
+
+    IF NOT EXISTS(SELECT 1 FROM [Servicing].[ServicingLock])
+    BEGIN 
+        INSERT INTO [Servicing].[ServicingLock] (Name, Value) VALUES ('ServicingLockMode', 0)
+    END
+    COMMIT TRANSACTION
+
+    --Enable servicing mode
+    IF EXISTS(SELECT TOP 1 1 FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = 'Scheduling' COLLATE DATABASE_DEFAULT AND TABLE_NAME = 'SchedulerRegister' COLLATE DATABASE_DEFAULT AND COLUMN_NAME = 'ServicingMode' COLLATE DATABASE_DEFAULT)
+    BEGIN		
+       UPDATE Scheduling.SchedulerRegister SET ServicingMode = 1 WHERE ServicingMode = 0		
+       UPDATE [Servicing].[ServicingLock] SET Name = 'SchedulerServicingMode', Value = 1, LastServiceTimestamp = GETUTCDATE() WHERE Value = 0
+    END
+
+    --Disable maps
     DECLARE @triggerIds table(id uniqueidentifier, taskTypeId uniqueidentifier)
     INSERT INTO @triggerIds SELECT tr.[Id], tt.[Id]
     FROM [Scheduling].[Task] t with(nolock)
@@ -240,44 +218,81 @@ Import your report designs from Report designer by using the file that was creat
 4. Truncate or delete all records from the FINANCIALREPORTVERSION table, if this table exists in the database. If the table doesn't exist in the database, skip this step.
 5. Run the **ResetDatamart.sql** script against the Financial reporting database. This script disables the data mart integration, deletes all the data mart data, and then reenables the data mart integration.
 
-    ```
-    DECLARE @triggerIds table(id uniqueidentifier, taskTypeId uniqueidentifier)
-    INSERT INTO @triggerIds SELECT tr.[Id], tt.[Id]
-    FROM [Scheduling].[Task] t with(nolock)
-    JOIN [Scheduling].[Trigger] tr ON t.[TriggerId] = tr.[Id]
-    JOIN [Scheduling].[TaskState] ts ON ts.[TaskId] = t.[Id]
-    LEFT JOIN [Scheduling].[TaskCategory] tc ON tc.[Id] = t.[CategoryId]
-    JOIN [Scheduling].[TaskType] tt ON t.[TypeId] = tt.[Id]
-    WHERE tt.[Id] IN ('D81C1197-D486-4FB7-AF8C-078C110893A0', '55D3F71A-2618-4EAE-9AA6-D48767B974D8') -- 'Maintenance Task', 'Map Task'
-    PRINT 'Disable integration tasks'
-    UPDATE [Scheduling].[Trigger] SET IsEnabled = 0 WHERE [Id] in (SELECT id FROM @triggerIds)
+    ```sql
+    ------------------------------
+    PRINT 'Save and Drop Indexes Of FactAttributeValue and DimensionValueAttributeValue'
+    ------------------------------
+
+    IF EXISTS(SELECT 1 FROM sys.procedures WHERE object_id = OBJECT_ID('[Datamart].[SaveAndDropAttributeValueIndexes]'))
+    BEGIN
+        IF (NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'Datamart' AND  TABLE_NAME = 'AttributeValueIndexesBackUp'))
+        BEGIN
+            --create table to store indexes
+            -- Indexes of different table can have same index_id, but we need unique index id
+            Create table [Datamart].[AttributeValueIndexesBackUp]
+            (
+                IndexID INT not null IDENTITY(1,1) PRIMARY KEY,
+                IndexName NVARCHAR(255),
+                IsUnique BIT,
+                IndexType NVARCHAR(60),
+                FilterDefinition NVARCHAR(max),
+                KeyColumns NVARCHAR(max),
+                IncludedColumns NVARCHAR(max),
+                IndexRetry INT,
+                IndexStatus NVARCHAR(60),
+                AttributeType INT,
+            )
+        END
+
+        --truncate table to increase index drop performance
+        PRINT('TRUNCATE TABLE [Datamart].[FactAttributeValue]')
+        EXEC('TRUNCATE TABLE [Datamart].[FactAttributeValue]')
+        EXEC [Datamart].[SaveAndDropAttributeValueIndexes] 'FACTID','[Datamart].[FactAttributeValue]'
+
+        --truncate table to increase index drop performance
+        PRINT('TRUNCATE TABLE [Datamart].[DimensionValueAttributeValue]')
+        EXEC('TRUNCATE TABLE [Datamart].[DimensionValueAttributeValue]')
+        EXEC [Datamart].[SaveAndDropAttributeValueIndexes] 'DIMENSIONVALUEID','[Datamart].[DimensionValueAttributeValue]'
+    End
+
     ------------------------------
     PRINT 'Drop archive tables'
     ------------------------------
-    DECLARE @tableId nvarchar(max)
+    DECLARE @stagingTableName nvarchar(max)
     DECLARE dropCursor CURSOR LOCAL FAST_FORWARD FOR
-    SELECT Id FROM [Datamart].Archive
+    SELECT t.TABLE_NAME as TableName
+    FROM INFORMATION_SCHEMA.TABLES t WITH (NOLOCK)
+    WHERE t.TABLE_SCHEMA = 'Datamart' and (t.TABLE_NAME like 'FactStaging[0-9]%' or t.TABLE_NAME like 'DimensionCombinationStaging[0-9]%')
     OPEN dropCursor
-    FETCH NEXT FROM dropCursor INTO @tableId
+    FETCH NEXT FROM dropCursor INTO @stagingTableName
     WHILE @@FETCH_STATUS = 0
     BEGIN
-        IF EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES t WHERE t.TABLE_NAME = 'FactStaging' + @tableId and t.TABLE_SCHEMA = 'Datamart')
-        EXEC('DROP TABLE [Datamart].FactStaging' + @tableId)
-        IF EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES t WHERE t.TABLE_NAME = 'DimensionCombinationStaging' + @tableId and t.TABLE_SCHEMA = 'Datamart')
-        EXEC('DROP TABLE [Datamart].DimensionCombinationStaging' + @tableId)
-        FETCH NEXT FROM dropCursor INTO @tableId
+        EXEC('DROP TABLE IF EXISTS [Datamart].' + @stagingTableName)
+        FETCH NEXT FROM dropCursor INTO @stagingTableName
     END
     CLOSE dropCursor
     DEALLOCATE dropCursor
-    IF EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES t WHERE t.TABLE_NAME = 'DimensionCombinationProcessing' and t.TABLE_SCHEMA = 'Datamart')
-        EXEC('DROP TABLE [Datamart].DimensionCombinationProcessing')
+
+    ------------------------------
+    PRINT 'Dropping tables with dynamic columns'
+    ------------------------------
+    DROP TABLE IF EXISTS [Datamart].DimensionCombinationProcessing
+    DROP TABLE IF EXISTS [Datamart].DimensionCombination
+    DROP TABLE IF EXISTS [Datamart].DimensionCombinationResolving
+    DROP TABLE IF EXISTS [Datamart].DimensionCombinationStaging
+    DROP TABLE IF EXISTS [Datamart].DimensionCombinationUnreferenced
+    DROP TABLE IF EXISTS [Datamart].DimensionValueAttributeValue
+    DROP TABLE IF EXISTS [Datamart].FactAttributeValue
+    DROP TABLE IF EXISTS [Datamart].TranslatedPeriodBalance
+    DROP TABLE IF EXISTS [Datamart].TranslatedPeriodBalanceChanges
+
     ------------------------------
     PRINT 'Begin Truncating tables'
     ------------------------------
     DECLARE @tablename nvarchar(200)
     DECLARE @schemaname nvarchar(200)
     DECLARE clear_tables CURSOR
-        FOR SELECT TABLE_NAME, TABLE_SCHEMA FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'Datamart' AND TABLE_TYPE='BASE TABLE'
+    FOR SELECT TABLE_NAME, TABLE_SCHEMA FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'Datamart' AND TABLE_TYPE='BASE TABLE'
     PRINT 'remove check constraints'
     OPEN clear_tables
     FETCH NEXT FROM clear_tables INTO @tablename, @schemaname
@@ -285,11 +300,12 @@ Import your report designs from Report designer by using the file that was creat
     BEGIN
         IF @tablename <> 'VersionHistory'
         BEGIN
-        EXEC('ALTER TABLE [' + @schemaname + '].[' + @tablename + '] NOCHECK CONSTRAINT ALL')
+            EXEC('ALTER TABLE [' + @schemaname + '].[' + @tablename + '] NOCHECK CONSTRAINT ALL')
         END
         FETCH NEXT FROM clear_tables INTO @tablename, @schemaname
     END
     CLOSE clear_tables
+
     ------------------------------
     PRINT 'delete data from tables and rebuild indexes'
     ------------------------------
@@ -297,28 +313,29 @@ Import your report designs from Report designer by using the file that was creat
     FETCH NEXT FROM clear_tables INTO @tablename, @schemaname
     WHILE @@FETCH_STATUS = 0
     BEGIN
-        IF @tablename <> 'VersionHistory'
+        IF @tablename <> 'VersionHistory' and @tablename <> 'AttributeValueIndexesBackUp'
         BEGIN
             IF(EXISTS (select TOP 1 1 from sys.foreign_keys where referenced_object_id = OBJECT_ID(@schemaname + '.' + @tablename)) OR
-            EXISTS(SELECT TOP 1 1 FROM sys.sql_expression_dependencies sed
-            INNER JOIN sys.objects o ON sed.referencing_id = o.[object_id]
-            WHERE o.[type] = 'V' 
-            AND referenced_schema_name = @schemaname
-            AND referenced_entity_name = @tablename))
+                EXISTS(SELECT TOP 1 1 FROM sys.sql_expression_dependencies sed
+                INNER JOIN sys.objects o ON sed.referencing_id = o.[object_id]
+                WHERE o.[type] = 'V'
+                AND referenced_schema_name = @schemaname
+                AND referenced_entity_name = @tablename))
             BEGIN
-            PRINT 'deleting from ' + @tablename
-            EXEC('DELETE FROM [' + @schemaname + '].[' + @tablename + ']')
+                PRINT 'deleting from ' + @tablename
+                EXEC('DELETE FROM [' + @schemaname + '].[' + @tablename + ']')
             END
             ELSE
             BEGIN
-            PRINT 'truncating from ' + @tablename
-            EXEC('TRUNCATE TABLE [' + @schemaname + '].[' + @tablename + ']')
+                PRINT 'truncating from ' + @tablename
+                EXEC('TRUNCATE TABLE [' + @schemaname + '].[' + @tablename + ']')
             END
         END
         EXEC('ALTER INDEX ALL ON [' + @schemaname + '].[' + @tablename + '] REBUILD')
         FETCH NEXT FROM clear_tables INTO @tablename, @schemaname
     END
     CLOSE clear_tables
+
     ------------------------------
     PRINT 'reenable check constraints'
     ------------------------------
@@ -328,7 +345,7 @@ Import your report designs from Report designer by using the file that was creat
     BEGIN
         IF @tablename <> 'VersionHistory'
         BEGIN
-        EXEC('ALTER TABLE [' + @schemaname + '].[' + @tablename +'] WITH CHECK CHECK CONSTRAINT ALL')
+            EXEC('ALTER TABLE [' + @schemaname + '].[' + @tablename +'] WITH CHECK CHECK CONSTRAINT ALL')
         END
         FETCH NEXT FROM clear_tables INTO @tablename, @schemaname
     END
@@ -337,191 +354,207 @@ Import your report designs from Report designer by using the file that was creat
     ------------------------------
     PRINT 'Complete Truncating tables'
     ------------------------------
-    ------------------------------
-    PRINT 'Remove indexes from DimensionCombination'
-    ------------------------------
-    DECLARE @indexname nvarchar(200)
-    DECLARE drop_indexes CURSOR
-    FOR SELECT Name FROM sys.indexes WHERE object_id = OBJECT_ID('[Datamart].[DimensionCombination]') AND is_primary_key = 0
-    OPEN drop_indexes
-    FETCH NEXT FROM drop_indexes INTO @indexname
-    WHILE @@FETCH_STATUS = 0
-    BEGIN
-        EXEC('DROP INDEX [' + @indexname + '] on [Datamart].[DimensionCombination]')
-        FETCH NEXT FROM drop_indexes INTO @indexname
-    END
-    CLOSE drop_indexes
-    DEALLOCATE drop_indexes
-    ------------------------------
-    PRINT 'Drop Columns on DimensionCombination'
-    ------------------------------
-    DECLARE @objectname nvarchar(200)
-    DECLARE drop_objects CURSOR
-    FOR SELECT Name FROM sys.columns WHERE object_id = OBJECT_ID('[Datamart].[DimensionCombination]')
-    OPEN drop_objects
-    FETCH NEXT FROM drop_objects INTO @objectname
-    WHILE @@FETCH_STATUS = 0
-    BEGIN
-        IF @objectname NOT IN ('Id', 'Description', 'SourceKey', 'OrganizationId', 'InactiveDimensions')
+
+    -- Rebuild the tables with dynamic columns
+    IF EXISTS(SELECT 1 FROM sys.procedures WHERE object_id = OBJECT_ID('[Datamart].[AddDynamicTables]'))
         BEGIN
-        EXEC('ALTER TABLE [Datamart].[DimensionCombination] DROP COLUMN ' + @objectname)
+            EXEC [Datamart].AddDynamicTables
         END
-        FETCH NEXT FROM drop_objects INTO @objectname
-    END
-    CLOSE drop_objects
-    DEALLOCATE drop_objects
-    ------------------------------
-    PRINT 'Drop Columns on DimensionCombinationResolving'
-    ------------------------------
-    DECLARE drop_objects CURSOR
-    FOR SELECT Name FROM sys.columns WHERE object_id = OBJECT_ID('[Datamart].[DimensionCombinationResolving]')
-    OPEN drop_objects
-    FETCH NEXT FROM drop_objects INTO @objectname
-    WHILE @@FETCH_STATUS = 0
-    BEGIN
-        IF @objectname NOT IN ('Id', 'Description', 'SourceKey', 'OrganizationId')
+    ELSE
         BEGIN
-        EXEC('ALTER TABLE [Datamart].[DimensionCombinationResolving] DROP COLUMN ' + @objectname)
-        END
-        FETCH NEXT FROM drop_objects INTO @objectname
-    END
-    CLOSE drop_objects
-    DEALLOCATE drop_objects
-    ------------------------------
-    PRINT 'Drop Columns on DimensionCombinationStaging'
-    ------------------------------
-    DECLARE drop_objects CURSOR
-    FOR SELECT Name FROM sys.columns WHERE object_id = OBJECT_ID('[Datamart].[DimensionCombinationStaging]')
-    OPEN drop_objects
-    FETCH NEXT FROM drop_objects INTO @objectname
-    WHILE @@FETCH_STATUS = 0
-    BEGIN
-        IF @objectname NOT IN ('Id', 'OrganizationId', 'Description', 'SourceKey', 'OrganizationKey', 'FreshnessDate')
-        BEGIN
-        EXEC('ALTER TABLE [Datamart].[DimensionCombinationStaging] DROP COLUMN ' + @objectname)
-        END
-        FETCH NEXT FROM drop_objects INTO @objectname
-    END
-    CLOSE drop_objects
-    DEALLOCATE drop_objects
-    ------------------------------
-    PRINT 'Drop Columns on DimensionCombinationUnreferenced'
-    ------------------------------
-    DECLARE drop_objects CURSOR
-    FOR SELECT Name FROM sys.columns WHERE object_id = OBJECT_ID('[Datamart].[DimensionCombinationUnreferenced]')
-    OPEN drop_objects
-    FETCH NEXT FROM drop_objects INTO @objectname
-    WHILE @@FETCH_STATUS = 0
-    BEGIN
-        IF @objectname NOT IN ('Id', 'Description', 'SourceKey', 'OrganizationId')
-        BEGIN
-        EXEC('ALTER TABLE [Datamart].[DimensionCombinationUnreferenced] DROP COLUMN ' + @objectname)
-        END
-        FETCH NEXT FROM drop_objects INTO @objectname
-    END
-    CLOSE drop_objects
-    DEALLOCATE drop_objects
-    ------------------------------
-    PRINT 'Drop Columns on DimensionValueAttributeValue'
-    ------------------------------
-    DECLARE drop_objects CURSOR
-    FOR SELECT Name FROM sys.columns WHERE object_id = OBJECT_ID('[Datamart].[DimensionValueAttributeValue]')
-    OPEN drop_objects
-    FETCH NEXT FROM drop_objects INTO @objectname
-    WHILE @@FETCH_STATUS = 0
-    BEGIN
-        IF @objectname NOT IN ('DimensionValueId')
-        BEGIN
-        EXEC('ALTER TABLE [Datamart].[DimensionValueAttributeValue] DROP COLUMN ' + @objectname)
-        END
-        FETCH NEXT FROM drop_objects INTO @objectname
-    END
-    CLOSE drop_objects
-    DEALLOCATE drop_objects
-    ------------------------------
-    PRINT 'Drop Columns on FactAttributeValue'
-    ------------------------------
-    DECLARE drop_objects CURSOR
-    FOR SELECT Name FROM sys.columns WHERE object_id = OBJECT_ID('[Datamart].[FactAttributeValue]')
-    OPEN drop_objects
-    FETCH NEXT FROM drop_objects INTO @objectname
-    WHILE @@FETCH_STATUS = 0
-    BEGIN
-        IF @objectname NOT IN ('FactId')
-        BEGIN
-        EXEC('ALTER TABLE [Datamart].[FactAttributeValue] DROP COLUMN ' + @objectname)
-        END
-        FETCH NEXT FROM drop_objects INTO @objectname
-    END
-    CLOSE drop_objects
-    DEALLOCATE drop_objects
-    ------------------------------
-    PRINT 'Remove constraints from TranslatedPeriodBalance'
-    ------------------------------
-    DECLARE @name nvarchar(200)
-    DECLARE drop_constraints CURSOR
-    FOR SELECT Name FROM sys.default_constraints WHERE parent_object_id = OBJECT_ID('[Datamart].[TranslatedPeriodBalance]')
-    OPEN drop_constraints
-    FETCH NEXT FROM drop_constraints INTO @name
-    WHILE @@FETCH_STATUS = 0
-    BEGIN
-        EXEC('ALTER TABLE [Datamart].[TranslatedPeriodBalance] DROP CONSTRAINT [' + @name + ']')
-        FETCH NEXT FROM drop_constraints INTO @name
-    END
-    CLOSE drop_constraints
-    DEALLOCATE drop_constraints
-    ------------------------------
-    PRINT 'Drop Columns on TranslatedPeriodBalance'
-    ------------------------------
-    DECLARE drop_objects CURSOR
-    FOR SELECT Name FROM sys.columns WHERE object_id = OBJECT_ID('[Datamart].[TranslatedPeriodBalance]')
-    OPEN drop_objects
-    FETCH NEXT FROM drop_objects INTO @objectname
-    WHILE @@FETCH_STATUS = 0
-    BEGIN
-        IF @objectname NOT IN ('PeriodId', 'DimensionsId', 'ScenarioId', 'FactType', 'PostingLayerId')
-        BEGIN
-        EXEC('ALTER TABLE [Datamart].[TranslatedPeriodBalance] DROP COLUMN ' + @objectname)
-        END
-        FETCH NEXT FROM drop_objects INTO @objectname
-    END
-    CLOSE drop_objects
-    DEALLOCATE drop_objects
-    ------------------------------
-    PRINT 'Remove constraints from TranslatedPeriodBalanceChanges'
-    ------------------------------
-    DECLARE drop_constraints CURSOR
-    FOR SELECT Name FROM sys.default_constraints WHERE parent_object_id = OBJECT_ID('[Datamart].[TranslatedPeriodBalanceChanges]')
-    OPEN drop_constraints
-    FETCH NEXT FROM drop_constraints INTO @name
-    WHILE @@FETCH_STATUS = 0
-    BEGIN
-        EXEC('ALTER TABLE [Datamart].[TranslatedPeriodBalanceChanges] DROP CONSTRAINT [' + @name + ']')
-        FETCH NEXT FROM drop_constraints INTO @name
-    END
-    CLOSE drop_constraints
-    DEALLOCATE drop_constraints
-    ------------------------------
-    PRINT 'Drop Columns on TranslatedPeriodBalanceChanges'
-    ------------------------------
-    DECLARE drop_objects CURSOR
-    FOR SELECT Name FROM sys.columns WHERE object_id = OBJECT_ID('[Datamart].[TranslatedPeriodBalanceChanges]')
-    OPEN drop_objects
-    FETCH NEXT FROM drop_objects INTO @objectname
-    WHILE @@FETCH_STATUS = 0
-    BEGIN
-        IF @objectname NOT IN ('PeriodId', 'DimensionsId', 'ScenarioId', 'FactType', 'PostingLayerId')
-        BEGIN
-        EXEC('ALTER TABLE [Datamart].[TranslatedPeriodBalanceChanges] DROP COLUMN ' + @objectname)
-        END
-        FETCH NEXT FROM drop_objects INTO @objectname
-    END
-    CLOSE drop_objects
-    DEALLOCATE drop_objects
+            ---- Basically a copy of sproc AddDynamicTables
+            IF NOT EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE ='BASE TABLE' AND TABLE_NAME = 'DimensionCombinationStaging' AND TABLE_SCHEMA = 'Datamart')
+            BEGIN
+                CREATE TABLE [Datamart].[DimensionCombinationStaging](
+                    [Id] [bigint] NOT NULL,
+                    [OrganizationId] [int] NULL,
+                    [Description] [nvarchar](51) NULL,
+                    [SourceKey] [nvarchar](100) NOT NULL,
+                    [OrganizationKey] [nvarchar](100) NULL,
+                    [FreshnessDate][datetime2] NULL default sysutcdatetime())
+
+			CREATE STATISTICS [stat_dcs_org] ON [Datamart].DimensionCombinationStaging (OrganizationKey)
+		END
+
+		IF NOT EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE ='BASE TABLE' AND TABLE_NAME = 'DimensionCombinationResolving' AND TABLE_SCHEMA = 'Datamart')
+		BEGIN
+			CREATE TABLE [Datamart].[DimensionCombinationResolving]
+			(
+				[Id] [BIGINT] NOT NULL,
+				[Description] [NVARCHAR](51) NULL,
+				[SourceKey] [NVARCHAR](100) NULL,
+				[OrganizationId] [INT] NULL
+			)
+		END
+
+		IF NOT EXISTS(SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE ='BASE TABLE' AND TABLE_NAME='DimensionCombination' AND TABLE_SCHEMA='Datamart')
+		BEGIN
+			CREATE TABLE [Datamart].[DimensionCombination](
+				[Id] [bigint] NOT NULL,
+				[Description] [nvarchar](51) NULL,
+				[SourceKey] [nvarchar](100) NULL,
+				[OrganizationId] [int] NULL
+			)
+		END
+
+		IF NOT EXISTS(SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE ='BASE TABLE' AND TABLE_NAME='FactAttributeValue' AND TABLE_SCHEMA='Datamart')
+		BEGIN
+			CREATE TABLE [Datamart].[FactAttributeValue](
+				[FactId] [bigint] NOT NULL
+			)
+		END
+
+		IF NOT EXISTS(SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE ='BASE TABLE' AND TABLE_NAME='DimensionValueAttributeValue' AND TABLE_SCHEMA='Datamart')
+		BEGIN
+			CREATE TABLE [Datamart].[DimensionValueAttributeValue](
+				[DimensionValueId] [bigint] NOT NULL
+			)
+		END
+
+		IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE ='BASE TABLE' AND TABLE_NAME='PeriodExchangeRate' AND TABLE_SCHEMA='Datamart')
+		BEGIN
+			CREATE TABLE [Datamart].[PeriodExchangeRate]
+			(
+				[PeriodId] INT NOT NULL,
+				[FromUnitOfMeasureId] INT NOT NULL,
+				[CurrencyMethod] TINYINT NOT NULL,
+				[ExchangeRateTypeId] INT NOT NULL,
+				CONSTRAINT [PK_PeriodExchangeRates] PRIMARY KEY ([FromUnitOfMeasureId], [PeriodId], [CurrencyMethod], [ExchangeRateTypeId])
+			)
+		END
+
+		IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE ='BASE TABLE' AND TABLE_NAME='TranslatedPeriodBalance' AND TABLE_SCHEMA='Datamart')
+		BEGIN
+			CREATE TABLE [Datamart].[TranslatedPeriodBalance](
+				[PeriodId] [INT] NOT NULL,
+				[DimensionsId] [BIGINT] NOT NULL,
+				[ScenarioId] [INT] NOT NULL,
+				[FactType] [SMALLINT] NOT NULL,
+				[PostingLayerId] [INT] NULL
+			)
+		END
+
+		IF NOT EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE ='BASE TABLE' AND TABLE_NAME='TranslatedPeriodBalanceChanges' AND TABLE_SCHEMA='Datamart')
+		BEGIN
+			CREATE TABLE [Datamart].TranslatedPeriodBalanceChanges(PeriodId bigint, DimensionsId bigint, ScenarioId int, PostingLayerId int null, FactType smallint,
+					constraint [IDX_BC1] unique Clustered (PeriodId, DimensionsId, ScenarioId, PostingLayerId, FactType DESC))
+		END
+
+		IF EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'DimensionCombinationArchive' AND TABLE_SCHEMA='Datamart')
+		BEGIN
+			IF EXISTS (SELECT TOP 1 * FROM [Datamart].[DimensionCombinationArchive])
+			BEGIN
+				-- move archived combinations from the obsolete DimensionCombinationArchive table to a new table in the archive
+				-- and set its generation to 5, so it will run in 4 hours (which is how long the archived combinations were attempted originally before moving to the archive table).
+				DECLARE @archiveId INT = 0
+				INSERT INTO [Datamart].[Archive] (Generation, NextAttempt) VALUES (5, DATEADD(MINUTE, POWER(3, 5), SYSUTCDATETIME()))
+				SET @archiveId = SCOPE_IDENTITY()
+
+				DECLARE @comboArchiveTableName nvarchar(100) = 'DimensionCombinationStaging' + CAST(@archiveId as nvarchar(10))
+				EXEC sp_rename 'Datamart.DimensionCombinationArchive', @comboArchiveTableName
+
+				DECLARE @factArchiveTableName nvarchar(100) = 'FactStaging' + CAST(@archiveId as nvarchar(10))
+				EXEC ('select top 0 * into Datamart.' + @factArchiveTableName + ' from Datamart.FactStaging')
+			END
+			ELSE
+			BEGIN
+				DROP TABLE [Datamart].[DimensionCombinationArchive]
+			END
+		END
+
+		IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE='BASE TABLE' AND TABLE_NAME = 'DimensionCombinationUnreferenced' and TABLE_SCHEMA ='Datamart')
+		BEGIN
+			CREATE TABLE [Datamart].[DimensionCombinationUnreferenced]
+			(
+				[Id] [bigint] NOT NULL,
+				[Description] [nvarchar](51) NULL,
+				[SourceKey] [nvarchar](100) NULL,
+				[OrganizationId] [int] NULL
+			)
+
+			DECLARE @columnIndex int
+			DECLARE @idColumn nvarchar(128)
+			DECLARE columnCursor CURSOR LOCAL FAST_FORWARD FOR SELECT DISTINCT ColumnIndex FROM [Datamart].DimensionDefinition ORDER BY ColumnIndex
+			OPEN columnCursor
+			FETCH NEXT FROM columnCursor INTO @columnIndex
+			WHILE (@@FETCH_STATUS <> -1)
+			BEGIN
+				SET @idColumn = 'Dimension' + CAST(@columnIndex as nvarchar(3)) + 'Id'
+				EXEC [Datamart].AddColumn @schemaName = 'Datamart', @tableName = 'DimensionCombinationUnreferenced', @columnName = @idColumn, @columnType = 'bigint NULL'
+				FETCH NEXT FROM columnCursor INTO @columnIndex
+			END
+			CLOSE columnCursor
+			DEALLOCATE columnCursor
+
+			DECLARE @dcColumnList nvarchar(max) = ''
+			DECLARE @rowsCopied bigint
+			DECLARE @columnName nvarchar(100)
+			DECLARE columnNameCursor cursor local fast_forward for select distinct Name from sys.columns c where c.object_id = OBJECT_ID('DimensionCombination')
+			OPEN columnNameCursor
+			FETCH NEXT FROM columnNameCursor INTO @columnName
+			WHILE (@@FETCH_STATUS <> -1)
+			BEGIN
+				IF @dcColumnList <> ''
+					SET @dcColumnList = @dcColumnList + ', '
+
+				SET @dcColumnList = @dcColumnList + @columnName
+				FETCH NEXT FROM columnNameCursor INTO @columnName
+			END
+			CLOSE columnNameCursor
+			DEALLOCATE columnNameCursor
+
+			if @dcColumnList <> ''
+			BEGIN
+				exec ('
+					insert into [Datamart].DimensionCombinationUnreferenced (' + @dcColumnList + ')
+					select ' + @dcColumnList + ' from [Datamart].DimensionCombination dc
+					where dc.Id not in (Select distinct DimensionsId from [Datamart].Fact)')
+
+				SET @rowsCopied = @@ROWCOUNT
+				IF @rowsCopied > 0
+				BEGIN
+					DECLARE @comboCount bigint
+					EXEC [Datamart].GetRowCount 'DimensionCombination', @comboCount
+
+					IF (@rowsCopied * 2) > @comboCount
+					BEGIN
+						-- most of the combinations in the combination table were unreferenced, so it would be faster to move the referenced out, truncate the table, then move back
+						SELECT * INTO #referencedCombos from [Datamart].DimensionCombination dc
+						WHERE dc.Id NOT IN (SELECT Id from [Datamart].DimensionCombinationUnreferenced)
+
+						TRUNCATE TABLE [Datamart].[DimensionCombination]
+
+						INSERT INTO [Datamart].[DimensionCombination]
+						SELECT * FROM #referencedCombos
+
+						DROP TABLE #referencedCombos
+					END
+					ELSE
+					BEGIN
+						-- we didn't find many unreferenced combinations, so delete them
+						DELETE FROM [Datamart].[DimensionCombination] WHERE Id in (SELECT Id FROM [Datamart].[DimensionCombinationUnreferenced])
+					END
+				END
+			END
+		END
+	END
+
     -- Rebuild dropped indexes that are dynamic
     EXEC [Datamart].ConfigureIndexesAndConstraints
-    ------------------------------------------
-    ------------------------------------------
+
+    --------------------------------------------------------------------------
+    ----- Re-Enable the service after resetting the tokens
+    --------------------------------------------------------------------------
+
+    DECLARE @triggerIds table(id uniqueidentifier, taskTypeId uniqueidentifier)
+    INSERT INTO @triggerIds SELECT tr.[Id], tt.[Id]
+    FROM [Scheduling].[Task] t with(nolock)
+    JOIN [Scheduling].[Trigger] tr ON t.[TriggerId] = tr.[Id]
+    JOIN [Scheduling].[TaskState] ts ON ts.[TaskId] = t.[Id]
+    LEFT JOIN [Scheduling].[TaskCategory] tc ON tc.[Id] = t.[CategoryId]
+    JOIN [Scheduling].[TaskType] tt ON t.[TypeId] = tt.[Id]
+    WHERE tt.[Id] IN ('D81C1197-D486-4FB7-AF8C-078C110893A0', '55D3F71A-2618-4EAE-9AA6-D48767B974D8') -- 'Maintenance Task', 'Map Task'
+
     PRINT 'Reset the map tokens'
     UPDATE [Connector].[Map] SET InitalLoad = 0, ReaderToken=NULL, LastQuerySuccess='1900-01-01' WHERE MapId IN (SELECT t.[Id]
     FROM [Scheduling].[Task] t with(nolock)
@@ -530,6 +563,7 @@ Import your report designs from Report designer by using the file that was creat
     LEFT JOIN [Scheduling].[TaskCategory] tc ON tc.[Id] = t.[CategoryId]
     JOIN [Scheduling].[TaskType] tt ON t.[TypeId] = tt.[Id]
     WHERE tt.[Id] = '55D3F71A-2618-4EAE-9AA6-D48767B974D8')
+
     PRINT 'Reset the tasks'
     UPDATE [Scheduling].[TaskState] SET StateType = 0, Progress = 0.0, LastRunTime = NULL, NextRunTime = NULL WHERE TaskId IN (SELECT ts.[TaskId]
     FROM [Scheduling].[Task] t with(nolock)
@@ -538,20 +572,71 @@ Import your report designs from Report designer by using the file that was creat
     LEFT JOIN [Scheduling].[TaskCategory] tc ON tc.[Id] = t.[CategoryId]
     JOIN [Scheduling].[TaskType] tt ON t.[TypeId] = tt.[Id]
     WHERE tt.[Id] IN ('D81C1197-D486-4FB7-AF8C-078C110893A0', '55D3F71A-2618-4EAE-9AA6-D48767B974D8'))
+
     PRINT 'Enable integration tasks, RunImmediately'
     UPDATE [Scheduling].[Trigger] SET IsEnabled = 1, RunImmediately = 1, StartBoundary = '1900-01-01' 
     WHERE Id in (SELECT [id] from @triggerIds WHERE taskTypeId = '55D3F71A-2618-4EAE-9AA6-D48767B974D8')
     PRINT 'Enable the Maintenance Task'
     UPDATE [Scheduling].[Trigger] SET IsEnabled = 1, RunImmediately = 0, StartBoundary = GETDATE() WHERE Id in
     (SELECT [id] from @triggerIds WHERE taskTypeId = 'D81C1197-D486-4FB7-AF8C-078C110893A0')
-    ------------------------------------------
-    ------------------------------------------
+
+    IF EXISTS(SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME = 'Servicing')
+    BEGIN
+        UPDATE [Servicing].[ServicingLock] SET [Value] = 0 WHERE [Value] = 1
+    END
+
+    IF EXISTS(SELECT TOP 1 1 FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = 'Scheduling' COLLATE DATABASE_DEFAULT AND TABLE_NAME = 'SchedulerRegister' COLLATE DATABASE_DEFAULT AND COLUMN_NAME = 'ServicingMode' COLLATE DATABASE_DEFAULT)
+    BEGIN
+           UPDATE Scheduling.SchedulerRegister SET ServicingMode = 0
+    END
     ```
 
 6. After the reset, you can manually verify the data reload by running the following query against the Financial reporting database.
 
-    ```
+    ```sql
     select ReaderObjectName, WriterObjectName, LastRunTime, StateType from Connector.MapsWithDetail with (nolock)
     ```
 
     Confirm that all rows have a **LastRunTime** value, and that **StateType** is set to **5**. A **StateType** value of **5** indicates that the data was successfully reloaded. A value of **7** indicates a faulted state. Sometimes, the Organization Hierarchy map has this state the first time that it runs. However, the faulted state but should be automatically resolved.
+
+## Export and import report definitions
+
+Although a reset of the data mart doesn't affect any report definitions, some data movement activities can cause report definitions to be lost. Be very careful when you perform a data movement activity such as overwriting a user acceptance testing (UAT) test environment with a copy of the production environment if new reports were being created in the UAT environment.
+
+### Export report definitions
+
+First, follow these steps to export the report designs from Report designer.
+
+1. In Report designer, select **Company** &gt; **Building Block Groups**.
+2. Select the building block group to export, and then select **Export**.
+
+    > [!NOTE]
+    > For Finance and Operations, only one building block group is supported: **Default**.
+
+3. Select the report definitions to export:
+
+    - To export all your report definitions and the associated building blocks, select **Select All**.
+    - To export specific reports, rows, columns, trees, or dimension sets, select the appropriate tab, and then select the items to export. To select multiple items on a tab, press and hold the **Ctrl** key while you make your selections. When you select reports to export, the associated rows, columns, trees, and dimension sets are also selected.
+
+4. Select **Export**.
+5. Enter a file name, and select a secure location to save the exported report definitions in.
+6. Select **Save**.
+
+You can copy or upload the file to a secure location.
+
+> [!WARNING]
+> Be aware of the behavior of drive D on Microsoft Azure virtual machines (VMs). Don't permanently store your exported building block groups on drive D. For more information about temporary drives, see [Understanding the temporary drive on Windows Azure Virtual Machines](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
+
+### Import report definitions
+
+Next, import your report designs from Report designer by using the file that was created during export.
+
+1. In Report designer, select **Company** &gt; **Building Block Groups**.
+2. Select the **Default** building block, and then select **Import**.
+3. Select the file that contains the exported report definitions, and then select **Open**.
+4. In the **Import** dialog box, select the report definitions to import:
+
+    - To import all the report definitions and the associated building blocks, select **Select All**.
+    - To import specific reports, rows, columns, trees, or dimension sets, select them.
+
+5. Select **Import**.

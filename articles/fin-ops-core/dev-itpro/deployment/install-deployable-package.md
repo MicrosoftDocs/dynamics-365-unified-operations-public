@@ -56,7 +56,7 @@ An AOT deployable package is a package that contains customizations and extensio
 3. Open a Command Prompt window, and go to the folder where you extracted the deployable package.
 4. Run the following command.
 
-    ```
+    ```Console
     AXUpdateInstaller.exe devinstall
     ```
 
@@ -86,7 +86,7 @@ An AOT deployable package is a package that contains customizations and extensio
        1. Open a Command Prompt window as an administrator.
        2. Go to the extracted folder, and run the following command to see a list of all the components that are installed on the computer.
 
-           ```
+           ```Console
            AXUpdateInstaller.exe list
            ```
 
@@ -103,7 +103,7 @@ Based on the topology information in the DefaultTopologyData.xml file, you must 
 
 - On any VM, run the following command to generate the runbook.
 
-    ```
+    ```Console
     AXUpdateInstaller.exe generate -runbookid=[runbookID] -topologyfile=[topologyFile] -servicemodelfile=[serviceModelFile] -runbookfile=[runbookFile]
     ```
 
@@ -116,7 +116,7 @@ Based on the topology information in the DefaultTopologyData.xml file, you must 
 
     **Example**
 
-    ```
+    ```Console
     AXUpdateInstaller.exe generate -runbookid="VAL200AA2BMEDIU-runbook" -topologyfile="DefaultTopologyData.xml" -servicemodelfile="DefaultServiceModelData.xml" -runbookfile="VAL200AA2BMEDIU-runbook.xml"
     ```
 
@@ -129,31 +129,31 @@ The runbook provides the sequence of steps that must be run to update the enviro
 
     1. Import the runbook by running the following command.
 
-        ```
+        ```Console
         AXUpdateInstaller.exe import -runbookfile=[runbookFile]
         ```
 
         **Example**
 
-        ```
+        ```Console
         AXUpdateInstaller.exe import -runbookfile="VAL200AA2BMEDIU-runbook.xml"
         ```
 
     2. Verify the runbook.
 
-        ```
+        ```Console
         AXUpdateInstaller.exe list
         ```
 
     3. Run the runbook.
 
-        ```
+        ```Console
         AXUpdateInstaller.exe execute -runbookid=[runbookID]
         ```
 
         **Example**
 
-        ```
+        ```Console
         AXUpdateInstaller.exe execute -runbookid="VAL200AA2BMEDIU-runbook"
         ```
 
@@ -161,13 +161,13 @@ The runbook provides the sequence of steps that must be run to update the enviro
 
         For manual steps, follow the instructions, and then run the following command to mark the step as completed in the runbook.
 
-        ```
+        ```Console
         AXUpdateInstaller.exe execute -runbookID=[runbookID] -setstepcomplete=[stepID]
         ```
 
         **Example**
 
-        ```
+        ```Console
         AXUpdateInstaller.exe execute -runbookid="VAL200AA2BMEDIU-runbook" -setstepcomplete=2
         ```
 
@@ -175,13 +175,13 @@ The runbook provides the sequence of steps that must be run to update the enviro
 
     4. Export the runbook.
 
-        ```
+        ```Console
         AXUpdateInstaller.exe export -runbookid=[runbookID] -runbookfile=[runbookFile]
         ```
 
         **Example**
 
-        ```
+        ```Console
         AXUpdateInstaller.exe export -runbookid="VAL200AA2BMEDIU-runbook" -runbookfile="VAL200AA2BMEDIU-runbook.xml"
         ```
 
@@ -190,7 +190,7 @@ The runbook provides the sequence of steps that must be run to update the enviro
 ## Verify installation
 1. Run the following command to verify that the new updates are installed.
 
-    ```
+    ```Console
     AXUpdateInstaller.exe list
     ```
 
@@ -207,13 +207,13 @@ The runbook provides the sequence of steps that must be run to update the enviro
 ## Troubleshooting
 - If any step in the runbook fails, you can rerun it by running the following command.
 
-    ```
+    ```Console
     AXUpdateInstaller.exe execute -runbookid=[runbookID] -rerunstep=[stepID]
     ```
 
 - To prevent version mismatch or downgrade, or installation of the same deployable package, run the following command.
 
-    ```
+    ```Console
     AXUpdateInstaller.exe execute -runbookid=[runbook ID] -versioncheck=true
     ```
 

@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 The Person search report is a refinement of the existing Data management framework of Finance and Operations apps. The Data management framework offers a pre-packaged set of entities that Microsoft authored to identify personal data that is used to define a person and the roles that a person might be assigned to in Finance and Operations applications. 
 
 > [!NOTE]
-> You can use the report with Dynamics 365 Finance, Supply Chain Management, Retail, and Talent. The report is not currently available for Microsoft Dynamics AX 2012. The Person search report is available in version 8.0. The report is also available in version 7.3 (delivered via monthly update 7.3.2), in version 7.2 (via KB 4132615), and in version 7.1 (via KB 4132441). The Person search report may be updated periodically. Before using this report, you need to ensure that you have obtained and applied all relevant hotfixes. 
+> You can use the report with Dynamics 365 Finance, Supply Chain Management, Commerce, and Human Resources. The report is not currently available for Microsoft Dynamics AX 2012. The Person search report is available in version 8.0. The report is also available in version 7.3 (delivered via monthly update 7.3.2), in version 7.2 (via KB 4132615), and in version 7.1 (via KB 4132441). The Person search report may be updated periodically. Before using this report, you need to ensure that you have obtained and applied all relevant hotfixes. 
 
 You can use the Global address book to create an instance of a person that is described in the data model as a party. 
 
@@ -57,25 +57,25 @@ An individual might exist as multiple parties in data. You can provide multiple 
 
 The Person template contains a list of the entities that will be used to download information. The template must be loaded before the Person search report can be used. The template can be loaded from within the Templates form in Data management for versions 7.2 and later. To download templates fronm **Data management**, complete the following steps. 
 
-> 1. Open the **Data management** workspace.
-> 2. If this is the first time that the workspace has been opened, it will load all of the data entities. You must load all the data entities before you load the template.
-> 3. Click the **Templates** tile.
-> 4. Select the **Load default templates** button.
-> 5. Select **Person search**.
-> 6. Click  **Load selected**.
+1. Open the **Data management** workspace.
+2. If this is the first time that the workspace has been opened, it will load all of the data entities. You must load all the data entities before you load the template.
+3. Click the **Templates** tile.
+4. Select the **Load default templates** button.
+5. Select **Person search**.
+6. Click  **Load selected**.
 
 You can also download a template from LCS and import it for versions 7.1 or later. To do so, complete the following steps.
-> 1.	Log in to LCS.
-> 2.	Click the **Shared asset library** tile.
-> 3.	Select the **Data package asset** type.
-> 4.	Click the template named **Template-x.x-Person search**, where x.x is the application version that you're using, and download it.
-> 5.	Open the **Data Management** workspace.
-> 6.	If this is the first time that the workspace has been opened, the workspace will load all of the data entities. All entities loaded before you download the template.
-> 7.	Click on the **Templates** tile.
-> 8.	Create a new template called **Person search**.
-> 9.	Click **Import template**.
-> 10.	Browse to the template and click **Upload**.
-> 11.	Click **OK** to import the template.
+1.	Log in to LCS.
+2.	Click the **Shared asset library** tile.
+3.	Select the **Data package asset** type.
+4.	Click the template named **Template-x.x-Person search**, where x.x is the application version that you're using, and download it.
+5.	Open the **Data Management** workspace.
+6.	If this is the first time that the workspace has been opened, the workspace will load all of the data entities. All entities loaded before you download the template.
+7.	Click on the **Templates** tile.
+8.	Create a new template called **Person search**.
+9.	Click **Import template**.
+10.	Browse to the template and click **Upload**.
+11.	Click **OK** to import the template.
 
 
 ## Generate a person search
@@ -104,8 +104,8 @@ To use the Person search report, you must complete these tasks.
 
 7. When the package has been generated, export it to your selected data format. 
 
+> [!NOTE]
 > Documents that are attached to records are not included in the data export. Attachments must be manually downloaded and shared with the individual who requested personal data.
-
 
 
 ## Additional resources

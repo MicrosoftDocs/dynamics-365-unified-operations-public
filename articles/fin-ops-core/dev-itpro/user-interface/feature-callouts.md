@@ -83,18 +83,20 @@ Add a feature callout to a control without a "Learn more" link.
 ### Example
 The following code snippet will trigger a feature callout attached to the control named *TestStringControl*.  
 
-    public void init() 
-    {
-         super(); 
+```xpp
+public void init() 
+{
+     super(); 
      
-         SystemNotificationsWhatsNewManager::AddWhatsNewWithActionLink(
-              MyTestKey, 
-              "My title" , 
-              "My description", 
-              TestStringControl.name(), 
-              "http://www.microsoft.com"
-         );
-    }
+     SystemNotificationsWhatsNewManager::AddWhatsNewWithActionLink(
+          MyTestKey, 
+          "My title" , 
+          "My description", 
+          TestStringControl.name(), 
+          "https://www.microsoft.com"
+     );
+}
+```
 
 ## Notes
 -  Multiple feature callouts can be shown on a page at one time.

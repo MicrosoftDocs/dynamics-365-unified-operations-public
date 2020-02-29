@@ -63,9 +63,11 @@ You can use the following environment types for your project:
 | Tier-1 | Tier-2 and higher |
 |--------|-------------------|
 | Single-box environment | Multi-box environment |
-| All components are installed on the same server. These components include Application Object Server (AOS), the database, Dynamics 365  Retail, and Management Reporter. | Components are installed on multiple servers. |
+
+| All components are installed on the same server. These components include Application Object Server (AOS), the database, Dynamics 365 Commerce, and Management Reporter. | Components are installed on multiple servers. |
+
 | Microsoft SQL Server is used. | [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/) is used. |
-| The architecture differs from the architecture of the production environment to maximize the efficiency of the development team. | The architecture is the same as the architecture of the production environment, even though this type of environment has a different sizing and isn't enabled for disaster recovery. |
+| The architecture differs from the architecture of the production environment to maximize efficiency and cost of the development team. | The architecture is the same as the architecture of the production environment, even though this type of environment has a different sizing and isn't enabled for disaster recovery. |
 | The environment can be deployed in various ways. For example, it can be deployed as an add-on, it can be cloud-hosted, or it can be deployed as an environment image (VHD). | The environment can be deployed only as a standard environment or an add-on environment. It can't be cloud-hosted. |
 | The environment isn't suitable for UAT or performance testing. | The environment is suitable for UAT and performance testing. |
 
@@ -73,13 +75,15 @@ You can use the following environment types for your project:
 
 The standard cloud offer includes three environments:
 
-- **Tier-1 environment: Develop and test** – One develop/test instance is provided for the duration of the subscription. This instance is a non-production single-box instance that the customer can use as an automated build environment, or to customize and perform unit testing for the changes. Additional develop/test instances can be purchased separately as an optional add-on.
+- **Tier-1 environment: Develop and test** – One develop/test instance is provided for the duration of the subscription. This instance is a non-production single-box instance that the customer can use as a development enviroment, automated build and test environment, or golden configuration environment. Additional develop/test instances can be purchased separately as an optional add-on.
 - **Tier-2 environment: Standard Acceptance Testing** – One Standard Acceptance Testing (UAT) instance is provided for the duration of the subscription. This instance is a non-production multi-box instance that customers can use for UAT, integration testing, and training. Additional sandbox/staging instances can be purchased separately as an optional add-on.
 - **Production environment** – One production instance is provided per tenant. The production multi-box instance includes disaster recovery and high availability. It will be provisioned when the implementation approaches the Operate phase, after the required activities in the Microsoft Dynamics Lifecycle Services (LCS) methodology and a successful go-live assessment are completed. Additionally, some file storage and database storage are included in the offer:
 
     - **File storage:** Every customer receives 100 gigabytes (GB) of file/Azure blob cloud storage for files and binary data. Additional file/blob storage can be purchased.
     - **Database storage:** Every subscription includes 10 GB of Azure SQL Database storage per customer at no additional charge. Additional storage capacity is provided at no charge as an organization increases the number of user and device service licenses. For more information about the various environments and the various types of storage, download the latest *Microsoft Dynamics 365 Licensing Guide* from [Dynamics 365 pricing](https://dynamics.microsoft.com/pricing/).
-
+    
+> [!IMPORTANT]
+> Microsoft promises service and data high availability as well as minimal servicing downtime guarantees as part of the Dynamics 365 software license agreement (SLA) for production environments. The SLA goals do not apply to non-production environments.
 
 ### Provisioning of standard environments
 
@@ -141,14 +145,14 @@ The following table compares the deployment options.
 | Public URL                            | ✓ | ✓ | Not supported |
 | Integration development               | ✓ | ✓ | Extra setup is required. (For example, run the admin user provisioning tool.) |
 | Azure DevOps                          | ✓ | ✓ | Extra setup is required. (For example, rename the computer.) |
-| Applying deployable packages from LCS | Automated | Automated | Manual through runbooks |
+| Applying deployable packages from LCS | Automated | Automated | Command line runbooks (AxUpdateInstaller.exe tool) |
 | Deploying data packages from LCS      | ✓ | ✓ | Not supported |
 | Maintenance                           | Managed by Microsoft | Managed by the customer/partner | Managed by the customer/partner |
-| Cost model                            | Fixed flat rate (The price is the same if the environment is on 24/7.) | Pay as you go (If the environment is on for eight hours, you pay for eight hours.) | Hardware-related |
-| Limitations                           | Administrator access is disabled (admin lockdown). | None | None |
+| Cost model                            | Fixed flat rate (The price is the same if the environment is on 24/7.) | Pay as you go (If the environment is on for eight hours, you pay for eight hours.). Cost is based on selected Virtual Machine size, disk size and settings, and premium storage settings | Hardware-related |
+| Limitations                           | 1) Virtual Machine (VM) local Administrator access is disabled. 2) Limited disk sizes 3) VM specs are defined by Microsoft | None. You have full control over VM specs, disk size and storage settings. You have administrator access to the VM. | None |
 
 > [!IMPORTANT]
-> Admin lockdown for Tier-1 environments is effective in Platform update 12 and later. Actions that require local administrator access can no longer be performed. These actions include installation of third-party tools and development of Microsoft Power BI reports. If administrator permissions are required, use cloud-hosted environments or an environment image (downloadable VHD) instead. For more information, see [Development and build VMs that don't allow admin access FAQ](../../dev-itpro/sysadmin/vms-no-admin-access.md).
+> Actions that require local administrator access can no longer be performed on Tier-1 environments managed by Microsoft (Standard and Add-on). These actions include installation of third-party tools and development of Microsoft Power BI reports. If administrator permissions are required, use cloud-hosted environments or an environment image (downloadable VHD) instead. For more information, see [Development and build VMs that don't allow admin access FAQ](../../dev-itpro/sysadmin/vms-no-admin-access.md).
 
 ### Selecting the correct Tier-2 or higher environment
 

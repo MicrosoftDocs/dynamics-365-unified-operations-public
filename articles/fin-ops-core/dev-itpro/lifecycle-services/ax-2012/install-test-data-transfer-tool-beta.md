@@ -44,7 +44,7 @@ You must be a database administrator or a developer who has experience using Mic
 During export, the tool creates three files for each table. Make sure that there is enough hard disk space for all the tables that are exported.
 
 ## Install the Test Data Transfer Tool (beta)
-1.  Get the tool from the Downloadable tools section of [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?LinkId=228148), and extract it to a local folder.
+1.  Get the tool from the Downloadable tools section of [Microsoft Dynamics Lifecycle Services](https://go.microsoft.com/fwlink/?LinkId=228148), and extract it to a local folder.
 2.  Right-click **AX2012TestDataTransferTool.msi**, and then click **Run as administrator**.
 3.  In the **Setup** **Wizard**, accept the license terms, and then select the location in which to install the binaries and files for the tool. By default, the tool is installed to %Program Files%/Microsoft Dynamics AX 2012 Test Data Transfer Tool (Beta).
 

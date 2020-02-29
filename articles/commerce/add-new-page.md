@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Add a new site page
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic describes how to add a new site page in Microsoft Dynamics 365 Commerce.
@@ -95,3 +95,4 @@ To add a new site page to your site, follow these steps.
 
 [Enrich a category landing page](enrich-category-page.md)
 
+[Verify page content accessibility](verify-accessibility.md)

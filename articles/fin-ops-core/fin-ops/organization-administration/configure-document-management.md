@@ -52,7 +52,7 @@ To create a new document type, follow these steps.
 5. In the **Class** field, specify a class to define the behavior for the document type:
 
     - **Attach file** – The user is prompted for a file.
-    - **Attach URL** – The user can enter a URL in the **Notes** field, such as `http://www.microsoft.com`. The **Open** button on the **Attachments** page will open the URL on a browser tab.
+    - **Attach URL** – The user can enter a URL in the **Notes** field, such as `https://www.microsoft.com`. The **Open** button on the **Attachments** page will open the URL on a browser tab.
     - **Simple note** – The user can add a simple note in the **Notes** field.
 
 6. If you specified **Attach file** in the **Class** field, in the **Location** field, specify the storage mechanism to use.

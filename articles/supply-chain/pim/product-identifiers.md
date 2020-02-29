@@ -5,14 +5,14 @@ title: Product identifiers
 description: This topic provides information about the various types of product identifiers and explains how you can add product identifiers in your product data.
 author: cvocph
 manager: AnnBe
-ms.date: 03/23/2018
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 # optional metadata
 
-ms.search.form: EcoResProductEntityIdentifierCode
+ms.search.form: EcoResProductEntityIdentifierCode, EcoResProductListPage, EcoResProductDetailsExtended, EcoResProductVariantsPerCompany
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
@@ -45,6 +45,9 @@ In many cases, the product number isn't originally created in Dynamics 365 Suppl
 When you implement Supply Chain Management, you should give special consideration to your strategy for product numbers. A good numbering system improves logistics flows and helps prevent errors. A good product identifier has a maximum of 15 characters. Ideally, it has fewer than 10 characters and includes no more than five classifying characters. You can also use search names to enable quick searches. A search name is an additional name that represents the classifications of a product.
 
 When you use Common Data Service, the product number in Supply Chain Management is also the product number in the Common Data Service. Product variants are synchronized to the Common Data Service as distinct products.
+
+> [!NOTE]
+> The product number cannot start with "%".
 
 ## Item number and product dimensions
 
@@ -87,7 +90,7 @@ On the **External item descriptions** page, you can associate the customer's or 
 | Description | The name that the customer associates with the item | The name that the vendor associates with the item |
 | External item text | The customer's item description | The vendor's item description |
 
-If many customers or vendors use the same item numbers (as in the case of a purchase association or a retail group, for example), you can create groups of customer or vendors to simplify the maintenance of external product information.
+If many customers or vendors use the same item numbers (as in the case of a purchase association or a commerce group, for example), you can create groups of customer or vendors to simplify the maintenance of external product information.
 
 - For customer groups, go to **Sales** &gt; **Setup** &gt; **Items** &gt; **External item description** to create and maintain the groups and the related item numbers. To associate customers with a group, go to **Accounts receivable** &gt; **Customers** &gt; **All customers**, and then, on the **Sales order defaults** FastTab, specify a value in the **Item - customer group** field.
 - For vendor groups, go to **Procurement and sourcing** &gt; **Setup** &gt; **External item description group** to create and maintain the groups the related item numbers. To associate vendors with a group, go to **Accounts payable** &gt; **Vendors** &gt; **All vendors**, and then, on the **Purchase order defaults** FastTab, specify a value in the **Item - vendor group** field.

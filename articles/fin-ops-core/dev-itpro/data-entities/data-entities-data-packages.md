@@ -5,7 +5,7 @@ title: Data management overview
 description: This topic provides information about data management in Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 01/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -248,7 +248,7 @@ This section provides troubleshooting information for the different stages of da
 ### Export process troubleshooting
 - If you get an error during the export process, click **View execution log** and review the log text, staging log details, and Infolog for more information.
 - If you get an error during the export process with a note directing you to not skip staging, turn off the **Skip staging** option, and then add the entity. If you are exporting multiple data entities, you can use the **Skip staging** button for individual data entities.
-- Prior to platform update 31, there was a 256 MB limit for the file size that can be handled via export. If there are a large number of records that will be exported, be sure that the resulting file size does not exceed this limit. An alternate way to handle such scenarios would be to use filters on the entity to export only a subset of data. If this is not feasible, then bring your own database must be considered for the overall solution. This limitation no longer exists starting in Platform update 31.
+- Prior to platform update 32, there was a 256 MB limit for the file size that can be handled via export. If there are a large number of records that will be exported, be sure that the resulting file size does not exceed this limit. An alternate way to handle such scenarios would be to use filters on the entity to export only a subset of data. If this is not feasible, then bring your own database must be considered for the overall solution. This limitation no longer exists starting in Platform update 32.
 
 ### Import process troubleshooting
 When uploading data entity files:
@@ -297,17 +297,17 @@ For enabling flights in a production environment, a support case must be logged 
         add key="DataAccess.FlightingServiceCatalogID" value="12719367"
 - After making the above change, perform an IISReset on all AOS's. 
 
-```
-INSERT INTO SYSFLIGHTING
-([FLIGHTNAME]
-,[ENABLED]
-,[FLIGHTSERVICEID]
-,[PARTITION]
-,[RECID]
-,[RECVERSION]
-)
-VALUES ('name', 1, 12719367, PARTITION, RECID, 1)
-```
+    ```sql
+    INSERT INTO SYSFLIGHTING
+    ([FLIGHTNAME]
+    ,[ENABLED]
+    ,[FLIGHTSERVICEID]
+    ,[PARTITION]
+    ,[RECID]
+    ,[RECVERSION]
+    )
+    VALUES ('name', 1, 12719367, PARTITION, RECID, 1)
+    ```
 
  - Partition - Partition ID from the environment, which can be obtained by querying (select) for any record. Every record will have a partition ID that must be copied and used here.
  - RecID - Same ID as partition. However, if multiple flights are enabled, then this can be partition ID + 'n' to ensure it has a unique value

@@ -17,7 +17,7 @@ ms.search.form: Hcmi9DocumentInquiry, Hcmi9DocumentTypeExpireList, Hcmi9Document
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 15611
@@ -54,6 +54,3 @@ You can use the document management system to upload and save signed Form I-9 do
 
 You can use the **Renew Form I-9 alarm list** report to identify employees whose Form I-9 information must be verified again. To prepare for a Bureau of Immigration and Customs Enforcement (BICE) inspection, you can use the **Form I-9** report to print Form I-9 information for all or selected employees.
 
-## Additional resources
-
-[Organize your workforce by using departments, jobs, and positions](../../../../talent/departments-jobs-positions.md)

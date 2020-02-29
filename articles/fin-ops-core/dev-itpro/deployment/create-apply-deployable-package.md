@@ -3,7 +3,7 @@
 
 title: Create deployable packages of models
 description: This topic describes the workflow for creating and applying a deployable package.
-author: robadawy
+author: jorisdg
 manager: AnnBe
 ms.date: 09/20/2019
 ms.topic: article
@@ -23,7 +23,7 @@ ms.search.scope: Operations
 ms.custom: 24211
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

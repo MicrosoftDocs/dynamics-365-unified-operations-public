@@ -3,7 +3,7 @@
 
 title: Address books FAQ
 description: This topic provides answers to frequently asked questions related to address books. 
-author: kfend
+author: msftbrking 
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 23601
 ms.assetid: b177fa0f-ac9a-415e-9498-15438e132f60
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kfend
+ms.author: brking
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

@@ -122,7 +122,7 @@ In this example, you add a computed field to the **FMCustomerEntity** entity. Fo
     > [!NOTE]
     > The **server** keyword is required.
 
-    ```
+    ```xpp
     private static server str formatNameAndAddress()   // X++
     {
         DataEntityName      dataEntityName= tablestr(FMCustomerEntity);
@@ -175,7 +175,7 @@ In this example, you add a virtual field to the **FMCustomerEntity** entity. Thi
 4. In the **FMCustomerEntity** designer, right-click the **Methods** node, and then click **Override &gt; postLoad**. Your X++ code in this method will generate the values for the virtual field.
 5. Paste the following X++ code in for the **postLoad** override. Notice that the **postLoad** method returns **void**.
 
-    ```
+    ```xpp
     public void postLoad()
     {
         super();
@@ -193,7 +193,7 @@ Imagine that an external system sends the name of a person as a compound value t
 1. In the designer for the **FMCustomerEntity**, right-click the **Methods** node, and then click **Override &gt; mapEntityToDataSource**.
 2. Paste the following X++ code in for the **mapEntityToDataSource** method.
 
-    ```
+    ```xpp
     public void mapEntityToDataSource(DataEntityRuntimeContext entityCtx, DataEntityDataSourceRuntimeContext dataSourceCtx)
     {
         super(entityCtx, dataSourceCtx);
@@ -216,7 +216,7 @@ The following **main** method tests your computed and virtual fields. Both field
 1. For this example, ensure that you have the data set named **Fleet Management (migrated)**. The data set is available from the dashboard in the browser. Click the menu icon in the upper-right corner, click the **APP LINKS** menu, and then scroll to find the data set named **Fleet Management (migrated)**.
 2. Paste the following X++ code into the startup object of your project. Run your project.
 
-    ```
+    ```xpp
     public static void main(Args _args)   // X++
     {
         FMCustomerEntity customer;

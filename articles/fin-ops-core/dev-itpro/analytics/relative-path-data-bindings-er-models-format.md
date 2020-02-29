@@ -2,7 +2,7 @@
 # required metadata
 
 title: Use a relative path in data bindings of ER models and formats
-description: .
+description: The Electronic reporting (ER) tool lets users define electronic format structures and then describe how those structures should be filled by using data and algorithms that exist in the application. 
 author: NickSelin
 manager: AnnBe
 ms.date: 07/03/2019
