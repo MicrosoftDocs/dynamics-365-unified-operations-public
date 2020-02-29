@@ -58,6 +58,8 @@ Here are some of the parameters that can be set on the **Commerce parameters** p
 
     - Charges are applied at the level of the sales order header, and when some quantity of a product line is returned, the maximum refund of shipping charges that is allowed for the products and the quantity can't be determined in way that works for all customers.
     - Shipping charges are incurred for every instance of shipping. If a customer returns products multiple times, and the retailer's policy specifies that the retailer will bear the cost of return shipping charges, the return shipping charges will be more than the actual shipping charges.
+    
+- **Tax calculation behavior** - **Recalculate** is the default, and traditional setting by which taxes are recalculated when the order is imported into the back office. **Don't recalculate** disables tax recalculation until or unless the order is edited in the back office, which will trigger recalculation. 
 
 ## Transaction flow for customer orders
 
