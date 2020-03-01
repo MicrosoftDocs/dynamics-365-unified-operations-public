@@ -885,6 +885,9 @@ In order for AD FS to trust Finance + Operations for the exchange of authenticat
 
 For more information about how to use the script, see the documentation that is listed in the script. Make a note of the client IDs that are specified in the output, because you will need this information in LCS in a later step. Should you lose the client IDs, log in to the machine which has AD FS installed, open **Server Manager** \> **Tools** \> **AD FS Management** \> **Application Groups** \> **Microsoft Dynamics 365 for Operations On-premises** and find the client IDs under the native applications.
 
+>[!NOTE]
+> If you want to reuse your previosuly configured ADFS servers for additional environments please see check the following guide: [Reusing ADFS in multiple environments](./onprem-reuseadfs.md).
+
 ```powershell
 # Host URL is your DNS record\host name for accessing the AOS
 .\Publish-ADFSApplicationGroup.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com'
