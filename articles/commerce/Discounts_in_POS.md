@@ -2,7 +2,7 @@
 # required metadata
 
 title: Display discounts in POS 
-description: This document explains how Dynamics 365 Commerce enables the sales associates to learn about the promotions and make it easy for them to use these promotions for cross sell and up-sell motions.
+description: This document explains how Dynamics 365 Commerce enables the sales associates to learn about the promotions and make it easy for them to use these promotions for cross-sell and upsell motions.
 author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 02/03/2020
@@ -56,8 +56,10 @@ Multiline discounts such as quantity discounts, Mix and Match, and threshold dis
 
 This view displays only those discounts which do not compete with any of the applied discounts. This is to ensure that if the associate informs the customers about a discount and the customer takes the required action e.g. buy one more item to get 10% off, then, if the customer buys one more item, then the discount definitely gets applied on the transaction. Additionally, only those coupon based discounts are shown for which the configuration "Apply without a coupon code" is marked as Yes. Considering the most simple scenario, where all the discounts are of the same priority, the discount concurrency mode is "Compounded" and the Discount concurrency control is set to “Best price and compound within priority, never compound across priorities”, then the available discount view will show all the available discounts for a product since all the discounts compound and thus do not compete with each other. For advanced scenarios, where the discount concurrency mode is Best price or Exclusive, with two or more priorities the below visio diagrams show the logic of what discounts will be displayed in the "View available discount" view based on whether the discount concurrency control is set to "Best price and compound within priority, never compound across priorities" or "Best price only within priority, always compound across priority"
 
-For discount concurrency control as **"Best price and compound within priority, never compound across priorities"**, refer the below image.
- ![Visio for Best price and compound within priority, never compound across priorities](./media/Model_1.png "Image for logic used in case of Best price and compound within priority, never compound across priorities").
+For discount concurrency control as **"Best price and compound within priority, never compound across priorities"**, refer the below image. 
+
+![Visio for Best price and compound within priority, never compound across priorities](./media/Model_1.png "Image for logic used in case of Best price and compound within priority, never compound across priorities").
 
 For discount concurrency control as **"Best price only within priority, always compound across priority"**, refer the below image.
- ![Visio for Best price only within priority, always compound across priority](./media/Model_2.png "Image for logic used in case of Best price only within priority, always compound across priority").
+
+![Visio for Best price only within priority, always compound across priority](./media/Model_2.png "Image for logic used in case of Best price only within priority, always compound across priority").
