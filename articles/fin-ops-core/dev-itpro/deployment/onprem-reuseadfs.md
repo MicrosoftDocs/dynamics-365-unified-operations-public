@@ -34,10 +34,11 @@ ms.dyn365.ops.version: Platform update 33
 
 This topic explains how to use the same instance of Active Directory Federation Services (AD FS) in multiple Dynamics 365 Finance + Operations (on-premises) environments.
 
->[!IMPORTANT]
-> This guide assumes that you have previosuly configured Active Directory Federation Services (AD FS) for one environment using the steps detailed in the setup guide and that environment is running without any problems.
-
 ## Setup
+
+>[!IMPORTANT]
+> This guide assumes that you have previosuly configured Active Directory Federation Services (AD FS) for one environment using the steps detailed in the [Set up and deploy on-premises](./setup-deploy-on-premises-environments.md) guide and that environment is running without any problems.
+
 
 1.  In AD FS Manager, go to AD FS > Application groups, and open Microsoft Dynamics 365 for Operations On-premises.
 2.  Under the Native application section:
