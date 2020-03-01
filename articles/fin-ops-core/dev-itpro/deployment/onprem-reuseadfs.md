@@ -46,7 +46,7 @@ This topic explains how to use the same instance of Active Directory Federation 
     b.  Open the Microsoft Dynamics 365 for Operations On-premises - Financial Reporting Web API Web API. Add the redirect URI of the new environment (https://ax.contoso.com/FinancialReporting).
 4.  Under the Server section:
     a.  (Optional) Open the Microsoft Dynamics 365 for Operations On-premises - Retail. Add the redirect URI of the new environment (https://ax.contoso.com/namespaces/AXSF/).
-5.  Optional: Configure the warehouse mobile app for the new environment by following [Configure the Warehousing app for on-premises deployments](./warehousing-for-on-remise-deployments.md) again. Simply use the new environment URL (https://ax.contoso.com) as the Resource URL.
+5.  Optional: Configure the warehouse mobile app for the new environment by following [Configure the Warehousing app for on-premises deployments](./warehousing-for-on-premise-deployments.md) again. Simply use the new environment URL (https://ax.contoso.com) as the Resource URL.
 >[!Note]
 > No additional configuration is required for the workflow and retail designer applications.
 6.  Check that you are able to reach the OpenID metadata endpoint (https://<adfs-dns-name>/adfs/.well-known/openid-configuration) from the AOS and MR nodes in your new environment. If you are using self-signed certificates you may need to import the AD FS SSL certificate to the Trusted Root Certification Authorities store in each node. 
