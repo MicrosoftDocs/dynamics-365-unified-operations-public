@@ -44,9 +44,9 @@ But in this article, we will take you through the steps for setting up a web app
 
 First, you must have content that you want to deploy to a website so that it can be accessed by the in-product Help pane. You can include a copy of Microsoft's content in your website, or you can deploy content that only describes your own functionality. For different scenarios of how how custom help matches the concrete solutions, see [Custom Help Overview](custom-help-overview.md).  
 
-If you want to include Microsoft's content, you must clone the GitHub repo manually or by using the [Custom Help Toolkit](custom-help-toolkit.md). The toolkit is available at [https://github.com/microsoft/dynamics365f-o-custom-help/](https://github.com/microsoft/dynamics365f-o-custom-help/).  
+If you want to include Microsoft's content, you must clone the GitHub repo manually or by using the [Custom Help Toolkit](custom-help-toolkit.md).  
 
-If you want to publish just your own content, you must have it available as HTML files. In [Extend, Customize, and Collaborate on the Help](contributor-guide.md), we suggest that you do what we do on the docs.microsoft.com sites: Create the content in MarkDown files and then use DocFx.exe to generate HTML files. The [HTML From Repos Generator tool](custom-help-toolkit-HtmlFromRepoGenerator.md) can help you prepare the HTML files even if you do not fork Microsoft's content.  
+If you want to publish just your own content, you must have it available as HTML files. In [Extend, Customize, and Collaborate on the Help](contributor-guide.md), we suggest that you do what we do on the *docs.microsoft.com* site: Create the content in MarkDown files and then use DocFx.exe to generate HTML files. The [Custom Help Toolkit](custom-help-toolkit.md) includes the [HTML From Repos Generator tool](custom-help-toolkit-HtmlFromRepoGenerator.md) that can help you prepare the HTML files even if you do not fork Microsoft's content.  
 
 ### Process overview
 
@@ -54,13 +54,13 @@ The general process for creating your Azure resources consists of the following 
 
 1. In the Azure portal, [create a resource group](#resgr).  
 
-2. In the Azure portal, [create a web app](#webapp), storage account, and [Azure Search Service](#searchservice).  
+2. In the Azure portal, [create a web app](#webapp), [a storage account](#jsonstorage), and [an Azure search service](#searchservice).  
 
-    - The Web App stores and serves HTML files  
+    - The web app stores and serves HTML files  
 
         The HTML files contain your Help content, no matter if it's based on Microsoft's content or not.  
 
-    - The Storage account stores JSON files  
+    - The storage account with a Blob container stores JSON files  
 
         The JSON files are your Help files converted to JSON so tht they can used to generate an index of your content for search purposes. For more information, see [Content and search indexing](custom-help-websites.md#content-and-search-indexing).  
 
@@ -113,37 +113,30 @@ Next, you add the HTML files to the web app. You can use an FTP client such as F
 
 ## <a name="jsonstorage"></a>Create storage for the JSON files
 
-Next, you will create a storage account with a Blob container that will store JSON files that are used by the search service that you will [create](#searchservice) and [configure](#searchconfig) later.
+Next, you will create a storage account with a Blob container that will store JSON files that are used by the search service that you will [create](#searchservice) and [configure](#searchconfig) later. For more information about Azure storage, see [Azure Storage Documentation](/azure/storage/).
 
 You can generate these JSON files from your Help files with the ConvertHtmlToJson tool that is part of the Custom Help Toolkit. For more information, see [Convert HTML To JSON tool](custom-help-toolkit-ConvertHtmlToJson.md).
 
 ### To create storage for the JSON files
 
-1. In the [Azure portal](https://portal.azure.com/), go to your resource group, choose **Add**, choose **Storage account**, and then fill in the fields in the form.  
+1. In the [Azure portal](https://portal.azure.com/), go to your resource group, choose **Add**, choose **Storage account**, and then fill in the fields in the form. For more information, see [Create a storage account](/azure/storage/common/storage-account-create#create-a-storage-account).  
 2. Validate and create the storage account.
 
     After the deployment is completed, the new Storage account is listed under the resource group.  
-3. Choose the storage account name, and under **Services**, choose **Blobs**, add a container, specify a name, and then choose OK.  
+3. Choose the storage account name, and under **Blob Service**, choose **Containers**, and then add a container. For more information, see [Quickstart: Upload, download, and list blobs with the Azure portal](/azure/storage/blobs/storage-quickstart-blobs-portal).  
+
+    > [!NOTE]
+    > You must specify if the content in the container must be publicly accessible. The **Public Access Level** can be set to any of its valid values.
 
 You can now upload the JSON files. You must create a folder structure that matches the folder structure you created for the HTML files to match the languages of your solution. For example, create en-US virtual folder in the container, and upload the en-US JSON files to this folder.  
 
-There are several ways to upload JSON files to the Blob container that you created earlier. If you prefer to use a UI, [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/) is a convenient tool for managing file operations by using Azure storage. If you prefer a command-line option, you can use AzCopy. For more information, see [Transfer data with the AzCopy on Windows](/azure/storage/common/storage-use-azcopy).  
+There are several ways to upload JSON files to the Blob container that you created earlier. If you prefer to use a UI, [Azure Storage Explorer](/azure/storage/blobs/storage-quickstart-blobs-storage-explorer) is a convenient tool for managing file operations by using Azure storage. If you prefer a command-line option, you can use AzCopy. For more information, see [Transfer data with the AzCopy on Windows](/azure/storage/common/storage-use-azcopy).  
 
-<!--Comment out for now>Here is the syntax:
+When your JSON files have been uploaded to the Azure Blob container, you must set up an indexer so that the content can be searched and found.
 
-```
-AzCopy /Source:C:\myfolder /Dest:https://myaccount.blob.core.windows.net/mycontainer /DestKey:key /S
-```
-
-This example shows how to upload the JSON files from local folder to the en-US virtual directory in *customhelpcontainer*.
-
-```
-AzCopy /Source:C:\Users\username\Desktop\customhelp\JSON /Dest: https://customhelpstorage.blob.core.windows.net/customhelpcontainer/en-US /DestKey:53vDyPAMPaXaxW/UEqWl4+/8+ssSfbdM yMqfgxiZ6h/LhKSUchTf0m6Z8HgBOTBzzUdaPvQu4bpdflejp6w== /S
-```
--->
 ## <a name="searchservice"></a>Create a search service
 
-Next, you will create a search service so that your content can be indexed and found by the in-product Help pane. For more information, see [Azure Search](/azure/search/).  
+Next, you will create a search service so that your content can be indexed and found by the in-product Help pane. For more information, see [Indexers in Azure Cognitive Search](/azure/search/search-indexer-overview).  
 
 ### To create a search service
 
@@ -153,7 +146,7 @@ Next, you will create a search service so that your content can be indexed and f
 
 ## <a name="searchconfig"></a>Configure the search service
 
-In the previous section, you created a search service. You must now configure it by creating a data source, index, and indexer, so that the JSON files that you uploaded to the BLOB container will be indexed and searchable. In the examples that follow, Postman is used to make several API calls. However, you can use your own method to call those APIs.  
+In the previous section, you created a search service. You must now configure it by creating a data source, index, and indexer, so that the JSON files that you uploaded to the Blob container will be indexed and searchable. You can see an example of how this works in the Azure docs at [Quickstart: Create an Azure Cognitive Search index in the Azure portal](/azure/search/search-get-started-portal). But for the purposes . In the examples that follow, Postman is used to make several API calls. However, you can use your own method to call those APIs.  
 
 ### To create a data source
 
