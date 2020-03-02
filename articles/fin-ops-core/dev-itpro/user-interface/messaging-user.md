@@ -156,8 +156,6 @@ When a validation issue has been corrected so that the corresponding message in 
 
 If the developer needs more control over when a message needs to be removed from the UI, the **Message()** API can be utilized. See the [Messaging APIs](messaging-api-center-bar-details.md) article for more details.  
 
-(In AX 2012, when a user enters data that is determined to be invalid or when the data isn't found, the previous valid value is returned to the field, and focus moves from the form to a different window, the Infolog. If the user is doing "heads-down" data entry, he or she must then stop, move focus back to the field that had the invalid value, and type a correcting entry. Additionally, because the invalid value is cleared, even if the user transposed a single number or mistyped a single character, he or she must retype the whole value. The "invalid value" message remains on the screen, and the user must manually clear it.) 
-
 ## I'm migrating from an older version. How do I change my existing code to use the new messaging system?
 *In many cases, no changes are required.* The messaging framework was designed to innovate and maintain backward compatibility for many common scenarios. In some cases, the program might improve the wording of messages. Alternatively, the program might use **error()** instead of **warning()**, or **warning()** instead of **error()**, to better align with the usage guidance (warnings are for data that isn't valid, whereas errors are for failed actions). In other cases, you might decide that messages that appear on a slider dialog are more appropriate for the parent page.
 
