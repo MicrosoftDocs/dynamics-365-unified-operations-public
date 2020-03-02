@@ -44,6 +44,7 @@ Microsoft Dynamics AX 2012 uses an all-purpose window that opens to display a li
 -   A deterministic means of displaying the message
 
 ## Where can messages be surfaced to users? 
+Messages in Finance and Operations apps are generally shown in one of these places: message bars, the Action center, or message boxes.  
 
 ### Message bars – Messages for synchronous tasks on the current page
 Message bars are available on primary pages, and in drop dialogs and slider dialogs. Message bars are used primarily for data validation. They can also be used to communicate messages about the state of a page or data, such as messages that are used for date effectivity. Message bars can express **info**, **warning**, and **error** statuses. Message bars should not be used for messages that require the user's immediate attention. A message bar appears when a message is first received and must be used to communicate messages only about the current page. Messages that are sent to message bars are associated with the current page. Therefore, when the user navigates away from a page that includes message bars, those messages won't appear on the new page. However, if the user navigates back to the original page, the page's messages will once again appear. Include the following information in messages:
@@ -110,36 +111,14 @@ If a task (batch job or other operation) fails, it's often appropriate to notify
 ## Will my message end up in a message bar or in the Action center? 
 The messaging system is *deterministic*. In other words, the messaging system uses the context of the call to determine the best way to show the message to the user. Messages are shown either in a message bar that appears at the top of pages or in the Action center, which appears in the navigation bar. The location of the message depends on where in code the message is sent from.
 
+In general:
 -   If the message is caused by a page action that is synchronous (that is, the user must wait for the result), the result is shown in a message bar on the current page. (The exception is a slider dialog that was closed immediately after the action was started. Messages for slider dialogs "bubble up" to the parent page.)
 -   If the message is caused by an action (for example, a batch job) that is asynchronous (disconnected) and the user can continue to perform other tasks or even navigate to another page while that action is being processed, the message is routed to the Action center.
 
-A (potentially) long-running task should not present a message bar to the user, because message bars at the top of a page are used to present information about the current page, not some background task that might have started hours earlier. In some cases, a user who has many background tasks running continues to navigate between pages while the tasks are being completed. Therefore, messages that are presented on the current page to notify the user about background tasks are easily overlooked or ignored. Therefore, by design, background tasks send their messages to the Message Center. When a new message appears in the Message Center, a notification informs the user, who might be waiting for the results of an asynchronous task.
+### Messaging from asynchronous or long-running background tasks 
+A (potentially) long-running task should not present a message bar to the user, because message bars at the top of a page are used to present information about the current page, not some background task that might have started hours earlier. In some cases, a user who has many background tasks running continues to navigate between pages while the tasks are being completed. Therefore, messages that are presented on the current page to notify the user about background tasks are easily overlooked or ignored. Therefore, by design, background tasks send their messages to the Action center. When a new message appears in the Action center, a notification informs the user, who might be waiting for the results of an asynchronous task.
 
-## When are validation messages cleaned up? 
-In AX 2012, when a user enters data that is determined to be invalid or when the data isn't found, the previous valid value is returned to the field, and focus moves from the form to a different window, the Infolog. If the user is doing "heads-down" data entry, he or she must then stop, move focus back to the field that had the invalid value, and type a correcting entry. Additionally, because the invalid value is cleared, even if the user transposed a single number or mistyped a single character, he or she must retype the whole value. The "invalid value" message remains on the screen, and the user must manually clear it. 
-
-However, with the messaging system in use for Finance and Operations apps, the validation message (called using the same APIs) appears in a message bar on the page itself in a passive manner. The invalid value remains but is flagged as invalid. The user can continue to enter data and can correct the validation issue at any point before the data is saved.
-
-When a validation issue has been corrected so that the corresponding message in the message bar is no longer valid, the messaging system removes the message. The timing of message removal depends on the level where the validation logic is defined.
-
--   If the validation logic is defined at the control or field level, the message is removed when a valid value is entered in the control or field.
--   If the validation logic is defined at the table level, the message is removed the next time that the user crosses a save boundary.
-
-If the developer needs more control over when a message needs to be removed from the UI, the **Message()** API can be utilized. See the [Messaging APIs](..) article for more details.  
-
-
-## How do I change my existing code to use the new messaging system?
-*In many cases, no changes are required.* The messaging framework was designed to innovate and maintain backward compatibility for many common scenarios. In some cases, the program might improve the wording of messages. Alternatively, the program might use **error()** instead of **warning()**, or **warning()** instead of **error()**, to better align with the usage guidance (warnings are for data that isn't valid, whereas errors are for failed actions). In other cases, you might decide that messages that appear on a slider dialog are more appropriate for the parent page.
-
-
-
-#### Why are asynchronous tasks messages sent to the Message Center?
-
-
-
-
-
-## Messaging from dialogs and slider dialogs
+### Messaging from dialogs and slider dialogs
 The deterministic messaging system tries to send messages to the current page. However, not every call from a dialog or slider dialog is routed to that dialog or slider. In some cases, the messaging system sends the message to the parent page instead. This behavior can occur when the messaging system is called while the dialog or slider is being closed. In some cases, the messaging system can be called when the close process for the dialog or slider is started, but the client interrupts the close process for valid reasons. Therefore, there is a "point of no return," after which the messaging system no longer tries to send a message to the dialog or slider, and instead sends the message to the parent page. When the user clicks the **OK** button on the form is entering its closing sequence, shown in the code example that follows.
 
 ```xpp
@@ -159,17 +138,24 @@ Close()
 
 If the client calls **closeOK()** or **close()** directly, then the final result might be the page or the parent page.
 
-## Detailed, multi-result messaging that uses SetPrefix() and the Message details pane
-The results of **SetPrefix()** don't actively interrupt the user. Instead, the results are collected and stored, and a message bar or a Message Center notification is presented to the user. This message bar or Message Center notification indicates that the related task has been completed, and that there might be messages for the user to review. The *notification of results* message uses the task's first call to **SetPrefix()** to frame the message. (This behavior resembles the behavior in Dynamics AX 2012, where the first call is the “title” of the results). In the following example, the text “Posting Results” comes from the first call to **SetPrefix()**. 
+## When are validation messages cleaned up? 
+In AX 2012, when a user enters data that is determined to be invalid or when the data isn't found, the previous valid value is returned to the field, and focus moves from the form to a different window, the Infolog. If the user is doing "heads-down" data entry, he or she must then stop, move focus back to the field that had the invalid value, and type a correcting entry. Additionally, because the invalid value is cleared, even if the user transposed a single number or mistyped a single character, he or she must retype the whole value. The "invalid value" message remains on the screen, and the user must manually clear it. 
 
-![SetPrefix example](./media/messaging_messagedetailsmessagebar.jpg) 
+However, with the messaging system in use for Finance and Operations apps, the validation message (called using the same APIs) appears in a message bar on the page itself in a passive manner. The invalid value remains but is flagged as invalid. The user can continue to enter data and can correct the validation issue at any point before the data is saved.
 
-The user can then click the **Message Details** link in the message bar to open the **Message details** pane. 
+When a validation issue has been corrected so that the corresponding message in the message bar is no longer valid, the messaging system removes the message. The timing of message removal depends on the level where the validation logic is defined.
 
-![Message details pane](./media/messaging_messagedetailspane.jpg)
+-   If the validation logic is defined at the control or field level, the message is removed when a valid value is entered in the control or field.
+-   If the validation logic is defined at the table level, the message is removed the next time that the user crosses a save boundary.
 
-## SetPrefix() – Creating a collection of related messages
-You use **SetPrefix()** to create collections of related messages. This API is largely backward compatible but is presented in a non-interrupting manner. A results window isn't opened directly. Instead, the user is passively interrupted by the appearance of a message bar on the page that started the task that used the **SetPrefix()** API to group the result messages into a collection. The message bar that notifies the user about the existence of the message collection reflects the severity of the most critical message in the collection. For example, if the collection contains no errors or warnings, the message bar is of the **info** type. 
+If the developer needs more control over when a message needs to be removed from the UI, the **Message()** API can be utilized. See the [Messaging APIs](..) article for more details.  
+
+
+## I'm migrating from an older version. How do I change my existing code to use the new messaging system?
+*In many cases, no changes are required.* The messaging framework was designed to innovate and maintain backward compatibility for many common scenarios. In some cases, the program might improve the wording of messages. Alternatively, the program might use **error()** instead of **warning()**, or **warning()** instead of **error()**, to better align with the usage guidance (warnings are for data that isn't valid, whereas errors are for failed actions). In other cases, you might decide that messages that appear on a slider dialog are more appropriate for the parent page.
+
+## How to create a collection of related messages?  
+You use **SetPrefix()** to create collections of related messages [See the [Messaging APIs](...) for more details on **SetPrefix()**]. This API is largely backward compatible but is presented in a non-interrupting manner. A results window isn't opened directly; instead, the user is passively notified by either an Action center message or a message bar on the page that started the task that used the **SetPrefix()** API to group the result messages into a collection. The message severity shown to the user reflects the severity of the most critical message in the collection. For example, if the collection contains no errors or warnings, the message bar is of the **info** type. 
 
 ![Example of info type message bar](./media/messaging_messagedetailsmessagebar.jpg) 
 
@@ -181,22 +167,7 @@ If the collection contains one or more calls to **error()**, the message bar is 
 
 ![Example of error type message bar](./media/messaging_messagedetailserrormessagebar.jpg) 
 
-**Example**
-
-```xpp
-myMethod()
-{
-    Setprefix("Posting Results");
-    Setprefix("Invoice Account: DE-001);
-    Info("Invoice FTI-000002 has been posted);
-}
-```
-
-> [!NOTE]
-> If a collection contains only a parent and a single message, that single message is sent to a message bar, and no SetPrefix window is used.
-
-## SetPrefix() and asynchronous processes
-The use of **SetPrefix()** is also deterministic. In other words, if you use **SetPrefix()**, and there is no page context (for example, an asynchronous batch operation), the notification of results is sent to the Message Center, which isn't associated with any page.
+The use of **SetPrefix()** is also deterministic. In other words, if you use **SetPrefix()**, and there is no page context (for example, an asynchronous batch operation), the notification of results is sent to the Action center, which isn't associated with any page.
 
 
 
