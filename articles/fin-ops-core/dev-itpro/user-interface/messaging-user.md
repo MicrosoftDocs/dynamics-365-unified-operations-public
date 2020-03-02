@@ -3,7 +3,7 @@
 
 title: Messaging system for Finance and Operations apps
 description: This topic describes the rich, powerful messaging system that replaces the Infolog window that was used Microsoft Dynamics AX 2012.
-author: RobinARH
+author: jasongre
 manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 50401
 ms.assetid: ce9d2312-c02e-4649-a7e4-33c3a06dfbd4
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tlefor
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
