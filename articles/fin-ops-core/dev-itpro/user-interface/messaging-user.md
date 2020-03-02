@@ -148,14 +148,14 @@ When a validation issue has been corrected so that the corresponding message in 
 -   If the validation logic is defined at the control or field level, the message is removed when a valid value is entered in the control or field.
 -   If the validation logic is defined at the table level, the message is removed the next time that the user crosses a save boundary.
 
-If the developer needs more control over when a message needs to be removed from the UI, the **Message()** API can be utilized. See the [Messaging APIs](..) article for more details.  
+If the developer needs more control over when a message needs to be removed from the UI, the **Message()** API can be utilized. See the [Messaging APIs](messaging-api-center-bar-details.md) article for more details.  
 
 
 ## I'm migrating from an older version. How do I change my existing code to use the new messaging system?
 *In many cases, no changes are required.* The messaging framework was designed to innovate and maintain backward compatibility for many common scenarios. In some cases, the program might improve the wording of messages. Alternatively, the program might use **error()** instead of **warning()**, or **warning()** instead of **error()**, to better align with the usage guidance (warnings are for data that isn't valid, whereas errors are for failed actions). In other cases, you might decide that messages that appear on a slider dialog are more appropriate for the parent page.
 
 ## How to create a collection of related messages?  
-You use **SetPrefix()** to create collections of related messages [See the [Messaging APIs](...) for more details on **SetPrefix()**]. This API is largely backward compatible but is presented in a non-interrupting manner. A results window isn't opened directly; instead, the user is passively notified by either an Action center message or a message bar on the page that started the task that used the **SetPrefix()** API to group the result messages into a collection. The message severity shown to the user reflects the severity of the most critical message in the collection. For example, if the collection contains no errors or warnings, the message bar is of the **info** type. 
+You use **SetPrefix()** to create collections of related messages [See the [Messaging APIs](messaging-api-center-bar-details.md) for more details on **SetPrefix()**]. This API is largely backward compatible but is presented in a non-interrupting manner. A results window isn't opened directly; instead, the user is passively notified by either an Action center message or a message bar on the page that started the task that used the **SetPrefix()** API to group the result messages into a collection. The message severity shown to the user reflects the severity of the most critical message in the collection. For example, if the collection contains no errors or warnings, the message bar is of the **info** type. 
 
 ![Example of info type message bar](./media/messaging_messagedetailsmessagebar.jpg) 
 
