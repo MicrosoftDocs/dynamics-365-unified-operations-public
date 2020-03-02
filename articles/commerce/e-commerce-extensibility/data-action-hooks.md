@@ -5,7 +5,7 @@ title: Data action hooks
 description: This topic describes how to hook into pre- and post- data action events to further process data if needed.
 author: samjarawan
 manager: annbe
-ms.date: 02/28/2020
+ms.date: 03/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -41,7 +41,7 @@ The set of modules included with the Dynamics 365 Commerce software development 
 ## Supported data action hook events
 
 The following data action hook events are supported:
-- **prehook**: Runs before the action starts to modify the data action input. Note that this is only applied to uncached data actions.
+- **preHook**: Runs before the action starts to modify the data action input. Note that this is only applied to uncached data actions.
 - **preReadOnlyHook**: Runs before the action starts but cannot modify the data action input. Note that this can be applied to both cached and uncached data actions.
 - **postHook**: Runs after the data action completes and can modify the data action output. Note that this is only applied to uncached data actions.
 - **postReadOnlyHook**: Runs after the data action completes but cannot modify the data action output. This is supported on both cached and uncached data actions.
