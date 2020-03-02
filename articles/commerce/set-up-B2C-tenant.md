@@ -5,7 +5,7 @@ title: Set up a B2C tenant in Commerce
 description: This topic describes how to set up your Azure Active Directory (Azure AD) business-to-consumer (B2C) tenants for user site authentication in Dynamics 365 Commerce.
 author: BrianShook
 manager: annbe
-ms.date: 02/26/2020
+ms.date: 03/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
