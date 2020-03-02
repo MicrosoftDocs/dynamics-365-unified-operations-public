@@ -2,7 +2,7 @@
 # required metadata
 
 title: Messaging system for Finance and Operations apps
-description: This topic describes the rich, powerful messaging system that replaces the Infolog window that was used Microsoft Dynamics AX 2012.
+description: This topic describes the rich, powerful messaging system in Finance and Operations apps.
 author: jasongre
 manager: AnnBe
 ms.date: 07/09/2018
@@ -34,14 +34,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the rich, powerful messaging system that replaces the Infolog window that was used Microsoft Dynamics AX 2012.
+This topic describes the rich, powerful messaging system in Finance and Operations apps.
 
-Microsoft Dynamics AX 2012 uses an all-purpose window that opens to display a list of the most recently reported informational messages, warnings, or errors. This window is appropriately and generically named the Information Log or Infolog. Although the Infolog is a beneficial tool in some cases, its “one size fits all” approach was judged to be ineffective for differentiating the severity of messages and the need to interrupt the user. The richer, more powerful messaging system provides the following:
+A new messaging system was created for Finance and Operations apps to improve this experience. Compared to earlier versions, the messaging system for Finance and Operations apps includes the following features:
 
--   Improved association of a message with its context
--   Improved level of interruption (none, subtle, and interrupting)
--   Improved clarity between types of messages
--   A deterministic means of displaying the message
++ Improved association of a message with its context (form versus global).
++ Improved level of interruption (none, subtle, and interrupting).
++ Improved clarity between types of messages and their use.
++ The control that is used to display messages is deterministic and based on form context.
 
 ## Where can messages be surfaced to users? 
 Messages in Finance and Operations apps are generally shown in one of these places: message bars, the Action center, or message boxes.  
@@ -52,13 +52,21 @@ Message bars are available on primary pages, and in drop dialogs and slider dial
 -   The condition that generated the message.
 -   The result if the user continues without resolving the condition that generated the message.
 
-**Examples**
+### Examples
 
--   This customer is marked as inactive.
--   Customer validation has failed.
--   The transaction on voucher do not balance.
+```Console
+This customer is marked as inactive.
+```
 
-**Presentation** 
+```Console
+Customer validation has failed.
+```
+
+```Console
+The transaction on voucher do not balance.
+```
+
+### Presentation
 
 ![Screenshot of message bars](./media/messaging_messagebartypes.jpg)
 
@@ -79,20 +87,20 @@ An error message should include the following two components:
 -   **The main instruction** – This text appears in bold.
 -   **The message details** – This text appears below the main instruction.
 
-**Examples**
+### Examples
 
 -   You can’t delete the reference number because the reference number is used in version %1.
 -   You have insufficient rights to perform this export.
 -   The root folder for catalog import processing is not configured. Configure the root folder using the Vendor catalog import parameters form.
 
-**Presentation** 
+### Presentation
 
 ![Example of error message](./media/messaging_boxapi.jpg) 
 
 Messages of the **error** type block the user’s interaction by overlaying the current page with a modal “light box” that contains the message.
 
 ## Should I show the user a notification, a warning, or an error?
-Historically, the **info**, **warning** (**checkFailed**), and **error** statuses weren't always used consistently across scenarios. A message might be reported as a warning in one scenario but as an error in another scenario. When you're deciding which status to express, use these definitions:
+In earlier versions of Finance and Operations apps, the **info**, **warning** (**checkFailed**), and **error** statuses weren't always used consistently across scenarios. A message might be reported as a warning in one scenario but as an error in another scenario. When you're deciding which status to express, use these definitions:
 
 -   **Notification** – A notification informs the user about events that might or might not be related to the current user activity. A notification can be caused by a user action or a system event, or it can provide information from the program that might be useful. Typically, a notification doesn't require immediate user action. You notify the user by using the **info()** application programming interface (API).
 -   **Warning** – A warning alerts the user about a condition that might cause an issue in the future. Specifically, a warning is used for data that is in an incorrect state. Although any attempt to use this invalid data might produce an error, the fact that the current state of the data is incorrect isn't an error condition, and *the user should only be warned about the incorrect state of the data*. You express data validation issues by using the **warning()** or **checkFailed()** API.
@@ -139,9 +147,7 @@ Close()
 If the client calls **closeOK()** or **close()** directly, then the final result might be the page or the parent page.
 
 ## When are validation messages cleaned up? 
-In AX 2012, when a user enters data that is determined to be invalid or when the data isn't found, the previous valid value is returned to the field, and focus moves from the form to a different window, the Infolog. If the user is doing "heads-down" data entry, he or she must then stop, move focus back to the field that had the invalid value, and type a correcting entry. Additionally, because the invalid value is cleared, even if the user transposed a single number or mistyped a single character, he or she must retype the whole value. The "invalid value" message remains on the screen, and the user must manually clear it. 
-
-However, with the messaging system in use for Finance and Operations apps, the validation message (called using the same APIs) appears in a message bar on the page itself in a passive manner. The invalid value remains but is flagged as invalid. The user can continue to enter data and can correct the validation issue at any point before the data is saved.
+With the messaging system in use for Finance and Operations apps, the validation message (called using the same APIs) appears in a message bar on the page itself in a passive manner. The invalid value remains but is flagged as invalid. The user can continue to enter data and can correct the validation issue at any point before the data is saved.
 
 When a validation issue has been corrected so that the corresponding message in the message bar is no longer valid, the messaging system removes the message. The timing of message removal depends on the level where the validation logic is defined.
 
@@ -150,12 +156,13 @@ When a validation issue has been corrected so that the corresponding message in 
 
 If the developer needs more control over when a message needs to be removed from the UI, the **Message()** API can be utilized. See the [Messaging APIs](messaging-api-center-bar-details.md) article for more details.  
 
+(In AX 2012, when a user enters data that is determined to be invalid or when the data isn't found, the previous valid value is returned to the field, and focus moves from the form to a different window, the Infolog. If the user is doing "heads-down" data entry, he or she must then stop, move focus back to the field that had the invalid value, and type a correcting entry. Additionally, because the invalid value is cleared, even if the user transposed a single number or mistyped a single character, he or she must retype the whole value. The "invalid value" message remains on the screen, and the user must manually clear it.) 
 
 ## I'm migrating from an older version. How do I change my existing code to use the new messaging system?
 *In many cases, no changes are required.* The messaging framework was designed to innovate and maintain backward compatibility for many common scenarios. In some cases, the program might improve the wording of messages. Alternatively, the program might use **error()** instead of **warning()**, or **warning()** instead of **error()**, to better align with the usage guidance (warnings are for data that isn't valid, whereas errors are for failed actions). In other cases, you might decide that messages that appear on a slider dialog are more appropriate for the parent page.
 
 ## How to create a collection of related messages?  
-You use **SetPrefix()** to create collections of related messages [See the [Messaging APIs](messaging-api-center-bar-details.md) for more details on **SetPrefix()**]. This API is largely backward compatible but is presented in a non-interrupting manner. A results window isn't opened directly; instead, the user is passively notified by either an Action center message or a message bar on the page that started the task that used the **SetPrefix()** API to group the result messages into a collection. The message severity shown to the user reflects the severity of the most critical message in the collection. For example, if the collection contains no errors or warnings, the message bar is of the **info** type. 
+You use **SetPrefix()** to create collections of related messages [See the [Messaging APIs](messaging-api-center-bar-details.md) for more details on **SetPrefix()**. This API is largely backward compatible but is presented in a non-interrupting manner. A results window isn't opened directly; instead, the user is passively notified by either an Action center message or a message bar on the page that started the task that used the **SetPrefix()** API to group the result messages into a collection. The message severity shown to the user reflects the severity of the most critical message in the collection. For example, if the collection contains no errors or warnings, the message bar is of the **info** type. 
 
 ![Example of info type message bar](./media/messaging_messagedetailsmessagebar.jpg) 
 
