@@ -140,8 +140,7 @@ From the financial reports list, you can create a new report or modify an existi
 There are a few common issues that can cause problems for users trying to open Report Designer:
 
 Issue 1: You click New or Edit, but Report Designer does not start
-* Add the Dynamics 365 for Finance URL as a Trusted Site.
- * In Internet Explorer, click Settings, then click Internet Options. Click the Security tab. Select Trusted Sites and then click Sites. In the Add this website to zone, enter "*.dynamics.com" (without quotes), and then click Add. 
+* In Internet Explorer, click Settings, then click Internet Options. Click the Security tab. Select Trusted Sites and then click Sites. In the Add this website to zone, enter "*.dynamics.com" (without quotes), and then click Add. 
 * In Internet Explorer, click Settings, then click Internet Options. Click the Security tab. Select Trusted Sites. In the area labeled Security level for this zone, change the sliding bar to Medium-Low
 * Disable the pop-up blocker in browser.
 * Workstations are required to install .Net 4.6.2 or higher.
