@@ -171,10 +171,10 @@ The Dynamics 365 Payment Connector for Adyen takes advantage of the device-agnos
 | Diners | Standard | ✔ | ✔ | ✔ |
 | Dineromail | Standard | ✔ | ✔ | ✔ |
 | JCB | Standard | ✔ | ✔ | ✔ |
-| Union Pay* | Standard | ✔ |  |  |
-| Interac Debit* | Standard | ✔ |  |  |
+| Union Pay\* | Standard | ✔ |  |  |
+| Interac Debit\* | Standard | ✔ |  |  |
 
-*Interac and Union Pay recurring card tokens are not provided by Adyen, so they are cannot be supported for card not present transactions.
+\*Interac and Union Pay recurring card tokens are not provided by Adyen, so they are cannot be supported for card not present transactions.
 
 #### Supported gift cards
 | Scheme | Card present | Card not present |
