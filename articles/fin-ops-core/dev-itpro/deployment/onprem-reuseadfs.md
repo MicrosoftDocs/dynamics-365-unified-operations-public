@@ -5,7 +5,7 @@ title: Reuse the same AD FS instance for multiple environments
 description: This topic explains how to use the same instance of Active Directory Federation Services (AD FS) in multiple Dynamics 365 Finance + Operations (on-premises) environments.
 author: faix
 manager: AnnBe
-ms.date: 03/01/2020
+ms.date: 03/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,7 +23,7 @@ ms.search.scope: Operations
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: osfaixat
-ms.search.validFrom: 2020-03-01 
+ms.search.validFrom: 2020-03-31 
 ms.dyn365.ops.version: Platform update 33 
 
 ---
