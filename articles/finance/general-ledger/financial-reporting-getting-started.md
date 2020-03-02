@@ -148,7 +148,7 @@ This version of the Microsoft .NET Framework can be downloaded and installed fro
 
 
 Issue 2: User can proceed past the login page, but are unable to complete login within Report Designer. In this case, the user does not have sufficient permissions to use Financial Reporting, or permissions have not yet integrated into Financial Reporting. 
-* Required permissions are listed above in [Granting security access to Financial Reporting](./financial-reporting-getting-started#financial-reporting-getting-started.md). The user integration is based off of the exact privileges listed above and users will not have acccess unless those privileges or another security role with those privileges linked are assigned to the relevant financial reporting users. 
+* Required permissions are listed above in [Granting security access to Financial Reporting](./financial-reporting-getting-started#granting-security-access-to-financial-reporting). The user integration is based off of the exact privileges listed above and users will not have acccess unless those privileges or another security role with those privileges linked are assigned to the relevant financial reporting users. 
 * The user integration runs on a 5-minute interval, so it may take up to 10 minutes for any permission changes to integrate across into financial reporting. 
 * You can verify this is the issue by proceeding to click **Yes** and then click **Test Connection**. If this is the cause, you will see a specific error message that "Connection attempt failed. user does not have appropriate permissions to connect to the server. Contact your system administrator. 
 
