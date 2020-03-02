@@ -5,7 +5,7 @@ title: Preview features in Platform update 34 for Finance and Operations apps (M
 description: This topic lists the features that are in preview in Platform update 34 for Finance and Operations apps. 
 author: sericks007
 manager: AnnBe
-ms.date: 02/26/2020
+ms.date: 03/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -44,8 +44,8 @@ For more information about Platform update 34, see [Additional resources](whats-
 
 ## Features included in this release
 
-- [Embed actions in the message bar](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=42fd36c8-3d5c-ea11-a811-000d3a579c39) - For more information, see [Messaging APIs: Action center, message bar, and message details](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/user-interface/messaging-api-center-bar-details).
-- [Updates to Saved views](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=abfdf192-d91d-ea11-a811-000d3a8f0f1e) - In this update, in addition to bug fixes, task recorder support was added for saved views. To ensure users are able to fully utilize recordings, recordings should be created using published views or the Standard view for every form encountered during the recording. For more information, see [Task recorder resources](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/user-interface/task-recorder).
+- [Embed actions in the message bar](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=42fd36c8-3d5c-ea11-a811-000d3a579c39) - For more information, see [Messaging APIs: Action center, message bar, and message details](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/user-interface/messaging-api-center-bar-details).
+- [Updates to Saved views](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=abfdf192-d91d-ea11-a811-000d3a8f0f1e) - In this update, in addition to bug fixes, task recorder support was added for saved views. To ensure users are able to fully utilize recordings, recordings should be created using published views or the Standard view for every form encountered during the recording. For more information, see [Task recorder resources](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/user-interface/task-recorder).
 - [Continued stabilization of the new grid control](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=ebd342bc-d91d-ea11-a811-000d3a8f0f1e) 
 - [Feature name](URL to feature description in the Release plans) - For more information, see [title of content that contains details about the feature](URL to the content that contains details about the feature).
 - [Feature name](URL to feature description in the Release plans) - For more information, see [title of content that contains details about the feature](URL to the content that contains details about the feature).
