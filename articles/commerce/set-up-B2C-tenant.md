@@ -363,9 +363,9 @@ An optional, secondary administrator account can be added in the **Users** secti
 
 [Upload URL redirects in bulk](upload-bulk-redirects.md)
 
-[Configure multiple B2C tenants in a Commerce environment](configure-multi-B2C-tenants.md)
-
 [Set up custom pages for user logins](custom-pages-user-logins.md)
+
+[Configure multiple B2C tenants in a Commerce environment](configure-multi-B2C-tenants.md)
 
 [Add support for a content delivery network (CDN)](add-cdn-support.md)
 
