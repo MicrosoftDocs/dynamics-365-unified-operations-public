@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Removed or deprecated Finance features
+title: Removed or deprecated features in Finance 
 description: This topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Platform update 33
 
 ---
 
-# Removed or deprecated Finance features
+# Removed or deprecated features in Finance
 
 [!include [banner](../includes/banner.md)]
 
