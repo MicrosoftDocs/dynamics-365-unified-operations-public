@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Messaging APIs: Action center, message bar, and message details
+title: Messaging APIs - Action center, message bar, and message details
 description: This topic describes the messaging system.
 author: jasongre
 manager: AnnBe
