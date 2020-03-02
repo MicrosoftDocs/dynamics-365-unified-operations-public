@@ -2062,7 +2062,7 @@
           href: dev-itpro/commerce-application-insights.md
         - name: Create async Commerce (CRT) APIs in your business logic
           href: dev-itpro/async-commerce-extension.md
-        - name: Pre-extended columns in the Channel Database
+        - name: Pre-extended columns in the channel database
           href: dev-itpro/extended-columns.md
       - name: Payment connector extensibility
         items:
