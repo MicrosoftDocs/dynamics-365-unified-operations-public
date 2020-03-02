@@ -55,7 +55,7 @@ For more information about Platform update 34, see [Additional resources](whats-
 
 ### Platform update 34 bug fixes
 
-For information about the bug fixes that are included in each update, sign in to LCS, and view [this KB article](https://fix.lcs.dynamics.com/Issue/ADDLINK).
+For information about the bug fixes that are included in each update, sign in to LCS, and view [this KB article](https://lcs.dynamics.com/v2).
 
 ### Dynamics 365: 2020 release wave 1 plan
 
