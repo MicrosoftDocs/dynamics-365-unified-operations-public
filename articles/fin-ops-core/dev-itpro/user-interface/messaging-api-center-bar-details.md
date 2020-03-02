@@ -27,7 +27,6 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Messaging APIs: Action center, message bar, and message details
@@ -89,7 +88,7 @@ The message can then be cleared when a new record is shown on the page.
 Message::Remove(messageId);
 ```
 
-Secondly, starting in 10.0.10 / Platform update 34, the **Message::AddAction()** method can be used to embed an action within a message (though this is only currently supported for messages that are routed to the message bar). This method supports adding a single action that is associated with a display or action menu item, which is then visualized as a link button. In this example, a message is triggered for a system administrator indicating a particular required batch job is not running and exposes an action to go directly to the Batch jobs page.  
+Next, starting in version 10.0.10 Platform update 34, the **Message::AddAction()** method can be used to embed an action within a message (though this is only currently supported for messages that are routed to the message bar). This method supports adding a single action that is associated with a display or action menu item, which is then visualized as a link button. In this example, a message is triggered for a system administrator indicating a particular required batch job is not running and exposes an action to go directly to the Batch jobs page.  
 
 ![Example of the Message:AddAction API used for embedding an action in a message](./media/cli-messageAddAction.png)
 
