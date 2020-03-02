@@ -2,7 +2,7 @@
 # required metadata
 
 title: Access to finance and tax reference data
-description: 
+description: This topic provides information about access to finance and tax reference data.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 01/27/2020
@@ -36,10 +36,9 @@ ms.search.validFrom: 2020-01-27
 
 [!include [banner](../../includes/preview-banner.md)]
 
-Every business operates with a basic set of financial data like fiscal calendar year, currency to transact in, accounts from where the money to run the business comes in or goes out, tax rates, and remittance. This information resides in Finance and Operations apps,
-but exposed to Common Data Service so that model-driven apps in Dynamics 365 can run based on a single source for finance and tax data. This brings uniformity across the business ecosystem. 
+Every business works with a basic set of financial data, such as the fiscal calendar year, the currency that business is transacted in, the accounts that the money to run the business comes in to or goes out of, tax rates, and remittance. This data resides in Finance and Operations apps. However, it's exposed to Common Data Service so that model-driven apps in Microsoft Dynamics 365 can have a single source for finance and tax data. In this way, data is uniform across the business ecosystem. 
 
-Finance and tax data are integrating using these mappings:
-+ [Integrated ledger](ledger-mapping.md).
-+ [Integrated tax master](tax-mapping.md).
+Finance and tax data is integrated by using the following mappings:
 
++ [Integrated ledger](ledger-mapping.md)
++ [Integrated tax master](tax-mapping.md)
