@@ -2,7 +2,7 @@
 # required metadata
 
 title: In-house assets for servicing
-description: 
+description: This topic describes how you can use Microsoft Dtnamics 365 Field Service to service both customer assets and in-house assets.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 01/27/2020
@@ -36,27 +36,27 @@ ms.search.validFrom: 2020-01-27
 
 [!include [banner](../../includes/preview-banner.md)]
 
-Dynamics 365 Field Service is designed to service customer assets.  Asset Management for Microsoft Dynamics 365 Supply Chain Management is designed to maintain in-house assets. Integrating these two applications on assets helps you use Dynamics 365 Field Service for servicing both customer assets and in-house assets. Also, you can classify the assets based on functional location or hierarchy and track the servicing at a minute level.
+Microsoft Dynamics 365 Field Service is designed to service customer assets. Asset management for Dynamics 365 Supply Chain Management is designed to maintain in-house assets. Integration of these two apps on assets lets you use Field Service to service both customer assets and in-house assets. You can also classify the assets, based on functional location or hierarchy, and track the servicing at a detailed level.
 
 For more information, see [Integrate Dynamics 365 Field Service and Supply Chain Management](https://docs.microsoft.com/dynamics365/field-service/supply-chain-field-service-integration).
 
 ## Templates
 
-In-house-assets includes a collection of core entity maps that work together during data interaction, as shown in the following table.
+In-house-assets include a collection of core entity maps that work together during data interaction, as shown in the following table.
 
-Finance and Operations apps | Model-driven app in Dynamics 365 | Description
------------------------|--------------------------------|---
-Asset management asset lifecycle models | msdyn_assetlifecyclemodels |
-Asset management asset lifecycle states | msdyn_assetlifecyclestates |
-Asset management assets | msdyn_customerassets |
-Asset management asset types | msdyn_customerassetcategories |
-Asset management functional location lifecycle models | msdyn_functionallocationlifecyclemodels |
-Asset management functional location lifecycle states | msdyn_functionallocationlifecyclestates |
-Asset management functional locations | msdyn_functionallocations |
-Asset management functional location types | msdyn_functionallocationtypes |
-Asset management manufacturers | msdyn_manufacturers |
-Asset management models | msdyn_models |
-Asset management warranty | msdyn_warranties |
+| Finance and Operations apps | Model-driven apps in Dynamics 365 | Description |
+|-----------------------------|-----------------------------------|-------------|
+| Asset management asset lifecycle models | msdyn\_assetlifecyclemodels | |
+| Asset management asset lifecycle states | msdyn\_assetlifecyclestates | |
+| Asset management assets | msdyn\_customerassets | |
+| Asset management asset types | msdyn\_customerassetcategories | |
+| Asset management functional location lifecycle models | msdyn\_functionallocationlifecyclemodels | |
+| Asset management functional location lifecycle states | msdyn\_functionallocationlifecyclestates | |
+| Asset management functional locations | msdyn\_functionallocations | |
+| Asset management functional location types | msdyn\_functionallocationtypes | |
+| Asset management manufacturers | msdyn\_manufacturers | |
+| Asset management models | msdyn\_models | |
+| Asset management warranty | msdyn\_warranties | |
 
 [!include [symbols](../../includes/dual-write-symbols.md)]
 
@@ -81,6 +81,3 @@ Asset management warranty | msdyn_warranties |
 [!include [models](includes/AssetManagementModels-msdyn-models.md)]
 
 [!include [warranty](includes/AssetManagementWarranty-msdyn-warranties.md)]
-
-
-
