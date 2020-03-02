@@ -1182,14 +1182,7 @@ You can skip or modify the following sections in the deployment instructions.
 
 ### Configure AD FS (as documented for [Platform update 12](setup-deploy-on-premises-pu12.md#configureadfs) or [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#configureadfs))
 
-- You can skip scripts 1, 2, and 3, because they have already been done.
-- The .\\Publish-ADFSApplicationGroup.ps1 script will fail even when the new **hosturl** value is used. Therefore, you must manually complete these steps.
-
-    1. In AD FS Manager, go to **AD FS** \> **Application groups**, and open **Microsoft Dynamics 365 for Operations On-premises**.
-    2. Open the **Microsoft Dynamics 365 for Operations On-premises - Native application** native application. Add the redirect URI of the new environment (DNS).
-    3. Open the **Microsoft Dynamics 365 for Operations On-premises - Financial Reporting - Native application** native application. Add the redirect URI of the new environment (DNS).
-    4. Open the **Microsoft Dynamics 365 for Operations On-premises - Web API** Web API. Add the two entries of the redirect URI of the new environment (DNS).
-    5. Open the **Microsoft Dynamics 365 for Operations On-premises - Financial Reporting Web API** Web API. Add the redirect URI of the new environment (DNS).
+- Configure AD FS according to the [Reuse the same AD FS instance for multiple environments](./onprem-reuseadfs.md) guide.
 
 ## Redeploy SSRS reports
 
