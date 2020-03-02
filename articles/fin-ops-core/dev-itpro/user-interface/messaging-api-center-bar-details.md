@@ -73,7 +73,7 @@ The user can then click **Message details** to open the new **Message details** 
 [![Message details pane](./media/4_api.png)](./media/4_api.png)
 
 ## Message() 
-The **Message** API is a new addition since Dynamics AX 2012 and provides some unique capabilities not offered by the legacy validation message APIs (**info()**, **warning()**/**checkfailed()**, and **error()**). 
+The **Message** API is a new addition since Dynamics AX 2012 and provides some useful messaging capabilities.
 
 First, the **Message()** API gives developers more control over the lifecycle of a message by allowing them to explicitly add and remove messages. This API can be useful when validation messages need to be removed at times other than when a save boundary has been crossed, or for displaying informational messages about aspects of the user's experience that aren't necessarily related to data validation. In this example, the message is shown when the current record is displayed.
 
