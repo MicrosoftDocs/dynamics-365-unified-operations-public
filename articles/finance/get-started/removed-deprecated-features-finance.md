@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Removed or deprecated features in Finance 
+title: Removed or deprecated features in Dynamics 365 Finance 
 description: This topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Platform update 33
 
 ---
 
-# Removed or deprecated features in Finance
+# Removed or deprecated features in Dynamics 365 Finance
 
 [!include [banner](../includes/banner.md)]
 
@@ -42,9 +42,7 @@ This list is intended to help you consider these removals and deprecations for y
 > [!NOTE]
 > Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
 
-## Platform update 32
-
-### Workflow request change dialog box no longer includes user selection drop-down list
+## Workflow request change dialog box no longer includes user selection drop-down list
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Changed to the feature with account groups selection.  |
