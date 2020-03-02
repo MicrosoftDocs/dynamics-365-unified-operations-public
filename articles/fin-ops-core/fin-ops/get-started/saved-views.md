@@ -76,7 +76,7 @@ If you want to save those changes, follow these steps.
 2.	To modify the existing view:
      1. Select **Save**. Note that this action will not be enabled for locked views. 
 3.	To create a new view:
-     1.    Select **Save as...**. 
+     1.    Select **Save as**. 
      2.    Enter a view name and (optionally) a description.
      3.    Select **Save**.
 
@@ -88,9 +88,9 @@ To change the default view for a page, follow these steps:
 2.	Select the view name to open the view selector. 
 3.	Select **More** and then **Pin as default**.  
 
-Alternatively, when you create a new view (by using the **Save as...** action), you can make that new view the default view by setting the **Pin as default** option before you save the view.
+Alternatively, when you create a new view (by using the **Save as** action), you can make that new view the default view by setting the **Pin as default** option before you save the view.
 
-Note that in some cases, the query associated with the default view does not execute when you first navigate to a page. For example, if you navigate through a tile to a page, the tile's query will be executed regardless of the query associated with the default view. Also, if you navigate to a page thats Standard view already has a defined query, the original query will execute in place of the default view's query. When this happens, you will be alerted by an informational message when the view is loading. Switching views after the page has loaded should allow the view query to execute as expected, or (starting in version 10.0.10/Platform update 34) the informational message will have an embedded action allowing you to load the default view's query directly.   
+Note that in some cases, the query associated with the default view does not execute when you first navigate to a page. For example, if you navigate through a tile to a page, the tile's query will be executed regardless of the query associated with the default view. Also, if you navigate to a page with a Standard view that already has a defined query, the original query will execute in place of the default view's query. When this happens, you will be alerted by an informational message when the view is loading. Switching views after the page has loaded should allow the view query to execute as expected. Starting in version 10.0.10 Platform update 34, the informational message will have an embedded action allowing you to load the default view's query directly.
 
 ## Managing personal views 
 The **Manage my views** dialog box gives you basic maintenance capabilities over your personal views and the order of views in the view selector. To open this page, click the view name to open the view selector drop-down menu, select **More**, and then select **Manage my views**.  
