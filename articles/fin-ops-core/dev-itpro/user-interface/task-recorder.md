@@ -215,7 +215,7 @@ The user can specify where an **Info step** should appear in the task guide. The
 ## Download options
 After you select **Stop**, several options are shown for saving files that are related to the completed recording. Select **Save to this PC**, and save the task recording package to your desktop. You will use this file later.
 
-[![Options for downloading or saving a recording after recoring as ended](./media/taskrecorderguide-taskrecorderdownloadoptions.png)](./media/taskrecorderguide-taskrecorderdownloadoptions.png)
+[![Options for downloading or saving a recording after recording has ended](./media/taskrecorderguide-taskrecorderdownloadoptions.png)](./media/taskrecorderguide-taskrecorderdownloadoptions.png)
 
 ### Save the task recording package (Save to this PC)
 
