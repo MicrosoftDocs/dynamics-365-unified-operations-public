@@ -75,7 +75,7 @@ GET https://lcsapi.lcs.dynamics.com/databasemovement/v1/databases
 
     - **Redirect URI (optional)** – Select the type of app that you're building: **Web** or **Public client (mobile & desktop)**. Then enter the redirect URI (or reply URL) for the app.
 
-        - For web apps, provide the base URL of the app. For example, `http://localhost:31544` might be the URL for a web app that rus on your local machine. Users then use this URL to sign in to a web client app.
+        - For web apps, provide the base URL of the app. For example, `http://localhost:31544` might be the URL for a web app that runs on your local machine. Users then use this URL to sign in to a web client app.
         - For public client apps, provide the URI that Azure AD uses to return token responses. Enter a value that is specific to your app, such as `myapp://auth`.
 
         To see specific examples for web apps or native apps, see the [quick start guides from Azure AD](https://docs.microsoft.com/azure/active-directory/develop/#quickstarts).
