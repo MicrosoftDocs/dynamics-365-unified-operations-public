@@ -2,7 +2,7 @@
 # required metadata
 
 title: Support for Field Service solutions and Project Service Automation solutions
-description: 
+description: This topic provides information about the support for Field Service solutions and Project Service Automation solutions.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 01/09/2020
@@ -36,13 +36,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [preview banner](../../includes/preview-banner.md)]
 
-## Support for Field Service solution
+## Support for Field Service solutions
 
-We support dual-write on top of existing Field Service solution-based Common Data Service environments.
+Microsoft supports dual-write on top of existing Common Data Service environments that are based on Field Service solutions.
 
 For more information, see [Integrate Dynamics 365 Field Service and Supply Chain Management](https://docs.microsoft.com/dynamics365/field-service/supply-chain-field-service-integration).
 
-## Support for Project Service Automation solution
+## Support for Project Service Automation solutions
 
-We support dual-write on top of existing Project Service Automation solutionbbased Common Data Service environments.
-
+Microsoft supports dual-write on top of existing Common Data Service environments that are based on Project Service Automation solutions.
