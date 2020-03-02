@@ -2,7 +2,7 @@
 # required metadata
 
 title: Integrated worker, job, and position
-description: 
+description: This topic provides information about integrated worker data in Microsoft Dynamics 365 apps.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 01/08/2020
@@ -36,30 +36,30 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [preview banner](../../includes/preview-banner.md)]
 
-Worker data can be mastered in more than one Dynamics 365 application. For example, Human Resource (HR) data can be managed in Dynamics 365 Human Resources, Dynamics 365 Commerce, and Dynamics 365 Supply Chain Management. Regardless of where the data originates, it is integrated behind the scenes. Integrated worker gives you the flexibility to master worker data in any Dynamics 365 application but provides a comprehensive view of the information in Dynamics 365 apps.
+Worker data can be mastered in more than one Microsoft Dynamics 365 app. For example, Human resources (HR) data can be managed in Dynamics 365 Human Resources, Dynamics 365 Commerce, and Dynamics 365 Supply Chain Management. Regardless of where the data originates, it's integrated behind the scenes. Integrated worker gives you the flexibility to master worker data in any Dynamics 365 app. It also provides a comprehensive view of the information in Dynamics 365 apps.
 
-## Human Resources
+## Human resources
 
-HR data is well-defined in applications. Therefore, the integration of HR data just involves mapping the HR data between the two applications.
+HR data is well-defined in apps. Therefore, the integration of HR data involves just mapping the HR data between the two apps.
 
 ## Templates
 
-Human Resource data includes information about employees and contractors, positions and jobs. A collection of entity maps work together during data interaction, as shown in the following table.
+HR data includes information about employees and contractors, positions, and jobs. A collection of entity maps works together during data interaction, as shown in the following table.
 
-Finance and Operations apps | Model-driven app in Dynamics 365 | Description
------------------------|--------------------------------|---
-Compensation job function | cdm_jobfunctions |
-Compensation job type | cdm_jobtypes |
-Employment | cdm_employments |
-Employment detail | cdm_employments |
-Jobs | cdm_jobs |
-Job detail | cdm_jobs |
-Position details | cdm_jobpositions |
-Position durations | cdm_jobpositions |
-Position hierarchies | cdm_jobpositions |
-Position type | cdm_positiontypes |
-Position worker assignments | cdm_positionworkerassignmentmaps |
-Worker | cdm_workers | Workers are classified in Finance and Supply Chain Management as employees or contractors. CDS can also classify workers as volunteers. Volunteers will become contractors when the data is transformed back into Finance and Supply Chain Management. |
+| Finance and Operations apps | Model-driven apps in Dynamics 365 | Description |
+|-----------------------------|----------------------------------|-------------|
+| Compensation job function | cdm\_jobfunctions | |
+| Compensation job type | cdm\_jobtypes | |
+| Employment | cdm\_employments | |
+| Employment detail | cdm\_employments | |
+| Jobs | cdm\_jobs | |
+| Job detail | cdm\_jobs | |
+| Position details | cdm\_jobpositions | |
+| Position durations | cdm\_jobpositions | |
+| Position hierarchies | cdm\_jobpositions | |
+| Position type | cdm\_positiontypes | |
+| Position worker assignments | cdm\_positionworkerassignmentmaps | |
+| Worker | cdm\_workers | In Dynamics 365 Finance and Supply Chain Management, workers are classified as either employees or contractors. Common Data Service can also classify workers as volunteers. Volunteers will become contractors when the data is transformed back into Finance and Supply Chain Management. |
 
 [!include [symbols](../../includes/dual-write-symbols.md)]
 
@@ -86,4 +86,3 @@ Worker | cdm_workers | Workers are classified in Finance and Supply Chain Manage
 [!include [position worker assignment](includes/PositionWorkerAssignment-cdm-positionworkerassignmentmaps.md)]
 
 [!include [worker](includes/Worker-cdm-workers.md)]
-
