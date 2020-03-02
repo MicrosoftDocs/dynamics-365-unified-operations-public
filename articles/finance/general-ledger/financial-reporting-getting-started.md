@@ -140,15 +140,17 @@ From the financial reports list, you can create a new report or modify an existi
 There are a few common issues that can cause problems for users trying to open Report Designer:
 
 Issue 1: You click New or Edit, but Report Designer does not start
-* Add the Dynamics 365 URL as a Trusted Site in IE | Internet Options | Security tab (*.dynamics.com). You will also need to set the level for the Trusted Sites to Medium-Low 
+* Add the Dynamics 365 for Finance URL as a Trusted Site.
+ * In Internet Explorer, click Settings, then click Internet Options. Click the Security tab. Select Trusted Sites and then click Sites. In the Add this website to zone, enter "*.dynamics.com" (without quotes), and then click Add. 
+* Set the level for the Trusted Sites to Medium-Low 
 * Disable the pop-up blocker in browser.
 * Workstations are required to install .Net 4.6.2 or higher.
 This version of the Microsoft .NET Framework can be downloaded and installed from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53345).
 * If using Chrome, you must install a ClickOnce extension in order to download the report designer client. If you are running in incognito mode, make sure the ClickOnce extension is enabled for incognito mode. If you are unable to login with Chrome, try logging in following the setup steps described in Issue 1 using try Internet Explorer or Edge as well. 
 
-
-Issue 2: User can proceed past the login page, but are unable to complete login within Report Designer. In this case, the user does not have sufficient permissions to use Financial Reporting, or permissions have not yet integrated into Financial Reporting. 
+Issue 2: The user has not been assigned the required permissions to use Financial Reporting. In this case, the user does not have sufficient permissions to use Financial Reporting, or permissions have not yet integrated into Financial Reporting. 
 * Required permissions are listed above in [Granting security access to Financial Reporting](#granting-security-access-to-financial-reporting). The user integration is based off of the exact privileges listed above and users will not have acccess unless those privileges or another security role with those privileges linked are assigned to the relevant financial reporting users. 
+* It is possible some error has occurred that the user integration has not completed, a data mart reset has been initiated and not yet completed, or some other system error has occurred. 
 * The user integration runs on a 5-minute interval, so it may take up to 10 minutes for any permission changes to integrate across into financial reporting. 
 * You can verify this is the issue by proceeding to click **Yes** and then click **Test Connection**. If this is the cause, you will see a specific error message that "Connection attempt failed. user does not have appropriate permissions to connect to the server. Contact your system administrator. 
 
