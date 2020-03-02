@@ -135,8 +135,26 @@ When you click the **Financial reporting** menu, the list of default financial r
 ## Creating and modifying financial reports
 From the financial reports list, you can create a new report or modify an existing report. If you have the appropriate permissions, you can create a new financial report by clicking **New** on the Action Pane. A report designer program is downloaded to your device. After the report designer starts you can then create the new report. After you save the new report, it appears in the financial reports list. The list shows only reports that were created for the company that you're using in Finance. 
 
-> [!NOTE] 
-> The computer that you are downloading the report designer client on must have version 4.6.2 of the Microsoft .NET Framework installed on it. This version of the Microsoft .NET Framework can be downloaded and installed from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53345). If you are using Chrome, you must install a ClickOnce extension in order to download the report designer client. If you are running in incognito mode, make sure the ClickOnce extension is enabled for incognito mode. You can also modify a report that appears in the financial reports list. When the area around the report name is selected, click **Edit** on the Action Pane. The report designer program starts.
+## Troubleshooting issues opening Report Designer
+There are a few common issues that can cause problems for users trying to open Report Designer:
+
+Issue 1: Unable to launch Report Designer 
+* Add the Dynamics 365 URL as a Trusted Site in IE | Internet Options | Security tab (*.dynamics.com). You will also need to set the level for the Trusted Sites to Medium-Low (or Low).  
+* Disable the pop-up blocker in browser.
+* Workstations are required to install .Net 4.6.2 or higher.
+This version of the Microsoft .NET Framework can be downloaded and installed from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53345).
+* If using Chrome, you must install a ClickOnce extension in order to download the report designer client. If you are running in incognito mode, make sure the ClickOnce extension is enabled for incognito mode. If you unable to login with Chrome, try logging following the setup steps above and try Internet Explorer or Edge as well. 
+
+
+Issue 2: User can proceed past the login page, but are unable to complete login within Report Designer. In this case, the user does not have sufficient permissions to use Financial Reporting, or permissions have not yet integrated into Financial Reporting. 
+* Required permissions are listed above. The user integration is based off of the exact privileges listed above and users will not have acccess unless those privileges or another security role with those privileges linked are assigned to the relevant financial reporting users. 
+* The user integration runs on a 5-minute interval, so it may take up to 10 minutes for any permission changes to integrate across into financial reporting. 
+* You can verify this is the issue by proceeding to click **Yes** and then click **Test Connection**. If this is the cause, you will see a specific error message that "Connection attempt failed. user does not have appropriate permissions to connect to the server. Contact your system administrator. 
+
+Issue 3: User can proceed past the login page, but are unable to complete login within Report Designer. One of the other causes here can be a mismatch of the time set on the clock of the local computer, versus the server. 
+* If there is a difference of more than 5 minutes for the clocks, the system will not allow login. 
+* The user can try enabling the option in Windows to **set time automatically** or try logging in from another machine which has worked for another user. 
+
 
 ## Additional resources
 - [View financial reports](view-financial-reports.md)
