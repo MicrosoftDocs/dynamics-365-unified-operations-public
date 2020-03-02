@@ -3,9 +3,9 @@
 
 title: Messaging APIs: Action center, message bar, and message details
 description: This topic describes the messaging system.
-author: sericks007
+author: jasongre
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 64153
 ms.assetid: b69ec992-9bde-469e-99bb-773feb9489ff
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: aorth
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
