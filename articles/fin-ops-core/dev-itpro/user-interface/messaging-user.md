@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Message center, message bar, and message details FAQ
+title: Messaging system for Finance and Operations apps
 description: This topic describes the rich, powerful messaging system that replaces the Infolog window that was used Microsoft Dynamics AX 2012.
 author: RobinARH
 manager: AnnBe
