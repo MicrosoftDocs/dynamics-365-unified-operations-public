@@ -42,18 +42,14 @@ Before you can post financial transactions for invoices that have a total amount
 - In the **Feature management** workspace, turn on the **Configurable posting profiles for banks and remittance types** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
 
 
-## Set up...
+## Setup of posting profile for remittance journal line offset account
+Open a company bank account to set up posting profiles, which the system will use in remittance journal lines for offset account, when posting (Bill of exchange/ Prommisory note remittance journal):
+
+**Cash and bank management** \> **Bank accounts** \> **Bank accounts**, **General** FastTab and select the possting profile for Collection, Discount and Promissory note (if needed).
 
 ![Bank account setup](media/emea-ita-exil-different%20accounts%20per%20company%20bank%26remittance%20type.PNG)
 
+## Using set up posting profiles in remittance journal posting
+If a user's set up posting profiles in the bank account the system will use these posting profiles for specifying the offset account when posting a remittance journal. If these posting profiles are not set up, the system selects the posting profile from Accounts receivable / Accounts payable parameters (**Accounts receivable** / **Accounts payable** \> **Setup**, **Ledger and sales tax** tab).   
 
-Define...
 
-## Use...
-
-### Post
-
-When you post...
-
-> [!NOTE]
-> Warning...
