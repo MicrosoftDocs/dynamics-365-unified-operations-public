@@ -108,7 +108,7 @@ This page lists the resources that are available for IT pros and developers who 
 - [Manage secrets for retail channels](manage-secrets.md)
 - [Log extension events to Application Insights](commerce-application-insights.md)
 - [Create async Commerce (CRT) APIs in your business logic](async-commerce-extension.md)
-- [Pre-extended columns in the Channel Database](extended-columns.md)
+- [Pre-extended columns in the channel database](extended-columns.md)
 
 ## Retail SDK
 - [Retail software development kit (SDK) architecture](retail-sdk/retail-sdk-overview.md)
