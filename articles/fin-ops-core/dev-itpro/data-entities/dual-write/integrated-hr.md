@@ -36,11 +36,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [preview banner](../../includes/preview-banner.md)]
 
-Worker data can be mastered in more than one Microsoft Dynamics 365 app. For example, Human resources (HR) data can be managed in Dynamics 365 Human Resources, Dynamics 365 Commerce, and Dynamics 365 Supply Chain Management. Regardless of where the data originates, it's integrated behind the scenes. Integrated worker gives you the flexibility to master worker data in any Dynamics 365 app. It also provides a comprehensive view of the information in Dynamics 365 apps.
+Worker data can be mastered in more than one Microsoft Dynamics 365 app. For example, Human resources (HR) data can be managed in Dynamics 365 Human Resources, Dynamics 365 Commerce, and Dynamics 365 Supply Chain Management. Regardless of where the data originates, it's integrated behind the scenes. The ability to integrate data about workers gives you the flexibility to master worker data in any Dynamics 365 app. It also provides a comprehensive view of the information in Dynamics 365 apps.
 
 ## Human resources
 
-HR data is well-defined in apps. Therefore, the integration of HR data involves just mapping the HR data between the two apps.
+The integration of HR data involves just mapping the HR data between Finance and Operations apps and model-driven apps in Dynamics 365.
 
 ## Templates
 
@@ -59,7 +59,7 @@ HR data includes information about employees and contractors, positions, and job
 | Position hierarchies | cdm\_jobpositions | |
 | Position type | cdm\_positiontypes | |
 | Position worker assignments | cdm\_positionworkerassignmentmaps | |
-| Worker | cdm\_workers | In Dynamics 365 Finance and Supply Chain Management, workers are classified as either employees or contractors. Common Data Service can also classify workers as volunteers. Volunteers will become contractors when the data is transformed back into Finance and Supply Chain Management. |
+| Worker | cdm\_workers | In Dynamics 365 Finance and Supply Chain Management data, workers are classified as either employees or contractors. Common Data Service can also classify workers as volunteers. Volunteers will become contractors when the data is transformed back into Finance and Supply Chain Management. |
 
 [!include [symbols](../../includes/dual-write-symbols.md)]
 
