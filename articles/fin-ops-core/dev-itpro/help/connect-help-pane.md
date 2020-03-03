@@ -61,7 +61,7 @@ The **Help Pane extension** folder of the toolkit contains the **AzureSearchCust
     The Document.cs file specifies the metadata properties in the Help content that the search service relies on to find context-sensitive links. If you do not add or modify this metadata, you can ignore this step.
 
     For an example of an index in a search service, see the [Configure the search service](walkthrough-help-azure.md#searchconfig).
- section in [Example of Deploying Custom Help on Azure](walkthrough-help-azure.md).
+ section in [Deploying custom help to Azure](walkthrough-help-azure.md).
 
 5. In the **HelppaneMacro** file, update the values for the following parameters:
 
@@ -123,7 +123,7 @@ The search and fallback order are defined in the following order of priority:
 
 ## See also
 
-[Example of Deploying Custom Help on Azure](walkthrough-help-azure.md)  
+[Deploying custom help to Azure](walkthrough-help-azure.md)  
 [Running the Custom Help Toolkit](custom-help-toolkit.md)  
 [Language and locale descriptors in across product and Help](language-locale.md)  
 [Connect the Help system](../../fin-ops/get-started/help-connect.md)  

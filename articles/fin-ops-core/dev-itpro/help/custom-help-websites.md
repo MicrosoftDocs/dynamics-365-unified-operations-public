@@ -2,10 +2,10 @@
 # required metadata
 
 title: Deploy a custom Help website hosted in Azure
-description: This topic describes how you can extend the Microsoft Help to reflect your solution and then connect that to the Help pane in Finance and Operations apps. 
+description: Learn why you will want to deploy your Help content to Azure so that it can be found by the Help pane in Finance and Operations apps. 
 author: edupont04
 manager: AnnBe
-ms.date: 02/26/2020
+ms.date: 03/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -38,26 +38,26 @@ To provide the users of the solution with access to Help in the Help pane, you m
 
 You can deploy your content to an existing website, or you can set up a dedicated website to host your content. In this article, we will describe how you can host your content on Azure. If you choose a different deployment solution, you must make sure that your content can be indexed so that the Help pane can link to it. We offer no technical support for websites that are not hosted on Azure.  
 
-In [Example of Deploying Custom Help on Azure](walkthrough-help-azure.md), we describe an approach for hosting content on Azure, including how you can set up a search service that indexes your content so that it can be found by the in-product Help pane. We recommend this approach because the Azure portal includes many tools and features that can help you maintain your custom help site.  
+In [Deploying custom help to Azure](walkthrough-help-azure.md), we describe an approach for hosting content on Azure, including how you can set up a search service that indexes your content so that it can be found by the in-product Help pane. We recommend this approach because the Azure portal includes many tools and features that can help you maintain your custom help site.  
 
-If you host the Help content on another type of website, it is a requirement that the content is discoverable by the in-product Help pane, such as by using Azure Search to index the content. For an example of how to set up a search service, see the [Configure the search service](walkthrough-help-azure.md#searchconfig) section in [Example of Deploying Custom Help on Azure](walkthrough-help-azure.md).  
+If you host the Help content on another type of website, it is a requirement that the content is discoverable by the in-product Help pane, such as by using Azure Cognitive Search to index the content. For an example of how to set up a search service, see the [Configure the search service](walkthrough-help-azure.md#searchconfig) section in [Deploying custom help to Azure](walkthrough-help-azure.md).  
 
 ## Host your content on Azure
 
 We recommend that you set up an Azure web app and host your content there for easy integration with the in-product Help pane. If you do not have an [Azure subscription](/azure/guides/developer/azure-developer-guide#understanding-accounts-subscriptions-and-billing), create an account before you begin. You can start with a free account for 12 months. For more information, see [Create your Azure free account today](https://azure.microsoft.com/free/).  
 
-There are several different ways of getting your content hosted on Azure. In [Example of Deploying Custom Help on Azure](walkthrough-help-azure.md), we describe one approach. You can find inspiration for other approaches in the Azure documentation. For more information, see [Azure Blob storage documentation](/azure/storage/blobs/).  
+There are several different ways of getting your content hosted on Azure. In [Deploying custom help to Azure](walkthrough-help-azure.md), we describe our recommended approach. You can find inspiration for other approaches in the Azure documentation. For more information, see [Azure Blob storage documentation](/azure/storage/blobs/).  
 
 > [!TIP]
-> It can seem like a large task to deploy custom help as we describe it here. However, tools and scripts in the custom help toolkit can help you, and once things are set up and your content is available in the in-product Help pane, then the Azure portal can help you maintain the site, and you can set up CI/CD to manage the content updates, for example.
+> It can seem like a large task to deploy custom help as we describe it here. However, tools and scripts in the custom help toolkit can help you. Once things are set up, then the Azure portal can help you maintain the site, and you can set up CI/CD to manage the content updates, for example.
 
 ### Content and search indexing
 
 In order to make links to your custom help available in the in-product Help pane, the content must be discoverable. The in-product Help pane generates links to context-sensitive content based on a search string that is sent to the configured Help websites. The search string includes information about the form that the Help pane was activated from and searches for content that contains that form as part of the article's metadata.  
 
-Your custom Help website must be able to return relevant links based on the metadata in the search query. This means customizing the Help pane to consume the content through a search index.  
+Your custom Help website must be able to return relevant links based on the metadata in the search query. This means customizing the Help pane to consume the content through a search index. We recommend using [Azure Cognitive Search](/azure/search/search-what-is-azure-search) to set up and run this search index.  
 
-All websites support searches using different technologies. In [Example of Deploying Custom Help on Azure](walkthrough-help-azure.md), the search index is based on JSON files that are generated from the HTML files with your custom help content. You then make a search service generate a map of the content as defined by these JSON files. This search index is then used by the in-product Help pane to generate context-sensitive links to content based on where the user is in the product's user interface.  
+All websites support searches using different technologies. In [Deploying custom help to Azure](walkthrough-help-azure.md), the search index is based on JSON files that are generated from the HTML files with your custom help content. You then make a search service generate a map of the content as defined by these JSON files. This search index is then used by the in-product Help pane to generate context-sensitive links to content based on where the user is in the product's user interface.  
 
 ## Reuse Dynamics AX 2012 content
 
@@ -72,7 +72,7 @@ If your Help solution extends Microsoft's content, then you can fork our repo an
 
 ## See also
 
-[Example of Deploying Custom Help on Azure](walkthrough-help-azure.md)  
+[Deploying custom help to Azure](walkthrough-help-azure.md)  
 [Running the Custom Help Toolkit](custom-help-toolkit.md)  
 [Language and locale descriptors in across product and Help](language-locale.md)  
 [Configure the Help experience for Finance and Operations apps](../../fin-ops/get-started/help-connect.md)  

@@ -70,7 +70,7 @@ Some of the tools in the toolkit can be used for custom help for solutions that 
 ## See also
 
 [Custom Help Overview](custom-help-websites.md)  
-[Example of Deploying Custom Help on Azure](walkthrough-help-azure.md)  
+[Deploying custom help to Azure](walkthrough-help-azure.md)  
 [Connect your Help website with the Help pane](connect-help-pane.md)
 [Language and locale descriptors in across product and Help](language-locale.md)  
 [Convert Dynamics AX custom Help for use in Dynamics 365](migrate-dynamicsax2012.md)  

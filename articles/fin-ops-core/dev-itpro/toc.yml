@@ -472,7 +472,7 @@
           href: help/custom-help-websites.md
         - name: Language and locale descriptors in across product and Help
           href: help/language-locale.md
-        - name: Example of deploying custom Help on Azure
+        - name: Deploying custom help to Azure
           href: help/walkthrough-help-azure.md
         - name: Extend, customize, collaborate on the Help
           href: help/contributor-guide.md

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Example of Deploying Help on Azure
+title: Deploying custom help to Azure
 description: This article walks you through an example of how you can deploy Dynamics 365 Help content to an Azure web app. 
 author: edupont04
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Operations
 
 ---
 
-# Example of Deploying Custom Help on Azure
+# Deploying custom help to Azure
 
 [!include [banner](../includes/banner.md)]
 
@@ -82,7 +82,7 @@ In the following, we assume that you have an Azure account and a valid subscript
 
 ## <a name="resgr"></a>Create a resource group
 
-To host your Web App, Search service, and Storage account, you must first create one or more resource groups. We recommend that you create all resources in a single resource group for easy management.  
+To host your Web App, Search service, and Storage account, you must first create one or more resource groups. We recommend that you create all resources in a single resource group for easy'management.  
 
 ### To create a resource group
 
@@ -105,7 +105,7 @@ To host your content, you can create a web app in Azure. If you have an existing
 
 3. In the **Overview** section of the web app, under **Manual deployment**, choose **FTP/S**, and then choose **Dashboard**.
 
-    We recommend that you use *app credentials** rather than *user credentials*. You might also want to copy the username and password to a temporary location before you continue. We also recommend that you reset the credentials once you have completed the deployment. For more information, see [Configure deployment credentials for Azure App Service](/azure/app-service/deploy-configure-credentials).
+    We recommend that you use *app credentials* rather than *user credentials*. You might also want to copy the username and password to a temporary location before you continue. We also recommend that you reset the credentials once you have completed the deployment. For more information, see [Configure deployment credentials for Azure App Service](/azure/app-service/deploy-configure-credentials).
 
 Next, you add the HTML files to the web app. You can use an FTP client such as [FileZilla](https://filezilla-project.org/), [Visual Studio](https://www.visualstudio.com/vs/community/), [Cyberduck](https://cyberduck.io/), or [WinSCP](https://winscp.net/index.php). For more information, see [Deploy your app to Azure App Service using FTP/S](/azure/app-service/deploy-ftp).
 
@@ -165,7 +165,7 @@ The Azure portal also includes the **Import data** wizard that can help you conf
 
 ### To create a data source
 
-1. Start Postman and set up an HTTP request. If you are unfamiliar with this tool, see [Explore Azure Cognitive Search REST APIs using Postman](search-get-started-postman.md).  
+1. Start Postman and set up an HTTP request. If you are unfamiliar with this tool, see [Explore Azure Cognitive Search REST APIs using Postman](/azure/search/search-get-started-postman.md).  
 
     The request methods for every call in this tutorial are **POST** and **GET**. You'll make three API calls to your search service to create a data source, an index, and an indexer. The data source includes a pointer to your storage account and your JSON data. Your search service makes the connection when loading the data.
 

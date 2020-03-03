@@ -77,7 +77,7 @@ In order for the product to connect to your Help content, you must customize the
 - Your content is indexed by a search service
 - Both website and search service are connected to the Help pane
 
-You can see an example of how to get these pieces in place in [Example of Deploying Custom Help on Azure](walkthrough-help-azure.md).
+You can see an example of how to get these pieces in place in [Deploying custom help to Azure](walkthrough-help-azure.md).
 
 > [!TIP]
 > We recommend that you deploy your Help content to an Azure web app. For more information, see [Deploying custom help sites](custom-help-websites.md).
@@ -103,7 +103,7 @@ The following table outlines the main objectives that administrators typically h
 
 [Deploying custom help sites on Azure](custom-help-websites.md)  
 [Connect your Help website with the Help pane](connect-help-pane.md)  
-[Example of Deploying Custom Help on Azure](walkthrough-help-azure.md)  
+[Deploying custom help to Azure](walkthrough-help-azure.md)  
 [Running the Custom Help Toolkit](custom-help-toolkit.md)  
 [Language and locale descriptors in across product and Help](language-locale.md)  
 [Configure the Help experience for Finance and Operations apps](../../fin-ops/get-started/help-connect.md)  
