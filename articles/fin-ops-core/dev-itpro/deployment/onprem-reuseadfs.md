@@ -49,7 +49,7 @@ This topic explains how to use the same instance of Active Directory Federation 
     2.  Open the **Microsoft Dynamics 365 for Operations On-premises - Financial Reporting Web API**. Add the redirect URI of the new environment (`https://ax.contoso.com/FinancialReporting`).
 4.  Under the Server section:
     1.  **Optional**: Open the **Microsoft Dynamics 365 for Operations On-premises - Retail**. Add the redirect URI of the new environment (`https://ax.contoso.com/namespaces/AXSF/`).
-5.  **Optiona**: Configure the warehouse mobile app for the new environment by following [Configure the Warehousing app for on-premises deployments](./warehousing-for-on-premise-deployments.md) again. Remember to use the new environment URL (`https://ax.contoso.com`) as the Resource URL.
+5.  **Optional**: Configure the warehouse mobile app for the new environment by following [Configure the Warehousing app for on-premises deployments](./warehousing-for-on-premise-deployments.md) again. Remember to use the new environment URL (`https://ax.contoso.com`) as the Resource URL.
 
     >[!Note]
     > No additional configuration is required for the workflow and retail designer applications.
