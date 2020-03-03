@@ -667,7 +667,7 @@ Category does not exist.
 
 **Reason:** The pointers to the performance counter that the gateway needs may be corrupt.
 
-**Resolution:** Run lodctr /R in a Command Prompt running as Administrator in all AOS nodes where the Gateway is unhealthy. If you recieve an error about not being able to rebuild the performance counters, try executing the command again. 
+**Resolution:** Run lodctr /R in a Command Prompt running as Administrator in all AOS nodes where the Gateway is unhealthy. If you receive an error about not being able to rebuild the performance counters, try executing the command again. 
 
 ## Management Reporter
 
