@@ -80,7 +80,7 @@ Workshops are interactive outcome-based remote sessions. Customers and partners 
 
 ### Kick-off meetings
 
-The kick-off meetings are available to customers who are eligible for a designated FastTrack Solution Architect. The kick-off meetings are designed to introduce the FastTrack service, roles and responsibilities of the FastTrack team in your project, to define how three parties (the solution integrator(s), the customer, and Microsoft FastTrack) will collaborate during the implementation project, and provide introductory guidance about a set of critical success factors for an implementation of Finance and Operations apps. Here are some of the topics that the kick-off meetings are likely to cover:
+The kick-off meetings are available to customers who are eligible for a designated FastTrack solution architect. The kick-off meetings are designed to introduce the FastTrack service, roles and responsibilities of the FastTrack team in your project, to define how three parties (the solution integrator(s), the customer, and Microsoft FastTrack) will collaborate during the implementation project, and provide introductory guidance about a set of critical success factors for an implementation of Finance and Operations apps. Here are some of the topics that the kick-off meetings are likely to cover:
 
 - Team introductions
 - Project background, goals, and success factors
@@ -88,7 +88,7 @@ The kick-off meetings are available to customers who are eligible for a designat
 - Explanation of how services are delivered, and where and when to seek help from the FastTrack engineering team
 - Critical success factors and key learning that can be shared by the FastTrack team
 
-Normally, the designated FastTrack Solution Architect will initialize the engagement by scheduling a partner kick-off meeting following by a customer kick-off meeting after an eligible customer onboarded. For more information about customer onboarding, see [Onboard an implementation project](../imp-lifecycle/onboard.md). 
+Normally, the designated FastTrack solution architect will initialize the engagement by scheduling a partner kick-off meeting following by a customer kick-off meeting after an eligible customer onboarded. For more information about customer onboarding, see [Onboard an implementation project](../imp-lifecycle/onboard.md). 
 
 The typical format is a one-hour Microsoft Teams call for partner kick-off meeting and a three-hour Microsoft Teams call for customer kick-off meeting. The recommended attendees include key stakeholders like customer’s project sponsor (not required for entire kick-off meeting), project managers, solution architect(s), technical/functional lead(s), business process owner(s) from the customer, partner, and Microsoft teams. The kick-off meeting can also be conducted in a combined customer and partner session if the implementation partner(s) ever went through the process before and requests to ignore it.
 
