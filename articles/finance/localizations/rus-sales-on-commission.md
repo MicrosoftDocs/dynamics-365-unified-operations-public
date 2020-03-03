@@ -184,9 +184,9 @@ The amount of prepayment that is received from the customer can be allocated amo
 
     ![Vendor payments page](media/34_Vendor_payments.jpg)
 
-5. Create a purchase order and an invoice as described in the [Create a purchase order and generate a purchase invoice](rus-transactions-through-intermediary.md#_Create_sales_order_2) section earlier in this topic.
-6. Create a sales order and a facture as described in the [Create a sales order and update the facture](rus-transactions-through-intermediary.md#_Create_a_sales_1) section earlier in this topic.
-7. Create a report for the principal, and update the lines on shipments, as described in the [Create and print a report for a principal, and reissue the buyer's facture to the principal](rus-transactions-through-intermediary.md#_Create_purchase_order_2) section earlier in this topic.
+5. Create a purchase order and an invoice as described in the topic, [Create a purchase order and generate a purchase invoice](rus-transactions-through-intermediary.md#create-sales-order-2).
+6. Create a sales order and a facture as described in the topic, [Create a sales order and update the facture](rus-transactions-through-intermediary.md#create-a-sales-1).
+7. Create a report for the principal, and update the lines on shipments, as described in the topic, [Create and print a report for a principal, and reissue the buyer's facture to the principal](rus-transactions-through-intermediary.md#create-purchase-order-2).
 8. In the bottom part of the **Report for principal** page, on the **Prepayments** tab, in the **Voucher** field, select the customer prepayment voucher to include the prepayment on the report for the principal that is responsible for VAT prepayment.
 
     ![Report for principal page](media/35_Report_for_principal.jpg)
@@ -195,13 +195,12 @@ The amount of prepayment that is received from the customer can be allocated amo
 
     ![Customer transactions page](media/36_Customer_transactions.jpg)
 
-10. On the **Report for principal** page, approve lines on the **Overview** tab and vouchers on the **Prepayments** tab, as described in the [Create and print a report for a principal, and reissue the buyer's factures to the principal](rus-transactions-through-intermediary.md#_Create_purchase_order_2) section.
-11. You can create a facture, and you can view the principal's invoice or facture, or the original invoice or facture, as described in the [Create and print a report for a principal, and reissue the buyer's factures to the principal](rus-transactions-through-intermediary.md#_Create_purchase_order_2) section.
+10. On the **Report for principal** page, approve lines on the **Overview** tab and vouchers on the **Prepayments** tab, as described in the topic, [Create and print a report for a principal, and reissue the buyer's factures to the principal](rus-transactions-through-intermediary.md#create-purchase-order-2).
+11. You can create a facture, and you can view the principal's invoice or facture, or the original invoice or facture, as described in the topic, [Create and print a report for a principal, and reissue the buyer's factures to the principal](rus-transactions-through-intermediary.md#create-purchase-order-2).
 
 ### Print a report for a principal
 
-Print a report for a principal as described in the [Create and print a report for a principal, and reissue the buyer's factures to the
-principal](rus-transactions-through-intermediary.md#_Create_purchase_order_2) section earlier in this topic. The report for the principal has two sections: one for shipments and one for prepayments.
+Print a report for a principal as described in the topic, [Create and print a report for a principal, and reissue the buyer's factures to the principal](rus-transactions-through-intermediary.md#create-purchase-order-2). The report for the principal has two sections: one for shipments and one for prepayments.
 
 ![Отчет коммиссионера о реализации товара generated report](media/37_Отчет_коммиссионера_о_реализации_товара.jpg)
 
@@ -234,7 +233,7 @@ principal](rus-transactions-through-intermediary.md#_Create_purchase_order_2) se
 
 ### Create a facture accounting journal
 
-You can register approved lines on the **Facture accounting journal** page and print a facture accounting journal as described in the [Print a facture accounting journal](rus-transactions-through-intermediary.md#_Facture_accounting_journal) section earlier in this topic.
+You can register approved lines on the **Facture accounting journal** page and print a facture accounting journal as described in the topic, [Print a facture accounting journal](rus-transactions-through-intermediary.md#facture-accounting-journal).
 
 ## Review the owner that is assigned to an agreement
 
