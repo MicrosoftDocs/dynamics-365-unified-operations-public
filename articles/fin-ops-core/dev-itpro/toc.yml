@@ -430,6 +430,8 @@
             href: deployment/setup-deploy-on-premises-pu8-pu11.md
           - name: Installation steps for Retail channel components in an on-premises environment
             href: deployment/deploy-retail-onprem.md
+          - name: Reuse the same AD FS instance for multiple environments
+            href: deployment/onprem-reuseadfs.md
         - name: Develop and deploy custom models to on-premises environments
           href: deployment/develop-deploy-custom-models-on-premises.md
         - name: PowerBI.com integration with on-premises environments
