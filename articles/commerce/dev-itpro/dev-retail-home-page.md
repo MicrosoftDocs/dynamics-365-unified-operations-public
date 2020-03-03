@@ -101,13 +101,14 @@ This page lists the resources that are available for IT pros and developers who 
 -   [Integrate POS with a new hardware device](hardware-device-extension.md)
 
 ## Commerce Runtime
--   [Commerce runtime (CRT) architecture and configuration](commerce-runtime-overview.md)
--   [Commerce runtime (CRT) extensibility and triggers](commerce-runtime-extensibility-trigger.md)
--   [Add customer preference data to channel databases](add-customer-preference-channel.md)
--   [Add properties to sales orders](add-properties-sales-order.md)
--   [Manage secrets for retail channels](manage-secrets.md)
--   [Log extension events to Application Insights](commerce-application-insights.md)
--   [Create async Commerce (CRT) APIs in your business logic](async-commerce-extension.md)
+- [Commerce runtime (CRT) architecture and configuration](commerce-runtime-overview.md)
+- [Commerce runtime (CRT) extensibility and triggers](commerce-runtime-extensibility-trigger.md)
+- [Add customer preference data to channel databases](add-customer-preference-channel.md)
+- [Add properties to sales orders](add-properties-sales-order.md)
+- [Manage secrets for retail channels](manage-secrets.md)
+- [Log extension events to Application Insights](commerce-application-insights.md)
+- [Create async Commerce (CRT) APIs in your business logic](async-commerce-extension.md)
+- [Pre-extended columns in the channel database](extended-columns.md)
 
 ## Retail SDK
 - [Retail software development kit (SDK) architecture](retail-sdk/retail-sdk-overview.md)
