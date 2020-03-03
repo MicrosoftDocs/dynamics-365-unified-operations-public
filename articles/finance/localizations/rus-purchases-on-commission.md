@@ -4,7 +4,7 @@ title: Purchases on commission
 description: This topic provides information about purchases made on a commission.
 author: v-nadyuz
 manager: AnnBe
-ms.date: 02/26/2020
+ms.date: 03/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -46,17 +46,17 @@ Factures that an agent reissues have these characteristics:
 
 The following illustration shows the business process for registering intermediary deals. Rectangular elements are reflected in the system. Oval elements are present in the business process but aren't reflected in the system.
 
-![](media/Purchases_on_commission_english.jpg)
+![Purchases on comission business process flow](media/Purchases_on_commission_english.jpg)
 
 ## Create a sales agreement for a purchase by an agent
 
-1. Go to **Accounts receivable \> Orders \> Sales agreements**.
+1. Go to **Accounts receivable** \> **Orders** \> **Sales agreements**.
 2. Select **New** to open the **Create sales agreement** dialog box.
 3. On the **Customer** FastTab, specify the customer account, and then, in the **Sales agreement classification** field, select **Blanket sales agreement**.
 4. On the **General** FastTab, in the **Document** section, in the **Sales agreement ID** field, specify the identifier of the sales agreement.
 5. Specify other details, and then select **OK**.
 
-    ![](media/3_Create_sales_agreement.jpg)
+    ![Create sales agreement dialog box](media/3_Create_sales_agreement.jpg)
 
 6. On the **Sales agreements** page, switch to the **Header** view.
 7. On the **General** FastTab, in the **Document** section, in the **Commission agreement** field, select **Purchase by commissioner**.
@@ -65,7 +65,7 @@ The following illustration shows the business process for registering intermedia
     - In the **Kind of activity** field, select **Commission agent**.
     - In the **Inventory profile** field, select the inventory profile that you created earlier.
 
-    ![](media/4_Sales_agreements.jpg)
+    ![Sales agreement page, Financial FastTab](media/4_Sales_agreements.jpg)
 
 9. On the Action Pane, on the **Sales agreement** tab, in the **Generate** group, select **Confirmation** to update status of the agreement to **Effective**.
 
@@ -78,7 +78,7 @@ The following illustration shows the business process for registering intermedia
 5. In the **Account** field, select the code for the supplier. The **Name** field is automatically filled in.
 6. Select **Save**.
 
-![](media/5_Inventory_owners.jpg)
+![Inventory owners page for vendors](media/5_Inventory_owners.jpg)
 
 ## Create inventory owners (principals) for a commissioner
 
@@ -89,7 +89,7 @@ The following illustration shows the business process for registering intermedia
 5. In the **Account** field, select the code for the principal. The **Name** field is automatically filled in.
 6. Select **Save**.
 
-![](media/6_Inventory_owners.jpg)
+![Inventory owners page for customers](media/6_Inventory_owners.jpg)
 
 ## Create a purchase order and update the facture on goods that are purchased for a principal
 
@@ -102,7 +102,7 @@ The following illustration shows the business process for registering intermedia
 3. On the **Line details** FastTab, on the **Product** tab, in the **Tracking dimensions** section, in the **Inventory profile** field, select the inventory profile that you created earlier.
 4. If you don't plan to post the invoice, in the **Owner** field, select the owner (supplier) that you created earlier. In this way, you identify the supplier on the report for the principal when the facture is reissued.
 
-    ![](media/7_All_purchase_orders.jpg)
+    ![Purchase order page](media/7_All_purchase_orders.jpg)
 
 5. Specify other purchase order parameters, and create a facture.
 
@@ -117,7 +117,7 @@ The following illustration shows the business process for registering intermedia
 
 4. On the **Line details** FastTab, on the **Setup** tab, in the **Inventory** section, in the **Reservation** field, select **Automatic**.
 
-    ![](media/8_Sales_order.jpg)
+    ![Sales order page](media/8_Sales_order.jpg)
 
 5. On the **Line details** FastTab, on the **Product** tab, in the **Tracking dimensions** section, make sure that the **Inventory profile** field is automatically set to the inventory profile that you created earlier.
 6. In the **Owner** field, select the owner (principal) that you created earlier.
@@ -146,13 +146,13 @@ The following illustration shows the business process for registering intermedia
 9. Based on the factures that are received from the seller (vendor), you, as an agent, should reissue the factures on the shipped part of the goods to the principal (customer) on behalf of the seller. These new factures are numbered according to the facture's number sequence.
 10. On the **Report for principal** page, use the **Approved** check box to approve the appropriate lines of the seller's factures. To approve all the lines on the report, select **Approval \> Approve All**.
 
-    ![](media/9_Report_for_principal.jpg)
+    ![Report for principal page](media/9_Report_for_principal.jpg)
 
 11. Select **Facture \> Update facture** to generate reissued factures for the principal.
 12. On the **Update facture** page, in the **Commission trade** section, make sure that the **Seller** and **Facture** fields are automatically set. If they are blank, select the supplier in the **Seller** field and the number of the purchase facture that was created in the **Facture** field.
 13. Specify other required details, and create the facture.
 
-    ![](media/10_Update_facture.jpg)
+    ![Update facture page](media/10_Update_facture.jpg)
 
 14. On the **Report for principal** page, follow these steps:
 
@@ -163,7 +163,7 @@ The following illustration shows the business process for registering intermedia
 
 15. Select **Print** to open the **Report for principal to Microsoft Excel** dialog box, and then select **OK** to print the report for the principal.
 
-![](media/11_Отчет_коммиссионера.jpg)
+![Отчет коммиссионера report](media/11_Отчет_коммиссионера.jpg)
 
 ## Print a facture accounting journal
 
@@ -172,11 +172,11 @@ The following illustration shows the business process for registering intermedia
 
 The **Issued** worksheet of the facture accounting journal shows the reissued vendor's factures. The information about the sellers is presented in columns 10 through 12.
 
-![](media/12_Facture_accounting_journal_Part_1.jpg)
+![Issued worksheet of the Facture accounting journal](media/12_Facture_accounting_journal_Part_1.jpg)
 
-The **Received** worksheet of the facture accounting journal shows the original seller's factures that were approved in the report for the principal.
+The **Received** worksheet of the Facture accounting journal shows the original seller's factures that were approved in the report for the principal.
 
-![](media/13_Facture_accounting_journal_Part_2.jpg)
+![Received worksheet of the Facture accounting journal](media/13_Facture_accounting_journal_Part_2.jpg)
 
 ## Prepayments
 
@@ -190,12 +190,12 @@ Prepayments that are received from a principal aren't a source for charging VAT.
     > [!NOTE]
     > If you don't see the **Kind of activity** column, right-click in the row that has the column names, and then select **Add columns**. Select the check box for the **Kind of activity** column, and then select **Insert**.
 
-       ![](media/14_Customer_payments.jpg)
+      ![Vendor payment journal page](media/14_Customer_payments.jpg)
 
 3. On the **Vendor payment journal** page, create a vendor prepayment, and then select **Lines**.
 4. On the **Vendor payments** page, in the **Kind of activity** column, select **Commission agent**.
 
-    ![](media/15_Vendor_payments.jpg)
+    ![Vendor payments page](media/15_Vendor_payments.jpg)
 
 5. Create a facture for the vendor prepayment.
 6. Create a purchase order and a facture as described in the [Create a purchase order and update the facture on goods that are purchased for a principal](../rus-transactions-through-intermediary/rus-transactions-through-intermediary.docx#_Create_a_purchase) section earlier in this topic.
@@ -203,11 +203,11 @@ Prepayments that are received from a principal aren't a source for charging VAT.
 8. Create a report for the principal, and update the lines on shipments, as described in the [Create and print a report for a principal, and reissue the seller's factures to the principal](../rus-transactions-through-intermediary/rus-transactions-through-intermediary.docx#_Create_report_for_1) section earlier in this topic.
 9. In the bottom part of the **Report for principal** page, on the **Prepayments** tab, in the **Voucher** field, select the vendor prepayment voucher to include the prepayment on the report for the principal.
 
-    ![](media/16_Report_for_principal.jpg)
+    ![Report for principal page, Prepayments tab](media/16_Report_for_principal.jpg)
 
 10. Select **Transactions** to view the allocated amount in the **Amount in reporting currency** field.
 
-    ![](media/17_Vendor_transactions.jpg)
+    ![Vendor transactions page](media/17_Vendor_transactions.jpg)
 
 11. On the **Report for principal** page, approve lines on the **Overview** tab and vouchers on the **Prepayments** tab, as described in the [Create and print a report for a principal, and reissue the seller's factures to the principal](../rus-transactions-through-intermediary/rus-transactions-through-intermediary.docx#_Create_report_for_1) section.
 12. You can create a facture, and view the principal's invoice (or facture) or the original invoice (or facture), as described in the [Create and print a report for a principal, and reissue the seller's factures to the principal](../rus-transactions-through-intermediary/rus-transactions-through-intermediary.docx#_Create_report_for_1) section.
@@ -216,7 +216,7 @@ Prepayments that are received from a principal aren't a source for charging VAT.
 
 Print a report for the principal as described in the [Create and a print a report for a principal, and reissue the seller's factures to the principal](../rus-transactions-through-intermediary/rus-transactions-through-intermediary.docx#_Create_report_for_1) section earlier in this topic. The report for the principal has two sections: one for shipments and one for prepayments.
 
-![](media/18_Отчет_коммиссионера_о_закупке_товара.jpg)
+![Отчет коммиссионера о закупке товара printed report](media/18_Отчет_коммиссионера_о_закупке_товара.jpg)
 
 ### Create a prepayment facture
 
@@ -225,15 +225,15 @@ Print a report for the principal as described in the [Create and a print a repor
 3. Select **Create facture** to open the **Facture create** dialog box.
 4. Specify the date of the registration, and then select **OK**.
 
-    ![](media/19_Facture_create.jpg)
+    ![Facture create dialog box](media/19_Facture_create.jpg)
 
 5. On the **Report for principal** page, on the **Prepayments** tab, select **Principal \> Facture** to view the registered principal's facture for prepayment.
 
-    ![](media/20_Facture_journal.jpg)
+    ![Facture journal page](media/20_Facture_journal.jpg)
 
 6. Select **Print \> Original** to print the original facture, or select **Print \> Copy** to print the facture copy.
 
-![](media/21_Счет-фактура.jpg)
+![Счет-фактура printed facture](media/21_Счет-фактура.jpg)
 
 ### Create a facture accounting journal
 
@@ -243,11 +243,11 @@ The prepayments that are received from the principal will be transferred to the 
 
 The original factures on the delivery of goods from sellers can be allocated among the principals. The **Received** worksheet of the facture accounting journal reflects the original factures.
 
-![](media/22_Facture_accounting_journal_Part_2.jpg)
+![Facture accounting journal, Received worksheet](media/22_Facture_accounting_journal_Part_2.jpg)
 
 The **Issued** worksheet of the facture accounting journal reflects the reissued factures (that is, the allocated parts of sellers' factures). The information about the sellers is presented in columns 10 through 12.
 
-![](media/23_Facture_accounting_journal_Part_1.jpg)
+![Facture accounting journal, Issued worksheet](media/23_Facture_accounting_journal_Part_1.jpg)
 
 Find more details in the following topics:
 
