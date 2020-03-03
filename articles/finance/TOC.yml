@@ -26,6 +26,8 @@
           href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?toc=/dynamics365/finance/toc.json
         - name: Apply updates to cloud environments
           href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/finance/toc.json
+        - name: Apply updates to on-premises deployments
+          href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/finance/toc.json
         - name: Configure service updates
           href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/finance/toc.json
         - name: Pause service updates
@@ -76,14 +78,18 @@
             href: get-started/whats-new-changed-10-0-8.md
           - name: Finance version 10.0.7 (January 2020)
             href: get-started/whats-new-changed-10-0-7.md
-        - name: Removed or deprecated features
-          href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/finance/toc.json
-        - name: AX 2012 features that were postponed
-          href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/finance/toc.json
-        - name: Features not implemented in on-premises deployments
-          href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/finance/toc.json
-        - name: End of mainstream support for Microsoft Dynamics AX 2009 and 2012
-          href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/finance/toc.json
+      - name: Removed or deprecated features in previous releases
+        items:
+          - name: Removed or deprecated features in Dynamics 365 Finance
+            href: get-started/removed-deprecated-features-finance.md
+          - name: Removed or deprecated platform features
+            href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/finance/toc.json
+      - name: AX 2012 features that were postponed
+        href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/finance/toc.json
+      - name: Features not implemented in on-premises deployments
+        href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/finance/toc.json
+      - name: End of mainstream support for Microsoft Dynamics AX 2009 and 2012
+        href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/finance/toc.json
       - name: Documentation resources
         items:
         - name: Help system
@@ -150,7 +156,7 @@
           href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/finance/toc.json
         - name: Saved views
           href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/finance/toc.json
-        - name: Grid capabilites
+        - name: Grid capabilities
           href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/finance/toc.json
         - name: Create and work with custom fields
           href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/finance/toc.json
@@ -942,6 +948,8 @@
           href: general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md
         - name: Set up sales tax reporting codes
           href: general-ledger/tasks/set-up-sales-tax-reporting-codes.md
+        - name: Dual currency support for sales tax
+          href: general-ledger/dual-currency-for-tax.md          
         - name: Sales tax specification by ledger transaction report
           href: general-ledger/Sales-tax-specification-by-ledger-transaction-report.md
         - name: Set up sales tax settlement periods

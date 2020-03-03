@@ -68,10 +68,8 @@ This page lists the resources that are available for IT pros and developers who 
 - [Install the POS layout designer](../install-pos-layout-designer.md)
 - [Call the Commerce runtime (CRT) service in offline mode](call-crt-service-offline.md)
 - [Modern POS (MPOS) and Cloud POS trigger extensibility](modern-pos-trigger-extensibility.md)
-- [Add a new custom control to an MPOS screen layout](add-new-custom-control-mpos-screen-layout.md)
 - [Implement a return policy by using triggers](trigger-example-return-policy.md)
 - [Block transactions by using triggers](trigger-example-blocking-transaction.md)
-- [Add extension properties to customer entities](add-extension-properties.md)
 - [Add custom controls to POS views](pos-custom-control.md)
 - [Point of sale (POS) payment extension](pos-payment-extension.md)
 - [Run the point of sale (POS) samples](pos-run-samples.md)
@@ -101,12 +99,14 @@ This page lists the resources that are available for IT pros and developers who 
 -   [Integrate POS with a new hardware device](hardware-device-extension.md)
 
 ## Commerce Runtime
--   [Commerce runtime (CRT) architecture and configuration](commerce-runtime-overview.md)
--   [Commerce runtime (CRT) extensibility and triggers](commerce-runtime-extensibility-trigger.md)
--   [Add customer preference data to channel databases](add-customer-preference-channel.md)
--   [Add properties to sales orders](add-properties-sales-order.md)
--   [Manage secrets for retail channels](manage-secrets.md)
--   [Log extension events to Application Insights](commerce-application-insights.md)
+- [Commerce runtime (CRT) architecture and configuration](commerce-runtime-overview.md)
+- [Commerce runtime (CRT) extensibility and triggers](commerce-runtime-extensibility-trigger.md)
+- [Add customer preference data to channel databases](add-customer-preference-channel.md)
+- [Add properties to sales orders](add-properties-sales-order.md)
+- [Manage secrets for retail channels](manage-secrets.md)
+- [Log extension events to Application Insights](commerce-application-insights.md)
+- [Create async Commerce (CRT) APIs in your business logic](async-commerce-extension.md)
+- [Pre-extended columns in the channel database](extended-columns.md)
 
 ## Retail SDK
 - [Retail software development kit (SDK) architecture](retail-sdk/retail-sdk-overview.md)

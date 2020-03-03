@@ -2,10 +2,10 @@
 # required metadata
 
 title: Pause service updates through Lifecycle Services (LCS)
-description: This topic explans how to pause service updates to your environments.
+description: This topic explains how to pause service updates to your environments.
 author: manalidongre
 manager: AnnBe
-ms.date: 07/02/2019
+ms.date: 03/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 24
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to pause updates to your sandbox and production environments by using Microsoft Dynamics Lifecycle Services (LCS).
+This topic explains how to pause updates to your sandbox and production cloud environments by using Microsoft Dynamics Lifecycle Services (LCS). This topic does not apply to on-premises environments.
 
 > [!IMPORTANT]
 > This feature is available only to customers who are using **version 8.1 and later** or are using **version 7.3**, and who are **not** part of the [First release](../../../fin-ops-core/fin-ops/get-started/public-preview-releases.md) program. Microsoft is working to make the feature available to First release customers. For customers who are on version 7.1, 7.2, or 8.0, you can take the update manually using the regular servicing flows.

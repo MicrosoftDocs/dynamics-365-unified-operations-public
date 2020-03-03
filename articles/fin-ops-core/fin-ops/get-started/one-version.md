@@ -5,7 +5,7 @@ title: One Version service updates FAQ
 description: This topic is intended to provide clarity on service updates, processes, and tools that you can use to stay current in a consistent, predictable, and seamless manner.
 author: ShellyBakke
 manager: AnnBe
-ms.date: 02/26/2020
+ms.date: 03/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -91,9 +91,9 @@ Customers on version 8.1 or later will only be able to apply the 8.1.x or v10.x 
 
 Yes, customers who are on version 7.3 are able to schedule platform updates directly in Lifecycle Services. A delay/pause experience is also available.
 
-### Do these updates apply to on-premises?
+### Service updates for on-premises deployments
 
-Refer to the [Software lifecycle policy and on-premises releases](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/on-prem-version-update-policy?toc=/fin-and-ops/toc.json) topic for the specific expiration dates of the version that you are on. They will have a 3 service update expiry in general. However, the process of the updates outlined in this topic only apply to the cloud service.
+The policy and schedule for service updates are now the same for both cloud and on-premises deployments. This includes, for example, the option to delay applying up to 3 consecutive updates. How to apply each of these updates remains slightly different. For more information, see [Apply updates to on-premises deployments](../../dev-itpro/deployment/apply-updates-on-premises.md#update-an-on-premises-deployment).
 
 ## Process
 
