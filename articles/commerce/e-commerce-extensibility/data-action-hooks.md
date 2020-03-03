@@ -36,14 +36,14 @@ This topic describes how to hook into pre- and post- data action events to furth
 
 ## Overview
 
-The set of modules included with the Dynamics 365 Commerce software development kit (SDK) use preexisting actions to fetch data for the modules to use. You may have scenarios where you want to change some business logic in the data action layer. In addition to support for data action overrides, the Commerce platform also has the ability to hook into pre- and post- data action events.
+The modules included with the Dynamics 365 Commerce software development kit (SDK) use pre-existing actions to fetch data for the modules to use. You may have scenarios where you want to change some business logic in the data action layer. In addition to support for data action overrides, the Commerce platform also has the ability to hook into pre- and post- data action events.
 
 ## Supported data action hook events
 
 The following data action hook events are supported:
-- **preHook**: Runs before the action starts to modify the data action input. Note that this is only applied to uncached data actions.
-- **preReadOnlyHook**: Runs before the action starts but cannot modify the data action input. Note that this can be applied to both cached and uncached data actions.
-- **postHook**: Runs after the data action completes and can modify the data action output. Note that this is only applied to uncached data actions.
+- **preHook**: Runs before the action starts to modify the data action input. This is only applied to uncached data actions.
+- **preReadOnlyHook**: Runs before the action starts but cannot modify the data action input. This can be applied to both cached and uncached data actions.
+- **postHook**: Runs after the data action completes and can modify the data action output. This is only applied to uncached data actions.
 - **postReadOnlyHook**: Runs after the data action completes but cannot modify the data action output. This is supported on both cached and uncached data actions.
 
 ## Use data action hooks
