@@ -2419,14 +2419,14 @@
               href: localizations/rus-register-transactions-with-reference-to-agreements.md
             - name: Inquiries and reports with agreements
               href: localizations/rus-inquiries-reports-agreements.md
-           - name: Transactions through intermediary
-             items:
-             - name: Transactions through intermediary overview
-               href: localizations/rus-transactions-through-intermediary.md
-             - name: Purchases on commission
-               href: localizations/rus-purchases-on-commission.md
-             - name: Sales on commission
-               href: localizations/rus-sales-on-commission.md
+          - name: Transactions through intermediary
+            items:
+            - name: Transactions through intermediary overview
+              href: localizations/rus-transactions-through-intermediary.md
+            - name: Purchases on commission
+              href: localizations/rus-purchases-on-commission.md
+            - name: Sales on commission
+              href: localizations/rus-sales-on-commission.md
         - name: Inventory
           items:
           - name: Goods in transit from vendor
