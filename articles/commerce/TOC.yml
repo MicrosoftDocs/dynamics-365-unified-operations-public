@@ -872,6 +872,20 @@
             href: customize-site-navigation.md
           - name: Create a page URL
             href: create-page-URL.md
+      - name: Manage digital assets
+        items:
+        - name: Digital asset management overview
+          href: dam-overview.md
+        - name: Upload images
+          href: dam-upload-images.md
+        - name: Upload video
+          href: dam-upload-video.md
+        - name: Upload files other than images and videos
+          href: dam-upload-files.md
+        - name: Crop images
+          href: dam-crop-images.md 
+        - name: Customize image focal points
+          href: dam-custom-focal-point.md
       - name: Make your site compliant
         items:
         - name: Compliance overview
@@ -1920,6 +1934,10 @@
             href: e-commerce-extensibility/create-observable-data-action.md 
           - name: Share state across modules
             href: e-commerce-extensibility/share-state-across-modules.md
+          - name: Data action overrides
+            href: data-action-overrides.md
+          - name: Data action hooks
+            href: data-action-hooks.md
         - name: Develop themes
           items:
           - name: Theming overview
