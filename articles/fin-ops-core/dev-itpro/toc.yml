@@ -993,11 +993,11 @@
       - name: Service requests
         items:
         - name: Cloud operations and servicing
-          href: lifecycle-services/cloud-operations-servicing
+          href: lifecycle-services/cloud-operations-servicing.md
         - name: Submit service requests to the Dynamics Service Engineering team
-          href: lifecycle-services/submit-request-dynamics-service-engineering-team
+          href: lifecycle-services/submit-request-dynamics-service-engineering-team.md
         - name: Planned maintenance window FAQ
-          href: lifecycle-services/planned-maintenance-window-faq
+          href: lifecycle-services/planned-maintenance-window-faq.md
       - name: Monitoring and diagnostics
         href: lifecycle-services/monitoring-diagnostics.md
       - name: Restart environment services
