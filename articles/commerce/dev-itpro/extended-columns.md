@@ -43,7 +43,7 @@ Although fields in the channel database are often extended, column lengths for t
 
 Although the fields are extended in the channel database, your extension must also extend the field in the Commerce Headquarters database by using the extended data type (EDT) extension model. Additionally, you must extend the corresponding point of sale (POS) or Commerce runtime (CRT) user interface (UI).
 
-If the Commerce Headquarters database isn't extended, either synchronization between the channel database and the Commerce Headquarters database will fail during the P-job or the extra characters will be truncated. Likewise, if the POS UI or CRT isn't extended, POS UI or CRT validation will prevent more than the default character length from being entered. The default length is determined by the base column length in the Commerce Headquarters database.
+If the Commerce Headquarters database isn't extended, either synchronization between the channel database and the Commerce Headquarters database will fail during the P-job or the extra characters will be truncated. Likewise, if the corresponding point of sale (POS) user interface (UI) or the Commerce runtime (CRT) isn't extended, validation will prevent more than the default character length from being entered. The default length is determined by the base column length in the Commerce Headquarters database.
 
 Here are some examples:
 
