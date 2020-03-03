@@ -990,6 +990,14 @@
           href: lifecycle-services/flowcharts-business-process-modeler.md
         - name: Upload custom business processes to Business process modeler
           href: lifecycle-services/upload-business-processes-bpm-task-recorder.md
+      - name: Service requests
+        items:
+        - name: Cloud operations and servicing
+          href: lifecycle-services/cloud-operations-servicing
+        - name: Submit service requests to the Dynamics Service Engineering team
+          href: lifecycle-services/submit-request-dynamics-service-engineering-team
+        - name: Planned maintenance window FAQ
+          href: lifecycle-services/planned-maintenance-window-faq
       - name: Monitoring and diagnostics
         href: lifecycle-services/monitoring-diagnostics.md
       - name: Restart environment services
@@ -1284,14 +1292,8 @@
         href: https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
       - name: Get support for Finance and Operations operated by 21Vianet in China
         href: lifecycle-services/21vianet-support.md
-      - name: Submit requests to the Dynamics Service Engineering team
-        href: lifecycle-services/submit-request-dynamics-service-engineering-team.md
       - name: Set up technical support for Finance and Operations
         href: lifecycle-services/support-experience.md
-      - name: Planned maintenance window FAQ
-        href: lifecycle-services/planned-maintenance-window-faq.md
-      - name: Cloud operations and servicing
-        href: lifecycle-services/cloud-operations-servicing.md
       - name: Manage Finance and Operations support experiences
         href: lifecycle-services/cloud-powered-support-lcs.md
     - name: System administration
