@@ -28,7 +28,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Setup Azure DevOps code sharing and build pipeline
+# Set up Azure DevOps code sharing and build pipeline
 
 [!include [banner](../includes/banner.md)]
 
