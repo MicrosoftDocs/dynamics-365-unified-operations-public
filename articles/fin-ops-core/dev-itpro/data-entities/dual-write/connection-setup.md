@@ -108,3 +108,4 @@ The setup of a dual-write connection between an existing instance of a Finance a
 2. To sync the existing Common Data Service data to the Finance and Operations app, [bootstrap](bootstrap-company-data.md) the Common Data Service data by using a three-letter ISO company code.
 
 Because dual-write is in live synchronization mode, the data from Common Data Service automatically starts to flow to the Finance and Operations app.
+
