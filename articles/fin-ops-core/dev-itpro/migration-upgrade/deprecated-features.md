@@ -236,7 +236,7 @@ Support for creating project-based sales orders where the project contract has m
 | **Replaced by another feature?**   | No. |
 | **Product areas affected**         | Product information management |
 | **Deployment option**              | All  |
-| **Status**                         | Removed as of Finance and Operations 10.0.0 with Platform update 24. In exceptional cases (in other words, to repair data corruption caused by a previous rename of the primary key of a released product) it is possible to request Microsoft to temporarily remove this restriction on the rename primary key operation for released products. |
+| **Status**                         | Removed as of Finance and Operations 10.0.0 with Platform update 24. (If and only if you need to repair data corruption caused by a previous rename of the primary key of a released product, please contact Microsoft Support to request temporary removal of this restriction.) |
 
 
 ## Finance and Operations 8.1.3 with Platform update 23
