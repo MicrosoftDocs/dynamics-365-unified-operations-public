@@ -1935,9 +1935,9 @@
           - name: Share state across modules
             href: e-commerce-extensibility/share-state-across-modules.md
           - name: Data action overrides
-            href: data-action-overrides.md
+            href: e-commerce-extensibility/data-action-overrides.md
           - name: Data action hooks
-            href: data-action-hooks.md
+            href: e-commerce-extensibility/data-action-hooks.md
         - name: Develop themes
           items:
           - name: Theming overview
