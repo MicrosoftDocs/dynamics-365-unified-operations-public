@@ -3,7 +3,7 @@
 
 title: Enhanced filtering in the RCS/Global repository
 description: This topic describes enhanced filtering capabilities for the RCS Global repository, which have been improved to include the additional filters.
-author: JaneAugustin      
+author: JaneA07      
 manager: AnnBe
 ms.date: 02/10/2020
 ms.topic: article
@@ -43,11 +43,11 @@ You can apply filters, either individually or in groups, to find specific or rel
 
 You can further refine a search by selecting the country code and clicking **Apply filter**.  
 
-[![Filter section for Global repository](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/417079-enhanced-filtering/RCS_Enhanced%20filter_section.JPG)](./media/ER-ExtLookup-Lookup1.gif)
+[![Filter section for Global repository](media/rcs-enhanced-filter-section.JPG)](./media/rcs-enhanced-filter-section.JPG) 
 
 The following example shows the results when filtering on **Business document type**. 
 
-[![Applied filter and Import for business document type] (https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/417079-Enhanced-filtering/RCS_Global%20repo_Filtering%20+%20import.JPG).](./media/ER-ExtLookup-Lookup1.gif)
+[![Applied filter and Import for business document type](media/rcs-enhanced-filtering-applied.JPG)](./media/rcs-enhanced-filtering-applied.JPG) 
 
 Filtered results can be imported into users RCS or Dynamics 365 Finance environment, either individually or as a set (by selecting the group of configurations) and clicking **Import**.
 
