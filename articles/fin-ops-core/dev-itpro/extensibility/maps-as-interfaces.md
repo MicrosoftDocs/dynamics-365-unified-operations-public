@@ -63,3 +63,94 @@ The class and extensions described above are shown in the following diagram.
 ![MapsAsInterfacesWalkThrough](media/MapsAsInterfaces2.png)
 
 The diagram contains an ISVModule1 model, which includes the **ISV1Header** table that implements the **SalesPurchTable** table map and contains its own **SalesPurchTableInterface** derived class. The model is independent of the ISVModule2, so when logic in the ISVModule2 creates an instance from the **ISV2SalesPurchTableInterface** class hierarchy, then an instance of the base class will be returned when the **SalesPurchTable** record is of type **ISV1Header**. If the methods on the base class return a reasonable result for unknown tables, then the two ISV models will co-exist within the same installation.
+
+## Code example
+
+The following code example demonstrates a way to extend table maps.
+
+```xpp
+[ExtensionOf(classStr(SalesPurchTableInterface))]
+final public class ISV2SalesPurchTableInterface_Extension
+{
+    private ISV2SalesPurchTableInterface ISV2SalesPurchTableInterface;
+
+    public ISV2SalesPurchTableInterface ISV2SalesPurchTableInterface()
+    {
+        if (!ISV2SalesPurchTableInterface)
+        {
+            ISV2SalesPurchTableInterface = ISV2SalesPurchTableInterface::createInstance(this);
+        }
+
+        return ISV2SalesPurchTableInterface;
+    }
+
+}
+
+public class ISV2SalesPurchTableInterface
+{
+
+    SalesPurchTableInterface salesPurchTableInterface;
+
+    private void initializeSalesPurchTableInterface(SalesPurchTableInterface _salesPurchTableInterface)
+    {
+        salesPurchTableInterface = _salesPurchTableInterface;
+    }
+
+    public SalesPurchTable parmSalesPurchTable()
+    {
+        return salesPurchTableInterface.parmSalesPurchTable();
+    }
+
+    protected void new()
+    {
+    }
+
+    public static ISV2SalesPurchTableInterface createInstance(SalesPurchTableInterface _salesPurchTableInterface)
+    {
+        SalesPurchTableInterfaceFactoryAttribute attr = new SalesPurchTableInterfaceFactoryAttribute(tableId2Name(_salesPurchTableInterface.parmSalesPurchTable().tableId));
+        
+        ISV2SalesPurchTableInterface instance = SysExtensionAppClassFactory::getClassFromSysAttribute(classStr(ISV2SalesPurchTableInterface), attr) as ISV2SalesPurchTableInterface;
+
+        instance.initializeSalesPurchTableInterface(_salesPurchTableInterface);
+
+        return instance;
+    }
+
+    public AccountingGroupId parmAccountingGroupId()
+    {
+        return '';
+    }
+
+}
+[SalesPurchTableInterfaceFactoryAttribute(tableStr(SalesTable))]
+public class ISV2SalesTableSalesPurchTable extends ISV2SalesPurchTableInterface
+{
+    private SalesTable parmSalesTable()
+    {
+        return this.parmSalesPurchTable();
+    }
+
+    public AccountingGroupId parmAccountingGroupId()
+    {
+        return this.parmSalesTable().AccountingGroupId;
+    }
+
+}
+
+[SalesPurchTableInterfaceFactoryAttribute(tableStr(PurchTable))]
+public class ISV2PurchTableSalesPurchTable extends ISV2SalesPurchTableInterface
+{
+
+    private PurchTable parmPurchTable()
+    {
+        return this.parmSalesPurchTable();
+    }
+
+    public AccountingGroupId parmAccountingGroupId()
+    {
+        return this.parmPurchTable().AccountingGroupId;
+    }
+
+}
+```
+
