@@ -3,7 +3,7 @@
 
 title: Microsoft FastTrack 
 description: This topic provides an overview of Microsoft FastTrack. FastTrack is a customer success service that is designed to help you move smoothly and confidently to Microsoft Dynamics 365, so that you can realize business value faster.
-author: margoc
+author: Jeff-Luo-MSFT
 manager: AnnBe
 ms.date: 03/03/2020
 ms.topic: article
@@ -23,7 +23,7 @@ ms.search.scope: Core, Operations
 ms.custom: 267934
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: margoc
+ms.author: jeluo
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611, July 2017 update
 
