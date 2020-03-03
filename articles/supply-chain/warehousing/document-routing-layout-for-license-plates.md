@@ -24,6 +24,7 @@ A typical scenario of printing a license plate label is as part of a warehousing
 
 Very complex labels can be printed, but only if the printing devices can understand the text getting sent to the device. An simple example of a ZPL (Zebra Programming Language) layout with a barcode looks as follow:
 
+```javascript
 ^XA~TA000~JSN^LT0^MNW^MTD^PON^PMN^LH0,0^JMA^PR2,2~SD15^JUS^LRN^CI0^XZ
 ^XA
 ^MMT
@@ -35,6 +36,7 @@ Very complex labels can be printed, but only if the printing devices can underst
 ^BY1,3,17^FT20,106^BCN,,Y,N,N,A
 ^FD$LicensePlateId$^FS
 ^PQ1,,,Y^XZ
+```
 
 The text $LicensePlateId$ will get replaced with a data value as part of the label printing process.
 
@@ -52,11 +54,11 @@ Custom formatting of how field values gets printed can be controlled via the fol
 
 Two examples of using the field number mapping of the &quot;Work quantity&quot; ($Qty$) field:
 
-1. **1)**Four zero placeholders appear in the result string: **$Qty:0000$**
+1. Four zero placeholders appear in the result string: **$Qty:0000$**
 
 In case the Qty = 10 the printing will look like this: **0010**
 
-1. **2)**Decimal point with two decimals **$Qty:0.00$** will look like **10.00**
+2. Decimal point with two decimals **$Qty:0.00$** will look like **10.00**
 
 Reference to the full number formatting operations:
 
