@@ -76,7 +76,7 @@
             href: get-started/whats-new-scm-10-0-7.md
         - name: Removed or deprecated features
           items:
-          - name: Removed or deprecated Supply Chain Management features
+          - name: Removed or deprecated features in Dynamics 365 Supply Chain Management
             href: get-started/removed-deprecated-features-scm-updates.md
           - name: Removed or deprecated features in previous releases
             href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
