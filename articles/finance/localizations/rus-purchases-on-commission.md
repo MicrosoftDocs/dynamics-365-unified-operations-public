@@ -198,9 +198,9 @@ Prepayments that are received from a principal aren't a source for charging VAT.
     ![Vendor payments page](media/15_Vendor_payments.jpg)
 
 5. Create a facture for the vendor prepayment.
-6. Create a purchase order and a facture as described in the [Create a purchase order and update the facture on goods that are purchased for a principal](../rus-transactions-through-intermediary/rus-transactions-through-intermediary.md#_Create_a_purchase) section earlier in this topic.
-7. Create a sales order and an invoice as described in the [Create a sales order and generate a sales invoice for goods that are purchased for a principal](../rus-transactions-through-intermediary/rus-transactions-through-intermediary.md#_Create_a_sales) section earlier in this topic.
-8. Create a report for the principal, and update the lines on shipments, as described in the [Create and print a report for a principal, and reissue the seller's factures to the principal](../rus-transactions-through-intermediary/rus-transactions-through-intermediary.md#_Create_report_for_1) section earlier in this topic.
+6. Create a purchase order and a facture as described in the [Create a purchase order and update the facture on goods that are purchased for a principal](rus-transactions-through-intermediary.md#_Create_a_purchase) section earlier in this topic.
+7. Create a sales order and an invoice as described in the [Create a sales order and generate a sales invoice for goods that are purchased for a principal](rus-transactions-through-intermediary.md#_Create_a_sales) section earlier in this topic.
+8. Create a report for the principal, and update the lines on shipments, as described in the [Create and print a report for a principal, and reissue the seller's factures to the principal](rus-transactions-through-intermediary.md#_Create_report_for_1) section earlier in this topic.
 9. In the bottom part of the **Report for principal** page, on the **Prepayments** tab, in the **Voucher** field, select the vendor prepayment voucher to include the prepayment on the report for the principal.
 
     ![Report for principal page, Prepayments tab](media/16_Report_for_principal.jpg)
@@ -209,12 +209,12 @@ Prepayments that are received from a principal aren't a source for charging VAT.
 
     ![Vendor transactions page](media/17_Vendor_transactions.jpg)
 
-11. On the **Report for principal** page, approve lines on the **Overview** tab and vouchers on the **Prepayments** tab, as described in the [Create and print a report for a principal, and reissue the seller's factures to the principal](../rus-transactions-through-intermediary/rus-transactions-through-intermediary.md#_Create_report_for_1) section.
-12. You can create a facture, and view the principal's invoice (or facture) or the original invoice (or facture), as described in the [Create and print a report for a principal, and reissue the seller's factures to the principal](../rus-transactions-through-intermediary/rus-transactions-through-intermediary.md#_Create_report_for_1) section.
+11. On the **Report for principal** page, approve lines on the **Overview** tab and vouchers on the **Prepayments** tab, as described in the [Create and print a report for a principal, and reissue the seller's factures to the principal](rus-transactions-through-intermediary.md#_Create_report_for_1) section.
+12. You can create a facture, and view the principal's invoice (or facture) or the original invoice (or facture), as described in the [Create and print a report for a principal, and reissue the seller's factures to the principal](rus-transactions-through-intermediary.md#_Create_report_for_1) section.
 
 ### Print a report for the principal
 
-Print a report for the principal as described in the [Create and a print a report for a principal, and reissue the seller's factures to the principal](../rus-transactions-through-intermediary/rus-transactions-through-intermediary.md#_Create_report_for_1) section earlier in this topic. The report for the principal has two sections: one for shipments and one for prepayments.
+Print a report for the principal as described in the [Create and a print a report for a principal, and reissue the seller's factures to the principal](rus-transactions-through-intermediary.md#_Create_report_for_1) section earlier in this topic. The report for the principal has two sections: one for shipments and one for prepayments.
 
 ![Отчет коммиссионера о закупке товара printed report](media/18_Отчет_коммиссионера_о_закупке_товара.jpg)
 
@@ -237,7 +237,7 @@ Print a report for the principal as described in the [Create and a print a repor
 
 ### Create a facture accounting journal
 
-The facture accounting journal shows approved lines. You can print a facture accounting journal as described in the [Print a facture accounting journal](../rus-transactions-through-intermediary/rus-transactions-through-intermediary.md#_Print_a_facture) section earlier in this topic.
+The facture accounting journal shows approved lines. You can print a facture accounting journal as described in the [Print a facture accounting journal](rus-transactions-through-intermediary.md#_Print_a_facture) section earlier in this topic.
 
 The prepayments that are received from the principal will be transferred to the seller. When the seller issues the prepayment facture to the agent, the agent registers the seller's factures on the **Received** worksheet of the facture accounting journal. The **Issued** worksheet of the facture accounting journal reflects the factures that have been reissued to the principal.
 
