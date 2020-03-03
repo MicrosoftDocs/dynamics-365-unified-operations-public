@@ -75,7 +75,11 @@
           - name: Supply Chain Management version 10.0.7 (January 2020)
             href: get-started/whats-new-scm-10-0-7.md
         - name: Removed or deprecated features
-          href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
+          items:
+          - name: Removed or deprecated Supply Chain Management features
+            href: get-started/removed-deprecated-features-scm-updates.md
+          - name: Removed or deprecated features in previous releases
+            href: migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
         - name: AX 2012 features that were postponed
           href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/supply-chain/toc.json
         - name: Features not implemented in on-premises deployments
