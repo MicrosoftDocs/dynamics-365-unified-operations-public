@@ -27,7 +27,7 @@
         - name: Apply updates to cloud environments
           href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/finance/toc.json
         - name: Apply updates to on-premises deployments
-          href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises#update-an-on-premises-deployment.md?toc=/dynamics365/finance/toc.json
+          href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/finance/toc.json
         - name: Configure service updates
           href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/finance/toc.json
         - name: Pause service updates
