@@ -63,18 +63,18 @@ To create an Azure DevOps Github repo, follow these steps.
 
 1. Clone the Microsoft Dynamics 365 Commerce Online SDK. The SDK will give you everything you need to extend your e-Commerce site including the ability to create new modules, data actions, and themes. The SDK configuration package is available through the following GitHub repository: https://github.com/microsoft/Msdyn365.Commerce.Online.
 
-There are two ways to get the SDK configuration packages to your development machine: you can either download it directly from the GitHub repo, or you can clone the repo. 
+    There are two ways to get the SDK configuration packages to your development machine: you can either download it directly from the GitHub repo, or you can clone the repo. 
 
-To clone your repo, follow these steps.
-    1. Launch a command prompt with administrator privileges and create a directory to hold your e-Commerce site code (for example, "c:\repos"). 
-    1. From the new directory, enter **git clone <YOUR_GIT_REPO>**, where <YOUR_GIT_REPO> is your Git repo. Since you're only pulling from the git repository once, you can remove the .git folder, which is a hidden directory under the root.
+    To clone your repo, follow these steps.
+        1. Launch a command prompt with administrator privileges and create a directory to hold your e-Commerce site code (for example, "c:\repos"). 
+        1. From the new directory, enter **git clone <YOUR_GIT_REPO>**, where <YOUR_GIT_REPO> is your Git repo. Since you're only pulling from the git repository once, you can remove the .git folder, which is a hidden directory under the root.
 
-```console
-md c:\repos
-cd c:\repos
-git clone https://github.com/microsoft/Msdyn365.Commerce.Online.git
-cd Msdyn365.Commerce.Online
-```
+    ```console
+    md c:\repos
+    cd c:\repos
+    git clone https://github.com/microsoft/Msdyn365.Commerce.Online.git
+    cd Msdyn365.Commerce.Online
+    ```
 
 1. Clone the Azure DevOps GitHub project repo:
     1. Under the **Repos** on the left navigation pane, select **Files**.
