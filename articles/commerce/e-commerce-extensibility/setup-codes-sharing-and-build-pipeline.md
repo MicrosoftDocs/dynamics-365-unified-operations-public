@@ -85,15 +85,15 @@ To create an Azure DevOps Github repo, follow these steps.
     1. Launch a command prompt with administrator privileges and create a directory to hold your e-Commerce site code (for example, "c:\repos"). 
     1. From the new directory, enter **git clone <AZURE_DEVOPS_GIT_REPO>**, where <AZURE_DEVOPS_GIT_REPO> is the Azure DevOps GitHub project repo. A new, empty folder with the name of the Azure DevOps project will be created.
 
-```console
-cd c:\repos
-git clone https://xxxxxx.dev.azure.com/<DevOpsProjectName>/_git/< DevOpsProjectName>
-```
+    ```console
+    cd c:\repos
+    git clone https://xxxxxx.dev.azure.com/<DevOpsProjectName>/_git/< DevOpsProjectName>
+    ```
 
 1. Copy all of the contents of "C:\repos\Msdyn365.Commerce.Online" to "C:\repos\<DevOpsProjectName>". Do not copy the hidden .git folder.
 
 1. With Visual Studio Code, open the folder "c:\repos\<DevOpsProjectName>". When you select the source control tab on the left, Visual Studio Code will show the new changes to be committed.
-1. To commit all of the changes to Git, enter a description in the text box at the top of the **SOURCE CONTROL: GIT** pane, and then select the "Commit" checkmark symbol above it. When prompted when to stage all you cahnges and commit them directly, select **Yes**.
+1. To commit all of the changes to Git, enter a description in the text box at the top of the **SOURCE CONTROL: GIT** pane, and then select the "Commit" checkmark symbol above it. When prompted when to stage all you changes and commit them directly, select **Yes**.
 
     ![Commit changes](media/code-sharing-4.png)
 
@@ -103,7 +103,7 @@ git clone https://xxxxxx.dev.azure.com/<DevOpsProjectName>/_git/< DevOpsProjectN
 
 In Azure DevOps, you should now see the new files.
 
-    ![New files in Azure DevOps](media/code-sharing-6.png)
+![New files in Azure DevOps](media/code-sharing-6.png)
 
 ## Create a new build pipeline
 1. In Azure DevOps select **Pipelines** under the **Pipelines** tab on the left followed by the **Create Pipeline** button.
