@@ -22,6 +22,8 @@
           href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?toc=/dynamics365/commerce/toc.json
         - name: Apply updates to cloud environments
           href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
+        - name: Apply updates to on-premises deployments
+          href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/commerce/toc.json
         - name: Configure service updates
           href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/commerce/toc.json
         - name: Pause service updates
@@ -768,8 +770,14 @@
           href: associate-site-online-store.md
         - name: Manage robots.txt files
           href: manage-robots-txt-files.md
+        - name: Upload URL redirects in bulk
+          href: upload-bulk-redirects.md
+        - name: Set up a B2C tenant in Commerce
+          href: set-up-B2C-tenant.md
         - name: Set up custom pages for user sign-ins
           href: custom-pages-user-logins.md
+        - name: Configure multiple B2C tenants in a Commerce environment
+          href: configure-multi-B2C-tenants.md
         - name: Add support for a content delivery network (CDN)
           href: add-cdn-support.md
         - name: Enable location-based store detection
