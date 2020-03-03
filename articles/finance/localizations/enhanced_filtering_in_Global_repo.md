@@ -5,7 +5,7 @@ title: Enhanced filtering in the RCS/Global repository
 description: This topic describes enhanced filtering capabilities for the RCS Global repository, which have been improved to include the additional filters.
 author: JaneA07      
 manager: AnnBe
-ms.date: 02/10/2020
+ms.date: 03/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
