@@ -107,9 +107,13 @@ public class ISV2SalesPurchTableInterface
 
     public static ISV2SalesPurchTableInterface createInstance(SalesPurchTableInterface _salesPurchTableInterface)
     {
-        SalesPurchTableInterfaceFactoryAttribute attr = new SalesPurchTableInterfaceFactoryAttribute(tableId2Name(_salesPurchTableInterface.parmSalesPurchTable().tableId));
+        SalesPurchTableInterfaceFactoryAttribute attr = 
+		new SalesPurchTableInterfaceFactoryAttribute(
+			tableId2Name(_salesPurchTableInterface.parmSalesPurchTable().tableId));
         
-        ISV2SalesPurchTableInterface instance = SysExtensionAppClassFactory::getClassFromSysAttribute(classStr(ISV2SalesPurchTableInterface), attr) as ISV2SalesPurchTableInterface;
+        ISV2SalesPurchTableInterface instance = 
+		SysExtensionAppClassFactory::getClassFromSysAttribute(classStr(ISV2SalesPurchTableInterface), attr) 
+		as ISV2SalesPurchTableInterface;
 
         instance.initializeSalesPurchTableInterface(_salesPurchTableInterface);
 
