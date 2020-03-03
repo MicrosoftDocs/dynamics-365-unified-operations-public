@@ -68,7 +68,7 @@ In most cases, you can reuse content from a Dynamics AX 2012 solution. For more 
 If your Help solution extends Microsoft's content, then you can fork our repo and then use standard Git tools to keep your fork updated with our content updates. You can make it a habit to get updates from Microsoft every week, every month, or every 6 months, for example. In some cases, though, you may prefer to get a completely new clone of the content of our repo and regenerate the Help from the clone on a regular basis. For more information, see [Extend, Customize, and Collaborate on the Help](contributor-guide.md).  
 
 > [!TIP]
-> The Custom Help Toolkit includes a tool that can help integrate the latest Microsoft content with yours. For more information, see [Use the HtmlFromRepoGenerator tool to get MarkDown files and generate HTML files](custom-help-toolkit.md#consoleapp).
+> The Custom Help Toolkit includes a tool that can help integrate the latest Microsoft content with yours. For more information, see [Custom Help Toolkit: The HTML From Repos Generator tool](custom-help-toolkit-htmlfromrepogenerator.md).
 
 ## See also
 

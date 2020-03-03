@@ -1,4 +1,4 @@
-- name: Development and administration for Finance and Operations apps
+﻿- name: Development and administration for Finance and Operations apps
   items:
   - name: Development and administration for Finance and Operations apps
     items:
@@ -467,7 +467,7 @@
       - name: Deploy custom help
         items:
         - name: Deploying custom Help
-          href: help/custom-help-overview
+          href: help/custom-help-overview.md
         - name: Deploying help websites on Azure
           href: help/custom-help-websites.md
         - name: Language and locale descriptors in across product and Help
