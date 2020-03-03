@@ -3,7 +3,7 @@
 
 title: Update an environment
 description: This topic explains how to update an environment that was deployed by using the self-service deployment experience.
-author: manado
+author: laneswenka
 manager: AnnBe
 ms.date: 09/20/2019
 ms.topic: article
@@ -23,7 +23,7 @@ ms.search.scope: Operations
 ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: manado
+ms.author: laswenka
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
 
