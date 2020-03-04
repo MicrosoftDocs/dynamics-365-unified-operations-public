@@ -5,7 +5,7 @@ title: Chain data actions
 description: This topic describes how to chain data actions.
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 03/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -194,3 +194,7 @@ You can now use the new chain data action wherever you need both the basic produ
 [Create an observable data action](create-observable-data-action.md)
 
 [Share state across modules](share-state-across-modules.md)
+
+[Data action overrides](data-action-overrides.md)
+
+[Data action hooks](data-action-hooks.md)

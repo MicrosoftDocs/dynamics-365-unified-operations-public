@@ -3,7 +3,7 @@
 
 title: Maintenance mode
 description: This topic provides information about maintenance mode, which is a system-wide setting that lets system administrators safely make system changes that might affect system functionality.
-author: manalidongre
+author: laneswenka
 manager: AnnBe
 ms.date: 05/10/2019
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 70292
 ms.assetid: c11a35e8-40bb-4005-adf3-cfd998a418fc
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: manado
+ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

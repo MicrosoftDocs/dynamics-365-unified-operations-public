@@ -1,6 +1,21 @@
 {
   "redirections": [
     {
+      "source_path": "articles/commerce/dev-itpro/add-new-custom-control-mpos-screen-layout.md",
+      "redirect_url": "dev-retail-home-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/choose-deployment.md",
+      "redirect_url": "dev-retail-home-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/add-extension-properties.md",
+      "redirect_url": "dev-retail-home-page",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/fin-ops-core/dev-itpro/extensibility/NamingGuidelines.md",
       "redirect_url": "naming-guidelines-extensions",
       "redirect_document_id": "false"

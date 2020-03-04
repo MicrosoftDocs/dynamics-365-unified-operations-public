@@ -1800,6 +1800,8 @@
               href: localizations/apac-ind-GST-define-gstin-numbers-number-sequences.md
             - name: Define HSN codes and Service Accounting Codes
               href: localizations/apac-ind-GST-hsn-service-accounting-codes.md
+            - name: Create tax rate type
+              href: localizations/apac-ind-GST-create-tax-rate-type.md
             - name: Create main accounts for the GST posting type
               href: localizations/apac-ind-GST-create-main-accounts-GST-posting-type.md
             - name: Create a tax settlement period 
@@ -1927,18 +1929,19 @@
         - name: Tax engine
           items: 
           - name: Tax engine overview
-            href: general-ledger/tax-engine.md
-            items:     
-            - name: Create tax components
-              href: localizations/tax-engine-create-tax-component.md
-            - name: Import configuration
-              href: general-ledger/tax-engine-import-configuration.md
-            - name: Tax engine applicability
-              href: general-ledger/tax-engine-applicability.md
-            - name: Tax engine integration
-              href: general-ledger/tax-engine-integration.md
-            - name: Extending the Tax engine
-              href: general-ledger/extend-tax-engine-configurations.md
+            href: general-ledger/tax-engine.md  
+          - name: Import configuration
+            href: general-ledger/tax-engine-import-configuration.md
+          - name: Advanced formula designer
+            href: ../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md?toc=/dynamics365/finance/toc.json
+          - name: Tax engine applicability
+            href: general-ledger/tax-engine-applicability.md
+          - name: Create tax components
+            href: localizations/tax-engine-create-tax-component.md
+          - name: Tax engine integration
+            href: general-ledger/tax-engine-integration.md
+          - name: Extending the Tax engine
+            href: general-ledger/extend-tax-engine-configurations.md
         - name: Tax thresholds FAQ
           href: localizations/apac-ind-tax-thresholds.md          
         - name: Stock transfers
@@ -2433,6 +2436,14 @@
               href: localizations/rus-register-transactions-with-reference-to-agreements.md
             - name: Inquiries and reports with agreements
               href: localizations/rus-inquiries-reports-agreements.md
+          - name: Transactions through intermediary
+            items:
+            - name: Transactions through intermediary overview
+              href: localizations/rus-transactions-through-intermediary.md
+            - name: Purchases on commission
+              href: localizations/rus-purchases-on-commission.md
+            - name: Sales on commission
+              href: localizations/rus-sales-on-commission.md
         - name: Inventory
           items:
           - name: Goods in transit from vendor
@@ -3147,6 +3158,8 @@
           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
         - name: Select data model definitions when you create formats
           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
+        - name: Enhanced filtering options for finding configurations in the Global repository
+          href: ../finance/localizations/enhanced_filtering_in_Global_repo.md          
         - name: Generate reports by adding content as raw XML
           href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/finance/toc.json
         - name: (ER) Cross-company data sources in Electronic reporting
@@ -3703,4 +3716,3 @@
     href: ../supply-chain/index.md
   - name: Dynamics 365 Commerce
     href: ../commerce/index.md
-

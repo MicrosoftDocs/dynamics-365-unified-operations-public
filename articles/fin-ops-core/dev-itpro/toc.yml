@@ -430,6 +430,8 @@
             href: deployment/setup-deploy-on-premises-pu8-pu11.md
           - name: Installation steps for Retail channel components in an on-premises environment
             href: deployment/deploy-retail-onprem.md
+          - name: Reuse the same AD FS instance for multiple environments
+            href: deployment/onprem-reuseadfs.md
         - name: Develop and deploy custom models to on-premises environments
           href: deployment/develop-deploy-custom-models-on-premises.md
         - name: PowerBI.com integration with on-premises environments
@@ -970,24 +972,34 @@
         href: lifecycle-services/configure-execute-code-upgrade.md
       - name: Create or update methodologies
         href: lifecycle-services/create-methodology.md
-      - name: Business process modeler
-        href: lifecycle-services/bpm-overview.md
-      - name: Business process libraries in Business process modeler
-        href: lifecycle-services/business-process-libraries-business-process-modeler.md
-      - name: Create, edit, and browse Business process modeler libraries
-        href: lifecycle-services/creating-editing-browsing.md
-      - name: Complete tasks in Business process modeler
-        href: lifecycle-services/complete-tasks-bpm.md
-      - name: Work with activity diagrams in BPM libraries
-        href: lifecycle-services/using-activity-diagrams.md
-      - name: Synchronize BPM libraries with Azure DevOps
-        href: lifecycle-services/synchronize-bpm-vsts.md
-      - name: Create user acceptance test libraries using task guides and BPM
-        href: lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
-      - name: Flowcharts in Business process modeler
-        href: lifecycle-services/flowcharts-business-process-modeler.md
-      - name: Upload custom business processes to Business process modeler
-        href: lifecycle-services/upload-business-processes-bpm-task-recorder.md
+      - name: Business process modeler (BPM)
+        items:
+        - name: Business process modeler (BPM) overview
+          href: lifecycle-services/bpm-overview.md
+        - name: Business process libraries in Business process modeler
+          href: lifecycle-services/business-process-libraries-business-process-modeler.md
+        - name: Create, edit, and browse Business process modeler libraries
+          href: lifecycle-services/creating-editing-browsing.md
+        - name: Complete tasks in Business process modeler
+          href: lifecycle-services/complete-tasks-bpm.md
+        - name: Work with activity diagrams in BPM libraries
+          href: lifecycle-services/using-activity-diagrams.md
+        - name: Synchronize BPM libraries with Azure DevOps
+          href: lifecycle-services/synchronize-bpm-vsts.md
+        - name: Create user acceptance test libraries using task guides and BPM
+          href: lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
+        - name: Flowcharts in Business process modeler
+          href: lifecycle-services/flowcharts-business-process-modeler.md
+        - name: Upload custom business processes to Business process modeler
+          href: lifecycle-services/upload-business-processes-bpm-task-recorder.md
+      - name: Service requests
+        items:
+        - name: Cloud operations and servicing
+          href: lifecycle-services/cloud-operations-servicing.md
+        - name: Submit service requests to the Dynamics Service Engineering team
+          href: lifecycle-services/submit-request-dynamics-service-engineering-team.md
+        - name: Planned maintenance window FAQ
+          href: lifecycle-services/planned-maintenance-window-faq.md
       - name: Monitoring and diagnostics
         href: lifecycle-services/monitoring-diagnostics.md
       - name: Restart environment services
@@ -1282,14 +1294,8 @@
         href: https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
       - name: Get support for Finance and Operations operated by 21Vianet in China
         href: lifecycle-services/21vianet-support.md
-      - name: Submit requests to the Dynamics Service Engineering team
-        href: lifecycle-services/submit-request-dynamics-service-engineering-team.md
       - name: Set up technical support for Finance and Operations
         href: lifecycle-services/support-experience.md
-      - name: Planned maintenance window FAQ
-        href: lifecycle-services/planned-maintenance-window-faq.md
-      - name: Cloud operations and servicing
-        href: lifecycle-services/cloud-operations-servicing.md
       - name: Manage Finance and Operations support experiences
         href: lifecycle-services/cloud-powered-support-lcs.md
     - name: System administration
