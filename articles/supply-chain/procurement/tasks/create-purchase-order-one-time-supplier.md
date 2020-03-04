@@ -40,5 +40,5 @@ This procedure shows you how to create a purchase order for a one-time supplier.
     * A vendor account is automatically created and assigned to the purchase order. The vendor account is created based on the template that is specified on the General tab in the Accounts payable parameters page.  
 4. In the Name field, type a name for the supplier.
 5. Click OK.
-    * The purchase order can now be completed and processed like any other order. There are no special characteristics related to how this is done. The invoice will account a due transaction on the vendor account that was created with the order, and payment will then be processed. When this is completed, the vendor account can be deleted. This is typically done by the accounts payable department.  
+    * The purchase order can now be completed and processed like any other order. There are no special characteristics related to how this is done. The invoice will account a due transaction on the vendor account that was created with the order, and payment will then be processed.
 
