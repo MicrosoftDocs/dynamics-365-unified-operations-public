@@ -2,10 +2,10 @@
 # required metadata
 
 title: Set up Azure DevOps code sharing and build pipeline
-description: This topic describes how to set up code sharing with Azure DevOps and a build pipeline for your Microsoft Dynamics 365 Commerce online extensibility code. 
+description: This topic describes how to set up code sharing with Azure DevOps and create a build pipeline for your Microsoft Dynamics 365 Commerce online extensibility code. 
 author: samjarawan
 manager: annbe
-ms.date: 02/28/2020
+ms.date: 03/09/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to set up code sharing with Azure DevOps and a build pipeline for your Microsoft Dynamics 365 Commerce online extensibility code. 
+This topic describes how to set up code sharing with Azure DevOps and create a build pipeline for your Microsoft Dynamics 365 Commerce online extensibility code. 
 
 ## Overview
 
@@ -40,8 +40,7 @@ Leveraging [Azure DevOps](https://docs.microsoft.com/azure/devops/user-guide/wha
 
 This topic will guide you through the steps needed to:
 * Create a GitHub repository (repo) for the Dynamics 365 Commerce online software development kit (SDK).
-* Configure a build pipeline to generate a Dynamics 365 Commerce online deployable package.
-
+* Create and configure a build pipeline to generate a Dynamics 365 Commerce online deployable package.
 
 ##  Create an Azure DevOps Github repo
 
@@ -105,32 +104,35 @@ In Azure DevOps, you should now see the new files.
 
 ![New files in Azure DevOps](media/code-sharing-6.png)
 
-## Create a new build pipeline
-1. In Azure DevOps select **Pipelines** under the **Pipelines** tab on the left followed by the **Create Pipeline** button.
+## Create and configure a new build pipeline in Azure DevOps
+
+To create and configure a new build pipeline in Azure DevOps, follow these steps.
+
+1. Under **Pipelines** in the left navigation pane, select **Pipelines**, and then select **Create Pipeline** in the main window.
 
 ![Create a pipeline](media/code-sharing-7.png)
 
-2. Select the **Use the classic editor** link.
+1. Select **Use the classic editor**.
 
 ![Select classic editor](media/code-sharing-8.png)
 
-3. Select the repository <DevOpsProjectName> followed by the continue button.
+1. Select your Azure DevOps GitHub repo project, and then select **Continue**.
 
 ![Select repository](media/code-sharing-9.png)
 
-4. Choose an empty job template.
+1. Under **Select a template**, select **Empty job**.
 
-![Choose an empty job template](media/code-sharing-10.png)
+![Select an empty job template](media/code-sharing-10.png)
 
-5. Select the **+** button next to "Agent job 1" to add a new agent job.
+1. Next to **Agent job**, select **+** to add a new agent job.
 
 ![Add new agent job](media/code-sharing-11.png)
 
-6. Search for the "PowerShell" task and select the "Add button".
+1. Search for **PowerShell**, and then select the "Add button".
 
 ![Add PowerShell task](media/code-sharing-12.png)
 
-7. Select the new "PowerShell Script" item and copy the below script and set the **Type** to Inline.
+1. Select the new "PowerShell Script" item and copy the below script and set the **Type** to Inline.
 
   ```console
   yarn
