@@ -446,6 +446,7 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
 | SNAC – ODBC driver 17 | <https://www.microsoft.com/download/details.aspx?id=56567> |
 | Microsoft SQL Server Management Studio 17.5 | <https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms> |
 | Microsoft Visual C++ Redistributable Packages for Microsoft Visual Studio 2013 | <https://support.microsoft.com/help/3179560> |
+| Microsoft Visual C++ Redistributable Packages for Microsoft Visual Studio 2017 | <https://lcs.dynamics.com/V2/SharedAssetLibrary> > Models > "VC++ 17 Redistributables"|
 | Microsoft Access Database Engine 2010 Redistributable | <https://www.microsoft.com/download/details.aspx?id=13255> |
 
 > [!IMPORTANT]
@@ -483,6 +484,7 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
     # If Remoting, only execute
     # .\Complete-PreReqs-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
 
+    # Note: Script "Add-GMSAOnVM.ps1" is not present on BI node 
     .\Add-GMSAOnVM.ps1
     .\Import-PfxFiles.ps1
     .\Set-CertificateAcls.ps1
@@ -524,6 +526,9 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
 7. If the test is successful, run the following command to deploy the cluster.
 
     ```powershell
+    # If using offline (internet-disconnected) install
+    # .\CreateServiceFabricCluster.ps1 -ClusterConfigFilePath .\ClusterConfig.json -FabricRuntimePackagePath <Path to MicrosoftAzureServiceFabric.cab download>
+    
     .\CreateServiceFabricCluster.ps1 -ClusterConfigFilePath .\ClusterConfig.json
     ```
 
