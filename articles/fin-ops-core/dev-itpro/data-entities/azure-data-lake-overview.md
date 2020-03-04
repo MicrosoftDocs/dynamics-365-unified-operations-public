@@ -34,9 +34,9 @@ ms.dyn365.ops.version: Platform update 34
 
 ## What is Azure Data Lake?
 
-Microsoft Azure Data Lake is a technology that is designed to make big data analytics and artificial intelligence (AI) available in the Azure cloud. When this topic mentions "Data Lake," it's referring specifically to storage technology that is based on Azure Data Lake Storage Gen2.
+Microsoft Azure Data Lake is a technology in Azure cloud that enables big data analytics and artificial intelligence (AI). When this topic mentions "Data Lake," it's referring specifically to storage technology that is based on Azure Data Lake Storage Gen2.
 
-Data lakes provide cloud storage that is less expensive than the cloud storage that relational databases provide. Therefore, large amounts of data can be stored in the cloud. This data includes both business data that is traditionally stored in business systems and data warehouses, and device and sensor data, such as signals from devices. In addition, Data Lake supports a range of tools and programming languages that enable large amounts of data to be reported on, queried, and transformed.
+Data lakes provide cloud storage that is less expensive than the cloud storage that relational databases provide. Therefore, large amounts of data can be stored in the cloud. This data includes both business data that is traditionally stored in business systems and data warehouses, device and sensor data, such as signals from devices. In addition, Data Lake supports a range of tools and programming languages that enable large amounts of data to be reported on, queried, and transformed.
 
 For an overview of Data Lake Storage Gen2, see [Introduction to Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction).
 
@@ -63,10 +63,17 @@ For more information, see [Bring your own database (BYOD)](https://docs.microsof
 
 ## Data Lake combines BYOD and Entity store
 
-Customers use a combination of analytical workspaces (which are based on Entity store) and BYOD for different scenarios.
+Customers use a combination of analytical workspaces (which are based on Entity store) and BYOD for different scenarios. Following table compares the scenarios and capabilities
 
-![Comparison of analytical workspaces/Entity store and BYOD](./media/EntityStore-or-BYOD-PPT.png)
 
+| Analytical workspaces built-on Entity store                                                                                              | Data warehouse with Bring your own DB (BYOD)   |
+|------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
+| Near real-time Operational Analytics (with embedded Power BI)                                                                            | Data warehouse with PowerBI.com or other tools |
+| Reporting on data from F&O                                                                                                               | Mash-up F&O data with other data sources       |
+| Ready-made reports shipped with F&O or ISV solution                                                                                      | Reports extended or authored by partner        |
+
+
+Reports authored with both these sources can be pinned into Analytical workspaces in F&O with contextual security and drill thru actions
 Data Lake combines both these services into a single service that offers the "best of both worlds":
 
 - Because Data Lake is included in customer subscriptions, you can bring your own data lake and integrate it with Finance and Operations apps. Finance and Operations apps will use your data lake to store Entity store data and operate analytical workspaces. Analytical workspaces continue to work as they worked before.
