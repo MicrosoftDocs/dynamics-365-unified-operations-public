@@ -110,36 +110,38 @@ To create and configure a new build pipeline in Azure DevOps, follow these steps
 
 1. Under **Pipelines** in the left navigation pane, select **Pipelines**, and then select **Create Pipeline** in the main window.
 
-![Create a pipeline](media/code-sharing-7.png)
+    ![Create a pipeline](media/code-sharing-7.png)
 
 1. Select **Use the classic editor**.
 
-![Select classic editor](media/code-sharing-8.png)
+    ![Select classic editor](media/code-sharing-8.png)
 
 1. Select your Azure DevOps GitHub repo project, and then select **Continue**.
 
-![Select repository](media/code-sharing-9.png)
+    ![Select repository](media/code-sharing-9.png)
 
 1. Under **Select a template**, select **Empty job**.
 
-![Select an empty job template](media/code-sharing-10.png)
+    ![Select an empty job template](media/code-sharing-10.png)
 
 1. Next to **Agent job**, select **+** to add a new agent job.
 
-![Add new agent job](media/code-sharing-11.png)
+    ![Add new agent job](media/code-sharing-11.png)
 
-1. Search for **PowerShell**, and then select the "Add button".
+1. On the **Add tasks** pane on the right, search for "PowerShell", and then select **Add**.
 
-![Add PowerShell task](media/code-sharing-12.png)
+    ![Add PowerShell task](media/code-sharing-12.png)
 
-1. Select the new "PowerShell Script" item and copy the below script and set the **Type** to Inline.
+1. In the main window, select **PowerShell Script**.
 
-  ```console
-  yarn
-  yarn msdyn365 pack
-  ```
+1. In the right pane under **Type**, select **Inline**, and then copy the script below into the **Script** box.
+
+    ```console
+    yarn
+    yarn msdyn365 pack
+    ```
   
-![Configure task](media/code-sharing-13.png)
+    ![Configure task](media/code-sharing-13.png)
 
 8. Expand the **Advanced** secting and change the working directory to **$(Build.SourcesDirectory)**
 
