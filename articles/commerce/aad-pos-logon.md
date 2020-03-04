@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Enable Azure AD authentication for POS logon
-description: This topic describes how to configure Commerce point of sale (POS) application logon experience to use Azure AD authentication.
+title: Enable Azure Active Directory authentication for POS logon
+description: This topic describes how to configure the Commerce point of sale (POS) login experience to use Azure Active Directory authentication.
 author: boycezhu
 manager: annbe
-ms.date: 02/27/2020
+ms.date: 03/04/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-commerce
@@ -27,14 +27,14 @@ ms.search.validFrom:
 ms.dyn365.ops.version: 10.0.10
 ---
 
-# Enable Azure AD authentication for POS logon
+# Enable Azure Active Directory authentication for POS logon
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
-## Overview
-Many customers who use Dynamics 365 Commerce also use other Microsoft cloud services, for which they manage users’ credentials in Azure Active Directory (Azure AD) and want to use the same Azure AD account across applications. This topic describes how to configure Commerce point of sale (POS) application logon experience to use Azure AD authentication.
+Many customers who use Dynamics 365 Commerce also use other Microsoft cloud services, for which they may manage users credentials using Azure Active Directory (Azure AD). In those cases, customers may want to use the same Azure AD account across applications. This topic describes how to configure the Commerce point of sale (POS) loging experience to use Azure AD authentication.
 
-## Enable Azure AD authentication for POS logon
-You need to configure a store’s functionality profile settings to enable Azure AD as authentication method for POS logon for that store, follow these steps:
+## Configure Azure AD authentication
+You need to configure a store’s functionality profile settings to enable Azure AD as the authentication method for POS logon for that store. To do so, follow these steps:
 
 1. Go to **Retail and Commerce** > **Channel setup** > **POS setup** > **POS profiles** > **Functionality profiles**.
 1. Select the functionality profile you want to change.
@@ -47,26 +47,26 @@ To apply the settings to POS clients, follow these steps:
 1. Run the **1070 (Channel configuration)** distribution schedule.
 
 > [!NOTE]
-> The Azure AD authentication requires internet connection, therefore it will not work when POS is in offline more.
+> Azure AD authentication requires an internet connection. It will not work when POS is in offline more.
 
 ## Associate an Azure AD account with a worker
 
-Before a store worker can use an Azure AD account to login POS application, the Azure AD account must be associated with that worker.
+Before a store worker can use an Azure AD account to log into the POS application, the Azure AD account must be associated with that worker.
 
-To associate an Azure AD account with a worker, follow these steps.
+To associate an Azure AD account with a worker, follow these steps:
 
 1. Go to **Retail and Commerce** > **Employees** > **Workers**.
 1. Open a worker’s details page.
 1. On the Action Pane, select **Commerce**. In the **External identity** section, select **Associate existing identity**.
-1. In the **Use existing external identity** dialog box that appears, select **Search using email** option, enter an Azure AD email, and then click **Search**.
+1. In the **Use existing external identity** dialog box, select **Search using email**, enter an Azure AD email, and then click **Search**.
 1. Select the Azure AD account returned, and then click **OK**.
 
-Once done, the **Alias**, **UPN** and **External sub identifier** fields under the **Commerce** tab of the worker’s details page will be filled out.
+Once done, the **Alias**, **UPN**, and **External sub identifier** fields under the **Commerce** tab of the worker’s details page will be completed.
 
 ## Additional resources
 
-[Set up extended logon functionality for MPOS and Cloud POS](https://docs.microsoft.com/dynamics365/commerce/extended-logon)
+[Set up extended logon functionality for MPOS and Cloud POS](extended-logon.md)
 
-[Create a retail functionality profile](https://docs.microsoft.com/dynamics365/commerce/retail-functionality-profile)
+[Create a retail functionality profile](retail-functionality-profile.md)
 
 [Configure a worker](https://docs.microsoft.com/dynamics365/commerce/tasks/worker)
