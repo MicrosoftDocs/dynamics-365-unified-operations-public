@@ -2578,20 +2578,24 @@
           href: localizations/united-kingdom.md
         - name: Construction Industry Scheme
           href: localizations/emea-gbr-cis-construction-industry-scheme.md
-        - name: Create a credit on the settlement discount
-          href: localizations/tasks/gb-00009-credit-note-settlement-discount.md
-        - name: Create a purchase order that includes items subject to reverse charge VAT
-          href: localizations/tasks/purchase-order-reverse-charge-vat.md
-        - name: Create a sales order that includes items subject to reverse charge VAT
-          href: localizations/tasks/gb-00002-sales-order.md
-        - name: Set up item sales tax groups for reverse charge VAT
-          href: localizations/tasks/gb-00002-item-sales-tax-groups-reverse-charge-vat.md
-        - name: Set up reverse charge VAT item groups, rules, and parameters
-          href: localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
-        - name: Set up sales tax groups for reverse charge VAT
-          href: localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md      
+        - name: Reverse charge
+          items:
+          - name: Create a credit on the settlement discount
+            href: localizations/tasks/gb-00009-credit-note-settlement-discount.md
+          - name: Create a purchase order that includes items subject to reverse charge VAT
+            href: localizations/tasks/purchase-order-reverse-charge-vat.md
+          - name: Create a sales order that includes items subject to reverse charge VAT
+            href: localizations/tasks/gb-00002-sales-order.md
+          - name: Set up item sales tax groups for reverse charge VAT
+            href: localizations/tasks/gb-00002-item-sales-tax-groups-reverse-charge-vat.md
+          - name: Set up reverse charge VAT item groups, rules, and parameters
+            href: localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
+          - name: Set up sales tax groups for reverse charge VAT
+            href: localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md      
         - name: Making Tax Digital for VAT
           href: localizations/emea-gbr-mtd-vat-integration.md
+        - name: Statistics on payment practices report
+          href: localizations/emea-gbr-statistics-on-payment-practices-report.md
       - name: United States
         items:
         - name: United States overview
