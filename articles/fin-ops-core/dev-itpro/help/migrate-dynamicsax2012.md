@@ -5,7 +5,7 @@ title: Convert Dynamics AX 2012 content for Dynamics 365
 description: This topic describes how you can reuse content from Dynamics AX for your Dynamics 365 solution. 
 author: edupont04
 manager: AnnBe
-ms.date: 02/18/2020
+ms.date: 03/04/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -84,7 +84,7 @@ The following table describes the metadata properties:
 |----------|-------------|
 |title | The value is used for full-text search from the Help pane. |
 |description  | The value is used for full-text search from the Help pane.  |
-|ms.search.form | The value contains the Application Object Tree (AOT) name of a form. If a value is present, it’s used for context-sensitive search from the Help pane. |
+|ms.search.form | The value contains the Application Object Tree (AOT) name of a form. If a value is present, it's used for context-sensitive search from the Help pane. |
 |ms.locale |This value indicates the language of the topic. It isn't currently used in the Dynamics 365 Help pane, but it might be used in the future.   |
 
 The following property is used in the Finance and Operations client and will be added to the custom implementation of the Help pane:  
@@ -95,7 +95,7 @@ The following property is used in the Finance and Operations client and will be 
 
     |Value|Description|
     |-----|-----------|
-    |Core|If this value is present, the topic appears in the Help pane. Otherwise, the topic doesn’t appear in the Help pane. </br>This is set for the part of the Microsoft content that must always be available in the Help pane for any user across all supported Dynamics 365 solutions.|
+    |Core|If this value is present, the topic appears in the Help pane. Otherwise, the topic doesn't appear in the Help pane. </br>This is set for the part of the Microsoft content that must always be available in the Help pane for any user across all supported Dynamics 365 solutions.|
     |Operations|Applies to solutions based on Dynamics 365 Finance or Supply Chain Management.|
     |Retail    |Applies to solutions based on Dynamics 365 Commerce.|
     |Human Resources  |Applies to solutions based on Dynamics 365 Human Resources.|
@@ -117,6 +117,9 @@ The following properties are reserved for future use:
 
     In the future, this property may be used to limit the content that is shown to content for a specific industry.
 
+> [!TIP]
+> Microsoft's content in the public GitHub repos contain additional metadata that is used by Microsoft in internal processes that are not related to the mechanics of the help system. You can ignore these metadata properties if you extend or customize Microsoft's content.  
+
 ## Moving to MarkDown
 
 If you want to customize or extend the Microsoft Help, you can fork our public repo for either the source repo in English (US) at [https://github.com/MicrosoftDocs/Dynamics-365-unified-Operations-public](https://github.com/MicrosoftDocs/Dynamics-365-unified-Operations-public), or one of the related repos with translations into the supported languages. For more information, see [Extend, Customize, and Collaborate on the Help](contributor-guide.md).  
@@ -130,3 +133,4 @@ When you have converted your content to MarkDown, you can use a Git repo in Azur
 [Deploying custom help sites](custom-help-websites.md)  
 [Custom Help Overview](custom-help-overview.md)  
 [Custom Help Toolkit](custom-help-toolkit.md)  
+[Extend, Customize, and Collaborate on the Help](contributor-guide.md)  

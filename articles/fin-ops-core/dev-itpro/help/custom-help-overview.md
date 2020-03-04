@@ -53,7 +53,7 @@ In this simplified scenario, you deploy conceptual Help to a website that descri
 
 :::image type="content" source="../media/help-architecture-custom1.png" alt-text="Diagram showing the Help pane with one custom help website connected and no task guides.":::
 
-As a result, when a user opens the Help pane, they see links to Help from the partner's website and from *docs.microsoft.com*. The in-product Help pane shows context-sensitive links to Help content on the connected websites based on specific metadata values. For more information about the mechanics, see 
+As a result, when a user opens the Help pane, they see links to Help from the partner's website and from *docs.microsoft.com*. The in-product Help pane generates context-sensitive links to Help content on the connected websites based on specific metadata values. For more information about the mechanics, see [Content and search indexing](custom-help-websites.md#content-and-search-indexing).  
 
 If that scenario is too simple, then let us look at a couple of variants.
 

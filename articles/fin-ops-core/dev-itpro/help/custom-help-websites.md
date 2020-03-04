@@ -57,6 +57,16 @@ In order to make links to your custom help available in the in-product Help pane
 
 Your custom Help website must be able to return relevant links based on the metadata in the search query. This means customizing the Help pane to consume the content through a search index. We recommend using [Azure Cognitive Search](/azure/search/search-what-is-azure-search) to set up and run this search index.  
 
+The search index is based on the presence of specific metadata in the Help articles as described in following table:
+
+|Property  |Description  |
+|----------|-------------|
+|title | The value is used for full-text search from the Help pane. |
+|description  | The value is used for full-text search from the Help pane.  |
+|ms.search.form | The value contains the Application Object Tree (AOT) name of a form and is used for context-sensitive search from the Help pane. |
+|ms.search.scope|The value determines which client the Help topic is shown in. You can specify one or more values. Values includes Core, Operations, Retail, and Human Resources.|
+|ms.locale |This value indicates the language of the topic. This is mapped against the current browser locale when the Help pane searches the content. the target custom help website can configure language fallback. For more information, see [Language and locale descriptors in across product and Help](language-locale.md). |
+
 All websites support searches using different technologies. In [Deploying custom help to Azure](walkthrough-help-azure.md), the search index is based on JSON files that are generated from the HTML files with your custom help content. You then make a search service generate a map of the content as defined by these JSON files. This search index is then used by the in-product Help pane to generate context-sensitive links to content based on where the user is in the product's user interface.  
 
 ## Reuse Dynamics AX 2012 content
