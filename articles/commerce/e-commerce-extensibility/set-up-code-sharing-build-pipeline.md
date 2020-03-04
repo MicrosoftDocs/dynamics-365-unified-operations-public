@@ -128,7 +128,7 @@ To create and configure a new build pipeline in Azure DevOps, follow these steps
 
     ![Add new agent job](media/code-sharing-11.png)
 
-1. On the **Add tasks** pane on the right, search for "PowerShell", and then select **Add**.
+1. On the **Add tasks** pane on the right, search for "PowerShell", and then in the **PowerShell** task, select **Add**.
 
     ![Add PowerShell task](media/code-sharing-12.png)
 
@@ -143,15 +143,20 @@ To create and configure a new build pipeline in Azure DevOps, follow these steps
   
     ![Configure task](media/code-sharing-13.png)
 
-1. Expand the **Advanced** secting and change the working directory to **$(Build.SourcesDirectory)**
+1. In the right pane, select **Advanced** to expand the section and then enter "$(Build.SourcesDirectory)" in the **Working Directory** box. 
 
     ![Set working directory](media/code-sharing-14.png)
 
-1. Add "Copy files" agent by selecting the **+** next to "Agent job 1" and searching for "copy" followed by selecting the "Add" button.
+1. Next to **Agent job**, select **+** to add a new agent job.
+
+1. On the **Add tasks** pane on the right, search for "copy", and then in the **Copy files** task, select **Add**.
 
     ![Add copy files agent](media/code-sharing-15.png)
 
-1. Set the **Source Folder** to "$(Build.SourcesDirectory)", **Contents** to "*.zip" and **Target Folder** to "$(Build.ArtifactStagingDirectory)"
+1. In the main window, select the **Copy files** task. In the **Copy files** pane, do the following:
+    - Under **Source Folder**, enter "$(Build.SourcesDirectory)". 
+    - Under **Contents**, enter "\*.zip". 
+    - Under **Target Folder**, enter "$(Build.ArtifactStagingDirectory)".
 
     ![Configure Copy Files task](media/code-sharing-16.png)
 
@@ -191,4 +196,8 @@ Tools that you commonly use to build, test, and run JavaScript apps - like npm, 
     
 ## Additional resources
 
+[System requirements for a Dynamics 365 Commerce online extensibility development environment](system-requirements.md)
 
+[Set up a development environment](setup-dev-environment.md)
+
+[Configure a development environment (.env) file](configure-env-file.md)
