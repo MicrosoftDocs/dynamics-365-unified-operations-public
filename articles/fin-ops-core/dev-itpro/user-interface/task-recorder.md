@@ -33,7 +33,6 @@ ms.dyn365.ops.version: AX 7.0.0
 # Task recorder resources
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic describes how to use Task recorder to record client functions.
 
