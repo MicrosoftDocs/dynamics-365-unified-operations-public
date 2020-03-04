@@ -65,8 +65,8 @@ Once done, the **Alias**, **UPN** and **External sub identifier** fields under t
 
 ## Additional resources
 
-[Set up extended logon functionality for MPOS and Cloud POS](https://docs.microsoft.com/en-us/dynamics365/commerce/extended-logon)
+[Set up extended logon functionality for MPOS and Cloud POS](https://docs.microsoft.com/dynamics365/commerce/extended-logon)
 
-[Create a retail functionality profile](https://docs.microsoft.com/en-us/dynamics365/commerce/retail-functionality-profile)
+[Create a retail functionality profile](https://docs.microsoft.com/dynamics365/commerce/retail-functionality-profile)
 
-[Configure a worker](https://docs.microsoft.com/en-us/dynamics365/commerce/tasks/worker)
+[Configure a worker](https://docs.microsoft.com/dynamics365/commerce/tasks/worker)
