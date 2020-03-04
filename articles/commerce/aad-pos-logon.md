@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.10
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-Many customers who use Dynamics 365 Commerce also use other Microsoft cloud services, for which they may manage users credentials using Azure Active Directory (Azure AD). In those cases, customers may want to use the same Azure AD account across applications. This topic describes how to configure the Commerce point of sale (POS) loging experience to use Azure AD authentication.
+Many customers who use Dynamics 365 Commerce also use other Microsoft cloud services, for which they may manage users credentials using Azure Active Directory (Azure AD). In those cases, customers may want to use the same Azure AD account across applications. This topic describes how to configure the Commerce point of sale (POS) login experience to use Azure AD authentication.
 
 ## Configure Azure AD authentication
 You need to configure a store’s functionality profile settings to enable Azure AD as the authentication method for POS logon for that store. To do so, follow these steps:
