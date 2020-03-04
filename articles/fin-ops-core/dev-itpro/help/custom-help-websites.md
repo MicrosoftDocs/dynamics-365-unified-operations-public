@@ -5,7 +5,7 @@ title: Deploy a custom Help website hosted in Azure
 description: Learn why you will want to deploy your Help content to Azure so that it can be found by the Help pane in Finance and Operations apps. 
 author: edupont04
 manager: AnnBe
-ms.date: 03/03/2020
+ms.date: 03/04/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Operations
 
 ---
 
-# Deploying custom help sites
+# Deploying custom help websites
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ To provide the users of the solution with access to Help in the Help pane, you m
 
 You can deploy your content to an existing website, or you can set up a dedicated website to host your content. In this article, we will describe how you can host your content on Azure. If you choose a different deployment solution, you must make sure that your content can be indexed so that the Help pane can link to it. We offer no technical support for websites that are not hosted on Azure.  
 
-In [Deploying custom help to Azure](walkthrough-help-azure.md), we describe an approach for hosting content on Azure, including how you can set up a search service that indexes your content so that it can be found by the in-product Help pane. We recommend this approach because the Azure portal includes many tools and features that can help you maintain your custom help site.  
+In [Deploying custom help to Azure](walkthrough-help-azure.md), we describe an approach for hosting content on Azure, including how you can set up a search service that indexes your content so that it can be found by the in-product Help pane. We recommend this approach because the Azure portal includes many tools and features that can help you maintain your custom help website.  
 
 If you host the Help content on another type of website, it is a requirement that the content is discoverable by the in-product Help pane, such as by using Azure Cognitive Search to index the content. For an example of how to set up a search service, see the [Configure the search service](walkthrough-help-azure.md#searchconfig) section in [Deploying custom help to Azure](walkthrough-help-azure.md).  
 

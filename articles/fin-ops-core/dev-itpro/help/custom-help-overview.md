@@ -5,7 +5,7 @@ title: Deploy your custom Help
 description: Learn how to extend the Microsoft Help to reflect your solution and then connect that to the Help pane in Finance and Operations apps. 
 author: edupont04
 manager: AnnBe
-ms.date: 02/26/2020
+ms.date: 03/04/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,10 +34,12 @@ ms.dyn365.ops.version: Operations
 
 [!include [banner](../includes/banner.md)]
 
-You can connect solution-specific and customer-specific help content with the [Help pane](../../fin-ops/get-started/help-overview.md#in-product-help) in the Finance and Operations client if your solution is based on Dynamics 365 Finance, Supply Chain Management, or Commerce. Finance and Operations apps are rarely used as-is. Rather, the solution is customized and extended to fit the organization's needs. Similarly, you can customize and extend the Help experience. This topic describes the main steps and decision points.  
+You can connect solution-specific and customer-specific help content with the [Help pane](../../fin-ops/get-started/help-overview.md#in-product-help) in the Finance and Operations client if your solution is based on Dynamics 365 Finance, Supply Chain Management, or Commerce. Finance and Operations apps are often customized and extended to fit an organization's needs. Similarly, you can customize and extend the help experience. This topic describes the main steps and decision points.  
 
 > [!NOTE]
-> Users of Finance and Operations apps can create [custom task guides](/../../fin-ops/get-started/help-connect.md#create-custom-help-with-task-guides) to supplement conceptual content that describes the functionality of their solution. These conceptual descriptions are referred to as Help and can be provided by Microsoft, partners, and the organization itself. For more information, see [Help system](../../fin-ops/get-started/help-overview.md).
+> Users of Finance and Operations apps can create [custom task guides](/../../fin-ops/get-started/help-connect.md#create-custom-help-with-task-guides) to supplement conceptual content that describes the functionality of their solution. These conceptual descriptions are also referred to as help and can be provided by Microsoft, partners, and the organization itself. For more information, see [Help system](../../fin-ops/get-started/help-overview.md).
+
+The following illustation and this section in general uses the term "help" for conceptual descriptions with or without how-to guides, and the term "task guides" for in-product task guides.  
 
 :::image type="content" source="../../fin-ops/get-started/media/help-architecture.png" alt-text="Diagram showing a customized help solution and the Help pane.":::
 
@@ -45,13 +47,13 @@ You can connect solution-specific and customer-specific help content with the [H
 
 Depending on the customer's solution, Help content can come from different sources. In the following, we assume that you are a consultant from a Dynamics 365 partner who wants to add custom Help to their customer's solution. You also want to connect the customer's Help solution with the in-product Help pane. We start with a simple scenario and then show two slightly more complex variants.  
 
-For the sake of simplicity, we're assuming that the customer uses a solution based on Dynamics 365 Supply Chain Management with a large module added by a partner that you work for. There are no significant customizations of the core product functionality, and the users do not use task guides.  
+For the sake of simplicity, we're assuming that the customer uses a solution based on Dynamics 365 Supply Chain Management with a large module added by a partner that you work for. There are some light customizations of the core product functionality plus an extra module or two. The users do not use task guides.  
 
 In this simplified scenario, you deploy conceptual Help to a website that describes your customizations. You then connect that website to the in-product Help pane as illustrated in the following diagram.  
 
 :::image type="content" source="../media/help-architecture-custom1.png" alt-text="Diagram showing the Help pane with one custom help website connected and no task guides.":::
 
-As a result, when a user opens the Help pane, they get links to Help from the partner's website and from *docs.microsoft.com*. The in-product Help pane shows context-sensitive links to Help content on the connected websites based on specific metadata values.
+As a result, when a user opens the Help pane, they see links to Help from the partner's website and from *docs.microsoft.com*. The in-product Help pane shows context-sensitive links to Help content on the connected websites based on specific metadata values. For more information about the mechanics, see 
 
 If that scenario is too simple, then let us look at a couple of variants.
 
@@ -91,8 +93,8 @@ The following table outlines the main objectives that administrators typically h
 |Objective |Learn more  |
 |----------|------------|
 |I want to understand the end-to-end process |See the scenarios in the previous section |
-|I want to set up a website for my Help content |See [Deploying custom help sites](custom-help-websites.md)         |
-|I want to add my content to the Help pane |See [Connect your Help website with the Help pane](connect-help-pane.md)  |
+|I want to set up a website for my Help content |See [Deploying help websites](custom-help-websites.md)         |
+|I want to add my content to the Help pane |See [Connect your help website with the Help pane](connect-help-pane.md)  |
 |I want to give my users a customized in-product help experience that reflects their actual solution|See [Deploying custom help sites](custom-help-websites.md), [Connect your Help website with the Help pane](connect-help-pane.md), and [Create documentation or training with Task Recorder](../user-interface/task-recorder-training-docs.md) |
 |I want to reuse my existing Dynamics AX content|See [Convert Dynamics AX custom Help for use in Dynamics 365](migrate-dynamicsax2012.md)  |
 |I want to customize Microsoft's Help content |See [Extend, Customize, and Collaborate on the Help](contributor-guide.md)        |
