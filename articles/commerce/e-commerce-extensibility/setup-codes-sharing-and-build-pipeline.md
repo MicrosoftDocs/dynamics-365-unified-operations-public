@@ -143,48 +143,52 @@ To create and configure a new build pipeline in Azure DevOps, follow these steps
   
     ![Configure task](media/code-sharing-13.png)
 
-8. Expand the **Advanced** secting and change the working directory to **$(Build.SourcesDirectory)**
+1. Expand the **Advanced** secting and change the working directory to **$(Build.SourcesDirectory)**
 
-![Set working directory](media/code-sharing-14.png)
+    ![Set working directory](media/code-sharing-14.png)
 
-9. Add "Copy files" agent by selecting the **+** next to "Agent job 1" and searching for "copy" followed by selecting the "Add" button.
+1. Add "Copy files" agent by selecting the **+** next to "Agent job 1" and searching for "copy" followed by selecting the "Add" button.
 
-![Add copy files agent](media/code-sharing-15.png)
+    ![Add copy files agent](media/code-sharing-15.png)
 
-10. Set the **Source Folder** to "$(Build.SourcesDirectory)", **Contents** to "*.zip" and **Target Folder** to "$(Build.ArtifactStagingDirectory)"
+1. Set the **Source Folder** to "$(Build.SourcesDirectory)", **Contents** to "*.zip" and **Target Folder** to "$(Build.ArtifactStagingDirectory)"
 
-![Configure Copy Files task](media/code-sharing-16.png)
+    ![Configure Copy Files task](media/code-sharing-16.png)
 
-11. Add "Publish Pipeline Artifacts" agent by selecting the **+** next to "Agent job 1" and searching for "publish" followed by selecting the "Add" button.
+1. Add "Publish Pipeline Artifacts" agent by selecting the **+** next to "Agent job 1" and searching for "publish" followed by selecting the "Add" button.
 
-![Add Publish Pipline Artifacts agent](media/code-sharing-17.png)
+    ![Add Publish Pipline Artifacts agent](media/code-sharing-17.png)
 
-12. Select the "Publish Pipeline Artifact" and set the **File or directory patj** to "$(Build.ArtifactStagingDirectory)" and the **Artifact name** to "drop".
+1. Select the "Publish Pipeline Artifact" and set the **File or directory patj** to "$(Build.ArtifactStagingDirectory)" and the **Artifact name** to "drop".
 
-![Configure Publish Pipline Artifacts agent](media/code-sharing-18.png)
+    ![Configure Publish Pipline Artifacts agent](media/code-sharing-18.png)
 
-13. Save and queue a build.
+1. Save and queue a build.
 
-![Save and queue a build](media/code-sharing-19.png)
+    ![Save and queue a build](media/code-sharing-19.png)
 
-14. Ensure **Agent Specification** is set to "vs2017-win2016" and click the "Save and run" button.
+1. Ensure **Agent Specification** is set to "vs2017-win2016" and click the "Save and run" button.
 
-![Save and run](media/code-sharing-20.png)
+    ![Save and run](media/code-sharing-20.png)
 
 Tools that you commonly use to build, test, and run JavaScript apps - like npm, Node, Yarn, and Gulp - are pre-installed on Microsoft-hosted agents in Azure Pipelines. For the exact version of Node.js and npm that is preinstalled, refer to Microsoft-hosted agents. To install a specific version of these tools on Microsoft-hosted agents, add the Node Tool Installer task to the beginning of your process. "VS2017-win2016" comes with yarn pre-installed.
 
-15. Check agent job logs for completions
+1. Check agent job logs for completions
 
-![Agent Job logs](media/code-sharing-21.png)
+    ![Agent Job logs](media/code-sharing-21.png)
 
 16. After the job is completed, you can download the deployable package by selecting the "Runs" tab in the **Pipelines** section, and select the run.
 
-![Pipeline runs](media/code-sharing-22.png)
+    ![Pipeline runs](media/code-sharing-22.png)
 
-17. Select the **published** link under the **Artifacts:** section.
+1. Select the **published** link under the **Artifacts:** section.
 
-![Published artifacts](media/code-sharing-23.png)
+    ![Published artifacts](media/code-sharing-23.png)
 
-18. Expand the "drop** folder to see the zip file that was created as part of the run.  The file can now be downloaded.
+1. Expand the "drop** folder to see the zip file that was created as part of the run.  The file can now be downloaded.
 
-![Published artifacts](media/code-sharing-24.png)
+    ![Published artifacts](media/code-sharing-24.png)
+    
+## Additional resources
+
+
