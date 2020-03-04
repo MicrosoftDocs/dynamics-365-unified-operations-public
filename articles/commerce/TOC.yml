@@ -336,6 +336,8 @@
             href: pos-operations.md
           - name: Device activation of a customized Modern POS
             href: dev-itpro/retail-POS-activation-changes.md
+          - name: Enable Azure Active Directory authentication for POS logon
+            href: aad-pos-logon.md
           - name: Demo data screen layouts in MPOS and Cloud POS
             href: demo-data.md
           - name: Product and customer search in the POS
