@@ -102,7 +102,7 @@ The following tables list the application areas. Cloud and on-premises support i
 | Data management and integration      |                                                                                           | Yes       | Yes             |
 |                                      | Configuration-driven extension                                                            | Yes       | No              |
 |                                      | Export data to your own data warehouse                                                    | Yes       | Yes             |
-|                                      | Enable the export of incremental updates to a data entity                                 | Yes       | No              |
+|                                      | Enable the export of incremental updates to a data entity                                 | Yes       | Yes              |
 |                                      | Data integrations                                                                         | Yes       | Yes             |
 | Document management                  |                                                                                           | Yes       | Yes             |
 | Help                                 |                                                                                           | Yes       | No              |
