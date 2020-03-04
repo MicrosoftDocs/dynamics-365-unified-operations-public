@@ -5,7 +5,7 @@ title: On-premises deployment home page
 description: This topic provides information and links to content about on-premises deployments.
 author: sericks007
 manager: AnnBe
-ms.date: 02/27/2020
+ms.date: 03/04/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -60,6 +60,7 @@ You can deploy Dynamics 365 Finance + Operations (on-premises). When you choose 
 - [Client internet connectivity](../user-interface/client-disconnected.md)
 - [Apply updates to on-premises deployments](apply-updates-on-premises.md)
 - [Redeploy on-premises environments](redeploy-on-prem.md)
+- [Reuse the same AD FS instance for multiple environments](onprem-reuseadfs.md)
 
 ## Commerce
 - [Commerce capabilities that are available in on-premises deployments](../../../retail/retail-onprem.md)
