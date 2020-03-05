@@ -240,9 +240,6 @@ Toggle buttons are typically used instead of traditional check boxes.
 -   **Inside MenuButtons**:
     -   Images aren't supported on buttons in MenuButtons.
 
-## Text guidelines
--   Wording, punctuation, and abbreviations must follow the iX guidelines.
-
 ## Appendix
 ### Frequently asked questions
 
