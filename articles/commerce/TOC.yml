@@ -524,7 +524,7 @@
             href: create-variant-group.md
         - name: Create a new product
           items:
-          - name: Create a new product overview
+          - name: Create a new product in Commerce
             href: create-new-product.md
           - name: Manage product categories and products 
             href: category-management-product-creation.md
