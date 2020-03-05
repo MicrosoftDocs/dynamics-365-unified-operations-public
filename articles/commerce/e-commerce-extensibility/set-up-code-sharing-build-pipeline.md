@@ -128,7 +128,7 @@ To create and configure a new build pipeline in Azure DevOps, follow these steps
 
     ![Add new agent job](media/code-sharing-11.png)
 
-1. On the **Add tasks** pane on the right, search for "PowerShell", and then in the **PowerShell** task, select **Add**.
+1. In the **Add tasks** pane on the right, search for "PowerShell", and then in the **PowerShell** task, select **Add**.
 
     ![Add PowerShell task](media/code-sharing-12.png)
 
@@ -149,7 +149,7 @@ To create and configure a new build pipeline in Azure DevOps, follow these steps
 
 1. In the main window next to **Agent job**, select the plus symbol ("+") to add a new agent job.
 
-1. On the **Add tasks** pane on the right, search for "copy", and then in the **Copy files** task, select **Add**.
+1. In the **Add tasks** pane, search for "copy", and then in the **Copy files** task, select **Add**.
 
     ![Add copy files agent](media/code-sharing-15.png)
 
@@ -162,7 +162,7 @@ To create and configure a new build pipeline in Azure DevOps, follow these steps
 
 1. In the main window next to **Agent job**, select the plus symbol ("+") to add a new agent job.
 
-1. On the **Add tasks** pane on the right, search for "publish", and then in the **Publish Pipeline Artifacts** task, select **Add**.
+1. In the **Add tasks** pane, search for "publish", and then in the **Publish Pipeline Artifacts** task, select **Add**.
 
     ![Add Publish Pipline Artifacts agent](media/code-sharing-17.png)
 
@@ -180,21 +180,21 @@ To create and configure a new build pipeline in Azure DevOps, follow these steps
 
     ![Save and run](media/code-sharing-20.png)
 
-Tools that you commonly use to build, test, and run JavaScript apps - like npm, Node, Yarn, and Gulp - are pre-installed on Microsoft-hosted agents in Azure Pipelines. For the exact version of Node.js and npm that is preinstalled, refer to Microsoft-hosted agents. To install a specific version of these tools on Microsoft-hosted agents, add the Node Tool Installer task to the beginning of your process. "VS2017-win2016" comes with yarn pre-installed.
+    Tools that you commonly use to build, test, and run JavaScript apps - like npm, Node, Yarn, and Gulp - are pre-installed on Microsoft-hosted agents in Azure Pipelines. For the exact version of Node.js and npm that is preinstalled, refer to Microsoft-hosted agents. To install a specific version of these tools on Microsoft-hosted agents, add the Node Tool Installer task to the beginning of your process. "VS2017-win2016" comes with yarn pre-installed.
 
-1. Check agent job logs for completions
+1. Monitor the agent job logs for job completion.
 
-    ![Agent Job logs](media/code-sharing-21.png)
+    ![Agent job logs](media/code-sharing-21.png)
 
-16. After the job is completed, you can download the deployable package by selecting the "Runs" tab in the **Pipelines** section, and select the run.
+1. After the job is completed, under **Pipelines** in the left navigation pane, select **Pipelines**. Then select the **Runs** tab, and under **All pipeline runs** select the run to download the deployable package.
 
     ![Pipeline runs](media/code-sharing-22.png)
 
-1. Select the **published** link under the **Artifacts:** section.
+1. Under **Summary \> Artifacts**, select **1 published**.
 
     ![Published artifacts](media/code-sharing-23.png)
 
-1. Expand the "drop** folder to see the zip file that was created as part of the run.  The file can now be downloaded.
+1. Select the **drop** folder to expand it and see the zip file that was created as part of the run. Select the download symbol to download the file.
 
     ![Published artifacts](media/code-sharing-24.png)
     
