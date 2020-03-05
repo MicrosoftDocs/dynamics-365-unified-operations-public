@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 Finance version 10.0.10 Preview (Ap
 description: This topic describes features that are either new or changed in Dynamics 365 Finance version 10.0.8.
 author: roschlom
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,7 +25,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: roschlom
-ms.search.validFrom: 2020-03-02 
+ms.search.validFrom: 2020-03-05 
 ms.dyn365.ops.version: 10.0.10
 
 ---
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.10
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists features that are new or changed for Microsoft Dynamics 365 Finance, preview version 10.0.9. This version has a build number of 10.0.383 and is available as follows:
+This topic lists features that are new or changed for Microsoft Dynamics 365 Finance, preview version 10.0.10. This version has a build number of 10.0.420.13 and is available as follows:
 
 - **Preview release:** March 2020
 - **General availability (self-update):** April 2020
@@ -53,18 +53,24 @@ The following features are included in this release. The feature titles link to 
  - [Allow Interest distribution and Escheatment to use feature – Lets you update bank balances when posting advanced ledger entries](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/allow-interest-distribution-escheatment-use-feature--lets-update-bank-balances-when-posting-advanced-ledger-entries)
  
  - [Allow filtering the Tax 1099 detail report by reporting year](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/allow-filtering-tax-1099-detail-report-reporting-year)
+
+ - [Extended Italian localization: Commission settlement on payments](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-commission-settlement-payments)
  
+ - [Extended Italian localization: Configurable posting profiles for banks and remittance types](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-configurable-posting-profiles-banks-remittance-types)
+ 
+ - [Extended Italian localization: Protest handling for bills of exchange](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-protest-handling-bills-exchange)
+
 
  
 ## Additional resources
 
-### Platform update 33
+### Platform update 34
 
-Microsoft Dynamics 365 Finance 10.0.9 includes Platform update 33. To learn more, see [Preview features in Platform update 33](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-33.md).
+Microsoft Dynamics 365 Finance 10.0.10 preview includes Platform update 34. To learn more, see [Preview features in Platform update 34](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md).
 
 
 ### Bug fixes and additional enhancements
-For information about the bug fixes included in each of the updates that are part of 10.0.7, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=400368&dbType=3&qc=8405de0733ac4045859057a4e710a3ef07637ce2485f6a317ea49efe6f67f35f).
+For information about the bug fixes included in each of the updates that are part of 10.0.10, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=400368&dbType=3&qc=8405de0733ac4045859057a4e710a3ef07637ce2485f6a317ea49efe6f67f35f).
 
 #### Add vendor ID and vendor name to the Posted projects list page
 Enabling this feature will display the Vendor ID and Vendor name on the **Posted projects list page** for any project-related purchase order expenses.
