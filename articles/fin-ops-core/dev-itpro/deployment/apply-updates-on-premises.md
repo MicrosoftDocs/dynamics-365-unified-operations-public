@@ -3,7 +3,7 @@
 
 title: Apply updates to on-premises deployments
 description: This topic explains how to apply supported updates to Dynamics 365 Finance + Operations (on-premises).
-author: manalidongre
+author: PeterRFriis
 manager: AnnBe
 ms.date: 09/20/2019
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sarvanis
+ms.author: perahlff
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 12
 
