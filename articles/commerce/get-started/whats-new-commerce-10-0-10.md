@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 Commerce 10.0.9 (April 2020)
-description: This topic describes features that are either new or changed in Dynamics 365 Commerce 10.0.9. 
+title: Preview features in Dynamics 365 Commerce 10.0.10 (May 2020)
+description: This topic describes features that are either new or changed in Dynamics 365 Commerce 10.0.10. 
 author: josaw1
 manager: AnnBe
 ms.date: 03/05/2020
@@ -29,25 +29,21 @@ ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: 10.0.9
 
 ---
-# What's new or changed in Dynamics 365 Commerce 10.0.9 (April 2020)
+# Preview features in Dynamics 365 Commerce 10.0.10 (May 2020)
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 
-This topic lists features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.9. This version has a build number of 10.0.383 and is available as follows:
+This topic lists features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.10. This version has a build number of 10.0.420 and is available as follows:
 
-- **Preview release:** February 2020
-- **General availability (self-update):** March 2020
-- **Auto-update:** April 2020
+- **Preview release:** March 2020
+- **General availability (self-update):** April 2020
+- **Auto-update:** May 2020
 
 The following features are included in this release. The feature titles link to additional information on the [Release plans site](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/).
 
-- [Enable resetting of receipt numbers at the beginning of the fiscal year](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-commerce/enable-resetting-receipt-numbers-at-beginning-fiscal-year)
-- [Auto-charges improvements to support fees based on channel](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-commerce/auto-charges-improvements-support-fees-based-channel)
-- [Improved inbound and outbound inventory operations in store](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-commerce/improved-inbound-outbound-inventory-operations-store)
-- [Set preferred payment methods for returns](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-commerce/set-preferred-payment-methods-returns)
-- [Support for bulk URL redirects](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-commerce/support-bulk-url-redirects)
-- [Task management in HQ and POS for first-line workers and managers](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-commerce/task-management-hq-pos-firstline-workers-managers)
+- [Azure AD support for POS sign-in](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-commerce/aad-support-pos-logon)
 
 
 ## Additional resources
