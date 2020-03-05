@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create a new product
+title: Create a new product in Commerce
 description: This topic describes how to create a new product in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
@@ -28,7 +28,7 @@ ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
 
 ---
-# Create a new product
+# Create a new product in Commerce
 
 
 [!include [banner](includes/banner.md)]
