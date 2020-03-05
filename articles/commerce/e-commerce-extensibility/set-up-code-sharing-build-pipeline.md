@@ -66,9 +66,8 @@ To create an Azure DevOps Github repo, follow these steps.
 
     To clone your repo, follow these steps.
         
-        1. Launch a command prompt with administrator privileges and create a directory to hold your e-Commerce site code (for example, "c:\repos"). 
-        
-        1. From the new directory, enter **git clone <YOUR_GIT_REPO>**, where <YOUR_GIT_REPO> is your Git repo. Since you're only pulling from the git repository once, you can remove the .git folder, which is a hidden directory under the root.
+    1. Launch a command prompt with administrator privileges and create a directory to hold your e-Commerce site code (for example, "c:\repos").  
+    1. From the new directory, enter **git clone <YOUR_GIT_REPO>**, where <YOUR_GIT_REPO> is your Git repo. Since you're only pulling from the git repository once, you can remove the .git folder, which is a hidden directory under the root.
 
     ```console
     md c:\repos
