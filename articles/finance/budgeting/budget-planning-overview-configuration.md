@@ -35,19 +35,19 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This article introduces budget planning, and contains information to help you configure budget planning and set up budget planning processes.
+This topic introduces budget planning. It contains information to help you configure budget planning and assist you in setting up budget planning processes.
 
 Overview of budget planning
 ---------------------------
 
 An organization can configure budget planning, and then set up budget planning processes to meet its policies, procedures, and requirements for budget preparation. 
 
-When you understand the concepts and terminology that are used in Dynamics 365 Finance, it will be easier to implement budget planning in your organization.
+Understanding the concepts and terminology that are used in Dynamics 365 Finance, should make it easier to implement budget planning effectively in your organization.
 
 ### Key terms
 
 -   **Budget planning processes** – Budget planning processes determine how budget plans can be updated, routed, reviewed, and approved in the budgeting organization hierarchy. A budget planning process is linked to a budget cycle and an organization through a legal entity.
--   **Budget plans** – Budget plans contain the budget data for a budget cycle. You can have multiple budget plans that are used for various purposes. For example, budget plans can be used to create budget amounts for different organizational units, or they can help you make comparisons and reach informed decisions.
+-   **Budget plans** – Budget plans contain the budget data for a budget cycle. You can have multiple budget plans that are used for various purposes. For example, you can use budget plans to create budget amounts for different organizational units. You can also use them to make comparisons and reach informed decisions.
 -   **Budget plan scenarios** – Budget plan scenarios define categories of data for the budget plans. You define budget plan scenarios to support monetary and other unit-of-measure classes, such as quantities. Examples of monetary budget plan scenarios include department previous year and department requests. Examples of budget plan scenarios that use quantities include Previous year support calls and Full-time equivalent (FTE) count.
 -   **Budget planning stages** – Budget planning stages define the steps that a budget plan follows from its start to the final approval. Budget planning stages are arranged in budget planning workflows.
 -   **Budget planning workflows** – Budget planning workflows consist of, and define, budget planning stages. Budget planning workflows are associated with budgeting workflows. Budgeting workflows are the automated and manual processes that move budget plans through the budget planning stages.
@@ -65,7 +65,7 @@ You can use budget planning to perform the following tasks:
 Budget planning is integrated with other modules. Therefore, you can include information from previous budgets, actual expenditures, fixed assets, and human resources. Because budget planning is also integrated with Microsoft Excel and Microsoft Word, you can use these programs to work with budget planning data. For example, a budget manager can export a department’s budget request from a budget plan scenario into an Excel worksheet. The data can be analyzed, updated, and charted in the worksheet, and then published back to the budget plan lines.
 
 ## Configuring budget planning
-Functionality that was introduced in Dynamics 365 Finance version 10.0.9 (April 2020) includes an option to improve performance, which you can enable using the **Feature management** workspace. The initial enhancement improves performance when you use the **Publish** button to update existing records within Excel, and publish them back to the client. The feature speeds up the update process, as well as reducing the chance that any update will be block when you're updationg many records at once. To enable this functionality, go to the **Feature management** workspace and enable **Budget planning query optimization for performance**, which is under Budgeting. We recommended that your turn this option on. 
+Functionality that was introduced in Dynamics 365 Finance version 10.0.9 (April 2020) includes an option to improve performance, which you can enable using the **Feature management** workspace. The initial enhancement improves performance when you use the **Publish** button to update existing records within Excel, and publish them back to the client. The feature speeds up the update process, as well as reducing the chance that any update will be block when you're updating many records at once. To enable this functionality, go to the **Feature management** workspace and enable **Budget planning query optimization for performance**, which is under Budgeting. We recommended that you turn this option on. 
 
 The **Budget planning configuration** page contains most of the settings that are needed to set up budget planning. The following sections describe some of the factors to consider as you configure budget planning. After you've completed the configuration, you can set up budget planning processes.
 
@@ -190,7 +190,7 @@ When you define the stage rules and templates on the **Budget planning stage rul
 
 You can optionally select budget planning priorities on the **Budget plan priority constraints** FastTab. Priorities can then be selected on budget plans. 
 
-The final step is to activate the budget planning process via the **Actions** menu A budget planning process can't be used until it has been activated. 
+The final step is to activate the budget planning process using the **Actions** menu. A budget planning process can't be used until it has been activated. 
 
 On the **Actions** menu, you can also create a new process by copying an existing process. This feature is useful for organizations that follow the same process flow each budget cycle, and make few changes or no changes. 
 
