@@ -5,7 +5,7 @@ title: Deploy a new environment
 description: This topic explains how to deploy a new environment using the self-service deployment experience.
 author: rashmansur
 manager: AnnBe
-ms.date: 03/05/2020
+ms.date: 12/03/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
