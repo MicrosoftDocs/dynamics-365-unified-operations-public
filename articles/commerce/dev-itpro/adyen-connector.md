@@ -201,6 +201,9 @@ To support these external gift card schemes through the Dynamics 365 Payment Con
 | Manual Entry through Payment Terminal. |  | Supports pin entry. | 
 
 #### Supported card present countries
+
+The following countries have Dynamics 365 Commerce components available as well as card present support from Adyen. 
+
 | Country | Supported |
 | --- | :-: |
 | Australia | ✔ |
@@ -238,9 +241,6 @@ To support these external gift card schemes through the Dynamics 365 Payment Con
 | United States | ✔ |
 | Brazil | Future release |
 
-#### Supported card not present countries
-For card not present scenarios, such as e-Commerce or Call Center, special cross-country, cross-currency, and cross-market considerations apply. Please contact <MicrosoftDynamics@adyen.com> for additional details.
-
 #### Supported Dynamics 365 payment features
 The following table shows the set of features that the Dynamics 365 Payment Connector for Adyen supports. These features use enhancements that were introduced in the payments SDK and some components in December 2018. They aren't exclusive to the Dynamics 365 Payment Connector for Adyen. For more information about how to uptake these enhancements for a different payment connector, see [Create an end-to-end payment integration for a payment terminal](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension).
 
@@ -255,16 +255,6 @@ The following table shows the set of features that the Dynamics 365 Payment Conn
 ## Sign up with Adyen
 
 To use the Dynamics 365 Payment Connector for Adyen, you must have a separate agreement with Adyen. To learn more about Adyen's services, or to create a test merchant account, visit the [Adyen website](https://www.adyen.com/partners).
-
-If you prefer that Adyen contact you directly, send an email to <MicrosoftDynamics@adyen.com>. In the subject line of the email, include the term "Microsoft Dynamics connector." In the body of the email, be sure to include enough information so that the inquiry can be routed correctly:
-
-- Business name
-- Nature of business (for example, "merchant" or "Microsoft partner")
-- Business website
-- Business address
-- Contact name, title, email, and phone
-- Annual processing volume (Optional)
-- Description of the required services (for example "e-Commerce only" or "e-Commerce and card present, with *X* number of payment terminals")
 
 ## Setup and configuration
 
