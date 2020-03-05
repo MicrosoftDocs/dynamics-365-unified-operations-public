@@ -5,7 +5,7 @@ title: Set up Azure DevOps code sharing and build pipeline
 description: This topic describes how to set up code sharing with Azure DevOps and create a build pipeline for your Microsoft Dynamics 365 Commerce online extensibility code. 
 author: samjarawan
 manager: annbe
-ms.date: 03/09/2020
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -65,7 +65,9 @@ To create an Azure DevOps Github repo, follow these steps.
     There are two ways to get the SDK configuration packages to your development machine: you can either download it directly from the GitHub repo, or you can clone the repo. 
 
     To clone your repo, follow these steps.
+        
         1. Launch a command prompt with administrator privileges and create a directory to hold your e-Commerce site code (for example, "c:\repos"). 
+        
         1. From the new directory, enter **git clone <YOUR_GIT_REPO>**, where <YOUR_GIT_REPO> is your Git repo. Since you're only pulling from the git repository once, you can remove the .git folder, which is a hidden directory under the root.
 
     ```console
