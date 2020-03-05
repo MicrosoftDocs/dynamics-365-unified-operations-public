@@ -2,10 +2,10 @@
 # required metadata
 
 title: Health check for POS peripherals and services
-description: This topic provides an overview of the health check operation in the point of sale.
+description: This topic provides an overview of the health check operation in the point of sale (POS).
 author: rubendel
 manager: AnnBe
-ms.date: 02/14/2020
+ms.date: 03/04/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -25,7 +25,7 @@ ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: rubendel
-ms.search.validFrom: 2019-01-01
+ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
 
 ---
@@ -33,7 +33,8 @@ ms.dyn365.ops.version: AX 7.0.1
 # Health check for POS peripherals and services
 
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This topic describes health check operation in the point of sale (POS).
 
@@ -41,7 +42,7 @@ This topic describes health check operation in the point of sale (POS).
 
 Retail stores can be complex environments with many applications and devices in use. As operations grow, it can become difficult to ensure that operations are always running smoothly because of dependencies on things like peripherals that can break or accidentally become unplugged over the course of the day. Troubleshooting issues related to devices and services can be costly for larger merchants and equally frustrating for smaller operations. 
 
-Commerce versions 10.0.10 and higher includes an operation that can alleviate some of this pain by providing a method to check devices from the POS outside of normal operations. This health check operation will help retailers detect problems before they occur. 
+Dynamics 365 Commerce versions 10.0.10 and higher include an operation that can alleviate some of this pain by providing a method to check devices from the POS outside of normal operations. This health check operation can help retailers detect problems before they occur. 
 
 ## Key terms
 
@@ -72,9 +73,9 @@ The health check is operation ID 717 on the **POS Operations** page in Commerce 
 
 When the health check operation is invoked in the POS, the configured devices will be listed in a pane on the right side showing device status. To perform a health check on a single device, select the device and then click **Test selected**. To perform a health check for all devices, click **Test all**. The **Test all** function will check all devices one by one and update the status in the **Status** column. The **Last check** column indicates when the health check was last executed for each device. 
 
-If the health check does not encounter an error, the device's status will be **Ok**. If a health check fails, the status will indicate that there was a failure. The pane on the right side will provide details related to the error or instruct the user to contact their system administrator. 
+If the health check does not encounter an error, the device's status will be "Ok". If a health check fails, the status will indicate that there was a failure. The pane on the right side will provide details related to the error or instruct the user to contact their system administrator. 
 
-Some devices, such as the OPOS keylock, do not have health checks out-of-box. If one of those devices is in use, but a health check test is not detected, the status will read **Not supported**. 
+Some devices, such as the OPOS keylock, do not have health checks out-of-box. If one of those devices is in use, but a health check test is not detected, the status will read "Not supported". 
 
 ### Extending health check
 
