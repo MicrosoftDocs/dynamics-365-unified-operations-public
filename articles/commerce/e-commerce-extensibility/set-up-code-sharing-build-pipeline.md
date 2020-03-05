@@ -147,16 +147,16 @@ To create and configure a new build pipeline in Azure DevOps, follow these steps
 
     ![Set working directory](media/code-sharing-14.png)
 
-1. Next to **Agent job**, select **+** to add a new agent job.
+1. In the main window next to **Agent job**, select the plus symbol ("+") to add a new agent job.
 
 1. On the **Add tasks** pane on the right, search for "copy", and then in the **Copy files** task, select **Add**.
 
     ![Add copy files agent](media/code-sharing-15.png)
 
 1. In the main window, select the **Copy files** task. In the **Copy files** pane, do the following:
-    - Under **Source Folder**, enter "$(Build.SourcesDirectory)". 
-    - Under **Contents**, enter "\*.zip". 
-    - Under **Target Folder**, enter "$(Build.ArtifactStagingDirectory)".
+    - Under **Source Folder**, enter **$(Build.SourcesDirectory)**. 
+    - Under **Contents**, enter **\*.zip**. 
+    - Under **Target Folder**, enter **$(Build.ArtifactStagingDirectory)**.
 
     ![Configure Copy Files task](media/code-sharing-16.png)
 
