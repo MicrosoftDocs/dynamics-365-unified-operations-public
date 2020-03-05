@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Enable Azure Active Directory authentication for POS logon
-description: This topic describes how to configure the Commerce point of sale (POS) login experience to use Azure Active Directory authentication.
+title: Enable Azure Active Directory authentication for POS sign-in
+description: This topic explains how to configure the sign-in experience for the Microsoft Dynamics 365 Commerce point of sale (POS) so that it uses Azure Active Directory authentication.
 author: boycezhu
 manager: annbe
 ms.date: 03/04/2020
@@ -27,41 +27,45 @@ ms.search.validFrom:
 ms.dyn365.ops.version: 10.0.10
 ---
 
-# Enable Azure Active Directory authentication for POS logon
+# Enable Azure Active Directory authentication for POS sign-in
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-Many customers who use Dynamics 365 Commerce also use other Microsoft cloud services, for which they may manage users credentials using Azure Active Directory (Azure AD). In those cases, customers may want to use the same Azure AD account across applications. This topic describes how to configure the Commerce point of sale (POS) login experience to use Azure AD authentication.
+Many customers who use Microsoft Dynamics 365 Commerce also use other Microsoft cloud services, and they might use Azure Active Directory (Azure AD) to manage user credentials for those services. In those cases, the customers might want to use the same Azure AD account across applications. This topic explains how to configure the Commerce point of sale (POS) sign-in experience to use Azure AD authentication.
 
 ## Configure Azure AD authentication
-You need to configure a store’s functionality profile settings to enable Azure AD as the authentication method for POS logon for that store. To do so, follow these steps:
 
-1. Go to **Retail and Commerce** > **Channel setup** > **POS setup** > **POS profiles** > **Functionality profiles**.
-1. Select the functionality profile you want to change.
-1. On the **Functions** FastTab, in the **POS Staff Logon** section, change the value of the **Logon Authentication Method** field from **Personnel ID and Password** to **Azure Active Directory**. 
+To make Azure AD available as the authentication method for POS sign-in for a store, you must configure the settings of the store's functionality profile and then apply those setting to POS clients.
 
-By default, all functionality profiles use **Personal ID and Password** for POS authentication. Therefore, you must change the value of this field if you want to use Azure AD. Every retail store that is linked to the selected functionality profile will be affected by this change.
+To configure a functionality profile, follow these steps.
 
-To apply the settings to POS clients, follow these steps:
-1. Go to **Retail and Commerce** > **Retail and Commerce IT** > **Distribution schedule**.
-1. Run the **1070 (Channel configuration)** distribution schedule.
+1. Go to **Retail and Commerce** \> **Channel setup** \> **POS setup** \> **POS profiles** \> **Functionality profiles**.
+1. Select the functionality profile to change.
+1. On the **Functions** FastTab, in the **POS staff logon** section, change the value of the **Logon Authentication Method** field from **Personnel ID and Password** to **Azure Active Directory**.
+
+By default, all functionality profiles use **Personnel ID and Password** as the POS authentication method. Therefore, you must change the value of the **Logon Authentication Method** field if you want to use Azure AD. Every retail store that is linked to the selected functionality profile will be affected by this change.
+
+To apply the settings to POS clients, follow these steps.
+
+1. Go to **Retail and Commerce** \> **Retail and Commerce IT** \> **Distribution schedule**.
+1. Run the **1070** (**Channel configuration**) distribution schedule.
 
 > [!NOTE]
-> Azure AD authentication requires an internet connection. It will not work when POS is in offline more.
+> Azure AD authentication requires an internet connection. It won't work when POS is in offline mode.
 
 ## Associate an Azure AD account with a worker
 
-Before a store worker can use an Azure AD account to log into the POS application, the Azure AD account must be associated with that worker.
+Before a store worker can use an Azure AD account to sign in to the POS application, the Azure AD account must be associated with that worker.
 
-To associate an Azure AD account with a worker, follow these steps:
+To associate an Azure AD account with a worker, follow these steps.
 
-1. Go to **Retail and Commerce** > **Employees** > **Workers**.
-1. Open a worker’s details page.
-1. On the Action Pane, select **Commerce**. In the **External identity** section, select **Associate existing identity**.
-1. In the **Use existing external identity** dialog box, select **Search using email**, enter an Azure AD email, and then click **Search**.
-1. Select the Azure AD account returned, and then click **OK**.
+1. Go to **Retail and Commerce** \> **Employees** \> **Workers**.
+1. Open the details page for a worker.
+1. On the Action Pane, on the **Commerce** tab, in the **External identity** group, select **Associate existing identity**.
+1. In the **Use existing external identity** dialog box, select **Search using email**, enter an Azure AD email address, and then select **Search**.
+1. Select the Azure AD account that is returned, and then select **OK**.
 
-Once done, the **Alias**, **UPN**, and **External sub identifier** fields under the **Commerce** tab of the worker’s details page will be completed.
+The **Alias**, **UPN**, and **External sub identifier** fields on the **Commerce** tab of the worker's details page will be filled in.
 
 ## Additional resources
 
