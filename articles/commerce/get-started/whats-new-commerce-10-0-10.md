@@ -47,6 +47,7 @@ The following features are included in this release. The feature titles link to 
 - [Channel-side calculations for available physical inventory for stores](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/channel-side-calculations-physical-inventory-stores)
 - [Change mode of delivery operation for POS](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/change-mode-delivery-operation-pos)
 - [Upsell and cross-sell using available discounts by enabling store associates to view promotions in POS](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/up-sell-cross-sell-using-discounts-enabling-store-associates-view-promotions-point-sale-pos.)
+- [Email a receipt from the journal}(https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-commerce/email-receipt-journal)
 
 
 ## Additional resources
