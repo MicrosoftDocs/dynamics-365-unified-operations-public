@@ -2,7 +2,7 @@
 # required metadata
 
 title: Budget planning overview
-description: This article introduces budget planning, and contains information to help you configure budget planning and set up budget planning processes.
+description: This article describes budget planning, and contains information to help you configure budget planning and set up budget planning processes.
 author: ryansandness
 manager: AnnBe
 ms.date: 01/11/2018
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic introduces budget planning. It contains information to help you configure budget planning and assist you in setting up budget planning processes.
+This topic describes budget planning. It contains information to help you configure budget planning and assist you in setting up budget planning processes.
 
 Overview of budget planning
 ---------------------------
@@ -101,7 +101,11 @@ You create the Budgeting workflow for budget planning on the **Budgeting workflo
 
 [![Budgeting workflow for budget planning](./media/budgetingworkflowforbudgetplanning-300x300.png)](./media/budgetingworkflowforbudgetplanning.png) 
 
-The workflow includes elements for allocation to sales departments and aggregation of their submissions, review by the budget manager, approval by the CFO, and stage transitions between each stage. 
+The workflow includes the following elements:
+ - Allocating to sales departments and aggregating their submissions
+ - Budget manager review 
+ - CFO approval
+ - Staging transitions between each stage of the budget planning workflow 
 
 You assign the Budgeting workflow to each budget planning workflow in the **Workflow stages** section of the **Budget planning configuration** page.
 
@@ -128,7 +132,7 @@ Allocation schedules automatically allocate budget plan lines during workflow pr
 
 ### Stage allocations
 
-Stage allocations are used to automatically allocate budget plan lines during workflow processing. When stage allocations are used, budget plan lines in the destination scenario can be created and modified without the intervention of the budget plan preparer or reviewer.
+Stage allocations are used to allocate budget plan lines automatically during workflow processing. When stage allocations are used, budget plan lines in the destination scenario can be created and modified without the intervention of the person who prepared the budget plan, or the reviewer.
 
 When you set up a stage allocation, you associate the budget planning workflow and stage with the allocation schedule. The budget planning workflow must be associated with a Budgeting workflow that uses the *<strong><em>Budget planning stage allocation</em></strong>* automated workflow task. When the workflow reaches the specified stage, the allocation occurs automatically. This automated task can be used to create budget plan lines in a new scenario. 
 
@@ -146,7 +150,7 @@ You can optionally use budget plan priorities to define categories and objective
 
 ### Columns and layouts
 
-Budget figures appear on a budget plan in rows and columns. You must first define the columns, and then you can create a layout to define the presentation of the columns. 
+Budget figures appear on a budget plan in rows and columns. First define the columns, and then you can create a layout to define the presentation of the columns. 
 
 To define a column, select a budget plan scenario. The line amounts from that scenario are shown on the budget plan. You can select a period to filter the amount, and you can also apply filters that are based on the ledger account. 
 
