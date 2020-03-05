@@ -2,10 +2,10 @@
 # required metadata
 
 title: Budget planning data allocation
-description: This topic describes the allocation methods that are available in Microsoft Dynamics 365 Finance and how they can be used.  
+description: This topic describes the allocation methods that are available in Microsoft Dynamics 365 Finance and how they can be used. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,14 +34,15 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article describes the allocation methods that are available in Microsoft Dynamics 365 Finance and how they can be used.  
+This topic describes the allocation methods that are available in Microsoft Dynamics 365 Finance and how they can be used.  
 
 You can distribute the data in a budget plan in a number of ways to accurately portray the projected amounts.
 
 ## Allocation methods
 Three allocation methods (Allocate across periods, Allocate to dimensions, and Use ledger allocation rules) can create budget plan lines that are based on lines in the same budget plan. Three other methods (Aggregate, Distribute, and Copy from budget plan) can create budget plan lines in other budget plans. For all six allocation methods, you specify the destination scenario. The destination scenario can be either the same as the source scenario or different from the source scenario. Additionally, you can specify whether new lines are appended to the budget plan or replace the current lines in the budget plan.
 
-Note: A unique scenario should be used for aggregation that is different from the scenario that was used for distribution or other modifications performed previously in the parent plan.  
+> [!NOTE] 
+> A unique scenario should be used for aggregation that is different from the scenario that was used for distribution or other modifications that were previously performed  in the parent plan.  
 
 [![Allocate across Periods allocation method](./media/allocateacrossperiods-300x259.png)](./media/allocateacrossperiods.png)
 **Allocate across periods** – A period allocation category is used to allocate the budget plan lines from the source budget plan scenario across periods in the destination scenario. The source amount is assigned to multiple lines in the destination scenario, based on the percentage and date that are defined in the period allocation category.         
