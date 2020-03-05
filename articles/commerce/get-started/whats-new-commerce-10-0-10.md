@@ -44,8 +44,8 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 The following features are included in this release. The feature titles link to additional information on the [Release plans site](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/).
 
 - [Azure AD support for POS sign-in](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/aad-support-pos-logon)
-- [Channel-side calculations for available physical inventory for stores](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-commerce/channel-side-calculations-physical-inventory-stores)
-- [Change mode of delivery operation for POS](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-commerce/change-mode-delivery-operation-pos)
+- [Channel-side calculations for available physical inventory for stores](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/channel-side-calculations-physical-inventory-stores)
+- [Change mode of delivery operation for POS](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/change-mode-delivery-operation-pos)
 
 
 ## Additional resources
