@@ -90,7 +90,7 @@ To create an Azure DevOps Github repo, follow these steps.
     git clone https://xxxxxx.dev.azure.com/<DevOpsProjectName>/_git/<DevOpsProjectName>
     ```
 
-1. Copy all of the contents of "C:\repos\Msdyn365.Commerce.Online" to "C:\repos\\<DevOpsProjectName>". Do not copy the hidden .git folder.
+1. Copy all of the contents of "C:\repos\Msdyn365.Commerce.Online" to "C:\repos\\\<DevOpsProjectName>". Do not copy the hidden .git folder.
 
 1. With Visual Studio Code, open the folder "c:\repos\<DevOpsProjectName>". When you select the source control tab on the left, Visual Studio Code will show the new changes to be committed.
 1. To commit all of the changes to Git, enter a description in the text box at the top of the **SOURCE CONTROL: GIT** pane, and then select the "Commit" checkmark symbol above it. When prompted when to stage all you changes and commit them directly, select **Yes**.
