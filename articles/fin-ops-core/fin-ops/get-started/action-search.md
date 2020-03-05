@@ -76,6 +76,9 @@ In the previous example, action search showed results from the standard Action P
 
 [![on-hand-inventory](./media/on-hand-inventory.png)](./media/on-hand-inventory.png)
 
+> [!NOTE]
+> There are some buttons that do not show up in Action search. These include drop dialog buttons and buttons from subforms. 
+
 ## Action search vs. Navigation search
 
 Whereas action search is intended to find and run actions on a page, there is a separate search mechanism for finding and navigating to pages. For more information about that feature, see the [Navigation search](navigation-search.md) article.
