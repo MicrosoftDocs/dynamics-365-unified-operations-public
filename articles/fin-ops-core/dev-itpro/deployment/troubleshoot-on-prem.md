@@ -3,7 +3,7 @@
 
 title: Troubleshoot on-premises deployments
 description: This topic provides troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises).
-author: sarvanisathish
+author: PeterRFriis
 manager: AnnBe
 ms.date: 03/03/2020
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 60373
 ms.assetid:
 ms.search.region: Global
 # ms.search.industry:
-ms.author: sarvanis
+ms.author: perahlff
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
 
