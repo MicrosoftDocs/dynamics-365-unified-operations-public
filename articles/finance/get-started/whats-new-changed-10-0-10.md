@@ -29,7 +29,7 @@ ms.search.validFrom: 2020-03-05
 ms.dyn365.ops.version: 10.0.10
 
 ---
-#Preview features in Dynamics 365 Finance version 10.0.10 Preview (March 2020)
+# Preview features in Dynamics 365 Finance version 10.0.10 Preview (March 2020)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -42,23 +42,23 @@ This topic lists features that are new or changed for Microsoft Dynamics 365 Fin
 
 The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. 
 
-- [Budget planning query optimization for performance](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/budget-planning-query-optimization-performance)
+- [Budget planning query optimization for performance](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/budget-planning-query-optimization-performance)
 
- - [Date range for Posted transactions by journals report](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/date-range-posted-transactions-journals-report)
+ - [Date range for Posted transactions by journals report](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/date-range-posted-transactions-journals-report)
  
- - [Add Vendor ID, Customer ID, Vendor Name and Customer Name to the voucher transactions list page](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/add-vendor-id-customer-id-vendor-name-customer-name-voucher-transactions-list-page)
+ - [Add Vendor ID, Customer ID, Vendor Name and Customer Name to the voucher transactions list page](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/add-vendor-id-customer-id-vendor-name-customer-name-voucher-transactions-list-page)
  
- - [Prohibit submission to workflow when the invoice total and registered invoice total are not equal](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/prohibit-submission-workflow-when-invoice-total-registered-invoice-total-are-not-equal)
+ - [Prohibit submission to workflow when the invoice total and registered invoice total are not equal](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/prohibit-submission-workflow-when-invoice-total-registered-invoice-total-are-not-equal)
  
- - [Allow Interest distribution and Escheatment to use feature – Lets you update bank balances when posting advanced ledger entries](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/allow-interest-distribution-escheatment-use-feature--lets-update-bank-balances-when-posting-advanced-ledger-entries)
+ - [Allow Interest distribution and Escheatment to use feature – Lets you update bank balances when posting advanced ledger entries](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/allow-interest-distribution-escheatment-use-feature--lets-update-bank-balances-when-posting-advanced-ledger-entries)
  
- - [Allow filtering the Tax 1099 detail report by reporting year](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/allow-filtering-tax-1099-detail-report-reporting-year)
+ - [Allow filtering the Tax 1099 detail report by reporting year](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/allow-filtering-tax-1099-detail-report-reporting-year)
 
  - [Extended Italian localization: Commission settlement on payments](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-commission-settlement-payments)
  
- - [Extended Italian localization: Configurable posting profiles for banks and remittance types](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-configurable-posting-profiles-banks-remittance-types)
+ - [Extended Italian localization: Configurable posting profiles for banks and remittance types](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-configurable-posting-profiles-banks-remittance-types)
  
- - [Extended Italian localization: Protest handling for bills of exchange](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-protest-handling-bills-exchange)
+ - [Extended Italian localization: Protest handling for bills of exchange](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-protest-handling-bills-exchange)
 
 
  
