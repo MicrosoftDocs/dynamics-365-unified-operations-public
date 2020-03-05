@@ -3,7 +3,7 @@
 
 title: Self-service deployment overview
 description: This topic provides an overview of self-service deployment.
-author: sarvanisathish
+author: rashmansur
 manager: AnnBe
 ms.date: 03/04/2020
 ms.topic: article
@@ -21,7 +21,7 @@ ms.search.scope: Operations
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global 
 # ms.search.industry: 
-ms.author: sarvanis
+ms.author: rashmim
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
 
