@@ -153,26 +153,30 @@ To create and configure a new build pipeline in Azure DevOps, follow these steps
 
     ![Add copy files agent](media/code-sharing-15.png)
 
-1. In the main window, select the **Copy files** task. In the **Copy files** pane, do the following:
-    - Under **Source Folder**, enter **$(Build.SourcesDirectory)**. 
-    - Under **Contents**, enter **\*.zip**. 
-    - Under **Target Folder**, enter **$(Build.ArtifactStagingDirectory)**.
+1. In the main window, select the **Copy files** task, then in the **Copy files** pane, do the following:
+    1. Under **Source Folder**, enter **$(Build.SourcesDirectory)**. 
+    1. Under **Contents**, enter **\*.zip**. 
+    1. Under **Target Folder**, enter **$(Build.ArtifactStagingDirectory)**.
 
     ![Configure Copy Files task](media/code-sharing-16.png)
 
-1. Add "Publish Pipeline Artifacts" agent by selecting the **+** next to "Agent job 1" and searching for "publish" followed by selecting the "Add" button.
+1. In the main window next to **Agent job**, select the plus symbol ("+") to add a new agent job.
+
+1. On the **Add tasks** pane on the right, search for "publish", and then in the **Publish Pipeline Artifacts** task, select **Add**.
 
     ![Add Publish Pipline Artifacts agent](media/code-sharing-17.png)
 
-1. Select the "Publish Pipeline Artifact" and set the **File or directory patj** to "$(Build.ArtifactStagingDirectory)" and the **Artifact name** to "drop".
+1. In the main window, select the **Publish Pipeline Artifacts** task. Then in the **Publish Pipeline Artifacts** pane, do the following:
+    1. Under **File or directory path**, enter **$(Build.ArtifactStagingDirectory)**.
+    1. Under **Artifact name**, enter **drop**.
 
     ![Configure Publish Pipline Artifacts agent](media/code-sharing-18.png)
 
-1. Save and queue a build.
+1. From the top menu, select **Save & queue**.
 
     ![Save and queue a build](media/code-sharing-19.png)
 
-1. Ensure **Agent Specification** is set to "vs2017-win2016" and click the "Save and run" button.
+1. In the **Run pipeline** pane, ensure that the value for **Agent Specification** is set to **vs2017-win2016**, and then select **Save and run**.
 
     ![Save and run](media/code-sharing-20.png)
 
