@@ -92,12 +92,12 @@ To create an Azure DevOps Github repo, follow these steps.
 
 1. Copy all of the contents of "C:\repos\Msdyn365.Commerce.Online" to "C:\repos\\\<DevOpsProjectName>". Do not copy the hidden .git folder.
 
-1. With Visual Studio Code, open the folder "c:\repos\<DevOpsProjectName>". When you select the source control tab on the left, Visual Studio Code will show the new changes to be committed.
-1. To commit all of the changes to Git, enter a description in the text box at the top of the **SOURCE CONTROL: GIT** pane, and then select the "Commit" checkmark symbol above it. When prompted when to stage all you changes and commit them directly, select **Yes**.
+1. With Visual Studio Code, open the folder "c:\repos\\\<DevOpsProjectName>". When you select the source control tab on the left, Visual Studio Code will show the new changes to be committed.
+1. To commit all of the changes to Git, enter a description in the text box at the top of the **SOURCE CONTROL: GIT** pane, and then select the checkmark symbol above it. When prompted to stage all your changes and commit them directly, select **Yes**.
 
     ![Commit changes](media/code-sharing-4.png)
 
-1. Select the ellipsis symbol ("...") to the right of the checkmark symbol, and in the flyout that appears select **Push** to push the changes to the repo.  
+1. Select the ellipsis symbol ("...") to the right of the checkmark symbol, and then in the flyout menu select **Push** to push the changes to the repo.  
 
     ![Push changes](media/code-sharing-5.png)
 
@@ -125,17 +125,15 @@ To create and configure a new build pipeline in Azure DevOps, follow these steps
 
     ![Select an empty job template](media/code-sharing-10.png)
 
-1. Next to **Agent job**, select **+** to add a new agent job.
+1. Next to **Agent job**, select the plus symbol ("+") to add a new agent job.
 
     ![Add new agent job](media/code-sharing-11.png)
 
-1. In the **Add tasks** pane on the right, search for "PowerShell", and then in the **PowerShell** task, select **Add**.
+1. In the **Add tasks** pane, search for "PowerShell", and then in the **PowerShell** task, select **Add**.
 
     ![Add PowerShell task](media/code-sharing-12.png)
 
-1. In the main window, select **PowerShell Script**.
-
-1. In the right pane under **Type**, select **Inline**, and then copy the script below into the **Script** box.
+1. In the main window, select **PowerShell Script**. Then in the right pane under **Type**, select **Inline**, and then copy the script below into the **Script** box.
 
     ```console
     yarn
@@ -144,7 +142,7 @@ To create and configure a new build pipeline in Azure DevOps, follow these steps
   
     ![Configure task](media/code-sharing-13.png)
 
-1. In the right pane, select **Advanced** to expand the section and then enter "$(Build.SourcesDirectory)" in the **Working Directory** box. 
+1. In the right pane, select **Advanced** to expand the section and then enter **$(Build.SourcesDirectory)** in the **Working Directory** box. 
 
     ![Set working directory](media/code-sharing-14.png)
 
@@ -155,9 +153,9 @@ To create and configure a new build pipeline in Azure DevOps, follow these steps
     ![Add copy files agent](media/code-sharing-15.png)
 
 1. In the main window, select the **Copy files** task, then in the **Copy files** pane, do the following:
-    1. Under **Source Folder**, enter **$(Build.SourcesDirectory)**. 
-    1. Under **Contents**, enter **\*.zip**. 
-    1. Under **Target Folder**, enter **$(Build.ArtifactStagingDirectory)**.
+    1. In the **Source Folder** box, enter **$(Build.SourcesDirectory)**. 
+    1. In the **Contents** box, enter **\*.zip**. 
+    1. In the **Target Folder** box, enter **$(Build.ArtifactStagingDirectory)**.
 
     ![Configure Copy Files task](media/code-sharing-16.png)
 
@@ -168,8 +166,8 @@ To create and configure a new build pipeline in Azure DevOps, follow these steps
     ![Add Publish Pipline Artifacts agent](media/code-sharing-17.png)
 
 1. In the main window, select the **Publish Pipeline Artifacts** task. Then in the **Publish Pipeline Artifacts** pane, do the following:
-    1. Under **File or directory path**, enter **$(Build.ArtifactStagingDirectory)**.
-    1. Under **Artifact name**, enter **drop**.
+    1. In the **File or directory path** box, enter **$(Build.ArtifactStagingDirectory)**.
+    1. In the **Artifact name** box, enter **drop**.
 
     ![Configure Publish Pipline Artifacts agent](media/code-sharing-18.png)
 
@@ -177,11 +175,11 @@ To create and configure a new build pipeline in Azure DevOps, follow these steps
 
     ![Save and queue a build](media/code-sharing-19.png)
 
-1. In the **Run pipeline** pane, ensure that the value for **Agent Specification** is set to **vs2017-win2016**, and then select **Save and run**.
+1. In the **Run pipeline** pane, ensure that the value in the **Agent Specification** box is set to **vs2017-win2016**, and then select **Save and run**.
 
     ![Save and run](media/code-sharing-20.png)
 
-    Tools that you commonly use to build, test, and run JavaScript apps - like npm, Node, Yarn, and Gulp - are pre-installed on Microsoft-hosted agents in Azure Pipelines. For the exact version of Node.js and npm that is preinstalled, refer to Microsoft-hosted agents. To install a specific version of these tools on Microsoft-hosted agents, add the Node Tool Installer task to the beginning of your process. "VS2017-win2016" comes with yarn pre-installed.
+    Tools that you commonly use to build, test, and run JavaScript apps (such as npm, Node, Yarn, and Gulp) are preinstalled on Microsoft-hosted agents in Azure Pipelines. For the exact versions of Node.js and npm that are preinstalled, refer to the Microsoft-hosted agents. To install a specific version of these tools on Microsoft-hosted agents, add the Node Tool Installer task to the beginning of your process. "VS2017-win2016" comes with yarn preinstalled.
 
 1. Monitor the agent job logs for job completion.
 
