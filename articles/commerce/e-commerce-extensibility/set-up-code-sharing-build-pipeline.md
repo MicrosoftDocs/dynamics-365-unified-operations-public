@@ -117,7 +117,7 @@ To create and configure a new build pipeline in Azure DevOps, follow these steps
 
     ![Select classic editor](media/code-sharing-8.png)
 
-1. Select your Azure DevOps GitHub repo project, and then select **Continue**.
+1. Under repository, select your Azure DevOps GitHub repo project from the drop down menu, and then select **Continue**.
 
     ![Select repository](media/code-sharing-9.png)
 
@@ -179,7 +179,7 @@ To create and configure a new build pipeline in Azure DevOps, follow these steps
 
     ![Save and run](media/code-sharing-20.png)
 
-    Tools that you commonly use to build, test, and run JavaScript apps (such as npm, Node, Yarn, and Gulp) are preinstalled on Microsoft-hosted agents in Azure Pipelines. For the exact versions of Node.js and npm that are preinstalled, refer to the Microsoft-hosted agents. To install a specific version of these tools on Microsoft-hosted agents, add the Node Tool Installer task to the beginning of your process. "VS2017-win2016" comes with yarn preinstalled.
+    Tools that you commonly use to build, test, and run JavaScript apps (such as npm, Node, Yarn, and Gulp) are preinstalled on Microsoft-hosted agents in Azure Pipelines. For the exact versions of Node.js and npm that are preinstalled, refer to the Microsoft-hosted agents. To install a specific version of these tools on Microsoft-hosted agents, add the **Node Tool Installer** task to the beginning of your process. "VS2017-win2016" comes with yarn preinstalled.
 
 1. Monitor the agent job logs for job completion.
 
