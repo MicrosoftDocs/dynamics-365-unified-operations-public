@@ -1,7 +1,7 @@
 ---
 # required metadata
-title: Omni-channel advanced auto charges
-description: Dynamics 365 Commerce's advanced auto charges for applying fees for transaction header or lines, based on channel or order creation. For e.g. if you want to apply recycling fees for group of products sold in all stores in California state, USA 
+title: Enable and configure auto charges by channel of order creation
+description: This topic describes how to enable and configure auto-charges by channel of the order creation in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 manager: annbe
 ms.date: 03/06/2020
@@ -25,39 +25,36 @@ ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: 10.0.10
 ---
 
-# Auto charges by channel of order creation
+# Enable and configure auto charges by channel of order creation
 
-This topic covers 
+This topic describes how to enable and configure auto-charges by channel of the order creation in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
 You may have scenarios like applying recycling fees for group of products that are sold in all or some of the stores in California state, USA. This topic provides information on how to enable and configure auto-charges by channel of the order creation. This feature is available in Dynamics 365 Commerce in version 10.0.10 or later. 
 
 > [!NOTE]
-> Auto charges by channel feature works only when the **advanced auto-charges** feature is enabled. Refer to advanced auto-charges for more details. 
+> The auto charges by channel feature only works when the advanced auto charges feature is enabled. For information on how to enable advanced auto charges, see [Omni-channel advanced auto charges](omni-auto-charges.md). 
 
-## Auto charges by channel configuration
+## Enable filter auto charges by channel
 
-**Enable auto charges by channel**
-A new feature switch called **Enable filter auto charges by channel** is created to enable auto charges by channel feature.
+A feature switch called **Enable filter auto charges by channel** allows you to enable auto charges by channel feature.
  
-To enable auto charges by channel, follow these steps.
+To enable filter auto charges by channel in Commerce, follow these steps.
 
 1. Go to **System administrator** > **Workspaces**  > **Feature management**.
-1. Under **Not enabled** list search for  **Enable filter auto charges by channel**.
-1. Click **Enable now** button on the right bottom corner. 
-1. After it's enabled you can find the switch under **All**
-1. Go to **Retail and Commerce** > ** Retail and Commerce IT** > **Distribution schedule** then run **1110 Global configuration** CDX job to propagate the configuration changes. 
+1. Under the **Not enabled** list, search for **Enable filter auto charges by channel**.
+1. In the right bottom corner, select **Enable now**. After this is enabled you can find the feature switch under **All**.
+1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**, and then run the **1110 Global configuration** CDX job to propagate the configuration changes. 
 
 > [!WARNING]
-> If you decide to deactivate the **Enable filter auto charges by channel** switch after using the feature, the **Retail channel relation** drop down under **Auto charges** will disappear and you will lose all existing configurations. If removing **Retail channel relation** configurations would result in duplicate auto-charges rules then deactivation will fail. Please review all auto-charges rules and make the necessary changes.
+> If you decide to deactivate the **Enable filter auto charges by channel** switch after using the feature, the **Retail channel relation** drop down menu under **Auto charges** will disappear and you will lose all existing configurations. If removing **Retail channel relation** configurations would result in duplicate auto charges rules, then deactivation will fail. Please review all auto-charges rules and make any necessary changes prior to deactivating.
 
-
-**Configure organization hierarchy purpose**
+## Configure organization hierarchy purpose
 
 A new organization hierarchy purpose called **Retail auto charges** has been created for managing hierarchy for auto charges by channel. 
 
-To configure hierarchy purpose with a default hierarchy, follow these steps. 
+To configure hierarchy purpose with a default hierarchy in Commerce, follow these steps. 
 		
 1. Go to **Organization administration \> Organizations \> Organization hierarchy purposes**. 
 1. Select **Retail auto charges** from the list.
@@ -71,12 +68,12 @@ To configure hierarchy purpose with a default hierarchy, follow these steps.
 
 ## Define auto charges by channel
 
-After enabling **auto charges by channel feature** switch and configuring **Retail auto charges** organization hierarchy purpose, auto charges by channel can be defined at order header level or line level using following steps:
+After enabling **auto charges by channel feature** switch and configuring **Retail auto charges** organization hierarchy purpose, auto charges by channel can be defined at order header level or line level.
 
-To define auto charges by channel, follow these steps.
+To define auto charges by channel in Commerce, follow these steps.
 
-1. Go to **Accounts receivable** > **Charges setup** > **Auto charges**  
-1. Define auto-charge either at **header** level or **line** level based on business requirements. 
+1. Go to **Accounts receivable \> Charges setup \> Auto charges** . 
+1. Define auto charges at either the **header** level or **line** level, based on business requirements. 
 1. In the charges header, select **Retail channel code**  e.g. Table or Group.  By default this is set to **All**, which means charge rules are applied for all channels. 
 1. For group, make sure a **Retail channel charges group** is created that you can find under ** Retail and Commerce** > **Channel setup** > **Charges** > ** > Retail channel charge groups**
 1. For Table, you can select a specific channel, e.g. **San Francisco** store under **Retail channel relation** dropdown.  
