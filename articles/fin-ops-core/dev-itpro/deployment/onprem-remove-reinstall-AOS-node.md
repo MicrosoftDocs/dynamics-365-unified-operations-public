@@ -112,21 +112,21 @@ Reference doc: <https://docs.microsoft.com/en-us/azure/service-fabric/service-fa
 
     ![](media/e146a300f030d0695be858d8c7261486.png)
 
-1.   Open a PowerShell prompt as Admin
+1. Open a PowerShell prompt as Admin
 
-1.   Connect to the SF Cluster:
+1. Connect to the SF Cluster:
 
     ```powershell
     \#Connect to Service Fabric Cluster. Replace 123 with server/star thumbprint and use appropriate IP address
-    Connect-ServiceFabricCluster -connectionEndpoint 10.0.0.12:19000 -X509Credential -FindType FindByThumbprint -FindValue 123 -ServerCertThumbprint 123
+    Connect-ServiceFabricCluster -connectionEndpoint 10.0.0.12:19000 -X509Credential -FindType FindByThumbprint -FindValue 123 -        ServerCertThumbprint 123
     ```
 
    ![](media/0af2777b388b786d2ba6fe0b1f0f77dc.png)
 
 1. Run the following command to save the config file to C:\\Temp\\ClusterConfig.json (ensure the C:\\Temp path exists):
 
->   Get-ServiceFabricClusterConfiguration -UseApiVersion -ApiVersion 10-2017
->   \>C:\\Temp\\ClusterConfig.json
+    Get-ServiceFabricClusterConfiguration -UseApiVersion -ApiVersion 10-2017
+    \>C:\\Temp\\ClusterConfig.json
 
 1. In the configuration file, saved in the step above, add the "NodesToBeRemoved" parameter to "Setup" section inside "FabricSettings" section. The "value" should be a comma separated list of node names of nodes that need to be removed. Note: Ensure you have the comma added to the line above the new section.
 
