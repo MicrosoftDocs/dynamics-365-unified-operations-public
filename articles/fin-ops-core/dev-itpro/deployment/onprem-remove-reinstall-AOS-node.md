@@ -40,58 +40,58 @@ ms.dyn365.ops.version: Platform update 34
 
 1. Click the settings icon (cog wheel) and check that you have Advanced Mode enabled, as in the screen shot below
 
-![](media/bc25caaed54da595a3c75429faaf73cb.png)
+    ![](media/bc25caaed54da595a3c75429faaf73cb.png)
 
-- Expand out the Nodes and click on the three dots “…” on the node you wish to remove.
+1. Expand out the Nodes and click on the three dots “…” on the node you wish to remove.
 
-- Click Deactivate (remove data) – Note you may not have this option if the node is already down, for example when the node server will not start.
+1. Click Deactivate (remove data) – Note you may not have this option if the node is already down, for example when the node server will not start.
 
-![](media/6865310acd6150cc81ee4a56aaeeed3f.png)
+    ![](media/6865310acd6150cc81ee4a56aaeeed3f.png)
 
-- You will be prompted to confirm the delete, enter in the node name, and click “Deactivate (remove data)”
+1. You will be prompted to confirm the delete, enter in the node name, and click “Deactivate (remove data)”
 
-![](media/49486a44d04b7a91431f18beebda43e8.png)
+    ![](media/49486a44d04b7a91431f18beebda43e8.png)
 
-- Once that has completed, it will show the status disabled
+1. Once that has completed, it will show the status disabled
 
-![](media/4dba61b4c22966cb4098cf832a4e5e90.png)
+    ![](media/4dba61b4c22966cb4098cf832a4e5e90.png)
 
-- If the server is still active and connected to the domain, you may then need to complete the following steps if you’re going to replace this node with a new server.
+1. If the server is still active and connected to the domain, you may then need to complete the following steps if you’re going to replace this node with a new server.
 
-    - Log on to the server
+    1. Log on to the server
 
-    - Remove the server from the domain.
+    2. Remove the server from the domain.
 
-    - Rename the server after it was removed from the domain.
+    3. Rename the server after it was removed from the domain.
 
-    - Make a note of the IP address and then change the IP address to a free address you have in your range.
+    4. Make a note of the IP address and then change the IP address to a free address you have in your range.
 
-    - Shutdown the server.
+    5. Shutdown the server.
 
-- Once the server is shutdown, or if it was already down, you will see its status reflected in the Service Fabric Explorer. Click again on the three dots, to select the “Remove node state” option.
+1. Once the server is shutdown, or if it was already down, you will see its status reflected in the Service Fabric Explorer. Click again on the three dots, to select the “Remove node state” option.
 
-![](media/e0460a280693cdf13896731aa7f2377f.png)
+    ![](media/e0460a280693cdf13896731aa7f2377f.png)
 
-- Confirm the Node Removal
+1. Confirm the Node Removal
 
-![](media/a711e04b14b8adddc5d3941f010b32e0.png)
+    ![](media/a711e04b14b8adddc5d3941f010b32e0.png)
 
-- Once that is completed, you will see the status of Invalid.
+1. Once that is completed, you will see the status of Invalid.
 
-![](media/c3f8dc79d51e535074e89dfca04006b8.png)
+    ![](media/c3f8dc79d51e535074e89dfca04006b8.png)
 
-- Make a note of the Node name, and type. In this example the node name is AOS1, and the type is AOSNodeType. Remember the node name may not necessarily be the same as the network name. Also, note the Upgrade Domain and Fault Domain settings, and IP address. You can see all of these in the screenshot above.
+1. Make a note of the Node name, and type. In this example the node name is AOS1, and the type is AOSNodeType. Remember the node name may not necessarily be the same as the network name. Also, note the Upgrade Domain and Fault Domain settings, and IP address. You can see all of these in the screenshot above.
 
-### Option 1 – Config File
+### Config File
 
 -   Reference doc:
     <https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-windows-server-add-remove-nodes>
 
--   In the Service Fabric Explorer, click on Cluster and made a note of the cluster version. In this example, it is 6.5.676.9590, as show in the screenshot below.
+1.   In the Service Fabric Explorer, click on Cluster and made a note of the cluster version. In this example, it is 6.5.676.9590, as show in the screenshot below.
 
-![](media/fe0c857aefd3a1174df38f8e0c644667.png)
+    ![](media/fe0c857aefd3a1174df38f8e0c644667.png)
 
-- On one of the Orchestrator servers, open File Explorer and ensure that you have enabled the View options “File name extensions” and “Hidden items”
+1. On one of the Orchestrator servers, open File Explorer and ensure that you have enabled the View options “File name extensions” and “Hidden items”
 
 ![](media/bb83d249cdce333bdbb2e276ebce559c.png)
 
