@@ -5,7 +5,7 @@ title: AxErd page has been retired
 description: We've had to retire the AxErd page. We've been able to post both the source code for the project, and the HTML files for the web page in a GitHub repo. 
 author: margoc
 manager: AnnBe
-ms.date: 02/27/2018
+ms.date: 03/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -15,7 +15,7 @@ ms.technology:
 
 # ms.search.form: 
 # ROBOTS: 
-audience: Application User
+audience: IT Pro, Developer
 # ms.devlang: 
 ms.reviewer: sericks
 ms.search.scope: AX 2012
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 2012
 
 [!include [banner](../includes/banner.md)]
 
-We've unfortunately had to retire the AxErd web page, from the `microsoft.com` domain. However, AxErd may still be available elsewhere, hosted by thrid parties.
+We've unfortunately had to retire the AxErd web page from the `microsoft.com` domain. However, AxErd may still be available elsewhere, hosted by thrid parties.
 
 AxErd provided Entity relationship diagrams (ERDs) for many Microsoft Dynamics AX 2012 tables.
 
