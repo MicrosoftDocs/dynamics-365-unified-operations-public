@@ -33,6 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 # Vendor invoices overview
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 This topic provides general information about vendor invoices. Vendor invoices are requests for payment for products and services that were received. Vendor invoices can represent a bill for ongoing services, or they can be based on purchase orders for specific items and services.
 
@@ -71,6 +72,16 @@ You can add a line that wasn't on the purchase order to the vendor invoice. You 
 
 Your organization might use workflows to manage the review process for vendor invoices. Workflow review can be required for the invoice header, the invoice line, or both. The workflow controls apply to the header or the line, depending on where the focus is when you select the control. Instead of the **Post** button, you will see a **Submit** button that you can use to send the vendor invoice through the review process.
 
+### Preventing invoice from being submitted to workflow 
+
+Following are several ways you can prevent an invoice from being submitted to a workflow.
+
+- **Invoice total and the registered total are not equal.** The person who submitted the invoice will receive an alert that the totals aren’t equal so they can correct the balances before resubmitting the invoice to workflow. This feature is available if the **Prohibit submission to workflow when the invoice total and registered invoice total are not equal** parameter on the **Feature management** page is turned on. 
+
+- **Invoice contains unallocated charges.** The person who submitted the invoice will receive an alert that the invoice has unallocated charges so they can correct the invoice before resubmitting it to workflow. This feature is available if the **Prohibit submission to workflow when there are unallocated charges on a vendor invoice** parameter on the **Feature management** page is turned on.
+
+- **Invoice contains the same invoice number as another posted invoice.** The person who submitted the invoice will receive an alert that an invoice with a duplicate number was found, and they can correct it before resubmitting to workflow. This alert will be displayed when the Accounts payable parameter labeled **Check the invoice number used** is set to **Reject duplicate**. This feature is available if the **Prohibit submission to workflow when the invoice number already exists on a posted invoice, and your system is not set up to accept duplicate invoice numbers** parameter on the **Feature management** page is turned on.  
+
 ## Matching vendor invoices to product receipts
 
 You can enter and save information for vendor invoices, and you can match invoice lines to product receipt lines. You can also match partial quantities for a line.
@@ -82,6 +93,14 @@ When you post the invoice, the **Invoice remainder** quantity for each item is u
 This option assumes that at least one product receipt has been posted for the purchase order. The vendor invoice is based on these product receipts and reflects the quantities from them. The financial information for the invoice is based on the information that is entered when you post the invoice.
 
 For more information, see [Record vendor invoice and match against received quantity](../accounts-payable/tasks/record-vendor-invoice-match-against-received-quantity.md).
+
+## Configure an automated task for vendor invoice workflow
+
+You can add an automated posting task to the Vendor invoice workflow so that invoices are processed in a batch. Posting invoices in a batch lets the workflow process continue without having to wait for the posting to finish, which improves the overall performance of all the tasks submitted to the workflow.
+
+The **Post the vendor invoice using a batch** task must not be used in the same workflow as the **Post vendor invoices** automated task. Also, the **Post the vendor invoice using a batch** task should be the last element in the workflow configuration.
+
+To post a vendor invoice in a batch, on the **Feature management** page, turn on the **Add an automated task to the Vendor invoice workflow for posting the vendor invoice using a batch job** parameter. Vendor invoice workflows are configured by going to **Accounts payable > Setup > Accounts payable workflows**. 
 
 ## Working with multiple invoices
 
