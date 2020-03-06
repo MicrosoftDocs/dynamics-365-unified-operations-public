@@ -1,7 +1,7 @@
 ---
 # required metadata
-title: Enable and configure auto charges by the channel of order creation
-description: This topic describes how to enable and configure auto-charges by the channel of the order creation in Microsoft Dynamics 365 Commerce.
+title: Enable and configure auto charges by channel of order creation
+description: This topic describes how to enable and configure auto charges by the channel of the order creation in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 manager: annbe
 ms.date: 03/06/2020
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 10.0.10
 
 # Enable and configure auto charges by the channel of order creation
 
-This topic describes how to enable and configure auto-charges by the channel of order creation in Microsoft Dynamics 365 Commerce.
+This topic describes how to enable and configure auto charges by the channel of order creation in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
@@ -52,7 +52,7 @@ To enable filter auto charges by channel in Commerce, follow these steps.
 
 ## Configure organization hierarchy purpose
 
-A new organization hierarchy purpose called **Retail auto charges** has been created for managing hierarchy for auto charges by channel. 
+A new organization hierarchy purpose called "Retail auto charge" has been created for managing hierarchy for auto charges by channel. 
 
 To configure an organization hierarchy purpose with a default hierarchy in Commerce, follow these steps. 
 		
@@ -70,7 +70,7 @@ To configure an organization hierarchy purpose with a default hierarchy in Comme
 
 ## Define auto charges by channel
 
-After enabling **auto charges by channel feature** switch and configuring **Retail auto charges** organization hierarchy purpose, auto charges by channel can be defined at order header level or line level.
+After enabling the "auto charges by channel" feature switch and configuring the "Retail auto charges" organization hierarchy purpose, auto charges by channel can be defined at the order header level or line level.
 
 To define auto charges by channel in Commerce, follow these steps.
 
