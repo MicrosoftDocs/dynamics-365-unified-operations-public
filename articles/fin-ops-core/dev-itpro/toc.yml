@@ -156,7 +156,7 @@
                   href: data-entities/dual-write/connection-setup.md
                 - name: Dual-write setup from Lifecycle Services
                   href: data-entities/dual-write/lcs-setup.md
-            - name: Dual-write application support
+            - name: Mapping concepts between apps
               items:
                 - name: Organization hierarchy on Common Data Service
                   href: data-entities/dual-write/organization-mapping.md
