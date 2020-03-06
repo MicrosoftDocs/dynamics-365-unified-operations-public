@@ -118,7 +118,7 @@ Reference doc: <https://docs.microsoft.com/en-us/azure/service-fabric/service-fa
 
     ```powershell
     \#Connect to Service Fabric Cluster. Replace 123 with server/star thumbprint and use appropriate IP address
-    Connect-ServiceFabricCluster -connectionEndpoint 10.0.0.12:19000 -X509Credential -FindType FindByThumbprint -FindValue 123 -        ServerCertThumbprint 123
+    Connect-ServiceFabricCluster -connectionEndpoint 10.0.0.12:19000 -X509Credential -FindType FindByThumbprint -FindValue 123 -ServerCertThumbprint 123
     ```
 
    ![](media/0af2777b388b786d2ba6fe0b1f0f77dc.png)
