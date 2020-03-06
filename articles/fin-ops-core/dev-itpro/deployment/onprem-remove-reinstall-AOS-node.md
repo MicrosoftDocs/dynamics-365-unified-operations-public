@@ -125,47 +125,34 @@ Reference doc: <https://docs.microsoft.com/en-us/azure/service-fabric/service-fa
 
 1. Run the following command to save the config file to C:\\Temp\\ClusterConfig.json (ensure the C:\\Temp path exists):
 
+    ```powershell
     Get-ServiceFabricClusterConfiguration -UseApiVersion -ApiVersion 10-2017
     \>C:\\Temp\\ClusterConfig.json
+    ```
 
-1. In the configuration file, saved in the step above, add the "NodesToBeRemoved" parameter to "Setup" section inside "FabricSettings" section. The "value" should be a comma separated list of node names of nodes that need to be removed. Note: Ensure you have the comma added to the line above the new section.
+1. In the configuration file, saved in the step above, add the "NodesToBeRemoved" parameter to "Setup" section inside "FabricSettings" section. The "value" should be a comma separated list of node names of nodes that need to be removed. 
+
+    > [!Note]
+    > Ensure you have the comma added to the line above the new section.
 
 >   "fabricSettings": [
-
 >   {
-
 >   "name": "Setup",
-
 >   "parameters": [
-
 >   {
-
 >   "name": "FabricDataRoot",
-
 >   "value": "C:\\\\ProgramData\\\\SF"
-
 >   },
-
 >   {
-
 >   "name": "FabricLogRoot",
-
 >   "value": "C:\\\\ProgramData\\\\SF\\\\Log"
-
 >   },
-
 >   {
-
 >   "name": "NodesToBeRemoved",
-
 >   "value": "AOS1"
-
 >   }
-
 >   ]
-
 >   }
-
 >   ]
 
 1. In the config file, remove the node from "Nodes" section, see example below the AOS1 node was removed.
