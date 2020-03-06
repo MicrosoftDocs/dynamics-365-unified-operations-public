@@ -44,7 +44,7 @@ To enable filter auto charges by channel in Commerce, follow these steps.
 1. Select the **Not enabled** tab. Under the **Feature name** list, find and select **Enable filter auto charges by channel**.
 1. In the right bottom corner, select **Enable now**. After this feature is enabled, it will be located in the **All** tab list.
 1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
-1. In the left pane, find select the **1110 Global configuration** job.
+1. In the left pane, find and select the **1110 Global configuration** job.
 1. On the action pane, select **Run now** to propagate the configuration changes. 
 
 > [!WARNING]
@@ -62,7 +62,9 @@ To configure an organization hierarchy purpose with a default hierarchy in Comme
 1. In the **Organization hierarchies** pane, select an organization hierarchy (for example, **Retail Stores by Region**) and then select **OK**.
 1. Under **Assigned hierarchies**, select **Set as default**.
 1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
-1. Run **1040 Products** , **1070 Channel configuration** , and **1110 Global configuration** CDX jobs. 
+1. In the left pane, find and select the **1040 Products** job.
+1. On the action pane, select **Run now**. 
+1. Repeat the previous 2 steps to run the **1070 Channel configuration** and **1110 Global configuration** jobs. 
 
 ![Dynamics 365 Commerce - Auto charges by channel](media/Auto-charges-org-hierarchy-purpose.png)
 
@@ -73,12 +75,14 @@ After enabling **auto charges by channel feature** switch and configuring **Reta
 To define auto charges by channel in Commerce, follow these steps.
 
 1. Go to **Accounts receivable \> Charges setup \> Auto charges** . 
-1. Define auto charges at either the **header** level or **line** level, based on business requirements. 
-1. In the charges header, select **Retail channel code**  e.g. Table or Group.  By default this is set to **All**, which means charge rules are applied for all channels. 
-1. For group, make sure a **Retail channel charges group** is created that you can find under **Retail and Commerce \> Channel setup \> Charges \> Retail channel charge groups**.
-1. For Table, you can select a specific channel, e.g. **San Francisco** store under **Retail channel relation** dropdown.  
+1. In the left pane **Level** drop down menu, select either the **Header** level or **Line** level, based on business requirements. 
+1. On the **Retail channel code** drop down menu, select the appropriate channel code (for example, **Table** or **Group**). The default setting is **All**, which means that charge rules are applied for all channels. 
+    - For **Group**, make sure that a **Retail channel charges group** is created that you can find under **Retail and Commerce \> Channel setup \> Charges \> Retail channel charge groups**.
+    - For **Table**, you can select a specific channel from the under **Retail channel relation** drop down menu (for example, **San Francisco**).  
 1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
-1. Run **1040 Products** , **1070 Channel configuration** , and **1110 Global configuration** CDX jobs. 
+1. In the left pane, find and select the **1040 Products** job.
+1. On the action pane, select **Run now**. 
+1. Repeat the previous 2 steps to run the **1070 Channel configuration** and **1110 Global configuration** jobs. 
 	
 ![Dynamics 365 Commerce - Auto charges by channel](media/Auto-charges-line-charge-by-channel.png)
 
