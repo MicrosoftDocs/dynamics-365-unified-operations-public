@@ -109,4 +109,4 @@ In the first release, most of the automation is handled by dual-write solutions.
     - There will be more support for currency and exchange rates, and the **Exchange Rate** application programming interface (API) will be revised.
     - Unit conversions will be supported.
 
-For more information about upcoming changes, see [Data in Common Data Service – phase 1 & 2](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/extensibility/extensibility-roadmap).
+For more information about upcoming changes, see [Data in Common Data Service – phase 1 & 2](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/data-common-data-service-phase-1).
