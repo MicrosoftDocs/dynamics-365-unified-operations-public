@@ -32,14 +32,13 @@ ms.dyn365.ops.version: Platform update 34
 [!include[banner](../includes/banner.md)]
 
 
-Part 1 – Remove the Node
-------------------------
+## Remove the node
 
-### Option 1 – SF Explorer
+### Option 1 – Service Fabric Explorer
 
-- Log in to the Service Fabric Explorer
+1. Log in to the Service Fabric Explorer
 
-- Click the settings icon (cog wheel) and check that you have Advanced Mode enabled, as in the screen shot below
+1. Click the settings icon (cog wheel) and check that you have Advanced Mode enabled, as in the screen shot below
 
 ![](media/bc25caaed54da595a3c75429faaf73cb.png)
 
