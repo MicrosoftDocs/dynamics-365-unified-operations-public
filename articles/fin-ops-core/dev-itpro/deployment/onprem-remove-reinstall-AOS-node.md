@@ -120,10 +120,10 @@ Reference doc: <https://docs.microsoft.com/en-us/azure/service-fabric/service-fa
     \#Connect to Service Fabric Cluster. Replace 123 with server/star thumbprint and use appropriate IP address
     Connect-ServiceFabricCluster -connectionEndpoint 10.0.0.12:19000 -X509Credential -FindType FindByThumbprint -FindValue 123 -ServerCertThumbprint 123
     ```
-    
-    ![](media/0af2777b388b786d2ba6fe0b1f0f77dc.png)
 
-1.   Run the following command to save the config file to C:\\Temp\\ClusterConfig.json (ensure the C:\\Temp path exists):
+   ![](media/0af2777b388b786d2ba6fe0b1f0f77dc.png)
+
+1. Run the following command to save the config file to C:\\Temp\\ClusterConfig.json (ensure the C:\\Temp path exists):
 
 >   Get-ServiceFabricClusterConfiguration -UseApiVersion -ApiVersion 10-2017
 >   \>C:\\Temp\\ClusterConfig.json
