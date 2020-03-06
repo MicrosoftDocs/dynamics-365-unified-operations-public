@@ -132,8 +132,8 @@ Reference doc: <https://docs.microsoft.com/en-us/azure/service-fabric/service-fa
 
 11. In the configuration file, saved in the step above, add the "NodesToBeRemoved" parameter to "Setup" section inside "FabricSettings" section. The "value" should be a comma separated list of node names of nodes that need to be removed. 
 
-    > [!Note]
-    > Ensure you have the comma added to the line above the new section.
+  > [!Note]
+  > Ensure you have the comma added to the line above the new section.
 
 >   ```
 >   "fabricSettings": [
@@ -181,8 +181,8 @@ Reference doc: <https://docs.microsoft.com/en-us/azure/service-fabric/service-fa
 >   },
 >   ```
 
-    > [!Note]
-    > If you do not remove the above you will get the following error later on in the process: ValidationException: Authentication type cannot be changed from unsecured to Windows.*
+   > [!Note]
+   > If you do not remove the above you will get the following error later on in the process: ValidationException: Authentication type cannot be changed from unsecured to Windows.*
 
 14. The last change is to increment the config file version, do this at the lowest increment, in the example below it went from 1.0.0 to 1.0.1
 
@@ -205,13 +205,13 @@ Reference doc: <https://docs.microsoft.com/en-us/azure/service-fabric/service-fa
 >    Get-ServiceFabricClusterUpgrade
 >   ```
 
-    If you find that the upgrade is hanging on UpgradePhase: PreUpgradeSafetyCheck, then look at the NodeName and restart that from the Service Fabric explorer. See example below of the upgrade hanging, it was running for 50mins with the same status on BI1.*
+   If you find that the upgrade is hanging on UpgradePhase: PreUpgradeSafetyCheck, then look at the NodeName and restart that from the Service Fabric explorer. See example below of the upgrade hanging, it was running for 50mins with the same status on BI1.*
 
-    If you get an error during the cluster config upgrade process that you had previously added a node through the Add-ServiceFabricNode, you may need to flush through the config without any changes apart from the version. You can use the Get-ServiceFabricClusterConfiguration and Start-ServiceFabricClusterConfigurationUpgrade commands for this.*
+   If you get an error during the cluster config upgrade process that you had previously added a node through the Add-ServiceFabricNode, you may need to flush through the config without any changes apart from the version. You can use the Get-ServiceFabricClusterConfiguration and Start-ServiceFabricClusterConfigurationUpgrade commands for this.*
 
-   ![](media/c9a57cd8a5828a63a010d829eaab597c.png)
+>   ![](media/c9a57cd8a5828a63a010d829eaab597c.png)
 
-   ![](media/329b9c2bd807d7bca96e106037504e0e.png)
+ >  ![](media/329b9c2bd807d7bca96e106037504e0e.png)
 
 18. You can also see a progress in the SF Explorer:
 
