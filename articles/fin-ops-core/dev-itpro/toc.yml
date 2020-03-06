@@ -142,7 +142,7 @@
           items:
           - name: Data integration using Common Data Service overview
             href: data-entities/data-integration-cds.md
-          - name: Synchronous, bidirectional integration
+          - name: Dual-write integration
             items: 
             - name: Dual-write home page
               href: data-entities/dual-write/dual-write-home-page.md
@@ -200,7 +200,7 @@
                   href: data-entities/dual-write/initial-sync.md
                 - name: Troubleshooting data integration
                   href: data-entities/dual-write/dual-write-troubleshooting.md
-          - name: Asynchronous, unidirectional integration
+          - name: Integration by using Power Platform Data Integrator
             items:
             - name: Configure a prospect to cash scenario
               items:
