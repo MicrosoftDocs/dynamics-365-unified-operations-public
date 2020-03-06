@@ -86,7 +86,7 @@ ms.dyn365.ops.version: Platform update 34
 
 Reference doc: <https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-windows-server-add-remove-nodes>
 
-1.   In the Service Fabric Explorer, click on Cluster and made a note of the cluster version. In this example, it is 6.5.676.9590, as show in the screenshot below.
+1. In the Service Fabric Explorer, click on Cluster and made a note of the cluster version. In this example, it is 6.5.676.9590, as show in the screenshot below.
 
 >    ![](media/fe0c857aefd3a1174df38f8e0c644667.png)
 
