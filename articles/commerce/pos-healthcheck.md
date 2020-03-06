@@ -5,7 +5,7 @@ title: Health check for POS peripherals and services
 description: This topic provides an overview of the health check operation in the point of sale (POS).
 author: rubendel
 manager: AnnBe
-ms.date: 03/04/2020
+ms.date: 03/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -54,7 +54,7 @@ Microsoft Dynamics 365 Commerce versions 10.0.10 and later include a health chec
 
 The health check operation is operation 717 on the **POS Operations** page in Commerce Headquarters. It can be used while the POS is in non-drawer mode. However, a hardware station must be active.
 
-By default, the health check tests only devices that are configured in the hardware profile for the hardware station that is currently active for a register. If a register uses multiple hardware stations over the course of a day, to do health checks for all of them, it must connect to one hardware station at a time. There is no store-level health check. However, it's possible that this type of check can be done through retail server extensibility.
+By default, the health check tests only devices that are configured in the hardware profile for the hardware station that is currently active for a register. If a register uses multiple hardware stations over the course of a day, to do health checks for all of them, it must connect to one hardware station at a time. There is no store-level health check. However, it's possible that this type of check can be done through Commerce Server extensibility.
 
 ### Out-of-box health checks
 
