@@ -31,7 +31,7 @@ This topic describes how to enable and configure auto charges by channel of orde
 
 ## Overview
 
-You may have scenarios where you need to apply recycling or other fees for a group of products that are sold in all or some of the stores in a particular state (for example, California). The "Enable filter auto charges by channel" feature switch in Microsoft Dynamics 365 Commerce allows you to enable auto charges by channel. This feature is available in Dynamics 365 Commerce in version 10.0.10 or later. 
+You may have scenarios where you need to apply recycling or other fees to a group of products that are sold in all or some of the stores in a particular state (for example, California). The "Enable filter auto charges by channel" feature switch in Microsoft Dynamics 365 Commerce allows you to enable auto charges by channel. This feature is available in Dynamics 365 Commerce in version 10.0.10 or later. 
 
 > [!NOTE]
 > The auto charges by channel feature only works when the advanced auto charges feature is enabled. For information on how to enable advanced auto charges, see [Omni-channel advanced auto charges](omni-auto-charges.md). 
