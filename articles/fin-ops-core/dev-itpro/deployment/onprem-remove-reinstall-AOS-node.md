@@ -84,8 +84,7 @@ ms.dyn365.ops.version: Platform update 34
 
 ### Config File
 
--   Reference doc:
-    <https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-windows-server-add-remove-nodes>
+Reference doc: <https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-windows-server-add-remove-nodes>
 
 1.   In the Service Fabric Explorer, click on Cluster and made a note of the cluster version. In this example, it is 6.5.676.9590, as show in the screenshot below.
 
@@ -93,29 +92,29 @@ ms.dyn365.ops.version: Platform update 34
 
 1. On one of the Orchestrator servers, open File Explorer and ensure that you have enabled the View options “File name extensions” and “Hidden items”
 
-![](media/bb83d249cdce333bdbb2e276ebce559c.png)
+    ![](media/bb83d249cdce333bdbb2e276ebce559c.png)
 
-- Expand out the C: drive, then drill down into the following folder (note the highlighted parts will vary depending on the node name and install):
+1. Expand out the C: drive, then drill down into the following folder (note the highlighted parts will vary depending on the node name and install):
 
->   C:\\ProgramData\\SF\\ORCH1\\Fabric\\work\\Applications\\__FabricSystem_App4294967295\\work\\Store\\131811633624852852
+    C:\\ProgramData\\SF\\ORCH1\\Fabric\\work\\Applications\\__FabricSystem_App4294967295\\work\\Store\\131811633624852852
 
-- Once you are in that folder, you should see a list of folders for various versions of Service Fabric, see example below:
+1. Once you are in that folder, you should see a list of folders for various versions of Service Fabric, see example below:
 
-![](media/f843b5ceda67f767f54333851f5deeec.png)
+    ![](media/f843b5ceda67f767f54333851f5deeec.png)
 
-- Open the folder that has the name as the version of Service Fabric that you noted above. In this example it will be 6.5.676.9590
+1. Open the folder that has the name as the version of Service Fabric that you noted above. In this example it will be 6.5.676.9590
 
-- In that folder you will see a CAB file, see example below.
+1. In that folder you will see a CAB file, see example below.
 
-![](media/fd04e00bc3d940f5637900e46db8f134.png)
+    ![](media/fd04e00bc3d940f5637900e46db8f134.png)
 
-- Copy that file to C:\\Temp (If you don’t have a Temp folder just create it), and rename the copied file to “MicrosoftAzureServiceFabric.cab”
+1. Copy that file to C:\\Temp (If you don’t have a Temp folder just create it), and rename the copied file to “MicrosoftAzureServiceFabric.cab”
 
-![](media/e146a300f030d0695be858d8c7261486.png)
+    ![](media/e146a300f030d0695be858d8c7261486.png)
 
--   Open a PowerShell prompt as Admin
+1.   Open a PowerShell prompt as Admin
 
--   Connect to the SF Cluster:
+1.   Connect to the SF Cluster:
 
 >   \#Connect to Service Fabric Cluster. Replace 123 with server/star thumbprint
 >   and use appropriate IP address
@@ -124,14 +123,14 @@ ms.dyn365.ops.version: Platform update 34
 >   -X509Credential -FindType FindByThumbprint -FindValue 123
 >   -ServerCertThumbprint 123
 
-![](media/0af2777b388b786d2ba6fe0b1f0f77dc.png)
+    ![](media/0af2777b388b786d2ba6fe0b1f0f77dc.png)
 
--   Run the following command to save the config file to C:\\Temp\\ClusterConfig.json (ensure the C:\\Temp path exists):
+1.   Run the following command to save the config file to C:\\Temp\\ClusterConfig.json (ensure the C:\\Temp path exists):
 
 >   Get-ServiceFabricClusterConfiguration -UseApiVersion -ApiVersion 10-2017
 >   \>C:\\Temp\\ClusterConfig.json
 
-- In the configuration file, saved in the step above, add the "NodesToBeRemoved" parameter to "Setup" section inside "FabricSettings" section. The "value" should be a comma separated list of node names of nodes that need to be removed. Note: Ensure you have the comma added to the line above the new section.
+1. In the configuration file, saved in the step above, add the "NodesToBeRemoved" parameter to "Setup" section inside "FabricSettings" section. The "value" should be a comma separated list of node names of nodes that need to be removed. Note: Ensure you have the comma added to the line above the new section.
 
 >   "fabricSettings": [
 
@@ -171,7 +170,7 @@ ms.dyn365.ops.version: Platform update 34
 
 >   ]
 
-- Also, in the config file, remove the node from "Nodes" section, see example below the AOS1 node was removed.
+1. In the config file, remove the node from "Nodes" section, see example below the AOS1 node was removed.
 
 >   "Nodes": [
 
@@ -204,37 +203,37 @@ ms.dyn365.ops.version: Platform update 34
 
 >   },
 
-Note: If you do not remove the above you will get the following error later on in the process: ValidationException: Authentication type cannot be changed from unsecured to Windows.*
+    > [!Note]
+    > If you do not remove the above you will get the following error later on in the process: ValidationException: Authentication type cannot be changed from unsecured to Windows.*
 
-- The last change is to increment the config file version, do this at the lowest increment, in the example below it went from 1.0.0 to 1.0.1
+1. The last change is to increment the config file version, do this at the lowest increment, in the example below it went from 1.0.0 to 1.0.1
 
 >   "ClusterConfigurationVersion": "1.0.1"
 
--   Save the config file.
+1.   Save the config file.
 
--   Run the following command to add the remove the node.
+1.   Run the following command to add the remove the node.
 
 >   Start-ServiceFabricClusterConfigurationUpgrade -ClusterConfigPath
 >   C:\\Temp\\ClusterConfig.json
 
-- To monitor the progress, run the following command:
+1. To monitor the progress, run the following command:
 
 > Get-ServiceFabricClusterUpgrade
 
-Note: If you find that the upgrade is hanging on UpgradePhase: PreUpgradeSafetyCheck, then look at the NodeName and restart that from the Service Fabric explorer. See example below of the upgrade hanging, it was running for 50mins with the same status on BI1.*
+    If you find that the upgrade is hanging on UpgradePhase: PreUpgradeSafetyCheck, then look at the NodeName and restart that from the Service Fabric explorer. See example below of the upgrade hanging, it was running for 50mins with the same status on BI1.*
 
-Note: If you get an error during the cluster config upgrade process that you had previously added a node through the Add-ServiceFabricNode, you may need to flush through the config without any changes apart from the version. You can use the Get-ServiceFabricClusterConfiguration and Start-ServiceFabricClusterConfigurationUpgrade commands for this.*
+    If you get an error during the cluster config upgrade process that you had previously added a node through the Add-ServiceFabricNode, you may need to flush through the config without any changes apart from the version. You can use the Get-ServiceFabricClusterConfiguration and Start-ServiceFabricClusterConfigurationUpgrade commands for this.*
 
-![](media/c9a57cd8a5828a63a010d829eaab597c.png)
+    ![](media/c9a57cd8a5828a63a010d829eaab597c.png)
 
-![](media/329b9c2bd807d7bca96e106037504e0e.png)
+    ![](media/329b9c2bd807d7bca96e106037504e0e.png)
 
--   You can also see a progress in the SF Explorer:
+1. You can also see a progress in the SF Explorer:
 
-![](media/99c6321f9da950d91a1709cae2473d97.png)
+    ![](media/99c6321f9da950d91a1709cae2473d97.png)
 
-Part 2 – Add the Node
----------------------
+## Add the Node
 
 - The next step is to start up a new AOS server.
 
