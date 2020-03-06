@@ -159,62 +159,59 @@ Reference doc: <https://docs.microsoft.com/en-us/azure/service-fabric/service-fa
 
 1. In the config file, remove the node from "Nodes" section, see example below the AOS1 node was removed.
 
+>   ```
 >   "Nodes": [
-
 >   {
-
 >   "NodeName": "AOS2",
-
 >   "NodeTypeRef": "AOSNodeType",
-
 >   "IPAddress": "10.0.0.10",
-
 >   "FaultDomain": "fd:/fd1",
-
 >   "UpgradeDomain": "ud1"
-
 >   },
-
 >   {
-
 >   "NodeName": "AOS3",
-
 >   "NodeTypeRef": "AOSNo…
+>   ```
 
--   You’ll need to remove the following lines from the “Security” section of the
-    config file:
+1. You’ll need to remove the following lines from the “Security” section of the config file:
 
+>   ```
 >   "WindowsIdentities": {
-
 >   "\$id": "3"
-
 >   },
+>   ```
 
     > [!Note]
     > If you do not remove the above you will get the following error later on in the process: ValidationException: Authentication type cannot be changed from unsecured to Windows.*
 
 1. The last change is to increment the config file version, do this at the lowest increment, in the example below it went from 1.0.0 to 1.0.1
 
+>   ```
 >   "ClusterConfigurationVersion": "1.0.1"
+>   ```
 
-1.   Save the config file.
+1. Save the config file.
 
-1.   Run the following command to add the remove the node.
+1. Run the following command to add the remove the node.
 
+>   ```
 >   Start-ServiceFabricClusterConfigurationUpgrade -ClusterConfigPath
 >   C:\\Temp\\ClusterConfig.json
+>   ```
 
 1. To monitor the progress, run the following command:
 
-> Get-ServiceFabricClusterUpgrade
+>   ```
+>    Get-ServiceFabricClusterUpgrade
+>   ```
 
     If you find that the upgrade is hanging on UpgradePhase: PreUpgradeSafetyCheck, then look at the NodeName and restart that from the Service Fabric explorer. See example below of the upgrade hanging, it was running for 50mins with the same status on BI1.*
 
     If you get an error during the cluster config upgrade process that you had previously added a node through the Add-ServiceFabricNode, you may need to flush through the config without any changes apart from the version. You can use the Get-ServiceFabricClusterConfiguration and Start-ServiceFabricClusterConfigurationUpgrade commands for this.*
 
-    ![](media/c9a57cd8a5828a63a010d829eaab597c.png)
+   ![](media/c9a57cd8a5828a63a010d829eaab597c.png)
 
-    ![](media/329b9c2bd807d7bca96e106037504e0e.png)
+   ![](media/329b9c2bd807d7bca96e106037504e0e.png)
 
 1. You can also see a progress in the SF Explorer:
 
@@ -245,15 +242,14 @@ The next step is to start up a new AOS server.
 
     > [!Note:]
     > If running remotely and repairing an existing server, you’ll need to delete the file “lbdscripts_remote_status.json” located in the infrastructure folder to force the file copy to the servers again.*
-
+    
+>   ```
 >   \# Install pre-req software on the VMs.
-
 >   \# If Remoting, execute
-
 >   \# .\\Configure-PreReqs-AllVMs.ps1 -MSIFilePath \<share folder path of the
 >   MSIs\> -ConfigurationFilePath .\\ConfigTemplate.xml
-
 >   .\\Configure-PreReqs.ps1 -MSIFilePath \<path of the MSIs\>
+>   ```
 
 1. Each time you are prompted, restart the machine. Make sure that you rerun the .\\Configure-PreReqs.ps1 script after each restart until all of the prerequisites are installed. In the case of remoting, rerun the AllVMs script when all of the machines are back online.
 
@@ -263,46 +259,48 @@ The next step is to start up a new AOS server.
 
 1. Run the following scripts, if they exist, to complete the VM setup.
 
+>   ```
 >   \# If Remoting, only execute
-
 >   \# .\\Complete-PreReqs-AllVMs.ps1 -ConfigurationFilePath
 >   .\\ConfigTemplate.xml
-
 >   .\\Add-GMSAOnVM.ps1
-
 >   .\\Import-PfxFiles.ps1
-
 >   .\\Set-CertificateAcls.ps1
+>   ```
 
 1. If you have errors running the “Add-GMSAonVM.ps1”. you will need to run the following (edit if your service account is different. Also note you remove the \$ from the service account name):
 
+>   ```
 >   Get-ADServiceAccount -Identity svc-AXSF -properties
 >   PrincipalsAllowedToRetrieveManagedPassword
+>   ```
 
-    ![](media/525f31b6281e87fd58075f2101f75118.png)
+   ![](media/525f31b6281e87fd58075f2101f75118.png)
 
 1. You will see a list of the servers that have permission to retrieve the password for the svc-AXFS\$ gMSA. You may see a GUID value for the server that was removed, you can ignore that
 
 1. Copy the list of principals listed from the result and use those to edit/amend the following command (not the Set command is not additive, so you need to add all references back in):
 
+>   ```
 >   Set-ADServiceAccount -Identity svc-AXSF
 >   -PrincipalsAllowedToRetrieveManagedPassword
 >   "CN=AOS1,CN=Computers,DC=contoso,DC=com","CN=AOS2,CN=Computers,DC=contoso,DC=com","CN=AOS3,CN=Computers,DC=contoso,DC=com"
+>   ```
 
-    ![](media/ff652391b87c72cacd318b588758e4fc.png)
+   ![](media/ff652391b87c72cacd318b588758e4fc.png)
 
 1. Then run the original Get command to check the new AOS node was added back in:
 
-    ![](media/17b9c379b6328ed506d16270280146f4.png)
+   ![](media/17b9c379b6328ed506d16270280146f4.png)
 
 1. Run the following script to validate the VM setup.
 
+>   ```
 >   \# If Remoting, execute
-
 >   \# .\\Test-D365FOConfiguration-AllVMs.ps1 -ConfigurationFilePath
 >   .\\ConfigTemplate.xml
-
 >   .\\Test-D365FOConfiguration.ps1
+>   ```
 
 1. Fix anything that may mail as part of the validate script before continuing.
 
@@ -316,7 +314,7 @@ The next step is to start up a new AOS server.
 
 1. Expand out the C: drive, then drill down into the following folder (note the highlighted parts will vary depending on the node name and install):
 
->   C:\\ProgramData\\SF\\ORCH1\\Fabric\\work\\Applications\\__FabricSystem_App4294967295\\work\\Store\\131811633624852852
+    C:\\ProgramData\\SF\\ORCH1\\Fabric\\work\\Applications\\__FabricSystem_App4294967295\\work\\Store\\131811633624852852
 
 1. Once you are in that folder, you should see a list of folders for various versions of Service Fabric, see example below:
 
@@ -336,20 +334,24 @@ The next step is to start up a new AOS server.
 
 1. Connect to your service fabric cluster using the following command, edit as needed.
 
->   \#Connect to Service Fabric Cluster. Replace 123 with server/star thumbprint
->   and use appropriate IP address
+>   ```
+>   \#Connect to Service Fabric Cluster. Replace 123 with server/star thumbprint and use appropriate IP address
+
 
 >   Connect-ServiceFabricCluster -connectionEndpoint 10.0.0.12:19000
 >   -X509Credential -FindType FindByThumbprint -FindValue 123
 >   -ServerCertThumbprint 123
+>   ```
 
 >   ![](media/0af2777b388b786d2ba6fe0b1f0f77dc.png)
 
-1.   Run the following command to add the node back in. Make required edits prior to running on parameters NodeName, IPAddress, UpgradeDomain and FaultDomain (you should have made a note of these values in the earlier steps if replacing an existing server).
+1. Run the following command to add the node back in. Make required edits prior to running on parameters NodeName, IPAddress, UpgradeDomain and FaultDomain (you should have made a note of these values in the earlier steps if replacing an existing server).
 
+>   ```
 >   Add-ServiceFabricNode -NodeName "AOS1" -NodeType "AOSNodeType"
 >   -IpAddressOrFQDN "10.0.0.9" -UpgradeDomain "ud0" -FaultDomain "fd:/fd0"
 >   -FabricRuntimePackagePath "C:\\Temp\\MicrosoftAzureServiceFabric.cab"
+>   ```
 
 >   ![](media/e8c153c1b8aa06af684a307f443c9b7b.png)
 
