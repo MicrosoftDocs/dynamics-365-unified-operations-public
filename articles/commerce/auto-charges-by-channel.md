@@ -1,7 +1,7 @@
 ---
 # required metadata
-title: Enable and configure auto charges by channel of order creation
-description: This topic describes how to enable and configure auto-charges by channel of the order creation in Microsoft Dynamics 365 Commerce.
+title: Enable and configure auto charges by the channel of order creation
+description: This topic describes how to enable and configure auto-charges by the channel of the order creation in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 manager: annbe
 ms.date: 03/06/2020
@@ -25,27 +25,27 @@ ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: 10.0.10
 ---
 
-# Enable and configure auto charges by channel of order creation
+# Enable and configure auto charges by the channel of order creation
 
-This topic describes how to enable and configure auto-charges by channel of the order creation in Microsoft Dynamics 365 Commerce.
+This topic describes how to enable and configure auto-charges by the channel of order creation in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-You may have scenarios like applying recycling fees for group of products that are sold in all or some of the stores in California state, USA. This topic provides information on how to enable and configure auto-charges by channel of the order creation. This feature is available in Dynamics 365 Commerce in version 10.0.10 or later. 
+You may have scenarios like applying recycling fees for group of products that are sold in all or some of the stores in California state, USA. The "Enable filter auto charges by channel" feature switch allows you to enable auto charges by channel. This feature is available in Dynamics 365 Commerce in version 10.0.10 or later. 
 
 > [!NOTE]
 > The auto charges by channel feature only works when the advanced auto charges feature is enabled. For information on how to enable advanced auto charges, see [Omni-channel advanced auto charges](omni-auto-charges.md). 
 
 ## Enable filter auto charges by channel
 
-A feature switch called **Enable filter auto charges by channel** allows you to enable auto charges by channel feature.
- 
 To enable filter auto charges by channel in Commerce, follow these steps.
 
-1. Go to **System administrator** > **Workspaces**  > **Feature management**.
-1. Under the **Not enabled** list, search for **Enable filter auto charges by channel**.
-1. In the right bottom corner, select **Enable now**. After this is enabled you can find the feature switch under **All**.
-1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**, and then run the **1110 Global configuration** CDX job to propagate the configuration changes. 
+1. Go to **System administrator \> Workspaces \> Feature management**.
+1. Select the **Not enabled** tab. Under the **Feature name** list, find and select **Enable filter auto charges by channel**.
+1. In the right bottom corner, select **Enable now**. After this feature is enabled, it will be located in the **All** tab list.
+1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
+1. In the left pane, find select the **1110 Global configuration** job.
+1. On the action pane, select **Run now** to propagate the configuration changes. 
 
 > [!WARNING]
 > If you decide to deactivate the **Enable filter auto charges by channel** switch after using the feature, the **Retail channel relation** drop down menu under **Auto charges** will disappear and you will lose all existing configurations. If removing **Retail channel relation** configurations would result in duplicate auto charges rules, then deactivation will fail. Please review all auto-charges rules and make any necessary changes prior to deactivating.
@@ -54,14 +54,14 @@ To enable filter auto charges by channel in Commerce, follow these steps.
 
 A new organization hierarchy purpose called **Retail auto charges** has been created for managing hierarchy for auto charges by channel. 
 
-To configure hierarchy purpose with a default hierarchy in Commerce, follow these steps. 
+To configure an organization hierarchy purpose with a default hierarchy in Commerce, follow these steps. 
 		
 1. Go to **Organization administration \> Organizations \> Organization hierarchy purposes**. 
-1. Select **Retail auto charges** from the list.
-1. Click **+ Add** button under **Assigned hierarchies**. 
-1. Select a hierarchy e.g. **Retail Store by Region** and click **Ok**
-1. Click **Set as default**
-1. Go to **Retail and Commerce** > ** Retail and Commerce IT** > **Distribution schedule**.
+1. In the left pane, select **Retail auto charge**.
+1. Under **Assigned hierarchies**, select **+ Add**. 
+1. In the **Organization hierarchies** pane, select an organization hierarchy (for example, **Retail Stores by Region**) and then select **OK**.
+1. Under **Assigned hierarchies**, select **Set as default**.
+1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
 1. Run **1040 Products** , **1070 Channel configuration** , and **1110 Global configuration** CDX jobs. 
 
 ![Dynamics 365 Commerce - Auto charges by channel](media/Auto-charges-org-hierarchy-purpose.png)
