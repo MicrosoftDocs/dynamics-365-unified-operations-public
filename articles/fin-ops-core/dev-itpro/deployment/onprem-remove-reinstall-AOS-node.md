@@ -30,59 +30,12 @@ ms.dyn365.ops.version: Platform update 34
 # Remove and reinstall an AOS node
 
 [!include[banner](../includes/banner.md)]
-
+This topic provides information on how to remove an AOS node in the need for reduction or replacement of a failed node, and also covers the steps to add a new node.
 
 ## Remove the node
 
-### Option 1 – Service Fabric Explorer
 
-1. Log in to the Service Fabric Explorer
-
-2. Click the settings icon (cog wheel) and check that you have Advanced Mode enabled, as in the screen shot below
-
-    ![](media/bc25caaed54da595a3c75429faaf73cb.png)
-
-3. Expand out the Nodes and click on the three dots “…” on the node you wish to remove.
-
-4. Click Deactivate (remove data) – Note you may not have this option if the node is already down, for example when the node server will not start.
-
-    ![](media/6865310acd6150cc81ee4a56aaeeed3f.png)
-
-5. You will be prompted to confirm the delete, enter in the node name, and click “Deactivate (remove data)”
-
-    ![](media/49486a44d04b7a91431f18beebda43e8.png)
-
-6. Once that has completed, it will show the status disabled
-
-    ![](media/4dba61b4c22966cb4098cf832a4e5e90.png)
-
-7. If the server is still active and connected to the domain, you may then need to complete the following steps if you’re going to replace this node with a new server.
-
-    1. Log on to the server
-
-    2. Remove the server from the domain.
-
-    3. Rename the server after it was removed from the domain.
-
-    4. Make a note of the IP address and then change the IP address to a free address you have in your range.
-
-    5. Shutdown the server.
-
-8. Once the server is shutdown, or if it was already down, you will see its status reflected in the Service Fabric Explorer. Click again on the three dots, to select the “Remove node state” option.
-
-    ![](media/e0460a280693cdf13896731aa7f2377f.png)
-
-9. Confirm the Node Removal
-
-    ![](media/a711e04b14b8adddc5d3941f010b32e0.png)
-
-10. Once that is completed, you will see the status of Invalid.
-
-    ![](media/c3f8dc79d51e535074e89dfca04006b8.png)
-
-11. Make a note of the Node name, and type. In this example the node name is AOS1, and the type is AOSNodeType. Remember the node name may not necessarily be the same as the network name. Also, note the Upgrade Domain and Fault Domain settings, and IP address. You can see all of these in the screenshot above.
-
-### Config File
+### Option 1 - Config File (preferred option)
 
 Reference doc: <https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-windows-server-add-remove-nodes>
 
@@ -216,6 +169,55 @@ Reference doc: <https://docs.microsoft.com/en-us/azure/service-fabric/service-fa
 18. You can also see a progress in the SF Explorer:
 
     ![](media/99c6321f9da950d91a1709cae2473d97.png)
+
+### Option 2 – Service Fabric Explorer
+
+1. Log in to the Service Fabric Explorer
+
+2. Click the settings icon (cog wheel) and check that you have Advanced Mode enabled, as in the screen shot below
+
+    ![](media/bc25caaed54da595a3c75429faaf73cb.png)
+
+3. Expand out the Nodes and click on the three dots “…” on the node you wish to remove.
+
+4. Click Deactivate (remove data) – Note you may not have this option if the node is already down, for example when the node server will not start.
+
+    ![](media/6865310acd6150cc81ee4a56aaeeed3f.png)
+
+5. You will be prompted to confirm the delete, enter in the node name, and click “Deactivate (remove data)”
+
+    ![](media/49486a44d04b7a91431f18beebda43e8.png)
+
+6. Once that has completed, it will show the status disabled
+
+    ![](media/4dba61b4c22966cb4098cf832a4e5e90.png)
+
+7. If the server is still active and connected to the domain, you may then need to complete the following steps if you’re going to replace this node with a new server.
+
+    1. Log on to the server
+
+    2. Remove the server from the domain.
+
+    3. Rename the server after it was removed from the domain.
+
+    4. Make a note of the IP address and then change the IP address to a free address you have in your range.
+
+    5. Shutdown the server.
+
+8. Once the server is shutdown, or if it was already down, you will see its status reflected in the Service Fabric Explorer. Click again on the three dots, to select the “Remove node state” option.
+
+    ![](media/e0460a280693cdf13896731aa7f2377f.png)
+
+9. Confirm the Node Removal
+
+    ![](media/a711e04b14b8adddc5d3941f010b32e0.png)
+
+10. Once that is completed, you will see the status of Invalid.
+
+    ![](media/c3f8dc79d51e535074e89dfca04006b8.png)
+
+11. Make a note of the Node name, and type. In this example the node name is AOS1, and the type is AOSNodeType. Remember the node name may not necessarily be the same as the network name. Also, note the Upgrade Domain and Fault Domain settings, and IP address. You can see all of these in the screenshot above.
+
 
 ## Add the Node
 
