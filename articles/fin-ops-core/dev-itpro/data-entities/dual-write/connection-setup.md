@@ -109,7 +109,7 @@ Because dual-write is in live synchronization mode, the data from Common Data Se
 
 The setup of a dual-write connection between an existing instance of a Finance and Operations app and a new or existing instance of a model-driven app in Dynamics 365 occurs in the Finance and Operation environment.
 
-1. Follow the instructions for [manual setup from Finance and Operations](fin-ops-setup.md) to establish the connection.
+1. Set up the connection from the Finance and Operations app.
 2. To sync the existing Common Data Service data to the Finance and Operations app, [bootstrap](bootstrap-company-data.md) the Common Data Service data by using a three-letter ISO company code.
 
 Because dual-write is in live synchronization mode, the data from Common Data Service automatically starts to flow to the Finance and Operations app.
