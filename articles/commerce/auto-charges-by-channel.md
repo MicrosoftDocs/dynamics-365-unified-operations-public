@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Enable and configure auto charges by channel of order creation
-description: This topic describes how to enable and configure auto charges by the channel of the order creation in Microsoft Dynamics 365 Commerce.
+description: This topic describes how to enable and configure auto charges by channel of order creation in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 manager: annbe
 ms.date: 03/06/2020
@@ -25,9 +25,9 @@ ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: 10.0.10
 ---
 
-# Enable and configure auto charges by the channel of order creation
+# Enable and configure auto charges by channel of order creation
 
-This topic describes how to enable and configure auto charges by the channel of order creation in Microsoft Dynamics 365 Commerce.
+This topic describes how to enable and configure auto charges by channel of order creation in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
