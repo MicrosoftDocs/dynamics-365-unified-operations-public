@@ -75,9 +75,9 @@ To define auto charges by channel in Commerce, follow these steps.
 1. Go to **Accounts receivable \> Charges setup \> Auto charges** . 
 1. Define auto charges at either the **header** level or **line** level, based on business requirements. 
 1. In the charges header, select **Retail channel code**  e.g. Table or Group.  By default this is set to **All**, which means charge rules are applied for all channels. 
-1. For group, make sure a **Retail channel charges group** is created that you can find under ** Retail and Commerce** > **Channel setup** > **Charges** > ** > Retail channel charge groups**
+1. For group, make sure a **Retail channel charges group** is created that you can find under **Retail and Commerce \> Channel setup \> Charges \> Retail channel charge groups**.
 1. For Table, you can select a specific channel, e.g. **San Francisco** store under **Retail channel relation** dropdown.  
-1. Go to **Retail and Commerce** > ** Retail and Commerce IT** > **Distribution schedule**.
+1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
 1. Run **1040 Products** , **1070 Channel configuration** , and **1110 Global configuration** CDX jobs. 
 	
 ![Dynamics 365 Commerce - Auto charges by channel](media/Auto-charges-line-charge-by-channel.png)
