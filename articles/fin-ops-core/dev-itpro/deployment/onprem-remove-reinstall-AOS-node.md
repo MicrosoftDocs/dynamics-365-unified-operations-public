@@ -135,6 +135,7 @@ Reference doc: <https://docs.microsoft.com/en-us/azure/service-fabric/service-fa
     > [!Note]
     > Ensure you have the comma added to the line above the new section.
 
+>   ```
 >   "fabricSettings": [
 >   {
 >   "name": "Setup",
@@ -154,6 +155,7 @@ Reference doc: <https://docs.microsoft.com/en-us/azure/service-fabric/service-fa
 >   ]
 >   }
 >   ]
+>   ```
 
 1. In the config file, remove the node from "Nodes" section, see example below the AOS1 node was removed.
 
