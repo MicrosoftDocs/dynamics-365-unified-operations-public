@@ -35,8 +35,6 @@ ms.dyn365.ops.version: Platform Update 23
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/private-preview-banner.md)]
-
 > [!IMPORTANT]
 > This feature is currently in public preview. This feature is comprised of the following components:
 >
