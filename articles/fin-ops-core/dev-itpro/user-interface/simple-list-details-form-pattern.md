@@ -143,7 +143,7 @@ Form: **ExchangeRate**
 
 ### Simple List and Details – Tree
 
-Form: **FiscalCalendars** 
+Form: **CaseCategorySetup** 
 
 [![Simple List and Details – Tabular Grid example](./media/sldTreeExample.png)](./media/sldTreeExample.png)
 
