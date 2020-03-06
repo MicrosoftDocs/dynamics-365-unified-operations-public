@@ -468,7 +468,7 @@
         items:
         - name: Custom help overview
           href: help/custom-help-overview.md
-        - name: Deploying help websites on Azure
+        - name: Deploying help websites
           href: help/custom-help-websites.md
         - name: Language and locale descriptors in across product and help
           href: help/language-locale.md

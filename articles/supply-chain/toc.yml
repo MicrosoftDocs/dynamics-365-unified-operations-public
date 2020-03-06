@@ -88,8 +88,8 @@
           href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/supply-chain/toc.json
         - name: Connect the Help system
           href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/supply-chain/toc.json
-        - name: Deploy custom help
-          href: ../fin-ops-core/dev-itpro/help/deploy.md?toc=/dynamics365/supply-chain/toc.json    
+        - name: Custom help overview
+          href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/supply-chain/toc.json    
         - name: View and export field descriptions
           href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/supply-chain/toc.json
         - name: Task Recorder
