@@ -60,7 +60,9 @@ These topics describe mapping between concepts in Finance and Operations applica
 
 + [Integrated customer master](customer-mapping.md)
 + [Unified product experience](product-mapping.md)
-+ [Integrated sites and warehouses](sites-warehouses-mapping.md)
+
+    + [Integrated sites and warehouses](sites-warehouses-mapping.md)
+
 + [Integrated vendor master](vendor-mapping.md)
 
     + [Switch between vendor designs](vendor-switch.md)
