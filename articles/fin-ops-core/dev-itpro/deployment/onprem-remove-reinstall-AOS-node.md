@@ -88,7 +88,7 @@ Reference doc: <https://docs.microsoft.com/en-us/azure/service-fabric/service-fa
 
 1. In the Service Fabric Explorer, click on Cluster and made a note of the cluster version. In this example, it is 6.5.676.9590, as show in the screenshot below.
 
->    ![](media/fe0c857aefd3a1174df38f8e0c644667.png)
+    ![](media/fe0c857aefd3a1174df38f8e0c644667.png)
 
 1. On one of the Orchestrator servers, open File Explorer and ensure that you have enabled the View options “File name extensions” and “Hidden items”
 
