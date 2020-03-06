@@ -133,19 +133,19 @@ The verification checklist shows the steps for manually verifying that the form 
 
 Form: **PaymTerm** 
 
-[![Simple List and Details – List Grid example](./media/simplelistanddetails2-1024x558.png)](./media/simplelistanddetails2.png)
+[![Simple List and Details – List Grid example](./media/sldSimpleListExample.png)](./media/sldSimpleListExample.png)
 
 ### Simple List and Details – Tabular Grid
 
 Form: **ExchangeRate** 
 
-[![Simple List and Details - Tabular Grid example](./media/simplelistanddetails3-1024x557.png)](./media/simplelistanddetails3.png)
+[![Simple List and Details - Tabular Grid example](./media/sldGridExample.png)](./media/sldGridExample.png)
 
 ### Simple List and Details – Tree
 
 Form: **FiscalCalendars** 
 
-[![Simple List and Details – Tabular Grid example](./media/simplelistanddetails4-1024x507.png)](./media/simplelistanddetails4.png)
+[![Simple List and Details – Tabular Grid example](./media/sldTreeExample.png)](./media/sldTreeExample.png)
 
 ## Appendix
 ### Frequently asked questions
