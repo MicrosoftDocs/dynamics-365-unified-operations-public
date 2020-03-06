@@ -5,7 +5,7 @@ title: Generate HTML files based on Microsoft's GitHub repos
 description: This topic describes the HtmlFromRepoGenerator tool in the custom help toolkit for Finance and Operations apps. 
 author: edupont04
 manager: AnnBe
-ms.date: 02/24/2020
+ms.date: 03/06/2020
 ms.topic: article
 ms.service: dynamics-ax-platform
 
@@ -51,11 +51,13 @@ HtmlFromRepoGenerator.exe provides functionality that supports the creation of c
     The client uses other language descriptors than the corresponding GitHub repos. For localized Help to be called, the language indicators in the content from GitHub must be changed so that they match how the client understands languages.
 - Generate HTML files that can be used for publishing.
 
-    The HTML files are in the **d365F-O** subfolder.
+    The HTML files are in the **d365F-O** subfolder. The files are generated based on templates in the mstemplate.zip file that you also find in the GitHub repo <!--TODO -->. These templates are based on DocFx custom templates that you can customize for your own website. For more information, see [Introduction to DocFX Template System](https://dotnet.github.io/docfx/tutorial/intro_template.html).
 
 - Compare a localized Microsoft repo to the en-US repo to identify discrepancies and update the links accordingly.
 
 In the first version of the toolkit, this tool had the name ConsoleApp.exe but is now renamed.  
+
+### Syntax
 
 Here is the syntax for HtmlFromRepoGenerator.exe:  
 
@@ -82,7 +84,7 @@ The following additional parameters are used when the tool is run against the lo
 |------------|-------------|
 |EnRepo|Specifies the URL of the en-US repo. This parameter is not required if you run the tool based on a previously cloned repo. The Microsoft documentation repo URL for English (US) is [https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-public](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-public).|
 |EnOut|Specifies the folder where the en-US repo exists, or the folder that it must be cloned to. This folder must not already exist if you run the tool based on a previously cloned repo.|
-|Lng|Specifies the language value to use for `ms.locale` metadata in the generated HTML files. The value must correspond to the value that is specified in the Finance and Operations client’s language settings. If this parameter is not set, the tool uses en-US. For more information, see [Language and locale descriptors in across product and Help](language-locale.md).|
+|Lng|Specifies the language value to use for `ms.locale` metadata in the generated HTML files. The value must correspond to the value that is specified in the Finance and Operations client's language settings. If this parameter is not set, the tool uses en-US. For more information, see [Language and locale descriptors in across product and Help](language-locale.md).|
 |Rtl|Set this parameter if the language uses right-to-left (RTL) formatting. Examples of RTL languages include Arabic and Hebrew.|
 
 ## Examples
