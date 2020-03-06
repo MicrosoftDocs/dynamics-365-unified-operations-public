@@ -86,21 +86,31 @@ To define auto charges by channel in Commerce, follow these steps.
 	
 ![Dynamics 365 Commerce - Auto charges by channel](media/Auto-charges-line-charge-by-channel.png)
 
-## Example scenarios
+## Example scenario
 
-The following two example scenarios outline the steps to configure a product with recycling fees when it is sold through San Francisco brick and mortar channel and behavior of the auto-charges in the POS application.
+The following example scenario outlines the steps to configure a product with recycling fees when it is sold through a San Francisco brick and mortar channel, and also shows the behavior of the auto charges in the point of sale (POS) application.
 
-In this scenario, the organization has defined charges code called **RECYCLE** with the following details: 
+In this scenario, the organization has defined charges code called **RECYCLE** as shown in the following image. 
 
 ![Dynamics 365 Commerce - Auto charges by channel](media/Auto-charges-charge-code.png)
 
-An auto charge is crated at line level where account code is set to **All**, Item code is set to **Table** and Item relation is set to product id 91001 , Mode of delivery code is set to **All**,  Retail channel code is set to **Table**, and Retail channel relation is set to **San Francisco** store. 
+An auto charge has been created at the line level where:
+    - **Account code** is set to **All**.
+    - **Item code** is set to **Table**.
+    - **Item relation** is set to product ID **91001**.
+    - **Mode of delivery code** is set to **All**.
+    - **Retail channel code** is set to **Table**.
+    - **Retail channel relation** is set to **San Francisco** store. 
 
-Auto-charges line is created where current is set to **USD**, Charges code is set to **RECYCLE**, Category is set to **Fixed** and Charges are set to **$6.25**.
+An auto charges line has been created where:
+    - **Currency** is set to **USD**.
+    - **Charges code** is set to **RECYCLE**.
+    - **Category** is set to **Fixed**.
+    - **Charges** is set to **$6.25**.
 
 ![Dynamics 365 Commerce - Auto charges by channel](media/Auto-charges-recyclingfee-line-fee.png)
 
-A sales order is created in **San Francisco** store channel using Dynamics 365 Commerce's POS application. Product id **91001** is added to the sales orders. Notice **CHARGES** in the lines are with **$6.25**.  Selecting **Transaction options** > **Charges** and then **Manage charges** will show **Recycling fee** charges code and it's description. 
+A sales order is created in **San Francisco** store channel using Dynamics 365 Commerce's POS application. Product ID **91001** is added to the sales orders. Notice **CHARGES** in the lines are with **$6.25**.  Selecting **Transaction options** > **Charges** and then **Manage charges** will show **Recycling fee** charges code and it's description. 
 
 ![Dynamics 365 Commerce - Auto charges by channel](media/pos-auto-charges-recyclingfee-line-fee.png)
 
