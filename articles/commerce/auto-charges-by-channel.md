@@ -95,6 +95,7 @@ In this scenario, the organization has defined charges code called **RECYCLE** a
 ![Dynamics 365 Commerce - Auto charges by channel](media/Auto-charges-charge-code.png)
 
 An auto charge has been created at the line level where:
+
     - **Account code** is set to **All**.
     - **Item code** is set to **Table**.
     - **Item relation** is set to product ID **91001**.
@@ -103,6 +104,7 @@ An auto charge has been created at the line level where:
     - **Retail channel relation** is set to **San Francisco** store. 
 
 An auto charges line has been created where:
+
     - **Currency** is set to **USD**.
     - **Charges code** is set to **RECYCLE**.
     - **Category** is set to **Fixed**.
