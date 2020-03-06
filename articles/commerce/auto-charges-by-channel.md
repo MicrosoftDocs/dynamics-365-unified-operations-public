@@ -31,7 +31,7 @@ This topic describes how to enable and configure auto charges by the channel of 
 
 ## Overview
 
-You may have scenarios like applying recycling fees for group of products that are sold in all or some of the stores in California state, USA. The "Enable filter auto charges by channel" feature switch allows you to enable auto charges by channel. This feature is available in Dynamics 365 Commerce in version 10.0.10 or later. 
+You may have scenarios where you need to apply recycling or other fees for a group of products that are sold in all or some of the stores in a particular state (for example, California). The "Enable filter auto charges by channel" feature switch allows you to enable auto charges by channel. This feature is available in Dynamics 365 Commerce in version 10.0.10 or later. 
 
 > [!NOTE]
 > The auto charges by channel feature only works when the advanced auto charges feature is enabled. For information on how to enable advanced auto charges, see [Omni-channel advanced auto charges](omni-auto-charges.md). 
@@ -48,7 +48,7 @@ To enable filter auto charges by channel in Commerce, follow these steps.
 1. On the action pane, select **Run now** to propagate the configuration changes. 
 
 > [!WARNING]
-> If you decide to deactivate the **Enable filter auto charges by channel** switch after using the feature, the **Retail channel relation** drop down menu under **Auto charges** will disappear and you will lose all existing configurations. If removing **Retail channel relation** configurations would result in duplicate auto charges rules, then deactivation will fail. Please review all auto-charges rules and make any necessary changes prior to deactivating.
+> If you decide to deactivate the **Enable filter auto charges by channel** switch after using the feature, the **Retail channel relation** drop down menu under **Auto charges** will disappear and you will lose all existing configurations. If removing **Retail channel relation** configurations would result in duplicate auto charges rules, then deactivation will fail. Please review all auto charges rules and make any necessary changes prior to deactivating.
 
 ## Configure organization hierarchy purpose
 
