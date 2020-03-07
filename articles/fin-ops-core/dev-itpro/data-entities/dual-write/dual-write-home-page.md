@@ -60,6 +60,9 @@ These topics describe mapping between concepts in Finance and Operations applica
 
 + [Integrated customer master](customer-mapping.md)
 + [Unified product experience](product-mapping.md)
+
+    + [Integrated sites and warehouses](sites-warehouses-mapping.md)
+
 + [Integrated vendor master](vendor-mapping.md)
 
     + [Switch between vendor designs](vendor-switch.md)
@@ -69,13 +72,12 @@ These topics describe mapping between concepts in Finance and Operations applica
     + [Integrated ledger](ledger-mapping.md)
     + [Integrated tax master](tax-mapping.md)
 
-+ [Integrated sites and warehouses](sites-warehouses-mapping.md)
 + [Prospect to cash in dual-write](dual-write-prospect-to-cash.md)
 + [In-house assets for servicing](in-house-assets.md)
 + [Integrated worker, job, and position](integrated-hr.md)
-+ [Support for Field Service solutions and Project Service Automation solutions](field-service-project-service-automation.md)
 
 ## Support
 
++ [Support for Field Service solutions and Project Service Automation solutions](field-service-project-service-automation.md)
 + [Initial synchronization choices and administration views](initial-sync.md)
 + [Troubleshooting data integration](dual-write-troubleshooting.md)
