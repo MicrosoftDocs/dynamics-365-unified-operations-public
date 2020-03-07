@@ -1,14 +1,6 @@
 # Experience Dynamics 365 supply chain management price engine on-demand
 
-
-This topic discusses how to use the Dual-Write Pricing functionality when
-creating a sales quote or sales orders in Dynamics 365 for Sales.
-
-Dynamics 365 for Sales does not have the amount of functionality and business
-logic around pricing and trade agreements that Dynamics 365 for Supply Chain
-Management has. The pricing functionality allows Dual-Write users to leverage
-the rich functionality and setup in Supply Chain Management around pricing and
-surface that in Sales.
+Businesses rely on D365 Supply Chain for storing and handling prices and discounts required for the business due to its robust infrastructure with functions like trade agreements, pricelist, customer loyalty, promotions & discounts and so on. It has a pricing engine that uses complex rules and derives best price for the given quote/order context. Now, this pricing engine is exposed on Quote  and Order forms such that, Customer Engagement application users can either choose to rely on pricelist based static price or invoke the pricing engine for best prices through a single button click without logging into Supply Chain application.
 
 ### Using the Functionality
 
@@ -24,7 +16,7 @@ navigate to **Sales \> Orders.**
 -   In the top menu you will see a button that is labeled ‘**Price Order’** (the
     button will say ‘**Recalculate**’ for existing orders). Press this button
 
->   *New Order:*
+*New Order:*
 
 ![](media/6a8d5d4fed99cbfce361ae22260f4ac9.png)
 
