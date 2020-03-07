@@ -36,7 +36,7 @@ ms.search.validFrom: 2019-07-15
 
 [!include [preview-banner](../../includes/preview-banner.md)]
 
-It's typical for customer records to be mastered in more than one application. For example, sales activity can bring in commercial customer records through a Sales application, and e-Commerce or retail sales can bring in customer records through a Finance and Operations application. Regardless of where the customer record originates, it's integrated behind the scenes across application boundaries and infrastructure differences. Integrated customer mastering helps handle multi-mastering scenarios and provides a comprehensive view of the customer to the Dynamics 365 application suite.
+Customer data can be mastered in more than one Dynamics 365 application. For example, sales activity by sales agent can bring in customer data through a D365 Sales application, and e-Commerce or retail sales activity can bring in customer data through a D365 Commerce application. Regardless of where the customer data originates, it is integrated behind the scenes. Integrated customer master helps businesses to have the flexibility to master customer data in any Dynamics 365 application but provides a comprehensive view of the customer to the Dynamics 365 application suite.
 
 ## Customer data flow
 
@@ -63,7 +63,6 @@ Customer groups             | msdyn_customergroups            | This template sy
 Customer payment method     | msdyn_customerpaymentmethods    | This template synchronizes customer payment method information.
 Customers V3                | accounts                        | This template synchronizes customer master information for commercial and organizational customers.
 Customers V3                | contacts                        | This template synchronizes customer master data for consumers and end users.
-Loyalty card                | msdyn_loyaltycards              | This template synchronizes customer loyalty card information.
 Name affixes                | msdyn_nameaffixes               | This template synchronizes name affixes reference data, for both customers and vendors.
 Payment day lines CDS V2    | msdyn_paymentdaylines           | This template synchronizes payment day lines reference data, for both customers and vendors.
 Payment days CDS            | msdyn_paymentdays               | This template synchronizes payment days reference data, for both customers and vendors.
