@@ -2,10 +2,10 @@
 # required metadata
 
 title: Display discounts in POS 
-description: This document explains how Dynamics 365 Commerce enables the sales associates to learn about the promotions and make it easy for them to use these promotions for cross-sell and upsell motions.
+description: This document explains how Dynamics 365 Commerce enables sales associates to learn about promotions and helps them use the promotions for cross-sell and upsell motions.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 03/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-Commerce
@@ -30,38 +30,41 @@ ms.dyn365.ops.version: Application update 10.0.10
 
 ---
 
-# Discounts in Point of Sale
+# Display discounts in POS
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-Promotions aka. discounts play an important role in motivating the customers in making purchasing decisions. Unsurprisingly, holidays such as Thanksgiving, Christmas, Black Friday etc. result in the highest amount of sales as the entire retail market is flooded with enticing promotions. Thus, if the store associates know and understand the promotions, they can easily leverage these promotions to upsell and cross sell items. This document explains how Dynamics 365 Commerce enables the sales associates to learn about the promotions and make it easy for them to use these promotions for cross sell and up-sell motions.
-## **Learn about the discounts in the store**
+Promotions play an important role in motivating customers when making purchasing decisions. Holidays can result in the highest amount of sales for retailers, as the entire retail market is flooded with enticing promotions and discounts. If a store associate knows and understands the promotions that are available, the associate can easily leverage the promotions to upsell and cross-sell items. This document explains how Dynamics 365 Commerce enables sales associates to learn about promotions and helps them use the promotions for cross-sell and upsell motions.
 
-Traditionally, every day before the store opens, the sales associates huddle up where the store manager provides the details about the new discounts applicable to the store. However, this method is clearly inefficient as the similar information needs to be repeated for the associates joining in different shifts. To solve this problem, we have introduced a new operation named "View all discounts" which displays all the discounts that are running in the store. Just like other operations, the "View all discounts" can be mapped to a button and can be placed on the Welcome screen or the Transaction screen. Refer the image below showcasing the "View all discounts" page. 
- ![View all discounts](./media/View_all_discounts.png "Learn about discounts in POS")
+## Learn about store discounts
+
+Commerce includes an operation called "View all discounts" that displays all the discounts that are currently running in a store. The "View all discounts" operation can be mapped to a button in the point of sale (POS), and the button can be placed on the **Welcome**  or the **Transaction** screens. The image below is of the **All discounts** page.
+
+ ![All discounts](./media/View_all_discounts.png "Learn about discounts in POS")
 
 
-To display the discounts, the system looks for all the discounts which match one or more of the following conditions:
-	- The price group of the discount matches the price group of the store
-	- The price group of the discount is mapped to an affiliation or loyalty program
-	- The price group of the discount is mapped to a catalog which is associated to the store
+To display discounts, the system looks for all the discounts that match one or more of the following conditions:
 
-Only some of the coupon based discounts, are shown in this view because, generally retailers create thousands to coupons and corresponding discounts which might be for unique customers, so we don't want this view to show any customer specific discount. Only those coupon based discounts are shown for which a new configuration "Apply without a coupon code" is marked as Yes. This configuration is available on each coupon header and if this is turned On, then the cashiers will be able to apply this coupon without typing or scanning any coupon code/barcode. This enables the scenarios where retailers want to enable the cashiers to give additional discounts to the customers for scenarios such as customer appeasement, product defect discount etc. Traditionally, this was achieved by distributing printed coupon codes or barcodes to the cashiers, but with this feature, the cashiers can press a "Apply coupon" button which will automatically apply the coupon to the transaction. In case multiple coupons exist for a coupon header, then the system will automatically choose the first active coupon on the transaction.
-Using the "View all discounts" view, the sales associates can also search the discounts by keywords. This keyword search looks in the discount name and discount description fields. Lastly, they can also filter the discounts by whether a discount requires a coupon code or not. 
+	- The price group of the discount matches the price group of the store.
+	- The price group of the discount is mapped to an affiliation or loyalty program.
+	- The price group of the discount is mapped to a catalog that is associated to the store.
+
+Only some coupon-based discounts are shown in this view because in general, retailers create thousands of coupons and corresponding discounts for unique customers, and this view is not indended to show customer-specific discounts. Coupon-based discounts are shown only if **Apply without a coupon code** is enabled. The configuration is available on each coupon header. If enabled, cashiers can apply the coupon without typing or scanning any coupon code or barcode. Using this configuration enables scenarios such as when cashiers want to give additional discounts to customers, such as for customer appeasement, product defects, etc. Instead of having to distribute printed coupon codes or barcodes to cashiers, cashiers can press the **Apply coupon** button. The way, the coupon is automatically applied to the transaction. If multiple coupons exist for a coupon header, the system automatically chooses the first active coupon on the transaction.
+
+On the **All discounts** page, sales associates can also search discounts by keywords. The keyword search looks in the discount name and discount description fields. Sales associates can also filter discounts by whether a discount requires a coupon code. 
 
 ## Upsell and cross-sell using discounts
-Multiline discounts such as quantity discounts, Mix and Match, and threshold discounts are a great way to motivate the customer to buy additional products and get greater discounts. This in turn helps increase the basket size and hence the revenue for the retailers. These discounts are generally publicized on the ecommerce websites, social media, and as banners in the store. Even with all these measures, often the customers miss to take benefit of these promotions because they did not know about the promotion and the sales associate did not inform them at the time of checkout. To make it easy for the sales associates to find out what promotions are applicable on a selected line or on the entire cart, we have introduced a new operation named "View available discounts". The button corresponding to this operation can be placed on any button grid, however, we recommend this to be placed on the button grid of the transaction screen. The sales associate can select a transaction line and click the "View available discounts" to view all the available discounts on the selected line or click on another tab to view discounts applicable on the entire transaction. Refer the image "Available_disconts.png" below showcasing the "View available discounts" dialog. 
- ![View available discounts](./media/Available_discounts.PNG "View available discounts in POS")
+Multi-line discounts such as quantity discounts, mix and match, and threshold discounts are a great way to motivate customers to buy additional products to get greater discounts. This, in turn, helps increase customer cart size and retailer revenue. These discounts can be publicized on e-commerce websites, social media, and on banners in the store. Even with all these measures, customers may miss the opportunity to take advantage of the promotions. To make it easy for sales associates to find out what promotions are applicable on a selected line or on the entire cart, retailers can place the button for the "View all discounts" operation on any button grid in POS. We recommend that retailers place the button on the button grid of the **Transaction** screen. That way, a sales associate can select a transaction line and click the button to display all the available discounts on the selected line, or click another tab to display discounts applicable on the entire transaction. 
 
-This view displays only those discounts which do not compete with any of the applied discounts. This is to ensure that if the associate informs the customers about a discount and the customer takes the required action e.g. buy one more item to get 10% off, then, if the customer buys one more item, then the discount definitely gets applied on the transaction. Additionally, only those coupon based discounts are shown for which the configuration "Apply without a coupon code" is marked as Yes. Considering the most simple scenario, where all the discounts are of the same priority, the discount concurrency mode is "Compounded" and the Discount concurrency control is set to “Best price and compound within priority, never compound across priorities”, then the available discount view will show all the available discounts for a product since all the discounts compound and thus do not compete with each other. 
+The view mentioned above displays only the discounts which do not compete with any of the applied discounts. This is to ensure that if an associate informs a customer about a discount and the customer takes the required action (for example, buy one more item to get 10% off), the discount definitely gets applied to the transaction. As mentioned above, coupon-based discounts are only shown when **Apply without a coupon code** is enabled. For a simple scenario where all discounts are of the same priority, the discount concurrency mode is "Compounded", and the discount concurrency control is set to “Best price and compound within priority, never compound across priorities”, the available discount view shows all available discounts for a product. This is because all the discounts compound and do not compete with each other. 
 
-For **advanced scenarios**, where the discount concurrency mode is Best price or Exclusive, with two or more priorities the below visio diagrams show the logic of what discounts will be displayed in the "View available discount" view based on whether the discount concurrency control is set to "Best price and compound within priority, never compound across priorities" or "Best price only within priority, always compound across priority"
+For advanced scenarios, such as where the discount concurrency mode is "Best price" or "Exclusive" with two or more priorities, the diagrams below show the logic of which discounts are displayed. This is further affected by whether the discount concurrency control is set to "Best price and compound within priority, never compound across priorities" or "Best price only within priority, always compound across priority".
 
-For discount concurrency control as **"Best price and compound within priority, never compound across priorities"**, refer the below image. 
+The diagram below illustrates when the discount concurrency control is "Best price and compound within priority, never compound across priorities". 
 
-![Visio for Best price and compound within priority, never compound across priorities](./media/Model_1.png "Image for logic used in case of Best price and compound within priority, never compound across priorities").
+![Diagram for Best price and compound within priority, never compound across priorities](./media/Model_1.png "Image for logic used in case of Best price and compound within priority, never compound across priorities").
 
-For discount concurrency control as **"Best price only within priority, always compound across priority"**, refer the below image.
+This next diagram illustrates when the discount concurrency control is "Best price only within priority, always compound across priority".
 
-![Visio for Best price only within priority, always compound across priority](./media/Model_2.png "Image for logic used in case of Best price only within priority, always compound across priority").
+![Diagram for Best price only within priority, always compound across priority](./media/Model_2.png "Image for logic used in case of Best price only within priority, always compound across priority").
