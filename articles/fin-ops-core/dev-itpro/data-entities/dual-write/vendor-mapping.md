@@ -36,17 +36,17 @@ ms.search.validFrom: 2019-07-15
 
 [!include [preview-banner](../../includes/preview-banner.md)]
 
-The term *vendor* refers to a supplier organization or a sole proprietor that is part of the supply chain process, and that supplies goods for the business. Although *vendor* is an established concept in Finance and Operations apps, a vendor concept doesn't exist in other Dynamics 365 apps. Instead, some businesses overload the Account entity to store both customer information and vendor information. Other businesses use a custom vendor concept. Common Data Service integration supports both these designs. Therefore, you can enable either of the designs, depending on your business scenario.
+The term vendor refers to a supplier organization or a sole proprietor who supplies goods or services to the business. Vendor is an established concept in D365 Supply Chain. But Customer Engagement applications doesn’t have an explicit vendor concept and so, Account/Contact entity is overloaded to store vendor information. With integrated vendor master, an explicit vendor concept  is introduced in customer engagement applications. Businesses can either choose the new vendor concept or use Account/Contact entity for vendors. Dual-write supports both these designs. Therefore, you can enable either of the designs, depending on your business scenario.
+With both designs, the vendor data is integrated between Supply chain, Sales, Field Service and Power Portal applications and becomes available for Supply chain workflows like purchase requisition, purchase orders etc. 
 
-Integration of vendor data between Finance and Operations apps and other Dynamics 365 apps lets you multi-master the data. Regardless of where the vendor data originates, it's integrated behind the scenes across application boundaries and infrastructure differences. 
 
 ### Vendor data flow
 
-If you want to use other Dynamics 365 apps for vendor mastering, and you want to isolate vendor information from customer information, you can use the new vendor design.
+If you want to isolate the vendor information from Account or contact entities in Common Data Service, then you can use the *new vendor model*.
 
 ![Vendor data flow](media/dual-write-vendor-data-flow.png)
 
-If you want to use other Dynamics 365 apps for vendor mastering, and you want to continue to use the Account entity to store vendor information, you can use the new extended vendor design. In this design, extended vendor information, such as the vendor group and vendor posting profile, are stored in the vendor detail.
+If you want to continue to use the Account and contact entity for storing vendor information, then you can use the extended vendor design. But for that you need to configure the vendor workflows coming from dual-write application orchestration solution package. See how to ![switch between vendor designs](dw-vendor-switching.md)
 
 ![Extended vendor data flow](media/dual-write-vendor-detail.jpg)
 
