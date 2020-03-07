@@ -50,7 +50,8 @@ If you want to continue to use the Account and contact entity for storing vendor
 
 ![Extended vendor data flow](media/dual-write-vendor-detail.jpg)
 
-!Tip
+**Tip**
+
 If you are using power portals for self-serving vendors, the vendor information can directly flow to Finance and operations applications. 
 
 ## Templates
