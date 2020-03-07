@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Application update 10.0.10
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-Promotions play an important role in motivating customers when making purchasing decisions. Holidays can result in the highest amount of sales for retailers, as the entire retail market is flooded with enticing promotions and discounts. If a store associate knows and understands the promotions that are available, the associate can easily leverage the promotions to upsell and cross-sell items. This document explains how Dynamics 365 Commerce enables sales associates to learn about promotions and helps them use the promotions for cross-sell and upsell motions.
+Promotions play an important role in motivating customers making purchasing decisions. For example, holidays can result in the highest amount of sales for retailers, as the entire retail market is flooded with enticing promotions and discounts. If a store associate knows and understands the promotions that are available, the associate can easily leverage the promotions to upsell and cross-sell items. This document explains how Dynamics 365 Commerce enables sales associates to learn about promotions and helps them use the promotions for cross-sell and upsell motions.
 
 ## Learn about store discounts
 
