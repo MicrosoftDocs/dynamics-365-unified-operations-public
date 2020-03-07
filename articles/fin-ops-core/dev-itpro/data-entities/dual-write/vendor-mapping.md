@@ -46,11 +46,12 @@ If you want to isolate the vendor information from Account or contact entities i
 
 ![Vendor data flow](media/dual-write-vendor-data-flow.png)
 
-If you want to continue to use the Account and contact entity for storing vendor information, then you can use the extended vendor design. But for that you need to configure the vendor workflows coming from dual-write application orchestration solution package. See how to ![switch between vendor designs](dw-vendor-switching.md)
+If you want to continue to use the Account and contact entity for storing vendor information, then you can use the extended vendor design. But for that you need to configure the vendor workflows coming from dual-write application orchestration solution package. See how to [switch between vendor designs](vendor-switching)
 
 ![Extended vendor data flow](media/dual-write-vendor-detail.jpg)
 
-Vendor contact information resembles customer contact information. Behind the scenes, the contact person's information is stored and retrieved from the same entities.
+!Tip
+If you are using power portals for self-serving vendors, the vendor information can directly flow to Finance and operations applications. 
 
 ## Templates
 
