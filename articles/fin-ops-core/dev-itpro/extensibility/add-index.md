@@ -44,16 +44,3 @@ In the following illustration, an InventTable extension is used to define an ind
 
 > [!WARNING]
 > You should not use this approach to create unique indexes. This change is an intrusive change that might break the solutions of other independent software vendors (ISVs) if those solutions are deployed in the same environment. This capability will be removed in future platform releases.
-
-## Extend standard indexes
-
-You can extend standard indexes and add additional (included) columns but there are some conditions:
-
-+	The index is non-clustered.
-+	The index is not unique.
-
-The following constraints apply to extending a standard index:
-
-+	You cannot delete existing columns.
-+ You cannot change the order of the existing columns.
-+	You cannot disable standard indexes.
