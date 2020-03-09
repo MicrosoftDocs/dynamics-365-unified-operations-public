@@ -5,7 +5,7 @@ title: Advanced selection form pattern
 description: This article provides information about the Advanced Selection form pattern. This Dialog form pattern lets users filter and select items from a large, wide list. Like the List Panel pattern, this pattern should be used when the primary user task is to select a set of items.
 author: jasongre
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/09/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 29171
@@ -64,16 +64,9 @@ The verification checklist shows the steps for manually verifying that the form 
 ## Example
 Form: **ProcCategoryAddVendor** (Click **Procurement and sourcing** &gt; **Procurement categories**. On the **Vendors** FastTab, click **Add**.) 
 
+> [NOTE]
+> This form no longer utilizes this pattern; however, the image shows an example of what a typical Advanced selection form pattern looks like.
+
 [![Example of advanced selection](./media/advancedselectionexample.png)](./media/advancedselectionexample.png)
-
-## Appendix
-### Frequently asked questions
-
-This section will have answers to frequently asked questions that are related to this guideline/pattern.
-
-### Open issues
-
-None at this time
-
 
 
