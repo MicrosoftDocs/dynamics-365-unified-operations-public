@@ -49,7 +49,7 @@ In this naming convention:
 
 ## Examples
 
-```
+```xpp
 AtlQueryWHSLoadLines
 
 AtlQueryInventTransferOrderLines
@@ -65,7 +65,7 @@ Query classes should provide fluent setter methods to specify ranges for the que
 
 ### Example
 
-```
+```xpp
 loadLine = data.whs().loadLines().query().forSalesOrder(salesOrder).single();
 ```
 
@@ -84,7 +84,7 @@ In this naming convention, `<QueryRangeName>` is the name of the field that the 
 
 ### Examples
 
-```
+```xpp
 loadLine = data.whs().loadLines().query().forLoad(load).withInventQty(10).single();
 
 transferLine = data.invent().transferOrderLines().query().forTransferOrder(transferOrder).withInventDims([batch1]).single();

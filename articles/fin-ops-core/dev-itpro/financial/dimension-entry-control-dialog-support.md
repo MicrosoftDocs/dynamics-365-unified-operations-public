@@ -38,25 +38,29 @@ Describes the code pattern for putting a Dimension Entry control on a dialog.
 
 The code pattern to add Dimension Entry controls to dialogs has changed from Dynamics AX 2012. This is an example of the old model:
 
-    DimensionDefaultingControllerNoDS dimDefaultingController;
-    dimDefaultingController = DimensionDefaultingControllerNoDS::constructInGroupWithValues(true, true, true, 0, _formRun, financialDimensionGroup, "@SYS123456");
-    dimDefaultingController.setNonActiveValueTolerance(ErrorTolerance::Error);
-    dimDefaultingController.pageActivated();
-    dimDefaultingController.loadValues(dimensionAttributeValueSetId);
+```xpp
+DimensionDefaultingControllerNoDS dimDefaultingController;
+dimDefaultingController = DimensionDefaultingControllerNoDS::constructInGroupWithValues(true, true, true, 0, _formRun, financialDimensionGroup, "@SYS123456");
+dimDefaultingController.setNonActiveValueTolerance(ErrorTolerance::Error);
+dimDefaultingController.pageActivated();
+dimDefaultingController.loadValues(dimensionAttributeValueSetId);
+```
 
 In the current release, this code would be converted to:
     
-    //When you create a dialog
-    DialogField dimensionEntryField;
-    DimensionEntryControl dimensionEntryValues;
-    dimensionEntryField = DimensionEntryControlBuild::addToDialog(dialog, classstr(LedgerDimensionEntryController));
-    
-    //These lines should be executed after the dialog form is created (for example on “dialogPostRun()” or “postRun()”)
-    dimensionEntryValues = dimensionEntryField.control();
-    dimensionEntryValues.parmNonActiveValueErrorTolerance(ErrorTolerance::Error);
-    dimensionEntryValues.parmDisplayValues(true);
-    dimensionEntryValues.reactivate();
-    dimensionEntryValues.loadAttributeValueSet(dimensionAttributeValueSetId);
+```xpp
+//When you create a dialog
+DialogField dimensionEntryField;
+DimensionEntryControl dimensionEntryValues;
+dimensionEntryField = DimensionEntryControlBuild::addToDialog(dialog, classstr(LedgerDimensionEntryController));
+
+//These lines should be executed after the dialog form is created (for example on “dialogPostRun()” or “postRun()”)
+dimensionEntryValues = dimensionEntryField.control();
+dimensionEntryValues.parmNonActiveValueErrorTolerance(ErrorTolerance::Error);
+dimensionEntryValues.parmDisplayValues(true);
+dimensionEntryValues.reactivate();
+dimensionEntryValues.loadAttributeValueSet(dimensionAttributeValueSetId);
+```
 
 For the second parameter on `addToDialog`, choose the controller class that satisfies the requirements for your dialog.
 

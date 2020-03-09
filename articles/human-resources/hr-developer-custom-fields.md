@@ -2,7 +2,7 @@
 # required metadata
 
 title: Custom fields
-description: 
+description: You can add custom fields to pages in Dynamics 365 Human Resources. 
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020

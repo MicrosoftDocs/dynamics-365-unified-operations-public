@@ -39,7 +39,7 @@ This topic provides the steps that you need to follow if you want to make a back
 > [!IMPORTANT]
 > Do not create financial dimensions that have values that are not reusable or use one-to-one dimension value combinations. 
 > Do not create financial dimensions that have values that are not reusable or use one-to-one dimension value combinations. Views cannot be used as a source of dimension values for a DimAttribute. Although this may seem to work, it will cause MR to fall back to row-by-row processing in order to get the dimension fact data imported to the database. This results in extremely slow performance or broken reports. 
-
+>
 > The primary table that is to be used as a source of financial dimension data MUST have a unique natural key value of 30 characters or less, and that value MUST resolve to a single RECID within that table. The extended Name column can come from another source join (such as DirPartyTable or elsewhere) because it is used only for displaying additional context to the user and is not used to resolve uniqueness on natural key entry.
      
 Financial dimensions should be reusable values needed for transaction and analytical processes. These dimensions should represent sources of data that can provide high level of reuse across multiple transactions. Do not select a backing table that supplies identity data that represents high volatility when represented with other dimension values. This can increase storage and processing costs and negatively impact performance and analytical value.
@@ -84,13 +84,14 @@ The first step is to create a view in the same model as your backing table. Befo
 1. Enter **Name** in the **TitleField2** field in the **Properties** pane.
 1. Review the backing table properties and identify the config key it is using. On **View**, enter the same **Configuration key** as the backing table.
 
-  > [!IMPORTANT]
-  > Security access must be granted to non-admin users for the new view.
-  > - For releases 7.2 and earlier where over-layering is used - Search for **DimensionEssentials** and add it to the Project. Expand **DimensionEssentials**, right-click **Permissions**, and then select **New Permission**. In the **Properties** pane, set the **Access Level** to **Read**. Click **Security Privilege** and add the view under the **Permissions** node with an **Access Level** of **Read**. You may need to extend one of these into the model that you're using.
-  > - For releases 7.3 and later where extensions are used - Create a new Security Privilege in your custom model alongside the new view. Right-click the **Permissions** node, and choose **New Permission**. Enter the name of new DimAttribute[DimensionName] view created above in step 2 and set the **Access Level** to **Read**. Search for **Security Duty SysServerAXBasicMaintain**. Right-click and choose **Create extension**. Rename the extension as appropriate. Drag-and-drop the newly created **Security Privilege** into the **Privileges list**.  
+    > [!IMPORTANT]
+    > Security access must be granted to non-admin users for the new view.
+    > - For releases 7.2 and earlier where over-layering is used - Search for **DimensionEssentials** and add it to the Project. Expand **DimensionEssentials**, right-click **Permissions**, and then select **New Permission**. In the **Properties** pane, set the **Access Level** to **Read**. Click **Security Privilege** and add the view under the **Permissions** node with an **Access Level** of **Read**. You may need to extend one of these into the model that you're using.
+    > - For releases 7.3 and later where extensions are used - Create a new Security Privilege in your custom model alongside the new view. Right-click the **Permissions** node, and choose **New Permission**. Enter the name of new DimAttribute[DimensionName] view created above in step 2 and set the **Access Level** to **Read**. Search for **Security Duty SysServerAXBasicMaintain**. Right-click and choose **Create extension**. Rename the extension as appropriate. Drag-and-drop the newly created **Security Privilege** into the **Privileges list**.  
        
 14. Right-click **View** and select **View Code**. Add the following code to the view. This will register it in the dimension framework. Here is an example using the view created for CustTable.
-      ```
+
+      ```xpp
       [SubscribesTo(classstr(DimensionEnabledType),
       delegatestr(DimensionEnabledType,
       registerDimensionEnabledTypeIdentifiersDelegate))]
@@ -100,6 +101,7 @@ The first step is to create a view in the same model as your backing table. Befo
          _dimensionEnabledType.registerViewIdentifier(tablestr(DimAttribute**CustTable**));
       }
       ```
+
 15. Select **Microsoft Dynamics 365** and click **Options**. Select **Best Practices**. Select your model and then scroll until you find
     **Microsoft.Dynamics.AX.Framework.ViewRules/ViewDimensionEnabledTypeChecker**. Verify that the rule and its children are selected.
 16.  Build and then synchronize the view.
@@ -108,10 +110,12 @@ The first step is to create a view in the same model as your backing table. Befo
 
 At this point you should be able to run the following query in SQL Server Management Studio to ensure that it's pulling the correct data. Here is an abbreviated example using the view created for CustTable.
 
-      select * from DIMATTRIBUTECUSTTABLE
+```sql
+select * from DIMATTRIBUTECUSTTABLE
+```
     
 
-| KEY_   | VALUE    | DATA AREA ID | PARTITION | RECID   | NAME           | PARTITION #2 |
+| KEY   | VALUE    | DATA AREA ID | PARTITION | RECID   | NAME           | PARTITION #2 |
 |-------------|--------------|----------------|---------------|-------------|--------------------|------------------|
 | 22565425322 | US\_SI\_0129 | ussi           | 5637144576    | 22565425322 | Adventure Services | 5637144576       |
 | 22565424579 | US\_SI\_0128 | ussi           | 5637144576    | 22565424579 | Alpine Electronics | 5637144576       |
@@ -121,7 +125,7 @@ At this point you should be able to run the following query in SQL Server Manage
 
 To integrate with the dimensions framework when deleting or renaming the natural key of the backing table, you must write custom code on the backing table's delete method, and on either the update or renamePrimaryKey method. If your table blocks updates of the natural key, you will need to use the renamePrimaryKey override. If it does not, then you can put the code in the update method. Here is an example from CustTable.
 
-```
+```xpp
 public void delete()
 {
     if (!DimensionValidation::canDeleteEntityValue(this))
@@ -153,7 +157,9 @@ public void renamePrimaryKey()
 
 Because the list of entities that can be consumed as a dimension are cached on the server, the creation of a new entity will not appear in the list of existing entities until a call to clear the caches is performed, or until both the client and the server are restarted. To clear the caches and have the new view appear immediately, you must execute the following line of code within a runnable class.
 
-      DimensionCache::clearAllScopes();
+```xpp
+DimensionCache::clearAllScopes();
+```
 
 ## Step 5: Verify that the dimension appears in the Use Value From lookup
 
@@ -175,23 +181,25 @@ Because the **OMOperatingUnitType** is backed by the **OMOperatingUnit** table, 
 
 If you also want to create an data entity for your new entity, and that entity has a reference to default dimensions, add this code to the persistEntity() method.
 
-```
+```xpp
 if (_entityCtx.getDatabaseOperation() == DataEntityDatabaseOperation::Insert)
 {
-     this.<Your entity ‘private’ RecId Dimension field> = DimensionDefaultResolver::checkAndCreateSelfReference(tablenum(<Your backing table>), this.<Your entity Key field>, this.<Your entity ‘public’ DisplayValue field>);
+    this.<Your entity ‘private’ RecId Dimension field> = DimensionDefaultResolver::checkAndCreateSelfReference(tablenum(<Your backing table>), this.<Your entity Key field>, this.<Your entity ‘public’ DisplayValue field>);
 }
-                                                                                                
-e.g.
+```                                                                                            
+**Example**
 
+```xpp
 public void persistEntity(DataEntityRuntimeContext _entityCtx)
 {
-     if (_entityCtx.getDatabaseOperation() == DataEntityDatabaseOperation::Insert)
-     {
-          this.DefaultDimension = DimensionDefaultResolver::checkAndCreateSelfReference(tablenum(BankAccountTable), this.BankAccountId, this.DefaultDimensionDisplayValue);
-     }
+    if (_entityCtx.getDatabaseOperation() == DataEntityDatabaseOperation::Insert)
+    {
+        this.DefaultDimension = DimensionDefaultResolver::checkAndCreateSelfReference(tablenum(BankAccountTable), this.BankAccountId, this.DefaultDimensionDisplayValue);
+    }
 
-     super(_entityCtx);
+    super(_entityCtx);
 }
 ```
+
 > [!NOTE]
 > This ensures that if you also want the dimension to use itself as a default dimension value, the information is created in the correct sequence.

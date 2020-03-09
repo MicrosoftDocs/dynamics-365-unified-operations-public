@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customer credit management
-description: 
+description: Customer credit management allows you to manage credit limits and control the flow of sales orders through the posting process based on credit rules that you create.
 author: mikefalkner
 manager: AnnBe
 ms.date: 09/04/2019

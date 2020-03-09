@@ -3,7 +3,7 @@
 
 title: Self-service deployment FAQ
 description: This topic provides answers to some frequently asked questions about self-service deployment.
-author: sarvanisathish
+author: rashmansur
 manager: AnnBe
 ms.date: 09/20/2019
 ms.topic: article
@@ -21,7 +21,7 @@ ms.search.scope: Operations
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global 
 # ms.search.industry: 
-ms.author: sarvanis
+ms.author: rashmim
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
 

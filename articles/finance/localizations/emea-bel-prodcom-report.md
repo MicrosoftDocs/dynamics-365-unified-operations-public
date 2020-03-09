@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up and maintain PRODCOM
-description: This topic explains how to set up and maintain PRODCOM in Microsoft Dynamics 365 Financ. 
+description: This topic explains how to set up and maintain PRODCOM in Microsoft Dynamics 365 Finance. 
 author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017

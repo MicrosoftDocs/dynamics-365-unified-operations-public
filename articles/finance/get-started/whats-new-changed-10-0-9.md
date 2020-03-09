@@ -48,6 +48,8 @@ The following features are included in this release. The feature titles link to 
  
  - [Vendor bidding – RFQ questions from vendors and summarized responses](https://docs.microsoft.com/business-applications-release-notes/april19/dynamics365-finance-operations/vendor-bidding)
  
+ - [Credit management](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/credit-management)
+ 
  - [Extended Italian localization: separate accounts for credit notes](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-separate-accounts-credit-notes)
  
  - [Extended Italian localization: sales invoice lines sorting by packing slips](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-sales-invoice-lines-sorting-packing-slips)
@@ -87,7 +89,7 @@ Check out the [Dynamics 365: 2020 release wave 1 plan](https://docs.microsoft.co
 
 ### Removed and deprecated features
 
-The [Removed or deprecated features](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
+The [Removed or deprecated features](removed-deprecated-features-finance.md) topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.

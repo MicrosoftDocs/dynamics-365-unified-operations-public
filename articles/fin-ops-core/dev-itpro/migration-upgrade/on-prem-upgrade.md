@@ -272,11 +272,11 @@ An overview of each path is given below:
 
     c.  Execute
 
-        A. AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml
+       1. `AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml`
 
-        B. AxUpdateInstaller.exe import -runbookfile=upgrade.xml
+       2. `AxUpdateInstaller.exe import -runbookfile=upgrade.xml`
 
-        C. AxUpdateInstaller.exe execute -runbookid=upgrade
+       3. `AxUpdateInstaller.exe execute -runbookid=upgrade`
 
 9.  If you have any application extensions or customizations install them now into the VHD, otherwise the upgrade process will remove any data related to customizations. Check with your ISV or VAR if you need to prepare your environment in any way before the upgrade.
 

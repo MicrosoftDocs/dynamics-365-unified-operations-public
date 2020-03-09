@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure life event types
-description: 
+description: Microsoft Dynamics 365 Human Resources uses life event types to define events where it is valid to update employee benefits enrollment.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020

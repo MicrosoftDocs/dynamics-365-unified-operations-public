@@ -2,7 +2,7 @@
 # required metadata
 
 title: Hazardous materials
-description: This topic provides information about hazardous material documents and infomation that is stored in your enviornment.
+description: This topic provides information about hazardous material documents and information that is stored in your environment.
 author: lachlancashMS
 manager: AnnBe
 ms.date: 01/10/2020

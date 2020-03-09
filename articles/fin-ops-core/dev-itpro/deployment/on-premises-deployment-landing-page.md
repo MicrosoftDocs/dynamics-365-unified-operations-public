@@ -3,9 +3,9 @@
 
 title: On-premises deployment home page
 description: This topic provides information and links to content about on-premises deployments.
-author: kfend
+author: sericks007
 manager: AnnBe
-ms.date: 11/04/2019
+ms.date: 03/04/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -24,7 +24,7 @@ ms.custom: 55651
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kfend
+ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 
@@ -60,6 +60,7 @@ You can deploy Dynamics 365 Finance + Operations (on-premises). When you choose 
 - [Client internet connectivity](../user-interface/client-disconnected.md)
 - [Apply updates to on-premises deployments](apply-updates-on-premises.md)
 - [Redeploy on-premises environments](redeploy-on-prem.md)
+- [Reuse the same AD FS instance for multiple environments](onprem-reuseadfs.md)
 
 ## Commerce
 - [Commerce capabilities that are available in on-premises deployments](../../../retail/retail-onprem.md)
@@ -76,6 +77,6 @@ You can deploy Dynamics 365 Finance + Operations (on-premises). When you choose 
 - [Certificate rotation](certificate-rotation-on-prem.md)
 - [On-premises diagnostics](on-premises-diagnostics.md)
 - [Features not implemented in on-premises deployments](../../fin-ops/get-started/features-not-implemented-on-prem.md)
-- [ReRemoved or deprecated features for Finance and Operations](../migration-upgrade/deprecated-features.md)
+- [Removed or deprecated features for Finance and Operations](../migration-upgrade/deprecated-features.md)
 - [Software lifecycle policy and on-premises releases](../migration-upgrade/on-prem-version-update-policy.md)
  

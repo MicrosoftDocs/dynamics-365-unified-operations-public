@@ -22,6 +22,8 @@
           href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?toc=/dynamics365/commerce/toc.json
         - name: Apply updates to cloud environments
           href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
+        - name: Apply updates to on-premises deployments
+          href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/commerce/toc.json
         - name: Configure service updates
           href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/commerce/toc.json
         - name: Pause service updates
@@ -84,6 +86,8 @@
           items:
           - name: What's new or changed in Commerce home page
             href: get-started/whats-new-home-page.md
+          - name: Commerce version 10.0.10 (May 2020)
+            href: get-started/whats-new-commerce-10-0-10.md
           - name: Commerce version 10.0.9 (April 2020)
             href: get-started/whats-new-10-0-9.md
           - name: Commerce version 10.0.8 (February 2020)
@@ -336,6 +340,8 @@
             href: pos-operations.md
           - name: Device activation of a customized Modern POS
             href: dev-itpro/retail-POS-activation-changes.md
+          - name: Enable Azure Active Directory authentication for POS sign-in
+            href: aad-pos-logon.md
           - name: Demo data screen layouts in MPOS and Cloud POS
             href: demo-data.md
           - name: Product and customer search in the POS
@@ -368,6 +374,8 @@
               href: dev-itpro/retail-peripheral-simulator.md
             - name: Connect peripherals to the POS
               href: define-maintain-channel-clients-registers-hw-stations.md
+            - name: Health check for POS peripherals and services
+              href: pos-healthcheck.md
           - name: Screen layouts
             items:
             - name: Demo data screen layouts in MPOS/CPOS
@@ -518,7 +526,7 @@
             href: create-variant-group.md
         - name: Create a new product
           items:
-          - name: Create a new product overview
+          - name: Create a new product in Commerce
             href: create-new-product.md
           - name: Manage product categories and products 
             href: category-management-product-creation.md
@@ -634,6 +642,8 @@
             href: pos-inbound-inventory-operation.md
           - name: Outbound inventory operation in POS
             href: pos-outbound-inventory-operation.md
+          - name: Calculate inventory availability for retail channels
+            href: calculated-inventory-retail-channels.md
         - name: Purchase orders	  
           items:
           - name: Purchase order overview
@@ -766,8 +776,14 @@
           href: associate-site-online-store.md
         - name: Manage robots.txt files
           href: manage-robots-txt-files.md
+        - name: Upload URL redirects in bulk
+          href: upload-bulk-redirects.md
+        - name: Set up a B2C tenant in Commerce
+          href: set-up-B2C-tenant.md
         - name: Set up custom pages for user sign-ins
           href: custom-pages-user-logins.md
+        - name: Configure multiple B2C tenants in a Commerce environment
+          href: configure-multi-B2C-tenants.md
         - name: Add support for a content delivery network (CDN)
           href: add-cdn-support.md
         - name: Enable location-based store detection
@@ -862,6 +878,20 @@
             href: customize-site-navigation.md
           - name: Create a page URL
             href: create-page-URL.md
+      - name: Manage digital assets
+        items:
+        - name: Digital asset management overview
+          href: dam-overview.md
+        - name: Upload images
+          href: dam-upload-images.md
+        - name: Upload video
+          href: dam-upload-video.md
+        - name: Upload files other than images and videos
+          href: dam-upload-files.md
+        - name: Crop images
+          href: dam-crop-images.md 
+        - name: Customize image focal points
+          href: dam-custom-focal-point.md
       - name: Make your site compliant
         items:
         - name: Compliance overview
@@ -1080,6 +1110,8 @@
         items:
          - name: Document Reporting Services overview
            href: ../fin-ops-core/dev-itpro/analytics/document-reporting-services.md?toc=/dynamics365/commerce/toc.json
+         - name: Supported fonts
+           href: ../fin-ops-core/dev-itpro/analytics/supported-fonts.md?toc=/dynamics365/commerce/toc.json
          - name: Configure SSRS for on-premises deployments
            href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/commerce/toc.json
          - name: Printing
@@ -1908,6 +1940,10 @@
             href: e-commerce-extensibility/create-observable-data-action.md 
           - name: Share state across modules
             href: e-commerce-extensibility/share-state-across-modules.md
+          - name: Data action overrides
+            href: e-commerce-extensibility/data-action-overrides.md
+          - name: Data action hooks
+            href: e-commerce-extensibility/data-action-hooks.md
         - name: Develop themes
           items:
           - name: Theming overview
@@ -1998,6 +2034,8 @@
           href: dev-itpro/pos-run-samples.md
         - name: Device management implementation guidance
           href: implementation-considerations-devices.md
+        - name: POS Cart view events and handlers
+          href: dev-itpro/cart-view-handlers.md
       - name: Hardware Station extensibility
         items:
         - name: Hardware Station and extensibility
@@ -2054,6 +2092,10 @@
           href: dev-itpro/retail-sdk/retail-sdk-samples.md
         - name: Log extension events to Application Insights
           href: dev-itpro/commerce-application-insights.md
+        - name: Create async Commerce (CRT) APIs in your business logic
+          href: dev-itpro/async-commerce-extension.md
+        - name: Pre-extended columns in the channel database
+          href: dev-itpro/extended-columns.md
       - name: Payment connector extensibility
         items:
         - name: Create a payment integration for a payment terminal
@@ -2070,6 +2112,8 @@
           href: payment-connector-data-fields.md
         - name: Enable duplicate payment protection for payment connector
           href: dev-itpro/duplicate-payment-protection.md
+        - name: Create payment packaging for Application Explorer in Service Fabric deployments
+          href: dev-itpro/payment-connector-package.md
       - name: Third-party e-Commerce extensibility
         items:
         - name: Configure online stores

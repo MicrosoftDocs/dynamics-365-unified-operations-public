@@ -43,7 +43,7 @@ Some delegate methods are implemented so that they can request a response from s
 ## Examples
 The following example shows a delegate handler that has a condition in the form of a **switch** statement. The delegate handler also has logic to provide a response in the form of the result. The responding logic is run only when the condition is evaluated to **true**.
 
-```
+```xpp
 [SubscribesTo(tableStr(InventWarehouseEntity), delegateStr(InventWarehouseEntity, validateWarehouseTypeDelegate))]
 public static void validateWarehouseTypeIsSupportedStandardDelegateHandler(InventLocationType _inventLocationType, EventHandlerResult _result)
 {
@@ -62,7 +62,7 @@ When the delegate method requests a response by using an **EventHandlerAcceptRes
 
 The following example resembles the previous example. However, the delegate method now requests a response by using an **EventHandlerAcceptResult** object and by calling the **accept** method.
 	
-```
+```xpp
 [SubscribesTo(tableStr(InventWarehouseEntity), delegateStr(InventWarehouseEntity, validateWarehouseTypeDelegate))]
 public static void validateWarehouseTypeIsSupportedStandardDelegateHandler(InventLocationType _inventLocationType, EventHandlerAcceptResult _result)
 {
@@ -79,7 +79,7 @@ public static void validateWarehouseTypeIsSupportedStandardDelegateHandler(Inven
 
 The following example shows a delegate handler method that responds by using an **EventHandlerRejectResult** object. To respond by using an **EventHandlerRejectResult** object, you can call the **reject** method or the **checkFailed** extension method. If you use the **checkFailed** method, you can add a warning message to the Infolog. Internally, the **checkFailed** method calls the **reject** method.
 
-```
+```xpp
 [SubscribesTo(classStr(ProdTableType), delegateStr(ProdTableType, validateWriteProdTableInventRefTypeDelegate))]
 public static void validateWriteProdTableInventRefTypeDelegateHandler(ProdTable _prodTable, EventHandlerRejectResult _result)
 {
@@ -108,7 +108,7 @@ In addition to the previously described practices, the following general guideli
     > [!WARNING]
     > This example is an example of code that you should **not** write.
 
-    ```
+    ```xpp
     [SubscribesTo(tableStr(InventWarehouseEntity), delegateStr(InventWarehouseEntity, validateWarehouseTypeDelegate))]
 	public static void validateWarehouseTypeIsSupportedStandardDelegateHandler(InventLocationType _inventLocationType, EventHandlerResult _result)
 	{
@@ -133,7 +133,7 @@ In addition to the previously described practices, the following general guideli
     > [!WARNING]
     > This example is an example of code that you should **not** write.
     
-    ```
+    ```xpp
 	[SubscribesTo(tableStr(InventWarehouseEntity), delegateStr(InventWarehouseEntity, validateWarehouseTypeDelegate))]
 	public static void validateWarehouseTypeIsSupportedStandardDelegateHandler(InventLocationType _inventLocationType, EventHandlerResult _result)
 	{

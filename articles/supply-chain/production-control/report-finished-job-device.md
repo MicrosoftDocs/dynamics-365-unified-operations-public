@@ -2,7 +2,7 @@
 # required metadata
 
 title: Report as finished to a license plate controlled location from the Job card device
-description: This topic decribes the process for completing finished products on a production order to inventory when a license plate controls the location.
+description: This topic describes the process for completing finished products on a production order to inventory when a license plate controls the location.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 01/06/2020
