@@ -68,14 +68,4 @@ Form: **ProcCategoryAddVendor** (Click **Procurement and sourcing** &gt; **Procu
 
 [![Example of advanced selection](./media/advancedselectionexample.png)](./media/advancedselectionexample.png)
 
-## Appendix
-### Frequently asked questions
-
-This section will have answers to frequently asked questions that are related to this guideline/pattern.
-
-### Open issues
-
-None at this time
-
-
 
