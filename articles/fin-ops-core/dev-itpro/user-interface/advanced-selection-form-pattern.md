@@ -64,7 +64,8 @@ The verification checklist shows the steps for manually verifying that the form 
 ## Example
 Form: **ProcCategoryAddVendor** (Click **Procurement and sourcing** &gt; **Procurement categories**. On the **Vendors** FastTab, click **Add**.) 
 
-[Note this form no longer utilizes this pattern; however, the image shows an example of what a typical Advanced selection form pattern looks like.] 
+> [NOTE]
+> This form no longer utilizes this pattern; however, the image shows an example of what a typical Advanced selection form pattern looks like.
 
 [![Example of advanced selection](./media/advancedselectionexample.png)](./media/advancedselectionexample.png)
 
