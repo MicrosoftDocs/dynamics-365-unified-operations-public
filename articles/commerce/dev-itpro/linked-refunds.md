@@ -43,13 +43,14 @@ By using linked refunds, retailers can greatly reduce risk by making sure that r
 
 ## Prerequisites
 [Omni channel payments setup](omni-channel-payments.md)
-[Payment method Setup](payment-methods) 
+
+[Payment method setup](payment-methods.md) 
 
 [Omni channel payments setup](omni-channel-payments.md)
 
 ### Additional setup
 
-Customers who aren't using the out-of-box implementation of the Adyen Connector must set up the connector that supports tokenization of credit cards. All the scenarios that are described in this topic can be implemented by using the standard Payments software development kit (SDK) that is provided with Commerce. The [Dynamics 365 Payment Connector for Adyen](dev-itpro/adyen-connector?tabs=8-1-3) provides an out-of-box implementation of every scenario that is described here.
+Customers who aren't using the out-of-box implementation of the Adyen Connector must set up the connector that supports tokenization of credit cards. All the scenarios that are described in this topic can be implemented by using the standard Payments software development kit (SDK) that is provided with Commerce. The [Dynamics 365 Payment Connector for Adyen](dev-itpro/adyen-connector.md?tabs=8-1-3) provides an out-of-box implementation of every scenario that is described here.
 
 ## Turn on the linked refunds functionality
 
@@ -103,4 +104,4 @@ After the full amount is successfully refunded, the cashier can complete the tra
 ## Related topics
 
 - [Payments FAQ](dev-itpro/payments-retail.md)
-- [Dynamics 365 Payment Connector for Adyen](dev-itpro/adyen-connector,md?tabs=8-1-3)
+- [Dynamics 365 Payment Connector for Adyen](dev-itpro/adyen-connector.md?tabs=8-1-3)
