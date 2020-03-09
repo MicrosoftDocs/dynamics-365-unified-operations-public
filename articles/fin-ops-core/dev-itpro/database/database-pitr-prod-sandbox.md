@@ -38,11 +38,11 @@ You can use Microsoft Dynamics Lifecycle Services (LCS) to do a point-in-time re
 > [!IMPORTANT]
 > Microsoft doesn't support copying production data to a sandbox environment for the purpose of production reporting.
 
-## Self-service database refresh
+## Self-service point-in-time restore Production to Sandbox
 
-To provide customers with Data Application Lifecycle Management (DataALM) capabilities that don't rely on human or manual processes, the Lifecycle Services team has introduced an automated refresh database action. Here is an overview of the process for doing a self-service database refresh.
+To provide customers with data application lifecycle management (DataALM) capabilities that don't rely on human or manual processes, the Lifecycle Services team has introduced an automated refresh database action. Here is an overview of the process for doing a self-service database refresh.
 
-1. Go to your target sandbox environment on the **Environment Details** page, and select **Maintain** \> **Move database**.
+1. Go to the **Environment Details** page for your target Sandbox, and select **Maintain** \> **Move database** button.
 2. Select the **Point-in-time restore Prod to Sandbox** option, and then select the desired point in time.
 3. Make a note of the warnings, and review the list of data elements that aren't copied from the source environment's previous point in time.
 4. The restore operation begins immediately.
@@ -88,7 +88,7 @@ Here is the list of requirements and conditions of operation for a database refr
 - Documents in Azure Blob storage aren't copied from one environment to another. Therefore, attached document handling documents and templates won't be changed and will remain in their current state.
 - All users except the Admin user and other internal service user accounts will be unavailable. Therefore, the Admin user can delete or obfuscate data before  other users are allowed back into the system.
 - The Admin user must make required configuration changes, such as reconnecting integration endpoints to specific services or URLs.
-- All data management framework that have recurring import and export jobs must be fully processed and stopped in the target system before the restore is started. In addition, we recommend that you select the database from the source after all recurring import and export jobs have been fully processed. In this way, you ensure that there are no orphaned files from either system in Azure storage. This step is important because orphaned files can't be processed after the database is restored in the target environment. After the restore, the integration jobs can be resumed.
+- All data management integration jobs that have recurring import and export enabled must be fully processed and stopped in the target system before the restore is started. In addition, we recommend that you select the database from the source after all recurring import and export jobs have been fully processed. In this way, you ensure that there are no orphaned files from either system in Azure storage. This step is important because orphaned files can't be processed after the database is restored in the target environment. After the restore, the integration jobs can be resumed.
 - Any user who has the Project owner or Environment manager role in LCS will have access to the SQL and machine credentials for all non-production environments.
 - The databases must be hosted in the same Azure geographic region.
 - The allocated database capacity of the source environment must be less than the maximum database capacity of the target environment.
