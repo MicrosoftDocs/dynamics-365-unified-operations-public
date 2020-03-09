@@ -79,7 +79,7 @@ For information about how to add product recommendation pages to your e-Commerce
 
 ## How do I enable recommendations on POS?
 
-After enabling product recommendations, you will need to add the recommendations panel to the control POS screen. See [this feature documentation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/add-recommendations-control-pos-screen) for more information on how to do add the recommendations panel to your POS device layout.
+After enabling product recommendations, you will need to add the recommendations panel to the control POS screen. For more information on how to do add the recommendations panel to your POS device layout, see [Add a recommendations control to the transaction screen on POS devices](add-recommendations-control-pos-screen.md).
 
 ## Additional resources
 
