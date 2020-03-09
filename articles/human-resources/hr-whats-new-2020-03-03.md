@@ -69,9 +69,9 @@ Over the next few weeks, these entity changes will be available in all environme
 
 You can now enroll an employee in a new leave plan of the same type, as long as the new enrollment date is later than the expired enrollment date of the previous plan.
 
-## Issue with exporting contribution rates in the 401k PayrollWorkerEnrolledBenefitDetailEntity in DMF (420700)
+## Issue with exporting contribution rates in the 401k payrollWorkerEnrolledBenefitDetail entity in DMF (420700)
 
-The export functionality for the **PayrollWorkerEnrolledBenefitDetailEntity** has been corrected to reflect the current values for employer contribution.
+This change corrects the export functionality for the **payrollWorkerEnrolledBenefitDetail** entity to reflect the current values for employer contribution.
 
 ## Searching in the streamlined Worker form causes message saying Person field must be filled in (402525)
 
