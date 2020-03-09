@@ -37,7 +37,7 @@ This topic describes how to set up a warehouse to be used with a new channel in 
 
 ## Overview
 
-Each Commerce channel requires a configured warehouse to be associated with it. The following procedures provide the minimum configuration required to set up a warehouse for a Commerce channel. For more information regarding warehouse setup, please see the [Warehouse management overview](../supply-chain/warehousing/warehouse-management-overview).
+Each Commerce channel requires a configured warehouse to be associated with it. The following procedures provide the minimum configuration required to set up a warehouse for a Commerce channel. For more information regarding warehouse setup, please see the [Warehouse management overview](../supply-chain/warehousing/warehouse-management-overview.md).
 
 ## Configure a warehouse site
 
@@ -135,7 +135,7 @@ The following image shows details for a configured warehouse.
 
 ## Additional resources
 
-[Warehouse management overview](../supply-chain/warehousing/warehouse-management-overview)
+[Warehouse management overview](../supply-chain/warehousing/warehouse-management-overview.md)
 
 [Channels overview](channels-overview.md)
 
