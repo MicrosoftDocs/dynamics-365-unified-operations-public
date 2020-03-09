@@ -664,6 +664,8 @@
         items:
         - name: Create a call center order 
           href: tasks/create-call-center-orders.md
+        - name: Change mode of delivery in POS
+          href: POS-change-delivery-mode.md
       - name: Distributed order management	  
         items:
         - name: DOM overview
