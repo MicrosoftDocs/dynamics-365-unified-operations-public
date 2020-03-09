@@ -5,7 +5,7 @@ title: Regulatory updates
 description: This topic provides a list of planned and released regulatory updates for Microsoft Dynamics 365 Finance.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 01/29/2020
+ms.date: 03/09/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -66,7 +66,7 @@ For the latest regulatory update plans, refer to the following table.
 |      Mexico          |   January 2020     | 10.0.8        |   Retail -  CFDI Global: Misc. Resol 2019 - c_CodigoPostal and Timezone |
 |      Mexico           |   January 2020       | 10.0.8     |   Code validation in Products and Services catalog |
 |      Norway          |   March 2020   | 10.0.9, 10.0.8HF     |   SAF-T XSD update to version 1.1 for Dynamics 365 for Finance and Operations |
-|      Poland          |   March 2020    | 10.0.9     |   Purchase VAT register and SAF VAT register: Custom agency from SAD documents must be replaced by third-part name and Tax exempt number |
+|      Poland          |   March 2020    | 10.0.9     |   Purchase VAT register and SAF VAT register: Custom agency from SAD documents must be replaced by third-party name and tax-exempt number |
 |      Poland          |   March 2020 - January 2020   | 10.0.9, 10.0.8HF     |   Retail - Managing customer information in POS |
 |      Poland          |   March 2020 - January 2020     | 10.0.9, 10.0.8HF     |   Retail - Printing customer information in fiscal receipt |
 |      Poland          |   March 2020 - January 2020     | 10.0.9, 10.0.8     |   SAF invoices (JPK_FA) v.3 from 2Dec2019 |
