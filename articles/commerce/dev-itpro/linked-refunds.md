@@ -42,15 +42,14 @@ In Microsoft Dynamics 365 Retail version 10.0 and earlier, retailers can process
 By using linked refunds, retailers can greatly reduce risk by making sure that refunds are processed only to the card that was authorized during the original transaction. To help prevent unauthorized card balance transfers, the system can prompt cashiers to use the confirmed and approved card token to process refunds. By using the original mode of payment for refunds, retailers can help reduce their card authorization costs.
 
 ## Prerequisites
-[Omni channel payments setup](omni-channel-payments.md)
 
-[Payment method setup](payment-methods.md) 
+[Payment method setup](./payment-methods.md) 
 
-[Omni channel payments setup](omni-channel-payments.md)
+[Omni channel payments setup](./omni-channel-payments.md)
 
 ### Additional setup
 
-Customers who aren't using the out-of-box implementation of the Adyen Connector must set up the connector that supports tokenization of credit cards. All the scenarios that are described in this topic can be implemented by using the standard Payments software development kit (SDK) that is provided with Commerce. The [Dynamics 365 Payment Connector for Adyen](dev-itpro/adyen-connector.md?tabs=8-1-3) provides an out-of-box implementation of every scenario that is described here.
+Customers who aren't using the out-of-box implementation of the Adyen Connector must set up the connector that supports tokenization of credit cards. All the scenarios that are described in this topic can be implemented by using the standard Payments software development kit (SDK) that is provided with Commerce. The [Dynamics 365 Payment Connector for Adyen](adyen-connector.md?tabs=8-1-3) provides an out-of-box implementation of every scenario that is described here.
 
 ## Turn on the linked refunds functionality
 
@@ -103,5 +102,5 @@ After the full amount is successfully refunded, the cashier can complete the tra
 
 ## Related topics
 
-- [Payments FAQ](dev-itpro/payments-retail.md)
-- [Dynamics 365 Payment Connector for Adyen](dev-itpro/adyen-connector.md?tabs=8-1-3)
+- [Payments FAQ](payments-retail.md)
+- [Dynamics 365 Payment Connector for Adyen](adyen-connector.md?tabs=8-1-3)
