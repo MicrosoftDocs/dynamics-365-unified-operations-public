@@ -45,9 +45,9 @@ Before you create an organization hierarchy, you must create organizations. For 
 
 
 For more information, see the following topics.
-- [Organizations and organizational hierarchies overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies)
-- [Plan your organization hierarchy](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy?toc=/dynamics365/commerce/toc.json)
-- [Create an organization hierarchy](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/tasks/create-organization-hierarchy?toc=/dynamics365/commerce/toc.json)
+- [Organizations and organizational hierarchies overview](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies)
+- [Plan your organization hierarchy](../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy)
+- [Create an organization hierarchy](../fin-ops-core/fin-ops/organization-administration/tasks/create-organization-hierarchy)
 
 ## Create an organizational hierarchy
 
@@ -81,13 +81,13 @@ The following image shows a legal entity added at the hierarchy root with four c
 
 ## Additional resources
 
-[Organizations and organizational hierarchies overview](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
+[Organizations and organizational hierarchies overview](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md)
 
-[Plan your organizational hierarchy](../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/commerce/toc.json)
+[Plan your organizational hierarchy](../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md)
 
 [Create legal entities](channels-legal-entities.md)
 
-[Create operating units](../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/commerce/toc.json)
+[Create operating units](../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md)
 
 [Channels overview](channels-overview.md)
 
