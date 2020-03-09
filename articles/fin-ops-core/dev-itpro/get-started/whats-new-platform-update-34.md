@@ -44,6 +44,7 @@ For more information about Platform update 34, see [Additional resources](whats-
 
 ## Features included in this release
 
+- [Embed actions in the message bar](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/embed-actions-message-bar) - For more information, see [Messaging APIs - Action center, message bar, and message details](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/user-interface/messaging-api-center-bar-details).
 - [Updates to Saved views](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/user-productivity--saved-views--phase-2) - For more information, see [Saved views](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/saved-views) and [Task recorder resources](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/user-interface/task-recorder).
 - [Continued stabilization of the new grid control](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/user-productivity--new-grid-control--phase-2) - For more information, see [Grid capabilities](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/grid-capabilities?toc=/dynamics365/finance/toc.json). 
 
