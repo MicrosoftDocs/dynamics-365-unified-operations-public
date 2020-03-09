@@ -5,7 +5,7 @@ title: Commission settlement on payments
 description: Commission settlement on payments.
 author: ilkond
 manager: AnnBe
-ms.date: 01/14/2020
+ms.date: 03/09/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,56 +32,75 @@ ms.dyn365.ops.version: 10.0.10
 
 [!include [banner](../includes/banner.md)]
 
-In Italy many companies use to settle the commissions to their sales agents when the invoices are paid by their customers and not when the invoice is issued. The reason is to lead the agents to debt collection.
+In Italy, it is common for companies to settle the commissions for their sales agents when customers pay the full balance of their invoices, not when the invoice is issued.
+
 ## Prerequisites
-Before you can use commission settlement on payment, the following prerequisites must be met:
-- The primary address of the legal entity must be in Italy.
-- In the **Feature management** workspace, turn on the **Commission settlement on payments** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+Before you can use commission settlement on payment functionality, the following prerequisites must be met:
+
+- The primary address of the legal entity must be in Italy
+- Enable the feature, **Commission settlement on payments** in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Set up commission settlement by default
-In the Account receivable parameters (**Accounts receivable** \> **Setup** \> **Account receivable parameters**, tab **Settlement**, FastTab **Other**) set up **Commission settlement** method which will be used when creating sales order by default. 
+1. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
+2. On the **Account receivable parameters** page, on the **Settlement** tab, on the **Other** FastTab, in the **Commission settlement** field, select the method that will be used when a sales order is created by default. 
+
  ![Account receivable parameters](media/emea-ita-exil-commission-setup-parameters.PNG)
+ 
 The field **Commission settlement** has two values:
--	**On invoice** - commissions are charged during the invoice process.
--	**On payment** - commissions are charged during the payment process.
+
+-	**On invoice**: Commissions are charged during the invoice process
+-	**On payment**: Commissions are charged during the payment process
+
 ## Set up commission calculation
-A user may additional setup of commission calculation for **On payment** commission in **Sales and marketing** \> **Commissions** \> **Commission calculation**.
+Additionally, you can set up the calculation of commissions for an **On payment** commission by navigating to **Sales and marketing** \> **Commissions** \> **Commission calculation**.
+
  ![Commission calculation setup](media/emea-ita-exil-commission-%20calculation-setup.PNG)
-If the **Payment thresholds** is set to **Yes** it is possible to specify two boundaries for commissions calculation:
+ 
+If the **Payment thresholds** is set to **Yes**, it is possible to specify two boundaries for commissions calculation:
+
 -	If the reached commission amount (in percentage on the reachable amount) is below the lower threshold, no commissions are accrued.
 -	When the upper bound is reached the whole reachable amount is accrued.
 -	Within the two boundaries, commissions normally accrue.
 
-_Example_:
+### Example
+Consider the following example.
 
-Consider the following scenario:
--	Invoice total amount 1000€ 
--	Lower limit 10% 
--	Upper 80% 
+-	Invoice total amount: 1000€ 
+-	Lower limit: 10% 
+-	Upper limit: 80% 
 
-Consider the following payments:
-1.	50€ (5%)  >  Since commissions are below the threshold (10%), no accrual occurs.
-2.	100€ (10% of the total) > The invoice is settled at 15%, so commissions accrue with that percentage
-3.	500€ (other 50% of the total amount of the invoice) > The invoice is settled at 65%, commission are also accrued at 65%
-4.	200€ (20%) > Invoice is settled ad 85%, above the upper threshold so commissions become fully settled (at 100%)
-5.	Any further payment doesn’t change the accrued amount because it already reached the top, but accrual transactions are still created 
+Payments include:
 
-Another setup can be added to the single agent who belongs to a specify group. The setup of the employee has the priority in comparison to the setup on sales commission calculation.
+- 50€ (5%):  Because commissions are below the threshold of 10%, no accrual occurs.
+- 100€ (10% of the total): The invoice is settled at 15%, so commissions accrue with that percentage.
+- 500€ (other 50% of the total amount of the invoice): The invoice is settled at 65%. Commissions are also accrued at 65%.
+- 200€ (20%): The invoice is settled ad 85%. As this is above the upper threshold, commissions become fully settled at 100%.
+- Any further payment doesn’t change the accrued amount because it already reached the top, but accrual transactions are still created.
 
-## Set commisiion settlement and preview commision transaction on Sales order page
+Another setup can be added to the single agent that belongs to a specific group. The setup of the employee has the priority in commission calculation as compared to the setup on sales.
 
-After sales order creation a user may update commission settlement in the sales order header (**Accounts receivable**\> **Orders**\> **All sales orders**, **Sales order details** page \> **Header**, **Setup** FastTab).  
+## Set the commission settlement and preview commision transactions on the Sales order page
+
+After a sales order is created, a user may update commission settlement on the sales order header by going to **Accounts receivable**\> **Orders**\> **All sales orders**.
+2. Select and open a sales order.
+On the **Sales order details** page, on the **Header** view, select the **Setup** FastTab. 
+
 ![Commission settlement in sales order](media/emea-ita-exil-commission-sales-order.png)
-By default commision settlement value is inherited from Account receivable parameters (**[Set up commission settlement by default](emea-ita-exil-commission-settlement.md#Set-up-commission-settlement-by-default)**).
 
-There is also the possibility of previewing the sales commission calculation from sales order either for open orders or invoiced  (**General** tab \> **Related information** \> **Commission preview**).
+By default, the commision settlement value is inherited from the **Account receivable parameters** page. For more information, see [Set up commission settlement by default](emea-ita-exil-commission-settlement.md#Set-up-commission-settlement-by-default).
+
+You can also preview the sales commission calculation from sales order either for open or invoiced orders. To do this, on the **General** tab, select **Related information** \> **Commission preview**.
+
 ![Preview commission transactions](media/emea-ita-exil-commission-preview.PNG)
 
 > [!NOTE]
-> A user can combine sales orders in single invoice If all sales orders for invoicing have the same **Commission settlement** value in sales order headers.
+> A user can combine sales orders in single invoice iff all the sales orders for invoicing have the same **Commission settlement** value in the sales order header.
 
-### Overview commission transactions in a sales order invoice
-A user may overview commision transaction on **Invoice journal** page list (**Accounts receivable** \> **Inquiries and reports** \> **Invoices** \> **Invoice journal**, **Invoice** tab \> **Details** \> **Commission transactions**).
+### Overview commission transactions on a sales order invoice
+You can also view commission transactions on the **Invoice journal** page.
+
+1. Go to **Accounts receivable** \> **Inquiries and reports** \> **Invoices** \> **Invoice journal**. 
+2. On the **Invoice** tab, select **Details** \> **Commission transactions**.
 
 > [!NOTE]
-> When posting invoice, the system creates commission and voucher transactions). If **Commission settlement** value is **On invoice** in sales order header, the system creates **Settlement** record (**Settlement** tab). If **Commission settlement** value is **On payment** in sales order header, **Settlement** record (**Settlement** tab) is created only after settling the invoice and a payment.  
+> When you post the invoice, the system creates commission and voucher transactions. If the value in the **Commission settlement** field is **On invoice** in the sales order header, the system creates a **Settlement** record. If the value in the **Commission settlement** field is **On payment** in sales order header, the **Settlement** record is created only after settling the invoice and a payment.  
