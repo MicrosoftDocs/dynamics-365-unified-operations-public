@@ -43,9 +43,9 @@ By using linked refunds, retailers can greatly reduce risk by making sure that r
 
 ## Prerequisites
 
-[Payment method setup](./commerce/payment-methods.md) 
+[Payment method setup](../commerce/payment-methods.md) 
 
-[Omni channel payments setup](./commerce/omni-channel-payments.md)
+[Omni channel payments setup](../commerce/omni-channel-payments.md)
 
 ### Additional setup
 
