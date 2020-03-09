@@ -5,7 +5,7 @@ title: Create and work with custom fields
 description: This topic shows you how to create custom fields through the user interface to tailor the application to fit your business.
 author: jasongre
 manager: AnnBe
-ms.date: 07/16/2018
+ms.date: 03/09/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
