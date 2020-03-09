@@ -5,7 +5,7 @@ title: Configure a development environment (.env) file
 description: This topic describes how to configure the development environment (.env) file that is used in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 03/09/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -169,3 +169,5 @@ After you've finished changing the .env file, restart the Node server by using t
 [System requirements for a Dynamics 365 Commerce online extensibility development environment](system-requirements.md)
 
 [Set up a development environment](setup-dev-environment.md)
+
+[Set up Azure DevOps code sharing and create a build pipeline](set-up-code-sharing-build-pipeline.md)
