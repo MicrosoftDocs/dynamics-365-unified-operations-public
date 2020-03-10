@@ -34,16 +34,18 @@ ms.dyn365.ops.version: Human Resources
 
 You can add custom fields to pages in Dynamics 365 Human Resources. For more information about how to create custom fields on a page, see [Create and work with custom fields](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields).
 
-The following entities in Common Data Service support custom fields created in Human Resources:
+The Majority of all common data service entities now support custom fields. For a full list of Common data service entities, [see the full list of data entities here](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-developer-entities). 
 
+Common data serivice entities exist for the following areas of Human Resources
+- Benefits
+- Business Process
+- Compensation
+- Organization
+- Leave and absence
+- Payroll
 - Worker
-- Ethnic origin
-- Veteran status
-- Language code
-- Job
-- Job type
-- Job function
-- Position
-- Position type
+- Worker setup
+- Competency 
+
 
 Be sure to enable any custom fields that you create so you can use them in Common Data Service. For more information, see [Exposing custom fields on data entities](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities).
