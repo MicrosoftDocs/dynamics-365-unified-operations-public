@@ -49,7 +49,10 @@ To set up and install Xamarin on Windows, go to <https://docs.microsoft.com/xama
 
 ### Update Xamarin
 
-After you've installed Xamarin, you must update it to the latest stable version.
+> [!NOTE]
+> Please use only Xamarin.Android SDK version < 10.0. 
+
+After you've installed Xamarin, you must update it to the latest stable version (Xamarin.Android SDK version must be < 10.0).
 
 -   **Windows** - In Microsoft Visual Studio, click **Tools** &gt; **Options** &gt;**Environment** &gt; **Xamarin** &gt; **Other**.
 -   **Mac** - In Xamarin Studio, click **Check for Updates** &gt; **Update channel**. For more information about this step, see [Change the Updates Channel](https://developer.xamarin.com/recipes/cross-platform/ide/change_updates_channel/).
