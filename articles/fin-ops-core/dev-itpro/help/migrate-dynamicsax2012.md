@@ -120,7 +120,7 @@ The following properties are reserved for future use:
 > [!TIP]
 > Microsoft's content in the public GitHub repos contain additional metadata that is used by Microsoft in internal processes that are not related to the mechanics of the help system. You can ignore these metadata properties if you extend or customize Microsoft's content.  
 
-## Moving to MarkDown
+##  <a name="moving-to-markdown"></a>Moving to MarkDown
 
 If you want to customize or extend the Microsoft Help, you can fork our public repo for either the source repo in English (US) at [https://github.com/MicrosoftDocs/Dynamics-365-unified-Operations-public](https://github.com/MicrosoftDocs/Dynamics-365-unified-Operations-public), or one of the related repos with translations into the supported languages. For more information, see [Extend, Customize, and Collaborate on the Help](contributor-guide.md).  
 
@@ -130,7 +130,7 @@ When you have converted your content to MarkDown, you can use a Git repo in Azur
 
 ## See also
 
-[Deploying custom help sites](custom-help-websites.md)  
+[Deploying custom help sites](custom-help-overview.md)  
 [Custom Help Overview](custom-help-overview.md)  
 [Custom Help Toolkit](custom-help-toolkit.md)  
 [Extend, Customize, and Collaborate on the Help](contributor-guide.md)  

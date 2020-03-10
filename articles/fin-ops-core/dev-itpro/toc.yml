@@ -468,19 +468,11 @@
         items:
         - name: Custom help overview
           href: help/custom-help-overview.md
-        - name: Deploying help websites
-          href: help/custom-help-websites.md
-        - name: Language and locale descriptors in across product and help
-          href: help/language-locale.md
-        - name: Deploying custom help to Azure
-          href: help/walkthrough-help-azure.md
-        - name: Extend, customize, and collaborate on the help
-          href: help/contributor-guide.md
         - name: Custom help toolkit
           items:
             - name: Custom help toolkit overview
               href: help/custom-help-toolkit.md
-            - name: The HTML From Repos Generator tool
+            - name: The HTML From Repo Generator tool
               href: help/custom-help-toolkit-HtmlFromRepoGenerator.md
             - name: The Convert HTML To JSON tool
               href: help/custom-help-toolkit-ConvertHtmlToJson.md
@@ -490,7 +482,12 @@
               href: help/connect-help-pane.md
             - name: Convert Dynamics AX custom help for use in Dynamics 365
               href: help/migrate-dynamicsax2012.md
-
+        - name: Deploying custom help to Azure
+          href: help/walkthrough-help-azure.md
+        - name: Language and locale descriptors in across product and help
+          href: help/language-locale.md
+        - name: Extend, customize, and collaborate on the help
+          href: help/contributor-guide.md
     - name: Develop and customize
       items:
       - name: Develop and customize home page

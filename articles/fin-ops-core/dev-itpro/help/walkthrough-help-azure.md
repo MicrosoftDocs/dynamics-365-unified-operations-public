@@ -62,8 +62,7 @@ The general process for creating your Azure resources consists of the following 
 
     - The storage account with a Blob container stores JSON files  
 
-        The JSON files are your Help files converted to JSON so that they can be used to generate an index of your content for search purposes. For more information, see [Content and search indexing](custom-help-websites.md#content-and-search-indexing).  
-
+        The JSON files are your Help files converted to JSON so that they can be used to generate an index of your content for search purposes. For more information, see [Custom Help Toolkit: The Convert HTML to JSON tool](custom-help-toolkit-ConvertHtmlToJson.md).  
     - The Search service performs indexing  
 
         Indexing makes your content discoverable by the in-product Help pane. For more information, see [Create a basic index in Azure Cognitive Search](/azure/search/search-what-is-an-index).
@@ -314,7 +313,6 @@ However, you still have one important task to do, which is to extend the Help pa
 
 ## See also
 
-[Deploying custom help sites](custom-help-websites.md)  
+[Custom Help Overview](custom-help-overview.md)  
 [Custom Help Toolkit](custom-help-toolkit.md)  
 [Language and locale descriptors in across product and Help](language-locale.md)  
-[Custom Help Overview](custom-help-overview.md)  

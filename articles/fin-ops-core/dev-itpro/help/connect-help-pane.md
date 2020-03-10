@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Operations
 
 If you deliver custom help content for a Finance and Operations solution, you must extend the Help pane to consume this content. It is a one-time configuration that requires the Finance and Operations development environment in Visual Studio. The result is that users can choose between tabs for Task guides, Microsoft's Help content, and your Help content.
 
-Connecting your [custom help website](custom-help-websites.md) with the in-product Help pane involves the following steps:
+Connecting your [custom help website](custom-help-overview.md#custom-help-sites) with the in-product Help pane involves the following steps:
 
 1. Extend the Help pane in Visual Studio
 2. Assign a language index
