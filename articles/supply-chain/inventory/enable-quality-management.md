@@ -53,6 +53,8 @@ Quality management is flexible and can be implemented in various ways to meet th
 -   Specify an acceptable quality level (AQL) to control quality measure tolerances.
 -   Specify the resources that an inspection operation requires, such as a test area and test instruments.
 
+<!-- HA: Comment......  -->
+
 ## Working with quality associations
 The business process that uses a quality association can be related to various source documents, such as purchase orders, sales orders, or production orders.
 
