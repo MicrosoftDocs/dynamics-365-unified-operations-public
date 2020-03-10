@@ -2,10 +2,10 @@
 # required metadata
 
 title: Remove and reinstall an AOS node
-description: <Add description>
+description: This topic provides information on how to remove an AOS node in your on-premises environment to reduce or replace a failed node. It also provides the steps to add a new node.
 author: ttreen
 manager: AnnBe
-ms.date: 03/06/2020
+ms.date: 03/10/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -30,12 +30,13 @@ ms.dyn365.ops.version: Platform update 34
 # Remove and reinstall an AOS node
 
 [!include[banner](../includes/banner.md)]
-This topic provides information on how to remove an AOS node in the need for reduction or replacement of a failed node, and also covers the steps to add a new node.
+
+This topic provides information on how to remove an AOS node in your on-premises environment to reduce or replace a failed node. It also provides the steps to add a new node.
 
 ## Remove the node
 
 
-### Option 1 - Config File (preferred option)
+### Option 1 - Config file (preferred option)
 
 Reference doc: <https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-windows-server-add-remove-nodes>
 
