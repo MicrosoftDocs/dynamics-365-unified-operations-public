@@ -5,7 +5,7 @@ title: Mobile platform resources
 description: The mobile platform lets you create mobile apps for your workspaces.
 author: RobinARH
 manager: AnnBe
-ms.date: 01/22/2020
+ms.date: 03/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -174,7 +174,7 @@ The Finance and Operations (Mobile Client) app facilitates user authentication w
 If there are continued problems with MFA authentication, it is helpful to [submit the Microsoft Authenticator app logs](https://github.com/AzureAD/azure-activedirectory-library-for-objc/wiki/Instructions-on-Collecting-Microsoft-Authenticator-Logs) and provide support with the resulting Incident ID.
 
 ### Intune support and conditional access
-The Finance and Operations (Mobile Client) app does not have Intune policies implemented, so it does not support Intune initially. However the app is free and [can be added to Intune](https://docs.microsoft.com/en-us/mem/intune/apps/store-apps-ios) to support scenarios like [using Conditional Access with Intune](https://docs.microsoft.com/en-us/mem/intune/protect/conditional-access#use-conditional-access-with-intune).
+The Finance and Operations (Mobile Client) app does not have Microsoft Intune policies implemented, so it does not support Intune initially. However, the app is free and can be added to [Intune](https://docs.microsoft.com/mem/intune/apps/store-apps-ios) to support scenarios like using [Conditional Access with Intune](https://docs.microsoft.com/mem/intune/protect/conditional-access#use-conditional-access-with-intune).
 
 ### Trouble signing out of the app and signing in with new credentials
 If you experience trouble signing out of the app and signing in with new credentials, then you might need to "forget old credentials" on the Azure AD sign-in screen.
