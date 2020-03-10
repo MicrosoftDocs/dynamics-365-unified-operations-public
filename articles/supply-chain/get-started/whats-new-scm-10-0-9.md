@@ -72,9 +72,6 @@ The following features are included in this release. The feature titles link to 
 - [Wave label printing enhancements](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-label-printing-enhancements)
 - [Wave step code](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-step-code)
 
-<!-- - [Self-billing invoice control for procurement](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/self-billing-invoice-control-procurement)
-- [Self-billing invoice control for sales](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/self-billing-invoice-control-sales) -->
-
 ## Additional resources
 
 ### Platform update 33

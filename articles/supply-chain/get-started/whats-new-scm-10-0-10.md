@@ -42,30 +42,11 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 
 ## Features included in this release
 
-The following feature is new in this release. The feature title links to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. You must enable this feature using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use it.
+The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. Additional links point to additional documentation or videos that are currently available for that feature. Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
+- Include items with on-hand when pre-processing filters are enabled
 - [Quality management for warehouse processes](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/quality-management-warehouse-processes)
-
-## Incremental updates included in this release
-
-The features described in this section provide minor enhancements and fixes that haven't been announced on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site.
-
-### Include items with on-hand when pre-processing filters are enabled
-
-This feature ensures that items with on-hand will always be included in the master planning run when the **Pre-processing: Automatically filter by items with direct demand** setting is enabled on the **Master planning parameters** page. 
-
-To use this capability, you must enable the _Include items with on-hand when pre-processing filters are enabled_ feature in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). For more information, see [Improve master planning performance](../master-planning/master-planning-performance.md).
-
-> [!IMPORTANT]
-> If you are relying on *Explosion* or *Net change update* functionality for manufacturing planning processes, then this feature must be enabled. Otherwise, incorrect on-hand data may show up in the **Net requirements** form for the items without direct demand and incorrect planned orders may be generated during explosion.
-
-### Use existing catch weight tags
-
-This feature adds support for using a mobile device to report a production order as finished when catch weight tags have been registered in advance for the appropriate order.
-
-Use the **Mobile device menu items** page to add this feature to any mobile-device menu item that uses the _Report as finished and put away_ work creation process. The feature requires that the "Generate catch weight tag" setting be disabled for the used menu item, and also that you are using catch weight tag tacking for "Product, tracking, and all storage dimensions" as part of the "Catch weight item handling policy" setup.
-
-To use this capability, you must enable the _Use existing catch weight tags when reporting production orders as finished_ feature in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). For more information, see [Catch weight product processing with warehouse management](../warehousing/catch-weight-processing.md).
+- Use existing catch weight tags
 
 ## Additional resources
 
