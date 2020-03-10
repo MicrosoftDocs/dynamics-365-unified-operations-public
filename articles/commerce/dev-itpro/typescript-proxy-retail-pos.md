@@ -5,7 +5,7 @@ title: Typescript and C# proxies for Retail point of sale (POS)
 description: This topic provides information about the Commerce proxy and explains how to generate it.
 author: mugunthanm
 manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 03/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -55,21 +55,21 @@ The steps to generate the Typescript proxy and the C# proxy differ. The rest of 
 > [!IMPORTANT]
 > The following procedure applies only to Microsoft Dynamics 365 Retail (July 2017 release) and Microsoft Dynamics 365 Finance.
 
-Use the CommerceProxyGenerator.exe file from the Retail SDK\\Reference\\CommerceProxyGenerator.<version_number> folder to generate the typescript proxy for the POS.
+Use the CommerceProxyGenerator.exe file from the Retail SDK\\Reference\\Microsoft.Dynamics.Commerce.Tools.CoreProxyGenerator.<version_number>\tools folder to generate the typescript proxy for the POS.
 
 1. Before you generate the proxy, copy the customized Commerce Scale Unit, CRT, and other dependent libraries to the **Retail SDK\\Reference** folder.
-2. Open a Command Prompt window as an administrator, and go to the **...\\Retail SDK\\Reference** folder. Run the following command to generate the proxy. The proxy files will be generated in the same folder.
+2. Open a Command Prompt window as an administrator, and go to the **...\\Retail SDK\\Reference\\Microsoft.Dynamics.Commerce.Tools.CoreProxyGenerator.<version_number>\tools** folder. Run the following command to generate the proxy. The proxy files will be generated in the same folder.
 
     ```Console
     CommerceProxyGenerator.exe <Path>\Microsoft.Dynamics.Retail.RetailServerLibrary.dll <FilePathNameForRetailServerExtensionDLL> /application:typescriptextensions
     ```
 
 > [!NOTE]
-> Use the Microsoft.Dynamics.Retail.RetailServerLibrary.dll file from \RetailSDK\References\Microsoft.Dynamics.Retail.Proxies.ExtensionsGenerator.<version_number>\build\
+> Use the Microsoft.Dynamics.Retail.RetailServerLibrary.dll file from \RetailSDK\References\Microsoft.Dynamics.Commerce.Tools.ExtensionsProxyGenerator.<version_number>\build
 
 ```Console
 Ex:
-CommerceProxyGenerator.exe C:\\RetailSDK\\References\\Microsoft.Dynamics.Retail.Proxies.ExtensionsGenerator.9.18.19299.3\\build\Microsoft.Dynamics.Retail.RetailServerLibrary.dll C:\\RetailSDK\\References\\Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll /a:typescriptextensions
+CommerceProxyGenerator.exe C:\\RetailSDK\\References\\Microsoft.Dynamics.Commerce.Tools.ExtensionsProxyGenerator.9.21.20042.5\\build\\Microsoft.Dynamics.Retail.RetailServerLibrary.dll C:\\RetailSDK\\References\\Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll /a:typescriptextensions
 ```
 
 In the above command, replace **Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll** with the name of your custom Commerce Scale Unit extension library. Include the generated files in your POS project. The command generates two files that are based on your extension libraries: DataServiceEntities.g.ts and DataServiceRequests.g.ts.
