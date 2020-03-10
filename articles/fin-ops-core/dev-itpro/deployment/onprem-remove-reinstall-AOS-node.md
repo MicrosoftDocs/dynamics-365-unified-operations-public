@@ -237,7 +237,7 @@ The next step is to start up a new AOS server.
 3. Check that you have also added the AXServiceUser and svc-AXSF\$ GMSA account to the local administrator group on the AOS server.
 
 4. Once the server is connected to the domain, you now need to run through the On-Premises prerequisite steps as outlined in this link:
-    <https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12#follow-these-steps-for-each-vm-or-use-remoting-from-a-single-machine>.
+    <https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12#follow-these-steps-for-each-vm-or-use-remoting-from-a-single-machine>.
     
     Summary steps copied from that link below:
 
