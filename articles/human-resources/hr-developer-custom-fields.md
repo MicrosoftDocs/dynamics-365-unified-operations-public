@@ -53,5 +53,8 @@ Be sure to enable any custom fields that you create so you can use them in Commo
 ## See also
 
 [Choose a data integration technology](hr-admin-integration-choose-technology.md)</br>
-[Configure Common Data Service integration](hr-admin-integration-common-data-service.md)
+[Configure Common Data Service integration](hr-admin-integration-common-data-service.md)</br>
+[Common Data Service entities](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities)</br>
+[Create and work with custom fields](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields)</br>
+[Exposing custom fields on data entities](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities)
 
