@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.10
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management, preview version 10.0.10. This version <!-- KFM, check this: has a build number of 10.0.420 and --> is available as follows:
+This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management, preview version 10.0.10. This version has a build number of 10.0.420 and is available as follows:
 
 - **Preview release:** March 2020
 - **General availability (self-update):** April 2020
@@ -45,7 +45,6 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 The following feature is new in this release. The feature title links to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. You must enable this feature using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use it.
 
 - [Quality management for warehouse processes](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/quality-management-warehouse-processes)
-
 
 ## Incremental updates included in this release
 
