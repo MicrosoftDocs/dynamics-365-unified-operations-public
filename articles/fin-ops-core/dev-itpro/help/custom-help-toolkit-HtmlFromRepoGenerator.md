@@ -5,7 +5,7 @@ title: Generate HTML files based on Microsoft's GitHub repos
 description: This topic describes the HtmlFromRepoGenerator tool in the custom help toolkit for Finance and Operations apps. 
 author: edupont04
 manager: AnnBe
-ms.date: 03/06/2020
+ms.date: 03/10/2020
 ms.topic: article
 ms.service: dynamics-ax-platform
 
@@ -51,7 +51,7 @@ HtmlFromRepoGenerator.exe provides functionality that supports the creation of c
     The client uses other language descriptors than the corresponding GitHub repos. For localized Help to be called, the language indicators in the content from GitHub must be changed so that they match how the client understands languages.
 - Generate HTML files that can be used for publishing.
 
-    The HTML files are in the **d365F-O** subfolder. The files are generated based on templates in the mstemplate.zip file that you also find in the GitHub repo <!--TODO -->. These templates are based on DocFx custom templates that you can customize for your own website. For more information, see [Introduction to DocFX Template System](https://dotnet.github.io/docfx/tutorial/intro_template.html).
+    The HTML files are in the **d365F-O** subfolder. The files are generated based on stylesheets and templates that are part of the tool. For more information ,see [Modifying the styling of the generated HTML files](#modifying-the-styling-of-the-generated-html-files).
 
 - Compare a localized Microsoft repo to the en-US repo to identify discrepancies and update the links accordingly.
 
@@ -124,9 +124,15 @@ HtmlFromRepoGenerator.exe --json articles/ --out "D:\D365-Operations\de" --DoNot
 ```
 
 > [!IMPORTANT]
-> Do not run HtmlFromRepoGenerator.exe repeatedly on a cloned repo, because the folder that contains the files from your clone of the repository is already modified the first time you run the tool. This means that the files no longer contain any links that must be replaced. If you must rerun the tool, either let the tool re-clone the repo, or make sure that all local changes are reverted.
+> Do not run HtmlFromRepoGenerator.exe repeatedly on an already cloned repo with existing customizations. Run the tool until you get the files that you need, and then make any relevant customizations. Otherwise you will get error messages because the tool is trying to make the same changes again. If you must rerun the tool, either let the tool re-clone the repo, or make sure that any local changes are reverted.
 
-<!--TODO: Figure out what that alert really means. What is a one-off task and what is a regular task?-->
+## Modifying the styling of the generated HTML files
+
+The tool generates the HTML files based on DocFx custom templates that you can customize for your own website. Depending on your requirements, you can modify the templates themselves, but in many cases it is more appropriate to tweak the stylesheets that the tool applies to the HTML files.
+
+The stylesheets are output to the equivalent of the D:\D365-Operations\en-US\articles\d365F-O\styles folder. You can change the font, colors, and other styling before you deploy the files to your website.  
+
+For advanced scenarios, you can modify the templates by opening the source files for the HtmlFromRepoGenerator tool. The source files are included in *SourceCode* folder in the GitHub repo, and the templates are in the *SourceCode\HtmlFromRepoGenerator\HtmlFromRepoGenerator\HtmlFromRepoGenerator\Resources* subfolder. If you modify the templates, you must rebuild the tool. For more information, see [Introduction to DocFX Template System](https://dotnet.github.io/docfx/tutorial/intro_template.html).
 
 ## See also
 
