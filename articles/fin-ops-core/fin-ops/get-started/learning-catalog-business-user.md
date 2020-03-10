@@ -1,9 +1,9 @@
 ---
-title: Business User's Learning Catalog
+title: Business Users Learning Catalog
 description: Find all the training options for Finance and Operations.
 author: loreleishannonmsft
 ms.topic: article
-ms.date: 02/28/2020
+ms.date: 03/10/2020
 ms.author: v-lshann
 ---
 
