@@ -42,9 +42,10 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 
 ## Features included in this release
 
-The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. Additional links point to additional documentation or videos that are currently available for that feature. Some of these features may also have been included a previous incremental release, but weren't announced in previous *What's new* topic, so we are adding them here. Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
+The following feature is new in this release. The feature title links to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. You must enable this feature using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use it.
 
 - [Quality management for warehouse processes](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/quality-management-warehouse-processes)
+
 
 ## Incremental updates included in this release
 
