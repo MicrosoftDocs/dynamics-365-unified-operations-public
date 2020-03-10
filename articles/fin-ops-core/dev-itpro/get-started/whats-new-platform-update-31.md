@@ -42,7 +42,7 @@ This topic describes features that are new or changed for Platform update 31 for
 For more information about Platform update 31, see [Additional resources](whats-new-platform-update-31.md#additional-resources).
 
 ## Turn on the new (preview) grid control through Feature management
-Previously the new grid control was available by adding "&debug=reactGrid" to the environment URL. Now in Platform update 31, the new grid control can be turned on for qualified environments using the Feature management workspace (see the steps below for instructions on how to enable the flight in non-production environments). Qualified environments include Tier 1 (Dev/Test) and Tier 2 (Sandbox) environments. Note that this feature cannot be turned on in production until 10.0.9 / Platform update 33. 
+Previously the new grid control was available by adding "&debug=reactGrid" to the environment URL. Now in Platform update 31, the new grid control can be turned on for qualified environments using the Feature management workspace. Refer to the following instructions about how to enable the flight in non-production environments. Qualified environments include Tier 1 (Dev/Test) and Tier 2 (Sandbox) environments. Note that this feature cannot be turned on in production until version 10.0.9, Platform update 33.
 
 To learn more about the new grid control, see [User productivity - New grid](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations/user-productivity-new-grid).
 
