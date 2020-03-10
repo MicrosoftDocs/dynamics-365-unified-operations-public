@@ -38,7 +38,7 @@ This topic provides information on how to remove an AOS node in your on-premises
 
 ### Option 1 - Config file (preferred option)
 
-Reference doc: <https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-windows-server-add-remove-nodes>
+Reference doc: <https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-windows-server-add-remove-nodes>
 
 1. In the Service Fabric Explorer, click on Cluster and made a note of the cluster version. In this example, it is 6.5.676.9590, as show in the screenshot below.
 
