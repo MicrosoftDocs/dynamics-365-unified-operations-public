@@ -5,7 +5,7 @@ title: Mobile platform resources
 description: The mobile platform lets you create mobile apps for your workspaces.
 author: RobinARH
 manager: AnnBe
-ms.date: 01/22/2020
+ms.date: 03/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -103,7 +103,7 @@ During development it can be useful to attach a debugger to get more detailed in
 2. Install the Android debug apk for the Finance and Operations app on an Android device:
     - One time only, allow the installation of apk files -  Go to **Menu** > **Settings** > **Security** and then check **Unknown Sources** to allow the phone to install apps from sources other than the Google Play Store.
     - Uninstall the Finance and Operations app - Ensure that any previous version of the Finance and Operations app has been uninstalled.
-    - Download the apk file - From the device’s browser, navigate to the latest [Finance and Operations Android debug apk on Github](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/blob/master/android-debug.apk) and click **Download** (or use [this direct link to the file](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/raw/master/android-debug.apk)).
+    - Download the apk file - From the device’s browser, navigate to the latest [Finance and Operations Android debug apk on GitHub](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/blob/master/android-debug.apk) and click **Download** (or use [this direct link to the file](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/raw/master/android-debug.apk)).
     - Install the Finance and Operations apk file - Confirm install of the Finance and Operations app via the apk file.
     - Run the debug Finance and Operations app on the device and sign in.
 
@@ -172,6 +172,9 @@ The Finance and Operations (Mobile Client) app facilitates user authentication w
 - Use the "touch and hold" gesture on the authentication notification and then select the **Accept** option. Because the notification acceptance will not require an app switch, the sign in will proceed as usual.
 
 If there are continued problems with MFA authentication, it is helpful to [submit the Microsoft Authenticator app logs](https://github.com/AzureAD/azure-activedirectory-library-for-objc/wiki/Instructions-on-Collecting-Microsoft-Authenticator-Logs) and provide support with the resulting Incident ID.
+
+### Intune support and conditional access
+The Finance and Operations (Mobile Client) app does not have Microsoft Intune policies implemented, so it does not support Intune initially. However, the app is free and can be added to [Intune](https://docs.microsoft.com/mem/intune/apps/store-apps-ios) to support scenarios like using [Conditional Access with Intune](https://docs.microsoft.com/mem/intune/protect/conditional-access#use-conditional-access-with-intune).
 
 ### Trouble signing out of the app and signing in with new credentials
 If you experience trouble signing out of the app and signing in with new credentials, then you might need to "forget old credentials" on the Azure AD sign-in screen.
