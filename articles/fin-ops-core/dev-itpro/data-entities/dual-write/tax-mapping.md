@@ -42,16 +42,16 @@ Tax setup data defines the setup for both indirect taxes (VAT, GST, Sales tax) a
 
 Tax data includes a collection of entity maps that work together during data interaction, as shown in the following table.
 
-Finance and Operations   | Other Dynamics 365 apps
+| Finance and Operations apps | Model-driven apps in Dynamics 365 | Description |
 -------------------------|---------------------------------
-Tax codes	               | msdyn\_taxcodes.md
-Tax groups	             | msdyn\_taxgroups.md
-Tax item groups	         | msdyn\_taxitemgroups.md
-Tax Exemptions	         | msdyn\_taxexemptcodes.md
-Tax Authorities	         | msdyn\_taxauthorities.md
-Withholding tax codes	   | msdyn\_withholdingtaxcodes.md
-Withholding tax groups	 | msdyn\_withholdingtaxgroups.md
-Tax Ledger Account Group | msdyn\_taxpostinggroups	
+Tax codes                   | msdyn\_taxcodes.md | 
+Tax groups                 | msdyn\_taxgroups.md | 
+Tax item groups             | msdyn\_taxitemgroups.md | 
+Tax Exemptions             | msdyn\_taxexemptcodes.md | 
+Tax Authorities             | msdyn\_taxauthorities.md | 
+Withholding tax codes       | msdyn\_withholdingtaxcodes.md | 
+Withholding tax groups     | msdyn\_withholdingtaxgroups.md | 
+Tax Ledger Account Group | msdyn\_taxpostinggroups     | 
 
 [!include [banner](../../includes/dual-write-symbols.md)]
 

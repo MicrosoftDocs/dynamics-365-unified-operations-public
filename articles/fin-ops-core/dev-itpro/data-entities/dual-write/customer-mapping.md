@@ -36,7 +36,7 @@ ms.search.validFrom: 2019-07-15
 
 [!include [preview-banner](../../includes/preview-banner.md)]
 
-Customer data can be mastered in more than one Dynamics 365 application. For example, sales activity by sales agent can bring in customer data through a D365 Sales application, and e-Commerce or retail sales activity can bring in customer data through a D365 Commerce application. Regardless of where the customer data originates, it is integrated behind the scenes. Integrated customer master helps businesses to have the flexibility to master customer data in any Dynamics 365 application but provides a comprehensive view of the customer to the Dynamics 365 application suite.
+Customer data can be mastered in more than one Dynamics 365 application. For example, a customer record can originate though sales activity in Dynamics 365 Sales (a model-driven app in Dynamics 365), or a record can originate through retail activity in Dynamics 365 Commerce (a Finance and Operations app). No matter where where the customer data originates, it is integrated behind the scenes. Integrated customer master gives you the flexibility to master customer data in any Dynamics 365 application and provides a comprehensive view of the customer across the Dynamics 365 application suite.
 
 ## Customer data flow
 
@@ -81,8 +81,6 @@ Terms of payment            | msdyn_paymentterms              | This template sy
 [!include [mapping customer accounts](includes/CustomersV3-accounts.md)]
 
 [!include [mapping customer contacts](includes/CustomersV3-contacts.md)]
-
-[!include [mapping loyalty card](includes/LoyaltyCard-msdyn-loyaltycards.md)]
 
 [!include [mapping name affixes](includes/NameAffixes-msdyn-nameaffixes.md)]
 

@@ -1,77 +1,72 @@
-# Experience Dynamics 365 supply chain management price engine on-demand
+---
+# required metadata
 
-Businesses rely on D365 Supply Chain for storing and handling prices and discounts required for the business due to its robust infrastructure with functions like trade agreements, pricelist, customer loyalty, promotions & discounts and so on. It has a pricing engine that uses complex rules and derives best price for the given quote/order context. Now, this pricing engine is exposed on Quote  and Order forms such that, Customer Engagement application users can either choose to rely on pricelist based static price or invoke the pricing engine for best prices through a single button click without logging into Supply Chain application.
+title: Synchronizing on-demand with the Dynamics 365 Supply Chain Management price engine
+description: This topic describes how to use the pricing engine in Dynamics 365 Supply Chain Management from Dynamics 365 Sales.
+author: RamaKrishnamoorthy
+manager: AnnBe
+ms.date: 03/10/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
 
-### Using the Functionality
+# optional metadata
 
-To use the functionality, go to your **Dynamics 365 Sales** environment and
-navigate to **Sales \> Orders.**
+ms.search.form: 
+# ROBOTS: 
+audience: Application User, IT Pro
+# ms.devlang: 
+ms.reviewer: rhaertle
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: global
+ms.search.industry: 
+ms.author: ramasri
+ms.dyn365.ops.version: 
+ms.search.validFrom: 2020-03-10
 
--   Create a new order (or an existing order)
+---
 
-    ![](media/840668cc7e182b1c815bbd44764f073d.png)
+# Synchronizing on-demand with the Dynamics 365 Supply Chain Management price engine
 
--   Add a new order line
+[!include [banner](../../includes/banner.md)]
 
--   In the top menu you will see a button that is labeled ‘**Price Order’** (the
-    button will say ‘**Recalculate**’ for existing orders). Press this button
+[!include [preview banner](../../includes/preview-banner.md)]
 
-*New Order:*
+Dynamics 365 Supply Chain Management includes a pricing engine that handles trade agreements, price lists, customer loyalty programs, promotions, and discounts. The pricing engine uses complex rules to determine the best price for the given quotation or order. Using dual-write, you use static pricing or the pricing engine from Supply Chain Management on the Quote and Order forms in Dynamics 365 Sales.
 
-![](media/6a8d5d4fed99cbfce361ae22260f4ac9.png)
+### Using the pricing engine from Supply Chain Management in Dynamics 365 Sales
 
-*Existing Order:*
+In **Dynamics 365 Sales**, navigate to **Sales \> Orders**.
 
-![](media/48165aed5b8ea26ea275f1ed4a630d86.png)
+1. Click **New** to create a new order, or select an existing order frome the **My Orders** list.
+2. Add a new order line.
+3. If you are creating a new order, click the **Price Order** button in the menu bar. If you are updating an existing order, click **Recalculate** in the menu bar.
 
-Once you press the button you will notice that all the following fields will get
-populated:
+    After you click **Price Order** or **Recalculate***, these fields are automatically filled in:
 
--   Detail Amount
+    + Detail Amount
+    + Discount %
+    + Discount
+    + Pre-Freight Amount
+    + Freight Amount
+    + Total Tax
+    + Total Amount
 
--   Discount %
+### How it works
 
--   Discount
+When you click **Price Order** in Dynamics 365 Sales, the **Totals** function in the **Sales Order \> View** tab in Supply Chain
+Management for the associated Sales Order is invoked. The values in the Dynamics 365 Sales order total are used to populate the corresponding fields in Supply Chain Management.
 
--   Pre-Freight Amount
-
--   Freight Amount
-
--   Total Tax
-
--   Total Amount
-
-![](media/54ba2181f5f1a9e0e9ca0c4ab7c33919.png)
-
-### How it Works
-
-When the ‘**Price Order**’ button is pressed it Sales it invokes the
-‘**Totals**’ function in the **Sales Order \> View** tab in Supply Chain
-Management for the associated Sales Order in Supply Chain Management. The values
-in the Sales order total are used to populate the corresponding fields in Sales.
-
-![](media/250fa66b73cd7ef690493902a89c0053.png)
-
-When the Sales Order Total is calculated in Supply Chain Management it goes
-through the existing trade and sales agreements for the customer and products at
-and calculated the Total values. When the ‘**Price Order’** button is invoked
-all the setup done in Supply Chain Management automatically reflects in Sales.
-
-![](media/90dbfe0a3aa6f0d6f5731d5c28eca2a7.png)
+When the Sales Order Total is calculated in Supply Chain Management it goes through the existing trade and sales agreements for the customer and products at and calculated the Total values. When the '**Price Order** button is invoked all the setup done in Supply Chain Management is automatically reflected in Dynamics 365 Sales.
 
 ### Limitations
 
-When the fields get populated in Sales the following setup is not taken into
-consideration:
+When the fields are populated in Dynamics 365 Sales, these limitations apply:
 
--   Any setup regarding Charges and Charges allocation in Supply Chain
-    Management is not replicated in Sales
-
--   Pricing does not take into consideration special Retail Pricing that is
-    specified in the **Retail Channel** field in Supply Chain Management sales
-    order line form
-
-    ![](media/d6f3e209db328d25791585db69deb457.png)
-
--   Discounts that are defined in the Trade Allowance Management section of
-    Supply Chain Management are not considered.
++ Any setup of Charges and Charges allocation in Supply Chain Management is not replicated in Dynamics 365 Sales.
++ Pricing does not take into consideration special Retail Pricing that is specified in the **Retail Channel** field in Supply Chain Management sales order line form.
++ Discounts that are defined in the Trade Allowance Management section of Supply Chain Management are not considered.

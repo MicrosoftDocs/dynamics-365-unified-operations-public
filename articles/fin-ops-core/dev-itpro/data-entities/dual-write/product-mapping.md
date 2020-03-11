@@ -56,7 +56,7 @@ The dual-write entity maps for products have been designed to flow data one-way 
 
 Product information contains all the information related to the product and its definition, such as the product dimensions or the tracking and storage dimensions. As the following table shows, a collection of entity maps is created to sync products and related information.
 
-Finance and Operations | Other Dynamics 365 apps | Description
+Finance and Operations apps | Other Dynamics 365 apps | Description
 -----------------------|--------------------------------|---
 Released products V2 | msdyn\_sharedproductdetails | The **msdyn\_sharedproductdetails** entity contains the fields from Finance and Operations apps that define the product, and that contain the product's financial and management information. 
 Common Data Service released distinct products | Product | The **Product** entity contains the fields that define the product. It includes individual products (products with subtype product) and the product variants. The following table shows the mappings.
@@ -163,20 +163,20 @@ The unit of measure concept is integrated between Finance and Operations apps an
 
 ### Initial synchronization of units
 
-When dual write is enabled, units from Finance and Operations apps are synchronized to other Dynamics 365 apps. The unit groups synchronized from Finance and Operations apps in Common Data Service have a flag set that indicates they are “Externally maintained”.
+When dual write is enabled, units from Finance and Operations apps are synchronized to other Dynamics 365 apps. The unit groups synchronized from Finance and Operations apps in Common Data Service have a flag set that indicates they are "Externally maintained".
 
 ### Matching units and unit classes/groups data from Finance and Operations and other Dynamics 365 apps
 
-First, it's important to note that the integration key for unit is msdyn_symbol. Therefore, this value must be unique in Common Data Service or other Dynamics 365 apps. Because in other Dynamics 365 apps it is the pair “Unit group ID” and “Name” that define the uniqueness of a unit, you need to consider different scenarios for matching unit data between Finance and Operations apps and Common Data Service.
+First, it's important to note that the integration key for unit is msdyn_symbol. Therefore, this value must be unique in Common Data Service or other Dynamics 365 apps. Because in other Dynamics 365 apps it is the pair "Unit group ID" and "Name" that define the uniqueness of a unit, you need to consider different scenarios for matching unit data between Finance and Operations apps and Common Data Service.
 
 For units matching/overlapping in Finance and Operations apps and other Dynamics 365 apps:
 
-+ **The unit belongs to a unit group in other Dynamics 365 apps that corresponds to the associated unit class in Finance and Operations apps**. In this case, the field msdyn_symbol in other Dynamics 365 apps must be filled in with the unit symbol from Finance and Operations apps. Therefore, when the data will be matched, and the unit group will be set as “Externally maintained” in other Dynamics 365 apps.
++ **The unit belongs to a unit group in other Dynamics 365 apps that corresponds to the associated unit class in Finance and Operations apps**. In this case, the field msdyn_symbol in other Dynamics 365 apps must be filled in with the unit symbol from Finance and Operations apps. Therefore, when the data will be matched, and the unit group will be set as "Externally maintained" in other Dynamics 365 apps.
 + **The unit belongs to a unit group in other Dynamics 365 apps that does not correspond to the associated unit class in Finance and Operations apps (no existing unit class in Finance and Operations apps for the unit class in other Dynamics 365 apps).** In this case, the msdyn_symbol must be filled in with a random string. Note that this value must be unique in other Dynamics 365 apps.
 
 For units and unit classes in Finance and Operations not existing in other Dynamics 365 apps:
 
-As part of dual-write the unit groups from Finance and Operations apps and its corresponding units are created and synchronized in other Dynamics 365 apps and Common Data Service and the unit group will be set as “Externally maintained”. No extra bootstrapping effort is required.
+As part of dual-write the unit groups from Finance and Operations apps and its corresponding units are created and synchronized in other Dynamics 365 apps and Common Data Service and the unit group will be set as "Externally maintained". No extra bootstrapping effort is required.
 
 For units in other Dynamics 365 apps that do not exist in Finance and Operations apps:
 
