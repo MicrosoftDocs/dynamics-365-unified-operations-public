@@ -35,8 +35,6 @@ ms.dyn365.ops.version: Platform update 2
 [!include [banner](../includes/banner.md)]
 
 
-[!include [release notes](../includes/release-notes.md)]
-
 ## Application releases
 
 To see what's new or changed in each release of a Finance and Operations app, see the following topics:
