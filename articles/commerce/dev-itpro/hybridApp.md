@@ -5,7 +5,7 @@ title: Set up POS hybrid app on Android and iOS
 description: This topic shows how to set up the POS hybrid app on Android and iOS.
 author: mugunthanm 
 manager: AnnBe
-ms.date: 11/25/2019
+ms.date: 03/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -50,7 +50,7 @@ To set up and install Xamarin on Windows, go to <https://docs.microsoft.com/xama
 ### Update Xamarin
 
 > [!NOTE]
-> Please use only Xamarin.Android SDK version < 10.0. 
+> We recommend that you use Xamarin.Android SDK version < 10.0. 
 
 After you've installed Xamarin, you must update it to the latest stable version (Xamarin.Android SDK version must be < 10.0).
 
