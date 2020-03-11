@@ -440,22 +440,19 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
 
 2. Download the following Microsoft Windows Installers (MSIs) into a file share that is accessible by all VMs.
 
-| Component | Download link |
-|-----------|---------------|
-| SNAC – ODBC driver 13 | <https://www.microsoft.com/download/details.aspx?id=53339> |
-| SNAC – ODBC driver 17 | <https://www.microsoft.com/download/details.aspx?id=56567> |
-| Microsoft SQL Server Management Studio 17.5 | <https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms> |
-| Microsoft Visual C++ Redistributable Packages for Microsoft Visual Studio 2013 | <https://support.microsoft.com/help/3179560> |
-| Microsoft Visual C++ Redistributable Packages for Microsoft Visual Studio 2017 | <https://lcs.dynamics.com/V2/SharedAssetLibrary> > Models > "VC++ 17 Redistributables"|
-| Microsoft Access Database Engine 2010 Redistributable | <https://www.microsoft.com/download/details.aspx?id=13255> |
+| Component | Download link | Expected File Name |
+|-----------|---------------|--------------------|
+| SNAC – ODBC driver 13 | <https://www.microsoft.com/download/details.aspx?id=53339> | msodbcsql.msi |
+| SNAC – ODBC driver 17 | <https://www.microsoft.com/download/details.aspx?id=56567> | msodbcsql_17.msi |
+| Microsoft SQL Server Management Studio 17.5 | <https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms> | SSMS-Setup-*.exe |
+| Microsoft Visual C++ Redistributable Packages for Microsoft Visual Studio 2013 | <https://support.microsoft.com/help/3179560> | vcredist_x64.exe |
+| Microsoft Visual C++ Redistributable Packages for Microsoft Visual Studio 2017 | <https://lcs.dynamics.com/V2/SharedAssetLibrary> > Models > "VC++ 17 Redistributables"| vc_redist.x64_14_16_27024.exe |
+| Microsoft Access Database Engine 2010 Redistributable | <https://www.microsoft.com/download/details.aspx?id=13255> | AccessDatabaseEngine_x64.exe |
+| The Microsoft .NET Framework version 4.0–4.8 (CLR 4.0) | <https://dotnet.microsoft.com/download/thank-you/net48-offline> | ndp48-x86-x64-allos-enu.exe |
 
 > [!IMPORTANT]
 > Make sure the Microsoft SQL Server Management Studio setup is in the same language as the operating system of the target machine.
-> Ensure the installer files are named as defined in NodeTopologyDefinition.xml.
-> msodbcsql.ms
-> SSMS-Setup-*.exe
-> vcredist_x64.exe
-> AccessDatabaseEngine_x64.exe
+> Ensure the installer files are named as defined in the Expected File Name column.
 
 #### Follow these steps for each VM, or use remoting from a single machine
 
@@ -555,15 +552,20 @@ The on-premises agent certificate can be reused across multiple sandbox and prod
 Only user accounts that have the Global Administrator directory role can add certificates to authorize LCS. By default, the person who signs up for Microsoft Office 365 for your organization is the global administrator for the directory.
 
    > [!IMPORTANT]
-   > You must configure the certificate exactly one time per tenant. All on-premises environments can use the same certificate to connect with LCS.
+   > You must configure the certificate exactly **one** time per tenant. All on-premises environments under the same tenant have to use the same certificate to connect with LCS.
    > If you run this in a server machine like Windows Server 2016, you must turn off the IE Enhanced Security Configuration temporarily. If you don't, the Azure login window content will be blocked.
 
-1. Download and install the latest version of Azure PowerShell on a client machine. For more information, see [Installing the Azure PowerShell Service Management module](https://docs.microsoft.com/powershell/azure/servicemanagement/install-azure-ps?view=azuresmps-4.0.0).
-2. Sign in to the [customer's Azure portal](https://portal.azure.com) to verify that you have the Global Administrator directory role.
-3. Run the following script from the **Infrastructure** folder.
+1. Sign in to the [customer's Azure portal](https://portal.azure.com) to verify that you have the Global Administrator directory role.
+
+2. Check if the certificate is already registered. To do so, run the following script from the **Infrastructure** folder.
     ```powershell
     Install-Module AzureRM
     Import-Module AzureRM
+    .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint <OnPremLocalAgent Certificate Thumbprint> -Test
+    ```
+    
+3. If the script indicates that the certificate is not registered run the following command:
+    ```powershell
     .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint <OnPremLocalAgent Certificate Thumbprint>
     ```
 
@@ -834,6 +836,9 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     > [!IMPORTANT]
     > Before you can invoke *Invoke-ServiceFabricEncryptText*, you need to install [Microsoft Azure Service Fabric SDK](https://docs.microsoft.com/azure/service-fabric/service-fabric-get-started#sdk-installation-only).
     > If you encounter the following error, "Invoke-ServiceFabricEncryptText is not recognized command" after you install the Azure Service Fabric SDK, restart the computer and retry.
+
+    > [!CAUTION]
+    > After you finish invoking all *Invoke-ServiceFabricEncryptText* commands, remember to delete the PowerShell history as otherwise your non-encrypted credentials will be visible.
 
 ### <a name="setupssis"></a> 16. Set up SSIS
 
