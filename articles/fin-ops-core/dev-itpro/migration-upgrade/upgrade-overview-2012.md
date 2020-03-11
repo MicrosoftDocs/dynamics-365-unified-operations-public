@@ -5,7 +5,7 @@ title: Upgrade from AX 2012 to Finance and Operations
 description:  This topic describes the process that customers who currently run Microsoft Dynamics AX 2012 can use to move their data and code to Finance and Operations.
 author: tariqbell
 manager: AnnBe
-ms.date: 12/10/2018
+ms.date: 03/11/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -116,6 +116,11 @@ When you purchase a subscription, you will receive details about how to sign up 
 - All environments in the project are hosted in Azure.
 - The Azure subscription that is associated with the project is managed by Microsoft. Therefore, there is no separate billing for Azure costs. The costs are covered by your subscription.
 - The production environment in the project is maintained by Microsoft. Therefore, code deployments, upgrades, and infrastructure maintenance are run directly by Microsoft, not by your staff. 
+
+### Identify the project as an AX2012 Upgrade
+When you first login to your LCS Implementation Project, you will be guided through the Project Onboarding wizard.  If you are not prompted automatically, you can always visit the **Project Onboarding** page from the navigation menu in your project, near Project Settings, at a later time.
+
+Within Project Onboarding, there is a section titled **Project Scope** and a field called *Legacy System* which can be used to call out AX2012 Upgrade.  This is imperative to identify the project this way, so that the Sandbox infrastructure deployed is compatible with the upgrade process outlined here.  If this is not done early on in the project, you could accidentally deploy on newer infrastructure which is not compatible with this process and risk delays in the Upgrade effort.
 
 ### Perform the AX 2012 preparation tasks
 Complete the tasks that the upgrade analyzer tool discovered, and that are documented in your upgrade project plan. Your Microsoft Dynamics AX system administrator and database administrator (DBA) must complete these tasks.
