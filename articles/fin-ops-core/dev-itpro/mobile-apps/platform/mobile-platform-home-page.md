@@ -103,7 +103,7 @@ During development it can be useful to attach a debugger to get more detailed in
 2. Install the Android debug apk for the Finance and Operations app on an Android device:
     - One time only, allow the installation of apk files -  Go to **Menu** > **Settings** > **Security** and then check **Unknown Sources** to allow the phone to install apps from sources other than the Google Play Store.
     - Uninstall the Finance and Operations app - Ensure that any previous version of the Finance and Operations app has been uninstalled.
-    - Download the apk file - From the device’s browser, navigate to the latest [Finance and Operations Android debug apk on Github](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/blob/master/android-debug.apk) and click **Download** (or use [this direct link to the file](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/raw/master/android-debug.apk)).
+    - Download the apk file - From the device’s browser, navigate to the latest [Finance and Operations Android debug apk on GitHub](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/blob/master/android-debug.apk) and click **Download** (or use [this direct link to the file](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/raw/master/android-debug.apk)).
     - Install the Finance and Operations apk file - Confirm install of the Finance and Operations app via the apk file.
     - Run the debug Finance and Operations app on the device and sign in.
 
