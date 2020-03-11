@@ -60,6 +60,9 @@ These topics describe mapping between concepts in Finance and Operations applica
 
 + [Integrated customer master](customer-mapping.md)
 + [Unified product experience](product-mapping.md)
+
+    + [Integrated sites and warehouses](sites-warehouses-mapping.md)
+
 + [Integrated vendor master](vendor-mapping.md)
 
     + [Switch between vendor designs](vendor-switch.md)
@@ -79,5 +82,6 @@ These topics describe mapping between concepts in Finance and Operations applica
 
 ## Support
 
++ [Support for Field Service solutions and Project Service Automation solutions](field-service-project-service-automation.md)
 + [Initial synchronization choices and administration views](initial-sync.md)
 + [Troubleshooting data integration](dual-write-troubleshooting.md)

@@ -3,7 +3,7 @@
 
 title: Set up on-premises projects in Lifecycle Services (LCS)
 description: This topic provides information about the process of setting up an on-premises project in Microsoft Dynamics Lifecycle Services (LCS). 
-author: manalidongre
+author: PeterRFriis
 manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 60373
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: manado
+ms.author: perahlff
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

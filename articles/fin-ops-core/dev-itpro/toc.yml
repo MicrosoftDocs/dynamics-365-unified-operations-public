@@ -174,8 +174,12 @@
                     href: data-entities/dual-write/bootstrap-company-data.md
                 - name: Integrated customer master
                   href: data-entities/dual-write/customer-mapping.md
-                - name: Unified product experience
-                  href: data-entities/dual-write/product-mapping.md
+                - name: Product integration
+                  items:
+                  - name: Unified product experience
+                    href: data-entities/dual-write/product-mapping.md
+                  - name: Integrated sites and warehouses
+                    href: data-entities/dual-write/sites-warehouses-mapping.md
                 - name: Finance and tax data
                   items:
                   - name: Access to finance and tax reference data
@@ -206,6 +210,8 @@
                   href: data-entities/dual-write/loyalty.md
             - name: Support for dual-write
               items:
+                - name: Support for Field Service solutions and Project Service Automation solutions
+                  href: data-entities/dual-write/field-service-project-service-automation.md
                 - name: Initial synchronization
                   href: data-entities/dual-write/initial-sync.md
                 - name: Troubleshooting data integration

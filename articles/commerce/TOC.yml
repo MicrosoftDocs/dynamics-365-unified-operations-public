@@ -92,8 +92,6 @@
             href: get-started/whats-new-10-0-9.md
           - name: Commerce version 10.0.8 (February 2020)
             href: get-started/whats-new-10-0-8.md
-          - name: Retail version 10.0.7 (January 2020)
-            href: get-started/whats-new-10-0-7.md
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features in Finance and Operations
@@ -578,6 +576,8 @@
           href: retail-shipping-discount.md
         - name: Set up coupons  
           href: retail-coupons.md
+        - name: Show discounts in POS
+          href: discounts-pos.md
         - name: Price reports 
           href: price-report.md
         - name: Create channel-specific trade agreements 
@@ -664,6 +664,8 @@
         items:
         - name: Create a call center order 
           href: tasks/create-call-center-orders.md
+        - name: Change mode of delivery in POS
+          href: POS-change-delivery-mode.md
       - name: Distributed order management	  
         items:
         - name: DOM overview
@@ -1856,6 +1858,8 @@
             href: e-commerce-extensibility/setup-dev-environment.md
           - name: Configure a development environment (.env) file
             href: e-commerce-extensibility/configure-env-file.md
+          - name: Set up Azure DevOps code sharing and create a build pipeline
+            href: e-commerce-extensibility/set-up-code-sharing-build-pipeline.md
         - name: Platform overview
           items:
           - name: Architectural overview
