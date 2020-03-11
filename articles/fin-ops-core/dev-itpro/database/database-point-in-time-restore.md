@@ -5,7 +5,7 @@ title: Database point-in-time restore (PITR)
 description: This topic explains how to perform a point-in-time restore of a database for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 02/20/2020
+ms.date: 03/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -55,10 +55,12 @@ If you have used the Admin User Provisioning Tool on your environment to change 
 
 ## Known issues
 
-### Point-in-time restore breaks the chain of available restore points
-The restore database process always creates a new database based on a previous point-in-time snapshot.  Because of this, the new database does not have any restore history, but does begin to accrue new restore points going forward. This means that after performing point-in-time restore you will not be able to do so again using the same restore date and time.  
+### Breaking the chain of available restore points
+Several common actions create a new database, which won't have the same restore point history built up as the previously used database.  These scenarios include point-in-time restore, database refresh, database import, point-in-time restore from Production to Sandbox. In addition, if you apply a Software Deployable Package to your environment and it fails during update of the database, using the Rollback functionality in Lifecycle Services will perform a point-in-time restore of the database which also creates a new database. 
 
-### Restore is denied for environments running Platform update 3 or earlier
+Because of this, the new database does not have any restore history, but does begin to accrue new restore points going forward. This means that after performing any of the above actions you will not be able to do so again using the same restore date and time.  
+
+### Restore is denied for environments running Platform update 20 or earlier
 The restore database process cannot be completed if the environment is running Platform update 3 or earlier. For more information, see the [list of currently supported Platform updates](..//migration-upgrade/versions-update-policy.md).
 
 
