@@ -57,7 +57,7 @@ Custom help content will typically originate from one of three sources.
 
 3. HTML files that are created specifically for your solution
 
-    Learn more about the [metadata](#metadata) that must be added to your HTML files for context-sensitive help and search to work correctly.
+    [Learn more about the metadata](#metadata) that must be added to your HTML files for context-sensitive help and search to work correctly.
 
 ## Process
 
@@ -77,7 +77,7 @@ The following table outlines the main objectives that administrators typically h
 |Objective |Learn more  |
 |----------|------------|
 |I want to give my users a customized in-product help experience that reflects their actual solution|See [Custom help sites](#custom-help-sites) and [Create documentation or training with Task Recorder](../user-interface/task-recorder-training-docs.md) |
-|I want to use Microsoft's Help content as a baseline for help specific to my solution| See [Custom Help Toolkit: The HTML From Repos Generator tool](custom-help-toolkit-HtmlFromRepoGenerator.md)  |
+|I want to use Microsoft's Help content as a baseline for help specific to my solution| See [Custom Help Toolkit: The HtmlFromRepoGenerator tool](custom-help-toolkit-HtmlFromRepoGenerator.md)  |
 |I want to contribute to Microsoft's Help content|See [Extend, customize, and collaborate on the Help](contributor-guide.md)        |
 |I want to reuse my existing Dynamics AX content|See [Convert Dynamics AX custom Help for use in Dynamics 365](migrate-dynamicsax2012.md)  |
 |I want to set up a website for my Help content|See [Deploying help websites](#custom-help-sites) |
@@ -94,9 +94,7 @@ In order for the product to connect to your Help content, you must customize the
 
 - Your content is indexed by a search service
 
-    The in-product Help pane generates links to context-sensitive content based on a search string that is sent to the configured Help websites. The search string includes information about the form that the Help pane was activated from and searches for content that contains that form as part of the article's metadata. Your search service must return links to related topics hosted on your website based on the metadata in the search query.
-
-    <a name="metadata"></a>The search index is based on the presence of specific metadata in the Help articles as described in following table:
+    If you are planning to use the [AzureSearchCustomHelp solution](walkthrough-help-azure.md) provided as part of the [Custom Help Toolkit](custom-help-toolkit.md) for context-sensitive help, the Help pane will generate a query to be run against the search service's index. <a name="metadata"></a>The query depends on specific metadata in the Help articles as described in following table:
 
     |Property  |Description  |
     |----------|-------------|
@@ -105,8 +103,6 @@ In order for the product to connect to your Help content, you must customize the
     |ms.search.form | The value contains the Application Object Tree (AOT) name of a form and is used for context-sensitive search from the Help pane. |
     |ms.search.scope|The value determines which client the Help topic is shown in. You can specify one or more values. Values includes Core, Operations, Retail, and Human Resources.|
     |ms.locale |This value indicates the language of the topic. This is mapped against the current browser locale when the Help pane searches the content. the target custom help website can configure language fallback. For more information, see [Language and locale descriptors in across product and Help](language-locale.md). |
-
-- Both website and search service are connected to the Help pane
 
 In [Deploying custom help to Azure](walkthrough-help-azure.md), we describe an approach for hosting content on Azure, including how you can set up a search service that indexes your content so that it can be found by the in-product Help pane. If you do not have an [Azure subscription](/azure/guides/developer/azure-developer-guide#understanding-accounts-subscriptions-and-billing), create an account before you begin. You can start with a free account for 12 months. For more information, see [Create your Azure free account today](https://azure.microsoft.com/free/). 
 

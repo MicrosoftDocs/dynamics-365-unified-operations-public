@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Operations
 
 ---
 
-# Custom Help Toolkit: The HTML From Repo Generator tool
+# Custom Help Toolkit: The HtmlFromRepoGenerator tool
 
 [!include [banner](../includes/banner.md)]
 

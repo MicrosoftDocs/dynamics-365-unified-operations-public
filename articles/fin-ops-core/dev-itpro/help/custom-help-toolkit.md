@@ -38,19 +38,19 @@ Microsoft has published a GitHub repository with scripts and tools that can help
 
 The toolkit is available at [https://github.com/microsoft/dynamics365f-o-custom-help/](https://github.com/microsoft/dynamics365f-o-custom-help/). The repo contains the following tools and the source code for the tools:
 
-- HTML From Repo Generator tool
+- HtmlFromRepoGenerator tool
 
-    For more information, see [Custom Help Toolkit: The HTML From Repo Generator tool](custom-help-toolkit-HtmlFromRepoGenerator.md)
+    For more information, see [Custom Help Toolkit: The HtmlFromRepoGenerator tool](custom-help-toolkit-HtmlFromRepoGenerator.md)
 
-- Convert HTML to JSON tool
+- ConvertHtmlToJson tool
 
-    For more information, see [Custom Help Toolkit: The Convert HTML to JSON tool](custom-help-toolkit-ConvertHtmlToJson.md)
+    For more information, see [Custom Help Toolkit: The ConvertHtmlToJson tool](custom-help-toolkit-ConvertHtmlToJson.md)
 
-- HTML Locale Changer tool
+- HtmlLocaleChanger tool
 
-    For more information, see [Custom Help Toolkit: The HTML Locale Changer tool](custom-help-toolkit-HtmlLocaleChanger.md)
+    For more information, see [Custom Help Toolkit: The HtmlLocaleChanger tool](custom-help-toolkit-HtmlLocaleChanger.md)
 
-- Help Pane extension Visual Studio project
+- "Help Pane extension" Visual Studio project
 
     For more information, see [Connect your Help website with the Help pane](connect-help-pane.md)
 

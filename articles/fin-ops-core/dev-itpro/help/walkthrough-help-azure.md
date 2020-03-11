@@ -34,19 +34,15 @@ ms.dyn365.ops.version: Operations
 
 [!include [banner](../includes/banner.md)]
 
-You can set up an Azure web app and host your content there for easy integration with the in-product Help pane. If you don't have an [Azure subscription](/azure/guides/developer/azure-developer-guide#understanding-accounts-subscriptions-and-billing), create an account before you begin. You can start with a free account for 12 months. For more information, see [Create your Azure free account today](https://azure.microsoft.com/free/).  
+You can set up an Azure web app and use the web app to host your content for easy integration with the in-product Help pane. If you don't have an [Azure subscription](/azure/guides/developer/azure-developer-guide#understanding-accounts-subscriptions-and-billing), create an account before you begin. You can start with a free account for 12 months. For more information, see [Create your Azure free account today](https://azure.microsoft.com/free/).  
 
-There are several different ways of getting your content hosted on Azure. For example, you can set up Azure Blob storage with your Help as HTML files, set up a web app to consume that content, and then set up a search service that indexes your Blob storage. For more information, see [Azure Blob storage documentation](/azure/storage/blobs/).  
-
-But in this article, we will take you through the steps for setting up a web app to host your content and a search service to make the content discoverable by the in-product Help pane, using tools and scripts that are part of the [Custom Help Toolkit](custom-help-toolkit.md).  
+In this article, we will describe the steps for setting up a web app to host your content and setting up a search service to make the content discoverable by the in-product Help pane.  
 
 ## Get started
 
-First, you must have content that you want to deploy to a website so that it can be accessed by the in-product Help pane. You can include a copy of Microsoft's content in your website, or you can deploy content that only describes your own functionality. For different scenarios of how custom help matches the concrete solutions, see [Custom Help Overview](custom-help-overview.md).  
+You must have [content](preparing-content.md) hosted on a website so that it can be accessed by the in-product Help pane. You can include a copy of Microsoft's content in your website, or you can deploy content that only describes your own functionality.
 
-If you want to include Microsoft's content, you must clone the GitHub repo manually or by using the [Custom Help Toolkit](custom-help-toolkit.md).  
-
-If you want to publish just your own content, you must have it available as HTML files. In [Extend, Customize, and Collaborate on the Help](contributor-guide.md), we suggest that you do what we do on the *docs.microsoft.com* site: Create the content in MarkDown files and then use DocFx.exe to generate HTML files. The [Custom Help Toolkit](custom-help-toolkit.md) includes the [HTML From Repos Generator tool](custom-help-toolkit-HtmlFromRepoGenerator.md) that can help you prepare the HTML files even if you do not fork Microsoft's content.  
+If you want to publish just your own content, in [Extend, Customize, and Collaborate on the Help](contributor-guide.md), we suggest that you do what we do on the *docs.microsoft.com* site: Create the content in MarkDown files and then use DocFx.exe to generate HTML files. The [Custom Help Toolkit](custom-help-toolkit.md) includes the [HtmlFromRepoGenerator tool](custom-help-toolkit-HtmlFromRepoGenerator.md) that can help you prepare the HTML files even if you do not derive your content from Microsoft's content.  
 
 ### Process overview
 
@@ -60,9 +56,10 @@ The general process for creating your Azure resources consists of the following 
 
         The HTML files contain your Help content, no matter if it's based on Microsoft's content or not.  
 
-    - The storage account with a Blob container stores JSON files  
+    - The storage account uses a Blob container to store JSON files  
 
-        The JSON files are your Help files converted to JSON so that they can be used to generate an index of your content for search purposes. For more information, see [Custom Help Toolkit: The Convert HTML to JSON tool](custom-help-toolkit-ConvertHtmlToJson.md).  
+        The JSON files are your Help files converted to JSON so that they can be used to generate an index of your content for search purposes. For more information, see [Custom Help Toolkit: The ConvertHtmlToJson tool](custom-help-toolkit-ConvertHtmlToJson.md).  
+
     - The Search service performs indexing  
 
         Indexing makes your content discoverable by the in-product Help pane. For more information, see [Create a basic index in Azure Cognitive Search](/azure/search/search-what-is-an-index).
@@ -70,43 +67,36 @@ The general process for creating your Azure resources consists of the following 
 3. [Upload HTML files](#uploadhtml) to the Web App by using File Transfer Protocol (FTP).
 
     Place the HTML files in the relevant language subfolders. For the language name to use for the subfolder, see [Language and locale descriptors across product and Help](language-locale.md).  
+
 4. [Upload JSON files](#jsonstorage) into Blob storage in the Storage container, in a subfolder that corresponds to the HTML language subfolder.  
 5. [Configure the Search service](#searchconfig) to have a data source, index, and indexer on the Search service by using the REST API.
 
     In this example, we use an API tool, [Postman](https://www.postman.com/), to make the REST API calls. The [REST API CREATION.txt file](https://github.com/microsoft/dynamics365f-o-custom-help/tree/master/Help%20Pane%20extension) contains sample REST API requests to create a data source, index, and indexer. You must create language-specific indexes to use a language-specific index analyzer.
 
-    The Azure portal includes the **Import data** wizard that can help you configure the Search service. However, in many cases it is preferable to use the REST API instead.
-
 In the following, we assume that you have an Azure account and a valid subscription. If you don't have an [Azure subscription](/azure/guides/developer/azure-developer-guide#understanding-accounts-subscriptions-and-billing), create an account before you begin. You can start with a free account for 12 months. For more information, see [Create your Azure free account today](https://azure.microsoft.com/free/).  
 
 ## <a name="resgr"></a>Create a resource group
 
-To host your Web App, Search service, and Storage account, you must first create one or more resource groups. We recommend that you create all resources in a single resource group for easy'management.  
+To host your Web App, Search service, and Storage account, you must first create one or more resource groups. We recommend that you create all resources in a single resource group for easy management. For more information, see [Create resource groups](/azure/azure-resource-manager/management/manage-resource-groups-portal#create-resource-groups)
 
 ### To create a resource group
 
 1. In the [Azure portal](https://portal.azure.com/), choose **Resource groups**, choose **Add**, and then specify a name for the resource group, such as *MyCustomHelp*.
-2. Choose **Review+Create** to finish creating the resource group.
+2. Choose **Review + Create** to finish creating the resource group.
 
 ## <a name="webapp"></a>Create a web app
 
-To host your content, you can create a web app in Azure. If you have an existing website that is based on a .NET Core app, for example, you can deploy that as a web application straight from Visual Studio. For more information, see [Create an ASP.NET Core web app in Azure](/azure/app-service/app-service-web-get-started-dotnet). Alternatively, you [create a static HTML web app in Azure](/azure/app-service/app-service-web-get-started-html).
+To host your content, you will need to create a web app in Azure. For more information, see [Create a static HTML web app in Azure](/azure/app-service/app-service-web-get-started-html).
 
 ### To create the web app
 
 1. In the [Azure portal](https://portal.azure.com/), go to your resource group, choose **Add**, choose **Web App**, and then fill in the fields in the form.  
 
-    Specify a name for the web app, the Azure region, the runtime stack, and other information. For more information, see [Create an ASP.NET Core web app in Azure](/azure/app-service/app-service-web-get-started-dotnet).
+    Specify a name for the web app, the Azure region, the runtime stack, and other information. If you are unsure which runtime stack you should use, you can use any **.Net Core** stack. For more information, see [Create an ASP.NET Core web app in Azure](/azure/app-service/app-service-web-get-started-dotnet). When the deployment completes, choose **Go to resource**.
 
-2. When the deployment completes, choose **Go to resource**, as the next step so that you can create or reset the deployment credentials for the web app. You will need the user name and password that you create here in the next step when you upload the HTML files.  
+2. Select **Deployment Center** from the left blade. Select **FTP** under **Manual Deployment (push/sync)** then choose **Dashboard**. You can use either App Credentials or User Credentials to upload your content to the web app that you have created. You will need the FTP/FTPS endpoint, the username, and the password to upload your content.
 
-    You can configure the deployment to suit your needs, for example if you want to run CI/CD on the custom help website. In the following, we assume that you want to just upload content once. You can always go back to the deployment settings by opening the **Deployment center** for your web app. For more information, see [Deployment best practices](/azure/app-service/deploy-best-practices).
-
-3. In the **Overview** section of the web app, under **Manual deployment**, choose **FTP/S**, and then choose **Dashboard**.
-
-    We recommend that you use *app credentials* rather than *user credentials*. You might also want to copy the username and password to a temporary location before you continue. We also recommend that you reset the credentials once you have completed the deployment. For more information, see [Configure deployment credentials for Azure App Service](/azure/app-service/deploy-configure-credentials).
-
-Next, you add the HTML files to the web app. You can use an FTP client such as [FileZilla](https://filezilla-project.org/), [Visual Studio](https://www.visualstudio.com/vs/community/), [Cyberduck](https://cyberduck.io/), or [WinSCP](https://winscp.net/index.php). For more information, see [Deploy your app to Azure App Service using FTP/S](/azure/app-service/deploy-ftp).
+Next, you will add your HTML files to the web app. You can use an FTP client such as [FileZilla](https://filezilla-project.org/), [Visual Studio](https://www.visualstudio.com/vs/community/), [Cyberduck](https://cyberduck.io/), or [WinSCP](https://winscp.net/index.php). For more information, see [Deploy your app to Azure App Service using FTP/S](/azure/app-service/deploy-ftp).
 
 ### <a name="uploadhtml"></a>To upload HTML files
 
@@ -114,53 +104,52 @@ Next, you add the HTML files to the web app. You can use an FTP client such as [
 
 2. Enter the host (FTPS endpoint value from the **Deployment center** for the web app), user name, and password, and then connect.  
 
-    No matter which FTP client you prefer, you must connect using the credentials in the **Deployment center** for the web app. Depending on your FTP client, the connection field names may differ.
-
-3. Under */site/wwwroot* on the host, create a language subfolder for each of the languages that your custom help site must support. Upload the HTML files and other associated files to the language subfolder.  
+3. Under */site/wwwroot* on the host, create a language folder for each of the languages that your custom help site must support. Upload the HTML files and other associated files to each language folder.  
 
 > [!IMPORTANT]
 > Remember to use folder names that map to the languages that the client expects. For more information, see [Language and locale descriptors in across product and Help](language-locale.md).
 
-Your custom help site has now been deployed to Azure. You can explore it in a browser and make any changes that you prefer. For the sake of this walkthrough, we assume that the website is now fully functional and does not require additional changes.
+Your custom help site has now been deployed to Azure and should be visible in a browser.
 
 ## <a name="jsonstorage"></a>Create storage for the JSON files
 
-Next, you create a storage account with a Blob container that will store JSON files that are used by the search service that you then [create](#searchservice) and [configure](#searchconfig). For more information about Azure storage, see [Azure Storage Documentation](/azure/storage/).
+Next, you will create a storage account with a Blob container that will store JSON files that are used by the search service. For more information about Azure storage, see [Azure Storage Documentation](/azure/storage/).
 
-You can generate these JSON files from your Help files with the ConvertHtmlToJson tool that is part of the Custom Help Toolkit. For more information, see [Convert HTML To JSON tool](custom-help-toolkit-ConvertHtmlToJson.md).
+You can generate these JSON files from your Help files by using the [ConvertHtmlToJson tool](custom-help-toolkit-ConvertHtmlToJson.md) that is part of the Custom Help Toolkit.
 
 ### To create storage for the JSON files
 
-1. In the [Azure portal](https://portal.azure.com/), go to your resource group, choose **Add**, choose **Storage account**, and then fill in the fields in the form. For more information, see [Create a storage account](/azure/storage/common/storage-account-create#create-a-storage-account).  
+1. In the [Azure portal](https://portal.azure.com/), go to your resource group, choose **Add**, choose **Storage account**, specify a **Storage account name**, and choose **Review + Create**. For more information, see [Create a storage account](/azure/storage/common/storage-account-create#create-a-storage-account).  
+
 2. Validate and create the storage account.
 
     After the deployment is completed, the new storage account is listed under the resource group.  
-3. Choose the storage account name, and under **Blob Service**, choose **Containers**, and then add a container. For more information, see [Quickstart: Upload, download, and list blobs with the Azure portal](/azure/storage/blobs/storage-quickstart-blobs-portal).  
 
-    > [!NOTE]
-    > You must specify if the content in the container must be publicly accessible. The **Public Access Level** can be set to any of its valid values.
+3. Choose the storage account name, choose **Containers** under **Blob Service** in the left blade, and then add a container. For more information, see [Quickstart: Upload, download, and list blobs with the Azure portal](/azure/storage/blobs/storage-quickstart-blobs-portal).  
 
-You can now upload the JSON files. Create a folder structure that matches the folder structure you created for the HTML files to match the languages of your solution. For example, create en-US virtual folder in the container, and upload the en-US JSON files to this folder.  
+You can now upload your JSON files. The folder structure that you use must match the folder structure you created for the HTML files to match the languages of your solution. For example, if your web app has HTML files in an ```en-US``` folder, create an ```en-US``` folder in the container, and upload the en-US JSON files to this folder.  
 
-There are several ways to upload JSON files to the Blob container that you created earlier. If you prefer to use a UI, [Azure Storage Explorer](/azure/storage/blobs/storage-quickstart-blobs-storage-explorer) is a convenient tool for managing file operations by using Azure storage. If you prefer a command-line option, you can use AzCopy. For more information, see [Transfer data with the AzCopy on Windows](/azure/storage/common/storage-use-azcopy).  
-
-When your JSON files have been uploaded to the Azure Blob container, you must add the search service that will crawl and index your content based on the JSON files.
+There are several ways to upload JSON files to the Blob container. If you prefer to use a UI, [Azure Storage Explorer](/azure/storage/blobs/storage-quickstart-blobs-storage-explorer) is a convenient tool for managing file operations by using Azure storage. If you prefer a command-line option, you can use AzCopy. For more information, see [Transfer data with the AzCopy on Windows](/azure/storage/common/storage-use-azcopy).  
 
 ## <a name="searchservice"></a>Create a search service
 
-Next, you will create a search service so that your content can be indexed and found by the in-product Help pane. We recommend that you set up an Azure Cognitive Search service under your current subscription and the same resource group as your custom help site. For more information, see [Indexers in Azure Cognitive Search](/azure/search/search-indexer-overview).  
+Next, you will create a search service so that your content can be indexed and found by the in-product Help pane. For more information, see [What is Azure Cognitive Search?](/azure/search/search-what-is-azure-search).  
 
 ### To create a search service
 
-1. In the [Azure portal](https://portal.azure.com/), go to your resource group, choose **Add**, choose **Azure Cognitive Search**, and then fill in the fields in the form.  
+1. In the [Azure portal](https://portal.azure.com/), go to your resource group, choose **Add**, choose **Azure Cognitive Search**, specify a service name under **URL**, then choose **Review + Create**.  
 
     The service will be added to your resource group.
 
 ## <a name="searchconfig"></a>Configure the search service
 
-In the previous section, you created a search service. You must now configure it by creating a data source, index, and indexer, so that the JSON files that you uploaded to the Blob container will be indexed and searchable. You can see an example of how this works in the Azure docs at [Quickstart: Create an Azure Cognitive Search index in the Azure portal](/azure/search/search-get-started-portal) and [Tutorial: Index JSON blobs from Azure Storage using REST](/azure/search/search-semi-structured-data). In the examples that follow, we use the [Postman tool](https://www.getpostman.com/) to make several API calls. However, you can use your own method to call those APIs.  
+In the previous section, you created a search service. You must now configure it by creating a data source, index, and indexer, so that the JSON files that you uploaded to the Blob container will be indexed and searchable. In the examples that follow, we use the [Postman tool](https://www.getpostman.com/) to make several API calls; however, you can use your own method to call those APIs.  
 
-The Azure portal also includes the **Import data** wizard that can help you configure the search service. For more information, see [Create a basic index in Azure Cognitive Search](/azure/search/search-what-is-an-index).  
+
+
+
+
+
 
 ### To create a data source
 

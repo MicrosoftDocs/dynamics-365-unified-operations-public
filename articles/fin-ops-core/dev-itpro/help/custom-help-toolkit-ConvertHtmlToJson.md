@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Operations
 
 ---
 
-# Custom Help Toolkit: The Convert HTML To JSON tool
+# Custom Help Toolkit: The ConvertHtmlToJson tool
 
 [!include [banner](../includes/banner.md)]
 
@@ -40,7 +40,7 @@ The custom help toolkit includes the **ConvertHtmlToJson** tool that converts HT
 
 The JSON files include metadata that is used by the indexer to identify the form and language that the target Help page is intended for.  
 
-When you run the tool, you must specify the location of the HTML files with your Help content and the destination path. You can generate the HTML files with the [HTML From Repos Generator tool](custom-help-toolkit-HtmlFromRepoGenerator.md), and then run the **ConvertHtmlToJson.exe** tool.  
+When you run the tool, you must specify the location of the HTML files with your Help content and the destination path. You can generate the HTML files with the [HtmlFromRepoGenerator tool](custom-help-toolkit-HtmlFromRepoGenerator.md), and then run the **ConvertHtmlToJson.exe** tool.  
 
 Here is the syntax for ConvertHtmlToJson.exe:  
 
