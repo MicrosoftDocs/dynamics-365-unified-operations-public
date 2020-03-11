@@ -3,7 +3,7 @@
 
 title: Configure service updates through Lifecycle Services (LCS)
 description: This topic explains how to specify how and when you receive service updates for your environments.
-author: manalidongre
+author: angelmarshall
 manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: article
@@ -23,7 +23,7 @@ ms.search.scope: Operations
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: manado
+ms.author: tsmarsha
 ms.search.validFrom: 2019-3-31 
 ms.dyn365.ops.version: Platform update 24 
 
