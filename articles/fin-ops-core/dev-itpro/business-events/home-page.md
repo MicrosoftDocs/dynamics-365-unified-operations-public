@@ -29,7 +29,6 @@ ms.dyn365.ops.version: 2019-02-28
 # Business events overview
 
 [!include[banner](../includes/banner.md)]
-[!include[preview banner](../includes/preview-banner.md)]
 
 Business events provide a mechanism that lets external systems receive notifications from Finance and Operations applications. In this way, the systems can perform business actions in response to the business events.
 
