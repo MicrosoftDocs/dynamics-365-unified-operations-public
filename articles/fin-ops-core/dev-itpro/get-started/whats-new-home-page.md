@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Platform update 33
 
 To see what's new or changed in the Platform updates for Finance and Operations apps, see the following topics:
 
-| **Version**        | **Build number** | **Availability** | **Learn more**                                                                                                                                                                                                                        |
+| **Version**        | **Build number** | **Auto-update availability** | **Learn more**                                                                                                                                                                                                                        |
 |--------------------|------------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Platform update 34 | 7.0.5600         | May 2020     | [Preview features in Platform update 34 for Finance and Operations apps](whats-new-platform-update-34.md)  |
 | Platform update 33 | 7.0.5559         | April 2020     | [What's new or changed in Platform update 33 for Finance and Operations apps](whats-new-platform-update-33.md)  |
