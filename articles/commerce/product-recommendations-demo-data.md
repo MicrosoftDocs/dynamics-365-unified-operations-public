@@ -42,7 +42,7 @@ For Tier-2 and higher Dynamics 365 environments, product recommendations are aut
 For Tier-1 environments, product recommendations are based only off the static demo data stored in a .csv file.
 
 ## Enabling product recommendations demo data in an environment
-To enable product recommensations demo date, you need to deploy the Dynamics 365 Commerce Preview Demo Extension to the respective environment. Doing so automatically enables product recommendations demo data.
+To enable product recommendations demo date, you need to deploy the Dynamics 365 Commerce Preview Demo Extension to the respective environment. Doing so automatically enables product recommendations demo data.
 
 ## Default demo data
 Each Onebox type environment comes with a preloaded set of product recommendations demo data stored in the coma separated 'reco_demo_data.csv' file, located on the Commerce Scale Unit.
