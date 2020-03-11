@@ -44,7 +44,7 @@ The best way to cancel a planning job is from  the **Unfinished planning process
 3. Click **Cancel**.
 
 ## Additional cancel options
-These should only be used iif cancelin the master planning job from the **Unfinished planning processes** page did not complete within a few minutes.
+These should only be used if canceling the master planning job from the **Unfinished planning processes** page did not complete within a few minutes.
 
 ### Delete master planning job from the **Batch jobs** page
 1. Go to **System administration > Inquiries > Batch jobs**.
