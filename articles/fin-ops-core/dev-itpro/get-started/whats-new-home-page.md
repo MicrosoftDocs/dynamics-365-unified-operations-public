@@ -5,7 +5,7 @@ title: What's new and changed in Platform updates
 description: This topic points to topics that describe the new and changed features in each Platform update for Finance and Operations apps. 
 author: sericks007
 manager: AnnBe
-ms.date: 03/05/2020
+ms.date: 03/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 33
 
 [!include [banner](../includes/banner.md)]
 
-To see what's new or changed in the Platform updates for Finance and Operations apps, see the following topics:
+To see what's new or changed in the Platform updates for Finance and Operations apps, see the following topics.
 
 | **Version**        | **Build number** | **Auto-update availability** | **Learn more**                                                                                                                                                                                                                        |
 |--------------------|------------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
