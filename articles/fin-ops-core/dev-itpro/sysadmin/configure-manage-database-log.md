@@ -5,7 +5,7 @@ title: Configure and manage database logging
 description: This topic provides information about database logging. It explains how to set up database logging, how to manage security and performance, and how to clean up database logs.
 author: hasaid
 manager: AnnBe
-ms.date: 03/05/2020
+ms.date: 03/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -91,7 +91,7 @@ You can delete database logs as required. You can delete logs for specific table
 
 ## Consistency check for database log triggers
 
-In Platform update 34, functionality for a consistency check was added. The consistency check is run as part of the **Database log** wizard. It's run after you select **Finish** or after you select a consistency check button on the **Database log setup** page.
+In Platform update 34, functionality for a consistency check was added. The consistency check is run as part of the **Database log** wizard. It's run after you select **Finish** or after you select **Consistency check** on the **Database log setup** page.
 
 The consistency check will re-create any missing database log triggers. It will also drop any "orphaned" database log triggers that no corresponding configuration is found for. In this way, the consistency check quickly detects and fixes any inconsistencies between the current configuration and the database triggers that are used to implement the logging functionality.
 
