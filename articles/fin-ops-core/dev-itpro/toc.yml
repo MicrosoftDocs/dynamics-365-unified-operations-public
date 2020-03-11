@@ -213,19 +213,19 @@
             - name: Configure a prospect to cash scenario
               items:
               - name: Prospect to cash
-                href: ../../supply-chain/sales-marketing/prospect-to-cash.md
+                href: ../../supply-chain/sales-marketing/prospect-to-cash.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
               - name: Synchronize accounts directly from Sales to customers in Finance and Operations
-                href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md
+                href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
               - name: Synchronize products directly from Finance and Operations to products in Sales
-                href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md
+                href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
               - name: Synchronize contacts directly from Sales to contacts or customers in Finance and Operations
-                href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md
+                href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
               - name: Synchronize sales quotation headers and lines directly from Sales to Finance and Operations
-                href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
+                href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
               - name: Synchronization of sales orders directly between Sales and Finance and Operations
-                href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
+                href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
               - name: Synchronize sales invoice headers and lines directly from Finance and Operations to Sales
-                href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
+                href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Configure integration with Field Service
               items:
               - name: Configure integration with Field Service overview
