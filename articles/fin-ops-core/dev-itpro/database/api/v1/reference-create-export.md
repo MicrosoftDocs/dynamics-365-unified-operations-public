@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Database movement API - Reference - v1 - List database backups
+title: Database movement API - Reference - v1 - Create a database export
 description: This topic provides a reference for version 1 (v1) of the Database Movement application programming interface (API).
 author: laneswenka
 manager: AnnBe
-ms.date: 09/30/2019
+ms.date: 03/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -28,15 +28,16 @@ ms.dyn365.ops.version: 10.0.0
 
 ---
 
-# List database backups
+# Create a database refresh
 
 [!include [banner](../../../includes/banner.md)]
+[!include [banner](../../../includes/preview-banner.md)]
 
-You can retrieve a list of database backups from the Project asset library.
+You can create a database export from a Sandbox environment to the project asset library. Note that the same validation rules from the details page in Microsoft Dynamics Lifecycle Services (LCS) apply to the application programming interface (API).
 
 ## Permissions
 
-One of the following permissions is required to call this application programming interface (API). For more information about permissions and how to select them, see [Authentication](../dbmovement-api-authentication.md).
+One of the following permissions is required to call this API. For more information about permissions and how to select them, see [Authentication](../dbmovement-api-authentication.md).
 
 | Permission type                    | Permissions (from least privileged to most privileged) |
 |------------------------------------|--------------------------------------------------------|
@@ -46,7 +47,7 @@ One of the following permissions is required to call this application programmin
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /databasemovement/v1/databases/project/{projectId}
+POST /databasemovement/v1/export/project/{projectId}/environment/{environmentId}/backupName/{backupName}
 ```
 
 ## Request headers
@@ -54,7 +55,6 @@ GET /databasemovement/v1/databases/project/{projectId}
 | Header         | Value                     |
 |----------------|---------------------------|
 | Authorization  | Bearer {token} (required) |
-| 'x-ms-version' | '2017-09-15' (required)   |
 | Content-Type   | application/json          |
 
 ## Request body
@@ -68,27 +68,11 @@ The response is always a **200 OK** response, unless you aren't correctly authen
 ## Example
 
 ```http
-GET /databasemovement/v1/databases/project/12345
+POST /databasemovement/v1/refresh/project/12345/environment/5362377c-bc37-4f92-b30e-fe0c1e664cc0/backupName/TestBackupViaAPI
 ```
 
 ```json
 {
-
-    "DatabaseAssets": [
-        {
-            "Id": "4a2c52d4-49ca-4606-94a9-92b3a6b42985",
-            "ProjectId": 12345,
-            "OrganizationId": 1,
-            "Name": "LanesBackupRecord",
-            "FileName": "RandomFile.bacpac",
-            "FileDescription": "",
-            "FileLocation": "https://scrubbed.blob.core.windows.net/product-ax7productname/e6244b15-5112-4d1d-a422-49c63496ab6d/AX7ProductName-12-17-83c6e642-676a-4048-b413-6e284f5d1f55-e6244b15-5112-4d1d-a422-49c63496ab6d?sv=2015-12-11&sr=b&sig=rO3zmAZ3zM6s%2FV%2BeihBA2LMVvqMsxbtsnbauvd8keYo%3D&se=2019-09-28T15%3A18%3A05Z&sp=r",
-            "ModifiedDateTime": "2019-09-27T15:17:35.867",
-            "CreatedDateTime": "2019-09-27T15:17:35.867",
-            "CreatedByName": null,
-            "ModifiedByName": null
-        }
-    ],
     "IsSuccess": true,
     "OperationActivityId": "55eb4327-9346-4c7b-82bd-fe8ef15112c6",
     "ErrorMessage": null,
