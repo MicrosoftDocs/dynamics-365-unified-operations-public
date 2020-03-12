@@ -38,7 +38,7 @@ You can use Microsoft Dynamics Lifecycle Services (LCS) to perform the point-in-
 [!include [pitr](../includes/dbmovement-pitr.md)]
 
 ### Restore operation failed
-In case of failure, the option to perform a **Rollback** is available.  By clicking the rollback option after the operation has initially failed, your target sandbox environment will be restored to the state it was before the restore began. This will restore the previous database from the deleted databases storage on the Azure SQL Server. This is often required if a customization is present in the target sandbox that cannot complete a database synchronization with the newly-restored data.  
+In case of failure, the option to perform a **Rollback** is available.  By clicking the rollback option after the operation has initially failed, your target sandbox environment will be restored to the state it was before the restore began. Clicking the rollback option will restore the previous database from the deleted databases storage on the Azure SQL Server. A rollback is often required if a customization is present in the target sandbox that cannot complete a database synchronization with the newly-restored data.  
 
 To determine the root cause of the failure, download the runbook logs using the available buttons before starting the rollback operation.
 
@@ -58,7 +58,7 @@ If you have used the Admin User Provisioning Tool on your environment to change 
 ### Breaking the chain of available restore points
 Several common actions create a new database, which won't have the same restore point history built up as the previously used database.  These scenarios include point-in-time restore, database refresh, database import, point-in-time restore from Production to Sandbox. In addition, if you apply a Software Deployable Package to your environment and it fails during update of the database, using the Rollback functionality in Lifecycle Services will perform a point-in-time restore of the database which also creates a new database. 
 
-Because of this, the new database does not have any restore history, but does begin to accrue new restore points going forward. This means that after performing any of the above actions you will not be able to do so again using the same restore date and time.  
+The new database does not have any restore history, but does begin to accrue new restore points going forward. This means that after performing any of the above actions you will not be able to do so again using the same restore date and time.  
 
 ### Restore is denied for environments running Platform update 20 or earlier
 The restore database process cannot be completed if the environment is running Platform update 3 or earlier. For more information, see the [list of currently supported Platform updates](..//migration-upgrade/versions-update-policy.md).
