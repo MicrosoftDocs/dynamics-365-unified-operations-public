@@ -38,7 +38,9 @@ Microsoft Dynamics Lifecycle Services (LCS) provides a cloud-based collaborative
 To get started with LCS, see the [Lifecycle Services (LCS) user guide](lcs-user-guide.md).
 
 > [!IMPORTANT]
-> LCS features and service changes will no longer be announced via blog posts. Descriptions of LCS features are provided in the [release plans](https://go.microsoft.com/fwlink/?linkid=2010158). This topic lists the features that are included in LCS releases.
+> LCS features and service changes will no longer be announced via blog posts. Descriptions of LCS features are provided in the [release plans](https://go.microsoft.com/fwlink/?linkid=2010158). 
+
+This following sections list the features that are included in LCS releases.
 
 ## March 2020 - wave 1
 
