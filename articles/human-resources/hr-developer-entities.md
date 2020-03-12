@@ -92,8 +92,11 @@ The following Human Resources entities are available in Common Data Service.
 | Job Position | cdm_jobposition |
 | Position Type | cdm_positiontype |
 | Position Worker Assignment | cdm_positionworkerassignmentmap |
+| Job Position Dimension | cdm_jobpositiondimension|
 | Job Type | cdm_jobtype |
 | Language | cdm_language |
+
+NOTE: Financial dimensions for both positions and employment provide a single direction integration to the common data service. Financial dimensions currently do not support updates to in the common data service being reflected back in Human Resources. 
 
 ## Leave and absence entities
 
