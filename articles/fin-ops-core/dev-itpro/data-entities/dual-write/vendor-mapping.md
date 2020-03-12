@@ -36,7 +36,7 @@ ms.search.validFrom: 2019-07-15
 
 [!include [preview-banner](../../includes/preview-banner.md)]
 
-The term *vendor* refers to a supplier organization or a sole proprietor who supplies goods or services to the business. Although *vendor* is an established concept in Dynamics 365 Supply Chain Management, a vendor concept doesn't exist in model-driven apps in Dynamics 365. You could choose to overload the **Account/Contact** entity to store vendor information. With integrated vendor master, an explicit vendor concept is introduced in model-driven apps in Dynamics 365. You can choose either the new vendor concept or use **Account/Contact** entity for vendors. Dual-write supports both these designs.
+The term *vendor* refers to a supplier organization or a sole proprietor who supplies goods or services to the business. Although *vendor* is an established concept in Dynamics 365 Supply Chain Management, a vendor concept doesn't exist in model-driven apps in Dynamics 365. You could choose to overload the **Account/Contact** entity to store vendor information. With integrated vendor master, an explicit vendor concept is introduced in model-driven apps in Dynamics 365. You can choose either the new vendor design or use the **Account/Contact** entity for vendors. Dual-write supports both these designs.
 
 In either design, the vendor data is integrated between Dynamics 365 Supply Chain Management, Dynamics 365 Sales, Dynamics 365 Field Service, and Power Portal applications. In Dynamics 365 Supply Chain Management, the data is avialable for workflows like purchase requisition and purchase orders.
 
