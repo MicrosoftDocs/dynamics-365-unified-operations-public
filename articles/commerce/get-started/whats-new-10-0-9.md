@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 Commerce 10.0.9 (April 2020)
 description: This topic describes features that are either new or changed in Dynamics 365 Commerce 10.0.9. 
 author: josaw1
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -54,7 +54,7 @@ The following features are included in this release. The feature titles link to 
 
 ### Platform update 33
 
-Microsoft Dynamics 365 Commerce 10.0.9 includes Platform update 33. To learn more, see [Preview features in Platform update 33](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-33.md).
+Microsoft Dynamics 365 Commerce 10.0.9 includes Platform update 33. To learn more, see [What's new and changed in Platform update 33](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-33.md).
 
 
 ### Bug fixes 
