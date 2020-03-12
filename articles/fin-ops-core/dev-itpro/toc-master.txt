@@ -1240,6 +1240,8 @@
     href: ../../dev-itpro/sysadmin/pre-configured-system-accounts.md?toc=/dynamics365/unified-operations/<placeholder>/toc.json
   - name: Export B2B users to Azure AD
     href: ../../dev-itpro/sysadmin/implement-b2b.md?toc=/dynamics365/unified-operations/<placeholder>/toc.json
+  - name: Configure and manage database logging
+    href: ../../dev-itpro/sysadmin/configure-manage-database-log.md?toc=/dynamics365/unified-operations/<placeholder>/toc.json
   - name: Security
     items:
     - name: Role-based security
