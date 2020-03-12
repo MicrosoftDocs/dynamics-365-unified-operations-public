@@ -2,10 +2,10 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Human Resources (March 10, 2020)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources.
+description: This article describes features that are either new or changed in Microsoft Dynamics 365 Human Resources.
 author: Darinkramer
 manager: AnnBe
-ms.date: 3/9/2020
+ms.date: 03/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -17,7 +17,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -25,25 +25,28 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: dkrame
-ms.search.validFrom: 2020-03-09
+ms.search.validFrom: 2020-03-10
 ms.dyn365.ops.version: Human Resources
 
 ---
-# "What's new or changed in Dynamics 365 Human Resources (March 10, 2020)"
+
+# What's new or changed in Dynamics 365 Human Resources (March 10, 2020)
 
 This article describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.2985. The numbers in parentheses in some headings refer to LCS support numbers for reference.
 
-## Can't access skill gap analysis report - (394460)
+## Can't access skill gap analysis report (394460)
 
-This report is not supported in Dynamics 365 Human Resources. The menu item to print the SSRS report has been removed.
+This report isn't supported in Dynamics 365 Human Resources. The menu item to print the SSRS report is removed.
 
-## Incorrect message accessing the "Getting Started" page - (417950)
+## Incorrect message accessing the Getting Started page (417950)
 
-With this change, security will now trim this menu item if you do not have access to the form.
+With this change, security hides this menu item if you don't have access to the form.
 
-## Streamlined task maintenance for employees - (380538)
+## Streamlined task maintenance for employees (380538)
 
-The worker task maintenance form lists all tasks for an employee across onboarding, offboarding, transitions, and business processes.  Tasks can be deleted, reassigned or have the status updated.  Example:  Benjamin Martin is the benefits administrator. When individuals are onboarded, tasks are created for Benjamin to review the new employee’s benefit selection.  Benjamin has past tasks that he has completed, and future tasks that need to be completed.  Benjamin decides to leave the company, so his tasks need to either be re-assigned or removed.  The task maintenance form (in the action pane of the Worker form) allows all of Benjamin’s tasks to be re-assigned to another worker or removed.  
+The worker task maintenance form lists all tasks for an employee across onboarding, offboarding, transitions, and business processes. You can delete, reassign, or update the status of tasks.
+
+Example: Benjamin Martin is a benefits administrator. During employee onboarding, tasks are created for Benjamin to review the new employee’s benefit selection. Benjamin has past tasks that he has completed, and future tasks that he needs to complete. Benjamin decides to leave the company, so his tasks need to be either re-assigned or removed. The task maintenance form (in the action pane of the **Worker** form) allows all of Benjamin’s tasks to be re-assigned to another worker or removed.  
 
 ## Common Data Service solution is now available with the following changes:
 
@@ -57,20 +60,25 @@ The worker task maintenance form lists all tasks for an employee across onboardi
 | New variable compensation setup entities | <ul><li>**Compensation variable plan type**</li><li>**Compensation variable plan**</li><li>**Vesting rules**</li><li>**Compensation variable plan level**</li></ul> |
 | New **Worker calendar employment** entity | <ul><li>**Work calendar entity** added</li></ul> |
 | New **Payroll position detail** entity | <ul><li>**Payroll position detail** added</li></ul> |
-| New **Title** entity | <ul><li>**Title** added</li></ul> |
-*The new "Title" entity is included in the CDS but will not initially be referenced from Job Position or Job entities.
+| New **Title** entity | <ul><li>**Title** added</li></ul>. The new "Title" entity is included in the CDS but will not initially be referenced from Job Position or Job entities. |
 
-*Financial dimensions for both positions and employment provide **Single** direction updates from Human Resources to the Common data service.  
+> [!NOTE] Financial dimensions for both positions and employment provide one-direction integration for updates from Human Resources to Common Data Service. Financial dimensions updates don't currently synchronize from Common Data Service to Human Resources.
 
-Over the course of the next few weeks the above changes will be available in all environments. If you would like to manually install the latest HR CDS Solution, follow the steps below. 
+Over the next few weeks, these entity changes will be available in all environments. To manually install the latest Common Data Service solution for Human Resources:
 
-1.	Navigate to https://admin.powerplatform.microsoft.com.
-2.	Select Environments.
-3.	Find the environment you would like to upgrade. This should correspond to the Environment name in the Common data service information section in the About form found in D365 for Human Resources.
-4.	Click on the Name of the environment to go to the environment details.
-5.	In the Action bar at the top of the page, click Manage Solutions.  This will open a new browser window and navigate to Dynamics 365 Administration Center in the context of your environment.
-6.	In the Solution list, find the Dynamics 365 for Talent Anchor solution and click on it.
-7.	Click the Upgrade button to apply the latest Solution version.
+1.	Go to the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com).
+
+2.	Select **Environments**.
+
+3.	Find the environment you want to upgrade. The environment should correspond to **Environment name** in the **Common Data Service information** section in the **About** form in Human Resources.
+
+4.	Select the environment to view the environment details.
+
+5.	In the action bar at the top, select **Manage Solutions**. A new browser window will open and navigate to **Dynamics 365 Administration Center** in the context of your environment.
+
+6.	In the **Solution** list, select **Dynamics 365 Human Resources Anchor**.
+
+7.	Select **Upgrade** to apply the latest solution.
 
 ## In preview
 
@@ -84,8 +92,12 @@ The following preview features are available on February 3, 2020:
 
 ### Platform update 33
 
-- (Preview) full page apps - This preview feature, which requires the Saved views feature to be enabled, allows Power Apps and third-party apps to be added as full-page experiences via the dashboard
-- (Preview) Saved views - This preview feature enables saved views, which is a significant enhancement to the personalization subsystem. This feature allows users to have multiple named sets of personalizations per page. Views can also be published to security roles.
+- Full page apps (Preview) - This preview feature, which requires you to enable the Saved views feature, allows Power Apps and third-party apps to be added as full-page experiences via the dashboard.
+
+- Saved views (Preview) - This preview feature enables saved views, which is a significant enhancement to the personalization subsystem. This feature allows users to have multiple named sets of personalizations per page. You can also publish views to security roles.
+
 - Optimized "is one of" filtering experience - This feature enables an optimized "is one of" filtering experience that makes it easier to enter multiple filter values, has a simpler mechanism to remove individual or all filter values, and has a more compact and intuitive visualization of filter values.
-- Recommended fields - Users often need to add fields to a grid or page; however, with the large number of available fields, this can be difficult. Instead of having to search through a large list, this feature enables the system to surface a set of recommended fields based on what other users most often add in similar scenarios
+
+- Recommended fields - Users often need to add fields to a grid or page. This can be difficult with so many available fields. Instead of having to search through a large list, this feature enables the system to surface a set of recommended fields based on what other users most often add in similar scenarios.
+
 - Sticky default actions in grids - This feature ensures that the default action in a grid is linked to a specific column in a grid, regardless of whether that column is moved or hidden.
