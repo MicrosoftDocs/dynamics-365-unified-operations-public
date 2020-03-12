@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Add product recommendation lists to an e-Commerce site
+title: A recommendation lists to an e-Commerce site
 description: This topic explains how to add a product recommendation list to an e-Commerce page.
 author: bebeale
 manager: AnnBe
-ms.date: 01/28/2020
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -48,10 +48,22 @@ To learn more about the types of lists that you can add to a page, see [Product 
 
 [Product recommendations overview](product-recommendations.md)
 
+[Enable ADLS in a Dynamics 365 Commerce environment](enable-adls-environment.md)
+
 [Enable product recommendations](enable-product-recommendations.md)
 
-[Create curated product recommendation lists](create-editorial-recommendation-lists.md)
+[Enable personalized recommendations](personalized-recommendations.md)
 
-[Manage AI-ML-based product recommendation results](modify-product-recommendation-results.md)
+[Opt out of personalized recommendations](personalization-gdpr.md)
 
-[Product collection module overview](product-collection-module-overview.md)
+[Add product recommendations on POS](product.md)
+
+[Add recommendations to the transaction screen](add-recommendations-control-pos-screen.md)
+
+[Adjust AI-ML recommendations results](modify-product-recommendation-results.md)
+
+[Manually create curated recommendations](create-editorial-recommendation-lists.md)
+
+[Create recommendations with demo data](product-recommendations-demo-data.md)
+
+[Product recommendations FAQ](faq-recommendations.md)
