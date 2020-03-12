@@ -197,7 +197,7 @@
                 - name: Integrated sites and warehouses
                   href: data-entities/dual-write/sites-warehouses-mapping.md
                 - name: Synchronizing on-demand with the Dynamics 365 Supply Chain Management price engine
-                  href: data-entities/dual-write/dw-pricing.md
+                  href: data-entities/dual-write/pricing-engine.md
                 - name: Prospect to cash in dual-write
                   href: data-entities/dual-write/dual-write-prospect-to-cash.md
                 - name: In-house assets for servicing
@@ -207,7 +207,7 @@
                 - name: Support for Field Service solutions and Project Service Automation solutions
                   href: data-entities/dual-write/field-service-project-service-automation.md
                 - name: Customer loyalty cards and reward points
-                  href: data-entities/dual-write/loyalty.md
+                  href: data-entities/dual-write/loyalty-mapping.md
             - name: Support for dual-write
               items:
                 - name: Support for Field Service solutions and Project Service Automation solutions
