@@ -46,7 +46,7 @@ With this change, security hides this menu item if you don't have access to the 
 
 The worker task maintenance form lists all tasks for an employee across onboarding, offboarding, transitions, and business processes. You can delete, reassign, or update the status of tasks.
 
-Example: Benjamin Martin is a benefits administrator. During employee onboarding, tasks are created for Benjamin to review the new employee’s benefit selection. Benjamin has past tasks that he has completed, and future tasks that he needs to complete. Benjamin decides to leave the company, so his tasks need to be either re-assigned or removed. The task maintenance form (in the action pane of the **Worker** form) allows all of Benjamin’s tasks to be re-assigned to another worker or removed.  
+Example: Benjamin Martin is a benefits administrator. During employee onboarding, tasks are created for Benjamin to review the new employee’s benefit selection. Benjamin has past tasks that he's completed, and future tasks that he needs to complete. Benjamin decides to leave the company, so his tasks need to be either re-assigned or removed. The task maintenance form (in the action pane of the **Worker** form) allows all of Benjamin’s tasks to be re-assigned to another worker or removed.  
 
 ## Common Data Service solution is now available with the following changes:
 
@@ -62,7 +62,8 @@ Example: Benjamin Martin is a benefits administrator. During employee onboarding
 | New **Payroll position detail** entity | <ul><li>**Payroll position detail** added</li></ul> |
 | New **Title** entity | <ul><li>**Title** added</li></ul>. The new "Title" entity is included in the CDS but will not initially be referenced from Job Position or Job entities. |
 
-> [!NOTE] Financial dimensions for both positions and employment provide one-direction integration for updates from Human Resources to Common Data Service. Financial dimensions updates don't currently synchronize from Common Data Service to Human Resources.
+> [!NOTE]
+> Financial dimensions for both positions and employment provide one-direction integration for updates from Human Resources to Common Data Service. Financial dimensions updates don't currently synchronize from Common Data Service to Human Resources.
 
 Over the next few weeks, these entity changes will be available in all environments. To manually install the latest Common Data Service solution for Human Resources:
 
