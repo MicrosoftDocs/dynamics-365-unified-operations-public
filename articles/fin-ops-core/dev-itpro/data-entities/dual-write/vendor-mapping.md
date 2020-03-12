@@ -36,23 +36,22 @@ ms.search.validFrom: 2019-07-15
 
 [!include [preview-banner](../../includes/preview-banner.md)]
 
-The term vendor refers to a supplier organization or a sole proprietor who supplies goods or services to the business. Vendor is an established concept in D365 Supply Chain. But Customer Engagement applications doesn’t have an explicit vendor concept and so, Account/Contact entity is overloaded to store vendor information. With integrated vendor master, an explicit vendor concept  is introduced in customer engagement applications. Businesses can either choose the new vendor concept or use Account/Contact entity for vendors. Dual-write supports both these designs. Therefore, you can enable either of the designs, depending on your business scenario.
-With both designs, the vendor data is integrated between Supply chain, Sales, Field Service and Power Portal applications and becomes available for Supply chain workflows like purchase requisition, purchase orders etc. 
+The term *vendor* refers to a supplier organization or a sole proprietor who supplies goods or services to the business. Although *vendor* is an established concept in Dynamics 365 Supply Chain Management, a vendor concept doesn't exist in model-driven apps in Dynamics 365. You could choose to overload the **Account/Contact** entity to store vendor information. With integrated vendor master, an explicit vendor concept is introduced in model-driven apps in Dynamics 365. You can choose either the new vendor concept or use **Account/Contact** entity for vendors. Dual-write supports both these designs.
 
+In either design, the vendor data is integrated between Dynamics 365 Supply Chain Management, Dynamics 365 Sales, Dynamics 365 Field Service, and Power Portal applications. In Dynamics 365 Supply Chain Management, the data is avialable for workflows like purchase requisition and purchase orders.
 
-### Vendor data flow
+## Vendor data flow
 
-If you want to isolate the vendor information from Account or contact entities in Common Data Service, then you can use the *new vendor model*.
+If you don't want to store vendor data in the **Account/Contact** entity in Common Data Service, then you can use the new vendor design.
 
 ![Vendor data flow](media/dual-write-vendor-data-flow.png)
 
-If you want to continue to use the Account and contact entity for storing vendor information, then you can use the extended vendor design. But for that you need to configure the vendor workflows coming from dual-write application orchestration solution package. See how to [switch between vendor designs](vendor-switching)
+If you want to continue to use the **Account/Contact** entity for storing vendor information, then you can use the extended vendor design. To use the extended vendor design, you must configure the vendor workflows in the dual-write solution package. For more information, see [Switch between vendor designs](vendor-switch.md)
 
 ![Extended vendor data flow](media/dual-write-vendor-detail.jpg)
 
-**Tip**
-
-If you are using power portals for self-serving vendors, the vendor information can directly flow to Finance and operations applications. 
+> [!TIP]
+> If you are using Power Portal for self-serving vendors, the vendor information can flow directly to Finance and Operations apps. 
 
 ## Templates
 
