@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Product recommendations on POS
+title: Add product recommendations on POS
 description: This topic describes using product recommendations on a point of sale (POS) device.
 author: bebeale
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Product recommendations on POS
+# Add product recommendations on POS
 
 [!include [banner](includes/banner.md)]
 
