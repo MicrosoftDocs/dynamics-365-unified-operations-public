@@ -5,7 +5,7 @@ title: What's new or changed in Lifecycle Services (LCS)
 description: This topic provides links to the release plans, major announcements, and more for Microsoft Dynamics Lifecycle Services (LCS). 
 author: laneswenka
 manager: AnnBe
-ms.date: 02/20/2020
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -24,7 +24,7 @@ ms.search.scope: Operations
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: laswenka
-ms.search.validFrom: 2020-03-11
+ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: 10.0.8
 
 ---
