@@ -5,7 +5,7 @@ title: Enable product recommendations
 description: This topic explains how to make product recommendations that are based on artificial intelligence-machine learning (AI-ML) available for Microsoft Dynamics 365 Commerce customers. 
 author: bebeale
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -74,13 +74,23 @@ To learn more about how to receive personalized recommendations, see [Enable per
 
 [Product recommendations overview](product-recommendations.md)
 
+[Enable ADLS in a Dynamics 365 Commerce environment](enable-adls-environment.md)
+
 [Enable personalized recommendations](personalized-recommendations.md)
 
-[Add product recommendation lists to pages](add-reco-list-to-page.md)
+[Opt out of personalized recommendations](personalization-gdpr.md)
 
-[Add recommendations panel to POS devices](add-recommendations-control-pos-screen.md)
+[Add recommendation lists to an e-Commerce site](add-reco-list-to-page.md)
 
-[Product collection module overview](product-collection-module-overview.md)
+[Add product recommendations on POS](product.md)
 
-[Enable ADLS in Dynamics 365 environment](enable-ADLS-environment.md)
+[Add recommendations to the transaction screen](add-recommendations-control-pos-screen.md)
+
+[Adjust AI-ML recommendations results](modify-product-recommendation-results.md)
+
+[Manually create curated recommendations](create-editorial-recommendation-lists.md)
+
+[Create recommendations with demo data](product-recommendations-demo-data.md)
+
+[Product recommendations FAQ](faq-recommendations.md)
 
