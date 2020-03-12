@@ -60,7 +60,7 @@ Example: Benjamin Martin is a benefits administrator. During employee onboarding
 | New variable compensation setup entities | <ul><li>**Compensation variable plan type**</li><li>**Compensation variable plan**</li><li>**Vesting rules**</li><li>**Compensation variable plan level**</li></ul> |
 | New **Worker calendar employment** entity | <ul><li>**Work calendar entity** added</li></ul> |
 | New **Payroll position detail** entity | <ul><li>**Payroll position detail** added</li></ul> |
-| New **Title** entity | <ul><li>**Title** added</li></ul>. The new "Title" entity is included in the CDS but will not initially be referenced from Job Position or Job entities. |
+| New **Title** entity | <ul><li>**Title** added</li></ul> The new **Title** entity is included in Common Data Service but isn't referenced from the **Job Position** or **Job** entities at this time. |
 
 > [!NOTE]
 > Financial dimensions for both positions and employment provide one-direction integration for updates from Human Resources to Common Data Service. Financial dimensions updates don't currently synchronize from Common Data Service to Human Resources.
