@@ -61,7 +61,7 @@ In **Dynamics 365 Sales**, navigate to **Sales \> Orders**.
 When you click **Price Order** in Dynamics 365 Sales, the **Totals** function in the **Sales Order \> View** tab in Supply Chain
 Management for the associated Sales Order is invoked. The values in the Dynamics 365 Sales order total are used to populate the corresponding fields in Supply Chain Management.
 
-When the Sales Order Total is calculated in Supply Chain Management it goes through the existing trade and sales agreements for the customer and products at and calculated the Total values. When the '**Price Order** button is invoked all the setup done in Supply Chain Management is automatically reflected in Dynamics 365 Sales.
+When the Sales Order Total is calculated in Supply Chain Management, it evaluates the existing trade and sales agreements for the customer and the products listed in the sales order. With this information, the totals are calculated. When the **Price Order** button is invoked all the setup done in Supply Chain Management is automatically reflected in Dynamics 365 Sales.
 
 ### Limitations
 
