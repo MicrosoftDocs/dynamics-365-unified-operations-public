@@ -453,6 +453,7 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
 > [!IMPORTANT]
 > Make sure the Microsoft SQL Server Management Studio setup is in the same language as the operating system of the target machine.
 > Ensure the installer files are named as defined in the Expected File Name column.
+> When downloading the VC++ 17 Redistributables, please note that the executable is located inside the zip file.
 
 #### Follow these steps for each VM, or use remoting from a single machine
 
@@ -563,7 +564,7 @@ Only user accounts that have the Global Administrator directory role can add cer
     Import-Module AzureRM
     .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint <OnPremLocalAgent Certificate Thumbprint> -Test
     ```
-    
+
 3. If the script indicates that the certificate is not registered run the following command:
     ```powershell
     .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint <OnPremLocalAgent Certificate Thumbprint>
