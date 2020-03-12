@@ -36,7 +36,7 @@ ms.search.validFrom: 2019-07-15
 
 [!include [preview-banner](../../includes/preview-banner.md)]
 
-When a business ecosystem is made up of Dynamics 365 applications, such as Finance, Supply Chain Management, and Sales, businesses often use these applications to source product data. This is because these apps provides a robust product infrastructure complemented with sophisticated pricing concepts and accurate on-hand inventory data. Businesses who use an external Product Lifecycle Management (PLM) system for sourcing the product data can channelize products from Finance and Operations apps to other Dynamics 365 apps. The unified product experience brings the integrated product data model in to Common Data Service, so that all application users, including Power Platform users, can take advantage of the rich product data coming from Finance and Operations apps.
+When a business ecosystem is made up of Dynamics 365 applications, such as Finance, Supply Chain Management, and Sales, businesses often use these applications to source product data. This is because these apps provide a robust product infrastructure complemented with sophisticated pricing concepts and accurate on-hand inventory data. Businesses who use an external Product Lifecycle Management (PLM) system for sourcing the product data can channelize products from Finance and Operations apps to other Dynamics 365 apps. The unified product experience brings the integrated product data model in to Common Data Service, so that all application users, including Power Platform users, can take advantage of the rich product data coming from Finance and Operations apps.
 
 Here is the product data model from Sales.
 
@@ -79,8 +79,8 @@ Unit | uoms
 Unit conversions | msdyn_ unitofmeasureconversions
 Product specific unit of measure conversion | msdyn_productspecificunitofmeasureconversion
 Product categories | msdyn_productcategories | Each of the product categories and information about its structure and characteristics are contained in the product category entity. 
-Product category hierarchies | msdyn_productcategoryhierarhies | You use product hierarchies to categorize or group products.The category hierarchies are available in Common Data Service using the Product category hierarchy entity. 
-Product category hierarchy roles | msdyn_productcategoryhierarchies | Product hierarchies can be used for different roles in D365 Finance and Operations. The specify which category is used in each role the product category role entity is used. 
+Product category hierarchies | msdyn_productcategoryhierarhies | You use product hierarchies to categorize or group products. The category hierarchies are available in Common Data Service using the Product category hierarchy entity. 
+Product category hierarchy roles | msdyn_productcategoryhierarchies | Product hierarchies can be used for different roles in D365 Finance and Operations. They specify which category is used in each role the product category role entity is used. 
 Product category assignments | msdyn_productcategoryassignments | To assign a product to a category the product category assignments entity can be used.
 
 ## Integration of products
@@ -137,9 +137,9 @@ To keep track of the product dimensions that a product master can take, the foll
 
 [!include [product bar codes](includes/EcoResProductNumberIdentifiedBarcode-msdyn-productbarcodes.md)]
 
-## Default order settings and product specific default order settings
+## Default order settings and product-specific default order settings
 
-Default order settings define the site and warehouse where items will be sourced from or stored, the minimum, maximum, multiple and standard quantities that will be used for trading or inventory management, the lead times, the stop flag, and the order promising method. This information is available in Common Data Service using the default order settings and product specific default order settings entity. You can read more information about the functionality in the [Default order settings topic](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/default-order-settings).
+Default order settings define the site and warehouse where items will be sourced from or stored, the minimum, maximum, multiple and standard quantities that will be used for trading or inventory management, the lead times, the stop flag, and the order promising method. This information is available in Common Data Service using the default order settings and product-specific default order settings entity. You can read more information about the functionality in the [Default order settings topic](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/default-order-settings).
 
 [!include [product sizes](includes/InventProductDefaultOrderSettingsEntity-msdyn-productdefaultordersetting.md)]
 
@@ -147,7 +147,7 @@ Default order settings define the site and warehouse where items will be sourced
 
 ## Unit of measure and unit of measure conversions
 
-The units of measure and its respective conversions is available in the Common Data Service following the data model shown in the diagram.
+The units of measure and its respective conversion is available in the Common Data Service following the data model shown in the diagram.
 
 ![Data model for products](media/dual-write-product-three.png)
 
@@ -157,7 +157,7 @@ The unit of measure concept is integrated between Finance and Operations apps an
 
 [!include [unit of measure conversions](includes/UnitOfMeasureConversionEntity-msdyn-unitofmeasureconversions.md)]
 
-[!include [product specific unit of measure conversions](includes/EcoResProductSpecificUnitConversionEntity-msdyn-productspecificunitofmeasureconversions.md)]
+[!include [product-specific unit of measure conversions](includes/EcoResProductSpecificUnitConversionEntity-msdyn-productspecificunitofmeasureconversions.md)]
 
 ## Initial synchronization of units data matching between Finance and Operations and Common Data Service
 
@@ -208,7 +208,7 @@ The product policies are sets of policies used for defining products and its cha
 To uniquely identify products between Dynamics 365 for Finance and Operations and products in Common Data Service the integration keys are used. 
 For products, the **(productnumber)** is the unique key that identifies a product in Common Data Service. It's composed by the concatenation of: **(company, msdyn_productnumber)**. The **company** indicates the legal entity in Finance and Operations and **msdyn_productnumber** indicates the product number for the specific product in Finance and Operations. 
 
-For a other Dynamics 365 apps user, the product is identified in the UI with the **msdyn_productnumber** (note that the label of the field is **Product number**). In the product form both the company and the msydn_productnumber are shown. However, the (productnumber) field, the unique key for a product, is not shown. 
+For users of other Dynamics 365 apps, the product is identified in the UI with the **msdyn_productnumber** (note that the label of the field is **Product number**). In the product form both the company and the msydn_productnumber are shown. However, the (productnumber) field, the unique key for a product, is not shown. 
 
 If you build apps on Common Data Service, you should pay attention to using the **productnumber** (the unique product ID) as the integration key. Do not use **msdyn_productnumber**, because it's not unique. 
 
@@ -228,4 +228,4 @@ Then, when the synchronization is enabled and takes place, the products from Fin
 
 ### Migration of product data from other Dynamics 365 apps to Finance and Operations
 
-If other Dynamics 365 apps has products that aren't present in Finance and Operations, the administrator can first use the **EcoResReleasedProductCreationV2Entity** for importing those products in Finance and Operations. And secondly, match the product data from Finance and Operations and other Dynamics 365 apps as described above. 
+If other Dynamics 365 apps have products that aren't present in Finance and Operations, the administrator can first use the **EcoResReleasedProductCreationV2Entity** for importing those products in Finance and Operations. And secondly, match the product data from Finance and Operations and other Dynamics 365 apps as described above. 
