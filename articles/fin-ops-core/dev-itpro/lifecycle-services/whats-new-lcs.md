@@ -54,7 +54,7 @@ This release contains general performance improvements and minor bug fixes.
 
 | Area | Feature |
 |------|---------|
-| Admin APIs | [Database movement RESTful APIs](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/database-movement-restful-apis-lifecycle-services) - Generally Available |
+| Admin APIs | [Database movement RESTful APIs](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/database-movement-restful-apis-lifecycle-services) - Generally available |
 
 ## LCS releases before November 2019
 
