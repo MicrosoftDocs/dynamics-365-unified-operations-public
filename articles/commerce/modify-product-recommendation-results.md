@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Manage AI-ML-based product recommendation results
+title: Adjust AI-ML-based product recommendation results
 description: This topic explains how to tailor product recommendation results based on artificial intelligence-machine learning (AI-ML) to your business. 
 author: bebeale
 manager: AnnBe
@@ -30,12 +30,12 @@ ms.dyn365.ops.version:
 
 ---
 
-# Manage AI-ML-based product recommendation results
+# Adjust AI-ML-based product recommendation results
 
 
 [!include [banner](includes/banner.md)]
 
-This topic explains how to tailor product recommendation results based on artificial intelligence-machine learning (AI-ML) to your business. 
+This topic explains how to adjust product recommendation results based on artificial intelligence-machine learning (AI-ML) to your business. 
 
 After enabling product recommendations, the default settings will take effect; these parameters will work for may work for many needs. It is best to plan to spend some time evaluating whether the results fit the selling motion of products. We suggest evaluating results for a few days before changing parameters as needed before testing again. 
 
