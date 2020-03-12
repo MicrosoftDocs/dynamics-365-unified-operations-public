@@ -33,7 +33,6 @@ ms.dyn365.ops.version:
 # Add credit management information for customers
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 After you've set up the parameters that control credit management, you can add more details for each customer. These details control the credit management processes, and they also provide additional information that helps members of the collections team manage customers.
 
