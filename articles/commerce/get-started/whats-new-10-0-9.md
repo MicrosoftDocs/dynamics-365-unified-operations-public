@@ -40,14 +40,14 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 - **General availability (self-update):** March 2020
 - **Auto-update:** April 2020
 
-The following features are included in this release. The feature titles link to additional information on the [Release plans site](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/).
+The following features are included in this release. The feature titles link to additional information on the [Release plans site](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/).
 
-- [Enable resetting of receipt numbers at the beginning of the fiscal year](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-commerce/enable-resetting-receipt-numbers-at-beginning-fiscal-year)
-- [Auto-charges improvements to support fees based on channel](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-commerce/auto-charges-improvements-support-fees-based-channel)
-- [Improved inbound and outbound inventory operations in store](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-commerce/improved-inbound-outbound-inventory-operations-store)
-- [Set preferred payment methods for returns](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-commerce/set-preferred-payment-methods-returns)
-- [Support for bulk URL redirects](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-commerce/support-bulk-url-redirects)
-- [Task management in HQ and POS for first-line workers and managers](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-commerce/task-management-hq-pos-firstline-workers-managers)
+- [Enable resetting of receipt numbers at the beginning of the fiscal year](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/enable-resetting-receipt-numbers-at-beginning-fiscal-year)
+- [Auto-charges improvements to support fees based on channel](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/auto-charges-improvements-support-fees-based-channel)
+- [Improved inbound and outbound inventory operations in store](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/improved-inbound-outbound-inventory-operations-store)
+- [Set preferred payment methods for returns](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/set-preferred-payment-methods-returns)
+- [Support for bulk URL redirects](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/support-bulk-url-redirects)
+- [Task management in HQ and POS for first-line workers and managers](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/task-management-hq-pos-firstline-workers-managers)
 
 
 ## Additional resources
@@ -65,7 +65,7 @@ For information about the bug fixes included in each of the updates that are par
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365: 2020 release wave 1 plan](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365: 2020 release wave 1 plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
 
