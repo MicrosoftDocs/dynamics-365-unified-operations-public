@@ -5,7 +5,7 @@ title: Product recommendations overview
 description: This topic provides general information about product recommendations. Product recommendations let customers easily and quickly find products that they want, and even products that they didn't originally intend to buy.
 author: Moonma
 manager: AnnBe
-ms.date: 03/10/2020
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
