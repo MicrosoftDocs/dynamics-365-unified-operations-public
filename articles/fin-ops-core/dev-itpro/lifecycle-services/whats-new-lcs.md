@@ -42,7 +42,7 @@ To get started with LCS, see the [Lifecycle Services (LCS) user guide](lcs-user-
 
 ## March 2020 - wave 1
 
-This release contained general performance improvements and minor bug fixes.  
+This release contains general performance improvements and minor bug fixes.  
 
 ## February 2020 - wave 2
 
