@@ -104,11 +104,11 @@ Whenever you cannot see the expected tax components, it means the transaction ca
 
 ### Incorrect tax rate
 
-Whenever you cannot see the expected tax rate, you need to check the field values which are used in the [tax setup](apac-ind-gst-apac-ind-GST-set-up-rate-percentage-tables.md) and compare them with the fields value in section _Taxable document JSON_ in the dump file.
+Whenever you cannot see the expected tax rate, you need to check the field values which are used in the [tax setup](apac-ind-GST-set-up-rate-percentage-tables.md) and compare them with the fields value in section _Taxable document JSON_ in the dump file.
 
 ## Cannot post the voucher with GST
 
 If you encounter error like <span style="color:red">Unable to find ## in the setoff hierarchy ## version ##, please check and try again</span>. Normally it is because you extend the configuration by adding new tax component or modifying the credit pool.
 
-You need to add a newer version into the current **Sales tax hierarchies**, **Synchronize** and **Activate** it. Then enable it in **Maintain setoff hierarchy profiles** following [Set up a sales tax hierarchy](apac-ind-gst-apac-ind-GST-set-up-activate-tax-hierarchy-tree.md)
+You need to add a newer version into the current **Sales tax hierarchies**, **Synchronize** and **Activate** it. Then enable it in **Maintain setoff hierarchy profiles** following [Set up a sales tax hierarchy](apac-ind-GST-set-up-activate-tax-hierarchy-tree.md)
 ![Add new version of sales tax hierarchies](media/IND-GST-add-new-hierarchy.png)
