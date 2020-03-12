@@ -3,7 +3,7 @@
 
 title: Planned maintenance window FAQ
 description: This topic provides answers to frequently asked questions about the Microsoft planned maintenance windows.
-author: manalidongre
+author: angelmarshall
 manager: AnnBe
 ms.date: 10/15/2019
 ms.topic: article
@@ -23,7 +23,7 @@ ms.search.scope: Operations
 ms.custom: 6154
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: manado
+ms.author: tsmarsha
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
