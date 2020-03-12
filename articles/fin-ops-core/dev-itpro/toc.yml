@@ -392,6 +392,8 @@
             href: database/api/v1/reference-list-backups.md
           - name: Create database refresh
             href: database/api/v1/reference-create-refresh.md
+          - name: Create a database export
+            href: database/api/v1/reference-create-export.md
           - name: Get operation activity status
             href: database/api/v1/reference-get-status.md
     - name: Demo data
