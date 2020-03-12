@@ -5,7 +5,7 @@ title: Database movement API - Reference - v1 - Create a database export
 description: This topic provides a reference for version 1 (v1) of the Database Movement application programming interface (API).
 author: laneswenka
 manager: AnnBe
-ms.date: 03/11/2020
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,7 +23,7 @@ ms.search.scope: Operations
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: laswenka
-ms.search.validFrom: 2019-09-30
+ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: 10.0.0
 
 ---
