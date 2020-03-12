@@ -94,7 +94,7 @@ Budget planning can follow one of two security models to define user permissions
 
 Budget planning workflows are used together with budgeting workflows to manage the creation and evolution of budget plans.
 
-A budget planning workflow consists of an ordered set of stages that a budget plan moves through. Each budget planning workflow is associated with a budgeting workflow. Budgeting workflows are one of the types of workflow that are used throughout Finance and Operations. They route the budget plans, together with worksheets, justifications, and attachments, through the organization for review and approval.
+A budget planning workflow consists of an ordered set of stages that a budget plan moves through. Each budget planning workflow is associated with a budgeting workflow. Budgeting workflows are one of the types of workflow that are used throughout Dynamics 365 Finance. They route the budget plans, together with worksheets, justifications, and attachments, through the organization for review and approval.
 
 You create a budget planning workflow in the **Workflow stages** section of the **Budget planning configuration** page. There, you can select the stages and the budgeting workflow that will be used, and you configure additional settings.
 
@@ -158,7 +158,7 @@ Additionally, in the example schema, an aggregation is done from budget plans an
 
 ### Priorities
 
-You can optionally use budget plan priorities to define categories and objectives for the budget plans that you've set up. You can also use priorities to organize, classify, and evaluate several budget plans. For example, you can create a budget planning priority for health and safety, and then evaluate budget plans that are assigned to that priority. You can also assign a number to rank budget plans across all budget plans.
+You can optionally use budget plan priorities to define categories and objectives for the budget plans that you've set up. You can also use priorities to organize, classify, and evaluate several budget plans. For example, you can create a budget planning priority for health and safety, and then evaluate budget plans that are assigned to that priority. You can also assign a number to rank budget plans across all budget plan scenarios.
 
 ### Columns and layouts
 
