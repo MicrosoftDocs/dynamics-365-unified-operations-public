@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Add product recommendation lists to pages
+title: Add product recommendation lists to an e-Commerce site
 description: This topic explains how to add a product recommendation list to an e-Commerce page.
 author: bebeale
 manager: AnnBe
@@ -30,17 +30,16 @@ ms.dyn365.ops.version: 10.0.5
 
 ---
 
-# Add recommendation lists to a site
-
+# Add recommendation lists an e-Commerce site
 
 [!include [banner](includes/banner.md)]
 
 This topic explains how to add a product recommendation list to an e-Commerce page.
 
 1. From an existing e-Commerce site builder page, select **Add module**.
-2. Search for the **product collection** module.
-3. In the module wizard, select the list to add to the page.
-4. Save your changes.
+1. Search for the **product collection** module.
+1. In the module wizard, select the list to add to the page.
+1. Save your changes.
 
 To learn more about the types of lists that you can add to a page, see [Product collection module overview](product-collection-module-overview.md).
 
