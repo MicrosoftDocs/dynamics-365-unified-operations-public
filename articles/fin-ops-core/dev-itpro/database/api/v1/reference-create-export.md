@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.0
 
 ---
 
-# Create a database refresh
+# Create a database export
 
 [!include [banner](../../../includes/banner.md)]
 [!include [banner](../../../includes/preview-banner.md)]
@@ -68,7 +68,7 @@ The response is always a **200 OK** response, unless you aren't correctly authen
 ## Example
 
 ```http
-POST /databasemovement/v1/refresh/project/12345/environment/5362377c-bc37-4f92-b30e-fe0c1e664cc0/backupName/TestBackupViaAPI
+POST /databasemovement/v1/export/project/12345/environment/5362377c-bc37-4f92-b30e-fe0c1e664cc0/backupName/TestBackupViaAPI
 ```
 
 ```json
