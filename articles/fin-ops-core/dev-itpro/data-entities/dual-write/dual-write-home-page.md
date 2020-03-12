@@ -73,12 +73,12 @@ These topics describe mapping between concepts in Finance and Operations applica
     + [Integrated tax master](tax-mapping.md)
 
 + [Integrated sites and warehouses](sites-warehouses-mapping.md)
-+ [Synchronizing on-demand with the Dynamics 365 Supply Chain Management price engine](dw-pricing.md)
++ [Synchronizing on-demand with the Dynamics 365 Supply Chain Management price engine](pricing-engine.md)
 + [Prospect to cash in dual-write](dual-write-prospect-to-cash.md)
 + [In-house assets for servicing](in-house-assets.md)
 + [Integrated worker, job, and position](integrated-hr.md)
 + [Support for Field Service solutions and Project Service Automation solutions](field-service-project-service-automation.md)
-+ [Customer loyalty cards and reward points](loyalty.md)
++ [Customer loyalty cards and reward points](loyalty-mapping.md)
 
 ## Support
 
