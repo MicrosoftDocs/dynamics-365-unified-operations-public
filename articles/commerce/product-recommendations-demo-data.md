@@ -5,7 +5,7 @@ title: Create recommendations with demo data
 description: This document provides guidance on how to leverage omni-channel product recommendations in Tier-1 single box environments using pre-populated, customizable demo data.
 author: bebeale
 manager: AnnBe
-ms.date: 10/01/19
+ms.date: 03/12/20
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -70,4 +70,22 @@ The extension contains a datafile called 'RecoMockDataset.csv' which allows you 
 
 [Product recommendations overview](product-recommendations.md)
 
-[Environment planning](../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md)
+[Enable ADLS in a Dynamics 365 Commerce environment](enable-adls-environment.md)
+
+[Enable product recommendations](enable-product-recommendations.md)
+
+[Enable personalized recommendations](personalized-recommendations.md)
+
+[Opt out of personalized recommendations](personalization-gdpr.md)
+
+[Add recommendation lists to an e-Commerce site](add-reco-list-to-page.md)
+
+[Add product recommendations on POS](product.md)
+
+[Add recommendations to the transaction screen](add-recommendations-control-pos-screen.md)
+
+[Adjust AI-ML recommendations results](modify-product-recommendation-results.md)
+
+[Manually create curated recommendations](create-editorial-recommendation-lists.md)
+
+[Product recommendations FAQ](faq-recommendations.md)
