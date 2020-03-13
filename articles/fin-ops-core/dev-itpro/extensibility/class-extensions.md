@@ -63,7 +63,7 @@ class MyClass
 We can add new methods and state to **MyClass** by introducing an extension class in the extension model (**MyExtensionModel**) that builds on top of (that is, has a dependency on) **MyModel**.
 
 ## Extension class declarations
-Extension classes are final classes that are adorned with the **ExtensionOf** attribute and that also have a name that has the **\_Extension** suffix. (This restriction on the naming might be removed later). The name of the extension class is otherwise unimportant. The class augments the artifact that is specified in the parameter of the **ExtensionOf** attribute, as shown in the following example.
+Extension classes are final classes that are adorned with the **ExtensionOf** attribute and that also have a name that has the **\_Extension** suffix. (This restriction on the naming might be removed later.) The name of the extension class is otherwise unimportant. The class augments the artifact that is specified in the parameter of the **ExtensionOf** attribute, as shown in the following example.
 
 ```xpp
 [ExtensionOf(classStr(MyClass))]
@@ -75,7 +75,7 @@ final class MyClass_Extension
 }
 ```
 
-Because the classes are instantiated by the runtime system, it's not meaningful to derive from the extension class. Therefore, the extension class must be marked as **final**. The extension class MyClass_Extension does not extend the designated class (MyClass). Consequently you cannot override methods from MyClass in MyClass_Extension. The **classStr** compile-time function must be used to designate the augmented class, and serves two purposes:
+Because the classes are instantiated by the runtime system, it's not meaningful to derive from the extension class. Therefore, the extension class must be marked as **final**. The extension class **MyClass_Extension** does not extend the designated class (**MyClass**). Therefore, you cannot override methods from **MyClass** in **MyClass_Extension**. The **classStr** compile-time function must be used to designate the augmented class, and it serves two purposes:
 
 -   It produces a compilation error if the **MyClass** class doesn't exist.
 -   The compile-time function that is used tells the compiler what kind of artifact is augmented. Artifact names by themselves don't uniquely identify a given artifact to augment. For example, forms can have the same names as tables, classes, and enums.
@@ -90,7 +90,7 @@ X++ supports both instance constructors and static constructors.
 
 ### Instance constructors
 
-The instance constructor is the method that is named **new**. Constructors are useful for initializing the state of the extension objects. The instance constructor that is defined in an extension class can't have parameters. Instances of the extension classes are created, and the runtime system calls their constructors as required by the usage scenario - These constructors are never explicitly called by your code.  It's guaranteed that the constructor that is provided in an extension class will be called once before any instance method or the instance state on the extension class is accessed. However, if no such references are made, the constructor isn't called.
+The instance constructor is the method that is named **new**. Constructors are useful for initializing the state of the extension objects. The instance constructor that is defined in an extension class can't have parameters. Instances of the extension classes are created, and the runtime system calls their constructors as required by the usage scenario. These constructors are never explicitly called by your code.  It's guaranteed that the constructor that is provided in an extension class will be called once before any instance method or the instance state on the extension class is accessed. However, if no such references are made, the constructor isn't called.
 
 ### Static constructors
 
@@ -181,7 +181,7 @@ c.state = 12;
 
 ### Static state
 
-Static state applies to the type instead of to instances of the type. The following example defines a static member called **staticState** in the Extension class augmenting the **MyClass** class.
+Static state applies to the type, not instances of the type. The following example defines a static member called **staticState** in the Extension class augmenting the **MyClass** class.
 
 ```xpp
 [ExtensionOf(classStr(MyClass))]
