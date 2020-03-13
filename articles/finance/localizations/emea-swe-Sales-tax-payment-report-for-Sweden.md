@@ -21,7 +21,7 @@ authority, you must first set up the report layout for sales tax authorities.
 3.  In the **Report layout** field, select **Swedish report layout**.
 
 Set up sales tax reporting codes for VAT reporting
-==================================================
+---------------------------------------------------
 
 Set up sales tax reporting codes by following the instructions in [Set up sales
 tax reporting codes](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/SE-VAT-declaration/articles/finance/general-ledger/tasks/set-up-sales-tax-reporting-codes.md). The following table provides an example of sales tax
@@ -60,13 +60,13 @@ reporting codes for Sweden.
 | 49                                                    | The VAT to pay or recover On the sales tax report, the value in this box is automatically calculated as the sum of reporting codes 10, 11, 12, 30, 31, 32, 60, 61, and 62, plus reporting code 48. |
 
 Set up sales tax codes
-======================
+---------------------------------------------------
 
 Set up sales tax codes by following the instructions in [Sales tax codes for VAT
 reporting](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/finance/localizations/emea-vat-reporting.md#sales-tax-codes-for-vat-reporting) and [Sales tax overview](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/finance/general-ledger/indirect-taxes-overview.md).
 
 Generate a sales tax payment and print the Swedish sales tax report
-===================================================================
+---------------------------------------------------
 
 At the end of the VAT reporting period, calculate the sales tax amounts for the
 settlement period.
@@ -95,7 +95,7 @@ settlement period.
 4.  Select **OK** to generate the sales tax payment.
 
 Print a sales tax payment report from a sales tax payment
-=========================================================
+---------------------------------------------------
 
 1.  Go to **Tax \> Inquiries and reports \> Sales tax payments**.
 
@@ -106,7 +106,7 @@ Print a sales tax payment report from a sales tax payment
     then select **OK**.
 
 Report sales tax for a settlement period
-========================================
+---------------------------------------------------
 
 You can also generate a Swedish sales tax report by using the **Report sales tax
 for settlement period** inquiry.
@@ -137,7 +137,7 @@ for settlement period** inquiry.
     print the Swedish sales tax report](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/SE-VAT-declaration/articles/finance/localizations/emea-swe-Sales-tax-payment-report-for-Sweden.md#generate-a-sales-tax-payment-and-print-the-swedish-sales-tax-report) section.
 
 Example
-=======
+---------------------------------------------------
 
 The following example shows how you can set up sales tax codes and sales tax
 reporting codes, post transactions, and generate the Swedish sales tax report.
@@ -235,11 +235,9 @@ reporting codes, post transactions, and generate the Swedish sales tax report.
     following illustration shows the result.
 
 ![](media/3_Sales_tax_reporting.png)
-========================================
-
 
 Report VAT declaration to the Tax authority
-===========================================
+---------------------------------------------------
 
 After you've generated the Swedish sales tax report, use the data on it to fill
 in the VAT declaration for the Swedish Tax Agency in the official format. For
