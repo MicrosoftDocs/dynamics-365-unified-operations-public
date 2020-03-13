@@ -2379,9 +2379,9 @@
                href: localizations/rus-fixed-asset-acquisition.md
              - name: Calculate depreciation
                href: localizations/rus-depreciation-calculation.md
-             - name: Partial fixed asset disassembly (liquidation)
+             - name: Partial fixed asset disassembly liquidation
                href: localizations/rus-fixed-assets-disassembly.md
-             - name: Sell dispose and write off assets
+             - name: Sell, dispose, and write off assets
                href: localizations/rus-sell-dispose-write-off-fixed-assets.md  
              - name: Create a fixed asset lease and a return from lease transaction
                href: localizations/rus-fixed-asset-leasing.md
