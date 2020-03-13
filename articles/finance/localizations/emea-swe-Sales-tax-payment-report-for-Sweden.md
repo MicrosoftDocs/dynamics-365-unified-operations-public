@@ -82,7 +82,7 @@ settlement period.
 | Settlement period         | Select the applicable reporting period.                                                                                                                                                                                                                                                 |
 | From date                 | Enter the first date of the sales tax settlement period that sales tax should be calculated for. This value corresponds to the date in the **From** field on the **Sales tax settlement periods** page.                                                                                 |
 | Transaction date          | Enter the date when the sales tax report is calculated. The default value is the current date. The sales tax payment is calculated for all transactions that were posted during the settlement period.                                                                                  |
-| Sales tax payment version | Select the type of sales tax settlement. If this sales tax settlement is the first sales tax settlement for the period, select **Original**. If a sales tax settlement has already been generated, select **Latest corrections**. For more information, see Create a sales tax payment. |
+| Sales tax payment version | Select the type of sales tax settlement. If this sales tax settlement is the first sales tax settlement for the period, select **Original**. If a sales tax settlement has already been generated, select **Latest corrections**. For more information, see [Create a sales tax payment](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/finance/general-ledger/tasks/create-sales-tax-payment.md). |
 
 3.  Select **OK**. Fill in the following fields on the dialog **Swedish sales
     tax report**.
@@ -116,8 +116,9 @@ for settlement period** inquiry.
     period**.
 
 2.  Set the **Settlement period**, **From date**, **Tax currency**, and
-    **Reporting currency** fields as described in the Generate a sales tax
-    payment and print the Swedish sales tax report section earlier in this
+    **Reporting currency** fields as described in the [Generate a sales tax
+    payment and print the Swedish sales tax report](#Generate a sales tax
+    payment and print the Swedish sales tax report) section earlier in this
     topic.
 
 3.  In **Sales tax payment version** field, select one of the following options:
