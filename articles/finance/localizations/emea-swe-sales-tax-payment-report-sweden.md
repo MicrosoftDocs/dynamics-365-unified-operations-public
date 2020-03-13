@@ -82,7 +82,7 @@ Set up sales tax reporting codes by following the instructions in [Set up sales 
 
 ## Set up sales tax codes
 
-Set up sales tax codes by following the instructions in [Sales tax codes for VAT reporting](emea-vat-reporting.md#sales-tax-codes-for-vat-reporting.md) and [Sales tax overview](../general-ledger/indirect-taxes-overview.md).
+Set up sales tax codes by following the instructions in the topics, [Sales tax codes for VAT reporting](emea-vat-reporting.md#sales-tax-codes-for-vat-reporting) and [Sales tax overview](../general-ledger/indirect-taxes-overview.md).
 
 ## Generate a sales tax payment and print the Swedish sales tax report
 
