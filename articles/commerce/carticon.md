@@ -1,4 +1,5 @@
 ---
+
 # required metadata
 
 title: Cart icon module
@@ -29,8 +30,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
-# Cart ico module
-
+# Cart icon module
 
 [!include [banner](includes/banner.md)]
 
