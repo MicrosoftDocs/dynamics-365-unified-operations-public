@@ -63,8 +63,8 @@ reporting codes for Sweden.
 Set up sales tax codes
 ======================
 
-Set up sales tax codes by following the instructions in *Sales tax codes for VAT
-reporting* and Sales tax overview.
+Set up sales tax codes by following the instructions in [Sales tax codes for VAT
+reporting](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/finance/localizations/emea-vat-reporting.md#sales-tax-codes-for-vat-reporting) and [Sales tax overview](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/finance/general-ledger/indirect-taxes-overview.md).
 
 Generate a sales tax payment and print the Swedish sales tax report
 ===================================================================
