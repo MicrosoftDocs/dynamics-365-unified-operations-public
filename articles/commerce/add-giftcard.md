@@ -44,26 +44,15 @@ Gift cards are a common form of tender. The gift card module can be used in chec
 
 ## Site settings for gift card
 
-Gift card modules have the following settings that can be configured at **Site Settings \> Extensions**:
+In **Site Settings \> Extensions**, gift card module supports a setting called  **Supported gift card type**. This setting supports 3 values. 
+1. Dynamics 365 gift card - WHen this setting is applied the gift card module will only redeeming of Dynamics 365 gift cards. This is supported only for signed-in users on the e-commerce site
+2. SVS and Givex gift cards - When this setting is applied, the gift card module will only allow redeeming Givex and SVS gift cards via Adyen. This is supported for signed-in and anonymous users on the e-commerce site.
+3. Dynamics 365, SVS and Givex gift card - - When this setting is applied, the gift card module will  allow redeeming Dynamics 365, and Givex, SVS gift cards via Adyen. This is supported for signed-in users only on the e-commerce site.
 
-**Supported gift card type**: This setting supports 3 values
-1. Dynamics 365 gift card - WHen this setting is applied the gift card module will only redeeming of Dynamics 365 gift cards
-2. SVS and Givex gift cards
-3. Dynamics 365, SVS and Givex gift card
+## Add a gift card module to a page
 
-## Add a cart module to a page
+To add a gift card module to a checkout page and set the required properties, see [Checkout module](add-checkout-module.md).
 
-To add a cart module to a new page and set the required properties, follow these steps.
-
-1. Create a fragment that is named **Cart fragment**, and add a cart module to it.
-1. Add a heading to the cart module.
-1. Add a store selector module to the cart module.
-1. Save the fragment, finish editing it, and publish it.
-1. Create a template that is named **Cart template**, and add the cart fragment that you just created to it.
-1. Save the template, finish editing it, and publish it.
-1. Create a page that uses the new template.
-1. Save and preview the page.
-1. Finish editing the page, and publish it.
 
 ## Additional resources
 
