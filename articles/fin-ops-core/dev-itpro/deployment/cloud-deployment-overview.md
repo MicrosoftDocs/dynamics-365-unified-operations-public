@@ -5,7 +5,7 @@ title: Cloud deployment overview
 description: This topic describes the cloud environment and subscription that you are deploying to, who can perform which tasks, and the data and customizations that you need to manage for Finance and Operations apps. 
 author: kfend
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 03/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -134,10 +134,11 @@ For more information, see [Where your Finance and Operations data is stored](htt
 ## Frequently asked questions
 
 ### Why am I seeing the state 'Migrating' on my environment in LCS?
-In order to provide the best experience and performance for you, Microsoft has to perform Maitenance Operations on your environment. During some of the maintenance operations your environment status may show 'Migrating'. You will not be able to perform any lifecycle operations such as package applications until the status returns to 'Deployed'. There will however be no impact the Finance and Operations. Users may continue normal operations without any service interuption. You will receive an email notification before the maintenance operation is initiated.
+In order to provide the best experience and performance for you, Microsoft has to perform maitenance operations on your environment. During some of the maintenance operations, your environment status may show 'Migrating'. You will not be able to perform any lifecycle operations, such as package applications, until the status returns to 'Deployed'. There will however be no impact to Finance and Operations apps. Users may continue normal operations without any service interuption. You will receive an email notification before the maintenance operation is initiated.
 
 ### How do I connect to the SQL database on my Sandbox environment?
-Follow the below steps to connect to the SQL Database in your Tier 2+ Sandbox environments. 
+Follow the below steps to connect to the SQL Database in your Tier 2+ Sandbox environments.
+
 > ![Warning]
 > You will not be able to connect to the Production database directly.
 
