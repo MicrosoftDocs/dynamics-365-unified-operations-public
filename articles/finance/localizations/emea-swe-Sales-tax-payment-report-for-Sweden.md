@@ -1,7 +1,5 @@
----
 Sales tax report for Sweden
 ==================================================
----
 
 This topic explains how to set up and generate the sales tax report for legal
 entities in Sweden.
@@ -10,7 +8,7 @@ For general information about how to set up the value-added tax (VAT) statement,
 see [VAT reporting for Europe](emea-vat-reporting.md).
 
 Set up the report layout for sales tax authorities
-==================================================
+---------------------------------------------------
 
 To generate a sales tax report in the correct format for the appropriate tax
 authority, you must first set up the report layout for sales tax authorities.
