@@ -33,7 +33,6 @@ ms.dyn365.ops.version: 10.0.9
 
 # Dual currency support for sales tax
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic explains how to extend dual currency accounting for sales taxes and the impact for sales tax calculations, posting and settlements.
 
