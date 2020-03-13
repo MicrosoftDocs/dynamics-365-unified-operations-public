@@ -77,7 +77,7 @@ The following image shows **Modes of delivery** and **Payment methods** set up o
 
 ### Set up payment methods
 
-To set up payment methods, follow these stepsfor each payment type supported on this channel. Users will be required to select from pre-defined payment methods to link them to the call center channel. Before setting up your call center payment methods, first set up your master methods of payment in **Retail and Commerce \> Channel setup \> Payment methods \> Payment methods**.
+To set up payment methods, follow these steps for each payment type supported on this channel. Users will be required to select from pre-defined payment methods to link them to the call center channel. Before setting up your call center payment methods, first set up your master methods of payment in **Retail and Commerce \> Channel setup \> Payment methods \> Payment methods**.
 
 1. On the action pane, select the **Set up** tab, and then select **Payment methods**.
 1. On the action pane, select **New**.
