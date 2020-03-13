@@ -131,9 +131,9 @@ for settlement period** inquiry.
 -   **Total list** – Generate a report for all sales transactions for the
     period. These transactions include original and corrected transactions.
 
-1.  Select **OK**.
+4.  Select **OK**.
 
-2.  Set the **Tax currency**, **Reporting currency**, and **Currency rate on
+5.  Set the **Tax currency**, **Reporting currency**, and **Currency rate on
     reporting date** fields as described in the Generate a sales tax payment and
     print the Swedish sales tax report section.
 
@@ -192,7 +192,7 @@ reporting codes, post transactions, and generate the Swedish sales tax report.
 >   is used in the sales tax payment process, you must set a relevant sales tax
 >   reporting code in one or more fields on the **Report setup** tab.
 
-1.  Post the following transactions. For example for Customer invoices go to
+3.  Post the following transactions. For example for Customer invoices go to
     **Accounts receivable \> Invoices \> All free text invoices**, for Vendor
     invoices go to **Accounts payable \> Invoices \> Invoice journal.**
 
@@ -205,45 +205,40 @@ reporting codes, post transactions, and generate the Swedish sales tax report.
 | January 1, 2020 | Customer invoice (export)       | 100            | 0              | SEThird            | 36                                     | Not applicable                           |
 | January 1, 2020 | Vendor invoice (reverse charge) | 100            | 25             | SERC25             | 23                                     | 30 – Tax payable 48 – Tax deduction      |
 
-2.  Go to **Tax \> Declarations \> Sales tax \> Settle and post sales tax**. In
+4.  Go to **Tax \> Declarations \> Sales tax \> Settle and post sales tax**. In
     the **Report sales tax for settlement period** dialog box in the **Sales tax
     payment version** field, select **Original**.
 
-3.  Print the report, and review the data.
+5.  Print the report, and review the data.
 
-![](media/6d88fc4c1ab8779b7931b7c8bb99402c.png)
+![](media/1_Sales_tax_reporting.png)
 
->   Sales tax report for the Original sales tax payment version
-
-1.  Post the new transaction. For example go to **Accounts receivable \>
+6.  Post the new transaction. For example go to **Accounts receivable \>
     Invoices \> All free text invoices.**
 
 | **Date**        | **Transaction type**   | **Amount net** | **VAT amount** | **Sales tax code** | **Expected tax base – reporting code** | **Expected tax amount – reporting code** |
 |-----------------|------------------------|----------------|----------------|--------------------|----------------------------------------|------------------------------------------|
 | January 1, 2020 | Customer invoice (dom) | 100            | 6              | SE6                | 5                                      | 12                                       |
 
-2.  Go to **Tax \> Declarations \> Sales tax \> Settle and post sales tax**. In
+7.  Go to **Tax \> Declarations \> Sales tax \> Settle and post sales tax**. In
     the **Report sales tax for settlement period** dialog box in the **Sales tax
     payment version** field, select **Latest corrections**.
 
-3.  Go to **Tax \> Declarations \> Sales tax \> Report sales tax for settlement
+8.  Go to **Tax \> Declarations \> Sales tax \> Report sales tax for settlement
     period**. In the **Report sales tax for settlement period** dialog box in
     the **Sales tax payment version** field, select **Corrections**. The
     following illustration shows the result.
 
-![](media/0a95851123143fdf9a2b4076ed5cd292.png)
+![](media/2_Sales_tax_reporting.png)
 
->   Sales tax report for the Corrections sales tax payment version
-
-1.  Go to **Tax \> Declarations \> Sales tax \> Report sales tax for settlement
+9.  Go to **Tax \> Declarations \> Sales tax \> Report sales tax for settlement
     period**. In the **Report sales tax for settlement period** dialog box in
     the **Sales tax payment version** field, select **Total list**. The
     following illustration shows the result.
 
-[./media/image5.png](./media/image5.png)
+![](media/3_Sales_tax_reporting.png)
 ========================================
 
-~   Sales tax report for the Total list sales tax payment version
 
 Report VAT declaration to the Tax authority
 ===========================================
@@ -253,4 +248,4 @@ in the VAT declaration for the Swedish Tax Agency in the official format. For
 example, the following illustration shows what the Swedish VAT declaration has
 looked like since 2016.
 
-![Swedish VAT declaration ](media/6ee6a61275cffd182ea250632b9f38bc.png)
+![](media/4_Swedish_VAT_declaration.png)
