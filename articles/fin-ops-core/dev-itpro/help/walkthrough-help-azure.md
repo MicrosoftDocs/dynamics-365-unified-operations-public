@@ -46,28 +46,28 @@ The general process for creating your Azure resources consists of the following 
 
 1. In the Azure portal, [create a resource group](#resgr).  
 
-2. In the Azure portal, [create a web app](#webapp), [a storage account](#jsonstorage), and [an Azure search service](#searchservice).  
+2. In the Azure portal, [create a web app](#webapp), [a storage account](#jsonstorage), and [a search service](#searchservice).  
 
     - The web app stores and serves HTML files  
 
-        The HTML files contain your Help content, no matter if it's based on Microsoft's content or not.  
+        The HTML files contain your Help content.  
 
     - The storage account uses a Blob container to store JSON files  
 
         The JSON files are your Help files converted to JSON so that they can be used to generate an index of your content for search purposes. For more information, see [Custom Help Toolkit: The ConvertHtmlToJson tool](custom-help-toolkit-ConvertHtmlToJson.md).  
 
-    - The Search service performs indexing  
+    - The search service performs indexing  
 
-        Indexing makes your content discoverable by the in-product Help pane. For more information, see [Create a basic index in Azure Cognitive Search](/azure/search/search-what-is-an-index).
+        An index makes your content discoverable by the in-product Help pane. For more information, see [Create a basic index in Azure Cognitive Search](/azure/search/search-what-is-an-index).
 
 3. [Upload HTML files](#uploadhtml) to the Web App by using File Transfer Protocol (FTP).
 
     Place the HTML files in the relevant language subfolders. For the language name to use for the subfolder, see [Language and locale descriptors across product and Help](language-locale.md).  
 
 4. [Upload JSON files](#jsonstorage) into Blob storage in the Storage container, in a subfolder that corresponds to the HTML language subfolder.  
-5. [Configure the Search service](#searchconfig) to have a data source, index, and indexer on the Search service by using the REST API.
+5. [Configure the search service](#searchconfig) to have a data source, index, and indexer on the search service by using the REST API.
 
-    In this example, we use an API tool, [Postman](https://www.postman.com/), to make the REST API calls. The [REST API CREATION.txt file](https://github.com/microsoft/dynamics365f-o-custom-help/tree/master/Help%20Pane%20extension) contains sample REST API requests to create a data source, index, and indexer. You must create language-specific indexes to use a language-specific index analyzer.
+    In this example, we use an API tool, [Postman](https://www.postman.com/), to make the REST API calls. You must create language-specific indexes to use a language-specific index analyzer.
 
 In the following, we assume that you have an Azure account and a valid subscription. If you don't have an [Azure subscription](/azure/guides/developer/azure-developer-guide#understanding-accounts-subscriptions-and-billing), create an account before you begin. You can start with a free account for 12 months. For more information, see [Create your Azure free account today](https://azure.microsoft.com/free/).  
 
@@ -109,13 +109,13 @@ Next, you will add your HTML files to the web app. You can use an FTP client suc
 
 Your custom help site has now been deployed to Azure and should be visible in a browser.
 
-## <a name="jsonstorage"></a>Create storage for the JSON files
+## <a name="jsonstorage"></a>Create a storage account
 
 Next, you will create a storage account with a Blob container that will store JSON files that are used by the search service. For more information about Azure storage, see [Azure Storage Documentation](/azure/storage/).
 
 You can generate these JSON files from your Help files by using the [ConvertHtmlToJson tool](custom-help-toolkit-ConvertHtmlToJson.md) that is part of the Custom Help Toolkit.
 
-### To create storage for the JSON files
+### To create a storage account
 
 1. In the [Azure portal](https://portal.azure.com/), go to your resource group, choose **Add**, choose **Storage account**, specify a **Storage account name** such as *mycustomhelpstorage*, and choose **Review + Create**. For more information, see [Create a storage account](/azure/storage/common/storage-account-create#create-a-storage-account).  
 
@@ -123,7 +123,7 @@ You can generate these JSON files from your Help files by using the [ConvertHtml
 
     After the deployment is completed, the new storage account is listed under the resource group.  
 
-3. Choose the storage account name, then choose **Containers** under **Blob Service** in the left blade. Add a container and specify the name, such as *mycustomhelpcontainer*. For more information, see [Quickstart: Upload, download, and list blobs with the Azure portal](/azure/storage/blobs/storage-quickstart-blobs-portal).  
+3. Select your storage account, then choose **Containers** under **Blob Service** in the left blade. Add a container and specify the name, such as *mycustomhelpcontainer*. For more information, see [Quickstart: Upload, download, and list blobs with the Azure portal](/azure/storage/blobs/storage-quickstart-blobs-portal).  
 
 You can now upload your JSON files. The folder structure that you use must match the folder structure you created for the HTML files to match the languages of your solution. For example, if your web app has HTML files in an ```en-US``` folder, create an ```en-US``` folder in the container, and upload the en-US JSON files to this folder.  
 
@@ -151,7 +151,7 @@ In the previous section, you created a search service. You must now configure it
 
     Replace *[AzureSearchServicename]* with the name of your search service that you created in [Create a search service](#searchservice), for example *mycustomhelpsearch*.
 
-3. In the **Headers** tab, set `"Content-type"` to `application/json` and set `api-key` to the key from your Azure Cognitive Search service. You can find the key in **Access keys** under **Settings** in the left blade of the search service.
+3. In the **Headers** tab, set `"Content-type"` to `application/json` and set `api-key` to the key from your Azure Cognitive search service. You can find the key in **Access keys** under **Settings** in the left blade of the search service.
 
 4. In the **Authorization** tab, set **Type** to `No Auth`.
 
@@ -175,7 +175,7 @@ In the previous section, you created a search service. You must now configure it
     Replace the following parameters with the relevant values:  
         - **[datasourcename]**: Specify a name for the data source, such as *mycustomhelpdatasource*.  
         - **[StorageAccountName]**: Specify the storage account name that you created in [Create storage for the JSON files](#jsonstorage), for example *mycustomhelpstorage*.  
-        - **[key]**: Specify the access key for your storage account. You can find the key in **Keys** under **Settings** in the left blade of the storage account.
+        - **[key]**: Specify the access key for your storage account. You can find the key in **Keys** under **Settings** in the left blade of the storage account.  
         - **[JSONStorageContainerName]**: Specify the name of your BLOB container that you created in [Create storage for the JSON files](#jsonstorage), for example *mycustomhelpcontainer*.  
 
 6. Choose **Send**, and make sure that the value in the **Status** field is **201 Created**.  
@@ -192,7 +192,7 @@ Next, you will configure the search service to have an index of your content for
 
     - **Type** (on the **Authorization** tab): No Auth
     - **Content-Type** (on the **Headers** tab): application/json
-    - **api-key** (on the **Headers** tab): The key from your Azure Cognitive Search service
+    - **api-key** (on the **Headers** tab): The key from your Azure Cognitive search service
 
 2. On the Body tab, paste the following text.
 
@@ -235,7 +235,7 @@ The index does not contain any data until it has been processed by an *indexer*.
 
     - **Type** (on the **Authorization** tab): No Auth
     - **Content-Type** (on the **Headers** tab): application/json
-    - **api-key** (on the **Headers** tab): The key from your Azure Cognitive Search service
+    - **api-key** (on the **Headers** tab): The key from your Azure Cognitive search service
 
 2. On the Body tab, paste the following text.
 
@@ -259,8 +259,11 @@ The index does not contain any data until it has been processed by an *indexer*.
     Replace the following parameters with the relevant values:
 
     - **[IndexerName]**: Specify the name of the indexer that should be created, such as *indexerenus*.
-    - **[DatasourceName]**: Specify the name of the data source, such as *customhelpdatasource*.
-    - **[IndexName]**: Specify the name of the index, such as *indexenus*.
+    - **[DatasourceName]**: Specify the name of the data source that you created, such as *mycustomhelpdatasource*.
+    - **[IndexName]**: Specify the name of the index that you created, such as *indexenus*.
+
+    > [!NOTE]
+    > This configuration will set up an indexer that is scheduled to run every 10 hours: `"schedule" : { "interval" : "PT10H" },`. You can adjust the interval as appropriate.
 
 3. Click Send, and make sure that the value in the **Status** field is **201 Created**.
 
@@ -276,7 +279,7 @@ Optionally, use Postman to test the search. For an example of how to do that, se
 
 ## Next steps
 
-At this point, you have uploaded your Help content to an Azure web app and indexed it so that the in-product Help pane can generate context-sensitive links to your Help when users open the Help pane in your Dynamics 365 solution.  
+At this point, you have uploaded your Help content to an Azure web app and indexed it so that the in-product Help pane will be able to generate context-sensitive links to your Help when users open the Help pane in your Dynamics 365 solution.  
 
 You can now extend the Help pane to be aware of your content. For more information, see [Connect your Help website with the in-product Help pane](connect-help-pane.md).  
 

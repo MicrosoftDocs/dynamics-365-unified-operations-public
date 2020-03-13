@@ -32,7 +32,7 @@ For information about authoring MarkDown files in GitHub repos, see the [Docs Co
 
 ## Contribute to the content
 
-A benefit of GitHub is the ability for you to contribute to the core content that the Microsoft team provides in the Dynamics-365-Unified-Operations-public repo. For example, you might have a new article that you think would be beneficial or you might have a correction to an existing article. If you would like to contribute to the MicrosoftDocs/Dynamics-365-Unified-Operations-public repo, you can create a *pull request* from your repo to the MicrosoftDocs/Dynamics-365-Unified-Operations-public repo. The Microsoft team will then review the request and include the changes as appropriate.
+A benefit of GitHub is the ability for you to contribute to the core content that the Microsoft team provides in the Dynamics-365-Unified-Operations-public repo. For example, you might have a new article that you think would be beneficial to others or you might have a correction to an existing article. If you would like to contribute to the MicrosoftDocs/Dynamics-365-Unified-Operations-public repo, you can create a *pull request* from your repo to the MicrosoftDocs/Dynamics-365-Unified-Operations-public repo. The Microsoft team will then review the request and include the changes as appropriate.
 
 You can also contribute and make edits to the existing documentation. To get started, click the **Edit** (pencil) button on a topic. The following video shows how you can contribute to our documentation.
 
@@ -43,9 +43,9 @@ You can also contribute and make edits to the existing documentation. To get sta
 
 ## Extend and customize Microsoft's source content from GitHub repos
 
-There are different repos in GitHub for the source content and each of the languages that Microsoft translates to. The [Dynamics-365-Unified-Operations-public](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-public) repo contains the source content in English (US). If you want access to the content in other languages, navigate to the relevant repo - the names follow this pattern: ```Dynamics-365-Operations.\<language>-\<country>```, such as [Dynamics-365-Operations.de-de](https://github.com/MicrosoftDocs/Dynamics-365-Operations.de-de) for the German version.  
+Microsoft uses separate repos in GitHub for the source content and each of the languages that Microsoft translates to. The [Dynamics-365-Unified-Operations-public](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-public) repo contains the source content in English (US). If you want access to the content in other languages, the names follow this pattern: ```Dynamics-365-Operations.\<language>-\<country>```, such as [Dynamics-365-Operations.de-de](https://github.com/MicrosoftDocs/Dynamics-365-Operations.de-de) for the German version.  
 
-When Microsoft publishes an update to the content, the *live* branch in the corresponding GitHub repo is updated. The source repo is updated weekly, and the related language-specific repos are updated less frequently, based on when new translations are made available. If you fork one of our repos, you can choose to update your fork with updates from the Microsoft repo on a monthly basis or less frequently, depending on your preferred work processes. The GitHub platform and tooling will help you manage any potential merge conflicts if you have made changes to the same files as Microsoft has. For more information, see [Set up Git repository locally for documentation](/contribute/get-started-setup-local) in the Docs Authoring Guide and [Fork a repo](https://help.github.com/articles/fork-a-repo/) in the Help for GitHub.  
+When Microsoft publishes an update to the content, the *live* branch in the corresponding GitHub repo is updated. The source repo is updated weekly, and the related language-specific repos are updated less frequently, based on when new translations are made available. If you fork one of our repos, you can choose to update your fork with updates from the Microsoft repo on a monthly basis or less frequently, depending on your preferred work processes. The GitHub platform and tooling will help you manage any potential merge conflicts if you have made changes to files that Microsoft has also changed. For more information, see [Set up Git repository locally for documentation](/contribute/get-started-setup-local) in the Docs Authoring Guide and [Fork a repo](https://help.github.com/articles/fork-a-repo/) in the Help for GitHub.  
 
 > [!TIP]
 > You do not have to get acquainted with GitHub if you just want to get the Microsoft content as-is. For more information, see the [Getting by without GitHub](#get-the-content-without-a-github-account) section. However, if you want to extend or customize the Microsoft content, we recommend that you join us in GitHub.
@@ -74,7 +74,7 @@ Articles use a syntax for formatting text called [Markdig](https://github.com/lu
 You can convert content from Word to MarkDown using open source tools or other tools for easy recycling.  
 
 > [!IMPORTANT]
-> The [Writate](https://writage.com/) plugin for Word can be very helpful for converting existing content to MarkDown, but we recommend that you do not use it to edit MarkDown files in Word. When you save the MarkDown file, all metadata tags and some of the formatting is erased.
+> The [Writage](https://writage.com/) plugin for Word can be very helpful for converting existing content to MarkDown, but we recommend that you do not use it to edit MarkDown files in Word. When you save the MarkDown file, all metadata tags and some of the formatting is erased.
 
 ### Get updates from Microsoft
 

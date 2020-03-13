@@ -45,7 +45,7 @@ Connecting your [custom help](custom-help-overview.md#custom-help-sites) with th
 > [!IMPORTANT]
 > The following sections require the development tools for Finance and Operations apps in Visual Studio. For more information, see [Development tools in Visual Studio](../dev-tools/development-tools-overview.md).
 
-## <a name="extendhelppane"></a>Extend the Help pane and assign the language index in Visual Studio
+## <a name="extendhelppane"></a>Extend the Help pane and assign the custom help indexes to languages
 
 The **Help Pane extension** folder of the [Custom Help Toolkit](custom-help-toolkit.md) contains the **AzureSearchCustomHelp** solution that you can open in the Finance and Operations development environment. The same folder also contains the **HelppaneOption.axpp** project that you can then import into the solution in Visual Studio.  
 
@@ -56,9 +56,9 @@ The **Help Pane extension** folder of the [Custom Help Toolkit](custom-help-tool
 3. In the **File name** field, specify the path to **HelppaneOption.axpp**, and then choose OK to complete the import process. Update the references so that there are no missing references.  
 4. In the **HelppaneMacro** file, update the values for the following parameters:
 
-    - [WebAppName]: Specify the Web App name that you created for your custom Help solution, such as *MyCustomHelpWebApp*.
+    - [WebAppName]: Specify the name of the web bpp that you created in [Create a web app](walkthrough-help-azure.md#webapp), such as *MyCustomHelpWebApp*.
     - Admin key value: Specify the Azure Cognitive Search service admin key. You can find the key in **Access keys** under **Settings** in the left blade of the search service in the [Azure portal](https://portal.azure.com/).
-    - [SearchServiceName]: Specify the search service name, such as *mycustomhelpsearch*.
+    - [SearchServiceName]: Specify the name of the search service that you created in [Create a search service](walkthrough-help-azure.md#searchservice), such as *mycustomhelpsearch*.
 
     The following snippet illustrates the content of the **HelppaneMacro** file:
 
@@ -74,16 +74,16 @@ The **Help Pane extension** folder of the [Custom Help Toolkit](custom-help-tool
     #define.htm('html')
     ```
 
-5. Optionally, to update any UI strings in the Help pane, modify them in the **Customhelppane.en-US.label.txt** file.  
+5. Optionally, to modify any of the UI strings in the Help pane, edit **Customhelppane.en-US.label.txt**.  
 
-Next, you must specify the language that your custom help search index is intended for.  
+Next, you must specify the language for which your custom help search index is intended.  
 
-### To assign a language to a custom index
+### To assign a custom index to a language
 
 1. Open the **Language.config** file in the solution.
 2. Find the language of the index in the list, and specify an index name in ```index=""```, ```parentindex="```, or ```ultimateindex=""```.  
 
-    For example, you created search indexes for English (United States) and German (Austria) with the names *myenusindex* and *mydeatindex*, respectively. Here is what your entries will look like.
+    For example, if you created search indexes for English (United States) and German (Austria) with the names *myenusindex* and *mydeatindex* respectively, here is what your entries will look like:
 
     ```
     <add language="en-US" ultimateindex="myenusindex" />
@@ -111,45 +111,45 @@ The search and fallback order are defined in the following order of priority:
 > [!IMPORTANT]
 > If **parentlanguage** is set, there must be a corresponding **parentindex**. Note that the following scenario is valid as ```language="de"``` has ```parentindex=""indexde``` and both de-DE and de-AT are descendants of de.
 
-    ```
-    <add language="de" parentindex="indexde"/>
-    <add language="de-DE" parentlanguage="de" index=""/>
-    <add language="de-AT" parentlanguage="de-DE" index="indexdeat"/>
-    ```
+```
+<add language="de" parentindex="indexde"/>
+<add language="de-DE" parentlanguage="de" index=""/>
+<add language="de-AT" parentlanguage="de-DE" index="indexdeat"/>
+```
 
 Here are some sample configurations:
 
-#### Single-locale help content
+#### Help content for one locale
 
 In this configuration, you only have help content for English (US). Clients set to any locale will display the help content in English (US).
 
-    ```
-    <add language=“en-US” ulitmateindex="indexenus"/>
-    ```
+```
+<add language=“en-US” ulitmateindex="indexenus"/>
+```
 
-#### Multiple-locale help content
+#### Help content for multiple locales
 
 In this configuration, you have help content for French, German and English (US). Clients set to `de` will display content in German, clients set to `fr` will display content in French, and clients set to any other locale will display the help content in English (US).
 
-    ```
-    <add language=“en-US” ulitmateindex="indexenus"/>
-    <add language="fr" parentindex="indexfr"/>
-    <add language="de" parentindex="indexde"/>
-    ```
+```
+<add language=“en-US” ulitmateindex="indexenus"/>
+<add language="fr" parentindex="indexfr"/>
+<add language="de" parentindex="indexde"/>
+```
 
 If clients are set to `de` or `fr` and no results are found in the German and French content respectively, results will be displayed in English (US) if available.
 
-#### Multiple-locale-with-parent help content
+#### Help content with parent locales
 
-In this configuration, you have help content for German (Austria), German, and English (US).
+In this configuration, you have help content for German (Austria), German, and English (US). This might be the case if you have a number of topics specifically for features for Austria, but otherwise topics in German can be used.
 
-    ```
-    <add language=“en-US” ulitmateindex="indexenus"/>
-    <add language="de" parentindex="indexde"/>
-    <add language="de-AT" parentlanguage="de" index="indexdeat"/>
-    ```
+```
+<add language=“en-US” ulitmateindex="indexenus"/>
+<add language="de" parentindex="indexde"/>
+<add language="de-AT" parentlanguage="de" index="indexdeat"/>
+```
 
-If the client is set to `de-AT` and no results are found in the German (Austria) content, results will be displayed in German and English (US) where available.
+If the client is set to `de-AT` and no results are found in the German (Austria) content, results will be displayed in German and English (US) if available.
 
 ## See also
 

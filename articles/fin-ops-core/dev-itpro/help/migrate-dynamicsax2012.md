@@ -48,7 +48,7 @@ Microsoft has published a [Custom Help Toolkit](custom-help-toolkit.md) that inc
 
 - Adds the following metadata:  
 
-    ```yaml
+    ```html
     <meta name="ms.search.region" content="Global" />  
     <meta name="ms.search.scope" content="Operations, Core" />  
     <meta name="ms.dyn365.ops.version" content="AX 7.0.0" />  
@@ -66,7 +66,7 @@ You can run the following command from a Command Prompt window, or you can run t
 
 The following metadata is currently used or are reserved for use in indexing.  
 
-```yaml
+```html
     <meta name="title" content="Title of file" />  
     <meta name="ms.locale" content="locale" />  
     <meta name="ms.search.form" content="FormAOTName" />  

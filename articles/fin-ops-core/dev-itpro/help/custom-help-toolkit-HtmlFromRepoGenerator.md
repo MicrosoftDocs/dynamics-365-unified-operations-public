@@ -43,7 +43,7 @@ HtmlFromRepoGenerator.exe provides functionality that supports the creation of c
 - Update links to files that are no longer in the clone
 - Update the **ms.locale** value to match the language options that are supported by the Finance and Operations client
 
-    The client uses language descriptors that are different from the language descriptors used in the corresponding GitHub repos. For localized Help to be called, the language indicators in the content from GitHub must be changed so that they match how the client understands languages.
+    The client uses language descriptors that are different from the language descriptors used in the corresponding GitHub repos. For localized Help to be called, the language indicators in the content from GitHub must be changed so that they match how the client understands languages. See [Language and locale descriptors in across product and Help](language-locale.md) for more information.
 - Generate HTML files that can be used for publishing.
 
     The HTML files will be generated in the **d365F-O** subfolder. The files are generated based on stylesheets and templates that are part of the tool. For more information, see [Modifying the styling of the generated HTML files](#modifying-the-styling-of-the-generated-html-files).
@@ -100,13 +100,13 @@ HtmlFromRepoGenerator.exe --json articles/ --out "D:\D365-Operations\en-US" --ex
 Operations\logs\en-US
 ```
 
-The following example clones both the de-DE and en-US repos, and generates HTML files for German.
+The following example clones both the de-DE and en-US repos, and generates HTML files for de.
 
 ```
 HtmlFromRepoGenerator.exe --json articles/ --out "D:\D365-Operations\de" --repo "https://github.com/MicrosoftDocs/Dynamics-365-Operations.de-de" --externalText "(This is an external link)" --EnRepo "https://github.com/MicrosoftDocs/Dynamics-365-unified-Operations-public" --EnOut "D:\D365-Operations\en-us" --replaceUrl "https://docs.microsoft.com/de-de/dynamics365/supply-chain" --lng "de" --LogsDir D:\D365-Operations\logs\de
 ```
 
-The following example uses the existing de-DE and en-US repos, and then generates HTML files for German. Make sure that the de-DE repo is up to date if you use the existing repo.
+The following example uses the existing de-DE and en-US repos, and then generates HTML files for de. Make sure that the de-DE repo is up to date if you use the existing repo.
 
 ```
 HtmlFromRepoGenerator.exe --json articles/ --out "D:\D365-Operations\de" --DoNotClone --externalText "(This is an external link)" --enOut "D:\D365-Operations\en-us" --replaceUrl "https://docs.microsoft.com/de-de/dynamics365/supply-chain" --lng "de" --LogsDir D:\D365-Operations\logs\de
