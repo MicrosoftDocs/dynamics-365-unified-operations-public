@@ -318,7 +318,7 @@ The following table shows the sales tax codes and sales tax reporting codes for 
 <td>-</td>
 </tr>
 <tr>
-<td rowspan="3"><strong>IntraEUGoods</strong></td>
+<td rowspan="4"><strong>IntraEUGoods</strong></td>
 <td>10801</td>
 <td>Tax-free sale</td>
 <td>K_21</td>
@@ -329,6 +329,12 @@ The following table shows the sales tax codes and sales tax reporting codes for 
 <td>Taxable import</td>
 <td>K_23</td>
 <td>+</td>
+</tr>
+<tr>
+<td>10811</td>
+<td>Taxable sales (Reverse charge)</td>
+<td>K_23</td>
+<td>-</td>
 </tr>
 <tr>
 <td>10812</td>
