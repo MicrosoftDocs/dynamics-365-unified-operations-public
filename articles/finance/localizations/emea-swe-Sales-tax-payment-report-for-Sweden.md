@@ -134,8 +134,8 @@ for settlement period** inquiry.
 4.  Select **OK**.
 
 5.  Set the **Tax currency**, **Reporting currency**, and **Currency rate on
-    reporting date** fields as described in the Generate a sales tax payment and
-    print the Swedish sales tax report section.
+    reporting date** fields as described in the [Generate a sales tax payment and
+    print the Swedish sales tax report](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/SE-VAT-declaration/articles/finance/localizations/emea-swe-Sales-tax-payment-report-for-Sweden.md#generate-a-sales-tax-payment-and-print-the-swedish-sales-tax-report) section.
 
 Example
 =======
