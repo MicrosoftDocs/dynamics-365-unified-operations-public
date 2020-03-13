@@ -56,7 +56,7 @@ To create and configure a new call center channel, follow these steps.
 1. Provide a **Price override** info code. You may need to create an info code for this first. This infocode provides the set of reason codes that the user will be prompted to choose from when using the price override functionality on a call center order.
 1. Provide a **Hold code** info code. You may need to create an info code for this first. This infocode provides the set of optional reason codes that the user will be prompted to choose from when placing an order on hold.
 1. Provide a **Credit** info code. You may need to create an info code for this first. This infocode provides the set of reason codes that the user can choose from when using the order credit functionality of call center to give misc refunds to the customer for customer service reasons.
-1. Optional: set up financial dimensions on the **Financial dimensions** fasttab. The dimensions entered here will default on any sales order created in this call center channel.
+1. Optional: set up financial dimensions on the **Financial dimensions** FastTab. The dimensions entered here will default on any sales order created in this call center channel.
 1. Click **Save**.
 
 The following image shows the creation of a new call center channel.
@@ -99,7 +99,7 @@ To change or add a mode of delivery to be associated to the call center channel,
 1. From the Call center modes of delivery form, select **Manage modes of delivery**
 1. On the action pane, select **New** to create a new mode of delivery, or select an existing mode.
 1. In the **Retail channels** section, click **Add line** to add the call center channel. Adding channels using organization nodes instead of adding each channel individually can streamline adding channels.
-1. Ensure the mode of delivery has been configured with data on the **Products** fasttab and the **Addresses** fasttab. If no products or delivery addresses are valid for the mode of delivery, choosing it during order entry will result in errors.
+1. Ensure the mode of delivery has been configured with data on the **Products** FastTab and the **Addresses** FastTab. If no products or delivery addresses are valid for the mode of delivery, choosing it during order entry will result in errors.
 1. After any changes have been made to the call center mode of delivery configurations, the **Process delivery modes** job must be run to explode the change matrix. This job can be found by navigating to **Retail and Commerce \> Retail and Commerce IT \> Process delivery modes**.
 
 The following image shows an example of a mode of delivery.
