@@ -129,16 +129,16 @@ drop user axdeployextuser
 --Tidy up the batch server config from the previous environment
 DELETE FROM SYSSERVERCONFIG
 
---Tidy up server sessions from the previous environment.
+--Tidy up server sessions from the previous environment
 DELETE FROM SYSSERVERSESSIONS
 
 --Tidy up printers from the previous environment
 DELETE FROM SYSCORPNETPRINTERS
 
---Tidy up client sessions from the previous environment.
+--Tidy up client sessions from the previous environment
 DELETE FROM SYSCLIENTSESSIONS
 
---Tidy up batch sessions from the previous environment.
+--Tidy up batch sessions from the previous environment
 DELETE FROM BATCHSERVERCONFIG
 
 --Tidy up batch server to batch group relation table
