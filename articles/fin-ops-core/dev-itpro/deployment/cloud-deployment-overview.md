@@ -133,31 +133,31 @@ For more information, see [Where your Finance and Operations data is stored](htt
 
 ## Frequently asked questions
 
-### Why am I seeing the state 'Migrating' on my environment in LCS?
-In order to provide the best experience and performance for you, Microsoft has to perform maitenance operations on your environment. During some of the maintenance operations, your environment status may show 'Migrating'. You will not be able to perform any lifecycle operations, such as package applications, until the status returns to 'Deployed'. There will however be no impact to Finance and Operations apps. Users may continue normal operations without any service interuption. You will receive an email notification before the maintenance operation is initiated.
+### Why does the status display 'Migrating' on my environment in LCS?
+To provide the best experience and performance, Microsoft has to perform maintenance operations on your environment. During some of these maintenance operations, your environment status may display 'Migrating'. You will not be able to perform any lifecycle operations, such as package applications, until the status returns to 'Deployed'. There will be no impact to Finance and Operations apps. Users can continue with normal operations without any service interruption. You will receive an email notification before the maintenance operation is initiated.
 
 ### How do I connect to the SQL database on my Sandbox environment?
-Follow the below steps to connect to the SQL Database in your Tier 2+ Sandbox environments.
+Follow these steps to connect to the SQL Database in your Tier 2+ Sandbox environments.
 
-> ![Warning]
+> ![IMPORTANT]
 > You will not be able to connect to the Production database directly.
 
-1. Remote Desktop into one of the AOS VMs belonging to the Tier 2+ environment whose database you want to connect to.
+1. Remote Desktop into one of the AOS VMs belonging to the Tier 2+ environment with a database that you want to connect to.
 2. Open SQL Server Management Studio.
-3. Get the connection details by following the below steps:
-    1. Navigate to the **Environment Details** page in **Lifecycle Services portal**.
-    2. Get the SQl Server, Database Name, and AXDBAdmin credentials from the **Database Accounts** section.
+3. Use these steps to get the connection details:
+    1. Go to the **Environment Details** page in **Lifecycle Services portal**.
+    2. Get the SQL Server, Database Name, and AXDBAdmin credentials from the **Database Accounts** section.
 4. In the **Connect to SQL Server** dialog box, complete the following steps:
     1. Enter (ServerName).database.windows.net, where (ServerName) is the name of your database server obtained from LCS.
     2. Select SQL Server Authentication for **Authentication**.
     3. Use axdbadmin for **Login**.
     4. Enter the password obtained from LCS for axdbadmin.
-    5. Click on **Options** at the bottom.
-    6. Enter the name of te database obtained from LCS in the **Connect to database** dropdown.
-    7. Click **Connect**.
+    5. Select **Options**.
+    6. Enter the name of te database obtained from LCS in the **Connect to database** drop-down list.
+    7. Select **Connect**.
 
 ### How do I access a development instance?
-See [Deploy and access development environments](../dev-tools/access-instances.md) for information about how to access development instances, configure on-premises development VMs, and find configurations settings for developers and administrators.
+For information about how to access development instances, configure on-premises development VMs, and find configurations settings for developers and administrators, see [Deploy and access development environments](../dev-tools/access-instances.md).
 
 ### How do I deploy a demo environment
 A demo environment includes only Microsoft demo data. You can use a demo environment to explore default features and functionality. For more information, see [Deploy a demo environment](deploy-demo-environment.md).
