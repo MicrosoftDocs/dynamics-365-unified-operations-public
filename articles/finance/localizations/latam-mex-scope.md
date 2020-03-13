@@ -423,7 +423,7 @@ The following table lists the specific features that Microsoft delivers and supp
 </tr>
 <tr>
 <td></td>
-<td>Support for Global CFDI layout 3.3 in customer receipts (Retail)</td>
+<td>Support for Global CFDI layout 3.3 in customer receipts (Commerce)</td>
 <td>No</td>
 <td>No</td>
 <td>Yes</td>
@@ -566,7 +566,7 @@ The following modules are out of scope for Mexican localizations:
 - Compliance and internal controls
 - Human resources
 - Payroll
-- Retail
+- Commerce
 - Call center
 - Trade allowance management
 - Transportation management
@@ -594,9 +594,9 @@ The following features and functionality are out of scope for Mexican localizati
 
     - Public Sector
 
-- **Retail industry:**
+- **Commerce industry:**
 
-    - **Retail services:** The following online services are out of scope for the retail industry for Mexican localizations:
+    - **Services:** The following online services are out of scope for the commerce industry for Mexican localizations:
 
         - Sites Services for Microsoft Dynamics ERP
         - Commerce Services for Microsoft Dynamics ERP

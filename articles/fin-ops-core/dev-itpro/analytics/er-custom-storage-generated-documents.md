@@ -78,6 +78,7 @@ To specify how documents that an ER format generates are routed, you must config
 
 Review the code of the **insertFile()** method of the **ERDocuManagement** class. Notice that the **AttachingFile()** event is raised while the generated file is attached to a record.
 
+
 ```xpp
 /// <summary>
 /// Inserts file as attachment in Document Management.

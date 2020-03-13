@@ -104,9 +104,12 @@ Some Dimension Entry controls might not have the controller property set. The co
 
 ## Upgrade Script TODOs
 ### Dynamics AX 2012 
-<pre><code>/* TODO: (Code Upgrade) [Dimension entry control] 
+
+```xpp
+/* TODO: (Code Upgrade) [Dimension entry control] 
 Replace this based on the migration guidance. */
-DimensionEntryControl.reactivate();</code></pre>
+DimensionEntryControl.reactivate();
+```
 
 ### Finance and Operations 
 The reactivate method refreshes the Dimension Entry control with current settings. The method only refreshes the control if the company or displayed dimension list changes. This call can be removed if neither of these are changed before it. Otherwise leave the call as is. If parmCompany() is called immediately before reactivate(), and it is the only DEC API called before reactivate(), and the method it resides in is called during the active() of the datasource, then an optimization can be manually made to improve performance and reduce code uptake:
@@ -114,8 +117,10 @@ The reactivate method refreshes the Dimension Entry control with current setting
 1. Remove the parmCompany() and reactivate() calls during the datasource active process.
 2. In the form init(), run(), datasource init(), or similar methods called before initial user interaction with the form, add the following line of code:
 
-    <pre><code>DimensionEntryControl.parmCompanyReference(
-        fieldStr([myTable], [myCompanyContextField]);</code></pre>
+    ```xpp
+    DimensionEntryControl.parmCompanyReference(
+        fieldStr([myTable], [myCompanyContextField]);
+    ```
     
     This change will allow the DEC to automatically find the company field reference that is updated when the active record changes and refresh the list of dimensions accordingly. 
 
@@ -123,79 +128,113 @@ The reactivate method refreshes the Dimension Entry control with current setting
 > This should not be combined with the use of parmDisplayedDimensionSet() otherwise the list of dimensions may not be the ones expected. In all other locations, such as the modified method of a company selection field, parmCompany() must be called to immediately reflect the change in company as the datasource is not in the process of being read at that time.
 
 ### Dynamics AX 2012
-<pre><code>/* TODO: (Code Upgrade) [Dimension entry control] 
+
+```xpp
+/* TODO: (Code Upgrade) [Dimension entry control] 
 Replace this based on the migration guidance. */
-DimensionEntryControl.setEditability(true, 0);</code></pre>
+DimensionEntryControl.setEditability(true, 0);
+```
+
 
 ### Finance and Operations  
 If a specific editable dimension set is needed, replace this call with:
-<pre><code>DimensionEntryControl.parmEditableDimensionSet(
-    editableDimensionSet);</code></pre>
-    
+
+```xpp
+DimensionEntryControl.parmEditableDimensionSet(
+    editableDimensionSet);
+```
+
 > [!NOTE] 
 > The editableDimensionSet parameter is of type DimensionEnumeration.
 
 ### Dynamics AX 2012 
-<pre><code>/* TODO: (Code Upgrade) [Dimension entry control] 
+
+```xpp
+/* TODO: (Code Upgrade) [Dimension entry control] 
 This method can be removed if there is 
 no custom implementation */
-// dimensionDefaultingController.pageActivated();</code></pre>
+// dimensionDefaultingController.pageActivated();
+```
 
 ### Finance and Operations  
 If this call is made within the pageActivated method of the Dimension Entry control’s parent control or the form init method, it can be removed. The intent of this method call outside the above mentioned locations isn’t clear. Remove the call and test the control.
 
 ### Dynamics AX 2012
-<pre><code>/* TODO: (Code Upgrade) [Dimension entry control] 
+
+```xpp
+/* TODO: (Code Upgrade) [Dimension entry control] 
 Replace this based on the migration guidance. */
-DimensionEntryControl.deleted();</code></pre>
+DimensionEntryControl.deleted();
+```
 
 ### Finance and Operations  
 A TODO will be left for a call to deleted() that is not inside a data source delete method. These calls are only expected to be in data source delete methods, and there is no replacement. Try to remove the call and test the control.
 
 ### Dynamics AX 2012
-<pre><code>/* TODO: (Code Upgrade) [Dimension entry control] 
+
+```xpp
+/* TODO: (Code Upgrade) [Dimension entry control] 
 Replace this based on the migration guidance. */
-// dimensionDefaultingController.writing();</code></pre>
+// dimensionDefaultingController.writing();
+```
 
 ### Finance and Operations  
 The Dimension Entry control framework will save values. Remove the call and test the control.
 
 ### Dynamics AX 2012
-<pre><code>/* TODO: (Code Upgrade) [Dimension entry control] 
+
+```xpp
+/* TODO: (Code Upgrade) [Dimension entry control] 
 Replace this based on the migration guidance. */
-dimensionDefaultingController::findBackingEntityInstance();</code></pre>
+dimensionDefaultingController::findBackingEntityInstance();
+```
 
 ### Finance and Operations  
 To find the entity, the getEntityInstance method needs to be called from the DimensionAttributeValue. Replace this call with something similar to the following:
-<pre><code>DimensionAttributeValue dimAttrValue = 
+
+```xpp
+DimensionAttributeValue dimAttrValue = 
     DimensionAttributeValue::
         findByDimensionAttributeAndValueNoError(
             dimensionAttributeTable, dimensionValue);
 if (dimAttrValue) {
     common = dimAttrValue.getEntityInstance();
-}</code></pre>
+}
+```
 
 ### Dynamics AX 2012
-<pre><code>/* TODO: (Code Upgrade) [Dimension entry control] 
+
+```xpp
+/* TODO: (Code Upgrade) [Dimension entry control] 
 Replace this based on the migration guidance. */
-DimensionEntryControlHeader.updateValues(NoYesUnchanged::Yes);</code></pre>
+DimensionEntryControlHeader.updateValues(NoYesUnchanged::Yes);
+```
 
 ### Finance and Operations  
 Since the updateValues() method is only called with one parameter here, the call can be replaced with a call to allowEdit().
-<pre><code>DimensionEntryControlHeader.allowEdit(
-    NoYesUnchanged::Yes);</code></pre>
+
+```xpp
+DimensionEntryControlHeader.allowEdit(
+    NoYesUnchanged::Yes);
+```
 
 ### Dynamics AX 2012
-<pre><code>/* TODO: (Code Upgrade) [Dimension entry control] 
+
+```xpp
+/* TODO: (Code Upgrade) [Dimension entry control] 
 Replace this based on the migration guidance. */
 DimensionEntryControlHeader.updateValues(
-    NoYesUnchanged::No, true);</code></pre>
+    NoYesUnchanged::No, true);
+```
 
 ### Finance and Operations 
 Since the call to updateValues() has two parameters in this case, it needs to be replaced with a call to allowEdit() to change the editability of the control and a call to loadAttributeValueSet() to clear the control’s values.
-<pre><code>DimensionEntryControlHeader.allowEdit(
+
+```xpp
+DimensionEntryControlHeader.allowEdit(
     NoYesUnchanged::No);
-DimensionEntryControlHeader.loadAttributeValueSet(0);</code></pre>
+DimensionEntryControlHeader.loadAttributeValueSet(0);
+```
 
 > [!NOTE] 
 > If the first parameter in the updateValues method call was NoYesUnchanged::Unchanged, then the new call to allowEdit is not needed. Similarly, if the second parameter in the updateValues method call was false, then the call to loadAttributeValueSet is not needed.
@@ -204,63 +243,98 @@ DimensionEntryControlHeader.loadAttributeValueSet(0);</code></pre>
 Any leftover methods on the datasource or tabpage/group that holds the Dimension Entry control can be removed if there is no custom logic. The following table shows examples of methods without customizations which should be deleted.
 
 ### Dynamics AX 2012
-<pre><code>public int active(){int ret;ret = super();return ret;}</code></pre>
+
+```xpp
+public int active(){int ret;ret = super();return ret;}
+```
 
 ### Finance and Operations 
 This method will be on the data source. It can be removed if there is no custom logic.
 
 ### Dynamics AX 2012
-<pre><code>public void delete(){super();}</code></pre>
-### Finance and Operations 
-This method will be on the data source. It can be removed if there is no custom logic.
 
-### Dynamics AX 2012
-<pre><code>public void deleted(){super();}</code></pre>
+```xpp
+public void delete(){super();}
+```
 
 ### Finance and Operations 
 This method will be on the data source. It can be removed if there is no custom logic.
 
 ### Dynamics AX 2012
-<pre><code>public void deleting(){super();}</code></pre>
+
+```xpp
+public void deleted(){super();}
+```
 
 ### Finance and Operations 
 This method will be on the data source. It can be removed if there is no custom logic.
 
 ### Dynamics AX 2012
-<pre><code>public boolean validateDelete(){boolean ret;ret = super();return ret;}</code></pre>
+
+```xpp
+public void deleting(){super();}
+```
 
 ### Finance and Operations 
 This method will be on the data source. It can be removed if there is no custom logic.
 
 ### Dynamics AX 2012
-<pre><code>public void write(){super();}</code></pre>
+
+```xpp
+public boolean validateDelete(){boolean ret;ret = super();return ret;}
+```
 
 ### Finance and Operations 
 This method will be on the data source. It can be removed if there is no custom logic.
 
 ### Dynamics AX 2012
-<pre><code>public void writing(){super();}</code></pre>
+
+```xpp
+public void write(){super();}
+```
+
 ### Finance and Operations 
 This method will be on the data source. It can be removed if there is no custom logic.
 
 ### Dynamics AX 2012
-<pre><code>public void written(){super();}</code></pre>
+
+```xpp
+public void writing(){super();}
+```
+
 ### Finance and Operations 
 This method will be on the data source. It can be removed if there is no custom logic.
 
 ### Dynamics AX 2012
-<pre><code>public boolean validateWrite(){boolean ret;ret = super();return ret;}</code></pre>
+
+```xpp
+public void written(){super();}
+```
+
 ### Finance and Operations 
 This method will be on the data source. It can be removed if there is no custom logic.
 
 ### Dynamics AX 2012
-<pre><code>public void pageActivated()
+
+```xpp
+public boolean validateWrite(){boolean ret;ret = super();return ret;}
+```
+
+### Finance and Operations 
+This method will be on the data source. It can be removed if there is no custom logic.
+
+### Dynamics AX 2012
+
+```xpp
+public void pageActivated()
 {
     super();
     /* TODO: (Code Upgrade) [Dimension entry control] This method can be removed if 
     there is no custom implementation */
     // dimensionDefaultingController.pageActivated();
-}</code></pre>
+}
+```
+
 ### Finance and Operations 
 This method will be on the tabpage or group that holds the Dimension Entry control. If there is no custom logic, the method can be deleted.
 
@@ -271,10 +345,16 @@ This section will go through how to address common compile errors that may be le
 ### Dynamics AX 2012
 
 <strong>On the form (PurchTable):</strong>
-<pre><code>purchTableForm.parmDimensionDefaultingControllerHeader(
-    dimensionDefaultingControllerHeader);</code></pre>
+
+```xpp
+purchTableForm.parmDimensionDefaultingControllerHeader(
+    dimensionDefaultingControllerHeader);
+```
+
 <strong>In the class (PurchTableForm):</strong>
-<pre><code>public DimensionDefaultingController 
+
+```xpp
+public DimensionDefaultingController 
 parmDimensionDefaultingControllerHeader(
     DimensionDefaultingController 
         _dimensionDefaultingControllerHeader = 
@@ -283,15 +363,22 @@ parmDimensionDefaultingControllerHeader(
    dimensionDefaultingControllerHeader =
        _dimensionDefaultingControllerHeader;
    return dimensionDefaultingControllerHeader;
-}</code></pre>
+}
+```
 
 ### Finance and Operations 
 
 <strong>On the form (PurchTable):</strong>
-<pre><code>purchTableForm.parmDimensionEntryControlHeader(
-    DimensionEntryControlHeader);</code></pre>
+
+```xpp
+purchTableForm.parmDimensionEntryControlHeader(
+    DimensionEntryControlHeader);
+```
+
 <strong>In the class (PurchTableForm):</strong>
-<pre><code>public DimensionEntryControl 
+
+```xpp
+public DimensionEntryControl 
 parmDimensionEntryControlHeader(
     DimensionEntryControl 
        _dimensionEntryControlHeader = 
@@ -301,8 +388,8 @@ parmDimensionEntryControlHeader(
     dimensionEntryControlHeader =
         _dimensionEntryControlHeader;
     return dimensionEntryControlHeader;
-}</code></pre>
-
+}
+```
 
 
 ## Additional resources

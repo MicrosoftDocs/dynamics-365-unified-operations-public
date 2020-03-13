@@ -2,7 +2,7 @@
 # required metadata
 
 title: German audit file (GDPdU/GoBD) overview
-description: Companies in Germany and some other countries/regions are legally required to provide an export of financial data in a machine-readable form. This article describes how the current version of Microsoft Dynamics 365 Finance Operations supports the GDPdU/GoBD audit file requirements. It also shows the tables that are set up as examples in the electronic reporting configurations.
+description: Companies in Germany and some other countries/regions are legally required to provide an export of financial data in a machine-readable form. This article describes how the current version of Microsoft Dynamics 365 Finance supports the GDPdU/GoBD audit file requirements. It also shows the tables that are set up as examples in the electronic reporting configurations.
 author: mrolecki
 manager: AnnBe
 ms.date: 07/25/2019
@@ -56,7 +56,7 @@ The following sections list the tables that are set up as examples in the **Germ
 
 ### General ledger
 
-The following tables show the General leger data structure definitions.
+The following tables show the General ledger data structure definitions.
 
 #### Sachkonten
 

@@ -5,7 +5,7 @@ title: Clone a starter kit module
 description: This topic describes how to clone a starter kit module.
 author: samjarawan
 manager: annbe
-ms.date: 02/07/2020
+ms.date: 02/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -52,14 +52,15 @@ This command adds the source code for the module to the /src/modules/ directory 
 
 The following example shows how to clone the hero SDK module so that you can update it.
 
-```
+
+```Console
 yarn msdyn365 clone content-block super-content-block
 ```
 
 It can take up to a minute to clone a module. After the command has finished running, you can find the new module in the \\src\\modules\\ directory.
 
 > [!NOTE]
-> Module dependencies aren't automatically pulled down when you clone a module. Before you build the module, you must run Yarn and fix any missing dependencies.
+> Module dependencies aren't automatically pulled down when you clone a module. Before you build the module, you must run Yarn and fix any missing dependencies. If any errors occur when you run the **yarn start** command, you might also have to fix some references inside the module source code.
 
 ## Preview a module
 
@@ -67,7 +68,8 @@ To preview the new module in a local web browser, follow these steps.
 
 1. At a command prompt, go to your root SDK folder, and run the **yarn start** command. Here is an example.
 
-    ```
+
+    ```Console
     c:\repos\Msdyn365.Commerce.Online\yarn start
     ```
 

@@ -64,7 +64,7 @@ Although MPOS and CPOS are largely the same, there are some important difference
 MPOS on a Windows, iOS, or Android device is an application that is packaged, installed, and serviced on that device.
 
 - **Windows** – The MPOS for Windows application contains all the application code and the embedded commerce runtime (CRT). 
-- **iOS/Android** – On these platforms, the application acts as a host for the CPOS application code. In other words, the application code comes from the CPOS server on Microsoft Azure or the Commerce Scale Unit. For more information, see [Retail Store Scale Unit overview](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin).
+- **iOS/Android** – On these platforms, the application acts as a host for the CPOS application code. In other words, the application code comes from the CPOS server on Microsoft Azure or the Commerce Scale Unit. For more information, see [Commerce Scale Unit overview](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin).
 
 #### CPOS
 

@@ -105,6 +105,9 @@ This topic provides information about functionality that supports Russian regula
   - [Set up and create agreements](rus-set-up-and-create-agreements.md)
   - [Register transactions with reference to agreements](rus-register-transactions-with-reference-to-agreements.md)
   - [Inquiries and reports with agreements](rus-inquiries-reports-agreements.md)
+- [Transactions through intermediary](rus-transactions-through-intermediary.md)
+  - [Purchases on commission](rus-purchases-on-commission.md)
+  - [Sales on commission](rus-sales-on-commission.md)
 
 
 ## Inventory

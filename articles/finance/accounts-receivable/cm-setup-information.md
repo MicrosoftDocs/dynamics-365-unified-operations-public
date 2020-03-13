@@ -32,7 +32,6 @@ ms.dyn365.ops.version:
 # Credit management setup 
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 ## Credit management workflows
 

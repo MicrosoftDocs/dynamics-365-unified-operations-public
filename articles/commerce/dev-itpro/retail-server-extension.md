@@ -156,7 +156,7 @@ The following illustration shows the class structure of the extension.
 6. Build the extension project, and drop the binary into the **\\RetailServer\\webroot\\bin\\Ext** folder.
 7. Update the Commerce Scale Unit web.config file in the **\\RetailServer\\webroot** folder by adding the new extension library name in the **extensionComposition** section.
 
-    ```
+    ```xml
     <extensionComposition>
     <!-- Please use fully qualified assembly names for ALL if you need to support loading from the Global Assembly Cache.
     If you host in an application with a bin folder, this is not required. -->
@@ -173,4 +173,4 @@ The following illustration shows the class structure of the extension.
 
 10. To call the Commerce Scale Unit extension in your client, you must generate the Commerce proxy. You can then use the proxy to call your new Commerce Scale Unit APIs from the client.
 
-    For information about how to generate the proxy, see [Generate Retail proxy](typescript-proxy-retail-pos.md).
+    For information about how to generate the proxy, see [Typescript and C# proxies for Retail point of sale (POS)](typescript-proxy-retail-pos.md).

@@ -38,7 +38,7 @@ The `ENUMERATE` function returns a new *Record list* value that consists of enum
 
 ## Syntax
 
-```
+```vb
 ENUMERATE (list)
 ```
 

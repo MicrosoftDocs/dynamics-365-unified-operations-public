@@ -47,7 +47,7 @@ The Retail Server proxy is available for download via the Dynamics 365 npm feed 
 
 To install the proxy in your software development kit (SDK) development environment, follow these steps.
 
-1. Determine your current active version of Retail Servert. This version will be the version of the Retail Servert NuGet package that you use for back-end extensibility.
+1. Determine your current active version of Retail Server. This version will be the version of the Retail Server NuGet package that you use for back-end extensibility.
 1. In the **package.json** file, add the following entry in the **dependencies** section. (This entry might already be present and have up-to-date version information.)
 
     ```json
@@ -134,7 +134,7 @@ The **get-category-list.ts** file exports a data action that can be registered o
 The following example shows how the **get-category-list** data action can be registered in the **"module" \> "dataActions"** node in the module definition file.
 
 
-```
+```json
 {
     "$type": "contentModule",
     "friendlyName": "Product Feature",
@@ -213,8 +213,8 @@ The following example shows how the **get-category-list** data action can be reg
 The module **data.ts** file also requires an entry for the return type of the data action. The following example shows a sample module **data.ts** file. After it's implemented, the property can be accessed from the module's view file by using the **this.props.data.** object.
 
 ```typescript
-import { AsyncResult, Category, SimpleProduct } from '@msdyn365-commerce/retail-proxy';
 
+import { AsyncResult, Category, SimpleProduct } from '@msdyn365-commerce/retail-proxy';
 export interface IProductFeatureData {
     products: AsyncResult<SimpleProduct>[];
     categories: AsyncResult<Category[]>;

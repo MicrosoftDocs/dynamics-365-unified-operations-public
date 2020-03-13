@@ -36,7 +36,10 @@ ms.dyn365.ops.version: Version 1611
 
 This topic provides information about how you can add the ability to look up dimension values in Microsoft Excel templates.
 
-The only value that is present on Microsoft Excel templates after installation is MainAccount. This is the only dimension that all customers will have. To add the dimensions to Microsoft Excel templates, you need to complete the steps in the [Add dimensions to Excel templates](dimensions-overview.md) topic. After you have added the dimensions, if you want the ability to look up a list of dimension values, complete the steps in this topic. **Note:**  This information is subject to change for each release, so be sure to check back frequently for the most up-to-date information.
+The only value that is present on Microsoft Excel templates after installation is MainAccount. This is the only dimension that all customers will have. To add the dimensions to Microsoft Excel templates, you need to complete the steps in the [Add dimensions to Excel templates](dimensions-overview.md) topic. After you have added the dimensions, if you want the ability to look up a list of dimension values, complete the steps in this topic. 
+
+> [!NOTE]
+> This information is subject to change for each release, so be sure to check back frequently for the most up-to-date information.
 
 1.  In Visual Studio, open the project where you modified **DimensionCombinationEntity** or **DimensionSetEntity.**
 2.  Right-click **DimensionCombinationEntity** or **DimensionSetEntity**. Select **Open**.
@@ -47,7 +50,7 @@ The only value that is present on Microsoft Excel templates after installation i
     -   **Name** - Enter the name of the financial dimension, such as Department.
     -   **Related Data Entity** - Select the entity for the financial dimension that you entered in the **Name** field. The following table contains a list of the financial dimensions and the related entities.
 
-        | **Financial dimension 'Use values from'** | **Related entity**                        |
+        | Financial dimension 'Use values from'     | Related entity                            |
         |-------------------------------------------|-------------------------------------------|
         | &lt; Custom dimension &gt;                | DimAttributeFinancialTagEntity            |
         | Agreements                                | DimAttributeAgreementHeaderExt\_RUEntity  |
@@ -94,8 +97,10 @@ The only value that is present on Microsoft Excel templates after installation i
 6.  Select **New**, and then click **Normal.**
 7.  In the Properties pane, choose the name of the Financial dimension in the **Field**.
 8.  In the Related field, type **Value**. The new relation is similar to the following example.
-
-        DimensionCombinationEntity.DimensionIntegration.Department==DimAttributeOMDepartmentEntity.Value
+    
+    ```xpp
+    DimensionCombinationEntity.DimensionIntegration.Department==DimAttributeOMDepartmentEntity.Value
+    ```
 
     ![lookupwiki](./media/lookupwiki.png)
 

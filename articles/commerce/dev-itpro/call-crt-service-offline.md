@@ -49,12 +49,16 @@ When a point of sale (POS) device goes offline (in other words, when it isn't co
 6.  Build and replace the new proxy DLL in the Microsoft Dynamics AX\\70\\Retail Modern POS\\ClientBroker folder. Additionally, drop the custom CRT extension library into the Microsoft Dynamics AX\\70\\Retail Modern POS\\ClientBroker folder. (All libraries that are referenced should be dropped into this folder.)
 7.  In the DllHost.exe.config file, update **RetailProxyAssemblyName** and **AdaptorCallerFullTypeName** with the new proxy DLL and adapter name.
 
-        <add key="RetailProxyAssemblyName" value="Contoso.Commerce.RetailProxy" />
-        <add key="AdaptorCallerFullTypeName" value="Contoso.Commerce.RetailProxy.Adapters.AdaptorCaller" />
+    ```xml
+    <add key="RetailProxyAssemblyName" value="Contoso.Commerce.RetailProxy" />
+    <add key="AdaptorCallerFullTypeName" value="Contoso.Commerce.RetailProxy.Adapters.AdaptorCaller" />
+    ```
 
 8.  In the CommerceRuntime.MPOSOffline.config file, in the **&lt;composition&gt;** element, update the new CRT DLL information as for the commerceRuntime.config file.
 
-        <add source="assembly" value="Contoso.Commerce.Runtime.Services" />
+    ```xml
+    <add source="assembly" value="Contoso.Commerce.Runtime.Services" />
+    ```
 
 9.  Restart dllhost.exe. (You should restart the dllhost.exe for MPOS to read the new config file, this will be required even when you do any upgrade if it has config file changes.)
 

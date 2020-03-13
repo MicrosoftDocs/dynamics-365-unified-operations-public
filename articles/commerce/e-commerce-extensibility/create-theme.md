@@ -5,7 +5,7 @@ title: Create a new theme
 description: This topic describes how to create a new theme for a Microsoft Dynamics 365 Commerce online site. 
 author: samjarawan
 manager: annbe
-ms.date: 01/31/2020
+ms.date: 02/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -38,7 +38,7 @@ This topic describes how to create a new theme for a Microsoft Dynamics 365 Comm
 
 Dynamics 365 Commerce lets you apply a theme to your whole online site, and also to individual templates or pages. For example, you can have a default, site-wide theme, and you can also have a campaign theme that is applied only to some pages of the site.
 
-After a theme is created and uploaded to your production site, you can use authoring tools to set the theme on the site. Themes can be set in a template, in a layout, or on a single page. When an online page is rendered, the appropriate theme is applied. In this way, all the modules on the page have a consistent look and feel.
+After a theme is created and uploaded to your production site, you can the Commerce site builder tool to set the theme on the site. Themes can be set in a template, in a layout, or on a single page. When an online page is rendered, the appropriate theme is applied. In this way, all the modules on the page have a consistent look and feel.
 
 Themes contain Sassy Cascading Style Sheet (SCSS) files that you can use to style your online site and individual modules. They can also optionally contain the following extensions:
 
@@ -51,13 +51,13 @@ The online software development kit (SDK) provides the **add-theme** command-lin
 
 **yarn msdyn365 add-theme THEME\_NAME**
 
-The following example shows how to create a theme that is named **spring-theme**.
+The following example shows how to create a theme that is named **spring**.
 
-```
-yarn msdyn365 add-theme spring-theme
+```Console
+yarn msdyn365 add-theme spring
 ```
 
-The new theme will be created in a new directory under the **...\\src\\themes** directory. For example, the spring-time theme is created under the **...\\src\\themes\\spring-theme** directory.
+The new theme will be created in a new directory under the **...\\src\\themes** directory. For example, the spring-time theme is created under the **...\\src\\themes\\spring** directory.
 
 ### Theme naming conventions
 
@@ -73,7 +73,7 @@ The following example shows a theme definition file.
 {
     "$type": "themeModule",
     "friendlyName": "Spring theme",
-    "name": "spring-theme",
+    "name": "spring",
     "description": "This is default theme."
 }
 ```
@@ -82,11 +82,11 @@ The following example shows a theme definition file.
 
 SCSS files are stored under the **...\\src\\themes\\THEME\_NAME\\styles** directory. By default, this directory includes a **THEME\_NAME.theme.scss** file. This file is the entry point SCSS file. You can add other SCSS files and directories to the directory as you require.
 
-Here is an example file name and path for the **spring-theme** theme: **...\\src\\themes\\spring-theme\\styles\\spring-theme.theme.scss**.
+For example, the file name and path of the **spring** theme might be **...\\src\\themes\\spring\\styles\\spring.theme.scss**.
 
 ## Theme module view extensions
 
-Themes provide the ability to customize module view extensions. This customization is generally used to change the default layout of a module for the selected theme, and it's supported for both starter kit modules and custom modules. For example, you might want to add a new button to a starter kit module to support additional features. By creating a view extension, you can avoid having to create a full copy of the starter kit module by using the **clone** CLI command. In some cases, you might want to extend the module definition and also add more configuration properties, slots, or resources. For more information about how to create definition extensions, see the [Create a module view extension](#create-a-module-view-extension) section later in this topic.
+Themes let you include customized module view extensions. This customization is generally used to change the default layout of a module for the selected theme, and it's supported for both starter kit modules and custom modules. For example, you might want to add a new button to a starter kit module to support additional features. By creating a view extension, you can avoid having to use the **clone** CLI command to create a full copy of the starter kit module. In some cases, you might want to extend the module definition and also add more configuration properties, slots, or resources. For more information about how to create definition extensions, see the [Create a module view extension](#create-a-module-view-extension) section later in this topic.
 
 View extensions are stored under the **...\\src\\themes\\THEME\_NAME\\views** directory and follow a naming pattern that resembles the naming pattern for module views (**MODULE\_NAME.view.tsx**). For example, a view extension might be named **product-feature.view.tsx**. If a view extension exists in the selected theme, the React component will call it instead of the default view file. Therefore, view extensions can be written exactly like a module view that is used for a module.
 
@@ -94,12 +94,12 @@ In general, you might want to examine the existing view file for one of the star
 
 ### Create a module view extension
 
-The online SDK provides the **add-view-extension** command-line interface (CLI) command. To create a new module view extension in Commerce, you run the command **yarn msdyn365 add-view-extension THEME\_NAME MODULE\_NAME**, replacing **THEME\_NAME** with the name of the them that you want to add the view extension to and **MODULE\_NAME** with the name of the module that you're extending.
+The online SDK provides the **add-view-extension** CLI command. To create a new module view extension in Commerce, you run the command **yarn msdyn365 add-view-extension THEME\_NAME MODULE\_NAME**, replacing **THEME\_NAME** with the name of the them that you want to add the view extension to and **MODULE\_NAME** with the name of the module that you're extending.
 
 For example, run the following command to add a new file that is named **product-feature.view.ts** under the **spring-theme** theme's view directory.
 
-```
-yarn msdyn365 add-view-extension spring-theme product-feature
+```Console
+yarn msdyn365 add-view-extension spring product-feature
 ```
 
 The following example shows a view file extension that was created by using the preceding command.
@@ -187,11 +187,10 @@ The following example shows the addition of the new automatically generated file
  * All rights reserved. See LICENSE in the project root for License information.
  */
 import * as React from 'react';
-import { ISampleModuleViewProps } from '../../../modules/product-feature/product-feature';
-import { ISampleModuleViewProps } from '../../../modules/product-feature/product-feature.data';
-import { ISampleModuleViewProps } from '../modules/product-feature/./product-feature.ext.props.autogenerated';
+import { IProductFeatureViewProps } from '../../../modules/product-feature/./product-feature';
+import { IProductFeatureProps } from '../definition-extensions/product-feature.ext.props.autogenerated';
 
-export default (props: IProductFeatureViewProps) => {
+export default (props: IProductFeatureViewProps & IProductFeatureProps<{}>) ) => {
     return (
         <div className='row'>
             <h2>Config Value: {props.config.showText}</h2>

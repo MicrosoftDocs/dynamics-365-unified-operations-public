@@ -42,9 +42,9 @@ This page lists the resources that are available for IT pros and developers who 
 ## Components and architecture
 -   [Commerce components](../retail-components.md)
 -   [Modern POS (MPOS) architecture](retail-modern-pos-architecture.md)
--   [Retail Server architecture](retail-server-architecture.md)
+-   [Commerce Scale Unit architecture](retail-server-architecture.md)
 -   [Online store publishing architecture](retail-online-store-publishing-architecture.md)
--   [Retail Channel Performance Power BI  content](../../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
+-   [Retail channel performance PowerBI.com solution](../../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
 
 ## Deployment
 -   [Configure, install, and activate Modern POS (MPOS)](../retail-modern-pos-device-activation.md)
@@ -68,10 +68,8 @@ This page lists the resources that are available for IT pros and developers who 
 - [Install the POS layout designer](../install-pos-layout-designer.md)
 - [Call the Commerce runtime (CRT) service in offline mode](call-crt-service-offline.md)
 - [Modern POS (MPOS) and Cloud POS trigger extensibility](modern-pos-trigger-extensibility.md)
-- [Add a new custom control to an MPOS screen layout](add-new-custom-control-mpos-screen-layout.md)
 - [Implement a return policy by using triggers](trigger-example-return-policy.md)
 - [Block transactions by using triggers](trigger-example-blocking-transaction.md)
-- [Add extension properties to customer entities](add-extension-properties.md)
 - [Add custom controls to POS views](pos-custom-control.md)
 - [Point of sale (POS) payment extension](pos-payment-extension.md)
 - [Run the point of sale (POS) samples](pos-run-samples.md)
@@ -83,6 +81,7 @@ This page lists the resources that are available for IT pros and developers who 
 - [Add custom controls to POS views that aren't screen layout designer-based](pos-control-non-screen.md)
 - [Development in cloud-hosted development environments without admin access](cloud-dev-box.md)
 - [Test recorder and Regression suite automation tool for Cloud POS](pos-rsat.md)
+- [POS Cart view events and handlers](cart-view-handlers.md)
 
 ## Integrating Commerce
 -   [Create and apply branding to the Retail Experience app](create-retail-experience-app.md)
@@ -100,17 +99,19 @@ This page lists the resources that are available for IT pros and developers who 
 -   [Integrate POS with a new hardware device](hardware-device-extension.md)
 
 ## Commerce Runtime
--   [Commerce runtime (CRT) architecture and configuration](commerce-runtime-overview.md)
--   [Commerce runtime (CRT) extensibility and triggers](commerce-runtime-extensibility-trigger.md)
--   [Add customer preference data to channel databases](add-customer-preference-channel.md)
--   [Add properties to sales orders](add-properties-sales-order.md)
--   [Manage secrets for retail channels](manage-secrets.md)
--   [Log extension events to Application Insights](commerce-application-insights.md)
+- [Commerce runtime (CRT) architecture and configuration](commerce-runtime-overview.md)
+- [Commerce runtime (CRT) extensibility and triggers](commerce-runtime-extensibility-trigger.md)
+- [Add customer preference data to channel databases](add-customer-preference-channel.md)
+- [Add properties to sales orders](add-properties-sales-order.md)
+- [Manage secrets for retail channels](manage-secrets.md)
+- [Log extension events to Application Insights](commerce-application-insights.md)
+- [Create async Commerce (CRT) APIs in your business logic](async-commerce-extension.md)
+- [Pre-extended columns in the channel database](extended-columns.md)
 
 ## Retail SDK
 - [Retail software development kit (SDK) architecture](retail-sdk/retail-sdk-overview.md)
-- [Retail SDK packaging](retail-sdk/retail-sdk-packaging.md)
-- [Merge the build systems for Retail and Finance](retail-sdk/integrate-retail-sdk-continuous-build.md)
+- [Create deployable packages](retail-sdk/retail-sdk-packaging.md)
+- [Merge the build systems for Commerce and Finance](retail-sdk/integrate-retail-sdk-continuous-build.md)
 - [Retail software development kit (SDK) samples](retail-sdk/retail-sdk-samples.md)
 - [Channel database extensions](channel-db-extensions.md) 
 - [Enable custom Commerce Data Exchange synchronization via extension](cdx-extensibility.md)
@@ -136,3 +137,4 @@ This page lists the resources that are available for IT pros and developers who 
 - [Implementing a payment connector and payment device (white paper)](https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device_update.pdf)
 - [Create Windows installers for payment connectors](create-windows-installer-payment-connector.md)
 - [Deploy payment connectors](deploy-payment-connector.md)
+- [Create payment packaging for Application Explorer in Service Fabric deployments](payment-connector-package.md)

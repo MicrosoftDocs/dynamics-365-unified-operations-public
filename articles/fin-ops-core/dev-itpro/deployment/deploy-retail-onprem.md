@@ -35,22 +35,22 @@ This topic covers the installation steps for Commerce channel components in an o
 
 ## Overview
 
-Channel functionality, in an on-premises environment, is enabled exclusively via use of Commerce Store Scale Unit. For an overview of Store Scale Unit, see [Retail Store Scale Unit](../../../retail/dev-itpro/retail-store-system-begin.md). 
+Channel functionality, in an on-premises environment, is enabled exclusively via use of Commerce Scale Unit. For an overview, see [Commerce Scale Unit](../../../retail/dev-itpro/retail-store-system-begin.md). 
 
-Unlike a cloud deployment, an on-premises environment does not enable seamless, high-availability deployment of channel components via Lifecycle Services (LCS). The only way to use channel components is by installing Store Scale Unit.
+Unlike a cloud deployment, an on-premises environment does not enable seamless, high-availability deployment of channel components via Lifecycle Services (LCS). The only way to use channel components is by installing Commerce Scale Unit.
 
 ## Prerequisites 
 
-Before you can start installation of channel components, you must first complete all prior installation steps for an on-premises environment. These steps are listed in [Set up and deploy on-premises environments (Platform update 12 and later)](setup-deploy-on-premises-pu12.md). In addition, version 8.1.1 must be installed in order for Retail have full functionality. We recommend that you update to version 8.1.2.
+Before you can start installation of channel components, you must first complete all prior installation steps for an on-premises environment. These steps are listed in [Set up and deploy on-premises environments (Platform update 12 and later)](setup-deploy-on-premises-pu12.md). In addition, version 8.1.1 must be installed in order for Commerce have full functionality. We recommend that you update to version 8.1.2.
 
 > [!NOTE]
-> It is critical to ensure that a secure network, that is not publicly  accessible, is used to connect Retail Store Scale Unit (RSSU) to Headquarters. You must also restrict network access to Headquarters, so access is only allowed to known RSSU devices via network filtering or other means. This means that a firewall must exist and whitelisting is highly recommended.
+> It is critical to ensure that a secure network, that is not publicly  accessible, is used to connect Commerce Scale Unit to Headquarters. You must also restrict network access to Headquarters, so access is only allowed to known Commerce Scale Unit devices via network filtering or other means. This means that a firewall must exist and whitelisting is highly recommended.
 
 ## Installation steps
 
-1.	On the previously created [Application share](setup-deploy-on-premises-pu12.md#setupfile), (not the **LocalAgent** share folder), create a new folder called **selfservicepackages** in the root directory of the share location.  
-2.	On each AOS computer, create an easily accessible directory, such as **C:/selfservicepackages**.
-3.  On one AOS computer (which one does not matter), run the following PowerShell script.
+1. On the previously created [Application share](setup-deploy-on-premises-pu12.md#setupfile), (not the **LocalAgent** share folder), create a new folder called **selfservicepackages** in the root directory of the share location.  
+2. On each AOS computer, create an easily accessible directory, such as **C:/selfservicepackages**.
+3. On one AOS computer (which one does not matter), run the following PowerShell script.
 
     ```powershell
     .\RetailUpdateDatabase.ps1 -envName '<Environment name>' -AosUrl 'https://<My Environment Name>.com/namespaces/AXSF/’ -       SendProductSupportTelemetryToMicrosoft
@@ -89,9 +89,9 @@ Before you can start installation of channel components, you must first complete
 10.  Edit the newly generated Server application and select **Reset the Secret**.
 
      > [!NOTE]
-     > It is an important security measure to run this script for each Commerce Store Scale Unit.  This maximizes security and minimizes the workload in case of a security breach. 
+     > It is an important security measure to run this script for each Commerce Scale Unit.  This maximizes security and minimizes the workload in case of a security breach. 
      >
-     > It is critical to keep this secret safe. This secret should only be copied once and never stored on the system.  The Client ID and Secret generated will be used during the Store Scale Unit installer, so it is required to be used at a later time.  You can always reset the secret again, but it must then be updated on any Store Scale Unit that used the previous secret.
+     > It is critical to keep this secret safe. This secret should only be copied once and never stored on the system.  The Client ID and Secret generated will be used during the Commerce Scale Unit installer, so it is required to be used at a later time.  You can always reset the secret again, but it must then be updated on any Commerce Scale Unit that used the previous secret.
 
 11.  Go to **Retail and Commerce** &gt; **Headquarters setup** &gt; **Commerce scheduler** &gt; **Connector for Microsoft Dynamics AX**.
 12.  Select **Edit** on the Action pane.
@@ -115,7 +115,7 @@ Before you can start installation of channel components, you must first complete
 26.  On the **General** tab, select the **Initialize** link to configure seed data for Commerce functionality.
 
      > [!NOTE]
-     > The installers will not download from their relevant pages the first time a download is attempted.  This is because the installers have only just been placed into the download location and the associated database values do not yet exist.  In Headquarters, when the **Download** functionality is attempted (for example, Store Scale Unit or Modern POS), an error will display and then an automated upload functionality will be initiated to allow the installers to be downloaded the second time that the download is attempted. (Wait one minute before attempting to download the installer again).
+     > The installers will not download from their relevant pages the first time a download is attempted.  This is because the installers have only just been placed into the download location and the associated database values do not yet exist.  In Headquarters, when the **Download** functionality is attempted (for example, Commerce Scale Unit or Modern POS), an error will display and then an automated upload functionality will be initiated to allow the installers to be downloaded the second time that the download is attempted. (Wait one minute before attempting to download the installer again).
      >
      > The Peripheral Simulator (downloaded on the Hardware profile page in headquarters) will not be available until at least one Hardware profile has been created and is functional. After that point has been achieved, the following script can be run.
      >
@@ -123,4 +123,4 @@ Before you can start installation of channel components, you must first complete
      > .\RetailUpdateDatabase.ps1 -envName 'LBDenv1' -UpdateRetailHardwareProfileSelfServicePackage
      > ```
 
-28.	Follow the installation steps for installing the Store Scale Unit. For instructions, see [Configure and install Retail Store Scale Unit](../../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md).  At multiple locations in this document there will be notes referencing changes to the instructions for an on-premises deployment. It is important to note each of these changes. 
+28.	Follow the installation steps for installing the Commerce Scale Unit. For instructions, see [Configure and install Commerce Scale Unit](../../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md).  At multiple locations in this document there will be notes referencing changes to the instructions for an on-premises deployment. It is important to note each of these changes. 

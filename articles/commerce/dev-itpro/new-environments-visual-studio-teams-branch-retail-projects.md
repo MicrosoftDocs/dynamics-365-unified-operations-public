@@ -266,11 +266,11 @@ Regardless of whether there are customizations in the code branches, the followi
     7. Run the Environment reprovisioning tool. (Find the latest version in the LCS Asset library, and deploy it by using the **Maintain** function.)
     8. Verify that the tool succeeded. The following query should show the URLs of all local development machines that were updated.
 
-        ```
+        ```sql
         select * from dbo.RETAILCHANNELPROFILEPROPERTY where ISSYSTEMRECORD = 1
         ```
 
-    9. In Commerce, run the **Initialize Retail Scheduler** job to delete old data.
+    9. In Commerce, run the **Initialize Commerce Scheduler** job to delete old data.
 
 6. Make sure that you can sign in to Commerce by using your user account. If you aren't the Admin user in the production database, run the Admin provisioning tool to take ownership. (This tool is in the **PackagesLocalDirectory/bin** folder.)
 7. Verify that Commerce Data Exchange (CDX) data synchronization works. In Commerce, go to **Download sessions**. You should see many applied sessions. If you don't see them, select job **9999**, and run it.

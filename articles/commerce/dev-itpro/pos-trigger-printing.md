@@ -674,7 +674,7 @@ This section explains how to override the existing CRT request to print a receip
 14. Also paste the assembly in the **…\\RetailSDK\\References** folder.
 15. Open the **commerceruntime.ext.config** file, and add the custom assembly information under the \<composition\> section.
 
-    ```
+    ```xml
     <add source="assembly" value="Contoso.Commerce.Runtime.SuspendReceiptSample" />
     ```
 

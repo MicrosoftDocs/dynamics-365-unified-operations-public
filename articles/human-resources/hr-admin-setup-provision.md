@@ -2,10 +2,10 @@
 # required metadata
 
 title: Provision Human Resources
-description: 
+description: This article walks you through the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 02/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -67,9 +67,6 @@ After you've created an LCS project, you can provision Human Resources into an e
 3. Select the **Include Demo Data** option if you want your environment to include the same demo data set used in the Human Resources Test Drive experience. This is beneficial for long-term demo or training environments, and should never be used for production environments.  Note that you must choose this option upon initial deployment. You cannot update an existing deployment later.
 
 4. Human Resources is always provisioned into a Microsoft Power Apps environment to enable Power Apps integration and extensibility. Read the “Selecting a Power Apps environment” section of this article before you continue. If you don't already have a Power Apps environment, select Manage environments in LCS or navigate to the Power Apps Admin center. Then follow the steps to [Create a Power Apps environment](https://docs.microsoft.com/powerapps/administrator/create-environment).
-
-    > [!NOTE]
-    > To view existing environments or create new environments, the tenant admin who provisions Human Resources must be assigned to the Power Apps P2 license. If your organization doesn't have a Power Apps P2 license, you can get one from your CSP or from the [Power Apps pricing page](https://powerapps.microsoft.com/pricing/).
 
 5. Select the environment to provision Human Resources into.
 

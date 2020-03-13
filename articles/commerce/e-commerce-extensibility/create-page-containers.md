@@ -46,7 +46,7 @@ The Microsoft Dynamics 365 Commerce online software development kit (SDK) provid
 
 For example, run the following command to create a module that is named **campaign-page-container**.
 
-```
+```Console
 yarn msdyn365 add-module campaign-page-container
 ```
 
@@ -54,7 +54,7 @@ Then open the definition file for the new module, **campaign-page-container.defi
 
 In the following example, notice that the **slots** section contains the various named slots that the page container supports. To restrict a slot so that only a specific set of modules can be put into it, use the **"allowedTypes"** array to define the list of allowed modules. Alternatively, use an asterisk (\*) to allow any module to be put into the slot.
 
-```
+```json
 {
     "$type": "pageModule",
     "friendlyName": "Campaign Page Container",
@@ -96,7 +96,7 @@ In the **MODULE\_NAME.tsx** view file, you can define the HTML structure for the
 
 The following example shows an excerpt from a React view file (campaign-page-container.view.tsx) that takes advantage of the slots for the container.
 
-```
+```React
 ...
         return (
             <div  {...this.props.renderModuleAttributes(this.props)} id={this.props.id}>
@@ -121,7 +121,7 @@ To test a page container module in a local development environment, you must use
 
 The following example shows a page mock that can be used for testing. It's saved in the **/src/pageMocks** directory as **campaignContainerMock.json**.
 
-```
+```json
 {
     "exception": null,
     "pageRoot": {
@@ -188,7 +188,7 @@ To preview the page in a local web browser, follow these steps.
 
 1. At a command prompt, go to your root SDK folder, and run the **yarn start** command. Here is an example.
 
-    ```
+    ```Console
     c:\repos\Msdyn365.Commerce.Online\yarn start
     ```
 

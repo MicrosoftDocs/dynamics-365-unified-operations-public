@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure deductions
-description: 
+description: Use deductions in Microsoft Dynamics 365 Human Resources to determine how much, if any, to deduct from an employee’s paycheck for each benefit.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020

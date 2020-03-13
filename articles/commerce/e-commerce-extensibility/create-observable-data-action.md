@@ -5,7 +5,7 @@ title: Create an observable data action
 description: This topic describes how to create an observable data action in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 10/25/2019
+ms.date: 03/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -187,3 +187,7 @@ By taking advantage of the **status**, **result**, and **error** properties that
 [Batch data actions](batch-data-actions.md)
 
 [Share state across modules](share-state-across-modules.md)
+
+[Data action overrides](data-action-overrides.md)
+
+[Data action hooks](data-action-hooks.md)

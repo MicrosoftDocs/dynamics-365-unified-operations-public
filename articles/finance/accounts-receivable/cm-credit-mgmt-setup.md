@@ -33,7 +33,6 @@ ms.dyn365.ops.version:
 # Credit management parameters setup
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic describes the options that you can use to configure Credit management to meet your business's requirements. To start to use Credit management features, set up the parameters on the **Credit management parameters** page (**Credit management \> Setup \> Credit management parameters**).
 
@@ -46,8 +45,8 @@ There are four FastTabs where you can change the parameters that control Credit 
 - Set the **Allow edit of sales orders value after order hold is released** option to **Yes** to require that the posting rules be checked again if the sales order value (extended price) has been changed since the sales order was released from the on-hold list. .
 - In the **Reasons for canceled orders** field, select the release reason that will be used by default when a sales order that was on credit management hold is canceled.
 - Set the **Check customer credit groups credit limit** option to **Yes** to check the credit limit of a customer credit group when the customer on a sales order belongs to a customer credit group. The credit limit for the group will be checked, and then, if it's sufficient, the credit limit for the customer will be checked.
-- Set the **Check credit limit when payment terms are increased** option to **Yes** to check the payment terms rankings to determine whether the payment terms on the sales order differ from the payment terms on the sales order. If the new payment terms have a higher rank than the original payment terms, the order is put on credit management hold.
-- Set the **Check credit limit when a settlement discount is increased** option to **Yes** to check the settlement discount rankings to determine whether the cash discount on the sales order differs from the cash discount on the sales order. If the new cash discount has a higher rank than the original cash discount, the order is put on credit management hold.
+- Set the **Check credit limit when payment terms are increased** option to **Yes** to check the payment terms rankings to determine whether the payment terms on the sales order differ from the default payment terms for the customer. If the new payment terms have a higher rank than the original payment terms, the order is put on credit management hold.
+- Set the **Check credit limit when a settlement discount is increased** option to **Yes** to check the settlement discount rankings to determine whether the cash discount on the sales order differs from the default cash discount for the customer. If the new cash discount has a higher rank than the original cash discount, the order is put on credit management hold.
 - In the **Reason for releasing modified orders** field, select the release reason that will be used by default when modified orders are automatically released from credit management hold.
 - Set the **Ignore credit limit expired blocking rule when expiration date is blank** option to **Yes** to control the behavior of the **Credit limit expired** rule. Set the option to **No** to block an order when the expiration date is blank.
 - In Warehouse management, loads can be created at the time of sales order entry. Set the **Remove blocked load lines** option to **No** to leave sales order lines on the load when a sales order is on credit hold. The load can't be processed while the sales order is on hold. Set the option to **Yes** to remove sales order lines from the load when a sales order is on credit hold. The load can then be processed.

@@ -48,7 +48,7 @@ To create a new page mock, create a blank .json file under the /src/pageMocks di
 
 The following example shows a page mock that adds two instances of the same module to a page but uses different mock data for each instance.
 
-```
+```json
 {
     "exception": null,
     "pageRoot": {

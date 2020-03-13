@@ -98,7 +98,7 @@ Complete these procedures to set up a development environment, so that you can t
 
 ### Set up required parameters in Headquarters
 
-For more information, see [Advance invoices for Retail for Eastern Europe](./emea-eeu-advance-invoices-for-retail.md).
+For more information, see [Advance invoices for Commerce for Eastern Europe](./emea-eeu-advance-invoices-for-retail.md).
 
 ## Production environment
 
@@ -114,4 +114,4 @@ Follow these steps to create deployable packages that contain Commerce component
     ```
 
 3. Run **msbuild** for the Retail SDK to create deployable packages.
-4. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create retail deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+4. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).

@@ -40,26 +40,27 @@ When you use OData together with Microsoft Dynamics 365 Commerce, metadata defin
 
 Commerce Scale Unit has a default metadata controller that is named **CommerceModelFactory**. To extend the default controller, you create a new class that uses the **Export** attribute together with the **IEdmModelFactory** interface. You can then add and override existing code. For example, you can add new entity sets, new actions, new complex types, or new exception types. In the following example, the **ExtendedEdmModelFactory** class extends the **CommerceModelFactory** metadata controller and creates a new action that is named **NewAction** and a new entity set that is named **NewEntities**. You can find the sample code from this topic in the Retail software development kit (SDK).
 
-    namespace Microsoft.Dynamics.RetailServer.Samples.Extensions
+```xpp
+namespace Microsoft.Dynamics.RetailServer.Samples.Extensions
+{
+    using System.ComponentModel.Composition;
+    using Microsoft.Dynamics.Retail.StoreServerServiceLibrary;
+    [Export(typeof(IEdmModelFactory))]
+    public class ExtendedEdmModelFactory : CommerceModelFactory
     {
-        using System.ComponentModel.Composition;
-        using Microsoft.Dynamics.Retail.StoreServerServiceLibrary;
-        [Export(typeof(IEdmModelFactory))]
-        public class ExtendedEdmModelFactory : CommerceModelFactory
+        protected override void BuildNonBindableActions()
         {
-            protected override void BuildNonBindableActions()
-            {
-                base.BuildNonBindableActions();
-                var NewAction = BindAction("NewAction");
-                NewAction.Returns<string>();
-            }
-            protected override void BuildEntitySets()
-            {
-                base.BuildEntitySets();
-                BuildEntitySet<NewEntity>("NewEntities");
-            }
+            base.BuildNonBindableActions();
+            var NewAction = BindAction("NewAction");
+            NewAction.Returns<string>();
+        }
+        protected override void BuildEntitySets()
+        {
+            base.BuildEntitySets();
+            BuildEntitySet<NewEntity>("NewEntities");
         }
     }
-
+}
+```
 
 

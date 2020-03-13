@@ -3,7 +3,7 @@
 
 title: Install deployable packages from the command line
 description: This topic walks you through the steps for using the command line to apply either a binary update or an application (AOT) deployable package that was created in your development/build environment.
-author: manalidongre
+author: jorisdg
 manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: article
@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24191
 ms.assetid: 42d238d6-ff03-41b6-b2d5-c94bcdc37576
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: manado
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

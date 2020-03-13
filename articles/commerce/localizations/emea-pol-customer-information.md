@@ -3,7 +3,7 @@
 
 title: Customer information management for Poland
 description: This topic describes how to handle customer information in Retail POS for Poland.
-author:
+author: sepism
 manager:
 ms.date: 01/27/2020
 ms.topic: article
@@ -49,7 +49,7 @@ You must complete the following configuration to use this functionality:
 - Add the **Add customer information** operation to screen layouts.
 - Activate the inquiry for customer information.
 - Set up receipt formats.
-- Configure retail channel components.
+- Configure channel components.
 
 ### Set up a registration type for the VAT number
 
@@ -91,9 +91,9 @@ On the **Custom fields** page, add the following record for the custom field for
 
 In the Receipt format designer, add the custom field to the appropriate receipt section for every receipt format that is required. For more information about how to work with receipt formats, see [Receipt templates and printing](../receipt-templates-printing.md).
 
-### Configure retail channel components
+### Configure channel components
 
-To make the functionality that is specific to Poland available, you must configure extensions for retail channel components. For more information, see the [Deployment guidelines](#deployment-guidelines) section later in this topic.
+To make the functionality that is specific to Poland available, you must configure extensions for channel components. For more information, see the [Deployment guidelines](#deployment-guidelines) section later in this topic.
 
 ## Example scenarios
 
@@ -140,7 +140,7 @@ The following example scenarios show how to work with customer information in PO
 
 ## Deployment guidelines
 
-This section provides deployment guidance for enabling customer information management in the localization of Dynamics 365 Retail for Poland.
+This section provides deployment guidance for enabling customer information management in the localization of Dynamics 365 Commerce for Poland.
 
 > [!NOTE]
 > Some steps in these procedures vary, depending on the product version you're using. For more information, see [What's new or changed in Dynamics 365 for Retail](../get-started/whats-new.md).
@@ -174,7 +174,7 @@ Follow these steps to update a development environment.
 
 1. Find the extension configuration file for the Commerce runtime (CRT):
 
-    - **Retail Server:** Find the **CommerceRuntime.Ext.config** file in the **bin\\ext** folder under the Microsoft Internet Information Services (IIS) Retail server site location.
+    - **Commerce Scale Unit:** Find the **CommerceRuntime.Ext.config** file in the **bin\\ext** folder under the Microsoft Internet Information Services (IIS) Commerce Scale Unit site location.
     - **Local CRT on Modern POS:** Find the **CommerceRuntime.MPOSOffline.Ext.config** file under the local CRT client broker location.
 
 1. Register the CRT extension in the extension configuration file.
@@ -228,7 +228,7 @@ Follow these steps to make the TaxRegistrationId.PL extension available.
 
 ### Update a production environment
 
-Follow these steps to create deployable packages that contain Retail components, and to apply the packages in a production environment.
+Follow these steps to create deployable packages that contain Commerce components, and to apply the packages in a production environment.
 
 1. In the **CommerceRuntime.Ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files under the **RetailSdk\\Assets** folder, add the following lines to the **composition** section.
 

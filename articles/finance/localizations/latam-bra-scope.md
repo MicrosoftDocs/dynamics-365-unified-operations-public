@@ -76,7 +76,7 @@ The Brazilian localization that Microsoft developed for Microsoft Dynamics is li
 
 The user interface (UI) and online Help for Microsoft Dynamics are translated into Brazilian Portuguese. Additional documentation, such as white papers and training materials, might be available only in English and might not be available when the software is first made generally available in Brazil.
 
-The localization scope for Microsoft Dynamics available in Brazil is limited to tax calculation, accounting transactions, issuing/receiving fiscal documents, and issuing fiscal receipts in the following four scenarios: procure to pay, quote to cash, retail, and regulatory/statutory reporting.
+The localization scope for Microsoft Dynamics available in Brazil is limited to tax calculation, accounting transactions, issuing/receiving fiscal documents, and issuing fiscal receipts in the following four scenarios: procure to pay, quote to cash, commerce, and regulatory/statutory reporting.
 
 The features that Microsoft delivers and supports as part of the Brazilian localization for Microsoft Dynamics are listed in the [Brazilian localization features](#brazilian-localization-features) section of this topic. Details about each of the features can be found in Help in Microsoft Dynamics, and in white papers that are published on the [Microsoft Dynamics Localization Portal](https://mbs.microsoft.com/partnersource/deployment/resources/productreleases/gfmlocalizationportalmc.htm?printpage=false&sid=xdtafwuk1xh2l5jdjhhv0joy&stext=gfm%20localization%20portal).
 
@@ -707,7 +707,7 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 <tr>
 <td>&nbsp;</td>
 <td>The EFT service must be contracted directly from the third-party provider and isn't included in any Microsoft software license.
-<p><strong>Note:</strong> Because of conflicts with the PAF-ECF legislation, not all Enterprise POS operations are permitted in Brazil. For more details, see <a href="https://www.microsoft.com/download/details.aspx?id=42938">the Retail and Enterprise POS Localization for Brazil white paper.</a></p>
+<p><strong>Note:</strong> Because of conflicts with the PAF-ECF legislation, not all Enterprise POS operations are permitted in Brazil. For more details, see the <a href="https://www.microsoft.com/download/details.aspx?id=42938">Retail and Enterprise POS Localization for Brazil white paper.</a></p>
 </td>
 <td>Yes</td>
 <td>No</td>
@@ -737,8 +737,8 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 <td>No</td>
 </tr>
 <tr>
-<td>Retail</td>
-<td>Retail item management:
+<td>Commerce</td>
+<td>Commerce item management:
 <ul>
 <li>Released products by category</li>
 <li>Mass update worksheet</li>
@@ -1102,9 +1102,9 @@ The following features and functionality are out of scope for the Brazilian loca
 
     - Public Sector
 
-- **Retail industry:**
+- **Commerce industry:**
 
-    - **Retail services:** The following online services are out of scope for the retail industry for the Brazilian localization:
+    - **Services:** The following online services are out of scope for the commerce industry for the Brazilian localization:
 
         - Sites Services for Microsoft Dynamics ERP
         - Commerce Services for Microsoft Dynamics ERP

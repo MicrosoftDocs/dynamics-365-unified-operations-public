@@ -5,7 +5,7 @@ title: Create deployable packages
 description: This topic explains how to create a deployable package for Microsoft Dynamics 365 Commerce.
 author: mugunthanm
 manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 02/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -67,7 +67,7 @@ There are two ways to generate a commerce deployable package. You can use the Co
 
 ## Retail SDK build tools – Customization settings
 
-Most of the configuration values that the Retail SDK uses to build and package customizations are set in the BuildTools\\Customization.setting files. These values define metadata that controls how binaries, components, and packages are named, versioned, and code-signed. After you define this metadata, the Retail SDK build system uses it to identify the customization assets and package them for all the Commerce components.
+Most of the configuration values that the Retail SDK uses to build and package customizations are set in the BuildTools\\Customization.settings files. These values define metadata that controls how binaries, components, and packages are named, versioned, and code-signed. After you define this metadata, the Retail SDK build system uses it to identify the customization assets and package them for all the Commerce components.
 
 The following configuration settings are available in the Customization.settings file:
 
@@ -77,16 +77,16 @@ The following configuration settings are available in the Customization.settings
 - **CustomName** – Specify the custom name for the assembly.
 - **CustomDescription** – Specify the description for the assembly.
 - **CustomPublisher** – Specify the publisher for the assembly.
-- **CustomPublisherDisplayName** – Specify the copyright for the assembly.
+- **CustomPublisherDisplayName** – Specify the publisher display name.
 - **SignAssembly** – Specify **True** to sign the assembly during the build.
 - **DelaySign** – Specify **True** to delay signing of the assets during the build.
 - **AssemblyOriginatorKeyFile** – Specify the strong name key to use to sign the assembly.
 - **ModernPOSPackageCertificateKeyFile** – Specify the Personal Information Exchange (PFX) file to use to sign Modern POS and Hardware station.
 - **RetailServerLibraryPathForProxyGeneration** – Specify the customized Commerce Scale Unit assembly to use for proxy generation (both TypeScript and C\# proxies).
 
-    For 7.1 and earlier versions, you must specify the name of the Retail Server assembly here.
+    For Retail SDK version 7.1 and earlier versions, you must specify the name of the Retail Server assembly here.
 
-    For 7.2 and later versions, use the commerce generator tool for proxy generation. However, if you're using the proxy on the e-commerce client side, specify the assembly name here.
+    For Retail SDK version 7.2 and later versions, use the commerce generator tool for proxy generation. However, if you're using the proxy on the e-Commerce client side, specify the assembly name here.
 
 - The **ItemGroup** section includes the following settings:
 
@@ -97,7 +97,7 @@ The following configuration settings are available in the Customization.settings
 
 **Example**
 
-```
+```Text
 ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\MyCrtExtension.dll"
 ```
 
@@ -105,7 +105,7 @@ ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\MyCrtExtensio
 
 **Example**
 
-```
+```Text
 ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\MyRetailServerExtension.dll"
 ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\MyRetailServerExtension2.dll"
 ```
@@ -114,7 +114,7 @@ ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\MyRetailServerEx
 
 **Example**
 
-```
+```Text
 ISV_RetailProxy_CustomizableFile Include="$(SdkReferencesPath)\MyRetailProxyExtension.dll"
 ```
 
@@ -122,7 +122,7 @@ ISV_RetailProxy_CustomizableFile Include="$(SdkReferencesPath)\MyRetailProxyExte
 
 **Example**
 
-```
+```Text
 ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\MyHardwareStationExtension.dll"
 ```
 
@@ -130,7 +130,7 @@ ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\MyHardwareSta
 
  **Example**
 
-```
+```Text
 ISV_CustomDatabaseFile_Upgrade_Custom Include="$(SdkRootPath)\Database\Upgrade\Custom\SqlUpdatev1.sql"
 ```
 
@@ -145,9 +145,9 @@ For more details about Channel database extensions, see [Channel database extens
 
 ## Update the extension configuration files
 
-If you have any new extensions in CRT, Commerce Scale Unit, Hardware station, or proxy, you should register the details of the extension assemblies in the \<composition\> section of the relevant extension configuration file. You can find all the extension configuration files in the ...\\RetailSDK\\Assets folder. Because all extensions are loaded based on the information in the extension configuration files, you must register your assemblies there.
+If you have any new extensions in CRT, Commerce Scale Unit, Hardware station, or Retail proxies, you must register the details of the extension assemblies in the \<composition\> section of the relevant extension configuration file. You can find all the extension configuration files in the ...\\RetailSDK\\Assets folder. Because all extensions are loaded based on the information in the extension configuration files, you must register your assemblies there.
 
-Before you use the package, you must update the following configuration files if you have any customization in that area:
+Before you generate the package, you must update the following configuration files if you have any customization in that area:
 
 
 - **CommerceRuntime.Ext.config** – Register all your CRT extensions and dependent assemblies. Also this is where you need to include the Commerce Scale Unit extension dependent assemblies.
@@ -177,8 +177,6 @@ Before you use the package, you must update the following configuration files if
              <add name="ext.myCustomarea.myCustomKey2" value="myCustomValue2" />
         </settings>
     </commerceRuntimeExtensions>
-
-
 ```
 
 - **CommerceRuntime.MPOSOffline.Ext.config** – Register all your CRT extensions, dependent assemblies and extension Key Value pair configurations. The key name for the extension configuration values must be prefixed with "ext." as the CommerceRuntime initialization will enforce this convention and will not load otherwise, additional prefixes can be added to represent the sub-area they control. Ex: "ext.CusomStorageConfig.CustomKeyCart"
@@ -206,8 +204,6 @@ Before you use the package, you must update the following configuration files if
              <add name="ext.myCustomarea.myCustomKey2" value="myCustomValue2" />
         </settings>
     </commerceRuntimeExtensions>
-
-
 ```
 
 - **HardwareStation.Extension.config** – Register all your Hardware station extensions.
@@ -289,9 +285,9 @@ Some of the dependency packages and references have moved to NuGet packages to m
 
 ## Generate a commerce deployable package
 
-To generate the commerce deployable package, open the MSBuild build Command Prompt window. (On the developer virtual machine, search for **msbuild** on the **Start** menu.) Then run the following command.
+To generate the commerce deployable package, open a command prompt windows for MSBuild. (On the developer virtual machine, search for **msbuild** on the **Start** menu.) Then run the following command.
 
-```
+```Console
 msbuild /p:Configuration=Release
 ```
 

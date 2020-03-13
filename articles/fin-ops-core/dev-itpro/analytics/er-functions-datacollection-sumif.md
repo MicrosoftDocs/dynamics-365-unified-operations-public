@@ -38,7 +38,7 @@ The `SUMIF` function returns a *Real* value that represents the sum of values th
 
 ## Syntax
 
-```
+```vb
 SUMIF (key name for summing, condition range, condition value)
 ```
 

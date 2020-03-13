@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up rounding rules
-description: 
+description: You can set up rounding rules in Dynamics 365 Human Resources to meet the needs of your organization.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020

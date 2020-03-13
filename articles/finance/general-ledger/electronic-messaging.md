@@ -32,7 +32,6 @@ ms.dyn365.ops.version: 8.1
 # Electronic messaging
 
 [!include [banner](../includes/banner.md)]
-[!include [preview-banner](../includes/preview-banner.md)]
 
 This topic provides overview and setup information for electronic messaging.
 
