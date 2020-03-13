@@ -1,5 +1,6 @@
 ---
-title: Sales tax report for Sweden
+Sales tax report for Sweden
+==================================================
 ---
 
 This topic explains how to set up and generate the sales tax report for legal
