@@ -82,7 +82,6 @@ All Finance and Operations front-end virtual machines in Microsoft Azure are con
 > [!IMPORTANT]
 > Finance and Operations is not covered by a FedRAMP ATO at this time. If Finance and Operations is provisioned in the United States, all Customer Data at rest is stored in data centers located in the United States, as described in the [Trust Center](https://www.microsoft.com/trustcenter/privacy/dynamics365-finance-operations). Finance and Operations does not support any other Dynamics 365 US Government or Office 365 GCC compliance attributes (for example, access by U.S. screened personnel, and support for CJIS and IRS 1075).  
 
-
 ## Remote Desktop
 
 ### Microsoft managed environments
@@ -134,8 +133,29 @@ For more information, see [Where your Finance and Operations data is stored](htt
 
 ## Frequently asked questions
 
-### How do I access a development instance?
+### Why am I seeing the state 'Migrating' on my environment in LCS?
+In order to provide the best experience and performance for you, Microsoft has to perform Maitenance Operations on your environment. During some of the maintenance operations your environment status may show 'Migrating'. You will not be able to perform any lifecycle operations such as package applications until the status returns to 'Deployed'. There will however be no impact the Finance and Operations. Users may continue normal operations without any service interuption. You will receive an email notification before the maintenance operation is initiated.
 
+### How do I connect to the SQL database on my Sandbox environment?
+Follow the below steps to connect to the SQL Database in your Tier 2+ Sandbox environments. 
+> ![Warning]
+> You will not be able to connect to the Production database directly.
+
+> - Remote Desktop into one of the AOS VMs belonging to the Tier 2+ environment whose database you want to connect to.
+> - Open Sql Server Management Studio
+> - Get the connection details by following the below steps
+>     - Navigate to **Environment Details** page in **Lifecycle Services portal**
+>     - Grab the SQl Server, Database Name and AXDBAdmin credentials from the **Database Accounts** section
+> - In the **Connect to SQL Server** dialog box
+>     - Enter (ServerName).database.windows.net, where (ServerName) is the name of your database server obtained from LCS
+>     - Select SQL Server Authentication for **Authentication**
+>     - Use axdbadmin for **Login**
+>     - Enter the password obtained from LCS for axdbadmin
+>     - Click on **Options** but at the bottom
+>     - Enter the name of te database obtained from LCS in the **Connect to database** dropdown.
+>     - Click **Connect**
+
+### How do I access a development instance?
 See [Deploy and access development environments](../dev-tools/access-instances.md) for information about how to access development instances, configure on-premises development VMs, and find configurations settings for developers and administrators.
 
 ### How do I deploy a demo environment
@@ -143,9 +163,6 @@ A demo environment includes only Microsoft demo data. You can use a demo environ
 
 ### How do I move my customizations between environments?
 To move customizations from a development to a sandbox or production environment, see [Create deployable packages of models](../deployment/create-apply-deployable-package.md)
-
-### Can I request a copy of my production database?
-A customer can request a copy of their production database to be installed on their tier-2 sandbox environment. This request is completed by DSE.
 
 ### Can I bring my own domain name?
 You can bring your own domain name if it is running Azure Active Directory (AAD), and the administrator of your AAD instance has enabled the Finance and Operations apps within their AAD. This is usually done through the office email, after you buy a license. When you click the link to accept the offer, AAD is set up for you.
