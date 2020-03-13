@@ -142,19 +142,19 @@ Follow the below steps to connect to the SQL Database in your Tier 2+ Sandbox en
 > ![Warning]
 > You will not be able to connect to the Production database directly.
 
-> - Remote Desktop into one of the AOS VMs belonging to the Tier 2+ environment whose database you want to connect to.
-> - Open Sql Server Management Studio
-> - Get the connection details by following the below steps
->     - Navigate to **Environment Details** page in **Lifecycle Services portal**
->     - Grab the SQl Server, Database Name and AXDBAdmin credentials from the **Database Accounts** section
-> - In the **Connect to SQL Server** dialog box
->     - Enter (ServerName).database.windows.net, where (ServerName) is the name of your database server obtained from LCS
->     - Select SQL Server Authentication for **Authentication**
->     - Use axdbadmin for **Login**
->     - Enter the password obtained from LCS for axdbadmin
->     - Click on **Options** but at the bottom
->     - Enter the name of te database obtained from LCS in the **Connect to database** dropdown.
->     - Click **Connect**
+1. Remote Desktop into one of the AOS VMs belonging to the Tier 2+ environment whose database you want to connect to.
+2. Open SQL Server Management Studio.
+3. Get the connection details by following the below steps:
+    1. Navigate to the **Environment Details** page in **Lifecycle Services portal**.
+    2. Get the SQl Server, Database Name, and AXDBAdmin credentials from the **Database Accounts** section.
+4. In the **Connect to SQL Server** dialog box, complete the following steps:
+    1. Enter (ServerName).database.windows.net, where (ServerName) is the name of your database server obtained from LCS.
+    2. Select SQL Server Authentication for **Authentication**.
+    3. Use axdbadmin for **Login**.
+    4. Enter the password obtained from LCS for axdbadmin.
+    5. Click on **Options** at the bottom.
+    6. Enter the name of te database obtained from LCS in the **Connect to database** dropdown.
+    7. Click **Connect**.
 
 ### How do I access a development instance?
 See [Deploy and access development environments](../dev-tools/access-instances.md) for information about how to access development instances, configure on-premises development VMs, and find configurations settings for developers and administrators.
