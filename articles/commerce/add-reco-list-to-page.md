@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: A recommendation lists to an e-Commerce site
+title: Add recommendation lists to an e-Commerce site
 description: This topic explains how to add a product recommendation list to an e-Commerce page.
 author: bebeale
 manager: AnnBe
