@@ -63,5 +63,5 @@ Consider the following information for select fields in the reports:
 - **JournalLib**: 
 
    - In the **Vendor balance.txt** and **Customer balance.txt** reports, this is the constant value **System**.
-   - In the **Vendor incoming.txt** and **Customer incoming.txt** reports, this is the value of the **Transaction type** field from the  vendor transaction or customer transaction which is reported. Possible values could be for example **Purchase order** or **Payment**.
-   - In the **FEC.txt** report, this is the value of the **Transaction type** field from the voucher transaction which is reported. If the **Transaction type** equals **General journal**, this is the value from the **Description** field of the ledger journal, which is the source of the voucher transaction. Verify by checking the value on the **Journal names** page.
+   - In the **Vendor incoming.txt** and **Customer incoming.txt** reports, this is the value of the **Transaction type** field from the  vendor transaction or customer transaction which is reported. Possible values could be for example, **Purchase order** or **Payment**.
+   - In the **FEC.txt** report, this is the value of the **Transaction type** field from the voucher transaction that is reported. If the **Transaction type** equals **General journal**, this is the value from the **Description** field of the ledger journal, which is the source of the voucher transaction. Verify by checking the value on the **Journal names** page.
