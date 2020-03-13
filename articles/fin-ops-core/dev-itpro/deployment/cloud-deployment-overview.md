@@ -5,7 +5,7 @@ title: Cloud deployment overview
 description: This topic describes the cloud environment and subscription that you are deploying to, who can perform which tasks, and the data and customizations that you need to manage for Finance and Operations apps. 
 author: kfend
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 03/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -82,7 +82,6 @@ All Finance and Operations front-end virtual machines in Microsoft Azure are con
 > [!IMPORTANT]
 > Finance and Operations is not covered by a FedRAMP ATO at this time. If Finance and Operations is provisioned in the United States, all Customer Data at rest is stored in data centers located in the United States, as described in the [Trust Center](https://www.microsoft.com/trustcenter/privacy/dynamics365-finance-operations). Finance and Operations does not support any other Dynamics 365 US Government or Office 365 GCC compliance attributes (for example, access by U.S. screened personnel, and support for CJIS and IRS 1075).  
 
-
 ## Remote Desktop
 
 ### Microsoft managed environments
@@ -134,18 +133,37 @@ For more information, see [Where your Finance and Operations data is stored](htt
 
 ## Frequently asked questions
 
-### How do I access a development instance?
+### Why does the status display 'Migrating' on my environment in LCS?
+To provide the best experience and performance, Microsoft has to perform maintenance operations on your environment. During some of these maintenance operations, your environment status may display 'Migrating'. You will not be able to perform any lifecycle operations, such as package applications, until the status returns to 'Deployed'. There will be no impact to Finance and Operations apps. Users can continue with normal operations without any service interruption. You will receive an email notification before the maintenance operation is initiated.
 
-See [Deploy and access development environments](../dev-tools/access-instances.md) for information about how to access development instances, configure on-premises development VMs, and find configurations settings for developers and administrators.
+### How do I connect to the SQL database on my Sandbox environment?
+Follow these steps to connect to the SQL Database in your Tier 2+ Sandbox environments.
+
+> ![IMPORTANT]
+> You will not be able to connect to the Production database directly.
+
+1. Remote Desktop into one of the AOS VMs belonging to the Tier 2+ environment with a database that you want to connect to.
+2. Open SQL Server Management Studio.
+3. Use these steps to get the connection details:
+    1. Go to the **Environment Details** page in **Lifecycle Services portal**.
+    2. Get the SQL Server, Database Name, and AXDBAdmin credentials from the **Database Accounts** section.
+4. In the **Connect to SQL Server** dialog box, complete the following steps:
+    1. Enter (ServerName).database.windows.net, where (ServerName) is the name of your database server obtained from LCS.
+    2. Select SQL Server Authentication for **Authentication**.
+    3. Use axdbadmin for **Login**.
+    4. Enter the password obtained from LCS for axdbadmin.
+    5. Select **Options**.
+    6. Enter the name of te database obtained from LCS in the **Connect to database** drop-down list.
+    7. Select **Connect**.
+
+### How do I access a development instance?
+For information about how to access development instances, configure on-premises development VMs, and find configurations settings for developers and administrators, see [Deploy and access development environments](../dev-tools/access-instances.md).
 
 ### How do I deploy a demo environment
 A demo environment includes only Microsoft demo data. You can use a demo environment to explore default features and functionality. For more information, see [Deploy a demo environment](deploy-demo-environment.md).
 
 ### How do I move my customizations between environments?
 To move customizations from a development to a sandbox or production environment, see [Create deployable packages of models](../deployment/create-apply-deployable-package.md)
-
-### Can I request a copy of my production database?
-A customer can request a copy of their production database to be installed on their tier-2 sandbox environment. This request is completed by DSE.
 
 ### Can I bring my own domain name?
 You can bring your own domain name if it is running Azure Active Directory (AAD), and the administrator of your AAD instance has enabled the Finance and Operations apps within their AAD. This is usually done through the office email, after you buy a license. When you click the link to accept the offer, AAD is set up for you.
