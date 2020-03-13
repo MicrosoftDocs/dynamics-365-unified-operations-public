@@ -2,9 +2,9 @@
 # required metadata
 title: Sales books, purchase books, and invoice-factures journals  
 description: This topic provides information about sales books, purchase books, and invoice-factures journals for Russia.
-author: ShylaThompson
+author: anasyash
 manager: AnnBe
-ms.date: 11/16/2018
+ms.date: 03/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -39,14 +39,14 @@ Sales books and purchase books are legacy documents that must be prepared and st
 
 1. Go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
 2. On the **Accounts receivable parameters** page, on the **Number sequences** tab, define a number sequence for the **Sales book** reference.
-3. Go to **Accounts payable \> Setup \> Accounts receivable parameters**.
-4. On the **Accounts receivable parameters** page, on the **Number sequences** tab, define a number sequence for the **Purchase book** reference.
-5. Go to **Tax \> Indirect taxes \> Sales tax \> Sales tax settlement periods**.
-6. On the **Sales tax settlement periods** page, create a tax period.
-7. Go to **General ledger \> Ledger setup \> General ledger parameters**.
-8. On the **General ledger parameters** page, on the **Sales tax** tab, on the **Tax options** FastTab, in the **Sale/purchase book date and number delimiter** field, define the delimiter that is used between the date and number of invoices-factures in the printing format of sales books and purchase books.
-9. On the **Accounts receivable parameters** page, on the **Ledger and sales tax** tab, on the **Sales book** FastTab, select Electronic reporting (ER) formats for Sales book and Sales book additional sheet in XML.
-10. On the **Accounts payable parameters** page, on the **Ledger and sales tax** tab, on the **Purchase book** FastTab, select ER formats for Purchase book and Purchase book additional sheet in XML.
+3. On the **Accounts receivable parameters** page, on the **Ledger and sales tax** tab, on the **Sales book** FastTab, select Electronic reporting (ER) formats for Sales book and Sales book additional sheet in XML. 
+4. Go to **Accounts payable** \> **Setup** \> **Accounts payable parameters**. 
+5. On the **Accounts payable parameters** page, on the **Number sequences** tab, define a number sequence for the **Purchase book** reference.
+6. On the **Accounts payable parameters** page, on the **Ledger and sales tax** tab, on the **Purchase book** FastTab, select ER formats for Purchase book and Purchase book additional sheet in XML.
+7. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax settlement periods**.
+8. On the **Sales tax settlement periods** page, create a tax period.
+9. Go to **General ledger** \> **Ledger setup** \> **General ledger** parameters..
+10. On the **General ledger parameters** page, on the **Sales tax** tab, on the **Tax options** FastTab, in the **Sale/purchase book date and number delimiter** field, define the delimiter that is used between the date and number of invoices-factures in the printing format of sales books and purchase books.
 
 ### Generate and print a sales book
 
