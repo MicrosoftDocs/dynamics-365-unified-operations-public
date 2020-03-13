@@ -24,24 +24,22 @@ ms.date: 02/04/2020
 ms.author: edupont
 ---
 
-# Extend, Customize, and Collaborate on the Help
+# Extend, customize, and collaborate on the Help
 
-The source files for the Help for the Microsoft's Finance and Operations apps are available in public GitHub repos so that administrators can easily extend and customize the content for specific solutions. In this section, you can learn about working with the GitHub repos and MarkDown files.  
+The source files for the Help for the Microsoft's Finance and Operations apps are available in public GitHub repos so that solution providers can easily extend and customize the content for specific solutions. In this section, you can learn about working with the GitHub repos and MarkDown files.  
 
 For information about authoring MarkDown files in GitHub repos, see the [Docs Contributor Guide](/contribute/). For information about deploying custom Help, see [Custom Help Overview](custom-help-overview.md).  
 
 ## Contribute to the content
 
-A benefit of GitHub is the ability for you to contribute to the core content that the Microsoft team provides in the Dynamics-365-Unified-Operations-public repo. For example, you might have a new article that you think would be beneficial or you might have a correction to an existing article. If you would like to contribute to the MicrosoftDocs/Dynamics-365-Unified-Operations-public repo, you create what is called a *pull request* from your repo to the MicrosoftDocs/Dynamics-365-Unified-Operations-public repo. The Microsoft team will then review the request and include the changes as appropriate.
+A benefit of GitHub is the ability for you to contribute to the core content that the Microsoft team provides in the Dynamics-365-Unified-Operations-public repo. For example, you might have a new article that you think would be beneficial or you might have a correction to an existing article. If you would like to contribute to the MicrosoftDocs/Dynamics-365-Unified-Operations-public repo, you can create a *pull request* from your repo to the MicrosoftDocs/Dynamics-365-Unified-Operations-public repo. The Microsoft team will then review the request and include the changes as appropriate.
 
-You can contribute and make edits to the documentation. To get started, click the **Edit** (pencil) button on a topic. The following video shows how you can contribute to our documentation.
+You can also contribute and make edits to the existing documentation. To get started, click the **Edit** (pencil) button on a topic. The following video shows how you can contribute to our documentation.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE36liB]
 
-The [How to contribute to the Microsoft Dynamics 365 documentation](https://youtu.be/m5djioozRbg) video (shown above) is included in the Microsoft Dynamics 365 channel on YouTube.
-
 > [!NOTE]
-> Microsoft accepts pull requests to the *Dynamics-365-Unified-Operations-public* repo only, not the language-specific repos. If you have feedback about translations, you can report a GitHub issue in the relevant repo.
+> Microsoft currently only accepts pull requests to the *Dynamics-365-Unified-Operations-public* repo, not the language-specific repos. If you have feedback about translations, you can report a GitHub issue in the relevant repo.
 
 ## Extend and customize Microsoft's source content from GitHub repos
 
@@ -62,16 +60,16 @@ To join Microsoft in the world of GitHub and MarkDown, there are new terminology
 
     For more information, see [GitHub account setup](/contribute/get-started-setup-github) and [Install content authoring tools](/contribute/get-started-setup-tools) in the Docs contributor guide.
 
-2. Fork the right repo
+2. Fork the appropriate repo
 
-    To extend and customize Microsoft's content for a custom Help solution, you must create a fork of the repo under your GitHub account. The [Custom Help Toolkit](custom-help-toolkit.md) includes a tool that forks the specified repos and generates HTML files for further processing. If you want to customize Microsoft's content in MarkDown format, we recommend that you fork the relevant repo manually and author using your favorite MarkDown editor. For more information, see [Set up Git repository locally for documentation](/contribute/get-started-setup-local) and [Git and GitHub essentials for Docs](/contribute/git-github-fundamentals) in the Docs contributor guide.
+    To extend and customize Microsoft's content for a custom Help solution, you must create a fork of the repo under your GitHub account. If you want to customize Microsoft's content in MarkDown format, we recommend that you fork the relevant repo manually and author using your favorite MarkDown editor. For more information, see [Set up Git repository locally for documentation](/contribute/get-started-setup-local) and [Git and GitHub essentials for Docs](/contribute/git-github-fundamentals) in the Docs contributor guide.
 
     > [!TIP]
     > You are not required to make your GitHub repos public. When you fork a public repo, you can specify in the settings for the new repo if the repo is public, private, or available only to specific GitHub accounts.
 
-### Repo structures
+### Markdown format
 
-In Microsoft's repos, the help content is stored in the *articles* folder of the repo. Articles use a syntax for formatting text called [Markdig](https://github.com/lunet-io/markdig) Flavored Markdown, which is [CommonMark](https://commonmark.org/) compliant. To learn more about working with markdown, see [Getting started with writing and formatting on GitHub](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/).
+Articles use a syntax for formatting text called [Markdig](https://github.com/lunet-io/markdig) Flavored Markdown, which is [CommonMark](https://commonmark.org/) compliant. To learn more about working with markdown, see [Getting started with writing and formatting on GitHub](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/).
 
 You can convert content from Word to MarkDown using open source tools or other tools for easy recycling.  
 
@@ -82,7 +80,7 @@ You can convert content from Word to MarkDown using open source tools or other t
 
 Microsoft makes frequent changes to the content, and those changes show up in the public GitHub repos. The base repo, MicrosoftDocs/Dynamics-365-Unified-Operations-public, is updated weekly, and the translations are updated monthly. But you can choose to get updates monthly, twice a year, or once a year, for example. That is entirely up to you.  
 
-When you decide it is time to get the latest version of the content from Microsoft, you can do that using GitBash or GitHub Desktop. In the Help for GitHub, you can see [an example of how this works in GitBash](https://help.github.com/en/articles/merging-an-upstream-repository-into-your-fork), but in GitHub Desktop, you simply use the *Merge into current branch* menu item to pull changes from the origin into your fork.  
+When you decide it is time to get the latest version of the content from Microsoft, you can do that using the Git command line or GitHub Desktop. In the Help for GitHub, you can see [an example of how this works in GitBash](https://help.github.com/en/articles/merging-an-upstream-repository-into-your-fork), but in GitHub Desktop, you simply use the *Merge into current branch* menu item to pull changes from the origin into your fork.  
 
 However, if your solution is available in more than one country, then you are likely to want to make content available in multiple languages. Microsoft has a GitHub repo for each supported language, but the configuration files are only available in the English (US) source repo, MicrosoftDocs/Dynamics-365-Unified-Operations-public. Use the **HtmlFromRepoGenerator** tool from the [Custom Help Toolkit](custom-help-toolkit.md) to get the files.  
 
@@ -92,7 +90,7 @@ For more information, see [Custom Help Toolkit](custom-help-toolkit.md).
 
 ## Get the content without a GitHub account
 
-If you do not want to collaborate with Microsoft on the content, you can get the latest version of the content from GitHub without a GitHub account. For example, you can get the latest content by simply downloading the content of the relevant GitHub repo, which you can do without a GitHub account - the Microsoft repos are public so that anyone can always get to them. Use the **HtmlFromRepoGenerator** tool from the [Custom Help Toolkit](custom-help-toolkit.md) to get the files.
+If you do not want to collaborate with Microsoft on the content, you can get the latest version of the content from GitHub without a GitHub account. For example, you can get the latest content by simply cloning the relevant GitHub repo, which you can do without a GitHub account - the Microsoft repos are public so that anyone can always get to them.
 
 ## Translate the content
 

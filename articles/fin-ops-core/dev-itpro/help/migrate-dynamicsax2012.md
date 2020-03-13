@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Operations
 
 [!include [banner](../includes/banner.md)]
 
-If you have existing content from Dynamics AX 2012, then you can reuse that for Dynamics 365 Finance, Supply Chain Management, and Commerce. However, you must transform the HTML files so that they can be used in the custom Help environment.  
+If you have existing content from Dynamics AX 2012, you can reuse that for Dynamics 365 Finance, Supply Chain Management, and Commerce. However, you must transform the HTML files so that they can be used in the custom Help environment.  
 
 ## Converting Dynamics AX 2012 content
 
@@ -122,11 +122,9 @@ The following properties are reserved for future use:
 
 ##  <a name="moving-to-markdown"></a>Moving to MarkDown
 
-If you want to customize or extend the Microsoft Help, you can fork our public repo for either the source repo in English (US) at [https://github.com/MicrosoftDocs/Dynamics-365-unified-Operations-public](https://github.com/MicrosoftDocs/Dynamics-365-unified-Operations-public), or one of the related repos with translations into the supported languages. For more information, see [Extend, Customize, and Collaborate on the Help](contributor-guide.md).  
-
 Converting your existing content to MarkDown can be done using third-party tools, including but not limited to [PanDoc](https://pandoc.org) or the [Writage](https://writage.com) plugin for Word.  
 
-When you have converted your content to MarkDown, you can use a Git repo in Azure DevOps as your source repository, create a private or public repo in GitHub, or set up a project in [MkDocs](https://www.mkdocs.org/), for example. Then you can use open source tools such as [DocFx](https://dotnet.github.io/docfx/) to generate content for your website. In general, working in MarkDown means that you have access to a world of open source tools and do not have a hard dependency on Microsoft providing you with tools.  
+When you have converted your content to MarkDown, you can use open source tools such as [DocFx](https://dotnet.github.io/docfx/) to generate content for your website. In general, working in MarkDown means that you have access to a world of open source tools and do not have a hard dependency on Microsoft providing you with tools.  
 
 ## See also
 

@@ -30,16 +30,16 @@ ms.dyn365.ops.version: Operations
 
 ---
 
-# Connect your Help website with the in-product help pane
+# Connect your Help website with the in-product Help pane
 
 [!include [banner](../includes/banner.md)]
 
-If you deliver custom help content for a Finance and Operations solution, you must extend the Help pane to consume this content. It is a one-time configuration that requires the Finance and Operations development environment in Visual Studio. The result is that users can choose between tabs for Task guides, Microsoft's Help content, and your Help content.
+If you plan to deliver custom help content for a Finance and Operations solution, you can extend the Help pane to consume this content. It is a one-time configuration that requires the Finance and Operations development environment in Visual Studio. The result is that users can choose between tabs for Task guides, Microsoft's Help content, and your Help content.
 
-Connecting your [custom help website](custom-help-overview.md#custom-help-sites) with the in-product Help pane involves the following steps:
+Connecting your [custom help](custom-help-overview.md#custom-help-sites) with the in-product Help pane involves the following steps:
 
 1. Extend the Help pane in Visual Studio
-2. Assign a language index
+2. Assign a language to an index
 3. Customize language fallback
 
 > [!IMPORTANT]
@@ -47,27 +47,18 @@ Connecting your [custom help website](custom-help-overview.md#custom-help-sites)
 
 ## <a name="extendhelppane"></a>Extend the Help pane and assign the language index in Visual Studio
 
-The **Help Pane extension** folder of the toolkit contains the **AzureSearchCustomHelp** solution that you can open in the Finance and Operations development environment. The same folder also contains the **HelppaneOption.axpp** project that you can then import into the solution in Visual Studio.  
+The **Help Pane extension** folder of the [Custom Help Toolkit](custom-help-toolkit.md) contains the **AzureSearchCustomHelp** solution that you can open in the Finance and Operations development environment. The same folder also contains the **HelppaneOption.axpp** project that you can then import into the solution in Visual Studio.  
 
 ### To extend the Help pane
 
 1. In the Finance and Operations development environment, open the **AzureSearchCustomHelp.sln** solution.
-
-    The solution is in the **Help Pane extension** folder in the https://github.com/microsoft/dynamics356f-o-custom-help repo.  
 2. On the Dynamics 365 menu, choose **Import project**.
-3. In the **File name** field, specify the path to **HelppaneOption.axpp** that you also retrieved from the https://github.com/microsoft/dynamics356f-o-custom-help repo, and then choose OK to complete the import process. Update the references so that there are no missing references.  
-4. If you added a new field to the search index in your search service, or you changed an existing field name, you must add that field to the *Document.cs* file.  
+3. In the **File name** field, specify the path to **HelppaneOption.axpp**, and then choose OK to complete the import process. Update the references so that there are no missing references.  
+4. In the **HelppaneMacro** file, update the values for the following parameters:
 
-    The Document.cs file specifies the metadata properties in the Help content that the search service relies on to find context-sensitive links. If you do not add or modify this metadata, you can ignore this step.
-
-    For an example of an index in a search service, see the [Configure the search service](walkthrough-help-azure.md#searchconfig).
- section in [Deploying custom help to Azure](walkthrough-help-azure.md).
-
-5. In the **HelppaneMacro** file, update the values for the following parameters:
-
-    - WebAppName: Specify the Web App name that you created for your custom Help solution, such as *customhelpwebapp*.
-    - Admin key value: Specify the search service Admin key, such as *8DE388D04EC5E13D884E3E90FF72F8*.
-    - [SearchServiceName]: Specify the search service name, such as *customhelpsearchservice*.
+    - [WebAppName]: Specify the Web App name that you created for your custom Help solution, such as *MyCustomHelpWebApp*.
+    - Admin key value: Specify the Azure Cognitive Search service admin key. You can find the key in **Access keys** under **Settings** in the left blade of the search service in the [Azure portal](https://portal.azure.com/).
+    - [SearchServiceName]: Specify the search service name, such as *mycustomhelpsearch*.
 
     The following snippet illustrates the content of the **HelppaneMacro** file:
 
@@ -83,7 +74,7 @@ The **Help Pane extension** folder of the toolkit contains the **AzureSearchCust
     #define.htm('html')
     ```
 
-6. Optionally, to update any UI strings in the Help pane, modify them in the **Customhelppane.en-US.label.txt** file.  
+5. Optionally, to update any UI strings in the Help pane, modify them in the **Customhelppane.en-US.label.txt** file.  
 
 Next, you must specify the language that your custom help search index is intended for.  
 
@@ -92,11 +83,11 @@ Next, you must specify the language that your custom help search index is intend
 1. Open the **Language.config** file in the solution.
 2. Find the language of the index in the list, and specify an index name in ```index=""```, ```parentindex="```, or ```ultimateindex=""```.  
 
-    For example, you created search indexes for English (United States) and German (Austria) with the names *myenusindex* and *mydeindex*, respectively. Here is what your entries will look like.
+    For example, you created search indexes for English (United States) and German (Austria) with the names *myenusindex* and *mydeatindex*, respectively. Here is what your entries will look like.
 
     ```
     <add language="en-US" ultimateindex="myenusindex" />
-    <add language="de-AT" parentlanguage="de" index="mydeindex" />
+    <add language="de-AT" parentlanguage="de" index="mydeatindex" />
     ```
 3. Optionally, customize the language fallback for your index as described in the next section.
 
@@ -104,22 +95,61 @@ Next, you must specify the language that your custom help search index is intend
 
 The result is a model that you then upload to the Asset Library of the customer project or the Microsoft Dynamics Lifecycle Services (LCS) solution project.
 
-## Customize language fallback
+### Customize language fallback
 
 Language fallback means that the Help pane runs a search in additional languages when the intended language does not return a result, or if that language does not exist.
 
 > [!NOTE]
 > A custom index must be available for those additional languages.
 
-For example, you have created a custom Help index for en-US, de, and de-AT, and added them to the **Language.config** file. You test this custom help in a deployment where you set the client language to *de-AT*. You then open the Help pane so that the custom search kicks in based on the part of the product that you are on. The Help pane searches for context-sensitive Help based on your search index. If the search result is found in the *de-AT* index, you see the result in the Help pane. If no result is found in *de-AT*, the Help pane runs an additional search on *de* and *en-US* based on the language fallback in your search index. In this example, the Help pane indicates that no result was found in *de-AT*, but that some results were found in *de* and *en-US*.
-
-The behavior is controlled through the **parentlanguage** and **ultimateindex** attributes in the **Language.config** file.
-
 The search and fallback order are defined in the following order of priority:
 
 1. The language that is set in the client, such as de-AT
 2. The language that is defined in the **parentlanguage** attribute for that language, such as ```<add language="de-AT" parentlanguage="de" index="mydeindex" />```
 3. The language that has the **ultimateindex** attribute set, such as ```<add language="en-US" ultimateindex="myenusindex" />```
+
+> [!IMPORTANT]
+> If **parentlanguage** is set, there must be a corresponding **parentindex**. Note that the following scenario is valid as ```language="de"``` has ```parentindex=""indexde``` and both de-DE and de-AT are descendants of de.
+
+    ```
+    <add language="de" parentindex="indexde"/>
+    <add language="de-DE" parentlanguage="de" index=""/>
+    <add language="de-AT" parentlanguage="de-DE" index="indexdeat"/>
+    ```
+
+Here are some sample configurations:
+
+#### Single-locale help content
+
+In this configuration, you only have help content for English (US). Clients set to any locale will display the help content in English (US).
+
+    ```
+    <add language=“en-US” ulitmateindex="indexenus"/>
+    ```
+
+#### Multiple-locale help content
+
+In this configuration, you have help content for French, German and English (US). Clients set to `de` will display content in German, clients set to `fr` will display content in French, and clients set to any other locale will display the help content in English (US).
+
+    ```
+    <add language=“en-US” ulitmateindex="indexenus"/>
+    <add language="fr" parentindex="indexfr"/>
+    <add language="de" parentindex="indexde"/>
+    ```
+
+If clients are set to `de` or `fr` and no results are found in the German and French content respectively, results will be displayed in English (US) if available.
+
+#### Multiple-locale-with-parent help content
+
+In this configuration, you have help content for German (Austria), German, and English (US).
+
+    ```
+    <add language=“en-US” ulitmateindex="indexenus"/>
+    <add language="de" parentindex="indexde"/>
+    <add language="de-AT" parentlanguage="de" index="indexdeat"/>
+    ```
+
+If the client is set to `de-AT` and no results are found in the German (Austria) content, results will be displayed in German and English (US) where available.
 
 ## See also
 

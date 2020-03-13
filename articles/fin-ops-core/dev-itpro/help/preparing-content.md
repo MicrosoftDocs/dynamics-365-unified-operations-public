@@ -42,6 +42,8 @@ Microsoft creates help in multiple languages for locales supported by Dynamics 3
 
 You can use Microsoft's help content as a baseline for content to describe your solution. The [HtmlFromRepoGenerator tool](custom-help-toolkit-HtmlFromRepoGenerator.md) can facilitate this reuse by retrieving the content in MarkDown format from Microsoft's repositories and converting the content to HTML format in preparation for customization.  
 
+For more information about using Microsoft's existing content as a baseline for content to describe your solution, see [Extend, customize, collaborate on the Help](contributor-guide.md)
+
 ## Migrating content from existing Dynamics AX 2012 help topics
 
 If you have existing content from Dynamics AX 2012, you can reuse that for Dynamics 365 Finance, Supply Chain Management, and Commerce. However, you must transform the HTML files so that they can be used in the custom Help environment. The [Custom Help Toolkit](custom-help-toolkit.md) includes a Windows PowerShell script, ```run_ax2012.ps1```, that transforms Dynamics AX 2012 HTML files so that they can be used in the custom Help environment.
