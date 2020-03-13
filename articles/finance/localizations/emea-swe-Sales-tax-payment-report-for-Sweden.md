@@ -166,8 +166,7 @@ reporting codes, post transactions, and generate the Swedish sales tax report.
 2.  On the **Sales tax codes** page, on the **Report setup** FastTab, assign
     reporting codes to sales tax codes.
 
->   The following table shows how to assign the sales tax reporting codes to
->   sales tax codes.
+   The following table shows how to assign the sales tax reporting codes to sales tax codes.
 
 | **Sales tax code** | **Taxable sales** | **Tax-free sale** | **Sales tax payable** | **Taxable purchases** | **Sales tax receivable** | **Taxable import** | **Use tax** | **Offset use tax** |
 |--------------------|-------------------|-------------------|-----------------------|-----------------------|--------------------------|--------------------|-------------|--------------------|
