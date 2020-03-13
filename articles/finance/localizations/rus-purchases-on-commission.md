@@ -163,7 +163,7 @@ The following illustration shows the business process for registering intermedia
 
 15. Select **Print** to open the **Report for principal to Microsoft Excel** dialog box, and then select **OK** to print the report for the principal.
 
-![](media/11_Report%20for%20a%20principal.jpg)
+![](media/11_Report_for_a_principal.jpg)
 
 ## Print a facture accounting journal
 
@@ -216,7 +216,7 @@ Prepayments that are received from a principal aren't a source for charging VAT.
 
 Print a report for the principal. The report for the principal has two sections: one for shipments and one for prepayments.
 
-![](media/18%20Purchase%20report.jpg)
+![](media/18_Purchase_report.jpg)
 
 ### Create a prepayment facture
 
@@ -233,7 +233,7 @@ Print a report for the principal. The report for the principal has two sections:
 
 6. Select **Print \> Original** to print the original facture, or select **Print \> Copy** to print the facture copy.
 
-![Счет-фактура printed facture](media/21_Счет-фактура.jpg)
+![Счет-фактура printed facture](media/21_Invoice-facture.jpg)
 
 ### Create a facture accounting journal
 
