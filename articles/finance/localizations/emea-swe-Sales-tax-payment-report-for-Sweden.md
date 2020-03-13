@@ -117,8 +117,8 @@ for settlement period** inquiry.
 
 2.  Set the **Settlement period**, **From date**, **Tax currency**, and
     **Reporting currency** fields as described in the [Generate a sales tax
-    payment and print the Swedish sales tax report](#Generate a sales tax
-    payment and print the Swedish sales tax report) section earlier in this
+    payment and print the Swedish sales tax report](#Generate-a-sales-tax
+   -payment-and-print-the-Swedish-sales-tax-report) section earlier in this
     topic.
 
 3.  In **Sales tax payment version** field, select one of the following options:
