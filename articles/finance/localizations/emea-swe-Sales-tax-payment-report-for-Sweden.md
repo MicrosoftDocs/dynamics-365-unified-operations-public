@@ -24,8 +24,8 @@ authority, you must first set up the report layout for sales tax authorities.
 Set up sales tax reporting codes for VAT reporting
 ==================================================
 
-Set up sales tax reporting codes by following the instructions in Set up sales
-tax reporting codes. The following table provides an example of sales tax
+Set up sales tax reporting codes by following the instructions in [Set up sales
+tax reporting codes](set-up-sales-tax-reporting-codes.md). The following table provides an example of sales tax
 reporting codes for Sweden.
 
 | **Code and corresponding box in the VAT declaration** | **Description**                                                                                                                                                                                    |
