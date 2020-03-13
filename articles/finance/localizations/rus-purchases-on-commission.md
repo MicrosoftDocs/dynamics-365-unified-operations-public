@@ -163,7 +163,7 @@ The following illustration shows the business process for registering intermedia
 
 15. Select **Print** to open the **Report for principal to Microsoft Excel** dialog box, and then select **OK** to print the report for the principal.
 
-![Отчет коммиссионера report](media/11_Отчет_коммиссионера.jpg)
+![](media/11_Report%20for%20a%20principal.jpg)
 
 ## Print a facture accounting journal
 
@@ -216,7 +216,7 @@ Prepayments that are received from a principal aren't a source for charging VAT.
 
 Print a report for the principal. The report for the principal has two sections: one for shipments and one for prepayments.
 
-![Отчет коммиссионера о закупке товара printed report](media/18_Отчет_коммиссионера_о_закупке_товара.jpg)
+![](media/18%20Purchase%20report.jpg)
 
 ### Create a prepayment facture
 
