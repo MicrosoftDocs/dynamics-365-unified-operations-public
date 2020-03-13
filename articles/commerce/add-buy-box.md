@@ -70,7 +70,8 @@ Themes can be used to remove or change the order of buy box product properties a
 Buy box modules have three settings that can be configured at **Site Settings \> Extensions**:
 
 - **Maximum quantity** – This property is used to specify the maximum number of each item that can be added to the cart. For example, a retailer might decide that only 10 of each product can be sold in a single transaction.
-- **Inventory check** – When the value is set to **True**, an item is added to the cart only after the buy box module makes sure that it's in stock. This inventory check is done both for scenarios where the item will be shipped and for scenarios where it will be picked up in the store. If the value is set to **False**, no inventory check is done before an item is added to the cart and the order is placed.
+- **Inventory check** – When the value is set to **True**, an item is added to the cart only after the buy box module makes sure that it's in stock. This inventory check is done both for scenarios where the item will be shipped and for scenarios where it will be picked up in the store. If the value is set to **False**, no inventory check is done before an item is added to the cart and the order is placed. See [Calculate Inventory](calculated-inventory-retail-channels.md) for more details on how to configure inventory settings in backoffice.
+
 - **Inventory buffer** – This property is used to specify a buffer number for inventory. Inventory is maintained in real time, and when many customers place orders, it can be difficult to maintain an accurate inventory count. When an inventory check is done, if the inventory is less than the buffer amount, the product is treated as out of stock. Therefore, when sales occur quickly through several channels, and the inventory count isn't fully synced, there is less risk that an item that is out of stock will be sold.
 
 ## Commerce Scale Unit interaction
@@ -109,3 +110,5 @@ To add a buy box module to a new page and set the required properties, follow th
 [Header module](author-header-module.md)
 
 [Footer module](author-footer-module.md)
+
+[Calculate Inventory](calculated-inventory-retail-channels.md)
