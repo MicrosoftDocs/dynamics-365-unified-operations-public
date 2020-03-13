@@ -94,13 +94,15 @@ This option assumes that at least one product receipt has been posted for the pu
 
 For more information, see [Record vendor invoice and match against received quantity](../accounts-payable/tasks/record-vendor-invoice-match-against-received-quantity.md).
 
-## Configure an automated task for vendor invoice workflow
+## Configure an automated task for vendor invoice workflow to post the vendor invoice using a batch job
 
 You can add an automated posting task to the Vendor invoice workflow so that invoices are processed in a batch. Posting invoices in a batch lets the workflow process continue without having to wait for the posting to finish, which improves the overall performance of all the tasks submitted to the workflow.
 
-The **Post the vendor invoice using a batch** task must not be used in the same workflow as the **Post vendor invoices** automated task. Also, the **Post the vendor invoice using a batch** task should be the last element in the workflow configuration.
+To post a vendor invoice in a batch, on the **Feature management** page, turn on the **Vendor invoice batch posting** parameter. Vendor invoice workflows are configured by going to **Accounts payable > Setup > Accounts payable workflows**.
 
-To post a vendor invoice in a batch, on the **Feature management** page, turn on the **Add an automated task to the Vendor invoice workflow for posting the vendor invoice using a batch job** parameter. Vendor invoice workflows are configured by going to **Accounts payable > Setup > Accounts payable workflows**. 
+The **Post the vendor invoice using a batch** task will be viewable in the workflow editor, regardless of whether the feature parameter **Vendor invoice batch posting** is enabled. When the feature parameter is not enabled, an invoice that contains the **Post the vendor invoice using a batch task** will fail to process in workflow until the feature parameter is enabled. The **Post the vendor invoice using a batch** task must not be used in the same workflow as the **Post vendor invoices** automated task. Also, the **Post the vendor invoice using a batch** task should be the last element in the workflow configuration.
+
+You can specify the number of invoices to be included in the batch and the number of hours to wait before rescheduling a batch by going to **Accounts payable > Setup > Accounts payable parameters > Invoice > Invoice workflow**. 
 
 ## Working with multiple invoices
 
