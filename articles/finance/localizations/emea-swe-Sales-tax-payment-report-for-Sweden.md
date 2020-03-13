@@ -25,7 +25,7 @@ Set up sales tax reporting codes for VAT reporting
 ==================================================
 
 Set up sales tax reporting codes by following the instructions in [Set up sales
-tax reporting codes](set-up-sales-tax-reporting-codes.md). The following table provides an example of sales tax
+tax reporting codes](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/SE-VAT-declaration/articles/finance/general-ledger/tasks/set-up-sales-tax-reporting-codes.md). The following table provides an example of sales tax
 reporting codes for Sweden.
 
 | **Code and corresponding box in the VAT declaration** | **Description**                                                                                                                                                                                    |
