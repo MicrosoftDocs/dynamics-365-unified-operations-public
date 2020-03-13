@@ -2359,52 +2359,52 @@
             href: localizations/rus-fixed-assets-overview.md
           - name: Set up fixed assets
             items:
-              - name: Set up fixed assets
-                href: localizations/rus-set-up-fixed-assets.md
-              - name: Set up depreciation 
-                href: localizations/rus-depreciation-setup.md
-              - name: Depreciation methods
-                href: localizations/rus-depreciation-methods.md
-              - name: Depreciation bonuses                     
-                href: localizations/rus-bonus-depreciation.md
-              - name: Set up fixed asset locations and numbering
-                href: localizations/rus-fixed-assets-locations-numbering.md
+            - name: Set up fixed assets
+              href: localizations/rus-set-up-fixed-assets.md
+            - name: Set up depreciation 
+              href: localizations/rus-depreciation-setup.md
+            - name: Depreciation methods
+              href: localizations/rus-depreciation-methods.md
+            - name: Depreciation bonuses                     
+              href: localizations/rus-bonus-depreciation.md
+            - name: Set up fixed asset locations and numbering
+              href: localizations/rus-fixed-assets-locations-numbering.md
           - name: Working with fixed assets
-             items:
-             - name: Create fixed assets
-               href: localizations/rus-fixed-assets.md
-             - name: Register fixed assets acquisitions
-               href: localizations/rus-register-acquisition.md
-             - name: Acquiring fixed assets and putting them into operation
-               href: localizations/rus-fixed-asset-acquisition.md
-             - name: Calculate depreciation
-               href: localizations/rus-depreciation-calculation.md
-             - name: Partial fixed asset disassembly liquidation
-               href: localizations/rus-fixed-assets-disassembly.md
-             - name: Sell, dispose, and write off assets
-               href: localizations/rus-sell-dispose-write-off-fixed-assets.md  
-             - name: Create a fixed asset lease and a return from lease transaction
-               href: localizations/rus-fixed-asset-leasing.md
-             - name: Maintain fixed assets
-               href: localizations/rus-maintain-fixed-assets.md
-             - name: Fixed asset counting
-               href: localizations/rus-fixed-assets-counting.md
-             - name: Fixed assets currency revaluation
-               href: localizations/rus-fixed-asset-currency-revaluation.md
-             - name: Revaluate fixed asset cost and depreciation
-               href: localizations/rus-fixed-assets-revaluation.md
-             - name: Create and post budget journals for fixed asset acquisitions
-               href: localizations/rus-post-budget-fixed-asset-acquisition.md
-             - name: Transfer fixed assets
-               href: localizations/rus-fixed-asset-transfer.md
-           - name: Not valuable fixed assets, and working clothes
-             items:
-              - name: Not valuable fixed assets (NVFAs) (Russia)
-                href: localizations/rus-not-valuable-assets.md
-              - name: Working clothes/special rigging accounting (Russia)
-                href: localizations/rus-working-clothes-instruments-accounting.md
-           - name: Unified printing forms for fixed assets 
-             href: localizations/printing-forms-fixed-assets.md
+            items:
+            - name: Create fixed assets
+              href: localizations/rus-fixed-assets.md
+            - name: Register fixed assets acquisitions
+              href: localizations/rus-register-acquisition.md
+            - name: Acquiring fixed assets and putting them into operation
+              href: localizations/rus-fixed-asset-acquisition.md
+            - name: Calculate depreciation
+              href: localizations/rus-depreciation-calculation.md
+            - name: Partial fixed asset disassembly (liquidation)
+              href: localizations/rus-fixed-assets-disassembly.md
+            - name: Sell, dispose, and write off assets
+              href: localizations/rus-sell-dispose-write-off-fixed-assets.md  
+            - name: Create a fixed asset lease and a return from lease transaction
+              href: localizations/rus-fixed-asset-leasing.md
+            - name: Maintain fixed assets
+              href: localizations/rus-maintain-fixed-assets.md
+            - name: Fixed asset counting
+              href: localizations/rus-fixed-assets-counting.md
+            - name: Fixed assets currency revaluation
+              href: localizations/rus-fixed-asset-currency-revaluation.md
+            - name: Revaluate fixed asset cost and depreciation
+              href: localizations/rus-fixed-assets-revaluation.md
+            - name: Create and post budget journals for fixed asset acquisitions
+              href: localizations/rus-post-budget-fixed-asset-acquisition.md
+            - name: Transfer fixed assets
+              href: localizations/rus-fixed-asset-transfer.md
+          - name: Not valuable fixed assets, and working clothes
+            items:
+            - name: Not valuable fixed assets (NVFAs) (Russia)
+              href: localizations/rus-not-valuable-assets.md
+            - name: Working clothes/special rigging accounting (Russia)
+              href: localizations/rus-working-clothes-instruments-accounting.md
+            - name: Unified printing forms for fixed assets 
+              href: localizations/printing-forms-fixed-assets.md
         - name: Accounts payable and receivable
           items:
           - name: Credit note corrections (Russia)
