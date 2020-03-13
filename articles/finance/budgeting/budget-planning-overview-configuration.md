@@ -33,7 +33,6 @@ ms.dyn365.ops.version: AX 7.0.0
 # Budget planning overview
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic describes budget planning. It contains information that can help you configure budget planning and set up budget planning processes.
 
@@ -46,7 +45,7 @@ An organization can configure budget planning, and then set up budget planning p
 - **Budget planning processes** – Budget planning processes determine how budget plans can be updated, routed, reviewed, and approved in the budgeting organization hierarchy. A budget planning process is linked to a budget cycle and an organization through a legal entity.
 - **Budget plans** – Budget plans contain the budget data for a budget cycle. You can have multiple budget plans that are used for various purposes. For example, you can use budget plans to create budget amounts for different organizational units. You can also use them to do comparisons and make informed decisions.
 - **Budget plan scenarios** – Budget plan scenarios define categories of data for the budget plans. You define budget plan scenarios to support monetary classes and other unit-of-measure classes, such as quantities. Examples of monetary budget plan scenarios include "Department previous year" and "Department requests." Examples of budget plan scenarios that use quantities include "Previous year support calls" and "Full-time equivalent (FTE) count."
-- **Budget planning stages** – Budget planning stages define the steps that a budget plan follows from its beginning to final approval. Budget planning stages are arranged in budget planning workflows.
+- **Budget planning stages** – Budget planning stages define the steps that a budget plan follows from its beginning through final approval. Budget planning stages are arranged in budget planning workflows.
 - **Budget planning workflows** – Budget planning workflows consist of and define budget planning stages. Budget planning workflows are associated with budgeting workflows. Budgeting workflows are the automated and manual processes that move budget plans through the budget planning stages.
 
 [![Budget planning terminology](./media/budgetplanning-terms-1024x504.png)](./media/budgetplanning-terms.png)
@@ -158,7 +157,7 @@ Additionally, in the example schema, an aggregation is done from budget plans an
 
 ### Priorities
 
-You can optionally use budget plan priorities to define categories and objectives for the budget plans that you've set up. You can also use priorities to organize, classify, and evaluate several budget plans. For example, you can create a budget planning priority for health and safety, and then evaluate budget plans that are assigned to that priority. You can also assign a number to rank budget plans across all budget plan scenarios.
+You can optionally use budget plan priorities to define categories and objectives for the budget plans that you've set up. You can also use priorities to organize, classify, and evaluate several budget plans. For example, you can create a budget planning priority for health and safety, and then evaluate budget plans that are assigned to that priority. You can also assign a number to your budget plans to indicate a ranking.
 
 ### Columns and layouts
 
