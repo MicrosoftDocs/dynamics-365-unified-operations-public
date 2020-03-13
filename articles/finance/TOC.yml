@@ -2553,7 +2553,7 @@
         - name: Import payment formats
           href: localizations/emea-swe-payment-formats-import.md
         - name: Sales tax payment report for Sweden
-          href: localizations/emea-swe-sales-tax-payment-report-for-Sweden.md
+          href: localizations/emea-swe-sales-tax-payment-report-sweden.md
       - name: Switzerland
         items:
         - name: Switzerland overview
