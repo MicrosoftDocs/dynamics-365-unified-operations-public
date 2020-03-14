@@ -66,14 +66,11 @@ The following image shows an example of a store selector module used on a PDP.
 
 ## Add a store selector module to a page
 
-To add a store selector module to a page, follow these steps.
+A Store selector module needs the context of a product. Therefore it can be used only on the Buy box and Cart module and does not function outside these modules.
 
-1.
-1.
-1.
-1.
-1.
-1.
+1. For instructions on how to add it to buy box module see [Buy box module](add-buybox.md). 
+1. For instructions on how to add it to cart module see [Cart module](add-cart.md)
+
 
 ## Additional resources
 
