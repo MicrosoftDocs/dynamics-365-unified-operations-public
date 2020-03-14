@@ -64,14 +64,6 @@ To add a gift card module to a checkout page and set the required properties, se
 
 [Starter kit overview](starter-kit-overview.md)
 
-[Container module](add-container-module.md)
-
-[Buy box module](add-buy-box.md)
-
 [Checkout module](add-checkout-module.md)
 
-[Order confirmation module](order-confirmation-module.md)
-
-[Header module](author-header-module.md)
-
-[Footer module](author-footer-module.md)
+[Gift card](./dev-itpro/gift-card.md)
