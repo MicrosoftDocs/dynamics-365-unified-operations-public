@@ -50,9 +50,9 @@ Gift cards are a common form of tender. The gift card module can be used in chec
 
 ## Site settings for gift card
 
-In **Site Settings \> Extensions**, gift card module supports a setting called  **Supported gift card type**. This setting supports 3 values. 
-1. Dynamics 365 gift card - WHen this setting is applied the gift card module will only redeeming of Dynamics 365 gift cards. This is supported only for signed-in users on the e-commerce site
-2. SVS and Givex gift cards - When this setting is applied, the gift card module will only allow redeeming Givex and SVS gift cards via Adyen. This is supported for signed-in and anonymous users on the e-commerce site.
+In the Site builder, **Site Settings > Extensions**, gift card module supports a setting called  **Supported gift card type**. This setting supports 3 values. 
+1. Dynamics 365 gift card - WHen this setting is applied the gift card module will only allow redeeming of Dynamics 365 gift cards. This is supported only for signed-in users on the e-commerce site.
+2. SVS and Givex gift cards - When this setting is applied, the gift card module will only allow redeeming of Givex and SVS gift cards via Adyen. This is supported for signed-in and anonymous users on the e-commerce site.
 3. Dynamics 365, SVS and Givex gift card - - When this setting is applied, the gift card module will  allow redeeming Dynamics 365, and Givex, SVS gift cards via Adyen. This is supported for signed-in users only on the e-commerce site.
 
 ## Add a gift card module to a page
