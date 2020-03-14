@@ -47,13 +47,14 @@ Quality management is flexible and can be implemented in various ways to meet th
 
 -   Automatically start a quality control process, based on predefined criteria (upon warehouse registration of a purchase order from a specific vendor).
 -   Block inventory during inspection to prevent non-approved inventory from being used (full blocking of purchase order quantities).
--   Use item sampling as part of a quality association to define the amount of current physical inventory that must be inspected. Sampling can be based on fixed quantities or a percentage.
+-   Use item sampling as part of a quality association to define the amount of current physical inventory that must be inspected. Sampling can be based on fixed quantities, a percentage, or full license plate.
+<!-- HA: Added full license plate  -->
+<!-- HA: Karl please add a link to Quality management for warehouse processes   -->
+
 -   Create quality orders for partial receipts. To create a quality order that is based on the quantity that is physically received with an order, you must select the **Per updated quantity** check box on the **Item sampling** form.
 -   Create test types that include minimum, maximum, and target test values, and perform qualitative-versus-quantitative testing that has predefined validation results.
 -   Specify an acceptable quality level (AQL) to control quality measure tolerances.
 -   Specify the resources that an inspection operation requires, such as a test area and test instruments.
-
-<!-- HA: Comment......  -->
 
 ## Working with quality associations
 The business process that uses a quality association can be related to various source documents, such as purchase orders, sales orders, or production orders.
@@ -425,6 +426,8 @@ In purchasing, if you set the **Event type** field to **Product receipt** and th
 </tbody>
 </table>
 
+<!-- HA: Karl, this table above is exactly the same as on the bottom. Please engage Per Lykke, as this is clearly some past editing mistake --> 
+
 ### Production
 
 In production, if you set the **Event type** field to **Report as finished** and the **Execution** field to **After** on the **Quality associations** page, you get the following results:
@@ -550,6 +553,8 @@ In production, if you set the **Event type** field to **Report as finished** and
 </tbody>
 </table>
 
+<!-- HA: added. Consider adding a link --> Quality management for warehouse processes adds additional capabilities for quality order processing for production with **Event type** field to **Report as finished** and the **Execution** field to **After** and for purchase with **Event type** field to **Registration**. 
+
 ## Quality management pages
 <table>
 <colgroup>
@@ -617,3 +622,6 @@ Additional resources
 [Quality management processes](quality-management-processes.md)
 
 [Nonconformance management](enable-nonconformance-management.md)
+
+<!-- HA: Karl, please add link to quality management for warehouse processes  -->
+
