@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
-# Glift card module
+# Gift card module
 
 
 [!include [banner](includes/banner.md)]
@@ -41,6 +41,12 @@ Gift cards are a common form of tender. The gift card module can be used in chec
 
 
 ## Gift card module properties
+
+**Show additional fields** - This property defines what fields should be displayed for gift card in addition to gift card number. For instance, some gift cards support Pin and some support Pin and Expiry date. Depending on the values chosen, the UX will show the respective values. Alternatively a user could choose "None" which only shows gift card number and no additional fields.
+-	None
+-	Pin
+-	Expiry date
+-	Pin and Expiry date
 
 ## Site settings for gift card
 
