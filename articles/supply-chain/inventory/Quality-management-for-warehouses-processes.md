@@ -1,4 +1,4 @@
-Quality management for warehouse processe
+Quality management for warehouse processes
 ==========================================
 
 *Quality management for warehouse processes* extends the capabilities of quality
