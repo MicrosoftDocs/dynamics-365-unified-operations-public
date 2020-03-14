@@ -109,7 +109,7 @@ The search and fallback order are defined in the following order of priority:
 3. The language that has the **ultimateindex** attribute set, such as ```<add language="en-US" ultimateindex="myenusindex" />```
 
 > [!IMPORTANT]
-> If **parentlanguage** is set, there must be a corresponding **parentindex**. Note that the following scenario is valid as ```language="de"``` has ```parentindex=""indexde``` and both de-DE and de-AT are descendants of de.
+> If **parentlanguage** is set, there must be a corresponding **parentindex**. Note that the following scenario is valid as ```language="de"``` has ```parentindex="indexde"``` and both de-DE and de-AT are descendants of de.
 
 ```
 <add language="de" parentindex="indexde"/>
