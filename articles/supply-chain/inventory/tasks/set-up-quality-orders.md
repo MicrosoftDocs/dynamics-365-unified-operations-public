@@ -80,6 +80,8 @@ This procedure shows you how to enable a quality management process where incomi
 8. Click **Save**.
 9. Close the page.
 
+<!-- HA: Karl,Please add a note here saying something like this: "When quality management for warehouse processes is enabled, additional capabilities are available in item sampling". And then add a link to the document. -->
+
 ## Create a quality group
 1. Go to **Inventory management > Setup > Quality control > Quality groups**.
 2. Click **New**.
@@ -133,3 +135,4 @@ This procedure shows you how to enable a quality management process where incomi
 16. Click **Save**.
 17. Close the page.
 
+<!-- HA: Karl,Please add a note here saying something like this: "When quality management for warehouse processes is enabled, additional capabilities are available in quality associations". And then add a link to the document.  -->
