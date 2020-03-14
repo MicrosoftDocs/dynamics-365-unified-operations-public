@@ -39,6 +39,8 @@ This topic covers Gift card module and describes how to add it to site pages in 
 
 Gift cards are a common form of tender. The gift card module can be used in checkout module as a form of tender. The gift card module supports Dynamics 365 gift cards, SVS and Givex gift cards. SVS and Givex gift cards are redeemed via Adyen payment provider.
 
+For more details on support for External gift cards such as SVS and Givex see [Support for external Gift card](./dev-itpro/gift-card.md)
+
 
 ## Gift card module properties
 
@@ -66,4 +68,4 @@ To add a gift card module to a checkout page and set the required properties, se
 
 [Checkout module](add-checkout-module.md)
 
-[Gift card](./dev-itpro/gift-card.md)
+[Support for external Gift card](./dev-itpro/gift-card.md)
