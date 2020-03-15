@@ -82,7 +82,7 @@ Additionally, as part of this step, you must install a pre-upgrade checklist in 
 - If upgrading from AX 2012 R3, install [KB 4035163](https://go.microsoft.com/fwlink/?linkid=852255)
 - if upgrading from AX 2012 R2, install [KB 4048614](https://go.microsoft.com/fwlink/?linkid=869025)
 
-The output of the upgrade analyzer tool becomes the workstream in the upgrade project plan for your AX 2012 system administrators.For more information, see [Upgrade from AX 2012 - Plan by using the Upgrade analyzer tool](upgrade-analyzer-tool.md).
+The output of the upgrade analyzer tool becomes the workstream in the upgrade project plan for your AX 2012 system administrators. For more information, see [Upgrade from AX 2012 - Plan by using the Upgrade analyzer tool](upgrade-analyzer-tool.md).
 
 ### Run the Code upgrade estimation tools
 This step takes your code from AX 2012, converts it to the new format, and provides feedback about conflicts that a developer must resolve later. This step forms the basis for the estimate of the cost of your code upgrade.
@@ -118,9 +118,9 @@ When you purchase a subscription, you will receive details about how to sign up 
 - The production environment in the project is maintained by Microsoft. Therefore, code deployments, upgrades, and infrastructure maintenance are run directly by Microsoft, not by your staff. 
 
 ### Identify the project as an AX2012 Upgrade
-When you first login to your LCS Implementation Project, you will be guided through the Project Onboarding wizard.  If you are not prompted automatically, you can always visit the **Project Onboarding** page from the navigation menu in your project, near Project Settings, at a later time.
+When you first sign in to your LCS implementation project, you're guided through the **Project Onboarding** wizard. If you aren't automatically prompted, you can always visit the **Project Onboarding** page later. Use the navigation menu next to **Project Settings** in your project.
 
-Within Project Onboarding, there is a section titled **Project Scope** and a field called *Legacy System* which can be used to call out AX2012 Upgrade.  This is imperative to identify the project this way, so that the Sandbox infrastructure deployed is compatible with the upgrade process outlined here.  If this is not done early on in the project, you could accidentally deploy on newer infrastructure which is not compatible with this process and risk delays in the Upgrade effort.
+In Project Onboarding, in the **Project Scope** section, you can use the **Legacy System** field to identify the project as an AX2012 Upgrade. It's crucial that you identify the project in this way, so that the sandbox infrastructure that is deployed is compatible with the upgrade process that is outlined here. If this step isn't completed early in the project, you might accidentally deploy on a newer infrastructure that is incompatible with this process. In that case, the upgrade effort might be delayed.
 
 ### Perform the AX 2012 preparation tasks
 Complete the tasks that the upgrade analyzer tool discovered, and that are documented in your upgrade project plan. Your Microsoft Dynamics AX system administrator and database administrator (DBA) must complete these tasks.
@@ -184,7 +184,7 @@ For details, see [Upgrade from AX 2012 - Functional test passes](upgrade-functio
 ### Pre-go-live checklist
 The pre-go-live checklist is a recommended procedure that can help reduce the chance of errors during the final cutover to go-live. One week before go-live is due, stop configuration changes in AX 2012 (that is, under \<module\>\Setup). This restriction on configuration changes is merely procedural. The Microsoft Dynamics AX system administrators just agree to put changes of this type on hold at this point.
 
-We recommend that you also freeze code changes in the Finance and Operations code base. No further changes should be allowed unless they have been evaluated, and have been shown to not block go-live.  
+We recommend that you also freeze code changes in the Finance and Operations code base. No further changes should be allowed unless they have been evaluated and have been shown not to block go-live.  
 
 After the configuration restriction and code freeze are in place, data upgrade should be run for the last time before cutover. In this way, you can make sure that everything still works as expected. 
 
@@ -201,5 +201,5 @@ For details, see [Upgrade from AX 2012 - Cutover process (Go live)](2012-upgrade
 ## Supported upgrade paths
 Upgrade to the cloud version of Finance and Operations is supported from AX 2012 R2 and AX 2012 R3, in private preview.  
 
-Upgrade from Dynamics AX 2012 RTM isn't currently supported. Upgrade to the on-premises version isn't currently supported, but will be added in the future. 
+Upgrade from Dynamics AX 2012 RTM isn't currently supported. Upgrade to the on-premises version isn't currently supported, but support will be added in the future. 
 
