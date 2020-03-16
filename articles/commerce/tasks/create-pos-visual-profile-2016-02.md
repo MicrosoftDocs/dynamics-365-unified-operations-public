@@ -45,7 +45,7 @@ This procedure walks through creating a new point of sale (POS) visual profile. 
 11. In the list, click the link in the selected row.
 12. Toggle the expansion of the Login background section.
 13. In the Landscape image ID field, select or enter an image ID.
-14. In the Portait image ID field, select or enter an image ID.
+14. In the Portrait image ID field, select or enter an image ID.
 15. Toggle the expansion of the Background section.
 16. RequestPopup the Image ID.
 17. In the list, click the link in the selected row.
