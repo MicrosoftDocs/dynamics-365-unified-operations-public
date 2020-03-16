@@ -202,7 +202,7 @@
                   href: data-entities/dual-write/integrated-hr.md
             - name: Dual-write for Finance and Operations, and Common Data Service
               items:
-                - name: Enable dual-write for Finance and Operations, and Common Data Service
+                - name: Enable dual-write for Finance and Operations and Common Data Service
                   href: data-entities/dual-write/enable-dual-write.md
                 - name: System requirements and prerequisites
                   href: data-entities/dual-write/requirements-and-prerequisites.md

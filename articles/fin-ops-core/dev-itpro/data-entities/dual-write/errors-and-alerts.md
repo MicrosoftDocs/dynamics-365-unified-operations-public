@@ -220,7 +220,7 @@ There could be situations wherein a solution could contain different implementat
 
     * You will receive a notification once the upgrade completes (takes a few minutes)
 
+## Next steps
 
-<!-- > if you fix the step above, this statement is probably not needed.[CY1]
-Personally I feel this should be done before adding app users to either system.[CY2]
-this step is probably not needed as it's a 1st party app. please verify it with @Anshuman Gupta (DATA INTEGRATION) [CY3] */ -->
+[Application lifecycle management](application-lifecycle-management.md)
+
