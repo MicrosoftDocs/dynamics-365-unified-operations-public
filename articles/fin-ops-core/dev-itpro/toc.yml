@@ -203,16 +203,15 @@
             - name: Dual-write for Finance and Operations, and Common Data Service
               items:
                 - name: Enable dual-write for Finance and Operations, and Common Data Service
-                  herf: data-entities/dual-write/enable-dual-write.md
+                  href: data-entities/dual-write/enable-dual-write.md
                 - name: System requirements and prerequisites
-                  href: data-tntities/dual-write/requirements-and-prerequisites.md
+                  href: data-entities/dual-write/requirements-and-prerequisites.md
                 - name: Customize entity and field mappings
-                  href: data-entities/dual-write/cusomizing-mappings.md
+                  href: data-entities/dual-write/customizing-mappings.md
                 - name: Error management and alert notifications
                   href: data-entities/dual-write/errors-and-alerts.md
                 - name: Application lifecycle management
                   href: data-entities/dual-write/app-lifecycle-management.md
-                - name: 
             - name: Support for dual-write
               items:
                 - name: Support for Field Service solutions and Project Service Automation solutions
