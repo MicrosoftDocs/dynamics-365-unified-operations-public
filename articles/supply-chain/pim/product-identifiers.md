@@ -46,6 +46,9 @@ When you implement Supply Chain Management, you should give special consideratio
 
 When you use Common Data Service, the product number in Supply Chain Management is also the product number in the Common Data Service. Product variants are synchronized to the Common Data Service as distinct products.
 
+> [!NOTE]
+> The product number for an item can't be changed once one or more transactions exist for that item.
+
 ## Item number and product dimensions
 
 The item number is the product identifier that is used by a specific legal entity. Ideally, the item number should be identical to the product number. If the nomenclature differs per legal entity, it becomes difficult to follow a product throughout the supply chain, and burdensome relabeling and referencing processes are introduced. For combability with older versions (that is, with Microsoft Dynamics AX 2009 and earlier), we have preserved this model. However, we recommend that you eliminate identifiers that are specific to legal entities whenever you can, and that you use the unique product number as the primary identifier instead.
