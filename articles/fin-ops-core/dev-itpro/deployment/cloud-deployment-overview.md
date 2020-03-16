@@ -5,7 +5,7 @@ title: Cloud deployment overview
 description: This topic describes the cloud environment and subscription that you are deploying to, who can perform which tasks, and the data and customizations that you need to manage for Finance and Operations apps. 
 author: kfend
 manager: AnnBe
-ms.date: 03/13/2020
+ms.date: 03/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -84,7 +84,7 @@ All Finance and Operations front-end virtual machines in Microsoft Azure are con
 
 ## Remote Desktop
 
-### Microsoft managed environments
+### Microsoft-managed environments
 Customers are now required to complete additional setup to connect to virtual machines (VMs) through Microsoft Remote Desktop (RDP). This additional setup applies to all Microsoft-managed environments, including Tier 1 through Tier 5 sandboxes and add-ons. In order to connect to Tier 1 through Tier 5 sandbox environments, you must explicitly enable access (whitelist) from your organization’s IP address space. This can be done by a Lifecycle Services (LCS) user who has access to the **Environment** page (**Maintain** > **Enable Access**) where they can enter the IP address space that will be used to connect to the virtual machines through Remote Desktop. Access rules are either a single IP address (example: 10.10.10.10) or an IP address range (example: 192.168.1.0/24). You may add multiple entries at once as a semi-colon(;) separated list (example: 10.10.10.10;20.20.20.20;192.168.1.0/24). These entries are used to configure the Azure Network Security Group that is associated with your environment’s virtual network. For more information,  see [Filter network traffic with network security groups](/azure/virtual-network/virtual-networks-nsg).
 
 > [!IMPORTANT]
@@ -139,7 +139,7 @@ To provide the best experience and performance, Microsoft has to perform mainten
 ### How do I connect to the SQL database on my Sandbox environment?
 Follow these steps to connect to the SQL Database in your Tier 2+ Sandbox environments.
 
-> ![IMPORTANT]
+> [!IMPORTANT]
 > You will not be able to connect to the Production database directly.
 
 1. Remote Desktop into one of the AOS VMs belonging to the Tier 2+ environment with a database that you want to connect to.
@@ -153,7 +153,7 @@ Follow these steps to connect to the SQL Database in your Tier 2+ Sandbox enviro
     3. Use axdbadmin for **Login**.
     4. Enter the password obtained from LCS for axdbadmin.
     5. Select **Options**.
-    6. Enter the name of te database obtained from LCS in the **Connect to database** drop-down list.
+    6. Enter the name of the database obtained from LCS in the **Connect to database** drop-down list.
     7. Select **Connect**.
 
 ### How do I access a development instance?
@@ -171,7 +171,7 @@ You can bring your own domain name if it is running Azure Active Directory (AAD)
 ### Can I add guest AAD accounts as users?
 You can add guest AAD accounts if you have correctly configured them within Azure Active Directory, and enabled the Finance and Operations apps within your AAD. 
 
-### Why am I no longer able to see the Private AOS machines in one or more of my Tier 2 through Tier 5 Sandbox environmnents?
+### Why am I no longer able to see the Private AOS machines in one or more of my Tier 2 through Tier 5 Sandbox environments?
 The Private AOS VMs were part of your environment configuration as they were needed to secure communication between the AOS and BI machines in the past. With recent updates, all communication between AOS and BI machines are secure directly and no longer need the intermediary Private AOS machines. Therefore, we are in the process of rolling out removing the Private AOS machines. As we are removing the machines in batches, you may notice that only some of your environments have the Private AOS machines removed. This change will not impact functionality or security in any way and will be transparent to you.
 
 ### Why am I no longer able to Remote Desktop into one or more of my Tier 1 through Tier 5 Microsoft managed Sandbox environments?
