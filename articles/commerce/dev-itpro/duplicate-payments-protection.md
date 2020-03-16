@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-#  Enable duplicate payment protection for payment connector
+# Enable duplicate payment protection for payment connector
 
 [!include [banner](../../includes/banner.md)]
 
@@ -197,3 +197,4 @@ public GetTransactionByTransactionReferencePaymentTerminalDeviceResponse(Payment
 | Variable | Description |
 |---|---|
 | paymentInfo | The recovered payment transaction. This is identical to the payment response returned for any other payment request, such as **Authorize** or **Refund**. |
+                                                                                                                                                                                                                                                                                                            
