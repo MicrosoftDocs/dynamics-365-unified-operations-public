@@ -196,7 +196,7 @@
                     href: data-entities/dual-write/vendor-switch.md
                 - name: Integrated sites and warehouses
                   href: data-entities/dual-write/sites-warehouses-mapping.md
-                - name: Synchronizing on-demand with the Dynamics 365 Supply Chain Management price engine
+                - name: Sync with the Dynamics 365 Supply Chain Management pricing engine on demand
                   href: data-entities/dual-write/pricing-engine.md
                 - name: Prospect to cash in dual-write
                   href: data-entities/dual-write/dual-write-prospect-to-cash.md
