@@ -5,7 +5,7 @@ title: Cloud deployment overview
 description: This topic describes the cloud environment and subscription that you are deploying to, who can perform which tasks, and the data and customizations that you need to manage for Finance and Operations apps. 
 author: kfend
 manager: AnnBe
-ms.date: 03/13/2020
+ms.date: 03/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -139,7 +139,7 @@ To provide the best experience and performance, Microsoft has to perform mainten
 ### How do I connect to the SQL database on my Sandbox environment?
 Follow these steps to connect to the SQL Database in your Tier 2+ Sandbox environments.
 
-> ![IMPORTANT]
+> [!IMPORTANT]
 > You will not be able to connect to the Production database directly.
 
 1. Remote Desktop into one of the AOS VMs belonging to the Tier 2+ environment with a database that you want to connect to.
@@ -153,7 +153,7 @@ Follow these steps to connect to the SQL Database in your Tier 2+ Sandbox enviro
     3. Use axdbadmin for **Login**.
     4. Enter the password obtained from LCS for axdbadmin.
     5. Select **Options**.
-    6. Enter the name of te database obtained from LCS in the **Connect to database** drop-down list.
+    6. Enter the name of the database obtained from LCS in the **Connect to database** drop-down list.
     7. Select **Connect**.
 
 ### How do I access a development instance?
