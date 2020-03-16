@@ -219,9 +219,9 @@ It is possible to have a quality association setup which creates item sampling w
 
 It is possible to define a test group performing destructive tests. Destructive tests imply that regardless of the test result, the quantity of an item subjected to the test will be destroyed as part of the test. _Quality management for warehouse processes_ supports destructive testing in a similar way as quality management without _Quality management for warehouse processes_ enabled. Before the quality order can be validated, it is required to pick the quality order quantity. Picking will allow to specify the pick location. Picking can be registered from within the quality order form by navigating to **Inventory > Pick**. Once the pick for the quality order quantity is registered, then validation can be completed.
 
-## Simple demo
+## Example scenario
 
-### Prepare the demo
+### Prepare the scenario
 
 Pre-condition: Demo data, Company USMF
 
@@ -237,7 +237,7 @@ You will start by enabling warehouse 51 to use the quality management for wareho
 
 Navigate to _Warehouse management > Setup > Warehouse > Warehouses_ and select warehouse 51. Expand the Warehouse FastTab and set &#39;Enable quality order for warehouse processes&quot; to Yes
 
-### Quality In Setup – move to QMS
+### Quality in setup – move to QMS
 
 Then you proceed with the required base setup of the work class, work template, location directive, item sampling, and quality association to enable quality management for warehouse processes to run for warehouse 51.
 
