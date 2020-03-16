@@ -76,7 +76,7 @@ This procedure shows how to set up a loyalty program with two loyalty tiers. Thi
 35. Click Price groups.
     * If you want to give loyalty customers discounts. you'll need to assign one or more price groups to the loyalty program and assign the price groups to discounts. It is a best practice to not mix price groups across different types of discounting entities.  For example, don't use the same price group for a loyalty discount and a channel discount.  
 36. In the Price group field, click the drop-down button to open the lookup.
-    * The Price groups link at the top of the page is for the loyalty program. The Price groups link in the Program tiers fasttab is for a specific loyalty tier only.  
+    * The Price groups link at the top of the page is for the loyalty program. The Price groups link in the Program tiers FastTab is for a specific loyalty tier only.  
 37. In the list, click the link in the selected row.
 38. Click Save.
 39. Close the page.
