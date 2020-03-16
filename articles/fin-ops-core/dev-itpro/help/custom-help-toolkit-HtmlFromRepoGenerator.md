@@ -43,12 +43,12 @@ HtmlFromRepoGenerator.exe provides functionality that supports the creation of c
 - Update links to files that are no longer in the clone
 - Update the **ms.locale** value to match the language options that are supported by the Finance and Operations client
 
-    The client uses language descriptors that are different from the language descriptors used in the corresponding GitHub repos. For localized Help to be called, the language indicators in the content from GitHub must be changed so that they match how the client understands languages. See [Language and locale descriptors in across product and Help](language-locale.md) for more information.
+    The client uses language descriptors that are different from the language descriptors used in the corresponding GitHub repos. For localized custom Help to be called, the language indicators in the content from GitHub must be changed so that they match how the client understands languages. See [Language and locale descriptors in across product and Help](language-locale.md) for more information.
 - Generate HTML files that can be used for publishing.
 
     The HTML files will be generated in the **d365F-O** subfolder. The files are generated based on stylesheets and templates that are part of the tool. For more information, see [Modifying the styling of the generated HTML files](#modifying-the-styling-of-the-generated-html-files).
 
-- Compare a localized Microsoft repo to the en-US repo to identify discrepancies and update the links accordingly.
+- Compare a localized Microsoft repo to the equivalent en-US repo to identify discrepancies and update links accordingly.
 
 In the first version of the toolkit, this tool had the name ConsoleApp.exe.  
 
@@ -57,7 +57,7 @@ In the first version of the toolkit, this tool had the name ConsoleApp.exe.
 Here is the syntax for HtmlFromRepoGenerator.exe:  
 
 ```
-HtmlFromRepoGenerator.exe --Json <Articles/> --Out <path> --ExternalText <text> [--DoNotClone <true|false>] [--Repo <URL>] [--RemoveGitFolder <true|false>] [--ReplaceUrl <URL>] [--LogsDir <.\logs>] [--EnRepo <URL>] [--EnOut <path>] [--Lng <language code>] [--?[--]]
+HtmlFromRepoGenerator.exe --Json <Articles/> --Out <path> --ExternalText <text> [--DoNotClone <true|false>] [--Repo <URL>] [--RemoveGitFolder <true|false>] [--ReplaceUrl <URL>] [--LogsDir <.\logs>] [--EnRepo <URL>] [--EnOut <path>] [--Lng <language code>] [--Rtl] [--?[--]]
 ```
 
 The following table provides an explanation of the parameters:

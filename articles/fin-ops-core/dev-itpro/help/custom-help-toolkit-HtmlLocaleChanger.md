@@ -41,7 +41,7 @@ The **HtmlLocaleChanger** tool can update your HTML files with a new value for *
 Here is the syntax for HtmlLocaleChanger.exe:  
 
 ```
-HtmlLocaleChanger.exe --h <path> --v <true|false>
+HtmlLocaleChanger.exe --h <path> --l <locale> --v <true|false>
 ```
 
 Here is an explanation of the parameters:
@@ -49,14 +49,15 @@ Here is an explanation of the parameters:
 |Parameter   |Description  |
 |------------|-------------|
 |h|Specifies the path to the HTML files that you want to process. |
+|l|New locale for the HTML files. |
 |v|True to enable verbose logging; otherwise false.|
 
 ## Examples
 
-The following example changes the locale <!--from *de-de* to *de-at*--> with verbose logging:
+The following example changes the locale to *de-at* with verbose logging:
 
 ```
-HtmlLocaleChanger.exe --h D:\D365-Operations\d365F-O\supply-chain\de --v
+HtmlLocaleChanger.exe --h D:\D365-Operations\d365F-O\supply-chain\de --l de-at --v
 ```
 
 ## See also
