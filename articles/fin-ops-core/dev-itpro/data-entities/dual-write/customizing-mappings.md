@@ -78,7 +78,7 @@ Here are some more examples of filter expressions:
 |numberofemployees gt 1000 and <br/>numberofemployees le 2000 |((numberofemployees > 1000) &&<br/> (numberofemployees <= 2000)) |
 | | |
 
-Click [here](https://docs.microsoft.com/en-us/dynamicsax-2012/developer/using-expressions-in-query-ranges) for more examples on using expressions in query ranges
+Click [here](https://docs.microsoft.com/dynamicsax-2012/developer/using-expressions-in-query-ranges) for more examples on using expressions in query ranges
 
 ## How-to add new entity maps
 

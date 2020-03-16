@@ -25,7 +25,7 @@ A Dual Write Solution can contain one or more Dual Write entity maps that can be
 
 A managed solution cannot be modified and can be uninstalled after it is imported. When you import an unmanaged solution, you add all the components of that solution into your environment. When you import an unmanaged solution that contains components that you have already customized, your customizations will be overwritten by the customizations in the imported unmanaged solution. 
 
-For more details on Solutions, please review the following guidance: [https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/solutions-overview](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/solutions-overview)
+For more details on Solutions, please review the following guidance: [https://docs.microsoft.com/powerapps/maker/common-data-service/solutions-overview](https://docs.microsoft.com/powerapps/maker/common-data-service/solutions-overview)
 
 ## How-to install the dual-write core solution
 
@@ -136,7 +136,7 @@ With this step, you just customized your entities and put them into a solution
 	
     That's it&mdash;you just customized your entities, added them to a new solution and created a solution file that can now be imported and applied to other environments (useful to move entity maps between test and prod environments). Similarly, you could create a backup of all your entity maps by adding them to a solution and exporting the solution as a package which can then be imported to restore the entity maps into to any environment.
 
-    Follow the steps in this article to publish this package to AppSource: [https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/publish-app-appsource](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/publish-app-appsource)
+    Follow the steps in this article to publish this package to AppSource: [https://docs.microsoft.com/powerapps/developer/common-data-service/publish-app-appsource](https://docs.microsoft.com/powerapps/developer/common-data-service/publish-app-appsource)
 
 4. Test your exported solution package by importing and applying into another environment
 
