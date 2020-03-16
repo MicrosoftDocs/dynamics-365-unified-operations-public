@@ -129,21 +129,21 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
         "CertificateInformation":  {
                                         "ClusterCertificate":  {
                                                                     "X509StoreName":  "My",
-                                                                    "Thumbprint":  "New Server humbprint(Star/SF)"
-                                                                    ,"ThumbprintSecondary": "Old Server humbprint(Star/SF)"
+                                                                    "Thumbprint":  "New server thumbprint(Star/SF)"
+                                                                    ,"ThumbprintSecondary": "Old server thumbprint(Star/SF)"
                                                                },
                                         "ServerCertificate":   {
                                                                     "X509StoreName":  "My",
-                                                                    "Thumbprint":  "New Server humbprint(Star/SF)"
-                                                                    ,"ThumbprintSecondary":"Old Server humbprint(Star/SF)"
+                                                                    "Thumbprint":  "New server thumbprint(Star/SF)"
+                                                                    ,"ThumbprintSecondary":"Old server thumbprint(Star/SF)"
                                                                },
                                         "ClientCertificateThumbprints":  [
                                                                                                                                                                                            {
-                                                                                "CertificateThumbprint":  "Old Client Thumbprint",
+                                                                                "CertificateThumbprint":  "Old client thumbprint",
                                                                                 "IsAdmin":  false
                                                                             },
                                                                             {
-                                                                                "CertificateThumbprint":  "New Client Thumbprint",
+                                                                                "CertificateThumbprint":  "New client thumbprint",
                                                                                 "IsAdmin":  true
                                                                             }
                                                                           ]
