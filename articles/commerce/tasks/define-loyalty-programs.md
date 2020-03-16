@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Define loyalty programs
 
-[!include [task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This procedure shows how to set up a loyalty program with two loyalty tiers. This procedure uses the USRT demo data company.
 
