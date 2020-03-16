@@ -4,7 +4,7 @@ title: Turnover balance statement reports
 description: This topic provides information about turnover balance sheets for customers, vendors, and advanced holders.
 author: v-nadyuz
 manager: AnnBe
-ms.date: 02/07/2020
+ms.date: 03/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -240,10 +240,11 @@ On the **Report archive** page, you can view reports and download them in Excel 
 
 You can pre-calculate transactional data to improve performance.
 
-1. Click **General ledger** \> **Ledger setup** \> **General ledger parameters**.
+1. Go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
 2. On the **Ledger** tab, in the **Turnover balance statement** section, set the **Use pre-calculated data** option to **Yes**.
-3. Click **General ledger** \> **Periodic tasks** \> **Pre-calculate transactional data**.
+3. Select **General ledger** \> **Periodic tasks** \> **Pre-calculate transactional data**.
 4. On the **Pre-calculate transactional data** page, on the **Parameters** FastTab, in the **Report type** field, select the type of the    report from the following:
+
    - Customer turnover register
    - Vendor turnover register
    - General ledger
@@ -251,5 +252,5 @@ You can pre-calculate transactional data to improve performance.
    
    ![](media/11_Pre-calculate_transactional_data.jpg)
    
-5. Click **OK** to pre-calculate transactional data.
+5. Select **OK** to pre-calculate transactional data.
 
