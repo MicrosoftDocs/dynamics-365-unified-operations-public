@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Dynamics 365 Finance data in Azure Data Lake
-description: This topic provides information about how to configure your environment for Dynamics 365 for Finance and Operations apps with an Azure Data Lake.
+title: Finance and Operations apps data in Azure Data Lake
+description: This topic provides information about how to configure your environment for Dynamics 365 Finance and Operations apps with an Azure Data Lake.
 author: MilindaV2
 manager: AnnBe
-ms.date: 03/05/2020
+ms.date: 03/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -37,15 +37,13 @@ ms.dyn365.ops.version: Platform Update 34
 
 [!include [banner](../includes/preview-banner.md)]
 
-You can configure your environment for Dynamics 365 for Finance and Operations apps with an Azure Data Lake using this feature. Tables and Entities from the Finance and Operations apps will be reflected in your Azure Data lake when configuration is successful.
+You can configure your environment for Dynamics 365 Finance and Operations apps with an Azure Data Lake using this feature. Tables and Entities from the Finance and Operations apps will be reflected in your Azure Data lake when configuration is successful.
 
 ## NOTES
 
 **This feature may not be available in all regions and/or all environments**. If you do not see this feature in your environment, it will become available in the future.
 
-To enable Aggregate measurements in an Azure Data Lake, continue to use the feature as described in “Entity store in Data Lake”
-
- 
+To enable aggregate measurements in an Azure Data Lake, see the topic, [Make Entity store available as a Data Lake](entity-store-data-lake.md).
 
 ## Overview
 
