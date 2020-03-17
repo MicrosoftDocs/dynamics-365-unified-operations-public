@@ -4,7 +4,7 @@ title: Turnover balance statement reports
 description: This topic provides information about turnover balance sheets for customers, vendors, and advanced holders.
 author: v-nadyuz
 manager: AnnBe
-ms.date: 02/07/2020
+ms.date: 03/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -67,7 +67,7 @@ Turnover balance sheets for the customer, vendor, and advance holder let you sho
 14. Set the **Itemize balance** option to **Yes** to send the expanded balance to the turnover balance sheet.
 15. Set the **Calculate balance** option to **Yes** to calculate and show the balance on the report.
 
-    ![Customer turnover reigster page, General tab](media/1_Customer_turnover_register.jpg)
+    ![Customer turnover register page, General tab](media/1_Customer_turnover_register.jpg)
 
 16.  Select **ОК** to generate the report.
 
@@ -115,7 +115,7 @@ Turnover balance sheets for the customer, vendor, and advance holder let you sho
 14. Set the **Itemize balance** option to **Yes** to send the expanded balance to the turnover balance sheet.
 15. Set the **Calculate balance** option to **Yes** to calculate and show the balance on the report.
 
-    ![Vendor turnover register page, Genreal teab](media/4_Vendor_turnover_register.jpg)
+    ![Vendor turnover register page, General tab](media/4_Vendor_turnover_register.jpg)
 
 16. Select **ОК** to generate the report.
 
@@ -235,3 +235,21 @@ On the **Report archive** page, you can view reports and download them in Excel 
 5. Select **Report output** to print the report.
 6. Select **Export to Microsoft Excel** to open the **Export to Excel** page, and then select **Download** to download the report in Excel format.
 7. Select **View** to view the report.
+
+## Pre-calculate transactional data
+
+By pre-calculating transactional data, you can help improve performance.
+
+1. Go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
+2. On the **Ledger** tab, in the **Turnover balance statement** section, set the **Use pre-calculated data** option to **Yes**.
+3. Go to **General ledger** \> **Periodic tasks** \> **Pre-calculate transactional data**.
+4. In the **Pre-calculate transactional data** dialog box, on the **Parameters** FastTab, in the **Report type** field, select the type of the report:
+
+    - Customer turnover register
+    - Vendor turnover register
+    - General ledger
+    - Advance holder turnover register
+
+    ![Pre-calculate transactional data dialog box](media/11_Pre-calculate_transactional_data.jpg)
+
+5. Select **OK** to pre-calculate transactional data.

@@ -5,7 +5,7 @@ title: Certificate rotation
 description: This topic explains how to place existing certificates and update the references within the environment to use the new certificates.
 author: PeterRFriis
 manager: AnnBe
-ms.date: 09/05/2019
+ms.date: 03/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -129,21 +129,21 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
         "CertificateInformation":  {
                                         "ClusterCertificate":  {
                                                                     "X509StoreName":  "My",
-                                                                    "Thumbprint":  "New Server humbprint(Star/SF)"
-                                                                    ,"ThumbprintSecondary": "Old Server humbprint(Star/SF)"
+                                                                    "Thumbprint":  "New server thumbprint(Star/SF)"
+                                                                    ,"ThumbprintSecondary": "Old server thumbprint(Star/SF)"
                                                                },
                                         "ServerCertificate":   {
                                                                     "X509StoreName":  "My",
-                                                                    "Thumbprint":  "New Server humbprint(Star/SF)"
-                                                                    ,"ThumbprintSecondary":"Old Server humbprint(Star/SF)"
+                                                                    "Thumbprint":  "New server thumbprint(Star/SF)"
+                                                                    ,"ThumbprintSecondary":"Old server thumbprint(Star/SF)"
                                                                },
                                         "ClientCertificateThumbprints":  [
                                                                                                                                                                                            {
-                                                                                "CertificateThumbprint":  "Old Client Thumbprint",
+                                                                                "CertificateThumbprint":  "Old client thumbprint",
                                                                                 "IsAdmin":  false
                                                                             },
                                                                             {
-                                                                                "CertificateThumbprint":  "New Client Thumbprint",
+                                                                                "CertificateThumbprint":  "New client thumbprint",
                                                                                 "IsAdmin":  true
                                                                             }
                                                                           ]
