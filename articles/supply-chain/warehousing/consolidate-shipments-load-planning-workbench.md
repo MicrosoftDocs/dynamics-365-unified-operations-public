@@ -188,6 +188,8 @@ Create another two identical sales orders.
 **Sales order 5 and 6**:
 
 - In the **Customer account** field, select **US-007**.
+- In the **Site** field, select **6**.
+- In the **Warehouse** field, select **61**.
 - In the **Pool** field, select **ShipCons**.
 
 Add an order line to each sales order.
@@ -203,6 +205,8 @@ Create another two identical sales orders.
 **Sales order 7 and 8**:
 
 - In the **Customer account** field, select **US-007**;
+- In the **Site** field, select **6**.
+- In the **Warehouse** field, select **61**.
 - Leave **Pool** field empty.
 
 Add an order line to each sales order.

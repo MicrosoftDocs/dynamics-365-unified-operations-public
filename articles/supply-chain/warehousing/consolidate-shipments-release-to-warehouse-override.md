@@ -51,7 +51,7 @@ Create three identical sales orders.
 
 **Sales order 1, 2 and 3**:
 
-- In the **Customer account** field, select **US-001**.
+- In the **Customer account** field, select **US-002**.
 
 Add an order line to each sales order.
 
@@ -59,6 +59,7 @@ Add an order line to each sales order.
 
 - In the **Item number** field, select **A0001** (an item without filter code 4);
 - In the **Quantity** field, enter **1.00**.
+- Click **Inventory > Reservation** and then **Reserve lot** to reserve the order line.
 
 ## Release of sales orders via Release to warehouse form
 
@@ -80,7 +81,7 @@ To override shipment consolidation policy during relase to warehouse, following 
 
 As a result, two shipments are created:
 
-- The first shipment is created using **ConsolidateOpen** policy and contains two lines ;
+- The first shipment is created using **CustomerOrderNo** policy and contains two lines ;
 - The second shipment is created using **Default** policy and contains one line.
 
 To review created shipments, follow these steps.
