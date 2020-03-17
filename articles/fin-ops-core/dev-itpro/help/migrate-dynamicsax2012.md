@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Operations
 
 [!include [banner](../includes/banner.md)]
 
-If you have existing content from Dynamics AX 2012, then you can reuse that for Dynamics 365 Finance, Supply Chain Management, and Commerce. However, you must transform the HTML files so that they can be used in the custom Help environment.  
+If you have existing content from Dynamics AX 2012, you can reuse that for Dynamics 365 Finance, Supply Chain Management, and Commerce. However, you must transform the HTML files so that they can be used in the custom Help environment.  
 
 ## Converting Dynamics AX 2012 content
 
@@ -48,7 +48,7 @@ Microsoft has published a [Custom Help Toolkit](custom-help-toolkit.md) that inc
 
 - Adds the following metadata:  
 
-    ```yaml
+    ```html
     <meta name="ms.search.region" content="Global" />  
     <meta name="ms.search.scope" content="Operations, Core" />  
     <meta name="ms.dyn365.ops.version" content="AX 7.0.0" />  
@@ -66,7 +66,7 @@ You can run the following command from a Command Prompt window, or you can run t
 
 The following metadata is currently used or are reserved for use in indexing.  
 
-```yaml
+```html
     <meta name="title" content="Title of file" />  
     <meta name="ms.locale" content="locale" />  
     <meta name="ms.search.form" content="FormAOTName" />  
@@ -120,17 +120,15 @@ The following properties are reserved for future use:
 > [!TIP]
 > Microsoft's content in the public GitHub repos contain additional metadata that is used by Microsoft in internal processes that are not related to the mechanics of the help system. You can ignore these metadata properties if you extend or customize Microsoft's content.  
 
-## Moving to MarkDown
-
-If you want to customize or extend the Microsoft Help, you can fork our public repo for either the source repo in English (US) at [https://github.com/MicrosoftDocs/Dynamics-365-unified-Operations-public](https://github.com/MicrosoftDocs/Dynamics-365-unified-Operations-public), or one of the related repos with translations into the supported languages. For more information, see [Extend, Customize, and Collaborate on the Help](contributor-guide.md).  
+##  <a name="moving-to-markdown"></a>Moving to MarkDown
 
 Converting your existing content to MarkDown can be done using third-party tools, including but not limited to [PanDoc](https://pandoc.org) or the [Writage](https://writage.com) plugin for Word.  
 
-When you have converted your content to MarkDown, you can use a Git repo in Azure DevOps as your source repository, create a private or public repo in GitHub, or set up a project in [MkDocs](https://www.mkdocs.org/), for example. Then you can use open source tools such as [DocFx](https://dotnet.github.io/docfx/) to generate content for your website. In general, working in MarkDown means that you have access to a world of open source tools and do not have a hard dependency on Microsoft providing you with tools.  
+When you have converted your content to MarkDown, you can use open source tools such as [DocFx](https://dotnet.github.io/docfx/) to generate content for your website. In general, working in MarkDown means that you have access to a world of open source tools and do not have a hard dependency on Microsoft providing you with tools.  
 
 ## See also
 
-[Deploying custom help sites](custom-help-websites.md)  
+[Deploying custom help sites](custom-help-overview.md)  
 [Custom Help Overview](custom-help-overview.md)  
 [Custom Help Toolkit](custom-help-toolkit.md)  
 [Extend, Customize, and Collaborate on the Help](contributor-guide.md)  

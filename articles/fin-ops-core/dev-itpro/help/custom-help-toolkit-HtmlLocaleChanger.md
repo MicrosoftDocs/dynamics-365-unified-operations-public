@@ -28,20 +28,20 @@ ms.dyn365.ops.version: Operations
 
 ---
 
-# Custom Help Toolkit: The HTML Locale Changer tool
+# Custom Help Toolkit: The HtmlLocaleChanger tool
 
 [!include [banner](../includes/banner.md)]
 
-The custom help toolkit includes the **HTML Locale Changer** tool that you can use to process HTML files that are generated with the [HTML From Repos Generator tool](custom-help-toolkit-HtmlFromRepoGenerator.md).  
+The custom help toolkit includes the **HtmlLocaleChanger** tool that you can use to process HTML files that are generated with the [HtmlFromRepoGenerator tool](custom-help-toolkit-HtmlFromRepoGenerator.md).  
 
-## <a name="htmllocale"></a>Use the HTML Locale Changer tool to align locales
+## <a name="htmllocale"></a>Use the HtmlLocaleChanger tool to align locales
 
-The **HTML Locale Changer** tool can update your HTML files with a new value for *ms.locale*. For example, if you have HTML files for German (Germany) and you want to make the same content available in German (Austria), then you can run the tool to change the setting from *ms.locale: de-de* to *ms.locale:de-at*.  
+The **HtmlLocaleChanger** tool can update your HTML files with a new value for *ms.locale*. For example, if you have HTML files for German (Germany) and you want to make the same content available in German (Austria), then you can run the tool to change the setting from *ms.locale: de-de* to *ms.locale:de-at*.  
 
 Here is the syntax for HtmlLocaleChanger.exe:  
 
 ```
-HtmlLocaleChanger.exe --h <path> --v <true|false>
+HtmlLocaleChanger.exe --h <path> --l <locale> --v <true|false>
 ```
 
 Here is an explanation of the parameters:
@@ -49,19 +49,20 @@ Here is an explanation of the parameters:
 |Parameter   |Description  |
 |------------|-------------|
 |h|Specifies the path to the HTML files that you want to process. |
+|l|New locale for the HTML files. |
 |v|True to enable verbose logging; otherwise false.|
 
 ## Examples
 
-The following example changes the locale <!--from *de-de* to *de-at*--> with verbose logging:
+The following example changes the locale to *de-at* with verbose logging:
 
 ```
-HtmlLocaleChanger.exe --h D:\D365-Operations\d365F-O\supply-chain\de --v
+HtmlLocaleChanger.exe --h D:\D365-Operations\d365F-O\supply-chain\de --l de-at --v
 ```
 
 ## See also
 
-[Custom Help Overview](custom-help-websites.md)  
+[Custom Help Overview](custom-help-overview.md)  
 [Deploying custom help to Azure](walkthrough-help-azure.md)  
 [Language and locale descriptors in across product and Help](language-locale.md)  
 [Convert Dynamics AX custom Help for use in Dynamics 365](migrate-dynamicsax2012.md)  

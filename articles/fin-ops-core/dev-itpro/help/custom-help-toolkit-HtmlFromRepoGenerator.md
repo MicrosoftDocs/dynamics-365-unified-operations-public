@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Generate HTML files based on Microsoft's GitHub repos
+title: Generate HTML files from the contents of a Microsoft GitHub repository
 description: This topic describes the HtmlFromRepoGenerator tool in the custom help toolkit for Finance and Operations apps. 
 author: edupont04
 manager: AnnBe
@@ -28,41 +28,36 @@ ms.dyn365.ops.version: Operations
 
 ---
 
-# Custom Help Toolkit: The HTML From Repos Generator tool
+# Custom Help Toolkit: The HtmlFromRepoGenerator tool
 
 [!include [banner](../includes/banner.md)]
 
-The custom help toolkit includes the **HtmlFromRepoGenerator** tool that gets Microsoft's content in MarkDown format and prepares it for customization in HTML format.  
-
-The tool can help automate how you get Microsoft's content and prepare it for customization and deployment to a custom help website.
+The custom help toolkit includes the **HtmlFromRepoGenerator** tool that gets Microsoft's content in MarkDown format and converts it to HTML format in preparation for customization.  
 
 ## <a name="consoleapp"></a>Use the HtmlFromRepoGenerator tool to get MarkDown files and generate HTML files
 
 HtmlFromRepoGenerator.exe provides functionality that supports the creation of custom Help based on source files from Microsoft. You can use HtmlFromRepoGenerator.exe to:
 
 - Clone a Microsoft documentation repo
-
-    If you already have a clone of the Microsoft repo, run HtmlFromRepoGenerator.exe without this command.
-
 - Remove developer and administrator content from your clone of the Microsoft repo
 - Update links to files that are no longer in the clone
 - Update the **ms.locale** value to match the language options that are supported by the Finance and Operations client
 
-    The client uses other language descriptors than the corresponding GitHub repos. For localized Help to be called, the language indicators in the content from GitHub must be changed so that they match how the client understands languages.
+    The client uses language descriptors that are different from the language descriptors used in the corresponding GitHub repos. For localized custom Help to be called, the language indicators in the content from GitHub must be changed so that they match how the client understands languages. See [Language and locale descriptors in across product and Help](language-locale.md) for more information.
 - Generate HTML files that can be used for publishing.
 
-    The HTML files are in the **d365F-O** subfolder. The files are generated based on stylesheets and templates that are part of the tool. For more information ,see [Modifying the styling of the generated HTML files](#modifying-the-styling-of-the-generated-html-files).
+    The HTML files will be generated in the **d365F-O** subfolder. The files are generated based on stylesheets and templates that are part of the tool. For more information, see [Modifying the styling of the generated HTML files](#modifying-the-styling-of-the-generated-html-files).
 
-- Compare a localized Microsoft repo to the en-US repo to identify discrepancies and update the links accordingly.
+- Compare a localized Microsoft repo to the equivalent en-US repo to identify discrepancies and update links accordingly.
 
-In the first version of the toolkit, this tool had the name ConsoleApp.exe but is now renamed.  
+In the first version of the toolkit, this tool had the name ConsoleApp.exe.  
 
 ### Syntax
 
 Here is the syntax for HtmlFromRepoGenerator.exe:  
 
 ```
-HtmlFromRepoGenerator.exe --Json <Articles/> --Out <path> --ExternalText <text> [--DoNotClone <true|false>] [--Repo <URL>] [--RemoveGitFolder <true|false>] [--ReplaceUrl <URL>] [--LogsDir <.\logs>] [--EnRepo <URL>] [--EnOut <path>] [--Lng <language code>] [--?[--]]
+HtmlFromRepoGenerator.exe --Json <Articles/> --Out <path> --ExternalText <text> [--DoNotClone <true|false>] [--Repo <URL>] [--RemoveGitFolder <true|false>] [--ReplaceUrl <URL>] [--LogsDir <.\logs>] [--EnRepo <URL>] [--EnOut <path>] [--Lng <language code>] [--Rtl] [--?[--]]
 ```
 
 The following table provides an explanation of the parameters:
@@ -90,7 +85,7 @@ The following additional parameters are used when the tool is run against the lo
 ## Examples
 
 > [!NOTE]
-> The Microsoft repos contain many files, so the process takes several minutes. If you run the tol against several localization repos, the process takes longer.
+> The Microsoft repos contain many files, so the process takes several minutes. If you run the tool against multiple localization repos, the process takes longer.
 
 The following example clones the en-US repo and generates HTML files for en-US.
 
@@ -98,46 +93,38 @@ The following example clones the en-US repo and generates HTML files for en-US.
 HtmlFromRepoGenerator.exe --json articles/ --out "D:\D365-Operations\en-US" --repo "https://github.com/MicrosoftDocs/Dynamics-365-unified-Operations-public" --externalText "(This is an external link)" --replaceUrl "https://docs.microsoft.com/en-us/dynamics365/supply-chain" --LogsDir D:\D365-Operations\logs\en-US
 ```
 
-The following example uses the previously cloned en-US repo and generates HTML files for en-US.
+The following example uses a previously cloned en-US repo and generates HTML files for en-US.
 
 ```
 HtmlFromRepoGenerator.exe --json articles/ --out "D:\D365-Operations\en-US" --externalText "(This is an external link)" --replaceUrl "https://docs.microsoft.com/en-us/dynamics365/supply-chain" --LogsDir D:\D365-
 Operations\logs\en-US
 ```
 
-The following example clones both the de-DE and en-US repos, and generates HTML files for German.
+The following example clones both the de-DE and en-US repos, and generates HTML files for de.
 
 ```
 HtmlFromRepoGenerator.exe --json articles/ --out "D:\D365-Operations\de" --repo "https://github.com/MicrosoftDocs/Dynamics-365-Operations.de-de" --externalText "(This is an external link)" --EnRepo "https://github.com/MicrosoftDocs/Dynamics-365-unified-Operations-public" --EnOut "D:\D365-Operations\en-us" --replaceUrl "https://docs.microsoft.com/de-de/dynamics365/supply-chain" --lng "de" --LogsDir D:\D365-Operations\logs\de
 ```
 
-The following example clones the de-DE repo, uses the existing en-US repo, and then generates HTML files for the *de* client locale.
-
-```
-HtmlFromRepoGenerator.exe --json articles/ --out "D:\D365-Operations\de" --repo "https://github.com/MicrosoftDocs/Dynamics-365-Operations.de-de" --externalText "(This is an external link)" --EnOut "D:\D365-Operations\en-us" --replaceUrl "https://docs.microsoft.com/de-de/dynamics365/supply-chain" --lng "de" --LogsDir D:\D365-Operations\logs\de
-```
-
-The following example uses the existing de-DE and en-US repos, and then generates HTML files for German. Make sure that the de-DE repo is up to date if you use the existing repo.
+The following example uses the existing de-DE and en-US repos, and then generates HTML files for de. Make sure that the de-DE repo is up to date if you use the existing repo.
 
 ```
 HtmlFromRepoGenerator.exe --json articles/ --out "D:\D365-Operations\de" --DoNotClone --externalText "(This is an external link)" --enOut "D:\D365-Operations\en-us" --replaceUrl "https://docs.microsoft.com/de-de/dynamics365/supply-chain" --lng "de" --LogsDir D:\D365-Operations\logs\de
 ```
 
 > [!IMPORTANT]
-> Do not run HtmlFromRepoGenerator.exe repeatedly on an already cloned repo with existing customizations. Run the tool until you get the files that you need, and then make any relevant customizations. Otherwise you will get error messages because the tool is trying to make the same changes again. If you must rerun the tool, either let the tool re-clone the repo, or make sure that any local changes are reverted.
+> Do not run HtmlFromRepoGenerator.exe repeatedly on a previously-cloned repo. HtmlFromRepoGenerator modifies the links during processing, so running HtmlFromRepoGenerator more than once on the same content will result in incorrect links. If you want to rerun HtmlFromRepoGenerator, either use HtmlFromRepoGenerator to create a new clone of the repo, or revert all local changes to your existing clone.
 
 ## Modifying the styling of the generated HTML files
 
-The tool generates the HTML files based on DocFx custom templates that you can customize for your own website. Depending on your requirements, you can modify the templates themselves, but in many cases it is more appropriate to tweak the stylesheets that the tool applies to the HTML files.
+The tool generates the HTML files based a set of predefined templates. In most cases you can modify the stylesheets in the ```d365F-O\styles``` folder to modify the appearance of your content.
 
-The stylesheets are output to the equivalent of the D:\D365-Operations\en-US\articles\d365F-O\styles folder. You can change the font, colors, and other styling before you deploy the files to your website.  
-
-For advanced scenarios, you can modify the templates by opening the source files for the HtmlFromRepoGenerator tool. The source files are included in *SourceCode* folder in the GitHub repo, and the templates are in the *SourceCode\HtmlFromRepoGenerator\HtmlFromRepoGenerator\HtmlFromRepoGenerator\Resources* subfolder. If you modify the templates, you must rebuild the tool. For more information, see [Introduction to DocFX Template System](https://dotnet.github.io/docfx/tutorial/intro_template.html).
+For advanced scenarios, you can modify the templates used by the HtmlFromRepoGenerator tool. The source files are included in the *SourceCode* folder in the GitHub repo, and the templates are in the *SourceCode\HtmlFromRepoGenerator\HtmlFromRepoGenerator\HtmlFromRepoGenerator\Resources* subfolder. If you modify the templates, you must rebuild HtmlFromRepoGenerator.exe. For more information, see [Introduction to DocFX Template System](https://dotnet.github.io/docfx/tutorial/intro_template.html).
 
 ## See also
 
 [Custom Help Toolkit](custom-help-toolkit.md)  
-[Custom Help Overview](custom-help-websites.md)  
+[Custom Help Overview](custom-help-overview.md)  
 [Deploying custom help to Azure](walkthrough-help-azure.md)  
 [Language and locale descriptors in across product and Help](language-locale.md)  
 [Convert Dynamics AX custom Help for use in Dynamics 365](migrate-dynamicsax2012.md)  

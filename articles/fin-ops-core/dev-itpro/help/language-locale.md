@@ -26,24 +26,25 @@ ms.dyn365.ops.version: Operations
 
 ---
 
-# Language and locale descriptors in across product and Help
+# Language and locale descriptors in product and Help
 
-The client used by Finance and Operations apps supports many languages and locales. To add custom Help content for one or more locales to the in-product Help pane, the following points must be true:
+The client used by Finance and Operations apps supports multiple languages and locales. To add custom Help content for one or more locales to the in-product Help pane, you must ensure:
 
-1. The value of the ```ms.locale``` property in each HTML file must match the locale of the content.  
+1. The value of the ```ms.locale``` property in each HTML file matches the locale of the content.  
 
     For example, the German (Germany) content must have a setting of `ms.locale: de-de`.
-2. The content must be in a folder on the custom help website with the same name as the locale.  
+
+2. The content is in a folder on the custom help website with the same name as the locale.  
 
     For example, the German (Germany) content must be in a folder with the name `de-de`.
 
-For more information, see [Custom Help Overview](custom-help-websites.md) and [Deploying custom help to Azure](walkthrough-help-azure.md).  
+For more information, see [Custom Help Overview](custom-help-overview.md) and [Deploying custom help to Azure](walkthrough-help-azure.md).  
 
 ## Languages and descriptors
 
-The following table maps the language names between the client and the GitHub repos with Microsoft's translated Help content.  
+The following table maps the language names between the client and the GitHub repos containing Microsoft's translated Help content.  
 
-|Name of the language in the client|Language/region name|Name of the GitHub repo|
+|Language/locale in the client|Language/region name|Name of the GitHub repo|
 |----------------------------------|--------------------|-----------------------|
 |ar|Arabic (Saudi Arabia)|[Dynamics-365-Operations.ar-sa](https://github.com/MicrosoftDocs/Dynamics-365-Operations.ar-sa)|
 |ar-ae|Arabic (United Arab Emirates)|[Dynamics-365-Operations.ar-ae](https://github.com/MicrosoftDocs/Dynamics-365-Operations.ar-sa)|
@@ -90,11 +91,11 @@ The following table maps the language names between the client and the GitHub re
 
 ## Languages, translations, and adaptations
 
-Microsoft's teams write their content in English (United States), which is then translated into a number of languages. The translated content is then made available in a public GitHub repo for each language.  
+Microsoft's teams create content in English (United States), which is then translated into a number of languages. The translated content is then made available in a public GitHub repo for each language.  
 
-Most translation services treat certain languages as variants of another language in order to recycle translations to the extent possible. For example, Danish and Norwegian are closely related languages but each is considered unique in itself. In contrast, German (Austria) and German (Germany) are considered so closely related that they are treated as variants of each other. Microsoft's translation process translates English source into German (Germany) and then runs an adaptation process for German (Austria). This is why you would use the files in the *Dynamics-365-Operations.de-de* GitHub repo as a starting point for both German (Germany) and German (Austria).  
+Translation services treat certain languages as variants of another language in order to maximize reuse translations to the greatest extent possible. For example, German for Austria and German for Germany are considered so closely related that they are treated as variants of each other. This is why you can use the files in the *Dynamics-365-Operations.de-de* GitHub repo as a starting point for both German (Germany) and German (Austria).
 
 ## See also
 
-[Custom Help Overview](custom-help-websites.md)  
+[Custom Help Overview](custom-help-overview.md)  
 [Running the Custom Help Toolkit](custom-help-toolkit.md)  

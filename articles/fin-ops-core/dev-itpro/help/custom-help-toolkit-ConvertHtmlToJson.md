@@ -28,19 +28,17 @@ ms.dyn365.ops.version: Operations
 
 ---
 
-# Custom Help Toolkit: The Convert HTML To JSON tool
+# Custom Help Toolkit: The ConvertHtmlToJson tool
 
 [!include [banner](../includes/banner.md)]
 
-The custom help toolkit includes the **ConvertHtmlToJson** tool that converts HTML files to JSON files that you add to a search indexing service that connects your Help content with the in-product Help pane.  
+The [Custom Help Toolkit](custom-help-toolkit.md) includes the **ConvertHtmlToJson** tool that converts HTML files to JSON files. The JSON files will be used by the search service so that the content can be indexed as the HTML files cannot be used for this purpose.  
 
 ## <a name="json"></a>Use the ConvertHtmlToJson tool to generate JSON files
 
-[The ConvertHtmlToJson tool](https://github.com/microsoft/dynamics365f-o-custom-help/tree/master/Help%20Pane%20extension) transforms HTML files into JSON files. You can then add the JSON files to the Azure Search service that will generate context-sensitive links to your Help content.  
+The ConvertHtmlToJson tool transforms HTML files into JSON files. You can then add the JSON files to the Azure Search service that will generate context-sensitive links to your Help content.  
 
 The JSON files include metadata that is used by the indexer to identify the form and language that the target Help page is intended for.  
-
-When you run the tool, you must specify the location of the HTML files with your Help content and the destination path. You can generate the HTML files with the [HTML From Repos Generator tool](custom-help-toolkit-HtmlFromRepoGenerator.md), and then run the **ConvertHtmlToJson.exe** tool.  
 
 Here is the syntax for ConvertHtmlToJson.exe:  
 
@@ -61,12 +59,12 @@ Here is an explanation of the parameters:
 The following example generates JSON files without verbose logging:
 
 ```
-ConvertHtmlToJson.exe --h D:\D365-Operations\d365F-O\supply-chain\de -j D:\D365-Operations\json\de
+ConvertHtmlToJson.exe --h D:\D365-Operations\d365F-O\supply-chain\de -j D:\D365-Operations\json\supply-chain\de
 ```
 
 ## See also
 
-[Custom Help Overview](custom-help-websites.md)  
+[Custom Help Overview](custom-help-overview.md)  
 [Deploying custom help to Azure](walkthrough-help-azure.md)  
 [Language and locale descriptors in across product and Help](language-locale.md)  
 [Convert Dynamics AX custom Help for use in Dynamics 365](migrate-dynamicsax2012.md)  
