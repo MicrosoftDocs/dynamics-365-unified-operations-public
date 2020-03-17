@@ -92,7 +92,7 @@ After a sales order is created, a user can update the commission settlement in t
 
 ![Commission settlement on the sales order](media/emea-ita-exil-commission-sales-order.png)
 
-By default, the value of the **Commission settlement** field is inherited from the **Accounts receivable parameters** page. For more information, see [Set up commission settlement by default](emea-ita-exil-commission-settlement.md#Set-up-commission-settlement-by-default).
+By default, the value of the **Commission settlement** field is inherited from the **Accounts receivable parameters** page. For more information, see [Set up the default commission settlement method](emea-ita-exil-commission-settlement.md#Set-up-commission-settlement-by-default).
 
 You can also preview the sales commission calculation from a sales order for either open or invoiced orders. On the **Sales order details** page, on the **General** tab, select **Related information** \> **Commission preview**.
 
