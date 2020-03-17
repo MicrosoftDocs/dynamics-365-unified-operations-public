@@ -1,7 +1,7 @@
 ---
 
 title: "Application lifecycle management"
-description: Describes the .
+description: Describes the benefits of making dual-write solution aware.
 author: sabinn-msft
 
 ms.technology: 
@@ -14,175 +14,193 @@ LocalizationGroup:
 
 # Application lifecycle management
 
-Making Dual Write Solution Aware enables basic ALM (Application lifecycle management) abilities such as transportation and backup/restore of Dual Write entity maps across environments. This also enables scenarios wherein you can get a solution from AppSource published by Microsoft or from an independent software vendor (ISV).
+[!include [banner](../../includes/banner.md)]
 
-## What is a Dual Write Solution?
+[!include [banner](../../includes/preview-banner.md)]
 
-A Dual Write Solution can contain one or more Dual Write entity maps that can be imported into your environment (via Solutions in PowerApps Maker portal) and exported (as a package) to other environments. You can import entity maps published by Microsoft or ISV from AppSource, modify these entity maps in your test environment, test it and when ready, export it to your prod environment. Additionally, you can also publish your solution to others via AppSource.
+Making dual-write solution aware enables basic application lifecycle management (ALM) abilities. These abilities include transportation and backup/restore of dual-write entity maps across environments. This also enables scenarios wherein you can get a solution from AppSource published by Microsoft or from an independent software vendor (ISV).
+
+## What is a dual-write solution?
+
+A dual-write solution can contain one or more dual-write entity maps. These maps can be imported into your environment (using Solutions in the PowerApps maker portal). Also, they can be exported as a package to other environments. You can import entity maps published by Microsoft or ISV from AppSource, modify these entity maps in your test environment, test it, and when ready, export it to your production environment. Additionally, you can also publish your solution to others through AppSource.
 
 >[!Note]
->There two types of solutions; There are managed and unmanaged solutions. 
+>There two types of solutions: managed and unmanaged solutions. 
 
-A managed solution cannot be modified and can be uninstalled after it is imported. When you import an unmanaged solution, you add all the components of that solution into your environment. When you import an unmanaged solution that contains components that you have already customized, your customizations will be overwritten by the customizations in the imported unmanaged solution. 
+A managed solution can't be modified and can be uninstalled after it's imported. When you import an unmanaged solution, you add all the components of that solution into your environment. When you import an unmanaged solution that contains components you have already customized, your customizations are overwritten by the customizations in the imported unmanaged solution. 
 
-For more details on Solutions, please review the following guidance: [https://docs.microsoft.com/powerapps/maker/common-data-service/solutions-overview](https://docs.microsoft.com/powerapps/maker/common-data-service/solutions-overview)
+For more details on solutions, see the [solutions overview](https://docs.microsoft.com/powerapps/maker/common-data-service/solutions-overview).
 
-## How-to install the dual-write core solution
+## How to install the dual-write core solution
 
-The dual-write core solution contains metadata for your entity maps and is required to be installed in your environments.
+The dual-write core solution contains metadata for your entity maps and must be installed in your environments.
 
-Steps to install the dual-write core solution:
+The following steps describe how to install the dual-write core solution.
 
-* In the maker PowerApps portal, navigate to Solutions (left hand pane), Open AppSource and search for the solution named dual-write core and follow the prompts to import the solution. 
+1. In the Power Apps maker portal, select **Solutions** in the left-hand pane.
+
+2. Select **Open AppSource** and search for the solution named dual-write core.
+
+3. Follow the prompts to import the solution. 
 
     ![Importing the dual write core solution](media/import-solution.png)
 
-## How-to install the dual-write entity maps solution
+## How to install the dual-write entity maps solution
 
-* Like the instructions of installing the dual-write core package, in the maker PowerApps portal, navigate to Solutions (left hand pane), open AppSource and search for the solution named Common Data Service Add-in for Finance and Operations package and follow the prompts to import the solution.
+The following steps describe how to install the dual-write entity maps solution.
 
-* On the dual-write UI in Dynamics 365 Finance and Operations click "Apply Solution" in the top menu of the dual write page to apply the entity maps that you just downloaded and installed. Once you apply the solution, you will see the default entity maps published
+1. In the Power Apps maker portal, select **Solutions** in the left-hand pane.
+
+2. Select **Open AppSource** and search for the solution named Common Data Service Add-in for Finance and Operations package.
+
+3. Follow the prompts to import the solution.
+
+4. In the dual-write UI in the Finance and Operations app, select **Apply Solution** in the top menu of the dual-write page. This selection applies the entity maps that you just downloaded and installed. Once you apply the solution, you'll see the default entity maps published.
 
     ![Publishing the dual write entity maps](media/default-entity-maps.png)
 
-That's it&mdash;you successfully imported and applied a Microsoft published Dual Write entity map solution to your environment
+That's it&mdash;you've successfully imported and applied a Microsoft published dual-write entity map solution to your environment.
 
-## Importing entity maps via a Dual Write solution and applying to your environment [New environments]
+## Importing entity maps through a dual-write solution and applying to your environment (new environments)
 
-In this section, we will learn how to import entity maps from AppSource and apply to your environment.
+In this section, you'll learn how to import entity maps from AppSource and apply them to your environment.
 
 ![Importing and applying entity maps](media/import-apply-entity-maps.png)
 	
 1. Import the dual-write core solution
 
-    * Start with a new Dual Write environment (new D365 FO and CDS environment)
+    1. Start with a new dual-write environment (a Finance and Operations app and Common Data Service environment).
 
-    * Follow the instructions per #2 above to import the dual-write core solution from AppSource from the Power Apps maker portal 
+    1. Follow the instructions in [How-to install the dual-write core solution](#how-to-install-the-dual-write-core-solution) to import the dual-write core solution from AppSource to the Power Apps maker portal.
 
-    * Once imported, verify that you see the dual-write core solution listed under Solutions
+    1. Once imported, verify that you can see the dual-write core solution listed under **Solutions**.
 
-2. Import the MS or ISV entity maps solution
+2. Import the ISV or Microsoft published entity map solution.
 
-    * Import the ISV or Microsoft published entity map solution&mdash;follow the instructions per #3 to download and install the entity maps from ISV or MS via AppSource form the Power Apps maker portal
+    1. Follow the instructions in [How to install the dual-write entity maps solution](#how-to-install-the-dual-write-entity-maps-solution) to download and install the entity maps from ISV or Microsoft using AppSource from the Power Apps maker portal.
 
-    * Once imported, verify that you see the entity map solution listed under Solutions
+    1. Once imported, verify that you see the entity map solution listed under **Solutions**.
 
-3. Apply the Dual Write entity map Solution in your D365 Finance and Operations environment
+3. Apply the dual-write entity map solution in your Finance and Operations app environment.
 
-    * Follow the instructions per #3 above to apply the solution you downloaded from the dual-write page by clicking on Apply Solutions
+    Follow the instructions in [How to install the dual-write entity maps solution](#how-to-install-the-dual-write-entity-maps-solution) to apply the solution you downloaded from the dual-write page by selecting **Apply Solutions**.
 
 ## Updating entity maps and exporting them as a solution to other environments
 
-In this section, you will learn how to export your customized entity maps as a solution, use it as a backup and move these artifacts across environments and/or publish to AppSource
+In this section, you'll learn how to export your customized entity maps as a solution, use it as a backup and move these artifacts across environments and/or publish to AppSource.
 
 ![Exporting customized maps as a solution](media/export-maps-solution.png)
 
-1. Customize your entity maps by modifying existing entity maps and adding new entity map
+### Customize your entity maps
 
-    * Start by customizing the mappings for the default entity map (that you just installed via a solution) by clicking on the Entity mappings tab. Similarly, you can add a new entity map by clicking on the Add Entity button. In both cases, when you save the entity map, you will be prompted to specify the Publisher and the Version number
+The following steps describe how to customize your entity maps by modifying existing entity maps and adding new a entity map.
 
-       Example: Adding a new "birthday" field to contacts-CDS Contacts V2 entity map and choosing default publisher
+1. In the Finance and Operations app, select the **Entity mappings** tab to   customize the mappings for the default entity map (that you just installed using a solution).
+  
+   Also, you can add a new entity map by selecting the **Add Entity** button. In both cases, when you save the entity map, you'll be prompted to specify the publisher and the version number.
 
-       ![Adding a new birthday field](media/add-new-birthday-field.png)
+   The following figure shows how to add a new "birthday" field to the contacts-CDS Contacts V2 entity map and choose the default publisher.
 
-       >[!Note]
-       >When you create a new solution, later in the steps below, with these modified entity maps, you will need to specify the same publisher
+   ![Adding a new birthday field](media/add-new-birthday-field.png)
 
-       Example: Adding a new entity map Address books
+   >[!Note]
+   >When you create a new solution, later in the steps below, with these modified entity maps, you'll need to specify the same publisher.
 
-       ![Adding a new Address books entity map](media/add-address-book.png)
+   The following figure shows how to add a new entity map called **Address books**.
 
-    * Confirm the entity maps you just modified and added. Make sure to enable and test them to ensure they are working as expected.
+   ![Adding a new Address books entity map](media/add-address-book.png)
 
-       ![Adding a new Address books entity map](media/confirm-new-entity-maps.png)
+2. Confirm the entity maps you just modified and added. Make sure to enable and test them to ensure they are working as expected.
 
-2. Create a new Dual Write Solution and add your components (customized entity maps)
+   ![Adding a new Address books entity map](media/confirm-new-entity-maps.png)
 
-    * Now that you have customized your mappings and added new mappings, next step is to create a new Dual Write Solution and add these entity maps to the solution
+### Create a new dual-write solution and add your components (customized entity maps)
 
-       Go to the PowerApps Maker portal and create a New solution under Solutions. Make sure to choose the same publisher as in prior steps
+Now that you've customized your mappings and added new mappings, the next step is to create a new dual-write solution and add these entity maps to the solution.
+
+   1. Go to the Power Apps maker portal and create a New solution under **Solutions**. Make sure to choose the same publisher as in prior steps.
 
        ![Creating a new solution and adding entity maps](media/add-map-to-solution.png)
 
-    * After you hit Create, the new solution will show up in the Solutions list page
+   2. Select **Create**, and the new solution will show up in the Solutions list page.
 
        ![Showing new solution in list page](media/show-new-solution.png)
 
-    * Adding your components (entity maps) to a Solution
-
-      Now that you have created your Dual Write solution, you want to add the customized entity maps that created in prior steps. To do this, click on the solution you just created and Add existing Dual Write entity map
+   3. Now that you have created your Dual Write solution, you want to add the customized entity maps that created in prior steps. To do this, select the solution you just created, select **Add existing**, and then select **Dual Write entity map**.
 
       ![Adding your customized entity maps](media/add-customized-maps.png)
 
-    * From the list, select the customized entity maps and Add it to the solution. The new solution you created MyCustomeEntityMaps should now have your customized entities
+   4. From the list, select the customized entity maps and add it to the solution. The new solution you created (MyCustomeEntityMaps) should now contain your customized entities.
 
       ![Showing customized entities in new solution](media/entities-new-solution.png)
 
-With this step, you just customized your entities and put them into a solution
+      With this step, you just customized your entities and put them into a solution.
 
-3. Exporting and publishing your solution
+### Exporting and publishing your solution
 
-    * Once you run the Solution checker and make sure there are no issues, Export the solution you just created and Publish the changes before hitting Next
+Once you run the Solution checker and make sure there are no issues, you can export the solution you just created and publish the changes.
 
-       ![Exporting and publishing the solution](media/update-version-number.png)
+1. In the list of solutions, select your solution, and then select **Export**.
 
-    * Update the version number and choose to export as a managed (recommended) or unmanaged solution
+2. Update the version number and choose to export as a managed (recommended) or unmanaged solution. Select **Export** to export your solution.
 
-       ![Updating the version number and exporting](media/export-and-publish.png)
+   ![Exporting and publishing the solution](media/update-version-number.png)
 
-    * After you hit export, the solution, with all its components is exported to a .zip file 
+3. Before you export, choose **Publish all changes** and **Check for issues**. Select **Next** to publish all your changes.
 
-       ![Exporting a solution to a zip file](media/components-to-zip.png)
+   ![Updating the version number and exporting](media/export-and-publish.png)
+
+    After you select **Next**, the solution, with all its components is exported to a .zip file 
+
+   ![Exporting a solution to a zip file](media/components-to-zip.png)
 	
-    That's it&mdash;you just customized your entities, added them to a new solution and created a solution file that can now be imported and applied to other environments (useful to move entity maps between test and prod environments). Similarly, you could create a backup of all your entity maps by adding them to a solution and exporting the solution as a package which can then be imported to restore the entity maps into to any environment.
+That's it&mdash;you've just customized your entities, added them to a new solution, and created a solution file that can now be imported and applied to other environments (useful to move entity maps between test and production environments). Similarly, you could create a backup of all your entity maps by adding them to a solution and exporting the solution as a package, which can then be imported to restore the entity maps into to any environment.
 
-    Follow the steps in this article to publish this package to AppSource: [https://docs.microsoft.com/powerapps/developer/common-data-service/publish-app-appsource](https://docs.microsoft.com/powerapps/developer/common-data-service/publish-app-appsource)
+Follow the steps in [Publish your app on AppSource](https://docs.microsoft.com/powerapps/developer/common-data-service/publish-app-appsource) to publish this package to AppSource.
 
-4. Test your exported solution package by importing and applying into another environment
+### Test your exported solution package
 
-    * First import the package to a new environment
+You can test your exported solution package by importing and applying it in another environment.
 
-      ![Importing the package to a new environment](media/import-package.png)
+1. First import the package to a new environment.
 
-    * Apply the solution you just imported on your environment 
+   ![Importing the package to a new environment](media/import-package.png)
 
-      ![Applying the solution on your environment](media/apply-solution-to-environment.png)
+2. Apply the solution you just imported on your environment.
 
-    * Check to see the two customized entity maps are listed on the Dual Write entity maps list page  
+    ![Applying the solution on your environment](media/apply-solution-to-environment.png)
+
+3. Check to see whether the two customized entity maps are listed on the dual-write entity maps list page. 
 
       ![Checking the two customized entity maps](media/entity-maps-in-list.png)
 
-    * Checking to make sure the customizations, from prior steps are preserved 
+4. Check to make sure the customizations from prior steps are preserved. 
 
       ![Checking that customizations are preserved](media/check-customizations.png)
 
-5. How to use the Entity map version
+### How to use the Entity map version
 
-There could be situations wherein a solution could contain different implementations of an entity map&mdash;Example: The contacts&mdash;CDS Contacts -V2 entity map version could have a different publisher or a newer version. Using the Entity Map version button, you could select which entity map to use for your environment
+There could be situations where a solution could contain different implementations of an entity map. For example, the contacts&mdash;CDS Contacts -V2 entity map version could have a different publisher or a newer version. Using the **Entity Map version** button, you could select which entity map to use for your environment.
 
 ![Selecting entity map to use in environment](media/select-entity-map.png)
  
-## How to upgrade existing Dual Write environments for Solution Awareness [Existing environments]
+## How to upgrade existing dual-write environments for solution awareness (existing environments)
 
-1. Import the dual-write core solution
+1. Import the dual-write core solution.
 
-    * Follow the instructions per #2 above to import the dual-write core solution from AppSource from the Power Apps maker portal 
+    Follow the instructions in [How to install the dual-write core solution](#how-to-install-the-dual-write-core-solution) to import the dual-write core solution from AppSource to the Power Apps maker portal. 
 
-    * Once imported, verify that you see the dual-write core solution listed under Solutions
+    Once imported, verify that you see the dual-write core solution listed under Solutions.
 
-2. Upgrade entity maps
+2. Upgrade entity maps.
 
-    * Once you whitelist your tenant, you would see a notification prompting you to upgrade
+    Once you whitelist your tenant, you'll see a notification prompting you to upgrade.
 
       ![Promting to upgrade your entity maps](media/upgrade-prompt.png)
 
-    * Click on Upgrade entity maps from top menu
+    Select **Upgrade entity maps** from top menu.
 
       ![Upgrading your entity maps](media/upgrade-entity-maps.png)
 
-    * You will receive a notification once the upgrade completes (takes a few minutes)
+    You'll receive a notification once the upgrade completes (which takes a few minutes).
 
-
-<!-- > if you fix the step above, this statement is probably not needed.[CY1]
-Personally I feel this should be done before adding app users to either system.[CY2]
-this step is probably not needed as it's a 1st party app. please verify it with @Anshuman Gupta (DATA INTEGRATION) [CY3] */ -->
