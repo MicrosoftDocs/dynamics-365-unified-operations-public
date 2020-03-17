@@ -5,7 +5,7 @@ title: Printer ER destination type
 description: This topic explains how you can configure a printer destination for each FOLDER or FILE component of an Electronic reporting (ER) format that is configured to generate outbound documents in either PDF or Microsoft Office formats (Excel\Word). 
 author: NickSelin
 manager: AnnBe
-ms.date: 01/16/2020
+ms.date: 03/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -70,10 +70,7 @@ The **Printer** destination is implemented only for cloud deployments.
 > [!NOTE]
 > The **Convert to PDF** option doesn't have to be turned on when you configure the **Printer** destination. The PDF conversion for printing purposes will occur even if the option is turned off.
 
-Still, you need to turn on the **Convert to PDF** option if you want to print out an outbound document in Excel format using a particular [page orientation](electronic-reporting-destinations.md#SelectPdfPageOrientation).
-
-1. Set the **Convert to PDF** field to **Yes** to make the **Page orientation** option available.
-2. in the **Page orientation** field, select the desired page oritation.
+If you want to print out an outbound document in Excel format using a particular [page orientation](electronic-reporting-destinations.md#SelectPdfPageOrientation), you must enable the **Convert to PDF** option. To do this, set the **Convert to PDF** field to **Yes** to make the **Page orientation** option available, and then in the **Page orientation** field, select the page orientation.
 
 ## Additional resources
 
