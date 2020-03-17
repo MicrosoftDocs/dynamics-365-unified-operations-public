@@ -61,7 +61,7 @@ After you've created an LCS project, you can provision Human Resources into an e
 2. Indicate whether this is a Sandbox or Production instance of Human Resource. Early preview features may be available in Sandbox instances to allow for early feedback and testing.
    
     > [!NOTE]
-    > The Talent instance type cannot be changed once set. Verify the correct instance type is selected before continuing.</br></br>
+    > The Human Resources instance type cannot be changed once set. Verify the correct instance type is selected before continuing.</br></br>
     > The Human Resources instance type is separate from the instance type of the Microsoft Power Apps environment, which you set in the Power Apps Admin center.
     
 3. Select the **Include Demo Data** option if you want your environment to include the same demo data set used in the Human Resources Test Drive experience. This is beneficial for long-term demo or training environments, and should never be used for production environments.  Note that you must choose this option upon initial deployment. You cannot update an existing deployment later.
@@ -79,7 +79,7 @@ After you've created an LCS project, you can provision Human Resources into an e
     > [!NOTE]
     > If you haven't yet signed off on the final requirements, you can deploy a test instance of Human Resources in the project. You can then use this instance to test your solution until you sign off. If you use your new environment for testing, you must repeat this procedure to create a production environment.
 
-    > Because only two LCS environments are allowed as part of the Human Resources subscription, you might consider leveraging a free 60-day [Human Resources trial environment](https://dynamics.microsoft.com/talent/overview/). Although a trial environment is owned by the user who requested it, other users can be invited through the system administration experience for Human Resources. Trial environments contain fictitious data that can be used to explore the program in a safe manner. They aren't intended to be used as production environments. Note that when a trial environment expires after 60 days, all the data that's in it is deleted and can't be recovered. You can sign up for a new trial environment after the existing environment expires.
+    > You might consider leveraging a free 60-day [Human Resources trial environment](https://dynamics.microsoft.com/talent/overview/). Although a trial environment is owned by the user who requested it, other users can be invited through the system administration experience for Human Resources. Trial environments contain fictitious data that can be used to explore the program in a safe manner. They aren't intended to be used as production environments. Note that when a trial environment expires after 60 days, all the data that's in it is deleted and can't be recovered. You can sign up for a new trial environment after the existing environment expires.
 
 ## Select a Power Apps environment
 
@@ -102,7 +102,10 @@ Use the following guidance when determining which Power Apps environment to depl
     - **Trial environments** - These environments are created with an expiration date and will expire after that time, causing your environment and any Human Resources instances contained within to be removed automatically.
    
     - **Unsupported regions** - Currently Human Resources is only supported in the following regions: United States, Europe, United Kingdom, Australia, Canada and Asia.
-  
+
+    > [!NOTE]
+    > The Human Resources environment is provisioned in the same region in which the Power Apps environment is provisioned. Migrating a Human Resources environment to another region is not supported.
+
 6. After you have determined the correct environment to use, you can continue with the provisioning process. 
  
 ## Grant access to the environment
