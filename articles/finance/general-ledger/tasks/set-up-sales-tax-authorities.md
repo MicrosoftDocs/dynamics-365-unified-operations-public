@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Set up sales tax authorities
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Sales tax authorities are entities to which collected sales tax needs to be reported and paid. You can pay sales taxes to the authority directly or through a vendor account that you create for the sales tax authority. If you do this, the company can use its usual payment routines to pay the sales tax authority on time. If you do not set up the tax authority as a vendor, someone must prepare a manual payment to the tax authority on the appropriate due date. This task uses the USMF demo company.
 
