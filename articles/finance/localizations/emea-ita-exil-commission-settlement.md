@@ -5,7 +5,7 @@ title: Commission settlement on payments
 description: This topic provides information about commission settlement on payments.
 author: ilkond
 manager: AnnBe
-ms.date: 03/09/2020
+ms.date: 03/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -74,11 +74,11 @@ Consider the following example:
 
 The following payments are made:
 
-1. €50 (5 percent of the total amount of the invoice): Because commissions are below the lower limit of 10 percent, no accrual occurs.
-2. €100 (10 percent of the total amount of the invoice): The invoice is settled at 15 percent. Therefore, commissions are accrued at that percentage.
-3. €500 (50 percent of the total amount of the invoice): The invoice is settled at 65 percent. Commissions are also accrued at 65 percent.
-4. €200 (20 percent of the total amount of the invoice): The invoice is settled at 85 percent. Because this figure exceeds the upper limit, commissions become fully settled at 100 percent.
-5. Further payments don't change the amount that is accrued, because that amount has already reached the upper limit. However, accrual transactions are still created.
+- €50 (5 percent of the total amount of the invoice): Because commissions are below the lower limit of 10 percent, no accrual occurs.
+- €100 (10 percent of the total amount of the invoice): The invoice is settled at 15 percent. Therefore, commissions are accrued at that percentage.
+- €500 (50 percent of the total amount of the invoice): The invoice is settled at 65 percent. Commissions are also accrued at 65 percent.
+- €200 (20 percent of the total amount of the invoice): The invoice is settled at 85 percent. Because this figure exceeds the upper limit, commissions become fully settled at 100 percent.
+- Further payments don't change the amount that is accrued, because that amount has already reached the upper limit. However, accrual transactions are still created.
 
 Another setup can be added to the individual agent who belongs to a specific group. In commission calculations, the setup on agents (employees) has higher priority than the setup on sales.
 
