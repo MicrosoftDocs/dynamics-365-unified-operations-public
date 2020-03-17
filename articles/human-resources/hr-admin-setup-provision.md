@@ -58,7 +58,7 @@ After you've created an LCS project, you can provision Human Resources into an e
 
 1. In your LCS project, select the **Human Resources App Management** tile.
 
-2. Indicate whether this is a Sandbox or Production instance of Human Resource. Early preview features may be available in Sandbox instances to allow for early feedback and testing.
+2. Indicate whether this is a Sandbox or Production instance of Human Resources. Early preview features may be available in Sandbox instances to allow for early feedback and testing.
    
     > [!NOTE]
     > The Human Resources instance type cannot be changed once set. Verify the correct instance type is selected before continuing.</br></br>
