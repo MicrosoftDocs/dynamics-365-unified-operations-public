@@ -5,7 +5,7 @@ title: Help system
 description: Get an overview of the Help system for the Finance and Operations apps.
 author: edupont04
 manager: AnnBe
-ms.date: 02/26/2020
+ms.date: 03/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -154,7 +154,7 @@ Translated Task guides are released in libraries with "All languages" in the tit
 You can create help for your users by creating custom Task guides, or connect your own website to the Help pane. For details, see:
 
 - [Task recorder resource](../../dev-itpro/user-interface/task-recorder.md)  
-- [Custom Help Overview](../../dev-itpro/help/custom-help-websites.md)  
+- [Custom Help Overview](../../dev-itpro/help/custom-help-overview.md)  
 
 ## Additional resources
 

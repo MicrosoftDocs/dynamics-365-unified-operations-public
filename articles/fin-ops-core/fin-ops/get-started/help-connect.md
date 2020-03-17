@@ -5,7 +5,7 @@ title: Connect the Help system
 description: Learn about the components of the Help system for certain Dynamics 365 apps. Get an overview of how to connect them and a summary of how to create custom help. 
 author: margoc
 manager: AnnBe
-ms.date: 02/26/2020
+ms.date: 03/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -101,7 +101,7 @@ If you want to collaborate with Microsoft on tools and processes for customizing
 ## See also
 
 [Help overview](help-overview.md)  
-[Custom Help Overview](../../dev-itpro/help/custom-help-websites.md)  
+[Custom Help Overview](../../dev-itpro/help/custom-help-overview.md)  
 [Task recorder overview](../../dev-itpro/user-interface/task-recorder.md)  
 [How to create a task recording to use as documentation or training](../../dev-itpro/user-interface/task-recorder-training-docs.md)  
 [Custom Help GitHub repository](https://github.com/microsoft/dynamics356f-o-custom-help)  
