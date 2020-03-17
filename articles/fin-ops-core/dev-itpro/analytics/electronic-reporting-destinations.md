@@ -5,7 +5,7 @@ title: Electronic reporting (ER) destinations
 description: This topic provides information about the management of Electronic reporting (ER) destinations, the types of destinations that are supported, and security considerations.
 author: nselin
 manager: AnnBe
-ms.date: 02/07/2020
+ms.date: 03/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -165,18 +165,16 @@ To turn on PDF conversion for a file destination, select the **Convert to PDF** 
 
 ### <a name="SelectPdfPageOrientation">Select page orientation for PDF conversion</a>
 
-You can specify the desired page orientation for PDF conversion of an output in Excel format while you configure an ER destintion. When you turned on the **Convert to PDF** check box to enable PDF conversion for a file destination producing an output in Excel format, the **Page orientation** option becomes available in the **PDF conversion settings** Fast tab. Select the desired page oritation in the **Page orientation** field.
+When you generate an ER configuration in Excel and you want to covert it to PDF, you can specify the page orientation of the PDF. When you select the **Convert to PDF** check box to enable PDF conversion for a file destination that produces an output file in Excel format, the **Page orientation** option becomes available on the **PDF conversion settings** FastTab. In the **Page orientation** field, select the preferred orientation.
 
 [![Selecting page orientation for PDF conversion](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
 
 > [!NOTE]
-> To use page orientation selection, you must install Microsoft Dynamics 365 Finance version 10.0.10 (May 2020) or onward.
-
-> [!NOTE]
-> The selected page orientation is applied for conversion of all worksheets of an output in Excel format.
-
-> [!NOTE]
-> The page orientation for conversion of an output in Word format to PDF is taken from the convertible document.
+> To have the option to select the PDF page orientation, you must install Microsoft Dynamics 365 Finance version 10.0.10 (May 2020) or onward.
+>
+> The selected page orientation is applied to all ER configurations that are generated in Excel and then converted to PDF.
+>
+> The page orientation for a converted PDF that is created from an ER configuration in Word, is taken from the Word document.
 
 ## Security considerations
 
