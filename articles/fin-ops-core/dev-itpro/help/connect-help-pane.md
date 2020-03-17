@@ -2,10 +2,10 @@
 # required metadata
 
 title: Connect a custom Help website to the Help pane
-description: This topic describes how you can extend the in-product Help pane with custom help. 
+description: This article describes how you can extend the in-product Help pane with custom help. 
 author: edupont04
 manager: AnnBe
-ms.date: 02/24/2020
+ms.date: 03/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Operations
 
 [!include [banner](../includes/banner.md)]
 
-If you plan to deliver custom help content for a Finance and Operations solution, you can extend the Help pane to consume this content. It is a one-time configuration that requires the Finance and Operations development environment in Visual Studio. The result is that users can choose between tabs for Task guides, Microsoft's Help content, and your Help content.
+If you deliver custom help content for a Finance and Operations solution, you can extend the Help pane to consume this content. It is a one-time configuration that requires the Finance and Operations development environment in Visual Studio. The result is that users can choose between tabs for Task guides, Microsoft's Help content, and your Help content.
 
 Connecting your [custom help](custom-help-overview.md#custom-help-sites) with the in-product Help pane involves the following steps:
 
@@ -57,7 +57,7 @@ The **Help Pane extension** folder of the [Custom Help Toolkit](custom-help-tool
 4. In the **HelppaneMacro** file, update the values for the following parameters:
 
     - [WebAppName]: Specify the name of the web bpp that you created in [Create a web app](walkthrough-help-azure.md#webapp), such as *MyCustomHelpWebApp*.
-    - Admin key value: Specify the Azure Cognitive Search service admin key. You can find the key in **Access keys** under **Settings** in the left blade of the search service in the [Azure portal](https://portal.azure.com/).
+    - Admin key value: Specify the Azure Cognitive Search service admin key. Find the key in **Access keys** under **Settings** on the left of the search service in the [Azure portal](https://portal.azure.com/).
     - [SearchServiceName]: Specify the name of the search service that you created in [Create a search service](walkthrough-help-azure.md#searchservice), such as *mycustomhelpsearch*.
 
     The following snippet illustrates the content of the **HelppaneMacro** file:
@@ -124,15 +124,15 @@ Here are some sample configurations:
 In this configuration, you only have help content for English (US). Clients set to any locale will display the help content in English (US).
 
 ```
-<add language=“en-US” ulitmateindex="indexenus"/>
+<add language="en-US" ulitmateindex="indexenus"/>
 ```
 
 #### Help content for multiple locales
 
-In this configuration, you have help content for French, German and English (US). Clients set to `de` will display content in German, clients set to `fr` will display content in French, and clients set to any other locale will display the help content in English (US).
+In this configuration, you have help content for French, German, and English (US). Clients set to `de` will display content in German, clients set to `fr` will display content in French, and clients set to any other locale will display the help content in English (US).
 
 ```
-<add language=“en-US” ulitmateindex="indexenus"/>
+<add language="en-US" ulitmateindex="indexenus"/>
 <add language="fr" parentindex="indexfr"/>
 <add language="de" parentindex="indexde"/>
 ```
@@ -141,10 +141,10 @@ If clients are set to `de` or `fr` and no results are found in the German and Fr
 
 #### Help content with parent locales
 
-In this configuration, you have help content for German (Austria), German, and English (US). This might be the case if you have a number of topics specifically for features for Austria, but otherwise topics in German can be used.
+In this configuration, you have help content for German (Austria), German, and English (US). For example, you have a number of articles specifically for features for Austria, but otherwise articles in German can be used.
 
 ```
-<add language=“en-US” ulitmateindex="indexenus"/>
+<add language="en-US" ulitmateindex="indexenus"/>
 <add language="de" parentindex="indexde"/>
 <add language="de-AT" parentlanguage="de" index="indexdeat"/>
 ```

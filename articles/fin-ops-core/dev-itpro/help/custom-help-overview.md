@@ -2,10 +2,10 @@
 # required metadata
 
 title: Deploy your custom Help
-description: Learn how to extend the Microsoft Help to reflect your solution and then connect your content to the Help pane in Finance and Operations apps. 
+description: Learn how to extend the Microsoft Help to reflect your solution and then connect your content to the Help pane. 
 author: edupont04
 manager: AnnBe
-ms.date: 03/04/2020
+ms.date: 03/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,12 +34,12 @@ ms.dyn365.ops.version: Operations
 
 [!include [banner](../includes/banner.md)]
 
-Finance and Operations apps are often customized and extended to fit an organization's needs. You can connect solution-specific and customer-specific help content with the [Help pane](../../fin-ops/get-started/help-overview.md#in-product-help) in the Finance and Operations client if your solution is based on Dynamics 365 Finance, Supply Chain Management, or Commerce. This topic describes the main steps and decision points.  
+Finance and Operations apps are often customized and extended to fit an organization's needs. You can connect solution-specific and customer-specific help content with the [Help pane](../../fin-ops/get-started/help-overview.md#in-product-help) in the Finance and Operations client if your solution is based on Dynamics 365 Finance, Supply Chain Management, or Commerce. This article describes the main steps and decision points.  
 
 > [!NOTE]
 > Users of Finance and Operations apps can create [custom task guides](/../../fin-ops/get-started/help-connect.md#create-custom-help-with-task-guides) to supplement conceptual content that describes the functionality of their solution. These conceptual descriptions are also referred to as help and can be provided by Microsoft, partners, and the organization itself. For more information, see [Help system](../../fin-ops/get-started/help-overview.md).
 
-The following illustation and this section in general uses the term "help" for conceptual descriptions with or without how-to guides, and the term "task guides" for in-product task guides.  
+The following illustration and this section in general uses the term "help" for conceptual descriptions with or without how-to guides. The term "task guides" describes in-product task guides.  
 
 :::image type="content" source="../../fin-ops/get-started/media/help-architecture.png" alt-text="Diagram showing a customized help solution and the Help pane.":::
 
@@ -61,7 +61,7 @@ Custom help content will typically originate from one of three sources.
 
 ## Process
 
-The end-to-end process depends on the actual customer's solution and the users' expectations. A typical end-to-end process will involve:
+The end-to-end process depends on the actual customer's solution and the users' expectations. A typical end-to-end process will involve the following:
 
 1. Creating the custom help content.
 2. Publishing the content on a website.
@@ -90,7 +90,7 @@ In order for the product to connect to your Help content, you must customize the
 
 - Your content is available on a website
 
-    You can deploy your content to an existing website, or you can set up a dedicated website to host your content. The website can be private or public, but we recommend that users do not have to log in to access your content.
+    You can deploy your content to an existing website, or you can set up a dedicated website to host your content. The website can be private or public, but we recommend that users do not have to sign in to access your content.
 
 - Your content is indexed by a search service
 
@@ -101,7 +101,7 @@ In order for the product to connect to your Help content, you must customize the
     |title | The value is used for full-text search from the Help pane. |
     |description  | The value is used for full-text search from the Help pane.  |
     |ms.search.form | The value contains the Application Object Tree (AOT) name of a form and is used for context-sensitive search from the Help pane. |
-    |ms.search.scope|The value determines which client the Help topic is shown in. You can specify one or more values. Values includes Core, Operations, Retail, and Human Resources.|
+    |ms.search.scope|The value determines which client the Help article is shown in. You can specify one or more values. Values includes Core, Operations, Retail, and Human Resources.|
     |ms.locale |This value indicates the language of the topic. This is mapped against the current browser locale when the Help pane searches the content. the target custom help website can configure language fallback. For more information, see [Language and locale descriptors in across product and Help](language-locale.md). |
 
 In [Deploying custom help to Azure](walkthrough-help-azure.md), we describe an approach for hosting content on Azure, including how you can set up a search service that indexes your content so that it can be found by the in-product Help pane. If you do not have an [Azure subscription](/azure/guides/developer/azure-developer-guide#understanding-accounts-subscriptions-and-billing), create an account before you begin. You can start with a free account for 12 months. For more information, see [Create your Azure free account today](https://azure.microsoft.com/free/). 

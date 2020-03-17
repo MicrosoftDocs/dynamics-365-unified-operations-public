@@ -476,7 +476,7 @@
           href: help/connect-help-pane.md
         - name: Custom help toolkit
           items:
-            - name: Custom help toolkit overview
+            - name: Overview
               href: help/custom-help-toolkit.md
             - name: The HTML From Repo Generator tool
               href: help/custom-help-toolkit-HtmlFromRepoGenerator.md
