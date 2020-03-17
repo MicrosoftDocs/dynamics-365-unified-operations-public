@@ -39,7 +39,7 @@ To complete these steps, you must first complete the steps in the procedure, "ER
 
 1. Go to Organization administration > Workspaces > Electronic reporting.
     * Verify that the configuration provider for sample company, Litware, Inc. is available and marked as active. If you don't see this configuration provider, you must first complete the steps in the procedure, "Create a configuration provider and mark it as active".   
-    * Uou are designing a process for parsing incoming bank statements for an application data update. You will receive the incoming bank statements as TXT files that contain IBAN codes. As part of the bank statement import process, you need to validate the correctness of this IBAN codes using the logic that is already available.   
+    * You are designing a process for parsing incoming bank statements for an application data update. You will receive the incoming bank statements as TXT files that contain IBAN codes. As part of the bank statement import process, you need to validate the correctness of this IBAN codes using the logic that is already available.   
 
 ## Import a new ER model configuration
 1. In the list, find and select the desired record.
