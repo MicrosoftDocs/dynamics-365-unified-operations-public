@@ -41,7 +41,7 @@ Before you can use the functionality for commission settlement on payments, the 
 - The primary address of the legal entity must be in Italy.
 - The **Commission settlement on payments** feature must be turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
 
-## Set up the default commission settlement method
+## <a name="default-commission-settlement-period">Set up the default commission settlement method
 
 1. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
 2. On the **Accounts receivable parameters** page, on the **Settlement** tab, on the **Other** FastTab, in the **Commission settlement** field, select the default commission settlement method that is used when a sales order is created:
@@ -92,7 +92,7 @@ After a sales order is created, a user can update the commission settlement in t
 
 ![Commission settlement on the sales order](media/emea-ita-exil-commission-sales-order.png)
 
-By default, the value of the **Commission settlement** field is inherited from the **Accounts receivable parameters** page. For more information, see [Set up the default commission settlement method](emea-ita-exil-commission-settlement.md#Set-up-commission-settlement-by-default).
+By default, the value of the **Commission settlement** field is inherited from the **Accounts receivable parameters** page. For more information, see [Set up the default commission settlement method](#default-commission-settlement-period).
 
 You can also preview the sales commission calculation from a sales order for either open or invoiced orders. On the **Sales order details** page, on the **General** tab, select **Related information** \> **Commission preview**.
 
