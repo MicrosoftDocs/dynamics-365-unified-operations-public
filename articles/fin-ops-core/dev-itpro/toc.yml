@@ -208,7 +208,7 @@
                   href: data-entities/dual-write/initial-sync.md
                 - name: Troubleshooting data integration
                   href: data-entities/dual-write/dual-write-troubleshooting.md
-          - name: Integration with Power Platform Data Integrator
+          - name: Integration with Power Platform
             items:
             - name: Configure a prospect to cash scenario
               items:
