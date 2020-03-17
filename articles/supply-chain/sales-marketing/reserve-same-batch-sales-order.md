@@ -48,6 +48,6 @@ When you reserve inventory for a product on a sales order line that is set up fo
 -   The batch has expired, based on the expiration date and any applicable customer sellable days. The item can still be considered for reservation if the item model group for the item is First Expiry First Out (FEFO) date–controlled, and if the best-before date is selected as the pick criterion.
 -   The batch doesn't have enough shelf-life days remaining, based on the expiration date and best-before date, plus any customer sellable days.
 
-
-
-
+For items associated with a storage dimension group with 'Use warehouse management processes' the reservation of specific batch numbers can be handled by using a **Reservation hierarchy** having the batch number inventory dimension defined above the location dimension. The **Batch reservation** form for sales and transfer order lines does here as well support multiple line selection reservation based on the avaliable batch numbers.
+More information can be found for setup with a reservation hierachy having the batch number dimension below the location:
+https://docs.microsoft.com/en-us/dynamics365/supply-chain/warehousing/flexible-warehouse-level-dimension-reservation
