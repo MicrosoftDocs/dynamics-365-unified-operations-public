@@ -145,7 +145,7 @@ Before you enable dual-write, follow the steps below to ensure you meet the mini
 
    The dual-write plugins should be enabled as part of the dual-write core solution installation. However, if this check fails, follow the steps below to enable dual-write plugins.
 
-   >[!Note]:
+   >[!Note]
    >The steps below are typically not required, and plugins should be available and enabled as part of installing the dual-write core solution.
 
    1. Download the [Plug-in Registration Tool](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.PluginRegistrationTool). 
