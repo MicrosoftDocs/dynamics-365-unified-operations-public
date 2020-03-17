@@ -28,13 +28,13 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Access application metadata by using connected applications
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 The following steps explain how a Regulatory configuration service (RCS) user in the System Administrator or Electronic Reporting Developer role can design a new Electronic reporting (ER) model mapping by using metadata in Finance and Operations. Application metadata will be accessed online by using the RCS connected application. Sample ER model mapping will be configured to access foreign trade transactions. To complete these steps, in RCS you must first complete the steps in the topic, [Create configuration providers and mark them as active](er-configuration-provider-mark-it-active-2016-11.md). If you have not completed the steps in the topic, [Access application metadata by using ER configuration](access-application-metadata-er-configuration.md), go to the [Electronic reporting examples page](https://go.microsoft.com/fwlink/?linkid=862266) to download and save the following ER configurations: Foreign trade metadata.xml; Foreign trade model.xml; Foreign trade mapping.xml, and then complete the steps in the procedure.
 
 ## Prerequisites
 1. Go to **All workspaces** > **Electronic reporting**. 
-2. Make sure that the configuration provider for the sample company, Litware, Inc., is available and marked as **Active**. If you don’t see this configuration provider, complete the steps in the procedure [Create configuration providers and mark them as active](er-configuration-provider-mark-it-active-2016-11.md). 
+2. Make sure that the configuration provider for the sample company, Litware, Inc., is available and marked as **Active**. If you don't see this configuration provider, complete the steps in the procedure [Create configuration providers and mark them as active](er-configuration-provider-mark-it-active-2016-11.md). 
 
 ## Get required ER configurations
 1. Click **Reporting configurations**. 
@@ -57,11 +57,11 @@ The following steps explain how a Regulatory configuration service (RCS) user in
 2. Close the page. 
 3. Go to **All workspaces** > **Electronic reporting**. 
 4. Click **Connected applications**. 
-5. Make sure that the configured application is Azura based and accessible for the current RCS user. It is also required that the current RCS user has access to the selected application and has been registered as a user of this application playing a role giving him privileges to access application’s metadata. 
+5. Make sure that the configured application is Azura based and accessible for the current RCS user. It is also required that the current RCS user has access to the selected application and has been registered as a user of this application playing a role giving him privileges to access application's metadata. 
 6. Click **New**. 
 7. In the **Name** field, type 'MyConnectedApp'. 
 8. In the **Application** field, type 'https:// mycompany.operations.dynamics.com'. 
-9. In the **Tenant** field, type ‘mycompany.onmicrosoft.com’. 
+9. In the **Tenant** field, type 'mycompany.onmicrosoft.com'. 
 10. Click **Save**. 
 11. When you check connection to configured application, on the **Connect to remote application** page click **Click here to connect to selected remote application** link. 
 12. Click **Check connection**. 
