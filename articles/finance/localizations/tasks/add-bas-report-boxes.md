@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Add BAS report boxes and generate the Australia Business Activity Statement BAS
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure walks you through adding BAS report boxes and generating the BAS. Before you can complete this procedure, you must define the additional BAS reconciliation account,  create BAS PAYG reason codes, create BAS fringe benefit reason codes, create sales tax (reporting code) and withholding tax groups with required purchase and sales transactions.
 

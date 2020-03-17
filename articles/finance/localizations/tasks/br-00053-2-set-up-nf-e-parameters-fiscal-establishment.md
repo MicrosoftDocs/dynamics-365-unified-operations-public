@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Set up NF-e parameters for a fiscal establishment (Brazil)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Use the following procedure to set up the parameters for a Nota Fiscal eletrônica (NF-e) for a fiscal establishment. This task uses the BRMF demo company.
 
