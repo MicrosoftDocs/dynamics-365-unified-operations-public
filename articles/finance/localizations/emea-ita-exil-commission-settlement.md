@@ -44,7 +44,7 @@ Before you can use the functionality for commission settlement on payments, the 
 ## Set up the default commission settlement method
 
 1. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
-2. On the **Accounts receivable parameters** page, on the **Settlement** tab, on the **Other** FastTab, in the **Commission settlement** field, select the default commission settlement method that should be used when a sales order is created:
+2. On the **Accounts receivable parameters** page, on the **Settlement** tab, on the **Other** FastTab, in the **Commission settlement** field, select the default commission settlement method that could be used when a sales order is created:
 
     - **On invoice** – Commissions are charged during the invoice process.
     - **On payment** – Commissions are charged during the payment process.
