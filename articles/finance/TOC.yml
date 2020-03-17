@@ -1992,8 +1992,12 @@
           href: localizations/emea-ita-exil-goods-for-free.md
         - name: Improved inquiry on debit or credit settlements
           href: localizations/emea-ita-exil-improved-inquiry-settlement.md
+        - name: Commission settlement on payments
+          href: localizations/emea-ita-exil-commission-settlement.md
         - name: General ledger simulations (Italy)
           href: localizations/emea-ita-exil-general-ledger-simulations.md
+        - name: Configurable posting profiles for banks and remittance types
+          href: localizations/emea-ita-exil-bank-remittance.md
         - name: Unique certification
           href: localizations/emea-ita-exil-unique-certification.md
       - name: Japan
