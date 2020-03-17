@@ -153,7 +153,7 @@ The PDF conversion option can be turned on only for file components that are use
 >
 > The produced PDF is limited to a maximum number of 300 pages.
 >
-> At ths time, only landscape page orientation is supported in the PDF document that is produced from an Excel output.
+> At this time, only landscape page orientation is supported in the PDF document that is produced from an Excel output.
 >
 > Only the common system fonts of the Window operating system are used for the conversion of an output that contains no embedded fonts.
 
@@ -163,18 +163,18 @@ To turn on PDF conversion for a file destination, select the **Convert to PDF** 
 
 [![Turning on PDF conversion for a file destination](./media/ER_Destinations-TurnOnPDFConversion.png)](./media/ER_Destinations-TurnOnPDFConversion.png)
 
-### <a name="SelectPdfPageOrientation">Select page orientation for PDF conversion</a>
+### <a name="SelectPdfPageOrientation">Select a page orientation for PDF conversion</a>
 
-When you generate an ER configuration in Excel and you want to covert it to PDF, you can specify the page orientation of the PDF. When you select the **Convert to PDF** check box to enable PDF conversion for a file destination that produces an output file in Excel format, the **Page orientation** option becomes available on the **PDF conversion settings** FastTab. In the **Page orientation** field, select the preferred orientation.
+If you generate an ER configuration in Excel format and want to convert it to PDF format, you can specify the page orientation of the PDF. When you select the **Convert to PDF** check box to turn on PDF conversion for a file destination that produces an output file in Excel format, the **Page orientation** field becomes available on the **PDF conversion settings** FastTab. In the **Page orientation** field, select the preferred orientation.
 
-[![Selecting page orientation for PDF conversion](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
+[![Selecting a page orientation for PDF conversion](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
 
 > [!NOTE]
-> To have the option to select the PDF page orientation, you must install Microsoft Dynamics 365 Finance version 10.0.10 (May 2020) or onward.
+> To have the option to select the PDF page orientation, you must install Microsoft Dynamics 365 Finance version 10.0.10 (May 2020) or later.
 >
-> The selected page orientation is applied to all ER configurations that are generated in Excel and then converted to PDF.
+> The selected page orientation is applied to all ER configurations that are generated in Excel format and then converted to PDF format.
 >
-> The page orientation for a converted PDF that is created from an ER configuration in Word, is taken from the Word document.
+> If a converted PDF is created from an ER configuration in Word format, the page orientation of the PDF is taken from the Word document.
 
 ## Security considerations
 
