@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Transfer a fixed asset
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This task guide will transfer the financial information for a fixed asset book from one financial dimension set to a new financial dimension set.  It uses the Accountant role and demo data for the USMF legal entity.
 
