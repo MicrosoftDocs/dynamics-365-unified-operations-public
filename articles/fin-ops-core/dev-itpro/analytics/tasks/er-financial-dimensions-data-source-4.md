@@ -28,11 +28,11 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # ER Use financial dimensions as a data source (Part 4 - Run the report)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) model to use financial dimensions as a data source for ER reports. These steps can be performed in the DEMF company.
 
-To complete these steps, you must first complete the steps in the “ER Use financial dimensions as a data source (Part 3: Design the report)” procedure. You must also configure default document types on the Electronic reporting parameters page. Default document types are also set when you download and import any ER configuration. 
+To complete these steps, you must first complete the steps in the "ER Use financial dimensions as a data source (Part 3: Design the report)" procedure. You must also configure default document types on the Electronic reporting parameters page. Default document types are also set when you download and import any ER configuration. 
 
 
 ## Run report

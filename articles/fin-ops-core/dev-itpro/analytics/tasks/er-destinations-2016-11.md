@@ -28,9 +28,9 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # ER Configure destinations
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-This procedure demonstrates how to set up and use different destinations for Electronic reporting (ER) output components, such as a folder or a file. The demo data company used to create this procedure is DEMF. Germany is the country\region of the legal entity’s primary address, however you can use any legal entity for this procedure. 
+This procedure demonstrates how to set up and use different destinations for Electronic reporting (ER) output components, such as a folder or a file. The demo data company used to create this procedure is DEMF. Germany is the country\region of the legal entity's primary address, however you can use any legal entity for this procedure. 
 
 The format used in this example is ISO20022 Credit transfer, but you can use any format that you have already imported. Note, this procedure is an example of a single file and a single destination setup. More information about Electronic reporting destination management can be found in the Dynamics 365 Finance Help.
 

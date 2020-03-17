@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Generate reports in Office format that have embedded images
-description: The following steps explain how a user playing either ‘System administrator’ or ‘Electronic reporting developer’ role can design Electronic reporting (ER) configurations to generate electronic documents in MS office formats (Excel and Word) containing embedded images. 
+description: The following steps explain how a user playing either 'System administrator' or 'Electronic reporting developer' role can design Electronic reporting (ER) configurations to generate electronic documents in MS office formats (Excel and Word) containing embedded images. 
 author: NickSelin
 manager: AnnBe 
 ms.date: 06/13/2017
@@ -28,11 +28,11 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Generate reports in Office format that have embedded images
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-The following steps explain how a user playing either ‘System administrator’ or ‘Electronic reporting developer’ role can design Electronic reporting (ER) configurations to generate electronic documents in MS office formats (Excel and Word) containing embedded images.
+The following steps explain how a user playing either 'System administrator' or 'Electronic reporting developer' role can design Electronic reporting (ER) configurations to generate electronic documents in MS office formats (Excel and Word) containing embedded images.
 
-In this example, you will use created ER configurations for sample company, ‘Litware, Inc.’.  To complete these steps, you must first complete the steps in the “ER Make reports in MS Office formats with embedded images (Part 2: Review configurations)” task guide. These steps can be performed in ‘USMF’ company.
+In this example, you will use created ER configurations for sample company, 'Litware, Inc.'.  To complete these steps, you must first complete the steps in the "ER Make reports in MS Office formats with embedded images (Part 2: Review configurations)" task guide. These steps can be performed in 'USMF' company.
 
 
 ## Run format with initial model mapping
@@ -44,7 +44,7 @@ In this example, you will use created ER configurations for sample company, ‘L
     * Run the format for testing purposes.  
 6. Select Yes in the Negotiable check format field.
 7. Click OK.
-    * Review the created output. Note that the company logo is presented in the report as well as the authorized person’s signature. The signature image is taken from the field of the ‘Container’ data type of the cheque layout record which is associated with the selected bank account.  
+    * Review the created output. Note that the company logo is presented in the report as well as the authorized person's signature. The signature image is taken from the field of the 'Container' data type of the cheque layout record which is associated with the selected bank account.  
 8. Expand the Copies section.
 9. Click Edit.
 10. In the Watermark field, enter 'Print watermark as Void'.
@@ -70,7 +70,7 @@ In this example, you will use created ER configurations for sample company, ‘L
 5. Click Designer.
 6. Click Map model to datasource.
 7. Click Designer.
-    * We will change the binding of the data model’s signature item to get the signature image from the file that has been attached to the cheque layout record which is associated with the selected bank account.  
+    * We will change the binding of the data model's signature item to get the signature image from the file that has been attached to the cheque layout record which is associated with the selected bank account.  
 8. Turn Show details off.
 9. In the tree, expand 'layout'.
 10. In the tree, expand 'layout\signature'.
@@ -109,7 +109,7 @@ In this example, you will use created ER configurations for sample company, ‘L
 9. Click Yes.
 10. Click New.
 11. Click File.
-    * Click Browse and select the downloaded in advance ‘Cheque template Word.docx’ file.  
+    * Click Browse and select the downloaded in advance 'Cheque template Word.docx' file.  
 12. Close the page.
 13. In the Template field, enter or select a value.
 14. Click Save.
