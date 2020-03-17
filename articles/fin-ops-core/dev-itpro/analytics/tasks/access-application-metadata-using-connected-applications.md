@@ -57,7 +57,7 @@ The following steps explain how a Regulatory configuration service (RCS) user in
 2. Close the page. 
 3. Go to **All workspaces** > **Electronic reporting**. 
 4. Click **Connected applications**. 
-5. Make sure that the configured application is Azura based and accessible for the current RCS user. It is also required that the current RCS user has access to the selected application and has been registered as a user of this application playing a role giving him privileges to access application's metadata. 
+5. Make sure that the configured application is Azure based and accessible for the current RCS user. It is also required that the current RCS user has access to the selected application and has been registered as a user of this application playing a role giving him privileges to access application's metadata. 
 6. Click **New**. 
 7. In the **Name** field, type 'MyConnectedApp'. 
 8. In the **Application** field, type 'https:// mycompany.operations.dynamics.com'. 
