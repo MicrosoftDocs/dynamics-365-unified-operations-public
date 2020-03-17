@@ -6,7 +6,7 @@ title: Store selector module
 description: This topic covers the store selector module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 manager: annbe
-ms.date: 02/27/2020
+ms.date: 03/17/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-commerce
@@ -66,11 +66,10 @@ The following image shows an example of a store selector module used on a PDP.
 
 ## Add a store selector module to a page
 
-A Store selector module needs the context of a product. Therefore it can be used only on the Buy box and Cart module and does not function outside these modules.
+A store selector module needs the context of a product, so it can only be used within buy box and cart modules. Store selector modules do not function outside these modules.
 
-1. For instructions on how to add it to buy box module see [Buy box module](add-buybox.md). 
-1. For instructions on how to add it to cart module see [Cart module](add-cart.md)
-
+- For information on how to add a store selector module to a buy box module, see [Buy box module](add-buybox.md). 
+- For information on how to add a store selector module to a cart module, see [Cart module](add-cart.md)
 
 ## Additional resources
 
