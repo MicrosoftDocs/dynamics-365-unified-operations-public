@@ -36,7 +36,7 @@ In addition to defining general functionality settings, you can set up different
 
 ## Prerequisites
 
-Before you can post financial transactions for invoices that have a total amount of zero (0), the following prerequisites must be met:
+Before you can use different posting profiles for the remittance of a bill of exchange and the remittance of a promissory note in company bank accounts, the following prerequisites must be met:
 
 - The primary address of the legal entity must be in Italy.
 - The **Configurable posting profiles for banks and remittance types** feature must be turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
