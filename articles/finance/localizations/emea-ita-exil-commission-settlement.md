@@ -41,10 +41,10 @@ Before you can use the functionality for commission settlement on payments, the 
 - The primary address of the legal entity must be in Italy.
 - The **Commission settlement on payments** feature must be turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
 
-## Set up commission settlement by default
+## Set up the default commission settlement method
 
 1. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
-2. On the **Accounts receivable parameters** page, on the **Settlement** tab, on the **Other** FastTab, in the **Commission settlement** field, select the method that should be used when a sales order is created by default:
+2. On the **Accounts receivable parameters** page, on the **Settlement** tab, on the **Other** FastTab, in the **Commission settlement** field, select the default commission settlement method that should be used when a sales order is created:
 
     - **On invoice** – Commissions are charged during the invoice process.
     - **On payment** – Commissions are charged during the payment process.
@@ -78,9 +78,9 @@ The following payments are made:
 - €100 (10 percent of the total amount of the invoice): The invoice is settled at 15 percent. Therefore, commissions are accrued at that percentage.
 - €500 (50 percent of the total amount of the invoice): The invoice is settled at 65 percent. Commissions are also accrued at 65 percent.
 - €200 (20 percent of the total amount of the invoice): The invoice is settled at 85 percent. Because this figure exceeds the upper limit, commissions become fully settled at 100 percent.
-- Further payments don't change the amount that is accrued, because that amount has already reached the top. However, accrual transactions are still created.
+- Further payments don't change the amount that is accrued, because that amount has already reached the upper limit. However, accrual transactions are still created.
 
-Another setup can be added to the single agent who belongs to a specific group. In commission calculations, the setup on agents (employees) has higher priority than the setup on sales.
+Another setup can be added to the individual agent who belongs to a specific group. In commission calculations, the setup on agents (employees) has higher priority than the setup on sales.
 
 ## Set the commission settlement and preview commission transactions on the Sales order page
 
@@ -88,13 +88,13 @@ After a sales order is created, a user can update the commission settlement in t
 
 1. Go to **Accounts receivable** \> **Orders** \> **All sales orders**.
 2. Select and open a sales order.
-3. On the sales order details page, in the **Header** view, select the **Setup** FastTab.
+3. On the **Sales order details** page, in the **Header** view, on the **Setup** FastTab update the value of the **Commission settlement** field as you require.
 
 ![Commission settlement on the sales order](media/emea-ita-exil-commission-sales-order.png)
 
 By default, the value of the **Commission settlement** field is inherited from the **Accounts receivable parameters** page. For more information, see [Set up commission settlement by default](emea-ita-exil-commission-settlement.md#Set-up-commission-settlement-by-default).
 
-You can also preview the sales commission calculation from a sales order for either open or invoiced orders. On the **General** tab, select **Related information** \> **Commission preview**.
+You can also preview the sales commission calculation from a sales order for either open or invoiced orders. On the **Sales order details** page, on the **General** tab, select **Related information** \> **Commission preview**.
 
 ![Preview commission transactions](media/emea-ita-exil-commission-preview.PNG)
 
