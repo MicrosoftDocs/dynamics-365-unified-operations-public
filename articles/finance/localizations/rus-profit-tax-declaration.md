@@ -4,7 +4,7 @@ title: Profit tax declaration
 description: This topic provides information about the profit tax declaration for Russia.
 author: anasyash
 manager: AnnBe
-ms.date: 01/30/2020
+ms.date: 03/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,8 +29,6 @@ ms.dyn365.ops.version: 10.0.9
 # Profit tax declaration
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 You can generate profit tax declarations in an electronic format. To generate the declaration, you must first set up the rules for collecting data from ledger accounts or profit tax registers in the appropriate financial report for the profit tax declaration.
 
