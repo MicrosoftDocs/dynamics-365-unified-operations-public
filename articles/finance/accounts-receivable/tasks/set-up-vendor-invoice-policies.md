@@ -53,7 +53,7 @@ This topic explains how to set up vendor invoice policies. Vendor invoice polici
 1. Go to **Navigation pane > Modules > Accounts payable > Policy setup > Vendor invoice policy rule types**.
 2. Select **New**.
 3. In the **Rule name** and **Description** fields, type values.
-4. In the **Query name** field, select the drop-down button to open the lookup, then selec the desired record.
+4. In the **Query name** field, select the drop-down button to open the lookup, then select the desired record.
 5. Select **Save**.
 6. Close the page to return to the home page.
 
