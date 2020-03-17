@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # FR-00018 Daily interest calculation for late payment and lump sum in the invoice and collection letter
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Indicate the interest calculation on an invoice.
 
