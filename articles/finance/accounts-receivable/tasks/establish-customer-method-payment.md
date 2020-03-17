@@ -46,6 +46,6 @@ This topic explains how to create a method of payment for customer payments. Thi
 12. Enter the main account used for the bridging posting. This is the main account to which the payment will temporarily post if using bridging.  
 13. Use the **File format** tab to define setting for electronic payments.
 14. Use the **Payment control** tab to define fields that are mandatory. For example, if you require all payments with this method of payment to be deposited, you can choose that option on this tab.  
-15. Use the **Payment atrributes** tab to define which payment attributes you want to use for this method of payment.
+15. Use the **Payment attributes** tab to define which payment attributes you want to use for this method of payment.
 16. Select **Save**.
 
