@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create routes (February 2016)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This task focuses on creating the production routes for a finished product and a semi-finished product. It is the fifth task in the BOM calculation series. The demo data company used to create this task is USMF.
 

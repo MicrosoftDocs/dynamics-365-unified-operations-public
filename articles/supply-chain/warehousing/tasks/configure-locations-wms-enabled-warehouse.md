@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Configure locations in a WMS-enabled warehouse
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This guide shows you how to configure the location setup for a new WMS-enabled warehouse (a warehouse that uses advanced warehouse management processes). The process is typically done by a warehouse manager. You can run this guide in demo data company USMF or on your own data. A precondition is that you have at least one site configured.
 
@@ -44,7 +44,7 @@ This guide shows you how to configure the location setup for a new WMS-enabled w
 8. Close the page.
 
 ## Define a location format
-1. Go to **Navigation pane > Modules > Warehouse management > Setup > Warehouse >Location formats**. Location formats are a naming-system used to create unique and consistent names for the different location bin positions used within a warehouse. It can be useful to use separators as part of the location format to make it easier to identify components of the location such as the aisle number. In this example, we’ll create a name with four components. For example, these could be aisle, rack, shelf, and bin.
+1. Go to **Navigation pane > Modules > Warehouse management > Setup > Warehouse >Location formats**. Location formats are a naming-system used to create unique and consistent names for the different location bin positions used within a warehouse. It can be useful to use separators as part of the location format to make it easier to identify components of the location such as the aisle number. In this example, we'll create a name with four components. For example, these could be aisle, rack, shelf, and bin.
 2. Click **New**.
 3. In the **Location format** field, type a value.
 4. In the **Name** field, type a value.
@@ -84,7 +84,7 @@ This guide shows you how to configure the location setup for a new WMS-enabled w
 9. In the list, find and select the desired record.
 10. In the list, click the link in the selected row.
 11. Select or clear the **Allow mixed inventory statuses** check box. Enable this option if you want to allow mixed inventory status values in the locations that are going to be grouped by this location profile. 
-12. Select or clear the **Override rules for batch days** check box. Enable this option to override the rule for how many days the inventory batch expiration dates can differ, to allow mixing of inventory batches that don’t obeying this rule.  
+12. Select or clear the **Override rules for batch days** check box. Enable this option to override the rule for how many days the inventory batch expiration dates can differ, to allow mixing of inventory batches that don't obeying this rule.  
 13. Select or clear the **Allow cycle counting** check box. Enable this option to allow cycle counting processing in all the locations that are going to be grouped by this location profile. 
 14. Expand or collapse the **Dimensions** section. The Dimensions tab allows you to define parameters and methods to enable precise calculations of the load capacity within each of the locations.  
 15. Close the page.

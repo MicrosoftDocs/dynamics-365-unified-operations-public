@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create a sales order for a configurable product
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure shows how to apply a configuration template to a product on a sales order. This example uses the D0006 speaker model in the USMF demo data company. Typically, a sales order processor uses this procedure.
 
@@ -46,7 +46,7 @@ This procedure shows how to apply a configuration template to a product on a sal
     * Note that the price has changed, based on the configuration that was selected, and that the Include cable field is now set to True.  
     * Note the default price and the settings that are selected for the cable.  
 9. Click Load template.
-    * This example shows how you can apply a template to select a predefined configuration. If you’re using this procedure as a task guide and want to see the other attribute values that are available, you must click the Unlock button.  
+    * This example shows how you can apply a template to select a predefined configuration. If you're using this procedure as a task guide and want to see the other attribute values that are available, you must click the Unlock button.  
 10. Click OK.
 11. Click OK.
 12. Expand the Line details section.

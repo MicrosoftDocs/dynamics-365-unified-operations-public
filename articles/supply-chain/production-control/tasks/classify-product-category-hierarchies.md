@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Classify a product using category hierarchies
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Use category hierarchies to classify products for export, procurement, sales, or other purposes. This task is typically performed by a product manager. The example uses product number M0009 in demo data company USMF.
 

@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create batch attributes for a product
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure shows how to create a batch attribute, assign default value ranges, and include the attribute in a group. The demo data company used to create this procedure is the USP2 Company.
 

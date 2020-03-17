@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Reconcile freight manually
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]]
 
 This procedure shows how to reconcile freight manually. This is typically done by a transportation coordinator. You can use this procedure in the USMF demo data company.
 
@@ -39,7 +39,7 @@ This procedure shows how to reconcile freight manually. This is typically done b
 3. In the list, select the load that has load ID 00006.
 
 ## Create a carrier invoice
-If you reconcile freight manually and don’t receive carrier invoices automatically, you can create an invoice based on the freight bill.  
+If you reconcile freight manually and don't receive carrier invoices automatically, you can create an invoice based on the freight bill.  
 1. Click Related information.
 2. Click Freight bill details.
 3. Click Generate freight bill invoice.

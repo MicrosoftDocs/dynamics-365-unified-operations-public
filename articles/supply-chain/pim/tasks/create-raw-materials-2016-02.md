@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create raw materials (February 2016)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This task focuses on creating the components of finished and semi-finished products. It is the third task in the BOM calculation series. The demo data company used to create this task is USMF.
 

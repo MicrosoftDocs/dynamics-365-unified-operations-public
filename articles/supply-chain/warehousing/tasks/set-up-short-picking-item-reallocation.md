@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Set up short picking item reallocation
-description: This procedure shows you how to enable warehouse workers to quickly find alternative locations if there isn’t sufficient inventory at the location they’ve been directed to. 
+description: This procedure shows you how to enable warehouse workers to quickly find alternative locations if there isn't sufficient inventory at the location they've been directed to. 
 author: ShylaThompson
 manager: AnnBe 
 ms.date: 08/29/2018
@@ -28,15 +28,15 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Set up short picking item reallocation
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-This procedure shows you how to enable warehouse workers to quickly find alternative locations if there isn’t sufficient inventory at the location they’ve been directed to. It’s possible to use an automatic re-allocation process, which uses location directives to retrieve the goods if they’re available at another location. Alternatively, when manual re-allocation is used, a list of the locations with the available quantity is shown on the mobile device, allowing the warehouse worker to choose which location to use inventory from. You can use this procedure in demo data company USMF. This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.
+This procedure shows you how to enable warehouse workers to quickly find alternative locations if there isn't sufficient inventory at the location they've been directed to. It's possible to use an automatic re-allocation process, which uses location directives to retrieve the goods if they're available at another location. Alternatively, when manual re-allocation is used, a list of the locations with the available quantity is shown on the mobile device, allowing the warehouse worker to choose which location to use inventory from. You can use this procedure in demo data company USMF. This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.
 
 
 ## Set up work exceptions
 1. In the **Navigation pane**, go to **Warehouse management > Setup > Work > Work exceptions**.
-2. Click **New**. It’s possible to define several work exceptions with different item reallocation policies to enable the warehouse worker to choose one based on the needs of the shipment that they are processing.  
-3. In the **Work exception code** field, type a value. Give the work exception a title to indicate what it’s used for. For example, Short picking manual.  
+2. Click **New**. It's possible to define several work exceptions with different item reallocation policies to enable the warehouse worker to choose one based on the needs of the shipment that they are processing.  
+3. In the **Work exception code** field, type a value. Give the work exception a title to indicate what it's used for. For example, Short picking manual.  
 4. In the **Description** field, type a value.
 5. In the **Exception** type field, select 'Short pick'.
 6. Select the **Adjust inventory** check box. This option means that inventory will automatically be adjusted to 0 at the short picked location.  
