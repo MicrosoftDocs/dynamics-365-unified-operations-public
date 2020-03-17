@@ -65,11 +65,11 @@ This procedure was created using the demo data company 'USMF' with a primary leg
 20. In the T1 Installment income field, enter a number.
     * Calculate your installment income for the quarter and enter this in the T1 box.  
 21. In the T2 Installment rate field, enter a number.
-    * The rate entered at T2 will be either:  -The instalment rate worked out by us  -The most recent varied rate, if you have varied the instalment rate in a previous quarter in the same income year.    
+    * The rate entered at T2 will be either:  -The installment rate worked out by us  -The most recent varied rate, if you have varied the installment rate in a previous quarter in the same income year.    
 22. In the T3 New varied installment rate field, enter a number.
     * If you want to vary your installment rate, enter your new rate in the T3 box.    
 23. In the T4 Reason for variation field, click the drop-down button to open the lookup.
-    * If you vary your instalment rate, choose a reason from the list that best describes why and enter the appropriate code.  
+    * If you vary your installment rate, choose a reason from the list that best describes why and enter the appropriate code.  
 24. In the list, click the link in the selected row.
 25. In the F1 ATO fringe benefit field, enter a number.
     * If you pay FBT quarterly, a pre-determined installment will be shown in F1.  
