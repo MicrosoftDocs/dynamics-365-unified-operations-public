@@ -43,7 +43,7 @@ Microsoft Dynamics 365 Supply Chain Management includes a pricing engine that ha
 1. In Sales, go to **Sales \> Orders**.
 2. Select **New** to create a new order, or select an existing order in the **My Orders** list.
 3. Add a new order line.
-4. If you're creating a new order, select **Price Order** in the menu bar. If you're updating an existing order, select **Recalculate** in the menu bar.
+4. If you're creating a new order, select **Price Order** on the Action Pane. If you're updating an existing order, select **Recalculate** on the Action Pane.
 
     The following fields are automatically filled in:
 
