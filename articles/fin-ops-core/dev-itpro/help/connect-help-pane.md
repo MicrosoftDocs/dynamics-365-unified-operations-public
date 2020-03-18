@@ -5,7 +5,7 @@ title: Connect a custom Help website to the Help pane
 description: This article describes how you can extend the in-product Help pane with custom help. 
 author: edupont04
 manager: AnnBe
-ms.date: 03/17/2020
+ms.date: 03/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -95,7 +95,7 @@ Next, you must specify the language for which your custom help search index is i
 
 The result is a model that you then upload to the Asset Library of the customer project or the Microsoft Dynamics Lifecycle Services (LCS) solution project.
 
-### Customize language fallback
+## Customize language fallback
 
 Language fallback means that the Help pane runs a search in additional languages when the intended language does not return a result, or if that language does not exist.
 
@@ -109,7 +109,9 @@ The search and fallback order are defined in the following order of priority:
 3. The language that has the **ultimateindex** attribute set, such as ```<add language="en-US" ultimateindex="myenusindex" />```
 
 > [!IMPORTANT]
-> If **parentlanguage** is set, there must be a corresponding **parentindex**. Note that the following scenario is valid as ```language="de"``` has ```parentindex="indexde"``` and both de-DE and de-AT are descendants of de.
+> If **parentlanguage** is set, there must be a corresponding **parentindex**. 
+
+The following scenario is valid because ```language="de"``` has ```parentindex="indexde"```, and both `de-DE` and `de-AT` are descendants of `de`.
 
 ```
 <add language="de" parentindex="indexde"/>
@@ -117,9 +119,11 @@ The search and fallback order are defined in the following order of priority:
 <add language="de-AT" parentlanguage="de-DE" index="indexdeat"/>
 ```
 
-Here are some sample configurations:
+For more information about languages, see [Languages, translations, and adaptations](language-locale.md#languages-translations-and-adaptations).
 
-#### Help content for one locale
+The following sections provide sample configurations.
+
+### Help content for one locale
 
 In this configuration, you only have help content for English (US). Clients set to any locale will display the help content in English (US).
 
@@ -127,7 +131,7 @@ In this configuration, you only have help content for English (US). Clients set 
 <add language="en-US" ulitmateindex="indexenus"/>
 ```
 
-#### Help content for multiple locales
+### Help content for multiple locales
 
 In this configuration, you have help content for French, German, and English (US). Clients set to `de` will display content in German, clients set to `fr` will display content in French, and clients set to any other locale will display the help content in English (US).
 
@@ -139,7 +143,7 @@ In this configuration, you have help content for French, German, and English (US
 
 If clients are set to `de` or `fr` and no results are found in the German and French content respectively, results will be displayed in English (US) if available.
 
-#### Help content with parent locales
+### Help content with parent locales
 
 In this configuration, you have help content for German (Austria), German, and English (US). For example, you have a number of articles specifically for features for Austria, but otherwise articles in German can be used.
 

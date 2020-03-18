@@ -54,19 +54,50 @@ Use the [AzureSearchCustomHelp](walkthrough-help-azure.md) solution that is prov
 
 ### <a name="metadata"></a>Metadata requirements for custom help articles
 
-The following metadata must be present in your articles for context-sensitive help and full-text search to return results in the [AzureSearchCustomHelp solution](walkthrough-help-azure.md):
+The following metadata must be present in your articles for context-sensitive help and full-text search to return results in the [AzureSearchCustomHelp](walkthrough-help-azure.md)  solution:
 
 |Property  |Description  |
 |----------|-------------|
 |title | The value is used for full-text search from the Help pane. |
 |description  | The value is used for full-text search from the Help pane.  |
 |ms.search.form | The value contains the Application Object Tree (AOT) name of a form and is used for context-sensitive search from the Help pane. |
+|ms.locale |This value indicates the language of the article. The value is mapped against the current browser locale when the Help pane searches the content. The target custom help website can configure language fallback. For more information, see [Language and locale descriptors in across product and Help](language-locale.md). |
 |ms.search.scope|The value determines which client the Help article is shown in. You can specify one or more values. Values includes Core, Operations, Retail, and Human Resources.|
-|ms.locale |This value indicates the language of the article. The value is mapped against the current browser locale when the Help pane searches the content. the target custom help website can configure language fallback. For more information, see [Language and locale descriptors in across product and Help](language-locale.md). |
+
+The `ms.search.scope`property determines which client a Help article is shown in. You can specify one or more values. The following table describes the values:
+
+|Value|Description|
+|-----|-----------|
+|Core|If this value is present, the article appears in the Help pane. Otherwise, the article doesn't appear in the Help pane. </br>**Core** is set for the part of the Microsoft content that must always be available in the Help pane for any user across all supported Dynamics 365 solutions.|
+|Operations|Applies to solutions based on Dynamics 365 Finance or Supply Chain Management.|
+|Retail    |Applies to solutions based on Dynamics 365 Commerce.|
+|Human Resources  |Applies to solutions based on Dynamics 365 Human Resources.|
+|Talent    |Applies to solutions based on Dynamics 365 Talent (Dynamics 365 Talent: Attract and Onboard apps are being retired. Learn more at [Retiring Dynamics 365 Talent: Attract and Onboard apps](https://community.dynamics.com/365/talent/b/dynamics365fortalent/posts/retiring-dynamics-365-talent-attract-and-nboard-apps).).|
+
+### Non-required metadata
+
+The following properties are reserved for future use:
+
+- ms.search.region
+
+    In the future, this property may be used to limit the content that is shown to content that is tagged either as global or for the region of the implementation.
+- ms.search.validFrom
+
+    In the future, this property may be used to limit the content that is shown to content for a product that was released on a given date or earlier.
+- ms.dyn365.ops.version
+
+    In the future, this property may be used to limit the content that is shown to content for a specific version of a product or earlier.
+
+- ms.search.industry
+
+    In the future, this property may be used to limit the content that is shown to content for a specific industry.
+
+> [!TIP]
+> Microsoft's content in the public GitHub repos contain additional metadata that is used by Microsoft in internal processes that are not related to the mechanics of the help system. You can ignore these metadata properties if you extend or customize Microsoft's content.  
 
 ## Changing the locale of articles to match the locale of solutions
 
-Your solution might be intended to support multiple markets and you'll want to provide help content for each market. As an example, your solution might support German (Germany) and German (Austria), but you only have HTML files for German (Germany). To make the same content available in German (Austria), you can make a copy of the HTML files then use the [The HtmlLocaleChanger tool](custom-help-toolkit-HtmlLocaleChanger.md) to update the ms.locale metadata. You can then add content specific to Austria to these new HTML files.
+Your solution might be intended to support multiple markets and you'll want to provide help content for each market. As an example, your solution might support German (Germany) and German (Austria), but you only have HTML files for German (Germany). To make the same content available in German (Austria), you can make a copy of the HTML files, and then use the [The HtmlLocaleChanger tool](custom-help-toolkit-HtmlLocaleChanger.md) to update the ms.locale metadata. You can also add content specific to Austria to these new HTML files, for example.
 
 ## Converting HTML files to JSON for use with an Azure Search Service
 

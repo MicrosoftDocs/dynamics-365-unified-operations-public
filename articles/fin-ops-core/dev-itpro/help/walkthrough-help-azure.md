@@ -96,7 +96,9 @@ To host your content, you will need to create a web app in Azure. For more infor
 
 2. Select **Deployment Center** from the left side. Select **FTP** under **Manual Deployment (push/sync)** then choose **Dashboard**.  
 
-    You can use either App Credentials or User Credentials to upload your content to the web app. You will need the FTP/FTPS endpoint, the username, and the password to upload your content.
+    You can use either *app credentials* or *user credentials* to upload your content to the web app. We recommend that you use *app credentials*. You will need the FTP/FTPS endpoint, the username, and the password to upload your content.  
+
+    You might also want to copy the username and password to a temporary location before you continue. We also recommend that you reset the credentials once you have completed the deployment. For more information, see [Configure deployment credentials for Azure App Service](/azure/app-service/deploy-configure-credentials).  
 
 Next, you will add your HTML files to the web app. You can use an FTP client such as [FileZilla](https://filezilla-project.org/), [Visual Studio](https://www.visualstudio.com/vs/community/), [Cyberduck](https://cyberduck.io/), or [WinSCP](https://winscp.net/index.php). For more information, see [Deploy your app to Azure App Service using FTP/S](/azure/app-service/deploy-ftp).
 
@@ -145,9 +147,9 @@ Next, we create a search service so that the content can be indexed and found by
 
 ## <a name="searchconfig"></a>Configure the search service
 
-In the previous section, we created a search service. In this section, we configure it by creating a data source and an index and indexer for each locale, so that the JSON files that we uploaded to the Blob container will be indexed and searchable. In the examples that follow, we use the [Postman tool](https://www.getpostman.com/) to make several API calls; however, you can use your own method to call those APIs.  
+In the previous section, we created a search service. In this section, we configure it by creating a [data source](#searchdatasource), an [index](#searchindex), and an [indexer](#searchindexer) for each locale, so that the JSON files that we uploaded to the Blob container will be indexed and searchable. In the examples that follow, we use the [Postman tool](https://www.getpostman.com/) to make several API calls; however, you can use your own method to call those APIs.  
 
-### To create a data source
+### <a name="searchdatasource"></a>To create a data source
 
 1. Start Postman and create a new POST request. If you are unfamiliar with this tool, see [Explore Azure Cognitive Search REST APIs using Postman](/azure/search/search-get-started-postman.md).  
 
@@ -186,7 +188,7 @@ In the previous section, we created a search service. In this section, we config
 
 Next, we configure the search service to have an index of the content for each locale that you want to support.
 
-### To create an index
+### <a name="searchindex"></a>To create an index
 
 1. In Postman, create a new POST request that has the following parameters:
 
@@ -227,9 +229,9 @@ Next, we configure the search service to have an index of the content for each l
 3. Click Send, and make sure that the value in the **Status** field is **201 Created**.
 4. If you have prepared custom Help content for multiple languages, repeat these steps to create a unique index for each language.
 
-The index does not contain any data until it has been processed by an *indexer*. For more information, see [Indexers in Azure Cognitive Search](/azure/search/search-indexer-overview).
+The index is not an index until it has been processed by an *indexer*. Like the librarian who maintains the index over the books in a library, the indexer for your search service populates the index based on a search. For more information, see [Indexers in Azure Cognitive Search](/azure/search/search-indexer-overview).  
 
-### To create an indexer
+### <a name="searchindexer"></a>To create an indexer
 
 1. In Postman, create a new POST request that has the following parameters:
 
@@ -285,7 +287,7 @@ Optionally, use Postman to test the search. For an example of how to do that, se
 
 When you have followed the steps in this article, you have uploaded your Help content to an Azure web app and indexed it.  
 
-You can now extend the Help pane to be aware of your content. When users open the Help pane in your Dynamics 365 solution, the in-product Help pane will be able to generate context-sensitive links to your Help. For more information, see [Connect your Help website with the in-product Help pane](connect-help-pane.md).  
+The next step is to extend the Help pane to be aware of your content. When users open the Help pane in your Dynamics 365 solution, the in-product Help pane will be able to generate context-sensitive links to your Help. For more information, see [Connect your Help website with the in-product Help pane](connect-help-pane.md).  
 
 ## See also
 

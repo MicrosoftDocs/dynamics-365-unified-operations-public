@@ -95,6 +95,8 @@ Microsoft's teams create content in English (United States), which is then trans
 
 Translation services treat certain languages as variants of another language in order to maximize reuse translations to the greatest extent possible. For example, German for Austria and German for Germany are considered so closely related that they are treated as variants of each other. This is why you can use the files in the *Dynamics-365-Operations.de-de* GitHub repo as a starting point for both German (Germany) and German (Austria).
 
+When you extend the in-product Help pane, you must assign indexes for the relevant locales. For more information, see [Customize language fallback](connect-help-pane.md#customize-language-fallback).  
+
 ## See also
 
 [Custom Help Overview](custom-help-overview.md)  

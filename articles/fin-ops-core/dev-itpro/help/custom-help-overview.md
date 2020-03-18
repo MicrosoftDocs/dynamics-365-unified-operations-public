@@ -76,15 +76,15 @@ The following table outlines the main objectives that administrators typically h
 
 |Objective |Learn more  |
 |----------|------------|
-|I want to give my users a customized in-product help experience that reflects their actual solution|See [Custom help sites](#custom-help-sites) and [Create documentation or training with Task Recorder](../user-interface/task-recorder-training-docs.md) |
+|I want to give my users a customized in-product help experience that reflects their actual solution|See [Custom help websites](#custom-help-sites) and [Create documentation or training with Task Recorder](../user-interface/task-recorder-training-docs.md) |
 |I want to use Microsoft's Help content as a baseline for help specific to my solution| See [Custom Help Toolkit: The HtmlFromRepoGenerator tool](custom-help-toolkit-HtmlFromRepoGenerator.md)  |
 |I want to contribute to Microsoft's Help content|See [Extend, customize, and collaborate on the Help](contributor-guide.md)        |
 |I want to reuse my existing Dynamics AX content|See [Convert Dynamics AX custom Help for use in Dynamics 365](migrate-dynamicsax2012.md)  |
-|I want to set up a website for my Help content|See [Deploying help websites](#custom-help-sites) |
+|I want to set up a website for my Help content|See [Custom help websites](#custom-help-sites) |
 |I want to add my content to the Help pane|See [Connect your help website with the Help pane](connect-help-pane.md)  |
 |Our technical writers want guidance for how to convert our legacy content into MarkDown for a better Help customization story going forward|See [Moving to MarkDown](migrate-dynamicsax2012.md#moving-to-markdown) |
 
-## <a name="custom-help-sites"></a>Custom help sites
+## <a name="custom-help-sites"></a>Custom help websites
 
 In order for the product to connect to your Help content, you must customize the in-product Help pane to display your content. This requires the following elements:
 
@@ -94,17 +94,9 @@ In order for the product to connect to your Help content, you must customize the
 
 - Your content is indexed by a search service
 
-    If you are planning to use the [AzureSearchCustomHelp solution](walkthrough-help-azure.md) provided as part of the [Custom Help Toolkit](custom-help-toolkit.md) for context-sensitive help, the Help pane will generate a query to be run against the search service's index. <a name="metadata"></a>The query depends on specific metadata in the Help articles as described in following table:
+    If you use the [AzureSearchCustomHelp](walkthrough-help-azure.md)  solution that is part of the [Custom Help Toolkit](custom-help-toolkit.md) for context-sensitive help, the Help pane will generate a query to be run against the search service's index. The query depends on specific metadata in the Help articles. For more information, see [Metadata requirements for custom help articles](preparing-content.md#metadata).
 
-    |Property  |Description  |
-    |----------|-------------|
-    |title | The value is used for full-text search from the Help pane. |
-    |description  | The value is used for full-text search from the Help pane.  |
-    |ms.search.form | The value contains the Application Object Tree (AOT) name of a form and is used for context-sensitive search from the Help pane. |
-    |ms.search.scope|The value determines which client the Help article is shown in. You can specify one or more values. Values includes Core, Operations, Retail, and Human Resources.|
-    |ms.locale |This value indicates the language of the topic. This is mapped against the current browser locale when the Help pane searches the content. the target custom help website can configure language fallback. For more information, see [Language and locale descriptors in across product and Help](language-locale.md). |
-
-In [Deploying custom help to Azure](walkthrough-help-azure.md), we describe an approach for hosting content on Azure, including how you can set up a search service that indexes your content so that it can be found by the in-product Help pane. If you do not have an [Azure subscription](/azure/guides/developer/azure-developer-guide#understanding-accounts-subscriptions-and-billing), create an account before you begin. You can start with a free account for 12 months. For more information, see [Create your Azure free account today](https://azure.microsoft.com/free/). 
+In [Deploying custom help to Azure](walkthrough-help-azure.md), we describe an approach for hosting content on Azure, including how you can set up a search service that indexes your content so that it can be found by the in-product Help pane. If you do not have an [Azure subscription](/azure/guides/developer/azure-developer-guide#understanding-accounts-subscriptions-and-billing), create an account before you begin. You can start with a free account for 12 months. For more information, see [Create your Azure free account today](https://azure.microsoft.com/free/).  
 
 ## See also
 
