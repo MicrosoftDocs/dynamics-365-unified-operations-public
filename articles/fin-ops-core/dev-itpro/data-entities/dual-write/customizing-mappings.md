@@ -26,21 +26,21 @@ The out of the box OOB entity maps serve as a blueprint with predefined entity a
 
 2. On the **Entity mappings** tab, you can customize a field by picking a new or custom field from either the Finance and Operations app or Common Data Service.
 
-    ![Customizing a field](media/customize-a-field.png)
+    <kbd>![Customizing a field](media/customize-a-field.png)
 
 3. You can also customize the Sync direction (unidirectional or bidirectional) and add Transforms by selecting the Map type.
 
-    ![Customizing the sync direction](media/customize-sync-direction.png)
+    <kbd>![Customizing the sync direction](media/customize-sync-direction.png)
 
 4. You can also add a new field by selecting the **Add mapping** button and picking an existing or custom field from the list. 
 
     The following figure shows an example of adding a new "Birthdate" field.
 
-    ![Adding a new birthdate field](media/add-new-field.png)  
+    <kbd>![Adding a new birthdate field](media/add-new-field.png)  
 
 5. Once you complete customizing the field mappings, select **Save** and follow the prompts to choose a publisher and version number.
 
-    ![Choose a publisher and version number](media/choose-publisher-version.png)
+    <kbd>![Choose a publisher and version number](media/choose-publisher-version.png)
 
 The following table provides a description of the available sync directions. 
 
@@ -68,11 +68,11 @@ With dual-write, you can filter data using OData filter expression for Common Da
 
 1. Select the filter icon from the entity mapping screen.
 
-    ![Select the filter icon](media/select-filter-icon.png)
+    <kbd>![Select the filter icon](media/select-filter-icon.png)
 
 2. Specify your filters in the **Edit query** dialog box. In this example, specify a filter to return only "accountype equal to 3".
 
-    ![Specifying your filters](media/specify-filters.png)
+    <kbd>![Specifying your filters](media/specify-filters.png)
 
 The following table contains some more examples of filter expressions.
 
@@ -92,14 +92,14 @@ Here is an example of how to add a new entity map called "Address books".
 
 1. In the Finance and Operations app, select the **Add entity map** button.
 
-    ![Adding a new entity map](media/add-new-entity-map.png)
+    <kbd>![Adding a new entity map](media/add-new-entity-map.png)
 
     >[!Note]
-    >When you create a new solution, later in the steps below, with these modified entity maps, you will need to specify the same publisher.
+    >When you [create a new solution](#create-a-new-dual-write-solution-and-add-your-components-(customized-entity-maps)) with these modified entity maps, you'll need to specify the same publisher.
 
 2. Confirm the entity maps you just modified and added. Make sure to enable and test them to ensure they're working as expected.
 
-    ![Confirm the entity maps](media/confirm-entity-maps.png)
+    <kbd>![Confirm the entity maps](media/confirm-entity-maps.png)
 
 ## Next steps
 

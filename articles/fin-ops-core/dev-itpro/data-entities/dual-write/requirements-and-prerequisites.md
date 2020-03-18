@@ -34,9 +34,9 @@ Before you enable dual-write, follow the steps below to ensure you meet the mini
 
    The dual-write core solution contains metadata for your entity maps and must be installed in your environments.
 
-   To install the dual-write core solution, in the maker Power Apps portal, navigate to **Solutions** in the left-hand pane, select **Open AppSource**, choose the **Dual Write Core** solution, and then follow the prompts to import the solution. 
+   To install the dual-write core solution, in the Power Apps maker portal, navigate to **Solutions** in the left-hand pane, select **Open AppSource**, choose the **Dual Write Core** solution, and then follow the prompts to import the solution. 
 
-      ![Installing the dual-write core solution](media/dual-write-core-solution.png)
+      <kbd>![Installing the dual-write core solution](media/dual-write-core-solution.png)
 
     Related health check:
 
@@ -54,13 +54,13 @@ Before you enable dual-write, follow the steps below to ensure you meet the mini
 
    1. Repeat the above steps for another client ID record: **2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b**
 
-       ![Adding another client ID record](media/another-client-id-record.png)
+       <kbd>![Adding another client ID record](media/another-client-id-record.png)
 
-#### Refresh Entities
+   Follow the steps below to refresh entities.
 
    1. From the left-hand pane, go to **Data Management/Data entities** and make sure the entity list is populated.
 
-   1. Also, make sure to refresh entities by going to **Data Management > Framework parameter > Entities tab > Refresh entities list** `(https://<<BaseAXURL>>/?cmp=USMF&mi=DM_DataManagementWorkspaceMenuItem&TableName=DMFDefinitionGroupEntity)`
+   1. Also, go to **Data Management > Framework parameter > Entities tab > Refresh entities list** `(https://<<BaseAXURL>>/?cmp=USMF&mi=DM_DataManagementWorkspaceMenuItem&TableName=DMFDefinitionGroupEntity)` and make sure to refresh the entity list.
        
    Related health check:
 
@@ -78,37 +78,35 @@ Before you enable dual-write, follow the steps below to ensure you meet the mini
 
    1. From the Power Apps maker portal, select the gear on the top-right corner, navigate to **Advanced settings > Security**, and then select **Users**.
 
-       ![Selecting users in advanced settings](media/selecting-users.png)
+       <kbd>![Selecting users in advanced settings](media/selecting-users.png)
 
    1. In **Enabled Users**, select **Application Users**. 
 
-       ![Switching to application users](media/selecting-application-users.png)
+       <kbd>![Switching to application users](media/selecting-application-users.png)
 
    1. Create a new user and select **Application User** in the **User** drop down box.
 
-        ![Switching to application users](media/create-new-user.png)
+        <kbd>![Switching to application users](media/create-new-user.png)
 
    1. Add the value **00000015-0000-0000-c000-000000000000** to **Application ID**, follow the prompts to fill the additional fields, and then save the user account. This application ID is for a Finance and Operations app and will allow the app to connect to the Common Data Service.
 
-      ![Add application ID](media/add-application-id.png)
-
-   
+      <kbd>![Add application ID](media/add-application-id.png)
 
    1. Provide a primary email address.
 
    1. Select **Manager Roles** and choose **System Administrator** to provide system administrator rights to the selected application user. 
 
-      ![Manage user roles](media/manage-user-roles.png)
+      <kbd>![Manage user roles](media/manage-user-roles.png)
 
    1. From **Dynamics 365 > Settings > Security**, select **Teams**, and change the view to **All Teams**.
 
    1. Select the root business unit/organization, select the **Manage Roles** tab, and assign to it the required "system administrator" role.
 
-      ![Assign the system administration role](media/assign-system-admin-role.png)
+      <kbd>![Assign the system administration role](media/assign-system-admin-role.png)
 
    1. Repeat steps d through h for the **2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b** application ID, and follow the prompts to fill additional fields and save the user account.
 
-      ![Assign the application ID](media/assign-application-id.png)
+      <kbd>![Assign the application ID](media/assign-application-id.png)
 
    1. Provide system administrator rights to the application user using **Manage Roles**.
 
@@ -154,7 +152,7 @@ Before you enable dual-write, follow the steps below to ensure you meet the mini
 
    2. To enable a step, select and hold (or right-click) the step, and then select **Enable** (note that if there's no option for **Enable**, but instead an option for **Disable**, then the step is already enabled and does not need to be changed).
 
-       ![Using the plugin registration tool](media/plugin-registration-tool.png)
+       <kbd>![Using the plugin registration tool](media/plugin-registration-tool.png)
 
    If the dual-write plugin assemblies cannot be found, import the latest version of the Dual Write Core solution.
 
@@ -178,7 +176,7 @@ Before you enable dual-write, follow the steps below to ensure you meet the mini
 
    1. On the dual-write UI in the Finance and Operations app, select **Apply Solution** in the top menu of the dual-write page to apply the entity maps that you just downloaded and installed. Once you apply the solution, you'll see the default entity maps published.
 
-       ![Applying the entity maps](media/apply-entity-maps.png) 
+       <kbd>![Applying the entity maps](media/apply-entity-maps.png) 
 
 That's it&mdash;you successfully imported and applied a Microsoft published Dual Write entity map solution to your environment.
 
@@ -188,21 +186,21 @@ That's it&mdash;you successfully imported and applied a Microsoft published Dual
 
 1. Sign-in to the Finance and Operation app environment that you want to link to your Common Data Service environment, navigate to **Data Management**, and select the **Dual Write** tile.
 
-    ![Navigating to data management](media/navigate-to-data-management.png)
+    <kbd>![Navigating to data management](media/navigate-to-data-management.png)
 
 2. Select the **New link to environment** button to link your Finance and Operations app and the Common Data Service environments.
 
 3. At this point, the Common Data Service environments are automatically fetched for the logged-in user, where user is an environment admin. Once the environments are discovered, under the **Choose environment** step, select the Common Data Service environment that you want to link to, and then select **Next**.
 
-    ![Selecting the common data service environment](media/data-service-environment.png)
+    <kbd>![Selecting the common data service environment](media/data-service-environment.png)
 
 4. Choose your legal entities and select **Next**.
 
-    ![Selecting your legal entities](media/select-legal-entities.png)
+    <kbd>![Selecting your legal entities](media/select-legal-entities.png)
 
 5. At this point, a Health check is run to make sure that your system meets the requirements to enable dual-write and all the prerequisites are complete.
 
-    ![Running a health check](media/health-check.png)
+    <kbd>![Running a health check](media/health-check.png)
 
     If any of the health checks fails, ensure that you've completed all the prerequisites before you move to the next step.
 
@@ -212,7 +210,7 @@ That's it&mdash;you successfully imported and applied a Microsoft published Dual
 
 7. That's it&mdash;you've just linked your Finance and Operations app to the Common Data Service environment. The next step is to enable entity maps for dual-write.
 
-    ![Linking entity maps successful](media/entity-maps-linked.png)
+    <kbd>![Linking entity maps successful](media/entity-maps-linked.png)
 
    >[!Note]
    >If you don't see your entity maps or see a blank screen, make sure to install the Finance and Operations app entity map solution.
@@ -221,13 +219,13 @@ That's it&mdash;you successfully imported and applied a Microsoft published Dual
 
 When you enable an entity map for dual-write, it starts from the Not Running stage. The entity map then goes through the initialization phase where it does an initial write by copying pre-existing data on entities on both sides. Finally, the entity map marks the status as Running, when the entity is completely enabled.
 
-![Enabling entity maps](media/enabling-entity-map.png)
+<kbd>![Enabling entity maps](media/enabling-entity-map.png)
 
 From the Run state, you can stop or pause an entity wherein all changes are queued until you resume. Upon rusuming, the entity goes through catch-up mode when all the queued changes are played back.
 
 The following figure illustrates an example of pausing an entity.
 
-![Pausing an entity](media/stop-pause-entity.png)
+<kbd>![Pausing an entity](media/stop-pause-entity.png)
 
 |Status |Description |Available actions |
 | --- | --- | --- |
@@ -240,11 +238,11 @@ The following figure illustrates an example of pausing an entity.
 
 In the initializing phase, if you have preexisting data, the data is copied as part of the initial write phase.
 
-![Copying the data](media/initial-write-phase.png)
+<kbd>![Copying the data](media/initial-write-phase.png)
 
 Entities have several dependent entities. For example, Customers-Contacts have "customer groups" and "currencies" as dependent entities. 
 
-![Dependent or related entities](media/dependent-or-related-entities.png)
+<kbd>![Dependent or related entities](media/dependent-or-related-entities.png)
 
 Since these are relational apps with relational data, if you don't enable the dependent entities, you may run into errors down the line. To prevent this, before we enable the entity map, we provide you with a list of related entities that we recommend you enable.
 
@@ -255,13 +253,13 @@ When you select an entity map (for example, Customers V3&mdash;Contacts) and sel
 >[!Note]
 >This also applies when you Pause an entity, wherein you get the option to pause all the related entities as well.
 
-![Listing all the dependent entities](media/related-entity-maps.png)
+<kbd>![Listing all the dependent entities](media/related-entity-maps.png)
 
 You can further customize this by specifying a different master (default is Common Data Service) for resolving conflicts. In cases where you don't want to copy pre-existing data, you can skip initial sync by unchecking the **Initial Sync** checkbox or remove one or more of the related entities by unchecking them. You can also drag and drop the entity maps to change the order in which they would sync.
 
 Once you've made your selections and select **Run**, the entity map and all its related entities go through the initial write phase and you will be redirected to the entity map list page. In case you run into errors, you can view the error details under the **Initial sync details** tab. This tab provides all the detailed errors while copying pre-existing data. Once you fix the underlying errors, you can choose to rerun the execution and monitor the outcome. Alternatively, if you choose to no longer sync the pre-existing data or you run into recurring issues due to underlying data, you can choose to skip initial writes and turn on live writes by selecting **Skip initial sync** in the top menu.
 
-![Skipping initial writes](media/skip-initial-writes.png)
+<kbd>![Skipping initial writes](media/skip-initial-writes.png)
     
 #### Criteria for linking entities
 
@@ -269,15 +267,15 @@ To enable dual-write entity maps, an alternative key must be defined in the Comm
 
 For example, in a Finance and Operations app, **CustomerAccount** is the key for the Account entity.
 
-![Defining an alternative key](media/define-alternative-key.png)
+<kbd>![Defining an alternative key](media/define-alternative-key.png)
 
 In the Common Data Service, **accountnumber** is also defined as the key for the Account entity. 
 
-![Defining an account entity](media/define-account-entity.png)
+<kbd>![Defining an account entity](media/define-account-entity.png)
 
 In addition, you can see that **accountnumber** is mapped to **CustomerAccount** in the Customers V3 entity map.
 
-![Mapping account to entity map](media/mapped-to-entity-map.png)
+<kbd>![Mapping account to entity map](media/mapped-to-entity-map.png)
 
 ## Next steps
 
