@@ -104,7 +104,7 @@ The following steps describe how to customize your entity maps by modifying exis
    <kbd>![Adding a new birthday field](media/add-new-birthday-field.png)
 
    >[!Note]
-   >When you [create a new solution](#create-a-new-dual-write-solution-and-add-your-components-(customized-entity-maps)) with these modified entity maps, you'll need to specify the same publisher.
+   >When you [create a new solution](#create-a-new-dual-write-solution-and-add-your-components-customized-entity-maps) with these modified entity maps, you'll need to specify the same publisher.
 
    The following figure shows how to add a new entity map called **Address books**.
 

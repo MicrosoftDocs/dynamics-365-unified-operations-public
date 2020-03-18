@@ -95,7 +95,7 @@ Here is an example of how to add a new entity map called "Address books".
     <kbd>![Adding a new entity map](media/add-new-entity-map.png)
 
     >[!Note]
-    >When you [create a new solution](#create-a-new-dual-write-solution-and-add-your-components-(customized-entity-maps)) with these modified entity maps, you'll need to specify the same publisher.
+    >When you [create a new solution](#create-a-new-dual-write-solution-and-add-your-components-customized-entity-maps) with these modified entity maps, you'll need to specify the same publisher.
 
 2. Confirm the entity maps you just modified and added. Make sure to enable and test them to ensure they're working as expected.
 
