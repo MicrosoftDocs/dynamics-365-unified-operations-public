@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Approve vendors for specific products
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure shows you how to approve vendors for specific products. This allows you to control which vendors can be used when the product is added to a purchase order. You can use this procedure in demo data company USMF, or on your own data. This task would typically be carried out by a Purchasing manager.
 

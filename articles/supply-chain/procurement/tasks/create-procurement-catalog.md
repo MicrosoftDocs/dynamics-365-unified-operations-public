@@ -28,13 +28,13 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create a procurement catalog
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic explains how to create a procurement catalog. This task would typically be carried out by a procurement professional. You will also learn how employees can use the catalog when they create a requisition. Before you can create a catalog, there must be a procurement category hierarchy in your system. The hierarchy is inherited by the new catalog, along with all the products that are in the hierarchy. You can use this guide in demo data company USMF where the procurement category hierarchy is available, as well as the examples used in the procedure steps.
 
 
 ## Ensure that a procurement category hierarchy exists
-1. Go to **navigation pane > Modules > Procurement and sourcing > Procurement categories**. A procurement category hierarchy is available in the USMF demo data company and products have been added to the **Office machines/Computers** category. If you’re running this procedure as a task guide, you’ll need to unlock the guide if you want to browse through the category. If a hierarchy was not available, you’d create it by clicking **New**. This can only be done once.  
+1. Go to **navigation pane > Modules > Procurement and sourcing > Procurement categories**. A procurement category hierarchy is available in the USMF demo data company and products have been added to the **Office machines/Computers** category. If you're running this procedure as a task guide, you'll need to unlock the guide if you want to browse through the category. If a hierarchy was not available, you'd create it by clicking **New**. This can only be done once.  
 2. Close the page.
 
 ## Create a catalog
@@ -56,7 +56,7 @@ This topic explains how to create a procurement catalog. This task would typical
 ## Make the catalog visible
 1. Go to **navigation pane > Modules > Procurement and sourcing > Setup > Policies > Purchasing policies**.
 2. Select **Procurement Policy USMF**. You need to select the purchasing policy for the legal entity that the worker connected to your user profile is allowed to order products in. In the USMF demo data, the Admin user is connected to the worker called **Julia Funderburk**, and she orders products in USMF by default.  
-3. Select the catalog that you’ve just created.
+3. Select the catalog that you've just created.
 4. Select **OK**.
 
 ## Use the catalog

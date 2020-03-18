@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Assign a product lifecycle state to a released product
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure shows how to assign a product lifecycle state to a released product. Prerequisite: You need to play the task guide "Create a new product lifecycle state" first to make sure that at least one product lifecycle state is created before you can play this guide.
 

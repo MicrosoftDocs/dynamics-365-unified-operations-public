@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create configuration rules
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure creates configuration rules that can be used for dimension-based configuration to enforce or prevent certain combinations of BOM lines. The demo data company used to create this procedure is USMF. This is the seventh procedure out of eight that explains how to build combinations for dimension-based configuration.
 

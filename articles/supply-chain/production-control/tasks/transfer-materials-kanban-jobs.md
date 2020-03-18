@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Transfer materials with kanban jobs
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure focuses on executing a withdrawal kanban job to transfer materials. The demo data company used to create this procedure is USMF. This procedure is intended for the warehouse worker.
 
