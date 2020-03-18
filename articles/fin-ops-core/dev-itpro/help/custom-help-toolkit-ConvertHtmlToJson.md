@@ -2,10 +2,10 @@
 # required metadata
 
 title: Custom Help Toolkit
-description: This topic describes the components in the custom help toolkit for Finance and Operations apps. 
+description: This article describes the components in the custom help toolkit for Finance and Operations apps. 
 author: edupont04
 manager: AnnBe
-ms.date: 02/24/2020
+ms.date: 03/18/2020
 ms.topic: article
 ms.service: dynamics-ax-platform
 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Operations
 
 [!include [banner](../includes/banner.md)]
 
-The [Custom Help Toolkit](custom-help-toolkit.md) includes the **ConvertHtmlToJson** tool that converts HTML files to JSON files. The JSON files will be used by the search service so that the content can be indexed as the HTML files cannot be used for this purpose.  
+The [Custom Help Toolkit](custom-help-toolkit.md) includes the **ConvertHtmlToJson** tool that converts HTML files to JSON files. The JSON files are used by the search service so that the content can be indexed.  
 
 ## <a name="json"></a>Use the ConvertHtmlToJson tool to generate JSON files
 

@@ -5,7 +5,7 @@ title: Language and locale descriptors
 description: This article maps the language names between the finance and operations client and the GitHub repos with Microsoft's Help files. 
 author: edupont04
 ms.service: dynamics-ax-platform
-ms.date: 02/26/2020
+ms.date: 03/18/2020
 
 # optional metadata
 
@@ -26,9 +26,9 @@ ms.dyn365.ops.version: Operations
 
 ---
 
-# Language and locale descriptors in product and Help
+# Language and locale descriptors in product and help
 
-The client used by Finance and Operations apps supports multiple languages and locales. To add custom Help content for one or more locales to the in-product Help pane, you must ensure:
+The client used by Finance and Operations apps supports multiple languages and locales. To add custom help content for one or more locales to the in-product Help pane, you must make sure that the following is true:
 
 1. The value of the ```ms.locale``` property in each HTML file matches the locale of the content.  
 

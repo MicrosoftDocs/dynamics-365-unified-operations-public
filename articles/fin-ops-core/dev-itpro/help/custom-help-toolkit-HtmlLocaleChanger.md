@@ -2,10 +2,10 @@
 # required metadata
 
 title: Custom Help Toolkit
-description: This topic describes the components in the custom help toolkit for Finance and Operations apps. 
+description: This article describes the components in the custom help toolkit for Finance and Operations apps. 
 author: edupont04
 manager: AnnBe
-ms.date: 02/24/2020
+ms.date: 03/18/2020
 ms.topic: article
 ms.service: dynamics-ax-platform
 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Operations
 
 [!include [banner](../includes/banner.md)]
 
-The custom help toolkit includes the **HtmlLocaleChanger** tool that you can use to process HTML files that are generated with the [HtmlFromRepoGenerator tool](custom-help-toolkit-HtmlFromRepoGenerator.md).  
+The custom help toolkit includes the **HtmlLocaleChanger** tool that can process HTML files that are generated with the [HtmlFromRepoGenerator](custom-help-toolkit-HtmlFromRepoGenerator.md) tool.  
 
 ## <a name="htmllocale"></a>Use the HtmlLocaleChanger tool to align locales
 

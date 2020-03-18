@@ -2,10 +2,10 @@
 # required metadata
 
 title: Custom Help Toolkit
-description: This topic describes the components in the custom help toolkit for Finance and Operations apps. 
+description: This article describes the components in the custom help toolkit for Finance and Operations apps. 
 author: edupont04
 manager: AnnBe
-ms.date: 02/04/2020
+ms.date: 03/18/2020
 ms.topic: article
 ms.service: dynamics-ax-platform
 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Operations
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft has published a GitHub repository with scripts and tools that can help you prepare context-sensitive Help for customized solutions that are based on Finance and Operations apps. This context-sensitive Help can be accessed from the in-product Help pane.
+Microsoft has published a GitHub repository with scripts and tools that can help you prepare context-sensitive Help for customized Finance and Operations solutions. This context-sensitive Help can be accessed from the in-product Help pane.
 
 ## Tools in the toolkit
 
