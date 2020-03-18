@@ -5,7 +5,7 @@ title: Header module
 description: This topic covers header modules and describes how to create page headers in Microsoft Dynamics 365 Commerce.
 author: anupamar
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 03/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -55,7 +55,7 @@ The following modules can be used in a header module:
 
 - **Navigation menu** – The navigation menu represents the channel navigation hierarchy and other static navigation links. The channel navigation hierarchy can be configured in Dynamics 365 Commerce. The navigation menu has a **Navigation Source** property that is used to specify Retail Server navigation menu items and static menu items as a source. If static menu items are specified as a source, relative links to other pages on the site can be provided. Configured items then appear as header navigation. 
 - **Search** – The search module lets users enter search terms to search for products. The URL of the default search page and the search query parameters must be provided at **Site Settings \> Extensions**. The search module has properties that let you suppress the search button or label as you require. The search module also supports auto-suggest options, such as product, keyword, and category search results.
--**Cart icon** - The cart icon represents the cart icon which shows number of items in the cart at any given time. See [Cart icon module](add-carticon.md)
+-**Cart icon** - The cart icon module represents the cart icon, which shows the number of items in the cart at any given time. For more information, see [Cart icon module](add-carticon.md).
 
 ## Create a header module for a page
 
@@ -70,9 +70,10 @@ To create a header module, follow these steps.
 1. In the property pane for the navigation menu module, configure the properties of the navigation menu module.
 1. In the **Search** slot of the header module, add a search module. 
 1. In the property pane for the search module, configure the properties of the search module. 
+1. n the **Cart icon** slot of the header module, add a cart icon module. 
+1. In the property pane for the cart icon module, configure the properties of the cart icon module. If you want to display a mini cart, select the **Show mini cart** property.
 1. Save the page fragment, finish editing it, and publish it. 
-1. In the **Cart icon** slot add cart icon module. 
-1. If you want to see a mini cart, turn on the **Show mini cart**  property on cart icon.
+
 
 To help guarantee that a header appears on every page, follow these steps on every page template that is created for the site.
 
