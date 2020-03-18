@@ -53,32 +53,31 @@ These topics describe dual-write integration.
 
 These topics describe mapping between concepts in Finance and Operations applications and concepts in model-driven apps in Microsoft Dynamics 365.
 
-+ [Organization hierarchy awareness](organization-mapping.md)
-+ [Company concept in Common Data Service](company-data.md)
-
-    + [Bootstrap with company data FAQ](bootstrap-company-data.md)
-
 + [Integrated customer master](customer-mapping.md)
-+ [Unified product experience](product-mapping.md)
-
-    + [Integrated sites and warehouses](sites-warehouses-mapping.md)
-
 + [Integrated vendor master](vendor-mapping.md)
 
     + [Switch between vendor designs](vendor-switch.md)
 
++ [Customer loyalty cards and reward points](loyalty-mapping.md)
++ [Unified product experience](product-mapping.md)
+
+    + [Integrated sites and warehouses](sites-warehouses-mapping.md)
+
++ [Organization hierarchy awareness](organization-mapping.md)
 + [Access to finance and tax reference data](finance-tax-reference.md)
 
     + [Integrated ledger](ledger-mapping.md)
     + [Integrated tax master](tax-mapping.md)
 
-+ [Integrated sites and warehouses](sites-warehouses-mapping.md)
 + [Synchronizing on-demand with the Dynamics 365 Supply Chain Management price engine](pricing-engine.md)
 + [Prospect to cash in dual-write](dual-write-prospect-to-cash.md)
 + [In-house assets for servicing](in-house-assets.md)
 + [Integrated worker, job, and position](integrated-hr.md)
++ [Company concept in Common Data Service](company-data.md)
+
+    + [Bootstrap with company data FAQ](bootstrap-company-data.md)
+
 + [Support for Field Service solutions and Project Service Automation solutions](field-service-project-service-automation.md)
-+ [Customer loyalty cards and reward points](loyalty-mapping.md)
 
 ## Support
 
