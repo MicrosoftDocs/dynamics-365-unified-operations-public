@@ -117,10 +117,10 @@ When you purchase a subscription, you will receive details about how to sign up 
 - The Azure subscription that is associated with the project is managed by Microsoft. Therefore, there is no separate billing for Azure costs. The costs are covered by your subscription.
 - The production environment in the project is maintained by Microsoft. Therefore, code deployments, upgrades, and infrastructure maintenance are run directly by Microsoft, not by your staff. 
 
-### Identify the project as an AX2012 Upgrade
-When you first sign in to your LCS implementation project, you're guided through the **Project Onboarding** wizard. If you aren't automatically prompted, you can always visit the **Project Onboarding** page later. Use the navigation menu next to **Project Settings** in your project.
+### Identify the project as an AX 2012 upgrade
+When you first sign in to your LCS implementation project, you're guided through the **Project Onboarding** wizard. You can always visit the **Project Onboarding** wizard later using the navigation menu next to **Project Settings** in your project.
 
-In Project Onboarding, in the **Project Scope** section, you can use the **Legacy System** field to identify the project as an AX2012 Upgrade. It's crucial that you identify the project in this way, so that the sandbox infrastructure that is deployed is compatible with the upgrade process that is outlined here. If this step isn't completed early in the project, you might accidentally deploy on a newer infrastructure that is incompatible with this process. In that case, the upgrade effort might be delayed.
+While on the Project Onboarding wizard, in the **Project Scope** section, you can use the **Legacy System** field to identify the project as an AX 2012 upgrade. It's crucial that you identify the project in this way, so that the sandbox infrastructure that is deployed is compatible with the upgrade process that is outlined here. If this step isn't completed early in the project, you might accidentally deploy your Sandbox on a newer infrastructure that is incompatible with this process. In that case, the upgrade effort might be delayed.
 
 ### Perform the AX 2012 preparation tasks
 Complete the tasks that the upgrade analyzer tool discovered, and that are documented in your upgrade project plan. Your Microsoft Dynamics AX system administrator and database administrator (DBA) must complete these tasks.
