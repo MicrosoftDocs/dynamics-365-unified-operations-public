@@ -1398,6 +1398,8 @@
           href: sysadmin/create-rules-optimization-advisor.md
       - name: Report a production outage
         href: lifecycle-services/report-production-outage.md
+      - name: Configure and manage database logging
+        href: sysadmin/configure-manage-database-log.md
     - name: Upgrades, updates, and hotfixes
       items:
       - name: Upgrades, updates, and hotfixes resources
