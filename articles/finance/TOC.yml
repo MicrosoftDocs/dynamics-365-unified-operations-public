@@ -1696,6 +1696,8 @@
           href: localizations/tasks/fr-00004-setup-method-payment.md
         - name: Update method of payment on customer
           href: localizations/tasks/fr-00004-update-method-payment-customer.md
+        - name: DAS-2 report
+          href: localizations/emea-fra-das2-report.md
       - name: Germany
         items:
         - name: Germany overview
