@@ -5,7 +5,7 @@ title: Add script code to site pages to support telemetry
 description: This topic describes how to add client-side script code to your site pages to support the collection of client-side telemetry. 
 author: bicyclingfool
 manager: annbe
-ms.date: 03/17/2020
+ms.date: 03/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -50,11 +50,12 @@ A page fragment allows you to reuse inline or external script code across all pa
 To create a reusable page fragment for your inline script code in site builder, follow these steps.
 
 1. Go to **Page Fragments**, and then select **New**.
-1. In the **New Page Fragment** dialog box, select **External script** to insert a link to an external script, or **Inline script** to insert inline script.
+1. In the **New Page Fragment** dialog box, select **Inline script**.
 1. Under **Page Fragment Name**, enter a name for the fragment, and then select **OK**.
 1. Under the page fragment you created, select the **Default inline script** module. 
 1. Under **Inline script** in the property pane on the right, enter your client-side script, and then configure other options as necessary.
 1. Select **Save**, and then select**Finish editing**.
+1. Select **Publish**.
 
 ### Create a reusable page fragment for your external script code
 
@@ -66,16 +67,18 @@ To create a reusable page fragment for your external script code in site builder
 1. Under the page fragment you created, select the **Default external script** module. 
 1. Under **Script source** in the property pane on the right, add an external or relative URL for the external script source, and then configure other options as necessary.
 1. Select **Save**, and then select**Finish editing**.
+1. Select **Publish**.
 
 ## Add the fragment to a template
 
-To add the page fragment with the script code to a template, follow these steps.
+To add the page fragment with the script code to a template in site builder, follow these steps.
 
 1. Go to **Templates**, and open the template for the pages that you want to add your script code to.
 1. In the left pane, expand the template hierarchy to show the **HTML Head** slot.
 1. In the **HTML Head** slot, select the ellipsis button (**...**), and then select **Add Page Fragment**.
 1. Select the fragment that you created for your script code.
-1. Select **Save**, and then select **Finish editing**
+1. Select **Save**, and then select **Finish editing**.
+1. Select **Publish**.
 
 ## Add an external script or inline script directly to a template
 
@@ -85,12 +88,13 @@ If you want to insert an inline or external script directly into a set of pages 
 
 To add an inline script directly to a template in site builder, follow these steps.
 
-1. Go to **Templates**, and open the template for the pages that you want to add your script code to.
+1. Go to **Templates**, and open the template for the pages that  you want to add your script code to.
 1. In the left pane, expand the template hierarchy to show the **HTML Head** slot.
 1. In the **HTML Head** slot, select the ellipsis button (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, select **Inline script**.
 1. Under **Inline script** in the property pane on the right, enter your client-side script, and then configure other options as necessary.
 1. Select **Save**, and then select**Finish editing**.
+1. Select **Publish**.
 
 ### Add an external script directly to a template
 
@@ -102,9 +106,7 @@ To add an external script directly to a template in site builder, follow these s
 1. In the **Add Module** dialog box, select **External script**.
 1. Under **Script source** in the property pane on the right, add an external or relative URL for the external script source, and then configure other options as necessary.
 1. Select **Save**, and then select**Finish editing**.
-
-> [!NOTE]
-> After you've finished, you must publish the fragment and the master template. 
+1. Select **Publish**.
 
 ## Additional resources
 
