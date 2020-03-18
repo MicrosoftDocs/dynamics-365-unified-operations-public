@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create a new product lifecycle state
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure shows how to create a new product lifecycle state. A product lifecycle state documents the lifecycle state of a released product or product variant. Product lifecycle states are defined by the user, typically a product manager, or a product master data manager. Specific business processes, for example, Master planning, can be affected by a specific lifecycle state.
 

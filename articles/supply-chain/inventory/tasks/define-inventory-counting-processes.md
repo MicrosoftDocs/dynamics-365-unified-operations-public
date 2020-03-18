@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Define inventory counting processes
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic describes the configuration of basic inventory counting processes by creating a counting group and a counting journal. It also shows you how to enable counting policies on a warehouse and item level. These tasks would typically be carried out by a warehouse supervisor. It is a prerequisite to have some existing released products and warehouses. If you're using a demo data company, you can run this procedure in the USMF company with any stocked item.
 

@@ -28,9 +28,9 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # ER Map components of the created format to data model elements (November 2016)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-The following procedure shows how a user in either the System administrator or Electronic reporting developer role can map data model elements to components of the created Electronic reporting (ER) configuration, which defines an electronic document format for the payments business domain. This format will be used later to generate electronic documents for processing payments. In this example, you will create a format configuration for the sample company, ‘Litware, Inc.’. These steps can be performed in any company as ER configurations are shared for all companies. To complete these steps, you must first complete the steps in the “Create a format configuration” task guide.
+The following procedure shows how a user in either the System administrator or Electronic reporting developer role can map data model elements to components of the created Electronic reporting (ER) configuration, which defines an electronic document format for the payments business domain. This format will be used later to generate electronic documents for processing payments. In this example, you will create a format configuration for the sample company, 'Litware, Inc.'. These steps can be performed in any company as ER configurations are shared for all companies. To complete these steps, you must first complete the steps in the "Create a format configuration" task guide.
 
 
 ## Select a format configuration
@@ -101,7 +101,7 @@ The following procedure shows how a user in either the System administrator or E
 2. Close the page.
 
 ## Change status of the current version of format configuration
-In the next steps, you’ll change the status of the format configuration from Draft to Completed to make it available for payment document generation.  
+In the next steps, you'll change the status of the format configuration from Draft to Completed to make it available for payment document generation.  
 1. Click Change status.
 2. Click Complete.
 3. In the Description field, type a value.

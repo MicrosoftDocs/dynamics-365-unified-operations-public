@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Set up accessorial assignments
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure shows how to set up an accessorial assignment. This is typically done by a transportation coordinator. Before you use this guide you need to run the "Set up hub accessorial charges and accessorial masters" guide.
 

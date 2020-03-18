@@ -3,7 +3,7 @@
 
 title: Cloud operations and servicing
 description: The Finance and Operations apps are managed services. This means that Microsoft is responsible for managing and operating the production environments. Microsoft’s Dynamics Service Engineering team is available 24 hours a day, 7 days a week, and 365 days a year to operate and manage our customers' production systems. 
-author: manalidongre
+author: laneswenka
 manager: AnnBe
 ms.date: 10/03/2019
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 60373
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: manado
+ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

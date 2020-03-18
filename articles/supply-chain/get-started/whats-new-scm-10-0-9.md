@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.9 (Apr
 description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.9. 
 author: kamaybac
 manager: AnnBe
-ms.date: 02/13/2020
+ms.date: 02/19/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,7 +15,7 @@ ms.technology:
 
 # ms.search.form: 
 # ROBOTS: 
-audience: Developer, IT Pro
+audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -25,7 +25,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kamaybac
-ms.search.validFrom: 2020-02-13 
+ms.search.validFrom: 2020-02-19 
 ms.dyn365.ops.version: 10.0.9
 
 ---
@@ -42,25 +42,18 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 
 ## Features included in this release
 
-The features listed in this section are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. Additional links point to additional documentation that is currently available for that feature.
-
-### Debut features
-
-The following features are new for version 10.0.9. You must enable these features using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
-
-- [Flexible warehouse-level dimension reservation](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/flexible-warehouse-level-dimension-reservation)
-- [Inbound quality check](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inbound-quality-check)
-
-### Features now added to feature management
-
-The following features have been released earlier, but only with limited availability. Some customers may have seen some of these features before, but as of version 10.0.9, they are available to all customers through [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. Additional links point to additional documentation or videos that are currently available for that feature. Some of these features may also have been included a previous incremental release, but weren't announced in previous *What's new* topic, so we are adding them here. Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
 - [Advanced load building during a wave](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/advanced-load-building-during-wave)
 - [Auto-release shipment for cross dock](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/auto-release-shipment-cross-dock) - For more information, see [Auto-release shipment for cross-docking](../warehousing/auto-release-shipment-for-cross-docking.md).
+- [Compare item price storage](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/compare-item-price-storage) - For more information, see [Compare item prices storage report](../cost-management/compare-item-price.md).
 - [Consolidate shipment enhancements](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/consolidate-shipment-enhancements)
 - [Cross-docking](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/planned-cross-docking)
 - Further catch weight integration [10.0.1](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.1), [10.0.2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.2), [10.0.3](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.3), [10.0.4](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.4), [10.0.5](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.5), [10.0.6](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.6), [10.0.7](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.7) - For more information, see [Catch weight product processing with warehouse management](../warehousing/catch-weight-processing.md) and also the [Catch weight product improvements](https://www.microsoft.com/videoplayer/embed/RE4jzx8) video.
+- [Flexible warehouse-level dimension reservation](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/flexible-warehouse-level-dimension-reservation) - For more information, see [Flexible warehouse-level dimension reservation policy](../warehousing/flexible-warehouse-level-dimension-reservation.md).
+- [Inbound quality check](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inbound-quality-check)
 - [Inventory aging report storage](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inventory-aging-report-storage)
+- [Inventory value report storage](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inventory-value-report-storage)
 - [Master planning progress Gantt chart](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/master-planning-progress-gantt-chart) - For more information, see [Monitor a master planning run](../master-planning/tasks/monitor-master-planning-run.md) and also the [MRP performance and usability improvements](https://www.microsoft.com/videoplayer/embed/RE4myrJ) video.
 - [Outbound sorting](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/outbound-sorting)
 - [Packing vs. storage dimensions](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/packing-vs.-storage-dimensions)
@@ -94,13 +87,13 @@ Wondering about upcoming and recently released capabilities in any of our busine
 
 Check out the [Dynamics 365: 2020 release wave 1 plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
-### Removed and deprecated features
+### Removed and deprecated Supply Chain Management features
 
-The [Removed or deprecated features](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated for Finance and Operations apps.
+The [Removed or deprecated features in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) topic describes features that have been or are scheduled to be removed or deprecated for Supply Chain Management.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
-Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
+Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) topic 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.

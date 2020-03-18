@@ -221,7 +221,7 @@ In this example, the calculation formula **@100+@330** means that the amount in 
 When the row in a row definition has a format code of **CAL**, and you enter a mathematical calculation in the **Related Formulas/Rows/Units** cell, you must also enter the letter of the associated column and row on the report. For example, enter **A.120** to represent column A, row 120. Alternatively, you can use an at sign (@) to indicate all columns. For example, enter **@120** to represent all columns in row 120. Any mathematical calculation that doesn't have a column letter or an at sign (@) is assumed to be a real number.
 
 > [!NOTE]
-> If you use a label row code to reference a row, you must use a period (.) as a separator between the column letter and the label (for example, **A.GROSS\_MARGIN/A.SALES**). If you use an at sign (@), a separator isn't required (for example, **@GROSS\_MARGIN/@SALES**).
+> If you use a label row code to reference a row, you must use a period (.) as a separator between the column letter and the label (for example, **A.GROSS\_MARGIN/A.SALES**). If you use an at sign (@), a separator isn't required (for example, **\@GROSS\_MARGIN/@SALES**).
 
 ### Example of a calculation formula for a specific column
 

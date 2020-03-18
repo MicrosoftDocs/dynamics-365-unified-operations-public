@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Set up prerequisites for nonconformance management
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Use this topic to enable nonconformance management processes. A nonconformance describes a procedure or item that has a quality problem, where the descriptive information includes the source and type of problem. This procedure uses the USMF demo data company. This procedure is typically performed by a quality manager.
 
@@ -42,7 +42,7 @@ Use this topic to enable nonconformance management processes. A nonconformance d
 
 ## Enable user for nonconformance processing
 1. In the navigation pane, go to **Modules > System administration > Users > Users**. 
-2. Use the Quick Filter to find the user who will be approving or rejecting the nonconformance records. For example, filter on the **Name** field with a value of `Ricardo`. To process the approval of a nonconformance, the user who approves or rejects nonconformances must have a “Name” value assigned on the **Users** page. To use the document notes, the user must also have Document handling activated in the user options.  
+2. Use the Quick Filter to find the user who will be approving or rejecting the nonconformance records. For example, filter on the **Name** field with a value of `Ricardo`. To process the approval of a nonconformance, the user who approves or rejects nonconformances must have a "Name" value assigned on the **Users** page. To use the document notes, the user must also have Document handling activated in the user options.  
 3. Mark the row of the desired record.
 4. Select **User options**.
 5. Select the **Preferences** tab.

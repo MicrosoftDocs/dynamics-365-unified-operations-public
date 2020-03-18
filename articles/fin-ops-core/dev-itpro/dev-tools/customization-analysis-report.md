@@ -44,11 +44,15 @@ The Customization Analysis Report is a tool that analyzes your customization and
 ## How to generate the report
 To generate the Customization Analysis Report, run the following command in a development environment.
 
-    xppbp.exe -metadata=<local packages folder> -all -model=<ModelName> -xmlLog=C:\BPCheckLogcd.xml -module=<PackageName> -car=<reportlocation>
+```Console
+xppbp.exe -metadata=<local packages folder> -all -model=<ModelName> -xmlLog=C:\BPCheckLogcd.xml -module=<PackageName> -car=<reportlocation>
+```
 
 **Example**
 
-    xppbp.exe -metadata=C:\Packages -all -model="MyAppSuiteCustomizations" -xmlLog=C:\temp\BPCheckLogcd.xml -module="ApplicationSuite" -car=c:\temp\CAReport.xlsx
+```Console
+xppbp.exe -metadata=C:\Packages -all -model="MyAppSuiteCustomizations" -xmlLog=C:\temp\BPCheckLogcd.xml -module="ApplicationSuite" -car=c:\temp\CAReport.xlsx
+```
 
 The xppbp.exe tool is located in c:\\packages\\bin or I:\\AosService\\PackagesLocalDirectory\\bin.
 
@@ -199,7 +203,7 @@ This is an informational message that highlights the need to call <strong>skip</
 <tr class="even">
 <td>How to fix it</td>
 <td>The following examples show when the rule will fail or pass. Use these examples as guidelines to refactor your code.
-<pre><code>ttsbegin;
+<pre language="xpp"><code>ttsbegin;
 try {
 }
 // fail
@@ -264,7 +268,7 @@ catch(Exception::UpdateConflictNotRecovered) {}</code></pre></td>
 <ul>
 <li>Set the <strong>Cache Data Method</strong> property to <strong>Yes</strong>.</li>
 <li><p>Set the <strong>Cache Data Method</strong> property to <strong>Auto</strong>, and mark the data method of the table with the <strong>SysClientCacheDataMethodAttribute</strong> attribute. Here is an example.</p>
-<pre><code>[SysClientCacheDataMethodAttribute(true)]
+<pre language="xpp"><code>[SysClientCacheDataMethodAttribute(true)]
 Display TransDate myDateMethod()
 {
     ...

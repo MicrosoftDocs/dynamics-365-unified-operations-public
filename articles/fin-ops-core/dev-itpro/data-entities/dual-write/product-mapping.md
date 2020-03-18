@@ -79,7 +79,7 @@ Unit | uoms
 Unit conversions | msdyn_ unitofmeasureconversions
 Product specific unit of measure conversion | msdyn_productspecificunitofmeasureconversion
 Product categories | msdyn_productcategories | Each of the product categories and information about its structure and characteristics are contained in the product category entity. 
-Product category hierachies | msdyn_productcategoryhierarhies | You use product hierarchies to categorize or group products.The category hierarchies are available in Common Data Service using the Prodcut category hierarchy entity. 
+Product category hierarchies | msdyn_productcategoryhierarhies | You use product hierarchies to categorize or group products.The category hierarchies are available in Common Data Service using the Product category hierarchy entity. 
 Product category hierarchy roles | msdyn_productcategoryhierarchies | Product hierarchies can be used for different roles in D365 Finance and Operations. The specify which category is used in each role the product category role entity is used. 
 Product category assignments | msdyn_productcategoryassignments | To assign a product to a category the product category assignments entity can be used.
 
@@ -95,7 +95,7 @@ Because the product is represented as a SKU, the concepts of distinct products, 
 
 ![Data model for products](media/dual-write-product.png)
 
-With the dual-write functionality enabled, the apps from Finance and Operations will be syncronized in other Dynamics 365 apps in **Draft** state. They are added to the first pricelist with the same currency. In other words, they are added to the first pricelist in a Dynamics 365 app that matches the currency of your legal entity where the product is released in a Finance and Operations app. 
+With the dual-write functionality enabled, the apps from Finance and Operations will be synchronized in other Dynamics 365 apps in **Draft** state. They are added to the first pricelist with the same currency. In other words, they are added to the first pricelist in a Dynamics 365 app that matches the currency of your legal entity where the product is released in a Finance and Operations app. 
 
 By default products from Finance and Operations apps are synchronized to other Dynamics 365 apps in **Draft** state. To synchronize the product with **Active** state so that you can directly use it in sales order quotations, for example, the following setting needs to be chosen: **System> Adminstration > System administration > System settings > Sales** tab and select **Create products in active state = yes**. 
 
@@ -113,7 +113,7 @@ Note that the synchronization of products happens from Finance and Operations ap
 
 Product dimensions are characteristics that identify a product variant. The four product dimensions (Color, Size, Style, and Configuration) are also mapped to Common Data Service to define the product variants. The following illustration shows the data model for the product dimension Color. The same model is applied to Sizes, Styles and Configurations. 
 
-![Data model for products](media/dual-write-product-2.PNG)
+![Data model for products](media/dual-write-product-two.png)
 
 [!include [product colors](includes/EcoResProductColorEntity-msdyn-productcolor.md)]
 
@@ -149,7 +149,7 @@ Default order settings define the site and warehouse where items will be sourced
 
 The units of measure and its respective conversions is available in the Common Data Service following the data model shown in the diagram.
 
-![Data model for products](media/dual-write-product-3.PNG)
+![Data model for products](media/dual-write-product-three.png)
 
 The unit of measure concept is integrated between Finance and Operations apps and other Dynamics 365 apps. For each unit class in a Finance and Operations app, a unit group is created in a Dynamics 365 app, which contains the units belonging to the unit class. A default base unit is also created for every unit group. 
 
@@ -167,7 +167,7 @@ When dual write is enabled, units from Finance and Operations apps are synchroni
 
 ### Matching units and unit classes/groups data from Finance and Operations and other Dynamics 365 apps
 
-First, it is important to note that the integration key for unit is msdyn_symbol. Therefore, this value must be unique in Common Data Service or other Dynamics 365 apps. Because in other Dynamics 365 apps it is the pair “Unit group ID” and “Name” that define the uniqueness of a unit, you need to consider different scenarios for matching unit data between Finance and Operations apps and Common Data Service.
+First, it's important to note that the integration key for unit is msdyn_symbol. Therefore, this value must be unique in Common Data Service or other Dynamics 365 apps. Because in other Dynamics 365 apps it is the pair “Unit group ID” and “Name” that define the uniqueness of a unit, you need to consider different scenarios for matching unit data between Finance and Operations apps and Common Data Service.
 
 For units matching/overlapping in Finance and Operations apps and other Dynamics 365 apps:
 
@@ -180,7 +180,7 @@ As part of dual-write the unit groups from Finance and Operations apps and its c
 
 For units in other Dynamics 365 apps that do not exist in Finance and Operations apps:
 
-The field msdyn_symbol must be filled in for all units. The units can always be created in Finance and Operations apps in the corresponding unit class (if it exists). If the unit class does not exist, first the unit class must be created (note that you cannot create a unit class in Finance and Operations apps except through extension if you are extending the enum) matching the other Dynamics 365 apps unit group. Then you can create the unit. Note that the unit symbol in Finance and Operations apps must be the msdyn_symbol previously specified in other Dynamics 365 apps for the unit.
+The field msdyn_symbol must be filled in for all units. The units can always be created in Finance and Operations apps in the corresponding unit class (if it exists). If the unit class doesn't exist, first the unit class must be created (note that you cannot create a unit class in Finance and Operations apps except through extension if you are extending the enum) matching the other Dynamics 365 apps unit group. Then you can create the unit. Note that the unit symbol in Finance and Operations apps must be the msdyn_symbol previously specified in other Dynamics 365 apps for the unit.
 
 ## Product policies: dimension, tracking and storage groups
 
@@ -206,17 +206,17 @@ The product policies are sets of policies used for defining products and its cha
 ## Integration key for products 
 
 To uniquely identify products between Dynamics 365 for Finance and Operations and products in Common Data Service the integration keys are used. 
-For products, the **(productnumber)** is the unique key that identifies a product in Common Data Service. It is composed by the concatenation of: **(company, msdyn_productnumber)**. The **company** indicates the legal entity in Finance and Operations and **msdyn_productnumber** indicates the product number for the specific product in Finance and Operations. 
+For products, the **(productnumber)** is the unique key that identifies a product in Common Data Service. It's composed by the concatenation of: **(company, msdyn_productnumber)**. The **company** indicates the legal entity in Finance and Operations and **msdyn_productnumber** indicates the product number for the specific product in Finance and Operations. 
 
 For a other Dynamics 365 apps user, the product is identified in the UI with the **msdyn_productnumber** (note that the label of the field is **Product number**). In the product form both the company and the msydn_productnumber are shown. However, the (productnumber) field, the unique key for a product, is not shown. 
 
-Note that if apps are built on top of Common Data Service, special attention should be paid to using the (productnumber), that is the unique product ID, as the integration key, and not the msdyn_productnumber, due to the fact that the last is not unique. 
+If you build apps on Common Data Service, you should pay attention to using the **productnumber** (the unique product ID) as the integration key. Do not use **msdyn_productnumber**, because it's not unique. 
 
 ## Initial synchronization of products and migration of data from Common Data Service to Finance and Operations
 
 ### Initial synchronization of products 
 
-When dual write is enabled, products from Dynamics 365 Finance and Operations are synchronized to Common Data Service and other Dynamics 365 apps. Note that products created in Common Data Service and other Dynamics 365 apps prior to dual write, will not be updated or matched with product data from Finance and Operations.
+When dual-write is enabled, products from Finance and Operations apps are synchronized to Common Data Service and other model-driven apps in Dynamics 365. Products created in Common Data Service and other Dynamics 365 apps before dual-write was released will not be updated or matched with product data from Finance and Operations apps.
 
 ### Matching product data from Finance and Operations and other Dynamics 365 apps
 
@@ -228,4 +228,4 @@ Then, when the synchronization is enabled and takes place, the products from Fin
 
 ### Migration of product data from other Dynamics 365 apps to Finance and Operations
 
-If other Dynamics 365 apps has products that are not present in Finance and Operations, the administrator can first use the **EcoResReleasedProductCreationV2Entity** for importing those products in Finance and Operations. And secondly, match the product data from Finance and Operations and other Dynamics 365 apps as described above. 
+If other Dynamics 365 apps has products that aren't present in Finance and Operations, the administrator can first use the **EcoResReleasedProductCreationV2Entity** for importing those products in Finance and Operations. And secondly, match the product data from Finance and Operations and other Dynamics 365 apps as described above. 

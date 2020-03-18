@@ -5,7 +5,7 @@ title: Set up an online store channel
 description: This article provides information about online store channels and how to set them up in Dynamics 365 Commerce.
 author: kfend
 manager: AnnBe
-ms.date: 10/31/2019
+ms.date: 03/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -76,3 +76,27 @@ Organization hierarchies are used to structure commerce channels and to represen
 When you create an organization hierarchy, you assign a purpose to it. The purpose indicates how the hierarchy is used in the business structure. You can create one organization hierarchy for your store operations, and use that hierarchy for assortments, replenishment, and reporting. 
 
 Alternatively, you can create a separate organization hierarchy for each purpose. You can also create multiple hierarchies that have the same purpose, and assign a separate channel to each one. If you plan to publish product catalogs to the online store, you should, at a minimum, add the online store to an organization hierarchy for assortments. The products in a catalog are selected from the assortments that are assigned to the online store. When the catalog is published, the publishing process compares the effective dates for the assortment that is assigned to the online store with the products that are included in the catalog to determine which products to make available in the online store.
+
+## Additional resources
+
+[Configure your domain name](configure-your-domain-name.md)
+
+[Deploy a new e-Commerce site](deploy-ecommerce-site.md)
+
+[Create an e-Commerce site](create-ecommerce-site.md)
+
+[Associate an online site with a channel](associate-site-online-store.md)
+
+[Manage robots.txt files](manage-robots-txt-files.md)
+
+[Upload URL redirects in bulk](upload-bulk-redirects.md)
+
+[Set up a B2C tenant in Commerce](set-up-B2C-tenant.md)
+
+[Set up custom pages for user logins](custom-pages-user-logins.md)
+
+[Configure multiple B2C tenants in a Commerce environment](configure-multi-B2C-tenants.md)
+
+[Add support for a content delivery network (CDN)](add-cdn-support.md)
+
+[Enable location-based store detection](enable-store-detection.md)

@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Receive vendor fiscal documents (fixed assets - PIS and COFINS long term recoverable) (Brazil)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 You can post a fiscal document that you receive from the acquisition of fixed assets. You can recover the ICMS or PIS/COFINS taxes, or both. You can also recover monthly refund installments. These amounts are used to deduct the amount that is due during the tax assessment. This task uses the BRMF demo company.
 

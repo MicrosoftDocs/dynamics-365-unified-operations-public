@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create a formula by copying from an existing formula
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure shows how to quickly create a new formula by copying from an existing formula. You can use the demo data companies USMF, USP2, or USPI to create this procedure.
 

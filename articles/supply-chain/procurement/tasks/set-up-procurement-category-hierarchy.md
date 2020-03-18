@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Set up a procurement category hierarchy
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure shows you how to create new nodes in a procurement category hierarchy and how to configure a procurement category to be used in a procurement process. These tasks would typically be carried out by a Purchasing manager. Before you can start this procedure, there must be a category hierarchy of type Procurement. If you're using a demo data company, you can run this procedure in the USMF company.
 
@@ -43,7 +43,7 @@ This procedure shows you how to create new nodes in a procurement category hiera
 7. Select **Save**.
 
 ## Add products to your new procurement category
-1. Go to **Procurement and sourcing > Consignment > Procurement categories**. Select the node you just added. If you’re running this procedure as a task guide you might need to unlock the task guide to select the node.  
+1. Go to **Procurement and sourcing > Consignment > Procurement categories**. Select the node you just added. If you're running this procedure as a task guide you might need to unlock the task guide to select the node.  
 2. Toggle the expansion of the **Products** section.
 3. Select **Add** to associate products with the procurement category.
 4. Select the products you want to add to the procurement category.

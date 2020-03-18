@@ -28,9 +28,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create a requisition for consumption
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-This topic describes the process of creating a requisition. It shows you different ways to search for products in your procurement catalog and how to add a product that isn’t in your catalog. Before you start this procedure, you must have a purchasing policy set up with Consumption as the default type of requisition. You can walk through this procedure in demo data company USMF, or using your own data. The procedure can only be carried out by a user profile that is set up as worker. This task would normally be carried out by an employee. The **Employee** employ security role will allow you to carry out the tasks, or if you’re using USMF, you can log in as **Alicia**.
+This topic describes the process of creating a requisition. It shows you different ways to search for products in your procurement catalog and how to add a product that isn't in your catalog. Before you start this procedure, you must have a purchasing policy set up with Consumption as the default type of requisition. You can walk through this procedure in demo data company USMF, or using your own data. The procedure can only be carried out by a user profile that is set up as worker. This task would normally be carried out by an employee. The **Employee** employ security role will allow you to carry out the tasks, or if you're using USMF, you can log in as **Alicia**.
 
 
 ## Create a new requisition
@@ -62,7 +62,7 @@ This topic describes the process of creating a requisition. It shows you differe
 7. In the **Quantity** field, enter a number.
 8. In the **Find procurement category node** field, type the first part of the name of the category that you are looking for, and then select **Enter**. For example, enter `High` (highlighters).  
 9. Use the **InvokeDefaultButton** shortcut.
-10. Select **Add unlisted product to lines** to add a product that’s not listed in the procurement catalog.
+10. Select **Add unlisted product to lines** to add a product that's not listed in the procurement catalog.
 11. In the **Product name** field, type a value.
 12. In the **Unit** field, type a value.
 13. Select **OK**.

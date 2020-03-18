@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Transfer physical inventory within the warehouse
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure walks you through the process of creating and posting an inventory transfer journal in order to register movement of an item from one location in a warehouse to another. You need to have an inventory journal name set up for inventory transfers before you start this. You can walk through this procedure in demo data company USMF using the example values that are shown, or using you can use your own data if you have products and locations set up. These tasks would normally be carried out by a warehouse employee.
 
@@ -37,7 +37,7 @@ This procedure walks you through the process of creating and posting an inventor
 1. In the **Navigation pane**, go to **Inventory management > Journal entries > Items > Transfer**.
 2. Click **New**.
 3. In the **Name** field, enter or select a value.
-4. Click **OK**. There is the option to specify 'From' and 'To' dimensions for each journal line. These are essential for this journal type. You can transfer items to locations using different rules. In this example we’ll transfer an item within the same warehouse, from a license plate controlled location to a location that is not license plate controlled.   
+4. Click **OK**. There is the option to specify 'From' and 'To' dimensions for each journal line. These are essential for this journal type. You can transfer items to locations using different rules. In this example we'll transfer an item within the same warehouse, from a license plate controlled location to a location that is not license plate controlled.   
 
 ## Create journal lines
 1. Int the **Journal lines fastTab**, click **New**.

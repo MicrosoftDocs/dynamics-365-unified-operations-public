@@ -3,7 +3,7 @@
 
 title: Configure proxies for on-premises environments
 description: This topic describes how you can secure the on-premises environment behind a proxy.
-author: sarvanisathish
+author: faix
 manager: AnnBe
 ms.date: 12/09/2019
 ms.topic: article
@@ -22,7 +22,7 @@ ms.search.scope: Operations
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global 
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: sarvanis
+ms.author: osfaixat
 ms.search.validFrom: 2017-06-30 
 ms.dyn365.ops.version: Platform update 8 
 ---

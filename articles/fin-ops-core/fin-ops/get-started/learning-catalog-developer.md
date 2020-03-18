@@ -1,17 +1,17 @@
 ---
 title: Developer Learning Catalog
 description: Find all the training options for Finance and Operations.
-author: margoc
+author: loreleishannonmsft
 ms.topic: article
-ms.date: 01/08/2020
-ms.author: margoc
+ms.date: 02/19/2020
+ms.author: v-lshann
 ---
 
 # Developer Learning Catalog
 
 Do you need to write code to integrate with other data sources, extend core system functionality, or build a complex application?
 
-The following catalog is organized from core knowledge to specific domains, and from most basic to most advanced. If content exists in multiple formats, we'll let you know, so that you can choose the training format that best meets your needs. For more information, see Training content formats. 
+The following catalog is organized from core knowledge to specific domains, and from most basic to most advanced. If content exists in multiple formats, we'll let you know, so that you can choose the training format that best meets your needs. 
 
 ## Get started
 | Content  | Description     | Format     | Length    | 

@@ -5,7 +5,7 @@ title: Opt out of personalized recommendations
 description: This topic explains how you can let customers opt out of receiving personalized recommendations in Microsoft Dynamics 365 Commerce. 
 author: bebeale
 manager: AnnBe
-ms.date: 01/28/2020
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -89,12 +89,22 @@ The following example shows how a retailer can accomplish this task.
 
 [Product recommendations overview](product-recommendations.md)
 
+[Enable ADLS in a Dynamics 365 Commerce environment](enable-adls-environment.md)
+
 [Enable product recommendations](enable-product-recommendations.md)
 
 [Enable personalized recommendations](personalized-recommendations.md)
 
-[Add product recommendation lists to pages](add-reco-list-to-page.md)
+[Add recommendation lists to an e-Commerce site](add-reco-list-to-page.md)
 
-[Add recommendations panel to POS devices](add-recommendations-control-pos-screen.md)
+[Add product recommendations on POS](product.md)
 
-[Product collection module overview](product-collection-module-overview.md)
+[Add recommendations to the transaction screen](add-recommendations-control-pos-screen.md)
+
+[Adjust AI-ML recommendations results](modify-product-recommendation-results.md)
+
+[Manually create curated recommendations](create-editorial-recommendation-lists.md)
+
+[Create recommendations with demo data](product-recommendations-demo-data.md)
+
+[Product recommendations FAQ](faq-recommendations.md)

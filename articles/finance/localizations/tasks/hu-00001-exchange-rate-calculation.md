@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # HU-00001 Exchange rate calculation
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This task walks you through running an average exchange rate calculation. 
 
@@ -52,6 +52,6 @@ This task was created using the demo data company DEMF with the country/region o
 13. In the From date field, enter a date.
     * Select a transaction date to specify a period. Ledger transactions are included in the calculation of the average exchange rate if the transaction dates are on or after the date that you enter in this field, and before the transaction date of the journal line. If you leave this field blank, the calculation includes all ledger transactions for which the transaction dates are before the transaction date of the journal line.  
 14. Expand the Records to include section.
-    * Use ‘Records to include tab’ to set up selection criteria for the lines to include in the exchange rate calculation. If you do not set up selection criteria in the Filter form, the calculation method that you selected is used for all lines in the current journal.  
+    * Use 'Records to include tab' to set up selection criteria for the lines to include in the exchange rate calculation. If you do not set up selection criteria in the Filter form, the calculation method that you selected is used for all lines in the current journal.  
 15. Click OK.
 

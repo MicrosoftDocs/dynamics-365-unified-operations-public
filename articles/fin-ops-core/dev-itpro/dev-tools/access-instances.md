@@ -5,7 +5,7 @@ title: Deploy and access development environments
 description: This topic describes how to access development instances, configure on-premises development VMs, and find important configuration settings for developers and administrators.
 author: jorisdg
 manager: AnnBe
-ms.date: 02/05/2020
+ms.date: 02/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -151,6 +151,8 @@ Follow these steps to run the VM from Hyper-V Manager.
    2.  Type **net start DynamicsAxBatch**, and then press Enter.
 
    You can also start the service from the **Services** window.
+
+7. [Apply updates](../migration-upgrade/upgrade-latest-platform-update.md#apply-a-platform-update-to-environments-that-are-not-connected-to-lcs) as needed.
 
 #### Commerce configuration
 
