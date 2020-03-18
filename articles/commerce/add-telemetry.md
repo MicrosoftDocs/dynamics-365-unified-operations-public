@@ -69,9 +69,9 @@ To create a reusable page fragment for your external script code in site builder
 1. Select **Save**, and then select**Finish editing**.
 1. Select **Publish**.
 
-## Add the fragment to a template
+## Add a page fragment with the script code to a template
 
-To add the page fragment with the script code to a template in site builder, follow these steps.
+To add a page fragment with the script code to a template in site builder, follow these steps.
 
 1. Go to **Templates**, and open the template for the pages that you want to add your script code to.
 1. In the left pane, expand the template hierarchy to show the **HTML Head** slot.
