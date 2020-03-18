@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Set up depreciation books (May 2016)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This task guide will create a new depreciation book and associate it with a fixed asset group.  It uses the Accountant role and demo data for the USMF legal entity.
 

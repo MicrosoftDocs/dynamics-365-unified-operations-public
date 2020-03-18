@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Adjustment of the asset retirement obligation estimate
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 For Japan, the initial estimate of the asset retirement obligations (ARO) can be adjusted. 
 

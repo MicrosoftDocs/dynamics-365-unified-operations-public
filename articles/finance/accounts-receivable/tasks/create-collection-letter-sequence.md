@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create a collection letter sequence
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Use this task guide to create a collection letter sequence. This task uses the USMF demo company.
 
@@ -45,7 +45,7 @@ Use this task guide to create a collection letter sequence. This task uses the U
 11. Enter the fee that will be charged when this collection letter is posted.
 12. In the **Item sales tax group** field, click the drop down button to open the lookup. Select an item sales tax group if sales taxes must be calculated on the fee.  
 13. In the list, click the link in the selected row.
-14. In the **Minimun overdue balance** field, enter the minimum overdue balance required before a collection letter is sent.
+14. In the **Minimum overdue balance** field, enter the minimum overdue balance required before a collection letter is sent.
 15. In the **Days** field, enter the number of grace days that you will allow. This is the number of days after the due date that a collection letter can be generated. The due date that is used for the calculation depends on the position of the collection letter in the collection letter sequence:
     - The grace period for collection letter 1 is relative to the due date on the invoice.
     - The grace period for collection letters 2 and higher is relative to the date that the previous collection letter is posted or printed, depending on the selection in the Update collection letter code field in the Accounts receivable parameters page.  

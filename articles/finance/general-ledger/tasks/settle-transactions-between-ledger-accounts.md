@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Settle transactions between ledger accounts
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure shows how to settle transactions between ledger accounts and cancel a ledger settlement. This procedure uses the USMF demo data company.
 
