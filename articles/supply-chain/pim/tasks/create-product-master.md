@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create a product master
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Create a product master for the predefined variants. The demo data company used to create this procedure is USMF. This procedure is intended for the product designer.
 
