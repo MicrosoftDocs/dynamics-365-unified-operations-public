@@ -81,7 +81,7 @@ Next, you must specify the language for which your custom help search index is i
 ### To assign a custom index to a language
 
 1. Open the **Language.config** file in the solution.
-2. Find the language of the index in the list, and specify an index name in ```index=""```, ```parentindex="```, or ```ultimateindex=""```.  
+2. Find the language of the index in the list, and specify an index name using the ```index=""```, ```parentindex="```, or ```ultimateindex=""``` key.  
 
     For example, if you created search indexes for English (United States) and German (Austria) with the names *myenusindex* and *mydeatindex* respectively, here is what your entries will look like:
 
@@ -91,7 +91,7 @@ Next, you must specify the language for which your custom help search index is i
     ```
 3. Optionally, customize the language fallback for your index as described in the next section.
 
-3. Build the **AzureSearchCustomHelp** solution.  
+4. Build the **AzureSearchCustomHelp** solution.  
 
 The result is a model that you then upload to the Asset Library of the customer project or the Microsoft Dynamics Lifecycle Services (LCS) solution project.
 
@@ -109,7 +109,7 @@ The search and fallback order are defined in the following order of priority:
 3. The language that has the **ultimateindex** attribute set, such as ```<add language="en-US" ultimateindex="myenusindex" />```
 
 > [!IMPORTANT]
-> If **parentlanguage** is set, there must be a corresponding **parentindex**. 
+> If **parentlanguage** is set, there must be a corresponding **parentindex**.
 
 The following scenario is valid because ```language="de"``` has ```parentindex="indexde"```, and both `de-DE` and `de-AT` are descendants of `de`.
 
@@ -158,7 +158,7 @@ If the client is set to `de-AT` and no results are found in the German (Austria)
 ## See also
 
 [Deploying custom help to Azure](walkthrough-help-azure.md)  
-[Running the Custom Help Toolkit](custom-help-toolkit.md)  
+[Custom Help Toolkit](custom-help-toolkit.md)  
 [Language and locale descriptors in across product and Help](language-locale.md)  
 [Connect the Help system](../../fin-ops/get-started/help-connect.md)  
 [Help system](../../fin-ops/get-started/help-overview.md)  

@@ -85,7 +85,7 @@ For a description of the required metadata, see [Metadata requirements for custo
 Converting your existing content to MarkDown can be done using third-party tools, including but not limited to [PanDoc](https://pandoc.org) or the [Writage](https://writage.com) plugin for Word.  
 
 When you have converted your content to MarkDown, you can use open source tools such as [DocFx](https://dotnet.github.io/docfx/) to generate content for your website. In general, working in MarkDown means that you have access to a world of open-source tools. For more information, see [Extend, Customize, and Collaborate on the Help](contributor-guide.md).  
-s
+
 ## See also
 
 [Deploying custom help sites](custom-help-overview.md)  

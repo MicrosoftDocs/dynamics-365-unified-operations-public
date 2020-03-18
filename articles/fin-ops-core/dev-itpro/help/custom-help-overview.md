@@ -57,7 +57,7 @@ Custom help content will typically originate from one of three sources.
 
 3. HTML files that are created specifically for your solution
 
-    [Learn more about the metadata](#metadata) that must be added to your HTML files for context-sensitive help and search to work correctly.
+    [Learn more about the metadata](preparing-content.md#metadata) that must be added to your HTML files for context-sensitive help and search to work correctly.
 
 ## Process
 
