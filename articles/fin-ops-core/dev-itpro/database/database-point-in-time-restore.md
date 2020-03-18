@@ -38,7 +38,7 @@ You can use Microsoft Dynamics Lifecycle Services (LCS) to perform the point-in-
 [!include [pitr](../includes/dbmovement-pitr.md)]
 
 ### Restore operation failed
-In the event of failure, the option to do a **rollback** is available. If you select the rollback option after the operation originally fails, your target sandbox environment is restored to the state that it was in before the restore began. The previous database is restored from the deleted databases storage on the Azure SQL Server. A rollback is often required if a customization that is present in the target sandbox environment can't complete a database synchronization with the newly restored data.
+In the event of failure, the option to do a **rollback** is available. If you select the rollback option after the operation originally fails, your target sandbox environment is restored to the state that it was in before the restore began. A rollback is often required if a customization that is present in the target sandbox environment can't complete a database synchronization with the newly restored data.
 
 To determine the root cause of the failure, download the runbook logs using the available buttons before starting the rollback operation.
 
