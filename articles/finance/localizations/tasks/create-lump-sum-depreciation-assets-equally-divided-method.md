@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create lump-sum depreciation assets using equally divided method
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 In Japan, 3 types of fixed assets are depreciated with equal amount in each year of its service life. The 3 types are: lump sum assets, deferred assets and low-value assets. 
 

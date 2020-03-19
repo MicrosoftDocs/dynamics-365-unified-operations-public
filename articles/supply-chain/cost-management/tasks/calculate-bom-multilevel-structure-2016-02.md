@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Calculate a BOM by using a multilevel structure (February 2016)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure shows how to calculate the cost of a finished product by using multilevel explosion that is based in the Costing sheet. It is the seventh task in the BOM calculation series. The demo data company used to create this task is USMF.
 

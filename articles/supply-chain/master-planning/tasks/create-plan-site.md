@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create a plan for a site
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 The production planner calculates the material and capacity requirements for the production of a specific item. After the sourcing suggestions are created, he finds the orders at the site for which he is planning and firms the orders, starting from the urgent ones. The most urgent orders are the ones that need to be firmed on the current date. Use the demo data company USMF to perform these tasks.
 

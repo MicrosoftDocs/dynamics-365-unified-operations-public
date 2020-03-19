@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Set up mandatory payment references
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Use this procedure to set up mandatory payment reference for a specific ledger account and post a payment. When you select the ledger account in the journal you must specify a payment reference for the journal line.
 

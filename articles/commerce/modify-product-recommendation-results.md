@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Manage AI-ML-based product recommendation results
+title: Adjust AI-ML-based product recommendation results
 description: This topic explains how to tailor product recommendation results based on artificial intelligence-machine learning (AI-ML) to your business. 
 author: bebeale
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -30,12 +30,12 @@ ms.dyn365.ops.version:
 
 ---
 
-# Manage AI-ML-based product recommendation results
+# Adjust AI-ML-based product recommendation results
 
 
 [!include [banner](includes/banner.md)]
 
-This topic explains how to tailor product recommendation results based on artificial intelligence-machine learning (AI-ML) to your business. 
+This topic explains how to adjust product recommendation results based on artificial intelligence-machine learning (AI-ML) to your business. 
 
 After enabling product recommendations, the default settings will take effect; these parameters will work for may work for many needs. It is best to plan to spend some time evaluating whether the results fit the selling motion of products. We suggest evaluating results for a few days before changing parameters as needed before testing again. 
 
@@ -106,10 +106,22 @@ Follow these steps to manually add or remove results for a seed product:
 
 [Product recommendations overview](product-recommendations.md)
 
+[Enable ADLS in a Dynamics 365 Commerce environment](enable-adls-environment.md)
+
 [Enable product recommendations](enable-product-recommendations.md)
 
 [Enable personalized recommendations](personalized-recommendations.md)
 
-[Add product recommendation lists to pages](add-reco-list-to-page.md)
+[Opt out of personalized recommendations](personalization-gdpr.md)
 
-[Product collection module overview](product-collection-module-overview.md)
+[Add recommendation lists to an e-Commerce site](add-reco-list-to-page.md)
+
+[Add product recommendations on POS](product.md)
+
+[Add recommendations to the transaction screen](add-recommendations-control-pos-screen.md)
+
+[Manually create curated recommendations](create-editorial-recommendation-lists.md)
+
+[Create recommendations with demo data](product-recommendations-demo-data.md)
+
+[Product recommendations FAQ](faq-recommendations.md)

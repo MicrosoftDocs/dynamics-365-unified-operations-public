@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Register sales commissions
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic explains how sales commissions are calculated and registered. You can run this procedure in demo data company USMF or on your own data. Before starting this guide, run the guide called "Set up sales commission rules" to make sure that you have all the necessary commission calculation setup.
 
@@ -62,7 +62,7 @@ Take note of the customer and item numbers that you have chosen for the commissi
 17. Expand the **Parameters** section.
 18. In the **Quantity** field, select **All**.
 19. Select **Yes** in the **Posting** field.
-20. Select **OK**, then select **OK** in the next pane. It may take a minute or so to post the transaction. Allow the processing to complete and don’t close the page.  
+20. Select **OK**, then select **OK** in the next pane. It may take a minute or so to post the transaction. Allow the processing to complete and don't close the page.  
 
 ## Review the registered sales commissions
 1. On the Action Pane, select **Invoice**, then select **Invoice** again.

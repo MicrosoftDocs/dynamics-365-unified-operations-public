@@ -128,9 +128,6 @@ The following illustration shows the business process for registering intermedia
 
 8. Select **Functions** \> **Update lines on shipment** to open the **Generate report for principal on shipments** dialog box, and then select **OK** to create the lines for every report.
 9. Select **Print** to open the **Report for principal to Microsoft Excel** dialog box, and then select **OK** to print the report for the principal.
-
-    ![Отчет коммиссионера о реализации товара generated report](media/28_Sales_report.jpg)
-
 10. The principal reissues the facture to the agent, based on the factures that the agent issues to the buyer. The principal learns about these factures from the printed report for the principal. Use the **Approved** check box to select the lines that the principal reissues the facture for, and then select **Approval** \> **Approve all** to approve the lines on the report.
 
     ![Report for principal page](media/29_Report_for_principal.jpg)

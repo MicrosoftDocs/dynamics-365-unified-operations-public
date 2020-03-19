@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Set up transportation constraints for an item
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure will set up a transportation constraint to prevent a selected item from being transported through a selected hub. This task would typically be carried out by a Transportation coordinator. You can use this procedure in the USMF demo data company or on your own data.
 

@@ -525,7 +525,7 @@
         - name: Create a new product
           items:
           - name: Create a new product in Commerce
-            href: create-new-product.md
+            href: create-new-product-commerce.md
           - name: Manage product categories and products 
             href: category-management-product-creation.md
         - name: Product attributes 
@@ -590,8 +590,6 @@
           href:	product-recommendations.md	
         - name:	Enable ADLS in a Dynamics 365 Commerce environment	
           href:	enable-ADLS-environment.md	
-        - name:	Add product recommendation lists to e-Commerce pages	
-          href:	add-reco-list-to-page.md
         - name:	Enable product recommendations
           href:	enable-product-recommendations.md
         - name: Personalized recommendations
@@ -600,20 +598,22 @@
             href: personalized-recommendations.md
           - name: Opt out of personalized recommendations 
             href: personalization-gdpr.md
-        - name: Create curated product recommendation lists		
-          href:	create-editorial-recommendation-lists.md
-        - name:	Manage AI-ML-based product recommendation results	
+        - name:	Add recommendation lists to an e-Commerce site	
+          href:	add-reco-list-to-page.md
+        - name: POS experiences
+          items:
+          - name: Add product recommendations on POS
+            href: product.md
+          - name: Add recommendations to the transaction screen
+            href: add-recommendations-control-pos-screen.md
+        - name:	Adjust AI-ML-based product recommendation results	
           href: modify-product-recommendation-results.md
-        - name:	Get product recommendations using demo data	
+        - name: Manually create curated product recommendations		
+          href:	create-editorial-recommendation-lists.md
+        - name:	Create recommendations using demo data	
           href:	product-recommendations-demo-data.md
         - name:	Product recommendations FAQ
           href: faq-recommendations.md
-        - name: POS experiences
-          items:
-          - name: Product recommendations on POS
-            href: product.md
-          - name: Add a recommendations control to the transaction screen on POS devices
-            href: add-recommendations-control-pos-screen.md
       - name: Ratings and reviews 
         items:
         - name: Ratings and reviews overview
@@ -2115,7 +2115,7 @@
         - name: Payment data use
           href: payment-connector-data-fields.md
         - name: Enable duplicate payment protection for payment connector
-          href: dev-itpro/duplicate-payment-protection.md
+          href: dev-itpro/duplicate-payments-protection.md
         - name: Create payment packaging for Application Explorer in Service Fabric deployments
           href: dev-itpro/payment-connector-package.md
       - name: Third-party e-Commerce extensibility

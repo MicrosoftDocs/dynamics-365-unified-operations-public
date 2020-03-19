@@ -208,7 +208,7 @@
                   href: data-entities/dual-write/initial-sync.md
                 - name: Troubleshooting data integration
                   href: data-entities/dual-write/dual-write-troubleshooting.md
-          - name: Integration with Power Platform Data Integrator
+          - name: Integration with Power Platform
             items:
             - name: Configure a prospect to cash scenario
               items:
@@ -392,6 +392,8 @@
             href: database/api/v1/reference-list-backups.md
           - name: Create database refresh
             href: database/api/v1/reference-create-refresh.md
+          - name: Create a database export
+            href: database/api/v1/reference-create-export.md
           - name: Get operation activity status
             href: database/api/v1/reference-get-status.md
     - name: Demo data
@@ -1396,6 +1398,8 @@
           href: sysadmin/create-rules-optimization-advisor.md
       - name: Report a production outage
         href: lifecycle-services/report-production-outage.md
+      - name: Configure and manage database logging
+        href: sysadmin/configure-manage-database-log.md
     - name: Upgrades, updates, and hotfixes
       items:
       - name: Upgrades, updates, and hotfixes resources

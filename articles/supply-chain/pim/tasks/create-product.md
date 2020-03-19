@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create a product
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure walks through creating a new product in the Commerce product hierarchy. The demo data company used to create this task is USRT, and this task is intended for the Merchandising Manager and Product Designer.
 

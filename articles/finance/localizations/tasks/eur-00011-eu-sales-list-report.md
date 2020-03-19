@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # EUR-00011 Generate the EU sales list report
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure walks you through generating the EU sales list report. This includes transferring intra-community trade transactions to the EU sales list and running the report. This procedure also includes creating an intra-community trade transaction for demo purposes. For more information about EU Sales list reporting, including required prerequisites, refer to Help.
 
@@ -99,7 +99,7 @@ This procedure is intended for accountants.
 3. In the list, mark the row for the Invoice date field.
 4. In the Criteria field, type '01/01/2016..01/31/2016'.
 5. In the list, mark the row for the Reporting status field.
-6. In the Criteria field, select ‘Reported’.
+6. In the Criteria field, select 'Reported'.
     * You can also specify additional filters on intra-community trade transactions to mark as Closed.  
 7. Click OK.
 8. In the Selection field, select 'Closed'.

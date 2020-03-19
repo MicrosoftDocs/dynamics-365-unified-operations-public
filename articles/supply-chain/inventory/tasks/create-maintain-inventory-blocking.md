@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create and maintain an inventory blocking
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure shows how to prevent physical on-hand inventory from being reserved by other outbound source documents by using the inventory blocking. You can run the procedure in demo data company USMF using the example values that are shown. You need to have an item with physical on-hand inventory available before you start this procedure.
 
@@ -37,11 +37,11 @@ This procedure shows how to prevent physical on-hand inventory from being reserv
 1. In the **Navigation pane**, go to **Modules > Inventory management > Periodic tasks > Inventory blocking**.
 2. Click **New**.
 3. In the **Item number** field, click the drop-down button to open the lookup.
-4. In the list, select the item you want to choose. Select an item number with physical on-hand inventory that you want to block. If you’re using USMF you can select item M9201.  
-5. In the **Quantity** field, enter a number. If you’re using item M9201, you need to select less than 200.
+4. In the list, select the item you want to choose. Select an item number with physical on-hand inventory that you want to block. If you're using USMF you can select item M9201.  
+5. In the **Quantity** field, enter a number. If you're using item M9201, you need to select less than 200.
 6. Expand the **Inventory dimensions** fastTab.
 7. In the **Warehouse** field, click the drop-down button to open the lookup.
-8. In the list, find and select the desired record. If you’re using item M9201, you can select warehouse 51.  
+8. In the list, find and select the desired record. If you're using item M9201, you can select warehouse 51.  
 9. Click **Save**.
 
 ## Update the conditions of the inventory blocking

@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # View current WIP status on a production order
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure shows how to view WIP statement on a production order. The demo data company used to create this procedure is USMF. This procedure is intended for the cost controller.
 

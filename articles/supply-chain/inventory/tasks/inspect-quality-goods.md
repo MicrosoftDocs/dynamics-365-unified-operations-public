@@ -28,9 +28,9 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Inspect the quality of goods
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-This topic explains how to process a quality order. You can run this guide in demo data company USMF. Before you start this example procedure, you need to confirm purchase order “000016” and post a product receipt. This will automatically create a quality order. Quality inspections are typically carried out by a quality clerk.
+This topic explains how to process a quality order. You can run this guide in demo data company USMF. Before you start this example procedure, you need to confirm purchase order "000016" and post a product receipt. This will automatically create a quality order. Quality inspections are typically carried out by a quality clerk.
 
 
 ## Select a quality order

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Add a recommendations control to the transaction screen on POS devices
+title: Add recommendations to the transaction screen
 description: This topic describes how to add a recommendations control to the transaction screen on a point of sale (POS) device using the screen layout designer in Microsoft Dynamics 365 Commerce.
 author: bebeale
 manager: AnnBe
-ms.date: 10/01/19
+ms.date: 03/12/20
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Add a recommendations control to the transaction screen on POS devices
+# Add recommendations to the transaction screen
 
 [!include [banner](includes/banner.md)]
 
@@ -102,6 +102,24 @@ There are two configurations options available. Choose the option that works bes
 
 ## Additional resources
 
-[Product recommendations on POS](product.md)
+[Product recommendations overview](product-recommendations.md)
 
-[Product recommendations overview](../commerce/product-recommendations.md)
+[Enable ADLS in a Dynamics 365 Commerce environment](enable-adls-environment.md)
+
+[Enable product recommendations](enable-product-recommendations.md)
+
+[Enable personalized recommendations](personalized-recommendations.md)
+
+[Opt out of personalized recommendations](personalization-gdpr.md)
+
+[Add recommendation lists to an e-Commerce site](add-reco-list-to-page.md)
+
+[Add product recommendations on POS](product.md)
+
+[Adjust AI-ML recommendations results](modify-product-recommendation-results.md)
+
+[Manually create curated recommendations](create-editorial-recommendation-lists.md)
+
+[Create recommendations with demo data](product-recommendations-demo-data.md)
+
+[Product recommendations FAQ](faq-recommendations.md)

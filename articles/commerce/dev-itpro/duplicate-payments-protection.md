@@ -5,7 +5,7 @@ title: Enable duplicate payment protection for payment connector
 description: This topic describes how to enable duplicate payment protection for a given payment connector.
 author: Reza-Assadi
 manager: AnnBe
-ms.date: 12/28/2018
+ms.date: 03/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-#  Enable duplicate payment protection for payment connector
+# Enable duplicate payment protection for payment connector
 
 [!include [banner](../../includes/banner.md)]
 
@@ -43,10 +43,9 @@ This topic describes how to enable duplicate payment protection functionality in
 - [Implement duplicate payment requests](#implement-duplicate-payment-requests) - Describes the various payment-related requests that need to be implemented to support the duplicate payment protection feature.
 
 ## Required reading
-Be sure to read the following topics before enabling duplicate payment protection for a given payment connector.
+Be sure to read the following topic before enabling duplicate payment protection for a given payment connector.
 
 - [Create an end-to-end payment integration for a payment terminal](end-to-end-payment-extension.md) - The duplicate payment protection feature builds on the payment integration for a payment terminal described in this topic.
-- [Enable duplicate payment protection for payment connector](duplicate-payment-protection.md) - This topic describes key functional aspects of the duplicate payment protection feature.
 
 ## Prerequisites
 The following prerequisites must be met before duplicate payment protection can be enabled for a payment connector implementation.
@@ -197,3 +196,4 @@ public GetTransactionByTransactionReferencePaymentTerminalDeviceResponse(Payment
 | Variable | Description |
 |---|---|
 | paymentInfo | The recovered payment transaction. This is identical to the payment response returned for any other payment request, such as **Authorize** or **Refund**. |
+                                                                                                                                                                                                                                                                                                            
