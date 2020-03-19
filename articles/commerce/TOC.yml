@@ -598,8 +598,6 @@
             href: personalized-recommendations.md
           - name: Opt out of personalized recommendations 
             href: personalization-gdpr.md
-        - name:	Add recommendation lists to an e-Commerce site	
-          href:	add-reco-list-to-page.md
         - name: POS experiences
           items:
           - name: Add product recommendations on POS

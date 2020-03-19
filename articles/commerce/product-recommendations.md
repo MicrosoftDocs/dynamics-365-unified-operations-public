@@ -5,7 +5,7 @@ title: Product recommendations overview
 description: This topic provides general information about product recommendations. Product recommendations let customers easily and quickly find products that they want, and even products that they didn't originally intend to buy.
 author: Moonma
 manager: AnnBe
-ms.date: 03/12/2020
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -78,8 +78,6 @@ The following table describes various types of automated product recommendations
 [Enable personalized recommendations](personalized-recommendations.md)
 
 [Opt out of personalized recommendations](personalization-gdpr.md)
-
-[Add recommendation lists to an e-Commerce site](add-reco-list-to-page.md)
 
 [Add product recommendations on POS](product.md)
 
