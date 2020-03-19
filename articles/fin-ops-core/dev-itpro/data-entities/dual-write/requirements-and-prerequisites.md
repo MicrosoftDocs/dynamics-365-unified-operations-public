@@ -20,7 +20,7 @@ LocalizationGroup:
 
 ## Check requirements and grant access
 
-Before you enable dual-write, follow the steps in the sections below to ensure you meet the minimum system requirements and to grant access to the apps that need to connect to each other. The dual-write _health check_ validates the required prerequisites below as you step through the dual-write wizard to link to the Common Data Service environment.
+Before you enable dual-write, follow the steps below to ensure you meet the minimum system requirements and to grant access to the apps that need to connect to each other. The dual-write _health check_ validates the required prerequisites below as you step through the dual-write wizard to link to the Common Data Service environment.
 
 1. Check the platform update and app version.
 
