@@ -114,3 +114,12 @@ If document preview for documents stored in SharePoint doesn't work, try the fol
 ## New production release cadence
 
 Beginning in April, the release cadence for Human Resources will shift from a weekly update to a biweekly update. This will ensure alignment with safe deployment practices and maintain high standards of stability and reliability in the service. We're putting additional testing and monitors in place to verify successful deployment at each stage of the process. For more information about the release cadence, see [Update process](hr-admin-setup-update-process.md).
+
+## In preview
+
+The following preview features are available on February 3, 2020:
+
+- **Leave and absence preview features** - For more information, see [Leave and absence preview features](hr-leave-and-absence-overview.md?leave-and-absence-preview-features).
+
+- **Benefits management preview feature** - For more information, including known issues, see [Benefits management overview](hr-benefits-management-overview.md).
+
