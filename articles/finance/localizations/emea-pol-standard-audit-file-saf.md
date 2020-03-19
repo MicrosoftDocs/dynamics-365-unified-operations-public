@@ -623,9 +623,15 @@ This lookup field is introduced in version 48.36.58 of “VAT Invoices (PL)” f
 
 In “ItemType_LOOKUP” lookup the following values are available for setup:
 
+|   Name |   Description (En) | Description (Pl) | Setup |
+|--------|--------------------|------------------|-------|
+| **SecondHandGoods** | Deliveries of second-hand goods for which the tax base is constituted in accordance with art. 120 paragraph 4th and 5th margin | Dostawy towarów używanych dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 i 5 marża | Specify “Sales tax codes” which are used for transaction related to second-hand goods. With this setup for an invoice with tax transaction by the specified tax code “procedura marży - towary używane” will be reported in <P_106E_3A> tag. |
+| **ArtWorks**  | Deliveries of works of art for which the tax base is constituted in accordance with art. 120 paragraph 4th and 5th margin | Dostawy dzieł sztuk dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 i 5 marża | Specify “Sales tax codes” which are used for transaction related to works of art. With this setup for an invoice with tax transaction by the specified tax code “procedura marży - dzieła sztuki” will be reported in <P_106E_3A> tag. |
+| **CollectorAntiques** | Deliveries of collectors' items and antiques, for which the tax base is constituted in accordance with art. 120 paragraph 4th and 5th margin | Dostawy przedmiotów kolekcjonerskich i antyków, dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 i 5 marża | Specify “Sales tax codes” which are used for transaction related to collectors' items and antiques. With this setup for an invoice with tax transaction by the specified tax code “procedura marży - przedmioty kolekcjonerskie i antyki” will be reported in <P_106E_3A> tag. |
+| **Transport** | Intra-Community delivery of new means of transport | Wewnątrzwspólnotowa dostawa nowych środków transportu | Specify “Sales tax codes” which are used for transaction related to Intra-Community delivery of new means of transport. With this setup for an invoice with tax transaction by the specified tax code <P_22> tag will be reported with “true” value. |
+| **Other** | Other | Inne | Specify *Not blank* in “Tax Exempt code” field. This value must be the last in the list of values. At least this value must be mandatory specified for this Lookup. |
 
-
-When Lookup results are defined, change the State to the Completed, save and close the configuration.
+When configuration of lookup fields values is completed, mark **State** as “Completed”, save and close the page. If any of the lookup fields doesn’t contain at least one value with *Not blank*, an error will be thrown in the report run-time informing that Application specific parameters are missing.
 
 ### Configure the ER model, and format for the report
 
