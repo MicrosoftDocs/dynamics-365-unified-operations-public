@@ -5,7 +5,7 @@ title: Enable ADLS in a Dynamics 365 Commerce environment
 description: This topic explains how to enable and test Azure Data Lake Storage (ADLS) for a Dynamics 365 Commerce environment, which is a prerequisite for enabling product recommendations.
 author: bebeale
 manager: AnnBe
-ms.date: 03/12/2020
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -102,8 +102,6 @@ If not completed already, follow the steps for [enabling product recommendations
 [Enable personalized recommendations](personalized-recommendations.md)
 
 [Opt out of personalized recommendations](personalization-gdpr.md)
-
-[Add recommendation lists to an e-Commerce site](add-reco-list-to-page.md)
 
 [Add product recommendations on POS](product.md)
 
