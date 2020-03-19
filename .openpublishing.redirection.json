@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/commerce/add-reco-list-to-page.md",
+      "redirect_url": "commerce/add-reco-list-to-page",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/supply-chain/asset-management/work-orders/media/placeholder.md",
       "redirect_url": "/dynamics365/supply-chain/index",
       "redirect_document_id": "false"
