@@ -103,6 +103,8 @@ To add a buy box module to a new page and set the required properties, follow th
 
 [Cart module](add-cart-module.md)
 
+[Cart icon module](add-cart-icon.md)
+
 [Checkout module](add-checkout-module.md)
 
 [Order confirmation module](order-confirmation-module.md)
