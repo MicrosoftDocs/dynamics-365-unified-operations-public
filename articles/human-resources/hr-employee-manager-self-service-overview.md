@@ -56,7 +56,7 @@ The **My information** tab displays the following information for Employee self 
 
 The **My career information** section of Employee self-service contains cards related to Leave and Absence, Performance Management, Competencies, Benefits, Tasks, and Attachments.
 
-The **Time Off Balances** card displays the balances for any enrolled plans. This card forecasts your balance based on your accrual method. You can enter and submit time-off requests, which will then go through an approval workflow process. For more information about Leave and absence, see [Leave and absence overview](hr-leave-and-absence-overview).
+The **Time Off Balances** card displays the balances for any enrolled plans. This card forecasts your balance based on your accrual method. You can enter and submit time-off requests, which will then go through an approval workflow process. For more information about Leave and absence, see [Leave and absence overview](hr-leave-and-absence-overview.md).
 
 The **Tasks** card displays tasks that are assigned to you and lets you view and manage them.
 
@@ -78,7 +78,7 @@ View and manage documents with the **Attachments** card. You can manage all **Ex
 
 This section provides links to other Employee self service areas, similar to the **My Career Information** section.
 
-Sign up for benefits through the **Benefits** link. For more information about Benefits management, see [Benefits overview](hr-benefits-management-overview)
+Sign up for benefits through the **Benefits** link. For more information about Benefits management, see [Benefits overview](hr-benefits-management-overview.md)
 
 Under **Performance**, you can select **Performance journals** to create performance journal entries to use on both performance goals and reviews. You can select **Send feedback** to provide feedback for other employees within your organization. Depending on your organization's settings, emails might be sent to the recipient, sender, and managers. You can send feedback to all employees within the organization. Sending feedback isn't restricted by company.
 
