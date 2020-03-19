@@ -656,6 +656,54 @@ To generate a SAF VAT invoices file, click **General ledger > Inquiries and rep
 
 You can specify additional selection parameters by using the **Filter** functionality on the **Records to include** tab.
 
+### Implementation details
+
+Version 3 of JPK_FA report introduces possibility of reporting invoices with different document currency in the same file. For this purpose, “Currency” parameter on the dialog form of “SAF VAT invoices (Poland)” report is made optional. When user specifies in this parameter a currency, the report will include only invoices with this currency, when user doesn’t specify any currency in this field, report will be generated for all the invoices not considering document currency of the invoices.
+
+#### <P_14x> tags
+
+According to the requirements of the version 3 of JPK_FA report, when invoices is posted in a currency which differs from “PLN”, <P_13x>, <P_14x> and <P_15> tags must represent amounts in the invoice currency and new <P_14xW> tags must represent related amounts in “PLN”. It is assumed that “PLN” is defined as currency for the Sales tax codes used for transactions to be included in to JPK_FA report. Basing on this assumption, for invoices which document currency differs from the currency setup in Sales tax codes used in the tax transaction(s) of this document, system reports additionally <P_14xW> tags with amount in sales tax code currency (as it is assumed to be “PLN”).
+
+#### <P_18A> tag
+
+KB #4339927 (“A country specific update for Poland for Split payments in Dynamics 365 for Finance and Operations”) introduces possibility to setup Methods of payments in Account receivable module as “Split payment”.
+
+According to the requirements of the version 3 of JPK_FA report, <P_18A> tag for an invoice must be reported as “true” when split payment mechanism was applied for this invoice. To define if split payment mechanism was applied to invoice, system checks “Split payment” parameter of the Method of payment which was used during the invoice posting and reflected in the corresponding customer transaction (in CustTrans table). It is important to keep setup of “Split payment” parameter of Methods of payments stable to guaranty correct reporting.
+
+#### <P_22> tag
+
+<P_22> tag will be reported with “true” value according to setup of Sales tax codes in “ItemType_LOOKUP” for Result = “Transport” in Application specific parameters of “VAT Invoices (PL)” format.
+
+#### <P_106E_3> and <P_106E_3A> tags
+
+According to the requirements of JPK_FA report <P_106E_3> tag must report “true” in the case of delivery of second-hand goods, works of art, collectors' items and antiques, taxable base of which is in accordance with art. 120 paragraph 4th and 5th.  When <P_106E_3> tag is reported with “true” value, <P_106E_3A> tag must represent related value(s):
+
+|   Value of <P_106E_3A> tag |   Description (Pl) | Description (En) | How Finance will distinguish |
+|--------|--------------------|------------------|-------|
+| **procedura marży - towary używane** | Dostawy towarów używanych dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 i 5 marża | Deliveries of second-hand goods for which the tax base is constituted in accordance with art. 120 paragraph 4th and 5th margin | According to setup of Sales tax codes in “ItemType_LOOKU” for Result = “SecondHandGoods” in Application specific parameters of “VAT Invoices (PL)” format. | 
+| **procedura marży - dzieła sztuki** | Dostawy dzieł sztuki, przedmiotów kolekcjonerskich i antyków, dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 i 5 marża | Deliveries of works of art for which the tax base is constituted in accordance with art. 120 paragraph 4th and 5th margin | According to setup of Sales tax codes in “ItemType_LOOKU” for Result = “ArtWorks” in Application specific parameters of “VAT Invoices (PL)” format. |
+| **procedura marży - przedmioty kolekcjonerskie i antyki** | Dostawy przedmiotów kolekcjonerskich i antyków, dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 i 5 marża | Deliveries of collectors' items and antiques, for which the tax base is constituted in accordance with art. 120 paragraph 4th and 5th margin | According to setup of Sales tax codes in “ItemType_LOOKU” for Result = “CollectorAntiques” in Application specific parameters of “VAT Invoices (PL)” format. |
+
+#### <Zamowienie> and <ZamowienieCtrl> nodes
+  
+According to the requirements of version 3 of JPK_FA report <Zamowienie> node must represent orders or contracts referred to in art. 106f paragraph 1 item 4 of the Act (for advance invoices) in the currency in which the advance invoice was issued (Zamówienia lub umowy, o których mowa w art. 106f ust. 1 pkt 4 ustawy (dla faktur zaliczkowych) w walucie, w której wystawiono fakturę zaliczkową).
+
+To complete this requirement system collects information through the data base by the lines of Sales orders (SO) and Free text invoices (FTI) which are linked to the advance invoices included to the report are provide the following information from them:
+
+|   Tag name |   Description (Pl) | Description (En) | How Finance collects information |
+|--------|--------------------|------------------|-------|
+| **P_7Z** | Nazwa (rodzaj) towaru lub usługi | Name (type) of the good or service | Value stored in line of SO or FTI in Finance data base |
+| **P_8AZ** | Miara zamówionego towaru lub zakres usługi | Unit of measure of the ordered goods or scope of the service | UOM value stored in line of SO or FTI in Finance data base. ("usługa" when empty) |
+| **P_8BZ** | Ilość zamówionego towaru lub zakres usługi | Quantity of ordered goods or scope of service | Value of quantity stored in line of SO or FTI in Finance data base. |
+| **P_9AZ** | Cena jednostkowa netto | Net unit price | Value of price stored in line of SO or FTI in F&O data base. |
+| **P_11NettoZ** | Wartość zamówionego towaru lub usługi bez kwoty podatku | Value of the ordered goods or services without the amount of tax | Calculated value of tax base amount by the line of SO or FTI basing on quantity stored in the line (P_8BZ). |
+| **P_11VatZ** | Kwota podatku od zamówionego towaru lub usługi | Tax amount on ordered goods or services | Calculated value of tax amount by the line of SO or FTI basing on quantity stored in the line (P_8BZ). |
+| **P_12Z** | Stawka podatku | Tax rate | Calculated value tax rate based on tax setup in the line of SO or FTI (Sales tax group and Item sales tax group). |
+
+In respect to the values reported for the lines of SO or FTI, <WartoscZamowienia> tag value of <Zamowienie> node is calculated as sum by all the document lines of calculated values of tax base amount and calculated values of tax amount (P_11NettoZ + P_11VatZ).
+  
+<WartoscZamowien> tag value of <ZamowienieCtrl> node is calculated as sum of <WartoscZamowienia> tag values by all the documents reported in <Zamowienie> node.
+
 ## Using batch jobs for SAFT
 Generating SAF-T reports for a long period such as month or a quarter can include a huge data and take a long time. For such cases, it is recommended to use batch jobs. Dialog page for every SAF-T report has a **Run in the background** tab. Open this tab to set up report's generation in batch mode. Select **Batch processing** check box. To learn more about batch processing see the [Batch processing overview](../../dev-itpro/sysadmin/batch-processing-overview.md) topic. To review batch jobs or find generated file open **Organization administration** &gt; **Electronic reporting** &gt; **Electronic reporting jobs** and find a line related to your job. Click **Show log** button on the **Main menu**. If nothing is shown it means that no messages were produced during the file generation. To see the file click **Show files** button on **Main menu**, find a file that you need and click **Open** on the **Main menu** to review or save the file.  
 
