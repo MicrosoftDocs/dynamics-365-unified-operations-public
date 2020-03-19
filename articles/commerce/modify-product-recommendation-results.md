@@ -5,7 +5,7 @@ title: Adjust AI-ML-based product recommendation results
 description: This topic explains how to tailor product recommendation results based on artificial intelligence-machine learning (AI-ML) to your business. 
 author: bebeale
 manager: AnnBe
-ms.date: 03/12/2020
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -113,8 +113,6 @@ Follow these steps to manually add or remove results for a seed product:
 [Enable personalized recommendations](personalized-recommendations.md)
 
 [Opt out of personalized recommendations](personalization-gdpr.md)
-
-[Add recommendation lists to an e-Commerce site](add-reco-list-to-page.md)
 
 [Add product recommendations on POS](product.md)
 

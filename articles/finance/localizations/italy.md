@@ -54,3 +54,7 @@ This topic provides links to documentation resources for Italy.
 - [Advanced notes management](emea-ita-exil-structured-notes.md)
 - [Tax invoice for goods delivered for free](emea-ita-exil-goods-for-free.md)
 - [Improved inquiry on debit or credit settlements](emea-ita-exil-improved-inquiry-settlement.md)
+- [Commission settlement on payments](emea-ita-exil-commission-settlement.md)
+- [General ledger simulations (Italy)](emea-ita-exil-general-ledger-simulations.md)
+- [Configurable posting profiles for banks and remittance types](emea-ita-exil-bank-remittance.md)
+- [Unique certification](emea-ita-exil-unique-certification.md)
