@@ -48,17 +48,17 @@ Go to **Credit and collections \> Setup \> Credit management workflows** to defi
 
 You can put a sales order on hold if the payment terms on the order don't match the default payment terms for the customer. However, sometimes the payment terms differ but are similar enough that you don't want to put the order on hold. You can rank payment terms so that some of them have the same rank, whereas others have a higher or lower rank.
 
-If the rankings for payment terms are active, the sales orders will be put on hold if the payment terms on the order have a higher rank than the default payment terms for the customer.
+If the rankings for payment terms are active, and if the payment terms on the order have a higher rank than the default payment terms for the customer, the sales order will be put on hold.
 
-To setup the payment terms ranking go to **Credit and collections \> Setup \> Credit management setup \>Rank payment terms**  
+To set up the payment terms ranking go to **Credit and collections \> Setup \> Credit management setup \>Rank payment terms**  
 
 ### Ranking settlement discounts
 
 You can put a sales order on hold if the cash discount on the order doesn't match the default cash discount for the customer. However, sometimes the cash discounts differ but are similar enough that you don't want to put the order on hold. You can rank cash discounts so that some of them have the same rank, whereas others have a higher or lower rank.
 
-If rankings for settlement discounts are active, the sales orders will be put on hold if the cash discount on the order has a higher rank than the default cash discount for the customer.
+If rankings for settlement discounts are active, and if the cash discount on the order has a higher rank than the default cash discount for the customer, the sales order will be put on hold.
 
-To setup the payment terms ranking go to **Credit and collections \> Setup \> Credit management setup \>Rank settlement discounts**  
+To set up the payment terms ranking go to **Credit and collections \> Setup \> Credit management setup \>Rank settlement discounts**  
 
 ## Reasons
 
