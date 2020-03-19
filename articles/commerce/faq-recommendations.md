@@ -5,7 +5,7 @@ title: Product recommendations FAQ
 description: This topic provides information about processes and tools that you can use to troubleshoot issues that are related to product recommendations or their results.
 author: bebeale
 manager: AnnBe
-ms.date: 03/12/2020
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -92,8 +92,6 @@ After enabling product recommendations, you will need to add the recommendations
 [Enable personalized recommendations](personalized-recommendations.md)
 
 [Opt out of personalized recommendations](personalization-gdpr.md)
-
-[Add recommendation lists to an e-Commerce site](add-reco-list-to-page.md)
 
 [Add product recommendations on POS](product.md)
 
