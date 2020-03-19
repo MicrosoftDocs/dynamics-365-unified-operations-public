@@ -2,7 +2,7 @@
   "redirections": [
     {
       "source_path": "articles/commerce/add-reco-list-to-page.md",
-      "redirect_url": "commerce/add-reco-list-to-page",
+      "redirect_url": "product-recommendations",
       "redirect_document_id": "false"
     },
     {
