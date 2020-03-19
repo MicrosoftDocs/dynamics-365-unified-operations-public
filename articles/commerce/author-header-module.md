@@ -63,22 +63,22 @@ To create a header module, follow these steps.
 
 1. Create a fragment that is named **Header fragment**, and add a container module to it.
 1. In the property pane for the container module, set the **Width** property to **Fill container**.
-1. Add promo banner and cookie consent modules to the container module.
+1. Add a promo banner and cookie consent modules to the container module.
 1. Add another container module to the fragment, and set the **Width** property to **Fill container**.
 1. Add a header module to the second container module.
 1. In the **Navigation menu** slot of the header module, add a navigation menu module. 
 1. In the property pane for the navigation menu module, configure the properties of the navigation menu module.
 1. In the **Search** slot of the header module, add a search module. 
 1. In the property pane for the search module, configure the properties of the search module. 
-1. n the **Cart icon** slot of the header module, add a cart icon module. 
+1. In the **Cart icon** slot of the header module, add a cart icon module. 
 1. In the property pane for the cart icon module, configure the properties of the cart icon module. If you want the cart icon to display a mini cart when hovered over, select **True** for **Show mini cart**.
-1. Save the page fragment, finish editing it, and publish it. 
+1. Save the page fragment, finish editing, and publish it. 
 
 
 To help guarantee that a header appears on every page, follow these steps on every page template that is created for the site.
 
 1. In the **Main** slot of the default page, add the header page fragment that contains the header module to the header.
-1. Save the template, finish editing it, and publish it.
+1. Save the template, finish editing, and publish it.
 
 ## Additional resources
 
