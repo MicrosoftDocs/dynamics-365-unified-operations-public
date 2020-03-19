@@ -87,7 +87,7 @@ To add a cart module to a new page and set the required properties, follow these
 
 [Buy box module](add-buy-box.md)
 
-[Cart icon module](add-cart-icon.md)
+[Cart icon module](cart-icon-module.md)
 
 [Checkout module](add-checkout-module.md)
 
