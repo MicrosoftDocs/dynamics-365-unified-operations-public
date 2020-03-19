@@ -52,8 +52,14 @@ To add a cart icon module, see [Header module](author-header-module.md).
 
 ## Additional resources
 
+[Buy box module](add-buy-box.md)
+
 [Cart module](add-cart-module.md)
+
+[Checkout module](add-checkout-module.md)
+
+[Order confirmation module](order-confirmation-module.md)
 
 [Header module](author-header-module.md)
 
-
+[Footer module](author-footer-module.md)
