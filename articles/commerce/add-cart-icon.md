@@ -47,7 +47,7 @@ The cart icon module is used to represent the cart in the header module of the p
 
 ## Add a cart icon module to a page
 
-To add a cart icon module, see [Header module](author-header-module.md)
+To add a cart icon module, see [Header module](author-header-module.md).
 
 
 ## Additional resources
