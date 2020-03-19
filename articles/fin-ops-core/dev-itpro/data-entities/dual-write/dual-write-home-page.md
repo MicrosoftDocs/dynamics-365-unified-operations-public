@@ -63,6 +63,10 @@ These topics describe mapping between concepts in Finance and Operations applica
 
     + [Integrated sites and warehouses](sites-warehouses-mapping.md)
 
++ [Company concept in Common Data Service](company-data.md)
+
+    + [Bootstrap with company data FAQ](bootstrap-company-data.md)
+
 + [Organization hierarchy awareness](organization-mapping.md)
 + [Access to finance and tax reference data](finance-tax-reference.md)
 
@@ -73,10 +77,6 @@ These topics describe mapping between concepts in Finance and Operations applica
 + [Prospect to cash in dual-write](dual-write-prospect-to-cash.md)
 + [In-house assets for servicing](in-house-assets.md)
 + [Integrated worker, job, and position](integrated-hr.md)
-+ [Company concept in Common Data Service](company-data.md)
-
-    + [Bootstrap with company data FAQ](bootstrap-company-data.md)
-
 + [Support for Field Service solutions and Project Service Automation solutions](field-service-project-service-automation.md)
 
 ## Support
