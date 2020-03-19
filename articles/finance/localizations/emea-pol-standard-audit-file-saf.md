@@ -57,12 +57,12 @@ To generate a SAF Accounting books file, click **General ledger > Inquiries and 
 | **From date**                                   | Specify the first date to export reporting data for. |
 | **To date**                                     | Specify the last date to export reporting data for.  |
 | **Authority identification**                    | Specify the identifier of the tax authority to use in the export file.|
-| **Posting layer**                               | Select the posting layer to consider transactions from. This parameter affects only the ZOiS? part of the export file. |
-| **Should opening balance be shown by turnover** | If this parameter is selected, opening transactions affect accumulated turnover. This parameter affects only the ZOiS export file part. |
+| **Posting layer**                               | Select one or several posting layers to consider transactions from. This parameter affets all parts of the report. |
+| **Should opening balance be shown by turnover** | If this parameter is selected, opening balance is affected by accumulated turnover. This parameter affects only the ZOiS export file part. |
 | **Separate balance**                            | This parameter can be considered for main accounts where the corresponding parameter is marked. This parameter affects only the ZOiS export file part.     |
-| **Closing transactions**                        | If this parameter is selected, closing transactions will be included in the data that is exported. This parameter affects only the ZOiS? export file part. |
+| **Closing transactions**                        | If this parameter is selected, closing transactions will be included in the data that is exported. This parameter affects only the ZOiS export file part. |
 
-You can specify additional selection parameters by using **Filter** functionality on the **Records to include** tab.
+This regulatory report must be provided by request and includes accounting data for the reporting period. It includes accounting data in selected posting layer(s) by all the main accounts which have non-zero aggregated turnover or transactions in the reporting period.
 
 ## Generate a SAF Bank statement file
 To generate a SAF Bank statement file, click **General ledger > Inquiries and reports > Standard Audit File for Tax (SAF-T) > SAF Bank statement**, and set the following parameters.
