@@ -52,6 +52,10 @@ You can now merge duplicate address book entries by selecting the duplicate reco
 
 You can now adjust balances for leave plans that were created with the **Multiple leave type** preview feature enabled in Feature management.
 
+## Primary position field in the WorkerPositionAssignmentEntity when an employee is terminated (420774)
+
+For employees with a terminated employment, the primary position that was active at the time of termination is displayed in the entity. For integrations, a duplicate record will no longer be created for the employee’s worker position assignment. 
+
 ## Common Data Service solution is now available with the following changes:
 
 | Description | Change |
