@@ -2,10 +2,10 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Human Resources (March 19, 2020)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources.
+description: This article describes features that are either new or changed in Microsoft Dynamics 365 Human Resources.
 author: Darinkramer
 manager: AnnBe
-ms.date: 3/19/2020
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -17,7 +17,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -29,26 +29,28 @@ ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
 
 ---
-# "What's new or changed in Dynamics 365 Human Resources (March 19, 2020)"
+
+# What's new or changed in Dynamics 365 Human Resources (March 19, 2020)
 
 This article describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3014. The numbers in parentheses in some headings refer to LCS support numbers for reference.
 
-## Human Resources environment limits based on updated licensing (394595)
+## Human Resources environment limits are now based on updated licensing (394595)
 
-The limit on the number of environments per project in Lifecycle Services (LCS) is changed. Previously limited to two environments, the limit on the number of production and sandbox environments that can be created for Human Resources in LCS is now based on updated licensing. You are now able to create as many environments as needed per LCS project, dependent on the number of licenses purchased. The new licensing, updated on February 1st, allows customers to purchase additional environments. See the Dynamics 365 Licensing Guide, which can be downloaded from the [Dynamics 365 Pricing](https://dynamics.microsoft.com/en-us/pricing/#HumanResources) page, for information licensing requirements for additional environments.
+The limit on the number of environments per project in Lifecycle Services (LCS) has changed. The previous limit was two environments. The limit on the number of production and sandbox environments you can create for Human Resources in LCS is now based on updated licensing. You can now create as many environments as needed per LCS project, depending on the number of licenses purchased. The new licensing, updated on February 1, 2020, allows customers to purchase additional environments. For more information about licensing requirements for additional environments, see [Dynamics 365 Licensing Guide](https://dynamics.microsoft.com/pricing/#HumanResources).
 
+## Provide cross company viewing of compensation data for employees and managers (403904)
 
-## Provide cross company viewing of Compensation data for Employees and Managers - (403904)
+Turn this feature on in the **Feature management** workspace. For more information, see [Enable or disable preview features](hr-admin-manage-features.md#enable-or-disable-preview-features).
 
-Turn this feature on in Feature Management. When turned on, managers will be able to see direct and extended reports compensation without having to log into the company of employment. Full compensation history is available from any logged in company the manager has access to. [More information related to Employee and Manager self-service can be found here](docs.microsoft.com)
+When you enable this feature, managers can see direct and extended reports compensation without having to sign into the company of employment. Full compensation history is available from any signed in company the manager can access. For more information, see [Employee and Manager self service overview](hr-employee-manager-self-service-overview.md).
 
-## Enable Global address book "merge" functionality - (427189)
+## Enable global address book merge functionality (427189)
 
-With this change, merging duplicate address book entries can be accomplished by selecting the duplicate records and choosing to "Merge" from the Global address book page.
+You can now merge duplicate address book entries by selecting the duplicate records and choosing **Merge** from the **Global address book** page.
 
-## Unable to adjust leave balance for a plan with no accruals was created with "multiple leave type" feature on - (419635)
+## Unable to adjust leave balance for a plan with no accruals that was created with the Multiple leave type feature on (419635)
 
-With this change, you will be able to adjust balances for leave plans that have been created with the Multiple leave type (Preview) feature enabled in feature management.
+With this change, you will be able to adjust balances for leave plans that have been created with the **Multiple leave type** preview feature enabled in Feature management.
 
 ## Common Data Service solution is now available with the following changes:
 
@@ -62,40 +64,53 @@ With this change, you will be able to adjust balances for leave plans that have 
 | New variable compensation setup entities | <ul><li>**Compensation variable plan type**</li><li>**Compensation variable plan**</li><li>**Vesting rules**</li><li>**Compensation variable plan level**</li></ul> |
 | New **Worker calendar employment** entity | <ul><li>**Work calendar entity** added</li></ul> |
 | New **Payroll position detail** entity | <ul><li>**Payroll position detail** added</li></ul> |
-| New **Title** entity | <ul><li>**Title** added</li></ul> |
-*The new "Title" entity is included in the CDS but will not initially be referenced from Job Position or Job entities.
+| New **Title** entity | <ul><li>**Title** added</li></ul>The new **Title** entity is included in Common Data Service but isn't referenced from the **Job Position** or **Job** entities at this time. |
 
-*Financial dimensions for both positions and employment provide **Single** direction updates from Human Resources to the Common data service.  
+> [!NOTE]
+> Financial dimensions for both positions and employment provide one-direction integration for updates from Human Resources to Common Data Service. Financial dimensions updates don't currently synchronize from Common Data Service to Human Resources.
 
-Over the course of the next few weeks the above changes will be available in all environments. If you would like to manually install the latest HR CDS Solution, follow the steps below. 
+Over the next few weeks, these entity changes will be available in all environments. To manually install the latest Common Data Service solution for Human Resources:
 
-1.	Navigate to https://admin.powerplatform.microsoft.com.
-2.	Select Environments.
-3.	Find the environment you would like to upgrade. This should correspond to the Environment name in the Common data service information section in the About form found in D365 for Human Resources.
-4.	Click on the Name of the environment to go to the environment details.
-5.	In the Action bar at the top of the page, click Manage Solutions.  This will open a new browser window and navigate to Dynamics 365 Administration Center in the context of your environment.
-6.	In the Solution list, find the Dynamics 365 for Talent Anchor solution and click on it.
-7.	Click the Upgrade button to apply the latest Solution version.
+1.	Go to the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com).
 
-## SharePoint preview not working in some environments
+2.	Select **Environments**.
 
-If document previewing for SharePoint stored documents does not display follow these steps to troubleshoot the issue:
- - Verify the Admin user account has an email associated with the user record. (this can be completed in the User page)
-          - If not set up, the email and provider needs to be added via the OData Excel add in. By default, the email address is not present in the Excel design. So you will need to edit the excel design, add all fields, apply and refresh. Once this is done, the admin account can be updated.
- - Once the admin account has an associated email account, login to Dynamics 365 Human resources as the admin.
- - Access an attachment that has been stored in SharePoint. (This will initialize the preview)
- - Login with any other user with access to attachments and verify the preview functions properly.
+3.	Find the environment you want to upgrade. The environment should correspond to **Environment name** in the **Common Data Service information** section in the **About** form in Human Resources.
+
+4.	Select the environment to view the environment details.
+
+5.	In the action bar at the top, select **Manage Solutions**. A new browser window will open and navigate to **Dynamics 365 Administration Center** in the context of your environment.
+
+6.	In the **Solution** list, select **Dynamics 365 Human Resources Anchor**.
+
+7.	Select **Upgrade** to apply the latest solution.
+
+## SharePoint preview doesn't work in some environments
+
+If document preview for documents stored in SharePoint doesn't work, try the following procedure:
+
+1. Verify the Admin user account has an email associated with the user record. You can view this information in the **User** page. If email isn't set up, you need to add the email and provider with the OData Excel add-in. By default, the email address isn't present in the Excel design. This means you'll need to edit the Excel design, add all fields, apply, and refresh. Once you've completed those steps, you can update the admin account.
+
+2. After the Admin account has an associated email account, sign in to Human Resources with Admin credentials.
+
+3. Access an attachment in SharePoint to start the document preview.
+
+4. Sign in with another user account that has access to attachments and verify that the preview works as expected.
 
 ## Coming Soon
 
 ### Platform update 33
 
-- (Preview) full page apps - This preview feature, which requires the Saved views feature to be enabled, allows Power Apps and third-party apps to be added as full-page experiences via the dashboard
-- (Preview) Saved views - This preview feature enables saved views, which is a significant enhancement to the personalization subsystem. This feature allows users to have multiple named sets of personalizations per page. Views can also be published to security roles.
+- Full page apps (Preview) - This preview feature, which requires you to enable the Saved views feature, allows Power Apps and third-party apps to be added as full-page experiences via the dashboard.
+
+- Saved views (Preview) - This preview feature enables saved views, which is a significant enhancement to the personalization subsystem. This feature allows users to have multiple named sets of personalizations per page. You can also publish views to security roles.
+
 - Optimized "is one of" filtering experience - This feature enables an optimized "is one of" filtering experience that makes it easier to enter multiple filter values, has a simpler mechanism to remove individual or all filter values, and has a more compact and intuitive visualization of filter values.
-- Recommended fields - Users often need to add fields to a grid or page; however, with the large number of available fields, this can be difficult. Instead of having to search through a large list, this feature enables the system to surface a set of recommended fields based on what other users most often add in similar scenarios
+
+- Recommended fields - Users often need to add fields to a grid or page. This can be difficult with so many available fields. Instead of having to search through a large list, this feature enables the system to surface a set of recommended fields based on what other users most often add in similar scenarios.
+
 - Sticky default actions in grids - This feature ensures that the default action in a grid is linked to a specific column in a grid, regardless of whether that column is moved or hidden.
 
 ## New production release cadence
 
-Beginning in April, the release cadence for Human Resources will shift from a weekly update to a bi-weekly update. To ensure alignment with safe deployment practices, and maintain high standards of stability and reliability in the service, the process of deploying service updates to all regions will be a two-week rollout. Additional testing and monitors will be in place to verify successful deployment at each stage of the process. For more information on the release cadence, see the [Update process](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-admin-setup-update-process) documentation.
+Beginning in April, the release cadence for Human Resources will shift from a weekly update to a biweekly update. This will ensure alignment with safe deployment practices and maintain high standards of stability and reliability in the service. We're putting additional testing and monitors in place to verify successful deployment at each stage of the process. For more information about the release cadence, see [Update process](hr-admin-setup-update-process.md).
