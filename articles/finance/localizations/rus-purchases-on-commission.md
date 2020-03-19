@@ -165,6 +165,7 @@ The following illustration shows the business process for registering intermedia
 
 ![](media/11_Report_for_a_principal.jpg)
 
+
 ## Print a facture accounting journal
 
 1. Go to **General ledger** \> **Inquiries and reports** \> **Journal reports** \> **Facture** to open the **Facture accounting journal** dialog box.
@@ -216,6 +217,7 @@ Prepayments that are received from a principal aren't a source for charging VAT.
 
 Print a report for the principal. The report for the principal has two sections: one for shipments and one for prepayments.
 
+
 ![](media/18_Purchase_report.jpg)
 
 ### Create a prepayment facture
@@ -233,7 +235,8 @@ Print a report for the principal. The report for the principal has two sections:
 
 6. Select **Print \> Original** to print the original facture, or select **Print \> Copy** to print the facture copy.
 
-![Счет-фактура printed facture](media/21_Invoice-facture.jpg)
+
+![Printed facture](media/21_Invoice-facture.jpg)
 
 ### Create a facture accounting journal
 

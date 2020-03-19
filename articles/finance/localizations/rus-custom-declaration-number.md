@@ -101,3 +101,4 @@ Before you can register customs declaration numbers for newly received goods, yo
 4. Set other sales order parameters, and create a facture in the usual way. Column 11 of the facture shows the information about the customs declaration number.
 
     ![Invoice facture](media/7%20Invoice-facture.jpg)
+
