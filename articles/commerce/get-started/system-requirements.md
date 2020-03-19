@@ -84,7 +84,7 @@ The following Microsoft Office applications are supported:
 
 It is critical to perform proper performance testing prior to going live in production. The following are considered minimum system requirements for applications to function. To achieve desired performance, consider concepts like data volumes, transactional load per hour, and customization impact. Proper performance testing both early into implementation and again prior to final testing will allow for any necessary performance improvements to be made and to validate that the base solution meets the expected operation times required.
 
-[!IMPORTANT] The Microsoft Windows 7 operating system is no longer in support for anything outside of security related required fixes.  As such, while the Dynamics 365 Commerce components may function on Windows 7, bug fixes specifically related to supporting this unsupprted operating system will no longer be taken.  Due to this, workarounds may be required for components to function properly on Windows 7 and it is highly recommended to upgrade to a supported operating system.
+[!IMPORTANT] The Microsoft Windows 7 operating system is no longer supported for anything other than security-related fixes. As a result, while Dynamics 365 Commerce components may function on Windows 7, there will be no bug fixes that specifically relate to supporting this operating system. Workarounds may be required for components to function properly on Windows 7, so it is highly recommended to upgrade to a supported operating system.
 
 ## Modern POS for Windows requirements
 
@@ -132,10 +132,10 @@ It is critical to perform proper performance testing prior to going live in prod
 
         > [!NOTE]
         > Windows 7 is supported only if Internet Explorer 11 is manually installed on the system.
-        > Further, Windows 7 is no longer a supportable operating system (See the **Important** note above).  A recent issue was discovered regarding installation of hardware station on this operating system.  This issue will not be fixed as a workaround is available.  Within the **Common-Web.ps1** file, remove the following two sets of **Log-ActionItem**:
-          1. **Log-ActionItem** 'Config application pool [...] idle timeout to zero
-          2. **Log-ActionItem** 'Config application pool [...] idle timeout action to suspend
-        > Delete the **Log-ActionItem** specified above and the following two lines related to **Set-ItemProperty** and **Log-ActionResult**
+        > Windows 7 is no longer a supportable operating system (see the **Important** note above). A recent issue was discovered regarding installation of hardware station on this operating system. This issue will not be fixed because the following workaround is available. In the **Common-Web.ps1** file, remove the following two sets of **Log-ActionItem**:
+          1. **Log-ActionItem** 'Config application pool [...] idle timeout to zero.
+          2. **Log-ActionItem** 'Config application pool [...] idle timeout action to suspend.
+        > Delete the **Log-ActionItem** specified above and the following two lines related to **Set-ItemProperty** and **Log-ActionResult**.
 
     - Windows 8.1 Update 1 Professional, Enterprise, and Embedded editions.
     - Windows 10 Pro, Enterprise, Enterprise LTSB, and IOT Enterprise editions.
