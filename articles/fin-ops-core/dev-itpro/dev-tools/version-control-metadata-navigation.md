@@ -108,7 +108,7 @@ Your model store root folder contains source files of all packages and models th
     [![VSOfolders2](./media/vsofolders21.png)](./media/vsofolders21.png)
 
 4. Click **Map**, and on the next dialog, click **No**.
-5. Similarly, map the <strong>/Trunk/Main/Projects **server folder to the **local projects folder</strong> that will hold your Visual Studio solution and project files.
+5. Similarly, map the **/Trunk/Main/Projects** server folder to the **local projects folder** that will hold your Visual Studio solution and project files.
 
 ## Scenario 1: Open the fleet management solution and add it to Azure DevOps source control
 This section describes the steps needed to add a solution to Azure DevOps source control. This scenario is relevant when you have started development on a new model and you are adding it to source control for the first time. For code migration scenarios or in the case you are synchronizing new models that have been created by another developer, refer to scenario 2 below.
