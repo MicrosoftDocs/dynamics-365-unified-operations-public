@@ -90,7 +90,7 @@ To help guarantee that a header appears on every page, follow these steps on eve
 
 [Cart module](add-cart-module.md)
 
-[Cart icon module](add-cart-icon.md)
+[Cart icon module](cart-icon-module.md)
 
 [Checkout module](add-checkout-module.md)
 
