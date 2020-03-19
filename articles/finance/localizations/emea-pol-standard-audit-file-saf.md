@@ -546,6 +546,8 @@ The following table shows the sales tax codes and sales tax reporting codes for 
 </tbody>
 </table>
 
+For invoices which are not paid within 150 days an “Overdue debt VAT” periodic task can be applied. In this case same Reporting codes as for K_44 and(or) K_46 can be used. Transactions will be automaticaly interpreted by the system for reporting in K_49 (Overdue invoice) and K_50 (Paid overdue invoice) respectively. 
+
 ### Configure the ER model, and format for the report
 
 To review or change the configuration for the SAF VAT sales and purchase register, on the **Reporting configurations** page, in the list of models, select the **Standard Audit File (SAF-T)** model. Then click **Designer** to review or change the model. To review or change the format for the SAF VAT sales and purchase register, on the **Reporting configurations** page, under **Standard Audit File (SAF-T)**, select **VAT Register (PL)**, and then click **Designer**. For more information about ER, see the following topics:
