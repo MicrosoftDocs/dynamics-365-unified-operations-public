@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.10 (Ma
 description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.10. 
 author: kamaybac
 manager: AnnBe
-ms.date: 03/11/2020
+ms.date: 03/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,7 +25,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kamaybac
-ms.search.validFrom: 2020-03-11 
+ms.search.validFrom: 2020-03-21 
 ms.dyn365.ops.version: 10.0.10
 
 ---
@@ -44,9 +44,10 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 
 The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. Additional links point to additional documentation or videos that are currently available for that feature. Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
-- Include items with on-hand when pre-processing filters are enabled
+- Enhancement to use existing catch weight tags with warehouse management
+- Master planning include items with on-hand when pre-processing filters are enabled
+- New data entities for the manufacturing area
 - [Quality management for warehouse processes](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/quality-management-warehouse-processes)
-- Use existing catch weight tags
 
 ## Additional resources
 
