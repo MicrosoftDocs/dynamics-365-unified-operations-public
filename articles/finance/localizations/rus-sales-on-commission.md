@@ -226,8 +226,6 @@ Print a report for a principal. The report for the principal has two sections: o
     
 9. Select **Print** \> **Original** to print the original facture, or select **Print** \> **Copy** to print the facture copy.
 
-    ![Счет-фактура generated report](media/41_Счет-фактура.jpg)
-
 ### Create a facture accounting journal
 
 You can register approved lines on the **Facture accounting journal** page and print a facture accounting journal.
