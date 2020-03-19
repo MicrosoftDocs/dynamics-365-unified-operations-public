@@ -202,8 +202,6 @@ The amount of prepayment that is received from the customer can be allocated amo
 
 Print a report for a principal. The report for the principal has two sections: one for shipments and one for prepayments.
 
-![Отчет коммиссионера о реализации товара generated report](media/37_Отчет_коммиссионера_о_реализации_товара.jpg)
-
 ### Create a prepayment facture
 
 1. On the **Report for principal** page, on the **Prepayments** tab, select the **Approve** check box, and then select **Create facture** to register a principal's facture on the prepayment.
