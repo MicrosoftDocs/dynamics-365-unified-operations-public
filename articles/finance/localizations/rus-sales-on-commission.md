@@ -199,6 +199,9 @@ The amount of prepayment that is received from the customer can be allocated amo
 
 Print a report for a principal. The report for the principal has two sections: one for shipments and one for prepayments.
 
+![Generated sales report](media/37_Sales_report.jpg)
+
+
 ### Create a prepayment facture
 
 1. On the **Report for principal** page, on the **Prepayments** tab, select the **Approve** check box, and then select **Create facture** to register a principal's facture on the prepayment.
@@ -223,6 +226,9 @@ Print a report for a principal. The report for the principal has two sections: o
     ![Facture journal page](media/40_Facture_journal.jpg)
     
 9. Select **Print** \> **Original** to print the original facture, or select **Print** \> **Copy** to print the facture copy.
+
+    ![Invoice facture generated report](media/41_Invoice-facture.jpg)
+
 
 ### Create a facture accounting journal
 

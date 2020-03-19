@@ -81,7 +81,7 @@ Before you can register customs declaration numbers for newly received goods, yo
 
 3. Set other purchase order parameters, and create a facture in the usual way. Column 11 of the facture shows the information about the customs declaration number.
 
-    ![Invoice facture](media/4%20Счет-фактура.jpg)
+    ![Invoice facture](media/4%20Invoice-facture.jpg)
 
 ## View the customs declaration number in the purchase book
 
@@ -99,3 +99,6 @@ Before you can register customs declaration numbers for newly received goods, yo
     ![Sales order page Line details FastTab](media/6%20Sales%20order.jpg)
 
 4. Set other sales order parameters, and create a facture in the usual way. Column 11 of the facture shows the information about the customs declaration number.
+
+    ![Invoice facture](media/7%20Invoice-facture.jpg)
+
