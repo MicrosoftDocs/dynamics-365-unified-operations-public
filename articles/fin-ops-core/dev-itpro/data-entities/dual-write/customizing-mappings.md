@@ -6,7 +6,7 @@ author: sabinn-msft
 
 ms.technology: 
 ms.topic: conceptual
-ms.date: 03/13/2020
+ms.date: 03/18/2020
 ms.author: v-douklo
 
 LocalizationGroup: 
@@ -18,17 +18,17 @@ LocalizationGroup:
 
 [!include [banner](../../includes/preview-banner.md)]
 
-The out of the box OOB entity maps serve as a blueprint with predefined entity and field mappings to enable flow of data between two apps. However, every business is different and sometimes the default entity maps may not be enough. To address these needs, dual-write fully supports customizations by providing you with ways to modify and customize entity maps and field mappings.
+The out of the box (OOB) entity maps serve as a blueprint with predefined entity and field mappings to enable flow of data between two apps. However, every business is different and sometimes the default entity maps may not be enough. To address these needs, dual-write fully supports customizations by providing you with ways to modify and customize entity maps and field mappings.
 
-## How-to customize field mappings, add transforms and enabling filtering
+## How-to customize field mappings, add transforms, and enable filtering
 
-1. In your Finance and Operations app, navigate to the **Entity mappings** tab and select the entity map that you want to customize. To make changes to entity mappings, they need to be stopped (not running) or else your changes won't be saved.
+1. In your Finance and Operations app, select the **Entity mappings** tab, and then select the entity map that you want to customize. To make changes to entity mappings, they need to be stopped (not running) or else your changes won't be saved.
 
 2. On the **Entity mappings** tab, you can customize a field by picking a new or custom field from either the Finance and Operations app or Common Data Service.
 
     <kbd>![Customizing a field](media/customize-a-field.png)
 
-3. You can also customize the Sync direction (unidirectional or bidirectional) and add Transforms by selecting the Map type.
+3. In addition, you can customize the Sync direction (unidirectional or bidirectional) and add Transforms by selecting the Map type.
 
     <kbd>![Customizing the sync direction](media/customize-sync-direction.png)
 
@@ -46,12 +46,12 @@ The following table provides a description of the available sync directions.
 
 |Symbol |Description |
 | --- | --- |
-|![Equal symbol](media/equal-symbol.png) |Bi-directional field assignment |
-|![Greater than less than symbol](media/greater-less-symbol.png) |Bi-directional field assignment with transforms |
-|![Greater than symbol](media/greater-than-symbol.png) |Uni-directional field assignment (left to right) |
-|![Less than symbol](media/less-than-symbol.png) |Uni-directional field assignment (right to left) |
-|![Right arrow symbol](media/right-arrow-symbol.png) |Uni-directional field assignment with transforms (left to right) |
-|![Left arrow symbol](media/left-arrow-symbol.png) |Uni-directional field assignment with transforms (right to left) |
+|![Equal symbol](media/equal-symbol.png) |Bidirectional field assignment |
+|![Greater than less than symbol](media/greater-less-symbol.png) |Bidirectional field assignment with transforms |
+|![Greater than symbol](media/greater-than-symbol.png) |Unidirectional field assignment (left to right) |
+|![Less than symbol](media/less-than-symbol.png) |Unidirectional field assignment (right to left) |
+|![Right arrow symbol](media/right-arrow-symbol.png) |Unidirectional field assignment with transforms (left to right) |
+|![Left arrow symbol](media/left-arrow-symbol.png) |Unidirectional field assignment with transforms (right to left) |
 | | |
 
 The following table provides a description of the available transform types.

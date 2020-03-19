@@ -22,7 +22,7 @@ Making dual-write solution aware enables basic application lifecycle management 
 
 ## What is a dual-write solution?
 
-A dual-write solution can contain one or more dual-write entity maps. These maps can be imported into your environment (using Solutions in the Power Apps maker portal). Also, they can be exported as a package to other environments. You can import entity maps published by Microsoft or ISV from AppSource, modify these entity maps in your test environment, test it, and when ready, export it to your production environment. Additionally, you can also publish your solution to others through AppSource.
+A dual-write solution can contain one or more dual-write entity maps. These maps can be imported into your environment (using Solutions in Power Apps). Also, they can be exported as a package to other environments. You can import entity maps published by Microsoft or ISV from AppSource, modify these entity maps in your test environment, test it, and when ready, export it to your production environment. Additionally, you can also publish your solution to others through AppSource.
 
 >[!Note]
 >There two types of solutions: managed and unmanaged solutions. 
@@ -37,7 +37,7 @@ The dual-write core solution contains metadata for your entity maps and must be 
 
 The following steps describe how to install the dual-write core solution.
 
-1. In the Power Apps maker portal, select **Solutions** in the left-hand pane.
+1. In Power Apps, select **Solutions** in the left-hand pane.
 
 2. Select **Open AppSource** and search for the solution named dual-write core.
 
@@ -49,7 +49,7 @@ The following steps describe how to install the dual-write core solution.
 
 The following steps describe how to install the dual-write entity maps solution.
 
-1. In the Power Apps maker portal, select **Solutions** in the left-hand pane.
+1. In Power Apps, select **Solutions** in the left-hand pane.
 
 2. Select **Open AppSource** and search for the solution named Common Data Service Add-in for Finance and Operations package.
 
@@ -71,13 +71,13 @@ In this section, you'll learn how to import entity maps from AppSource and apply
 
     1. Start with a new dual-write environment (a Finance and Operations app and Common Data Service environment).
 
-    1. Follow the instructions in [How-to install the dual-write core solution](#how-to-install-the-dual-write-core-solution) to import the dual-write core solution from AppSource to the Power Apps maker portal.
+    1. Follow the instructions in [How-to install the dual-write core solution](#how-to-install-the-dual-write-core-solution) to import the dual-write core solution from AppSource in Power Apps.
 
     1. Once imported, verify that you can see the dual-write core solution listed under **Solutions**.
 
 2. Import the ISV or Microsoft published entity map solution.
 
-    1. Follow the instructions in [How to install the dual-write entity maps solution](#how-to-install-the-dual-write-entity-maps-solution) to download and install the entity maps from ISV or Microsoft using AppSource to the Power Apps maker portal.
+    1. Follow the instructions in [How to install the dual-write entity maps solution](#how-to-install-the-dual-write-entity-maps-solution) to download and install the entity maps from ISV or Microsoft using AppSource in Power Apps.
 
     1. Once imported, verify that you see the entity map solution listed under **Solutions**.
 
@@ -118,7 +118,7 @@ The following steps describe how to customize your entity maps by modifying exis
 
 Now that you've customized your mappings and added new mappings, the next step is to create a new dual-write solution and add these entity maps to the solution.
 
-   1. Go to the Power Apps maker portal and create a New solution under **Solutions**. Make sure to choose the same publisher as in prior steps.
+   1. Go to Power Apps and create a New solution under **Solutions**. Make sure to choose the same publisher as in prior steps.
 
        <kbd>![Creating a new solution and adding entity maps](media/add-map-to-solution.png)
 
@@ -188,7 +188,7 @@ There could be situations where a solution might contain different implementatio
 
 1. Import the dual-write core solution.
 
-    Follow the instructions in [How to install the dual-write core solution](#how-to-install-the-dual-write-core-solution) to import the dual-write core solution from AppSource to the Power Apps maker portal. 
+    Follow the instructions in [How to install the dual-write core solution](#how-to-install-the-dual-write-core-solution) to import the dual-write core solution from AppSource in Power Apps. 
 
     Once imported, verify that you see the dual-write core solution listed under Solutions.
 

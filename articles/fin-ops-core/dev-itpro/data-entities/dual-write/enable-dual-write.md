@@ -1,6 +1,6 @@
 ---
 
-title: "Enable dual-write for existing Finance and Operations, and Common Data Service"
+title: "Enable dual-write for existing Finance and Operations apps"
 description: Learn how to enable dual-write for existing Finance and Operations apps instances, and also for a new or existing Common Data Service environment.
 author: sabinn-msft
 
@@ -12,7 +12,7 @@ ms.author: v-douklo
 LocalizationGroup: 
 ---
 
-# Enable dual-write for existing Finance and Operations, and Common Data Service
+# Enable dual-write for existing Finance and Operations apps
 
 [!include [banner](../../includes/banner.md)]
 
