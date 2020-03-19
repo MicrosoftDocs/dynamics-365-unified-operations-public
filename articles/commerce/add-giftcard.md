@@ -42,7 +42,7 @@ For more information on support for external gift cards such as SVS and Givex, s
 
 ## Module properties
 
--**Show additional fields** - This property defines what fields should be displayed for gift cards in addition to the gift card number, which is always displayed by default. For example, some gift cards support displaying personal identification number (PIN) and others support displaying PIN and expiration date. Alternatively, this property could be set to "None", which would only display the gift card number and no additional fields.
+- **Show additional fields** - This property defines what fields should be displayed for gift cards in addition to the gift card number, which is always displayed by default. For example, some gift cards support displaying personal identification number (PIN) and others support displaying PIN and expiration date. Alternatively, this property could be set to "None", which would only display the gift card number and no additional fields.
 
 Supported values:
 -	PIN
