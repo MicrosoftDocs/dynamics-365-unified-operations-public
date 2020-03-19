@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create advanced contracts for billing based on progress
-description: This article describes how to create or modify a grant. A grant is a gift of money for a specific purpose or project. 
+description: 
 author: RadhikaRS
 manager: AnnBe
 ms.date: 03/17/2020
