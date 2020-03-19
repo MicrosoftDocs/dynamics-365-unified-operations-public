@@ -163,8 +163,6 @@ The following illustration shows the business process for registering intermedia
 
 15. Select **Print** to open the **Report for principal to Microsoft Excel** dialog box, and then select **OK** to print the report for the principal.
 
-![Отчет коммиссионера report](media/11_Отчет_коммиссионера.jpg)
-
 ## Print a facture accounting journal
 
 1. Go to **General ledger** \> **Inquiries and reports** \> **Journal reports** \> **Facture** to open the **Facture accounting journal** dialog box.
