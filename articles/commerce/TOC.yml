@@ -942,6 +942,8 @@
             href: add-checkout-module.md
           - name: Order confirmation module
             href: order-confirmation-module.md 
+          - name: Store selector module
+            href: store-selector.md
         - name: Account management modules
           items:
           - name: Account management pages and modules
