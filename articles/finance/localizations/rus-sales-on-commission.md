@@ -199,7 +199,8 @@ The amount of prepayment that is received from the customer can be allocated amo
 
 Print a report for a principal. The report for the principal has two sections: one for shipments and one for prepayments.
 
-![Отчет коммиссионера о реализации товара generated report](media/37_Sales_report.jpg)
+![Generated sales report](media/37_Sales_report.jpg)
+
 
 ### Create a prepayment facture
 
