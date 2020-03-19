@@ -22,7 +22,7 @@ LocalizationGroup:
 
 Before you enable dual-write, follow the steps in the sections below to ensure you meet the minimum system requirements and to grant access to the apps that need to connect to each other. The dual-write _health check_ validates the required prerequisites below as you step through the dual-write wizard to link to the Common Data Service environment.
 
-1. Check the platform update and app version
+1. Check the platform update and app version.
 
     Ensure your Finance and Operations app environment is at least platform update 33 (App version 10.0.9) or above.
 
@@ -32,7 +32,7 @@ Before you enable dual-write, follow the steps in the sections below to ensure y
 
     `Dual Write is supported on Finance and Operations app environments with Platform Update PU 33 (App version 10.0.9) or above`
 
-2. Install the dual-write core solution
+2. Install the dual-write core solution.
 
    The dual-write core solution contains metadata for your entity maps and must be installed in your environments.
 
@@ -51,7 +51,7 @@ Before you enable dual-write, follow the steps in the sections below to ensure y
 
     `The dual-write core solution contains metadata for your entity maps and must be installed in the environment`
 
-3. Grant access to the Common Data Service to connect to a Finance and Operations app
+3. Grant access to the Common Data Service to connect to a Finance and Operations app.
 
     Follow the steps below to grant access for the Common Data Service to connect to a Finance and Operations app.
 
@@ -63,7 +63,7 @@ Before you enable dual-write, follow the steps in the sections below to ensure y
 
        <kbd>![Adding another client ID record](media/another-client-id-record.png)
 
-    Follow the steps below to refresh entities.
+    **Refresh entities**
 
     1. From the left-hand pane, go to **Data Management/Data entities** and make sure the entity list is populated.
 
@@ -79,7 +79,7 @@ Before you enable dual-write, follow the steps in the sections below to ensure y
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`App user with id 33976c19-1db5-4c02-810e-c243db79efde exists`<br/>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`App user with id 2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b exists`
 
-4. Grant access to a Finance and Operations app to connect to the Common Data Service
+4. Grant access to a Finance and Operations app to connect to the Common Data Service.
 
     Follow the steps below to grant access for a Finance and Operations app to connect to the Common Data Service:
 
@@ -111,7 +111,7 @@ Before you enable dual-write, follow the steps in the sections below to ensure y
 
        <kbd>![Assign the system administration role](media/assign-system-admin-role.png)
 
-    9. Repeat steps 4 through 8 for the **2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b** application ID, and follow the prompts to fill additional fields and save the user account.
+    9. Repeat steps d through h for the **2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b** application ID, and follow the prompts to fill additional fields and save the user account.
 
        <kbd>![Assign the application ID](media/assign-application-id.png)
 
@@ -125,7 +125,7 @@ Before you enable dual-write, follow the steps in the sections below to ensure y
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`App user with id 00000015-0000-0000-c000-000000000000 exists`<br/>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`App user with id 2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b exists`
 
-5. Provide app consent in the tenant
+5. Provide app consent in the tenant.
 
     Follow these steps to make sure you provide the required app consent.
 
@@ -147,7 +147,7 @@ Before you enable dual-write, follow the steps in the sections below to ensure y
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`App ID: 33976c19-1db5-4c02-810e-c243db79efde`<br/>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`App ID: 2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b`
 
-6. Ensure dual-write plugins are enabled
+6. Ensure dual-write plugins are enabled.
 
     The dual-write plugins should be enabled as part of the dual-write core solution installation. However, if this check fails, follow the steps below to enable dual-write plugins.
 
@@ -170,15 +170,15 @@ Before you enable dual-write, follow the steps in the sections below to ensure y
 
     `To ensure listening into CRUD operations on the Common Data Service, the dual-write plugins need to be enabled`
 
-7. Uninstall the Prospect to Cash solution
+7. Uninstall the Prospect to Cash solution.
 
     The "Prospect to Cash" solution or P2C doesn't work simultaneously with dual-write. So, don't install "Prospect to Cash" solution. If you have the P2C solution installed, you'll need to uninstall it before enabling dual-write.
 
-8. Provide the supported tenant configuration
+8. Provide the supported tenant configuration.
 
     Ensure that the Finance and Operations app and Common Data Service are installed under the same tenant. We currently do not support cross tenant scenarios.
 
-9. Install the dual-write entity maps solution
+9. Install the dual-write entity maps solution.
 
     1. Like the instructions of installing the dual-write core package, in Power Apps, select **Solutions** in the left-hand pane, open **AppSource**, and search for the solution named **Common Data Service Add-in for Finance and Operations package**. Select the solution and follow the prompts to import the solution.
 
@@ -186,9 +186,9 @@ Before you enable dual-write, follow the steps in the sections below to ensure y
 
        <kbd>![Applying the entity maps](media/apply-entity-maps.png) 
 
-    That's it&mdash;you successfully imported and applied a Microsoft published Dual Write entity map solution to your environment.
+That's it&mdash;you successfully imported and applied a Microsoft published dual-write entity map solution to your environment.
 
-    ![Dual write imported and applied](media/dual-write-imported-applied.png) 
+![Dual write imported and applied](media/dual-write-imported-applied.png) 
 
 ## How-to use the dual-write wizard to link your environments
 
