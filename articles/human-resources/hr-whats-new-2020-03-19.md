@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Human Resources
 
 # What's new or changed in Dynamics 365 Human Resources (March 19, 2020)
 
-This article describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3014. The numbers in parentheses in some headings refer to LCS support numbers for reference.
+This article describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3014. The numbers in parentheses in some headings refer to Lifecycle Services (LCS) support numbers for reference.
 
 ## Human Resources environment limits are now based on updated licensing (394595)
 
@@ -40,7 +40,7 @@ The limit on the number of environments per project in Lifecycle Services (LCS) 
 
 ## Provide cross company viewing of compensation data for employees and managers (403904)
 
-Turn this feature on in the **Feature management** workspace. For more information, see [Enable or disable preview features](hr-admin-manage-features.md#enable-or-disable-preview-features).
+Turn on this feature in the **Feature management** workspace. For more information, see [Enable or disable preview features](hr-admin-manage-features.md#enable-or-disable-preview-features).
 
 When you enable this feature, managers can see direct and extended reports compensation without having to sign into the company of employment. Full compensation history is available from any signed in company the manager can access. For more information, see [Employee and Manager self service overview](hr-employee-manager-self-service-overview.md).
 
@@ -50,7 +50,7 @@ You can now merge duplicate address book entries by selecting the duplicate reco
 
 ## Unable to adjust leave balance for a plan with no accruals that was created with the Multiple leave type feature on (419635)
 
-With this change, you will be able to adjust balances for leave plans that have been created with the **Multiple leave type** preview feature enabled in Feature management.
+You can now adjust balances for leave plans that were created with the **Multiple leave type** preview feature enabled in Feature management.
 
 ## Common Data Service solution is now available with the following changes:
 
@@ -89,7 +89,7 @@ Over the next few weeks, these entity changes will be available in all environme
 
 If document preview for documents stored in SharePoint doesn't work, try the following procedure:
 
-1. Verify the Admin user account has an email associated with the user record. You can view this information in the **User** page. If email isn't set up, you need to add the email and provider with the OData Excel add-in. By default, the email address isn't present in the Excel design. This means you'll need to edit the Excel design, add all fields, apply, and refresh. Once you've completed those steps, you can update the admin account.
+1. Verify the Admin user account has an email associated with the user record. You can view this information in the **User** page. If email isn't set up, you need to add the email and provider with the OData Excel add-in. By default, the email address isn't present in the Excel design. You'll need to edit the Excel design, add all fields, apply, and refresh. Once you've completed those steps, you can update the admin account.
 
 2. After the Admin account has an associated email account, sign in to Human Resources with Admin credentials.
 
@@ -103,7 +103,7 @@ If document preview for documents stored in SharePoint doesn't work, try the fol
 
 - Full page apps (Preview) - This preview feature, which requires you to enable the Saved views feature, allows Power Apps and third-party apps to be added as full-page experiences via the dashboard.
 
-- Saved views (Preview) - This preview feature enables saved views, which is a significant enhancement to the personalization subsystem. This feature allows users to have multiple named sets of personalizations per page. You can also publish views to security roles.
+- Saved views (Preview) - This preview feature enables saved views, which provide a significant enhancement to the personalization subsystem. This feature allows users to have multiple named sets of personalizations per page. You can also publish views to security roles.
 
 - Optimized "is one of" filtering experience - This feature enables an optimized "is one of" filtering experience that makes it easier to enter multiple filter values, has a simpler mechanism to remove individual or all filter values, and has a more compact and intuitive visualization of filter values.
 
