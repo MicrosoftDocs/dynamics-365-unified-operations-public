@@ -71,7 +71,7 @@ To create a header module, follow these steps.
 1. In the **Search** slot of the header module, add a search module. 
 1. In the property pane for the search module, configure the properties of the search module. 
 1. n the **Cart icon** slot of the header module, add a cart icon module. 
-1. In the property pane for the cart icon module, configure the properties of the cart icon module. If you want to display a mini cart, select the **Show mini cart** property.
+1. In the property pane for the cart icon module, configure the properties of the cart icon module. If you want the cart icon to display a mini cart when hovered over, select **True** for **Show mini cart**.
 1. Save the page fragment, finish editing it, and publish it. 
 
 
