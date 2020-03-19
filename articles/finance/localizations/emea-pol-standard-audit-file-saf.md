@@ -587,9 +587,7 @@ To report correctly some important tags in the report, define **Application spec
 |-------------------|-------------------------|-----------------------|-----------------|------------------|
 | **TaxFree_LOOKUP**    | Tax free  | Tax free | Non-taxable transactions for the supply of goods and services outside the country; exempt from taxation. | Niepodlegające opodatkowaniu-transakcje dostawy towarów oraz świadczenia usług poza terytorium kraju; zwolnione z opodatkowania. |
 | **TaxExemptReason_LOOKUP** | Tax exempt reason | Przyczyna lub podstawa zwolnienia z podatku lub jego zmniejszenia | In the case of delivery of goods or provision of services exempt from tax pursuant to art. 43 paragraph 1, art. 113 section 1 and 9 or provisions issued on the basis of art. 82 paragraph 3 | W przypadku dostawy towarów lub świadczenia usług zwolnionych od podatku na podstawie art. 43 ust. 1, art. 113 ust. 1 i 9 albo przepisów wydanych na podstawie art. 82 ust. 3 |
-| **ItemType_LOOKUP** | Type of item | Rodzaj przedmiotu | Delivery of second-hand goods, works of art, collectors' items and antiques, for which the tax base is constituted in accordance with art. 120 paragraph 4th and 5th margin; 
-New means of transport is the subject of Intra-Community supply. | Dostawy towarów używanych, dzieł sztuki, przedmiotów kolekcjonerskich i antyków, dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 i 5 marża; 
-W przypadku gdy przedmiotem wewnątrzwspólnotowej dostawy są nowe środki transportu. |
+| **ItemType_LOOKUP** | Type of item | Rodzaj przedmiotu | Delivery of second-hand goods, works of art, collectors' items and antiques, for which the tax base is constituted in accordance with art. 120 paragraph 4th and 5th margin; New means of transport is the subject of Intra-Community supply. | Dostawy towarów używanych, dzieł sztuki, przedmiotów kolekcjonerskich i antyków, dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 i 5 marża; W przypadku gdy przedmiotem wewnątrzwspólnotowej dostawy są nowe środki transportu. |
 
 ### TaxFree_LOOKUP
 
