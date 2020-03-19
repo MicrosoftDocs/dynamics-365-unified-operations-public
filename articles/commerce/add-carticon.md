@@ -3,10 +3,10 @@
 # required metadata
 
 title: Cart icon module
-description: This topic covers cart icon module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
+description: This topic covers the cart icon module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 03/13/2020
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -34,16 +34,15 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic covers cart icon module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
+This topic covers the cart icon module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-Cart icon is used to represent the cart in the header module of the page. It shows the number of items in the cart and also shows a cart summary aka mini-cart on hover. 
-It allows the user to get a summary of the items in the cart without navigating to cart page. In addition, it also allows the user to directly go to checkout page if they are happy with the summary. This reduces the number of page navigations and makes checkout faster. 
+The cart icon module is used to represent the cart in the header module of the page, and shows the number of items in the cart. The cart icon module also displays a cart summary (also known as a mini cart) when the cart icon is hovered over. The mini cart provides the user with a summary of the items in the cart without having to navigate to the cart page. In addition, it also allows the user to directly go to checkout page if they are happy with the summary. This reduces the number of page navigations and makes checkout faster. 
 
 ## Module properties
 
-- **Show mini cart** – This property when true shows a cart summary aka mini cart on hover over the cart icon. This is applicable for Desktop only.
+- **Show mini cart** – When true, this property enables a cart summary (mini cart) to be displayed when the cart icon is hovered over. This functionality is only supported for desktop view ports.
 
 
 ## Add a cart icon module to a page
