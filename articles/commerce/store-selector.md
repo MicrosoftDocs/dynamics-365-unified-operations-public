@@ -68,16 +68,16 @@ The following image shows an example of a store selector module used on a PDP.
 
 A store selector module needs the context of a product, so it can only be used within buy box and cart modules. Store selector modules do not function outside these modules.
 
-- For information on how to add a store selector module to a buy box module, see [Buy box module](add-buybox.md). 
-- For information on how to add a store selector module to a cart module, see [Cart module](add-cart.md)
+- For information on how to add a store selector module to a buy box module, see [Buy box module](add-buy-box.md). 
+- For information on how to add a store selector module to a cart module, see [Cart module](add-cart-module.md)
 
 ## Additional resources
 
 [Starter kit overview](starter-kit-overview.md)
 
-[Buy box module](add-buybox.md)
+[Buy box module](add-buy-box.md)
 
-[Cart module](add-cart.md)
+[Cart module](add-cart-module.md)
 
 [Quick tour of PDP](quick-tour-pdp.md)
 
