@@ -558,7 +558,7 @@ To review or change the configuration for the SAF VAT sales and purchase registe
 
 Initially, the configuration is an example of VAT Register based on Reporting codes described in table above. If you need to adopt the configuration to another set of reporting codes, you should derive the format of the configuration. To do so, select the format in the configuration's tree and click **Create configuration** in **Main menu**. **Mark Derive from name:...,** fill in **Name** and **Description** fields of a new format and click **Create configuration** button. Created format is a copy of the parent format. Select the created format and click **Designer** on the **Main menu** to open format designer and update format with your reporting codes. Format designer window is divided into two parts: the left side â€“ is a format structure (in VAT register case it is a XML scheme); the right side â€“ is a Data Model (data). Press **Mapping** button in the right side to see the **Data model**. The Data Model includes all the field for all the SAF-T reports. VAT register format is mapped mostly to the **TaxTransaction** node. Scroll down the tree to find and select it. All tax transactions are grouped into two groups: for tag **SprzedazWiersz** and for tag **ZakupWiersz**. And called **$SalesList** and **$PurchaseList** respectively. These are record lists calculated (filtered) by formulas. You can review and modify formula in formula redactor. To do so, select calculated field or record list (in this particular case) and click **Edit** in tree menu. Edit formulas for **$SalesList** and **$PurchaseList** according to your company's Reporting codes and save them. Formula designer window in the left side shows the Data model where you can select fields or record lists and in the right side all the functions which you may implement. (More information about Format designer - [Formula designer in Electronic reporting](../../dev-itpro/analytics/general-electronic-reporting-formula-designer.md)). After Tax transactions were divided into two groups, inside each of both groups Tax transactions should be grouped for each tag according to your company's Reporting codes. Find calculated fields "list\_K" under **$SalesList** and **$PurchaseList** and update their formulas with your Reporting codes using Formula Designer. After all "list\_K"? nodes formulas were updated find and modify **SalasCtrl** and **PurchCtrl** under **$SalesList** and **$PurchaseList** respectively. These nodes are used for **SprzedazCtrl** and **ZakupCtrl**  tags respectively. Basically, no other modifications in the format are needed. Save the format. Close it and complete the format using **Change status** &gt; **Complete** button on the versions menu on **Versions** FastTab on **Configurations**.
 
-### Generate a SAF VAT sales and purchase register
+## Generate a SAF VAT sales and purchase register
 
 To generate a SAF VAT sales and purchase register, click **General ledger > Inquiries and reports > Standard Audit File for Tax (SAF-T) > SAF VAT sales and purchase register**, and set the following parameters.
 
@@ -580,6 +580,35 @@ Before you can generate a SAF VAT invoices file, you must complete the following
 -   Configure the ER model, and format for the report.
 
 This setup resembles the additional setup that you completed for the SAF VAT sales and purchase register excepting **Configure the ER model, and format for the report.**
+
+To report correctly P_19A, P_19B, P_19C tags in the report, where:
+
+-   P_19 indicates the provision of the act or act issued on the basis of the act on the basis of which the taxpayer applies tax exemption
+-   P_19 indicates the provision of Directive 2006/112 / EC, which exempts from such tax the supply of goods or such services
+-   P_19 indicates another legal basis indicating that the supply of goods or services benefits from the exemption
+
+You must setup Application specific parameters on “VAT Invoices (PL)” ER format. Select “VAT Invoices (PL)” in Electronic Reporting workspace and click Configurations > Application specific parameters > Setup on the Action pane. Select version of the format which you want to use on the left side of the page and specify conditions for “TaxExemptReason_LOOKUP” Lookup. Conditions for the “TaxExemptReason_LOOKUP” are Sales tax exempt codes defined in Finance (Modules > Tax > Setup > Sales tax > Sales tax exempt codes) and used in Sales tax group during posting of tax transactions. When invoice contains no lines with Sales tax exemptions P_19 field will be reported with “false” value and P_19A, P_19B, P_19C tags will be omitted.
+
+(!) Click "Save" button when you complete the setup for “TaxExemptReason_LOOKUP” Lookup field and going to setup next lookup field.
+
+P_12 field’s value (starting from JPK_FA v.2) may report, besides the tax rate and “zw” (reverse charge), the following values: 
+
+-   “oo” (reverse charge as part of domestic transactions), 
+-   "np" (for transactions of delivery of goods and provision of services outside the country). 
+
+User must setup and use specific Exempt codes (Tax > Setup > Sales tax > Sales tax exempt codes) for sales tax codes setup with exempt on Sales tax groups (Tax > Indirect tax > Sales tax > Sales tax groups) to distinguish tax transactions by this Exempt code in the report. For the purposes of the report it is needed to define which Exempt codes must be reported with the given values of P_12 tag. To do so, select the “VAT Invoices (PL)” format and open Configurations > Application specific parameters > Setup on the Action pane. For the latest version of the configuration select the “TaxFree_LOOKUP” on the “Lookups” fast tab, go to the “Conditions” fast tab and define conditions for the Lookup results:
+
+|  Lookup result               | Exempt codes                                                                            |
+|------------------------------|----------------------------------------------------------------------------------------|
+| **np**                       | Select those Exempt codes which are used for sales tax transactions of delivery of goods and provision of services outside the country. If there are more than one such code, you need to add as much lines as more Exempt codes are used for transactions of delivery of goods and provision of services outside the country.                                   |
+| **zw**                       | 
+Select *Not blank*. All other transactions with exempt not considering the reason will be reported as reverse charge as part of domestic transactions. This must be the last line in the list, check by the value in the “Line” column. |
+
+Note! Tax transactions marked as “Reverse charge” will be reported as “oo”, no additional setup is needed.
+
+(!) Click "Save" button when you complete the setup for “TaxFree_LOOKUP” Lookup field and going to setup next lookup field.
+
+When Lookup results are defined, change the State to the Completed, save and close the configuration.
 
 ### Configure the ER model, and format for the report
 
