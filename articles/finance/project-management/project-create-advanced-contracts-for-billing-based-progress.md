@@ -63,81 +63,81 @@ Before you create a project with billing rules, you must set up the following pr
 
 Use this procedure to create a project contract for a Fixed-price project. You create a project invoice when the work completed on the project reaches a specified percentage.
 
-\1.     Go to **Project management and accounting** > **Projects** > **Project contracts**.
+1.   Go to **Project management and accounting** > **Projects** > **Project contracts**.
 
-\2.     Locate and select the project contract you want and click the **Project contract ID** to open the record.
+2.   Locate and select the project contract you want and click the **Project contract ID** to open the record.
 
-\3.     On the **Project contracts** page, select **New,** and in the **New project contract** form, enter information in the following fields:
+3.   On the **Project contracts** page, select **New,** and in the **New project contract** form, enter information in the following fields:
 
-–      **Name**
+       **Name**
 
-–      **Funding type**
+       **Funding type**
 
-–      **Funding source**
+       **Funding source**
 
-–      **Sales currency**: By default, this is the currency to use for customer invoices associated with the project contract. You can modify the sales currency in a specific customer invoice.
+       **Sales currency**: By default, this is the currency to use for customer invoices associated with the project contract. You can modify the sales currency in a specific customer invoice.
 
-\4.     Select **OK**. This information is copied to the header of the **Project contracts** form.
+4.    Select **OK**. This information is copied to the header of the **Project contracts** form.
 
-\5.     In the **Project contracts** form, complete the rest of the necessary information for the project.
+5.    In the **Project contracts** form, complete the rest of the necessary information for the project.
 
 **Create a project for progress billings**
 
 Use the following steps to create a project and any subprojects associated with a contract:
 
-\1.     Go to **Project management and accounting** > **Projects** > **Project contracts**, and on the **Project contracts** page, select **New**.
+1.     Go to **Project management and accounting** > **Projects** > **Project contracts**, and on the **Project contracts** page, select **New**.
 
-\2.     On the **Create project** page, enter a project type of **Time and material**.
+2.     On the **Create project** page, enter a project type of **Time and material**.
 
-\3.     Select a project group. A project group defines the posting information for projects assigned to the group.
+3.     Select a project group. A project group defines the posting information for projects assigned to the group.
 
-\4.     Enter any additional project information for:
+4.     Enter any additional project information for:
 
-•       **Project contract ID** field is automatically filled with the project contract number from the **Project contracts** page. You can change the project contract to a different contract number.
+•  **Project contract ID** field is automatically filled with the project contract number from the **Project contracts** page. You can change the project contract to a different contract number.
 
-•       **Project name**
+•  **Project name**
 
-•       **Project group**
+•  **Project group**
 
-•       **Project contract ID**: This associates a project contract with the project.
+•  **Project contract ID**: This associates a project contract with the project.
 
-•       **Customer**
+•  **Customer**
 
-\1.     Select **OK** to create the project.
+5.     Select **OK** to create the project.
 
-\2.     After you create the project, set the project stage to **In process**. For more information about how to set a project stage, see [Modify a project stage](https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/modify-a-project-stage).
+6.     After you create the project, set the project stage to **In process**. For more information about how to set a project stage, see [Modify a project stage](https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/modify-a-project-stage).
 
 **Create a budget for a project**
 
 Budget categories are used to automatically calculate the amounts to invoice a customer for the percentage of work that is completed for each category. Complete the following steps to create the budget categories for the estimated costs:
 
-\1.     Select **Project management and accounting** > **Projects** > **All projects**.
+1.     Select **Project management and accounting** > **Projects** > **All projects**.
 
-\2.     On the **Plan** tab, in the **Budget** group, select **Project budget**.
+2.     On the **Plan** tab, in the **Budget** group, select **Project budget**.
 
-\3.     To create a budget for the project, on the **Project budget** page, enter an estimated cost for each category in the project.
+3.     To create a budget for the project, on the **Project budget** page, enter an estimated cost for each category in the project.
 
 **Create billing rules for progress billings**
 
 After you create the contract and the associated project, complete the following steps to create the billing rules for the contract:
 
-\1.     Go to **Project management and accounting Projects** > **Project contracts**.
+1.     Go to **Project management and accounting Projects** > **Project contracts**.
 
-\2.     Select and open a project contract.
+2.     Select and open a project contract.
 
-\3.     In the **Billing rules** section select **Add**, and in the **Line type** field, select **Progress**.
+3.     In the **Billing rules** section select **Add**, and in the **Line type** field, select **Progress**.
 
-\4.     Under **Billing rule line details**, in the **Contract value** field, enter the total value of the contract.
+4.     Under **Billing rule line details**, in the **Contract value** field, enter the total value of the contract.
 
-\5.     In the **Category** field, select the category to post the fee transaction to.
+5.     In the **Category** field, select the category to post the fee transaction to.
 
-\6.     In the **Project** field, select the project that uses this billing rule.
+6.     In the **Project** field, select the project that uses this billing rule.
 
-\7.     Optional - Assign the billing rule to additional projects: On the **Project** FastTab, in the **Available projects** section, select a project, and then select the top arrow to add the project to the **Selected projects** section.
+7.     Optional - Assign the billing rule to additional projects: On the **Project** FastTab, in the **Available projects** section, select a project, and then select the top arrow to add the project to the **Selected projects** section.
 
-\8.     Optional - Calculate the percentage amount the customer withholds from payments on an invoice: On the **Payment retention terms** FastTab, select the funding source, and in the **Retention percentage** field, enter the retention percentage.
+8.     Optional - Calculate the percentage amount the customer withholds from payments on an invoice: On the **Payment retention terms** FastTab, select the funding source, and in the **Retention percentage** field, enter the retention percentage.
 
-\9.     Repeat these steps to create additional billing rules for the project contract.
+9.     Repeat these steps to create additional billing rules for the project contract.
 
 **See also**
 
