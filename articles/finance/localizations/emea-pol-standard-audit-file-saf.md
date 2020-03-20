@@ -5,7 +5,7 @@ title: Standard audit file (SAF) for Poland
 description: Users in legal entities in Poland can generate a Standard Audit File for Tax (SAF-T) in XML format. This topic provides information about the formats for Poland. 
 author: LizaGolub
 manager: AnnBe
-ms.date: 02/26/2019
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -57,12 +57,12 @@ To generate a SAF Accounting books file, click **General ledger > Inquiries and 
 | **From date**                                   | Specify the first date to export reporting data for. |
 | **To date**                                     | Specify the last date to export reporting data for.  |
 | **Authority identification**                    | Specify the identifier of the tax authority to use in the export file.|
-| **Posting layer**                               | Select one or several posting layers to consider transactions from. This parameter affets all parts of the report. |
-| **Should opening balance be shown by turnover** | If this parameter is selected, opening balance is affected by accumulated turnover. This parameter affects only the ZOiS export file part. |
+| **Posting layer**                               | Select one or more posting layers from which to consider transactionsm. This parameter affects all parts of the report. |
+| **Should opening balance be shown by turnover** | If this parameter is selected, the opening balance is affected by the accumulated turnover. This parameter affects only the ZOiS export file part. |
 | **Separate balance**                            | This parameter can be considered for main accounts where the corresponding parameter is marked. This parameter affects only the ZOiS export file part.     |
 | **Closing transactions**                        | If this parameter is selected, closing transactions will be included in the data that is exported. This parameter affects only the ZOiS export file part. |
 
-This regulatory report must be provided by request and includes accounting data for the reporting period. It includes accounting data in selected posting layer(s) by all the main accounts which have non-zero aggregated turnover or transactions in the reporting period.
+This regulatory report must be provided by request and includes accounting data for the reporting period. It includes accounting data in the selected posting layer(s) by all the main accounts that have non-zero aggregated turnover or transactions in the reporting period.
 
 ## Generate a SAF Bank statement file
 To generate a SAF Bank statement file, click **General ledger > Inquiries and reports > Standard Audit File for Tax (SAF-T) > SAF Bank statement**, and set the following parameters.
@@ -546,7 +546,7 @@ The following table shows the sales tax codes and sales tax reporting codes for 
 </tbody>
 </table>
 
-For invoices which are not paid within 150 days an “Overdue debt VAT” periodic task can be applied. In this case same Reporting codes as for K_44 and(or) K_46 can be used. Transactions will be automaticaly interpreted by the system for reporting in K_49 (Overdue invoice) and K_50 (Paid overdue invoice) respectively. 
+For invoices not paid within 150 days, an **Overdue debt VAT** periodic task can be applied. In this case, the same reporting codes used for K_44 and(or) K_46 can be used. Transactions will be automatically interpreted by the system for reporting in K_49 (Overdue invoice) and K_50 (Paid overdue invoice). 
 
 ### Configure the ER model, and format for the report
 
@@ -581,7 +581,10 @@ Before you can generate a SAF VAT invoices file, you must complete the following
 
 This setup resembles the additional setup that you completed for the SAF VAT sales and purchase register excepting **Configure the ER model, and format for the report.**
 
-To report correctly some important tags in the report, define **Application specific parameters** (for versions of the “VAT Invoices (PL)” format starting from 48.36.58). Open **Configurations > Application specific parameters > Setup** on Action pane, select version of the format which you are going to use (for example, “48.36.58”) and set up for this version values for each of the Lookups in the list on the right:
+To correctly report some of the important tags in the report, define the **Application specific parameters** (for versions of the “VAT Invoices (PL)” format starting from 48.36.58). 
+
+1. Open **Configurations** > **Application specific parameters**, and on the Action Pane, select **Setup**.
+2. Select the version of the format that you are going to use (for example, “48.36.58”), and then set up the values for each of the Lookups in the list on the right.
 
 |   Name            |   Short description En. | Short description Pl. | Description En. |  Description Pl. |
 |-------------------|-------------------------|-----------------------|-----------------|------------------|
