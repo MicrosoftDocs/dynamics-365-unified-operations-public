@@ -5,7 +5,7 @@ title: Add script code to site pages to support telemetry
 description: This topic describes how to add client-side script code to your site pages to support the collection of client-side telemetry. 
 author: bicyclingfool
 manager: annbe
-ms.date: 03/18/2020
+ms.date: 03/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -69,9 +69,9 @@ To create a reusable page fragment for your external script code in site builder
 1. Select **Save**, and then select **Finish editing**.
 1. Select **Publish**.
 
-## Add a page fragment that includes the script code to a template
+## Add a page fragment that includes script code to a template
 
-To add a page fragment that includes the script code to a template in site builder, follow these steps.
+To add a page fragment that includes script code to a template in site builder, follow these steps.
 
 1. Go to **Templates**, and open the template for the pages that you want to add your script code to.
 1. In the left pane, expand the template hierarchy to show the **HTML Head** slot.
