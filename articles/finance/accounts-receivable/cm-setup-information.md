@@ -47,13 +47,17 @@ Go to **Credit and collections \> Setup \> Credit management workflows** to defi
 
 You can put a sales order on hold if the payment terms on the order don't match the default payment terms for the customer. However, sometimes the payment terms differ but are similar enough that you don't want to put the order on hold. You can rank payment terms so that some of them have the same rank, whereas others have a higher or lower rank.
 
-If the rankings for payment terms are active, the sales orders will be put on hold if the payment terms on the order have a higher rank than the default payment terms for the customer.
+If the rankings for payment terms are active, and if the payment terms on the order have a higher rank than the default payment terms for the customer, the sales order will be put on hold.
+
+To set up the payment terms ranking go to **Credit and collections \> Setup \> Credit management setup \>Rank payment terms**  
 
 ### Ranking settlement discounts
 
 You can put a sales order on hold if the cash discount on the order doesn't match the default cash discount for the customer. However, sometimes the cash discounts differ but are similar enough that you don't want to put the order on hold. You can rank cash discounts so that some of them have the same rank, whereas others have a higher or lower rank.
 
-If rankings for settlement discounts are active, the sales orders will be put on hold if the cash discount on the order has a higher rank than the default cash discount for the customer.
+If rankings for settlement discounts are active, and if the cash discount on the order has a higher rank than the default cash discount for the customer, the sales order will be put on hold.
+
+To set up the payment terms ranking go to **Credit and collections \> Setup \> Credit management setup \>Rank settlement discounts**  
 
 ## Reasons
 
@@ -63,7 +67,7 @@ Several types of reasons are used in Credit management:
 - Release reasons are assigned to an order when it's released from hold.
 - Status reasons indicate why an account status was assigned to a customer.
 
-You can set up reasons on the **Credit management reasons** page (**Credit management \> Setup \> Credit management \> Credit management reasons**).
+You can set up reasons on the **Credit management reasons** page (**Credit and collections \> Setup \> Credit management setup \> Credit management reasons**).
 
 1. In the **Reason type** field, select the type of reason: **Hold**, **Release**, or **Status**.
 2. In the **Reason** field, enter a name for the reason.
@@ -73,7 +77,7 @@ You can set up reasons on the **Credit management reasons** page (**Credit manag
 
 Credit management groups are used to identify customers or groups of customers that have the same credit management properties. For example, credit management groups can be used to determine the blocking and exclusion credit management rules for customers.
 
-You can create credit management groups on the **Credit management groups** page (**Credit management \> Setup> Groups setup \> Credit management groups**).
+You can create credit management groups on the **Credit management groups** page (**Credit and collections \> Setup> Credit management setup \> Credit management groups**).
 
 1. Select **New** to create a line.
 2. Enter an ID for the group. The ID can have up to 10 characters.
@@ -85,7 +89,7 @@ The credit management group is assigned to a customer on the **Credit and collec
 
 You can create account statuses to identify the credit standing of a customer account. You can define a status and its effect on the invoicing and delivery on-hold processes. Account statuses can also be used to determine blocking rules for a customer.
 
-You can create account statuses on the **Account statuses** page (**Credit management \> Setup> Groups setup \> Account statuses**).
+You can create account statuses on the **Account statuses** page (**Credit and collections \> Setup> Credit management setup \> Account statuses**).
 
 1. Add an account status, and enter a description that represents the credit standing for a customer. For example, use **Normal** to indicate that a customer is in good standing and open orders are subject to standard credit management processing.
 2. In the **Invoicing** and **Delivery on Hold** fields, select the type of hold that should occur for customers who have this account status. You can hold all processing, hold only invoice processing, or hold no processing when the credit limit rules are applied.
@@ -94,7 +98,8 @@ You can create account statuses on the **Account statuses** page (**Credit manag
 
 You can set up scoring groups to define risk factors and the criteria that are used to measure them. When information about a customer is applied to a scoring group, a score is calculated for each risk factor and used to put the customer in a risk group. The risk group can be used to identify credit worthiness and calculate automatic credit limits.
 
-You can create scoring groups on the **Scoring groups** page (**Credit management \> Setup \> Risk setup \> Scoring groups**).
+You can create scoring groups on the **Scoring groups** page (**Credit and collections \> Setup \> 
+Credit management setup \> Risk \> Scoring groups**).
 
 1. Create a scoring group, and enter a name for it.
 2. Enter a description to further describe the scoring group.
@@ -115,11 +120,11 @@ You can create scoring groups on the **Scoring groups** page (**Credit managemen
     1. In the **Value** field, enter the user-defined value that should be provided from the customer information.
     2. In the **Score** field, enter the score that should be assigned when the value that is provided is in the "from"/"to" range.
 
-## Risk assessments
+## Risk classification
 
 You can define risk assessments that can be assigned to customers, based on their risk score. A risk score is calculated by comparing customer information to each scoring group. The scores are summed, and the total score is compared to the values in the risk group setup to identify the risk group that the customer belongs to. The risk group score is then used to define credit management blocking and exclusion rules for the customer.
 
-You can set up risk groups on the **Risk assessments** page (**Credit management \> Setup \> Risk setup \> Risk assessments**).
+You can set up risk groups on the **Risk assessments** page (**Credit and collections \> Setup \> Credit management setup \> Risk \> Risk classification**).
 
 1. Enter a risk group ID.
 2. Enter a description to further explain the risk group.
@@ -128,7 +133,7 @@ You can set up risk groups on the **Risk assessments** page (**Credit management
 
 ## Guarantee/insurance types
 
-You can set up guarantee/insurance types on the **Guarantee/insurance types** page (**Credit management \> Setup \> Guarantee/insurance setup \> Guarantee/insurance types**).
+You can set up guarantee/insurance types on the **Guarantee/insurance types** page (**Credit and collections \> Setup \> Credit management setup \> Insurance and guarantees \> Insurance and guarantee types**).
 
 1. Enter a guarantee or insurance type that identifies the name of the guarantor or insurance broker.
 2. Enter a description to describe the guarantor/insurance broker.
@@ -137,14 +142,14 @@ You can set up guarantee/insurance types on the **Guarantee/insurance types** pa
 
 Coverage types can be used to further classify insurance policies. They can't be used with guarantees.
 
-You can add coverage types on the **Coverage types** page (**Credit management \> Setup \> Guarantee/insurance setup \> Coverage types**).
+You can add coverage types on the **Coverage types** page (**Credit and collections \> Setup \> Credit management setup \> Insurance and guarantees \> Coverage types**).
 
 1. Enter a coverage type to identify the type of coverage that should be added as insurance or a guarantee.
 2. Enter a description to describe of the coverage type.
 
 ## Automatic credit limits
 
-You can create criteria for automatic credit limits on the **Automatic credit limits** page (**Credit management \> Setup \> Risk setup \> Automatic credit limits**).
+You can create criteria for automatic credit limits on the **Automatic credit limits** page (**Credit and collections \> Setup \> Credit management setup \> Risk \> Automatic credit limits**).
 
 1. Select a risk group that the automatic credit limit should be assigned to.
 2. Select the currency for the automatic credit limit. You can create multiple automatic credit limits in different currencies for the same risk group.

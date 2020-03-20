@@ -5,7 +5,7 @@ title: Import currency exchange rates
 description: This topic provides information about the requirements for importing foreign exchange reference rates that are published by exchange rate providers.
 author: EvgenyPopovMBS
 manager: AnnBe
-ms.date: 01/23/2020
+ms.date: 03/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -31,8 +31,6 @@ ms.dyn365.ops.version: 10.0.9
 ---
 
 # Import currency exchange rates
-
-[!include [banner](../includes/banner.md)]
 
 [!include [banner](../includes/banner.md)]
 

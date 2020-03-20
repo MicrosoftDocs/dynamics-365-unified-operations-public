@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create and post a free text invoice for a public sector customer
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure walks you through creating and posting a free text invoice for a customer using OIOUBL electronic invoicing. 
 
@@ -42,7 +42,7 @@ This is the fourth procedure out of six illustrating end to end process of gener
 
 
 
-Before you can complete this procedure, you must complete the following procedures: ‘Import OIOUBL electronic invoicing electronic reporting configurations’, ‘Set up OIOUBL electronic invoicing’ and ‘Set up a customer account for OIOUBL electronic invoicing’.
+Before you can complete this procedure, you must complete the following procedures: 'Import OIOUBL electronic invoicing electronic reporting configurations', 'Set up OIOUBL electronic invoicing' and 'Set up a customer account for OIOUBL electronic invoicing'.
 
 1. Go to Accounts receivable > Invoices > All free text invoices.
 2. Click New.

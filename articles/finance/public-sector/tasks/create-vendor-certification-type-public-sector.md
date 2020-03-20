@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create a vendor certification type in the public sector
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 You can create and assign vendor organizations any type of certification that the vendors hold, such as professional credentials, liability insurance, minority status, or compliance with various environmental or consumer safety standards. This task guide was created using the PSUS demo company data in the public sector partition.
 

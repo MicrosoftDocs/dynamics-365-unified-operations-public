@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Define configuration route
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure focuses on defining a configuration route that determines the sequence in which the configuration groups will be presented. The demo data company used to create this procedure is USMF. This is the sixth procedure out of eight that explains how to build combinations for dimension-based configuration.
 

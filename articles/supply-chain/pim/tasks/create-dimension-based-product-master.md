@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create a dimension-based product master
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure shows how to create a new product master with dimension-based configuration technology. The demo data company used to create this procedure is USMF. This is the first procedure out of eight that explains how to build combinations for dimension-based configuration.
 

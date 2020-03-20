@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Define shift and industry types for books (India)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure walks you through defining a shift type and industry for a book and then assigning the book to a fixed asset. The calculation of depreciation for a fixed asset is for a specific period and is based on the selected type of shift and industry. The calculation of depreciation is also based on the actual number of days in the calendar month when Day based is selected in the Calendar field on the Books page for the Straight line service life depreciation method or the Reducing balance depreciation method. The demo data company used to create this procedure is INMF.
 

@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Manage unit of measure
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure shows how to define a unit of measure, provide translations for the unit and it's description, and define conversion rules for related units. You can walk through this procedure using demo data, or using your own data.
 

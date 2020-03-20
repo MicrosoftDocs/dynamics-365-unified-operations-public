@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Generate a constrained plan
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic explains how to create a plan that takes into account both material and capacity constraints. The plan ensures that manufacturing doesn't start before materials are available and resources are not overbooked. 
 

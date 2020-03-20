@@ -128,9 +128,6 @@ The following illustration shows the business process for registering intermedia
 
 8. Select **Functions** \> **Update lines on shipment** to open the **Generate report for principal on shipments** dialog box, and then select **OK** to create the lines for every report.
 9. Select **Print** to open the **Report for principal to Microsoft Excel** dialog box, and then select **OK** to print the report for the principal.
-
-    ![Отчет коммиссионера о реализации товара generated report](media/28_Отчет_коммиссионера_о_реализации_товара.jpg)
-
 10. The principal reissues the facture to the agent, based on the factures that the agent issues to the buyer. The principal learns about these factures from the printed report for the principal. Use the **Approved** check box to select the lines that the principal reissues the facture for, and then select **Approval** \> **Approve all** to approve the lines on the report.
 
     ![Report for principal page](media/29_Report_for_principal.jpg)
@@ -202,7 +199,8 @@ The amount of prepayment that is received from the customer can be allocated amo
 
 Print a report for a principal. The report for the principal has two sections: one for shipments and one for prepayments.
 
-![Отчет коммиссионера о реализации товара generated report](media/37_Отчет_коммиссионера_о_реализации_товара.jpg)
+![Generated sales report](media/37_Sales_report.jpg)
+
 
 ### Create a prepayment facture
 
@@ -229,7 +227,8 @@ Print a report for a principal. The report for the principal has two sections: o
     
 9. Select **Print** \> **Original** to print the original facture, or select **Print** \> **Copy** to print the facture copy.
 
-    ![Счет-фактура generated report](media/41_Счет-фактура.jpg)
+    ![Invoice facture generated report](media/41_Invoice-facture.jpg)
+
 
 ### Create a facture accounting journal
 

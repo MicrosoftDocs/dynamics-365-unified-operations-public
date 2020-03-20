@@ -525,7 +525,7 @@
         - name: Create a new product
           items:
           - name: Create a new product in Commerce
-            href: create-new-product.md
+            href: create-new-product-commerce.md
           - name: Manage product categories and products 
             href: category-management-product-creation.md
         - name: Product attributes 
@@ -598,8 +598,6 @@
             href: personalized-recommendations.md
           - name: Opt out of personalized recommendations 
             href: personalization-gdpr.md
-        - name:	Add recommendation lists to an e-Commerce site	
-          href:	add-reco-list-to-page.md
         - name: POS experiences
           items:
           - name: Add product recommendations on POS
@@ -944,6 +942,8 @@
             href: add-checkout-module.md
           - name: Order confirmation module
             href: order-confirmation-module.md 
+          - name: Store selector module
+            href: store-selector.md
         - name: Account management modules
           items:
           - name: Account management pages and modules
@@ -2115,7 +2115,7 @@
         - name: Payment data use
           href: payment-connector-data-fields.md
         - name: Enable duplicate payment protection for payment connector
-          href: dev-itpro/duplicate-payment-protection.md
+          href: dev-itpro/duplicate-payments-protection.md
         - name: Create payment packaging for Application Explorer in Service Fabric deployments
           href: dev-itpro/payment-connector-package.md
       - name: Third-party e-Commerce extensibility

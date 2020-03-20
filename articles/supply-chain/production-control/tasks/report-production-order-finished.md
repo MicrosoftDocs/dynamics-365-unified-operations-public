@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Report a production order as finished
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure shows how to report a production order as finished. The demo data company used to create this procedure is USMF. This is the sixth procedure out of seven which explains the production order lifecycle.
 

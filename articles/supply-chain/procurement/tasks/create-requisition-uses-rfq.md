@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create a requisition that uses an RFQ
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic explains how to add price and vendor information to a purchase requisition from an RFQ process. The example shown in this guide can be used in the USMF demo data company, and you must be logged in as an Admin to complete all the steps. The tasks in this guide would typically be done by procurement professionals.
 
@@ -59,7 +59,7 @@ The next task is to create an RFQ to get bids from vendors for the product. In U
 2. Select **View history**.
 3. Refresh the page.
 4. Expand the **Tracking details** section.
-5. In the tree, select the line that starts with “Line workflow activated on”.
+5. In the tree, select the line that starts with "Line workflow activated on".
 6. Select **View workflow details**.
 7. Expand the **Work items** section.
 8. Select **Reassign**.
@@ -71,7 +71,7 @@ The next task is to create an RFQ to get bids from vendors for the product. In U
 
 1. Refresh the page.
 2. Select **Request for quotation**.
-3. In the **Buying legal entity** field, select **USMF**. You must select the same legal entity that’s on the requisition line.  
+3. In the **Buying legal entity** field, select **USMF**. You must select the same legal entity that's on the requisition line.  
 4. In the list, mark the selected row. If you had multiple lines on your purchase requisition, select all the lines that you want to add to the RFQ.  
 5. Select **OK**.
 6. Refresh the page.
@@ -87,7 +87,7 @@ The next task is to create an RFQ to get bids from vendors for the product. In U
 16. Select **Enter reply**.
 17. On the Action Pane, select **Reply**.
 18. Select **Copy data to reply**. This copies data, such as the quantity and dates, from the RFQ to the reply.  
-19. In the **Unit price** field, enter a number. This is the price that you’ve received from the vendor. You might also want to enter additional information from the vendor.  
+19. In the **Unit price** field, enter a number. This is the price that you've received from the vendor. You might also want to enter additional information from the vendor.  
 20. Select **Accept**.
 21. Select **OK**.
 
