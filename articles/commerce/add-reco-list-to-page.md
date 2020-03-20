@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Add product recommendation lists to pages
+title: Add recommendation lists to an e-Commerce site
 description: This topic explains how to add a product recommendation list to an e-Commerce page.
 author: bebeale
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -30,27 +30,40 @@ ms.dyn365.ops.version: 10.0.5
 
 ---
 
-# Add product recommendation lists to e-Commerce pages
+# Add recommendation lists an e-Commerce site
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 This topic explains how to add a product recommendation list to an e-Commerce page.
 
-1. From an existing e-Commerce authoring page, select **Add module**.
-2. Search for the **product collection** module.
-3. In the module wizard, select the list to add to the page.
-4. Save your changes.
+1. From an existing e-Commerce site builder page, select **Add module**.
+1. Search for the **product collection** module.
+1. In the module wizard, select the list to add to the page.
+1. Save your changes.
 
-To learn more about the types of lists that you can add to a page, see [Product recommendations overview](product-recommendations.md).
+To learn more about the types of lists that you can add to a page, see [Product collection module overview](product-collection-module-overview.md).
 
 
 ## Additional resources
 
 [Product recommendations overview](product-recommendations.md)
 
+[Enable ADLS in a Dynamics 365 Commerce environment](enable-adls-environment.md)
+
 [Enable product recommendations](enable-product-recommendations.md)
 
-[Create curated product recommendation lists](create-editorial-recommendation-lists.md)
+[Enable personalized recommendations](personalized-recommendations.md)
 
-[Manage AI-ML-based product recommendation results](modify-product-recommendation-results.md)
+[Opt out of personalized recommendations](personalization-gdpr.md)
+
+[Add product recommendations on POS](product.md)
+
+[Add recommendations to the transaction screen](add-recommendations-control-pos-screen.md)
+
+[Adjust AI-ML recommendations results](modify-product-recommendation-results.md)
+
+[Manually create curated recommendations](create-editorial-recommendation-lists.md)
+
+[Create recommendations with demo data](product-recommendations-demo-data.md)
+
+[Product recommendations FAQ](faq-recommendations.md)

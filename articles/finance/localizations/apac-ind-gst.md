@@ -2,38 +2,36 @@
 # required metadata
 
 title: India Goods and Services Tax (GST) overview
-description: This topic provides detailed information about India Goods and Services Tax (GST) for Microsoft Dynamics 365 Finance. 
-author: ShylaThompson
+description: This topic provides detailed information about India Goods and Services Tax (GST) for Microsoft Dynamics 365 Finance.
+author: yijialuan
 manager: AnnBe
-ms.date: 10/28/2019
+ms.date: 03/11/2020
 ms.topic: article
-ms.prod: 
+ms.prod:
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology:
 
 # optional metadata
 
-# keywords: 
+# keywords:
 audience: IT Pro, Application User
-# ms.devlang: 
+# ms.devlang:
 ms.reviewer: kfend
-# ms.suite: 
-# ms.tgt_pltfrm: 
+# ms.suite:
+# ms.tgt_pltfrm:
 ms.custom: 1587884
 ms.search.region: India
 ms.search.scope: Core, Operations
-# ms.search.industry: 
+# ms.search.industry:
 ms.author: ralin
 ms.dyn365.ops.version: 7.3
 ms.search.validFrom: 2017-12-31
-
 ---
-
 # India Goods and Services Tax (GST) overview
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides detailed information about India Goods and Services Tax (GST). For an overview of the tax engine using India GST examples, watch the following video.
+This topic provides detailed information about India Goods and Services Tax (GST). For an overview of the tax engine using India GST examples, watch the following videos.
 
 - [Tax engine overview (YouTube video)](https://www.youtube.com/watch?v=jAFpEBOtNWI&feature=youtu.be)
 - [GST overview (Tech Talk)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-gst-gte-part-1---overview-of-features-roadmap-july-8-2019)
@@ -95,12 +93,10 @@ This topic provides detailed information about India Goods and Services Tax (GST
 <li><strong>SAC:</strong> Go to <strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Sales tax</strong> &gt; <strong>Service accounting codes</strong>.</li>
 </ul>
 <p>You can assign HSN and SAC codes to products in the <strong>GST</strong> field group of the <strong>Released products</strong> page. Products of the <strong>Item</strong> item type should have an HSN code, and products of the <strong>Service</strong> item type should have an SAC code.</p>
-<blockquote>
 <p>
-[!IMPORTANT]
+<strong>IMPORTANT</strong></br>
 The item sales tax group should be removed on products that are assigned an HSN or SAC code.
 </p>
-<blockquote>
 </td>
 </tr>
 <tr>
@@ -150,31 +146,36 @@ The item sales tax group should be removed on products that are assigned an HSN 
 </table>
 
 ## Import the configuration and deploy it to a specific company
+
 Before you complete this task, be sure to save all the configuration files in a location that you can access from Dynamics 365 Finance.
 
 Follow these steps to load the configurations and map them to a legal entity.
 
 ### Tax configurations
+
 Follow the process in the topic, [Tax engine import configuration](../general-ledger/tax-engine-import-configuration.md) to import the tax configurations and report configurations.
 
 ### GST configurations
-| Version                                                                                                            | Details                                                                                                                                                                                       |
-|--------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <li>Taxable Document.version.61.xmlTaxable</li><li>Document (India).version.61.112.xml</li><li>Tax (India GST).version.61.113.213.xml</li> | Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (7.3) GA configuration                                                                                                  |
-| <li>Taxable Document.version.62.xml</li><li>Taxable Document (India).version.62.115.xml</li><li>Tax (India GST).version.62.115.217.xml</li>| KB#4094699                                                                                                                                                                                    |
-| <li>Taxable Document.version.63.xml</li><li>Taxable Document (India).version.63.116.xml</li><li>Tax (India GST).version.63.116.218.xml</li>| Support GST on project module Microsoft Dynamics 365 for Finance and Operations (8.0) GA configuration 7.3 with KB#4094699 and KB#4135145                                                     |
-| <li>Taxable Document.version.64.xml</li><li>Taxable Document (India).version.64.117.xml</li><li>Tax (India GST).version.64.117.221.xml</li>| Support GST on Bank charge 7.3 with KB#4094699, KB#4135145 and KB#4457539 8.0 with KB#4458726                                                                                                 |
-| <li>Taxable Document.version.71.xml</li><li>Taxable Document (India).version.71.120.xml</li><li>Tax (India GST).version.71.120.225.xml</li>| Add several new fields into taxable documents, Ship from/to xxx, Product Category, Customer group, Vendor group, Prepayment 7.3 + KB#4094699 + KB#4135145 + KB#4457539 8.0 + KB#4458726 8.1.1 |
-| <li>Taxable Document.version.81.xml</li><li>Taxable Document (India).version.81.138.xml</li><li>Tax (India GST).version.81.138.247.xml</li>| Add invoice date into GST, Rate lookup Enable Non-GST, if Non-GST is marked trans tax information, GST will not be applicable  Microsoft Dynamics 365 for Finance and Operations (10.0)        |
-| <li>Taxable Document.version.82.xml</li><li>Taxable Document (India).version.82.143.xml</li><li>Tax (India GST).version.82.143.263.xml</li> | Solve the issue of zero tax base for tax exempt transaction Support CGST&SGST for intra-state stock transfer order between warehouses with different GST registrations Support VAT Support Tax Rate Type  Microsoft Dynamics 365 for Finance and Operations (10.0.5) |
-| <li>Taxable Document.version.82.xml</li><li>Taxable Document (India).version.82.143.xml</li><li>Tax (India GST).version.82.143.264.xml</li>| Remove the tax rate type from Tax Document which should be used by retail customers who have not update their terminal to 10.0.5  Microsoft Dynamics 365 for Finance and Operations (10.0.5)         
+
+| Version                                                                                                                                     | Details                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| ------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <li>Taxable Document.version.61.xmlTaxable</li><li>Document (India).version.61.112.xml</li><li>Tax (India GST).version.61.113.213.xml</li>  | Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (7.3) GA configuration                                                                                                                                                                                                                                                                                                                                                                                              |
+| <li>Taxable Document.version.62.xml</li><li>Taxable Document (India).version.62.115.xml</li><li>Tax (India GST).version.62.115.217.xml</li> | KB#4094699                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| <li>Taxable Document.version.63.xml</li><li>Taxable Document (India).version.63.116.xml</li><li>Tax (India GST).version.63.116.218.xml</li> | Support GST on project module Microsoft Dynamics 365 for Finance and Operations (8.0) GA configuration 7.3 with KB#4094699 and KB#4135145                                                                                                                                                                                                                                                                                                                                                 |
+| <li>Taxable Document.version.64.xml</li><li>Taxable Document (India).version.64.117.xml</li><li>Tax (India GST).version.64.117.221.xml</li> | Support GST on Bank charge 7.3 with KB#4094699, KB#4135145 and KB#4457539 8.0 with KB#4458726                                                                                                                                                                                                                                                                                                                                                                                             |
+| <li>Taxable Document.version.71.xml</li><li>Taxable Document (India).version.71.120.xml</li><li>Tax (India GST).version.71.120.225.xml</li> | Add several new fields into taxable documents, Ship from/to xxx, Product Category, Customer group, Vendor group, Prepayment 7.3 + KB#4094699 + KB#4135145 + KB#4457539 8.0 + KB#4458726 8.1.1                                                                                                                                                                                                                                                                                             |
+| <li>Taxable Document.version.81.xml</li><li>Taxable Document (India).version.81.138.xml</li><li>Tax (India GST).version.81.138.247.xml</li> | Add invoice date into GST, Rate lookup Enable Non-GST, if Non-GST is marked trans tax information, GST will not be applicable Microsoft Dynamics 365 for Finance and Operations (10.0)                                                                                                                                                                                                                                                                                                    |
+| <li>Taxable Document.version.82.xml</li><li>Taxable Document (India).version.82.143.xml</li><li>Tax (India GST).version.82.143.263.xml</li> | Solve the issue of zero tax base for tax exempt transaction Support CGST&SGST for intra-state stock transfer order between warehouses with different GST registrations Support VAT Support Tax Rate Type Microsoft Dynamics 365 for Finance and Operations (10.0.5)                                                                                                                                                                                                                       |
+| <li>Taxable Document.version.82.xml</li><li>Taxable Document (India).version.82.143.xml</li><li>Tax (India GST).version.82.143.264.xml</li> | Remove the tax rate type from Tax Document which should be used by customers who have not update their terminal to 10.0.5 Microsoft Dynamics 365 for Finance and Operations (10.0.5)                                                                                                                                                                                                                                                                                                      |
+| <li>Taxable Document.version.82.xml</li><li>Taxable Document (India).version.82.143.xml</li><li>Tax (India GST).version.82.143.267.xml</li> | <li> Support Applicable % of tax rate. The configuration can only be used in 10.0.9. </li> <li> If you are retail customers, you need to make sure the retail has a version of Microsoft.Dynamics365.Tax.dll equal to or above 10.0.4006 and the HQ has a version of Microsoft.Dynamics365.Tax.dll equal to 10.0.9007. </li> <li> The configuration is created on version 82.143.263, if you have configuration extension on 82.143.264, you have to re-extend based on 82.143.267. </li> |
 
 ### Report configurations
 
-| Version                                                                                                                                                                                                                                                        | Details                                                                                                                                                                                                                                                                          |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **GST offline tool format**: <li>GSTReturnsGovt.version.4.xml</li><li>GST Returns govt. model mapping.xml</li><li>GSTR1GovtCSV.version.4.9.xml</li>  **GSTR1/GSTR2**: <li>GSTReturns.version.12.xml</li> <li>GSTReturns.ModelMapping.version.12.3..xml</li><li>GSTR1CSV.version.12.25.xml</li><li>GSTR2CSV.version.12.29.xml</li> | Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (7.3) GA configuration                                                                                                                                                                                     |
-|<li>GSTReturns.version.14.xml GST</li><li>Returns model mapping.version.14.5.xml</li> <li>GSTR1CSV.version.14.28.xml</li><li>GSTR2CSV.version.14.32.xml</li>                                                                                                                                     | Total Item Discount Amount is not coming in GSTR. Item Unit Of Measurement should show both the unit and description. Service item should be **Nos**. No customer billing name for stock transfer in GSTR.  Microsoft Dynamics 365 for Finance and Operations (10.0.1) |
+| Version                                                                                                                                                                                                                                                                                                                          | Details                                                                                                                                                                                                                                                               |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **GST offline tool format**: <li>GSTReturnsGovt.version.4.xml</li><li>GST Returns govt. model mapping.xml</li><li>GSTR1GovtCSV.version.4.9.xml</li> **GSTR1/GSTR2**: <li>GSTReturns.version.12.xml</li> <li>GSTReturns.ModelMapping.version.12.3..xml</li><li>GSTR1CSV.version.12.25.xml</li><li>GSTR2CSV.version.12.29.xml</li> | Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (7.3) GA configuration                                                                                                                                                                          |
+| <li>GSTReturns.version.14.xml GST</li><li>Returns model mapping.version.14.5.xml</li> <li>GSTR1CSV.version.14.28.xml</li><li>GSTR2CSV.version.14.32.xml</li>                                                                                                                                                                     | Total Item Discount Amount is not coming in GSTR. Item Unit Of Measurement should show both the unit and description. Service item should be **Nos**. No customer billing name for stock transfer in GSTR. Microsoft Dynamics 365 for Finance and Operations (10.0.1) |
+| <li>GST Returns govt.model.version.19.xml</li><li>GST Returns govt.model mapping.version.19.12.xml </li> <li> GST ANX-1 Govt.offline tool.version.19.22.xml </li> <li> Purchase Register.vesion.19.7.xml</li> <li>GSTR -1 Govt.offline tool CSV.version.19.10.xml</li>                                                           | <a href="https://support.microsoft.com/en-us/help/4549665">New GSTR Return offline tool                                                                                                                                                                               |
 
 ### Map configurations to the Legal entity
 
@@ -188,14 +189,14 @@ Follow the process in the topic, [Tax engine import configuration](../general-le
 8. Select the ellipsis button (**...**), and then select **Synchronize**.
 9. Select **Activate**. The activated configuration is updated as the current configuration.
 
-    ![Current configuration](media/apac-ind-gst-Current-Configuration.png)
+   ![Current configuration](media/apac-ind-gst-Current-Configuration.png)
 
 10. On the **Report configuration** FastTab, under **Select report configurations**, select the **Select** checkbox.
-11. In the **Report controller** field, select a value. 
+11. In the **Report controller** field, select a value.
 12. Repeat step 10 and 11, to map the report configurations.
 
-    ![Report configuration](media/apac-ind-gst-Reportconfiguration2-configuration.png)
-    
+    ![Report configuration](media/apac-ind-gst-Reportconfiguration2-configuration.png)
+
 13. Close the page.
 14. On the **Companies** FastTab, create a record.
 15. In the **Companies** field, select a value, and then select **Save**.
@@ -210,16 +211,13 @@ Follow the process in the topic, [Tax engine import configuration](../general-le
 3. On the **Companies** FastTab, select **Deactivate**.
 4. Repeat steps 2 through 13 in the previous section, [Import the configuration and deploy it to a specific company](#import-the-configuration-and-deploy-it-to-a-specific-company), to load the configuration, deploy it to the company, and synchronize the new version.
 
-    ![Two configurations](media/apac-ind-gst-Available2-configuration.png)
+   ![Two configurations](media/apac-ind-gst-Available2-configuration.png)
 
 5. Select the new version, and then select **Activate**.
 6. Complete the tasks in the **Tax setup** section to update data for the new version.
 
-    > [!IMPORTANT]
-    > If the tasks in the [Tax setup](#tax-setup), section were previously completed for the old configuration version, the data is retained after you synchronize to the new configuration version. You just have to review the setup and update it according to the new changes.
-    
-    
-        
+   > [!IMPORTANT]
+   > If the tasks in the [Tax setup](#tax-setup), section were previously completed for the old configuration version, the data is retained after you synchronize to the new configuration version. You just have to review the setup and update it according to the new changes.
 
 ## Tax setup
 
@@ -234,8 +232,8 @@ This section walks you through defining the GST and Customs tax setup.
 5. On the **Tax type mapping** tab, in the **Tax type** field, select **Customs**.
 6. Define a tax period:
 
-    1. Select the node for the tax component.
-    2. On the **Tax period mapping** tab, in the **Period** field, select a value.
+   1. Select the node for the tax component.
+   2. On the **Tax period mapping** tab, in the **Period** field, select a value.
 
 7. Define main accounts:
 
@@ -245,8 +243,8 @@ This section walks you through defining the GST and Customs tax setup.
    4. Save the record.
    5. On the **Values** FastTab, in the **Main account** field, select a value.
 
-       > [!NOTE]
-       > The list of accounts is generated dynamically, based on the posting profile from the configuration. The posting type of the selected main account should be **Customs**.
+      > [!NOTE]
+      > The list of accounts is generated dynamically, based on the posting profile from the configuration. The posting type of the selected main account should be **Customs**.
 
    6. Select the **IGST CUS** node.
    7. On the **Values** FastTab, in the **Main account** field, select a value.
@@ -263,8 +261,8 @@ This section walks you through defining the GST and Customs tax setup.
 5. On the **Tax type mapping** tab, in the **Tax type** field, select **GST**.
 6. Define a tax period:
 
-    1. Select the node for the tax component.
-    2. On the **Tax period mapping** tab, in the **Period** field, select a value.
+   1. Select the node for the tax component.
+   2. On the **Tax period mapping** tab, in the **Period** field, select a value.
 
 7. Define main accounts:
 
@@ -274,48 +272,49 @@ This section walks you through defining the GST and Customs tax setup.
    4. On the **Values** FastTab, in the **Main account** field, select a value.
 
       > [!NOTE]
+      >
       > - The list of accounts is generated dynamically, based on the posting profile from the configuration.
-      > - Tax main accounts can be defined at the level of either the tax type or the tax component. The value at the tax component level overrides the value at the tax type level. If the field is left blank for a posting type at the tax component level, the corresponding value from the tax type level is used for posting. We recommend that you set up the tax accounts at the tax component level for each  registration.
+      > - Tax main accounts can be defined at the level of either the tax type or the tax component. The value at the tax component level overrides the value at the tax type level. If the field is left blank for a posting type at the tax component level, the corresponding value from the tax type level is used for posting. We recommend that you set up the tax accounts at the tax component level for each registration.
 
 8. Set up rate and percentage tables:
 
-    1. Expand the node for the tax component.
-    2. Select the **Rate** node, and then, in the **Value** field, define the tax rates.
-    3. Select the **Reverse Charge Percentage** node, and then, in the **Value** field, define the reverse charge percentage.
-    4. Select the **Load on Inventory Percentage** node, and then, in the **Value** field, define the load on inventory percentage.
-    5. Select **Close**.
-    6. Select **Parameters**.
-    7. In the **Tax journal name** field, select a value. (This step is required in order to post the tax adjustments.)
-    8. In the **Tax journal voucher series** field, select a value.
-    9. Select **OK**.
+   1. Expand the node for the tax component.
+   2. Select the **Rate** node, and then, in the **Value** field, define the tax rates.
+   3. Select the **Reverse Charge Percentage** node, and then, in the **Value** field, define the reverse charge percentage.
+   4. Select the **Load on Inventory Percentage** node, and then, in the **Value** field, define the load on inventory percentage.
+   5. Select **Close**.
+   6. Select **Parameters**.
+   7. In the **Tax journal name** field, select a value. (This step is required in order to post the tax adjustments.)
+   8. In the **Tax journal voucher series** field, select a value.
+   9. Select **OK**.
 
 9. Set up a sales tax hierarchy, and maintain setoff rule profiles:
 
-    1. Go to **Tax** &gt; **Setup** &gt; **Sales tax** &gt; **Sales tax hierarchies**.
-    2. Select **New**.
-    3. In the **Name** field, enter a value.
-    4. In the **Structure** field, select **GTE hierarchy**.
-    5. Select **OK**.
-    6. On the **Versions** FastTab, select **Synchronize**.
-    7. Close the message.
-    8. Select **View**. The **Sales tax hierarchy designer** page shows the tax type and tax components, based on the configuration.
+   1. Go to **Tax** &gt; **Setup** &gt; **Sales tax** &gt; **Sales tax hierarchies**.
+   2. Select **New**.
+   3. In the **Name** field, enter a value.
+   4. In the **Structure** field, select **GTE hierarchy**.
+   5. Select **OK**.
+   6. On the **Versions** FastTab, select **Synchronize**.
+   7. Close the message.
+   8. Select **View**. The **Sales tax hierarchy designer** page shows the tax type and tax components, based on the configuration.
 
-        ![Sales tax hierarchy designer](media/apac-ind-gst-salestaxdesigner.png)
+      ![Sales tax hierarchy designer](media/apac-ind-gst-salestaxdesigner.png)
 
-    9. Select **Setoff rules for sales tax hierarchy**.
-    10. Select **New**.
-    11. In the **Name** field, enter a value.
-    12. Save the record.
-    13. On the **Recoverable** FastTab, select the tax components, and then adjust the **Priority** values.
-    14. On the **Payable** FastTab, select the tax components, and then adjust the **Priority** values.
-    15. Define the setoff rules according to the legal requirement.
+   9. Select **Setoff rules for sales tax hierarchy**.
+   10. Select **New**.
+   11. In the **Name** field, enter a value.
+   12. Save the record.
+   13. On the **Recoverable** FastTab, select the tax components, and then adjust the **Priority** values.
+   14. On the **Payable** FastTab, select the tax components, and then adjust the **Priority** values.
+   15. Define the setoff rules according to the legal requirement.
 
-        ![Setoff rule](media/apac-ind-gst-View-Setoffrule.png)
+       ![Setoff rule](media/apac-ind-gst-View-Setoffrule.png)
 
-    16. Select **Close**.
-    17. Close the **Sales tax hierarchy designer** page.
-    18. Select **Activate**.
-    19. Select **Close**.
+   16. Select **Close**.
+   17. Close the **Sales tax hierarchy designer** page.
+   18. Select **Activate**.
+   19. Select **Close**.
 
 ### Maintain setoff hierarchy profiles
 

@@ -3,9 +3,9 @@
 
 title: Upgrade from AX 2012 - Pre-upgrade checklist for data upgrade
 description: This topic describes each task in the Microsoft Dynamics AX 2012 checklist that is associated with data upgrade to Finance and Operations.
-author: robadawy
+author: jorisdg
 manager: AnnBe
-ms.date: 02/27/2018
+ms.date: 02/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -24,7 +24,7 @@ ms.custom: 106163
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
 
@@ -80,9 +80,10 @@ In AX 2012, users are authenticated against an on-premises Active Directory serv
 
    - Import users from a file. This option is faster. We recommend that you use this option when many users must be updated.
 
-     1. In a comma-separated values (CSV) file, create the mapping between AX 2012 users and Azure AD email addresses. Your IT department can export a similar mapping from your on-premises Active Directory Domain Services.
+     1. In a comma-separated values (CSV) file, create the mapping between AX 2012 users and Azure AD email addresses. Your IT department can export a similar mapping from your on-premises Active Directory Domain Services (AD DS). The file should have two columns: **UserId** and **EmailAddress**.
 
-         ![CSV file with a mapping of AX 2012 users to Azure AD email addresses](media/userToAzureADEmailAddressMapping.png)
+         > [!NOTE]
+         > The first row in the file is treated as a header row and will be ignored during the import.
 
      2. After the file is ready, click **Import from file**, browse to the file, and import it.
 

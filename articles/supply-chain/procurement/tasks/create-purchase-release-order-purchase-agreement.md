@@ -28,9 +28,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create a purchase release order from a purchase agreement
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-This procedure shows how to use a purchase agreement when you create a purchase order. The purchase agreement has to be applied when you create the purchase order because there are general terms that should be copied to the purchase order header. Typically this task would be carried out by a purchasing agent. As a prerequisite for this guide, you must have an effective purchase agreement with a product quantity commitment for a vendor and items. The same procedure can be used if you have a purchase agreement with other types of commitments. You can run this guide in demo data company USMF. If you’re using USMF, you can run the “Create a purchase agreement” guide first to set up the necessary preconditions for this guide.
+This procedure shows how to use a purchase agreement when you create a purchase order. The purchase agreement has to be applied when you create the purchase order because there are general terms that should be copied to the purchase order header. Typically this task would be carried out by a purchasing agent. As a prerequisite for this guide, you must have an effective purchase agreement with a product quantity commitment for a vendor and items. The same procedure can be used if you have a purchase agreement with other types of commitments. You can run this guide in demo data company USMF. If you're using USMF, you can run the "Create a purchase agreement" guide first to set up the necessary preconditions for this guide.
 
 
 ## Create a purchase order

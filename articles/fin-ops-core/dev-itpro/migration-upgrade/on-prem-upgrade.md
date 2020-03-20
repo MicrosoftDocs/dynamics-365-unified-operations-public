@@ -30,6 +30,8 @@ ms.dyn365.ops.version: 8.1
 
 # In-place upgrade process for on-premises environments
 
+[!include [banner](../includes/banner.md)]
+
 > [!NOTE]
 > Please perform the upgrade with your sandbox environment before upgrading your production environment.
 
@@ -80,10 +82,10 @@ An overview of each path is given below:
 6.  Restore the backup that you created into the Onebox VM. For more information, see [Restore a Database Backup Using SSMS](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017).
 
 7.  Optional: If the name of your restored database is not AXDB, using PowerShell with administrator privileges, execute:
-	
-	```
+    
+    ```powershell
     .\Configure-On-Premises-Upgrade.ps1 -DatabaseName '<DB-name>'
-	```
+    ```
     > [!NOTE] 
     > Substitute <DB-Name> with the appropriate value in your case (for example, AXDB). If you would like to edit more values, refer to  Appendix A.
 
@@ -91,15 +93,19 @@ An overview of each path is given below:
 
 8.  Using the Command Prompt from step 5, execute the following commands:
 
-    a.  AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml
+    a.  `AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml`
 
-    b.  AxUpdateInstaller.exe import -runbookfile=upgrade.xml
+    b.  `AxUpdateInstaller.exe import -runbookfile=upgrade.xml`
 
-    c.  AxUpdateInstaller.exe execute -runbookid=upgrade
+    c.  `AxUpdateInstaller.exe execute -runbookid=upgrade`
 
-    During the execution of cleanup for data upgrade you may encounter an error: Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN.\' on category \'Error\'. 
+    During the execution of cleanup for data upgrade you may encounter an error: 
     
-    To resolve this, re-run the step with this command: AxUpdateInstaller.exe execute -runbookid=upgrade -rerunstep=\<failed-step\>
+    `Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN.\' on category \'Error\'.`
+    
+    To resolve this, re-run the step with this command: 
+    
+    `AxUpdateInstaller.exe execute -runbookid=upgrade -rerunstep=\<failed-step\>`
 
 9.  When the upgrade process has finished successfully, back up the newly upgraded database. If you have customizations from ISVs or VARs, check if you have to run some post data upgrade scripts.
 
@@ -137,7 +143,7 @@ An overview of each path is given below:
 
 15. (Optional) If deployment fails because the financial reporting module failed, on the database that you are using for the new environment (typically AXDB), run the following command:
 
-    ```
+    ```sql
     ALTER TABLE RETAILTERMINALTABLE ADD CONSTRAINT PK_RecId PRIMARY KEY
     CLUSTERED (RECID)
     ```
@@ -157,10 +163,10 @@ An overview of each path is given below:
 6.  Open a Command Prompt as Administrator and change the directory to the unzipped folder from step 5.
 
 7.  Open a new PowerShell as Administrator and execute:
-	
-	```
+    
+    ```powershell
     .\Configure-On-Premises-Upgrade.ps1 -DatabaseName '<DB-name>' -DatabaseServer '<SqlServerName>' -DatabaseUser '<User>' -DatabasePassword '<Password>'
-	```
+    ```
 
     > [!NOTE]
     > Substitute \<\*\> with the values you require.
@@ -178,15 +184,15 @@ An overview of each path is given below:
 8.  Using the Command Prompt from step 6, execute the following
     commands:
 
-    a.  AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml
+    a.  `AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml`
 
-    b.  AxUpdateInstaller.exe import -runbookfile=upgrade.xml
+    b.  `AxUpdateInstaller.exe import -runbookfile=upgrade.xml`
 
-    c.  AxUpdateInstaller.exe execute -runbookid=upgrade
+    c.  `AxUpdateInstaller.exe execute -runbookid=upgrade`
 
-    During the execution of Cleanup for data upgrade you may encounter an error: Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN.\' on category \'Error\'.
+    During the execution of Cleanup for data upgrade you may encounter an error: `Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN.\' on category \'Error\'.`
 
-    To resolve this, re-run the step with this command: AxUpdateInstaller.exe execute -runbookid=upgrade -rerunstep=\<failed-step\>
+    To resolve this, re-run the step with this command: `AxUpdateInstaller.exe execute -runbookid=upgrade -rerunstep=\<failed-step\>`
 
 9.  If you have customizations from ISVs or VARs, verify if you have to run some post data upgrade scripts.
 
@@ -222,7 +228,7 @@ An overview of each path is given below:
 
 14. (Optional) If deployment fails because the financial reporting module failed, on the database that you are using for the new environment (typically AXDB), run the following command:
 
-    ```
+    ```sql
     ALTER TABLE RETAILTERMINALTABLE ADD CONSTRAINT PK_RecId PRIMARY KEY
     CLUSTERED (RECID)
     ```
@@ -268,11 +274,11 @@ An overview of each path is given below:
 
     c.  Execute
 
-        A.  AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml
+       1. `AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml`
 
-        B.  AxUpdateInstaller.exe import -runbookfile=upgrade.xml
+       2. `AxUpdateInstaller.exe import -runbookfile=upgrade.xml`
 
-        C.  AxUpdateInstaller.exe execute -runbookid=upgrade
+       3. `AxUpdateInstaller.exe execute -runbookid=upgrade`
 
 9.  If you have any application extensions or customizations install them now into the VHD, otherwise the upgrade process will remove any data related to customizations. Check with your ISV or VAR if you need to prepare your environment in any way before the upgrade.
 
@@ -291,10 +297,10 @@ An overview of each path is given below:
 6.  Restore the backup that you created into the Onebox VM. For more information, see [Restore a Database Backup Using SSMS](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017).
 
 7.  (Optional) If the name of your restored database is not AXDB, using PowerShell with Administrator privileges execute:
-	
-	```
+    
+    ```powershell
     .\Configure-On-Premises-Upgrade.ps1 -DatabaseName '<DB-name>'
-	```
+    ```
 
     > [!NOTE] 
     > Substitute \<DB-Name\> with the appropriate value in your case (typically AXDB). If you would like to edit more values, refer to Appendix A.
@@ -303,15 +309,15 @@ An overview of each path is given below:
 
 8.  Using the Command Prompt from step 5, execute the following commands:
 
-    a.  AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml
+    a.  `AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml`
 
-    b.  AxUpdateInstaller.exe import -runbookfile=upgrade.xml
+    b.  `AxUpdateInstaller.exe import -runbookfile=upgrade.xml`
 
-    c.  AxUpdateInstaller.exe execute -runbookid=upgrade
+    c.  `AxUpdateInstaller.exe execute -runbookid=upgrade`
 
-    During the execution of Cleanup for data upgrade you may encounter an error: Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN.\' on category \'Error\'.
+    During the execution of Cleanup for data upgrade you may encounter an error: `Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN.\' on category \'Error\'.`
 
-    To resolve this, re-run the step with this command: AxUpdateInstaller.exe execute -runbookid=upgrade -rerunstep=\<failed-step\>
+    To resolve this, re-run the step with this command: `AxUpdateInstaller.exe execute -runbookid=upgrade -rerunstep=\<failed-step\>`
 
 9.  Once the upgrade process has finished successfully, back up the newly upgraded database. If you have customizations from ISVs or VARs check if you have to run some post data upgrade scripts.
 
@@ -341,7 +347,7 @@ An overview of each path is given below:
 
 22. (Optional) If deployment fails because the financial reporting module failed, on the database that you are using for the new environment typically AXDB), run the following command:
 
-    ```
+    ```sql
     ALTER TABLE RETAILTERMINALTABLE ADD CONSTRAINT PK_RecId PRIMARY KEY
     CLUSTERED (RECID)
     ```
@@ -362,9 +368,9 @@ An overview of each path is given below:
 
 7.  Open a new PowerShell as Administrator and execute:
 
-	```
+    ```powershell
     .\Configure-On-Premises-Upgrade.ps1 -DatabaseName '<DB-name>' -DatabaseServer '<SqlServerName>' -DatabaseUser '<User>' -DatabasePassword '<Password>'
-	```
+    ```
 
     > [!NOTE]
     > Substitute \<\*\> with the values you require.
@@ -380,15 +386,15 @@ An overview of each path is given below:
 
 8.  Using the Command Prompt from step 6, execute the following commands:
 
-    a.  AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml
+    a.  `AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml`
 
-    b.  AxUpdateInstaller.exe import -runbookfile=upgrade.xml
+    b.  `AxUpdateInstaller.exe import -runbookfile=upgrade.xml`
 
-    c.  AxUpdateInstaller.exe execute -runbookid=upgrade
+    c.  `AxUpdateInstaller.exe execute -runbookid=upgrade`
 
-    During the execution of Cleanup for data upgrade you may encounter an error: Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN.\' on category \'Error\'.
+    During the execution of Cleanup for data upgrade you may encounter an error: `Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN.\' on category \'Error\'.`
 
-    To resolve this issue, re-run the step with this command: AxUpdateInstaller.exe execute -runbookid=upgrade -rerunstep=\<failed-step\>
+    To resolve this issue, re-run the step with this command: `AxUpdateInstaller.exe execute -runbookid=upgrade -rerunstep=\<failed-step\>`
 
 9.  If you have customizations from ISVs or VARs, check if you have to run some post data upgrade scripts.
 
@@ -416,7 +422,7 @@ An overview of each path is given below:
 
 21. (Optional) If deployment fails because the financial reporting module failed, on the database that you are using for the new environment (typically AXDB), run the following command:
 
-    ```
+    ```sql
     ALTER TABLE RETAILTERMINALTABLE ADD CONSTRAINT PK_RecId PRIMARY KEY
     CLUSTERED (RECID)
     ```
@@ -445,7 +451,8 @@ The parameters that can be passed to the script are:
 After configuration has been passed, the script will execute a database connection test with the new parameters. If the script is unable to connect we recommend that you use Microsoft SQL Server Management Studio or some other tool to debug the connection from there.
 
 **Configure-On-Premises-Upgrade.ps1**
-```
+
+```powershell
 <#
 .Synopsis
    Configures a Onebox deployment to upgrade an OnPrem 7.x database to OnPrem 8.x 

@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Lean pegging from sales orders
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure focuses on validating the pegging tree from a sales line where the item is produced with kanbans. After validating the pegging tree, all the kanban jobs are planned. This is useful for order scenarios where the order taker needs to ensure that production can start right away. The demo data company used to create this procedure is USMF. This procedure is intended for the advanced order taker working in a lean company.
 

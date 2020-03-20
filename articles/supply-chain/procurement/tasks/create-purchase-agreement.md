@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create a purchase agreement
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic guides you through the creation of a purchase agreement. This would typically be done by a purchasing manager. You can use this procedure in demo data company USMF or on your own data. You need to have set up purchase agreement classifications before you start. Once you've created an agreement you can use it when you create a PO, and this will copy the purchase agreement conditions to the header and to any lines in the order that are affected by the agreement.
 
@@ -45,8 +45,8 @@ This topic guides you through the creation of a purchase agreement. This would t
 
 7. In the **Document title** field, type a name for your purchase agreement.
 
-    - Leave the **Default commitment** field set to **Product quantity commitment** (or change it if it’s not set to this).  
-    - The default commitment value determines your options on the agreement lines. If you need a new commitment type when you’re creating the agreement lines, you need to change the default commitment on the header. There are 4 types of commitments: **Product quantity commitment** - for a specific quantity of a product; **Product value commitment** - for a specific currency amount of a product; **Product category value commitment** - for a specific currency amount in a procurement category where the amount can be for a catalog item or a non-catalog item; **Value commitment** - for a specific currency amount which can be fulfilled by any product or by any procurement category.  
+    - Leave the **Default commitment** field set to **Product quantity commitment** (or change it if it's not set to this).  
+    - The default commitment value determines your options on the agreement lines. If you need a new commitment type when you're creating the agreement lines, you need to change the default commitment on the header. There are 4 types of commitments: **Product quantity commitment** - for a specific quantity of a product; **Product value commitment** - for a specific currency amount of a product; **Product category value commitment** - for a specific currency amount in a procurement category where the amount can be for a catalog item or a non-catalog item; **Value commitment** - for a specific currency amount which can be fulfilled by any product or by any procurement category.  
 
 8. Select **OK**.
 

@@ -298,7 +298,7 @@ The **serviceMergeDefaultDimensions()** API is the most frequently used API for 
 
 **Example: DimensionDefaultFacade::serviceMergeDefaultDimensions()**
 
-```
+```xpp
 public static DimensionDefault serviceMergeDefaultDimensions(
     DimensionDefault _value1,
     DimensionDefault _value2,
@@ -312,7 +312,7 @@ The **serviceReplaceAttributeValue()** API is useful if a single dimension value
 
 **Example: DimensionDefaultFacade::serviceReplaceAttributeValue()** 
 
-```
+```xpp
 public static DimensionDefault serviceReplaceAttributeValue(
     DimensionDefault _target,
     DimensionDefault _source,
@@ -325,7 +325,7 @@ The **serviceMergeValidDefaultDimensions()** API is useful if you want the merge
 
 **Example: DimensionDefaultFacade::serviceReplaceAttributeValue()** 
 
-```
+```xpp
 public static DimensionDefault serviceMergeValidDefaultDimensions(
     DimensionDefault _defaultDimension1,
     DimensionDefault _defaultDimension2,
@@ -341,7 +341,7 @@ The **serviceCreateLedgerDimension()** API is the most frequently used API for l
 
 **Example: LedgerDimensionFacade.serviceCreateLedgerDimension()**
 
-```
+```xpp
 public static LedgerDimensionAccount serviceCreateLedgerDimension(
     RecId            _ledgerDimensionId,
     DimensionDefault _dimensionDefault1 = 0,
@@ -356,7 +356,7 @@ The **serviceCreateLedgerDimensionForType()** API resembles the **serviceCreateL
 
 **Example: LedgerDimensionFacade.serviceCreateLedgerDimensionForType()**
 
-```
+```xpp
 public static LedgerDimensionBase serviceCreateLedgerDimensionForType(
     LedgerDimensionType _ledgerDimensionType,
     LedgerDimensionBase _ledgerDimensionId,
@@ -371,7 +371,7 @@ The **serviceCreateLedgerDimForDefaultDim()** API resembles the **serviceCreateL
 
 **Example: LedgerDimensionFacade::serviceCreateLedgerDimForDefaultDim()**
 
-```
+```xpp
 public static LedgerDimensionBase serviceCreateLedgerDimForDefaultDim(
     DimensionDefault    _defaultDimension,
     LedgerDimensionBase _ledgerDimensionId)
@@ -383,7 +383,7 @@ The **serviceLedgerDimensionFromLedgerDims()** API resembles the previous APIs, 
 
 **Example LedgerDimensionFacade::serviceLedgerDimensionFromLedgerDims()**
 
-```
+```xpp
 public static LedgerDimensionAccount serviceLedgerDimensionFromLedgerDims(
     LedgerDimensionBase _ledgerDimensionId1,
     LedgerDimensionBase _ledgerDimensionId2 = 0,
@@ -398,7 +398,7 @@ The **serviceMergeLedgerDimensions()** API resembles the **serviceLedgerDimensio
 
 **Example: LedgerDimensionFacade::serviceMergeLedgerDimensions()**
 
-```
+```xpp
 public static LedgerDimensionBase serviceMergeLedgerDimensions(
     LedgerDimensionBase _ledgerDimension1,
     LedgerDimensionBase _ledgerDimension2,
@@ -411,6 +411,6 @@ The **serviceCreateLedgerDimFromLedgerDim()** API is useful if you want to copy 
 
 **Example: LedgerDimensionFacade::serviceCreateLedgerDimFromLedgerDim()**
 
-```
+```xpp
 public static LedgerDimensionAccount serviceCreateLedgerDimFromLedgerDim(LedgerDimensionAccount _ledgerDimension)
 ```

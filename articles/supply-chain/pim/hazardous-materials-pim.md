@@ -2,7 +2,7 @@
 # required metadata
 
 title: Hazardous materials
-description: This topic provides information about hazardous material documents and infomation that is stored in your enviornment.
+description: This topic provides information about hazardous material documents and information that is stored in your environment.
 author: lachlancashMS
 manager: AnnBe
 ms.date: 01/10/2020
@@ -33,8 +33,6 @@ ms.dyn365.ops.version:
 # Hazardous materials
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 Information about hazardous materials is set up in Product information management. This module also provides documents that can be printed through warehouse management.
 

@@ -5,7 +5,7 @@ title: What's new and changed in Platform update 31 for Finance and Operations a
 description: This topic describes features that are in preview in Platform update 31 for Finance and Operations apps. 
 author: tonyafehr
 manager: AnnBe
-ms.date: 01/07/2020
+ms.date: 03/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 31
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes preview features that are new or changed for Platform update 31 for Finance and Operations apps. This version has a build number of 7.0.5457 and is available as follows:
+This topic describes features that are new or changed for Platform update 31 for Finance and Operations apps. This version has a build number of 7.0.5457 and is available as follows:
 
 - Preview release is in October 2019.
 - General availability (self-update) is in November 2019.
@@ -42,7 +42,9 @@ This topic describes preview features that are new or changed for Platform updat
 For more information about Platform update 31, see [Additional resources](whats-new-platform-update-31.md#additional-resources).
 
 ## Turn on the new (preview) grid control through Feature management
-Previously the new grid control was available by adding "&debug=reactGrid" to the environment URL. Now in Platform update 31, the new grid control can be turned on for qualified environments using the Feature management workspace (see the steps below for instructions on how to enable the flight). To learn more about the new grid control, see [User productivity - New grid](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations/user-productivity-new-grid).
+Previously the new grid control was available by adding "&debug=reactGrid" to the environment URL. Now in Platform update 31, the new grid control can be turned on for qualified environments using the Feature management workspace. Refer to the following instructions about how to enable the flight in non-production environments. Qualified environments include Tier 1 (Dev/Test) and Tier 2 (Sandbox) environments. Note that this feature cannot be turned on in production until version 10.0.9, Platform update 33.
+
+To learn more about the new grid control, see [User productivity - New grid](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations/user-productivity-new-grid).
 
 To enable the new grid while this feature is in preview, follow these steps:
 
@@ -90,9 +92,9 @@ The following enhanced extensibility capabilities have been added in Platform up
 
 ## Excel Add-in authentication and authorization enhancements
 The Excel Add-in has several authentication and authorization enhancements to improve the handling of certain cases:
-- **Authentication token expiration now silent** - The sign-in process validates any existing authentication tokens to determine if the user can continue using an existing authentication context or if they need to sign in again. Previously, if the authentication token had expired the Excel Add-in would notify the user. Now, the user will simply be presented with the standard sign-in screen and an informational message will report the authentication token expiration for debugging purposes.
-- **Authentication timeout** - There were some cases where the authentication process didn't complete in time, so the user was receiving an error message with a **Sign out** button. Ignoring the error and selecting **Sign in** again resulted in a successful authentication, but if users selected **Sign out** there was a possibility of getting into an endless loop.
-- **Support for ADFS sign out improved** - he sign-out mechanism is now inside a dialog box. This improve support for customers that are using Active Directory Federation Services (ADFS), because communication from the Excel Add-in to ADFS servers is only allowed in a separate dialog box.
+- **Authentication token expiration now silent** - The sign-in process validates any existing authentication tokens to determine if the user can continue using an existing authentication context or if they need to sign in again. Previously, if the authentication token had expired, the Excel Add-in would notify the user. Now, the user will simply be presented with the standard sign-in screen and an informational message will report the authentication token expiration for debugging purposes.
+- **Authentication timeout** - There were some cases where the authentication process didn't complete in time, so the user was receiving an error message with a **Sign out** button. Ignoring the error and selecting **Sign in** again resulted in a successful authentication, but if users selected **Sign out**, there was a possibility of getting into an endless loop.
+- **Support for ADFS sign out improved** - The sign-out mechanism is now inside a dialog box. This improves support for customers that are using Active Directory Federation Services (ADFS), because communication from the Excel Add-in to ADFS servers is only allowed in a separate dialog box.
 - **Authorization failure information now provided** - Previously, if the user authenticated successfully but didn't have authorization permissions to communicate with the server, then the Excel Add-in would present a "Load applets" link, because the loading of the applets would fail. This was an implicit authorization permissions failure. Now the authorization permissions failure will be detailed explicitly for the user so they understand what has happened and verify that they are signing in as the correct user to the correct server.
 
 ## skipAutoOrderBy API

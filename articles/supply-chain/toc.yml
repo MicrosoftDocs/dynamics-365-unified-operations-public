@@ -24,6 +24,8 @@
           href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?toc=/dynamics365/supply-chain/toc.json
         - name: Apply updates to cloud environments
           href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Apply updates to on-premises deployments
+          href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/supply-chain/toc.json
         - name: Configure service updates
           href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/supply-chain/toc.json
         - name: Pause service updates
@@ -61,17 +63,23 @@
         - name: Finance and Operations apps in France
           href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
       - name: What's new or changed
-        items:
-        - name: Supply Chain Management version 10.0.7 (January 2020)
-          href: get-started/whats-new-scm-10-0-7.md
-        - name: What's new or changed in previous versions
+        items: 
+        - name: What's new or changed in Finance and Operations apps
+          href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
+        - name: What's new or changed in Supply Chain Management
           items:
-          - name: What's new or changed in Finance and Operations home page
-            href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
-          - name: Finance and Operations, Enterprise edition 7.3
-            href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/supply-chain/toc.json
+          - name: What's new or changed in Supply Chain Management home page
+            href: get-started/whats-new-home-page.md
+          - name: Supply Chain Management version 10.0.9 (April 2020)
+            href: get-started/whats-new-scm-10-0-9.md
+          - name: Supply Chain Management version 10.0.8 (February 2020)
+            href: get-started/whats-new-scm-10-0-8.md
         - name: Removed or deprecated features
-          href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
+          items:
+          - name: Removed or deprecated features in Dynamics 365 Supply Chain Management
+            href: get-started/removed-deprecated-features-scm-updates.md
+          - name: Removed or deprecated features in previous releases
+            href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
         - name: AX 2012 features that were postponed
           href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/supply-chain/toc.json
         - name: Features not implemented in on-premises deployments
@@ -144,6 +152,8 @@
           href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/supply-chain/toc.json
         - name: Saved views
           href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Grid capabilities
+          href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/supply-chain/toc.json
         - name: Create and work with custom fields
           href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/supply-chain/toc.json
         - name: Embed PowerApps apps
@@ -525,6 +535,8 @@
           href: cost-management/costing-sheets.md
         - name: Simulate cost changes by using a costing version for planned costs
           href: cost-management/simulate-cost-changes-costing-version-planned-costs.md
+        - name: Compare item prices storage report
+          href: cost-management/compare-item-price.md
       - name: Inventory accounting
         items:
         - name: Cost objects
@@ -671,6 +683,8 @@
         items:
         - name: Document Reporting Services overview
           href: ../fin-ops-core/dev-itpro/analytics/document-reporting-services.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Supported fonts
+          href: ../fin-ops-core/dev-itpro/analytics/supported-fonts.md?toc=/dynamics365/supply-chain/toc.json
         - name: Configure SSRS for on-premises deployments
           href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/supply-chain/toc.json
         - name: Printing
@@ -1058,7 +1072,9 @@
       - name: Planning Optimization
         items:
         - name: Planning Optimization overview
-          href: master-planning/planning-optimization/planning-optimization-overview.md 
+          href: master-planning/planning-optimization/planning-optimization-overview.md
+        - name: Negative on-hand is treated as zero on-hand
+          href: master-planning/planning-optimization/negative-on-hand.md 
         - name: Get started with Planning Optimization
           href: master-planning/planning-optimization/get-started.md
         - name: Planning Optimization fit analysis
@@ -1381,6 +1397,8 @@
           href: procurement/tasks/create-scoring-method-rfqs.md
         - name: Create solicitation types and scoring criteria for RFQs
           href: procurement/tasks/create-solicitation-types-scoring-criteria-rfqs.md
+        - name: Responding to vendor questions on Request for quotations
+          href: procurement/rfq-question.md
         - name: Enter and compare RFQ bids and award contracts
           href: procurement/tasks/enter-compare-rfq-bids-award-contracts.md
       - name: Purchase orders
@@ -2299,6 +2317,10 @@
           href: warehousing/mobile-barcode-support.md
         - name: Set up warehouse for transfer orders
           href: warehousing/transfer-orders-warehouse.md
+      - name: Reservations in warehouse management
+        items:
+        - name: Flexible warehouse-level dimension reservation policy
+          href: warehousing/flexible-warehouse-level-dimension-reservation.md
       - name: Warehouse work policies
         items:
         - name: Warehouse work policies overview
@@ -2432,6 +2454,5 @@
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance 
     href: ../finance/index.md
-  - name: Dynamics 365 Retail
-    href: ../retail/index.md
-    
+  - name: Dynamics 365 Commerce
+    href: ../commerce/index.md 

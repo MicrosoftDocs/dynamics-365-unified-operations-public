@@ -32,8 +32,6 @@ ms.dyn365.ops.version: 10.0.8
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
-
 This topic explains how you can view invoice and payment settlement information in a convenient and simple format.
 
 ## Prerequisites

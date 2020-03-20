@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Add a favicon
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic explains how to add a favicon to your site.

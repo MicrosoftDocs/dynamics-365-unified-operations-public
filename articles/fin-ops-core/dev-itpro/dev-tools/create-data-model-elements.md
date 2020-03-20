@@ -24,7 +24,7 @@ ms.custom: 23421
 ms.assetid: 1b7789f4-12c1-480b-bb39-c354b5b03276
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -51,7 +51,7 @@ This tutorial requires that you have access to an environment, and that you be p
 2.  From the **Dynamics 365** window, select **Model Management &gt; Create model** to open the **Create model** wizard.
 3.  Enter the following values for model parameters.
 
-    | **Property**           | **Value**                                                                                                                |
+    | Property               | Value                                                                                                                    |
     |------------------------|--------------------------------------------------------------------------------------------------------------------------|
     | **Model name**         | FleetMgmntTutorial                                                                                                       |
     | **Model publisher**    | Microsoft Corp                                                                                                           |
@@ -84,7 +84,7 @@ This tutorial requires that you have access to an environment, and that you be p
 11. Select the **Unified Operations** template.
 12. Enter the following values in the fields in the dialog box.
 
-    | **Property** | **Value**       |
+    | Property     | Value           |
     |--------------|-----------------|
     | **Name**     | FMTDataModel    |
     | **Location** | C:\\FMLab       |
@@ -109,7 +109,7 @@ This tutorial requires that you have access to an environment, and that you be p
 5.  Select the root node of **FMTAddress** in the designer.
 6.  In the **Properties** window, in the **Appearance section**, set the following properties.
 
-    | **Property**    | **Value**          |
+    | Property        | Value              |
     |-----------------|--------------------|
     | **Help Text**   | Check online help. |
     | **Label**       | Address            |
@@ -145,7 +145,7 @@ In the table designer for FMTCustomer, you now add several fields to the table.
 
 1.  To add each field, right-click **Fields**, click **New**, and then select a type. As you add each field, you must specify the field name and certain other values in the **Properties** window, as described in the following table.
 
-    | **Type**   | **Field name** | **Property values**                                                         |
+    | Type       | Field name     | Property values                                                             |
     |------------|----------------|-----------------------------------------------------------------------------|
     | **Date**   | CCExpiryDate   | Extended Data Type = FMTCCExpiryDate                                        |
     | **String** | Address        | Extended Data Type = FMTAddressHelp Text = Help text for the address field. |
@@ -191,12 +191,12 @@ In the table designer for FMTCustomer, you now add several fields to the table.
     > [!TIP]
     > When you type “this.”, choose the field from the IntelliSense list.
 
-```
-        public display FMTName fullName()
-        {
-            return this.FirstName + ' ' + this.LastName;
-        }
-```
+    ```xpp
+    public display FMTName fullName()
+    {
+        return this.FirstName + ' ' + this.LastName;
+    }
+    ```
 
 3.  Save the code.
 
@@ -204,7 +204,10 @@ In the table designer for FMTCustomer, you now add several fields to the table.
 1.  In **Solution Explorer**, expand the **FMTDataModel** project.
 2.  Right-click **FMTAddress**, and then click **Open**. The **EDT designer** opens.
 3.  In the **EDT designer**, select **FMTAddress**.
-4.  In the **Properties** window, in the **Reference Table** field, select **FMTCustomer**. **Tip:** Click the drop-down list, and then type the prefix "FMT" in the search box. This filters the drop-down list to only show tables that contain "FMT" in their name. Select the **FMTCustomer** table from the list of filtered entries. [![SearchFMT\_DataModel](./media/searchfmt_datamodel.png)](./media/searchfmt_datamodel.png)
+4.  In the **Properties** window, in the **Reference Table** field, select **FMTCustomer**. **Tip:** Click the drop-down list, and then type the prefix "FMT" in the search box. This filters the drop-down list to only show tables that contain "FMT" in their name. Select the **FMTCustomer** table from the list of filtered entries. 
+
+    [![SearchFMT\_DataModel](./media/searchfmt_datamodel.png)](./media/searchfmt_datamodel.png)
+    
 5.  Save the EDT.
 
 ## Build the FMTDataModel project and the Fleet Management tutorial model

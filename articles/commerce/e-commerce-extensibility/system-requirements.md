@@ -5,7 +5,7 @@ title: System requirements for a Dynamics 365 Commerce online extensibility deve
 description: This topic lists the system requirements for setting up a Microsoft Dynamics 365 Commerce online extensibility development environment.
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 03/09/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -57,3 +57,5 @@ The online extensibility development environment can preview customizations in a
 [Set up a development environment](setup-dev-environment.md)
 
 [Configure a development environment (.env) file](configure-env-file.md)
+
+[Set up Azure DevOps code sharing and create a build pipeline](set-up-code-sharing-build-pipeline.md)

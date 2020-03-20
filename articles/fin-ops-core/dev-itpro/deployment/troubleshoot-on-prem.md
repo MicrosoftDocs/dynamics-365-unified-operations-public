@@ -3,9 +3,9 @@
 
 title: Troubleshoot on-premises deployments
 description: This topic provides troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises).
-author: sarvanisathish
+author: PeterRFriis
 manager: AnnBe
-ms.date: 11/04/2019
+ms.date: 03/03/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-platform
@@ -24,7 +24,7 @@ ms.custom: 60373
 ms.assetid:
 ms.search.region: Global
 # ms.search.industry:
-ms.author: sarvanis
+ms.author: perahlff
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
 
@@ -415,7 +415,7 @@ To resolve the error, run the .\Set-CertificateAcls.ps1 script to reset the ACLs
 
 **Steps:** To see what the file share is set to, open Microsoft SQL Server Management Studio, and run the following query on the orchestrator database:
 
-```
+```sql
 select * from OrchestratorCommandArtifact where CommandId = 'xxx'
 ```
 
@@ -489,7 +489,7 @@ The local agent user can't connect to the SQL Server instance or the database.
 1. Run **psping lcsapi.lcs.dynamics.com:80**.
 2. If you don't receive a response from the preceding command, contact the IT department at your organization. Either the firewall is blocking access to lcsapi, or proxy issues are occurring.
 
-    ```
+    ```Console
     lcsapi.lcs.dynamics.com:443
     login.windows.net:443
     uswelcs1lcm.queue.core.windows.net:443
@@ -600,7 +600,7 @@ If you're missing a certificate and ACL, or if you have the wrong thumbprint ent
 
 You can also validate the encrypted text by using the following command.
 
-```
+```powershell
 Invoke-ServiceFabricDecryptText -CipherText 'longstring' -StoreLocation LocalMachine | Set-Clipboard
 ```
 
@@ -667,7 +667,7 @@ Category does not exist.
 
 **Reason:** The pointers to the performance counter that the gateway needs may be corrupt.
 
-**Resolution:** Run lodctr /R in a Command Prompt running as Administrator in all AOS nodes where the Gateway is unhealthy. If you recieve an error about not being able to rebuild the performance counters, try executing the command again. 
+**Resolution:** Run **lodctr /R** in a Command Prompt window that you open as administrator in all AOS nodes where the gateway is unhealthy. If you receive an error message that states that the performance counters can't be rebuilt, try to run the command again. 
 
 ## Management Reporter
 
@@ -767,7 +767,7 @@ If the thumbprints don't meet both these requirements, you must redeploy from LC
 
 If Management Reporter reports are checked out during deployment, the deployment will fail. To see whether reports are checked out, run the following **select** statements on the FinancialReporting database.
 
-```
+```sql
 select checkedoutto, * from Reporting.ControlReport where checkedoutto is not null
 select checkedoutto, * from Reporting.ControlRowMaster where checkedoutto is not null
 select checkedoutto, * from Reporting.ControlColumnMaster where checkedoutto is not null
@@ -775,13 +775,13 @@ select checkedoutto, * from Reporting.ControlColumnMaster where checkedoutto is 
 
 To learn which user has objects checked out, you can run the following **select** statement.
 
-```
+```sql
 select * from Reporting.SecurityUser where UserID = ''
 ```
 
 To resolve this issue manually, update the following tables, and set **checkedoutto** to **null** by using the following commands.
 
-```
+```sql
 update Reporting.ControlReport set checkedoutto = null where checkedoutto is not null
 update Reporting.ControlRowMaster set checkedoutto = null where checkedoutto is not null
 update Reporting.ControlColumnMaster set checkedoutto = null where checkedoutto is not null
@@ -1035,7 +1035,7 @@ If the client and server can't communicate because they don't have a common algo
 
 To find a list of all groups and hosts, run the following command.
 
-```
+```powershell
 Get-ADServiceAccount -Identity svc-LocalAgent$ -Properties PrincipalsAllowedToRetrieveManagedPassword
 ```
 
@@ -1182,14 +1182,7 @@ You can skip or modify the following sections in the deployment instructions.
 
 ### Configure AD FS (as documented for [Platform update 12](setup-deploy-on-premises-pu12.md#configureadfs) or [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#configureadfs))
 
-- You can skip scripts 1, 2, and 3, because they have already been done.
-- The .\\Publish-ADFSApplicationGroup.ps1 script will fail even when the new **hosturl** value is used. Therefore, you must manually complete these steps.
-
-    1. In AD FS Manager, go to **AD FS** \> **Application groups**, and open **Microsoft Dynamics 365 for Operations On-premises**.
-    2. Open the **Microsoft Dynamics 365 for Operations On-premises - Native application** native application. Add the redirect URI of the new environment (DNS).
-    3. Open the **Microsoft Dynamics 365 for Operations On-premises - Financial Reporting - Native application** native application. Add the redirect URI of the new environment (DNS).
-    4. Open the **Microsoft Dynamics 365 for Operations On-premises - Web API** Web API. Add the two entries of the redirect URI of the new environment (DNS).
-    5. Open the **Microsoft Dynamics 365 for Operations On-premises - Financial Reporting Web API** Web API. Add the redirect URI of the new environment (DNS).
+- Configure AD FS according to the [Reuse the same AD FS instance for multiple environments](./onprem-reuseadfs.md) guide.
 
 ## Redeploy SSRS reports
 
@@ -1199,7 +1192,7 @@ Delete the entry in SF.SyncLog, and then restart one of the AOS machines. The AO
 
 When SQL Server is restarted, the tempdb database is re-created. Therefore, there will be missing permissions. Run the following script to create a stored procedure on the master database.
 
-```
+```sql
 \-----
 USE [master]
 GO
@@ -1333,19 +1326,21 @@ This database synchronization error can cause an old platform build (Platform up
 
 To resolve this issue, note the **SYSTIMEZONESVERSION** value.
 
-```
+```sql
 select * from SQLSYSTEMVARIABLES where parm = 'SYSTIMEZONESVERSION'
 ```
 
 Update the value to the version that was returned in the error message.
 
-```
+```sql
 update SQLSYSTEMVARIABLES set VALUE = 12 where parm = 'SYSTIMEZONESVERSION'
 ```
 
 ## Printing randomly stops
 
 Make sure that all network printers that have been installed on the AOS server are running as the Windows service account that the AXService.EXE process is running as.
+
+For more information about how to configure network printers in on-premises environments, see [Install network printer devices in on-premises environments](../analytics/install-network-printer-onprem.md).
 
 ## Ax-DatabaseSynchronize isn't populated with events
 
@@ -1365,7 +1360,7 @@ This issue occurs because there was a change in the Skype Presence API, and on-p
 
 To resolve the issue, run the following SQL Server query.
 
-```
+```sql
 update [AXDB].[dbo].[SYSCLIENTPERF] set SkypeEnabled = 0
 ```
 
@@ -1386,7 +1381,7 @@ To resolve this issue, follow these steps.
 1. In the [agent share path](setup-deploy-on-premises-pu12.md#setupfile), find the **netstandard.dll** file. For example, this file might be at \\wp\\\<name\>\\StandaloneSetup-\<ver\>\\Apps\\AOS\\AXServiceApp\\AXSF\\Code\\bin\\netstandard.dll.
 2. On each AOS server, open a Command Prompt window as an administrator, and run the following command.
 
-    ```
+    ```Console
     "C:\Program Files (x86)\Microsoft SDKs\Windows\v8.1A\bin\NETFX 4.5.1 Tools\gacutil.exe" -i <path from step 1.>\netstandard.dll /f
     ```
 
@@ -1415,7 +1410,7 @@ This issue occurs because Reporting Services has a lock on a Microsoft Dynamics 
 
 ```stacktrace 
 Microsoft.Dynamics.Ax.Xpp.ClrErrorException: TypeInitializationExeption ---> 
-System.TypeInitializationException: The type inititlaizer for 'Microsoft.Dynamics.Ax.Metadata.XppCompiler.CompilerTracer' threw an exception. ---> 
+System.TypeInitializationException: The type initializer for 'Microsoft.Dynamics.Ax.Metadata.XppCompiler.CompilerTracer' threw an exception. ---> 
 System.TypeInitializationException: The type initializer for 'Microsoft.Dynamics.Ax.DesignTime.Telemetry.OneDS' threw an exception. ---> 
 System.IO.FileLoedAxception: Could not load file or assembly 'Microsoft.Diagnostics.Tracing.TraceEvent, Version=2.0.43.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' or one of its dependencies. 
 The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040) at Microsoft.Dynamics.Ax.DesignTime.Telemetry.OneDS.cctor() 
@@ -1425,3 +1420,40 @@ The located assembly's manifest definition does not match the assembly reference
 **Reason:** There is a .dll mismatch between the runtime and the application.
 
 **Resolution:** Use TSG\_SysClassRunner.ps1. For more information, see [TSG_SysClassRunner.ps1](onprem-tsg-implementations.md#sysclassrunner).
+
+## DBSync fails with PEAP APP version 10.0.9 Platform update 33
+**Issue:** During deployment of the APP 10.0.9 PU33 PEAP-package, the deployment fails with the AXSF applications staying in "InBuild" status in Service Fabric explorer. When reviewing the logs on the AXSF nodes's work directories, the following DBSync error can be found. 
+
+Error message from DBSync:
+ ```stacktrace
+ Microsoft.Dynamics.AX.Deployment.Setup.exe -bindir "C:\ProgramData\SF\LBDEN08FS1AOS03\Fabric\work\Applications\AXSFType_App398\AXSF.Code.1.0.20200123151456\Packages" -metadatadir "C:\ProgramData\SF\LBDEN08FS1AOS03\Fabric\work\Applications\AXSFType_App398\AXSF.Code.1.0.20200123151456\Packages" -sqluser "" -sqlserver "" -sqldatabase "" -setupmode servicesync -syncmode fullall -onprem 
+Stack trace: Invalid attempt to call  running in CIL on the client.
+   at Microsoft.Dynamics.Ax.MSIL.Interop.throwException(Int32 ExceptionValue, interpret* ip)
+   at Microsoft.Dynamics.Ax.MSIL.Interop.ThrowCQLError(IL_CQL_ERR cqlErr, String p1)
+   at Microsoft.Dynamics.AX.Kernel.ApplicationId.LogOrRethrow(Exception exception)
+   at Microsoft.Dynamics.AX.Kernel.ApplicationId.LogOrRethrowFormattedMessage(Exception exception, String typeName, String elementName)
+   at Microsoft.Dynamics.AX.Kernel.ApplicationId.LogOrRethrowFormattedMessage(Exception exception, String typeName, Int32 typeId)
+   at Microsoft.Dynamics.AX.Kernel.ApplicationId.ApplicationIdBridge.LoadTableById(ApplicationIdBridge* , Int32 id, ObjectIdDelegate* cb)
+   at cqlClass.callEx(cqlClass* , Char* , interpret* )
+   at Microsoft.Dynamics.Ax.MSIL.cqlClassIL.Call(IntPtr c, String methodName, Object[] parameters, Type[] types, Object[] varargs, Type[] varargsTypes)
+   at Microsoft.Dynamics.Ax.Xpp.XppObjectBase.Call(String methodName, Object[] parameters, Type[] types, Object[] varargs)
+   at Microsoft.Dynamics.Ax.Xpp.DictTable.Supportinheritance()
+   at Dynamics.AX.Application.SysDictTable.`getRootTable(Int32 _tabid) in xppSource://Source/ApplicationPlatform\AxClass_SysDictTable.xpp:line 1498
+   at Dynamics.AX.Application.SysDictTable.getRootTable(Int32 _tabid)
+   at Dynamics.AX.Application.SysDataBaseLog.`ConfigureSqlLogging() in xppSource://Source/ApplicationPlatform\AxTable_SysDataBaseLog.xpp:line 60
+   at Dynamics.AX.Application.SysDataBaseLog.ConfigureSqlLogging()
+   at SysDataBaseLog::ConfigureSqlLogging(Object[] , Boolean& )
+   at Microsoft.Dynamics.Ax.Xpp.ReflectionCallHelper.MakeStaticCall(Type type, String MethodName, Object[] parameters)
+ 
+DB sync failed.
+```
+
+**Reason:** This issue occurs because there is data in the SQL DatabaseLog table that conflicts with the metadata in the package.
+
+**Resolution:** Run the following query on AXDB to clean the DatabaseLog table and retry the deployment.
+
+```sql
+select * into databaselog_bak from databaselog
+truncate table databaselog
+```
+

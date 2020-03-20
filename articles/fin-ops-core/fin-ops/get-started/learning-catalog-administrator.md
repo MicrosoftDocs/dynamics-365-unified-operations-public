@@ -1,17 +1,17 @@
 ---
 title: Administrators Learning Catalog
 description: Find all the training options for Finance and Operations.
-author: margoc
+author: loreleishannonmsft
 ms.topic: article
-ms.date: 01/08/2020
-ms.author: margoc
+ms.date: 02/19/2020
+ms.author: v-lshann
 ---
 
 # Administrators Learning 
 
 Do you need to keep systems and data flowing, provisioned, and secure round-the-clock?
 
-The following catalog is organized from core knowledge to specific domains, and from most basic to most advanced. If content exists in multiple formats, we'll let you know, so that you can choose the training format that best meets your needs. For more information, see Training content formats. 
+The following catalog is organized from core knowledge to specific domains, and from most basic to most advanced. If content exists in multiple formats, we'll let you know, so that you can choose the training format that best meets your needs. 
 
 ## Get Started
 | Content  | Description  | Format   | Length    | 
@@ -46,7 +46,7 @@ The following catalog is organized from core knowledge to specific domains, and 
 | [Finance And Operations: Microsoft Managed Continuous Updates: What's new - November 1, 2018 (DYN533cust)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-what-39-s-new-12-13-18)      | During this hour we will discuss updates to the Microsoft Managed Continuous update cadence as well as take a look at the user experience in Lifecycle Services.  | Free recording of a web conference | 59 minutes |
 | [Microsoft Managed Continuous Updates: What's new (DYN543PAL2)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-what-39-s-new-12-13-18)  | During this hour we will explain what is new since our initial announcements about Microsoft Managed Continuous updates. We will discuss the cadence of updates, how we have responded to your valuable feedback on the process, and take a look at the forthcoming Lifecycle Services user experience, through which you will be able to manage your updates.  | Free recording of a web conference | 56 minutes |
 | [Microsoft Managed Continuous Updates (DYN474PAL2)](https://community.dynamics.com/365/b/techtalks/posts/monitoring-optimization-advisor-amp-critical-kbs-july-13-2018)  | We will discuss Microsoft’s plans for keeping your system up-to-date with the latest release. We will cover timelines, the cadence for major and minor updates, the planned procedures, the implications, and what you should do for optimal results.| Free recording of a web conference | 62 minutes |
-| [Monitoring, Optimization Advisor & Critical KBs (DYN456PAL2)](https://infopedia.eventbuilder.com/event?eventid=x9s5y9&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)  | We will discuss monitoring capabilities and what Microsoft monitors for you in your production environment, the optimization advisor and how it can be extended, the “Critical X++ updates” experience in LCS, and best practices for the “Report production outage” option in LCS.  | Free recording of a web conference | 40 minutes |
+| [Monitoring, Optimization Advisor & Critical KBs](https://community.dynamics.com/365/b/techtalks/posts/monitoring-optimization-advisor-amp-critical-kbs-july-13-2018)  | We will discuss monitoring capabilities and what Microsoft monitors for you in your production environment, the optimization advisor and how it can be extended, the “Critical X++ updates” experience in LCS, and best practices for the “Report production outage” option in LCS.  | Free recording of a web conference | 40 minutes |
 ## Testing
 | Content  | Description  | Format  | Length    | 
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|----------------------------------------------------------|

@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Ledger translation (Russia)
-description: This topic provides information about using translation to transfer accounting transactiosn from one company to another.
+description: This topic provides information about using translation to transfer accounting transactions from one company to another.
 author: anasyash
 manager: AnnBe
 ms.date: 10/02/2019
@@ -383,4 +383,4 @@ A completed translation can't be processed more than one time. To rerun translat
 
 1. Go to **General ledger \> Periodic tasks \> Translation sessions**.
 2. In the lower part of the page, select the translation to cancel.
-3. Select **Cancellation**. The **Export status** and **Import status** fields are automatically updated to **Cancelled**.
+3. Select **Cancellation**. The **Export status** and **Import status** fields are automatically updated to **Canceled**.

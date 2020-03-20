@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create and edit sales quotations
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure demonstrates how to create and update a sales quotation. You can run this procedure on your own data or in demo data company USMF.
 
@@ -55,7 +55,7 @@ This procedure demonstrates how to create and update a sales quotation. You can 
 17. On the **Action Pane**, click **Quotation**.
 18. Click **Send quotation**.
 19. Select 'Yes' in the **Print quotation** field.
-20. Click **OK**. The report may take a minute to generate. Don’t close the page until it does so.
+20. Click **OK**. The report may take a minute to generate. Don't close the page until it does so.
 
 ## Update a sales quotation
 1. Go to **Navigation pane > Modules > Sales and marketing > Sales quotations > All quotations**.

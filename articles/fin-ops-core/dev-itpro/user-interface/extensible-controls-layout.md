@@ -67,7 +67,9 @@ Used to apply **ArrangeMethod** and **Columns** attributes to containers Options
 
 **Example usage:**
 
-    <div data-dyn-bind="layout: { arrangeMethod: $dyn.layout.ArrangeMethod.vertical, columns: '1' }"> </div>
+```html
+<div data-dyn-bind="layout: { arrangeMethod: $dyn.layout.ArrangeMethod.vertical, columns: '1' }"> </div>
+```
 
 ### Sizing
 
@@ -79,7 +81,9 @@ Used to apply **ArrangeMethod** and **Columns** attributes to containers Options
 
 **Example usage:**
 
-    <div data-dyn-bind="sizing: { height: $dyn.layout.Size.available, width: $dyn.layout.Size.content }"> </div>
+```html
+<div data-dyn-bind="sizing: { height: $dyn.layout.Size.available, width: $dyn.layout.Size.content }"> </div>
+```
 
 **Things to note about the sizing binding handler:**
 
@@ -91,7 +95,9 @@ Used to apply **ArrangeMethod** and **Columns** attributes to containers Options
 
 **Example:**
 
-    <div data-dyn-role="Group" data-dyn-bind="ArrangeMethod: $dyn.layout.ArrangeMethod.vertical, Columns: $dyn.layout.Columns.fill, Height: $dyn.layout.Size.available"></div>
+```html
+<div data-dyn-role="Group" data-dyn-bind="ArrangeMethod: $dyn.layout.ArrangeMethod.vertical, Columns: $dyn.layout.Columns.fill, Height: $dyn.layout.Size.available"></div>
+```
 
 FAQ
 ---

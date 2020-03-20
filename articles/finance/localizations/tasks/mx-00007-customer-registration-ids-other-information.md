@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # MX-00007 Customer registration IDs and other information
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure walks you through creating a customer with the fiscal information and other related information used in electronic invoices and legal reports for Mexico. This procedure was created using the demo data company MXMF.
 

@@ -5,7 +5,7 @@ title: Page load data actions
 description: This topic covers page load data actions in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 10/25/2019
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -31,7 +31,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Page load data actions
 
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 This topic covers page load data actions in Microsoft Dynamics 365 Commerce. 
@@ -131,21 +130,87 @@ Now, when you develop this module, you will have access to the product informati
 
 ## Register a core data action
 
-The Dynamics 365 Commerce online SDK contains a set of core data actions for performing typical retail data tasks. Interfaces for core data actions can be found under the \\node\_modules\\@msdyn365-commerce-modules\\retail-actions\\dist\\lib directory. To register a core data action so that you can use it inside your module, use the following format in your MODULE\_data.ts file.
 
-```typescript
-import { SimpleProduct } from '@msdyn365-commerce/commerce-entities';
-import { AsyncResult } from '@msdyn365-commerce/retail-proxy';
-export interface IProductFeatureData {
-    /**
-     * @dataAction @msdyn365-commerce-modules/retail-actions/dist/lib/get-simple-products
-     * @runAt server
-     */
-    products: AsyncResult<SimpleProduct>[];
+The Dynamics 365 Commerce online SDK contains a set of core data actions that can be used to perform typical data tasks. Interfaces for core data actions can be found under the \\node\_modules\\@msdyn365-commerce-modules\\retail-actions\\dist\\lib directory. To register a core data action so that you can use it inside your module, use the following format in the **dataActions** node of your MODULE\_definition.json file.
+
+```json
+{
+    "$type": "contentModule",
+    "friendlyName": "Product Feature",
+    "name": "product-feature",
+    "description": "Feature module used to highlight a product.",
+    "categories": [
+        "storytelling"
+    ],
+    "tags": [
+        ""
+    ],
+    "dataActions": {
+        "products": {
+            "path": "@msdyn365-commerce-modules/retail-actions/dist/lib/get-simple-products",
+            "runOn": "server"
+        }
+    },
+    "config": {
+        "imageAlignment": {
+            "friendlyName": "Image Alignment",
+            "description": "Sets the desired alignment of the image, either left or right on the text.",
+            "type": "string",
+            "enum": {
+                "left": "Left",
+                "right": "Right"
+            },
+            "default": "left",
+            "scope": "module",
+            "group": "Layout Properties"
+        },
+        "productTitle": {
+            "type": "string",
+            "friendlyName": "Product Title",
+            "description": "Product placement title"
+        },
+        "productDetails": {
+            "type": "richText",
+            "friendlyName": "Product Details",
+            "description": "Rich text representing the featured product details"
+        },
+        "productImage": {
+            "type": "image",
+            "friendlyName": "Product Image",
+            "description": "Image representing the featured product"
+        },
+        "buttonText": {
+            "type": "string",
+            "friendlyName": "Button Text",
+            "description": "Text to show on the call to action button"
+        },
+        "productIds": {
+            "friendlyName": "Product ID",
+            "description": "Provide a Product Id that the module will display",
+            "type": "string",
+            "scope": "module",
+            "group": "Content Properties"
+        }
+    },
+    "resources": {
+        "resourceKey": {
+            "comment": "resource description",
+            "value": "resource value"
+        }
+    }
 }
 ```
 
-Notice that this example calls a core data action that is named **get-simple-products**. This data action returns an array of **SimpleProduct** results. The interface for the **SimpleProduct** return type is defined in the \\node\_modules\\@msdyn365-commerce\\commerce-entities\\dist\\types\\commerce-entities directory that is imported at the top of the example.
+Notice that this example calls a core data action that is named **get-simple-products**. This data action returns an array of **SimpleProduct** results. The following example shows the module data.ts file that defines the return value. The interface for the **SimpleProduct** return type is defined in the \\node\_modules\\@msdyn365-commerce\\commerce-entities\\dist\\types\\commerce-entities directory that is imported at the top of the example.
+
+
+```typescript
+import { AsyncResult, SimpleProduct } from '@msdyn365-commerce/retail-proxy';
+
+export interface IProductFeatureData {
+    products: AsyncResult<SimpleProduct>[];
+}
+```
 
 ## Additional resources
 

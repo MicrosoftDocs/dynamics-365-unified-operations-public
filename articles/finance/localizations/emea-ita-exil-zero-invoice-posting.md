@@ -32,8 +32,6 @@ ms.dyn365.ops.version: 10.0.8
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
-
 In Italy, financial transactions for invoices that have a total amount of 0 (zero) must be posted.
 
 ## Prerequisites

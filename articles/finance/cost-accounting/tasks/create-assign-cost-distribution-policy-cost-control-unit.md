@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create and assign a cost distribution policy to a cost control unit
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Cost distribution rules are used to distribute costs that have been financially counted on a collective cost center. The cost accountant makes sure that the cost is distributed to the cost centers, based on the selected allocation base. A policy and the corresponding rules are assigned to a cost control unit. This task guide uses an example to show how to create a cost distribution policy and the corresponding rules.
 

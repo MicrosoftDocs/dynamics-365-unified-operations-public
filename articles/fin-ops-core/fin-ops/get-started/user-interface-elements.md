@@ -3,7 +3,7 @@
 
 title: User interface elements
 description: This topic describes the user interface (UI) elements in the app.
-author: 
+author: tlefor
 manager: AnnBe
 ms.date: 08/09/2019
 ms.topic: article
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:  
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 

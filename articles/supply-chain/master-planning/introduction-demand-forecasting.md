@@ -73,7 +73,7 @@ The forecasts, historical data, and any changes that were made to the demand for
 You can use Supply Chain Management to visualize and modify the baseline forecasts. Manual adjustments must be authorized before the forecasts can be used for planning.
 
 ## Limitations
-Demand forecasting is a tool that helps customers in the manufacturing industry create forecasting processes. It offers the core functionality of a demand forecasting solution and is designed so that it can easily be extended. Demand forecasting might not be the best fit for customers in industries such as retail, wholesale, warehousing, transportation, or other professional services.
+Demand forecasting is a tool that helps customers in the manufacturing industry create forecasting processes. It offers the core functionality of a demand forecasting solution and is designed so that it can easily be extended. Demand forecasting might not be the best fit for customers in industries such as commerce, wholesale, warehousing, transportation, or other professional services.
 
 Additional resources
 --------

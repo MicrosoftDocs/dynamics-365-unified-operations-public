@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Create a product
-description: This procedure walks through creating a new product in the retail product hierarchy. 
+description: This procedure walks through creating a new product in the Commerce product hierarchy. 
 author: ShylaThompson
 manager: AnnBe 
 ms.date: 08/29/2018
@@ -28,14 +28,14 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create a product
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-This procedure walks through creating a new product in the Retail product hierarchy. The demo data company used to create this task is USRT, and this task is intended for the Merchandising Manager and Product Designer.
+This procedure walks through creating a new product in the Commerce product hierarchy. The demo data company used to create this task is USRT, and this task is intended for the Merchandising Manager and Product Designer.
 
-1. Go to Retail and commerce > .. > Products by category.
+1. Go to Retail and Commerce > .. > Products by category.
 2. Click New.
 3. In the Product name field, type a name for your product..
-4. In the Retail category field, click the drop-down button to open the lookup.
+4. In the category field, click the drop-down button to open the lookup.
 5. In the tree, expand 'ALL (ALL)\Fashion (Fashion)'.
 6. In the tree, select 'ALL (ALL)\Fashion (Fashion)\Fashion Accessories (Fashion Accessories)'.
 7. Click OK.

@@ -63,7 +63,9 @@ You can use the following environment types for your project:
 | Tier-1 | Tier-2 and higher |
 |--------|-------------------|
 | Single-box environment | Multi-box environment |
-| All components are installed on the same server, a Virtual Machine. These components include Application Object Server (AOS), the database, Dynamics 365 Retail, and Management Reporter. These components include Application Object Server (AOS), the database, Dynamics 365  Retail, and Management Reporter. | Components are installed on multiple cloud services, and typically include more than one Application Object Server (AOS). |
+
+| All components are installed on the same server. These components include Application Object Server (AOS), the database, Dynamics 365 Commerce, and Management Reporter. | Components are installed on multiple servers. |
+
 | Microsoft SQL Server is used. | [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/) is used. |
 | The architecture differs from the architecture of the production environment to maximize efficiency and cost of the development team. | The architecture is the same as the architecture of the production environment, even though this type of environment has a different sizing and isn't enabled for disaster recovery. |
 | The environment can be deployed in various ways. For example, it can be deployed as an add-on, it can be cloud-hosted, or it can be deployed as an environment image (VHD). | The environment can be deployed only as a standard environment or an add-on environment. It can't be cloud-hosted. |
@@ -143,11 +145,11 @@ The following table compares the deployment options.
 | Public URL                            | ✓ | ✓ | Not supported |
 | Integration development               | ✓ | ✓ | Extra setup is required. (For example, run the admin user provisioning tool.) |
 | Azure DevOps                          | ✓ | ✓ | Extra setup is required. (For example, rename the computer.) |
-| Applying deployable packages from LCS | Automated | Automated | Manual through runbooks |
+| Applying deployable packages from LCS | Automated | Automated | Command line runbooks (AxUpdateInstaller.exe tool) |
 | Deploying data packages from LCS      | ✓ | ✓ | Not supported |
 | Maintenance                           | Managed by Microsoft | Managed by the customer/partner | Managed by the customer/partner |
-| Cost model                            | Fixed flat rate (The price is the same if the environment is on 24/7.) | Pay as you go (If the environment is on for eight hours, you pay for eight hours.) | Hardware-related |
-| Limitations                           | Virtual Machine local Administrator access is disabled. | None | None |
+| Cost model                            | Fixed flat rate (The price is the same if the environment is on 24/7.) | Pay as you go (If the environment is on for eight hours, you pay for eight hours.). Cost is based on selected Virtual Machine size, disk size and settings, and premium storage settings | Hardware-related |
+| Limitations                           | 1) Virtual Machine (VM) local Administrator access is disabled. 2) Limited disk sizes 3) VM specs are defined by Microsoft | None. You have full control over VM specs, disk size and storage settings. You have administrator access to the VM. | None |
 
 > [!IMPORTANT]
 > Actions that require local administrator access can no longer be performed on Tier-1 environments managed by Microsoft (Standard and Add-on). These actions include installation of third-party tools and development of Microsoft Power BI reports. If administrator permissions are required, use cloud-hosted environments or an environment image (downloadable VHD) instead. For more information, see [Development and build VMs that don't allow admin access FAQ](../../dev-itpro/sysadmin/vms-no-admin-access.md).

@@ -5,7 +5,7 @@ title: Comparison of cloud and on-premises features
 description: The topic shows which features are supported in Cloud and on-premises.
 author: sericks007
 manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 03/04/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -37,8 +37,8 @@ This topic shows a comparison of features available in cloud vs. on-premises for
 
 - [Dynamics 365 Finance](cloud-prem-comparison.md#dynamics-365-finance)
 - [Dynamics 365 Supply Chain Management](cloud-prem-comparison.md#dynamics-365-supply-chain-management)
-- [Dynamics 365 Retail](cloud-prem-comparison.md#dynamics-365-retail)
-- [Dynamics 365 Talent](cloud-prem-comparison.md#dynamics-365-talent)
+- [Dynamics 365 Commerce](cloud-prem-comparison.md#dynamics-365-commerce)
+- [Dynamics 365 Human Resources](cloud-prem-comparison.md#dynamics-365-human-resources)
 
 Information about the [development and administration features](cloud-prem-comparison.md#development-and-administration-features) is included, as well.
 
@@ -86,6 +86,7 @@ The following tables list the application areas. Cloud and on-premises support i
 |                                      | Task recorder - Save or load task recordings from the BPM library                         | Yes       | No              |
 | Support                              |                                                                                           | Yes       | Yes             |
 |                                      | Access to Support via the Help & Support menu                                             | Yes       | No              |
+|                                      | Business events                                                                           | Yes       | Yes (either internet connectivity is required or custom endpoints must be implemented to send/recieve business events within intranet)              |
 
 ## Dynamics 365 Supply Chain Management 
 
@@ -101,7 +102,7 @@ The following tables list the application areas. Cloud and on-premises support i
 | Data management and integration      |                                                                                           | Yes       | Yes             |
 |                                      | Configuration-driven extension                                                            | Yes       | No              |
 |                                      | Export data to your own data warehouse                                                    | Yes       | Yes             |
-|                                      | Enable the export of incremental updates to a data entity                                 | Yes       | No              |
+|                                      | Enable the export of incremental updates to a data entity                                 | Yes       | Yes              |
 |                                      | Data integrations                                                                         | Yes       | Yes             |
 | Document management                  |                                                                                           | Yes       | Yes             |
 | Help                                 |                                                                                           | Yes       | No              |
@@ -150,15 +151,15 @@ The following tables list the application areas. Cloud and on-premises support i
 | Support                              |                                                                                           | Yes       | Yes             |
 |                                      | Access to Support via the Help & Support menu                                             | Yes       | No              |
 
-## Dynamics 365 Retail 
+## Dynamics 365 Commerce 
 
-To see a list of retail capabilities that are available in on-premises deployments, see [Retail capabilities that are available in on-premises deployments](../../../retail/retail-onprem.md).
+To see a list of capabilities that are available in on-premises deployments, see [Commerce capabilities that are available in on-premises deployments](../../../retail/retail-onprem.md).
 
-## Dynamics 365 Talent 
+## Dynamics 365 Human Resources 
 
 | **Area**         | **Feature**         | **Cloud** | **On-premises** |
 |------------------|---------------------|-----------|-----------------|
-| All Talent areas | All Talent features | Yes       | No              |
+| All Human Resources areas | All Human Resources features | Yes       | No              |
 
 ## Development and administration features
 

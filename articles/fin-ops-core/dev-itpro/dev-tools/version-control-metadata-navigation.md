@@ -24,7 +24,7 @@ ms.custom: 23401
 ms.assetid: 46ed0115-6f8b-4757-b8d2-d4ccb76c733d
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -79,8 +79,8 @@ The **Metadata** folder contains your source XML files organized by packages and
 
 ### Configure Visual Studio to connect to your team project
 
-1.  Start Visual Studio 2013 as Administrator.
-2.  Click **Project &gt; Options &gt; Source Control &gt; Plug-in Selection**.
+1.  When logged in as an administrative user, start Visual Studio as Administrator.
+2.  Click **Tools &gt; Options &gt; Source Control &gt; Plug-in Selection**.
 3.  In the Current source control plug-in field, select **Visual studio Team Foundation Server**.
 4.  Select **Team &gt; Connect to Team Foundation Server**.
 5.  In **Team Explorer**, click **Select Team Projects**.
@@ -100,7 +100,7 @@ Your model store root folder contains source files of all packages and models th
 
 1. In Visual studio **Team Explorer**, connect to the team project as described earlier in this document.
 2. Open **Source Control Explorer** from **Team Explorer**.
-3. Map the **Metadata** folder of your team project to the root folder of the model store on your local drive (Typically c:\\packages), an example is shown in the image below.
+3. Map the **Metadata** folder of your team project to the root folder of the model store on your local drive (Typically K:\\AOSService\\PackagesLocalDirectory), an example is shown in the image below.
 
     > [!NOTE]
     > Your model store may be located under I:\\AosService\\PackagesLocalDirectory or another drive, depending on your machine configuration.
@@ -108,7 +108,7 @@ Your model store root folder contains source files of all packages and models th
     [![VSOfolders2](./media/vsofolders21.png)](./media/vsofolders21.png)
 
 4. Click **Map**, and on the next dialog, click **No**.
-5. Similarly, map the <strong>/Trunk/Main/Projects **server folder to the **local projects folder</strong> that will hold your Visual Studio solution and project files.
+5. Similarly, map the **/Trunk/Main/Projects** server folder to the **local projects folder** that will hold your Visual Studio solution and project files.
 
 ## Scenario 1: Open the fleet management solution and add it to Azure DevOps source control
 This section describes the steps needed to add a solution to Azure DevOps source control. This scenario is relevant when you have started development on a new model and you are adding it to source control for the first time. For code migration scenarios or in the case you are synchronizing new models that have been created by another developer, refer to scenario 2 below.
@@ -153,7 +153,7 @@ All Visual Studio projects belong to models. Models are source code distribution
 4.  Click **Finish**.
 
     > [!NOTE]
-    > Because your solution contained elements from two models, you'll need to add an additional model descriptor file to source control: C:\\Packages\\FleetManagementExtension\\Descriptor\\FleetManagementExtension.xml
+    > Because your solution contained elements from two models, you'll need to add an additional model descriptor file to source control: K:\\AOSService\\PackagesLocalDirectory\\FleetManagementExtension\\Descriptor\\FleetManagementExtension.xml
 
 5.  Check-in your pending items. Your item is now ready for development of the fleet management application using a state-of-the-art, cloud-based source control system and many other application lifecycle features of Azure DevOps.
 

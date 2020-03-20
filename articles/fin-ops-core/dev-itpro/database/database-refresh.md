@@ -5,7 +5,7 @@ title: Refresh database
 description: This topic explains how to perform a refresh of a database for Microsoft Dynamics 365 Finance.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 02/02/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-platform
@@ -57,15 +57,14 @@ When refreshing a production environment to a sandbox environment, or a sandbox 
 
 * Email addresses in the LogisticsElectronicAddress table.
 * Batch job history in the BatchJobHistory, BatchHistory, and BatchConstraintHistory tables.
-* SMTP password in the SysEmailSMTPPassword table.
 * SMTP Relay server in the SysEmailParameters table.
 * Print Management settings in the PrintMgmtSettings and PrintMgmtDocInstance tables.
 * Environment-specific records in the SysServerConfig, SysServerSessions, SysCorpNetPrinters, SysClientSessions, BatchServerConfig, and BatchServerGroup tables.
 * Document attachments in the DocuValue table. These attachments include any Microsoft Office templates that were overwritten in the source environment.
-* Connection string in the PersonnellIntegrationConfiguration table.
 * All users except the admin will be set to **Disabled** status.
 * All batch jobs are set to **Withhold** status.
 * All users will have their partition value reset to the "initial" partition record ID.
+* All Microsoft-encrypted fields will be cleared, because they can't be decrypted on a different database server. An example is the **Password** field in the SysEmailSMTPPassword table.
 
 Some of these elements aren't copied because they are environment-specific. Examples include BatchServerConfig and SysCorpNetPrinters records. Other elements aren't copied because of the volume of support tickets. For example, duplicate emails might be sent because Simple Mail Transfer Protocol (SMTP) is still enabled in the UAT environment, invalid integration messages might be sent because batch jobs are still enabled, and users might be enabled before admins can perform post-refresh cleanup activities.
 
@@ -79,7 +78,7 @@ An environment can't be refreshed from one tenant to another. This restriction a
 ### Conditions of a database refresh
 Here is the list of requirements and conditions of operation for a database refresh:
 
-- A refresh performs a delete on the original target database. A breadcrumb is added so that a point-in-time restore can still be done. (This condition applies to all refreshes that are done after October 2019.)
+- A refresh performs a delete operation on the original target database.
 - The target environment will be available until the database copy has reached the target server. After that point, the environment will be offline until the refresh process is completed.
 - The refresh will affect only the application and Financial Reporting databases.
 - Documents in Azure blob storage are not copied from one environment to another. This means that attached document handling documents and templates won't be changed and will remain in their current state.
@@ -87,14 +86,16 @@ Here is the list of requirements and conditions of operation for a database refr
 - The Admin user must make required configuration changes, such as reconnecting integration endpoints to specific services or URLs.
 - All data management framework with recurring import and export jobs must be fully processed and stopped in the target system prior to initiating the restore. In addition, we recommend that you select the database from the source after all recurring import and export jobs have been fully processed. This will ensure there are no orphaned files in Azure storage from either system. This is important because orphaned files cannot be processed after the database is restored in the target environment. After the restore, the integration jobs can be resumed.
 - Any user with a role of Project owner or Environment manager in LCS will have access to the SQL and machine credentials for all non-production environments.
+- The databases must be hosted in the same Azure geographic region.
+- The allocated database capacity of the source environment must be less than the maximum database capacity of the target environment.
 
-## Steps to complete after a database refresh for environments that use Retail functionality
+## Steps to complete after a database refresh for environments that use Commerce functionality
 [!include [environment-reprovision](../includes/environment-reprovision.md)]
 
 ## Known issues
 
-### Refresh is denied for environments running Platform update 11 or earlier
-The database refresh process can't currently be completed if the environment is running Platform update 11 or earlier. Starting in December 2019, the process won't be able to be completed for Platform update 20 or earlier. For more information, see the [list of currently supported platform updates](../migration-upgrade/versions-update-policy.md).
+### Refresh is denied for environments that run Platform update 20 or earlier
+The database refresh process can't currently be completed if the environment is running Platform update 20 or earlier. For more information, see the [list of currently supported platform updates](../migration-upgrade/versions-update-policy.md).
 
 ### Incompatible version of Financial Reporting between source and target environments
 The database refresh process (self-service or via a service request) can't be completed successfully if the version of Financial Reporting in the target environment is earlier than the version in the source environment. To resolve this issue, update both environments so that they have the latest version of Financial Reporting.

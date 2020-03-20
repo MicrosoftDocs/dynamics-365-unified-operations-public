@@ -83,7 +83,7 @@ Postman (<https://www.getpostman.com/postman>) is a tool that is often used to i
 
 10. On the **Tests** tab, create a test that validates that the response is reasonable, and that stores the returned authorization token in an environment variable. Here is an example.
 
-    ```
+    ```csharp
     var json = JSON.parse(responseBody);
     tests["Get Azure AD Token"] = !json.error && responseBody !== '' && responseBody !== '{}' && json.access_token !== '';
     postman.setEnvironmentVariable("bearerToken", json.access_token);
@@ -100,7 +100,7 @@ Postman (<https://www.getpostman.com/postman>) is a tool that is often used to i
 
 14. Create a request to perform create, read, update, or delete (CRUD) operations on the desired data entity via the OData service. Create the URL according to your requirements. For more information, see [Open Data Protocol (OData)](odata.md). You might find it useful to parameterize the request by using a variable that is stored in the environment, as shown earlier. The following example of a GET query uses a **Customer Account** parameter. The query returns name and address details for the customer account that is specified in the environment variable. Note that special characters must be correctly URL-encoded.
 
-    ```
+    ```Console
     https://[Finance and Operations instance URL]/data/Customers?$format=json&$filter=CustomerAccount%20eq%20%27{{custAccount}}%27&$select=CustomerAccount,Name,AddressDescription,FullPrimaryAddress
     ```
 
@@ -110,7 +110,7 @@ Postman (<https://www.getpostman.com/postman>) is a tool that is often used to i
 
 16. Create a test to help validate the response. The following example tests that non-empty, JSON-formatted data is returned in the response body.
 
-    ```
+    ```csharp
     var json = JSON.parse(responseBody);
     tests["Get customer info"] = !json.error && responseBody !== '' && responseBody !== '{}';
     ```

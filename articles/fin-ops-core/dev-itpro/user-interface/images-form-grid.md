@@ -36,13 +36,15 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes the steps for displaying images on a page or in a grid. The topic also provides background about some of the ways that images can be used, and the APIs that are used.  
 
-**Note:** For accessibility, when you use an image to indicate status or show data, the image must be accompanied by a tooltip, enhanced preview, label, or other textual representation that describes the value or status that the image represents. 
+> [!NOTE]
+> For accessibility, when you use an image to indicate status or show data, the image must be accompanied by a tooltip, enhanced preview, label, or other textual representation that describes the value or status that the image represents. 
 
 Finance and Operation apps do not use embedded resources for images. Instead, it uses lightweight symbols. The coding pattern has changed slightly to support the new image control. 
 
 For ImageList uses, the runtime accepts the old **ImageID** value and maps it to a symbol, so that existing code continues to work.
 
-**Note:** In some cases, there is no image even after runtime mapping, and this behavior is intentional. 
+> [!NOTE]
+> In some cases, there is no image even after runtime mapping, and this behavior is intentional. 
 
 AX 2012 displays images in a grid column to indicate status. These images were sometimes retrieved from embedded resources that are no longer available. 
 
@@ -62,7 +64,8 @@ The following storage options are available for images:
 
 Images that are stored as AOS resources allow for the use of an image that isn't categorized as user data, and can be used with your application. 
 
-**Note:** If there are legacy embedded resource images that UX has approved for use, those embedded images can be manually transferred to an AOS resource and used. 
+> [!NOTE]
+> If there are legacy embedded resource images that UX has approved for use, those embedded images can be manually transferred to an AOS resource and used. 
 
 A typical web application maintains a collection of images on an Internet Information Services (IIS) server and just provides a URL to the image. Although this approach is supported, we don't expect that it will be used very much. Instead, we expect that the symbol font will be used as an image source. 
 
@@ -84,20 +87,21 @@ For the list of symbols that are available in the symbol font, see [Symbol font]
 ### Run time
 Sometimes, you don't have an image for a particular record in a grid, but you don't want an empty space where the image should be. The following example shows how you can use a display method to check for an image value, and then substitute a placeholder image instead.
 
-    public display container customerImage()
-    {     
-        ImageReference imgRef;
-        container imgContainer = this.Image;
-        if(imgContainer == connull())
-        {
-            // there is no image… the container is null
-            // show a generic person outline image
-            imgRef = ImageReference::constructForSymbol("Person");
-            imgContainer = imgRef.pack();
-        }
-        return imgContainer;
+```xpp
+public display container customerImage()
+{     
+    ImageReference imgRef;
+    container imgContainer = this.Image;
+    if(imgContainer == connull())
+    {
+        // there is no image… the container is null
+        // show a generic person outline image
+        imgRef = ImageReference::constructForSymbol("Person");
+        imgContainer = imgRef.pack();
     }
-
+    return imgContainer;
+}
+```
 
 ## Image type: AOT Resource
 
@@ -110,13 +114,15 @@ Sometimes, you don't have an image for a particular record in a grid, but you do
 
 ### Run time
 
-    public display container imageDataMethod()
-    {
-        ImageReference imgClass =  
-              ImageReference::constructForAotResource(
-                  "ResourceMicrosoft Dynamics AX");
-        return imgClass.pack();
-    }
+```xpp
+public display container imageDataMethod()
+{
+    ImageReference imgClass =  
+            ImageReference::constructForAotResource(
+              "ResourceMicrosoft Dynamics AX");
+    return imgClass.pack();
+}
+```
 
 ## Image type: URL Image
 
@@ -124,9 +130,33 @@ Sometimes, you don't have an image for a particular record in a grid, but you do
 |---|---|
 | <ul><li>This approach provides an easy way to reference any image anywhere on web.</li><li>This approach supports full-color images.</li><li>The web browser can cache the image, based on the settings of the server that hosts the image.</li></ul> | <ul><li>The transfer size isn’t as small as it is for symbols, but it's reasonable. The URL is sent as a string for each control that uses the image. The browser then downloads the image from the URL, and from that point, standard browser caching rules apply.</li><li>You can’t easily theme the images by using CSS.</li><li>Unless the URL points to a Scalable Vector Graphics (SVG) file, the image isn't automatically scaled on high-DPI displays.</li></ul> |
 
-| Design time | Run time |
-|---|---|
-| | The following example shows an image that uses a URL that is contained in a string.<br><pre><code>public display container imageDataMethod()<br>{<br>ImageReference imgClass = ImageReference::constructForUrl(this.ImageURL);<br>return imgClass.pack();<br>}</code></pre><br>This code sends a small JavaScript Object Notation (JSON) message to the control on the client. This message instructs the control to treat the image as a URL and let the browser do the work of downloading the image. No download occurs on the server. <strong>Storing an image URL in a database table</strong> You can also have a container field for the image column on your table. You can then use code that resembles the following example to store the <strong>ImageReference</strong> pack.<br><pre><code>ImageReference imgClass;<br>CLIControls_ImageTable imgTable;<br>ttsbegin;<br>imgClass = ImageReference::constructForUrl(<br>    &quot;<br>    http://dynamics/PublishingImages/ERPLogos/DynamicsLogo.jpg&quot;);<br>imgTable.ImageField = imgClass.pack();<br>imgTable.insert();<br>ttscommit;</code></pre>This code causes the user’s browser to download the image from the specified URL. The use of ImageReference involves some overhead, but this approach lets you use a single application programming interface (API) to handle images that are created from binary data, URLs, AOT resources, or symbols. You can even mix and match image types between rows of data.|
+### Run time
+
+The following example shows an image that uses a URL that is contained in a string.
+
+```xpp
+public display container imageDataMethod()
+{
+ImageReference imgClass = ImageReference::constructForUrl(this.ImageURL);
+return imgClass.pack();
+}
+```
+
+This code sends a small JavaScript Object Notation (JSON) message to the control on the client. This message instructs the control to treat the image as a URL and let the browser do the work of downloading the image. No download occurs on the server. <strong>Storing an image URL in a database table</strong> You can also have a container field for the image column on your table. You can then use code that resembles the following example to store the <strong>ImageReference</strong> pack.
+
+```xpp
+ImageReference imgClass;
+CLIControls_ImageTable imgTable;
+ttsbegin;
+imgClass = ImageReference::constructForUrl(
+    "http://dynamics/PublishingImages/ERPLogos/DynamicsLogo.jpg");    
+imgTable.ImageField = imgClass.pack();
+imgTable.insert();
+ttscommit;
+```
+
+This code causes the user’s browser to download the image from the specified URL. The use of ImageReference involves some overhead, but this approach lets you use a single application programming interface (API) to handle images that are created from binary data, URLs, AOT resources, or symbols. You can even mix and match image types between rows of data.
+
 
 ## Image type: Binary Image
 
@@ -145,7 +175,8 @@ When you use a display method for an image type to show an image in a grid, thre
 -   Container (image instance)
 -   ResID (which is mapped to a symbol)
 
-**Note:** ResID and Int are the same return types. If the **imageList** property of the image control instance has been assigned an instance value, the display method return value is considered an array index into the imagelist. If the **imageList** property is **null**, the return value is used to map a legacy ResID to a symbol.
+> [!NOTE]
+> ResID and Int are the same return types. If the **imageList** property of the image control instance has been assigned an instance value, the display method return value is considered an array index into the imagelist. If the **imageList** property is **null**, the return value is used to map a legacy ResID to a symbol.
 
 ## Images in a grid and the legacy ImageList collection
 In AX 2012 and earlier versions, a common use pattern for displaying images is to store an image as a resource or use a kernel-supplied image resource, and then at run time, extract that image and place it in a reusable collection that is known as an ImageList. The guidance is to use lighter-weight symbol images. You should rewrite all legacy code so that it uses symbols directly. You should also replace all code that uses the ImageList collection. If you don't make these changes, the legacy ImageList collection won't display images, because use of this collection relies on embedded (kernel) resources that no longer exist. Therefore, to support legacy code until it can be updated, the ImageList collection maps the ResID for an embedded resource to a new font-based symbol to help guarantee that any code that uses the ImageList collection will continue to run and provide an image.
@@ -153,213 +184,225 @@ In AX 2012 and earlier versions, a common use pattern for displaying images is t
 ## Using the imageList property for backward compatibility
 An image control has a property that is named **imageList**. You pass in an instance of the ImageList collection to this property. In this way, the image is an array of images that you select via the array number.
 
-    public void init()
-    {
-        int imgCnt;
+```xpp
+public void init()
+{
+    int imgCnt;
         
-        // create an imagelist instance
-        Imagelist imageList = new ImageList(ImageList::smallIconWidth(), Imagelist::smallIconHeight());
+    // create an imagelist instance
+    Imagelist imageList = new ImageList(ImageList::smallIconWidth(), Imagelist::smallIconHeight());
         
-        super();
+    super();
         
-        // add images to the instance (return value is not needed)
-        // Note that a legacy ResID is used in the new Image contstructor. 
-        // This is a compatibility mapping of resource to symbol.
-        imgCnt = imagelist.add(new Image(#ImageInfo));
-        imgCnt = imagelist.add(new Image(#ImageWarning));
-        imgCnt = imagelist.add(new Image(#ImageError));
+    // add images to the instance (return value is not needed)
+    // Note that a legacy ResID is used in the new Image contstructor. 
+    // This is a compatibility mapping of resource to symbol.
+    imgCnt = imagelist.add(new Image(#ImageInfo));
+    imgCnt = imagelist.add(new Image(#ImageWarning));
+    imgCnt = imagelist.add(new Image(#ImageError));
         
-        // pass the image list instance to the control
-        ImageListDM.imageList(imageList);
-    }
+    // pass the image list instance to the control
+    ImageListDM.imageList(imageList);
+}
     
-    // at runtime, select the image you want to show: when the control has an imagelist instance, 
-    // this int value is used to index into that array
-    public display int imageListDataMethod()
-    {
-        int imgCnt = imageCnt mod 3;
-        imageCnt++;
-        return imgCnt;
-    }
+// at runtime, select the image you want to show: when the control has an imagelist instance, 
+// this int value is used to index into that array
+public display int imageListDataMethod()
+{
+    int imgCnt = imageCnt mod 3;
+    imageCnt++;
+    return imgCnt;
+}
     
-    /*
-       Note: The legacy image resource ID's #ImageInfo, #ImageWarning, #ImageError are 
-       mapped from the legacy resource id to a symbol name in the X++
-       class ImageLoader
-    */
+/*
+    Note: The legacy image resource ID's #ImageInfo, #ImageWarning, #ImageError are 
+    mapped from the legacy resource id to a symbol name in the X++
+    class ImageLoader
+*/
+```
 
 ## Display method that returns an ImageRes (legacy image resource ID)
-    // this is an example of backward compatibility the use of ImageRes will become obsolete
-    display ImageRes checkIfError(HRMCompEventEmpl _hrmCompEventEmpl)
+
+```xpp
+// this is an example of backward compatibility the use of ImageRes will become obsolete
+display ImageRes checkIfError(HRMCompEventEmpl _hrmCompEventEmpl)
+{
+    if (!_hrmCompEventEmpl.RecId)
     {
-        if (!_hrmCompEventEmpl.RecId)
-        {
-            return 0;
-        }       
-        if (_hrmCompEventEmpl.Status == HRMCompEventEmplStatus::Ignore   ||
-            _hrmCompEventEmpl.Status == HRMCompEventEmplStatus::Approved ||
-            _hrmCompEventEmpl.Status == HRMCompEventEmplStatus::Loaded)
-        {
-            return 0;
-        }
-        else
-        {
-            if (_hrmCompEventEmpl.ErrorStatus == HRMCompEventErrorStatus::Error)
-            {
-                return #ImageError;
-            }
-            if (_hrmCompEventEmpl.ErrorStatus == HRMCompEventErrorStatus::Warning)
-            {
-                return #ImageWarning;
-            }
-            if (_hrmCompEventEmpl.ErrorStatus == HRMCompEventErrorStatus::Info)
-            {
-                return #ImageInfo;
-            }
-        }      
+        return 0;
+    }       
+    if (_hrmCompEventEmpl.Status == HRMCompEventEmplStatus::Ignore   ||
+        _hrmCompEventEmpl.Status == HRMCompEventEmplStatus::Approved ||
+        _hrmCompEventEmpl.Status == HRMCompEventEmplStatus::Loaded)
+    {
         return 0;
     }
+    else
+    {
+        if (_hrmCompEventEmpl.ErrorStatus == HRMCompEventErrorStatus::Error)
+        {
+            return #ImageError;
+        }
+        if (_hrmCompEventEmpl.ErrorStatus == HRMCompEventErrorStatus::Warning)
+        {
+            return #ImageWarning;
+        }
+        if (_hrmCompEventEmpl.ErrorStatus == HRMCompEventErrorStatus::Info)
+        {
+            return #ImageInfo;
+        }
+    }      
+    return 0;
+}
+```
 
 ## Display method that returns a container
-    public display container checkIfError(HRMCompEventEmpl _hrmCompEventEmpl)
+
+```xpp
+public display container checkIfError(HRMCompEventEmpl _hrmCompEventEmpl)
+{
+    ImageReference  imageReference;
+    container       imageContainer;
+    if (_hrmCompEventEmpl.RecId && _hrmCompEventEmpl.Status == HRMCompEventEmplStatus::Created)
     {
-        ImageReference  imageReference;
-        container       imageContainer;
-        if (_hrmCompEventEmpl.RecId && _hrmCompEventEmpl.Status == HRMCompEventEmplStatus::Created)
+        switch (_hrmCompEventEmpl.ErrorStatus)
         {
-            switch (_hrmCompEventEmpl.ErrorStatus)
-            {
-                case HRMCompEventErrorStatus::Error:
-                    imageReference = ImageReference::constructForSymbol('Error');
-                    break;
-                case HRMCompEventErrorStatus::Warning:
-                    imageReference = ImageReference::constructForSymbol('Warning');
-                    break;
-                case HRMCompEventErrorStatus::Info:
-                    imageReference = ImageReference::constructForSymbol('Info');
-                    break;
-            }
+            case HRMCompEventErrorStatus::Error:
+                imageReference = ImageReference::constructForSymbol('Error');
+                break;
+            case HRMCompEventErrorStatus::Warning:
+                imageReference = ImageReference::constructForSymbol('Warning');
+                break;
+            case HRMCompEventErrorStatus::Info:
+                imageReference = ImageReference::constructForSymbol('Info');
+                break;
         }
-        if (imageReference)
-        {
-            imageContainer = imageReference.pack();
-        }
-        return imageContainer;
     }
+    if (imageReference)
+    {
+        imageContainer = imageReference.pack();
+    }
+    return imageContainer;
+}
+```
 
 ## Obtaining and displaying an image from the user by using file upload
 Model a page that has an image control and a **FileUpload** button.
 
-    // model a new FileUpload control (style=minimal)
-    // class declaration
-    FileUpload uploadControl;
+```xpp
+// model a new FileUpload control (style=minimal)
+// class declaration
+FileUpload uploadControl;
     
-    // form init() create a callback event handler to be notified when upload is complete
-    public void init()
-    {
-        //when uploading an image, this method is called upon completion.
-        uploadControl = FileUpload1;
-        uploadControl.notifyUploadCompleted +=  eventhandler(this.UploadCompleted);
-    }
+// form init() create a callback event handler to be notified when upload is complete
+public void init()
+{
+    //when uploading an image, this method is called upon completion.
+    uploadControl = FileUpload1;
+    uploadControl.notifyUploadCompleted +=  eventhandler(this.UploadCompleted);
+}
     
-    // form close() release the callback event handler
-    public void close()
-    {
-        // when the form closes, release the eventhandler for file upload callback
-        //  FileUpload uploadControl;
-        super();
-        //  uploadControl = FileUpload1;
-        uploadControl.notifyUploadCompleted -=  eventhandler(this.UploadCompleted);
-    }
+// form close() release the callback event handler
+public void close()
+{
+    // when the form closes, release the eventhandler for file upload callback
+    //  FileUpload uploadControl;
+    super();
+    //  uploadControl = FileUpload1;
+    uploadControl.notifyUploadCompleted -=  eventhandler(this.UploadCompleted);
+}
     
-    // when the upload completes, grab the image and store it in the database
-    /// <summary> 
-    /// This method is called by the file upload mechanism, when the upload completes
-    /// </summary>
-    public void UploadCompleted()
+// when the upload completes, grab the image and store it in the database
+/// <summary> 
+/// This method is called by the file upload mechanism, when the upload completes
+/// </summary>
+public void UploadCompleted()
+{
+    Binary binaryImage;
+    System.Net.WebClient webClient;
+    System.IO.MemoryStream stream;
+    String255 myUrl;
+    if(uploadControl.uploadSuccess())
     {
-        Binary binaryImage;
-        System.Net.WebClient webClient;
-        System.IO.MemoryStream stream;
-        String255 myUrl;
-        if(uploadControl.uploadSuccess())
-        {
-            InteropPermission perm = new InteropPermission(InteropKind::ClrInterop);
-            perm.assert();
+        InteropPermission perm = new InteropPermission(InteropKind::ClrInterop);
+        perm.assert();
             
-            // BP Deviation Documented
-            webClient = new System.Net.WebClient();
+        // BP Deviation Documented
+        webClient = new System.Net.WebClient();
             
-            // BP Deviation Documented
-            // if success, downloadURL contains the path to the Azure blob location for the file
-            stream = new System.IO.MemoryStream(webClient.DownloadData(uploadControl.downloadUrl()));
+        // BP Deviation Documented
+        // if success, downloadURL contains the path to the Azure blob location for the file
+        stream = new System.IO.MemoryStream(webClient.DownloadData(uploadControl.downloadUrl()));
             
-            // grab the data and assign to the image field
-            binaryImage = Binary::constructFromMemoryStream(stream);
+        // grab the data and assign to the image field
+        binaryImage = Binary::constructFromMemoryStream(stream);
             
-            // assign to the database field (type=container)
-            FMVehicleModel.Image = binaryImage.getContainer();
+        // assign to the database field (type=container)
+        FMVehicleModel.Image = binaryImage.getContainer();
             
-            CodeAccessPermission::revertAssert();
-        }
+        CodeAccessPermission::revertAssert();
     }
+}
+```
 
 ## Example of in-memory bitmap manipulation
 In this example, an image is created from scratch. However, developers can also load a bitmap from an alternative source and then manipulate the image as desired (for example, by cropping, stretching, or resizing, or by changing the opacity). After any manipulation is completed, the developers can display the image by using the image control, or they can assign it to a data source field.
 
-    public void clicked()
+```xpp
+public void clicked()
+{
+    Binary binaryImage;
+    Image  image;
+    int x,y;
+        
+    super();
+        
+    InteropPermission perm = new InteropPermission(InteropKind::ClrInterop);
+    perm.assert();
+        
+    /* 
+    In this example, we’ll create a bitmap programmatically, we’ll use a memory
+    Stream o’bytes to then convert to the container format the image control expects.
+    */
+    System.Drawing.Bitmap bitmap = new System.Drawing.Bitmap(100,100);
+    System.IO.MemoryStream myStream = new System.IO.MemoryStream();
+        
+    // draw some stuff (or load a bitmap from an alternative source)
+    for( x=0; x < bitmap.Height; ++x)
     {
-        Binary binaryImage;
-        Image  image;
-        int x,y;
-        
-        super();
-        
-        InteropPermission perm = new InteropPermission(InteropKind::ClrInterop);
-        perm.assert();
-        
-        /* 
-        In this example, we’ll create a bitmap programmatically, we’ll use a memory
-        Stream o’bytes to then convert to the container format the image control expects.
-        */
-        System.Drawing.Bitmap bitmap = new System.Drawing.Bitmap(100,100);
-        System.IO.MemoryStream myStream = new System.IO.MemoryStream();
-        
-        // draw some stuff (or load a bitmap from an alternative source)
-        for( x=0; x < bitmap.Height; ++x)
+        for( y=0; y< bitmap.Width; ++y)
         {
-            for( y=0; y< bitmap.Width; ++y)
-            {
-                bitmap.SetPixel(x,y,System.Drawing.Color::White);
-            }
+            bitmap.SetPixel(x,y,System.Drawing.Color::White);
         }
-        
-        for(x=0; x < bitmap.Height; ++x)
-        {
-            bitmap.SetPixel(x,x, System.Drawing.Color::Red);
-        }
-        
-        // move our bitmap to an in memory stream
-        bitmap.Save(myStream, System.Drawing.Imaging.ImageFormat::Bmp);
-        
-        // stream goes to raw binary
-        binaryImage = Binary::constructFromMemoryStream(myStream);
-        
-        // create a blank image and copy our binary data to the image format
-        image = new Image();
-        image.setData(binaryImage.getContainer());
-        
-        // copy the image data to the image control
-        MyImage.image(image);
-        
-        // alternatively, skip the image conversion step and assign directly to the data field
-        binaryImage = Binary::constructFromMemoryStream(myStream);
-        
-        // assign to the database field (type=container)
-        datafield.Image = binaryImage.getContainer();
-        
-        CodeAccessPermission::revertAssert();
     }
+        
+    for(x=0; x < bitmap.Height; ++x)
+    {
+        bitmap.SetPixel(x,x, System.Drawing.Color::Red);
+    }
+        
+    // move our bitmap to an in memory stream
+    bitmap.Save(myStream, System.Drawing.Imaging.ImageFormat::Bmp);
+        
+    // stream goes to raw binary
+    binaryImage = Binary::constructFromMemoryStream(myStream);
+        
+    // create a blank image and copy our binary data to the image format
+    image = new Image();
+    image.setData(binaryImage.getContainer());
+        
+    // copy the image data to the image control
+    MyImage.image(image);
+        
+    // alternatively, skip the image conversion step and assign directly to the data field
+    binaryImage = Binary::constructFromMemoryStream(myStream);
+        
+    // assign to the database field (type=container)
+    datafield.Image = binaryImage.getContainer();
+        
+    CodeAccessPermission::revertAssert();
+}
+```
 
 ## Additional examples (URL, binary, and symbol)
 The following table explains two concepts: Image Class and FormImageControl.
@@ -393,53 +436,59 @@ The following table explains two concepts: Image Class and FormImageControl.
 ## Using a display method to show an image from a URL string
 In this example, a display method is used to translate a string that contains a URL to the format that the image control expects.
 
-    public display container imageDataMethod()
-    {
-        ImageReference imgClass = ImageReference::constructForUrl(this.ImageURL);
-        return imgClass.pack();
-    }
+```xpp
+public display container imageDataMethod()
+{
+    ImageReference imgClass = ImageReference::constructForUrl(this.ImageURL);
+    return imgClass.pack();
+}
+```
 
 This code sends a small JSON message to the control on the client. This message instructs the control to treat the image as a URL and let the browser do the work of downloading the image. No download occurs on the server.
 
 ## Using a display method to show a blank image
 There might be times when you have no image for a particular record in a grid, but you don't want an empty space where the image should be. This example shows how you can use a display method to check for an image value and then substitute a placeholder image instead.
 
-    public display container customerImage()
+```xpp
+public display container customerImage()
+{
+    ImageReference imgRef;
+    container imgContainer = this.Image;
+    if(imgContainer == connull())  // there is no image… the container is null
     {
-        ImageReference imgRef;
-        container imgContainer = this.Image;
-        if(imgContainer == connull())  // there is no image… the container is null
-        {
-            imgRef = ImageReference::constructForSymbol("Person");  // show a generic person outline image
-            imgContainer = imgRef.pack();
-        }
-        return imgContainer;
+        imgRef = ImageReference::constructForSymbol("Person");  // show a generic person outline image
+        imgContainer = imgRef.pack();
     }
-    public display container statusImageDataMethod()
+    return imgContainer;
+}
+public display container statusImageDataMethod()
+{
+    ImageReference statusImage;
+    if (this.Status == NoYes::Yes)
     {
-        ImageReference statusImage;
-        if (this.Status == NoYes::Yes)
-        {
-            statusImage = ImageReference::constructForSymbol("Accept");
-        }
-        else
-        {
-            statusImage = ImageReference::constructForSymbol("Cancel");
-        }
-        return statusImage.pack();
+        statusImage = ImageReference::constructForSymbol("Accept");
     }
+    else
+    {
+        statusImage = ImageReference::constructForSymbol("Cancel");
+    }
+    return statusImage.pack();
+}
+```
 
 ## Taking an image URL and storing the image in table
 You can have a container field for the image column on your table. You can then use code that resembles the following example to store the **ImageReference** pack.
 
-    ImageReference imgClass;
-    CLIControls_ImageTable imgTable;
-    ttsbegin;
-    imgClass = ImageReference::constructForUrl(
-        "http://dynamics/PublishingImages/ERPLogos/DynamicsLogo.jpg");
-    imgTable.ImageField = imgClass.pack();
-    imgTable.insert();
-    ttscommit;
+```xpp
+ImageReference imgClass;
+CLIControls_ImageTable imgTable;
+ttsbegin;
+imgClass = ImageReference::constructForUrl(
+    "http://dynamics/PublishingImages/ERPLogos/DynamicsLogo.jpg");
+imgTable.ImageField = imgClass.pack();
+imgTable.insert();
+ttscommit;
+```
 
 Like the display method that is described in the "Using a display method to show an image from a URL string" section, this code causes the user's browser to download the image from the specified URL. Although this approach involves some overhead, you can use a single API to handle images that are created from binary data, URLs, AOT resources, or symbols. You can even mix and match image types between rows of data.
 

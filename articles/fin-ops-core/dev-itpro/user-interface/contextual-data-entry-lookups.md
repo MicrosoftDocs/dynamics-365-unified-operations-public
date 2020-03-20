@@ -96,10 +96,12 @@ The value returned from *resolveAmbiguousReference* is used for the remainder of
 
 Custom lookup implementations can provide advanced or non-typical behaviors, such as presenting dialogs. Therefore, the system disables the default disambiguation behavior when a custom lookup scenario is detected. To opt into the default disambiguation behavior, override the *resolveAmbiguousReference* method (as shown below) **on the control hosting the lookup**. Note that the second parameter to the *resolveAmbiguousReferenceForControl* call is what overrides the default behavior of not performing disambiguation for custom lookup scenarios.
 
-    public str resolveAmbiguousReference()
-    {
-        FormControlAmbiguousReferenceResolver::resolveAmbiguousReferenceForControl (this, true);
-    }
+```xpp
+public str resolveAmbiguousReference()
+{
+    FormControlAmbiguousReferenceResolver::resolveAmbiguousReferenceForControl (this, true);
+}
+```
 
 ### Make custom lookup forms contextual
 
@@ -119,61 +121,67 @@ The following scenarios illustrate some custom lookups, along with the recommend
 
 Custom lookups defined via FormHelp (even though modeled) still go through normal kernel-based lookup generation routines. Therefore, the kernel still has hooks to make some changes to the lookup form. Specifically, the lookup system has enough information to apply the correct filters and sorts; however, it is NOT known which controls should be moved in the lookup's grid.  (While an educated guess could be made based on bindings, that guess may be incorrect in more advanced lookup form designs.) If your custom lookup form is leveraging the *SysTableLookup::filterLookupPreRun* and *SysTableLookup::* *filterLookupPostRun* methods, then uptake the (new) optional parameters on *filterLookupPostRun* to have the NAME control moved automatically, as shown.
 
-    public class MyCustomLookupForm extends FormRun
+```xpp
+public class MyCustomLookupForm extends FormRun
+{
+    public void run()
     {
-        public void run()
-        {
-            FormStringControl lookupHostControl = SysTableLookup::getCallerStringControl(this.args());
-            boolean isFiltered = SysTableLookup::filterLookupPreRun(lookupHostControl, ID_Control, FormDataSourceToFilter);
+        FormStringControl lookupHostControl = SysTableLookup::getCallerStringControl(this.args());
+        boolean isFiltered = SysTableLookup::filterLookupPreRun(lookupHostControl, ID_Control, FormDataSourceToFilter);
 
-            super();
+        super();
 
-            SysTableLookup::filterLookupPostRun(isFiltered, lookupHostControl.text(), ID_Control, FormDataSourceToFilter, 
-                new FormControlAmbiguousReferenceResolver(callingControl), NAME_Control);
-        }
+        SysTableLookup::filterLookupPostRun(isFiltered, lookupHostControl.text(), ID_Control, FormDataSourceToFilter, 
+            new FormControlAmbiguousReferenceResolver(callingControl), NAME_Control);
     }
+}
+```
 
 If your lookup form isn’t using the *SysTableLookup::filterLookup\** methods, and you don’t want to uptake those methods, then you can simply add a control move as shown below.
 
-    public class MyCustomLookupForm extends FormRun
+```xpp
+public class MyCustomLookupForm extends FormRun
+{
+    public void init()
     {
-        public void init()
-        {
-            super();
-            this.applyControlOrdering();
-        }
+        super();
+        this.applyControlOrdering();
+    }
 
-        private void applyControlOrdering()
+    private void applyControlOrdering()
+    {
+        FormControl callerControl = SysTableLookup::getCallerControl(this.args());
+        if (FormControlAmbiguousReferenceResolver::isControlValueMappedToAlternativeField(callerControl))
         {
-            FormControl callerControl = SysTableLookup::getCallerControl(this.args());
-            if (FormControlAmbiguousReferenceResolver::isControlValueMappedToAlternativeField(callerControl))
-            {
-                Grid.moveControl(ID_Control.id(), NAME_control.id());
-            }
-            else
-            {
-                Grid.moveControl(NAME_Control.id(), ID_Control.id());
-            }
+            Grid.moveControl(ID_Control.id(), NAME_control.id());
+        }
+        else
+        {
+            Grid.moveControl(NAME_Control.id(), ID_Control.id());
         }
     }
+}
+```
 
 #### Scenario 2: Override of lookup method manually launching a form
 
 Unlike Scenario 1, lookup forms launched by completely manual mechanisms, such as the class factory, have no kernel hooks. Therefore, it is the responsibility of the lookup form to adhere to the contextual data entry behaviors. The easiest way to do this is to leverage the SysTableLookup::filterLookup\* methods (similar to Scenario 1) except include one additional parameter to indicate that sorting should also be maintained. An example is shown below.
 
-    public class MyCustomLookupForm extends FormRun
+```xpp
+public class MyCustomLookupForm extends FormRun
+{
+    public void run()
     {
-        public void run()
-        {
-            FormStringControl lookupHostControl = SysTableLookup::getCallerStringControl(this.args());
-            boolean isFiltered = SysTableLookup::filterLookupPreRun(lookupHostControl, ID_Control, FormDataSourceToFilter);
+        FormStringControl lookupHostControl = SysTableLookup::getCallerStringControl(this.args());
+        boolean isFiltered = SysTableLookup::filterLookupPreRun(lookupHostControl, ID_Control, FormDataSourceToFilter);
 
-            super();
+        super();
 
-            SysTableLookup::filterLookupPostRun(isFiltered, lookupHostControl.text(), ID_Control, FormDataSourceToFilter, 
-                new FormControlAmbiguousReferenceResolver(callingControl), NAME_Control, true);
-            }
+        SysTableLookup::filterLookupPostRun(isFiltered, lookupHostControl.text(), ID_Control, FormDataSourceToFilter, 
+            new FormControlAmbiguousReferenceResolver(callingControl), NAME_Control, true);
     }
+}
+```
 
 ## Advanced lookup uptake
 ### Scenario 1: Overriding ID and NAME bindings
@@ -188,51 +196,55 @@ If you want to use a set of fields other than what is chosen by default, you mus
 
 Here's an end-to-end example of how to provide custom bindings.
 
-    [Control Hosting Lookup]
-    public str resolveAmbiguousReference()
+```xpp
+[Control Hosting Lookup]
+public str resolveAmbiguousReference()
+{
+    return FormControlAmbiguousReferenceResolver::resolveAmbiguousReferenceForControl(
+        this, true, AbsoluteFieldBinding::construct(IDField, Table), 
+        AbsoluteFieldBinding::construct(SomeOtherNAMEField, Table));
+}
+
+[Custom Lookup Form]
+public class MyCustomLookupForm extends FormRun
+{
+    public void run()
     {
-        return FormControlAmbiguousReferenceResolver::resolveAmbiguousReferenceForControl(
-            this, true, AbsoluteFieldBinding::construct(IDField, Table), 
-            AbsoluteFieldBinding::construct(SomeOtherNAMEField, Table));
+        FormStringControl lookupHostControl = SysTableLookup::getCallerStringControl(this.args());
+        boolean isFiltered = SysTableLookup::filterLookupPreRun(lookupHostControl, ID_Control, FormDataSourceToFilter);
+
+        super();
+
+        SysTableLookup::filterLookupPostRun(isFiltered, lookupHostControl.text(), ID_Control, FormDataSourceToFilter, 
+            new FormControlAmbiguousReferenceResolver(callingControl, AbsoluteFieldBinding::construct(IDField, Table),
+            AbsoluteFieldBinding::construct(SomeOtherNAMEField, Table)), NAME_Control, true);
     }
-
-    [Custom Lookup Form]
-    public class MyCustomLookupForm extends FormRun
-    {
-        public void run()
-        {
-            FormStringControl lookupHostControl = SysTableLookup::getCallerStringControl(this.args());
-            boolean isFiltered = SysTableLookup::filterLookupPreRun(lookupHostControl, ID_Control, FormDataSourceToFilter);
-
-            super();
-
-            SysTableLookup::filterLookupPostRun(isFiltered, lookupHostControl.text(), ID_Control, FormDataSourceToFilter, 
-                new FormControlAmbiguousReferenceResolver(callingControl, AbsoluteFieldBinding::construct(IDField, Table),
-                AbsoluteFieldBinding::construct(SomeOtherNAMEField, Table)), NAME_Control, true);
-        }
-    }
+}
+```
 
 ### Scenario 2: Custom resolution logic
 
 It’s possible to use custom resolution logic by overriding resolveAmbiguousReference and leveraging something other than FormControlAmbiguousReferenceResolver. Note that this logic needs to be common to the hosted lookup form so that keyboard and lookup based entry stay in sync.
 
-    public str resolveAmbiguousReference()
+```xpp
+public str resolveAmbiguousReference()
+{
+    // In this sample, allow “looser” data entry by simply picking the first record that matches, if any.
+    CLI_Job _job;
+    str mappedValue = this.text();
+    if (strLen(mappedValue) > 0)
     {
-        // In this sample, allow “looser” data entry by simply picking the first record that matches, if any.
-        CLI_Job _job;
-        str mappedValue = this.text();
-        if (strLen(mappedValue) > 0)
-        {
-            select firstonly _job order by _job.Title where _job.Title like mappedValue + “*”;
-        }
-
-        if (_job.RecId)
-        {
-            mappedValue = _job.Title;
-        }
-
-        return mappedValue;
+        select firstonly _job order by _job.Title where _job.Title like mappedValue + “*”;
     }
+
+    if (_job.RecId)
+    {
+        mappedValue = _job.Title;
+    }
+
+    return mappedValue;
+}
+```
 
 ## Appendix  Detailed usage scenarios for contextual data entry
 For the scenarios, assume there is a table called "TableA" with PK field "ID" and index field "Name", with the FK we're trying to enter that is related to the ID (the user ultimately needs to pick an ID). Note that any algorithms that depend on like/begins with are assuming string fields. We won't be able to provide high fidelity resolution behavior on, for example, integral types. 

@@ -31,16 +31,16 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Enrich a product page
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic describes how to enrich a product page in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-By default, your site uses a generic page to show product data. This page includes the basic information about the product and the controls that are required to sell it. However, you can supplement the information that comes from the Retail Server with additional images or text for a specific product. This process is known as enriching the product page.
+By default, your site uses a generic page to show product data. This page includes the basic information about the product and the controls that are required to sell it. However, you can supplement the information that comes from the Commerce Scale Unit with additional images or text for a specific product. This process is known as enriching the product page.
 
-In many cases, you will want to use specific additional content for your products. When you go to **Retail** in the authoring tool, you will see a list of products from the channel that is assigned to the site. In this list, the **Enriched** column indicates whether the product page for a product has been enriched. If a check mark appears in the column, an enriched product page exists for the product. If no check mark appears, the default product page and content are used for the product. You can preview both enriched and non-enriched product pages by selecting a product name in the list.
+In many cases, you will want to use specific additional content for your products. When you go to **Retail and Commerce** in the authoring tool, you will see a list of products from the channel that is assigned to the site. In this list, the **Enriched** column indicates whether the product page for a product has been enriched. If a check mark appears in the column, an enriched product page exists for the product. If no check mark appears, the default product page and content are used for the product. You can preview both enriched and non-enriched product pages by selecting a product name in the list.
 
 ## Enrich a product page
 

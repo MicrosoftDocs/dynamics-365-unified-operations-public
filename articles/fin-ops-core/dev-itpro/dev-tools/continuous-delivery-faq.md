@@ -24,7 +24,7 @@ ms.custom: 202614
 ms.assetid: bc80fee3-8f54-43c4-9162-f058056c956c
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 
@@ -40,9 +40,9 @@ This topic summarizes answers to questions that are frequently asked by ISVs and
 
 ### Do I customize (overlayer) or use extensions?
 
-Extensibility is the only customization framework in Finance, Supply Chain, and Retail. Overlayering isn't supported.
+Extensibility is the only customization framework in Finance, Supply Chain, and Commerce. Overlayering isn't supported.
 
-Dynamics 365 Finance, Supply Chain, and Retail are extensively customized by partners, value added resellers (VARs), and even some customers. The ability to customize the product is a strength that has historically been supported through overlayering of the application code. The move to the cloud, together with more agile servicing and frequent updates, requires a less intrusive customization model, so that updates are less likely to affect custom solutions. This new model is called *extensibility* and has replaced customization through overlayering.
+Dynamics 365 Finance, Supply Chain, and Commerce are extensively customized by partners, value added resellers (VARs), and even some customers. The ability to customize the product is a strength that has historically been supported through overlayering of the application code. The move to the cloud, together with more agile servicing and frequent updates, requires a less intrusive customization model, so that updates are less likely to affect custom solutions. This new model is called *extensibility* and has replaced customization through overlayering.
 
 For more information, see [Extensibility home page](../extensibility/extensibility-home-page.md) and the [Develop and customize home page](developer-home-page.md).
 

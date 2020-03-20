@@ -81,7 +81,7 @@ On the new tenant, you will get a new LCS project that you must initiate and set
     1. Remove all user accounts except the admin user.
     2. Fix the admin user record in USERINFO.
 
-        ```
+        ```sql
         UPDATE USERINFO
         SET SID='mysid', NETWORKALIAS='myalias/email', NETWORKDOMAIN='https://sts.windows.net'
         WHERE ID = 'Admin'
@@ -90,11 +90,14 @@ On the new tenant, you will get a new LCS project that you must initiate and set
 6. Re-import all other users that have the correct security identifier (SID) and identity provider.
 7. Run the following commands to update the tenant ID in the appropriate tables:
 
-    - select VALUE from SYSSERVICECONFIGURATIONSETTING where name = 'TENANTID'
-    - select TENANTID from POWERBICONFIG
-    - select TENANTID from PROVISIONINGMESSAGETABLE
-    - select TENANTID from B2BINVITATIONCONFIG
-    - select TENANTID from RETAILSHAREDPARAMETERS
+
+	```sql
+    select VALUE from SYSSERVICECONFIGURATIONSETTING where name = 'TENANTID'
+    select TENANTID from POWERBICONFIG
+    select TENANTID from PROVISIONINGMESSAGETABLE
+    select TENANTID from B2BINVITATIONCONFIG
+    select TENANTID from RETAILSHAREDPARAMETERS
+	```
 
 8. Fully configure the environments. As part of this step, configure the integration endpoints.
 9. Perform smoke tests on the user acceptance testing (UAT) environment in the new LCS project. These tests should focus on user sign-in, integrations, workflows, printing, reporting, and similar processes that depend on configuration and user information.
