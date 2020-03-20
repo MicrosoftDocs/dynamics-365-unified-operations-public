@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create advanced contracts for billing based on progress
-description: 
+description: This topic is about creating a project and project contract, to create invoices based on percentage of work completed.
 author: RadhikaRS
 manager: AnnBe
 ms.date: 03/17/2020
@@ -31,10 +31,9 @@ ms.search.validFrom: 2019-01-15
 ---
 
 # Create advanced contracts for billing based on progress
-
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about how to create a project and project contract, so that you can create invoices for a customer based on a percentage completed work. The invoice amounts are automatically calculated for the budget categories of work that you set up for a project. The timing of invoices is set up when you negotiate the project contract with the customer.
+This topic provides information about creating a project and project contract, so that you can create invoices for a customer based on a percentage completed work. The invoice amounts are automatically calculated for the budget categories of work you set up for a project. The invoice timing is set up when you negotiate the project contract with the customer.
 
 Use the procedures in this topic to set up a contract, an associated project, and the billing rules to calculate invoice amounts for the budget categories of work that you set up for the project.
 
