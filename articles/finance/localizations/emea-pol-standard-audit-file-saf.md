@@ -5,7 +5,7 @@ title: Standard audit file (SAF) for Poland
 description: Users in legal entities in Poland can generate a Standard Audit File for Tax (SAF-T) in XML format. This topic provides information about the formats for Poland. 
 author: LizaGolub
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 03/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -590,7 +590,7 @@ To correctly report some of the important tags in the report, define the **Appli
 |-------------------|-------------------------|-----------------------|-----------------|------------------|
 | **TaxFree_LOOKUP**    | Tax free  | Tax free | Non-taxable transactions for the supply of goods and services outside the country; exempt from taxation. | Niepodlegające opodatkowaniu-transakcje dostawy towarów oraz świadczenia usług poza terytorium kraju; zwolnione z opodatkowania. |
 | **TaxExemptReason_LOOKUP** | Tax exempt reason | Przyczyna lub podstawa zwolnienia z podatku lub jego zmniejszenia | In the case of delivery of goods or provision of services exempt from tax pursuant to art. 43 paragraph 1, art. 113 section 1 and 9 or provisions issued on the basis of art. 82 paragraph 3 | W przypadku dostawy towarów lub świadczenia usług zwolnionych od podatku na podstawie art. 43 ust. 1, art. 113 ust. 1 i 9 albo przepisów wydanych na podstawie art. 82 ust. 3 |
-| **ItemType_LOOKUP** | Type of item | Rodzaj przedmiotu | Delivery of second-hand goods, works of art, collectors' items and antiques, for which the tax base is constituted in accordance with art. 120 paragraph 4th and 5th margin; New means of transport is the subject of Intra-Community supply. | Dostawy towarów używanych, dzieł sztuki, przedmiotów kolekcjonerskich i antyków, dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 i 5 marża; W przypadku gdy przedmiotem wewnątrzwspólnotowej dostawy są nowe środki transportu. |
+| **ItemType_LOOKUP** | Type of item | Rodzaj przedmiotu | Delivery of second-hand goods, works of art, collectors' items and antiques, for which the tax base is constituted in accordance with art. 120 paragraph 4th and 5th margin; New means of transport is the subject of Intra-community supply. | Dostawy towarów używanych, dzieł sztuki, przedmiotów kolekcjonerskich i antyków, dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 i 5 marża; W przypadku gdy przedmiotem wewnątrzwspólnotowej dostawy są nowe środki transportu. |
 
 ### TaxFree_LOOKUP
 
@@ -612,29 +612,29 @@ Note! Tax transactions marked as “Reverse charge” will be reported as “oo�
 
 ### TaxExemptReason_LOOKUP
 
-Conditions for the “TaxExemptReason_LOOKUP” are Sales tax exempt codes defined in Finance (Modules > Tax > Setup > Sales tax > Sales tax exempt codes) and used in Sales tax group during posting of tax transactions. When invoice contains no lines with Sales tax exemptions P_19 field will be reported with “false” value and P_19A, P_19B, P_19C tags will be omitted.
+Conditions for the **TaxExemptReason_LOOKUP** are sales tax exempt codes that are defined in Finance (**Tax** > **Setup** > **Sales tax** > **Sales tax exempt codes**) and used in sales tax groups when posting tax transactions. When an invoice contains no lines with sales tax exemptions, the **P_19** field will be reported with **false** value and the **P_19A**, **P_19B**, and **P_19C** tags will be omitted.
 
--   P_19 indicates the provision of the act or act issued on the basis of the act on the basis of which the taxpayer applies tax exemption
--   P_19 indicates the provision of Directive 2006/112 / EC, which exempts from such tax the supply of goods or such services
--   P_19 indicates another legal basis indicating that the supply of goods or services benefits from the exemption
+- **P_19** indicates the provision of the act or act issued on the basis of the act on the basis of which the taxpayer applies tax exemption.
+- **P_19** indicates the provision of Directive 2006/112/EC, which exempts from such tax the supply of goods or such services
+- **P_19** indicates another legal basis indicating that the supply of goods or services benefits from the exemption..
 
-(!) Click "Save" button when you complete the setup for “TaxExemptReason_LOOKUP” Lookup field and going to setup next lookup field.
+Select **Save** when you complete the setup for the **TaxExemptReason_LOOKUP** lookup field and you are ready to move to the next field.
 
 ### ItemType_LOOKUP
 
 This lookup field is introduced in version 48.36.58 of “VAT Invoices (PL)” format (current KB).
 
-In “ItemType_LOOKUP” lookup the following values are available for setup:
+In **ItemType_LOOKUP** lookup, the following values are available for setup:
 
 |   Name |   Description (En) | Description (Pl) | Setup |
 |--------|--------------------|------------------|-------|
-| **SecondHandGoods** | Deliveries of second-hand goods for which the tax base is constituted in accordance with art. 120 paragraph 4th and 5th margin | Dostawy towarów używanych dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 i 5 marża | Specify “Sales tax codes” which are used for transaction related to second-hand goods. With this setup for an invoice with tax transaction by the specified tax code “procedura marży - towary używane” will be reported in P_106E_3A tag. |
-| **ArtWorks**  | Deliveries of works of art for which the tax base is constituted in accordance with art. 120 paragraph 4th and 5th margin | Dostawy dzieł sztuk dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 i 5 marża | Specify “Sales tax codes” which are used for transaction related to works of art. With this setup for an invoice with tax transaction by the specified tax code “procedura marży - dzieła sztuki” will be reported in P_106E_3A tag. |
-| **CollectorAntiques** | Deliveries of collectors' items and antiques, for which the tax base is constituted in accordance with art. 120 paragraph 4th and 5th margin | Dostawy przedmiotów kolekcjonerskich i antyków, dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 i 5 marża | Specify “Sales tax codes” which are used for transaction related to collectors' items and antiques. With this setup for an invoice with tax transaction by the specified tax code “procedura marży - przedmioty kolekcjonerskie i antyki” will be reported in P_106E_3A tag. |
-| **Transport** | Intra-Community delivery of new means of transport | Wewnątrzwspólnotowa dostawa nowych środków transportu | Specify “Sales tax codes” which are used for transaction related to Intra-Community delivery of new means of transport. With this setup for an invoice with tax transaction by the specified tax code P_22 tag will be reported with “true” value. |
-| **Other** | Other | Inne | Specify *Not blank* in “Tax Exempt code” field. This value must be the last in the list of values. At least this value must be mandatory specified for this Lookup. |
+| **SecondHandGoods** | Deliveries of second-hand goods for which the tax base is constituted in accordance with art. 120 paragraph 4th and 5th margin | Dostawy towarów używanych dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 i 5 marża | Specify sales tax codes that are used for transactions related to second-hand goods. With this setup, an invoice with tax transaction by the specified tax code **procedura marży - towary używane** will be reported in **P_106E_3A**. |
+| **ArtWorks**  | Deliveries of works of art for which the tax base is constituted in accordance with art. 120 paragraph 4th and 5th margin | Dostawy dzieł sztuk dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 i 5 marża | Specify the sales tax codes that are used for transactions related to works of art. With this setup, an invoice with a tax transaction with the specified tax code **procedura marży - dzieła sztuki** will be reported in **P_106E_3A**. |
+| **CollectorAntiques** | Deliveries of collectors' items and antiques, for which the tax base is constituted in accordance with art. 120 paragraph 4th and 5th margin | Dostawy przedmiotów kolekcjonerskich i antyków, dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 i 5 marża | Specify the sales tax codes that are used for transactions related to collectors' items and antiques. With this setup, an invoice with tax transactions with the specified tax code **procedura marży - przedmioty kolekcjonerskie i antyki** will be reported in **P_106E_3A**. |
+| **Transport** | Intra-community delivery of new means of transport | Wewnątrzwspólnotowa dostawa nowych środków transportu | Specify the sales tax codes that are used for transactions related to Intra-Community delivery of new means of transport. With this setup, an invoice with tax transactions with the specified tax code **P_22** will be reported with a value of **True**. |
+| **Other** | Other | Inne | Specify **Not blank** in the **Tax Exempt code** field. This value must be the last in the list of values. This value must be mandatory for this lookup. |
 
-When configuration of lookup fields values is completed, mark **State** as “Completed”, save and close the page. If any of the lookup fields doesn’t contain at least one value with *Not blank*, an error will be thrown in the report run-time informing that Application specific parameters are missing.
+When the configuration of the lookup field values is completed, mark the **State** as **Completed**, and then save and close the page. If any of the lookup fields don’t contain at least one value with **Not blank**, an error will be thrown in the report run-time specifying that the application specific parameters are missing.
 
 ### Configure the ER model, and format for the report
 
@@ -661,37 +661,37 @@ You can specify additional selection parameters by using the **Filter** function
 
 ### Implementation details
 
-Version 3 of JPK_FA report introduces possibility of reporting invoices with different document currency in the same file. For this purpose, “Currency” parameter on the dialog form of “SAF VAT invoices (Poland)” report is made optional. When user specifies in this parameter a currency, the report will include only invoices with this currency, when user doesn’t specify any currency in this field, report will be generated for all the invoices not considering document currency of the invoices.
+Version 3 of the **JPK_FA** report introduces the possibility of reporting invoices with different document currency in the same file. For this purpose, the **Currency** parameter on the dialog page of the **SAF VAT invoices (Poland)** report is optional. When you specify a currency, the report will include only invoices with this currency. If you don't specify a currency, the report will be generated for all the invoices that are not considering the document currency of the invoices.
 
 #### <P_14x> tags
 
-According to the requirements of the version 3 of JPK_FA report, when invoices is posted in a currency which differs from “PLN”, <P_13x>, <P_14x> and <P_15> tags must represent amounts in the invoice currency and new <P_14xW> tags must represent related amounts in “PLN”. It is assumed that “PLN” is defined as currency for the Sales tax codes used for transactions to be included in to JPK_FA report. Basing on this assumption, for invoices which document currency differs from the currency setup in Sales tax codes used in the tax transaction(s) of this document, system reports additionally <P_14xW> tags with amount in sales tax code currency (as it is assumed to be “PLN”).
+According to the requirements of the version 3 of the **JPK_FA** report, when an invoice is posted in a currency that differs from **PLN**, the **<P_13x>**, **<P_14x>**, and **<P_15>** tags must represent the amounts in the invoice currency, and the new **<P_14xW>** tags must represent related amounts in **PLN**. It is assumed that **PLN** is defined as the currency for the sales tax codes used for transactions to be included in the **JPK_FA** report. Based on this assumption, for invoices where the document currency differs from the currency setup in the sales tax codes used in the tax transaction(s) of this document, the system reports additional **<P_14xW>** tags with the amount in sales tax code currency (as it is assumed to be **PLN**).
 
 #### <P_18A> tag
 
-KB #4339927 (“A country specific update for Poland for Split payments in Dynamics 365 for Finance and Operations”) introduces possibility to setup Methods of payments in Account receivable module as “Split payment”.
+KB #4339927 (“A country specific update for Poland for Split payments in Dynamics 365 for Finance and Operations apps”) introduces the set up of methods of payments in the Account receivable module as a split payment.
 
-According to the requirements of the version 3 of JPK_FA report, <P_18A> tag for an invoice must be reported as “true” when split payment mechanism was applied for this invoice. To define if split payment mechanism was applied to invoice, system checks “Split payment” parameter of the Method of payment which was used during the invoice posting and reflected in the corresponding customer transaction (in CustTrans table). It is important to keep setup of “Split payment” parameter of Methods of payments stable to guaranty correct reporting.
+According to the requirements of version 3 of the **JPK_FA** report, the **<P_18A>** tag for an invoice must be reported as **True** when the split payment mechanism was applied for this invoice. To determine if the split payment mechanism was applied to the invoice, the system checks the **Split payment** parameter of the method of payment used during the invoice posting and reflected in the corresponding customer transaction (in the **CustTrans** table). It is important to keep the setup of the **Split payment** parameter of the methods of payments stable to guarantee correct reporting.
 
 #### <P_22> tag
 
-<P_22> tag will be reported with “true” value according to setup of Sales tax codes in “ItemType_LOOKUP” for Result = “Transport” in Application specific parameters of “VAT Invoices (PL)” format.
+The **<P_22>** tag will be reported with a value of **True** according to the setup of the sales tax codes in the **ItemType_LOOKUP** where **Result** = **Transport** in the application specific parameters of **VAT Invoices (PL)** format.
 
 #### <P_106E_3> and <P_106E_3A> tags
 
-According to the requirements of JPK_FA report <P_106E_3> tag must report “true” in the case of delivery of second-hand goods, works of art, collectors' items and antiques, taxable base of which is in accordance with art. 120 paragraph 4th and 5th.  When <P_106E_3> tag is reported with “true” value, <P_106E_3A> tag must represent related value(s):
+According to the requirements of the **JPK_FA** report, the **<P_106E_3>** tag must report **True** in the case of the delivery of second-hand goods, works of art, collectors' items, and antiques, the taxable base of which is in accordance with art. 120 paragraph 4th and 5th.  When the **<P_106E_3>** tag is reported with a value of **True**, the **<P_106E_3A>** tag must represent related value(s).
 
 |   Value of <P_106E_3A> tag |   Description (Pl) | Description (En) | How Finance will distinguish |
 |--------|--------------------|------------------|-------|
-| **procedura marży - towary używane** | Dostawy towarów używanych dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 i 5 marża | Deliveries of second-hand goods for which the tax base is constituted in accordance with art. 120 paragraph 4th and 5th margin | According to setup of Sales tax codes in “ItemType_LOOKU” for Result = “SecondHandGoods” in Application specific parameters of “VAT Invoices (PL)” format. | 
-| **procedura marży - dzieła sztuki** | Dostawy dzieł sztuki, przedmiotów kolekcjonerskich i antyków, dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 i 5 marża | Deliveries of works of art for which the tax base is constituted in accordance with art. 120 paragraph 4th and 5th margin | According to setup of Sales tax codes in “ItemType_LOOKU” for Result = “ArtWorks” in Application specific parameters of “VAT Invoices (PL)” format. |
-| **procedura marży - przedmioty kolekcjonerskie i antyki** | Dostawy przedmiotów kolekcjonerskich i antyków, dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 i 5 marża | Deliveries of collectors' items and antiques, for which the tax base is constituted in accordance with art. 120 paragraph 4th and 5th margin | According to setup of Sales tax codes in “ItemType_LOOKU” for Result = “CollectorAntiques” in Application specific parameters of “VAT Invoices (PL)” format. |
+| **procedura marży - towary używane** | Dostawy towarów używanych dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 i 5 marża | Deliveries of second-hand goods for which the tax base is constituted in accordance with art. 120 paragraph 4th and 5th margin | According to the setup of sales tax codes in **ItemType_LOOKU**, **Result** = **SecondHandGoods** in the application specific parameters of **VAT Invoices (PL)**. | 
+| **procedura marży - dzieła sztuki** | Dostawy dzieł sztuki, przedmiotów kolekcjonerskich i antyków, dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 i 5 marża | Deliveries of works of art for which the tax base is constituted in accordance with art. 120 paragraph 4th and 5th margin | According to the setup of sales tax codes in **ItemType_LOOKU**, **Result** = **ArtWorks** in the application specific parameters of **VAT Invoices (PL)**. |
+| **procedura marży - przedmioty kolekcjonerskie i antyki** | Dostawy przedmiotów kolekcjonerskich i antyków, dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 i 5 marża | Deliveries of collectors' items and antiques, for which the tax base is constituted in accordance with art. 120 paragraph 4th and 5th margin | According to the setup of sales tax codes in **ItemType_LOOKUP**, **Result** = **CollectorAntiques** in the application specific parameters of **VAT Invoices (PL)** format. |
 
 #### Zamowienie and ZamowienieCtrl nodes
   
-According to the requirements of version 3 of JPK_FA report Zamowienie node must represent orders or contracts referred to in art. 106f paragraph 1 item 4 of the Act (for advance invoices) in the currency in which the advance invoice was issued (Zamówienia lub umowy, o których mowa w art. 106f ust. 1 pkt 4 ustawy (dla faktur zaliczkowych) w walucie, w której wystawiono fakturę zaliczkową).
+According to the requirements of version 3 of teh JPK_FA report, the **Zamowienie** node must represent the orders or contracts referred to in art. 106f paragraph 1 item 4 of the Act (for advance invoices) in the currency in which the advance invoice was issued (Zamówienia lub umowy, o których mowa w art. 106f ust. 1 pkt 4 ustawy (dla faktur zaliczkowych) w walucie, w której wystawiono fakturę zaliczkową).
 
-To complete this requirement system collects information through the data base by the lines of Sales orders (SO) and Free text invoices (FTI) which are linked to the advance invoices included to the report are provide the following information from them:
+To complete this requirement, the system collects information through the database by the lines of sales orders (SO) and free text invoices (FTI) which are linked to the advance invoices included to the report are provide the following information from them:
 
 |   Tag name |   Description (Pl) | Description (En) | How Finance collects information |
 |--------|--------------------|------------------|-------|
@@ -703,9 +703,9 @@ To complete this requirement system collects information through the data base b
 | **P_11VatZ** | Kwota podatku od zamówionego towaru lub usługi | Tax amount on ordered goods or services | Calculated value of tax amount by the line of SO or FTI basing on quantity stored in the line (P_8BZ). |
 | **P_12Z** | Stawka podatku | Tax rate | Calculated value tax rate based on tax setup in the line of SO or FTI (Sales tax group and Item sales tax group). |
 
-In respect to the values reported for the lines of SO or FTI, WartoscZamowienia tag value of Zamowienie node is calculated as sum by all the document lines of calculated values of tax base amount and calculated values of tax amount (P_11NettoZ + P_11VatZ).
+In respect to the values reported for the lines of SO or FTI, the **WartoscZamowienia** tag value of the **Zamowienie** node is calculated as the sum of all the document lines' calculated values of the tax base amount and the calculated values of the tax amount (**P_11NettoZ** + **P_11VatZ**).
   
-WartoscZamowien tag value of ZamowienieCtrl node is calculated as sum of WartoscZamowienia tag values by all the documents reported in Zamowienie node.
+The **WartoscZamowien** tag value of the **ZamowienieCtrl** node is calculated as the sum of the **WartoscZamowienia** tag values of all the documents reported in the **Zamowienie** node.
 
 ## Using batch jobs for SAFT
 
