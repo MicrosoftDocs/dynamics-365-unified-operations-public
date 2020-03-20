@@ -35,7 +35,9 @@ For each inbound load, your system should already include a related sales order,
 
 ## Overview: How inbound loads are created, registered, and received
 
-Inbound loads with purchase order quantities are typically created and handled as follows when they arrive at the warehouse:
+The following illustration shows the typical flow of handling inbound loads with purchase order quantities when they arrive at your warehouse.
+
+![The inbound load handling process](media/inbound-process.png "The inbound load handling process")
 
 1. **Vendor confirms the purchase order**  
     The process begins when a purchase order is entered into the system and then delivered to a vendor, who confirms the order. The purchase order must exist before you can create an inbound load record&mdash;however, you can create the inbound load even if the order hasn't been confirmed. More information: [Approve and confirm purchase orders](../procurement/purchase-order-approval-confirmation.md)
@@ -288,6 +290,8 @@ Go to **Warehouse management > Setup > Mobile device > Mobile device menu items*
 
 You can leave all other settings at their default values.
 
+![Mobile device menu item settings](media/inbound-mobile-menu-items.png "Mobile device menu item settings")
+
 For more information about how to set up mobile device menu items, see [Set up mobile devices for warehouse work](configure-mobile-devices-warehouse.md).
 
 After you've set up the menu item, go to **Warehouse management > Setup > Mobile device > Mobile device menu** and add the new item to the menu structure for your mobile devices.
@@ -328,6 +332,8 @@ In this exercise, you'll manually create a purchase order and an associated load
 1. Review the load header and line details and note the following:
     - On the **Load** FastTab, the **Load status** is set to _Open_.
     - In the **Load lines** section, there is a single line where the load **Quantity** is _10_ and the **Work created quantity** is _0_.
+
+    ![Load details](media/inbound-load-details.png "Load details")
 
 1. Open the **Ship and receive** tab on the action pane, and then select **Confirm** > **Inbound shipment.** Note that the **Load status** has now changed to _Shipped_.
 
