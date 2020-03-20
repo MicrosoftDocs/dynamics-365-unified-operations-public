@@ -85,7 +85,7 @@ Use this procedure to create a project contract for a Fixed-price project. You c
 
 Use the following steps to create a project and any subprojects associated with a contract:
 
-1.    Go to **Project management and accounting** > **Projects** > **Project contracts**, and on the **Project contracts** page, select **New**.
+1.   Go to **Project management and accounting** > **Projects** > **Project contracts**, and on the **Project contracts** page, select **New**.
 
 2.    On the **Create project** page, enter a project type of **Time and material**.
 
@@ -102,10 +102,9 @@ Use the following steps to create a project and any subprojects associated with 
       **Project contract ID**: This associates a project contract with the project.
 
       **Customer**
+5.    Select **OK** to create the project.   
 
-5.     Select **OK** to create the project.
-
-6.     After you create the project, set the project stage to **In process**. For more information about how to set a project stage, see [Modify a project stage](https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/modify-a-project-stage).
+6.    After you create the project, set the project stage to **In process**. For more information about how to set a project stage, see [Modify a project stage](https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/modify-a-project-stage).
 
 **Create a budget for a project**
 
