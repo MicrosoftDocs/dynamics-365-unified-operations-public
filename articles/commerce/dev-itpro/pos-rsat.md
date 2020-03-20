@@ -174,21 +174,28 @@ To resume the recording session after you've paused it, select **Recording**.
 
 Follow these steps to create a new recording by using the test recorder:
 
-1. Open Cloud POS, and sign in.
-2. On the **Settings** page, in the **Task and Test recorders** section, select **Open test recorder**.
+1. Launch Cloud POS.
+
+2. Click the Hamburger icon on the left pane and click Settings (don't login to Cloud POS, login step must be recorded part of the test recording flow, launch the recorder before login.)
+
+3. On the **Settings** page, in the **Task and Test recorders** section, select **Open test recorder**.
 
     [![Task and Test recorders](./media/CreateTest.png)](./media/CreateTest.png)
 
-3. Select **Create a new recording**.
+4. Select **Create a new recording**.
 
     > [!div class="mx-imgBorder"]
     > [![Create a new recording](./media/NewTest.png)](./media/Newtest.png)
 
-4. Enter a name and description for the recording, and then select **Start**.
+5. Enter a name and description for the recording, and then select **Start**.
 
     The test recorder enters recording mode, and the recording session begins. The test recorder pane shows information and controls that are related to the recording session.
+    
+> [!NOTE]
+> All test recording must begin from the Cloud POS login page. If the recording is started from the home, transaction or any other pages playback will be failed and the recording need to be recorded again from login page. 
 
-5. Perform the actions that you want to perform in the POS UI.
+
+6. Perform the actions that you want to perform in the POS UI.
 
     > [!div class="mx-imgBorder"]
     > [![Test recorder steps](./media/Steps.png)](./media/Steps.png)
