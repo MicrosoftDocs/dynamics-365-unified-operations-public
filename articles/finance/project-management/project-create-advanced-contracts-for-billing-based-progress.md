@@ -110,38 +110,47 @@ Use the following steps to create a project and any subprojects associated with 
 
 Budget categories are used to automatically calculate the amounts to invoice a customer for the percentage of work that is completed for each category. Complete the following steps to create the budget categories for the estimated costs:
 
-1.     Select **Project management and accounting** > **Projects** > **All projects**.
+1.  Select **Project management and accounting** \> **Projects** \> **All
+    projects**.
 
-2.     On the **Plan** tab, in the **Budget** group, select **Project budget**.
+2.  On the **Plan** tab, in the **Budget** group, select **Project budget**.
 
-3.     To create a budget for the project, on the **Project budget** page, enter an estimated cost for each category in the project.
-
+3.  To create a budget for the project, on the **Project budget** page, enter an
+    estimated cost for each category in the project.
+    
 **Create billing rules for progress billings**
 
-After you create the contract and the associated project, complete the following steps to create the billing rules for the contract:
+1.  Go to **Project management and accounting Projects** \> **Project
+    contracts**.
 
-1.     Go to **Project management and accounting Projects** > **Project contracts**.
+2.  Select and open a project contract.
 
-2.     Select and open a project contract.
+3.  In the **Billing rules** section select **Add**, and in the **Line type**
+    field, select **Progress**.
 
-3.     In the **Billing rules** section select **Add**, and in the **Line type** field, select **Progress**.
+4.  Under **Billing rule line details**, in the **Contract value** field, enter
+    the total value of the contract.
 
-4.     Under **Billing rule line details**, in the **Contract value** field, enter the total value of the contract.
+5.  In the **Category** field, select the category to post the fee transaction
+    to.
 
-5.     In the **Category** field, select the category to post the fee transaction to.
+6.  In the **Project** field, select the project that uses this billing rule.
 
-6.     In the **Project** field, select the project that uses this billing rule.
+7.  Optional - Assign the billing rule to additional projects: On the
+    **Project** FastTab, in the **Available projects** section, select a
+    project, and then select the top arrow to add the project to the **Selected
+    projects** section.
 
-7.     Optional - Assign the billing rule to additional projects: On the **Project** FastTab, in the **Available projects** section, select a project, and then select the top arrow to add the project to the **Selected projects** section.
+8.  Optional - Calculate the percentage amount the customer withholds from
+    payments on an invoice: On the **Payment retention terms** FastTab, select
+    the funding source, and in the **Retention percentage** field, enter the
+    retention percentage.
 
-8.     Optional - Calculate the percentage amount the customer withholds from payments on an invoice: On the **Payment retention terms** FastTab, select the funding source, and in the **Retention percentage** field, enter the retention percentage.
-
-9.     Repeat these steps to create additional billing rules for the project contract.
+9.  Repeat these steps to create additional billing rules for the project
+    contract.
 
 **See also**
 
 [Create billing rules](https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/create-billing-rules)
 
 [Create and submit an original project budget](https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/create-and-submit-an-original-project-budget)
-
- 
