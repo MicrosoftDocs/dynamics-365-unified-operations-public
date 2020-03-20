@@ -938,6 +938,8 @@
           items:
           - name: Cart module
             href: add-cart-module.md
+          - name: Cart icon module
+            href: cart-icon-module.md
           - name: Checkout module
             href: add-checkout-module.md
           - name: Order confirmation module
