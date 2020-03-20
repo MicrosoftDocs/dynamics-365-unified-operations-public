@@ -204,12 +204,12 @@
               items:
                 - name: Enable dual-write for existing Finance and Operations apps
                   href: data-entities/dual-write/enable-dual-write.md
+                - name: System requirements and prerequisites
+                  href: data-entities/dual-write/requirements-and-prerequisites.md
                 - name: How to use the dual-write wizard to link your environments
                   href: data-entities/dual-write/link-your-environment.md
                 - name: Enable entity map for dual-write
                   href: data-entities/dual-write/enable-entity-map.md
-                - name: System requirements and prerequisites
-                  href: data-entities/dual-write/requirements-and-prerequisites.md
                 - name: Customize entity and field mappings
                   href: data-entities/dual-write/customizing-mappings.md
                 - name: Error management and alert notifications
