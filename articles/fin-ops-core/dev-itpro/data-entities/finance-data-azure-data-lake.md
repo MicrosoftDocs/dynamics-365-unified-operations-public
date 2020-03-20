@@ -5,7 +5,7 @@ title: Finance and Operations apps data in Azure Data Lake
 description: This topic provides information about how to configure your environment for Dynamics 365 Finance and Operations apps with an Azure Data Lake.
 author: MilindaV2
 manager: AnnBe
-ms.date: 03/16/2020
+ms.date: 03/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -37,97 +37,80 @@ ms.dyn365.ops.version: Platform Update 34
 
 [!include [banner](../includes/preview-banner.md)]
 
-You can configure your environment for Dynamics 365 Finance and Operations apps with an Azure Data Lake using this feature. Tables and Entities from the Finance and Operations apps will be reflected in your Azure Data lake when configuration is successful.
+You can configure your environment for Dynamics 365 for Finance and Operations apps with an Azure Data Lake using this feature. Tables and Entities from the Finance and Operations apps will be reflected in your Azure Data lake when configuration is successful.
 
 ## NOTES
 
-**This feature may not be available in all regions and/or all environments**. If you do not see this feature in your environment, it will become available in the future.
+- **This feature may not be available in all regions and/or all environments**. If you do not see this feature in your environment, it will become available in the future.
+- To enable Aggregate measurements in an Azure Data Lake, continue to use the feature as described in the topic, [Make entity store available as a Data Lake](entity-store-data-lake.md).
 
-To enable aggregate measurements in an Azure Data Lake, see the topic, [Make Entity store available as a Data Lake](entity-store-data-lake.md).
 
 ## Overview
 
-You need to follow several steps to enable this service.
+There are several steps to complete to enable this service.
 
-1. In Lifecycle Services (LCS), accept the offer and terms to enable Data lake integration.
-2. Ask your administrator to create an Azure Storage (Gen2) account in your subscription. Configure Azure Data Lake in your environment by providing connection details. This storage account will be used to store data. Alternatively, the system can create a storage account on your behalf within your own Azure subscription. You need to be a user with administrative rights to your organization's Azure subscription. This option will be available in the future
-3. Administrator must enable the **Export to Azure Data Lake** feature
-4. **Choose Tables (and/or Entities)** to be staged in the Azure Data Lake.
+1. Create an Azure Storage (Gen2) account in your subscription.
+2. Accept the offer and terms to enable Data lake integration.
+3. Enable the **Export to Azure Data Lake** feature
+5. Choose tables and Entities to be staged in the Azure Data Lake.
+6. Monitor the tables in Azure Data Lake.
 
- 
-You are done with the configuration.
+##  Create an Azure Storage (Gen2) account in your subscription
+This storage account will be used to store data. To create a storage account, you need to be a user with administrative rights to your organization's Azure subscription.
+Alternatively, the system can create a storage account on your behalf within your own Azure subscription. 
 
-5. The system will next **initialize the tables in the Azure Data Lake**. If you choose Entities, tables corresponding to the Entities will be added to the Azure Data lake.
-6. Depending on the amount of data in the tables you have chosen, this may take some time. Once the initialization is complete, the system will start **updating the data in the Azure Data lake** as it gets updated in F&O. You can see the status of the tables being updated in the Azure data Lake at any time.
-7. You can add more tables (or remove already added tables) at any time by visiting the select tables form.
-8. If you perform a system/database operation such as a restore, the system pauses the data sync until you are complete. When the operation is complete, the system commences the data sync again. If there's are a lot of updates since the last sync operation, the system may initialize the tables.
-9. You can now consume the data stored in the Azure Data Lake
+### Manually create a storage account
+You can create a storage account in your own subscription and provide that account to the system by using a Key vault. Next, you need to create an AAD application ID that grants access to the root of your storage account. This application will be used by the system to create folder structure and to write data. You will then create a key vault in your own subscription and provide information about your storage account as well as the application to the LCS offer. 
 
- 
+1. To create a storage account, follow the instructions in the section [Create storage accounts](entity-store-data-lake.md#create-storage-accounts). 
+2. Provide the AAD tenant ID of your environment. You can find your AAD tenant ID from the Azure portal. Login to Azure portal, Open Azure Active Directory service. Go to properties page and Copy the Directory ID field.
+3. Next, follow the instructions to create a Key vault and a secret in the section [Create a key vault and a secret](entity-store-data-lake.md#create-a-key-vault-and-a-secret). You will need to provide the Key vault DNS and the secret name.
 
-## Accept offer and terms for Azure Data Lake integration
+### Let the system create a storage account
+As opposed to creating storage accounts on your own, you can ask the system to create a storage account in your subscription on your behalf. This option will be enabled in the future.
 
-You need to accept the Azure Data Lake offer in Dynamics Life Cycle Services (LCS) before you can configure the integration. In order to perform this operation, you need to be an environment administrator for F&O and must have access to LCS portal.
+## Accept offer and terms to enable Azure Data Lake integration
+Before you can configure the Azure Data Lake integration, you need to accept the Azure Data Lake offer in Dynamics Life Cycle Services (LCS). To do this, you need to be an environment administrator for the Finance and Operations apps and you must have access to the LCS portal.
 
-1. Login to lcs.dynamics.com and navigate to the environment page.
-2. Expand the **Environment add-ins** tab. If the Data Lake add-in is already installed, you should see **Azure Data Lake** as an add-in. You need to install the Azure Data Lake add-in.
+1. Login to lcs.dynamics.com and navigate to the **Environment** page.
+2. Expand the **Environment add-ins** tab. If the Data Lake add-in is already installed, you should see **Azure Data Lake** in the list. If not, you need to install the Azure Data Lake add-in.
 
     ![Verify if the Data lake add-in is installed](./media/LCS-EnvironmentPage-with-Addins.png)
 
-3. To install, select the **+ install a new add-in** option from the flyout menu.
-4. You should see **Azure Data Lake** option in the list. If you do not see the option, the feature many not yet be available for your environment.
+3. To install the add-in, select **+ install a new add-in** from the flyout menu.
+4. Find **Azure Data Lake** in the list. If you do not see the option, the feature many not yet be available for your environment.
 
     ![Azure Data lake option in the list of add-ins](./media/LCS-EnvironmentPage-with-DataLake-Flyover.png)
 
-5. Provide the information required in the screen below. In order to answer the questions, you should have already created an Azure Storage account. If you have not done so already, create an Azure storage account (or ask your administrator to create one on your behalf).
-6. Click the validate option to ensure that the system has required access to the Azure Data Lake provisioned by you.
+5. Provide the required information. To answer the questions, you should have already created an Azure Storage account. If you have not, create an Azure storage account, or ask your administrator to create one on your behalf.
+    
+    ![Details for Azure Data Lake add-in](./media/azure-data-lake-addin.png)
 
-    ![Details for Azure Data Lake add-in](./media/LCS-EnvironmentPage-with-DataLake-Details.png)
-
-7. Accept the terms of the offer by selecting the checkbox below and select **Install**. System will install and configure the Azure Data Lake for this environment. On successful completion, you will see the Azure Data Lake configured for this environment.
-
-## How to create a storage account 
-
-You can create a storage account in your own subscription and provide that account to the system by using a Key vault.
-
-To create a storage account, follow the instructions in the section [Create storage accounts](entity-store-data-lake#create-storage-accounts).
-
-Next, follow the instructions to create a Key vault and a secret in the section [Create a key vault and a secret](entity-store-data-lake#create-a-key-vault-and-a-secret). You will need to provide the Key vault DNS and the secret name.
-
- 
-
-## Let the system create storage accounts
-
-As opposed to creating storage accounts on your own, you can ask the system to create a storage account in your subscription on your behalf. This option will be enabled in the future.
+6. Accept the terms of the offer by selecting the check box, and then select **Install**.  The system will install and configure the Azure Data Lake for this environment. When installation and configuration is complete, you will see the Azure Data Lake configured for this environment.
 
 ## Enable the Export to Azure Data Lake feature
+An administrator must enable the Export to Azure Data Lake feature before it can be activated, similar to all new features in Finance and Operations apps. 
 
-Administrator must enable the Export to Azure Data Lake feature before it can be activated as is the case for all new features in F&O. If you do not have administrative rights to F&O, your administrator must perform this task.
+- In the **Feature Management** workspace, navigate to the **Export Data to Azure Data lake** feature, select the feature, and then select **Enable**.
 
-1. Visit the **Feature Management** workspace.
-2. Navigate to the **Export Data to Azure Data lake** feature. Select the feature and select **Enable.**
-3. The feature will be enabled and you should be able to see the **Systems Administration \> Export to Azure Data Lake** menu
+After the feature is enabled, under **System administration**, you should be able to see the option, **Export to Azure Data Lake**.
 
 ## Choose data 
-
-You can choose tables and entities to be staged in the Azure Data Lake. 
+You can choose the tables and entities to be staged in Azure Data Lake. 
 
 1. In your environment, go to **System Administration** \> **Export to Azure Data Lake**.
-2. Select **Configure Data feeds for export to Lake**. This will open the page that enables choosing data.
-3. On the **Tables** tab, select the data tables to be staged in the Azure Data Lake. You can search for tables using the display name or the system name. You can also see if the table is already being synced.
-
-You can select one or more tables, and then select **Add tables**. The tables will be added to Azure Data Lake.
+2. Select **Configure Data feeds for export to Lake**. 
+3. On the **Tables** tab, select the data tables to be staged in Azure Data Lake. You can search for tables using the display name or the system name. You can also see if the table is already being synced.
+4. Select one or more tables, and then select **Add tables**. The tables will be added to Azure Data Lake.
 
 ![Choose Tables](./media/Export-Tables-toData-lake-unselected.png)
 
-If you are not familiar with the specific tables you need, select the tables using entities instead.
-
+5. If you are not familiar with the specific tables you need, select the tables using entities instead.
 Entities are a higher-level abstraction of data that may include multiple tables. By choosing Entities, you are choosing the tables that comprise the Entity. Regardless of how you choose, the tables will be staged in the Azure Data Lake.
 
 ![Choose using Entities](./media/Export-Entities-toData-lake-unselected.png)
 
-## Monitor Tables in Data Lake
-
+## Monitor Tables in Azure Data Lake
 The system keeps the data updated in Azure Data Lake. You don't need to monitor data exports or schedule data exports because the system keeps the data fresh. However, you can see the status of ongoing data exports using the **Active** tab on the **Configure data feeds to Data lake** page.
 
 ![Monitor tables progress](./media/Export-Tables-toData-lake-monitor.png)
