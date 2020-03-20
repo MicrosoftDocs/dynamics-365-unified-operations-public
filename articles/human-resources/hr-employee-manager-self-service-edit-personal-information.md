@@ -63,11 +63,11 @@ Parameters set in the global address book determine the roles that can see your 
     - To edit existing contact information, select the item and then select **Edit**. Edit the fields as necessary.
     - To set a contact detail as private, select the item, select **Advanced**, and then set the **Private** toggle to **Yes**. Select **OK**.
   
-5. To change your personal contacts, select the **Personal contacts** tab. You can designate emergency contacts, beneficiaries, and dependendents. A contact can be a person or organization. The **Benefits management** feature uses personal contact information. For more information, see [Configure personal contact eligibility options](hr-benefits-setup-contact-eligibility-options.md).
+5. To change your personal contacts, select the **Personal contacts** tab. You can designate emergency contacts, beneficiaries, and dependents. A contact can be a person or organization. The **Benefits management** feature uses personal contact information. For more information, see [Configure personal contact eligibility options](hr-benefits-setup-contact-eligibility-options.md).
 
 6. To change your identification numbers, such as Social Security Number, select the **Identification numbers** tab. Changes might go through an approval process if your organization set up an approval workflow.
 
-    - To add a identification numbers, select **New**. Complete the fields as necessary and select **Save**.
+    - To add an identification number, select **New**. Complete the fields as necessary and select **Save**.
     - To edit a number, select **Edit**. Edit the fields as necessary and select **Save**.
 
 7. To change the methods by which you're paid, select the **My payment information** tab. This tab is only available if payment methods are enabled in the **Human Resources parameters** form. HR can enable **Bank draft**, **Cash**, **Check**, **Electronic payment**, or **Other**. HR can also disable electronic payment validation (used for US Payroll), and bank account and routing number validation.
