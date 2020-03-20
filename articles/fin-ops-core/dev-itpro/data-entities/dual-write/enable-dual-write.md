@@ -6,7 +6,7 @@ author: sabinn-msft
 
 ms.technology: 
 ms.topic: conceptual
-ms.date: 03/18/2020
+ms.date: 03/20/2020
 ms.author: v-douklo
 
 LocalizationGroup: 
@@ -24,13 +24,13 @@ This section provides step-by step instructions that describe how to enable dual
 
 Enabling dual-write has three parts:
 
-* Ensure you meet all system requirements and complete all the prerequisites.
+* [Ensure you meet all system requirements and complete all the prerequisites](requirements-and-prerequisites.md).
 
-* Link your Finance and Operations apps environment to the Common Data Service using the dual-write wizard.
+* [Link your Finance and Operations apps environment to the Common Data Service using the dual-write wizard](link-your-environment.md).
 
-* Enable the entity maps.
+* [Enable the entity maps](enable-entity-map.md).
 
-Each of these parts are described in the sections that follow.
+Each of these parts is described in the sections that follow.
 
 ## Next steps:
 
