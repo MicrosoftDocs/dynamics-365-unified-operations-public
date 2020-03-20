@@ -343,7 +343,7 @@ In this exercise, you'll manually create a purchase order and an associated load
 
 When the load arrives at the warehouse receiving dock, a receiving clerk registers the load quantities on their mobile device. If you were the receiving clerk, you would proceed as follows using a mobile device:
 
-1. Use your mobile device to sign in to warehouse 24 (the default password is "1").
+1. Use your mobile device to sign in to warehouse 24 (in the standard demo data, sign in with **User ID** = _24_ and **Password** = _1_).
 
 1. Select the_Load item receiving_ menu item that you created for this scenario.
 
@@ -460,7 +460,7 @@ When the loads arrive at the warehouse receiving dock, a receiving clerk registe
 
  If you were the receiving clerk, you would proceed as follows using a mobile device:
 
-1. On your mobile device, sign in to warehouse 24 (the default password is "1").
+1. On your mobile device, sign in to warehouse 24 (in the standard demo data, sign in with **User ID** = _24_ and **Password** = _1_).
 
 1. Select the_Load item receiving_ menu item that you created for this scenario.
 
@@ -491,7 +491,7 @@ The receiving task for the first load is now completed. Two product receipt jour
 
 In this scenario the receiving clerk will inbound register a higher quantity than exists on the load. This will be permitted because the system is set up to allow overdelivery.
 
-1. On your mobile device, sign in to warehouse 24 (the default password is "1").
+1. On your mobile device, sign in to warehouse 24 (in the standard demo data, sign in with **User ID** = _24_ and **Password** = _1_).
 
 1. Select the_Load item receiving_ menu item that you created for this scenario.
 
