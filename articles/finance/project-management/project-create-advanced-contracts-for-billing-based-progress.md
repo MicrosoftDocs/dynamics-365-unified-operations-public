@@ -85,23 +85,23 @@ Use this procedure to create a project contract for a Fixed-price project. You c
 
 Use the following steps to create a project and any subprojects associated with a contract:
 
-1.     Go to **Project management and accounting** > **Projects** > **Project contracts**, and on the **Project contracts** page, select **New**.
+1.    Go to **Project management and accounting** > **Projects** > **Project contracts**, and on the **Project contracts** page, select **New**.
 
-2.     On the **Create project** page, enter a project type of **Time and material**.
+2.    On the **Create project** page, enter a project type of **Time and material**.
 
-3.     Select a project group. A project group defines the posting information for projects assigned to the group.
+3.    Select a project group. A project group defines the posting information for projects assigned to the group.
 
-4.     Enter any additional project information for:
+4.    Enter any additional project information for the following:
 
-•  **Project contract ID** field is automatically filled with the project contract number from the **Project contracts** page. You can change the project contract to a different contract number.
+      **Project contract ID** field is automatically filled with the project contract number from the **Project contracts** page. You can change the project contract to a different contract number.
 
-•  **Project name**
+      **Project name**
 
-•  **Project group**
+      **Project group**
 
-•  **Project contract ID**: This associates a project contract with the project.
+      **Project contract ID**: This associates a project contract with the project.
 
-•  **Customer**
+      **Customer**
 
 5.     Select **OK** to create the project.
 
