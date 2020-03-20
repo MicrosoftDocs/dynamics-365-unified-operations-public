@@ -90,7 +90,7 @@ Once the worker completes the above steps, the system makes the following update
 | **Entity** | **Updates** | **Note** |
 | --- | --- | --- |
 | Load | Update the **Work created quantity** field on the load line to show the registered quantity. | The **Load status** remains _Shipped_ or _Open_ (if no shipment confirmation has been run for the load), or changes to _In process_, if at least one line of put-away work has started. |
-| Inventory transaction of purchase order, whose associated load quantities have been registered |<ul><li>The <b>Receipt</b> field is set to <i>Registered.</i></li><li>The <b>Location</b> field is updated with the receiving dock location code (the code is specified in the <b>Default receipt location</b> field for each warehouse).</li><li>The **License plate** field is updated with the license plate number entered or generated during the registration.</li><li>The **Load ID** field is updated with number of the load against which quantity has been registered. \* | \* The ability to link between the purchase order inventory transaction and the quantities registered against the load was introduced in version 10.0.9 as an optional feature called _Associate purchase order inventory transactions with load_. The feature is especially beneficial for operational flows when a single order of purchased goods is delivered as multiple loads, or when a load contains quantities for multiple purchase orders. |
+| Inventory transaction of purchase order, whose associated load quantities have been registered |<p>The following are updated:</p><ul><li>The <b>Receipt</b> field is set to <i>Registered.</i></li><li>The <b>Location</b> field is updated with the receiving dock location code (the code is specified in the <b>Default receipt location</b> field for each warehouse).</li><li>The **License plate** field is updated with the license plate number entered or generated during the registration.</li><li>The **Load ID** field is updated with number of the load against which quantity has been registered. \* | \* The ability to link between the purchase order inventory transaction and the quantities registered against the load was introduced in version 10.0.9 as an optional feature called _Associate purchase order inventory transactions with load_. The feature is especially beneficial for operational flows when a single order of purchased goods is delivered as multiple loads, or when a load contains quantities for multiple purchase orders. |
 | Warehouse put-away | Work is created based on a work template to instruct the worker to move the registered quantities from the receiving location to a regular storage location. | The choice of the storage location is controlled by the Put location directive. If no location directive has been defined, the put away location on the work is empty. |
 
 Note that warehouse workers can register the receipt of a purchase order with one or more associated loads without using the _Load item receiving_ process. The available options are as follows:
@@ -130,7 +130,7 @@ The following table explains the options available for the **Load over receipt**
 | **Value** | **Description** |
 | **Allow** | Allows workers to register the receipt of quantities greater than the remaining unregistered quantity for a selected load. This will only be permitted if the total registered quantity does not exceed the quantity of purchase order line associated with the load (adjusted for the overdelivery percentage).  |
 | **Block** | <p>Prevents workers from registering the receipt of quantities greater than the remaining unregistered quantity for a selected load (adjusted for the overdelivery percentage). If a worker attempts to do this, the system will show an error and the worker will be prevented from continuing until they register a quantity that is equal to or lower than the remaining unregistered load quantity.<p></p>By default, the value of the overdelivery percentage on a load line is copied from the associated purchase order line. The system will use this value to calculate the total quantity allowed to be registered for a load line when **Load over receipt** is set to _Block_. However, this value can be overwritten as needed for individual loads. This becomes relevant during receiving flows where some or all of the excess quantity representing the order line overdelivery percentage is distributed disproportionally across multiple loads. For example, imagine the following situation:</p><ul><li>There are multiple loads for one purchase order line.</li><li>The purchase order line has an overdelivery percent that is higher than 0.</li><li>Quantities against one or more loads have already been registered without taking overdelivery percentage into account.</li><li>Overdelivery quantity arrives on the last load.</li></ul><p> To allow the excess quantity for the last load to be registered using a mobile device, the warehouse supervisor must increase the overdelivery percentage for the load line in question from the default to the value that would allow the full overdelivery to be registered with the final load.</p> |
-| **Block for closed loads only** | Allows workers to over receive load line quantities for open loads but prevents it for loads with a status of _received_. |
+| **Block&nbsp;for&nbsp;closed loads only** | Allows workers to over receive load line quantities for open loads but prevents it for loads with a status of _received_. |
 
 > [!NOTE]
 > The default value for **Load over receipt** is _Allow_, which matches the standard behavior available before the _Over receipt of load quantities_ feature was introduced in version 10.0.11.
@@ -143,7 +143,7 @@ When the warehouse worker has completed the put-away work, the system records an
 
 | **Entity** | **Updates** | **Note** |
 | --- | --- | --- |
-| Load | <ul><li>The **Load status** changes to _In process._</li><li>The **Work status** changes to _100.00% of work completed._</li></ul> | The **Load status** changes to _In process_ when the worker starts the put-away task for at least one line of put-away work. |
+| Load | <p>The following are updated:</p><ul><li>The **Load status** changes to _In process._</li><li>The **Work status** changes to _100.00% of work completed._</li></ul> | The **Load status** changes to _In process_ when the worker starts the put-away task for at least one line of put-away work. |
 | Inventory transactions of work, whose associated quantities have been put away | The **Receipt,**  **Location** and other relevant fields are updated to reflect the movement from the receiving location to the storage location. | The **Receipt state** of the purchase order inventory transaction remains _Registered_. |
 | Warehouse put-away | **Work status** is changed to _Closed._ |   |
 
@@ -232,7 +232,7 @@ Once the user selects **OK** to confirm the product-receipt post, the system doe
 
 The following table summarizes the effects of the **Allow multiple product receipt per load** setting.
 
-| **Allow multiple product receipt per load** | **Load quantity** | **Load status** | **Note** |
+| **Allow&nbsp;multiple product&nbsp;receipts per load** | **Load quantity** | **Load status** | **Note** |
 | --- | --- | --- | --- |
 | Either disabled or unavailable (in versions before 10.0.10)  | No updates  | No updates (remains in _Open_, _Shipped_ or _In process_ status) | Because the product-receipt post is initiated from a purchase order, the updating logic isn't aware of the association between the registered quantities within its scope and the loads against which registration was recorded, and hence cannot select the load for the status update. |
 | Enabled | No updates  | <p>One of the following occurs:</p><ul><li>Change to <i>Received</i> (provided the <i>total received</i> and <i>purchased quantity</i> of the purchase order inventory transactions are greater than or equal to the quantity of the load with which they are associated).</li><li>Leave as <i>Open</i>, <i>Shipped</i>, or <i>In process</i> (if the previous conditions aren't met for all the lines in the load). |   |
@@ -343,7 +343,7 @@ In this exercise, you'll manually create a purchase order and an associated load
 
 When the load arrives at the warehouse receiving dock, a receiving clerk registers the load quantities on their mobile device. If you were the receiving clerk, you would proceed as follows using a mobile device:
 
-1. Use your mobile device to sign as user 24 (the default password is "1").
+1. Use your mobile device to sign in to warehouse 24 (the default password is "1").
 
 1. Select the_Load item receiving_ menu item that you created for this scenario.
 
@@ -460,7 +460,7 @@ When the loads arrive at the warehouse receiving dock, a receiving clerk registe
 
  If you were the receiving clerk, you would proceed as follows using a mobile device:
 
-1. On your mobile device, sign as user 24 (the default password is "1").
+1. On your mobile device, sign in to warehouse 24 (the default password is "1").
 
 1. Select the_Load item receiving_ menu item that you created for this scenario.
 
@@ -491,7 +491,7 @@ The receiving task for the first load is now completed. Two product receipt jour
 
 In this scenario the receiving clerk will inbound register a higher quantity than exists on the load. This will be permitted because the system is set up to allow overdelivery.
 
-1. On your mobile device, sign as user 24 (the default password is "1").
+1. On your mobile device, sign in to warehouse 24 (the default password is "1").
 
 1. Select the_Load item receiving_ menu item that you created for this scenario.
 
