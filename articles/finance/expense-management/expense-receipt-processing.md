@@ -27,7 +27,7 @@ ms.search.validFrom: 2019-11-20
 ms.dyn365.ops.version: 10.0.8 
 ---
 
-# Public Preview: Expense receipt processing
+# Expense receipt processing
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
