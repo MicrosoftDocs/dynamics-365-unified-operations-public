@@ -34,4 +34,4 @@ ms.dyn365.ops.version: AX 10.0.0
 
 This topic includes information and links to resources that can help you set up legal entities with a primary address in Finland.
 
-- [Sales tax payment report for Finland](emea-fin-sales-tax-payment-report-for-Finland.md)
+- [Sales tax payment report for Finland](emea-fin-sales-tax-payment-report-finland.md)
