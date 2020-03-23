@@ -44,9 +44,11 @@ For more information about Platform update 35, see [Additional resources](whats-
 
 ## Features included in this release
 
-- [Feature name](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/embed-actions-message-bar) - For more information, see [Messaging APIs - Action center, message bar, and message details](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/user-interface/messaging-api-center-bar-details).
-- [Feature name](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/user-productivity--saved-views--phase-2) - For more information, see [Saved views](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/saved-views) and [Task recorder resources](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/user-interface/task-recorder).
-- [Feature name](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/user-productivity--new-grid-control--phase-2) - For more information, see [Grid capabilities](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/grid-capabilities?toc=/dynamics365/finance/toc.json). 
+- [Feature name](URL to feature description in the Release plans) - For more information, see [title of content that contains details about the feature](URL to the content that contains details about the feature).
+- [Feature name](URL to feature description in the Release plans) - For more information, see [title of content that contains details about the feature](URL to the content that contains details about the feature).
+- [Feature name](URL to feature description in the Release plans) - For more information, see [title of content that contains details about the feature](URL to the content that contains details about the feature).
+- [Feature name](URL to feature description in the Release plans) - For more information, see [title of content that contains details about the feature](URL to the content that contains details about the feature).
+- [Feature name](URL to feature description in the Release plans) - For more information, see [title of content that contains details about the feature](URL to the content that contains details about the feature).
 
 
 ## Additional resources
