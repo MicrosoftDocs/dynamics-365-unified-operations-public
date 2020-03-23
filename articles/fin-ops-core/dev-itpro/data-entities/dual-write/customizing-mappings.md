@@ -1,7 +1,7 @@
 ---
 
-title: "Customizing entity and field mappings"
-description: Describes how to customize entity and field mappings.
+title: Customize entity and field mappings
+description: This topic explains how to customize entity and field mappings.
 author: sabinn-msft
 
 ms.technology: 
@@ -12,96 +12,95 @@ ms.author: v-douklo
 LocalizationGroup: 
 ---
 
-# Customizing entity and field mappings
+# Customize entity and field mappings
 
 [!include [banner](../../includes/banner.md)]
 
 [!include [banner](../../includes/preview-banner.md)]
 
-The out of the box (OOB) entity maps serve as a blueprint with predefined entity and field mappings to enable flow of data between two apps. However, every business is different and sometimes the default entity maps may not be enough. To address these needs, dual-write fully supports customizations by providing you with ways to modify and customize entity maps and field mappings.
+The out-of-box entity maps have predefined entity and field mappings that enable the flow of data between two apps. In this way, they serve as "blueprints." However, because every business is different, the default entity maps might sometimes not be enough. Therefore, dual-write fully supports customization by providing ways to change entity maps and field mappings.
 
-## How-to customize field mappings, add transforms, and enable filtering
+## Customize field mappings, add transforms, and enable filtering
 
-1. In your Finance and Operations app, select the **Entity mappings** tab, and then select the entity map that you want to customize. To make changes to entity mappings, they need to be stopped (not running) or else your changes won't be saved.
+1. In your Finance and Operations app, on the **Dual-write** page, on the **Entity mappings** tab, select the entity map to customize.
 
-2. On the **Entity mappings** tab, you can customize a field by picking a new or custom field from either the Finance and Operations app or Common Data Service.
+    > [!NOTE]
+    > Before you change entity mappings, they must be stopped (not running). Otherwise, your changes won't be saved.
 
-    <kbd>![Customizing a field](media/customize-a-field.png)
+2. On the **Entity mappings** tab, you can customize a field by selecting a new or custom field from either the Finance and Operations app or Common Data Service.
 
-3. In addition, you can customize the Sync direction (unidirectional or bidirectional) and add Transforms by selecting the Map type.
+    ![Customizing a field](media/customize-a-field.png)
 
-    <kbd>![Customizing the sync direction](media/customize-sync-direction.png)
+3. You can customize the synchronization direction (unidirectional or bidirectional) and add transforms by selecting the map type.
 
-4. You can also add a new field by selecting the **Add mapping** button and picking an existing or custom field from the list. 
+    ![Customizing the synchronization direction and adding transforms](media/customize-sync-direction.png)
 
-    The following figure shows an example of adding a new "Birthdate" field.
+    The following table describes the available synchronization directions.
 
-    <kbd>![Adding a new birthdate field](media/add-new-field.png)  
+    | Symbol | Description |
+    |---|---|
+    | ![Equal sign](media/equal-symbol.png) | Bidirectional field assignment |
+    | ![Greater than/less than sign](media/greater-less-symbol.png) | Bidirectional field assignment that uses transforms |
+    | ![Greater than sign](media/greater-than-symbol.png) | Unidirectional field assignment (left to right) |
+    | ![Less than sign](media/less-than-symbol.png) | Unidirectional field assignment (right to left) |
+    | ![Right arrow](media/right-arrow-symbol.png) | Unidirectional field assignment that uses transforms (left to right) |
+    | ![Left arrow](media/left-arrow-symbol.png) | Unidirectional field assignment that uses transforms (right to left) |
 
-5. Once you complete customizing the field mappings, select **Save** and follow the prompts to choose a publisher and version number.
+    The following table describes the available transform types.
 
-    <kbd>![Choose a publisher and version number](media/choose-publisher-version.png)
+    | Transform type | Description |
+    |---|---|
+    | Default | Default values are values that are applied to destination fields when no source field value is available. Use default values for fields that are required on the destination entity when you have no corresponding source field. |
+    | Value map | Value maps define how values that are present in one entity should be mapped to values in the other entity. |
 
-The following table provides a description of the available sync directions. 
+4. You can add a new field by selecting **Add mapping** and then selecting an existing or custom field in the list.
 
-|Symbol |Description |
-| --- | --- |
-|![Equal symbol](media/equal-symbol.png) |Bidirectional field assignment |
-|![Greater than less than symbol](media/greater-less-symbol.png) |Bidirectional field assignment with transforms |
-|![Greater than symbol](media/greater-than-symbol.png) |Unidirectional field assignment (left to right) |
-|![Less than symbol](media/less-than-symbol.png) |Unidirectional field assignment (right to left) |
-|![Right arrow symbol](media/right-arrow-symbol.png) |Unidirectional field assignment with transforms (left to right) |
-|![Left arrow symbol](media/left-arrow-symbol.png) |Unidirectional field assignment with transforms (right to left) |
-| | |
+    The following illustration shows an example where a new **birthdate** field is being added.
 
-The following table provides a description of the available transform types.
+    ![Adding a new birthdate field](media/add-new-field.png)
 
-|Transform type |Description |
-| --- | --- |
-|Default |Default values are values that are applied to destination field when no source field value is available. Use default values for fields that are required on the destination entity when you have no corresponding source field. |
-|Value map |Value maps define how values that are present in one entity should be mapped to values in the other entity. | 
-| | |
+5. When you've finished customizing the field mappings, select **Save**. Then follow the prompts to specify a publisher and a version number.
 
-### Filtering your data
+    ![Specifying a publisher and a version number](media/choose-publisher-version.png)
 
-With dual-write, you can filter data using OData filter expression for Common Data Service. For the Finance and Operations app, filtering is like range expressions used in the query range.
+### Filter your data
 
-1. Select the filter icon from the entity mapping screen.
+Dual-write lets you filter data by using Open Data Protocol (OData) filter expressions for Common Data Service. For the Finance and Operations app, filtering resembles range expressions that are used in the query range.
 
-    <kbd>![Select the filter icon](media/select-filter-icon.png)
+1. On the entity mapping page, select the filter button (funnel symbol).
 
-2. Specify your filters in the **Edit query** dialog box. In this example, specify a filter to return only "accountype equal to 3".
+    ![Filter button](media/select-filter-icon.png)
 
-    <kbd>![Specifying your filters](media/specify-filters.png)
+2. In the **Edit query** dialog box, specify your filters. In this example, the filter that is specified will return only accounts where the account type equals **3**.
 
-The following table contains some more examples of filter expressions.
+    ![Specifying filters](media/specify-filters.png)
 
-|Common Data Service |Dynamics 365 for Finance and Operations |
-| --- | --- |
-|Accounttype eq '3' |(accounttype == '3') |
-|numberofemployees gt 1000 and <br/>numberofemployees le 2000 |((numberofemployees > 1000) &&<br/> (numberofemployees <= 2000)) |
-| | |
+    The following table shows some examples of filter expressions.
 
-For more examples on using expressions in query ranges, see [Using Expressions in Query Ranges](https://docs.microsoft.com/dynamicsax-2012/developer/using-expressions-in-query-ranges).
+    | Common Data Service | Finance and Operations apps |
+    |---|---|
+    | Accounttype eq '3' | (accounttype == '3') |
+    | numberofemployees gt 1000 and<br>numberofemployees le 2000 | ((numberofemployees > 1000) &&<br>(numberofemployees <= 2000)) |
 
-## How-to add new entity maps
+    For more examples that show how to use expressions in query ranges, see [Using Expressions in Query Ranges](https://docs.microsoft.com/dynamicsax-2012/developer/using-expressions-in-query-ranges).
 
-While Microsoft continues to add new entities, we also provide you the ability to add standard or custom entity maps.
+## Add new entity maps
 
-Here is an example of how to add a new entity map called "Address books".
+Although Microsoft is continuing to add new entities, you can also add standard or custom entity maps.
 
-1. In the Finance and Operations app, select the **Add entity map** button.
+The following example shows how to add a new entity map that is named **Address books**.
 
-    <kbd>![Adding a new entity map](media/add-new-entity-map.png)
+1. In the Finance and Operations app, on the **Dual-write** page, select **Add entity map**.
 
-    >[!Note]
-    >When you [create a new solution](app-lifecycle-management.md#create-a-new-dual-write-solution-and-add-your-components-customized-entity-maps) with these modified entity maps, you'll need to specify the same publisher.
+    ![Adding a new entity map](media/add-new-entity-map.png)
 
-2. Confirm the entity maps you just modified and added. Make sure to enable and test them to ensure they're working as expected.
+    > [!NOTE]
+    > When you [create a new solution](app-lifecycle-management.md#create-a-new-dual-write-solution-and-add-your-components-customized-entity-maps) that uses these modified entity maps, you must specify the same publisher.
 
-    <kbd>![Confirm the entity maps](media/confirm-entity-maps.png)
+2. Confirm the entity maps that you just modified and added. Be sure to enable and test them, to ensure that they work as you expect.
+
+    ![Confirming the entity maps](media/confirm-entity-maps.png)
 
 ## Next steps
 
 [Error management and alert notifications](errors-and-alerts.md)
-
