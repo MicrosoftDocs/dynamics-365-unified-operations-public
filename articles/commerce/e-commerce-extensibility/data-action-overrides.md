@@ -60,7 +60,7 @@ The following command creates a new data action in the \src\actions directory.
 yarn msdyn365 add-data-action custom-get-address
 ```
 
-Next, you replace the default template code with your code. In the example below, the data action ID is the same as used in the ...\Msdyn365.Commerce.Online\node_modules\@msdyn365-commerce-modules\retail-actions\dist\lib\get-address.js data action **@msdyn365-commerce-modules/retail-actions/get-address**.
+Next, you replace the default template code with your code. In the example below, the data action ID is the same as used in the ...\Msdyn365.Commerce.Online\node_modules\@msdyn365-commerce-modules\retail-actions\dist\lib\get-address.js data action **\@msdyn365-commerce-modules/retail-actions/get-address**.
 
 ```typescript
 import { CacheType, IAction, IActionContext, IActionInput, ICommerceApiSettings } from '@msdyn365-commerce/core';
