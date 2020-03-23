@@ -100,8 +100,8 @@ for settlement period** inquiry.
     period**.
 
 2.  In the dialog box, set the **Settlement period**, **From date**, **Tax
-    currency**, and **Reporting currency** fields as described in the Generate a
-    sales tax payment and print the Finnish sales tax report section earlier in
+    currency**, and **Reporting currency** fields as described in the [Generate a
+    sales tax payment and print the Finnish sales tax report](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/FI-VAT-declaration/articles/finance/localizations/emea-fin-sales-tax-payment-report-for-Finland.md#generate-a-sales-tax-payment-and-print-the-finnish-sales-tax-report) section earlier in
     this topic.
 
 3.  In the **Sales tax payment version** field, select one of the following
@@ -120,8 +120,8 @@ for settlement period** inquiry.
 
 5.  In the **Finnish sales tax report** dialog box, set the **Tax currency**,
     **Reporting currency**, and **Currency rate on reporting date** fields as
-    described in the Generate a sales tax payment and print the Finnish sales
-    tax report section.
+    described in the [Generate a sales tax payment and print the Finnish sales
+    tax report](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/FI-VAT-declaration/articles/finance/localizations/emea-fin-sales-tax-payment-report-for-Finland.md#generate-a-sales-tax-payment-and-print-the-finnish-sales-tax-report) section.
 
 Example
 -------------------------------------------------
