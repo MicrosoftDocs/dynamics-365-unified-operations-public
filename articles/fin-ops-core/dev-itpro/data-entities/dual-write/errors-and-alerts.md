@@ -1,7 +1,7 @@
 ---
 
-title: "Error management and alert notifications"
-description: Describes how to use the error logs and alert notifications to aid you in troubleshooting.
+title: Error management and alert notifications
+description: This topic explains error logs and alert notifications that can help you troubleshoot issues.
 author: sabinn-msft
 
 ms.technology: 
@@ -18,39 +18,38 @@ LocalizationGroup:
 
 [!include [banner](../../includes/preview-banner.md)]
 
-A lot of investment has been made in making dual-write resilient to errors. However, in the event you run into an issue during or after enabling entity maps for Dual Write, you can select specific entity maps for a consolidated view of all the activities and errors for that map, including error logs. Our goal is to provide you a single view of activities on an entity map that will aid you during your troubleshooting.
+Microsoft has invested lots of time and effort into making dual-write resilient to errors. However, if you encounter an issue while or after you enable entity maps for dual-write, you can select specific entity maps to get a consolidated view of all the activities and errors for them. This consolidated view includes error logs. The goal is to help you during troubleshooting by providing a single view of the activities for an entity map.
 
 ## Consolidated error management
 
-The activity log provides a chronological list of events that a given entity map goes through from a Not Running state to Running. For example, the list can include Mappings created, Update field mappings, Run, and so on. Additionally, in cases of error you can download the logs to get the next level of details.
+The activity log provides a chronological list of events that a specific entity map goes through from the **Not Running** status to the **Running** status. For example, the list can include mappings that are created, updates of field mappings, and mappings that are run. Additionally, if errors occur, you can download the logs to get the next level of details.
 
-<kbd>![Viewing the activity log](media/activity-log.png)
+![Viewing the activity log](media/activity-log.png)
 
-In cases where you run into issues while copying pre-existing data between the two apps, the **Initial sync details** tab provides you with the count of errors. It also includes the ability to rerun the execution after fixing the underlying errors.
+If you encounter issues while you copy pre-existing data between the two apps, the **Initial sync details** tab provides a count of the errors. It also lets you rerun the execution after you fix the underlying errors.
 
-<kbd>![Fixing errors and rerunning](media/fix-error-rerun.png)
+![Fixing errors and rerunning](media/fix-error-rerun.png)
 
-You can further drill down to view the sync direction that errored out, which helps you narrow down the scope for troubleshooting.
+You can drill down further to view the synchronization direction where the error occurred. This information can help you narrow down the scope for troubleshooting.
 
-<kbd>![Viewing the sync direction error](media/sync-direction-error.png)
+![Viewing the synchronization direction error](media/sync-direction-error.png)
 
-Similarly, the **Catch-up errors** tab aids you in troubleshooting issues when you're resuming from a paused state.
+In a similar way, the **Catch-up errors** tab can help you troubleshoot issues when you resume from a paused state.
 
 ## Alert notifications
 
-In case of planned or unplanned maintenance, as an admin you can create one or more Alert settings. For example, if a certain error threshold is reached, say due to network errors, you can have the dual-write system notify you through email. The dual-write system can also take an action (such as Pause or Stop Dual Write) on your behalf.
+As an admin, you can create one or more alert settings to handle cases of planned or unplanned maintenance. For example, you can set up the dual-write system to notify you by email if a specific error threshold is reached because of, for example, network errors. The dual-write system can also take action on your behalf. For example, it can pause or stop dual-write.
 
-The following figure demonstrates a case where you want dual-write to be paused if 10 errors of type "Application error" happen in 15 minutes.
+The following illustration shows an example where dual-write will be paused if 10 errors of the **Application error** type occur within 15 minutes.
 
-<kbd>![Creating one or more alert settings](media/create-alert-settings.png)
+![Creating one or more alert settings](media/create-alert-settings.png)
 
-By selecting **Create alert settings**, you can create more alerts. You can also choose to send notifications to an individual or group and take an action on your behalf.
+By selecting **Create alert settings**, you can create more alerts. You can also select whether notifications should be sent to an individual or a group, and whether the dual-write system should take any action on your behalf.
 
-<kbd>![Creating alerts and sending notifications](media/create-alert-notification.png)
+![Creating alerts and sending notifications](media/create-alert-notification.png)
 
-This feature is particularly useful if there is unplanned maintenance. If one of the apps is unavailable and based on your defined thresholds, Dual Write goes into a Paused state, where all new requests are queued (not lost). Once you fix the underlying issue and both apps are running smoothly, you can resume from the paused state and the updates are read back from the queue and written to the recovered app. 
+This feature is especially useful if there is unplanned maintenance. For example, one of the apps becomes unavailable and, based on your defined thresholds, dual-write goes into a paused state where all new requests are queued (that is, they aren't lost). After you fix the underlying issue, and both apps are running smoothly, you can resume from the paused state. The updates will then be read back from the queue and written to the recovered app.
 
 ## Next steps
 
 [Application lifecycle management](app-lifecycle-management.md)
-
