@@ -40,7 +40,7 @@ The Dual currency feature for Dynamics 365 Finance was introduced in version 8.1
 
 In earlier versions, transactions were converted to the reporting currency in the following sequence: 
 
-Transaction total was calculated in the transaction currency > Transaction amount was converted to the accounting currency > Accounting currency amount was converted to the Reporting currency
+- Transaction total was calculated in the transaction currency > Transaction amount was converted to the accounting currency > Accounting currency amount was converted to the Reporting currency
 
 After enabling the dual currency feature, transactions were converted to the reporting currency in the following sequence:
 
@@ -54,8 +54,6 @@ As a consequence of support for dual currencies, two new features are available 
 - Tax settlement auto balance in reporting currency (Release in version 10.0.11)
 
 Dual currency support for sales taxes ensures that taxes are calculated accurately in the tax currency, and that the sales tax settlement balance is calculated accurately in both the accounting currency and reporting currency. 
-
-The new features are currently enabled for private preview customers. To enable the features, raise a service request through corresponding channels to Microsoft.
 
 ## Sales tax conversion
 
