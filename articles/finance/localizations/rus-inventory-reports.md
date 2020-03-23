@@ -54,14 +54,14 @@ inventory on the date when the inventory was previously closed.
     results of the previous inventory calculation on the specified inventory
     closing date and perform a full inventory calculation.
 
-    ![](media/d647bb55c55cb3b17339856debb1e05b.png)
+    ![](media/1_Calculation_on-hand_inventory_on_date.png)
 
 4.  When the inventory calculation is complete, on the **Closing and
     adjustment** page, for the corresponding inventory closure line, on the
     **Session** tab, the **Calculation on-hand inventory on date** option will
     be set to **Yes**.
 
-    ![](media/6e2e7a9e3c0a18931308e5c04d3197ab.png)
+    ![](media/2_Closing_and_adjustment.png)
 
 If you try to run the inventory calculation again to close an inventory that has
 the **Calculation on-hand inventory on date** option set to **Yes**, and the
@@ -76,7 +76,7 @@ canceled.
 1.  Go to **Inventory management \> Inquires and reports \> Transactions \>
     Inventory balance turnover**.
 
-    ![](media/79884dd542ff0730051415c05c333ced.png)
+    ![](media/3_Inventory_balance_turnover.png)
 
 2.  On the **Inventory balance turnover** dialog box, on the **General** tab, in
     the **Start date** and **To date** fields, specify the period of report.
@@ -90,11 +90,11 @@ canceled.
 
         >   **Note:** The following documents are not considered internal turnovers
         >   because the item from the warehouse can be written off:
-
+        >
         >   -   Quarantine orders
-
+        >
         >   -   Transfer order scarp
-
+        >
         >   -   Quality orders
 
     -   External turnovers that *do* change the total balances of the company.
@@ -153,7 +153,7 @@ canceled.
 
 8.  On the **Dimensions** tab, select dimensions to include in the report.
 
-    ![](media/d57b3b940689667100b8bf9de03ecb18.png)
+    ![](media/4_Inventory_balance_turnover.png)
 
     The following dimensions are available:
 
@@ -205,7 +205,7 @@ canceled.
 
 10. Click **OK** to generate a report.
 
-    ![](media/e7180ba0b39b0f27f209f2fa03ee3600.png)
+    ![](media/5_Inventory_balance_turnover.png)
 
 *Notes.*
 
@@ -271,7 +271,7 @@ date** and **Record references cleanup** periodic operations are used.
 1.  Go to **Inventory management \> Periodic tasks \> Clean up \> On-hand
     inventory calculation on date**.
 
-    ![](media/cbf88a1849b82ed6e9a2f624370a0890.png)
+    ![](media/6_Cleanup_on-hand_inventory_calculation_on_date.png)
 
 2.  On the **Parameters** FastTab, in the **Created until** field, specify the
     date. The temporary data with a creation date before the specified date will
@@ -283,7 +283,7 @@ date** and **Record references cleanup** periodic operations are used.
 4.  Go to **Organization administration \> Periodic \> Record references
     cleanup**.
 
-    ![](media/81beb1912d554847fb85a0de733a72f1.png)
+    ![](media/7_Record_references_cleanup.png)
 
 5.  On the **Parameters** FastTab, in the **Created until** field, specify the
     date. All temporary data with creation date before the specified date will
@@ -299,7 +299,7 @@ This report displays receipts and issues for all items.
 1.  Go to **Inventory management \> Inquires and reports \> Transactional
     reports \> Pay-sheet of receipts and reports expenditure**.
 
-    ![](media/d6f25c019a1e81185f76376c7b3bbf60.png)
+    ![](media/8_Pay-sheet_of_receipts_and_expenditure.png)
 
 2.  On the **Pay-sheet of receipts and expenditure** dialog box, on the
     **Parameters** FastTab, specify the value of **Exclude storno** parameter:
@@ -320,7 +320,7 @@ This report displays receipts and issues for all items.
 
 4.  Select **OK** to generate a report.
 
-    ![](media/b277be7ff661c79505bb628d66ef3ea2.png)
+    ![](media/9_Pay-sheet_of_receipts_and_expenditure.png)
 
 Adjustments report
 ------------------
@@ -330,7 +330,7 @@ recalculation or closing. To do this, go to **Inventory management \> Inquires
 and reports \> Transactional reports \> Adjustments**. Specify the parameters,
 and then select **OK** to generate a report.
 
-![](media/7d6a69581a866cffd9a45ac4dc646250.png)
+![](media/10_Adjustments.png)
 
 Adjustments in currency report
 ------------------------------
