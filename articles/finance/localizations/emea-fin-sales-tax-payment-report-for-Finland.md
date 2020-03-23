@@ -1,6 +1,6 @@
----
-title: Sales tax report for Finland
----
+
+Sales tax report for Finland
+==================================================
 
 This topic explains how to set up and generate the sales tax report for legal
 entities in Finland.
@@ -9,7 +9,7 @@ For general information about how to set up the value-added tax (VAT) statement,
 see *VAT reporting for Europe*.
 
 Set up the report layout for sales tax authorities
-==================================================
+-------------------------------------------------
 
 To generate the sales tax report in the correct format for the appropriate tax
 authority, you must set up the report layout for the sales tax authorities. On
@@ -18,9 +18,8 @@ used in the sales tax codes for the sales tax settlement period. Then, in the
 **Report layout** field, select **Finnish report layout**.
 
 Set up sales tax reporting codes for VAT reporting
-==================================================
-
-Here is an example of sales tax reporting codes.
+-------------------------------------------------
+Set up sales tax reporting codes by following the instructions in Set up sales tax reporting codes. The following table provides an example of sales tax reporting codes for Finland.
 
 | **Sales tax reporting code** | **Description**                                                                                                                                                                                                                           |
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -50,14 +49,13 @@ Here is an example of sales tax reporting codes.
 | 335                          | Error in the interpretation of tax laws.                                                                                                                                                                                                  |
 
 Set up sales tax codes
-======================
+-------------------------------------------------
 
-Set up sales tax codes according to the instructions in the *Sales tax codes for
-VAT reporting* and Sales tax overview topics.
+Set up sales tax codes by following the instructions in *Sales tax codes for
+VAT reporting* and Sales tax overview.
 
 Generate a sales tax payment and print the Finnish sales tax report
-===================================================================
-
+-------------------------------------------------
 1.  Go to **Tax \> Declarations \> Sales tax \> Settle and post sales tax**.
 
 2.  In the **Report sales tax for settlement period** dialog box, set the
@@ -83,7 +81,7 @@ Generate a sales tax payment and print the Finnish sales tax report
 5.  Select **OK** to generate sales tax payment report.
 
 Print the Finnish sales tax report from the sales tax payment
-=============================================================
+-------------------------------------------------
 
 1.  Go to **Tax \> Inquiries and reports \> Sales tax payments** to open the
     **Sales tax payment** page.
@@ -94,8 +92,7 @@ Print the Finnish sales tax report from the sales tax payment
     then select **OK**.
 
 Report sales tax for a settlement period
-========================================
-
+-------------------------------------------------
 You can generate the Finnish sales tax report by using the **Report sales tax
 for settlement period** inquiry.
 
@@ -119,16 +116,15 @@ for settlement period** inquiry.
 -   **Total list** – Generate a report for all sales transactions for the
     period, including the original and all corrections.
 
-1.  Select **OK**.
+4.  Select **OK**.
 
-2.  In the **Finnish sales tax report** dialog box, set the **Tax currency**,
+5.  In the **Finnish sales tax report** dialog box, set the **Tax currency**,
     **Reporting currency**, and **Currency rate on reporting date** fields as
     described in the Generate a sales tax payment and print the Finnish sales
     tax report section.
 
 Example
-=======
-
+-------------------------------------------------
 The following example shows how you can set up sales tax codes and sales tax
 reporting codes, post transactions, and generate the Finnish sales tax report.
 
@@ -181,7 +177,7 @@ codes.
 >   is used in the sales tax payment process, you must set a relevant sales tax
 >   reporting code in one or more fields on the **Report setup** tab.
 
-1.  Post the following transactions. For example, for Customer invoices go to
+3.  Post the following transactions. For example, for Customer invoices go to
     **Accounts receivable \> Invoices \> All free text invoices**, for Vendor
     invoices go to **Accounts payable \> Invoices \> Invoice journal.**
 
@@ -194,15 +190,13 @@ codes.
 | February 1, 2020 | Customer invoice (export)       | 100            | 0              | FIThird            | 309                                    | Not applicable                           |
 | February 1, 2020 | Vendor invoice (reverse charge) | 100            | 24             | FIRC24             | 320                                    | 318 – Tax payable 307 – Tax deduction    |
 
-2.  Go to **Tax \> Declarations \> Sales tax \> Settle and post sales tax**. In
+4.  Go to **Tax \> Declarations \> Sales tax \> Settle and post sales tax**. In
     the **Report sales tax for settlement period** dialog box in the **Sales tax
     payment version** field, select **Original**.
 
-3.  Print the report and review the data.
+5.  Print the report and review the data.
 
-![](media/02aae0dbda7f728d4460f13ac1f90c1b.png)
-
->   A screenshot of a cell phone Description automatically generated
+![](media/1_Sales_tax_reporting.png)
 
 1.  Post the new transaction. For example, go to **Accounts receivable \>
     Invoices \> All free text invoices.**
