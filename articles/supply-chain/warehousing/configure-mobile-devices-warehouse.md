@@ -5,7 +5,7 @@ title: Set up mobile devices for warehouse work
 description: This topic describes how to configure the menu items that warehouse workers use to perform work on a mobile device.
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 04/18/2019
+ms.date: 03/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -100,11 +100,11 @@ You can set up a menu item that creates work for another worker after an initial
 </tr>
 <tr>
 <td>License plate receiving</td>
-<td>Receive an inbound load by using the license plate ID.</td>
+<td>Receive an inbound advance ship notice (ASN) by using the license plate ID.</td>
 </tr>
 <tr>
 <td>License plate receiving and put away</td>
-<td>Receive and put away an inbound load by using the license plate ID.</td>
+<td>Receive and put away an inbound advance ship notice (ASN) by using the license plate ID.</td>
 </tr>
 <tr>
 <td>Load item receiving</td>
@@ -124,7 +124,7 @@ You can set up a menu item that creates work for another worker after an initial
 <td>Register the receipt of a quantity of an item by registering the RMA number, and put the items away. The same worker performs both actions.</td>
 </tr>
 <tr>
-<td rowspan="4">Transfer order</td>
+<td rowspan="6">Transfer order</td>
 <td>Transfer order item receiving</td>
 <td>Register the receipt of a quantity of an item, and create put-away work for another worker.
 
@@ -143,6 +143,14 @@ You can set up a menu item that creates work for another worker after an initial
 <tr>
 <td>Transfer order line receiving and put away</td>
 <td>Register the receipt of a quantity of an item, and put the items away. The same worker performs both actions.</td>
+</tr>
+<tr>
+<td>License plate receiving</td>
+<td>Receive an inbound advance ship notice (ASN) by using the license plate ID.</td>
+</tr>
+<tr>
+<td>License plate receiving and put away</td>
+<td>Receive and put away an inbound advance ship notice (ASN) by using the license plate ID.</td>
 </tr>
 <tr>
 <td rowspan="4">Production</td>
