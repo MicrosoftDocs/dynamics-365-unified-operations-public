@@ -6,7 +6,7 @@ This topic explains how to set up and generate the sales tax report for legal
 entities in Finland.
 
 For general information about how to set up the value-added tax (VAT) statement,
-see *VAT reporting for Europe*.
+see [VAT reporting for Europe](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/FI-VAT-declaration/articles/finance/localizations/emea-vat-reporting.md).
 
 Set up the report layout for sales tax authorities
 -------------------------------------------------
@@ -19,7 +19,7 @@ used in the sales tax codes for the sales tax settlement period. Then, in the
 
 Set up sales tax reporting codes for VAT reporting
 -------------------------------------------------
-Set up sales tax reporting codes by following the instructions in Set up sales tax reporting codes. The following table provides an example of sales tax reporting codes for Finland.
+Set up sales tax reporting codes by following the instructions in [Set up sales tax reporting codes](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/FI-VAT-declaration/articles/finance/general-ledger/tasks/set-up-sales-tax-reporting-codes.md). The following table provides an example of sales tax reporting codes for Finland.
 
 | **Sales tax reporting code** | **Description**                                                                                                                                                                                                                           |
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -51,8 +51,8 @@ Set up sales tax reporting codes by following the instructions in Set up sales t
 Set up sales tax codes
 -------------------------------------------------
 
-Set up sales tax codes by following the instructions in *Sales tax codes for
-VAT reporting* and Sales tax overview.
+Set up sales tax codes by following the instructions in [Sales tax codes for
+VAT reporting](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/FI-VAT-declaration/articles/finance/localizations/emea-vat-reporting.md#sales-tax-codes-for-vat-reporting) and [Sales tax overview](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/FI-VAT-declaration/articles/finance/general-ledger/indirect-taxes-overview.md).
 
 Generate a sales tax payment and print the Finnish sales tax report
 -------------------------------------------------
@@ -66,7 +66,7 @@ Generate a sales tax payment and print the Finnish sales tax report
 | Settlement period         | Select the applicable reporting period.                                                                                                                                                                                                                                                                       |
 | From date                 | Enter the first date of the sales tax settlement period to calculate sales tax for. This value corresponds to the date in the **From** field on the **Sales tax settlement periods** page.                                                                                                                    |
 | Transaction date          | Enter the date when the sales tax report is calculated. The default value is the current date. The sales tax payment is calculated for all transactions that were posted during the settlement period.                                                                                                        |
-| Sales tax payment version | Select the type of sales tax settlement. Select **Original** if this tax settlement is the first sales tax settlement for the period. Select **Latest corrections** if the **Original** sales tax settlement for the period has been already generated. For more information, see Create a sales tax payment. |
+| Sales tax payment version | Select the type of sales tax settlement. Select **Original** if this tax settlement is the first sales tax settlement for the period. Select **Latest corrections** if the **Original** sales tax settlement for the period has been already generated. For more information, see [Create a sales tax payment](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/FI-VAT-declaration/articles/finance/general-ledger/tasks/create-sales-tax-payment.md). |
 
 3.  Select **OK**.
 
@@ -226,7 +226,7 @@ codes.
 Additional information
 -------------------------------------------------
 
-If you set up reverse charges according to Reverse charge VAT, you can
+If you set up reverse charges according to [Reverse charge VAT](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/FI-VAT-declaration/articles/finance/localizations/emea-reverse-charge.md), you can
 get data about the reporting codes on the **Sales tax payment by code** report.
 
 1.  Go to **Tax \> Inquiries and reports \> Sales tax reports \> Sales tax
