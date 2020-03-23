@@ -1,24 +1,47 @@
+---
+# required metadata
 
-Sales tax report for Finland
-==================================================
+title: Sales tax report for Finland
+description: This topic provides information about how to set up and generate the sales tax report for legal entities in Finland. 
+author: LizaGolub
+ms.author: v-lurodi
+ms.date: 03/23/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
 
-This topic explains how to set up and generate the sales tax report for legal
-entities in Finland.
+# optional metadata
 
-For general information about how to set up the value-added tax (VAT) statement,
-see [VAT reporting for Europe](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/FI-VAT-declaration/articles/finance/localizations/emea-vat-reporting.md).
+manager: 
+# ms.search.form: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kfend
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: Norway
+# ms.search.industry: 
+ms.search.validFrom: 
+ms.dyn365.ops.version: 
 
-Set up the report layout for sales tax authorities
--------------------------------------------------
+---
 
-To generate the sales tax report in the correct format for the appropriate tax
-authority, you must set up the report layout for the sales tax authorities. On
-the **Sales tax authorities** page, select the sales tax authority that will be
-used in the sales tax codes for the sales tax settlement period. Then, in the
-**Report layout** field, select **Finnish report layout**.
+# Sales tax report for Finland
 
-Set up sales tax reporting codes for VAT reporting
--------------------------------------------------
+[!include [banner](../includes/banner.md)]
+
+This topic explains how to set up and generate the sales tax report for legal entities in Finland.
+
+For general information about how to set up the value-added tax (VAT) statement, see [VAT reporting for Europe](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/FI-VAT-declaration/articles/finance/localizations/emea-vat-reporting.md).
+
+## Set up the report layout for sales tax authorities
+
+To generate the sales tax report in the correct format for the appropriate tax authority, you must set up the report layout for the sales tax authorities. On the **Sales tax authorities** page, select the sales tax authority that will be used in the sales tax codes for the sales tax settlement period. Then, in the **Report layout** field, select **Finnish report layout**.
+
+## Set up sales tax reporting codes for VAT reporting
+
 Set up sales tax reporting codes by following the instructions in [Set up sales tax reporting codes](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/FI-VAT-declaration/articles/finance/general-ledger/tasks/set-up-sales-tax-reporting-codes.md). The following table provides an example of sales tax reporting codes for Finland.
 
 | **Sales tax reporting code** | **Description**                                                                                                                                                                                                                           |
@@ -48,18 +71,14 @@ Set up sales tax reporting codes by following the instructions in [Set up sales 
 | 334                          | Change in legal practice.                                                                                                                                                                                                                 |
 | 335                          | Error in the interpretation of tax laws.                                                                                                                                                                                                  |
 
-Set up sales tax codes
--------------------------------------------------
+## Set up sales tax codes
 
-Set up sales tax codes by following the instructions in [Sales tax codes for
-VAT reporting](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/FI-VAT-declaration/articles/finance/localizations/emea-vat-reporting.md#sales-tax-codes-for-vat-reporting) and [Sales tax overview](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/FI-VAT-declaration/articles/finance/general-ledger/indirect-taxes-overview.md).
+Set up sales tax codes by following the instructions in [Sales tax codes for VAT reporting](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/FI-VAT-declaration/articles/finance/localizations/emea-vat-reporting.md#sales-tax-codes-for-vat-reporting) and [Sales tax overview](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/FI-VAT-declaration/articles/finance/general-ledger/indirect-taxes-overview.md).
 
-Generate a sales tax payment and print the Finnish sales tax report
--------------------------------------------------
-1.  Go to **Tax \> Declarations \> Sales tax \> Settle and post sales tax**.
+## Generate a sales tax payment and print the Finnish sales tax report
 
-2.  In the **Report sales tax for settlement period** dialog box, set the
-    following fields.
+1. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Settle and post sales tax**.
+2. In the **Report sales tax for settlement period** dialog box, set the following fields.
 
 | **Field**                 | **Description**                                                                                                                                                                                                                                                                                               |
 |---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -68,9 +87,8 @@ Generate a sales tax payment and print the Finnish sales tax report
 | Transaction date          | Enter the date when the sales tax report is calculated. The default value is the current date. The sales tax payment is calculated for all transactions that were posted during the settlement period.                                                                                                        |
 | Sales tax payment version | Select the type of sales tax settlement. Select **Original** if this tax settlement is the first sales tax settlement for the period. Select **Latest corrections** if the **Original** sales tax settlement for the period has been already generated. For more information, see [Create a sales tax payment](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/FI-VAT-declaration/articles/finance/general-ledger/tasks/create-sales-tax-payment.md). |
 
-3.  Select **OK**.
-
-4.  In the **Finnish sales tax report** dialog box, set the following fields.
+3. Select **OK**.
+4. In the **Finnish sales tax report** dialog box, set the following fields.
 
 | **Field**                       | **Description**                                                                                                                                                                                                                                                       |
 |---------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -78,58 +96,34 @@ Generate a sales tax payment and print the Finnish sales tax report
 | Reporting currency              | Select the foreign currency that the report should be generated in.                                                                                                                                                                                                   |
 | Currency rate on reporting date | Set the option to **Yes** to indicate that the currency rate on the reporting date should be used for all transactions on the report.                                                                                                                                 |
 
-5.  Select **OK** to generate sales tax payment report.
+5. Select **OK** to generate sales tax payment report.
 
-Print the Finnish sales tax report from the sales tax payment
--------------------------------------------------
+## Print the Finnish sales tax report from the sales tax payment
 
-1.  Go to **Tax \> Inquiries and reports \> Sales tax payments** to open the
-    **Sales tax payment** page.
+1. Go to **Tax \> Inquiries and reports \> Sales tax payments** to open the **Sales tax payment** page.
+2. Select the record to print, and then select **Print report**.
+3. In the dialog box, set the fields as described in the previous section, and then select **OK**.
 
-2.  Select the record to print, and then select **Print report**.
+## Report sales tax for a settlement period
 
-3.  In the dialog box, set the fields as described in the previous section, and
-    then select **OK**.
+You can generate the Finnish sales tax report by using the **Report sales tax for settlement period** inquiry.
 
-Report sales tax for a settlement period
--------------------------------------------------
-You can generate the Finnish sales tax report by using the **Report sales tax
-for settlement period** inquiry.
+1. Go to **Tax \> Declarations \> Sales tax \> Report sales tax for settlement period**.
+2. In the dialog box, set the **Settlement period**, **From date**, **Tax currency**, and **Reporting currency** fields as described in the [Generate a sales tax payment and print the Finnish sales tax report](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/FI-VAT-declaration/articles/finance/localizations/emea-fin-sales-tax-payment-report-for-Finland.md#generate-a-sales-tax-payment-and-print-the-finnish-sales-tax-report) section earlier in this topic.
+3. In the **Sales tax payment version** field, select one of the following values:
 
-1.  Go to **Tax \> Declarations \> Sales tax \> Report sales tax for settlement
-    period**.
+   - **Original** – Generate a report for sales tax transactions of the first posted settlement calculation for the period.
+   - **Corrections** – Generate a report for sales tax transactions of the subsequent settlement calculations for the period.
+   - **Total list** – Generate a report for all sales transactions for the period, including the original and all corrections.
 
-2.  In the dialog box, set the **Settlement period**, **From date**, **Tax
-    currency**, and **Reporting currency** fields as described in the [Generate a
-    sales tax payment and print the Finnish sales tax report](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/FI-VAT-declaration/articles/finance/localizations/emea-fin-sales-tax-payment-report-for-Finland.md#generate-a-sales-tax-payment-and-print-the-finnish-sales-tax-report) section earlier in
-    this topic.
+4. Select **OK**.
+5. In the **Finnish sales tax report** dialog box, set the **Tax currency**, **Reporting currency**, and **Currency rate on reporting date** fields as described in the [Generate a sales tax payment and print the Finnish sales tax report](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/FI-VAT-declaration/articles/finance/localizations/emea-fin-sales-tax-payment-report-for-Finland.md#generate-a-sales-tax-payment-and-print-the-finnish-sales-tax-report) section.
 
-3.  In the **Sales tax payment version** field, select one of the following
-    values:
+## Example
 
--   **Original** – Generate a report for sales tax transactions of the first
-    posted settlement calculation for the period.
+The following example shows how you can set up sales tax codes and sales tax reporting codes, post transactions, and generate the Finnish sales tax report.
 
--   **Corrections** – Generate a report for sales tax transactions of the
-    subsequent settlement calculations for the period.
-
--   **Total list** – Generate a report for all sales transactions for the
-    period, including the original and all corrections.
-
-4.  Select **OK**.
-
-5.  In the **Finnish sales tax report** dialog box, set the **Tax currency**,
-    **Reporting currency**, and **Currency rate on reporting date** fields as
-    described in the [Generate a sales tax payment and print the Finnish sales
-    tax report](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/FI-VAT-declaration/articles/finance/localizations/emea-fin-sales-tax-payment-report-for-Finland.md#generate-a-sales-tax-payment-and-print-the-finnish-sales-tax-report) section.
-
-Example
--------------------------------------------------
-The following example shows how you can set up sales tax codes and sales tax
-reporting codes, post transactions, and generate the Finnish sales tax report.
-
-1.  Go to **Tax \> Indirect taxes \> Sales tax \> Sales tax codes**, and set up
-    the following sales tax codes.
+1.  Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**, and set up the following sales tax codes.
 
 | **Sales tax code** | **Percentage** | **Description**                                                                        |
 |--------------------|----------------|----------------------------------------------------------------------------------------|
@@ -148,11 +142,9 @@ reporting codes, post transactions, and generate the Finnish sales tax report.
 | FIEUS              | 0              | EU sales where the **Exempt** option is set to **Yes**.                                |
 | FIThird            | 0              | Export sales where the **Exempt** option is set to **Yes**.                            |
 
-2.  On the **Sales tax codes** page, on the **Report setup** FastTab, assign
-    reporting codes to sales tax codes.
+2. On the **Sales tax codes** page, on the **Report setup** FastTab, assign reporting codes to sales tax codes.
 
-The following table shows how to assign sales tax reporting codes to sales tax
-codes.
+The following table shows how to assign sales tax reporting codes to sales tax codes.
 
 | **Sales tax code** | **Taxable sales** | **Tax-free sale** | **Sales tax payable** | **Taxable purchases** | **Sales tax receivable** | **Taxable import** | **Use tax** | **Offset use tax** |
 |--------------------|-------------------|-------------------|-----------------------|-----------------------|--------------------------|--------------------|-------------|--------------------|
@@ -171,15 +163,10 @@ codes.
 | FIEUS              |                   | 311               |                       |                       |                          |                    |             |                    |
 | FIThird            |                   | 309               |                       |                       |                          |                    |             |                    |
 
->   **Note:** The preceding configuration is just an example and depends on the
->   structure of the sales tax codes that are used. If you want values to be
->   calculated and transferred to the sales tax report, for each tax code that
->   is used in the sales tax payment process, you must set a relevant sales tax
->   reporting code in one or more fields on the **Report setup** tab.
+> [!NOTE]
+> The preceding configuration is just an example and depends on the structure of the sales tax codes that are used. If you want values to be calculated and transferred to the sales tax report, for each tax code that is used in the sales tax payment process, you must set a relevant sales tax reporting code in one or more fields on the **Report setup** tab.
 
-3.  Post the following transactions. For example, for Customer invoices go to
-    **Accounts receivable \> Invoices \> All free text invoices**, for Vendor
-    invoices go to **Accounts payable \> Invoices \> Invoice journal.**
+3. Post the following transactions. For example, for Customer invoices go to **Accounts receivable** \> **Invoices** \> **All free text invoices**, for Vendor invoices go to **Accounts payable** \> **Invoices** \> **Invoice journal**.
 
 | **Date**         | **Transaction type**            | **Amount net** | **VAT amount** | **Sales tax code** | **Expected tax base – Reporting code** | **Expected tax amount – Reporting code** |
 |------------------|---------------------------------|----------------|----------------|--------------------|----------------------------------------|------------------------------------------|
@@ -190,61 +177,39 @@ codes.
 | February 1, 2020 | Customer invoice (export)       | 100            | 0              | FIThird            | 309                                    | Not applicable                           |
 | February 1, 2020 | Vendor invoice (reverse charge) | 100            | 24             | FIRC24             | 320                                    | 318 – Tax payable 307 – Tax deduction    |
 
-4.  Go to **Tax \> Declarations \> Sales tax \> Settle and post sales tax**. In
-    the **Report sales tax for settlement period** dialog box in the **Sales tax
-    payment version** field, select **Original**.
-
-5.  Print the report and review the data.
+4. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Settle and post sales tax**. In the **Report sales tax for settlement period** dialog box in the **Sales tax payment version** field, select **Original**.
+5. Print the report and review the data.
 
 ![](media/1_Sales_tax_reporting.png)
 
-6.  Post the new transaction. For example, go to **Accounts receivable \>
-    Invoices \> All free text invoices.**
+6. Post the new transaction. For example, go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
 
 | **Date**         | **Transaction type**        | **Amount net** | **VAT amount** | **Sales tax code** | **Expected tax base – Reporting code** | **Expected tax amount – Reporting code** |
 |------------------|-----------------------------|----------------|----------------|--------------------|----------------------------------------|------------------------------------------|
 | February 1, 2020 | Customer invoice (domestic) | 100            | 10             | FI10               | Not applicable                         | 303                                      |
 
-7.  Go to **Tax \> Declarations \> Sales tax \> Settle and post sales tax**. In
-    the **Report sales tax for settlement period** dialog box in the **Sales tax
-    payment version** field, select **Latest corrections**.
-
-8.  Go to **Tax \> Declarations \> Sales tax \> Report sales tax for settlement
-    period**. In the **Report sales tax for settlement period** dialog box in
-    the **Sales tax payment version** field, select **Corrections**. The
-    following illustration shows the result.
+7. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Settle and post sales tax**. In the **Report sales tax for settlement period** dialog box in the **Sales tax payment version** field, select **Latest corrections**.
+8. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**. In the **Report sales tax for settlement period** dialog box in the **Sales tax payment version** field, select **Corrections**. The following illustration shows the result.
 
 ![](media/2_Sales_tax_reporting.png)
 
-9.  Go to **Tax \> Declarations \> Sales tax \> Report sales tax for settlement
-    period**. In the **Report sales tax for settlement period** dialog box in
-    the **Sales tax payment version** field, select **Total list**. The
-    following illustration shows the result.
+9. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**. In the **Report sales tax for settlement period** dialog box in the **Sales tax payment version** field, select **Total list**. The following illustration shows the result.
 
 ![](media/3_Sales_tax_reporting.png)
 
-Additional information
--------------------------------------------------
+## Additional information
 
-If you set up reverse charges according to [Reverse charge VAT](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/FI-VAT-declaration/articles/finance/localizations/emea-reverse-charge.md), you can
-get data about the reporting codes on the **Sales tax payment by code** report.
+If you set up reverse charges according to [Reverse charge VAT](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/FI-VAT-declaration/articles/finance/localizations/emea-reverse-charge.md), you can get data about the reporting codes on the **Sales tax payment by code** report.
 
-1.  Go to **Tax \> Inquiries and reports \> Sales tax reports \> Sales tax
-    payment by code**.
-
-2.  In the dialog box, set the **Settlement period** and **From date** fields.
-
-3.  Select **OK**, and review the report result.
+1. Go to **Tax** \> **Inquiries and reports** \> **Sales tax reports** \> **Sales tax payment by code**.
+2. In the dialog box, set the **Settlement period** and **From date** fields.
+3. Select **OK**, and review the report result.
 
 ![](media/4_Reverse_charge.png)
 
 
-Report a VAT declaration to the tax authority
--------------------------------------------------
+## Report a VAT declaration to the tax authority
 
-After you've generated the Finnish sales tax report, use the data on it to fill
-in the self-assessed tax return for the Finnish Tax Administration in the
-official format. For example, the following illustration shows what the Finnish
-self-assessed tax return has looked like since 2019.
+After you've generated the Finnish sales tax report, use the data on it to fill in the self-assessed tax return for the Finnish Tax Administration in the official format. For example, the following illustration shows what the Finnish self-assessed tax return has looked like since 2019.
 
 ![](media/5_Finnish_VAT_declaration.png)
