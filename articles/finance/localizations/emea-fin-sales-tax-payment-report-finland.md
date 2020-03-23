@@ -117,7 +117,7 @@ You can generate the Finnish sales tax report by using the **Report sales tax fo
    - **Total list** – Generate a report for all sales transactions for the period, including the original and all corrections.
 
 4. Select **OK**.
-5. In the **Finnish sales tax report** dialog box, set the **Tax currency**, **Reporting currency**, and **Currency rate on reporting date** fields as described in the section, [Generate a sales tax payment and print the Finnish sales tax report](generate-print-finnish) earlier in this topic.
+5. In the **Finnish sales tax report** dialog box, set the **Tax currency**, **Reporting currency**, and **Currency rate on reporting date** fields as described in the section, [Generate a sales tax payment and print the Finnish sales tax report](#generate-print-finnish) earlier in this topic.
 
 ## Example
 
