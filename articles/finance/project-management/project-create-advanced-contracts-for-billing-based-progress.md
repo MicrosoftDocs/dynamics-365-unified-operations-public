@@ -2,10 +2,10 @@
 # required metadata
 
 title: Create advanced contracts for billing based on progress
-description: This topic is about creating a project and project contract, to create invoices based on percentage of work completed.
+description: This topic provides information about creating a project and project contract, so that you can create invoices for a customer based on a percentage completed work.
 author: RadhikaRS
 manager: AnnBe
-ms.date: 03/17/2020
+ms.date: 03/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -37,29 +37,27 @@ This topic provides information about creating a project and project contract, s
 
 Use the procedures in this topic to set up a contract, an associated project, and the billing rules to calculate invoice amounts for the budget categories of work that you set up for the project.
 
-After you have created the contract and the project, you can set up the details of the project. For example, you can define the activities of the project and assign workers to the project.
+After you have created the contract and the project, you can set up the details of the project. For example, you can define activities and assign workers to the project.
 
-**Example**
+## Example
 
-Your organization is a software development firm. You agree to develop a payroll accounting package for a customer for a total fee of $20,000 USD. Your organization agrees to send an invoice to the customer as you complete specified percentages of work on the project. You set up project categories for the work to use in the billing process and billing rules that automatically calculate the invoice amounts for the percentage of work that is completed for each category. The categories for the project include:
+Your organization is a software development firm. You agree to develop a payroll accounting package for a customer for a total fee of $20,000 USD. Your organization agrees to send an invoice to the customer as you complete specified percentages of work on the project. You set up project categories for the work to use in the billing process. You also set up billing rules that automatically calculate the invoice amounts for the percentage of work that is completed in each category. The categories for the project include:
 
-•       Consulting
+- Consulting
+- Design
+- Installation
 
-•       Design
+The budget manager creates a budget for the project categories. The amount of completed work is automatically calculated as a percentage of actual work as compared to the budgeted amounts.
 
-•       Installation
+## Prerequisites
 
-Your budget manager creates a budget for the project categories. The amount of completed work is automatically calculated as a percentage of actual work compared to the budgeted amounts.
+Before you create a project with billing rules, you must set up number sequences for billing rules and a fee journal for posting progress billings. 
 
-**Prerequisites**
+1. Go to **Project management and accounting** > **Setup** > **Project management and accounting parameters**.
+2. On the **Project management and accounting parameters** page, set up the number sequence that you want to use when billing rules are created. 
+3. Create a new Fee journal to use for posting progress billings.
 
-Before you create a project with billing rules, you must set up the following project information go to **Project management and accounting** > **Setup** > **Project management and accounting parameters:**
-
-•       Set up the number sequence to use when you create a billing rule.
-
-•       Set up a fee journal to use for posting progress billings.
-
-**Create a contract for progress billings**
+## Create a contract for progress billings
 
 Use this procedure to create a project contract for a Fixed-price project. You create a project invoice when the work completed on the project reaches a specified percentage.
 
