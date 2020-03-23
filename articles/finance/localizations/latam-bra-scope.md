@@ -876,7 +876,7 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 <td>Generation of a text file and support for companies defined as Profile A
 <p>Available layout versions:</p>
 <ul>
-<li>Layout Code 13 and earlier</li>
+<li>Layout Code 14 and earlier</li>
 </ul>
 </td>
 <td>Yes</td>
@@ -891,7 +891,7 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 <li>Block D (only for incoming fiscal documents): D001-D100-D190-D195-D500-D590-D990</li>
 <li>Block E: E001-E100-E110-E111-E116-E200-E210-E220-E250-E300-E310-E311-E312-E313-E316-E500-E510-E520-E530-E990</li>
 <li>Block G: G001-G110-G125-G126-G130-G140-G990</li>
-<li>Block H: H001-H005-H010-H020-H990</li>
+<li>Block H: H001-H005-H010-H020-H990. Note: H005 and related records are only supported for reason code = 01, 05 for RS state and 06.</li>
 <li>Block K:&nbsp;<span style="display: inline !important; float: none; background-color: #ffffff; color: #000000; cursor: text; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;">K001-K100-K200-K220-K230-K235</span></li>
 <li>Block 1: 1001-1010-1990
 <ul>
@@ -945,8 +945,9 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 <td>Yes</td>
 </tr>
 <tr>
+
 <td>SPED Contributions (PIS and COFINS)</td>
-<td>Generation of a text file in accordance with layout 005 and earlier</td>
+<td>Generation of a text file in accordance with layout 006 and earlier</td>
 <td>Yes</td>
 <td>Yes</td>
 </tr>
@@ -1026,7 +1027,7 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 <tr>
 <td>SPED Accounting</td>
 <td>Generation of SPED Cont&aacute;bil text files
-<p>Layout version supported: 7.0 and earlier</p>
+<p>Layout version supported: 8.0 and earlier</p>
 </td>
 <td>Yes</td>
 <td>Yes</td>
