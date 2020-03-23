@@ -894,7 +894,6 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 <li>Block H: H001-H005-H010-H020-H030-H990. Note: H005 and related records are only supported for reason code = 01, 05 for RS state and 06.</li>
 <li>Block K: K001-K100-K200-K220-K230-K235</span></li>
 <li>Block 1: 1001-1010-1250-12251990
-<ul>
 <li>Block 1900-1910-1920-1921-1923-1926-1990 only for Rio Grande do Sul state</li>
 </ul>
 </li>
