@@ -169,18 +169,20 @@ canceled.
        e. **Agreement**
        
        f. **Storno** allows you to separate storno transactions.
-               1.  If the **Storno** dimension is selected, then storno inventory
-                   transactions are displayed separately in the report on separate lines.
-                   These lines have the value **Yes** in the **Storno** column. The
-                   transactions are displayed with different direction and amount sign.
-                   Storno of incoming inventory transactions are shown in the **Issue**
-                   column with a negative sign, and storno of outgoing inventory
-                   transactions are shown in the **Receipt** column with a negative sign.
-               2.  If the **Storno** dimension is not selected, the storno inventory
-                   transactions decrease the value of the initial transaction in the
-                   corresponding columns. Storno of incoming inventory transactions have a
-                   decreased value in the **Issue** column, where storno of outgoing
-                   inventory transactions have a decreased value in the **Receipt** column.
+       
+       -   If the **Storno** dimension is selected, then storno inventory
+           transactions are displayed separately in the report on separate lines.
+           These lines have the value **Yes** in the **Storno** column. The
+           transactions are displayed with different direction and amount sign.
+           Storno of incoming inventory transactions are shown in the **Issue**
+           column with a negative sign, and storno of outgoing inventory
+           transactions are shown in the **Receipt** column with a negative sign.
+                   
+       -   If the **Storno** dimension is not selected, the storno inventory
+           transactions decrease the value of the initial transaction in the
+           corresponding columns. Storno of incoming inventory transactions have a
+           decreased value in the **Issue** column, where storno of outgoing
+           inventory transactions have a decreased value in the **Receipt** column.
 
        For example, the following inventory transactions show the purchase and
        credit note for the purchase:
