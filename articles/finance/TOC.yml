@@ -2466,6 +2466,8 @@
             href: localizations/rus-inventory-cost-structure.md
           - name: Inventory adjustment wizard
             href: localizations/rus-inventory-adjustment-wizard.md
+          - name: Inventory reports
+            href: localizations/rus-inventory-reports.md
         - name: Reporting
           items:
           - name: Financial reporting
