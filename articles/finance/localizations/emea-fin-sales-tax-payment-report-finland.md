@@ -180,7 +180,7 @@ The following table shows how to assign sales tax reporting codes to sales tax c
 4. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Settle and post sales tax**. In the **Report sales tax for settlement period** dialog box in the **Sales tax payment version** field, select **Original**.
 5. Print the report and review the data.
 
-![](media/1_Sales_tax_reporting.png)
+![Sales tax reporting data, original version](media/1_Sales_tax_reporting.png)
 
 6. Post the new transaction. For example, go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
 
@@ -189,13 +189,13 @@ The following table shows how to assign sales tax reporting codes to sales tax c
 | February 1, 2020 | Customer invoice (domestic) | 100            | 10             | FI10               | Not applicable                         | 303                                      |
 
 7. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Settle and post sales tax**. In the **Report sales tax for settlement period** dialog box in the **Sales tax payment version** field, select **Latest corrections**.
-8. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**. In the **Report sales tax for settlement period** dialog box in the **Sales tax payment version** field, select **Corrections**. The following illustration shows the result.
+8. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**. In the **Report sales tax for settlement period** dialog box in the **Sales tax payment version** field, select **Corrections**.
 
-![](media/2_Sales_tax_reporting.png)
+![Sales tax payment version corrections](media/2_Sales_tax_reporting.png)
 
-9. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**. In the **Report sales tax for settlement period** dialog box in the **Sales tax payment version** field, select **Total list**. The following illustration shows the result.
+9. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**. In the **Report sales tax for settlement period** dialog box in the **Sales tax payment version** field, select **Total list**.
 
-![](media/3_Sales_tax_reporting.png)
+![Total list of sales tax payment versions in the settlement period](media/3_Sales_tax_reporting.png)
 
 ## Additional information
 
@@ -205,11 +205,11 @@ If you set up reverse charges according to [Reverse charge VAT](emea-reverse-cha
 2. In the dialog box, set the **Settlement period** and **From date** fields.
 3. Select **OK**, and review the report result.
 
-![](media/4_Reverse_charge.png)
+![Sales tax payment by code report](media/4_Reverse_charge.png)
 
 
 ## Report a VAT declaration to the tax authority
 
 After you've generated the Finnish sales tax report, use the data on it to fill in the self-assessed tax return for the Finnish Tax Administration in the official format. For example, the following illustration shows what the Finnish self-assessed tax return has looked like since 2019.
 
-![](media/5_Finnish_VAT_declaration.png)
+![Finnish self-assesed tax report](media/5_Finnish_VAT_declaration.png)
