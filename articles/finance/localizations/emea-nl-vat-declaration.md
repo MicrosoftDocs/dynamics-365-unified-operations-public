@@ -141,14 +141,14 @@ Azure Key Vault Client.
 
 -   **Digipoort Delivery URL** – Enter the destination URL for the Digipoort
     service. For example, enter
-    (')https://preprod-dgp2.procesinfrastructuur.nl/wus/2.0/aanleverservice/1.2(').
+    (`)https://preprod-dgp2.procesinfrastructuur.nl/wus/2.0/aanleverservice/1.2(`).
 
 -   **Digipoort Status URL** – Enter the URL for the message statuses. For
     example, enter
-    ' https://preprod-dgp2.procesinfrastructuur.nl/wus/2.0/statusinformatieservice/1.2 '.
+    (`)https://preprod-dgp2.procesinfrastructuur.nl/wus/2.0/statusinformatieservice/1.2(`).
 
 -   **Authorization Address** – Enter the URL for authorization. For example,
-    enter http://geenausp.nl.
+    enter (`)http://geenausp.nl(`).
 
 -   **Server Certificate** – Select the line that you created for the Key Vault
     secret for the Digipoort server certificate.
@@ -170,13 +170,11 @@ Generate and send the OB declaration
 
 4.  Select **OK**, and review the calculated results.
 
-![](media/505c01962bcd87a027a018c682401b1a.png)
+![](media/4_Electronic_OB_declaration.png)
 
->   A screenshot of a cell phone Description automatically generated
+5.  Select **View XML** to review the OB declaration in XML format.
 
-1.  Select **View XML** to review the OB declaration in XML format.
-
-2.  Select **Send XML** to send the file to the tax authority service,
+6.  Select **Send XML** to send the file to the tax authority service,
     Digipoort.
 
 Example
@@ -204,12 +202,8 @@ reporting codes, post transactions, and generate the Dutch sales tax report.
 2.  On the **Sales tax codes** page, on the **Report setup** FastTab, assign
     reporting codes to sales tax codes.
 
->   The following table shows how you might assign sales tax reporting codes to
->   sales tax codes. This configuration is an example. All configurations depend
->   on the structure of the sales tax codes that are used. If you want values to
->   be calculated and transferred to the sales tax report, for each tax code
->   that is used in the sales tax payment process, you must set a relevant sales
->   tax reporting code in one or more fields on the **Reporting setup** tab.
+   > [!NOTE]
+   > The preceding configuration is just an example and depends on the structure of the sales tax codes that are used. If you want values to be calculated and transferred to the sales tax report, for each tax code that is used in the sales tax payment process, you must set a relevant sales tax reporting code in one or more fields on the **Report setup** tab.
 
 | **Sales tax code** | **Taxable sales** | **Tax-free sale** | **Sales tax payable** | **Taxable purchases** | **Sales tax receivable** | **Taxable import** | **Use tax** | **Offset use tax** |
 |--------------------|-------------------|-------------------|-----------------------|-----------------------|--------------------------|--------------------|-------------|--------------------|
@@ -224,17 +218,15 @@ reporting codes, post transactions, and generate the Dutch sales tax report.
 | NLEUS              |                   | 320               |                       |                       |                          |                    |             |                    |
 | NLThird            |                   | 310               |                       |                       |                          |                    |             |                    |
 
-1.  Go to **Organization administration \> Organizations \> Legal entities**.
+3.  Go to **Organization administration \> Organizations \> Legal entities**.
 
-2.  On the **Tax registration** FastTab, in the
+4.  On the **Tax registration** FastTab, in the **Tax registration number** field, enter **203118030B12**.
 
-3.  **Tax registration number** field, enter **203118030B12**.
+5.  Select **Registration IDs**, and enter the same tax registration number.
 
-4.  Select **Registration IDs**, and enter the same tax registration number.
+6.  Go to **Tax \> Sales tax \> Electronic tax declaration parameters**.
 
-5.  Go to **Tax \> Sales tax \> Electronic tax declaration parameters**.
-
-6.  On the **General** tab, set the following fields to the specified values:
+7.  On the **General** tab, set the following fields to the specified values:
 
     -   **Contact ID:** 203118030B12
 
@@ -246,10 +238,10 @@ reporting codes, post transactions, and generate the Dutch sales tax report.
 
     -   **Format mapping:** OB declaration (NL)
 
-7.  On the **Number sequences** tab, select a number sequence for the
+8.  On the **Number sequences** tab, select a number sequence for the
     **Electronic OB declaration ID** reference.
 
-8.  Post the following transactions.
+9.  Post the following transactions.
 
 | **Date**        | **Transaction type**            | **Amount net** | **VAT amount** | **Sales tax code** | **Expected Tax base – Reporting code** | **Expected tax amount – Reporting code** | **Corresponding box in the declaration** |
 |-----------------|---------------------------------|----------------|----------------|--------------------|----------------------------------------|------------------------------------------|------------------------------------------|
@@ -260,49 +252,50 @@ reporting codes, post transactions, and generate the Dutch sales tax report.
 | January 1, 2020 | Customer invoice (export)       | 100            | 0              | NLThird            | 310                                    | Not applicable                           | 3a                                       |
 | January 1, 2020 | Vendor invoice (reverse charge) | 100            | 9              | NLRC9              | 210                                    | 211 – Tax payable 521 – Tax deduction    | 2a 5b                                    |
 
-9.  Go to **Tax \> Declarations \> Sales tax \> Electronic OB declaration**.
+10.  Go to **Tax \> Declarations \> Sales tax \> Electronic OB declaration**.
 
-10. Select **New**, and then, in the dialog box that appears, set the following
+11. Select **New**, and then, in the dialog box that appears, set the following
     fields to the specified values:
 
     -   **Settlement period:** Mon
 
     -   **From date:** 1/1/2020
 
-11. Select **OK**. Review the header that is generated for the declaration.
+12. Select **OK**. Review the header that is generated for the declaration.
 
-![A screenshot of a cell phone Description automatically generated](media/a1bc76cc877f132d6769fdf5ef876be7.png)
+![](media/5_Electronic_OB_declaration.png)
 
-1.  Review the data that is generated for the declaration.
+13.  Review the data that is generated for the declaration.
 
-    ![A screenshot of a cell phone Description automatically generated](media/a00c1afceec3e3d12880cf7a1c48443e.png)
+![](media/6_Details.png)
 
-2.  Select **View XML** to review an example of the XML file.
+14.  Select **View XML** to review an example of the XML file.
 
-![A screenshot of a map Description automatically generated](media/6706424c193757812c2bccf5978fc4af.png)
+![](media/7_XML.png)
 
 ### Correction transactions
 
 
 Post a new transaction. For example, to post a customer invoice, go to **Accounts receivable \> Invoices \> All free text invoices**.
+
 -------------------------------------------------------------------------------------------------------------------------------------
 
 | **Date**        | **Transaction type**        | **Amount net** | **VAT amount** | **Sales tax code** | **Expected Tax base – Reporting code** | **Expected tax amount – Reporting code** | **Corresponding box in the declaration** |
 |-----------------|-----------------------------|----------------|----------------|--------------------|----------------------------------------|------------------------------------------|------------------------------------------|
 | January 1, 2020 | Customer invoice (domestic) | 100            | 9              | NL9                | 120                                    | 121                                      | 1b                                       |
 
-1.  Go to **Tax \> Declarations \> Sales tax \> Electronic OB declaration**.
+15.  Go to **Tax \> Declarations \> Sales tax \> Electronic OB declaration**.
 
-2.  Select **New**, and then, in the dialog box that appears, set the following
+16.  Select **New**, and then, in the dialog box that appears, set the following
     fields to the specified values:
 
-    -   **Settlement period:** Mon
+   -   **Settlement period:** Mon
 
-    -   **From date:** 1/1/2020
+   -   **From date:** 1/1/2020
 
-3.  Select **OK**, and review the declaration data.
+17.  Select **OK**, and review the declaration data.
 
-![](media/04b5de72199515253d03f4237f50ad55.png)
+![](media/8_Details.png)
 
 >   A screenshot of a cell phone Description automatically generated
 
@@ -323,9 +316,7 @@ Review declaration amounts in printed form
 
 ### Generate a sales tax payment and print the Dutch sales tax report
 
-
 At the end of the VAT reporting period, calculate the sales tax amounts for the settlement period.
-
 
 1.  Go to **Tax \> Declarations \> Sales tax \> Settle and post sales tax**.
 
@@ -374,19 +365,17 @@ for settlement period** inquiry.
 -   **Total list** – Generate a report for all sales transactions for the
     period. These transactions include original and corrected transactions.
 
-1.  Select **OK**.
+4.  Select **OK**.
 
-2.  Go to **Tax \> Declarations \> Sales tax \> Settle and post sales tax**. In
+5.  Go to **Tax \> Declarations \> Sales tax \> Settle and post sales tax**. In
     the **Settle and post sales tax** dialog box in the **Sales tax payment
     version** field, select **Original**.
 
-3.  Print the report, and review the data.
+6.  Print the report, and review the data.
 
-![](media/731b34f388f14c0e7baf887b4f8243e2.png)
+![](media/9_Sales_tax_payment.png)
 
->   A screenshot of a cell phone Description automatically generated
-
->   Note the following points:
+  Note the following points:
 
 -   Box 5e corresponds to reporting code 551.
 
@@ -394,32 +383,32 @@ for settlement period** inquiry.
 
 -   Boxes 6a and 6b aren't filled in.
 
->   These values aren't present in the XML for the OB declaration.
+These values aren't present in the XML for the OB declaration.
 
-1.  Post the new transaction.
+4.  Post the new transaction.
 
 | **Date**   | **Transaction type**        | **Amount net** | **VAT amount** | **Sales tax code** | **Expected tax base – Reporting code** | **Expected tax amount – Reporting code** |
 |------------|-----------------------------|----------------|----------------|--------------------|----------------------------------------|------------------------------------------|
-| 01.01.2020 | Customer invoice (domestic) | 100            | 9              | NL9                | 120                                    | 121                                      |
+| January 1, 2020 | Customer invoice (domestic) | 100            | 9              | NL9                | 120                                    | 121                                      |
 
-2.  Go to **Tax \> Declarations \> Sales tax \> Settle and post sales tax**. In
+5.  Go to **Tax \> Declarations \> Sales tax \> Settle and post sales tax**. In
     the **Settle and post sales tax** dialog box in the **Sales tax payment
     version** field, select **Last corrections**.
 
-3.  Go to **Tax \> Declarations \> Sales tax \> Report sales tax for settlement
+6.  Go to **Tax \> Declarations \> Sales tax \> Report sales tax for settlement
     period**. In the **Sales tax payment version** field, select
     **Corrections**. You should see the following result.
 
-![A screenshot of text Description automatically generated](media/058ed50cd8b7eaa26b31f7c1b6c6ea7d.png)
+![](media/10_Sales_tax_payment.png)
 
-1.  Go to **Tax \> Declarations \> Sales tax \> Report sales tax for settlement
+7.  Go to **Tax \> Declarations \> Sales tax \> Report sales tax for settlement
     period**. In the **Sales tax payment version** field, select **Total list**.
     You should see the following result.
 
-![](media/37396ab0b29c90c0ae87aba80ae8ae97.png)
+![](media/11_Sales_tax_payment.png)
 
->   A screenshot of a cell phone Description automatically generated
-
-**Note.** If you generate the OB declaration after you've created the original
+   > [!NOTE]
+   > If you generate the OB declaration after you've created the original
 and corrected sales tax payments, the OB declaration will show amounts only from
 the original sales tax payment.
+
