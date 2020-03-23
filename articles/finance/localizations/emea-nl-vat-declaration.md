@@ -9,8 +9,7 @@ For general information about how to set up the VAT statement, see [VAT reportin
 Set up sales tax reporting codes for VAT reporting
 ------------------------------------------
 
-Set up sales tax reporting codes by following the instructions in Set up sales
-tax reporting codes. The following table provides an example of sales tax
+Set up sales tax reporting codes by following the instructions in [Set up sales tax reporting codes](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/SE-VAT-declaration/articles/finance/general-ledger/tasks/set-up-sales-tax-reporting-codes.md). The following table provides an example of sales tax
 reporting codes for the Netherlands.
 
 | **Sales tax reporting code** | **Description**                                                                                                                                                                                                 | **Corresponding box in the declaration** | **Element in XML**                                           |
@@ -45,8 +44,7 @@ reporting codes for the Netherlands.
 Set up sales tax codes
 ------------------------------------------
 
-Set up sales tax codes by following the instructions in the *Sales tax codes for
-VAT reporting* and Sales tax overview topics.
+Set up sales tax codes by following the instructions in [Sales tax codes for VAT reporting](emea-vat-reporting.md#sales-tax-codes-for-vat-reporting) and [Sales tax overview](../general-ledger/indirect-taxes-overview.md).
 
 Set up the OB declaration
 ------------------------------------------
@@ -60,16 +58,15 @@ Omzetbelasting is "sales tax" in Dutch language
     **Tax registration number** field, enter the tax registration number.
 
 3.  Select **Registration IDs**, and enter the same tax registration number. For
-    more information about how to set up registration IDs, see Registration IDs.
+    more information about how to set up registration IDs, see [Registration IDs](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/NL-VAT-declaration/articles/finance/localizations/emea-registration-ids.md).
 
-4.  In Microsoft Dynamics Lifecycle Services (LCS), in the Shared asset library,
+4.  In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index), in the Shared asset library,
     download the latest versions of the Electronic reporting (ER) configurations
     for the following VAT declaration format:
 
 -   OB declaration (NL)
 
->   For more information, see Download Electronic reporting configurations from
->   Lifecycle Services.
+For more information, see [Download Electronic reporting configurations from Lifecycle Services](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/NL-VAT-declaration/articles/fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 5.  Go to **Tax \> Sales tax \> Electronic tax declaration parameters**.
 
