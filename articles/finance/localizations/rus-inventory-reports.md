@@ -184,21 +184,21 @@ canceled.
            decreased value in the **Issue** column, where storno of outgoing
            inventory transactions have a decreased value in the **Receipt** column.
 
-       For example, the following inventory transactions show the purchase and
-       credit note for the purchase:
+           For example, the following inventory transactions show the purchase and
+           credit note for the purchase:
 
-       | Document type                | Type of inventory transaction | Credit correction (physical) | Quantity |
-       |------------------------------|-------------------------------|------------------------------|----------|
-       | Purchase order               | Receipt                       | No                           | 10       |
-       | Credit note for the purchase | Issue                         | Yes                          | \-3      |
+           | Document type                | Type of inventory transaction | Credit correction (physical) | Quantity |
+           |------------------------------|-------------------------------|------------------------------|----------|
+           | Purchase order               | Receipt                       | No                           | 10       |
+           | Credit note for the purchase | Issue                         | Yes                          | \-3      |
 
-       If the **Storno** dimension is selected, the report will show the lines with
-       the following quantities:
+           If the **Storno** dimension is selected, the report will show the lines with
+           the following quantities:
 
-       | Storno | Quantity (Receipt) | Quantity (Issue) |
-       |--------|--------------------|------------------|
-       | No     | 10                 | 0                |
-       | Yes    | \-3                | 0                |
+           | Storno | Quantity (Receipt) | Quantity (Issue) |
+           |--------|--------------------|------------------|
+           | No     | 10                 | 0                |
+           | Yes    | \-3                | 0                |
 
 9.  On the **Records to include** tab, use the filter to define the transactions
     to include in the report.
