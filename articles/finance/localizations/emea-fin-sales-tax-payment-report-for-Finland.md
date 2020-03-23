@@ -198,37 +198,35 @@ codes.
 
 ![](media/1_Sales_tax_reporting.png)
 
-1.  Post the new transaction. For example, go to **Accounts receivable \>
+6.  Post the new transaction. For example, go to **Accounts receivable \>
     Invoices \> All free text invoices.**
 
 | **Date**         | **Transaction type**        | **Amount net** | **VAT amount** | **Sales tax code** | **Expected tax base – Reporting code** | **Expected tax amount – Reporting code** |
 |------------------|-----------------------------|----------------|----------------|--------------------|----------------------------------------|------------------------------------------|
 | February 1, 2020 | Customer invoice (domestic) | 100            | 10             | FI10               | Not applicable                         | 303                                      |
 
-2.  Go to **Tax \> Declarations \> Sales tax \> Settle and post sales tax**. In
+7.  Go to **Tax \> Declarations \> Sales tax \> Settle and post sales tax**. In
     the **Report sales tax for settlement period** dialog box in the **Sales tax
     payment version** field, select **Latest corrections**.
 
-3.  Go to **Tax \> Declarations \> Sales tax \> Report sales tax for settlement
+8.  Go to **Tax \> Declarations \> Sales tax \> Report sales tax for settlement
     period**. In the **Report sales tax for settlement period** dialog box in
     the **Sales tax payment version** field, select **Corrections**. The
     following illustration shows the result.
 
-![A screenshot of a cell phone Description automatically generated](media/1e0662d00a94f60072ff5eac4f7cb949.png)
+![](media/2_Sales_tax_reporting.png)
 
-1.  Go to **Tax \> Declarations \> Sales tax \> Report sales tax for settlement
+9.  Go to **Tax \> Declarations \> Sales tax \> Report sales tax for settlement
     period**. In the **Report sales tax for settlement period** dialog box in
     the **Sales tax payment version** field, select **Total list**. The
     following illustration shows the result.
 
-![](media/fb9258e387adc2d2b673d9e2014a475e.png)
-
->   A screenshot of a social media post Description automatically generated
+![](media/3_Sales_tax_reporting.png)
 
 Additional information
-======================
+-------------------------------------------------
 
-If you set up reverse charges according to the Reverse charge VAT topic, you can
+If you set up reverse charges according to Reverse charge VAT, you can
 get data about the reporting codes on the **Sales tax payment by code** report.
 
 1.  Go to **Tax \> Inquiries and reports \> Sales tax reports \> Sales tax
@@ -238,16 +236,15 @@ get data about the reporting codes on the **Sales tax payment by code** report.
 
 3.  Select **OK**, and review the report result.
 
-![](media/f2974d7f423445efbeea90b11100f5d7.png)
+![](media/4_Reverse_charge.png)
 
->   A screenshot of a cell phone Description automatically generated
 
 Report a VAT declaration to the tax authority
-=============================================
+-------------------------------------------------
 
 After you've generated the Finnish sales tax report, use the data on it to fill
 in the self-assessed tax return for the Finnish Tax Administration in the
 official format. For example, the following illustration shows what the Finnish
 self-assessed tax return has looked like since 2019.
 
-![A screenshot of a cell phone Description automatically generated](media/a5fca5b1d0fa2929c3f2a5546abed73b.png)
+![](media/5_Finnish_VAT_declaration.png)
