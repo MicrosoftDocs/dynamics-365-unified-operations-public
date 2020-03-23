@@ -1,6 +1,5 @@
----
-title: VAT declaration for the Netherlands
----
+VAT declaration for the Netherlands
+=========================
 
 This topic explains how to set up and generate the value-added tax (VAT)
 declaration for legal entities in the Netherlands.
@@ -9,7 +8,7 @@ For general information about how to set up the VAT statement, see *VAT
 reporting for Europe*.
 
 Set up sales tax reporting codes for VAT reporting
-==================================================
+------------------------------------------
 
 Set up sales tax reporting codes by following the instructions in Set up sales
 tax reporting codes. The following table provides an example of sales tax
@@ -45,13 +44,13 @@ reporting codes for the Netherlands.
 |                              |                                                                                                                                                                                                                 |                                          |                                                              |
 
 Set up sales tax codes
-======================
+------------------------------------------
 
 Set up sales tax codes by following the instructions in the *Sales tax codes for
 VAT reporting* and Sales tax overview topics.
 
 Set up the OB declaration
-=========================
+------------------------------------------
 
 Note that "OB declaration" stands for "Omzetbelasting declaration" where
 Omzetbelasting is "sales tax" in Dutch language
@@ -73,37 +72,37 @@ Omzetbelasting is "sales tax" in Dutch language
 >   For more information, see Download Electronic reporting configurations from
 >   Lifecycle Services.
 
-1.  Go to **Tax \> Sales tax \> Electronic tax declaration parameters**.
+5.  Go to **Tax \> Sales tax \> Electronic tax declaration parameters**.
 
-2.  On the **General** tab, in the **VAT contact type** field, select either
-    **Tax payer** or **Agent**.
+6.  On the **General** tab, in the **VAT contact type** field, select either
+  **Tax payer** or **Agent**.
 
-3.  Set the **Contact ID**, **Contact initials**, **Contact prefix**, and
+7.  Set the **Contact ID**, **Contact initials**, **Contact prefix**, and
     **Telephone** fields.
 
-4.  Set the **Company part of fiscal group** option to **Yes** if this setting
+8.  Set the **Company part of fiscal group** option to **Yes** if this setting
     is appropriate, and then, in the **Fiscal group** field, select name of the
     fiscal group. The fiscal groups should already have been created on the
     **Tax exempt numbers** page.
 
-5.  In the **Format mapping** field, select the **OB declaration (NL)** format
+9.  In the **Format mapping** field, select the **OB declaration (NL)** format
     that you downloaded earlier.
 
-    ![A screenshot of a cell phone Description automatically generated](media/129a405dad497b94e1b2dbf7af8054cb.png)
+    ![](media/1_Electronic_tax_declaration_parameters.png)
 
-6.  On the **Number sequences** tab, in the **Number sequence code** field,
+10.  On the **Number sequences** tab, in the **Number sequence code** field,
     select a number sequence code for the **Electronic OB declaration ID**
     reference to set the numbering of OB declarations.
 
 Set up electronic transmission of the VAT declaration to Digipoort
-==================================================================
+------------------------------------------
 
 Digipoort is the service that is used to transmit declarations to the Dutch
 government. Digipoort works as an electronic post office: it receives a message,
 checks the message, and then confirms receipt of the message.
+ 
+### Set up Azure Key Vault for certificate storage
 
-Set up Azure Key Vault for certificate storage
-----------------------------------------------
 
 1.  Go to **System administration \> Setup \> System parameters**.
 
@@ -125,16 +124,15 @@ Set up Azure Key Vault for certificate storage
 -   **Key Vault secret key** – Enter a secret key that is associated with the
     Azure AD application that is used for authentication to Key Vault storage.
 
-1.  On the **Secrets** FastTab, select **Add**, and create lines for Key Vault
+6.  On the **Secrets** FastTab, select **Add**, and create lines for Key Vault
     secrets for the Digipoort server and client certificates.
 
-![A screenshot of a social media post Description automatically generated](media/c6c7d08af5c0b4a3a394f07c1630915e.png)
+![](media/2_Key_Vault_parameters.png)
 
 For more information about how to set up Key Vault parameters, see Setting up
 Azure Key Vault Client.
 
-Set up electronic tax declaration parameters
---------------------------------------------
+### Set up electronic tax declaration parameters
 
 1.  Go to **Tax \> Setup \> Sales tax \> Electronic tax declaration
     parameters**.
@@ -143,11 +141,11 @@ Set up electronic tax declaration parameters
 
 -   **Digipoort Delivery URL** – Enter the destination URL for the Digipoort
     service. For example, enter
-    https://preprod-dgp2.procesinfrastructuur.nl/wus/2.0/aanleverservice/1.2.
+    (')https://preprod-dgp2.procesinfrastructuur.nl/wus/2.0/aanleverservice/1.2(').
 
 -   **Digipoort Status URL** – Enter the URL for the message statuses. For
     example, enter
-    https://preprod-dgp2.procesinfrastructuur.nl/wus/2.0/statusinformatieservice/1.2.
+    ' https://preprod-dgp2.procesinfrastructuur.nl/wus/2.0/statusinformatieservice/1.2 '.
 
 -   **Authorization Address** – Enter the URL for authorization. For example,
     enter http://geenausp.nl.
@@ -158,12 +156,10 @@ Set up electronic tax declaration parameters
 -   **Client Certificate** – Select the line that you created for the Key Vault
     secret for the Digipoort client certificate.
 
-![](media/887f67a36e991ad4d0e8ea6d0d3dc772.png)
-
->   A screenshot of a cell phone Description automatically generated
+![](media/3_Electronic_tax_declaration_parameters.png)
 
 Generate and send the OB declaration
-====================================
+------------------------------------------
 
 1.  Go to **Tax \> Declarations \> Sales tax \> Electronic OB declaration**.
 
@@ -184,7 +180,7 @@ Generate and send the OB declaration
     Digipoort.
 
 Example
-=======
+------------------------------------------
 
 The following example shows how you can set up sales tax codes and sales tax
 reporting codes, post transactions, and generate the Dutch sales tax report.
@@ -285,8 +281,8 @@ reporting codes, post transactions, and generate the Dutch sales tax report.
 
 ![A screenshot of a map Description automatically generated](media/6706424c193757812c2bccf5978fc4af.png)
 
-Correction transactions
------------------------
+### Correction transactions
+
 
 Post a new transaction. For example, to post a customer invoice, go to **Accounts receivable \> Invoices \> All free text invoices**.
 -------------------------------------------------------------------------------------------------------------------------------------
@@ -314,10 +310,9 @@ Note that a correction transaction is added to the declaration in codes **120**
 and **121**.
 
 Review declaration amounts in printed form
-==========================================
+------------------------------------------
 
-Set up the report layout for sales tax authorities
---------------------------------------------------
+### Set up the report layout for sales tax authorities
 
 1.  Go to **Tax \> Indirect taxes \> Sales tax \> Sales tax authorities**.
 
@@ -326,11 +321,11 @@ Set up the report layout for sales tax authorities
 
 3.  In the **Report layout** field, select **Dutch report layout**.
 
-Generate a sales tax payment and print the Dutch sales tax report
------------------------------------------------------------------
+### Generate a sales tax payment and print the Dutch sales tax report
+
 
 At the end of the VAT reporting period, calculate the sales tax amounts for the settlement period.
-==================================================================================================
+
 
 1.  Go to **Tax \> Declarations \> Sales tax \> Settle and post sales tax**.
 
@@ -345,8 +340,7 @@ At the end of the VAT reporting period, calculate the sales tax amounts for the 
 
 3.  Select **OK** to generate the sales tax payment.
 
-Print a sales tax payment report from a sales tax payment
----------------------------------------------------------
+### Print a sales tax payment report from a sales tax payment
 
 1.  Go to **Tax \> Inquiries and reports \> Sales tax payments**.
 
@@ -356,8 +350,7 @@ Print a sales tax payment report from a sales tax payment
 3.  In the dialog box, set the fields as described in the previous section, and
     then select **OK**.
 
-Report sales tax for the settlement period
-------------------------------------------
+### Report sales tax for the settlement period
 
 You can also generate the Dutch sales tax report by using the **Report sales tax
 for settlement period** inquiry.
