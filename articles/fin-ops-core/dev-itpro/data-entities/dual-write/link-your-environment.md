@@ -1,7 +1,7 @@
 ---
 
-title: "How to use the dual-write wizard to link your environments"
-description: Describes how to use the dual-write wizard to link the Finance and Operation app environment to your Common Data Service environment.
+title: Use the dual-write wizard to link your environments
+description: This topic explains how to use the dual-write wizard to link a Finance and Operations app environment to your Common Data Service environment.
 author: sabinn-msft
 
 ms.technology: 
@@ -12,44 +12,41 @@ ms.author: v-douklo
 LocalizationGroup: 
 ---
 
-# How-to use the dual-write wizard to link your environments
+# Use the dual-write wizard to link your environments
 
 [!include [banner](../../includes/banner.md)]
 
 [!include [banner](../../includes/preview-banner.md)]
 
-1. Sign in to the Finance and Operation app environment that you want to link to your Common Data Service environment, select **Data Management**, and then select the **Dual Write** tile.
+1. Sign in to the Finance and Operations app environment that you want to link to your Common Data Service environment.
+2. Go to **Workspaces \> Data management**, and select the **Dual Write** tile.
 
-    <kbd>![Navigating to data management](media/navigate-to-data-management.png)
+    ![Dual Write tile](media/navigate-to-data-management.png)
 
-2. Select the **New link to environment** button to link your Finance and Operations app and the Common Data Service environments.
+3. Select **New link to environment** to open the **Setup link to Common Data Service** wizard.
+4. The **Choose environment** page lists all the Common Data Service environments where the signed-in user is an environment admin. Select the Common Data Service environment to link to, and then select **Next**.
 
-3. At this point, the Common Data Service environments are automatically fetched for the logged-in user, where user is an environment admin. Once the environments are discovered, under the **Choose environment** step, select the Common Data Service environment that you want to link to, and then select **Next**.
+    ![Choose environment page](media/data-service-environment.png)
 
-    <kbd>![Selecting the common data service environment](media/data-service-environment.png)
+5. Select your legal entities, and then select **Next**.
 
-4. Choose your legal entities and select **Next**.
+    ![Select legal entities step](media/select-legal-entities.png)
 
-    <kbd>![Selecting your legal entities](media/select-legal-entities.png)
+    A health check is run to verify that your system meets the requirements for enabling dual-write. The health check also verifies that all the prerequisites have been completed. If any health check test fails, make that you've completed all the prerequisites before you move on to the next step.
 
-5. At this point, a Health check is run to make sure that your system meets the requirements to enable dual-write and all the prerequisites are complete.
+    In the following example, the test about whether access was granted to connect the apps failed. In this case, you must first grant access to connect the apps by the creating the appropriate application IDs. You must then rerun the wizard.
 
-    <kbd>![Running a health check](media/health-check.png)
+    ![Health check page](media/health-check.png)
 
-    If any of the health checks fails, ensure that you've completed all the prerequisites before you move to the next step.
+6. Review the summary, privacy notice, and consent, and then select **Create**.
 
-    In this example, the health check shows that the check for granting access to connect the apps failed. First, you'll need to grant the access to connect the apps by the creating the respective application IDs, and then rerun the dual-write wizard. 
+You've now linked your Finance and Operations app to the Common Data Service environment. The next step is to enable entity maps for dual-write.
 
-6. Review the summary and privacy notice and consent, and then select **Create**.
+![Entity maps successfully linked](media/entity-maps-linked.png)
 
-7. That's it&mdash;you've just linked your Finance and Operations app to the Common Data Service environment. The next step is to enable entity maps for dual-write.
-
-    <kbd>![Linking entity maps successful](media/entity-maps-linked.png)
-
-   >[!Note]
-   >If you don't see your entity maps or see a blank screen, make sure to install the Finance and Operations app entity map solution.
+> [!NOTE]
+> If you don't see your entity maps, or if you see a blank page, be sure to install the entity map solution for the Finance and Operations app.
 
 ## Next steps
 
-[Enable entity map for dual-write](enable-entity-map.md)
-
+[Enable entity maps for dual-write](enable-entity-map.md)
