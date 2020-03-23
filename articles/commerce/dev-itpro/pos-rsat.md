@@ -5,7 +5,7 @@ title: Test recorder and Regression suite automation tool for Cloud POS
 description: This topic explains how to automate user acceptance testing (UAT) by using the POS test recorder and the Regression suite automation tool (RSAT).
 author: mugunthanm
 manager: AnnBe
-ms.date: 10/15/2019
+ms.date: 03/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -176,7 +176,7 @@ Follow these steps to create a new recording by using the test recorder:
 
 1. Launch Cloud POS.
 
-2. Click the Hamburger icon on the left pane and click Settings (don't login to Cloud POS, login step must be recorded part of the test recording flow, launch the recorder before login.)
+2. Select the hamburger icon on the left pane and select **Settings**. Don't sign in to Cloud POS. The sign in step must be recorded as part of the test recording flow, so you need to launch the recorder before sign in.)
 
 3. On the **Settings** page, in the **Task and Test recorders** section, select **Open test recorder**.
 
@@ -192,10 +192,10 @@ Follow these steps to create a new recording by using the test recorder:
     The test recorder enters recording mode, and the recording session begins. The test recorder pane shows information and controls that are related to the recording session.
     
 > [!NOTE]
-> All test recording must begin from the Cloud POS login page. If the recording is started from the home, transaction or any other pages playback will be failed and the recording need to be recorded again from login page. 
+> All test recording must begin from the Cloud POS sign in page. If the recording is started from the home page, any transaction or  other page playback will fail and you will need to start the recording again from the sign in page. 
 
 
-6. Perform the actions that you want to perform in the POS UI.
+6. Perform the needed actions in the POS user interface.
 
     > [!div class="mx-imgBorder"]
     > [![Test recorder steps](./media/Steps.png)](./media/Steps.png)
