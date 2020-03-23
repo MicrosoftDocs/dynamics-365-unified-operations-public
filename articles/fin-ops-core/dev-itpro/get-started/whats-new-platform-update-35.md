@@ -25,16 +25,16 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: sericks
-ms.search.validFrom: 2020-02-29
-ms.dyn365.ops.version: Platform update 34
+ms.search.validFrom: 2020-04-30
+ms.dyn365.ops.version: Platform update 35
 
 ---
-# Preview features in Platform update 34 for Finance and Operations apps (May 2020)
+# Preview features in Platform update 35 for Finance and Operations apps (July 2020)
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic lists the preview features that are new or changed for Platform update 34 for Finance and Operations apps. This version has a build number of 7.0.5600 and is available on the following schedule:
+This topic lists the preview features that are new or changed for Platform update 35 for Finance and Operations apps. This version has a build number of 7.0.XXXX and is available on the following schedule:
 
 - **Preview release:** ? 2020
 - **General availability (self-update):** ? 2020
@@ -55,7 +55,7 @@ For more information about Platform update 35, see [Additional resources](whats-
 
 ### Platform update 35 bug fixes
 
-For information about the bug fixes that are included in each update, sign in to LCS, and view [this KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=424137&dbType=3&qc=bf63d49dcc96e51eb42ac1dd66c6c5e5d7548f1e176f729e324ea3353b9860cb).
+For information about the bug fixes that are included in the update, sign in to LCS, and view [this KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=424137&dbType=3&qc=bf63d49dcc96e51eb42ac1dd66c6c5e5d7548f1e176f729e324ea3353b9860cb).
 
 ### Dynamics 365: 2020 release wave 1 plan
 
