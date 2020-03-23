@@ -4,8 +4,7 @@ VAT declaration for the Netherlands
 This topic explains how to set up and generate the value-added tax (VAT)
 declaration for legal entities in the Netherlands.
 
-For general information about how to set up the VAT statement, see *VAT
-reporting for Europe*.
+For general information about how to set up the VAT statement, see [VAT reporting for Europe](emea-vat-reporting.md).
 
 Set up sales tax reporting codes for VAT reporting
 ------------------------------------------
