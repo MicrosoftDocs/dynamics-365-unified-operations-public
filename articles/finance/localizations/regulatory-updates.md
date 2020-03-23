@@ -5,7 +5,7 @@ title: Regulatory updates
 description: This topic provides a list of planned and released regulatory updates for Microsoft Dynamics 365 Finance.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 03/17/2020
+ms.date: 03/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -57,7 +57,7 @@ For the latest regulatory update plans, refer to the following table.
 |      Brazil         |   January 2020       | 10.0.8      |   Complementary information of ICMS-ST    |
 |      Brazil         |   March 2020 - January 2020       | 10.0.9, 10.0.8HF      |   Sped Fiscal Layout 014 |
 |      Brazil         |   March 2020 - January 2020       | 10.0.9, 10.0.8HF      |   DRCST SC – Ordinance SEF Nº 343DR   |
-|      France         |   April 2020       | 10.0.10      |   Legal fees declaration to tax authorities for self employed people (DAS2)    |
+|      France         |   April 2020       | 10.0.10      |   Legal fees declaration to tax authorities for self-employed people (DAS2)    |
 |      France         |   March 2020       | 10.0.9      |   French localization: ISO 20022 format for international payment and treasury transfer    |
 |      India         |   March 2020      | 10.0.9      |   New GSTR (ANX-1 & ANX-2) Return offline Tool    |
 |      Italy         |   January 2020      | 10.0.8      |   Changes in VAT management by D.L. 119 of 23 Oct 2018: Yearly tax communication    |
