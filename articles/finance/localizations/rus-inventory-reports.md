@@ -1,5 +1,8 @@
+Inventory reports
+=================
+
 Introduction
-============
+------------
 
 There are four local inventory reports available in Russia:
 
@@ -12,7 +15,7 @@ There are four local inventory reports available in Russia:
 -   Adjustment (cur.)
 
 Preliminary setup
-=================
+-----------------
 
 Before you can generate the local inventory reports, complete the following
 steps to set up number sequences for on-hand inventory dimension combination.
@@ -25,15 +28,14 @@ steps to set up number sequences for on-hand inventory dimension combination.
     assign the number sequence in the **Number sequence code** field.
 
 Inventory balance turnover
-==========================
+--------------------------
 
 Using the **Inventory balance turnover** inquiry, you can view balances and
 turnovers in the context of dimensions. You can select dimensions to include in
 the report, and specify the selection criteria for dimensions when you use
 filters.
 
-Calculate on-hand inventory on inventory closing date
------------------------------------------------------
+### Calculate on-hand inventory on inventory closing date
 
 To optimize the performance of the **Inventory balance turnover** inquiry, use
 the periodic procedure, **On-hand inventory on date**. It calculates on-hand
@@ -52,18 +54,14 @@ inventory on the date when the inventory was previously closed.
     results of the previous inventory calculation on the specified inventory
     closing date and perform a full inventory calculation.
 
-![](media/d647bb55c55cb3b17339856debb1e05b.png)
+    ![](media/d647bb55c55cb3b17339856debb1e05b.png)
 
->   A screenshot of a cell phone Description automatically generated
-
-1.  When the inventory calculation is complete, on the **Closing and
+4.  When the inventory calculation is complete, on the **Closing and
     adjustment** page, for the corresponding inventory closure line, on the
     **Session** tab, the **Calculation on-hand inventory on date** option will
     be set to **Yes**.
 
-![](media/6e2e7a9e3c0a18931308e5c04d3197ab.png)
-
->   A screenshot of a computer Description automatically generated
+    ![](media/6e2e7a9e3c0a18931308e5c04d3197ab.png)
 
 If you try to run the inventory calculation again to close an inventory that has
 the **Calculation on-hand inventory on date** option set to **Yes**, and the
@@ -73,40 +71,37 @@ The results of the on-hand inventory calculation on the inventory closing date
 are deleted from the system when the corresponding inventory closing is
 canceled.
 
-Inventory balance turnover inquiry
-----------------------------------
+### Inventory balance turnover inquiry
 
 1.  Go to **Inventory management \> Inquires and reports \> Transactions \>
     Inventory balance turnover**.
 
-![](media/79884dd542ff0730051415c05c333ced.png)
+    ![](media/79884dd542ff0730051415c05c333ced.png)
 
->   A screenshot of a cell phone Description automatically generated
-
-1.  On the **Inventory balance turnover** dialog box, on the **General** tab, in
+2.  On the **Inventory balance turnover** dialog box, on the **General** tab, in
     the **Start date** and **To date** fields, specify the period of report.
 
-2.  Set the **Expand turnovers** option to **Yes** to divide the turnover
+3.  Set the **Expand turnovers** option to **Yes** to divide the turnover
     columns into two groups in the inquiry results:
 
     -   Internal turnovers that *don’t* change the total balances of the
         company. This includes inventory movements on inventory transfer
         journals and transfer orders.
 
->   **Note:** The following documents are not considered internal turnovers
->   because the item from the warehouse can be written off:
+        >   **Note:** The following documents are not considered internal turnovers
+        >   because the item from the warehouse can be written off:
 
--   Quarantine orders
+        >   -   Quarantine orders
 
--   Transfer order scarp
+        >   -   Transfer order scarp
 
--   Quality orders
+        >   -   Quality orders
 
     -   External turnovers that *do* change the total balances of the company.
         This includes inventory movements on purchase or sales orders and
         inventory journals.
 
-1.  Set the **Show physical turnover** option to **Yes** to separate physical
+4.  Set the **Show physical turnover** option to **Yes** to separate physical
     turnovers from financial turnovers. Physical turnovers include packing slips
     and production orders, picking lists, by-product journals and
     report-as-finished journals for production orders. Financial turnovers
@@ -115,104 +110,102 @@ Inventory balance turnover inquiry
     group of columns. If you set the **Show physical turnover** option to
     **No**, the physical turnover is added to the financial turnover.
 
->   *Notes*:
+    *Notes*:
 
--   If you use the physical storno mechanism for inventory transactions during a
-    financial update, the physical turnover and storno physical turnover for
-    financially updated inventory transactions are reflected in the same column
-    as a receipt or issue, but with opposite signs. That is, they are summarized
-    to zero, if both the physical and financial dates of the inventory
-    transaction are included in the inquiry period. If the physical date is
-    included in the inquiry period, and the financial is not, the inquiry will
-    contain only physical movement, but the reverse/storno of physical movement
-    and financial movement will not be considered.
+    -   If you use the physical storno mechanism for inventory transactions during a
+        financial update, the physical turnover and storno physical turnover for
+        financially updated inventory transactions are reflected in the same column
+        as a receipt or issue, but with opposite signs. That is, they are summarized
+        to zero, if both the physical and financial dates of the inventory
+        transaction are included in the inquiry period. If the physical date is
+        included in the inquiry period, and the financial is not, the inquiry will
+        contain only physical movement, but the reverse/storno of physical movement
+        and financial movement will not be considered.
 
->   For example, for the following inventory transactions, the purchase and
->   credit note for the purchase are listed.
+        For example, for the following inventory transactions, the purchase and
+        credit note for the purchase are listed.
 
-| Document type                | Type of inventory transaction | Credit correction (physical) | Quantity |
-|------------------------------|-------------------------------|------------------------------|----------|
-| Purchase order               | Receipt                       | No                           | 10       |
-| Credit note for the purchase | Issue                         | Yes                          | \-3      |
+        | Document type                | Type of inventory transaction | Credit correction (physical) | Quantity |
+        |------------------------------|-------------------------------|------------------------------|----------|
+        | Purchase order               | Receipt                       | No                           | 10       |
+        | Credit note for the purchase | Issue                         | Yes                          | \-3      |
 
->   If the **Storno** dimension is not selected, the report will show the line
->   with the following quantities:
+        If the **Storno** dimension is not selected, the report will show the line
+        with the following quantities:
 
-| Quantity (Receipt) | Quantity (Issue) |
-|--------------------|------------------|
-| 7                  | 0                |
+        | Quantity (Receipt) | Quantity (Issue) |
+        |--------------------|------------------|
+        | 7                  | 0                |
 
--   If the physical or financial update of inventory transaction wasn’t posted
-    to the general ledger, the value in the **Balance account** dimension for
-    the inventory transactions is empty.
+    -   If the physical or financial update of inventory transaction wasn’t posted
+        to the general ledger, the value in the **Balance account** dimension for
+        the inventory transactions is empty.
 
-1.  Set the **Show totals** option to **Yes** to view lines with subtotals on
+5.  Set the **Show totals** option to **Yes** to view lines with subtotals on
     dimensions.
 
-2.  Set the **Show zero turnover** option to **Yes** to view lines with zero
+6.  Set the **Show zero turnover** option to **Yes** to view lines with zero
     turnovers (but a non-zero initial balance) for the period. This option is
     automatically selected if the **Show totals** option is selected.
 
-3.  Set the **Show item name** option to **Yes** to view the product name in
+7.  Set the **Show item name** option to **Yes** to view the product name in
     addition to the product code.
 
-4.  On the **Dimensions** tab, select dimensions to include in the report.
+8.  On the **Dimensions** tab, select dimensions to include in the report.
 
-    ![A screenshot of a cell phone Description automatically generated](media/d57b3b940689667100b8bf9de03ecb18.png)
+    ![](media/d57b3b940689667100b8bf9de03ecb18.png)
 
->   The following dimensions are available:
+    The following dimensions are available:
 
-1.  **Item number**
+    a.  **Item number**
 
-2.  **Inventory dimensions**
+    b.  **Inventory dimensions**
 
-3.  **Kind of activity**: The value **Unspecified** is displayed if the
-    inventory movement does not have an **Inventory profile** dimension.
+    c.  **Kind of activity**: The value **Unspecified** is displayed if the
+        inventory movement does not have an **Inventory profile** dimension.
 
-4.  **Balance account**
+    d.  **Balance account**
 
-5.  **Agreement**
+    e.  **Agreement**
 
-6.  **Storno** allows you to separate storno transactions.
+    f.  **Storno** allows you to separate storno transactions.
 
-    1.  If the **Storno** dimension is selected, then storno inventory
-        transactions are displayed separately in the report on separate lines.
-        These lines have the value **Yes** in the **Storno** column. The
-        transactions are displayed with different direction and amount sign.
-        Storno of incoming inventory transactions are shown in the **Issue**
-        column with a negative sign, and storno of outgoing inventory
-        transactions are shown in the **Receipt** column with a negative sign.
+       1.  If the **Storno** dimension is selected, then storno inventory
+           transactions are displayed separately in the report on separate lines.
+           These lines have the value **Yes** in the **Storno** column. The
+           transactions are displayed with different direction and amount sign.
+           Storno of incoming inventory transactions are shown in the **Issue**
+           column with a negative sign, and storno of outgoing inventory
+           transactions are shown in the **Receipt** column with a negative sign.
 
-    2.  If the **Storno** dimension is not selected, the storno inventory
-        transactions decrease the value of the initial transaction in the
-        corresponding columns. Storno of incoming inventory transactions have a
-        decreased value in the **Issue** column, where storno of outgoing
-        inventory transactions have a decreased value in the **Receipt** column.
+       2.  If the **Storno** dimension is not selected, the storno inventory
+           transactions decrease the value of the initial transaction in the
+           corresponding columns. Storno of incoming inventory transactions have a
+           decreased value in the **Issue** column, where storno of outgoing
+           inventory transactions have a decreased value in the **Receipt** column.
 
->   For example, the following inventory transactions show the purchase and
->   credit note for the purchase:
+       For example, the following inventory transactions show the purchase and
+       credit note for the purchase:
 
-| Document type                | Type of inventory transaction | Credit correction (physical) | Quantity |
-|------------------------------|-------------------------------|------------------------------|----------|
-| Purchase order               | Receipt                       | No                           | 10       |
-| Credit note for the purchase | Issue                         | Yes                          | \-3      |
+       | Document type                | Type of inventory transaction | Credit correction (physical) | Quantity |
+       |------------------------------|-------------------------------|------------------------------|----------|
+       | Purchase order               | Receipt                       | No                           | 10       |
+       | Credit note for the purchase | Issue                         | Yes                          | \-3      |
 
->   If the **Storno** dimension is selected, the report will show the lines with
->   the following quantities:
+       If the **Storno** dimension is selected, the report will show the lines with
+       the following quantities:
 
-| Storno | Quantity (Receipt) | Quantity (Issue) |
-|--------|--------------------|------------------|
-| No     | 10                 | 0                |
-| Yes    | \-3                | 0                |
+       | Storno | Quantity (Receipt) | Quantity (Issue) |
+       |--------|--------------------|------------------|
+       | No     | 10                 | 0                |
+       | Yes    | \-3                | 0                |
 
-1.  On the **Records to include** tab, use the filter to define the transactions
+9.  On the **Records to include** tab, use the filter to define the transactions
     to include in the report.
 
-2.  Click **OK** to generate a report.
+10. Click **OK** to generate a report.
 
-![](media/e7180ba0b39b0f27f209f2fa03ee3600.png)
-
->   A screenshot of a cell phone Description automatically generated
+    ![](media/e7180ba0b39b0f27f209f2fa03ee3600.png)
 
 *Notes.*
 
@@ -238,19 +231,19 @@ updated only physically are included in the inquiry with the physical
 transaction date. Inventory settlements are reflected in the report with the
 date of the inventory settlement.
 
-1.  Depending on the type of inventory transaction, the inquiry determines the
+11. Depending on the type of inventory transaction, the inquiry determines the
     direction of the inventory turnover as follows:
 
-| Type of inventory transaction         | Direction                                                             |
-|---------------------------------------|-----------------------------------------------------------------------|
-| Purchase order                        | Receipt                                                               |
-| Sales order                           | Issue                                                                 |
-| Production                            | Receipt                                                               |
-| Production line                       | Issue                                                                 |
-| By-products                           | Receipt                                                               |
-| Other types of inventory transactions | Receipt for incoming transactions and Issue for outgoing transactions |
+    | Type of inventory transaction         | Direction                                                             |
+    |---------------------------------------|-----------------------------------------------------------------------|
+    | Purchase order                        | Receipt                                                               |
+    | Sales order                           | Issue                                                                 |
+    | Production                            | Receipt                                                               |
+    | Production line                       | Issue                                                                 |
+    | By-products                           | Receipt                                                               |
+    | Other types of inventory transactions | Receipt for incoming transactions and Issue for outgoing transactions |
 
-2.  If the **Item number** dimension is selected, you can select a line with the
+12. If the **Item number** dimension is selected, you can select a line with the
     line type, **Transaction**, and on the **Action pane**, select
     **Transaction**. On the opened **Inventory transactions** page, you can see
     the list of transactions that generated turnovers in the selected line. If
@@ -258,16 +251,15 @@ date of the inventory settlement.
     inventory settlements within the inquiry period, the transaction is not
     reflected on this page.
 
-3.  Select **Recalculate** to set new inquiry parameters and recreate the
+13. Select **Recalculate** to set new inquiry parameters and recreate the
     results.
 
-4.  Select **Print** to view or save the report as a Microsoft Excel document.
+14. Select **Print** to view or save the report as a Microsoft Excel document.
     On the **Parameters** FastTab, set the **Print ranges** to **Yes** if you
     want the report to display the filters specified in the inquiry parameters,
     as well as the filters applied to the inquiry results.
 
-Clean up temporary data
------------------------
+### Clean up temporary data
 
 When calculating data for an **Inventory balance turnover** inquiry, the system
 generates temporary data but stores the data in permanent database tables. After
@@ -279,7 +271,7 @@ date** and **Record references cleanup** periodic operations are used.
 1.  Go to **Inventory management \> Periodic tasks \> Clean up \> On-hand
     inventory calculation on date**.
 
-    ![A screenshot of a cell phone Description automatically generated](media/cbf88a1849b82ed6e9a2f624370a0890.png)
+    ![](media/cbf88a1849b82ed6e9a2f624370a0890.png)
 
 2.  On the **Parameters** FastTab, in the **Created until** field, specify the
     date. The temporary data with a creation date before the specified date will
@@ -291,7 +283,7 @@ date** and **Record references cleanup** periodic operations are used.
 4.  Go to **Organization administration \> Periodic \> Record references
     cleanup**.
 
-    ![A screenshot of a cell phone Description automatically generated](media/81beb1912d554847fb85a0de733a72f1.png)
+    ![](media/81beb1912d554847fb85a0de733a72f1.png)
 
 5.  On the **Parameters** FastTab, in the **Created until** field, specify the
     date. All temporary data with creation date before the specified date will
@@ -300,14 +292,14 @@ date** and **Record references cleanup** periodic operations are used.
 6.  Select **OK**.
 
 Pay-sheet of receipts and expenditure report
-============================================
+--------------------------------------------
 
 This report displays receipts and issues for all items.
 
 1.  Go to **Inventory management \> Inquires and reports \> Transactional
     reports \> Pay-sheet of receipts and reports expenditure**.
 
-    ![A screenshot of a cell phone Description automatically generated](media/d6f25c019a1e81185f76376c7b3bbf60.png)
+    ![](media/d6f25c019a1e81185f76376c7b3bbf60.png)
 
 2.  On the **Pay-sheet of receipts and expenditure** dialog box, on the
     **Parameters** FastTab, specify the value of **Exclude storno** parameter:
@@ -328,22 +320,20 @@ This report displays receipts and issues for all items.
 
 4.  Select **OK** to generate a report.
 
-![](media/b277be7ff661c79505bb628d66ef3ea2.png)
-
->   A screenshot of a cell phone Description automatically generated
+    ![](media/b277be7ff661c79505bb628d66ef3ea2.png)
 
 Adjustments report
-==================
+------------------
 
 This report shows all adjustments that were done during the inventory
 recalculation or closing. To do this, go to **Inventory management \> Inquires
 and reports \> Transactional reports \> Adjustments**. Specify the parameters,
 and then select **OK** to generate a report.
 
-![A screenshot of a cell phone Description automatically generated](media/7d6a69581a866cffd9a45ac4dc646250.png)
+![](media/7d6a69581a866cffd9a45ac4dc646250.png)
 
 Adjustments in currency report
-==============================
+------------------------------
 
 This report shows all adjustments that were done during the inventory
 recalculation or closing in the reporting currency. To do this, go to
