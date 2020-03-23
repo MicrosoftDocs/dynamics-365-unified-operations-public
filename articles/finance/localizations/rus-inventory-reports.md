@@ -110,7 +110,7 @@ canceled.
     group of columns. If you set the **Show physical turnover** option to
     **No**, the physical turnover is added to the financial turnover.
 
-    *Notes*:
+    **Notes**:
 
     -   If you use the physical storno mechanism for inventory transactions during a
         financial update, the physical turnover and storno physical turnover for
@@ -156,33 +156,25 @@ canceled.
     ![](media/4_Inventory_balance_turnover.png)
 
     The following dimensions are available:
-
-    a.  **Item number**
-
-    b.  **Inventory dimensions**
-
-    c.  **Kind of activity**: The value **Unspecified** is displayed if the
-        inventory movement does not have an **Inventory profile** dimension.
-
-    d.  **Balance account**
-
-    e.  **Agreement**
-
-    f.  **Storno** allows you to separate storno transactions.
-
-       1.  If the **Storno** dimension is selected, then storno inventory
-           transactions are displayed separately in the report on separate lines.
-           These lines have the value **Yes** in the **Storno** column. The
-           transactions are displayed with different direction and amount sign.
-           Storno of incoming inventory transactions are shown in the **Issue**
-           column with a negative sign, and storno of outgoing inventory
-           transactions are shown in the **Receipt** column with a negative sign.
-
-       2.  If the **Storno** dimension is not selected, the storno inventory
-           transactions decrease the value of the initial transaction in the
-           corresponding columns. Storno of incoming inventory transactions have a
-           decreased value in the **Issue** column, where storno of outgoing
-           inventory transactions have a decreased value in the **Receipt** column.
+        a. **Item number**
+        b. **Inventory dimensions**
+        c. **Kind of activity**: The value **Unspecified** is displayed if the
+           inventory movement does not have an **Inventory profile** dimension.
+        d. **Balance account**
+        e. **Agreement**
+        f. **Storno** allows you to separate storno transactions.
+           1.  If the **Storno** dimension is selected, then storno inventory
+               transactions are displayed separately in the report on separate lines.
+               These lines have the value **Yes** in the **Storno** column. The
+               transactions are displayed with different direction and amount sign.
+               Storno of incoming inventory transactions are shown in the **Issue**
+               column with a negative sign, and storno of outgoing inventory
+               transactions are shown in the **Receipt** column with a negative sign.
+           2.  If the **Storno** dimension is not selected, the storno inventory
+               transactions decrease the value of the initial transaction in the
+               corresponding columns. Storno of incoming inventory transactions have a
+               decreased value in the **Issue** column, where storno of outgoing
+               inventory transactions have a decreased value in the **Receipt** column.
 
        For example, the following inventory transactions show the purchase and
        credit note for the purchase:
