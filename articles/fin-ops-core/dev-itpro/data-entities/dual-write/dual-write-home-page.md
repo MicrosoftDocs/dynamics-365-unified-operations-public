@@ -82,7 +82,6 @@ These topics describe mapping between concepts in Finance and Operations applica
 
 + [Support for Field Service solutions and Project Service Automation solutions](field-service-project-service-automation.md)
 + [Initial synchronization choices and administration views](initial-sync.md)
-+ [Troubleshooting data integration](dual-write-troubleshooting.md)
 
 ## Troubleshooting
 
@@ -93,4 +92,4 @@ These topics describe mapping between concepts in Finance and Operations applica
 + [Troubleshoot live synchronization issues](dual-write-troubleshooting-live-sync.md)
 + [Troubleshoot issues related to solution awareness](dual-write-troubleshooting-solution-awareness.md)
 + [Troubleshoot issues related to upgrades of Finance and Operations apps](dual-write-troubleshooting-finops-upgrades.md)
-+ [General troubleshooting](dual-write-troubleshooting-general.md)
++ [General troubleshooting](dual-write-troubleshooting.md)
