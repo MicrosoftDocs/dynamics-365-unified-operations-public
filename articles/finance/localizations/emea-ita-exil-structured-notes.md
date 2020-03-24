@@ -84,6 +84,10 @@ Go to **Accounts receivable** \> **Setup** \> **Forms** \> **Forms setup** to se
 
 ![Setup of forms](media/emea-ita-exil-notes-setup-forms.jpg)
 
+### Direct attachment to documents
+Advanced notes can be automatically attached directly to **Sales Order confirmations**, **Picking lists**, **Packing slips** and **Invoices** without preliminary attachment to Sales orders.
+To activate direct attachment, go to **Accounts receivable** \> **Setup** \> **Forms** \> **Forms setup** \> **General** FastTab > **Advanced notes** section and turn on **Direct attachment to documents** parameter.
+
 ## Advanced notes processing
 
 ### Generating advanced notes
