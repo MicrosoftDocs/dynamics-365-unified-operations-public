@@ -1,0 +1,21 @@
+Bills of exchange protest import from electronic file (ITALY??
+This topic explains how to set up and import Protest information from electronic Bill of exchange protest file received from the bank.
+
+Prerequisites
+Before you can use Bills of exchange protest import, the following prerequisites must be met:
+•	The primary address of the legal entity must be in Italy.
+•	The Protest handling for bills of exchange feature must be turned on in the Feature management workspace. For more information, see Feature management overview.
+
+Import GER configurations
+Following Generic Electronic Reporting (GER) configurations must be imported from LCS for further feature execution.
+•	RIBA bill of exchange protest (IT)
+Once imported, corresponding Model and model mapping configurations should be imported automatically.
+•	Payment model
+•	Payment model mapping to destination RIBA
+Setup Method of payment
+In the Method of payments – customers form, activate the Generic electronic import format parameter and select the ‘RIBA bill of exchange protest (IT)’ configuration. 
+
+Import protest information from electronic file
+To import the file, create the Protest bill of exchange journal and open the Lines. Run the import from the menu Functions > Import protest.
+On the dialog, select the Method of payment set for protest import and attach the file.
+As a result, the journal lines would be created based on information in the file.
