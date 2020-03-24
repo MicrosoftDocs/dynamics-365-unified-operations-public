@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Prerequisites to the ISO 20022 credit transfer format for international payment and treasury transfer
+title: Prerequisites for ISO 20022 credit transfer format 
 description: This topic provides information about importing the requirements needed to set the ISO20022 (FR) (pain.001) payment format.
 author: neserovleo
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.9
 
 ---
 
-# Prerequisites - ISO 20022 credit transfer format for international payment and treasury transfer
+# Prerequisites for ISO 20022 credit transfer format
 
 [!include [banner](../includes/banner.md)]
 
