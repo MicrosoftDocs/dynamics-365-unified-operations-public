@@ -42,11 +42,11 @@ This topic provides troubleshooting information for dual-write integration betwe
 
 To determine whether the errors that you see when you try to save records for update come from dual-write, first verify that dual-write is configured.
 
-+ If you have admin privileges in the Finance and Operations app, go to **Workspaces \> Data management**, and select the **Dual Write** tile. If the details of the linked environments and the list of entity maps that are running are shown, dual-write is configured.
++ If you have admin privileges in the Finance and Operations app, go to **Workspaces \> Data management**, and select the **Dual-write** tile. If the details of the linked environments and the list of entity maps that are running are shown, dual-write is configured.
 
     ![Verifying the Finance and Operations app connection when you have admin privileges](media/verify_fin_ops_1.png)
 
-+ If you don't have admin privileges, you will receive an error message. In the example in the following illustration, you can't create a customer record in the Finance and Operations app, because dual-write is configured, but the customer group and payment terms reference data don't exist in Common Data Service.
++ If you don't have admin privileges, you will receive an error message, *Unable to write data to entity \<entity name\>*. In the example in the following illustration, you can't create a customer record in the Finance and Operations app, because dual-write is configured, but the customer group and payment terms reference data don't exist in Common Data Service.
 
     ![Verifying the Finance and Operations app connection when you don't have admin privileges](media/verify_fin_ops_2.png)
 
