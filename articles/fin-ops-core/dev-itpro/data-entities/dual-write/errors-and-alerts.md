@@ -26,7 +26,7 @@ The activity log provides a chronological list of events that a specific entity 
 
 ![Viewing the activity log](media/activity-log.png)
 
-If you encounter issues while you copy pre-existing data between the two apps, the **Initial sync details** tab provides a count of the errors. It also lets you rerun the execution after you fix the underlying errors.
+If you encounter issues while you copy pre-existing data between Finance and Operations apps and Common Data Service, the **Initial sync details** tab provides a count of the errors. It also lets you rerun the execution after you fix the underlying errors.
 
 ![Fixing errors and rerunning](media/fix-error-rerun.png)
 

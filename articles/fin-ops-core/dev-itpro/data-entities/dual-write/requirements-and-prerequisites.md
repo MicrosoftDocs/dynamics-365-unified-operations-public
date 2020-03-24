@@ -51,9 +51,9 @@ Before you enable dual-write, follow these steps to make sure that you meet the 
 
 3. Grant Common Data Service access so that it can connect to a Finance and Operations app.
 
-    1. Open your instance of the Finance and Operations app by using the following URL. Replace **\<BaseAXURL\>** with your instance.
+    1. Open your instance of the Finance and Operations app by using the following URL. Replace **\<BaseFinanceandOperationsappsURL\>** with your instance.
 
-        `https://<<BaseAXURL>>/?cmp=DAT&mi=SysAADClientTable`
+        `https://<BaseFinanceandOperationsappsURL>/?cmp=DAT&mi=SysAADClientTable`
 
     2. Select **New** to add a new client ID record: **33976c19-1db5-4c02-810e-c243db79efde**. This record is the application ID for an app that will be used to connect from Common Data Service to the Finance and Operations app.
     3. Repeat the previous two steps to add another client ID record: **2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b**.
@@ -63,7 +63,7 @@ Before you enable dual-write, follow these steps to make sure that you meet the 
     When you've finished, follow these steps to refresh the list of entities:
 
     1. Go to **Workspaces \> Data management**, select the **Data entities** tile, and make sure that the entity list is filled in.
-    2. Go to **Workspaces \> Data management**, and select the **Framework parameters** tile. Then, on the **Entities** tab (`https://<<BaseAXURL>>/?cmp=USMF&mi=DM_DataManagementWorkspaceMenuItem&TableName=DMFDefinitionGroupEntity`), select **Refresh entities list**.
+    2. Go to **Workspaces \> Data management**, and select the **Framework parameters** tile. Then, on the **Entities** tab (`https://<BaseFinanceandOperationsappsURL>/?cmp=USMF&mi=DM_DataManagementWorkspaceMenuItem&TableName=DMFDefinitionGroupEntity`), select **Refresh entities list**.
 
     **Related health check result:**
 

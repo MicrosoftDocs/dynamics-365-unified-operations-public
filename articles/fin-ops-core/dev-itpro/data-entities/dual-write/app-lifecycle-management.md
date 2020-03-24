@@ -59,7 +59,7 @@ This section explains how to import entity maps from AppSource and apply them to
 	
 1. Import the dual-write core solution.
 
-    1. Create a new dual-write environment (a Finance and Operations app and Common Data Service environment).
+    1. Create a new dual-write environment (a Finance and Operations app environment and a Common Data Service environment).
     2. Follow the instructions in the [Install the dual-write core solution](#install-the-dual-write-core-solution) section earlier in this topic to install the dual-write core solution from AppSource in Power Apps.
     3. Verify that the dual-write core solution is listed under **Solutions** in Power Apps.
 
@@ -177,7 +177,7 @@ Sometimes, a solution might contain different implementations of an entity map. 
 
 2. Upgrade the entity maps.
 
-    After you allow list your tenant, a notification prompts you to upgrade the entity maps.
+    You'll see a notification prompting you to upgrade.
 
     ![Prompt to upgrade your entity maps](media/upgrade-prompt.png)
 
