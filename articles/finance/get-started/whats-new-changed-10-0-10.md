@@ -70,7 +70,7 @@ Microsoft Dynamics 365 Finance 10.0.10 preview includes Platform update 34. To l
 
 
 ### Bug fixes and additional enhancements
-For information about the bug fixes included in each of the updates that are part of 10.0.10, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=400368&dbType=3&qc=8405de0733ac4045859057a4e710a3ef07637ce2485f6a317ea49efe6f67f35f).
+For information about the bug fixes included in each of the updates that are part of 10.0.10, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=424137&dbType=3&qc=bf63d49dcc96e51eb42ac1dd66c6c5e5d7548f1e176f729e324ea3353b9860cb).
 
 #### Add vendor ID and vendor name to the Posted projects list page
 Enabling this feature will display the Vendor ID and Vendor name on the **Posted projects list page** for any project-related purchase order expenses.
