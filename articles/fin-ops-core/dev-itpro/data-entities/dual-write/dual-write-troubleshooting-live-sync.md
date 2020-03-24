@@ -55,7 +55,7 @@ To fix the issue, follow the steps in [Prerequisites for enabling dual-write]().
 
 **Required role to fix the issue:** System admin
 
-You might receive the following error message every time that you try to save entity data in a Finance and Operations app:
+You might receive an error message like the following every time that you try to save entity data in a Finance and Operations app:
 
 *Cannot save the changes to the database. Unit of Work can not commit transaction. Unable to write data to entity uoms. Writes to UnitOfMeasureEntity failed with error message Unable to sync with entity uoms.*
 
