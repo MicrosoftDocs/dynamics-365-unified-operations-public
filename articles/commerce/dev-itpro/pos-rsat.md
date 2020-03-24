@@ -223,7 +223,7 @@ After you end a recording session, you can download the recording by selecting *
 
 The .axtr file is saved to the local file system. You must manually upload this file to LCS or Azure DevOps and then either delete it from the file system or secure it. 
 
-To upload to Azure Dev Ops directly:
+To upload to Azure DevOps directly:
 1. Change the .axtr file extension to .zip.
 2. Open the .zip package. 
 3. Inside the package there will be file with name Recording.xml. Upload the Recording.xml to the test case in Azure DevOps. Don’t upload the entire .zip or .axtr package.
