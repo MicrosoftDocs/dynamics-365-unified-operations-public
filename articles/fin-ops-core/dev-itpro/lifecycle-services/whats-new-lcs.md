@@ -5,7 +5,7 @@ title: What's new or changed in Lifecycle Services (LCS)
 description: This topic provides links to the release plans, major announcements, and more for Microsoft Dynamics Lifecycle Services (LCS). 
 author: laneswenka
 manager: AnnBe
-ms.date: 03/12/2020
+ms.date: 03/24/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -41,6 +41,14 @@ To get started with LCS, see the [Lifecycle Services (LCS) user guide](lcs-user-
 > LCS features and service changes will no longer be announced via blog posts. Descriptions of LCS features are provided in the [release plans](https://go.microsoft.com/fwlink/?linkid=2010158). 
 
 This following sections list the features that are included in LCS releases.
+
+## March 2020 - wave 2
+
+| Area | Feature |
+|------|---------|
+| Admin APIs | [RESTful APIs for database export](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/restful-apis-database-export) - Preview |
+| Environment actions | [Apply data upgrade packages for AX2012 customers on Sandbox environments](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/apply-data-upgrade-packages-ax-2012-customers-sandbox-environments) - GA |
+| Environment actions | [Platform update 20 or higher required for database movement operations](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/platform-update-20-required-database-movement-operations) - GA |
 
 ## March 2020 - wave 1
 
