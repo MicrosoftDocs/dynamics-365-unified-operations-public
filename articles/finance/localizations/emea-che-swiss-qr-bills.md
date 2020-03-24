@@ -2,10 +2,10 @@
 # required metadata
 
 title: Swiss QR-bills
-description: This article explains how to generate QR-bills and process incoming QR-slips in Microsoft Dynamics 365 for Finance and Operations.
-author: v-lenest
+description: This topic provides information about how to generate QR-bills and process incoming QR-slips.
+author: neserovleo
 manager: AnnBe
-ms.date: 03/09/2020
+ms.date: 03/24/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -33,24 +33,19 @@ ms.dyn365.ops.version: 10.0.9
 [!include [banner](../includes/banner.md)]
 
 
-## Summary
+Beginning July 2020, processing and issuing QR-bills (QR-slips) in addition to the invoice will be required. This topic explains how to generate QR-bills and process the incoming QR-slips in Dynamics 365 Finance.
 
-Starting from July 2020 is is mandatory to process QR-bills (QR-slips) which should be issued in addition to the invoice. This article explains how to generate QR-bills and process incoming QR-slips in Microsoft Dynamics 365 for Finance and Operations.
+To enable the QR-bill functionality, enable the following features in the **Feature management** module:
 
-# Prerequisites and setup
+- **Configurable payment ID*
+- **(Switzerland) QR-bills**
 
+> [!NOTE]
+> When you enable the Swiss QR-bill functionality, it becomes available to additional countries. Depending on the address of the legal entity, these counties include, CH, DE, AT, FR, and IT.
 
-## Feature activation
+## Electronic reporting configurations
 
-To enable the QR-bill functionality, it is required to activate following options in the Feature management module:
-
-- Configurable payment ID
-- (Switzerland) QR-bills
-Upon activation, Swiss QR-bill functionality is available for extended set of countries: CH, DE, AT, FR, IT (depending on the address of the legal entity).
-
-## GER configurations
-
-Latest versions of the following GER configurations should be imported from LCS repository:
+The most recent versions of the following Electronic reporting configurations should be imported from LCS:
 
 - Swiss QR-Bill text
 - Swiss QR-Bill Structured information
@@ -58,19 +53,19 @@ Latest versions of the following GER configurations should be imported from LCS 
 - ISO20022 pain.002
 - ISO20022 Camt.054
 
-All required model and model mapping configurations would be imported automatically.
+All required model and model mapping configurations will be imported automatically.
 
-## Company Bank account setup
+## Company bank account setup
 
-On the Bank account form, it is possible to specify the QR-IBAN field. QR-IBAN could be used simultaneously with ordinary IBAN and has similar validations in the system.
+On the **Bank account** page (**Cash and bank management** \> **Bank Accounts** \> **Bank accounts**), in the **QR-IBAN** field, specify the QR-IBAN number. This number can be used simultaneously with the ordinary IBAN number and has similar validations in the system.
 
-## Cash discount and Tax codes descriptions setup
+### Cash discounts and tax codes descriptions 
 
-Cash discount and Tax codes used should have the QR-bill descriptions populated which would be used for QR-bill printing.
+Cash discounts and tax codes should all have the QR-bill description field populated. This description is used in QR-bill printing.
 
-## Legal entity Registration Id setup
+## Legal entity registration ID setup
 
-To correctly populate the UID number on the generated QR slip, the value should be filled in in the Registration Id section should be filled in on the Legal entity setup with the Registration category corresponding to the VAT Id.
+To correctly populate the UID number on the generated QR slip, the UID value should be filled in in the Registration ID section should be filled in on the Legal entity setup with the Registration category corresponding to the VAT Id.
 
 ## Accounts Receivable Setup
 
@@ -171,8 +166,8 @@ After the invoice is posted, the vendor transaction with imported Payment Id wou
 
 ## Payment files processing
 
-Create Vendor payment journal lines using the Payment proposal function. For more details, see also the link (https://docs.microsoft.com/en-us/dynamics365/finance/localizations/tasks/create-export-vendor-payments-iso20022-payment-format).
+Create a vendor payment journal lines by using the Payment proposal functionality. For more information, see also the link [Create and export vendor payments using ISO20022 payment format](tasks/create-export-vendor-payments-iso20022-payment-format.md).
 
-For QR-bill related payments, the Credit transfer file would be generated based on the Payment Id value, retrieved from the QR code.
+For QR-bill related payments, the credit transfer file is generated based on the payment ID value, which is retrieved from the QR code.
 
-Importing of the pain.002 and camt.054 files are also available from the Payment transfers form. For more details, see also Import the pain.002 status return or camt.054 debit advice files into the Vendor payment journal (https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-iso20022-file-formats).
+You can import the **pain.002** and **camt.054** files from the **Payment transfers** page. For more details, see [Import ISO20022 files](emea-iso20022-file-formats.md).
