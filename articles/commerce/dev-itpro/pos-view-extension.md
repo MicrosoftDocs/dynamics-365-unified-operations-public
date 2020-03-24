@@ -51,7 +51,7 @@ The following table shows the POS views that currently support extensions. It al
 > The upcoming releases and hotfix will add support for more extension points in other views.
 
 
-| POS view                        | Custom controls are supported | Custom columns are supported | Custom app bar buttons are supported |
+| POS view (Release)              | Custom controls are supported | Custom columns are supported | Custom app bar buttons are supported |
 |---------------------------------|-------------------------------|------------------------------|--------------------------------------|
 | Cart view (Screen layout based) | Yes                           | Yes                          | No                                   |
 | CustomerAddEditView             | Yes                           | No                           | Yes                                  |
@@ -81,6 +81,8 @@ The following table shows the POS views that currently support extensions. It al
 | ReturnTransactionView           | No                            | Yes                          | Yes                               |
 | PickingAndReceivingDetailsView  | No                            | Yes                          | Yes                    |
 | PickingAndReceivingDetailsView (Advanced warehouse)  | No                            | Yes                          | Yes           |
+| SalesInvoiceDetailsView (10.0.11) | No                            | No                          | Yes           |
+| SalesInvoicesView (10.0.11) | No                            | Yes                          | No           |
 
 
 
