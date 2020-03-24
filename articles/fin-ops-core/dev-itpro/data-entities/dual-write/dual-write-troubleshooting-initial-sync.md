@@ -110,4 +110,3 @@ This type of error occurs during initial synchronization of mappings that have s
 
 To fix the issue, you might have to run the mapping two times before the initial synchronization is successful.
 
-For more specific steps for the initial synchronization of entity mappings, see [Initial sync related and other known issues](#initial-sync-related-and-other-known-issues).
