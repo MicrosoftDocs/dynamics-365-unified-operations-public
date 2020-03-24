@@ -47,6 +47,4 @@ On the **Dual-write** page, you might receive an error message that resembles th
 
 *The entity with a name 'msdyn\_dualwriteentitymap' with namemapping='Logical' was not found in the MetadataCache.*
 
-![Example of the entity not found error message](media/error_metadata_cache.png)
-
 To fix the issue, make sure that the dual-write core solution is installed in Common Data Service. The dual-write core solution is a prerequisite for solution awareness.
