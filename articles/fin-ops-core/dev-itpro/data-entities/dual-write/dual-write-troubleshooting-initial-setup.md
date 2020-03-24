@@ -59,8 +59,6 @@ You might receive the following error message when you open the **Link to Common
 
 *Response status code does not indicate success: 404 (Not Found).*
 
-![Example of the Not Found error message](media/response_code_404.png)
-
 This error occurs when the consent step hasn't been completed. To validate whether the consent step has been completed, sign in to portal.Azure.com by using the Azure AD tenant admin account, and see whether the third-party app that has the ID **33976c19-1db5-4c02-810e-c243db79efde** appears in the Azure AD **Enterprise applications** list. If it doesn't, you must provide app consent.
 
 To provide app consent, follow these steps.
