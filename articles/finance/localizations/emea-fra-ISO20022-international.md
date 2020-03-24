@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: ISO 20022 credit transfer format for international payment and treasury transfer
-description: This topic provides information about how to set the ISO20022 (FR) (pain.001) payment format.
+title: Prerequisites to the ISO 20022 credit transfer format for international payment and treasury transfer
+description: This topic provides information about importing the requirements needed to set the ISO20022 (FR) (pain.001) payment format.
 author: neserovleo
 manager: AnnBe
 ms.date: 03/24/2020
@@ -28,14 +28,10 @@ ms.dyn365.ops.version: 10.0.9
 
 ---
 
-# ISO 20022 credit transfer format for international payment and treasury transfer
+# Prerequisites - ISO 20022 credit transfer format for international payment and treasury transfer
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about how to set the ISO20022 (FR) (pain.001) payment format to support cross border payments outside of SEPA area, treasury transfers, and payments in currencies different from EUR.
-
-
-## Prerequisites
 
 Before you can set the ISO20022 payment format, you need to import the most recent versions of the following Electronic reporting configuration from LCS:
 
