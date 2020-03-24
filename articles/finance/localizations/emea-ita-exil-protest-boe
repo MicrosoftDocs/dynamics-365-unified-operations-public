@@ -39,7 +39,7 @@ This topic explains how to set up and import Protest information from electronic
 Before you can use Bills of exchange protest import, the following prerequisites must be met:
 
 - The primary address of the legal entity must be in Italy.
-- The Protest handling for bills of exchange feature must be turned on in the Feature management workspace. For more information, see Feature management overview.
+- The Protest handling for bills of exchange feature must be turned on in the Feature management workspace. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Import GER configurations
 Following Generic Electronic Reporting (GER) configurations must be imported from LCS for further feature execution.
