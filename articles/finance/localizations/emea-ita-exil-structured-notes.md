@@ -89,6 +89,8 @@ Advaned notes can be directly attached automatically to sales order confirmation
 1. Go to **Accounts receivable** \> **Ssetup** \> **Forms** \> **Forms setup**.
 2. On the **General** FastTab, in the **Advanced notes** section, enable the parameter, **Direct attachment to documents**.
 
+  ![Forms setup page, highlight of Direct attachment to documents parameter](media/attach-documents.jpg)
+
 ## Advanced notes processing
 
 ### Generating advanced notes
