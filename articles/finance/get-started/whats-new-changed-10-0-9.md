@@ -77,7 +77,7 @@ Microsoft Dynamics 365 Finance 10.0.9 includes Platform update 33. To learn more
 
 
 ### Bug fixes 
-For information about the bug fixes included in each of the updates that are part of 10.0.7, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=415033&dbType=3&qc=f7859b6f64b35924c4b067d8264f80b2d56abb8e1af2491c2c27a1f56b7f9bfb).
+For information about the bug fixes included in each of the updates that are part of 10.0.9, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=415034&dbType=3&qc=7bdf05cf1859a5a56f4b9c0dae88fa1653d489181b3a2c1f19429225daf5724b).
 
 
 ### Dynamics 365: 2020 release wave 1 plan
