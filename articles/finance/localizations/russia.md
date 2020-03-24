@@ -127,6 +127,7 @@ This topic provides information about functionality that supports Russian regula
 - [Customs declaration numbers](rus-custom-declaration-number.md)
 - [Inventory cost structure](rus-inventory-cost-structure.md)
 - [Inventory adjustment wizard](rus-inventory-adjustment-wizard.md)
+- [Inventory reports](rus-inventory-reports.md)
 
 ## Reporting
 

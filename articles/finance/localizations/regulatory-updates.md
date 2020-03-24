@@ -5,7 +5,7 @@ title: Regulatory updates
 description: This topic provides a list of planned and released regulatory updates for Microsoft Dynamics 365 Finance.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 03/17/2020
+ms.date: 03/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -48,34 +48,38 @@ For the latest regulatory update plans, refer to the following table.
 
 |Country|Planned release date|Release version|Regulatory update|
 |--------------------|---------------|-------|-------|
-|      Brazil         |   March 2020 - January 2020      | 10.0.9HF, 10.0.8HF      |   DRCST SC – Ordinance SEF Nº 416    |
-|      Brazil         |   March 2020  - January 2020     | 10.0.9HF, 10.0.8HF      |   SPED Contribution - Layout for Jan-2020    |
+|      Brazil         |   April 2020 - January 2020      | 10.0.10, 10.0.9HF, 10.0.8HF      |   DRCST SC – Ordinance SEF Nº 416    |
+|      Brazil         |   April 2020      | 10.0.10      |   SPED Contribuições (PIS/COFINS) - Blocks M115 and M515    |
+|      Brazil         |   April 2020      | 10.0.10      |   Sped Contributions - Record C100 and D100 updates when the credit is not recoverable    |
+|      Brazil         |   April 2020  - January 2020     | 10.0.10, 10.0.9HF, 10.0.8HF      |   SPED Contribution - Layout for Jan-2020    |
 |      Brazil         |   March 2020       | 10.0.9      |   Sped fiscal - changes in record D100 field COD_MUN_ORI    |
 |      Brazil         |   March 2020 - January 2020       | 10.0.9, 10.0.8      |   DRCST SC – Ordinance SEF Nº 254/19    |
 |      Brazil         |   January 2020       | 10.0.8      |   Complementary information of ICMS-ST    |
-|      Brazil        |   March 2020 - January 2020       | 10.0.9, 10.0.8HF      |   Sped Fiscal Layout 014 |
-|      Brazil          |   March 2020 - January 2020       | 10.0.9, 10.0.8HF      |   DRCST SC – Ordinance SEF Nº 343DR   |
-|      France          |   March 2020       | 10.0.9      |   French localization: ISO 20022 format for international payment and treasury transfer   |
-|      Hungary          |   March 2020       | 10.0.9HF, 10.0.8HF      |   Online invoicing system v.2.0 on Finance and Operations    |
-|      India          |   March 2020       | 10.0.9      |   New GSTR (ANX-1 & ANX-2) Return offline Tool   |
-|      Italy          |   January 2020       | 10.0.8      |   Changes in VAT management by D.L. 119 of 23 Oct 2018: Yearly tax communication |
-|      Italy         |   March 2020     | 10.0.9, 10.0.8HF      |   Retail - Managing customer information in POS |
+|      Brazil         |   March 2020 - January 2020       | 10.0.9, 10.0.8HF      |   Sped Fiscal Layout 014 |
+|      Brazil         |   March 2020 - January 2020       | 10.0.9, 10.0.8HF      |   DRCST SC – Ordinance SEF Nº 343DR   |
+|      France         |   April 2020       | 10.0.10      |   Legal fees declaration to tax authorities for self-employed people (DAS2)    |
+|      France         |   March 2020       | 10.0.9      |   French localization: ISO 20022 format for international payment and treasury transfer    |
+|      India         |   March 2020      | 10.0.9      |   New GSTR (ANX-1 & ANX-2) Return offline Tool    |
+|      Italy         |   January 2020      | 10.0.8      |   Changes in VAT management by D.L. 119 of 23 Oct 2018: Yearly tax communication    |
+|      Italy         |   March 2020      | 10.0.9, 10.0.8HF      |   Retail - Managing customer information in POS |
 |      Italy         |   March 2020      | 10.0.9, 10.0.8HF      |   Retail - Printing customer information in fiscal receipt |
 |      Japan          |   March 2020     | 10.0.9, 10.0.8HF     |   Japan Bankers Association replacing JBA fixed-length payment formats with ISO20022 |
 |      Japan          |   January 2020      | 10.0.8       |   Consumption tax rate change and reduced tax rate is introduced (Consumption tax report) |
 |      Mexico          |   January 2020     | 10.0.8        |   Retail -  CFDI Global: Misc. Resol 2019 - c_CodigoPostal and Timezone |
 |      Mexico           |   January 2020       | 10.0.8     |   Code validation in Products and Services catalog |
+|      Netherlands          |   April 2020   | 10.0.10     |   Dutch Taxonomy new version - NT14 |
 |      Norway          |   March 2020   | 10.0.9, 10.0.8HF     |   SAF-T XSD update to version 1.1 for Dynamics 365 for Finance and Operations |
 |      Poland          |   March 2020    | 10.0.9     |   Purchase VAT register and SAF VAT register: Custom agency from SAD documents must be replaced by third-party name and tax-exempt number |
 |      Poland          |   March 2020 - January 2020   | 10.0.9, 10.0.8HF     |   Retail - Managing customer information in POS |
 |      Poland          |   March 2020 - January 2020     | 10.0.9, 10.0.8HF     |   Retail - Printing customer information in fiscal receipt |
 |      Poland          |   March 2020 - January 2020     | 10.0.9, 10.0.8     |   SAF invoices (JPK_FA) v.3 from 2Dec2019 |
-|      Poland          |   March 2020 - January 2020     | 10.0.9, 10.0.8     |   JPK_VDEK replacing JPK_VAT (SAF VAT) |
+|      Poland          |   April 2020 - January 2020     | 10.0.10, 10.0.9, 10.0.8     |   JPK_VDEK replacing JPK_VAT (SAF VAT) |
 |      Russia          |   March 2020     | 10.0.9     |   Format of property tax declaration for 2019 reporting |
 |      Russia          |   March 2020     | 10.0.9     |   Profit tax declaration format updates |
 |      Singapore           |   January 2020     | 10.0.8      |   GST return report |
 |      Switzerland           |   March 2020     | 10.0.9      |   Swiss payment slip ISR gets new format (QR-code) |
-|      United Kingdom          |   January 2020       | 10.0.8      |   Making Tax Digital (MTD) - Consent of system administrator to transmit information outside of D365 using the integration with HMRC |
+|      United Kingdom           |   April 2020     | 10.0.10      |   MTD fraud prevention supplemented pack |
+|      United Kingdom         |   January 2020      | 10.0.8      |   Making Tax Digital (MTD) - Consent of system administrator to transmit information outside of D365 using the integration with HMRC    |
 
 
 
