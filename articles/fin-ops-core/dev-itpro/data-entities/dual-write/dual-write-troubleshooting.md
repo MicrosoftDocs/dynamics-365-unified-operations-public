@@ -67,30 +67,15 @@ After you install the package deployer tool, install the solution package by fol
 To turn on the trace log, follow these steps.
 
 1. Sign in to the Finance and Operations app, open the **Settings** page, and then, under **System**, select **Administration**.
-
-    ![Settings page](media/settings_admin.png)
-
 2. On the **Administration** page, select **System Settings**.
-
-    ![Administration page](media/system_settings.png)
-
 3. On the **Customization** tab, in the **Plug-in and custom workflow activity tracing** field, select **All** to enable the plug-in trace log. If you want to log trace logs only when exceptions occur, you can select **Exception** instead.
 
-    ![System Settings page](media/plugin_all.png)
 
 To view the trace log, follow these steps.
 
 1. Sign in to the Finance and Operations app, open the **Settings** page, and then, under **Customization**, select **Plug-in Trace Log**.
-
-    ![Settings page](media/open_trace_log.png)
-
 2. Find the trace logs where the **Type Name** field is set to **Microsoft.Dynamics.Integrator.CrmPlugins.Plugin**.
-
-    ![List of trace logs](media/trace_log_list.png)
-
 3. Double-click an item to view the full log, and then, on the **Execution** FastTab, review the **Message Block** text.
-
-    ![Message Block](media/message_block.png)
 
 ## Enable debug mode to troubleshoot live synchronization issues in Finance and Operations apps
 
