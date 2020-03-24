@@ -214,6 +214,7 @@ The following is a list of APIs exposed to perform cart-related functionality.
 | AddLoyaltyCardToCartOperationRequest |
 | ReturnCartLineOperationRequest |
 | ReturnItemOperationRequest |
+| AddExpenseAccountLineToCartOperationRequest |
 
 
 ### Payments
@@ -436,5 +437,7 @@ The following is a list of APIs exposed to perform store operations-related func
 | SearchCommissionSalesGroupsServiceRequest       |
 | IssueLoyaltyCardOperationRequest                |
 | GetPickingAndReceivingOrdersClientRequest       |
+| BankDropOperationRequest                 |
+| DeclareStartAmountOperationRequest        |
 
 
