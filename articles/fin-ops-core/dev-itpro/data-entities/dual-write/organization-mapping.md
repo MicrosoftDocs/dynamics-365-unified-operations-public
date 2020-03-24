@@ -54,7 +54,7 @@ Organization hierarchy entity maps are available for one-way synchronization of 
 
 Product information contains all the information related to the product and its definition, such as the product dimensions or the tracking and storage dimensions. As the following table shows, a collection of entity maps is created to sync products and related information.
 
-Finance and Operations | Other Dynamics 365 apps | Description
+Finance and Operations apps | Other Dynamics 365 apps | Description
 -----------------------|--------------------------------|---
 Organization hierarchy purposes | msdyn_internalorganizationhierarchypurposes | This template provides one-way synchronization of the Organization Hierarchy Purpose entity.
 Organization hierarchy type | msdyn_internalorganizationhierarchytypes | This template provides one-way synchronization of the Organization Hierarchy Type entity.
