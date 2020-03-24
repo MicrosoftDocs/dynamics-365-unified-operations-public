@@ -58,7 +58,7 @@ This release contains general performance improvements and minor bug fixes.
 
 | Area | Feature |
 |------|---------|
-| Environment actions | [Platform update 20 or higher required for database movement operations](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/platform-update-20-required-database-movement-operations) - Preview |
+| Environment actions | [Platform update 20 required for database movement operations](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/platform-update-20-required-database-movement-operations) - Preview |
 
 ## February 2020 - wave 1
 
