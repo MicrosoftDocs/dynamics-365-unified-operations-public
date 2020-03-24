@@ -46,8 +46,8 @@ This following sections list the features that are included in LCS releases.
 
 | Area | Feature |
 |------|---------|
-| Admin APIs | [RESTful APIs for database export](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/restful-apis-database-export) - Preview |
-| Environment actions | [Apply data upgrade packages for AX2012 customers on Sandbox environments](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/apply-data-upgrade-packages-ax-2012-customers-sandbox-environments) - GA |
+| Admin APIs | [RESTful APIs for database export](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/restful-apis-database-export) - Preview |
+| Environment actions | [Apply data upgrade packages for AX2012 customers on Sandbox environments](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/apply-data-upgrade-packages-ax-2012-customers-sandbox-environments) - GA |
 | Environment actions | [Platform update 20 or higher required for database movement operations](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/platform-update-20-required-database-movement-operations) - GA |
 
 ## March 2020 - wave 1
