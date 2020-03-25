@@ -332,3 +332,6 @@ There are instances where enums and entities share the same name. This name dupl
 
 ### Array fields
 OData does not support array fields in entities. This must be taken into consideration when designing entities that will be used with OData.
+
+### After restarting AOS, the first OData call takes longer to get processed
+One of the reasons why the very first OData call processed by an AOS that was restarted, is due to the metadata not being cached. This latency can be avoided by warming up OData on AOS startup. This is explained in [how to enable OData warmup](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/odata-warmup).
