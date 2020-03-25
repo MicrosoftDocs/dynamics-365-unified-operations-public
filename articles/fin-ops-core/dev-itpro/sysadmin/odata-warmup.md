@@ -5,7 +5,7 @@ title: Build an OData metadata cache when the AOS starts
 description: This topic provides information about how to build an OData metadata cache when the AOS starts.
 author: hasaid
 manager: AnnBe
-ms.date: 03/24/2020
+ms.date: 03/25/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
