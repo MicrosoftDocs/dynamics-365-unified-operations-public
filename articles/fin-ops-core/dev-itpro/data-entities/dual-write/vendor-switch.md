@@ -38,33 +38,49 @@ ms.search.validFrom: 2019-09-20
 
 ## Vendor data flow 
 
-If you use other Dynamics 365 apps for vendor mastering and you want to isolate vendor information from customers, use this basic vendor design.  
+If you choose to use the **Account** entity for storing vendor organizations and the **Contact** entity for storing vendor persons, then configure the following workflows. Otherwise this is not required.  
 
-![Basic vendor flow](media/dual-write-vendor-data-flow.png)
- 
-If you use other Dynamics 365 apps for vendor mastering and you want to continue to use the **Account** entity for storing vendor information, use this extended vendor design. In this design, extended vendor information like vendor on-hold status and vendor profile is stored in the **vendors** entity in Common Data Service. 
+## Use the extended vendor design for vendors of type Organization
 
-![Extended vendor flow](media/dual-write-vendor-detail.jpg)
- 
-Follow the below steps to use the extended vendor design: 
- 
-1. The **SupplyChainCommon** solution package contains the workflow process templates as shown in the following image.
-    > [!div class="mx-imgBorder"]
-    > ![Workflow process templates](media/dual-write-switch-3.png)
-2. Create new workflow processes using the workflow process templates: 
-    1. Create a new workflow process for the **Vendor** entity using the **Create Vendors in Account Entity** workflow process template and click **OK**. This workflow handles the vendor creation scenario for the **Account** entity.
-        > [!div class="mx-imgBorder"]
-        > ![Create Vendors in Account Entity](media/dual-write-switch-4.png)
-    2. Create a new workflow process for the **Vendor** entity using the **Update Accounts Entity** workflow process template and click **OK**. This workflow handles the vendor update scenario for the **Account** entity. 
-        > [!div class="mx-imgBorder"]
-        > ![Update Accounts Entity](media/dual-write-switch-5.png)
-    3. Create new workflow processes from the templates created on the **Accounts** entity. 
-        > [!div class="mx-imgBorder"]
-        > ![Create vendors in vendors entity](media/dual-write-switch-6.png)
-        > [!div class="mx-imgBorder"]
-        > ![Update vendors entity](media/dual-write-switch-7.png)
-    4. You can configure the workflows as real-time or background workflows based on your requirements. 
-        > [!div class="mx-imgBorder"]
-        > ![Convert to a background workflow](media/dual-write-switch-8.png)
-    5. Activate the workflows that you created on the **Account** and **Vendor** entities to start using the **Account** entity for storing vendor information. 
- 
+The **Dynamics365FinanceExtended** solution package contains these workflow process templates. You will create a workflow for each of these templates.
+
++ Create Vendors in Accounts Entity.
++ Create Vendors in Vendors Entity.
++ Update Vendors in Accounts Entity.
++ Update Vendors in Vendors Entity.
+
+To create new workflow processes using the workflow process templates:
+
+1. Create a new workflow process for the **Vendor** entity. Choose the **Create Vendors in Accounts Entity** workflow process template and click **OK**. This workflow handles the vendor creation scenario for the **Account** entity.
+
+    ![](media/create_process.png)
+
+2. Create a new workflow process for the **Vendor** entity using the **Update Vendors in Accounts Entity** workflow process template and click **OK**. This workflow handles the vendor update scenario for the **Account** entity.
+
+3. Create a new workflow process from the **Create Vendors in Vendors Entity** created on the **Account** entity.
+
+4. Create a new workflow processes from the **Update Vendors in Vendors Entity** created on the **Account** entity.
+
+5. You can configure the workflows as real-time or background workflows based on your requirements. To configure a background workflow, click **Convert to a background workflow**.
+
+    ![](media/background_workflow.png)
+
+6. Activate the workflows that you created on the **Account** and **Vendor** entities to start using the **Account** entity for storing vendor information.
+
+## Use the extended vendor design for vendors of type Person
+
+The **Dynamics365FinanceExtended** solution package contains the following workflow process templates. You will create a workflow for each of these templates.
+
++ Create Vendors of type Person in Vendors Entity.
++ Create Vendors of type Person in Contacts Entity.
++ Update Vendors of type Person in Contacts Entity.
++ Update Vendors of type Person in Vendors Entity.
+
+To create new workflow processes using the workflow process templates:
+
+1. Create a new workflow process on the **Vendor** entity using the **Create Vendors of type Person in Contacts Entity** workflow process template and click **OK**. This workflow handles the vendor creation scenario for the **Contacts** Entity.
+2. Create a new workflow process on the **Vendor** entity using the **Update Vendors of type Person in Contacts Entity** workflow process template and click **OK**. This workflow handles the vendor update scenario for the **Contacts** entity.
+3. Create a new workflow process on the **Contact** entity using the **Create Vendors of type Person in Vendors Entity** template.
+3. Create a new workflow process on the **Contact** entity using the **Update Vendors of type Person in Vendors Entity** template.
+4. You can configure the workflows as real-time or background workflows based on your requirements. To configure a background workflow, click **Convert to a background workflow**.
+5. Activate the workflows that you created on the **Contact** and **Vendor** entities to start using the **Contact** entity for storing **vendor of type Person** information.
