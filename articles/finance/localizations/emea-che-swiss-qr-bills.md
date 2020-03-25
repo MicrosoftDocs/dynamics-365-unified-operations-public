@@ -5,7 +5,7 @@ title: Swiss QR-bills
 description: This topic provides information about how to generate QR-bills and process incoming QR-slips.
 author: neserovleo
 manager: AnnBe
-ms.date: 03/24/2020
+ms.date: 03/25/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -37,7 +37,7 @@ Beginning July 2020, processing and issuing QR-bills (QR-slips) in addition to t
 
 To enable the QR-bill functionality, enable the following features in the **Feature management** module:
 
-- **Configurable payment ID*
+- **Configurable payment ID**
 - **(Switzerland) QR-bills**
 
 > [!NOTE]
@@ -65,108 +65,108 @@ Cash discounts and tax codes should all have the QR-bill description field popul
 
 ## Legal entity registration ID setup
 
-To correctly populate the UID number on the generated QR slip, the UID value should be filled in in the Registration ID section should be filled in on the Legal entity setup with the Registration category corresponding to the VAT Id.
+To correctly populate the UID number on the generated QR slip, the UID value should be enterd in the **Registration ID** field on the Legal entity setup. Additionally, the informaiton in the **Registration category** field should correspond to the **VAT ID**.
 
-## Accounts Receivable Setup
+## Accounts receivable setup
 
-## Payment Id
+### Payment ID
 
-On this form you can configure the structure of the Payment Id which would be applied during the generation of the outgoing QR slips from AR. Payment Id length is expected to be set up to 27 digits and generating the check digit using the Modulo11 algorithm.
-Non-digit symbols are excluded from the Payment Id upon execution, however it is recommended that number sequences used for Customer account and Invoice to have digits only.
+On the **Payment ID** page, you can configure the Payment ID structure which is applied when outgoing QR slips are generated from the **Aaccounts receivable** module. The length of the Payment ID should be set up to be a length of 27 digits and generating the check digit using the **Modulo11** algorithm.
+Non-digit symbols are excluded from the Payment ID when the algorithm is run, so the number sequences used for Customer accounts and Invoices should have digits only.
 
-The Payment Id type which would be applied on the invoice could be defaulted on the following level hierarchy.
-- AR parameters, tab Ledger and sales tax
-- Customer groups
-- Customer account, tab Payment Defaults
-- Method of payment, tab Payment control
+The Payment ID type applied on the invoice could default to the following level hierarchy:
 
-## Methods of payment – customers
+- **Accounts receivable parameters** page > **Ledger and sales tax** tab
+- **Customer groups** page
+- **Customer account** page > **Payment defaults** tab
+- **Method of payment** page > **Payment control** tab
 
-Method of payment should be set up on the customer accounts which would be using the QR-bills to define the details of the company bank account to which QR slip would be issued. For processing the incoming payments in camt.054 format, the GER import configuration should be set up.
+### Methods of payment – customers
 
-## Customer account
+The method of payment should be set up on the customer accounts that use the QR-bills to define the details of the company bank account to which teh QR slip is issued. For processing the incoming payments in **camt.054** format, the Electronic reporting import configuration should be set up.
 
-It is required that the default Method of payment is selected, and the Payment Id type should be filled in if not specified in the default setup for customer groups of Account Receivable parameters.
+### Customer account
 
-In the Associated payment attachment field group, a new type QR-bill is added. When selected, the QR slip would be printed when the document of dedicated type is printed.
+The default Method of payment must be selected, and the Payment ID type must be filled in if it's not already specified in the default setup for Customer groups on the **Account receivable parameters** page.
 
-
-## Giro report processing group
-The way how the “Billing information” section is filled on QR slip is controlled by the settings of the Giro report processing groups. If necessary, it is possible to configure different structure of this section on the QR bill in GER and set up to have different structure to be used in
-
-- Account code – ability to specify the general setting in the company, specific format dedicated for customer groups or for the specific customer account
-- Customer relation – value of specific Customer account or Customer group if applicable
-- QR-Bill information – select the GER format configuration responsible for filling the Billing information
-- Print scissors symbol – define whether the scissors symbol would be printed on the report (could be important when choosing whether to send prited or electronic version of the QR-slip )
-
-## Accounts Payable setup
-
-## Methods of payment – vendors
-
-In the Method of payment-vendors it is required to specify the Bank account associated, select the required GER configurations for the export and import for payment file processing, and set up Payment specification. A new Payment specification parameter value is available, Tp3.QR for payments corresponding to the incoming QR-slips. In addition to Payment specification setup, a specific option is also available on the Vendor bank account for redefining the Specification parameter – see Vendor bank account setup.
-
-Payment ID should be activated on the Payment attributes tab in order to inherit the Payment Id during the payment proposal with QR-bills.
-
-## Return format error codes and Return format status mapping
-
-If pain.002 is expected to be used as a return file format, the Return format error codes and Return format status mapping is expected to be set up. For more information, see also the documentation for ISO20022 pain.002 functionality.
+In the **Associated payment attachment** field group, the new type, **QR-bill** is added. When selected, the QR slip is printed when the document of the dedicated type is printed.
 
 
-##Vendor account
+### Giro report processing group
+The settings information provided in the Giro report processing groups determine how the **Billing information** section is filled on a QR slip. If necessary, you can configure and use different parts of this section on the QR bill in Electronic reporting. These include:
 
-Standard setup of the vendor account for ISO20022 payments is expected. For more info, see also Set up vendors and vendor bank accounts for ISO20022 credit transfers (https://docs.microsoft.com/en-us/dynamics365/finance/localizations/tasks/set-up-vendor-iso20022-credit-transfers).
+- **Account code**: The specific format dedicated for the specific customer account.
+- **Customer relation**: The value of the specific customer account or customer group.
+- **QR-Bill information**: The Electronic reporting format configuration responsible for filling the billing information.
+- **Print scissors symbol**: The inclusion of the scissors symbol on the printed report. This could be important when choosing whether to send a printed or electronic version of the QR-slip.
 
-## Vendor bank account
+## Accounts payable setup
 
-It is required to populate the QR-IBAN field in the Vendor bank accounts. Other fields are expected to be populated as per normal payment procedure for payment Type 3 in Switzerland.
+### Methods of payment – vendors
 
-Additional option added for selection of the Payment specification parameter directly on the vendor bank account. When filled in, this value would be taken with priority higher than the payment specification of the Method of payment during the credit transfer file generation.
+For vendor methods of payment, you must specify the associated bank account, select the required Electronic reporting configurations for the export and import for payment file processing, and set up payment specification. A new payment specification parameter value, **Tp3.QR** is available For payments corresponding to the incoming QR-slips. In addition to payment specification setup, a specific option is also available on the vendor bank account for redefining the Specification parameter.
 
-# Accounts receivable process
+Payment ID should be activated on the **Payment attributes** tab to inherit the payment ID during the payment proposal with QR-bills.
 
-## Generate the QR-slips
+### Return format error codes and return format status mapping
 
-To generate the QR-slip for the document (i.e. customer invoice), run the document printing (i.e. invoice View-Original), and the QR-slip will be generated as an additional report automatically. After that, the QR-bill could be exported to PDF and printed or sent electronically.
+If **pain.002** is will be used as a return file format, the Return format error codes and Return format status mapping must be set up. For more information, see [Import ISO20022 files](emea-iso20022-file-formats.md).
 
-Functionality supported for:
+### Vendor account
+
+Standard setup of the vendor account for ISO20022 payments is expected. For more information, see [Set up vendors and vendor bank accounts for ISO20022 credit transfers](tasks/set-up-vendor-iso20022-credit-transfers.md).
+
+### Vendor bank account
+
+Vendor bank accounts must have a QR-IBAN number assigned. Other fields are expected to be populated following the typical payment procedure for payment **Type 3** in Switzerland.
+
+Additionally, there is an option to select a payment specification parameter directly on the vendor bank account. When a payment specification has been made, then during the time that a credit transfer file is generated, the value is given a higher priority than the method of payment specification.
+
+## Accounts receivable process
+
+### Generate the QR-slips
+
+To generate the QR-slip for a document, such as a customer invoice), print the document and the QR-slip will automatically be generated as an additional report. After that, you can export the QR-bill to PDF and then print or sent it electronically.
+
+The documents that support this functionality include:
+
 - Sales order invoices
 - Free text invoices
 - Project invoices
 - Interest notes
 - Collection letters
 - Account statement
-- The Payment Id value is stored when invoice is posted in Customer transaction as well as on the Invoice journal.
 
-## Import payments in camt.054 format
-To the bank statement in camt.054 format from the bank, open the Customer payment journal line and run the Import payment function. The 27-digit long reference is expected in the Ref tag (in the RmtInf section) of the file. After the import, the payment transactions would be created and settled with customer transactions based on Payment Id value. For more information, see also Import the camt.054 credit advice file into the Customer payment journal (https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-iso20022-file-formats).
+### Import payments in camt.054 format
+To the bank statement in camt.054 format from the bank, open the Customer payment journal line and run the Import payment function. The 27-digit long reference is expected in the Ref tag (in the RmtInf section) of the file. After the import, the payment transactions would be created and settled with customer transactions based on Payment Id value. For more information, see [Import ISO20022 files](emea-iso20022-file-formats.md).
 
-# Accounts payable process
+## Accounts payable process
 
 The scope of supported functionality covers the process of manual import of the QR code values into the input dialog which could be achieved by scanning devices transmitting the text value of the QR-code. The structure of the information from QR-code should follow the standards available at the SIX group website at the moment of the release. In case of any derivation from the structure in the information encrypted in QR code or any format changes required to follow the device-specific behavior, this could be configured using the Generic Electronic Reporting (GER) module without code modifications.
 
-## Import QR bills
+### Import QR bills
 
-It is possible to import the QR bills either into the Invoice journal, or into Pending vendor invoice destinations.
+You can import the QR bills into the Invoice journal or the pending vendor invoice destinations.
 
-To import QR-bills into the Invoice journal, run the Import QR-Bill function available in the Invoice journal lines form.
+To import QR-bills into the Invoice journal, run the **Import QR-Bill** function available on the **Invoice journal lines** page.
 
-On the importing dialog, in the QR bill field, the name of the GER format configuration is shown. In case of different (derived) format is expected to be executed, it could be selected on the dialog. Enter the QR code value in the Plain text of the QR-Bill field and click Ok.
+On the **Importing** dialog box, in the **QR bill** field, the name of the Electronic reporting format configuration is shown. You can update which Electronic reporting format should be used. Enter the QR code value in the plain text of the **QR-Bill** field, and then select **Ok**.
 
-On the next QR-Bill form, parsed values of the QR bill are presented on the QR-Bill tab. On the General tab, the values of the recognized Vendor, bank account, amount and other details which would be imported in the system. After clicking Ok, the Invoice journal line would be created. In case this QR slip was imported earlier, user would be notified by a warning message. The info of imported QR bill is stored and available for review on the Imported QR bills form.
+On the next page, the parsed values of the QR bill are shown on the **QR-Bill** tab. On the **General** tab, you can see the values of the recognized vendor, bank account, amount, and other details which will be imported into the system. After you select **OK**, the Invoice journal lines are created. If this QR slip was previously imported, you will be notified with a warning message. The information of the imported QR bill is stored and available for review on the **Imported QR bills** page.
 
-For invoices associates with Purchase orders, it is possible to create Pending vendor invoice headers based on QR bill information. To import the QR-bill, run the Import QR-bill function from the Pending vendor invoices form, tab Process. Insertion of the QR code and record review and importing is similar to the described above.
+For invoices associated with purchase orders, you can create pending vendor invoice headers that are based on QR bill information. To import the QR-bill, select **Import QR-bill** on the **Process** tab of the **Pending vendor invoices** page. Adding, reviewing and importing the QR code is similar to the description in the previous paragraph.
 
-It is also possible to import the QR bill when the vendor invoice is opened from the Purchase order (Generate invoice function, on the opened form menu Process - Import QR-bill). Importing procedure is same as Pending vendor invoice, association with the purchase order would be inherited automatically.
+You can also import the QR bill when the vendor invoice is opened from the **Purchase order** page. The importing procedure is the same as the pending vendor invoice and if the invoice is associated with a purchase order, the import will happen automatically.
 
-To process the QR bill without predefined destination or to a custom destination, a special option in Periodic Tasks is available in Accounts payable periodic tasks. In this case, it would be required to select the destination manually.
+To process the QR bill without a predefined destination, or to a custom destination, a special option is available in the **Accounts payable** module under **Periodic tasks**. In this case, you must select the destination manually.
 
-When the Plain text of the QR Bill left blank, it is possible to run import from the text file, located i.e. on the SharePoint folder based on the setup of the Electronic Reporting source.
+When the plain text of the QR bill is left blank, you can run the import from the text file which is located on the SharePoint folder based on the setup of the Electronic reporting source.
 
-After the invoice is posted, the vendor transaction with imported Payment Id would be available for settlement in the payment journal.
+After the invoice is posted, the vendor transaction with the imported Payment ID is available for settlement in the payment journal.
 
 ## Payment files processing
 
-Create a vendor payment journal lines by using the Payment proposal functionality. For more information, see also the link [Create and export vendor payments using ISO20022 payment format](tasks/create-export-vendor-payments-iso20022-payment-format.md).
+Create vendor payment journal lines by using the Payment proposal functionality. For more information, see [Create and export vendor payments using ISO20022 payment format](tasks/create-export-vendor-payments-iso20022-payment-format.md).
 
 For QR-bill related payments, the credit transfer file is generated based on the payment ID value, which is retrieved from the QR code.
 
