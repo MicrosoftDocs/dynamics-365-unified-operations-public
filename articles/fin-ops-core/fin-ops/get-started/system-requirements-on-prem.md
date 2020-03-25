@@ -107,6 +107,22 @@ Consider the following domain requirements when you install Finance + Operations
 - VMs that run Finance + Operations components must have access to each other. This access is configured in AD DS.
 - The domain controller must be Microsoft Windows Server 2012 R2 or later, and the domain functional level must be 2012 R2 or more.
 
+### Full 2-way trust
+For compatibility with domain controllers on 2008 R2 doman functional level(DFL), a full 2-way trust between a 2008 R2 DFL user domain and the 2012 R2 DFL hosting the Dynamics 365 F&O infrastructure is supported.
+
+An example for this setup could be 
+Root domain on 2008 R2 DFL. Eg. Contoso.com
+        |
+Child domain on 2008 R2 DFL. Eg. Americas.Contoso.com
+        |
+    Full 2-way trust
+        |
+Child domain on 2012 R2 DFL. Eg. FnO.Americas.Contoso.com
+
+Limitations with this setup:
+
+*
+
 ## Hardware requirements
 
 This section describes the hardware that is required in order to run Finance + Operations.
