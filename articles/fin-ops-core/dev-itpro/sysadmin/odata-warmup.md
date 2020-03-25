@@ -43,4 +43,4 @@ This option is useful if your business process can't wait for the OData metadata
 2. On the **General Tab**, select **Build metadata cache when AOS starts**, and then select **Save**.
 
 > [!NOTE]
-> When you enable this functionality, the AOS should already be running and should have served one OData request. This means that the cache is already built. This new functionality will take effect during the next AOD restart.
+> When you enable this functionality, the AOS should already be running and should have served one OData request. This means that the cache is already built. This new functionality will take effect during the next AOS restart.
