@@ -48,6 +48,7 @@ This topic lists the platform updates for version 10.0.11 of Finance and Operati
 - [Feature name](URL to feature description in the Release plans) - For more information, see [title of content that contains details about the feature](URL to the content that contains details about the feature).
 - [Feature name](URL to feature description in the Release plans) - For more information, see [title of content that contains details about the feature](URL to the content that contains details about the feature).
 
+*******************************************removed-deprecated-features-platform-updates.md
 
 ## Additional resources
 
