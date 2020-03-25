@@ -63,7 +63,7 @@ To fix the issue, follow these steps.
 6. Build the project, and confirm that the build is successful.
 7. On the **Dynamics 365** menu, select **Synchronize database**.
 8. Select **Synchronize** to do a full database synchronization.
-9. After the full database synchronization is successful, rerun the database synchronization step in Microsoft Dynamics Lifecycle Services (LCS)/manual upgrade scripts as applicable, so that you can proceed with the update.
+9. After the full database synchronization is successful, rerun the database synchronization step in Microsoft Dynamics Lifecycle Services (LCS) and use the manual upgrade scripts as applicable, so that you can proceed with the update.
 
 ## Missing entity fields issue on maps
 
