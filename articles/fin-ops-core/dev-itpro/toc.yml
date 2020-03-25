@@ -227,7 +227,8 @@
                   - name: Troubleshoot issues related to upgrades of Finance and Operations apps
                     href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
                   - name: General troubleshooting
-                    href: data-entities/dual-write/dual-write-troubleshooting-general.md          - name: Integration with Power Platform
+                    href: data-entities/dual-write/dual-write-troubleshooting-general.md
+          - name: Integration with Power Platform
             items:
             - name: Configure a prospect to cash scenario
               items:
