@@ -35,13 +35,12 @@ ms.dyn365.ops.version: Platform update 13
 [!include [banner](../includes/banner.md)]
 
 
-With the release of Microsoft Dynamics 365 Platform Update 32, we have introduced the ability to build an **Odata metadata cache during AOS startup** as opposed to when the first Odata request occurs. This significantly decreases the response time for the first Odata call after an AOS process restart.
+With the release of Microsoft Dynamics 365 Platform Update 32, we have introduced the ability to build an Odata metadata cache when the AOS starts as opposed to when the first Odata request is made. This significantly decreases the response time for the first Odata call after an AOS process restart.
 
 This option is useful when your business process can't wait for the Odata metadata cache to be built each time the AOS process restarts.
-
 
 1. Go to **System administration** \> **Setup** \> **System parameters**.
 2. On the **General Tab**, select **Build metadata cache when AOS starts**. and then select **Save**.
 
 > [!NOTE]
-> The AOS should be up and running and will have served one OData request, the cache is already warmed up, this option will take effect during next restart.
+> When you enable this functionality, the AOS should already be running and will have served one OData request. This means that the cache is already built. This new functionality will take effect during the next AOD restart.
