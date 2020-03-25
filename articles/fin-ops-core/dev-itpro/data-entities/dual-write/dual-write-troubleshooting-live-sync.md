@@ -49,7 +49,7 @@ You might receive the following error message when you create a record in a Fina
 member of the organization.\\"}}\], The remote server returned an error: (403)
 Forbidden."}}".*
 
-To fix the issue, follow the steps in [Prerequisites for enabling dual-write](). To complete those steps, the dual-write application users who are created in Common Data Service must have the system admin role. The default owning team must also have the system admin role.
+To fix the issue, follow the steps in [System requirements and prerequisites](requirements-and-prerequisites.md). To complete those steps, the dual-write application users who are created in Common Data Service must have the system admin role. The default owning team must also have the system admin role.
 
 ## Live synchronization for any entity consistently throws a similar error when you create a record in a Finance and Operations app
 
@@ -88,7 +88,7 @@ To fix the issue, you must assign the correct security role to the team of the m
 
     ![Organization mapping](media/mapped_business_unit.png)
 
-2. Sign in to the environment in the model-driven app in Dynamics 365, and then, on the [Setting…Security]() page, find the team of the mapped business unit.
+2. Sign in to the environment in the model-driven app in Dynamics 365, navigate to **Setting \> Security**, and find the team of the mapped business unit.
 
     ![Team of the mapped business unit](media/setting_security_page.png)
 
