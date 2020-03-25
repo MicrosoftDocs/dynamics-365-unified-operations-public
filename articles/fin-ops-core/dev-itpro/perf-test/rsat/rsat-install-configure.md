@@ -56,9 +56,7 @@ To enable secure authentication, RSAT requires a certificate to be installed on 
 ## Installation
 
 ### Installer
-Download **Regression Suite Automation Tool.msi** to your machine and double-click it to run the installer. 
-
-![Installer](media/download-msi.png)
+Download the .msi file from the [Regression Suite Automation Tool Download](https://www.microsoft.com/download/details.aspx?id=57357) to your machine and double-click it to run the installer. 
  
 ### Selenium and Browser Drivers
 RSAT requires Selenium and web browser driver libraries. RSAT will prompt you if needed libraries are missing and will automatically install them for you. Select Yes when you see the following (or similar) messages.
