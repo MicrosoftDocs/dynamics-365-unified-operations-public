@@ -42,6 +42,18 @@ This list is intended to help you consider these removals and deprecations for y
 > [!NOTE]
 > Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
 
+## Platform update 35
+
+### Field groups containing invalid field references
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | It is possible for table metadata definitions to have field groups containing invalid field references. If deployed, these field groups can cause runtime failures in Financial Reporting and SQL Server Reporting Services (SSRS). A compiler *warning* was introduced in Platform update 23, to allow for these metadata issues to be addressed. Platform update 35 now categorizes this issue as a compiler *error*. To fix this issue:<br><br>1. Remove the invalid field reference from the table field group definition.<br><br>2. Recompile.<br><br>3. Ensure any errors are addressed. |
+| **Replaced by another feature?**   | This compiler error in Platform update 35 replaces the compiler warning permanently.  |
+| **Product areas affected**         | Visual Studio development tools |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: The warning will become a compiler error starting in Platform update 35. |
+
 ## Platform update 32
 
 ### Workflow request change dialog box no longer includes user selection drop-down list

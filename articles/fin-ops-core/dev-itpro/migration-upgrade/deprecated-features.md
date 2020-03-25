@@ -269,11 +269,11 @@ Embedded key performance indicators (KPIs) could be modeled in Visual Studio by 
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | It is possible for table metadata definitions to have field groups containing invalid field references. This issue is currently categorized as a *compiler warning* rather than an *error*, meaning that the deployable package creation and deployment can proceed without fixing the issue. If deployed, this can cause runtime failures in Financial Reporting and SQL Server Reporting Services (SSRS). To fix this issue:<br><br>1. Remove the invalid field reference from the table field group definition.<br><br>2. Recompile.<br><br>3. Ensure any warnings or errors are addressed. |
-| **Replaced by another feature?**   | This warning will be replaced by a compile error in the future.  |
-| **Product areas affected**         | Visual Studio development tools. |
-| **Deployment option**              | All. |
-| **Status**                         | Deprecated: The warning will become a compile-time error in the future. We're currently targeting Platform update 30. |
+| **Reason for deprecation/removal** | It is possible for table metadata definitions to have field groups containing invalid field references. If deployed, this can cause runtime failures in Financial Reporting and SQL Server Reporting Services (SSRS). This issue is currently categorized as a *compiler warning* rather than an *error*, meaning that the deployable package creation and deployment can proceed without fixing the issue. To fix this issue:<br><br>1. Remove the invalid field reference from the table field group definition.<br><br>2. Recompile.<br><br>3. Ensure any warnings or errors are addressed. |
+| **Replaced by another feature?**   | This warning will be replaced by a compile error Platform update 35.  |
+| **Product areas affected**         | Visual Studio development tools |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: The warning will become a compile-time error in Platform update 35. |
 
 #### Complete list
 To access the full list of APIs that are being deprecated, see [Deprecation of methods and metadata elements](deprecation-deletion-apis.md).
