@@ -1,5 +1,5 @@
 - name: Development and administration for Finance and Operations apps
-  items:
+  items:dual
   - name: Development and administration for Finance and Operations apps
     items:
     - name: Finance and Operations application documentation
@@ -210,9 +210,24 @@
                   href: data-entities/dual-write/field-service-project-service-automation.md
                 - name: Initial synchronization
                   href: data-entities/dual-write/initial-sync.md
-                - name: Troubleshooting data integration
-                  href: data-entities/dual-write/dual-write-troubleshooting.md
-          - name: Integration with Power Platform
+                - name: Troubleshooting
+                  items:
+                  - name: Verify that dual-write is configured in Finance and Operations apps and Common Data Service
+                    href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
+                  - name: Troubleshoot issues during initial setup
+                    href: data-entities/dual-write/dual-write-troubleshooting-initial-setup.md
+                  - name: Troubleshoot issues during initial synchronization
+                    href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
+                  - name: Troubleshoot issues with the Dual-write module in Finance and Operations apps
+                    href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
+                  - name: Troubleshoot live synchronization issues
+                    href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
+                  - name: Troubleshoot issues related to solution awareness
+                    href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
+                  - name: Troubleshoot issues related to upgrades of Finance and Operations apps
+                    href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
+                  - name: General troubleshooting
+                    href: data-entities/dual-write/dual-write-troubleshooting-general.md          - name: Integration with Power Platform
             items:
             - name: Configure a prospect to cash scenario
               items:
