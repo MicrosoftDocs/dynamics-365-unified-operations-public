@@ -5,7 +5,7 @@ title: Customer information management for Poland
 description: This topic describes how to handle customer information in Retail POS for Poland.
 author: sepism
 manager:
-ms.date: 01/27/2020
+ms.date: 03/25/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-retail
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.9
 # Customer information management for Poland
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 ## Introduction
 
