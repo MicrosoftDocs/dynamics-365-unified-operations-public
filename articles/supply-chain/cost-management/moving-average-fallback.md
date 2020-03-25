@@ -5,7 +5,7 @@ title: Moving average, fallback cost sequence
 description: 
 author: AndersGirke
 manager: AnnBe
-ms.date: 03/10/2020
+ms.date: 03/25/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,18 +23,22 @@ ms.search.scope:  Core, Operations
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: aevengir
-ms.search.validFrom: 2020-03-10
+ms.search.validFrom: 2020-03-25
 ms.dyn365.ops.version: Release 10.0.11
 ---
 
-# Moving average, fallback cost sequence
+# Moving average fallback cost sequence
 
-In Microsoft Dynamics 365 Supply Chain Management, you can evaluate inventory by method **Moving average**. Organizations may have business scenarios where physical negative Inventory is required for a short period of time. **Moving average** supports this by applying a default sequence **&quot;Last issue – Active cost – Item price&quot;** used to determine the cost.
+One way that you can evaluate your inventory is by using a _Moving average_. For organizations that need to support negative physical inventory values, the moving average method can implement the fallback cost sequence of _Last issue – Active cost – Item price_ to determine the cost.
 
-A new feature **Moving average, fallback cost sequence** is introduced in **Inventory accounting- parameters** allowing users to select between 3 pre-determined fallback sequences.
+This feature helps to mitigate performance issues can occur in organizations that use business processes where inventory regularly goes negative while at the same time having a high transaction volume. If this applies to you, then using a fallback cost sequence of _Active cost – item price_ may help solve the issue.
 
-- **Last issue – Active cost – Item price** (Default value when enabling the feature)
-- **Active cost – Last issue**
-- **Active cost – item price**
+To set up moving average calculations:
 
-This feature is introduced to mitigate performance issues observed in Organizations that have business processes where inventory regularly goes negative and at the same time have a high transaction volume. Customers matching this profile will benefit selecting a fallback sequence **Active cost – item price.**
+1. Go to the **Parameters** page and open the **Inventory accounting** tab.
+1. In the **Moving average** section, set the **Fallback cost sequence** to one of the following:
+    - **Last issue – Active cost – Item price** (Default value when enabling the feature)
+    - **Active cost – Last issue**
+    - **Active cost – item price**
+
+![Inventory accounting parameters](media/inventory-accounting-parameters.png "Inventory accounting parameters")
