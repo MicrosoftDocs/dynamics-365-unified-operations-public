@@ -1,5 +1,5 @@
 - name: Development and administration for Finance and Operations apps
-  items:dual
+  items:
   - name: Development and administration for Finance and Operations apps
     items:
     - name: Finance and Operations application documentation
