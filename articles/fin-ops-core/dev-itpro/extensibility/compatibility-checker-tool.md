@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Platform update 34
 
 The compatibility checker tool can detect metadata breaking changes against a given baseline release or update, helping to ensure backward compatibility. Microsoft has been using the tool to help them ensure metadata compatibility.
 
-The compatibility checker tool is available for use for partners and ISVs from Platform update 34, as one of the dev tools. By using the tool, you can ensure that your solutions are backwards compatible with their earlier releases, before you install or push updates to customers.
+The compatibility checker tool is available in Platform update 34 as one of the dev tools. You can the tool to ensure that your solutions are backwards-compatible with their earlier releases, before you install or push updates to customers.
 
 ## What the tool detects
 
@@ -145,7 +145,7 @@ Any of the above changes will break form extensions that reference the controls 
 
 ## Label changes
 
-+ Modifying or deleting a label – Consumers might be using the label in the current context of the label text and the parameters that were passed. We recommend that that you add new labels instead of changing existing labels.
++ Modifying or deleting a label – Consumers might be using the label in the current context of the label text and the parameters that were passed. We recommend that you add new labels instead of changing existing labels.
 
 ## Application element changes
 
