@@ -5,7 +5,7 @@ title: Create forecast models for project budgets
 description: This article describes how to create a forecast model for remaining budget for budget contraol.
 author: RadhikaRS
 manager: AnnBe
-ms.date: 03/22/2020
+ms.date: 03/26/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -33,9 +33,10 @@ ms.search.validFrom: 2019-01-15
 
 [!include [banner](../includes/banner.md)]
 
-A project that is subject to budget control uses two types of budgets: the original budget and the remaining budget. When you create a project budget, you must specify the original and remaining budget forecast models that were created in the **Forecast models** page. Project budgets based on the specified models are created when you commit the project budget.
+A project that is subject to budget control uses two types of budgets: the original budget and the remaining budget. When you create a project budget, you must specify the original and remaining budget forecast models that were created on the **Forecast models** page. Project budgets based on the specified models are created when you commit the project budget.
 
-**Note:** A forecast model that is used for budget control can’t have a submodel or be used as a submodel.
+> {!NOTE]
+> A forecast model that is used for budget control can’t have a submodel or be used as a submodel.
 
 1. Select **Project management and accounting** > **Setup** > **Forecasts**  > **Forecast models**.
 2.  Select **New** to create a new forecast model, and then enter a **Model** ID number and a **Name** for the new model. 
