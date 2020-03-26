@@ -43,14 +43,14 @@ Before you can use the Bill of exchange protest import functionality, the follow
 
 ## Import Electronic reporting configurations
 
-The Electronic Reporting configuration, **RIBA bill of exchange protest (IT)** must be imported from LCS before you can use it. After you import the configuration, the corresponding **Payment model** and **Payment model mapping to destination RIBA configurations** will be imported automatically.
+The Electronic Reporting configuration, **RIBA bill of exchange protest (IT)**, must be imported from LCS before you can use it. After you import the configuration, the corresponding **Payment model** and **Payment model mapping to destination RIBA configurations** will be imported automatically.
 
 ## Set up method of payment
 
-On the **Method of payments – customers** page, enable the **Generic electronic import format** parameter and tehn select **RIBA bill of exchange protest (IT)**. 
+On the **Method of payments – customers** page, enable the **Generic electronic import format** parameter, and then select **RIBA bill of exchange protest (IT)**. 
 
 ## Import protest information from an electronic file
 
 1. To import the file, create a **Protest bill of exchange** journal, and then select **Journal lines**.
 2. Select **Functions** \> **Import protest**.
-3. In the dialog box, select the method of payment for the protest import and then attach the file. The journal lines are created based on information in the file.
+3. In the dialog box, select the method of payment for the protest import, and then attach the file. The journal lines are created based on information in the file.
