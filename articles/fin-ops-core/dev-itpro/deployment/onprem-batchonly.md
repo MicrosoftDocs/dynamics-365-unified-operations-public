@@ -52,7 +52,7 @@ For production environments there should be at least 3 nodes of each type.
 ## New deployments
 
 
-1. When you are describing your configuration as stated in the [Setup and Deployment Guide](./setup-deploy-on-premises-pu12.md#describeconfig), modify the configtemplate.xml to add the new node types. The new NodeType sections should like below. 
+1. When you are describing your configuration as stated in [Set up and deploy on-premises environments](./setup-deploy-on-premises-pu12.md#describeconfig), modify the configtemplate.xml to add the new node types. The new NodeType sections should like below. 
 
     ```xml
     <NodeType name="InteractiveOnlyAOSNodeType" primary="false" namePrefix="AOS" purpose="AOS">
@@ -70,7 +70,7 @@ For production environments there should be at least 3 nodes of each type.
       </VMList>
     </NodeType>
     ```
-2. Follow the rest of the [Setup and Deployment Guide](./setup-deploy-on-premises-pu12.md#describeconfig) as you normally would.
+2. Follow the rest of the [Set up and deploy on-premises environments](./setup-deploy-on-premises-pu12.md#describeconfig) instructions as you normally would.
 
 ## Existing deployments
 
@@ -149,10 +149,10 @@ For production environments there should be at least 3 nodes of each type.
             cd C:\Temp\ServiceFabricStandalone
             .\AddNode.ps1 -NodeName AOS_12 -NodeType BatchOnlyAOSNodeType -NodeIpAddressOrFQDN 192.168.5.12 -ExistingClientConnectionEndpoint 192.168.5.21:19000 -UpgradeDomain ud0 -FaultDomain fd:/fd0 -X509Credential -ServerCertThumbprint 1A1A1A1A1A1A1A1A1A1A1A1A1A1A1A1A1A1A1A1A -AcceptEULA -StoreLocation LocalMachine -StoreName MY -FindValueThumbprint 1A1A1A1A1A1A1A1A1A1A1A1A1A1A1A1A1A1A1A1A
         ```
-        [!Important]
+        > [!Important]
         > Replace parameters as appropriate for your machine configuration.
 
-        [!Note]
+        > [!Note]
         > When the node reappears in SF explorer it may show the old NodeType. If you wait for a few minutes it will show the updated nodetype.
 
 5. Query the SF cluster again for the ClusterConfig.json:
@@ -185,7 +185,7 @@ For production environments there should be at least 3 nodes of each type.
         "\$id": "3"
     },
     ```
-    [!Note]
+    > [!Note]
     > If you don't remove these lines, you will receive the following error message later:
         ValidationException: Authentication type can't be changed from unsecured to Windows.
 
