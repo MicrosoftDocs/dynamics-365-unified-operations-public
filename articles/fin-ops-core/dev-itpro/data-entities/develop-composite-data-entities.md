@@ -139,6 +139,7 @@ We recommend that you import and export the data as a normal entity from DIXF st
 
 > [!NOTE]
 > The source types of XML-Attribute or XML-Element are supported for composite entity.
+> Composite entities cannot be imported in parallel using the parallel processing settings in entity execution paramters
 
 ## Import a composite entity
 1. Click **Import**.
