@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Moving average, fallback cost sequence
+title: Moving average fallback cost sequence
 description: 
 author: AndersGirke
 manager: AnnBe
@@ -35,7 +35,7 @@ One way that you can calculate the cost of your inventory is by using a _Moving 
 - **Active cost:** The latest cost activated in a costing version
 - **Item price:** The cost specified for the released product
 
-The system uses a _fallback cost sequence_ to establish the order of preference for which of those values to use in the moving average calculation. If the preferred cost value isn&#39;t available, the system will use the next-preferred value, and so on.
+The system uses a _fallback cost sequence_ to establish the order of preference for which of those values to use in the moving average calculation. If the preferred cost value isn't available, the system will use the next-preferred value, and so on.
 
 In previous versions of Supply Chain Management, the system used a fixed fallback cost sequence (_Last issue – Active cost – Item price_). As of version 10.0.11, this is still the default, but you can also enable a feature that lets you choose from among three available fallback cost sequences. This ability can be especially useful for organizations that regularly use negative inventory values.
 
@@ -45,7 +45,7 @@ To select the fallback cost sequence for moving average calculations:
 
 1. Go to the  **Parameters**  page and open the  **Inventory accounting**  tab.
 2. In the  **Moving Average**  section, set the  **Fallback cost sequence**  to one of the following sequences:
-    - **Last issue – Active cost – Item price** - This is the default sequence, which is the same one used when the _Moving average fallback cost sequence_ feature isn&#39;t enabled.
+    - **Last issue – Active cost – Item price** - This is the default sequence, which is the same one used when the _Moving average fallback cost sequence_ feature isn't enabled.
     - **Active cost – Last issue**
     - **Active cost – Item price** - This setting can help mitigate performance issues that can occur in organizations that use business processes where inventory regularly goes negative while at the same time having a high transaction volume.
 
