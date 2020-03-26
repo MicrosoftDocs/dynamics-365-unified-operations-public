@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Platform update 34
 
 The compatibility checker tool can detect metadata breaking changes against a given baseline release or update, helping to ensure backward compatibility. Microsoft has been using the tool to help them ensure metadata compatibility.
 
-The compatibility checker tool is available in Platform update 34 as one of the dev tools. You can the tool to ensure that your solutions are backwards-compatible with their earlier releases, before you install or push updates to customers.
+The compatibility checker tool is available in Platform update 34 as one of the dev tools. You can use the tool to ensure that your solutions are backwards-compatible with their earlier releases, before you install or push updates to customers.
 
 ## What the tool detects
 
