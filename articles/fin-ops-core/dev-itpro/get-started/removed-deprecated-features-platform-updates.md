@@ -5,7 +5,7 @@ title: Removed or deprecated platform features
 description: This topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 03/03/2020
+ms.date: 03/26/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
