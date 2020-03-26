@@ -82,8 +82,6 @@ We grant a quota of one Commerce preview environment for each request that is ac
 
 To contact Microsoft if you have questions or requests that are related to the Commerce preview environment, visit the [Microsoft Dynamics 365 Commerce Preview Yammer group](https://aka.ms/Dynamics365CommercePreviewYammer) for help.
 
-If you experience issues when you try to access the Yammer group, you can contact Microsoft by email at <Dynamics365Commerce@microsoft.com>. This email address isn't actively monitored. Therefore, expect a delay in the response.
-
 ## Additional resources
 
 [Dynamics 365 Commerce preview environment overview](cpe-overview.md)
