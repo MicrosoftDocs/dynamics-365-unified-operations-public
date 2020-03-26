@@ -44,7 +44,7 @@ The tool compares metadata of the current version with a baseline version. It de
 
 The list of breaking changes detected by the tool is shown in the [List of breaking changes detected by the tool](#list-of-breaking-changes-detected-by-the-tool), though the list is not comprehensive list of all compatibility breaking changes.
 
-## What the tool does not tect
+## What the tool does not detect
 
 The tool detects only breaking changes that can be identified by comparing data.
 
@@ -99,7 +99,7 @@ The following apply:
 
 ## Methods
 
-+ Changing the method signature of a protected or public methods - Wrappers and callers of the method will be broken.
++ Changing the method signature of a protected or public method - Wrappers and callers of the method will be broken.
 + Making a protected or public method obsolete - Consumers might be wrapping or overriding the methods.
 
 ## Classes and interfaces
@@ -119,7 +119,7 @@ The following apply:
 + Deleting or renaming table fields, field groups, indexes, table mappings, table relations.
 + Modifying these table properties - **Extends**, **SuportInheritance**, **TableType**, **SaveDataPerCompany.Yes**, **SaveDataPerPartition**.
 + Modifying these table field properties - **ExtendedDataType**, **Scale**, String size.
-+ Modifying thes table index properties - **AllowDuplicates.No**, **IndexType**.
++ Modifying these table index properties - **AllowDuplicates.No**, **IndexType**.
 
 Any of the above changes will break table extensions and tables references to tables and table fields.
 
@@ -145,7 +145,7 @@ Any of the above changes will break form extensions that reference the controls 
 
 ## Label changes
 
-+ Modifying or deleting a label – Consumers might be using the label in the current context of the label text and the parameters that were passed. We recommend that, going forward, that you add new labels instead of changing existing labels.
++ Modifying or deleting a label – Consumers might be using the label in the current context of the label text and the parameters that were passed. We recommend that that you add new labels instead of changing existing labels.
 
 ## Application element changes
 
