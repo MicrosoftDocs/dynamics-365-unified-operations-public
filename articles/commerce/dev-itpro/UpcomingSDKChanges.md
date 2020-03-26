@@ -57,7 +57,8 @@ Independent package model development is not supported in Windows server operati
 ## Development tools
 Currently, the Retail SDK samples and other templates inside the Retail SDK work only with Microsoft Visual Studio 2015. To support some of the upcoming changes in the Retail SDK and the new independent packaging model, Microsoft is planning to upgrade from Visual Studio 2015 to either Microsoft Visual Studio 2017 or the latest version.
 
-The new templates and Retail SDK samples can be compiled only in Visual Studio 2017 or the latest supported version. **Therefore, you should plan to upgrade from Visual Studio 2015 to Visual Studio 2017 on your development virtual machines (VMs) when this new feature is released.**
+The new templates and Retail SDK samples can be compiled only in Visual Studio 2017 or the latest supported version. **Therefore, you should plan to upgrade from Visual Studio 2015 to Visual Studio 2017 on your development virtual machines (VMs) when this new feature is released.** **Starting 10.0.11, Retail SDK components can be developed and compiled only in VS 2017, it will not work in VS 2015.**
+
 
 ## Retail SDK reference folder to NuGet Gallery
 All the reference binaries for the Commerce runtime, Commerce Scale Unit, Commerce proxy, commerce tool, and so on, are published in the Retail SDK\\Reference folder. Currently, your extensions reference that folder. However, Microsoft is planning to move away from this model and publish the SDK references in the NuGet Gallery instead. **Therefore, for this new model, you should change your extension project so that it references the NuGet Gallery instead of the Retail SDK\\reference folder. This change will require a reference update and recompilation in your extension project.**
