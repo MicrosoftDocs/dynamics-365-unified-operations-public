@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Human Resources
 
 This article describes the functionality available for integration from Dynamics 365 Human Resources and Dynamics 365 Finance. The Human Resources to Finance template that is available with the [Data Integrator](https://docs.microsoft.com/powerapps/administrator/data-integrator) enables the flow of data for jobs, positions, and workers. The data flows from Human Resources into Finance. The template does not provide the ability for data to flow back from Finance into Human Resources. 
 
-![Human Resources to Finance Integration Flow](./media/TalentFinOpsFlow.png)
+![Human Resources to Finance Integration Flow](./media/HRFinOpsFlow.png)
 
 The Human Resources to Finance solution provides the following types of data synchronization. 
 
