@@ -76,7 +76,7 @@ For production environments there should be at least 3 nodes of each type.
 
 1. Follow the [Remove an AOS node](./onprem-remove-reinstall-AOS-node#option-1-use-a-configuration-file-preferred-option) guide up until you save the configuration file.
 
-[!Important]
+> [!Important]
 > You must use Option 1: Use a configuration file (preferred option) and *not* Option 2. 
 
 2. Continue editing the ClusterConfig.json file and add the new node types to the NodeTypes section. After you have added the nodes, it should look something like this:
