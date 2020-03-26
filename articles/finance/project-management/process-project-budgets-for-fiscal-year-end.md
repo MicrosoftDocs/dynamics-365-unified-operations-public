@@ -53,7 +53,7 @@ For more information about a specific line in the pane, select the line, and the
 
 ## Carry forward remaining budget amounts 
 
-When you process remaining budget amounts, you can create transactions in the general ledger for the amounts that you are carryign forward. To create general ledger transactions, complete the steps in the section, [Carry forward budget amounts and create general ledger transactions](#carry-forward). 
+When you process remaining budget amounts, you can create transactions in the general ledger for the amounts that you are carrying forward. To create general ledger transactions, complete the steps in the section, [Carry forward budget amounts and create general ledger transactions](#carry-forward). 
 
 > [!NOTE]
 > Budget amounts that are carried forward are transferred to the forecast model that is selected in the **Forecast models** page as the carry-forward forecast model.  
@@ -84,8 +84,8 @@ When you process remaining budget amounts, you can create transactions in the ge
 7. On the **Select Budgets** tab, select **Retrieve all budgets** to load all budgets that match the criteria you selected. If you prefer to design a database query that loads a specific set of project budgets into the pane, select **Retrieve selected budgets**.
 8. For each project that you want to process, select the option at the beginning of the line for the project.
 
-> [!TIP]
-> To select all or most of the projects, select the check mark in the top upper-left corner. To exclude processing any project, clear the check mark for that project.
+    > [!TIP]
+    > To select all or most of the projects, select the check mark in the top upper-left corner. To exclude processing any project, clear the check mark for that project.
 
 9. To transfer the remaining budget amounts for the selected projects to the selected fiscal year and create budget register details in the general ledger, select **Process**.
 
