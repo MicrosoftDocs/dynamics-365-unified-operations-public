@@ -2,7 +2,7 @@
 # required metadata
 
 title: Moving average fallback cost sequence
-description: 
+description: This topic provides information about fallback cost sequences for moving average calculations in Microsoft Dynamics 365 Supply Chain Management.
 author: AndersGirke
 manager: AnnBe
 ms.date: 03/25/2020
@@ -29,24 +29,25 @@ ms.dyn365.ops.version: Release 10.0.11
 
 # Moving average fallback cost sequence
 
-One way that you can calculate the cost of your inventory is by using a _Moving average_. Each inventory item can have up to three cost values associated with it, which are:
+One way that you can calculate the cost of your inventory is by using a _moving average_. Up to three cost values can be associated with each inventory item:
 
-- **Last issue:** The last issue cost assigned before inventory went negative
-- **Active cost:** The latest cost activated in a costing version
-- **Item price:** The cost specified for the released product
+- **Last issue** – The last issue cost that was assigned before inventory went negative
+- **Active cost** – The latest cost that was activated in a costing version
+- **Item price** – The cost that is specified for the released product
 
-The system uses a _fallback cost sequence_ to establish the order of preference for which of those values to use in the moving average calculation. If the preferred cost value isn't available, the system will use the next-preferred value, and so on.
+To determine which of these cost values should be used in moving average calculations, the system uses a _fallback cost sequence_ to establish the order of preference for the values. If the preferred cost value isn't available, the system uses the next-preferred value, and so on.
 
-In previous versions of Supply Chain Management, the system used a fixed fallback cost sequence (_Last issue – Active cost – Item price_). As of version 10.0.11, this is still the default, but you can also enable a feature that lets you choose from among three available fallback cost sequences. This ability can be especially useful for organizations that regularly use negative inventory values.
+In previous versions of Microsoft Dynamics 365 Supply Chain Management, the system used a fixed fallback cost sequence (_Last issue – Active cost – Item price_). In version 10.0.11, this sequence is still the default sequence. However, you can also turn on a feature that lets you select among three available fallback cost sequences. This feature can be especially useful for organizations that regularly use negative inventory values.
 
-To enable the fallback cost sequence selector, you (or an administrator) must use [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to enable the feature called _Moving average fallback cost sequence_.
+To make the selector for the fallback cost sequence available, you (or an admin) must use [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to turn on the feature that is named _Moving average fallback cost sequence_.
 
-To select the fallback cost sequence for moving average calculations:
+To select the fallback cost sequence for moving average calculations, follow these steps.
 
-1. Go to the  **Parameters**  page and open the  **Inventory accounting**  tab.
-2. In the  **Moving Average**  section, set the  **Fallback cost sequence**  to one of the following sequences:
-    - **Last issue – Active cost – Item price** - This is the default sequence, which is the same one used when the _Moving average fallback cost sequence_ feature isn't enabled.
+1. Open the **Parameters** page.
+2. On the **Inventory accounting** tab, in the **Moving average** section, set the **Fallback cost sequence** field to one of the following values:
+
+    - **Last issue – Active cost – Item price** – This sequence is the default sequence. It's the same sequence that is used if the _Moving average fallback cost sequence_ feature isn't turned on.
     - **Active cost – Last issue**
-    - **Active cost – Item price** - This setting can help mitigate performance issues that can occur in organizations that use business processes where inventory regularly goes negative while at the same time having a high transaction volume.
+    - **Active cost – Item price** – Organizations might experience performance issues if they use business processes where inventory regularly goes negative and, at the same time, the transaction volume is high. This setting can help mitigate those performance issues.
 
 ![Inventory accounting parameters](media/inventory-accounting-parameters.png "Inventory accounting parameters")
