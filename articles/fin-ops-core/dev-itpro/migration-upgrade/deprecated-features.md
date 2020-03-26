@@ -5,7 +5,7 @@ title: Removed or deprecated features in previous releases
 description: This topic describes features that have been removed, or that were planned for removal from Dynamics 365 for Finance and Operations and previous releases of that product.
 author: sericks007
 manager: AnnBe
-ms.date: 03/05/2020
+ms.date: 03/26/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -270,7 +270,7 @@ Embedded key performance indicators (KPIs) could be modeled in Visual Studio by 
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | It is possible for table metadata definitions to have field groups containing invalid field references. If deployed, this can cause runtime failures in Financial Reporting and SQL Server Reporting Services (SSRS). This issue is currently categorized as a *compiler warning* rather than an *error*, meaning that the deployable package creation and deployment can proceed without fixing the issue. To fix this issue:<br><br>1. Remove the invalid field reference from the table field group definition.<br><br>2. Recompile.<br><br>3. Ensure any warnings or errors are addressed. |
-| **Replaced by another feature?**   | This warning will be replaced by a compile error Platform update 35.  |
+| **Replaced by another feature?**   | This warning will be replaced by a compile error in Platform update 35.  |
 | **Product areas affected**         | Visual Studio development tools |
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: The warning will become a compile-time error in Platform update 35. |
