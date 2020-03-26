@@ -894,6 +894,8 @@
             href: extensibility/extensibility-attributes.md
           - name: Breaking changes
             href: extensibility/breaking-changes.md
+          - name: Compatibility checker tool
+            href: extensibility/compatibility-checker-tool.md
       - name: Performance
         items:
         - name: Take traces using Trace parser
