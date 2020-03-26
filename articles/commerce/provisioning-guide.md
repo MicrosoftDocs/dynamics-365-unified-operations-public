@@ -239,8 +239,6 @@ To initialize e-Commerce, follow these steps.
 
 If you experience issues while you're completing the provisioning steps, visit the [Microsoft Dynamics 365 Commerce Preview Yammer group](https://aka.ms/Dynamics365CommercePreviewYammer) for help.
 
-If you experience issues when you try to access the Yammer group, you can contact Microsoft by email at <Dynamics365Commerce@microsoft.com>. This email address isn't actively monitored. Therefore, expect a delay in the response.
-
 ## Next steps
 
 To continue the process of provisioning and configuring your Commerce preview environment, see [Configure a Commerce preview environment](cpe-post-provisioning.md).
