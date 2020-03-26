@@ -270,7 +270,7 @@ Embedded key performance indicators (KPIs) could be modeled in Visual Studio by 
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | It is possible for table metadata definitions to have field groups containing invalid field references. If deployed, this can cause runtime failures in Financial Reporting and SQL Server Reporting Services (SSRS). This issue is currently categorized as a *compiler warning* rather than an *error*, meaning that the deployable package creation and deployment can proceed without fixing the issue. To fix this issue:<br><br>1. Remove the invalid field reference from the table field group definition.<br><br>2. Recompile.<br><br>3. Ensure any warnings or errors are addressed. |
-| **Replaced by another feature?**   | This warning will be replaced by a compile error in Platform update 35.  |
+| **Replaced by another feature?**   | This warning will be replaced by a compile error in Platform update 35.<br><br>**Note:** Platform update 35 is targeted to be included with application version 10.0.11. |
 | **Product areas affected**         | Visual Studio development tools |
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: The warning will become a compile-time error in Platform update 35. |
