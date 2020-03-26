@@ -2,8 +2,8 @@
 
 # required metadata
 
-title: Compatibilty checker tool
-description: The compatibilty checker tool finds and reports metadata breaking changes.
+title: compatibility checker tool
+description: The compatibility checker tool finds and reports metadata breaking changes.
 author: smithanataraj
 manager: AnnBe
 ms.date: 03/26/2020
@@ -30,13 +30,13 @@ ms.search.validFrom: 2020-03-26
 ms.dyn365.ops.version: Platform update 34
 ---
 
-# Compatibilty checker tool
+# compatibility checker tool
 
 [!include [banner](../includes/banner.md)]
 
-The compatibilty checker tool can detect metadata breaking changes against a given baseline release or update, helping to ensure backward compatibility. Microsoft has been using the tool to help them ensure metadata compatibility.
+The compatibility checker tool can detect metadata breaking changes against a given baseline release or update, helping to ensure backward compatibility. Microsoft has been using the tool to help them ensure metadata compatibility.
 
-The compatibilty checker tool is available for use for partners and ISVs from Platform update 34, as one of the dev tools. By using the tool, you can ensure that your solutions are backwards compatible with their earlier releases, before you install or push updates to customers.
+The compatibility checker tool is available for use for partners and ISVs from Platform update 34, as one of the dev tools. By using the tool, you can ensure that your solutions are backwards compatible with their earlier releases, before you install or push updates to customers.
 
 ## What the tool detects
 
