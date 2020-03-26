@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Configuring Batch-Only and Interactive-Only AOS nodes in onpremise deployments
-description: This topic explains how to configure your environment to be able to deploy Batch-Only and Interactive-Only nodes.
+title: Configuring Batch-only and Interactive-only AOS nodes in on-premises deployments
+description: This topic explains how to configure your environment to be able to deploy Batch-only and Interactive-only AOS nodes.
 author: faix
 manager: AnnBe
-ms.date: 03/17/2020
+ms.date: 03/26/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,21 +23,22 @@ ms.search.scope: Operations
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: osfaixat
-ms.search.validFrom: 2020-05-31 
+ms.search.validFrom: 2020-04-30 
 ms.dyn365.ops.version: Platform update 35 
 
 ---
 
-# Batch-Only and Interactive-Only AOS nodes
+# Batch-only and Interactive-only AOS nodes
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 > [!IMPORTANT]
 > This feature is only supported starting with application update 10.0.11, Platform update 35.
 
-This topic explains how to configure your environment to be able to deploy Batch-Only and Interactive-Only nodes.
+This topic explains how to configure your environment to be able to deploy Batch-only and Interactive-only AOS nodes.
 
-To enable this feature we have introduced two new ServiceFabric NodeTypes. For Batch-Only AOS the new NodeType is BatchOnlyAOSNodeType. For Interactive-Only AOS the new NodeType is InteractiveOnlyAOSNodeType.
+To enable this feature, we have introduced two new ServiceFabric NodeTypes. For Batch-only AOS, the new NodeType is BatchOnlyAOSNodeType. For Interactive-only AOS the new NodeType is InteractiveOnlyAOSNodeType.
 
 > [!NOTE]
 > The traditional deployment option where an AOS node is Interactive and is running Batch will still be supported and is not affected by these changes. 
