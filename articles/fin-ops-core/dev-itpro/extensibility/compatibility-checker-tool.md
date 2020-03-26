@@ -2,7 +2,7 @@
 
 # required metadata
 
-title: compatibility checker tool
+title: Compatibility checker tool
 description: The compatibility checker tool finds and reports metadata breaking changes.
 author: smithanataraj
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.search.validFrom: 2020-03-26
 ms.dyn365.ops.version: Platform update 34
 ---
 
-# compatibility checker tool
+# Compatibility checker tool
 
 [!include [banner](../includes/banner.md)]
 
