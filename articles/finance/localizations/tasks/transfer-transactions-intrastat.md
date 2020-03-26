@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Transfer transactions to the Intrastat
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure walks you through how to set up Intrastat parameters and transfer transactions to Intrastat. This procedure was created using the demo data company DEMF.
 

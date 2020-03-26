@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Maintain BOM for a product configuration model
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Running this procedure requires an existing product configuration model. The High end speaker model in the demo company USMF is used to create this procedure.
 

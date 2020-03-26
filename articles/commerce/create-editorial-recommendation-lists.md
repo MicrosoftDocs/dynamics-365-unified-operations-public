@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Create curated product recommendation lists
-description: This topic explains how merchandizers can create and manage manual product lists for Microsoft Dynamics 365 Commerce customers.
+title: Manually create curated recommendations
+description: This topic explains how merchandizers can manually create and manage product lists for Microsoft Dynamics 365 Commerce customers.
 author: bebeale
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Create curated product recommendation lists
+# Manually create curated recommendations
 
 [!include [banner](includes/banner.md)]
 
-This topic explains how merchandizers can create and manage manual product lists for Microsoft Dynamics 365 Commerce customers.
+This topic explains how merchandizers can manually create and manage product recommendations lists for Microsoft Dynamics 365 Commerce customers.
 
 Curated lists are collections of individual content, created and curated by people.  
 
@@ -60,8 +60,20 @@ To create a curated product recommendation list, follow these steps.
 
 [Product recommendations overview](product-recommendations.md)
 
+[Enable ADLS in a Dynamics 365 Commerce environment](enable-adls-environment.md)
+
 [Enable product recommendations](enable-product-recommendations.md)
 
-[Add product recommendation lists to pages](add-reco-list-to-page.md)
+[Enable personalized recommendations](personalized-recommendations.md)
 
-[Product collection module overview](product-collection-module-overview.md)
+[Opt out of personalized recommendations](personalization-gdpr.md)
+
+[Add product recommendations on POS](product.md)
+
+[Add recommendations to the transaction screen](add-recommendations-control-pos-screen.md)
+
+[Adjust AI-ML recommendations results](modify-product-recommendation-results.md)
+
+[Create recommendations with demo data](product-recommendations-demo-data.md)
+
+[Product recommendations FAQ](faq-recommendations.md)

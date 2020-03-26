@@ -28,9 +28,9 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # ER Map data model to selected data sources
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can map an Electronic reporting (ER) data model to selected data sources. This model mapping will later be used as a data source in a format configuration that will be used to manage electronic payment documents. In this example, you map a data model for sample company, Litware, Inc. to data sources. To complete these steps, you must first complete the steps in the “Select data sources for model mapping” procedure.
+The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can map an Electronic reporting (ER) data model to selected data sources. This model mapping will later be used as a data source in a format configuration that will be used to manage electronic payment documents. In this example, you map a data model for sample company, Litware, Inc. to data sources. To complete these steps, you must first complete the steps in the "Select data sources for model mapping" procedure.
 
 
 ## Open ER configurations tree
@@ -39,7 +39,7 @@ The following steps explain how a user in the System Administrator or Electronic
 
 ## Select created model mapping
 1. In the tree, select 'Payments (simplified model)'.
-    * Make sure that the model configuration “Payments (simplified model)” has been created in advance. Otherwise, stop now and return after completion of the task guide ‘Create a new configuration with data model of the selected domain’.  
+    * Make sure that the model configuration "Payments (simplified model)" has been created in advance. Otherwise, stop now and return after completion of the task guide 'Create a new configuration with data model of the selected domain'.  
 2. Click Model designer.
 3. Click Map model to datasource.
 4. Select the 'CT mapping' record.

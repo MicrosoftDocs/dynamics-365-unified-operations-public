@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Chinese voucher continuity check
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Before you can close a fiscal period, the Chinese voucher numbers for each voucher type must start at 1 and be sequential.
 This procedure shows how to check all posted vouchers in a fiscal period and renumber the Chinese voucher numbers to to be sequential. This process is part of the fiscal period closing process, so it can only be run for On hold fiscal periods. The first sub task walks you through stopping a fiscal period. 

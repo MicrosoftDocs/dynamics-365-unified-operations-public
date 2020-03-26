@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Revert kanban job status
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure focuses on reverting an incorrect kanban job status. This is useful in case the machine operator updates the wrong job, or sets the wrong status by mistake. In this procedure, a kanban job is registered as prepared by mistake, and the status is reverted. The demo data company used to create this procedure is USMF. This procedure is intended for the shop supervisor or machine operator working in a lean manufacturing company.
 

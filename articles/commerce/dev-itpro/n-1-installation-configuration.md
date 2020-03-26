@@ -5,7 +5,7 @@ title: Phased Rollout (N-1) installation, configuration, and cutover guide
 description: This topic explains how to set up Phased Rollout (N-1) components so that your Microsoft Dynamics AX 2012 R3 channel components can work with Microsoft Dynamics 365 Commerce Headquarters.
 author: jashanno
 manager: AnnBe
-ms.date: 07/31/2018
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics-365-retail
@@ -292,7 +292,8 @@ Follow these steps to prepare your environment for the cutover.
 | 2. Install the Commerce application (X++) KBs. | Install the KBs that are listed in the [Required KBs for N-1](#required-kbs-for-n-1) section to make sure all issues that are related to N-1 are addressed. | Weeks or months before the cutover |
 | 3. Set up Azure AD accounts. | Follow the instructions in the [Set up Azure AD accounts](#set-up-azure-ad-accounts) section to create the accounts that are required for the N-1 components to authenticate against Headquarters. | Weeks or months before the cutover |
 | 4. Configure Headquarters. | Follow the instructions in the [Configure N-1 components](#configure-n-1-components) section to configure all the settings for the N-1 components before they are installed. | Weeks or months before the cutover |
-| 5. Install the N-1 components. | Follow the instructions in the [Install N-1 components](#install-n-1-components) section to install the N-1 components. Note that the N-1 Async Server Connector Service component should be installed but immediately disabled to help guarantee that AX 2012 R3 and Dynamics 365 CDX packages aren't mixed. | Weeks or months before the cutover |
+| 5. Configure Headquarters. | Go to **Retail and Commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Commerce shared parameters**, select the **Security** tab, and change the value in **TS password encryption name** to "SHA256". |
+| 6. Install the N-1 components. | Follow the instructions in the [Install N-1 components](#install-n-1-components) section to install the N-1 components. Note that the N-1 Async Server Connector Service component should be installed but immediately turned off to ensure that AX 2012 R3 and Dynamics 365 CDX packages aren't mixed. | Weeks or months before the cutover |
 
 ### Preparation
 Follow these steps to prepare a few days before the cutover is scheduled.
@@ -379,7 +380,7 @@ This section describes troubleshooting steps for errors that you might encounter
 #### AX 2012 R3 MPOS activation fails with an error on step 2
 | Field | Value |
 |---|---|
-| Sample Event Log Error Message | Exception occured: [04/19/2018 19:26:51] Microsoft.Dynamics.Commerce.Runtime.UserAuthenticationException: An error occurred during logon. ---\> Microsoft.Dynamics.Commerce.Runtime.StorageException: Failed to read from the database. See inner exception for details. DatabaseErrorCode: 0 ---\> Microsoft.Dynamics.Commerce.Runtime.Data.DatabaseException: Invalid object name 'crt.EMPLOYEEPERMISSIONSVIEW'. ---\> System.Data.SqlClient.SqlException: Invalid object name 'crt.EMPLOYEEPERMISSIONSVIEW'. at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action'1 wrapCloseInAction) at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose) |
+| Sample Event Log Error Message | Exception occurred: [04/19/2018 19:26:51] Microsoft.Dynamics.Commerce.Runtime.UserAuthenticationException: An error occurred during logon. ---\> Microsoft.Dynamics.Commerce.Runtime.StorageException: Failed to read from the database. See inner exception for details. DatabaseErrorCode: 0 ---\> Microsoft.Dynamics.Commerce.Runtime.Data.DatabaseException: Invalid object name 'crt.EMPLOYEEPERMISSIONSVIEW'. ---\> System.Data.SqlClient.SqlException: Invalid object name 'crt.EMPLOYEEPERMISSIONSVIEW'. at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action'1 wrapCloseInAction) at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose) |
 | MPOS Error on Activation Screen | DZ1001 |
 | Troubleshooting Steps | Device you are trying to activate is already active. Please deactivate the device and try the activation. |
 
@@ -401,7 +402,7 @@ The following list describes all the KBs that are required for N-1 to work corre
 | 4095192 | Expose RetailSharedParameter's TSPasswordEncryption field in the RetailSharedParameters form as it is required to enable N-1 functionality when customer did not follow th official upgrade process to move data from AX6.3 to D365 |
 | 4095209 | The Real-timeServiceAX63 N-1 component's webconfig contains an invalid authentication type name. This causes issue when the component tries to authenticate with the transaction service in D365 |
 | 4095189 | RetialTransactionServiceProfile table's Protocol column is not being synced to the old version channel databases from the new version D365 AX database. |
-| 4095191 | The user is not allowed to set the retail server usrl to be http based URL as only secured urls are allowed. This prevents the user from connecting to old (6.3) version retail servers while running in backwardcompatiility mode. |
+| 4095191 | The user is not allowed to set the retail server url to be http based URL as only secured urls are allowed. This prevents the user from connecting to old (6.3) version retail servers while running in backwardcompatiility mode. |
 | 4132456 | \[Upgrade \& N-1\]\[Designer\] Number pad height should be extensible |
 | 4095926 | Upgrade \& N-1: Return order fails from 63MPOS as the transaction was not found on a N-1 non upgrade environment. |
 | 4095664 | Allow Microsoft Dynamics AX 2012 clients connecting to AX7.2 HQ to create new customers. |
@@ -413,5 +414,5 @@ The following list describes all the KBs that are required for N-1 to work corre
 | 4132453 | Running the N-1 version of the Product download job(1040\_AX63) fails when moving data to the InventDim table in the 6.3 version channel database |
 | 4206905 | POS reports throw errors when they are run in non-upgrade N-1 environment. |
 | 4133289 | Running the N-1 version of the Product - Refunds from Journal or existing transactions failing |
-| 4161086 | CDX table distribution ignores 'FieldValue' link types added on root table nodes and hence does not use that information for filterin the table usign the provided condition (x++ fix) |
-| 4161099 | CDX table distribution ignores 'FieldValue' link types added on root table nodes and hence does not use that information for filterin the table usign the provided condition (Binary changes) |
+| 4161086 | CDX table distribution ignores 'FieldValue' link types added on root table nodes and hence does not use that information for filtering the table usign the provided condition (x++ fix) |
+| 4161099 | CDX table distribution ignores 'FieldValue' link types added on root table nodes and hence does not use that information for filtering the table usign the provided condition (Binary changes) |

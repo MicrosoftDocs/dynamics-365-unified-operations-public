@@ -28,16 +28,16 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # ER Design domain specific data model
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can create a new Electronic reporting (ER) configuration that contains a data model for electronic payment documents. This data model will later be used as a data source when you create the format of the payment documents.
 
-In this example, you will create a configuration for sample company, Litware, Inc. These steps can be performed in any company as ER configurations are shared among companies. To complete these steps, you must first complete the steps in the “Create a configuration provider and mark it as active” procedure.
+In this example, you will create a configuration for sample company, Litware, Inc. These steps can be performed in any company as ER configurations are shared among companies. To complete these steps, you must first complete the steps in the "Create a configuration provider and mark it as active" procedure.
 
 1. Go to Organization administration > Workspaces > Electronic reporting.
 
-    Select the configuration provider for sample company, ‘Litware, Inc.’ If you don’t see this configuration provider, you must first complete the steps in the “Create a configuration provider and mark it as active” procedure.  
-	
+    Select the configuration provider for sample company, 'Litware, Inc.' If you don't see this configuration provider, you must first complete the steps in the "Create a configuration provider and mark it as active" procedure.  
+    
 2. Click Reporting configurations.
 
     You will create a configuration that contains a data model for electronic payment documents. This data model will be used later as a data source when you create the format for the payment documents.  
@@ -49,7 +49,7 @@ In this example, you will create a configuration for sample company, Litware, In
 
     The active configuration provider is automatically entered here. This provider will be able to maintain this configuration. Other providers can use this configuration, but will not be able to maintain it.  
 
-4. Click ‘Create configuration’ button to complete the configuration creation task
+4. Click 'Create configuration' button to complete the configuration creation task
 
 ## Create a data model
 You're creating a new data model for the selected configuration. This configuration version will have a status of Draft.  

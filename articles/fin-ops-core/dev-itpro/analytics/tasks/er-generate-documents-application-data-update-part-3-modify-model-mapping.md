@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Modify models and mappings to generate documents that have application data
-description: To complete the steps in this procedure, you must first complete the procedure, “ER Generate documents with application data update (Part 2 - Generate documents)”. 
+description: To complete the steps in this procedure, you must first complete the procedure, "ER Generate documents with application data update (Part 2 - Generate documents)". 
 author: NickSelin
 manager: AnnBe 
 ms.date: 06/19/2017
@@ -28,9 +28,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Modify models and mappings to generate documents that have application data
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-To complete the steps in this procedure, you must first complete the procedure, “ER Generate documents with application data update (Part 2: Generate documents)”. 
+To complete the steps in this procedure, you must first complete the procedure, "ER Generate documents with application data update (Part 2: Generate documents)". 
 
 The steps in this procedure explain how to design Electronic reporting (ER) configurations to generate an electronic document and update application data. In this procedure, you will modify the ER configurations to start using them to generate electronic documents and update application data. This procedure is created for users with the assigned role of system administrator or electronic reporting developer. These steps can be completed using the DEMF dataset.
 
@@ -98,14 +98,14 @@ The steps in this procedure explain how to design Electronic reporting (ER) conf
     * Update archive  
 6. In the Direction field, select 'To destination'.
 7. Click Save.
-    * This new mapping specifies the data flow for moving data (Intrastat reporting details) from the data model to the application tables (the update destination). Note that different model’s root items must be used to get data from the application for the reporting process and then use the data from data model for the application data update.   
+    * This new mapping specifies the data flow for moving data (Intrastat reporting details) from the data model to the application tables (the update destination). Note that different model's root items must be used to get data from the application for the reporting process and then use the data from data model for the application data update.   
 8. Click Designer.
 9. In the tree, select 'Data model\Data model'.
     * Add the required data source. This is the data model that contains details of the reported Intrastat transactions that must be archived.  
 10. Click Add root.
 11. In the Name field, type 'model'.
     * model  
-12. In the Definition field, enter or select the value ‘For application data update’.
+12. In the Definition field, enter or select the value 'For application data update'.
     * For application data update  
 13. Click OK.
 14. In the tree, expand 'model'.
@@ -133,11 +133,11 @@ The steps in this procedure explain how to design Electronic reporting (ER) conf
     * Archive  
 32. In the Table name field, type 'IntrastatArchiveGeneral'.
     * IntrastatArchiveGeneral  
-    * Keep the record action ‘Insert’ so you can add records during the detail archiving of each Intrastat reporting process.  
+    * Keep the record action 'Insert' so you can add records during the detail archiving of each Intrastat reporting process.  
 33. Select Yes in the Record infolog field.
     * Select Yes to get information about issues with the application data update.  
 34. Select Yes in the Skip record action validation field.
-    * Select Yes to suppress validation errors about the empty ‘Intrastat archive ID’ field. This will be done after records are added, based on the sequence number settings that are configured for this table in the Foreign trade parameters form.  
+    * Select Yes to suppress validation errors about the empty 'Intrastat archive ID' field. This will be done after records are added, based on the sequence number settings that are configured for this table in the Foreign trade parameters form.  
 35. Click OK.
     * Bind elements of the added data source (the filtered model based on the selected root item) with elements from the added destination.  
 36. In the tree, expand 'Archive'.

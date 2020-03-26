@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Enter and compare RFQ bids and award contracts
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic explains how to enter replies to a request for quotation (RFQ), score and compare bids, and then award the contract to one of the vendors. You can use this procedure in the **USMF** demo data company.
 

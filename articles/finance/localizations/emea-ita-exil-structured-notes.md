@@ -5,7 +5,7 @@ title: Advanced notes management
 description: This topic explains how to set up and print predefined notes for customers, vendors, and products.
 author: ilkond
 manager: AnnBe
-ms.date: 12/18/2019
+ms.date: 03/24/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -83,6 +83,13 @@ Go to **Organization administration** \> **Document management** \> **Document t
 Go to **Accounts receivable** \> **Setup** \> **Forms** \> **Forms setup** to set up the references to document types for the related documents. Additionally, you can define whether the notes are applicable to a document's header, lines, or both.
 
 ![Setup of forms](media/emea-ita-exil-notes-setup-forms.jpg)
+
+### Direct attachment to documents
+Advanced notes can be directly attached automatically to sales order confirmations, picking lists, packing slips, and invoices without preliminary attachment to sales orders. To enable direct attachment, complete the following steps. 
+1. Go to **Accounts receivable** \> **Setup** \> **Forms** \> **Forms setup**.
+2. On the **General** FastTab, in the **Advanced notes** section, enable the **Direct attachment to documents** parameter.
+
+  ![Forms setup page, highlight of Direct attachment to documents parameter](media/attach-documents.jpg)
 
 ## Advanced notes processing
 

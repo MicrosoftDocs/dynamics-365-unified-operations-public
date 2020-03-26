@@ -1,6 +1,107 @@
 {
   "redirections": [
     {
+      "source_path": "articles/supply-chain/asset-management/work-orders/media/placeholder.md",
+      "redirect_url": "/dynamics365/supply-chain/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/asset-management/work-order-scheduling/media/placeholder.md",
+      "redirect_url": "/dynamics365/supply-chain/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/asset-management/warranty/media/placeholder.md",
+      "redirect_url": "/dynamics365/supply-chain/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/asset-management/setup-for-work-orders/media/placeholder.md",
+      "redirect_url": "/dynamics365/supply-chain/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/asset-management/manage-maintenance-requests/media/placeholder.md",
+      "redirect_url": "/dynamics365/supply-chain/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/asset-management/consumption/media/placeholder.md",
+      "redirect_url": "/dynamics365/supply-chain/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/asset-management/capacity-planning/media/placeholder.md",
+      "redirect_url": "/dynamics365/supply-chain/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/pim/tasks/create-semi-finished-product-2016-02.md",
+      "redirect_url": "/dynamics365/supply-chain/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/pim/tasks/create-routes-2016-02.md",
+      "redirect_url": "/dynamics365/supply-chain/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/pim/tasks/create-boms-2016-02.md",
+      "redirect_url": "/dynamics365/supply-chain/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/pim/tasks/create-raw-materials-2016-02.md",
+      "redirect_url": "/dynamics365/supply-chain/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/pim/tasks/create-finished-product-2016-02.md",
+      "redirect_url": "/dynamics365/supply-chain/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/cost-management/tasks/create-semi-finished-product-2016-02.md",
+      "redirect_url": "/dynamics365/supply-chain/cost-management/cost-management-home-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/cost-management/tasks/create-routes-2016-02.md",
+      "redirect_url": "/dynamics365/supply-chain/cost-management/cost-management-home-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/cost-management/tasks/create-boms-2016-02.md",
+      "redirect_url": "/dynamics365/supply-chain/cost-management/cost-management-home-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/cost-management/tasks/create-raw-materials-2016-02.md",
+      "redirect_url": "/dynamics365/supply-chain/cost-management/cost-management-home-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/cost-management/tasks/create-finished-product-2016-02.md",
+      "redirect_url": "/dynamics365/supply-chain/cost-management/cost-management-home-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/production-control/tasks/classify-product-category-hierarchies.md",
+      "redirect_url": "/dynamics365/supply-chain/pim/tasks/classify-product-category-hierarchies",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/create-new-product.md",
+      "redirect_url": "/dynamics365/commerce/create-new-product-commerce",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/duplicate-payment-protection.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/duplicate-payments-protection",
+      "redirect_document_id": "false"
+    },
+
+    {
       "source_path": "articles/commerce/dev-itpro/add-new-custom-control-mpos-screen-layout.md",
       "redirect_url": "dev-retail-home-page",
       "redirect_document_id": "false"

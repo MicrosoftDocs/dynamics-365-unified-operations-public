@@ -5,7 +5,7 @@ title: Define a tax rate type and assign it to relevant master data
 description: This topic explains how to define the tax rate type and assign it to the relevant master data. 
 author: yijialuan 
 manager: kfend
-ms.date: 02/24/2020
+ms.date: 03/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-applications
@@ -79,8 +79,8 @@ With the tax rate type, the tax setup for the GST rate can be simplified with ju
 
 1. Go to **Product information management** \> **Products** \> **Released products**.
 2. Select and open a released product. 
-3. On the **General** fast tab, find the **Tax rate type** field.
-4. Right-click the field and select **View details**.
+3. On the **General** FastTab, find the **Tax rate type** field.
+4. Right-click in the field and select **View details**.
 5. Enter the name and description of the tax rate type you want to add.
 
     ![Define tax rate type](media/IND-define-tax-rate-type.png)
@@ -89,7 +89,7 @@ You can also import the tax rate type by using its data entity, **Tax rate type*
 
 ## Assign a tax rate type to relevant taxable master data
 
-You can associate the Tax Rate Type to following taxable master data where it will all be supported by data entity. With it is attached, when you create taxable transactions with these master data, like sales order, sales invoice, etc., the attached tax rate type will be defaulted in the transaction and further be used for rate determinated.
+You can associate the tax rate type to the following taxable master data where it will be supported by a data entity. With it attached, when you create taxable transactions with the master data, like a sales order or sales invoice, the attached tax rate type will be defaulted in the transaction and be used for the determined rate.
 
 - Released product
 - Procurement/Sales categories

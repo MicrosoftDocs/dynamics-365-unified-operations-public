@@ -28,9 +28,9 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create a record template to facilitate data entry
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-This topic demonstrates how to create a record template so that field values that are used often do not have to be entered explicitly for each new record. In this procedure, you’ll create a new record for new laptops that should be added to your fixed assets. This procedure uses the USMF sample company.
+This topic demonstrates how to create a record template so that field values that are used often do not have to be entered explicitly for each new record. In this procedure, you'll create a new record for new laptops that should be added to your fixed assets. This procedure uses the USMF sample company.
 
 1. In the navigation pane, go to **Modules > Fixed assets > Fixed assets > Fixed assets**.
 2. Select **New**.

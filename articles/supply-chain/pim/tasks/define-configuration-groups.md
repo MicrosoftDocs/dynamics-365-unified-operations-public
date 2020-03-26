@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Define configuration groups
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure shows how to define product configuration groups by creating two groups in the demo data company USMF Company. This is the fourth procedure out of eight which explains how to build combinations for dimension-based configuration.
 

@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Prepare a process kanban job when materials are available for the work cell
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This task focuses on preparing a process kanban job when all materials are available for the work cell. The demo data company used to create this task is USMF. This task is intended for the machine operator.
 
