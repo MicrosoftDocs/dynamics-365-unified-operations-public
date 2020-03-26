@@ -114,7 +114,7 @@ This means that users of the Dynamics 365 F&O application will come from the 200
 
 An example for this setup could be:
 
-<img src="./media/lbd-domain2WayTrust.png" width="300"/>
+<img src="./media/lbd-domain2WayTrust.png" width="350" hspace="50"/>
 
 #### Known limitations with using the Full 2-way trust setup:
 * Import of security groups from the 2008R2 user domain
