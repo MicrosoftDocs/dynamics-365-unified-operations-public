@@ -16,7 +16,6 @@ LocalizationGroup:
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
 
 By making dual-write solution-aware, you enable basic application lifecycle management (ALM) capabilities, such as transportation and backup/restore of dual-write entity maps across environments. You also enable scenarios where you can get solutions that are published by Microsoft or an independent software vendor (ISV) from AppSource.
 
@@ -56,7 +55,7 @@ You've now successfully imported and applied a Microsoft-published dual-write en
 This section explains how to import entity maps from AppSource and apply them to your environment.
 
 ![Importing and applying entity maps](media/import-apply-entity-maps.png)
-	
+    
 1. Import the dual-write core solution.
 
     1. Create a new dual-write environment (a Finance and Operations app environment and a Common Data Service environment).
@@ -137,7 +136,7 @@ After you run the solution checker and make sure that there are no issues, you e
     The solution, together with all its components, is exported to a zip file.
 
     ![Solution exported to a zip file](media/components-to-zip.png)
-	
+    
 You've now customized your entities, added them to a new solution, and created a solution file that can be imported and applied to other environments. (This capability can be useful if you want to move entity maps between test and production environments.) In a similar way, you can create a backup of all your entity maps by adding them to a solution and exporting the solution as a package. That package can then be imported into to any environment to restore the entity maps.
 
 For information about how to publish the package to AppSource, see [Publish your app on AppSource](https://docs.microsoft.com/powerapps/developer/common-data-service/publish-app-appsource).

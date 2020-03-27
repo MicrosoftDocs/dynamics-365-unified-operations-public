@@ -34,7 +34,7 @@ ms.search.validFrom: 2019-07-15
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
+
 
 The term *vendor* refers to a supplier organization, or a sole proprietor who supplies goods or services to a business. Although *vendor* is an established concept in Microsoft Dynamics 365 Supply Chain Management, no vendor concept exists in model-driven apps in Dynamics 365. However, you can overload the **Account/Contact** entity to store vendor information. The integrated vendor master introduces an explicit vendor concept in model-driven apps in Dynamics 365. You can either use the new vendor design or store vendor data in the **Account/Contact** entity. Dual-write supports both approaches.
 

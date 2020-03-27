@@ -34,7 +34,7 @@ ms.search.validFrom: 2019-09-20
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
+
 
 ## Vendor data flow 
 
