@@ -5,7 +5,7 @@ title: Build and consume data entities
 description: This tutorial shows how to build an entity and how to consume some out-of-band (OOB) entities in an integration scenario.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 02/06/2020
+ms.date: 03/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -310,7 +310,7 @@ In this section, you will use some of the standard OData syntax to navigate and 
 
 You can now use Internet Explorer to explore some OData URIs.
 
-1. Start Internet Explorere, and enter the following URL in the address bar: \[baseURL\]/data/$metadata You will see all the metadata that is associated with OData entities.
+1. Start Internet Explorer, and enter the following URL in the address bar: \[baseURL\]/data/$metadata You will see all the metadata that is associated with OData entities.
 
     > [!NOTE]
     > The metadata might take a few minutes to appear the first time that you access it. In the XML, you can see all of the properties and navigation properties associated with the OData entities.
@@ -431,13 +431,13 @@ During an export, column names will be exported in uppercase. Imports are not ca
 ## Tips and tricks
 
 ### Max join limits
-During entity development, take care to ensure that the overall structure of the entity does not exceed the max join limit of 26. This is the default limit. Increasing the join limit is not recomended becaues it can have unintended consequences. If this limit is exceeded, the entity will most likely fail to process records and will result in the following SQL error. It is also recomended to manage the total number of columns in the entity to avoid this error.
+During entity development, ensure that the overall structure of the entity does not exceed the max join limit of 26. This is the default limit. Increasing the join limit is not recommended because it can have unintended consequences. If this limit is exceeded, the entity will most likely fail to process records and will result in the following SQL error. We also recommend managing the total number of columns in the entity to avoid this error.
 
 ```Console
 Cannot create a row of size xxx which is greater than the allowable maximum row size of 8060
 ```
 ### Exporting container fields
-If an entity has container fields and such fields must be exported, the entity must implement getFieldsToBeConvertedToFile to allow each container field to export its data value to a seperate file. This allows for container fields to be exportable and at the same time prevents from making the entity export file (core entity data without the container fields) from being unreadable. If getFieldsToBeConvertedToFile is not implemented, then such fields will not be exported but the rest of the entity data will export as usual.
+If an entity has container fields and these fields need to be exported, the entity must implement **getFieldsToBeConvertedToFile** to allow each container field to export its data value to a separate file. This allows for container fields to be exportable and at the same time, prevents making the entity export file (core entity data without the container fields) unreadable. If **getFieldsToBeConvertedToFile** is not implemented, then these fields will not be exported but the rest of the entity data will export as usual.
 
 ## Additional resources
 
