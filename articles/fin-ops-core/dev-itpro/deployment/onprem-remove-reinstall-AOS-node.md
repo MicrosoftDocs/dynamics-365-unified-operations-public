@@ -39,23 +39,23 @@ This topic explains how to remove an Application Object Server (AOS) node in you
 
 **Reference document:** [Add or remove nodes to a standalone Service Fabric cluster running on Windows Server](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-windows-server-add-remove-nodes)
 
-1. In Service Fabric Explorer, select **Cluster**, and make a note of the cluster version. For this example, the cluster version is **6.5.676.9590**.
+1. In Service Fabric Explorer, select **Cluster**, and make a note of the Microsoft Service Fabric cluster version. For this example, the cluster version is **6.5.676.9590**.
 
     ![Cluster version](media/fe0c857aefd3a1174df38f8e0c644667.png)
 
-2. On one of the Orchestrator servers, open File Explorer. On the **View** tab, in the **Show/hide** group, make sure that the **File name extensions** and **Hidden items** check boxes are selected.
+2. On one of the orchestrator nodes, open File Explorer. On the **View** tab, in the **Show/hide** group, make sure that the **File name extensions** and **Hidden items** check boxes are selected.
 
     ![View options](media/bb83d249cdce333bdbb2e276ebce559c.png)
 
-3. Expand drive C, and then drill down into the following folder. (Note that the highlighted parts of the path will vary, depending on the node name and install.)
+3. Expand drive C, and then drill down into the following folder. (Note that the bold parts of the path will vary, depending on the node name and setup.)
 
-    C:\\ProgramData\\SF\\ORCH1\\Fabric\\work\\Applications\\\_\_FabricSystem\_App4294967295\\work\\Store\\131811633624852852
+    C:\\ProgramData\\SF\\**ORCH1**\\Fabric\\work\\Applications\\\_\_FabricSystem\\**_App4294967295**\\work\\Store\\**131811633624852852**
 
-    In the folder, you should see a list of folders for various versions of Azure Service Fabric. Here is an example.
+    In the folder, you should see a list of folders for various versions of Microsoft Service Fabric. Here is an example.
 
     ![Contents of the 131811633624852852 folder](media/f843b5ceda67f767f54333851f5deeec.png)
 
-5. Open the folder that has the name as the version of Service Fabric that you made a note of earlier. For this example, the folder is named **6.5.676.9590**.
+5. Open the folder with the name the same as the version of Microsoft Service Fabric cluster you that you made a note of earlier. For this example, the folder is named **6.5.676.9590**.
 6. In the folder, you should see a .cab file.
 
     ![Contents of the 6.5.676.9590 folder](media/fd04e00bc3d940f5637900e46db8f134.png)
@@ -68,7 +68,7 @@ This topic explains how to remove an Application Object Server (AOS) node in you
 9. Run the following command to connect to the Service Fabric cluster.
 
     ```powershell
-    \#Connect to Service Fabric Cluster. Replace 123 with server/star thumbprint and use appropriate IP address
+    #Connect to Service Fabric Cluster. Replace 123 with server/star thumbprint and use appropriate IP address
     Connect-ServiceFabricCluster -connectionEndpoint 10.0.0.12:19000 -X509Credential -FindType FindByThumbprint -FindValue 123 -ServerCertThumbprint 123
     ```
 
@@ -77,8 +77,7 @@ This topic explains how to remove an Application Object Server (AOS) node in you
 10. Run the following command to save the configuration file to C:\\Temp\\ClusterConfig.json. (Make sure that the C:\\Temp path exists.)
 
     ```powershell
-    Get-ServiceFabricClusterConfiguration -UseApiVersion -ApiVersion 10-2017
-    \>C:\\Temp\\ClusterConfig.json
+    Get-ServiceFabricClusterConfiguration -UseApiVersion -ApiVersion 10-2017 >C:\Temp\ClusterConfig.json
     ```
 
 11. In the configuration file that you saved in the previous step, in the **fabricSettings** section, in the **Setup** section, add a section for the **NodesToBeRemoved** parameter. The parameter value should be a comma-separated list of names of the nodes that must be removed. 
@@ -144,16 +143,15 @@ This topic explains how to remove an Application Object Server (AOS) node in you
     ```
 
 15. Save the configuration file.
-16. Run the following command to add the remove the node.
+16. Run the following command to the remove the node.
 
-    ```
-    Start-ServiceFabricClusterConfigurationUpgrade -ClusterConfigPath
-    C:\\Temp\\ClusterConfig.json
+    ```powershell
+    Start-ServiceFabricClusterConfigurationUpgrade -ClusterConfigPath C:\Temp\ClusterConfig.json
     ```
 
 17. Run the following command to monitor the progress.
 
-    ```
+    ```powershell
     Get-ServiceFabricClusterUpgrade
     ```
 
@@ -161,7 +159,7 @@ This topic explains how to remove an Application Object Server (AOS) node in you
 
     ![Upgrade that has stopped responding](media/c9a57cd8a5828a63a010d829eaab597c.png)
 
-    During upgrade of the cluster configuration, if you receive an error message that states that you previously added a node through the **Add-ServiceFabricNode** command, you might have to flush through the configuration without making any changes except the version number. You can use the **Get-ServiceFabricClusterConfiguration** and **Start-ServiceFabricClusterConfigurationUpgrade** commands for this purpose.
+    During upgrade of the cluster configuration, if you receive an error message that states that you previously added a node through the **Add-ServiceFabricNode** command, you will need to run a configuration upgrade without making any changes to the configuration file except for the version number. You can use the **Get-ServiceFabricClusterConfiguration** and **Start-ServiceFabricClusterConfigurationUpgrade** commands for this purpose.
 
     ![Get command and result](media/329b9c2bd807d7bca96e106037504e0e.png)
 
@@ -228,35 +226,32 @@ The next step is to start a new AOS server.
 4. Copy the contents of each infrastructure\\VMs\<VMName\> folder into the corresponding virtual machine (VM). (If you use remoting scripts, they will automatically copy the contents to the target VMs.) Then run the following Windows PowerShell scripts as an admin.
 
     > [!NOTE]
-    > If you're running remotely and repairing an existing server, you must delete the lbdscripts_remote_status.json file from the infrastructure folder to force the file copy to the servers again.
+    > If you're running remotely and repairing an existing server, you must delete the lbdscripts_remote_status.json file from the infrastructure folder to ensure the file copy process is run against all servers again.
 
-    ```
-    \# Install pre-req software on the VMs.
-    \# If Remoting, execute
-    \# .\\Configure-PreReqs-AllVMs.ps1 -MSIFilePath \<share folder path of the
-    MSIs\> -ConfigurationFilePath .\\ConfigTemplate.xml
-    .\\Configure-PreReqs.ps1 -MSIFilePath \<path of the MSIs\>
+    ```powershell
+    # Install pre-req software on the VMs.
+    # If Remoting, execute
+    # .\Configure-PreReqs-AllVMs.ps1 -MSIFilePath <share folder path of the MSIs> -ConfigurationFilePath .\ConfigTemplate.xml
+    .\Configure-PreReqs.ps1 -MSIFilePath <share folder path of the MSIs>
     ```
 
 5. Restart the computer every time that you're prompted. Make sure that you rerun the **.\\Configure-PreReqs.ps1** script after every restart, until all the prerequisites are installed. In the case of remoting, rerun the **AllVMs** script when all the computers are back online.
 6. If you use the remoting script, make sure that the current user has access to the share folder of Microsoft Windows Installer package files (.msi files).
-7. If you use the remoting script, make sure that no user is accessing computers of the **AOSNoteType**, **MRType**, and **ReportServerType** types. Otherwise, the remoting script won't be able to restart the computer because users are signed in to it.
+7. If you use the remoting script, make sure that no user is accessing computers of the **AOSNodeType**, **MRType**, and **ReportServerType** types. Otherwise, the remoting script won't be able to restart the computer because users are signed in to it.
 8. Run the following scripts, if they exist, to complete the VM setup.
 
-    ```
-    \# If Remoting, only execute
-    \# .\\Complete-PreReqs-AllVMs.ps1 -ConfigurationFilePath
-    .\\ConfigTemplate.xml
-    .\\Add-GMSAOnVM.ps1
-    .\\Import-PfxFiles.ps1
-    .\\Set-CertificateAcls.ps1
+    ```powershell
+    # If Remoting, only execute
+    # .\Complete-PreReqs-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+    .\Add-GMSAOnVM.ps1
+    .\Import-PfxFiles.ps1
+    .\Set-CertificateAcls.ps1
     ```
 
 9. If errors occur while you run **Add-GMSAonVM.ps1**, you must run the following command. (Edit the command if your service account differs. Note that you remove the dollar sign \[\$\] from the service account name.)
 
-    ```
-    Get-ADServiceAccount -Identity svc-AXSF -properties
-    PrincipalsAllowedToRetrieveManagedPassword
+    ```powershell
+    Get-ADServiceAccount -Identity svc-AXSF -properties PrincipalsAllowedToRetrieveManagedPassword
     ```
 
     ![Get command and result](media/525f31b6281e87fd58075f2101f75118.png)
@@ -265,45 +260,42 @@ The next step is to start a new AOS server.
 
 10. Copy the list of principals from the result, and use them to edit or amend the following command. (Note that, because the **Set** command isn't additive, you must add all references back in.)
 
-    ```
-    Set-ADServiceAccount -Identity svc-AXSF
-    -PrincipalsAllowedToRetrieveManagedPassword
-    "CN=AOS1,CN=Computers,DC=contoso,DC=com","CN=AOS2,CN=Computers,DC=contoso,DC=com","CN=AOS3,CN=Computers,DC=contoso,DC=com"
+    ```powershell
+    Set-ADServiceAccount -Identity svc-AXSF -PrincipalsAllowedToRetrieveManagedPassword  "CN=AOS1,CN=Computers,DC=contoso,DC=com","CN=AOS2,CN=Computers,DC=contoso,DC=com","CN=AOS3,CN=Computers,DC=contoso,DC=com"
     ```
 
     ![Set command](media/ff652391b87c72cacd318b588758e4fc.png)
 
-11. Run the original **Get** command to verify that the new AOS node was added back in.
+11. Run the original **Get** command to verify that the new AOS node was added back in. (Note in the example screenshot below you can see that AOS1 was added to the list of PrincipalsAllowedToRetrieveManagedPassword.)
 
     ![Original Get command and result](media/17b9c379b6328ed506d16270280146f4.png)
 
 12. Run the following script to validate the VM setup.
 
-    ```
-    \# If Remoting, execute
-    \# .\\Test-D365FOConfiguration-AllVMs.ps1 -ConfigurationFilePath
-    .\\ConfigTemplate.xml
-    .\\Test-D365FOConfiguration.ps1
+    ```powershell
+    # If Remoting, execute
+    # .\Test-D365FOConfiguration-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+    .\Test-D365FOConfiguration.ps1
     ```
 
 13. Before you continue, fix anything that fails as part of the validation script.
-14. In Service Fabric Explorer, select **Cluster**, and make a note of the cluster version. For this example, the cluster version is **6.5.676.9590**.
+14. In Service Fabric Explorer, select **Cluster**, and make a note of the Microsoft Service Fabric cluster version. For this example, the cluster version is **6.5.676.9590**.
 
     ![Cluster version](media/fe0c857aefd3a1174df38f8e0c644667.png)
 
-15. On one of the Orchestrator servers, open File Explorer. On the **View** tab, in the **Show/hide** group, make sure that the **File name extensions** and **Hidden items** check boxes are selected.
+15. On one of the orchestrator nodes, open File Explorer. On the **View** tab, in the **Show/hide** group, make sure that the **File name extensions** and **Hidden items** check boxes are selected.
 
     ![View options](media/bb83d249cdce333bdbb2e276ebce559c.png)
 
-16. Expand drive C, and then drill down into the following folder. (Note that the highlighted parts of the path will vary, depending on the node name and install.)
+16. Expand drive C, and then drill down into the following folder. (Note that the bold parts of the path will vary, depending on the node name and setup.)
 
-    C:\\ProgramData\\SF\\ORCH1\\Fabric\\work\\Applications\\\_\_FabricSystem\_App4294967295\\work\\Store\\131811633624852852
+    C:\\ProgramData\\SF\\**ORCH1**\\Fabric\\work\\Applications\\\_\_FabricSystem\\**_App4294967295**\\work\\Store\\**131811633624852852**
 
     In the folder, you should see a list of folders for various versions of Service Fabric. Here is an example.
 
     ![Contents of the 131811633624852852 folder](media/f843b5ceda67f767f54333851f5deeec.png)
 
-17. Open the folder that has the name as the version of Service Fabric that you made a note of earlier. For this example, the folder is named **6.5.676.9590**.
+17. Open the folder that has the same name as the version of Microsoft Service Fabric cluster that you made a note of earlier. For this example, the folder is named **6.5.676.9590**.
 18. In the folder, you should see a .cab file.
 
     ![Contents of the 6.5.676.9590 folder](media/fd04e00bc3d940f5637900e46db8f134.png)
@@ -315,24 +307,19 @@ The next step is to start a new AOS server.
 20. Open a Windows PowerShell Command Prompt windows as an admin.
 21. Run the following command to connect to your Service Fabric cluster. (Edit the command as you require.)
 
-    ```
-    \#Connect to Service Fabric Cluster. Replace 123 with server/star thumbprint and use appropriate IP address
-
-    Connect-ServiceFabricCluster -connectionEndpoint 10.0.0.12:19000
-    -X509Credential -FindType FindByThumbprint -FindValue 123
-    -ServerCertThumbprint 123
+    ```powershell
+    #Connect to Service Fabric Cluster. Replace 123 with server/star thumbprint and use appropriate IP address
+    Connect-ServiceFabricCluster -connectionEndpoint 10.0.0.12:19000 -X509Credential -FindType FindByThumbprint -FindValue 123 -ServerCertThumbprint 123
     ```
 
     ![Connect command and result](media/0af2777b388b786d2ba6fe0b1f0f77dc.png)
 
 22. Run the following command to add the node back in. Before you run it, make the required edits to the **NodeName**, **IPAddress**, **UpgradeDomain**, and **FaultDomain** parameters. (If you're replacing an existing server, you should have made a note of the values earlier.)
 
-    ```
-    Add-ServiceFabricNode -NodeName "AOS1" -NodeType "AOSNodeType"
-    -IpAddressOrFQDN "10.0.0.9" -UpgradeDomain "ud0" -FaultDomain "fd:/fd0"
-    -FabricRuntimePackagePath "C:\\Temp\\MicrosoftAzureServiceFabric.cab"
+    ```powershell
+    Add-ServiceFabricNode -NodeName "AOS1" -NodeType "AOSNodeType" -IpAddressOrFQDN "10.0.0.9" -UpgradeDomain "ud0" -FaultDomain "fd:/fd0" -FabricRuntimePackagePath "C:\Temp\MicrosoftAzureServiceFabric.cab"
     ```
 
     ![Add command and result](media/e8c153c1b8aa06af684a307f443c9b7b.png)
 
-23. After the node has been added back in, return to Service Fabric Explorer, and view the application deployment status. Several minutes will be required before all the AOSNodeType (**AXBootstrapperAppType**, **AXSFType**, **RTGatewayAppType**, and **MonitoringAgentAppType**) are pushed out again and installed on the node.
+23. After the node has been added back in, return to Service Fabric Explorer, and view the application deployment status. Several minutes will be required before all the AOS applications are restored (**AXBootstrapperAppType**, **AXSFType**, **RTGatewayAppType**, and **LBDTelemetryType-<envname\>** or **MonitoringAgentAppType**) are pushed out again and installed on the node.
