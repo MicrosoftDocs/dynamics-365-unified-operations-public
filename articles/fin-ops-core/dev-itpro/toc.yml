@@ -1072,6 +1072,8 @@
           href: lifecycle-services/planned-maintenance-window-faq.md
       - name: Monitoring and diagnostics
         href: lifecycle-services/monitoring-diagnostics.md
+      - name: Impact analysis report
+        href: lifecycle-services/impact-analysis-report.md
       - name: Restart environment services
         href: lifecycle-services/restart-environment-services.md
       - name: Report a production outage
