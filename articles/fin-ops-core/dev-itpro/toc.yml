@@ -162,6 +162,24 @@
                   href: data-entities/dual-write/connection-setup.md
                 - name: Dual-write setup from Lifecycle Services
                   href: data-entities/dual-write/lcs-setup.md
+                - name: Enable dual-write for existing Finance and Operations apps
+                  items:
+                    - name: Enable dual-write for existing Finance and Operations apps
+                      href: data-entities/dual-write/enable-dual-write.md
+                    - name: System requirements and prerequisites
+                      href: data-entities/dual-write/requirements-and-prerequisites.md
+                    - name: How to use the dual-write wizard to link your environments
+                      href: data-entities/dual-write/link-your-environment.md
+                    - name: Enable entity map for dual-write
+                      href: data-entities/dual-write/enable-entity-map.md
+            - name: Managing dual-write
+              items:
+                - name: Customize entity and field mappings
+                  href: data-entities/dual-write/customizing-mappings.md
+                - name: Error management and alert notifications
+                  href: data-entities/dual-write/errors-and-alerts.md
+                - name: Application lifecycle management
+                  href: data-entities/dual-write/app-lifecycle-management.md
             - name: Mapping concepts between apps
               items:
                 - name: Integrated customer master
@@ -204,22 +222,6 @@
                   href: data-entities/dual-write/in-house-assets.md
                 - name: Integrated worker, job, and position
                   href: data-entities/dual-write/integrated-hr.md
-            - name: Enable dual-write for existing Finance and Operations apps
-              items:
-                - name: Enable dual-write for existing Finance and Operations apps
-                  href: data-entities/dual-write/enable-dual-write.md
-                - name: System requirements and prerequisites
-                  href: data-entities/dual-write/requirements-and-prerequisites.md
-                - name: How to use the dual-write wizard to link your environments
-                  href: data-entities/dual-write/link-your-environment.md
-                - name: Enable entity map for dual-write
-                  href: data-entities/dual-write/enable-entity-map.md
-                - name: Customize entity and field mappings
-                  href: data-entities/dual-write/customizing-mappings.md
-                - name: Error management and alert notifications
-                  href: data-entities/dual-write/errors-and-alerts.md
-                - name: Application lifecycle management
-                  href: data-entities/dual-write/app-lifecycle-management.md
             - name: Support for dual-write
               items:
                 - name: Support for Field Service solutions and Project Service Automation solutions
