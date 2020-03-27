@@ -59,3 +59,4 @@ This topic provides links to documentation resources for Italy.
 - [General ledger simulations (Italy)](emea-ita-exil-general-ledger-simulations.md)
 - [Configurable posting profiles for banks and remittance types](emea-ita-exil-bank-remittance.md)
 - [Unique certification](emea-ita-exil-unique-certification.md)
+- [Bills of exchange protest import](emea-ita-exil-protest-boe.md)
