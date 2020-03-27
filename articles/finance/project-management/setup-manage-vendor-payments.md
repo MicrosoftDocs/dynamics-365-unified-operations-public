@@ -34,8 +34,6 @@ ms.search.validFrom: 2019-01-15
 
 [!include [banner](../includes/banner.md)]
 
-# Set up and manage vendor payments
-
 When you approve a vendor to work as a subcontractor and want to withhold payment to the vendor until your customer pays you for the project, you can set up the pay-when-paid (PWP) terms when you set up the purchase order (PO) with the vendor. 
 
 For example, when a customer pays an amount on a project invoice, you can release a partial amount, or the complete amount of the vendor invoice. To do this, set up the PWP terms specifying payment to the vendor after you receive a percentage of the related payment from the customer. When you receive partial payment from a customer, you can manually release some of the related vendor invoices for payment. The following example outlines the process flow when using PWP terms. 
