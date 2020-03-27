@@ -26,12 +26,10 @@ of the **System parameters** page (**System administration** \> **Setup** \>
 
 Some setup is required before you can work with certificates that are stored in
 Key Vault. For information about the required settings, see the following
-Microsoft Knowledge Base (KB) article: *4040294 - Maintaining Azure Key Vault
-storage*. After you set up the Key Vault storage, you should link to the
-certificates in Finance and Operations apps.
+Microsoft Knowledge Base (KB) article: [4040294 - Maintaining Azure Key Vault
+storage](https://support.microsoft.com/en-us/help/4040294/maintaining-azure-key-vault-storage). After you set up the Key Vault storage, you should link to the certificates in Finance and Operations apps.
 
-After the certificate is installed in Key Vault, it must be set up in the
-application.
+After the certificate is installed in Key Vault, it must be set up in the application.
 
 1.  Go to **System administration \> Setup \> Key Vault parameters**.
 
