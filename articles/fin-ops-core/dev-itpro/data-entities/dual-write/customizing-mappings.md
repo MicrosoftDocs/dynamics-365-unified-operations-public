@@ -16,7 +16,7 @@ LocalizationGroup:
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+
 
 The out-of-box entity maps have predefined entity and field mappings that enable the flow of data between two apps. In this way, they serve as "blueprints." However, because every business is different, the default entity maps might sometimes not be enough. Therefore, dual-write fully supports customization by providing ways to change entity maps and field mappings.
 

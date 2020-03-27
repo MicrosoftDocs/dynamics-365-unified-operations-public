@@ -16,7 +16,7 @@ LocalizationGroup:
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+
 
 When you enable an entity map for dual-write, it begins at the **Not running** status. The entity map then goes through an initialization phase, where it does an initial write by copying pre-existing data on entities on both sides. Finally, when the entity is completely enabled, the entity map sets the status to **Running**.
 

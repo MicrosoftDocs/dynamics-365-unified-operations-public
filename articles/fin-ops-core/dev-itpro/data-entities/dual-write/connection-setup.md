@@ -34,7 +34,7 @@ ms.search.validFrom: 2020-01-06
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+[!include [preview-banner](../../includes/preview-banner.md)]
 
 You can set up a dual-write connection between a Finance and Operations environment and a Common Data Service environment.
 

@@ -16,7 +16,7 @@ LocalizationGroup:
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+
 
 ## Verify requirements and grant access
 
