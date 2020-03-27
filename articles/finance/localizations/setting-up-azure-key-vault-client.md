@@ -1,6 +1,4 @@
----
-title: Set up the Azure Key Vault client
----
+# Set up the Azure Key Vault client
 
 The functionality for storing advanced certificates lets you define the type of
 certificate storage that is used in Finance and Operations apps.
@@ -24,7 +22,7 @@ of the **System parameters** page (**System administration** \> **Setup** \>
     **Use advanced certificate store** option to **Yes**. This storage option is
     the only option for a production environment in the Azure cloud.
 
-![Use advanced certificate store option set to Yes on the System parameters page](media/ce82afd8552037a541b910ada33e16e7.jpg)
+![](media/1_System_parameters.jpg)
 
 Some setup is required before you can work with certificates that are stored in
 Key Vault. For information about the required settings, see the following
@@ -39,9 +37,7 @@ application.
 
 2.  Select **New** to create a new instance.
 
-3.  Enter a name and description, and then, on the **General** FastTab,
-
-4.  set the fields that are required for the integration with Key Vault storage:
+3.  Enter a name and description, and then, on the **General** FastTab, set the fields that are required for the integration with Key Vault storage:
 
 -   **Key Vault URL** – Enter the default Key Vault URL if it isn't already
     defined by the secret reference.
@@ -54,10 +50,10 @@ application.
     Azure AD application that is used for authentication with the Key Vault
     storage.
 
->   Note: If several Key Vault storages are used, you should set up a separate
->   instance for each instance on the **Key Vault parameters** page.
+   > [!NOTE]
+   > If several Key Vault storages are used, you should set up a separate instance for each instance on the **Key Vault parameters** page.
 
-1.  On the **Certificates** FastTab, select **Add** to add your certificates.
+4.  On the **Certificates** FastTab, select **Add** to add your certificates.
     For each certificate, set the following fields:
 
 -   **Name**
@@ -67,25 +63,21 @@ application.
 -   **Key Vault certificate secret** – Enter a secret reference to the
     certificate.
 
->   The format of a Key Vault certificate secret must resemble the following
->   example:
+The format of a Key Vault certificate secret must resemble the following example:
 
->   vault://\<KeyVaultName\*\>/\<SecretName\>/\<SecretVersion\*\>
+vault://\<KeyVaultName\*\>/\<SecretName\>/\<SecretVersion\*\>
 
->   Attributes that are marked with an asterisk (\*) are optional. However, the
->   **\<SecretName\>** attribute is required. In most cases, you can define a
->   Key Vault secret key in the following format:
+Attributes that are marked with an asterisk (\*) are optional. However, the **\<SecretName\>** attribute is required. In most cases, you can define a
+Key Vault secret key in the following format:
 
->   vault:///\<SecretName\>
+vault:///\<SecretName\>
 
->   If the secret version isn't defined in the Key Vault secret key, the system
->   retrieves the active certificate that has the latest expiration date.
+If the secret version isn't defined in the Key Vault secret key, the system retrieves the active certificate that has the latest expiration date.
 
-![](media/18b56bdee7ecbf20d14fe3bf24d117c6.jpg)
+![](media/2_Key_Vault_parameters.jpg)
 
->   Add button on the Certificates FastTab of the Key Vault parameters page
-
-Note: The Key Vault storage functionality has been extended so that it includes
+   > [!NOTE]
+   > The Key Vault storage functionality has been extended so that it includes
 caching of certificates. The following configuration is recommended:
 
 -   Specify a secret version in the Key Vault certificate secret.
