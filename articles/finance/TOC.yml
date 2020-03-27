@@ -2008,6 +2008,8 @@
           href: localizations/emea-ita-exil-bank-remittance.md
         - name: Unique certification
           href: localizations/emea-ita-exil-unique-certification.md
+        - name: Bills of exchange protest import
+          href: localizations/emea-ita-exil-protest-boe.md
       - name: Japan
         items:
         - name: Japan overview
