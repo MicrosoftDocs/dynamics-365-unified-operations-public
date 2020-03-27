@@ -16,7 +16,7 @@ LocalizationGroup:
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+
 
 1. Sign in to the Finance and Operations app environment that you want to link to your Common Data Service environment.
 2. Go to **Workspaces \> Data management**, and select the **Dual Write** tile.

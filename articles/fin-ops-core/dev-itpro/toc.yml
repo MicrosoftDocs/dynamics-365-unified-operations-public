@@ -162,6 +162,8 @@
                   href: data-entities/dual-write/connection-setup.md
                 - name: Dual-write setup from Lifecycle Services
                   href: data-entities/dual-write/lcs-setup.md
+                - name: Initial synchronization
+                  href: data-entities/dual-write/initial-sync.md
                 - name: Enable dual-write for existing Finance and Operations apps
                   items:
                     - name: Enable dual-write for existing Finance and Operations apps
@@ -226,8 +228,6 @@
               items:
                 - name: Support for Field Service solutions and Project Service Automation solutions
                   href: data-entities/dual-write/field-service-project-service-automation.md
-                - name: Initial synchronization
-                  href: data-entities/dual-write/initial-sync.md
                 - name: Troubleshooting
                   items:
                   - name: Verify that dual-write is configured in Finance and Operations apps and Common Data Service
@@ -1072,6 +1072,8 @@
           href: lifecycle-services/planned-maintenance-window-faq.md
       - name: Monitoring and diagnostics
         href: lifecycle-services/monitoring-diagnostics.md
+      - name: Impact analysis report
+        href: lifecycle-services/impact-analysis-report.md
       - name: Restart environment services
         href: lifecycle-services/restart-environment-services.md
       - name: Report a production outage

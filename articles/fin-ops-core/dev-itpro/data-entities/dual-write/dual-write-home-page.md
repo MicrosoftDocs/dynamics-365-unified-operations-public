@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview banner](../../includes/preview-banner.md)]
+
 
 These topics describe dual-write integration.
 
@@ -48,13 +48,13 @@ These topics describe dual-write integration.
 + [System requirements for dual-write](dual-write-system-req.md)
 + [Supported scenarios for dual-write setup](connection-setup.md)
 + [Dual-write setup from Lifecycle Services](lcs-setup.md)
++ [Initial synchronization choices and administration views](initial-sync.md)
++ Enable dual-write for existing Finance and Operations apps
 
-### Enable dual-write for existing Finance and Operations apps
-
-+ [Enable dual-write for existing Finance and Operations apps](enable-dual-write.md)
-+ [System requirements and prerequisites](requirements-and-prerequisites.md)
-+ [How to use the dual-write wizard to link your environments](link-your-environment.md)
-+ [Enable entity map for dual-write](enable-entity-map.md)
+    + [Enable dual-write for existing Finance and Operations apps](enable-dual-write.md)
+    + [System requirements and prerequisites](requirements-and-prerequisites.md)
+    + [How to use the dual-write wizard to link your environments](link-your-environment.md)
+    + [Enable entity map for dual-write](enable-entity-map.md)
 
 ## Managing dual-write after setup
 
@@ -94,7 +94,6 @@ These topics describe mapping between concepts in Finance and Operations applica
 ## Support
 
 + [Support for Field Service solutions and Project Service Automation solutions](field-service-project-service-automation.md)
-+ [Initial synchronization choices and administration views](initial-sync.md)
 
 ## Troubleshooting
 

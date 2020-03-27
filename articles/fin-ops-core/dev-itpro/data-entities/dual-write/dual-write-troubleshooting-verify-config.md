@@ -34,7 +34,7 @@ ms.search.validFrom: 2020-03-16
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
+
 
 This topic provides troubleshooting information for dual-write integration between Finance and Operations apps and Common Data Service. Specifically, it explains how you can determine whether dual-write is configured in Finance and Operations apps and in Common Data Service.
 
