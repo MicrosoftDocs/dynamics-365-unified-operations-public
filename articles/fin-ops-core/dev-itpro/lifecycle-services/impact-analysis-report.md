@@ -3,7 +3,7 @@ title: Impact analysis report in Lifecycle Services (LCS)
 description: This topic provides information about the Impact analysis report in Microsoft Dynamics Lifecycle Services (LCS).
 author: dfroslieMSFT 
 manager: AnnBe
-ms.date: 07/02/2019
+ms.date: 03/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -12,7 +12,6 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-ROBOTS: NOINDEX, NOFOLLOW 
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
