@@ -51,6 +51,6 @@ By setting the Warehouse management parameters \&gt; General \&gt; License plate
 
 Additional information:
 
-To read more about inbound loads, see \*\*\*NEW\_INBOUND\_LOAD\_PAGE\*\*\*.
+To read more about inbound loads, see \*\*\*NEW\_INBOUND\_LOAD\_PAGE\*\*\*. <!-- link to new page for Inbound load (Olga's doc.) -->
 
 To read more about Warehousing mobile-device menu items, see [https://docs.microsoft.com/en-us/dynamics365/supply-chain/warehousing/configure-mobile-devices-warehouse](https://docs.microsoft.com/en-us/dynamics365/supply-chain/warehousing/configure-mobile-devices-warehouse)
