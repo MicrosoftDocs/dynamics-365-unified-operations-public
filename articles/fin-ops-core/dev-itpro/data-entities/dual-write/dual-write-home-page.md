@@ -82,4 +82,14 @@ These topics describe mapping between concepts in Finance and Operations applica
 
 + [Support for Field Service solutions and Project Service Automation solutions](field-service-project-service-automation.md)
 + [Initial synchronization choices and administration views](initial-sync.md)
-+ [Troubleshooting data integration](dual-write-troubleshooting.md)
+
+## Troubleshooting
+
++ [Verify that dual-write is configured in Finance and Operations apps and Common Data Service](dual-write-troubleshooting-verify-config.md)
++ [Troubleshoot issues during initial setup](dual-write-troubleshooting-initial-setup.md)
++ [Troubleshoot issues during initial synchronization](dual-write-troubleshooting-initial-sync.md)
++ [Troubleshoot issues with the Dual-write module in Finance and Operations apps](dual-write-troubleshooting-dual-write-module.md)
++ [Troubleshoot live synchronization issues](dual-write-troubleshooting-live-sync.md)
++ [Troubleshoot issues related to solution awareness](dual-write-troubleshooting-solution-awareness.md)
++ [Troubleshoot issues related to upgrades of Finance and Operations apps](dual-write-troubleshooting-finops-upgrades.md)
++ [General troubleshooting](dual-write-troubleshooting.md)
