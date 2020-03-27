@@ -984,6 +984,8 @@
         href: project-management/project-contracts.md
       - name: Project forecasts and budgets
         href: project-management/project-forecasts-budgets.md
+      - name: Transfer project budgets at fiscal year end
+        href: project-management/process-project-budgets-for-fiscal-year-end.md
       - name: Project sales orders
         href: project-management/project-sales-orders.md
       - name: Purchase orders for a project
