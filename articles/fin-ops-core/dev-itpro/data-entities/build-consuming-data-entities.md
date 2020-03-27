@@ -436,6 +436,8 @@ During entity development, take care to ensure that the overall structure of the
 ```Console
 Cannot create a row of size xxx which is greater than the allowable maximum row size of 8060
 ```
+### Exporting container fields
+If an entity has container fields and such fields must be exported, the entity must implement getFieldsToBeConvertedToFile to allow each container field to export its data value to a seperate file. This allows for container fields to be exportable and at the same time prevents from making the entity export file (core entity data without the container fields) from being unreadable. If getFieldsToBeConvertedToFile is not implemented, then such fields will not be exported but the rest of the entity data will export as usual.
 
 ## Additional resources
 
