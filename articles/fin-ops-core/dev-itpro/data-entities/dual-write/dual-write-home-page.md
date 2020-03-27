@@ -49,6 +49,19 @@ These topics describe dual-write integration.
 + [Supported scenarios for dual-write setup](connection-setup.md)
 + [Dual-write setup from Lifecycle Services](lcs-setup.md)
 
+### Enable dual-write for existing Finance and Operations apps
+
++ [Enable dual-write for existing Finance and Operations apps](enable-dual-write.md)
++ [System requirements and prerequisites](requirements-and-prerequisites.md)
++ [How to use the dual-write wizard to link your environments](link-your-environment.md)
++ [Enable entity map for dual-write](enable-entity-map.md)
+
+## Managing dual-write after setup
+
++ [Customize entity and field mappings](customizing-mappings.md)
++ [Error management and alert notifications](errors-and-alerts.md)
++ [Application lifecycle management](app-lifecycle-management.md)
+
 ## Mapping concepts between apps
 
 These topics describe mapping between concepts in Finance and Operations applications and concepts in model-driven apps in Microsoft Dynamics 365.
