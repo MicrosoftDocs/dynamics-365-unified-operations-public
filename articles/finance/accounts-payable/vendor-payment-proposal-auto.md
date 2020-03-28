@@ -1,3 +1,34 @@
+---
+# required metadata
+
+title: Vendor invoices overview
+description: This topic provides general information about vendor invoices. Vendor invoices are requests for payment for products and services that were received. Vendor invoices can represent a bill for ongoing services, or they can be based on purchase orders for specific items and services. 
+author: abruer
+manager: AnnBe
+ms.date: 07/17/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: roschlom
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 13971
+ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: abruer
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+
+---
 
 # Vendor payment proposal automation
 
