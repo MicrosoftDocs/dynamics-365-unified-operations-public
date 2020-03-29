@@ -45,7 +45,7 @@ This topic explains the data synchronization processes that can be run frequentl
 You can use the following APIs to show inventory availability for a product when your customers are shopping on an e-Commerce site.
 
 - **GetEstimatedAvailabilty** – Use this API to get inventory availability for the item in the e-Commerce channel warehouse or all warehouses that are linked to the configuration of the fulfillment group for the e-Commerce channel. This API can also be used for warehouses in a specific search area or radius, based on longitude and latitude data.
-- **ProductWarehouseInventoryAvailabilities** – Use this API to request inventory for an item from a specific warehouse. For example, you can use it to show inventory availability in scenarios that involve order pickup.
+- **GetEstimatedProductWarehouseAvailability** – Use this API to request inventory for an item from a specific warehouse. For example, you can use it to show inventory availability in scenarios that involve order pickup.
 
 > [!NOTE]
 > These APIs replace the **GetProductAvailabilities** and **GetAvailableInventoryNearby** APIs in Dynamics 365 Retail version 10.0.7 and earlier.

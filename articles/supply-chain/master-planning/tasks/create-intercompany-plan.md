@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create an intercompany plan
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure shows how to create an intercompany plan. The demo data company used to create this procedure is USMF.
 

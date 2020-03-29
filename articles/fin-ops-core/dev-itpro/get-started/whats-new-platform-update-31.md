@@ -5,7 +5,7 @@ title: What's new and changed in Platform update 31 for Finance and Operations a
 description: This topic describes features that are in preview in Platform update 31 for Finance and Operations apps. 
 author: tonyafehr
 manager: AnnBe
-ms.date: 02/14/2020
+ms.date: 03/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -42,7 +42,9 @@ This topic describes features that are new or changed for Platform update 31 for
 For more information about Platform update 31, see [Additional resources](whats-new-platform-update-31.md#additional-resources).
 
 ## Turn on the new (preview) grid control through Feature management
-Previously the new grid control was available by adding "&debug=reactGrid" to the environment URL. Now in Platform update 31, the new grid control can be turned on for qualified environments using the Feature management workspace (see the steps below for instructions on how to enable the flight). To learn more about the new grid control, see [User productivity - New grid](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations/user-productivity-new-grid).
+Previously the new grid control was available by adding "&debug=reactGrid" to the environment URL. Now in Platform update 31, the new grid control can be turned on for qualified environments using the Feature management workspace. Refer to the following instructions about how to enable the flight in non-production environments. Qualified environments include Tier 1 (Dev/Test) and Tier 2 (Sandbox) environments. Note that this feature cannot be turned on in production until version 10.0.9, Platform update 33.
+
+To learn more about the new grid control, see [User productivity - New grid](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations/user-productivity-new-grid).
 
 To enable the new grid while this feature is in preview, follow these steps:
 

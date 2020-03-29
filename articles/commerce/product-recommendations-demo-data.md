@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Get product recommendations using demo data
+title: Create recommendations with demo data
 description: This document provides guidance on how to leverage omni-channel product recommendations in Tier-1 single box environments using pre-populated, customizable demo data.
 author: bebeale
 manager: AnnBe
-ms.date: 10/01/19
+ms.date: 03/19/20
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -29,7 +29,10 @@ ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ---
 
-# Get product recommendations using demo data
+# Create recommendations with demo data
+
+[!include [banner](includes/banner.md)]
+
 This document provides guidance on how to leverage omni-channel product recommendations in Tier-1 single box environments using pre-populated, customizable demo data.
 
 Omni-channel product recommendations provide a set of editorially curated or programmatically generated list of products. These lists can be used in several scenarios, depending on the business need. For more information about product recommendation lists, see [Product recommendations overview](product-recommendations.md).
@@ -39,10 +42,10 @@ For Tier-2 and higher Dynamics 365 environments, product recommendations are aut
 For Tier-1 environments, product recommendations are based only off the static demo data stored in a .csv file.
 
 ## Enabling product recommendations demo data in an environment
-To enable product recommensations demo date, you need to deploy the Dynamics 365 Commerce Preview Demo Extension to the respective environment. Doing so automatically enables product recommendations demo data.
+To enable product recommendations demo date, you need to deploy the Dynamics 365 Commerce Preview Demo Extension to the respective environment. Doing so automatically enables product recommendations demo data.
 
 ## Default demo data
-Each Onebox type environment comes with a preloaded set of product recommendations demo data stored in the coma separated ‘reco_demo_data.csv’ file, located on the Commerce Scale Unit.
+Each Onebox type environment comes with a preloaded set of product recommendations demo data stored in the coma separated 'reco_demo_data.csv' file, located on the Commerce Scale Unit.
 
 The data is structured along the following columns.
 
@@ -52,7 +55,7 @@ The data is structured along the following columns.
 | OperatingUnitNumber | :heavy_check_mark: | The specific operating unit number where product recommendations are expected to be   surfaced.                                        |                                                                              |
 | Category            |                    |    The category the specific list should be returned for. If no category is specified, the list is for top of navigation hierarchy only.    |                                                                              |
 | SeedItemId          |                    |    For lists that require seed (RecoPeopleAlsoBuy and RecoCart), the product those lists should show additional products for.            |                                                                              |
-| ItemIds             | :heavy_check_mark: | One or more products to be returned as the result, separated by ‘;’.                                                                  |                                                                              |
+| ItemIds             | :heavy_check_mark: | One or more products to be returned as the result, separated by ';'.                                                                  |                                                                              |
 
 ## Customize demo data
 You can edit the default demo data with any product and category information configured in HQ. Once you update the .csv, the product recommendations that are returned to customers will immediately reflect the changes.
@@ -70,4 +73,20 @@ The extension contains a datafile called 'RecoMockDataset.csv' which allows you 
 
 [Product recommendations overview](product-recommendations.md)
 
-[Environment planning](../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md)
+[Enable ADLS in a Dynamics 365 Commerce environment](enable-adls-environment.md)
+
+[Enable product recommendations](enable-product-recommendations.md)
+
+[Enable personalized recommendations](personalized-recommendations.md)
+
+[Opt out of personalized recommendations](personalization-gdpr.md)
+
+[Add product recommendations on POS](product.md)
+
+[Add recommendations to the transaction screen](add-recommendations-control-pos-screen.md)
+
+[Adjust AI-ML recommendations results](modify-product-recommendation-results.md)
+
+[Manually create curated recommendations](create-editorial-recommendation-lists.md)
+
+[Product recommendations FAQ](faq-recommendations.md)

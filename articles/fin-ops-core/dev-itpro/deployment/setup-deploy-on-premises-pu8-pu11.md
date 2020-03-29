@@ -3,9 +3,9 @@
 
 title: Set up and deploy on-premises environments (Platform updates 8 and 11)
 description: This topic provides information about how to plan, set up, and deploy an on-premises environment.
-author: sarvanisathish
+author: PeterRFriis
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -24,7 +24,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sarvanis
+ms.author: perahlff
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
 
@@ -521,7 +521,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
 ### <a name="setupsql"></a> 13. Set up SQL Server
 
-1. Install SQL Server 2016 SP1 with high availability. (Unless you're deploying in a sandbox environment, where one instance of SQL Server is sufficient. You may want to install SQL Server with high availability in sandbox enviornments to test high availability scenarios.)
+1. Install SQL Server 2016 SP1 with high availability. (Unless you're deploying in a sandbox environment, where one instance of SQL Server is sufficient. You may want to install SQL Server with high availability in sandbox environments to test high availability scenarios.)
 
     You can install SQL Server with high availability either as SQL clusters that include a Storage Area Network (SAN) or in an Always-On configuration. Verify that the Database Engine, SSRS, Full-Text Search, and Management Tools are already installed.
 

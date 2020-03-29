@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create a released product for a single company
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure walks through how to create a single released product in the context of a single legal unit. After the released product is created,  it's immediately available in this unit only. You can walk through this procedure in demo data company USMF. This task is usually performed by a product designer.
 
@@ -61,11 +61,11 @@ This procedure walks through how to create a single released product in the cont
 18. In the list, find and select the desired record.
 19. In the list, click the link in the selected row.
 20. In the Purchase unit field, click the drop-down button to open the lookup.
-    * The purchase unit determines how the product is quantified when it’s purchased from a vendor.  
+    * The purchase unit determines how the product is quantified when it's purchased from a vendor.  
 21. In the list, find and select the desired record.
 22. In the list, click the link in the selected row.
 23. In the Sales unit field, click the drop-down button to open the lookup.
-    * The sales unit determines how the product is quantified when it’s sold to a customer.  
+    * The sales unit determines how the product is quantified when it's sold to a customer.  
 24. In the list, find and select the desired record.
 25. In the list, click the link in the selected row.
 26. In the BOM unit field, click the drop-down button to open the lookup.

@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Automatic transmission of NF-e fiscal documents (Brazil)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Use the following procedure to set up email parameters to automatically send a Nota Fiscal eletrônica (NF-e) to a vendor or customer after the NF-e is approved or canceled, or if you generate a correction letter. You can set up a batch group and email templates for an NF-e. You must create separate email templates for an approved NF-e, a canceled NF-e, and a correction letter. You can then create a batch process to send the NF-e by email. This task uses the BRMF demo company.
 

@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create a one-time vendor and invoice in the public sector
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 The vendor record uses values from the default one-time vendor account. To view the account details, go to the All vendors page, and then double-click the vendor account number of the default one-time vendor. You can create and assign to vendors any types of certification that they may hold. This task guide was created using the PSUS demo company data in the public sector partition.
 

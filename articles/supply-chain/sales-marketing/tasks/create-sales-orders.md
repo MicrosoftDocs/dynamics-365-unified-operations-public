@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create sales orders
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure shows you how to create a sales order. You can use the procedure in demo data company USMF. Sales orders are typically created by a sales order processor. 
 
@@ -57,7 +57,7 @@ The products sold by your organization may come in variants differentiated by di
 6. In the **Color** field, select the drop-down button to open the lookup.
 7. In the list, find and select the desired record.
 8. In the **Quantity** field, enter a number.
-    - If the item is sold in different units than when it’s purchased, produced, and stored, and a sales unit of measure is set on the product record, this value will be shown in the **Unit** field. You can change the value at any time.   
+    - If the item is sold in different units than when it's purchased, produced, and stored, and a sales unit of measure is set on the product record, this value will be shown in the **Unit** field. You can change the value at any time.   
     - If the **Site** field already contains a value, the value was copied from the order header or from the order settings that are associated with the product. You can change the value at any time. If the field is empty, select a value.   
     - If the **Unit price** field already contains a value, the value was copied from a valid trade agreement, or from the product record. (The unit price can also originate from a sales agreement, but the process for creating sales orders from sales agreements is different to the one shown here.) If the field is empty, enter a value.   
     - The **Discount** field contains a discount amount per product unit. To calculate the total line discount amount, the discount value is multiplied by line quantity. If the **Discount** field already contains a value, the value was copied from a valid trade agreement. If the field is empty, and you want to give the customer a line discount, enter a value.  

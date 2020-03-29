@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Perform Self service to download hardware station
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This procedure walks through how to download a pre-defined hardware station. The demo data company used for this procedure is USRT. You must have created a new hardware station profile and hardware station before starting this task.
 

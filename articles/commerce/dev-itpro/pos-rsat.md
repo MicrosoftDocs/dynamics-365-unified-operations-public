@@ -5,7 +5,7 @@ title: Test recorder and Regression suite automation tool for Cloud POS
 description: This topic explains how to automate user acceptance testing (UAT) by using the POS test recorder and the Regression suite automation tool (RSAT).
 author: mugunthanm
 manager: AnnBe
-ms.date: 10/15/2019
+ms.date: 03/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -174,21 +174,28 @@ To resume the recording session after you've paused it, select **Recording**.
 
 Follow these steps to create a new recording by using the test recorder:
 
-1. Open Cloud POS, and sign in.
-2. On the **Settings** page, in the **Task and Test recorders** section, select **Open test recorder**.
+1. Launch Cloud POS.
+
+2. Select the hamburger icon on the left pane and select **Settings**. Don't sign in to Cloud POS. The sign in step must be recorded as part of the test recording flow, so you need to launch the recorder before sign in.)
+
+3. On the **Settings** page, in the **Task and Test recorders** section, select **Open test recorder**.
 
     [![Task and Test recorders](./media/CreateTest.png)](./media/CreateTest.png)
 
-3. Select **Create a new recording**.
+4. Select **Create a new recording**.
 
     > [!div class="mx-imgBorder"]
     > [![Create a new recording](./media/NewTest.png)](./media/Newtest.png)
 
-4. Enter a name and description for the recording, and then select **Start**.
+5. Enter a name and description for the recording, and then select **Start**.
 
     The test recorder enters recording mode, and the recording session begins. The test recorder pane shows information and controls that are related to the recording session.
+    
+> [!NOTE]
+> All test recording must begin from the Cloud POS sign in page. If the recording is started from the home page, any transaction or  other page playback will fail and you will need to start the recording again from the sign in page. 
 
-5. Perform the actions that you want to perform in the POS UI.
+
+6. Perform the needed actions in the POS user interface.
 
     > [!div class="mx-imgBorder"]
     > [![Test recorder steps](./media/Steps.png)](./media/Steps.png)
@@ -216,7 +223,7 @@ After you end a recording session, you can download the recording by selecting *
 
 The .axtr file is saved to the local file system. You must manually upload this file to LCS or Azure DevOps and then either delete it from the file system or secure it. 
 
-To upload to Azure Dev Ops directly:
+To upload to Azure DevOps directly:
 1. Change the .axtr file extension to .zip.
 2. Open the .zip package. 
 3. Inside the package there will be file with name Recording.xml. Upload the Recording.xml to the test case in Azure DevOps. Don’t upload the entire .zip or .axtr package.

@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create a default product lifecycle state
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure shows how to create a default product lifecycle state as well as how to associate the default state with released products.
 

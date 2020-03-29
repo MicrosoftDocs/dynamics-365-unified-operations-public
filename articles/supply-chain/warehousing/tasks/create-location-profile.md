@@ -28,9 +28,9 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create a location profile
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-This topic explains how to create a location profile in Dynamics 365 Supply Chain Management. Every location in the warehouse needs to have a location profile associated with it that describes the properties of the location, for example, whether the location allows mixed items. In this procedure we’ll create a profile for a location that doesn’t require license plate control. We’ll enable mixed items, and mixed inventory statuses, and allow cycle counting. You can use this procedure in the USMF demo data company.
+This topic explains how to create a location profile in Dynamics 365 Supply Chain Management. Every location in the warehouse needs to have a location profile associated with it that describes the properties of the location, for example, whether the location allows mixed items. In this procedure we'll create a profile for a location that doesn't require license plate control. We'll enable mixed items, and mixed inventory statuses, and allow cycle counting. You can use this procedure in the USMF demo data company.
 
 
 1. In the navigation pane, go to **Modules > Warehouse management > Setup > Warehouse > Location profiles**.

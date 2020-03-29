@@ -28,11 +28,11 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Post vouchers from the general journal
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-This procedure walks you through posting Chinese vouchers using the general journal.  Before you can complete this procedure, be sure that you’ve created all of the necessary fiscal calendars. 
+This procedure walks you through posting Chinese vouchers using the general journal.  Before you can complete this procedure, be sure that you've created all of the necessary fiscal calendars. 
 
-This procedure was created using the demo data company CNMF. For the CNMF demo data, you must create fiscal years through the current year in the fiscal calendar ‘Fiscal_CN’. This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.
+This procedure was created using the demo data company CNMF. For the CNMF demo data, you must create fiscal years through the current year in the fiscal calendar 'Fiscal_CN'. This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.
 
 
 ## Post vouchers from general ledger journals

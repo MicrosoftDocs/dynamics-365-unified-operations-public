@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Assign users to security roles
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 To use anything other than common capabilities, users must be assigned to security roles. This procedure explains how system administrators can automatically assign users to roles, based on business data. 
 
@@ -52,4 +52,4 @@ To use anything other than common capabilities, users must be assigned to securi
 5. In the **Assign users to or exclude users from role** list, mark the selected row. Select a user.  
 6. On the **Action pane**, select **Exclude from role**.
     
-    Click **Exclude from role** to exclude the selected users from the role. To remove exclusions, select the users that you want to remove exclusions for, and then click **Reset status**. When you remove an exclusion by resetting the user’s status, the user’s role is again assigned automatically. However, the user is not immediately assigned to the role or excluded from the role when you reset the status. Instead, the user is either assigned to the role or removed from the role the next time that the rules for automatic role assignment are run.  
+    Click **Exclude from role** to exclude the selected users from the role. To remove exclusions, select the users that you want to remove exclusions for, and then click **Reset status**. When you remove an exclusion by resetting the user's status, the user's role is again assigned automatically. However, the user is not immediately assigned to the role or excluded from the role when you reset the status. Instead, the user is either assigned to the role or removed from the role the next time that the rules for automatic role assignment are run.  

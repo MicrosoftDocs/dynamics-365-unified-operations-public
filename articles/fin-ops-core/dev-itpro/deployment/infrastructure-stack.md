@@ -3,9 +3,9 @@
 
 title: Self-service deployment overview
 description: This topic provides an overview of self-service deployment.
-author: sarvanisathish
+author: rashmansur
 manager: AnnBe
-ms.date: 02/10/2020
+ms.date: 03/04/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -21,7 +21,7 @@ ms.search.scope: Operations
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global 
 # ms.search.industry: 
-ms.author: sarvanis
+ms.author: rashmim
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: 8.1.1
 
@@ -49,7 +49,7 @@ Customers using the self-service capabilities will see the following changes in 
 
 - You will no longer have remote desktop access to the Tier 2+ sandbox environments. All operations that need remote desktop access are now available as self-service actions. The following image shows some of the operations in the environment’s **Maintain** \> **Move database menu** option. For more information, see [Maintenance operations for deployments](maintenanceoperationsguide-newinfrastructure.md).
 
-    > [IMPORTANT]
+    > [!IMPORTANT]
     > Remote desktop access will be restricted only to environments deployed using the self-service deployment. There is no change to existing environments or existing customers. 
 
    ![Self-service actions](media/Self-service-actions.png)

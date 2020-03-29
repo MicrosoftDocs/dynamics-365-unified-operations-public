@@ -30,6 +30,8 @@ ms.dyn365.ops.version: 10.0.4
 
 # Include GST when calculating tax collections
 
+[!include [banner](../includes/banner.md)]
+
 ## Set up GST requirements
 
 1. Go to **Tax** \> **Indirect Tax** \> **Withholding tax** \> **Withholding tax groups**.

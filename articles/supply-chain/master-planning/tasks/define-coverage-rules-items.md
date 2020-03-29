@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Define coverage rules for items
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 The demo data company used to create this procedure is USMF. This procedure shows how to create coverage rules and override coverage settings for a specific item. It also shows how to specify default inventory settings.
 

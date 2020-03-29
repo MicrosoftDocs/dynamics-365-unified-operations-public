@@ -28,18 +28,18 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # ER Design a configuration for generating reports in OPENXML format (November 2016)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic explains how a user in the System Administrator or Electronic Reporting Developer role can create a new Electronic reporting (ER) configuration that contains a template for generating electronic documents in OPENXML format. This configuration will be used for processing vendor payments.
 
 In this example, you will create a configuration for sample company, Litware, Inc. These steps can be performed in GBSI company.
 
-To complete these steps, you must first complete the steps in the “Create a configuration provider and mark it as active” procedure. You must also have an Excel file which will be imported when creating the template. This file can be accessed from the [Template of Payment Report](https://go.microsoft.com/fwlink/?linkid=862266).
+To complete these steps, you must first complete the steps in the "Create a configuration provider and mark it as active" procedure. You must also have an Excel file which will be imported when creating the template. This file can be accessed from the [Template of Payment Report](https://go.microsoft.com/fwlink/?linkid=862266).
 
 
 ## Upload the Payments data model configuration
 1. In the navigation pane, go to **Modules > Organization administration > Workspaces > Electronic reporting**.
-2. In the list, mark the configuration provider for sample company, Litware, Inc. If you don’t see this configuration provider, you must first complete the steps in [Create configuration providers and mark them as active](er-configuration-provider-mark-it-active-2016-11.md).
+2. In the list, mark the configuration provider for sample company, Litware, Inc. If you don't see this configuration provider, you must first complete the steps in [Create configuration providers and mark them as active](er-configuration-provider-mark-it-active-2016-11.md).
 3. Select **Set active**.
 4. Select **Repositories**. Select a repository for the Operations Resources type, if available. If its available, skip the following steps about creating a new repository.  
 5. Select **Add** to open the drop dialog.
@@ -58,7 +58,7 @@ To complete these steps, you must first complete the steps in the “Create a co
 3. Select **Create configuration** to open the drop dialog.
 4. In the **New** field, enter `Format based on data model PaymentModel`. Create a format that is based on the PaymentModel data model.
 5. In the **Name** field, type `Sample worksheet report`. Sample worksheet report  
-6. In the **Description** field, type `Sample worksheet report for vendors’ payments`. Sample worksheet report for vendors’ payments.  
+6. In the **Description** field, type `Sample worksheet report for vendors' payments`. Sample worksheet report for vendors' payments.  
 7. In the **Data model definition** field, enter or select a value. Select the **CustomerCreditTransferInitiation** definition.  
 8. Select **Create configuration**.
 

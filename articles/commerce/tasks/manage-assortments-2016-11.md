@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Manage assortments (November 2016)
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This procedure demonstrates how to create and publish a new product assortment and uses the demo data company USRT. 
 

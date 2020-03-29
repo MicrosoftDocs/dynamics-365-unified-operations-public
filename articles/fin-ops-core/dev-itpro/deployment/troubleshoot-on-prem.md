@@ -3,9 +3,9 @@
 
 title: Troubleshoot on-premises deployments
 description: This topic provides troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises).
-author: sarvanisathish
+author: PeterRFriis
 manager: AnnBe
-ms.date: 02/24/2020
+ms.date: 03/03/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-platform
@@ -24,7 +24,7 @@ ms.custom: 60373
 ms.assetid:
 ms.search.region: Global
 # ms.search.industry:
-ms.author: sarvanis
+ms.author: perahlff
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
 
@@ -667,7 +667,7 @@ Category does not exist.
 
 **Reason:** The pointers to the performance counter that the gateway needs may be corrupt.
 
-**Resolution:** Run lodctr /R in a Command Prompt running as Administrator in all AOS nodes where the Gateway is unhealthy. If you recieve an error about not being able to rebuild the performance counters, try executing the command again. 
+**Resolution:** Run **lodctr /R** in a Command Prompt window that you open as administrator in all AOS nodes where the gateway is unhealthy. If you receive an error message that states that the performance counters can't be rebuilt, try to run the command again. 
 
 ## Management Reporter
 
@@ -1182,14 +1182,7 @@ You can skip or modify the following sections in the deployment instructions.
 
 ### Configure AD FS (as documented for [Platform update 12](setup-deploy-on-premises-pu12.md#configureadfs) or [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#configureadfs))
 
-- You can skip scripts 1, 2, and 3, because they have already been done.
-- The .\\Publish-ADFSApplicationGroup.ps1 script will fail even when the new **hosturl** value is used. Therefore, you must manually complete these steps.
-
-    1. In AD FS Manager, go to **AD FS** \> **Application groups**, and open **Microsoft Dynamics 365 for Operations On-premises**.
-    2. Open the **Microsoft Dynamics 365 for Operations On-premises - Native application** native application. Add the redirect URI of the new environment (DNS).
-    3. Open the **Microsoft Dynamics 365 for Operations On-premises - Financial Reporting - Native application** native application. Add the redirect URI of the new environment (DNS).
-    4. Open the **Microsoft Dynamics 365 for Operations On-premises - Web API** Web API. Add the two entries of the redirect URI of the new environment (DNS).
-    5. Open the **Microsoft Dynamics 365 for Operations On-premises - Financial Reporting Web API** Web API. Add the redirect URI of the new environment (DNS).
+- Configure AD FS according to the [Reuse the same AD FS instance for multiple environments](./onprem-reuseadfs.md) guide.
 
 ## Redeploy SSRS reports
 
@@ -1417,7 +1410,7 @@ This issue occurs because Reporting Services has a lock on a Microsoft Dynamics 
 
 ```stacktrace 
 Microsoft.Dynamics.Ax.Xpp.ClrErrorException: TypeInitializationExeption ---> 
-System.TypeInitializationException: The type inititlaizer for 'Microsoft.Dynamics.Ax.Metadata.XppCompiler.CompilerTracer' threw an exception. ---> 
+System.TypeInitializationException: The type initializer for 'Microsoft.Dynamics.Ax.Metadata.XppCompiler.CompilerTracer' threw an exception. ---> 
 System.TypeInitializationException: The type initializer for 'Microsoft.Dynamics.Ax.DesignTime.Telemetry.OneDS' threw an exception. ---> 
 System.IO.FileLoedAxception: Could not load file or assembly 'Microsoft.Diagnostics.Tracing.TraceEvent, Version=2.0.43.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' or one of its dependencies. 
 The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040) at Microsoft.Dynamics.Ax.DesignTime.Telemetry.OneDS.cctor() 
