@@ -55,18 +55,25 @@ Before you set up leave and absence plans in Dynamics 365 Human Resources, it's 
 
 7. Select **Save**.
 
+## View and change leave and absence parameters
+1. On the **Leave and absence** page, select the **Links** tab.
+
+2. Under **Setup**, select **Leave and absence parameters**.
+
+3. On the **General**tab, choose the following:
+
+- Set the **Unit for leave and absence** to either hours or days. If days, you can optionally **Enable half day definition**. This allows employees to choose either first half of day or second half of day in their time off requests. 
+
+- Choose the **Months of service effective date** to set when the accrual rates takes effect for leave plans using months of service.
+
+- Select **Balance calculation** to have balances display as of today or as of the accrual period. If **Balance as of of today** is selected, the balance will display the total of all accruals, adjustments and requests as of today. If **Balance as of accrual period** is selected, the balance will display the total of all accruals, adjustments and requests as of the accrual period defined by the frequency in the leave plan. 
+
+
 ## Configure calendar parameters
-
-If you have enabled the Leave and absence calendar preview feature, you need to configure additional parameters. 
-
-[!include [banner](includes/preview-feature-leave-absence.md)]
-
-> [!NOTE]
-> For the preview release on February 3, 2020, only **Pending leave requests** are enabled.
 
 1. On the **Leave and absence** page, select the **Links** tab.
 
-2. Under **Setup**, select **Human resources parameters**.
+2. Under **Setup**, select **Leave and absence parameters**.
 
 3. On the **Calendar** tab, change calendar settings as necessary.
 
