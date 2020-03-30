@@ -64,7 +64,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes (Replaced with ER format application-specific parameters) |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: Reference field, related table, data entity. |
+| **Status**                         | Deprecated: By April 1, 2021, we plan to no longer support functionality related to Standard main accounts: Reference field, related table, data entity. |
 
 ## Features removed or deprecated in the Finance 10.0.7 release
 
