@@ -42,7 +42,10 @@ The compatibility checker tool is available in Platform update 34 as one of the 
 
 The tool compares metadata of the current version with a baseline version. It detects and reports metadata breaking changes that have been identified and added to the tool as breaking by Microsoft.
 
-The list of breaking changes detected by the tool is shown in the [List of breaking changes detected by the tool](#list-of-breaking-changes-detected-by-the-tool), though the list is not comprehensive list of all compatibility breaking changes.
+The list of breaking changes detected by the tool is shown in the [List of breaking changes detected by the tool](#list-of-breaking-changes-detected-by-the-tool).
+
++ The list does not include all the breaking changes that the tool can detect.
++ The tool does not detect all breaking changes.
 
 ## What the tool does not detect
 
@@ -67,7 +70,7 @@ CompatibilityChecker.exe -BaselineDirectory=\<Path to baseline metadata\> -Curre
 
 ```console
 CompatibilityChecker.exe -BaselineDirectory="\\servername\archive\Build1\BaselineMetadata" -CurrentDirectory="E:\\MyCode\\retail\\amd64\\BaselineMetadata" -ModuleName="Directory"
--OutputFile="E:\\Logs\\Directory\\Diagnostics.xml" -LogFile="E:\\Logs\\Directory\\Checkerlog.txt");
+-OutputFile="E:\\Logs\\Directory\\Diagnostics.xml" -LogFile="E:\\Logs\\Directory\\Checkerlog.txt"
 ```
 
 ### Description
