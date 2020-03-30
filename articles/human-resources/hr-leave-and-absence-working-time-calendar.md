@@ -74,10 +74,6 @@ You can add or change non-work times separately from a working time calendar.
 
 2. Select **New** and enter a name and time range for the non-work time.
 
-## Leave and absence preview feature
-
-[!include [banner](includes/preview-feature-leave-absence.md)]
-
 If you've enabled the Leave and absence bank holiday corrections preview feature, Human Resources uses holidays and closure dates to determine the number of days to adjust for employees enrolled in the calendar.
 
 ## See also
