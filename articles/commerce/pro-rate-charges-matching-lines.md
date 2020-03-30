@@ -5,7 +5,7 @@ title: Prorate header charges to matching sales lines
 description: This topic describes additional capabilities for calculating and applying auto-charges to Commerce channel orders by using the advanced auto-charges feature.
 author: hhaines
 manager: annbe
-ms.date: 04/23/2019
+ms.date: 03/30/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -174,3 +174,9 @@ Therefore, for this example, item 81334 will be assigned a freight charge of $5.
 ![Prorated charges on sales line for item 81334](media/proratedlinecharge.png)
 
 When this method of calculation is used in a partial return scenario, if the charge code is refundable, only the part of the charge that is allocated to that line will be refunded when the item is returned.
+
+## Additional resources
+
+[Omni-channel advanced auto charges](omni-auto-charges.md)
+
+[Enable and configure auto charges by channel](auto-charges-by-channel.md)
