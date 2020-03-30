@@ -55,6 +55,7 @@ The data is structured along the following columns.
 | OperatingUnitNumber | :heavy_check_mark: | The specific operating unit number where product recommendations are expected to be   surfaced.                                        |                                                                              |
 | Category            |                    |    The category the specific list should be returned for. If no category is specified, the list is for top of navigation hierarchy only.    |                                                                              |
 | SeedItemId          |                    |    For lists that require seed (RecoPeopleAlsoBuy and RecoCart), the product those lists should show additional products for.            |                                                                              |
+| CustomerId          |                    |    For lists that require a customer identifier (RecoPicks).  The default value '0' applies to all customers.          |                                                                              |
 | ItemIds             | :heavy_check_mark: | One or more products to be returned as the result, separated by ';'.                                                                  |                                                                              |
 
 ## Customize demo data
