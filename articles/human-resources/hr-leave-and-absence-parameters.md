@@ -60,8 +60,8 @@ Before you set up leave and absence plans in Dynamics 365 Human Resources, it's 
 
 2. Under **Setup**, select **Leave and absence parameters**.
 
-3. On the **General**tab, choose the following:
-
+3. On the **General** tab, choose the following:
+ 
 - Set the **Unit for leave and absence** to either hours or days. If days, you can optionally **Enable half day definition**. This allows employees to choose either first half of day or second half of day in their time off requests. 
 
 - Choose the **Months of service effective date** to set when the accrual rates takes effect for leave plans using months of service.
