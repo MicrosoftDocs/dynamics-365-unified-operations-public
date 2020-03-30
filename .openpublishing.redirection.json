@@ -1,6 +1,21 @@
 {
   "redirections": [
     {
+      "source_path": "articles/commerce/add-content-placement-modules.md",
+      "redirect_url": "starter-kit-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/e-commerce-extensibility/debug-modules.md",
+      "redirect_url": "test-module",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/add-feature-module.md",
+      "redirect_url": "starter-kit-overview",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/supply-chain/asset-management/work-orders/media/placeholder.md",
       "redirect_url": "/dynamics365/supply-chain/index",
       "redirect_document_id": "false"
