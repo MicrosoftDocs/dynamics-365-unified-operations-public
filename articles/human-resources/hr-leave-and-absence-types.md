@@ -63,17 +63,20 @@ Leave types in Dynamics 365 Human Resources define the types of absences that em
 
 9. Select **Save**.
 
-## Configure preview features
-
-If you've enabled preview features for Leave and absence, you need to configure settings for them, too.
-
-[!include [banner](includes/preview-feature-leave-absence.md)]
+## Configure leave type rules
 
 1. Set rounding options for the leave type. Options include **None**, **Up**, **Down**, and **Nearest**. You can also set rounding precision for the leave type.
 
 2. Set **Holiday correction** for the leave type. When you select this option, Human Resources uses the number of holidays that fall on a work day to determine how to accrue time off for the leave type. For example, if Christmas Day falls on a Monday, Human Resources will subtract one day from the leave type when processing accruals.
 
    You set holidays in the working time calendar. For more information, see [Create a working time calendar](hr-leave-and-absence-working-time-calendar.md)
+   
+## Configure preview features
+If you've enabled preview features for Leave and absence, you need to configure settings for them, too.
+
+[!include [banner](includes/preview-feature-leave-absence.md)]
+
+1. Choose the leave type for carry forward balances to be transferred to. You can also create a new leave type for carry forward. 
 
 ## See also
 
