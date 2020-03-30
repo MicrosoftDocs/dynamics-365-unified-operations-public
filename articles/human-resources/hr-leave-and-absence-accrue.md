@@ -70,15 +70,43 @@ You can accrue leave and absence in Dynamics 365 Human Resources for multiple em
 
    4. Select **OK**. The accrual process will run with the parameters you set.
 
-## Preview features for Leave and absence
+## Delete leave and absence accruals for multiple employees
 
-[!include [banner](includes/preview-feature-leave-absence.md)]
+Delete accrual records for a specific plan and date range. Accrual dates must be dated today or in the future.
 
-You can enable the following preview features for Leave and absence:
+1. On the **Leave and absence** page, select the **Links** tab.
 
-- **Delete leave and absence accruals**. Delete accrual records for a specific plan and date range. Accrual dates must be dated today or in the future.
+2. Under **Manage leave**, select **Delete leave and absence plan accruals**.
 
-- **Leave accrual audit**. Displays each time someone runs or deletes an accrual for one or all employees, along with the date and who performed the action.
+3. In the **Delete leave and absence plan accruals** dialog box, select the **Leave plan**. 
+
+4. Optionally choose to **Delete balance adjustments**.
+
+5. Enter or select a **Leave accrual date**. This date has to be either today or in the future. 
+
+6. Select **OK**. The accrual process will delete accruals with the parameters you set. 
+
+## Delete leave and absence accruals for a single employee
+1. On the employee's record, select **Leave**.
+
+2. Select **Delete leave and absence plan accruals**.
+
+3. In the **Delete leave and absence plan accruals** dialog box, select the **Leave plan**. 
+
+4. Optionally choose to **Delete balance adjustments**.
+
+5. Enter or select a **Leave accrual date**. This date has to be either today or in the future. 
+
+6. Select **OK**. The accrual process will delete accruals with the parameters you set. 
+
+## Review leave accrual and deletion processes
+
+The **Leave accrual audit** displays each time someone runs or deletes an accrual for one or all employees, along with the date and who performed the action.
+
+1. On the **Leave and absence** page, select the **Links** tab.
+
+2. Under **Manage leave**, select **Delete leave accrual audit**.
+
 
 ## See also
 
