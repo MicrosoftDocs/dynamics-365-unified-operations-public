@@ -5,7 +5,7 @@ title: Finance and Operations apps data in Azure Data Lake
 description: This topic explains how to configure your Finance and Operations apps environment so that it has a data lake.
 author: MilindaV2
 manager: AnnBe
-ms.date: 03/20/2020
+ms.date: 03/30/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -65,9 +65,9 @@ You can create a storage account in your own Azure subscription and use a key va
 2. Provide the Azure AD tenant ID of your environment. You can find your Azure AD tenant ID in the Azure portal. Sign in to the Azure portal, and open the **Azure Active Directory** service. Open the **Properties** page, and copy the value in the **Directory ID** field.
 3. Create a key vault and a secret. For instructions, see [Create a key vault and a secret](entity-store-data-lake.md#create-a-key-vault-and-a-secret). You must provide the key vault's Domain Name System (DNS) name and the secret name.
 
-### Let the system create a storage account
+<!--### Let the system create a storage account -->
 
-Instead of manually creating a storage account, you can have the system create a storage account in your own subscription on your behalf. This option will be made available in a future release.
+<!--Instead of manually creating a storage account, you can have the system create a storage account in your own subscription on your behalf. This option will be made available in a future release. -->
 
 ## Accept the offer and terms to turn on the Data Lake integration
 
