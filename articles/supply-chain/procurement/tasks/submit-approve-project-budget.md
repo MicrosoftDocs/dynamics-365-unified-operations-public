@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Submit and approve project budget
+title: Create and submit a project budget workflow  
 description: This procedure shows you how to create and submit the budget for a project. 
-author: mkirknel
+author: RadhikaRS
 manager: AnnBe 
-ms.date: 08/13/2019
+ms.date: 03/30/2020
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -22,40 +22,35 @@ ms.search.scope: Core, Operations
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Service industries
-ms.author: mkirknel
+ms.author: v-radsh
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Submit and approve project budget
+# Create and submit a project budget workflow
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure shows you how to create and submit the budget for a project. 
+When creating a project budget, you can enter the estimated revenues and costs for the project, and use the values to control the actual project transactions. Project budgeting requires all original budgets and revisions to go through a project workflow for approval. The workflow increases your control over the budgeting and creates a change history record. After you [create a project](https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/create-a-project), use this procedure to create and submit the budget.
 
-When you create a project budget, you can enter estimated revenues and costs for a project, and then use those to control actual project transactions. In project budgeting, all original budgets and revisions must be sent to project workflow for approval. Workflow gives you increased control over the process and creates a change history record.
+1. In the Navigation pane, go to **Modules** > **Project management and accounting** > **Projects** > **All projects**.
+2. From the projects list, select the project.
+3. In the project's details page, select the **Plan** tab.
+4. Under the **Budget** group, select **Project budget**.
+5. In the General FastTab, complete information for the following:
+   - In the **Description** box, type a value.
+   - Select option for **Original budget**.
+   - Select option for **Remaining budget**. 
+6. Expand the **Costs** FastTab, and select **New**, and complete the following options:
+   - Select an option for **Transaction type**. 
+   - Select an appropriate **Category**. 
+   - Enter a value in **Original budget**.
+7. Expand the **Revenues** FastTab, select **New**, and complete the following:
+   - Select an option for **Transaction type**. 
+   - Select a  **Category**. 
+   - Enter a value for **Original budget**.
+8. Select **Save**.
+9. Select **Workflow** > **Submit**.
+10. In the **Review original budget workflow - Submit** page, enter a **Comment**, and select **Submit**.
 
-This task was created using the USSI data set.
 
-1. In the **Navigation pane**, go to **Modules > Project management and accounting > Projects > All projects**.
-2. In the list, find and select the desired record.
-3. In the list, click the link in the selected row.
-4. On the **Action Pane**, click **Plan**.
-5. Click **Project budget**.
-6. In the **Description** field, type a value.
-7. Expand the **Cost** fastTab.
-8. Click **New**.
-9. In the **Transaction type** field, select an option.
-10. In the **Category** field, enter or select a value.
-11. In the **Original budget** field, enter a number.
-12. Expand the **Revenues** fastTab.
-13. Click **New**.
-14. In the list, mark the selected row.
-15. In the **Transaction type** field, select an option.
-16. In the **Category** field, enter or select a value.
-17. In the **Original budget** field, enter a number.
-18. Click **Save**.
-19. Click **Workflow**.
-20. Click **Submit**.
-21. In the **Comment** field, type a value.
-22. Click **Submit**.
 
