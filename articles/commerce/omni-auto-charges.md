@@ -224,7 +224,7 @@ If users manually override the calculated charges or add a manual charge to the 
 
 ## Additional resources
 
-[Enable and configure auto charges by channel][(auto-charges-by-channel.md)
+[Enable and configure auto charges by channel](auto-charges-by-channel.md)
 
 [Prorate header charges to matching sales lines](pro-rate-charges-matching-lines.md)
 
