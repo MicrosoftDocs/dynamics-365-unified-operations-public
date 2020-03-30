@@ -414,16 +414,18 @@
         items:
         - name: On-premises deployment home page
           href: deployment/on-premises-deployment-landing-page.md
-        - name: On-premises deployment overview
-          href: deployment/on-premises-overview.md
-        - name: Plan and prepare for on-premises deployments
-          href: deployment/plan-onprem-deployment.md
-        - name: Hardware sizing requirements
-          href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
-        - name: Set up on-premises projects
-          href: lifecycle-services/lbd-create-lcs-on-prem-project.md
-        - name: Set up and deploy on-premises environments
+        - name: Prepare for on-premises deployments
           items:
+          - name: On-premises deployment overview
+            href: deployment/on-premises-overview.md
+          - name: Plan and prepare for on-premises deployments
+            href: deployment/plan-onprem-deployment.md
+          - name: Hardware sizing requirements
+            href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
+        - name: Set up and deploy on-premises environments
+          items: 
+          - name: Set up and deploy on-premises projects
+            href: lifecycle-services/lbd-create-lcs-on-prem-project.md
           - name: Set up and deploy on-premises environments home page
             href: deployment/setup-deploy-on-premises-environments.md
           - name: Deploy on-premises environments (Platform update 12 and later)
@@ -432,20 +434,28 @@
             href: deployment/setup-deploy-on-premises-pu8-pu11.md
           - name: Installation steps for Retail channel components in an on-premises environment
             href: deployment/deploy-retail-onprem.md
+          - name: Develop and deploy custom models to on-premises environments
+            href: deployment/develop-deploy-custom-models-on-premises.md
+        - name: Environment maintenance
+          items:
           - name: Reuse the same AD FS instance for multiple environments
             href: deployment/onprem-reuseadfs.md
-        - name: Develop and deploy custom models to on-premises environments
-          href: deployment/develop-deploy-custom-models-on-premises.md
-        - name: PowerBI.com integration with on-premises environments
-          href: analytics/entity-store-on-prem.md
-        - name: Configure proxies for on-premises environments
-          href: deployment/onprem-reverseproxy.md
-        - name: Apply updates to an on-premises deployment
-          href: deployment/apply-updates-on-premises.md
-        - name: On-premises diagnostics
-          href: deployment/on-premises-diagnostics.md
-        - name: Redeploy on-premises deployments
-          href: deployment/redeploy-on-prem.md
+          - name: PowerBI.com integration with on-premises environments
+            href: analytics/entity-store-on-prem.md
+          - name: Configure proxies for on-premises environments
+            href: deployment/onprem-reverseproxy.md
+          - name: Apply updates to an on-premises deployment
+            href: deployment/apply-updates-on-premises.md
+          - name: On-premises diagnostics
+            href: deployment/on-premises-diagnostics.md
+          - name: Redeploy on-premises deployments
+            href: deployment/redeploy-on-prem.md
+          - name: Certificate rotation
+            href: deployment/certificate-rotation-on-prem.md
+          - name: Reconfigure environments
+            href: lifecycle-services/reconfigure-environment.md
+          - name: Client internet connectivity
+            href: user-interface/client-disconnected.md
         - name: Local agent
           items:
           - name: AD FS Office 365 compatibility
@@ -454,16 +464,12 @@
             href: lifecycle-services/pre-post-scripts.md
           - name: Update the local agent
             href: lifecycle-services/update-local-agent.md
-        - name: Reconfigure environments
-          href: lifecycle-services/reconfigure-environment.md
-        - name: Client internet connectivity
-          href: user-interface/client-disconnected.md
-        - name: Troubleshoot on-premises deployments
-          href: deployment/troubleshoot-on-prem.md
-        - name: Scripts for resolving issues in on-premises environments
-          href: deployment/onprem-tsg-implementations.md
-        - name: Certificate rotation
-          href: deployment/certificate-rotation-on-prem.md
+        - name: Troubleshooting
+          items:
+          - name: Troubleshoot on-premises deployments
+            href: deployment/troubleshoot-on-prem.md
+          - name: Scripts for resolving issues in on-premises environments
+            href: deployment/onprem-tsg-implementations.md
       - name: Deploy custom code
         items:
         - name: Create deployable packages of models
