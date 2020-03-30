@@ -454,6 +454,8 @@
           items:
           - name: Configure and use advanced auto charges 
             href: omni-auto-charges.md
+          - name: Enable and configure auto charges by channel
+            href: auto-charges-by-channel.md
           - name: Prorate header charges to matching sales lines
             href: pro-rate-charges-matching-lines.md 
         - name: Manage continuity programs
