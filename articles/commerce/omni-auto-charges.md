@@ -6,7 +6,7 @@ description: This topic describes capabilities for managing additional order cha
 author: hhaines
 manager: annbe
 
-ms.date: 03/08/2019
+ms.date: 03/30/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -221,3 +221,10 @@ Some organizations may prefer to wait until the user has finished adding all of 
 ### Charges override reports
 
 If users manually override the calculated charges or add a manual charge to the transaction, this data will available for auditing in the **Charge Override History** report. The report can be accessed from **Retail and Commerce \> Inquiries and reports \> Charge Override History**. It is important to note that the data needed for this report is imported from the channel database into HQ through the "P" distribution schedule jobs. Therefore, information about overrides just performed in the POS may not be immediately available on this report until this job has uploaded the store transaction data into HQ.
+
+## Additional resources
+
+[Enable and configure auto charges by channel][(auto-charges-by-channel.md)
+
+[Prorate header charges to matching sales lines](pro-rate-charges-matching-lines.md)
+
