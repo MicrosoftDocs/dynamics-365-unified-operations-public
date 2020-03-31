@@ -5,7 +5,7 @@ title: Configure leave and absence parameters
 description: Define human resources parameters for leave and absence in Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -56,18 +56,18 @@ Before you set up leave and absence plans in Dynamics 365 Human Resources, it's 
 7. Select **Save**.
 
 ## View and change leave and absence parameters
+
 1. On the **Leave and absence** page, select the **Links** tab.
 
 2. Under **Setup**, select **Leave and absence parameters**.
 
-3. On the **General** tab, choose the following:
+3. On the **General** tab, set the following parameters:
  
-- Set the **Unit for leave and absence** to either hours or days. If days, you can optionally **Enable half day definition**. This allows employees to choose either first half of day or second half of day in their time off requests. 
+    - Set **Unit for leave and absence** to either hours or days. If days, you can select **Enable half day definition** to allow employees to choose either first or second half of day in their time-off requests. 
 
-- Choose the **Months of service effective date** to set when the accrual rates takes effect for leave plans using months of service.
+    - Select **Months of service effective date** to set when the accrual rates take effect for leave plans using months of service.
 
-- Select **Balance calculation** to have balances display as of today or as of the accrual period. If **Balance as of of today** is selected, the balance will display the total of all accruals, adjustments and requests as of today. If **Balance as of accrual period** is selected, the balance will display the total of all accruals, adjustments and requests as of the accrual period defined by the frequency in the leave plan. 
-
+    - Select **Balance calculation** to display balances display as of today or as of the accrual period. If you select **Balance as of today**, the balance displays the total of all accruals, adjustments, and requests as of today. If you select **Balance as of accrual period**, the balance displays the total of all accruals, adjustments, and requests as of the accrual period defined by the frequency in the leave plan. 
 
 ## Configure calendar parameters
 

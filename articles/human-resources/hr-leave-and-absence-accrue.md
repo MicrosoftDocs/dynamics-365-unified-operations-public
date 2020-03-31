@@ -5,7 +5,7 @@ title: Accrue leave and absence plans
 description: You can accrue leave and absence in Dynamics 365 Human Resources for multiple employees or for an individual.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -40,7 +40,7 @@ You can accrue leave and absence in Dynamics 365 Human Resources for multiple em
 
 2. Under **Manage leave**, select **Accrue leave and absence plans**.
 
-3. In the **Accrue leave and absence plans** dialog box, in **Accrue as of**, either select **Today's date** or select **Custom date** and enter a custom date.
+3. The **Accrue leave and absence plans** dialog box appears. In **Accrue as of**, either select **Today's date** or select **Custom date** and enter a custom date.
 
 4. If you want to run the accrual process in the background, select **Run in the background** and do the following tasks:
 
@@ -58,7 +58,7 @@ You can accrue leave and absence in Dynamics 365 Human Resources for multiple em
 
 2. Select **Accrue leave and absence**.
 
-3. In the **Accrue leave and absence plans** dialog box, in **Accrue as of**, either select **Today's date** or select **Custom date** and enter a custom date.
+3. The **Accrue leave and absence plans** dialog box appears. In **Accrue as of**, either select **Today's date** or select **Custom date** and enter a custom date.
 
 4. If you want to run the accrual process in the background, select **Run in the background** and do the following tasks:
 
@@ -80,33 +80,33 @@ Delete accrual records for a specific plan and date range. Accrual dates must be
 
 3. In the **Delete leave and absence plan accruals** dialog box, select the **Leave plan**. 
 
-4. Optionally choose to **Delete balance adjustments**.
+4. If applicable, choose **Delete balance adjustments**.
 
 5. Enter or select a **Leave accrual date**. This date has to be either today or in the future. 
 
 6. Select **OK**. The accrual process will delete accruals with the parameters you set. 
 
 ## Delete leave and absence accruals for a single employee
+
 1. On the employee's record, select **Leave**.
 
 2. Select **Delete leave and absence plan accruals**.
 
-3. In the **Delete leave and absence plan accruals** dialog box, select the **Leave plan**. 
+3. In the **Delete leave and absence plan accruals** dialog box, select **Leave plan**. 
 
-4. Optionally choose to **Delete balance adjustments**.
+4. If applicable, choose **Delete balance adjustments**.
 
-5. Enter or select a **Leave accrual date**. This date has to be either today or in the future. 
+5. Enter or select a **Leave accrual date**. This date must be either today or in the future. 
 
 6. Select **OK**. The accrual process will delete accruals with the parameters you set. 
 
 ## Review leave accrual and deletion processes
 
-The **Leave accrual audit** displays each time someone runs or deletes an accrual for one or all employees, along with the date and who performed the action.
+**Leave accrual audit** displays each time you run or delete an accrual for one or all employees. The date and person who performed the action also displays.
 
 1. On the **Leave and absence** page, select the **Links** tab.
 
 2. Under **Manage leave**, select **Delete leave accrual audit**.
-
 
 ## See also
 

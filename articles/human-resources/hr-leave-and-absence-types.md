@@ -5,7 +5,7 @@ title: Configure leave and absence types
 description: Set up types of leave that employees can take in Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -72,6 +72,7 @@ Leave types in Dynamics 365 Human Resources define the types of absences that em
    You set holidays in the working time calendar. For more information, see [Create a working time calendar](hr-leave-and-absence-working-time-calendar.md)
    
 ## Configure preview features
+
 If you've enabled preview features for Leave and absence, you need to configure settings for them, too.
 
 [!include [banner](includes/preview-feature-leave-absence.md)]

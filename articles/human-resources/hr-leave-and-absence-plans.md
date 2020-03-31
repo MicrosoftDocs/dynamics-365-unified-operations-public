@@ -5,7 +5,7 @@ title: Create a leave and absence plan
 description: Create leave plans in Dynamics 365 Human Resources for different types of leave.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -133,7 +133,7 @@ If the feature **Configure multiple leave types for a single leave and absence p
    > [!IMPORTANT]
    > After you enable this feature, you can't turn it off.
 
-If the feature **Use full time equivalency** is enabled Human Resources uses the full time equivalency (FTE) defined for the position to prorate an employee's accrual. For example, if the FTE is .5 and the accrual amount is 10, the employee will accrue 5. You can only use this feature if you enable multiple leave types.  
+If the feature **Use full time equivalency** is enabled, Human Resources uses the full time equivalency (FTE) defined for the position to prorate an employee's accrual. For example, if the FTE is .5 and the accrual amount is 10, the employee will accrue 5. You can only use this feature if you enable multiple leave types.  
 
 5. Select **Save**.
 
@@ -218,7 +218,7 @@ The current balance is the amount of leave that is available for time-off reques
 |-----------------|-----------------|-------------------|----------------------|-----------------------|
 | 1/1/2018        | 1/1/2018        | Annual            | Plan start date      | End of accrual period |
 
-Accruals are processed on January 1, 2019 (1/1/2019) to include the whole period .
+Accruals are processed on January 1, 2019 (1/1/2019) to include the whole period.
 
 **Results**
 
@@ -374,8 +374,6 @@ Forecasted balance (30) = Accrual amount (10 × 1) + Current balance (40) – Ca
 |---------------------|-------------------|-----------------|------------|----------------|-----------------|---------|
 | Jeannette Nicholson | 0.00              | 6/1/2018        | 6/1/2018   | 1.00           | 9/1/2018        | 3.00    |
 | Jay Norman          | 0.00              | 6/15/2018       | 6/15/2018  | 1.00           | 9/1/2018        | 2.00    |
-
-
 
 ## See also
 
