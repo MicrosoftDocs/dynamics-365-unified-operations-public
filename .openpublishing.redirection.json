@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/commerce/add-reco-list-to-page.md",
+      "redirect_url": "product-recommendations",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/commerce/add-content-placement-modules.md",
       "redirect_url": "starter-kit-overview",
       "redirect_document_id": "false"
