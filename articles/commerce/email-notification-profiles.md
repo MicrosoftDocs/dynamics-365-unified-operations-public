@@ -86,6 +86,11 @@ The following image shows some example event notification settings.
 
 ![Event notification settings](media/email-notification-profile.png)
 
+### Next steps
+
+Before you can send mails, you must configure your outgoing mail service and set up a batch job. See the [Configure and send email](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json) topic for instructions.
+
+
 ## Additional resources
 
 [Configure and send email](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json)
