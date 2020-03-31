@@ -77,8 +77,6 @@ Benefits management replaces functionality in the **Benefits** workspace. When y
 
 You can view the information in these forms in read-only mode. If you want to edit the information, you must first disable Benefits management (applicable to **Sandbox** environments only).
 
-For information about known issues in Benefits management, see [Benefits management known issues](hr-benefits-management-overview.md?benefits-management-known-issues).
-
 ## Enable or disable Leave and absence
 
 To enable Leave and absence, use the same procedure in [Enable or disable preview features](hr-admin-manage-features.md?enable-or-disable-preview-features).
