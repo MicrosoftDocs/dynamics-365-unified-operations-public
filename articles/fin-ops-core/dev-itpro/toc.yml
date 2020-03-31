@@ -424,9 +424,9 @@
             href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
         - name: Set up and deploy on-premises environments
           items: 
-          - name: Set up and deploy on-premises projects
+          - name: Set up on-premises projects in LCS
             href: lifecycle-services/lbd-create-lcs-on-prem-project.md
-          - name: Deploy on-premises environments (Platform update 12 and later)
+          - name: Set up and deploy on-premises environments
             href: deployment/setup-deploy-on-premises-pu12.md
           - name: Installation steps for Retail channel components in an on-premises environment
             href: deployment/deploy-retail-onprem.md
