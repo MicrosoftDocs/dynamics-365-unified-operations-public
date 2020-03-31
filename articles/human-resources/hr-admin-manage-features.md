@@ -88,12 +88,12 @@ To enable Leave and absence, use the same procedure in [Enable or disable previe
 
 For more information about preview features in Leave and absence, see [Leave and absence preview features](hr-leave-and-absence-overview.md?leave-and-absence-preview-features).
 
-## Feedback
+## Send us feedback
 
 We want to hear from you about your experience with preview features. We encourage you to regularly post your feedback on the following sites as you use these or any other features:
 
 - [Community](https://community.dynamics.com/enterprise/f/759?pi53869=0&category=Talent) – This site is a great resource where users can discuss use cases, ask questions, and get community help.
-- Let us know about features that you want to see in the product, or let us know about any changes you think we should make to existing features. Suggest product ideas on [Human Resources ideas](https://powerusers.microsoft.com/t5/Ideas-for-Human-Resources/idb-p/HumanResources)
+- Let us know about features that you want to see in the product, or let us know about any changes you think we should make to existing features. Suggest product ideas on [Human Resources ideas](https://powerusers.microsoft.com/t5/Ideas-for-Human-Resources/idb-p/HumanResources).
     
 Please don't include personal data (any information that could identify you) in your feedback or product review submissions. Collected information might be analyzed further and isn't used to answer requests under applicable privacy laws. Personal data that is collected separately under these programs is subject to the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
