@@ -23,6 +23,7 @@ ms.search.scope: Operations
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
+ms.custom: NotInToc
 # ms.search.industry: 
 ms.author: sericks
 ms.search.validFrom: 2017-11-30 
