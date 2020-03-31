@@ -82,7 +82,7 @@ You can view the information in these forms in read-only mode. If you want to ed
 To enable Leave and absence, use the same procedure in [Enable or disable preview features](hr-admin-manage-features.md?enable-or-disable-preview-features).
 
 > [!IMPORTANT]
-> You can't disable Leave and absence in a **Production** environment after you enable it. You can disable Leave and absence in **Sandbox** environments, however.
+> You can’t disable the **Multiple leave types** feature in Leave and absence after you enable it. This applies to both **Sandbox** and **Production** environments.
 
 For more information about preview features in Leave and absence, see [Leave and absence preview features](hr-leave-and-absence-overview.md?leave-and-absence-preview-features).
 
