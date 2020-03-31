@@ -95,7 +95,7 @@ By default the styles are not included in the extended theme.  To include the ba
 
 **extended.theme.scss"
 ```
-@import "../../base/styles/base.definition.scss.json";
+@import "../../base/styles/base.theme.scss";
 
 body {
     background-color: red;
