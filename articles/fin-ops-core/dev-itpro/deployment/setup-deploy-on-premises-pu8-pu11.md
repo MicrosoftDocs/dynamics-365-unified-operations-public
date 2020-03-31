@@ -23,6 +23,7 @@ ms.search.scope: Operations
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
+ms.custom: NotInToc
 # ms.search.industry: 
 ms.author: perahlff
 ms.search.validFrom: 2017-06-30
