@@ -2,10 +2,10 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Human Resources (March 24, 2020)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources.
+description: This article describes features that are either new or changed in Microsoft Dynamics 365 Human Resources.
 author: Darinkramer
 manager: AnnBe
-ms.date: 3/24/2020
+ms.date: 03/24/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -17,7 +17,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -29,9 +29,10 @@ ms.search.validFrom: 2020-03-24
 ms.dyn365.ops.version: Human Resources
 
 ---
-# "What's new or changed in Dynamics 365 Human Resources (March 24, 2020)"
 
-This article describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3073. The numbers in parentheses in some headings refer to LCS support numbers for reference.
+# What's new or changed in Dynamics 365 Human Resources (March 24, 2020)
+
+This article describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3073. The numbers in parentheses in some headings refer to Lifecycle Services (LCS) support numbers for reference.
 
 ## Human Resources environment limits are now based on updated licensing (394595)
 
@@ -39,19 +40,23 @@ The limit on the number of environments per project in Lifecycle Services (LCS) 
 
 ## Platform changes
 
-- (Preview) full page apps - This preview feature, which requires the Saved views feature to be enabled, allows Power Apps and third-party apps to be added as full-page experiences via the dashboard
-- (Preview) Saved views - This preview feature enables saved views, which is a significant enhancement to the personalization subsystem. This feature allows users to have multiple named sets of personalizations per page. Views can also be published to security roles.
+- Full page apps (Preview) - This preview feature, which requires you to enable the Saved views feature, allows Power Apps and third-party apps to be added as full-page experiences via the dashboard.
+
+- Saved views (Preview) - This preview feature enables saved views, which provide a significant enhancement to the personalization subsystem. This feature allows users to have multiple named sets of personalizations per page. You can also publish views to security roles.
+
 - Optimized "is one of" filtering experience - This feature enables an optimized "is one of" filtering experience that makes it easier to enter multiple filter values, has a simpler mechanism to remove individual or all filter values, and has a more compact and intuitive visualization of filter values.
-- Recommended fields - Users often need to add fields to a grid or page; however, with the large number of available fields, this can be difficult. Instead of having to search through a large list, this feature enables the system to surface a set of recommended fields based on what other users most often add in similar scenarios
+
+- Recommended fields - Users often need to add fields to a grid or page. This can be difficult with so many available fields. Instead of having to search through a large list, this feature enables the system to surface a set of recommended fields based on what other users most often add in similar scenarios.
+
 - Sticky default actions in grids - This feature ensures that the default action in a grid is linked to a specific column in a grid, regardless of whether that column is moved or hidden.
 
-## Unable to adjust leave balance for a plan with no accruals was created with "multiple leave type" feature on - (419635)
+## Unable to adjust leave balance for a plan with no accruals that was created with "multiple leave type" feature on (419635)
 
-With this change, you will be able to adjust balances for leave plans that have been created with the Multiple leave type (Preview) feature enabled in feature management.
+With this change, you can adjust balances for leave plans that have been created with the Multiple leave type (Preview) feature enabled in feature management.
 
 ## In preview
 
-The following preview features are available on February 3, 2020:
+The following preview features became available on February 3, 2020:
 
 - **Leave and absence preview features** - For more information, see [Leave and absence preview features](hr-leave-and-absence-overview.md?leave-and-absence-preview-features).
 
@@ -110,6 +115,6 @@ Beginning in April, the release cadence for Human Resources will shift from a we
 
 ## Known issues
 
-## Employment Details entity
+## Employment Detail entity
 
-The employment detail entity has been updated with the following fields:  PayFrequency, Employment Category ID, Employment Type, EmploymentType ID and Benefit Employment Status.  The setup data for these fields rely on benefits management being enabled in feature management.  Therefore, these fields should not be populated or updated in the employment detail entity, as it will result in errors during import.
+The **Employment Detail** entity has been updated with the following fields: **PayFrequency**, **Employment Category ID**, **Employment Type**, **EmploymentType ID**, and **Benefit Employment Status**. The setup data for these fields rely on benefits management being enabled in Feature management. These fields shouldn't be populated or updated in the **Employment Detail** entity, because it will result in errors during import.
