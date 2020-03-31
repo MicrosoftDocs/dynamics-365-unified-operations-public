@@ -36,11 +36,11 @@ This topic describes how to create a theme based off of another theme for a Micr
 
 ## Overview
 
-Themes can be created and modified using the Dynamics 365 Commerce online store extensibility sdk. Themes can be stand alone themes or extended from a base theme. For example, you can have a default base theme that defines module CSS styles, module view extensions and module definition extensions then have a different theme (or set of themes) that add additional changes on top of the base theme. This is helpful when a single Dynamics 365 environments has multiple online sites with different theme branding.
+Using the Dynamics 365 Commerce online store extensibility SDK, themes can be created to be stand alone themes or extended from a base theme. For example, you can have a base theme that defines module CSS styles, module view extensions and module definition extensions then have a different theme (or set of themes) that add additional changes on top of the base theme. This is helpful when a single Dynamics 365 environments has multiple online sites with different theme branding.
 
 ## Setting a base theme
 
-To specify a base theme on a theme, edit the theme definition file and add a '$ref' section.
+To specify a base theme on a theme, edit the theme definition file and add a '$ref' section pointing to the base theme.
 
 In the below example, notice the "$ref" that's been addded to reference the fabrikam theme
 
@@ -54,7 +54,12 @@ In the below example, notice the "$ref" that's been addded to reference the fabr
 }
 ```
 
-The below example shows a base theme definition file and another theme file that derives from the base theme
+## Example
+The below example has a base theme created with the **add-theme** CLI command:
+```Console
+yarn msdyn365 add-theme base
+```
+The base theme has a definition file as shown below.
 
 **basetheme.definition.json**
 ```json
@@ -66,7 +71,12 @@ The below example shows a base theme definition file and another theme file that
 }
 ```
 
-**contoso.definition.json**
+Below shows a new theme created using the below command
+```Console
+yarn msdyn365 add-theme extended
+```
+
+**extended.definition.json**
 ```json
 {
     "$ref": "@msdyn365-commerce-modules/fabrikam-design-kit/dist/lib/modules/fabrikam/fabrikam.definition.json",
@@ -74,5 +84,17 @@ The below example shows a base theme definition file and another theme file that
     "description": "This is SDK template theme module",
     "friendlyName": "adventureworks",
     "name": "adventureworks"
+}
+```
+
+### Including base theme styles
+By default the styles are not included in the extended theme.  To include the base theme styles you can include the reference in the extended.theme.scss as shown in the below example, which also shows how to add additional scss to the file.
+
+**extended.theme.scss"
+```
+@import "../../base/styles/base.definition.scss.json";
+
+body {
+    background-color: red;
 }
 ```
