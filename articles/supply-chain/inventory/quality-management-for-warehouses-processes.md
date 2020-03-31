@@ -189,7 +189,7 @@ While workers are receiving items using the warehouse mobile application (WMA), 
 
 The following examples illustrate how the setup of a quality association and associated item sampling impacts the quality order generation when the **Applicable warehouse type** is set to _Quality management for warehouse processes only_.
 
-When the **Quantity specification** is _Full License Plate_, then the **Per nth license plate** controls for which license plates quality item sampling work is created. The first license plate will always go to quality, then the nth after that as controlled by this value.
+When the **Quantity specification** is _Full License Plate_, then the **Per nth license plate** setting controls for which license plates quality item sampling work is created. The first license plate will always go to quality, then the nth after that as controlled by this value.
 
 The **Reference type** for the examples below is _Purchase_, and the **Event type** is *Registration*.
 
