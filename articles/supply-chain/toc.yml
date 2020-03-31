@@ -2411,6 +2411,8 @@
           href: warehousing/configure-app-field-names-priorities-warehouse.md
         - name: Set up mobile devices for warehouse work
           href: warehousing/configure-mobile-devices-warehouse.md
+        - name: License plate receiving with the Warehousing mobile app
+          href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
         - name: Set up a mobile device menu item for completing work in a purchase order
           href: warehousing/tasks/set-up-mobile-device-menu.md
         - name: Set up a mobile device menu item to register received items
