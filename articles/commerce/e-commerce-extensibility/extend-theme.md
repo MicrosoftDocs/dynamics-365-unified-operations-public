@@ -42,7 +42,7 @@ Using the Dynamics 365 Commerce online store extensibility SDK, themes can be cr
 
 To specify a base theme on a theme, edit the theme definition file and add a '$ref' section pointing to the base theme.
 
-In the below example, notice the "$ref" that's been addded to reference the fabrikam theme
+In the below example, notice the "$ref" that's been addded to reference the fabrikam sample theme which is included as part of the store starter kit.
 
 ```json
 {
@@ -71,20 +71,23 @@ The base theme has a definition file as shown below.
 }
 ```
 
-Below shows a new theme created using the below command
+The below example CLI command creates a new theme called "extended".
 ```Console
 yarn msdyn365 add-theme extended
 ```
 
+The extended theme definition file can now reference the base theme using a relative path as shown below.
+
 **extended.definition.json**
 ```json
 {
-    "$ref": "@msdyn365-commerce-modules/fabrikam-design-kit/dist/lib/modules/fabrikam/fabrikam.definition.json",
+    "$ref": "../base/base.definition.json",
     "$type": "themeModule",
     "description": "This is SDK template theme module",
-    "friendlyName": "adventureworks",
-    "name": "adventureworks"
+    "friendlyName": "extended",
+    "name": "extended"
 }
+
 ```
 
 ### Including base theme styles
@@ -98,3 +101,22 @@ body {
     background-color: red;
 }
 ```
+
+Similar to above the **extended.definition.scss.json** file can also reference the base theme if desired as shown in the below example.
+
+**extended.definition.scss.json**
+```
+{
+    "$ref": "../../base/styles/base.definition.scss.json",
+    "name": "extended"
+}
+```
+
+## Additional resources
+
+[Theming overview](theming.md)
+
+[Create a theme](create-theme.md)
+
+[Configure theme settings](configure-theme-settings.md)
+
