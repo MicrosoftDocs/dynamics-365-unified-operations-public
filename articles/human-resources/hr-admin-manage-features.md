@@ -55,16 +55,14 @@ To access preview features, you must first enable them in your environment. Enab
 
 3. To enable a preview feature, select it from the list, and then select **Enable**. To disable a preview feature, select it from the list, and then select **Disable**.
 
-For more information about preview features in Leave and absence, see [Leave and absence preview features](hr-leave-and-absence-overview.md?leave-and-absence-preview-features).
-
 ## Enable or disable Benefits management
 
-To enable Benefits management, use the same procedure you use to enable preview features.
+To enable Benefits management, use the same procedure in [Enable or disable preview features](hr-admin-features.md?enable-or-disable-preview-features).
 
 > [!IMPORTANT]
 > You can't disable Benefits management in a **Production** environment after you enable it. You can disable Benefits management in **Sandbox** environments, however.
 
-Benefits management provides you with a flexible solution that supports a wide variety of benefit options, along with an easy-to-use employee experience that showcases your offerings. For more information about Benefits management configuration and use, see [Benefits management overview](hr-benefits-management-overview.md).
+For more information about Benefits management configuration and use, see [Benefits management overview](hr-benefits-management-overview.md).
 
 Benefits management replaces functionality in the **Benefits** workspace. When you enable the Benefits management preview feature, you can no longer access the following forms in the **Benefits** workspace:
 
@@ -77,29 +75,18 @@ Benefits management replaces functionality in the **Benefits** workspace. When y
 - **Benefit eligibility policies**
 - **Eligibility events**
 
-You can view the information in these forms in read-only mode. If you want to edit the information, you must first disable the Benefits management preview feature.
+You can view the information in these forms in read-only mode. If you want to edit the information, you must first disable Benefits management (applicable to **Sandbox** environments only).
 
-### Benefits management known issues
+For information about known issues in Benefits management, see [Benefits management known issues](hr-benefits-management-overview.md?benefits-management-known-issues).
 
-#### Life events
+## Enable or disable Leave and absence
 
-When processing life events, the user will receive an error:
+To enable Leave and absence, use the same procedure in [Enable or disable preview features](hr-admin-features.md?enable-or-disable-preview-features).
 
-Coverage start date must be between *beginning of plan period* and *end of plan period*. 
+> [!IMPORTANT]
+> You can't disable Leave and absence in a **Production** environment after you enable it. You can disable Leave and absence in **Sandbox** environments, however.
 
-The life event will continue to process as expected.
-
-#### Eligibility processing
-
-When running eligibility for benefits that use a 1-5X Salary, % of Salary, and Flat Amount coverage amount, the benefit details date must be set to the employee start date in **Employment history**, with hours worked, payment frequency and annual benefits salary amount. If fixed compensation exists for the worker, enter in the hours worked along with the payment frequency, and the annual salary amount will calculate. If the employee is salaried, the hours worked isn't needed. We recommend that when creating new workers, enter fixed compensation first. To update the benefit details record:  Navigate to **Worker > Worker history > Employment details**. Adjust the date to workers start date.
-
-#### Employee-self service
-
-Employees can select a plan that they aren't qualified for and check out.  For example: A worker doesn't have any dependents, but is allowed to select a medical plan with a family coverage option.
-
-Employee amount isn’t being calculated when updating the coverage amount for life insurance. For example, when an employee is offered a life insurance plan, they can select up to $50,000 in coverage at a cost of $.36 per $1,000 of coverage.  When the employee updates the coverage amount, the employee’s associated cost remains at zero.
-
-For a benefit plan that only allows a single selection of that plan type, the user will receive an error if they attempt to waive a plan after selecting a plan. For example, a user selects a medical plan and places it in their cart. The user then selects **Waive** for another medical plan. The user will receive an error.
+For more information about preview features in Leave and absence, see [Leave and absence preview features](hr-leave-and-absence-overview.md?leave-and-absence-preview-features).
 
 ## Feedback
 
