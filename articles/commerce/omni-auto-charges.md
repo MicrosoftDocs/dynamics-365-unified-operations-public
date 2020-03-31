@@ -6,7 +6,7 @@ description: This topic describes capabilities for managing additional order cha
 author: hhaines
 manager: annbe
 
-ms.date: 03/08/2019
+ms.date: 03/30/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: 10.0
 
 [!include [banner](includes/banner.md)]
 
-This topic provides information on configuration and deployment of the advanced auto-charges feature which are available in Dynamics 365 for Retail version 10.0.
+This topic provides information on configuration and deployment of the advanced auto-charges features that are available in Dynamics 365 for Retail version 10.0.
 
 When the advanced auto-charges features are enabled, orders created in any supported Commerce channel (point of sale (POS), call center, and online), can take advantage of the [auto-charges](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) configurations defined in the ERP application for both header and line-level related charges.
 
@@ -69,11 +69,11 @@ The new operations are as follows.
 - **142 - Manage charges** – Use this operation to allow POS users to view and edit miscellaneous charges for the POS transaction that were either added manually or systematically through auto-charges calculations.
 - **141 - Add header charges** – Use this operation to give the user the ability to manually add a header-level miscellaneous charge to any POS sales transaction (and select the charges code to be used).
 - **140 - Add line charges** – Use this operation to give the user the ability to manually add a line level miscellaneous charge to any POS sales transaction line (and select the charges code to be used).
-- **143 - Recalculate charges** – Use this operation to perform a full re-calculation of the charges for the sales transaction. Any previously user-overwritten auto-charges will be recalculated based on the current cart configuration.
+- **143 - Recalculate charges** – Use this operation to perform a full recalculation of the charges for the sales transaction. Any previously user-overwritten auto-charges will be recalculated based on the current cart configuration.
 
 As with all POS operations, security configurations can be made to require manager approval in order to execute the operation.
 
-It is important to note that the above listed POS operations can also be added to the POS layout even if the **Use advanced auto-charges** parameter is disabled. In this scenario, organizations will still get added benefits of being able to view manually added charges and edit them using the **Manage charges** operation. Users may also use the **Add header charges** and **Add line charges** operations for POS transactions even when **Use advanced auto-charges** parameter is disabled. The **Recalculate charges** operation has less functionality if used when **Use advanced auto-charges** is disabled. In this sceanrio, nothing would be recalculated and any charges manually added to the transaction would just reset to $0.00.
+It is important to note that the above listed POS operations can also be added to the POS layout even if the **Use advanced auto-charges** parameter is disabled. In this scenario, organizations will still get added benefits of being able to view manually added charges and edit them using the **Manage charges** operation. Users may also use the **Add header charges** and **Add line charges** operations for POS transactions even when **Use advanced auto-charges** parameter is disabled. The **Recalculate charges** operation has less functionality if used when **Use advanced auto-charges** is disabled. In this scenario, nothing would be recalculated and any charges manually added to the transaction would just reset to $0.00.
 
 ## Use case examples
 
@@ -83,7 +83,7 @@ In this section, sample use cases are presented to help you understand the confi
 
 #### Use case scenario
 
-A retailer wants to automatically add charges for freight when transactions are created in any Commerce channel that require a shipment of products to the customer. The retailer offers 2 methods of delivery: Ground and Air. If a customer chooses Ground delivery and the order value is less than $100, the retailer wants to charge the customer a freight charge of $10.00. If the order is over $100 in value and the customer chooses ground shipping, the customer will not be charged any additional freight fees. If the customer chooses the Air method of delivery for all orders, regardless of their total value, will be charged a freight fee of $20.00.
+A retailer wants to automatically add charges for freight when transactions are created in any Commerce channel that require a shipment of products to the customer. The retailer offers two methods of delivery: Ground and Air. If a customer chooses Ground delivery and the order value is less than $100, the retailer wants to charge the customer a freight charge of $10.00. If the order is over $100 in value and the customer chooses ground shipping, the customer will not be charged any additional freight fees. If the customer chooses the Air method of delivery for all orders, regardless of their total value, will be charged a freight fee of $20.00.
 
 #### Setup and configuration
 
@@ -139,7 +139,7 @@ At this time the charges will apply to any sales line that matches the configura
 
 #### Use case scenario description
 
-A retailer is making an exception to typical processes by offering to provide a special home delivery of products to a customers who order products in the store. The retailer and the customer have agreed that the customer will pay an additional $25 handling fee for this service. The order-taker needs to add this additional fee to the transaction. Because the fee is a blanket fee and not related to any single product on the order, a header charge will be utilized.
+A retailer is making an exception to typical processes by offering to provide a special home delivery of products to customers who order products in the store. The retailer and the customer have agreed that the customer will pay an additional $25 handling fee for this service. The order-taker needs to add this additional fee to the transaction. Because the fee is a blanket fee and not related to any single product on the order, a header charge will be utilized.
 
 #### Setup and configuration
 
@@ -163,7 +163,7 @@ This process can be applied in the call center by using the existing **Charges**
 
 #### Use case scenario
 
-A customer has requested that 2 of the 5 items on their sales order be gift-wrapped. The retailer offers this optional service for a fee of $2.00 per item. The order-taker will need to add these fees to the specific items that need to be gift-wrapped.
+A customer has requested that two of the five items on their sales order be gift-wrapped. The retailer offers this optional service for a fee of $2.00 per item. The order-taker will need to add these fees to the specific items that need to be gift-wrapped.
 
 #### Setup and configuration
 
@@ -179,7 +179,7 @@ The **Add line charge** operation must be configured in your [POS screen layout]
 
 To execute the scenario in the POS application, the POS user will create the sales transaction as usual, adding the products and any other configurations to the sale. Prior to collecting payment, the user should select the specific line where the charge will apply from the POS item list display and execute the **Add line charge** operation. The user will be prompted to select a charges code and enter the charges value. Once the user completes the process, the charge will be linked to the line and added to the order total as a line level charge. The user can repeat the process to add additional line charges to other items lines on the transaction if needed.
 
-The same process can be applied in the call center by using the "maintain charges" feature found under the **Financials** drop-down menu in the **Sales order lines** section on the **Sales order** page. This will open the **Maintain charges** page where the user can add a new line specific charge to the transaction.
+The same process can be applied in the call center by using the "maintain charges" feature found under the **Financials** drop-down menu in the **Sales order lines** section on the **Sales order** page. This will open the **Maintain charges** page where the user can add a new line-specific charge to the transaction.
 
 ## Additional features
 
@@ -220,4 +220,11 @@ Some organizations may prefer to wait until the user has finished adding all of 
 
 ### Charges override reports
 
-If users manually override the calculated charges or add a manual charge to the transaction, this data will available for auditing in the **Charge Override History** report. The report can be accessed from **Retail and Commerce \> Inquiries and reports \> Charge Override History**. It is important to note that the data needed for this report is imported from the channel database into HQ through the "P" distribution schedule jobs. Therefore, information about overrides just performed in the POS may not be immediately available on this report until this job has uploaded the store transaction data into HQ.
+If users manually override the calculated charges or add a manual charge to the transaction, this data will be available for auditing in the **Charge Override History** report. The report can be accessed from **Retail and Commerce \> Inquiries and reports \> Charge Override History**. It is important to note that the data needed for this report is imported from the channel database into HQ through the "P" distribution schedule jobs. Therefore, information about overrides just performed in the POS may not be immediately available on this report until this job has uploaded the store transaction data into HQ.
+
+## Additional resources
+
+[Enable and configure auto charges by channel](auto-charges-by-channel.md)
+
+[Prorate header charges to matching sales lines](pro-rate-charges-matching-lines.md)
+

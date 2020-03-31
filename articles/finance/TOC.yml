@@ -660,7 +660,7 @@
         href: expense-management/expense-report-distributions.md
       - name: Intercompany expenses
         href: expense-management/intercompany-expense.md
-      - name: Expense policies
+      - name: Define expense policies
         href: expense-management/travel-expense-policies.md
       - name: View an expense report
         href: expense-management/view-expense-report.md
@@ -984,6 +984,8 @@
         href: project-management/project-contracts.md
       - name: Project forecasts and budgets
         href: project-management/project-forecasts-budgets.md
+      - name: Transfer project budgets at fiscal year end
+        href: project-management/process-project-budgets-for-fiscal-year-end.md
       - name: Project sales orders
         href: project-management/project-sales-orders.md
       - name: Purchase orders for a project
@@ -1646,6 +1648,12 @@
             href: localizations/tasks/create-submit-vat-report.md
         - name: View transactions on settlement
           href: localizations/emea-transactions-settlement-form.md
+      - name: Finland
+        items:
+        - name: Finland overview
+          href: localizations/finland.md
+        - name: Sales tax payment report for Finland
+          href: localizations/emea-fin-sales-tax-payment-report-finland.md
       - name: France
         items:
         - name: France overview
@@ -2002,6 +2010,8 @@
           href: localizations/emea-ita-exil-bank-remittance.md
         - name: Unique certification
           href: localizations/emea-ita-exil-unique-certification.md
+        - name: Bills of exchange protest import
+          href: localizations/emea-ita-exil-protest-boe.md
       - name: Japan
         items:
         - name: Japan overview
@@ -2466,6 +2476,8 @@
             href: localizations/rus-inventory-cost-structure.md
           - name: Inventory adjustment wizard
             href: localizations/rus-inventory-adjustment-wizard.md
+          - name: Inventory reports
+            href: localizations/rus-inventory-reports.md
         - name: Reporting
           items:
           - name: Financial reporting
