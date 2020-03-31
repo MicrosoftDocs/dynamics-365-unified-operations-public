@@ -57,7 +57,7 @@ To access preview features, you must first enable them in your environment. Enab
 
 ## Enable or disable Benefits management
 
-To enable Benefits management, use the same procedure in [Enable or disable preview features](hr-admin-features.md?enable-or-disable-preview-features).
+To enable Benefits management, use the same procedure in [Enable or disable preview features](hr-admin-manage-features.md?enable-or-disable-preview-features).
 
 > [!IMPORTANT]
 > You can't disable Benefits management in a **Production** environment after you enable it. You can disable Benefits management in **Sandbox** environments, however.
@@ -81,7 +81,7 @@ For information about known issues in Benefits management, see [Benefits managem
 
 ## Enable or disable Leave and absence
 
-To enable Leave and absence, use the same procedure in [Enable or disable preview features](hr-admin-features.md?enable-or-disable-preview-features).
+To enable Leave and absence, use the same procedure in [Enable or disable preview features](hr-admin-manage-features.md?enable-or-disable-preview-features).
 
 > [!IMPORTANT]
 > You can't disable Leave and absence in a **Production** environment after you enable it. You can disable Leave and absence in **Sandbox** environments, however.
