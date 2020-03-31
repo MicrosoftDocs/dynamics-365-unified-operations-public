@@ -111,7 +111,7 @@ If document preview for documents stored in SharePoint doesn't work, try the fol
 
 ## New production release cadence
 
-Beginning in April, the release cadence for Human Resources will shift from a weekly update to a bi-weekly update. To ensure alignment with safe deployment practices, and maintain high standards of stability and reliability in the service, the process of deploying service updates to all regions will be a two-week rollout. Additional testing and monitors will be in place to verify successful deployment at each stage of the process. For more information on the release cadence, see the [Update process](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-admin-setup-update-process) documentation.
+Beginning in April, the release cadence for Human Resources will shift from a weekly update to a bi-weekly update. To ensure alignment with safe deployment practices, and maintain high standards of stability and reliability in the service, the process of deploying service updates to all regions will be a two-week rollout. Additional testing and monitors will be in place to verify successful deployment at each stage of the process. For more information on the release cadence, see [Update process](hr-admin-setup-update-process.md).
 
 ## Known issues
 
