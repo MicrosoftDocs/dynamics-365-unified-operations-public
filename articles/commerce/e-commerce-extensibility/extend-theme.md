@@ -93,7 +93,7 @@ The extended theme definition file can now reference the base theme using a rela
 ### Including base theme styles
 By default the styles are not included in the extended theme.  To include the base theme styles you can include the reference in the extended.theme.scss as shown in the below example, which also shows how to add additional scss to the file.
 
-**extended.theme.scss"
+**extended.theme.scss**
 ```
 @import "../../base/styles/base.theme.scss";
 
