@@ -5,7 +5,7 @@ title: Delays
 description: This topic provides information about delayed dates in master planning. A delayed date is a realistic due date that a transaction receives if the earliest fulfillment date that master planning calculates is later than the requested date.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 03/15/2019
+ms.date: 03/31/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -46,8 +46,11 @@ You can configure how delays are calculated for a coverage group. You can then a
 
 On the **Master planning parameters** page, you can set the start time for the calculation of delays. If an order is fulfilled after this time, a delay of one day is added to the delay date of the order. 
 
-> [!NOTE]
-> In earlier versions, calculated delays were known as *futures messages*, the delayed date was known as the *futures date*, and a delayed transaction was referred to as *a transaction that was future set*.
+## Limited delays in production setup with multiple BOM levels
+When you work with delays in a production setup that has multiple BOM levels, it is important to note that only the items directly above the item (in the BOM structure) causing the delay, will be updated with a delay as part of the master planning run. Other items in the BOM structure will not get the delay applied until the first master planning run, when the planned order for the top level is approved or firmed. 
+
+To work around this known limitation, the production orders on the top of the BOM structure with delays can be approved (or firmed) prior to the next master planning run. This way the delay from the delayed approved planned production order will be kept and all underlying components will be updated accordingly.
+Action messages can also be used to identify planned orders that can be moved to a later date, due to other delays in the BOM structure.
 
 ## Desired date
 
