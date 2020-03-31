@@ -49,6 +49,12 @@ On the **Master planning parameters** page, you can set the start time for the c
 > [!NOTE]
 > In earlier versions, calculated delays were known as *futures messages*, the delayed date was known as the *futures date*, and a delayed transaction was referred to as *a transaction that was future set*.
 
+## Limited delays in production setup with multiple BOM levels
+Working with delays in a production setup, with multiple BOM levels, it is important to notice that only the items right above the item (in the BOM structure) causing the delay, will be updated with a delay as part of the master planning run. Other items, in the BOM structure, will not get the delay applied until the first master planning run, where the planned order for the top level is approved or firmed. 
+
+To work around this known limitation, the production orders on the top of the BOM structure with delays can be approved (or firmed) prior to the next master planning run. Then the delay from the delayed approved planned production order will be kept and all underlying components updated accordingly.
+Action messages can also be used to identify planned orders that can be moved to a later date, due to other delays in the BOM structure.
+
 ## Desired date
 
 On the **Planned order** page, under the **Delays** tab is the **Desired date** for the planned order. The desired date of a planned order is the base date for delays, which is a computed date that equals the **Requested date** calculated from the **Net Requirement**. If the planned order is a BOM line, production line or kanban line, the desired date is based on the **Requirement date** and the desired date will not be shown on the **Planned order** page.
