@@ -60,7 +60,7 @@ The following features are included in this release. The feature titles link to 
 Dynamics 365 Commerce 10.0.10 includes platform updates. To learn more, see [Platform updates for version 10.0.10 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md).
 
 ### Bug fixes 
-For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Ffix.lcs.dynamics.com%2FIssue%2FDetails%3FbugId%3D424137%26dbType%3D3%26qc%3Dbf63d49dcc96e51eb42ac1dd66c6c5e5d7548f1e176f729e324ea3353b9860cb&data=02%7C01%7Cjosaw%40microsoft.com%7Cb0c34b69bc614f25c20108d7c115dae9%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637190171921345107&sdata=2BCd%2FgirasiXcbkuwDX%2Bn%2BhI9oVB9e16cYYOZYnyuPw%3D&reserved=0).
+For information about the bug fixes that are included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Ffix.lcs.dynamics.com%2FIssue%2FDetails%3FbugId%3D424137%26dbType%3D3%26qc%3Dbf63d49dcc96e51eb42ac1dd66c6c5e5d7548f1e176f729e324ea3353b9860cb&data=02%7C01%7Cjosaw%40microsoft.com%7Cb0c34b69bc614f25c20108d7c115dae9%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637190171921345107&sdata=2BCd%2FgirasiXcbkuwDX%2Bn%2BhI9oVB9e16cYYOZYnyuPw%3D&reserved=0).
 
 
 ### Dynamics 365: 2020 release wave 1 plan
