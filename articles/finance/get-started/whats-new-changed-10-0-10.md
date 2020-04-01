@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 Finance version 10.0.10 (May 2020)
 description: This topic describes features that are either new or changed in the Dynamics 365 Finance version 10.0.10 preview release.
 author: roschlom
 manager: AnnBe
-ms.date: 03/05/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -61,22 +61,21 @@ The following features are included in this release. The feature titles link to 
  
  - [Extended Italian localization: Protest handling for bills of exchange](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-protest-handling-bills-exchange)
 
+### Additional enhancements
 
+#### Add vendor ID and vendor name to the Posted projects list page
+Enabling this feature will display the Vendor ID and Vendor name on the **Posted projects list page** for any project-related purchase order expenses.
+
+#### Enable default accounting setup for project
+This feature will enable the ability to view and edit default accounting setup data. This data includes default financial dimensions and sales tax groups from the project list page, or the project contracts list page. When enabled, there will be a **Show default accounting** menu on the **Project** tab of the **All projects list page**. This menu also displays on the **Project contract** tab of the **Project contracts list page**. Clicking **Show default accounting** will open a FactBox, where you can view and manage specific accounting setup information. This feature lets you complete these actions from the list page, instead of having to open the detail form to complete them.
  
 ## Additional resources
 
 ### Platform updates for Finance and Operations apps
 Dynamics 365 Finance version 10.0.10 also includes platform updates. To learn more, see [Platform updates for version 10.0.10 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md).
 
-
-### Bug fixes and additional enhancements
+### Bug fixes 
 For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=424137&dbType=3&qc=bf63d49dcc96e51eb42ac1dd66c6c5e5d7548f1e176f729e324ea3353b9860cb).
-
-#### Add vendor ID and vendor name to the Posted projects list page
-Enabling this feature will display the Vendor ID and Vendor name on the **Posted projects list page** for any project-related purchase order expenses.
-
-#### Enable default accounting setup for project
-This feature will enable the ability to view and edit default accounting setup data. This data includes default financial dimensions and sales tax groups from the project list page, or the project contracts list page. When enabled, there will be a **Show default accounting** menu on the **Project** tab of the **All projects list page**. This menu also displays on the **Project contract** tab of the **Project contracts list page**. Clicking **Show default accounting** will open a side fact box form, where you can view and manage specific accounting setup information. This feature lets you complete these actions from the list page, instead of having to open the detail form to complete them.
 
 ### Dynamics 365: 2020 release wave 1 plan
 
