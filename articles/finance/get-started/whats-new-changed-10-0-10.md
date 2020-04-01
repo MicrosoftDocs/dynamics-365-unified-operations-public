@@ -67,7 +67,7 @@ The following features are included in this release. The feature titles link to 
 Enabling this feature will display the Vendor ID and Vendor name on the **Posted projects list page** for any project-related purchase order expenses.
 
 #### Enable default accounting setup for project
-This feature will enable the ability to view and edit default accounting setup data. This data includes default financial dimensions and sales tax groups from the project list page, or the project contracts list page. When enabled, there will be a **Show default accounting** menu on the **Project** tab of the **All projects list page**. This menu also displays on the **Project contract** tab of the **Project contracts list page**. Clicking **Show default accounting** will open a FactBox, where you can view and manage specific accounting setup information. This feature lets you complete these actions from the list page, instead of having to open the detail form to complete them.
+This feature will enable the ability to view and edit default accounting setup data. This data includes default financial dimensions and sales tax groups from the project list page, or the project contracts list page. When enabled, there will be a **Show default accounting** menu on the **Project** tab of the **All projects list page**. This menu also displays on the **Project contract** tab of the **Project contracts list page**. Clicking **Show default accounting** will open a FactBox, where you can view and manage specific accounting setup information. This feature lets you complete these actions from the list page, instead of having to open the detail page to complete them.
  
 ## Additional resources
 
