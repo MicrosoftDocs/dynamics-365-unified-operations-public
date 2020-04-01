@@ -40,6 +40,7 @@ This topic lists features that are new or changed for Microsoft Dynamics 365 Fin
 - **General availability (self-update):** April 2020
 - **Auto-update:** May 2020
 
+## Features included in this release
 The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. 
 
 - [Budget planning query optimization for performance](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/budget-planning-query-optimization-performance)
@@ -65,12 +66,11 @@ The following features are included in this release. The feature titles link to 
 ## Additional resources
 
 ### Platform updates for Finance and Operations apps
-
-Dynamics 365 Finance version 10.0.10 also includes platform updates for Finance and Operations apps. These were formerly referred to as Platform update 34. To learn more, see [Preview features in Platform updates for Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md).
+Dynamics 365 Finance version 10.0.10 also includes platform updates. To learn more, see [Platform updates for version 10.0.10 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md).
 
 
 ### Bug fixes and additional enhancements
-For information about the bug fixes included in each of the updates that are part of 10.0.10, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=424137&dbType=3&qc=bf63d49dcc96e51eb42ac1dd66c6c5e5d7548f1e176f729e324ea3353b9860cb).
+For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=424137&dbType=3&qc=bf63d49dcc96e51eb42ac1dd66c6c5e5d7548f1e176f729e324ea3353b9860cb).
 
 #### Add vendor ID and vendor name to the Posted projects list page
 Enabling this feature will display the Vendor ID and Vendor name on the **Posted projects list page** for any project-related purchase order expenses.
@@ -86,11 +86,11 @@ Check out the [Dynamics 365: 2020 release wave 1 plan](https://docs.microsoft.co
 
 ### Removed and deprecated features
 
-The [Removed or deprecated features](removed-deprecated-features-finance.md) topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
+The [Removed or deprecated features in Dynamics 365 Finance](removed-deprecated-features-finance.md) topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
-Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
+Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features in Dynamics 365 Finance](removed-deprecated-features-finance.md) topic 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
