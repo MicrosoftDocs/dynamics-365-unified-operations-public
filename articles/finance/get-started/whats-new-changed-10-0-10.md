@@ -66,7 +66,7 @@ The following features are included in this release. The feature titles link to 
 
 ### Platform updates for Finance and Operations apps
 
-Dynamics 365 Finances version 10.0.10 also includes platform updates for Finance and Operations apps. These were formerly referred to as Platform update 34. To learn more, see [Preview features in Platform updates for Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md).
+Dynamics 365 Finance version 10.0.10 also includes platform updates for Finance and Operations apps. These were formerly referred to as Platform update 34. To learn more, see [Preview features in Platform updates for Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md).
 
 
 ### Bug fixes and additional enhancements
