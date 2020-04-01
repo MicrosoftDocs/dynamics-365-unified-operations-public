@@ -403,7 +403,7 @@
         href: hr-compensation-process.md
     - name: Manage benefits
       items:
-      - name: "Preview feature: Benefits management"
+      - name: Benefits management
         items:
         - name: Benefits management overview
           href: hr-benefits-management-overview.md
@@ -447,12 +447,8 @@
           items: 
           - name: Set up benefit plans
             href: hr-benefits-plans-setup.md
-          - name: Create worker benefit plans
-            href: hr-benefits-plans-worker.md
           - name: Set up flex credit programs
             href: hr-benefits-plans-flex-credit-programs.md
-          - name: Configure future life events
-            href: hr-benefits-plans-future-life-events.md
         - name: Process benefit plans
           items: 
           - name: Process enrollment eligibility
@@ -501,6 +497,8 @@
         href: hr-leave-and-absence-enroll.md
       - name: Accrue leave and absence plans
         href: hr-leave-and-absence-accrue.md
+      - name: Suspend leave
+        href: hr-leave-and-absence-suspend-leave.md
       - name: View analytics for leave and absence
         href: hr-leave-and-absence-analytics.md
       - name: Manage leave and absence requests
