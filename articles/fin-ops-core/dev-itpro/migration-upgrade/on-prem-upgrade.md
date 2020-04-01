@@ -57,7 +57,7 @@ An overview of each path is given below:
 
 1.  In Lifecycle Services (LCS), go to the Shared Assets Library (right side of the screen).
 
-2.  Under **Select asset type**, choose **Downloadable VHD**, and download all parts of the VHD package that closely matches the version you will be upgrading to in your on-premises environmnet. The image requires a high amount of disk space, so be sure to download and extract on a drive with adequate free space. 
+2.  Under **Select asset type**, choose **Downloadable VHD**, and download all parts of the VHD package that closely matches the version you will be upgrading to in your on-premises environment. The image requires a high amount of disk space, so be sure to download and extract on a drive with adequate free space. 
 
 3.  The files that you downloaded are a self-extracting zip file. Extract the VHD to a location with a good amount of free space.
 
@@ -65,7 +65,7 @@ An overview of each path is given below:
 
 5.  Connect to the VM. You can find the credentials in [Running the Virtual Machine (VM) locally](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/dev-tools/access-instances#running-the-virtual-machine-vm-locally).
 
-6.  Depending on your planned on-premises target version of 10.0.x and the VHD image you downloaded, you may need to download and apply the required Application and Platform Update from the Shared Asset Library under **Select asset type** and **Software deployabel package**. For mre information, see [Install deployable packages from the command line](../deployment/install-deployable-package.md).
+6.  Depending on your planned on-premises target version of 10.0.x and the VHD image you downloaded, you may need to download and apply the required Application and Platform Update from the Shared Asset Library under **Select asset type** and **Software deployable package**. For more information, see [Install deployable packages from the command line](../deployment/install-deployable-package.md).
 
 7.  If you have any extensions or customizations install them into the VHD now, otherwise the upgrade process will remove any data related to customizations. Check with your independent software vendor (ISV) or value-added reseller (VAR) if you need to prepare your environment before the upgrade.
 
@@ -81,7 +81,7 @@ An overview of each path is given below:
 
 5.  Open a Command Prompt as Administrator and change the directory to the unzipped folder in step 4.
 
-6.  Restore the backup that you created into the Onebox VM. For more information, see [Restore a Database Backup Using SSMS](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017).
+6.  Restore the backup that you created into the one box VM. For more information, see [Restore a Database Backup Using SSMS](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017).
 
 7.  Optional: If the name of your restored database is not AXDB, using PowerShell with administrator privileges, execute:
     
@@ -176,7 +176,7 @@ An overview of each path is given below:
     > [!NOTE]
     > - Only SQL Server authentication is officially supported for this upgrade. For more information, see [Create a Database User](https://docs.microsoft.com/sql/relational-databases/security/authentication-access/create-a-database-user?view=sql-server-2017).
     >
-    > - You will need to add the Certificate Authority certificate that signed your SQL Server certificate to the Onebox trusted certificate
+    > - You will need to add the Certificate Authority certificate that signed your SQL Server certificate to the one box trusted certificate
     authorities. For more information, see [Installing the trusted root certificate](https://docs.microsoft.com/skype-sdk/sdn/articles/installing-the-trusted-root-certificate).
     >
     > - Make sure the database user you use has the sysadmin server role assigned or at least All Privileges on the database you want to upgrade and has permissions to access tempDB. Step 6 of the upgrade process will fail if this is not true.
@@ -256,7 +256,7 @@ An overview of each path is given below:
 
 1.  In LCS, go to the Shared Assets Library (right side of the screen).
 
-2.  Under **Select asset type**, choose **Downloadable VHD**, and download all parts of the VHD package that closely match the version you will be upgrading to in your on-premises environmnet. The image requires a high amount of disk space, so be sure to download and extract on a drive with adequate free space. 
+2.  Under **Select asset type**, choose **Downloadable VHD**, and download all parts of the VHD package that closely match the version you will be upgrading to in your on-premises environment. The image requires a high amount of disk space, so be sure to download and extract on a drive with adequate free space. 
 
 3.  The files that you downloaded are in a self-extracting zip file. Extract the VHD to a location with a good amount of free space.
 
@@ -264,7 +264,7 @@ An overview of each path is given below:
 
 5.  Connect to the VM. You can find the credentials in [Running the Virtual Machine (VM) locally](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/dev-tools/access-instances#running-the-virtual-machine-vm-locally).
 
-6.  Depending on your planned target version of 10.0.x and the VHD image that you downloaded, you may need to download and apply the required Application and Platform Update from the Shared Asset Library under **Select asset type** and **Software deployabel package**. For mre information, see [Install deployable packages from the command line](../deployment/install-deployable-package.md).
+6.  Depending on your planned target version of 10.0.x and the VHD image that you downloaded, you may need to download and apply the required Application and Platform Update from the Shared Asset Library under **Select asset type** and **Software deployable package**. For more information, see [Install deployable packages from the command line](../deployment/install-deployable-package.md).
 
 7.  If you have any extensions or customizations install them into the VHD now, otherwise the upgrade process will remove any data related to customizations. Check with your independent software vendor (ISV) or value-added reseller (VAR) if you need to prepare your environment before the upgrade.
 
