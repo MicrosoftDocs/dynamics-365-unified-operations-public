@@ -2,29 +2,42 @@
 # required metadata
 
 title: Document routing layout for license plate labels
-description: This topic describes how to use formatting methods to print values on labels.
+description: Describes how to use formatting methods to print values on labels.
 author: perlynne
-manager: 
-ms.date: 03/03/2020
+manager: tfehr
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 
+# optional metadata
+
+# ms.search.form:  [Operations AOT form name to tie this topic to]
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kamaybac
+ms.search.scope:  Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.search.region: Global
+# ms.search.industry: [leave blank for most, retail, public sector]
+ms.author: perlynne
+ms.search.validFrom: 2012-04-01
+ms.dyn365.ops.version: Release 10.0.11
 ---
 
 # Document routing layout for license plate labels
 
 [!include [banner](../includes/banner.md)]
 
+The layout and data printed for license plate labels is defined by the document routing layout. You configure the printing trigger points when setting up mobile device menu items and work templates.
 
-The layout and data information going to be printed for license plate labels gets defined via the document routing layout. The trigger points of the printing are configured as part of the mobile device menu items and work templates.
+In a typical scenario, warehouse receiving clerks print license plate labels right after they record the content of a pallet arriving in the receiving area. The physical label is then applied to the pallet and used for validation as part of the following put-away process and future outbound picking operations.
 
-A typical scenario of printing a license plate label is as part of a warehousing app purchase order receiving process where a license plate label get printed as soon as the warehousing receiving clerk has recorded the content of an arrived pallet in the receiving area. The physical label gets applied on the pallet and used for validation as part of the following put-away process as well as future outbound picking operations.
+You can print highly complex labels provided the printing device can understand the text being sent. For example, a Zebra Programming Language (ZPL) layout with a barcode might look like this:
 
-Very complex labels can be printed, but only if the printing devices can understand the text getting sent to the device. An simple example of a ZPL (Zebra Programming Language) layout with a barcode looks as follow:
-
-```javascript
+```dos
 ^XA~TA000~JSN^LT0^MNW^MTD^PON^PMN^LH0,0^JMA^PR2,2~SD15^JUS^LRN^CI0^XZ
 ^XA
 ^MMT
@@ -38,92 +51,94 @@ Very complex labels can be printed, but only if the printing devices can underst
 ^PQ1,,,Y^XZ
 ```
 
-The text $LicensePlateId$ will get replaced with a data value as part of the label printing process.
+The text `$LicensePlateId$` will be replaced with a data value as part of the label printing process.
 
-The values getting printed can as well be seen under the Warehouse management \> Inquiries and reports \> License plate labels.
+You can see the values to be printed by going to **Warehouse management \> Inquiries and reports \> License plate labels**.
 
-Many label software generation tools can be used to help with the text format for the label layout, including support with the $[FieldName]$ format, but special formatting logic exists as part of the document routing layout field mapping.
+You can use any of several common label generation tools to help with the text format for the label layout (including many that support the `$[FieldName]$` format). In addition, Supply Chain Management also uses special formatting logic as part of the document routing layout field mapping.
 
-## Custom field formatting for numbers
+## Custom number formats
 
-Custom formatting of how field values gets printed can be controlled via the following logic:
+You can customize the formatting of your printed numerical field values using codes with the following format:
 
-**$[FieldName:FormatString]$**, where &#39;FieldName&#39; is the data field, e.g. &#39;Qty&#39; and &#39;FormatString&#39; is used to define how the data must be printed.
+```dos
+$[FieldName:FormatString]$
+```
 
-### Number formatting
+Where:
 
-Two examples of using the field number mapping of the &quot;Work quantity&quot; ($Qty$) field:
+- `FieldName` is the data field (such as `Qty`)
+- `FormatString` defines how the data must be printed.
 
-1. Four zero placeholders appear in the result string: **$Qty:0000$**
+Here are two examples of how to customize the work quantity (Qty) field:
 
-In case the Qty = 10 the printing will look like this: **0010**
+- To always show four digits (with zero place holders), use `$Qty:0000$`. So, for example, if the quantity is 10, then the label will show "0010".
+- To always show two decimal places, use `$Qty:0.00$`.  So, for example, if the quantity is 10, then the label will show "10.00".
 
-2. Decimal point with two decimals **$Qty:0.00$** will look like **10.00**
+For a complete list of available number format strings, see [Custom numeric format strings](https://docs.microsoft.com/dotnet/standard/base-types/custom-numeric-format-strings).
 
-Reference to the full number formatting operations:
+## Custom string formats
 
-[https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-numeric-format-strings](https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-numeric-format-strings)
+You can remove the first characters of a string using the following field and format code:
 
+```dos
+$[FieldName:#..]$
+```
 
+Where `#` specifies the number of characters to skip. So, for example, to print an SSCC license plate number that doesn't includes the first two characters, you would use `$LicensePlateId:2..$`. In this case, the license plate number "0011111111111222221" would print as "11111111111222221".
 
-## Custom field formatting for strings
+## Custom date/time formats
 
-The following formatting method **$[FieldName:#..$]** will remove the first number (#) of characters from a string. An example being a SSCC license plate number where the first two &#39;00&#39; will not get printed when using:
+Here is an example of how to control the format used for printings dates:
 
-**$LicensePlateId:2..$**
+```dos
+$PrintedDate:dd-MM-yyyy$
+```
 
-0011111111111222221 -\> 11111111111222221
+In this example, the date "April 30, 2020" would print as "30-04-2020".
 
-### Date time formatting
+For a complete list of available date/time formats, see [Custom date and time format strings](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings).
 
-A third example is related to date and time formatting, **$PrintedDate:dd-MM-yyyy$**.
+## Print individual lines from multiline data
 
-Here the date will get printed based on the following format: **29-11-2020**.
+Use the following format to print an individual line from a data field that contains multiple lines (with line breaks):
 
-Reference to the full date time formatting operations:
+```dos
+$FieldName[#]$
+```
 
-[https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings](https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings)
+Where `#` is the line number that you want to print (starting with 1).
 
+For example, suppose your system includes a field named `AdditionalAddress`, which stores a multiline address such as:
 
+Contoso Inc.  
+123 Street Name  
+Some City, Some State
 
-## Multiple lines formatting
+You can print this, one line at a time, using the following codes:
 
-To get a text with multiple lines printed based on a controlled line break, the **$FieldName[#]$** can be used.
+| Code | Prints as |
+| --- | --- |
+| `$AdditionalAddress[1]$` | Contoso Inc. |
+| `$AdditionalAddress[2]$` | 123 Street Name  |
+| `$AdditionalAddress[3]$` | Some City, Some State |
 
-Whatever field that contains multiple lines can be split per line via this method.
+## Print and format from a display method
 
-Example of a field used for an additional address &quot;AdditionalAddress&quot; containing data like:
+Use the following format to print from a display method:
 
-Some corporation
+```dos
+$[DisplayMethod()]$
+```
 
-Some street 123
+You can combine this with other types of formatting described previously in this topic.
 
-1234 City
+For example, if you have a display method called `DisplayListOfItemsNumbers()` and would like to print the first item number of this method, you could use the following code:
 
-Can get printed in a controlled way for each line by using the line numbers:
+```dos
+$DisplayListOfItemsNumbers()[1]$
+```
 
-$AdditionalAddress[1]$ -\> Some corporation
+## More information about printing labels
 
-$AdditionalAddress[2]$ -\> Some street 123
-
-$AdditionalAddress[3]$ -\> 1234 City
-
-
-
-## Display method formatting
-
-Support of printing display fields exists by using the method **$[DisplayMethod()]$**.
-
-The above-mentioned formatting methods can as well be added to this formatting.
-
-Example when having a display method called DisplayListOfItemsNumbers().
-
-Using the **$DisplayListOfItemsNumbers()[1]$** will print the first item number from the display method.
-
-
-
-## How to setup printing of labels
-
-More information about the needed setup to print a label can be found here:
-
-[https://docs.microsoft.com/en-us/dynamics365/supply-chain/warehousing/tasks/license-plate-label-printing#create-the-document-route-layout](https://docs.microsoft.com/en-us/dynamics365/supply-chain/warehousing/tasks/license-plate-label-printing#create-the-document-route-layout)
+For more information about how to set up and print labels, see [Enable license plate label printing](tasks/license-plate-label-printing.md).
