@@ -46,6 +46,9 @@ You can configure how delays are calculated for a coverage group. You can then a
 
 On the **Master planning parameters** page, you can set the start time for the calculation of delays. If an order is fulfilled after this time, a delay of one day is added to the delay date of the order. 
 
+> [!NOTE]
+> In earlier versions, calculated delays were known as *futures messages*, the delayed date was known as the *futures date*, and a delayed transaction was referred to as *a transaction that was future set*.
+
 ## Limited delays in production setup with multiple BOM levels
 When you work with delays in a production setup that has multiple BOM levels, it is important to note that only the items directly above the item (in the BOM structure) causing the delay, will be updated with a delay as part of the master planning run. Other items in the BOM structure will not get the delay applied until the first master planning run, when the planned order for the top level is approved or firmed. 
 
