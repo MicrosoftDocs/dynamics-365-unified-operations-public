@@ -5,7 +5,7 @@ title: Configure Common Data Service integration
 description: You can turn integration between Common Data Service and an instance of Microsoft Dynamics 365 Human Resources on or off. You can also view the synchronization details, clear tracking data, and resync an entity to help troubleshoot data issues between the two environments.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -36,12 +36,7 @@ You can turn integration between Common Data Service and an instance of Microsof
 
 When you turn off integration, users can make changes in Human Resources or Common Data Service, but those changes aren't synced between the two environments.
 
-By default, integration between Human Resources and Common Data Service is turned either off or on, depending on the presence of demo data in the environments:
-
-- **Off** for new environments that don't include demo data
-- **On** for new environments that include demo data
-
-New environments that include demo data will start to sync data when they are provisioned.
+By default, integration between Human Resources and Common Data Service is turned off.
 
 You might want to turn off integration in these situations:
 
