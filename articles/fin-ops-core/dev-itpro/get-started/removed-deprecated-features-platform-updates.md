@@ -5,7 +5,7 @@ title: Removed or deprecated platform features
 description: This topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 03/26/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -42,17 +42,17 @@ This list is intended to help you consider these removals and deprecations for y
 > [!NOTE]
 > Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
 
-## Platform update 35
+## Platform updates for version 10.0.11 of Finance and Operations apps
 
 ### Field groups containing invalid field references
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | It is possible for table metadata definitions to have field groups containing invalid field references. If deployed, these field groups can cause runtime failures in Financial Reporting and SQL Server Reporting Services (SSRS). A compiler *warning* was introduced in Platform update 23, to allow for these metadata issues to be addressed. Platform update 35 now categorizes this issue as a compiler *error*. To fix this issue:<br><br>1. Remove the invalid field reference from the table field group definition.<br><br>2. Recompile.<br><br>3. Ensure any errors are addressed. |
-| **Replaced by another feature?**   | This compiler error in Platform update 35 replaces the compiler warning permanently.  |
+| **Reason for deprecation/removal** | It is possible for table metadata definitions to have field groups containing invalid field references. If deployed, these field groups can cause runtime failures in Financial Reporting and SQL Server Reporting Services (SSRS). A compiler *warning* was introduced in Platform update 23 to allow for these metadata issues to be addressed. Platform updates for version 10.0.11 of Finance and Operations apps will categorize this issue as a compiler *error*.<br><br>To fix this issue:<br><br>1. Remove the invalid field reference from the table field group definition.<br><br>2. Recompile.<br><br>3. Ensure any errors are addressed. |
+| **Replaced by another feature?**   | This compiler error replaces the compiler warning permanently.  |
 | **Product areas affected**         | Visual Studio development tools |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: The warning will become a compiler error starting in Platform update 35. |
+| **Status**                         | Deprecated: The warning will become a compiler error with platform updates for version 10.0.11 of Finance and Operations apps. |
 
 ## Platform update 32
 
