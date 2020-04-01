@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Process life event eligibility
 
+[!include [banner](includes/preview-feature.md)]
+
 This article shows you how to run the process for life event eligibility.
 
 1. In the **Benefits management** workspace, under **Processing**, select **Life event eligibility processing**.
