@@ -134,14 +134,14 @@ Azure Key Vault Client](https://github.com/MicrosoftDocs/Dynamics-365-Operations
 
 -   **Digipoort Delivery URL** – Enter the destination URL for the Digipoort
     service. For example, enter
-    (`)https://preprod-dgp2.procesinfrastructuur.nl/wus/2.0/aanleverservice/1.2(`).
+    `https://preprod-dgp2.procesinfrastructuur.nl/wus/2.0/aanleverservice/1.2`.
 
 -   **Digipoort Status URL** – Enter the URL for the message statuses. For
     example, enter
-    (`)https://preprod-dgp2.procesinfrastructuur.nl/wus/2.0/statusinformatieservice/1.2(`).
+    `https://preprod-dgp2.procesinfrastructuur.nl/wus/2.0/statusinformatieservice/1.2`.
 
 -   **Authorization Address** – Enter the URL for authorization. For example,
-    enter (`)http://geenausp.nl(`).
+    enter `http://geenausp.nl`.
 
 -   **Server Certificate** – Select the line that you created for the Key Vault
     secret for the Digipoort server certificate.
