@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Product recommendations on POS
+title: Add product recommendations on POS
 description: This topic describes using product recommendations on a point of sale (POS) device.
 author: bebeale
 manager: AnnBe
-ms.date: 10/01/19
+ms.date: 03/19/20
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Product recommendations on POS
+# Add product recommendations on POS
 
 [!include [banner](includes/banner.md)]
 
@@ -75,8 +75,22 @@ To set up product recommendations, follow these steps:
 
 ## Additional resources
 
-[Add a recommendations control to the transaction screen on POS devices](add-recommendations-control-pos-screen.md)
+[Product recommendations overview](product-recommendations.md)
 
-[Product recommendations overview](../commerce/product-recommendations.md)
+[Enable ADLS in a Dynamics 365 Commerce environment](enable-adls-environment.md)
 
-[Enable product recommendations](../commerce/enable-product-recommendations.md) 
+[Enable product recommendations](enable-product-recommendations.md)
+
+[Enable personalized recommendations](personalized-recommendations.md)
+
+[Opt out of personalized recommendations](personalization-gdpr.md)
+
+[Add recommendations to the transaction screen](add-recommendations-control-pos-screen.md)
+
+[Adjust AI-ML recommendations results](modify-product-recommendation-results.md)
+
+[Manually create curated recommendations](create-editorial-recommendation-lists.md)
+
+[Create recommendations with demo data](product-recommendations-demo-data.md)
+
+[Product recommendations FAQ](faq-recommendations.md)

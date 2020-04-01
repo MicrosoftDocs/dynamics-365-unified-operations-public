@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Original invoice reference (Eastern Europe)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This task walks you through creating corrective lines in a credit note for a sales order. This task was created using the demo data company DEMF with a primary address in Poland.
 

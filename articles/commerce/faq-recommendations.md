@@ -5,7 +5,7 @@ title: Product recommendations FAQ
 description: This topic provides information about processes and tools that you can use to troubleshoot issues that are related to product recommendations or their results.
 author: bebeale
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -79,12 +79,26 @@ For information about how to add product recommendation pages to your e-Commerce
 
 ## How do I enable recommendations on POS?
 
-After enabling product recommendations, you will need to add the recommendations panel to the control POS screen. See [this feature documentation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/add-recommendations-control-pos-screen) for more information on how to do add the recommendations panel to your POS device layout.
+After enabling product recommendations, you will need to add the recommendations panel to the control POS screen. For more information, see [Add a recommendations control to the transaction screen on POS devices](add-recommendations-control-pos-screen.md).
 
 ## Additional resources
 
 [Product recommendations overview](product-recommendations.md)
 
+[Enable ADLS in a Dynamics 365 Commerce environment](enable-adls-environment.md)
+
 [Enable product recommendations](enable-product-recommendations.md)
 
-[Manage AI-ML-based product recommendation results](modify-product-recommendation-results.md)
+[Enable personalized recommendations](personalized-recommendations.md)
+
+[Opt out of personalized recommendations](personalization-gdpr.md)
+
+[Add product recommendations on POS](product.md)
+
+[Add recommendations to the transaction screen](add-recommendations-control-pos-screen.md)
+
+[Adjust AI-ML recommendations results](modify-product-recommendation-results.md)
+
+[Manually create curated recommendations](create-editorial-recommendation-lists.md)
+
+[Create recommendations with demo data](product-recommendations-demo-data.md)

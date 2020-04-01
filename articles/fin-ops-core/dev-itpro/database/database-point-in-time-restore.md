@@ -5,7 +5,7 @@ title: Database point-in-time restore (PITR)
 description: This topic explains how to perform a point-in-time restore of a database for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 03/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -32,35 +32,33 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-You can use Microsoft Dynamics Lifecycle Services (LCS) to perform the point-in-time restore (PITR) for a sandbox user acceptance testing (UAT) environment. Microsoft maintains [automated backups](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups) according to Microsoft Azure SQL defaults, up to a maximum of 30 days.  
+You can use Microsoft Dynamics Lifecycle Services (LCS) to perform the point-in-time restore (PITR) for a sandbox user acceptance testing (UAT) environment. Microsoft maintains [automated backups](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups) according to Microsoft Azure SQL defaults, up to a maximum of 30 days.
 
 ## Self-service point-in-time restore
 [!include [pitr](../includes/dbmovement-pitr.md)]
 
 ### Restore operation failed
-In case of failure, the option to perform a **Rollback** is available.  By clicking the rollback option after the operation has initially failed, your target sandbox environment will be restored to the state it was before the restore began. This will restore the previous database from the deleted databases storage on the Azure SQL Server. This is often required if a customization is present in the target sandbox that cannot complete a database synchronization with the newly-restored data.  
+In the event of failure, the option to do a **rollback** is available. If you select the rollback option after the operation originally fails, your target sandbox environment is restored to the state that it was in before the restore began. A rollback is often required if a customization that is present in the target sandbox environment can't complete a database synchronization with the newly restored data.
 
 To determine the root cause of the failure, download the runbook logs using the available buttons before starting the rollback operation.
 
 ### Data elements that need attention after restore
-When restoring a database from a previous point-in-time, keep in mind that the database is provided as-was. This means that batch jobs and other data elements in the system could be in an in-progress state. These will require manual review.
+When you restore a database from a previous point in time, keep in mind that the database is provided "as was." For example, batch jobs and other data elements in the system can be in an in-progress state. These elements will require manual review.
 
 ### Environment administrator
-The System Administrator account in the target environment (UserId of 'Admin') is reset to the value found in the web.config file on the target.  This should be the same value as that of the Administrator from Lifecycle Services. To preview which account this will be, go to your target sandbox **Environment Details** page in LCS.  The value of the **Environment Administrator** field that was selected when the environment was first deployed is updated to be the System Administrator in the transactional database. This also means that the tenant of the environment will be that of the Environment Administrator.  
+The system administrator account in the target environment (that is, the account that has a **UserId** value of **Admin**) is reset to the value that is found in the web.config file in the target environment. This value should match the value of the administrator account in LCS. To preview which account will be used, go to the **Environment Details** page for your target sandbox environment in LCS. The value that was selected in the **Environment Administrator** field when the environment was first deployed is updated to the system administrator in the transactional database. The tenant of the environment will be the tenant of the environment administrator.
 
-If you have used the Admin User Provisioning Tool on your environment to change the web.config file to a different value, it may not match what is in Lifecycle Services.  If you require a different account, you will need to deallocate and delete the target sandbox, and redeploy by selecting another account. After this, you can perform another refresh database action to restore the data.
+If you've used the Admin User Provisioning Tool in your environment to change the value in the web.config file, the value might not match the value in LCS. If you require a different account, you must deallocate and delete the target sandbox environment, and then redeploy it by selecting another account. You can then do another refresh database action to restore the data.
 
 ## Steps to complete after a database restore for environments that use Commerce functionality
 [!include [environment-reprovision](../includes/environment-reprovision.md)]
 
 ## Known issues
 
-### Point-in-time restore breaks the chain of available restore points
-The restore database process always creates a new database based on a previous point-in-time snapshot.  Because of this, the new database does not have any restore history, but does begin to accrue new restore points going forward. This means that after performing point-in-time restore you will not be able to do so again using the same restore date and time.  
+### Breaking the chain of available restore points
+Several frequently used actions create a new database that won't have the same restore point history as the previously used database. These actions include point-in-time restores, database refreshes, database imports, and point-in-time restores from the production environment to the sandbox environment. In addition, if a software deployable package that you apply to your environment fails during update of the database, and you use the rollback functionality in LCS, the rollback functionality does a point-in-time restore of the database, and that restore also creates a new database. 
 
-Going forward, the Lifecycle Services team will work to improve point-in-time restore by leveraging the restore history of deleted databases.  This will allow continual restore back to the same point-in-time for scenarios such as destructive testing.  This will be fixed in an upcoming release of LCS.
+Although the new database doesn't have any restore point history, it does begin to accrue new restore points from that time onward. After you perform any of the previously mentioned actions, you can't perform it again by using the same restore date and time.
 
-### Restore is denied for environments running Platform update 3 or earlier
+### Restore is denied for environments that run Platform update 20 or earlier
 The restore database process cannot be completed if the environment is running Platform update 3 or earlier. For more information, see the [list of currently supported Platform updates](..//migration-upgrade/versions-update-policy.md).
-
-

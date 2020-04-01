@@ -5,7 +5,7 @@ title: Update environments from version 8.0 to 10.0.X
 description: This topic explains the steps required to update existing Finance and Operations 8.0 environments to 10.0.X application releases.
 author: laneswenka
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 02/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -93,6 +93,9 @@ After you have compiled in a developer environment and there are no errors to re
 
 ## Merge the deployable package with the 10.0.X binary update package
 In your project's **Asset Library**, locate both your new 10.0.X software deployable package (your customization package that includes your ISVs) and the 10.0.X PU2X binary update package that was saved in Step 1 at the beginning of the topic. Highlight both packages and select **Merge**. This will combine the files into a merged update package. You can now apply this package to your various test environments.
+
+> [!NOTE]
+> You can't move this merged package between different Lifecycle Services projects. The merge references other packages in your Asset library, and those packages won't be found in a different project.
 
 ## Deploy to target environments for validation
 Using the merged update package, deploy this to your various test environments.  For more on how to do this, see [Apply updates to cloud environments](../deployment/apply-deployable-package-system.md).  This merged update package can be deployed to your Tier1/OneBox environments as well as Tier-2 sandboxes. At a minimum, you must deploy this to the sandbox Tier-2 environment that comes with your subscription.  After you have finished with validation, mark the merged update package as a Release Candidate.

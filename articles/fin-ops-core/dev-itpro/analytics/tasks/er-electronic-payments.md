@@ -28,11 +28,11 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # ER Generate electronic documents for payments using a format configuration
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can use a new Electronic reporting (ER) format configuration to generate electronic documents for processing payments. These steps can be performed in the GBSI sample company.
 
-To complete these steps, you must first complete the steps in the “Create a configuration with format of payment document” procedure.
+To complete these steps, you must first complete the steps in the "Create a configuration with format of payment document" procedure.
 
 
 ## Change the configuration of the electronic payment method

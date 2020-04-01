@@ -5,6 +5,14 @@
     items:
     - name: What's new or changed in Human Resources
       href: hr-admin-whats-new.md
+    - name: March 24, 2020
+      href: hr-whats-new-2020-03-24.md
+    - name: March 19, 2020
+      href: hr-whats-new-2020-03-19.md
+    - name: March 10, 2020
+      href: hr-whats-new-2020-03-10.md
+    - name: March 3, 2020
+      href: hr-whats-new-2020-03-03.md
     - name: February 25, 2020
       href: hr-whats-new-2020-02-25.md
     - name: February 18, 2020
@@ -395,7 +403,7 @@
         href: hr-compensation-process.md
     - name: Manage benefits
       items:
-      - name: "Preview feature: Benefits management"
+      - name: Benefits management
         items:
         - name: Benefits management overview
           href: hr-benefits-management-overview.md
@@ -439,12 +447,8 @@
           items: 
           - name: Set up benefit plans
             href: hr-benefits-plans-setup.md
-          - name: Create worker benefit plans
-            href: hr-benefits-plans-worker.md
           - name: Set up flex credit programs
             href: hr-benefits-plans-flex-credit-programs.md
-          - name: Configure future life events
-            href: hr-benefits-plans-future-life-events.md
         - name: Process benefit plans
           items: 
           - name: Process enrollment eligibility
@@ -493,6 +497,8 @@
         href: hr-leave-and-absence-enroll.md
       - name: Accrue leave and absence plans
         href: hr-leave-and-absence-accrue.md
+      - name: Suspend leave
+        href: hr-leave-and-absence-suspend-leave.md
       - name: View analytics for leave and absence
         href: hr-leave-and-absence-analytics.md
       - name: Manage leave and absence requests
@@ -535,5 +541,9 @@
         href: hr-learning-create-closed-ended-question.md
       - name: Create a dependent question
         href: hr-learning-depending-question.md
-
-
+    - name: Set up Employee and Manager self service
+      items:
+      - name: Employee and Manager self service overview
+        href: hr-employee-manager-self-service-overview.md
+      - name: Edit personal information
+        href: hr-employee-manager-self-service-edit-personal-information.md

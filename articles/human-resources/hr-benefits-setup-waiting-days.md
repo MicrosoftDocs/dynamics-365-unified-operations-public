@@ -5,7 +5,7 @@ title: Configure waiting days
 description: In Microsoft Dynamics 365 Human Resources, waiting days establish a monthly milestone to use for benefit plans. 
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Human Resources
 
 # Configure waiting days
 
-[!include [banner](includes/preview-feature.md)]
-
 In Microsoft Dynamics 365 Human Resources, waiting days establish a monthly milestone to use for benefit plans. For example, a waiting day of 15 represents the 15th day of each month. 
 
 1. In the **Benefits management** workspace, under **Setup**, select **Waiting days**.
@@ -44,8 +42,8 @@ In Microsoft Dynamics 365 Human Resources, waiting days establish a monthly mile
 
    | Field | Description |
    | --- | --- |
-   | Waiting day | A unique identifier for the waiting day. |
-   | Description | A description of the waiting day. |
-   | Day | The day of the month that the system should set the waiting period date to. |
+   | **Waiting day** | A unique identifier for the waiting day. |
+   | **Description** | A description of the waiting day. |
+   | **Day** | The day of the month that the system should set the waiting period date to. |
    
 4. Select **Save**.

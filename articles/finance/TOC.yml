@@ -10,8 +10,6 @@
         href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/finance/toc.json
       - name: Sign up for preview subscriptions
         href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/finance/toc.json
-      - name: Customer payment insights (preview)
-        href: accounts-receivable/payment-insights-overview.md
       - name: One Version service updates 
         items:
         - name: One Version service updates overview
@@ -26,6 +24,8 @@
           href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?toc=/dynamics365/finance/toc.json
         - name: Apply updates to cloud environments
           href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/finance/toc.json
+        - name: Apply updates to on-premises deployments
+          href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/finance/toc.json
         - name: Configure service updates
           href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/finance/toc.json
         - name: Pause service updates
@@ -70,20 +70,24 @@
           items:
           - name: What's new or changed in Finance home page
             href: get-started/whats-new-home-page.md
+          - name: Finance version 10.0.10 (May 2020)
+            href: get-started/whats-new-changed-10-0-10.md            
           - name: Finance version 10.0.9 (April 2020)
             href: get-started/whats-new-changed-10-0-9.md
           - name: Finance version 10.0.8 (February 2020)
             href: get-started/whats-new-changed-10-0-8.md
-          - name: Finance version 10.0.7 (January 2020)
-            href: get-started/whats-new-changed-10-0-7.md
-        - name: Removed or deprecated features
-          href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/finance/toc.json
-        - name: AX 2012 features that were postponed
-          href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/finance/toc.json
-        - name: Features not implemented in on-premises deployments
-          href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/finance/toc.json
-        - name: End of mainstream support for Microsoft Dynamics AX 2009 and 2012
-          href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/finance/toc.json
+      - name: Removed or deprecated features
+        items:
+          - name: Removed or deprecated features in Dynamics 365 Finance
+            href: get-started/removed-deprecated-features-finance.md
+          - name: Removed or deprecated features in previous releases
+            href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/finance/toc.json
+      - name: AX 2012 features that were postponed
+        href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/finance/toc.json
+      - name: Features not implemented in on-premises deployments
+        href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/finance/toc.json
+      - name: End of mainstream support for Microsoft Dynamics AX 2009 and 2012
+        href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/finance/toc.json
       - name: Documentation resources
         items:
         - name: Help system
@@ -150,7 +154,7 @@
           href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/finance/toc.json
         - name: Saved views
           href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/finance/toc.json
-        - name: Grid capabilites
+        - name: Grid capabilities
           href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/finance/toc.json
         - name: Create and work with custom fields
           href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/finance/toc.json
@@ -312,6 +316,8 @@
         href: accounts-receivable/tasks/establish-customer-method-payment.md
       - name: Establish customer payment fees
         href: accounts-receivable/tasks/establish-customer-payment-fees.md
+      - name: Customer payment insights (preview)
+        href: accounts-receivable/payment-insights-overview.md
       - name: Customer posting profiles
         href: accounts-receivable/customer-posting-profiles.md
       - name: Copy customers by using shared number sequences
@@ -654,7 +660,7 @@
         href: expense-management/expense-report-distributions.md
       - name: Intercompany expenses
         href: expense-management/intercompany-expense.md
-      - name: Expense policies
+      - name: Define expense policies
         href: expense-management/travel-expense-policies.md
       - name: View an expense report
         href: expense-management/view-expense-report.md
@@ -978,6 +984,8 @@
         href: project-management/project-contracts.md
       - name: Project forecasts and budgets
         href: project-management/project-forecasts-budgets.md
+      - name: Transfer project budgets at fiscal year end
+        href: project-management/process-project-budgets-for-fiscal-year-end.md
       - name: Project sales orders
         href: project-management/project-sales-orders.md
       - name: Purchase orders for a project
@@ -1640,6 +1648,12 @@
             href: localizations/tasks/create-submit-vat-report.md
         - name: View transactions on settlement
           href: localizations/emea-transactions-settlement-form.md
+      - name: Finland
+        items:
+        - name: Finland overview
+          href: localizations/finland.md
+        - name: Sales tax payment report for Finland
+          href: localizations/emea-fin-sales-tax-payment-report-finland.md
       - name: France
         items:
         - name: France overview
@@ -1690,6 +1704,8 @@
           href: localizations/tasks/fr-00004-setup-method-payment.md
         - name: Update method of payment on customer
           href: localizations/tasks/fr-00004-update-method-payment-customer.md
+        - name: DAS-2 report
+          href: localizations/emea-fra-das2-report.md
       - name: Germany
         items:
         - name: Germany overview
@@ -1794,6 +1810,8 @@
               href: localizations/apac-ind-GST-define-gstin-numbers-number-sequences.md
             - name: Define HSN codes and Service Accounting Codes
               href: localizations/apac-ind-GST-hsn-service-accounting-codes.md
+            - name: Create tax rate type
+              href: localizations/apac-ind-GST-create-tax-rate-type.md
             - name: Create main accounts for the GST posting type
               href: localizations/apac-ind-GST-create-main-accounts-GST-posting-type.md
             - name: Create a tax settlement period 
@@ -1921,18 +1939,19 @@
         - name: Tax engine
           items: 
           - name: Tax engine overview
-            href: general-ledger/tax-engine.md
-            items:     
-            - name: Create tax components
-              href: localizations/tax-engine-create-tax-component.md
-            - name: Import configuration
-              href: general-ledger/tax-engine-import-configuration.md
-            - name: Tax engine applicability
-              href: general-ledger/tax-engine-applicability.md
-            - name: Tax engine integration
-              href: general-ledger/tax-engine-integration.md
-            - name: Extending the Tax engine
-              href: general-ledger/extend-tax-engine-configurations.md
+            href: general-ledger/tax-engine.md  
+          - name: Import configuration
+            href: general-ledger/tax-engine-import-configuration.md
+          - name: Advanced formula designer
+            href: ../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md?toc=/dynamics365/finance/toc.json
+          - name: Tax engine applicability
+            href: general-ledger/tax-engine-applicability.md
+          - name: Create tax components
+            href: localizations/tax-engine-create-tax-component.md
+          - name: Tax engine integration
+            href: general-ledger/tax-engine-integration.md
+          - name: Extending the Tax engine
+            href: general-ledger/extend-tax-engine-configurations.md
         - name: Tax thresholds FAQ
           href: localizations/apac-ind-tax-thresholds.md          
         - name: Stock transfers
@@ -1983,10 +2002,16 @@
           href: localizations/emea-ita-exil-goods-for-free.md
         - name: Improved inquiry on debit or credit settlements
           href: localizations/emea-ita-exil-improved-inquiry-settlement.md
+        - name: Commission settlement on payments
+          href: localizations/emea-ita-exil-commission-settlement.md
         - name: General ledger simulations (Italy)
           href: localizations/emea-ita-exil-general-ledger-simulations.md
+        - name: Configurable posting profiles for banks and remittance types
+          href: localizations/emea-ita-exil-bank-remittance.md
         - name: Unique certification
           href: localizations/emea-ita-exil-unique-certification.md
+        - name: Bills of exchange protest import
+          href: localizations/emea-ita-exil-protest-boe.md
       - name: Japan
         items:
         - name: Japan overview
@@ -2357,50 +2382,56 @@
             href: localizations/rus-incoming-VAT-restoring.md
         - name: Fixed assets
           items: 
-          - name: Managing fixed assets
-            href: localizations/rus-fixed-assets.md
           - name: Fixed assets overview
-            hfre: localizations/rus-fixed-assets-overview.md
+            href: localizations/rus-fixed-assets-overview.md
           - name: Set up fixed assets
-            href: localizations/rus-set-up-fixed-assets.md
-          - name: Acquiring fixed assets and putting them into operation
-            href: localizations/rus-fixed-asset-acquisition.md
-          - name: Register fixed assets acquisitions
-            href: localizations/rus-register-acquisition.md
-          - name: Create and post budget journals for fixed asset acquisitions
-            href: localizations/rus-post-budget-fixed-asset-acquisition.md
-          - name: Create a fixed asset lease and a return from lease transaction
-            href: localizations/rus-fixed-asset-leasing.md
-          - name: Fixed asset counting
-            href: localizations/rus-fixed-assets-counting.md
-          - name: Fixed assets currency revaluation
-            href: localizations/rus-fixed-asset-currency-revaluation.md
-          - name: Maintain fixed assets
-            href: localizations/rus-maintain-fixed-assets.md
-          - name: Revaluate fixed asset cost and depreciation
-            href: localizations/rus-fixed-assets-revaluation.md            
-          - name: Partial fixed asset disassembly (liquidation)
-            href: localizations/rus-fixed-assets-disassembly.md
-          - name: Sell, dispose, and write-off assets
-            href: localizations/rus-sell-dispose-write-off-fixed-assets.md
-          - name: Set up fixed asset locations and numbering
-            href: localizations/rus-fixed-assets-locations-numbering.md
-          - name: Set up depreciation 
-            href: localizations/rus-depreciation-setup.md
-          - name: Depreciation methods
-            href: localizations/rus-depreciation-methods.md
-          - name: Depreciation bonuses
-            href: localizations/rus-bonus-depreciation.md
-          - name: Calculate depreciation
-            href: localizations/rus-depreciation-calculation.md
-          - name: Transfer fixed assets
-            href: localizations/rus-fixed-asset-transfer.md
-          - name: Unified printing forms for fixed assets 
-            href: localizations/printing-forms-fixed-assets.md
-          - name: Working clothes/special rigging accounting (Russia)
-            href: localizations/rus-working-clothes-instruments-accounting.md
-          - name: Not valuable fixed assets (NVFAs) (Russia)
-            href: localizations/rus-not-valuable-assets.md
+            items:
+            - name: Set up fixed assets
+              href: localizations/rus-set-up-fixed-assets.md
+            - name: Set up depreciation 
+              href: localizations/rus-depreciation-setup.md
+            - name: Depreciation methods
+              href: localizations/rus-depreciation-methods.md
+            - name: Depreciation bonuses                     
+              href: localizations/rus-bonus-depreciation.md
+            - name: Set up fixed asset locations and numbering
+              href: localizations/rus-fixed-assets-locations-numbering.md
+          - name: Working with fixed assets
+            items:
+            - name: Create fixed assets
+              href: localizations/rus-fixed-assets.md
+            - name: Register fixed assets acquisitions
+              href: localizations/rus-register-acquisition.md
+            - name: Acquiring fixed assets and putting them into operation
+              href: localizations/rus-fixed-asset-acquisition.md
+            - name: Calculate depreciation
+              href: localizations/rus-depreciation-calculation.md
+            - name: Partial fixed asset disassembly (liquidation)
+              href: localizations/rus-fixed-assets-disassembly.md
+            - name: Sell, dispose, and write off assets
+              href: localizations/rus-sell-dispose-write-off-fixed-assets.md  
+            - name: Create a fixed asset lease and a return from lease transaction
+              href: localizations/rus-fixed-asset-leasing.md
+            - name: Maintain fixed assets
+              href: localizations/rus-maintain-fixed-assets.md
+            - name: Fixed asset counting
+              href: localizations/rus-fixed-assets-counting.md
+            - name: Fixed assets currency revaluation
+              href: localizations/rus-fixed-asset-currency-revaluation.md
+            - name: Revaluate fixed asset cost and depreciation
+              href: localizations/rus-fixed-assets-revaluation.md
+            - name: Create and post budget journals for fixed asset acquisitions
+              href: localizations/rus-post-budget-fixed-asset-acquisition.md
+            - name: Transfer fixed assets
+              href: localizations/rus-fixed-asset-transfer.md
+          - name: Not valuable fixed assets, and working clothes
+            items:
+            - name: Not valuable fixed assets (NVFAs) (Russia)
+              href: localizations/rus-not-valuable-assets.md
+            - name: Working clothes/special rigging accounting (Russia)
+              href: localizations/rus-working-clothes-instruments-accounting.md
+            - name: Unified printing forms for fixed assets 
+              href: localizations/printing-forms-fixed-assets.md
         - name: Accounts payable and receivable
           items:
           - name: Credit note corrections (Russia)
@@ -2427,6 +2458,14 @@
               href: localizations/rus-register-transactions-with-reference-to-agreements.md
             - name: Inquiries and reports with agreements
               href: localizations/rus-inquiries-reports-agreements.md
+          - name: Transactions through intermediary
+            items:
+            - name: Transactions through intermediary overview
+              href: localizations/rus-transactions-through-intermediary.md
+            - name: Purchases on commission
+              href: localizations/rus-purchases-on-commission.md
+            - name: Sales on commission
+              href: localizations/rus-sales-on-commission.md
         - name: Inventory
           items:
           - name: Goods in transit from vendor
@@ -2437,6 +2476,8 @@
             href: localizations/rus-inventory-cost-structure.md
           - name: Inventory adjustment wizard
             href: localizations/rus-inventory-adjustment-wizard.md
+          - name: Inventory reports
+            href: localizations/rus-inventory-reports.md
         - name: Reporting
           items:
           - name: Financial reporting
@@ -2533,6 +2574,8 @@
           href: localizations/emea-swe-sie-standard-report.md
         - name: Import payment formats
           href: localizations/emea-swe-payment-formats-import.md
+        - name: Sales tax payment report for Sweden
+          href: localizations/emea-swe-sales-tax-payment-report-sweden.md
       - name: Switzerland
         items:
         - name: Switzerland overview
@@ -2561,20 +2604,24 @@
           href: localizations/united-kingdom.md
         - name: Construction Industry Scheme
           href: localizations/emea-gbr-cis-construction-industry-scheme.md
-        - name: Create a credit on the settlement discount
-          href: localizations/tasks/gb-00009-credit-note-settlement-discount.md
-        - name: Create a purchase order that includes items subject to reverse charge VAT
-          href: localizations/tasks/purchase-order-reverse-charge-vat.md
-        - name: Create a sales order that includes items subject to reverse charge VAT
-          href: localizations/tasks/gb-00002-sales-order.md
-        - name: Set up item sales tax groups for reverse charge VAT
-          href: localizations/tasks/gb-00002-item-sales-tax-groups-reverse-charge-vat.md
-        - name: Set up reverse charge VAT item groups, rules, and parameters
-          href: localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
-        - name: Set up sales tax groups for reverse charge VAT
-          href: localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md      
+        - name: Reverse charge
+          items:
+          - name: Create a credit on the settlement discount
+            href: localizations/tasks/gb-00009-credit-note-settlement-discount.md
+          - name: Create a purchase order that includes items subject to reverse charge VAT
+            href: localizations/tasks/purchase-order-reverse-charge-vat.md
+          - name: Create a sales order that includes items subject to reverse charge VAT
+            href: localizations/tasks/gb-00002-sales-order.md
+          - name: Set up item sales tax groups for reverse charge VAT
+            href: localizations/tasks/gb-00002-item-sales-tax-groups-reverse-charge-vat.md
+          - name: Set up reverse charge VAT item groups, rules, and parameters
+            href: localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
+          - name: Set up sales tax groups for reverse charge VAT
+            href: localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md      
         - name: Making Tax Digital for VAT
           href: localizations/emea-gbr-mtd-vat-integration.md
+        - name: Statistics on payment practices report
+          href: localizations/emea-gbr-statistics-on-payment-practices-report.md
       - name: United States
         items:
         - name: United States overview
@@ -3141,6 +3188,8 @@
           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
         - name: Select data model definitions when you create formats
           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
+        - name: Enhanced filtering options for finding configurations in the Global repository
+          href: ../finance/localizations/enhanced-filtering-global-repo.md         
         - name: Generate reports by adding content as raw XML
           href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/finance/toc.json
         - name: (ER) Cross-company data sources in Electronic reporting
@@ -3697,4 +3746,3 @@
     href: ../supply-chain/index.md
   - name: Dynamics 365 Commerce
     href: ../commerce/index.md
-

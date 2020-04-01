@@ -28,22 +28,22 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # ER Create required configurations to import data from an external file
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-The following steps explain how a user in the System administrator or Electronic reporting developer role can design Electronic reporting (ER) configurations to import data in to the application from an external file. In this example, you will create the required ER configurations for the sample company, Litware, Inc. To complete these steps, you must first complete the steps in the Task guide, “ER Create a configuration provider and mark it as active.” These steps can be completed using the USMF data set. You must also download and save the following files locally using links from the Electronic reporting overview topic (https://go.microsoft.com/fwlink/?linkid=852550): 1099model.xml, 1099format.xml, 1099entries.xml, 1099entries.xlsx.
+The following steps explain how a user in the System administrator or Electronic reporting developer role can design Electronic reporting (ER) configurations to import data in to the application from an external file. In this example, you will create the required ER configurations for the sample company, Litware, Inc. To complete these steps, you must first complete the steps in the Task guide, "ER Create a configuration provider and mark it as active." These steps can be completed using the USMF data set. You must also download and save the following files locally using links from the Electronic reporting overview topic (https://go.microsoft.com/fwlink/?linkid=852550): 1099model.xml, 1099format.xml, 1099entries.xml, 1099entries.xlsx.
 
-ER offers business users the ability to configure the process of importing external data files to tables in either .XML or .TXT format. First, an abstract data model and an ER data model configuration must be designed to represent the data that you are importing. Next, you need to define the structure of the file that you are importing and the method that you will use to port the data from the file to the abstract data model. The ER format configuration that maps to the designed data model must be created for that abstract data model. Then, the data model configuration must be extended with a mapping that describes how the imported data is persisted as abstract data model data and how it is used to update tables.  The ER data model configuration must be appended with a new model mapping that describes the binding of the data model to the application’s destinations.  
+ER offers business users the ability to configure the process of importing external data files to tables in either .XML or .TXT format. First, an abstract data model and an ER data model configuration must be designed to represent the data that you are importing. Next, you need to define the structure of the file that you are importing and the method that you will use to port the data from the file to the abstract data model. The ER format configuration that maps to the designed data model must be created for that abstract data model. Then, the data model configuration must be extended with a mapping that describes how the imported data is persisted as abstract data model data and how it is used to update tables.  The ER data model configuration must be appended with a new model mapping that describes the binding of the data model to the application's destinations.  
 
-The following scenario shows the ER data import capabilities. This includes vendor transactions that are tracked externally and then imported to be reported later in Vendor’s settlement for 1099’s.   
+The following scenario shows the ER data import capabilities. This includes vendor transactions that are tracked externally and then imported to be reported later in Vendor's settlement for 1099's.   
 
 ## Add a new ER model configuration
 1. Go to Organization administration > Workspaces > Electronic reporting.
 
-    Verify that the configuration provider for sample company ‘Litware, Inc.’ is available and marked as active. If you don’t see this configuration provider, you must first complete the steps in the procedure, “Create a configuration provider and mark it as active.”   
+    Verify that the configuration provider for sample company 'Litware, Inc.' is available and marked as active. If you don't see this configuration provider, you must first complete the steps in the procedure, "Create a configuration provider and mark it as active."   
 
 2. Click Reporting configurations.
 
-    Instead of creating of a new model to support data import, load the file, 1099model.xml, that you previously downloaded. This file contains the custom data model of vendors’ transactions. This data model is mapped to the data components that are in the AOT data entity.   
+    Instead of creating of a new model to support data import, load the file, 1099model.xml, that you previously downloaded. This file contains the custom data model of vendors' transactions. This data model is mapped to the data components that are in the AOT data entity.   
 
 3. Click Exchange.
 4. Click Load from XML file.
@@ -56,7 +56,7 @@ The following scenario shows the ER data import capabilities. This includes vend
 ## Review data model settings
 1. Click Designer.
 
-    This model is designed to represent vendors’ transactions from the business standpoint and are separate from the implementation.   
+    This model is designed to represent vendors' transactions from the business standpoint and are separate from the implementation.   
 
 2. In the tree, expand '1099-MISC'.
 3. In the tree, select '1099-MISC\Transactions'.
@@ -73,7 +73,7 @@ The steps in this subtask show you how a new format configuration can be created
 3. Select Yes in the Supports data import field.
 4. Press ESC key to close this page.
 
-    Instead of creating a new format to support data import, load the 1099format.xml file that you previously downloaded. This file contains the defined structure of the file you are importing and the mapping of the structure to the custom data model of vendors’ transactions.   
+    Instead of creating a new format to support data import, load the 1099format.xml file that you previously downloaded. This file contains the defined structure of the file you are importing and the mapping of the structure to the custom data model of vendors' transactions.   
 5. Click Exchange.
 6. Click Load from XML file.
     Click Browse and navigate to the 1099format.xml file that you previously downloaded.  
@@ -87,12 +87,12 @@ The steps in this subtask show you how a new format configuration can be created
 3. Click Expand/collapse.
 4. Click Expand/collapse.
 
-    The designed format represents the expected structure of the external file. This file must be in XML format and have the settlement root element. Each vendor’s transaction is represented by the transaction element that is defined as having zero-to-many multiplicity. This means that the incoming file may contain anywhere from zero to multiple transactions. Nested elements of the ‘transaction’ element represent a single transaction’s attributes. Note that all attributes, except country, are marked as mandatory, meaning that it is required to have them in the importing file.   
+    The designed format represents the expected structure of the external file. This file must be in XML format and have the settlement root element. Each vendor's transaction is represented by the transaction element that is defined as having zero-to-many multiplicity. This means that the incoming file may contain anywhere from zero to multiple transactions. Nested elements of the 'transaction' element represent a single transaction's attributes. Note that all attributes, except country, are marked as mandatory, meaning that it is required to have them in the importing file.   
 
 ## Review the settings of the format mapping to the data model
 1. Click Map format to model.
 
-    The mapping ‘For importing vendors' transactions’ contains the data transfer rules from the incoming XML file to the selected part of the custom data model, which is defined by selecting the1099-MISC definition.  
+    The mapping 'For importing vendors' transactions' contains the data transfer rules from the incoming XML file to the selected part of the custom data model, which is defined by selecting the1099-MISC definition.  
 
 2. Click Designer.
 3. Toggle 'Show details' on.
@@ -107,14 +107,14 @@ The steps in this subtask show you how a new format configuration can be created
 9. In the tree, expand 'format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\country: XML Element 0..1 (country): Record'.
 10. In the tree, select 'format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\*vendor: XML Element 1..1 (vendor): Record'.
 
-    Note that the presentation of mandatory and optional format elements is different in the predefined ‘format’ data source component.  
+    Note that the presentation of mandatory and optional format elements is different in the predefined 'format' data source component.  
 11. In the tree, expand 'Transactions: Record list= format.settlement.'$enumerated''.
 
-    Note that the elements of the format that defines the structure of the imported file are bound to the elements of the custom data model. Based on these bindings, the content of the imported XML file will be stored at run-time in the existing data model. Pay attention to the binding of the country element. For any transaction element in the incoming file that has no such element, the default country code ‘USA’ will be populated in the data model.  
+    Note that the elements of the format that defines the structure of the imported file are bound to the elements of the custom data model. Based on these bindings, the content of the imported XML file will be stored at run-time in the existing data model. Pay attention to the binding of the country element. For any transaction element in the incoming file that has no such element, the default country code 'USA' will be populated in the data model.  
 
 12. Click the Validations tab.
 
-    This format mapping may contain user-defined logic to validate the accuracy of the imported data from a business standpoint. For example, based on the setting, for any transaction in the importing file without a defined country code, a warning message will be generated in the Infolog informing the user about the case and indicating the transaction’s sequence number.  
+    This format mapping may contain user-defined logic to validate the accuracy of the imported data from a business standpoint. For example, based on the setting, for any transaction in the importing file without a defined country code, a warning message will be generated in the Infolog informing the user about the case and indicating the transaction's sequence number.  
 
 13. Close the page.
 
@@ -129,7 +129,7 @@ Execute this format mapping for testing purposes. Use the file 1099entries.xml t
 
     Note the warning message about a missing country code for a transaction in the imported file.  
     
-	Review the output in XML format, which represents the data that has been imported from the selected file and ported to the data model.   
+    Review the output in XML format, which represents the data that has been imported from the selected file and ported to the data model.   
 
 3. Close the page.
 4. Close the page.
@@ -151,14 +151,14 @@ Execute this format mapping for testing purposes. Use the file 1099entries.xml t
 8. Click Edit.
 9. Click Edit formula.
 
-    When at least one validation fails for a single imported transaction, this transaction will be marked as failed by the data source attribute ‘$failed’.  
+    When at least one validation fails for a single imported transaction, this transaction will be marked as failed by the data source attribute '$failed'.  
 
 10. Close the page.
 11. Click Cancel.
 12. In the tree, select 'tax1099trans: Table 'VendSettlementTax1099' records= model.Validated'.
 13. Click Edit destination.
 
-    This ER destination was added to specify how the imported data will update the application tables. In this case, the data table VendSettlementTax1099 has been selected. Because the record action Insert has been selected, the imported transactions will be inserted in the table VendSettlementTax1099. Note that a single model mapping may contain several destinations. This means that the imported data can be used to update multiple application’s tables at once. Tables, views, and data entities can be used as ER destinations.   
+    This ER destination was added to specify how the imported data will update the application tables. In this case, the data table VendSettlementTax1099 has been selected. Because the record action Insert has been selected, the imported transactions will be inserted in the table VendSettlementTax1099. Note that a single model mapping may contain several destinations. This means that the imported data can be used to update multiple application's tables at once. Tables, views, and data entities can be used as ER destinations.   
 
     If the mapping will be called from a point in the application (such as button or menu item) that was specifically designed for this action, the ER destination should be marked as the integration point. In this example this is the ERTableDestination#VendSettlementTax1099 point.  
 
@@ -167,7 +167,7 @@ Execute this format mapping for testing purposes. Use the file 1099entries.xml t
 16. Click Show mapped only.
 17. In the tree, expand 'tax1099trans: Table 'VendSettlementTax1099' records= model.Validated'.
 
-    Note that the data source element that contains the only validated transactions is bound to the created destination. You can filter the imported transactions to skip the ones that are incompatible with the applications’ data.  
+    Note that the data source element that contains the only validated transactions is bound to the created destination. You can filter the imported transactions to skip the ones that are incompatible with the applications' data.  
 
 18. In the tree, select 'failed: Table 'VendSettlementTax1099Entity' records= model.Failed'.
 19. Click the Validations tab.
@@ -186,7 +186,7 @@ Execute this format mapping for testing purposes. Use the file 1099entries.xml t
 
     Note that the dialog box contains no additional questions about the format mapping that must be used to parse the imported file and then port the data to the data model. This is because there is currently only one format that uses this model, which is marked as designed to support data import.  
     
-	Define the voucher ID to differentiate the imported transactions from other transactions that may already have been entered manually or imported.  
+    Define the voucher ID to differentiate the imported transactions from other transactions that may already have been entered manually or imported.  
 
 24. In the Enter voucher id field, type 'IMPORT-001'.
 
@@ -240,7 +240,7 @@ Execute this format mapping for testing purposes. Use the file 1099entries.xml t
 19. Close the page.
 20. Click Edit.
 
-    If you installed the hotfix “KB 4012871 Support of GER model mappings in separated configurations with an ability to specify different kinds of prerequisites for deploying them on different versions of Dynamics 365 Finance” (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 ), execute the next step “Turn the flag ‘Default for model mapping’ on” for the entered format configuration. Skip the next step otherwise.  
+    If you installed the hotfix "KB 4012871 Support of GER model mappings in separated configurations with an ability to specify different kinds of prerequisites for deploying them on different versions of Dynamics 365 Finance" (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 ), execute the next step "Turn the flag 'Default for model mapping' on" for the entered format configuration. Skip the next step otherwise.  
 
 21. Select Yes in the Default for model mapping field.
 22. In the tree, select '1099 Payments model'.

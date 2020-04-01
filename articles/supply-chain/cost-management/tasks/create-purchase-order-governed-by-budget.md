@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create a purchase order governed by budget
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Use this procedure to create a purchase order that is checked for available budget. This recording uses the USMF demo data company.
 

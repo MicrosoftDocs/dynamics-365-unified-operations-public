@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Set up a fund in the public sector
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Fund types must be created before you set up funds. Each fund must have a name and a unique number, and must be assigned a fund type and fund class. This procedure was created using the PSUS demo company data in the public sector partition.
 

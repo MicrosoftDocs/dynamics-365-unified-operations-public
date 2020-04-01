@@ -22,6 +22,8 @@
           href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?toc=/dynamics365/commerce/toc.json
         - name: Apply updates to cloud environments
           href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
+        - name: Apply updates to on-premises deployments
+          href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/commerce/toc.json
         - name: Configure service updates
           href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/commerce/toc.json
         - name: Pause service updates
@@ -84,12 +86,12 @@
           items:
           - name: What's new or changed in Commerce home page
             href: get-started/whats-new-home-page.md
+          - name: Commerce version 10.0.10 (May 2020)
+            href: get-started/whats-new-commerce-10-0-10.md
           - name: Commerce version 10.0.9 (April 2020)
             href: get-started/whats-new-10-0-9.md
           - name: Commerce version 10.0.8 (February 2020)
             href: get-started/whats-new-10-0-8.md
-          - name: Retail version 10.0.7 (January 2020)
-            href: get-started/whats-new-10-0-7.md
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features in Finance and Operations
@@ -336,6 +338,8 @@
             href: pos-operations.md
           - name: Device activation of a customized Modern POS
             href: dev-itpro/retail-POS-activation-changes.md
+          - name: Enable Azure Active Directory authentication for POS sign-in
+            href: aad-pos-logon.md
           - name: Demo data screen layouts in MPOS and Cloud POS
             href: demo-data.md
           - name: Product and customer search in the POS
@@ -368,6 +372,8 @@
               href: dev-itpro/retail-peripheral-simulator.md
             - name: Connect peripherals to the POS
               href: define-maintain-channel-clients-registers-hw-stations.md
+            - name: Health check for POS peripherals and services
+              href: pos-healthcheck.md
           - name: Screen layouts
             items:
             - name: Demo data screen layouts in MPOS/CPOS
@@ -448,6 +454,8 @@
           items:
           - name: Configure and use advanced auto charges 
             href: omni-auto-charges.md
+          - name: Enable and configure auto charges by channel
+            href: auto-charges-by-channel.md
           - name: Prorate header charges to matching sales lines
             href: pro-rate-charges-matching-lines.md 
         - name: Manage continuity programs
@@ -518,8 +526,8 @@
             href: create-variant-group.md
         - name: Create a new product
           items:
-          - name: Create a new product overview
-            href: create-new-product.md
+          - name: Create a new product in Commerce
+            href: create-new-product-commerce.md
           - name: Manage product categories and products 
             href: category-management-product-creation.md
         - name: Product attributes 
@@ -570,6 +578,8 @@
           href: retail-shipping-discount.md
         - name: Set up coupons  
           href: retail-coupons.md
+        - name: Show discounts in POS
+          href: discounts-pos.md
         - name: Price reports 
           href: price-report.md
         - name: Create channel-specific trade agreements 
@@ -582,8 +592,6 @@
           href:	product-recommendations.md	
         - name:	Enable ADLS in a Dynamics 365 Commerce environment	
           href:	enable-ADLS-environment.md	
-        - name:	Add product recommendation lists to e-Commerce pages	
-          href:	add-reco-list-to-page.md
         - name:	Enable product recommendations
           href:	enable-product-recommendations.md
         - name: Personalized recommendations
@@ -592,20 +600,20 @@
             href: personalized-recommendations.md
           - name: Opt out of personalized recommendations 
             href: personalization-gdpr.md
-        - name: Create curated product recommendation lists		
-          href:	create-editorial-recommendation-lists.md
-        - name:	Manage AI-ML-based product recommendation results	
+        - name: POS experiences
+          items:
+          - name: Add product recommendations on POS
+            href: product.md
+          - name: Add recommendations to the transaction screen
+            href: add-recommendations-control-pos-screen.md
+        - name:	Adjust AI-ML-based product recommendation results	
           href: modify-product-recommendation-results.md
-        - name:	Get product recommendations using demo data	
+        - name: Manually create curated product recommendations		
+          href:	create-editorial-recommendation-lists.md
+        - name:	Create recommendations using demo data	
           href:	product-recommendations-demo-data.md
         - name:	Product recommendations FAQ
           href: faq-recommendations.md
-        - name: POS experiences
-          items:
-          - name: Product recommendations on POS
-            href: product.md
-          - name: Add a recommendations control to the transaction screen on POS devices
-            href: add-recommendations-control-pos-screen.md
       - name: Ratings and reviews 
         items:
         - name: Ratings and reviews overview
@@ -656,6 +664,8 @@
         items:
         - name: Create a call center order 
           href: tasks/create-call-center-orders.md
+        - name: Change mode of delivery in POS
+          href: POS-change-delivery-mode.md
       - name: Distributed order management	  
         items:
         - name: DOM overview
@@ -768,8 +778,14 @@
           href: associate-site-online-store.md
         - name: Manage robots.txt files
           href: manage-robots-txt-files.md
+        - name: Upload URL redirects in bulk
+          href: upload-bulk-redirects.md
+        - name: Set up a B2C tenant in Commerce
+          href: set-up-B2C-tenant.md
         - name: Set up custom pages for user sign-ins
           href: custom-pages-user-logins.md
+        - name: Configure multiple B2C tenants in a Commerce environment
+          href: configure-multi-B2C-tenants.md
         - name: Add support for a content delivery network (CDN)
           href: add-cdn-support.md
         - name: Enable location-based store detection
@@ -864,6 +880,20 @@
             href: customize-site-navigation.md
           - name: Create a page URL
             href: create-page-URL.md
+      - name: Manage digital assets
+        items:
+        - name: Digital asset management overview
+          href: dam-overview.md
+        - name: Upload images
+          href: dam-upload-images.md
+        - name: Upload video
+          href: dam-upload-video.md
+        - name: Upload files other than images and videos
+          href: dam-upload-files.md
+        - name: Crop images
+          href: dam-crop-images.md 
+        - name: Customize image focal points
+          href: dam-custom-focal-point.md
       - name: Make your site compliant
         items:
         - name: Compliance overview
@@ -914,6 +944,8 @@
             href: add-checkout-module.md
           - name: Order confirmation module
             href: order-confirmation-module.md 
+          - name: Store selector module
+            href: store-selector.md
         - name: Account management modules
           items:
           - name: Account management pages and modules
@@ -1828,6 +1860,8 @@
             href: e-commerce-extensibility/setup-dev-environment.md
           - name: Configure a development environment (.env) file
             href: e-commerce-extensibility/configure-env-file.md
+          - name: Set up Azure DevOps code sharing and create a build pipeline
+            href: e-commerce-extensibility/set-up-code-sharing-build-pipeline.md
         - name: Platform overview
           items:
           - name: Architectural overview
@@ -1912,6 +1946,10 @@
             href: e-commerce-extensibility/create-observable-data-action.md 
           - name: Share state across modules
             href: e-commerce-extensibility/share-state-across-modules.md
+          - name: Data action overrides
+            href: e-commerce-extensibility/data-action-overrides.md
+          - name: Data action hooks
+            href: e-commerce-extensibility/data-action-hooks.md
         - name: Develop themes
           items:
           - name: Theming overview
@@ -2062,6 +2100,8 @@
           href: dev-itpro/commerce-application-insights.md
         - name: Create async Commerce (CRT) APIs in your business logic
           href: dev-itpro/async-commerce-extension.md
+        - name: Pre-extended columns in the channel database
+          href: dev-itpro/extended-columns.md
       - name: Payment connector extensibility
         items:
         - name: Create a payment integration for a payment terminal
@@ -2077,7 +2117,7 @@
         - name: Payment data use
           href: payment-connector-data-fields.md
         - name: Enable duplicate payment protection for payment connector
-          href: dev-itpro/duplicate-payment-protection.md
+          href: dev-itpro/duplicate-payments-protection.md
         - name: Create payment packaging for Application Explorer in Service Fabric deployments
           href: dev-itpro/payment-connector-package.md
       - name: Third-party e-Commerce extensibility

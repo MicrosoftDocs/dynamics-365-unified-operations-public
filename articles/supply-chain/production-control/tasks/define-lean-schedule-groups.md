@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Define lean schedule groups
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Lean schedule groups are defined to group and distinguish products in kanban scheduling. The grouping can be done as generic association per company or specific to a work cell. Each group has a color code assigned for visual indication in the kanban scheduling listpage. The demo data company used to create this procedure is USMF.
 

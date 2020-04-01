@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create CGU group and cash generating units
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]]
 
 In Japan, an impairment on fixed assets can be based on either individual fixed assets or cash generating units. When measuring impairment based on cash generating units, the first step is to group the fixed assets into cash generating units. 
 

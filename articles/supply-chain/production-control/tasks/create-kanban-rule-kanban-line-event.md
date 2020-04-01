@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create a kanban rule using a kanban line event
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure creates a kanban rule by using the kanban line event setting to trigger pull from a process activity. The kanban rule is triggered by a kanban process activity, with a quantity equal to or greater than 25 each. The demo data company used to create this task is USMF. This task is intended for the process engineer or the value stream manager, as they prepare production of a new or modified product in a lean environment.
 

@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Move scheduled kanban jobs
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure focuses on moving planned process kanban jobs to a different period. The demo data company used to create this procedure is USMF. This procedure is intended for the shop floor supervisor or production planner working with kanbans.
 

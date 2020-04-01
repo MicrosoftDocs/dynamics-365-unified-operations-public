@@ -28,11 +28,11 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # ER Configure format to do counting and summing (Part 4 - Run format)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to do counting and summing based on data of the already generated text output. These steps can be performed in the DEMF company.
 
-To complete these steps, you must first complete the steps in the “ER Configure format to do counting and summing (Part 3: Use computations to make the output)” procedure.
+To complete these steps, you must first complete the steps in the "ER Configure format to do counting and summing (Part 3: Use computations to make the output)" procedure.
 
 This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.
 
@@ -52,8 +52,8 @@ This procedure is for a feature that was added in Dynamics 365 for Operations ve
 12. Click Save.
 13. Go to Tax > Setup > Foreign trade > Foreign trade parameters.
 14. Expand the Electronic reporting section.
-15. Select the “Intrastat (DE) with counting & summing” configuration.
-16. Select the “Intrastat (DE) with counting & summing” configuration.
+15. Select the "Intrastat (DE) with counting & summing" configuration.
+16. Select the "Intrastat (DE) with counting & summing" configuration.
 17. Click Save.
 18. Close the page.
 19. Go to Tax > Declarations > Foreign trade > Intrastat.

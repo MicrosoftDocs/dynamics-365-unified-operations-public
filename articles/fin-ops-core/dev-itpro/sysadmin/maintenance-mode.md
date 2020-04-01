@@ -3,7 +3,7 @@
 
 title: Maintenance mode
 description: This topic provides information about maintenance mode, which is a system-wide setting that lets system administrators safely make system changes that might affect system functionality.
-author: manalidongre
+author: laneswenka
 manager: AnnBe
 ms.date: 05/10/2019
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 70292
 ms.assetid: c11a35e8-40bb-4005-adf3-cfd998a418fc
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: manado
+ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -33,8 +33,6 @@ ms.dyn365.ops.version: AX 7.0.0
 # Maintenance mode
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
-[!include [banner](../includes/limited-availability.md)]
 
 This topic provides information about maintenance mode in Finance and Operations. When maintenance mode is turned on, it provides a safe way for system administrators to make system changes that might affect system functionality. For example, configuration keys can be enabled or disabled. While maintenance mode is on, only system administrators and users who have the **Maintenance mode user** role can sign in to the system. By default, maintenance mode is turned off. When maintenance mode is off, you can't edit the **License configuration** page.
 

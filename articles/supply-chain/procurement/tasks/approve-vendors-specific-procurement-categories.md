@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Approve vendors for specific procurement categories
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic explains how to approve vendors for specific procurement categories in Dynamics 365 Supply Chain Management. When a purchase requisition is created, there may be a requirement to select an approved or preferred vendor, depending on how the purchasing policies are set up. This procedure shows you how to specify that a vendor is approved or preferred for a specific procurement category. This task would usually be carried out by a procurement professional. You can use this procedure in demo data company USMF.
 
@@ -38,11 +38,11 @@ This topic explains how to approve vendors for specific procurement categories i
 4. Select **Categories**.
 5. Select **Add category**.
 6. In the **Category** field, select **OFFICE AND DESK ACCESSORIES (OFFICE AND DESK ACCESSORIES)**.
-7. In the **Vendor category status** field, select **Preferred**. It’s possible to specify more than one preferred vendor for a category.  
+7. In the **Vendor category status** field, select **Preferred**. It's possible to specify more than one preferred vendor for a category.  
 8. Select **Save**.
 9. In the navigation pane, go to **Modules > Procurement and sourcing > Procurement categories**.
 10. In the tree, select **CORP PROCUREMENT CATEGORIES\OFFICE AND DESK ACCESSORIES**.
-11. Expand the **Vendors** section. Check if the vendor that you selected appears as a preferred vendor for the Office and desk accessories category. If you’re running this procedure as a task guide, you may have to select the **Unlock** button to be able to scroll down to the list of vendors.  It’s also possible to add preferred and approved vendors on this page.  
+11. Expand the **Vendors** section. Check if the vendor that you selected appears as a preferred vendor for the Office and desk accessories category. If you're running this procedure as a task guide, you may have to select the **Unlock** button to be able to scroll down to the list of vendors.  It's also possible to add preferred and approved vendors on this page.  
 12. In the tree, expand **OFFICE AND DESK ACCESSORIES** and select **Scissors**.
 13. Select **No** in the **Inherit vendors from parent category:** field.
 14. Select **Yes** in the **Inherit vendors from parent category:** field.

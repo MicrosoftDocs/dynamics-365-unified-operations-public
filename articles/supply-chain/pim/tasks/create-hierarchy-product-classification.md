@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create a hierarchy of product classification
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure shows how to create a new category hierarchy and assign a commodity code hierarchy type. The demo data company used to create this procedure is USMF. This procedure is intended for the category manager.
 

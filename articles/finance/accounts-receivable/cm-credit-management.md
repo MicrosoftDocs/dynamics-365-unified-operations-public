@@ -33,7 +33,6 @@ ms.dyn365.ops.version:
 # Customer credit management overview
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Customer credit management allows you to manage credit limits and control the flow of sales orders through the posting process based on credit rules that you create. 
 
