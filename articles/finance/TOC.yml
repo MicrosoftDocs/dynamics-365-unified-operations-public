@@ -2266,6 +2266,8 @@
         items:
         - name: Netherlands overview
           href: localizations/netherlands.md
+        - name: VAT declaration
+          href: localizations/emea-nl-VAT-declaration.md
         - name: Electronic tax declarations (EVAT)
           href: localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
         - name: Semansys XBRL integration
