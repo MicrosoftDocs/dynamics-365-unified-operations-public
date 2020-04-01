@@ -3,12 +3,12 @@
 
 title: Commerce architecture
 description: This topic provides an overview of all components in the Dynamics 365 Commerce eco-system including integration points to the suite of Dynamics 365 products.
-author: sericks007
+author: samjarawan
 manager: AnnBe
 ms.date: 03/26/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -24,7 +24,7 @@ ms.custom: 221954
 ms.assetid: 8fe1b080-00d4-41ae-b047-10da160877ab
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: yabinl
+ms.author: samjar
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
