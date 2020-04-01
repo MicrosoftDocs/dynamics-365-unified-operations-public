@@ -30,29 +30,29 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="LISTJOIN">LISTJOIN Function</a>
+# <a name="LISTJOIN">LISTJOIN ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `LISTJOIN` function returns a *Record list* value that represents a new joined list of records that are created from the specified arguments.
+The `LISTJOIN` function returns a *Record list* value that represents a new joined list of records that is created from the specified arguments.
 
 ## Syntax
 
 ```
-LIST (list 1 [, list 2, … , list N])
+LIST (list 1 [, list 2, …, list N])
 ```
 
 ## Arguments
 
-`list 1` : *Record list*
+`list 1`: *Record list*
 
 A reference to a data source of the *Record list* data type. This argument is mandatory.
 
-`list N` : *Record list*
+`list N`: *Record list*
 
 A reference to a data source of the *Record list* data type. These additional arguments are optional.
 
-## Returns
+## Return values
 
 *Record list*
 
@@ -60,19 +60,19 @@ The resulting list of records.
 
 ## Usage notes
 
-The structure of the list that is created contains only the fields that are presented in the structure of every record list that is mentioned in the arguments.
+The structure of the list that is created contains only the fields that are present in the structure of every record list that is referenced in the arguments.
 
 ## Example
 
-You enter the data source **Record 1** of the `Container`. This data source contains the following nested fields of the `Calculated field` type.
+You enter data source **Record 1** of the `Container` type. This data source contains the following nested fields of the `Calculated field` type:
 
--	**Code**: This field contains an expression that returns a value of the the `String` type.
--	**Amount**: This field contains an expression that returns a value of the `Real` type.
+- **Code**: This field contains an expression that returns a value of the `String` type.
+- **Amount**: This field contains an expression that returns a value of the `Real` type.
 
 You then enter data source **Record 2** of the `Container` type. This data source contains the following nested fields of the `Calculated field` type:
 
--	**Amount**: This field contains an expression that returns a value of the `Real` type.
--	**IsValid**: This field contains an expression that returns a value of the `Boolean` type.
+- **Amount**: This field contains an expression that returns a value of the `Real` type.
+- **IsValid**: This field contains an expression that returns a value of the `Boolean` type.
 
 In this case, the expression `LISTJOIN(LIST('Record 1'), LIST('Record 2'))` returns a new list that contains two records. The structure of this list consists of a single **Amount** field of the `Real` type, because this field is the only field that is presented in every argument of the called function.
 
