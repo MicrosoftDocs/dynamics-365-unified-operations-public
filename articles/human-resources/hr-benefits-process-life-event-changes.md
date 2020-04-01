@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Human Resources
 
 # Process life event changes
 
-[!include [banner](includes/preview-feature.md)]
-
 Process life event changes in Microsoft Dynamics 365 Human Resources for two life event changes:
 
 - Birthday changes

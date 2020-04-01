@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Human Resources
 
 # Configure personal contact eligibility options
 
-[!include [banner](includes/preview-feature.md)]
-
 This article shows you how to configure types of personal contacts to use in benefits in Microsoft Dynamics 365 Human Resources. Personal contacts can be beneficiaries or dependents. 
 
 1. In the **Benefits management** workspace, under **Setup**, select **Personal contact eligibility options**.

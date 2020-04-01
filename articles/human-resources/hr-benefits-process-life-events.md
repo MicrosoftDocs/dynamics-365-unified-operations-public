@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Human Resources
 
 # Process life events
 
-[!include [banner](includes/preview-feature.md)]
-
 During the employee lifecycle in Microsoft Dynamics 365 Human Resources, each employee may encounter various life event changes. For example, marriage, change in employment, or dependent/beneficiary change. To use life events, you must enable life events in the benefits parameters form, set up life event types, and set up life event options for plan types.
 
 Before you can process life events, you must have already run open enrollment at least once during a hiring time frame. In the United States, open enrollment is typically once per year. Outside the United States, open enrollment may be run at the time of hire. A worker does not need to select a benefit plan in order for life events to be processed, but they need to have been included in open enrollment processing. 
