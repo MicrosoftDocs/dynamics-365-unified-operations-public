@@ -1,9 +1,9 @@
 ---
-title: Business User's Learning Catalog
+title: Business Users Learning Catalog
 description: Find all the training options for Finance and Operations.
 author: loreleishannonmsft
 ms.topic: article
-ms.date: 02/19/2020
+ms.date: 03/31/2020
 ms.author: v-lshann
 ---
 
@@ -60,7 +60,6 @@ Content | Description  | Format   | Length    |
 ## Exam
 | Content  | Description   | Format   | Length    | 
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------|
-
 | [Configure and use the General ledger in Dynamics 365 Finance](https://docs.microsoft.com/learn/paths/configure-use-general-ledger-dynamics-365-finance-ops/) | Dynamics 365 Finance empowers business users to control finances and manage funds with accurate information at any time for financial planning and forecasting, and stay up-to-date with analytics. Since finance is the heart of the business, and the General ledger module is the heart of financial management, this learning path shows you how to set up functionality in the General ledger module. | Free, self-paced online learning path | 8.5 hours |
 | [Configure and use cash and bank management, and sales tax in Dynamics 365 Finance](https://docs.microsoft.com/learn/paths/configure-use-cash-bank-management-tax-d365-finance-ops/) | You can use the Cash and bank management module in Dynamics 365 Finance to maintain an organization’s bank accounts and the financial instruments that are associated with those bank accounts. All businesses must collect and pay taxes to various tax authorities. In this learning path you will learn how to configure and use these areas of Dynamics 365 Finance.  | Free, self-paced online learning path | 5.5 hours |
 | [Work with accounts payable in Dynamics 365 Finance](https://docs.microsoft.com/learn/paths/work-with-accounts-payable-in-dynamics-365-for-finance-and-ops/)  | Accounts payable is a liability due to a creditor when you order goods or services without paying in cash up front, which means that you buy goods on credit. Learn how to configure accounts payable in Dynamics 365 Finance, record vendor invoices, and distribute expenses, tax and charges across accounts.                                                                        | Free, self-paced online learning path | 4.5 hours |
