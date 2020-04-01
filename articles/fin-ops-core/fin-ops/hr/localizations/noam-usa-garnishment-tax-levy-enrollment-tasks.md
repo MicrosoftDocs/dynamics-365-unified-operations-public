@@ -2,10 +2,10 @@
 # required metadata
 
 title: Enroll workers in garnishments or tax levies
-description: This topic describes the process for enrolling workers in garnishments, tax levies, and any associated administrative fees. Garnishments and tax levies are managed by using the benefit framework. This framework helps guarantee that the payroll impact of garnishments and tax levies is handled correctly.
+description: This topic describes the process for enrolling workers in garnishments, tax levies, and any associated administrative fees. Garnishments and tax levies are managed by using the benefit framework. This framework helps ensure that the payroll impact of garnishments and tax levies is handled correctly.
 author: andreabichsel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes the process for enrolling workers in garnishments, tax levies, and any associated administrative fees. Garnishments and tax levies are managed by using the benefit framework. This framework helps guarantee that the payroll impact of garnishments and tax levies is handled correctly.
+This topic describes the process for enrolling workers in garnishments, tax levies, and any associated administrative fees. Garnishments and tax levies are managed by using the benefit framework. This framework helps ensure that the payroll impact of garnishments and tax levies is handled correctly.
 
 If you have questions about garnishments and tax levies that aren't answered in this topic, or in the [Set up garnishments and tax levies](noam-usa-garnishment-tax-levy-set-up-tasks.md) or [Garnishments, tax levies, and administrative fees FAQ](noam-usa-garnishment-tax-levy-administrative-fees.md) topics, contact your legal advisors. To learn more about the concepts that are discussed in this topic, see [Garnishments, tax levies, and administrative fees FAQ](noam-usa-garnishment-tax-levy-administrative-fees.md).
 
@@ -133,7 +133,7 @@ If the worker is enrolled in more than one garnishment or tax levy, you must com
 | Type               | Select the garnishment or tax levy type. Don't select the **Combined garnishments** type. If a worker is enrolled in garnishments and tax levies of more than one type, set up rules for the **Combined garnishments** type on the **Garnishments and tax levy rules** page. |
 | Case number        | Enter the case number or reference number that is assigned by the court. |
 | State              | Specify the state that the tax levy is from. This field is available only for state and local tax levies. It isn't available for other garnishment types. |
-| Administrative fee | When the garnishment type is **Support order**, if the deduction for the garnishment plus the deduction for the administrative fee exceeds the worker's disposable income limit, the deduction for the garnishment is reduced by the amount that you enter. This field helps guarantee that the total deduction doesn't exceed the worker's disposable income limit for support orders. For all other garnishment and tax levy types, this field is for information only and doesn't cause the administrative fee to be deducted. To deduct the administrative fee, you must create a benefit for the administrative fee and assign that benefit to the worker.<blockquote>[!IMPORTANT] The sum of all administrative fees that are charged to the worker should equal the sum of the deductions for all administrative fee benefits that the worker is enrolled in. If the amounts differ, the amount that is deducted from the worker's pay for administrative fees might be incorrect.</blockquote> |
+| Administrative fee | When the garnishment type is **Support order**, if the deduction for the garnishment plus the deduction for the administrative fee exceeds the worker's disposable income limit, the deduction for the garnishment is reduced by the amount that you enter. This field helps ensure that the total deduction doesn't exceed the worker's disposable income limit for support orders. For all other garnishment and tax levy types, this field is for information only and doesn't cause the administrative fee to be deducted. To deduct the administrative fee, you must create a benefit for the administrative fee and assign that benefit to the worker.<blockquote>[!IMPORTANT] The sum of all administrative fees that are charged to the worker should equal the sum of the deductions for all administrative fee benefits that the worker is enrolled in. If the amounts differ, the amount that is deducted from the worker's pay for administrative fees might be incorrect.</blockquote> |
 
 Set up each garnishment type only one time for each worker. When a worker has more than one garnishment of the same type, all the garnishments that have the same type use the rules that are set up for that type. State and local tax levies are an exception. In this case, you set up one state tax levy type and one local tax levy type for each state. On the **Garnishment and tax levy rules** page, enter the following information for each garnishment type that a worker is enrolled in.
 
@@ -148,7 +148,7 @@ Set up each garnishment type only one time for each worker. When a worker has mo
 <tr>
 <td>Type</td>
 <td>Specify the garnishment type.
-<blockquote>[!IMPORTANT] When a worker is enrolled in more than one type of garnishment, you must add the <strong>Combined garnishments</strong> type in addition to the types that the worker is enrolled in. The <strong>Combined garnishments</strong> type helps guarantee that the garnishment amounts are adjusted correctly, based on the selected disposable income definition and any rules that apply across garnishment types. The disposable income definition and maximum withholding percentage are the only fields that are used by the <strong>Combined garnishments</strong> type. All other fields are for your information only.</blockquote>
+<blockquote>[!IMPORTANT] When a worker is enrolled in more than one type of garnishment, you must add the <strong>Combined garnishments</strong> type in addition to the types that the worker is enrolled in. The <strong>Combined garnishments</strong> type helps ensure that the garnishment amounts are adjusted correctly, based on the selected disposable income definition and any rules that apply across garnishment types. The disposable income definition and maximum withholding percentage are the only fields that are used by the <strong>Combined garnishments</strong> type. All other fields are for your information only.</blockquote>
 </td>
 </tr>
 <tr>
