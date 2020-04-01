@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Preview features in Platform update 34 for Finance and Operations apps (May 2020)
-description: This topic lists the features that are in preview in Platform update 34 for Finance and Operations apps. 
+title: Platform updates for version 10.0.10 of Finance and Operations apps (May 2020)
+description: This topic lists the features are included in the platform updates for version 10.0.10 of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 03/09/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -29,18 +29,16 @@ ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 34
 
 ---
-# Preview features in Platform update 34 for Finance and Operations apps (May 2020)
+# Platform updates for version 10.0.10 of Finance and Operations apps (May 2020)
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic lists the preview features that are new or changed for Platform update 34 for Finance and Operations apps. This version has a build number of 7.0.5600 and is available on the following schedule:
+This topic lists the platform updates for version 10.0.10 of Finance and Operations apps. (These updates were formally referred to as *Platform update 34*.) This version has a build number of 7.0.5600 and is available on the following schedule:
 
 - **Preview release:** March 2020
 - **General availability (self-update):** April 2020
 - **Auto-update:** May 2020
-
-For more information about Platform update 34, see [Additional resources](whats-new-platform-update-33.md#additional-resources).
 
 ## Features included in this release
 
@@ -51,9 +49,9 @@ For more information about Platform update 34, see [Additional resources](whats-
 
 ## Additional resources
 
-### Platform update 34 bug fixes
+### Bug fixes
 
-For information about the bug fixes that are included in each update, sign in to LCS, and view [this KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=424137&dbType=3&qc=bf63d49dcc96e51eb42ac1dd66c6c5e5d7548f1e176f729e324ea3353b9860cb).
+For information about the bug fixes that are included in this update, sign in to LCS, and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=424137&dbType=3&qc=bf63d49dcc96e51eb42ac1dd66c6c5e5d7548f1e176f729e324ea3353b9860cb).
 
 ### Dynamics 365: 2020 release wave 1 plan
 
