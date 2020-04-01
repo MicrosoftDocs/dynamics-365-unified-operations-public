@@ -9,8 +9,8 @@ The inquiry includes grants with projection dates in the selected date range. Th
 You must setup the CFDA clusters that can be associated with CFDA numbers on the SEFA inquiry.
 
 1. Go to **Project management and accounting>Setup>Catalog of Federal Domestic Assistance>Catalog of Federal Domestic Assistance clusters**.
-2. Select **New **to create a new **CFDA cluster**.
-3. Press **tab** to add additional clusters.
+2. Select **New** to create a new **CFDA cluster**.
+3. Press **Tab** to add additional clusters.
 4. Select **Save** to save your changes.
 
 ## Setting up Catalog of Federal Domestic Assistance (CFDA) Numbers
@@ -25,7 +25,7 @@ You must setup CFDA numbers that can be added to grants and be included in the S
 6. Press **Tab**.
 7. Optional: Add the appropriate **Catalog of Federal Domestic Assistance cluster**. 
 8. Press **Tab** to add additional **Catalog of Federal Domestic Assistance numbers**.
-9. Select Save to save your changes.
+9. Select **Save** to save your changes.
 	
 	
 
@@ -48,19 +48,19 @@ Note: CFDA numbers will be initially populated when you enable the feature by us
 
 
 ## Run the Schedule of Expenditures of Federal Awards the data on this inquiry
-3. Go to **Project management and accounting>Inquiries and reports>Schedule of Expenditures of Federal Awards**
-4. In the parameters section, follow these steps:
-• In the **Date interval** field, select the code for the date interval. Alternatively, in the **From date** and **To date** fields, define the date interval.
-• Optional: Set the Include only billed revenues option to Yes to include only billed transactions as revenue on the inquiry.
+1. Go to **Project management and accounting>Inquiries and reports>Schedule of Expenditures of Federal Awards**
+2. In the parameters section, follow these steps:
+- In the **Date interval** field, select the code for the date interval. Alternatively, in the **From date** and **To date** fields, define the date interval.
+- Optional: Set the Include only billed revenues option to Yes to include only billed transactions as revenue on the inquiry.
 
 ## The inquiry includes the following columns:
 
-Grant cluster
-Grantor agency
-Pass-through agency
-Grant title
-Grant ID
-Grant application ID
-CFDA
-Receipts
-Expenditures
+- Grant cluster
+- Grantor agency
+- Pass-through agency
+- Grant title
+- Grant ID
+- Grant application ID
+- CFDA
+- Receipts
+- Expenditures
