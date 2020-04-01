@@ -41,6 +41,8 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 - **General availability (self-update):** April 2020
 - **Auto-update:** May 2020
 
+## Features included in this release
+
 The following features are included in this release. The feature titles link to additional information on the [Release plans site](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/).
 
 - [Azure AD support for POS sign-in](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/aad-support-pos-logon)
