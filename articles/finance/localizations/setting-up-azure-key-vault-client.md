@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up the Azure Key Vault client
-description: This topic provides information about .
+description: This topic provides information about storing advanced certificates and defining the certificate storage type.
 author: v-lurodi
 manager: AnnBe
 ms.date: 04/01/2020
