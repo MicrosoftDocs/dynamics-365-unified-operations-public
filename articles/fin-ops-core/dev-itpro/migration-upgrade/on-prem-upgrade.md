@@ -81,7 +81,7 @@ An overview of each path is given below:
 
 5.  Open a Command Prompt as Administrator and change the directory to the unzipped folder in step 4.
 
-6.  Restore the backup that you created into the one box VM. For more information, see [Restore a Database Backup Using SSMS](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017).
+6.  Restore the backup that you created into the Onebox VM. For more information, see [Restore a Database Backup Using SSMS](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017).
 
 7.  Optional: If the name of your restored database is not AXDB, using PowerShell with administrator privileges, execute:
     
@@ -176,7 +176,7 @@ An overview of each path is given below:
     > [!NOTE]
     > - Only SQL Server authentication is officially supported for this upgrade. For more information, see [Create a Database User](https://docs.microsoft.com/sql/relational-databases/security/authentication-access/create-a-database-user?view=sql-server-2017).
     >
-    > - You will need to add the Certificate Authority certificate that signed your SQL Server certificate to the one box trusted certificate
+    > - You will need to add the Certificate Authority certificate that signed your SQL Server certificate to the Onebox trusted certificate
     authorities. For more information, see [Installing the trusted root certificate](https://docs.microsoft.com/skype-sdk/sdn/articles/installing-the-trusted-root-certificate).
     >
     > - Make sure the database user you use has the sysadmin server role assigned or at least All Privileges on the database you want to upgrade and has permissions to access tempDB. Step 6 of the upgrade process will fail if this is not true.
