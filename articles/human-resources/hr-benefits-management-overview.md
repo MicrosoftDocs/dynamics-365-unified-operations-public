@@ -2,10 +2,10 @@
 # required metadata
 
 title: Benefits management overview
-description: Overview of the Benefits management preview feature in Dynamics 365 Human Resources. Offer your employees extended benefits options with an easy-to-use online experience.
+description: Overview of Benefits management feature in Dynamics 365 Human Resources. Offer your employees extended benefits options with an easy-to-use online experience.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Human Resources
 
 # Benefits management overview
 
-To remain competitive, you must offer a rich set of benefits to attract and retain your best employees. In addition to standard benefits like medical and dental coverage, you might also want to offer expanded services like adoption assistance, recreation programs, and clothing allowances. The Benefits management preview feature in Microsoft Dynamics 365 Human Resources provides you with a flexible solution that supports a wide variety of benefit options. Human Resources also includes an easy-to-use employee experience that showcases your offerings.
+To remain competitive, you must offer a rich set of benefits to attract and retain your best employees. In addition to standard benefits like medical and dental coverage, you might also want to offer expanded services like adoption assistance, recreation programs, and clothing allowances. Benefits management in Microsoft Dynamics 365 Human Resources provides you with a flexible solution that supports a wide variety of benefit options. Human Resources also includes an easy-to-use employee experience that showcases your offerings.
 
 - Enhanced benefits plans let you create and manage unique benefit plans and support complex benefit rate tables and nested tiers. You can easily create benefit programs, bundles, and auto-enrollment rules for an easier employee experience.
 
@@ -42,30 +42,30 @@ To remain competitive, you must offer a rich set of benefits to attract and reta
 
 - Online benefits enrollment provides an easy experience for your employees.
 
-- Qualified life event processing integrates with Employee self service, and also supports future life events.
+- Qualified life event processing supports future life events.
 
 If you would like to access the demo data, you'll need to redeploy your sandbox environment.
 
-You can provide direct feedback or report issues to:  D365BenefitsPreview@microsoft.com.
-
 ## Benefits management known issues
 
-### Eligibility processing
+### Flex credit programs
 
-When running eligibility for benefits that use a 1-5X Salary, % of Salary, and Flat Amount coverage amount, you must set the **Benefit details** date to the **Employee start date** in **Employment history**. You must also include **Hours worked**, **Payment frequency**, and **Annual benefits salary amount**. If the worker has fixed compensation, enter **Hours worked** and **Payment frequency**. The annual salary amount will calculate. If the employee is salaried, you don't need to enter **Hours worked**. We recommend that when creating new workers, enter fixed compensation first. To update the benefit details record, navigate to **Worker > Worker history > Employment details**. Adjust the date to the worker's start date.
-
-### Employee self-service
-
-Employee amount doesn't calculate when updating the coverage amount for life insurance. For example, when an employee is offered a life insurance plan, they can select up to $50,000 in coverage at a cost of $.36 per $1,000 of coverage.  When the employee updates the coverage amount, the employee’s associated cost remains at zero.
-
-For a benefit plan that only allows a single selection of that plan type, the user receives an error if they attempt to waive a plan after selecting a plan. For example, a user selects a medical plan and places it in their cart. The user then selects **Waive** for another medical plan. The user will receive an error.
+The total credit value defined for a flex credit program doesn't display in the **Worker benefit plans** form. Also, if you set a flex credit program to have a proration rule of **None**, you get an error in the **Worker benefit plan** form when selecting and confirming plans.
 
 ## Enable Benefits management
 
-Benefits management is a preview feature, and is only available in **Sandbox** environments. These articles describe how to turn on preview features in Human Resources. They also tell which existing features in Human Resources that Benefits management replaces or are disabled once you turn on Benefits management.
+This article describes how to turn on features in Human Resources. It also tells which existing features in Human Resources that Benefits management replaces or are disabled once you turn on Benefits management.
+
+> [!IMPORTANT]
+> After you enable Benefits management in a **Production** environment, you can't disable it. We recommend enabling and testing Benefits management in a **Sandbox** environment before enabling it in a **Production** environment. There are significant differences between the legacy Benefit functionality and new Benefits management functionality that require additional setup and should be tested prior to being placed into production.
 
 - [Manage features](hr-admin-manage-features.md)
-- [Preview feature: Benefits management](hr-admin-manage-features.md?preview-feature-benefits-management)
+
+## Configure employee information
+
+Before you can enroll employees in benefits, you must provide required information. You must enroll an employee in a **Fixed compensation plan** on their start date, and you must select a **Benefit pay frequency** in **Employment details** on the **Worker** form.
+
+When you create a benefit plan that uses rates that are based on gender or age, you must enter a birth date and gender for the employee to calculate the benefit cost.
 
 ## Configure Benefits management
 
@@ -94,9 +94,7 @@ Before you can create benefit plans for your employees, you need to configure op
 These articles show how to create benefit plans, including bundles and flex credit programs.
 
 - [Set up benefit plans](hr-benefits-plans-setup.md)
-- [Create worker benefit plans](hr-benefits-plans-worker.md)
 - [Set up flex credit programs](hr-benefits-plans-flex-credit-programs.md)
-- [Configure future life events](hr-benefits-plans-future-life-events.md)
 
 ## Process benefit plans
 

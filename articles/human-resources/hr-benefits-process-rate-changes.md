@@ -5,7 +5,7 @@ title: Process rate changes
 description: Process benefit rate changes in Microsoft Dynamics 365 Human Resources when a new or existing benefit plan has a change in eligibility rule settings.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Human Resources
 
 # Process rate changes
 
-Process benefit rate changes in Microsoft Dynamics 365 Human Resources when a new or existing benefit plan has a change in eligibility rule settings. If a new eligibility rule is created and assigned to the plan, this prompts the system to re-run worker eligibility to check if workers may now be eligible for the plan based on new eligibility options. 
+Process benefit rate changes in Microsoft Dynamics 365 Human Resources when a new or existing benefit plan has a change in eligibility rule settings. If a new eligibility rule is created and assigned to the plan, this prompts the system to rerun worker eligibility to check if workers may now be eligible for the plan based on new eligibility options. 
 
 1. In the **Benefits management** workspace, under **Processing**, select **Rate change update processing**.
 
@@ -40,7 +40,7 @@ Process benefit rate changes in Microsoft Dynamics 365 Human Resources when a ne
 
    | Field | Description |
    | --- | --- |
-   | Enrollment period | The enrollment period to process rate changes for. |
+   | **Enrollment period** | The enrollment period to process rate changes for. |
 
 3. If you want to run the process in the background, select **Run in the background** and do the following tasks:
 
