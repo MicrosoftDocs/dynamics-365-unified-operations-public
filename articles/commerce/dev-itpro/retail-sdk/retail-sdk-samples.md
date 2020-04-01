@@ -2,10 +2,10 @@
 # required metadata
 
 title: Retail software development kit (SDK) samples
-description: This topic describes three new samples that were released together with the Retail SDK in December 2016.
+description: This topic describes the samples that are included in the Retail SDK.
 author: mugunthanm
 manager: AnnBe
-ms.date: 10/22/2019
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 2
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes three new samples that were released together with the Retail SDK in December 2016.
+This topic describes the samples that are included in the Retail SDK.
 
 ## Override message handler sample
 
