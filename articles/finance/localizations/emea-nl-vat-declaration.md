@@ -122,8 +122,8 @@ checks the message, and then confirms receipt of the message.
 
 ![](media/2_Key_Vault_parameters.png)
 
-For more information about how to set up Key Vault parameters, see Setting up
-Azure Key Vault Client.
+For more information about how to set up Key Vault parameters, see [Setting up
+Azure Key Vault Client](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/KeyVault/articles/finance/localizations/setting-up-azure-key-vault-client.md).
 
 ### Set up electronic tax declaration parameters
 
