@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Set up flex credit programs
 
+[!include [banner](includes/preview-feature.md)]
+
 You can use flex credit programs in Microsoft Dynamics 365 Human Resources to enroll employees in benefits according to a predetermined number of flex credits. Employees can choose how to allocate their flex credits. For example, if an employee is covered under their spouse’s health insurance plan, they may want to use the credits they would have otherwise used on health coverage toward other benefits. 
 
 1. In the **Benefits management** workspace, under **Plans**, select **Flex credit programs**.
