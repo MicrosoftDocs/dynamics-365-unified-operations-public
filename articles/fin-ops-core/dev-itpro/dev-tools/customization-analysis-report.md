@@ -408,7 +408,7 @@ Display TransDate myDateMethod()
 </tbody>
 </table>
 
-### BPCheckAltenateKeyAbsent
+### BPCheckAlternateKeyAbsent
 
 | Description         | This rule verifies that tables that have a unique index have at least one alternate key. |
 |---------------------|------------------------------------------------------------------------------------------|
