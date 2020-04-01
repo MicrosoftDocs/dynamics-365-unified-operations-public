@@ -403,7 +403,7 @@
         href: hr-compensation-process.md
     - name: Manage benefits
       items:
-      - name: "Preview feature: Benefits management"
+      - name: Benefits management
         items:
         - name: Benefits management overview
           href: hr-benefits-management-overview.md
