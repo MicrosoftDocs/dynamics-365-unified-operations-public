@@ -67,7 +67,7 @@ The e-commerce storefront is the end customer facing web site rendering system. 
 Site builder is the web-based authoring interface for the content management and storefront web site rendering systems. It provides a WYSIWYG editor for site managers and content authors who will perform the day-to-day workflow tasks of managing and producing the marketing content for the e-Commerce experience. Within site builder, a marketer can provide richer marketing detail for specific products enhancing the shopping experience for consumers. In addition, site builder includes integrated accessibility reporting, URL management, site map generation, and image focal point management, among other features. For more information, see [Online store overview](https://docs.microsoft.com/en-us/dynamics365/commerce/online-store-overview).
 
 #### External services and apps
-The headless commerce engine exposed via the Commerce Scale Unit allows partners and customers to leverage all of the same channel side capabilities and business logic that is used by the out-of-box e-Commerce and POS components. This allows seamless omni-channel capabilities across out-of-box channel components and partner/customer-developed services and applications by tapping into the same data and business process capabilities. This also provides access to all out-of-box and ISV-developed surround services that are available through the Commerce Scale Unit. 
+The headless commerce engine exposed via the commerce scale unit allows partners and customers to leverage all of the same channel side capabilities and business logic that is used by the out-of-box e-Commerce and POS components. This allows seamless omni-channel capabilities across out-of-box channel components and partner/customer-developed services and applications by tapping into the same data and business process capabilities. This also provides access to all out-of-box and ISV-developed surround services that are available through the commerce scale unit. 
 
 ### Back Office
 #### Dynamics 365 Commerce HQ
@@ -82,14 +82,14 @@ The Dynamics 365 Commerce application, commonly referred to as the Commerce HQ c
 #### Dynamics 365 Human Resources
 [Dynamics 365 Human Resources](https://dynamics.microsoft.com/en-us/human-resources/overview/) allows businesses to have a complete view of their employee resources and manage them in a unified way.  It provides integrated experiences going from the hiring process, through workforce planning and employee time management. To learn more, review the [Dynamics 365 Human Resources help resources](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-welcome).
 
-### Commerce Scale Unit
+### Commerce scale unit
 Retailers are distributed organizations where their business topography can be represented as a hub (HQ) and spokes (channel) model. Dynamics 365 Commerce supports this model by having head office capabilities (hub) as well as many distributed channel components (spokes) that can be deployed in-store (self-managed) or within nearby Azure datacenters (Microsoft managed). These spokes are called scale units as they represent physical isolation (a function of scale) and an atomic unit of update. 
 To facilitate cloud and edge scenarios, a commerce scale unit comes as both a SaaS component managed by Microsoft (cloud scale unit) but is also available as a self-managed component that can be deployed locally (store scale unit). A single environment can have a mix and match of cloud and store scale units allowing organizations to tune their investments of operational overhead with network redundancy for poor connectivity on a per store basis. To learn more, review [selecting the right in-store topology with Dynamics 365 Commerce](https://docs.microsoft.com/en-us/dynamics365/retail/dev-itpro/retail-in-store-topology).
 
-#### Cloud Scale Units (Microsoft-managed)
+#### Cloud scale units (Microsoft-managed)
 Each environment can have multiple scale units associated with it. Each scale unit can be independently serviced (updated) and can serve one or more channels across one or more legal entities. Each scale unit can be deployed to any of the supported Azure regions and multiple scale units can be deployed to the same region. The independent nature of each scale unit allows for phased roll-out of updates across a collection of channels.
 
-#### Store Scale Units (Self-managed)
+#### Store scale units (Self-managed)
 To accommodate scenarios where internet connectivity is poor or unreliable, being able to bring the cloud scale unit to the edge is highly desirable. For retailers, this typically means having a physical footprint within their store. A store scale unit provides the ability for retailers to bring the same business logic and capabilities running in the Azure cloud into their stores. In these cases, although in-store connectivity will presumably be more reliable, there will be additional overhead of self-managing these components in terms of monitoring and updates. To learn more, review [selecting the right in-store topology with Dynamics 365 Commerce](https://docs.microsoft.com/en-us/dynamics365/retail/dev-itpro/retail-in-store-topology).
 
 ### E-Commerce Platform
