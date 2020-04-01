@@ -51,7 +51,7 @@ This topic lists the platform updates for version 10.0.10 of Finance and Operati
 
 ### Bug fixes
 
-For information about the bug fixes that are included in this update, sign in to LCS, and view [this KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=424137&dbType=3&qc=bf63d49dcc96e51eb42ac1dd66c6c5e5d7548f1e176f729e324ea3353b9860cb).
+For information about the bug fixes that are included in this update, sign in to LCS, and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=424137&dbType=3&qc=bf63d49dcc96e51eb42ac1dd66c6c5e5d7548f1e176f729e324ea3353b9860cb).
 
 ### Dynamics 365: 2020 release wave 1 plan
 
