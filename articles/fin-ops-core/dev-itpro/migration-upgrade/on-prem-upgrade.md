@@ -57,7 +57,7 @@ An overview of each path is given below:
 
 1.  In Lifecycle Services (LCS), go to the Shared Assets Library (right side of the screen).
 
-2.  Under **Select asset type**, choose **Downloadable VHD**, and download all parts of the VHD package that closely matches the version you will be upgrading to in your On-Premises environmnet. The image requires a high amount of disk space, please ensure you download and extract on a drive with adequate free space. 
+2.  Under **Select asset type**, choose **Downloadable VHD**, and download all parts of the VHD package that closely matches the version you will be upgrading to in your on-premises environmnet. The image requires a high amount of disk space, so be sure to download and extract on a drive with adequate free space. 
 
 3.  The files that you downloaded are a self-extracting zip file. Extract the VHD to a location with a good amount of free space.
 
@@ -65,7 +65,7 @@ An overview of each path is given below:
 
 5.  Connect to the VM. You can find the credentials in [Running the Virtual Machine (VM) locally](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/dev-tools/access-instances#running-the-virtual-machine-vm-locally).
 
-6.  Depending on your planned on-premises target version of 10.0.x and the VHD image you downloaded, you may need to download and apply the required Application and Platform Update from the Shared Asset Library under **Select asset type** and **Software deployabel package**. For mre information, see https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/install-deployable-package
+6.  Depending on your planned on-premises target version of 10.0.x and the VHD image you downloaded, you may need to download and apply the required Application and Platform Update from the Shared Asset Library under **Select asset type** and **Software deployabel package**. For mre information, see [Install deployable packages from the command line]../../deployment/install-deployable-package.md).
 
 7.  If you have any extensions or customizations install them into the VHD now, otherwise the upgrade process will remove any data related to customizations. Check with your independent software vendor (ISV) or value-added reseller (VAR) if you need to prepare your environment before the upgrade.
 
@@ -121,7 +121,7 @@ An overview of each path is given below:
 
     a.  In LCS, go to the Shared Assets Library.
 
-    b.  Under **Select asset type**, choose **Model** and download: Dynamics 365 for Finance and Operations on-premises Version 10.0.x Demo Data (select the version closest to the 10.0.x environment you will deploy as the on-premises baseline)
+    b.  Under **Select asset type**, choose **Model** and download: Dynamics 365 for Finance and Operations on-premises, Version 10.0.x Demo Data. Select the version closest to the 10.0.x environment that you will deploy as the on-premises baseline.
 
     c.  Use this file to create a new database (typically AXDB) using the restore backup option from SQL server. For more information, see [Restore a Database Backup Using SSMS](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017).
      
@@ -206,7 +206,7 @@ An overview of each path is given below:
 
     a.  In LCS, go to the Shared Assets Library.
 
-    b.  Under **Select asset type**, choose **Model** and download: Dynamics 365 for Finance and Operations on-premises Version 10.0.x Demo Data (select the version closest to the 10.0.x environment you will deploy as the on-premises baseline)
+    b.  Under **Select asset type**, choose **Model** and download: Dynamics 365 for Finance and Operations on-premises, Version 10.0.x Demo Data. Select the version closest to the 10.0.x environment that you will deploy as the on-premises baseline.
 
     c.  Use this file to create a new database (typically AXDB) using the restore backup option from SQL server. For more information, see [Restore a Database Backup Using SSMS](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017).
 
@@ -256,15 +256,15 @@ An overview of each path is given below:
 
 1.  In LCS, go to the Shared Assets Library (right side of the screen).
 
-2.  Under **Select asset type**, choose **Downloadable VHD**, and download all parts of the VHD package that closely matches the version you will be upgrading to in your On-Premises environmnet. The image requires a high amount of disk space, please ensure you download and extract on a drive with adequate free space. 
+2.  Under **Select asset type**, choose **Downloadable VHD**, and download all parts of the VHD package that closely match the version you will be upgrading to in your on-premises environmnet. The image requires a high amount of disk space, so be sure to download and extract on a drive with adequate free space. 
 
-3.  The files that you downloaded are a self-extracting zip file. Extract the VHD to a location with a good amount of free space.
+3.  The files that you downloaded are in a self-extracting zip file. Extract the VHD to a location with a good amount of free space.
 
 4.  Using Hyper-V, launch a virtual machine (VM) and attach the VHD. (Note that the machine must be Generation 1.)
 
 5.  Connect to the VM. You can find the credentials in [Running the Virtual Machine (VM) locally](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/dev-tools/access-instances#running-the-virtual-machine-vm-locally).
 
-6.  Depending on your planned target version of 10.0.x and the VHD image you downloaded, you may need to download and apply the required Application and Platform Update from the Shared Asset Library under **Select asset type** and **Software deployabel package**. For mre information, see https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/install-deployable-package
+6.  Depending on your planned target version of 10.0.x and the VHD image that you downloaded, you may need to download and apply the required Application and Platform Update from the Shared Asset Library under **Select asset type** and **Software deployabel package**. For mre information, see [Install deployable packages from the command line](../../deployment/install-deployable-package.md).
 
 7.  If you have any extensions or customizations install them into the VHD now, otherwise the upgrade process will remove any data related to customizations. Check with your independent software vendor (ISV) or value-added reseller (VAR) if you need to prepare your environment before the upgrade.
 
@@ -316,7 +316,7 @@ An overview of each path is given below:
 
 13. In LCS, go to the Shared Assets Library.
 
-14. Under **Select asset type**, choose **Model** and download: Dynamics 365 for Finance and Operations on-premises Version 10.0.x Demo Data (select the version closest to the 10.0.x environment you will deploy as the on-premises baseline)
+14. Under **Select asset type**, choose **Model** and download: Dynamics 365 for Finance and Operations on-premises, Version 10.0.x Demo Data. Select the version closest to the 10.0.x environment that you will deploy as the on-premises baseline.
 
 15. Use this file to create a new database (typically AXDB) using the restore backup option from SQL server. For more information, see [Restore a Database Backup Using SSMS](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017).
 
@@ -324,7 +324,7 @@ An overview of each path is given below:
 
 17. In LCS, set up a new environment and deploy it with version 10.0.x (Redeploy). For more information, see [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12.md). When you deploy, the database that you should specify should be the one created in step 15 (typically AXDB).
 
-18. Apply any Application and Platform update, to your newly created 10.0.x environment. This will be the same one you applied to the VHD.
+18. Apply any Application and Platform update to your newly created 10.0.x environment. This will be the same one you applied to the VHD.
 
 19. Also, apply your own customizations as well as ISV/VAR modules, to your newly created 10.0.x environment. Otherwise when the environment initially syncs with the database it will delete any customization or extensions related data.
 
@@ -393,7 +393,7 @@ An overview of each path is given below:
 
 12. In LCS, go to the Shared Assets Library.
 
-13. Under **Select asset type**, choose **Model** and download: Dynamics 365 for Finance and Operations on-premises Version 10.0.x Demo Data (select the version closest to the 10.0.x environment you will deploy as the on-premises baseline)
+13. Under **Select asset type**, choose **Model** and download: Dynamics 365 for Finance and Operations on-premises. Version 10.0.x Demo Data. Select the version closest to the 10.0.x environment that you will deploy as the on-premises baseline.
 
 14. Use this file to create a new database (typically AXDB) using the restore backup option from SQL server. For more information, see [Restore a Database Backup Using SSMS](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017).
 
