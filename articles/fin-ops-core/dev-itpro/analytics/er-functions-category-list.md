@@ -5,7 +5,7 @@ title: List of ER functions in the list category
 description: This topic provides information about the list functions that are supported in Electronic reporting (ER).
 author: NickSelin
 manager: kfend
-ms.date: 12/17/2019
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
