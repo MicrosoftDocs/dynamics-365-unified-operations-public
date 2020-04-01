@@ -83,7 +83,7 @@ You can provide instructions to users who submit documents for processing and ap
 
 ## Specify when this workflow is used through activation conditions
 
-You can create multiple workflows that are based on the same workflow type. When you have multiple workflows that are based on the same type, you must specify when each workflow is used using activation conditions. If activiation conditions are not met, then the default workflow is used. Similarly, if there is only one workflow configuration defined for a workflow type, then that workflow configuration will be used regardless of the activation conditions.
+You can create multiple workflows that are based on the same workflow type. When you have multiple workflows that are based on the same type, you must specify when each workflow is used using activation conditions. If activation conditions are not met, then the default workflow is used. Similarly, if there is only one workflow configuration defined for a workflow type, then that workflow configuration will be used regardless of the activation conditions.
 
 For example, you can create a purchase requisition workflow for each country/region that you operate in, such as Purchase Requisitions Denmark and Purchase Requisitions Spain, with the following conditions:
 
