@@ -2,7 +2,7 @@
 # required metadata
 
 title: In-place upgrade process for on-premises environments
-description: This topic provides the detailed process for upgrading on-premises environments of Microsoft Dynamics 365 for Finance and Operations versions 7.x to 8.1.  
+description: This topic provides the detailed process for upgrading on-premises environments of Microsoft Dynamics 365 for Finance and Operations versions 7.x to 10.0.x.  
 author: laneswenka
 manager: AnnBe
 ms.date: 09/20/2019
@@ -24,7 +24,7 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: laswenka
 ms.search.validFrom: 2018-10-31 
-ms.dyn365.ops.version: 8.1
+ms.dyn365.ops.version: 10.0.x
 
 ---
 
@@ -35,14 +35,14 @@ ms.dyn365.ops.version: 8.1
 > [!NOTE]
 > Please perform the upgrade with your sandbox environment before upgrading your production environment.
 
-This topic provides the detailed process for upgrading on-premises environments of Finance and Operations from version 7.x to 8.1.  
+This topic provides the detailed process for upgrading on-premises environments of Finance and Operations from version 7.x to 10.0.x.  
 
-## On-premises upgrade from version 7.x (with Platform update 8-20) to 8.1
+## On-premises upgrade from version 7.x to 10.0.x
 
 > [!NOTE]
 > Be aware that this upgrade process takes time to complete and Finance and Operations will be inaccessible for the entire duration of the data upgrade.
 
-To upgrade from version 7.x to 8.1, there are two possible paths that are currently supported.
+To upgrade from version 7.x to 10.0.x, there are two possible paths that are currently supported.
 
 An overview of each path is given below:
 
@@ -57,15 +57,17 @@ An overview of each path is given below:
 
 1.  In Lifecycle Services (LCS), go to the Shared Assets Library (right side of the screen).
 
-2.  Under **Select asset type**, choose **Downloadable VHD**, and download all 13 parts of the FinOps8.1 package. You will need a total of 36 GB of free space to download all the parts.
+2.  Under **Select asset type**, choose **Downloadable VHD**, and download all parts of the VHD package that closely matches the version you will be upgrading to in your On-Premises environmnet. The image requires a high amount of disk space, please ensure you download and extract on a drive with adequate free space. 
 
-3.  The files that you downloaded are a self-extracting zip file. Extract the VHD to a location with at least 86 GB of free space.
+3.  The files that you downloaded are a self-extracting zip file. Extract the VHD to a location with a good amount of free space.
 
 4.  Using Hyper-V, launch a virtual machine (VM) and attach the VHD. (Note that the machine must be Generation 1.)
 
 5.  Connect to the VM. You can find the credentials in [Running the Virtual Machine (VM) locally](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/dev-tools/access-instances#running-the-virtual-machine-vm-locally).
 
-6.  If you have any extensions or customizations install them into the VHD now, otherwise the upgrade process will remove any data related to customizations. Check with your independent software vendor (ISV) or value-added reseller (VAR) if you need to prepare your environment before the upgrade.
+6.  Depending on your planned on-premises target version of 10.0.x and the VHD image you downloaded, you may need to download and apply the required Application and Platform Update from the Shared Asset Library under **Select asset type** and **Software deployabel package**. For mre information, see https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/install-deployable-package
+
+7.  If you have any extensions or customizations install them into the VHD now, otherwise the upgrade process will remove any data related to customizations. Check with your independent software vendor (ISV) or value-added reseller (VAR) if you need to prepare your environment before the upgrade.
 
 ### Upgrading from within VHD
 
@@ -119,15 +121,15 @@ An overview of each path is given below:
 
     a.  In LCS, go to the Shared Assets Library.
 
-    b.  Under **Select asset type**, choose **Model** and download: Dynamics 365 for Finance and Operations on-premises, Application Version 8.1 Demo Data.
+    b.  Under **Select asset type**, choose **Model** and download: Dynamics 365 for Finance and Operations on-premises Version 10.0.x Demo Data (select the version closest to the 10.0.x environment you will deploy as the on-premises baseline)
 
     c.  Use this file to create a new database (typically AXDB) using the restore backup option from SQL server. For more information, see [Restore a Database Backup Using SSMS](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017).
      
     d.  The database will need to be configured. Follow the steps in [Configure the Finance and Operations database](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#configure-the-finance-and-operations-database).
 
-    e.  In LCS, set up a new environment and deploy it with version 8.1 (Redeploy). For more information, see [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12.md). When you deploy, the database that you specify should be the one created in step 13c (typically AXDB).
+    e.  In LCS, set up a new environment and deploy it with version 10.0.x (Redeploy). For more information, see [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12.md). When you deploy, the database that you specify should be the one created in step 13c (typically AXDB).
 
-    f.  Apply your own customizations as well as ISV/VAR modules, to your newly created 8.1 environment. Otherwise, when the environment initially syncs with the database it will delete any customization or extensions related data.
+    f.  Apply your own customizations as well as ISV/VAR modules, to your newly created 10.0.x environment. Otherwise, when the environment initially syncs with the database it will delete any customization or extensions related data.
 
     g.  Shut-down on-premises AOS, BI, and MR servers, or stop the services from the Service Fabric portal.
 
@@ -139,7 +141,7 @@ An overview of each path is given below:
 
     a.  (Optional) Rename your old database (typically AXDBold) and then rename your new database (typically AXDB). Make sure that in the next step you input the name of the upgraded DB.
 
-    b.  In LCS, set up a new environment and deploy it with version 8.1 (Redeploy). For more information, see [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12.md).
+    b.  In LCS, set up a new environment and deploy it with version 10.0.x (Redeploy). For more information, see [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12.md).
 
 15. (Optional) If deployment fails because the financial reporting module failed, on the database that you are using for the new environment (typically AXDB), run the following command:
 
@@ -204,15 +206,15 @@ An overview of each path is given below:
 
     a.  In LCS, go to the Shared Assets Library.
 
-    b.  Under **Select asset type** choose **Model** and download: Dynamics 365 for Finance and Operations on-premises, Application Version 8.1 Demo Data.
+    b.  Under **Select asset type**, choose **Model** and download: Dynamics 365 for Finance and Operations on-premises Version 10.0.x Demo Data (select the version closest to the 10.0.x environment you will deploy as the on-premises baseline)
 
     c.  Use this file to create a new database (typically AXDB) using the restore backup option from SQL server. For more information, see [Restore a Database Backup Using SSMS](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017).
 
     d.  The database will need to be configured. Follow the steps under [Configure the Finance + Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
 
-    e.  In LCS, set up a new environment and deploy it with version 8.1 (Redeploy). For more information, see [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12.md). When you deploy, the database that you should specify should be the one created in step 12c (typically AXDB).
+    e.  In LCS, set up a new environment and deploy it with version 10.0.x (Redeploy). For more information, see [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12.md). When you deploy, the database that you should specify should be the one created in step 12c (typically AXDB).
 
-    f.  Apply your own customizations as well as ISV/VAR modules, to your newly created 8.1 environment. Otherwise when the environment initially syncs with the database it will delete any customization or extensions related data.
+    f.  Apply your own customizations as well as ISV/VAR modules, to your newly created 10.0.x environment. Otherwise when the environment initially syncs with the database it will delete any customization or extensions related data.
 
     g.  Shut-down on-premises AOS, BI, and MR servers, or stop the services from the Service Fabric portal.
 
@@ -224,7 +226,7 @@ An overview of each path is given below:
 
     a.  (Optional) Rename your old database (typically AXDBold) and then rename your new database (typically AXDB). Make sure that in the next step you input the name of the upgraded database.
 
-    b.  Setup a new environment and deploy it with version 8.1. For more information, see [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12.md).
+    b.  Setup a new environment and deploy it with version 10.0.x. For more information, see [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12.md).
 
 14. (Optional) If deployment fails because the financial reporting module failed, on the database that you are using for the new environment (typically AXDB), run the following command:
 
@@ -233,12 +235,12 @@ An overview of each path is given below:
     CLUSTERED (RECID)
     ```
 
-## On-premises upgrade from version 7.x (with Platform update 21 or later) to 8.1
+## On-premises upgrade from version 7.x to 10.0.x
 
 > [!NOTE]
 > Be aware that this upgrade process takes time complete and Finance and Operations will be inaccessible for the entire duration.
 
-To upgrade from on-premises 7.x to on-premises 8.1 there are two possible paths that are currently supported.
+To upgrade from on-premises 7.x to on-premises 10.0.x there are two possible paths that are currently supported.
 
 An overview of each path is given below:
 
@@ -254,33 +256,18 @@ An overview of each path is given below:
 
 1.  In LCS, go to the Shared Assets Library (right side of the screen).
 
-2.  Under **Select asset type**, choose downloadable VHD and download all 13 parts of the FinOps8.1 package. You will need a total of 36 GB of free space to download all the parts.
+2.  Under **Select asset type**, choose **Downloadable VHD**, and download all parts of the VHD package that closely matches the version you will be upgrading to in your On-Premises environmnet. The image requires a high amount of disk space, please ensure you download and extract on a drive with adequate free space. 
 
-3.  The files you downloaded are a self-extracting zip file. Extract the VHD to a location with at least 86 GB of free space.
+3.  The files that you downloaded are a self-extracting zip file. Extract the VHD to a location with a good amount of free space.
 
-4.  Using Hyper-V launch a VM and attach the VHD. (Note that the machine must be Generation 1.)
+4.  Using Hyper-V, launch a virtual machine (VM) and attach the VHD. (Note that the machine must be Generation 1.)
 
-5.  Connect to the VM. You can find the credentials here: https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/dev-tools/access-instances#running-the-virtual-machine-vm-locally
+5.  Connect to the VM. You can find the credentials in [Running the Virtual Machine (VM) locally](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/dev-tools/access-instances#running-the-virtual-machine-vm-locally).
 
-6.  Before proceeding it will be necessary to upgrade the platform version of the VHD so that it is in the same state as the one in your environment. You basically want the version number of the platform in the VHD to match exactly to the version number in your environment. In order to do this you can check your environments history in LCS to see which packages have been applied from your asset library. Keep in mind that the VHD is already in Platform update 20 (7.0.5030.35333) so it will probably already contain some packages that you installed manually into your environment, but may not include the latest binary updates that you applied to your environment.
+6.  Depending on your planned target version of 10.0.x and the VHD image you downloaded, you may need to download and apply the required Application and Platform Update from the Shared Asset Library under **Select asset type** and **Software deployabel package**. For mre information, see https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/install-deployable-package
 
-7.  After you have located the package or packages that have to be applied, download them into the VHD from LCS.
+7.  If you have any extensions or customizations install them into the VHD now, otherwise the upgrade process will remove any data related to customizations. Check with your independent software vendor (ISV) or value-added reseller (VAR) if you need to prepare your environment before the upgrade.
 
-8.  For each package do the following:
-
-    a.  Extract the package, such as c:\\D365FFOUpgrade\\
-
-    b.  Open a Command Prompt as Administrator and change directory to the unzipped folder.
-
-    c.  Execute
-
-       1. `AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml`
-
-       2. `AxUpdateInstaller.exe import -runbookfile=upgrade.xml`
-
-       3. `AxUpdateInstaller.exe execute -runbookid=upgrade`
-
-9.  If you have any application extensions or customizations install them now into the VHD, otherwise the upgrade process will remove any data related to customizations. Check with your ISV or VAR if you need to prepare your environment in any way before the upgrade.
 
 ### Upgrading from within VHD
 
@@ -329,23 +316,25 @@ An overview of each path is given below:
 
 13. In LCS, go to the Shared Assets Library.
 
-14. Under **Select asset type**, choose **Model** and download: Dynamics 365 for Finance and Operations on-premises, Application Version 8.1 Demo Data.
+14. Under **Select asset type**, choose **Model** and download: Dynamics 365 for Finance and Operations on-premises Version 10.0.x Demo Data (select the version closest to the 10.0.x environment you will deploy as the on-premises baseline)
 
 15. Use this file to create a new database (typically AXDB) using the restore backup option from SQL server. For more information, see [Restore a Database Backup Using SSMS](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017).
 
 16. The database will need to be configured. Follow the steps in [Configure the Finance + Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
 
-17. In LCS, set up a new environment and deploy it with version 8.1 (Redeploy). For more information, see [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12.md). When you deploy, the database that you should specify should be the one created in step 15 (typically AXDB).
+17. In LCS, set up a new environment and deploy it with version 10.0.x (Redeploy). For more information, see [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12.md). When you deploy, the database that you should specify should be the one created in step 15 (typically AXDB).
 
-18. Apply your own customizations as well as ISV/VAR modules, to your newly created 8.1 environment. Otherwise when the environment initially syncs with the database it will delete any customization or extensions related data.
+18. Apply any Application and Platform update, to your newly created 10.0.x environment. This will be the same one you applied to the VHD.
 
-19. Shut-down on-premises AOS, BI, and MR servers, or stop the services from the Service Fabric portal.
+19. Also, apply your own customizations as well as ISV/VAR modules, to your newly created 10.0.x environment. Otherwise when the environment initially syncs with the database it will delete any customization or extensions related data.
 
-20. Rename or delete the demo database (typically AXDB) used in the deploy and then rename your new database (typically AXDBupgraded) to the name the demo database had (typically AXDB).
+20. Shut-down on-premises AOS, BI, and MR servers, or stop the services from the Service Fabric portal.
 
-21. Start on-premises AOS, BI, and MR servers, or start the services from the Service Fabric portal.
+21. Rename or delete the demo database (typically AXDB) used in the deploy and then rename your new database (typically AXDBupgraded) to the name the demo database had (typically AXDB).
 
-22. (Optional) If deployment fails because the financial reporting module failed, on the database that you are using for the new environment typically AXDB), run the following command:
+22. Start on-premises AOS, BI, and MR servers, or start the services from the Service Fabric portal.
+
+23. (Optional) If deployment fails because the financial reporting module failed, on the database that you are using for the new environment typically AXDB), run the following command:
 
     ```sql
     ALTER TABLE RETAILTERMINALTABLE ADD CONSTRAINT PK_RecId PRIMARY KEY
@@ -404,15 +393,15 @@ An overview of each path is given below:
 
 12. In LCS, go to the Shared Assets Library.
 
-13. Under **Select asset type**, choose **Model** and download: Dynamics 365 for Finance and Operations on-premises, Application Version 8.1 Demo Data.
+13. Under **Select asset type**, choose **Model** and download: Dynamics 365 for Finance and Operations on-premises Version 10.0.x Demo Data (select the version closest to the 10.0.x environment you will deploy as the on-premises baseline)
 
 14. Use this file to create a new database (typically AXDB) using the restore backup option from SQL server. For more information, see [Restore a Database Backup Using SSMS](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017).
 
 15. The database will need to be configured. Follow the steps in [Configure the Finance + Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
 
-16. In LCS, set up a new environment and deploy it with version 8.1 (Redeploy). For more information, see [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12.md). When you deploy, the database that you should specify should be the one created in step 14 (typically AXDB).
+16. In LCS, set up a new environment and deploy it with version 10.0.x (Redeploy). For more information, see [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12.md). When you deploy, the database that you should specify should be the one created in step 14 (typically AXDB).
 
-17. Apply your own customizations as well as ISV/VAR modules, to your newly created 8.1 environment. Otherwise when the environment initially synchs  with the database it will delete any customization or extensions related data.
+17. Apply your own customizations as well as ISV/VAR modules, to your newly created 10.0.x environment. Otherwise when the environment initially synchs  with the database it will delete any customization or extensions related data.
 
 18. Shut down on-premises AOS, BI, and MR servers, or stop the services from the Service Fabric portal.
 
@@ -455,7 +444,7 @@ After configuration has been passed, the script will execute a database connecti
 ```powershell
 <#
 .Synopsis
-   Configures a Onebox deployment to upgrade an OnPrem 7.x database to OnPrem 8.x 
+   Configures a Onebox deployment to upgrade an OnPrem 7.x database to OnPrem 10.0.x 
 
 .DESCRIPTION
    This must be executed before the upgrade process is carried out.
