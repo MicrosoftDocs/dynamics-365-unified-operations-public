@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # View cost entries for a cost object
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure shows how to view cost entries for a cost object. The demo data company used to create this procedure is USMF. This procedure is intended for the cost controller.
 

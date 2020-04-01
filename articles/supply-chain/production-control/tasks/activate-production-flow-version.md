@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Activate a production flow version
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Before kanban jobs can be created and activities can be processed for a production flow version, you should activate the version. As a best practice, activate the version before its effective start date and time expire. To complete this task, you must have a production flow version that has the Draft status in order to activate the version. 
 

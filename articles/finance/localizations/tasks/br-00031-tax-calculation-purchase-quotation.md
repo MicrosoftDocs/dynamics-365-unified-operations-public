@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Calculate tax on purchase quotations (Brazil)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 You can create a purchase request for quotation (RFQ), and when you enter the vendor reply, you can enter applicable fiscal information. When the RFQ is accepted, a purchase order is created that has the same fiscal information that is entered in the RFQ. This recording uses the BRMF demo company.
 

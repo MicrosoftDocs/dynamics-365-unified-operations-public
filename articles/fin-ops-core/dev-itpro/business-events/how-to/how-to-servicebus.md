@@ -2,7 +2,7 @@
 # required metadata
 
 title: Business events and Azure Service Bus
-description: This topic explains how to configure a Microsft Azure Service Bus endpoint and how to consume a business event from Service Bus.
+description: This topic explains how to configure a Microsoft Azure Service Bus endpoint and how to consume a business event from Service Bus.
 author: ibenbouzid
 manager: AnnBe
 ms.date: 11/04/2019
@@ -139,7 +139,7 @@ In this procedure, you will register a new application with Azure AD, and give i
 5. Select **Next**.
 6. Set the required parameter values.
 
-    <img alt="Service Bus dndpoint" src="../../media/BEF-Howto-servicebus-08.png" width="70%">
+    <img alt="Service Bus endpoint" src="../../media/BEF-Howto-servicebus-08.png" width="70%">
 
 7. Select **OK**.
 

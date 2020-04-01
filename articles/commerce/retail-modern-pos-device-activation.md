@@ -5,7 +5,7 @@ title: Configure, install, and activate Modern POS (MPOS)
 description: This topic describes how to configure, download, and install Modern POS on various platforms. It then describes how to activate Modern POS through device activation.
 author: jashanno
 manager: AnnBe
-ms.date: 01/29/2020
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -289,6 +289,42 @@ The device should now be activated and ready to use.
         7. In the **Select Users, Computers, Service Accounts, or Groups** dialog box, enter the name **IIS\_IUSRS**, and then select **Check names**. The object name should be changed to **IIS\_IUSRS**. Select **OK**.
         8. In the **Permissions for SelfServiceDeployment** dialog box, select the new **IIS\_ISURS** user. Under **Permissions for IIS\_IUSRS**, select **Allow** for the **Full control** permission. Select **OK**.
         9. In the **Open permission** dialog box, select **OK**.
+
+- The latest iOS version does not support your self-signed certificate.
+
+    **Solution 1:** Utilize a domain and generate a proper domain-based certificate.
+    
+    **Solution 2:** Download the open source OpenSSL library and perform the following after completing installation:
+  
+  1. Using PowerShell, create a private key for the root Certificate Authority (CA) using a command such as **$ openssl genrsa -des3 -out rootCA.key 2048**.
+        2. You will be prompted for a password, which must be remembered for later usage.
+        3. Next, generate the root certificate using a command such as **$ openssl req -x509 -new -nodes -key rootCA.key -sha256 -days 1024 -out rootCA.pem**.  There will be a prompt for the password entered previously and some basic certificate information.
+     
+     > [!NOTE]
+     > The number of days the certificate is valid for can be altered. In the above example this is 1024 days.   
+     
+        4. Create a new **info.ext** file and enter the following details:
+          - keyUsage = keyEncipherment, dataEncipherment
+          - extendedKeyUsage = 1.3.6.1.5.5.7.3.1
+          - subjectAltName = @alt_names
+          - [alt_names]
+          - DNS.1 = &lt;FULLY QUALIFIED DOMAIN NAME OF HOST COMPUTER&gt;
+        5. Generate the signing request and private key using a command such as **openssl req -new -nodes -out server.csr -newkey rsa:2048 -keyout server.key**.
+        6. Issue the certificate using the previously generated root certificate using a command such as **$ openssl x509 -req -in server.csr -CA rootCA.pem -CAkey rootCA.key -CAcreateserial -out server.crt -days 500 -sha256 -extfile info.ext**. There will be another prompt for the root key password and you will need to specify the number of days that the certificate is valid (500 days in this example).
+        7. Generate the IIS certificate using a command such as **$ openssl pkcs12 -inkey server.key -in server.crt -export -out server.pfx**. This command will request a new password, which will be used later when the certificate is imported.
+        8. Open **Certmgr.msc** and go to **Trusted Root Certificate Authorities**. Use the **Import** action to import the previously generated **rootCA.pem** root CA file.
+        9. In the same window, go to **Personal** and use the **Import** action to import the previously generated **server.pfx**.
+        10. Next, open the **IIS Manager**, select the **RetailHardwareStationWebSite** and select **Edit Bindings** from the right-most menu.
+        11. In the new window, select the HTTPS site binding, and the select **Edit**. In the final screen, select the newly installed certificate and select **OK**.
+        12. Verify the certificate is correctly being used. In a web browser, go to  "https:\/\/&lt;hostname&gt;\/HardwareStation\/ping".
+        13. Install the certificate on the iOS device:
+          - Copy the **rootCA.pem** file and rename the copy to **rootCA.crt**.
+          - Using OneDrive or another file hosting location, upload the **rootCA.crt** and **server.crt** so that they can be downloaded onto the iOS device.
+        14. On the iOS device, go to **Settings &gt; General &gt; Profiles** and select the downloaded profile for the **rootCA.crt**. Select **Install**.
+        15. Validate that the profile status updates to **Verified**.  Repeat the same process for the **server.crt** file.
+        16. Go to **Settings &gt; General &gt; About &gt; Certificate Trust Settings** and enable the installed root certificate.
+        17. On the iOS device, use the hardware station ping URL specified previously to verify that the certificate is trusted.
+        18. Open the POS application in **Non-drawer mode** and pair to the hardware station as typically performed.
 
 ### Troubleshoot device activation for Modern POS
 

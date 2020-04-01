@@ -28,9 +28,9 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Check the availability of stock
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-This procedure shows you how to check on-hand and physical on-hand inventory for a specific item number. It also shows you how to get supply information related to an item. Physical on-hand inventory is the on-hand inventory that’s available – that is, it’s purchased, received and registered. On-hand inventory includes the available on-hand inventory, but also the inventory that’s been ordered and is expected, but not yet received or registered. You can walk through this procedure in demo data company USMF, or using your own data. If you are using USMF you can use the example values that are shown. These tasks would typically be carried out by a warehouse worker.
+This procedure shows you how to check on-hand and physical on-hand inventory for a specific item number. It also shows you how to get supply information related to an item. Physical on-hand inventory is the on-hand inventory that's available – that is, it's purchased, received and registered. On-hand inventory includes the available on-hand inventory, but also the inventory that's been ordered and is expected, but not yet received or registered. You can walk through this procedure in demo data company USMF, or using your own data. If you are using USMF you can use the example values that are shown. These tasks would typically be carried out by a warehouse worker.
 
 
 ## Check on-hand inventory for an item
@@ -40,7 +40,7 @@ This procedure shows you how to check on-hand and physical on-hand inventory for
 4. Click **OK**.
 5. On the **Action pane**, click **Dimensions**. The **Dimensions** tab allows you select how much detail you want to see about your on-hand inventory. If you need data related to reservation, you must display all inventory dimensions for the items that use advanced warehouse (WHS) processes.
 6. Click **OK**.
-7. On the **Action Pane**, click **Related information**. If you don’t see this option, you may need to click on the Ellipsis button (…) to see additional action pane options.
+7. On the **Action Pane**, click **Related information**. If you don't see this option, you may need to click on the Ellipsis button (…) to see additional action pane options.
 8. Click **Supply overview**. The **Supply overview** tab provides supply information for a specific item, such as the quantity on-hand, the lead time, and vendor information.  
 9. Expand the **On-hand** section.
 10. Expand the **Vendors** section.

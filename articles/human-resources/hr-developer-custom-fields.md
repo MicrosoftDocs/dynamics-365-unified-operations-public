@@ -2,10 +2,10 @@
 # required metadata
 
 title: Custom fields
-description: 
+description: You can add custom fields to pages in Dynamics 365 Human Resources. 
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 03/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -32,18 +32,14 @@ ms.dyn365.ops.version: Human Resources
 
 # Custom fields
 
-You can add custom fields to pages in Dynamics 365 Human Resources. For more information about how to create custom fields on a page, see [Create and work with custom fields](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields).
+You can add custom fields to pages in Dynamics 365 Human Resources. For more information about creating custom fields, see [Create and work with custom fields](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields).
 
-The following entities in Common Data Service support custom fields created in Human Resources:
-
-- Worker
-- Ethnic origin
-- Veteran status
-- Language code
-- Job
-- Job type
-- Job function
-- Position
-- Position type
+Most Common Data Service entities support custom fields. For a full list of Common Data Service entities, see [Common Data Service entities](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities). 
 
 Be sure to enable any custom fields that you create so you can use them in Common Data Service. For more information, see [Exposing custom fields on data entities](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities).
+
+## See also
+
+[Common Data Service entities](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities)</br>
+[Create and work with custom fields](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields)</br>
+[Exposing custom fields on data entities](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities)

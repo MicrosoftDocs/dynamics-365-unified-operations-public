@@ -45,7 +45,7 @@ The Acceptance test library (ATL) is an X++ test library that offers the followi
 
 ## Example of a test that is written in ATL
 
-```
+```xpp
 // Create the data root node
 var data = AtlDataRootNode::construct();
 

@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Attach a day-based calendar to a fixed asset book (India)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure walks you through attaching a day-based calendar to a fixed asset book. Before you attach a calendar to a fixed asset book, you must set up a fiscal calendar with Day based selected as the Calendar type on the Fiscal calendars page. The demo data company used to create this procedure is INMF.
 

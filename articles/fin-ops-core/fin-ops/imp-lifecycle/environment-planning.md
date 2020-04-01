@@ -145,11 +145,11 @@ The following table compares the deployment options.
 | Public URL                            | ✓ | ✓ | Not supported |
 | Integration development               | ✓ | ✓ | Extra setup is required. (For example, run the admin user provisioning tool.) |
 | Azure DevOps                          | ✓ | ✓ | Extra setup is required. (For example, rename the computer.) |
-| Applying deployable packages from LCS | Automated | Automated | Manual through runbooks |
+| Applying deployable packages from LCS | Automated | Automated | Command line runbooks (AxUpdateInstaller.exe tool) |
 | Deploying data packages from LCS      | ✓ | ✓ | Not supported |
 | Maintenance                           | Managed by Microsoft | Managed by the customer/partner | Managed by the customer/partner |
-| Cost model                            | Fixed flat rate (The price is the same if the environment is on 24/7.) | Pay as you go (If the environment is on for eight hours, you pay for eight hours.) | Hardware-related |
-| Limitations                           | Virtual Machine local Administrator access is disabled. | None | None |
+| Cost model                            | Fixed flat rate (The price is the same if the environment is on 24/7.) | Pay as you go (If the environment is on for eight hours, you pay for eight hours.). Cost is based on selected Virtual Machine size, disk size and settings, and premium storage settings | Hardware-related |
+| Limitations                           | 1) Virtual Machine (VM) local Administrator access is disabled. 2) Limited disk sizes 3) VM specs are defined by Microsoft | None. You have full control over VM specs, disk size and storage settings. You have administrator access to the VM. | None |
 
 > [!IMPORTANT]
 > Actions that require local administrator access can no longer be performed on Tier-1 environments managed by Microsoft (Standard and Add-on). These actions include installation of third-party tools and development of Microsoft Power BI reports. If administrator permissions are required, use cloud-hosted environments or an environment image (downloadable VHD) instead. For more information, see [Development and build VMs that don't allow admin access FAQ](../../dev-itpro/sysadmin/vms-no-admin-access.md).

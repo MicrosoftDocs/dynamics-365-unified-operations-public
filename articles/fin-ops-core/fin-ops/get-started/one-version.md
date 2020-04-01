@@ -5,7 +5,7 @@ title: One Version service updates FAQ
 description: This topic is intended to provide clarity on service updates, processes, and tools that you can use to stay current in a consistent, predictable, and seamless manner.
 author: ShellyBakke
 manager: AnnBe
-ms.date: 01/13/2020
+ms.date: 03/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -91,9 +91,9 @@ Customers on version 8.1 or later will only be able to apply the 8.1.x or v10.x 
 
 Yes, customers who are on version 7.3 are able to schedule platform updates directly in Lifecycle Services. A delay/pause experience is also available.
 
-### Do these updates apply to on-premises?
+### Service updates for on-premises deployments
 
-Refer to the [Software lifecycle policy and on-premises releases](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/on-prem-version-update-policy?toc=/fin-and-ops/toc.json) topic for the specific expiration dates of the version that you are on. They will have a 3 service update expiry in general. However, the process of the updates outlined in this topic only apply to the cloud service.
+The policy and schedule for service updates are now the same for both cloud and on-premises deployments. This includes, for example, the option to delay applying up to 3 consecutive updates. How to apply each of these updates remains slightly different. For more information, see [Apply updates to on-premises deployments](../../dev-itpro/deployment/apply-updates-on-premises.md#update-an-on-premises-deployment).
 
 ## Process
 
@@ -123,12 +123,7 @@ The expected downtime for a successful update is 30 minutes to 1 hour. However, 
 
 ### What's the process for deprecation?
 
-In the [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) topic, we state the difference between removed and deprecated features as follows:
-
-- A *removed* feature is no longer available in the product.
-- A *deprecated* feature is not in active development and may be removed in a future update.
-
-Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
+Before any feature is removed from the product, the deprecation notice will be announced in the product documentation 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically these are functional updates that need to made to the compiler.
 

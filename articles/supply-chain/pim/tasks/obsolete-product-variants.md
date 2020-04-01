@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Find obsolete product variants 
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure shows how to find obsolete released products or product variants and how to associate a product lifecycle state to the obsolete products. Prerequisite: You need to define at least one product lifecycle state that is inactive for planning before you can play this task guide.
 

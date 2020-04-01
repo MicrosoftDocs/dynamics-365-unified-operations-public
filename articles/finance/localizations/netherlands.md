@@ -34,5 +34,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic provides links to documentation resources for the Netherlands. 
 
-- [Electronic tax declarations (EVAT)](tasks/nl-00010-electronic-tax-declarations-evat.md)
+- [VAT declaration](emea-nl-VAT-declaration.md)
+  - [Electronic tax declarations (EVAT)](tasks/nl-00010-electronic-tax-declarations-evat.md)
 - [Semansys XBRL integration](tasks/nl-00003-semansys-xbrl-integration.md)

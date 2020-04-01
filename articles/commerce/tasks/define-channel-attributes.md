@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Define channel attributes
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Enrich the channel by adding channel and product attributes. You must add the channel to the organization default hierarchy before you can define the attributes.
 

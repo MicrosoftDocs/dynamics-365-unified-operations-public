@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Generate and run out of box reports
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Use this task guide to run out of box reports in Headquarters from different workspaces and Inquiries & Sales reports located in Commerce.
 

@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Set up parameters to calculate depreciation (India)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure walks you through setting up fixed assets parameters to calculate depreciation based on the Companies Act of India and to generate the Depreciation schedule report. The demo data company used to create this procedure is INMF.
 

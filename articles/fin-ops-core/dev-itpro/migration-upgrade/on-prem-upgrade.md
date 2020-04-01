@@ -30,6 +30,8 @@ ms.dyn365.ops.version: 8.1
 
 # In-place upgrade process for on-premises environments
 
+[!include [banner](../includes/banner.md)]
+
 > [!NOTE]
 > Please perform the upgrade with your sandbox environment before upgrading your production environment.
 
@@ -80,10 +82,10 @@ An overview of each path is given below:
 6.  Restore the backup that you created into the Onebox VM. For more information, see [Restore a Database Backup Using SSMS](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017).
 
 7.  Optional: If the name of your restored database is not AXDB, using PowerShell with administrator privileges, execute:
-	
-	```powershell
+    
+    ```powershell
     .\Configure-On-Premises-Upgrade.ps1 -DatabaseName '<DB-name>'
-	```
+    ```
     > [!NOTE] 
     > Substitute <DB-Name> with the appropriate value in your case (for example, AXDB). If you would like to edit more values, refer to  Appendix A.
 
@@ -161,10 +163,10 @@ An overview of each path is given below:
 6.  Open a Command Prompt as Administrator and change the directory to the unzipped folder from step 5.
 
 7.  Open a new PowerShell as Administrator and execute:
-	
-	```powershell
+    
+    ```powershell
     .\Configure-On-Premises-Upgrade.ps1 -DatabaseName '<DB-name>' -DatabaseServer '<SqlServerName>' -DatabaseUser '<User>' -DatabasePassword '<Password>'
-	```
+    ```
 
     > [!NOTE]
     > Substitute \<\*\> with the values you require.
@@ -272,11 +274,11 @@ An overview of each path is given below:
 
     c.  Execute
 
-        A. AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml
+       1. `AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml`
 
-        B. AxUpdateInstaller.exe import -runbookfile=upgrade.xml
+       2. `AxUpdateInstaller.exe import -runbookfile=upgrade.xml`
 
-        C. AxUpdateInstaller.exe execute -runbookid=upgrade
+       3. `AxUpdateInstaller.exe execute -runbookid=upgrade`
 
 9.  If you have any application extensions or customizations install them now into the VHD, otherwise the upgrade process will remove any data related to customizations. Check with your ISV or VAR if you need to prepare your environment in any way before the upgrade.
 
@@ -295,10 +297,10 @@ An overview of each path is given below:
 6.  Restore the backup that you created into the Onebox VM. For more information, see [Restore a Database Backup Using SSMS](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017).
 
 7.  (Optional) If the name of your restored database is not AXDB, using PowerShell with Administrator privileges execute:
-	
-	```powershell
+    
+    ```powershell
     .\Configure-On-Premises-Upgrade.ps1 -DatabaseName '<DB-name>'
-	```
+    ```
 
     > [!NOTE] 
     > Substitute \<DB-Name\> with the appropriate value in your case (typically AXDB). If you would like to edit more values, refer to Appendix A.
@@ -366,9 +368,9 @@ An overview of each path is given below:
 
 7.  Open a new PowerShell as Administrator and execute:
 
-	```powershell
+    ```powershell
     .\Configure-On-Premises-Upgrade.ps1 -DatabaseName '<DB-name>' -DatabaseServer '<SqlServerName>' -DatabaseUser '<User>' -DatabasePassword '<Password>'
-	```
+    ```
 
     > [!NOTE]
     > Substitute \<\*\> with the values you require.
