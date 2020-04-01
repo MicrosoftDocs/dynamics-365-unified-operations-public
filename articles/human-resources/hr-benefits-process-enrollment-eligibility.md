@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Process enrollment eligibility
 
+[!include [banner](includes/preview-feature.md)]
+
 This article explains how to run the enrollment eligibility process.
 
 1. In the **Benefits management** workspace, under **Processing**, select **Enrollment eligibility processing**.

@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Set up payment frequencies
 
+[!include [banner](includes/preview-feature.md)]
+
 Microsoft Dynamics 365 Human Resources uses payment frequencies to calculate the annual benefit salary, determine the benefit premium amount an employee pays each pay period, and how often providers are paid.
 
 Benefit payment frequencies use conversion factors to convert benefit payment periods between monthly, semi-monthly, biweekly, weekly, and daily payment frequencies. This allows companies to define the interdependence between the payment frequencies within a benefit plan.

@@ -55,14 +55,9 @@ To access preview features, you must first enable them in your environment. Enab
 
 3. To enable a preview feature, select it from the list, and then select **Enable**. To disable a preview feature, select it from the list, and then select **Disable**.
 
-## Enable or disable Benefits management
+## Preview feature: Benefits management
 
-To enable Benefits management, use the same procedure in [Enable or disable preview features](hr-admin-manage-features.md?enable-or-disable-preview-features).
-
-> [!IMPORTANT]
-> You can't disable Benefits management in a **Production** environment after you enable it. You can disable Benefits management in **Sandbox** environments, however.
-
-For more information about Benefits management configuration and use, see [Benefits management overview](hr-benefits-management-overview.md).
+Benefits management provides you with a flexible solution that supports a wide variety of benefit options, along with an easy-to-use employee experience that showcases your offerings. For more information about Benefits management configuration and use, see [Benefits management overview](hr-benefits-management-overview.md).
 
 Benefits management replaces functionality in the **Benefits** workspace. When you enable the Benefits management preview feature, you can no longer access the following forms in the **Benefits** workspace:
 
@@ -75,7 +70,7 @@ Benefits management replaces functionality in the **Benefits** workspace. When y
 - **Benefit eligibility policies**
 - **Eligibility events**
 
-You can view the information in these forms in read-only mode. If you want to edit the information, you must first disable Benefits management (applicable to **Sandbox** environments only).
+You can view the information in these forms in read-only mode. If you want to edit the information, you must first disable the Benefits management preview feature.
 
 ## Enable or disable Leave and absence
 
