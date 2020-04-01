@@ -5,7 +5,7 @@ title: Set Benefits management parameters
 description: Configure parameters for Benefits management in Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -32,9 +32,7 @@ ms.dyn365.ops.version: Human Resources
 
 # Set Benefits management parameters
 
-[!include [banner](includes/preview-feature.md)]
-
-Before you can set up leave plans in Microsoft Dynamics 365 Human Resources, you need to configure Benefits management parameters. These parameters set default values, reason codes, and other options.
+Before you can set up leave plans in Microsoft Dynamics 365 Human Resources, you must configure Benefits management parameters. These parameters set default values, reason codes, and other options.
 
 ## Configure general parameters
 
@@ -52,7 +50,6 @@ Before you can set up leave plans in Microsoft Dynamics 365 Human Resources, you
    | **Rate change reason code** | The reason code to use when canceling and reopening an employee benefit plan during the rate change update process. It indicates which records were changed by the rate change update process. |
    | **New hire eligible** | Specifies whether new hires are eligible. |
    | **New hire enrollment period** | The period of time the new hire enrollment is allowed.</br></br>**Note**: This setting overrides any new hire enrollment period you set on the plan eligibility rule. | 
-   | **Annual salary enhancement** | Specifies whether to automatically calculate the **Annual benefit salary** amount in **Employment Benefit Details**. It's based on the employee’s **Fixed compensation pay rate**, **Average hours**, and **Payment frequency**.</br></br>**Average hours** x **Fixed pay rate** x **Payment frequency** (# of pay periods) = **Annual benefit salary** </br></br>If any of the values in the **Average hours**, **Fixed compensation pay rate**, or **Payment frequency** fields change, the system automatically recalculates the employee’s **Annual benefit salary** amount based on the changed values. The system creates a **Date effective** record to identify the exact date and time the change occurred. You can manually edit the **Annual benefit salary** amount if necessary. |
    | **Life events enabled** | Enables life events. |
    | **Hide legacy benefit forms** | Allows you to hide legacy benefit forms. |
 

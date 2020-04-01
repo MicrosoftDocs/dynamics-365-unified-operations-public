@@ -5,7 +5,7 @@ title: Set up employment types
 description: Employment types can be set up in Dynamics 365 Human Resources to match your workers.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -32,11 +32,9 @@ ms.dyn365.ops.version: Human Resources
 
 # Set up employment types
 
-[!include [banner](includes/preview-feature.md)]
-
 Set up employment types in Dynamics 365 Human Resources to match your workers.
 
-1. In the **Benefits management** workspace, under **Setup**, select **Employment types**.
+1. In the **Personnel management** workspace, under **Setup**, select **Employment types**.
 
 2. Select **New**.
 
@@ -44,7 +42,7 @@ Set up employment types in Dynamics 365 Human Resources to match your workers.
 
    | Field | Description |
    | --- | --- |
-   | Employment type | Unique identification for the employment type. |
-   | Description | A description of the employment type. |
+   | **Employment type** | Unique identification for the employment type. |
+   | **Description** | A description of the employment type. |
 
 4. Select **Save**. 
