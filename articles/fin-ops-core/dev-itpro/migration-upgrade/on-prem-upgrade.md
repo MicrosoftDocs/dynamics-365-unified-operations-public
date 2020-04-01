@@ -65,7 +65,7 @@ An overview of each path is given below:
 
 5.  Connect to the VM. You can find the credentials in [Running the Virtual Machine (VM) locally](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/dev-tools/access-instances#running-the-virtual-machine-vm-locally).
 
-6.  Depending on your planned on-premises target version of 10.0.x and the VHD image you downloaded, you may need to download and apply the required Application and Platform Update from the Shared Asset Library under **Select asset type** and **Software deployabel package**. For mre information, see [Install deployable packages from the command line]../../deployment/install-deployable-package.md).
+6.  Depending on your planned on-premises target version of 10.0.x and the VHD image you downloaded, you may need to download and apply the required Application and Platform Update from the Shared Asset Library under **Select asset type** and **Software deployabel package**. For mre information, see [Install deployable packages from the command line](../deployment/install-deployable-package.md).
 
 7.  If you have any extensions or customizations install them into the VHD now, otherwise the upgrade process will remove any data related to customizations. Check with your independent software vendor (ISV) or value-added reseller (VAR) if you need to prepare your environment before the upgrade.
 
@@ -264,7 +264,7 @@ An overview of each path is given below:
 
 5.  Connect to the VM. You can find the credentials in [Running the Virtual Machine (VM) locally](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/dev-tools/access-instances#running-the-virtual-machine-vm-locally).
 
-6.  Depending on your planned target version of 10.0.x and the VHD image that you downloaded, you may need to download and apply the required Application and Platform Update from the Shared Asset Library under **Select asset type** and **Software deployabel package**. For mre information, see [Install deployable packages from the command line](../../deployment/install-deployable-package.md).
+6.  Depending on your planned target version of 10.0.x and the VHD image that you downloaded, you may need to download and apply the required Application and Platform Update from the Shared Asset Library under **Select asset type** and **Software deployabel package**. For mre information, see [Install deployable packages from the command line](../deployment/install-deployable-package.md).
 
 7.  If you have any extensions or customizations install them into the VHD now, otherwise the upgrade process will remove any data related to customizations. Check with your independent software vendor (ISV) or value-added reseller (VAR) if you need to prepare your environment before the upgrade.
 
