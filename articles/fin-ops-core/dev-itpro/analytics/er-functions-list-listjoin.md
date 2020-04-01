@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The `LISTJOIN` function returns a *Record list* value representing a new joined list of records that is created from the specified arguments.
+The `LISTJOIN` function returns a *Record list* value that represents a new joined list of records that are created from the specified arguments.
 
 ## Syntax
 
@@ -64,7 +64,7 @@ The structure of the list that is created contains only the fields that are pres
 
 ## Example
 
-You enter the data source **Record 1** of the `Container`. This data source contains the following nested fields of the `Calculated field` type:
+You enter the data source **Record 1** of the `Container`. This data source contains the following nested fields of the `Calculated field` type.
 
 -	**Code**: This field contains an expression that returns a value of the the `String` type.
 -	**Amount**: This field contains an expression that returns a value of the `Real` type.
