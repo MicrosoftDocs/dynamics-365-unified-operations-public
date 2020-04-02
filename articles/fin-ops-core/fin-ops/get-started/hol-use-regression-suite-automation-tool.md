@@ -36,49 +36,22 @@ ms.dyn365.ops.version: AX 7.0.0, Operations
 > [!NOTE]
 > Use your internet browser tools to download and save this page in pdf format. 
 
-This tutorial walks through some of the advanced features of the Regression suite automation tool (RSAT), includes a demo assignment, and describes strategy and key learning points.
+This tutorial walks through some of the advanced features of the Regression suite automation tool (RSAT), includes a demo assignment, and describes strategy and key learning points. 
 
-## Features of RSAT/Task recorder
+If you are new to RSAT, start with the intoductory tutorial [Get Started with RSAT](./hol-set-up-regression-suite-automation-tool.md)
+
+## Notable Features of RSAT and Task recorder
 
 ### Validate a field value
+RSAT allows you to include validation steps within your test case to validate expected values. For information about this feature, see the article [Validate expected values](../../dev-itpro/perf-test/rsat/rsat-validate-expected.md).
 
-For information about this feature, see the [Create a new task recording that has a Validate function](./hol-set-up-regression-suite-automation-tool.md#create-a-new-task-recording-that-has-a-validate-function).
-
-### Saved variable
-
-For information about this feature, see the [Modify an existing task recording to create a saved variable](./hol-set-up-regression-suite-automation-tool.md#modify-an-existing-task-recording-to-create-a-saved-variable).
+### Saved variables and chaining of test cases
+One of the key features of RSAT is the chaining of test cases, that is, the ability of a test to pass variables to other tests. For more information, see the article [Copy variables to chain test cases](../../dev-itpro/perf-test/rsat/rsat-chain-test-cases.md).
 
 ### Derived test case
+RSAT lets you use the same task recording with multiple test cases, enabling a task to run with different data configurations. See the article [Derived test cases](../../dev-itpro/perf-test/rsat/rsat-derived-test-cases.md) for more information.
 
-1. Open Regression suite automation tool (RSAT), and select both the test cases that you created in [Set up and install Regression suite automation tool tutorial](./hol-set-up-regression-suite-automation-tool.md).
-2. Select **New \> Create derived test case**.
-
-    ![Create derived test case command on the New menu](./media/use_rsa_tool_01.png)
-
-3. You receive a message that states that a derived test case will be created for each selected test case in the current test suite, and that each derived test case will have its own copy of the Excel parameter file. Select **OK**.
-
-    > [!NOTE]
-    > When you run a derived test case, it uses the task recording of its parent test case and its own copy of the Excel parameter file. In this way, you can run the same test with different parameters, without having to maintain more than one task recording. A derived test case doesn't have to be part of the same test suite as its parent test case.
-
-    ![Message box](./media/use_rsa_tool_02.png)
-
-    Two additional derived test cases are created, and the **Derived?** check box is selected for them.
-
-    ![Derived test cases created](./media/use_rsa_tool_03.png)
-
-    A derived test case is automatically created in Azure DevOps. It's a child item of the **Create a new product** test case and is tagged with a special keyword: **RSAT:DerivedTestSteps**. These test cases are also automatically added to the test plan in Azure DevOps.
-
-    ![RSAT:DerivedTestSteps keyword](./media/use_rsa_tool_04.png)
-
-    > [!NOTE]
-    > If, for any reason, the derived test cases that are created aren't in the correct order, go to Azure DevOps, and reorder the test cases in the test suite, so that RSAT can run them in the correct order.
-
-4. Select the derived test cases, and then select **Edit** to open the corresponding Excel parameter files.
-5. Edit these Excel parameter files in the same way that you edited the parent files. In other words, make sure that the product ID is set so that it's automatically generated. Also make sure that the saved variable is copied to the relevant fields.
-6. On the **General** tab of both Excel parameter files, update the value of the **Company** field to **USSI**, so that the derived test cases will be run against a different legal entity than the parent test case. To run the test cases against a specific user (or the role that is associated with a specific user), you can update the value of the **Test User** field.
-7. Select **Run**, and validate that the product is created in both the USMF legal entity and the USSI legal entity.
-
-### Validate notifications
+### Validate notifications and messages
 
 This feature can be used to validate whether an action occurred. For example, when a production order is created, estimated, and then started, the app shows a "Production – Start" message to notify you that the production order has been started.
 
@@ -95,6 +68,7 @@ After the test case is run, the message in the Excel parameter file is compared 
 
 ### Validate values by using operators
 
+**I AM HERE**
 In previous versions of RSAT, you could validate values only if a control value equaled an expected value. The new feature lets you validate that a variable isn't equal to, is less than, or is more than a specified value.
 
 - To use this feature, open the **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** file under the RSAT installation folder (for example, **C:\\Program Files (x86)\\Regression Suite Automation Tool**), and change the value in the following element from **false** to **true**.
