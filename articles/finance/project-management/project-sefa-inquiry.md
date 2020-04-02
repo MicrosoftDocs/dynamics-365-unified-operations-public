@@ -2,7 +2,7 @@
 
 Agencies that receive federal funds are subject to audit requirements, also known as single audits, according to Office of Management and Budget Circular A-133.  This audit process is used to report on the revenues and expenditures of federal grants on a recurring basis.  An output of the single audit includes the Schedule of Expenditures of Federal Awards.  
 
-This new inquiry includes the Catalog of Federal Domestic Assistance title and number, grant number, year of grant, name of the federal agency providing the funds, and name of the pass-through entity. The inquiry is for a specific period of time, typically the same as the financial statement period - a fiscal year.
+This inquiry includes the Catalog of Federal Domestic Assistance title and number, grant number, year of grant, name of the federal agency providing the funds, and name of the pass-through entity. The inquiry is for a specific period of time, typically the same as the financial statement period - a fiscal year.
 
 The inquiry includes grants with projection dates in the selected date range. The **Grantor agency** column of the report displays the grant customer or, for a pass-through grant, the grantor agency. The grant customer for a pass-through grant displays in the **Pass-through agency** column. If it is not a pass-through grant, the **Pass-through agency** column is blank.
 
@@ -24,7 +24,7 @@ You must setup Catalog of Federal Domesitic Assistance numbers that can be added
 2. Select **New** to create a new **Catalog of Federal Domestic Assistance number**.
 3. On the **Number** column, enter the **Catalog of Federal Domestic Assistance number**.
 4. Press **Tab**.
-5. On the **Description** column, enter the **Catalog of Federal Domestic Assistance title.
+5. On the **Description** column, enter the **Catalog of Federal Domestic Assistance title**.
 6. Press **Tab**.
 7. Optional: Add the appropriate **Catalog of Federal Domestic Assistance cluster** in the **Program cluster** field. 
 8. Select **Save** to save your changes.
@@ -38,7 +38,7 @@ You must setup Catalog of Federal Domesitic Assistance numbers that can be added
 3. Set up the grantor (**Contact information** FastTab): 
 - In the **Grant customer** field, enter the customer responsible for the grant. This information is likely already entered for an existing grant.
 -  Indicate whether the grant customer is the funder. If the customer is the funder, leave the **Pass-through** check box cleared. If another customer is the funder and the customer is responsible for spending and tracking the money, select the **Pass-through** check box.
-6. If the **Pass-through** check box is selected, enter the customer who provided the grant in the **Grantor agency** field. The grantor agency cannot be the same customer as the grant customer.
+4. If the **Pass-through** check box is selected, enter the customer who provided the grant in the **Grantor agency** field. The grantor agency cannot be the same customer as the grant customer.
 
 Example of a pass-through grant: The federal government funded an infrastructure project for a state. The federal government gave the money to the state to spend. The federal government is the grantor agency. The state is the grant customer.
 
