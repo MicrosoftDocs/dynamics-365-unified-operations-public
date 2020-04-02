@@ -37,7 +37,10 @@ This topic contains information about how to troubleshoot the Regression suite a
 
 ## Playback logs
 
-To troubleshoot issues with the tool during Playback operation, open the developer error log located at **C:\Users\$YourUserName\AppData\Roaming\regressionTool\playback\[TestName]Log.txt**. Analyze the error message to determine the possible cause of a failure.
+To troubleshoot issues that happen during playback of a test case, open the developer error log located at **[RSAT working directory]\[test case ID]\playback\[TestName]Log.txt**. The RSAT working directory is the directory specified in the RSAT settings dialog.
+Analyze the error message to determine the possible cause of a failure.
+
+[!NOTE] For RSAT versions prior to 1.210, the log is located at **C:\Users\$YourUserName\AppData\Roaming\regressionTool\playback\[TestName]Log.txt**.
 
 ## Authentication certificate and installation
 
@@ -51,7 +54,7 @@ To troubleshoot issues with the tool during Playback operation, open the develop
 
 ## Screen resolution
 
-Your desktop resolution should be set to 100% to run the tests successfully. To change the settings, use Windows **Display settings > Scale and layout**, as shown in the following image:
+If you have selected Internet Explorer as your browser, your desktop resolution should be set to 100% to run the tests successfully. To change the settings, use Windows **Display settings > Scale and layout**, as shown in the following image:
 
 ![Setting screen resolution](media/screen-resolution.png)
  
