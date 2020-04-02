@@ -112,15 +112,21 @@ the downloaded ER solution.
 2.  On the left-hand-side data sources panel, select **\$notSentTransactions** data source.
 3.  Select **Read all records**.
 
-    Note. You can select either **Read 1 record** or **Read 10 records** or **Read 100 records** or **Read all records** action to force reading the appropriate number of records from the selected data source. This will simulate access to this data source from the running ER format.
+    >
+    > You can select either **Read 1 record** or **Read 10 records** or **Read 100 records** or **Read all records** action to force reading the appropriate number of records from the selected data source. This will simulate access to this data source from the running ER format.
 
 4.  On the right-hand-side data panel, select **Expand all**.
 
-    Note. You can see that the selected data source contains a single record.
+    >
+    > You can see that the selected data source of the *Record list* type contains a single record.
 
 5.  Expand the **\$notSentTransactions** data source and select the nested **vendBankAccountInTransactionCompany()** method.
 6.  Expand the **vendBankAccountInTransactionCompany()** method and select the nested **IBAN** field.
 7.  Select **Get value**.
+
+    >
+    > You can select **Get value** action to force reading value of a selected field of the chosen data source. This will simulate access to this field from the running ER format.
+    
 8.  Select **Expand all**.
 
     ![Data sources debugger page](./media/er-data-debugger-debugging-model-mapping.png)
