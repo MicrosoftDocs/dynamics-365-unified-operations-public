@@ -4,7 +4,7 @@
 title: Set up master planning
 description: This topic describes various important strategies and parameters that are used to set up master planning.
 author: t-benebo
-manager: AnnBe
+manager: tfehr
 ms.date: 07/01/2019
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ ms.search.form: ReqCreatePlanWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 

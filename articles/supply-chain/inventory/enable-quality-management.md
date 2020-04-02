@@ -4,7 +4,7 @@
 title: Quality management overview
 description: This topic describes how you can use quality management in Dynamics 365 Supply Chain Management to help improve product quality within your supply chain.
 author: perlynne
-manager: AnnBe
+manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod:
@@ -17,7 +17,7 @@ ms.search.form: InventTestAssociationTable, InventTestGroup, InventTestItemQuali
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 94003

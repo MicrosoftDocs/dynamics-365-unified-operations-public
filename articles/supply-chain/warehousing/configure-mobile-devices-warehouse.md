@@ -4,7 +4,7 @@
 title: Set up mobile devices for warehouse work
 description: This topic describes how to configure the menu items that warehouse workers use to perform work on a mobile device.
 author: MarkusFogelberg
-manager: AnnBe
+manager: tfehr
 ms.date: 03/23/2020
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ ms.search.form: WHSRFMenuItem
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 29941

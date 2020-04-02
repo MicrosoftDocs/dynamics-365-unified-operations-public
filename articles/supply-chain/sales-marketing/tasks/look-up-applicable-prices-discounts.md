@@ -4,7 +4,7 @@
 title: Look up applicable prices and discounts
 description: This procedure shows how to find the price and/or discount for a product which is currently valid for a specific customer, without creating a sales order. 
 author: omulvad
-manager: AnnBe 
+manager: tfehr 
 ms.date: 11/10/2016
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
