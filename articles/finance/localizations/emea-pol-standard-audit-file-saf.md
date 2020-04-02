@@ -5,7 +5,7 @@ title: Standard audit file (SAF) for Poland
 description: Users in legal entities in Poland can generate a Standard Audit File for Tax (SAF-T) in XML format. This topic provides information about the formats for Poland. 
 author: LizaGolub
 manager: AnnBe
-ms.date: 03/20/2020
+ms.date: 04/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -642,7 +642,7 @@ Conditions for **TaxExemptReason_LOOKUP** are sales tax exempt codes that are de
 - **P_19B** indicates the provision of Directive 2006/112/EC, which exempts the supply of goods or such services from such tax.
 - **P_19C** indicates another legal basis that indicates that the supply of goods or services benefits from the exemption.
 
-Specify as the last in list condition for **Empty** result with corresponding **Not blank** value in **Tax exempt code* column.
+Specify as the last condition in the list, an **Inne** or **Other** result with the value **Not blank**  in the **Tax exempt code** column.
 
 When you've completed the setup for the **TaxExemptReason_LOOKUP** lookup field and are ready to set up the next lookup field, select **Save**.
 
