@@ -74,7 +74,7 @@ The resulting text value.
 
 If the `regular expression flag` argument is **TRUE**, this function returns the specified string after it has been changed by applying the regular expression that is specified by the `pattern` argument. The regular expression is used to find the characters that must be replaced.
 
-If the `regular expression flag` argument is **FALSE**, this function behaves like [TRANSLATE](er-functions-text-translate.md). The characters that are specified by the `replacement` argument are used to replace the characters that are found. 
+If the `regular expression flag` argument is **FALSE**, this function returns the specified string after the set of characters that is defined in the `pattern` argument (if any) has been replaced in this text by characters of the `replacement` argument. 
 
 ## Example 1
 
