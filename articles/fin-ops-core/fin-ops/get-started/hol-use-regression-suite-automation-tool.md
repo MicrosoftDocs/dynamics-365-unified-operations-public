@@ -38,17 +38,46 @@ ms.dyn365.ops.version: AX 7.0.0, Operations
 
 This tutorial walks through some of the advanced features of the Regression suite automation tool (RSAT), includes a demo assignment, and describes strategy and key learning points. 
 
-If you are new to RSAT, start with the intoductory tutorial [Get Started with RSAT](./hol-set-up-regression-suite-automation-tool.md)
+If you are new to RSAT, start with the intoductory tutorial [Get Started with RSAT](./hol-set-up-regression-suite-automation-tool.md).
 
 ## Notable Features of RSAT and Task recorder
 
 ### Validate a field value
+
 RSAT allows you to include validation steps within your test case to validate expected values. For information about this feature, see the article [Validate expected values](../../dev-itpro/perf-test/rsat/rsat-validate-expected.md).
 
+The following example shows how you can use this feature to validate whether the on-hand inventory is more than 0 (zero).
+
+1. In the demo data in the **USMF** company, create a task recording that has the following steps:
+
+    1. Go to **Product information management \> Products \> Released products**.
+    2. Use the Quick Filter to find records. For example, filter on a value of **1000** for the **Item number** field.
+    3. Select **On-hand inventory**.
+    4. Use the Quick Filter to find records. For example, filter on a value of **1** for the **Site** field.
+    5. In the list, mark the selected row.
+    6. Validate that the value of the **Total available** field is **411.0000000000000000**.
+
+2. Save the task recording and attach it to your test case in Azure Devops.
+3. Add the test case to the test plan, and load the test case into RSAT.
+4. Open the Excel parameter file. On the **InventOnhandItem** tab, you will see a **Validate InventOnhandItem** section that includes an **Operator** field.
+
+    ![Operator field](./media/use_rsa_tool_08.png)
+
+5. To validate whether the inventory on-hand will always be more than 0, change the value of the **Value** field from **411** to **0** and the value of the **Operator** field from an equal sign (**=**) to a greater than sign (**\>**).
+
+    ![Values of the Value and Operator fields changed](./media/use_rsa_tool_09.png)
+
+6. Save and close the Excel parameter file.
+7. Select **Upload** to save the changes that you made to the Excel parameter file to Azure DevOps.
+
+Now, if the value of the **Total Available** field for the specified item in inventory is more than 0 (zero), tests will pass, regardless of the actual on-hand inventory value.
+
 ### Saved variables and chaining of test cases
+
 One of the key features of RSAT is the chaining of test cases, that is, the ability of a test to pass variables to other tests. For more information, see the article [Copy variables to chain test cases](../../dev-itpro/perf-test/rsat/rsat-chain-test-cases.md).
 
 ### Derived test case
+
 RSAT lets you use the same task recording with multiple test cases, enabling a task to run with different data configurations. See the article [Derived test cases](../../dev-itpro/perf-test/rsat/rsat-derived-test-cases.md) for more information.
 
 ### Validate notifications and messages
@@ -66,72 +95,9 @@ After the test case is run, the message in the Excel parameter file is compared 
 > [!NOTE]
 > You can enter more than one message on the **MessageValidation** tab in the Excel parameter file. The messages also can be error or warning messages instead of informational messages.
 
-### Validate values by using operators
-
-**I AM HERE**
-In previous versions of RSAT, you could validate values only if a control value equaled an expected value. The new feature lets you validate that a variable isn't equal to, is less than, or is more than a specified value.
-
-- To use this feature, open the **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** file under the RSAT installation folder (for example, **C:\\Program Files (x86)\\Regression Suite Automation Tool**), and change the value in the following element from **false** to **true**.
-
-    ```xml
-    <add key="AddOperatorFieldsToExcelValidation" value="false" />
-    ```
-
-    In the Excel parameter file, a new **Operator** field appears.
-
-    > [!NOTE]
-    > If you've been using an older version of RSAT, you must generate new Excel parameter files.
-
-    ![Operator field](./media/use_rsa_tool_07.png)
-
-The following example shows how you can use this feature to validate whether the on-hand inventory is more than 0 (zero).
-
-1. In the demo data in the **USMF** company, create a task recording that has the following steps:
-
-    1. Go to **Product information management \> Products \> Released products**.
-    2. Use the Quick Filter to find records. For example, filter on a value of **1000** for the **Item number** field.
-    3. Select **On-hand inventory**.
-    4. Use the Quick Filter to find records. For example, filter on a value of **1** for the **Site** field.
-    5. In the list, mark the selected row.
-    6. Validate that the value of the **Total available** field is **411.0000000000000000**.
-
-2. Save the task recording to the BPM library in LCS, and sync it to Azure DevOps.
-3. Add the test case to the test plan, and load the test case into RSAT.
-4. Open the Excel parameter file. On the **InventOnhandItem** tab, you will see a **Validate InventOnhandItem** section that includes an **Operator** field.
-
-    ![Operator field](./media/use_rsa_tool_08.png)
-
-5. To validate whether the inventory on-hand will always be more than 0, change the value of the **Value** field from **411** to **0** and the value of the **Operator** field from an equal sign (**=**) to a greater than sign (**\>**).
-
-    ![Values of the Value and Operator fields changed](./media/use_rsa_tool_09.png)
-
-6. Save and close the Excel parameter file.
-7. Select **Upload** to save the changes that you made to the Excel parameter file to Azure DevOps.
-
-Now, if the value of the **Total Available** field for the specified item in inventory is more than 0 (zero), tests will pass, regardless of the actual on-hand inventory value.
-
-### Generator logs
-
-This feature creates a folder that contains the logs of the test cases that have been run.
-
-- To use this feature, open the **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** file under the RSAT installation folder (for example, **C:\\Program Files (x86)\\Regression Suite Automation Tool**), and change the value in the following element from **false** to **true**.
-
-    ```xml
-    <add key="LogGeneration" value="false" />
-    ```
-
-After the test cases are run, you can find the log files under **C:\\Users\\\<Username\>\\AppData\\Roaming\\regressionTool\\generatorLogs**.
-
-![GeneratorLogs folder](./media/use_rsa_tool_10.png)
-
-> [!NOTE]
-> If there were existing test cases before you changed the value in the .config file, logs won't be generated for those test cases until you generate new test execution files.
-> 
-> ![Generate Text Execution files only command on the New menu](./media/use_rsa_tool_11.png)
-
 ### Snapshot
 
-This feature takes screenshots of the steps that were performed during task recording.
+This feature takes screenshots of the steps that were performed during task recording. It is useful for auditing or debugging purposes.
 
 - To use this feature, open the **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** file under the RSAT installation folder (for example, **C:\\Program Files (x86)\\Regression Suite Automation Tool**), and change the value of the following element from **false** to **true**.
 
@@ -139,13 +105,7 @@ This feature takes screenshots of the steps that were performed during task reco
     <add key="VerboseSnapshotsEnabled" value="false" />
     ```
 
-Under **C:\\Users\\\<Username\>\\AppData\\Roaming\\regressionTool\\playback**, a separate folder is created for each test case that is run.
-
-![Snapshot folder for a test case](./media/use_rsa_tool_12.png)
-
-In each of these folders, you can find snapshots of the steps that were performed while the test cases were run.
-
-![Snapshot files](./media/use_rsa_tool_13.png)
+When your run the test case, RSAT will generate snapshots (images) of the steps in the playback folder of the test cases in the working diretory. If you are using an older version of RSAT, the images are saved to **C:\\Users\\\<Username\>\\AppData\\Roaming\\regressionTool\\playback**, a separate folder is created for each test case that is run.
 
 ## Assignment
 
