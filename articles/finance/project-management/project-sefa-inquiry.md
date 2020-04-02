@@ -1,3 +1,33 @@
+---
+# required metadata
+
+title:  Set up interest distribution for cash accounts
+description: This topic explains how to set up your participating cash accounts on the Interest distribution rules page. You must complete this setup before you distribute the interest.
+author: velofog
+manager: ?
+ms.date: 04/2/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: PSNProjSEFAinquiry, 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: roschlom
+ms.search.scope: Operations, Core 
+# ms.tgt_pltfrm: 
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.search.region: Global
+ms.search.industry: public sector
+ms.author: v-alpavk
+ms.search.validFrom: 2020-4-01
+ms.dyn365.ops.version: 10.0.11
+
+---
+
 # Schedule of Expenditures of Federal Awards Inquiry
 
 Agencies that receive federal funds are subject to audit requirements, also known as single audits, according to Office of Management and Budget Circular A-133.  This audit process is used to report on the revenues and expenditures of federal grants on a recurring basis.  An output of the single audit includes the Schedule of Expenditures of Federal Awards.  
