@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Commerce architecture overview
+title: Dynamics 365 Commerce architecture overview
 description: This topic provides an overview of all components in the Dynamics 365 Commerce ecosystem, including integration points to the suite of Dynamics 365 products.
 author: samjarawan
 manager: AnnBe
@@ -30,11 +30,13 @@ ms.dyn365.ops.version: Release 10.0.11
 
 ---
 
-# Commerce architecture overview
+# Dynamics 365 Commerce architecture overview
 
 [!include [banner](includes/banner.md)]
 
-This topic provides an overview of all components in the Microsoft Dynamics 365 Commerce ecosystem, including integration points to the suite of Dynamics 365 products. The following diagram shows an overview of Dynamics 365 Commerce components.
+This topic provides an overview of all components in the Microsoft Dynamics 365 Commerce ecosystem, including integration points to the suite of Dynamics 365 products. 
+
+The following diagram shows an overview of Dynamics 365 Commerce components.
 
 ![Commerce Architecture](./media/commerce-architecture-overview.jpg)
 
