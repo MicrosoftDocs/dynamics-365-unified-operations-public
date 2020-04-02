@@ -4,8 +4,8 @@
 title: Quality management for warehouse processes
 description: Quality management for warehouse processes extends the capabilities of quality management. It allows users to integrate item sampling controls into the warehouse receiving process using advanced warehouse management. 
 author: Henrikan
-manager: AnnBe
-ms.date: 03/16/2020
+manager: tfehr
+ms.date: 04/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,7 +23,7 @@ ms.search.scope:  Core, Operations
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: henrikan
-ms.search.validFrom: 2020-03-16
+ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: Release 10.0.11
 ---
 
@@ -92,7 +92,7 @@ _Quality management for warehouse processes_ controls several key settings for q
 
 ### Quality associations
 
-<!-- KFM: Steal a bit of text and link to this: https://docs.microsoft.com/en-us/dynamics365/supply-chain/inventory/enable-quality-management#working-with-quality-associations-->
+Each [quality association record](enable-quality-management.md) defines the set of tests, the acceptable quality level (AQL), and the sampling plan that applies to the quality orders that are generated. To set one up:
 
 1. Go to **Inventory Management > Setup > Quality Control > Quality Associations**.
 1. Create or select the quality association entry for the item or group (or all items) that you are working with.
@@ -147,9 +147,7 @@ If you define an item sampling that uses _Quality management for warehouse proce
 
 ### Item Sampling
 
-<!-- KFM: add an intro that explains what "item sampling" means. Steal from legacy doc and link from here. -->
-
- _Quality management for warehouse processes_ introduces the concept of _item sampling scope_, which is used when evaluating whether and how quality orders and/or quality item sampling work will be created.
+Item sampling controls how often items are sent for quality control. _Quality management for warehouse processes_ introduces the concept of _item sampling scope_, which is used when evaluating whether and how quality orders and/or quality item sampling work will be created.
 
 To set up item sampling, go to **Inventory management > Setup > Quality Control > Item Sampling**, where you can use the **Sampling scope** field to set the item sampling scope to one of the following values:
 
@@ -294,7 +292,7 @@ To work through this scenario, you must prepare your system as follows:
     1. Select warehouse 51.
     1. Expand the **Warehouse** FastTab and set **Enable quality order for warehouse processes** to *Yes*.
 
-### Quality in setup – move to the quality control location (QMS)
+### Quality in setup – move to the quality control location
 
 Now you must prepare a basic setup that will allow you system to support _Quality management for warehouse processes_ for warehouse 51. (The demo data defines a quality management location called *QMS*, which is referenced several times in this scenario.
 ) You will prepare the following elements, as described in the subsections of this section:
@@ -399,17 +397,17 @@ Create a quality association that will use the new item sampling.
 
 #### Mobile device menu items for quality in
 
-To complete the setup of moving goods to QMS, you must make the quality item sampling work available from a mobile device menu item. To set this up:
+To complete the setup of moving goods to the quality control location, you must make the quality item sampling work available from a mobile device menu item. To set this up:
 
 1. Go to **Warehouse management > Setup > Mobile device > Mobile device menu items**.
 1. Select the **Purchase Put-away** mobile device menu item.
 1. On the **Work classes** FastTab, add the *QualityIn* work class ID.
 
-#### Summary: Your move to QMS setup
+#### Summary: Your move to quality control setup
 
-You have now defined a quality association that triggers the creation of a quality order using the *Quality management for warehouse processes* feature. You have set up the work and location data for warehouse 51 to ensure that specific work is created upon purchase registration for item M9201. This ensures that every third license plate registered will be moved to a quality location (QMS) and a quality order will be created for the license plate quantity. Everything other than every third registered license plate will be directed to put-away instead of QMS.
+You have now defined a quality association that triggers the creation of a quality order using the *Quality management for warehouse processes* feature. You have set up the work and location data for warehouse 51 to ensure that specific work is created upon purchase registration for item M9201. This ensures that every third license plate registered will be moved to a quality location (QMS) and a quality order will be created for the license plate quantity. Everything other than every third registered license plate will be directed to put-away instead of the quality control location.
 
-### Process Quality Management Work to QMS
+### Process quality management work
 
 1. Go to **Procurement and sourcing > Purchase orders > All purchase orders**
 1. Create a new purchase order with the following settings:
@@ -433,9 +431,9 @@ You have now defined a quality association that triggers the creation of a quali
 1. In the **Purchase order lines** section, select the line for **Item number** *M9201* and then select **Purchase order lines > Work Details**.
 1. Notice that the second and third work headers created are normal put-away work, while the first and the fourth are quality item sampling work. This is follows our item sampling setup, which is set to sample every third license plate.
 
-#### Move to QMS
+#### Move to the quality control location
 
-You will now move the license plates to their designated locations: the first and fourth license plates will go to QMS, while the second and third will go directly to storage. Do the following:
+You will now move the license plates to their designated locations: the first and fourth license plates will go to the quality control location, while the second and third will go directly to storage. Do the following:
 
 1. Go to a mobile device or emulator running the Warehouse mobile application (WMA) and sign into warehouse 51 by using **User ID** *51* and **Password** *1*.
 1. Go to **Inbound > Purchase put away** and each of the license plates from the previous receiving procedure until you have closed all the work.
@@ -444,11 +442,11 @@ You will now move the license plates to their designated locations: the first an
 
 You have now executed the quality item sampling work for the first and fourth license plates by moving them to the quality inspection location, while putting away the second and third license plates. The next step will be to do the quality order testing and control.
 
-### Quality out setup: Move from QMS to storage or return
+### Quality out setup: Move from the quality control location to storage or return
 
 When workers report back on quality order results, the system will create work automatically.
 
-You will now proceed with the required base setup of the work class, work template, and location directive to enable quality management for warehouse processes to create the required work to moved the quality order quantity from QMS to a designated warehouse location.
+You will now proceed with the required base setup of the work class, work template, and location directive to enable quality management for warehouse processes to create the required work to moved the quality order quantity from the quality control location to a designated warehouse location.
 
 #### Work class for quality out
 
@@ -531,11 +529,11 @@ You will now proceed with the required base setup of the work class, work templa
 
 Warehouse workers will now be able to pick quality order work using the **QMS Put-away** menu item, both for the quality failed goods to the put at a return location, and the quality passed goods to be put in the bulk-001 location.
 
-#### Summary: Your move from QMS setup
+#### Summary: Your move from quality control setup
 
 You set up the work and location data for warehouse 51 to ensure that work is automatically created upon quality order completion. This ensures that each quality-controlled license plate is moved to either a bulk or return location.
 
-### Process quality management work from QMS
+### Process quality management work
 
 1. Go to  **Inventory management > Periodic tasks > Quality management > Quality orders**.
 1. Select the first quality order for the quantities that were registered.
