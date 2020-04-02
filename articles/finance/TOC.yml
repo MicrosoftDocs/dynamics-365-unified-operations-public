@@ -70,11 +70,11 @@
           items:
           - name: What's new or changed in Finance home page
             href: get-started/whats-new-home-page.md
-          - name: Finance version 10.0.10 (May 2020)
+          - name: Finance 10.0.10 (May 2020)
             href: get-started/whats-new-changed-10-0-10.md            
-          - name: Finance version 10.0.9 (April 2020)
+          - name: Finance 10.0.9 (April 2020)
             href: get-started/whats-new-changed-10-0-9.md
-          - name: Finance version 10.0.8 (February 2020)
+          - name: Finance 10.0.8 (February 2020)
             href: get-started/whats-new-changed-10-0-8.md
       - name: Removed or deprecated features
         items:
@@ -2266,6 +2266,8 @@
         items:
         - name: Netherlands overview
           href: localizations/netherlands.md
+        - name: VAT declaration
+          href: localizations/emea-nl-VAT-declaration.md
         - name: Electronic tax declarations (EVAT)
           href: localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
         - name: Semansys XBRL integration
