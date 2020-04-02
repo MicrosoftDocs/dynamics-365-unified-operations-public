@@ -76,9 +76,10 @@ In some situations, you might have to change a PO after it has reached an approv
 
 If the PO was created by using a change management process, you can make changes by recalling the order or, if the order has already been approved, by using the **Request change** action. In this case, the approval status is changed back to **Draft**, and you can then modify the order. After you've finished making changes, you might have to submit the PO for re-approval. You can configure the types of changes that require re-approval by using a **Re-approval rule for purchase orders** policy rule on the **Purchasing policies** page.
 
-If part of the ordered quantity for a PO line has been delivered, you can't change the ordered quantity. However, you can change the **Deliver remainder** quantity on the line. You can then use the **Finalize** action to cancel lines and prevent further processing. 
+If part of the ordered quantity for a PO line has been delivered, you can't change the ordered quantity when the purchase order is in **Draft**. However, you can change the **Deliver remainder** quantity on the line given that the purhcase order is in status **Draft**.
 
-After an order has been confirmed, you can no longer delete it. However, you can cancel the total quantity or any remaining quantity on an order, provided that the quantity hasn't been received or invoiced.
+After an order has been confirmed, you can no longer delete it. However, you can cancel the total quantity or any remaining quantity on an order, provided that the quantity hasn't been received or invoiced. You can then use the **Finalize** action to prevent further processing. 
+
 
 ## Canceling purchase orders
 
