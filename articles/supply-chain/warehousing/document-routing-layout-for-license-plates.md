@@ -55,14 +55,14 @@ The text `$LicensePlateId$` will be replaced with a data value as part of the la
 
 You can see the values to be printed by going to **Warehouse management \> Inquiries and reports \> License plate labels**.
 
-You can use any of several common label generation tools to help with the text format for the label layout (including many that support the `$[FieldName]$` format). In addition, Supply Chain Management also uses special formatting logic as part of the document routing layout field mapping.
+You can use any of several common label generation tools to help with the text format for the label layout (including many that support the `$FieldName$` format). In addition, Supply Chain Management also uses special formatting logic as part of the document routing layout field mapping.
 
 ## Custom number formats
 
 You can customize the formatting of your printed numerical field values using codes with the following format:
 
 ```dos
-$[FieldName:FormatString]$
+$FieldName:FormatString$
 ```
 
 Where:
@@ -82,7 +82,7 @@ For a complete list of available number format strings, see [Custom numeric form
 You can remove the first characters of a string using the following field and format code:
 
 ```dos
-$[FieldName:#..]$
+$FieldName:#..$
 ```
 
 Where `#` specifies the number of characters to skip. So, for example, to print an SSCC license plate number that doesn't includes the first two characters, you would use `$LicensePlateId:2..$`. In this case, the license plate number "0011111111111222221" would print as "11111111111222221".
@@ -128,7 +128,7 @@ You can print this, one line at a time, using the following codes:
 Use the following format to print from a display method:
 
 ```dos
-$[DisplayMethod()]$
+$DisplayMethod()$
 ```
 
 You can combine this with other types of formatting described previously in this topic.
