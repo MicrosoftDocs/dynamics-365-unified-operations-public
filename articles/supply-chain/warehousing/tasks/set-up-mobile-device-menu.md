@@ -4,7 +4,7 @@
 title: Set up a mobile device menu item for completing work of type Purchase order
 description: This topic shows how to set up a Mobile device menu item. 
 author: ShylaThompson
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/02/2019
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: WHSRFMenuItem, WHSRFAutoConfirm, WHSRFMenu   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  

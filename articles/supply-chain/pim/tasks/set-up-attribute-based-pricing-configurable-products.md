@@ -4,7 +4,7 @@
 title: Set up attribute-based pricing for configurable products
 description: This topic explains how to set up attribute-based pricing. 
 author: ShylaThompson
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/20/2019
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCPriceModelList, PCPriceModel, PCConstraintEditor   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
