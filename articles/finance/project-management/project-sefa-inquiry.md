@@ -1,6 +1,9 @@
 # Schedule of Expenditures of Federal Awards Inquiry
 
-Agencies that receive federal funds are subject to audit requirements, also known as single audits, according to Office of Management and Budget Circular A-133. The single audit includes a report called the Schedule of Expenditures of Federal Awards.  This is to report expenditures of federal grants on a recurring basis. This new inquiry includes the Catalog of Federal Domestic Assistance title and number, grant number, year of grant, name of the federal agency providing the funds, and name of the pass-through entity. The inquiry is for a specific period of time, typically the same as the financial statement period - a fiscal year.
+Agencies that receive federal funds are subject to audit requirements, also known as single audits, according to Office of Management and Budget Circular A-133.  This audit process is used to report on the revenues and expenditures of federal grants on a recurring basis.  An output of the single audit includes the Schedule of Expenditures of Federal Awards.  
+
+This new inquiry includes the Catalog of Federal Domestic Assistance title and number, grant number, year of grant, name of the federal agency providing the funds, and name of the pass-through entity. The inquiry is for a specific period of time, typically the same as the financial statement period - a fiscal year.
+
 The inquiry includes grants with projection dates in the selected date range. The **Grantor agency** column of the report displays the grant customer or, for a pass-through grant, the grantor agency. The grant customer for a pass-through grant displays in the **Pass-through agency** column. If it is not a pass-through grant, the **Pass-through agency** column is blank.
 
 
@@ -43,12 +46,14 @@ Note: Catalog of Federal Domestic Assistance numbers will be initially populated
 
 
 ## Exclude grants from SEFA reporting based on the grant type
+
 1. Go to **Project management and accounting > Setup > Grants > Grant types**.
 2. In the **Default information** FastTab, select the **Exclude from Schedule of Expenditures of Federal Awards** check box.
 3. Select **Save** to save your changes.
 
 
 ## Run the Schedule of Expenditures of Federal Awards the data on this inquiry
+
 1. Go to **Project management and accounting > Inquiries and reports > Grant inquiry > Schedule of Expenditures of Federal Awards**
 2. In the parameters section, follow these steps:
 - In the **Date interval** field, select the code for the date interval. Alternatively, in the **From date** and **To date** fields, define the date interval.
