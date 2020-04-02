@@ -76,7 +76,7 @@ The headless commerce engine exposed via the commerce scale unit allows partners
 The Dynamics 365 Commerce application, commonly referred to as the Commerce headquarters component, provides back office capabilities which enable the configuration of products, employees, business processes, and other functionality necessary for the business. It is also the application used by call center workers to provide assisted commerce-related workflows. 
 
 #### Dynamics 365 Supply Chain Management
-[Dynamics 365 Supply Chain Management](https://dynamics.microsoft.com/supply-chain-management/overview/) provides functionality to manage your products throughout the supply chain life cycle, from production through inventory and warehouse to transportation and distribution. For more information, see [Help resources for Supply Chain Management](https://docs.microsoft.com/dynamics365/supply-chain/index).
+[Dynamics 365 Supply Chain Management](https://dynamics.microsoft.com/supply-chain-management/overview/) provides functionality to manage your products throughout the supply chain lifecycle, from production through inventory and warehouse to transportation and distribution. For more information, see [Help resources for Supply Chain Management](https://docs.microsoft.com/dynamics365/supply-chain/index).
 
 #### Dynamics 365 Finance
 [Dynamics 365 Finance](https://dynamics.microsoft.com/finance/overview/) provides functionality to automatically manage your global finances. For customers of the Dynamics 365 Commerce application, Dynamics 365 Finance offers an integrated experience for managing stores and e-commerce financial statements alongside the rest of their operations. For more information, see [Dynamics 365 Finance help resources](https://docs.microsoft.com/dynamics365/finance/index).
@@ -97,7 +97,7 @@ To accommodate scenarios where internet connectivity is poor or unreliable, bein
 
 ### E-Commerce platform
 #### Content management system 
-A fully-featured content management system is integrated directly into the e-commerce platform. Along with rich indexing features, it provides life cycle management for marketing materials that supplement the product information managed by the headless commerce engine, including features for localization and multi-item publishing through releases. The system is built on top of scalable, resilient Azure infrastructure including Azure Active Directory and Azure Cosmos DB. 
+A fully-featured content management system is integrated directly into the e-commerce platform. Along with rich indexing features, it provides lifecycle management for marketing materials that supplement the product information managed by the headless commerce engine, including features for localization and multi-item publishing through releases. The system is built on top of scalable, resilient Azure infrastructure including Azure Active Directory and Azure Cosmos DB. 
 
 #### Digital asset management 
 Extending the content management store, Commerce digital asset management keeps track of images, videos, and file downloads served by the web storefront site. Its image resizer service optimizes downloaded images for different devices and contexts, enhancing performance while managing image quality. It also integrates with Azure Media Services for efficient playback of video streams. 
