@@ -1952,6 +1952,8 @@
             href: general-ledger/tax-engine-integration.md
           - name: Extending the Tax engine
             href: general-ledger/extend-tax-engine-configurations.md
+          - name: Troubleshoot GTE
+            href: localizations/tax-engine-trouble-shooting.md
         - name: Tax thresholds FAQ
           href: localizations/apac-ind-tax-thresholds.md          
         - name: Stock transfers
