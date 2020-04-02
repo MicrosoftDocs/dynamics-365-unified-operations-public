@@ -40,9 +40,7 @@ Before you can use this feature, it must be enabled on your system. Administrato
 
 ## Key benefits
 
-_Quality management for warehouse processes_ automatically creates work as part of the receiving process to move the inventory quantity required for quality control to a quality control location. Any received quantity that exceeds the quantity required for quality control, as per the item sampling setup, will move to an inbound location as per the location directive setup. Once the quality order is validated, work is automatically created to move the quantity for the quality order to a new, inbound location as per the location directive setup. The automatic creation of work with only the required quantity to move to and from quality control provides an integrated process experience.
-
-<!-- KFM: Maybe the above paragraph should also mention the fail case, where inventory is moved to RETURN. -->
+_Quality management for warehouse processes_ automatically creates work as part of the receiving process to move the inventory quantity required for quality control to a quality control location. Any received quantity that exceeds the quantity required for quality control, as per the item sampling setup, will move to an inbound location as per the location directive setup. Once the quality order is validated, work is automatically created to move the quantity for the quality order to a new inbound or return location as defined by the validation result and location directive setup. The automatic creation of work with only the required quantity to move to and from quality control provides an integrated process experience.
 
 > [!NOTE]
 > When _Quality management for warehouse processes_ is enabled, it's still possible to leverage the manual process of using inventory movement and movement-by-template to have a warehouse worker trigger the creation of warehouse work for moving inventory from a quality control location to a new location. It's also still possible to set up an inbound location directive that will move inventory in its entirety from a receiving location to a quality control location without considering the item-sampling setup.
@@ -52,8 +50,6 @@ _Quality management for warehouse processes_ automatically creates work as part 
 When you enable _Quality management for warehouse processes_ it changes the setup of key warehouse management and quality management entities. The following figure provides an overview of the entities that enable quality orders for warehouse processes. The texts in parenthesis show suggested action for when quality management has been applied prior to enabling _Quality management for warehouse management processes_.
 
 ![Quality management entity diagram](media/quality-management-entity-diagram.png "Quality management entity diagram")
-
-<!-- KFM: Graphics aren't translated and also aren't accessible. Is it possible instead to present this info as text or in a table? -->
 
 ## Enablers: Work order types "Quality item sampling" and "Quality order"
 
@@ -96,10 +92,10 @@ _Quality management for warehouse processes_ controls several key settings for q
 
 ### Quality associations
 
-<!-- KFM: please provide a short intro to this procedure. What are we about to do here? What is a "quality association"? -->
+<!-- KFM: Steal a bit of text and link to this: https://docs.microsoft.com/en-us/dynamics365/supply-chain/inventory/enable-quality-management#working-with-quality-associations-->
 
 1. Go to **Inventory Management > Setup > Quality Control > Quality Associations**.
-<!-- KFM: it seems like we need to select something here. Which do I choose and why? Can we link to a page where the purpose of these records and the other settings here are described?  -->
+1. Create or select the quality association entry for the item or group (or all items) that you are working with.
 1. On the **Conditions** FastTab, set the **Applicable warehouse type** to one of the following:
     - **Quality management for warehouse processes only** - Activates the _Quality management for warehouse processes_ features. You can only select this option when the reference type is either **Purchase** or **Production**.
     - **All** - Disables _Quality management for warehouse processes_ features. Use this setting for all reference types other than **Purchase** or **Production**.
@@ -107,27 +103,25 @@ _Quality management for warehouse processes_ controls several key settings for q
 > [!NOTE]
 > _Quality Management for warehouse processes_ only takes effect when the item on the source document line uses advanced warehouse management processes and the warehouse parameter **Enable quality order for warehouse processes** is set to _Yes_ for the warehouse on the source document line.
 
-<!-- KFM: I don't understand the following text and table, so I can't really review them. I think we should define "quality association search hierarchy". I also don't understand the use of bold and italic here--I think we need to clean them up. -->
+As each item is registered (or reported as finished), the system checks to see which quality associations apply to that item.
 
-When _Quality management for warehouse processes_ is enabled, the applicable warehouse type is logically inserted into the fourth level of the quality association search hierarchy. The following table provides a logical representation of the search hierarchy.
+When _Quality management for warehouse processes_ is enabled, the applicable warehouse type is logically inserted into the fourth search group of the quality association search hierarchy. The following table provides a logical representation of the search hierarchy. 
 
-| Level | Description |
+| Search Group | Description |
 | --- | --- |
-| Level&nbsp;1 | **Reference type**, **Event type**, and **Execution match**. If there is a match against the source document line, then proceed to level 2. |
-| Level 2 | **Item code**: _Table_, _Group_, or _All_. _Table_ is more specific than _Group_, and _Group_ is more specific than _All_. If there is a match for _Table_ (specific item), then proceed to level 3. If there is no match for _Table_, then search for a _Group_ match. If there is no match for _Group_, then _All_ applies. If there is a match, proceed to level 3. |
-| Level 3 | **Account code** / **Resource code**. Similar search as applied for **Item code**. |
-| Level 4 | **Applicable warehouse type**: _Quality order for warehouse processes only_ or _All_. If the warehouse on the source document has **Enable quality order for warehouse processes** set to _Yes_, and the item on the source document line is set to _Use warehouse management processes_, then associations with both _Quality management for warehouse processes only_ and _All_ will be applicable in parallel if both exist. If the warehouse on the source document has **Enable quality order for warehouse processes** set to _No_, and the item on the source document line is set to _Use warehouse management processes_, then only quality management will be applicable. |
+| Group&nbsp;1 | Check the **Reference type**, **Event type**, and **Execution match** values for each quality association against the item. If there is a match against the source document line, then proceed to group 2. |
+| Group 2 | Check the **Item code** (_Table_, _Group_, or _All_) for each quality association against the item. _Table_ is more specific than _Group_, and _Group_ is more specific than _All_. If there is a match for _Table_ (specific item), then proceed to Group 3. If there is no match for _Table_, then search for a _Group_ match. If there is no match for _Group_, then _All_ applies. If there is a match, proceed to group 3. |
+| Group 3 | Check the **Account code** and **Resource code** values for each quality association against the item. Applies similar logic as is applied for **Item code**. |
+| Group 4 | Check the **Applicable warehouse type** (_Quality order for warehouse processes only_ or _All_) of each quality association against the item. If the warehouse on the source document has **Enable quality order for warehouse processes** set to _Yes_, and the item on the source document line is set to _Use warehouse management processes_, then associations with both _Quality management for warehouse processes only_ and _All_ will be applicable in parallel if both exist. If the warehouse on the source document has **Enable quality order for warehouse processes** set to _No_, and the item on the source document line is set to _Use warehouse management processes_, then only quality management will be applicable. |
 
-For example, imagine that you have defined a warehouse with **Enable quality order for warehouse processes** set to _Yes_, and you have two quality associations defined for reference type purchase: one for all items and one for event type registration. The only difference between the two quality associations is the **Applicable warehouse type** setting&mdash;one is set to _All_, while the other is _Quality management for warehouse processes only_. In such a case, they are both equally specific and both quality associations will be applicable. However, if the test group is the same for both of the associations, then only one quality order will be created. The quality order will be created for the quality association where the **Applicable warehouse type** is set to _Quality order for warehouse processes only_.
+For example, imagine that you have defined a warehouse with **Enable quality order for warehouse processes** set to _Yes_, and you have two quality associations defined for reference type purchase: one for all items and one for event type registration. The only difference between the two quality associations is the **Applicable warehouse type** setting&mdash;one is set to _All_, while the other is _Quality management for warehouse processes only_. In such a case, they are both equally specific and both quality associations will be applicable. However, if the **Test group** (which establishes the test procedure to be applied) is the same for both of the associations, then only one quality order will be created. The quality order will be created for the quality association where the **Applicable warehouse type** is set to _Quality order for warehouse processes only_.
 
-<!-- KFM: I think we need to explain what a "test group" is and what its settings can be. -->
-
-If the test group is not the same for both of the associations, then two quality orders will be created. The first quality order will be created for the quality association where the **Applicable warehouse type** is _Quality order for warehouse processes only_. The second quality order will be created for the quality association where the **Applicable warehouse type** is _All_.
+If the **Test group** is not the same for both of the associations, then two quality orders will be created. The first quality order will be created for the quality association where the **Applicable warehouse type** is _Quality order for warehouse processes only_. The second quality order will be created for the quality association where the **Applicable warehouse type** is _All_.
 
 <!-- KFM : In the above, I sometimes see "Quality order for warehouse processes only". Should these actually be "Quality management for warehouse processes only"? -->
 
 > [!NOTE]
-> The applicable warehouse type _Quality management for warehouse processes only_, is considered more specific than _All_ in cases where the criteria for the quality associations for level 1 and 2 are the same and the test group is the same. Two quality orders will only be created when the test groups differ.
+> The applicable warehouse type _Quality management for warehouse processes only_, is considered more specific than _All_ in cases where the criteria for the quality associations for groups 1 and 2 are the same and the test group is the same. Two quality orders will only be created when the test groups differ.
 
 #### Reference types
 
@@ -189,7 +183,7 @@ While workers are receiving items using the warehouse mobile application (WMA), 
 
 The following examples illustrate how the setup of a quality association and associated item sampling impacts the quality order generation when the **Applicable warehouse type** is set to _Quality management for warehouse processes only_.
 
-When the **Quantity specification** is _Full License Plate_, then the **Per nth license plate** setting controls for which license plates quality item sampling work is created. The first license plate will always go to quality, then the nth after that as controlled by this value.
+When the **Quantity specification** is _Full License Plate_, then the **Per nth license plate** controls for which license plates quality item sampling work is created. The first license plate will always go to quality, then the nth after that as controlled by this value.
 
 The **Reference type** for the examples below is _Purchase_, and the **Event type** is *Registration*.
 
