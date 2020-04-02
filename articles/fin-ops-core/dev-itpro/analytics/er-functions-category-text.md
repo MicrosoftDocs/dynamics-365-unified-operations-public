@@ -57,7 +57,7 @@ Electronic reporting (ER) text functions can be used to perform operations on da
 | [Replace](er-functions-text-replace.md) | This function returns the specified text string as a *String* value after all or part of it has been replaced with another string. |
 | [Right](er-functions-text-right.md) | This function returns a *String* value that presents the specified number of characters from the end of the specified string. |
 | [Text](er-functions-text-text.md) | This function returns the specified number as a *String* value after it has been converted to a text string that is formatted according to the server locale settings of the current application instance. |
-| [Translate](er-functions-text-translate.md) | This function returns the specified text string as a *String* value after all or part of it has been replaced with another string. |
+| [Translate](er-functions-text-translate.md) | This function returns a *String* value containing the result of the replacement of characters of the specified text in characters of another provided set of characters. |
 | [Trim](er-functions-text-trim.md) | This function returns the specified text string as a *String* value after leading and trailing spaces have been truncated, and after multiple spaces between words have been removed. |
 | [Upper](er-functions-text-upper.md) | This function returns the specified text string as a *String* value after it has been converted to uppercase letters. |
 
