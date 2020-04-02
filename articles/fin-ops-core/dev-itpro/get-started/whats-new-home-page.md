@@ -37,7 +37,7 @@ To see what's new or changed in the Platform updates for Finance and Operations 
 
 | **Version**        | **Build number** | **Auto-update availability** | **Learn more**                                                                                                                                                                                                                        |
 |--------------------|------------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Platform updates for 10.0.10 | 7.0.5600         | May 2020     | [Preview features in Platform update 34 for Finance and Operations apps](whats-new-platform-update-34.md)  |
+| Platform updates for 10.0.10 | 7.0.5600         | May 2020     | [Platform updates for version 10.0.10 of Finance and Operations apps](whats-new-platform-update-34.md)  |
 | Platform update 33 | 7.0.5559         | April 2020     | [What's new or changed in Platform update 33 for Finance and Operations apps](whats-new-platform-update-33.md)  |
 | Platform update 32 | 7.0.5493         | February 2020     | [What's new or changed in Platform update 32 for Finance and Operations apps](whats-new-platform-update-32.md)  |
 | Platform update 31 | 7.0.5457      | January 2020     | [What's new or changed in Platform update 31 for Finance and Operations apps](whats-new-platform-update-31.md) |
