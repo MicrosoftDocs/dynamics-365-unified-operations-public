@@ -41,7 +41,7 @@ The following setup needs to be completed for data to display in **Vendor paymen
 1. Go to **System administration > Setup > System Parameters** to set **System currency** and **System Exchange Rate**.
 2. Go to **General Ledger > Setup > Ledger**  to set **Accounting Currency** and **Exchange Rate Type**. 
 2. Define exchange rates between Transaction currencies and Accounting currency, Accounting currency and System currency. To do this, go to **General Ledger > Currencies > Currency exchange rates**.
-3. Go to **System administration > Setup > Entity Store** to refresh the **VendPaymentBIMeasure** aggregate measurement. 
+3. Go to **System administration > Setup > Entity Store** to refresh the **VendPaymentBIMeasureV2** aggregate measurement. 
 
 ## My work view
 
