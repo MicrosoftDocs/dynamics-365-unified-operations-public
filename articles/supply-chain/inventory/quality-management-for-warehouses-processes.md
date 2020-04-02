@@ -112,13 +112,11 @@ When _Quality management for warehouse processes_ is enabled, the applicable war
 | Group&nbsp;1 | Check the **Reference type**, **Event type**, and **Execution match** values for each quality association against the item. If there is a match against the source document line, then proceed to group 2. |
 | Group 2 | Check the **Item code** (_Table_, _Group_, or _All_) for each quality association against the item. _Table_ is more specific than _Group_, and _Group_ is more specific than _All_. If there is a match for _Table_ (specific item), then proceed to Group 3. If there is no match for _Table_, then search for a _Group_ match. If there is no match for _Group_, then _All_ applies. If there is a match, proceed to group 3. |
 | Group 3 | Check the **Account code** and **Resource code** values for each quality association against the item. Applies similar logic as is applied for **Item code**. |
-| Group 4 | Check the **Applicable warehouse type** (_Quality order for warehouse processes only_ or _All_) of each quality association against the item. If the warehouse on the source document has **Enable quality order for warehouse processes** set to _Yes_, and the item on the source document line is set to _Use warehouse management processes_, then associations with both _Quality management for warehouse processes only_ and _All_ will be applicable in parallel if both exist. If the warehouse on the source document has **Enable quality order for warehouse processes** set to _No_, and the item on the source document line is set to _Use warehouse management processes_, then only quality management will be applicable. |
+| Group 4 | Check the **Applicable warehouse type** (_Quality management for warehouse processes only_ or _All_) of each quality association against the item. If the warehouse on the source document has **Enable quality order for warehouse processes** set to _Yes_, and the item on the source document line is set to _Use warehouse management processes_, then associations with both _Quality management for warehouse processes only_ and _All_ will be applicable in parallel if both exist. If the warehouse on the source document has **Enable quality order for warehouse processes** set to _No_, and the item on the source document line is set to _Use warehouse management processes_, then only quality management will be applicable. |
 
-For example, imagine that you have defined a warehouse with **Enable quality order for warehouse processes** set to _Yes_, and you have two quality associations defined for reference type purchase: one for all items and one for event type registration. The only difference between the two quality associations is the **Applicable warehouse type** setting&mdash;one is set to _All_, while the other is _Quality management for warehouse processes only_. In such a case, they are both equally specific and both quality associations will be applicable. However, if the **Test group** (which establishes the test procedure to be applied) is the same for both of the associations, then only one quality order will be created. The quality order will be created for the quality association where the **Applicable warehouse type** is set to _Quality order for warehouse processes only_.
+For example, imagine that you have defined a warehouse with **Enable quality order for warehouse processes** set to _Yes_, and you have two quality associations defined for reference type purchase: one for all items and one for event type registration. The only difference between the two quality associations is the **Applicable warehouse type** setting&mdash;one is set to _All_, while the other is _Quality management for warehouse processes only_. In such a case, they are both equally specific and both quality associations will be applicable. However, if the **Test group** (which establishes the test procedure to be applied) is the same for both of the associations, then only one quality order will be created. The quality order will be created for the quality association where the **Applicable warehouse type** is set to _Quality management for warehouse processes only_.
 
-If the **Test group** is not the same for both of the associations, then two quality orders will be created. The first quality order will be created for the quality association where the **Applicable warehouse type** is _Quality order for warehouse processes only_. The second quality order will be created for the quality association where the **Applicable warehouse type** is _All_.
-
-<!-- KFM : In the above, I sometimes see "Quality order for warehouse processes only". Should these actually be "Quality management for warehouse processes only"? -->
+If the **Test group** is not the same for both of the associations, then two quality orders will be created. The first quality order will be created for the quality association where the **Applicable warehouse type** is _Quality management for warehouse processes only_. The second quality order will be created for the quality association where the **Applicable warehouse type** is _All_.
 
 > [!NOTE]
 > The applicable warehouse type _Quality management for warehouse processes only_, is considered more specific than _All_ in cases where the criteria for the quality associations for groups 1 and 2 are the same and the test group is the same. Two quality orders will only be created when the test groups differ.
@@ -129,29 +127,27 @@ When the **Reference type** is _purchase_ and the **Applicable warehouse type** 
 
 #### Quality processing policy
 
-The **Quality processing policy** setting is located on the **Quality order process** FastTab. It can have the value _Create quality order_ or _Create work only_. The default value is _Create quality order_. <!-- KFM: We should describe what this setting means and what those values do, not just what they are called. -->
+_Quality management for warehouse processes_ introduces the ability to create work based only on item sampling. This to allow for a lightweight process. The inventory for which work is created is based on the item sampling associated with the quality association. When using the lightweight process, after a worker has put the quantity at the quality control location, the quality department can manually create a quality order if needed.
 
-If the conditions of the quality association are met for a reference type, then a quality order is created. <!-- KFM: I don't understand the purpose of this paragraph. Consider adding a bit more detail.  -->
-
-_Quality management for warehouse processes_ introduces the ability to create work based only on item sampling. This to allow for a lightweight process. For example, it supports scenarios where only work is automatically created to move part of the registered quantity related to a purchase order line or production report as finished to a quality control location without creating a quality order upfront. <!-- KFM: the previous sentence is too complex. I'm not sure what you mean. Please simplify. --> The inventory for which work is created is based on the item sampling associated with the quality association. Once a worker has put the quantity at the quality control location, the quality department can manually create a quality order if needed.
+The **Quality processing policy** setting controls whether a quality order is also created when creating work for moving an item to the quality control station. It is located on the **Quality order process** FastTab. It can have the value _Create quality order_ or _Create work only_. The default value is _Create quality order_.
 
 > [!NOTE]
-> If you using a **Quality processing policy** of *Create work only* then the system only creates quality item sampling work for moving inventory to the quality control location. When the quality department validates the quality order, the system automatically creates quality order work from a quality control location. <!-- KFM: The previous sentence was unclear, so I edited it. Please confirm. --> Therefore, if you want to automatically create work for moving the inventory from the quality location to a new location when the quality order is validated, you must manually create a quality order. Validating the quality order triggers the automatic creation of quality order work for moving inventory from the quality control location.
+> Regardless of whether you are creating quality orders manually or automatically, the system automatically creates work for moving items out of the quality control location when the quality order is marked as validated.
 
 The creation of quality order work is unrelated to the quality association setup. If a work template exists with a **Work order type** of *Quality order* and the query criteria are met for that work template, then validating a quality order will trigger the creation of quality order work.
 
 #### Referenced item sampling
 
-Each quality association must reference an item sampling. An item sampling defines what quantity will be submitted to quality control. It can be set up so that it only applies to quality associations where the _**Applicable warehouse type** is _Quality management for warehouse processes only_. Item sampling where the **Sampling scope** is either _load_ or _shipment_, or where the **Quantity specification** is _Full license plate_, can only be referenced against quality associations where the **Applicable warehouse type** is _Quality management for warehouse processes only_.
+Each quality association must reference an item sampling. An item sampling defines what quantity will be submitted to quality control. It can be set up so that it only applies to quality associations where the **Applicable warehouse type** is _Quality management for warehouse processes only_. Item sampling where the **Sampling scope** is either _load_ or _shipment_, or where the **Quantity specification** is _Full license plate_, can only be referenced against quality associations where the **Applicable warehouse type** is _Quality management for warehouse processes only_.
 
-If you define an item sampling that uses _Quality management for warehouse processes only_, then you'll get an error if you try to reference it from a quality association that doesn't use _quality order for warehouse processes_. <!-- KFM: Again, do we mean "quality **management** for warehouse processes" here? -->
+If you define an item sampling that uses _Quality management for warehouse processes only_, then you'll get an error if you try to reference it from a quality association that doesn't use _quality order for warehouse processes_.
 
 > [!NOTE]
 > Item sampling that uses full blocking isn't supported for quality associations with **Applicable warehouse type** set to _Quality management for warehouse processes only_.
 
 ### Item Sampling
 
-<!-- KFM: add an intro that explains what "item sampling" means. -->
+<!-- KFM: add an intro that explains what "item sampling" means. Steal from legacy doc and link from here. -->
 
  _Quality management for warehouse processes_ introduces the concept of _item sampling scope_, which is used when evaluating whether and how quality orders and/or quality item sampling work will be created.
 
@@ -183,18 +179,16 @@ While workers are receiving items using the warehouse mobile application (WMA), 
 
 The following examples illustrate how the setup of a quality association and associated item sampling impacts the quality order generation when the **Applicable warehouse type** is set to _Quality management for warehouse processes only_.
 
-When the **Quantity specification** is _Full License Plate_, then the **Per nth license plate** controls for which license plates quality item sampling work is created. The first license plate will always go to quality, then the nth after that as controlled by this value.
+When the **Quantity specification** is _Full License Plate_, then the **Per nth license plate** setting controls for which license plates quality item sampling work is created. The first license plate will always go to quality, then the nth after that as controlled by this value.
 
 The **Reference type** for the examples below is _Purchase_, and the **Event type** is *Registration*.
-
-<!-- KFM: I still think the vast empty spaces in this table will make it very hard to read. We should consider changing to two columns, with bullet list of settings in the left column and results in the right. -->
 
 | Sampling Scope | Quantity Specification | Per updated quantity | Per storage dimension | Break count By item | Per nth license plate | Result |
 | --- | --- | --- | --- | --- | --- | --- |
 | Order | Full license plate | Yes _Locked (not editable)_ | Location: Yes<br>License Plate: Yes _Locked (not editable)_  | No | 3 | <p>**Order line quantity: 100 EA**</p><ol><li>Register receipt on WMA for 20 EA, LP1<br>Quality Item sampling work for 20 EA<br>Quality order #1 for 20 EA</li><li>Register receipt on WMA for 20 EA, LP2<br>Purchase order work for 20 EA (put away)</li><li>Register receipt on WMA for 20 EA, LP3<br>Purchase order work for 20 EA (put away)</li><li>Register receipt on WMA for 20 EA, LP4<br>Quality Item sampling work for 20 EA</li><li>Register receipt on WMA for 20 EA, LP5<br>Purchase order work for 20 EA (put away)</li></ol> |
 | Order | Fixed quantity = 1 | Yes | Location: Yes<br>License Plate: Yes | No |   | <p>**Order line quantity: 100**</p><ol><li>Register receipt on WMA for 20 EA, LP1<br>Quality Item sampling work for 1 EA<br>Quality order #1 for 1 EA<br>Purchase order work for 19 EA (put away)</li><li>Register receipt on WMA for 20 EA, LP2<br>Quality Item sampling work for 1 EA<br>Quality order #1 for 1 EA<br>Purchase order work for 19 (put away)</li><li>Register receipt on WMA for 20 EA, LP3<br>Quality Item sampling work for 1 EA<br>Quality order #1 for 1 EA<br>Purchase order work for 19 EA (put away)</li><li>Register receipt on WMA for 20 EA, LP4<br>Quality Item sampling work for 1 EA<br>Quality order #1 for 1 EA<br>Purchase order work for 19 EA (put away)</li><li>Register receipt on WMA for 20 EA, LP5<br>Quality Item sampling work for 1 EA<br>Quality order #1 for 1 EA<br>Purchase order work for 19 EA (put away)</li></ol> |
 | Order | Percent=10 | No | Location: No<br>License Plate: No | No |   | <p>**Order line quantity: 100 EA**</p><ol><li>Register receipt on WMA for 50 EA, LP1<br>Quality Item sampling work for 10 EA<br>Quality order #1 for 10 EA<br>Purchase order work for 40 EA (put away)</li><li>Register receipt on WMA for 50 EA, LP2<br>Purchase order work for 50 EA (put away)</li></ol> |
-| Load | Percent=5 | Yes_Locked (not editable)_ | Location:NoLicense Plate:No | No |   | <p>**Order line quantity: 500 EA<br>Two Loads: 1st load 200 EA, 2nd load 300 EA**</p><ol><li>Register receipt on WMA 1st load for 100 EA<br>Quality Item sampling work for 5 EA<br>Quality order #1 for 5 EA<br>Purchase order work for 95 EA (put away)</li><li>Register receipt on WMA 1st load for 100 EA<br>Quality Item sampling work for 5 EA<br>Quality order #1 for 5 EA<br>Purchase order work for 95 EA (put away)</li><li>Register receipt on WMA 2nd load for 300 EA<br>Quality Item sampling work for 15 EA<br>Quality order #1 for 15 EA<br>Purchase order work for 285 EA (put away)</li></ol> |
+| Load | Percent=5 | Yes_Locked (not editable)_ | Location: No<br>License Plate: No | No |   | <p>**Order line quantity: 500 EA<br>Two Loads: 1st load 200 EA, 2nd load 300 EA**</p><ol><li>Register receipt on WMA 1st load for 100 EA<br>Quality Item sampling work for 5 EA<br>Quality order #1 for 5 EA<br>Purchase order work for 95 EA (put away)</li><li>Register receipt on WMA 1st load for 100 EA<br>Quality Item sampling work for 5 EA<br>Quality order #1 for 5 EA<br>Purchase order work for 95 EA (put away)</li><li>Register receipt on WMA 2nd load for 300 EA<br>Quality Item sampling work for 15 EA<br>Quality order #1 for 15 EA<br>Purchase order work for 285 EA (put away)</li></ol> |
 | Order | Percent=10 | No | Location: Yes<br>License Plate: Yes | No |   | <p>**Order line quantity: 100**</p><ol><li>Register receipt on WMA for 50 EA, LP1<br>Quality Item sampling work for 5 EA<br>Quality order #1 for 5 EA<br>Purchase order work for 45 EA (put away)</li><li>Register receipt on WMA for 50 EA, LP2<br>Quality Item sampling work for 5 EA<br>Quality order #1 for 5 EA<br>Purchase order work for 45 (put away)</li></ol> |
 | Load | Full license plate | Yes _Locked (not editable)_ | Location: Yes<br>License Plate: Yes _Locked (not editable)_ | No | 3 | <p>**Two items:**<ul><li>**Order line quantity Item A: 120 EA (4 pallets)**</li><li>**Order line quantity Item B: 90 EA (3 pallets)**</li></ul><p>**One Load, two load lines with each of the order lines.**</p><ol><li>Register receipt on WMA Item A, 30 EA, LP1<br>Quality Item sampling work for 30 EA<br>Quality order #1 for 30 EA</li><li>Register receipt on WMA Item A, 30 EA, LP2<br>Purchase order work for 30 EA (put away)</li><li>Register receipt on WMA Item A, 30 EA, LP3<br>Purchase order work for 30 EA (put away)</li><li>Register receipt on WMA Item A, 30 EA, LP4<br>Quality Item sampling work for 30 EA<br>Quality order #1 for 30 EA</li><li>Register receipt on WMA Item B, 30 EA, LP5<br>Purchase order work for 30 EA (put away)</li><li>Register receipt on WMA Item B, 30 EA, LP6<br>Purchase order work for 30 EA (put away)</li><li>Register receipt on WMA Item A, 30 EA, LP7<br>Quality Item sampling work for 30 EA<br>Quality order #1 for 30 EA</li></ol> |
 | Load | Full license plate | Yes _Locked (not editable)_ | Location: Yes<br>License Plate: Yes _Locked (not editable)_ | Yes | 3 | <p>**Two items:**<ul><li>**Order line quantity Item A: 120 EA (4 pallets)**</li><li>**Order line quantity Item B: 90 EA (3 pallets)**</li></ul><p>**One Load, two load lines with each of the order lines.**</p><ol><li>Register receipt on WMA Item A, 30 EA, LP1<br>Quality Item sampling work for 30 EA<br>Quality order #1 for 30 EA</li><li>Register receipt on WMA Item A, 30 EA, LP2<br>Purchase order work for 30 EA (put away)</li><li>Register receipt on WMA Item A, 30 EA, LP3<br>Purchase order work for 30 EA (put away)</li><li>Register receipt on WMA Item A, 30 EA, LP4<br>Quality Item sampling work for 30 EA<br>Quality order #1 for 30 EA</li><li>Register receipt on WMA Item B, 30 EA, LP5<br>Quality Item sampling work for 30 EA<br>Quality order #1 for 30 EA</li><li>Register receipt on WMA Item B, 30 EA, LP6<br>Purchase order work for 30 EA (put away)</li><li>Register receipt on WMA Item A, 30 EA, LP7<br>Purchase order work for 30 EA (put away)</li></ol> |
@@ -283,7 +277,7 @@ It's possible to have a quality association setup that creates item sampling wor
 
 ## Destructive test
 
-It's possible to define a test group performing destructive tests. Destructive tests imply that regardless of the test result, the quantity of an item subjected to the test will be destroyed as part of the test. _Quality management for warehouse processes_ supports destructive testing in a similar way as quality management without this feature enabled. Before the quality order can be validated, a worker must pick the quality order quantity. Picking will allow to specify the pick location. <!-- KFM: I don't understand the previous sentence, please revise. --> Picking can be registered from within the quality order form by navigating to **Inventory > Pick**. <!-- KFM: is this on the mobile app? --> Once the pick for the quality order quantity is registered, then validation can be completed. <!-- KFM: Please resolve the passive voice in this sentence. I can't tell who is doing what here. -->
+It's possible to define a test group that performs destructive tests. Destructive tests imply that regardless of the test result, the quantity of an item subjected to the test will be destroyed as part of the test. _Quality management for warehouse processes_ supports destructive testing in a similar way as quality management without this feature enabled. Before the quality order can be validated, the quality controller must specify the pick location for the quantity that has been destroyed. Picking can be registered from within the quality order form by selecting **Inventory > Pick** on the action pane. Once the pick for the quality order quantity is registered, then validation can be completed.
 
 <a name="example-scenario"></a>
 
@@ -300,11 +294,10 @@ To work through this scenario, you must prepare your system as follows:
     1. Select warehouse 51.
     1. Expand the **Warehouse** FastTab and set **Enable quality order for warehouse processes** to *Yes*.
 
-### Quality in setup – move to QMS
+### Quality in setup – move to the quality control location (QMS)
 
-<!-- KFM: What is "QMS"? We must spell it out at least once. -->
-
-Now you must prepare a basic setup that will allow you system to support _Quality management for warehouse processes_ for warehouse 51. You will prepare the following elements, as described in the subsections of this section:
+Now you must prepare a basic setup that will allow you system to support _Quality management for warehouse processes_ for warehouse 51. (The demo data defines a quality management location called *QMS*, which is referenced several times in this scenario.
+) You will prepare the following elements, as described in the subsections of this section:
 
 - Work class
 - Work template
@@ -313,9 +306,7 @@ Now you must prepare a basic setup that will allow you system to support _Qualit
 - Quality association
 - Mobile device menu items
 
-<!-- KFM: It would be nice if each of the procedural subsections below had an introduction that very briefly explains why we are doing each of these things and what effects they will have. (The later ones already have this.)-->
-
-#### Work class for quality in
+#### Work class for quality-in
 
 1. Go to **Warehouse management > Setup > Work > Work classes**.
 1. Create a new work class with the following settings:
@@ -391,26 +382,26 @@ Create a quality association that will use the new item sampling.
 1. On the **Process** FastTab, set the **Event type**to *Registration*.
 1. On the **Conditions** FastTab, set **Applicable warehouse type** to *Quality management for warehouse processes only*.
 1. On the **Quality Order Process** FastTab, set **Quality Processing Policy** to _Create quality order_.
-1. On the **Specifications** FastTab, set the **Test Group** to *View all* (right-click and select **View all**). <!-- KFM: Is this correct? I couldn't do this -->
-1. In the **Test groups** section, create a new test group with the following settings: <!-- KFM: Is this correct? I couldn't do this -->
+1. On the **Specifications** FastTab, right-click on the **Test Group** drop-down list and select **View details** to open the **Test groups** page.
+1. On the **Overview** tab of the top table of **Test groups** page, create a new test group with the following settings:
     - **Test Group** - _QMS_
     - **Description** - _QMS test_
     - **Acceptable quantity** - _100_
     - **Item Sampling** - _3rd LP_ (Select)
-1. In the line Overview, add a record (one test) with the following settings: <!-- KFM: I couldn't do this. Also, this step seems garbled. Please check against the UI and possibly clean up -->
+1. On the **Overview** tab of the bottom table of **Test groups** page, add a record (one test) with the following settings:
     - **Sequence** - *1*
-    - **Test** = *Enclosure measuring*
-    - On the **Test tab**, set **Test variables** to *Pass/Fail*
+    - **Test** - *Enclosure measuring*
+1. On the **Test** tab of the bottom table of **Test groups** page*, set the following:
+    - **Test variables** - *Pass/Fail*
     - **Default outcome** - *Pass*
-1. Save the new Test Group and close the form. <!-- KFM: Is this correct? I couldn't do this -->
-
-**Back** in the Quality associations form, in the **Test group** field select **QMS**. Save the record.
+1. Save the new test group and close the form.
+1. Back in the **Quality associations** form, in the **Test group** field select **QMS**. 1. Save the record.
 
 #### Mobile device menu items for quality in
 
-To complete the setup of moving goods to QMS, you must make the quality In Sampling work <!-- KFM: what do you mean by "quality In Sampling work"? Capitalization is strange; should some of this be bold or italic? --> available from a mobile device menu item. To set this up:
+To complete the setup of moving goods to QMS, you must make the quality item sampling work available from a mobile device menu item. To set this up:
 
-1. Go to  **Warehouse management > Setup > Mobile device > Mobile device menu items**.
+1. Go to **Warehouse management > Setup > Mobile device > Mobile device menu items**.
 1. Select the **Purchase Put-away** mobile device menu item.
 1. On the **Work classes** FastTab, add the *QualityIn* work class ID.
 
