@@ -2,10 +2,10 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Human Resources (April 3, 2020)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources.
+description: This article describes features that are either new or changed in Microsoft Dynamics 365 Human Resources.
 author: Darinkramer
 manager: AnnBe
-ms.date: 3/31/2020
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -29,35 +29,39 @@ ms.search.validFrom: 2020-04-03
 ms.dyn365.ops.version: Human Resources
 
 ---
-# "What's new or changed in Dynamics 365 Human Resources (April 3, 2020)"
 
-This article describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3111. The numbers in parentheses in some headings refer to LCS support numbers for reference.
+# What's new or changed in Dynamics 365 Human Resources (April 3, 2020)
+
+This article describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3111. The numbers in parentheses in some headings refer to Lifecycle Services (LCS) support numbers for reference.
 
 ## The following features are now generally available the week of April 6th.
 
-- **Leave and absence features** - For more information, see [Leave and absence preview features](hr-leave-and-absence-overview.md?leave-and-absence-preview-features).
+- **Leave and absence features** - For more information, see [Leave and absence overview](hr-leave-and-absence-overview.md).
 
 - **Benefits management features** - For more information, see [Benefits management overview](hr-benefits-management-overview.md).
 
 ## Human Resources environment limits are now based on updated licensing (394595)
 
-The limit on the number of environments per project in Lifecycle Services (LCS) has changed. The previous limit was two environments. The limit on the number of production and sandbox environments you can create for Human Resources in LCS is now based on updated licensing. You can now create as many environments as needed per LCS project, depending on the number of licenses purchased. The new licensing, updated on February 1, 2020, allows customers to purchase additional environments. For more information about licensing requirements for additional environments, see [Dynamics 365 Licensing Guide](https://dynamics.microsoft.com/pricing/#HumanResources).
+The limit on the number of environments per project in LCS has changed. The previous limit was two environments. The limit on the number of production and sandbox environments you can create for Human Resources in LCS is now based on updated licensing. You can now create as many environments as needed per LCS project, depending on the number of licenses purchased. The new licensing, updated on February 1, 2020, allows customers to purchase additional environments. For more information about licensing requirements for additional environments, see [Dynamics 365 Licensing Guide](https://dynamics.microsoft.com/pricing/#HumanResources).
  
-## Error when trying to delete a Questionnaire - (428603)
+## Error when trying to delete a questionnaire (428603)
 
-This week's update, corrects an issue where the following error is displayed when attempting to delete a questionnaire "An unbalanced X++ TTSBEGIN/TTSCOMMIT pair has been detected".
+This week's update corrects an issue where the following error displays when attempting to delete a questionnaire:
 
-## Performance Journal and Professional certificates security issue - (428499)
+An unbalanced X++ TTSBEGIN/TTSCOMMIT pair has been detected.
 
-This change limits the visibility to both performance journals and professional certificates based on the companies they have access to. 
+## Performance journal and professional certificates security issue (428499)
 
-## The abbreviation for Quebec and Manitoba - (387510)
+This change limits the visibility of both performance journals and professional certificates based on the companies they have access to. 
+
+## The abbreviation for Quebec and Manitoba (387510)
 
 Starting data has been updated to reflect the correct abbreviation for Manitoba and Quebec.
 
 ## New entities available in Data Management Framework
 
-The following entities are now available. If you don't see these listed in the entities list, use the refresh entities option in the Framework Parameters>Entity settings>Refresh entity list.
+The following entities are now available. If you don't see these listed in the entities list, use the **Refresh entities** option in **Framework Parameters > Entity settings > Refresh entity list**.
+
  - Leave and absence bank transaction V2
  - Leave and absence enrollment V2
  - Leave and absence plan tier V2
@@ -100,11 +104,11 @@ Over the next few weeks, these entity changes will be available in all environme
 
 ## Leave suspension
 
-You can suspend leave and absence in Human Resources for an employee. Suspending leave stops the leave accruals for selected leave types. If the suspension occurs after an accrual has been processed, suspending leave will create a prorated adjustment to the employee's leave balance.  Documentation can be found [here](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-leave-and-absence-suspend-leave).
+You can suspend leave and absence in Human Resources for an employee. Suspending leave stops the leave accruals for selected leave types. If the suspension occurs after an accrual has been processed, suspending leave will create a prorated adjustment to the employee's leave balance. For more information, see [Suspend leave](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-leave-and-absence-suspend-leave).
 
 ## Carry forward rules
 
-You can specify a carry forward leave type for carry forward balances where carry forward adjustments are transferred to. For example, if an employee carry's forward 10 days, you can pick a different leave type for those 10 days. Documentation can be found [here](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-leave-and-absence-types).
+You can specify a carry forward leave type for carry forward balances where carry forward adjustments are transferred. For example, if an employee carries forward 10 days, you can pick a different leave type for those 10 days. For more information, see [Configure leave and absence types](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-leave-and-absence-types).
 
 ## Coming Soon
 
@@ -114,9 +118,9 @@ Beginning in April, the release cadence for Human Resources will shift from a we
 
 ## Known issues
 
-## Employment Details entity
+## Employment Detail entity
 
-The employment detail entity has been updated with the following fields:  PayFrequency, Employment Category ID, Employment Type, EmploymentType ID and Benefit Employment Status.  The setup data for these fields rely on benefits management being enabled in feature management.  Therefore, these fields should not be populated or updated in the employment detail entity, as it will result in errors during import.
+The **Employment Detail** entity has been updated with the following fields: **PayFrequency**, **Employment Category ID**, **Employment Type**, **EmploymentType ID**, and **Benefit Employment Status**. The setup data for these fields rely on benefits management being enabled in Feature management. These fields shouldn't be populated or updated in the **Employment Detail** entity, because it will result in errors during import.
 
 ## SharePoint preview doesn't work in some environments
 
