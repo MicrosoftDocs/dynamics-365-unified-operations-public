@@ -53,9 +53,9 @@ The following features are included in this release. The feature titles link to 
 
 ## Additional resources
 
-### Platform update 34
+### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.10 includes Platform update 34. To learn more, see [Preview features in Platform update 34](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md)
+Microsoft Dynamics 365 Supply Chain Management 10.0.10 includes platform updates. To learn more, see [Platform updates for version 10.0.10 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md)
 
 ### Bug fixes
 

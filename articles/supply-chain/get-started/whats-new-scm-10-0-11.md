@@ -48,15 +48,17 @@ The following features are included in this release. The feature titles link to 
 
 - [Over receipt of load quantities](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)
 - License plate receiving enhancements for the warehousing mobile app <!-- KFM: Add link when RP is published -->
-<!-- KFM: I'm expecting at least one more new RP article and feature from Per -->
-<!-- KFM: Johan sent me some 10.0.11 deliverables. Follow up to find out if new RP articles are needed for them. -->
+- Line reservation enhancements for the batch number reservation form <!-- KFM: Add link when RP is published -->
+- [New data entities for the manufacturing area](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
+- Report as finished on batch numbers from the job card device <!-- KFM: Add link when RP is published -->
 <!-- KFM: It looks like Søren has added two new RP topics. Find out if one or both belong here. -->
 
 ## Additional resources
 
-### Platform update 35
-<!-- KFM: Find the new platform version link; change numbering? -->
-Microsoft Dynamics 365 Supply Chain Management 10.0.11 includes Platform update 35. To learn more, see [Preview features in Platform update 35](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-35.md)
+### Platform updates for Finance and Operations apps
+<!-- KFM: Find the new platform version link -->
+
+Microsoft Dynamics 365 Supply Chain Management 10.0.11 includes platform updates. To learn more, see [Platform updates for version 10.0.11 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-35.md)
 
 ### Bug fixes
 <!-- KFM: Find the new KB link -->
