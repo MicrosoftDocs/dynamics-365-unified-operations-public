@@ -2,7 +2,7 @@
 # required metadata
 
 title: Extend a theme
-description: This topic describes how to create a theme based off of another theme for a Microsoft Dynamics 365 Commerce online site. 
+description: This topic describes how to extend a theme from a base theme for a Microsoft Dynamics 365 Commerce online site. 
 author: samjarawan
 manager: annbe
 ms.date: 04/06/2020
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Release 10.0.11
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to create a theme based off of another theme for a Microsoft Dynamics 365 Commerce online site.
+This topic describes how to extend a theme from a base theme for a Microsoft Dynamics 365 Commerce online site.
 
 ## Overview
 
