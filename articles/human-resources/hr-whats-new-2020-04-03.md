@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Human Resources
 
 This article describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3111. The numbers in parentheses in some headings refer to Lifecycle Services (LCS) support numbers for reference.
 
-## The following features are now generally available the week of April 6th.
+## Features that are generally available the week of April 6
 
 - **Leave and absence features** - For more information, see [Leave and absence overview](hr-leave-and-absence-overview.md).
 
@@ -60,7 +60,7 @@ Starting data has been updated to reflect the correct abbreviation for Manitoba 
 
 ## New entities available in Data Management Framework
 
-The following entities are now available. If you don't see these listed in the entities list, use the **Refresh entities** option in **Framework Parameters > Entity settings > Refresh entity list**.
+The following entities are now available. If you don't see these entities listed in the entities list, use the **Refresh entities** option in **Framework Parameters > Entity settings > Refresh entity list**.
 
  - Leave and absence bank transaction V2
  - Leave and absence enrollment V2
