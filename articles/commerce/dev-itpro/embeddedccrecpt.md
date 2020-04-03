@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to embed payment processor receipts in the customer's receipt
+This topic describes how to embed payment processor receipts in the customer's receipt. This capability is available in Microsoft Dynamics 365 Commerce starting with the 10.0.8 release. 
 
 ## Key terms
 
