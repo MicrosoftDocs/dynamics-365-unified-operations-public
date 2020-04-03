@@ -123,7 +123,7 @@ The following illustration shows the flow for this scenario.
 
 ![Flow for the demo scenario](./media/use_rsa_tool_14.png)
 
-The following illustration shows the business processes for this scenario in RSAT.
+The following illustration shows the business processes hierarchy for this scenario in the LCS Business Process Modeler.
 
 ![Business processes for the demo scenario](./media/use_rsa_tool_15.png)
 
@@ -457,6 +457,8 @@ Shows two ways to invoke this application: one using a default setting file, ano
 
 ### Windows PowerShell examples
 
+[!IMPORTANT] The example scripts below are provided AS IS for illustration purposes and are not supported by Microsoft.
+
 #### Run a test case in a loop
 
 You have a test script that creates a new customer. Via scripting, this test case can be run in a loop by randomizing the following data before each iteration is run:
@@ -496,7 +498,7 @@ function RunTestCase
     $cmd = $cmd + $filename
     cmd /c $cmd
 }
-$excelFilename = "full path to excel file parameter file"
+$excelFilename = "full path to Excel parameter file"
 l$sheetName = "DirPartyQuickCreateForm"
 for ($i = $start; $i -lt $start + $nr; $i++ )
 {
