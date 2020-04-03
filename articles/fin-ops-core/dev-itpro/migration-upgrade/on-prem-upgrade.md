@@ -32,10 +32,10 @@ ms.dyn365.ops.version: 10.0.x
 
 [!include [banner](../includes/banner.md)]
 
+This topic provides the detailed process for upgrading on-premises environments of Finance and Operations from version 7.x to 10.0.x.  
+
 > [!NOTE]
 > Please perform the upgrade with your sandbox environment before upgrading your production environment.
-
-This topic provides the detailed process for upgrading on-premises environments of Finance and Operations from version 7.x to 10.0.x.  
 
 ## On-premises upgrade from version 7.x to 10.0.x
 
@@ -81,7 +81,7 @@ An overview of each path is given below:
 
 5.  Open a Command Prompt as Administrator and change the directory to the unzipped folder in step 4.
 
-6.  Restore the backup that you created into the Onebox VM. For more information, see [Restore a Database Backup Using SSMS](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017).
+6.  Restore the backup that you created into the OneBox VM. For more information, see [Restore a Database Backup Using SSMS](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017).
 
 7.  Optional: If the name of your restored database is not AXDB, using PowerShell with administrator privileges, execute:
     
@@ -176,12 +176,12 @@ An overview of each path is given below:
     > [!NOTE]
     > - Only SQL Server authentication is officially supported for this upgrade. For more information, see [Create a Database User](https://docs.microsoft.com/sql/relational-databases/security/authentication-access/create-a-database-user?view=sql-server-2017).
     >
-    > - You will need to add the Certificate Authority certificate that signed your SQL Server certificate to the Onebox trusted certificate
+    > - You will need to add the Certificate Authority certificate that signed your SQL Server certificate to the OneBox trusted certificate
     authorities. For more information, see [Installing the trusted root certificate](https://docs.microsoft.com/skype-sdk/sdn/articles/installing-the-trusted-root-certificate).
     >
     > - Make sure the database user you use has the sysadmin server role assigned or at least All Privileges on the database you want to upgrade and has permissions to access tempDB. Step 6 of the upgrade process will fail if this is not true.
     >
-    > - When you install the Certificate Authority in the Onebox, make sure you use the FQDN or IP for connecting to the database that appears there. If you can't access it by using the domain name because it doesn't point to that server, edit your hosts file and add the DN and the IP it should resolve to.
+    > - When you install the Certificate Authority in the OneBox, make sure you use the FQDN or IP for connecting to the database that appears there. If you can't access it by using the domain name because it doesn't point to that server, edit your hosts file and add the DN and the IP it should resolve to.
 
 8.  Using the Command Prompt from step 6, execute the following
     commands:
@@ -226,7 +226,7 @@ An overview of each path is given below:
 
     a.  (Optional) Rename your old database (typically AXDBold) and then rename your new database (typically AXDB). Make sure that in the next step you input the name of the upgraded database.
 
-    b.  Setup a new environment and deploy it with version 10.0.x. For more information, see [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12.md).
+    b.  Set up a new environment and deploy it with version 10.0.x. For more information, see [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12.md).
 
 14. (Optional) If deployment fails because the financial reporting module failed, on the database that you are using for the new environment (typically AXDB), run the following command:
 
@@ -240,7 +240,7 @@ An overview of each path is given below:
 ### Configure-On-Premises-Upgrade.ps1 usage
 
 > [!Important]
-> This script is only meant to be run from a Onebox VHD environment.
+> This script is only meant to be run from a OneBox VHD environment.
 >
 > The script requires that you pass at least the DatabaseName parameter. If you don't pass it, the script will automatically request it.
 
@@ -263,7 +263,7 @@ After configuration has been passed, the script will execute a database connecti
 ```powershell
 <#
 .Synopsis
-   Configures a Onebox deployment to upgrade an OnPrem 7.x database to OnPrem 10.0.x 
+   Configures a OnebBox deployment to upgrade an OnPrem 7.x database to OnPrem 10.0.x 
 
 .DESCRIPTION
    This must be executed before the upgrade process is carried out.
