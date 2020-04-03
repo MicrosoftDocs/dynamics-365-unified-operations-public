@@ -105,7 +105,7 @@ The settings information that is provided in the Giro report processing groups d
 
 For vendor methods of payment, you must specify the associated bank account, select the required ER configurations for the export and import for payment file processing, and set up payment specification. A new payment specification parameter value, **Tp3.QR**, is available for payments that correspond to the incoming QR-bills. Additionally, an option that is available on the vendor bank account can be used to redefine the **Specification** parameter.
 
-The payment ID should be activated on the **Payment attributes** tab, so that the payment ID can be inherited during the payment proposal with QR-bills.
+The payment ID should be activated on the **Payment attributes** tab, so that the payment ID can be inherited during the payment proposal for payments associated with QR-bills.
 
 ### Return format error codes and return format status mapping
 
@@ -142,7 +142,7 @@ To import a bank statement in camt.054 format from the bank, open the customer p
 
 ## Accounts payable process
 
-The scope of supported functionality covers the process of manually importing the QR code values into the input dialog box. This import can be done by using scanning devices that transmit the text value of the QR code. The structure of the information in the QR code should follow the standards that are available on the SIX group website at the moment of the release. Any derivation from the structure of the information that is encrypted in the QR code, or any format changes that are required to follow the device-specific behavior, can be configured by using the **Electronic reporting** (ER) module. No code modifications are required.
+The scope of supported functionality covers the process of manually importing the QR code values into the input dialog box. This import can be done by using scanning devices that transmit the text value of the QR code. The structure of the information in the QR code should follow the standards that are available on the SIX group website at the moment of the feature release. Any derivation from the structure of the information that is encrypted in the QR code, or any format changes that are required to follow the device-specific behavior, can be configured by using the **Electronic reporting** (ER) module. No code modifications are required.
 
 ### Import QR-bills
 
