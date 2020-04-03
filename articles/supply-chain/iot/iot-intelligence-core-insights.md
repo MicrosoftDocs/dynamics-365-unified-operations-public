@@ -96,7 +96,7 @@ That's it for the LCS portion.
 3. Navigate to **Production control**.
 4. Navigate to **Setup \> IoT Intelligence \> Scenario parameters**. Enter the Redis connection string. *Insert instructions here on how to get this value. It appears not to be in the key vault.*
 5. Navigate to **Setup \> IoT Intelligence \> Scenario management**.
-6. Click **Configure** on the **Equipment downtime** tile. This starts the configuration wizard for the **Equipment sensor schema definition**. The goal here is to setup the schema to match the JSON format that you created when you setup the message in Azure. In this example, the JSON looks like this:
+6. Click **Configure** on the **Equipment downtime** tile. This starts the configuration wizard for the **Equipment sensor schema definition**. The goal here is to setup the schema in Supply Chain Management to match the JSON format that you created when you setup the message in Azure. In this example, the message payload contains a batch of messages:
 
 ```json
 {
@@ -121,6 +121,35 @@ That's it for the LCS portion.
 }
 ```
 
+7. Add a row to the table. 
+    a. Set the **Schema name** to **id**.
+    b. Set the **Schema path** to **/[payload]\*/id**.
+    c. Set the **Description** to **Message id**.
+8. Add a row to the table. 
+    a. Set the **Schema name** to **timestamp**.
+    b. Set the **Schema path** to **/[payload]\*/timestamp**.
+    c. Set the **Description** to **Message timestamp**.
+9. Add a row to the table. 
+    a. Set the **Schema name** to **value**.
+    b. Set the **Schema path** to **/[payload]\*/value**.
+    c. Set the **Description** to **Message value**.
+9. Add a row to the table. 
+    a. Set the **Schema name** to **Root timestamp**.
+    b. Set the **Schema path** to **/timestamp**.
+    c. Set the **Description** to **Root timestamp**.
+10. If there are sample entries in the table, delete them.
+11. You don't need to define all the properties in the message, only the ones that you need. In this example, you can delete the **Root timestamp** entry.
+12. Click **Next** for the **Equipment sensor schema map**.
+13. In the row for **Equipment resource id** set the **Schema name** to **id**. The valid values are displayed in a dropdown table.
+13. In the row for **UTC time** set the **Schema name** to **Timestamp**. The valid values are displayed in a dropdown table.
+13. In the row for **Part produced signal** set the **Schema name** to **value**. The valid values are displayed in a dropdown table.
+
+
+
+
+
+
+    
 
 
 ## IoT Intelligence Scenario setup
