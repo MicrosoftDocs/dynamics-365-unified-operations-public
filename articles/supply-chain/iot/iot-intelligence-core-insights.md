@@ -53,7 +53,9 @@ ms.dyn365.ops.version: 10.0.5
 + Show where the Key Vault secret names are located        
 + Call out that any time one of the connection strings is updated the secret values will need to be updated
 
-
+Notes:
+Need to add the Microsoft Dynamics microservice, first party app ID.
+Give the LCS environment access to the key vault.
 
 
 
@@ -78,8 +80,14 @@ ms.dyn365.ops.version: 10.0.5
 3. Scroll down to an environment.
 4. In the Add-in section, click **Install a new add-in** to populate the list of addin's that have been enabled for the environment.
 5. Click on the **IoT Intelligence** add-in.
-6. Enter the connection strings for your IoT hub and Redis cache. You can create a key vault to store the information that you need for this dialog box.
-
+6. Enter the connection strings for your IoT hub and Redis cache. You can find the values that you need in the key vault you created in the [name of section](#link to section).
+    a. In Azure, open the key vault you previously created, and copy the DNS name. The DNS name servers as the key vault identifer.
+    b. In the **Setup add-in** dialog, copy the value into the fields for **IoT Hub** and **Redis cache**.
+    c. In Azure, open the key vault and click the Secrets tab. Copy the secret for ?? and copy it to teh ??? field in the **Setup add-in** dialog.
+    d. In Azure, copy the secret for the **Redis ???** and copy it to **Redis cache endpoint secret name** in the **Setup add-in** dialog.
+7. Click **Install**. 
+8. A dialog shows up that says **Add-in has been successfully triggered for installation**. Click **OK**.
+That's it for the LCS portion.
 
 ## IoT Intelligence Scenario setup
     + How to enable the IoT Intelligence Feature flag
