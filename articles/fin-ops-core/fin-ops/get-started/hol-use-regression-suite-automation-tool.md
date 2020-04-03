@@ -38,8 +38,6 @@ ms.dyn365.ops.version: AX 7.0.0, Operations
 
 This tutorial walks through some of the advanced features of the Regression suite automation tool (RSAT), includes a demo assignment, and describes strategy and key learning points. 
 
-If you are new to RSAT, start with the intoductory tutorial [Get Started with RSAT](./hol-set-up-regression-suite-automation-tool.md).
-
 ## Notable Features of RSAT and Task recorder
 
 ### Validate a field value
