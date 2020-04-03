@@ -2435,6 +2435,8 @@
           href: warehousing/upgrade-migration-warehouse-management-processes.md
       - name: Receipts for registration and put-away
         items:
+        - name: Warehouse handling of inbound loads for purchase orders
+          href: warehousing/inbound-load-handling.md
         - name: Register items for an advanced warehousing enabled item using an item arrival journal
           href: warehousing/tasks/register-items-advanced-warehousing.md
         - name: Register items for a basic warehousing enabled item using an item arrival journal
@@ -2444,6 +2446,7 @@
         - name: Set up a location directive for purchase order put-away
           href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
         - name: Set up a work template for purchase orders
+          href: warehousing/tasks/set-up-work-template-purchase-orders.md
     - name: Supply Chain Management development 
       items:
       - name: Gantt control development guide
