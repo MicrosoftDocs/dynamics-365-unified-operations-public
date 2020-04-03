@@ -36,7 +36,7 @@ This topic describes how to create a theme based off of another theme for a Micr
 
 ## Overview
 
-Using the Dynamics 365 Commerce online store extensibility software development kit (SDK), themes can be created to be standalone themes or extended from a base theme. For example, you can have a base theme that defines module CSS styles, module view extensions, and module definition extensions then have a different theme (or set of themes) that add additional changes on top of the base theme. This is helpful when a single Dynamics 365 environment has multiple online sites with different theme branding.
+Using the Dynamics 365 Commerce online store extensibility software development kit (SDK), themes can be created to be standalone themes or can be extended from a base theme. For example, you can have a base theme that defines module CSS styles, module view extensions, and module definition extensions then have a different theme (or set of themes) that add additional changes on top of the base theme. This is helpful when a single Dynamics 365 environment has multiple online sites with different theme branding.
 
 ## Specify a base theme
 
@@ -54,7 +54,7 @@ In the example below, the "$ref" section references the fabrikam sample theme wh
 }
 ```
 
-## Example
+## Examples
 
 The example below has a base theme created with the **add-theme** command-line interface (CLI) command:
 
