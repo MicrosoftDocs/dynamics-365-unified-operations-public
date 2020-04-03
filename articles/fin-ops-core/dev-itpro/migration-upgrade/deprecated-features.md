@@ -273,7 +273,7 @@ Embedded key performance indicators (KPIs) could be modeled in Visual Studio by 
 | **Replaced by another feature?**   | This warning will be replaced by a compile error in the future. |
 | **Product areas affected**         | Visual Studio development tools |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: The warning will become a compile-time error in the future. We're currently targeting Platform updates for version 10.0.11 of Finance and Operations apps. |
+| **Status**                         | Deprecated: The warning will become a compile-time error in the future. This change is targeted with platform updates for version 10.0.11 of Finance and Operations apps. |
 
 #### Complete list
 To access the full list of APIs that are being deprecated, see [Deprecation of methods and metadata elements](deprecation-deletion-apis.md).
