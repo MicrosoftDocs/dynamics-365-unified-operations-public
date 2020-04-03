@@ -79,7 +79,7 @@ The **Metadata** folder contains your source XML files organized by packages and
 
 ### Configure Visual Studio to connect to your team project
 
-1.  Start Visual Studio. If you are logged into the machine as an administrative user, then you must start Visual Studio as an administrator.
+1.  Start Visual Studio. If you are logged into the machine as an administrator, then you must start Visual Studio as an administrator.
 2.  Click **Tools &gt; Options &gt; Source Control &gt; Plug-in Selection**.
 3.  In the Current source control plug-in field, select **Visual studio Team Foundation Server**.
 4.  Select **Team &gt; Connect to Team Foundation Server**.
