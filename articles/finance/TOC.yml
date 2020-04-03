@@ -2885,7 +2885,7 @@
           - name: Install the Document Routing Agent to enable network printing
             href: ../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md?toc=/dynamics365/finance/toc.json
           - name: Upgrade the Document Routing Agent
-            href: ../fin-ops-core/dev-itpro/analytics/upgrade-document-routing-agent.md
+            href: ../fin-ops-core/dev-itpro/analytics/upgrade-document-routing-agent.md?toc=dynamics/365/finance/toc.json
           - name: Install network printer devices in on-premises environments
             href: ../fin-ops-core/dev-itpro/analytics/install-network-printer-onprem.md?toc=/dynamics365/finance/toc.json
           - name: Document generation, publishing, and printing in on-premises deployments
