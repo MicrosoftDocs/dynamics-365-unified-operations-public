@@ -2313,8 +2313,6 @@
           href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
         - name: System grouping on an open work list
           href: warehousing/system-group-on-open-work-list.md
-        - name: Document routing layout for license plate labels
-          href: warehousing/document-routing-layout-for-license-plates.md
         - name: Scan bar codes using a camera in Dynamics 365 for Finance and Operations
           href: warehousing/scan-bar-codes-using-a-camera.md
         - name: Mobile barcode support
@@ -2419,8 +2417,6 @@
           href: warehousing/configure-app-field-names-priorities-warehouse.md
         - name: Set up mobile devices for warehouse work
           href: warehousing/configure-mobile-devices-warehouse.md
-        - name: License plate receiving with the Warehousing mobile app
-          href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
         - name: Set up a mobile device menu item for completing work in a purchase order
           href: warehousing/tasks/set-up-mobile-device-menu.md
         - name: Set up a mobile device menu item to register received items
