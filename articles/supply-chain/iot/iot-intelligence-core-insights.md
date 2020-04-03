@@ -89,6 +89,40 @@ Give the LCS environment access to the key vault.
 8. A dialog shows up that says **Add-in has been successfully triggered for installation**. Click **OK**.
 That's it for the LCS portion.
 
+## Setup the Finance and Operations apps
+
+1. Log into the Finance and Operations apps.
+2. Switch the **USMF** (for demo data).
+3. Navigate to **Production control**.
+4. Navigate to **Setup \> IoT Intelligence \> Scenario parameters**. Enter the Redis connection string. *Insert instructions here on how to get this value. It appears not to be in the key vault.*
+5. Navigate to **Setup \> IoT Intelligence \> Scenario management**.
+6. Click **Configure** on the **Equipment downtime** tile. This starts the configuration wizard for the **Equipment sensor schema definition**. The goal here is to setup the schema to match the JSON format that you created when you setup the message in Azure. In this example, the JSON looks like this:
+
+```json
+{
+    "timestamp": 1576016821614,
+    "payload": [
+        {
+            "id": "IoTInt.Machine1225.PartOut",
+            "timestamp": 1576016821614,
+            "value": True
+        },
+        {
+            "id": "IoTInt.Foo.PartOut",
+            "timestamp": 1576018821615,
+            "value": False
+        },
+        {
+            "id": "IoTInt.Machine1226.PartOut",
+            "timestamp": 1576016991616,
+            "value": True
+        }
+    ]
+}
+```
+
+
+
 ## IoT Intelligence Scenario setup
     + How to enable the IoT Intelligence Feature flag
     + How to define the IoT Hub message schemas in the IoT Intelligence wizard        
