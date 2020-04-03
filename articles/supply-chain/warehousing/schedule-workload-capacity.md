@@ -4,7 +4,7 @@
 title: Schedule workload capacity
 description: This topic explains how to set up and schedule the workload capacity for workers in a warehouse or for an entire warehouse.
 author: MarkusFogelberg
-manager: AnnBe
+manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: 
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form:  WMSWorkloadCapacity
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269384

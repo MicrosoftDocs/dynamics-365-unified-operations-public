@@ -4,7 +4,7 @@
 title: Create a work class
 description: This procedure shows you how to set up a work class. 
 author: ShylaThompson
-manager: AnnBe 
+manager: tfehr 
 ms.date: 11/14/2016
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  

@@ -1952,6 +1952,8 @@
             href: general-ledger/tax-engine-integration.md
           - name: Extending the Tax engine
             href: general-ledger/extend-tax-engine-configurations.md
+          - name: Troubleshoot GTE
+            href: localizations/tax-engine-trouble-shooting.md
         - name: Tax thresholds FAQ
           href: localizations/apac-ind-tax-thresholds.md          
         - name: Stock transfers
@@ -3004,6 +3006,8 @@
                 href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-isempty.md?toc=/dynamics365/finance/toc.json
               - name: List
                 href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/finance/toc.json
+              - name: ListJoin
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listjoin.md?toc=/dynamics365/finance/toc.json
               - name: ListOfFields
                 href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffields.md?toc=/dynamics365/finance/toc.json
               - name: ListOfFirstItem

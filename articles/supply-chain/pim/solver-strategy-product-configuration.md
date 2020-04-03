@@ -4,7 +4,7 @@
 title: Solver strategy for product configuration
 description: This topic describes how you can use the solver strategy to improve the performance of product configuration. 
 author: cvocph 
-manager: AnnBe
+manager: tfehr
 ms.date: 02/19/2019
 ms.topic: article
 ms.prod: 
@@ -16,7 +16,7 @@ ms.search.form: PCCreateProductConfigurationModel, PCProductConfigurationModelLi
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 
 # ms.tgt_pltfrm: 

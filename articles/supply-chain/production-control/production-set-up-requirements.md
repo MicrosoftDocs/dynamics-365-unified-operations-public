@@ -4,7 +4,7 @@
 title: Production setup requirements
 description: This article provides information about setup requirements before you can work with Production control. 
 author: johanhoffmann
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ ms.search.form: ProdParameters, RouteOpr, RouteOprTable, WorkCalendarTable, Work
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 55561
