@@ -38,7 +38,7 @@ This topic provides information about the different methods that are used to red
 
 ## Methods that are used to reduce forecast requirements
 
-When you include a forecast in a master plan, you can select how the forecast requirements are reduced when actual demand is included.
+When you include a forecast in a master plan, you can select how the forecast requirements are reduced when actual demand is included. It is important to notice that master planning exclude forecast requirements from the past (before todays date).
 
 To include a forecast in a master plan and select the method that is used to reduce forecast requirements, go to **Master planning \> Setup \> Plans \> Master plans**. In the **Forecast model** field, select a forecast model. In the **Method used to reduce forecast requirements** field, select a method. The following options are available:
 
