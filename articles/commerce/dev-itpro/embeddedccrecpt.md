@@ -50,7 +50,8 @@ This document descibes the steps needed to embed the credit card receipt receipt
 
 ## Prerequisites
 
-**Payment connector** A payment connector which is implemented in accordance with the payments SDK
+**Payment connector** A payment connector which is implemented in accordance with the payments SDK.
+**Point of sale with printer** A point of sale with working printer is required to perform the follwing setup.
 
 ## Setup
 
