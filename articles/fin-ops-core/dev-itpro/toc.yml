@@ -1548,7 +1548,7 @@
           href: deployment/apply-updates-on-premises.md
         - name: Redeploy an on-premises deployment
           href: deployment/redeploy-on-prem.md
-        - name: In-place upgrade for on-premises 7.x to 8.1
+        - name: In-place upgrade process for on-premises environments
           href: migration-upgrade/on-prem-upgrade.md
       - name: Hotfixes
         items:
