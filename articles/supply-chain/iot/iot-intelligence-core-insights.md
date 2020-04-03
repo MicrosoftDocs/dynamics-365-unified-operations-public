@@ -139,11 +139,11 @@ That's it for the LCS portion.
     c. Set the **Description** to **Root timestamp**.
 10. If there are sample entries in the table, delete them.
 11. You don't need to define all the properties in the message, only the ones that you need. In this example, you can delete the **Root timestamp** entry.
-12. Click **Next** for the **Equipment sensor schema map**.
+12. Click **Next** for the **Equipment sensor schema map** page.
 13. In the row for **Equipment resource id** set the **Schema name** to **id**. The valid values are displayed in a dropdown table.
-13. In the row for **UTC time** set the **Schema name** to **Timestamp**. The valid values are displayed in a dropdown table.
-13. In the row for **Part produced signal** set the **Schema name** to **value**. The valid values are displayed in a dropdown table.
-
+14. In the row for **UTC time** set the **Schema name** to **Timestamp**. The valid values are displayed in a dropdown table.
+15. In the row for **Part produced signal** set the **Schema name** to **value**. The valid values are displayed in a dropdown table.
+16. Click **Next** for the **Equipment resource id configuration** page.
 
 
 
