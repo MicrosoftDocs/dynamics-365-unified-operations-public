@@ -56,7 +56,7 @@ In the example below, the "$ref" section references the fabrikam sample theme wh
 
 ## Examples
 
-The example below has a base theme created with the **add-theme** command-line interface (CLI) command:
+The following example has a base theme created with the **add-theme** command-line interface (CLI) command.
 
 ```Console
 yarn msdyn365 add-theme base
@@ -106,7 +106,7 @@ body {
 }
 ```
 
-Similar to the example above, the **extended.definition.scss.json** file can also reference the base theme if desired as shown in the following example.
+Similar to the example above, if desired the **extended.definition.scss.json** file can also reference the base theme as shown in the following example.
 
 **extended.definition.scss.json**
 ```
