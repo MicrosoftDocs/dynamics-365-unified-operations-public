@@ -2935,25 +2935,25 @@
         - name: Help prevent long-running reports from timing out
           href: ../fin-ops-core/dev-itpro/analytics/prevent-long-running-reports-timing-out.md?toc=/dynamics365/finance/toc.json
     - name: Electronic reporting
+      items:
+      - name: Electronic reporting overview
+        href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md?toc=/dynamics365/finance/toc.json
+      - name: Configurations
         items:
-        - name: Electronic reporting overview
-          href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md?toc=/dynamics365/finance/toc.json
-        - name: Configurations
-          items:
-          - name: Create configurations
-            href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=/dynamics365/finance/toc.json
-          - name: Prepare components of the Electronic reporting solution
+        - name: Create configurations
+          href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=/dynamics365/finance/toc.json
+        - name: Prepare components of the Electronic reporting solution
+          items: 
+          - name: Design domain specific data model
+            href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/dynamics365/finance/toc.json
+          - name: Prepare application specific metadata
             items: 
-            - name: Design domain specific data model
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/dynamics365/finance/toc.json
-            - name: Prepare application specific metadata
-              items: 
-              - name: (ER) Prepare application metadata to be used in RCS
-                href: ../fin-ops-core/dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?toc=/dynamics365/finance/toc.json
-              - name: (RCS) Access application metadata by using ER configuration
-                href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?toc=/dynamics365/finance/toc.json
-              - name: (RCS) Access application metadata by using connected applications
-                href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?toc=/dynamics365/finance/toc.json
+            - name: (ER) Prepare application metadata to be used in RCS
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?toc=/dynamics365/finance/toc.json
+            - name: (RCS) Access application metadata by using ER configuration
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?toc=/dynamics365/finance/toc.json
+            - name: (RCS) Access application metadata by using connected applications
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?toc=/dynamics365/finance/toc.json
             - name: Define model mappings and select data sources 
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/dynamics365/finance/toc.json
             - name: Map data model to selected data sources
