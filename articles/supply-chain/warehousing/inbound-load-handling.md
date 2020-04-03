@@ -67,7 +67,7 @@ When an inbound load first arrives at the warehouse, warehouse workers must regi
 
 - **An inbound load record that describes the item quantities that are expected in the shipment**
 
-    Typically, the vendor confirms the inbound load record before the shipment arrives at the warehouse. Therefore, the load has a status of _Shipped_. However, warehouse workers can also register items quantities for loads that have a status of _Open_ or _Received_. More information about this subject is provided later in this topic.
+    Typically, the vendor confirms the inbound load record before the shipment arrives at the warehouse. Therefore, the load has a status of _Shipped_. However, warehouse workers can also register items quantities for loads that have a status of _Open_ or _Received_.
 
 - **A mobile device menu that is configured to support load receiving**
 
@@ -312,7 +312,7 @@ This scenario shows how to register quantities for an inbound load where not all
 
 #### Create a load to plan receipt of a purchase order
 
-In this procedure, you will manually create a purchase order and an associated load. You will then update the load to simulate that it has been shipped from the vendor. Warehouse planners can then use this to filter for expected incoming loads.
+In this procedure, you will manually create a purchase order and an associated load. You will then update the load to simulate that it has been shipped from the vendor (which updates the load status). Warehouse planners can then filter loads by **Load status** to find expected incoming loads.
 
 1. Go to **Procurement and sourcing \> Purchase orders \> All purchase orders**.
 1. Select **New**.
@@ -412,7 +412,7 @@ In this procedure, you will enable multiple product receipt postings from the sa
 
 #### Create two loads to plan receipt of a purchase order
 
-In this procedure, you will create a purchase order and two loads. You will then manually update each load to simulate that it has been shipped by the vendor. The inbound warehouse planner can use this to filter for the expected incoming loads.
+In this procedure, you will create a purchase order and two loads. You will then manually update each load to simulate that it has been shipped by the vendor (which updates the load status). Warehouse planners can then filter loads by **Load status** to find expected incoming loads.
 
 You will also learn how to set the purchase order line so that you can receive a quantity that is 20 percent more than the quantity that is specified for the line.
 
