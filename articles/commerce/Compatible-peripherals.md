@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Peripheral compatibility for Retail  
+title: Peripheral compatibility for Commerce 
 description: This topic lists peripheral devices that have been tested for compatibility with Dynamics 365 Commerce.
 author: rubencdelgado
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.dyn365.ops.version:
 
 ---
 
-# Peripheral compatibility for Retail
+# Peripheral compatibility for Commerce
 
 [!include [banner](../includes/banner.md)]
 

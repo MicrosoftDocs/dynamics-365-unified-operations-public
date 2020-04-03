@@ -26,8 +26,10 @@ ms.search.scope: Core, Operations
 ms.author: ralin
 ms.dyn365.ops.version: 7.3
 ms.search.validFrom: 2017-12-31
+
 ---
 # India Goods and Services Tax (GST) overview
+
 
 [!include [banner](../includes/banner.md)]
 
@@ -169,13 +171,14 @@ Follow the process in the topic, [Tax engine import configuration](../general-le
 | <li>Taxable Document.version.82.xml</li><li>Taxable Document (India).version.82.143.xml</li><li>Tax (India GST).version.82.143.264.xml</li> | Remove the tax rate type from Tax Document which should be used by customers who have not update their terminal to 10.0.5 Microsoft Dynamics 365 for Finance and Operations (10.0.5)                                                                                                                                                                                                                                                                                                      |
 | <li>Taxable Document.version.82.xml</li><li>Taxable Document (India).version.82.143.xml</li><li>Tax (India GST).version.82.143.267.xml</li> | <li> Support Applicable % of tax rate. The configuration can only be used in 10.0.9. </li> <li> If you are retail customers, you need to make sure the retail has a version of Microsoft.Dynamics365.Tax.dll equal to or above 10.0.4006 and the HQ has a version of Microsoft.Dynamics365.Tax.dll equal to 10.0.9007. </li> <li> The configuration is created on version 82.143.263, if you have configuration extension on 82.143.264, you have to re-extend based on 82.143.267. </li> |
 
+
 ### Report configurations
 
 | Version                                                                                                                                                                                                                                                                                                                          | Details                                                                                                                                                                                                                                                               |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **GST offline tool format**: <li>GSTReturnsGovt.version.4.xml</li><li>GST Returns govt. model mapping.xml</li><li>GSTR1GovtCSV.version.4.9.xml</li> **GSTR1/GSTR2**: <li>GSTReturns.version.12.xml</li> <li>GSTReturns.ModelMapping.version.12.3..xml</li><li>GSTR1CSV.version.12.25.xml</li><li>GSTR2CSV.version.12.29.xml</li> | Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (7.3) GA configuration                                                                                                                                                                          |
 | <li>GSTReturns.version.14.xml GST</li><li>Returns model mapping.version.14.5.xml</li> <li>GSTR1CSV.version.14.28.xml</li><li>GSTR2CSV.version.14.32.xml</li>                                                                                                                                                                     | Total Item Discount Amount is not coming in GSTR. Item Unit Of Measurement should show both the unit and description. Service item should be **Nos**. No customer billing name for stock transfer in GSTR. Microsoft Dynamics 365 for Finance and Operations (10.0.1) |
-| <li>GST Returns govt.model.version.19.xml</li><li>GST Returns govt.model mapping.version.19.12.xml </li> <li> GST ANX-1 Govt.offline tool.version.19.22.xml </li> <li> Purchase Register.vesion.19.7.xml</li> <li>GSTR -1 Govt.offline tool CSV.version.19.10.xml</li>                                                           | <a href="https://support.microsoft.com/en-us/help/4549665">New GSTR Return offline tool                                                                                                                                                                               |
+
 
 ### Map configurations to the Legal entity
 
@@ -355,6 +358,10 @@ Complete the following procedures to select the India GST report formats for cus
 4. Select **SalesInvoice_IN.Report** as the report format.
 5. Expand the **Free text invoice** node, and select **Original**.
 6. Select **FreeTextInvoice.ReportIN** as the report format.
+
+## Trouble shooting guide
+
+The tax engine is a highly configurable engine handling tax applicability, calculation, posting, and settlement. Please refer to [trouble shooting guide](tax-engine-trouble-shooting.md) first whenever you encounter any issues.
 
 ## Resources for other Microsoft Dynamics products
 

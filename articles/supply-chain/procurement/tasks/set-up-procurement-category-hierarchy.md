@@ -4,7 +4,7 @@
 title: Set up a procurement category hierarchy
 description: This procedure shows you how to create new nodes in a procurement category hierarchy and how to configure a procurement category to be used in a procurement process. 
 author: mkirknel
-manager: AnnBe 
+manager: tfehr 
 ms.date: 06/21/2019
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  

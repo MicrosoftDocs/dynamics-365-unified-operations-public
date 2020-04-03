@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview banner](../../includes/preview-banner.md)]
+
 
 These topics describe dual-write integration.
 
@@ -48,30 +48,45 @@ These topics describe dual-write integration.
 + [System requirements for dual-write](dual-write-system-req.md)
 + [Supported scenarios for dual-write setup](connection-setup.md)
 + [Dual-write setup from Lifecycle Services](lcs-setup.md)
++ [Initial synchronization choices and administration views](initial-sync.md)
++ Enable dual-write for existing Finance and Operations apps
+
+    + [Enable dual-write for existing Finance and Operations apps](enable-dual-write.md)
+    + [System requirements and prerequisites](requirements-and-prerequisites.md)
+    + [How to use the dual-write wizard to link your environments](link-your-environment.md)
+    + [Enable entity map for dual-write](enable-entity-map.md)
+
+## Managing dual-write after setup
+
++ [Customize entity and field mappings](customizing-mappings.md)
++ [Error management and alert notifications](errors-and-alerts.md)
++ [Application lifecycle management](app-lifecycle-management.md)
 
 ## Mapping concepts between apps
 
 These topics describe mapping between concepts in Finance and Operations applications and concepts in model-driven apps in Microsoft Dynamics 365.
 
-+ [Organization hierarchy awareness](organization-mapping.md)
-+ [Company concept in Common Data Service](company-data.md)
-
-    + [Bootstrap with company data FAQ](bootstrap-company-data.md)
-
 + [Integrated customer master](customer-mapping.md)
-+ [Unified product experience](product-mapping.md)
-
-    + [Integrated sites and warehouses](sites-warehouses-mapping.md)
-
 + [Integrated vendor master](vendor-mapping.md)
 
     + [Switch between vendor designs](vendor-switch.md)
 
++ [Customer loyalty cards and reward points](loyalty-mapping.md)
++ [Unified product experience](product-mapping.md)
+
+    + [Integrated sites and warehouses](sites-warehouses-mapping.md)
+
++ [Company concept in Common Data Service](company-data.md)
+
+    + [Bootstrap with company data FAQ](bootstrap-company-data.md)
+
++ [Organization hierarchy awareness](organization-mapping.md)
 + [Access to finance and tax reference data](finance-tax-reference.md)
 
     + [Integrated ledger](ledger-mapping.md)
     + [Integrated tax master](tax-mapping.md)
 
++ [Synchronizing on-demand with the Dynamics 365 Supply Chain Management price engine](pricing-engine.md)
 + [Prospect to cash in dual-write](dual-write-prospect-to-cash.md)
 + [In-house assets for servicing](in-house-assets.md)
 + [Integrated worker, job, and position](integrated-hr.md)
@@ -79,5 +94,14 @@ These topics describe mapping between concepts in Finance and Operations applica
 ## Support
 
 + [Support for Field Service solutions and Project Service Automation solutions](field-service-project-service-automation.md)
-+ [Initial synchronization choices and administration views](initial-sync.md)
-+ [Troubleshooting data integration](dual-write-troubleshooting.md)
+
+## Troubleshooting
+
++ [Verify that dual-write is configured in Finance and Operations apps and Common Data Service](dual-write-troubleshooting-verify-config.md)
++ [Troubleshoot issues during initial setup](dual-write-troubleshooting-initial-setup.md)
++ [Troubleshoot issues during initial synchronization](dual-write-troubleshooting-initial-sync.md)
++ [Troubleshoot issues with the Dual-write module in Finance and Operations apps](dual-write-troubleshooting-dual-write-module.md)
++ [Troubleshoot live synchronization issues](dual-write-troubleshooting-live-sync.md)
++ [Troubleshoot issues related to solution awareness](dual-write-troubleshooting-solution-awareness.md)
++ [Troubleshoot issues related to upgrades of Finance and Operations apps](dual-write-troubleshooting-finops-upgrades.md)
++ [General troubleshooting](dual-write-troubleshooting.md)

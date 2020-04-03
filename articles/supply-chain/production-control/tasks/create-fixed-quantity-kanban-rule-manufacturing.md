@@ -4,7 +4,7 @@
 title: Create a fixed quantity kanban rule for manufacturing
 description: This procedure focuses on the setup needed to create a fixed manufacturing kanban rule for triggering transforming activities, at a work cell, in a lean environment. 
 author: ChristianRytt
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, InventItemIdLookupSimple, UnitOfMeasureLookup, KanbanCreate   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,8 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create a fixed quantity kanban rule for manufacturing
 
-[!include [task guide banner](../../includes/task-guide-banner.md)][!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
+
 This procedure focuses on the setup needed to create a fixed manufacturing kanban rule for triggering transforming activities, at a work cell, in a lean environment. The demo data company used to create this procedure is USMF. This procedure is intended for the Process Engineer or the Value Stream Manager, as they prepare production of a new or modified product.
 
 

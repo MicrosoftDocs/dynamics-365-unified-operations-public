@@ -4,7 +4,7 @@
 title: Manage warehouse workers
 description: This article describes how you can use Dynamics 365 Supply Chain Management - Warehousing app to help control and monitor the work that's carried out by employees in your warehouses.
 author: perlynne
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ ms.search.form: HcmWorker, InventLocation, WHSLaborStandards, WHSWorker, WHSWork
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 72891

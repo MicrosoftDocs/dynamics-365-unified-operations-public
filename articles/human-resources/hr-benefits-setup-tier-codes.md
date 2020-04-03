@@ -5,7 +5,7 @@ title: Set up tier codes
 description: Dynamics 365 Human Resources uses tier codes with benefit rates that are paid by employees and the employer. 
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -44,7 +44,7 @@ Dynamics 365 Human Resources uses tier codes with benefit rates that are paid by
 
    | Field | Description |
    | --- | --- |
-   | Tier code | A unique benefit tier code or number to identify the tier code. |
-   | Description | A description of the benefit tier code. |
+   | **Tier code** | A unique benefit tier code or number to identify the tier code. |
+   | **Description** | A description of the benefit tier code. |
 
 4. Select **Save**. 
