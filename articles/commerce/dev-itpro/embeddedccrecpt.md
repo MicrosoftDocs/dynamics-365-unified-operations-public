@@ -51,3 +51,24 @@ This document descibes the steps needed to embed the credit card receipt receipt
 ## Prerequisites
 
 **Payment connector** A payment connector which is implemented in accordance with the payments SDK
+
+## Setup
+
+1. Search for **Receipt formats** to open the recept formats form. 
+2. Select the receipt of type **Customer's credit card receipt** that will be used at the point of sale. If using demo data, select receipt format **3_P** and set **Print Behavior** to **Do not print**.
+3. Click **Designer** to launch the receipt designer and make changes to the receipt format. 
+4. Remove all fields from the receipt format. To edit a section of the receipt, you must first select the section in the bottom lefthand side of the designer window, then selecting the targeted receipt variable within the selected section. The keystroke **ALT+D** deletes the selected variable.
+5. Select the **Header** section of the receipt and drag the **EFT Message** variable into the header. 
+![EFT Message variable on Cardholder's receipt](.media/Cardholders.png)
+6. Click **Save**
+7. With the receipt designer still open, click **Select format** in the top lefthand corner. This will launch a receipt selector in a separate window. 
+8. In the receipt selector, select the receipt of type **Receipt** that will be at the point of sale. If using demo data, select receipt format **1_p**. 
+9. Select **Footer** in the lower lefthand section of the window and drag the **Card tender details** receipt variable into the footer.
+![Card tender details on the customer's receipt](.media/customersreceipt.png)
+10. Click **Save**. 
+11. Sync the changes to the point of sale using the **1090** distribution schedule.
+12. Close the shift in POS and open a new shift. 
+13. Perform a credit card transaction and observe the processor's credit card receipt embedded in the customer's receipt. 
+![Customer's receipt with credit card details](.media/receipt_w_cc.png)
+
+
