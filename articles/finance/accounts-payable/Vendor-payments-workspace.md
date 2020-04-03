@@ -5,7 +5,7 @@ title: Vendor payments workspace
 description: This topic provides information about the Vendor payments workspace. The Vendor payments workspace shows information that is related to the processing of vendor payments.
 author: abruer
 manager: AnnBe
-ms.date: 06/25/2019
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
