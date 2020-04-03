@@ -104,11 +104,11 @@ Over the next few weeks, these entity changes will be available in all environme
 
 ## Leave suspension
 
-You can suspend leave and absence in Human Resources for an employee. Suspending leave stops the leave accruals for selected leave types. If the suspension occurs after an accrual has been processed, suspending leave will create a prorated adjustment to the employee's leave balance. For more information, see [Suspend leave](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-leave-and-absence-suspend-leave).
+You can suspend leave and absence in Human Resources for an employee. Suspending leave stops the leave accruals for selected leave types. If the suspension occurs after an accrual has been processed, suspending leave will create a prorated adjustment to the employee's leave balance. For more information, see [Suspend leave](hr-leave-and-absence-suspend-leave.md).
 
 ## Carry forward rules
 
-You can specify a carry forward leave type for carry forward balances where carry forward adjustments are transferred. For example, if an employee carries forward 10 days, you can pick a different leave type for those 10 days. For more information, see [Configure leave and absence types](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-leave-and-absence-types).
+You can specify a carry forward leave type for carry forward balances where carry forward adjustments are transferred. For example, if an employee carries forward 10 days, you can pick a different leave type for those 10 days. For more information, see [Configure leave and absence types](hr-leave-and-absence-types.md).
 
 ## Coming Soon
 
