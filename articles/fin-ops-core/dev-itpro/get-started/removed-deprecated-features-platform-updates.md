@@ -44,6 +44,9 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Platform updates for version 10.0.11 of Finance and Operations apps
 
+> [!NOTE]
+> The following information is being provided so that you can plan appropriately. For more information about the targeted release schedule of version 10.0.11 of Finance and Operations apps, see [Service update availability](../../fin-ops/get-started/public-preview-releases.md).
+
 ### Field groups containing invalid field references
 
 |   |  |
