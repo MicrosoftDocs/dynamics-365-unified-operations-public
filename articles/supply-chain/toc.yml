@@ -24,6 +24,8 @@
           href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?toc=/dynamics365/supply-chain/toc.json
         - name: Apply updates to cloud environments
           href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Apply updates to on-premises deployments
+          href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/supply-chain/toc.json
         - name: Configure service updates
           href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/supply-chain/toc.json
         - name: Pause service updates
@@ -68,14 +70,18 @@
           items:
           - name: What's new or changed in Supply Chain Management home page
             href: get-started/whats-new-home-page.md
-          - name: Supply Chain Management version 10.0.9 (April 2020)
+          - name: Supply Chain Management 10.0.10 (May 2020)
+            href: get-started/whats-new-scm-10-0-10.md
+          - name: Supply Chain Management 10.0.9 (April 2020)
             href: get-started/whats-new-scm-10-0-9.md
-          - name: Supply Chain Management version 10.0.8 (February 2020)
+          - name: Supply Chain Management 10.0.8 (February 2020)
             href: get-started/whats-new-scm-10-0-8.md
-          - name: Supply Chain Management version 10.0.7 (January 2020)
-            href: get-started/whats-new-scm-10-0-7.md
         - name: Removed or deprecated features
-          href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
+          items:
+          - name: Removed or deprecated features in Dynamics 365 Supply Chain Management
+            href: get-started/removed-deprecated-features-scm-updates.md
+          - name: Removed or deprecated features in previous releases
+            href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
         - name: AX 2012 features that were postponed
           href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/supply-chain/toc.json
         - name: Features not implemented in on-premises deployments
