@@ -2586,6 +2586,8 @@
           href: localizations/switzerland.md
         - name: Import customer payments in ESR
           href: localizations/emea-che-esr-customer-payments-import.md
+        - name: Swiss QR-bills
+          href: localizations/emea-che-swiss-qr-bills.md
       - name: Thailand
         items:
         - name: Thailand overview
