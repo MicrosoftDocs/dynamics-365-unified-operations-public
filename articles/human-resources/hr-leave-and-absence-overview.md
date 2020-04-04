@@ -5,7 +5,7 @@ title: Overview
 description: In Dynamics 365 Human Resources, the Leave and absence workspace provides a flexible framework for creating new leave plans, workflows for managing requests, and an intuitive self service page for employees to request time off. 
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -59,19 +59,27 @@ Your employees can submit time off requests, and you can manage them, in the **E
 - [Request time off](hr-employee-self-service-request-time-off.md)
 - [Manage leave and absence requests](hr-employee-self-service-manage-requests.md)
 
-## Leave and absence management known issues
+## Leave and absence known issues
 
 ### Rounding precision
-**Rounding precision** can't be set when the **Rounding type** is set. **Rounding precision** can be set by using the **Leave and absence type** entity. 
 
-1. From **Leave and absence types** use the **Open in Excel** to open the **Leave and absenc type** entity
-2. Once the file opens and it's been enabled, select **Design**
-3. On the leave and absence type table, select the pencil option to edit
-4. Select **RoundingPrecision** and **RoundingType**, then select **Add** to add to the list of fields
-5. Select **Update**, then select **Done*
-6. Enter or select the **Rounding types** for each leave type if they haven't been set already. 
-7. Enter the **Rounding precision** for the appropriate types
-8. Select **Publish** to push the changes into Human Resources
+You can't set **Rounding precision** when you set **Rounding type**. You can only set **Rounding precision** by using the **Leave and absence type** entity. 
+
+1. From **Leave and absence types**, select **Open in Excel** to open the **Leave and absence type** entity.
+
+2. After the file opens and is enabled, select **Design**.
+
+3. On the **Leave and absence type** table, select the pencil option to edit.
+
+4. Select **RoundingPrecision** and **RoundingType**, and then select **Add** to add to the list of fields.
+
+5. Select **Update**, and then select **Done**.
+
+6. Enter or select the **Rounding type** for each leave type if they haven't been set already. 
+
+7. Enter the **Rounding precision** for the appropriate types.
+
+8. Select **Publish** to push the changes into Human Resources.
 
 ## Leave and absence preview features
 
