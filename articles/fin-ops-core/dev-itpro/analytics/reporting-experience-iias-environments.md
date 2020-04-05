@@ -52,7 +52,7 @@ Let's compare the fundamentals of the two reporting experiences
 |                           |         **Doc Gen**        |    **BI & Analytics**    |
 |---------------------------|----------------------------|--------------------------|
 | **Display format**        |      PDF & Office Docs     |            HTML          |
-| **Data volume**           |        1 - 100s rows       |        >10Ks rows        |
+| **Data volume**           |        1 - 100s rows       |        >10,000s rows     |
 | **Interactive features**      |        Printing, Text Search, Sharing       |        [Drill-thru, Drill-down, Sub-reports, Nested regions](https://docs.microsoft.com/en-us/sql/reporting-services/report-design/drillthrough-drilldown-subreports-and-nested-data-regions?view=sql-server-ver15)         |
 | **Data source**        |      Transactional DB     |            Data warehouse          |
 | **Report author**           |        Developer       |        Power User        |
