@@ -321,6 +321,22 @@ In RSAT, select one or more test cases to modify, and then select **Edit**. An E
 
 In addition to a **Summary** tab, the Excel file includes a **Variables** tab that has the details of all the variables that were generated. POS automatically generates variables for all the input values that are entered during a recording session. You don't have to generate the variables separately. Each variable has a unique variable ID that you can pass, in order, to different test cases in a single instance of test execution. All the variables on the **Variables** tab appear in the order that they were entered in during the recording session.
 
+Pass variables/values between POS test cases:
+
+To pass Variables/values between POS test cases, select the test cases in the RSAT tool and open the Variables.xlsx  file by clicking the Excel icon in the RSTA tool and copy the Variable ID (Column C) value and paste in in the Variable value field (Column D) . Ex: To pass the Receipt id from **Test case 1 - variable.xlsx** file to **Test case 2 - variable.xlsx** file, copy the variable ID value from column C: c8cc0571-9a27-b3c5-0749-c26c3cca6afe and paste  it in the Variable value column D in the test case 2 - variable.xlsx file, in double square brackets: **{{ c8cc0571-9a27-b3c5-0749-c26c3cca6afe}}**
+
+### Test case 1 – Variable.xlsx:
+
+| A  (Description)            | B (View Name) | C (Variable ID)| D (Variable Value) |
+|---------------------------------|-------------------------------|------------------------------|--------------------------------------|
+| Receipt Id "HOU123R456" | ShowJournalView        | c8cc0571-9a27-b3c5-0749-c26c3cca6afe   | HOU123R456     |
+
+### Test case 2 – Variable.xlsx:
+
+| A  (Description)            | B (View Name) | C (Variable ID)| D (Variable Value) |
+|---------------------------------|-------------------------------|------------------------------|--------------------------------------|
+| Receipt Id "HOU123R456" | ShowJournalView  | 80f23afa-5b76-5442-d16a-6cc9b8b245cb| **{{c8cc0571-9a27-b3c5-0749-c26c3cca6afe}}** |
+
 ### Validate expected values
 
 Validation of expected values is an important component of a test case. When you create your test cases, you can define validation parameters by using the test recorder in validation mode.
