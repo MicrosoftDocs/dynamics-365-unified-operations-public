@@ -121,6 +121,8 @@ That's it for the LCS portion.
 }
 ```
 
+??? Should we add row for MachineDown? Is there a MachineUp? Is machine down determined by no part out for a certain amount of time? Threshold?
+
 7. Add a row to the table. 
     a. Set the **Schema name** to **id**.
     b. Set the **Schema path** to **/[payload]\*/id**.
@@ -151,16 +153,33 @@ That's it for the LCS portion.
 21. Click **Next** to go to the **Equipment downtime threshold** page. The values for downtime threshold are already mapped according to the machine id. ??? Need more explanation of what's going on with this value. Does it control the throughput of the messages per machine?
 22. Click **Next** to go to the **Enable scenario** page. Click the slider to enable the scenario.
 23. Click **Finish**.
+24. Repeat to above steps to run the wizard for each scenario you defined in the IoT hub.
 
 At this point, the pipeline is complete and the messages are processed automatically.
 
 
+## How to view the monitors in Supply Chain Management
+
+1. In Supply Chain Management, navigate to **Production control \> Inquiries and reports \> IoT Intelligence \> Notifications**.
 
 
+**Production control \> Inquiries and reports \> IoT Intelligence \> Closed notifications**. Here you can see the notifications that have been resolved.
 
 
+**Production control \> Inquiries and reports \> IoT Intelligence \> Metric keys**. Here you can see a times series graph for each machine you are processing.
 
+
+**Production control \> Manufacturing execution \> Resource status**. You can configure this page to track specific machines using the **Configure** dialog. As messages are processed a graph is produced showing the parts produced. This page displays an error message if a machine is down, and there are buttons to resolve or dismiss the error message.
     
+**Production control \> Setup \> IoT Intelligence \> Scenario parameters**. Click **Equipment downtime** to see all the machines that are available.
+
+## How to uninstall the addin
+
+1. In Supply Chain Management, run the **Equipment downtime** configuration wizard, and disable the scenario.
+2. In LCS, uninstall the addin.
+
+
+
 
 
 ## IoT Intelligence Scenario setup
