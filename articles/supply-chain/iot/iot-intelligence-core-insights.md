@@ -144,6 +144,9 @@ That's it for the LCS portion.
 14. In the row for **UTC time** set the **Schema name** to **Timestamp**. The valid values are displayed in a dropdown table.
 15. In the row for **Part produced signal** set the **Schema name** to **value**. The valid values are displayed in a dropdown table.
 16. Click **Next** for the **Equipment resource id configuration** page.
+17. In this step, you map the machine names to ??? in the Supply Chain Management. In the message JSON, copy the **id** value **IoTInt.Machine1225.PartOut**. For the **Schema path** - **/[payload]\*/id**, in the **Signal Data Values** table, add a new row, and enter **IoTInt.Machine1225.PartOut** in the **Value** column. In the **Business Record Mapping** table, click **New**. The default value for the **Business record type** is autopopulated, and you don't need to change it. In the **Business record** column, select **Machine1225**. Click **Save**. Repeat, adding a new business record mapping for **Machine1226**. You can map multiple **id** values from the messages to a single record in Supply Chain Management.
+
+
 
 
 
