@@ -54,7 +54,7 @@ No data is changed during the migration process. After all currency and exchange
 
 ### How to request a migration
 
-If your Finance and Operations organization would like to enable this feature, email \<\<distlist\>\> and include the following information:
+If you want to enable this feature, email \<\<distlist\>\> and include the following information:
 
 + **Subject**: Request to enable expanded decimal support for \<organizationID\>
 + **Body**: I would like to enable expanded decimal support for my org \<organizationID\>
