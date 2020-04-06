@@ -2872,6 +2872,8 @@
           href: ../fin-ops-core/dev-itpro/analytics/supported-fonts.md?toc=/dynamics365/finance/toc.json
         - name: Configure SSRS for on-premises deployments
           href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/finance/toc.json
+        - name: Default reporting experiences in IaaS environments
+          href: ../fin-ops-core/dev-itpro/analytics/reporting-experience-iias-environments.md?toc=/dynamics365/finance/toc.json
         - name: Printing
           items:
           - name: Document printing overview
