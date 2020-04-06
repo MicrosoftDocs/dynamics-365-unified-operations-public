@@ -1,4 +1,37 @@
+---
+# required metadata
+
+title: Currency data-type migration for dual-write
+description: This topic describes how to change the number of decimal places for currency supported by dual-write.
+author: RamaKrishnamoorthy 
+manager: AnnBe
+ms.date: 04/06/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application User, IT Pro
+# ms.devlang: 
+ms.reviewer: rhaertle
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: global
+ms.search.industry: 
+ms.author: ramasri
+ms.dyn365.ops.version: 
+ms.search.validFrom: 2020-04-06
+---
+
 # Currency data-type migration for dual-write
+
+[!include [banner](../../includes/banner.md)]
 
 You can increase the number of decimal places supported for currency values, up to 10 places. The default limit is 4. Increasing the decimal places prevents data loss when you synchronize data using dual-write. This is an opt-in change, and you must request assistance from Microsoft to implement the change.
 
