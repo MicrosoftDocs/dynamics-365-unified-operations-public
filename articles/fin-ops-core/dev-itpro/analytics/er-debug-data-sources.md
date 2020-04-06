@@ -53,6 +53,8 @@ The following settings of ER formats are not currently accessible for data sourc
 
 -   Format transformations
 -   Format and mapping validation rules
+-   Enabling expressions
+-   Details of in-memory data collection
 
 ## Prerequisites
 
