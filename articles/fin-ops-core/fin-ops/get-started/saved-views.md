@@ -162,7 +162,7 @@ For the list of all published views for the page, the following set of actions a
 Note: The **Saved views** feature requires the Personalization system in Finance and Operations to be enabled. If personalization is turned off for the entire environment, views will be disabled even if you follow steps below. 
 
 **10.0.9 / Platform update 33 and later**
-The **Saved views** feature is available directly in Feature management in any environment. Like other public preview features, enabling this feature in production is subject to the [Supplemental Terms of Use agreement](https://go.microsoft.com/fwlink/?linkid=2105274).  
+The **Saved views** feature is available directly in Feature management in any environment. Like other public preview features, enabling this feature in production is subject to the [Supplemental Terms of Use Agreement](https://go.microsoft.com/fwlink/?linkid=2105274).  
 
 **10.0.8 / Platform update 32 and prior**
 The **Saved views** feature can be enabled in Tier 1 (Dev/Test) and Tier 2 (Sandbox) environments in order to provide additional testing and design changes by following the steps below.
