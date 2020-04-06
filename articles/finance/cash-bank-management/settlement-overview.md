@@ -56,6 +56,8 @@ As transactions are settled, the outstanding balance of each transaction is incr
 
 If a [payment is less than the invoice amount](../accounts-payable/vendor-payments-partial-amount.md) because of a cash discount, write-off, or underpayment, the invoice and payment might still be closed, depending on the setup of settlement in Accounts payable parameters and Accounts receivable parameters. Settlement can also generate transactions. For example, the settlement of an invoice and payment might produce a cash discount, realized gain or loss, sales tax adjustments, write-offs, or penny differences.
 
+## Marked transaction identification during settlement
+When settling a transaction, you may notice an icon that indicates the transaction is marked in another location.  When this happens, the transaction can be highlighted in the settlement screen then go to Inquiry > Settlement from the settlement window.  The view will allow visibility to journals, sales orders, invoices, payment proposals, and customer location that could be blocking the transaction from settlement.  To resolve you can select the link directly from the inquiry to the blocked location allowing the document to be updated by making the necessary adjustments to settle the document.  The Marked tab can be used to identify other documents that are included in the same blocking location.
 
 ## Additional resources
 - [Settle remainder](settle-remainder.md)
