@@ -5,7 +5,7 @@ title: Process life event eligibility
 description: This article shows you how to run the process for life event eligibility.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
