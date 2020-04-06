@@ -52,7 +52,7 @@ In document generation scenarios, a simple business activity, either automated o
 
 The following table compares the fundamentals of the two reporting experiences.
 
-|                          | Document Generation | BI and analytics |
+|                          | Document generation | BI and analytics |
 |--------------------------|---------|------------------|
 | **Display format**       | PDF and Office documents | HTML |
 | **Data volume**          | One to hundreds of rows | Tens of thousands of rows or more |
