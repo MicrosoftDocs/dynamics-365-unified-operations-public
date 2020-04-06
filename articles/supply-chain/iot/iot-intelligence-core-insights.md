@@ -186,30 +186,32 @@ There are several ways to view the messages processed in the scenario in Supply 
 
 
 ## IoT Intelligence Scenario setup
-    + How to enable the IoT Intelligence Feature flag
-    + How to define the IoT Hub message schemas in the IoT Intelligence wizard        
-        + Call out the JSON message schema dependency         
-        + Provide examples on how this message schema translates into this schema path        
-        + Call out that multiple messages schemas can be defined and are shared
-    + How to select the message schema paths for the IoT Intelligence scenario        
-        + Call out the dependency on the UNIX milliseconds timestamp        
-        + Call out that the message paths need be defined on same IoT Hub message        
-        + Provide examples of how one template can be filled out
-    + How to map your IoT Hub signals to the Dynamics resources        
-        + Describe the importance on the signal mapping and what it represents        
-        + Describe the signal selection process and what it represents
-    + How to enable the IoT Intelligence scenario
-    + How to disable the IoT Intelligence scenario
-    + How to modify a running IoT Intelligence scenario        
-        + List what can and cannot be updated while the scenario is running
+
++ How to enable the IoT Intelligence Feature flag
++ How to define the IoT Hub message schemas in the IoT Intelligence wizard        
+    + Call out the JSON message schema dependency         
+    + Provide examples on how this message schema translates into this schema path        
+    + Call out that multiple messages schemas can be defined and are shared
++ How to select the message schema paths for the IoT Intelligence scenario        
+    + Call out the dependency on the UNIX milliseconds timestamp        
+    + Call out that the message paths need be defined on same IoT Hub message        
+    + Provide examples of how one template can be filled out
++ How to map your IoT Hub signals to the Dynamics resources        
+    + Describe the importance on the signal mapping and what it represents        
+    + Describe the signal selection process and what it represents
++ How to enable the IoT Intelligence scenario
++ How to disable the IoT Intelligence scenario
++ How to modify a running IoT Intelligence scenario        
+    + List what can and cannot be updated while the scenario is running
 
 ## IoT Intelligence Metric setup
-    + How to setup Dynamics to view the IoT Hub metrics        
-        + Provide the steps to add the Redis Connection string to the Scenario Parameters form        
-        + Call out that any time the Redis connection string is updated the parameter form value will need to be updated
-    + How to configure the Resource Status displayed metrics
-    + How to update the metric keys
-    + How to delete their metric keys 
+
++ How to setup Dynamics to view the IoT Hub metrics        
+    + Provide the steps to add the Redis Connection string to the Scenario Parameters form        
+    + Call out that any time the Redis connection string is updated the parameter form value will need to be updated
++ How to configure the Resource Status displayed metrics
++ How to update the metric keys
++ How to delete their metric keys 
 
 
 
