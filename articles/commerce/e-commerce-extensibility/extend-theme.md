@@ -36,13 +36,13 @@ This topic describes how to extend a theme from a base theme for a Microsoft Dyn
 
 ## Overview
 
-Using the Dynamics 365 Commerce online store extensibility software development kit (SDK), themes can be created to be standalone themes or can be extended from a base theme. For example, you can have a base theme that defines module CSS styles, module view extensions, and module definition extensions then have a different theme (or set of themes) that add additional changes on top of the base theme. This is helpful when a single Dynamics 365 environment has multiple online sites with different theme branding.
+By using the Dynamics 365 Commerce online store extensibility software development kit (SDK), you can create either themes that are standalone themes or themes that are extended from a base theme. For example, you can have a base theme that defines Cascading Style Sheets (CSS) styles for modules, module view extensions, and module definition extensions. You can then have a different theme, or even a set of themes, that adds changes on top of the base theme. This capability is helpful when a single Dynamics 365 environment has multiple online sites that use different theme branding.
 
 ## Specify a base theme
 
-To specify a base theme for a theme, edit the theme definition file and add a '$ref' section pointing to the base theme.
+To specify the base theme for a theme, edit the theme definition file, and add a **$ref** section that points to the base theme.
 
-In the example below, the "$ref" section references the fabrikam sample theme which is included as part of the store starter kit.
+In the following example, the **$ref** section references the **fabrikam** sample theme that is included as part of the store starter kit.
 
 ```json
 {
@@ -56,14 +56,16 @@ In the example below, the "$ref" section references the fabrikam sample theme wh
 
 ## Examples
 
-The following example has a base theme created with the **add-theme** command-line interface (CLI) command.
+In the following example, the **add-theme** command-line interface (CLI) command is used to create a base theme.
 
-```Console
+```console
 yarn msdyn365 add-theme base
 ```
-The base theme has a definition file as shown below.
+
+Here is the definition file for the base theme that is created.
 
 **basetheme.definition.json**
+
 ```json
 {
     "$type": "themeModule",
@@ -73,15 +75,16 @@ The base theme has a definition file as shown below.
 }
 ```
 
-The following example CLI command creates a new theme called "extended".
+Next, the CLI command is used to create a theme that is named **extended**.
 
-```Console
+```console
 yarn msdyn365 add-theme extended
 ```
 
-The extended theme definition file can now reference the base theme using a relative path as shown below.
+The definition file for the extended theme can now reference the base theme by using a relative path, as shown here.
 
 **extended.definition.json**
+
 ```json
 {
     "$ref": "../base/base.definition.json",
@@ -90,15 +93,15 @@ The extended theme definition file can now reference the base theme using a rela
     "friendlyName": "extended",
     "name": "extended"
 }
-
 ```
 
 ### Include base theme styles
 
-By default, base theme styles are not included in the extended theme. To include the base theme styles, you can add a reference in the extended.theme.scss file as shown in the example below, which also shows how to add additional styles.
+By default, base theme styles aren't included in the extended theme. To include the base theme styles, you can add a reference in the **extended.theme.scss** file, as shown here. This example also shows how to add other styles.
 
 **extended.theme.scss**
-```
+
+```scss
 @import "../../base/styles/base.theme.scss";
 
 body {
@@ -106,10 +109,11 @@ body {
 }
 ```
 
-Similar to the example above, if desired the **extended.definition.scss.json** file can also reference the base theme as shown in the following example.
+The following example resembles the previous example. It shows that you can also add a reference to the base theme in the **extended.definition.scss.json** file, if you want.
 
 **extended.definition.scss.json**
-```
+
+```json
 {
     "$ref": "../../base/styles/base.definition.scss.json",
     "name": "extended"
@@ -123,4 +127,3 @@ Similar to the example above, if desired the **extended.definition.scss.json** f
 [Create a theme](create-theme.md)
 
 [Configure theme settings](configure-theme-settings.md)
-
