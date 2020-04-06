@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: IoT intelligence core insights
-description: This topic explains how to calculate item forecast in Asset Management.
+title: IoT Intelligence core insights
+description: This topic describes IoT Intelligence core insights and describes how to setup and monitor a scenario.
 author: 
 manager: AnnBe
 ms.date: 08/16/2019
@@ -33,6 +33,16 @@ ms.dyn365.ops.version: 10.0.5
 # IoT intelligence core insights
 
 [!include [banner](../../includes/banner.md)]
+
+
+Internet of things (IoT) Intelligence supports the following core insights and action scenarios:
+
++ **Delayed orders** : Provides notification services and actions for managing delayed production orders. Displays impacted operations. Provides users with the ability to define order-delay metrics for combinations of resources and products, and notifies users when exceptions to these thresholds occur. Enables users to take relevant business actions for delayed orders, including the ability to view impact or create a maintenance request.
++ **Equipment down**: Provides notification services and actions for managing equipment-down scenarios. Displays impacted operations. Provides users with the ability to define metrics for machine-down thresholds and notifies users when an exception to these thresholds occurs. Enables users to take relevant business actions for delayed orders, including the ability to view impact or create a maintenance work order.
++ **Quality anomaly**: Provides notification services and actions for managing quality anomalies. Provides users with the ability to define quality attributes for products and get notified when exceptions to these attributes occur.
++ **Automated inventory updates**: Provides automated inventory updates from the shop floor. Provides the ability to define batching/grouping rules for automatic inventory update journals and report as finished (RAF) creation based on part-out signals received from the IoT Hub.
+
+You can setup and configure core insights without writing any code. 
 
 ## Azure Resource setup
     + How to add the ‘Microsoft Dynamics Microservice ERP’ First Party App Id to the customer tenant
