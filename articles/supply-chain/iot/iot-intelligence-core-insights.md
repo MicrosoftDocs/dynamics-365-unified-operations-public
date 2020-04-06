@@ -154,6 +154,17 @@ The **Equipment downtime** scenario maps a machine to a **PartOut** signal and d
 
 At this point, the pipeline is complete and the messages are processed automatically.
 
+
+The **Equipment downtime** scenario maps a machine to a **PartOut** signal and defines an alert threshold. The machine is monitored only when the machine is selected for the scenario and is set to running in Supply Chain Management. If the time since the machine’s last received Part Out signal is greater than the alert threshold, then a **Machine down** notification is triggered. If the machine is still running, when the next **PartOut** signal is received a **Machine up** notification is triggered. If a machine stays down for 30 mins a new **Machine down** notification is triggered.
+
+## Configure the **Quality** scenario in Supply Chain Management
+
+The **Quality scenario** determines if an attribute is valid or not by mapping a sensor reading to machine and defining a batch attribute. The sensor reading is monitored only when the signal is selected for the scenario, the sensor’s machine is running,and the machine is scheduled to produce a product that has the batch attribute defined. While the machine is running, every time the signal is outside of the batch attribute’s valid range a quality notification is triggered. THe valid range is specified using a minimum and a maximum value.
+
+## Configure the **Production Order Delay** scenario in Supply Chain Management
+
+The **Production Order Delay** scenario determine if an order is delayed or not by mapping a **PartOut** signal to a maching and defining a route threshold. A production order is monitored only when the producing machine is selected for the scenario and is set to running in Supply Chain Management. The order delay is calculated based on how long the production order is scheduled to run, how many items should be be produced, how long the job has been running, and how many **PartOut** signals are received. A production order delay notification is created if the number of the **PartOut** signals for the job falls below the threshold value of the expected linear output rate.
+
 ## How to view the monitors in Supply Chain Management
 
 There are several ways to view the messages processed in the scenario in Supply Chain Management:
@@ -196,16 +207,7 @@ There are several ways to view the messages processed in the scenario in Supply 
     + How to update the metric keys
     + How to delete their metric keys 
 
-## Configure the **Quality** scenario in Supply Chain Management
 
-
-    + How does the Quality scenario determine if a attribute is valid or not        
-        + Describe how a sensor reading is tied to a machine and a batch attribute. The sensor reading is only monitored when the signal is selected for the scenario, the sensor’s machine is running and the machine is scheduled to produce a product that has the batch attribute defined. While the machine is running, every time the signal crosses the batch attribute’s min max range a quality notification will be triggered.
-
-## Configure the **Production Order Delay** scenario in Supply Chain Management
-
-+ How does the Production Order Delay scenario determine if an order is delayed or not        
-        + Describe how a machine is tied to a Part Out signal and a route threshold. A Production order is only monitored when the producing machine is selected for the scenario and is set to running in Dynamics. The order delay is calculated based on how long the production order is scheduled to run, how many items should be be produced, how long the job has been running and how many Part Out signals have been received. A production order delay notification is created, if the number of the Part Out signals for the job falls below the threshold value of the expected linear output rate.
 
 ## Simulation options
 
