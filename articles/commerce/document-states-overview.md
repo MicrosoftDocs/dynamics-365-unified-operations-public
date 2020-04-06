@@ -40,13 +40,14 @@ The [Page elements](page-elements-overview.md) topic lists various documents typ
 
 The following table shows the possible document states of page elements in Commerce.
 
-| Document state | Description |
-|---|---|
-| Checked out | When a CMS item is checked out to you, it can't be edited by any other authenticated system users. Any changes that you make to the item are visible only to you. |
-| Checked in | When a CMS item is checked in, all changes are visible to other authenticated system users, and those users can then check out the item and edit it. Each check-in creates a document version record in the item's history. |
-| Published | When a CMS item is published, it's pushed to your live site and becomes discoverable on the internet by non-authenticated external users. Items can be published only if they have been checked in. |
-| Saved | Changes that have been made to a checked-out CMS item can be saved to the CMS before the item is checked in or published. These saved changes aren't visible to other authenticated system users until the item is checked in. They aren't visible to external users until the item is published. |
-| Discarded check out | When a checked-out CMS item is discarded, all saved changes are deleted, and the item reverts to the version that was most recently checked in. |
+| Document state      | Site builder actions      | Description                                                  |
+| ------------------- | ------------------------- | ------------------------------------------------------------ |
+| Checked out         | **Edit** button           | By clicking the **Edit** button in site builder, the applicable document is checked out to you.  While in this state, the document can't be changed by other authenticated system users, and any changes that you make to the document are visible only to you. |
+| Saved               | **Save** button           | By clicking the **Save** button in site builder, changes that have been made to a checked-out document are saved to the database, but the document is not yet checked in or published. These saved changes aren't yet visible to other authenticated system users until the author clicks the **Finish editing** button, and they aren't visible to external users until the item is published. |
+| Discarded check out | **Discard edits** button  | By clicking the **Discard edits** button in site builder, all changes to the checked-out document are discarded, and the item reverts to the last version that was checked in. |
+| Checked in          | **Finish editing** button | By clicking the **Finish editing** button in site builder, the edited document is checked in.  All changes are visible to other authenticated system users, and those users can then edit the document. Each check-in creates a document version record in the item's history. |
+| Published           | **Publish** button        | When a CMS document is published, the changes are pushed to your live site and become discoverable on the internet by external users. Items can be published only if they have first been checked in. |
+|                     |                           |                                                              |
 
 ## Additional resources
 
