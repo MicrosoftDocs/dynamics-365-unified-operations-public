@@ -44,60 +44,57 @@ Internet of things (IoT) Intelligence supports the following core insights and a
 
 You can setup and configure core insights without writing any code. 
 
+In this topic, you will configer a scenario to generate message in Supply Chain Management when a machine goes down.
+
 ## Azure Resource setup
-    + How to add the ‘Microsoft Dynamics Microservice ERP’ First Party App Id to the customer tenant
-    + How to setup an Azure Redis Cache for IoT Intelligence        
-        + Show where the Redis Cache connection string is located        
-        + Call out that it is recommendation that only one Redis Cache is used per environment
-    + How to setup an Azure IoT Hub for IoT Intelligence        
-        + Provide the steps to add the IoT Intelligence consumer groups        
-        + Show where the Event Hub connection string is located        
-        + Call out that it is recommendation that only one IoT Hub is used per environment
+
++ Add the **Microsoft Dynamics Microservice ERP** **First Party App Id** to the customer tenant.
++ Setup an Azure Redis Cache for IoT Intelligence.
+    + Show where the Redis Cache connection string is located.        
+    + Call out that it is recommendation that only one Redis Cache is used per environment.
++ Setup an Azure IoT Hub for IoT Intelligence.
+    + Add the IoT Intelligence consumer groups.       
+    + Show where the Event Hub connection string is located.     
+    + Call out that it is recommendation that only one IoT Hub is used per environment
         
-### How to setup an Azure Key Vault for IoT Intelligence        
-+ Provide the steps on how to give the first party app-id the correct Access Policies to the key vault        
-+ Show where the Key Vault Uri is located        
-+ Show where the Key Vault ADD tenant id is located        
-+ Provide the steps on how to add the IoT Hub connection string to the key vault        
-+ Provide the steps on how to add the Redis Cache connection string to the key vault        
-+ Show where the Key Vault secret names are located        
+### How to setup an Azure Key Vault for IoT Intelligence
+
++ Give the first party app-id the correct Access Policies to the key vault.     
++ Show where the Key Vault Uri is located.
++ Show where the Key Vault ADD tenant id is located.
++ Add the IoT Hub connection string to the key vault.      
++ Add the Redis Cache connection string to the key vault.    
++ Show where the Key Vault secret names are located.  
 + Call out that any time one of the connection strings is updated the secret values will need to be updated
 
 Notes:
-Need to add the Microsoft Dynamics microservice, first party app ID.
-Give the LCS environment access to the key vault.
 
-
++ You must add the Microsoft Dynamics microservice, first party app ID.
++ You must give the LCS environment access to the key vault.
 
 ## OneBox Environment setup
-    + How to whitelist a OneBox Environment for IoT Intelligence access        
-        + Provide the steps on how to create the Network Security Group Inbound SQL Port rule        
-        + Provide the steps on how to create the Load Balancer Inbound NAT rule        
-        + Provide the steps on how to open up the VMs Firewall for the SQL port        
-        + Provide the steps on how to verify the VM’s ‘PC Discoverable setting’ is turned off
-    + How to add the correct SQL users to the OneBox environment for IoT Intelligence access
+
++ Give access to a OneBox Environment for IoT Intelligence access        
+    + Create the Network Security Group Inbound SQL Port rule        
+    + Create the Load Balancer Inbound NAT rule        
+    + Open up the VMs Firewall for the SQL port        
+    + Verify the VM’s ‘PC Discoverable setting’ is turned off
++ Add the correct SQL users to the OneBox environment for IoT Intelligence access
 
 ## LCS Environment setup 
-    + How to install the IoT Intelligence add-in for an environment        
-        + Provide the steps to locate the LCS environment add-in section        
-        + Provide the steps to select the IoT Intelligence add-in        
-        + Give the details on where each input property can be found (Tenant Id, Key Vault Uris and Secret names)
-    + How to uninstall the IoT Intelligence add-in for an environment        
-        + Show where in LCS the IoT Intelligence add-in can be uninstalled
 
 1. Open LCS.
 2. Navigate to the environment details.
 3. Scroll down to an environment.
-4. In the Add-in section, click **Install a new add-in** to populate the list of addin's that have been enabled for the environment.
+4. In the Add-in section, click **Install a new add-in** to populate the list of addins that have been enabled for the environment.
 5. Click on the **IoT Intelligence** add-in.
 6. Enter the connection strings for your IoT hub and Redis cache. You can find the values that you need in the key vault you created in the [name of section](#link to section).
     a. In Azure, open the key vault you previously created, and copy the DNS name. The DNS name servers as the key vault identifer.
-    b. In the **Setup add-in** dialog, copy the value into the fields for **IoT Hub** and **Redis cache**.
-    c. In Azure, open the key vault and click the Secrets tab. Copy the secret for ?? and copy it to teh ??? field in the **Setup add-in** dialog.
+    b. In the **Setup add-in** dialog, paste the value into the fields for **IoT Hub** and **Redis cache**.
+    c. In Azure, open the key vault and click the Secrets tab. Copy the secret for ?? and copy it to the ??? field in the **Setup add-in** dialog.
     d. In Azure, copy the secret for the **Redis ???** and copy it to **Redis cache endpoint secret name** in the **Setup add-in** dialog.
 7. Click **Install**. 
 8. A dialog shows up that says **Add-in has been successfully triggered for installation**. Click **OK**.
-That's it for the LCS portion.
 
 ## Setup the Finance and Operations apps
 
@@ -106,33 +103,25 @@ That's it for the LCS portion.
 3. Navigate to **Production control**.
 4. Navigate to **Setup \> IoT Intelligence \> Scenario parameters**. Enter the Redis connection string. *Insert instructions here on how to get this value. It appears not to be in the key vault.*
 5. Navigate to **Setup \> IoT Intelligence \> Scenario management**.
-6. Click **Configure** on the **Equipment downtime** tile. This starts the configuration wizard for the **Equipment sensor schema definition**. The goal here is to setup the schema in Supply Chain Management to match the JSON format that you created when you setup the message in Azure. In this example, the message payload contains a batch of messages:
+6. Click **Configure** on the **Equipment downtime** tile. This starts the configuration wizard for the **Equipment sensor schema definition**. The goal here is to setup the schema in Supply Chain Management to match the JSON format that you created when you setup the message in Azure. In this example, the message payload contains a batch of messages with this format:
 
-```json
-{
-    "timestamp": 1576016821614,
-    "payload": [
-        {
-            "id": "IoTInt.Machine1225.PartOut",
-            "timestamp": 1576016821614,
-            "value": True
-        },
-        {
-            "id": "IoTInt.Foo.PartOut",
-            "timestamp": 1576018821615,
-            "value": False
-        },
-        {
-            "id": "IoTInt.Machine1226.PartOut",
-            "timestamp": 1576016991616,
-            "value": True
-        }
-    ]
-}
-```
-
-??? Should we add row for MachineDown? Is there a MachineUp? Is machine down determined by no part out for a certain amount of time? Threshold?
-
+    ```json
+    {
+        "timestamp": 1576016821614,
+        "payload": [
+            {
+                "id": "IoTInt.Machine1225.PartOut",
+                "timestamp": 1576016821614,
+                "value": True
+            },
+            {
+                "id": "IoTInt.Machine1226.PartOut",
+                "timestamp": 1576016991616,
+                "value": True
+            }
+        ]
+    }
+    ```
 7. Add a row to the table. 
     a. Set the **Schema name** to **id**.
     b. Set the **Schema path** to **/[payload]\*/id**.
@@ -145,12 +134,9 @@ That's it for the LCS portion.
     a. Set the **Schema name** to **value**.
     b. Set the **Schema path** to **/[payload]\*/value**.
     c. Set the **Description** to **Message value**.
-9. Add a row to the table. 
-    a. Set the **Schema name** to **Root timestamp**.
-    b. Set the **Schema path** to **/timestamp**.
-    c. Set the **Description** to **Root timestamp**.
+
+    You don't need to define all the properties in the message, only the ones that you need. In this example, you did not create a row for **Root timestamp**.
 10. If there are sample entries in the table, delete them.
-11. You don't need to define all the properties in the message, only the ones that you need. In this example, you can delete the **Root timestamp** entry.
 12. Click **Next** to go to the **Equipment sensor schema map** page.
 13. In the row for **Equipment resource id** set the **Schema name** to **id**. The valid values are displayed in a dropdown table.
 14. In the row for **UTC time** set the **Schema name** to **Timestamp**. The valid values are displayed in a dropdown table.
@@ -160,36 +146,26 @@ That's it for the LCS portion.
 18. After you have entered all the rows you need in the **Business Record Mapping** table, use the **Selected** column to choose when machines you want to process. You do not have to process information that comes from all the machines.
 19. Click **Next** to go to the **Part produced signal configuration** page.
 20. In the **Signal Data Values** table, add a row, and set **Value** to **True**. Add another row, and set **Value** to 1. Click **Save**.
-21. Click **Next** to go to the **Equipment downtime threshold** page. The values for downtime threshold are already mapped according to the machine id. ??? Need more explanation of what's going on with this value. Does it control the throughput of the messages per machine?
+21. Click **Next** to go to the **Equipment downtime threshold** page. The values for downtime threshold are already mapped according to the machine id. In this step, you define a threshold to determine if a machine is down. For example, if you set the threshold to 10, Supply Chain Management generates a notification if there is no PartOut message from a machine after 10 minutes. 
 22. Click **Next** to go to the **Enable scenario** page. Click the slider to enable the scenario.
 23. Click **Finish**.
-24. Repeat to above steps to run the wizard for each scenario you defined in the IoT hub.
 
 At this point, the pipeline is complete and the messages are processed automatically.
 
-
 ## How to view the monitors in Supply Chain Management
 
-1. In Supply Chain Management, navigate to **Production control \> Inquiries and reports \> IoT Intelligence \> Notifications**.
+There are several ways to view the messages processed in the scenario in Supply Chain Management:
 
-
-**Production control \> Inquiries and reports \> IoT Intelligence \> Closed notifications**. Here you can see the notifications that have been resolved.
-
-
-**Production control \> Inquiries and reports \> IoT Intelligence \> Metric keys**. Here you can see a times series graph for each machine you are processing.
-
-
-**Production control \> Manufacturing execution \> Resource status**. You can configure this page to track specific machines using the **Configure** dialog. As messages are processed a graph is produced showing the parts produced. This page displays an error message if a machine is down, and there are buttons to resolve or dismiss the error message.
-    
-**Production control \> Setup \> IoT Intelligence \> Scenario parameters**. Click **Equipment downtime** to see all the machines that are available.
++ **Production control \> Inquiries and reports \> IoT Intelligence \> Notifications**. Here you can see the list of unresolved notifications. A notification is generated when a machine is down.
++ **Production control \> Inquiries and reports \> IoT Intelligence \> Closed notifications**. Here you can see the notifications that have been resolved.
++ **Production control \> Inquiries and reports \> IoT Intelligence \> Metric keys**. Here you can see a times series graph for each machine you are processing.
++ **Production control \> Manufacturing execution \> Resource status**. You can configure this page to track specific machines using the **Configure** dialog. As messages are processed a graph is produced showing the parts produced. This page displays an error message if a machine is down, and there are buttons to resolve or dismiss the error message.
++ **Production control \> Setup \> IoT Intelligence \> Scenario parameters**. Click **Equipment downtime** to see all the machines that are available.
 
 ## How to uninstall the addin
 
 1. In Supply Chain Management, run the **Equipment downtime** configuration wizard, and disable the scenario.
 2. In LCS, uninstall the addin.
-
-
-
 
 
 ## IoT Intelligence Scenario setup
