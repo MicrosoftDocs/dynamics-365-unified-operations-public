@@ -191,6 +191,16 @@ When you configure an ER format the draft version of which can be executed right
 
 ![Format designer page](./media/er-data-debugger-run-from-designer.png)
 
+The format mapping and format components of the editing ER format are available for debugging.
+
+## Start debugging in Model mapping designer
+
+When you configure an ER model mapping that can be executed right from the model mapping page, you can directly call data sources debugger by selecting the **Start debugging** option.
+
+![Modle mapping designer page](./media/er-data-debugger-run-from-designer-mapping.png)
+
+The model mapping component of the editing ER mapping is available for debugging.
+
 ## <a name="appendix1">Appendix 1: Get an ER solution</a>
 
 ### Download an ER solution
