@@ -125,19 +125,23 @@ The **Equipment downtime** scenario maps a machine to a **PartOut** signal and d
     }
     ```
 7. Add a row to the table. 
+
     a. Set the **Schema name** to **id**.
     b. Set the **Schema path** to **/[payload]\*/id**.
     c. Set the **Description** to **Message id**.
 8. Add a row to the table. 
+
     a. Set the **Schema name** to **timestamp**.
     b. Set the **Schema path** to **/[payload]\*/timestamp**.
     c. Set the **Description** to **Message timestamp**.
 9. Add a row to the table. 
+
     a. Set the **Schema name** to **value**.
     b. Set the **Schema path** to **/[payload]\*/value**.
     c. Set the **Description** to **Message value**.
 
     You don't need to define all the properties in the message, only the ones that you need. In this example, you did not create a row for **Root timestamp**.
+  
 10. If there are sample entries in the table, delete them.
 12. Click **Next** to go to the **Equipment sensor schema map** page.
 13. In the row for **Equipment resource id** set the **Schema name** to **id**. The valid values are displayed in a dropdown table.
