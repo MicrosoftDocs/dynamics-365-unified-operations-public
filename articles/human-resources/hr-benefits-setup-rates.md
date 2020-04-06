@@ -5,7 +5,7 @@ title: Configure rates
 description: Rates in Microsoft Dynamics 365 Human Resources define how much employers and employees contribute for a benefit.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -31,8 +31,6 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Configure rates
-
-[!include [banner](includes/preview-feature.md)]
 
 Rates in Microsoft Dynamics 365 Human Resources define how much employers and employees contribute for a benefit. The value can be an amount or flex credits, depending on your configuration.
 
