@@ -3,7 +3,7 @@
 
 title: IoT Intelligence core insights
 description: This topic describes IoT Intelligence core insights and describes how to setup and monitor a scenario.
-author: 
+author: robinarh
 manager: AnnBe
 ms.date: 08/16/2019
 ms.topic: article
@@ -44,7 +44,7 @@ Internet of things (IoT) Intelligence supports the following core insights and a
 
 You can setup and configure core insights without writing any code. 
 
-In this topic, you will configer a scenario to generate message in Supply Chain Management when a machine goes down.
+In this topic, you will configure the scenario to generate a message in Supply Chain Management when a machine goes down. This is the **Equipment down** scenario.
 
 ## Azure Resource setup
 
@@ -96,7 +96,9 @@ Notes:
 7. Click **Install**. 
 8. A dialog shows up that says **Add-in has been successfully triggered for installation**. Click **OK**.
 
-## Setup the Finance and Operations apps
+## Configure the **Equipment downtime** scenario in Supply Chain Management
+
+The **Equipment downtime** scenario maps a machine to a **PartOut** signal and defines an alert threshold. The machine is monitored only when the machine is selected for the scenario and is set to running in Supply Chain Management. If the time since the machine’s last received Part Out signal is greater than the alert threshold, then a **Machine down** notification is triggered. If the machine is still running, when the next **PartOut** signal is received a **Machine up** notification is triggered. If a machine stays down for 30 mins a new **Machine down** notification is triggered.
 
 1. Log into the Finance and Operations apps.
 2. Switch the **USMF** (for demo data).
@@ -194,17 +196,21 @@ There are several ways to view the messages processed in the scenario in Supply 
     + How to update the metric keys
     + How to delete their metric keys 
 
-## IoT Intelligence Scenario data dependencies
-    + How does the Machine Status scenario determine when a machine is up or down        
-        + Describe how a machine is tied to a Part Out signal and an alert threshold. The machine is only monitored when the machine is selected for the scenario and is set to running in Dynamics. If the time since the machine’s last received Part Out signal is greater than the alert threshold a Machine down notification is triggered. If the machine is still running,  when the next Part Out signal is received a Machine up notification is triggered. If a machine stays down for 30 mins a new Machine down notification is triggered.
+## Configure the **Quality** scenario in Supply Chain Management
+
+
     + How does the Quality scenario determine if a attribute is valid or not        
         + Describe how a sensor reading is tied to a machine and a batch attribute. The sensor reading is only monitored when the signal is selected for the scenario, the sensor’s machine is running and the machine is scheduled to produce a product that has the batch attribute defined. While the machine is running, every time the signal crosses the batch attribute’s min max range a quality notification will be triggered.
-    + How does the Production Order Delay scenario determine if an order is delayed or not        
+
+## Configure the **Production Order Delay** scenario in Supply Chain Management
+
++ How does the Production Order Delay scenario determine if an order is delayed or not        
         + Describe how a machine is tied to a Part Out signal and a route threshold. A Production order is only monitored when the producing machine is selected for the scenario and is set to running in Dynamics. The order delay is calculated based on how long the production order is scheduled to run, how many items should be be produced, how long the job has been running and how many Part Out signals have been received. A production order delay notification is created, if the number of the Part Out signals for the job falls below the threshold value of the expected linear output rate.
 
 ## Simulation options
-    + How to setup IoT solutions to simulate factory machine signals
-    + How to setup a MxChip to simulate a factory machine signal
+
++ Setup IoT solutions to simulate factory machine signals
++ Setup a MxChip to simulate a factory machine signal
 
 
 
