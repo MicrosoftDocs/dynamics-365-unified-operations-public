@@ -139,12 +139,20 @@ That's it for the LCS portion.
     c. Set the **Description** to **Root timestamp**.
 10. If there are sample entries in the table, delete them.
 11. You don't need to define all the properties in the message, only the ones that you need. In this example, you can delete the **Root timestamp** entry.
-12. Click **Next** for the **Equipment sensor schema map** page.
+12. Click **Next** to go to the **Equipment sensor schema map** page.
 13. In the row for **Equipment resource id** set the **Schema name** to **id**. The valid values are displayed in a dropdown table.
 14. In the row for **UTC time** set the **Schema name** to **Timestamp**. The valid values are displayed in a dropdown table.
 15. In the row for **Part produced signal** set the **Schema name** to **value**. The valid values are displayed in a dropdown table.
 16. Click **Next** for the **Equipment resource id configuration** page.
-17. In this step, you map the machine names to ??? in the Supply Chain Management. In the message JSON, copy the **id** value **IoTInt.Machine1225.PartOut**. For the **Schema path** - **/[payload]\*/id**, in the **Signal Data Values** table, add a new row, and enter **IoTInt.Machine1225.PartOut** in the **Value** column. In the **Business Record Mapping** table, click **New**. The default value for the **Business record type** is autopopulated, and you don't need to change it. In the **Business record** column, select **Machine1225**. Click **Save**. Repeat, adding a new business record mapping for **Machine1226**. You can map multiple **id** values from the messages to a single record in Supply Chain Management.
+17. In this step, you map the machine names to ??? in the Supply Chain Management. In the message JSON, copy the **id** value **IoTInt.Machine1225.PartOut**. For the **Schema path** - **/[payload]\*/id**, in the **Signal Data Values** table, add a new row, and enter **IoTInt.Machine1225.PartOut** in the **Value** column. In the **Business Record Mapping** table, click **New**. The default value for the **Business record type** is autopopulated, and you don't need to change it. In the **Business record** column, select **Machine1225**. Click **Save**. Repeat, adding a new business record mapping for **Machine1226**. You can map multiple **id** values from the messages to a single record in Supply Chain Management, but you can't map a single **id** value to multiple records in Supply Chain Management.
+18. After you have entered all the rows you need in the **Business Record Mapping** table, use the **Selected** column to choose when machines you want to process. You do not have to process information that comes from all the machines.
+19. Click **Next** to go to the **Part produced signal configuration** page.
+20. In the **Signal Data Values** table, add a row, and set **Value** to **True**. Add another row, and set **Value** to 1. Click **Save**.
+21. Click **Next** to go to the **Equipment downtime threshold** page. The values for downtime threshold are already mapped according to the machine id. ??? Need more explanation of what's going on with this value. Does it control the throughput of the messages per machine?
+22. Click **Next** to go to the **Enable scenario** page. Click the slider to enable the scenario.
+23. Click **Finish**.
+
+At this point, the pipeline is complete and the messages are processed automatically.
 
 
 
