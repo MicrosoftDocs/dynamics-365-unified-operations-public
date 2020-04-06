@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Default reporting experiences in Iaas environments
-description:  This topic provides information about paginated reporting in Dynamics 365 Finance and Operations apps.
+title: Default reporting experiences in IaaS environments
+description: This topic provides information about paginated reporting in Finance and Operations apps.
 author: TJVass
 manager: AnnBe
 ms.date: 04/06/2020
@@ -30,58 +30,60 @@ ms.dyn365.ops.version:
 
 ---
 
-# Default reporting experiences in Iaas environments
+# Default reporting experiences in IaaS environments
+
 [!include [banner](../includes/banner.md)]
 
 ## Reporting scenarios in ERP
-The Document Reporting Services bundled with Dynamics 365 Finance and Operations apps provide end user tooling to facilitate two basic user functions in Enterprise Resource Planning: **Document generation (Doc Gen)** and **BI and Analytics**. These generic scenarios represent the two most common methods of accessing business data.
 
-- **Document generation** - The production of structured documents often with the primary purpose of printing and bulk email distribution.
-- **BI and Analytics** - Interactive visualizations based on aggregations that contain embedded links to referenced data. Users rely on these tools to identify patterns and trends in large amounts of data.
+The Document Reporting Services that are bundled with Finance and Operations apps provide user tooling to facilitate two basic user functions, or generic scenarios, in enterprise resource planning (ERP): **document generation (Doc Gen)** and **business intelligence (BI) and analytics**. These generic scenarios represent the two most frequently used methods for accessing business data.
 
-Though Document Reporting Services (RDL) continue to be the ideal tool for bulk production of business documents, these solutions lack the extensibility options that a Power User requires to adapt analytical views and account for frequent changes in the business environment.  At the same time, the [Power BI service](https://docs.microsoft.com/en-us/power-bi/fundamentals/power-bi-overview) is recognized as an industry leader in delivering powerful analytics for businesses of all sizes. Finance and Operations apps, Power BI service integration options are available to accommodate the seamless data exploration of customer business data.
+- **Doc Gen** – The production of structured documents, where the primary purpose is often printing and bulk email distribution.
+- **BI and analytics** – Interactive visualizations that are based on aggregations, and that contain embedded links to referenced data. Users rely on these visualizations to identify patterns and trends in large amounts of data.
+
+Although Document Reporting Services (RDL) continue to be the ideal tool for bulk production of business documents, these solutions lack the extensibility options that power users require so that they can adapt analytical views and account for frequent changes in the business environment. At the same time, the [Microsoft Power BI service](https://docs.microsoft.com/power-bi/fundamentals/power-bi-overview) is recognized as an industry leader in the delivery of powerful analytics for businesses of all sizes. Integration options for Finance and Operations apps and the Power BI service are available to accommodate seamless exploration of customer business data.
 
 > [!NOTE]
-> With the release of the platform updates for verion 10.0.12, the Dynamics 365 service will discontinue support for the Report Viewer control that is used to facilitate BI and Analytics interactions with paginated reports. Reports rendered to 'Screen' by the Document Reporting service will now use the Embedded PDF viewer. For more information about the embedded PDF viewer, see [Preview PDF documents with an embedded viewer](preview-pdf-documents.md).
+> When the platform updates for version 10.0.12 are released, the Dynamics 365 service will discontinue support for the Report Viewer control that is used to facilitate BI and analytics interactions with paginated reports. Instead, reports that the Document Reporting service renders on the "screen" will use the embedded PDF viewer. For more information about the embedded PDF viewer, see [Preview PDF documents with an embedded viewer](preview-pdf-documents.md).
 
-### Compare report scenarios
-With Doc Gen scenarios, a simple business activity, either automated or manual, may trigger the production of anywhere between one and hundreds of documents, often decorated with graphics that include commercial branding. These documents are distributed to both internal and external recipients using pre-defined delivery routing instructions.
+### Comparison of report scenarios
+
+In Doc Gen scenarios, a simple business activity, either automated or manual, can trigger the production of between one and hundreds of documents. These documents are often decorated with graphics that include commercial branding. The documents are distributed to both internal and external recipients by using predefined delivery routing instructions.
 
 The following table compares the fundamentals of the two reporting experiences.
 
-|                           |         **Doc Gen**        |    **BI and Analytics**    |
-|---------------------------|----------------------------|--------------------------|
-| **Display format**        |      PDF & Office Docs     |            HTML          |
-| **Data volume**           |        1 - 100s rows       |        >10,000s rows     |
-| **Interactive features**      |        Printing, text search, sharing       |        [Drill-thru, Drill-down, Sub-reports, Nested regions](https://docs.microsoft.com/en-us/sql/reporting-services/report-design/drillthrough-drilldown-subreports-and-nested-data-regions?view=sql-server-ver15)         |
-| **Data source**        |      Transactional DB     |            Data warehouse          |
-| **Report author**           |        Developer       |        Power User        |
-| **Layout**      |        Structured, pre-defined layout       |        Adaptive, flexible         |
-| **Recommended tooling**           |        [Document Reporting (RDL)](document-reporting-services.md)/[Configurable Office Documents](general-electronic-reporting.md)       |      [Power BI.com](power-bi-integration.md)/[Analytical Workspaces](embed-power-bi-workspaces.md)     |
-
+|                          | Doc Gen | BI and analytics |
+|--------------------------|---------|------------------|
+| **Display format**       | PDF and Office documents | HTML |
+| **Data volume**          | One to hundreds of rows | Tens of thousands of rows or more |
+| **Interactive features** | Printing, text search, and sharing | [Drill-through, drill-down, sub-reports, and nested regions](https://docs.microsoft.com/sql/reporting-services/report-design/drillthrough-drilldown-subreports-and-nested-data-regions?view=sql-server-ver15) |
+| **Data source**          | Transactional database | Data warehouse |
+| **Report author**        | Developer | Power user |
+| **Layout**               | Structured, predefined layout | Adaptive, flexible layout |
+| **Recommended tooling**  | [Document Reporting (RDL)](document-reporting-services.md)/[configurable Office documents](general-electronic-reporting.md) | [Power BI.com](power-bi-integration.md)/[analytical workspaces](embed-power-bi-workspaces.md) |
 
 ## Enhancements in paginated reporting
-There are several advantages in using the PDF to interact with the document that is rendered by the Document Reporting service bundled with Finance & Operations apps.  
 
-- **Reports display to 'Screen' faster** - End users benefit from improved performance when displaying reports on the 'Screen', including a reduction in the number of progress bars leading to faster reports.
-- **Enhanced service reliability** - The latest BI and Reporting service architecture delivers the power of the Cloud scale to customer environments. Service includes automatic scaling to maximize resource utilization.
-- **Higher fidelity with printed output** - Documents are displayed in PDF formats offering consistency with printer output.  
-- **Print documents using local devices** - <aintain user identity when sending documents to printers directly from your browser. Use built-in user options displayed in the control toolbar to secure print jobs when printing documents .
+There are several advantages to using PDFs to interact with documents that are rendered by the Document Reporting service that is bundled with Finance and Operations apps:
 
-For more details on previewing the embedded PDF viewer in environments, see [Preview PDF documents with an embedded viewer](preview-pdf-documents.md).  
+- **Reports are shown on the "screen" more quickly.** Users benefit from improved performance when reports are shown on the "screen." This performance improvement includes a reduction in the number of progress bars, so that reports are faster.
+- **Service reliability is enhanced.** The latest BI and Reporting service architecture delivers the power of the cloud scale to customer environments. The service includes automatic scaling to help maximize resource utilization.
+- **Printed output has higher fidelity.** Documents are shown in PDF formats to provide consistency with printer output.
+- **Documents can be printed by using local devices.** You can maintain user identity when you send documents directly from your browser to a printer. You can use the built-in user options on the control toolbar to help secure print jobs when you print documents.
 
-### Disabling BI and Analytics on One-Box environments
-With the platform updates for 10.0.11 release, developers will have the ability to preview existing solutions by forcing the local Reporting Service to render RDL while the BI and Analytics features are disabled. This viewing mode is referred to as **RDL Sandboxing**. This mode can be enabled or disabled using PowerShell commands.
+For more information about how to preview the embedded PDF viewer in environments, see [Preview PDF documents with an embedded viewer](preview-pdf-documents.md).
 
-Use the following steps to enable RDL Sandboxing in your local One-Box environment.
+### Turn off BI and analytics in one-box environments
 
-1. Log into your One-Box environment using release 10.0.11 or later.
-2. Start the **PowerShell** application and navigate to **C:\AOSService\PackagesLocalDirectory\Plugins\AxReportVmRoleStartupTask***\.
-3. Run the command, **UpdateRDLSandboxRule.ps1**.
+In the platform updates for version 10.0.11, developers can preview existing solutions by forcing the local Reporting Service to render RDL while the BI and analytics features are turned off. This viewing mode is referred to as **RDL sandboxing**. It can be turned on or off by using Windows PowerShell commands.
 
-**Parameters**
+Follow these steps to turn on RDL sandboxing in your local one-box environment.
 
--	**ConfigPath:** If SSRS is not deployed in the default location, provide the configuration location.
--	**RemoveRules:** Set this parameter to remove the rules.
--	**ForceUpdate:** Set this parameter to force recreate rules. 
--	**LogDir:** Provide a location to the write log. The default is the location of the UpdateRDLSandboxRule.ps1 command.
+1. Sign in to your one-box environment using version 10.0.11 or later.
+2. Open Windows PowerShell, and go to **C:\AOSService\PackagesLocalDirectory\Plugins\AxReportVmRoleStartupTask***\.
+3. Run the **UpdateRDLSandboxRule.ps1** command. Here is a list of the parameters:
+
+    - **ConfigPath** – If SQL Server Reporting Services (SSRS) isn't deployed in the default location, specify the configuration location.
+    - **RemoveRules** – Set this parameter to remove the rules.
+    - **ForceUpdate** – Set this parameter to force the rules to be re-created.
+    - **LogDir** – Specify a location to the write log. The default location is the location of the **UpdateRDLSandboxRule.ps1** command.
