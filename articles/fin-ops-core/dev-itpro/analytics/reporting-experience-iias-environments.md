@@ -80,7 +80,7 @@ In the platform updates for version 10.0.11, developers can preview existing sol
 Follow these steps to turn on RDL sandboxing in your local one-box environment.
 
 1. Sign in to your one-box environment that uses version 10.0.11 or later.
-2. Open Windows PowerShell, and go to **C:\AOSService\PackagesLocalDirectory\Plugins\AxReportVmRoleStartupTask\**.
+2. Open Windows PowerShell, and go to C:\AOSService\PackagesLocalDirectory\Plugins\AxReportVmRoleStartupTask\.
 3. Run the **UpdateRDLSandboxRule.ps1** command. Here is a list of the parameters:
 
     - **ConfigPath** – If SQL Server Reporting Services (SSRS) isn't deployed in the default location, specify the configuration location.
