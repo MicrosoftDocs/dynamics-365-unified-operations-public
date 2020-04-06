@@ -32,9 +32,9 @@ ms.dyn365.ops.version: 10.0.11
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Agencies that receive federal funds are subject to audit requirements, also known as single audits, according to Office of Management and Budget Circular A-133.  This audit process is used to report on the revenues and expenditures of federal grants on a recurring basis.  A protion of the single audit report includes the Schedule of Expenditures of Federal Awards (SEFA).  
+Agencies that receive federal funds are subject to audit requirements, also known as single audits, according to Office of Management and Budget Circular A-133. This audit process is used to report on the revenues and expenditures of federal grants on a recurring basis.  A protion of the single audit report includes the Schedule of Expenditures of Federal Awards (SEFA).  
 
-This inquiry includes the Catalog of Federal Domestic Assistance (CFDA) title and number, grant number, year of grant, name of the federal agency providing the funds, and name of the pass-through entity. The inquiry is for a specific period of time, typically the same as the financial statement period - a fiscal year.
+This inquiry includes the Catalog of Federal Domestic Assistance (CFDA) title and number, grant number, year of grant, name of the federal agency providing the funds, and name of the pass-through entity. The inquiry is for a specific period of time, typically the same as the financial statement period, which is a fiscal year.
 
 The inquiry includes grants with projection dates in the selected date range. The **Grantor agency** column of the inquiry displays the grant customer or, for a pass-through grant, the grantor agency. The grant customer for a pass-through grant displays in the **Pass-through agency** column. If it is not a pass-through grant, the **Pass-through agency** column is blank.
 
@@ -66,16 +66,16 @@ You must setup CFDA numbers that can be added to grants and be included in the S
 ## Setting up grants to report for Schedule of Federal Domestic Assistance inquiry
 
 1. Go to **Project management and accounting > Grants > Grants** and select an existing grant.
-2. On the **Setup** FastTab, in the **Catalog of Federal Domestic Assistance** field, assign the CFDA number. The CFDA number on the grant determines the CFDA cluster for reporting.
-3. Set up the grantor (**Contact information** FastTab): 
-- In the **Grant customer** field, enter the customer responsible for the grant. This information is likely already entered for an existing grant.
--  Indicate whether the grant customer is the funder. If the customer is the funder, leave the **Pass-through** check box cleared. If another customer is the funder and the customer is responsible for spending and tracking the money, select the **Pass-through** check box.
+2. Assign the CFDA number in the **Catalog of Federal Domestic Assistance** field, which is on the **Setup** FastTab. The CFDA number on the grant determines the CFDA cluster for reporting.
+3. Enter the grantor information on **Contact information** FastTab by completing the following steps.  
+  - In the **Grant customer** field, enter the customer responsible for the grant. This information might have been entered already, if this is an existing grant.
+  -  Indicate whether the grant customer is the funder. If the customer is the funder, leave the **Pass-through** check box cleared. If another customer is the funder and the customer is responsible for spending and tracking the money, select the **Pass-through** check box.
 4. If the **Pass-through** check box is selected, enter the customer who provided the grant in the **Grantor agency** field. The grantor agency cannot be the same customer as the grant customer.
 
 Example of a pass-through grant: The federal government funded an infrastructure project for a state. The federal government gave the money to the state to spend. The federal government is the grantor agency. The state is the grant customer.
 
-Note: CFDA numbers will be initially populated when you enable the feature by using the existing numbers on grants.
-
+> [!Note] 
+> CFDA numbers will be entered initially when you enable the feature by using the existing numbers on grants.
 
 ## Exclude grants from SEFA reporting based on the grant type
 
@@ -87,7 +87,8 @@ Note: CFDA numbers will be initially populated when you enable the feature by us
 ## Run the Schedule of Expenditures of Federal Awards the data on this inquiry
 
 1. Go to **Project management and accounting > Inquiries and reports > Grant inquiry > Schedule of Expenditures of Federal Awards**
-2. In the parameters section, follow these steps:
+2. In the parameters section, complete the following steps.
+
 - In the **Date interval** field, select the code for the date interval. Alternatively, in the **From date** and **To date** fields, define the date interval.
 - Optional: Set the **Include only billed revenues** option to **Yes** to include only billed transactions as revenue on the inquiry.
 
