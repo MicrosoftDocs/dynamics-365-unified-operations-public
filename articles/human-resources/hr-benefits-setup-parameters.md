@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Human Resources
 
 # Set Benefits management parameters
 
-[!include [banner](includes/preview-feature.md)]
-
 Before you can set up leave plans in Microsoft Dynamics 365 Human Resources, you must configure Benefits management parameters. These parameters set default values, reason codes, and other options.
 
 ## Configure general parameters

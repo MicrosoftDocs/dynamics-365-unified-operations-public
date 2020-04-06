@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Human Resources
 
 # Configure future life events
 
-[!include [banner](includes/preview-feature.md)]
-
 You can schedule future life events in Dynamics 365 Human Resources.
 
 1. In the **Benefits management** workspace, under **Setup**, select **Future life events**.
