@@ -566,9 +566,9 @@ Only user accounts that have the Global Administrator directory role can add cer
     .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint <OnPremLocalAgent Certificate Thumbprint> -Test
     ```
 
-    [!IMPORTANT]
-    > If you previosuly installed AzureRM please remove it as Az is not guaranteed to be compatible with any existing AzureRM installs in PowerShell 5.1 for Windows. 
-    > For more information see [Migrate from AzureRM to Az](https://docs.microsoft.com/en-us/powershell/azure/migrate-from-azurerm-to-az)
+    > [!IMPORTANT]
+    > If you previously installed AzureRM, please remove it as Az is not guaranteed to be compatible with any existing AzureRM installs in PowerShell 5.1 for Windows. 
+    > For more information see [Migrate Azure PowerShell from AzureRM to Az](https://docs.microsoft.com/powershell/azure/migrate-from-azurerm-to-az)
 
 3. If the script indicates that the certificate isn't registered, run the following command.
 
