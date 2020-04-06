@@ -567,7 +567,7 @@ Only user accounts that have the Global Administrator directory role can add cer
     ```
 
     > [!IMPORTANT]
-    > [!IMPORTANT] If you previously installed AzureRM, please remove it as it may not be compatible with any existing AzureRM installs in PowerShell 5.1 for Windows. For more information, [Migrate Azure PowerShell from AzureRM to Az](https://docs.microsoft.com/powershell/azure/migrate-from-azurerm-to-az).
+    > If you previously installed AzureRM, please remove it as it may not be compatible with any existing AzureRM installs in PowerShell 5.1 for Windows. For more information, [Migrate Azure PowerShell from AzureRM to Az](https://docs.microsoft.com/powershell/azure/migrate-from-azurerm-to-az).
   
 3. If the script indicates that the certificate isn't registered, run the following command.
 
