@@ -1,6 +1,35 @@
 ---
+# required metadata
+
 title: Split the AP/AR realized exchange difference amount into the difference of the invoice net value and the VAT amount
+description: This topic provides information about a feature for splitting of the AP/AR realized exchange difference amount into the difference of the invoice net value and the VAT amount in Poland
+author: anasyash
+manager: 
+ms.date: 04/01/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kfend
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 414136
+ms.search.region: Poland
+# ms.search.industry: 
+ms.author: shylaw
+ms.dyn365.ops.version: 
+ms.search.validFrom: 2020-04-01
+
 ---
+
+
+# Split the AP/AR realized exchange difference amount into the difference of the invoice net value and the VAT amount
 
 This feature allows you to split the AP/AR foreign currency revaluation amount
 into two parts – exchange difference related to net value of invoice (customer
@@ -10,18 +39,16 @@ invoice amount, to a separate ledger account of realized gains/losses.
 
 This feature is available only in legal entities with Polish county context.
 
-Setup
-=====
+## Setup
 
-Activate the feature
---------------------
+### Activate the feature
+
 
 In the **Feature management** workspace, select the feature **(Poland) Split the
 AP/AR realized exchange difference amount into the difference of the invoice net
 value and the VAT amount** and enable it.
 
-Set up ledger accounts
-----------------------
+### Set up ledger accounts
 
 You should set up ledger accounts for posting the exchange difference amount
 part related to tax amount of invoice.
@@ -32,19 +59,18 @@ part related to tax amount of invoice.
 
 ![A screenshot of a social media post Description automatically generated](media/4ccbaa57f8ad73291cfaab593a3847b8.png)
 
-1.  Select the line with **Realized gain** or **Realized loss** in the
+2.  Select the line with **Realized gain** or **Realized loss** in the
     **Posting** field.
 
-2.  Set up **Main account** in standard way – select ledger account for posting
+3.  Set up **Main account** in standard way – select ledger account for posting
     of realized exchange difference.
 
-3.  In the field **Sales taxes** select **Expense** to post a part of realized
+4.  In the field **Sales taxes** select **Expense** to post a part of realized
     exchange difference amount which is related to tax amount of invoice, to a
     separate expense ledger account. Select this expense ledger account in **Tax
     posting account** field.
 
-Post and settle customer/vendor transactions.
-=============================================
+## Post and settle customer/vendor transactions.
 
 Post and settle documents in standard way.
 
@@ -53,8 +79,7 @@ voucher where exchange difference amount related to tax amount is posted
 separately to a ledger account selected in **Tax posting account** field of
 **Currency revaluation accounts** page.
 
-Examples
-========
+## Examples
 
 Below you can find two examples with resulting ledger transactions.
 
