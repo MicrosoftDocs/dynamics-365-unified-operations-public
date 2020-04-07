@@ -5,7 +5,7 @@ title: Add a welcome message
 description: This topic describes how to add a welcome message to your Microsoft Dynamics 365 Commerce website.
 author: psimolin
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
