@@ -82,7 +82,7 @@ Post the following transactions:
 
 |   Document                     |   Date     |   Amount in USD                  |  Amount in EUR                       |   Voucher                                                                                                 |   Voucher amount   |
 |--------------------------------|------------|----------------------------------|---------------------------------------|-----------------------------------------------------------------------------------------------------------|--------------------|
-| Customer invoice               | 01.01.2020 | 119 USD, incl. VAT amount 19 USD | 95,20 EUR, incl. VAT amount 15,20 EUR | Debit *Accounts receivable* <br>Credit *Expense* Credit *VAT*                                                 | 95,20 <br>80,00 <br>15,20  |
+| Customer invoice               | 01.01.2020 | 119 USD, incl. VAT amount 19 USD | 95,20 EUR, incl. VAT amount 15,20 EUR | Debit *Accounts receivable* <br>Credit *Expense* <br>Credit *VAT*                                                 | 95,20 <br>80,00 <br>15,20  |
 | Customer payment               | 10.01.2020 | 119 USD                          | 107,10 EUR                            | Debit *Bank* <br>Credit *AR*                                                                                  | 107,10 <br>107,10      |
 | Invoice and payment settlement | 10.01.2020 | 0 USD                            | 11,90 EUR                             | Debit *AR* <br>Credit *Exchange difference – main account* <br>Credit *Exchange difference – tax posting account* | 11,90 <br>10,00 <br>1,90   |
 
