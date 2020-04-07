@@ -40,17 +40,17 @@ Changing the number of decimal places is a two-step process:
 + Request migration from Microsoft.
 + Change the number of decimal places in Common Data Service.
 
-The Finance and Operations app and Common Data Service must support the same number of decimal positions on currency values to avoid data loss when this information is synchronized between apps. The migration process reconfigures the way currency and exchange rate values are stored, but it does not change any data. After the migration is complete, the number of decimal positions for currency codes and pricing can be increased, and users can enter and display data with greater decimal precision.
+The Finance and Operations app and Common Data Service must support the same number of decimal positions on currency values to avoid data loss when this information is synchronized between apps. The migration process reconfigures the way currency and exchange rate values are stored, but it doesn't change any data. After the migration is complete, the number of decimal positions for currency codes and pricing can be increased, and users can enter and display data with greater decimal precision.
 
 Migration is optional. We recommend that if you would benefit from increased decimal position support, then you should consider migration. Organizations that have no need for values with more than 4 decimal places do not need to migrate.
 
-## Migration process
+## Request migration from Microsoft
 
-Storage for existing currency fields in Common Data Service cannot support more than 4 decimal positions. Therefore, during the migration process, currency values are copied to new internal fields in the database. This process occurs continuously until all data has been migrated. Internally, at the end of migration, the new storage types replace the old ones, but the data values are unchanged. The currency fields are then capable of supporting up to 10 decimal places. During the migration process, Common Data Service can continue to be used without interruption.
+Storage for existing currency fields in Common Data Service cannot support more than 4 decimal positions. Therefore, during the migration process, currency values are copied to new internal fields in the database. This process occurs continuously until all data has been migrated. Internally, at the end of migration, the new storage types replace the old ones, but the data values are unchanged. The currency fields can then support up to 10 decimal places. During the migration process, Common Data Service can continue to be used without interruption.
 
-At the same time, exchange rates are also modified to support up to 12 decimal positions instead of the current limit of 10. This change is also necessary to match the number of decimal positions for currency exchange rate that the Finance and Operations app supports.
+At the same time, exchange rates are modified to support up to 12 decimal positions instead of the current limit of 10. This change is required so that the number of decimal places is the same in both the Finance and Operations app and Common Data Service.
 
-No data is changed during the migration process. After all currency and exchange rate fields have been converted, admins can configure the system for up to 10 decimal positions for currency fields by specifying the number of positions for each transaction currency and for pricing.
+Migration does not change any data. After the currency and exchange rate fields are converted, admins can configure the system for up to 10 decimal positions for currency fields by specifying the number of positions for each transaction currency and for pricing.
 
 ### How to request a migration
 
@@ -63,9 +63,9 @@ A Microsoft representative will contact you within 2-3 business days for the nex
 
 You should plan for the following when you request the migration:
 
-+ The amount of time required to migrate existing data to prepare for expanded decimal positions varies according to the amount of data in the system. In large databases, it may run for several days.
-+ The size of the database will be temporarily increased while the migration is running, including additional space for supporting indexes. At the conclusion of migration, most of this additional space will be freed up.
-+ If there are errors during the migration process that prevent it from being completed, the system is designed to raise alerts internally for Microsoft support intervention. However, even if there are errors in the migration, Common Data Service remains fully available for normal use.
++ The time required to migrate the data depends the amount of data in the system. It can take several days to migrate large databases.
++ The size of the database temporarily increases while the migration is running, because additional space is needed for indexes. Most of the additional space is freed when the migration is complete.
++ If there are errors during the migration process that prevent it from being completed, the system raise alerts to Microsoft support for intervention. However, even if there are errors in the migration, Common Data Service remains fully available for normal use.
 + The migration process is not reversible.
 
 ## Changing the number of decimal places
