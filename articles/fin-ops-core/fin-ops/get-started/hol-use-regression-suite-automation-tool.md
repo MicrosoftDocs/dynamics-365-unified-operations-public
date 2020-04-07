@@ -318,7 +318,7 @@ You can use ``listtestsuitenames`` command to get all available test suits. Use 
 
 
 #### help
-Identical to the [?](####?) command
+Identical to the [?](####section) command
 
 
 #### list
