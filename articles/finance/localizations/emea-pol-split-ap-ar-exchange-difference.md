@@ -57,7 +57,7 @@ part related to tax amount of invoice.
     accounts.** Select the currency code. Select code of legal entity in the
     **Ledger** field.
 
-![A screenshot of a social media post Description automatically generated](media/4ccbaa57f8ad73291cfaab593a3847b8.png)
+![Currency revaluation accounts](media/4ccbaa57f8ad73291cfaab593a3847b8.png)
 
 2.  Select the line with **Realized gain** or **Realized loss** in the
     **Posting** field.
