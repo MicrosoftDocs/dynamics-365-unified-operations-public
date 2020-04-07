@@ -178,10 +178,7 @@ To learn more about using the Regression suite automation tool, see the followin
 - [PART 2: Regression Suite Automation Tool -- Testing Lifecycle Demo](https://infopedia.eventbuilder.com/event?eventid=r5j6c1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Regression suite automation tool](../perf-test/rsat/rsat-overview.md)
  
-For a hands-on lab experience, see the following topics:
-
-- [Set up and install Regression suite automation tool tutorial](../../fin-ops/get-started/hol-set-up-regression-suite-automation-tool.md)
-- [Use the Regression suite automation tool tutorial](../../fin-ops/get-started/hol-use-regression-suite-automation-tool.md)
+For a hands-on lab experience, see [Use the Regression suite automation tool tutorial](../../fin-ops/get-started/hol-use-regression-suite-automation-tool.md).
 
 #### Investigate test runs
 Once an automated run is complete, on the Azure DevOps toolbar, select **Test > Runs** (or **Test Plans > Runs**) to investigate your test run. Select the desired test run to investigate test case failures and errors. You can also go to your test suite in Azure DevOps to see the latest results associated with your test cases.
