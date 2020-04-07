@@ -424,6 +424,8 @@
             href: email-receipts.md 
           - name: Reset receipt numbers
             href: reset_receipt_number_sequence.md
+          - name: Embed processor credit card receipts in customer receipts
+            href: dev-itpro/embed-cc-receipt.md
         - name: Create functionality profiles for sales representatives 
           href: tasks/configure-functionality-profile-sales-representative.md
         - name: Create financial dimensions for retail channels and configure values on stores 
