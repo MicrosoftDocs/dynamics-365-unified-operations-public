@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 # ms.search.form:
-# ROBOTS: 
+ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
