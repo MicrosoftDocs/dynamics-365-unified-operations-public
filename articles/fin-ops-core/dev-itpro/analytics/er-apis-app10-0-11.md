@@ -78,12 +78,12 @@ class ERIntegrationPointCodeSamples extends RunBaseBatch
 
 ## API to show a format mapping lookup
 
-The [initial](er-apis-app73.md#code-to-display-a-format-mapping-lookup) API of the ER framework is used to look up an ER format mapping. It uses the data model name and container name as text constants. This lookup offers only the ER format mappings of the one data model that meets both these conditions:
+The [initial](er-apis-app73.md#code-to-display-a-format-mapping-lookup) API of the ER framework is used to look up the ER format mappings. It uses the data model name and container name as text constants. This lookup offers only the ER format mappings of the one data model that meets both these conditions:
 
 - It has the specified names.
 - Its criteria were met first in the ER configurations list.
 
-The new API of the ER framework lets you use the configured integration point to implement the same lookup. This lookup offers all the ER format mappings that contain a data source of the **Data model** type that a model mapping that has the specified integration point is available for, regardless of the data model that it has been configured for.
+The new API of the ER framework lets you use the configured integration point to implement the same lookup. This lookup offers all the ER format mappings that contain a data source of the **Data model** type that a model mapping that has the specified integration point is available for. The offered in this lookup ER format mappings can use different model mappings as data sources.
 
 The following example shows how this new API can be used.
 
