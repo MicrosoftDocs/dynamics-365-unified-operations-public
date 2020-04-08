@@ -3,7 +3,7 @@
 
 title: Use the Regression suite automation tool tutorial
 description: This topic shows how to use Regression suite automation tool (RSAT). It describes various features and provides examples that use advanced scripting. 
-author: kfend
+author: robinarh
 manager: AnnBe
 ms.date: 06/09/2019
 ms.topic: article
@@ -17,13 +17,13 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21761
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kfend
+ms.author: rhaertle
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
 
@@ -318,7 +318,7 @@ You can use ``listtestsuitenames`` command to get all available test suits. Use 
 
 
 #### help
-Identical to the [?](####section) command
+Identical to the [?](#section) command
 
 
 #### list
