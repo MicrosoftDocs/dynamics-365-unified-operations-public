@@ -33,7 +33,6 @@ ms.dyn365.ops.version: AX 10.0.9
 # Enhanced filtering options for finding configurations in the Global repository
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic describes enhanced filtering capabilities for Regulatory Configuration Services (RCS) Global repository, which have been improved to include the following filters: 
 - **Country/region** - based on ISO country codes  
