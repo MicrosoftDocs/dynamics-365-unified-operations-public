@@ -88,7 +88,7 @@ Note that "OB declaration" stands for "Omzetbelasting declaration" where Omzetbe
 8. Set the **Company part of fiscal group** option to **Yes** if this setting is appropriate, and then, in the **Fiscal group** field, select name of the fiscal group. The fiscal groups should already have been created on the **Tax exempt numbers** page.
 9. In the **Format mapping** field, select the **OB declaration (NL)** format that you downloaded earlier.
 
-    ![](media/1_Electronic_tax_declaration_parameters.png)
+    ![Eelectronic tax declaration parameters page, General tab](media/1_Electronic_tax_declaration_parameters.png)
 
 10. On the **Number sequences** tab, in the **Number sequence code** field, select a number sequence code for the **Electronic OB declaration ID** reference to set the numbering of OB declarations.
 
@@ -110,7 +110,7 @@ Digipoort is the service that is used to transmit declarations to the Dutch gove
 
 6. On the **Secrets** FastTab, select **Add**, and create lines for Key Vault secrets for the Digipoort server and client certificates.
 
-![](media/2_Key_Vault_parameters.png)
+![Key vault parameters page](media/2_Key_Vault_parameters.png)
 
 For more information about how to set up Key Vault parameters, see [Setting up Azure Key Vault Client](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/KeyVault/articles/finance/localizations/setting-up-azure-key-vault-client.md).
 
@@ -125,7 +125,7 @@ For more information about how to set up Key Vault parameters, see [Setting up A
 - **Server Certificate** – Select the line that you created for the Key Vault secret for the Digipoort server certificate.
 - **Client Certificate** – Select the line that you created for the Key Vault secret for the Digipoort client certificate.
 
-![](media/3_Electronic_tax_declaration_parameters.png)
+![Electronic tax parameters page, System tab](media/3_Electronic_tax_declaration_parameters.png)
 
 ## Generate and send the OB declaration
 
@@ -134,7 +134,7 @@ For more information about how to set up Key Vault parameters, see [Setting up A
 3. In the **Electronic OB declaration** dialog box, set the **Settlement period** and **From date** fields.
 4. Select **OK**, and review the calculated results.
 
-![](media/4_Electronic_OB_declaration.png)
+![Electronic OB declaration page](media/4_Electronic_OB_declaration.png)
 
 5. Select **View XML** to review the OB declaration in XML format.
 6. Select **Send XML** to send the file to the tax authority service, Digipoort.
@@ -208,15 +208,15 @@ The following example shows how you can set up sales tax codes and sales tax rep
 
 12. Select **OK**. Review the header that is generated for the declaration.
 
-![](media/5_Electronic_OB_declaration.png)
+![Electronic OB declaration page, generated header](media/5_Electronic_OB_declaration.png)
 
 13. Review the data that is generated for the declaration.
 
-![](media/6_Details.png)
+![Electronic OB declaration page details](media/6_Details.png)
 
 14. Select **View XML** to review an example of the XML file.
 
-![](media/7_XML.png)
+![XML sample](media/7_XML.png)
 
 ### Correction transactions
 
@@ -235,7 +235,7 @@ Post a new transaction. For example, to post a customer invoice, go to **Account
 
 3. Select **OK**, and review the declaration data.
 
-![](media/8_Details.png)
+![Electronic OB declaration page details](media/8_Details.png)
 
  A screenshot of a cell phone Description automatically generated
 
@@ -288,7 +288,7 @@ You can also generate the Dutch sales tax report by using the **Report sales tax
 5. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Settle and post sales tax**. In the **Settle and post sales tax** dialog box in the **Sales tax payment version** field, select **Original**.
 6. Print the report, and review the data.
 
-![](media/9_Sales_tax_payment.png)
+![Generated Sales tax payment report](media/9_Sales_tax_payment.png)
 
   Note the following points:
 
@@ -307,11 +307,11 @@ You can also generate the Dutch sales tax report by using the **Report sales tax
 5. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Settle and post sales tax**. In the **Settle and post sales tax** dialog box in the **Sales tax payment version** field, select **Last corrections**.
 6. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**. In the **Sales tax payment version** field, select **Corrections**. You should see the following result.
 
-![](media/10_Sales_tax_payment.png)
+![Generated Sales tax payment report](media/10_Sales_tax_payment.png)
 
 7. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**. In the **Sales tax payment version** field, select **Total list**. You should see the following result.
 
-![](media/11_Sales_tax_payment.png)
+![Generated Sales tax payment report](media/11_Sales_tax_payment.png)
 
    > [!NOTE]
    > If you generate the OB declaration after you've created the original and corrected sales tax payments, the OB declaration will show amounts only from the original sales tax payment.
