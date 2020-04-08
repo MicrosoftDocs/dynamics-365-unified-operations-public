@@ -51,7 +51,7 @@ In this naming convention:
 
 ## Examples
 
-```console
+```Console
 AtlSpecWHSLoadLine
 
 AtlSpecWHSWorkLine
