@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-The Dynamics 365 Commerce point of sale (POS) user interface (UI) can be configured by using a combination of visual profiles and screen layouts that are assigned to stores, registers, and users. This topic provides information about those configuration options.
+The user interface (UI) of the Microsoft Dynamics 365 Commerce point of sale (POS) can be configured by using a combination of visual profiles and screen layouts that are assigned to stores, registers, and users. This topic provides information about those configuration options.
 
 The following illustration shows the relationships among the various entities that make up the configurable aspects of the POS UI.
 
@@ -42,7 +42,7 @@ The following illustration shows the relationships among the various entities th
 
 ## Visual profile
 
-Visual profiles are assigned to registers, and they specify the visual elements that are register-specific and shared across users. Every user who signs in to the register sees the same theme, layout, colors and images.
+Visual profiles are assigned to registers, and they specify the visual elements that are register-specific and shared across users. Every user who signs in to the register sees the same theme, layout, colors, and images.
 
 ![POS welcome screen with Light theme](../commerce/media/POS-Welcome-Screen-with-Light-theme.png)
 
@@ -53,17 +53,17 @@ Visual profiles are assigned to registers, and they specify the visual elements 
 - **Theme** – You can select between the **Light** and **Dark** application themes. The theme affects the font and background colors throughout the application.
 - **Accent color** – The accent color is used throughout the POS to differentiate or highlight specific visual elements, such as tiles, command buttons, and hyperlinks. Typically, these elements are actionable.
 - **Header color** – You can configure the color of the page header to meet the retailer's branding requirements.
-- **Font scheme** – You can select between **Standard** and **Large** font scheme, which affects the font size throughout the application. The default scheme is "standard".
-- **Always show application bar labels** – When enabled, the label text is always visible under the application bar buttons.
-- **Layout** – You can select between **Centered** and **Right** layout options. The selection affects the alignment of the sign-in box on the sign-in screen. The default layout is "centered".
-- **Show date/time** – When enabled, the current date and time will be displayed in the POS header and sign-in screen.
-- **Keyboard** – You can select between **Default to OS keyboard** and **Show number pad** to specify the default keyboard to be used for sign-in screen inputs. Number pad is a virtual keyboard primarily used for touch-based devices. The default selection is "OS keyboard".
-- **Logo image** – You can specify a logo image to be displayed on the sign-in screen. It's recommended to use an image with a transparent background. The file size should be kept as small as possible.
-- **Login background** – You can specify a background image for the sign-in screen. The file size of background images should be kept as small as possible, because storing and loading large files can affect application behavior and performance.
-- **Background** – You can specify a background image that is used instead of the solid theme color throughout the application. As for login backgrounds, the file size should be kept as small as possible.
+- **Font scheme** – You can select between the **Standard** and **Large** font schemes. The font scheme affects the font size throughout the application. The default selection is **Standard**.
+- **Always show application bar labels** – When this option is turned on, the label text is always visible under the application bar buttons.
+- **Layout** – You can select between the **Centered** and **Right** layouts. The layout affects the alignment of the sign-in box on the sign-in screen. The default selection is **Centered**.
+- **Show date/time** – When this option is turned on, the current date and time are shown in the POS header and on the sign-in screen.
+- **Keyboard** – You can select between **Default to OS keyboard** and **Show number pad** to specify the default keyboard that is used for input on the sign-in screen. The number pad is a virtual keyboard that is used primarily for touch-based devices. The default selection is **Default to OS keyboard**.
+- **Logo image** – You can specify a logo image that is shown on the sign-in screen. We recommend that you use an image that has a transparent background. The file size should be kept as small as possible, because application behavior and performance can be affected when large files are stored and loaded.
+- **Login background** – You can specify a background image for the sign-in screen. The file size of background images should be kept as small as possible.
+- **Background** – You can specify a background image that is used instead of the solid theme color throughout the application. As for background images for the sign-in screen, the file size should be kept as small as possible.
 
 > [!NOTE]
-> The right layout and date/time display do not apply to sign-in screen in compact view.
+> The **Right** layout and date/time display don't apply to the sign-in screen in compact view.
 
 ## Screen layouts
 
