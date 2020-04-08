@@ -40,14 +40,13 @@ The [Page elements](page-elements-overview.md) topic lists various documents typ
 
 The following table shows the possible document states of page elements in Commerce.
 
-| Document state      | Site builder action      | Description                                                  |
-| ------------------- | ------------------------- | ------------------------------------------------------------ |
-| Checked out         | Select **Edit**           | When **Edit** is selected, the applicable document is checked out to you.  While in this state, the document can't be changed by other authenticated system users, and any changes that you make to the document are visible only to you. |
-| Saved               | Select **Save**           | When **Save** is selected, changes that have been made to a checked-out document are saved to the database, but the document is not yet checked in or published. These saved changes aren't yet visible to other authenticated system users until the author selects **Finish editing**, and they aren't visible to external users until the item is published. |
-| Discarded check out | Select **Discard edits**  | When **Discard edits** is selected, all changes to the checked-out document are discarded, and the item reverts to the last version that was checked in. |
-| Checked in          | Select **Finish editing** | When **Finish editing** is selected, the edited document is checked in.  All changes are visible to other authenticated system users, and those users can then edit the document. Each check-in creates a document version record in the item's history. |
-| Published           | Select **Publish**        | When **Publish** is selected, the document is published and the changes are pushed to your live site and become discoverable by external users. Items can be published only if they have first been checked in by selecting **Finish editing**. |
-|                     |                           |                                                              |
+| Document state      | Site builder action        | Description                                                  |
+| ------------------- | -------------------------- | ------------------------------------------------------------ |
+| Checked out         | Select **Edit**.           | The applicable document is checked out to you. While a document is in this state, it can't be changed by other authenticated system users, and any changes that you make to the document are visible only to you. |
+| Saved               | Select **Save**.           | Changes that have been made to a checked-out document are saved to the database, but the document isn't yet checked in or published. The saved changes aren't visible to other authenticated system users until the author selects **Finish editing**. They aren't visible to external users until the item is published. |
+| Discarded check out | Select **Discard edits**.  | All changes to the checked-out document are discarded, and the item reverts to the last version that was checked in. |
+| Checked in          | Select **Finish editing**. | The edited document is checked in. All changes are visible to other authenticated system users, and those users can then edit the document. Each check-in creates a document version record in the item's history. |
+| Published           | Select **Publish**.        | The document is published, and the changes are pushed to your live site and become discoverable by external users. Items can be published only if they have first been checked in by selecting **Finish editing**. |
 
 ## Additional resources
 
