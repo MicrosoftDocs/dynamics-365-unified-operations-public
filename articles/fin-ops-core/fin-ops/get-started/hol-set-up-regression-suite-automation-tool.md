@@ -20,7 +20,7 @@ audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: 21761
+ms.custom: 21761, NotInToc
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kfend
