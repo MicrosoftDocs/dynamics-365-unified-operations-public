@@ -51,4 +51,6 @@ To replace a specific user's User ID, or issued email address:
 
 - Select "OK" and then select the "Save" button in the **Tracking Content Changes** window.
 
-A dialogue should appear to indicate the records for the email provided have been updated. Note: the system replaces the email address with a randomly generated string to remove all CMS references of the email address that was entered. This action only affects the history logs referenced within the specific Commerce > e-Commerce environment (tenant) which the site builder instance is associated.
+A dialogue should appear to indicate the records for the email provided have been updated. 
+
+**Note:** the system replaces the email address with a randomly generated string to remove all CMS references of the email address that was entered. This action only affects the history logs referenced within the specific Commerce > e-Commerce environment (tenant) which the site builder instance is associated.
