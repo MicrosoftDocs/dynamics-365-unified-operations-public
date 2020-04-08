@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Preview features in Dynamics 365 Supply Chain Management 10.0.10 (May 2020)
+title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.10 (May 2020)
 description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.10. 
 author: kamaybac
 manager: tfehr
-ms.date: 04/01/2020
+ms.date: 04/08/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,10 +29,9 @@ ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
 
 ---
-# Preview features in Dynamics 365 Supply Chain Management 10.0.10 (May 2020)
+# What's new or changed in Dynamics 365 Supply Chain Management 10.0.10 (May 2020)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.10. This version has a build number of 10.0.420 and is available as follows:
 
