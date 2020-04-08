@@ -86,6 +86,8 @@
           items:
           - name: What's new or changed in Commerce home page
             href: get-started/whats-new-home-page.md
+          - name: Commerce 10.0.11 (June 2020)
+            href: get-started/whats-new-commerce-10-0-11.md
           - name: Commerce 10.0.10 (May 2020)
             href: get-started/whats-new-commerce-10-0-10.md
           - name: Commerce 10.0.9 (April 2020)
