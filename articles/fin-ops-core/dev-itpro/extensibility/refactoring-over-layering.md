@@ -34,14 +34,14 @@ ms.dyn365.ops.version: Platform update 14
 
 [!include [banner](../includes/banner.md)]
 
-Dynamics 365 for Finance and Operations 8.0, and all subsequent releases, will not allow Microsoft’s code to be customized by using over-layering. Instead, extension capabilities should be used to modify and add behavior. The "no over-layering" restriction is a key part of the evolution of the product toward providing customers with a cloud ERP service that is simple to update and always running the most recent version possible to allow all customers to receive the benefits of the latest features and fixes.
+Finance and Operations development tools, starting with version 8.0, do not allow Microsoft code to be customized by using over-layering. Instead, extension capabilities should be used to modify and add behavior. The "no over-layering" restriction is a key part of the evolution of the product toward providing customers with a cloud service that is simple to update and always running the most recent version possible to allow all customers to receive the benefits of the latest features and fixes.
 
-After you upgrade code to 8.0 or later, when you compile, any customizations that still use over-layering will cause errors. To refactor the code, the over-layering restriction can be temporarily relaxed in the model descriptor file of the model that is being over-layered. This temporary relaxation only works on development and demo environments and cannot be deployed on runtime environments like Standard Acceptance Test (or higher) sandbox or production environments. Relaxing the descriptor restriction will enable the code to be gradually refactored to extensions, compiled, run, and then tested. 
+After you upgrade code from Dynamics AX 2012 or from Dynamics 365 for Finance and Operations version 7, any customizations that still use over-layering will cause errors when you compile your code. To refactor the code, the over-layering restriction can be temporarily relaxed in the model descriptor file of the model that is being over-layered. This temporary relaxation only works on development and demo environments and cannot be deployed on runtime environments like Standard Acceptance Test (or higher) sandbox or production environments. Relaxing the descriptor restriction will enable the code to be gradually refactored to extensions, compiled, run, and then tested. 
 
 ## Detailed process
 Complete the following steps to relax model restrictions. This procedure can be completed on a cloud environment or a local virtual machine (VM).
 
-1. Deploy a Dynamics 365 for Finance and Operations 8.0 development environment. 
+1. Deploy a Finance and Operations development environment. 
 2. Run the Lifecycle Services (LCS) code upgrade service to upgrade the solution.
 3. Temporarily allow over-layering in Microsoft models as needed to enable compilation.
     
