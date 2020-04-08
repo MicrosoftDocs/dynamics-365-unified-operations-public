@@ -46,6 +46,7 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/) site.
 
 - [POS sign-in page improvements](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-commerce/pos-sign-in-page-improvements)
+- [Auto charges by channel ](https://docs.microsoft.com/en-us/dynamics365/commerce/auto-charges-by-channel)
 
 
 ## Additional resources
