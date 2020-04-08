@@ -47,7 +47,7 @@ On the **Feature management** workspace, activate the feature with name
 Go to **Tax \> Inquiries and reports \> Sales tax reports \> Sales tax payment
 by code.**
 
-![A screenshot of a cell phone Description automatically generated](media/8c7416c86b2480de61afeede9552ce94.png)
+![Sales-tax-payment-by-code](media/Sales-tax-payment-by-code.png)
 
 In the field **Report currency** select:
 
@@ -58,7 +58,7 @@ In the field **Report currency** select:
 
     You can see report example below:
 
-![](media/15595f1ef641f7f443f8086036851967.png)
+![Sales-tax-payment-by-code-2](media/Sales-tax-payment-by-code-2.png)
 
 Report identifies that the Reporting code **101** has currency EUR if sales tax code
 to which the reporting code is assigned, has **Sales tax currency** field set as
