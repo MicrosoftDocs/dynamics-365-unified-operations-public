@@ -28,7 +28,6 @@ ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: 10.0.9
 
 ---
-#
 # All-in-one deployable packages (ADP)
 
 Customers can update the software in their environments by applying a software deployable package.  These packages can originate from the customer themselves in the form of customizations, and they can also be provided by partners and Independent Software Vendors (ISVs).  Microsoft's recommendation is to combine these various packages into a single package before applying it to an environment.  This is also a hard requirement for customers with self-service environments.
