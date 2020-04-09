@@ -42,8 +42,8 @@ This topic lists the platform updates for version 10.0.11 of Finance and Operati
 
 ## Features included in this release
 
-- [Feature name](URL to feature description in the Release plans) - For more information, see [title of content that contains details about the feature](URL to the content that contains details about the feature).
-- [Feature name](URL to feature description in the Release plans) - For more information, see [title of content that contains details about the feature](URL to the content that contains details about the feature).
+- [Designating fields as mandatory using personalization](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/usability-improvements-filtering-personalization) - For more information, see [Personalize the user experience](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/personalize-user-experience).
+- [Updated styling of the new grid](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/user-productivity--new-grid-control--phase-2).
 - [Feature name](URL to feature description in the Release plans) - For more information, see [title of content that contains details about the feature](URL to the content that contains details about the feature).
 - [Feature name](URL to feature description in the Release plans) - For more information, see [title of content that contains details about the feature](URL to the content that contains details about the feature).
 - [Feature name](URL to feature description in the Release plans) - For more information, see [title of content that contains details about the feature](URL to the content that contains details about the feature).
