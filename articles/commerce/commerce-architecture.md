@@ -5,7 +5,7 @@ title: Dynamics 365 Commerce architecture overview
 description: This topic provides an overview of all components in the Microsoft Dynamics 365 Commerce ecosystem, including integration points to the suite of Dynamics 365 products.
 author: samjarawan
 manager: AnnBe
-ms.date: 04/10/2020
+ms.date: 04/09/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -136,7 +136,7 @@ The CMS stores its pages as a series of modules. The storefront web server assem
 
 #### Dynamics 365 Fraud Protection
 
-[Dynamics 365 Fraud Protection](https://docs.microsoft.com/dynamics365/fraud-protection/overview) is integrated into the e-commerce checkout flows that are managed and processed through the commerce scale unit. The connection to the service is automatically provisioned with the commerce scale unit, and customers who sign up for Dynamics 365 Fraud Protection can enable and configure the integration in Commerce headquarters. The service can run either in "evaluate" mode, so that you can assess the effectiveness of the service, or in "protect" mode, so you can catch fraudulent transactions by using configured business rules. For more information, see [Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce](https://docs.microsoft.com/dynamics365/retail/dev-itpro/dfp).
+[Dynamics 365 Fraud Protection](https://docs.microsoft.com/dynamics365/fraud-protection/overview) is integrated into the e-commerce checkout flows that are managed and processed through the commerce scale unit. The connection to the service is automatically provisioned with the commerce scale unit, and customers who sign up for Dynamics 365 Fraud Protection can enable and configure the integration in Commerce headquarters. The service can run either in "evaluate" mode, so that you can assess the effectiveness of the service, or in "protect" mode, so that you can catch fraudulent transactions by using configured business rules. For more information, see [Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce](https://docs.microsoft.com/dynamics365/retail/dev-itpro/dfp).
 
 #### Dynamics 365 Customer Insights
 
