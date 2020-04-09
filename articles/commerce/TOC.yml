@@ -186,8 +186,8 @@
       items:
       - name: Architecture
         items:
-        - name: Commerce components
-          href: retail-components.md
+        - name: Dynamics 365 Commerce architecture overview
+          href: commerce-architecture.md
         - name: Commerce Scale Unit architecture
           href: dev-itpro/retail-server-architecture.md
         - name: Select an in-store topology
