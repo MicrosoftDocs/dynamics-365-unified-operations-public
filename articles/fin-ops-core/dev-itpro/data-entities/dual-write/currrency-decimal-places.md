@@ -2,7 +2,7 @@
 # required metadata
 
 title: Currency data-type migration for dual-write
-description: This topic describes how to change the number of decimal places for currency supported by dual-write.
+description: This topic describes how to change the number of decimal places that dual-write supports for currency.
 author: RamaKrishnamoorthy 
 manager: AnnBe
 ms.date: 04/06/2020
@@ -33,71 +33,67 @@ ms.search.validFrom: 2020-04-06
 
 [!include [banner](../../includes/banner.md)]
 
-You can increase the number of decimal places supported for currency values, up to 10 places. The default limit is 4. Increasing the decimal places prevents data loss when you synchronize data using dual-write. Increasing the decimal places is an opt-in change, and you must request assistance from Microsoft to implement the change.
+You can increase the number of decimal places that are supported for currency values to a maximum of 10. The default limit is four decimal places. By increasing the number of decimal places, you help prevent data loss when you use dual-write to sync data. The increase in the number of decimal places is an opt-in change. To implement it, you must request assistance from Microsoft.
 
-Changing the number of decimal places is a two-step process:
+The process of changing the number of decimal places has two steps:
 
-+ Request migration from Microsoft.
-+ Change the number of decimal places in Common Data Service.
+1. Request migration from Microsoft.
+2. Change the number of decimal places in Common Data Service.
 
-The Finance and Operations app and Common Data Service must support the same number of decimal positions on currency values to avoid data loss when this information is synchronized between apps. The migration process reconfigures the way currency and exchange rate values are stored, but it doesn't change any data. After the migration is complete, the number of decimal positions for currency codes and pricing can be increased, and users can enter and display data with greater decimal precision.
+The Finance and Operations app and Common Data Service must support the same number of decimal places in currency values. Otherwise, data loss can occur when this information is synced between apps. The migration process reconfigures the way that currency and exchange rate values are stored, but it doesn't change any data. After the migration is completed, the number of decimal places for currency codes and pricing can be increased, and the data that users enter and view can have more decimal precision.
 
-Migration is optional. We recommend that if you would benefit from increased decimal position support, then you should consider migration. Organizations that have no need for values with more than 4 decimal places do not need to migrate.
+Migration is optional. If you might benefit from support for more decimal places, we recommend that you consider migration. Organizations that don't require values that have more than four decimal places don't have to migrate.
 
-## Request migration from Microsoft
+## Requesting migration from Microsoft
 
-Storage for existing currency fields in Common Data Service cannot support more than 4 decimal positions. Therefore, during the migration process, currency values are copied to new internal fields in the database. This process occurs continuously until all data has been migrated. Internally, at the end of migration, the new storage types replace the old ones, but the data values are unchanged. The currency fields can then support up to 10 decimal places. During the migration process, Common Data Service can continue to be used without interruption.
+Storage for existing currency fields in Common Data Service can't support more than four decimal places. Therefore, during the migration process, currency values are copied to new internal fields in the database. This process occurs continuously until all data has been migrated. Internally, at the end of migration, the new storage types replace the old storage types, but the data values are unchanged. The currency fields can then support up to 10 decimal places. During the migration process, Common Data Service can continue to be used without interruption.
 
-At the same time, exchange rates are modified to support up to 12 decimal positions instead of the current limit of 10. This change is required so that the number of decimal places is the same in both the Finance and Operations app and Common Data Service.
+At the same time, exchange rates are modified so that they support up to 12 decimal places instead of the current limit of 10. This change is required so that the number of decimal places is the same in both the Finance and Operations app and Common Data Service.
 
-Migration does not change any data. After the currency and exchange rate fields are converted, admins can configure the system for up to 10 decimal positions for currency fields by specifying the number of positions for each transaction currency and for pricing.
+Migration doesn't change any data. After the currency and exchange rate fields are converted, admins can configure the system to use up to 10 decimal places for currency fields by specifying the number of decimal places for each transaction currency and for pricing.
 
-### How to request a migration
+### Request a migration
 
-If you want to enable this feature, email \<\<distlist\>\> and include the following information:
+To make this feature available, email \<\<distlist\>\>, and include the following information:
 
-+ **Subject**: Request to enable expanded decimal support for \<organizationID\>
-+ **Body**: I would like to enable expanded decimal support for my org \<organizationID\>
++ **Subject:** Request to enable expanded decimal support for \<organizationID\>
++ **Body:** I would like to enable expanded decimal support for my org \<organizationID\>.
 
-A Microsoft representative will contact you within 2-3 business days for the next steps.
+A Microsoft representative will contact you within two to three business days for the next steps.
 
-You should plan for the following when you request the migration:
+When you request a migration, you should be aware of the following details and plan for them accordingly:
 
-+ The time required to migrate the data depends the amount of data in the system. It can take several days to migrate large databases.
-+ The size of the database temporarily increases while the migration is running, because additional space is needed for indexes. Most of the additional space is freed when the migration is complete.
-+ If there are errors during the migration process that prevent it from being completed, the system raise alerts to Microsoft support for intervention. However, even if there are errors in the migration, Common Data Service remains fully available for normal use.
-+ The migration process is not reversible.
++ The time that is required to migrate the data depends the amount of data in the system. Migration of large databases can take several days.
++ The size of the database temporarily increases while the migration is running, because additional space is needed for indexes. Most of the additional space is freed when the migration is completed.
++ During the migration process, if errors occur that prevent the migration from being completed, the system raise alerts to Microsoft Support, so that Support staff can intervene. However, even if errors occur during the migration, Common Data Service remains fully available for regular use.
++ The migration process isn't reversible.
 
 ## Changing the number of decimal places
 
-After migration is complete, Common Data Service can store numbers with more decimal places. Admins can choose how many decimal places to use for specific currency codes and for pricing. Making these changes allows users of Power Apps, Power BI, and Power Automate to view and use numbers with more decimal places.
+After the migration is completed, Common Data Service can store numbers that have more decimal places. Admins can choose how many decimal places are used for specific currency codes and for pricing. Users of Microsoft Power Apps, Power BI, and Power Automate can then view and use numbers that have more decimal places.
 
-To enable this change, you must update these settings in Power Apps:
+To make this change, you must update the following settings in Power Apps:
 
-+ **System Settings: Precision for pricing**: The pricing precision sets how the currency will behave for the organization when **Pricing Precision** is selected.
-+ **Business Management: Currencies**: The **Currency Precision** setting lets you use custom currency-specific decimal positions, with a fallback to the organization setting.
++ **System Settings: Currency precision for pricing** – The **Set the currency precision that is used for pricing throughout the system** field defines how the currency will behave for the organization when **Pricing Precision** is selected.
++ **Business Management: Currencies** – The **Currency Precision** field lets you specify a custom number of decimal places for a specific currency. There is a fallback to the organization-wide setting.
 
 There are some limitations:
 
-+ You cannot configure the currency field on an entity. 
-+ Specifying more than four decimal positions can only be done at the **Pricing** and **Transaction Currency** levels.
++ You can't configure the currency field on an entity.
++ You can specify more than four decimal places only at the **Pricing** and **Transaction Currency** levels.
 
-### System Settings: Currency Precision for pricing
+### System Settings: Currency precision for pricing
 
-After migration is complete, admins can set the currency precision by accessing: **Settings \> Administration \> System Settings** and then changing the value for **Set the currency precision that is used for pricing throughout the system**. The setting is shown in the following image.
+After migration is completed, admins can set the currency precision. Go to **Settings \> Administration**, and select **System Settings**. Then, on the **General** tab, change the value of the **Set the currency precision that is used for pricing throughout the system** field, as shown in the following illustration.
 
 ![System settings for currency](media/currency-system-settings.png)
 
 ### Business Management: Currencies
 
-If you need a specific currency to behave differently than the currency pricing precision, you can change the currency precision for the specific currency. To do this, go to **Settings \> Business Management \> Currencies** and select the currency you want to change. Set the **Currency Precision** setting to the number of decimal places you want. The setting is shown in the following image.
+If you require that the currency precision for a specific currency differ from the currency precision that is used for pricing, you can change it. Go to **Settings \> Business Management**, select **Currencies**, and select the currency to change. Then set the **Currency Precision** field to the number of decimal places that you want, as shown in the following illustration.
 
 ![Currency settings for a specific locale](media/specific-currency.png)
 
-### Entities: Currency Field
+### Entities: Currency field
 
-The number of decimal positions that can be configured for specific currency fields is limited to 4.
-
-
-
-
+The number of decimal places that can be configured for specific currency fields is limited to four.
