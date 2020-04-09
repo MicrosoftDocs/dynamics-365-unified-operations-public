@@ -49,6 +49,7 @@ The following features are included in this release. The feature titles link to 
 - [Auto charges by channel ](https://docs.microsoft.com/en-us/dynamics365/commerce/auto-charges-by-channel)
 - [Improved support for serial number tracking dimension in store inventory processes](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/improved-support-serial-number-tracking-dimension-store-inventory-processes)
 - [Notifications and mini cart](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=9088a04a-b83d-ea11-a812-000d3a579c33)
+- [Theme extensions](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=061fa313-b059-ea11-a811-000d3a579c35)
 
 ## Additional resources
 
