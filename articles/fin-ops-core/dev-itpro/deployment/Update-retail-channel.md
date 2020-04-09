@@ -69,3 +69,4 @@ Both **Apply updates** and **Apply extension** operations will involve a downtim
 
 ## View history
 To view the history of recent operations on a Scale Unit, select **History** on the **Action** tab to open the **Scale Unit History** page. On this page, you can view recent operations such as initialize, service update, quality update, version, extension details, and other relevant information.
+
