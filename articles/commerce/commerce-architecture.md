@@ -38,7 +38,11 @@ This topic provides an overview of all components in the Microsoft Dynamics 365 
 
 The following illustration shows an overview of Dynamics 365 Commerce components.
 
+<a href="https://docs.microsoft.com/en-us/dynamics365/commerce/media/commerce-component-overview.jpg">![Dynamics 365 Commerce Component Overview](./media/commerce-component-overview.jpg)</a>
+
+<!--
 ![Commerce architecture](./media/commerce-component-overview.jpg)
+-->
 
 ## Architecture benefits
 
