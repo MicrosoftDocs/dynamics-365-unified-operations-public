@@ -31,27 +31,24 @@ ms.dyn365.ops.version: 10.0.11
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-To print the **Sales tax payment by code** report, navigate to **Tax** \> **Inquiries and reports** \> **Sales tax reports** \> **Sales tax payment by code**. By default, report amounts are generated in the accounting currency of the legal entity for all reporting codes that are set up on the **Sales tax reporting codes** page.
+To print the **Sales tax payment by code** report, go to **Tax** \> **Inquiries and reports** \> **Sales tax reports** \> **Sales tax payment by code**. By default, report amounts are generated in the accounting currency of the legal entity for all reporting codes that are set up on the **Sales tax reporting codes** page.
 
-You can also generate this report to show the sales tax payment amounts in the currencies of sales tax codes for all reporting codes that are assigned to sales tax codes on the **Sales tax codes** page.
+You can also generate this report so that it shows the sales tax payment amounts in the currencies of sales tax codes for all reporting codes that are assigned to sales tax codes on the **Sales tax codes** page.
 
-## Enable the feature
+## Turn on the feature
 
-In the **Feature management** workspace, enable the feature, **Generate the Sales tax payment by code report in the sales tax code currency**.
+In the **Feature management** workspace, turn on the following feature: **Generate the Sales tax payment by code report in the sales tax code currency**.
 
 ## Run the report
 
 1. Go to **Tax** \> **Inquiries and reports** \> **Sales tax reports** \> **Sales tax payment by code**.
+2. In the **Report currency** field, select one of the following values:
 
-![Sales-tax-payment-by-code](media/Sales-tax-payment-by-code.png)
+    - **Accounting currency** – Print the report amounts in the accounting currency.
+    - **Sales tax code currency** – Print the report amounts in the currencies of sales tax codes.
 
-2. In the **Report currency** field, select one of the following:
+    ![Sales tax payment by code dialog box](media/Sales-tax-payment-by-code.png)
 
-- **Accounting currency**: Print the report amounts in the accounting currency.
-- **Sales tax code currency**: Print the report amounts in the currencies of sales tax codes.
+The following illustration shows an example of the report that is generated. The report shows that reporting code **101** has the **EUR** currency if the **Sales tax currency** field is set to **EUR** for the sales tax code that the reporting code is assigned to.
 
-    The following graphic shows an example of the generated report. The report identifies that **Reporting code 101** has the currency **EUR** if the sales tax code to which the reporting code is assigned, has the **Sales tax currency** field set to **EUR**.
-
-    ![Sales-tax-payment-by-code-2](media/Sales-tax-payment-by-code-2.png)
-
-
+![Example of the Sales tax payment by code report](media/Sales-tax-payment-by-code-2.png)
