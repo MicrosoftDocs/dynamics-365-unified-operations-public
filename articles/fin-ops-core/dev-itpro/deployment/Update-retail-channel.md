@@ -65,3 +65,7 @@ Both **Apply updates** and **Apply extension** operations will involve a downtim
 
 > [!NOTE]
 > Applying an extension and an update at the same time requires a single downtime, and can be an effective way of averting multiple downtimes.
+
+## View History
+To view the history of recent operations on a Scale Unit, you can select History in the action tab on top to navigate to the Scale Unit History page. On this page, you can view recent operations such as Initialize, Service Update, Quality update, version, extension details and other relevant information.
+
