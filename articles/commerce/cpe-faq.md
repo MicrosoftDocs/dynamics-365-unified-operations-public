@@ -5,7 +5,7 @@ title: Dynamics 365 Commerce preview environment FAQ
 description: This topic provides answers to frequently asked questions about the Microsoft Dynamics 365 Commerce preview environment.
 author: v-chgri
 manager: annbe
-ms.date: 12/10/2019
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
