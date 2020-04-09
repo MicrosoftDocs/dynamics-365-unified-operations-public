@@ -33,7 +33,6 @@ ms.dyn365.ops.version:
 # Customer credit groups
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 You can define groups of customers who have the same credit limit. The individual credit limit that is defined on the customer invoice account is also considered.
 
