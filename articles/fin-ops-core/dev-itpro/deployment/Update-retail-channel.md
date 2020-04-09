@@ -45,7 +45,8 @@ To update Commerce Scale Unit, run the following steps for each:
 1. On the **Environment details** page, go to **Environment features > Retail and Commerce**.
 2. On the **Commerce deployment setup** page, select **Update**.
 3. In the selection panel, select the version to update to.
-4. You can also choose to apply an extension at the same time. 
+4. You can choose to update to the newest service update to access the latest features, or you can update to the latest quality update to apply quality improvements for the currently deployed service update. For more information, see [Download updates from Lifecycle Services (LCS)](../migration-upgrade/download-hotfix-lcs.md).
+5. You can choose to apply an extension at the same time. 
 
 To apply an extension to a Commerce Scale Unit, run the following steps:
 
