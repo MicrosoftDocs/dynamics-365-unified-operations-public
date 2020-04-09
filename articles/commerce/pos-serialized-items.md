@@ -8,7 +8,7 @@ manager: annbe
 ms.date: 04/07/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-365-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -29,6 +29,7 @@ ms.dyn365.ops.version: 10.0.11
 
 # Working with serialized items in POS
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Many retailers are selling products that require serial control (a.k.a. serialized items). Some want to maintain serial numbers in inventory from receipt to issue for tracking purpose, others may want to capture serial numbers during sales process for service and warranty. This topic explains how you can manage serialized items in Commerce point of sale (POS) application.
 
