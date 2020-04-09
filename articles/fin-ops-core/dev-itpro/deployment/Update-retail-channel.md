@@ -5,7 +5,7 @@ title: Apply updates and extensions to Retail Cloud Scale Unit
 description: This topic shows how to apply updates and extensions to cloud-hosted Commerce channel components.
 author: AamirAllaq
 manager: AnnBe
-ms.date: 01/08/2020
+ms.date: 04/09/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -65,3 +65,7 @@ Both **Apply updates** and **Apply extension** operations will involve a downtim
 
 > [!NOTE]
 > Applying an extension and an update at the same time requires a single downtime, and can be an effective way of averting multiple downtimes.
+
+## View history
+To view the history of recent operations on a Scale Unit, select **History** on the **Action** tab to open the **Scale Unit History** page. On this page, you can view recent operations such as initialize, service update, quality update, version, extension details, and other relevant information.
+
