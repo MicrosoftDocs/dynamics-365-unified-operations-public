@@ -48,6 +48,7 @@ This topic lists the platform updates for version 10.0.11 of Finance and Operati
 - [Feature name](URL to feature description in the Release plans) - For more information, see [title of content that contains details about the feature](URL to the content that contains details about the feature).
 - [Feature name](URL to feature description in the Release plans) - For more information, see [title of content that contains details about the feature](URL to the content that contains details about the feature).
 
+- [Compiler warning to error: Field groups containing invalid field references](removed-deprecated-features-platform-updates.md#field-groups-containing-invalid-field-references) - For more information, see the [previously announced deprecation of this compiler warning](removed-deprecated-features-platform-updates.md#field-groups-containing-invalid-field-references).
 
 ## Additional resources
 
