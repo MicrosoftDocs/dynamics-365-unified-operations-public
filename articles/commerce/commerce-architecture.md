@@ -5,7 +5,7 @@ title: Dynamics 365 Commerce architecture overview
 description: This topic provides an overview of all components in the Microsoft Dynamics 365 Commerce ecosystem, including integration points to the suite of Dynamics 365 products.
 author: samjarawan
 manager: AnnBe
-ms.date: 04/03/2020
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -54,7 +54,7 @@ The platform that is shared among the various Dynamics 365 business applications
 
 ### Unified data
 
-The Dynamics 365 Commerce stack provides a unified data solution through out-of-box integrations with [Common Data Service](https://powerapps.microsoft.com/common-data-service/) and [‎Azure Data Lake Storage](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction). Integrations and data sharing across Dynamics 365 business applications such as Dynamics 365 Sales and Dynamics 365 Marketing are supported through the shared Common Data Service. Transactional data in Data Lake Storage is used to power various analytics and insight scenarios in the Dynamics 365 Commerce solution. However, it can also be used by any third-party software integration.
+Dynamics 365 Commerce provides a unified data solution through out-of-box integrations with [Common Data Service](https://powerapps.microsoft.com/common-data-service/) and [Azure Data Lake Storage](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction). Integrations and data sharing across Dynamics 365 business applications such as Dynamics 365 Sales and Dynamics 365 Marketing are supported through the shared Common Data Service. Transactional data in Data Lake Storage is used to power various analytics and insight scenarios in the Dynamics 365 Commerce solution. However, it can also be used by any third-party software integration.
 
 ### Powered by AI and analytics
 
@@ -108,7 +108,7 @@ The Dynamics 365 Commerce application, which is often referred to as the Commerc
 
 Retailers are distributed organizations, where the business topography can be represented as a hub and spoke model. Dynamics 365 Commerce supports this model by having head-office capabilities (the hub), and also many distributed channel components (the spokes) that can be deployed and self-managed in-store or in nearby Microsoft-managed Azure datacenters. The spokes are referred to as scale units, because they represent physical isolation (a function of scale) and an atomic unit of update.
 
-To facilitate cloud and edge computing scenarios, a commerce scale unit is available both as a software as a service (SaaS) component that is managed by Microsoft (cloud scale unit) and as a self-managed component that can be deployed locally (store scale unit). A single environment can have a mixture of cloud scale units and store scale units. Therefore, organizations can tune their investments in operational overhead with network redundancy for poor connectivity on a store-by-store basis. For more information, see [Select an in-store topology](https://docs.microsoft.com/dynamics365/retail/dev-itpro/retail-in-store-topology).
+To facilitate cloud and edge computing scenarios, a commerce scale unit is available both as a software as a service (SaaS) component that is managed by Microsoft (cloud scale unit) and as a self-managed component that can be deployed locally (store scale unit). A single environment can have a mixture of cloud scale units and store scale units. Therefore, organizations can tune their investments in operational overhead on a store-by-store basis by implementing network redundancy for poor connectivity. For more information, see [Select an in-store topology](https://docs.microsoft.com/dynamics365/retail/dev-itpro/retail-in-store-topology).
 
 #### Cloud scale units (Microsoft-managed)
 
@@ -136,7 +136,7 @@ The CMS stores its pages as a series of modules. The storefront web server assem
 
 #### Dynamics 365 Fraud Protection
 
-[Dynamics 365 Fraud Protection](https://docs.microsoft.com/dynamics365/fraud-protection/overview) is integrated into the e-commerce checkout flows that are managed and processed through the commerce scale unit. The connection to the service is automatically provisioned with the commerce scale unit, and customers who sign up for Dynamics 365 Fraud Protection can enable and configure the integration in Dynamics 365 headquarters. The service can run either in "evaluate" mode, to assess the effectiveness of the service, or in "protect" mode, to catch fraudulent transactions that are configured by using business rules. For more information, see [Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce](https://docs.microsoft.com/dynamics365/retail/dev-itpro/dfp).
+[Dynamics 365 Fraud Protection](https://docs.microsoft.com/dynamics365/fraud-protection/overview) is integrated into the e-commerce checkout flows that are managed and processed through the commerce scale unit. The connection to the service is automatically provisioned with the commerce scale unit, and customers who sign up for Dynamics 365 Fraud Protection can enable and configure the integration in Commerce headquarters. The service can run either in "evaluate" mode, so that you can assess the effectiveness of the service, or in "protect" mode, so you can catch fraudulent transactions by using configured business rules. For more information, see [Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce](https://docs.microsoft.com/dynamics365/retail/dev-itpro/dfp).
 
 #### Dynamics 365 Customer Insights
 
@@ -144,7 +144,7 @@ The CMS stores its pages as a series of modules. The storefront web server assem
 
 #### Bing for Commerce
 
-[Microsoft Bing for Commerce](https://www.microsoft.com/bing/commerce) is integrated into Dynamics 365 Commerce to provide consistent product discovery and search experiences across all commerce channels that use the commerce scale unit. In Dynamics 365 headquarters, retailers can configure boosting and sinking business rules for product discovery and search experiences. (For example, these rules can be used to boost product discovery for discounted products or remove items that are out of stock.) In this way, retailers can turn shopper frustration and site abandonment into active carts and converted sales. By taking advantage of an out-of-box capability that this integration provides, retailers can let customers use images to search for and discover similar products from a catalog without having to describe them.
+[Microsoft Bing for Commerce](https://www.microsoft.com/bing/commerce) is integrated into Dynamics 365 Commerce to provide consistent product discovery and search experiences across all commerce channels that use the commerce scale unit. In Commerce headquarters, retailers can configure boosting and sinking business rules for product discovery and search experiences. (For example, these rules can be used to boost product discovery for discounted products or remove items that are out of stock.) In this way, retailers can turn shopper frustration and site abandonment into active carts and converted sales. By taking advantage of an out-of-box capability that this integration provides, retailers can let customers use images to search for and discover similar products from a catalog without having to describe them.
 
 #### Product recommendations
 
@@ -154,7 +154,7 @@ Product recommendations let customers easily and quickly find products that they
 
 #### Commerce analytics
 
-Dynamics 365 Commerce's prepackaged, business-managed commerce analytics solution provides retailers with intelligent insights across all points of the Commerce ecosystem by embedding Power BI reports in Dynamics 365 headquarters and POS systems. The commerce analytics solution provides a comprehensive set of out-of-box business and transactional reports, dashboards, and KPIs that take advantage of insights across all channels.
+Dynamics 365 Commerce's prepackaged, business-managed commerce analytics solution provides retailers with intelligent insights across all points of the Commerce ecosystem by embedding Power BI reports in Commerce headquarters and POS systems. The commerce analytics solution provides a comprehensive set of out-of-box business and transactional reports, dashboards, and KPIs that take advantage of insights across all channels.
 
 The solution standardizes data from various sources (such as transactional, behavioral, observational, or external data sources) into a unified data model that is hosted in Azure Data Lake Storage. Therefore, organizations can obtain a truly complete view of their business performance across channels. For example, they can analyze the performance of discount promotions, monitor web visits and activity, compare in-store visits and purchases with online purchases, track loyalty redemptions, or do customer recency, frequency, monetary (RFM) analysis.
 
@@ -166,7 +166,7 @@ The Commerce ratings and reviews solution lets online retail customers enter pro
 
 #### Azure Data Lake Storage
 
-Customers who bring their own Azure Data Lake Storage accounts can take advantage of structured business data from back-office operations and clickstream data from the e-commerce storefront. This data flows back into intelligence surround services such as product recommendations, customer insights, and commerce analytics to power customer-centric business processes and user experiences. Those business processes and user experiences can then be embedded back into Dynamics 365 Commerce headquarters, the POS, and e-commerce storefronts. For more information, see [Make Entity store available as Data Lake](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-store-data-lake).
+Customers who bring their own Azure Data Lake Storage accounts can take advantage of structured business data from back-office operations and clickstream data from the e-commerce storefront. This data flows back into intelligence services such as product recommendations, customer insights, and commerce analytics to power customer-centric business processes and user experiences. Those business processes and user experiences can then be embedded back into Dynamics 365 Commerce headquarters, the POS, and e-commerce storefronts. For more information, see [Make Entity store available as Data Lake](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-store-data-lake).
 
 #### Common Data Service
 
