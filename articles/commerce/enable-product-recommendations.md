@@ -40,10 +40,31 @@ This topic explains how to make product recommendations that are based on artifi
 
 Before enabling, please note that product recommendations are only supported for Commerce customers who have migrated their storage to using Azure Data Lake Storage (ADLS). 
 
-For steps on enabling ADLS, see [How to enable ADLS in a Dynamics 365 environment](enable-ADLS-environment.md).
+The following configurations must be enabled in the backoffice before enabling recommendations:
+
+1. [Ensure that ADLS has been purchased and successfully verified in the environment](enable-ADLS-environment.md).
+2. [Ensure that the Entity store refresh has been automated](dynamics365/fin-ops-core/dev-itpro/data-entities/entity-store-data-lake#automated-entity-store-refresh).
+3. Confirm that Azure AD Itentity configuration contains an entry for Recommendations. More information on how to do this action is below.
 
 Additionally, ensure that RetailSale measurements have been enabled. To learn more about this set up process, go [here.](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-measures)
 
+## Azure AD Identity configuration
+
+This step is required for all customers running in IaaS (infra-structure as a service) configuration. 
+For customers running on SF (service fabric), this step should be automatic and we recommend verifying the setting is configured as expected.
+
+### Instructions for setup
+
+1. From the back office, search for the page: **Azure Active Directory applications.** 
+1. Check if entry exists for: "RecommendationSystemApplication-1".
+
+If the entry does not exist, add a new entry with the following information:
+
+1. **Client Id**:  d37b07e8-dd1c-4514-835d-8b918e6f9727
+2. **Name**: RecommendationSystemApplication-1
+3. **User Id**: RetailServiceAccount
+
+Lastly, **save** and close the page. 
 
 ## Turn on recommendations
 
@@ -53,7 +74,7 @@ To turn on product recommendations, follow these steps.
 1. In the list of shared parameters, select **Recommendation Lists**.
 1. Set the **Enable recommendations** option to **Yes**.
 
-![enable product recommendations](./media/enableproductrecommendations.png)
+![Turning on recommendations](./media/enablepersonalization.png)
 
 > [!NOTE]
 > This procedure starts the process of generating product recommendation lists. Up to several hours might be required before the lists are available and can be seen at the point of sale (POS) or in Dynamics 365 Commerce.
@@ -68,7 +89,9 @@ After enabling recommendations in Commerce back office, the recommendations pane
 
 ## Enable personalized recommendations
 
-To learn more about how to receive personalized recommendations, see [Enable personalized recommendations](personalized-recommendations.md).
+In Dynamics 365 Commerce, retailers can make personalized product recommendations (also known as personalization) available. In this way, personalized recommendations can be incorporated into the customer experience online and at the point of sale (POS). When the personalization functionality is turned on, the system can associate a user's purchase and product information to generate individualized product recommendations.
+
+To learn more about personalized recommendations, see [Enable personalized recommendations](personalized-recommendations.md).
 
 ## Additional resources
 
