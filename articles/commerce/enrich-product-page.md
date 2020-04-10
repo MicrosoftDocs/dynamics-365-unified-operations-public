@@ -5,7 +5,7 @@ title: Enrich a product page
 description: This topic describes how to enrich a product page in Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
