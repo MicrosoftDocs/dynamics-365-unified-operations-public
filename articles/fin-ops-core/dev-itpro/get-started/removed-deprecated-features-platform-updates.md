@@ -57,6 +57,23 @@ This list is intended to help you consider these removals and deprecations for y
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: We're targeting that the warning will become a compiler error with platform updates for version 10.0.11 of Finance and Operations apps. |
 
+### ISV licenses created with SHA1 hashing algorithm
+
+
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The process for creating ISV licenses has changed. For more information, see [Independent software vendor (ISV) licensing](../dev-tools/isv-licensing#appendix-create-self-signed-certificates-for-test-purposes.md). |
+| **Replaced by another feature?**   | Yes, you create licenses with Powershell.  |
+| **Product areas affected**         | Visual Studio development tools |
+| **Deployment option**              | All |
+| **Status**                         | <strong>Deprecated</strong>: ISV licenses created with SHA1 hashing algorithm which depended upon certificates created with the MakeCert utility which has been deprecated.<br><strong>Deprecated</strong>: The use of SHA1 for security or hashing purposes. SHA1 will be cease to function in early 2021 and as such should no longer be used.<br><strong>Removed</strong>: Support of TLS 1.0 and TLS 1.1 incoming or outgoing requests.
+ |
+
+
+
+
+
 ## Platform update 32
 
 ### Workflow request change dialog box no longer includes user selection drop-down list
