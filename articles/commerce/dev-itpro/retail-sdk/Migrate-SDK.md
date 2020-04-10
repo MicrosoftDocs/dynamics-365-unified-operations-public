@@ -129,3 +129,5 @@ Ex:
 **What’s not impacted:**
 
    -   It’s not required to change the extensions code written in previous version of SDK, only update of reference and recompilation is required with the new SDK.
+   
+   - Existing Azure DevOps pipeline set up for Retail SDK build will continue to work. If required in the MSBuild task step change the msbuild version to 15.0
