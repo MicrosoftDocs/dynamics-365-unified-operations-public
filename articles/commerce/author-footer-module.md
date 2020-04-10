@@ -5,7 +5,7 @@ title: Footer module
 description: This topic covers footer modules and how to author them in Dynamics 365 Commerce.
 author: anupamar
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
