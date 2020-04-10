@@ -30,7 +30,6 @@ ms.dyn365.ops.version: 10.0.11
 
 ---
 # Migrate Retail SDK from VS 2015 to VS 2017
-[!include [banner](../includes/banner.md)]
 
 This topic explains what’s changed in Retail SDK 10.0.11 release and how to migrate to new VS 2017 and update extension project reference library to NuGet.
 
