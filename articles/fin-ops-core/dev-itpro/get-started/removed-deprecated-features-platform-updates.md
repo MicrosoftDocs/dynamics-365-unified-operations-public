@@ -67,10 +67,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes, you create licenses with Powershell.  |
 | **Product areas affected**         | Visual Studio development tools |
 | **Deployment option**              | All |
-| **Status**                         | <strong>Deprecated</strong>: ISV licenses created with SHA1 hashing algorithm which depended upon certificates created with the MakeCert utility which has been deprecated.<br><strong>Deprecated</strong>: The use of SHA1 for security or hashing purposes. SHA1 will be cease to function in early 2021 and as such should no longer be used.<br><strong>Removed</strong>: Support of TLS 1.0 and TLS 1.1 incoming or outgoing requests.
- |
-
-
+| **Status**                         | <strong>Deprecated</strong>: ISV licenses created with SHA1 hashing algorithm which depended upon certificates created with the MakeCert utility which has been deprecated.<br><strong>Deprecated</strong>: The use of SHA1 for security or hashing purposes. SHA1 will be cease to function in early 2021 and as such should no longer be used.<br><strong>Removed</strong>: Support of TLS 1.0 and TLS 1.1 incoming or outgoing requests. |
 
 
 
