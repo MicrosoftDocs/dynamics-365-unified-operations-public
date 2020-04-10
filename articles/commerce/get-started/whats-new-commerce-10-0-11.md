@@ -51,7 +51,7 @@ The following features are included in this release. The feature titles link to 
 - [Notifications and mini cart](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=9088a04a-b83d-ea11-a812-000d3a579c33)
 - [Theme extensions](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=061fa313-b059-ea11-a811-000d3a579c35)
 
-- [Commerce SDK migrated to VS 2017](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=b8f8388f-627b-ea11-a812-000d3a579c39)
+- [Commerce SDK updated to VS 2017](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=b8f8388f-627b-ea11-a812-000d3a579c39)
 
 ## Additional resources
 
