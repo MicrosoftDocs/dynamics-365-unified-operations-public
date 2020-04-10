@@ -43,13 +43,13 @@ When the [initial](er-apis-app73.md#code-to-run-a-format-mapping-for-data-export
 
 In some cases, when an ER format mapping is called from a specific place in the X++ code, you must specify additional criteria to find the most appropriate model mapping. For example, an ER format mapping has been configured by using a data model that you have two model mappings for. The first model mapping is marked as a default model mapping, because it ensures the smooth execution of this ER format mapping whenever it's called, from every execution point that is currently available. In X++, you implement a new execution point to call this ER format mapping from. In this way, you force the data model to use the second model mapping, because that model mapping will perform better, given the other conditions of this call (for example, the arguments that are provided and the available resources of the current application instance).
 
-To complete this setup, configure your model mapping with an integration point. In the **Data sources** pane, you can select a single data source of your model mapping as the component of this integration point.
+To complete this setup, configure your model mapping with an integration point. In the **Data sources** pane, you can select a single data source of your model mapping as the component of this integration point. Then select **Edit** to change the properties of this data source.
 
-![Configuring a model mapping with an integration point](./media/er-api-ds-integration-point1.png)
+![Selecting Edit to change the properties of a selected data source](./media/er-api-ds-integration-point1.png)
 
-Then, you can select **Edit** to change properties of this data source. In the **Data source properties** dialog box, you can set the **Integrated point** option to mark this data source as the component of the integration point.
+In the **Data source properties** dialog box, you can set the **Integration point** option to **Yes** to mark the data source as the component of the integration point.
 
-![Configuring a model mapping with an integration point](./media/er-api-ds-integration-point2.png)
+![Setting the Integration point option](./media/er-api-ds-integration-point2.png)
 
 You can then use the new API of the ER framework to call an ER format mapping and force it to use a model mapping that has been configured to contain a specific integration point. The following example shows how this new API can be used.
 
@@ -87,7 +87,7 @@ The [initial](er-apis-app73.md#code-to-display-a-format-mapping-lookup) API of t
 - It has the specified names.
 - Its criteria were met first in the ER configurations list.
 
-The new API of the ER framework lets you use the configured integration point to implement the same lookup. This lookup offers all the ER format mappings that contain a data source of the **Data model** type that a model mapping that has the specified integration point is available for. The offered in this lookup ER format mappings can use different model mappings as data sources.
+The new API of the ER framework lets you use the configured integration point to implement the same lookup. This lookup offers all the ER format mappings that contain a data source of the **Data model** type that a model mapping that has the specified integration point is available for. The ER format mappings that are offered in this lookup can use different model mappings as data sources.
 
 The following example shows how this new API can be used.
 
