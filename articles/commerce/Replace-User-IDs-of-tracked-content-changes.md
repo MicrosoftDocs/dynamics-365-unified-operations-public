@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title:Replace User IDs of tracked content changes
+title: Replace User IDs of tracked content changes
 description: This topic reviews the the ability to replace the email address User IDs in the change tracking logs within site builder. 
 author: BrianShook
-manager: BrendanSullivanMSFT
+manager: annbe
 ms.date: 04/01/2020
 ms.topic: article
 ms.prod: 
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -24,7 +24,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: brshoo
-ms.search.validFrom: 2019-08-30
+ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: 
 
 ---
