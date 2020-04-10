@@ -46,7 +46,9 @@ You can calculate a depreciation bonus by reducing the value of an asset through
 2. Select **New** to create a depreciation bonus allowance.
 3. In the **Depreciation bonus** field, enter a unique identifier for the depreciation bonus allowance. In the **Description** field, enter a description.
 4. In the **Depreciation bonus percent** field, enter the percentage of the depreciation bonus.
-
+> [!NOTE]
+> Depreciation bonus setup can be used when a user is creating a Fixed asset journal line for **Putting into operetion** transaction 
+> type. See [Acquiring fixed assets and putting them into operation](rus-fixed-asset-acquisition.md).   
 ## Calculate a depreciation bonus
 
 The depreciation bonus is calculated only for the tax value model. You must set up a posting profile before you can calculate the depreciation bonus for fixed assets.
