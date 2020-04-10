@@ -942,12 +942,16 @@
           items:
           - name: Cart module
             href: add-cart-module.md
+          - name: Cart icon module
+            href: cart-icon-module.md
           - name: Checkout module
             href: add-checkout-module.md
           - name: Order confirmation module
             href: order-confirmation-module.md 
           - name: Store selector module
             href: store-selector.md
+          - name: Gift card module
+            href: add-giftcard.md
         - name: Account management modules
           items:
           - name: Account management pages and modules
