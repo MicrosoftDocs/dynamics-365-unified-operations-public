@@ -46,12 +46,11 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/) site.
 
 - [POS sign-in page improvements](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/pos-sign-in-page-improvements)
-- [Auto charges by channel ](https://docs.microsoft.com/en-us/dynamics365/commerce/auto-charges-by-channel)
+- [Auto charges by channel ](../auto-charges-by-channel.md)
 - [Improved support for serial number tracking dimension in store inventory processes](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/improved-support-serial-number-tracking-dimension-store-inventory-processes)
-- [Notifications and mini cart](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=9088a04a-b83d-ea11-a812-000d3a579c33)
-- [Theme extensions](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=061fa313-b059-ea11-a811-000d3a579c35)
-
-- [Commerce SDK updated to VS 2017](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=b8f8388f-627b-ea11-a812-000d3a579c39)
+- [Notifications and mini-cart](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/support-mini-cart-e-commerce-site)
+- [Theme extensions](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/support-theme-extensions)
+- Commerce SDK updated to Visual Studio 2017
 
 ## Additional resources
 
