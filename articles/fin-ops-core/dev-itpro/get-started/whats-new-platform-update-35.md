@@ -5,7 +5,7 @@ title: Platform updates for version 10.0.11 of Finance and Operations apps (July
 description: This topic lists the features are included in the platform updates for version 10.0.11 of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 04/03/2020
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -42,12 +42,11 @@ This topic lists the platform updates for version 10.0.11 of Finance and Operati
 
 ## Features included in this release
 
-- [Designating fields as mandatory using personalization](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/usability-improvements-filtering-personalization) - For more information, see [Personalize the user experience](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/personalize-user-experience).
-- [Updated styling of the new grid](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/user-productivity--new-grid-control--phase-2)
+- [Designating fields as mandatory using personalization](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/usability-improvements-filtering-personalization) - For more information, see [Personalize the user experience](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/personalize-user-experience).
+- [Updated styling of the new grid](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/user-productivity--new-grid-control--phase-2)
 - [Feature name](URL to feature description in the Release plans) - For more information, see [title of content that contains details about the feature](URL to the content that contains details about the feature).
 - [Feature name](URL to feature description in the Release plans) - For more information, see [title of content that contains details about the feature](URL to the content that contains details about the feature).
 - [Feature name](URL to feature description in the Release plans) - For more information, see [title of content that contains details about the feature](URL to the content that contains details about the feature).
-
 - [Compiler warning to error: Field groups containing invalid field references](removed-deprecated-features-platform-updates.md#field-groups-containing-invalid-field-references) - For more information, see the [previously announced deprecation of this compiler warning](removed-deprecated-features-platform-updates.md#field-groups-containing-invalid-field-references).
 
 ## Additional resources
