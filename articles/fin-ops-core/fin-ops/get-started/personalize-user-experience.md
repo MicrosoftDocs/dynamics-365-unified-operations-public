@@ -94,7 +94,7 @@ You can use the property window to personalize an element in the following ways:
 - Include the information in the FastTab's summary section (if the element is on a FastTab).
 - Skip the field so that it never receives focus when you tab through the page.
 - Prevent data in the field from being edited (for any record).
-- Designate a field to be required for data entry. If no value has been entered into this field, it will appear with a red border and an asterisk to indicate this state. This option is only available starting in 10.0.11 / Platforom update 35 when the [Saved views](saved-views.md) and **Designate fields as required using personalization**  features are enabled.
+- Designate a field to be required for data entry. If no value has been entered into this field, it will appear with a red border and an asterisk to indicate this state. This option is only available starting in version 10.0.11 when the [Saved views](saved-views.md) and **Designate fields as required using personalization**  features are enabled.
 
 The property window might include other personalization capabilities, depending on the element. For example, the property window for a tile might let you promote that tile to a dashboard, and the property window for a dashboard might let you create a new workspace on that dashboard.
 
