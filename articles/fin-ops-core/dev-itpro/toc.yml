@@ -14,6 +14,8 @@
         items:
         - name: What's new or changed in Platform updates home page
           href: get-started/whats-new-home-page.md
+        - name: Platform updates for 10.0.10 (May 2020)
+          href: get-started/whats-new-platform-update-34.md
         - name: Platform update 33 (April 2020)
           href: get-started/whats-new-platform-update-33.md
         - name: Platform update 32 (February 2020)
@@ -45,7 +47,11 @@
         - name: Platform update 15 (March 2018)
           href: ../fin-ops/get-started/whats-new-platform-update-15.md 
       - name: Removed or deprecated features
-        href: migration-upgrade/deprecated-features.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
+        items:
+        - name: Removed or deprecated platform features
+          href: get-started/removed-deprecated-features-platform-updates.md
+        - name: Removed or deprecated features in previous releases
+          href: migration-upgrade/deprecated-features.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
       - name: AX 2012 features that were postponed
         href: ../fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
       - name: Features not implemented in on-premises deployments
@@ -142,39 +148,105 @@
           items:
           - name: Data integration using Common Data Service overview
             href: data-entities/data-integration-cds.md
-          - name: Synchronous, bidirectional integration
+          - name: Dual-write integration
             items: 
-            - name: Near-real time data integration
+            - name: Dual-write home page
+              href: data-entities/dual-write/dual-write-home-page.md
+            - name: Dual-write overview
               href: data-entities/dual-write/dual-write-overview.md
-            - name: Organization hierarchy on Common Data Service
-              href: data-entities/dual-write/organization-mapping.md
-            - name: Company integration
+            - name: Dual-write setup
               items:
-              - name: Company concept in Common Data Services
-                href: data-entities/dual-write/company-data.md
-              - name: Bootstrap with company data
-                href: data-entities/dual-write/bootstrap-company-data.md
-            - name: Integrated customer master
-              href: data-entities/dual-write/customer-mapping.md
-            - name: Integrated ledger
-              href: data-entities/dual-write/ledger-mapping.md            
-            - name: Unified product experience
-              href: data-entities/dual-write/product-mapping.md
-            - name: Vendor integration
+                - name: System requirements for dual-write
+                  href: data-entities/dual-write/dual-write-system-req.md
+                - name: Supported scenarios for dual-write setup
+                  href: data-entities/dual-write/connection-setup.md
+                - name: Dual-write setup from Lifecycle Services
+                  href: data-entities/dual-write/lcs-setup.md
+                - name: Initial synchronization
+                  href: data-entities/dual-write/initial-sync.md
+                - name: Enable dual-write for existing Finance and Operations apps
+                  items:
+                    - name: Enable dual-write for existing Finance and Operations apps
+                      href: data-entities/dual-write/enable-dual-write.md
+                    - name: System requirements and prerequisites
+                      href: data-entities/dual-write/requirements-and-prerequisites.md
+                    - name: How to use the dual-write wizard to link your environments
+                      href: data-entities/dual-write/link-your-environment.md
+                    - name: Enable entity map for dual-write
+                      href: data-entities/dual-write/enable-entity-map.md
+            - name: Managing dual-write
               items:
-              - name: Integrated vendor master
-                href: data-entities/dual-write/vendor-mapping.md
-              - name: Switch between vendor designs
-                href: data-entities/dual-write/vendor-switch.md
-            - name: Integrated sites and warehouses
-              href: data-entities/dual-write/sites-warehouses-mapping.md
-            - name: Integrated tax master
-              href: data-entities/dual-write/tax-mapping.md
-            - name: Initial synchronization
-              href: data-entities/dual-write/initial-sync.md
-            - name: Troubleshooting data integration
-              href: data-entities/dual-write/dual-write-troubleshooting.md
-          - name: Asynchronous, unidirectional integration
+                - name: Customize entity and field mappings
+                  href: data-entities/dual-write/customizing-mappings.md
+                - name: Error management and alert notifications
+                  href: data-entities/dual-write/errors-and-alerts.md
+                - name: Application lifecycle management
+                  href: data-entities/dual-write/app-lifecycle-management.md
+            - name: Mapping concepts between apps
+              items:
+                - name: Integrated customer master
+                  href: data-entities/dual-write/customer-mapping.md
+                - name: Vendor integration
+                  items:
+                  - name: Integrated vendor master
+                    href: data-entities/dual-write/vendor-mapping.md
+                  - name: Switch between vendor designs
+                    href: data-entities/dual-write/vendor-switch.md
+                - name: Customer loyalty cards and reward points
+                  href: data-entities/dual-write/loyalty-mapping.md
+                - name: Product integration
+                  items:
+                  - name: Unified product experience
+                    href: data-entities/dual-write/product-mapping.md
+                  - name: Integrated sites and warehouses
+                    href: data-entities/dual-write/sites-warehouses-mapping.md
+                - name: Company integration
+                  items:
+                  - name: Company concept in Common Data Services
+                    href: data-entities/dual-write/company-data.md
+                  - name: Bootstrap with company data
+                    href: data-entities/dual-write/bootstrap-company-data.md
+                - name: Organization hierarchy on Common Data Service
+                  href: data-entities/dual-write/organization-mapping.md
+                - name: Finance and tax data
+                  items:
+                  - name: Access to finance and tax reference data
+                    href: data-entities/dual-write/finance-tax-reference.md
+                  - name: Integrated ledger
+                    href: data-entities/dual-write/ledger-mapping.md            
+                  - name: Integrated tax master
+                    href: data-entities/dual-write/tax-mapping.md
+                - name: Sync with the Dynamics 365 Supply Chain Management pricing engine on demand
+                  href: data-entities/dual-write/pricing-engine.md
+                - name: Prospect to cash in dual-write
+                  href: data-entities/dual-write/dual-write-prospect-to-cash.md
+                - name: In-house assets for servicing
+                  href: data-entities/dual-write/in-house-assets.md
+                - name: Integrated worker, job, and position
+                  href: data-entities/dual-write/integrated-hr.md
+            - name: Support for dual-write
+              items:
+                - name: Support for Field Service solutions and Project Service Automation solutions
+                  href: data-entities/dual-write/field-service-project-service-automation.md
+                - name: Troubleshooting
+                  items:
+                  - name: Verify that dual-write is configured in Finance and Operations apps and Common Data Service
+                    href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
+                  - name: Troubleshoot issues during initial setup
+                    href: data-entities/dual-write/dual-write-troubleshooting-initial-setup.md
+                  - name: Troubleshoot issues during initial synchronization
+                    href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
+                  - name: Troubleshoot issues with the Dual-write module in Finance and Operations apps
+                    href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
+                  - name: Troubleshoot live synchronization issues
+                    href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
+                  - name: Troubleshoot issues related to solution awareness
+                    href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
+                  - name: Troubleshoot issues related to upgrades of Finance and Operations apps
+                    href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
+                  - name: General troubleshooting
+                    href: data-entities/dual-write/dual-write-troubleshooting.md
+          - name: Integration with Power Platform
             items:
             - name: Configure a prospect to cash scenario
               items:
@@ -326,6 +398,8 @@
           href: database/import-database.md
         - name: Database point-in-time restore
           href: database/database-point-in-time-restore.md
+        - name: Point-in-time restore of the production database to a sandbox environment
+          href: database/database-pitr-prod-sandbox.md
       - name: Tutorials
         items:
         - name: Refresh for training purposes
@@ -356,6 +430,8 @@
             href: database/api/v1/reference-list-backups.md
           - name: Create database refresh
             href: database/api/v1/reference-create-refresh.md
+          - name: Create a database export
+            href: database/api/v1/reference-create-export.md
           - name: Get operation activity status
             href: database/api/v1/reference-get-status.md
     - name: Demo data
@@ -406,36 +482,46 @@
         items:
         - name: On-premises deployment home page
           href: deployment/on-premises-deployment-landing-page.md
-        - name: On-premises deployment overview
-          href: deployment/on-premises-overview.md
-        - name: Plan and prepare for on-premises deployments
-          href: deployment/plan-onprem-deployment.md
-        - name: Hardware sizing requirements
-          href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
-        - name: Set up on-premises projects
-          href: lifecycle-services/lbd-create-lcs-on-prem-project.md
-        - name: Set up and deploy on-premises environments
+        - name: Prepare for on-premises deployments
           items:
-          - name: Set up and deploy on-premises environments home page
-            href: deployment/setup-deploy-on-premises-environments.md
-          - name: Deploy on-premises environments (Platform update 12 and later)
+          - name: On-premises deployment overview
+            href: deployment/on-premises-overview.md
+          - name: Plan and prepare for on-premises deployments
+            href: deployment/plan-onprem-deployment.md
+          - name: Hardware sizing requirements
+            href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
+        - name: Set up and deploy on-premises environments
+          items: 
+          - name: Set up on-premises projects in LCS
+            href: lifecycle-services/lbd-create-lcs-on-prem-project.md
+          - name: Set up and deploy on-premises environments
             href: deployment/setup-deploy-on-premises-pu12.md
-          - name: Deploy on-premises environments (Platform updates 8 and 11)
-            href: deployment/setup-deploy-on-premises-pu8-pu11.md
           - name: Installation steps for Retail channel components in an on-premises environment
             href: deployment/deploy-retail-onprem.md
-        - name: Develop and deploy custom models to on-premises environments
-          href: deployment/develop-deploy-custom-models-on-premises.md
-        - name: PowerBI.com integration with on-premises environments
-          href: analytics/entity-store-on-prem.md
-        - name: Configure proxies for on-premises environments
-          href: deployment/onprem-reverseproxy.md
-        - name: Apply updates to an on-premises deployment
-          href: deployment/apply-updates-on-premises.md
-        - name: On-premises diagnostics
-          href: deployment/on-premises-diagnostics.md
-        - name: Redeploy on-premises deployments
-          href: deployment/redeploy-on-prem.md
+          - name: Develop and deploy custom models to on-premises environments
+            href: deployment/develop-deploy-custom-models-on-premises.md
+        - name: Environment maintenance
+          items:
+          - name: Apply updates to an on-premises deployment
+            href: deployment/apply-updates-on-premises.md
+          - name: Certificate rotation
+            href: deployment/certificate-rotation-on-prem.md
+          - name: Client internet connectivity
+            href: user-interface/client-disconnected.md
+          - name: Configure proxies for on-premises environments
+            href: deployment/onprem-reverseproxy.md
+          - name: On-premises diagnostics
+            href: deployment/on-premises-diagnostics.md
+          - name: PowerBI.com integration with on-premises environments
+            href: analytics/entity-store-on-prem.md
+          - name: Reconfigure environments
+            href: lifecycle-services/reconfigure-environment.md
+          - name: Redeploy on-premises deployments
+            href: deployment/redeploy-on-prem.md
+          - name: Remove and reinstall an AOS node
+            href: deployment/onprem-remove-reinstall-AOS-node.md
+          - name: Reuse the same AD FS instance for multiple environments
+            href: deployment/onprem-reuseadfs.md
         - name: Local agent
           items:
           - name: AD FS Office 365 compatibility
@@ -444,16 +530,12 @@
             href: lifecycle-services/pre-post-scripts.md
           - name: Update the local agent
             href: lifecycle-services/update-local-agent.md
-        - name: Reconfigure environments
-          href: lifecycle-services/reconfigure-environment.md
-        - name: Client internet connectivity
-          href: user-interface/client-disconnected.md
-        - name: Troubleshoot on-premises deployments
-          href: deployment/troubleshoot-on-prem.md
-        - name: Scripts for resolving issues in on-premises environments
-          href: deployment/onprem-tsg-implementations.md
-        - name: Certificate rotation
-          href: deployment/certificate-rotation-on-prem.md
+        - name: Troubleshooting
+          items:
+          - name: Troubleshoot on-premises deployments
+            href: deployment/troubleshoot-on-prem.md
+          - name: Scripts for resolving issues in on-premises environments
+            href: deployment/onprem-tsg-implementations.md
       - name: Deploy custom code
         items:
         - name: Create deployable packages of models
@@ -850,6 +932,8 @@
             href: extensibility/extensibility-attributes.md
           - name: Breaking changes
             href: extensibility/breaking-changes.md
+          - name: Compatibility checker tool
+            href: extensibility/compatibility-checker-tool.md
       - name: Performance
         items:
         - name: Take traces using Trace parser
@@ -940,7 +1024,7 @@
           href: lifecycle-services/lcs-works-lcs.md
         - name: LCS for partners
           href: lifecycle-services/getting-started-lcs.md
-        - name: What's new in Lifecycle Services
+        - name: What's new or changed in Lifecycle Services
           href: lifecycle-services/whats-new-lcs.md
         - name: Known issues
           href: lifecycle-services/known-issues.md
@@ -964,26 +1048,38 @@
         href: lifecycle-services/configure-execute-code-upgrade.md
       - name: Create or update methodologies
         href: lifecycle-services/create-methodology.md
-      - name: Business process modeler
-        href: lifecycle-services/bpm-overview.md
-      - name: Business process libraries in Business process modeler
-        href: lifecycle-services/business-process-libraries-business-process-modeler.md
-      - name: Create, edit, and browse Business process modeler libraries
-        href: lifecycle-services/creating-editing-browsing.md
-      - name: Complete tasks in Business process modeler
-        href: lifecycle-services/complete-tasks-bpm.md
-      - name: Work with activity diagrams in BPM libraries
-        href: lifecycle-services/using-activity-diagrams.md
-      - name: Synchronize BPM libraries with Azure DevOps
-        href: lifecycle-services/synchronize-bpm-vsts.md
-      - name: Create user acceptance test libraries using task guides and BPM
-        href: lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
-      - name: Flowcharts in Business process modeler
-        href: lifecycle-services/flowcharts-business-process-modeler.md
-      - name: Upload custom business processes to Business process modeler
-        href: lifecycle-services/upload-business-processes-bpm-task-recorder.md
+      - name: Business process modeler (BPM)
+        items:
+        - name: Business process modeler (BPM) overview
+          href: lifecycle-services/bpm-overview.md
+        - name: Business process libraries in Business process modeler
+          href: lifecycle-services/business-process-libraries-business-process-modeler.md
+        - name: Create, edit, and browse Business process modeler libraries
+          href: lifecycle-services/creating-editing-browsing.md
+        - name: Complete tasks in Business process modeler
+          href: lifecycle-services/complete-tasks-bpm.md
+        - name: Work with activity diagrams in BPM libraries
+          href: lifecycle-services/using-activity-diagrams.md
+        - name: Synchronize BPM libraries with Azure DevOps
+          href: lifecycle-services/synchronize-bpm-vsts.md
+        - name: Create user acceptance test libraries using task guides and BPM
+          href: lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
+        - name: Flowcharts in Business process modeler
+          href: lifecycle-services/flowcharts-business-process-modeler.md
+        - name: Upload custom business processes to Business process modeler
+          href: lifecycle-services/upload-business-processes-bpm-task-recorder.md
+      - name: Service requests
+        items:
+        - name: Cloud operations and servicing
+          href: lifecycle-services/cloud-operations-servicing.md
+        - name: Submit service requests to the Dynamics Service Engineering team
+          href: lifecycle-services/submit-request-dynamics-service-engineering-team.md
+        - name: Planned maintenance window FAQ
+          href: lifecycle-services/planned-maintenance-window-faq.md
       - name: Monitoring and diagnostics
         href: lifecycle-services/monitoring-diagnostics.md
+      - name: Impact analysis report
+        href: lifecycle-services/impact-analysis-report.md
       - name: Restart environment services
         href: lifecycle-services/restart-environment-services.md
       - name: Report a production outage
@@ -1276,14 +1372,8 @@
         href: https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
       - name: Get support for Finance and Operations operated by 21Vianet in China
         href: lifecycle-services/21vianet-support.md
-      - name: Submit requests to the Dynamics Service Engineering team
-        href: lifecycle-services/submit-request-dynamics-service-engineering-team.md
       - name: Set up technical support for Finance and Operations
         href: lifecycle-services/support-experience.md
-      - name: Planned maintenance window FAQ
-        href: lifecycle-services/planned-maintenance-window-faq.md
-      - name: Cloud operations and servicing
-        href: lifecycle-services/cloud-operations-servicing.md
       - name: Manage Finance and Operations support experiences
         href: lifecycle-services/cloud-powered-support-lcs.md
     - name: System administration
@@ -1354,6 +1444,12 @@
           href: sysadmin/create-rules-optimization-advisor.md
       - name: Report a production outage
         href: lifecycle-services/report-production-outage.md
+      - name: Configure and manage database logging
+        href: sysadmin/configure-manage-database-log.md
+      - name: Build OData metadata cache when the AOS starts
+        href: sysadmin/odata-warmup.md
+      - name: Setting Up Azure Key Vault client
+        href: ../../finance/localizations/setting-up-azure-key-vault-client.md
     - name: Upgrades, updates, and hotfixes
       items:
       - name: Upgrades, updates, and hotfixes resources
@@ -1454,7 +1550,7 @@
           href: deployment/apply-updates-on-premises.md
         - name: Redeploy an on-premises deployment
           href: deployment/redeploy-on-prem.md
-        - name: In-place upgrade for on-premises 7.x to 8.1
+        - name: In-place upgrade process for on-premises environments
           href: migration-upgrade/on-prem-upgrade.md
       - name: Hotfixes
         items:

@@ -3,7 +3,7 @@
 
 title: Query cookbook 
 description: This topic provides details on each query under the SQL Insights tab on the Environment Monitoring page in LCS and how they should be used when troubleshooting performance issues. 
-author: manalidongre
+author: meeramahabala
 manager: AnnBe
 ms.date: 10/02/2018
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 267184
 ms.assetid: eb056816-ccf4-43a5-aed3-cf72543353de
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: manado
+ms.author: meeram
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 

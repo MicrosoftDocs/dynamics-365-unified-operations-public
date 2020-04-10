@@ -4,7 +4,7 @@
 title: Validate a production flow and version
 description: This procedure shows how to create a new production flow and a first version for lean manufacturing. 
 author: ChristianRytt
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: LeanProductionFlow   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Validate a production flow and version
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure shows how to create a new production flow and a first version for lean manufacturing. Prerequisites: The production parameters for Lean manufacturing and the units of measure for class time must be defined. You need to define a Value stream and a Production group. Refer to the white papers on Lean manufacturing to familiarize yourself with the concepts of production flows and activities. This procedure refers to the legal entity USMF in demo data. However, assuming that the legal entity is configured for Lean manufacturing, other legal entities can be used.
 

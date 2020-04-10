@@ -4,7 +4,7 @@
 title: Set up quality orders
 description: This procedure shows you how to enable a quality management process where incoming inventory must be inspected immediately after arrival registration. 
 author: perlynne
-manager: AnnBe 
+manager: tfehr 
 ms.date: 07/01/2019
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: InventParameters, InventTestReportSetup, InventTestTable, DefaultDashboard, InventTestVariable, InventTestVariableOutcome, InventItemSampling, InventTestQualityGroup, InventTestItemQualityGroupAdd, SysQueryForm, InventTestItemQualityGroup, InventTestGroup, InventTestAssociationTable   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Set up quality orders
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure shows you how to enable a quality management process where incoming inventory must be inspected immediately after arrival registration. The procedure will typically be carried out by a quality manager. The process includes the creation of a quality group, to define the items that are going to be sampled, and a test group to group the tests that are to be performed on items in the quality group. You can run this guide in the USMF demo data company.
 
@@ -37,7 +37,7 @@ This procedure shows you how to enable a quality management process where incomi
 1. Go to **Navigation pane > Modules > Inventory management > Setup > Inventory and warehouse management parameters**.
 2. Click the **Quality management** tab.
 3. Set the **Use quality management option** to 'Yes'.
-4. Click **Report setup**. In USMF, the report setup for quality management is already defined. If this wasn’t done, you’d add new lines here for the different report types, and select the type of document to be used for each report.  
+4. Click **Report setup**. In USMF, the report setup for quality management is already defined. If this wasn't done, you'd add new lines here for the different report types, and select the type of document to be used for each report.  
 5. Close the page.
 6. Close the page.
 
@@ -74,7 +74,7 @@ This procedure shows you how to enable a quality management process where incomi
 2. Click **New**.
 3. In the **Item sampling** field, type a value.
 4. In the **Description** field, type a value.
-5. In the **Value** field, enter a number. This value relates to the Quantity specification that’s selected in the adjacent field.  
+5. In the **Value** field, enter a number. This value relates to the Quantity specification that's selected in the adjacent field.  
 6. Expand or collapse the **Process** section.
 7. Select or clear the **Full blocking** check box. If you select this option, the whole lot or order line quantity is blocked if a test is failed. If you don't select it, only the items in the quality order are blocked.  
 8. Click **Save**.
@@ -98,7 +98,7 @@ This procedure shows you how to enable a quality management process where incomi
 ## Create a test group
 1. Go to **Inventory management > Setup > Quality control > Test groups**.
 2. Click **New**.
-3. In the **Test group** field, type a value. Give the **Test group** a name that will help you remember what kind of tests are being run, and which quality group it should be associated with. For example, it it’s to be used with a quality group that selects items starting with “T”, you could call it “T-item tests”.  
+3. In the **Test group** field, type a value. Give the **Test group** a name that will help you remember what kind of tests are being run, and which quality group it should be associated with. For example, it it's to be used with a quality group that selects items starting with "T", you could call it "T-item tests".  
 4. In the **Description** field, type a value.
 5. In the **Item sampling** field, select the item sampling line that you created before.
 6. In the list, find and select the desired record.
@@ -118,14 +118,14 @@ This procedure shows you how to enable a quality management process where incomi
 1. Go to **Inventory management > Setup > Quality control > Quality associations**.
 2. Click **New**.
 3. In the **Reference type** field, select an option.
-4. In the **Item code** field, select 'Group'. In this example, we’ll select "Group" and use the quality group we created before. You could also set this to "Table" to specify the items manually, or select "All" to add all items to the quality order.  
+4. In the **Item code** field, select 'Group'. In this example, we'll select "Group" and use the quality group we created before. You could also set this to "Table" to specify the items manually, or select "All" to add all items to the quality order.  
 5. In the **Item** field, select the quality group that you created before. The options available in the Item field depend on what you set in the Item code field.  
 6. In the list, find and select the desired record.
 7. Expand or collapse the Process section.
 8. In the **Event type** field, select an option. This is the event that triggers the test. The options available here depend on which process you selected in the Reference type field.  
 9. In the **Execution** field, select an option.
 10. Expand or collapse the **Quality order process** section.
-11. In the **Event blocking** field, click the drop-down button to open the lookup. This field shows the list of processes that it’s possible to block if the quality order is still open. The options depend on what you selected in the Event type field.  
+11. In the **Event blocking** field, click the drop-down button to open the lookup. This field shows the list of processes that it's possible to block if the quality order is still open. The options depend on what you selected in the Event type field.  
 12. In the list, click the link in the selected row. This will be depending on the previous selected values. Select if the following processes must be blocked while having open quality orders linked to a source document line.  
 13. Expand or collapse the **Specifications** section.
 14. In the **Test group** field, select the test group that you created before.

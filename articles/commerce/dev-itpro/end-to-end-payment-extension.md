@@ -109,25 +109,30 @@ namespace Contoso.Commerce.HardwareStation.PaymentSample
             {
                 return new[]
                 {
-                    typeof(OpenPaymentTerminalDeviceRequest),
-                    typeof(BeginTransactionPaymentTerminalDeviceRequest),
-                    typeof(LockPaymentTerminalDeviceRequest),
-                    typeof(UpdateLineItemsPaymentTerminalDeviceRequest),
-                    typeof(CancelOperationPaymentTerminalDeviceRequest),
-                    typeof(AuthorizePaymentTerminalDeviceRequest),
-                    typeof(CapturePaymentTerminalDeviceRequest),
-                    typeof(VoidPaymentTerminalDeviceRequest),
-                    typeof(RefundPaymentTerminalDeviceRequest),
-                    typeof(FetchTokenPaymentTerminalDeviceRequest),
-                    typeof(EndTransactionPaymentTerminalDeviceRequest),
-                    typeof(ClosePaymentTerminalDeviceRequest),
-                    typeof(ActivateGiftCardPaymentTerminalRequest),
-                    typeof(AddBalanceToGiftCardPaymentTerminalRequest),
-                    typeof(GetGiftCardBalancePaymentTerminalRequest),
-                    typeof(GetPrivateTenderPaymentTerminalDeviceRequest)
+                        typeof(LockPaymentTerminalDeviceRequest),
+                        typeof(OpenPaymentTerminalDeviceRequest),
+                        typeof(ClosePaymentTerminalDeviceRequest),
+                        typeof(BeginTransactionPaymentTerminalDeviceRequest),
+                        typeof(EndTransactionPaymentTerminalDeviceRequest),
+                        typeof(UpdateLineItemsPaymentTerminalDeviceRequest),
+                        typeof(AuthorizePaymentTerminalDeviceRequest),
+                        typeof(CapturePaymentTerminalDeviceRequest),
+                        typeof(VoidPaymentTerminalDeviceRequest),
+                        typeof(RefundPaymentTerminalDeviceRequest),
+                        typeof(FetchTokenPaymentTerminalDeviceRequest),
+                        typeof(ExecuteTaskPaymentTerminalDeviceRequest),
+                        typeof(ActivateGiftCardPaymentTerminalRequest),
+                        typeof(AddBalanceToGiftCardPaymentTerminalRequest),
+                        typeof(GetGiftCardBalancePaymentTerminalRequest),
+                        typeof(GetPrivateTenderPaymentTerminalDeviceRequest),
+                        typeof(CancelOperationPaymentTerminalDeviceRequest),
+                        typeof(GetTransactionReferencePaymentTerminalDeviceRequest),
+                        typeof(GetTransactionByTransactionReferencePaymentTerminalDeviceRequest),
+                        typeof(CashoutGiftCardPaymentTerminalRequest)
                 };
             }
         }
+
 
         /// <summary>
         /// Executes the payment device simulator operation based on the incoming request type.
@@ -191,6 +196,11 @@ The following table describes all supported requests types that a payment connec
 | GetGiftCardBalancePaymentTerminalRequest | This request is called when the balance on the gift card is being retrieved. |
 | GetPrivateTenderPaymentTerminalDeviceRequest | This request is called when gift card numbers are retrieved from the payment terminal for gift card flows (for example, Issue gift card, Pay by gift card, or Add to gift card). |
 | ExecuteTaskPaymentTerminalDeviceRequest | This extension request can be invoked from the POS through customizations. It is used to enable additional payment-related flows. |
+| GetTransactionReferencePaymentTerminalDeviceRequest | This request is called to check the correlation ID. It is used for duplicate payment protection. |
+| GetTransactionByTransactionReferencePaymentTerminalDeviceRequest | This request is used to obtain the previous transaction by correlation ID. |
+| CashoutGiftCardPaymentTerminalRequest | This request is called when a the cash out gift card operation is executed from the POS. |
+
+
 
 ##### OpenPaymentTerminalDeviceRequest
 ###### Signature
@@ -535,6 +545,56 @@ public ExecuteTaskPaymentTerminalDeviceRequest(string token, string task, Extens
 | token | The unique token value that is generated when the payment terminal is initially locked for the transaction. |
 | task | The unique identifier for the task that is being run. |
 | extensionTransactionProperties | The set of extension configuration properties in the form of name/value pairs. |
+
+##### GetTransactionReferencePaymentTerminalDeviceRequest
+###### Signature
+``` csharp
+ public GetTransactionReferencePaymentTerminalDeviceRequest(string lockToken, string posTerminalId, string eftTerminalId)
+```
+
+###### Variables
+
+| Variable | Description |
+|---|---|
+| locktoken | Gets the unique lock token that was generated when the payment terminal was initially locked for the transaction. |
+| posTerminalId | Gets the POS terminal ID associated with the lock token. |
+| extensionTransactionProperties | Gets the EFT terminal ID associated witht the transaction and lock token. |
+
+##### GetTransactionByTransactionReferencePaymentTerminalDeviceRequest
+###### Signature
+``` csharp
+ public GetTransactionByTransactionReferencePaymentTerminalDeviceRequest(string lockToken, Retail.PaymentSDK.Portable.PaymentTransactionReferenceData transactionReferenceData)
+```
+
+###### Variables
+
+| Variable | Description |
+|---|---|
+| locktoken | Gets the unique lock token that was generated when the payment terminal was initially locked for the transaction. |
+| Retail.PaymentSDK.Portable.PaymentTransactionReferenceData TransactionReferenceData | Gets reference data for the for payment transactions in case the correlation ID is out of sync. |
+
+
+##### CashoutGiftCardPaymentTerminalRequest
+###### Signature
+``` csharp
+ public CashoutGiftCardPaymentTerminalRequest(
+            string paymentConnectorName,
+            decimal amount,
+            string currencyCode,
+            TenderInfo tenderInfo,
+            ExtensionTransaction extensionTransactionProperties)
+```
+
+###### Variables
+
+| Variable | Description |
+|---|---|
+| paymentConnectorName | The name of the payment connector that is used as part of the payment flow. This variable is used if there is an integration with payment flows that use the IPaymentProcessor interface. |
+| amount | The amount gift card cash out request. |
+| currencyCode | The currency for the gift card cash out request. |
+| tenderinfo | The card information that is sent from the POS that is retrieved from an external source (if an external source is present). |
+| extensionTransactionProperties | The set of extension configuration properties in the form of name/value pairs. |
+
 
 #### State in the payment connector
 The payment connector can be hosted as part of the dllhost.exe process when it's hosted through the in-process Hardware Station inside the POS. Alternatively, the payment connector can be hosted as a w3wp.exe process when it's hosted in the Hardware Station that is based on Microsoft Internet Information Services (IIS). In some circumstances, both processes can be terminated or stop responding between or during payment flows. Therefore, we recommend that payment connectors not have state dependencies, and that they be able to recover if they are terminated at any point during the payment flow–related requests that are described earlier.

@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create a tax assessment - IPI tax (Brazil)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 You can create a tax assessment for the IPI tax for a given booking period. The tax assessment considers the IPI tax amount to recover and the IPI tax amount to pay from the fiscal documents. For the amount that is due after the tax assessment, you can create the tax payment. This recording uses the BRMF demo company.
 

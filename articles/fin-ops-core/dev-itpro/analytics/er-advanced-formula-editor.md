@@ -34,8 +34,6 @@ ms.dyn365.ops.version: AX 10.0.9
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
-
 In addition to the [Electronic reporting](general-electronic-reporting.md) [formula editor](general-electronic-reporting-formula-designer.md), you can use the advanced Electronic reporting formula editor to improve the experience of configuring Electronic reporting (ER) expressions. The advanced editor is browser-based and powered by the [Monaco editor](https://microsoft.github.io/monaco-editor). The most commonly used advanced editor features are described in this topic:
 
 - [Code autoformatting](#Autoformatting)

@@ -2,10 +2,10 @@
 # required metadata
 
 title: Provision Human Resources
-description: 
+description: This article walks you through the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 02/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -58,18 +58,15 @@ After you've created an LCS project, you can provision Human Resources into an e
 
 1. In your LCS project, select the **Human Resources App Management** tile.
 
-2. Indicate whether this is a Sandbox or Production instance of Human Resource. Early preview features may be available in Sandbox instances to allow for early feedback and testing.
+2. Indicate whether this is a Sandbox or Production instance of Human Resources. Early preview features may be available in Sandbox instances to allow for early feedback and testing.
    
     > [!NOTE]
-    > The Talent instance type cannot be changed once set. Verify the correct instance type is selected before continuing.</br></br>
+    > The Human Resources instance type cannot be changed once set. Verify the correct instance type is selected before continuing.</br></br>
     > The Human Resources instance type is separate from the instance type of the Microsoft Power Apps environment, which you set in the Power Apps Admin center.
     
 3. Select the **Include Demo Data** option if you want your environment to include the same demo data set used in the Human Resources Test Drive experience. This is beneficial for long-term demo or training environments, and should never be used for production environments.  Note that you must choose this option upon initial deployment. You cannot update an existing deployment later.
 
 4. Human Resources is always provisioned into a Microsoft Power Apps environment to enable Power Apps integration and extensibility. Read the “Selecting a Power Apps environment” section of this article before you continue. If you don't already have a Power Apps environment, select Manage environments in LCS or navigate to the Power Apps Admin center. Then follow the steps to [Create a Power Apps environment](https://docs.microsoft.com/powerapps/administrator/create-environment).
-
-    > [!NOTE]
-    > To view existing environments or create new environments, the tenant admin who provisions Human Resources must be assigned to the Power Apps P2 license. If your organization doesn't have a Power Apps P2 license, you can get one from your CSP or from the [Power Apps pricing page](https://powerapps.microsoft.com/pricing/).
 
 5. Select the environment to provision Human Resources into.
 
@@ -82,7 +79,7 @@ After you've created an LCS project, you can provision Human Resources into an e
     > [!NOTE]
     > If you haven't yet signed off on the final requirements, you can deploy a test instance of Human Resources in the project. You can then use this instance to test your solution until you sign off. If you use your new environment for testing, you must repeat this procedure to create a production environment.
 
-    > Because only two LCS environments are allowed as part of the Human Resources subscription, you might consider leveraging a free 60-day [Human Resources trial environment](https://dynamics.microsoft.com/talent/overview/). Although a trial environment is owned by the user who requested it, other users can be invited through the system administration experience for Human Resources. Trial environments contain fictitious data that can be used to explore the program in a safe manner. They aren't intended to be used as production environments. Note that when a trial environment expires after 60 days, all the data that's in it is deleted and can't be recovered. You can sign up for a new trial environment after the existing environment expires.
+    > You might consider leveraging a free 60-day [Human Resources trial environment](https://dynamics.microsoft.com/talent/overview/). Although a trial environment is owned by the user who requested it, other users can be invited through the system administration experience for Human Resources. Trial environments contain fictitious data that can be used to explore the program in a safe manner. They aren't intended to be used as production environments. Note that when a trial environment expires after 60 days, all the data that's in it is deleted and can't be recovered. You can sign up for a new trial environment after the existing environment expires.
 
 ## Select a Power Apps environment
 
@@ -105,7 +102,10 @@ Use the following guidance when determining which Power Apps environment to depl
     - **Trial environments** - These environments are created with an expiration date and will expire after that time, causing your environment and any Human Resources instances contained within to be removed automatically.
    
     - **Unsupported regions** - Currently Human Resources is only supported in the following regions: United States, Europe, United Kingdom, Australia, Canada and Asia.
-  
+
+    > [!NOTE]
+    > The Human Resources environment is provisioned in the same region in which the Power Apps environment is provisioned. Migrating a Human Resources environment to another region is not supported.
+
 6. After you have determined the correct environment to use, you can continue with the provisioning process. 
  
 ## Grant access to the environment

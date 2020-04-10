@@ -37,7 +37,23 @@ This topic contains information about how to troubleshoot the Regression suite a
 
 ## Playback logs
 
-To troubleshoot issues with the tool during Playback operation, open the developer error log located at **C:\Users\$YourUserName\AppData\Roaming\regressionTool\playback\[TestName]Log.txt**. Analyze the error message to determine the possible cause of a failure.
+To troubleshoot issues that happen during playback of a test case, open the developer error log located at **[RSAT working directory]\\[test case ID]\\playback\\[TestName]Log.txt**. The RSAT working directory is the directory specified in the RSAT settings dialog.
+Analyze the error message to determine the possible cause of a failure.
+
+[!NOTE] For RSAT versions prior to 1.210, the log is located at **C:\\Users\\[YourUserName]\\AppData\\Roaming\\regressionTool\\playback\\[TestName]Log.txt**.
+
+## Generator logs
+
+To troubleshoot errors when generating test execution and parameter files, enable generator logs.
+
+Open the **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** file under the RSAT installation folder (for example, **C:\\Program Files (x86)\\Regression Suite Automation Tool**), and change the value in the following element from **false** to **true**.
+
+    ```xml
+    <add key="LogGeneration" value="true" />
+    ```
+After test execution files are generated, you can find the log file under **[RSAT working directory]\\[test case ID]\\generatorLogs**
+
+[!NOTE] For RSAT versions prior to 1.210, the logs are generated under **C:\\Users\\[Username]\\AppData\\Roaming\\regressionTool\\generatorLogs**.
 
 ## Authentication certificate and installation
 
@@ -51,7 +67,7 @@ To troubleshoot issues with the tool during Playback operation, open the develop
 
 ## Screen resolution
 
-Your desktop resolution should be set to 100% to run the tests successfully. To change the settings, use Windows **Display settings > Scale and layout**, as shown in the following image:
+If you have selected Internet Explorer as your browser, your desktop resolution should be set to 100% to run the tests successfully. To change the settings, use Windows **Display settings > Scale and layout**, as shown in the following image:
 
 ![Setting screen resolution](media/screen-resolution.png)
  

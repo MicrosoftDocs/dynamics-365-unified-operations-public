@@ -16,7 +16,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang:
 ms.reviewer: sericks
-ms.search.scope: AX 2012, Operations	
+ms.search.scope: AX 2012, Operations
 # ms.tgt_pltfrm:
 ms.custom: 13301
 ms.assetid:

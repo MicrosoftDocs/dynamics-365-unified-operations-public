@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Generate Japan consumption tax report
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure walks you through generating the Japan consumption tax report. This procedure was created using the demo data company JPMF.
 

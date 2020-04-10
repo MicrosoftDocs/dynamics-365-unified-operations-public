@@ -2,7 +2,7 @@
 # required metadata
 
 title: Overview
-description: 
+description: This Developer Guide provides an API and custom fields reference. It also provides information on integrating with other apps.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020

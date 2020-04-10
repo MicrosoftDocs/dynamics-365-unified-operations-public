@@ -1,10 +1,10 @@
 ---
 title: Implementation Project Manager Learning Catalog
 description: Find all the training options for Finance and Operations.
-author: margoc
+author: loreleishannonmsft
 ms.topic: article
-ms.date: 01/08/2020
-ms.author: margoc
+ms.date: 02/19/2020
+ms.author: v-lshann
 ---
 
 # Implementation Project Manager Learning Catalog

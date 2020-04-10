@@ -28,9 +28,9 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Hiring candidate through recruiting
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-This procedure enables a recruiter to hire an applicant who submitted an application through a specific recruitment project. When you hire an applicant through a recruiting project, a new worker record will be created and the applicant’s record will have a status of Employed. The demo data company used to create this procedure is USMF. To complete this procedure, navigate to Human resources > Recruitment > Applications >Applications 
+This procedure enables a recruiter to hire an applicant who submitted an application through a specific recruitment project. When you hire an applicant through a recruiting project, a new worker record will be created and the applicant's record will have a status of Employed. The demo data company used to create this procedure is USMF. To complete this procedure, navigate to Human resources > Recruitment > Applications >Applications 
 
 1. Select an Application for an External applicant
 2. In the list, click the link in the selected row.

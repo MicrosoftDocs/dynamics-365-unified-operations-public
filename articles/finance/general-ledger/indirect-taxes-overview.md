@@ -53,7 +53,7 @@ Every sales tax code must be linked to a sales tax settlement period. Sales tax 
 
 Every sales tax code must also be linked to a ledger posting group. A ledger posting group specifies the main accounts that amounts for the sales tax codes will be posted to. 
 
-Optional sales tax reporting codes can also be defined. These can be assigned on sales tax codes for the various amount types that are calculated for the sales tax code. The **Sales tax payment by code** report shows totals per pales tax reporting code for a given sales tax settlement period and interval. 
+Optional sales tax reporting codes can also be defined. These can be assigned on sales tax codes for the various amount types that are calculated for the sales tax code. The **Sales tax payment by code** report shows totals per sales tax reporting code for a given sales tax settlement period and interval. 
 
 Every transaction that sales tax needs to be calculated and posted for must have a sales tax group and an item sales tax group. Sales tax groups are related to the party (for example, customer or vendor) of the transaction, whereas item sales tax groups are related to the resource (for example, item or procurement category) of the transaction. Tax groups contain a list of tax codes. The tax codes that are present in both the sales tax group and item sales tax group for a transaction are the tax code that apply to that transaction. 
 

@@ -4,7 +4,7 @@
 title: Apply filters to a plan
 description: This topic explains how to use filters on a plan when the Planning Optimization functionality is used. 
 author: ChristianRytt
-manager: AnnBe
+manager: tfehr
 ms.date: 01/08/2020
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ ms.search.form: ReqCreatePlanWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -29,11 +29,10 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
 
 ---
+# Apply filters to a plan
 
 [!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
-
-# Apply filters to a plan
 
 When the Planning Optimization functionality is used, you can apply a filter to a plan. The **Plan filter** will always be applied during a master planning run. A **Plan filter** is useful when you want to limit a plan to a specific group of items and make sure that no other items are included as part of the resulting master planning.
 

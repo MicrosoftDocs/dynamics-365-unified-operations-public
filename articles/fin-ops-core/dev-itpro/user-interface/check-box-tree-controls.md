@@ -91,77 +91,84 @@ The following example is from SysConfiguration.
 
 None of this code is required for the current version.
 
-    int mouseDown(int x, int y, int button, boolean ctrl, boolean shift)
+```xpp
+int mouseDown(int x, int y, int button, boolean ctrl, boolean shift)
+{
+    int idx,f;
+    FormTreeItem        parentNode, node;
+    int                 parentMode;
+    boolean             enabled;
+    #FormTreeControl;
+    [idx,f] = this.hitTest(x,y);
+    parentNode  = this.getItem(this.getParent(idx));
+    node        = this.getItem(idx);
+    if (node)
     {
-        int idx,f;
-        FormTreeItem        parentNode, node;
-        int                 parentMode;
-        boolean             enabled;
-        #FormTreeControl;
-        [idx,f] = this.hitTest(x,y);
-        parentNode  = this.getItem(this.getParent(idx));
-        node        = this.getItem(idx);
-        if (node)
+        if(parentNode)
         {
-            if(parentNode)
-            {
-                if (element.enabled(parentNode.data()))
-                parentMode = true;
-            }
-            else
-                parentMode  = true;
-            if ((f & #FTCHT_ONITEMICON) && parentMode)
-            {
-                if (!node.overlayImage())
-                {
-                    enabled = (element.enabled(this.getItem(idx).data()) ? false : true);
-                    element.enabled(this.getItem(idx).data(), enabled);
-                    element.drawTree();
-                }
-                return 1;
-            }
+            if (element.enabled(parentNode.data()))
+            parentMode = true;
         }
-        return super(x, y, button, ctrl, shift);
+        else
+            parentMode  = true;
+        if ((f & #FTCHT_ONITEMICON) && parentMode)
+        {
+            if (!node.overlayImage())
+            {
+                enabled = (element.enabled(this.getItem(idx).data()) ? false : true);
+                element.enabled(this.getItem(idx).data(), enabled);
+                element.drawTree();
+            }
+            return 1;
+        }
     }
+    return super(x, y, button, ctrl, shift);
+}
+```
 
 In the current version, you still set the selected state for scenarios where the user is presented with preselected nodes. Additionally, the developer can still set the state explicitly when the FormTreeItem is created. However, instead of specifying the current image, the developer now sets the **stateChecked** property on the FormTreeItem. If developers must know when the state of a check box changes, they can override the **checkedStateChanged()** method.
 
 ## Basic check box use for tree controls in the current version
 Make sure that the **Check Box** property on the modeled tree control is set to **Yes**. To explicitly set the state on a node, use the following code.
 
-    formTreeItem.stateChecked(FormTreeCheckedState::Checked);
-    formTreeControl.setItem(formTreeItem);
+```xpp
+formTreeItem.stateChecked(FormTreeCheckedState::Checked);
+formTreeControl.setItem(formTreeItem);
+```
 
 To interrogate a node for its current state, use the following code.
 
-    FormTreeItem formTreeItem = formTreeControl.getItem(formTreeControl.getSelection());
-    FormTreeCheckedState currentState;
-    if (formTreeItem != null)
+```xpp
+FormTreeItem formTreeItem = formTreeControl.getItem(formTreeControl.getSelection());
+FormTreeCheckedState currentState;
+if (formTreeItem != null)
+{
+    currentState = formTreeItem.stateChecked();
+    switch (currentState)
     {
-        currentState = formTreeItem.stateChecked();
-        switch (currentState)
-        {
-            case FormTreeCheckedState::Unchecked:
-                /* unchecked */
-                break;
-            case FormTreeCheckedState::Checked:
-                /*checked */
-                break;
-            case FormTreeCheckedState::Partial:
-                /* parent has children checked */
-                break;
-            default:
-                /* shouldn’t get here */
-                break;
-        }
+        case FormTreeCheckedState::Unchecked:
+            /* unchecked */
+            break;
+        case FormTreeCheckedState::Checked:
+            /*checked */
+            break;
+        case FormTreeCheckedState::Partial:
+            /* parent has children checked */
+            break;
+        default:
+            /* shouldn’t get here */
+            break;
     }
+}
+```
 
 To react to or track the checked state of a node (**idx** is the node index), use the following code.
 
-    public void checkedStateChanged(int _Idx, FormTreeCheckedState _newState)
-    {
-        super(_Idx, _newState);
-    }
-
+```xpp
+public void checkedStateChanged(int _Idx, FormTreeCheckedState _newState)
+{
+    super(_Idx, _newState);
+}
+```
 
 

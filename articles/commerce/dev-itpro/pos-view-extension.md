@@ -5,7 +5,7 @@ title: Extend POS views to add custom columns and app bar buttons
 description: This topic explains how you can extend existing POS views such as the Customer Add/Edit screen.
 author: mugunthanm
 manager: AnnBe
-ms.date: 01/17/2020
+ms.date: 03/24/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -51,7 +51,7 @@ The following table shows the POS views that currently support extensions. It al
 > The upcoming releases and hotfix will add support for more extension points in other views.
 
 
-| POS view                        | Custom controls are supported | Custom columns are supported | Custom app bar buttons are supported |
+| POS view (Release)              | Custom controls are supported | Custom columns are supported | Custom app bar buttons are supported |
 |---------------------------------|-------------------------------|------------------------------|--------------------------------------|
 | Cart view (Screen layout based) | Yes                           | Yes                          | No                                   |
 | CustomerAddEditView             | Yes                           | No                           | Yes                                  |
@@ -70,7 +70,6 @@ The following table shows the POS views that currently support extensions. It al
 | SearchStockCountView            | No                            | Yes                          | No                                   |
 | StockCountDetailsView           | No                            | Yes                          | No                                   |
 | ResumeCartView                  | No                            | Yes                          | Yes                                    |
-| OrderFulfillmentView            | No                            | No                           | Yes                                   |
 | InventoryLookupMatrixView       | No                            | No                           | Yes                                   |
 | SuspendTransactionView          | No                            | Yes                          | No                               |   
 | ManageShiftView                 | No                            | No                           | Yes                               |  
@@ -78,10 +77,12 @@ The following table shows the POS views that currently support extensions. It al
 | SearchReceiptsView              | No                            | No                           | Yes                               |
 | StockCountDetailsView           | No                            | No                           | Yes                               |
 | TransferOrderDetailsView        | No                            | No                           | Yes                               |
-| FulfillmentLineView             | No                            | Yes                          | No                               |
+| FulfillmentLineView             | No                            | Yes                          | Yes                               |
 | ReturnTransactionView           | No                            | Yes                          | Yes                               |
 | PickingAndReceivingDetailsView  | No                            | Yes                          | Yes                    |
 | PickingAndReceivingDetailsView (Advanced warehouse)  | No                            | Yes                          | Yes           |
+| SalesInvoiceDetailsView (10.0.11) | No                            | No                          | Yes           |
+| SalesInvoicesView (10.0.11) | No                            | Yes                          | No           |
 
 
 

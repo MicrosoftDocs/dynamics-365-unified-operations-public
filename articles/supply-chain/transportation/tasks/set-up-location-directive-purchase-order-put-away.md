@@ -4,7 +4,7 @@
 title: Set up a location directive for purchase order put-away
 description: This topic explains how to set up a simple location directive. 
 author: ShylaThompson
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/08/2019
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,9 +28,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Set up a location directive for purchase order put-away
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-This topic explains how to set up a simple location directive. The example that’s shown creates a location directive to be used to determine where to put items that have been received for a purchase order. You can play this task guide with the data mentioned using demo data company USMF. Pre-conditions: You need to create a disposition code. In this procedure we use a disposition code called Relabel. If you’re creating a location directive in your own data, you need to have set up advanced warehouse management for your warehouse and items. This procedure is intended for the warehouse manager.
+This topic explains how to set up a simple location directive. The example that's shown creates a location directive to be used to determine where to put items that have been received for a purchase order. You can play this task guide with the data mentioned using demo data company USMF. Pre-conditions: You need to create a disposition code. In this procedure we use a disposition code called Relabel. If you're creating a location directive in your own data, you need to have set up advanced warehouse management for your warehouse and items. This procedure is intended for the warehouse manager.
 
 1. In the navigation pane, go to **Modules > Warehouse management > Setup > Location directives**.
 2. In the **Work order type** field, select **Purchase orders**.
@@ -56,7 +56,7 @@ This topic explains how to set up a simple location directive. The example that�
 4. In the **Unit** field, type a value. The unit the From quantity and To quantity is expressed in. If you leave this field blank the inventory unit from the item is used.  
 5. In the **Locate quantity** field, select an option.
     - None, or license plate quantity: The quantity registered on each license plate.  
-    - Unitized quantity: The entire quantity that’s been registered.  
+    - Unitized quantity: The entire quantity that's been registered.  
     - Remaining quantity: The quantity that is yet to be registered from the purchase order line.  
     - Expected quantity: The total quantity that is specified on the purchase order line.  
 6. Check or uncheck the **Restrict by unit** checkbox. If you select this option, and specify the unit on the **Restrict by unit** page, only items with that unit of measurement can be put into the location. For example, if the unit of measurement is PL (pallets), only items in pallets can be put into the specified location.  
@@ -72,19 +72,19 @@ This topic explains how to set up a simple location directive. The example that�
 1. Select **New**. This is the sequence in which the location directive action lines are processed for the selected work type. You can also modify the sequence, if needed.  
 2. In the **Name** field, type a value. This is the unique identifier for this directive action.  
 3. In the **Fixed location usage** field, select an option.
-    - Fixed and non-fixed locations: All non-fixed locations are valid as well as the product’s own fixed location, within the range specified in the query.  
+    - Fixed and non-fixed locations: All non-fixed locations are valid as well as the product's own fixed location, within the range specified in the query.  
     - Only fixed location for the product: Fixed locations for the product are valid, and all product variants share the same set of fixed locations.  
     - Only fixed location for the product variants: Only fixed locations specified for each product variant are valid.  
 4. In the **Strategy** field, select an option. Work orders of type Purchase order support the following strategies: 
-    - None: the item is placed at the first location that’s found.  
+    - None: the item is placed at the first location that's found.  
     - Consolidate: The item is placed in a location where similar items are already available.  
-    - Empty location with no incoming work: the item is placed in the first empty location that’s found. A location is considered to be empty if it has no physical inventory and no expected incoming work.  
+    - Empty location with no incoming work: the item is placed in the first empty location that's found. A location is considered to be empty if it has no physical inventory and no expected incoming work.  
 5. Select **Save**.
 
 ## Edit the query for directive action line
 1. Select **Edit query**.
 2. Select **Add**.
-3. In the **Field** field, type `location profile ID`. In this example, we’ll restrict the possible locations using a location profile ID.  
+3. In the **Field** field, type `location profile ID`. In this example, we'll restrict the possible locations using a location profile ID.  
 4. In the **Criteria** field, type a value.
 5. Select **OK**. You can continue to add directive lines and directive actions until you have covered all the possible scenarios in your warehouse.  
 

@@ -4,7 +4,7 @@
 title: Set up attribute-based pricing for configurable products
 description: This topic explains how to set up attribute-based pricing. 
 author: ShylaThompson
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/20/2019
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCPriceModelList, PCPriceModel, PCConstraintEditor   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Set up attribute-based pricing for configurable products
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic explains how to set up attribute-based pricing. As a prerequisite, you must have a product configuration model that has one or more components and attributes. This example uses the High End Speaker product model in the USMF demo data company. Typically, a product manager uses this procedure.
 
@@ -36,7 +36,7 @@ This topic explains how to set up attribute-based pricing. As a prerequisite, yo
 ## Create a new price model
 1. Select **Product variant model definition** on the home page.
 2. Select **Product configuration models** in the **links** section.
-3. In the list, select the **High End Speaker** line, but don’t select the link for the name.
+3. In the list, select the **High End Speaker** line, but don't select the link for the name.
 4. On the Action Pane, select **Model**.
 5. Select **Price models**.
 6. Select **New**.

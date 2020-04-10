@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Generate documents that have application data
-description: To complete the steps in this procedure, you must first complete the procedure, “ER Generate documents with application data update (Part 4 - Modify format)”. 
+description: To complete the steps in this procedure, you must first complete the procedure, "ER Generate documents with application data update (Part 4 - Modify format)". 
 author: NickSelin
 manager: AnnBe 
 ms.date: 06/19/2017
@@ -28,9 +28,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Generate documents that have application data
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-To complete the steps in this procedure, you must first complete the procedure, “ER Generate documents with application data update (Part 4: Modify format)”.
+To complete the steps in this procedure, you must first complete the procedure, "ER Generate documents with application data update (Part 4: Modify format)".
 
 
 
@@ -47,10 +47,10 @@ This procedure is created for users with the assigned role of system administrat
 
     Archiving details of Intrastat reporting process, we need to identify records of each archive we created. A special number sequence must be configured for that.  
 
-3. Select the ‘Intrastat archive ID’ reference.
+3. Select the 'Intrastat archive ID' reference.
 4. In the Number sequence code field, type a value.
 
-    In the ‘Number sequence code’ field, enter or select the value ‘Fore_2’.  
+    In the 'Number sequence code' field, enter or select the value 'Fore_2'.  
 
 5. ResolveChanges the Number sequence code.
 6. Click Save.
@@ -64,7 +64,7 @@ This procedure is created for users with the assigned role of system administrat
 5. In the Enter file name field, type 'intrastat2.xml'.
 6. Click OK.
 
-## Review ER format execution’s results
+## Review ER format execution's results
 Review the generated XML file.  
 1. Close the page.
 2. Go to Tax > Declarations > Foreign trade > Intrastat.

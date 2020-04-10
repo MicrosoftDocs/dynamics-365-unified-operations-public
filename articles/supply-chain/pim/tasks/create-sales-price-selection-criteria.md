@@ -4,7 +4,7 @@
 title: Create sales price selection criteria
 description: This procedure shows how to create a sales price selection criterion for attribute-based sales price models. 
 author: ShylaThompson
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCPriceModelSelectionCriteria, SysQueryForm, SysQueryTableLookUp, SysQueryFieldLookUp   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create sales price selection criteria
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure shows how to create a sales price selection criterion for attribute-based sales price models. This procedure requires that at least one sales price model be available. This example uses the price model for the Speaker solution sales price model in the USMF demo data company. Typically, a product manager uses this procedure.
 
@@ -36,11 +36,11 @@ This procedure shows how to create a sales price selection criterion for attribu
 ## Add a new criterion for an existing sales price model
 1. Click Product variant model definition.
 2. Click Product configuration models.
-3. In the list, select the row for the Speaker solution product model, but don’t click the link for the model name.
+3. In the list, select the row for the Speaker solution product model, but don't click the link for the model name.
 4. On the Action Pane, click Model.
 5. Click Price model criteria.
 6. Click New.
-7. In the Name field, type ‘Customer group 10’.
+7. In the Name field, type 'Customer group 10'.
     * The name of the price model criterion is used to help identify the underlying selection criteria.  
 8. In the Price model field, enter or select a value.
 9. In the Order type field, select Sales order.

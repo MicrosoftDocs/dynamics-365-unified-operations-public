@@ -2,10 +2,10 @@
 # required metadata
 
 title: Configure waiting periods
-description: 
+description: In Microsoft Dynamics 365 Human Resources, waiting days establish a milestone to use for benefit plans. 
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Human Resources
 
 # Configure waiting periods
 
-[!include [banner](includes/preview-feature.md)]
-
 In Microsoft Dynamics 365 Human Resources, waiting days establish a milestone to use for benefit plans. For example, three months from hire date, the first of each month, or six months.   
 
 1. In the **Benefits management** workspace, under **Setup**, select **Waiting periods**.
@@ -44,11 +42,11 @@ In Microsoft Dynamics 365 Human Resources, waiting days establish a milestone to
 
    | Field | Description |
    | --- | --- |
-   | Waiting code | A unique identifier for the waiting period. |
-   | Description | A description of the waiting period. |
-   | Waiting method | Select the appropriate waiting method from the drop down list of values. Options are Net, Current month, Current quarter, Current year, and Current week. |
-   | Months | Enter the number of months to add to the waiting method to calculate the waiting date. |
-   | Days | Enter the number of days to add to the waiting method to calculate the waiting date. |
-   | Waiting day | Select the waiting day to use to calculate the waiting date. |
+   | **Waiting code** | A unique identifier for the waiting period. |
+   | **Description** | A description of the waiting period. |
+   | **Waiting method** | Select the appropriate waiting method from the drop-down list of values. Options are Net, Current month, Current quarter, Current year, and Current week. |
+   | **Months** | Enter the number of months to add to the waiting method to calculate the waiting date. |
+   | **Days** | Enter the number of days to add to the waiting method to calculate the waiting date. |
+   | **Waiting day** | Select the waiting day to use to calculate the waiting date. |
 
 4. Select **Save**.

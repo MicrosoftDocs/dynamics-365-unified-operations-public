@@ -171,10 +171,10 @@ The Dynamics 365 Payment Connector for Adyen takes advantage of the device-agnos
 | Diners | Standard | ✔ | ✔ | ✔ |
 | Dineromail | Standard | ✔ | ✔ | ✔ |
 | JCB | Standard | ✔ | ✔ | ✔ |
-| Union Pay* | Standard | ✔ | Not applicable | Not applicable |
-| Interac Debit | Standard | Support will be added in a future release. | Support will be added in a future release. | Support will be added in a future release. |
+| Union Pay\* | Standard | ✔ |  |  |
+| Interac Debit\* | Standard | ✔ |  |  |
 
-*Adyen does not support recurring tokens for Union Pay, so it cannot be used for card not present purchases.
+\*Interac and Union Pay recurring card tokens are not provided by Adyen, so they are cannot be supported for card not present transactions.
 
 #### Supported gift cards
 | Scheme | Card present | Card not present |
@@ -201,6 +201,9 @@ To support these external gift card schemes through the Dynamics 365 Payment Con
 | Manual Entry through Payment Terminal. |  | Supports pin entry. | 
 
 #### Supported card present countries
+
+The following countries have Dynamics 365 Commerce components available as well as card present support from Adyen. 
+
 | Country | Supported |
 | --- | :-: |
 | Australia | ✔ |
@@ -238,9 +241,6 @@ To support these external gift card schemes through the Dynamics 365 Payment Con
 | United States | ✔ |
 | Brazil | Future release |
 
-#### Supported card not present countries
-For card not present scenarios, such as e-Commerce or Call Center, special cross-country, cross-currency, and cross-market considerations apply. Please contact <MicrosoftDynamics@adyen.com> for additional details.
-
 #### Supported Dynamics 365 payment features
 The following table shows the set of features that the Dynamics 365 Payment Connector for Adyen supports. These features use enhancements that were introduced in the payments SDK and some components in December 2018. They aren't exclusive to the Dynamics 365 Payment Connector for Adyen. For more information about how to uptake these enhancements for a different payment connector, see [Create an end-to-end payment integration for a payment terminal](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension).
 
@@ -255,16 +255,6 @@ The following table shows the set of features that the Dynamics 365 Payment Conn
 ## Sign up with Adyen
 
 To use the Dynamics 365 Payment Connector for Adyen, you must have a separate agreement with Adyen. To learn more about Adyen's services, or to create a test merchant account, visit the [Adyen website](https://www.adyen.com/partners).
-
-If you prefer that Adyen contact you directly, send an email to <MicrosoftDynamics@adyen.com>. In the subject line of the email, include the term "Microsoft Dynamics connector." In the body of the email, be sure to include enough information so that the inquiry can be routed correctly:
-
-- Business name
-- Nature of business (for example, "merchant" or "Microsoft partner")
-- Business website
-- Business address
-- Contact name, title, email, and phone
-- Annual processing volume (Optional)
-- Description of the required services (for example "e-Commerce only" or "e-Commerce and card present, with *X* number of payment terminals")
 
 ## Setup and configuration
 
@@ -298,7 +288,7 @@ To process payments across point of sale (POS) terminals, a call center, or e-Co
     | Service account ID | Auto populated unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes (such as invoicing) should use. | Yes | Yes | *Guid* |
     | Version | Enter the version of the Dynamics 365 Payment Connector for Adyen to use. Currently, only version V001 is supported. | Yes | Yes | V001 |
     | Gateway environment | Enter the Adyen gateway environment to map to. The possible values are **Test** and **Live**. You should set this field to **Live** only for production devices and transactions. | Yes | Yes | Live |
-    | Optional Domain | Enter the domain to use when payment requests are made to Adyen. | No | No | https://terminal-api-live.adyen.com/sync |
+    | Optional Domain | The optional domain is required for Live environments and should be obtained by contacting Adyen. | Live only | No | Contact Adyen |
     | Merchant account ID | Enter the unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | MerchantIdenfier |
     | Terminal architecture | This field must be set to **Cloud** for the `Payment service account`. | Yes | Yes | Cloud |
     | Local Password phrase | This field is used only for the POS payment terminal integration and should be left blank. | No | Yes | *Leave this field blank.* |
@@ -349,14 +339,14 @@ After the payment terminal is onboarded, sign in to the [Adyen Customer Area](ht
     | Service account ID | Auto populated unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes (such as invoicing) should use. | Yes | Yes | *Guid* |
     | Version | Enter the version of the Dynamics 365 Payment Connector for Adyen to use. Currently, only version V001 is supported. | Yes | Yes | V001 |
     | Gateway environment | Enter the Adyen gateway environment to map to. The possible values are **Test** and **Live**. You should set this field to **Live** only for production devices and transactions. | Yes | Yes | Live |
-    | Optional Domain | Enter the domain to use when payment requests are made to Adyen. | No | No | https://terminal-api-live.adyen.com/sync |
+    | Optional Domain | The optional domain is required for Live environments and should be obtained by contacting Adyen. | Live only | No | Contact Adyen |
     | Merchant account ID | Enter the unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | MerchantIdenfier |
     | Terminal architecture | This must be set to **Local** for POS terminals. For more information about the different Terminal API architectures, see the [Introducing the Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api) page on the Adyen website. | Yes | Yes | Local |
     | Local Password phrase | Enter the Adyen key passphrase for the payment terminal. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | keypassphrase123 |
     | Local Key Identifier | Enter the Adyen key identifier for the payment terminal. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | mykey |
     | Local Key Version | Enter the Adyen key version for the payment terminal. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | 0 |
     | Local Cryptor Version | Enter the Adyen cryptor version to use when you interact with the Adyen gateway. You should set this field to **1**. | Yes | Yes | 1 |
-    | Cloud API Key | This field is used only for the card-not-present payment integration and should be left blank. | No | Yes | *Leave this field blank.* |
+    | Cloud API Key | Enter the Adyen cloud API key. You can obtain this key by following the instructions on the [How to get the API key](https://docs.adyen.com/developers/user-management/how-to-get-the-api-key) page on the Adyen website. | Yes | No | abcdefg |
     | Supported Currencies | Enter the currencies that the connector should process. Note that, in card-present scenarios, Adyen can support additional currencies through [Dynamic Currency Conversion](https://www.adyen.com/pos-payments/dynamic-currency-conversion) after the transaction request is sent to the payment terminal. Contact Adyen support to get a list of supported currencies. | Yes | Yes | USD;EUR |
     | Supported Tender Types | Enter the tender types that the connector should process. These values are case sensitive. | Yes | Yes | Visa;MasterCard;Amex;Discover;Debit |
     | Gift card provider | Enter the gift card provider that the connector should use to process gift cards. The possible values are **SVS** and **GIVEX**. | No | No | SVS |

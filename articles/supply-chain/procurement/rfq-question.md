@@ -4,7 +4,7 @@
 title: Responding to vendor questions on Request for quotations
 description: Vendors that have questions related to an RFP can submit their questions and read the answers on **Vendor collaboration** page.
 author: velofog
-manager: AnnBe
+manager: tfehr
 ms.date: 01/22/2020
 ms.topic: article
 ms.prod: 
@@ -30,7 +30,6 @@ ms.dyn365.ops.version: 10.0.9
 # Responding to vendor questions on Request for quotations
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 When your agency has sent a request for quotation (RFQ), vendors sometimes have questions that pertain to the request. Vendors that have questions related to an RFP can submit their questions and read the answers on **Vendor collaboration** page, when you make that page available to them. When vendor questions are accepted, **Questions and answers** is available on the **Request for quotation bid** page on **Vendor collaboration**, and for your agency through the **Request for quotation** page, **Questions and answers**. 
 

@@ -130,9 +130,33 @@ public display container imageDataMethod()
 |---|---|
 | <ul><li>This approach provides an easy way to reference any image anywhere on web.</li><li>This approach supports full-color images.</li><li>The web browser can cache the image, based on the settings of the server that hosts the image.</li></ul> | <ul><li>The transfer size isn’t as small as it is for symbols, but it's reasonable. The URL is sent as a string for each control that uses the image. The browser then downloads the image from the URL, and from that point, standard browser caching rules apply.</li><li>You can’t easily theme the images by using CSS.</li><li>Unless the URL points to a Scalable Vector Graphics (SVG) file, the image isn't automatically scaled on high-DPI displays.</li></ul> |
 
-| Design time | Run time |
-|---|---|
-| | The following example shows an image that uses a URL that is contained in a string.<br><pre><code>public display container imageDataMethod()<br>{<br>ImageReference imgClass = ImageReference::constructForUrl(this.ImageURL);<br>return imgClass.pack();<br>}</code></pre><br>This code sends a small JavaScript Object Notation (JSON) message to the control on the client. This message instructs the control to treat the image as a URL and let the browser do the work of downloading the image. No download occurs on the server. <strong>Storing an image URL in a database table</strong> You can also have a container field for the image column on your table. You can then use code that resembles the following example to store the <strong>ImageReference</strong> pack.<br><pre><code>ImageReference imgClass;<br>CLIControls_ImageTable imgTable;<br>ttsbegin;<br>imgClass = ImageReference::constructForUrl(<br>    &quot;<br>    http://dynamics/PublishingImages/ERPLogos/DynamicsLogo.jpg&quot;);<br>imgTable.ImageField = imgClass.pack();<br>imgTable.insert();<br>ttscommit;</code></pre>This code causes the user’s browser to download the image from the specified URL. The use of ImageReference involves some overhead, but this approach lets you use a single application programming interface (API) to handle images that are created from binary data, URLs, AOT resources, or symbols. You can even mix and match image types between rows of data.|
+### Run time
+
+The following example shows an image that uses a URL that is contained in a string.
+
+```xpp
+public display container imageDataMethod()
+{
+ImageReference imgClass = ImageReference::constructForUrl(this.ImageURL);
+return imgClass.pack();
+}
+```
+
+This code sends a small JavaScript Object Notation (JSON) message to the control on the client. This message instructs the control to treat the image as a URL and let the browser do the work of downloading the image. No download occurs on the server. <strong>Storing an image URL in a database table</strong> You can also have a container field for the image column on your table. You can then use code that resembles the following example to store the <strong>ImageReference</strong> pack.
+
+```xpp
+ImageReference imgClass;
+CLIControls_ImageTable imgTable;
+ttsbegin;
+imgClass = ImageReference::constructForUrl(
+    "http://dynamics/PublishingImages/ERPLogos/DynamicsLogo.jpg");    
+imgTable.ImageField = imgClass.pack();
+imgTable.insert();
+ttscommit;
+```
+
+This code causes the user’s browser to download the image from the specified URL. The use of ImageReference involves some overhead, but this approach lets you use a single application programming interface (API) to handle images that are created from binary data, URLs, AOT resources, or symbols. You can even mix and match image types between rows of data.
+
 
 ## Image type: Binary Image
 
