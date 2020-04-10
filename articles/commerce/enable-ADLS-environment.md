@@ -52,7 +52,8 @@ For more information about ADLS, see [ADLS official documentation](https://azure
   
 ## Configuration steps
 
-This section covers the configuration steps necessary for enabling ADLS in an environment.
+This section covers the configuration steps necessary for enabling ADLS in an environment as it relates to product recommendations.
+For a more indepth overview of the steps required to enable ADLS, please review the [detailed ADLS set up documentation](dynamics365/fin-ops-core/dev-itpro/data-entities/entity-store-data-lake).
 
 ### Enable ADLS in the environment
 
@@ -94,6 +95,8 @@ ADLS is now configured for the environment.
 If not completed already, follow the steps for [enabling product recommendations and personalization](enable-product-recommendations.md) for the environment.
 
 ## Additional resources
+
+[Make entity store available as a datalake](dynamics365/fin-ops-core/dev-itpro/data-entities/entity-store-data-lake)
 
 [Product recommendations overview](product-recommendations.md)
 
