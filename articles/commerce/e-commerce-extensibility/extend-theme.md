@@ -5,7 +5,7 @@ title: Extend a theme
 description: This topic describes how to extend a theme from a base theme for a Microsoft Dynamics 365 Commerce online site. 
 author: samjarawan
 manager: annbe
-ms.date: 04/06/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
