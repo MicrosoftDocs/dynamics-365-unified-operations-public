@@ -5,7 +5,7 @@ title: Business document management overview
 description: This topic provides information about how to use the Business document management feature of the ER framework.
 author: NickSelin
 manager: AnnBe
-ms.date: 01/15/2020
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -253,22 +253,19 @@ Use the following procedure to edit free text invoice templates in the Business 
 1. Sign in as a user with access to the Business document management workspace.
 2. Open the Business document management workspace.
 
->
-> When the **Office-like UI experience for Business document management** feature in the **Feature management** workspace is turned off, the main grid of the **Business document management** workspace offers the following templates:
 
-> -   Templates that are owned by your ER configurations provider. This provider is currently marked as active in the ER workspace. For a selected template, you can select the **Edit template** option to either start or continue editing it.
+When the **Office-like UI experience for Business document management** feature in the **Feature management** workspace is turned off, the main grid of the **Business document management** workspace offers the following templates:
 
-> -   Template that are owned by other ER configurations providers. For a selected template, you can select the **New document** option to create a copy of it that is owned by your ER provider and start editing it.
+- Templates that are owned by your ER configurations provider. This is the provider that is currently marked as active in the ER workspace. For a selected template, you can select **Edit template** to either start or continue editing it.
+- Templates that are owned by other ER configurations providers. For a selected template, you can select **New document** to create a copy of the template that is owned by your ER provider and start editing it.
 
 ![Business document management workspace page](./media/BDM-Overview-EditingTemplate1.png)
 
 The **Template** tab presents the content of the selected template. Select the **Details** tab to review details of the selected template as well as details of an ER format configuration this template resides in. Notice that all of the templates have a status of **Published**, and contain no details in the **Revision** column. This means that these templates are not currently being edited.
 
-> When the **Office-like UI experience for Business document management** feature in the **Feature management** workspace is turned on, the main grid of the **Business document management** workspace offers the following templates:
+When the **Office-like UI experience for Business document management** feature in the **Feature management** workspace is turned on, the main grid of the **Business document management** workspace offers templates that are owned by your ER configurations provider. This is the provider that is currently marked as active in the ER workspace. For a selected template, you can select the **Edit template** option to either start or continue editing it.
 
-> -   Templates that are owned by your ER configurations provider. This provider is currently marked as active in the ER workspace. For a selected template, you can select the **Edit template** option to either start or continue editing it.
-
-> To start working with templates that are owned by other ER configurations providers. select the **New document** option to create a copy of it that is owned by your ER provider and start editing it. See [New document user interface
+To start working with templates that are owned by other ER configurations providers. select the **New document** option to create a copy of it that is owned by your ER provider and start editing it. See [New document user interface
 in Business document management](er-business-document-management-new-template-ui.md) for more.
 
 ### Initiate editing templates owned by your configuration provider
