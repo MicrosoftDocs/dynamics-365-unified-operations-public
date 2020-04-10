@@ -63,7 +63,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | The process for creating ISV licenses has changed. For more information, see [Independent software vendor (ISV) licensing](../dev-tools/isv-licensing#appendix-create-self-signed-certificates-for-test-purposes.md). |
+| **Reason for deprecation/removal** | The process for creating ISV licenses has changed. For more information, see [Independent software vendor (ISV) licensing](../dev-tools/isv-licensing.md#appendix-create-self-signed-certificates-for-test-purposes). |
 | **Replaced by another feature?**   | Yes, you create licenses with Powershell.  |
 | **Product areas affected**         | Visual Studio development tools |
 | **Deployment option**              | All |
