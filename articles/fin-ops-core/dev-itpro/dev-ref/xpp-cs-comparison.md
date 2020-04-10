@@ -5,7 +5,7 @@ title: X++ and C# comparison
 description: This topic compares X++ and C# syntax and programming.
 author: RobinARH
 manager: AnnBe
-ms.date: 12/02/2019
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -1490,7 +1490,7 @@ The following table lists several .NET Framework classes for C\# that are in the
 
 |X++|C#|Comments|
 |---|---|---|
-| `BinaryIo`| `FileStream` `BinaryReader` `BinaryWriter` | X++ classes such as `BinaryIo` that extend from the abstract class `Io` serve as a stream, and they also serve as a reader and writer for that stream. In C# the stream is a separate class the from the class that has the more specific read and write methods.|
+| `BinaryIo`| `FileStream` `BinaryReader` `BinaryWriter` | X++ classes such as `BinaryIo` that extend from the abstract class `Io` serve as a stream, and they also serve as a reader and writer for that stream. In C#, the stream is a separate class from the class that has more specific read and write methods.|
 | `TextBuffer`| `MemoryStream`| These classes contain an in-memory buffer, and some of the methods treat the buffer as if it were a file on the hard disk.|
 | WINAPI::createDirectory WINAPI::folderExists WINAPI::removeDirectory| `Directory` `DirectoryInfo` `Path`| X++ can use static methods in the `WINAPI` class for many basic operating system functions that involve directories.|
 | WINAPI::getDriveType| `DriveInfo` `DriveType`| These classes and methods are used to obtain drive related information.|
