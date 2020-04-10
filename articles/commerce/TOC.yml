@@ -1963,7 +1963,9 @@
           - name: Create a theme
             href: e-commerce-extensibility/create-theme.md
           - name: Configure theme settings
-            href: e-commerce-extensibility/configure-theme-settings.md 
+            href: e-commerce-extensibility/configure-theme-settings.md
+          - name: Extend a theme
+            href: extend-theme.md
         - name: Inject script
           items:
           - name: Script injectors
