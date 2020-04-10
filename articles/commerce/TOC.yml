@@ -378,7 +378,7 @@
             items:
             - name: Demo data screen layouts in MPOS/CPOS
               href: demo-data.md
-            - name: Screen layouts for the POS
+            - name: POS user interface visual configurations
               href: pos-screen-layouts.md
             - name: Install the POS layout designer
               href: install-pos-layout-designer.md
