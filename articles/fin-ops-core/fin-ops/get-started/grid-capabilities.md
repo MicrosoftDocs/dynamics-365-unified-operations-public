@@ -5,7 +5,7 @@ title: Grid capabilities
 description: This topic describes several powerful features of the grid control. The new grid feature must be enabled to have access to these capabilities. 
 author: jasongre
 manager: AnnBe
-ms.date: 02/10/2020
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
