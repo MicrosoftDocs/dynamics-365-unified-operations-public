@@ -44,8 +44,7 @@ Notes
 
 The order in which rules are applied are somewhat complex. The following graphic illustrates the principle:
 
-picture here.
-
+#SCREEN CAPTURE HERE
 
 The sales tax codes selected for the dimension line will be following if the transaction uses a Sales tax group and Item sales tax group with all of the tax codes included.
 
