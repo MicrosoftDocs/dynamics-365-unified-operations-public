@@ -50,17 +50,20 @@ This topic describes how to:
 
 ## Set up Accounts payable parameters
 
-In **Accounts payable** > **Setup** > **Accounts payable parameters** > **Number sequences** fast tab specify number sequences for:
+In **Accounts payable** > **Setup** > **Accounts payable parameters** > **Number sequences** FastTab, specify number sequences for:
  - Plafond number;
  - Intent letter number.
 
-In **Accounts payable** > **Setup** > **Accounts payable parameters** > **Intent letters - Telematic model** fast tab specify the reference to Intent letter telematic model configuration.
+In **Accounts payable** > **Setup** > **Accounts payable parameters** > **Intent letters - Telematic model** FastTab, specify the reference to Intent letter telematic model configuration.
 
 ![Intent letter telematic model](media/emea-ita-exil-plafond-model.jpg)
 
 > [!NOTE] The configuration must be preliminary imported in **Electronic reporting**. For more information about how to download ER configurations
 see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs)
 
+## Set up General ledger parameters
+
+In **General ledger** > **Ledger setup** > **General ledger parameters** > **Number sequences** FastTab, specify the number sequence for **Intent letter telematic model ID**.
 
 ## Set up sales tax codes
 
