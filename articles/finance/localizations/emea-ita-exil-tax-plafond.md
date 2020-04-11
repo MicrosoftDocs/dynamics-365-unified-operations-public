@@ -48,13 +48,25 @@ This topic describes how to:
 - The primary address of the legal entity must be in Italy.
 - In the **Feature management** workspace, turn on the **Tax plafond** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
 
-## Set up
+## Set up Accounts payable parameters
 
 In **Accounts payable** > **Setup** > **Accounts payable parameters** > **Number sequences** fast tab specify number sequences for:
  - Plafond number;
  - Intent letter number.
 
 In **Accounts payable** > **Setup** > **Accounts payable parameters** > **Intent letters - Telematic model** fast tab specify the reference to Intent letter telematic model configuration.
+
+![Intent letter telematic model](media/emea-ita-exil-plafond-model.jpg)
+
+> [!NOTE] The configuration must be preliminary imported in **Electronic reporting**. For more information about how to download ER configurations
+see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs)
+
+
+## Set up sales tax codes
+
+In **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax code** \> **General** FastTab, in the **Invoicing** section, set the **Affect intent letters** option to **Yes**.
+
+![Setting up a sales tax code](media/emea-ita-exil-intent-tax-setup.jpg)
 
 ## Use...
 
