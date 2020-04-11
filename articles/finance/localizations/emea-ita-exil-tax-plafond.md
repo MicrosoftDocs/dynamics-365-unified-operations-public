@@ -82,6 +82,19 @@ To register a new tax plafond, go to **Tax** > **Indirect taxes** > **Sales tax*
 
 Tax plafond fields description:
 
+| **Field name**                                                 | **Description**                                                                                                                                                                               |
+|----------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Plafond number**                                             | The number of the tax plafond. This value is auto-filled according to Number sequence defined for Plafond number reference in Accounts payable parameters.                                        |
+| **Description**                                                | The description of the tax plafond, specified manually.                                                                                                                                    |
+| **From date**                                                  | Start date of the period in which the tax plafond is effective.                                                                                                         |
+| **To date**                                                    | End date of the period in which the tax plafond is effective.                                                                                                              |
+| **Closed date**                                                | Auto-filled date when the tax plafond is closed.                                                                                                                                                  |
+| **Initial plafond amount**                                     | Enter the amount of the tax plafond.                                                                                                                                                |
+| **Initial current amount**                                     | Auto-calculated amount available on tax plafond.                                                                                                                                              |
+| **Plafond warning type, amount, %.**                           | The type of check and related amount or percentage starting from which user will get warning about the tax plafond remaining amount . |
+| **Settlement period**                                          | Specify the settlement period.                                                                                                                                  |
+| **Operations contributing to the plafond** | Turn on/off the options for inclusion into intent letters report.                                                                                                                                            |
+
 
 ### Post
 
