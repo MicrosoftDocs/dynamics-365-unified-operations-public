@@ -133,9 +133,9 @@ On **General** tab, for the created intent letters you can additionally specify 
 
 Intent letters created for vendors can be applied to purchase orders or vendor invoice journal before invoice posting.
 
-To apply an intent letter to a purchase order or vendor invoice journal, select the intent letterer in the **Intent letter** field of the related purchase order or vendor invoice journal. 
+To apply an intent letter to a purchase order or vendor invoice journal, select the intent lettere in the **Intent letter** field of the related purchase order or vendor invoice journal. 
 **Sales tax group** specified in **Plafond tax group** field of **Accounts payable parameters** will be automatically filled for the purchase order or vendor invoice journal.
 
 You can also review intent letters for a specific vendor from vendor master data. 
-Go to **Accounts payable** \> **Vendors** \> **All vendors** and click **Intent letters** on the Action Pane to see intent letters related to the selected vendor.
+Go to **Accounts payable** \> **Vendors** \> **All vendors**, in **Vendor** Tab, on the Action Pane, **Related information** section, click **Intent letters** to see intent letters related to the selected vendor.
 
