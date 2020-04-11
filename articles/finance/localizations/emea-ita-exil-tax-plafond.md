@@ -61,6 +61,10 @@ In **Accounts payable** > **Setup** > **Accounts payable parameters** > **Intent
 > [!NOTE] The configuration must be preliminary imported in **Electronic reporting**. For more information about how to download ER configurations
 see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs)
 
+In **Accounts payable** > **Setup** > **Accounts payable parameters** > **Ledger and sale tax** FastTab, in the **Sales tax** section, specify **Plafond tax group** and **Default plafond date** parameters.
+
+![Planond parameters](media/emea-ita-exil-plafond-group.jpg)
+
 ## Set up General ledger parameters
 
 In **General ledger** > **Ledger setup** > **General ledger parameters** > **Number sequences** FastTab, specify the number sequence for **Intent letter telematic model ID**.
