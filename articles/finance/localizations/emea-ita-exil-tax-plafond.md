@@ -48,9 +48,13 @@ This topic describes how to:
 - The primary address of the legal entity must be in Italy.
 - In the **Feature management** workspace, turn on the **Tax plafond** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
 
-## Set up...
+## Set up
 
-Define...
+In **Accounts payable** > **Setup** > **Accounts payable parameters** > **Number sequences** fast tab specify number sequences for:
+ - Plafond number;
+ - Intent letter number.
+
+In **Accounts payable** > **Setup** > **Accounts payable parameters** > **Intent letters - Telematic model** fast tab specify the reference to Intent letter telematic model configuration.
 
 ## Use...
 
