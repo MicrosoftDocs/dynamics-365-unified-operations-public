@@ -121,6 +121,12 @@ To review posted tax transactions for an existing tax planond, on the Action pan
 
 7.	Click **OK** button to create intent letters with specified parameters.
 
+> [!NOTE] Created intent letters are numbered automatically by the system according to the related number sequence defined for in **Accounts payable parameters**.
 
-> [!NOTE]
-> Warning...
+On **General** tab, for the created intent letters you can additionally specify the values for fields for generation of the telematic model:
+
+| **Field name**    | **Description**                                                                                                                                                                                                                       |
+|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|   **Model ID**        | Identification of the telematic model in which the letter was included. The system assigns the number according to the Number sequence specified for **Intent letter telematic model ID** reference in **General ledger parameters.** |
+|   **Purchase type**   | Select type of purchase: purchases or exposures.                                                                                                                                                                                  |
+
