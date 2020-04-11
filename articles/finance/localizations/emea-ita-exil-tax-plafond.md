@@ -97,7 +97,7 @@ Tax plafond fields description:
 
 To review posted tax transactions for an existing tax planond, on the Action pane, click **Plafond transactions**.
 
-## Create Intent letter
+## Create intent letters
 
 1. To create new intent letter for a vendor, go to **Accounts payable** > **Intent letters** > **Intent letters**, on the Action pane, сlick **New** and fill in the fields for the intent letter.
 
@@ -129,4 +129,13 @@ On **General** tab, for the created intent letters you can additionally specify 
 |-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |   **Model ID**        | Identification of the telematic model in which the letter was included. The system assigns the number according to the Number sequence specified for **Intent letter telematic model ID** reference in **General ledger parameters.** |
 |   **Purchase type**   | Select type of purchase: purchases or exposures.                                                                                                                                                                                  |
+## Work with intent letters
+
+Intent letters created for vendors can be applied to purchase orders or vendor invoice journal before invoice posting.
+
+To apply an intent letter to a purchase order or vendor invoice journal, select the intent letterer in the **Intent letter** field of the related purchase order or vendor invoice journal. 
+**Sales tax group** specified in **Plafond tax group** field of **Accounts payable parameters** will be automatically filled for the purchase order or vendor invoice journal.
+
+You can also review intent letters for a specific vendor from vendor master data. 
+Go to **Accounts payable** \> **Vendors** \> **All vendors** and click **Intent letters** on the Action Pane to see intent letters related to the selected vendor.
 
