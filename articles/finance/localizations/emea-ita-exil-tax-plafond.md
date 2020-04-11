@@ -133,11 +133,26 @@ On **General** tab, for the created intent letters you can additionally specify 
 
 Intent letters created for vendors can be applied to purchase orders or vendor invoice journal before invoice posting.
 
-To apply an intent letter to a purchase order or vendor invoice journal, select the intent lettere in the **Intent letter** field of the related purchase order or vendor invoice journal. 
+To apply an intent letter to a purchase order or vendor invoice journal, select the intent letter in the **Intent letter number** field of the related purchase order or vendor invoice journal. 
 **Sales tax group** specified in **Plafond tax group** field of **Accounts payable parameters** will be automatically filled for the purchase order or vendor invoice journal.
 
 ![Purchase order](media/emea-ita-exil-plafond-PO.jpg)
 
 You can also review intent letters for a specific vendor from vendor master data. 
 Go to **Accounts payable** \> **Vendors** \> **All vendors**, in **Vendor** Tab, on the Action Pane, **Related information** section, click **Intent letters** to see intent letters related to the selected vendor.
+
+## Generation of telematic model for intent letters
+
+To generate telematic model of an intent letter, complete the following steps:
+
+1.  Open **Tax** \> **Declarations** \> **Sales tax** \> **Intent letters – Telematic model** page, on the Action pane, click **New** to create a new record for telematic model reporting. Model ID is defined automatically according to the number sequence specified for **Intent letter telematic model ID** reference in **General ledger parameters**.
+
+2.  Specify **Internal description** for the new telematic model in the related field.
+
+3.  Fill in related information the tab **General** tab for the new telematic model about signatory, writer, integrative parameters and the file name.
+
+4.  On the Action pane, click **Transfer**, select the intent letters to include in the current model.  Selected intent letters will be shown in **Intent letters** FastTab. 
+> [!NOTE] Intent letters which are already included in other models can’t be selected.
+
+5.  On the Action pane, click **Export** to generate the **Intent letter telematic model** text file.
 
