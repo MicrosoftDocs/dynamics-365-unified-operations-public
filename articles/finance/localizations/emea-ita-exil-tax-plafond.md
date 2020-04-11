@@ -129,6 +129,8 @@ On **General** tab, for the created intent letters you can additionally specify 
 |-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |   **Model ID**        | Identification of the telematic model in which the letter was included. The system assigns the number according to the Number sequence specified for **Intent letter telematic model ID** reference in **General ledger parameters.** |
 |   **Purchase type**   | Select type of purchase: purchases or exposures.                                                                                                                                                                                  |
+> [!NOTE] **Period** type of intent letters is not supported. Creation of intent letters of this type is prevented. **Period** type itself is kept for historical data of those users which were using this type in the past as well as the **Automatic intent letter assignment** parameter on **Ledger and sales tax** Tab of **Accounts payable parameters**.
+
 ## Work with intent letters
 
 Intent letters created for vendors can be applied to purchase orders or vendor invoice journal before invoice posting.
@@ -154,5 +156,5 @@ To generate telematic model of an intent letter, complete the following steps:
 4.  On the Action pane, click **Transfer**, select the intent letters to include in the current model.  Selected intent letters will be shown in **Intent letters** FastTab. 
 > [!NOTE] Intent letters which are already included in other models can’t be selected.
 
-5.  On the Action pane, click **Export** to generate the **Intent letter telematic model** text file.
+5.  On the Action pane, click **Export** to generate the **Intent letter telematic model** output file.
 
