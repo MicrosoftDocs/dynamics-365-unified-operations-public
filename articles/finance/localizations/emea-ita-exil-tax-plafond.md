@@ -95,10 +95,20 @@ Tax plafond fields description:
 | **Settlement period**                                          | Specify the settlement period.                                                                                                                                  |
 | **Operations contributing to the plafond** | Turn on/off the options for inclusion into intent letters report.                                                                                                                                            |
 
+To review posted tax transactions for an existing tax planond, on the Action pane, click **Plafond transactions**.
 
-### Post
+## Create Intent letter
 
-When you post...
+To create new intent letter for a vendor, go to **Accounts payable** > **Intent letters** > **Intent letters**, on the Action pane, сlick **New** and fill in the fields for the intent letter.
+
+| **Field name**   | **Description**                                                          |
+|------------------|--------------------------------------------------------------------------|
+| **Posting date** | Specify posting date for the intent letter.                              |
+| **Letter type**  | Select “Amount” or “Specific operation” type for the intent letter.      |
+| **From date**    | Specify starting date of the period in which intent letter is effective. |
+| **To date**      | Specify end date of the period in which intent letter is effective.      |
+| **Amount**       | Specify amount for intent letter.                                        |
+
 
 > [!NOTE]
 > Warning...
