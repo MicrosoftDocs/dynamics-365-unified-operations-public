@@ -48,7 +48,8 @@ This topic describes how to:
 - The primary address of the legal entity must be in Italy.
 - In the **Feature management** workspace, turn on the **Tax plafond** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
 
-## Set up Accounts payable parameters
+## Set up parameters
+### Set up Accounts payable parameters
 
 In **Accounts payable** > **Setup** > **Accounts payable parameters** > **Number sequences** FastTab, specify number sequences for:
  - Plafond number;
@@ -65,17 +66,22 @@ In **Accounts payable** > **Setup** > **Accounts payable parameters** > **Ledger
 
 ![Planond parameters](media/emea-ita-exil-plafond-group.jpg)
 
-## Set up General ledger parameters
+### Set up General ledger parameters
 
 In **General ledger** > **Ledger setup** > **General ledger parameters** > **Number sequences** FastTab, specify the number sequence for **Intent letter telematic model ID**.
 
-## Set up sales tax codes
+### Set up sales tax codes
 
 In **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax code** \> **General** FastTab, in the **Invoicing** section, set the **Affect intent letters** option to **Yes**.
 
 ![Setting up a sales tax code](media/emea-ita-exil-intent-tax-setup.jpg)
 
-## Use...
+## Create tax plafond
+
+To register a new tax plafond, go to **Tax** > **Indirect taxes** > **Sales tax** > **Tax plafond**, on the Action pane, сlick **Functions** > **Create new** and fill in the fields for the tax plafond.
+
+Tax plafond fields description:
+
 
 ### Post
 
