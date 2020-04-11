@@ -99,7 +99,7 @@ To review posted tax transactions for an existing tax planond, on the Action pan
 
 ## Create Intent letter
 
-To create new intent letter for a vendor, go to **Accounts payable** > **Intent letters** > **Intent letters**, on the Action pane, сlick **New** and fill in the fields for the intent letter.
+1. To create new intent letter for a vendor, go to **Accounts payable** > **Intent letters** > **Intent letters**, on the Action pane, сlick **New** and fill in the fields for the intent letter.
 
 | **Field name**   | **Description**                                                          |
 |------------------|--------------------------------------------------------------------------|
@@ -108,6 +108,18 @@ To create new intent letter for a vendor, go to **Accounts payable** > **Intent 
 | **From date**    | Specify starting date of the period in which intent letter is effective. |
 | **To date**      | Specify end date of the period in which intent letter is effective.      |
 | **Amount**       | Specify amount for intent letter.                                        |
+
+2. In **Records to include** FastTab, select vendors for which intent letters must be created using **Filter** button.
+
+3. Click **OK** button to finalize the selection.
+
+4.	On the next form, select **Update existing purchase orders** if you want to apply new intent letters to existing but not invoiced purchase orders for the selected vendors.
+
+5.	Select **Re-confirm purchase orders** if you want to re-confirm purchase orders for which intent letters are applied in case they were confirmed.
+
+6.	Select **Exclude delivered or partly delivered purchase orders** if you want to exclude delivered or partly delivered purchase orders from the list of purchase orders to be updated with intent letters.
+
+7.	Click **OK** button to create intent letters with specified parameters.
 
 
 > [!NOTE]
