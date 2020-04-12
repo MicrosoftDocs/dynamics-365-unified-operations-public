@@ -33,9 +33,9 @@ ms.dyn365.ops.version: 10.0.9
 [!include [banner](../includes/banner.md)]
 
 Companies in Italy which engage in resale activities outside of Italy can be exempt from VAT under tax plafond arrangement.
-VAT exempt under plafond arrangement can be provided for companies fulfilling the following conditions:
- - Company must be considered as usual exporter.
- - Company must release an intent letter to vendor, in which status of usual exporter is declared.
+VAT exempt under plafond arrangement can be provided for companies meeting the following conditions:
+ - Companies must be considered as usual exporters.
+ - Companies must release intent letters to vendors, in which status of usual exporter is declared.
 
 This topic describes how to:
  - Set up the system to use **Tax plafond** feature;
