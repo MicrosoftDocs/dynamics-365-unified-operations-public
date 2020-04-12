@@ -4,7 +4,7 @@
 title: Inventory aging report
 description: This topic describes the functionality that lets you run an Inventory aging report and make the output available as a form and a chart.
 author: AndersGirke
-manager: AnnBe
+manager: tfehr
 ms.date: 11/11/2019
 ms.topic: article
 ms.prod:
@@ -17,7 +17,7 @@ ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
 # ROBOTS:
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 

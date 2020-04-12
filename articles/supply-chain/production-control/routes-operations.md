@@ -4,7 +4,7 @@
 title: Routes and operations
 description: This topic provides information about routes and operations. 
 author: sorenva
-manager: AnnBe
+manager: tfehr
 ms.date: 03/18/2019
 ms.topic: article
 ms.prod: 
@@ -18,7 +18,7 @@ ms.author: sorenand
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268124

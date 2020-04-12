@@ -4,7 +4,7 @@
 title: Shipment auto-updates
 description: This topic provides an overview of functionality that provides automatic updates for shipments.
 author: josaw1
-manager: AnnBe
+manager: tfehr
 ms.date: 11/04/2019
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 

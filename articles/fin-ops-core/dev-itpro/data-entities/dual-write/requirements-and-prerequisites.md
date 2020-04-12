@@ -168,7 +168,7 @@ Before you enable dual-write, follow these steps to make sure that you meet the 
 
 9. Install the dual-write entity maps solution.
 
-    1. In Power Apps, in the left pane, select **Solutions**. Select **Open AppSource**, and search for the solution that is named **Common Data Service Add-in for Finance and Operations package**. Select the solution, and follow the prompts to import it.
+    1. In Power Apps, in the left pane, select **Solutions**. Select **Open AppSource**, and search for the solution that is named **Dual-write application orchestration solution**. Select the solution, and follow the prompts to import it.
     2. In the Finance and Operations app, on the **Dual-write** page, select **Apply Solution** to apply the entity maps that you just downloaded and installed. After you apply the solution, you should see that the default entity maps are published.
 
         ![Applying the entity maps](media/apply-entity-maps.png)

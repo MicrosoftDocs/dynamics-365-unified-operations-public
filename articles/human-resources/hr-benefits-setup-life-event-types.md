@@ -5,7 +5,7 @@ title: Configure life event types
 description: Microsoft Dynamics 365 Human Resources uses life event types to define events where it is valid to update employee benefits enrollment.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -31,8 +31,6 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Configure life event types
-
-[!include [banner](includes/preview-feature.md)]
 
 icrosoft Dynamics 365 Human Resources uses life event types to define events where it is valid to update employee benefits enrollment. For example, getting married or having a child. Each life event type ID may only be associated with one life event type. For example, if you create a life event ID called Address change that is associated with the life event type Employee address change, you can’t create another ID labeled Employee address change and associate it with the life event type Employee address change. 
 

@@ -4,7 +4,7 @@
 title: Set up permissions for ordering products on behalf of someone else
 description: This topic explains how to grant workers permission to prepare purchase requisitions on behalf of other workers. 
 author: mkirknel
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/20/2019
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: PurchReqAuthorization, HcmWorkerLookUp   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  

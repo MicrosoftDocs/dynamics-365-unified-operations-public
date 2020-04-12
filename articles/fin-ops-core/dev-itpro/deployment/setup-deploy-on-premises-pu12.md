@@ -5,7 +5,7 @@ title: Set up and deploy on-premises environments (Platform update 12 and later)
 description: This topic provides information about how to plan, set up, and deploy Dynamics 365 Finance + Operations (on-premises) with Platform update 12 and later.
 author: PeterRFriis
 manager: AnnBe
-ms.date: 03/11/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -423,7 +423,7 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
 
 4. Specify a semi-colon separated list of users or groups in the **ProtectTo** tag for each certificate. Only Active directory users and groups specified in the **ProtectTo** tag will have permissions to import the certificates that are exported using the scripts. Passwords are not supported by the script to protect the exported certificates
 
-5. Export the certificates into .pfx files.
+5. Export the certificates into .pfx files. As part of the export, this script will check that your certificates have the correct cryptographic provider set. 
 
     ```powershell
     # Exports Pfx files into a directory VMs\<VMName>, all the certs will be written to infrastructure\Certs folder.
@@ -561,11 +561,14 @@ Only user accounts that have the Global Administrator directory role can add cer
 2. Determine whether the certificate is already registered by running the following script from the **Infrastructure** folder.
 
     ```powershell
-    Install-Module AzureRM
-    Import-Module AzureRM
+    Install-Module Az
+    Import-Module Az
     .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint <OnPremLocalAgent Certificate Thumbprint> -Test
     ```
 
+    > [!IMPORTANT]
+    > If you previously installed AzureRM, please remove it as it may not be compatible with any existing AzureRM installs in PowerShell 5.1 for Windows. For more information, [Migrate Azure PowerShell from AzureRM to Az](https://docs.microsoft.com/powershell/azure/migrate-from-azurerm-to-az).
+  
 3. If the script indicates that the certificate isn't registered, run the following command.
 
     ```powershell

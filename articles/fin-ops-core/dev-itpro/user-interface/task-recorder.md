@@ -76,12 +76,12 @@ The following steps show the process for creating a new recording using Task rec
 5.  Click **Create a new recording**.
 6.  Enter a name for the recording and click **Start**. Recording begins the moment **Start** is clicked. For the Fleet example in this tutorial, we'll use the name "Create a new rental reservation."
 
-> [!NOTE]
-> If the **Saved views** feature is enabled, recordings should be created using either published views or the Standard view to ensure that recordings work reliably for users. 
-        
     During recording, clicking the "**X**" in the upper-right corner will hide the pane without stopping the recording. The pane can be re-opened by clicking the **Task recorder** menu button that appears at the top of the screen. This icon only appears while recording is in progress. 
     
     [![This image shows the Task recorder toolbar button which allows opening the Task recorder pane while recording.](./media/taskrecorderguide-taskrecordertoolbarclose.png)](./media/taskrecorderguide-taskrecordertoolbarclose.png)
+
+    > [!NOTE]
+    > If the **Saved views** feature is enabled, recordings should be created using either published views or the Standard view to ensure that recordings work reliably for users. 
 
 7.  The **Task recorder** enters **Recording Mode.** The pane now shows information and controls related to the process of recording. For more information about how to use the buttons shown, see the [section on using the recording controls](#recording-controls).
 

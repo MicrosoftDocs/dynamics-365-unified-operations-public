@@ -4,7 +4,7 @@
 title: Trade allowance management
 description: This topic describes trade allowance management for Dynamics 365 Supply Chain Management.
 author: t-benebo
-manager: AnnBe
+manager: tfehr
 ms.date: 08/17/2018
 ms.topic: article
 ms.prod: 
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:  
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 

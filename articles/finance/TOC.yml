@@ -1952,6 +1952,8 @@
             href: general-ledger/tax-engine-integration.md
           - name: Extending the Tax engine
             href: general-ledger/extend-tax-engine-configurations.md
+          - name: Troubleshoot GTE
+            href: localizations/tax-engine-trouble-shooting.md
         - name: Tax thresholds FAQ
           href: localizations/apac-ind-tax-thresholds.md          
         - name: Stock transfers
@@ -2584,6 +2586,8 @@
           href: localizations/switzerland.md
         - name: Import customer payments in ESR
           href: localizations/emea-che-esr-customer-payments-import.md
+        - name: Swiss QR-bills
+          href: localizations/emea-che-swiss-qr-bills.md
       - name: Thailand
         items:
         - name: Thailand overview
@@ -2794,12 +2798,20 @@
           href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-comply-ada.md
         - name: Manage worker accommodations
           href: ../fin-ops-core/fin-ops/hr/localizations/tasks/manage-worker-accommodations.md
-    - name: Intelligence
+    - name: Reporting and Power BI integrations
       items:
-      - name: Intelligence home page
+      - name: Reporting and analytics with Power BI
         href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/finance/toc.json
       - name: Information access and reporting
         href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/finance/toc.json
+      - name: Personalization options with PowerBI.com
+        items:
+        - name: Features available through PowerBI.com integration
+          href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/finance/toc.json
+        - name: Pin PowerBI.com content
+          href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/finance/toc.json
+        - name: Select analytical workspaces from PowerBI.com
+          href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md?toc=/dynamics365/finance/toc.json
       - name: Power BI content
         items:
         - name: Power BI content home page
@@ -2822,8 +2834,6 @@
             href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/dynamics365/finance/toc.json
           - name: Set up security for the Cost accounting analysis Power BI content
             href: ../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/dynamics365/finance/toc.json
-        - name: Cost management
-          href: ../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md?toc=/dynamics365/finance/toc.json
         - name: Credit and collections management
           href: accounts-receivable/credit-collections-power-bi.md
         - name: Employee competencies and development
@@ -2844,22 +2854,24 @@
           href: ../fin-ops-core/dev-itpro/analytics/organizational-training-analysis-power-bi-content-pack.md?toc=/dynamics365/finance/toc.json
         - name: Practice manager
           href: ../fin-ops-core/dev-itpro/analytics/practice-manager-power-bi.md?toc=/dynamics365/finance/toc.json
-        - name: Production performance
-          href: ../fin-ops-core/dev-itpro/analytics/production-performance-power-bi.md?toc=/dynamics365/finance/toc.json
         - name: Purchase spend analysis
           href: ../fin-ops-core/dev-itpro/analytics/purchase-content-pack-for-power-bi.md?toc=/dynamics365/finance/toc.json
         - name: Recruiting
           href: ../fin-ops-core/dev-itpro/analytics/recruiting-analysis-power-bi-content-pack.md?toc=/dynamics365/finance/toc.json
-        - name: Retail channel performance
-          href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/finance/toc.json
         - name: Sales and profitability performance
           href: ../fin-ops-core/dev-itpro/analytics/sales-profitability-performance-content-pack.md?toc=/dynamics365/finance/toc.json
         - name: Vendor payments
           href: accounts-payable/Vendor-payments-workspace.md
-        - name: Warehouse performance
-          href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/dynamics365/finance/toc.json
         - name: Workforce metrics
           href: ../fin-ops-core/dev-itpro/analytics/workforce-analysis-power-bi-content-pack.md?toc=/dynamics365/finance/toc.json
+      - name: Analytical workspaces
+        items:
+        - name: Analytical Workspaces (using Power BI Embedded)
+          href: ../fin-ops-core/dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/dynamics365/finance/toc.json
+        - name: Power BI Embedded integration
+          href: ../fin-ops-core/dev-itpro/analytics/power-bi-embedded-integration.md?toc=/dynamics365/finance/toc.json
+        - name: Customize embedded reports in Analytical workspaces 
+          href: ../fin-ops-core/dev-itpro/analytics/customize-analytical-workspace.md?toc=/dynamics365/finance/toc.json
       - name: Document reporting and printing
         items:
         - name: Document Reporting Services overview
@@ -2868,6 +2880,8 @@
           href: ../fin-ops-core/dev-itpro/analytics/supported-fonts.md?toc=/dynamics365/finance/toc.json
         - name: Configure SSRS for on-premises deployments
           href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/finance/toc.json
+        - name: Default reporting experiences in IaaS environments
+          href: ../fin-ops-core/dev-itpro/analytics/reporting-experience-iias-environments.md?toc=/dynamics365/finance/toc.json
         - name: Printing
           items:
           - name: Document printing overview
@@ -2875,21 +2889,45 @@
           - name: Install the Document Routing Agent to enable network printing
             href: ../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md?toc=/dynamics365/finance/toc.json
           - name: Upgrade the Document Routing Agent
-            href: ../fin-ops-core/dev-itpro/analytics/upgrade-document-routing-agent.md
+            href: ../fin-ops-core/dev-itpro/analytics/upgrade-document-routing-agent.md?toc=dynamics/365/finance/toc.json
           - name: Install network printer devices in on-premises environments
             href: ../fin-ops-core/dev-itpro/analytics/install-network-printer-onprem.md?toc=/dynamics365/finance/toc.json
           - name: Document generation, publishing, and printing in on-premises deployments
             href: ../fin-ops-core/dev-itpro/analytics/printing-capabilities-on-premises.md?toc=/dynamics365/finance/toc.json
           - name: Run the Document Routing Agent as a Windows service
-            href: ../fin-ops-core/dev-itpro/analytics/run-document-routing-agent-as-windows-service.md?toc=/dynamics365/finance/toc.json
-        - name: Help prevent long-running reports from timing out
-          href: ../fin-ops-core/dev-itpro/analytics/prevent-long-running-reports-timing-out.md?toc=/dynamics365/finance/toc.json
+            href: ../fin-ops-core/dev-itpro/analytics/run-document-routing-agent-as-windows-service.md?toc=/dynamics365/finance/toc.json 
         - name: Available SQL Server Reporting Services reports
           href: ../fin-ops-core/dev-itpro/analytics/SSRS-report.md?toc=/dynamics365/finance/toc.json
+        - name: Install report design templates
+          href: ../fin-ops-core/dev-itpro/analytics/install-modern-report-design-templates.md?toc=/dynamics365/finance/toc.json  
+      - name: Power user management tools
+        items:
+        - name: Power BI integration with Entity store
+          href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/dynamics365/finance/toc.json
+        - name: Resolve issues after Entity store maintenance
+          href: ../fin-ops-core/dev-itpro/analytics/entity-store-maintenance.md
+        - name: Configure PowerBI.com integration
+          href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?toc=/dynamics365/finance/toc.json
+        - name: Bring your own database
+          href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/finance/toc.json
+        - name: Preview PDF documents using a PDF viewer
+          href: ../fin-ops-core/dev-itpro/analytics/preview-pdf-documents.md?toc=/dynamics365/finance/toc.json
+      - name: Developer tools for creating and extending solutions
+        items:
+        - name: Analytics, aggregate measurements, and KPI modeling
+          href: ../fin-ops-core/dev-itpro/analytics/analytics.md?toc=/dynamics365/finance/toc.json
+        - name: Model aggregate data
+          href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/finance/toc.json
+        - name: Add financial dimensions to aggregate measurements
+          href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/finance/toc.json
+        - name: Create analytical reports using PowerBI Desktop
+          href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/finance/toc.json 
+        - name: Add analytics to workspaces by using Power BI Embedded
+          href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/finance/toc.json
+        - name: Help secure analytical workspaces and reports using Power BI Embedded
+          href: ../fin-ops-core/dev-itpro/analytics/secure-analytical-workspaces.md?toc=/dynamics365/finance/toc.json
         - name: Create reporting solutions
           href: ../fin-ops-core/dev-itpro/analytics/create-nextgen-reporting-solutions.md?toc=/dynamics365/finance/toc.json
-        - name: Install report design templates
-          href: ../fin-ops-core/dev-itpro/analytics/install-modern-report-design-templates.md?toc=/dynamics365/finance/toc.json
         - name: Customize App Suite reports by using extensions
           href: ../fin-ops-core/dev-itpro/analytics/customize-app-suite-reports-with-extensions.md?toc=/dynamics365/finance/toc.json
         - name: Expand Application Suite report data sets
@@ -2898,28 +2936,28 @@
           href: ../fin-ops-core/dev-itpro/analytics/extend-report-menu-items.md?toc=/dynamics365/finance/toc.json
         - name: Create custom designs for business documents
           href: ../fin-ops-core/dev-itpro/analytics/custom-designs-business-docs.md?toc=/dynamics365/finance/toc.json
-        - name: Preview PDF documents with an embedded viewer
-          href: ../fin-ops-core/dev-itpro/analytics/preview-pdf-documents.md?toc=/dynamics365/finance/toc.json
-      - name: Electronic reporting
+        - name: Help prevent long-running reports from timing out
+          href: ../fin-ops-core/dev-itpro/analytics/prevent-long-running-reports-timing-out.md?toc=/dynamics365/finance/toc.json
+    - name: Electronic reporting
+      items:
+      - name: Electronic reporting overview
+        href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md?toc=/dynamics365/finance/toc.json
+      - name: Configurations
         items:
-        - name: Electronic reporting overview
-          href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md?toc=/dynamics365/finance/toc.json
-        - name: Configurations
-          items:
-          - name: Create configurations
-            href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=/dynamics365/finance/toc.json
-          - name: Prepare components of the Electronic reporting solution
+        - name: Create configurations
+          href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=/dynamics365/finance/toc.json
+        - name: Prepare components of the Electronic reporting solution
+          items: 
+          - name: Design domain specific data model
+            href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/dynamics365/finance/toc.json
+          - name: Prepare application specific metadata
             items: 
-            - name: Design domain specific data model
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/dynamics365/finance/toc.json
-            - name: Prepare application specific metadata
-              items: 
-              - name: (ER) Prepare application metadata to be used in RCS
-                href: ../fin-ops-core/dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?toc=/dynamics365/finance/toc.json
-              - name: (RCS) Access application metadata by using ER configuration
-                href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?toc=/dynamics365/finance/toc.json
-              - name: (RCS) Access application metadata by using connected applications
-                href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?toc=/dynamics365/finance/toc.json
+            - name: (ER) Prepare application metadata to be used in RCS
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?toc=/dynamics365/finance/toc.json
+            - name: (RCS) Access application metadata by using ER configuration
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?toc=/dynamics365/finance/toc.json
+            - name: (RCS) Access application metadata by using connected applications
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?toc=/dynamics365/finance/toc.json
             - name: Define model mappings and select data sources 
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/dynamics365/finance/toc.json
             - name: Map data model to selected data sources
@@ -3004,6 +3042,8 @@
                 href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-isempty.md?toc=/dynamics365/finance/toc.json
               - name: List
                 href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/finance/toc.json
+              - name: ListJoin
+                href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listjoin.md?toc=/dynamics365/finance/toc.json
               - name: ListOfFields
                 href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffields.md?toc=/dynamics365/finance/toc.json
               - name: ListOfFirstItem
@@ -3390,46 +3430,6 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/finance/toc.json
           - name: Specify a custom storage location for generated documents
             href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/finance/toc.json
-      - name: Embedded analytical solutions
-        items:
-        - name: Embedded Power BI in workspaces
-          href: ../fin-ops-core/dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/dynamics365/finance/toc.json
-        - name: Power BI Embedded integration
-          href: ../fin-ops-core/dev-itpro/analytics/power-bi-embedded-integration.md?toc=/dynamics365/finance/toc.json
-        - name: Customize embedded reports in Analytical workspaces 
-          href: ../fin-ops-core/dev-itpro/analytics/customize-analytical-workspace.md?toc=/dynamics365/finance/toc.json
-      - name: Personalization options with PowerBI.com
-        items:
-        - name: Features and services available via Power BI integration
-          href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/finance/toc.json
-        - name: Pin Power BI reports to workspaces
-          href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/finance/toc.json
-        - name: Select analytical workspaces from PowerBI.com
-          href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md?toc=/dynamics365/finance/toc.json
-      - name: Tools for creating and extending solutions
-        items:
-        - name: Analytics, aggregate measurements, and KPI modeling
-          href: ../fin-ops-core/dev-itpro/analytics/analytics.md?toc=/dynamics365/finance/toc.json
-        - name: Create analytical reports using Power BI Desktop
-          href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/finance/toc.json
-        - name: Model aggregate data
-          href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/finance/toc.json
-        - name: Add financial dimensions to aggregate measurements
-          href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/finance/toc.json
-        - name: Add analytics to workspaces by using Power BI Embedded
-          href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/finance/toc.json
-        - name: Help secure analytical workspaces and reports using Power BI Embedded
-          href: ../fin-ops-core/dev-itpro/analytics/secure-analytical-workspaces.md?toc=/dynamics365/finance/toc.json
-      - name: Power user management tools
-        items:
-        - name: Power BI integration with Entity store
-          href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/dynamics365/finance/toc.json
-        - name: Resolve issues after Entity store maintenance
-          href: ../fin-ops-core/dev-itpro/analytics/entity-store-maintenance.md
-        - name: Configure Power BI integration for workspaces
-          href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?toc=/dynamics365/finance/toc.json
-        - name: Bring your own database
-          href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/finance/toc.json
     - name: Mobile app
       items:
       - name: Mobile app home page
