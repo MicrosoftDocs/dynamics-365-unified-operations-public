@@ -46,6 +46,31 @@ You can setup and configure core insights without writing any code.
 
 In this topic, you will configure the scenario to generate a message in Supply Chain Management when a machine goes down. This is the **Equipment down** scenario.
 
+# Overview of setup process
+
++ Create a OneBox environment, and give the appropriate SQL users access to environment for IoT Intelligence.
++ Setup the IoT scenario in Supply Chain Management, including configuring the schema, mapping the signals to Suppy Chain Management sources, and enabling the scenario.
+
+## IoT Intelligence Scenario setup
+
++ How to enable the IoT Intelligence Feature flag
++ How to define the IoT Hub message schemas in the IoT Intelligence wizard        
+    + Call out the JSON message schema dependency         
+    + Provide examples on how this message schema translates into this schema path        
+    + Call out that multiple messages schemas can be defined and are shared
++ How to select the message schema paths for the IoT Intelligence scenario        
+    + Call out the dependency on the UNIX milliseconds timestamp        
+    + Call out that the message paths need be defined on same IoT Hub message        
+    + Provide examples of how one template can be filled out
++ How to map your IoT Hub signals to the Dynamics resources        
+    + Describe the importance on the signal mapping and what it represents        
+    + Describe the signal selection process and what it represents
++ How to enable the IoT Intelligence scenario
++ How to disable the IoT Intelligence scenario
++ How to modify a running IoT Intelligence scenario        
+    + List what can and cannot be updated while the scenario is running
+
+
 ## Azure Resource setup
 
 + Add the **Microsoft Dynamics Microservice ERP** **First Party App Id** to the customer tenant.
@@ -72,14 +97,6 @@ Notes:
 + You must add the Microsoft Dynamics microservice, first party app ID.
 + You must give the LCS environment access to the key vault.
 
-## OneBox Environment setup
-
-+ Give access to a OneBox Environment for IoT Intelligence access        
-    + Create the Network Security Group Inbound SQL Port rule        
-    + Create the Load Balancer Inbound NAT rule        
-    + Open up the VMs Firewall for the SQL port        
-    + Verify the VM’s ‘PC Discoverable setting’ is turned off
-+ Add the correct SQL users to the OneBox environment for IoT Intelligence access
 
 ## LCS Environment setup 
 
@@ -100,6 +117,7 @@ Notes:
 
 The **Equipment downtime** scenario maps a machine to a **PartOut** signal and defines an alert threshold. The machine is monitored only when the machine is selected for the scenario and is set to running in Supply Chain Management. If the time since the machine’s last received Part Out signal is greater than the alert threshold, then a **Machine down** notification is triggered. If the machine is still running, when the next **PartOut** signal is received a **Machine up** notification is triggered. If a machine stays down for 30 mins a new **Machine down** notification is triggered.
 
+1. 
 1. Log into the Finance and Operations apps.
 2. Switch the **USMF** (for demo data).
 3. Navigate to **Production control**.
@@ -185,24 +203,6 @@ There are several ways to view the messages processed in the scenario in Supply 
 2. In LCS, uninstall the addin.
 
 
-## IoT Intelligence Scenario setup
-
-+ How to enable the IoT Intelligence Feature flag
-+ How to define the IoT Hub message schemas in the IoT Intelligence wizard        
-    + Call out the JSON message schema dependency         
-    + Provide examples on how this message schema translates into this schema path        
-    + Call out that multiple messages schemas can be defined and are shared
-+ How to select the message schema paths for the IoT Intelligence scenario        
-    + Call out the dependency on the UNIX milliseconds timestamp        
-    + Call out that the message paths need be defined on same IoT Hub message        
-    + Provide examples of how one template can be filled out
-+ How to map your IoT Hub signals to the Dynamics resources        
-    + Describe the importance on the signal mapping and what it represents        
-    + Describe the signal selection process and what it represents
-+ How to enable the IoT Intelligence scenario
-+ How to disable the IoT Intelligence scenario
-+ How to modify a running IoT Intelligence scenario        
-    + List what can and cannot be updated while the scenario is running
 
 ## IoT Intelligence Metric setup
 
