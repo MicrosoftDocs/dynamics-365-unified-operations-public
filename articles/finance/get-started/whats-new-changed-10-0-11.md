@@ -43,9 +43,9 @@ This topic lists features that are new or changed for Microsoft Dynamics 365 Fin
 ## Features included in this release
 The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. 
 
-- [Remove option to replace budget plan](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/remove-option-replace-budget-plan)
+- [Remove option to replace budget plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/remove-option-replace-budget-plan)
 
- - [Extended Italian localization: Tax plafond](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-tax-plafond)
+ - [Extended Italian localization: Tax plafond](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-tax-plafond)
 
 
 
