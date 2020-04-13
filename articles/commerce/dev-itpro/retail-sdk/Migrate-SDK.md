@@ -57,7 +57,7 @@ The Retail SDK reference libraries project PackageReference. All the SDK samples
 ## What’s impacted
 
 - If you want to deploy a new merged package, that is, an extension and out-of-box changes, on version 10.0.11 or later, then you must migrate your solution to the SDK on Visual Studio 2017. No code changes are required to migrate and build your solution.
-- Specific references in extension projects must be migrated to PackageReference (NuGet reference).
+- Hard-coded references in extension projects must be migrated to PackageReference (NuGet reference).
 
 ### How to Migrate to the SDK for Visual Studio 2017
 
@@ -77,47 +77,33 @@ There arew two ways to migrate:
 
 Follow these steps to build the Retail SDK:
 
-- Open the Developer command prompt for Visual Studio 2017 or the msbuild 15.0 command prompt. Build the out-of-box Retail SDK by running `msbuild /t:rebuild` from the root of the SDK folder( where you can find the dirs.proj file). The folder is  **RetailSDK\\dirs.proj** or **RetailSDK\\Code\\dirs.proj** in most installations.
+1. Open the Developer command prompt for Visual Studio 2017 or the msbuild 15.0 command prompt. Build the out-of-box Retail SDK by running `msbuild /t:rebuild` from the root of the SDK folder( where you can find the dirs.proj file). The folder is  **RetailSDK\\dirs.proj** or **RetailSDK\\Code\\dirs.proj** in most installations.
+2. Merge your extension to the new SDK folder. For information about how to merge extension with the SDK, [Upgrade the Retail channel extension to the latest Retail SDK](../retailsdk-update.me).
+3. After merging the extensions, update all the hard-coded reference to PackageReferene using the NuGet packages.
 
--   Merge your extension to the new SDK folder. Detailed documentation on how to merge extension with the new SDK can be found [here](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/retailsdk-update).
+## How to update the reference in the Commerce Runtime (CRT)extensions project
 
--   After merging the extensions update all the hard-coded reference to PackageReferene using the NuGet packages.
+1. Open the CRT extension project in Visual Studio 2017.
+2. Add the local NuGet repository folder in the NuGet Package Manager. For information about how to create a local NuGet repository, see [Install and manage packages in Visual Studio using the NuGet Package Manager](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio#package-sources). 
 
-**How to update the reference in the Commerce Runtime (CRT)extensions project:**
+    > [!NOTE]
+    > All the SDK reference libraries are converted to NuGet packages, and libraries are removed from the **RetailSDK\\Reference** folder. The NuGet packages can be found in the **..\\RetailSDK\\Code\\pkgs** or **..\\RetailSDK\\pkgs** folder.
 
-1.  Open the CRT extension project in VS 2017.
+3. To add the NuGet Package reference to the project, right-click the **Dependencies** node in the project and select **Manage NuGet Packages**.
+4.  In the NuGet Package Manager window add the required packages. For example, if the project needs the Commerce runtime library reference, then add the **Microsoft.Dynamics.Commerce.Runtime** NuGet package. After adding the NuGet package reference, the project file will be updated with the package reference, as shown in the following example:
+    ```xml
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Dynamics.Commerce.Runtime" Version="9.21.x" />
+    </ItemGroup>
+    ```
 
-2.  Add local NuGet repository folder in the NuGet Package Manager.
+> [!NOTE]
+> PackageReference also supports floating versions, updating the version with floating version number. For more information about floating versions, see [How NuGet resolves package dependencies](https://docs.microsoft.com/nuget/concepts/dependency-resolution#floating-versions). With the floating version, extensions no longer need to update the reference with every update, because NuGet will automatically resolve to the latest version. For example, the PackageReference would look like `<PackageReference Include="Microsoft.Dynamics.Commerce.Runtime" Version="9.21.x" />`.
 
-    Note: All the SDK reference libraries are converted to NuGet packages, libraries are removed from the RetailSDK\\Reference folder. **All the NuGet packages can be found in the ..\\RetailSDK\\Code\\pkgs or ..\\RetailSDK\\pkgs**.
+Similarly, you would update the references for all the Retail server, Proxy, and Hardware station extension projects.
 
-    To create a local NuGet repository follow the steps mentioned in this [documentation](https://docs.microsoft.com/en-us/nuget/consume-packages/install-use-packages-visual-studio#package-sources).
+## What’s not impacted
 
-3.  To add the NuGet Package reference to the project, right click the Dependencies node in the project and select **Manage NuGet Packages**.
-
-4.  In the NuGet Package Manager window add the required packages.
-
-**Ex:** If the project need the Commerce runtime library reference add the Microsoft.Dynamics.Commerce.Runtime NuGet package.
-
-After adding the NuGet package reference, the project file will be updated with the package reference.
-```
-<ItemGroup>
-  <PackageReference Include="Microsoft.Dynamics.Commerce.Runtime" Version="9.21.x" />
-</ItemGroup>
-```
-**Note:** PackageReference also support floating versions, update the version with floating version number. To know more details about the floating versions check this [documentation](https://docs.microsoft.com/en-us/nuget/concepts/dependency-resolution#floating-versions). With the floating version, extensions no need to update the reference with every update, NuGet will automatically resolve to the latest version.
-
-Ex:
-
-```
-<PackageReference Include="Microsoft.Dynamics.Commerce.Runtime" Version="9.21.x" />
-
-```
-
-**Similarly update the reference for all the Retail server, Proxy and Hardware station extension project.**
-
-**What’s not impacted:**
-
-   -   It’s not required to change the extensions code written in previous version of SDK, only update of reference and recompilation is required with the new SDK.
+You don't have to change the extensions code written in previous versions of the Retail SDK, updating references and recompiling is required only with the new SDK.
    
-   - Existing Azure DevOps pipeline set up for Retail SDK build will continue to work. If required in the MSBuild task step change the msbuild version to 15.0
+Existing Azure DevOps pipelines set up for Retail SDK build will continue to work. If required in the MSBuild task step, change the msbuild version to 15.0.
