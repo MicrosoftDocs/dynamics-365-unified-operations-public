@@ -177,54 +177,54 @@ Titles and notes provide places for user-specified text to be associated with a 
 
 The **Hide this step** option allows the author to prevent certain steps from appearing in the task guide. This is useful for hiding steps which are necessary for the task recording to execute during playback mode, but should not be seen by the end-user. An example of such steps are copy steps, system-generated steps, and data clean-up steps. Hiding a sub-task will result in all of the steps that are recorded within that sub-task to also be hidden.
 
-## Recording gestures
+## Using control gestures
 
-The basic recording capability allows a user to record an end-to-end business process using Task recorder without adding overhead to the process. In some circumstances, more advanced recording features can be leveraged to create even richer business process recordings. Each of the following gestures are triggered by right-clicking on a control in the client that supports the gesture. Each gesture results in a step being added to the list of steps for the recording. If the gesture is not supported for a particular control, then the gesture will not appear in the right-click menu.
+The basic recording capability allows a user to record an end-to-end business process using Task recorder without adding overhead to the process. In some circumstances, more advanced recording features can be leveraged to create even richer business process recordings. Each of the following gestures are found under the **Task recorder** option in a controls right-click context menu and result in a step being added to the recording. If the gesture is not supported for a particular control, then the gesture will not appear in the right-click menu.
 
 ### Copy
 
-This right-click gesture allows copying a control to the Task recorder "clipboard". The control may then be used later as part of a **Paste** or **Validate** gesture.
+This gesture allows copying the value for the current control to the Task recorder "clipboard". That value may then be used later as part of a **Paste** or **Validate** gesture. Because values from multiple controls may need to be pasted, the Task recorder "clipboard" maintains a list of all control values that have been copied in the recording.  
 
 ### Paste
 
-This right-click gesture allows the pasting a value from a previously copied control. The Task recorder paste function operates just like the paste function that users may be familiar with, and it has an additional benefit when used during recordings. During playback of a recording, Task recorder will also re-play the **Copy** and **Paste** commands that were recorded. During playback, if the copied control has a different value than it had during recording, then Task recorder will use the current value when pasting, rather than use the value the copied control had during recording. This is useful in scenarios were the copied control has a value that can change between environments (such as recIDs, number sequences, etc.).
+This gesture allows pasting a value from a previous Copy gesture within the same recording. The Task recorder paste function operates similar to the standard paste function that users may be familiar with, but it has an additional benefit when used during recordings. As Task recorder will re-play the recorded **Copy** and **Paste** commands during playback, if the copied control has a different value than it had during recording, then Task recorder will use the current value when pasting, rather than use the value the copied control had during recording. This is useful in scenarios were the copied control has a value that can change between environments (such as recIDs, number sequences, etc.).
 
-There's an additional benefit from using **Copy** and **Paste** when generating test code. For any control whose value is set via the **Paste** action, Task recorder does not need to create a parameterized input variable for that control's value, because it is set based on another control's value. This can be very useful in scenarios where an entity is created, such as a Customer, and an identifier for the Customer is frequently entered during the recording. Instead of needing to manually re-enter the Customer name or ID throughout the scenario, and causing Task recorder to generate a parameterized input variable for each entry, the user can instead repeatedly **Paste** the Customer name/ID after copying it once and Task recorder will generate a single parameterized input variable to represent the Customer name/ID. This feature can make changing the input data for a generated test much easier.
+There's an additional benefit from using **Copy** and **Paste** when generating test code. For any control whose value is set via the **Paste** action, Task recorder does not need to create a parameterized input variable for that control's value, because it is set based on another control's value. This can be very useful in scenarios where an entity is created, such as a Customer, and an identifier for the Customer is frequently entered during the recording. Instead of needing to manually re-enter the Customer name or ID throughout the scenario and causing Task recorder to generate a parameterized input variable for each entry, the user can instead repeatedly **Paste** the Customer name/ID after copying it once and Task recorder will generate a single parameterized input variable to represent the Customer name/ID. This feature can make changing the input data for a generated test much easier.
 
 ###  Validate
 
-This right-click gesture lets the user insert a step that validates the value of the right-clicked control. **Validate** always uses equality to validate the control value. *Validations aren't currently run during recording playback.* Instead, they are run only when the generated test code is run. Two kinds of validation are available:
+This gesture lets you insert a step that validates the value of the targeted control. **Validate** always uses equality to validate the control value. *Validations aren't currently run during recording playback*; instead, they are run only when the generated test code is run. Two kinds of validation are available:
 
--   **Current value validation** will capture the right-clicked control's value at the time of recording and use this value to generate an assertion in the test code. In the list of validation options in the right-click menu, Current Value is always the first.
+-   **Current value validation** will capture the targeted control's value at the time of recording and use this value to generate an assertion in the test code. In the list of validation options in the right-click menu, *Current value* is always the first.
 -   **Reference value validation** will use the value of a previously copied control when generating an assertion in the test code. This allows creating assertions that are resilient to changes in the data, since the value is not hardcoded into the test code. In the list of validation options in the right-click menu, **Reference value validation** follows the format \[AOT name of copied control: current copied value\].
 
 ### Add info step
 
-This right-click gesture allows the user to insert a step and supply their own text for the step. This feature is primarily useful for creating task guides. An **Informational Step** is a task guide step where the instruction text for the step are user-specified. **Info steps** are useful for describing actions that are a part of the scenario but must take place outside of the client, such as searching for an item inventory or checking an email for information.
+This gesture allows you to insert a step and supply your own text for the step. This feature is primarily useful for creating task guides. An **Informational step** (or **info step** for short) is a task guide step where the instruction text for the step are user-specified. **Info steps** are useful for describing actions that are a part of the scenario but must take place outside of the client, such as searching for an item inventory or checking an email for information.
 
-The user can specify where an **Info step** should appear in the task guide. The **Info step** can either point to a control on a form, if the step is associated with the control, or the **Info step** can appear in the upper-right of the form, if the step is external to the client and the step is an explanation that applies to the entire form.
+You can specify where an **Info step** should appear in the task guide. The **Info step** can point to a control on the page if the step is associated with the control, or the **Info step** can appear in the upper-right of the page if the step is external to the client or  an explanation that applies to the entire form.
 
 > [!NOTE]
 > Because **Info steps** are manually specified steps and are not automatically recorded by Task recorder when the user takes an action on a control, the **Info step** does not have the capability to automatically progress when a user completes the step in the task guide. Because the **Info step** is not associated with taking an action in the client, there is no action for a task guide to detect that the user has completed in order to automatically progress to the next step.
 
-## Download options
-After you select **Stop**, several options are shown for saving files that are related to the completed recording. Select **Save to this PC**, and save the task recording package to your desktop. You will use this file later.
+## Options after completing a recording
+After you select **Stop** to end your recording session, several options are shown for saving files related to the completed recording. Select **Save to this PC**, and save the task recording package to your desktop. You will use this file later.
 
 [![Options for downloading or saving a recording after recording has ended](./media/taskrecorderguide-taskrecorderdownloadoptions.png)](./media/taskrecorderguide-taskrecorderdownloadoptions.png)
 
-### Save the task recording package (Save to this PC)
+### Save to this PC
 
-You should download the task recording package after you finish your recording. The task recording package can be used to play a task guide, maintain the recording, or edit the recording's annotations.
+One option after you finish your reocrding is to download the task recording package (an AXTR file) to your computer. This file can be loaded at a later time via the Task recorder pane as a task guide or to make edits to the recording.  
 
-### Save the recording to an LCS library (Save to Lifecycle Services)
+### Save to Lifecycle Services (LCS) 
 
-When you save your recording to an LCS library, the BPM diagram for the recording is published on the specified business process. If the selected LCS library is set as a Help library, you will be able to find the task guide for the recording by searching the **Help** menu.
+When you save your recording to an LCS library, it is published on the specified business process in a BPM library. If the selected LCS library is set as a Help library, you will be able to find the task guide for the recording by searching the **Help** menu.
 
 ### Export as Word document
 
 The Microsoft Word document for your recording contains the recorded steps as well as any screenshots that were captured.
 
-### Download the raw recording file (Save as developer recording)
+### Save as developer recording
 
 The raw recording file (developer recording) is useful for developer scenarios, such as test code generation and scenarios where [RSAT](../perf-test/rsat/rsat-overview.md) is used.
 
