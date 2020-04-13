@@ -171,6 +171,9 @@ In this scenario we will explain how to create a new table and add it to the cha
 
 - Create a new table in the channel database in the **ext schema** either using SQL Server Management Studio Designer or using SQL scripts. The following is an example SQL script.
 
+> [!NOTE]
+> **DataAreaId** Column name should not be explicitly included in new or extended table it's automatically added by CDX and it would throw an error during Initialize retail scheduler if added.
+
     ```sql
     -- Create the extension table to store the custom fields.
     IF (SELECT OBJECT_ID('[ext].[CONTOSORETAILSTOREHOURSTABLE]')) IS NULL
