@@ -49,27 +49,7 @@ In this topic, you will configure the scenario to generate a message in Supply C
 # Overview of setup process
 
 + Create a OneBox environment, and give the appropriate SQL users access to environment for IoT Intelligence.
-+ Setup the IoT scenario in Supply Chain Management, including configuring the schema, mapping the signals to Suppy Chain Management sources, and enabling the scenario.
-
-## IoT Intelligence Scenario setup
-
-+ How to enable the IoT Intelligence feature flag
-+ How to define the IoT Hub message schemas in the IoT Intelligence wizard        
-    + Call out the JSON message schema dependency         
-    + Provide examples on how this message schema translates into this schema path        
-    + Call out that multiple messages schemas can be defined and are shared
-+ How to select the message schema paths for the IoT Intelligence scenario        
-    + Call out the dependency on the UNIX milliseconds timestamp        
-    + Call out that the message paths need be defined on same IoT Hub message        
-    + Provide examples of how one template can be filled out
-+ How to map your IoT Hub signals to the Dynamics resources        
-    + Describe the importance on the signal mapping and what it represents        
-    + Describe the signal selection process and what it represents
-+ How to enable the IoT Intelligence scenario
-+ How to disable the IoT Intelligence scenario
-+ How to modify a running IoT Intelligence scenario        
-    + List what can and cannot be updated while the scenario is running
-
++ Setup the IoT scenario in Supply Chain Management, including enabling the feature flag, configuring the schema, mapping the signals to Suppy Chain Management sources, and enabling the scenario.
 
 ## Azure Resource setup
 
@@ -205,6 +185,8 @@ There are several ways to view the messages processed in the scenario in Supply 
 1. In Supply Chain Management, run the **Equipment downtime** configuration wizard, and disable the scenario.
 2. In LCS, uninstall the addin.
 
+## Modify a running IoT Intelligence scenario        
+    + List what can and cannot be updated while the scenario is running
 
 
 ## IoT Intelligence Metric setup
