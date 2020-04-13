@@ -70,12 +70,14 @@ There arew two ways to migrate:
         + [sdk-2.1.513-windows-x64-installer](https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-2.1.513-windows-x64-installer)
         + [runtime-2.0.9-windows-x64-installer](https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-2.0.9-windows-x64-installer)
         + [runtime-2.1.17-windows-x64-installer](https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-2.1.17-windows-x64-installer)
-        + [TypeScript_Dev14Full](http://download.microsoft.com/download/6/D/8/6D8381B0-03C1-4BD2-AE65-30FF0A4C62DA/TS-2.2-dev14update3-20170321.1/TypeScript_Dev14Full.exe)
+        + [TypeScript_Dev14Full](https://download.microsoft.com/download/6/D/8/6D8381B0-03C1-4BD2-AE65-30FF0A4C62DA/TS-2.2-dev14update3-20170321.1/TypeScript_Dev14Full.exe)
 
 
-## Build the OOB SDK:
+## Build the Retail SDK
 
--   Open the Developer command prompt for VS 2017 or msbuild 15.0 command prompt and build the OOB Retail SDK by running msbuild /t:rebuild from the root of the SDK folder where you can find the dirs.proj. (Mostly it will be RetailSDK\\dirs.proj or RetailSDK\\Code\\dirs.proj)
+Follow these steps to build the Retail SDK:
+
+- Open the Developer command prompt for Visual Studio 2017 or the msbuild 15.0 command prompt. Build the out-of-box Retail SDK by running `msbuild /t:rebuild` from the root of the SDK folder( where you can find the dirs.proj file). The folder is  **RetailSDK\\dirs.proj** or **RetailSDK\\Code\\dirs.proj** in most installations.
 
 -   Merge your extension to the new SDK folder. Detailed documentation on how to merge extension with the new SDK can be found [here](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/retailsdk-update).
 
