@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Human Resources (April 13, 2020)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources.
+description: This article describes features that are either new or changed in Microsoft Dynamics 365 Human Resources.
 author: Darinkramer
 manager: AnnBe
 ms.date: 4/13/2020
@@ -29,49 +29,57 @@ ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: Human Resources
 
 ---
-# "What's new or changed in Dynamics 365 Human Resources (April 7, 2020)"
+# What's new or changed in Dynamics 365 Human Resources (April 13, 2020)
 
 This article describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3136. The numbers in parentheses in some headings refer to LCS support numbers for reference.
 
 ## New production release cadence
 
-With this weeks release, the release cadence for Human Resources will shift from a weekly update to a bi-weekly update. To ensure alignment with safe deployment practices, and maintain high standards of stability and reliability in the service, the process of deploying service updates to all regions will be a two-week rollout. Additional testing and monitors will be in place to verify successful deployment at each stage of the process. For more information on the release cadence, see [Update process](hr-admin-setup-update-process.md).
+With this week's release, the release cadence for Human Resources shifts from a weekly update to a biweekly update. To ensure alignment with safe deployment practices, and maintain high standards of stability and reliability in the service, the process of deploying service updates to all regions is now a two-week rollout. Additional testing and monitors are in place to verify successful deployment at each stage of the process. For more information on the release cadence, see [Update process](hr-admin-setup-update-process.md).
 
-## Rounding Precision field is not editable after specifying a Rounding Type - (435616)
+## Rounding precision field isn't editable after specifying a Rounding type (435616)
 
-With this change, the rounding precision field will now be available after updates are made to the rounding type field.
+With this change, the **Rounding precision** field is now available after you update the **Rounding type** field.
 
-## Not able to edit the leave enrollment end date when the leave plan doesn't have accrual periods - (413628)
+## Can't edit leave enrollment end date when the leave plan doesn't have accrual periods (413628)
 
-You will now be able to edit the enrollment end date without  error "Field Accrual date basis must be filled in".
+You can now edit the enrollment end date without getting the error "Field Accrual date basis must be filled in."
 
-## Employment entity not syncing to CDS  - (430834)
+## Employment entity doesn't sync to Common Data Service (430834)
 
-This change corrects an issue where the employment data was not syncing to CDS after financial dimensions were added. 
+This change corrects an issue where the employment data wasn't syncing to Common Data Service after adding financial dimensions. 
 
-## Remove multi parenting for workcalendartimeinterval entity - (431775)
+## Remove multi-parenting for Work Calendar Time Interval entity (431775)
 
-This change removes multi parenting for the workcalendartimeinterval entity.
+This change removes multi-parenting for the **Work Calendar Time Interval** entity.
 
-## Filter with CAST function doesn't work on OData call “Position worker assignments” entity - (431699)
+## Filter with CAST function doesn't work on OData call Position Worker Assignment entity (431699)
 
-This update includes a change to allow use of the filter with CAST function within OData for entity "Position worker assignments"
+This update includes a change to allow  filter with CAST function within OData for the **Position Worker Assignment** entity.
 
 ## In Preview
 
 ## Leave suspension
 
-You can suspend leave and absence in Human Resources for an employee. Suspending leave stops the leave accruals for selected leave types. If the suspension occurs after an accrual has been processed, suspending leave will create a prorated adjustment to the employee's leave balance.  Documentation can be found [here](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-leave-and-absence-suspend-leave).
+You can suspend leave and absence in Human Resources for an employee. Suspending leave stops the leave accruals for selected leave types. If the suspension occurs after an accrual has been processed, suspending leave creates a prorated adjustment to the employee's leave balance. For more information, see [Suspend leave](hr-leave-and-absence-suspend-leave.md).
 
 ## Carry forward rules
 
-You can specify a carry forward leave type for carry forward balances where carry forward adjustments are transferred to. For example, if an employee carry's forward 10 days, you can pick a different leave type for those 10 days. Documentation can be found [here](https://docs.microsoft.com/en-us/dynamics365/human-resources/hr-leave-and-absence-types).
+You can specify a carry forward leave type for carry forward balances where carry forward adjustments are transferred. For example, if an employee carries forward 10 days, you can pick a different leave type for those 10 days. For more information, see [Configure leave and absence types](hr-leave-and-absence-types.md).
 
 ## Known issues
 
 ## Employment Details entity
 
-The employment detail entity has been updated with the following fields:  PayFrequency, Employment Category ID, Employment Type, EmploymentType ID and Benefit Employment Status.  The setup data for these fields rely on benefits management being enabled in feature management.  Therefore, these fields should not be populated or updated in the employment detail entity, as it will result in errors during import.
+The **Employment Detail** entity has been updated with the following fields:
+
+- **PayFrequency**
+- **Employment Category ID**
+- **Employment Type**
+- **EmploymentType ID**
+- **Benefit Employment Status**
+
+The setup data for these fields rely on benefits management being enabled in the **Feature management** workspace. Don't populate or update these fields in the **Employment Detail** entity, because it will result in errors during import.
 
 ## SharePoint preview doesn't work in some environments
 
