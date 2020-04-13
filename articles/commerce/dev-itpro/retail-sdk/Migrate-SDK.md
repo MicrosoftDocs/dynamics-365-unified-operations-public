@@ -33,22 +33,20 @@ ms.dyn365.ops.version: 10.0.11
 
 This topic explains what’s changed in the Retail SDK 10.0.11 release, how to migrate to Visual Studio 2017, and how to update an extension project reference library to NuGet.
 
-![include](banner.md)
+[!include [banner](../../includes/banner.md)]
 
 ## What’s changed in 10.0.11
 
--   Commerce SDK updated to Visual Studio 2017.
--   References updated to PackageReference (NuGet package reference).
+- Commerce SDK updated to Visual Studio 2017.
+- References updated to PackageReference (NuGet package reference).
 
 ## Retail SDK updated to support Visual Studio 2017
 
-Retail SDK updated to VS 2017. From 10.0.11 all Retail SDK components (MPOS, CPOS, Commerce Runtime (CRT) RS, Proxy and Hardware station (HWS) can be built and compiled only in VS 2017, it will not work anymore in VS 2015.
+Retail SDK now runs on Visual Studio 2017. With release 10.0.11 and later, all Retail SDK components, including MPOS, CPOS, Commerce Runtime (CRT) RS, Proxy, and Hardware station (HWS), can be built and compiled only in Visual Studio 2017. You cannot use Visual Studio 2015.
 
 ## References updated to PackageReference
 
-The Retail SDK reference libraries are updated to project PackageReference. All the SDK samples are updated to use the PackageReference model. All the SDK reference libraries are converted to NuGet packages, libraries are removed from the RetailSDK\\Reference folder. **All the NuGet packages can be found in the ..\\RetailSDK\\Code\\pkgs or ..\\RetailSDK\\pkgs**.
-
-### Example
+The Retail SDK reference libraries project PackageReference. All the SDK samples use the PackageReference model. All the SDK reference libraries are converted to NuGet packages, libraries are removed from the RetailSDK\\Reference folder. The NuGet packages are in the **..\\RetailSDK\\Code\\pkgs or ..\\RetailSDK\\pkgs** folder. The following example shows the reference to **Microsoft.Dynamics.Commerce.Runtime**:
 
 ```xml
 <ItemGroup>
@@ -58,22 +56,21 @@ The Retail SDK reference libraries are updated to project PackageReference. All 
 
 ## What’s impacted
 
-- Extension built based on the older SDK needs to be migrated to the new SDK using VS 2017, no code change would be required and this steps is required only when you have extension and want to deploy a new merged package (Extension + OOB changes) with version 10.0.11 or greater.
-- Hard reference in extension project must be migrated to PackageReference (NuGet reference).
-
+- If you want to deploy a new merged package, that is, an extension and out-of-box changes, on version 10.0.11 or later, then you must migrate your solution to the SDK on Visual Studio 2017. No code changes are required to migrate and build your solution.
+- Specific references in extension projects must be migrated to PackageReference (NuGet reference).
 
 ### How to Migrate to the SDK for Visual Studio 2017
 
 There arew two ways to migrate:
-- Deploy a new development and build environment from LCS with VS 2017 template.
-- Update extensions to VS 2017 in the development environent:
-    - Install VS 2017 developer, professional or enterprise edition in the existing build and dev VM.
-    - If manually install VS 2017, please also install the below prerequisites in the dev VM or else the compilation will fail with .NET SDK and runtime errors:
-        + [https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-2.1.202-windows-x64-installer](https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-2.1.202-windows-x64-installer)
-        + [https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-2.1.513-windows-x64-installer](https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-2.1.513-windows-x64-installer)
-        + [https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-2.0.9-windows-x64-installer](https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-2.0.9-windows-x64-installer)
-        + [https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-2.1.17-windows-x64-installer](https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-2.1.17-windows-x64-installer)
-        + http://download.microsoft.com/download/6/D/8/6D8381B0-03C1-4BD2-AE65-30FF0A4C62DA/TS-2.2-dev14update3-20170321.1/TypeScript_Dev14Full.exe
+- Deploy a new development and build environment from LCS, and use the Visual Studio 2017 template.
+- Update extensions to Visual Studio 2017 in the development environent:
+    - Install Visual Studio 2017 Community, Professional, or Enterprise edition in the existing build and development VM.
+    - If you manually install Visual Studio 2017, install the following prerequisites in the development VM. If you do not install these prerequisites, then compilation will fail, generating .NET SDK and runtime errors:
+        + [sdk-2.1.202-windows-x64-installer](https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-2.1.202-windows-x64-installer)
+        + [sdk-2.1.513-windows-x64-installer](https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-2.1.513-windows-x64-installer)
+        + [runtime-2.0.9-windows-x64-installer](https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-2.0.9-windows-x64-installer)
+        + [runtime-2.1.17-windows-x64-installer](https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-2.1.17-windows-x64-installer)
+        + [TypeScript_Dev14Full](http://download.microsoft.com/download/6/D/8/6D8381B0-03C1-4BD2-AE65-30FF0A4C62DA/TS-2.2-dev14update3-20170321.1/TypeScript_Dev14Full.exe)
 
 
 ## Build the OOB SDK:
