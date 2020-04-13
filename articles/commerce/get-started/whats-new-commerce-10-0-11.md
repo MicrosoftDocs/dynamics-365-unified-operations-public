@@ -50,6 +50,7 @@ The following features are included in this release. The feature titles link to 
 - [Improved support for serial number tracking dimension in store inventory processes](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/improved-support-serial-number-tracking-dimension-store-inventory-processes)
 - [Notifications and mini-cart](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/support-mini-cart-e-commerce-site)
 - [Theme extensions](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/support-theme-extensions)
+- [New events and placeholders for transactional emails](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-commerce/new-events-placeholders-transactional-emails)
 - Commerce SDK updated to Visual Studio 2017
 
 ## Additional resources
