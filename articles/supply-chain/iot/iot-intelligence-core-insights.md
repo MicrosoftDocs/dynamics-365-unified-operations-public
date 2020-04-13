@@ -48,6 +48,7 @@ In this topic, you will configure the scenario to generate a message in Supply C
 
 # Overview of setup process
 
++ Configure your devices to send telemetry to IoT Hub. For more information, see [Azure IoT Hub Documentation](https://docs.microsoft.com/azure/iot-hub/).
 + Create a OneBox environment, and give the appropriate SQL users access to environment for IoT Intelligence.
 + Setup the IoT scenario in Supply Chain Management, including enabling the feature flag, configuring the schema, mapping the signals to Suppy Chain Management sources, and enabling the scenario.
 
