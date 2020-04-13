@@ -292,6 +292,10 @@ The following procedure shows how to set up an external gift card by using produ
 
 For the storefront, the gift card must also be included in the storefront's assortment. For more information, see [Assortment management](https://docs.microsoft.com/dynamics365/commerce/assortments).
 
+> [!NOTE]
+> The gift card product used for external gift card setup in the point of sale should not use product masters with item variants. Gift cards based on item variants may still be used for payments, balance inquiries and cash out in the point of sale, but gift card products associated with the point of sale for issuance must be standard products. 
+
+
 ### Set up notification emails for virtual gift cards
 
 For information about email setup, see [Configure email functionality](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/configure-email-functionality-in-microsoft-dynamics-ax).
