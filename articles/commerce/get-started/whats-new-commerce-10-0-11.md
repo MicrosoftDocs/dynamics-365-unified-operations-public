@@ -5,7 +5,7 @@ title: Preview features in Dynamics 365 Commerce 10.0.11 (July 2020)
 description: This topic describes features that are either new or changed in Dynamics 365 Commerce 10.0.11. 
 author: josaw1
 manager: AnnBe
-ms.date: 04/13/2020
+ms.date: 04/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 10.0.11
 [!include [banner](../includes/preview-banner.md)]
 
 
-This topic lists features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.11. This version has a build number of 10.0.xxx and is available as follows:
+This topic lists features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.11. This version has a build number of 10.0.464 and is available as follows:
 
 - **Preview release:** April 2020
 - **General availability (self-update):** May 2020
