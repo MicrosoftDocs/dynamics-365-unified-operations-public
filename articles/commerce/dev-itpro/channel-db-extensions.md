@@ -5,7 +5,7 @@ title: Channel database extensions
 description: This topic explains how to extend the channel database.
 author: mugunthanm
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-retail
@@ -172,7 +172,7 @@ In this scenario we will explain how to create a new table and add it to the cha
 - Create a new table in the channel database in the **ext schema** either using SQL Server Management Studio Designer or using SQL scripts. The following is an example SQL script.
 
 > [!NOTE]
-> **DataAreaId** Column name should not be explicitly included in new or extended table it's automatically added by CDX and it would throw an error during Initialize retail scheduler if added.
+> The **DataAreaId** column name hould not be explicitly included in new or extended table. This is automatically added by Commerce Data Exchange (CDX). If added, an error will occur during initialization of the retail scheduler.
 
     ```sql
     -- Create the extension table to store the custom fields.
