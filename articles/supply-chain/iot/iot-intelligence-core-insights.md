@@ -53,7 +53,7 @@ In this topic, you will configure the scenario to generate a message in Supply C
 
 ## IoT Intelligence Scenario setup
 
-+ How to enable the IoT Intelligence Feature flag
++ How to enable the IoT Intelligence feature flag
 + How to define the IoT Hub message schemas in the IoT Intelligence wizard        
     + Call out the JSON message schema dependency         
     + Provide examples on how this message schema translates into this schema path        
@@ -117,13 +117,13 @@ Notes:
 
 The **Equipment downtime** scenario maps a machine to a **PartOut** signal and defines an alert threshold. The machine is monitored only when the machine is selected for the scenario and is set to running in Supply Chain Management. If the time since the machine’s last received Part Out signal is greater than the alert threshold, then a **Machine down** notification is triggered. If the machine is still running, when the next **PartOut** signal is received a **Machine up** notification is triggered. If a machine stays down for 30 mins a new **Machine down** notification is triggered.
 
-1. 
 1. Log into the Finance and Operations apps.
-2. Switch the **USMF** (for demo data).
-3. Navigate to **Production control**.
-4. Navigate to **Setup \> IoT Intelligence \> Scenario parameters**. Enter the Redis connection string. *Insert instructions here on how to get this value. It appears not to be in the key vault.*
-5. Navigate to **Setup \> IoT Intelligence \> Scenario management**.
-6. Click **Configure** on the **Equipment downtime** tile. This starts the configuration wizard for the **Equipment sensor schema definition**. The goal here is to setup the schema in Supply Chain Management to match the JSON format that you created when you setup the message in Azure. In this example, the message payload contains a batch of messages with this format:
+2. Enbale the IoT Intelligence feature flag. For more information, see [Feature management overview](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+3. Switch the **USMF** (for demo data).
+4. Navigate to **Production control**.
+5. Navigate to **Setup \> IoT Intelligence \> Scenario parameters**. Enter the Redis connection string. *Insert instructions here on how to get this value. It appears not to be in the key vault.*
+6. Navigate to **Setup \> IoT Intelligence \> Scenario management**.
+7. Click **Configure** on the **Equipment downtime** tile. This starts the configuration wizard for the **Equipment sensor schema definition**. The goal here is to setup the schema in Supply Chain Management to match the JSON format that you created when you setup the message in Azure. In this example, the message payload contains a batch of messages with this format:
 
     ```json
     {
@@ -142,17 +142,20 @@ The **Equipment downtime** scenario maps a machine to a **PartOut** signal and d
         ]
     }
     ```
-7. Add a row to the table. 
+
+8. Add a row to the table. 
 
     a. Set the **Schema name** to **id**.
     b. Set the **Schema path** to **/[payload]\*/id**.
     c. Set the **Description** to **Message id**.
-8. Add a row to the table. 
+
+9. Add a row to the table. 
 
     a. Set the **Schema name** to **timestamp**.
     b. Set the **Schema path** to **/[payload]\*/timestamp**.
     c. Set the **Description** to **Message timestamp**.
-9. Add a row to the table. 
+
+10. Add a row to the table. 
 
     a. Set the **Schema name** to **value**.
     b. Set the **Schema path** to **/[payload]\*/value**.
@@ -160,7 +163,7 @@ The **Equipment downtime** scenario maps a machine to a **PartOut** signal and d
 
     You don't need to define all the properties in the message, only the ones that you need. In this example, you did not create a row for **Root timestamp**.
   
-10. If there are sample entries in the table, delete them.
+11. If there are sample entries in the table, delete them.
 12. Click **Next** to go to the **Equipment sensor schema map** page.
 13. In the row for **Equipment resource id** set the **Schema name** to **id**. The valid values are displayed in a dropdown table.
 14. In the row for **UTC time** set the **Schema name** to **Timestamp**. The valid values are displayed in a dropdown table.
