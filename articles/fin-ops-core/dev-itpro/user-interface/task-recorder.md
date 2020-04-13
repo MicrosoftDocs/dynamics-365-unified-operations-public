@@ -2,7 +2,7 @@
 # required metadata
 
 title: Task recorder resources
-description: This topic describes how to use Task recorder to record client functions.
+description: This topic describes how to use Task recorder to record business processes.
 author: jasongre
 manager: AnnBe
 ms.date: 03/02/2020
@@ -34,17 +34,21 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to use Task recorder to record client functions.
+This topic describes how to use Task recorder to record business processes.
 
 ## Overview
 
-### The Task recorder
+### Task recorder
 
-The Task recorder for Finance and Operations apps has high responsiveness, a flexible extensibility application programming interface (API), and seamless integration with consumers of business process recordings. Integration of Task recorder with the [Business process modeler (BPM)](https://bpm.lcs.dynamics.com) tool in Microsoft Dynamics Lifecycle (LCS) has been kept, so that users can continue to produce rich business process diagrams from recordings, and use them to analyze and design their applications.
+Task recorder for Finance and Operations apps is a utility that allows users to record business processes for a number of different use cases including: 
+-  Step-by-step guided tours of a particular business process in the application itself 
+-  Documentation of a business process as a Word document, optionally with screenshots
+-  Regression tests for a business process
+-  Automatic playback of a business process in the application
 
-Task recorder can now automatically generate application regression tests from business process recordings and play back previously recorded processes. These new features also include new gestures that let users take full advantage of the powerful new Task recorder.
+Task recorder for Finance and Operations apps boasts high responsiveness, a flexible extensibility application programming interface (API), and seamless integration with consumers of business process recordings. Task recorder also integrates with the [Business process modeler (BPM)](https://bpm.lcs.dynamics.com) tool in Microsoft Dynamics Lifecycle (LCS), so that users can continue to organize their recordings. The ability to produce business process diagrams from recordings, however, has been deprecated.
 
-If you're reading this tutorial for the first time and want to practice the topics as they are discussed, note that Arabic and Roman numerals indicate actionable steps that you should take. Alphabetical entries indicate paragraphs that have helpful details about how to use Task recorder.
+Task recorder can automatically generate application regression tests from business process recordings and play back previously recorded processes. These features also include test-specific gestures that let users take full advantage of Task recorder.
 
 ### Architecture
 
@@ -52,15 +56,15 @@ Task recorder is able to record user actions in the client with exact fidelity. 
 
 ### Basic configuration
 
-Task recorder is pre-installed and users are able to begin recording business processes immediately after opening the client for the first time. Task recorder supports Microsoft Edge, Internet Explorer 11, and the latest version of Google Chrome.
+Task recorder is bundled with any Finance and Operations app and allows users to begin recording business processes immediately after opening the client for the first time.  
 
 > [!IMPORTANT]
 > The **Task guides** tab is currently not available in Commerce or Human Resources. We are currently working to enable this functionality in a future release. Task guides in the Getting Started experience in Human Resources remain available to cover basic functionality. Procedural help is also available on the docs.microsoft.com site ([https://docs.microsoft.com/dynamics365/](../../fin-ops/index.md)) for both Commerce and Human Resources.
 
-## Create a recording
-The following steps show the process for creating a new recording using Task recorder.
+## Start a new recording
+The following steps show the process for starting a new recording using Task recorder.
 
-1.  Open the client and log in. It's a good practice to refresh the browser before each new recording. This creates a new user session and restarts Task recorder, providing the most stable recording experience.
+1.  Open the product and log in. It's a good practice to refresh the browser before each new recording. This creates a new user session and restarts Task recorder, providing the most stable recording experience.
 2.  Select the company that you want to use while recording. If this is your first time using Task recorder, you can follow along as this tutorial creates a sample recording based on a Fleet Management business process. You will need to load the Fleet demo data to follow along:
     1.  Go to **Dashboard &gt; Fleet Management &gt; Fleet setup**.
     2.  Click **Load demo data**.
@@ -69,39 +73,32 @@ The following steps show the process for creating a new recording using Task rec
 
 3.  Go to **Settings &gt; Task recorder**.
     
-    ![This image shows the location of the Task recorder menu button, which is used to open Task recorder.](./media/taskrecorderguide-taskrecordermenubutton.png)
-    
-4.  The **Task recorder pane** opens. The user may click the "**X**" in the upper-right corner to close the **Task recorder pane** before beginning a new recording. The pane can be reopened by following the previous steps.
+4.  The **Task recorder pane** opens. You may click the "**X**" in the upper-right corner to close the **Task recorder pane** before beginning a new recording. The pane can be reopened by following the previous steps.
         
-5.  Click **Create a new recording**.
+5.  Click **Create recording**.
 6.  Enter a name for the recording and click **Start**. Recording begins the moment **Start** is clicked. For the Fleet example in this tutorial, we'll use the name "Create a new rental reservation."
 
-    During recording, clicking the "**X**" in the upper-right corner will hide the pane without stopping the recording. The pane can be re-opened by clicking the **Task recorder** menu button that appears at the top of the screen. This icon only appears while recording is in progress. 
-    
-    [![This image shows the Task recorder toolbar button which allows opening the Task recorder pane while recording.](./media/taskrecorderguide-taskrecordertoolbarclose.png)](./media/taskrecorderguide-taskrecordertoolbarclose.png)
+    While recording, clicking the "**X**" in the upper-right corner will hide the Task recorder pane without stopping the recording. The pane can be re-opened by clicking the **Task recorder** button that appears at the top of the screen. This button only appears while recording is in progress. 
 
     > [!NOTE]
-    > If the **Saved views** feature is enabled, recordings should be created using either published views or the Standard view to ensure that recordings work reliably for users. 
+    > If the **[Saved views](../../../get-started/saved-views.md)** feature is enabled, recordings should be created using either published views or the Standard view to ensure that recordings work reliably for users. 
 
-7.  The **Task recorder** enters **Recording Mode.** The pane now shows information and controls related to the process of recording. For more information about how to use the buttons shown, see the [section on using the recording controls](#recording-controls).
-
-    [![This image shows what the Task recorder toolbar and Task recorder pane look like during recording.](./media/taskrecorderguide-taskrecorderrecordingmode.png)](./media/taskrecorderguide-taskrecorderrecordingmode.png)
+7.  The **Task recorder** enters **Recording Mode.** The pane now shows information and controls related to the process of recording. For more information about how to use the buttons shown, see the [Recording controls](#recording-controls) section.
 
 Now you're ready to record a business process using Task recorder. If you're following this guide as a first-time user, you may complete the following Fleet Management scenario as an example. Otherwise, you can record your own application scenario.
 
-## Record a Fleet Management scenario
-1.  In the **Task recorder pane**, click **Start task**.
+### Record a Fleet Management scenario
+1.  In the **Task recorder pane**, click **Start sub-task**.
 2.  Set **Name** to "Create a new rental customer". Leave the **Comment** field blank.
-3.  Click **OK**. 
-4.  The task is added to the **Steps list**. 
+3.  Click **OK**. The task is then added to the steps list. 
 5.  Go to **Dashboard &gt; Fleet Management &gt; Reservation Management**.
 6.  Go to **All customers** under the **Summary** tab.
 7.  In the Action Pane, click **New**.
 8.  Enter a first and last name for the customer.
 9.  Click **Save**.
-10. In the **Task recorder pane**, click **End task**. 
+10. In the **Task recorder pane**, click **End sub-task**. 
 11. Return to the **Reservation Management** workspace by clicking the browser back button twice.
-12. In the **Task recorder pane**, click **Start task**. Name the task "Rent a vehicle to the new customer." Click **Start**.
+12. In the **Task recorder pane**, click **Start sub- task**. Name the task "Rent a vehicle to the new customer." Click **OK**.
 13. Click (**+**) **Rental** under **Summary**.
 14. Under **Information**, select a "1975 Litware McKinley" as the vehicle.
 15. Under **Information**, set the customer to the one just created.
@@ -110,45 +107,43 @@ Now you're ready to record a business process using Task recorder. If you're fol
 18. In the Action Pane, click **Start Rental**.
 19. Set the return date to some date in the future.
 20. Click **OK**.
-21. In the **Task recorder pane**, click **End task**.
-22. In the **Task recorder pane**, click **Stop**.
+21. In the **Task recorder pane**, click **End sub-task**.
+22. Click **Stop** at the very top of the screen.
 
 Congratulations! You have created your first task recording. You can proceed to [download the recording, or publish it to LCS](#download-options).
 
-## Recording controls
+## Recording a business process
+Once you've started your recording, you can simply perform your business process in the same way you normally would using the web client. As you interact with the product, new steps will get added to the steps list in the Task recorder pane. In this section, you'll learn about other actions you can take while you're recording a business process to take full advantage of Task recorder's capabilities. 
+
 ### Stop
 
-**Stop** is used to end the recording session. Ending the recording session isn't reversible, so the user should be sure that the recording is complete before clicking **Stop**. Clicking **Stop** will take the user to the download options screen.
+**Stop** is used to end the recording session. You should be sure the recording is complete before clicking **Stop**, as ending the recording session isn't reversible. Clicking **Stop** will take the user to the download options screen.
 
 [![Stop control](./media/taskrecorderguide-taskrecordertoolbarstop.png)](./media/taskrecorderguide-taskrecordertoolbarstop.png)
 
-### Start/End task
+### Start/End sub-task
 
-**Start/End task** enables a user to specify the beginning and ending of a set of grouped steps. Click the **Start task** button to add a "Start task" step to the end of the current list of recorded steps. Then perform the steps that you want to include in the task. After you've performed (and thus recorded) the steps in the task, click the **End task** button to add an "End task" step to the end of the current list of recorded steps.
+**Start/End sub-task** enables a user to specify the beginning and ending of a set of grouped steps in a recording. Click the **Start sub-task** button to add a "Sub-task" step to the end of the current list of recorded steps. Any steps you perform from this point until the **End sub-task** button is selected will be included in the sub-task. Clicking the **End sub-task** button will also add an "End sub-task" step to the list of recorded steps.
 
-**Note**: You must start your tasks before performing/recording the steps that you want to include in the task. You must end the task after you have performed/recorded all of the steps that you want to include in the task.
+**Note**: You must start your sub-task before performing/recording the steps that you want to include in the task. You must end the sub-task after you have performed/recorded all of the steps that you want to include in the task.
 
-**Tasks** are purely an organization tool, and consumers of business process recording can interpret the task groupings in useful ways. Tasks can be nested within other tasks, providing the flexibility to organize very long and complex business processes. 
-
-[![This image shows the location of the Start and End task buttons, which are used to create task groupings around sets of recorded steps.](./media/taskrecorderguide-taskrecorderrecordingcontrolstasks.png)](./media/taskrecorderguide-taskrecorderrecordingcontrolstasks.png)
-
+**Sub-tasks** are purely an organization tool, and consumers of business process recordings can interpret the task groupings in useful ways. Tasks can be nested within other tasks, providing the flexibility to organize very long and complex business processes. 
 
 ### Delete/Restore step
 
 **Delete/Restore step** enables a user to remove steps from the recording, or undo the removal of a step from the recording. You must first select the step in the Steps list that you want to delete/restore, and then click the **Delete/Restore step** button.
 
 > [!NOTE]
-> The behavior of the **Delete** button changes when in **Maintenance mode.** When deleting a pending/un-executed step in **Maintenance mode**, the step cannot be restored after playback has progressed past the point at which it would have executed the Deleted step. For example, you load a recording that contains 3 steps in Maintenance mode. Before starting playback, you delete step 2. You can restore step 2, as long as playback has not executed step 3. After you start playback, and playback has "skipped' step 2 (because you deleted it) and executed step 3, you will not be able to restore step 2. This is because step 2 was not executed and thus not recorded, and it cannot be retroactively added back into the recording at its previous position. 
-
-[![Delete button](./media/taskrecorderguide-taskrecorderrecordingcontrolsdelete.png)](./media/taskrecorderguide-taskrecorderrecordingcontrolsdelete.png)
+> The behavior of the **Delete** button changes when playing back a recording. In this mode, a deleted step cannot be restored after playback has progressed past the point at which it would have executed the deleted step. For example, suppose you load a recording that contains 3 steps and then you delete step 2 before starting playback. You can restore step 2, as long as playback has not executed step 3. After you start playback, and playback has "skipped' step 2 (because you deleted it) and executed step 3, you will not be able to restore step 2. This is because step 2 was not executed and thus not recorded, and it cannot be retroactively added back into the recording at its previous position. 
 
 
-### Add validation
+### Add developer placeholder
 
-**Add validation** lets the user add a placeholder step at the end of the current list of recorded steps. This placeholder step doesn't appear when the task guide is viewed, and it isn't run during maintenance of a recording. It's used only by the [Regression suite automation tool (RSAT)](../perf-test/rsat/rsat-overview.md) or the X++ code generator that enables an X++ test to be created from a task recording. When the code generator creates an X++ test, it automatically adds a method stub to the generated code. The developer can then add X++ code into this method stub. The automated code will call the validation when the generated test is run. The method will be called according to the order in which it was added to the recording.
+**Add developer placeholder** lets the user add a placeholder step to the list of recorded steps. This placeholder step doesn't appear when the task guide is viewed, and it isn't run during maintenance of a recording. It's only used by the [Regression suite automation tool (RSAT)](../perf-test/rsat/rsat-overview.md) or the X++ code generator that enables an X++ test to be created from a task recording. When the code generator creates an X++ test, it automatically adds a method stub to the generated code. The developer can then add X++ code into this method stub. The automated code will call the validation when the generated test is run at the point in the recording where this placeholder was added.
 
-## Adding annotations
-An **annotation** is any additional information that is associated with a step in a task recording. Annotations contain information that is in addition to the information that is automatically recorded by Task recorder.
+## Editing steps in a recording
+
+A variety of options exist for editing a step in a recording including adjusting the text associated with a step and adding information information about a particular step. This section describes the available step editing capabilities. To access any of these options, click the **Edit step** button on a particular step of a recording. 
 
 ### Step instruction
 
@@ -160,7 +155,7 @@ This image shows the annotation options for changing a step.
 - **Preferred value instruction** This type of instruction will direct the user to enter the same data that was used when the step was recorded. *Example*: In the First name field, enter 'John'.
 - **Example value label** This type of instruction will direct the user to enter their own data, indicating that the data that was used when the step was recorded was only *Example* data. *Example*: In the First name field, enter a value.
 
-  If the user clicks the **See more** button when on this step of the task guide, they will be able to see the data that was used when the step was recorded. This recorded data value will be labeled as an *Example* data value. 
+  If the user clicks the **See more** button when on this step when playing the recording as a task guide, they will be able to see the data that was used when the step was recorded. This recorded data value will be labeled as an *Example* data value. 
    > [!NOTE]
    > Steps that are not related to fields, such as clicking buttons, opening forms, or selecting records from a lookup, do not set *Example value label* as an option when annotating.
    
@@ -175,12 +170,12 @@ This image shows the annotation options for changing a step.
 ### Titles and notes
 
 Titles and notes provide places for user-specified text to be associated with a step in a task guide.
--   **Title** The **Title** lets you specify the text that appears above the **Step Instruction** for this step in the task guide. The **Title** is a good place to put text that you want the user to read before the complete the action that is indicated by the **Step Instruction**.
--   **Note** You can use a **Note** to specify text that appears in the expandable section of the pop-up for this step in the task guide. The note is a good place to put optional reading material or other information that may be useful to the user, but is not required for them to read in order to complete the action that is indicated by the **Step Instruction**.
+-   **Title** The **Title** lets you specify the text that appears above the **Step instruction** for this step in the task guide. The **Title** is a good place to put text that you want the user to read before completing the action indicated by the **Step instruction**.
+-   **Note** You can use a **Note** to specify text that appears in the expandable section of the pop-up for this step in the task guide. The note is a good place to put optional reading material or other information that may be useful to the user, but is not required for them to read in order to complete the action that is indicated by the **Step instruction**.
 
-## Hide from task guide
+### Hide from task guide
 
-The **Hide** option allows the author to prevent certain steps from appearing in the task guide. This is useful for hiding steps which are necessary for the task recording to execute in Maintenance mode but should not be seen by the end-user. An example of such steps are copy steps, system-generated steps, and data clean-up steps. Hiding a task will result in all of the steps that are recorded within that task to also be hidden.
+The **Hide this step** option allows the author to prevent certain steps from appearing in the task guide. This is useful for hiding steps which are necessary for the task recording to execute during playback mode, but should not be seen by the end-user. An example of such steps are copy steps, system-generated steps, and data clean-up steps. Hiding a sub-task will result in all of the steps that are recorded within that sub-task to also be hidden.
 
 ## Recording gestures
 
@@ -396,22 +391,34 @@ Clicking this button will expand the task guide pop-up to show additional inform
 
 ### Document generation setup (optional)
 
-Using a **pre-release** Chrome extension, Task recorder is able to take screenshots of the browser as a user records a business process. After the user completes the recording, Task recorder can then use these screenshots to generate Microsoft Word documents. To enable this functionality, follow the steps below to install the pre-release Google Chrome extension that enables Task recorder to capture screenshots during recording.
+Using a **pre-release** Chromium extension, which works for both the new (Chromium-based) Microsoft Edge browser as well as Google Chrome, Task recorder is able to take screenshots of the browser as a user records a business process. After the user completes the recording, Task recorder can then use these screenshots to generate Microsoft Word documents. To enable this functionality, follow the steps below to install the pre-release Chromium extension that enables Task recorder to capture screenshots during recording.
 
-1.  Open Google Chrome.
-2.  Go to **Menu &gt; More tools &gt; Extensions**. 
+1.  Download the FMLabTaskRecorderScreenshot folder, which contains the extension, from GitHub at <https://github.com/Microsoft/FMLab>.
+2.  [On-premises deployments only] Adjust the manifest for the extension to match the code below and replace <hostname> with the base URL for your environment.  
+
+    ```xpp
+      ...
+      "content_scripts": [
+	  {
+		"matches": ["https://*.dynamics.com/*", "<hostname>"],
+		"js": ["screenshot.js"]
+	  }
+      ...
+    ```
+    
+3.  Open the new (Chromium-based) Edge browser or Google Chrome.
+4.  Select **Settings and more &gt; Extensions"** in Edge (or **Customize and control Google Chrome &gt; More tools &gt; Extensions** in Chrome)
 
     ![This image shows the location of the Extensions menu in Google Chrome.](./media/taskrecorderguide-googlechromeextensionsmenu.png) 
 
-3.  Select the **Developer mode** box.
-4.  Click **Load unpacked extension**.
-5.  Browse to the folder containing the Task recorder extension, select the folder, and click **OK**. The extension is loaded. 
+5.  Select the **Developer mode** box.
+6.  Click **Load unpacked extension**.
+7.  Browse to the folder containing the Task recorder extension, select the folder, and click **OK**.  
+8.  Ensure that the **Enabled** box is selected so that extension is turned on. With a locally hosted developer machine, the extension should be located at &lt;local disk&gt;FMLabTaskRecorderScreenshot. Otherwise, you can download the FMLab folder which contains the extension from GitHub at <https://github.com/Microsoft/FMLab>.
 
-    Ensure that the **Enabled** box is selected to turn the extension on. With a locally hosted developer machine, the extension should be located at &lt;local disk&gt;FMLabTaskRecorderScreenshot. Otherwise, you can download the FMLab folder which contains the extension from GitHub at <https://github.com/Microsoft/FMLab>.
+9.  Restart the browser.
 
-6.  Restart Chrome.
-
-Task recorder will now take screenshots of the tab that has the client running. These screenshots are only available for a certain period of time after the recording has been played. Starting in Platform Update 16, screenshots are available for a week after playback. Prior to that, the screenshots are only available for 15 minutes. If the screenshots have expired, you can regenerate them by playing the task recording again.  
+Task recorder will now take screenshots of the tab that has the client running. These screenshots are only available for a week after the recording has been played (only 15 minutes if you are running a platform version prior to Platform update 16). If the screenshots have expired, you can always regenerate them by playing the task recording again.  
 
 Note that Task recorder **does not** capture screenshots from other tabs or of the user's desktop.
 
