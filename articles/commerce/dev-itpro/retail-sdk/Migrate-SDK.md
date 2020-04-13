@@ -42,7 +42,7 @@ This topic explains what’s changed in the Retail SDK 10.0.11 release, how to m
 
 ## Retail SDK updated to support Visual Studio 2017
 
-Retail SDK now runs on Visual Studio 2017. With release 10.0.11 and later, all Retail SDK components, including MPOS, CPOS, Commerce Runtime (CRT) RS, Proxy, and Hardware station (HWS), can be built and compiled only in Visual Studio 2017. You cannot use Visual Studio 2015.
+Retail SDK now runs on Visual Studio 2017. With release 10.0.11 and later, all Retail SDK components, including MPOS, CPOS, Commerce Runtime (CRT) RS, Proxy, and Hardware station (HWS), can be built and compiled only in Visual Studio 2017. You can't use Visual Studio 2015.
 
 ## References updated to PackageReference
 
@@ -54,18 +54,18 @@ The Retail SDK reference libraries project PackageReference. All the SDK samples
 </ItemGroup>
 ```
 
-## What’s impacted
+## What’s affected
 
 - If you want to deploy a new merged package, that is, an extension and out-of-box changes, on version 10.0.11 or later, then you must migrate your solution to the SDK on Visual Studio 2017. No code changes are required to migrate and build your solution.
 - Hard-coded references in extension projects must be migrated to PackageReference (NuGet reference).
 
 ### How to Migrate to the SDK for Visual Studio 2017
 
-There arew two ways to migrate:
+There are two ways to migrate:
 - Deploy a new development and build environment from LCS, and use the Visual Studio 2017 template.
-- Update extensions to Visual Studio 2017 in the development environent:
+- Update extensions to Visual Studio 2017 in the development environment:
     - Install Visual Studio 2017 Community, Professional, or Enterprise edition in the existing build and development VM.
-    - If you manually install Visual Studio 2017, install the following prerequisites in the development VM. If you do not install these prerequisites, then compilation will fail, generating .NET SDK and runtime errors:
+    - If you manually install Visual Studio 2017, install the following prerequisites in the development VM. If you don't install these prerequisites, then compilation will fail, generating .NET SDK and runtime errors:
         + [sdk-2.1.202-windows-x64-installer](https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-2.1.202-windows-x64-installer)
         + [sdk-2.1.513-windows-x64-installer](https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-2.1.513-windows-x64-installer)
         + [runtime-2.0.9-windows-x64-installer](https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-2.0.9-windows-x64-installer)
@@ -77,11 +77,11 @@ There arew two ways to migrate:
 
 Follow these steps to build the Retail SDK:
 
-1. Open the Developer command prompt for Visual Studio 2017 or the msbuild 15.0 command prompt. Build the out-of-box Retail SDK by running `msbuild /t:rebuild` from the root of the SDK folder( where you can find the dirs.proj file). The folder is  **RetailSDK\\dirs.proj** or **RetailSDK\\Code\\dirs.proj** in most installations.
-2. Merge your extension to the new SDK folder. For information about how to merge extension with the SDK, [Upgrade the Retail channel extension to the latest Retail SDK](../retailsdk-update.me).
+1. Open the Developer command prompt for Visual Studio 2017 or the msbuild 15.0 command prompt. Build the out-of-box Retail SDK by running `msbuild /t:rebuild` from the root of the SDK folder (where you can find the dirs.proj file). The folder is  **RetailSDK\\dirs.proj** or **RetailSDK\\Code\\dirs.proj** in most installations.
+2. Merge your extension to the new SDK folder. For information about how to merge extension with the SDK, [Upgrade the Retail channel extension to the latest Retail SDK](../retailsdk-update.md).
 3. After merging the extensions, update all the hard-coded reference to PackageReferene using the NuGet packages.
 
-## How to update the reference in the Commerce Runtime (CRT)extensions project
+## How to update the reference in the Commerce Runtime (CRT) extensions project
 
 1. Open the CRT extension project in Visual Studio 2017.
 2. Add the local NuGet repository folder in the NuGet Package Manager. For information about how to create a local NuGet repository, see [Install and manage packages in Visual Studio using the NuGet Package Manager](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio#package-sources). 
@@ -90,7 +90,7 @@ Follow these steps to build the Retail SDK:
     > All the SDK reference libraries are converted to NuGet packages, and libraries are removed from the **RetailSDK\\Reference** folder. The NuGet packages can be found in the **..\\RetailSDK\\Code\\pkgs** or **..\\RetailSDK\\pkgs** folder.
 
 3. To add the NuGet Package reference to the project, right-click the **Dependencies** node in the project and select **Manage NuGet Packages**.
-4.  In the NuGet Package Manager window add the required packages. For example, if the project needs the Commerce runtime library reference, then add the **Microsoft.Dynamics.Commerce.Runtime** NuGet package. After adding the NuGet package reference, the project file will be updated with the package reference, as shown in the following example:
+4.  In the NuGet Package Manager window, add the required packages. For example, if the project needs the Commerce runtime library reference, then add the **Microsoft.Dynamics.Commerce.Runtime** NuGet package. After adding the NuGet package reference, the project file will be updated with the package reference, as shown in the following example:
     ```xml
     <ItemGroup>
       <PackageReference Include="Microsoft.Dynamics.Commerce.Runtime" Version="9.21.x" />
@@ -102,8 +102,8 @@ Follow these steps to build the Retail SDK:
 
 Similarly, you would update the references for all the Retail server, Proxy, and Hardware station extension projects.
 
-## What’s not impacted
+## What’s not affected
 
 You don't have to change the extensions code written in previous versions of the Retail SDK, updating references and recompiling is required only with the new SDK.
    
-Existing Azure DevOps pipelines set up for Retail SDK build will continue to work. If required in the MSBuild task step, change the msbuild version to 15.0.
+Existing Azure Pipelines set up for Retail SDK build will continue to work. If required in the MSBuild task step, change the msbuild version to 15.0.
