@@ -384,6 +384,10 @@
         href: user-interface/data-validation-workspace.md
       - name: Data management error descriptions
         href: data-entities/dm-error-descriptions.md  
+    - name: Azure Data Lake
+      items: 
+      - name: Azure Data Lake overview
+        href: data-entities/azure-data-lake-overview.md
     - name: Database movement operations
       items:
       - name: Overview
