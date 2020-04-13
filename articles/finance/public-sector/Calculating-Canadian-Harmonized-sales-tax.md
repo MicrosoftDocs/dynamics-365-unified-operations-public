@@ -14,6 +14,8 @@ Note: This functionality does not apply to the Accounts payable Invoice journal.
 1. Go to **Tax > Indirect taxes > Sales tax**, and then click **Harmonized sales tax dimensions**. 
 2. In the **Harmonized sales tax dimensions** page, select and prioritize the financial dimensions (along with the main account, if appropriate) that you want to use for HST. The financial dimensions in the account structures are associated with the chart of accounts. The priority of dimensions helps dictate which tax gets applied if there are multiple possibilities. 
 
+> [![Define HST rules](./media/define-hst-rules.png)](./media/define-hst-rules.png)
+
 Note: Only the financial dimensions that are used in the current legal entity will be available.
 
 ## Set up HST rules
