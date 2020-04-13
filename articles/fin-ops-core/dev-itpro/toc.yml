@@ -14,6 +14,8 @@
         items:
         - name: What's new or changed in Platform updates home page
           href: get-started/whats-new-home-page.md
+        - name: Platform updates for 10.0.11 (July 2020)
+          href: get-started/whats-new-platform-update-35.md
         - name: Platform updates for 10.0.10 (May 2020)
           href: get-started/whats-new-platform-update-34.md
         - name: Platform update 33 (April 2020)
