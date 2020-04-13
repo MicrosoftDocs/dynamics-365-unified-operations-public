@@ -5,7 +5,7 @@ title: Enable product recommendations
 description: This topic explains how to make product recommendations that are based on artificial intelligence-machine learning (AI-ML) available for Microsoft Dynamics 365 Commerce customers. 
 author: bebeale
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -38,33 +38,32 @@ This topic explains how to make product recommendations that are based on artifi
 
 ## Recommendations pre-check
 
-Before enabling, please note that product recommendations are only supported for Commerce customers who have migrated their storage to using Azure Data Lake Storage (ADLS). 
+Before enabling, note that product recommendations are only supported for Commerce customers who have migrated their storage to using Azure Data Lake Storage (ADLS). 
 
-The following configurations must be enabled in the backoffice before enabling recommendations:
+The following configurations must be enabled in the back office before enabling recommendations:
 
-1. [Ensure that ADLS has been purchased and successfully verified in the environment](enable-ADLS-environment.md).
-2. [Ensure that the Entity store refresh has been automated](dynamics365/fin-ops-core/dev-itpro/data-entities/entity-store-data-lake#automated-entity-store-refresh).
-3. Confirm that Azure AD Itentity configuration contains an entry for Recommendations. More information on how to do this action is below.
+1. Ensure that ADLS has been purchased and successfully verified in the environment. For more information, see [Ensure that ADLS has been purchased and successfully verified in the environment](enable-ADLS-environment.md).
+2. Ensure that the entity store refresh has been automated. For more information, see [Ensure that the Entity store refresh has been automated](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
+3. Confirm that Azure AD Identity configuration contains an entry for Recommendations. More information on how to do this action is below.
 
-Additionally, ensure that RetailSale measurements have been enabled. To learn more about this set up process, go [here.](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-measures)
+Additionally, ensure that RetailSale measurements have been enabled. To learn more about this set up process, see [Work with measures](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-measures).
 
 ## Azure AD Identity configuration
 
-This step is required for all customers running in IaaS (infra-structure as a service) configuration. 
-For customers running on SF (service fabric), this step should be automatic and we recommend verifying the setting is configured as expected.
+This step is required for all customers running an infra-structure as a service (IaaS) configuration. For customers running on service fabric (SF), this step should be automatic and we recommend verifying the setting is configured as expected.
 
-### Instructions for setup
+### Setup
 
-1. From the back office, search for the page: **Azure Active Directory applications.** 
-1. Check if entry exists for: "RecommendationSystemApplication-1".
+1. From the back office, search for the **Azure Active Directory applications** page.
+2. Verify if an entry exists for "RecommendationSystemApplication-1".
 
 If the entry does not exist, add a new entry with the following information:
 
-1. **Client Id**:  d37b07e8-dd1c-4514-835d-8b918e6f9727
-2. **Name**: RecommendationSystemApplication-1
-3. **User Id**: RetailServiceAccount
+- **Client Id** - d37b07e8-dd1c-4514-835d-8b918e6f9727
+- **Name** - RecommendationSystemApplication-1
+- **User Id** - RetailServiceAccount
 
-Lastly, **save** and close the page. 
+Save and close the page. 
 
 ## Turn on recommendations
 
@@ -77,7 +76,7 @@ To turn on product recommendations, follow these steps.
 ![Turning on recommendations](./media/enablepersonalization.png)
 
 > [!NOTE]
-> This procedure starts the process of generating product recommendation lists. Up to several hours might be required before the lists are available and can be seen at the point of sale (POS) or in Dynamics 365 Commerce.
+> This procedure starts the process of generating product recommendation lists. It may take several hours before the lists are available and can be viewed at the point of sale (POS) or in Dynamics 365 Commerce.
 
 ## Configure recommendation list parameters
 
@@ -89,7 +88,7 @@ After enabling recommendations in Commerce back office, the recommendations pane
 
 ## Enable personalized recommendations
 
-In Dynamics 365 Commerce, retailers can make personalized product recommendations (also known as personalization) available. In this way, personalized recommendations can be incorporated into the customer experience online and at the point of sale (POS). When the personalization functionality is turned on, the system can associate a user's purchase and product information to generate individualized product recommendations.
+In Dynamics 365 Commerce, retailers can make personalized product recommendations (also known as personalization) available. In this way, personalized recommendations can be incorporated into the online customer experience and at the point of sale. When the personalization functionality is turned on, the system can associate a user's purchase and product information to generate individualized product recommendations.
 
 To learn more about personalized recommendations, see [Enable personalized recommendations](personalized-recommendations.md).
 
