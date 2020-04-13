@@ -153,6 +153,14 @@ The following illustration shows the class structure of the extension.
     }
     ```
 
+**Note:** Don’t duplicate entity name in the EdmModelExtender class for the same entity, this will result in multiple manager and Adapter class during proxy generation.
+Ex: **CustomEntity1** is the new entity created by the extension code, in the EdmModelExtender if the entity named as **CustomEntity1Sample** then use the same name wherever it used, don’t use different name for the same entity.
+
+```C#
+    builder.BuildEntitySet< CustomEntity1>(**"CustomEntity1Sample"**);
+    action.ReturnsCollectionFromEntitySet< CustomEntity1>(**"CustomEntity1Sample"**);
+```
+
 6. Build the extension project, and drop the binary into the **\\RetailServer\\webroot\\bin\\Ext** folder.
 7. Update the Commerce Scale Unit web.config file in the **\\RetailServer\\webroot** folder by adding the new extension library name in the **extensionComposition** section.
 
