@@ -3344,6 +3344,8 @@
           href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/finance/toc.json
         - name: Import configurations
           href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/finance/toc.json
+        - name: Enhanced filtering options for finding configurations in the Global repository 
+          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
         - name: Download ER configurations from the RCS repository
           items: 
           - name: Download configurations from the ER repository of the RCS type
@@ -3424,9 +3426,11 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/finance/toc.json
       - name: ER framework API
         items: 
-        - name: Extend the list of Electronic reporting functions
+        - name: Extend the list of built-in functions
           href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/dynamics365/finance/toc.json
-        - name: Electronic reporting framework API changes for Application update 7.3
+        - name: API changes for Application update 10.0.11
+          href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/finance/toc.json
+        - name: API changes for Application update 7.3
           href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/finance/toc.json
         - name: Specify a custom storage location for generated documents
           href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/finance/toc.json
