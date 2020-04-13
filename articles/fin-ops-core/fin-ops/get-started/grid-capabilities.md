@@ -94,7 +94,7 @@ To undo grouping in a grid, right-click on the grouping column and select **Ungr
 ## Evaluating math expressions
 As a productivity booster, users can enter mathematical formulas in numeric cells in a grid. They don't have to do the calculation in an app outside the system. For example, if you enter **=15\*4** and then press the **Tab** key to move out of the field, the system will evaluate the expression and save a value of **60** for the field.
 
-To make the system recognize a value as an expression, start the value with an equal sign (**=**). For more details on the supported operators and syntax, see [Supported math symbols](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
+To make the system recognize a value as an expression, start the value with an equal sign (**=**). For more information about the supported operators and syntax, see [Supported math symbols](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
 
 ## Frequently asked questions
 ### How do I enable the new grid control in my environment? 
