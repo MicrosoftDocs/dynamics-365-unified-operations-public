@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 Finance 10.0.10 (May 2020)
-description: This topic describes features that are either new or changed in the Dynamics 365 Finance version 10.0.10 preview release.
+title: What's new or changed in Dynamics 365 Finance 10.0.11 (July 2020)
+description: This topic describes features that are either new or changed in the Dynamics 365 Finance version 10.0.11 preview release.
 author: roschlom
 manager: AnnBe
 ms.date: 04/13/2020
@@ -25,7 +25,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: roschlom
-ms.search.validFrom: 2020-03-05 
+ms.search.validFrom: 2020-04-13 
 ms.dyn365.ops.version: 10.0.11
 
 ---
@@ -34,11 +34,11 @@ ms.dyn365.ops.version: 10.0.11
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists features that are new or changed for Microsoft Dynamics 365 Finance 10.0.11. This version has a build number of 10.0.XXX and is available as follows:
+This topic lists features that are new or changed for Microsoft Dynamics 365 Finance 10.0.11. This version has a build number of 10.0.464 and is available as follows:
 
 - **Preview release:** April 2020
 - **General availability (self-update):** May 2020
-- **Auto-update:** June 2020
+- **Auto-update:** July 2020
 
 ## Features included in this release
 The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. 
@@ -52,10 +52,10 @@ The following features are included in this release. The feature titles link to 
 ## Additional resources
 
 ### Platform updates for Finance and Operations apps
-Dynamics 365 Finance 10.0.11 includes platform updates. To learn more, see [Platform updates for version 10.0.11 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md).
+Dynamics 365 Finance 10.0.11 includes platform updates. To learn more, see [Platform updates for version 10.0.11 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-35.md).
 
 ### Bug fixes 
-For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=424137&dbType=3&qc=bf63d49dcc96e51eb42ac1dd66c6c5e5d7548f1e176f729e324ea3353b9860cb).
+For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=438264&dbType=3&qc=d7dbe350d53c7743949f6afa556ea8d19b4fc1d3e16824e1a2eef32e0c3b300a).
 
 ### Dynamics 365: 2020 release wave 1 plan
 
