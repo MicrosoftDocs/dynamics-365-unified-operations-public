@@ -53,7 +53,7 @@ For more information about ADLS, see [ADLS official documentation](https://azure
 ## Configuration steps
 
 This section covers the configuration steps necessary for enabling ADLS in an environment as it relates to product recommendations.
-For a more indepth overview of the steps required to enable ADLS, see [Make entity store available as a Data Lake](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
+For a more in-depth overview of the steps required to enable ADLS, see [Make entity store available as a Data Lake](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
 
 ### Enable ADLS in the environment
 
@@ -96,7 +96,7 @@ If not completed already, follow the steps for [enabling product recommendations
 
 ## Additional resources
 
-[Make entity store available as a datalake](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md)
+[Make entity store available as a data lake](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md)
 
 [Product recommendations overview](product-recommendations.md)
 
