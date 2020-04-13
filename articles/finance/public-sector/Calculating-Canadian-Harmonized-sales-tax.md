@@ -1,4 +1,36 @@
+---
+# required metadata
+
+title: Canadian Harmonized sales tax
+description: This topic provides information about the functionality to support Harmonized sales tax for the public sector.
+author: velofog
+manager: Ann Beebe
+ms.date: 04/2/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: PSNCanadianHSTTaxFeature
+audience: Application User
+ms.devlang: 
+ms.reviewer: roschlom
+ms.search.scope: Operations, Core 
+ms.tgt_pltfrm: 
+ms.custom: 
+ms.search.region: Global
+ms.search.industry: public sector
+ms.author: v-alpavk
+ms.search.validFrom: 2020-4-01
+ms.dyn365.ops.version: 10.0.12
+---
+
 # Calculating Canadian Harmonized Sales Tax
+
+[!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 This feature lets your organization comply with Canadian Harmonized Sales Tax (HST) rules. The HST helps public sector entities maintain compliance with Canadian tax policies. The HST is used by some Canadian provinces and is a combination of the Goods and Services Tax and the Provincial Sales Tax.
 Portions of the HST can be recovered by public sector entities if the tax has been paid to vendors, depending on the intent of the purchase. The intent is designated by the financial dimension values and main account on a transaction line on a purchase document (for example, a purchase requisition, purchase order, or vendor invoice).
@@ -16,7 +48,7 @@ Note: This functionality does not apply to the Accounts payable Invoice journal.
 
 
 
-Note: Only the financial dimensions that are used in the current legal entity will be available.
+### Note: Only the financial dimensions that are used in the current legal entity will be available.
 
 ## Set up HST rules
 
@@ -26,7 +58,7 @@ After you define dimensions for HST, you set up ledger dimension rules that appl
 3. On the Action Pane, click **New** to create a new record.
 4. Define the dimension values. 
 
-Notes:
+### Notes:
 - No two rows can have identical settings.
 - You can delete or modify existing rules.
 - You can choose to leave a segment blank. It will function as a “wild card.” A totally blank row applies to all account combinations that do not have a more specific rule applied. You may want to add one row with all blank financial dimensions if there are sales tax codes which should apply when no rules match.
@@ -36,7 +68,7 @@ Note
 To be applied, the sales tax codes defined here must be present in the HST rule and in both the **Sales tax group** and **Item sales tax group** that are selected on the transaction document lines. 
 6. Click **Save** to save your changes. 
 
-Notes
+### Notes:
 - After you define rules for HST, you cannot modify the pre-existing dimensions for HST. To make changes, you must first remove all rules and sales tax codes in the **Harmonized sales tax rules** form.
 - More than one tax code can apply to a rule.
 - Only one rule applies to an account distribution.
