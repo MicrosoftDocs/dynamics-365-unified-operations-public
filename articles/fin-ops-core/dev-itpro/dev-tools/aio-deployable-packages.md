@@ -5,7 +5,7 @@ title: All-in-one deployable packages (ADP)
 description: This topic describes the all-in-one deployable package (ADP) concept and its use.
 author: laneswenka
 manager: AnnBe
-ms.date: 04/09/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
