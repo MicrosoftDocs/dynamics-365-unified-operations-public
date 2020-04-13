@@ -324,8 +324,6 @@
             href: data-entities/configuration-data-packages.md
           - name: Configuration data packages (July 2017 release only)
             href: data-entities/configuration-data-packages.md
-          - name: Make Entity Store available as a Data Lake
-            href: data-entities/entity-store-data-lake.md
         - name: Configuration data templates
           href: data-entities/configuration-data-templates.md
         - name: Track changes to an entity
@@ -388,6 +386,10 @@
       items: 
       - name: Azure Data Lake overview
         href: data-entities/azure-data-lake-overview.md
+      - name: Finance and Operations apps in Azure Data Lake 
+        href: data-entities/finance-data-azure-data-lake.md 
+      - name: Make entity store available as a Data Lake 
+        href: data-entities/entity-store-data-lake.md
     - name: Database movement operations
       items:
       - name: Overview
