@@ -5,7 +5,7 @@ title: Create a new Retail Server extension
 description: This topic explains how to create a new Commerce Scale Unit extension.
 author: mugunthanm
 manager: AnnBe
-ms.date: 08/25/2019
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -152,6 +152,14 @@ The following illustration shows the class structure of the extension.
         }
     }
     ```
+
+> [!NOTE]
+> Do not duplicate the entity name in the EdmModelExtender class for the same entity. This will create multiple manager and Adapter classes during proxy generation. For example, if **CustomEntity1** is the new entity created by the extension code, in the EdmModelExtender, if the entity is named **CustomEntity1Sample**, then use the same name wherever it used. Do not use a different name for the same entity.
+
+```C#
+    builder.BuildEntitySet< CustomEntity1>(**"CustomEntity1Sample"**);
+    action.ReturnsCollectionFromEntitySet< CustomEntity1>(**"CustomEntity1Sample"**);
+```
 
 6. Build the extension project, and drop the binary into the **\\RetailServer\\webroot\\bin\\Ext** folder.
 7. Update the Commerce Scale Unit web.config file in the **\\RetailServer\\webroot** folder by adding the new extension library name in the **extensionComposition** section.
