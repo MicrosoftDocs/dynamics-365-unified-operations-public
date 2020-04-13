@@ -51,11 +51,11 @@ This list is intended to help you consider these removals and deprecations for y
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** |It is possible for table metadata definitions to have field groups that contain invalid field references. If deployed, these field groups can cause runtime failures in Financial Reporting and SQL Server Reporting Services (SSRS).  A compiler *warning* was introduced in Platform update 23 to allow for these metadata issues to be addressed. Platform updates for version 10.0.11 of Finance and Operations apps will categorize this issue as a compiler *error*.<br><br>To fix this issue:<br><br>1. Remove the invalid field reference from the table field group definition.<br><br>2. Recompile.<br><br>3. Ensure that any errors are addressed. |
+| **Reason for deprecation/removal** |It is possible for table metadata definitions to have field groups that contain invalid field references. If deployed, these field groups can cause runtime failures in Financial Reporting and SQL Server Reporting Services (SSRS).  A compiler *warning* was introduced in Platform update 23 to allow for these metadata issues to be addressed. Platform updates for version 10.0.11 of Finance and Operations apps categorize this issue as a compiler *error*.<br><br>To fix this issue:<br><br>1. Remove the invalid field reference from the table field group definition.<br><br>2. Recompile.<br><br>3. Ensure that any errors are addressed. |
 | **Replaced by another feature?**   | This compiler error permanently replaces the compiler warning.  |
 | **Product areas affected**         | Visual Studio development tools |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: We're targeting that the warning will become a compiler error with platform updates for version 10.0.11 of Finance and Operations apps. |
+| **Status**                         | Deprecated: The warning is now a compiler error with platform updates for version 10.0.11 of Finance and Operations apps. |
 
 ### ISV licenses created with SHA1 hashing algorithm
 
