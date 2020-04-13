@@ -32,10 +32,9 @@ ms.dyn365.ops.version: 10.0.9
 
 [!include [banner](../includes/banner.md)]
 
-Companies in Italy which engage in resale activities outside of Italy can be exempt from VAT under tax plafond arrangement.
-VAT exempt under plafond arrangement can be provided for companies meeting the following conditions:
- - Companies must be considered as usual exporters.
- - Companies must release intent letters to vendors, in which status of usual exporter is declared.
+Tax plafond is a tax-exemption process that allows companies, usually exporters, to purchase and import goods and services without paying sales tax within a limit value of their sales to foreign countries in the previous period. 
+A company is a "usual exporter" when, in the previous year, 10 percent of the company's revenue value came from selling to a foreign country. To support that, the initial plafond amount and its validity dates are established at the beginning of the period. 
+The company can buy without paying sales tax until the purchases value is below the initial plafond.
 
 This topic describes how to:
  - Set up the system to use **Tax plafond** feature;
@@ -95,7 +94,7 @@ Tax plafond fields description:
 | **Settlement period**                                          | Specify the settlement period.                                                                                                                                  |
 | **Operations contributing to the plafond** | Turn on/off the options for inclusion into intent letters report.                                                                                                                                            |
 
-To review posted tax transactions for an existing tax planond, on the Action pane, click **Plafond transactions**.
+To review posted tax transactions for an existing tax plafond, on the Action pane, click **Plafond transactions**.
 
 ## Create intent letters
 
