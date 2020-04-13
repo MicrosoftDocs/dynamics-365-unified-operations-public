@@ -957,7 +957,9 @@
         - name: Set up withholding tax
           href: general-ledger/tasks/set-up-withholding-tax.md
         - name: View posted sales tax transactions
-          href: general-ledger/tasks/view-posted-sales-tax-transactions.md     
+          href: general-ledger/tasks/view-posted-sales-tax-transactions.md   
+        - name: Print the Sales tax payment by code report
+          href: general-ledger/print-sales-tax-payment-by-code-report.md
       - name: Audit workbench
         items:
         - name: Audit policy rules
