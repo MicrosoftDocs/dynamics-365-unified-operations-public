@@ -4,7 +4,7 @@
 title: Create a purchase order from a sales order
 description: This procedure shows you how to create a purchase order that is based on a sales order. 
 author: omulvad
-manager: AnnBe 
+manager: tfehr 
 ms.date: 06/26/2019
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, PurchCreateFromSalesOrder, VendAccountItemLookup, SalesTableReferences, PurchTable   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  

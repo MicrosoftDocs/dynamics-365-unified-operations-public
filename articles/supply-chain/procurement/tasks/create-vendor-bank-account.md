@@ -4,7 +4,7 @@
 title: Create a vendor bank account
 description: This procedure shows you how to create a bank account for a vendor. 
 author: mkirknel
-manager: AnnBe 
+manager: tfehr 
 ms.date: 07/01/2019
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: VendTable, VendBankAccounts, LogisticsPostalAddressSingle   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  

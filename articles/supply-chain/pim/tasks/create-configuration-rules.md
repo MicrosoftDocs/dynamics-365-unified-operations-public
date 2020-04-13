@@ -4,7 +4,7 @@
 title: Create configuration rules
 description: This procedure creates configuration rules that can be used for dimension-based configuration to enforce or prevent certain combinations of BOM lines. 
 author: ShylaThompson
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: BOMTable, BOMConfigRule, ConfigItemIdLookup   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  

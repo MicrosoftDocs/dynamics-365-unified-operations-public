@@ -139,7 +139,7 @@ The following illustration shows the business process for registering intermedia
 6. In the **Agreement ID** field, select the sales agreement.
 7. Select **OK**.
 
-   > [!MOTE]
+   > [!NOTE]
    > To create the headers for all the reports for the principal that are required in the specified period, select **Functions \> Create report headers on shipments**.
 
 8. Select **Functions \> Update lines on shipment** to open the **Generate report for principal on shipments** dialog box, and then select **OK** to create the lines for every report.
@@ -163,7 +163,7 @@ The following illustration shows the business process for registering intermedia
 
 15. Select **Print** to open the **Report for principal to Microsoft Excel** dialog box, and then select **OK** to print the report for the principal.
 
-![](media/11_Report_for_a_principal.jpg)
+![Generated Report for a principal](media/11_Report_for_a_principal.jpg)
 
 
 ## Print a facture accounting journal
@@ -218,7 +218,7 @@ Prepayments that are received from a principal aren't a source for charging VAT.
 Print a report for the principal. The report for the principal has two sections: one for shipments and one for prepayments.
 
 
-![](media/18_Purchase_report.jpg)
+![Generated Purchase report](media/18_Purchase_report.jpg)
 
 ### Create a prepayment facture
 

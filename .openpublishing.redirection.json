@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/commerce/retail-components.md",
+      "redirect_url": "commerce-architecture",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/commerce/add-reco-list-to-page.md",
       "redirect_url": "product-recommendations",
       "redirect_document_id": "false"

@@ -4,7 +4,7 @@
 title: Repair management   
 description: Group problems systematically to help with the suggestion of solutions that have been successful in the past.
 author: ShylaThompson
-manager: AnnBe
+manager: tfehr
 ms.date: 04/30/2018
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ ms.search.form: SMAConditionTable, SMASymptomArea, SMADiagnosisArea, SMAResoluti
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 

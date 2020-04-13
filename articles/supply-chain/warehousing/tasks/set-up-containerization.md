@@ -4,7 +4,7 @@
 title: Set up containerization
 description: This topic describes how to automate the containerization of loads in Warehouse management. 
 author: ShylaThompson
-manager: AnnBe 
+manager: tfehr 
 ms.date: 07/22/19
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  

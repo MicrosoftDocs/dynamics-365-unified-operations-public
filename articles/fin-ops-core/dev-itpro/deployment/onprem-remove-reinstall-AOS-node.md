@@ -85,7 +85,7 @@ This topic explains how to remove an Application Object Server (AOS) node in you
     > [!NOTE]
     > Be sure to add a comma to the end of the line that precedes the new section.
 
-    ```
+    ```json
     "fabricSettings": [
         {
             "name": "Setup",
@@ -109,7 +109,7 @@ This topic explains how to remove an Application Object Server (AOS) node in you
 
 12. Remove the node from the **Nodes** section. In the following example, the **AOS1** node was removed.
 
-    ```
+    ```json
     "Nodes": [
         {
             "NodeName": "AOS2",
@@ -125,7 +125,7 @@ This topic explains how to remove an Application Object Server (AOS) node in you
 
 13. Remove the following lines from the **Security** section.
 
-    ```
+    ```json
     "WindowsIdentities": {
         "\$id": "3"
     },
@@ -138,7 +138,7 @@ This topic explains how to remove an Application Object Server (AOS) node in you
 
 14. Increment the version number of the configuration file. Make this change at the lowest increment. In the following example, the version number went from **1.0.0** to **1.0.1**.
 
-    ```
+    ```json
     "ClusterConfigurationVersion": "1.0.1"
     ```
 
