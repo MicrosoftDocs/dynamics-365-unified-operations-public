@@ -3190,6 +3190,8 @@
           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
         - name: Select data model definitions when you create formats
           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
+        - name: Enhanced filtering options for finding configurations in the Global repository 
+          href: ../finance/localizations/enhanced-filtering-global-repo.md  
         - name: Generate reports by adding content as raw XML
           href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/finance/toc.json
         - name: (ER) Cross-company data sources in Electronic reporting
@@ -3285,7 +3287,7 @@
             - name: Import files in XML format with optional attributes
               href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?toc=/dynamics365/finance/toc.json
             - name: Configure ER formats to import XML format files with optional attributes
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md
         - name: Split generated XML files based on file size and content quantity
           href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
         - name: Support parameterized calls of ER data sources of Calculated field type
@@ -3302,30 +3304,28 @@
             href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/finance/toc.json
           - name: Import configurations
             href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/finance/toc.json
-          - name: Enhanced filtering options for finding configurations in the Global repository
-            href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
           - name: Download ER configurations from the RCS repository
             items: 
             - name: Download configurations from the ER repository of the RCS type
               href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
             - name: Import configurations from RCS
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
         - name: Tutorials
           items: 
           - name: Use JOIN data sources to get data from multiple application tables
-            href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/finance/toc.json
+            href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md
           - name: Configure country context dependent ER model mappings
-            href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/finance/toc.json
+            href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md
           - name: Configure ER formats to use parameters that are specified per legal entity
-            href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=/dynamics365/finance/toc.json
+            href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md
           - name: Set up the parameters of an ER format per legal entity
-            href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=/dynamics365/finance/toc.json
+            href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md
           - name: Defer execution of ER format elements
             items: 
             - name: Defer execution of a sequence element
-              href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md
             - name: Defer execution of a XML element
-              href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md
         - name: Use Electronic reporting solutions in Finance and Operations
           items: 
           - name: Configure the framework
@@ -3343,17 +3343,17 @@
             - name: Destination types
               items:
                 - name: Archive destination
-                  href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-archive.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-archive.md
                 - name: Email destination
-                  href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-email.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-email.md
                 - name: File destination
-                  href:  ../fin-ops-core/dev-itpro/analytics/er-destination-type-file.md?toc=/dynamics365/finance/toc.json
+                  href:  ../fin-ops-core/dev-itpro/analytics/er-destination-type-file.md
                 - name: Power BI destination
-                  href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-powerbi.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-powerbi.md
                 - name: Printer destination
-                  href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-print.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-print.md
                 - name: Screen destination
-                  href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md
             - name: Configure destinations
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/finance/toc.json
           - name: Set up a reference to an ER format
@@ -3379,17 +3379,15 @@
             - name: Business document management overview
               href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/finance/toc.json
             - name: New document user interface in Business document management
-              href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management-new-template-ui.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management-new-template-ui.md
             - name: Add new fields to a business document template in Microsoft Excel
               href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/finance/toc.json
         - name: ER framework API
           items: 
-          - name: Extend the list of built-in functions
+          - name: Extend the list of Electronic reporting functions
             href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/dynamics365/finance/toc.json
-          - name: API changes for Application update 7.3
+          - name: Electronic reporting Framework API changes for Application update 7.3
             href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/finance/toc.json
-          - name: API changes for Application update 10.0.11
-            href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/finance/toc.json
           - name: Specify a custom storage location for generated documents
             href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/finance/toc.json
       - name: Embedded analytical solutions
