@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 35
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic lists the features that are included in the platform updates for version 10.0.11 of Finance and Operations apps. (These updates were formerly referred to as Platform update 35.) This version has a build number of 7.0.XXXX and is available on the following schedule:
+This topic lists the features that are included in the platform updates for version 10.0.11 of Finance and Operations apps. (These updates were formerly referred to as Platform update 35.) This version has a build number of 7.0.5644 and is available on the following schedule:
 
 - **Preview release:** April 2020
 - **General availability (self-update):** May 2020
