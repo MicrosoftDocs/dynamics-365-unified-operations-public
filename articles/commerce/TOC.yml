@@ -1982,6 +1982,8 @@
           href: dev-itpro/UpcomingSDKChanges.md
         - name: Merge the build systems for Commerce and Finance and Operations
           href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
+        - name: Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017
+          href: dev-itpro/retail-sdk/migrate-sdk.md
         - name: Retail SDK extensibility samples
           href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
         - name: Create deployable packages
