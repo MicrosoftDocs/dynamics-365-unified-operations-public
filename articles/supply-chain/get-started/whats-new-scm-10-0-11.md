@@ -47,22 +47,21 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. Additional links point to additional documentation or videos that are currently available for that feature. Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
 - [Over receipt of load quantities](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)
-- License plate receiving enhancements for the warehousing mobile app <!-- KFM: Add link when RP is published -->
-- Line reservation enhancements for the batch number reservation form <!-- KFM: Add link when RP is published -->
+- [License plate receiving enhancements for the warehousing mobile app](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app) 
+- [Line reservation enhancements for the batch number reservation form](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/line-reservation-enhancements-batch-number-reservation-form) 
 - [New data entities for the manufacturing area](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
-- Report as finished on batch numbers from the job card device <!-- KFM: Add link when RP is published -->
+- [Report as finished on batch numbers from the job card device](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/report-as-finished-batch-numbers-job-card-device) 
 <!-- KFM: It looks like Søren has added two new RP topics. Find out if one or both belong here. -->
 
 ## Additional resources
 
 ### Platform updates for Finance and Operations apps
-<!-- KFM: Find the new platform version link -->
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.11 includes platform updates. To learn more, see [Platform updates for version 10.0.11 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-35.md)
+Microsoft Dynamics 365 Supply Chain Management 10.0.11 includes platform updates. To learn more, see [Platform updates for version 10.0.11 of Finance and Operations apps (July 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-35.md)
 
 ### Bug fixes
-<!-- KFM: Find the new KB link -->
-For information about the bug fixes included in each of the updates that are part of 10.0.11, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=424137&dbType=3&qc=bf63d49dcc96e51eb42ac1dd66c6c5e5d7548f1e176f729e324ea3353b9860cb).
+
+For information about the bug fixes included in each of the updates that are part of 10.0.11, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=438264&dbType=3&qc=d7dbe350d53c7743949f6afa556ea8d19b4fc1d3e16824e1a2eef32e0c3b300a).
 
 ### Dynamics 365: 2020 release wave 1 plan
 
