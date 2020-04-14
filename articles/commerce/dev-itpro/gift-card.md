@@ -5,7 +5,7 @@ title: Support for external gift cards
 description: This topic provides information about the support for external gift cards that is now available in Microsoft Dynamics 365 Commerce.
 author: sericks007
 manager: AnnBe
-ms.date: 02/21/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-retail
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Application update 4
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to set up external gift cards in Retail Modern POS, the call center, and the storefront.
+This topic explains how to set up external gift cards in Retail Modern point of sale (MPOS), the call center, and the storefront.
 
 > [!NOTE]
 > Support for external gift cards in the call center is new in version 10.0.10. Support for external gift cards in the storefront will be added in a future version. 
@@ -291,6 +291,10 @@ The following procedure shows how to set up an external gift card by using produ
 26. Select **Save**.
 
 For the storefront, the gift card must also be included in the storefront's assortment. For more information, see [Assortment management](https://docs.microsoft.com/dynamics365/commerce/assortments).
+
+> [!NOTE]
+> The gift card product used for external gift card setup in POS should not use product masters with item variants. Gift cards based on item variants may still be used for payments, balance inquiries, and cash out in POS, but gift card products associated with the POS for issuance must be standard products. 
+
 
 ### Set up notification emails for virtual gift cards
 

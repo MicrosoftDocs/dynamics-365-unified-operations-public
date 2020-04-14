@@ -86,6 +86,8 @@
           items:
           - name: What's new or changed in Commerce home page
             href: get-started/whats-new-home-page.md
+          - name: Commerce 10.0.11 (June 2020)
+            href: get-started/whats-new-commerce-10-0-11.md
           - name: Commerce 10.0.10 (May 2020)
             href: get-started/whats-new-commerce-10-0-10.md
           - name: Commerce 10.0.9 (April 2020)
@@ -378,7 +380,7 @@
             items:
             - name: Demo data screen layouts in MPOS/CPOS
               href: demo-data.md
-            - name: Screen layouts for the POS
+            - name: POS user interface visual configurations
               href: pos-screen-layouts.md
             - name: Install the POS layout designer
               href: install-pos-layout-designer.md
@@ -942,12 +944,16 @@
           items:
           - name: Cart module
             href: add-cart-module.md
+          - name: Cart icon module
+            href: cart-icon-module.md
           - name: Checkout module
             href: add-checkout-module.md
           - name: Order confirmation module
             href: order-confirmation-module.md 
           - name: Store selector module
             href: store-selector.md
+          - name: Gift card module
+            href: add-giftcard.md
         - name: Account management modules
           items:
           - name: Account management pages and modules
@@ -1939,7 +1945,9 @@
           - name: Create a theme
             href: e-commerce-extensibility/create-theme.md
           - name: Configure theme settings
-            href: e-commerce-extensibility/configure-theme-settings.md 
+            href: e-commerce-extensibility/configure-theme-settings.md
+          - name: Extend a theme
+            href: e-commerce-extensibility/extend-theme.md
         - name: Inject script
           items:
           - name: Script injectors
@@ -1962,6 +1970,8 @@
           href: dev-itpro/UpcomingSDKChanges.md
         - name: Merge the build systems for Commerce and Finance and Operations
           href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
+        - name: Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017
+          href: dev-itpro/retail-sdk/migrate-sdk.md
         - name: Retail SDK extensibility samples
           href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
         - name: Create deployable packages
