@@ -5,7 +5,7 @@ title: Customer credit groups
 description: This topic provides information about customer credit groups.
 author: mikefalkner
 manager: AnnBe
-ms.date: 09/04/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
