@@ -5,7 +5,7 @@ title: Task recorder resources
 description: This topic describes how to use Task recorder to record business processes.
 author: jasongre
 manager: AnnBe
-ms.date: 03/02/2020
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
