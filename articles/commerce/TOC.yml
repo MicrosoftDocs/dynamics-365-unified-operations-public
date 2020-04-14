@@ -1947,7 +1947,7 @@
           - name: Configure theme settings
             href: e-commerce-extensibility/configure-theme-settings.md
           - name: Extend a theme
-            href: extend-theme.md
+            href: e-commerce-extensibility/extend-theme.md
         - name: Inject script
           items:
           - name: Script injectors
