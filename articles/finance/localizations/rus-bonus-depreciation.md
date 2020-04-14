@@ -5,7 +5,7 @@ title: Depreciation bonuses (Russia)
 description: This topic provides information about depreciation bonuses for Russian fixed assets.
 author: anasyash
 manager: AnnBe
-ms.date: 10/28/2018
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -46,11 +46,10 @@ You can calculate a depreciation bonus by reducing the value of an asset through
 2. Select **New** to create a depreciation bonus allowance.
 3. In the **Depreciation bonus** field, enter a unique identifier for the depreciation bonus allowance. In the **Description** field, enter a description.
 4. In the **Depreciation bonus percent** field, enter the percentage of the depreciation bonus.
+
 > [!NOTE]
-> Depreciation bonus setup can be used when a user is creating a FA journal line for **Putting into operetion** transaction 
-> type. See [Acquiring fixed assets and putting them into operation](rus-fixed-asset-acquisition.md). When posting such FA journal, the
-> system set Depreciation bonus into fixed asset transaction with **Putting into operation** transaction type. This information is used
-> further when calculating depreciation.      
+> Depreciation bonus can be used when you create an FA journal line for the transaction type, **Putting into operetion**. For more information, see [Acquiring fixed assets and putting them into operation](rus-fixed-asset-acquisition.md). When you post the FA journal, the system sets the Depreciation bonus into a fixed asset transaction with the transaction type, **Putting into operation**. This information is then used when calculating depreciation. 
+
 ## Calculate a depreciation bonus
 
 The depreciation bonus is calculated only for the tax value model. You must set up a posting profile before you can calculate the depreciation bonus for fixed assets. Below procedure is used for mass filling the depreciation bonus fields in all fixed asset transactions with **Puting into operation** transaction type by the set filter. 
