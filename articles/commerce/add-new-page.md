@@ -72,7 +72,7 @@ To add a new site page to your site, follow these steps.
 1. Select **Content Rich Block**, select the ellipsis button, and then select **Add Module**.
 1. Select **Content rich block item**, and then select **OK**.
 1. In the properties pane on the right, select **Paragraph**, and then, in the field, enter **My test text**.
-1. Select **Save**, and then select **Check In**.
+1. Select **Save**, and then select **Finish editing**.
 1. In the **Comments** field, enter **Added new page**, and then select **OK**.
 1. Select **Preview** to preview your page. When you've finished, close the preview tab to return to the authoring tool.
 1. Select **Publish**.
