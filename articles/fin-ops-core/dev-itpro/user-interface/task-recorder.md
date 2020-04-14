@@ -81,7 +81,7 @@ The following steps show the process for starting a new recording using Task rec
     While recording, clicking the "**X**" in the upper-right corner will hide the Task recorder pane without stopping the recording. The pane can be re-opened by clicking the **Task recorder** button that appears at the top of the screen. This button only appears while recording is in progress. 
 
     > [!NOTE]
-    > If the **[Saved views](../../../get-started/saved-views.md)** feature is enabled, recordings should be created using either published views or the standard view to ensure that recordings work reliably for users. 
+    > If the **[Saved views](../../fin-ops/get-started/saved-views.md)** feature is enabled, recordings should be created using either published views or the standard view to ensure that recordings work reliably for users. 
 
 7.  The **Task recorder** enters **Recording Mode.** The pane now shows information and controls related to the process of recording. For more information about how to use the buttons shown, see the [Recording controls](#recording-controls) section.
 
