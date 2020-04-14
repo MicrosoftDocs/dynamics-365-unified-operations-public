@@ -96,7 +96,7 @@ To add custom navigation options to your navigation menu, follow these steps.
 1. In the property pane, on the **Data** tab, select **Add item** to create a new content management system (CMS) navigation item.
 1. Enter link text and a URL.
 1. Repeat steps 2 and 3 to add more custom navigation options.
-1. When you've finished, save the template or fragment, and check it in.
+1. When you've finished, select **Save** to save the template or fragment, and then select **Finish editing** to check it in.
 
 ## Additional resources
 
