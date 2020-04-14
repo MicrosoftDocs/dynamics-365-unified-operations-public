@@ -125,3 +125,17 @@ Skills and certificate requirements can be set up on maintenance job types (**As
 
 Maintenance job types and maintenance job trades are selected on work order jobs. If skills or certificates have been selected on a maintenance job type or maintenance job trade, and that maintenance job type or maintenance job trade is used on a work order job, only maintenance workers with matching skills and certificates are scheduled to work on the work order.
 
+## Work with scheduled work orders as a gantt chart
+
+The Scheduled work orders gantt chart in Asset Management may be used to view scheduled work orders or reschedule work orders. 
+
+To view or work with the Scheduled work orders gantt: 
+
+1. Go to Navigation pane > Modules > Asset management > Work orders > Scheduled work orders gantt chart
+1. Select the Functional location, Timescale and date criteria as required 
+1. Click on Apply, to view scheduled work orders 
+1. Scheduled work orders, represented by blue rectangles, will appear in the gantt chart below 
+1. To reschedule a work order, click on the desired work order image and drag it to the appropriate date and time 
+1. On the Action pane, click Save. 
+
+ 
