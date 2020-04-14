@@ -944,12 +944,16 @@
           items:
           - name: Cart module
             href: add-cart-module.md
+          - name: Cart icon module
+            href: cart-icon-module.md
           - name: Checkout module
             href: add-checkout-module.md
           - name: Order confirmation module
             href: order-confirmation-module.md 
           - name: Store selector module
             href: store-selector.md
+          - name: Gift card module
+            href: add-giftcard.md
         - name: Account management modules
           items:
           - name: Account management pages and modules
@@ -1941,7 +1945,9 @@
           - name: Create a theme
             href: e-commerce-extensibility/create-theme.md
           - name: Configure theme settings
-            href: e-commerce-extensibility/configure-theme-settings.md 
+            href: e-commerce-extensibility/configure-theme-settings.md
+          - name: Extend a theme
+            href: extend-theme.md
         - name: Inject script
           items:
           - name: Script injectors
