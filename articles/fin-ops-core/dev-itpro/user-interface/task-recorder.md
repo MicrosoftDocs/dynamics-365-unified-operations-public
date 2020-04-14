@@ -110,8 +110,6 @@ Now you're ready to record a business process using Task recorder. If you're fol
 21. In the **Task recorder pane**, click **End sub-task**.
 22. Click **Stop** at the very top of the screen.
 
-Congratulations! You have created your first task recording. You can proceed to [download the recording, or publish it to LCS](#download-options).
-
 ## Recording a business process
 Once you've started your recording, you can simply perform your business process in the same way you normally would using the web client. As you interact with the product, new steps will get added to the steps list in the Task recorder pane. In this section, you'll learn about other actions you can take while you're recording a business process to take full advantage of Task recorder's capabilities. 
 
