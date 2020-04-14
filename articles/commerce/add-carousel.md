@@ -62,7 +62,7 @@ You can add content block modules inside a carousel module. The properties of th
 
 To add a carousel module to a new page and set the required properties, follow these steps.
 
-1. 1. Select **+ New** to create a page template.
+1. Select **+ New** to create a page template.
 1. In the **New Template** dialog box, under **Template Name** enter **Carousel template**, and then select **OK**.
 1. In the **Body** slot, add a **Default page** module.
 1. Select **Finish editing** to check in the template, and then select **Publish** to publish it.  
