@@ -3,7 +3,7 @@
 
 title: Integrate asset management with fixed assets
 description: By integrating asset management with fixed assets, you'll be able to link fixed assets with maintenance assets.
-author: dabourq
+author: XXXX
 manager: tfehr
 ms.date: 04/14/2020
 ms.topic: article
@@ -22,7 +22,7 @@ ms.search.scope:  Core, Operations
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: XXXX
+ms.author: dabourq
 ms.search.validFrom: 2020-04-14
 ms.dyn365.ops.version: Release 10.0.12
 ---
@@ -45,19 +45,21 @@ To view a fixed-assets asset from asset management:
 1. On the **Fixed asset** FastTab, select the hyperlink shown on the **Fixed assets number** drop-down list.
 1. The **Fixed assets** page for your selected fixed asset opens (normally found under **Fixed assets > Fixed assets > Fixed assets**).
 
+<!-- KFM: Continue from here (check action pane labels) -->
+
 To view an asset-management asset for an existing fixed-assets asset:
 
 1. Go to **Fixed assets > Fixed assets > Fixed assets**.
 1. Select an asset.
-1. On the action pane, select **Asset Management**.
-1. On the View menu, click Maintenance Asset 
+1. On the action pane, select **Asset management**.
+1. On the **View** menu, select **Maintenance asset**.
 1. This will redirect the user to that asset in Asset Management > Assets form.
 
 To view cost from posted Asset Management Work Orders for an asset, from Fixed Assets: 
-1.    Go to Navigation pane > Modules > Fixed Assets > Fixed Assets > Fixed Assets 
-2.    Select and click on an asset.
-3.    On the Action pane, click Asset Management. 
-4.    On the View menu, click Maintenance Cost.
+1. Go to **Fixed Assets > Fixed Assets > Fixed Assets**.
+1. Select an asset.
+1. On the action pane, select **Asset Management**.
+1. On the **View** menu, select **Maintenance Cost**.
 
 To create a Maintenance Asset for an existing Fixed Assets asset
 1.    Go to Navigation pane > Modules > Fixed Assets > Fixed Assets > Fixed Assets 
