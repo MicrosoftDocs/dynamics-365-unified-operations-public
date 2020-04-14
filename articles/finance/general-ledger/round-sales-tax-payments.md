@@ -64,10 +64,7 @@ The following table shows how an amount of 98,765.43 is rounded by using each ro
 | Own advantage, for a debit balance  | 98,765.43              | 98,765.50              | 98,766.00              | 98,800.00                |
 
 
-### No rounding at all, since the round-off is 0.00
 
-round(1.0151, 0.00) = 1.0151 
-round(1.0149, 0.00) = 1.0149
 
 ### Normal round, and round precision is 0.01
 
