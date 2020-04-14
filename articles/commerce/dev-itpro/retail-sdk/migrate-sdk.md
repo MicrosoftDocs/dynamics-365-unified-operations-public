@@ -46,7 +46,7 @@ The Retail SDK now runs on Visual Studio 2017. In release 10.0.11 and later, all
 
 ## References updated to PackageReference
 
-The Retail SDK reference libraries project PackageReference. All the SDK samples use the PackageReference model. All the SDK reference libraries are converted to NuGet packages, and libraries are removed from the RetailSDK\\Reference folder. The NuGet packages are in the **..\\RetailSDK\\Code\\pkgs** or **..\\RetailSDK\\pkgs** folder. The following example shows the reference to **Microsoft.Dynamics.Commerce.Runtime**.
+The Retail SDK reference libraries use PackageReference. All the SDK samples use the PackageReference model. All the SDK reference libraries are converted to NuGet packages, and libraries are removed from the RetailSDK\\Reference folder. The NuGet packages are in the **..\\RetailSDK\\Code\\pkgs** or **..\\RetailSDK\\pkgs** folder. The following example shows the reference to **Microsoft.Dynamics.Commerce.Runtime**.
 
 ```xml
 <ItemGroup>
@@ -64,7 +64,7 @@ The Retail SDK reference libraries project PackageReference. All the SDK samples
 There are two ways to migrate:
 
 - Deploy a new development and build environment from Microsoft Dynamics Lifecycle Service (LCS), and use the Visual Studio 2017 template.
-- Update extensions to Visual Studio 2017 in the development environment:
+- Update extensions to Visual Studio 2017 in an existing development environment:
 
     - Install Visual Studio 2017 Community, Professional, or Enterprise edition on the existing build and development virtual machine (VM).
     - If you manually install Visual Studio 2017, install the following prerequisites on the development VM. If you don't install these prerequisites, compilation will fail, and .NET SDK and runtime errors will be generated:
@@ -109,4 +109,4 @@ In a similar way, update the references for all the Retail Server, proxy, and Ha
 
 You don't have to change the extensions code that was written in previous versions of the Retail SDK. You must update references and recompile only for the new SDK.
 
-Existing Azure Pipelines that are set up for the Retail SDK build will continue to work. In the MSBuild task step, change the MSBuild version to 15.0, if this change is required.
+If you have existing pipelines in Azure Pipelines that are set up for the Retail SDK build will continue to work. In the MSBuild task step, change the MSBuild version to 15.0, if this change is required.
