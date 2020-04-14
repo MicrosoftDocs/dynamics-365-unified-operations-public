@@ -77,7 +77,7 @@ To add a promo banner module to a page and set the required properties, follow t
 1. In the pane on the right, set the **Width** value to **Fill Container**.
 1. Under **Page Outline**, add a promo banner module to the container module.
 1. In the settings for the banner module, add one or more banner messages. Each message can have text together with a link. You can edit the other properties to customize the module further.
-1. Select **Save** and then select **Preview** to preview the page. At the top of the page, you should see an alert that shows the text that you added.
+1. Select **Save**, and then select **Preview** to preview the page. At the top of the page, you should see an alert that shows the text that you added.
 1. Select **Finish editing** to check in the page, and then select **Publish** to publish it. 
 
 > [!NOTE]
