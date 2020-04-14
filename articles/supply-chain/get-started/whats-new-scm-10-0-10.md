@@ -4,8 +4,8 @@
 title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.10 (May 2020)
 description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.10. 
 author: kamaybac
-manager: AnnBe
-ms.date: 03/21/2020
+manager: tfehr
+ms.date: 04/08/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,9 +32,8 @@ ms.dyn365.ops.version: 10.0.10
 # What's new or changed in Dynamics 365 Supply Chain Management 10.0.10 (May 2020)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management, preview version 10.0.10. This version has a build number of 10.0.420 and is available as follows:
+This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.10. This version has a build number of 10.0.420 and is available as follows:
 
 - **Preview release:** March 2020
 - **General availability (self-update):** April 2020
@@ -55,11 +54,11 @@ The following features are included in this release. The feature titles link to 
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.10 includes platform updates. To learn more, see [Platform updates for version 10.0.10 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md)
+Dynamics 365 Supply Chain Management 10.0.10 includes platform updates. To learn more, see [Platform updates for version 10.0.10 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md).
 
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of 10.0.10, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=424137&dbType=3&qc=bf63d49dcc96e51eb42ac1dd66c6c5e5d7548f1e176f729e324ea3353b9860cb).
+For information about the bug fixes that are included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=424137&dbType=3&qc=bf63d49dcc96e51eb42ac1dd66c6c5e5d7548f1e176f729e324ea3353b9860cb).
 
 ### Dynamics 365: 2020 release wave 1 plan
 

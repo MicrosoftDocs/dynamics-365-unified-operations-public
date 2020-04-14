@@ -5,7 +5,7 @@ title: Configure leave and absence parameters
 description: Define human resources parameters for leave and absence in Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -55,18 +55,25 @@ Before you set up leave and absence plans in Dynamics 365 Human Resources, it's 
 
 7. Select **Save**.
 
-## Configure calendar parameters
-
-If you have enabled the Leave and absence calendar preview feature, you need to configure additional parameters. 
-
-[!include [banner](includes/preview-feature-leave-absence.md)]
-
-> [!NOTE]
-> For the preview release on February 3, 2020, only **Pending leave requests** are enabled.
+## View and change leave and absence parameters
 
 1. On the **Leave and absence** page, select the **Links** tab.
 
-2. Under **Setup**, select **Human resources parameters**.
+2. Under **Setup**, select **Leave and absence parameters**.
+
+3. On the **General** tab, set the following parameters:
+ 
+    - Set **Unit for leave and absence** to either hours or days. If days, you can select **Enable half day definition** to allow employees to choose either first or second half of day in their time-off requests. 
+
+    - Select **Months of service effective date** to set when the accrual rates take effect for leave plans using months of service.
+
+    - Select **Balance calculation** to display balances display as of today or as of the accrual period. If you select **Balance as of today**, the balance displays the total of all accruals, adjustments, and requests as of today. If you select **Balance as of accrual period**, the balance displays the total of all accruals, adjustments, and requests as of the accrual period defined by the frequency in the leave plan. 
+
+## Configure calendar parameters
+
+1. On the **Leave and absence** page, select the **Links** tab.
+
+2. Under **Setup**, select **Leave and absence parameters**.
 
 3. On the **Calendar** tab, change calendar settings as necessary.
 

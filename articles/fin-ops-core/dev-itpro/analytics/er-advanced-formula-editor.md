@@ -5,7 +5,7 @@ title: Electronic reporting advanced formula editor
 description: This topic describes how the advanced formula editor can be used to configure expressions in Electronic reporting (ER) model mapping and format components.
 author: NickSelin
 manager: AnnBe
-ms.date: 03/17/2020
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -161,6 +161,16 @@ Currently, different colors are used to highlight the following parts of express
 - The text in double brackets that can represent a label ID of a text constant.
 
 [![ER formula editor](./media/ER-AdvEditor-SyntaxColorization.png)](./media/ER-AdvEditor-SyntaxColorization.png)
+
+## Limitations
+
+The editor is currently supported in the following web browsers:
+
+- Chrome
+- Edge
+- Firefox
+- Opera
+- Safari
 
 ## Additional resources
 

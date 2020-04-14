@@ -4,7 +4,7 @@
 title: Use the safety stock journal to update minimum coverage
 description: This procedure shows how to calculate minimum coverage proposals based on historical transactions and then update the item coverage with the proposals. 
 author: ChristianRytt
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/09/2019
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: ReqItemJournalName, ReqItemJournalSafetyStock, EcoResProductInformationDialog, EcoResProductDetailsExtended, ReqItemTable   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  

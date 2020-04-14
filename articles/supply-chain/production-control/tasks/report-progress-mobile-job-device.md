@@ -4,7 +4,7 @@
 title: Report progress on a mobile job device
 description: This procedure shows you how to start and report progress on a production job in the job device registration form. 
 author: ShylaThompson
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: JmgRegistrationTouch, JmgRegistrationTouchUserConfiguration, JmgRegistrationTouchStart, JmgRegistrationTouchReportFeedback, JmgRegistrationTouchAssignedJobs, JmgRegistrationTouchBreak, JmgRegistrationTouchLeave, JmgRegistrationTouchIndirectActivity, JmgDialogForm   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  

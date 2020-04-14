@@ -4,7 +4,7 @@
 title: Replenishment overview
 description: This topic describes the replenishment strategies that are available for warehouses that use the functionality that is available in Warehouse management.
 author: Mirzaab
-manager: AnnBe
+manager: tfehr
 ms.date: 02/19/2020
 ms.topic: article
 ms.prod: 
@@ -18,7 +18,7 @@ ms.search.form: WHSReplenishmentTemplates
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 90043

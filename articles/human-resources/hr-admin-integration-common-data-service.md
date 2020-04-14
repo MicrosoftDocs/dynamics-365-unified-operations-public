@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure Common Data Service integration
-description: You can turn integration between Common Data Service and an instance of Microsoft Dynamics 365 Human Resources on or off. You can also view the synchronization details, clear tracking data, and resync an entity to help troubleshoot data issues between the two environments.
+description: You can turn integration between Common Data Service and Dynamics 365 Human Resources on or off. You can also view synchronization details, clear tracking data, and resync an entity to help troubleshoot data issues between the two environments.
 author: andreabichsel
 manager: AnnBe
 ms.date: 04/01/2020
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Human Resources
 
 # Configure Common Data Service integration
 
-You can turn integration between Common Data Service and an instance of Microsoft Dynamics 365 Human Resources on or off. You can also view the synchronization details, clear tracking data, and resync an entity to help troubleshoot data issues between the two environments.
+You can turn integration between Common Data Service and Dynamics 365 Human Resources on or off. You can also view the synchronization details, clear tracking data, and resync an entity to help troubleshoot data issues between the two environments.
 
 When you turn off integration, users can make changes in Human Resources or Common Data Service, but those changes aren't synced between the two environments.
 
@@ -42,7 +42,7 @@ You might want to turn off integration in these situations:
 
 - You're filling in data through the Data Management Framework and must import the data multiple times to get it into a correct state.
 
-- There are issues with data in either Human Resources or Common Data Service. If you turn off integration, you can delete a record in one environment without deleting it in the other. When you turn integration back on, the record in the environment where it wasn't deleted will be synced back to the environment where it was deleted. Synchronization begins the next time the **Common Data Service integration missed request sync** batch job runs.
+- There are issues with data in either Human Resources or Common Data Service. If you turn off integration, you can delete a record in one environment without deleting it in the other. When you turn integration back on, the record in the environment where it wasn't deleted sync to the environment where it was deleted. Synchronization begins the next time the **Common Data Service integration missed request sync** batch job runs.
 
 > [!WARNING]
 > When you turn off data integration, make sure that you don't edit the same record in both environments. When you turn integration back on, the record that you last edited will be synced. Therefore, if you didn't make the same changes to the record in both environments, data loss can occur.
@@ -103,9 +103,17 @@ To run a full synchronization on the entity after you clear the tracking, see th
 
 ## Sync an entity between Human Resources and Common Data Service
 
-Use this procedure if changes from Common Data Service are taking too long to appear in Human Resources, or if you must refresh the tracking table after you clear the tracking.
+Use this procedure when:
 
-- To run a full synchronization on an entity between Human Resources and Common Data Service, select the entity in the **CDS entity name** field, and then select **Sync now**.
+- Changes from Common Data Service take too long to appear in Human Resources.
+
+- You must refresh the tracking table after clearing the tracking.
+
+To run a full synchronization on an entity between Human Resources and Common Data Service:
+
+1. Select the entity in the **CDS entity name** field.
+
+2. Select **Sync now**.
 
 [![Running a full synchronization](./media/hr-common-data-service-configuration-sync-now.png)](./media/hr-common-data-service-configuration-sync-now.png)
 

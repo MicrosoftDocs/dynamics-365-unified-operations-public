@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Business intelligence (BI) and reporting home page
+title: Reporting and analytics with Power BI home page
 description: This topic points you to resources that you can use to learn more about the business intelligence and reporting tools that are available.
 author: sericks007
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Business intelligence (BI) and reporting home page
+# Reporting and analytics with Power BI home page
 
 [!include [banner](../includes/banner.md)]
 

@@ -4,7 +4,7 @@
 title: Define inventory counting processes
 description: This topic describes the configuration of basic inventory counting processes by creating a counting group and a counting journal. 
 author: MarkusFogelberg
-manager: AnnBe 
+manager: tfehr 
 ms.date: 07/26/2019
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: InventCountGroup, InventJournalName, InventParameters, EcoResProductDetailsExtended, InventItemLocation, InventLocationIdLookup   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  

@@ -33,8 +33,6 @@ ms.dyn365.ops.version: AX 7.0.0
 # Financial reporting overview
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
-
 
 This topic describes where to access financial reporting and how to use the financial reporting capabilities. It also includes a description of the default financial reports that are provided.
 
