@@ -88,13 +88,15 @@ After a user is added or a role is changed, the user should be able to access fi
 ## Report deletions and expirations
 Users who generate a report can delete their own reports. Users with the **Maintain financial reporting security** duty can delete other's reports. 
 
-Starting with the 10.0.7 release the concept of expiration dates has been introduced. A new mandatory feature will be enabled in the feature mangement workspace. This feature contains the following changes:
+Starting with the 10.0.8 release the concept of expiration dates has been introduced. A new mandatory feature will be enabled in the **All** page within the feature mangement workspace. The **Financial report retention policies** feature contains the following changes:
 * Newly generated reports will automatically be marked as having an expiration date of 90 days from when they are generated
 * Any existing reports from before the feature was installed will be given a 90 day expiration period. The date may show as blank for a short period of time until the financial reporting service is running, a report is generated, and the service performs the update to existing reports with a blank expiration date. 
-* Users with the **Maintain financial reporting security** have access to this functionality. Any user in the **Maintain financial report** duty granted the **Maintain financial report expiration** privilege will also have the ability to modify the expiration period. Currently there are two retention options available - 
+* Users with the **Maintain financial reporting security** have access to this functionality. Any user in the **Maintain financial report** duty granted the **Maintain financial report expiration** privilege will also have the ability to modify the expiration period. Currently there are two retention options available. 
   * An expiration of 90 days
   * An option to set the report to never expire
+Additional options will be considered in the future for additional flexibility. The expiration of 90 days will be the default, and users with appropriate permissions can override the default from within the financial reports list page.    
 
+  
 When an expiration such as 90 days is selected, it grants 90 days from today, which is different behavior than the 90 days from the original generation date set during report generation. 
 
 ## Default reports
