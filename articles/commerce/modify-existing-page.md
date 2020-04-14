@@ -65,14 +65,14 @@ The following example shows how to modify the home page by changing the video th
 1. Under **Sites**, select **Fabrikam** (or the name of your site).
 1. In the navigation pane on the left, select **Pages**.
 1. Find and select the home page to open it in the page editor.
-1. On the command bar, select **Check Out**.
+1. On the command bar, select **Edit**.
 1. In the page outline, select the **Main** slot.
 1. Under the **Main** slot, expand all the fluid container modules.
 1. Find and select the video player module.
 1. In the properties pane on the right, select the **video** property. The asset picker appears.
 1. In the asset picker, select an available video asset, or select **Upload new asset** to upload a new video asset.
 1. Select **OK**.
-1. Select **Save**, and then select **Check In**.
+1. Select **Save**, and then select **Finish editing**.
 1. In the **Comments** field, enter **Changed the video**, and then select **OK**.
 1. Select **Preview** to preview the updated page. When you've finished, close the preview tab to return to the authoring tool.
 1. Select **Publish**.
