@@ -46,7 +46,7 @@ To define a custom focal point for an image, follow these steps.
 
 1. In the left navigation pane of Commerce site builder, select **Media Library**.
 1. In the main window, select the image you want to modify.
-1. On the command bar, select **Edit** to check out the file.
+1. On the command bar, select **Edit**.
 1. Select the image to enter **Edit Mode**.
 1. Under **Edit Mode**, select **Change Focal Point**. A circular focal point control appears over the image.
 1. Select the focal point control to move it over the desired focal point.
