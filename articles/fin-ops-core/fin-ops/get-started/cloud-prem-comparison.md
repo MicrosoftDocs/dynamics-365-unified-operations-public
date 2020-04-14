@@ -84,7 +84,6 @@ The following tables list the application areas. Cloud and on-premises support i
 | Service management                   |                                                                                           | Yes       | Yes             |
 | Web client                           |                                                                                           | Yes       | Yes             |
 |                                      | Task recorder - Save or load task recordings from the BPM library                         | Yes       | No              |
-|                                      | Screenshot extension support                                                              | Yes       | Yes (extension requires slight modification before importing to the browser)              |
 | Support                              |                                                                                           | Yes       | Yes             |
 |                                      | Access to Support via the Help & Support menu                                             | Yes       | No              |
 |                                      | Business events                                                                           | Yes       | Yes (either internet connectivity is required or custom endpoints must be implemented to send/recieve business events within intranet)              |
@@ -149,7 +148,6 @@ The following tables list the application areas. Cloud and on-premises support i
 |                                      | Warehousing Power BI reports                                                              | Yes       | No              |
 | Web client                           |                                                                                           | Yes       | Yes             |
 |                                      | Task recorder - Save or load task recordings from the BPM library                         | Yes       | No              |
-|                                      | Screenshot extension support                                                              | Yes       | Yes (extension requires slight modification before importing to the browser)              |
 | Support                              |                                                                                           | Yes       | Yes             |
 |                                      | Access to Support via the Help & Support menu                                             | Yes       | No              |
 
