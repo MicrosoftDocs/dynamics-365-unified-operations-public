@@ -565,6 +565,8 @@
           href: cost-management/lifo-physical-value-marking.md
         - name: Moving average
           href: cost-management/moving-average.md
+        - name: Moving average fallback cost sequence
+          href: cost-management/moving-average-fallback.md
         - name: Physical and financial updates
           href: cost-management/physical-financial-updates.md
         - name: Running average cost price
