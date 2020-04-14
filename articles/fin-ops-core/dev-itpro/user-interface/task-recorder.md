@@ -83,7 +83,7 @@ The following steps show the process for starting a new recording using Task rec
     > [!NOTE]
     > If the **[Saved views](../../fin-ops/get-started/saved-views.md)** feature is enabled, recordings should be created using either published views or the standard view to ensure that recordings work reliably for users. 
 
-7.  The **Task recorder** enters **Recording Mode.** The pane now shows information and controls related to the process of recording. For more information about how to use the buttons shown, see the [Recording controls](#recording-controls) section.
+7.  The **Task recorder** enters **Recording Mode.** The pane shows information and controls related to the process of recording.
 
 Now you're ready to record a business process using Task recorder. If you're following this guide as a first-time user, you may complete the following Fleet Management scenario as an example. Otherwise, you can record your own application scenario.
 
