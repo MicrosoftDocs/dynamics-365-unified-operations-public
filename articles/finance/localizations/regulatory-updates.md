@@ -57,8 +57,11 @@ For the latest regulatory update plans, refer to the following table.
 |      Brazil         |   January 2020       | 10.0.8      |   Complementary information of ICMS-ST    |
 |      Brazil         |   March 2020 - January 2020       | 10.0.9, 10.0.8HF      |   Sped Fiscal Layout 014 |
 |      Brazil         |   March 2020 - January 2020       | 10.0.9, 10.0.8HF      |   DRCST SC – Ordinance SEF Nº 343DR   |
+|      Brazil         |   May 2020 - March 2020      | 10.0.11, 10.0.10HF, 10.0.9HF      |   SPED ECD layout 8   |
+|      Brazil         |   May 2020 - April 2020      | 10.0.11, 10.0.10HF, 10.0.9HF, 10.0.8HF      |   Technical note NT2019.001 v1.40   |
 |      France         |   April 2020       | 10.0.10      |   Legal fees declaration to tax authorities for self-employed people (DAS2)    |
 |      France         |   March 2020       | 10.0.9      |   French localization: ISO 20022 format for international payment and treasury transfer    |
+|      Hungary         |   May 2020 - March 2020       | 10.0.11, 10.0.9HF, 10.0.8HF     |   Online invoicing system v.2.0 on Finance and Operations    |
 |      India         |   March 2020      | 10.0.9      |   New GSTR (ANX-1 & ANX-2) Return offline Tool    |
 |      Italy         |   January 2020      | 10.0.8      |   Changes in VAT management by D.L. 119 of 23 Oct 2018: Yearly tax communication    |
 |      Italy         |   March 2020      | 10.0.9, 10.0.8HF      |   Retail - Managing customer information in POS |
@@ -74,6 +77,9 @@ For the latest regulatory update plans, refer to the following table.
 |      Poland          |   March 2020 - January 2020     | 10.0.9, 10.0.8HF     |   Retail - Printing customer information in fiscal receipt |
 |      Poland          |   March 2020 - January 2020     | 10.0.9, 10.0.8     |   SAF invoices (JPK_FA) v.3 from 2Dec2019 |
 |      Poland          |   April 2020 - January 2020     | 10.0.10, 10.0.9, 10.0.8     |   JPK_VDEK replacing JPK_VAT (SAF VAT) |
+|      Poland          |   May 2020     | 10.0.11     |   Split AP/AR realized exchange difference amount into exchange difference of invoice net value and of VAT amount  |
+|      Poland          |   May 2020     | 10.0.11     |   SAF Accounting books  – Posting layers filtering improvements |
+|      Poland          |   May 2020     | 10.0.11     |   JPK_VDEK supplemented pack I |
 |      Russia          |   March 2020     | 10.0.9     |   Format of property tax declaration for 2019 reporting |
 |      Russia          |   March 2020     | 10.0.9     |   Profit tax declaration format updates |
 |      Singapore           |   January 2020     | 10.0.8      |   GST return report |
