@@ -29,12 +29,12 @@ ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: 10.0.11
 
 ---
-# Preview features in Dynamics 365 Finance 10.0.11 (June 2020)
+# Preview features in Dynamics 365 Finance 10.0.11 (July 2020)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists features that are new or changed for Microsoft Dynamics 365 Finance 10.0.11. This version has a build number of 10.0.464 and is available as follows:
+This topic lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.11. This version has a build number of 10.0.464 and is available as follows:
 
 - **Preview release:** April 2020
 - **General availability (self-update):** May 2020
@@ -46,7 +46,6 @@ The following features are included in this release. The feature titles link to 
 - [Remove option to replace budget plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/remove-option-replace-budget-plan)
 
  - [Extended Italian localization: Tax plafond](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-tax-plafond)
-
 
 
 ## Additional resources
