@@ -48,8 +48,7 @@ The following features are included in this release. The feature titles link to 
 - [License plate receiving enhancements for the warehousing mobile app](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app) 
 - [Line reservation enhancements for the batch number reservation form](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/line-reservation-enhancements-batch-number-reservation-form) 
 - [New data entities for the manufacturing area](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
-- [Report as finished on batch numbers from the job card device](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/report-as-finished-batch-numbers-job-card-device) 
-<!-- KFM: It looks like Søren has added two new RP topics. Find out if one or both belong here. -->
+- [Report as finished on batch numbers from the job card device](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/report-as-finished-batch-numbers-job-card-device)
 
 ## Additional resources
 
