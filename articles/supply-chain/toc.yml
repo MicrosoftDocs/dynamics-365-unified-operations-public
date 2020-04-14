@@ -565,6 +565,8 @@
           href: cost-management/lifo-physical-value-marking.md
         - name: Moving average
           href: cost-management/moving-average.md
+        - name: Moving average fallback cost sequence
+          href: cost-management/moving-average-fallback.md
         - name: Physical and financial updates
           href: cost-management/physical-financial-updates.md
         - name: Running average cost price
@@ -2549,6 +2551,8 @@
           href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
         - name: System grouping on an open work list
           href: warehousing/system-group-on-open-work-list.md
+        - name: Document routing layout for license plate labels
+          href: warehousing/document-routing-layout-for-license-plates.md
         - name: Scan bar codes using a camera in Dynamics 365 for Finance and Operations
           href: warehousing/scan-bar-codes-using-a-camera.md
         - name: Mobile barcode support
@@ -2653,6 +2657,8 @@
           href: warehousing/configure-app-field-names-priorities-warehouse.md
         - name: Set up mobile devices for warehouse work
           href: warehousing/configure-mobile-devices-warehouse.md
+        - name: License plate receiving with the Warehousing mobile app
+          href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
         - name: Set up a mobile device menu item for completing work in a purchase order
           href: warehousing/tasks/set-up-mobile-device-menu.md
         - name: Set up a mobile device menu item to register received items
@@ -2673,6 +2679,8 @@
           href: warehousing/upgrade-migration-warehouse-management-processes.md
       - name: Receipts for registration and put-away
         items:
+        - name: Warehouse handling of inbound loads for purchase orders
+          href: warehousing/inbound-load-handling.md
         - name: Register items for an advanced warehousing enabled item using an item arrival journal
           href: warehousing/tasks/register-items-advanced-warehousing.md
         - name: Register items for a basic warehousing enabled item using an item arrival journal
@@ -2682,6 +2690,7 @@
         - name: Set up a location directive for purchase order put-away
           href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
         - name: Set up a work template for purchase orders
+          href: warehousing/tasks/set-up-work-template-purchase-orders.md
     - name: Supply Chain Management development 
       items:
       - name: Gantt control development guide
@@ -2693,4 +2702,4 @@
   - name: Dynamics 365 Finance 
     href: ../finance/index.md
   - name: Dynamics 365 Commerce
-    href: ../commerce/index.md 
+    href: ../commerce/index.md
