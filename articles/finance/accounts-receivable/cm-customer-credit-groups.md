@@ -34,7 +34,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-You can define groups of customers who have the same credit limit. The individual credit limit that is defined on the customer invoice account is also considered.
+You can define groups of customers who have a shared credit limit. The individual credit limit that is defined on the customer invoice account is also considered.
 
 Members of a customer credit group can be selected from different legal entities. When you add a customer to the list of customers in the customer credit group, the expiration date of the credit limit for each customer is changed to the expiration date that is assigned to the group.
 
