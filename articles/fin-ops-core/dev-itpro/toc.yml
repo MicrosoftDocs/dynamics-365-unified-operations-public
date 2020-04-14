@@ -14,6 +14,8 @@
         items:
         - name: What's new or changed in Platform updates home page
           href: get-started/whats-new-home-page.md
+        - name: Platform updates for 10.0.11 (July 2020)
+          href: get-started/whats-new-platform-update-35.md
         - name: Platform updates for 10.0.10 (May 2020)
           href: get-started/whats-new-platform-update-34.md
         - name: Platform update 33 (April 2020)
@@ -324,8 +326,6 @@
             href: data-entities/configuration-data-packages.md
           - name: Configuration data packages (July 2017 release only)
             href: data-entities/configuration-data-packages.md
-          - name: Make Entity Store available as a Data Lake
-            href: data-entities/entity-store-data-lake.md
         - name: Configuration data templates
           href: data-entities/configuration-data-templates.md
         - name: Track changes to an entity
@@ -384,6 +384,14 @@
         href: user-interface/data-validation-workspace.md
       - name: Data management error descriptions
         href: data-entities/dm-error-descriptions.md  
+    - name: Azure Data Lake
+      items: 
+      - name: Azure Data Lake overview
+        href: data-entities/azure-data-lake-overview.md
+      - name: Finance and Operations apps in Azure Data Lake 
+        href: data-entities/finance-data-azure-data-lake.md 
+      - name: Make entity store available as a Data Lake 
+        href: data-entities/entity-store-data-lake.md
     - name: Database movement operations
       items:
       - name: Overview
