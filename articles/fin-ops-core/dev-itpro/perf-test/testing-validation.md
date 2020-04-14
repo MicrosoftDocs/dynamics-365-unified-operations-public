@@ -43,6 +43,7 @@ You will need to deploy Developer Topology with Developer and Build VM.
 
 ## Key concepts
 -   Use SysTest Framework to author unit/component test code.
+-   Test isolation
 -   Test module creation to manage test code and FormAdaptors.
 -   Import Task Recorder recordings into Visual Studio to generate test code.
 -   Integrate a Test module with a build machine.
@@ -129,6 +130,23 @@ You can create new test cases to test the functionality in an application.
 1. Test Explorer will show the results of test after it is complete. 
 
     [![Completed test](./media/59-300x290.png)](./media/59.png)
+
+## Test isolation
+For a test to be of high value it must be reliable. A test will pass or fail consistently; indendently of other factors such as other tests. One typical cause of unreliable tests are leaking state, such as data left behind in the data base that influences down stream tests. To guard against this type of issue, you can use the ```SysTestTransaction``` attribute.
+
+|  TestTransactionMode | Description  |
+|---|---|
+| AutoRollback | **Default**. This provides the best isolation.<br><br> All transactions are rolled back using SQL save points, and all data base statements are routed to the main connection, including user connections. No data will be persisted. |
+| LegacyRollback | All insert statements are tracked, and deleted during clean-up.<br><br> All insert statements are downgraded to row-by-row. One typical use case is when testing user connections or concurrency scenarios. This isolation level will clean up created setup data, and the recommendation is to wrap each test method in a ttsBegin and ttsAbort. |
+| LegacyRollbackWithUpdateTracking | All update, delete and insert statements are tracked and reverted during clean-up.<br><br> All insert, update and delete statements are tracked and downgraded to row-by-row. This is the slowest isolation level. |
+| None | **Only use for debugging**. This provides no isolation.<br><br> This setting can be useful temporarily to debug a test, as it allows you to use the regular user interface to navigate the data the test created. |
+
+Example:
+
+```xpp    
+    [SysTestTransaction(TestTransactionMode::LegacyRollback)]
+    class MyTestSample extends SysTestCase
+```    
 
 ## Test module creation to manage test code and FormAdaptors
 Creating a test specific module helps to keep test code together and manageable.
