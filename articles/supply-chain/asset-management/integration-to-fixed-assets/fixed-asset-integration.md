@@ -31,6 +31,8 @@ ms.dyn365.ops.version: Release 10.0.12
 
 By integrating asset management with fixed assets, you'll be able to link fixed assets with maintenance assets. This enables fixed asset users to create a maintenance asset from a new or existing fixed asset, and enables asset management users to associate a maintenance asset with an existing fixed asset. This feature also makes it easy for fixed assets users to view the costs posted from work orders for the related maintenance asset.
 
+## Work with the integrated solution
+
 To associate an asset-management asset to a fixed-assets asset:
 
 1. Go to **Asset management > Assets > All assets** (or **Active assets**).
@@ -66,12 +68,8 @@ To create a Maintenance Asset for an existing Fixed Assets asset
 2.    Select and click on an asset.
 3.    On the Action pane, click Asset Management. 
 4.    In New Menu, click on "Create maintenance asset"
-5.    Create asset as shown in https://docs.microsoft.com/en-us/dynamics365/supply-chain/asset-management/objects/create-an-object 
+5.    Create asset as shown in [Create an asset](../objects/create-an-object.md).
 
-To set a default Functional Location for Management Assets created from Fixed Assets:
-1.    Go to Navigation pane > Modules > Asset Management > Setup > Asset Management parameters > Fixed assets
-2.    Select the desired Functional Location
-3.    Save and exit
 
 To create an Asset Management asset for a new Fixed Assets asset:
 1.    Go to Navigation pane > Modules > Fixed assets > Fixed assets > Fixed assets
@@ -79,3 +77,10 @@ To create an Asset Management asset for a new Fixed Assets asset:
 3.    Create the Fixed Asset as described in https://docs.microsoft.com/en-us/dynamics365/finance/fixed-assets/tasks/create-fixed-asset
 4.    In New Menu, click on "Create maintenance asset"
 5.    Create asset as shown in https://docs.microsoft.com/en-us/dynamics365/supply-chain/asset-management/objects/create-an-object
+
+## Set a default location (optional)
+
+To set a default Functional Location for Management Assets created from Fixed Assets:
+1.    Go to Navigation pane > Modules > Asset Management > Setup > Asset Management parameters > Fixed assets
+2.    Select the desired Functional Location
+3.    Save and exit
