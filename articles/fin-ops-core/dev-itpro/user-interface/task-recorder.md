@@ -40,7 +40,7 @@ This topic describes how to use Task recorder to record business processes.
 
 ### Task recorder
 
-Task recorder for Finance and Operations apps is a utility that allows users to record business processes for a number of different use cases including: 
+Task recorder for Finance and Operations apps is a utility that allows users to record business processes for a number of different use cases, including: 
 -  Step-by-step guided tours of a particular business process in the application itself 
 -  Documentation of a business process as a Word document, optionally with screenshots
 -  Regression tests for a business process
@@ -56,7 +56,7 @@ Task recorder is able to record user actions in the client with exact fidelity. 
 
 ### Basic configuration
 
-Task recorder is bundled with any Finance and Operations app and allows users to begin recording business processes immediately after opening the client for the first time.  
+Task recorder is included with any Finance and Operations app and allows users to begin recording business processes immediately after opening the client for the first time.  
 
 > [!IMPORTANT]
 > The **Task guides** tab is currently not available in Commerce or Human Resources. We are currently working to enable this functionality in a future release. Task guides in the Getting Started experience in Human Resources remain available to cover basic functionality. Procedural help is also available on the docs.microsoft.com site ([https://docs.microsoft.com/dynamics365/](../../fin-ops/index.md)) for both Commerce and Human Resources.
@@ -81,7 +81,7 @@ The following steps show the process for starting a new recording using Task rec
     While recording, clicking the "**X**" in the upper-right corner will hide the Task recorder pane without stopping the recording. The pane can be re-opened by clicking the **Task recorder** button that appears at the top of the screen. This button only appears while recording is in progress. 
 
     > [!NOTE]
-    > If the **[Saved views](../../../get-started/saved-views.md)** feature is enabled, recordings should be created using either published views or the Standard view to ensure that recordings work reliably for users. 
+    > If the **[Saved views](../../../get-started/saved-views.md)** feature is enabled, recordings should be created using either published views or the standard view to ensure that recordings work reliably for users. 
 
 7.  The **Task recorder** enters **Recording Mode.** The pane now shows information and controls related to the process of recording. For more information about how to use the buttons shown, see the [Recording controls](#recording-controls) section.
 
@@ -98,7 +98,7 @@ Now you're ready to record a business process using Task recorder. If you're fol
 9.  Click **Save**.
 10. In the **Task recorder pane**, click **End sub-task**. 
 11. Return to the **Reservation Management** workspace by clicking the browser back button twice.
-12. In the **Task recorder pane**, click **Start sub- task**. Name the task "Rent a vehicle to the new customer." Click **OK**.
+12. In the **Task recorder pane**, click **Start sub-task**. Name the task "Rent a vehicle to the new customer." Click **OK**.
 13. Click (**+**) **Rental** under **Summary**.
 14. Under **Information**, select a "1975 Litware McKinley" as the vehicle.
 15. Under **Information**, set the customer to the one just created.
@@ -125,7 +125,8 @@ Once you've started your recording, you can simply perform your business process
 
 **Start/End sub-task** enables a user to specify the beginning and ending of a set of grouped steps in a recording. Click the **Start sub-task** button to add a "Sub-task" step to the end of the current list of recorded steps. Any steps you perform from this point until the **End sub-task** button is selected will be included in the sub-task. Clicking the **End sub-task** button will also add an "End sub-task" step to the list of recorded steps.
 
-**Note**: You must start your sub-task before performing/recording the steps that you want to include in the task. You must end the sub-task after you have performed/recorded all of the steps that you want to include in the task.
+> [!NOTE]
+> You must start your sub-task before performing/recording the steps that you want to include in the task. You must end the sub-task after you have performed/recorded all of the steps that you want to include in the task.
 
 **Sub-tasks** are purely an organization tool, and consumers of business process recordings can interpret the task groupings in useful ways. Tasks can be nested within other tasks, providing the flexibility to organize very long and complex business processes. 
 
@@ -134,7 +135,7 @@ Once you've started your recording, you can simply perform your business process
 **Delete/Restore step** enables a user to remove steps from the recording, or undo the removal of a step from the recording. You must first select the step in the Steps list that you want to delete/restore, and then click the **Delete/Restore step** button.
 
 > [!NOTE]
-> The behavior of the **Delete** button changes when playing back a recording. In this mode, a deleted step cannot be restored after playback has progressed past the point at which it would have executed the deleted step. For example, suppose you load a recording that contains 3 steps and then you delete step 2 before starting playback. You can restore step 2, as long as playback has not executed step 3. After you start playback, and playback has "skipped' step 2 (because you deleted it) and executed step 3, you will not be able to restore step 2. This is because step 2 was not executed and thus not recorded, and it cannot be retroactively added back into the recording at its previous position. 
+> The behavior of the **Delete** button changes when playing back a recording. In this mode, a deleted step cannot be restored after playback has progressed past the point at which it would have executed the deleted step. For example, suppose you load a recording that contains 3 steps and then you delete step 2 before starting playback. You can restore step 2, as long as playback has not executed step 3. After you start playback, and playback has "skipped" step 2 (because you deleted it) and executed step 3, you will not be able to restore step 2. This is because step 2 was not executed and thus not recorded, and it cannot be retroactively added back into the recording at its previous position. 
 
 
 ### Add developer placeholder
@@ -143,7 +144,7 @@ Once you've started your recording, you can simply perform your business process
 
 ## Enriching steps in a recording
 
-A variety of options exist for enriching a step in a recording including adjusting the text associated with a step and adding information information about a particular step. This section describes the available step enrichment capabilities. To access any of these options, click the **Edit step** button on a particular step of a recording. 
+A variety of options exist for enriching a step in a recording, including adjusting the text associated with a step and adding information about a particular step. This section describes the available step enrichment capabilities. To access any of these options, click the **Edit step** button on a particular step of a recording. 
 
 ### Step instruction
 
