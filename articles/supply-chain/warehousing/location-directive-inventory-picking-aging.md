@@ -88,7 +88,7 @@ Do the following to create the inventory data required to work through the FIFO 
     - Enter "LP 63_1".
     - Select **OK** to adjust out the license plate. <!-- KAMAYBAC: Are we missing a step here? Shouldn't we change a quantity or something? -->
 
-This setup leaves inventory in two locations. In the demo data, location FL-001 has an aging date of 4/15/2017, while location FL-002 has an aging date of 1/29/2017. Both locations contain item A0001. <!-- KAMAYBAC: How does the above procedure result in this setup? None of these values are mentioned in the procedure. -->
+This setup leaves inventory in two locations. In the demo data, location FL-001 has an aging date of 4/15/2017, while location FL-002 has an aging date of 1/29/2017. Both locations contain item A0001. <!-- KAMAYBAC: How does the above procedure result in this setup?   None of these values are mentioned in the procedure. -->
 
 <a name="fifo-demo"></a>
 
