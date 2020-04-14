@@ -48,11 +48,11 @@ You can calculate a depreciation bonus by reducing the value of an asset through
 4. In the **Depreciation bonus percent** field, enter the percentage of the depreciation bonus.
 
 > [!NOTE]
-> Depreciation bonus can be used when you create an FA journal line for the transaction type, **Putting into operetion**. For more information, see [Acquiring fixed assets and putting them into operation](rus-fixed-asset-acquisition.md). When you post the FA journal, the system sets the Depreciation bonus into a fixed asset transaction with the transaction type, **Putting into operation**. This information is then used when calculating depreciation. 
+> Depreciation bonuses can be used when you create a Fixed asset journal line for the **Putting into operation** transaction type. For more information, see [Acquiring fixed assets and putting them into operation](rus-fixed-asset-acquisition.md). When you post the Fixed asset journal, the system sets the depreciation bonus into a fixed asset transaction of the **Putting into operation** transaction type. This information is then used when depreciation is calculated. 
 
 ## Calculate a depreciation bonus
 
-The depreciation bonus is calculated only for the tax value model. You must set up a posting profile before you can calculate the depreciation bonus for fixed assets. Below procedure is used for mass filling the depreciation bonus fields in all fixed asset transactions with **Puting into operation** transaction type by the set filter. 
+The depreciation bonus is calculated only for the tax value model. You must set up a posting profile before you can calculate the depreciation bonus for fixed assets. Use the following procedure to fill in the depreciation bonus fields for all fixed asset transactions of the **Putting into operation** transaction type at the same time by using a filter that you set. 
 
 1. Select **Fixed assets (Russia)** \> **Periodic** \> **Depreciation bonus initialization**.
 2. In the **Value model** field, select a model for the depreciation bonus.
