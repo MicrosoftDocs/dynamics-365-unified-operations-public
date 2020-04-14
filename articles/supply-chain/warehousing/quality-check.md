@@ -41,7 +41,7 @@ When you use this feature, arrival and quality check proceeds as follows:
     - License plates containing accepted items are guided to a storage location as usual.
     - For the rejected license plates, existing put-away work is cancelled and a new *quality check* work order is created. The license plate is then diverted to a quality check location for further inspection.
 
-<!-- The above wasn't entirely clear in the draft. I tried to clarify with this revision. Please confirm it's still correct -->
+<!-- The above wasn't entirely clear in the draft.  I tried to clarify with this revision. Please confirm it's still correct -->
 
 This process can also be set to divert all scanned license plates to the quality check location immediately.
 
