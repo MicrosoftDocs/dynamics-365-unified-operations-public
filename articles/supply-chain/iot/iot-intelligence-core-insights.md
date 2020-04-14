@@ -46,7 +46,7 @@ You can setup and configure core insights without writing any code.
 
 In this topic, you will configure the scenario to generate a message in Supply Chain Management when a machine goes down. This is the **Equipment down** scenario.
 
-# Overview of setup process
+## Overview of setup process
 
 + Configure your devices to send telemetry to IoT Hub. For more information, see [Azure IoT Hub Documentation](https://docs.microsoft.com/azure/iot-hub/).
 + Create a OneBox environment, and give the appropriate SQL users access to environment for IoT Intelligence.
