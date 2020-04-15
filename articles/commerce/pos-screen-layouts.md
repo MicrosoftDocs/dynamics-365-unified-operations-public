@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Screen layouts for the point of sale (POS)
+title: POS user interface visual configurations
 description: This topic provides information about screen layouts for Dynamics 365 Commerce point of sale (POS) experiences.
-author: jblucher
-manager: AnnBe
-ms.date: 05/20/2019
+author: boycezhu
+manager: annbe
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -24,19 +24,17 @@ ms.custom: 90573
 ms.assetid: a6868f93-02ed-4928-9f6a-3b7383e7e399
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: jeffbl
+ms.author: boycezhu
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
 ---
 
-# Screen layouts for the point of sale (POS)
+# POS user interface visual configurations
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
-This topic provides information about screen layouts for Dynamics 365 Commerce point of sale (POS) experiences.
-
-The POS user interface (UI) can be configured by using a combination of visual profiles and screen layouts that are assigned to stores, registers, and/or users.
+The user interface (UI) of the Microsoft Dynamics 365 Commerce point of sale (POS) can be configured by using a combination of visual profiles and screen layouts that are assigned to stores, registers, and users. This topic provides information about those configuration options.
 
 The following illustration shows the relationships among the various entities that make up the configurable aspects of the POS UI.
 
@@ -44,7 +42,7 @@ The following illustration shows the relationships among the various entities th
 
 ## Visual profile
 
-Visual profiles are assigned to registers, and they specify the visual elements that are register-specific and shared across users. Every user who signs in to the register sees the same theme, colors, and images.
+Visual profiles are assigned to registers, and they specify the visual elements that are register-specific and shared across users. Every user who signs in to the register sees the same theme, layout, colors, and images.
 
 ![POS welcome screen with Light theme](../commerce/media/POS-Welcome-Screen-with-Light-theme.png)
 
@@ -52,16 +50,24 @@ Visual profiles are assigned to registers, and they specify the visual elements 
 
 - **Profile number** – The profile number is the unique identifier of the visual profile.
 - **Description** – You can specify a meaningful name that will help identify the correct profile for your situation.
-- **Theme** – You can select between the Light and Dark application themes. The theme affects the font and background colors throughout the application.
+- **Theme** – You can select between the **Light** and **Dark** application themes. The theme affects the font and background colors throughout the application.
 - **Accent color** – The accent color is used throughout the POS to differentiate or highlight specific visual elements, such as tiles, command buttons, and hyperlinks. Typically, these elements are actionable.
-- **Header color** – You can configure the color of the page header to meet the retailer's branding requirements. This feature is available only in Retail version 1611.
-- **Show date/time** – When enbled, the current date and time will be displayed in the POS header.
-- **Login backgrounds** – You can specify a background image for the sign-in screen. The file size of background images should be kept as small as possible, because storing and loading large files can affect application behavior and performance.
-- **Application background** – You can specify a background image that is used instead of the solid theme color throughout the application. As for login backgrounds, the file size should be kept as small as possible.
+- **Header color** – You can configure the color of the page header to meet the retailer's branding requirements.
+- **Font scheme** – You can select between the **Standard** and **Large** font schemes. The font scheme affects the font size throughout the application. The default selection is **Standard**.
+- **Always show application bar labels** – When this option is turned on, the label text is always visible under the application bar buttons.
+- **Layout** – You can select between the **Centered** and **Right** layouts. The layout affects the alignment of the sign-in box on the sign-in screen. The default selection is **Centered**.
+- **Show date/time** – When this option is turned on, the current date and time are shown in the POS header and on the sign-in screen.
+- **Keyboard** – You can select between **Default to OS keyboard** and **Show number pad** to specify the default keyboard that is used for input on the sign-in screen. The number pad is a virtual keyboard that is used primarily for touch-based devices. The default selection is **Default to OS keyboard**.
+- **Logo image** – You can specify a logo image that is shown on the sign-in screen. We recommend that you use an image that has a transparent background. The file size should be kept as small as possible, because application behavior and performance can be affected when large files are stored and loaded.
+- **Login background** – You can specify a background image for the sign-in screen. The file size of background images should be kept as small as possible.
+- **Background** – You can specify a background image that is used instead of the solid theme color throughout the application. As for background images for the sign-in screen, the file size should be kept as small as possible.
+
+> [!NOTE]
+> The **Right** layout and date/time display don't apply to the sign-in screen in compact view.
 
 ## Screen layouts
 
-Screen layout configurations determine the actions, content, and placement of UI controls on the POS welcome screen and **Transaction** screen.
+Screen layout configurations determine the actions, content, and placement of UI controls on the POS **Welcome** screen and **Transaction** screen.
 
 ![POS Screen layout view](../commerce/media/POS-Screen-Layout-View.png)
 
