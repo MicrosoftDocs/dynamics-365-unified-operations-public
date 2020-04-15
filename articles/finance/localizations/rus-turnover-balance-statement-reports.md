@@ -74,6 +74,7 @@ Turnover balance sheets for the customer, vendor, and advance holder let you sho
 >   - Select **Voucher** to view the ledger transactions that generated the activity.
 >   - Select **Select** to change the report generation parameters.
 >   - Select **Print** to print the report in Microsoft SQL Server Reporting Services (SSRS).
+>   - Select **Totals only** to show lines only for first selected dimension.
 
 ## Vendor turnover register
 
@@ -116,6 +117,7 @@ Turnover balance sheets for the customer, vendor, and advance holder let you sho
 > - Select **Voucher** to view the ledger transactions that generated the activity.
 > - Select **Select** to change the report generation parameters.
 > - Select **Print** to print the report in SSRS.
+> - Select **Totals only** to show lines only for first selected dimension.
 
 ## Advance holder turnover register
 
@@ -154,6 +156,7 @@ Turnover balance sheets for the customer, vendor, and advance holder let you sho
 > - Select **Voucher** to view the ledger transactions that generated the activity.
 > - Select **Select** to change the report generation parameters.
 > - Select **Print** to print the report.
+> - Select **Totals only** to show lines only for first selected dimension.
 
 ## General ledger report
 
@@ -198,6 +201,7 @@ The **General ledger** report is designed to generate turnover on a specified ac
 > - Select **Voucher** to view the ledger transactions that generated the activity.
 > - Select **Select** to change the report generation parameters.
 > - Select **Print** to print the report in SSRS.
+> - Select **Totals only** to show lines only for first selected dimension.
 
 ## Turnover balance statement report archive
 
