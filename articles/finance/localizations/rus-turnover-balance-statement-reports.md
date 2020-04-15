@@ -60,7 +60,7 @@ Turnover balance sheets for the customer, vendor, and advance holder let you sho
 11. Set the **Delete zero line** option to **Yes** if you don't want to print lines or columns that have 0 (zero) values.
 12. Set the **Total accounts** option to **Yes** to total the accounts.
 13. Set the **Show transactions** option to **Yes** to show the contractor transactions.
-14. Set the **Itemize balance** option to **Yes** to send the expanded balance to the turnover balance sheet.
+14. Set the **Itemize balance** option to **Yes** to present detalization of the balance columns.
 15. Set the **Calculate balance** option to **Yes** to calculate and show the balance on the report.
 
     ![Customer turnover register page, General tab](media/01_Customer_turnover_register.jpg)
@@ -102,7 +102,7 @@ Turnover balance sheets for the customer, vendor, and advance holder let you sho
 11. Set the **Delete zero line** option to **Yes** if you don't want to print lines or columns that have 0 (zero) values.
 12. Set the **Total accounts** option to **Yes** to total the accounts.
 13. Set the **Show transactions** option to **Yes** to show the contractor transactions.
-14. Set the **Itemize balance** option to **Yes** to send the expanded balance to the turnover balance sheet.
+14. Set the **Itemize balance** option to **Yes** to present detalization of the balance columns.
 15. Set the **Calculate balance** option to **Yes** to calculate and show the balance on the report.
 
     ![Vendor turnover register page, General tab](media/04_Vendor_turnover_register.jpg)
@@ -144,7 +144,7 @@ Turnover balance sheets for the customer, vendor, and advance holder let you sho
 11. Set the **Delete zero line** option to **Yes** if you don't want to print lines or columns that have 0 (zero) values.
 12. Set the **Total accounts** option to **Yes** to total the accounts.
 13. Set the **Show transactions** option to **Yes** to show the contractor transactions.
-14. Set the **Itemize balance** option to **Yes** to send the expanded balance to the turnover balance sheet.
+14. Set the **Itemize balance** option to **Yes** to present detalization of the balance columns.
 15. Set the **Calculate balance** option to **Yes** to calculate and show the balance on the report.
 
 16. Select **ОК** to generate the report.
