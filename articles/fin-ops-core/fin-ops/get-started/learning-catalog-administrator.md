@@ -7,7 +7,7 @@ ms.date: 02/28/2020
 ms.author: v-lshann
 ---
 
-# Administrators Learning 
+# Administrators Learning Catalog
 
 Do you need to keep systems and data flowing, provisioned, and secure round-the-clock?
 
@@ -15,13 +15,11 @@ The following catalog is organized from core knowledge to specific domains, and 
 
 
 ## Get Started<a name="get-started"></a>
-
-| Content                                                                              | Description                                                                                                                                                                                                                                                                                                                                                                                       | Length    |
+| Content                                                                               | Description                                                                                                                                                                                                                                                                                                                                                                                       | Length    |
 |-----------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
 | [Dynamics 365 and Power Platform Fundamentals](https://docs.microsoft.com/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Are you interested in learning about business applications? Start with this learning path to see how Dynamics 365 apps are used. Learn about cloud concepts, Power Platform, and how to get started with Dynamics 365 apps.                                                                                                                                                                       | 5.5 hours |
 | [Get started with Finance and Operations apps](https://docs.microsoft.com/learn/paths/get-started-finance-operations/)      | Learn how Finance and Operations apps support businesses to manage their global financial systems, operational business processes, and streamlined supply chains to empower people to make fast, informed decisions. As the first step in your career of working with Finance and Operations apps, you must familiarize yourself with its features and functionality, whatever your desired role. | 2 hours   |
 | [Course MB-900T01-A: Dynamics 365 fundamentals](https://www.microsoft.com/learning/course.aspx?cid=MB-900T01)               | This course will familiarize the learner with Dynamics 365 functionality and business value. The course will cover Dynamics 365 applications, the Power Platform, cloud concepts, the security model, and licensing considerations.                                                                                                                                                               | 1 day     |
-
 
 ## Core platform knowledge<a name="core-platform-knowledge"></a>
 | Content  | Description  | Format  | Length    | 
