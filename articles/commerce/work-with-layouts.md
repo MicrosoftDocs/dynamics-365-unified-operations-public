@@ -94,7 +94,7 @@ To set or change the theme for all child pages that use your preset layout, foll
 
 To save and check in your preset layout, follow these steps.
 
-1. On the command bar, select **Save**. Saved changes don't affect downstream pages until they are checked in.
+1. Select **Save** at the top of the layout editor. Saved changes don't affect downstream pages until they are checked in.
 1. Select **Finish editing**. Your changes are now discoverable for downstream workflows.
 
 To preview your changes, either open an existing page that uses the preset layout or create a new page from the layout.
