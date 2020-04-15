@@ -49,15 +49,16 @@ Turnover balance sheets for the customer, vendor, and advance holder let you sho
     > This field is available only if you select **Indicated currency** in the **Currency type** field.
 
 6. In the **Main account** field, select the account to generate the report for.
-7. In the **Detail and sorting parameters** section, you can specify the fields that are used for grouping by moving them from the **Available fields** list to the **Selected fields** list. You can also change the grouping order as you require.
-8. In the **Dimension** section, in the **Agreement**, **ExpenseAndIncomeCode**, and **Worker** fields, specify dimension codes if you want to select transactions that have specific codes for the report.
+7. Select the **Expand all** button to show additional information on settlements.
+8. In the **Detail and sorting parameters** section, you can specify the fields that are used for grouping by moving them from the **Available fields** list to the **Selected fields** list. You can also change the grouping order as you require.
+9. In the **Dimension** section, in the **Agreement**, **ExpenseAndIncomeCode**, and **Worker** fields, specify dimension codes if you want to select transactions that have specific codes for the report.
 
     > [!NOTE]
     > If you leave these fields blank, the system will select transactions that have *any* dimension code for the report.
 
-9. Set the **Print ranges** option to **Yes** to view the query terms when you print the report.
-10. Set the **Delete zero line** option to **Yes** if you don't want to print lines or columns that have 0 (zero) values.
-11. Set the **Total accounts** option to **Yes** to total the accounts.
+10. Set the **Print ranges** option to **Yes** to view the query terms when you print the report.
+11. Set the **Delete zero line** option to **Yes** if you don't want to print lines or columns that have 0 (zero) values.
+12. Set the **Total accounts** option to **Yes** to total the accounts.
 13. Set the **Show transactions** option to **Yes** to show the contractor transactions.
 14. Set the **Itemize balance** option to **Yes** to send the expanded balance to the turnover balance sheet.
 15. Set the **Calculate balance** option to **Yes** to calculate and show the balance on the report.
@@ -90,15 +91,16 @@ Turnover balance sheets for the customer, vendor, and advance holder let you sho
     > This field is activated available only if you select **Indicated currency** in the **Currency type** field.
 
 6. In the **Main account** field, select the account to generate the report for.
-7. In the **Detail and sorting parameters** section, you can specify the fields that are used for grouping by moving them from the **Available fields** list to the **Selected fields** list. You can also change the grouping order as you require.
-8. In the **Dimension** section, in the **Agreement**, **ExpenseAndIncomeCode**, and **Worker** fields, specify dimension codes if you want to select transactions that have specific codes for the report.
+7. Select the **Expand all** button to show additional information on settlements.
+8. In the **Detail and sorting parameters** section, you can specify the fields that are used for grouping by moving them from the **Available fields** list to the **Selected fields** list. You can also change the grouping order as you require.
+9. In the **Dimension** section, in the **Agreement**, **ExpenseAndIncomeCode**, and **Worker** fields, specify dimension codes if you want to select transactions that have specific codes for the report.
 
     > [!NOTE] 
     > If you leave these fields blank, the system will select transactions that have *any* dimension code for the report.
 
-9. Set the **Print ranges** option to **Yes** to view the query terms when you print the report.
-10. Set the **Delete zero line** option to **Yes** if you don't want to print lines or columns that have 0 (zero) values.
-11. Set the **Total accounts** option to **Yes** to total the accounts.
+10. Set the **Print ranges** option to **Yes** to view the query terms when you print the report.
+11. Set the **Delete zero line** option to **Yes** if you don't want to print lines or columns that have 0 (zero) values.
+12. Set the **Total accounts** option to **Yes** to total the accounts.
 13. Set the **Show transactions** option to **Yes** to show the contractor transactions.
 14. Set the **Itemize balance** option to **Yes** to send the expanded balance to the turnover balance sheet.
 15. Set the **Calculate balance** option to **Yes** to calculate and show the balance on the report.
@@ -131,15 +133,16 @@ Turnover balance sheets for the customer, vendor, and advance holder let you sho
     > This field is available only if you select **Indicated currency** in the **Currency type** field.
 
 6. In the **Main account** field, select the account to generate the report for.
-7. In the **Detail and sorting parameters** section, you can specify the fields that are used for grouping by moving them from the **Available fields** list to the **Selected fields** list. You can also change the grouping order as you require.
-8. In the **Dimension** section, in the **Agreement**, **ExpenseAndIncomeCode**, and **Worker** fields, specify dimension codes if you want to select transactions that have specific codes for the report.
+7. Select the **Expand all** button to show additional information on settlements.
+8. In the **Detail and sorting parameters** section, you can specify the fields that are used for grouping by moving them from the **Available fields** list to the **Selected fields** list. You can also change the grouping order as you require.
+9. In the **Dimension** section, in the **Agreement**, **ExpenseAndIncomeCode**, and **Worker** fields, specify dimension codes if you want to select transactions that have specific codes for the report.
 
     > [!NOTE]
     > If you leave these fields blank, the system will select transactions that have *any* dimension code for the report.
 
-9. Set the **Print ranges** option to **Yes** to view the query terms when you print the report.
-10. Set the **Delete zero line** option to **Yes** if you don't want to print lines or columns that have 0 (zero) values.
-11. Set the **Total accounts** option to **Yes** to total the accounts.
+10. Set the **Print ranges** option to **Yes** to view the query terms when you print the report.
+11. Set the **Delete zero line** option to **Yes** if you don't want to print lines or columns that have 0 (zero) values.
+12. Set the **Total accounts** option to **Yes** to total the accounts.
 13. Set the **Show transactions** option to **Yes** to show the contractor transactions.
 14. Set the **Itemize balance** option to **Yes** to send the expanded balance to the turnover balance sheet.
 15. Set the **Calculate balance** option to **Yes** to calculate and show the balance on the report.
@@ -172,14 +175,15 @@ The **General ledger** report is designed to generate turnover on a specified ac
 6. In the **Main account** field, select the account to generate the report for.
 7. In the **Corr. account** field, select the corresponding account to generate the report for.
 8. In the **Detail and sorting parameters** section, you can specify the fields that are used for grouping by moving them from the **Available fields** list to the **Selected fields** list. You can also change the grouping order as you require.
-9. In the **Dimension** section, in the **Agreement**, **ExpenseAndIncomeCode**, and **Worker** fields, specify dimension codes if you want to select transactions that have specific codes for the report.
+9. Select the **Expand all** button to show additional information on settlements.
+10. In the **Dimension** section, in the **Agreement**, **ExpenseAndIncomeCode**, and **Worker** fields, specify dimension codes if you want to select transactions that have specific codes for the report.
 
     > [!NOTE]
     > If you leave these fields blank, the system will select transactions that have *any* dimension code for the report.
 
-10. Set the **Print ranges** option to **Yes** to view the query terms when you print the report.
-11. Set the **Delete zero line** option to **Yes** if you don't want to print lines or columns that have 0 (zero) values.
-12. Set the **Total accounts** option to **Yes** to total the accounts.
+11. Set the **Print ranges** option to **Yes** to view the query terms when you print the report.
+12. Set the **Delete zero line** option to **Yes** if you don't want to print lines or columns that have 0 (zero) values.
+13. Set the **Total accounts** option to **Yes** to total the accounts.
 14. Set the **Show transactions** option to **Yes** to show the accountable person transactions.
 15. Set the **Calculate balance** option to **Yes** to calculate and show the balance on the report.
 
