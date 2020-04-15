@@ -85,7 +85,7 @@ To add a hero module to a new page and set the required properties, follow these
 
 1. Go to **Templates**, and create a page template that is named **Content block template**.
 1. In the **Main** slot of the default page, add a hero module.
-1. Check in the template, and publish it.
+1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.
 1. Use the hero template that you just created to create a page that is named **Content block page**.
 1. In the **Main** slot of the default page, select the ellipsis button (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, under **Select Modules**, select the hero module, and then select **OK**.
