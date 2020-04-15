@@ -48,7 +48,7 @@ You can calculate a depreciation bonus by reducing the value of an asset through
 4. In the **Depreciation bonus percent** field, enter the percentage of the depreciation bonus.
 
 > [!NOTE]
-> Depreciation bonuses can be used when you create a Fixed asset journal line for the **Putting into operation** transaction type. For more information, see [Acquiring fixed assets and putting them into operation](rus-fixed-asset-acquisition.md). When you post the Fixed asset journal, the system sets the depreciation bonus into a fixed asset transaction of the **Putting into operation** transaction type. This information is then used when depreciation is calculated. 
+> Depreciation bonuses can be used when you create a Fixed asset journal line for the **Putting into operation** transaction type. For more information, see [Acquiring fixed assets and putting them into operation](rus-fixed-asset-acquisition.md). When you post the Fixed asset journal, the system fills in the **Depreciation bonus** field in the fixed asset transaction of the **Putting into operation** transaction type. This information is then used when depreciation is calculated. 
 
 ## Calculate a depreciation bonus
 
