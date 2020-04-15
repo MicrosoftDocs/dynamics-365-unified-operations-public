@@ -37,7 +37,7 @@ This topic describes how to save, preview, and publish a page in Microsoft Dynam
 
 ## Save a page
 
-To save a page, you must have it checked out to yourself and open in the page editor. You should save a page immediately after you modify it, to help guarantee that your changes are stored.
+To save a page, you must have it checked out to yourself and open in the page editor. To check out a page, you select **Edit** on the command bar. After editing a page, you should save it immediately to ensure that your changes are stored.
 
 When you save a page, the changes are visible only to you. The save operation is intended primarily to store changes while the page isn't yet ready to be checked in. When you've finished modifying the page, we recommend that you check it in, so that the changes become visible to others. At that point, the page can also be checked out by other users who must modify it.
 
@@ -54,7 +54,7 @@ When you've finished modifying the page, you might want to preview it to see wha
 
 ## Publish a page
 
-When your page is ready, the next step is to publish it, so that external users can view the content. Before you can publish a page, you must check it in.
+When your page is ready, the next step is to publish it, so that external users can view the content. Before you can publish a page, you must check it in by selecting **Finish editing** on the command bar.
 
 You can publish and unpublish pages from either the page inspector or the page editor. The page inspector shows a list of pages and allows for bulk operations. The page editor can be used to publish or unpublish only the single page that is open in it.
 
@@ -74,9 +74,9 @@ To save, preview, and publish a home page, follow these steps.
 1. Under **Sites**, select **Fabrikam** (or the name of your site).
 1. In the navigation pane on the left, select **Pages**.
 1. Find and select the home page to open it in the page editor.
-1. Select **Check Out**.
+1. Select **Edit**.
 1. Modify the page as you require.
-1. Select **Save**, and then select **Check In**.
+1. Select **Save**, and then select **Finish editing**.
 1. In the **Comments** field, enter a note about the changes that you made, and then select **OK**.
 1. Select **Preview** to preview your page. When you've finished, close the preview tab to return to the authoring tool.
 1. Select **Publish**.
