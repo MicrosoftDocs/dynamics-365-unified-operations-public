@@ -74,13 +74,12 @@ To turn on the trace log, follow these steps.
 To view the trace log, follow these steps.
 
 1. Sign in to the Finance and Operations app, open the **Settings** page, and then, under **Customization**, select **Plug-in Trace Log**.
-2. Find the trace logs where the **Type Name** field is set to **Microsoft.Dynamics.Integrator.CrmPlugins.Plugin**.
+2. Find the trace logs where the **Type Name** field is set to **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
 3. Double-click an item to view the full log, and then, on the **Execution** FastTab, review the **Message Block** text.
 
 ## Enable debug mode to troubleshoot live synchronization issues in Finance and Operations apps
 
 **Required role to view the errors:** System admin
-
 Dual-write errors that originate in Common Data Service can appear in the Finance and Operations app. In some cases, the full text of the error message isn't available because the message is too long or contains personally identifying information (PII). You can turn on verbose logging for errors by following these steps.
 
 1. All project configurations in Finance and Operations apps have an **IsDebugMode** property in the **DualWriteProjectConfiguration** entity. Open the **DualWriteProjectConfiguration** entity by using the Excel add-in.
@@ -108,7 +107,7 @@ Dual-write errors that originate in Common Data Service can appear in the Financ
 
 ## Unlink and link another Common Data Service environment from a Finance and Operations app
 
-**Required credentials to unlink the environment:** Azure AD tenant admin
+**Required role to unlink the environment:** System admin on either Finance and Operations app or Common Data Service.
 
 1. Sign in to the Finance and Operations app.
 2. Go to **Workspaces \> Data management**, and select the **Dual Write** tile.
@@ -117,3 +116,12 @@ Dual-write errors that originate in Common Data Service can appear in the Financ
 5. Select **Yes** to confirm the operation.
 
 You can now link a new environment.
+
+## Unable to see the sales order line ‘Information’ form 
+
+While creating a sales order in Dynamics 365 Sales app, your click on **+ Add products** button may redirect you to Project Operations order line form. From there, there is no way to change the view to Sales order line **Information** form. The sales order line **Information** form shown below will be missing. This happens because Project operation app has been installed on your environment.
+![sales order line](media/sales-order-line.png)
+
+In order to get back the **Information** form, navigate to the **Order Line** entity and find the **Information** form under the forms node. Select the **Information** form and click on **Enable security roles**. Change the security setting to **Display to everyone**.
+
+
