@@ -115,7 +115,7 @@ If a fixed asset is registered after it's put into operation, depreciation is ca
     - **Next half year start** – Depreciation is calculated from the half-year after the fixed asset is put into operation after acquisition.
     - **Next year start** – Depreciation is calculated from the year after the fixed asset is put into operation after acquisition.
     - **Date of the registration** – Depreciation is calculated from the date of registration.
-9. In the **Depreciation bonus** field, enter the maximum depreciation bonus percent. **Depreciation bonus** selecting in the **Putting into operation** transaction can't exceed this value.        
+9. In the **Depreciation bonus** field, enter the maximum depreciation bonus percent. Selected **Depreciation bonus** percent in the **Putting into operation** transaction can't exceed this value.        
 10. On the **Deferrals** FastTab, in the field above the grid, select **Disposal** to set up parameters that are used to create deferrals on the disposal of fixed assets that accrue a loss. Select **Partial dismantlement** to set up parameters that are used create deferrals on the partial write-off of fixed assets that accrue a loss.
 
     > [!NOTE]
