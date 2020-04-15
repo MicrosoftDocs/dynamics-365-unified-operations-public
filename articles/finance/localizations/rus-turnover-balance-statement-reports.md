@@ -195,8 +195,6 @@ The **General ledger** report is designed to generate turnover on a specified ac
 > - Select **Select** to change the report generation parameters.
 > - Select **Print** to print the report in SSRS.
 
-   ![General ledger turnover balance statement report](media/9_General_ledger.jpg)
-
 ## Turnover balance statement report archive
 
 On the **Report archive** page, you can view reports and download them in Excel format.
