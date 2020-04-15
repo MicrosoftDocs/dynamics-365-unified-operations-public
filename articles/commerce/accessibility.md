@@ -62,7 +62,7 @@ The Dynamics 365 Commerce digital asset management system supports several acces
 
 ### Configure video accessibility elements
 
-In Dynamics 365 Commerce, in the **Media Library** section for your site, you can upload video assets that have separate files for closed captions, regular audio, and descriptive audio. Closed captions can also be generated automatically when a video asset is uploaded.
+In the Commerce **Media Library** section for your site, you can upload video assets that have separate files for closed captions, regular audio, and descriptive audio. Closed captions can also be generated automatically when a video asset is uploaded.
 
 #### Generate or upload closed caption files during video asset upload
 
@@ -85,7 +85,7 @@ CC and audio transcript files can be edited directly in the authoring tool. Vide
 
 To edit CC and audio transcript files, follow these steps.
 
-1. Go to **Media Library**, select the video asset, and then select **Edit CC/Transcript**. The closed caption and transcript content editor appears.
+1. Go to **Media Library**, select the name of the video asset, and then select **Edit CC/Transcript**. The closed caption and transcript content editor appears.
 1. Select **Edit**.
 1. Edit the closed caption or transcript text.
 1. When you've finished, select **Save**, and then select **Finish editing**.
