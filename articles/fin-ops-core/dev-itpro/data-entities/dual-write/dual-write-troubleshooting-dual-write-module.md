@@ -97,5 +97,5 @@ If you run into an error like “Unable to complete initial data sync. Error: du
 2.	This mapping might be missing some source or destination fields. If the F&O side fields are missing follow the steps in the section Missing entity fields issue on maps, if the CDS side fields are missing click ‘Refresh entities’ button on the mapping so that the fields are automatically populated back into the mapping.
 
 
-![Error while trying to start an entity map](media\tsg-error-starting-entity-map.png)
+![Error while trying to start an entity map](media/tsg-error-starting-entity-map.png)
 
