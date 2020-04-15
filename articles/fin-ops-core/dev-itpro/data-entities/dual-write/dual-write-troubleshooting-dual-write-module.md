@@ -89,3 +89,13 @@ To fix the issue, create a ticket for the Data Integration team. Attach the netw
 
 > [!Note] 
 > You will not run into this error once we enable force unlinking which should be available soon.
+
+## Error while trying to start an entity mapping
+
+If you run into an error like “Unable to complete initial data sync. Error: dual-write failure - plugin registration failed: Unable to build dual-write lookup metadata. Error object reference not set to an instance of an object” as the below screenshot while trying to get a mapping into ‘Running’ state, it could be due to couple of reasons:
+1.	Make sure to enable the dependent mappings of this entity mapping.
+2.	This mapping might be missing some source or destination fields. If the F&O side fields are missing follow the steps in the section Missing entity fields issue on maps, if the CDS side fields are missing click ‘Refresh entities’ button on the mapping so that the fields are automatically populated back into the mapping.
+
+
+![Error while trying to start an entity map](media\tsg-error-starting-entity-map.png)
+
