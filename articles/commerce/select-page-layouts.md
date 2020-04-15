@@ -45,7 +45,7 @@ This topic explains how to create and select page layouts in Microsoft Dynamics 
 To create layouts for an existing page, follow these steps.
 
 1. Go to **Pages**, and find the existing page in the list. Use the search feature as you require.
-1. Select the page, check it out, and then select it to open it. Make a note of the module order.
+1. Select the page, select **Edit** to check it out, and then select the page name to open it. Make a note of the module order.
 1. Select **Save as New Layout**.
 1. Enter a name for the layout, and then select **OK**.
 1. Select **Convert to Embedded Layout**.
@@ -53,6 +53,7 @@ To create layouts for an existing page, follow these steps.
 1. Select **Save as New Layout**.
 1. Enter a name for the layout, and then select **OK**.
 1. Select **Change Layout**, select the first layout that you created, and then select **OK**. Make a note of the module order. Change it so that it matches the module order that was saved with the layout.
+1. Select **Finish editing** to check in the page, and then select **Publish** to publish it. 
 
 ## Select a different layout for an existing page
 
@@ -62,9 +63,10 @@ To create layouts for an existing page, follow these steps.
 To select a different layout for an existing page, follow these steps.
 
 1. Go to **Pages**, and find the existing page in the list. Use the search feature as you require.
-1. Select the page, check it out, and then select it to open it.
+1. Select the page, select **Edit** to check it out, and then select the page name to open it.
 1. Select **Change layout**.
 1. Select the new layout for the page, and then select **OK**. The page editor is refreshed to show the new layout.
+1. Select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
 ## Additional resources
 
