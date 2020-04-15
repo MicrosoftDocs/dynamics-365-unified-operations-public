@@ -34,6 +34,9 @@ Customers can update the software in their environments by applying software dep
 
 This topic outlines the best practices for creating and managing an all-in-one deployable package (ADP).
 
+> [!IMPORTANT]
+> Support for non ADP packages for v1 Cloud service customers ends on October 31st 2020.
+
 ## What is an ADP?
 
 An ADP is a software deployable package that contains all the models and binaries that you currently have in an environment. Think of it as a single package that represents all the non-Microsoft software in an environment.
