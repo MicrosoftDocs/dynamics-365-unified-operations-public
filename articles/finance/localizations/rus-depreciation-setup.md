@@ -115,16 +115,16 @@ If a fixed asset is registered after it's put into operation, depreciation is ca
     - **Next half year start** – Depreciation is calculated from the half-year after the fixed asset is put into operation after acquisition.
     - **Next year start** – Depreciation is calculated from the year after the fixed asset is put into operation after acquisition.
     - **Date of the registration** – Depreciation is calculated from the date of registration.
-
-9. On the **Deferrals** FastTab, in the field above the grid, select **Disposal** to set up parameters that are used to create deferrals on the disposal of fixed assets that accrue a loss. Select **Partial dismantlement** to set up parameters that are used create deferrals on the partial write-off of fixed assets that accrue a loss.
+9. In the **Depreciation bonus** field, enter the maximum depreciation bonus percent. **Depreciation bonus** selecting in the **Putting into operation** transaction can't exceed this value.        
+10. On the **Deferrals** FastTab, in the field above the grid, select **Disposal** to set up parameters that are used to create deferrals on the disposal of fixed assets that accrue a loss. Select **Partial dismantlement** to set up parameters that are used create deferrals on the partial write-off of fixed assets that accrue a loss.
 
     > [!NOTE]
     > When you create a transaction for the disposal or partial write-off of a fixed asset, if the transaction causes a loss, the transaction details are posted to a deferral account. This account contains the values of the calculated loss and the write-off time. The write-off time is calculated by using the fixed asset depreciation factor and the difference between the useful life of the depreciated asset and the actual amount of time that the asset was used before disposal.
 
-10. Select **Add** to create a line.
-11. In the **Model number** field, select the model number of the deferral.
-12. In the **Deferrals group** field, select the deferrals group for deferred expenses.
-13. In the **Expense code** field, select the expense code for deferrals.
+11. Select **Add** to create a line.
+12. In the **Model number** field, select the model number of the deferral.
+13. In the **Deferrals group** field, select the deferrals group for deferred expenses.
+14. In the **Expense code** field, select the expense code for deferrals.
 
 ## Additional resources
 
