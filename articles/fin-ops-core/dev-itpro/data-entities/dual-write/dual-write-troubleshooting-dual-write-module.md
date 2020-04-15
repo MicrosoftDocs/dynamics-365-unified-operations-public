@@ -45,17 +45,14 @@ This topic provides troubleshooting information for dual-write integration betwe
 
 If you can't open the **Dual-write** page by selecting the **Dual Write** tile in the **Data management** workspace, the data integration service is probably down. Create a support ticket to request a restart of the data integration service.
 
-## Error when you try to create a new entity mapping
+## Error when you try to create a new entity map
 
-**Required credentials to fix the issue:** Azure AD tenant admin
+**Required credentials to fix the issue:** User credentials who setup the dual-write connection. 
 
-You might receive the following error message when you try to configure a new entity for dual-write:
+You might receive the following error message when you try to configure a new entity for dual-write. This is by design as only the user who setup dual-write connection can add a new entity map.
 
 *Response status code does not indicate success: 401 (Unauthorized)*
 
-This error occurs because only an Azure AD tenant admin can add a new entity mapping.
-
-To fix the issue, sign in to the Finance and Operations app as an Azure AD admin tenant. You must also go to web.PowerApps.com and revalidate your connection.
 
 ## Error when you open the dual-write user interface
 
@@ -67,7 +64,7 @@ To fix the issue, sign in by using an InPrivate window in Microsoft Edge, an inc
 
 ## Error when you link the environment for dual-write or add a new entity mapping
 
-**Required credentials to fix the issue:** Azure AD tenant admin
+**Required role to fix the issue:** System Administrator in both Finance and Operations apps and Common Data Service.
 
 You might encounter the following error when linking or creating maps:
 
@@ -75,7 +72,7 @@ You might encounter the following error when linking or creating maps:
 Session ID: \<your session id\><br>
 Root activity ID: \<your root activity id\>*
 
-This error can occur if you don't have sufficient permissions to link dual-write or create maps. You must use an Azure AD tenant admin account to link environments and add new entity mappings. However, after setup, you can use a non-admin account to monitor status and edit the mappings.
+This error can occur if you don't have sufficient permissions to link dual-write or create maps. This could also happen if Common Data Service environment was reset without unlinking dual-write. Any user with system admin role in both Finance and Operations apps and Common Data Service can link the environments. But only the user who setup the dual-write connection can add new entity maps. Once that is done, any user with system administrator role can monitor the status and potentially change the maps if needed. 
 
 ## Error when you stop the entity mapping
 
@@ -86,6 +83,9 @@ User is not allowed to access connection
 dynamicscrmonline/xxxxxx-xxxx-xxxx-xxxxxxxx"}\], The remote server returned an
 error: (403) Forbidden.*
 
-This error occurs when the linked Common Data Service environment isn't available.
+This error occurs when the linked Common Data Service environment isn't available. 
 
 To fix the issue, create a ticket for the Data Integration team. Attach the network trace so that the Data Integration team can mark the maps as **Not running** in the back end.
+
+> [!Note] 
+> You will not run into this error once we enable force unlinking which should be available soon.
