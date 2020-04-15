@@ -87,10 +87,10 @@ Notes:
 5. Click on the **IoT Intelligence** add-in.
 6. Provide the details of your IoT hub and Redis cache. You can find the values that you need in the key vault you created in the [name of section](#link to section).
 
-    a. In Azure, open the key vault you previously created, and copy the DNS name. The DNS name servers as the key vault identifer.
-    b. In the **Setup add-in** dialog, paste the value into the fields for **IoT Hub** and **Redis cache**.
-    c. In Azure, open the key vault and click the Secrets tab. Copy the secret for ?? and copy it to the ??? field in the **Setup add-in** dialog.
-    d. In Azure, copy the secret for the **Redis ???** and copy it to **Redis cache endpoint secret name** in the **Setup add-in** dialog.
+    1. In Azure, open the key vault you previously created, and copy the DNS name. The DNS name servers as the key vault identifer.
+    2. In the **Setup add-in** dialog, paste the value into the fields for **IoT Hub** and **Redis cache**.
+    3. In Azure, open the key vault and click the Secrets tab. Copy the secret for ?? and copy it to the ??? field in the **Setup add-in** dialog.
+    4. In Azure, copy the secret for the **Redis ???** and copy it to **Redis cache endpoint secret name** in the **Setup add-in** dialog.
 
 7. Click **Install**. 
 8. A dialog shows up that says **Add-in has been successfully triggered for installation**. Click **OK**.
@@ -127,21 +127,21 @@ The **Equipment downtime** scenario maps a machine to a **PartOut** signal and d
 
 8. Add a row to the table. 
 
-    a. Set the **Schema name** to **id**.
-    b. Set the **Schema path** to **/[payload]\*/id**.
-    c. Set the **Description** to **Message id**.
+    1. Set the **Schema name** to **id**.
+    2. Set the **Schema path** to **/[payload]\*/id**.
+    3. Set the **Description** to **Message id**.
 
 9. Add a row to the table. 
 
-    a. Set the **Schema name** to **timestamp**.
-    b. Set the **Schema path** to **/[payload]\*/timestamp**.
-    c. Set the **Description** to **Message timestamp**.
+    1. Set the **Schema name** to **timestamp**.
+    2. Set the **Schema path** to **/[payload]\*/timestamp**.
+    3. Set the **Description** to **Message timestamp**.
 
 10. Add a row to the table. 
 
-    a. Set the **Schema name** to **value**.
-    b. Set the **Schema path** to **/[payload]\*/value**.
-    c. Set the **Description** to **Message value**.
+    1. Set the **Schema name** to **value**.
+    2. Set the **Schema path** to **/[payload]\*/value**.
+    3. Set the **Description** to **Message value**.
 
     You don't need to define all the properties in the message, only the ones that you need. In this example, you did not create a row for **Root timestamp**.
   
@@ -153,11 +153,11 @@ The **Equipment downtime** scenario maps a machine to a **PartOut** signal and d
 16. Click **Next** for the **Equipment resource id configuration** page.
 17. In this step, you map the machine names to ??? in the Supply Chain Management. 
 
-    a. For the **Schema path** - **/[payload]\*/id**, in the **Signal Data Values** table, add a new row, and enter **IoTInt.Machine1225.PartOut** in the **Value** column. 
-    b. In the **Business Record Mapping** table, click **New**. The default value for the **Business record type** is autopopulated, and you don't need to change it. 
-    c. In the **Business record** column, select **Machine1225**. 
-    d. Click **Save**. 
-    e. Repeat these steps, adding a new business record mapping for **Machine1226**. You can map multiple **id** values from the messages to a single record in Supply Chain Management, but you can't map a single **id** value to multiple records in Supply Chain Management.
+    1. For the **Schema path** - **/[payload]\*/id**, in the **Signal Data Values** table, add a new row, and enter **IoTInt.Machine1225.PartOut** in the **Value** column. 
+    2. In the **Business Record Mapping** table, click **New**. The default value for the **Business record type** is autopopulated, and you don't need to change it. 
+    3. In the **Business record** column, select **Machine1225**. 
+    4. Click **Save**. 
+    5. Repeat these steps, adding a new business record mapping for **Machine1226**. You can map multiple **id** values from the messages to a single record in Supply Chain Management, but you can't map a single **id** value to multiple records in Supply Chain Management.
 
 18. After you have entered all the rows you need in the **Business Record Mapping** table, use the **Selected** column to choose when machines you want to process. You do not have to process information that comes from all the machines.
 19. Click **Next** to go to the **Part produced signal configuration** page.
