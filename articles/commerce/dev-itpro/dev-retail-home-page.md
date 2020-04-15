@@ -112,6 +112,7 @@ This page lists the resources that are available for IT pros and developers who 
 - [Retail software development kit (SDK) architecture](retail-sdk/retail-sdk-overview.md)
 - [Create deployable packages](retail-sdk/retail-sdk-packaging.md)
 - [Merge the build systems for Commerce and Finance](retail-sdk/integrate-retail-sdk-continuous-build.md)
+- [Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017](retail-sdk/migrate-sdk.md)
 - [Retail software development kit (SDK) samples](retail-sdk/retail-sdk-samples.md)
 - [Channel database extensions](channel-db-extensions.md) 
 - [Enable custom Commerce Data Exchange synchronization via extension](cdx-extensibility.md)
