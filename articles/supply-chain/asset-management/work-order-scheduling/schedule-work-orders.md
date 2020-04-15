@@ -132,8 +132,12 @@ The **Scheduled work orders gantt chart** provides a graphical interface where y
 To view and work with the gantt chart:
 
 1. Go to **Asset management > Work orders > Scheduled work orders gantt chart**.
+
 1. Use the drop-down lists and fields in the **Settings** section to set up which functional location, time span, and time scale to show in the gantt chart.
-1. Select **Apply** to view the chart using your selected settings.
-    - Scheduled work orders that match your settings are shown, represented by blue rectangles.
-    - To reschedule a displayed work order, select and drag it to the appropriate new date and time.
+
+1. Select **Apply**.
+
+    - The gantt chart updates to show the scheduled work orders that match your settings. Each work order is represented by a blue rectangle.
+    - To reschedule a displayed work order, select and then drag it to the appropriate new date and time.
+
 1. If you made any changes, select **Save** on the action pane to save them.
