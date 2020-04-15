@@ -40,7 +40,6 @@ Internet of things (IoT) Intelligence supports the following core insights and a
 + **Delayed orders** : Provides notification services and actions for managing delayed production orders. Displays impacted operations. Provides users with the ability to define order-delay metrics for combinations of resources and products, and notifies users when exceptions to these thresholds occur. Enables users to take relevant business actions for delayed orders, including the ability to view impact or create a maintenance request.
 + **Equipment down**: Provides notification services and actions for managing equipment-down scenarios. Displays impacted operations. Provides users with the ability to define metrics for machine-down thresholds and notifies users when an exception to these thresholds occurs. Enables users to take relevant business actions for delayed orders, including the ability to view impact or create a maintenance work order.
 + **Quality anomaly**: Provides notification services and actions for managing quality anomalies. Provides users with the ability to define quality attributes for products and get notified when exceptions to these attributes occur.
-+ **Automated inventory updates**: Provides automated inventory updates from the shop floor. Provides the ability to define batching/grouping rules for automatic inventory update journals and report as finished (RAF) creation based on part-out signals received from the IoT Hub.
 
 You can setup and configure core insights without writing any code. 
 
@@ -48,7 +47,7 @@ In this topic, you will configure the scenario to generate a message in Supply C
 
 ## Overview of setup process
 
-+ Configure your devices to send telemetry to IoT Hub. For more information, see [Azure IoT Hub Documentation](https://docs.microsoft.com/azure/iot-hub/).
++ Configure your devices to send telemetry to IoT Hub, and define the JSON message format. For more information, see [Azure IoT Hub Documentation](https://docs.microsoft.com/azure/iot-hub/).
 + Create a OneBox environment, and give the appropriate SQL users access to environment for IoT Intelligence.
 + Setup the IoT scenario in Supply Chain Management, including enabling the feature flag, configuring the schema, mapping the signals to Suppy Chain Management sources, and enabling the scenario.
 
@@ -165,11 +164,11 @@ The **Equipment downtime** scenario maps a machine to a **PartOut** signal and d
 
 ## Configure the **Quality** scenario in Supply Chain Management
 
-The **Quality scenario** determines if an attribute is valid or not by mapping a sensor reading to machine and defining a batch attribute. The sensor reading is monitored only when the signal is selected for the scenario, the sensor’s machine is running,and the machine is scheduled to produce a product that has the batch attribute defined. While the machine is running, every time the signal is outside of the batch attribute’s valid range a quality notification is triggered. THe valid range is specified using a minimum and a maximum value.
+The **Quality** scenario generates a notification if an attribute of an item is outside a speicified range. For example, a sensor could send the weight of each item to IoT Hub. In Suppy Chain Management, a notification would be generated if the item was too heavy or too light. 
 
 ## Configure the **Production Order Delay** scenario in Supply Chain Management
 
-The **Production Order Delay** scenario determine if an order is delayed or not by mapping a **PartOut** signal to a maching and defining a route threshold. A production order is monitored only when the producing machine is selected for the scenario and is set to running in Supply Chain Management. The order delay is calculated based on how long the production order is scheduled to run, how many items should be be produced, how long the job has been running, and how many **PartOut** signals are received. A production order delay notification is created if the number of the **PartOut** signals for the job falls below the threshold value of the expected linear output rate.
+The **Production Order Delay** scenario generates a notification if the production throughput falls below a threshold value. In this scenario, a **PartOut** signal is sent to IoT Hub for each item produced. In Supply Chain Management, the order delay is calculated based on how long the production order is scheduled to run, how many items should be be produced, how long the job has been running, and how many **PartOut** signals are received. A delay notification would be generated if the number of the **PartOut** signals for the job falls below the threshold value of the expected value.
 
 ## How to view the monitors in Supply Chain Management
 
