@@ -5,7 +5,7 @@ title: Synchronize Self-service installers in Dynamics 365 Commerce
 description: This topic explains how to utilize LCS Asset and Shared Asset libraries and Dynamics 365 Headquarters to upload and synchronize Self-service installers (For use with the standard Self-service download mechanism).
 author: jashanno
 manager: AnnBe
-ms.date: 04/14/2020
+ms.date: 04/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics-365-retail
@@ -40,8 +40,8 @@ This topic explains how to utilize LCS Asset and Shared Asset libraries and Dyna
 ## Key terms
 | Term | Description |
 |---|---|
-| Shared asset library | In Microsoft Dynamics Lifecycle Services (LCS), two types of Asset libraries are available: the Shared asset library and the project-level Asset library. More information can be found in the document [Asset library in Lifecycle Services (LCS)](../../fin-ops-core/dev-itpro/lifecycle-services/asset-library). |
-| Asset Library | Lifecycle Services (LCS) has two types of Asset libraries available: the Shared asset library and the project-level Asset library. More information can be found in the document [Asset library in Lifecycle Services (LCS)](../../fin-ops-core/dev-itpro/lifecycle-services/asset-library). |
+| Shared asset library | In Microsoft Dynamics Lifecycle Services (LCS), two types of Asset libraries are available: the Shared asset library and the project-level Asset library. More information can be found in the document [Asset library in Lifecycle Services (LCS)](../../fin-ops-core/dev-itpro/lifecycle-services/asset-library.md). |
+| Asset Library | Lifecycle Services (LCS) has two types of Asset libraries available: the Shared asset library and the project-level Asset library. More information can be found in the document [Asset library in Lifecycle Services (LCS)](../../fin-ops-core/dev-itpro/lifecycle-services/asset-library.md). |
 | Self-service installers | Self-service installers are the Commerce components  More information can be found in the relevant documents shown at the end of this document. |
 
 ## Overview
