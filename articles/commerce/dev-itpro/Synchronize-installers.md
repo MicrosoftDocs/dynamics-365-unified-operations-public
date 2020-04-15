@@ -24,30 +24,31 @@ ms.custom: 44351
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: jashanno
-ms.search.validFrom: 2017-07-31
-ms.dyn365.ops.version: 
+ms.search.validFrom: 2020-04-30
+ms.dyn365.ops.version: 10.0.10
+
 ---
 
-# Synchronize Self-service installers in Dynamics 365 Commerce
+# Synchronize self-service installers in Dynamics 365 Commerce
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to utilize LCS Asset and Shared Asset libraries and Dynamics 365 Headquarters to upload and synchronize Self-service installers (For use with the standard Self-service download mechanism).
+This topic explains how to utilize the Lifecycle Services (LCS) Asset and Shared Asset libraries and Dynamics 365 Headquarters to upload and synchronize self-service installers (for use with the standard self-service download mechanism).
 
 > [!IMPORTANT]
-> The legacy Self-service package upload method is still supported at this time, but it is in a deprecated mode which will be removed in approximately one year’s time (April, 2021 at the earliest).
+> The legacy self-service package upload method is still supported at this time, but it is in a deprecated mode which will be removed in the future.
 
 ## Key terms
 | Term | Description |
 |---|---|
-| Shared asset library | In Microsoft Dynamics Lifecycle Services (LCS), two types of Asset libraries are available: the Shared asset library and the project-level Asset library. More information can be found in the document [Asset library in Lifecycle Services (LCS)](../../fin-ops-core/dev-itpro/lifecycle-services/asset-library.md). |
-| Asset Library | Lifecycle Services (LCS) has two types of Asset libraries available: the Shared asset library and the project-level Asset library. More information can be found in the document [Asset library in Lifecycle Services (LCS)](../../fin-ops-core/dev-itpro/lifecycle-services/asset-library.md). |
-| Self-service installers | Self-service installers are the Commerce components  More information can be found in the relevant documents shown at the end of this document. |
+| Shared asset library | In LCS, two types of asset libraries are available: the **Shared asset library** and the project-level **Asset library**. For more inforamtion about these libraries, see [Asset library in Lifecycle Services (LCS)](../../fin-ops-core/dev-itpro/lifecycle-services/asset-library.md). |
+| Asset library | For more inforamtion about these libraries, see [Asset library in Lifecycle Services (LCS)](../../fin-ops-core/dev-itpro/lifecycle-services/asset-library.md). |
+| Self-service installers | Self-service installers are the Commerce components. For more information about the installers, see the links or related content at the end of this document. |
 
 ## Overview
-The **Retail Self-service package** sub-section in the Shared asset library stores all monthly releases for Self-service installers (Modern POS (Including the offline version), Commerce Scale Unit (Formerly RSSU), and hardware station).  Further, in both this library and the project-level Asset library, uploading of customized installers is also possible.  Using these locations, it is possible to then synchronize the available installers in Dynamics 365 Headquarters.  Once synchronized, all available installers between these two libraries (And what existed in the environment prior) will be accessible for the standard Self-service download processes detailed in separate articles (Listed in the terms above).
+The **Retail self-service package** sub-section in the Shared asset library stores all monthly releases for self-service installers including Modern POS (which includes the offline version), Commerce Scale Unit (formerly known as **RSSU**), and hardware station.  Further, in both this library and the project-level Asset library, uploading of customized installers is also possible.  Using these locations, it is possible to then synchronize the available installers in Dynamics 365 Headquarters.  Once synchronized, all available installers between these two libraries (and what existed in the environment prior) will be accessible for the standard self-service download processes detailed in separate articles (listed in the terms above).
 
-The following is a generic image of the **Retail Self-service package** sub-section in the Asset library (Or Shared asset library).
+The following is a generic image of the **Retail self-service package** sub-section in the Asset library (or Shared asset library).
 
 ![Retail Self-service package in Asset library](media/SharedAssets.jpg)
 
@@ -56,11 +57,11 @@ Installer synchronization requires the following steps to be performed.
 
 1. Navigate to **Retail and Commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Commerce parameters**.
 2. Select the **Channel deployment** tab.
-3. Select the **Check for package updates** button to perform synchronization. which will synchronize and update the installers available to download (Per standard Self-service processes) based on what installers apply to the environment that are currently available in LCS.
+3. Select the **Check for package updates** button to perform synchronization, which will synchronize and update the installers available to download (per standard self-service processes) based on what installers apply to the environment that are currently available in LCS.
 
 > [!IMPORTANT]
-> Previously, the RetailSelfService table was used as the source to pull all installer information. This table was populated based on which installers had been uploaded into headquarters through the legacy method of package application. The new Self-service population methodology combines all values in the RetailSelfService table (Now called the legacy Self-service package upload method) with all available installers in the LCS Shared asset library. The Self-service drop-down package selectors will showcase the options from this newly synchronized, combined source.
-> As stated at the beginning of this document, the legacy Self-service package upload method will maintain support in a deprecated mode until removed in approximately one year’s time (April, 2021 at the earliest).
+> Previously, the RetailSelfService table was used as the source to pull all installer information. This table was populated based on which installers had been uploaded into headquarters through the legacy method of package application. The new self-service population methodology combines all values in the RetailSelfService table (now called the legacy self-service package upload method) with all available installers in the LCS Shared asset library. The self-service drop-down package selectors will showcase the options from this newly synchronized, combined source.
+> As stated at the beginning of this document, the legacy self-service package upload method will maintain support in a deprecated mode until removed in the future.
  
 4. In this same page, default packages may be selected to be used throughout headquarters in their relevant locations (Devices, All stores, Channel database).
 5. Perform standard Modern POS, hardware station, or Commerce Scale Unit (Formerly RSSU) configuration and installation flows per the documentation linked below.
