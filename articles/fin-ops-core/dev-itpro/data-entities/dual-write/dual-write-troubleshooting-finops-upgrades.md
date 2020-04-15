@@ -89,9 +89,10 @@ If the issue still isn't fixed, follow these steps.
 > These steps guide you through the process of deleting an entity and then adding it again. To avoid issues, be sure to follow the steps exactly.
 
 1. In the Finance and Operations app, go to **Workspaces \> Data management**, and select the **Data entities** tile.
-2. Find the entity that is missing the field. Make a note of the target entity, staging table, entity name, and other column values.
-3. If any of your processing groups depend on this entity, take appropriate action for the processing groups before you delete the entity.
-4. Delete the entity that is missing the field.
-5. Select **New**, and add the entity back. Specify the values that you made a note of in step 2.
-6. Open the **Entity mapping** page from the **Dual-write** page in the Finance and Operations app.
-7. Select **Refresh entity list** to automatically fill the fields in the entity mappings.
+2. Find the entity that is missing the attribute. Click Modify target mapping button.
+![Modify target mapping](media/modify-target-mapping.png)
+3. Click ‘Generate mapping’.
+![generate mapping](media/map-staging-to-target.png)
+4. Open the **Entity mapping** page from the **Dual-write** page in the Finance and Operations app.
+5. If the attribute is not auto-populated on the map, add it manually using **Add attribute** button and Save. 
+6. Select the map and click **Run**.
