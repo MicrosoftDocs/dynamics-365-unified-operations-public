@@ -77,7 +77,7 @@ To manually upload a closed caption file when you upload a video, follow this st
 To upload regular audio or descriptive audio files for the video, use the file selector in the **Asset Upload** dialog box.
 
 > [!NOTE]
-> Closed caption, regular audio, and descriptive audio assets can also be added after a video asset is uploaded. Go to **Media Library**, select the video asset, and check it out, Then, in the properties pane for the video asset, upload the additional assets.
+> Closed caption, regular audio, and descriptive audio assets can also be added after a video asset is uploaded. Go to **Media Library**, select the video asset, and select **Edit** to check it out, Then, in the properties pane for the video asset, upload the additional assets.
 
 #### Edit CC and audio transcript files
 
@@ -85,7 +85,7 @@ CC and audio transcript files can be edited directly in the authoring tool. Vide
 
 To edit CC and audio transcript files, follow these steps.
 
-1. Go to **Media Library**, select the name of the video asset, and then select **Edit CC/Transcript**. The closed caption and transcript content editor appears.
+1. Go to **Media Library** and select the file name of the video asset. The closed caption and transcript content editor appears.
 1. Select **Edit**.
 1. Edit the closed caption or transcript text.
 1. When you've finished, select **Save**, and then select **Finish editing**.
@@ -102,7 +102,7 @@ To set the **Minimum Age** attribute for a video asset, follow these steps.
 1. In the properties pane for the video asset, set the **Minimum Age** attribute.
 
 > [!NOTE]
-> The properties pane is used only to set and store the metadata attribute value. Customized modules must be created to use this attribute for playback gating.
+> The properties pane is only used to set and store the metadata attribute value. Customized modules must be created to use this attribute for playback gating.
 
 ## Additional resources
 
