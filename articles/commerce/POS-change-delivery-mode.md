@@ -32,7 +32,6 @@ ms.dyn365.ops.version: Release 10.0.11
 # Change mode of delivery in POS
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic describes how to set up and use the "change mode of delivery" functionality in your point of sale (POS) environment. 
 
