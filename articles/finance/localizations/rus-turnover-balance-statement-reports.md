@@ -58,28 +58,21 @@ Turnover balance sheets for the customer, vendor, and advance holder let you sho
 9. Set the **Print ranges** option to **Yes** to view the query terms when you print the report.
 10. Set the **Delete zero line** option to **Yes** if you don't want to print lines or columns that have 0 (zero) values.
 11. Set the **Total accounts** option to **Yes** to total the accounts.
-12. Set the **Totals only** option to **Yes** to view only total accounts.
-
-    > [!NOTE]
-    > This option is available only if you set the **Total accounts** option to **Yes**.
-
 13. Set the **Show transactions** option to **Yes** to show the contractor transactions.
 14. Set the **Itemize balance** option to **Yes** to send the expanded balance to the turnover balance sheet.
 15. Set the **Calculate balance** option to **Yes** to calculate and show the balance on the report.
 
-    ![Customer turnover register page, General tab](media/1_Customer_turnover_register.jpg)
+    ![Customer turnover register page, General tab](media/01_Customer_turnover_register.jpg)
 
 16.  Select **ОК** to generate the report.
 
-![Customer turnover register page](media/2_Customer_turnover_register.jpg)
+![Customer turnover register page](media/02_Customer_turnover_register.jpg)
 
 >  [!NOTE]
 >
 >   - Select **Voucher** to view the ledger transactions that generated the activity.
 >   - Select **Select** to change the report generation parameters.
 >   - Select **Print** to print the report in Microsoft SQL Server Reporting Services (SSRS).
-
-   ![Customer turnover register report](media/3_Customer_turnover_register.jpg)
 
 ## Vendor turnover register
 
@@ -106,28 +99,21 @@ Turnover balance sheets for the customer, vendor, and advance holder let you sho
 9. Set the **Print ranges** option to **Yes** to view the query terms when you print the report.
 10. Set the **Delete zero line** option to **Yes** if you don't want to print lines or columns that have 0 (zero) values.
 11. Set the **Total accounts** option to **Yes** to total the accounts.
-12. Set the **Totals only** option to **Yes** to view only total accounts.
-
-    > [!NOTE]
-    > This option is available only if you set the **Total accounts** option to **Yes**.
-
 13. Set the **Show transactions** option to **Yes** to show the contractor transactions.
 14. Set the **Itemize balance** option to **Yes** to send the expanded balance to the turnover balance sheet.
 15. Set the **Calculate balance** option to **Yes** to calculate and show the balance on the report.
 
-    ![Vendor turnover register page, General tab](media/4_Vendor_turnover_register.jpg)
+    ![Vendor turnover register page, General tab](media/04_Vendor_turnover_register.jpg)
 
 16. Select **ОК** to generate the report.
 
-![Vendor turnover register page](media/5_Vendor_turnover_register.jpg)
+![Vendor turnover register page](media/05_Vendor_turnover_register.jpg)
 
 >  [!NOTE]
 >
 > - Select **Voucher** to view the ledger transactions that generated the activity.
 > - Select **Select** to change the report generation parameters.
 > - Select **Print** to print the report in SSRS.
-
-   ![Vendor turnover register report](media/6_Vendor_turnover_register.jpg)
 
 ## Advance holder turnover register
 
@@ -154,11 +140,6 @@ Turnover balance sheets for the customer, vendor, and advance holder let you sho
 9. Set the **Print ranges** option to **Yes** to view the query terms when you print the report.
 10. Set the **Delete zero line** option to **Yes** if you don't want to print lines or columns that have 0 (zero) values.
 11. Set the **Total accounts** option to **Yes** to total the accounts.
-12. Set the **Totals only** option to **Yes** to view only total accounts.
-
-    > [!NOTE]
-    > This option is available only if you set the **Total accounts** option to **Yes**.
-
 13. Set the **Show transactions** option to **Yes** to show the contractor transactions.
 14. Set the **Itemize balance** option to **Yes** to send the expanded balance to the turnover balance sheet.
 15. Set the **Calculate balance** option to **Yes** to calculate and show the balance on the report.
@@ -199,11 +180,6 @@ The **General ledger** report is designed to generate turnover on a specified ac
 10. Set the **Print ranges** option to **Yes** to view the query terms when you print the report.
 11. Set the **Delete zero line** option to **Yes** if you don't want to print lines or columns that have 0 (zero) values.
 12. Set the **Total accounts** option to **Yes** to total the accounts.
-13. Set the **Totals only** option to **Yes** to view only total accounts.
-
-    > [!NOTE] 
-    > This option is available only if you set the **Total accounts** option to **Yes**.
-
 14. Set the **Show transactions** option to **Yes** to show the accountable person transactions.
 15. Set the **Calculate balance** option to **Yes** to calculate and show the balance on the report.
 
