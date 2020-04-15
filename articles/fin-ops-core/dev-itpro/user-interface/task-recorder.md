@@ -213,7 +213,7 @@ After you select **Stop** to end your recording session, several options are sho
 
 ### Save to this PC
 
-One option after you finish your reocrding is to download the task recording package (an AXTR file) to your computer. This file can be loaded at a later time via the Task recorder pane as a task guide or to make edits to the recording.  
+One option after you finish your recording is to download the task recording package (an AXTR file) to your computer. This file can be loaded at a later time via the Task recorder pane as a task guide or to make edits to the recording.  
 
 ### Save to Lifecycle Services (LCS) 
 
@@ -425,7 +425,7 @@ After completing a business process recording using Task recorder, a developer m
 9.  To run the test, **Build** the project.
 10. Go to **Test &gt; Windows &gt;Test Explorer**.
 
-## Appendex
+## Appendix
 
 ### Controls that are known to have incomplete support for Task recorder
 
