@@ -65,7 +65,7 @@ To create a template, follow these steps.
 1. In the **Body** slot, add a **Default Page** module.
 1. In the **Default Page** module, in the **Main** slot, add a **Content Rich Block** module.
 1. In the **Content Rich Block** module, add a **Content rich block item** module.
-1. Select **Finish editing** to check in the template, and then select **Publish** to publish it.
+1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.
 
 ### Build a privacy policy page
 
@@ -80,7 +80,7 @@ To build a privacy policy page, follow these steps.
 1. In the rich text editor, enter the content for the privacy policy page. Expand the rich text editor to full-screen mode as you require.
 1. When you've finished entering content, select **Preview** to preview the page in the web browser.
 1. Complete any remaining additions to the page and module properties.
-1. Select **Finish editing** to check in the page, and then select **Publish** to publish it.
+1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
 To publish the URL for the privacy policy page, follow these steps.
 
