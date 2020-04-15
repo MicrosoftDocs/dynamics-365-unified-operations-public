@@ -69,4 +69,4 @@ Installer synchronization requires the following steps to be performed.
 |---|---|
 | Retail Modern POS | [Configure, install, and activate Modern POS (MPOS)](../retail-modern-pos-device-activation.md) |
 | Retail hardware station | [Configure and install Retail hardware station](../retail-hardware-station-configuration-installation.md) |
-| Commerce Scale Unit | (Formerly titled Retail Store Scale Unit) [Configure and install Commerce Scale Unit](../retail-store-scale-unit-configuration-installation.md) |
+| Commerce Scale Unit | (Formerly titled Retail Store Scale Unit) [Configure and install Commerce Scale Unit](retail-store-scale-unit-configuration-installation.md) |
