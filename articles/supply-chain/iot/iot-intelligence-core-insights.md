@@ -99,6 +99,10 @@ Notes:
 
 The **Equipment downtime** scenario maps a machine to a **PartOut** signal and defines an alert threshold. The machine is monitored only when the machine is selected for the scenario and is set to running in Supply Chain Management. If the time since the machine’s last received Part Out signal is greater than the alert threshold, then a **Machine down** notification is triggered. If the machine is still running, when the next **PartOut** signal is received a **Machine up** notification is triggered. If a machine stays down for 30 mins a new **Machine down** notification is triggered.
 
+The **Equipment downtime** scenario has these dependencies:
+
++ Production Order must be scheduled and running on the machine for an alert to be triggered. 
+
 1. Log into the Finance and Operations apps.
 2. Enbale the IoT Intelligence feature flag. For more information, see [Feature management overview](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 4. Navigate to **Production control**.
@@ -171,9 +175,17 @@ At this point, the pipeline is complete and the messages are processed automatic
 
 The **Quality** scenario generates a notification if an attribute of an item is outside a speicified range. For example, a sensor could send the weight of each item to IoT Hub. In Suppy Chain Management, a notification would be generated if the item was too heavy or too light. 
 
+The **Quality** scenario has these dependencies:
+
++ Production Order must be scheduled and running on the machine for an alert to be triggered. 
+
 ## Configure the **Production Order Delay** scenario in Supply Chain Management
 
 The **Production Order Delay** scenario generates a notification if the production throughput falls below a threshold value. In this scenario, a **PartOut** signal is sent to IoT Hub for each item produced. In Supply Chain Management, the order delay is calculated based on how long the production order is scheduled to run, how many items should be be produced, how long the job has been running, and how many **PartOut** signals are received. A delay notification would be generated if the number of the **PartOut** signals for the job falls below the threshold value of the expected value.
+
+The **Production Order Delay** scenario has these dependencies:
+
++ Production Order must be scheduled and running on the machine for an alert to be triggered. 
 
 ## How to view the monitors in Supply Chain Management
 
