@@ -101,7 +101,6 @@ The **Equipment downtime** scenario maps a machine to a **PartOut** signal and d
 
 1. Log into the Finance and Operations apps.
 2. Enbale the IoT Intelligence feature flag. For more information, see [Feature management overview](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-3. Switch the **USMF** (for demo data).
 4. Navigate to **Production control**.
 5. Navigate to **Setup \> IoT Intelligence \> Scenario parameters**. Enter the Redis connection string. *Insert instructions here on how to get this value. It appears not to be in the key vault.*
 6. Navigate to **Setup \> IoT Intelligence \> Scenario management**.
@@ -128,24 +127,23 @@ The **Equipment downtime** scenario maps a machine to a **PartOut** signal and d
 8. Add a row to the table. 
 
     1. Set the **Schema name** to **id**.
-    2. Set the **Schema path** to **/[payload]\*/id**.
+    2. Set the **Schema path** to **/payload[\*]/id**.
     3. Set the **Description** to **Message id**.
 
 9. Add a row to the table. 
 
     1. Set the **Schema name** to **timestamp**.
-    2. Set the **Schema path** to **/[payload]\*/timestamp**.
+    2. Set the **Schema path** to **/payload[\*]/timestamp**.
     3. Set the **Description** to **Message timestamp**.
 
 10. Add a row to the table. 
 
     1. Set the **Schema name** to **value**.
-    2. Set the **Schema path** to **/[payload]\*/value**.
+    2. Set the **Schema path** to **/payload[\*]/value**.
     3. Set the **Description** to **Message value**.
 
-    You don't need to define all the properties in the message, only the ones that you need. In this example, you did not create a row for **Root timestamp**.
+    You don't need to define all the properties in the message, only the ones that you need. In this example, you did not create a row for **Root timestamp**. The path for **Root timestamp** would be **/timestamp**.
   
-11. If there are sample entries in the table, delete them.
 12. Click **Next** to go to the **Equipment sensor schema map** page.
 13. In the row for **Equipment resource id** set the **Schema name** to **id**. The valid values are displayed in a dropdown table.
 14. In the row for **UTC time** set the **Schema name** to **Timestamp**. The valid values are displayed in a dropdown table.
@@ -153,7 +151,7 @@ The **Equipment downtime** scenario maps a machine to a **PartOut** signal and d
 16. Click **Next** for the **Equipment resource id configuration** page.
 17. In this step, you map the machine names to ??? in the Supply Chain Management. 
 
-    1. For the **Schema path** - **/[payload]\*/id**, in the **Signal Data Values** table, add a new row, and enter **IoTInt.Machine1225.PartOut** in the **Value** column. 
+    1. For the **Schema path** - **/[payload]\*/id**, in the **Signal Data Values** table, add a new row, and enter **IoTInt.Machine1225.PartOut** in the **Value** column. The value **IoTInt.Machine1225.PartOut** comes from the **id** property in the message JSON.
     2. In the **Business Record Mapping** table, click **New**. The default value for the **Business record type** is autopopulated, and you don't need to change it. 
     3. In the **Business record** column, select **Machine1225**. 
     4. Click **Save**. 
@@ -161,7 +159,7 @@ The **Equipment downtime** scenario maps a machine to a **PartOut** signal and d
 
 18. After you have entered all the rows you need in the **Business Record Mapping** table, use the **Selected** column to choose when machines you want to process. You do not have to process information that comes from all the machines.
 19. Click **Next** to go to the **Part produced signal configuration** page.
-20. In the **Signal Data Values** table, add a row, and set **Value** to **True**. Add another row, and set **Value** to 1. Click **Save**.
+20. In the **Signal Data Values** table, add a row, and set **Value** to **True**. The value **True** comes from the **value** property in the message JSON. You can add as many values as you need for your scenario. Click **Save**.
 21. Click **Next** to go to the **Equipment downtime threshold** page. The values for downtime threshold are already mapped according to the machine id. In this step, you define a threshold to determine if a machine is down. For example, if you set the threshold to 10, Supply Chain Management generates a notification if there is no PartOut message from a machine after 10 minutes. 
 22. Click **Next** to go to the **Enable scenario** page. Click the slider to enable the scenario.
 23. Click **Finish**.
@@ -187,6 +185,10 @@ There are several ways to view the messages processed in the scenario in Supply 
 + **Production control \> Manufacturing execution \> Resource status**. You can configure this page to track specific machines using the **Configure** dialog. As messages are processed a graph is produced showing the parts produced. This page displays an error message if a machine is down, and there are buttons to resolve or dismiss the error message.
 + **Production control \> Setup \> IoT Intelligence \> Scenario parameters**. Click **Equipment downtime** to see all the machines that are available.
 
+## How to disable a scenario
+
+In Supply Chain Management, run the **Equipment downtime** configuration wizard, and disable the scenario.
+
 ## How to uninstall the addin
 
 1. In Supply Chain Management, run the **Equipment downtime** configuration wizard, and disable the scenario.
@@ -208,6 +210,8 @@ There are several ways to view the messages processed in the scenario in Supply 
 
 
 ## Simulation options
+
+TODO: Look for links in Azure docs.
 
 + Setup IoT solutions to simulate factory machine signals
 + Setup a MxChip to simulate a factory machine signal
