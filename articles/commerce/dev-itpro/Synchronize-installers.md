@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Synchronize Self-service installers in Dynamics 365 Commerce
-description: This topic explains how to utilize LCS Asset and Shared Asset libraries and Dynamics 365 Headquarters to upload and synchronize Self-service installers (For use with the standard Self-service download mechanism).
+title: Synchronize self-service installers in Dynamics 365 Commerce
+description: This topic explains how to utilize LCS Asset and Shared Asset libraries and Dynamics 365 Headquarters to upload and synchronize self-service installers (for use with the standard self-service download mechanism).
 author: jashanno
 manager: AnnBe
 ms.date: 04/15/2020
@@ -17,7 +17,7 @@ ms.search.form: SysAADClientTable, RetailTransactionServiceProfile
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: 
+ms.reviewer: sericks
 ms.search.scope: Operations, Retail, Core
 # ms.tgt_pltfrm: 
 ms.custom: 44351
