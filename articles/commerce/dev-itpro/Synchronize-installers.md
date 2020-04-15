@@ -41,8 +41,8 @@ This topic explains how to utilize the Lifecycle Services (LCS) Asset and Shared
 ## Key terms
 | Term | Description |
 |---|---|
-| Shared asset library | In LCS, two types of asset libraries are available: the **Shared asset library** and the project-level **Asset library**. For more inforamtion about these libraries, see [Asset library in Lifecycle Services (LCS)](../../fin-ops-core/dev-itpro/lifecycle-services/asset-library.md). |
-| Asset library | For more inforamtion about these libraries, see [Asset library in Lifecycle Services (LCS)](../../fin-ops-core/dev-itpro/lifecycle-services/asset-library.md). |
+| Shared asset library | In LCS, two types of asset libraries are available: the **Shared asset library** and the project-level **Asset library**. For more information about these libraries, see [Asset library in Lifecycle Services (LCS)](../../fin-ops-core/dev-itpro/lifecycle-services/asset-library.md). |
+| Asset library | For more information about these libraries, see [Asset library in Lifecycle Services (LCS)](../../fin-ops-core/dev-itpro/lifecycle-services/asset-library.md). |
 | Self-service installers | Self-service installers are the Commerce components. For more information about the installers, see the links or related content at the end of this document. |
 
 ## Overview
