@@ -85,11 +85,13 @@ Notes:
 3. Scroll down to an environment.
 4. In the Add-in section, click **Install a new add-in** to populate the list of addins that have been enabled for the environment.
 5. Click on the **IoT Intelligence** add-in.
-6. Enter the connection strings for your IoT hub and Redis cache. You can find the values that you need in the key vault you created in the [name of section](#link to section).
+6. Provide the details of your IoT hub and Redis cache. You can find the values that you need in the key vault you created in the [name of section](#link to section).
+
     a. In Azure, open the key vault you previously created, and copy the DNS name. The DNS name servers as the key vault identifer.
     b. In the **Setup add-in** dialog, paste the value into the fields for **IoT Hub** and **Redis cache**.
     c. In Azure, open the key vault and click the Secrets tab. Copy the secret for ?? and copy it to the ??? field in the **Setup add-in** dialog.
     d. In Azure, copy the secret for the **Redis ???** and copy it to **Redis cache endpoint secret name** in the **Setup add-in** dialog.
+
 7. Click **Install**. 
 8. A dialog shows up that says **Add-in has been successfully triggered for installation**. Click **OK**.
 
@@ -159,8 +161,6 @@ The **Equipment downtime** scenario maps a machine to a **PartOut** signal and d
 
 At this point, the pipeline is complete and the messages are processed automatically.
 
-
-The **Equipment downtime** scenario maps a machine to a **PartOut** signal and defines an alert threshold. The machine is monitored only when the machine is selected for the scenario and is set to running in Supply Chain Management. If the time since the machine’s last received Part Out signal is greater than the alert threshold, then a **Machine down** notification is triggered. If the machine is still running, when the next **PartOut** signal is received a **Machine up** notification is triggered. If a machine stays down for 30 mins a new **Machine down** notification is triggered.
 
 ## Configure the **Quality** scenario in Supply Chain Management
 
