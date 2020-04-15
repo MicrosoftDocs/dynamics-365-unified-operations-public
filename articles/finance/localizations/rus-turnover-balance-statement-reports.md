@@ -35,7 +35,7 @@ Turnover balance sheets for the customer, vendor, and advance holder let you sho
 
 ## Customer turnover register
 
-1. Go to **General ledger** \> **Inquires and reports** \> **Turnover balance statement** \> **Customer turnover register**.
+1. Go to **General ledger** \> **Inquiries and reports** \> **Turnover balance statement** \> **Customer turnover register**.
 2. On the **General** tab, in the **Date interval code** field, select the date interval code from the date interval directory.
 3. In the **From date** and **To date** fields, select the start and end of the report generation period.
 
@@ -50,8 +50,8 @@ Turnover balance sheets for the customer, vendor, and advance holder let you sho
 
 6. In the **Main account** field, select the account to generate the report for.
 7. Select **Expand all** to view additional settlement information.
-8. In the **Detail and sorting parameters** section, specify the fields that are used for grouping by moving them from the **Available fields** list to the **Selected fields** list. You can also change the grouping order as required.
-9. In the **Dimension** section, in the **Agreement**, **ExpenseAndIncomeCode**, and **Worker** fields, specify the dimension codes if you want to select transactions that have specific codes for the report.
+8. In the **Detail and sorting parameters** section, specify the fields that are used for grouping by moving them from the **Available fields** list to the **Selected fields** list. You can also change the grouping order as you require.
+9. In the **Financial dimensions** section, in the **Agreement**, **ExpenseAndIncomeCode**, and **Worker** fields, specify the dimension codes if you want to select transactions that have specific codes for the report.
 
     > [!NOTE]
     > If you leave these fields blank, the system will select transactions that have *any* dimension code for the report.
@@ -74,11 +74,11 @@ Turnover balance sheets for the customer, vendor, and advance holder let you sho
 >   - Select **Voucher** to view the ledger transactions that generated the activity.
 >   - Select **Select** to change the report generation parameters.
 >   - Select **Print** to print the report in Microsoft SQL Server Reporting Services (SSRS).
->   - Select **Totals only** to show lines only for first selected dimension.
+>   - Select **Totals only** to show lines only for the first selected dimension.
 
 ## Vendor turnover register
 
-1. Go to **General ledger** \> **Inquires and reports** \> **Turnover balance statement** \> **Vendor turnover register**.
+1. Go to **General ledger** \> **Inquiries and reports** \> **Turnover balance statement** \> **Vendor turnover register**.
 2. On the **General** tab, in the **Date interval code** field, select the date interval code from the date interval directory.
 3. In the **From date** and **To date** fields, select the start and end of the report generation period.
 
@@ -93,8 +93,8 @@ Turnover balance sheets for the customer, vendor, and advance holder let you sho
 
 6. In the **Main account** field, select the account to generate the report for.
 7. Select **Expand all** to view additional settlement information.
-8. In the **Detail and sorting parameters** section, specify the fields that are used for grouping by moving them from the **Available fields** list to the **Selected fields** list. You can also change the grouping order as required.
-9. In the **Dimension** section, in the **Agreement**, **ExpenseAndIncomeCode**, and **Worker** fields, specify the dimension codes if you want to select transactions that have specific codes for the report.
+8. In the **Detail and sorting parameters** section, specify the fields that are used for grouping by moving them from the **Available fields** list to the **Selected fields** list. You can also change the grouping order as you require.
+9. In the **Financial dimensions** section, in the **Agreement**, **ExpenseAndIncomeCode**, and **Worker** fields, specify the dimension codes if you want to select transactions that have specific codes for the report.
 
     > [!NOTE] 
     > If you leave these fields blank, the system will select transactions that have *any* dimension code for the report.
@@ -117,11 +117,11 @@ Turnover balance sheets for the customer, vendor, and advance holder let you sho
 > - Select **Voucher** to view the ledger transactions that generated the activity.
 > - Select **Select** to change the report generation parameters.
 > - Select **Print** to print the report in SSRS.
-> - Select **Totals only** to show lines only for first selected dimension.
+> - Select **Totals only** to show lines only for the first selected dimension.
 
 ## Advance holder turnover register
 
-1. Go to **General ledger** \> **Inquires and reports** \> **Turnover balance statement** \> **Advance holder turnover register**.
+1. Go to **General ledger** \> **Inquiries and reports** \> **Turnover balance statement** \> **Advance holder turnover register**.
 2. On the **General** tab, in the **Date interval code** field, select the date interval code from the date interval directory.
 3. In the **From date** and **To date** fields, select the start and end of the report generation period.
 
@@ -136,8 +136,8 @@ Turnover balance sheets for the customer, vendor, and advance holder let you sho
 
 6. In the **Main account** field, select the account to generate the report for.
 7. Select **Expand all** to view additional settlement information.
-8. In the **Detail and sorting parameters** section, specify the fields that are used for grouping by moving them from the **Available fields** list to the **Selected fields** list. You can also change the grouping order as required.
-9. In the **Dimension** section, in the **Agreement**, **ExpenseAndIncomeCode**, and **Worker** fields, specify dimension codes if you want to select transactions that have specific codes for the report.
+8. In the **Detail and sorting parameters** section, specify the fields that are used for grouping by moving them from the **Available fields** list to the **Selected fields** list. You can also change the grouping order as you require.
+9. In the **Financial dimensions** section, in the **Agreement**, **ExpenseAndIncomeCode**, and **Worker** fields, specify dimension codes if you want to select transactions that have specific codes for the report.
 
     > [!NOTE]
     > If you leave these fields blank, the system will select transactions that have *any* dimension code for the report.
@@ -156,13 +156,13 @@ Turnover balance sheets for the customer, vendor, and advance holder let you sho
 > - Select **Voucher** to view the ledger transactions that generated the activity.
 > - Select **Select** to change the report generation parameters.
 > - Select **Print** to print the report.
-> - Select **Totals only** to show lines only for first selected dimension.
+> - Select **Totals only** to show lines only for the first selected dimension.
 
 ## General ledger report
 
 The **General ledger** report is designed to generate turnover on a specified account that is in correspondence with other accounts.
 
-1. Go to **General ledger** \> **Inquires and reports** \> **Turnover balance statement** \> **General ledger**.
+1. Go to **General ledger** \> **Inquiries and reports** \> **Turnover balance statement** \> **General ledger**.
 2. On the **General** tab, in the **Date interval code** field, select the date interval code from the date interval directory.
 3. In the **From date** and **To date** fields, select the start and end of the report generation period.
 
@@ -177,9 +177,9 @@ The **General ledger** report is designed to generate turnover on a specified ac
 
 6. In the **Main account** field, select the account to generate the report for.
 7. In the **Corr. account** field, select the corresponding account to generate the report for.
-8. In the **Detail and sorting parameters** section, you can specify the fields that are used for grouping by moving them from the **Available fields** list to the **Selected fields** list. You can also change the grouping order as you require.
-9. Select **Expand all** to show additional information on settlements.
-10. In the **Dimension** section, in the **Agreement**, **ExpenseAndIncomeCode**, and **Worker** fields, specify dimension codes if you want to select transactions that have specific codes for the report.
+8. Select **Expand all** to view additional settlement information.
+9. In the **Detail and sorting parameters** section, you can specify the fields that are used for grouping by moving them from the **Available fields** list to the **Selected fields** list. You can also change the grouping order as you require.
+10. In the **Financial dimensions** section, in the **Agreement**, **ExpenseAndIncomeCode**, and **Worker** fields, specify dimension codes if you want to select transactions that have specific codes for the report.
 
     > [!NOTE]
     > If you leave these fields blank, the system will select transactions that have *any* dimension code for the report.
@@ -201,13 +201,13 @@ The **General ledger** report is designed to generate turnover on a specified ac
 > - Select **Voucher** to view the ledger transactions that generated the activity.
 > - Select **Select** to change the report generation parameters.
 > - Select **Print** to print the report in SSRS.
-> - Select **Totals only** to show lines only for first selected dimension.
+> - Select **Totals only** to show lines only for the first selected dimension.
 
 ## Turnover balance statement report archive
 
 On the **Report archive** page, you can view reports and download them in Excel format.
 
-1. Go to **General ledger** \> **Inquires and reports** \> **Turnover balance statement** \> **Report archive**.
+1. Go to **General ledger** \> **Inquiries and reports** \> **Turnover balance statement** \> **Report archive**.
 2. On the **Turnover and balance statement report archive** page, in the **Report type** field, specify the type of report.
 3. Select the report.
 
