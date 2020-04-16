@@ -54,6 +54,14 @@ Microsoft Dynamics 365 Supply Chain Management includes a pricing engine that ha
     + Freight Amount
     + Total Tax
     + Total Amount
+    
+In order to ensure that the system considers trade and sales agreements to calculate the price:
+
+1. Navigate to your Supply Chain Management environment
+2. Navigate to **Accounts receivable > Setup > Accounts receivable parameters**
+3. Select the **Prices** tab in the side navigation bar
+4. Under the **Trade agreement evaluation** fastab remove the **Manual entry** option
+
 
 ## How it works
 
