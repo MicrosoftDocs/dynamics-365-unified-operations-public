@@ -110,15 +110,14 @@ Consider the following domain requirements when you install Finance + Operations
 ### Full 2-way trust
 For compatibility with corporate domain controllers on 2008 R2 doman functional level(DFL), a full 2-way trust between the 2008 R2 DFL user domain and the 2012 R2 DFL F&O service domain is supported.
 
-This means that users of the Dynamics 365 F&O application will come from the 2008R2 DFL domain, and the resources and service accounts hosting the Dynamics  365 F&O infrastructure and services will come from the 2012R2 DFL domain.
+This means that users of the Dynamics 365 F&O application will come from the 2008R2 DFL domain, and the resources and service accounts hosting the Dynamics 365 F&O infrastructure and services will come from the 2012R2 DFL domain.
 
-An example for this setup could be:
+Examples for a Full 2 way trust setup could be:
 
-<img src="./media/lbd-domain2WayTrust.png" width="350" hspace="50"/>
+<img src="./media/lbd-domain2WayTrust.png" width="600" hspace="50"/>
 
 #### Known limitations with using the Full 2-way trust setup:
 * Import of security groups from the 2008R2 user domain
-* ...
 
 ## Hardware requirements
 
