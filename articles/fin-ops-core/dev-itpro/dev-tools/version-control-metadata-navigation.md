@@ -279,8 +279,8 @@ This section highlights a feature that enables you to move from one element to a
 
 You can use Application Explorer to search for all or some elements of a model and create a project out of the search results.
 
-1.  Make sure the option to organize a project by element type is on. Go to **Dynamics 365** &gt; **Options** &gt; **Projects**.
-2.  Go to Application Explorer and search for elements in the desired model. For example, enter* model:"fleet management"* and click **Enter**.
+1.  Make sure the option to organize a project by element type is on. Go to **Dynamics 365** \> **Options** \> **Projects**.
+2.  Go to Application Explorer and search for elements in the desired model. For example, enter *model:"fleet management"* and click **Enter**.
 
     [![AppExplorerModelSearch](./media/appexplorermodelsearch.jpg)](./media/appexplorermodelsearch.jpg)
 
