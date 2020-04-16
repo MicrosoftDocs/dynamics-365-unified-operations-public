@@ -49,6 +49,9 @@ Text block modules can be used in the following ways:
 * To add custom messages on a product details page. (for example, "Free shipping for orders over $50").
 * For disclaimers and contact details on product details pages, cart pages, checkout pages, and other pages (for example, "Shipping and returns are subject to store policies").
 
+Below is an example of a text block module used on homepage
+![Example of a text block module](./media/ecommerce-textblock.PNG)
+
 ## Text block module properties
 
 | Property name     | Value                                            | Description |
