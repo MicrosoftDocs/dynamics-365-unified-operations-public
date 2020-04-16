@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: All-in-one deployable packages (ADP)
-description: This topic describes the all-in-one deployable package (ADP) concept and its use.
+title: All-in-one deployable packages
+description: This topic describes the all-in-one deployable package concept and its use.
 author: laneswenka
 manager: AnnBe
 ms.date: 04/13/2020
@@ -28,18 +28,18 @@ ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: 10.0.9
 
 ---
-# All-in-one deployable packages (ADP)
+# All-in-one deployable packages
 
 Customers can update the software in their environments by applying software deployable packages. These packages can originate from the customers themselves in the form of customizations. They can also be provided by partners and independent software vendors (ISVs). Microsoft recommends that customers combine all these various packages into a single package before they apply them to an environment. For customers who have self-service environments, this approach is a hard requirement.
 
-This topic outlines the best practices for creating and managing an all-in-one deployable package (ADP).
+This topic outlines the best practices for creating and managing an all-in-one deployable package.
 
 > [!IMPORTANT]
-> Support for non ADP packages for v1 Cloud service customers ends on October 31, 2020.
+> Support for non all-in-one deployable packages for v1 Cloud service customers ends on October 31, 2020.
 
-## What is an ADP?
+## What is an all-in-one deployable package?
 
-An ADP is a software deployable package that contains all the models and binaries that you currently have in an environment. Think of it as a single package that represents all the non-Microsoft software in an environment.
+An all-in-one deployable is a software deployable package that contains all the models and binaries that you currently have in an environment. Think of it as a single package that represents all the non-Microsoft software in an environment.
 
 For example, you have two environments: **SandboxTest** and **SandboxPreProd**.
 
@@ -49,20 +49,19 @@ If your software deployable package contains CustomizationA, CustomizationB, and
 
 However, if your software deployable package contains only CustomizationA, it isn't fully deployable for either environment. The package is missing some of the models that are already installed.
 
-## How do I create an ADP?
+## How do I create an all-in-one deployable package?
 
-There are two primary methods for creating an ADP:
+There are two primary methods for creating an all-in-one deployable package:
 
-- If you're using the continuous integration/continuous deployment model, you're already creating ADPs.
+- If you're using the continuous integration/continuous deployment model, you're already creating all-in-one deployable packages.
 - If you don't have a build environment, you can create a package in Microsoft Visual Studio. For more information, see [Create deployable packages of models](../deployment/create-apply-deployable-package.md).
 
 ## What if my ISV packages don't contain source code?
 
-ISVs can choose whether to share their source code with you. If they don't share it, they will provide a binary-only package. This package can easily be managed into an ADP. For instructions, see [Manage third-party models and runtime packages by using source control](manage-runtime-packages.md).
+ISVs can choose whether to share their source code with you. If they don't share it, they will provide a binary-only package. This package can easily be managed into an all-in-one deployable package. For instructions, see [Manage third-party models and runtime packages by using source control](manage-runtime-packages.md).
 
 ## Why are these packages important?
 
 The best practice of using fully deployable packages helps reduce the complexity and number of packages that are applied to a given environment. In some circumstances, installation of different packages can change the behavior of your environment. For example, if you install ModelA and then ModelB instead of ModelB and then ModelA.
 
 In addition, this approach is a hard requirement for self-service environments. This is because those environments use containerization technology and build a brand-new environment every time that you apply a package. If you apply ModelA today and then apply only ModelB tomorrow, you will effectively uninstall ModelA.
-
