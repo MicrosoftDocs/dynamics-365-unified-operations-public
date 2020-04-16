@@ -143,7 +143,7 @@ To preview your changes, either open an existing page that uses the template or 
 After you've previewed the changes to your template, follow one of these steps to publish the template to your live site:
 
 * Go to **Templates**, select the template, and then select **Publish**.
-* Select the layout name to open the layout editor, select **Publish**.
+* Select the name of the layout to open the layout editor, and then select **Publish**.
 * Publish a page that references the unpublished template. The template is automatically published.
 
 > [!WARNING]
