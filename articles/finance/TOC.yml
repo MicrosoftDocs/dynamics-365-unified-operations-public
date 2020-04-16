@@ -70,12 +70,12 @@
           items:
           - name: What's new or changed in Finance home page
             href: get-started/whats-new-home-page.md
+          - name: Finance 10.0.11 (July 2020)
+            href: get-started/whats-new-changed-10-0-11.md           
           - name: Finance 10.0.10 (May 2020)
             href: get-started/whats-new-changed-10-0-10.md            
           - name: Finance 10.0.9 (April 2020)
             href: get-started/whats-new-changed-10-0-9.md
-          - name: Finance 10.0.8 (February 2020)
-            href: get-started/whats-new-changed-10-0-8.md
       - name: Removed or deprecated features
         items:
           - name: Removed or deprecated features in Dynamics 365 Finance
