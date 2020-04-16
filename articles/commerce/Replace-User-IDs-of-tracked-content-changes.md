@@ -31,6 +31,8 @@ ms.dyn365.ops.version:
 
 # Replace user IDs associated with tracked content changes
 
+[!include [banner](includes/banner.md)]
+
 This topic describes how to replace user IDs associated with tracked content changes in Microsoft Dynamics 365 Commerce site builder.
 
 ## Overview
