@@ -34,11 +34,8 @@ ms.search.validFrom: 2019-07-15
 
 [!include [banner](../../includes/banner.md)]
 
-
-
-In the following tables, the entities are listed in the order in which you should enable them. When you enable a map for initial synchronization, dual-write automatically detects other maps that must be enabled. You can use the **Dual-write** page in Finance and Operations apps to select or cancel the selection of entities during the initial synchronization.
-
-In the latest version of dual-write, you can enable just some entities, and the dependencies are handled for you.
+>[!Important]
+> In case you are **not** using the entity dependencies provided by **initial sync** feature for data loading and you choose to run each entity map individually, then this page is useful. 
 
 ## Dynamics 365 Supply Chain Management entities
 
