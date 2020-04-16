@@ -29,7 +29,7 @@ ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: 10.0.11
 ---
 
-# What's new or changed in Dynamics 365 Supply Chain Management 10.0.11 (June 2020)
+# What's new or changed in Dynamics 365 Supply Chain Management 10.0.11 (July 2020)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -38,7 +38,7 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 
 - **Preview release:** April 2020
 - **General availability (self-update):** May 2020
-- **Auto-update:** June 2020
+- **Auto-update:** July 2020
 
 ## Features included in this release
 
