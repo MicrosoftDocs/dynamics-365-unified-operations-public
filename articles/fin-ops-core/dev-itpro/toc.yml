@@ -78,6 +78,8 @@
         href: dev-tools/exclude-test-packages.md
       - name: Manage third-party models and runtime packages using source control
         href: dev-tools/manage-runtime-packages.md
+      - name: All-in-one deployable packages
+        href: dev-tools/aio-deployable-packages.md
       - name: Update model versions in the automated build
         href: dev-tools/version-models-build.md
     - name: Data integration
