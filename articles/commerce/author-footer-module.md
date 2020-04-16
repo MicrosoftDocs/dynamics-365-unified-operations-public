@@ -41,7 +41,7 @@ The footer module is a special container that is used to host the modules that a
 
 ## Footer module properties 
 
-Like most containers, a footer module support properties for the heading and the width. It also supports the addition of multiple footer category modules. Each footer category module that is added is rendered as a column in the footer module.
+Like most containers, a footer module supports properties for the heading and the width. It also supports the addition of multiple footer category modules. Each footer category module that is added is rendered as a column in the footer module.
 
 ## Modules available in a footer module
 
