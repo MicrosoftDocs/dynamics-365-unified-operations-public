@@ -50,6 +50,10 @@ Three container modules are supported: container, container with 2-slots, and co
 - A site author wants a six-column layout, where six modules appear side by side. Therefore, the site author uses a container of the contain type that has six columns inside it.
 - A site author wants to put a module on a page but doesn't want it to fill the screen. Therefore, the site author adds the module to a container module and sets the container's **Width** property to **Fit container**.
 
+Below is an example from Site builder for Home page. The example shows the Carousel module inside a Container (friendly name Carousel Container) and is set to Fill screen
+![Example of a container module](./media/ecommerce-container.PNG)
+
+
 ## Container module properties
 
 | Property name     | Values | Description |
