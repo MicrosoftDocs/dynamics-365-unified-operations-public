@@ -102,7 +102,7 @@ To preview your changes, either open an existing page that uses the preset layou
 After you've previewed the changes to your preset layout, follow one of these steps to publish the layout to your live site:
 
 * Go to **Layouts**, select the layout, and then select **Publish**.
-* Select the name of the layout to open the layout editor, and then select **Publish**.
+* Select the layout name to open the layout editor, and then select **Publish**.
 * Publish a page that references the unpublished layout. The layout will automatically be published.
 
 > [!WARNING]
