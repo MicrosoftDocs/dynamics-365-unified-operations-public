@@ -52,6 +52,9 @@ The video player module also supports secondary audio tracks. When a video is up
 - Promotional videos or videos about policies on any marketing page
 - Marketing videos that highlight product features on product details pages or marketing pages
 
+Below is an example of video player shown on Fabrikam homepage.
+![Example of a video player module](./media/ecommerce-videoplayer.PNG)
+
 ### Video player module properties
 
 | Property name         | Value                               | Description |
