@@ -48,6 +48,10 @@ You can add content block modules inside a carousel module. The properties of th
 - A carousel that has multiple promotional modules inside it can be used on a product details page.
 - A carousel can be used on any marketing page to promote multiple promotions or products.
 
+Below is an example of a carousel module used on homepage wuth multiple Content block items.
+![Example of a hero module](./media/Hero.PNG)
+
+
 ## Carousel module properties
 
 | Property name             | Value                 | Description |
