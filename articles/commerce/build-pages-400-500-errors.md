@@ -52,8 +52,8 @@ To start to build a status code error response page, follow these steps.
 To build the template for the status code error response page, follow these steps.
 
 1. Go to **Templates**.
-1. Select **+ New** to create a page template.
-1. In the **New Template** dialog box, under **Template Name** enter a name for the new template, and then select **OK**
+1. Select **New** to create a page template.
+1. In the **New Template** dialog box, under **Template Name**, enter a name for the new template, and then select **OK**.
 1. Build the template, based on the structure that you want the status code error response page to have.
 1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it. 
 
@@ -61,9 +61,9 @@ To build the template for the status code error response page, follow these step
 
 To build the status code error response page, follow these steps.
 
-1. Go to **Pages.
-1. Select **+ New** to create a new page.
-1. In the **Choose a template** dialog box, select a template, and then under **Page name** enter a name for the the status code error response page. Leave the **Page URL** field blank.
+1. Go to **Pages**.
+1. Select **New** to create a page.
+1. In the **Choose a template** dialog box, select a template, and then, under **Page name**, enter a name for the status code error response page. Leave the **Page URL** field blank.
 1. Build the page.
 1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
