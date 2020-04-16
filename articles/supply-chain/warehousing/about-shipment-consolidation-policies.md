@@ -2,10 +2,10 @@
 # required metadata
 
 title: About shipment consolidation policies
-description: This topic provides an overview of functionality that provides flexible configuration of shipment consolidation policies.
+description: Provides an overview of functionality that provides flexible configuration of shipment consolidation policies.
 author: GarmMSFT
 manager: tfehr
-ms.date: 04/16/2019
+ms.date: 04/20/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -24,13 +24,13 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 # ms.search.industry:
 ms.author: v-olbara
-ms.search.validFrom: 2020-04-16
+ms.search.validFrom: 2020-04-20
 ms.dyn365.ops.version: 10.0.3
 
 ---
 # About shipment consolidation policies
 
-The shipment consolidation process using shipment consolidation policies allows for automated shipment consolidation during automated and manual release to warehouse. Before introduction of this functionality, automated consolidation was available with hardcoded fields and based on the **Consolidate shipment at release to warehouse** field set on a warehouse.
+The shipment consolidation process using shipment consolidation policies allows for automated shipment consolidation during automated and manual release to warehouse. Before the introduction of this functionality, automated consolidation was available with hardcoded fields and based on the **Consolidate shipment at release to warehouse** field set on a warehouse.
 
 Shipment consolidation policies are used at the following instances of functionality:
 

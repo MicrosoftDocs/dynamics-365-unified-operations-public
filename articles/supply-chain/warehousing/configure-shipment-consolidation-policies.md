@@ -2,11 +2,11 @@
 # required metadata
 
 title: Configure shipment consolidation policies
-description: This topic provides an overview of functionality that provides flexible configuration of shipment consolidation policies.
+description: Describes how to set up default and custom shipment consolidation policies.
 author: GarmMSFT
-manager: PJacobse
-ms.date: 12/31/2019
-ms.topic: configure-shipment-consolidation-policies
+manager: tfehr
+ms.date: 04/20/2020
+ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology:
@@ -17,27 +17,24 @@ ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: PJacobse
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry:
 ms.author: v-olbara
-ms.search.validFrom: yyyy-mm-dd
+ms.search.validFrom: 2020-04-20
 ms.dyn365.ops.version: 10.0.3
-
 ---
 
 # Configure shipment consolidation policies
 
 [!include [banner](../includes/banner.md)]
 
-*Released in version 10.0.3*
+The shipment consolidation process using shipment consolidation policies allows for automated shipment consolidation during automated and manual release to warehouse. After you enable this feature, you must configure your initial policies. If you don't have any policies configured, then each sales line will generate a separate shipment with a single load line.
 
-The shipment consolidation process using shipment consolidation policies allows for automated shipment consolidation during automated and manual release to warehouse. After the feature is enabled, initial configuration of policies has to be done. If not configured at all, each sales line will generate a separate shipment with a single load line.
-
-Scenarios below describe how to set up default and custom shipment consolidation policies.
+The scenarios provided in this topic illustrate how to set up default and custom shipment consolidation policies.
 
 ## Scenario 1: Configure default shipment consolidation policies
 
