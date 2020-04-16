@@ -37,7 +37,7 @@ This topic describes how to save, preview, and publish a page in Microsoft Dynam
 
 ## Save a page
 
-To save a page, you must have it checked out to yourself and open in the page editor. To check out a page, you select **Edit** on the command bar. After editing a page, you should save it immediately to ensure that your changes are stored.
+To save a page, you must have it checked out to yourself and open in the page editor. To check out a page, select **Edit** on the command bar. After you've finished editing a page, you should immediately save it to ensure that your changes are stored.
 
 When you save a page, the changes are visible only to you. The save operation is intended primarily to store changes while the page isn't yet ready to be checked in. When you've finished modifying the page, we recommend that you check it in, so that the changes become visible to others. At that point, the page can also be checked out by other users who must modify it.
 
