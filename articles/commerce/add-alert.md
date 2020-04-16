@@ -68,8 +68,8 @@ Promo banners can be used in the site header to show site-wide promotions or mes
 
 To add a promo banner module to a page and set the required properties, follow these steps.
 
-1. Select **+ New** to create a page template.
-1. In the **New Template** dialog box, under **Template Name** enter **Promo banner template**, and then select **OK**.
+1. Select **New** to create a page template.
+1. In the **New Template** dialog box, under **Template Name**, enter **Promo banner template**, and then select **OK**.
 1. Under **Page Outline**, add a **Default page** module to the **Body** slot. 
 1. Select **Finish editing** to check in the template, and then select **Publish** to publish it. 
 1. Use the template that you just created to create a page that is named **Promo banner page**. 
