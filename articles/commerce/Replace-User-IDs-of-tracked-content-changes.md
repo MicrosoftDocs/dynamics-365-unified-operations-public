@@ -2,7 +2,7 @@
 # required metadata
 
 title: Replace user IDs for tracked content changes
-description: This topic describes how to replace user IDs for tracked content changes within Microsoft Dynamics 365 Commerce site builder change tracking logs.
+description: This topic describes how to replace user IDs for tracked content changes in Microsoft Dynamics 365 Commerce site builder.
 author: BrianShook
 manager: annbe
 ms.date: 04/20/2020
@@ -31,32 +31,32 @@ ms.dyn365.ops.version:
 
 # Replace user IDs for tracked content changes
 
-This topic describes how to replace user IDs for tracked content changes within Microsoft Dynamics 365 Commerce site builder change tracking logs.
+This topic describes how to replace user IDs for tracked content changes in Microsoft Dynamics 365 Commerce site builder.
 
 ## Overview
 
-In Dynamics 365 Commerce, the site builder authoring tools track changes made to items within the Content Management System (CMS). This allows for display of history of changes made to documents which helps teams track their efforts when collaborating on content. The system utilizes the User IDs within the underlying Identity management system, Azure Active Directory (AAD). These user IDs are also the issued email addresses within the Active Directory. A Commerce System Administrator can replace the ID reference within the history logs by using a feature within the site builder tool.
+In Dynamics 365 Commerce, the site builder authoring tool tracks changes made to items within the content management system (CMS). This allows for the display of document change history, which helps teams track their efforts when collaborating on content. To assign user identities to tracked changes, the system uses Azure Active Directory (Azure AD) identity management system user IDs. These user IDs are also the email addresses issued by Azure AD. Site builder allows Commerce system administrators to replace user ID references within the site builder change tracking history logs if needed.
 
 ## Replace a user ID in site builder
 
-To replace a specific user ID or issued email address, follow these steps.
+To replace a user ID in site builder, follow these steps.
 
-1. Navigate to **Home** in site builder.
-1. Open the **Tenant Settings** menu and select **Tracking Content Changes**
+1. Go to **Home** for your site.
+1. In the left navigation menu, expand **Tenant Settings** and then select **Tracking Content Changes**.
 
     ![Tracking Content Changes menu](./media/TrackingContentChanges.png)
 
 1. Select **Manage** to manage the user IDs.
-1. Enter the user ID email address to be removed from tracking logs, and then select **Replace** once entered. Multiple entries can be entered to be replaced.
+1. Enter the user ID email address to be removed from the change tracking logs, and then select **Replace**. Multiple entries can be entered before selecting **Replace**.
 
     ![Interface with examples to replace an email address](./media/ReplaceEmailAddress.png)
 
 1. Select **OK**, and then select **Save** in the **Tracking Content Changes** window.
 
-A dialog box will appear to indicate that the records for the email address provided have been updated. 
+A dialog box will appear to indicate that the records for the user ID provided have been updated. 
 
 > [!NOTE]
-> The system replaces the email address with a randomly-generated string to remove all CMS references of the email address that was entered. This action only affects the history logs referenced within the specific Commerce > e-Commerce environment (tenant) which the site builder instance is associated.
+> The system replaces the original user ID email address with a randomly-generated string to remove all CMS references to the email address that was entered. This action only affects the history logs referenced within the specific e-Commerce environment (tenant) that is associated with the site builder instance.
 
 ## Additional resources
 
