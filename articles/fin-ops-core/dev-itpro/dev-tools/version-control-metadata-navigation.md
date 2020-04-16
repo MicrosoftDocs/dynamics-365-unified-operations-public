@@ -51,12 +51,12 @@ Navigate to <https://www.visualstudio.com/> to sign up for Azure DevOps. Click *
 
 2.  Create a Azure DevOps account, and select a URL for your account. This is the URL that you'll connect to from your development computer when you're configuring source control in Visual Studio. The following is an example of the account URL. 
 
-    [![AccountURL\_UsingDevoTools](./media/accounturl_usingdevotools.png)](./media/accounturl_usingdevotools.png) 
+    ![AccountURL\_UsingDevoTools](./media/accounturl_usingdevotools.png)
 
     When the account is created, you're directed to your account main page where you're prompted to create your first project.
 3.  Create a demo **Fleet Management** project. 
 
-    [![FirstProject\_UsingDevoTools](./media/firstproject_usingdevotools.png)](./media/firstproject_usingdevotools.png)
+    ![FirstProject\_UsingDevoTools](./media/firstproject_usingdevotools.png)
 
 ### Create a Azure DevOps team project
 
@@ -65,7 +65,7 @@ If you already have a Azure DevOps account, go to your account using Internet Ex
 1. Go to <https://www.visualstudio.com/>.
 2. Under **Recent projects & teams**, click **New** to create a new project. 
 
-   [![ClickNew\_UsingDevoTools](./media/clicknew_usingdevotools.png)](./media/clicknew_usingdevotools.png)
+   ![ClickNew\_UsingDevoTools](./media/clicknew_usingdevotools.png)
 
 3. In the **Project name** field, enter **Fleet Management**, enter a **Description**, and then click **Create project**.
 
@@ -73,7 +73,7 @@ If you already have a Azure DevOps account, go to your account using Internet Ex
 
 If you have migrated your code from a previous version using the Lifecycle Services (LCS) automated code upgrade tool, the following folder structure is automatically created in your Azure DevOps team project. 
 
-[![VSOfolders](./media/vsofolders1.png)](./media/vsofolders1.png)
+![VSOfolders](./media/vsofolders1.png)
 
 The **Metadata** folder contains your source XML files organized by packages and models and the **Projects** folder contains Visual Studio projects. If you are not migrating code and are starting from scratch, create a similar folder structure on the server in your team project before you start development.
 
@@ -92,7 +92,7 @@ The **Metadata** folder contains your source XML files organized by packages and
 
 7.  Select the **Fleet Management** check box under **Team projects**, and then click **Connect**. 
 
-    [![ConnectTFSServer\_UsingDevoTools](./media/connecttfsserver_usingdevotools.png)](./media/connecttfsserver_usingdevotools.png)
+    ![ConnectTFSServer\_UsingDevoTools](./media/connecttfsserver_usingdevotools.png)
 
 ### Map your Azure DevOps project to your local model store and projects folder
 
@@ -105,7 +105,7 @@ Your model store root folder contains source files of all packages and models th
     > [!NOTE]
     > Your model store may be located under I:\\AosService\\PackagesLocalDirectory or another drive, depending on your machine configuration.
 
-    [![VSOfolders2](./media/vsofolders21.png)](./media/vsofolders21.png)
+    ![VSOfolders2](./media/vsofolders21.png)
 
 4. Click **Map**, and on the next dialog, click **No**.
 5. Similarly, map the **/Trunk/Main/Projects** server folder to the **local projects folder** that will hold your Visual Studio solution and project files.
@@ -132,7 +132,7 @@ This section describes the steps needed to add a solution to Azure DevOps source
     > [!NOTE]
     > If you have already mapped the server Projects folder to a local folder that contains the FleetManagement solution, steps 2 and 3 are omitted.
 
-    [![VSOfolders3](./media/vsofolders31.png)](./media/vsofolders31.png)
+    ![VSOfolders3](./media/vsofolders31.png)
 
 4.  Click OK.
 5.  Go to **Team Explorer &gt; Pending changes**, and then click **Check-in** to check-in your solution and its model element to the Azure DevOps source control.
@@ -275,8 +275,7 @@ This section highlights a feature that enables you to move from one element to a
 
 ![Addtoproject\_UsingDevoTools](./media/addtoproject_usingdevotools.png)
 
-Use Application Explorer to create a project from a model
----------------------------------------------------------
+## Use Application Explorer to create a project from a model
 
 You can use Application Explorer to search for all or some elements of a model and create a project out of the search results.
 
@@ -291,7 +290,8 @@ You can use Application Explorer to search for all or some elements of a model a
 
 4.  Specify your project properties in the new project dialog and click **OK** to create the project.
 
-**Tip:** To create a project from search results, you can add any type, name, or other filters to your search as long as all results are in the same model. For example: *model:"Fleet Management" type:Table name:^FM* will return all tables in the Fleet Management model with a name starting with the letters FM.
+    > [!NOTE]
+    > To create a project from search results, you can add any type, name, or other filters to your search as long as all results are in the same model. For example: *model:"Fleet Management" type:Table name:^FM* will return all tables in the Fleet Management model with a name starting with the letters FM.
 
 
 
