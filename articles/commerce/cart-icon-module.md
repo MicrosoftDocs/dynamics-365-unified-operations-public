@@ -40,6 +40,9 @@ This topic covers the cart icon module and describes how to add it to site pages
 
 The cart icon module represents the cart in the header module of the page, and shows the number of items in the cart. The cart icon module also displays a cart summary (also known as a mini cart) when the cart icon is hovered over. The mini cart provides the user with a summary of the items in the cart without having to navigate to the cart page. In addition, it also allows the user to directly go to checkout page if they are happy with the summary. This reduces the number of page navigations and makes checkout faster. 
 
+Below is an example of cart icon showing a mini cart on the Fabrikam header.
+![Example of a mini cart module](./media/ecommerce-Minicart.PNG)
+
 ## Module properties
 
 - **Show mini cart** – When true, this property enables a cart summary (mini cart) to be displayed when the cart icon is hovered over. This functionality is only supported for desktop view ports.
