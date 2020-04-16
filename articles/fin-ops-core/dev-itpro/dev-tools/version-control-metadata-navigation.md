@@ -284,7 +284,7 @@ You can use Application Explorer to search for all or some elements of a model a
 
     [![AppExplorerModelSearch](./media/appexplorermodelsearch.jpg)](./media/appexplorermodelsearch.jpg)
 
-3.  When the search is complete, right-click the AOT root node and select *Add search results to new project.*
+3.  When the search is complete, right-click the AOT root node and select **Add search results to new project.**
 
     [![AddSearchResultsToNewProject](./media/addsearchresultstonewproject.jpg)](./media/addsearchresultstonewproject.jpg)
 
