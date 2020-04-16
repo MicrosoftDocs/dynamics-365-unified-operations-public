@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Create email templates for transactional events
-description: This topic describes how to assemble and upload email templates.
+title: Create transactional event email templates
+description: This topic describes how to create transactional event email templates in Microsoft Dynamics 365 Commerce.
 author: stuharg
 manager: annbe
-ms.date: 04/07/2020
+ms.date: 04/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -28,20 +28,22 @@ ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
 
 ---
-# Create email templates for transactional events
+# Create transactional event email templates
 
 [!include [banner](includes/banner.md)]
 
+This topic describes how to create transactional event email templates in Microsoft Dynamics 365 Commerce.
+
 ## Overview
 
-Dynamics 365 Commerce provides an out-of-box solution for sending emails to customers when they place an online order, their order is ready for in-store pickup, their order ships, and other transactional events. This help topic covers the steps for assembling, uploading and configuring the email templates that send those emails. 
+Dynamics 365 Commerce provides an out-of-box solution for sending emails to customers informing them that their order has been placed, their order is ready for pickup, their order has shipped and other transactional events. This help topic covers the steps for assembling, uploading and configuring the email templates that send those emails. 
 
 ## Template creation
 
 Before you can map a specific transactional event to an email template, you must first create the template. To create a new email template:
 
-1. In Headquarters, go to **Retail and Commerce** > **Headquarters setup** > Organization email templates
-1. Click **+New**
+1. In Commerce headquarters, go to **Retail and Commerce \> Headquarters setup > Organization email templates**.
+1. Select **+New**
 1. Under **General**, enter values for the following fields: 
     1. **Email ID**: The email ID is the unique identifier for this template and is the value that is shown when selecting a template to map to an event
     1. **Email description**: Optional field for providing a description of the template. The value you enter only appears in Headquarters
@@ -53,15 +55,15 @@ Before you can map a specific transactional event to an email template, you must
 1. Enter the email subject that will appear in the Subject field of the email
 1. Click **Edit** to upload your email template HTML
 
-## Creating an email HTML message body
+## Create an email HTML message body
 
 The message body of your email is composed with HTML. You can create any layout, styles and branding that HTML and inline CSS allows. Images can be used as well if you host your images on a publicly available web endpoint and insert their URL into the src attribute of the HTML img tag. NOTE: Email clients impose layout and style limitations that may require adjustments to the HTML and CSS you use for the message body. We recommend that you familiarize yourself with best practices for authoring HTML that will be supported by the most popular email clients.
 
-## Adding placeholders
+## Add placeholders
 
 Your email may contain placeholders that are replaced with customer and transaction-specific values when the email is generated. Placeholders are always surrounded by percent (%) characters (e.g. %customername%) and are inserted directly into the HTML document. 
 
-## Order header placeholders
+### Order header placeholders
 
 | **Placeholder  name** | **Description**                                              |
 | --------------------- | ------------------------------------------------------------ |
@@ -86,7 +88,7 @@ Your email may contain placeholders that are replaced with customer and transact
 | pickupopenstorefrom   | Opening time of the pickup store                             |
 | pickupopenstoreto     | Closing time of the pickup store                             |
 
-## Order lines in the message body
+### Order lines in the message body
 
 When creating the HTML for individual lines in the message body, surround the repeating block of HTML and placeholders for individual lines with the following placeholders within HTML comment tags:
 
@@ -96,7 +98,7 @@ Insert HTML that repeats for individual lines here
 
 &lt;!--%tableend.salesline%--&gt;
 
-## Order line placeholders 
+### Order line placeholders 
 
 The following placeholders display information for individual lines in the order. 
 
@@ -129,7 +131,7 @@ The following placeholders display information for individual lines in the order
 | giftcardrecipientname          | Gift card recipient name for products of type gift card      |
 | giftcardbuyername              | Gift card buyer name for products of type gift card          |
 
-## Creating a template for emailed receipts
+## Create a template for emailed receipts
 
 Receipts can be emailed to customers who make purchases at a retail point of sale. The steps required for creating the email template are the same as for other transactional events, with the following additions. 
 
@@ -144,10 +146,10 @@ For more information about how to configure email receipts, see [Set up email re
 After you have created and tested the HTML for your message body, it must be uploaded to Headquarters. Currently, email HTML cannot be exported, so you must maintain the master copy of our HTML outside of Dynamics Headquarters.
 To upload new or edited email template HTML:
 
-1. Select the row for the language you want to add or replace HTML for, or create a row for a new language by clicking  +New
-1. Click **Edit**
-1. Click **Browse**, navigate to the HTML document you wish to upload, and open it
-1. Click **Upload**
+1. Select the row for the language you want to add or replace HTML for, or create a row for a new language by clicking **+New**.
+1. Select **Edit**.
+1. Select **Browse**, navigate to the HTML document you wish to upload, and open it.
+1. Select **Upload**.
 1. After your email HTML appears in the preview window, click **OK**
 1. Ensure that the **Has body** checkbox is checked for the row
 
