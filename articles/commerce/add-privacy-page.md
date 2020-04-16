@@ -59,8 +59,8 @@ To start, in the authoring tools, go to the site that you want to build a privac
 
 To create a template, follow these steps.
 
-1. Go to **Templates**, and then select **+ New** to create a page template.
-1. In the **New Template** dialog box, under **Template Name** enter **Promo banner template**, and then select **OK**.
+1. Go to **Templates**, and then select **New** to create a page template.
+1. In the **New Template** dialog box, under **Template Name**, enter **Promo banner template**, and then select **OK**.
 1. In the template, add any required modules to the required page slots. For guidance, hover over the red exclamation marks. (For example, the **HTML Head** slot might require a **Default External Script** module.)
 1. In the **Body** slot, add a **Default Page** module.
 1. In the **Default Page** module, in the **Main** slot, add a **Content Rich Block** module.
@@ -71,7 +71,7 @@ To create a template, follow these steps.
 
 To build a privacy policy page, follow these steps.
 
-1. Go to **Pages**, and then select **+ New** to create a page.
+1. Go to **Pages**, and then select **New** to create a page.
 1. In the **Choose a template** dialog box, select the template for the privacy policy page.
 1. Enter a page name and page URL, and then select **OK**. 
 1. In the **Main** slot of the page, add a **Content Rich Block** module.
@@ -93,7 +93,7 @@ You can add a link to the privacy policy page to a fragment. In this way, you ca
 
 To add a link to a footer fragment, follow these steps.
 
-1. Go to **Page Fragments**, and then select **+ New** to create a new page fragment.
+1. Go to **Page Fragments**, and then select **New** to create a page fragment.
 1. In the **New Page Fragment** dialog box, select the **Footer** module.
 1. Under **Page Fragment Name**, enter a name for the fragment, and then select **OK**.
 1. In the **Footer category** slot, add a **Footer item** module.
