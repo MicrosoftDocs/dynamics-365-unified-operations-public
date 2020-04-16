@@ -500,7 +500,7 @@
             href: lifecycle-services/reconfigure-environment.md
           - name: Redeploy on-premises deployments
             href: deployment/redeploy-on-prem.md
-          - name: Remove and reinstall an AOS node
+          - name: Remove and reinstall, or add an AOS node
             href: deployment/onprem-remove-reinstall-AOS-node.md
           - name: Reuse the same AD FS instance for multiple environments
             href: deployment/onprem-reuseadfs.md
