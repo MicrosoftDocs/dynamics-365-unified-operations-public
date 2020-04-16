@@ -52,7 +52,7 @@ Promo banners can be used in the site header to show site-wide promotions or mes
 
 "Save big with back to school sale. Shop Now."
 
-![Examples of promobanner modules](./media/ecommerce-promobanner.PNG)
+![Example of promobanner modules](./media/ecommerce-Promobanner.PNG)
 
 ## Promo banner module properties
 
