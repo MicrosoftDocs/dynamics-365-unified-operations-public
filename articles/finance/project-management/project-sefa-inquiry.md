@@ -40,7 +40,7 @@ The inquiry includes grants that have projection dates in the selected date rang
 
 ## Set up the CFDA clusters
 
-You must set up the CFDA clusters that can be associated with CFDA numbers in the Schedule of Domestic Federal Awards inquiry.
+You must set up the CFDA clusters that can be associated with CFDA numbers in the Schedule of Expenditures of Federal Awards inquiry.
 
 1. Go to **Project management and accounting \> Setup \> Grants \> Catalog of Federal Domestic Assistance clusters**.
 2. Select **New** to create a CFDA cluster.
@@ -49,7 +49,7 @@ You must set up the CFDA clusters that can be associated with CFDA numbers in th
 
 ## Set up CFDA numbers
 
-You must set up CFDA numbers that can be added to grants and included in the Schedule of Domestic Federal Awards inquiry.
+You must set up CFDA numbers that can be added to grants and included in the Schedule of Expenditures of Federal Awards inquiry.
 
 1. Go to **Project management and accounting \> Setup \> Grants \> Catalog of Federal Domestic Assistance numbers**.
 2. Select **New** to create a CFDA number.
@@ -60,7 +60,7 @@ You must set up CFDA numbers that can be added to grants and included in the Sch
 7. Optional: In the **Program cluster** field, add the appropriate CFDA cluster.
 8. Select **Save** to save your changes.
 
-## Set up grants to report for the Schedule of Federal Domestic Assistance inquiry
+## Set up grants to report for the Schedule of Expenditures of Federal Awards inquiry
 
 1. Go to **Project management and accounting \> Grants \> Grants**, and select an existing grant.
 2. On the **Setup** FastTab, in the **Catalog of Federal Domestic Assistance** field, assign the CFDA number. The CFDA number on the grant determines the CFDA cluster for reporting.
@@ -84,10 +84,10 @@ The federal government funded an infrastructure project for a state. The federal
 2. On the **Default information** FastTab, select the **Exclude from Schedule of Expenditures of Federal Awards** check box.
 3. Select **Save** to save your changes.
 
-## Run the Schedule of Expenditures of Federal Awards the data on this inquiry
+## Run the Schedule of Expenditures of Federal Awards inquiry
 
 1. Go to **Project management and accounting \> Inquiries and reports \> Grant inquiry \> Schedule of Expenditures of Federal Awards**.
-2. In the parameters section, follow these steps:
+2. In the **Parameters** section, follow these steps:
 
     1. In the **Date interval** field, select the code for the date interval. Alternatively, in the **From date** and **To date** fields, define the date interval.
     2. Optional: To include only billed transactions as revenue in the inquiry, set the **Include only billed revenues** option to **Yes**.
