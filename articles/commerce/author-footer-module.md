@@ -39,6 +39,8 @@ This topic covers footer modules and describes how to create them in Microsoft D
 
 The footer module is a special container that is used to host the modules that appear in the page footer. For example, it can include links to various pages across the site, such as **Contact Us** and **Store Policies** pages.
 
+![Example of footer module](./media/ecommerce-footer.PNG)
+
 ## Footer module properties 
 
 Like most containers, a footer module support properties for the heading and the width. It also supports the addition of multiple footer category modules. Each footer category module that is added is rendered as a column in the footer module.
