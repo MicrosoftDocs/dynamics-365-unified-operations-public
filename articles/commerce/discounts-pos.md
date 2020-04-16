@@ -33,7 +33,6 @@ ms.dyn365.ops.version: Application update 10.0.10
 # Show discounts in POS
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Promotions play an important role in motivating customers who are making purchasing decisions. For example, holidays can produce the highest number of sales for retailers, because the whole retail market is flooded with enticing promotions and discounts. If store associates know about and understand the promotions that are available, they can easily take advantage of those promotions to cross-sell and upsell items. This topic explains how Microsoft Dynamics 365 Commerce helps sales associates learn about promotions and how they can be used for cross-sell and upsell motions.
 
