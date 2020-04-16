@@ -43,7 +43,7 @@ However, instead of using the default category page, you might want to use an "e
 
 ![Enriched category landing page](./media/CategoryLandingPages.png)
 
-In Commerce site builder the **Products** page includes a list of categories from the channel that are assigned to the site. If the **Enriched** status is selected for a category page, that category page has been enriched. Otherwise, the default category page and content are used for the category. You can preview both the enriched and non-enriched category pages for a category by selecting the category name.
+In Commerce site builder, the **Products** page includes a list of categories from the channel that are assigned to the site. If the **Enriched** status is selected for a category page, that category page has been enriched. Otherwise, the default category page and content are used for the category. You can preview both the enriched and non-enriched category pages for a category by selecting the category name.
 
 To enrich a category page, do the following.
 
