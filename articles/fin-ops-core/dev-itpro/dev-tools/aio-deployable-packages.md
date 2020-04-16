@@ -35,7 +35,7 @@ Customers can update the software in their environments by applying software dep
 This topic outlines the best practices for creating and managing an all-in-one deployable package (ADP).
 
 > [!IMPORTANT]
-> Support for non ADP packages for v1 Cloud service customers ends on October 31st 2020.
+> Support for non ADP packages for v1 Cloud service customers ends on October 31, 2020.
 
 ## What is an ADP?
 
@@ -45,9 +45,9 @@ For example, you have two environments: **SandboxTest** and **SandboxPreProd**.
 
 <img src="media/AIO_PKG.png" width="500px" alt="All-in-one deployable package comparison" />
 
-If your software deployable package contains CustomizationA, CustomizationB, and ISV1, it's a fully deployable package for the SandboxTest environment, because it exactly matches the model list. It's also a fully deployable package for the SandboxPreProd environment, because it has all the models that are installed there, plus CustomizationB.
+If your software deployable package contains CustomizationA, CustomizationB, and ISV1, it's a fully deployable package for the SandboxTest environment. This is because it exactly matches the model list. It's also a fully deployable package for the SandboxPreProd environment because it has all the models that are installed, plus CustomizationB.
 
-However, if your software deployable package contains only CustomizationA, it isn't fully deployable for either environment, because it's missing some of the models that are already installed.
+However, if your software deployable package contains only CustomizationA, it isn't fully deployable for either environment. The package is missing some of the models that are already installed.
 
 ## How do I create an ADP?
 
@@ -56,12 +56,13 @@ There are two primary methods for creating an ADP:
 - If you're using the continuous integration/continuous deployment model, you're already creating ADPs.
 - If you don't have a build environment, you can create a package in Microsoft Visual Studio. For more information, see [Create deployable packages of models](../deployment/create-apply-deployable-package.md).
 
-## What about my ISV packages that don't contain source code?
+## What if my ISV packages don't contain source code?
 
 ISVs can choose whether to share their source code with you. If they don't share it, they will provide a binary-only package. This package can easily be managed into an ADP. For instructions, see [Manage third-party models and runtime packages by using source control](manage-runtime-packages.md).
 
 ## Why are these packages important?
 
-The best practice of using fully deployable packages helps reduce the complexity and number of packages that are applied to a given environment. In some circumstances, installation of disparate packages can change the behavior of your environment if you install ModelA and then ModelB instead of ModelB and then ModelA.
+The best practice of using fully deployable packages helps reduce the complexity and number of packages that are applied to a given environment. In some circumstances, installation of different packages can change the behavior of your environment. For example, if you install ModelA and then ModelB instead of ModelB and then ModelA.
 
-In addition, this approach is a hard requirement for self-service environments, because those environments use containerization technology and build a brand-new environment every time that you apply a package. If you apply ModelA today and then apply only ModelB tomorrow, you will effectively uninstall ModelA.
+In addition, this approach is a hard requirement for self-service environments. This is because those environments use containerization technology and build a brand-new environment every time that you apply a package. If you apply ModelA today and then apply only ModelB tomorrow, you will effectively uninstall ModelA.
+
