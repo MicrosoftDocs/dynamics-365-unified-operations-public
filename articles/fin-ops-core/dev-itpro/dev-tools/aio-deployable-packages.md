@@ -2,10 +2,10 @@
 # required metadata
 
 title: All-in-one deployable packages (ADP)
-description: This topic describes the all-in-one deployable package (ADP) concept and its use. 
+description: This topic describes the all-in-one deployable package (ADP) concept and its use.
 author: laneswenka
 manager: AnnBe
-ms.date: 04/09/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -24,43 +24,44 @@ ms.search.scope: Operations
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: laswenka
-ms.search.validFrom: 2020-04-01
+ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: 10.0.9
 
 ---
-#
 # All-in-one deployable packages (ADP)
 
-Customers can update the software of their environments by applying a Software deployable package.  These packages can originate from the customer themselves in the form of customizations, and they can also be provided by partners and Independent Software Vendors (ISVs).  Microsoft&#39;s recommendation is to combine these various packages into a single package before applying to an environment.  This is also a hard requirement for customers with self-service environments.
+Customers can update the software in their environments by applying software deployable packages. These packages can originate from the customers themselves in the form of customizations. They can also be provided by partners and independent software vendors (ISVs). Microsoft recommends that customers combine all these various packages into a single package before they apply them to an environment. For customers who have self-service environments, this approach is a hard requirement.
 
-This topic outlines the best practice strategy for creating and managing a All-in-one deployable package (ADP).
+This topic outlines the best practices for creating and managing an all-in-one deployable package (ADP).
 
-## **What is an All-in-one deployable package?**
+> [!IMPORTANT]
+> Support for non ADP packages for v1 Cloud service customers ends on October 31st 2020.
 
-An All-in-one deployable package is a software deployable package that contains all of the models and binaries you currently have on an environment.  Think of it as if you were to represent all of the non-Microsoft software of an environment into a single package.
+## What is an ADP?
 
-For example, let&#39;s take a look at two environments one called SandboxTest and another called SandboxPreProd.
+An ADP is a software deployable package that contains all the models and binaries that you currently have in an environment. Think of it as a single package that represents all the non-Microsoft software in an environment.
+
+For example, you have two environments: **SandboxTest** and **SandboxPreProd**.
 
 <img src="media/AIO_PKG.png" width="500px" alt="All-in-one deployable package comparison" />
 
-If your software deployable package contains CustomizationA, CustomizationB, and ISV1 then it is a fully deployable package for both **SandboxTest** as it matches the model list exactly.
+If your software deployable package contains CustomizationA, CustomizationB, and ISV1, it's a fully deployable package for the SandboxTest environment, because it exactly matches the model list. It's also a fully deployable package for the SandboxPreProd environment, because it has all the models that are installed there, plus CustomizationB.
 
-It is also a fully deployable package for **SandboxPreProd** because it has all of the models installed here too, plus the extra CustomizationB.
+However, if your software deployable package contains only CustomizationA, it isn't fully deployable for either environment, because it's missing some of the models that are already installed.
 
-If your software deployable package contains only CustomizationA, then it is not fully deployable for either environment, as it is missing models as compared to what is already installed.
+## How do I create an ADP?
 
-## **How do I create an ADP?**
+There are two primary methods for creating an ADP:
 
-There are two primary methods for creating a ADP.  If you are using our continuous integration / continuous deployment model, you&#39;re already creating ADPs.
+- If you're using the continuous integration/continuous deployment model, you're already creating ADPs.
+- If you don't have a build environment, you can create a package in Microsoft Visual Studio. For more information, see [Create deployable packages of models](../deployment/create-apply-deployable-package.md).
 
-If you don&#39;t have a build environment, you can create a package from Visual Studio following this document: [https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/create-apply-deployable-package](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/create-apply-deployable-package)
+## What about my ISV packages that don't contain source code?
 
-## **What about my ISV packages that don&#39;t contain source code?**
+ISVs can choose whether to share their source code with you. If they don't share it, they will provide a binary-only package. This package can easily be managed into an ADP. For instructions, see [Manage third-party models and runtime packages by using source control](manage-runtime-packages.md).
 
-ISVs can choose whether to share their source code with you or not.  If they don&#39;t then they will be providing a binary-only package.  This can also easily be managed in to a ADP by following this document:[https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-tools/manage-runtime-packages](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-tools/manage-runtime-packages)
+## Why are these packages important?
 
-**Why are these packages important?**
+The best practice of using fully deployable packages helps reduce the complexity and number of packages that are applied to a given environment. In some circumstances, installation of disparate packages can change the behavior of your environment if you install ModelA and then ModelB instead of ModelB and then ModelA.
 
-The best practice of using fully deployable packages is to reduce the complexity and number of packages that are applied to a given environment.  There are circumstances where installing disparate packages can change the behavior of your environment if you install ModelA and then ModelB, as compared to ModelB then ModelA.
-
-In addition, this is a hard requirement for Self-service environments.  That is because these environments use containerization technology and build a brand new environment each time you apply a package.  If you apply ModelA today, and then only ModelB tomorrow you will effectively uninstall ModelA.
+In addition, this approach is a hard requirement for self-service environments, because those environments use containerization technology and build a brand-new environment every time that you apply a package. If you apply ModelA today and then apply only ModelB tomorrow, you will effectively uninstall ModelA.
