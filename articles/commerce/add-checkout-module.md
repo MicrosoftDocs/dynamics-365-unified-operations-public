@@ -62,7 +62,7 @@ A checkout module shows an order summary and provides the functionality for plac
 - **Billing address** – This module lets a customer provide billing information. This information is processed, together with the credit card information, by Adyen. This module includes an option that lets customers use their billing address as the shipping address.
 ecommerce-payments
 Below is an example of all gift card, loyalty, Payment and Billing address modules
-![Example of a payments ](./media/ecommerce-ecommerce-payments.PNG)
+![Example of a payments ](./media/ecommerce-payments.PNG)
 - **Contact information** – This module lets a customer add or change the contact information (email address) for an order.
 
 - **Text block** – This module contains any messaging that is driven by the content management system (CMS). For example, it might contain a message that states, "For issues with your order, contact 1-800-Fabrikam." 
