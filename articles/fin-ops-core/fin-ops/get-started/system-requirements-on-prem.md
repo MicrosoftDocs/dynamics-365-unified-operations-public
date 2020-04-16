@@ -114,7 +114,7 @@ This means that users of the Dynamics 365 F&O application will come from the 200
 
 Examples for a Full 2 way trust setup could be:
 
-<img src="./media/lbd-domain2WayTrust.png" width="600" hspace="50"/>
+<img src="./media/lbd-domain2WayTrust.png" width="700" hspace="50"/>
 
 #### Known limitations with using the Full 2-way trust setup:
 * Import of security groups from the 2008R2 user domain
@@ -270,9 +270,8 @@ The following table lists the server operating systems that are supported.
 ## Software requirements for database servers
 
 - Only 64-bit versions of SQL Server 2016 are supported.
-- Only **SQL\_Latin1\_General\_CP1\_CI\_AS** is valid for the server and database collation.
+- Only **SQL\_Latin1\_General\_CP1\_CI\_AS** is valid for the server and database collation. For more information about how to select a collation for a SQL Server database, see the [SQL Server documentation](/sql/sql-server/sql-server-technical-documentation).
 - In a production environment, we recommend that you install the latest cumulative update (CU) for the version of SQL Server that you're using.
-- Finance + Operations supports Unicode collations that are case-insensitive, accent-sensitive, kana-sensitive, and width-insensitive. The collation must match the Windows locale of the computers that are running AOS instances. If you're setting up a new installation, we recommend that you select a Windows collation instead of a SQL Server collation. For more information about how to select a collation for a SQL Server database, see the [SQL Server documentation](/sql/sql-server/sql-server-technical-documentation).
 
 The following table lists the SQL Server versions that are supported for the databases. For more information, see the minimum hardware requirements for [SQL Server](https://www.microsoft.com/sql-server/sql-server-2016).
 
