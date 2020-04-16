@@ -44,7 +44,7 @@ A buy box module is special container that is used to host all the modules that 
 
 The URL of a product details page includes the product ID. All the information that is required to render a buy box module is derived from this product ID. If a product ID isn't provided, the buy box module won't be rendered correctly on a page. Therefore, a buy box module can be used only on pages that have product context. To use it on a page that doesn't have product context (for example, a home page or a marketing page), you must do additional customizations.
 
-![Example of a Buy box module](./media/ecommerce-buybox.PNG)
+![Example of a Buy box module](./media/ecommerce-pdp-buybox.PNG)
 
 ## Buy box module properties and slots 
 
