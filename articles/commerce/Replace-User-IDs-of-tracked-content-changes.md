@@ -46,17 +46,15 @@ To replace a user ID in site builder, follow these steps.
 
     ![Tracking Content Changes menu](./media/TrackingContentChanges.png)
 
-1. Select **Manage** to manage the user IDs.
-1. Enter the user ID email address to be removed from the change tracking logs, and then select **Replace**. Multiple entries can be entered before selecting **Replace**.
+1. On the **Tracking Content Changes** page, select **Manage**.
+1. In the **Replace email address** field, enter the user ID email address to be removed from the change tracking logs, and then select **Replace**. (Multiple entries can be entered before selecting **Replace**.)
 
     ![Interface with examples to replace an email address](./media/ReplaceEmailAddress.png)
 
-1. Select **OK**, and then select **Save** in the **Tracking Content Changes** window.
-
-A dialog box will appear to indicate that the records for the user ID provided have been updated. 
+1. Select **OK**, and then select **Save**. A dialog box will appear to indicate that the records for the user ID provided have been updated. 
 
 > [!NOTE]
-> The system replaces the original user ID email address with a randomly-generated string to remove all CMS references to the email address that was entered. This action only affects the history logs referenced within the specific e-Commerce environment (tenant) that is associated with the site builder instance.
+> The system replaces the user ID email address with a randomly-generated string to remove all CMS references to the email address that was entered. This action only affects the history logs referenced within the specific e-Commerce environment (tenant) that is associated with the site builder instance.
 
 ## Additional resources
 
