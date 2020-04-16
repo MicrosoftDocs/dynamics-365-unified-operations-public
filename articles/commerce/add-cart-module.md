@@ -40,7 +40,8 @@ A cart module shows the items that have been added to the cart before the custom
 
 The cart module supports signed-in checkout and guest checkout. It also supports a **Back to shopping** link. You can configure the route for this link at **Site Settings \> Extensions \> Routes**.
 
-The cart module renders data based on the cart ID, which is a browser cookie available throughout the site.
+The cart module renders data based on the cart ID, which is a browser cookie available throughout the site. Below is an example of Cart module in Fabrikam.
+![Example of a cart module](./media/cart2.PNG)
 
 ## Cart module properties and slots
 
