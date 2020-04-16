@@ -71,6 +71,16 @@ Sales quotations can be created in either Sales or Supply Chain Management. If y
 + The **Discount %**, **Discount**, and **Freight Amount** fields on the sales quotation header are read-only fields.
 + The **Freight terms**, **Delivery terms**, **Shipping method**, and **Delivery mode** fields aren't part of the default mappings. To map these fields, you must set up a value mapping that is specific to the data in the organizations that the entity is synced between.
 
+If you are also using the Field Service solution make sure to re-enable the **Quote Line Quick Craete** parameter. You can do this by:
+1. Navigating to your Dynamics 365 Sales application.
+2. Select the settings icon in the top navigation bar
+3. Select **Advanced Settings**
+4. Choose the **Customize the System** option
+5. Select the **Quote Line** menu item
+6. Go to the **Data Services** section and select the **Allow quick create** check box
+
+Following these steps will allow you to continue creating quote lines using the quick create function.
+
 ## Sales orders
 
 Sales orders can be created in either Sales or Supply Chain Management. If you create a sales order in Sales, it's synced to Supply Chain Management in real time. Likewise, if you create a sales order in Supply Chain Management, it's synced to Sales in real time. Note the following points:
