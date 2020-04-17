@@ -52,11 +52,13 @@ ATP is calculated by using the following formula:
 
 ATP = ATP for the previous period + Receipts for the current period – Issues for the current period – Net issue quantity for each future period until the period when the sum of receipts for all future periods, up to and including the future period, exceeds the sum of issues up to and including the future period.  
 
+Notice that the ATP calculation do not include information around expiry date and beyond the ATP time fence the systems expect that any quantity can be promised.
+
 When there are no more issues or receipts to consider, the ATP quantity for the following dates is the same as the latest calculated ATP quantity.  
 
 If not all the dimensions that are used for an item are given when the ATP check is completed, they can still be specified on the issue and receipts. In this case, in the ATP calculation, the receipts and issues must be aggregated to the existing dimensions to reduce the number of receipt and issue lines that are used in the ATP calculation.  
 
-The ATP quantity that is shown is always greater than or equal to 0 (zero). If the calculation returns a negative ATP quantity (for example, if the quantity that was previously promised exceeds the available quantity), the program automatically sets the quantity to **0**.
+The ATP quantity that is shown is always greater than or equal to 0 (zero). If the calculation returns a negative ATP quantity (for example, if the quantity that was previously promised exceeds the available quantity), the program automatically sets the quantity to 0.
 
 ### Example
 
