@@ -56,7 +56,7 @@ To replace a user ID in site builder, follow these steps.
 1. Select **OK**, and then select **Save**. A dialog box will appear to indicate that the records for the user ID provided have been updated. 
 
 > [!NOTE]
-> The system replaces the user ID email address with a randomly-generated string to remove all CMS references to the email address that was entered. This action only affects the history logs referenced within the specific e-Commerce environment (tenant) that is associated with the site builder instance.
+> The system replaces each user ID email address with an anonymized, randomly-generated string to remove all CMS references to the email address. This action only affects the history logs referenced within the specific e-Commerce environment (tenant) that is associated with the site builder instance.
 
 ## Additional resources
 
