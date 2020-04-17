@@ -66,7 +66,7 @@ The message body of your email is composed with HTML. You can use any layout, st
 
 ## Add placeholders
 
-Your email may contain placeholders that are replaced with customer and transaction-specific values when the email is generated. Placeholders are always surrounded by percent (%) characters (for example, %customername%) and are inserted directly into the HTML document. 
+Your email may contain placeholders that are replaced with customer and transaction-specific values when the email is generated. Placeholders are always surrounded by percent (%) characters (for example, **%customername%**) and are inserted directly into the HTML document. 
 
 ### Order header placeholders
 
@@ -95,11 +95,11 @@ Your email may contain placeholders that are replaced with customer and transact
 
 ### Order lines in the message body
 
-When creating the HTML for individual lines in the message body, surround the repeating block of HTML and placeholders for individual lines with the following placeholders within HTML comment tags:
+When creating the HTML for individual order lines in the message body, surround the repeating block of HTML and placeholders for individual lines with the following placeholders within HTML comment tags as follows.
 
 &lt;!--%tablebegin.salesline%--&gt;
 
-Insert HTML that repeats for individual lines here
+*Insert repeating block of HTML and placeholders for individual lines here.*
 
 &lt;!--%tableend.salesline%--&gt;
 
@@ -117,7 +117,7 @@ The following placeholders display information for individual lines in the order
 | linequantity_withoutunit       | Number of units ordered for this line, without the unit of measure |
 | linequantitypicked             | Number of units picked when used with PickOrder event, or zero (0) otherwise |
 | linequantitypicked_withoutunit | Number of units picked when used with the PickOrder event, without the unit of  measure, or zero (0) otherwise |
-| linequantitypacked             | Number of units packed when used with PackOrder and Order ready  for pickup event, [[AR3\]](#_msocom_3) or  zero (0) otherwise |
+| linequantitypacked             | Number of units packed when used with PackOrder and Order ready for pickup event, or zero (0) otherwise |
 | linequantitypacked_withoutuom  | Number of units packed when used with the PackOrder and Order ready for pickup event,  without the unit of measure, or zero (0) otherwise |
 | linequantityshipped            | Always 0 except specific events detailed below               |
 | linequantityshipped_withoutuom | Number of units picked when used with the ShipOrder event, without the unit of  measure, or zero (0) otherwise |
