@@ -5,7 +5,7 @@ title: Customize embedded reports in analytical workspaces
 description: This topic describes how power users can customize the application reports that are embedded in analytical workspaces.
 author: TJVass
 manager: AnnBe
-ms.date: 7/08/2019
+ms.date: 04/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -93,7 +93,7 @@ Follow these steps to restore the analytical workspaces that are bundled with th
 2. To view the updates to the workspace, reload the page. Either move away from the workspace and then return, or refresh your browser.
 3. In the **Compensation management** workspace, select the **Analytics** tab to access the original analytical workspace that was packaged with the application.
 
-## Trouble-shooting
+## Troubleshooting
 
 Follow these steps to address common issues encountered while attempting to use analytical workspaces.
 
@@ -102,6 +102,5 @@ Follow these steps to address common issues encountered while attempting to use 
 The Power BI service requires explicit permission from the user to allow access to hosted content. Use the following steps to ensure the current user is able to connect to reports hosted on PowerBI.com from the application suite.
 
 1. Open any application workspace containing a section titled **Link**. For example, "Bank management".
-2. Click on **Options** and select **Open report catalog** on the top left.
-3. Follow the steps in the dialog to **Authorize to Power BI** to access Finance & Operations for the current user.
-
+2. Select **Options**, and then select **Open report catalog** on the top left.
+3. Follow the steps in the dialog box to **Authorize to Power BI** to access Finance and Operations apps for the current user.
