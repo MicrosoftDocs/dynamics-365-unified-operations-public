@@ -39,13 +39,13 @@ To see how compatible your current setup and data are with the Planning Optimiza
 > [!NOTE]
 > If inconsistencies are found, you can still use Planning Optimization. The results of the fit analysis just show places where the planning service won't honor your current setup. In other words, they show places where some processes might be ignored or might not be supported.
 
-### Analysis results: Example 1
+## Analysis results: Example 1
 
 - **Feature:** Production
 - **Issue:** Items with BOM level greater than zero: 56
 - **Explanation:** The fit analysis found 56 items that have a bill of materials (BOM) setup for production. Because the current version of Planning Optimization doesn't support production, Planning Optimization will generate planned purchase orders instead of planned production orders. It will also show a warning that lists the affected items.
 
-### Analysis results: Example 2
+## Analysis results: Example 2
 
 - **Feature:** Actions
 - **Issue:** Coverage groups with actions calculation enabled: 6
