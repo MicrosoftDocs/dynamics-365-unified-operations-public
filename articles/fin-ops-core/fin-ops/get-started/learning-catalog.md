@@ -3,23 +3,8 @@ title: Learning catalog for Finance and Operations
 description: Find all the training options for Finance and Operations.
 author: loreleishannonmsft
 ms.topic: article
-ms.date: 02/19/2020
+ms.date: 02/28/2020
 ms.author: v-lshann
-
-# optional metadata
- 
-# ms.search.form:  
-audience: Application User
-# ms.devlang: 
-ms.reviewer: margoc
-ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.search.validFrom: 2017-12-31 
-ms.dyn365.ops.version: 7.3
-
 ---
 # Learning catalog for Finance and Operations
 
@@ -36,6 +21,10 @@ Find the right online training, in person workshops, and events for your role as
     Do you decide whether to invest in new technologies? 
 
     [Business and Technical Decision Makers Learning Catalog](learning-catalog-bdm.md#)
+
+    [Get started](learning-catalog-bdm.md#get-started)
+
+    [Exam](learning-catalog-bdm.md#exam)
 
         :::column-end:::
     :::column:::
@@ -56,12 +45,14 @@ Find the right online training, in person workshops, and events for your role as
 
     [Financial management](learning-catalog-business-user.md#financial-management)
 
+    [Exam](learning-catalog-business-user.md#exam)
+
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
 
-        ### Implementation Project Managers
+    ### Implementation Project Managers
 
     Are you in charge of making sure your company’s implementation goes smoothly?
 
@@ -76,6 +67,9 @@ Find the right online training, in person workshops, and events for your role as
     [Manufacturing](learning-catalog-project-manager.md#manufacturing)
 
     [Supply chain managment](learning-catalog-project-manager.md#supply-chain-management)
+
+    [Exams](learning-catalog-project-manager.md#exams)
+
         :::column-end:::
     :::column:::
 
@@ -94,6 +88,8 @@ Find the right online training, in person workshops, and events for your role as
     [Servicing](learning-catalog-administrator.md#servicing)
 
     [Testing](learning-catalog-administrator.md#testing)
+
+    [Exam](learning-catalog-administrator.md#exam)
 
   :::column-end:::
 :::row-end:::
@@ -134,6 +130,8 @@ Find the right online training, in person workshops, and events for your role as
 
     [Supply chain management](learning-catalog-functional-consultant.md#supply-chain-management)
 
+    [Exams](learning-catalog-functional-consultant.md#exams)
+
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -144,6 +142,10 @@ Find the right online training, in person workshops, and events for your role as
     Are you responsible for helping your customers buy the right solution? 
 
     [Microsoft Partner Sales and Marketing Learning Catalog](learning-catalog-partner-sales.md)
+
+    [Get started](learning-catalog-partner-sales.md#get-started)
+
+    [Exam](learning-catalog-partner-sales.md#exam)
 
         :::column-end:::
     :::column:::

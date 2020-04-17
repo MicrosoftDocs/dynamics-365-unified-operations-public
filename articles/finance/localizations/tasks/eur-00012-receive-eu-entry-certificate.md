@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # EUR-00012 Receive an EU entry certificate
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure walks you through registering an EU entry certificate issued by a third-party and received from your customer.
 

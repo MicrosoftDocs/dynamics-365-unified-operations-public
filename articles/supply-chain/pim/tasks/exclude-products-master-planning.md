@@ -4,7 +4,7 @@
 title: Create a product lifecycle state to exclude products from Master planning
 description: This procedure shows how to create a new product lifecycle state that excludes the products from Master planning and BOM-level calculation. 
 author: cvocph 
-manager: AnnBe 
+manager: tfehr 
 ms.date: 12/05/2017
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create a product lifecycle state to exclude products from Master planning
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure shows how to create a new product lifecycle state that excludes the products from Master planning and BOM-level calculation.
 

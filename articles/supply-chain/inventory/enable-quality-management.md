@@ -4,7 +4,7 @@
 title: Quality management overview
 description: This topic describes how you can use quality management in Dynamics 365 Supply Chain Management to help improve product quality within your supply chain.
 author: perlynne
-manager: AnnBe
+manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod:
@@ -17,7 +17,7 @@ ms.search.form: InventTestAssociationTable, InventTestGroup, InventTestItemQuali
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 94003
@@ -310,124 +310,6 @@ In purchasing, if you set the **Event type** field to **Product receipt** and th
 
 - If the **Per updated quantity** option is set to **Yes**, a quality order is generated for every receipt against the purchase order, based on the received quantity and settings in the item sampling. Every time that a quantity is received against the purchase order, new quality orders are generated based on the newly received quantity.
 - If the **Per updated quantity** option is set to **No**, a quality order is generated for the first receipt against the purchase order, based on the received quantity. Additionally, one or more quality orders are created based on the remaining quantity, depending on the tracking dimensions. Quality orders aren't generated for subsequent receipts against the purchase order.
-
-<table>
-<tbody>
-<tr>
-<th>Quality specification</th>
-<th>Per updated quantity</th>
-<th>Per tracking dimension</th>
-<th>Result</th>
-</tr>
-<tr>
-<td>Percentage: 10%</td>
-<td>Yes</td>
-<td>
-<p>Batch number: No</p>
-<p>Serial number: No</p>
-</td>
-<td>
-<p>Order quantity: 100</p>
-<ol>
-<li>Report as finished for 30
-<ul>
-<li>Quality order #1 for 3 (10% of 30)</li>
-</ul>
-</li>
-<li>Report as finished for 70
-<ul>
-<li>Quality order #2 for 7 (10% of the remaining order quantity, which equals 70 in this case)</li>
-</ul>
-</li>
-</ol>
-</td>
-</tr>
-<tr>
-<td>Fixed quantity: 1</td>
-<td>No</td>
-<td>
-<p>Batch number: No</p>
-<p>Serial number: No</p>
-</td>
-<td>Order quantity: 100
-<ol>
-<li>Report as finished for 30
-<ul>
-<li>Quality order #1 is created for 1 (for the first reported-as-finished quantity, which has a fixed value of 1).</li>
-<li>No more quality orders are created against the remaining quantity.</li>
-</ul>
-</li>
-<li>Report as finished for 10
-<ul>
-<li>No quality orders are created.</li>
-</ul>
-</li>
-<li>Report as finished for 60
-<ul>
-<li>No quality orders are created.</li>
-</ul>
-</li>
-</ol>
-</td>
-</tr>
-<tr>
-<td>Fixed quantity: 1</td>
-<td>Yes</td>
-<td>
-<p>Batch number: Yes</p>
-<p>Serial number: Yes</p>
-</td>
-<td>
-<p>Order quantity: 10</p>
-<ol>
-<li>Report as finished for 3
-<ul>
-<li>Quality order #1 for 1 of batch #b1, serial #s1</li>
-<li>Quality order #2 for 1 of batch #b2, serial #s2</li>
-<li>Quality order #3 for 1 of batch #b3, serial #s3</li>
-</ul>
-</li>
-<li>Report as finished for 2
-<ul>
-<li>Quality order #4 for 1 of batch #b4, serial #s4</li>
-<li>Quality order #5 for 1 of batch #b5, serial #s5</li>
-</ul>
-</li>
-</ol>
-<p><strong>Note:</strong> The batch can be reused.</p>
-</td>
-</tr>
-<tr>
-<td>Fixed quantity: 2</td>
-<td>No</td>
-<td>
-<p>Batch number: Yes</p>
-<p>Serial number: Yes</p>
-</td>
-<td>
-<p>Order quantity: 10</p>
-<ol>
-<li>Report as finished for 4
-<ul>
-<li>Quality order #1 for 1 of batch #b1, serial #s1.</li>
-<li>Quality order #2 for 1 of batch #b2, serial #s2.</li>
-<li>Quality order #3 for 1 of batch #b3, serial #s3.</li>
-<li>Quality order #4 for 1 of batch #b4, serial #s4.</li>
-<li>No more quality orders are created against the remaining quantity.</li>
-</ul>
-</li>
-<li>Report as finished for 6
-<ul>
-<li>No quality orders are created.</li>
-</ul>
-</li>
-</ol>
-</td>
-</tr>
-</tbody>
-</table>
-
-<!-- HA: The table above is exactly the same as on the bottom. Please engage Per Lykke, as this is clearly some past editing mistake --> 
 
 ### Production
 

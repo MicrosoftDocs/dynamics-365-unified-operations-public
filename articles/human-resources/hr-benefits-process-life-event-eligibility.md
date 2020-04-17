@@ -5,7 +5,7 @@ title: Process life event eligibility
 description: This article shows you how to run the process for life event eligibility.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Human Resources
 
 # Process life event eligibility
 
-[!include [banner](includes/preview-feature.md)]
-
 This article shows you how to run the process for life event eligibility.
 
 1. In the **Benefits management** workspace, under **Processing**, select **Life event eligibility processing**.
@@ -42,7 +40,7 @@ This article shows you how to run the process for life event eligibility.
 
    | Field | Description |
    | --- | --- |
-   | Enrollment period | The enrollment period to process life event eligibility for. |
+   | **Enrollment period** | The enrollment period to process life event eligibility for. |
 
 3. If you want to run the process in the background, select **Run in the background** and do the following tasks:
 

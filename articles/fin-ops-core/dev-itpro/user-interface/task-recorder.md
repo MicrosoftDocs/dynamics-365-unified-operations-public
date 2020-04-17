@@ -2,10 +2,10 @@
 # required metadata
 
 title: Task recorder resources
-description: This topic describes how to use Task recorder to record client functions.
+description: This topic describes how to use Task recorder to record business processes.
 author: jasongre
 manager: AnnBe
-ms.date: 03/02/2020
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,33 +34,37 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to use Task recorder to record client functions.
+This topic describes how to use Task recorder to record business processes.
 
 ## Overview
 
-### The Task recorder
+### Task recorder
 
-The Task recorder for Finance and Operations apps has high responsiveness, a flexible extensibility application programming interface (API), and seamless integration with consumers of business process recordings. Integration of Task recorder with the [Business process modeler (BPM)](https://bpm.lcs.dynamics.com) tool in Microsoft Dynamics Lifecycle (LCS) has been kept, so that users can continue to produce rich business process diagrams from recordings, and use them to analyze and design their applications.
+Task recorder for Finance and Operations apps is a utility that lets users record business processes for several different use cases. Here are some examples: 
+- Step-by-step guided tours of a specific business process in the application itself 
+- Documentation of a business process as a Microsoft Word document that can optionally include screenshots
+- Regression tests for a business process
+- Automatic playback of a business process in the application
 
-Task recorder can now automatically generate application regression tests from business process recordings and play back previously recorded processes. These new features also include new gestures that let users take full advantage of the powerful new Task recorder.
+Task recorder for Finance and Operations apps boasts high responsiveness, a flexible extensibility application programming interface (API), and seamless integration with consumers of business process recordings. Task recorder is also integrated with the [Business process modeler (BPM)](https://bpm.lcs.dynamics.com) tool in Microsoft Dynamics Lifecycle Services (LCS), so that users can continue to organize their recordings. However, users can no longer produce business process diagrams from recordings.
 
-If you're reading this tutorial for the first time and want to practice the topics as they are discussed, note that Arabic and Roman numerals indicate actionable steps that you should take. Alphabetical entries indicate paragraphs that have helpful details about how to use Task recorder.
+Task recorder can automatically generate application regression tests from business process recordings and play back previously recorded processes. These features also include test-specific gestures that let users take full advantage of Task recorder.
 
 ### Architecture
 
-Task recorder is able to record user actions in the client with exact fidelity. This is achieved by instrumenting each control to notify Task recorder about the execution of a user action. The control notifies Task recorder that an event has occurred and passes along all pertinent information about the corresponding user action in real-time. From this information, Task recorder is able to capture the type of user action (such as a button click, value entry, navigation, etc.) and any data related to the user action (such as input data value and type, form context, record context, etc.). Task recorder persists the information with enough detail to ensure that a playback of the recording can execute the recorded actions exactly as they were executed by the user.
+Task recorder can record user actions in the client with exact fidelity, because every control is instrumented to notify Task recorder about the execution of user actions. The control notifies Task recorder that an event has occurred and passes all the relevant information about the corresponding user action in real time. From this information, Task recorder can capture the type of user action (for example, a button click, value entry, or navigation) and any data that is related to the user action (for example, the input data value and type, form context, or record context). Task recorder persists the information with enough detail to ensure that a playback of the recording can run the recorded actions exactly as they were performed by the user.
 
 ### Basic configuration
 
-Task recorder is pre-installed and users are able to begin recording business processes immediately after opening the client for the first time. Task recorder supports Microsoft Edge, Internet Explorer 11, and the latest version of Google Chrome.
+Task recorder is included with every Finance and Operations app, and lets users begin to record business processes immediately after they open the client for the first time.
 
 > [!IMPORTANT]
 > The **Task guides** tab is currently not available in Commerce or Human Resources. We are currently working to enable this functionality in a future release. Task guides in the Getting Started experience in Human Resources remain available to cover basic functionality. Procedural help is also available on the docs.microsoft.com site ([https://docs.microsoft.com/dynamics365/](../../fin-ops/index.md)) for both Commerce and Human Resources.
 
-## Create a recording
-The following steps show the process for creating a new recording using Task recorder.
+## Start a new recording
+The following steps show how to use Task recorder to start a new recording.
 
-1.  Open the client and log in. It's a good practice to refresh the browser before each new recording. This creates a new user session and restarts Task recorder, providing the most stable recording experience.
+1.  Open the product, and sign in. It's a good practice to refresh the browser before each new recording. A refresh creates a new user session and restarts Task recorder. Therefore, it provides the most stable recording experience.
 2.  Select the company that you want to use while recording. If this is your first time using Task recorder, you can follow along as this tutorial creates a sample recording based on a Fleet Management business process. You will need to load the Fleet demo data to follow along:
     1.  Go to **Dashboard &gt; Fleet Management &gt; Fleet setup**.
     2.  Click **Load demo data**.
@@ -69,39 +73,32 @@ The following steps show the process for creating a new recording using Task rec
 
 3.  Go to **Settings &gt; Task recorder**.
     
-    ![This image shows the location of the Task recorder menu button, which is used to open Task recorder.](./media/taskrecorderguide-taskrecordermenubutton.png)
-    
-4.  The **Task recorder pane** opens. The user may click the "**X**" in the upper-right corner to close the **Task recorder pane** before beginning a new recording. The pane can be reopened by following the previous steps.
+4.  The **Task recorder** pane is opened. You can click the **Close** button (**X**) in the upper-right corner to close the **Task recorder** pane before you begin a new recording. You can reopen the pane by following the previous steps.
         
-5.  Click **Create a new recording**.
+5.  Click **Create recording**.
 6.  Enter a name for the recording and click **Start**. Recording begins the moment **Start** is clicked. For the Fleet example in this tutorial, we'll use the name "Create a new rental reservation."
 
-> [!NOTE]
-> If the **Saved views** feature is enabled, recordings should be created using either published views or the Standard view to ensure that recordings work reliably for users. 
-        
-    During recording, clicking the "**X**" in the upper-right corner will hide the pane without stopping the recording. The pane can be re-opened by clicking the **Task recorder** menu button that appears at the top of the screen. This icon only appears while recording is in progress. 
-    
-    [![This image shows the Task recorder toolbar button which allows opening the Task recorder pane while recording.](./media/taskrecorderguide-taskrecordertoolbarclose.png)](./media/taskrecorderguide-taskrecordertoolbarclose.png)
+    While you're recording, you can click the **Close** button (**X**) in the upper-right corner to hide the **Task recorder** pane without stopping the recording. You can reopen the pane by clicking the **Task recorder** button that appears at the top of the page. This button appears only while recording is in progress. 
 
-7.  The **Task recorder** enters **Recording Mode.** The pane now shows information and controls related to the process of recording. For more information about how to use the buttons shown, see the [section on using the recording controls](#recording-controls).
+    > [!NOTE]
+    > If the **[Saved views](../../fin-ops/get-started/saved-views.md)** feature is turned on, recordings should be created by using either published views or the standard view, to ensure that recordings work reliably for users. 
 
-    [![This image shows what the Task recorder toolbar and Task recorder pane look like during recording.](./media/taskrecorderguide-taskrecorderrecordingmode.png)](./media/taskrecorderguide-taskrecorderrecordingmode.png)
+7.  Task recorder enters **recording mode**. The pane shows information and controls that are related to the process of recording.
 
 Now you're ready to record a business process using Task recorder. If you're following this guide as a first-time user, you may complete the following Fleet Management scenario as an example. Otherwise, you can record your own application scenario.
 
-## Record a Fleet Management scenario
-1.  In the **Task recorder pane**, click **Start task**.
+### Record a Fleet Management scenario
+1.  In the **Task recorder** pane, click **Start sub-task**.
 2.  Set **Name** to "Create a new rental customer". Leave the **Comment** field blank.
-3.  Click **OK**. 
-4.  The task is added to the **Steps list**. 
+3.  Click **OK**. The task is added to the step list. 
 5.  Go to **Dashboard &gt; Fleet Management &gt; Reservation Management**.
 6.  Go to **All customers** under the **Summary** tab.
 7.  In the Action Pane, click **New**.
 8.  Enter a first and last name for the customer.
 9.  Click **Save**.
-10. In the **Task recorder pane**, click **End task**. 
+10. In the **Task recorder** pane, click **End sub-task**. 
 11. Return to the **Reservation Management** workspace by clicking the browser back button twice.
-12. In the **Task recorder pane**, click **Start task**. Name the task "Rent a vehicle to the new customer." Click **Start**.
+12. In the **Task recorder** pane, click **Start sub-task**. Name the task "Rent a vehicle to the new customer". Click **OK**.
 13. Click (**+**) **Rental** under **Summary**.
 14. Under **Information**, select a "1975 Litware McKinley" as the vehicle.
 15. Under **Information**, set the customer to the one just created.
@@ -110,45 +107,42 @@ Now you're ready to record a business process using Task recorder. If you're fol
 18. In the Action Pane, click **Start Rental**.
 19. Set the return date to some date in the future.
 20. Click **OK**.
-21. In the **Task recorder pane**, click **End task**.
-22. In the **Task recorder pane**, click **Stop**.
+21. In the **Task recorder** pane, click **End sub-task**.
+22. Click **Stop** at the very top of the page.
 
-Congratulations! You have created your first task recording. You can proceed to [download the recording, or publish it to LCS](#download-options).
+## Recording a business process
+After you've started your recording, you can perform your business process just as you would typically perform it by using the web client. As you interact with the product, new steps are added to the step list in the **Task recorder** pane. In this section, you will learn about other actions that you can perform while you're recording a business process, to take full advantage of Task recorder's capabilities. 
 
-## Recording controls
 ### Stop
 
-**Stop** is used to end the recording session. Ending the recording session isn't reversible, so the user should be sure that the recording is complete before clicking **Stop**. Clicking **Stop** will take the user to the download options screen.
+**Stop** is used to end the recording session. Before you click **Stop**, you should make sure that the recording is completed, because this action isn't reversible. When you click **Stop**, you're taken to the download options screen.
 
 [![Stop control](./media/taskrecorderguide-taskrecordertoolbarstop.png)](./media/taskrecorderguide-taskrecordertoolbarstop.png)
 
-### Start/End task
+### Start/End sub-task
 
-**Start/End task** enables a user to specify the beginning and ending of a set of grouped steps. Click the **Start task** button to add a "Start task" step to the end of the current list of recorded steps. Then perform the steps that you want to include in the task. After you've performed (and thus recorded) the steps in the task, click the **End task** button to add an "End task" step to the end of the current list of recorded steps.
+**Start/End sub-task** lets a user specify the beginning and end of a set of grouped steps in a recording. Click the **Start sub-task** button to add a "Sub-task" step to the end of the current list of recorded steps. The sub-task will include all steps that you perform from this point until you click the **End sub-task** button. When you click the **End sub-task** button, an "End sub-task" step is also added to the list of recorded steps.
 
-**Note**: You must start your tasks before performing/recording the steps that you want to include in the task. You must end the task after you have performed/recorded all of the steps that you want to include in the task.
+> [!NOTE]
+> You must start a sub-task before you perform/record the steps that you want to include in the task. Then, after you've performed/recorded all the steps that you want to include in the task, you must end the sub-task.
 
-**Tasks** are purely an organization tool, and consumers of business process recording can interpret the task groupings in useful ways. Tasks can be nested within other tasks, providing the flexibility to organize very long and complex business processes. 
-
-[![This image shows the location of the Start and End task buttons, which are used to create task groupings around sets of recorded steps.](./media/taskrecorderguide-taskrecorderrecordingcontrolstasks.png)](./media/taskrecorderguide-taskrecorderrecordingcontrolstasks.png)
-
+Sub-tasks are purely an organization tool, and consumers of business process recordings can interpret the task groupings in useful ways. Because tasks can be nested inside other tasks, they provide the flexibility to organize very long and complex business processes. 
 
 ### Delete/Restore step
 
 **Delete/Restore step** enables a user to remove steps from the recording, or undo the removal of a step from the recording. You must first select the step in the Steps list that you want to delete/restore, and then click the **Delete/Restore step** button.
 
 > [!NOTE]
-> The behavior of the **Delete** button changes when in **Maintenance mode.** When deleting a pending/un-executed step in **Maintenance mode**, the step cannot be restored after playback has progressed past the point at which it would have executed the Deleted step. For example, you load a recording that contains 3 steps in Maintenance mode. Before starting playback, you delete step 2. You can restore step 2, as long as playback has not executed step 3. After you start playback, and playback has "skipped' step 2 (because you deleted it) and executed step 3, you will not be able to restore step 2. This is because step 2 was not executed and thus not recorded, and it cannot be retroactively added back into the recording at its previous position. 
-
-[![Delete button](./media/taskrecorderguide-taskrecorderrecordingcontrolsdelete.png)](./media/taskrecorderguide-taskrecorderrecordingcontrolsdelete.png)
+> The behavior of the **Delete** button changes when you play back a recording. In playback mode, a deleted step can't be restored after playback has passed the point where it would have run the deleted step. For example, you load a recording that contains three steps, and then you delete step 2 before you start playback. You can restore step 2 only as long as playback hasn't run step 3. After you start playback, and playback has "skipped" step 2 (because you deleted it) and run step 3, you won't be able to restore step 2. Because step 2 wasn't run and therefore wasn't recorded, it can't be retroactively added back into the recording at its previous position. 
 
 
-### Add validation
+### Add developer placeholder
 
-**Add validation** lets the user add a placeholder step at the end of the current list of recorded steps. This placeholder step doesn't appear when the task guide is viewed, and it isn't run during maintenance of a recording. It's used only by the [Regression suite automation tool (RSAT)](../perf-test/rsat/rsat-overview.md) or the X++ code generator that enables an X++ test to be created from a task recording. When the code generator creates an X++ test, it automatically adds a method stub to the generated code. The developer can then add X++ code into this method stub. The automated code will call the validation when the generated test is run. The method will be called according to the order in which it was added to the recording.
+**Add developer placeholder** lets the user add a placeholder step to the list of recorded steps. This placeholder step doesn't appear when the task guide is viewed, and it isn't run during maintenance of a recording. It's used only by the [Regression suite automation tool (RSAT)](../perf-test/rsat/rsat-overview.md) or the X++ code generator that enables an X++ test to be created from a task recording. When the code generator creates an X++ test, it automatically adds a method stub to the generated code. The developer can then add X++ code into this method stub. The automated code will call the validation when the generated test is run at the point in the recording where this placeholder was added.
 
-## Adding annotations
-An **annotation** is any additional information that is associated with a step in a task recording. Annotations contain information that is in addition to the information that is automatically recorded by Task recorder.
+## Enriching steps in a recording
+
+There are various options for enriching a step in a recording. For example, you can adjust the text that is associated with a step and add information about a specific step. This section describes the step enrichment capabilities that are available. To access these options, click the **Edit step** button on a specific step of a recording. 
 
 ### Step instruction
 
@@ -160,7 +154,7 @@ This image shows the annotation options for changing a step.
 - **Preferred value instruction** This type of instruction will direct the user to enter the same data that was used when the step was recorded. *Example*: In the First name field, enter 'John'.
 - **Example value label** This type of instruction will direct the user to enter their own data, indicating that the data that was used when the step was recorded was only *Example* data. *Example*: In the First name field, enter a value.
 
-  If the user clicks the **See more** button when on this step of the task guide, they will be able to see the data that was used when the step was recorded. This recorded data value will be labeled as an *Example* data value. 
+   If users click the **See more** button on this step when they play the recording as a task guide, they will be able to see the data that was used when the step was recorded. This recorded data value will be labeled as an *Example* data value. 
    > [!NOTE]
    > Steps that are not related to fields, such as clicking buttons, opening forms, or selecting records from a lookup, do not set *Example value label* as an option when annotating.
    
@@ -175,101 +169,102 @@ This image shows the annotation options for changing a step.
 ### Titles and notes
 
 Titles and notes provide places for user-specified text to be associated with a step in a task guide.
--   **Title** The **Title** lets you specify the text that appears above the **Step Instruction** for this step in the task guide. The **Title** is a good place to put text that you want the user to read before the complete the action that is indicated by the **Step Instruction**.
--   **Note** You can use a **Note** to specify text that appears in the expandable section of the pop-up for this step in the task guide. The note is a good place to put optional reading material or other information that may be useful to the user, but is not required for them to read in order to complete the action that is indicated by the **Step Instruction**.
+- **Title** – The title lets you specify the text that appears above the step instruction for this step in the task guide. The title a good place to put text that you want users to read before they complete the action that is indicated by the step instruction.
+- **Note** – You can use a note to specify text that appears in the expandable section of the pop-up for this step in the task guide. A note is a good place to put optional reading material or other information that might be useful to users, but that they aren't required to read to complete the action that is indicated by the step instruction.
 
-## Hide from task guide
+### Hide from task guide
 
-The **Hide** option allows the author to prevent certain steps from appearing in the task guide. This is useful for hiding steps which are necessary for the task recording to execute in Maintenance mode but should not be seen by the end-user. An example of such steps are copy steps, system-generated steps, and data clean-up steps. Hiding a task will result in all of the steps that are recorded within that task to also be hidden.
+The **Hide this step** option lets the author prevent specific steps from appearing in the task guide. This option is useful for hiding steps that are required for the task recording to run in playback mode, but that should not be seen by users. Examples of these steps include copy steps, system-generated steps, and data clean-up steps. If you hide a sub-task, all the steps that are recorded inside that sub-task will also be hidden.
 
-## Recording gestures
+## Using control gestures
 
-The basic recording capability allows a user to record an end-to-end business process using Task recorder without adding overhead to the process. In some circumstances, more advanced recording features can be leveraged to create even richer business process recordings. Each of the following gestures are triggered by right-clicking on a control in the client that supports the gesture. Each gesture results in a step being added to the list of steps for the recording. If the gesture is not supported for a particular control, then the gesture will not appear in the right-click menu.
+The basic recording capability lets a user record an end-to-end business process by using Task recorder, but without adding overhead to the process. In some circumstances, more advanced recording features can be used to create even richer business process recordings. Each of the following gestures is found under the **Task recorder** option on the shortcut menu (also known as a right-click menu or context menu) for a control and causes a step to be added to the recording. If the gesture isn't supported for a control, it won't appear on the shortcut menu for that control.
 
 ### Copy
 
-This right-click gesture allows copying a control to the Task recorder "clipboard". The control may then be used later as part of a **Paste** or **Validate** gesture.
+The **Copy** gesture lets you copy the value for the current control to the Task recorder "clipboard." That value can then be used later as part of a **Paste** or **Validate** gesture. Because values from multiple controls might have to be pasted, the Task recorder clipboard maintains a list of all control values that have been copied in the recording.
 
 ### Paste
 
-This right-click gesture allows the pasting a value from a previously copied control. The Task recorder paste function operates just like the paste function that users may be familiar with, and it has an additional benefit when used during recordings. During playback of a recording, Task recorder will also re-play the **Copy** and **Paste** commands that were recorded. During playback, if the copied control has a different value than it had during recording, then Task recorder will use the current value when pasting, rather than use the value the copied control had during recording. This is useful in scenarios were the copied control has a value that can change between environments (such as recIDs, number sequences, etc.).
+The **Paste** gesture lets you paste a value from a previous **Copy** gesture in the same recording. The Task recorder paste function works like the standard paste function that users might be familiar with, but it has an additional benefit when it's used during recordings. Because Task recorder will replay the recorded **Copy** and **Paste** commands during playback, if the copied control has a different value than it had during recording, Task recorder will paste the current value instead of the value that the copied control had during recording. This feature is useful in scenarios where the copied control has a value that can change between environments (for example, recID values or number sequences).
 
-There's an additional benefit from using **Copy** and **Paste** when generating test code. For any control whose value is set via the **Paste** action, Task recorder does not need to create a parameterized input variable for that control's value, because it is set based on another control's value. This can be very useful in scenarios where an entity is created, such as a Customer, and an identifier for the Customer is frequently entered during the recording. Instead of needing to manually re-enter the Customer name or ID throughout the scenario, and causing Task recorder to generate a parameterized input variable for each entry, the user can instead repeatedly **Paste** the Customer name/ID after copying it once and Task recorder will generate a single parameterized input variable to represent the Customer name/ID. This feature can make changing the input data for a generated test much easier.
+There is an additional benefit from using the **Copy** and **Paste** gestures when test code is generated. For any control where the value is set via the **Paste** command, Task recorder doesn't have to create a parameterized input variable for that control's value, because it's set based on another control's value. This feature can be very useful in scenarios where an entity such as a customer is created, and an identifier for that entity is frequently entered during the recording. Instead of manually re-entering the customer name or ID throughout the scenario, and causing Task recorder to generate a parameterized input variable for each entry, the user can copy the customer name or ID one time, and then repeatedly paste it. In this case, Task recorder will generate a single parameterized input variable to represent the customer name or ID. This feature can make it much easier to change the input data for a generated test.
 
 ###  Validate
 
-This right-click gesture lets the user insert a step that validates the value of the right-clicked control. **Validate** always uses equality to validate the control value. *Validations aren't currently run during recording playback.* Instead, they are run only when the generated test code is run. Two kinds of validation are available:
+The **Validate** gesture lets you insert a step that validates the value of the targeted control. This gesture always uses equality to validate the control value. *Validations aren't currently run during recording playback.* Instead, they are run only when the generated test code is run. Two kinds of validation are available:
 
--   **Current value validation** will capture the right-clicked control's value at the time of recording and use this value to generate an assertion in the test code. In the list of validation options in the right-click menu, Current Value is always the first.
--   **Reference value validation** will use the value of a previously copied control when generating an assertion in the test code. This allows creating assertions that are resilient to changes in the data, since the value is not hardcoded into the test code. In the list of validation options in the right-click menu, **Reference value validation** follows the format \[AOT name of copied control: current copied value\].
+-   **Current value validation** will capture the targeted control's value at the time of recording and use it to generate an assertion in the test code. In the list of validation options on the shortcut menu, **Current value** is always first.
+-   **Reference value validation** will use the value of a previously copied control when generating an assertion in the test code. This allows creating assertions that are resilient to changes in the data, since the value is not hardcoded into the test code. In the list of validation options on the shortcut menu, **Reference value validation** follows the format \[AOT name of copied control: current copied value\].
 
 ### Add info step
 
-This right-click gesture allows the user to insert a step and supply their own text for the step. This feature is primarily useful for creating task guides. An **Informational Step** is a task guide step where the instruction text for the step are user-specified. **Info steps** are useful for describing actions that are a part of the scenario but must take place outside of the client, such as searching for an item inventory or checking an email for information.
+The **Add info step** gesture lets you insert a step and supply your own text for it. This feature is useful primarily for creating task guides. An **informational step** (or **info step** for short) is a task guide step where the instruction text for the step is user-specified. Info steps are useful for describing actions that are a part of the scenario but must occur outside the client. For example, a scenario might require the user to search for item inventory or check an email for information.
 
-The user can specify where an **Info step** should appear in the task guide. The **Info step** can either point to a control on a form, if the step is associated with the control, or the **Info step** can appear in the upper-right of the form, if the step is external to the client and the step is an explanation that applies to the entire form.
+You can specify where an info step should appear in the task guide. The info step can point to a control on the page, if the step is associated with the control. Alternatively, the info step can appear in the upper right of the page, if the step is external to the client, or if it's an explanation that applies to the whole page.
 
 > [!NOTE]
-> Because **Info steps** are manually specified steps and are not automatically recorded by Task recorder when the user takes an action on a control, the **Info step** does not have the capability to automatically progress when a user completes the step in the task guide. Because the **Info step** is not associated with taking an action in the client, there is no action for a task guide to detect that the user has completed in order to automatically progress to the next step.
+> Because info steps are manually specified steps and are not automatically recorded by Task recorder when the user takes an action on a control, the info step does not have the capability to automatically progress when a user completes the step in the task guide. Because the info step is not associated with taking an action in the client, there is no action for a task guide to detect that the user has completed in order to automatically progress to the next step.
 
-## Download options
-After you select **Stop**, several options are shown for saving files that are related to the completed recording. Select **Save to this PC**, and save the task recording package to your desktop. You will use this file later.
+## Options after a recording is completed
+After you click **Stop** to end your recording session, several options are shown so that you can save the files that are related to the completed recording. Select **Save to this PC**, and save the task recording package to your desktop. You will use this file later.
 
 [![Options for downloading or saving a recording after recording has ended](./media/taskrecorderguide-taskrecorderdownloadoptions.png)](./media/taskrecorderguide-taskrecorderdownloadoptions.png)
 
-### Save the task recording package (Save to this PC)
+### Save to this PC
 
-You should download the task recording package after you finish your recording. The task recording package can be used to play a task guide, maintain the recording, or edit the recording's annotations.
+One option after you finish your recording is to download the task recording package (an .axtr file) to your computer. This file can be loaded later via the **Task recorder** pane, so that the recording can be played as a task guide or edited.
 
-### Save the recording to an LCS library (Save to Lifecycle Services)
+### Save to Lifecycle Services (LCS) 
 
-When you save your recording to an LCS library, the BPM diagram for the recording is published on the specified business process. If the selected LCS library is set as a Help library, you will be able to find the task guide for the recording by searching the **Help** menu.
+When you save your recording to an LCS library, it's published on the specified business process in a BPM library. If the selected LCS library is set as a Help library, you will be able to find the task guide for the recording by searching the **Help** menu.
 
 ### Export as Word document
 
 The Microsoft Word document for your recording contains the recorded steps as well as any screenshots that were captured.
 
-### Download the raw recording file (Save as developer recording)
+### Save as developer recording
 
 The raw recording file (developer recording) is useful for developer scenarios, such as test code generation and scenarios where [RSAT](../perf-test/rsat/rsat-overview.md) is used.
 
-## Maintain a recording
-The **Maintain** functionality of Task recorder can automatically execute the steps of an existing recording, using the forms and values that were originally recorded. The Maintenance mode can be used to update an existing recording after making a change to the underlying application that alters the business process steps that are required for the scenario. It's important to remember that Task recorder is simultaneously re-recording the steps and playing them back when in Maintenance mode. When Maintenance is complete a new recording is produced, which contains any steps from the existing recorded that were executed, as well as any new steps which were manually performed by the user. Any steps that are not executed, whether by the user or automatically by Task recorder, are not included in this new recording. When in Maintenance mode, additional controls are added to the Task recorder Pane. To maintain an existing recording:
+## Playing back a recording 
+The **playback** functionality of Task recorder can automatically run the steps of an existing recording by using the pages and values that were originally recorded. Playback mode can be used to update an existing recording if changes were made to the underlying application, and those changes altered the business process steps that are required for the scenario. It's important to remember that, in this mode, Task recorder simultaneously re-records the steps and plays them back. When the playback is completed, a new recording is produced that reflects both the steps that were run from the existing recording and any new steps that the user manually performed. Any steps that aren't run either by the user or automatically by Task recorder aren't included in this new recording. 
+
+To play back an existing recording, follow these steps.
 1. Refresh the browser tab. 
     > [!NOTE]
-    > It is a good practice to refresh the browser before each new recording. Remember that Maintenance mode also creates a new recording.
+    > It's a good practice to refresh the browser before each new recording.
     
-2. Open the **Task recorder pane**.
-3. Click **Maintain a recording**.
-4. Click **It is in a file I can upload** to load a recording from a previously downloaded Task recorder package (.axtr).
+2. Open the **Task recorder** pane.
+3. Click **Playback recording**.
+4. Click **Open from this PC** to load a recording from a previously downloaded Task recorder package (.axtr file).
    -   If you're reading this guide for the first time and following along, choose the "Create a new rental reservation" file that you downloaded previously.
 
-5. Click **Start** and Task recorder begins recording in Maintenance mode.
+5. Click **Start**.
 
-## Maintenance controls
-### Step
+When you play back a recording, additional actions are available in the **Task recorder** pane.
+### Play next pending step 
 
-**Step** will execute the next step in the recording. Before a step is executed it does not have a step number shown next to its description. After the step is executed, the step number is shown next to the description. **Step** is useful for having greater control of the playback speed when you want to analyze the effects of a single step. It is important to know that a side effect of clicking **Step** is that any open lookups, drop dialogs or Action Pane tabs may be dismissed, since clicking Step removes the focus from these elements. For these situations we suggest using **Play** instead of **Step** to ensure that the element is not dismissed due to clicking Step.
+**Play next pending step** runs the next step in the recording. This action is useful because it gives you more control over the playback speed when you want to analyze the effects of a single step. This action has a side-effect that it's important to be aware of. When you click **Play next pending step**, any open lookups, drop-down dialog boxes, or Action Pane tabs might be dismissed, because this action removes focus from those elements. For these situations, we recommend that you use **Play all pending steps** instead.
 
-### Play
+### Play all pending steps
 
-**Play** will begin sequential execution of the remaining steps in the recording, until Playback is paused, or all steps have been executed. While playing, the **Play** button will become a **Pause** button that can be used to pause playback. This pause button is not to be confused with the pause button under the **Recording** section which controls whether actions are being recorded. The state of recording is independent from the state of playback, and the respective pause buttons function independently of each other. If playback is unable to successfully execute a step for any reason, such as not being able to find a button that has been renamed, Task recorder will skip that step and playback will automatically pause. This provides the user an opportunity to replace the obsolete step by completing the new steps in the client. Task recorder will record the new steps and ignore the step that was skipped. The user can then click **Play** to continue playback for the remaining steps. Once the recording is complete, the user can download the updated recording which will contain all of the steps of the original recording, omitting any skipped steps, and including any new steps.
+**Play all pending steps** begins sequential execution of the remaining steps in the recording, and continues until either playback is paused or all steps have been run. During playback, the **Play all pending steps** button is replaced by a **Pause** button that can be used to pause playback. If playback can't successfully run a step for any reason (for example, because it can't find a button that has been renamed), Task recorder will skip that step, and playback will automatically be paused. In this way, the user has an opportunity to replace the obsolete step by completing the new steps in the client. Task recorder will record the new steps and ignore the step that was skipped. The user can then click **Play all pending steps** to continue playback for the remaining steps. After the recording is completed, the user can download the updated recording. This recording will contain all the steps of the original recording, but will exclude any skipped steps and include any new steps.
 
-To **Skip** a step or *remove* a step from a recording, play back until the step that you want to skip, click **Pause the Recording**, **Step** over the step you want to skip, **Continue Recording** and then **Continue Playback**. Because recording was paused while the step was executed, the step will not be included in the new recording.
+### Play to selected step
 
-### Play until
+**Play to selected step** behaves like **Play all pending steps**, but it lets you play only a subset of the steps instead of all the steps. In the list, select the step that you want playback to stop at, and then click **Play to selected step**. Task recorder will begin to run the steps in the list and will stop when it has run the step that you selected.
 
-**Play until** behaves similarly to **Play**, but allows you to play only a sub-set of the steps, rather than all of the steps. Simply select the step in the list that you want the playback to stop at, and then click **Play until**. Task recorder will begin executing the steps in the list, and it will stop when it has executed the step that you selected.
-
-## Editing features that simplify maintenance
-You can find these features on the **Settings &gt; Task recorder &gt; Edit recording** menu. With these recently added features, you can:
--   Insert steps without re-recording the entire file.
--   Move steps under a sub-task without re-recording the entire file.
--   Collapse Recording name and description fields.
+## Editing a recording
+Although you can edit a recording through the playback functionality, there is also a mode that lets you make simple edits to a recording without having to replay the whole recording. To access this feature, click **Edit recording** after you open the **Task recorder** pane. You can use this feature to make the following edits:
+- Insert steps into a recording without re-recording the whole file.
+- Move steps under a sub-task without re-recording the whole file.
+- Adjust the name and description of the recording.
 
 ### Insert steps without re-recording the entire file
 
-You can now add a step anywhere in a task guide without playing back or re-recording the entire file.
+You can add a step anywhere in a task recording without playing back or re-recording the whole file.
+
 1.  Select the step after which you want the new step to be inserted. Make sure the step is highlighted.
  
     In order for task recorder to insert a step, you must have the correct page open. The correct page is the page on which the new step occurs. Task recorder has a mechanism that determines what the active page is, and will disable the functionality if the correct page isn't open. 
@@ -282,13 +277,13 @@ You can now add a step anywhere in a task guide without playing back or re-recor
 
 2.  Click **Insert step**.
 
-    When you click **Insert step**, Task recorder switches to record mode. Any action taken in the UI will now be recorded and added in-place as steps.
+    When you click **Insert step**, Task recorder switches to recording mode. Any action that is performed in the user interface (UI) will now be recorded and inserted into the recording as steps.
     
 3.  Click **Stop**.
 
-    You can repeat the process, adding as many steps or moving as many sub-tasks as needed (see below for sub-tasks).
+    Recording mode is stopped, and you can now continue to edit the recording. For example, you can repeat this process to insert steps in other places in the recording, or you can move sub-tasks as described in the next section.
 
-4.  When you are done editing the task guide, click **Done editing**, and then choose one of the options to save or publish the task guide.
+4.  When you've finished editing the task recording, click **Done editing**, and then select one of the options to save or publish the recording.
 
 ### Move steps under a sub-task without re-recording the entire file
 
@@ -296,44 +291,30 @@ You can move steps under a sub-task without playing back or re-recording the ent
 
 1.  Select the step or sub-task step that you want to move. Make sure that the step is highlighted.
 
-2.  Click **… &gt; Move step after**.
+2.  Click **Move step after**. To access this command, you might have to select the ellipsis (**...**) button.
 
     [![Example of Move step after](./media/taskguide3.png)](./media/taskguide3.png)
 
 3.  Select the step or sub-task step that you want to move the step or sub-task step after. Task recorder will move the step.
 
-4.  To move the end sub-task step, select it, click **… &gt; Move step after**, and then select the step after which you want the end sub-task step to be.
+4.  To move the end sub-task step, select it, click **Move step after**, and then select the step that you want the end sub-task step to be after.
 
     If you want the first step in the task guide to be within a sub-task, create a sub-task step as the second step, and then move the first step into it. You can add or move as many steps or sub-tasks as needed.
 
-5.  When you are done editing the task guide, click **Done editing**, and then choose one of the options to save or publish the task guide.
+5.  When you've finished editing the task recording, click **Done editing**, and then select one of the options to save or publish the recording.
 
-### Collapse recording name and description
+### Adjust the recording name and description
 
-You can expand and collapse the **Recording name** and **Recording description** fields. When these fields are collapsed, more steps will be visible in the Task recorder editing pane. 
+You can adjust values of the **Recording name** and **Recording description** fields. If you want to see more steps in the Task recorder editing pane, you can also collapse the section that shows the recording name and description.
 
 [![Expand and collapse recording name and description](./media/taskguide4-300x252.png)](./media/taskguide4.png)
 
-## Advanced recording options
+## Playing a task guide
 
-### Advanced grid row selection
-
-In order for Task recorder to reliably select the correct grid rows during test playback, it needs the user to explicitly define filtering criteria that produce only the intended records. Task recorder can't reliably use mechanisms like the grid row index or recID, as these can vary between environments and between test executions. 
-
-While recording, after opening a form that contains a grid and selecting a record in the grid, the **Task recorder grid row selection dialog** will appear. The dialog will look similar to the filter pane, and will be pre-populated with Task recorder's "best guess" as to which filter criteria uniquely identify the row that you have selected. 
-
-After verifying Task recorder's "best guess", press **Apply** to have Task recorder remember the filter criteria and select the specified row in the grid. There are some cases in which Task recorder will fail to find filter criteria that uniquely identifies the row you've clicked. When these situations occur, the list of filters will be empty when the dialog appears. The user can manually define filters that uniquely identify the row, or the user can choose to have row selection recorded based on the row's index in the grid.
-
-### Rollback changes to business data
-
-The **Rollback changes to business data** option will revert any business data that is created during recording when the recording is completed. This option is primarily for enabling developer scenarios related to creating task recordings to be used as tests. The **Rollback** mechanism will only rollback records that are created during the recording session. It will not rollback changes made to existing recordings, nor will it rollback deletions made to existing records. In addition, because of security concerns, the **Rollback** mechanism is only available for use on non-production systems where the Test tools, including the Test models, have been installed.
-
-### Playing a task guide
-
-A task guide is an end-user focused experience that allows the user to follow a guided step-by-step set of instructions for how to complete a business scenario that is contained in a task recording. The user is instructed to complete each step by way of a pop-up prompt, which will animate across the form and point to the UI element that the user should interact with, and also inform the user about how to interact with the element, such as by saying "Click here" or "In this field, enter data". Each step that the user is instructed to complete is based on the step that was originally recorded in the task recording file that the task guide is based on. Since the task recording file contains the data that describes the step that was originally recorded, the task guide is able to automatically detect when the user has completed the step as expected. When the task guide recognizes that the user has completed the step, the task guide automatically progresses to the next step. 
+A **task guide** is a user-focused experience that lets the user follow a guided step-by-step set of instructions to complete a business scenario by using a task recording. The user is instructed to complete each step through an animated pop-up prompt that will move across the page and point to the UI element that the user should interact with. The prompt will also tell the user how to interact with the element. For example, it might state, "Click here" or "In this field, enter data." Each step that the user is instructed to complete is based on a step that was originally recorded in the task recording. Because the task recording file contains the data that describes the step that was originally recorded, the task guide can automatically determine when the user has completed the step as expected. It then automatically moves on to the next step. 
 
 > [!NOTE]
-> One of the ways the task guide recognizes that a user has completed a step is by detecting when the value in a field has changed. While the task guide does not require that specific values be set, it does require that the field value is changed in order to detect that the step was completed. In order to detect that the field value was changed, the user much first change the value and then press the Tab key or click in an area outside of the UI element. Only after pressing Tab or clicking outside of the UI element does the client recognize that the field value has been changed, and proceed to run any necessary application validation or business logic. The task guide relies on the client to recognize that the field value has been changed before it can detect that the step was completed by the user.
+> One way that the task guide determines that a user has completed a step is by detecting when the value in a field has changed. Although the task guide doesn't require that a specific value be set, it does require that the field value be changed in order to determine that the step was completed. The user must change the field value, and then press the **Tab** key or click in an area outside the UI element. Only at that point does the client detect that the field value has changed, and it can then proceed to run any required application validation or business logic. Therefore, before the task guide can determine that the step was completed by the user, it relies on the client to detect that the field value has changed.
 
 ### What can a task guide allow a user to do?
 
@@ -349,12 +330,12 @@ By default, when a user begins a task guide, they are placed "on-rails". These "
 
 While a user is prohibited from *clicking* on other elements, the user is not prevented from tabbing through the other controls on the form, and the user is not prevented from using keyboard shortcuts. This is by design, as the "on-rails" feature is designed for and targeted at first-time users, who are expected to primarily use the mouse as they become familiar with the application. 
 
-More advanced/experienced users are able to turn off the "on-rails" feature when they complete a task guide. At any time during the task guide, the "rails" can be taken off by clicking the "Unlock" button that appears in the Task recorder toolbar at the top of the page. You can also use this button to restore the "rails" at any point during the task guide. The "on-rails" feature may be turned off automatically by the task guide under certain circumstances. When the rails are off, the user is able to click on UI elements in the same manner as when the task guide is not running. The "on-rails" feature may be turned off automatically in the following cases:
+More advanced or experienced users can turn off the "on-rails" feature when they complete a task guide. At any point during the task guide, these users can turn off the rails by clicking the **Unlock** button that appears on the Task recorder toolbar at the top of the page. This button can also be used to restore the rails at any point during the task guide. In some situations, the task guide might automatically turn off the "on-rails" feature. When the rails are turned off, the user can click UI elements just as they do when the task guide isn't running. The "on-rails" feature might be automatically turned off in the following situations:
 
--   The user is being directed to navigate to form using the Navigation Menu or the Search bar
-    -   Because the user is free to use either entry point, the task guide does not point to a specific entry point, and does not prevent the user from use either entry point.
--   The task guide enters an Error state (see below for a list of error states).
--   The task guide is displaying an Informational Step.
+-   The user is being directed to go to a page by using the navigation pane or navigation search.
+    -   Because the user can use either entry point, the task guide doesn't point to a specific entry point, and it doesn't prevent the user from using either entry point.
+-   The task guide enters an error state (see the next section for a list of error states).
+-   The task guide is showing an info step.
 
 ### Error detection
 
@@ -362,11 +343,11 @@ An *error state* occurs when the task guide is not able to point to the UI eleme
 
 #### The control is not visible on the form
 
-*This error state usually occurs when the user has opened or closed  the incorrect tab page, FastTab, collapsible section, FactBox, or pop-out menu.*
+*This error state usually occurs when the user has opened or closed the incorrect tab, FastTab, collapsible section, FactBox, or pop-out menu.*
 
 Because the UI element that is needed for the current step is somewhere on the current form, but it is not visible on the screen, the task guide pop-up will simply move to the upper-right side of the screen while displaying the same instruction that informs the user of the action they need to take.
 
-Because the task guide cannot locate the UI element on the screen, the user will need to manually identify what is hiding from the UI element. After the user has made the UI element visible on the screen, the task guide pop-up will automatically recognize that the element is visible, and it will re-locate so that it is again pointing at the now-visible UI element.
+Because the task guide can't find the UI element on the screen, the user must manually determine what is causing the UI element to be hidden and then make the element visible on the screen. The task guide pop-up will automatically detect that the UI element is visible and will reposition itself so that it's pointing at the now-visible element.
 
 #### The control is not on the form
 
@@ -376,77 +357,84 @@ Because the UI element is not visible on the screen, the task guide pop-up will 
 
 In some cases, the task guide pop-up will not mention the form by name. This is because the user may need to navigate to a dynamic form. A dynamic form is a form that is not modeled, frequently known as a runtime-generated form. These sorts of forms do not have a proper name. Some examples of runtime-generated forms include simple and custom lookups. The way for a user to navigate to a lookup form is to re-open the lookup.
 
-### Next & previous step
+### Next step and Previous step
 
-These buttons appear on the task guide pop-up and allow a user to manually control the flow of the task guide. When clicking the Next or Previous step, the task guide will move to the next or previous step in the guide. The task guide does not check whether the user has completed a step before going to the next or previous step. 
+The **Next step** and **Previous step** buttons appear in the task guide pop-up and let a user manually control the flow of the task guide. When these buttons are clicked, the task guide will go to the next or previous step. The task guide doesn't verify that the user has completed a step before it goes to the next or previous step. 
 
-The task guide also ***never*** automatically completes any step for the user, even when using the Next and Previous Step options. Using the Next and Previous step buttons can result in producing an error state, if the previous or next step refers to a UI element that is on the current form. When the user is completing an Informational Step, the only way to proceed is to use the Next step button. This is required because an Informational Step does not represent an action that was recorded on any UI element. Since no action was recorded in the task recording, the task guide does not have the information necessary to know what action to expect the user to complete.
+The task guide **never** automatically completes any step for the user, even when the **Next step** and **Previous step** buttons are used. Use of these buttons can cause an error state if the previous or next step refers to a UI element that isn't on the current page. When the user is completing an info step, the only way to proceed is to use the **Next step** button. This action is required because an info step doesn't represent an action that was recorded on any UI element. Because no action was recorded in the task recording, the task guide doesn't have the necessary information to determine what action it should expect the user to complete.
 
-### The "See more" button
+### The See more button
 
-Clicking this button will expand the task guide pop-up to show additional information related to the step. The additional information is often optional reading material that is not required for the user to successfully complete the step. In the additional information, the user may see:
+When the **See more** button is clicked, the task guide pop-up expands to show additional information that is related to the step. The additional information is often optional reading material that isn't required for the user to successfully complete the step. The following information might be included:
 
 -   An **Example** value
     -   The Example value is the value that was originally used when the task recording was created.
-    -   Example values only appear for steps that use non-lookup fields. This includes text fields, number fields, date fields combo boxes, and check boxes.
+    -   Example values appear only for steps that use non-lookup fields. These fields include text fields, number fields, date fields, combo boxes, and check boxes.
 -   A **Note**
     -   A Note may contain scenario-specific information that will help provide context to the user about the current step of the task guide.
 
-## Screenshot extension setup 
+## Taking screenshots in Task recorder
 
-### Document generation setup (optional)
+By using a **pre-release** Chromium browser extension that works for both the new (Chromium-based) Microsoft Edge browser and Google Chrome, Task recorder can take screenshots of the browser as a user records a business process. After the user completes the recording, Task recorder can use these screenshots to generate Microsoft Word documents. To turn on this functionality, follow these steps to install the pre-release Chromium extension that enables Task recorder to take screenshots during recording.
 
-Using a **pre-release** Chrome extension, Task recorder is able to take screenshots of the browser as a user records a business process. After the user completes the recording, Task recorder can then use these screenshots to generate Microsoft Word documents. To enable this functionality, follow the steps below to install the pre-release Google Chrome extension that enables Task recorder to capture screenshots during recording.
+1.  Download the **FMLabTaskRecorderScreenshot** folder that contains the extension from GitHub, at <https://github.com/Microsoft/FMLab>.
+2.  **On-premises deployments only:** Adjust the manifest for the extension so that it matches the following code. Replace \<hostname\> with the base URL for your environment.
 
-1.  Open Google Chrome.
-2.  Go to **Menu &gt; More tools &gt; Extensions**. 
+    ```xpp
+    ...
+    "content_scripts": [
+        {
+            "matches": ["https://*.dynamics.com/*", "<hostname>"],
+            "js": ["screenshot.js"]
+        }
+        ...
+    ```
+
+3.  Open the new (Chromium-based) Microsoft Edge browser or Google Chrome.
+4.  Select **Settings and more &gt; Extensions"** in Microsoft Edge (or **Customize and control Google Chrome &gt; More tools &gt; Extensions** in Google Chrome).
 
     ![This image shows the location of the Extensions menu in Google Chrome.](./media/taskrecorderguide-googlechromeextensionsmenu.png) 
 
-3.  Select the **Developer mode** box.
-4.  Click **Load unpacked extension**.
-5.  Browse to the folder containing the Task recorder extension, select the folder, and click **OK**. The extension is loaded. 
+5.  Select the **Developer mode** box.
+6.  Click **Load unpacked extension**.
+7.  Browse to the folder that contains the Task recorder extension, select the folder, and then click **OK**.
+8.  Make sure that the **Enabled** box is selected, so that extension is turned on.
+9.  Restart the browser.
 
-    Ensure that the **Enabled** box is selected to turn the extension on. With a locally hosted developer machine, the extension should be located at &lt;local disk&gt;FMLabTaskRecorderScreenshot. Otherwise, you can download the FMLab folder which contains the extension from GitHub at <https://github.com/Microsoft/FMLab>.
-
-6.  Restart Chrome.
-
-Task recorder will now take screenshots of the tab that has the client running. These screenshots are only available for a certain period of time after the recording has been played. Starting in Platform Update 16, screenshots are available for a week after playback. Prior to that, the screenshots are only available for 15 minutes. If the screenshots have expired, you can regenerate them by playing the task recording again.  
+Task recorder will now take screenshots of the tab where the client is running. These screenshots are available for one week after the recording has been played. (If you're running a platform version that is earlier than Platform update 16, the screenshots are available for only 15 minutes.) If the screenshots have expired, you can regenerate them by playing the task recording again.
 
 Note that Task recorder **does not** capture screenshots from other tabs or of the user's desktop.
 
-## Test generation
+## Generating tests from a recording
 
-After completing a business process recording using Task recorder, a developer may import the recording file (.xml) into Visual Studio to create an X++ test. The Task recorder Import Tool is able to generate a human-readable X++ test that translates any Recording gestures, Validations, or tasks into the appropriate test code. 
-
-<!-- The Task Recorder Import Tool is able to generate a human-readable X++ test that translates any [Recording gestures](http://happydev/BabySteps/Pages/CTP6%20Platform%20HOLs%20and%20Docs/Task%20Recorder%20Guide%20-%20External.docx#_Recording_gestures), [Validations](http://happydev/BabySteps/Pages/CTP6%20Platform%20HOLs%20and%20Docs/Task%20Recorder%20Guide%20-%20External.docx#_Recording_controls) or [Tasks](http://happydev/BabySteps/Pages/CTP6%20Platform%20HOLs%20and%20Docs/Task%20Recorder%20Guide%20-%20External.docx#_Recording_controls) into the appropriate test code. -->
+After a business process recording has been completed by using Task recorder, a developer can import the raw developer recording file (.xml file) into Visual Studio to create an X++ test. The import tool generates a human-readable X++ test from the recording, and translates any control gestures, validations, or tasks into the appropriate test code. 
 
 ### Import a recorded test
 
-1.  Open Visual Studio with the **Dynamics development tools**.
-2.  **Go to Dynamics &gt; Addins &gt; Import task recording**.
+1.  Open Visual Studio by using the Finance and Operations development tools.
+2.  Go to **Dynamics 365 &gt; Addins &gt; Import task recording**.
 3.  In the **Import task recording** menu, use the **Browse** button to locate a previously downloaded recording file.
 4.  Optionally, choose to have the generated test code be added to the startup project. This requires that a solution containing a project is set as the startup project. This will place the generated X++ test into the same model as the project.
-5.  If creating a new project, select the Model for the project. The generated X++ test will be placed in this model. The model needs to have references to the TestEssentials model for the generated test to build successfully.
+5.  If you're creating a new project, select the model for the project. The generated X++ test will be put in this model. For the generated test to be successfully built, the model must have references to the **TestEssentials** model.
 6.  Click **Import**.
 
     [![Import task recording dialog box](./media/importnewproject_taskrecorderguide.png)](./media/importnewproject_taskrecorderguide.png)
 
 7.  In the **New Project** dialog box, provide a name for the project.
 8.  After the project is created, the user can open and inspect the generated code.
-9.  To run the test, **BUILD** the project.
+9.  To run the test, build the project.
 10. Go to **Test &gt; Windows &gt;Test Explorer**.
 
-## Work in progress
+## Appendix
 
 ### Controls that are known to have incomplete support for Task recorder
 
 -   Table
 -   Filter pane, which is the filter that pops out from the left side
     -   When adding filters to the filter pane, the steps are delayed. The steps do not get recorded until the user clicks "Apply" on the Filter pane.
--   Enhanced Previews
+-   Enhanced previews
     -   No planned support for recording gestures inside of enhanced previews. While recording, enhanced previews will be disabled.
--   All extensible controls are unsupported (except Segmented Entry)
+-   No extensible controls are supported out of the box, except Segmented Entry.
     -   Extensible control owners need to individually build support for Task recorder.
 
 ### Controls that can be recorded, but have limited support for the Copy/Paste/Validate gestures
@@ -462,7 +450,7 @@ After completing a business process recording using Task recorder, a developer m
 
 ### Controls that are known to have incomplete support for being used in a task guide
 
-- Filter, which is the Quick filter that appears above lists
+- Quick Filter, which is the filter control that appears above lists
   -   Does not support displaying a "generic value" during the task guide. Currently displays the value that was used during recording.
 - Filter pane, which is the filter that pops out from the left side
   -   The task guide does not point to the individual elements within the Filter pane that need to be clicked on.

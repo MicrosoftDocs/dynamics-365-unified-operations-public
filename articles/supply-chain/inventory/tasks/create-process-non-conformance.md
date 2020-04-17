@@ -4,7 +4,7 @@
 title: Create and process a conformance
 description: This topic explains how to perform nonconformance management, based on an existing quality order.
 author: perlynne
-manager: AnnBe
+manager: tfehr
 ms.date: 08/07/2019
 ms.topic: business-process
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Operations
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,9 +28,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create and process a conformance
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-This topic explains how to perform nonconformance management, based on an existing quality order. You can run this recording in the USMF demo company and can use the suggested values. Typically, this procedure is performed by a quality clerk.  As a prerequisite, complete the instructions in [Inspect the quality of goods](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/supply-chain/inventory/tasks/inspect-quality-goods.md). To process the approval of a nonconformance, the user who runs the task recording must have a “Name” value assigned on the Users page. To use the document notes, the user must also have Document handling activated in the user options.
+This topic explains how to perform nonconformance management, based on an existing quality order. You can run this recording in the USMF demo company and can use the suggested values. Typically, this procedure is performed by a quality clerk.  As a prerequisite, complete the instructions in [Inspect the quality of goods](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/supply-chain/inventory/tasks/inspect-quality-goods.md). To process the approval of a nonconformance, the user who runs the task recording must have a "Name" value assigned on the Users page. To use the document notes, the user must also have Document handling activated in the user options.
 
 
 ## Select a quality order

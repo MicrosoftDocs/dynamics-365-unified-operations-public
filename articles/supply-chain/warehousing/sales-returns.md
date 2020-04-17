@@ -4,7 +4,7 @@
 title: Sales returns
 description: This topic provides information about the process for return orders. It includes information about customer returns and their effect on costing and on-hand inventory quantities.
 author: omulvad
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ ms.search.form: ReturnTableListPage
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269384

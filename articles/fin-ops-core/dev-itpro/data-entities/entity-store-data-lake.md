@@ -5,7 +5,7 @@ title: Make Entity store available as a Data Lake
 description: This topic explains how to make Entity store available as a Microsoft Azure Data Lake.
 author: MilindaV2
 manager: AnnBe
-ms.date: 02/18/2020
+ms.date: 03/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,8 +34,6 @@ ms.dyn365.ops.version: Platform Update 23
 # Make Entity store available as a Data Lake
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/private-preview-banner.md)]
 
 > [!IMPORTANT]
 > This feature is currently in public preview. This feature is comprised of the following components:

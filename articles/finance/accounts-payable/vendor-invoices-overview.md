@@ -33,7 +33,6 @@ ms.dyn365.ops.version: AX 7.0.0
 # Vendor invoices overview
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic provides general information about vendor invoices. Vendor invoices are requests for payment for products and services that were received. Vendor invoices can represent a bill for ongoing services, or they can be based on purchase orders for specific items and services.
 
@@ -50,7 +49,7 @@ There are several ways to enter a vendor invoice:
 - Together with the vendor invoice pool, the vendor invoice register lets you quickly enter invoices to accrue the expense. You can open the associated purchase orders later to post the invoice against the expense account.
 - The **Open vendor invoices** and **Pending vendor invoices** pages let you create vendor invoices from confirmed purchase orders.
 
-The following discussion provide more information about how to use the **Open vendor invoices** or **Pending vendor invoices** page to create a vendor invoice from a purchase order.
+The following discussion provides more information about how to use the **Open vendor invoices** or **Pending vendor invoices** page to create a vendor invoice from a purchase order.
 
 ## Understanding invoice line quantities
 
@@ -94,17 +93,19 @@ This option assumes that at least one product receipt has been posted for the pu
 
 For more information, see [Record vendor invoice and match against received quantity](../accounts-payable/tasks/record-vendor-invoice-match-against-received-quantity.md).
 
-## Configure an automated task for vendor invoice workflow
+## Configure an automated task for vendor invoice workflow to post the vendor invoice using a batch job
 
 You can add an automated posting task to the Vendor invoice workflow so that invoices are processed in a batch. Posting invoices in a batch lets the workflow process continue without having to wait for the posting to finish, which improves the overall performance of all the tasks submitted to the workflow.
 
-The **Post the vendor invoice using a batch** task must not be used in the same workflow as the **Post vendor invoices** automated task. Also, the **Post the vendor invoice using a batch** task should be the last element in the workflow configuration.
+To post a vendor invoice in a batch, on the **Feature management** page, turn on the **Vendor invoice batch posting** parameter. Vendor invoice workflows are configured by going to **Accounts payable > Setup > Accounts payable workflows**.
 
-To post a vendor invoice in a batch, on the **Feature management** page, turn on the **Add an automated task to the Vendor invoice workflow for posting the vendor invoice using a batch job** parameter. Vendor invoice workflows are configured by going to **Accounts payable > Setup > Accounts payable workflows**. 
+You can see the **Post the vendor invoice using a batch** task in the workflow editor, regardless of whether the feature parameter, **Vendor invoice batch posting**, is enabled. When the feature parameter is not enabled, an invoice that contains the **Post the vendor invoice using a batch task** won't process in workflow until the parameter is enabled. The **Post the vendor invoice using a batch** task must not be used in the same workflow as the **Post vendor invoices** automated task. Also, the **Post the vendor invoice using a batch** task should be the last element in the workflow configuration.
+
+You can specify the number of invoices to include in the batch, and the number of hours to wait before rescheduling a batch, by going to **Accounts payable > Setup > Accounts payable parameters > Invoice > Invoice workflow**. 
 
 ## Working with multiple invoices
 
-You can work with multiple invoices at the same time and post them all at the same time. If you must create multiple invoices, use the **Pending vendor invoices** page. If you must post and print multiple vendor invoices, use the invoice approval journal. If you're using the invoice approval journal, at least one product receipt must be posted for the purchase order, and an invoice for the purchase order must be posted in an invoice register. The financial information for the invoice comes from the invoice that was posted in the register.
+You can work with multiple invoices at the same time and post all of them  at the same time. If you need to create multiple invoices, use the **Pending vendor invoices** page. If you must post and print multiple vendor invoices, use the invoice approval journal. If you're using the invoice approval journal, at least one product receipt must be posted for the purchase order, and an invoice for the purchase order must be posted in an invoice register. The financial information for the invoice comes from the invoice that was posted in the register.
 
 ## Recovering vendor invoices that are being used
 

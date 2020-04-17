@@ -4,7 +4,7 @@
 title: Calculate kanban quantity suggestions
 description: This procedure focuses on optimizing the kanban size and quantities for a specific kanban rule by using the kanban quantity calculation. 
 author: ChristianRytt
-manager: AnnBe 
+manager: tfehr 
 ms.date: 11/11/2016
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Calculate kanban quantity suggestions
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure focuses on optimizing the kanban size and quantities for a specific kanban rule by using the kanban quantity calculation. The demo data company used to create this procedure is USMF. This procedure is intended for the value stream manager. It is a prerequisite that you have completed the procedure Add a new kanban quantity calculation policy to a kanban rule.
 

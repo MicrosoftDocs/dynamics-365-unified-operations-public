@@ -4,7 +4,7 @@
 title: Set up quality orders
 description: This procedure shows you how to enable a quality management process where incoming inventory must be inspected immediately after arrival registration. 
 author: perlynne
-manager: AnnBe 
+manager: tfehr 
 ms.date: 07/01/2019
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: InventParameters, InventTestReportSetup, InventTestTable, DefaultDashboard, InventTestVariable, InventTestVariableOutcome, InventItemSampling, InventTestQualityGroup, InventTestItemQualityGroupAdd, SysQueryForm, InventTestItemQualityGroup, InventTestGroup, InventTestAssociationTable   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Set up quality orders
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure shows you how to enable a quality management process where incoming inventory must be inspected immediately after arrival registration. The procedure will typically be carried out by a quality manager. The process includes the creation of a quality group, to define the items that are going to be sampled, and a test group to group the tests that are to be performed on items in the quality group. You can run this guide in the USMF demo data company.
 

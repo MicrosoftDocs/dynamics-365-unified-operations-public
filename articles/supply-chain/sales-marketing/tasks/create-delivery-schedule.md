@@ -4,7 +4,7 @@
 title: Create delivery schedule
 description: This procedure demonstrates how to create a delivery schedule for a sales order. 
 author: omulvad
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, SalesDeliverySchedule, SalesEditLines,  SrsReportViewerForm   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create delivery schedule
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure demonstrates how to create a delivery schedule for a sales order. A delivery schedule is used when a quantity on an order or a quotation is requested to be delivered in multiple shipments. You can run this procedure in demo data company USMF or on your own data.
 
@@ -43,15 +43,15 @@ This procedure demonstrates how to create a delivery schedule for a sales order.
 7. Click Sales order line.
 8. Click Delivery schedule.
     * The Delivery schedule page is the place where you can specify the number of shipments in which the total quantity of the order line will be delivered to the customer.    
-    * By default, the system copies the total quantity and other delivery details of the original sales line into the first delivery schedule line. In this example, we’ll create a schedule for two shipments, with the second shipment's date offset by a week from the first one.  
+    * By default, the system copies the total quantity and other delivery details of the original sales line into the first delivery schedule line. In this example, we'll create a schedule for two shipments, with the second shipment's date offset by a week from the first one.  
 9. In the Quantity field, enter a number that is part of the total quantity.
 10. Click New.
 11. In the Quantity field, enter the remaining quantity.
 12. In the Requested ship date field, enter a date a date that is one week ahead from the date of the first delivery line.
-    * The two options on the Charges conversion FastTab control how you want the charges to be distributed across the delivery schedule lines, once they’ve been assigned to the original order line. If you select Copy gross amounts, the same charge amount is copied to each line. The Allocate to delivery lines option divides the charge equally across the delivery lines.  
+    * The two options on the Charges conversion FastTab control how you want the charges to be distributed across the delivery schedule lines, once they've been assigned to the original order line. If you select Copy gross amounts, the same charge amount is copied to each line. The Allocate to delivery lines option divides the charge equally across the delivery lines.  
     * Only fixed charges can be divided, whereas variable charges will still be copied to the lines.  
 13. Move the cursor away from the second delivery line to update the page.
-    * You can keep track of the total quantity that’s allocated to the delivery schedule lines by looking at the Total and Remaining fields. When the remaining quantity is zero, the full quantity from the original line has been allocated to the schedule.   
+    * You can keep track of the total quantity that's allocated to the delivery schedule lines by looking at the Total and Remaining fields. When the remaining quantity is zero, the full quantity from the original line has been allocated to the schedule.   
 14. Click OK.
     * The delivery schedule has now been copied to the order lines.   
     * The original order line, referred to as a Commercial line, has been converted to an Order line with multiple deliveries. It is marked with a distinct icon and acts as a header for the delivery lines.  

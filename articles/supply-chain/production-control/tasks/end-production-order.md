@@ -4,7 +4,7 @@
 title: End a production order
 description: This procedure shows how to end a production order.
 author: johanhoffmann
-manager: AnnBe
+manager: tfehr
 ms.date: 11/11/2016
 ms.topic: business-process
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Operations
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # End a production order
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure shows how to end a production order. The demo data company used to create this procedure is USMF. This is the final procedure out of seven which explains the production order lifecycle.
 

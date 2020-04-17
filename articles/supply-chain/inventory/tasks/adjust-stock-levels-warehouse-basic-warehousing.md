@@ -4,7 +4,7 @@
 title: Adjust stock levels in the warehouse (basic warehousing)
 description: This procedure walks you through the process of creating and posting an inventory adjustment journal in order to adjust stock levels of products in the warehouse. 
 author: MarkusFogelberg
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: InventJournalLossProfit, InventJournalCreate, InventLocationIdLookup   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Adjust stock levels in the warehouse (basic warehousing)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure walks you through the process of creating and posting an inventory adjustment journal in order to adjust stock levels of products in the warehouse. You need to have an inventory journal name set up for inventory adjustments before you start this. You can walk through this procedure in demo data company USMF, or using your own data. These tasks would normally be carried out by a warehouse employee.
 

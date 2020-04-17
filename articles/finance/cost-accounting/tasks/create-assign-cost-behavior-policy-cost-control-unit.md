@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create and assign a cost behavior policy to a cost control unit
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Cost behavior is the classification of costs as either fixed or variable. A policy and the corresponding rules have to be assigned to a cost control unit for the policy to become effective. Use this procedure to create a policy and then assign the policy to a cost control unit.
 

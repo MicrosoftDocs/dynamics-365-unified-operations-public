@@ -4,7 +4,7 @@
 title: Create service agreements
 description: This topic describes how to use features in the Service management and the Project management and accounting modules to create service agreements.
 author: ShylaThompson
-manager: AnnBe
+manager: tfehr
 ms.date: 02/19/2018
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ ms.search.form: SMAAgreementTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 

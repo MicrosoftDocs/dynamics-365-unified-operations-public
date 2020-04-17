@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Hire existing employees through recruitment
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Sometimes open positions can be filled by candidates who are already employees in your organization. This procedure walks through the steps of hiring an existing employee through the recruiting process. In this procedure, a recruitment project has already been set up, and an existing employee has already submitted an application for the recruitment project. The demo data company used to create this procedure is USMF.
 

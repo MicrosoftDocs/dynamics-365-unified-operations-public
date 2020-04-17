@@ -5,7 +5,7 @@ title: Test recorder and Regression suite automation tool for Cloud POS
 description: This topic explains how to automate user acceptance testing (UAT) by using the POS test recorder and the Regression suite automation tool (RSAT).
 author: mugunthanm
 manager: AnnBe
-ms.date: 10/15/2019
+ms.date: 04/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -174,21 +174,28 @@ To resume the recording session after you've paused it, select **Recording**.
 
 Follow these steps to create a new recording by using the test recorder:
 
-1. Open Cloud POS, and sign in.
-2. On the **Settings** page, in the **Task and Test recorders** section, select **Open test recorder**.
+1. Launch Cloud POS.
+
+2. Select the hamburger icon on the left pane and select **Settings**. Don't sign in to Cloud POS. The sign in step must be recorded as part of the test recording flow, so you need to launch the recorder before sign in.)
+
+3. On the **Settings** page, in the **Task and Test recorders** section, select **Open test recorder**.
 
     [![Task and Test recorders](./media/CreateTest.png)](./media/CreateTest.png)
 
-3. Select **Create a new recording**.
+4. Select **Create a new recording**.
 
     > [!div class="mx-imgBorder"]
     > [![Create a new recording](./media/NewTest.png)](./media/Newtest.png)
 
-4. Enter a name and description for the recording, and then select **Start**.
+5. Enter a name and description for the recording, and then select **Start**.
 
     The test recorder enters recording mode, and the recording session begins. The test recorder pane shows information and controls that are related to the recording session.
+    
+> [!NOTE]
+> All test recording must begin from the Cloud POS sign in page. If the recording is started from the home page, any transaction or  other page playback will fail and you will need to start the recording again from the sign in page. 
 
-5. Perform the actions that you want to perform in the POS UI.
+
+6. Perform the needed actions in the POS user interface.
 
     > [!div class="mx-imgBorder"]
     > [![Test recorder steps](./media/Steps.png)](./media/Steps.png)
@@ -216,7 +223,7 @@ After you end a recording session, you can download the recording by selecting *
 
 The .axtr file is saved to the local file system. You must manually upload this file to LCS or Azure DevOps and then either delete it from the file system or secure it. 
 
-To upload to Azure Dev Ops directly:
+To upload to Azure DevOps directly:
 1. Change the .axtr file extension to .zip.
 2. Open the .zip package. 
 3. Inside the package there will be file with name Recording.xml. Upload the Recording.xml to the test case in Azure DevOps. Don’t upload the entire .zip or .axtr package.
@@ -313,6 +320,20 @@ This section explains how to modify Excel files by specifying input and validati
 In RSAT, select one or more test cases to modify, and then select **Edit**. An Excel window is opened for each test case that you selected. Alternatively, you can open the Excel files directly from the working directory.
 
 In addition to a **Summary** tab, the Excel file includes a **Variables** tab that has the details of all the variables that were generated. POS automatically generates variables for all the input values that are entered during a recording session. You don't have to generate the variables separately. Each variable has a unique variable ID that you can pass, in order, to different test cases in a single instance of test execution. All the variables on the **Variables** tab appear in the order that they were entered in during the recording session.
+
+To pass variables or values between POS test cases, select the test cases in the RSAT tool and open the Variables.xlsx file by selecting the Excel icon in the tool. Copy the Variable ID (Column C) value and paste it in the Variable value field (Column D). For example, to pass the Receipt ID from **Test case 1 - variable.xlsx** to **Test case 2 - variable.xlsx**, copy the variable ID value from column C: c8cc0571-9a27-b3c5-0749-c26c3cca6afe. Paste the value in the Variable value column D in to the test case 2 - variable.xlsx file, in braces: **{{ c8cc0571-9a27-b3c5-0749-c26c3cca6afe}}**
+
+### Test case 1 – Variable.xlsx
+
+| A  (Description)            | B (View name) | C (Variable ID)| D (Variable value) |
+|---------------------------------|-------------------------------|------------------------------|--------------------------------------|
+| Receipt Id "HOU123R456" | ShowJournalView        | c8cc0571-9a27-b3c5-0749-c26c3cca6afe   | HOU123R456     |
+
+### Test case 2 – Variable.xlsx
+
+| A  (Description)            | B (View name) | C (Variable ID)| D (Variable value) |
+|---------------------------------|-------------------------------|------------------------------|--------------------------------------|
+| Receipt Id "HOU123R456" | ShowJournalView  | 80f23afa-5b76-5442-d16a-6cc9b8b245cb| **{{c8cc0571-9a27-b3c5-0749-c26c3cca6afe}}** |
 
 ### Validate expected values
 

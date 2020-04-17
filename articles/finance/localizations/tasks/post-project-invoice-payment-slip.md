@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Post a project invoice with a payment slip
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 You can post a free text invoice with a payment slip attachment in a specified format. The payment slip is printed with the creditor identification number and invoice number to identify the payment.
 
@@ -46,7 +46,7 @@ This procedure was created using the demo data company DEMF.
 4. Expand or collapse the Invoice and delivery section.
 5. Click Edit.
 6. In the On a project invoice field, select an option.
-    * o	None – Do not print a payment slip. Choose this option if the payment amount is in a currency other than Danish kroner (DKK).   o	FIK 751 – Print an FIK 751 payment slip if you intend to write the payment amount and due date on the payment slip manually.   o	FIK 752 – Print an FIK 752 payment slip if you intend to use a computer-generated payment slip with a preprinted payment amount and due date.     
+    * o    None – Do not print a payment slip. Choose this option if the payment amount is in a currency other than Danish kroner (DKK).   o    FIK 751 – Print an FIK 751 payment slip if you intend to write the payment amount and due date on the payment slip manually.   o    FIK 752 – Print an FIK 752 payment slip if you intend to use a computer-generated payment slip with a preprinted payment amount and due date.     
 7. Click Save.
 8. Click the TabPageGrid tab.
 9. Close the page.

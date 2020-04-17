@@ -4,7 +4,7 @@
 title: Set up hub accessorial charges and accessorial masters
 description: This procedure shows how to create an accessorial master for a hub and use that master to create a hub accessorial charge. 
 author: ShylaThompson
-manager: AnnBe 
+manager: tfehr 
 ms.date: 11/11/2016
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Set up hub accessorial charges and accessorial masters
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure shows how to create an accessorial master for a hub and use that master to create a hub accessorial charge. The procedure uses the USMF dataset. This set up will typically be done by a transportation coordinator.
 

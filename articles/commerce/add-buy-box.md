@@ -5,7 +5,7 @@ title: Buy box module
 description: This topic covers buy box modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -51,7 +51,7 @@ On a product details page, a buy box is divided into two regions: a media region
 A buy box module renders the title, description, price, and ratings of a product. It also lets customers select product variants that have different product attributes, such as size, style, and color. When a product variant is selected, other properties in the buy box (for example, the product description and images) are updated to reflect the variant information. 
 
 A quantity selector is provided, so that customers can specify the quantity of items to purchase. The maximum quantity that can be purchased can be defined in the site settings.
- 
+
 From the buy box, customers can also perform actions such as adding a product to the cart, adding a product to their wishlist, and selecting a pickup location. These actions can be performed on a product or a product variant. To add a product to a wishlist, the customer must be signed in.
 
 Themes can be used to remove or change the order of buy box product properties and action controls. 
@@ -63,14 +63,15 @@ Themes can be used to remove or change the order of buy box product properties a
 ## Modules that can be used in a buy box module
 
 - **Media gallery** – This module is used to showcase images of a product on a product details page. It can support one to many images. It also supports thumbnail images. The thumbnail images can be arranged either horizontally (as a row below the image) or vertically (as a column next to the image). The media gallery module can be added to the **Media** slot in the buy box module. It currently supports only images. 
-- **Store selector** – This module shows a list of nearby stores where an item is available for pickup. It lets users enter a location to find stores that are nearby. The store selector module is integrated with the Bing Maps Geocoding application programming interface (API) to convert the location to a latitude and longitude. A Bing Maps API key is required and must be added to the Retail shared parameters page in Dynamics 365 Retail. This module supports two properties, **Search radius** and **Terms of service link**. The **Search radius** property defines the search radius for stores, in miles. If no value is specified, the default search radius, 50 miles, is used. If Bings Maps or any external service is used, the **Terms of service link** property can be used to provide a link to the terms of service. A terms of service link is required for the Bing Maps service. 
+- **Store selector** – This module shows a list of nearby stores where an item is available for pickup. It lets users enter a location to find stores that are nearby. For more information on this module, see [Store selector module](store-selector.md).
 
 ## Buy box module settings
 
 Buy box modules have three settings that can be configured at **Site Settings \> Extensions**:
 
 - **Maximum quantity** – This property is used to specify the maximum number of each item that can be added to the cart. For example, a retailer might decide that only 10 of each product can be sold in a single transaction.
-- **Inventory check** – When the value is set to **True**, an item is added to the cart only after the buy box module makes sure that it's in stock. This inventory check is done both for scenarios where the item will be shipped and for scenarios where it will be picked up in the store. If the value is set to **False**, no inventory check is done before an item is added to the cart and the order is placed.
+- **Inventory check** – When the value is set to **True**, an item is added to the cart only after the buy box module makes sure that it's in stock. This inventory check is done for scenarios where the item will be shipped and for scenarios where it will be picked up in the store. If the value is set to **False**, no inventory check is done before an item is added to the cart and the order is placed. For information on how to configure inventory settings in back office, see [Calculate inventory availability for retail channels](calculated-inventory-retail-channels.md).
+
 - **Inventory buffer** – This property is used to specify a buffer number for inventory. Inventory is maintained in real time, and when many customers place orders, it can be difficult to maintain an accurate inventory count. When an inventory check is done, if the inventory is less than the buffer amount, the product is treated as out of stock. Therefore, when sales occur quickly through several channels, and the inventory count isn't fully synced, there is less risk that an item that is out of stock will be sold.
 
 ## Commerce Scale Unit interaction
@@ -98,9 +99,13 @@ To add a buy box module to a new page and set the required properties, follow th
 
 [Starter kit overview](starter-kit-overview.md)
 
+[Store selector module](store-selector.md)
+
 [Container module](add-container-module.md)
 
 [Cart module](add-cart-module.md)
+
+[Cart icon module](cart-icon-module.md)
 
 [Checkout module](add-checkout-module.md)
 
@@ -109,3 +114,5 @@ To add a buy box module to a new page and set the required properties, follow th
 [Header module](author-header-module.md)
 
 [Footer module](author-footer-module.md)
+
+[Calculate inventory availability for retail channels](calculated-inventory-retail-channels.md)

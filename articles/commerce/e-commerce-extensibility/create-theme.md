@@ -5,7 +5,7 @@ title: Create a new theme
 description: This topic describes how to create a new theme for a Microsoft Dynamics 365 Commerce online site. 
 author: samjarawan
 manager: annbe
-ms.date: 02/20/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -227,3 +227,5 @@ In a similar way, if you're mocking data for a custom module, you can add new mo
 [Theming overview](theming.md)
 
 [Configure theme settings](configure-theme-settings.md)
+
+[Extend a theme](extend-theme.md)

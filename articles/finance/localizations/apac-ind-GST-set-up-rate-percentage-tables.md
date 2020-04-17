@@ -5,7 +5,7 @@ title: Set up rate and percentage tables
 description: This topic explains how to set up rate and percentage tables.
 author: EricWang
 manager: RichardLuan
-ms.date: 02/24/2020
+ms.date: 03/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-applications
@@ -76,10 +76,10 @@ Incorrect tax setup can cause problems that are hard to detect. Common mistakes 
 
 Duplicate tax setup refers to records with the same values in input fields. Following is an example of two records with the same values for **HSN** and **Party GST Registration Number**, however, they result with two different values.
 
-    | HSN    | Party GST Registration Number | Value |
-    | ------ | ----------------------------- | ----- |
-    | 998313 |                               | 12%   |
-    | 998313 |                               | 15%   |
+   | HSN    | Party GST Registration Number | Value |
+   | ------ | ----------------------------- | ----- |
+   | 998313 |                               | 12%   |
+   | 998313 |                               | 15%   |
 
 To resolve and prevent this issue, enable **Tax setup validation** in [Feature Management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). With this feature enabled, the system will check for duplicates when you enter new data through the UI or when you import the tax setup from a CSV file. 
 

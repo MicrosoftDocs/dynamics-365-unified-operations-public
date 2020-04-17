@@ -4,7 +4,7 @@
 title: Set up rate masters
 description: This procedure shows you how to set up a rate master. 
 author: ShylaThompson
-manager: AnnBe 
+manager: tfehr 
 ms.date: 11/11/2016
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Set up rate masters
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure shows you how to set up a rate master. The logistic manager usually sets up rate masters, depending on the contracts signed with the carriers. In this scenario you will set up a rate master for an air carrier. The demo data company used to create this procedure is USMF.
 

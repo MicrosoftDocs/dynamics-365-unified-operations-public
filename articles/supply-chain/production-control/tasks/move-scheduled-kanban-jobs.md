@@ -4,7 +4,7 @@
 title: Move scheduled kanban jobs
 description: This procedure focuses on moving planned process kanban jobs to a different period. 
 author: ChristianRytt
-manager: AnnBe 
+manager: tfehr 
 ms.date: 11/07/2018
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: KanbanJobSchedulingListPage   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Move scheduled kanban jobs
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure focuses on moving planned process kanban jobs to a different period. The demo data company used to create this procedure is USMF. This procedure is intended for the shop floor supervisor or production planner working with kanbans.
 
