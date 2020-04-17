@@ -29,9 +29,9 @@ ms.dyn365.ops.version: Release 10.0.11
 
 # Quality management for warehouse processes
 
-The _Quality management for warehouse processes_ feature lets you integrate item sampling controls into the warehouse receiving process by using advanced warehouse management. Warehouse work can be automatically generated to move inventory to the quality control area, based on a percentage or a fixed quantity, or based on every *n*th license plate. After a quality order has been completed, work can be automatically generated to move inventory to the next location in the process, depending on the quality results.
+The _Quality management for warehouse processes_ feature lets you integrate item sampling controls into the warehouse receiving process by using advanced warehouse management. Warehouse work can be automatically generated to move inventory to the quality control location, based on a percentage or a fixed quantity, or based on every *n*th license plate. After a quality order has been completed, work can be automatically generated to move inventory to the next location in the process, depending on the quality results.
 
-The _Quality management for warehouse processes_ feature extends the capabilities of the basic quality management feature. It provides the option to create quality orders for the inventory that is sent to the quality control area, although quality orders aren't always required. Therefore, it allows for a lightweight quality control process that is based on warehouse work.
+The _Quality management for warehouse processes_ feature extends the capabilities of the basic quality management feature. It provides the option to create quality orders for the inventory that is sent to the quality control location, although quality orders aren't always required. Therefore, it allows for a lightweight quality control process that is based on warehouse work.
 
 ## Turn on the Quality management for warehouse processes feature
 
@@ -125,13 +125,13 @@ The value of the **Test group** field for the quality associations is also a fac
 
 #### Reference types
 
-When the **Reference type** value is _Purchase_, and the **Applicable warehouse type** value is _Quality management for warehouse processes only_, the **Event type** field on the **Process** FastTab must be set to _Registration_. _Registration_ is the only supported event type for the _Purchase_ reference type when the _Quality order for warehouse processes_ is used.
+When the **Reference type** value is _Purchase_, and the **Applicable warehouse type** value is _Quality management for warehouse processes only_, the **Event type** field on the **Process** FastTab must be set to _Registration_. _Registration_ is the only supported event type for the _Purchase_ reference type when you are using the _Quality management for warehouse processes_ feature.
 
 #### Quality processing policy
 
 The _Quality management for warehouse processes_ feature enables work to be created based only on item sampling. Therefore, it allows for a lightweight process. The inventory that work is created depends on the item sampling that is associated with the quality association. When the lightweight process is used, after a worker puts the quantity in the quality control location, the quality department can manually create a quality order, if a quality order is required.
 
-The **Quality processing policy** field on the **Quality order process** FastTab controls whether a quality order is also created when work is created to move an item to the quality control station. This field can be set to _Create quality order_ or _Create work only_. The default value is _Create quality order_.
+The **Quality processing policy** field on the **Quality order process** FastTab controls whether a quality order is also created when work is created to move an item to the quality control location. This field can be set to _Create quality order_ or _Create work only_. The default value is _Create quality order_.
 
 > [!NOTE]
 > Regardless of whether you create quality orders manually or automatically, the system automatically generates work to move items out of the quality control location when the quality order is marked as validated.
@@ -142,7 +142,7 @@ The creation of quality order work is unrelated to the quality association setup
 
 Each quality association must reference an item sampling. An item sampling defines the quantity that will be sent for quality control. It can be set up so that it applies only to quality associations where the **Applicable warehouse type** value is _Quality management for warehouse processes only_. If the **Sampling scope** value for an item sampling is _Load_ or _Shipment_, or the **Quantity specification** value is _Full license plate_, the item sampling can be referenced only by quality associations where the **Applicable warehouse type** value is _Quality management for warehouse processes only_.
 
-If you define an item sampling that uses the _Quality management for warehouse processes only_ applicable warehouse type, you will receive an error if you try to reference it from a quality association that doesn't use _Quality order for warehouse processes_.
+If you define an item sampling that uses the _Quality management for warehouse processes only_ applicable warehouse type, you will receive an error if you try to reference it from a quality association that doesn't use the _Quality management for warehouse processes_ feature.
 
 > [!NOTE]
 > Item sampling that uses full blocking isn't supported for quality associations where the **Applicable warehouse type** field is set to _Quality management for warehouse processes only_.
@@ -299,7 +299,7 @@ You can define a test group that performs destructive testing. In the case of a 
 
 To work through this scenario, you must prepare your system in the following way:
 
-- Make sure that sample data is installed on the system, and select the **USMF** legal entity.
+- Make sure that demo data is installed on the system, and select the **USMF** legal entity.
 - Turn on the _Quality management for warehouse processes_ feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 - Configure warehouse 51 to use the _Quality management for warehouse processes_ feature by following theses steps:
 
@@ -623,7 +623,7 @@ You've set up the work and location data for warehouse 51, to ensure that work i
 1. Go to **Warehouse management \> All work**.
 1. Select the work that was just created, and notice that a second quality order work header has been created, where the put location is *BULK-001*.
 1. Go to a mobile device or emulator that is running the WMA, and sign in to warehouse 51 by using *51* as the user ID and *1* as the password.
-1. Go to **Quality \> Put Away from QMS**, and enter the following values to process each of the two license plates that are related to both pieces of work, so that all work is closed.
+1. Go to **Quality \> Put Away from QMS**, and process each of the two license plates that are related to both pieces of work, so that all work is closed.
 
 > [!NOTE]
 > Consider adding the quality-out entry to a mobile device menu item where the activity code is *Display open work list*. For an example, see the mobile device menu item that is named **Work list** in the demo data. First add the *Quality order* work class to a user-directed menu item, because this work class is required for work to be shown in the work list. Then add the *Quality order* work class to the **Work list** menu item. Users who have access to the work list will then be able to pick and process the work that is automatically generated by quality order validation.
