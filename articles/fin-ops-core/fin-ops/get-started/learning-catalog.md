@@ -3,7 +3,7 @@ title: Learning catalog for Finance and Operations
 description: Find all the training options for Finance and Operations.
 author: loreleishannonmsft
 ms.topic: article
-ms.date: 02/28/2020
+ms.date: 04/17/2020
 ms.author: v-lshann
 ---
 # Learning catalog for Finance and Operations
@@ -82,6 +82,8 @@ Find the right online training, in person workshops, and events for your role as
     [Get started](learning-catalog-administrator.md#get-started)
 
     [Core platform knowledge](learning-catalog-administrator.md#core-platform-knowledge)
+
+    [Core development](learning-catalog-administrator.md#core-development)
 
     [Migration and upgrade](learning-catalog-administrator.md#migration-and-upgrade)
 
