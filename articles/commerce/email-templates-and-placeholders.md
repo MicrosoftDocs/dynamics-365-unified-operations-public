@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create transactional event email templates
-description: This topic describes how to create transactional event email templates in Microsoft Dynamics 365 Commerce.
+description: This topic describes how to create, upload, and configure transactional event email templates in Microsoft Dynamics 365 Commerce.
 author: stuharg
 manager: annbe
 ms.date: 04/20/2020
@@ -32,57 +32,62 @@ ms.dyn365.ops.version: Release 10.0.8
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to create transactional event email templates in Microsoft Dynamics 365 Commerce.
+This topic describes how to create, upload, and configure transactional event email templates in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-Dynamics 365 Commerce provides an out-of-box solution for sending emails to customers informing them that their order has been placed, their order is ready for pickup, their order has shipped and other transactional events. This help topic covers the steps for assembling, uploading and configuring the email templates that send those emails. 
+Dynamics 365 Commerce provides an out-of-box solution for sending emails that alert customers about transactional events such as an order being placed, an order being ready for pickup, or an order having been shipped. This topic covers the steps for assembling, uploading, and configuring the email templates used to send transactional emails. 
 
-## Template creation
+## Create a template
 
-Before you can map a specific transactional event to an email template, you must first create the template. To create a new email template:
+Before you can map a specific transactional event to an email template, you must first create the template. 
+
+To create a new email template, follow these steps.
 
 1. In Commerce headquarters, go to **Retail and Commerce \> Headquarters setup > Organization email templates**.
-1. Select **+New**
-1. Under **General**, enter values for the following fields: 
-    1. **Email ID**: The email ID is the unique identifier for this template and is the value that is shown when selecting a template to map to an event
-    1. **Email description**: Optional field for providing a description of the template. The value you enter only appears in Headquarters
-    1. **Sender name**: The value that appears in the From: field of most email clients.
-    1. **Sender email**: The from and reply-to email address for emails sent with this template.
-    1. **Default language code**: Specifies the localized version of the email that is sent by default, if no language is provided by the channel that invokes this template.
-1. Under **Email message content**, click **+New**
-1. Enter the language for the email template. You can add more languages and localized templates later.
-1. Enter the email subject that will appear in the Subject field of the email
-1. Click **Edit** to upload your email template HTML
+1. Select **+New**.
+1. Under **General**, enter or select values for the following fields: 
+    1. **Email ID**: The email ID is the unique identifier for a template and is the value that is shown when selecting a template to map to an event.
+    1. **Email description**: This is an optional field for providing a description of the template. The value you enter only appears in Commerce headquarters.
+    1. **Sender name**: This is the name that appears in the "From" field of most email clients.
+    1. **Sender email**: This is the email address for emails sent with this template.
+    1. **Default language code**: This value specifies the localized version of the email that is sent by default, if no language is provided by the channel that invokes this template.
+1. Under **Email message content**, click **+New**.
+1. Under **Language**, enter or select the language for the email template. You can add more languages and localized templates later.
+1. Under **Subject**, enter the email subject that will appear in the subject field of the email.
+1. Select **Edit** to upload your email template.
 
 ## Create an email HTML message body
 
-The message body of your email is composed with HTML. You can create any layout, styles and branding that HTML and inline CSS allows. Images can be used as well if you host your images on a publicly available web endpoint and insert their URL into the src attribute of the HTML img tag. NOTE: Email clients impose layout and style limitations that may require adjustments to the HTML and CSS you use for the message body. We recommend that you familiarize yourself with best practices for authoring HTML that will be supported by the most popular email clients.
+The message body of your email is composed with HTML. You can use any layout, styling, and branding that HTML and inline cascacading style sheets (CSS) allow. Images can be used as well if you host your images on a publicly available web endpoint and insert the image URL into the **src** attribute of the HTML **<img>** tag. 
+
+>[!NOTE] 
+> Email clients impose layout and style limitations that may require adjustments to the HTML and CSS you use for the message body. It is recommended that you familiarize yourself with best practices for authoring HTML that will be supported by the most popular email clients.
 
 ## Add placeholders
 
-Your email may contain placeholders that are replaced with customer and transaction-specific values when the email is generated. Placeholders are always surrounded by percent (%) characters (e.g. %customername%) and are inserted directly into the HTML document. 
+Your email may contain placeholders that are replaced with customer and transaction-specific values when the email is generated. Placeholders are always surrounded by percent (%) characters (for example, %customername%) and are inserted directly into the HTML document. 
 
 ### Order header placeholders
 
 | **Placeholder  name** | **Description**                                              |
 | --------------------- | ------------------------------------------------------------ |
 | customername          | Name  of the customer who placed the order                   |
-| salesid               | Sales  ID of the order                                       |
-| deliveryaddress       | Delivery  address for shipped orders                         |
-| customeraddress       | Address  of the customer                                     |
-| deliverydate          | Delivery  date                                               |
-| shipdate              | Ship  date                                                   |
-| modeofdelivery        | Delivery  mode of the order                                  |
-| charges               | Total  charges for the order                                 |
-| tax                   | Total  tax for the order                                     |
-| total                 | Total  amount for the order                                  |
-| ordernetamount        | Total  amount for the order minus total tax                  |
-| discount              | Total  discount for the order                                |
-| storename             | Name  of the store where the order was placed                |
-| storeaddress          | Address of the store that placed the order[[AR2\]](#_msocom_2) |
-| storeopenfrom         | Opening  time of the store that placed the order             |
-| storeopento           | Closing  time of the store that placed the order             |
+| salesid               | Sales ID of the order                                        |
+| deliveryaddress       | Delivery address for shipped orders                          |
+| customeraddress       | Address of the customer                                      |
+| deliverydate          | Delivery date                                                |
+| shipdate              | Ship date                                                    |
+| modeofdelivery        | Delivery mode of the order                                   |
+| charges               | Total charges for the order                                  |
+| tax                   | Total tax for the order                                      |
+| total                 | Total amount for the order                                   |
+| ordernetamount        | Total amount for the order minus total tax                   |
+| discount              | Total discount for the order                                 |
+| storename             | Name of the store where the order was placed                 |
+| storeaddress          | Address of the store that placed the order                   |
+| storeopenfrom         | Opening time of the store that placed the order              |
+| storeopento           | Closing time of the store that placed the order              |
 | pickupstorename       | Name of the pickup store                                     |
 | pickupstoreaddress    | Address of the pickup store                                  |
 | pickupopenstorefrom   | Opening time of the pickup store                             |
