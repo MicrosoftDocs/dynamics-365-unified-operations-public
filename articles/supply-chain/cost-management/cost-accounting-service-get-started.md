@@ -64,7 +64,7 @@ To install the cost accounting service add-in:
 1. Sign in to Dynamics Lifecycle Services (LCS).
 1. Go to **Preview feature management**.
 1. Select the plus sign.
-1. Enter your **Add-in beta key** for the cost accounting service (this should have been sent to you in email).
+1. Enter your **Add-in beta key** for the cost accounting service (your key should have been sent to you in email).
 1. Select **Unblock**.
 1. Open the LCS environment where you want to add the service.
 1. Go to **Full details**.
@@ -75,7 +75,7 @@ To install the cost accounting service add-in:
 1. Select **Install**.
 1. On the **Environment add-ins** FastTab, you should see that the cost accounting service is installing.
 1. After a few minutes, the status should change from **Installing** to **Installed** (you may need to refresh the page). 
-1. You are now ready to use the cost accounting service.
+1. The cost accounting service is ready for use.
 
 ## Verify the integration
 
@@ -83,6 +83,6 @@ You can verify the integration between the cost accounting service and Dynamics 
 
 ### More information about the cost accounting service
 
-To learn more about the cost accounting service (currently in private preview), see the following topic:
+To learn more about the cost accounting service, see the following topic:
 
 [Cost accounting service home page](cost-accounting-service-home.md)

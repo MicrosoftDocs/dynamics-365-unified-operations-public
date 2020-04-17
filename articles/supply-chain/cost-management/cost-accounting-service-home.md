@@ -29,16 +29,16 @@ ms.dyn365.ops.version: Release 10.0.12
 
 # Cost accounting service home page
 
-International organizations are under increasing pressure to comply with both local regulations (local GAAP) and common accounting standards (such as US-GAAP, IFRS, or IAS) even in situations were these may be in conflict.
+International organizations are under increasing pressure to comply with both local regulations (local GAAP) and common accounting standards (such as US-GAAP, IFRS, or IAS) even in situations were various standards and regulations may be in conflict.
 
 International organizations that have subsidiaries in countries with a hyper fluctuating local currency may be required by the local government to account and manage inventory in that  currency. However, to comply with US-GAAP, the subsidiary is also required to account and manage inventory in a stable currency such as US Dollars (USD).
 
-Organizations may prefer to account inventory by standard cost as part of their management accounting setup. However, International Financial Reporting Standards (IFRS), local governments, and local tax authorities don't recognize standard cost as a generally accepted method, and often require average, FIFO or specific identification.
+Organizations may prefer to account inventory by standard cost as part of their management accounting setup. However, International Financial Reporting Standards (IFRS), local governments, and local tax authorities don't always recognize standard cost as an accepted method, and often require average, FIFO, or specific identification.
 
 The cost accounting service add-in for Dynamics 365 Supply Chain Management lets you account inventory in multiple ledgers, and thereby supports multiple currencies and multiple valuations.
 
 ### More information about the cost accounting service
 
-To learn more about the cost accounting service (currently in private preview), see the following topic:
+To learn more about the cost accounting service, see the following topic:
 
 [Get started with the cost accounting service](cost-accounting-service-get-started.md)
