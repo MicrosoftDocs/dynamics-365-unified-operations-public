@@ -29,6 +29,8 @@ ms.dyn365.ops.version: Release 10.0.11
 
 # Integrate asset management with fixed assets
 
+[!include [banner](../../includes/banner.md)]
+
 By integrating the asset management and fixed assets modules, you'll be able to link fixed assets with maintenance assets. This enables fixed asset users to create a maintenance asset from a new or existing fixed asset, and enables asset management users to associate a maintenance asset with an existing fixed asset. This feature also makes it easy for fixed assets users to view the costs posted from work orders for the related maintenance asset.
 
 > [!NOTE]
