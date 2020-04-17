@@ -80,6 +80,9 @@ This procedure shows you how to enable a quality management process where incomi
 8. Click **Save**.
 9. Close the page.
 
+> [!NOTE]
+> The *Quality management for warehouse processes* feature provides additional item sampling capabilities. It adds a concept of *item sampling scope* and the ability to define a full license plate as the quantity specification. If you have enabled this feature, then see [Quality management for warehouse processes](../quality-management-for-warehouses-processes.md) for details.
+
 ## Create a quality group
 1. Go to **Inventory management > Setup > Quality control > Quality groups**.
 2. Click **New**.
@@ -133,3 +136,5 @@ This procedure shows you how to enable a quality management process where incomi
 16. Click **Save**.
 17. Close the page.
 
+> [!NOTE]
+> The *Quality management for warehouse processes* feature provides additional options for setting up quality associations. It adds a new condition (**Applicable warehouse type**) and a new setting (**Quality processing policy**). If you have enabled this feature, then see [Quality management for warehouse processes](../quality-management-for-warehouses-processes.md) for details.
