@@ -3,7 +3,7 @@
 
 title: Terms and Conditions for Add-ins to Microsoft Dynamics 365 Supply Chain Management
 description: This topic provides terms and conditions for add-ins to Microsoft Dynamics 365 Supply Chain Management.
-author: AnneLeahy
+author: tfehr
 manager: AnnBe
 ms.date: 04/17/2020
 ms.topic: article
