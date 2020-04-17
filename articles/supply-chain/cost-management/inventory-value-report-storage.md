@@ -4,8 +4,8 @@
 title: Inventory value storage report
 description: This feature provides you the ability to execute the Inventory value storage report and make the output available digitally, either as an interactive page in Dynamics 365 Supply Chain Management, or as an exported document in any of several formats.
 author: AndersGirke
-manager: AnnBe
-ms.date: 02/18/2020
+manager: tfehr
+ms.date: 04/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,7 +23,7 @@ ms.search.scope:  Core, Operations
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: aevengir
-ms.search.validFrom: 2020-02-18
+ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: Release 10.0.9
 ---
 
@@ -47,7 +47,7 @@ Before you can use this feature, you must enable it on your system. Administrato
 - **Module** - Cost management
 - **Feature name** - Inventory value storage
 
-## Generate a Inventory value storage report
+## Generate an Inventory value storage report
 
 Follow these steps to generate and store an **Inventory value storage** report:
 
@@ -65,7 +65,7 @@ Follow these steps to generate and store an **Inventory value storage** report:
 
 1. After the batch job is completed, it will be listed on the **Inventory value report storage** page. You may need to refresh the page to see the report.
 
-## Explore the Inventory value storage report
+## Explore an Inventory value storage report
 
 After you've generated a report, you can view and explore it at any time as follows:
 
@@ -81,7 +81,7 @@ After you've generated a report, you can view and explore it at any time as foll
     - Use the **Filter** field to filter the report by any value in any of several available columns.
     - Use the view menu (above the **Filter** field) to save and load your favorite combinations of sort and filter options.
 
-## Export the Inventory value storage report
+## Export an Inventory value storage report
 
 Each report that you generate is stored in the **Inventory value** data entity. You can use the standard data management features of Supply Chain Management to export data from this entity to any supported data format, including CSV or Microsoft Excel.
 
