@@ -2,10 +2,10 @@
 # required metadata
 
 title: Order promising
-description: This article provides information about order promising. Order promising helps you reliably promise delivery dates to your customers and gives you flexibility so that you can meet those dates.
+description: This topic provides information about order promising. Order promising helps you reliably promise delivery dates to your customers and gives you flexibility so that you can meet those dates.
 author: ShylaThompson
 manager: tfehr
-ms.date: 06/20/2017
+ms.date: 04/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article provides information about order promising. Order promising helps you reliably promise delivery dates to your customers and gives you flexibility so that you can meet those dates.
+This topic provides information about order promising. Order promising helps you reliably promise delivery dates to your customers and gives you flexibility so that you can meet those dates.
 
 Order promising calculates the earliest ship and receipt dates, and is based on the delivery date control method and transport days. You can select among four delivery date control methods:
 
@@ -52,11 +52,13 @@ ATP is calculated by using the following formula:
 
 ATP = ATP for the previous period + Receipts for the current period – Issues for the current period – Net issue quantity for each future period until the period when the sum of receipts for all future periods, up to and including the future period, exceeds the sum of issues up to and including the future period.  
 
+Notice that the ATP calculation does not include information around expiry date and beyond the ATP time fence that the system expects when any quantity can be promised.
+
 When there are no more issues or receipts to consider, the ATP quantity for the following dates is the same as the latest calculated ATP quantity.  
 
 If not all the dimensions that are used for an item are given when the ATP check is completed, they can still be specified on the issue and receipts. In this case, in the ATP calculation, the receipts and issues must be aggregated to the existing dimensions to reduce the number of receipt and issue lines that are used in the ATP calculation.  
 
-The ATP quantity that is shown is always greater than or equal to 0 (zero). If the calculation returns a negative ATP quantity (for example, if the quantity that was previously promised exceeds the available quantity), the program automatically sets the quantity to **0**.
+The ATP quantity that is shown is always greater than or equal to 0 (zero). If the calculation returns a negative ATP quantity (for example, if the quantity that was previously promised exceeds the available quantity), the quantity is automatically set to 0.
 
 ### Example
 
