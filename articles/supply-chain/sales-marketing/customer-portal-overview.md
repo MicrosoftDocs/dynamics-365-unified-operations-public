@@ -1,16 +1,43 @@
+---
+# required metadata
 
+title: XXXX
+description: XXXX
+author: XXXX
+manager: tfehr
+ms.date: mm/dd/yyyy
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form:  [Operations AOT form name to tie this topic to]
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kamaybac
+ms.search.scope:  Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.search.region: Global
+# ms.search.industry: [leave blank for most, retail, public sector]
+ms.author: XXXX
+ms.search.validFrom: yyyy-mm-dd
+ms.dyn365.ops.version: Release 10.0.xx
+---
 
 # Customer portal for Dynamics 365 Supply Chain Management: Overview
 
-## What is it?
+## What is the customer portal?
 
 Modern supply chain systems rely on integration. They require that inventory, customer demand, and sales departments be integrated, not residing in separate silos. The Customer portal helps organizations that run Supply Chain Management enhance this integration and more effectively keep their customers informed.
 
-The Customer portal is a [Power Apps portals](https://docs.microsoft.com/en-us/powerapps/maker/portals/overview) template that lets companies create an externally facing business-to-business (B2B) website for scenarios that are related to sales-order processing. The template uses [dual-write](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page), Supply Chain Management, and Power Apps portals to enable external enterprise customers to view and create data from the company&#39;s Dynamics 365 environment.
+The Customer portal is a [Power Apps portals](https://docs.microsoft.com/en-us/powerapps/maker/portals/overview) template that lets companies create an externally facing business-to-business (B2B) website for scenarios that are related to sales-order processing. The template uses [dual-write](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page), Supply Chain Management, and Power Apps portals to enable external enterprise customers to view and create data from the company's Dynamics 365 environment.
 
-The Customer portal template has all the customization capabilities that the portals feature of Power Apps offers. The template can easily be modified to represent the company&#39;s brand, add increased functionality, and change the user experience. All the functionality that the template offers out of the box can be modified as desired.
+The Customer portal template has all the customization capabilities that the portals feature of Power Apps offers. The template can easily be modified to represent the company's brand, add increased functionality, and change the user experience. All the functionality that the template offers out of the box can be modified as desired.
 
-_ **By itself, the template isn&#39;t expected to be completely functional: it just serves as an enabler for customers who want to create an externally facing website so that enterprise customers can engage with data from Supply Chain Management.** _
+_ **By itself, the template isn't expected to be completely functional: it just serves as an enabler for customers who want to create an externally facing website so that enterprise customers can engage with data from Supply Chain Management.** _
 
 **Note:** This document is directed at admins, customizers, and system integrators who will set up the Customer portal for a Supply Chain Management installation. It uses the terms _customer_ and _user_ to describe people who are customers of the organization that is running Supply Chain Management, and who will use the final portal itself.
 
@@ -24,7 +51,7 @@ The Customer portal is designed for companies that run Supply Chain Management a
 The following types of organizations are **not** good candidates for implementing the Customer portal:
 
 - Companies that want to build a website for non-enterprise customers. These companies should consider creating a [Dynamics 365 Commerce e-commerce website](https://docs.microsoft.com/en-us/dynamics365/commerce/create-ecommerce-site).
-- Companies that are already using an existing Power Apps portals website for a similar purpose. These companies won&#39;t receive any additional benefits from the Customer portal. The Customer portal is delivered as a template that acts as a guide and a starting point for customers who want to &quot;connect the dots&quot; between dual-write, Supply Chain Management, and Power Apps portals. If you&#39;ve already set up a website that serves this purpose, you might not gain much value from using the Customer portal template to re-provision that website.
+- Companies that are already using an existing Power Apps portals website for a similar purpose. These companies won't receive any additional benefits from the Customer portal. The Customer portal is delivered as a template that acts as a guide and a starting point for customers who want to "connect the dots" between dual-write, Supply Chain Management, and Power Apps portals. If you've already set up a website that serves this purpose, you might not gain much value from using the Customer portal template to re-provision that website.
 
 ## How does it work?
 
@@ -38,23 +65,24 @@ The Customer portal depends on entities that are synced with dual-write. Before 
 
 The Customer portal acts as a starting point for organizations that want to use Power Apps portals to build an externally facing website that uses data from their Supply Chain Management installation. It helps organizations connect dual-write, Supply Chain Management, and Power Apps portals.
 
-## Resources
+# Install, set up, and update the portal
 
-To learn how you can set up and customize the Customer portal, you should start by reviewing the following documentation for the underlying technologies:
-
-- [Power Apps portals documentation](https://docs.microsoft.com/en-us/powerapps/maker/portals/overview)
-- [Dual-write documentation](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page)
-
-# Licensing requirements
+## Licensing requirements
 
 To implement the Customer portal, you must have the following licenses:
 
-- **Dynamics 365 for Supply Chain Management P2 license** – This license is required to use dual-write to create and view sales orders. For details and links to complete licensing information, see the [Dynamics 365 Pricing webpage](https://dynamics.microsoft.com/en-us/pricing/#Operations). If you don&#39;t have a P2 license make sure you have the Dynamics 365 Sales solution.
+- **Dynamics 365 for Supply Chain Management P2 license** – This license is required to use dual-write to create and view sales orders. For details and links to complete licensing information, see the [Dynamics 365 Pricing webpage](https://dynamics.microsoft.com/en-us/pricing/#Operations). If you don't have a P2 license make sure you have the Dynamics 365 Sales solution.
 - **Power Apps portals** – This license is required to host the Customer portal. Portals are licensed based on usage. For details, see the [Power Apps portals licensing requirements](https://docs.microsoft.com/en-us/power-platform/admin/powerapps-flow-licensing-faq#portals).
 
-# Required setup to enable the Customer portal
+## Dependencies on dual-write and Power Apps portals
 
-After you&#39;ve made sure that you have the required licenses, you can set up dual-write as described in the [dual-write initial synchronization instructions](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/initial-sync).
+The Customer portal depends on Power Apps portals and dual-write, as shown in the following illustration.
+
+Unlike other features from Supply Chain Management, the template resides in Power Apps portals. Therefore, the Customer portal is limited by the functionality and capabilities that are provided by Power Apps portal and the entities in dual-write.
+
+## Required setup to enable the Customer portal
+
+After you've made sure that you have the required licenses, you can set up dual-write as described in the [dual-write initial synchronization instructions](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/initial-sync).
 
 Be sure to enable the following entity mappings in dual-write:
 
@@ -66,34 +94,29 @@ Be sure to enable the following entity mappings in dual-write:
 
 After these entities are enabled, you can provision the Customer portal template.
 
-# Provision the Customer portal
+## Provision the Customer portal
 
-Before you provision the Customer portal, make sure that you&#39;ve already completed the [required setup](https://theazimuthgroupllc-my.sharepoint.com/personal/chris_read_azimuth-grp_com/Documents/Desktop/To%20edit/Customer%20Portal%20Documentation.docx#_Required_setup_to). To provision the Customer portal, follow these steps.
+Before you provision the Customer portal, make sure that you've already completed the [required setup](https://theazimuthgroupllc-my.sharepoint.com/personal/chris_read_azimuth-grp_com/Documents/Desktop/To%20edit/Customer%20Portal%20Documentation.docx#_Required_setup_to). To provision the Customer portal, follow these steps.
 
 1. Go to [make.powerapps.com](http://make.powerapps.com/).
-2. Make sure that you&#39;re using the environment where you enabled dual-write.
+2. Make sure that you're using the environment where you enabled dual-write.
 3. On the **Create** tab, scroll down to the **Start from template** section, and select the template that is named **Supply Chain Management Customer**.
 4. Follow the on-screen instructions.
 
 After provisioning is completed, you can access the Customer portal in the **Your apps** section of the **Home** page.
 
-**Note:** If the dual-write solution isn&#39;t installed in the environment that you&#39;re working in, you will receive an error message, and the Customer portal won&#39;t be provisioned.
+**Note:** If the dual-write solution isn't installed in the environment that you're working in, you will receive an error message, and the Customer portal won't be provisioned.
 
-# Limitations of the Customer portal
+## Update the Customer portal
 
-This section describes the limitations of the Customer portal.
-
-## Dependencies on dual-write and Power Apps portals
-
-The Customer portal depends on Power Apps portals and dual-write, as shown in the following illustration.
-
-Unlike other features from Supply Chain Management, the template resides in Power Apps portals. Therefore, the Customer portal is limited by the functionality and capabilities that are provided by Power Apps portal and the entities in dual-write.
-
-## Updates to the Customer portal
-
-More functionality might be added to the Customer portal later. Any changes that Microsoft makes to the underlying solution components will automatically appear in your environment. However, changes in the configuration data won&#39;t automatically be present on the provisioned website. You will have to manually apply these changes by getting the code from the new template and merging it with the website that is provisioned in your environment.
+More functionality might be added to the Customer portal later. Any changes that Microsoft makes to the underlying solution components will automatically appear in your environment. However, changes in the configuration data won't automatically be present on the provisioned website. You will have to manually apply these changes by getting the code from the new template and merging it with the website that is provisioned in your environment.
 
 ## Resources
+
+To learn how you can set up and customize the Customer portal, you should start by reviewing the following documentation for the underlying technologies:
+
+- [Power Apps portals documentation](https://docs.microsoft.com/en-us/powerapps/maker/portals/overview)
+- [Dual-write documentation](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page)
 
 To effectively manage your portals, you must understand the Power Apps portals and Common Data Service lifecycle. For details, review the following resources:
 
@@ -108,19 +131,19 @@ Out of the box, there is no way for users to self-register for websites that are
 
 Before a user can use the website, a contact record must be created for that user. This contact record indicates which customer account and legal entity the user belongs to. This information is essential for ensuring that the user can create and view sales orders.
 
-When users self-register, contact records are automatically created for them. Therefore, you can&#39;t ensure that a user selects the correct customer account and legal entity. On the other hand, the invitation process lets an admin assign the correct customer account and legal entity to the contact record before an invitation is sent. If you&#39;re thinking about customizing the solution so that users can self-register, be sure to consider the possible consequences.
+When users self-register, contact records are automatically created for them. Therefore, you can't ensure that a user selects the correct customer account and legal entity. On the other hand, the invitation process lets an admin assign the correct customer account and legal entity to the contact record before an invitation is sent. If you're thinking about customizing the solution so that users can self-register, be sure to consider the possible consequences.
 
 ## Prerequisite setup
 
 Contacts in Power Apps portals are stored as records in the **Contacts** entity in Common Data Service. Dual-write then syncs these records to Supply Chain Management as required.
 
-Before you start to invite new customers, make sure that you&#39;ve enabled the **Contact** entity mapping in dual-write.
+Before you start to invite new customers, make sure that you've enabled the **Contact** entity mapping in dual-write.
 
 ## The invitation process
 
 To invite an existing contact to the Customer portal, follow the steps in [Invite contacts to your portals](https://docs.microsoft.com/en-us/powerapps/maker/portals/configure/invite-contacts) in the Power Apps portals documentation.
 
-Before you invite a customer to join the Customer portal, make sure that the customer&#39;s [contact record](https://docs.microsoft.com/en-us/powerapps/maker/portals/configure/configure-contacts) is available and set up in the following way:
+Before you invite a customer to join the Customer portal, make sure that the customer's [contact record](https://docs.microsoft.com/en-us/powerapps/maker/portals/configure/configure-contacts) is available and set up in the following way:
 
 1. Set the **Company** field to the legal entity that you want the customer to belong to in Supply Chain Management.
 2. Set the **Account Number** field to the customer account number that you want the user to have in Supply Chain Management.
@@ -129,33 +152,33 @@ After a contact is created, you should be able to see the same contact in Supply
 
 For more information, see [Configure a contact for use on a portal](https://docs.microsoft.com/en-us/powerapps/maker/portals/configure/configure-contacts) in the Power Apps portals documentation.
 
-# Out-of-box web roles and entity permissions
+## Out-of-box web roles and entity permissions
 
 User roles in Power Apps portals are defined by [web roles](https://docs.microsoft.com/en-us/powerapps/maker/portals/configure/create-web-roles) and [entity permissions](https://docs.microsoft.com/en-us/powerapps/maker/portals/configure/assign-entity-permissions). A few roles are defined for the Customer portal out of the box. You can create new roles, and you can modify or remove existing roles.
 
-## Out-of-box web roles
+### Out-of-box web roles
 
 This section describes the web roles that are delivered with the Customer portal.
 
 For more information about how to modify the out-of-box user roles, see [Create web roles for portals](https://docs.microsoft.com/en-us/powerapps/maker/portals/configure/create-web-roles) and [Add record-based security by using entity permissions for portals](https://docs.microsoft.com/en-us/powerapps/maker/portals/configure/assign-entity-permissions) in the Power Apps portals documentation.
 
-### Administrator
+#### Administrator
 
 The administrator oversees and maintains the website. This person will provision and set up the Customer portal. The administrator maintains the IT and security aspects of the portal, and makes sure that everything runs smoothly. The administrator might also customize and/or change the portal by adding new functionalities, creating new roles, and more.
 
-### Customer representative
+#### Customer representative
 
 A customer representative works for a customer company and is responsible for managing the orders that the company places. The customer representative can see all the orders that have been placed for the company and the users who placed them. Additionally, the customer representative can see information about the overall account and which contacts can place orders on behalf of that account.
 
-### Authorized users
+#### Authorized users
 
 Authorized users can place orders and view the status of the orders that they have placed, but not the orders that other users at their company have placed.
 
-### Unauthorized users
+#### Unauthorized users
 
-Unauthorized users can&#39;t view any data. They can see only public information, such as terms and conditions, and details about the company that is running the Customer portal.
+Unauthorized users can't view any data. They can see only public information, such as terms and conditions, and details about the company that is running the Customer portal.
 
-### Example
+#### Example
 
 The following table shows which sales orders the users in each web role will be able to see in the system.
 
@@ -165,9 +188,9 @@ The following table shows which sales orders the users in each web role will be 
 | Customer: XOrderer: Sam | ü | ü | X | ü | X |
 | Customer: YOrderer: May | ü | X | X | X | X |
 
-**Note:** Even though both Sam and Jane are contacts who work for customer X, they can see only the orders that they themselves have placed and nothing else. Although May has an order in the system, she can&#39;t see that order in the Customer portal, because she is an unauthorized user. (Additionally, she must have placed the order through some channel other than the portal.)
+**Note:** Even though both Sam and Jane are contacts who work for customer X, they can see only the orders that they themselves have placed and nothing else. Although May has an order in the system, she can't see that order in the Customer portal, because she is an unauthorized user. (Additionally, she must have placed the order through some channel other than the portal.)
 
-# Use and customize the Customer portal
+# Customize and use the Customer portal
 
 This section describes the different pages that available in the Customer portal out of the box. It explains what the page does and how you can customize them.
 
@@ -202,7 +225,7 @@ Here are the standard steps for submitting an order from the Customer portal.
   - **Requested receipt date** – Specify the date of delivery.
   - **Delivery address** – Enter the address that the order should be delivered to.
   - **Company** – Select the name of the customer company. This field is automatically set for non-admin users.
-  - **Requisition number** – Enter the requisition number of the order. This field isn&#39;t required.
+  - **Requisition number** – Enter the requisition number of the order. This field isn't required.
   - **Ship to country/region** – Enter the country/region that the items will be delivered to. This field is automatically set for non-admin users.
 
 1. Select **Next**.
@@ -216,8 +239,8 @@ Here are the standard steps for submitting an order from the Customer portal.
   - **Estimated net amount** – The value is calculated as the estimated price of the item × the quantity for the selected unit.
 
 1. Select **Submit** to add the item to the order.
-2. Repeat steps 4 through 6 until you&#39;ve added all the items that you want to order.
-3. When you&#39;ve finished adding items, select **Next** on the **Items** page.
+2. Repeat steps 4 through 6 until you've added all the items that you want to order.
+3. When you've finished adding items, select **Next** on the **Items** page.
 4. The **Review and submit** page provides a summary of the order. Review the order contents and delivery details. If everything looks correct, select **Submit** to submit the order.
 
 1. Standard data setup
@@ -247,9 +270,9 @@ The following fields are automatically set for the sales order entity:
 
 ### Modify the order creation process
 
-You can freely modify the appearance and UI of the Customer portal, if you don&#39;t change the basic order creation process. However, if you want to change the creation process, there are a few things that you must keep in mind.
+You can freely modify the appearance and UI of the Customer portal, if you don't change the basic order creation process. However, if you want to change the creation process, there are a few things that you must keep in mind.
 
-Don&#39;t remove the following fields from the sales order entity in Common Data Service, because they are required to create a sales order in dual-write:
+Don't remove the following fields from the sales order entity in Common Data Service, because they are required to create a sales order in dual-write:
 
 - **Company** – The legal entity that the order belongs to
 - **Name** – The name of the sales order
@@ -292,13 +315,3 @@ To modify the tiles, follow these steps.
 2. In the **Web Template** field, select the **Home** link to open the source code for that page.
 
 1. You should now see all the source code for the home page and can modify it as you require.
-
-[Send feedback.](https://community.dynamics.com/)
-
-Microsoft Dynamics is a line of integrated, adaptable business management solutions that enables you and your people to make business decisions with greater confidence. Microsoft Dynamics works like and with familiar Microsoft software, automating and streamlining financial, customer relationship, and supply chain processes in a way that helps you drive business success.
-
-United States and Canada toll-free: (888) 477-7989
-
-Worldwide: (1) (701) 281-6500
-
-[dynamics.microsoft.com](https://dynamics.microsoft.com/)
