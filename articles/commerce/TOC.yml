@@ -208,6 +208,8 @@
           href: retail-onprem.md
       - name: Deployment and hotfixes
         items:
+        - name: Synchronize self-service installers in Dynamics 365 Commerce
+          href: dev-itpro/Synchronize-installers.md
         - name: Commerce Scale Unit
           href: dev-itpro/retail-store-system-begin.md
         - name: Configure and install Commerce Scale Unit
