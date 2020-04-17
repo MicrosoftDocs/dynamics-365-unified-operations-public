@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cost accounting service home page
-description: Home page for the cost account service
+description: This topic is the home page for the cost accounting service.
 author: AndersGirke
 manager: tfehr
 ms.date: 04/17/2020
@@ -29,13 +29,15 @@ ms.dyn365.ops.version: Release 10.0.12
 
 # Cost accounting service home page
 
-International organizations are under increasing pressure to comply with both local regulations (local GAAP) and common accounting standards (such as US-GAAP, IFRS, or IAS) even in situations were various standards and regulations may be in conflict.
+[!INCLUDE [banner](../includes/banner.md)]
 
-International organizations that have subsidiaries in countries with a hyper fluctuating local currency may be required by the local government to account and manage inventory in that  currency. However, to comply with US-GAAP, the subsidiary is also required to account and manage inventory in a stable currency such as US Dollars (USD).
+International organizations are under increasing pressure to comply with both local regulations (local generally accepted accounting principles \[GAAP\]) and shared accounting standards (such as US-GAAP, International Financial Reporting Standards \[IFRS\], and International Accounting Standards \[IAS\]), even in situations where the different standards and regulations might be in conflict.
 
-Organizations may prefer to account inventory by standard cost as part of their management accounting setup. However, International Financial Reporting Standards (IFRS), local governments, and local tax authorities don't always recognize standard cost as an accepted method, and often require average, FIFO, or specific identification.
+International organizations that have subsidiaries in countries or regions where there is a hyper-fluctuating local currency might be required by the local government to account and manage inventory in that currency. However, to comply with US-GAAP, the subsidiary is also required to account and manage inventory in a stable currency, such as US dollars (USD).
 
-The cost accounting service add-in for Dynamics 365 Supply Chain Management lets you account inventory in multiple ledgers, and thereby supports multiple currencies and multiple valuations.
+Organizations might prefer to account inventory by standard cost as part of their management accounting setup. However, IFRS, local governments, and local tax authorities don't always recognize standard cost as an accepted method. Instead, they often require average, first in, first out (FIFO), or specific identification.
+
+The cost accounting service add-in for Microsoft Dynamics 365 Supply Chain Management lets you account inventory in multiple ledgers. Therefore, it supports multiple currencies and multiple valuations.
 
 ## Related resources
 
