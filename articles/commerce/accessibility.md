@@ -5,7 +5,7 @@ title: Accessibility features and capabilities
 description: This topic provides information about the accessibility features and capabilities in Microsoft Dynamics 365 Commerce.
 author: BrianShook
 manager: annbe
-ms.date: 01/08/2020
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -54,7 +54,7 @@ The Dynamics 365 Commerce digital asset management system supports several acces
 
 | Video feature               | Description |
 |-----------------------------|-------------|
-| Closed captioning (CC)      | Text that can be shown for the audio and audio descriptive elements of a video, to help users who are hearing impaired |
+| Closed captioning (CC)      | Text that can be shown for the audio and audio descriptive elements of a video, to help users who are deaf or hard of hearing |
 | Subtitles                   | Caption files that show the text of context clues or dialog on-screen |
 | Audio transcripts           | A textual transcript of spoken words that is generated from the audio of a video asset |
 | Descriptive audio           | A non-primary audio channel that describes the content or context that is occurring on-screen |
@@ -62,7 +62,7 @@ The Dynamics 365 Commerce digital asset management system supports several acces
 
 ### Configure video accessibility elements
 
-In Dynamics 365 Commerce, in the **Assets** section for your site, you can upload video assets that have separate files for closed captions, regular audio, and descriptive audio. Closed captions can also be generated automatically when a video asset is uploaded.
+In the Commerce **Media Library** section for your site, you can upload video assets that have separate files for closed captions, regular audio, and descriptive audio. Closed captions can also be generated automatically when a video asset is uploaded.
 
 #### Generate or upload closed caption files during video asset upload
 
@@ -77,7 +77,7 @@ To manually upload a closed caption file when you upload a video, follow this st
 To upload regular audio or descriptive audio files for the video, use the file selector in the **Asset Upload** dialog box.
 
 > [!NOTE]
-> Closed caption, regular audio, and descriptive audio assets can also be added after a video asset is uploaded. Go to **Assets**, select the video asset, and check it out, Then, in the properties pane for the video asset, upload the additional assets.
+> Closed caption, regular audio, and descriptive audio assets can also be added after a video asset is uploaded. Go to **Media Library**, select the video asset, and select **Edit** to check it out. Then, in the properties pane for the video asset, upload the additional assets.
 
 #### Edit CC and audio transcript files
 
@@ -85,10 +85,10 @@ CC and audio transcript files can be edited directly in the authoring tool. Vide
 
 To edit CC and audio transcript files, follow these steps.
 
-1. Go to **Assets**, select the video asset, and then select **Edit CC/Transcript**. The closed caption and transcript content editor appears.
-1. Select **Check Out**.
+1. Go to **Media Library**, and select the file name of the video asset. The closed caption and transcript content editor appears.
+1. Select **Edit**.
 1. Edit the closed caption or transcript text.
-1. When you've finished, select **Save**, and then select **Check In**.
+1. When you've finished, select **Save**, and then select **Finish editing**.
 1. When you're ready to publish, select **Publish**.
 
 #### Set the Minimum Age attribute
@@ -97,8 +97,8 @@ A **Minimum Age** metadata attribute can be associated with video assets.
 
 To set the **Minimum Age** attribute for a video asset, follow these steps.
 
-1. Go to **Assets**, and select the video asset.
-1. Select **Check Out**.
+1. Go to **Media Library**, and select the video asset.
+1. Select **Edit**.
 1. In the properties pane for the video asset, set the **Minimum Age** attribute.
 
 > [!NOTE]
