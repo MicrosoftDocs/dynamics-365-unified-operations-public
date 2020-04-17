@@ -5,7 +5,7 @@ title: Build custom response pages for 4xx/5xx status code errors
 description: This topic describes how to build custom response pages for 4xx and 5xx status code errors by using the authoring tools in Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Build custom response pages for 4xx/5xx status code errors
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic describes how to build custom response pages for 4xx and 5xx status code errors by using the authoring tools in Microsoft Dynamics 365 Commerce.
@@ -51,19 +51,21 @@ To start to build a status code error response page, follow these steps.
 
 To build the template for the status code error response page, follow these steps.
 
-1. Go to **Templates \> New template**.
-1. Name the new template.
+1. Go to **Templates**.
+1. Select **New** to create a page template.
+1. In the **New Template** dialog box, under **Template Name**, enter a name for the new template, and then select **OK**.
 1. Build the template, based on the structure that you want the status code error response page to have.
-1. Check the template in, and publish it.
+1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it. 
 
 ### Build the status code error response page
 
 To build the status code error response page, follow these steps.
 
-1. Go to **Pages \> New Page**.
-1. Name the status code error response page, but do **not** set the **URL** field.
+1. Go to **Pages**.
+1. Select **New** to create a page.
+1. In the **Choose a template** dialog box, select a template, and then, under **Page name**, enter a name for the status code error response page. Leave the **Page URL** field blank.
 1. Build the page.
-1. Check the page in, and publish it.
+1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
 > [!NOTE]
 > You can create separate status code error response pages for 4xx and 5xx status code errors. Alternatively, you can use the same general status code error response page for both error categories.

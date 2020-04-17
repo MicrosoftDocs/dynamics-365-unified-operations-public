@@ -3,9 +3,9 @@
 
 title: Italy overview
 description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for Italy. 
-author: ShylaThompson
+author: kfend
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 03/24/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -46,3 +46,17 @@ This topic provides links to documentation resources for Italy.
 - [Split payment for invoices issued to the Public Administration](emea-ita-split-payment-invoices-issued-public-administration.md)
 - [Credit invoicing (Italy)](emea-ita-credit-invoicing.md)
 - [Withholding tax](emea-ita-withholding-tax.md)
+- [Separate accounts for credit notes](emea-ita-exil-separate-account-credit.md)
+- [Sort sales invoice lines by packing slip](emea-ita-exil-invoicing-packing-slips.md)
+- [Posting invoices with zero amounts](emea-ita-exil-zero-invoice-posting.md)
+- [Bank data usability enhancement](emea-ita-exil-bank-accounts-setup.md)
+- [Miscellaneous charges per kilogram in an Intrastat declaration](emea-ita-exil-misc-charges-intrastat.md)
+- [Advanced notes management](emea-ita-exil-structured-notes.md)
+- [Intent letters - Invoicing of usual exporters](emea-ita-exil-intent-letter.md)
+- [Tax invoice for goods delivered for free](emea-ita-exil-goods-for-free.md)
+- [Improved inquiry on debit or credit settlements](emea-ita-exil-improved-inquiry-settlement.md)
+- [Commission settlement on payments](emea-ita-exil-commission-settlement.md)
+- [General ledger simulations (Italy)](emea-ita-exil-general-ledger-simulations.md)
+- [Configurable posting profiles for banks and remittance types](emea-ita-exil-bank-remittance.md)
+- [Unique certification](emea-ita-exil-unique-certification.md)
+- [Bills of exchange protest import](emea-ita-exil-protest-boe.md)

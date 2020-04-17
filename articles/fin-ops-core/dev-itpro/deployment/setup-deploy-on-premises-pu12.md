@@ -3,9 +3,9 @@
 
 title: Set up and deploy on-premises environments (Platform update 12 and later)
 description: This topic provides information about how to plan, set up, and deploy Dynamics 365 Finance + Operations (on-premises) with Platform update 12 and later.
-author: sarvanisathish
+author: PeterRFriis
 manager: AnnBe
-ms.date: 10/15/2019
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -24,7 +24,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sarvanis
+ms.author: perahlff
 ms.search.validFrom: 2017-11-30 
 ms.dyn365.ops.version: Platform update 12
 
@@ -54,7 +54,7 @@ The Finance + Operations application consists of three main components:
 These components depend on the following system software:
 
 - Microsoft Windows Server 2016 (only English OS installations are supported)
-- Microsoft SQL Server 2016 SP1, which has the following features:
+- Microsoft SQL Server 2016 SP1 and SP2 (from Platform update 33), which has the following features:
   - Full-text index search is enabled.
   - SQL Server Reporting Services (SSRS) - This is deployed on BI virtual machines.
   - SQL Server Integration Services (SSIS) - This is deployed on AOS virtual machines.
@@ -94,7 +94,7 @@ Setup of Finance + Operations will deploy a set of applications inside Service F
 
 ## Infrastructure
 
-Finance + Operations falls under Microsoft’s standard support policy regarding operation on non-Microsoft virtualization platforms – specifically VMWare. For more information, read [Support policy for Microsoft software](https://support.microsoft.com/help/897615/support-policy-for-microsoft-software-that-runs-on-non-microsoft-hardw). In short, we support our products in this environment, but if we are asked to investigate an issue, we may ask the customer to first reproduce the problem without the virtualization platform or on the Microsoft virtualization platform.
+Finance + Operations falls under the standard Microsoft support policy about operation on non-Microsoft virtualization platforms, specifically VMware. For more information, see [Support policy for Microsoft software](https://support.microsoft.com/help/897615/support-policy-for-microsoft-software-that-runs-on-non-microsoft-hardw). In short, we support our products in this environment. However, if we are asked to investigate an issue, we might first ask the customer to reproduce the issue without the virtualization platform or on the Microsoft virtualization platform.
 
 If you are using VMWare, you must implement the fixes that are documented on the following web pages:
 - [After upgrading a virtual machine to hardware version 11, network dependent workloads experience performance degradation (2129176)](https://kb.vmware.com/s/article/2129176)
@@ -148,7 +148,7 @@ Before you start the setup, the following prerequisites must be in place. The se
 
 - Active Directory Domain Services (AD DS) must be installed and configured in your network.
 - AD FS must be deployed.
-- SQL Server 2016 SP1 must be installed on the SSRS machines.
+- SQL Server 2016 SP2 must be installed on the SSRS machines.
 - SQL Server Reporting Services 2016 must be installed in **Native** mode on the SSRS machines.
 
 The following prerequisite software is installed on the VMs by the infrastructure setup scripts downloaded from LCS.
@@ -240,13 +240,13 @@ The following is an example of a Service Fabric Server certificate combined with
 
 #### Subject name
 
-```
+```Text
 CN = *.d365ffo.onprem.contoso.com
 ```
 
 #### Subject alternative names
 
-```
+```Text
 DNS Name=ax.d365ffo.onprem.contoso.com
 DNS Name=sf.d365ffo.onprem.contoso.com
 DNS Name=*.d365ffo.onprem.contoso.com
@@ -413,17 +413,17 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
 
 3. If you're using SSL certificates that were already generated, skip the Certificate generation and update the thumbprints in the configTemplate.xml file. The certificates need to be installed in the CurrentUser\My store and their private keys must be exportable.
 
-> [!WARNING]
-> Because of a leading not-printable special character, which is difficult to determine when present, the cert manager should not be used to copy thumbprints. If the not-printable special character is present, you will get the error, **X509 certificate not valid**. To retrieve the thumbprints, see results from PowerShell commands or run the following commands in PowerShell.
-> ```powershell
-> dir cert:\CurrentUser\My
-> dir cert:\LocalMachine\My
-> dir cert:\LocalMachine\Root
-> ```
+    > [!WARNING]
+    > Because of a leading not-printable special character, which is difficult to determine when present, the cert manager should not be used to copy thumbprints. If the not-printable special character is present, you will get the error, **X509 certificate not valid**. To retrieve the thumbprints, see results from PowerShell commands or run the following commands in PowerShell.
+    > ```powershell
+    > dir cert:\CurrentUser\My
+    > dir cert:\LocalMachine\My
+    > dir cert:\LocalMachine\Root
+    > ```
 
 4. Specify a semi-colon separated list of users or groups in the **ProtectTo** tag for each certificate. Only Active directory users and groups specified in the **ProtectTo** tag will have permissions to import the certificates that are exported using the scripts. Passwords are not supported by the script to protect the exported certificates
 
-5. Export the certificates into .pfx files.
+5. Export the certificates into .pfx files. As part of the export, this script will check that your certificates have the correct cryptographic provider set. 
 
     ```powershell
     # Exports Pfx files into a directory VMs\<VMName>, all the certs will be written to infrastructure\Certs folder.
@@ -440,21 +440,20 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
 
 2. Download the following Microsoft Windows Installers (MSIs) into a file share that is accessible by all VMs.
 
-| Component | Download link |
-|-----------|---------------|
-| SNAC – ODBC driver 13 | <https://www.microsoft.com/download/details.aspx?id=53339> |
-| SNAC – ODBC driver 17 | <https://www.microsoft.com/download/details.aspx?id=56567> |
-| Microsoft SQL Server Management Studio 17.5 | <https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms> |
-| Microsoft Visual C++ Redistributable Packages for Microsoft Visual Studio 2013 | <https://support.microsoft.com/help/3179560> |
-| Microsoft Access Database Engine 2010 Redistributable | <https://www.microsoft.com/download/details.aspx?id=13255> |
+    | Component | Download link | Expected file name |
+    |-----------|---------------|--------------------|
+    | SNAC – ODBC driver 13 | <https://www.microsoft.com/download/details.aspx?id=53339> | msodbcsql.msi |
+    | SNAC – ODBC driver 17 | <https://www.microsoft.com/download/details.aspx?id=56567> | msodbcsql\_17.msi |
+    | Microsoft SQL Server Management Studio 17.5 | <https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms> | SSMS-Setup-\*.exe |
+    | Microsoft Visual C++ Redistributable Packages for Microsoft Visual Studio 2013 | <https://support.microsoft.com/help/3179560> | vcredist\_x64.exe |
+    | Microsoft Visual C++ Redistributable Packages for Microsoft Visual Studio 2017 | Go to <https://lcs.dynamics.com/V2/SharedAssetLibrary>, select **Model** as the asset type, and then select **VC++ 17 Redistributables**. | vc\_redist.x64\_14\_16\_27024.exe |
+    | Microsoft Access Database Engine 2010 Redistributable | <https://www.microsoft.com/download/details.aspx?id=13255> | AccessDatabaseEngine\_x64.exe |
+    | The Microsoft .NET Framework version 4.0–4.8 (CLR 4.0) | <https://dotnet.microsoft.com/download/thank-you/net48-offline> | ndp48-x86-x64-allos-enu.exe |
 
 > [!IMPORTANT]
-> Make sure the Microsoft SQL Server Management Studio setup is in the same language as the operating system of the target machine.
-> Ensure the installer files are named as defined in NodeTopologyDefinition.xml.
-> msodbcsql.ms
-> SSMS-Setup-*.exe
-> vcredist_x64.exe
-> AccessDatabaseEngine_x64.exe
+> - Make sure the Microsoft SQL Server Management Studio setup is in the same language as the operating system of the target machine.
+> - Make sure that the installer files have the names that are specified in the "Expected file name" column of the preceding table.
+> - When you download **VC++ 17 Redistributables**, the executable file is inside the zip file.
 
 #### Follow these steps for each VM, or use remoting from a single machine
 
@@ -483,6 +482,7 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
     # If Remoting, only execute
     # .\Complete-PreReqs-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
 
+    # Note: Script "Add-GMSAOnVM.ps1" is not present on BI node 
     .\Add-GMSAOnVM.ps1
     .\Import-PfxFiles.ps1
     .\Set-CertificateAcls.ps1
@@ -524,6 +524,9 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
 7. If the test is successful, run the following command to deploy the cluster.
 
     ```powershell
+    # If using offline (internet-disconnected) install
+    # .\CreateServiceFabricCluster.ps1 -ClusterConfigFilePath .\ClusterConfig.json -FabricRuntimePackagePath <Path to MicrosoftAzureServiceFabric.cab download>
+    
     .\CreateServiceFabricCluster.ps1 -ClusterConfigFilePath .\ClusterConfig.json
     ```
 
@@ -549,16 +552,26 @@ The on-premises agent certificate can be reused across multiple sandbox and prod
 
 Only user accounts that have the Global Administrator directory role can add certificates to authorize LCS. By default, the person who signs up for Microsoft Office 365 for your organization is the global administrator for the directory.
 
-   > [!IMPORTANT]
-   > You must configure the certificate exactly one time per tenant. All on-premises environments can use the same certificate to connect with LCS.
-   > If you run this in a server machine like Windows Server 2016, you must turn off the IE Enhanced Security Configuration temporarily. If you don't, the Azure login window content will be blocked.
+> [!IMPORTANT]
+> - You must configure the certificate exactly **one** time per tenant. All on-premises environments under the same tenant must use the same certificate to connect with LCS.
+> - If you run this in a server machine like Windows Server 2016, you must turn off the IE Enhanced Security Configuration temporarily. If you don't, the Azure login window content will be blocked.
 
-1. Download and install the latest version of Azure PowerShell on a client machine. For more information, see [Installing the Azure PowerShell Service Management module](https://docs.microsoft.com/powershell/azure/servicemanagement/install-azure-ps?view=azuresmps-4.0.0).
-2. Sign in to the [customer's Azure portal](https://portal.azure.com) to verify that you have the Global Administrator directory role.
-3. Run the following script from the **Infrastructure** folder.
+1. Sign in to the [customer's Azure portal](https://portal.azure.com) to verify that you have the Global Administrator directory role.
+
+2. Determine whether the certificate is already registered by running the following script from the **Infrastructure** folder.
+
     ```powershell
-    Install-Module AzureRM
-    Import-Module AzureRM
+    Install-Module Az
+    Import-Module Az
+    .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint <OnPremLocalAgent Certificate Thumbprint> -Test
+    ```
+
+    > [!IMPORTANT]
+    > If you previously installed AzureRM, please remove it as it may not be compatible with any existing AzureRM installs in PowerShell 5.1 for Windows. For more information, [Migrate Azure PowerShell from AzureRM to Az](https://docs.microsoft.com/powershell/azure/migrate-from-azurerm-to-az).
+  
+3. If the script indicates that the certificate isn't registered, run the following command.
+
+    ```powershell
     .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint <OnPremLocalAgent Certificate Thumbprint>
     ```
 
@@ -634,7 +647,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
 ### <a name="setupsql"></a> 13. Set up SQL Server
 
-1. Install SQL Server 2016 SP1 with high availability. (Unless you're deploying in a sandbox environment, where one instance of SQL Server is sufficient. You may want to install SQL Server with high availability in sandbox environments to test high-availability scenarios.)
+1. Install SQL Server 2016 SP2 with high availability. (Unless you're deploying in a sandbox environment, where one instance of SQL Server is sufficient. You may want to install SQL Server with high availability in sandbox environments to test high-availability scenarios.)
 
     > [!IMPORTANT]
     > You must enable the [SQL Server and Windows Authentication mode](https://docs.microsoft.com/sql/database-engine/configure-windows/change-server-authentication-mode).
@@ -680,7 +693,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
     1. Import the certificate into LocalMachine\\My, unless you are setting up Always-On, in which case the certificate already exists on the node.
     2. Grant certificate permissions to the service account that is used to run the SQL service. In Microsoft Management Console (MMC), right-click the certificate (**certlm.msc**), and then select **Tasks** \> **Manage Private Keys**.
-    3. Add the certificate thumbprint to HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\*MSSQL.x*\\MSSQLServer\\SuperSocketNetLib\\Certificate. For example, with SQL Server 2016 SP1: HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\MSSQL13.MSSQLSERVER\\MSSQLServer\\SuperSocketNetLib\\Certificate
+    3. Add the certificate thumbprint to HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\*MSSQL.x*\\MSSQLServer\\SuperSocketNetLib\\Certificate. For example, with SQL Server 2016 SP2: HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\MSSQL13.MSSQLSERVER\\MSSQLServer\\SuperSocketNetLib\\Certificate
         1. From the start menu, type **regedit**, then select **regedit** to open the registry editor.
         2. Navigate to the certificate, right-click **Modify**, then replace the value with the certificate thumbprint.
     4. In Microsoft SQL Server Configuration Manager, set **ForceEncryption** to **Yes**.
@@ -702,11 +715,11 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
 3. On the **Model** tab, select the demo data for the release that you want and download the zip file.
 
-| Release | Demo data |
-|-------|------|
-| On-premises General Availability (GA) release | Dynamics 365 for Operations on-premises - Demo data |
-| On-premises Platform Update 11 Nov 2017 release | Dynamics 365 for Operations on-premises, Enterprise edition - Update 11 Demo data |
-| On-premises Platform Update 12 Mar 2018 release | Dynamics 365 for Operations on-premises, Enterprise edition - Update 12 Demo data |
+    | Release | Demo data |
+    |-------|------|
+    | On-premises General Availability (GA) release | Dynamics 365 for Operations on-premises - Demo data |
+    | On-premises Platform Update 11 Nov 2017 release | Dynamics 365 for Operations on-premises, Enterprise edition - Update 11 Demo data |
+    | On-premises Platform Update 12 Mar 2018 release | Dynamics 365 for Operations on-premises, Enterprise edition - Update 12 Demo data |
 
 4. The zip file contains empty and demo data .bak files. Select the .bak file, based on your requirements. For example, if you require demo data, download the AxBootstrapDB_Demodata.bak file.
 
@@ -830,6 +843,9 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     > Before you can invoke *Invoke-ServiceFabricEncryptText*, you need to install [Microsoft Azure Service Fabric SDK](https://docs.microsoft.com/azure/service-fabric/service-fabric-get-started#sdk-installation-only).
     > If you encounter the following error, "Invoke-ServiceFabricEncryptText is not recognized command" after you install the Azure Service Fabric SDK, restart the computer and retry.
 
+    > [!WARNING]
+    > After you've finished invoking all **Invoke-ServiceFabricEncryptText** commands, remember to delete the Windows PowerShell history. Otherwise, your non-encrypted credentials will be visible.
+
 ### <a name="setupssis"></a> 16. Set up SSIS
 
 To enable Data management and Integration workloads, SSIS must be installed on each of the AOS virtual machines. Complete the following steps on each AOS virtual machine.
@@ -884,6 +900,9 @@ Finance + Operations requires additional configuration beyond the default out-of
 In order for AD FS to trust Finance + Operations for the exchange of authentication, various application entries must be registered in AD FS under an AD FS application group. To speed up the setup process and help reduce errors, you can use the following script for registration. Copy the Publish-ADFSApplicationGroup.ps1 script and D365FO-OP directory to a machine where the AD FS role service is installed. Then run the script by using a user account that has enough permissions to administer AD FS. (For example, use an administrator account.)
 
 For more information about how to use the script, see the documentation that is listed in the script. Make a note of the client IDs that are specified in the output, because you will need this information in LCS in a later step. Should you lose the client IDs, log in to the machine which has AD FS installed, open **Server Manager** \> **Tools** \> **AD FS Management** \> **Application Groups** \> **Microsoft Dynamics 365 for Operations On-premises** and find the client IDs under the native applications.
+
+> [!NOTE]
+> If you want to reuse your previously configured AD FS server for additional environments, see [Reuse the same AD FS instance for multiple environments](./onprem-reuseadfs.md).
 
 ```powershell
 # Host URL is your DNS record\host name for accessing the AOS
@@ -963,7 +982,7 @@ If the previous remoting PowerShell window was accidentally closed and CredSSP w
 
 2. For new deployments, select your environment topology, and then complete the wizard to start your deployment.
 
-![Deploy](./media/Deploy.png)
+    ![Deploy](./media/Deploy.png)
 
 3. If you have an existing Platform update 8 or Platform update 11 deployment: 
     - Update the local agent. See [Update the local agent](../lifecycle-services/update-local-agent.md) for more details.
@@ -971,24 +990,25 @@ If the previous remoting PowerShell window was accidentally closed and CredSSP w
     - Deploy Platform update 12 while going through the steps in [Reconfigure environments to take a new platform or topology](../lifecycle-services/reconfigure-environment.md).
 4. LCS will assemble the Service Fabric application packages for your environment during the preparation phase. It then sends a message to the local agent to start deployment. You will notice the **Preparing** status as below.
 
-![Preparing](./media/Preparing.png)
+    ![Preparing](./media/Preparing.png)
 
-Click **Full details** to take you to the environment details page, as shown below.
+    Click **Full details** to take you to the environment details page, as shown below.
 
-![Details_Preparing](./media/Details_Preparing.png)
+    ![Details_Preparing](./media/Details_Preparing.png)
 
 5. The local agent will now pick up the deployment request, start the deployment, and communicate back to LCS when the environment is ready. When deployment starts, the status will change to **Deploying**, as shown.
 
-![Deploying](./media/Deploying.png)
+    ![Deploying](./media/Deploying.png)
 
-![Details_Deploying](./media/Details_Deploying.png)
+    ![Details_Deploying](./media/Details_Deploying.png)
 
-If the deployment fails, the **Reconfigure** button will become available for your environment in LCS, as shown below. Fix the underlying issue, click **Reconfigure**, update any configuration changes, and click **Deploy** to retry the deployment.
+    If the deployment fails, the **Reconfigure** button will become available for your environment in LCS, as shown below. Fix the underlying issue, click **Reconfigure**, update any configuration changes, and click **Deploy** to retry the deployment.
 
-![Failed](./media/Failed.png)
+    ![Failed](./media/Failed.png)
 
-See the [Reconfigure environments to take a new platform or topology](../lifecycle-services/reconfigure-environment.md) topic for details about how to reconfigure. The following graphic shows a successful deployment.
-![Deployed](./media/Deployed.png)
+    See the [Reconfigure environments to take a new platform or topology](../lifecycle-services/reconfigure-environment.md) topic for details about how to reconfigure. The following graphic shows a successful deployment.
+
+    ![Deployed](./media/Deployed.png)
 
 ### <a name="connect"></a> 22. Connect to your Finance + Operations environment
 In your browser, navigate to https://[yourD365FOdomain]/namespaces/AXSF, where yourD365FOdomain is the domain name that you defined in the [Plan your domain name and DNS zones](#plandomain) section of this topic.
@@ -1018,7 +1038,7 @@ To work around this error, remove "-Test:$Test" in line 56 of Config-Prereqs-All
 To work around this error, remove "-Test:$Test" in line 56, 61 and 66 of Complete-Prereqs-AllVms.ps1 which is found under the **Infrastructure** folder.
 
 ### Error "Install-WindowsFeature: The request to add or remove features on the specified server failed" when running Configure-Prereqs on MRType and ReportServerTyoe servers
-.NET Framework 3.5 is required in MRType and ReportServerType servers. By default however, .NET Framework 3.5 source files aren't included in your Windows Server 2016 installation. To work around this error, install it and specify the source files using the **source** option when you manually add new features by server manager.
+.NET Framework 3.5 is required in MRType and ReportServerType servers. By default, however, .NET Framework 3.5 source files aren't included in your Windows Server 2016 installation. To work around this error, install it and specify the source files using the **source** option when you manually add new features by server manager.
 
 ### Error "MSIS7628: Scope names should be a valid Scope description name in AD FS configuration" when running the Publish-ADFSApplicationGroup cmdlet
 This error occurs because of an OpenID scope **allatclaims** that is required by the D365FO-OP-ADFSApplicationGroup, but it might be missing in some Windows Server 2016 installation. To work around this error, add the scope description **allatclaims** through AD FS Management\Service\Scope Descriptions.

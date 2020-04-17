@@ -4,7 +4,7 @@
 title: Create a purchase order governed by budget
 description: Use this procedure to create a purchase order that is checked for available budget. 
 author: ShylaThompson
-manager: AnnBe 
+manager: tfehr 
 ms.date: 06/20/2017
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create a purchase order governed by budget
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Use this procedure to create a purchase order that is checked for available budget. This recording uses the USMF demo data company.
 

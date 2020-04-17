@@ -4,8 +4,8 @@
 title: Unit of measure conversion per product variant
 description: This topic explains how unit of measure conversions can be set up on product variants.
 author: johanhoffmann
-manager: AnnBe
-ms.date: 12/18/2018
+manager: tfehr
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,11 +13,11 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: UnitOfMeasureConversion
 ROBOTS: noindex, nofollow
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -34,23 +34,15 @@ ms.dyn365.ops.version: 10.0
 
 [!include [banner](../includes/banner.md)]
 
-[!include [pivate-preview](../includes/pivate-preview-banner.md)]
-
 This topic explains how unit of measure conversions can be set up on product variants. It includes an example of the setup.
 
 This feature makes it possible for companies to define different unit conversion between the variants of the same product. The following example is used in this topic. A company sells T-shirts in sizes Small, Medium, Large, and Extra-Large. The T-shirt is defined as a product, and the different sizes are defined as variants of the product. The T-shirts are packed in boxes and there can be five T-shirts in a box, except for the Extra-Large size where there is only space for four T-shirts. The company wants to track the different variants of the T-shirts in the unit **Pieces** but is selling the T-shirts in the unit **Boxes**. The conversion between the inventory unit and the sales unit is 1 Box = 5 Pieces, except for the variant Extra-Large, where the conversion is 1 Box = 4 Pieces.
-
-## Setup
-
-You can configure the parameters for using the feature for products enabled for **All processes** or only for product enabled for the **Warehouse processes** by using the **Enable unit of measure conversations** option on the **Product information parameters** page.
 
 ### Set up a product for unit conversion per variant
 
 Product variants can only be created for products of **Product subtype**: **Product master**. For more information, see [Create a product master](tasks/create-product-master.md).
 
 The feature is not enabled for products that are set up for Catch Weight processes. 
-
-During the creation of a product master enable unit of measure conversion by using the **Enable unit of measure conversions** option on the **Product details** page.
 
 When the product master with released products variants is created, unit conversions per variants can be set up. You can find the menu item for opening the unit conversion page in context of a product or a product variant on the following pages.
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Pin Power BI reports to workspaces
+title: Pin PowerBI.com content
 description: Microsoft Dynamics 365 Finance uses Power BI for data exploration. This topic explains how you can pin full-page Power BI reports to workspaces to give your users an interactive data exploration experience.
 author: MilindaV2
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 1
 
 ---
 
-# Pin Power BI reports to workspaces
+# Pin PowerBI.com content
 
 [!include [banner](../includes/banner.md)]
 
@@ -50,11 +50,11 @@ Next, scroll to the bottom of the **Links** section in the workspace. Notice tha
 ## Full-page Power BI reports in the client
 You can open and run Power BI reports in the client. The functionality resembles the functionality for running Microsoft SQL Server Reporting Services (SSRS) reports. To run a Power BI report, in the **Links** section, click the link for one of the Power BI reports. For this example, click the **Retail Analysis Sample** link. The Power BI report is opened in the client in a full-page view, as shown in the following illustration. This report is interactive. As you click regions of the report, the remaining visuals react to your selection.
 
-[![Retail Analysis Sample report](./media/retail-analysis-report-full-page-no-filters-1024x573.jpg)](./media/retail-analysis-report-full-page-no-filters.jpg)
+[![Analysis Sample report](./media/retail-analysis-report-full-page-no-filters-1024x573.jpg)](./media/retail-analysis-report-full-page-no-filters.jpg)
 
 You can filter the data on the report by using the filter pane. The following illustration shows the report after filters have been applied.
 
-[![Filtered Retail Analysis Sample report](./media/retail-analysis-report-full-page-filtered-view-1-1024x571.jpg)](./media/retail-analysis-report-full-page-filtered-view-1.jpg)
+[![Filtered Analysis Sample report](./media/retail-analysis-report-full-page-filtered-view-1-1024x571.jpg)](./media/retail-analysis-report-full-page-filtered-view-1.jpg)
 
 You can also open this report on PowerBI.com and make changes. You can then save the modified report as another copy that has a different name, and even pin the new report to the workspace.
 

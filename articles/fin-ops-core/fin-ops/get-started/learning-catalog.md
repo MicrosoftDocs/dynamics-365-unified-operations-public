@@ -1,33 +1,14 @@
 ---
 title: Learning catalog for Finance and Operations
 description: Find all the training options for Finance and Operations.
-author: margoc
+author: loreleishannonmsft
 ms.topic: article
-ms.date: 11/20/2019
-ms.author: margoc
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
- 
-# ms.search.form:  
-audience: Application User
-# ms.devlang: 
-ms.reviewer: margoc
-ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.search.validFrom: 2017-12-31 
-ms.dyn365.ops.version: 7.3
-
+ms.date: 02/28/2020
+ms.author: v-lshann
 ---
 # Learning catalog for Finance and Operations
 
 Find the right online training, in person workshops, and events for your role as a user of Finance and Operations applications. 
-
 
 <!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
 
@@ -41,8 +22,13 @@ Find the right online training, in person workshops, and events for your role as
 
     [Business and Technical Decision Makers Learning Catalog](learning-catalog-bdm.md#)
 
+    [Get started](learning-catalog-bdm.md#get-started)
+
+    [Exam](learning-catalog-bdm.md#exam)
+
         :::column-end:::
     :::column:::
+
     ### Business users
 
     Did you just get a new application to use? 
@@ -59,45 +45,7 @@ Find the right online training, in person workshops, and events for your role as
 
     [Financial management](learning-catalog-business-user.md#financial-management)
 
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-
-    ### Administrators
-
-    Do you need to keep systems and data flowing, provisioned, and secure round-the-clock?
-
-    [Administrators Learning Catalog](learning-catalog-administrator.md)
-
-    [Get started](learning-catalog-administrator.md#get-started)
-
-    [Core platform knowledge](learning-catalog-administrator.md#core-platform-knowledge)
-
-    [Migration and upgrade](learning-catalog-administrator.md#migration-and-upgrade)
-
-    [Servicing](learning-catalog-administrator.md#servicing)
-
-    [Testing](learning-catalog-administrator.md#testing)
-
-        :::column-end:::
-    :::column:::
-
-    ### Developers
-
-    Do you need to write code to integrate with other data sources, extend core system functionality, or build a complex application?
-
-    [Developer Learning Catalog](learning-catalog-developer.md)
-
-    [Get started](learning-catalog-developer.md#get-started)
-
-    [Core development concepts](learning-catalog-developer.md#core-development-concepts)
-
-    [Servicing](learning-catalog-administrator.md#servicing)
-
-    [Migration and upgrade](learning-catalog-administrator.md#migration-and-upgrade)
-
-    [Testing](learning-catalog-administrator.md#testing)
+    [Exam](learning-catalog-business-user.md#exam)
 
     :::column-end:::
 :::row-end:::
@@ -120,6 +68,49 @@ Find the right online training, in person workshops, and events for your role as
 
     [Supply chain managment](learning-catalog-project-manager.md#supply-chain-management)
 
+    [Exams](learning-catalog-project-manager.md#exams)
+
+        :::column-end:::
+    :::column:::
+
+    ### Administrators
+
+    Do you need to keep systems and data flowing, provisioned, and secure round-the-clock?
+
+    [Administrators Learning Catalog](learning-catalog-administrator.md)
+
+    [Get started](learning-catalog-administrator.md#get-started)
+
+    [Core platform knowledge](learning-catalog-administrator.md#core-platform-knowledge)
+
+    [Migration and upgrade](learning-catalog-administrator.md#migration-and-upgrade)
+
+    [Servicing](learning-catalog-administrator.md#servicing)
+
+    [Testing](learning-catalog-administrator.md#testing)
+
+    [Exam](learning-catalog-administrator.md#exam)
+
+  :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+
+    ### Developers
+
+    Do you need to write code to integrate with other data sources, extend core system functionality, or build a complex application?
+
+    [Developer Learning Catalog](learning-catalog-developer.md)
+
+    [Get started](learning-catalog-developer.md#get-started)
+
+    [Core development concepts](learning-catalog-developer.md#core-development-concepts)
+
+    [Servicing](learning-catalog-administrator.md#servicing)
+
+    [Migration and upgrade](learning-catalog-administrator.md#migration-and-upgrade)
+
+    [Testing](learning-catalog-administrator.md#testing)
         :::column-end:::
     :::column:::
 
@@ -139,6 +130,8 @@ Find the right online training, in person workshops, and events for your role as
 
     [Supply chain management](learning-catalog-functional-consultant.md#supply-chain-management)
 
+    [Exams](learning-catalog-functional-consultant.md#exams)
+
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -149,6 +142,10 @@ Find the right online training, in person workshops, and events for your role as
     Are you responsible for helping your customers buy the right solution? 
 
     [Microsoft Partner Sales and Marketing Learning Catalog](learning-catalog-partner-sales.md)
+
+    [Get started](learning-catalog-partner-sales.md#get-started)
+
+    [Exam](learning-catalog-partner-sales.md#exam)
 
         :::column-end:::
     :::column:::
@@ -171,7 +168,6 @@ Find the right online training, in person workshops, and events for your role as
 
     [Testing](learning-catalog-solution-architect.md#testing)
 
-    
     :::column-end:::
 :::row-end:::
 

@@ -4,8 +4,8 @@
 title: Set up vendor accounts
 description: This topic describes the types of information that you must specify when you create a new vendor account.
 author: mkirknel
-manager: AnnBe
-ms.date: 06/20/2017
+manager: tfehr
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.search.form: smmContactPerson, VendBankAccounts, VendTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 191053
@@ -93,7 +93,7 @@ You can put a vendor on hold for various transaction types. The following option
 -   **Invoice** – No invoices can be posted for the vendor.
 -   **All** – The vendor is on hold for all transaction types. These transaction types include purchase requisitions, invoices, and payments.
 -   **Payment** – No payments can be generated for the vendor.
--   **Requisition** – Only purchase requisitions can be created. No other transactions can be created.
+-   **Requisition** – Purchase requisitions can't be created for the vendor, and requisition lines already created before the vendor was set on hold can't be converted to a purchase order. Requisition lines for the vendor will be canceled if your policy is set to create purchase orders automatically.
 -   **Never** – The vendor is never put on hold for inactivity.
 
 When you put a vendor on hold, you can also specify a reason and a date when the on-hold status will end. If you don't enter an end date, the vendor's on-hold status lasts indefinitely.

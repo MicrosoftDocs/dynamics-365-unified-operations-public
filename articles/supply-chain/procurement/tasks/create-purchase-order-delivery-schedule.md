@@ -3,8 +3,8 @@
  
 title: Create a purchase order with a delivery schedule
 description: This topic demonstrates how to create a delivery schedule for a purchase order. 
-author: FrankDahl
-manager: AnnBe 
+author: mkirknel
+manager: tfehr 
 ms.date: 08/01/2019
 ms.topic: business-process 
 ms.prod:  
@@ -16,19 +16,19 @@ ms.technology:
 ms.search.form: PurchTable, PurchCreateOrder, InventItemIdLookupPurchase, PurchDeliverySchedule, PurchEditLines   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: fdahl
+ms.author: mkirknel
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Create a purchase order with a delivery schedule
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic demonstrates how to create a delivery schedule for a purchase order. A delivery schedule is used when a quantity on an order or a journal is requested to be delivered in multiple shipments. The example shown in this guide can be used in the USMF demo data company. This procedure would typically be done by a purchasing agent.
 
@@ -42,12 +42,12 @@ This topic demonstrates how to create a delivery schedule for a purchase order. 
 7. Select **Purchase order line**.
 8. Select **Delivery schedule**.
 - The **Delivery schedule** page allows you to specify the number of shipments in which the total quantity of the order line will be delivered from the vendor.  
-- By default, the system copies the total quantity and other delivery details of the original purchase line into the first delivery schedule line. In this example, we’ll create a schedule for two shipments, with the second shipment’s date offset by a week from the first shipment.  
+- By default, the system copies the total quantity and other delivery details of the original purchase line into the first delivery schedule line. In this example, we'll create a schedule for two shipments, with the second shipment's date offset by a week from the first shipment.  
 9. In the **Quantity** field, change the quantity to `4`.
 10. Select **New**.
 11. In the **Quantity** field, enter `6` as the remaining quantity.
-- In the delivery date field, select a date that’s one week after the date on the first delivery line.  
-- You can keep track of the total quantity that’s allocated to the delivery schedule lines by looking at the **Total** and **Remaining** fields. When the remaining quantity is zero, the full quantity from the original line has been allocated to the schedule.  
+- In the delivery date field, select a date that's one week after the date on the first delivery line.  
+- You can keep track of the total quantity that's allocated to the delivery schedule lines by looking at the **Total** and **Remaining** fields. When the remaining quantity is zero, the full quantity from the original line has been allocated to the schedule.  
 12. Expand the **Charges conversion** section.
 - The options here allow you to control how you want charges to be distributed across the delivery schedule lines. If you select **Copy gross amounts**, the charge amount on the original order line is copied to each delivery line. The **Allocate to delivery lines** option divides the original line charge according to the quantity on each delivery line.  
 13. Collapse the **Charges conversion** section.
@@ -71,7 +71,7 @@ The purchase order must be confirmed before the product receipt can be processed
 4. Select **Product receipt**. In the **Product receipt** field, type any value.
 - This field is used to enter a reference that will be used as voucher for the product receipt journal.  
 - In the **Quantity** field, select **Ordered quantity**. This option means that the receipt will process for the quantity that the order lines were created with.  
-- Make sure that the **Print product receipt** field is set to **No**. Printing isn’t needed in this example.  
+- Make sure that the **Print product receipt** field is set to **No**. Printing isn't needed in this example.  
 5. Expand the **Lines** section.
 - Notice how the product receipt is created for the two delivery lines and not the original order line. If the receipt had been recorded in the warehouse, it would also have been recorded on the delivery schedule lines.  
 6. Collapse the **Lines** section.

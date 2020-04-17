@@ -2,10 +2,10 @@
 # required metadata
 
 title: Independent software vendor (ISV) licensing
-description: This topic describes the independent software vendor (ISV) licensing feature. It includes information about benefits and capabilities of the ISV licensing feature, and explains how to enable licensing for an ISV solution, create a package and generate a customer-specific license, and create self-signed certificates for test purposes.
-author: robadawy
+description: This topic describes the independent software vendor (ISV) licensing feature. 
+author: jorisdg
 manager: AnnBe
-ms.date: 11/21/2019
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -24,7 +24,7 @@ ms.custom: 70381
 ms.assetid: 90ae4ae6-f19a-4ea5-8bd9-1d45729b0636
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -49,7 +49,7 @@ This section describes various capabilities of the ISV licensing feature.
 
 ### ISVs can generate their own licenses
 
-ISVs can independently generate their own licenses, apply them to solutions, and deliver those solutions to partners and customers. Each ISV license enables run-time features that help protect the ISV solution. Additionally, each ISV license is tied to an ISV Authenticode certificate, which guarantees that the software was distributed by the ISV.
+ISVs can independently generate their own licenses, apply them to solutions, and deliver those solutions to partners and customers. Each ISV license enables run-time features that help protect the ISV solution. Additionally, each ISV license is tied to an ISV Authenticode certificate, which ensures that the software was distributed by the ISV.
 
 ### A run-time check makes sure that an ISV-generated license key exists in the customer's environment
 
@@ -64,7 +64,10 @@ ISVs can create two types of license: **Boolean** and **Number**. ISVs can assoc
 When an ISV license becomes invalid after import, the ISV solution continues to run until the server is restarted. (After the server is restarted, the solution is disabled.) An error is thrown when the instance of the Application Object Server (AOS) starts. The error is written to the event log.
 
 ## Implementing ISV licensing in a solution
-ISVs must have a valid Authenticode certificate (X.509) from a certificate authority (CA). Microsoft doesn't recommend any particular CA. However, many companies offer these certificates. Authenticode certificates come in various key sizes. The ISV licensing feature supports certificates of both 1024-bit and 2048-bit key sizes. By default, many providers use the 2048-bit key size, and we recommend that ISVs use this bit key size, because it provides stronger encryption. However, if an ISV already has an existing 1024-bit key size, that key size works with the ISV licensing feature. **Note:** The ISV licensing feature doesn't support 4096-bit key sizes. Authenticode certificates can have various cryptographic service providers. The ISV licensing feature uses Enhanced Cryptographic Provider (which also covers Base Cryptographic Provider). There are many independent providers that you can purchase an Authenticode certificate from. Microsoft doesn't recommend any particular provider. Some providers that are often used are Symantec VeriSign, Thawte, and Go Daddy.
+ISVs must have a valid Authenticode certificate (X.509) from a certificate authority (CA). Microsoft doesn't recommend any particular CA. However, many companies offer these certificates. Authenticode certificates come in various key sizes. The ISV licensing feature supports certificates of both 1024-bit and 2048-bit key sizes. By default, many providers use the 2048-bit key size, and we recommend that ISVs use this bit key size, because it provides stronger encryption. However, if an ISV already has an existing 1024-bit key size, that key size works with the ISV licensing feature. 
+
+> [!NOTE]
+> The ISV licensing feature doesn't support 4096-bit key sizes. Authenticode certificates can have various cryptographic service providers. The ISV licensing feature uses Enhanced Cryptographic Provider (which also covers Base Cryptographic Provider). There are many independent providers that you can purchase an Authenticode certificate from. Microsoft doesn't recommend any particular provider. Some providers that are often used are Symantec VeriSign, Thawte, and Go Daddy.
 
 ## Certificate import and export
 The certificate is used to sign your customer license files and validate the license files at the time of import. Authenticode certificates support four file formats. For the ISV licensing feature, you must have the certificate files in two formats:
@@ -123,7 +126,7 @@ Follow these steps to enable licensing for your solution.
 
     ![Adding a button to the new form](./media/isv11.png)
 
-    The button will be visible, because it isn't controlled by a configuration key at first. 
+    The button will be visible because it isn't controlled by a configuration key at first. 
 
     ![New button is visible when it's first added](./media/isv12.png)
 
@@ -131,7 +134,7 @@ Follow these steps to enable licensing for your solution.
 
     ![Associating a configuration key with the button](./media/isv13.png) 
 
-    The button will no longer be visible, because the configuration key must be available and enabled. 
+    The button will no longer be visible because the configuration key must be available and enabled. 
 
     ![Button is no longer visible](./media/isv14.png)
 
@@ -149,18 +152,22 @@ Follow these steps to enable licensing for your solution.
     | licensecode     | The name of your license code (from Microsoft Visual Studio).                |
     | certificatepath | The path of your certificate's private key.                                  |
     | password        | The password for your certificate's private key.                             |
-    | customer        | The customer's tenant name (from the screen shot under step 1).              |
-    | serialnumber    | The customer's tenant ID (labeled "Serial number" in the screen shot).       |
+    | customer        | The customer's tenant name (from the screenshot under step 1).              |
+    | serialnumber    | The customer's tenant ID (labeled "Serial number" in the screenshot).       |
     | expirationdate  | Optional: The expiration date for the license.                               |
     | usercount       | Optional: The number that custom validation logic can use as required. This could be users, but is not limited to users. |
 
     Here is an example.
+ 
+    ```Console
+    C:\AOSService\PackagesLocalDirectory\Bin\axutil genlicense /file:c:\templicense.txt /certificatepath:c:\tempisvcert.pfx /licensecode:ISVLicenseCode /customer:TAEOfficial.ccsctp.net /serialnumber:4dbfcf74-c5a6-4727-b638-d56e51d1f381 /password:********
+    ``` 
 
-        C:\AOSService\PackagesLocalDirectory\Bin\axutil genlicense /file:c:\templicense.txt /certificatepath:c:\tempisvcert.pfx /licensecode:ISVLicenseCode /customer:TAEOfficial.ccsctp.net /serialnumber:4dbfcf74-c5a6-4727-b638-d56e51d1f381 /password:********
 
+3.  Import the license into the target environment.
 
-
-3.  Import the license into the target environment. **Note:** In production systems, you complete this step from Microsoft Dynamics Lifecycle Services (LCS), by using a deployable package. For more information, see the "Production environments" section later in this article.
+    > [!NOTE]
+    > In production systems, you complete this step from Microsoft Dynamics Lifecycle Services (LCS), by using a deployable package. For more information, see the "Production environments" section later in this topic.
 
     | Parameter name                | Description                                                                                            |
     |-------------------------------|--------------------------------------------------------------------------------------------------------|
@@ -174,15 +181,17 @@ Follow these steps to enable licensing for your solution.
 
     Here is an example.
 
-        C:\AOSService\PackagesLocalDirectory\Bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --setupmode importlicensefile --metadatadir c:\packages --bindir c:\packages --sqlserver . --sqldatabase axdbrain --sqluser AOSUser --sqlpwd ******** --licensefilename c:\templicense.txt
+    ```Console
+    C:\AOSService\PackagesLocalDirectory\Bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --setupmode importlicensefile --metadatadir c:\packages --bindir c:\packages --sqlserver . --sqldatabase axdbrain --sqluser AOSUser --sqlpwd ******** --licensefilename c:\templicense.txt
+    ```
 
-4.  The corresponding configuration key will be available and enabled on the **License configuration** page. By default, the configuration is enabled. For example, see the **ISVConfigurationKey1** configuration key in the following screen shot. 
+4.  The corresponding configuration key will be available and enabled on the **License configuration** page. By default, the configuration is enabled. For example, see the **ISVConfigurationKey1** configuration key in the following screenshot. 
 
     ![ISVConfigurationKey1 configuration key enabled on the License configuration page](./media/isv18.png)
 
 5.  In non-production installations, you must start the database synchronization process from Visual Studio.
 
-After the configuration key is enabled, the button become visible, as shown in the following screen shot. 
+After the configuration key is enabled, the button becomes visible, as shown in the following screenshot. 
 
 ![Button is visible after the configuration key is enabled](./media/isv19.png)
 
@@ -207,31 +216,82 @@ To install ISV licenses in production systems, you must use a deployable package
 More than one license can be installed at a time. If one of the licenses depends on another, make sure that it's named accordingly. (Licenses are installed in alphabetical order.)
 
 ## Appendix: Create self-signed certificates for test purposes
-**Note:** Self-signed certificates can be used only during development. They aren't supported in production environments.
 
-1.  For test purposes, create a self-signed CA certificate. Use the Visual Studio tools prompt to run the following command.
+> [!NOTE]
+> Self-signed certificates can be used only during development. They aren't supported in production environments.
 
-        makecert -r -pe -n "CN=IsvCertTestAuthority O=IsvCertTestAuthority" -ss CA -sr LocalMachine -a sha256 -len 2048 -cy authority -sky signature -b 01/01/2016 -sv c:\temp\CA.pvk c:\temp\CA.cer
+For Platform update 34 and earlier:
+(Deprecated - uses SHA1 hash algorithm for license creation)
+
+1. For test purposes, create a self-signed CA certificate. Use the Visual Studio tools prompt to run the following command.
+
+    ```Console
+    makecert -r -pe -n "CN=IsvCertTestAuthority O=IsvCertTestAuthority" -ss CA -sr LocalMachine -a sha256 -len 2048 -cy authority -sky signature -b 01/01/2016 -sv c:\temp\CA.pvk c:\temp\CA.cer
+    ```
 
     For more information, see the [MakeCert](https://msdn.microsoft.com/library/windows/desktop/aa386968(v=vs.85).aspx) documentation.
 
-2.  Create a certificate by using the CA.
+2. Create a certificate by using the CA.
 
-        makecert -pe -n "CN=IsvCertTest O=IsvCertTest" -ss ISVStore -sr LocalMachine -a sha256 -len 2048 -cy end -sky signature -eku 1.3.6.1.5.5.7.3.3 -ic c:\temp\ca.cer -iv c:\temp\ca.pvk -b **/**/**** -sv c:\temp\isvcert.pvk c:\temp\isvcert.cer
+    ```Console
+    makecert -pe -n "CN=IsvCertTest O=IsvCertTest" -ss ISVStore -sr LocalMachine -a sha256 -len 2048 -cy end -sky signature -eku 1.3.6.1.5.5.7.3.3 -ic c:\temp\ca.cer -iv c:\temp\ca.pvk -b **/**/**** -sv c:\temp\isvcert.pvk c:\temp\isvcert.cer
+    ```
 
-3.  Convert the ISV certificate to PFX format.
+3. Convert the ISV certificate to PFX format.
 
-        pvk2pfx -pvk c:\temp\isvcert.pvk -spc c:\temp\isvcert.cer -pfx c:\temp\isvcert.pfx -po ********
+    ```Console
+    pvk2pfx -pvk c:\temp\isvcert.pvk -spc c:\temp\isvcert.cer -pfx c:\temp\isvcert.pfx -po ********
+    ```
 
-4.  For a test scenario, import the self-signed CA certificate manually on all the AOS instances.
+4. For a test scenario, import the self-signed CA certificate manually on all the AOS instances.
 
-        certutil -addstore root c:\temp\ca.cer
+    ```Console
+    certutil -addstore root c:\temp\ca.cer
+    ```
 
     However, if a self-signed ISV certificate was used, that certificate must be imported instead of the CA certificate.
 
-        certutil -addstore root c:\temp\isvcert.cer
+    ```Console
+    certutil -addstore root c:\temp\isvcert.cer
+    ```
 
+For Platform update 35 and later:
+(Uses SHA256 hash algorithm for license creation)
 
+1. For test purposes, create a self-signed certificate using the PowerShell command `New-SelfSignedCertificate`:
+    1. Create the certificate. (Note: adjust start and end dates accordingly.)
 
+        ```PowerShell
+        $cert = New-SelfSignedCertificate -CertStoreLocation Cert:\LocalMachine\My -DnsName "IsvCert" -Type CodeSigningCert -KeyExportPolicy Exportable -HashAlgorithm sha256 -KeyLength 2048 -KeySpec Signature -Provider "Microsoft Enhanced RSA and AES Cryptographic Provider" -NotBefore (Get-Date -Year 2020 -Month 1 -Day 1) -NotAfter (Get-Date -Year 2022 -Month 12 -Day 31)
+        ```
 
+    2. Get a reference to the new certificate.
+
+        ```PowerShell
+        [String]$certPath = Join-Path -Path "cert:\LocalMachine\My\" -ChildPath "$($cert.Thumbprint)"
+        ```
+
+    3. Create the secure string password that the certificate uses. (Replace "##############" with the certificate password)
+
+        ```PowerShell
+        [System.Security.SecureString]$certPassword = ConvertTo-SecureString -String "##############" -Force -AsPlainText
+        ```
+
+    4. Export the certificate private key as **.pfx** file using the password.
+
+        ```PowerShell
+        Export-PfxCertificate -Cert $certPath -FilePath "C:\Temp\IsvCert.pfx" -Password $certPassword
+        ```
+
+    5. Export the certificate public key as a **.cer** file.
+
+        ```PowerShell
+        Export-Certificate -Cert $certPath -FilePath "C:\Temp\IsvCert.cer"
+        ```
+
+2. Add the certificate to the root store.
+
+    ```PowerShell
+    certutil -addstore root C:\Temp\IsvCert.cer
+    ```
 

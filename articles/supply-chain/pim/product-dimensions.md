@@ -4,7 +4,7 @@
 title: Product dimensions
 description: There are four product dimensions -  Color, Configuration, Size and Style. You combine product dimensions in dimension groups and assign dimension groups to product masters. The combinations of product dimensions determine how product variants are defined.
 author: cvocph
-manager: AnnBe
+manager: tfehr
 ms.date: 08/05/2019
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ ms.search.form: EcoResProductDimension, EcoResProductDimensionGroup, EcoResProdu
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 
 ms.search.scope: Core, Operations, Retail
 

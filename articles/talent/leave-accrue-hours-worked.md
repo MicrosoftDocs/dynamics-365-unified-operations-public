@@ -34,7 +34,7 @@ ms.dyn365.ops.version:
 
 ## Overview
 
-Organizations with hourly employees can award time off based on hours worked instead of tenure with the organization. The hours worked data is typically stored in a time and attendance system. In Talent: Core HR, those regular and overtime hours worked can be imported and used as a basis for an employee's award.
+Organizations with hourly employees can award time off based on hours worked instead of tenure with the organization. The hours worked data is typically stored in a time and attendance system. 
 
 ## Leave plans
 

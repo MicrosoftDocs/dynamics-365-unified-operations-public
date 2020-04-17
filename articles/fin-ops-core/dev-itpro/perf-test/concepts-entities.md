@@ -61,7 +61,7 @@ If an entity has two UI names, it's OK to use the shorter name. For example, you
 
 ### Examples
 
-```
+```xpp
 AtlEntitySalesOrder
 
 AtlEntityTransferOrderLine
@@ -77,7 +77,7 @@ Create a `parm` method to expose a primitive type property.
 
 #### Example
 
-```
+```xpp
 public SalesQty parmQuantity(SalesQty _qty = 0)
 {
     if (!prmisDefault(_qty))
@@ -93,13 +93,13 @@ public SalesQty parmQuantity(SalesQty _qty = 0)
 
 If there is a customer entity that is named `AtlEntityCustomer`, for example, a reference to `customer` should be exposed as a property method on the `AtlEntitySalesOrder` entity.
 
-```
+```xpp
 public AtlEntityCustomer parmCustomer(AtlEntityCustomer _custTable = null)
 ```
 
 The property method can be used as either a setter or a getter.
 
-```
+```xpp
 salesOrder.parmCustomer(customer); // setter
 
 customer = salesOrder.parmCustomer(); // getter
@@ -113,7 +113,7 @@ The `parm` prefix should be used to identify property methods. When you expose a
 
 If the customer entity hasn't yet been created and won't be created in the near future, the reference property should expose the corresponding record buffer (`CustTable`).
 
-```
+```xpp
 public CustTable parmCustomer(CustTable _custTable = null)
 ```
 
@@ -125,7 +125,7 @@ Use the same naming conventions that are used for entity references.
 
 In addition to having an entity or record reference, you can introduce the `Id` reference property.
 
-```
+```xpp
 public CustAccount customerId(CustAccount _custTable = null)
 ```
 
@@ -145,13 +145,13 @@ Create fluent setter methods to support the fluent initialization and modificati
 
 ### Declaration example
 
-```
+```xpp
 public AtlEntitySalesLine setQty(SalesQty _qty)
 ```
 	
 ### Code example
 
-```
+```xpp
 salesLine.setItem(batchItem).setInventDims([warehouse]).setQty(10).save();
 ```
 
@@ -177,7 +177,7 @@ In this naming convention, `<ExecuteBusinessOperation>` is a verb that represent
 
 #### Examples
 
-```
+```xpp
 salesOrder.save();
 
 salesOrder.postInvoice();
@@ -187,7 +187,7 @@ salesOrder.postInvoice();
 
 Command object initializers return a command object that lets you specify parameters of the command and run it.
 
-```
+```xpp
 transferLine.pick().setQty(10).setWMSLocation(bulkLocation).execute();
 ```
 
@@ -199,7 +199,7 @@ In this naming convention, `<ExecuteBusinessOperation>` is a verb that represent
 
 #### Examples
 
-```
+```xpp
 salesOrder.pick().execute();
 
 purchaseOrder.register().execute();
@@ -217,7 +217,7 @@ In this naming convention, `<ActionName>` is a noun that represents the business
 
 #### Example
 
-```
+```xpp
 receipt = transfer.newReceipt().setEditLines(true).setExplodeLines(true);
 receipt.lines().withBatch(batch1).single().setReceiptQty(6).setScrapQty(1).save();
 receipt.lines().withBatch(batch2).single().setReceiptQty(4).setScrapQty(1).save();
@@ -230,7 +230,7 @@ receipt.post();
 
 #### Example
 
-```
+```xpp
 AtlEntityInventTransferOrderReceipt
 ```
 
@@ -247,7 +247,7 @@ An example of a composite object is a source document that is made up of source 
 In the source document example, the document entity serves as the composition root and is responsible for creating any new instances of document lines. In this case, the source document entity will have an `addLine()` method that initializes and returns a new line for the document.
 
 
-```
+```xpp
 public AtlEntitySalesLine addLine()
 ```
 
@@ -259,7 +259,7 @@ Methods for adding components should use the UI names of the buttons.
 
 #### Example
 
-```
+```xpp
 salesLine = salesOrder.addLine();
 ```
 
@@ -277,7 +277,7 @@ Query methods on an entity let you search for components and related entities.
 
 ### Example
 
-```
+```xpp
 transferOrderLine = transferOrder.lines().withItem(item).single();
 ```
 
@@ -289,7 +289,7 @@ Use the UI names whenever you can. Abbreviations are acceptable if the UI name i
 
 ### Example
 
-```
+```xpp
 public AtlQueryWHSLoadLines lines()
 {
     return new AtlQueryWHSLoadLines().forLoadId(this.parmLoadId());

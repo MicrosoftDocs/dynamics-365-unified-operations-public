@@ -1,7 +1,7 @@
 ---
 title: Create and automate user acceptance tests
 description: This topic provides information about using Task guides and BPM to create and execute acceptance test suites.
-author: robadawy
+author: jorisdg
 manager: AnnBe
 ms.date: 10/02/2018
 ms.topic: article
@@ -22,7 +22,7 @@ ms.custom: 13301
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 
@@ -119,7 +119,7 @@ After configuration is complete, synchronize the BPM library with a Azure DevOps
 
     ![VSTS Sync1](./media/vsts_sync_1.png "VSTS Sync1")
 
-You can also start Azure DevOps synchronization from the toolbar in a BPM library. Select the ellipsis button (…), and then select **Azure DevOps sync**.
+    You can also start Azure DevOps synchronization from the toolbar in a BPM library. Select the ellipsis button (…), and then select **Azure DevOps sync**.
 
     ![VSTS Sync2](./media/vsts_sync_2.png "VSTS Sync2")
 
@@ -178,10 +178,7 @@ To learn more about using the Regression suite automation tool, see the followin
 - [PART 2: Regression Suite Automation Tool -- Testing Lifecycle Demo](https://infopedia.eventbuilder.com/event?eventid=r5j6c1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Regression suite automation tool](../perf-test/rsat/rsat-overview.md)
  
-For a hands-on lab experience, see the following topics:
-
-- [Set up and install Regression suite automation tool tutorial](../../fin-ops/get-started/hol-set-up-regression-suite-automation-tool.md)
-- [Use the Regression suite automation tool tutorial](../../fin-ops/get-started/hol-use-regression-suite-automation-tool.md)
+For a hands-on lab experience, see [Use the Regression suite automation tool tutorial](../../fin-ops/get-started/hol-use-regression-suite-automation-tool.md).
 
 #### Investigate test runs
 Once an automated run is complete, on the Azure DevOps toolbar, select **Test > Runs** (or **Test Plans > Runs**) to investigate your test run. Select the desired test run to investigate test case failures and errors. You can also go to your test suite in Azure DevOps to see the latest results associated with your test cases.

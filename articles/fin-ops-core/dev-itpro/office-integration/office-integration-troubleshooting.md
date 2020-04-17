@@ -5,7 +5,7 @@ title: Troubleshoot the Office integration
 description: This topic provides answers to questions, tips, and troubleshooting information for the Microsoft Office integration capabilities. The questions and issues that are discussed range across user, administration, and development scenarios.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 11/15/2019
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -41,15 +41,15 @@ This topic provides answers to questions, tips, and troubleshooting information 
 
 ### What platforms do the Office Add-ins support?
 
-The Microsoft Excel Add-in and Microsoft Word Add-in are built by using the Office Web/JavaScript Add-in framework. This framework was originally released for Microsoft Office 2013 but received significant updates in Microsoft Office 2016. For more information, see [Office Add-in host and platform availability](https://dev.office.com/add-in-availability). The Excel Add-in requires ExcelAPI 1.2. Therefore, use the [Office Add-in host and platform availability](https://dev.office.com/add-in-availability) matrix to determine which platforms support the Excel Add-in. For many users, the phrase "Excel 2016 with the latest updates" is sufficient.
+The Microsoft Excel Add-in and Microsoft Word Add-in are built by using the Office Web/JavaScript Add-in framework. This framework was originally released for Microsoft Office 2013 but received significant updates in Microsoft Office 2016. For more information, see [Office Add-in host and platform availability](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-in-availability). The Excel Add-in requires ExcelAPI 1.2. Therefore, use the [Office Add-in host and platform availability](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-in-availability) matrix to determine which platforms support the Excel Add-in. For many users, the phrase "Excel 2016 with the latest updates" is sufficient.
 
 ### Are the Office Add-ins safe?
 
-In an age of malware, full connectivity, and compliance risks, nothing is completely secure. However, the web add-ins, like other websites, are basically a web application that interacts with the Office client products via a limited application programming interface (API). For more details, see [What can an Office Add-in do?](https://dev.office.com/docs/add-ins/overview/office-add-ins#what-can-an-office-add-in-do)
+In an age of malware, full connectivity, and compliance risks, nothing is completely secure. However, the web add-ins, like other websites, are basically a web application that interacts with the Office client products via a limited application programming interface (API). For more details, see [Office Add-ins platform overview](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins)
 
 ### Does the Excel Add-in support Office for Mac?
 
-No. Support for Apple Mac and iOS is currently under development. The Office JavaScript (JS) APIs work differently in Apple Safari and Internet Explorer, especially in respect to authentication. For details about platform support for the Office JS APIs, see [Office Add-in host and platform availability](https://dev.office.com/add-in-availability).
+No. Support for Apple Mac and iOS is currently under development. The Office JavaScript (JS) APIs work differently in Apple Safari and Internet Explorer, especially in respect to authentication. For details about platform support for the Office JS APIs, see [Office Add-in host and platform availability](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-in-availability).
 
 ### What version of Office is required for the Excel Add-in to support AD FS?
 
@@ -136,6 +136,10 @@ The default Excel Add-in cell limit is about half the limit of what the Excel Ad
 
 If the entity is marked as “IsPublic=Yes” and has unique PublicEntityName and PublicCollectionName values, then it will be available via the OData service. Check that there aren’t any existing entities with the same PublicEntityName and PublicCollectionName values by looking at the $metadata feed for the environment (preferably in Google Chrome): https://*SomeFullEnvironmentURL*.dynamics.com/data/$metadata
 
+### Why are date and time values in UTC in the Excel Add-in?
+
+The Excel Add-In, Data Management Framework, and Power BI reporting are all designed to interact with data directly on the database level. Because there is no client to adjust Date and Time data to the time zone of the user, all Date and Time values are in UTC.
+
 ## Troubleshooting issues
 
 ### \[Fixed\] Issue: During sign-in to the Excel Add-in, I receive the following error message: "AADSTS65001: The user or administrator has not consented to use the application with ID XYZ"
@@ -191,9 +195,9 @@ The following illustration shows the setup of SMTP on the **Email parameters** p
 
 **Long-term fix:** The long-term fix for this issue was put in place on May 10, 2016. The Office Add-ins now use a new Dialog API that the Office team added. 
 
-**Taking advantage of the add-in updates that support AD FS:** All Office installations should be updated via **File** > **Account** > **Updates** (for click-to-run installations) or via Windows Update (for MSI installations). The AD FS Dialog API was included in the May update ([16.0.6868.2060](https://answers.microsoft.com/en-us/msoffice/forum/all/may-update-16068682060-for-office-2016-on-windows/ea082237-7ec3-4b06-895b-83490980e6d2)). For information about updates, see the [Office 365 client update channel releases](https://technet.microsoft.com/office/mt465751?f=255&MSPPError=-2147217396) page. 
+**Taking advantage of the add-in updates that support AD FS:** All Office installations should be updated via **File** > **Account** > **Updates** (for click-to-run installations) or via Windows Update (for MSI installations). The AD FS Dialog API was included in the May update ([16.0.6868.2060](https://answers.microsoft.com/msoffice/forum/all/may-update-16068682060-for-office-2016-on-windows/ea082237-7ec3-4b06-895b-83490980e6d2)). For information about updates, see the [Office 365 client update channel releases](https://technet.microsoft.com/office/mt465751?f=255&MSPPError=-2147217396) page. 
 
-If your Office build isn't updated, you might be on the deferred track ([Microsoft Office 365 ProPlus update channel option](https://technet.microsoft.com/library/mt455210.aspx)). In this case, you can [use the Office Deployment Tool to move to the Current channel](https://technet.microsoft.com/library/jj219422.aspx?f=255&MSPPError=-2147217396) or sign up for the [Office Insider program](https://products.office.com/office-insider) to help guarantee that you have the latest updates. Additionally, see [Install the latest version of Office 2016](https://dev.office.com/docs/add-ins/develop/install-latest-office-version) and [Office 2016 Deployment Guides for Admins](https://technet.microsoft.com/library/cc303401(v=office.16).aspx). 
+If your Office build isn't updated, you might be on the deferred track ([Microsoft Office 365 ProPlus update channel option](https://technet.microsoft.com/library/mt455210.aspx)). In this case, you can [use the Office Deployment Tool to move to the Current channel](https://technet.microsoft.com/library/jj219422.aspx?f=255&MSPPError=-2147217396) or sign up for the [Office Insider program](https://products.office.com/office-insider) to help guarantee that you have the latest updates. Additionally, see [Install the latest version of Office](https://docs.microsoft.com/office/dev/add-ins/develop/install-latest-office-version) and [Office 2016 Deployment Guides for Admins](https://technet.microsoft.com/library/cc303401(v=office.16).aspx). 
 
 If Office updates can't be installed, the following workaround can unblock users.
 

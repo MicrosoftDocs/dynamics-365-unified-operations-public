@@ -4,7 +4,7 @@
 title: Create a production flow version
 description: This procedure focuses on creating a new production flow version. 
 author: cvocph
-manager: AnnBe 
+manager: tfehr 
 ms.date: 11/03/2017
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create a production flow version
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure focuses on creating a new production flow version. For this procedure, the production parameters for lean manufacturing and the units of measurement for class time must be defined. You also need to define a value stream and a production group. To learn more about production flows and activities in lean manufacturing, see the white papers on Lean manufacturing for Microsoft Dynamics AX. The demo data company used to create this procedure is USMF.
 

@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Propose and post the impairment amount by batch
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This task walks you through proposing and posting the impairment amount by batch. Before you can complete this task, you must have an impairment test confirmed and saved. This task uses the JPMF demo company data.
 

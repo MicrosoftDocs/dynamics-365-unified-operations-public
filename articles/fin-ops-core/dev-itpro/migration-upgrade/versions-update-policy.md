@@ -5,7 +5,7 @@ title: Software lifecycle policy and cloud releases
 description: This topic outlines the lifecycle and support policies for the Finance and Operations online service.
 author: RyanCCarlson2 
 manager: AnnBe
-ms.date: 12/10/2019
+ms.date: 02/26/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -38,7 +38,7 @@ This topic outlines the lifecycle and support policies for the Finance and Opera
 ## Modern Lifecycle Policy
 The Finance and Operations online service is covered by the Modern Lifecycle Policy. The Modern Lifecycle Policy covers products and services that are serviced and supported continuously. For more information about this policy, see [Modern Lifecycle Policy](https://support.microsoft.com/help/30881). Licensed customers must stay current with updates to the Finance and Operations online service in accordance with the following servicing and system requirements:
 
-- Customers purchasing subscriptions of Finance and Operations and operating on the following application versions will experience continuous updates of the Platform and Financial Reporting. Microsoft will continually update these components with the option to postpone up to 2 consecutive service updates.
+- Customers purchasing subscriptions of Finance and Operations and operating on the following application versions will experience continuous updates of the Platform and Financial Reporting. Microsoft will continually update these components with the option to postpone up to 3 consecutive service updates.
     - Dynamics 365 for Operations version 1611 (November 2016)
     - Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)
     - Dynamics 365 for Finance and Operations, Enterprise edition 7.3
@@ -64,7 +64,7 @@ The Finance and Operations online service is covered by the Modern Lifecycle Pol
 >
 > Microsoft will not provide any fixes to issues on versions that have reached end of service. Microsoft will also not investigate or troubleshoot any issue that you may encounter on an older version. If you encounter an issue on a version that has reached end of service, you will be required to update to the latest update and report the issue if it persists.
 >
-> All environments will continue to be operated by Microsoft. All automatic processes around your environments, such as monitoring or self-healing, will also continue as is.
+> All environments will continue to be operated by Microsoft. All automatic processes around your environments, such as monitoring or self-healing, will also continue as is for supported versions.
 
 ## Dates and versions for application and platform releases
 
@@ -101,7 +101,7 @@ For information about the new features included in each release, select the link
 
 | **Release**                                                                                                                                                  | **Build number** | **Availability** | **Expiration date**        |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|------------------|----------------------------|
-| [Platform update 31](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-31)               | 7.0.5457        | January 2019   | N/A (Continuously updated) |
+| [Platform update 31](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-31)               | 7.0.5457        | January 2020   | N/A (Continuously updated) |
 | [Platform update 30](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-30)               | 7.0.5407        | November 2019   | N/A (Continuously updated) |
 | [Platform update 29](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29)               | 7.0.5372        | October 2019   | N/A (Continuously updated) |
 | [Platform update 28](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-28)               | 7.0.5314        | July 2019   | N/A (Continuously updated) |

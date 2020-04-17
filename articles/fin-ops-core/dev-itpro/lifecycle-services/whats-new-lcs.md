@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: What's new in Lifecycle Services (LCS)
-description: This topic provides links to the LCS release notes blog post. 
-author: kfend
+title: What's new or changed in Lifecycle Services (LCS)
+description: This topic provides links to the release plans, major announcements, and more for Microsoft Dynamics Lifecycle Services (LCS). 
+author: laneswenka
 manager: AnnBe
-ms.date: 12/02/2019
+ms.date: 03/24/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -16,55 +16,56 @@ ms.technology:
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
+# ms.devlang:
 ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
-ms.custom: 13321
-ms.assetid: f9706e52-7d17-408d-9c1f-9033a50862b2
+# ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kfend
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.author: laswenka
+ms.search.validFrom: 2020-02-29
+ms.dyn365.ops.version: 10.0.8
 
 ---
 
-# What's new in Lifecycle Services (LCS)
+# What's new or changed in Lifecycle Services (LCS)
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics Lifecycle Services (LCS) provides a cloud-based collaborative workspace that customers and their partners can use to manage projects from pre-sales to implementation and operations. Based on the phase of your project and the industry that you are working in, the site provides checklists and tools that help you manage the project. The site also provides a dashboard, so that you have a single location from which you can obtain up-to-date project information. 
+Microsoft Dynamics Lifecycle Services (LCS) provides a cloud-based collaborative workspace that customers and their partners can use to manage projects from pre-sales through implementation and operations. LCS provides checklists and tools to help you manage your project, based on the phase of the project and the industry that you're working in. It also provides a dashboard, so that you have a single location where you can obtain up-to-date project information.
 
-Use this link to go to the [Lifecycle Services site](https://lcs.dynamics.com/). For more information, see [Lifecycle Services (LCS) user guide](lcs-user-guide.md).
+To get started with LCS, see the [Lifecycle Services (LCS) user guide](lcs-user-guide.md).
 
 > [!IMPORTANT]
-> This topic is no longer being updated with links to current release plans. For information about the latest features in Lifecycle Services, see the [Release plans](https://go.microsoft.com/fwlink/?linkid=2010158).
+> LCS features and service changes will no longer be announced via blog posts. Descriptions of LCS features are provided in the [release plans](https://go.microsoft.com/fwlink/?linkid=2010158). 
 
-The following list provides links to each LCS release notes blog post that was published in the previous two years.
+The following sections list the features that are included in LCS releases.
 
-- [October 2017 - release 1](https://blogs.msdn.microsoft.com/lcs/2017/10/10/lcs-october-2017-release-1-release-notes/)
-- [September 2017 - release 2](https://blogs.msdn.microsoft.com/lcs/2017/09/27/lcs-september-2017-release-2-release-notes/)
-- [September 2017 - release 1](https://blogs.msdn.microsoft.com/lcs/2017/09/14/september-release-notes-2/)
-- [August 2017](https://blogs.msdn.microsoft.com/lcs/2017/08/17/august-release-notes-2/)
-- [July 2017](https://blogs.msdn.microsoft.com/lcs/2017/07/20/july-release-notes-2/)
-- [June 2017](https://blogs.msdn.microsoft.com/lcs/2017/06/15/june-release-notes/)
-- [May 2017](https://blogs.msdn.microsoft.com/lcs/2017/05/18/may-release-notes-2/)
-- [April 2017](https://blogs.msdn.microsoft.com/lcs/2017/04/27/april-release-notes-2/)
-- [March 2017](https://blogs.msdn.microsoft.com/lcs/2017/03/30/march-release-notes-2/)
-- [February 2017](https://blogs.msdn.microsoft.com/lcs/2017/03/03/february-release-notes-2/)
-- [January 2017](https://blogs.msdn.microsoft.com/lcs/2017/01/26/january-2017-release-notes/)
-- [December 2016](https://blogs.msdn.microsoft.com/lcs/2016/12/20/december-2016-feature-pack-release-notes/)
-- [November 2016](https://blogs.msdn.microsoft.com/lcs/2016/12/01/november-2016-release-notes/)
-- [October 2016](https://blogs.msdn.microsoft.com/lcs/2016/10/27/october-2016-release-notes/)
-- [September 2016](https://blogs.msdn.microsoft.com/lcs/2016/09/22/september-2016-release-notes/)
-- [August 2016](https://blogs.msdn.microsoft.com/lcs/2016/09/02/august-2016-release-notes/)
-- [July 2016](https://blogs.msdn.microsoft.com/lcs/2016/08/02/july-2016-release-notes/)
-- [June 2016](https://blogs.msdn.microsoft.com/lcs/2016/07/01/june-2016-release-notes/)
-- [May 2016](https://blogs.msdn.microsoft.com/lcs/2016/05/27/may-2016-release-notes/)
-- [April 2016](https://blogs.msdn.microsoft.com/lcs/2016/05/02/april-2016-release-notes/)
-- [March 2016](https://blogs.msdn.microsoft.com/lcs/2016/04/05/march-2016-release-notes/)
-- [February 2016](https://blogs.msdn.microsoft.com/lcs/2016/02/25/february-2016-release-notes/)
-- [January 2016](https://blogs.msdn.microsoft.com/lcs/2016/01/29/january-2015-release-notes/)
-- [December 2015](https://blogs.msdn.microsoft.com/lcs/2015/12/18/december-2015-release-notes/)
-- [November 2015](https://blogs.msdn.microsoft.com/lcs/2015/11/23/november-2015-release-notes/)
+## March 2020 - wave 2
+
+| Area | Feature |
+|------|---------|
+| Admin APIs | [RESTful APIs for database export](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/restful-apis-database-export) - Preview |
+| Environment actions | [Apply data upgrade packages for AX2012 customers on sandbox environments](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/apply-data-upgrade-packages-ax-2012-customers-sandbox-environments) - Generally available |
+| Environment actions | [Platform update 20 required for database movement operations](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/platform-update-20-required-database-movement-operations) - Generally available|
+
+## March 2020 - wave 1
+
+This release contains general performance improvements and minor bug fixes.  
+
+## February 2020 - wave 2
+
+| Area | Feature |
+|------|---------|
+| Environment actions | [Platform update 20 required for database movement operations](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/platform-update-20-required-database-movement-operations) - Preview |
+
+## February 2020 - wave 1
+
+| Area | Feature |
+|------|---------|
+| Admin APIs | [Database movement RESTful APIs](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/database-movement-restful-apis-lifecycle-services) - Generally available |
+
+## LCS releases before November 2019
+
+For information about LCS releases that occurred before November 2019, see the blog posts that the Lifecycle Services team published on the [Dynamics 365 blog](https://cloudblogs.microsoft.com/dynamics365/author/lifecycle-services-team/).

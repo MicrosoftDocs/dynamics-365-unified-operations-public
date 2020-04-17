@@ -24,7 +24,7 @@ ms.custom: 62333
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: hasaid
+ms.author: peakerbl
 ms.search.validFrom: 2019-10-29
 ms.dyn365.ops.version: Platform Update31
 
@@ -33,7 +33,6 @@ ms.dyn365.ops.version: Platform Update31
 # Priority-based batch scheduling 
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 In Platform update 31, you can turn on the **Batch priority-based scheduling** feature in [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md). Priority-based scheduling decouples batch groups from the batch server. Instead, relative scheduling priorities are used to determine the order that tasks are run in across available batch servers.
 

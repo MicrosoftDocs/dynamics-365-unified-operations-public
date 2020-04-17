@@ -91,7 +91,7 @@ You can add (or remove) virtual machines to AX 2012 R3 environments that you’v
 5.  Click the Edit (pencil) icon near the top of the page.
 6.  Indicate how many virtual machines you want to add to the environment. Then specify the size of those virtual machines.
     -   For information about the software installed on each virtual machine in this environment, see [Plan AX 2012 R3 deployments on Azure](plan-2012-r3-deployment-azure.md).
-    -   For sizing and pricing details about virtual machines, see [Virtual machines pricing details](http://azure.microsoft.com/pricing/details/virtual-machines/).
+    -   For sizing and pricing details about virtual machines, see [Virtual machines pricing details](https://azure.microsoft.com/pricing/details/virtual-machines/).
 
 7.  Click **Software License Terms** to review the licensing terms and conditions. Then select the check box to indicate that you agree to the terms.
 8.  Click **Next**.

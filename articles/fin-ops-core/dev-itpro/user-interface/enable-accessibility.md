@@ -47,7 +47,7 @@ The use of color is encouraged and is a common way to express state or status of
 ## Images
 When showing an image there should be a label that describes the image. If the image expresses state or status of a record, then accompanying help text or an additional column should include a textual description of the state or status. If the image is symbolic, like a logo, then it doesn’t require a textual description. If you have an image on a form or grid to convey a status, such as "in progress", ensure that the image has a tooltip that can then be read to someone who is utilizing a screen reader.
 
-```
+```xpp
 public display container statusImageDataMethod()
 {
 ImageReference statusImage;
@@ -105,9 +105,11 @@ Importantly, your control should not only identify itself by name, but (using a 
 
 ***Example***
 
-    <http://www.w3.org/TR/WCAG20-TECHS/ARIA1.html>
-    <button aria-label="Close" aria-describedby="descriptionClose" onclick="myDialog.close()"></button>
-    <div id="descriptionClose">Closing this window will discard any information entered and return you to the main page</div>
+```html
+<http://www.w3.org/TR/WCAG20-TECHS/ARIA1.html>
+<button aria-label="Close" aria-describedby="descriptionClose" onclick="myDialog.close()"></button>
+<div id="descriptionClose">Closing this window will discard any information entered and return you to the main page</div>
+```
 
 **Indicate when it is busy** 
 
@@ -117,7 +119,9 @@ It may not always be clear to the visually-impaired user why the control isn’t
 
 ***Example***
 
-    <p aria-live=”polite” aria-busy=”true”></p>
+```xpp
+<p aria-live=”polite” aria-busy=”true”></p>
+```
 
 **Indicate that the contents have been validated and are invalid** 
 

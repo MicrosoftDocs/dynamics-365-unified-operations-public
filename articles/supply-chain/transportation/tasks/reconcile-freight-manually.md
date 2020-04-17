@@ -4,7 +4,7 @@
 title: Reconcile freight manually
 description: This procedure shows how to reconcile freight manually. 
 author: ShylaThompson
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: WHSLoadPlanningWorkbench, TMSFreightBillDetail, TMSInvoiceTable, TMSFreightBillInvoiceReconcile, TMSInvoiceJournal, LedgerJournalTable, LedgerJournalTransDaily   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Reconcile freight manually
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]]
 
 This procedure shows how to reconcile freight manually. This is typically done by a transportation coordinator. You can use this procedure in the USMF demo data company.
 
@@ -39,7 +39,7 @@ This procedure shows how to reconcile freight manually. This is typically done b
 3. In the list, select the load that has load ID 00006.
 
 ## Create a carrier invoice
-    * If you reconcile freight manually and don’t receive carrier invoices automatically, you can create an invoice based on the freight bill.  
+If you reconcile freight manually and don't receive carrier invoices automatically, you can create an invoice based on the freight bill.  
 1. Click Related information.
 2. Click Freight bill details.
 3. Click Generate freight bill invoice.
@@ -47,7 +47,7 @@ This procedure shows how to reconcile freight manually. This is typically done b
 5. Click OK.
 
 ## Reconcile the invoice
-    * When you reconcile a carrier invoice and a freight bill, this is done line by line.  
+When you reconcile a carrier invoice and a freight bill, this is done line by line.  
 1. Click Match freight bills and invoices.
 2. Expand the Invoice details section.
 3. Expand the Unmatched freight bill details section.

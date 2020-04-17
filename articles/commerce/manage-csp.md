@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Manage Content Security Policy (CSP)
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic describes how to manage Content Security Policy (CSP) in Microsoft Dynamics 365 Commerce.
@@ -91,7 +91,7 @@ The following screenshot shows what the fixed settings look like on the **Conten
 
 If you're testing modules by using the online SDK in a development environment, you can also add CSP by using page mocks. In a page mock, you must either add a top-level **"appContext"** property or go to the existing top-level **"appContext"** property, and create a property under it that is named **"contentSecurityPolicy"**. There, you can add key/value pairs of directives to policies, as shown in the following example.
 
-```
+```json
 "appContext": {
 	"contentSecurityPolicy": {
 		"script-src": ["https://www.w3schools.com/js/myScript.js"],
@@ -105,7 +105,7 @@ If you're testing modules by using the online SDK in a development environment, 
 
 You can turn off CSP in a page mock by using the following code.
 
-```
+```json
 "appContext": {
 	"contentSecurityPolicy": {
 		"disableContentSecurityPolicy": true

@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Calculate interest and fines on vendor payments (Brazil)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 You can apply interest and fines on vendor payments that are delayed. The interest and fine amounts that apply to a payment can be calculated when you make a payment to a vendor. Before you calculate interest or fine codes for vendor payments, you must set up a list of bank holidays and national holidays. A holiday date that is set up on the Payment calendar page is considered a non-working day. If an invoice is due on a non-working day, the due date is moved to the next working day in the calendar, and the interest and fines are calculated accordingly. This task uses the BRMF demo company.
 

@@ -31,7 +31,6 @@ ms.dyn365.ops.version: 8.1
 # Dual currency
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Functionality that was introduced in Microsoft Dynamics 365 for Finance and Operations version 8.1 (October 2018) enables the reporting currency to be repurposed and used as a second accounting currency. This functionality is referred to as *dual currency*. The changes for dual currency can't be turned off through a configuration key or parameter. Because the reporting currency is used as a second accounting currency, the way that the reporting currency is calculated in the posting logic has changed.
 

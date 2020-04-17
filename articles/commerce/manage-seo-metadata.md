@@ -5,7 +5,7 @@ title: Manage SEO metadata
 description: This topic describes how to manage search engine optimization (SEO) metadata in Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Manage SEO metadata
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic describes how to manage search engine optimization (SEO) metadata in Microsoft Dynamics 365 Commerce.
@@ -77,13 +77,10 @@ To modify page metadata, follow these steps.
 1. Under **Sites**, select the **Fabrikam** (or the name of your site).
 1. In the navigation pane on the left, select **Pages**.
 1. Select the home page to open it in the page editor.
-1. On the Action Pane, select **Check Out**.
+1. On the command bar, select **Edit**.
 1. In the properties pane on the right, expand **Default metatags**.
-1. To add a new metatag, select **Add**, and then enter the tag in the field.
-
-    To remove an existing metatag, select the trash can symbol to the right of it.
-
-1. Select **Save**, and then select **Check In**.
+1. To add a new metatag, select **Add**, and then enter the tag in the field. To remove an existing metatag, select the trash can symbol to the right of it.
+1. Select **Save**, and then select **Finish editing**.
 1. In the **Comments** field, enter **Updated metatags**, and then select **OK**.
 1. Select **Preview** to preview your page. When you've finished, close the preview tab to return to the authoring tool.
 1. Select **Publish**.
@@ -102,3 +99,4 @@ To modify page metadata, follow these steps.
 
 [Enrich a category landing page](enrich-category-page.md)
 
+[Verify page content accessibility](verify-accessibility.md)

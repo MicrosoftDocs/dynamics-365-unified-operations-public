@@ -30,7 +30,6 @@ ms.dyn365.ops.version: July 2017 update
 # Configure document management
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 
 This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records. It includes information about the concepts and features that are involved in this functionality.
@@ -52,7 +51,7 @@ To create a new document type, follow these steps.
 5. In the **Class** field, specify a class to define the behavior for the document type:
 
     - **Attach file** – The user is prompted for a file.
-    - **Attach URL** – The user can enter a URL in the **Notes** field, such as `http://www.microsoft.com`. The **Open** button on the **Attachments** page will open the URL on a browser tab.
+    - **Attach URL** – The user can enter a URL in the **Notes** field, such as `https://www.microsoft.com`. The **Open** button on the **Attachments** page will open the URL on a browser tab.
     - **Simple note** – The user can add a simple note in the **Notes** field.
 
 6. If you specified **Attach file** in the **Class** field, in the **Location** field, specify the storage mechanism to use.
@@ -81,6 +80,16 @@ SharePoint communication works for the current user only if the following condit
 - An Office 365 license is associated with the user's account.
 - The user is a typical user on the tenant, not an external user (for example, a user from another tenant).
 - There is a SharePoint site for the tenant (for example, Contoso.SharePoint.com).
+
+If documents stored in SharePoint don't display in preview, follow these steps to troubleshoot the issue: 
+
+1. Verify the Admin account has an associated email account (verify or change this in the **User** page). If this isn't set up, you need to add the email and provider  via the OData Excel add-in. By default, the email address isn't present in the Excel design. The user needs to edit the Excel design, add all fields, apply and refresh. Once complete, you can update the Admin account.
+
+2. After the Admin account has an associated email account, sign in to Dynamics 365 Human Resources as the admin.
+
+3. Open an attachment that is stored in SharePoint to initiate the preview.
+
+4. Sign in with any other user account that has access to attachments and verify that preview works.
 
 ## Configure file types
 

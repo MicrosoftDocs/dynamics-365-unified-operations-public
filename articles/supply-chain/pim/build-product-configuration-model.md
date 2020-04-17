@@ -4,7 +4,7 @@
 title: Product configuration overview
 description: The need to configure products to meet special requirements is becoming the rule rather than the exception, in both business-to-business and business-to-consumer relationships.
 author: cvocph
-manager: AnnBe
+manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ ms.search.form: PCProductConfigurationModelDetails
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 75083
@@ -65,7 +65,7 @@ A product configuration model consists of one or more components that are tied t
 Each component has one or more attributes that identify its properties. The attributes are what users will choose during the configuration process. Attributes control both inter-component and intra-component relationships through inclusion in constraints or calculations. Through conditions that are applied to BOM lines, the attributes can be used to determine which physical parts the configured product will consist of. Additionally, an attribute can control the property of a BOM line through a mapping mechanism. Similar functionality exists for route operations regarding both inclusion and property settings.
 
 >[!NOTE]
-> When you create attribute types, avoid creating a high numbner of values for the attribute type domain. Doing so could cause slowdowns in the product configurator. 
+> When you create attribute types, avoid creating a high number of values for the attribute type domain. Doing so could cause slowdowns in the product configurator. 
 
 ### Expression constraints
 

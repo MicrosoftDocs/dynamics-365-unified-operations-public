@@ -42,7 +42,7 @@ A rich, rule-based system is used to define valid combinations of main accounts 
 
 ### Account structures
 
-An account structure is required when you set up your ledger. You must define and activate at least one account structure, and you must assign it to the ledger. The account structure must have the main account in it. You can define the order of segments that works best for the business. After the main account is defined, the system can determine the account structure that is used. By putting the main account first or near the front of a structure, you can help limit the values and also help the system apply the last known valid value as a default value. You can have up to 10 additional financial dimensions in the account structure. The account structure defines which dimension values are valid in combination with other values. it also defines whether dimension values must be entered.
+An account structure is required when you set up your ledger. You must define and activate at least one account structure, and you must assign it to the ledger. The account structure must have the main account in it. You can define the order of segments that works best for the business. After the main account is defined, the system can determine the account structure that is used. By putting the main account first or near the front of a structure, you can help limit the values and also help the system apply the last known valid value as a default value. You can have up to 10 additional financial dimensions in the account structure. The account structure defines which dimension values are valid in combination with other values. It also defines whether dimension values must be entered.
 
 ### Advanced rules
 
@@ -131,4 +131,4 @@ Some of the following resources refer to an earlier version of our software. How
 
 [Dimension defaulting in accounting distributions](https://blogs.msdn.microsoft.com/ax_gfm_framework_team_blog/2013/12/16/dimension-defaulting-in-accounting-distributions-part-1-introduction/)
 
-[Dimension defaulting in Dimensions framework](https://blogs.msdn.microsoft.com/ax_gfm_framework_team_blog/2014/09/)
+[Dimension defaulting in Dimensions framework](https://docs.microsoft.com/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-part-1-financial-dimensions-discovery)

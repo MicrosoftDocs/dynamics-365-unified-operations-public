@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Import ISO20022 credit transfer configuration
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure shows how to import a vendor payment electronic reporting configuration. The German ISO 20022 credit transfer format is used as an example. This procedure can be used for other available electronic reporting format. 
 

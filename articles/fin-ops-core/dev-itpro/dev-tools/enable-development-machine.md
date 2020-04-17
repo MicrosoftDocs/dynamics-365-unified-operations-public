@@ -24,7 +24,7 @@ ms.custom: 31621
 ms.assetid: c56d5cdf-3c01-4730-bda5-bb5f8f79e375
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -55,9 +55,9 @@ To enable a new user account to develop on the VM, the user account must be an a
 
     **Examples**
 
-        > ProvisionAxDeveloper.ps1 RDXP00DB20RAINM RDXP00DB20RAINM\username1
+    -  `ProvisionAxDeveloper.ps1 RDXP00DB20RAINM RDXP00DB20RAINM\username1`
 
-        > ProvisionAxDeveloper.ps1 -databaseservername RDXP00DB20RAINM -users RDXP00DB20RAINM\username1,RDXP00DB20RAINM\username2
+    -  `ProvisionAxDeveloper.ps1 -databaseservername RDXP00DB20RAINM -users RDXP00DB20RAINM\username1,RDXP00DB20RAINM\username2`
 
 4.  If more than one user account will be developing on the same version control workspace, you need to make the workspace public.
     1.  In Visual Studio, open **Source Control Explorer**, select the workspace drop-down and select **Manage workspaces**.

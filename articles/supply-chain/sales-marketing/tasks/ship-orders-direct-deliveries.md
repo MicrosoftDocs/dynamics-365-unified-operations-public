@@ -4,7 +4,7 @@
 title: Ship orders as direct deliveries
 description: This topic demonstrates how to create a direct delivery for a sales order. 
 author: omulvad  
-manager: AnnBe 
+manager: tfehr 
 ms.date: 07/11/2019  
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, PurchCreateFromSalesOrder, VendAccountItemLookup, SalesTableReferences, PurchTable, PurchEditLines, PurchTableReferences, MCRDropShipWorkbench   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Ship orders as direct deliveries
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic demonstrates how to create a direct delivery for a sales order. You use direct delivery when you want to ship goods to the customer directly from your vendor, instead of shipping them to your own warehouse first. You can run this procedure in demo data company USMF or on your own data. To successfully complete the second sub-task "Create direct deliveries from the workbench", make sure that the item that you choose on the sales order has a default Vendor specified on the Purchase FastTab of the Released product master.
 
@@ -40,7 +40,7 @@ This topic demonstrates how to create a direct delivery for a sales order. You u
 5. On the Action Pane, select **Sales order**, then select **Direct delivery**. The Create delivery page lists all the open sales order lines as copied from the sales order. You can review the order details, and if required, you can modify details such purchase quantity and pricing terms before you create the direct delivery.  
 6. Select **Yes** in the **Include all** field.
     - If you want to generate a direct delivery for only a subset of the sales order lines, select these individually.  
-    - The **Vendor account** field may or may not already be populated with a vendor number. If the default vendor is set up for the product (on the associated Item coverage) then this vendor will be copied to the line. Otherwise, you must enter a vendor manually. In this example, we’ll select a new vendor in the next step, even if one is already populated.   
+    - The **Vendor account** field may or may not already be populated with a vendor number. If the default vendor is set up for the product (on the associated Item coverage) then this vendor will be copied to the line. Otherwise, you must enter a vendor manually. In this example, we'll select a new vendor in the next step, even if one is already populated.   
 7. Enter or select a value in the **Vendor account** field, then select **OK**. The message informs you that the purchase order has now been created.   
 8. Expand the **Line details** section.
 9. Select the **Delivery** tab and verify that the **Direct delivery** field is set to **Yes**.

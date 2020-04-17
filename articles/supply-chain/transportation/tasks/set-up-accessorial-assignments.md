@@ -4,7 +4,7 @@
 title: Set up accessorial assignments
 description: This procedure shows how to set up an accessorial assignment. 
 author: ShylaThompson
-manager: AnnBe 
+manager: tfehr 
 ms.date: 11/14/2016
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Set up accessorial assignments
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure shows how to set up an accessorial assignment. This is typically done by a transportation coordinator. Before you use this guide you need to run the "Set up hub accessorial charges and accessorial masters" guide.
 

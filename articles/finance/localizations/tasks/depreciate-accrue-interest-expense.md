@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Depreciate and accrue the interest expense for asset retirement obligations
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 For Japan, the depreciation of the asset retirement obligations (ARO) is processed along with the fixed asset. In addition, interest expenses need to be accrued to recognize the full amount of the ARO.
 

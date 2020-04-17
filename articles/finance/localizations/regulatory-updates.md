@@ -2,10 +2,10 @@
 # required metadata
 
 title: Regulatory updates
-description: This topic provides a list of planned and released reguatory updates for Microsoft Dynamics 365 Finance.
+description: This topic provides a list of planned and released regulatory updates for Microsoft Dynamics 365 Finance.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/26/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -46,68 +46,46 @@ Regulatory updates that are released as part of the monthly updated are indicate
 
 For the latest regulatory update plans, refer to the following table.   
 
-|Planned release date|Release version|Country|Regulatory update|
+|Country|Planned release date|Release version|Regulatory update|
 |--------------------|---------------|-------|-------|
-|      December - October 2019          |   10.0.8(PEAP), 10.0.7HF, 10.0.6HF      | Mexico      |   Retail -  CFDI Global: Misc. Resol 2019 - c_CodigoPostal and Timezone |
-|      December 2019          |   10.0.78(PEAP)     | Singapore      |   GST return report |
-|      December 2019          |   10.0.8(PEAP)      | Italy      |   Changes in VAT management by D.L. 119 of 23 Oct 2018: Yearly tax communication |
-|      December 2019          |   10.0.8(PEAP)      | United Kingdom      |   Making Tax Digital (MTD) - Consent of system administrator to transmit information outside of D365 using the integration with HMRC | 
-|      December - October 2019          |   10.0.8(PEAP), 10.0.7HF, 10.0.6HF      | Mexico      |   Code validation in Products and Services catalog | 
-|      December 2019         |   10.0.8(PEAP)      | Brazil      |   Sped Fiscal Layout 014 | 
-|      December - November 2019          |   10.0.8(PEAP), 10.0.7HF      | Japan      |   Consumption tax rate change and reduced tax rate is introduced (Consumption tax report) | 
-|      November 2019          |   10.0.7      | Italy      |   Changes in VAT management by D.L. 119 of 23 Oct 2019: Quarterly VAT communication  ("Lipe 2018")    |
-|      November 2019          |   10.0.7      | Italy      |   Retail - Managing customer information in POS |
-|      November 2019          |   10.0.7      | Italy      |   Retail - Printing customer information in fiscal receipt | 
-|      November 2019          |   10.0.7      | Japan      |   Consumption rate change and reduced tax rate is introduced (invoice layouts) | 
-|      November - September 2019          |   10.0.7, 10.0.6HF      | Mexico      |   Updating Rule 2.7.2.9 - Using the time zone of ZIP code of the establishment that is issuing the CFDI document |
-|      November - October 2019          |   10.0.7, 10.0.6HF      | Poland     |   Mandatory split payment - 10.0.7 |
-|      November 2019          |   10.0.7      | United Kingdom     |   Making Tax Digital - VAT return report creation for companies reporting as VAT group within the same system database v.10 | 
-|      November - August 2019          |   10.0.7, 10.0.6HF, 10.0.5HF, 10.0.4HF, 10.0.3HF      | Brazil      |   A new version of technical notes for NF-e: NT 2019.001 Version 1.20    |
-|      November - August 2019          |   10.0.7, 10.0.6      | Brazil      |   DRCST declaration SC   |
-|      November - August 2019          |   10.0.7, 10.0.6      | Italy      |   Changes in VAT management by D.L. 119 of 23 Oct 2018 - Dynamics 365 for Finance and Operations  |
-|      November 2019          |   10.0.6HF      | Japan      |   Consumption tax rate change and reduced tax rate is introduced (Consumption tax report)  |
-|      August 2019          |   10.0.6HF, 10.0.5HF, 10.0.4HF, 10.0.3HF      | Brazil      |   A new version of technical notes for NF-e: NT 2019.001 Version 1.10    |
-|      August 2019          |   10.0.6, 10.0.5HF      | Brazil     |   New legislation is implemented by RJ state relating  to the EFD-ICMS/IPI. The Resolution 13/19 of Rio de Janeiro (RJ) implementation is  for “Special procedures to be applied on Exoneration     |
-|      August 2019          |   10.0.6      | Brazil      |   Tax statement CAT 42/18    |
-|      August 2019          |   10.0.6      | India      |   Retail: Management of customer registration numbers from POS for India    |
-|      August 2019          |   10.0.6      | Italy      |   Date of VAT register    |
-|      August 2019          |   10.0.6      | Italy      |   VAT management by Date of VAT register    |
-|      August 2019          |   10.0.6, 10.0.5HF, 10.0.4HF, 10.0.3HF      | Japan      |   Consumption tax rate change and reduced tax rate is introduced    |
-|      August - July 2019          |   10.0.5, 10.0.4HF, 10.0.3HF      | Spain      |   Spain: SII: Validation rules change from October 1, 2019    |
-|      July 2019          |   10.0.5, 10.0.4HF, 10.0.2HF      | Brazil      |   A new version of technical notes for NF-e: NT 2019.001 Version 1.00  |
-|      July 2019          |   10.0.5      | Brazil      |   Sped contributions practical guide 1.31. new guidance    |
-|      July 2019          |   10.0.5      | Mexico      |   MX -CFDI 3.3 - The detail of IEPS tax transactions in XML should be optional depending on customer profile    |
-|      June - July 2019          |   10.0.5, 10.0.3HF      | United Kingdom      |   Making Tax Digital - fraud prevention parameters about originating device - 10.0.5    |
-|      May 2019          |   10.0.4      | Brazil      |   Incoming fiscal document 66    |
-|      May 2019          |   10.0.4, 10.0.3HF, 10.02HF, 10.0.1HF      | Brazil      |   NF-e Decree 54.308/18 - RS    |
-|      May 2019          |   10.0.4, 10.0.3HF, 10.0.2HF, 10.0.1HF      | Brazil      |   NF-e and NFC-e - Resolution 13/2019 and Ordinance SUCIEF 55/2019- RJ - new conditions for exempt tags output in NF-e    |
-|      May 2019          |   10.0.4, 10.0.3HF      | India      |   Display of "Place of supply" and "State" in the GST Tax Invoice    |
-|      May 2019          |   10.0.4      | Mexico      |   DIOT third party declaration - changes in layout 2019    |
-|      April 2019          |   10.0.3      | Brazil      |   ICMS fiscal document adjustments enable table 5.2    |
-|      April 2019          |   10.0.3, 10.0.2HF, 10.0.1HF      | Brazil      |   NF-e new NT 2018.005 - v.1.20    |
-|      April 2019          |   10.0.3, 10.0.2HF, 10.0.1HF      | Brazil     |   SPED ECD Layout 7    |
-|      April 2019          |   10.0.3      | Brazil      |   SPED ECF - Layout 5 for 2019    |
-|      April 2019          |   10.0.3      | India      |   Adjustment of tax in customs currency in BOE instead of doing in transaction currency    |
-|      April 2019          |   10.0.3      | India      |   Calculation of tax  in customs currency in BOE instead of doing in transaction currency   |
-|      April 2019          |   10.0.3, 10.02HF, 10.0.1HF      | India      |   IEC number format change    |
-|      April 2019          |   10.0.3      | Lithuania      |   Lithuania i.SAF report let's user define system Sales tax codes in association with legal tax codes)    |
-|      April 2019          |   10.0.3      | Poland      |   SAF invoices (JPK_FA) v.2 from 1st of July 2019    |
-|      April 2019          |   10.0.2      | Italy      |   Italy: "new Spesometro" (Esterometro) to support file splitting by file volume and limits of number of records    |
-|      April 2019          |   10.0.1      |    Austria     |Retail - Fiscal integration         |
-|      April 2019          |   10.0.1      |    Europe     |E-invoicing - Customers invoices export in PEPPOL BIS 3 format         |
-|      April 2019          |   10.0.1      |    Europe     |E-invoicing - Vendors invoices import from PEPPOL BIS 3 format         |
-|      April 2019          |   10.0.1      |   Germany     |E-invoicing - Customers invoices export in xRechnung 1.1 format         |
-|      April 2019          |   10.0.1      | Hungary      |  Hungary: Online invoicing v.1.1 2019  |
-|      April 2019          |   10.0.1      | Japan      |  2019 Japanese Calendar Era Change  |
-|      April 2019          |   10.0.1      |    Russia     |Land tax declaration changes from 2018 |
-|      April 2019          |   10.0.1      |    Russia     |[Assessed tax declaration](rus-assessed-tax-declaration.md)|
-|      April 2019          |   10.0.1      |    Russia     |Transport tax declaration changes from 2019  |
-|      April 2019          |   10.0.1      |    Russia     |[VAT declaration](rus-VAT-declaration.md) |
-|      April 2019          |   10.0.1      |    Russia     |VAT declaration format changes from 2019 (Sales and Purchase books) |
-|      April 2019          |   10.0.1      |    United Kingdom     |[Prepare Finance and Operations for integration with MTD for VAT](emea-gbr-mtd-vat-integration.md)    |    
-|      March 2019          |   10.0.0      |    Austria   |   Changes in Kammerumlage 2019 (Purchase duty)    |
-|      March 2019          |   10.0.0      |    Brazil    |     SPED EFD Contributions - Layout  004 and 005  |
-|      March 2019          |   10.0.0      |    Malaysia     |Malaysia replaces GST with SST sales & service tax        |
+|      Brazil         |   April 2020 - January 2020      | 10.0.10, 10.0.9HF, 10.0.8HF      |   DRCST SC – Ordinance SEF Nº 416    |
+|      Brazil         |   April 2020      | 10.0.10      |   SPED Contribuições (PIS/COFINS) - Blocks M115 and M515    |
+|      Brazil         |   April 2020      | 10.0.10      |   Sped Contributions - Record C100 and D100 updates when the credit is not recoverable    |
+|      Brazil         |   April 2020  - January 2020     | 10.0.10, 10.0.9HF, 10.0.8HF      |   SPED Contribution - Layout for Jan-2020    |
+|      Brazil         |   March 2020       | 10.0.9      |   Sped fiscal - changes in record D100 field COD_MUN_ORI    |
+|      Brazil         |   March 2020 - January 2020       | 10.0.9, 10.0.8      |   DRCST SC – Ordinance SEF Nº 254/19    |
+|      Brazil         |   January 2020       | 10.0.8      |   Complementary information of ICMS-ST    |
+|      Brazil         |   March 2020 - January 2020       | 10.0.9, 10.0.8HF      |   Sped Fiscal Layout 014 |
+|      Brazil         |   March 2020 - January 2020       | 10.0.9, 10.0.8HF      |   DRCST SC – Ordinance SEF Nº 343DR   |
+|      Brazil         |   May 2020 - March 2020      | 10.0.11, 10.0.10HF, 10.0.9HF      |   SPED ECD layout 8   |
+|      Brazil         |   May 2020 - April 2020      | 10.0.11, 10.0.10HF, 10.0.9HF, 10.0.8HF      |   Technical note NT2019.001 v1.40   |
+|      France         |   April 2020       | 10.0.10      |   Legal fees declaration to tax authorities for self-employed people (DAS2)    |
+|      France         |   March 2020       | 10.0.9      |   French localization: ISO 20022 format for international payment and treasury transfer    |
+|      Hungary         |   May 2020 - March 2020       | 10.0.11, 10.0.9HF, 10.0.8HF     |   Online invoicing system v.2.0 on Finance and Operations    |
+|      India         |   March 2020      | 10.0.9      |   New GSTR (ANX-1 & ANX-2) Return offline Tool    |
+|      Italy         |   January 2020      | 10.0.8      |   Changes in VAT management by D.L. 119 of 23 Oct 2018: Yearly tax communication    |
+|      Italy         |   March 2020      | 10.0.9, 10.0.8HF      |   Retail - Managing customer information in POS |
+|      Italy         |   March 2020      | 10.0.9, 10.0.8HF      |   Retail - Printing customer information in fiscal receipt |
+|      Japan          |   March 2020     | 10.0.9, 10.0.8HF     |   Japan Bankers Association replacing JBA fixed-length payment formats with ISO20022 |
+|      Japan          |   January 2020      | 10.0.8       |   Consumption tax rate change and reduced tax rate is introduced (Consumption tax report) |
+|      Mexico          |   January 2020     | 10.0.8        |   Retail -  CFDI Global: Misc. Resol 2019 - c_CodigoPostal and Timezone |
+|      Mexico           |   January 2020       | 10.0.8     |   Code validation in Products and Services catalog |
+|      Netherlands          |   April 2020   | 10.0.10     |   Dutch Taxonomy new version - NT14 |
+|      Norway          |   March 2020   | 10.0.9, 10.0.8HF     |   SAF-T XSD update to version 1.1 for Dynamics 365 for Finance and Operations |
+|      Poland          |   March 2020    | 10.0.9     |   Purchase VAT register and SAF VAT register: Custom agency from SAD documents must be replaced by third-party name and tax-exempt number |
+|      Poland          |   March 2020 - January 2020   | 10.0.9, 10.0.8HF     |   Retail - Managing customer information in POS |
+|      Poland          |   March 2020 - January 2020     | 10.0.9, 10.0.8HF     |   Retail - Printing customer information in fiscal receipt |
+|      Poland          |   March 2020 - January 2020     | 10.0.9, 10.0.8     |   SAF invoices (JPK_FA) v.3 from 2Dec2019 |
+|      Poland          |   April 2020 - January 2020     | 10.0.10, 10.0.9, 10.0.8     |   JPK_VDEK replacing JPK_VAT (SAF VAT) |
+|      Poland          |   May 2020     | 10.0.11     |   Split AP/AR realized exchange difference amount into exchange difference of invoice net value and of VAT amount  |
+|      Poland          |   May 2020     | 10.0.11     |   SAF Accounting books  – Posting layers filtering improvements |
+|      Poland          |   May 2020     | 10.0.11     |   JPK_VDEK supplemented pack I |
+|      Russia          |   March 2020     | 10.0.9     |   Format of property tax declaration for 2019 reporting |
+|      Russia          |   March 2020     | 10.0.9     |   Profit tax declaration format updates |
+|      Singapore           |   January 2020     | 10.0.8      |   GST return report |
+|      Switzerland           |   March 2020     | 10.0.9      |   Swiss payment slip ISR gets new format (QR-code) |
+|      United Kingdom           |   April 2020     | 10.0.10      |   MTD fraud prevention supplemented pack |
+|      United Kingdom         |   January 2020      | 10.0.8      |   Making Tax Digital (MTD) - Consent of system administrator to transmit information outside of D365 using the integration with HMRC    |
 
 
 

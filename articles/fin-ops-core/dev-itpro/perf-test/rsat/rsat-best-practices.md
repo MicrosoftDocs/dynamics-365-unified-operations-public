@@ -37,6 +37,8 @@ This topic describes how to use the Regression suite automation tool (RSAT)/Task
 
 ## Authoring test cases using the Task recorder
 
+When you author task recordings for RSAT, follow these practices:
+
 1. Make sure all your recordings start on the main dashboard.
 2. Keep individual recordings short and focus on a business task performed by one user, like creating a sales order. This simplifies maintainability and reusability of test cases.
 3. Chart controls are not supported. Any task recording actions related to charts will be ignored by RSAT during test case playback.
@@ -56,38 +58,37 @@ This topic describes how to use the Regression suite automation tool (RSAT)/Task
 
 4. For test parameters that need a unique value, for example, the product receipt number in the **Product Receipt** form or the invoice number in the **Vendor Invoice** form, use the **RandBetween(a,b)** Excel function to generate a unique number every time the test case is executed.
 5. The default values in Excel come from the task recording. For **Reference Group** controls such as storage dimensions or tracking dimensions, it stores the key of the lookup instead of the value, for example, **2** instead of **SiteWH**. We recommend that you update these fields with the actual value in Excel so that the test is more robust and resilient to changes.
-6. It is recommended to set the same locale for **Language** and **Date ,time, and number format** settings of your environment prior to running RSAT. If these values are inconsistent, it may result in validation errors.  
+6. It is recommended to set the same locale for **Language** and **Date ,time, and number format** settings of your environment prior to running RSAT. If these values are inconsistent, it may result in validation errors.
 
-  
-   ![Set locale, date, time, and number format](media/locale.png)
+    ![Set locale, date, time, and number format](media/locale.png)
 
-The following are typical usage sequences.
+## Management of local recording files
 
-**Sequence A: Load > New > Edit > Run > Upload**
+RSAT relies on Azure DevOps to store and manage test recording files (also known as task recordings). When RSAT loads a test plan from Azure DevOps, associated files are downloaded to the current **working directory** on your local computer. (This working directory is defined in RSAT settings.)
 
-1. Select **Load**.
-2. Select a test cases.
-3. If some test cases have no parameter file, select **New** to generate them. 
-4. Optional: Edit Excel file to run tests with different parameters.
-5. Select **Run**.
-6. Optional: After a successful run, select **Upload** to upload all generated automation files (including Excel test parameter files) to Azure DevOps. 
+In version 1.200.42264.6 and later, it's easier to manage local recording files. You can make changes in Task recorder and then use RSAT to test them, without having to go through the Business process modeler (BPM) or Azure DevOps. When you use Task recorder, after you've finished authoring or modifying a recording, you can save it directly to your local disk as a developer recording.
 
-**Sequence B: Load > Edit > Run > Upload**
+![Saving a task recording as a developer recording](media/rsat-save-as-developer-recording.png)
 
-1. Select **Load**. If all parameter files already exist, you do not need to select **New** to regenerate them.
-2. Optional: Edit Excel file to run tests with different parameters.
-3. Select **Run**.
-4. Optional: After a successful run, select **Upload** to upload all generated automation files (including Excel test parameter files) to Azure DevOps. 
+Put the recording file under the working directory that is associated with the test case. For example, if your configured working directory is C:\\Users\\\<username\>\\Documents\\RSAT, put the recording file for test case 1234 under C:\\Users\\\<username\>\\Documents\\RSAT\\1234\\attachments. You must name the developer recording file **Recording.xml**. Alternatively, you can name the recording file **-Test Case Title-.xml**, where **-Test Case Title-** is the title of the test case in Azure DevOps.
 
-**Sequence C: Load > New (for all test cases) > Run > Upload**
+The following illustration shows an example of a working directory folder structure. You can open the directory directly from RSAT by clicking the folder symbol.
 
-This sequence is recommended after installing a new version of the tool. 
+![Working directory example](media/rsat-working-directory-example.png)
 
-1. Select **Load**. 
-2. Select all test cases in the test plan and select **New**.
-3. Edit Excel parameter files.
-4. Select **Run**.
-5. After a successful run, select **Upload** to upload all generated test artifacts to Azure DevOps. 
+Each test case has its own folder, which is named after the ID of the test case. Test case attachments (recording files, automation files, and Excel parameter files) are downloaded into an attachments folder. Here is an example.
+
+![Test case attachments](media/rsat-test-case-attachments.png)
+
+The generatorLogs directory contains log files. It doesn't contain any files that users can modify. You can ignore this directory unless RSAT support explicitly asks you to provide log files from it.
+
+### Commit a recording file to Azure DevOps
+
+After a recording has been tested and finalized, use RSAT to upload it and commit it to Azure DevOps. The upload button has two options: **Upload automation files** and **Upload recording file**. The second option uploads only your recording file to Azure DevOps.
+
+> [!NOTE]
+> - If you're using a version of RSAT that is earlier than 1.200.37255.0, and you upgrade to the latest version, you must reload your test cases from Azure DevOps to download them into the correct directory. Otherwise, RSAT will fail, and you will receive a "File not found" error.
+> - If you're working across several DevOps projects, we recommend that you use a different working directory for each project. Otherwise, attachment files from multiple projects can become commingled in the same directory structure.
 
 ## How to modify a Task recording
 
@@ -96,10 +97,10 @@ If you want to modify an existing task recording, note these best practices.
 In the web client, open the Task recorder pane and start editing the recording using the **Edit Recording** option.
 
 ![Edit recording option](media/edit-recording.png)
-  
-When you finish editing, save or download the recording, then play it back in the client and verify that all the steps work correctly.
+
+When you've finished editing the recording, play it back in the client, and verify that all the steps work correctly. Playback is required.
 
 ![Playback recording option](media/playback-recording.png)
  
-After playing back an edited recording, save it. It is then ready to be used by RSAT.
+After you've finished playing back an edited recording, save it. It's then ready to be used by RSAT.
 

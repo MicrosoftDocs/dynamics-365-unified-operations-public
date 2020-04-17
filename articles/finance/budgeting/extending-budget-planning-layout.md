@@ -29,6 +29,8 @@ ms.dyn365.ops.version: 10.0.4
 
 # Extend the budget planning layout
 
+[!include [banner](../includes/banner.md)]
+
 ## Overview
 
 This topic describes the process for extending the number of columns in the BudgetPlanLineActiveView table to accommodate additional data in the budget plan layout. This process might be required if you're comparing information over multiple years, if many scenarios are being evaluated, or if weekly or daily periods are being evaluated. This topic was written for a developer audience.
@@ -72,7 +74,7 @@ To update the **BudgetPlan** form so that it includes the new columns, follow th
 1. Create an extension on the **BudgetPlan** form.
 2. Replicate any events or customizations in a new event handler that exists on the **TransactionCurrencyAmount**, or **Quantity** fields, onto the new fields. The following example shows the standard events that currently exist for both **CurrencyAmount** and **Quantity**. These events must be created for anything beyond the original 36 **CurrencyAmount** and **Quantity** values.
 
-    ```
+    ```xpp
     [FormDataFieldEventHandler(formDataFieldStr(BudgetPlan, BudgetPlanLineActiveView, TransactionCurrencyAmount37), FormDataFieldEventType::Modified)]
     publicstaticvoid transactionCurrencyAmount37\_OnModified(FormDataObject \_sender, FormDataFieldEventArgs \_e)
     {
@@ -103,7 +105,7 @@ To extend the mapping between the BudgetPlanLineActiveView and BudgetPlanLine ta
 
 - Create a new class, and paste in the event handler method from the **gettingBudgetPlanLineFieldName** delegate. There should be a statement for each **TransactionCurrencyAmount** and **Quantity** field that you extended.
 
-    ```
+    ```xpp
     [SubscribesTo(classStr(BudgetPlanLineFieldActiveViewMapping), staticDelegateStr(BudgetPlanLineFieldActiveViewMapping, gettingBudgetPlanLineFieldName))]
     publicstaticvoid BudgetPlanLineFieldActiveViewMapping\_gettingBudgetPlanLineFieldName(FieldName \_budgetPlanLineActiveViewFieldName, EventHandlerResult \_result)
     {

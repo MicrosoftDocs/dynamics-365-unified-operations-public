@@ -176,8 +176,8 @@ In this exercise, you'll be creating a new report. The report is a side-by-side 
 3. Create a new column definition by clicking **File**, then **New**, and then **Column Definition**.
 4. In **Column A**, select **DESC** for the column type.
 5. In **Column B**, select **FD** for the column type.
-6. Double click in **the Dimension Filter** field.
-7. In the **Dimension** window, double click the **Department** column.
+6. Double-click in **the Dimension Filter** field.
+7. In the **Dimension** window, double-click the **Department** column.
 8. In the Individual or range section of the dialog, click the **ellipsis** for the **From** field to display a list of departments.
 9. Select department **022**, **Sales & Marketing** and then click **OK**.
 10. Repeat steps 5 to 8 for Departments 23-25.
@@ -201,4 +201,4 @@ In this exercise, you'll be creating a new report. The report is a side-by-side 
 
 [View financial reports](../../../finance/general-ledger/view-financial-reports.md)
 
-[Dynamics Financial Reporting Blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Dynamics Financial Reporting Blog](https://blogs.msdn.com/b/dynamics_financial_reporting/)
