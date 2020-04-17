@@ -180,9 +180,9 @@ In addition, major changes have been made to the depreciation process. These cha
         | Fixed asset | Book      | Transaction type | Transaction date | Currency | Amount in transaction currency | Amount  | Exch rate | Reporting currency amount |
         |-------------|-----------|------------------|------------------|----------|--------------------------------|---------|-----------|---------------------------|
         | BUIL-00001  | 200\_SLLT | Acquisition      | 6/3/2016         | DKK      | 1,000,000                      | 500,000 | 2.5       | 250,000                   |
-        | BUIL-00001  | 200\_SLLT | Depreciation     | 6/3/2016         | DKK      | 50,000                         | 50,000  | 2.5       | 250,000                   |
-        | BUIL-00001  | 200\_SLLT | Depreciation     | 6/3/2016         | DKK      | 50,000                         | 50,000  | 2.5       | 250,000                   |
-        | BUIL-00001  | 200\_SLLT | Depreciation     | 6/3/2016         | DKK      | 50,000                         | 50,000  | 2.5       | 250,000                   |
+        | BUIL-00001  | 200\_SLLT | Depreciation     | 6/3/2016         | USD      | 50,000                         | 50,000  | 2.5       |  25,000                   |
+        | BUIL-00001  | 200\_SLLT | Depreciation     | 6/3/2016         | USD      | 50,000                         | 50,000  | 2.5       |  25,000                   |
+        | BUIL-00001  | 200\_SLLT | Depreciation     | 6/3/2016         | USD      | 50,000                         | 50,000  | 2.5       |  25,000                   |
 
     - Many customers tracked their asset transaction details in workbooks. These details include the exchange rates and amounts. If you have this data in a workbook, you can create a custom exchange rate type and update it with the exchange rates from the workbook. This exchange rate type will then be used to enter a default exchange rate on the acquisition date and calculate the reporting currency amount. If an exchange rate type isn't selected, the wizard uses the exchange rate type that was defined on the ledger.
     - The exchange rate and reporting currency amounts can be changed. If the exchange rate is changed, the reporting currency amount is recalculated by using the new rate.
