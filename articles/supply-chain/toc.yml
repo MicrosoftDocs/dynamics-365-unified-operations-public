@@ -1225,6 +1225,8 @@
           href: inventory/enable-quality-management.md
         - name: Quality management processes
           href: inventory/quality-management-processes.md
+        - name: Quality management for warehouse processes
+          href: inventory/quality-management-for-warehouses-processes.md
         - name: Nonconformance management
           href: inventory/enable-nonconformance-management.md
         - name: Set up prerequisites for management
