@@ -3,9 +3,9 @@
 
 title: Integrate asset management with fixed assets
 description: By integrating asset management with fixed assets, you'll be able to link fixed assets with maintenance assets.
-author: XXXX
+author: kamaybac
 manager: tfehr
-ms.date: 04/14/2020
+ms.date: 04/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,54 +23,51 @@ ms.search.scope:  Core, Operations
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: dabourq
-ms.search.validFrom: 2020-04-14
-ms.dyn365.ops.version: Release 10.0.12
+ms.search.validFrom: 2020-04-17
+ms.dyn365.ops.version: Release 10.0.11
 ---
-<!-- KFM: add Dana's GitHub user name to metadata -->
+
 # Integrate asset management with fixed assets
 
 By integrating the asset management and fixed assets modules, you'll be able to link fixed assets with maintenance assets. This enables fixed asset users to create a maintenance asset from a new or existing fixed asset, and enables asset management users to associate a maintenance asset with an existing fixed asset. This feature also makes it easy for fixed assets users to view the costs posted from work orders for the related maintenance asset.
 
-<!-- KFM: Is a "maintenance asset" the same as an "asset-management asset"? If so, we should describe this in the intro and then use just one of these terms in the rest of this topic. (I prefer "maintenance asset") -->
+> [!NOTE]
+> In the remainder of this topic, we refer to assets from the asset-management module as *maintenance assets*, and assets from the fixed-assets module as *fixed assets*.
 
-## Set a default location for new asset-management assets created from fixed assets (optional)
+## Set a default location for new maintenance assets created from fixed assets (optional)
 
-This optional configuration option enables you to set a default functional location for new asset-management assets created from fixed assets. You'll typically do this just once, if at all. To make this setting:
+This optional configuration option enables you to set a default functional location for new maintenance assets created from fixed assets. You'll typically do this just once, if at all. To make this setting:
 
 1. Go to **Asset Management > Setup > Asset Management parameters**.
 1. Open the **Fixed assets** tab.
 1. Open the **Functional location** drop-down list and select the default location.
 1. On the action pane, select **Save**.
 
-<!-- KFM: The labeling in the UI here suggests that we are choosing a functional location for *fixed assets*, not for *asset-management assets* (which aren't mentioned here). We should consider improving the labeling, though the tooltip helps to clarify this.  -->
-
-## Work with integrated assets
+## Work with integrated maintenance and fixed assets
 
 This section provides a collection of procedures that illustrate various ways that can work with the integrated asset-management and fixed-assets features.
 
-<!-- Maybe we should have a procedure that describes how to remove the asset association (eg, so we can make a new one).  -->
+### Associate an existing maintenance asset with a fixed asset
 
-### Associate an existing asset-management asset with a fixed-assets asset
-
-To associate an existing asset-management asset with a fixed-assets asset:
+To associate an existing maintenance asset with a fixed asset:
 
 1. Go to **Asset management > Assets > All assets** (or **Active assets**).
 1. Select an asset.
-1. On the **Fixed asset** FastTab, open the **Fixed assets number** drop-down list and select an existing fixed-assets asset.
+1. On the **Fixed asset** FastTab, open the **Fixed assets number** drop-down list and select an existing fixed asset.
 1. On the action pane, select **Save**.
 
-### View the fixed-assets asset associated with a selected asset-management asset
+### View the fixed asset associated with a selected maintenance asset
 
-To view the fixed-assets asset associated with a selected asset-management asset:
+To view the fixed asset associated with a selected maintenance asset:
 
 1. Go to **Asset management > Assets > All assets** (or **Active assets**).
 1. Select an asset.
 1. On the **Fixed asset** FastTab, select the hyperlink shown on the **Fixed assets number** drop-down list.
 1. The **Fixed assets** page for your selected asset opens (normally found under **Fixed assets > Fixed assets > Fixed assets**).
 
-### View the maintenance asset associated with a selected fixed-assets asset
+### View the maintenance asset associated with a selected fixed asset
 
-To view the maintenance asset associated with a selected fixed-assets asset:
+To view the maintenance asset associated with a selected fixed asset:
 
 1. Go to **Fixed assets > Fixed assets > Fixed assets**.
 1. Select an asset.
@@ -81,7 +78,6 @@ To view the maintenance asset associated with a selected fixed-assets asset:
 
 Maintenance assets can have asset-management work orders posted for them, and each of these work orders typically has a cost. When a fixed asset is associated with a maintenance asset, you can jump straight from the fixed asset to view these related costs.
 
-<!-- KFM: This confused me, so I added the intro here. Please read and confirm that I have understood this correctly. -->
 To view maintenance costs associated with a fixed asset:
 
 1. Go to **Fixed Assets > Fixed Assets > Fixed Assets**.
@@ -89,21 +85,34 @@ To view maintenance costs associated with a fixed asset:
 1. On the action pane, open the **Asset Management** tab and select **View > Maintenance cost**.
 1. The **Maintenance cost** page opens, showing the related costs.
 
-### Create a maintenance asset for an existing fixed-assets asset
+<a name="new-maintenance-from-fixed"></a>
 
-To create a maintenance asset for an existing fixed-assets asset:
+### Create a new maintenance asset for an existing fixed asset
+
+To create a new maintenance asset for an existing fixed asset:
 
 1. Go to **Fixed Assets > Fixed Assets > Fixed Assets**.
 1. Select an asset.
 1. On the action pane, open the **Asset Management** tab and select **New > Create maintenance asset**. (If this option is disabled, then your selected fixed asset might already have a  maintenance asset associated with it.)
 1. Finish creating the asset as described in [Create an asset](../objects/create-an-object.md).
 
-### Create a new fixed-assets asset and add a new maintenance asset for it
-<!-- KFM: The following procedure seems redundant with the previous one. Maybe we should delete it. -->
-To create a new fixed-assets asset and add a new maintenance asset for it:
+### Create a new fixed asset and add a new maintenance asset for it
+
+To create a new fixed asset and add a new maintenance asset for it:
 
 1. Go to **Fixed assets > Fixed assets > Fixed assets**.
 1. On the action pane, select **New**.
 1. Finish creating the fixed asset as described in [Create a fixed asset](../../../finance/fixed-assets/tasks/create-fixed-asset.md)
 1. On the action pane, open the **Asset Management** tab and select **New > Create maintenance asset**.
 1. Finish creating the asset as described in [Create an asset](../objects/create-an-object.md).
+
+### Remove the association between two assets
+
+In some cases, you may need to disassociate a maintenance asset from its fixed asset. For example, if you want to [create a new maintenance asset](#new-maintenance-from-fixed) from a fixed asset, then you must clear the existing association first (if there is one).
+
+To remove an existing association between a maintenance asset and fixed asset:
+
+1. Go to **Asset management > Assets > All assets** (or **Active assets**).
+1. Find and open the target fixed asset.
+1. On the **Fixed asset** FastTab, select and clear the value shown in the **Functional location** field.
+1. On the action pane, select **Save**.
