@@ -2,7 +2,7 @@
 # required metadata
 
 title: Get started with the cost accounting service
-description: Describes how to install the cost accounting service add-in and provides licensing details
+description: Licensing details and installation instructions for the cost accounting service
 author: AndersGirke
 manager: tfehr
 ms.date: 04/17/2020
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Release 10.0.12
 
 The cost accounting service doesn't currently support all of the cost-management features built into Dynamics 365 Supply Chain Management. Therefore, it's important that you evaluate whether the currently available feature set will meet your requirements.
 
-The cost accounting service is an add-in, which must be installed from Dynamics Lifecycle Services (LCS). Therefore, you have the opportunity to do your evaluation before it's turned on.
+The cost accounting service is an add-in, which must be installed from Dynamics Lifecycle Services (LCS) to make its features available. Therefore, you can choose to evaluate this feature on a test environment before it's turned on for production environments.
 
 The cost accounting service enables you to do multiple inventory accounting in the cost accounting ledgers that you have set up. You will associate each of these cost accounting ledgers with a convention, which is a collection of the following types of accounting policies:
 
@@ -57,7 +57,9 @@ The cost accounting service is licensed together with the standard accounting in
 > [!IMPORTANT]
 > To use the cost accounting service, you must have an LCS-enabled high-availability environment (not a OneBox environment), and you must be running Dynamics 365 Supply Chain Management version 10.0.11 (or higher).
 
-To use the cost accounting service, install the cost accounting service add-in for Dynamics 365 Supply Chain Management. You can access the add-in from your LCS project and turn on the cost accounting service functionality from the Supply Chain Management user interface (UI).
+To use the Cost accounting service, install the cost accounting service add-in for Dynamics 365 Supply Chain Management, as described in the following procedure.
+
+To install the cost accounting service add-in:
 
 1. Sign in to Dynamics Lifecycle Services (LCS).
 1. Go to **Preview feature management**.
@@ -78,3 +80,9 @@ To use the cost accounting service, install the cost accounting service add-in f
 ## Verify the integration
 
 You can verify the integration between the cost accounting service and Dynamics 365 Supply Chain Management by going to **Cost management > Cost accounting service > Setup > Cost accounting service parameters**.
+
+### More information about the cost accounting service
+
+To learn more about the cost accounting service (currently in private preview), see the following topic:
+
+[Cost accounting service home page](cost-accounting-service-home.md)
