@@ -71,8 +71,8 @@ In addition, you can collect the following optional information:
 	- Reset password Policy ID.
 	- Edit Profile Policy ID.
 
-[!NOTE]
-This information can be added later, through a service request.
+> [!NOTE]
+> This information can be added later, through a service request.
 
 After you've collected the required information, follow these steps to initialize e-Commerce.
 
