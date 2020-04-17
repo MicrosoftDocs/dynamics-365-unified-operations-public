@@ -40,7 +40,7 @@ The **Inventory value storage** report is helpful in cases where the output cont
 > [!NOTE]
 > The report won't include subtotals defined in the report layout. General ledger balances won't be included in the output even when defined in the report layout. Reconciliation to general ledger must be done using trial balance.
 
-## Enable Inventory value storage report
+## Enable the Inventory value storage report feature
 
 Before you can use this feature, you must enable it on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the feature status and enable it if needed. Here, the feature is listed as:
 
