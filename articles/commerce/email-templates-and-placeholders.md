@@ -138,27 +138,28 @@ The following placeholders display information for individual lines in the order
 
 ## Create a template for emailed receipts
 
-Receipts can be emailed to customers who make purchases at a retail point of sale. The steps required for creating the email template are the same as for other transactional events, with the following additions. 
+Receipts can be emailed to customers who make purchases at a retail point of sale. The steps required for creating the emailed receipt template are the same as for other transactional events, with the following modifications. 
 
-1. The Email ID of the email template must be **emailRecpt**.
-1. The text of the receipt is inserted into the email using the %message% placeholder. NOTE: In order to correctly render the receipt body, surround the %message% placeholder with HTML &lt;pre&gt;&lt;/pre&gt; tags. 
-1. Line breaks in the HTML for the header and footer of the email are converted to HTML &lt;br /&gt; tags so that the receipt body renders correctly. In order to eliminate unwanted vertical space in your receipt emails, remove all line breaks from the HTML where vertical space is not wanted. 
+- The email ID of the email template must be **emailRecpt**.
+- The text of the receipt is inserted into the email using the **%message%** placeholder. To correctly render the receipt body, surround the **%message%** placeholder with HTML **&lt;pre&gt;&lt;/pre&gt;** tags. 
+- Line breaks in the HTML for the header and footer of the email are converted to HTML **&lt;br /&gt;** tags so that the receipt body renders correctly. To eliminate unwanted vertical space in your receipt emails, remove all line breaks from the HTML where vertical space is not wanted. 
 
-For more information about how to configure email receipts, see [Set up email receipts](appuser-itpro/set-up-email-receipts)
+For more information about how to configure email receipts, see [Set up email receipts](appuser-itpro/set-up-email-receipts).
 
 ## Upload your email HTML
 
-After you have created and tested the HTML for your message body, it must be uploaded to Headquarters. Currently, email HTML cannot be exported, so you must maintain the master copy of our HTML outside of Dynamics Headquarters.
-To upload new or edited email template HTML:
+After you have created and tested the HTML for your message body, it must be uploaded to COmmerce headquarters. Currently, email HTML cannot be exported, so you must maintain the master copy of your HTML outside of headquarters.
 
-1. Select the row for the language you want to add or replace HTML for, or create a row for a new language by clicking **+New**.
+To upload new or edited email template HTML, follow these steps.
+
+1. Select the row for the language you want to add or replace HTML for, or create a row for a new language by selecting **+New**.
 1. Select **Edit**.
-1. Select **Browse**, navigate to the HTML document you wish to upload, and open it.
+1. Select **Browse**, navigate to the HTML document that you wish to upload, and open it.
 1. Select **Upload**.
-1. After your email HTML appears in the preview window, click **OK**
-1. Ensure that the **Has body** checkbox is checked for the row
+1. After your email HTML appears in the preview window, select **OK**.
+1. Ensure that the **Has body** checkbox is selected for the row.
 
-If you have already configured Headquarters to send email, your changes will go out to customers who conduct a transaction that invokes the event that is mapped to the template.  For more information about configuring emails in Dynamics 365 Commerce, see [Configure and send email](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json). 
+If you have already configured Headquarters to send email, your changes will go out to customers who conduct a transaction that invokes the event that is mapped to the template. For more information about configuring emails in Dynamics 365 Commerce, see [Configure and send email](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json). 
 
 ## Additional resources 
 
