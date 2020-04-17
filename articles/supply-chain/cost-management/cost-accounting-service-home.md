@@ -37,8 +37,6 @@ Organizations may prefer to account inventory by standard cost as part of their 
 
 The cost accounting service add-in for Dynamics 365 Supply Chain Management lets you account inventory in multiple ledgers, and thereby supports multiple currencies and multiple valuations.
 
-### More information about the cost accounting service
-
-To learn more about the cost accounting service, see the following topic:
+## Related resources
 
 [Get started with the cost accounting service](cost-accounting-service-get-started.md)

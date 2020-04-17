@@ -81,8 +81,6 @@ To install the cost accounting service add-in:
 
 You can verify the integration between the cost accounting service and Dynamics 365 Supply Chain Management by going to **Cost management > Cost accounting service > Setup > Cost accounting service parameters**.
 
-### More information about the cost accounting service
-
-To learn more about the cost accounting service, see the following topic:
+## Related resources
 
 [Cost accounting service home page](cost-accounting-service-home.md)
