@@ -52,7 +52,7 @@ Maintenance request lifecycle states define the stages that a request can go thr
 6. Set he **Set actual end** option to **Yes** if an actual end date and time should automatically be entered on a maintenance request that is in this lifecycle state.
 7. Set the **Create work order** option to **Yes** if a work order can be created from a maintenance request that is in this lifecycle state.
 8. Set the **Delete** option to **Yes** if a maintenance request can be deleted while it's in this lifecycle state.
-9. On the **Update** FastTab, the **Inbound** and **Outbound** options in the **Asset** section are relevant if you use depot repair.cSet the appropriate option to **Yes** if the asset lifecycle state of assets that are selected on a maintenance request should automatically be updated to **Inbound** or **Outbound** when the maintenance request lifecycle state of that maintenance request is set to **Inbound** or **Outbound**.
+9. On the **Update** FastTab, the **Inbound** and **Outbound** options in the **Asset** section are relevant if you use depot repair. Set the appropriate option to **Yes** if the asset lifecycle state of assets that are selected on a maintenance request should automatically be updated to **Inbound** or **Outbound** when the maintenance request lifecycle state of that maintenance request is set to **Inbound** or **Outbound**.
 
 The follow illustration shows an example of the **Maintenance request lifecycle states** page.
 
