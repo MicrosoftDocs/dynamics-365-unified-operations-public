@@ -51,11 +51,11 @@ After your Commerce preview environment has been provisioned end to end, additio
 6. Select **Login** to open a menu, and then select **Log on to environment**.
 7. Make sure that the **USRT** legal entity is selected in the upper-right corner.
 
-## Configure the point of sale in LCS
+## Configure the point of sale 
 
 ### Associate a worker with your identity
 
-To associate a worker with your identity in LCS, follow these steps.
+To associate a worker with your identity, follow these steps.
 
 1. Navigate to **Modules \> Retail and Commerce \> Employees \> Workers**.
 2. In the list, find and select the following record: **000713 - Andrew Collette**.
@@ -77,10 +77,13 @@ BOPIS scenarios with a credit card payment require hardware station. The hardwar
 ### Install Modern POS
 
 1. Navigate to **Retail and Commerce \> Channel setup \> POS setup \> Devices** and select **SANFRANCIS-5**.
-2. In the app bar, click **Download**, then click **Configuration file**.
+2. In the Action pane, click **Download**, then click **Configuration file**.
 3. Next, click **Download**, then click **Retail Modern POS**. 
 4. When the ModernPOSSetup.exe file download has completed, click **Open file**.
 
+![Open file](./dev-itpro/media/Payments/openfile.png)
+
+5. Click **Next** to proceed through installation. When installation is complete, click **Close**.
 
 ### Activate Cloud POS
 
