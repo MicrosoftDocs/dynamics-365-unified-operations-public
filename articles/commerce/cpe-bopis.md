@@ -28,7 +28,7 @@ ms.search.validFrom: 2020-04-20
 ms.dyn365.ops.version: Release 10.0.5
 ---
 
-# Configure a Dynamics 365 Commerce environment
+# Perform BOPIS scenarios in a Dynamics 365 Commerce environment
 
 
 [!include [banner](includes/banner.md)]
@@ -83,7 +83,7 @@ To activate Modern POS, follow these steps.
 ### Enable BOPIS in Modern POS
 
 1. Log into the modern POS using Operator ID **000713** and password **123**.
-2. when the introduction walkthrough video plays, check the two boxes in the bottom lefthand corner of the dialog, then close the dialog.
+2. When the introduction walkthrough video plays, check the two boxes in the bottom lefthand corner of the dialog, then close the dialog.
 3. If you are not prompted to close the shift, scroll to the right on the Welcome screen and click **Close shift**, then log back into the point of sale.
 4. Select **Perform a non-drawer operation** when prompted after login.
 5. on the Welcome screen, scroll to the far right and select the **Select hardware station** operation.
@@ -92,7 +92,7 @@ To activate Modern POS, follow these steps.
 8. Upon login, select **Open a new shift**, then select **Drawer**.
 
 
-## Create a Storefront order for pick up in store
+### Create a Storefront order for pick up in store
 
 1. Navigate to the URL specified during the [Initialize e-commerce step](https://docs.microsoft.com/en-us/dynamics365/commerce/provisioning-guide#initialize-e-commerce) in the environment configuration article.
 2. Select an item and click **Add to cart**.
@@ -113,6 +113,22 @@ To activate Modern POS, follow these steps.
 
 > [!IMPORTANT]
 > Never, under any circumstances, try to use actual credit card information on the test site.
+
+8. Proceed with checkout by entering billing address details, then click **Save and continue**.
+9. Click **Checkout** once the order is ready to be placed. 
+
+## Synchronize online orders to the back office
+
+Follow steps noted in the [Posting of online sales and payments](https://docs.microsoft.com/en-us/dynamics365/commerce/tasks/posting-online-sales-payments) article to synchronize online orders. 
+
+### Pick up in store
+
+1. Log into the point of sale. 
+2. Select **Order fulfillment** from the **Welcome screen**.
+3. In the list of items for pickup, select the line from the order placed online. 
+4. With the order line selected, click **Pick up**.
+5. The line item will be added to the transaction screen with a balance due of **$0.00**.
+6. Click the balance due of **$0.00** or select any payment method to conclude the transaction. 
 
 
 
