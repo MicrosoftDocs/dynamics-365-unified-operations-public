@@ -98,6 +98,3 @@ The fix for this error depends on the cause of the error:
 
 + If the mapping has dependent mappings, then make sure to enable the dependent mappings of this entity mapping.
 + The mapping might be missing source or destination fields. If a field in the Finance and Operations app is missing, then follow the steps in the section [Missing entity fields issue on maps](dual-write-troubleshooting-finops-upgrades#missing-entity-fields-issue-on-maps). Ia field in Common Data Service is missing, then click **Refresh entities** button on the mapping so that the fields are automatically populated back into the mapping.
-
-![Error while trying to start an entity map](media/tsg-error-starting-entity-map.png)
-
