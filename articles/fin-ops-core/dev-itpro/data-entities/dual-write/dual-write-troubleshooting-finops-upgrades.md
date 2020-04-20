@@ -89,10 +89,8 @@ If the issue still isn't fixed, follow these steps.
 > These steps guide you through the process of deleting an entity and then adding it again. To avoid issues, be sure to follow the steps exactly.
 
 1. In the Finance and Operations app, go to **Workspaces \> Data management**, and select the **Data entities** tile.
-2. Find the entity that is missing the attribute. Click Modify target mapping button.
-![Modify target mapping](media/modify-target-mapping.png)
-3. Click ‘Generate mapping’.
-![generate mapping](media/map-staging-to-target.png)
+2. Find the entity that is missing the attribute. Click **Modify target mapping** in the toolbar.
+3. On the **Map staging to target** pane, click **Generate mapping**.
 4. Open the **Entity mapping** page from the **Dual-write** page in the Finance and Operations app.
-5. If the attribute is not auto-populated on the map, add it manually using **Add attribute** button and Save. 
+5. If the attribute is not auto-populated on the map, add it manually by clicking **Add attribute** button and then clicking **Save**. 
 6. Select the map and click **Run**.
