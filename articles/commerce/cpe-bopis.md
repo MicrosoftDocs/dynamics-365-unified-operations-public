@@ -171,5 +171,5 @@ For all general issues, you should always consult the Modern POS or IIS Hardware
 
 [Saving online payment instruments with the Adyen connector](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/adyen-connector-listpi)
 
-[Omni-channel payments overview](Omni-channel payments overview)
+[Omni-channel payments overview](https://docs.microsoft.com/en-us/dynamics365/commerce/omni-channel-payments)
 
