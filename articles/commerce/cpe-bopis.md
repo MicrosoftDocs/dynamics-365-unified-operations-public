@@ -73,6 +73,9 @@ BOPIS scenarios with a credit card payment require hardware station. The hardwar
 
 1. Navigate to **Retail and Commerce \> Channel setup \> POS setup \> Registers**, select **SANFRAN-5**, and click **Edit**.
 2. Select the **Hardware profile** and change from **HW002** to **HW001**, then click **Save**.
+3. Syncronize the changes by navigating to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**
+4. Select the distribution schedule **1090** and then click **Run now** in the action pane.
+5. Click **Yes**, then **OK** to intiate the data sychronization. 
 
 ### Install Modern POS
 
@@ -85,21 +88,28 @@ BOPIS scenarios with a credit card payment require hardware station. The hardwar
 
 5. Click **Next** to proceed through installation. When installation is complete, click **Close**.
 
-### Activate Cloud POS
+### Activate Modern POS
 
-To activate Cloud POS in LCS, follow these steps.
+To activate Modern POS, follow these steps.
 
-1. On the top menu, select **Cloud-hosted environments**.
-1. Select your environment in the list.
-1. In the environment information on the right, select **Full details**.
-1. Select **Login** to open a menu, and then select **Log on to Cloud Point of Sale** to open the point of sale (POS).
-1. Select **Next**.
-1. Sign in by using your Microsoft Azure Active Directory (Azure AD) account.
-1. Under **Store name**, select **San Francisco**.
-1. Select **Next**.
-1. Under **Register and device**, select **SANFRAN-1**.
-1. Select **Activate**. You're signed out and taken to the POS sign-in page.
-1. You can now sign in to the Cloud POS experience by using operator ID **000713** and password **123**.
+1. On the Windows desktop, click the **Start** button and type **Retail Modern POS**. 
+2. Select the **Retail Modern POS** aplication to initiate activation. 
+3. Click **Next**. The **Server URL**, **Device ID**, and **Register number** should be prefilled with details from the configuration filed downloaded at the same time as the Modern POS install file. 
+4. Click **Activate**.
+5. An authentication dialog will appear. Select the account with the email address previously associated with worker **000713 - Andrew Collette**.
+6. When you are prompted to let your organization manage the device, select "**This app only**.
+7. Click **Get started** when activation is complete. 
+
+### Enable BOPIS in Modern POS
+
+1. Log into the modern POS using Operator ID **000713** and password **123**.
+2. when the introduction walkthrough video plays, check the two boxes in the bottom lefthand corner of the dialog, then close the dialog.
+3. If you are not prompted to close the shift, scroll to the right on the Welcome screen and click **Close shift**, then log back into the point of sale.
+4. Select **Perform a non-drawer operation** when prompted after login.
+5. on the Welcome screen, scroll to the far right and select the **Select hardware station** operation.
+6. Click **Manage**, set **Use hardware station** equal to **On**, then click **OK**. 
+7. Log off of the point of sale, then log back in.
+8. Upon login, select **Open a new shift**, then select **Drawer**.
 
 ## Set up your site in Commerce
 
