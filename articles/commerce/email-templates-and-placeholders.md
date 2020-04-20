@@ -93,7 +93,7 @@ Your email may contain placeholders that are replaced with customer and transact
 | pickupopenstorefrom   | Opening time of the pickup store                             |
 | pickupopenstoreto     | Closing time of the pickup store                             |
 
-### Order lines in the message body
+### Order line placeholders in the message body
 
 When creating the HTML for individual order lines in the message body, surround the repeating block of HTML and placeholders for individual lines with the following placeholders within HTML comment tags as follows.
 
