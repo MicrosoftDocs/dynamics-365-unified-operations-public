@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enhanced filtering in the RCS/Global repository
+title: RCS Enhanced filtering in the RCS/Global repository
 description: This topic describes enhanced filtering capabilities for the RCS Global repository, which have been improved to include the additional filters.
 author: JaneA07      
 manager: AnnBe
@@ -30,25 +30,29 @@ ms.dyn365.ops.version: AX 10.0.9
 
 ---
 
-# Enhanced filtering options for finding configurations in the Global repository
+# (RCS) Enhanced filtering options for finding configurations in the RCS/Global repository
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes enhanced filtering capabilities for Regulatory Configuration Services (RCS) Global repository, which have been improved to include the following filters: 
+This topic describes enhanced filtering capabilities for Regulatory Configuration Services (RCS) Global repository, which have been improved to include the ability to filter with the following criteria: 
 - **Country/region** - based on ISO country codes  
-- **Tags** - for functional/feature area; Industry; Business document type 
+- **Tags** types for:
+  - Functional area
+  - Feature area
+  - Industry; and 
+  - Business document 
 
-You can apply filters, either individually or in groups, to find specific or related configurations. For example, to find all configurable business documents related to vendor invoices, you can apply the **Business document type** filter. 
-
-You can further refine a search by selecting the country code and clicking **Apply filter**.  
+To make it easier to discover specific or related configurations you can apply filters, either individually or as a group. For example, to find a single type of 'configurable business documents' related to vendor invoices, you could apply a **Business document type** filter to search for that type of document. 
 
 [![Filter section for Global repository](media/rcs-enhanced-filter-section.JPG)](./media/rcs-enhanced-filter-section.JPG) 
 
-The following example shows the results when filtering on **Business document type**. 
+You can further refine the search by selecting document type, for example 'vendor invoice' and clicking **Apply filter**. The following example shows the results when filtering on **Business document type** with the document type added. 
 
 [![Applied filter and Import for business document type](media/rcs-enhanced-filtering-applied.JPG)](./media/rcs-enhanced-filtering-applied.JPG) 
 
 Filtered results can be imported into users RCS or Dynamics 365 Finance environment, either individually or as a set (by selecting the group of configurations) and clicking **Import**.
+
+
 
 
 
