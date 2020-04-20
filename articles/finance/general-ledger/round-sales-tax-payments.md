@@ -59,14 +59,14 @@ The following table shows how an amount of 98,765.43 is rounded by using each ro
 >
 > - For normal rounding, the rounding behavior is the same as for **Round-off = 0.01**.
 > - For the **Rounding form options**, **Downward**, **Rounding-up**, and **Own advantage**, the behavior is the same as for **Round-off = 1.00**.
->
-> | Rounding form option                | Round-off value = 0.01 | Round-off value = 0.10 | Round-off value = 1.00 | Round-off value = 100.00 | Round-off value = 0.00   |
-> |-------------------------------------|------------------------|------------------------|------------------------|--------------------------|--------------------------|
-> | Normal                              | 98,765.43              | 98,765.40              | 98,765.00              | 98,800.00                | 98,765.43                |
-> | Downward                            | 98,765.43              | 98,765.40              | 98,765.00              | 98,700.00                | 98,765.00                |
-> | Rounding-up                         | 98,765.43              | 98,765.50              | 98,766.00              | 98,800.00                | 98,766.00                |
-> | Own advantage, for a credit balance | 98,765.43              | 98,765.40              | 98,765.00              | 98,700.00                | 98,765.00                |
-> | Own advantage, for a debit balance  | 98,765.43              | 98,765.50              | 98,766.00              | 98,800.00                | 98,766.00                |
+
+| Rounding form option                | Round-off value = 0.01 | Round-off value = 0.10 | Round-off value = 1.00 | Round-off value = 100.00 | Round-off value = 0.00   |
+|-------------------------------------|------------------------|------------------------|------------------------|--------------------------|--------------------------|
+| Normal                              | 98,765.43              | 98,765.40              | 98,765.00              | 98,800.00                | 98,765.43                |
+| Downward                            | 98,765.43              | 98,765.40              | 98,765.00              | 98,700.00                | 98,765.00                |
+| Rounding-up                         | 98,765.43              | 98,765.50              | 98,766.00              | 98,800.00                | 98,766.00                |
+| Own advantage, for a credit balance | 98,765.43              | 98,765.40              | 98,765.00              | 98,700.00                | 98,765.00                |
+| Own advantage, for a debit balance  | 98,765.43              | 98,765.50              | 98,766.00              | 98,800.00                | 98,766.00                |
 
 ### Normal round, and round precision is 0.01
 
