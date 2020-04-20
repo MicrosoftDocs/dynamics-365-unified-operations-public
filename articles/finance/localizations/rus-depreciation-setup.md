@@ -5,7 +5,7 @@ title: Set up depreciation (Russia)
 description: This topic explains how to set up depreciation for Russian fixed assets.
 author: anasyash
 manager: AnnBe
-ms.date: 10/28/2018
+ms.date: 04/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -115,8 +115,8 @@ If a fixed asset is registered after it's put into operation, depreciation is ca
     - **Next half year start** – Depreciation is calculated from the half-year after the fixed asset is put into operation after acquisition.
     - **Next year start** – Depreciation is calculated from the year after the fixed asset is put into operation after acquisition.
     - **Date of the registration** – Depreciation is calculated from the date of registration.
-9. In the **Depreciation bonus** field, enter the maximum depreciation bonus percent. Selected **Depreciation bonus** percent in the **Putting into operation** transaction can't exceed this value.        
-10. On the **Deferrals** FastTab, in the field above the grid, select **Disposal** to set up parameters that are used to create deferrals on the disposal of fixed assets that accrue a loss. Select **Partial dismantlement** to set up parameters that are used create deferrals on the partial write-off of fixed assets that accrue a loss.
+9. In the **Depreciation bonus** field, enter the maximum depreciation bonus percent. The **Depreciation bonus** percent selected in the **Putting into operation** transaction can't exceed this value.        
+10. On the **Deferrals** FastTab, in the field above the grid, select **Disposal** to set up the parameters that are used to create deferrals on the disposal of fixed assets that accrue a loss. Select **Partial dismantlement** to set up parameters that are used create deferrals on the partial write-off of fixed assets that accrue a loss.
 
     > [!NOTE]
     > When you create a transaction for the disposal or partial write-off of a fixed asset, if the transaction causes a loss, the transaction details are posted to a deferral account. This account contains the values of the calculated loss and the write-off time. The write-off time is calculated by using the fixed asset depreciation factor and the difference between the useful life of the depreciated asset and the actual amount of time that the asset was used before disposal.
