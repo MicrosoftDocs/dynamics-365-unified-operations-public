@@ -62,7 +62,7 @@ To fix the issue, sign in by using an InPrivate window in Microsoft Edge, an inc
 
 ## Error when you link the environment for dual-write or add a new entity mapping
 
-**Required role to fix the issue:** System Administrator in both Finance and Operations apps and Common Data Service.
+**Required role to fix the issue:** System administrator in both Finance and Operations apps and Common Data Service.
 
 You might encounter the following error when linking or creating maps:
 
@@ -70,7 +70,7 @@ You might encounter the following error when linking or creating maps:
 Session ID: \<your session id\><br>
 Root activity ID: \<your root activity id\>*
 
-This error can occur if you don't have sufficient permissions to link dual-write or create maps. This could also happen if Common Data Service environment was reset without unlinking dual-write. Any user with system admin role in both Finance and Operations apps and Common Data Service can link the environments. But only the user who setup the dual-write connection can add new entity maps. Once that is done, any user with system administrator role can monitor the status and potentially change the maps if needed. 
+This error can occur if you don't have sufficient permissions to link dual-write or create maps. This error can also occur if the Common Data Service environment was reset without unlinking dual-write. Any user with system administrator role in both Finance and Operations apps and Common Data Service can link the environments. Only the user who setup the dual-write connection can add new entity maps. After setup, any user with system administrator role can monitor the status and edit the mappings.
 
 ## Error when you stop the entity mapping
 
@@ -81,7 +81,7 @@ User is not allowed to access connection
 dynamicscrmonline/xxxxxx-xxxx-xxxx-xxxxxxxx"}\], The remote server returned an
 error: (403) Forbidden.*
 
-This error occurs when the linked Common Data Service environment isn't available. 
+This error occurs when the linked Common Data Service environment isn't available.
 
 To fix the issue, create a ticket for the Data Integration team. Attach the network trace so that the Data Integration team can mark the maps as **Not running** in the back end.
 
@@ -90,9 +90,14 @@ To fix the issue, create a ticket for the Data Integration team. Attach the netw
 
 ## Error while trying to start an entity mapping
 
-If you run into an error like “Unable to complete initial data sync. Error: dual-write failure - plugin registration failed: Unable to build dual-write lookup metadata. Error object reference not set to an instance of an object” as the below screenshot while trying to get a mapping into ‘Running’ state, it could be due to couple of reasons:
-1.	Make sure to enable the dependent mappings of this entity mapping.
-2.	This mapping might be missing some source or destination fields. If the F&O side fields are missing follow the steps in the section Missing entity fields issue on maps, if the CDS side fields are missing click ‘Refresh entities’ button on the mapping so that the fields are automatically populated back into the mapping.
+You might received an error like the following when you try to set that state of a mapping to **Running**:
+
+*Unable to complete initial data sync. Error: dual-write failure - plugin registration failed: Unable to build dual-write lookup metadata. Error object reference not set to an instance of an object.*
+
+The fix for this error depends on the cause of the error:
+
++ If the mapping has dependent mappings, then make sure to enable the dependent mappings of this entity mapping.
++ The mapping might be missing source or destination fields. If the fields in the Finance and Operations app are missing, then follow the steps in the section Missing entity fields issue on maps, if the CDS side fields are missing click ‘Refresh entities’ button on the mapping so that the fields are automatically populated back into the mapping.
 
 
 ![Error while trying to start an entity map](media/tsg-error-starting-entity-map.png)
