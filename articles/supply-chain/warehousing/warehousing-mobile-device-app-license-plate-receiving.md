@@ -38,7 +38,6 @@ The ASN data is linked to loads and shipments via the *packing structures*, wher
 > [!NOTE]
 > To reduce the number of inventory transactions when packing structures that have nested license plates are used, the system records the physical on-hand inventory on the parent license plate. To trigger the movement of the physical on-hand inventory from the parent license plate to the nested license plates, based on the packing structure data, the mobile device must provide a menu item that is based on the *Pack to nested license plates* work creation process.
 
-<!-- To be used later (will require further editing):
 ## Warehousing mobile device app processing
 
 When a worker scans an incoming license plate ID, the system initializes a license plate receiving process. Based on this information, the content of the license plate (data coming from the ASN) gets physically registered at the inbound dock location. The flows that follow will depend your business process needs.
@@ -53,18 +52,36 @@ Registration of physical on-hand where either the same warehouse worker immediat
 
 ## Work policies without work creation
 
-You can use the license plate receiving process without creating work by using the *License plate receiving without creating work* feature.
+You can use the license plate receiving process without creating work by using the *License plate receiving enhancements* feature.
 
-By defining **Work policies** with a **Work order type** of *Transfer receipt* and/or *Purchase orders*, and using the **Process** for **License plate receiving (and put away)**, the two Warehousing app process:
+Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, this feature is listed in the following way:
+
+- **Module:** *Warehouse management*
+- **Feature name:** *License plate receiving enhancements*
+
+By defining **Work policies** with a **Work order type** of *Transfer receipt* and/or *Purchase orders*, and using the **Process** for **License plate receiving (and put away)**, the two Warehousing app processes:
 
 - License plate receiving
 - License plate receiving and put away
 
 will not create work, but only register the inbound physical inventory on the license plate at the inbound receiving dock.
 
-For more information about the *Report as finished* production scenario, see the [Warehouse work policies overview](warehouse-work-policies.md).
+> [!NOTE]
+> To enable a work policy a warehouse location must be defined as part of the **Inventory locations** section and the process will only apply for the defined locations.
 
--->
+### Receive inventory on a location which does not track license plates
+It is possible to use a warehouse location which is assigned to a **Location profile** without **Use license plate tracking** enabled and thereby directly register the inventory on-hand on a location when receiving inventory without work creation.
+
+## Receiving location based on mobile device menu item default data
+
+You can use the *License plate receiving enhancements* feature for receiving at any location within a warehouse by letting you add location-specific license plate receiving (and put away) menu items to the warehousing mobile app. Previously, the system only supported receiving at the default location defined for each warehouse, but with this feature, mobile device menu items for license plate receiving (and put away) now provide the **Use default data** option (already available for some other types of menu items), which lets you choose a custom **To location** for each menu item.
+
+Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, this feature is listed in the following way:
+
+- **Module:** *Warehouse management*
+- **Feature name:** *License plate receiving enhancements*
+
+<!-- Add info -->
 
 ## Show or skip the receiving summary page
 
@@ -101,6 +118,8 @@ To manage the functionality when this feature is available, follow these steps.
 
 ## More information
 
-<!-- To read more about inbound loads, see [Link for Inbound load (Olga's doc.)] -->
+For more information about *Mobile device menu items*, see [Set up mobile devices for warehouse work](configure-mobile-devices-warehouse.md).
 
-For more information about mobile device menu items, see [Set up mobile devices for warehouse work](configure-mobile-devices-warehouse.md).
+For more information about the *Report as finished* production scenario, see the [Warehouse work policies overview](warehouse-work-policies.md).
+
+For more information about inbound load management, see [Warehouse handling of inbound loads for purchase orders](inbound-load-handling.md).
