@@ -4,7 +4,7 @@
 
 title: System requirements for dual-write
 description: This topic describes the system requirements for the setup of a dual-write connection.
-author: ramasri
+author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 01/14/2020
 ms.topic: article
@@ -25,7 +25,7 @@ ms.custom: 21311
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: 
+ms.author: ramasri
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: AX 7.0.0
 
