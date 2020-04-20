@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Terms and Conditions for Add-ins to Microsoft Dynamics 365 Supply Chain Management
+title: Terms and conditions for add-ins to Microsoft Dynamics 365 Supply Chain Management
 description: This topic provides terms and conditions for add-ins to Microsoft Dynamics 365 Supply Chain Management.
-author: tfehr
-manager: AnnBe
-ms.date: 04/17/2020
+author: ChristianRytt
+manager: tfehr
+ms.date: 04/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,13 +17,13 @@ ms.technology:
 ROBOTS: NOINDEX, NOFOLLOW
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: kamaybac
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: smiller
+ms.author: crytt
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: 10.0.7
 ---
