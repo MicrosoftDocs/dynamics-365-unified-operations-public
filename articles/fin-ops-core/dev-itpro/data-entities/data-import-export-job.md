@@ -158,6 +158,18 @@ You can download the staging data in a file for export jobs, or you can download
 
 From the execution details, you can also open the execution log.
 
+## Parallel imports
+To speed up the import of data, parallel processing of importing a file can be enabled if the entity supports parallel imports. To configure the parallel import for an entity, the following steps must be followed.
+
+1. Go to **System administration \> Workspaces \> Data management**.
+2. In the **Import / Export** section, select the **Framework parameters** tile to open the **Data import/export framework parameters** page.
+3. On the **Entity settings** tab, select **Configure entity execution parameters** to open the **Entity import execution parameters** page.
+4. Set the following fields to configure parallel import for an entity:
+
+    - In the **Entity** field, select the entity.
+    - In the **Import threshold record count** field, enter the threshold record count for import. This determines the record count to be processed by a thread. If a file has 10K records, a record count of 2500 with a task count of 4 will mean, each thread will process 2500 records.
+    - In the **Import task count** field, enter the count of import tasks. This must not exceed the max batch threads allocated for batch processing in **System administration \>Server configuration**.
+
 ## Clean up the staging tables
 Starting in Platform update 29, this functionality has been deprecated. This is replaced by a new version of job history clean-up functionality explained below.
 
