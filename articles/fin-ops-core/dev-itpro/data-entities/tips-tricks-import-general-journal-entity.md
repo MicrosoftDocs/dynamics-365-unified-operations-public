@@ -3,9 +3,9 @@
 
 title: Best practices for importing vouchers by using the General journal entity
 description: This topic provides tips for importing data into the General journal by using the General journal entity.  
-author: ShylaThompson
+author: rcarlson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 04/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic provides tips for importing data into the General journal by using the General journal entity.
 
-You can use the General journal entity to import vouchers that have an account or offset account type of **Ledger, Customer, Vendor, or Bank**. The voucher can be entered as one line, using both the **Account** field and the **Offset account** field, or as a multi-line voucher, where only the **Account** field is used (and the **Offset account** is left blank on each line). The General journal entity doesn't support every account type. Instead, other entities exist for scenarios where different combinations of account types are required. For example, to import a project transaction, use the Project expense journal entity. Each entity is designed to support specific scenarios, which means additional fields may be available in entities for those scenarios but not in entities for a different scenario.
+You can use the General journal entity to import vouchers that have an account or offset account type of **Ledger, Customer, Vendor, or Bank**. The voucher can be entered as one line, using both the **Account** field and the **Offset account** field, or as a multi-line voucher, where only the **Account** field is used (and the **Offset account** is left blank on each line). The General journal entity doesn't support every account type. Instead, other entities exist for scenarios where different combinations of account types are required. For example, to import a project transaction, use the Project expense journal entity. Each entity is designed to support specific scenarios. This means additional fields may be available in entities for those scenarios. However, additional fields might not be available in entities for different scenarios.
 
 ## Setup
 Before you import by using the General journal entity, validate the following setup:
@@ -50,7 +50,7 @@ Two settings in Data management affect how the default journal batch number or v
 - **Set-based processing** (on the data entity)
 - **Auto-generated** (on the field mapping)
 
-The following sections describe the effect of these settings, and also explain how journal batch numbers and voucher numbers are generated.
+The following sections describe the effect of these settings. They also explain how the system generates batch numbers for journals and voucher numbers.
 
 ### Journal batch number
 
