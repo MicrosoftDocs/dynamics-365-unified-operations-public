@@ -30,7 +30,7 @@ ms.search.validFrom: 2020-03-16
 
 ---
 
-# Troubleshoot issues with the Ddual-write module in Finance and Operations apps
+# Troubleshoot issues with the dual-write module in Finance and Operations apps
 
 [!include [banner](../../includes/banner.md)]
 
