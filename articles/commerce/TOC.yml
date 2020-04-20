@@ -910,6 +910,8 @@
           href: cookie-compliance.md
         - name: Add a privacy policy page
           href: add-privacy-page.md
+        - name: Replace user IDs associated with tracked content changes
+          href: replace-IDs-tracked-changes.md
       - name: Starter kit
         items: 
         - name: Starter kit overview
