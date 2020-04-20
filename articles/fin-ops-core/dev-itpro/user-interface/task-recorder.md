@@ -5,7 +5,7 @@ title: Task recorder resources
 description: This topic describes how to use Task recorder to record business processes.
 author: jasongre
 manager: AnnBe
-ms.date: 04/14/2020
+ms.date: 04/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -351,9 +351,9 @@ Because the task guide can't find the UI element on the screen, the user must ma
 
 #### The control is not on the form
 
-*This error state usually occurs when the user has gone to the wrong form, either by navigating to the wrong form, or by leaving the correct form.*
+*This error state usually occurs when the user has gone to the wrong form, either by navigating to the wrong form or by leaving the correct form.*
 
-Because the UI element is not visible on the screen, the task guide pop-up will move to the upper-right side of the screen. In addition, when the task guide detects that the user is on the wrong from, the task guide pop-up text will change to inform the user of the form they should navigate to.
+Because the UI element is not visible on the screen, the task guide pop-up will move to the upper-right side of the screen. In addition, when the task guide detects the user is on the wrong form, the task guide pop-up text will change to inform the user of the form they should navigate to.
 
 In some cases, the task guide pop-up will not mention the form by name. This is because the user may need to navigate to a dynamic form. A dynamic form is a form that is not modeled, frequently known as a runtime-generated form. These sorts of forms do not have a proper name. Some examples of runtime-generated forms include simple and custom lookups. The way for a user to navigate to a lookup form is to re-open the lookup.
 
