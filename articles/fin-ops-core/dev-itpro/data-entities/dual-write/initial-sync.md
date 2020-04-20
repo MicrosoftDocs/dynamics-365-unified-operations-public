@@ -34,8 +34,7 @@ ms.search.validFrom: 2019-07-15
 
 [!include [banner](../../includes/banner.md)]
 
->[!Important]
-> In case you are **not** using the entity dependencies provided by **initial sync** feature for data loading and you choose to run each entity map individually, then this page is useful. 
+This topic specifies the order of synchronization that you must follow to create the initial data if you are not using the entity dependencies provided by the **initial sync** feature. If you are not using **initial sync**, then you must run each entity map individually.
 
 ## Dynamics 365 Supply Chain Management entities
 
