@@ -28,6 +28,7 @@ ms.search.validFrom: 2020-04-20
 ms.dyn365.ops.version: 10.0.3
 
 ---
+
 # About shipment consolidation policies
 
 The shipment consolidation process using shipment consolidation policies allows for automated shipment consolidation during automated and manual release to warehouse. Before the introduction of this functionality, automated consolidation was available with hardcoded fields and based on the **Consolidate shipment at release to warehouse** field set on a warehouse.
@@ -52,7 +53,16 @@ Use the **Release > Release to warehouse** menu item on the **Load planning work
 
 Use the **Shipment consolidation workbench** page to consolidate existing shipments that are not yet confirmed after they've been released to the warehouse. This functionality caters for  scenarios where the automated release process, with its own shipment consolidation, is run multiple times a day&mdash;but prior completing the shipment to carriers during the confirmation process, potential additional consolidations are identified manually. This functionality allows you to consolidate the outbound shipments created from sales or transfer order lines at any time after releasing to warehouse and before confirming the shipment. The page works similarly to the load building workbench, where you can assess multiple shipments at the same time and can choose to assign a non-consolidated order to a specific shipment. You can apply shipment consolidation templates to recurrently assess proposed consolidations and confirm them. Some rules are implemented to prevent unauthorized consolidation and to warn  of possible errors.
 
-<!-- KFM: Maybe add a section on how to enable this in feature management -->
+<!-- KFM: What is the name of this feature? In feature management, it's "Consolidate shipment", but that's hard to tell from the existing feature. Maybe "Shipment consolidation policies"?  -->
+
+<a name="enable-consolidation-policies"></a>
+
+## Enable the shipment consolidation policies feature
+
+Before you can use this feature, it must be enabled on on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the feature status and enable it if needed. Here, the feature is listed as:
+
+- **Module** - *Warehouse management*
+- **Feature name** - *Consolidate shipment*
 
 ## Overview of new functionality
 

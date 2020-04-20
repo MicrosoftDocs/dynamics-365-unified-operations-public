@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure shipment consolidation policies
-description: Describes how to set up default and custom shipment consolidation policies.
+description: How to set up default and custom shipment consolidation policies.
 author: GarmMSFT
 manager: tfehr
 ms.date: 04/20/2020
@@ -38,11 +38,45 @@ The scenarios provided in this topic illustrate how to set up default and custom
 
 ## Scenario 1: Configure default shipment consolidation policies
 
-There are two potential cases where you activate the feature and have to configure the minimum number of default policies: setting up a completely new environment and upgrading environment with data in it. For example sake, both scenarios are described assuming you use **Contoso** demo data and **USMF** company. So, the second case includes a step where you have to set the **Consolidate shipment at release to warehouse** option to **Yes** on one or more warehouses before enabling the feature.
+There are two situations where you must configure the minimum number of default policies after enabling the *Shipment consolidation policies* feature:
 
-### Default policies setup – new environment
+- When upgrading and environment that already contains data
+- When setting up a completely new environment
 
-To set up default shipment consolidation policies on a brand new environment, follow steps below. This assumes that the **Consolidate shipments** feature is already enabled in the **Feature management** workspace.
+In this scenario, we will illustrate each of these cases using the demo data provided with the **USMF** legal entity. 
+
+### Upgrade an environment with warehouses already configured for cross-order consolidation
+
+In this procedure, we will start with the *Shipment consolidation policies* feature disabled to simulate an environment where the basic cross-order consolidation feature was already in use. Then you'll enable the *Shipment consolidation policies* feature so you can see how to set up shipment consolidation policies after the upgrade.
+
+To set up default shipment consolidation policies on an environment where warehouses have already been configured for cross-order consolidation:
+
+1. Go to **Warehouse management \> Setup \> Warehouse \> Warehouses**.
+1. In the list, find and select the desired warehouse record (for example, warehouse 51 in the demo data).
+1. Select **Edit** on the action pane.
+1. On the **Warehouse** FastTab, set the **Consolidate shipment at release to warehouse** option to **Yes**.
+1. Repeat steps 2 through 4 for all warehouses where consolidation is needed.
+1. Close the page.
+1. Use [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to enable the *Shipment consolidation policies* feature. Here, the feature is listed as:
+    - **Module** - *Warehouse management*
+    - **Feature name** - *Consolidate shipment*
+1. Go to **Warehouse management \> Setup \> Release to warehouse \> Shipment consolidation policies**. (You may need to refresh your browser to see this new menu item right after enabling the feature.)
+1. Select **Create default setup** on the action pane to create the following
+    - A **CrossOrder** policy for the **Policy type** *Sales orders*.
+    - A **Default** policy for the **Policy type** *Sales orders*.
+    - A **Default** policy for the **Policy type** *Transfer issue*.
+    <!-- KFM: The type appears to be "Transfer issue" not "transfer order"--am I in the right place? I also see a "CrossOrder" policy here. -->
+
+    > [!NOTE]
+    > - The **CrossOrder** policy takes the same fields into consideration as the legacy logic did, excluding the order number (to consolidate lines into shipments based on warehouse, transportation mode of delivery, address, and so on).
+    > - Both **Default** policies will have the same set of fields taken into consideration by legacy logic, including order number (consolidate lines into shipments based on order number, warehouse, transportation mode of delivery, address, etc.).
+
+1. Select **CrossOrder** policy and click **Edit query**.
+    - In the list, note that warehouses with the **Consolidate shipment at release to warehouse** set to **Yes** were included in the query.
+
+### Set up a new environment
+
+To set up default shipment consolidation policies on a brand new environment, follow steps below. This assumes that the *Shipment consolidation policies* feature is  [already enabled](#enable-consolidation-policies) on your environment.
 
 1. Go to **Warehouse management \> Setup \> Release to warehouse \> Shipment consolidation policies**.
 2. Click **Create default setup**.
@@ -52,32 +86,7 @@ To set up default shipment consolidation policies on a brand new environment, fo
         > [!NOTE]
         > Both policies will have the same set of fields taken into consideration by legacy logic, including order number (consolidate lines into shipments based on order number, warehouse, transportation mode of delivery, address, etc.).
 
-### Default policies setup – upgrading an environment with warehouses already configured for cross-order consolidation
 
-To set up default shipment consolidation policies on an environment where warehouses have been already configured for cross-order consolidation, follow these steps.
-
-1. Go to **Warehouse management \> Setup \> Warehouse \> Warehouses**.
-2. In the list, find and select the desired warehouse record.
-3. Click **Edit**.
-4. On the **Warehouse** FastTab, set the **Consolidate shipment at release to warehouse** option to **Yes**.
-5. Repeat steps 2 through 4 for all warehouses where consolidation is needed.
-6. Close the page.
-7. Enable the **Consolidate shipments** feature in the **Feature management** workspace.
-8. Go to **Warehouse management \> Setup \> Release to warehouse \> Shipment consolidation policies**.
-9. Click **Create default setup**.
-    1. A **CrossOrder** policy will be created for **Sales orders** policy type.
-
-        > [!NOTE]
-        > The **CrossOrder** policy will have the same set of fields taken into consideration by legacy logic, excluding order number (consolidate lines into shipments based on warehouse, transportation mode of delivery, address, etc.)
-
-    2. A **Default** policy will be created for **Sales orders** policy type.
-    3. A **Default** policy will be created for **Transfer orders** policy type.
-
-        > [!NOTE]
-        > Both **Default** policies will have the same set of fields taken into consideration by legacy logic, including order number (consolidate lines into shipments based on order number, warehouse, transportation mode of delivery, address, etc.).
-
-10. Select **CrossOrder** policy and click **Edit query**.
-    - In the list, note that warehouses with the **Consolidate shipment at release to warehouse** set to **Yes** were included in the query.
 
 ## Scenario 2: Configure custom shipment consolidation policies
 
