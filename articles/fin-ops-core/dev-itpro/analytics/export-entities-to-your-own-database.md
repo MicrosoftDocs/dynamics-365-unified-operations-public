@@ -82,6 +82,10 @@ If you're using the BYOD feature for integration with a business intelligence (B
     In this connection string, the logical server name should resemble **nnnn.database.windows.net**. You should be able to find the logical server name in Azure portal. The following illustration shows an example of a connection string.
 
     ![Connection string on the New record page](media/NewRecord.png)
+    
+    
+> [!NOTE]
+> The default extension field shown in the image above does not apply to BYOD.
 
 4. Select **Validate**, and make sure that the connection is successful.
 
