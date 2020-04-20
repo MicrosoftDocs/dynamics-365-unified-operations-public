@@ -28,7 +28,7 @@ ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: 10.0.7
 ---
 
-# Terms and Conditions for Add-ins to Microsoft Dynamics 365 Supply Chain Management
+# Terms and conditions for add-ins to Microsoft Dynamics 365 Supply Chain Management
 
 [!include[banner](../includes/banner.md)]
 
