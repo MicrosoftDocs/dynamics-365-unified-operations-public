@@ -120,9 +120,39 @@ All subsequent user sessions will start with the new grid control enabled.
 ## Known issues
 This section maintains a list of known issues for the new grid control while the feature is in a preview state.  
 
-**Quality update for 10.0.9 / Platform update 33**
--  [KB 4550367] Time values not formatted correctly
+**Open issues**
+-  Card lists that rendered as multiple columns now render as a single column
+-  Grouped lists are not rendering as groups or in separate columns
+-  Image tooltips are not displaying 
+-  Gridlines display not working for all field types 
+-  Intermittently cannot click outside the grid are multi-selecting some rows 
+-  Validate and Copy Task recorder options aren't available for date/number controls 
+
+**Fixed as part of 10.0.12**
+-  [Issue 429126] Controls outside the grid don't update after deleting the last record
+-  [Issue 430575] Table controls do not update the contents of displayed items
+-  [KB 4558570] Items are still shown in form after the record has been deleted.
+-  [KB 4558584] Negative numbers not rendering correctly 
+-  [KB 4558575] Fields not updating after row change / Grid processing stuck after row deletion
+-  [Issue 436980] Styling associated with the List Panel ExtendedStyle not being applied
+-  [KB 4558573] Unable to fix validation error when the needed change is outside the grid
 	
+**Quality update for 10.0.11**
+-  [KB 4558381] Negative numbers not rendering correctly / Users sometimes get stuck after validation issues encountered
+
+**Fixed as part of 10.0.11**
+-  [KB 4558374] Unable to create records that require polymorphic selector dialog
+-  [KB 4558382] Unexpected client errors
+-  [KB 4558375] HelpText is not showing on columns in the new grid
+-  [KB 4558376] List Panel grids not rendering with the correct height in IE
+-  [KB 4558377] SizeToAvailable width combobox columns aren't rendering on some pages
+-  [KB 4549711] Lines in payment proposal cannot be removed correctly after enabling the new grid control
+-  [KB 4558378] Drill through sometimes opens the wrong record
+-  [KB 4558379] Error opening lookups with ReplaceOnLookup=No 
+-  [KB 4558380] The available space in the grid is not filled immediately after part of the screen is collapsed
+-  [Issue 432458] Empty or duplicated lines displayed at the beginning of some child collections
+-  [Bug 427178] Reference groups with comboboxes for replacement fields not showing values
+
 **Fixed as part of 10.0.10**
 -  [Issue 414301] Some data from previous lines disappears when creating new lines
 -  [KB 4550367] Time values not formatted correctly 
@@ -135,21 +165,6 @@ This section maintains a list of known issues for the new grid control while the
 -  [KB 4558369] Status images disappear in the hierarchical grid
 -  [KB 4558370] New row not scrolled into view 
 -  [KB 4549796] Unable to edit values in a view mode grid
-	
-**Fixed as part of 10.0.11**
--  [KB 4558374] Unable to create records that require polymorphic selector dialog
--  [KB 4558382] Unexpected client errors
--  [KB 4558375] HelpText is not showing on columns in the new grid
--  [KB 4558376] List Panel grids not rendering with the correct height in IE
--  [KB 4558377] SizeToAvailable width combobox columns aren't rendering on some pages
--  [KB 4549711] Lines in payment proposal cannot be removed correctly after enabling the new grid control
--  [KB 4558378] Drill through sometimes opens the wrong record
--  [KB 4558379] Error opening lookups with ReplaceOnLookup=No 
--  [KB 4558380] The available space in the grid is not filled immediately after part of the screen is collapsed
--  [Issue 432458] Empty or duplicated lines displayed at the beginning of some child collections
 
-**Quality update for 10.0.11**
--  [KB 4558381] Negative numbers not rendering correctly / Users sometimes get stuck after validation issues encountered
-
-**Fixed as part of 10.0.12**
-
+**Quality update for 10.0.9 / Platform update 33**
+-  [KB 4550367] Time values not formatted correctly
