@@ -151,7 +151,7 @@ The simplest way to build an entity is to use a wizard. This wizard lets you sel
 |-------------------------------------|-------------|
 | Primary data source                 | The root data source (table or view) that is used to construct the entity. You can add more related data sources, based on this root data source. |
 | Data entity name                    | The name of the entity. |
-| Entity category                     | Thy type of entity. Entity categories are similar to table groups for tables. The available categories include **Parameter**, **Reference**, **Master**, **Document**, and **Transaction**. |
+| Entity category                     | The type of entity. Entity categories are similar to table groups for tables. The available categories include **Parameter**, **Reference**, **Master**, **Document**, and **Transaction**. |
 | Public entity name                  | The public resource name for the entity. |
 | Public collection name              | The public resource set name. |
 | Enable public API                   | Select this option to enable the entity for OData services. |
