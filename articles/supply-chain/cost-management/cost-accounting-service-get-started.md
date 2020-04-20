@@ -78,6 +78,20 @@ To use the cost accounting service, install the cost accounting service add-in f
 
 You can verify the integration between the cost accounting service and Supply Chain Management by going to **Cost management \> Cost accounting service \> Setup \> Cost accounting service parameters**.
 
+## Set up the integration
+
+To set up the integration between the cost accounting service and Dynamics 365 Supply Chain Management:
+
+1. Go to **System administration > Feature Management**.
+1. Select **Check for updates**.
+1. Open the **All** tab and search for the feature named *Cost accounting service*.
+1. Select **Enable now**.
+1. Go to **Cost management > Cost accounting service > Setup > Cost accounting service parameters > Integrations parameters**.
+1. In the **Application ID** field, enter the following:<br> 08231eb2-a501-4edb-b3c5-aede5e5e0c3f
+1. In the **Data service endpoint** field, enter the following:<br>https://operationsdataservice.operations365.dynamics.com/    
+1. In the **Cost accounting service endpoint** field, enter the following:<br>https://costaccountingservice.operations365.dynamics.com/
+1. The cost accounting service is now ready for use.
+
 ## Related resources
 
 [Cost accounting service home page](cost-accounting-service-home.md)
