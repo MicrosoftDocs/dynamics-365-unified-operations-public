@@ -144,7 +144,7 @@ Receipts can be emailed to customers who make purchases at a retail point of sal
 - The text of the receipt is inserted into the email using the **%message%** placeholder. To correctly render the receipt body, surround the **%message%** placeholder with HTML **&lt;pre&gt;&lt;/pre&gt;** tags. 
 - Line breaks in the HTML for the header and footer of the email are converted to HTML **&lt;br /&gt;** tags so that the receipt body renders correctly. To eliminate unwanted vertical space in your receipt emails, remove all line breaks from the HTML where vertical space is not wanted. 
 
-For more information about how to configure email receipts, see [Set up email receipts](appuser-itpro/set-up-email-receipts).
+For more information about how to configure email receipts, see [Set up email receipts](https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/set-up-email-receipts).
 
 ## Upload your email HTML
 
