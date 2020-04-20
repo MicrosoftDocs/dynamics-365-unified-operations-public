@@ -36,6 +36,8 @@ The shipment consolidation process using shipment consolidation policies allows 
 
 The scenarios provided in this topic illustrate how to set up default and custom shipment consolidation policies.
 
+<a name="scenario-1"></a>
+
 ## Scenario 1: Configure default shipment consolidation policies
 
 There are two situations where you must configure the minimum number of default policies after enabling the *Shipment consolidation policies* feature:
@@ -43,11 +45,11 @@ There are two situations where you must configure the minimum number of default 
 - When upgrading and environment that already contains data
 - When setting up a completely new environment
 
-In this scenario, we will illustrate each of these cases using the demo data provided with the **USMF** legal entity. 
+In this scenario, we will illustrate each of these cases using the demo data provided with the **USMF** legal entity.
 
 ### Upgrade an environment with warehouses already configured for cross-order consolidation
 
-In this procedure, we will start with the *Shipment consolidation policies* feature disabled to simulate an environment where the basic cross-order consolidation feature was already in use. Then you'll enable the *Shipment consolidation policies* feature so you can see how to set up shipment consolidation policies after the upgrade.
+In this procedure, we will start with the *Shipment consolidation policies* feature disabled to simulate an environment where the basic cross-order consolidation feature was already in use. Then you'll enable the *Shipment consolidation policies* feature using feature management so you can see how to set up shipment consolidation policies after the upgrade.
 
 To set up default shipment consolidation policies on an environment where warehouses have already been configured for cross-order consolidation:
 
@@ -61,47 +63,53 @@ To set up default shipment consolidation policies on an environment where wareho
     - **Module** - *Warehouse management*
     - **Feature name** - *Consolidate shipment*
 1. Go to **Warehouse management \> Setup \> Release to warehouse \> Shipment consolidation policies**. (You may need to refresh your browser to see this new menu item right after enabling the feature.)
-1. Select **Create default setup** on the action pane to create the following
+1. Select **Create default setup** on the action pane to create the following:
     - A **CrossOrder** policy for the **Policy type** *Sales orders*.
     - A **Default** policy for the **Policy type** *Sales orders*.
     - A **Default** policy for the **Policy type** *Transfer issue*.
-    <!-- KFM: The type appears to be "Transfer issue" not "transfer order"--am I in the right place? I also see a "CrossOrder" policy here. -->
+    <!-- KFM: The type appears to be "Transfer issue" not "transfer order"--am I in the right place? I also see a "CrossOrder" policy for transfer issues/orders here. -->
 
     > [!NOTE]
     > - The **CrossOrder** policy takes the same fields into consideration as the legacy logic did, excluding the order number (to consolidate lines into shipments based on warehouse, transportation mode of delivery, address, and so on).
-    > - Both **Default** policies will have the same set of fields taken into consideration by legacy logic, including order number (consolidate lines into shipments based on order number, warehouse, transportation mode of delivery, address, etc.).
+    > - Both **Default** policies will have the same set of fields taken into consideration by legacy logic, including order number (to consolidate lines into shipments based on order number, warehouse, transportation mode of delivery, address, and so on).
 
-1. Select **CrossOrder** policy and click **Edit query**.
-    - In the list, note that warehouses with the **Consolidate shipment at release to warehouse** set to **Yes** were included in the query.
+1. Select **CrossOrder** policy and select **Edit query** on the action pane.
+1. The query opens. Note that warehouses that had **Consolidate shipment at release to warehouse** set to *Yes* are listed here and are therefore included in the query.
 
-### Set up a new environment
+### Create default policies for a new environment
 
-To set up default shipment consolidation policies on a brand new environment, follow steps below. This assumes that the *Shipment consolidation policies* feature is  [already enabled](#enable-consolidation-policies) on your environment.
+To set up default shipment consolidation policies on a brand new environment, use the following procedure.
 
+1. If you haven't already done so, use [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to enable the *Shipment consolidation policies* feature. Here, the feature is listed as:
+    - **Module** - *Warehouse management*
+    - **Feature name** - *Consolidate shipment*
 1. Go to **Warehouse management \> Setup \> Release to warehouse \> Shipment consolidation policies**.
-2. Click **Create default setup**.
-    1. A **Default** policy will be created for **Sales orders** policy type.
-    2. A **Default** policy will be created for **Transfer orders** policy type.
-
-        > [!NOTE]
-        > Both policies will have the same set of fields taken into consideration by legacy logic, including order number (consolidate lines into shipments based on order number, warehouse, transportation mode of delivery, address, etc.).
-
-
+1. Select **Create default setup** on the action pane to create the following:
+    - A **Default** policy for the **Policy type** *Sales orders*.
+    - A **Default** policy for the **Policy type** *Transfer issue*.
+    > [!NOTE]
+    > Both default policies have the same set of fields taken into consideration as the legacy logic did, including order number (to consolidate lines into shipments based on order number, warehouse, transportation mode of delivery, address, and so on).
 
 ## Scenario 2: Configure custom shipment consolidation policies
 
-This scenario assumes that the company has complex business requirements, and shipment consolidation has to depend on several conditions. The following examples include a short description of the business case and are supposed to be set up in a sequence that ensures the "pyramid-like" evaluation of the queries (the policies with most conditions should be evaluated with a higher priority).
+This scenario shows show to set up custom shipment consolidation policies, which can support complex business requirements where shipment consolidation depends on several conditions. Each of these examples includes a short description of the business case and should be set up in a sequence that ensures a "pyramid-like" evaluation of the queries (such that the policies with the most conditions are evaluated with highest priority).
 
-The master data needed to filtering is described first, and is a precondition for processing scenarios referenced here: [Consolidate shipments](../warehousing/consolidate-shipments.md).
+### Enable the feature and prepare master data for this scenario
 
-### Product filter codes
+Before you can work through the exercises in this scenario, you must enable the feature and prepare the master data needed to do the filtering. (This is also a precondition for the scenarios provided in [Consolidate shipments using shipment consolidation policies](../warehousing/consolidate-shipments.md).)
+
+#### Enable the feature and create the default policies
+
+If you haven't already done so, enable the feature and create the default consolidation polices as described previously in [Scenario 1: Configure default shipment consolidation policies](#scenario-1). 
+
+#### Set up product filter codes
 
 1. Go to **Warehouse management \> Setup \> Product filters \> Product filters** and create two  filter codes of **Code 4** filter title.
     1. For example, **Flammable** and **Explosive**.
 
-2. Go to **Product information management \> Products \> Released products** and set up two WHS-enabled itemsб one item with **Flammable** product filter code (**Code 4** field on the **Warehouse** FastTab) and another one with **Explosive** product filter code.
+2. Go to **Product information management \> Products \> Released products** and set up two WHS-enabled items&mdash;one item with **Flammable** product filter code (**Code 4** field on the **Warehouse** FastTab) and another one with **Explosive** product filter code.
 
-### Transportation mode of delivery
+#### Set up the transportation mode of delivery
 
 1. Go to **Transportation management > Setup > Carriers > Modes** and create a new transportation mode that will be used for consolidation query.
     1. For example, **Airways**.
@@ -112,18 +120,14 @@ The master data needed to filtering is described first, and is a precondition fo
      > [!NOTE]
      > **Mode of delivery** field is automatically filled in with **Airwa-Air** value. When **Airwa-Air** mode of delivery is used on a sales order, **Airways** transportation mode will be used on related shipment.
 
-### Order pool
+#### Set up the order pool
 
 1. Go to **Sales and marketing \> Setup \> Sales orders \> Order pools** and create a new order pool that will be used for consolidation query.
     1. For example, **ShipCons**.
 
 2. Go to **Sales and marketing \> Customers \> All customers** and assign new pool to **US-003** and **US-004** customers on the **Sales order defaults** FastTab.
 
-### Shipment consolidation policies
-
-This setup assumes that Scenario 1 described above has been already executed.
-
-#### Add Policy 1
+### Add example policy 1
 
 Example of a business case:
 
@@ -152,7 +156,7 @@ To create a shipment consolidation policy that covers mentioned above business c
 > [!NOTE]
 > All order lines with the specified mode of delivery **Airwa-Air** of customer **US-001** will not be consolidated across orders. This is used as a first sequence in case we consolidate shipments for all other modes of delivery for this customer.
 
-#### Add Policy 2
+### Add example policy 2
 
 Example of a business case:
 
@@ -187,7 +191,7 @@ To create a shipment consolidation policy that covers mentioned above business c
 > [!NOTE]
 > All order lines where items have the same Filter code 4, for example “Flammable”, will be consolidated across orders with other items of the same kind. If there is an open shipment for the same account, warehouse, and group of items, the new lines will be attached to it.
 
-#### Add Policy 3
+### Add example policy 3
 
 Example of a business case.
 
@@ -216,7 +220,7 @@ To create a shipment consolidation policy that covers mentioned above business c
 > [!NOTE]
 > All order lines where sales orders have the same Customer requisition number (which is used as the customer’s PO number) will be consolidated into one shipment regardless of Sales order number. If there is an open shipment for the same account, warehouse, and customer requisition, the new lines will be attached to it. It can be used if the customer sends additional order lines with the same PO number several times a day and wants them all to be grouped in one shipment (resulting in one bill of lading and packing slip).
 
-#### Add Policy 4
+### Add example policy 4
 
 Example of a business case.
 
@@ -243,7 +247,7 @@ To create a shipment consolidation policy that covers mentioned above business c
 > [!NOTE]
 > All order lines where sales orders belong to the same Order pool will be consolidated into one shipment across sales orders for the same account, warehouse, and transportation mode of delivery. Order pool can be replaced with any other field setting a group of customers apart and defaulting to the sales order header. This can be used if the customer and not the warehouse (like in the legacy logic) is driving the need for consolidation.
 
-#### Add Policy 5
+### Add example policy 5
 
 Example of a business case.
 
