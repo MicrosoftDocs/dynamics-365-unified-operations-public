@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Troubleshoot issues with the Dual-write module in Finance and Operations apps
+title: Troubleshoot issues with the dual-write module in Finance and Operations apps
 description: This topic provides troubleshooting information that can help you fix issues with the Dual-write module in Finance and Operations apps.
 author: RamaKrishnamoorthy 
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.search.validFrom: 2020-03-16
 
 ---
 
-# Troubleshoot issues with the Dual-write module in Finance and Operations apps
+# Troubleshoot issues with the Ddual-write module in Finance and Operations apps
 
 [!include [banner](../../includes/banner.md)]
 
@@ -39,7 +39,7 @@ This topic provides troubleshooting information for dual-write integration betwe
 > [!IMPORTANT]
 > Some of the issues that this topic addresses might require either the system admin role or Microsoft Azure Active Directory (Azure AD) tenant admin credentials. The section for each issue explains whether a specific role or credentials are required.
 
-## You can't load the Dual-write module in a Finance and Operations app
+## You can't load the dual-write module in a Finance and Operations app
 
 If you can't open the **Dual-write** page by selecting the **Dual Write** tile in the **Data management** workspace, the data integration service is probably down. Create a support ticket to request a restart of the data integration service.
 
