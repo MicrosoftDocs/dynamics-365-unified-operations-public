@@ -34,8 +34,6 @@ ms.search.validFrom: 2020-03-16
 
 [!include [banner](../../includes/banner.md)]
 
-
-
 This topic provides troubleshooting information for dual-write integration between Finance and Operations apps and Common Data Service. Specifically, it provides information that can help you fix issues with the **Dual-write** module in Finance and Operations apps.
 
 > [!IMPORTANT]
@@ -47,9 +45,9 @@ If you can't open the **Dual-write** page by selecting the **Dual Write** tile i
 
 ## Error when you try to create a new entity map
 
-**Required credentials to fix the issue:** User credentials who setup the dual-write connection. 
+**Required credentials to fix the issue:** The same user that setup dual-write.
 
-You might receive the following error message when you try to configure a new entity for dual-write. This is by design as only the user who setup dual-write connection can add a new entity map.
+You might receive the following error message when you try to configure a new entity for dual-write. The only user that can create a map is the user who setup the dual-write connection.
 
 *Response status code does not indicate success: 401 (Unauthorized)*
 
