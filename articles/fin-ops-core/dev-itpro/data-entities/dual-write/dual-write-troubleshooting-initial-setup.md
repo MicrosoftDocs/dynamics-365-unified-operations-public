@@ -43,7 +43,7 @@ This topic provides troubleshooting information for dual-write integration betwe
 
 ## You can't link a Finance and Operations app to Common Data Service
 
-**Required role to set up dual-write:** System Administrator in Finance and Operations apps and Common Data Service.
+**Required role to set up dual-write:** System administrator in Finance and Operations apps and Common Data Service.
 
 Errors on the **Setup link to Common Data Service** page are usually caused by incomplete setup or permissions issues. Make sure that the whole health check passes on the **Setup link to Common Data Service** page, as shown in the following illustration. You can't link dual-write unless the whole health check passes.
 
