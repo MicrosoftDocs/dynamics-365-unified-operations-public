@@ -74,10 +74,6 @@ To use the cost accounting service, install the cost accounting service add-in f
 
     On the **Environment add-ins** FastTab, you should see that the cost accounting service is being installed. After a few minutes, the status should change from **Installing** to **Installed**. (You might have to refresh the page to see this change.) At that point, the cost accounting service is ready for use.
 
-## Verify the integration
-
-You can verify the integration between the cost accounting service and Supply Chain Management by going to **Cost management \> Cost accounting service \> Setup \> Cost accounting service parameters**.
-
 ## Set up the integration
 
 To set up the integration between the cost accounting service and Dynamics 365 Supply Chain Management:
