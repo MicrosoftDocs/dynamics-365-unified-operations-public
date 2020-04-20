@@ -116,3 +116,40 @@ The **New grid control** feature can be enabled in Tier 1 (Dev/Test) and Tier 2 
 4.	**Enable the feature**: Find the **New grid control** feature in the list of features, and select **Enable now** on the details pane. Note that a browser refresh is required. 
 
 All subsequent user sessions will start with the new grid control enabled.
+
+## Known issues
+This section maintains a list of known issues for the new grid control while the feature is in a preview state.  
+
+**Quality update for 10.0.9 / Platform update 33**
+-  [KB 4550367] Time values not formatted correctly
+	
+**Fixed as part of 10.0.10**
+-  [Issue 414301] Some data from previous lines disappears when creating new lines
+-  [KB 4550367] Time values not formatted correctly 
+-  [KB 4549734] Active rows aren't treated as marked if the marking column is hidden
+-  [Bug 417044] No empty grid message for list-style grids
+-  [KB 4558367] Inconsistent text selection when changing rows (sometimes the 
+-  [KB 4558372] New grid stuck in processing mode after pasting in content with more columns than there are left in the grid
+-  [KB 4558368] Multi-select using the keyboard allowed in single select scenarios
+-  [KB 4539058] Some grids (typically inside fast tabs) sometimes do not render (though will if you zoom out)
+-  [KB 4558369] Status images disappear in the hierarchical grid
+-  [KB 4558370] New row not scrolled into view 
+-  [KB 4549796] Unable to edit values in a view mode grid
+	
+**Fixed as part of 10.0.11**
+-  [KB 4558374] Unable to create records that require polymorphic selector dialog
+-  [KB 4558382] Unexpected client errors
+-  [KB 4558375] HelpText is not showing on columns in the new grid
+-  [KB 4558376] List Panel grids not rendering with the correct height in IE
+-  [KB 4558377] SizeToAvailable width combobox columns aren't rendering on some pages
+-  [KB 4549711] Lines in payment proposal cannot be removed correctly after enabling the new grid control
+-  [KB 4558378] Drill through sometimes opens the wrong record
+-  [KB 4558379] Error opening lookups with ReplaceOnLookup=No 
+-  [KB 4558380] The available space in the grid is not filled immediately after part of the screen is collapsed
+-  [Issue 432458] Empty or duplicated lines displayed at the beginning of some child collections
+
+**Quality update for 10.0.11**
+-  [KB 4558381] Negative numbers not rendering correctly / Users sometimes get stuck after validation issues encountered
+
+**Fixed as part of 10.0.12**
+
