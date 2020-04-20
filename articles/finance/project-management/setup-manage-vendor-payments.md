@@ -75,9 +75,9 @@ When you post an invoice from the vendor and the vendor is subject to PWP terms,
 
 When the vendor completes their work on the project and sends you an invoice, review the project status and customer invoices to see whether the PWP terms are met for the project. If the PWP terms for the vendor are met, you can determine which lines on the vendor invoice to pay, based on the customer payments for the project. If you decide to pay the vendor even if the PWP terms were not met, you can override the PWP terms in the **Vendor invoices with retention** page.
 
-1. Select **Project management and accounting** > **Retention** > **Inquiries** > **Vendor** > **Invoices with retention**.
-2. On the **Vendor invoices with retention** page, enter values to find the vendor invoice to review, and then select **Search**.
+1. Select **Project management and accounting** > **Inquiries and reports** > **Retention inquiries** > **Vendor invoice with pay when paid**.
+2. On the **Vendor invoices with pay when paid** page, enter values to find the vendor invoice to review, and then select **Search**.
 3. On the **Vendor invoice lines** FastTab, select the lines you want to change.
-4. If the PWP conditions are met for the invoice line, select **Release vendor payment**. This clears the **Pay when paid** option, and the status of the **Ready for payment** field changes to **Yes**.
+4. If the **Pay when paid** conditions are met for the invoice line, select **Release vendor payment**. This clears the **Pay when paid** option, and the status of the **Ready for payment** field changes to **Yes**.
 
  
