@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Configure BOPIS in a Dynamics 365 Commerce preview environment
-description: This topic explains how to configure BOPIS (buy online, pick up in store) in a Microsoft Dynamics 365 Commerce preview environment after it's provisioned.
+title: Configure BOPIS in a Dynamics 365 Commerce environment
+description: This topic explains how to configure BOPIS (buy online, pick up in store) in a Microsoft Dynamics 365 Commerce environment after it has been provisioned.
 author: rubendel
 manager: annbe
 ms.date: 04/20/2020
@@ -28,44 +28,20 @@ ms.search.validFrom: 2020-04-20
 ms.dyn365.ops.version: Release 10.0.5
 ---
 
-# Configure a Dynamics 365 Commerce preview environment
+# Configure a Dynamics 365 Commerce environment
 
 
 [!include [banner](includes/banner.md)]
 
-This topic explains how to configure BOPIS (Buy online, pickup in store) in a Microsoft Dynamics 365 Commerce preview environment after it's provisioned.
+This topic explains how to configure BOPIS (Buy online, pickup in store) in a Microsoft Dynamics 365 Commerce environment after it has been provisioned.
 
 ## Overview
 
-Complete the procedures in this topic only after your Commerce preview environment has been provisioned. For information about how to provision your Commerce preview environment, see [Provision a Commerce preview environment](provisioning-guide.md).
+Complete the procedures in this topic only after your Commerce preview environment has been provisioned and configured. For information, see [Provision a Commerce environment](provisioning-guide.md) and [Configure a Dynamics 365 Commerce environment](https://docs.microsoft.com/en-us/dynamics365/commerce/cpe-post-provisioning).
 
-After your Commerce preview environment has been provisioned end to end, additional post-provisioning configuration steps must be completed before you can start to evaluate the environment and perform buy online, pickup in store scenarios. To complete these steps, you must use Microsoft Dynamics Lifecycle Services (LCS) and Dynamics 365 Commerce.
-
-## Before you start
-
-1. Sign in to the [LCS portal](https://lcs.dynamics.com).
-2. Go to your project.
-3. On the top menu, select **Cloud-hosted environments**.
-4. Select your environment in the list.
-5. In the environment information on the right, select **Full details**.
-6. Select **Login** to open a menu, and then select **Log on to environment**.
-7. Make sure that the **USRT** legal entity is selected in the upper-right corner.
+After your Commerce environment has been provisioned and configured end to end, this document can be used to enable the BOPIS scenario.
 
 ## Configure the point of sale 
-
-### Associate a worker with your identity
-
-To associate a worker with your identity, follow these steps.
-
-1. Navigate to **Modules \> Retail and Commerce \> Employees \> Workers**.
-2. In the list, find and select the following record: **000713 - Andrew Collette**.
-3. On the Action Pane, select **Retail**.
-4. Select **Associate existing identity**.
-5. In the **Email** field to the right of **Search using email**, enter your email address.
-6. Select **Search**.
-7. Select the record that has your name.
-8. Select **OK**.
-9. Select **Save**.
 
 ### Configure Modern POS
 
@@ -97,6 +73,10 @@ To activate Modern POS, follow these steps.
 3. Click **Next**. The **Server URL**, **Device ID**, and **Register number** should be prefilled with details from the configuration filed downloaded at the same time as the Modern POS install file. 
 4. Click **Activate**.
 5. An authentication dialog will appear. Select the account with the email address previously associated with worker **000713 - Andrew Collette**.
+
+> [!NOTE]
+> If you have not yet associated a worker with your identity, activation will fail. If this happens, re-visit the environment Visit the [Configure a Dynamics 365 Commerce environment](https://docs.microsoft.com/en-us/dynamics365/commerce/cpe-post-provisioning) article.
+
 6. When you are prompted to let your organization manage the device, select "**This app only**.
 7. Click **Get started** when activation is complete. 
 
@@ -111,21 +91,31 @@ To activate Modern POS, follow these steps.
 7. Log off of the point of sale, then log back in.
 8. Upon login, select **Open a new shift**, then select **Drawer**.
 
-## Set up your site in Commerce
 
-To start to set up your preview site in Commerce, follow these steps.
+## Create a Storefront order for pick up in store
 
-1. Sign in to the site management tool by using the URL that you made a note of when you initialized e-Commerce during provisioning (see [Initialize e-Commerce](provisioning-guide.md#initialize-e-commerce)).
-1. Select the **Fabrikam** site to open the site setup dialog box.
-1. Select the domain that you entered when you initialized e-Commerce.
-1. Select **Fabrikam extended online store** as the default channel. (Make sure that you select the **extended** online store.)
-1. Select **en-us** as the default language.
-1. Leave the value of the **Path** field as it is.
-1. Select **OK**. The list of pages on the site appears.
+1. Navigate to the URL specified during the [Initialize e-commerce step](https://docs.microsoft.com/en-us/dynamics365/commerce/provisioning-guide#initialize-e-commerce) in the environment configuration article.
+2. Select an item and click **Add to cart**.
+3. On the shopping bag page, click **Pick this up** for the order line just added.
+4. In the **Select a store** dialog, enter **San Francisco** and click the search icon. 
+5. In the list of returned results, locate the San Francisco store and click **Pick up here**.
+6. On the shopping bag page, click **Checkout as Guest**. 
 
-## Enable jobs
+> [!NOTE]
+> In order to procede with checkout, you must accept the **Cookie notice**. This appears as a banner at the top of the checkout page.
 
-To enable jobs in Commerce, follow these steps.
+7. For the credit card payment method, enter the following details:
+
+- **Cardholder name:** *Any name
+- **Card number:** 4111-1111-1111-1111
+- **Expiration date:** 10/20
+- **Card verification value (CVV) code:** 737
+
+> [!IMPORTANT]
+> Never, under any circumstances, try to use actual credit card information on the test site.
+
+
+
 
 1. Sign in to the environment (HQ).
 1. Use the menu on the left to go to **Retail and commerce \> Inquiries and reports \> Batch jobs**.
