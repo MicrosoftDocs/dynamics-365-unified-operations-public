@@ -95,7 +95,7 @@ Dual-write errors that originate in Common Data Service can appear in the Financ
 
 ## Check synchronization errors on the virtual machine for the Finance and Operations app
 
-**Required role to view the errors:** System admin
+**Required role to view the errors:** System administrator
 
 1. Sign in to Microsoft Dynamics Lifecycle Services (LCS).
 2. Open the LCS project that you chose to do the dual-write testing for.
@@ -107,7 +107,7 @@ Dual-write errors that originate in Common Data Service can appear in the Financ
 
 ## Unlink and link another Common Data Service environment from a Finance and Operations app
 
-**Required role to unlink the environment:** System admin on either Finance and Operations app or Common Data Service.
+**Required role to unlink the environment:** System administrator for either Finance and Operations app or Common Data Service.
 
 1. Sign in to the Finance and Operations app.
 2. Go to **Workspaces \> Data management**, and select the **Dual Write** tile.
@@ -117,11 +117,12 @@ Dual-write errors that originate in Common Data Service can appear in the Financ
 
 You can now link a new environment.
 
-## Unable to see the sales order line ‘Information’ form 
+## Unable to view the sales order line Information form 
 
-While creating a sales order in Dynamics 365 Sales app, your click on **+ Add products** button may redirect you to Project Operations order line form. From there, there is no way to change the view to Sales order line **Information** form. The sales order line **Information** form shown below will be missing. This happens because Project operation app has been installed on your environment.
-![sales order line](media/sales-order-line.png)
+When you create a sales order in Dynamics 365 Sales, clicking on **+ Add products** might redirect you to the Dynamics 365 Project Operations order line form. There is no way from that form to view the sales order line **Information** form. The option for **Information** does not appear in the dropdown below **New Order Line**. This happens because Project Operations has been installed in your environment.
 
-In order to get back the **Information** form, navigate to the **Order Line** entity and find the **Information** form under the forms node. Select the **Information** form and click on **Enable security roles**. Change the security setting to **Display to everyone**.
-
-
+To re-enable the **Information** form option, follow these steps:
+1. Navigate to the **Order Line** entity.
+2. Find the **Information** form under the forms node. 
+3. Select the **Information** form and click **Enable security roles**. 
+4. Change the security setting to **Display to everyone**.
