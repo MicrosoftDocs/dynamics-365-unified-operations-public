@@ -125,6 +125,8 @@ Skills and certificate requirements can be set up on maintenance job types (**As
 
 Maintenance job types and maintenance job trades are selected on work order jobs. If skills or certificates have been selected on a maintenance job type or maintenance job trade, and that maintenance job type or maintenance job trade is used on a work order job, only maintenance workers with matching skills and certificates are scheduled to work on the work order.
 
+<a name="gantt"></a>
+
 ## Work with scheduled work orders using a gantt chart
 
 The **Scheduled work orders gantt chart** provides a graphical interface where you can view and reschedule your work orders.
