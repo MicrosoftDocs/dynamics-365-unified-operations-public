@@ -137,7 +137,7 @@ Entities are categorized based on their functions and the type of data that they
 ### Transaction
 
 - The operational transaction data of the business.
-- Posted transactions. These are non‑idempotent items such as posted invoiced and balances. Typically, these items are excluded during a full dataset copy.
+- Posted transactions. These are non‑idempotent items such as posted invoiced and balances. Typically, these items are excluded during a full dataset copy to reduce the volume of data that is copied/migrated. Migrating such completed transactions can also lead to further complexity in trying to preserve its referential integrity of related data in the new system. In general, transactions from a completed business process are not migrated in detail but in summary.
 - Examples include pending invoices.
 
 ## Building an entity
