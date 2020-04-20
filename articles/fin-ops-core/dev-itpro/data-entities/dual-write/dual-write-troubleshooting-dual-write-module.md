@@ -90,7 +90,7 @@ To fix the issue, create a ticket for the Data Integration team. Attach the netw
 
 ## Error while trying to start an entity mapping
 
-You might received an error like the following when you try to set that state of a mapping to **Running**:
+You might receive an error like the following when you try to set that state of a mapping to **Running**:
 
 *Unable to complete initial data sync. Error: dual-write failure - plugin registration failed: Unable to build dual-write lookup metadata. Error object reference not set to an instance of an object.*
 
