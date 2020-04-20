@@ -133,45 +133,6 @@ Follow steps noted in the [Posting of online sales and payments](https://docs.mi
 
 
 
-1. Sign in to the environment (HQ).
-1. Use the menu on the left to go to **Retail and commerce \> Inquiries and reports \> Batch jobs**.
-
-    The remaining steps of this procedure must be completed for each of the following jobs:
-
-    * Process retail order email notification
-    * Product availability
-    * P-0001
-    * Synchronize orders job
-
-1. Use the Quick Filter to search for the job by name.
-1. If the status of the job is **Withhold**, follow these steps:
-
-    1. Select the record.
-    1. On the Action Pane, on **Batch job** tab, select **Change status**.
-    1. Select **Waiting**, and then select **OK**.
-
-### Run full data synchronization
-
-To run full data synchronization in Commerce, follow these steps.
-
-1. Use the menu on the left to go to **Modules \> Retail and commerce \> Headquarters setup \> Retail scheduler \> Channel database**.
-1. In the list on the left, the **Default** channel is selected. Select the other available channel. This channel is named **scXXXXXXXXX**.
-1. On the Action Pane, select **Full data sync**.
-1. Enter **9999** as the distribution schedule.
-1. Select **OK**.
-1. Select **OK**.
-
-### Test credit card information to do test purchases
-
-To perform test transactions on the site, you can use the following test credit card information:
-
-- **Card number:** 4111-1111-1111-1111
-- **Expiration date:** 10/20
-- **Card verification value (CVV) code:** 737
-
-> [!IMPORTANT]
-> Never, under any circumstances, try to use actual credit card information on the test site.
-
 ## Next steps
 
 After the provisioning and configuration steps are completed, you're ready to evaluate your preview environment. Use the URL of the Commerce site management tool to go to the authoring experience. Use the URL of the Commerce site to go to the retail customer site experience.
