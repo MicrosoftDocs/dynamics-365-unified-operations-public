@@ -349,6 +349,8 @@
         items:
         - name: Forecasts, work orders, and projects
           href: asset-management/integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md
+      - name: Integrate asset management with fixed assets
+        href: asset-management/integration-to-fixed-assets/fixed-asset-integration.md
       - name: Preventive and reactive maintenance
         items: 
         - name: Preventive maintenance overview
