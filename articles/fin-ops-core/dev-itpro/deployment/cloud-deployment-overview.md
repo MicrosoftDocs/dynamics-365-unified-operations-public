@@ -133,8 +133,12 @@ For more information, see [Where your Finance and Operations data is stored](htt
 
 ## Frequently asked questions
 
-### Why does the status display 'Migrating' on my environment in LCS?
-To provide the best experience and performance, Microsoft has to perform maintenance operations on your environment. During some of these maintenance operations, your environment status may display 'Migrating'. You will not be able to perform any lifecycle operations, such as package applications, until the status returns to 'Deployed'. There will be no impact to Finance and Operations apps. Users can continue with normal operations without any service interruption. You will receive an email notification before the maintenance operation is initiated.
+### Why does the status display 'Maintenance' on my environment in LCS?
+To provide the best experience and performance, Microsoft has to perform maintenance operations on your environment. During some of these maintenance operations, your environment status may display one of the below statuses
+1. 'Preparing for Maintenance'
+2. 'Prepared for Maintenance' or
+3. 'Maintenance in progress'
+While your environment is in this state and until the status returns to 'Deployed', you will not be able to perform any lifecycle operations, such as package applications. There will be no impact to Finance and Operations apps. Users can continue with normal operations without any service interruption. You will receive an email notification before any maintenance operation that puts your environment in this state is initiated.
 
 ### How do I connect to the SQL database on my Sandbox environment?
 Follow these steps to connect to the SQL Database in your Tier 2+ Sandbox environments.
