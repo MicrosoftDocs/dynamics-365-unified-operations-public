@@ -77,7 +77,7 @@ To activate Modern POS, follow these steps.
 > [!NOTE]
 > If you have not yet associated a worker with your identity, activation will fail. If this happens, re-visit the environment Visit the [Configure a Dynamics 365 Commerce environment](https://docs.microsoft.com/en-us/dynamics365/commerce/cpe-post-provisioning) article.
 
-6. When you are prompted to let your organization manage the device, select "**This app only**.
+6. When prompted to let your organization manage the device, select "**This app only**.
 7. Click **Get started** when activation is complete. 
 
 ### Enable BOPIS in Modern POS
@@ -91,6 +91,7 @@ To activate Modern POS, follow these steps.
 7. Log off of the point of sale, then log back in.
 8. Upon login, select **Open a new shift**, then select **Drawer**.
 
+## Perform a BOPIS scenario
 
 ### Create a Storefront order for pick up in store
 
@@ -117,7 +118,7 @@ To activate Modern POS, follow these steps.
 8. Proceed with checkout by entering billing address details, then click **Save and continue**.
 9. Click **Checkout** once the order is ready to be placed. 
 
-## Synchronize online orders to the back office
+### Synchronize online orders to the back office
 
 Follow steps noted in the [Posting of online sales and payments](https://docs.microsoft.com/en-us/dynamics365/commerce/tasks/posting-online-sales-payments) article to synchronize online orders. 
 
@@ -130,14 +131,23 @@ Follow steps noted in the [Posting of online sales and payments](https://docs.mi
 5. The line item will be added to the transaction screen with a balance due of **$0.00**.
 6. Click the balance due of **$0.00** or select any payment method to conclude the transaction. 
 
+## Troubleshooting
 
+### Online orders retrieved in POS have non-zero balance due
 
+If an order is retreived for pickup in store and the balance due is not equal to zero, check to ensure that the Modern POS in use and that the hardware station is active. Alternatively, if the Cloud POS or Moder POS for iOS are in use, check to ensure that a shared hardware station is active. Some form of active hardware station is requried to retreive payments that were made online.
 
-## Next steps
+### Checkout doesn't render credit card entry module
 
-After the provisioning and configuration steps are completed, you're ready to evaluate your preview environment. Use the URL of the Commerce site management tool to go to the authoring experience. Use the URL of the Commerce site to go to the retail customer site experience.
+When checkout doesn't render the credit card entry module, it likely means there is a problem with the payment services setup or payment account setup for the online store. 
 
-To configure optional features for your Commerce preview environment, see [Configure optional features for a Commerce preview environment](cpe-optional-features.md).
+### General issues with capturing payment 
+
+For all general issues, you should always consult the Modern POS or IIS Hardware Station event logs first. You can find these logs found under the following nodes in the Microsoft Windows event log:
+
+- Application and Services Logs \> Microsoft \> Dynamics \> Commerce-ModernPOS
+- Application and Services Logs \> Microsoft \> Dynamics \> Commerce-Hardware Station
+
 
 ## Additional resources
 
@@ -156,3 +166,10 @@ To configure optional features for your Commerce preview environment, see [Confi
 [Microsoft Azure portal](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce website](https://aka.ms/Dynamics365CommerceWebsite)
+
+[Adyen payment connector](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3)
+
+[Saving online payment instruments with the Adyen connector](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/adyen-connector-listpi)
+
+[Omni-channel payments overview](Omni-channel payments overview)
+
