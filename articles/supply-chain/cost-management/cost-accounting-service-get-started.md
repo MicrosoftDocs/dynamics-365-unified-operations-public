@@ -42,7 +42,7 @@ The cost accounting service lets you do multiple inventory accounting in the cos
 - Cost element
 
 > [!NOTE]
-> Even after you've turned on the cost accounting service, you can still do standard inventory accounting in Microsoft Dynamics 365 Supply Chain Management, as usual.
+> Even after you've turned on the cost accounting service, you can still do  inventory accounting in Microsoft Dynamics 365 Supply Chain Management, as usual.
 
 The cost accounting service is an add-in. To makes its features available, you must install it from Microsoft Dynamics Lifecycle Services (LCS). Therefore, you can choose to evaluate it in a test environment before you turn it on for production environments.
 
@@ -50,7 +50,7 @@ The cost accounting service doesn't currently support all the cost management fe
 
 ## Licensing
 
-The cost accounting service is licensed together with the standard accounting inventory features that are available for Supply Chain Management. You don't have to purchase an additional license to use the cost accounting service.
+The cost accounting service is licensed together with the standard features of inventory accounting that are available for Supply Chain Management. You don't have to purchase an additional license to use the cost accounting service.
 
 ## Install the add-in
 
@@ -60,23 +60,52 @@ The cost accounting service is licensed together with the standard accounting in
 To use the cost accounting service, install the cost accounting service add-in for Supply Chain Management as described in the following procedure.
 
 1. Sign in to LCS.
+
 1. Go to **Preview feature management**.
+
 1. Select the plus sign (**+**).
+
 1. In the **Code** field, enter your add-in beta key for the cost accounting service. (You should have received your key by email.)
+
 1. Select **Unblock**.
+
 1. Open the LCS environment where you want to add the service.
+
 1. Go to **Full details**.
+
 1. Scroll down to the **Environment add-ins** FastTab.
+
 1. Select **Install a new add-in**.
+
 1. Select **Cost accounting service**.
+
 1. Follow the installation guide, and agree to the terms and conditions.
+
 1. Select **Install**.
 
-    On the **Environment add-ins** FastTab, you should see that the cost accounting service is being installed. After a few minutes, the status should change from **Installing** to **Installed**. (You might have to refresh the page to see this change.) At that point, the cost accounting service is ready for use.
+1. On the **Environment add-ins** FastTab, you should see that the cost accounting service is being installed. After a few minutes, the status should change from **Installing** to **Installed**. (You might have to refresh the page to see this change.) At that point, the cost accounting service is ready for use.
 
-## Verify the integration
+## Set up the integration
 
-You can verify the integration between the cost accounting service and Supply Chain Management by going to **Cost management \> Cost accounting service \> Setup \> Cost accounting service parameters**.
+To set up the integration between the cost accounting service and Dynamics 365 Supply Chain Management:
+
+1. Go to **System administration > Feature Management**.
+
+1. Select **Check for updates**.
+
+1. Open the **All** tab and search for the feature named *Cost accounting service*.
+
+1. Select **Enable now**.
+
+1. Go to **Cost management > Cost accounting service > Setup > Cost accounting service parameters > Integrations parameters**.
+
+1. In the **Application ID** field, enter the following code:<br> 08231eb2-a501-4edb-b3c5-aede5e5e0c3f
+
+1. In the **Data service endpoint** field, enter the following URL:<br>https://operationsdataservice.operations365.dynamics.com/
+
+1. In the **Cost accounting service endpoint** field, enter the following URL:<br>https://costaccountingservice.operations365.dynamics.com/
+
+1. The cost accounting service is now ready for use.
 
 ## Related resources
 
