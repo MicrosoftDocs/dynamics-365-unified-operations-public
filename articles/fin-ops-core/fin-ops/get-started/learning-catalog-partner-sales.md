@@ -5,6 +5,16 @@ author: loreleishannonmsft
 ms.topic: article
 ms.date: 04/17/2020
 ms.author: v-lshann
+
+# optional metadata
+
+# ms.search.form:  [Operations AOT form name to tie this topic to]
+audience: Application user
+ms.reviewer: margoc
+ms.search.scope: Operations
+ms.search.region: Global
+ms.search.validFrom: 2019-1-29
+ms.dyn365.ops.version: 8.1
 ---
 
 # Microsoft Partner Sales and Marketing Learning Catalog
