@@ -37,6 +37,9 @@ This topic outlines the best practices for creating and managing an all-in-one d
 > [!IMPORTANT]
 > Support for non all-in-one deployable packages for v1 Cloud service customers ends on October 31, 2020.
 
+> [!IMPORTANT]
+> If you currently have a payment connector deployed in your environment, you will need to [Create a payment connector package](../../../Commerce/dev-itpro/payment-connector-package.md) and include it in the All-in-one deployable package.
+
 ## What is an all-in-one deployable package?
 
 An all-in-one deployable is a software deployable package that contains all the models and binaries that you currently have in an environment. Think of it as a single package that represents all the non-Microsoft software in an environment.
