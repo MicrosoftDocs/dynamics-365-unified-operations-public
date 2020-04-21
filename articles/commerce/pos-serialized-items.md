@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Working with serialized items in POS
+title: Work with serialized items in POS
 description: This topic explains how to manage serialized items in POS application.
 author: boycezhu
 manager: annbe
-ms.date: 04/07/2020
+ms.date: 04/21/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-commerce
@@ -27,27 +27,29 @@ ms.search.validFrom:
 ms.dyn365.ops.version: 10.0.11
 ---
 
-# Working with serialized items in POS
+# Work with serialized items in POS
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-Many retailers are selling products that require serial control (a.k.a. serialized items). Some want to maintain serial numbers in inventory from receipt to issue for tracking purpose, others may want to capture serial numbers during sales process for service and warranty. This topic explains how you can manage serialized items in Commerce point of sale (POS) application.
+Many retailers sell products that require serial control, or "serialized items." Some retailers may want to maintain serial numbers in for tracking purposes, others may want to capture serial numbers during the sales process for service and warranty. This topic explains how you can manage serialized items in the Commerce point of sale (POS) application.
 
 ## Serial number configurations
 
-An item is considered a serialized item when it is assigned a tracking dimension group that is set up to enable serial number. In Commerce Headquarters **Tracking dimension groups** page, you can enable serial number for inventory process by selecting the **Active** option, or for sales process by selecting the **Active in sales process** option. 
+An item is considered a serialized item when it is assigned a tracking dimension group that is set up to enable a serial number. In Commerce headquarters, on the **Tracking dimension groups** page, you can enable serial numbers for the inventory process by selecting the **Active** option, or for the sales process by selecting the **Active in sales process** option. 
 
-On the **Tracking dimensions** FastTab, if **Blank receipt allowed** option is enabled, serial number is an optional input during inventory receipt process, otherwise it’s required. 
+On the **Tracking dimensions** FastTab, if the **Blank receipt allowed** option is enabled, the serial number is an optional input during the inventory receipt process, otherwise it’s required. 
 
-On the **Serial numbers** FastTab, if the **Serial number control** is enabled, the serial number must be unique per unit, duplicated serial number is not allowed.
+On the **Serial numbers** FastTab, if the **Serial number control** option is enabled, the serial number must be unique per unit. In other words, duplicated serial numbers are not allowed.
 
-## Working with serialized items in receiving process
+## Serialized items in the receiving process
 
-The **Inbound inventory** operation in POS lets users perform the following tasks on serialized items:
+The **Inbound inventory** operation in POS enables users to perform the following tasks on serialized items.
+
 -	Register serial numbers against serialized items when receiving them into the store via a purchase order.
+
 -	Validate serial numbers that have been preregistered to serialized items when receiving them into the store via a purchase order or transfer order.
 
-To begin the receiving process, in inbound operation you can start with **Receiving now** view by scanning item bar code or entering item ID, or start with **Full order list** view by manually selecting item.
+To begin the receiving process, in the inbound operation, you can start with the **Receiving now** view by scanning the item bar code or entering the item ID, or you can start with the **Full order list** view by manually selecting the item.
 
 If the item being selected or received is a serialized item, its **Details** pane has a **Manage serial number** link which takes the users to a separate **Serial number management** form. This form lists all open serial number lines that are pending registration or validation. Users may find two tabs in this view, one for current item, the other for all serialized items in the order. Alternatively, you can click **Serial number** on the app bar of order details view to open this form, or during receiving flow click **Manage serial number** link on the prompt dialog to get to this form.
 
