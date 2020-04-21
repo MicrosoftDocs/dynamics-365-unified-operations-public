@@ -51,11 +51,13 @@ The **Inbound inventory** operation in POS enables users to perform the followin
 
 To begin the receiving process, in the inbound operation, you can start with the **Receiving now** view by scanning the item bar code or entering the item ID, or you can start with the **Full order list** view by manually selecting the item.
 
-If the item being selected or received is a serialized item, its **Details** pane has a **Manage serial number** link which takes the users to a separate **Serial number management** form. This form lists all open serial number lines that are pending registration or validation. Users may find two tabs in this view, one for current item, the other for all serialized items in the order. Alternatively, you can click **Serial number** on the app bar of order details view to open this form, or during receiving flow click **Manage serial number** link on the prompt dialog to get to this form.
+If the item being selected or received is a serialized item, the **Details** pane for the item contains a "Manage serial number" link which opens the **Serial number management** page. The **Serial number management** page lists all open serial number lines that are pending registration or validation. There may be two tabs in this view--one for the current item, the other for all the serialized items in the order. Alternatively, you can click **Serial number** on the app bar of the order details view to open this page, or click "Manage serial number" on the prompt dialog during the receiving flow.
 
-The **Status** field on this form can help you understand the current stage each serial number is in.
-- **Not registered** – Serial number has not been provided or the preregistered serial number has not yet been validated.
-- **Registering** – Serial number has been registered and saved locally to the store’s channel database, or the preregistered serial number has been validated. Only serial numbers in Registering status will be submitted to Commerce Headquarters upon **Finish receiving**.
+The **Status** field on the **Serial number management** page provides information about the current stage each serial number is in.
+
+- **Not registered**: the serial number has not been provided or the preregistered serial number has not yet been validated.
+
+- **Registering**: the serial number has been registered and saved locally to the store’s channel database, or the preregistered serial number has been validated. Only the serial numbers in the "Registering" status will be submitted to Commerce headquarters upon **Finish receiving**.
 
 ### Register serial numbers against serialized items
 
