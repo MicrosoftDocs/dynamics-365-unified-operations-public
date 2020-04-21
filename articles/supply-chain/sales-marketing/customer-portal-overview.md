@@ -71,8 +71,8 @@ The Customer portal acts as a starting point for organizations that want to use 
 
 To implement the Customer portal, you must have the following licenses:
 
-- **Dynamics 365 for Supply Chain Management P2 license** – This license is required to use dual-write to create and view sales orders. For details and links to complete licensing information, see the [Dynamics 365 Pricing webpage](https://dynamics.microsoft.com/en-us/pricing/#Operations). If you don't have a P2 license make sure you have the Dynamics 365 Sales solution.
 - **Power Apps portals** – This license is required to host the Customer portal. Portals are licensed based on usage. For details, see the [Power Apps portals licensing requirements](https://docs.microsoft.com/en-us/power-platform/admin/powerapps-flow-licensing-faq#portals).
+- **Dual-write** - You will need the necessary licenses to make Dual-write enabled for supply chain management entities. Refer to the [Dual-write system requirements](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-system-req) to learn more
 
 ## Dependencies on dual-write and Power Apps portals
 
