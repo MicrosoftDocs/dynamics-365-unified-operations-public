@@ -561,6 +561,9 @@ Only user accounts that have the Global Administrator directory role can add cer
 2. Determine whether the certificate is already registered by running the following script from the **Infrastructure** folder.
 
     ```powershell
+    # If you have issues downloading the Az module run the following
+    # [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+    
     Install-Module Az
     Import-Module Az
     .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint <OnPremLocalAgent Certificate Thumbprint> -Test
