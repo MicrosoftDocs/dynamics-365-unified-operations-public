@@ -3,7 +3,7 @@
 
 title: View POS extension package information
 description: This topic provides information about the Extension packages section of the Settings view in the point of sale (POS). This new section lists the extension packages that are included as part of the core POS, and it lets you view status information and other details.
-author: mumani
+author: mugunthanm
 manager: AnnBe
 ms.date: 04/25/2019
 ms.topic: article
