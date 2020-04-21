@@ -71,7 +71,7 @@ To set up default shipment consolidation policies on an environment where wareho
 
     > [!NOTE]
     > - The **CrossOrder** policy takes the same fields into consideration as the legacy logic did, excluding the order number (to consolidate lines into shipments based on warehouse, transportation mode of delivery, address, and so on).
-    > - Both **Default** policies will have the same set of fields taken into consideration by legacy logic, including order number (to consolidate lines into shipments based on order number, warehouse, transportation mode of delivery, address, and so on).
+    > - Both **Default** policies take the same set of fields into consideration as legacy logic did, including order number (to consolidate lines into shipments based on order number, warehouse, transportation mode of delivery, address, and so on).
 
 1. Select **CrossOrder** policy and select **Edit query** on the action pane.
 1. The query opens. Note that warehouses that had **Consolidate shipment at release to warehouse** set to *Yes* are listed here and are therefore included in the query.
@@ -88,7 +88,7 @@ To set up default shipment consolidation policies on a brand new environment, us
     - A **Default** policy for the **Policy type** *Sales orders*.
     - A **Default** policy for the **Policy type** *Transfer issue*.
     > [!NOTE]
-    > Both default policies have the same set of fields taken into consideration as the legacy logic did, including order number (to consolidate lines into shipments based on order number, warehouse, transportation mode of delivery, address, and so on).
+    > Both default policies take the same set of fields into consideration as the legacy logic did, including order number (to consolidate lines into shipments based on order number, warehouse, transportation mode of delivery, address, and so on).
 
 ## Scenario 2: Configure custom shipment consolidation policies
 
@@ -96,17 +96,23 @@ This scenario shows show to set up custom shipment consolidation policies, which
 
 ### Enable the feature and prepare master data for this scenario
 
-Before you can work through the exercises in this scenario, you must enable the feature and prepare the master data needed to do the filtering. (This is also a precondition for the scenarios provided in [Consolidate shipments using shipment consolidation policies](../warehousing/consolidate-shipments.md).)
+Before you can work through the exercises in this scenario, you must enable the feature and prepare the master data needed to do the filtering, as described in this section. (This is also a precondition for the scenarios provided in [Consolidate shipments using shipment consolidation policies](../warehousing/consolidate-shipments.md).)
 
 #### Enable the feature and create the default policies
 
-If you haven't already done so, enable the feature and create the default consolidation polices as described previously in [Scenario 1: Configure default shipment consolidation policies](#scenario-1). 
+If you haven't already done so, enable the feature in feature management and create the default consolidation polices as described previously in [Scenario 1: Configure default shipment consolidation policies](#scenario-1).
 
 #### Set up product filter codes
 
-1. Go to **Warehouse management \> Setup \> Product filters \> Product filters** and create two  filter codes of **Code 4** filter title.
-    1. For example, **Flammable** and **Explosive**.
+1. Go to **Warehouse management \> Setup \> Product filters \> Product filters** and add the following two filter codes:
 
+    - Product filter 1:
+        - **Filter code** - *Flammable*
+        - **Filter title** - *Code 4*
+    - Product filter 2:
+        - **Filter code** - *Explosive*
+        - **Filter title** - *Code 4*
+<!-- KFM: continue here -->
 2. Go to **Product information management \> Products \> Released products** and set up two WHS-enabled items&mdash;one item with **Flammable** product filter code (**Code 4** field on the **Warehouse** FastTab) and another one with **Explosive** product filter code.
 
 #### Set up the transportation mode of delivery
