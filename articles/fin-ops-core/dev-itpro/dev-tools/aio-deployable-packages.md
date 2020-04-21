@@ -40,6 +40,9 @@ This topic outlines the best practices for creating and managing an all-in-one d
 > [!IMPORTANT]
 > If you currently have a payment connector deployed in your environment, you will need to [Create a payment connector package](../../../Commerce/dev-itpro/payment-connector-package.md) and include it in the All-in-one deployable package.
 
+> [!IMPORTANT]
+> If you currently use Commerce functionality for Retail Point of Sale you will also need to [Synchronize self-service installers] (../../../commerce/dev-itpro/synchronize-installers.md)
+
 ## What is an all-in-one deployable package?
 
 An all-in-one deployable is a software deployable package that contains all the models and binaries that you currently have in an environment. Think of it as a single package that represents all the non-Microsoft software in an environment.
