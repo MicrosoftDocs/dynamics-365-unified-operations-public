@@ -5,7 +5,7 @@ title: Set up and deploy on-premises environments (Platform update 12 and later)
 description: This topic provides information about how to plan, set up, and deploy Dynamics 365 Finance + Operations (on-premises) with Platform update 12 and later.
 author: PeterRFriis
 manager: AnnBe
-ms.date: 04/06/2020
+ms.date: 04/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -561,6 +561,9 @@ Only user accounts that have the Global Administrator directory role can add cer
 2. Determine whether the certificate is already registered by running the following script from the **Infrastructure** folder.
 
     ```powershell
+    # If you have issues downloading the Azure PowerShell Az module, run the following:
+    # [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+    
     Install-Module Az
     Import-Module Az
     .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint <OnPremLocalAgent Certificate Thumbprint> -Test
