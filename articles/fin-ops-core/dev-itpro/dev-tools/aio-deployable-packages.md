@@ -5,7 +5,7 @@ title: All-in-one deployable packages
 description: This topic describes the all-in-one deployable package concept and its use.
 author: laneswenka
 manager: AnnBe
-ms.date: 04/13/2020
+ms.date: 04/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
