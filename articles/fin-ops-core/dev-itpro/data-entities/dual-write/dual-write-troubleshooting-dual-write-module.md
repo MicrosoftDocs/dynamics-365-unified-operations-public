@@ -85,9 +85,6 @@ This error occurs when the linked Common Data Service environment isn't availabl
 
 To fix the issue, create a ticket for the Data Integration team. Attach the network trace so that the Data Integration team can mark the maps as **Not running** in the back end.
 
-> [!Note] 
-> You will not run into this error once we enable force unlinking which should be available soon.
-
 ## Error while trying to start an entity mapping
 
 You might receive an error like the following when you try to set that state of a mapping to **Running**:
