@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Create payment packaging for Application Explorer for Self-service deployment
-description: This topic explains how to package a payment connector for Application Explorer for [Self-service deployment](../../fin-ops-core/dev-itpro/deployment/infrastructure-stack.md) in Dynamics 365 Commerce.
+title: Create payment packaging for Application Explorer for self-service deployment
+description: This topic explains how to package a payment connector for Application Explorer for self-service deployment in Dynamics 365 Commerce.
 author: mugunthanm
 manager: AnnBe
 ms.date: 04/22/2020
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.10
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to create payment packaging for Application Explorer for Self-service deployment in Dynamics 365 Commerce.
+This topic explains how to create payment packaging for Application Explorer for self-service deployment in Dynamics 365 Commerce.
 
 In releases that are earlier than 10.0.10, you use the Commerce software development kit (SDK) to create a payment connector package. (The Commerce SDK was previously known as the Retail SDK.) In the 10.0.10 release and later, you can use only Visual Studio to create an  Application Object Server (AOS) payment connector package. Packages that you create by using this approach can be deployed for both legacy and self-service deployments using [All-in-one packages](../../fin-ops-core/dev-itpro/dev-tools/aio-deployable-packages.md).
 
