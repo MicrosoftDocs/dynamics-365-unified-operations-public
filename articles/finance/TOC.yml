@@ -1012,6 +1012,8 @@
           href: project-management/mobile-timesheets.md
         - name: Implement custom fields for the Project timesheet mobile app
           href: project-management/custom-fields-mobile.md
+      - name: Project grants
+        href: project-management/project-grants.md
     - name: Public sector
       items:
       - name: Public sector home page
