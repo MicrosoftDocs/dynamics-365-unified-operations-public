@@ -53,7 +53,9 @@ To associate a guide with a maintenance checklist template:
 1. Author a guide using the Dynamics 365 Guides PC and HoloLens apps. For information on authoring a guide, see:
     - [Use the PC app to create a guide](https://docs.microsoft.com/dynamics365/mixed-reality/guides/pc-app-overview)
     - [Use the HoloLens app to place your holograms](https://docs.microsoft.com/dynamics365/mixed-reality/guides/hololens-app-overview)
+
 1. In Supply Chain Management, [create a maintenance checklist template](setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md#create-a-maintenance-checklist-template)
+
 1. Associate a guide with a **Maintenance checklist** line in your new template by doing the following:
 
     1. In the **Maintenance checklist lines** section, select the line you want to associate the guide with.
@@ -62,7 +64,7 @@ To associate a guide with a maintenance checklist template:
     ![Associate a guide with a maintenance checklist](media/am-guides-integration-add-guide.png "Associate a guide with a maintenance checklist")
 
     1. In the **Name** list, select a guide, and then select **Save**.
-    ![Select a guide from the list](media/am-guides-integration-add-guide.png "Select a guide from the list")
+    ![Select a guide from the list](media/am-guides-integration-select-guide.png "Select a guide from the list")
 
 1. Associate the **Maintenance Checklist template** with a job type by doing the following:
 
