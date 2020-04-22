@@ -137,17 +137,12 @@ Follow steps noted in the [Posting of online sales and payments](https://docs.mi
 
 If an order is retreived for pickup in store and the balance due is not equal to zero, check to ensure that the Modern POS in use and that the hardware station is active. Alternatively, if the Cloud POS or Moder POS for iOS are in use, check to ensure that a shared hardware station is active. Some form of active hardware station is requried to retreive payments that were made online.
 
-### Checkout doesn't render credit card entry module
-
-When checkout doesn't render the credit card entry module, it likely means there is a problem with the payment services setup or payment account setup for the online store. 
-
 ### General issues with capturing payment 
 
 For all general issues, you should always consult the Modern POS or IIS Hardware Station event logs first. You can find these logs found under the following nodes in the Microsoft Windows event log:
 
 - Application and Services Logs \> Microsoft \> Dynamics \> Commerce-ModernPOS
 - Application and Services Logs \> Microsoft \> Dynamics \> Commerce-Hardware Station
-
 
 ## Additional resources
 
