@@ -44,7 +44,7 @@ Your test environment must be running Platform update 15 or newer. The Regressio
 You need Microsoft Excel installed to generate and edit test parameters. 
 
 ### Azure DevOps
-You must have an Azure DevOps project to store and manage your test cases, test plans, and test case results. You will need an Azure DevOps Test Manager or Test Plans license. For example, if you have a Visual Studio Enterprise subscription, you already have a license to Test Plans. For more information, see [Pricing for Azure DevOps Services](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) or [Pricing for Azure DevOps Server](https://azure.microsoft.com/en-us/pricing/details/devops/server/).
+You must have an Azure DevOps project to store and manage your test cases, test plans, and test case results. You will need an Azure DevOps Test Manager or Test Plans license. For example, if you have a Visual Studio Enterprise subscription, you already have a license to Test Plans. For more information, see [Pricing for Azure DevOps Services](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) or [Pricing for Azure DevOps Server](https://azure.microsoft.com/pricing/details/devops/server/).
 
 ### Authentication Certificate
 RSAT is designed to be installed on any Windows 10 computer and connect remotely via a web browser to an environment.
