@@ -5,7 +5,7 @@ title: Custom Filter Group subpattern
 description: This topic provides information about the Custom Filter Group subpattern.
 author: jasongre
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 04/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -52,7 +52,9 @@ Two patterns are described in this document. The only difference between these p
 -   **Custom and Quick Filters** – In this subpattern, the QuickFilter control is mandatory.
 
 ## Wireframes
-### Custom Filters[Custom Filters](./media/customfiltergroup1.png)](./media/customfiltergroup1.png)
+### Custom Filters
+
+[![Custom Filters](./media/customfiltergroup1.png)](./media/customfiltergroup1.png)
 
 ### Custom and Quick Filters
 
