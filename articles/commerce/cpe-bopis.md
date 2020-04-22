@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure BOPIS in a Dynamics 365 Commerce environment
-description: This topic explains how to configure BOPIS (buy online, pick up in store) in a Microsoft Dynamics 365 Commerce environment after it has been provisioned.
+description: This topic explains how to configure buy online, pick up in store (BOPIS) in a Microsoft Dynamics 365 Commerce environment after it has been provisioned.
 author: rubendel
 manager: annbe
 ms.date: 04/20/2020
@@ -33,113 +33,115 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic explains how to configure BOPIS (buy online, pickup in store) in a Microsoft Dynamics 365 Commerce environment after the environment has been provisioned.
+This topic explains how to configure buy online, pickup in store (BOPIS) in a Microsoft Dynamics 365 Commerce environment after the environment has been provisioned.
 
 ## Prerequisite
 
-Complete the procedures in this topic only after your Commerce preview environment has been provisioned and configured. For information on provisioning and confiuring your environment, see [Provision a Commerce environment](provisioning-guide.md) and [Configure a Dynamics 365 Commerce environment](https://docs.microsoft.com/dynamics365/commerce/cpe-post-provisioning).
+Complete the procedures in this topic only after your Commerce preview environment has been provisioned and configured. For information about how to provision and configure your environment, see [Provision a Dynamics 365 Commerce preview environment](provisioning-guide.md) and [Configure a Dynamics 365 Commerce preview environment](https://docs.microsoft.com/dynamics365/commerce/cpe-post-provisioning).
 
-After your Commerce environment has been provisioned and configured end-to-end, this topic can be used to enable the BOPIS scenario.
+After your Commerce environment has been provisioned and configured end to end, you can use this topic to enable BOPIS scenarios.
 
-## Configure POS
+## Configure the POS
 
 ### Configure Modern POS
 
-BOPIS scenarios with a credit card payment require a hardware station. The hardware station is built into the Modern point of sale (POS) for Windows and Android clients. If using Cloud POS or Modern POS for iOS, the POS client must be paired with a shared hardware station. This topic describes how to configure BOPIS for Windows and Android clients. For information on setting up a shared hardware station, visit [Configure and install Retail hardware station](https://docs.microsoft.com/dynamics365/commerce/retail-hardware-station-configuration-installation).
+BOPIS scenarios that involve a credit card payment require a hardware station. The hardware station is built into Modern POS for Windows and Android clients. If you're using Cloud POS or Modern POS for iOS, the point of sale (POS) client must be paired with a shared hardware station. This topic explains how to configure BOPIS for Windows and Android clients. For information about how to set up a shared hardware station, see [Configure and install Retail hardware station](https://docs.microsoft.com/dynamics365/commerce/retail-hardware-station-configuration-installation).
 
-1. Go to **Retail and Commerce \> Channel setup \> POS setup \> Registers**, select **SANFRAN-5**, and click **Edit**.
-2. Select the **Hardware profile**, change the value from **HW002** to **HW001**, and then click **Save**.
-3. To syncronize the changes, go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
-4. Select the distribution schedule **1090** and then click **Run now** in the action pane.
-5. Click **Yes**, then **OK** to intiate the data sychronization. 
+1. Go to **Retail and Commerce \> Channel setup \> POS setup \> Registers**.
+2. Select register **SANFRAN-5**, and then select **Edit**.
+3. Select the **Hardware profile**, change the value from **HW002** to **HW001**, and then select **Save**.
+4. To synchronize the changes, go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
+5. Select distribution schedule **1090**, and then, on the Action Pane, select **Run now**.
+6. Select **Yes** and then **OK** to initiate data synchronization. 
 
 ### Install Modern POS
 
-1. Go to **Retail and Commerce \> Channel setup \> POS setup \> Devices** and select **SANFRANCIS-5**.
-2. In the Action pane, click **Download**, then click **Configuration file**.
-3. Next, click **Download**, then click **Retail Modern POS**. 
-4. When the ModernPOSSetup.exe file download has completed, click **Open file**.
+1. Go to **Retail and Commerce \> Channel setup \> POS setup \> Devices**.
+2. Select device **SANFRANCIS-5**.
+3. On the Action Pane, select **Download**, and then select **Configuration file**.
+4. Select **Download**, and then select **Retail Modern POS**. 
+5. When download of the **ModernPOSSetup.exe** file is completed, select **Open file**.
 
-![Open file](./dev-itpro/media/Payments/openfile.png)
+    ![Open file](./dev-itpro/media/Payments/openfile.png)
 
-5. Click **Next** to proceed through installation. When installation is complete, click **Close**.
+6. Select **Next** to go through the installation process. When installation is completed, select **Close**.
 
 ### Activate Modern POS
 
-To activate Modern POS, follow these steps.
+1. On the Windows desktop, select the **Start** button, and enter **Retail Modern POS**.
+2. Select the **Retail Modern POS** application to initiate activation.
+3. Select **Next**. The **Server URL**, **Device ID**, and **Register number** fields should be preset by using information from the configuration file that you downloaded in the previous procedure.
+4. Select **Activate**.
+5. An authentication dialog box appears. Select the account that uses the email address that was previously associated with worker **000713 - Andrew Collette**.
 
-1. On the Windows desktop, click the **Start** button and type **Retail Modern POS**. 
-2. Select the **Retail Modern POS** application to initiate activation. 
-3. Click **Next**. The **Server URL**, **Device ID**, and **Register number** should be pre-populated with details from the configuration file downloaded at the same time as the Modern POS install file. 
-4. Click **Activate**.
-5. An authentication dialog appears. Select the account with the email address previously associated with worker **000713 - Andrew Collette**.
+    > [!NOTE]
+    > If you haven't yet associated a worker with your identity, activation will be unsuccessful. In this case, revisit the environment. For information, see [Configure a Dynamics 365 Commerce preview environment](https://docs.microsoft.com/dynamics365/commerce/cpe-post-provisioning).
 
-> [!NOTE]
-> If you have not yet associated a worker with your identity, activation will fail. If this happens, revisit the environment. Visit the [Configure a Dynamics 365 Commerce environment](https://docs.microsoft.com/dynamics365/commerce/cpe-post-provisioning) article.
-
-6. When prompted to let your organization manage the device, select **This app only**.
-7. Click **Get started** when activation is complete. 
+6. When you're prompted to let your organization manage the device, select **This app only**.
+7. When activation is completed, select **Get started**.
 
 ### Enable BOPIS in Modern POS
 
-1. Log into the modern POS using Operator ID **000713** and password **123**.
-2. When the introduction walkthrough video plays, check the two boxes in the bottom lefthand corner of the dialog, then close the dialog.
-3. If you are not prompted to close the shift, scroll to the right on the "Welcome" screen and click **Close shift**, then log back into the POS.
-4. Select **Perform a non-drawer operation** when prompted after login.
-5. On the "Welcome" screen, scroll to the far right and select the **Select hardware station** operation.
-6. Click **Manage**, set **Use hardware station** equal to **On**, then click **OK**. 
-7. Log off of the POS, then log back in.
-8. When logged in, select **Open a new shift**, then select **Drawer**.
+1. Sign in to Modern POS by using **000713** as the operator ID and **123** as the password.
+2. When the introductory walkthrough video plays, select the two check boxes in the lower-left corner of the dialog box, and then close the dialog box.
+3. If you aren't prompted to close the shift, scroll to the right on the **Welcome** page, select **Close shift**, and then sign back in to the POS.
+4. After you're signed in, when you're prompted, select **Perform a non-drawer operation**.
+5. On the **Welcome** page, scroll to the right, and select the **Select hardware station** operation.
+6. Select **Manage**, set the **Use hardware station** option to **On**, and then select **OK**.
+7. Sign out of the POS, and then sign back in.
+8. After you're signed in, select **Open a new shift**, and then select **Drawer**.
 
-## Perform a BOPIS scenario
+## Complete a BOPIS scenario
 
-### Create a storefront order for pick up in store
+### Create a storefront order for in-store pickup
 
-1. Go to the URL specified during the [Initialize e-commerce step](https://docs.microsoft.com/dynamics365/commerce/provisioning-guide#initialize-e-commerce) in the environment configuration article.
-2. Select an item and click **Add to cart**.
-3. On the shopping bag page, click **Pick this up** for the order line just added.
-4. In the **Select a store** dialog, enter **San Francisco** and click the **Search** icon. 
-5. In the list of returned results, locate the San Francisco store and click **Pick up here**.
-6. On the shopping bag page, click **Checkout as Guest**. 
+1. Go to the URL that you specified in the [Initialize e-Commerce](https://docs.microsoft.com/dynamics365/commerce/provisioning-guide#initialize-e-commerce) step during environment configuration.
+2. Select an item, and select **Add to cart**.
+3. On the shopping bag page, select **Pick this up** for the order line that you just added.
+4. In the **Select a store** dialog box, enter **San Francisco**, and then select the **Search** button.
+5. In the list of results, find the San Francisco store, and select **Pick up here**.
+6. On the shopping bag page, select **Checkout as Guest**. 
 
-> [!NOTE]
-> In order to procede with checkout, you must accept the **Cookie notice**. This appears as a banner at the top of the checkout page.
+    > [!NOTE]
+    > To continue with checkout, you must accept the cookie notice. This notice appears as a banner at the top of the checkout page.
 
 7. For the credit card payment method, enter the following details:
 
-- **Cardholder name:** *Any name
-- **Card number:** 4111-1111-1111-1111
-- **Expiration date:** 10/20
-- **Card verification value (CVV) code:** 737
+    - **Cardholder name:** Enter any name.
+    - **Card number:** Enter **4111-1111-1111-1111**.
+    - **Expiration date:** Enter **10/20**.
+    - **Card verification value (CVV) code:** Enter **737**.
 
-> [!IMPORTANT]
-> Never, under any circumstances, try to use actual credit card information on the test site.
+    > [!IMPORTANT]
+    > Never, under any circumstances, try to use actual credit card information on the test site.
 
-8. Proceed with checkout by entering billing address details, then click **Save and continue**.
-9. Click **Checkout** once the order is ready to be placed. 
+8. Continue with checkout by entering details of the billing address, and then select **Save and continue**.
+9. When the order is ready to be placed, select **Checkout**.
 
 ### Synchronize online orders to the back office
 
-Follow steps detailed in the [Posting of online sales and payments](https://docs.microsoft.com/dynamics365/commerce/tasks/posting-online-sales-payments) article to synchronize online orders. 
+For information about how to synchronize online orders, see [Posting of online sales and payments](https://docs.microsoft.com/dynamics365/commerce/tasks/posting-online-sales-payments).
 
-### Pick up in store
+### Pick up an order in the store
 
-1. Log into the POS. 
-2. Select **Order fulfillment** from the **Welcome screen**.
-3. In the list of items for pickup, select the line from the order placed online. 
-4. With the order line selected, click **Pick up**.
-5. The line item will be added to the transaction screen with a balance due of **$0.00**.
-6. Click the balance due of **$0.00** or select any payment method to conclude the transaction. 
+1. Sign in to the POS.
+2. On the **Welcome** screen, select **Order fulfillment**
+3. In the list of items for pickup, select the line from the order that was placed online.
+4. While the order line is selected, select **Pick up**.
+
+    The line item is added to the transaction screen, and **$0.00** is shown as the balance that is due.
+
+5. Select the balance due of **$0.00**, or select any payment method to conclude the transaction.
 
 ## Troubleshooting
 
-### Online orders retrieved in POS have non-zero balance due
+### Online orders that are retrieved in the POS have a non-zero balance due
 
-If an order is retreived for pickup in store and the balance due is not equal to zero, check to ensure that the Modern POS is in use and that the hardware station is active. Alternatively, if the Cloud POS or Modern POS for iOS are in use, check to ensure that a shared hardware station is active. Some form of active hardware station is requried to retreive payments that were made online.
+When an order is retrieved for in-store pickup, if the balance due isn't 0 (zero), make sure that Modern POS is being used, and that the hardware station is active. If Cloud POS or Modern POS for iOS is being used, make sure that a shared hardware station is active. Some form of active hardware station is required to retrieve payments that were made online.
 
-### General issues with capturing payment 
+### General issues with payment capture
 
-For all general issues, you should always consult the Modern POS or IIS Hardware Station event logs first. You can find these logs  under the following nodes in the Microsoft Windows event log:
+For all general issues, you should always consult the Modern POS or Internet Information Services (IIS) Hardware Station event logs as a first step. You can find these logs under the following nodes in the Windows event log:
 
 - Application and Services Logs \> Microsoft \> Dynamics \> Commerce-ModernPOS
 - Application and Services Logs \> Microsoft \> Dynamics \> Commerce-Hardware Station
@@ -167,4 +169,3 @@ For all general issues, you should always consult the Modern POS or IIS Hardware
 [Saving online payment instruments with the Adyen connector](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector-listpi)
 
 [Omni-channel payments overview](https://docs.microsoft.com/dynamics365/commerce/omni-channel-payments)
-
