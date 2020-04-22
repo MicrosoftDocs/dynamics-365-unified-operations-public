@@ -65,7 +65,7 @@ The ledger accounts that are updated because of these tasks are linked to the or
 
 **Notes:**
 
--   Inventory close isn't required if you use the Standard cost valuation method.
+-   Inventory Close is a required step in the month end closing procedure for all inventory models.  This includes Standard and Moving Average Costing.  You will not be able to close the financial period until an inventory close has been performed as of the period end date.
 -   Before you run the closing procedure, you can view a list of items that can't be settled during the update.
 -   We recommend that you run inventory close during off-peak hours, to distribute computing resources more evenly.
 
