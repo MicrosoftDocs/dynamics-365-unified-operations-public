@@ -37,7 +37,7 @@ This topic explains how to configure BOPIS (buy online, pickup in store) in a Mi
 
 ## Prerequisite
 
-Complete the procedures in this topic only after your Commerce preview environment has been provisioned and configured. For information on provisioning and confiuring your environment, see [Provision a Commerce environment](provisioning-guide.md) and [Configure a Dynamics 365 Commerce environment](https://docs.microsoft.com/en-us/dynamics365/commerce/cpe-post-provisioning).
+Complete the procedures in this topic only after your Commerce preview environment has been provisioned and configured. For information on provisioning and confiuring your environment, see [Provision a Commerce environment](provisioning-guide.md) and [Configure a Dynamics 365 Commerce environment](https://docs.microsoft.com/dynamics365/commerce/cpe-post-provisioning).
 
 After your Commerce environment has been provisioned and configured end-to-end, this topic can be used to enable the BOPIS scenario.
 
@@ -45,7 +45,7 @@ After your Commerce environment has been provisioned and configured end-to-end, 
 
 ### Configure Modern POS
 
-BOPIS scenarios with a credit card payment require a hardware station. The hardware station is built into the Modern point of sale (POS) for Windows and Android clients. If using Cloud POS or Modern POS for iOS, the POS client must be paired with a shared hardware station. This topic describes how to configure BOPIS for Windows and Android clients. For information on setting up a shared hardware station, visit [Configure and install Retail hardware station](https://docs.microsoft.com/en-us/dynamics365/commerce/retail-hardware-station-configuration-installation).
+BOPIS scenarios with a credit card payment require a hardware station. The hardware station is built into the Modern point of sale (POS) for Windows and Android clients. If using Cloud POS or Modern POS for iOS, the POS client must be paired with a shared hardware station. This topic describes how to configure BOPIS for Windows and Android clients. For information on setting up a shared hardware station, visit [Configure and install Retail hardware station](https://docs.microsoft.com/dynamics365/commerce/retail-hardware-station-configuration-installation).
 
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> Registers**, select **SANFRAN-5**, and click **Edit**.
 2. Select the **Hardware profile**, change the value from **HW002** to **HW001**, and then click **Save**.
@@ -75,7 +75,7 @@ To activate Modern POS, follow these steps.
 5. An authentication dialog appears. Select the account with the email address previously associated with worker **000713 - Andrew Collette**.
 
 > [!NOTE]
-> If you have not yet associated a worker with your identity, activation will fail. If this happens, revisit the environment. Visit the [Configure a Dynamics 365 Commerce environment](https://docs.microsoft.com/en-us/dynamics365/commerce/cpe-post-provisioning) article.
+> If you have not yet associated a worker with your identity, activation will fail. If this happens, revisit the environment. Visit the [Configure a Dynamics 365 Commerce environment](https://docs.microsoft.com/dynamics365/commerce/cpe-post-provisioning) article.
 
 6. When prompted to let your organization manage the device, select **This app only**.
 7. Click **Get started** when activation is complete. 
@@ -95,7 +95,7 @@ To activate Modern POS, follow these steps.
 
 ### Create a storefront order for pick up in store
 
-1. Go to the URL specified during the [Initialize e-commerce step](https://docs.microsoft.com/en-us/dynamics365/commerce/provisioning-guide#initialize-e-commerce) in the environment configuration article.
+1. Go to the URL specified during the [Initialize e-commerce step](https://docs.microsoft.com/dynamics365/commerce/provisioning-guide#initialize-e-commerce) in the environment configuration article.
 2. Select an item and click **Add to cart**.
 3. On the shopping bag page, click **Pick this up** for the order line just added.
 4. In the **Select a store** dialog, enter **San Francisco** and click the **Search** icon. 
@@ -120,7 +120,7 @@ To activate Modern POS, follow these steps.
 
 ### Synchronize online orders to the back office
 
-Follow steps detailed in the [Posting of online sales and payments](https://docs.microsoft.com/en-us/dynamics365/commerce/tasks/posting-online-sales-payments) article to synchronize online orders. 
+Follow steps detailed in the [Posting of online sales and payments](https://docs.microsoft.com/dynamics365/commerce/tasks/posting-online-sales-payments) article to synchronize online orders. 
 
 ### Pick up in store
 
@@ -162,9 +162,9 @@ For all general issues, you should always consult the Modern POS or IIS Hardware
 
 [Dynamics 365 Commerce website](https://aka.ms/Dynamics365CommerceWebsite)
 
-[Adyen payment connector](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3)
+[Adyen payment connector](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3)
 
-[Saving online payment instruments with the Adyen connector](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/adyen-connector-listpi)
+[Saving online payment instruments with the Adyen connector](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector-listpi)
 
-[Omni-channel payments overview](https://docs.microsoft.com/en-us/dynamics365/commerce/omni-channel-payments)
+[Omni-channel payments overview](https://docs.microsoft.com/dynamics365/commerce/omni-channel-payments)
 
