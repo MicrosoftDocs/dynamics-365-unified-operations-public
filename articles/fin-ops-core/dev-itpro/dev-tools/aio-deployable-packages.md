@@ -40,7 +40,7 @@ This topic outlines the best practices for creating and managing an all-in-one d
 >
 > - If you currently have a payment connector deployed in your environment, you will need to [create a payment connector package](../../../commerce/dev-itpro/payment-connector-package.md) and include it in the all-in-one deployable package.
 >
-> - If you currently use Commerce functionality for Retail Point of Sale you will also need to [synchronize self-service installers] (../../../commerce/dev-itpro/synchronize-installers.md).
+> - If you currently use Commerce functionality for Retail Point of Sale you will also need to [synchronize self-service installers(../../../commerce/dev-itpro/synchronize-installers.md).
 
 ## What is an all-in-one deployable package?
 
