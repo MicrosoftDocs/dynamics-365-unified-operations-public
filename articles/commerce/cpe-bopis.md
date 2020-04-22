@@ -5,7 +5,7 @@ title: Configure BOPIS in a Dynamics 365 Commerce environment
 description: This topic explains how to configure buy online, pick up in store (BOPIS) in a Microsoft Dynamics 365 Commerce environment after it has been provisioned.
 author: rubendel
 manager: annbe
-ms.date: 04/20/2020
+ms.date: 04/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
