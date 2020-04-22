@@ -34,10 +34,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 When updating an environment with a deployable package, a license may be required for ISV or partner X++ solutions. ISVs can setup pipelines to automatically include these licenses in release or build pipelines, or customers can setup their own pipeline to combine the ISV deployable package and the license file.
 
-This article assumes a working knowledge of Azure DevOps pipelines. Please review the documentation about [Aure Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops).
+This article assumes a working knowledge of Azure DevOps pipelines. Please review the documentation about [Aure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops).
 
 > [!NOTE]
-> To add these steps to a pipeline, the [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension for Azure DevOps needs to be enabled and installed in the Azure DevOps Account. Review the [Azure DevOps documentation](https://docs.microsoft.com/en-us/azure/devops/marketplace/install-extension?view=azure-devops&tabs=browser) on how to install an extension for an organization.
+> To add these steps to a pipeline, the [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension for Azure DevOps needs to be enabled and installed in the Azure DevOps Account. Review the [Azure DevOps documentation](https://docs.microsoft.com/azure/devops/marketplace/install-extension?view=azure-devops&tabs=browser) on how to install an extension for an organization.
 
 ## Adding the task to a pipeline
 
