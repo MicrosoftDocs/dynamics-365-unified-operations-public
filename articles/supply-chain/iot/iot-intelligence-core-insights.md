@@ -89,6 +89,58 @@ In this topic, you will configure the scenario to generate a message in Supply C
     5. Leave the rest of default values, and click **Create**.
     6. The Redis cache is created in the background.
 
+The resources are all created now.
+
+1. Configuring the IoT hub.
+    1. In your resources, click on the IoT hub resource.
+
+2. Configuring the key vault.
+    1. In your resources, click on the key vault resource.
+    2. You need to give the key vault access to the first-party app Id.
+    3. In the left navigation, click **Access policies**.
+    4. Click **Add an access policy**.
+    5. On the **Add access policy** page, select **Get** and **List** from the **Secret permissions** dropdown.
+    6. Click in the **Select principal** dropdown. In the **Principal** dialog, search for and select **Microsoft Dynamics ERP Microservices**. Click the **Select** button.
+    7. Click **Add**.
+    8. Click **Save**. Now the app has access to the secrets in the key vault.
+
+3. What happens here?
+    1. In the left navigation, click **Secrets**.
+    2. Click on the IoT hub resource.
+    3. In the left navigation, click **Built-in endpoints**.
+    4. Under **Consumer groups**, paste in the consumer groups. These correspond to the out-of-box scenarios.
+        + **microsoft.dynamics.iotintelligence-1**
+        + **microsoft.dynamics.iotintelligence-2**
+        + **microsoft.dynamics.iotintelligence-3**
+    5. Copy the value from the **Event Hub-compatible endpoint** textbox.
+    6. Navigate back to the resource group.
+    7. Click on the key vault resource.
+    8. In the left navigation, click on **Secrets**.
+    9. Click on **Generate/Import**.
+    10. Enter a name in the **Name** text box.
+    11. Paste the endpoint into the **Value** textbox.
+    12. Click **Create**.
+    13. Navigate back to the resource group, and wait for the Redis cache to be provisioned. You can click the **Refresh** button to refresh the status.
+
+4. What happens here?
+    1. Click on the Redis cache resource.
+    2. Click **Access keys**.
+    3. Copy the value from the **Primary connection string** textbox.
+    4. Navigate back to the resource group.
+    5. Click on the key vault resource.
+    6. In the left navigation, click on **Secrets**.
+    9. Click on **Generate/Import**.
+    10. Enter a name in the **Name** text box.
+    11. Paste the connection string into the **Value** textbox.
+    12. Click **Create**.
+
+You are now done provisioning Azure.
+
+
+
+
+
+
 
 
 + Add the **Microsoft Dynamics Microservice ERP** **First Party App Id** to the customer tenant.
@@ -118,20 +170,19 @@ Notes:
 
 ## LCS Environment setup 
 
-1. Open LCS.
-2. Navigate to the environment details.
-3. Scroll down to an environment.
-4. In the Add-in section, click **Install a new add-in** to populate the list of addins that have been enabled for the environment.
-5. Click on the **IoT Intelligence** add-in.
-6. Provide the details of your IoT hub and Redis cache. You can find the values that you need in the key vault you created in the [name of section](#link to section).
-
-    1. In Azure, open the key vault you previously created, and copy the DNS name. The DNS name servers as the key vault identifer.
-    2. In the **Setup add-in** dialog, paste the value into the fields for **IoT Hub** and **Redis cache**.
-    3. In Azure, open the key vault and click the Secrets tab. Copy the secret for ?? and copy it to the ??? field in the **Setup add-in** dialog.
-    4. In Azure, copy the secret for the **Redis ???** and copy it to **Redis cache endpoint secret name** in the **Setup add-in** dialog.
-
-7. Click **Install**. 
-8. A dialog shows up that says **Add-in has been successfully triggered for installation**. Click **OK**.
+1. Open Lifecycle Services (LCS) and navigate to your Supply Chain Management environment.
+2. Scroll to the **Environment add-ins** section.
+3. Click **Install a new add-in** to populate the list of addins that have been enabled for the environment.
+4. In the **Select an add-in to install** dialog, click **IoT Intelligence**.
+5. In the **Setup add-in** dialog, provide the details of your IoT hub and Redis cache. You can find the values that you need in the key vault you created in the [name of section](#link to section).
+    + **Tenant ID**: In the Azure key vault, in the left navigation, click **Overview**. Copy the **Directory ID**. In the **Setup add-in** dialog, paste in the value.
+    + **IoT Event Hub-compatible endpoint Key Vault URI**: In the Azure key vault, in the left navigation, click **Overview**. Copy the **DNS name**. In the **Setup add-in** dialog, paste in the value.
+    + **IoT Event Hub-compatible endpoint secret name**: In the Azure key vault, in the left navigation, click **Secrets**. Select the IoT hub item, right-click and select **Copy**. In the **Setup add-in** dialog, paste in the value.
+    + **Redis cache key vault URI**: In the Azure key vault, in the left navigation, click **Overview**. Copy the **DNS name**. In the **Setup add-in** dialog, paste in the value. (In this example, you stored both values in the same key vault.)
+    + **Redis cache endpoint secret name**: In the Azure key vault, in the left navigation, click **Secrets**. Select the Redis cache item, right-click and select **Copy**. In the **Setup add-in** dialog, paste in the value.
+6. Select the checkbox to accept the terms and conditions.
+7. Click **Install**.
+8. A dialog appears that says **Add-in has been successfully triggered for installation**. Click **OK**.
 
 ## Configure the **Equipment downtime** scenario in Supply Chain Management
 
