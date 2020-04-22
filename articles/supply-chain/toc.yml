@@ -2235,6 +2235,16 @@
           href: sales-marketing/tasks/register-sales-commissions.md
         - name: Set up sales commission rules
           href: sales-marketing/tasks/set-up-sales-commission-rules.md
+      - name: Customer portal for Dynamics 365 Supply Chain Management
+        items:
+        - name: Customer portal overview
+          href: sales-marketing/customer-portal-overview.md
+        - name: Install, set up, and update the Customer portal
+          href: sales-marketing/customer-portal-setup.md
+        - name: Create and manage Customer portal users
+          href: sales-marketing/customer-portal-user-admin.md
+        - name: Customize and use the Customer portal
+          href: sales-marketing/customer-portal-customize.md
       - name: Trade allowance
         href: sales-marketing/trade-allowance.md
       - name: Create a new trade agreement
