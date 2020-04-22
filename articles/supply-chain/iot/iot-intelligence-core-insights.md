@@ -47,11 +47,13 @@ In this topic, you will configure the scenario to generate a message in Supply C
 
 ## Overview of setup process
 
++ Create an Azure key vault with an IoT hub and a Redis cache.
 + Configure your devices to send telemetry to IoT Hub, and define the JSON message format. For more information, see [Azure IoT Hub Documentation](https://docs.microsoft.com/azure/iot-hub/).
 + Create a OneBox environment, and give the appropriate SQL users access to environment for IoT Intelligence.
 + Setup the IoT scenario in Supply Chain Management, including enabling the feature flag, configuring the schema, mapping the signals to Suppy Chain Management sources, and enabling the scenario.
 
-## Azure Resource setup
+
+## Create the Azure resources
 
 1. Verify that **Microsoft Dynamics ERP Microservices** first-party app Id is inside your tenant.
     1. In Azure, navigate to Azure Active Directory.
@@ -74,14 +76,14 @@ In this topic, you will configure the scenario to generate a message in Supply C
     4. On the **Create key vault page**, enter a name in the **Key vault name** textbox.
     5. Leave the rest of default values, and click **Review + create**.
     6. Click **Create**. The key vault is created in the background.
-3. Create an IoT Hub resource.
+3. Create an IoT Hub resource in the key vault.  We recommendation that you create only one Redis cache per environment.
     1. On the **Your deployment is underway** page, click the link for your resource group to navigate back to your resource group.
     2. Click **Add**.
     3. On the **New** page, in the search box, enter **Iot Hub**. Click **Create**.
     4. Enter a name in the **IoT hub name** textbox.
     5. Leave the rest of default values, and click **Review + create**.
     6. Click **Create**. The IoT hub is created in the background.
-4. Create a Redis cache resource.
+4. Create a Redis cache resource in the key vault. We recommendation that you create only one Redis cache per environment.
     1. On the **Your deployment is underway** page, click the link for your resource group to navigate back to your resource group.
     2. Click **Add**.
     3. On the **New** page, in the search box, enter **Azure Cache for Redis**. Click **Create**.
@@ -91,10 +93,12 @@ In this topic, you will configure the scenario to generate a message in Supply C
 
 The resources are all created now.
 
-1. Configuring the IoT hub.
+## Configure the Azure key vault for IoT Intelligence
+
+1. Configure the IoT hub.
     1. In your resources, click on the IoT hub resource.
 
-2. Configuring the key vault.
+2. Configure the key vault.
     1. In your resources, click on the key vault resource.
     2. You need to give the key vault access to the first-party app Id.
     3. In the left navigation, click **Access policies**.
@@ -104,7 +108,7 @@ The resources are all created now.
     7. Click **Add**.
     8. Click **Save**. Now the app has access to the secrets in the key vault.
 
-3. What happens here?
+3. Configure the secrets.
     1. In the left navigation, click **Secrets**.
     2. Click on the IoT hub resource.
     3. In the left navigation, click **Built-in endpoints**.
@@ -121,8 +125,11 @@ The resources are all created now.
     11. Paste the endpoint into the **Value** textbox.
     12. Click **Create**.
     13. Navigate back to the resource group, and wait for the Redis cache to be provisioned. You can click the **Refresh** button to refresh the status.
+    
+    > [!NOTE]
+    > Any time one of the connection strings is updated the secret values will need to be updated
 
-4. What happens here?
+4. Configure the Redis cache.
     1. Click on the Redis cache resource.
     2. Click **Access keys**.
     3. Copy the value from the **Primary connection string** textbox.
@@ -136,37 +143,7 @@ The resources are all created now.
 
 You are now done provisioning Azure.
 
-
-
-
-
-
-
-
-+ Add the **Microsoft Dynamics Microservice ERP** **First Party App Id** to the customer tenant.
-+ Setup an Azure Redis Cache for IoT Intelligence.
-    + Show where the Redis Cache connection string is located.        
-    + Call out that it is recommendation that only one Redis Cache is used per environment.
-+ Setup an Azure IoT Hub for IoT Intelligence.
-    + Add the IoT Intelligence consumer groups.       
-    + Show where the Event Hub connection string is located.     
-    + Call out that it is recommendation that only one IoT Hub is used per environment
         
-### How to setup an Azure Key Vault for IoT Intelligence
-
-+ Give the first party app-id the correct Access Policies to the key vault.     
-+ Show where the Key Vault Uri is located.
-+ Show where the Key Vault ADD tenant id is located.
-+ Add the IoT Hub connection string to the key vault.      
-+ Add the Redis Cache connection string to the key vault.    
-+ Show where the Key Vault secret names are located.  
-+ Call out that any time one of the connection strings is updated the secret values will need to be updated
-
-Notes:
-
-+ You must add the Microsoft Dynamics microservice, first party app ID.
-+ You must give the LCS environment access to the key vault.
-
 
 ## LCS Environment setup 
 
