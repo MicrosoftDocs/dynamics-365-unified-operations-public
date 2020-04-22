@@ -75,8 +75,8 @@ BOPIS scenarios that involve a credit card payment require a hardware station. T
 5. An authentication dialog box appears. Select the account that uses the email address that was previously associated with worker **000713 - Andrew Collette**.
 
     > [!NOTE]
-    > If you haven't yet associated a worker with your identity, activation will be unsuccessful. In this case, revisit the environment. For information, see [Configure a Dynamics 365 Commerce preview environment](https://docs.microsoft.com/dynamics365/commerce/cpe-post-provisioning).
-
+    > If you haven't yet associated a worker with your identity, activation will be unsuccessful. In this case, follow the steps under the "Associate a worker with your identity" section in the [Configure a Dynamics 365 Commerce preview environment](cpe-post-provisioning.md#associate-a-worker-with-your-identity) topic.
+    
 6. When you're prompted to let your organization manage the device, select **This app only**.
 7. When activation is completed, select **Get started**.
 
