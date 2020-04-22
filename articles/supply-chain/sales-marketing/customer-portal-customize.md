@@ -33,6 +33,8 @@ This section describes the different pages that available in the Customer portal
 
 The Customer portal offers a few webpages and actions out of the box. The following site map provides an overview of all the pages, actions, and who can perform those actions.
 
+![Customer portal site map](media/customer-portal-site-map.png "Customer portal site map")
+
 ## Typical customizations
 
 The following topics will help you learn the basics about Power Apps portals and how you can customize portals:
@@ -65,8 +67,12 @@ Here are the standard steps for submitting an order from the Customer portal.
     - **Requisition number** – Enter the requisition number of the order. This field isn't required.
     - **Ship to country/region** – Enter the country/region that the items will be delivered to. This field is automatically set for non-admin users.
 
+    ![The order-information page](media/customer-portal-order-information.png "The order-information page")
+
 1. Select **Next**.
 1. On the **Items** page, select **Add Item**.
+
+    ![The items page](media/customer-portal-items.png "The items page")
 
 1. In the **Item Information** dialog box, set the following fields:
 
@@ -75,10 +81,15 @@ Here are the standard steps for submitting an order from the Customer portal.
     - **Unit** – Specify the unit of measure (for example, **ea.** , **kgs** , or **box** ).
     - **Estimated net amount** – The value is calculated as the estimated price of the item × the quantity for the selected unit.
 
+    ![The item-information page](media/customer-portal-item-information.png "The item-information page")
+
 1. Select **Submit** to add the item to the order.
 1. Repeat steps 4 through 6 until you've added all the items that you want to order.
 1. When you've finished adding items, select **Next** on the **Items** page.
 1. The **Review and submit** page provides a summary of the order. Review the order contents and delivery details. If everything looks correct, select **Submit** to submit the order.
+
+    ![The review-and-submit page](media/customer-portal-order-submit.png "The review-and-submit page")
+
 
 ### Standard data setup
 
@@ -143,12 +154,21 @@ All the controls in the Customer portal are built-in Power Apps portals controls
 
 The only custom control that is included in the Customer portal template is used to create the tiles on the home page.
 
+![Tiles on the home page](media/customer-portal-home-page-tiles.png "Tiles on the home page")
+
 To modify the tiles, follow these steps.
 
 1. Open the [Portal Management app](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-portal).
+
 1. In the navigation pane on the left, select **Page Templates**.
+
+    ![Portal Management navigation pane](media/customer-portal-nav.png "Portal Management navigation pane")
+
 1. Select the page template that is named **Home**.
 1. In the **Web Template** field, select the **Home** link to open the source code for that page.
+
+    ![The Web Template field](media/customer-portal-web-template.png "The Web Template field")
+
 1. You should now see all the source code for the home page and can modify it as you require.
 
 ## Resources
@@ -161,3 +181,5 @@ See these documents to learn more about how you can set up and customize the Cus
 - [Upgrade a portal](https://docs.microsoft.com/powerapps/maker/portals/admin/upgrade-portal)
 - [Migrate portal configuration](https://docs.microsoft.com/powerapps/maker/portals/admin/migrate-portal-configuration)
 - [Solution Lifecycle Management: Dynamics 365 for Customer Engagement apps](https://www.microsoft.com/download/details.aspx?id=57777)
+
+<!-- KFM: I copied the above links from the setup topic. Are they all also relevant here? -->

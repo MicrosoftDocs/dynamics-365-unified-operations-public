@@ -39,6 +39,8 @@ When users self-register, contact records are automatically created for them. Th
 
 Contacts in Power Apps portals are stored as records in the **Contacts** entity in Common Data Service. Dual-write then syncs these records to Supply Chain Management as required.
 
+![Customer portal contacts system diagram](media/customer-portal-contacts.png "Customer portal contacts system diagram")
+
 Before you start to invite new customers, make sure that you've enabled the **Contact** entity mapping in dual-write.
 
 ## The invitation process
@@ -86,9 +88,9 @@ The following table shows which sales orders the users in each web role will be 
 
 | **Sales order** | **Administrator** | **Customer representative for customer X** | **Authorized user: Jane** | **Authorized user: Sam** | **Unauthorized user: May** |
 | --- | --- | --- | --- | --- | --- |
-| Customer&nbsp;X Orderer:&nbsp;Jane | &#10004; | &#10004; | &#10004; | &#10060; | &#10060; |
-| Customer&nbsp;X Orderer:&nbsp;Sam | &#10004; | &#10004; | &#10060; | &#10004; | &#10060; |
-| Customer&nbsp;Y Orderer:&nbsp;May | &#10004; | &#10060; | &#10060; | &#10060; | &#10060; |
+| Customer&nbsp;X Orderer:&nbsp;Jane | &#10004; | &#10004; | &#10004; | &#10007; | &#10007; |
+| Customer&nbsp;X Orderer:&nbsp;Sam | &#10004; | &#10004; | &#10007; | &#10004; | &#10007; |
+| Customer&nbsp;Y Orderer:&nbsp;May | &#10004; | &#10007; | &#10007; | &#10007; | &#10007; |
 
 > [!NOTE]
 > Even though both Sam and Jane are contacts who work for customer X, they can see only the orders that they themselves have placed and nothing else. Although May has an order in the system, she can't see that order in the Customer portal, because she is an unauthorized user. (Additionally, she must have placed the order through some channel other than the portal.)
