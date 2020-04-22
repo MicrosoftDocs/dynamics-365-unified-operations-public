@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Creating Deployable Packages in Azure DevOps Pipelines
 
-To deploy customization to an environment, a deployable package is required in Dynamics Lifecycle Services. This package can be created in an Azure Pipeline, during a build or release process.
+To deploy customizations to an environment, a deployable package is required in Dynamics Lifecycle Services. This package can be created in an Azure Pipeline, during a build or release process.
 
 This article assumes a working knowledge of Azure DevOps pipelines. Please review the documentation about [Aure Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops).
 
@@ -55,7 +55,7 @@ To add the task to your YML or Classic Pipeline build, search the task list for 
 
 ## NuGet Dependency
 
-When running this task on the build VM, NuGet is already available and no action is required. However, when running on hosted agents or other private agents NuGet has to be made available. For this, Azure DevOps has the [NuGet Tool Installer task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/tool/nuget?view=azure-devops) which can be run prior to running the task to create the package.
+When running this task on the build VM, NuGet is already available and no action is required. However, when running on hosted agents or other private agents NuGet has to installed. For this, Azure DevOps has the [NuGet Tool Installer task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/tool/nuget?view=azure-devops) which can be run prior to running the task to create the package.
 
 > [!NOTE]
 > Due to the introduction of semantic versioning in NuGet version 3.4 and above, it is currently required to install version 3.3.0 or earlier.

@@ -74,15 +74,17 @@ The following example shows a packages.config file for the three main packages n
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <packages>
-  <package id="Microsoft.Dynamics.AX.Platform.DevALM.BuildXpp" version="7.0.5559.35512" targetFramework="net40" />
-  <package id="Microsoft.Dynamics.AX.Application.DevALM.BuildXpp" version="10.0.383.10010" targetFramework="net40" />
-  <package id="Microsoft.Dynamics.AX.Platform.CompilerPackage" version="7.0.5559.35512" targetFramework="net40" />
+  <package id="Microsoft.Dynamics.AX.Platform.DevALM.BuildXpp" version="7.0.5644.16778" targetFramework="net40" />
+  <package id="Microsoft.Dynamics.AX.Application.DevALM.BuildXpp" version="10.0.464.13" targetFramework="net40" />
+  <package id="Microsoft.Dynamics.AX.Platform.CompilerPackage" version="7.0.5644.16778" targetFramework="net40" />
 </packages>
 ```
 
 ## Creating the pipeline
 
-Azure DevOps provide pipelines to automated builds. These come in two flavors: YML and Classic. YML pipelines are only available when using Git source control repositories. Team Foundation Version Control (TFVC) repositories can only be built using classic pipelines. Please review the documentation about [Aure Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops).
+Azure DevOps provides pipelines to automate builds. These come in two flavors: YML and Classic. YML pipelines are only available when using Git source control repositories. Team Foundation Version Control (TFVC) repositories can only be built using classic pipelines. Please review the documentation about [Aure Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops).
+
+The topics below describe details of the needed steps in a pipeline to build X++ code. A sample pipeline that can be imported into an existing Azure DevOps project can be found on the [Dynamics365-Xpp-Samples-Tools](https://github.com/microsoft/Dynamics365-Xpp-Samples-Tools/tree/master/CI-CD/Pipeline-Samples) GitHub repository.
 
 ### Creating a basic build pipeline
 
@@ -90,7 +92,7 @@ A basic pipeline for compiling X++ requires only two steps:
 1. Install the NuGet packages
 2. Build the solution or projects
 
-To simplify the usage of the extracted NuGet packages, consider using the **NuGet install** option, and specifying the **-ExcludeVersion** option so the extracted package paths can be used in the build regardless of the version of the packages. Use the **NuGet Installer** task and set the **Installation type** to **Install**. Specify the path to the packages.config and nuget.config files created earlier.
+To simplify the usage of the extracted NuGet packages, consider using the **NuGet install** option, and specifying the **-ExcludeVersion** [NuGet command line option](https://docs.microsoft.com/en-us/nuget/reference/cli-reference/cli-ref-install#options) so the extracted package paths can be used in the build regardless of the version of the packages. Use the **NuGet Installer** task and set the **Installation type** to **Install**. Specify the path to the packages.config and nuget.config files created earlier.
 
 The following example of NuGet arguments will avoid creating a subfolder for the package versions, and extract the NuGet packages into $(Pipeline.Workspace)\NuGets:
 
@@ -115,9 +117,11 @@ The following example of **MSBuild** arguments assumes the NuGets are installed 
  /p:ReferenceFolder="$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Platform.DevALM.BuildXpp\ref\net40;$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Application.DevALM.BuildXpp\ref\net40;$(Build.SourcesDirectory)\Metadata;$(Build.BinariesDirectory)"
  /p:ReferencePath="$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Platform.CompilerPackage" /p:OutputDirectory="$(Build.BinariesDirectory)"
 
+In the pipeline samples, these commands are simplified using variables for NuGet package names and paths.
+
 ### Creating a full pipeline with packaging
 
-For the pipeline to be completely useful, it should include versioning and packaging steps. To add these steps to a pipeline, the [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension for Azure DevOps needs to be enabled and installed in the Azure DevOps Account. Review the [Azure DevOps documentation](https://docs.microsoft.com/en-us/azure/devops/marketplace/install-extension?view=azure-devops&tabs=browser) on how to install an extension for an organization.
+For the pipeline to be completely useful, it should include a versioning and a packaging steps. To add these steps to a pipeline, the [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension for Azure DevOps needs to be enabled and installed in the Azure DevOps Account. Review the [Azure DevOps documentation](https://docs.microsoft.com/en-us/azure/devops/marketplace/install-extension?view=azure-devops&tabs=browser) on how to install an extension for an organization.
 
 A full pipeline should at least consist of the following steps:
 1. Install the NuGet packages
@@ -132,3 +136,6 @@ To create the deployable package, NuGet has to be readily available on the build
 > [!NOTE]
 > Due to semantic versioning features in NuGet versions 3.4 and later, please ensure the task installs version 3.3.0 or lower. Currently, deployable package generation does not support semantic versioning.
 
+### Sample pipeline for X++ developers
+
+A sample pipeline that can be imported into an existing Azure DevOps project can be found on the [Dynamics365-Xpp-Samples-Tools](https://github.com/microsoft/Dynamics365-Xpp-Samples-Tools/tree/master/CI-CD/Pipeline-Samples) GitHub repository.
