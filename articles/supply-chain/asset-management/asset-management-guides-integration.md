@@ -33,7 +33,7 @@ You can integrate the asset management module from Dynamics 365 Supply Chain Man
 
 ## Prerequisites
 
-To attach guides to asset management work orders, you need to:
+To be able to attach guides to asset management work orders, you must first:
 
 - [Set up Dynamics 365 Supply Chain Management](../../fin-ops-core/fin-ops/index.md) version 10.0.9 or later.
 - [Enable dual-write for Supply Chain Management apps](../../fin-ops-core/dev-itpro/data-entities/dual-write/enable-dual-write.md).
