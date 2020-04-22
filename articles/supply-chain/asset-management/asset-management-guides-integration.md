@@ -38,8 +38,8 @@ To attach guides to asset management work orders, you need to:
 - [Set up Dynamics 365 Supply Chain Management](../../fin-ops-core/fin-ops/index.md) version 10.0.9 or later.
 - [Enable dual-write for Supply Chain Management apps](../../fin-ops-core/dev-itpro/data-entities/dual-write/enable-dual-write.md).
 - [Enable the following configuration keys](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/license-code-and-configuration-key-reference)  in the **License Configuration** form:
-    - **Asset management \> Asset management mixed reality**
-    - **Mixed reality \> Mixed reality guide**
+  - **Asset management \> Asset management mixed reality**
+  - **Mixed reality \> Mixed reality guide**
 - [Set up Dynamics 365 Guides](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup#step-2-create-a-common-data-service-environment-and-install-the-dynamics-365-guides-solution), version 200.0.0.96 or later.
 
 ## Use Dynamics 365 Guides with asset management
@@ -61,9 +61,11 @@ To associate a guide with a maintenance checklist template:
     1. In the **Maintenance checklist lines** section, select the line you want to associate the guide with.
 
     1. In the **Associated guides** section, select **Add Guide**.
+
     ![Associate a guide with a maintenance checklist](media/am-guides-integration-add-guide.png "Associate a guide with a maintenance checklist")
 
     1. In the **Name** list, select a guide, and then select **Save**.
+
     ![Select a guide from the list](media/am-guides-integration-select-guide.png "Select a guide from the list")
 
 1. Associate the **Maintenance Checklist template** with a job type by doing the following:
@@ -71,21 +73,27 @@ To associate a guide with a maintenance checklist template:
     1. [Create a maintenance job type](setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md#create-a-maintenance-job-type) or select an existing one.
 
     1. Select **Maintenance job type defaults**.
+
     ![The Maintenance job type defaults button](media/am-guides-integration-job-defaults.png "The Maintenance job type defaults button")
 
     1. Create a new line, and then select **Save**.
+
     ![Create a new line](media/am-guides-integration-add-line.png "Create a new line")
 
     1. Select **Maintenance checklist**.
+
     ![The Maintenance checklist button](media/am-guides-integration-maintenance-checklist.png "The Maintenance checklist button")
 
     1. Add a new line in the **Maintenance checklist lines** section, and then change the **Type** to **Template**.
+
     ![Maintenance checklist lines](media/am-guides-integration-checklist-lines.png "Maintenance checklist lines")
 
     1. In the **Line details** section, select the template you associated your guide with from the list, and then select **Save**.
+
     ![The Line details section](media/am-guides-integration-checklist-line-details.png "The Line details section")
 
 1. [Create a work order](work-orders/manually-created-workorders.md#create-work-order), and then select the maintenance job type that uses the **Maintenance checklist template** that you associated the guide with. This automatically associates the guide with the work order.
+
     ![Select a maintenance job type](media/am-guides-integration-create-work-order.png "Select a maintenance job type")
 
 1. View the guide associated with the work order and workers by doing the following:
@@ -93,6 +101,7 @@ To associate a guide with a maintenance checklist template:
     1. Launch the [Asset management mobile workspace](asset-management-mobile-workspace.md) to access their work order.
     1. [Go to the maintenance checklist](asset-management-mobile-workspace.md#view-maintenance-checklist-on-a-work-order-job)for the work order.
     1. Select a checklist line to see the associated guide.
+    
     ![Select a maintenance job type](media/am-guides-integration-show-guide.png "Select a maintenance job type")
 
     1. Open the guide on HoloLens.
