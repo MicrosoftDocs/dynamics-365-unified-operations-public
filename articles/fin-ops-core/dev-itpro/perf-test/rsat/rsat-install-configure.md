@@ -5,7 +5,7 @@ title: Regression suite automation tool installation and configuration
 description: This topic contains information about how install and configure the Regression suite automation tool (RSAT).
 author: robadawy
 manager: AnnBe
-ms.date: 08/01/2019
+ms.date: 04/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -58,7 +58,8 @@ To enable secure authentication, RSAT requires a certificate to be installed on 
 ### Installer
 Download the .msi file from the [Regression Suite Automation Tool Download](https://www.microsoft.com/download/details.aspx?id=57357) to your machine and double-click it to run the installer. 
 
-**Note** Please download and install version 1.210.48249.4 or above if you're using Azure DevOps Server 
+> [!NOTE]
+> If you are using Azure DevOps Server, download and install version 1.210.48249.4 or above. 
  
 ### Selenium and Browser Drivers
 RSAT requires Selenium and web browser driver libraries. RSAT will prompt you if needed libraries are missing and will automatically install them for you. Select Yes when you see the following (or similar) messages.
@@ -87,7 +88,9 @@ Configure your connection to the Azure DevOps project and test plan.
 
 + **Azure DevOps Url** - This is the URL of your Azure DevOps organization. For example, `https://yourAzureDevOpsUrlHere.visualStudio.com`.
 
-**Note** Please append '/DefaultCollection' to the end of your Azure DevOps URL if you're using Azure DevOps Server
+ > [!NOTE]
+ > If you are using teh Azure DevOps Server, add '/DefaultCollection' to the end of your Azure DevOps URL.
+ 
 + **Access Token** - The access token that allows the tool to connect to Azure DevOps. You need to create a Personal Access Token or use an existing one that you have saved. For more information, see [Authenticate access with personal access tokens](https://www.visualstudio.com/docs/setup-admin/team-services/use-personal-access-tokens-to-authenticate). 
 + **Project Name** - The name of your Azure DevOps project. RSAT will automatically detect project names and test plans available based the Azure DevOps URL specified. You can then select the Test Project and Test Plan.
 + **Test Plan** - The Azure DevOps test plan that contains your test cases. For more information, see [Create test plans and test suites](https://www.visualstudio.com/docs/test/manual-exploratory-testing/getting-started/create-a-test-plan). 
@@ -135,7 +138,8 @@ Select the **Optional** tab to configure optional settings.
 + **Abort test suite execution on failure** – By default, execution of a test suite continues even if one of the test cases fails. If you set this option to **True**, the test run is aborted if a test case fails. All the remaining test cases will have a status of **Not Executed**.
 + **Cloud provider** – Select the provider of the cloud tenant of your test environment. Supported providers are **Global** (Public cloud) and **China** (Sovereign cloud).
 
-   **Note** This is a mandatory setting and its value has to be **China** if your Finances and Operations apps were deployed in 21Vianet.
+ > [!IMPORTANT]
+ > The **Cloud provider** setting is required and the selected value must be **China** if your Dynamics 365 Finance and Operations apps were deployed in 21Vianet.
 
 ### Configure the test environment to trust the connection
 
