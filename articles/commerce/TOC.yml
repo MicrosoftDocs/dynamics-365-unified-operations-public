@@ -346,6 +346,8 @@
             href: POS-search-improvements.md
           - name: Search for products and product variants during order entry
             href: ../supply-chain/pim/search-products-product-variants.md?toc=/dynamics365/commerce/toc.json
+          - name: Work with serialized items in POS
+            href: pos-serialized-items.md
           - name: Cash management improvements
             href: cash-mgmt.md
           - name: Inventory lookup in the POS
