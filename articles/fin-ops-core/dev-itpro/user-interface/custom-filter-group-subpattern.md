@@ -52,7 +52,9 @@ Two patterns are described in this document. The only difference between these p
 -   **Custom and Quick Filters** – In this subpattern, the QuickFilter control is mandatory.
 
 ## Wireframes
-### Custom Filters[Custom Filters](./media/customfiltergroup1.png)](./media/customfiltergroup1.png)
+### Custom Filters
+
+[![Custom Filters](./media/customfiltergroup1.png)](./media/customfiltergroup1.png)
 
 ### Custom and Quick Filters
 
