@@ -984,6 +984,8 @@
         href: accounts-payable/project-invoicing.md
       - name: Project contracts
         href: project-management/project-contracts.md
+      - name: Create advanced contracts for billing based on progress
+        href: project-management/project-create-advanced-contracts-for-billing-based-progress.md
       - name: Project forecasts and budgets
         href: project-management/project-forecasts-budgets.md
       - name: Transfer project budgets at fiscal year end
@@ -1014,6 +1016,8 @@
           href: project-management/mobile-timesheets.md
         - name: Implement custom fields for the Project timesheet mobile app
           href: project-management/custom-fields-mobile.md
+      - name: Project grants
+        href: project-management/project-grants.md
     - name: Public sector
       items:
       - name: Public sector home page
