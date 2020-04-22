@@ -49,7 +49,7 @@ BOPIS scenarios that involve a credit card payment require a hardware station. T
 
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> Registers**.
 2. Select register **SANFRAN-5**, and then select **Edit**.
-3. Select the **Hardware profile**, change the value from **HW002** to **HW001**, and then select **Save**.
+3. Change the value of the **Hardware profile** field from **HW002** to **HW001**, and then select **Save**.
 4. To synchronize the changes, go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
 5. Select distribution schedule **1090**, and then, on the Action Pane, select **Run now**.
 6. Select **Yes** and then **OK** to initiate data synchronization. 
@@ -62,7 +62,7 @@ BOPIS scenarios that involve a credit card payment require a hardware station. T
 4. Select **Download**, and then select **Retail Modern POS**. 
 5. When download of the **ModernPOSSetup.exe** file is completed, select **Open file**.
 
-    ![Open file](./dev-itpro/media/Payments/openfile.png)
+    ![Open file](./dev-itpro/media/PAYMENTS/openfile.png)
 
 6. Select **Next** to go through the installation process. When installation is completed, select **Close**.
 
@@ -83,7 +83,7 @@ BOPIS scenarios that involve a credit card payment require a hardware station. T
 ### Enable BOPIS in Modern POS
 
 1. Sign in to Modern POS by using **000713** as the operator ID and **123** as the password.
-2. When the introductory walkthrough video plays, select the two check boxes in the lower-left corner of the dialog box, and then close the dialog box.
+2. While the introductory walkthrough video is playing, select the two check boxes in the lower-left corner of the dialog box, and then close the dialog box.
 3. If you aren't prompted to close the shift, scroll to the right on the **Welcome** page, select **Close shift**, and then sign back in to the POS.
 4. After you're signed in, when you're prompted, select **Perform a non-drawer operation**.
 5. On the **Welcome** page, scroll to the right, and select the **Select hardware station** operation.
