@@ -181,7 +181,7 @@ If you have extended an entity (added fields) or if the automatic mapping appear
 ### Generate data
 If you have fields in entities that you want the system to generate data for on import, instead of providing the data in the source file, you can use the auto-generated functionality in the mapping details for the entity. For example, if you want to import customers and customer address information, but the address information was not previously imported with the Global Address Book entities, you can have the entity auto-generate the party number upon import and the GAB information will be created. To access this functionality, view the map of the entity and click the **Mapping details** tab. Select the fields that you want to auto-generate. This will change the source field to **Auto**.
 
-[![Generate dataw](./media/dataentitiesdatapackages18.png)](./media/dataentitiesdatapackages18.png)
+[![Generate data](./media/dataentitiesdatapackages18.png)](./media/dataentitiesdatapackages18.png)
 
 ### Turn off automatically generated number sequences
 Many entities support automatic generation of identifiers based on number sequence setup. For example, when creating a product, the product number is automatically generated and the form does not allow you to edit values manually.
