@@ -34,10 +34,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 To deploy customizations to an environment, a deployable package is required in Dynamics Lifecycle Services. This package can be created in an Azure Pipeline, during a build or release process.
 
-This article assumes a working knowledge of Azure DevOps pipelines. Please review the documentation about [Aure Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops).
+This article assumes a working knowledge of Azure DevOps pipelines. Please review the documentation about [Aure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops).
 
 > [!NOTE]
-> To add these steps to a pipeline, the [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension for Azure DevOps needs to be enabled and installed in the Azure DevOps Account. Review the [Azure DevOps documentation](https://docs.microsoft.com/en-us/azure/devops/marketplace/install-extension?view=azure-devops&tabs=browser) on how to install an extension for an organization.
+> To add these steps to a pipeline, the [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension for Azure DevOps needs to be enabled and installed in the Azure DevOps Account. Review the [Azure DevOps documentation](https://docs.microsoft.com/azure/devops/marketplace/install-extension?view=azure-devops&tabs=browser) on how to install an extension for an organization.
 
 > [!NOTE]
 > This Azure DevOps task requires the X++ compiler tools be available on the agent. Either run this task on a build Virtual Machine agent, or use the Compiler Tools NuGet package. For more information on the NuGet package and how to install it in the pipeline, review the documentation on [Build Automation using Azure DevOps Hosted Agents](hosted-build-automation.md).

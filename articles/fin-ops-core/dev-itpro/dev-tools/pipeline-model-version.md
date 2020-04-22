@@ -34,10 +34,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 During build automation, X++ models' versions can be updated to match or link to the build number of the pipeline. This makes it easier for users to identify the version of the X++ packages they are running, and allows developers to track versions back to the build pipeline and the version of the source code files.
 
-This article assumes a working knowledge of Azure DevOps pipelines. Please review the documentation about [Aure Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops).
+This article assumes a working knowledge of Azure DevOps pipelines. Please review the documentation about [Aure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops).
 
 > [!NOTE]
-> To add these steps to a pipeline, the [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension for Azure DevOps needs to be enabled and installed in the Azure DevOps Account. Review the [Azure DevOps documentation](https://docs.microsoft.com/en-us/azure/devops/marketplace/install-extension?view=azure-devops&tabs=browser) on how to install an extension for an organization.
+> To add these steps to a pipeline, the [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension for Azure DevOps needs to be enabled and installed in the Azure DevOps Account. Review the [Azure DevOps documentation](https://docs.microsoft.com/azure/devops/marketplace/install-extension?view=azure-devops&tabs=browser) on how to install an extension for an organization.
 
 ## Adding the task to a pipeline
 
