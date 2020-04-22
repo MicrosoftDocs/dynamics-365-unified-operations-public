@@ -44,6 +44,8 @@
           href: provisioning-guide.md
         - name: Configure a Dynamics 365 Commerce preview environment
           href: cpe-post-provisioning.md
+        - name: Configure BOPIS in a Dynamics 365 Commerce environment
+          href: cpe-bopis.md
         - name: Configure optional features for a Dynamics 365 Commerce preview environment
           href: cpe-optional-features.md
         - name: Dynamics 365 Commerce preview environment FAQ
