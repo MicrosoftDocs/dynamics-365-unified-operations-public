@@ -4,7 +4,7 @@
 title: Ship orders as direct deliveries
 description: This topic demonstrates how to create a direct delivery for a sales order. 
 author: omulvad  
-manager: AnnBe 
+manager: tfehr 
 ms.date: 07/11/2019  
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, PurchCreateFromSalesOrder, VendAccountItemLookup, SalesTableReferences, PurchTable, PurchEditLines, PurchTableReferences, MCRDropShipWorkbench   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  

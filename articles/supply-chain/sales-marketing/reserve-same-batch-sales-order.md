@@ -4,7 +4,7 @@
 title: Reserve the same batch for a sales order
 description: This article explains how to set up a product to allow reservation of inventory against a single batch of inventory.
 author: omulvad
-manager: AnnBe
+manager: tfehr
 ms.date: 03/17/2020
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,7 @@
 title: Planning with negative on-hand quantities
 description: This topic explains how negative on-hand is handled when you use planning optimization. 
 author: ChristianRytt
-manager: AnnBe
+manager: tfehr
 ms.date: 02/18/2020
 ms.topic: article
 ms.prod: 

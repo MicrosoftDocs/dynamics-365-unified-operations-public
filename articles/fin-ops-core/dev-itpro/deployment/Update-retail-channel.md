@@ -5,7 +5,7 @@ title: Apply updates and extensions to Retail Cloud Scale Unit
 description: This topic shows how to apply updates and extensions to cloud-hosted Commerce channel components.
 author: AamirAllaq
 manager: AnnBe
-ms.date: 01/08/2020
+ms.date: 04/09/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -45,7 +45,8 @@ To update Commerce Scale Unit, run the following steps for each:
 1. On the **Environment details** page, go to **Environment features > Retail and Commerce**.
 2. On the **Commerce deployment setup** page, select **Update**.
 3. In the selection panel, select the version to update to.
-4. You can also choose to apply an extension at the same time. 
+4. You can choose to update to the newest service update to access the latest features, or you can update to the latest quality update to apply quality improvements for the currently deployed service update. For more information, see [Download updates from Lifecycle Services (LCS)](../migration-upgrade/download-hotfix-lcs.md).
+5. You can choose to apply an extension at the same time. 
 
 To apply an extension to a Commerce Scale Unit, run the following steps:
 
@@ -65,3 +66,7 @@ Both **Apply updates** and **Apply extension** operations will involve a downtim
 
 > [!NOTE]
 > Applying an extension and an update at the same time requires a single downtime, and can be an effective way of averting multiple downtimes.
+
+## View history
+To view the history of recent operations on a Scale Unit, select **History** on the **Action** tab to open the **Scale Unit History** page. On this page, you can view recent operations such as initialize, service update, quality update, version, extension details, and other relevant information.
+

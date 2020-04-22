@@ -30,7 +30,6 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # System requirements for a Dynamics 365 Commerce online extensibility development environment
 
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 This topic lists the system requirements for setting up a Microsoft Dynamics 365 Commerce online extensibility development environment. Before you install the online software development kit (SDK) and tools, you should verify that the system that you're working with meets or exceeds the minimum hardware and software requirements.

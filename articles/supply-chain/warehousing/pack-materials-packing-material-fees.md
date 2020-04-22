@@ -4,7 +4,7 @@
 title: Packing materials and fees
 description: This topic provides information about packing material fees that are paid to recycling companies at specific intervals.
 author: MarkusFogelberg
-manager: AnnBe
+manager: tfehr
 ms.date: 02/19/2020
 ms.topic: article
 ms.prod: 

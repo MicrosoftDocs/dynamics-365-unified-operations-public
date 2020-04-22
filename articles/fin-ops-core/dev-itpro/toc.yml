@@ -14,38 +14,14 @@
         items:
         - name: What's new or changed in Platform updates home page
           href: get-started/whats-new-home-page.md
-        - name: Platform update 34 (May 2020)
+        - name: Platform updates for 10.0.11 (July 2020)
+          href: get-started/whats-new-platform-update-35.md
+        - name: Platform updates for 10.0.10 (May 2020)
           href: get-started/whats-new-platform-update-34.md
         - name: Platform update 33 (April 2020)
           href: get-started/whats-new-platform-update-33.md
         - name: Platform update 32 (February 2020)
           href: get-started/whats-new-platform-update-32.md
-        - name: Platform update 31 (January 2020)
-          href: get-started/whats-new-platform-update-31.md
-        - name: Platform update 30 (November 2019)
-          href: ../fin-ops/get-started/whats-new-platform-update-30.md
-        - name: Platform update 29 (October 2019)
-          href: ../fin-ops/get-started/whats-new-platform-update-29.md
-        - name: Platform update 28 (July 2019)
-          href: ../fin-ops/get-started/whats-new-platform-update-28.md 
-        - name: Platform update 27 (June 2019)
-          href: ../fin-ops/get-started/whats-new-platform-update-27.md 
-        - name: Platform update 26 (May 2019)
-          href: ../fin-ops/get-started/whats-new-platform-update-26.md 
-        - name: Platform update 25 (April 2019)
-          href: ../fin-ops/get-started/whats-new-platform-25.md 
-        - name: Platform update 24 (March 2019)
-          href: ../fin-ops/get-started/whats-new-platform-update-24.md
-        - name: Platform update 23 (January 2019)
-          href: ../fin-ops/get-started/whats-new-platform-update-23.md
-        - name: Platform update 22 (December 2018)
-          href: ../fin-ops/get-started/whats-new-platform-update-22.md
-        - name: Platform update 21 (November 2018)
-          href: ../fin-ops/get-started/whats-new-platform-update-21.md
-        - name: Platform update 20 (September 2018)
-          href: ../fin-ops/get-started/whats-new-platform-update-20.md
-        - name: Platform update 15 (March 2018)
-          href: ../fin-ops/get-started/whats-new-platform-update-15.md 
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated platform features
@@ -102,6 +78,8 @@
         href: dev-tools/exclude-test-packages.md
       - name: Manage third-party models and runtime packages using source control
         href: dev-tools/manage-runtime-packages.md
+      - name: All-in-one deployable packages
+        href: dev-tools/aio-deployable-packages.md
       - name: Update model versions in the automated build
         href: dev-tools/version-models-build.md
     - name: Data integration
@@ -324,8 +302,6 @@
             href: data-entities/configuration-data-packages.md
           - name: Configuration data packages (July 2017 release only)
             href: data-entities/configuration-data-packages.md
-          - name: Make Entity Store available as a Data Lake
-            href: data-entities/entity-store-data-lake.md
         - name: Configuration data templates
           href: data-entities/configuration-data-templates.md
         - name: Track changes to an entity
@@ -384,6 +360,14 @@
         href: user-interface/data-validation-workspace.md
       - name: Data management error descriptions
         href: data-entities/dm-error-descriptions.md  
+    - name: Azure Data Lake
+      items: 
+      - name: Azure Data Lake overview
+        href: data-entities/azure-data-lake-overview.md
+      - name: Finance and Operations apps in Azure Data Lake 
+        href: data-entities/finance-data-azure-data-lake.md 
+      - name: Make entity store available as a Data Lake 
+        href: data-entities/entity-store-data-lake.md
     - name: Database movement operations
       items:
       - name: Overview
@@ -518,7 +502,7 @@
             href: lifecycle-services/reconfigure-environment.md
           - name: Redeploy on-premises deployments
             href: deployment/redeploy-on-prem.md
-          - name: Remove and reinstall an AOS node
+          - name: Remove and reinstall, or add an AOS node
             href: deployment/onprem-remove-reinstall-AOS-node.md
           - name: Reuse the same AD FS instance for multiple environments
             href: deployment/onprem-reuseadfs.md
@@ -958,6 +942,8 @@
             href: extensibility/extensibility-attributes.md
           - name: Breaking changes
             href: extensibility/breaking-changes.md
+          - name: Compatibility checker tool
+            href: extensibility/compatibility-checker-tool.md
       - name: Performance
         items:
         - name: Take traces using Trace parser
@@ -1574,7 +1560,7 @@
           href: deployment/apply-updates-on-premises.md
         - name: Redeploy an on-premises deployment
           href: deployment/redeploy-on-prem.md
-        - name: In-place upgrade for on-premises 7.x to 8.1
+        - name: In-place upgrade process for on-premises environments
           href: migration-upgrade/on-prem-upgrade.md
       - name: Hotfixes
         items:

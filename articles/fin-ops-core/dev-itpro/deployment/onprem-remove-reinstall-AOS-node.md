@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Remove and reinstall an AOS node
+title: Remove and reinstall, or add an AOS node
 description: This topic explains how to remove an Application Object Server (AOS) node in your on-premises environment to reduce or replace a failed node. It also explains how to add a new node.
 author: ttreen
 manager: AnnBe
-ms.date: 03/30/2020
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -27,11 +27,11 @@ ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Platform update 34
 ---
 
-# Remove and reinstall an AOS node
+# Remove and reinstall, or add an AOS node
 
 [!include[banner](../includes/banner.md)]
 
-This topic explains how to remove an Application Object Server (AOS) node in your on-premises environment to reduce or replace a failed node. It also explains how to add a new node.
+This topic explains how to remove an Application Object Server (AOS) node in your on-premises environment to reduce or replace a failed node. It also explains how to add a new AOS node for scale-out performance.
 
 ## Remove a node
 
@@ -85,7 +85,7 @@ This topic explains how to remove an Application Object Server (AOS) node in you
     > [!NOTE]
     > Be sure to add a comma to the end of the line that precedes the new section.
 
-    ```
+    ```json
     "fabricSettings": [
         {
             "name": "Setup",
@@ -109,7 +109,7 @@ This topic explains how to remove an Application Object Server (AOS) node in you
 
 12. Remove the node from the **Nodes** section. In the following example, the **AOS1** node was removed.
 
-    ```
+    ```json
     "Nodes": [
         {
             "NodeName": "AOS2",
@@ -125,7 +125,7 @@ This topic explains how to remove an Application Object Server (AOS) node in you
 
 13. Remove the following lines from the **Security** section.
 
-    ```
+    ```json
     "WindowsIdentities": {
         "\$id": "3"
     },
@@ -138,7 +138,7 @@ This topic explains how to remove an Application Object Server (AOS) node in you
 
 14. Increment the version number of the configuration file. Make this change at the lowest increment. In the following example, the version number went from **1.0.0** to **1.0.1**.
 
-    ```
+    ```json
     "ClusterConfigurationVersion": "1.0.1"
     ```
 

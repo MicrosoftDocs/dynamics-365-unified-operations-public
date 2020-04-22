@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Preview PDF documents with an embedded viewer 
+title: Preview PDF documents using a PDF viewer 
 description: This topic explains how to use the embedded PDF Preview option to view business documents.
 author: tjvass
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: Platform update 28
 ---
 
-# Preview PDF documents with an embedded viewer
+# Preview PDF documents using a PDF viewer
 
 [!include[banner](../includes/banner.md)]
 

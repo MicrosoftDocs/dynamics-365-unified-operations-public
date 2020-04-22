@@ -5,7 +5,7 @@ title: List of ER functions in the list category
 description: This topic provides information about the list functions that are supported in Electronic reporting (ER).
 author: NickSelin
 manager: kfend
-ms.date: 12/17/2019
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -51,6 +51,7 @@ Electronic reporting (ER) list functions can be used to extract information from
 | [Index](er-functions-list-index.md)                       | This function returns a *Container (record)* value that is selected by using the specified numeric index in the specified list. If the index is out of range for the records in the specified list, this function throws an exception. |
 | [IsEmpty](er-functions-list-isempty.md)                   | This function returns a *Boolean* value of **TRUE** if the specified list contains no records. Otherwise, it returns a *Boolean* value of **FALSE**. |
 | [List](er-functions-list-list.md)                         | This function returns a *Record list* value that consists of a new list that is created from the specified arguments.|
+| [ListJoin](er-functions-list-listjoin.md)                 | This function returns a *Record list* value that represents a new joined list that is created from the specified arguments.|
 | [ListOfFields](er-functions-list-listoffields.md)         | This function returns a *Record list* value that is created based on the structure of the specified argument of the *Enumeration* or *Container (record)* type. |
 | [ListOfFirstItem](er-functions-list-listoffirstitem.md)   | This function returns a *Record list* value that consists of only the first record of the specified list.|
 | [OrderBy](er-functions-list-orderby.md)                   | This function returns the specified list as a *Record list* value after it has been sorted according to the specified arguments. These arguments can be defined as expressions. |

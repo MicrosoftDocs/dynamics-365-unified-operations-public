@@ -4,7 +4,7 @@
 title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.9 (April 2020)
 description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.9. 
 author: kamaybac
-manager: AnnBe
+manager: tfehr
 ms.date: 02/19/2020
 ms.topic: article
 ms.prod: 
@@ -32,7 +32,6 @@ ms.dyn365.ops.version: 10.0.9
 # What's new or changed in Dynamics 365 Supply Chain Management 10.0.9 (April 2020)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management, preview version 10.0.9. This version has a build number of 10.0.383 and is available as follows:
 
@@ -52,6 +51,7 @@ The following features are included in this release. The feature titles link to 
 - [Consolidate shipment enhancements](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/consolidate-shipment-enhancements)
 - [Cross-docking](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/planned-cross-docking) - For more information, see the [Planned cross docking](https://www.microsoft.com/videoplayer/embed/RE4f7LF) video.
 - Further catch weight integration [10.0.1](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.1), [10.0.2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.2), [10.0.3](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.3), [10.0.4](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.4), [10.0.5](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.5), [10.0.6](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.6), [10.0.7](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.7) - For more information, see [Catch weight product processing with warehouse management](../warehousing/catch-weight-processing.md) and also the [Catch weight product improvements](https://www.microsoft.com/videoplayer/embed/RE4jzx8) video.
+- [Fixed assets integration with Asset Management lifecycle](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/fixed-assets-integration-asset-management-lifecycle) - For more information, see [Integrate asset management with fixed assets](../asset-management/integration-to-fixed-assets/fixed-asset-integration.md)
 - [Flexible warehouse-level dimension reservation](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/flexible-warehouse-level-dimension-reservation) - For more information, see [Flexible warehouse-level dimension reservation policy](../warehousing/flexible-warehouse-level-dimension-reservation.md).
 - [Improved job card device](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/improved-job-card-device) - For more information, see [Report progress on a mobile job device](../production-control/tasks/report-progress-mobile-job-device.md) and [Report as finished to a license plate controlled location from the Job card device](../production-control/report-finished-job-device.md)
 - [Inbound quality check](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inbound-quality-check)
@@ -69,6 +69,7 @@ The following features are included in this release. The feature titles link to 
 - [Receive sortation](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/receive-sortation)
 - [Small parcel shipping (SPS)](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/small-package-shipping-sps)
 - [Vendor bidding—questions from vendors and summarized responses](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/vendor-bidding-questions-vendors-summarized-responses)
+- [Visual scheduling for work orders in Asset Management](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/visual-scheduling-work-orders-asset-management) - For more information, see [Work with scheduled work orders using a gantt chart](../asset-management/work-order-scheduling/schedule-work-orders.md#gantt)
 - [Warehouse slotting](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-slotting)
 - [Wave label printing enhancements](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-label-printing-enhancements)
 - [Wave step code](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-step-code)
