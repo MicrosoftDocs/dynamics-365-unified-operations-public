@@ -5,7 +5,7 @@ title: Create payment packaging for Application Explorer for Self-service deploy
 description: This topic explains how to package a payment connector for Application Explorer for [Self-service deployment](../../fin-ops-core/dev-itpro/deployment/infrastructure-stack.md) in Dynamics 365 Commerce.
 author: mugunthanm
 manager: AnnBe
-ms.date: 02/13/2020
+ms.date: 04/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
