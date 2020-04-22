@@ -91,6 +91,9 @@ In this example, the workflow process for the purchase requisition lines include
 4.  The department manager for the Marketing department reviews the purchase requisition lines for both the posters and the T-shirts. The Sales department manager reviews the purchase requisition line only for the posters, because that is the only cost that is being charged to the Sales department.
 5.  The group manager reviews and approves the purchase requisition line for the T-shirts only if group manager approval is required because, for example, the amount on the purchase requisition line exceeds the department manager’s approval limit. The group manager does not have to approve the purchase requisition line for the posters.
 
+> [!NOTE]
+> The system currency must be set if the header workflow for a purchase requisition requires approvals related to signing limits.
+
 ## Configuring a workflow for purchase requisitions
 To route a purchase requisition for review, you must configure the purchase requisition workflow processes. The workflow process that you define controls the interaction between the user who requested the items (the requester) and the reviewer and approver in the workflow. The routing of the purchase requisition depends on the conditions that are specified in the workflow configuration. For example, these conditions determine when the purchase requisition should be routed, the user or role that it should be routed to, and the actions that users can take.  
 
