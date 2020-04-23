@@ -1067,6 +1067,22 @@
           href: cost-management/adjust-hand-inventory-cost-values.md
         - name: Tracking running average cost per inventory dimension
           href: cost-management/track-running-average-cost-per-inventory-dimension.md
+    - name: IoT Intelligence core insights
+      items:
+        - name: IoT Intelligence core insights home page
+          href: iot/iot-intelligence-home-page.md
+        - name: JSON formats for IoT Intelligence core insights
+          href: iot/iot-json-setup.md
+        - name: Azure setup for IoT Intelligence core insights
+          href: iot/iot-azure-setup.md
+        - name: LCS setup for IoT Intelligence core insights
+          href: iot/iot-lcs-setup.md
+        - name: Scenario setup for IoT Intelligence core insights
+          href: iot/iot-scenario-setup.md
+        - name: Metrics setup for IoT Intelligence core insights
+          href: iot/iot-metrics-setup.md
+        - name: Managing IoT Intelligence core insights
+          href: iot/iot-managment.md    
     - name: Master planning
       items:
       - name: Master planning home page

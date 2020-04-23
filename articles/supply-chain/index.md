@@ -47,6 +47,7 @@ Select a feature area to learn more about it.
 - [Cost accounting](../finance/cost-accounting/cost-accounting-home-page.md)
 - [Cost management](cost-management/cost-management-home-page.md)  
 - [Inventory management](inventory/inventory-home-page.md)
+- [IoT Intelligence core insights home page](iot/iot-intelligence-home-page.md)
 - [Master planning](master-planning/master-planning-home-page.md)
 - [Procurement and sourcing](procurement/procurement-sourcing-overview.md)
 - [Product information management](pim/product-information.md)
