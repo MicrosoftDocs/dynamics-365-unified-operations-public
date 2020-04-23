@@ -59,11 +59,11 @@ List what can and cannot be updated while the scenario is running
 ## Simulation options
 
 + Setup IoT solutions to simulate factory machine signals:
-    + https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started
-    + https://docs.microsoft.com/en-us/azure/iot-accelerators/quickstart-device-simulation-deploy
-    + https://docs.microsoft.com/en-us/azure/iot-accelerators/iot-accelerators-device-simulation-create-simulation
-    + https://docs.microsoft.com/en-us/azure/iot-accelerators/iot-accelerators-device-simulation-overview
+    + https://docs.microsoft.com/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started
+    + https://docs.microsoft.com/azure/iot-accelerators/quickstart-device-simulation-deploy
+    + https://docs.microsoft.com/azure/iot-accelerators/iot-accelerators-device-simulation-create-simulation
+    + https://docs.microsoft.com/azure/iot-accelerators/iot-accelerators-device-simulation-overview
 
 + Setup a MxChip to simulate a factory machine signal:
-    + https://docs.microsoft.com/en-us/azure/iot-central/core/quick-create-simulated-device
-    + https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-arduino-iot-devkit-az3166-translator
+    + https://docs.microsoft.com/azure/iot-central/core/quick-create-simulated-device
+    + https://docs.microsoft.com/azure/iot-hub/iot-hub-arduino-iot-devkit-az3166-translator
