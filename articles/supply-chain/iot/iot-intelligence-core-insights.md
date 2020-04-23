@@ -164,7 +164,7 @@ The **Equipment downtime** scenario has these dependencies:
 + Production Order must be scheduled and running on the machine for an alert to be triggered. 
 
 1. Log into the Finance and Operations apps.
-2. Enbale the IoT Intelligence feature flag. For more information, see [Feature management overview](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+2. Enbale the IoT Intelligence feature flag. For more information, see [Feature management overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 4. Navigate to **Production control**.
 5. Navigate to **Setup \> IoT Intelligence \> Scenario parameters**. Enter the Redis connection string. *Insert instructions here on how to get this value. It appears not to be in the key vault.*
 6. Navigate to **Setup \> IoT Intelligence \> Scenario management**.

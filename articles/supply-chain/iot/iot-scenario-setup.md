@@ -21,7 +21,6 @@ ms.reviewer:
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
-ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: 
@@ -50,7 +49,7 @@ The **Equipment downtime** scenario has these dependencies:
 + Production Order must be scheduled and running on the machine for an alert to be triggered.
 
 1. Log into the Finance and Operations apps.
-2. Enable the IoT Intelligence feature flag. For more information, see [Feature management overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+2. Enable the IoT Intelligence feature flag. For more information, see [Feature management overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 3. Navigate to **Production control**.
 4. Navigate to **Setup \> IoT Intelligence \> Scenario parameters**. Enter the Redis connection string. *Insert instructions here on how to get this value. It appears not to be in the key vault.*
 5. Navigate to **Setup \> IoT Intelligence \> Scenario management**.
@@ -142,6 +141,3 @@ There are several ways to view the messages processed in the scenario in Supply 
 + **Production control \> Inquiries and reports \> IoT Intelligence \> Metric keys**. Here you can see a times series graph for each machine you are processing.
 + **Production control \> Manufacturing execution \> Resource status**. You can configure this page to track specific machines using the **Configure** dialog. As messages are processed a graph is produced showing the parts produced. This page displays an error message if a machine is down, and there are buttons to resolve or dismiss the error message.
 + **Production control \> Setup \> IoT Intelligence \> Scenario parameters**. Click **Equipment downtime** to see all the machines that are available.
-
-
-

@@ -38,7 +38,7 @@ If you want to view graphs of your messages in Supply Chain Management, you must
     1. In Azure, go to the Redis cache.
     2. Navigate to **Settings** \> **Access keys**.
     3. Copy the **Primary connection string** field.
-2. In Supply Chain Management, navigate to **Production control \> Setup \> IoT Intelligence \> Scenario parameters.**  
+2. In Supply Chain Management, navigate to **Production control \> Setup \> IoT Intelligence \> Scenario parameters**.  
     1. On the **Scenario parameters** page, in the **Time series** tab, copy the connection string into the textbox for **Redis metric store connection string**. This allows the metrics from IoT Hub to be visualized in Supply Chain Management.
 3. Navigate to **Production control \> Inquiries and reports \> IoT Intelligence \> Metric keys**.
     1. On the **Metric keys** page, click **Update**.

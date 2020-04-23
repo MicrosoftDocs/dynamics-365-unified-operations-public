@@ -32,9 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-These topics describe IoT Intelligence Core Insights.
-
-Internet of things (IoT) Intelligence supports the following core insights and action scenarios:
+IoT Intelligence is an add-in for Microsoft Dynamics 365 Supply Chain Management that integrates IoT signals from machinery with business transactions (for example, inventory and quality) to enable manufacturers and distributors to manage production and stock in real time. IoT Intelligence supports the following core insights and action scenarios:
 
 + **Delayed orders** : Provides notification services and actions for managing delayed production orders. Displays impacted operations. Provides users with the ability to define order-delay metrics for combinations of resources and products, and notifies users when exceptions to these thresholds occur. Enables users to take relevant business actions for delayed orders, including the ability to view impact or create a maintenance request.
 + **Equipment down**: Provides notification services and actions for managing equipment-down scenarios. Displays impacted operations. Provides users with the ability to define metrics for machine-down thresholds and notifies users when an exception to these thresholds occurs. Enables users to take relevant business actions for delayed orders, including the ability to view impact or create a maintenance work order.
@@ -53,8 +51,8 @@ You can setup and configure core insights without writing any code. The basic st
 
 ## Tracking and maintenance
 
-+ [How to view the monitors in Supply Chain Management](iot-management.md#)
-+ [How to disable a scenario](iot-management.md#)
-+ [How to uninstall the add-in](iot-management.md#)
-+ [Modify a running IoT Intelligence scenario](iot-management.md#)
-+ [Simulation options](iot-management.md#)
++ [How to view the monitors in Supply Chain Management](iot-management.md#how-to-view-the-monitors-in-supply-chain-management)
++ [How to disable a scenario](iot-management.md#how-to-disable-a-scenario)
++ [How to uninstall the add-in](iot-management.md#how-to-uninstall-the-add-in)
++ [Modify a running IoT Intelligence scenario](iot-management.md#modify-a-running-iot-intelligence-scenario)
++ [Simulation options](iot-management.md#simulation-options)
