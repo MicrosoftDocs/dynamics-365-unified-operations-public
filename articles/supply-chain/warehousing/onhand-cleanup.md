@@ -1,49 +1,72 @@
-# Improve performance by running the Warehouse management on-hand entries cleanup job – for New AX and for AX2012 R3 CU10
+---
+# required metadata
 
-## Introduction
+title: On-hand entry cleanup
+description: This topic describes the on-hand entries cleanup job, which helps improve system performance by identifying and deleting related, but unneeded, records.
+author: perlynne
+manager: tfehr
+ms.date: 04/23/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
 
-Calculation of the on-hand are used from many forms but also during many business processes, the latter being less obvious to end-users. Therefore, it is always of interest to us to improve the performance of these operations since the overall impact on many processes can be quite significant.
+# optional metadata
 
-The nature of the queries used to calculate the on-hand involves joins and aggregation and the performance is affected by the number of records in the tables involved. One way to improve the performance of such operations is to reduce the number of records that SQL server has to consider.
+# ms.search.form:  [Operations AOT form name to tie this topic to]
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kamaybac
+ms.search.scope:  Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.search.region: Global
+# ms.search.industry: [leave blank for most, retail, public sector]
+ms.author: perlynne
+ms.search.validFrom: 2020-04-03
+ms.dyn365.ops.version: Release 10.0.12
+---
 
-In this posting we will cover the Warehouse management on-hand entries cleanup job which deletes records in the InventSum and WHSInventReserve tables. These tables are used to store on-hand information for items enabled for warehouse management processing (WHS items). Cleaning up these records can lead to significant improvements of the on-hand calculations.
+# On-hand entry cleanup
 
-The cleanup job is available for the new Dynamics AX and also for the in-market version of AX 2012 R3 with KB article 3063513 – Performance improvement of On-hand queries by running new clean up job for on-hand entries for WHS enabled items.
+The performance of queries used to calculate the on-hand inventory is affected by the number of records in the tables involved. One way to improve the performance of such operations is to reduce the number of records that the database has to consider.
 
+This topic describes the on-hand entries cleanup job, which deletes records in the `InventSum` and `WHSInventReserve` tables. These tables store on-hand information for items enabled for warehouse management processing (WHS items). Cleaning up these records can significantly improve the performance of on-hand calculations.
 
-## Running the clean up
+## Run the on-hand entry cleanup
 
-The cleanup job is available under Inventory Management>Periodic tasks>Clean up>Warehouse management on-hand entries cleanup.
+The cleanup job is available under **Inventory Management > Periodic tasks > Clean up > Warehouse management on-hand entries cleanup**. Use the standard job settings here to control the scope and schedule for running the job. In addition, the following settings are provided:
 
-The cleanup job can be ran during normal business hours but it is recommended to run it outside of working hours to avoid collisions where a user is updating a record that is also being cleaned up. By setting the Delete if not updated for this many days parameter in the dialog to an appropriate value, the risk of deleting used on-hand entries can be reduced.
+- **Delete if not updated for this many days** - Use this field to reduce the risk of deleting on-hand entries that are still in use. <!-- KFM: maybe provide more details about this. Is 0 a special value here? -->
+- **Maximum execution time** - Enter a maximum execution time (in hours) for the cleanup job. If the job doesn't complete before the time is up, it will save the work completed so far and then exit. This capability is especially relevant for implementations that have high inventory usage, in which case you should schedule the job to run at times when the system is as lightly loaded as possible. Enter a value of "0" (or leave blank) to allow the batch job to continue running until it has finished. This setting is only available if it has been [enabled on your system](#max-execution-time). <!-- KFM: Please confirm the setting name. -->
 
-If the job ends up trying to delete a record for an item while it is used by another user, a deadlock error will be experienced by either the cleanup job or the user impacting the on-hand of the item.
+You can run the job during normal business hours, but we recommend running it outside of working hours to avoid conflicts where a user is working with a record that is also being cleaned up.
 
-The job is running with a commit size of 100 meaning it will try to commit for every 100 deletes. However, since some deletes are set-based, there might be scenarios where more than 100 records can be deleted in the same transaction, hence there is no guarantee that lock escalations will not occur.
+If the job tries to delete a record for an item while it is being used by another user, a deadlock error will occur for either the cleanup job or the user.
 
- 
+The job runs with a commit size of 100, which means that it will try to commit for every 100 deletes. However, since some deletes are set-based, there might be scenarios where more than 100 records can be deleted in the same transaction, so  lock escalations can still sometimes occur.
 
-## What is the clean up job actually doing ?
+## What the clean up job does
 
-That is a fair question that we were asked by our colleges in the field so we wanted to share the answer with you.
+The cleanup job deletes records in the `WHSInventReserve` and `InventSum` tables where all the field values are 0, because these don't contribute to the on-hand. The job only deletes records below the Location level.
 
-The overall idea is that the cleanup job is deleting records in the WHSInventReserve and InventSum tables where all the field values are 0, since these should not contribute to the on-hand. The job only deletes records below the Location level.
+If negative physical inventory is allowed, then the job might not be able to delete all entries with all zeros. This is because the job must allow for a special scenario where a license plate has multiple serial numbers and one serial number has gone negative. For this special case, the job does a breadth-first delete, trying to delete from lower levels first.
 
-If negative physical inventory is allowed then we might not be able to delete all entries with all zeros, since we need to account for a special scenario where a license plate has multiple serial numbers and one serial number has gone negative.
+If negative physical inventory isn't allowed, the job deletes upwards in the hierarchy. This approach means that for a scenario were we have serial number 1 and 2 on the same license plate, and the job is stopped, we might still have a record in `WHSInventReserve` on the lowest level (for example, for serial number 2) but not one on the level above that). This is fine because since no record is semantically the same as "nothing available or reserved".
 
-For this special case we will do a breadth-first delete, trying to delete from lower levels first.
-
-If we don’t allow negative physical inventory we will delete upwards the hierarchy. This approach means that for a scenario were we had serial number 1 and 2 on the same license plate and the job is stopped, we might still have a record in WHSInventReserve on the lowest level, e.g. for serial number 2 but not one on the level above that. This is ok, since no record, is semantically the same as “nothing available or reserved”.
+<!-- KFM: I don't understand the above example. Maybe it's OK, but can we make it more clear? -->
 
 If we should get on-hand again after records have been deleted, the records will just be re-created as part of the normal business logic.
 
- 
-
 ## Possible user impact
 
-A possible user impact is that if we have deleted all records for e.g. the license plate level, then the functionality where we can see that we at some point had on-hand at a license plate does not work as expected, simply because we have no on-hand entries to represent that.
+Users may be impacted if the cleanup job has deleted all records for a given level (such as the license plate level), in which case the functionality for seeing that inventory was once available on-hand at a license plate may not work as expected because the relevant on-hand entries are no longer available. This is the functionality where the condition **Quantity <> 0** is checked in the **Dimension display** settings when viewing on-hand. However, the performance improvement provided by the cleanup job should make up for this small loss in functionality.
 
-This is the functionality where Quantity <> 0 is checked in the Dimension Display settings when viewing on-hand.
+<a name="max-execution-time"></a>
 
-We decided that this was an acceptable loss of functionality compared to the performance improvement that customers should experience from cleaning up the records.
+## Enable the maximum execution time setting
 
+The **Maximum execution time** setting isn't enabled by default. Use [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to enable it on your system if you'd like to use it. The feature is listed as:
+
+- **Module** - *Warehouse management*
+- **Feature name** - *Maximum execution time for the warehouse management on-hand entries cleanup job*
