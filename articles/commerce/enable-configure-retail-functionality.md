@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Initialize seed data in new Retail environments
+title: Initialize seed data in new Commerce environments
 description: This article describes the data that's created as part of the initialization process for Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Initialize seed data in new Retail environments
+# Initialize seed data in new Commerce environments
 
 [!include [banner](includes/banner.md)]
 

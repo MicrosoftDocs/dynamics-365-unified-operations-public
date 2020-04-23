@@ -232,6 +232,8 @@
           href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
         - name: Apply a deployable package
           href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
+        - name: Initialize seed data in new Commerce environments
+          href: enable-configure-retail-functionality.md
       - name: Implementation lifecycle management
         items:
         - name: Implementation lifecycle management home page
