@@ -135,7 +135,7 @@ To create a new intent letter for a vendor, follow these steps.
     | Field name    | Description |
     |---------------|-------------|
     | Model ID      | The identifier of the telematic model that the intent letter was included in. This value is automatically filled in according to the number sequence that is specified for the **Intent letter telematic model ID** reference on the **General ledger parameters** page. |
-    | Purchase type | Select the type of purchase: purchases or exposures. |
+    | Purchase type | Select the type of purchase: **Purchase** or **Import**. |
 
 > [!NOTE]
 > Intent letters of the **Period** type aren't supported, and you can't create them. The **Period** type is kept for historical data, for those users who previously used this type and the **Automatic intent letter assignment** parameter on the **Ledger and sales tax** tab of the **Accounts payable parameters** page.
