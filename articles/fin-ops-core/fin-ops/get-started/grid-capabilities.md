@@ -5,7 +5,7 @@ title: Grid capabilities
 description: This topic describes several powerful features of the grid control. The new grid feature must be enabled to have access to these capabilities. 
 author: jasongre
 manager: AnnBe
-ms.date: 04/21/2020
+ms.date: 04/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -147,6 +147,9 @@ This section maintains a list of known issues for the new grid control while the
 - The **Validate** and **Copy** Task recorder options aren't available for date/number controls.
 
 ### Fixed as part of 10.0.12
+
+> [!Note]
+> The following information is being provided so that you can plan appropriately. For more information about the targeted release schedule of version 10.0.12 of Finance and Operations apps, see [Service update availability](../../fin-ops/get-started/public-preview-releases.md).
 
 - [Issue 429126] Controls outside the grid aren't updated after the last record is deleted.
 - [Issue 430575] Table controls don't update the contents of displayed items.
