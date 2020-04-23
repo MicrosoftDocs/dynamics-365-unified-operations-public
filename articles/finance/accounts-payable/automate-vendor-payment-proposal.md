@@ -55,18 +55,7 @@ Define the owner of the payment journal that is created. This is usually the AP 
 
 The remaining settings are generic to the process automation and are used to define the recurrence pattern used for this version of the vendor payment proposal.  For example, if this occurrence is for check payments on Monday, you could define the occurrence to run **Weekly**, and select Monday as the day of the week when it runs. Also, enter an early Schedule time such as 2:00 am so the process automation will be complete by the start of the next business day. 
 
-It’s important to understand that you’re setting up the wizard to define when to process the vendor payment proposal. You don’t use the wizard to define when the vendor payments are actually generated, printed, and posted. The vendor payment proposal process automation will display in the weekly view on the days marked in the occurrence pattern. 
-
-Refer to the Process automation documentation for more information about the other fields found on the **General** tab.  
-
-### General page in wizard
-Enter the Name of the vendor proposal you are creating.  For example, if you pay all domestic vendors by check on Monday, enter a descriptive name such as Domestic_Check.  The name displays on the process automation weekly view, which is on the **Vendor payment** workspace. 
-
-Define the owner of the payment journal that is created. This is usually the AP payment clerk, who is responsible for the payment journal after it’s created.  
-
-The remaining settings are generic to the process automation and are used to define the recurrence pattern used for this version of the vendor payment proposal.  For example, if this occurrence is for check payments on Monday, you could define the occurrence to run **Weekly**, and select Monday as the day of the week when it runs. Also, enter an early Schedule time such as 2:00 am so the process automation will be complete by the start of the next business day. 
-
-It’s important to understand that you’re setting up the wizard to define when to process the vendor payment proposal. You don’t use the wizard to define when the vendor payments are actually generated, printed, and posted. The vendor payment proposal process automation will display in the weekly view on the days marked in the occurrence pattern. 
+It’s important to understand that you’re setting up the wizard to define when to process the vendor payment proposal. You don’t use the wizard to define when the vendor payments are generated, printed, and posted. The vendor payment proposal process automation will display in the weekly view on the days marked in the occurrence pattern. 
 
 Refer to the Process automation documentation for more information about the other fields found on the **General** tab.  
 
@@ -94,7 +83,7 @@ Assume the payment proposal automation is defined to run on Wednesday. The To da
  - Invoices that are due on March 26 will have a payment date of March 26 
 
 ### Summarized payment date
-The summarized payment date is only used when the method of payment on the invoices is defined by setting the **Period** field to **Total**. If your methods of payment are set up as Total, you must set the **Define summarized payment date criteria** to Yes. If this field is set to yes, enter the number of days before or after the day that processing is run to use as the summarized payment date. Enter this value in the **Number of days adjustment for summarized payment date**field. The number can be positive, negative or zero. For example, if this series generates payment on Wednesday and the company wants to create a summarized payment on Wednesday, set this field to 0.
+The summarized payment date is only used when the method of payment on the invoices is defined by setting the **Period** field to **Total**. If your methods of payment are set up as Total, you must set the **Define summarized payment date criteria** to Yes. If this field is set to yes, enter the number of days before or after the day that processing is run to use as the summarized payment date. Enter this value in the **Number of days adjustment for summarized payment date** field. The number can be positive, negative or zero. For example, if this series generates payment on Wednesday and the company wants to create a summarized payment on Wednesday, set this field to 0.
 
 ### Records to include
 The Filter options can still be defined on the payment proposal.  If a filter is defined, the filter criteria doesn’t display on the wizard page, but can be viewed by reopening the Filter.  
@@ -104,7 +93,7 @@ The remaining fields on the proposal work the same as on the payment proposal on
  > [!Note]
  > Some country-specific fields, as well as some Public sector fields, are not yet available in the vendor payment proposal automation. 
 
-We recommend that you evaluate whether the automation will beneficial to your organization, based on your requirements. 
+We recommend that you evaluate whether the automation will be beneficial to your organization, based on your requirements. 
 
 ## View results for vendor payment proposal automation
 After the vendor payment proposal automation series is created, the occurrences for each payment can be seen on the process automation weekly view.  For vendor payments, the process automation weekly view has been added to the **Vendor payments** workspace, as well as to the **Process automation** page. 
@@ -130,7 +119,7 @@ After the payments are created, you can see the payment amounts in the journal. 
 The payment journal can be deleted after it’s created through the process automation. If a payment is completely deleted, the following things happen. 
 
  - The process automation view for the week will remain in a **Completed** state
- - The process swill remove the payment totals and the **View payments** link will be replaced with a **View results** button
+ - The process will remove the payment totals and the **View payments** link will be replaced with a **View results** button
  - A message indicating that the original journal was deleted will be displayed when you view the results 
 
 The invoices will be open again for payment.  A new occurrence can be created to pay the invoices again. 
@@ -148,5 +137,5 @@ The following duties and privileges have been added for the vendor payment propo
 |:---------------------------------------:|---------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    Maintain schedule series             |    Accounts payable manager                                                           |    This duty allows the creation and maintenance of the payment proposal   automation series and occurrences through the following privileges:       - Maintain schedule occurrences   - Maintain schedule series   - ProcessScheduleOccurrenceListMaintain   - View the occurrences weekly view        |
 |    Inquiry into schedule occurrences    |    Accounts payable payment clerk       Accounts payable Centralized payment clerk    |                                                                                                 ﷒          This duty allows the rights to view the   payment proposal automation occurrences through the following privileges:   - View schedule occurrences   - View the occurrence weekly view        |
-|    Inquire into schedule series         |    <none>                                                                             |                                                                                This duty allows the rights to view the series and occurrences setup   through the following privileges:       - View schedule occurrences   - View the occurrences list page   - View the occurrence weekly view        |
+|    Inquire into schedule series         |    <none>                                                                             |                                                                                This duty allows the rights to view the series and occurrences set up   through the following privileges:       - View schedule occurrences   - View the occurrences list page   - View the occurrence weekly view        |
 |    Maintain schedule occurrences        |    <none>                                                                             |                                                                                                                         This duty allows the creation and maintenance of an occurrence through   the following privileges:   - Maintain schedule occurrences   - View the occurrence weekly view        |
