@@ -232,6 +232,8 @@
         href: accounts-payable/invoice-matching-intercompany-purchase-orders.md
       - name: Set up vendor invoice policies
         href: accounts-receivable/tasks/set-up-vendor-invoice-policies.md
+      - name: Automate vendor payment proposals
+        href: accounts-payable/automate-vendor-payment-proposal.md
       - name: Record vendor invoice and match against received quantity
         href: accounts-payable/tasks/record-vendor-invoice-match-against-received-quantity.md  
       - name: Positive pay overview
