@@ -5,7 +5,7 @@ title: All-in-one deployable packages
 description: This topic describes the all-in-one deployable package concept and its use.
 author: laneswenka
 manager: AnnBe
-ms.date: 04/22/2020
+ms.date: 04/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -36,7 +36,7 @@ This topic outlines the best practices for creating and managing an all-in-one d
 
 > [!IMPORTANT]
 > Note the following:
-> - Support for non all-in-one deployable packages for v1 Cloud service customers ends on October 31, 2020.
+> - Support for non all-in-one deployable packages ends on October 31, 2020.
 >
 > - If you currently have a payment connector deployed in your environment, you will need to [create a payment connector package](../../../commerce/dev-itpro/payment-connector-package.md) and include it in the all-in-one deployable package.
 >
