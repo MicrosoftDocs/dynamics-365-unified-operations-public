@@ -38,7 +38,7 @@ The following simple scenario explains the differences between the **Cost calcul
       - Product A is 0
       - Product B is 1
       - Product C is 2
-    
+
     - The **Cost calculation level** will assign following BOM levels:
       - Product A is 0
       - Product B is 1
@@ -50,10 +50,10 @@ The following simple scenario explains the differences between the **Cost calcul
       - Product B is 1
       - Product C is 2
       - Product A is 3
-    
+
     - The **Cost calculation level** will assign following BOM levels:
       - Product A is 0
       - Product B is 1
       - Product C is 2
 
-This ensures that changes done to production order BOM’s doesn’t affect the cost calculations going forward 
+    This ensures that changes done to production order BOMs don't affect the cost calculations going forward.
