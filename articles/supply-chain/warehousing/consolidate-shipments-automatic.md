@@ -4,8 +4,8 @@
 title: Consolidate shipments using shipment consolidation policies
 description: This topic provides an overview of functionality that provides use of shipment consolidation policies.
 author: GarmMSFT
-manager: PJacobse
-ms.date: 12/31/2019
+manager: tfehr
+ms.date: 04/23/2020
 ms.topic: use-shipment-consolidation-policies
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -17,315 +17,309 @@ ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: PJacobse
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry:
 ms.author: v-olbara
-ms.search.validFrom: 2019-08-31
+ms.search.validFrom: 2020-04-23
 ms.dyn365.ops.version: 10.0.3
 
 ---
 
-# Consolidate shipments when released to warehouse by Automatic release of sales orders
+# Consolidate shipments when released to warehouse by automatic release of sales orders
 
 [!include [banner](../includes/banner.md)]
 
-*Released in version 10.0.3*
+This topic presents a scenario where multiple orders are released to the warehouse within the same automated release-to-warehouse periodic procedure. They will be consolidated into shipments automatically based on rules defined as shipment consolidation policies.
 
-This demo will simulate a scenario where multiple orders are released to warehouse within the same automated release to warehouse periodic procedure, and they will be consolidated into shipments automatically based on rules defined as shipment consolidation policies (see [Configure shipment consolidation policies](../warehousing/configure-shipment-consolidation-policies.md) for instructions).
+During the scenario, you will create sets of sales orders, release each of them to the warehouse, and review shipments that will be created or updated during shipment consolidation according to the configured policies.  
 
-During the demo, you will create sets of sales orders, release to warehouse each of these sets and review shipments that will be created or updated during shipment consolidation according to configured policies.  
+## Enable demo data
 
-Standard Contoso data is used with some additions done during configuration of policies.
+Each of the scenarios in this topic reference values and records included in the standard demo data provided for Supply Chain Management. If you'd like to run the exercises using the values provided here, be sure to work on an environment with the demo data installed, and set the legal entity to **USMF** before you begin.
 
-## Sales orders creation
+## Set up shipment consolidation policies and product filters
 
-The same WHS-enabled warehouse must be used in the following sets of orders unless another warehouse is explicitly mentioned.
+The scenario described here assumes that you have already done the exercises and created the records described in [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md). Please do those exercises before continuing with this scenario.
 
-Go to **Accounts receivable > Orders > All sales orders** and create sales orders according to information below.
+## Create the sales orders for this scenario
 
-### Order set 1
+Start be creating a collection of sales orders that you can work with. You must work with a warehouse that is enabled for advanced warehouse (WHS) processes, and the same warehouse must be used for each of the following sets of orders unless another warehouse is explicitly mentioned.
 
-Create the first sales order.
+<!-- KFM: Should users set a **Warehouse** for each of the sales orders created here? If so, we should specify that for each of them. We should be able to specify a particular warehouse that is already set up correctly in the standard demo data -->
 
-**Sales order 1**:
 
-- In the **Customer account** field, select **US-001**;
-- In the **Mode of delivery** field, select **Airwa-Air**.
+<!-- KFM: Throughout this section we refer to item A0001 and A0002 as having no Code 4, while items D0001 and D0002 have Code 4 values. However, on my demo setup, I could only set Code 4 for items A0001 and A0002. The setting is disabled for D0001 and D0002. Therefore, the "Configure shipment consolidation policies" topic describes making this setting for items A0001 and A0002 (not D000x). We need to align this scenario with that one and with the actual USMF demo data people will have. (Or we need to add steps here for how to enable this setting for the D000x items.) -->
 
-Add an order line to the sales order.
+### Create order set 1
 
-**Line 1**:
+1. Go to **Accounts receivable > Orders > All sales orders** and create a new sales order with the following settings:
 
-- In the **Item number** field, select **A0001** (an item without filter code 4);
-- In the **Quantity** field, enter **1.00**.
+    - **Customer account** - *US-001*
+    - **Mode of delivery** - *Airwa-Air*
 
-Create the second sales order.
+1. Add an order line with the following settings to the sales order you just created:
 
-**Sales order 2**:
+    - **Item number** - *A0001* (an item without a **Code 4** filter assigned)
+    - **Quantity** - *1.00*
 
-- In the **Customer account** field, select **US-001**;
-- In the **Mode of delivery** field, select **Airwa-Air**.
+1. Create a second sales order with the following settings:
 
-Add an order line to the sales order.
+    - **Customer account** - *US-001*
+    - **Mode of delivery** - *Airwa-Air*
 
-**Line 1**:
+1. Add an order line with the following settings to the second sales order:
 
-- In the **Item number** field, select **A0001** (an item without filter code 4)
-- In the **Quantity** field, enter **1.00**.
+    - **Item number** - *A0001* (an item without a **Code 4** filter assigned)
+    - **Quantity** - *1.00*
 
-Create the third sales order.
+1. Create a third sales order with the following settings:
 
-**Sales order 3**:
+    - **Customer account** - *US-001*
+    - **Mode of delivery** - *10*
+    - **Customer requisition** - *1*
 
-- In the **Customer account** field, select **US-001**;
-- In the **Mode of delivery** field, select **10**;
-- In the **Customer requisition** field, enter **1**.
+1. Add an order line with the following settings to the third sales order you just created:
 
-Add two order lines to the sales order.
+    - **Item number** - *A0001* (an item without a **Code 4** filter assigned)
+    - **Quantity** - *1.00*
 
-**Line 1**:
+1. Add a second order line with the following settings to the third sales order:
 
-- In the **Item number** field, select **A0001** (an item without filter code 4);
-- In the **Quantity** field, enter **1.00**.
+    - **Item number** - *A0002* (an item without a **Code 4** filter assigned)
+    - **Quantity** - *1.00*
+    - **Mode of delivery** - *Airwa-Air*
 
-**Line 2**:
 
-- In the **Item number** field, select **A0002** (an item without filter code 4);
-- In the **Quantity** field, enter **1.00**;
-- In the **Mode of delivery** field, select **Airwa-Air**.
+1. Add the following two order lines to the third sales order:
 
-### Order set 2
+    - Order line 1:
+        - **Item number** - *A0001* (an item without a **Code 4** filter assigned)
+        - **Quantity** - *1.00*
 
-Create two identical sales orders.
+    - Order line 2:
+        - **Item number** - *A0002* (an item without a **Code 4** filter assigned)
+        - **Quantity** - *1.00*
+        - **Mode of delivery** - *Airwa-Air*
 
-**Sales order 1 and 2**:
+### Create order set 2
 
-- In the **Customer account** field, select **US-002**.
+1. Go to **Accounts receivable > Orders > All sales orders** and create a new sales order with the following settings:
 
-Add two order lines to each sales order.
+    - **Customer account** - *US-002*
 
-**Line 1**:
+1. Add the following two order lines to the sales order you just created:
 
-- In the **Item number** field, select **D0001** (an item with **Flammable** filter code 4);
-- In the **Quantity** field, enter **1.00**.
+    - Order line 1:
+        - **Item number** - *D0001* (an item with its **Code 4** filter set to *Flammable*)
+        - **Quantity** - *1.00*
 
-**Line 2**:
+    - Order line 2:
+        - **Item number** - *D0002* (an item with its **Code 4** filter set to *Explosive*)
+        - **Quantity** - *1.00*
 
-- In the **Item number** field, select **D0002** (an item with **Explosive** filter code 4);
-- In the **Quantity** field, enter **1.00**.
+1. Repeat this procedure to create a second sales order that is identical to this one.
 
-### Order set 3
+### Create order set 3
 
-Create a new sales order.
+1. Go to **Accounts receivable > Orders > All sales orders** and create a new sales order with the following settings:
 
-**Sales order 1**:
+    - **Customer account** - *US-002*
 
-- In the **Customer account** field, select **US-002**.
+1. Add the following two order lines to the sales order you just created:
 
-Add two order lines to each sales order.
+    - Order line 1:
+        - **Item number** - *D0001* (an item with its **Code 4** filter set to *Flammable*)
+        - **Quantity** - *1.00*
 
-**Line 1**:
+    - Order line 2:
+        - **Item number** - *D0002* (an item with its **Code 4** filter set to *Explosive*)
+        - **Quantity** - *1.00*
 
-- In the **Item number** field, select **D0001** (an item with **Flammable** filter code 4);
-- In the **Quantity** field, enter **1.00**.
+<!-- KFM: This order is identical to the two created in set 2. Is that intentional? If so, why not just create three orders in set 2 and drop this one? -->
 
-**Line 2**:
+### Create order set 4
 
-- In the **Item number** field, select **D0002** (an item with **Explosive** filter code 4);
-- In the **Quantity** field, enter **1.00**.
+1. Go to **Accounts receivable > Orders > All sales orders** and create a new sales order with the following settings:
 
-### Order set 4
+    - **Customer account** - *US-001*
+    - **Customer requisition** - *1*
 
-Create a new sales order.
+1. Add an order line with the following settings to the sales order you just created:
 
-**Sales order 1**:
+    - **Item number** - *A0001* (an item without a **Code 4** filter assigned)
+    - **Quantity** - *1.00*
 
-- In the **Customer account** field, select **US-001**;
-- In the **Customer requisition** field, enter **1**.
+### Create order set 5
 
-Add an order line to the sales order.
+1. Go to **Accounts receivable > Orders > All sales orders** and create a new sales order with the following settings:
 
-**Line 1**:
+    - **Customer account** - *US-001*
+    - **Customer requisition** - *2*
 
-- In the **Item number** field, select **A0001** (an item without filter code 4);
-- In the **Quantity** field, enter **1.00**.
+1. Add an order line with the following settings to the sales order you just created:
 
-### Order set 5
+    - **Item number** - *A0001* (an item without a **Code 4** filter assigned)
+    - **Quantity** - *1.00*
 
-Create two identical sales orders.
+1. Repeat the previous two steps to create a second sales order that is identical to the first one.
 
-**Sales order 1 and 2**:
+1. Create a third sales order with the following settings:
 
-- In the **Customer account** field, select **US-001**
-- In the **Customer requisition** field, enter **2**.
+    - **Customer account** - *US-001*
+    - **Customer requisition** - *1*
 
-Add an order line to each sales order.
+1. Add an order line with the following settings to the third sales order:
 
-**Line 1**:
+    - **Item number** - *A0001* (an item without a **Code 4** filter assigned)
+    - **Quantity** - *1.00*
 
-- In the **Item number** field, select **A0001** (an item without filter code 4);
-- In the **Quantity** field, enter **1.00**.
+### Create order set 6
 
-Create the third sales order.
+1. Go to **Accounts receivable > Orders > All sales orders** and create a new sales order with the following settings:
 
-**Sales order 3**:
+    - **Customer account** - *US-003*
 
-- In the **Customer account** field, select **US-001**;
-- In the **Customer requisition** field, enter **1**.
+1. Add an order line with the following settings to the sales order you just created:
 
-Add an order line to the sales order.
+    - **Item number** - *A0001* (an item without a **Code 4** filter assigned)
+    - **Quantity** - *1.00*
 
-**Line 1**:
+1. Repeat the previous two steps to create a second sales order that is identical to the first one.
 
-- In the **Item number** field, select **A0001** (an item without filter code 4);
-- In the **Quantity** field, enter **1.00**.
+1. Create a third sales order with the following settings:
 
-### Order set 6
+    - **Customer account** - *US-004*
 
-Create two identical sales orders.
+1. Add an order line with the following settings to the third sales order:
 
-**Sales order 1 and 2**:
+    - **Item number** - *A0001* (an item without a **Code 4** filter assigned)
+    - **Quantity** - *1.00*
 
-- In the **Customer account** field, select **US-003**.
+1. Repeat the previous two steps to create a fourth sales order that is identical to the third one.
 
-Add an order line to each sales order.
+1. Create a fifth sales order with the following settings:
 
-**Line 1**:
+    - **Customer account** - *US-007*
+    - **Site** - *6*
+    - **Warehouse** - *61*
+    - **Pool** - *ShipCons*
 
-- In the **Item number** field, select **A0001** (an item without filter code 4);
-- In the **Quantity** field, enter **1.00**.
+1. Add an order line with the following settings to the fifth sales order:
 
-Create another two identical sales orders.
+    - **Item number** - *A0001* (an item without a **Code 4** filter assigned)
+    - **Quantity** - *1.00*
 
-**Sales order 3 and 4**:
+1. Repeat the previous two steps to create a sixth sales order that is identical to the fifth one.
 
-- In the **Customer account** field, select **US-004**.
+1. Create a seventh sales order with the following settings:
 
-Add an order line to each sales order.
+    - **Customer account** - *US-007*
+    - **Site** - *6*
+    - **Warehouse** - *61*
+    - **Pool** - (leave empty)
 
-**Line 1**:
+1. Add an order line with the following settings to the fifth sales order:
 
-- In the **Item number** field, select **A0001** (an item without filter code 4);
-- In the **Quantity** field, enter **1.00**.
+    - **Item number** - *A0001* (an item without a **Code 4** filter assigned)
+    - **Quantity** - *1.00*
 
-Create another two identical sales orders.
+1. Repeat the previous two steps to create an eighth sales order that is identical to the seventh one.
 
-**Sales order 5 and 6**:
+## Automatic release of sales orders to the warehouse
 
-- In the **Customer account** field, select **US-007**.
-- In the **Site** field, select **6**.
-- In the **Warehouse** field, select **61**.
-- In the **Pool** field, select **ShipCons**.
+For this scenario, you will run an automatic release to warehouse procedure for each of the sets of sales orders you created previously. In each case, you'll work through the process outlined in the [basic release to warehouse procedure](#release-procedure) provided here.
 
-Add an order line to each sales order.
+<a name="release-procedure"></a>
 
-**Line 1**:
+### The basic release to warehouse procedure
 
-- In the **Item number** field, select **A0001** (an item without filter code 4);
-- In the **Quantity** field, enter **1.00**.
+For each set of sales orders you created earlier, you'll work through the three procedures outlined below.
 
-Create another two identical sales orders.
+#### Update the wave template that will be used during releasing
 
-**Sales order 7 and 8**:
+1. Go to **Warehouse management > Setup > Waves > Wave templates**.
+1. Set the **Wave template type** to *Shipping*.
+1. Find and select the wave template that is associated with the warehouse that you used in the order sets you created for this scenario. For example, if you used warehouse **24**, select the **24 Shipping Default** wave template. If you used warehouse **61**, select the **61 Shipping** wave template.
+1. Select **Edit** on the action pane and then set **Process wave at release to warehouse** to *No*.
 
-- In the **Customer account** field, select **US-007**;
-- In the **Site** field, select **6**.
-- In the **Warehouse** field, select **61**.
-- Leave **Pool** field empty.
-
-Add an order line to each sales order.
-
-**Line 1**:
-
-- In the **Item number** field, select **A0001** (an item without filter code 4);
-- In the **Quantity** field, enter **1.00**.
-
-## Automatic release to warehouse of sales orders
-
-In order to simplify the process of releasing specific set of sales orders to warehouse, follow these steps.
-
-First, update the wave template that will be used during releasing.
-
-1. Go to **Warehouse management > Setup > Waves > Wave template**.
-1. In the **Wave template type** field, select **Shipping**.
-1. Find and select wave template that is associated with a warehouse that was used in the order sets. For example, if **24** warehouse was used, select **24 Shipping Default** wave template. If **61** warehouse was used, select **61 Shipping** wave template.
-1. Click **Edit** and select **No** in the **Process wave at release to warehouse** field.
-
-Then, perform release to warehouse.
+#### Release to warehouse
 
 1. Go to **Warehouse management > Release to warehouse > Automatic release of sales orders**.
-1. In the **Quantity to release** field, select **All**.
-1. Expand **Records to include** FastTab and click **Filter** to set up query for sales orders to be used.
-1. Click **Add** and select **Sales order** in the **Field** field.
-1. In the **Criteria** field, enter sales order numbers from desired order set.
-1. Click **OK**.
-1. Click **OK** to launch automatic release to warehouse procedure.
+1. Set **Quantity to release** to *All*.
+1. Expand the **Records to include** FastTab and select **Filter** to open the query pane.
+1. On the **Range** tab, select **Add** to add a new row to the table and make the following settings for it:
+    - **Table** - <!-- KFM: What should this be? -->
+    - **Derived table** - <!-- KFM: What should this be? -->
+    - **Field** - *Sales order* <!-- KFM: Assuming this is table "Sales order", I see two different fields with this name here. Which one should I pick? -->
+    - **Criteria** -Enter sales order numbers from the desired order set. <!-- KFM: Which ones, all of them? Should we have taken note of the sales order numbers as we made them? Comma-separated? -->
+1. Select **OK** to save your query.
+1. Select **OK** to launch the *automatic release to warehouse* procedure.
 
-To review created or updated shipment, follow these steps.
+#### Review the created or updated shipment
 
 1. Go to **Warehouse management > Shipments > All shipments**.
-1. Find and select required shipment.
-1. If consolidation policy is used during shipment creation or update it can be found in the **Shipment consolidation policy** field.
-
-Now, using instructions above, release to warehouse each of created set of orders and verify shipments that are created or updated as a result of shipment consolidation according to expected results provided below.
+1. Find and select the required shipment.
+1. If a consolidation policy was used during shipment creation or update, you can find it in the **Shipment consolidation policy** field.
 
 ### Release sales orders from Order set 1
 
-Expected result:
+Follow the [basic release to warehouse procedure](#release-procedure) to release the sales orders from order set one.
 
-- Two shipments are created:
-  - The first shipment contains three lines and is created using **CustomerMode** shipment consolidation policy;
-  - The second shipment (without **Airways** transportation mode of delivery) is created using **CustomerOrderNo** shipment consolidation policy.
+When your done, you should see that two shipments were created:
+
+- The first shipment contains three lines and was created using the *CustomerMode* shipment consolidation policy.
+- The second shipment (without the *Airways* transportation mode of delivery) is created using the *CustomerOrderNo* shipment consolidation policy.
 
 ### Release sales orders from Order set 2
 
-Expected result:
+Follow the [basic release to warehouse procedure](#release-procedure) to release the sales orders from order set two.
 
-- Three shipments are created:
-  - The first shipment contains **Flammable** items;
-  - Each of the other two shipments contains one line with **Explosive** item.
+When your done, you should see that three shipments were created:
+
+- The first shipment contains *Flammable* items.
+- Each of the other two shipments contains one line with the *Explosive* item.
 
 ### Release sales orders from Order set 3
 
-Expected result:
+Follow the [basic release to warehouse procedure](#release-procedure) to release the sales orders from order set three.
 
-- One existing shipment is updated (the one that is created as a result of order set 2 release to warehouse):
-  - A line with **Flammable** item is added;
-- One new shipment is created:
-  - The shipment contains **Explosive** item.
+When your done, you should see that:
+
+- One existing shipment was updated (the one that was created as a result of order set 2 release to warehouse). A line with the *Flammable* item was added.
+- One new shipment was created. It contains the *Explosive* item.
 
 ### Release sales orders from Order set 4
 
-Expected result:
+Follow the [basic release to warehouse procedure](#release-procedure) to release the sales orders from order set four.
 
-- One existing shipment (where **Customer requisition** = 1) is updated:
-  - One line is added.
+When your done, you should see that one existing shipment (where **Customer requisition** = *1*) was updated to have one new line added to it.
 
 ### Release sales orders from Order set 5
 
-Expected result:
+Follow the [basic release to warehouse procedure](#release-procedure) to release the sales orders from order set five.
 
-- One existing shipment (where **Customer requisition** = 1) is updated:
-  - Line from sales order 3 (with **Customer requisition** = 1) is added;
-- One new shipment is created:
-  - Lines from sales orders 1 and 2 are grouped into one shipment.
+When your done, you should see that:
+
+- One existing shipment (where **Customer requisition** = *1*) was updated. It now has a line from sales order 5-3 (with **Customer requisition** = *1*) added to it.
+- One new shipment was created, where lines from sales orders 5-1 and 5-2 are grouped into one shipment.
 
 ### Release sales orders from Order set 6
 
-Expected result:
+Follow the [basic release to warehouse procedure](#release-procedure) to release the sales orders from order set six.
 
-- Four shipments are created:
-  - Lines from two orders for **US-003** customer are grouped into one shipment using **Order pool** shipment consolidation policy;
-  - Lines from two orders for **US-004** customer are grouped into one shipment using **Order pool** shipment consolidation policy;
-  - Lines from sales orders 5 and 6 for **US-007** customer are grouped into one shipment using **Order pool** shipment consolidation policy;
-  - Lines from sales orders 7 and 8 for **US-007** customer are grouped into one shipment using **CrossOrder** shipment consolidation policy.
+When your done, you should see that four shipments were created:
+
+- Lines from two orders for customer *US-003* are grouped into one shipment using the *Order pool* shipment consolidation policy;
+- Lines from two orders for customer *US-004* are grouped into one shipment using the *Order pool* shipment consolidation policy;
+- Lines from sales orders 5 and 6 for customer *US-007* are grouped into one shipment using the *Order pool* shipment consolidation policy;
+- Lines from sales orders 7 and 8 for customer *US-007* are grouped into one shipment using the *CrossOrder* shipment consolidation policy.
 
 ## Related articles and demo scripts
 
-- [About shipment consolidation policies](../warehousing/about-shipment-consolidation-policies.md)  
-- [Configure shipment consolidation policies](../warehousing/configure-shipment-consolidation-policies.md)
-- [Consolidate shipments](../warehousing/consolidate-shipments.md)
+- [About shipment consolidation policies](about-shipment-consolidation-policies.md)  
+- [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md)
+- [Consolidate shipments](consolidate-shipments.md)

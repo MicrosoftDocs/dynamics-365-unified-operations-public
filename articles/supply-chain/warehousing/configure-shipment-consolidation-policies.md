@@ -125,10 +125,10 @@ If you haven't already done so, enable the feature in feature management and cre
         - **Filter title** - *Code 4*
 
 1. Go to **Product information management \> Products \> Released products**.
-1. Open the product with **Item number** *A001*. (You must select a product that is WHS-enabled, and this one is pre-enabled in the **USMF** demo data)
+1. Open the product with **Item number** *A0001*. (You must select a product that is WHS-enabled, and this one is pre-enabled in the **USMF** demo data)
 1. On the **Warehouse** FastTab, set **Code 4** to *Flammable*.
 1. Close the page.
-1. Open the product with **Item number** *A002*.
+1. Open the product with **Item number** *A0002*.
 1. On the **Warehouse** FastTab, set **Code 4** to *Explosive*.
 1. Close the page.
 
