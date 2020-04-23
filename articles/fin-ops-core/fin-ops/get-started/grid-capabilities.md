@@ -149,7 +149,7 @@ This section maintains a list of known issues for the new grid control while the
 ### Fixed as part of 10.0.12
 
 > [!Note]
-> The following information is being provided so that you can plan appropriately. For more information about the targeted release schedule of version 10.0.12 of Finance and Operations apps, see [Service update availability](../../fin-ops/get-started/public-preview-releases.md).
+> The following information is being provided so that you can plan accordingly. For more information about the targeted release schedule of version 10.0.12, see [Service update availability](../../fin-ops/get-started/public-preview-releases.md).
 
 - [Issue 429126] Controls outside the grid aren't updated after the last record is deleted.
 - [Issue 430575] Table controls don't update the contents of displayed items.
