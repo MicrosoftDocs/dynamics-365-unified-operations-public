@@ -36,7 +36,7 @@ ms.dyn365.ops.version: 10.0.5
 
 This topic describes how to configure a scenario in Supply Chain Management for IoT Intelligence core insights.
 
-In this topic, you will configure the scenario to generate a message in Supply Chain Management when a machine goes down. This is the **Equipment down** scenario.
+In this topic, you will configure the **Equipment down** scenario to generate a message in Supply Chain Management when a machine goes down.
 
 , including enabling the feature flag, configuring the schema, mapping the signals to Supply Chain Management sources, and enabling the scenario.
 
@@ -54,7 +54,7 @@ The **Equipment downtime** scenario has these dependencies:
 3. Navigate to **Production control**.
 4. Navigate to **Setup \> IoT Intelligence \> Scenario parameters**. Enter the Redis connection string. *Insert instructions here on how to get this value. It appears not to be in the key vault.*
 5. Navigate to **Setup \> IoT Intelligence \> Scenario management**.
-6. Click **Configure** on the **Equipment downtime** tile. This starts the configuration wizard for the **Equipment sensor schema definition**. The goal here is to setup the schema in Supply Chain Management to match the JSON format that you created when you setup the message in Azure. In this example, the message payload contains a batch of messages with this format:
+6. Click **Configure** on the **Equipment downtime** tile. The configuration wizard starts with the **Equipment sensor schema definition** page. The goal here is to setup the schema in Supply Chain Management to match the JSON format that you created when you configured the message in Azure. In this example, the message payload contains a batch of messages with this format:
 
     ```json
     {
@@ -76,9 +76,9 @@ The **Equipment downtime** scenario has these dependencies:
 
 7. Add a row to the table.
 
-    1. Set the **Schema name** to **id**.
-    2. Set the **Schema path** to **/payload[\*]/id**.
-    3. Set the **Description** to **Message id**.
+    1. Set the **Schema name** to **ID**.
+    2. Set the **Schema path** to **/payload[\*]/ID**.
+    3. Set the **Description** to **Message ID**.
 
 8. Add a row to the table. 
 
@@ -95,17 +95,17 @@ The **Equipment downtime** scenario has these dependencies:
     You don't need to define all the properties in the message, only the ones that you need. In this example, you did not create a row for **Root timestamp**. The path for **Root timestamp** would be **/timestamp**.
   
 10. Click **Next** to go to the **Equipment sensor schema map** page.
-11. In the row for **Equipment resource id** set the **Schema name** to **id**. The valid values are displayed in a dropdown table.
+11. In the row for **Equipment resource ID** set the **Schema name** to **ID**. The valid values are displayed in a dropdown table.
 12. In the row for **UTC time** set the **Schema name** to **Timestamp**. The valid values are displayed in a dropdown table.
 13. In the row for **Part produced signal** set the **Schema name** to **value**. The valid values are displayed in a dropdown table.
-14. Click **Next** for the **Equipment resource id configuration** page.
+14. Click **Next** for the **Equipment resource ID configuration** page.
 15. In this step, you map the machine names to ??? in the Supply Chain Management. 
 
-    1. For the **Schema path** - **/[payload]\*/id**, in the **Signal Data Values** table, add a new row, and enter **IoTInt.Machine1225.PartOut** in the **Value** column. The value **IoTInt.Machine1225.PartOut** comes from the **id** property in the message JSON.
+    1. For the **Schema path** - **/[payload]\*/ID**, in the **Signal Data Values** table, add a new row, and enter **IoTInt.Machine1225.PartOut** in the **Value** column. The value **IoTInt.Machine1225.PartOut** comes from the **ID** property in the message JSON.
     2. In the **Business Record Mapping** table, click **New**. The default value for the **Business record type** is autopopulated, and you don't need to change it. 
     3. In the **Business record** column, select **Machine1225**. 
     4. Click **Save**. 
-    5. Repeat these steps, adding a new business record mapping for **Machine1226**. You can map multiple **id** values from the messages to a single record in Supply Chain Management, but you can't map a single **id** value to multiple records in Supply Chain Management.
+    5. Repeat these steps, adding a new business record mapping for **Machine1226**. You can map multiple **ID** values from the messages to a single record in Supply Chain Management, but you can't map a single **ID** value to multiple records in Supply Chain Management.
 
 18. After you have entered all the rows you need in the **Business Record Mapping** table, use the **Selected** column to choose when machines you want to process. You do not have to process information that comes from all the machines.
 19. Click **Next** to go to the **Part produced signal configuration** page.
@@ -119,7 +119,7 @@ At this point, the pipeline is complete and the messages are processed automatic
 
 ## Configure the **Quality** scenario in Supply Chain Management
 
-The **Quality** scenario generates a notification if an attribute of an item is outside a speicified range. For example, a sensor could send the weight of each item to IoT Hub. In Suppy Chain Management, a notification would be generated if the item was too heavy or too light. 
+The **Quality** scenario generates a notification if an attribute of an item is outside a specified range. For example, a sensor could send the weight of each item to IoT Hub. In Supply Chain Management, a notification would be generated if the item was too heavy or too light. 
 
 The **Quality** scenario has these dependencies:
 
@@ -127,7 +127,7 @@ The **Quality** scenario has these dependencies:
 
 ## Configure the **Production Order Delay** scenario in Supply Chain Management
 
-The **Production Order Delay** scenario generates a notification if the production throughput falls below a threshold value. In this scenario, a **PartOut** signal is sent to IoT Hub for each item produced. In Supply Chain Management, the order delay is calculated based on how long the production order is scheduled to run, how many items should be be produced, how long the job has been running, and how many **PartOut** signals are received. A delay notification would be generated if the number of the **PartOut** signals for the job falls below the threshold value of the expected value.
+The **Production Order Delay** scenario generates a notification if the production throughput falls below a threshold value. In this scenario, a **PartOut** signal is sent to IoT Hub for each item produced. In Supply Chain Management, the order delay is calculated based on how long the production order is scheduled to run, how many items should be produced, how long the job has been running, and how many **PartOut** signals are received. A delay notification would be generated if the number of the **PartOut** signals for the job falls below the threshold value of the expected value.
 
 The **Production Order Delay** scenario has these dependencies:
 

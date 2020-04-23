@@ -40,7 +40,7 @@ Internet of things (IoT) Intelligence supports the following core insights and a
 + **Equipment down**: Provides notification services and actions for managing equipment-down scenarios. Displays impacted operations. Provides users with the ability to define metrics for machine-down thresholds and notifies users when an exception to these thresholds occurs. Enables users to take relevant business actions for delayed orders, including the ability to view impact or create a maintenance work order.
 + **Quality anomaly**: Provides notification services and actions for managing quality anomalies. Provides users with the ability to define quality attributes for products and get notified when exceptions to these attributes occur.
 
-## Overview of setup process
+## Setup
 
 You can setup and configure core insights without writing any code. The basic steps in setup are:
 
