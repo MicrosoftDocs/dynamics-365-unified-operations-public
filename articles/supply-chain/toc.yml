@@ -1082,7 +1082,7 @@
         - name: Metrics setup for IoT Intelligence core insights
           href: iot/iot-metrics-setup.md
         - name: Managing IoT Intelligence core insights
-          href: iot/iot-managment.md    
+          href: iot/iot-management.md    
     - name: Master planning
       items:
       - name: Master planning home page

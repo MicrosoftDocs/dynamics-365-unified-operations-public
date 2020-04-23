@@ -53,8 +53,8 @@ You can setup and configure core insights without writing any code. The basic st
 
 ## Tracking and maintenance
 
-+ [How to view the monitors in Supply Chain Management](iot-managment.md#)
-+ [How to disable a scenario](iot-managment.md#)
-+ [How to uninstall the add-in](iot-managment.md#)
-+ [Modify a running IoT Intelligence scenario](iot-managment.md#)
-+ [Simulation options](iot-managment.md#)
++ [How to view the monitors in Supply Chain Management](iot-management.md#)
++ [How to disable a scenario](iot-management.md#)
++ [How to uninstall the add-in](iot-management.md#)
++ [Modify a running IoT Intelligence scenario](iot-management.md#)
++ [Simulation options](iot-management.md#)

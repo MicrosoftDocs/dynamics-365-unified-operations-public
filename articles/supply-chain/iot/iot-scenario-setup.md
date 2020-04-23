@@ -47,14 +47,14 @@ The **Equipment downtime** scenario maps a machine to a **PartOut** signal and d
 
 The **Equipment downtime** scenario has these dependencies:
 
-+ Production Order must be scheduled and running on the machine for an alert to be triggered. 
++ Production Order must be scheduled and running on the machine for an alert to be triggered.
 
 1. Log into the Finance and Operations apps.
-2. Enbale the IoT Intelligence feature flag. For more information, see [Feature management overview](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-4. Navigate to **Production control**.
-5. Navigate to **Setup \> IoT Intelligence \> Scenario parameters**. Enter the Redis connection string. *Insert instructions here on how to get this value. It appears not to be in the key vault.*
-6. Navigate to **Setup \> IoT Intelligence \> Scenario management**.
-7. Click **Configure** on the **Equipment downtime** tile. This starts the configuration wizard for the **Equipment sensor schema definition**. The goal here is to setup the schema in Supply Chain Management to match the JSON format that you created when you setup the message in Azure. In this example, the message payload contains a batch of messages with this format:
+2. Enable the IoT Intelligence feature flag. For more information, see [Feature management overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+3. Navigate to **Production control**.
+4. Navigate to **Setup \> IoT Intelligence \> Scenario parameters**. Enter the Redis connection string. *Insert instructions here on how to get this value. It appears not to be in the key vault.*
+5. Navigate to **Setup \> IoT Intelligence \> Scenario management**.
+6. Click **Configure** on the **Equipment downtime** tile. This starts the configuration wizard for the **Equipment sensor schema definition**. The goal here is to setup the schema in Supply Chain Management to match the JSON format that you created when you setup the message in Azure. In this example, the message payload contains a batch of messages with this format:
 
     ```json
     {
@@ -74,19 +74,19 @@ The **Equipment downtime** scenario has these dependencies:
     }
     ```
 
-8. Add a row to the table. 
+7. Add a row to the table.
 
     1. Set the **Schema name** to **id**.
     2. Set the **Schema path** to **/payload[\*]/id**.
     3. Set the **Description** to **Message id**.
 
-9. Add a row to the table. 
+8. Add a row to the table. 
 
     1. Set the **Schema name** to **timestamp**.
     2. Set the **Schema path** to **/payload[\*]/timestamp**.
     3. Set the **Description** to **Message timestamp**.
 
-10. Add a row to the table. 
+9. Add a row to the table. 
 
     1. Set the **Schema name** to **value**.
     2. Set the **Schema path** to **/payload[\*]/value**.
@@ -94,12 +94,12 @@ The **Equipment downtime** scenario has these dependencies:
 
     You don't need to define all the properties in the message, only the ones that you need. In this example, you did not create a row for **Root timestamp**. The path for **Root timestamp** would be **/timestamp**.
   
-12. Click **Next** to go to the **Equipment sensor schema map** page.
-13. In the row for **Equipment resource id** set the **Schema name** to **id**. The valid values are displayed in a dropdown table.
-14. In the row for **UTC time** set the **Schema name** to **Timestamp**. The valid values are displayed in a dropdown table.
-15. In the row for **Part produced signal** set the **Schema name** to **value**. The valid values are displayed in a dropdown table.
-16. Click **Next** for the **Equipment resource id configuration** page.
-17. In this step, you map the machine names to ??? in the Supply Chain Management. 
+10. Click **Next** to go to the **Equipment sensor schema map** page.
+11. In the row for **Equipment resource id** set the **Schema name** to **id**. The valid values are displayed in a dropdown table.
+12. In the row for **UTC time** set the **Schema name** to **Timestamp**. The valid values are displayed in a dropdown table.
+13. In the row for **Part produced signal** set the **Schema name** to **value**. The valid values are displayed in a dropdown table.
+14. Click **Next** for the **Equipment resource id configuration** page.
+15. In this step, you map the machine names to ??? in the Supply Chain Management. 
 
     1. For the **Schema path** - **/[payload]\*/id**, in the **Signal Data Values** table, add a new row, and enter **IoTInt.Machine1225.PartOut** in the **Value** column. The value **IoTInt.Machine1225.PartOut** comes from the **id** property in the message JSON.
     2. In the **Business Record Mapping** table, click **New**. The default value for the **Business record type** is autopopulated, and you don't need to change it. 
