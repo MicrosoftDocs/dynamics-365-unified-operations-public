@@ -976,6 +976,8 @@
         href: project-management/tasks/configure-intercompany-project-invoicing.md
       - name: Configure standard costs for labor and expenses
         href: project-management/tasks/configure-standard-costs-labor-expenses.md
+      - name: Set up and use pay-when-paid vendor payments
+        href: project-management/setup-manage-vendor-payments.md
       - name: Project cost accrual on purchase receipts
         href: accounts-payable/project-cost-accrual-purchase-receipts.md
       - name: Project invoicing
