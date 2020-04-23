@@ -5,7 +5,7 @@ title: Buy box module
 description: This topic covers buy box modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 04/13/2020
+ms.date: 05/25/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -44,7 +44,9 @@ A buy box module is special container that is used to host all the modules that 
 
 The URL of a product details page includes the product ID. All the information that is required to render a buy box module is derived from this product ID. If a product ID isn't provided, the buy box module won't be rendered correctly on a page. Therefore, a buy box module can be used only on pages that have product context. To use it on a page that doesn't have product context (for example, a home page or a marketing page), you must do additional customizations.
 
-![Example of a Buy box module](./media/ecommerce-pdp-buybox.PNG)
+The following example image shows a buy box module on a PDP.
+
+![Example of a buy box module](./media/ecommerce-pdp-buybox.PNG)
 
 ## Buy box module properties and slots 
 
@@ -69,16 +71,16 @@ Themes can be used to remove or change the order of buy box product properties a
 
 ## Buy box module settings
 
-Buy box modules have three settings that can be configured at **Site Settings \> Extensions**:
+Buy box modules have four settings that can be configured at **Site Settings \> Extensions**:
 
 - **Maximum quantity** – This property is used to specify the maximum number of each item that can be added to the cart. For example, a retailer might decide that only 10 of each product can be sold in a single transaction.
 - **Inventory check** – When the value is set to **True**, an item is added to the cart only after the buy box module makes sure that it's in stock. This inventory check is done for scenarios where the item will be shipped and for scenarios where it will be picked up in the store. If the value is set to **False**, no inventory check is done before an item is added to the cart and the order is placed. For information on how to configure inventory settings in back office, see [Calculate inventory availability for retail channels](calculated-inventory-retail-channels.md).
 - **Inventory buffer** – This property is used to specify a buffer number for inventory. Inventory is maintained in real time, and when many customers place orders, it can be difficult to maintain an accurate inventory count. When an inventory check is done, if the inventory is less than the buffer amount, the product is treated as out of stock. Therefore, when sales occur quickly through several channels, and the inventory count isn't fully synced, there is less risk that an item that is out of stock will be sold.
--**Add to cart** - This property is used to specify the behavior after an item is added to cart. It supports 3 settings - Navigate to cart, Do not navigate cart, Show notifications. If navigate to cart is set, the user is navigated to cart page after adding an item. If Show notifications is set, the user is shown a confirmation notification and can continue to browse on the product details page. Below is an example of add to cart notifications shown in Fabrikam
+- **Add to cart** - This property is used to specify the behavior after an item is added to the cart. It supports three settings: **Navigate to cart**, **Do not navigate to cart**, and **Show notifications**. If **Navigate to cart** is set to **True**, the user is navigated to the cart page after adding an item. If **Show notifications** is set to **True**, the user is shown a confirmation notification and can continue to browse on the product details page. 
+
+The following example image shows add to cart notifications on the Fabrikam site.
 
 ![Example of a notification module](./media/ecommerce-addtocart-notifications.PNG)
-
-
 
 ## Commerce Scale Unit interaction
 
@@ -91,15 +93,15 @@ To add a buy box module to a new page and set the required properties, follow th
 1. Create a fragment that is named **buy box fragment**, and add a buy box module to it.
 1. In the **Media** slot of the buy box module, add a media gallery module.
 1. In the **Store selector** slot of the buy box module, add a store selector module.
-1. Check in the page, and publish it.
+1. Select **Save**, select **Finish editing** to check in the fragment, and then select **Publish** to publish it.
 1. Create a template for a product details page, and name it **PDP template**.
 1. Add a default page.
 1. In the **Main** slot of the default page, add a buy box fragment.
-1. Save the template, finish editing it, and publish it.
+1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.
 1. Use the template that you just created to create a page that is named **PDP page**.
 1. In the **Main** slot of the new page, add a buy box fragment.
 1. Save and preview the page. Add the **?productid=&lt;product id&gt;** query string parameter to the URL of the preview page. In that way, the product context is used to load and render the preview page.
-1. Save the page, finish editing it, and publish it. A buy box should appear on the product details page.
+1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it. A buy box should appear on the product details page.
 
 ## Additional resources
 
