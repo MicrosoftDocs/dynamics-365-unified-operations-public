@@ -5,7 +5,7 @@ title: Configure the Electronic reporting (ER) framework
 description: This topic explains how to configure parameters of the Electronic reporting (ER) framework.
 author: NickSelin
 manager: AnnBe
-ms.date: 04/22/2020
+ms.date: 04/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: July 2017 update
 This topic explains how to set up the basic functionality for Electronic reporting (ER). It also describes the steps that you must complete before you can set up ER.
 
 ## Prerequisites for ER setup
-Before you can set up ER, you must set up the required [document types](../fin-ops/organization-administration/configure-document-management.md#configure-document-types) in Document management:
+Before you can set up ER, you must set up the required [document types](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types) in Document management:
 
 - A document type for Microsoft Office documents that are used as templates for ER reports.
 - A document type that is used to store the output of ER reports in the jobs archive.
@@ -112,7 +112,7 @@ On the **Configuration provider table** page, create ER provider records. Each p
 ## Optional setup for ER
 In addition to the basic functionality, ER has other functionality that you can set up.
 
-- On the **Electronic reporting destination** page, define the ER output destinations for each file output of each ER format configuration. Use the [document types](../fin-ops/organization-administration/configure-document-management.md#configure-document-types) of the Document management framework that you set up earlier. You can also use this page to set up the optional ER functionality for each legal entity. For more information, see [Electronic reporting (ER) destinations](electronic-reporting-destinations.md).
+- On the **Electronic reporting destination** page, define the ER output destinations for each file output of each ER format configuration. Use the [document types](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types) of the Document management framework that you set up earlier. You can also use this page to set up the optional ER functionality for each legal entity. For more information, see [Electronic reporting (ER) destinations](electronic-reporting-destinations.md).
 - When you add new Application Object Tree (AOT) artifacts or update existing AOT artifacts that are used as data sources (tables, views, or data entities) in ER, use the **Rebuild table references** menu item (**Organization administration** \> **Electronic reporting** \> **Rebuild table references**) to bring your AOT changes into the ER metadata.
 
 ## Frequently asked questions
