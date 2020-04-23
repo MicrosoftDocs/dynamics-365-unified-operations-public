@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: josaw
 ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 141393
