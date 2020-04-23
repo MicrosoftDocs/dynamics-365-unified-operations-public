@@ -3,7 +3,7 @@
 
 title: Testing and validations
 description: This tutorial shows you how to create and run test cases.
-author: RobinARH
+author: jorisdg
 manager: AnnBe
 ms.date: 04/14/2020
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 24231
 ms.assetid: 41dcbbda-e377-45a8-b180-5daa0e63c4a9
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shailesn
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
