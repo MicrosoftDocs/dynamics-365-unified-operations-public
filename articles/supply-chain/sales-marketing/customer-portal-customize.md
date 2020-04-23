@@ -181,5 +181,3 @@ See these documents to learn more about how you can set up and customize the Cus
 - [Upgrade a portal](https://docs.microsoft.com/powerapps/maker/portals/admin/upgrade-portal)
 - [Migrate portal configuration](https://docs.microsoft.com/powerapps/maker/portals/admin/migrate-portal-configuration)
 - [Solution Lifecycle Management: Dynamics 365 for Customer Engagement apps](https://www.microsoft.com/download/details.aspx?id=57777)
-
-<!-- KFM: I copied the above links from the setup topic. Are they all also relevant here? -->

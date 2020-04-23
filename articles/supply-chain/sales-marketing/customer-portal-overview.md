@@ -67,6 +67,4 @@ The Customer portal depends on entities that are synced with dual-write. Before 
 
 ![Customer portal dependencies](media/customer-portal-elements.png "Customer portal dependencies")
 
-<!-- KFM: We need to fix the branding text in this illustration. "Power Apps portals" "Dual-write" "Customer portal" and "Dynamics 365 Supply Chain Management" -->
-
 The Customer portal acts as a starting point for organizations that want to use Power Apps portals to build an externally facing website that uses data from their Supply Chain Management installation. It helps organizations connect dual-write, Supply Chain Management, and Power Apps portals.

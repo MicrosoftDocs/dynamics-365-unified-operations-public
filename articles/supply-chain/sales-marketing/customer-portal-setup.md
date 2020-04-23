@@ -42,8 +42,6 @@ The Customer portal depends on Power Apps portals and dual-write, as shown in th
 
 ![Customer portal dependencies](media/customer-portal-elements.png "Customer portal dependencies")
 
-<!-- KFM: We need to fix the branding text in this illustration. "Power Apps portals" "Dual-write" "Customer portal" and "Dynamics 365 Supply Chain Management" -->
-
 Unlike other features from Supply Chain Management, the template resides in Power Apps portals. Therefore, the Customer portal is limited by the functionality and capabilities that are provided by Power Apps portal and the entities in dual-write.
 
 <a name="required-setup"></a>
