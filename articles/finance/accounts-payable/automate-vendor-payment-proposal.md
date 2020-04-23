@@ -98,9 +98,11 @@ We recommend that you evaluate whether the automation will be beneficial to your
 ## View results for vendor payment proposal automation
 After the vendor payment proposal automation series is created, the occurrences for each payment can be seen on the process automation weekly view.  For vendor payments, the process automation weekly view has been added to the **Vendor payments** workspace, as well as to the **Process automation** page. 
 
-*Two illustrations go here*
+[![Vendor payments page](./media/vendor-payment-proposal-1.png)](./media/vendor-payment-proposal-1.png)
 
 The process automation weekly view shown here will display only vendor payment proposal automations.  It will show all occurrences of payments for the current week, for all legal entities that user has security to.  For example, if the AP payment clerk is responsible for payments in companies USMF and USSI, they will see the vendor payment proposal automation occurrences for those two companies, but not other companies. 
+
+[![Vendor payments page](./media/vendor-payment-proposal-2.png)](./media/vendor-payment-proposal-2.png)
 
 Each occurrence will display various pieces of information. 
 
