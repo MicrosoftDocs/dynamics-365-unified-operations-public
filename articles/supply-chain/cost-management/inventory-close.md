@@ -5,7 +5,7 @@ title: Inventory close
 description: As part of the process to settle issue transactions with receipt transactions, you can also choose to have the general ledger updated to reflect the adjustments that have been made.
 author: AndersGirke
 manager: tfehr
-ms.date: 10/24/2017
+ms.date: 04/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -63,11 +63,10 @@ Several of the tasks that you can perform on the **Closing and adjustment** page
 
 The ledger accounts that are updated because of these tasks are linked to the original inventory transaction. For example, if a sales order is settled to a purchase order, the general ledger accounts that were used for the original sales order are adjusted. This behavior occurs even if the ledger accounts for the item group that is assigned to the item have changed since the sales order was posted. After inventory close creates a settlement amount, the settlement amount is still posted to the original ledger accounts, not to the new ledger accounts that are assigned to the item. The general ledger might also be updated if you reverse an inventory close. 
 
-**Notes:**
-
--   Inventory close isn't required if you use the Standard cost valuation method.
--   Before you run the closing procedure, you can view a list of items that can't be settled during the update.
--   We recommend that you run inventory close during off-peak hours, to distribute computing resources more evenly.
+> [!NOTE] 
+> - Inventory close is a required step in the month-end closing procedure for all inventory models. This includes Standard and Moving Average Costing. You will not be able to close the financial period until an inventory close has been performed as of the period end date.
+> - Before you run the closing procedure, you can view a list of items that can't be settled during the update.
+> - We recommend that you run inventory close during off-peak hours, to distribute computing resources more evenly.
 
 ## The inventory close log
 After the inventory close process has been completed, a message in the message center might inform you that a unit cost price might be incorrect because a transaction could not be fully settled. 
@@ -89,7 +88,6 @@ In some circumstances, you might not be able to do anything about the warnings. 
 ## Reversing a completed inventory close
 Occasionally, you might have to reverse a completed inventory close to return settlements to the state that they had before adjustments were made. When you reverse a completed inventory close, inventory is reopened to enable posting in the period that the inventory close covers. Related changes might also be made in the general ledger. After you've finished making adjustments, you can run inventory close again for the period that you're working with. 
 
-**Note:** Only the last inventory period that was closed can be reopened. To reverse an earlier inventory close, you must reverse each subsequent inventory close one at a time, starting with the most recent close.
-
-
+> [!NOTE] 
+> Only the last inventory period that was closed can be reopened. To reverse an earlier inventory close, you must reverse each subsequent inventory close one at a time, starting with the most recent close.
 

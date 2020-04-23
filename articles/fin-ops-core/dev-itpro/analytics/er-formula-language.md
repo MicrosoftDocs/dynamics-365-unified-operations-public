@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-Electronic reporting (ER) provides a powerful data transformation experience. The language that is used to express the required data manipulations in the ER formula designer resembles the formula language in Microsoft Excel.
+Electronic reporting (ER) provides a powerful data transformation experience. The language that is used to express the required data manipulations in the [ER formula designer](general-electronic-reporting-formula-designer.md) resembles the formula language in Microsoft Excel.
 
 ## Basic syntax
 
