@@ -58,7 +58,7 @@ following websites:
 Before starting work with the electronic invoice functionality, it is
 necessary to fulfil the following settings:
 - [Accounts receivable parameters](/accounts-receivable-parameters).
-- [E-invoice parameters](/e-invoices parameters).
+- [E-invoice parameters](/e-invoices-parameters).
 - [Customers](/customers).
 - [Digital certificate](/digital-certificates).
 - [Destination for xml file utput](/destination-for-xml-file-utput) (optional)
@@ -108,13 +108,12 @@ Use **Applicability** button and fill in CustTable in the **Table name** field
 
 ![electronic document property types](media/emea-ita-electronic-invocies-electronic-document-property-types.png)
 
-
 - After this setting it is possible to fill in **Electronic document properties**
 for a customer (**Accounts receivable \> Customers \> All customers, Customer**
 tab, **Properties**). Fill in **Value** field. The system fills in the **PECDestinatario** tag with this value.
 ### Activate automatic creation of e-invoices  
 **Accounts receivable \> Customers \> All customers,** open a customer in **Edit** mode**, Invoice and delivery** FastTab, **E-INVOICE** field group, **eInvoice registe** option.
-If this option is set to **Yes**, the system automatically creates the record in **Electronic customer invoices** page list (see Overview of electronic invoices page).
+If this option is set to **Yes**, the system automatically creates the record in **Electronic customer invoices** page list (see [Overview of electronic invoices page](/overview-of-electronic-invoices-page).
 
 ![E-invoice activation](media/emea-ita-electronic-invocies-customer-e-invoice.png)
 
