@@ -118,7 +118,7 @@ If this option is set to **Yes**, the system automatically creates the record in
 Open **Accounts receivable \> Setup \> Electronic invoice digital certificates**
 This functionality can perform electronic singing of e-Invoices by using either **Company** certificate or **User** certificate.
 
-![digital certificate](media/emea-ita-electronic-invocies-certificate)
+![digital certificate](media/emea-ita-electronic-invocies-certificate.png)
 
 Each [FatturaPA file](http://www.fatturapa.gov.it/export/fatturazione/en/b-2.htm) that is transmitted to the [Exchange System](http://www.fatturapa.gov.it/export/fatturazione/en/sdi.htm) must be signed by using a qualified signature certificate by the party that is issuing the invoice.  
 A qualified signature certificate may be obtained from one of the certifiers in the [list of authorized certifiers](http://www.digitpa.gov.it/firma-digitale/certificatori-accreditati).  
