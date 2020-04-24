@@ -88,7 +88,7 @@ and transmission number.
 The system uses this field value for defining the type of communication (B2G or B2B). If the length of this value is 6 then the customer will be considered as public administration (Transmission Format is **FPA12**) and if the length of this value is 7 then this customer will be considered as private companies or professionals (Transmission Format is **FPR12**). 
 In these both cases the system fills in the CodiceDestinatario tag (xml file) with this field value.
 
-![Authority office](media/emea-ita-electronic-invocies-customer-authority-office)
+![Authority office](media/emea-ita-electronic-invocies-customer-authority-office.png)
 
 If **Authority office** field value is empty, the system considers a customer as a private company or professional (Transmission Format is **FPR12**) and fills in the CodiceDestinatario tag (xml file) with **0000000**.
 
@@ -101,7 +101,7 @@ To do this:
 
 Use **Applicability** button and fill in CustTable in the **Table name** field
 
-![electronic document property types](media/emea-ita-electronic-invocies-electronic-document-property-types)
+![electronic document property types](media/emea-ita-electronic-invocies-electronic-document-property-types.png)
 
 
 - After this setting it is possible to fill in **Electronic document properties**
@@ -111,7 +111,7 @@ tab, **Properties**). Fill in **Value** field. The system fills in the **PECDest
 **Accounts receivable \> Customers \> All customers,** open a customer in **Edit** mode**, Invoice and delivery** FastTab, **E-INVOICE** field group, **eInvoice registe** option.
 If this option is set to **Yes**, the system automatically creates the record in **Electronic customer invoices** page list (see Overview of electronic invoices page).
 
-![E-invoice activation](media/emea-ita-electronic-invocies-customer-e-invoice)
+![E-invoice activation](media/emea-ita-electronic-invocies-customer-e-invoice.png)
 
 ## Digital Certificates
 
@@ -145,11 +145,11 @@ Example of setup:
 
 - Document type:
 
-![Document type](media/emea-ita-electronic-invocies-document-type)
+![Document type](media/emea-ita-electronic-invocies-document-type.png)
 
 - Destination for Sales invoice (IT) format:
 
-![Destination](media/emea-ita-electronic-invocies-destination)
+![Destination](media/emea-ita-electronic-invocies-destination.png)
 
 ## Overview of electronic invoices page 
 
@@ -171,6 +171,6 @@ In this page list a user can:
 > The similar page list with the same functions is in **Project management
 and accounting \> Project invoices \> E-invoices \> Electronic invoices.**
 
-![](media/840e8c82e59042cf282bbdc621e8022f.png)
+![Customer electronic invoices](media/emea-ita-electronic-invocies-electronic-customer-invoices.png)
 
  
