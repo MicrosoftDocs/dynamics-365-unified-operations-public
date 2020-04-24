@@ -5,7 +5,7 @@ title: Initialize Retail Cloud Scale Unit
 description: This topic explains how to initialize Retail Cloud Scale Unit.
 author: AamirAllaq
 manager: AnnBe
-ms.date: 08/06/2019
+ms.date: 04/24/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
