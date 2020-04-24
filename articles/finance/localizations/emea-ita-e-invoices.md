@@ -61,7 +61,7 @@ necessary to fulfil the following settings:
 - [E-invoice parameters](/e-invoices-parameters).
 - [Customers](/customers).
 - [Digital certificate](/digital-certificates).
-- [Destination for xml file utput](/destination-for-xml-file-utput) (optional)
+- [Destination for xml file output](/destination-for-xml-file-output) (optional)
 
 ## Accounts receivable parameters
 
@@ -138,7 +138,7 @@ To be able to support FatturaPA you must perform the following steps:
 
 -   Define Company-level certificates and User-level certificates, as required.
 
-## Destination for xml file utput
+## Destination for xml file output
 
 If it is necessary to output xml files to specified place (for example, SharePoint folder) when invoices are posting (**Print invoice** option must be set to **Yes**), first set up a document type (**Organization administration \> Document management \> Document types**) and then set up a destination (**Organization administration \> Electronic reporting \> Electronic reporting destination**) (see setting details under the links [Configure document management](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) and [Electronic reporting (ER) destinations](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations)).
 
