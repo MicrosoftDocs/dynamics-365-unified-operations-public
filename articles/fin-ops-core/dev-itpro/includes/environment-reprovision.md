@@ -1,6 +1,19 @@
-If you copy a database between environments, the copied database won't be fully functional until you run the Environment reprovisioning tool to make sure that all Commerce components are up to date.
+> [!IMPORTANT]
+> Some environment specific records are not included in automated database movement operations and require additional steps. These include the following:
+> - Commerce Self-Service installer references
+> - Commerce Scale Unit channel database configuration records
 
-Follow these steps to run the Environment reprovisioning tool.
+If you copy a database between environments, Commerce capabilities in the target environment will not be fully functional until you perform the following additional steps.
+### Initialize Commerce Scale Units
+If you are moving a database to a Sandbox UAT or Production environment, you must [Initialize Commerce Scale Unit](../deployment/Initialize-Retail-Channels.md) after the database movement operation is complete.
+
+### Synchronize Commerce self-service installers
+To be able to access Commerce self-service installers in HQ, you must [Synchronize self-service installers](../../commerce/dev-itpro/synchronize-installers.md) after database movement operation is complete.
+
+> [!IMPORTANT]
+> Environment re-provisioning step has now been fully automated as part of database movement operations, and no longer needs to be run manually. Environment re-provisioning tool is still available in Asset Library and may be used in unusual situations to mitigate error conditions. 
+
+To run the Environment reprovisioning tool on the target environment, run the following steps:
 
 1. In your project's **Asset Library**, in the **Software deployable packages** section, click **Import**.
 2. From the list of shared assets, select the **Environment Reprovisioning Tool**.
@@ -9,20 +22,3 @@ Follow these steps to run the Environment reprovisioning tool.
 5. Monitor the progress of the package deployment.
 
 For more information about how to apply a deployable package, see [Create deployable packages of models](../deployment/create-apply-deployable-package.md). For more information about how to manually apply a deployable package, see [Install deployable packages from the command line](../deployment/install-deployable-package.md).
-
-> [!IMPORTANT]
-> Some environment specific records cannot be moved along with the database from the source to the target environment. The following records are not moved to the target environment:
-> - Commerce Self-Service installers
-> - Commerce Scale Unit channel database configuration record
-
-### Database refresh and Commerce Scale Units
-
-As part of database refresh, scale unit channel database records (in the Channel Database form) cannot be moved across environments since they represent environment specific configuration.
-
-For **Commerce Scale Units**, you can regenerate the channel database record by issuing a re-deployment of your scale units in LCS. For more information, see [Refresh database](../database/database-refresh.md) and [Initialize Retail Cloud Scale Unit](../deployment/Initialize-Retail-Channels.md).
-
-### Database refresh and Commerce Self-Service installers
-
-Self-service installers are stored in environment specific storages that cannot be moved along with the database.
-
-Installers are uploaded to the environment as part of a deployable package. The application and binary packages provided by Microsoft will contain the Microsoft provided installers. The deployable package produced by extensions through the Retail SDK will contain the extended installers. To make installer section available after database refresh, please apply the desired deployable package to the environment after database refresh.
