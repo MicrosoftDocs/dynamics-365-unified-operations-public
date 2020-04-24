@@ -43,6 +43,8 @@ Use the information in this topic to do single-user testing by using Visual Stud
 ## Prerequisites
 
 To complete the steps in this topic, you must have a development environment that has Platform update 21 or later.
+> [!IMPORTANT]
+> Your development must be in Platform Update 35 or above if your Finance and Operations apps were deployed in 21Vianet.
 
 ## Use Task recorder to define and record an end-to-end business scenario
 
@@ -75,7 +77,7 @@ Before you run a single-user test, you must work with your business team to defi
 
     [![New PerfSDK folder](./media/single-user-test-03.png)](./media/single-user-test-03.png)
 
-5. Copy the following files, and save them to the folder that you created in the previous step:
+5. Copy the following files, and save them to the folder **Common\\External\\Selenium** you created in the previous step:
 
     - IEDriverServer.exe from the unzipped IEDriverServer\_Win32\_3.13.0.zip file
     - WebDriver.dll and WebDriver.xml from the lib\\net45 folder in the unzipped Selenium.WebDriver.StrongNamed.3.13.1.zip file
@@ -86,7 +88,7 @@ Before you run a single-user test, you must work with your business team to defi
 When you've finished recording the end-to-end scenario, you must generate a C\# performance test script that is based the task recording. 
 
 1. In a development environment, open Microsoft Visual Studio as an admin.
-2. From your **PerfSDK** folder, open the **PerfSDKSample** solution. In a tier-1 sandbox or a cloud-hosted-environment, the PerfSDK folder is typically in K:\\PerfSDK\\PerfSDKLocalDirectory.
+2. From your **PerfSDK** folder, open the **PerfSDKSample** solution. In a tier-1 sandbox or a cloud-hosted-environment, the PerfSDK folder is typically in \<Service volumne\>:\\PerfSDK\\PerfSDKLocalDirectory.
 
     [![PerfSDK directory](./media/single-user-test-05.png)](./media/single-user-test-05.png)
 
@@ -111,6 +113,8 @@ When you've finished recording the end-to-end scenario, you must generate a C\# 
 
 1. Update the **CloudEnvironment.config** file of the PerfSDKSample project in the following ways, so that it reflects the configuration of your environment:
 
+    - Verify that **HostName** and **SOAPHostName** match your development environment.
+    - Verify that the **UserName** of **SelfMintingAdminUser** match the admin account of your development environment.
     - In each **AuthenticatorConfiguration** element under the **AuthenticatorConfigurationCollection** element, replace **AadAuthenticator** with **SelfMintedTokenAuthenticator**.
     - Comment out the **AzureActiveDirectoryConfiguration** and **KeyVaultConfigurations** elements.
 
