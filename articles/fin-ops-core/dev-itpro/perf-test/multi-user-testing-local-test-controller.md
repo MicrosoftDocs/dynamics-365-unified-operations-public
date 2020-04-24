@@ -44,6 +44,8 @@ ms.dyn365.ops.version: AX 7.0.0
 Before you complete the steps in this topic, verify that the following prerequisites are met:
 
 - You have a development environment that has Platform update 21 or later in own your Microsoft Azure subscription.
+> [!IMPORTANT]
+> If your Finance and Operations apps were deployed in 21Vianet, the platform update of your environment must be Platform Update 35 or above
 - You have Microsoft Visual Studio 2015 Enterprise edition in a development environment.
 - You have a tier-2 or above sandbox environment that has the same release (application version and platform update) as your development environment.
 - You've configured your development environment by following the steps in [Single-user testing with Task recorder and the Performance SDK](single-user-test-perf-sdk.md).
@@ -128,11 +130,17 @@ Before you complete the steps in this topic, verify that the following prerequis
 3. Update the **CloudEnvironment.config** file to reflect your configurations. As part of this update, follow these steps:
 
     - Verify that **HostName** and **SOAPHostName** match your tier-2 or above sandbox environment.
+    
+    > [!NOTE]
+    > If you don't know the **HostName** or **SOAPHostName** of your test environment, you can find it in the web.config file for the AOS server in **Infrastructure.HostUrl** or **Infrastructure.SoapServicesUrl**.
+    
     - Add the thumbprint of the **authcert.pfx** certificate as a value of **SelfSigningCertificateThumbprint**.
     - Update **UserCount** to reflect the number of test users in your case.
     - Update **UserFormat** to reflect your naming convention for test users.
 
     [![Updated CloudEnvironment.config file](./media/multi-user-test-local-10.png)](./media/multi-user-test-local-10.png)
+
+    - If your Finance and Operations apps were deployed in 21Vianet, please ensure you specify **NetworkDomain="https://sts.chinacloudapi.cn/"** in **SelfMintingSysUser** and **SelfMintingAdminUser**.
 
 4. Configure **vsonline.testsettings**. In the **Test Settings** dialog box, on the **General** tab, in the **Test run Location** field group, select the **Run tests using local computer or a test controller** option.
 
