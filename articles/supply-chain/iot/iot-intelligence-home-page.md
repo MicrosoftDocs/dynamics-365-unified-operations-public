@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: IoT Intelligence core insights home page
+title: IoT Intelligence home page
 description: This topic provides links to information about IoT Intelligence.
 author: robinarh
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.search.validFrom: 2020-04-25
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# Dual-write home page
+# IoT Intelligence home page
 
 [!include [banner](../../includes/banner.md)]
 
