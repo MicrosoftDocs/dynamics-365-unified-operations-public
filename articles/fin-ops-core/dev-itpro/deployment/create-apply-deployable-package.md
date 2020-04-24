@@ -39,6 +39,9 @@ An AOT package is a deployment and compilation unit of one or more models that c
 
 In order to deploy your code and customizations to a runtime environment (Demo, Sandbox or Production), you must create deployable packages of your solution or implementation. Deployable packages can be created using the **Visual Studio dev tools**, or by the **build automation process** that are available on build environments. These deployable packages are referred to as Application Deployable Packages or AOT Deployable Packages. The image below is an overview of the process. Once a deployable package is created, it must be uploaded to the LCS project's asset library. An administrator can then go to the LCS environment page and apply the package to a runtime environment using the **Maintain &gt; Apply updates** tool. 
 
+> [!NOTE]
+> Custom payment connector for Commerce also needs to be packaged using a combined AOT deployable package. Learn more about how to [Package Custom Payment Connector](../../../commerce/dev-itpro/payment-connector-package.md)
+
 ![Create and apply a deployment package](./media/createandapplydeployablepackage.png)
 
 > [!NOTE]
