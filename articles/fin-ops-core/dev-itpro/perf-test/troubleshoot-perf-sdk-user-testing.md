@@ -126,13 +126,15 @@ This issue can occur when you run multi-user tests, or when you create users by 
 
 ### Solution
 
-Two scenarios can cause this error:
+Three scenarios can cause this error:
 
 - The System Administrator role isn't assigned to the user who is specified as **SelfMintingAdminUser** in the CloudEnvironment.config file. To verify that you've specified the correct user, sign in to the endpoint, and view the user's roles.
 
     [![Users page](./media/troubleshoot-perf-sdk-03.jpg)](./media/troubleshoot-perf-sdk-03.jpg)
 
 - The user who is specified as **SelfMintingAdminUser** in the CloudEnvironment.config file has a provider other than `https://sts.windows-ppe.net/` or `https://sts.windows.net/`. Sometimes, a company-specific domain is included in the **Provider** field for the admin user. 
+
+- If your Finance and Operations apps were deployed in 21Vianet, please ensure you specify **NetworkDomain="https://sts.chinacloudapi.cn/"** in **SelfMintingSysUser** and **SelfMintingAdminUser**.
 
 To work around this issue, create a user who has any name and email address. Assign the **System Administrator** role to the new user. You don't have to link the user to a real Microsoft Azure Active Directory (Azure AD) user. Specify this new admin user as **SelfMintingAdminUser** in the CloudEnvironment.config file.
 
@@ -144,7 +146,7 @@ To work around this issue, create a user who has any name and email address. Ass
 
 ### Solution
 
-Two known scenarios can cause this error:
+Three known scenarios can cause this error:
 
 - The test users are created by running MS.Dynamics.Performance.CreateUsers.exe without any arguments. For example, if the CreateUsers script is run without any arguments, the email addresses of test users that are created won't be correctly formatted. If these users are used to run the tests, the tests will generate the forbidden request error. You can verify that this scenario is causing the error by viewing the users. The incorrect email addresses of the test users will resemble the email addresses in the following illustration.
 
@@ -155,6 +157,8 @@ Two known scenarios can cause this error:
 - The number of users that you specify in the **UserCount** field in the CloudEnvironment.Config file exceeds the number of test users that you created by using MS.Dynamics.Performance.CreateUsers.exe. Make sure that you created at least as many test users as you request in the CloudEnvironment.Config file.
 
     [![CloudEnvironment.Config file](./media/troubleshoot-perf-sdk-05.jpg)](./media/troubleshoot-perf-sdk-05.jpg)
+
+- If your Finance and Operations apps were deployed in 21Vianet, please make sure your development and performance testing environments are in Platform Update 35 or above. 
 
 ## At least one security token in the message could not be validated
 
@@ -320,3 +324,21 @@ Replace all instances of **"MS.Dynamics.TestTools.CloudCommonTestUtilities.Authe
 ### Solution
 
 There is no impact, and the messages can be ignored.
+
+## The type or namespace name 'xxxx' could not be found (are you missing a using directive or an assembly reference?)
+
+## Error example
+
+The type or namespace name 'InventTransferOrders' could not be found (are you missing a using directive or an assembly reference?) 
+
+### Solution
+
+The sample solution shipped together with perfSDK was prepared long time back and didn't get updated after packages split. Adding assembly **MS.Dynamics.TestTools.DirectoryProxyLibrary.dll** under \<Service volume\>:\\PerfSDK\\PerfSDKLocalDirectory as a reference to resolve the issue.
+
+## Assembly was built against the ".NETFramework,Version=v4.6" framework
+
+## Error example
+The primary reference "MS.Dynamics.TestTools.ApplicationSuiteProxyLibrary" could not be resolved because it has an indirect dependency on the assembly "MS.Dynamics.TestTools.DirectoryProxyLibrary, Version=7.0.0.0, Culture=neutral, PublicKeyToken=a7cf325ee2c8a9ff" which was built against the ".NETFramework,Version=v4.6" framework. This is a higher version than the currently targeted framework ".NETFramework,Version=v4.5".
+
+### Solution
+Change the **Target framework** property in the properties window of PerfSDKSample to .Net Framework 4.6
