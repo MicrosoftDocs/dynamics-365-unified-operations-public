@@ -57,6 +57,11 @@ following websites:
 
 Before starting work with the electronic invoice functionality, it is
 necessary to fulfil the following settings:
+- [Accounts receivable parameters](/accounts-receivable-parameters).
+- [E-invoice parameters](/e-invoices parameters).
+- [Customers](/customers).
+- [Digital certificate](/digital-certificates).
+- [Destination for xml file utput](/destination-for-xml-file-utput) (optional)
 
 ## Accounts receivable parameters
 
@@ -134,7 +139,7 @@ To be able to support FatturaPA you must perform the following steps:
 
 -   Define Company-level certificates and User-level certificates, as required.
 
-## Destination for output of xml file
+## Destination for xml file utput
 
 If it is necessary to output xml files to specified place (for example, SharePoint folder) when invoices are posting (**Print invoice** option must be set to **Yes**), first set up a document type (**Organization administration \> Document management \> Document types**) and then set up a destination (**Organization administration \> Electronic reporting \> Electronic reporting destination**) (see setting details under the links [Configure document management](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) and [Electronic reporting (ER) destinations](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations)).
 
@@ -164,6 +169,8 @@ In this page list a user can:
 -   Create xml files, digital signature for selected invoices and send them
 
 -   Export the selected invoice to xml file.
+>[NOTE]
+>The system outputs a file to the folder set up on your computer (doesn't use the destination settings).   
 
 -   Overview details of the electronic invoice.
 
