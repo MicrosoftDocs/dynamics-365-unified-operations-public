@@ -1067,7 +1067,7 @@
           href: cost-management/adjust-hand-inventory-cost-values.md
         - name: Tracking running average cost per inventory dimension
           href: cost-management/track-running-average-cost-per-inventory-dimension.md
-    - name: IoT Intelligence core insights
+    - name: IoT Intelligence
       items:
         - name: IoT Intelligence core insights home page
           href: iot/iot-intelligence-home-page.md
