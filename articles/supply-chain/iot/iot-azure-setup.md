@@ -79,14 +79,14 @@ Follow these steps to create an IoT Hub, a Redis cache, and a key vault that is 
 
 The resources are all created now.
 
-## Configure the Azure key vault
+## Configure the Azure resources
 
 To configure the key vault, Redis cache, and Iot hub, follow these steps:
 
 1. Configure the IoT hub.
     1. In your resources, click on the IoT hub resource.
 
-2. Configure the key vault to give the key vault access to the first-party app Id.
+2. Configure the key vault to give the **Microsoft Dynamics ERP Microservices** first-part app Id access to the key vault.
     1. In your resources, click on the key vault resource.
     2. In the left navigation, click **Access policies**.
     3. Click **Add an access policy**.
