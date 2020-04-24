@@ -37,7 +37,7 @@ If you're using a Tier-2 sandbox or production environment that has application 
 This topic describes the steps for initializing Retail Cloud Scale Unit.
 
 > [!IMPORTANT]
-> For existing customers using Retail channel functionality in the cloud, to ensure continued and uninterrupted support for your business, we require that you update your retail channels to use Cloud Scale Unit. New environments deployed without Cloud Scale Unit will no longer recieve quality and service updates for cloud-hosted retail channel components. There is no action required for customers who exclusively use Store Scale Unit.  Contact your Microsoft FastTrack solution architect if you require an extension.
+> For existing customers using retail channel functionality in the cloud, to ensure continued and uninterrupted support for your business, we require that you update your retail channels to use Cloud Scale Unit. New environments deployed without Cloud Scale Unit will no longer recieve quality and service updates for cloud-hosted retail channel components. There is no action required for customers who exclusively use Store Scale Unit.  Contact your Microsoft FastTrack solution architect if you require an extension.
 
 ## Prerequisites
 
