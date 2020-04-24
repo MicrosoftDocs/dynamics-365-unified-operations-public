@@ -5,7 +5,7 @@ title: Breadcrumb module
 description: This topic covers breadcrumb module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 manager: annbe
-ms.date: 04/14/2020
+ms.date: 04/24/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -37,24 +37,35 @@ ms.dyn365.ops.version:
 This topic covers  Breadcrumb module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 
 ## Overview
+Breadcrumb module is used as secondary navigation on site pages. It provides a quick way to navigate to relevant site pages. Its most commonly used on product details page to show the product category heirarchy. This helps a user quickly navigate and find relevant products within the category heirarchy of the product or category they are viewing. It can also be used to show a Back to results option when the the user navigated to a product details page from a search or a list page. This helps the user go quickly go back to their fitlered list page to continue their shopping journey.
 
+The breadcrumb can also be used on any other page with a curated list of breadcrumb links, e.g. on an Account management page.
 
+Below is an example of breadcrumb on product details page showing the category heirarchy
+![Example of a breadcrumb module](./media/ecommerce-breadcrumb1.PNG)
 
-## Examples of content block module in e-Commerce
+Below is an example of breadcrumb on product details page showing the back to results.
+![Example of a breadcrumb module](./media/ecommerce-breadcrumb2.PNG)
 
+Below is an example of breadcrumb on the Account management page showing the curated set of links.
+![Example of a breadcrumb module](./media/ecommerce-breadcrumb3.PNG)
 
-![Example of a hero module](./media/Hero.PNG)
+## Module overview
+Breadcrumb is a module that can be added to any page. Its typically showcased on the top of the page below the header.
+
+On Product details pages, it relies on the following **Breadcrumb display type on PDP** site settings defined in **Site Settings\Extensions**.
+
+**Show category heirarchy only** - When this setting is applied, breadcrumb will show the full category heirarchy of the viewed product on the product details page.
+**Show back to results only** - When this setting is applied, breadcrumb will show a back to results link on the PDP if the user navigated to the PDP from a module that allows back to results. Typically when a user navigates from a Category page or a Search page to a PDP, some retailers show back to results instead of category heirarchy. However, this could be applicable for list pages and recommendation lists as well. To support this scenario, **Product collection** and **Search results** modules have a module property called **Allow back to results on PDP**. This provides the flexibiltiy to define which scenarios should support the back to results on the PDP.  E.g. Turn on this site setting and on the search results module for Search page turn on the "Allow back to results on PDP". When these two settings are on, if a user navigates from search page to a PDP, the back to results is shown.  If a user navigates to a PDP from a recommendation list in this case, back to results will not be shown, instead it will fallback to category heirarchy. By providing this additional flexibility in the module, the site author can decide which scenarios should support back to results.  
+**Show category heirarchy and back to results** - This setting is a combination of the above two. When this setting is applied, breadcrumb will show the full category heirarchy and back to results on the PDP. 
 
 
 ## Breadcrumb module properties
 
 | Property name  | Values | Description |
 |----------------|--------|-------------|
-| Image          | Image file | An image can be used to showcase a product or a promotion. An image can be uploaded to the image gallery, or an existing image can be used. |
-| Heading        | Heading text and heading tag (**H1**, **H2**, **H3**, **H4**, **H5**, or **H6**) | Every hero module can have a heading. By default, the **H2** heading tag is used for the heading. However, the tag can be changed to meet accessibility requirements. |
-| Paragraph      | Paragraph text | Hero modules support paragraph text in rich text format. Some basic rich text capabilities are supported, such as bold, underlined, and italic text, and hyperlinks. Some of these capabilities can be overridden by the page theme that is applied to the module. |
-| Link           | Link text, link URL, Accessible Rich Internet Applications (ARIA) label, and **Open link in new tab** | Hero modules support one or more "call to action" links. If a link is added, link text, a URL, and an ARIA label are required. ARIA labels should be descriptive to meet accessibility requirements. Links can be configured so that they are opened on a new tab. |
-
+| Root          | Link| A root can be defined for the breadcrumb, E.g. Home, Storefront etc. Its an optional field, if not configured the root will be the category heirarchy or none|
+| Breadcrumb link  | Link | If a page needs a manually configured breadcrumb, the links can defined via this link property. The links appear in the order they are added.|
 ## Add a breadcrumb module to a new page
 
 To add a hero module to a new page and set the required properties, follow these steps.
