@@ -65,7 +65,7 @@ files for Sales and Free text invoices, Sales and Free text credit notes,
 Project invoice, Project credit notes (**Accounts receivable \> Setup \>
 Accounts receivable parameters**, **Electronic documents** tab).
 
-![Accounts receivable parameters](/media/emea-ita-electronic-invocies-AR-parameter-e-invoices.png)
+![Accounts receivable parameters](media/emea-ita-electronic-invocies-AR-parameter-e-invoices.png)
 
  > [!NOTE] 
  > It is necessary to import the configurations before their selection.
@@ -88,7 +88,7 @@ and transmission number.
 The system uses this field value for defining the type of communication (B2G or B2B). If the length of this value is 6 then the customer will be considered as public administration (Transmission Format is **FPA12**) and if the length of this value is 7 then this customer will be considered as private companies or professionals (Transmission Format is **FPR12**). 
 In these both cases the system fills in the CodiceDestinatario tag (xml file) with this field value.
 
-![](media/0c7bf0e30d7c567b33f1239539d4c3a0.png)
+![Authority office](media/emea-ita-electronic-invocies-customer-authority-office)
 
 If **Authority office** field value is empty, the system considers a customer as a private company or professional (Transmission Format is **FPR12**) and fills in the CodiceDestinatario tag (xml file) with **0000000**.
 
@@ -101,24 +101,24 @@ To do this:
 
 Use **Applicability** button and fill in CustTable in the **Table name** field
 
-![](media/9682e5f4c1e943f95fd4d8394aa4a574.png)
+![electronic document property types](media/emea-ita-electronic-invocies-electronic-document-property-types)
+
 
 - After this setting it is possible to fill in **Electronic document properties**
 for a customer (**Accounts receivable \> Customers \> All customers, Customer**
-tab, **Properties**). Fill in **Value** field. The system fills in the
-**PECDestinatario** tag with this value.
+tab, **Properties**). Fill in **Value** field. The system fills in the **PECDestinatario** tag with this value.
 ### Activate automatic creation of e-invoices  
 **Accounts receivable \> Customers \> All customers,** open a customer in **Edit** mode**, Invoice and delivery** FastTab, **E-INVOICE** field group, **eInvoice registe** option.
 If this option is set to **Yes**, the system automatically creates the record in **Electronic customer invoices** page list (see Overview of electronic invoices page).
 
-![](media/e4b1537f04c5879042ccee49f204549b.png)
+![E-invoice activation](media/emea-ita-electronic-invocies-customer-e-invoice)
 
 ## Digital Certificates
 
 Open **Accounts receivable \> Setup \> Electronic invoice digital certificates**
 This functionality can perform electronic singing of e-Invoices by using either **Company** certificate or **User** certificate.
 
-![](media/2ebc2d6ff94ecfac79495f941a250f3b.png)
+![digital certificate](media/emea-ita-electronic-invocies-certificate)
 
 Each [FatturaPA file](http://www.fatturapa.gov.it/export/fatturazione/en/b-2.htm) that is transmitted to the [Exchange System](http://www.fatturapa.gov.it/export/fatturazione/en/sdi.htm) must be signed by using a qualified signature certificate by the party that is issuing the invoice.  
 A qualified signature certificate may be obtained from one of the certifiers in the [list of authorized certifiers](http://www.digitpa.gov.it/firma-digitale/certificatori-accreditati).  
@@ -145,11 +145,11 @@ Example of setup:
 
 - Document type:
 
-![](media/8135efc23a86ab6e3cce18968f51bbc6.png)
+![Document type](media/emea-ita-electronic-invocies-document-type)
 
 - Destination for Sales invoice (IT) format:
 
-![](media/878f926d89de95507701ba1fcd20e983.png)
+![Destination](media/emea-ita-electronic-invocies-destination)
 
 ## Overview of electronic invoices page 
 
