@@ -65,7 +65,7 @@ files for Sales and Free text invoices, Sales and Free text credit notes,
 Project invoice, Project credit notes (**Accounts receivable \> Setup \>
 Accounts receivable parameters**, **Electronic documents** tab).
 
-![Accounts receivable parameters](/v-oloski-patch-2/articles/finance/localizations/media/emea-ita-electronic-invocies-AR-parameter-e-invoices.png)
+![Accounts receivable parameters](/media/emea-ita-electronic-invocies-AR-parameter-e-invoices.png)
 
  > [!NOTE] 
  > It is necessary to import the configurations before their selection.
