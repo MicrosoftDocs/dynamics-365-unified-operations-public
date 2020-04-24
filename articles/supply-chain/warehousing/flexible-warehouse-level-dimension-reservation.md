@@ -42,7 +42,7 @@ This topic describes the inventory reservation policy that lets these businesses
 
 ## Inventory reservation hierarchy
 
-This section summarizes the existing inventory reservation hierarchy. It focuses on the way that batch-tracked and serial-tracked items are handled.
+This section summarizes the existing inventory reservation hierarchy.
 
 The inventory reservation hierarchy dictates that, as far as storage dimensions are concerned, the demand order carries the mandatory dimensions of site, warehouse, and inventory status, whereas the warehouse logic is responsible for assigning a location to the requested quantities and reserving the location. In other words, in the interactions between the demand order and the warehouse operations, the demand order is expected to indicate where the order must be shipped from (that is, what site and warehouse). The warehouse then relies on its logic to find the required quantity in the warehouse premises.
 
@@ -213,12 +213,16 @@ Like for specific batch reservation case, to enable license plate reservation on
 
 ![Flexible LP reservation hierarchy](media/Flexible-LP-reservation-hierarchy.png)
 
-You can enable license plate reservation on the order at any point in your deployment. This change won’t affect any reservations and open warehouse work that were created before the change occurred. However, the **Allow reservation on demand order** check box can’t be cleared if inventory transactions of the **Reserved ordered**, **Reserved physical**, or **Ordered** issue type exist for one or more items that are associated with that reservation hierarchy.
+You can enable license plate reservation on the order at any point in your deployment. This change won’t affect any reservations and open warehouse work that were created before the change occurred. However, the **Allow reservation on demand order** check box can’t be cleared if open outbound inventory transactions with an "Issue" status of **On order**, **Reserved ordered**, or **Reserved physical** exist for one or more items that are associated with that reservation hierarchy.
 
 Even if the **Allow reservation on demand order** check box is selected for the **License plate** level, it is still possible not to reserve specific license plate on the order. In this case, default warehouse operations logic that is valid for reservation hierarchy will apply.
 
-To reserve a specific license plate, you must use **Order-committed reservations per license plate** option of the **Open in Excel** experience. In the opened entity data in Excel add-in, you need to enter following reservation related data and press Publish to send data back to D365: 
+To reserve a specific license plate, you must use an **Open data protocol (OData)**<!-- link to get corrected!-->
+https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/odata
+process. This can be achieved directly in the application from a sales order via the **Order-committed reservations per license plate** option of the **Open in Excel** experience. In the opened entity data in Excel add-in, you need to enter following reservation related data and press Publish to send data back to D365:
 
+- Reference (Only *Sales order* is supported)
+- Order number (Can get derived from the lot)
 - Lot ID
 - License plate
 - Quantity
@@ -227,7 +231,7 @@ If you need to reserve specific license plate for a batch-tracked item, you may 
 
 When the sales order line that uses order-committed license plate reservation is being processed by warehouse operations, location directives aren’t used.
 
-If a warehouse work consists of lines that form a complete pallet and have license plate committed quantities, it is possible to optimize a picking process by using a mobile device menu item with **Handle by license plate** check box turned on. This option allows a warehouse worker to scan a license plate to complete a pick instead of scanning all the items from the work one by one.
+If a warehouse work consists of lines that equal a complete pallet and have license plate committed quantities, it is possible to optimize a picking process by using a mobile device menu item with **Handle by license plate** check box turned on. This option allows a warehouse worker to scan a license plate to complete a pick instead of scanning all the items from the work one by one.
 
 ![Flexible LP reservation hierarchy](media/Handle-by-LP-menu-item.png)
 
@@ -357,7 +361,8 @@ This scenario describes how to set up and process order-committed license plate 
 1. On the mobile device, finish picking and putting the work using menu item with **Handle by license plate** check box turned on.
 
     > [!NOTE]
-    > **Handle by license plate** option helps you to process entire license plate. If you need to process part of the license plate, it is not possible to use this option. 
+    > **Handle by license plate** option helps you to process entire license plate. If you need to process part of the license plate, it is not possible to use this option.
+    <!--Add INFO about breaking work template per LP-->
 
     The license plate **LP02** is now picked for sales order lines and put in the **Baydoor** location. At this point, it’s ready to be loaded and dispatched to the customer.
 
