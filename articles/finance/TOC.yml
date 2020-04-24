@@ -2022,6 +2022,8 @@
           href: localizations/emea-ita-exil-unique-certification.md
         - name: Bills of exchange protest import
           href: localizations/emea-ita-exil-protest-boe.md
+        - name: Tax plafond
+          href: localizations/emea-ita-exil-tax-plafond.md
       - name: Japan
         items:
         - name: Japan overview
