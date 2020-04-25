@@ -53,7 +53,7 @@ Below is an example of breadcrumb on the Account management page showing the cur
 ## Module overview
 Breadcrumb is a module that can be added to any page. Its typically showcased on the top of the page below the header.
 
-On pages that have product category context such as PDP and Category page, breadcrumb can show the category heirarchy. In addtion, the breadcrumb can be manually configured to show links to specific pages within the site.
+On pages that have product category context such as PDP and Category page, breadcrumb can show the category heirarchy. If a page does not have category context, it wil default to show "<Root>\<Current page>".  In addtion, the breadcrumb can be manually configured to show links to specific pages within the site.
 
 On Product details page, there are some behavior variations that breadcrumb supports. In some cases retailers may want to show a **back to results** link instead of product heirarchy, e.g. if a user navigated to a pdp from a search or category page.  This can be acheived using this breadcrumb module.
 
@@ -76,33 +76,28 @@ The module relies on a site setting called **Breadcrumb display type on PDP** wh
 
 ## Add a breadcrumb module to a new page
 
-To add a hero module to a new page and set the required properties, follow these steps.
+To add a breadcrumb module to a PDP and set the required properties, follow these steps.
 
-1. Go to **Templates**, and create a page template that is named **Content block template**.
-1. In the **Main** slot of the default page, add a hero module.
+1. Go to Site settings/Extension and choose a **Breadcrumb style for PDP**. In this e.g. lets choose "Category heirarchy only" type
+1. Go to **Templates**, and choose the PDP template 
+1. In the Container for the Buy Box, add the Breadcrumb module. 
 1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.
-1. Use the hero template that you just created to create a page that is named **Content block page**.
-1. In the **Main** slot of the default page, select the ellipsis button (**...**), and then select **Add Module**.
-1. In the **Add Module** dialog box, under **Select Modules**, select the hero module, and then select **OK**.
-1. In the outline tree on the left, select the content block module.
-1. In the properties pane on the right, select **Add an image**. Then either select an existing image or upload a new image.
-1. Select **Heading**.
-1. In the **Heading** dialog box, add the heading text, select the heading level, and then select **OK**.
-1. Under **Rich Text**, add text as you require.
-1. Select **Add Link**.
-1. In the **Link** dialog box, add link text, a link URL, and an ARIA label for the link, and then select **OK**.
-1. Select the **Hero** layout.
+1. If you have a page for PDP, open the page or create a new page for PDP
+1. In the **Container** for the BuyBox, add a module
+1. In the **Add Module** dialog box, under **Select Modules**, select the Breadcrumb module, and then select **OK**.
+1. In the outline tree on the left, select the Breadcrumb module
+1. In the properties pane on the right, select a Root, define root as the **Home** page
 1. Select **Save**, and then select **Preview** to preview the page.
 1. Select **Finish editing** to check in the template, and then select **Publish** to publish it. 
+
 
 ## Additional resources
 
 [Starter kit overview](starter-kit-overview.md)
 
-[Promo banner module](add-alert.md)
+[Search results](category-search-page-overview.mdt.md)
 
-[Carousel module](add-carousel.md)
+[Product collection](product-collection-module-overview.md)
 
-[Text block module](add-content-rich-block.md)
+[Buy box](add-buy-box.md)
 
-[Video player module](add-video-player.md)
