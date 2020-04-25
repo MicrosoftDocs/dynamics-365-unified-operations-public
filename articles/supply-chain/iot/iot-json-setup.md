@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: JSON formats for IoT Intelligence core insights
-description: This topic describes how you should format your IoT JSON messages for use in IoT Intelligence core insights.
+title: Message schema formats for IoT Hub
+description: This topic describes how you should design your message schema for use in IoT Intelligence.
 author: robinarh
 manager: AnnBe
 ms.date: 04/25/2020
@@ -28,10 +28,10 @@ ms.search.validFrom: 2020-04-25
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# JSON formats for IoT Intelligence core insights
+# Message schema formats for IoT Hub
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how you should format your IoT JSON messages for use in IoT Intelligence core insights.
+This topic describes how you should design your message schema for use in IoT Intelligence.
 
 For more information, see [Azure IoT Hub Documentation](https://docs.microsoft.com/azure/iot-hub/).

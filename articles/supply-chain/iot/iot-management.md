@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Managing IoT Intelligence core insights
-description: This topic describes how to view the message stream, and modify and uninstall core insights.
+title: Monitor and manage IoT Intelligence
+description: This topic describes how to view the monitor and manage IoT Intelligence.
 author: robinarh
 manager: AnnBe
 ms.date: 08/16/2019
@@ -29,41 +29,41 @@ ms.dyn365.ops.version: 10.0.5
 
 ---
 
-# Managing IoT Intelligence core insights
+# Managing IoT Intelligence
 
 [!include [banner](../../includes/banner.md)]
 
-## How to view the monitors in Supply Chain Management
+This topic describes how to view the monitor and manage IoT Intelligence.
 
-There are several ways to view the messages processed in the scenario in Supply Chain Management:
+## How monitor scenarios in Dynamics 365 Supply Chain Management
 
-+ **Production control \> Inquiries and reports \> IoT Intelligence \> Notifications**. Here you can see the list of unresolved notifications. A notification is generated when a machine is down.
-+ **Production control \> Inquiries and reports \> IoT Intelligence \> Closed notifications**. Here you can see the notifications that have been resolved.
-+ **Production control \> Inquiries and reports \> IoT Intelligence \> Metric keys**. Here you can see a times series graph for each machine that you're processing.
-+ **Production control \> Manufacturing execution \> Resource status**. You can configure this page to track specific machines using the **Configure** dialog. As messages are processed a graph is produced showing the parts produced. This page displays an error message if a machine is down, and there are buttons to resolve or dismiss the error message.
-+ **Production control \> Setup \> IoT Intelligence \> Scenario parameters**. Click **Equipment downtime** to see all the machines that are available.
+There are several places to monitor IoT Intelligence processing:
 
-## How to disable a scenario
-
-In Supply Chain Management, run the **Equipment downtime** configuration wizard, and disable the scenario.
-
-## How to uninstall the add-in
-
-1. In Supply Chain Management, run the **Equipment downtime** configuration wizard, and disable the scenario.
-2. In LCS, uninstall the add-in.
++ **Production control \> Inquiries and reports \> IoT Intelligence \> Notifications**. Here you can see the list of unresolved notifications.
++ **Production control \> Inquiries and reports \> IoT Intelligence \> Closed notifications**. Here you can see the notifications that have been resolved or dismissed.
++ **Production control \> Inquiries and reports \> IoT Intelligence \> Metric keys**. Here you can see the metric keys for the Resource Status times series graphs.
++ **Production control \> Manufacturing execution \> Resource status**. You can configure this page to track specific metrics using the **Configure** dialog. If a scenario detects an exception, a notification with the exception details will appear.
++ **Production control \> Setup \> IoT Intelligence \> Scenario parameters**. Click **Equipment downtime** to see all the machines that are available. Also, you can update the redis cache connection string and update scenario threshold values.
 
 ## Modify a running IoT Intelligence scenario
 
-List what can and cannot be updated while the scenario is running
+When a scenario is running, you can make this modifications:
+
++ Add new sensor schema definitions.
++ Select new signal data values to process.
++ Unselect existing new signal data values.
++ Add and map new signal data values.
++ Update threshold values.
+
+When a scenario is running, these modifications are prohibited:
+
++ Delete or modify any schema definitions currently consumed by an enabled scenario.
++ Change the enabled scenario's selected schema paths.
 
 ## Simulation options
 
-+ Setup IoT solutions to simulate factory machine signals:
-    + https://docs.microsoft.com/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started
-    + https://docs.microsoft.com/azure/iot-accelerators/quickstart-device-simulation-deploy
-    + https://docs.microsoft.com/azure/iot-accelerators/iot-accelerators-device-simulation-create-simulation
-    + https://docs.microsoft.com/azure/iot-accelerators/iot-accelerators-device-simulation-overview
+You can simulate factory machine signals. For more information, see these topics:
 
-+ Setup a MxChip to simulate a factory machine signal:
-    + https://docs.microsoft.com/azure/iot-central/core/quick-create-simulated-device
-    + https://docs.microsoft.com/azure/iot-hub/iot-hub-arduino-iot-devkit-az3166-translator
++ [Connect IoT DevKit AZ3166 to Azure IoT Hub](https://docs.microsoft.com/azure/iot-hub/iot-hub-arduino-iot-devkit-az3166-get-started)
++ [Connect Raspberry Pi online simulator to Azure IoT Hub (Node.js)](https://docs.microsoft.com/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started)
++ [Device Simulation solution accelerator overview](https://docs.microsoft.com/azure/iot-accelerators/iot-accelerators-device-simulation-overview)

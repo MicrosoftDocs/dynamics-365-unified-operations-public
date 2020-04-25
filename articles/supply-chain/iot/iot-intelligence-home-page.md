@@ -32,22 +32,24 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-IoT Intelligence is an add-in for Microsoft Dynamics 365 Supply Chain Management that integrates IoT signals from machinery with business transactions (for example, inventory and quality) to enable manufacturers and distributors to manage production and stock in real time. IoT Intelligence supports the following core insights and action scenarios:
+> [!IMPORTANT]
+> **Availability**<br>Not available for Dynamics 365 Finance and Operations apps operated by 21Vianet in China.
 
-+ **Delayed orders** : Provides notification services and actions for managing delayed production orders. Displays impacted operations. Provides users with the ability to define order-delay metrics for combinations of resources and products, and notifies users when exceptions to these thresholds occur. Enables users to take relevant business actions for delayed orders, including the ability to view impact or create a maintenance request.
-+ **Equipment down**: Provides notification services and actions for managing equipment-down scenarios. Displays impacted operations. Provides users with the ability to define metrics for machine-down thresholds and notifies users when an exception to these thresholds occurs. Enables users to take relevant business actions for delayed orders, including the ability to view impact or create a maintenance work order.
-+ **Quality anomaly**: Provides notification services and actions for managing quality anomalies. Provides users with the ability to define quality attributes for products and get notified when exceptions to these attributes occur.
+IoT Intelligence is an add-in for Microsoft Dynamics 365 Supply Chain Management that integrates IoT signals from machinery with business transactions (for example, inventory and quality) to enable manufacturers and distributors to manage production and stock in real time. IoT Intelligence supports the following scenarios:
+
++ **Production delays** : Provides notification services and actions for managing delayed production orders. Displays impacted operations. Provides users with the ability to define order-delay metrics for combinations of resources and products, and notifies users when exceptions to these thresholds occur. Enables users to take relevant business actions for delayed orders, including the ability to view impact or create a maintenance request.
++ **Equipment downtime**: Provides notification services and actions for managing equipment-down scenarios. Displays impacted operations. Provides users with the ability to define metrics for machine-down thresholds and notifies users when an exception to these thresholds occurs. Enables users to take relevant business actions for delayed orders, including the ability to view impact or create a maintenance work order.
++ **Product quality**: Provides notification services and actions for managing quality anomalies. Provides users with the ability to define quality attributes for products and get notified when exceptions to these attributes occur.
 
 ## Setup
 
-You can setup and configure core insights without writing any code. The basic steps in setup are:
+You can setup and configure IoT Intelligence without writing any code. The basic steps in setup are:
 
-+ [JSON formats for IoT Intelligence core insights](iot-json-setup.md): Configure your devices to send telemetry to IoT Hub, and define the JSON message format.
-+ [Azure setup for IoT Intelligence core insights](iot-azure-setup.md): Create an Azure key vault with an IoT hub and a Redis cache.
-+ [LCS setup for IoT Intelligence core insights](iot-lcs-setup.md): Install the add-in in Lifecycle Services (LCS), and configure the Azure secrets.
-+ [](): Create a OneBox environment, and give the appropriate SQL users access to environment for IoT Intelligence.
-+ [Scenario setup for IoT Intelligence core insights](iot-scenario-setup.md): Setup the scenarios in Supply Chain Management.
-+ [Metrics setup for IoT Intelligence core insights](iot-metrics-setup.md): Setup metrics in Supply Chain Management.
+1. [Message schema formats for IoT Hub](iot-json-setup.md): Configure your devices to send telemetry to IoT Hub, and define the JSON message format.
+2. [Azure setup for IoT Intelligence](iot-azure-setup.md): Create an Azure key vault with an IoT hub and a Redis cache.
+3. [LCS setup for IoT Intelligence](iot-lcs-setup.md): Install the add-in in Lifecycle Services (LCS), and configure the Azure secrets.
+4. [Scenario setup for IoT Intelligence](iot-scenario-setup.md): Setup the scenarios in Supply Chain Management.
+5. [Metrics setup for IoT Intelligence](iot-metrics-setup.md): Setup metrics in Supply Chain Management.
 
 ## Tracking and maintenance
 

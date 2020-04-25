@@ -1069,19 +1069,19 @@
           href: cost-management/track-running-average-cost-per-inventory-dimension.md
     - name: IoT Intelligence
       items:
-        - name: IoT Intelligence core insights home page
+        - name: IoT Intelligence home page
           href: iot/iot-intelligence-home-page.md
-        - name: JSON formats for IoT Intelligence core insights
+        - name: Message schema formats for IoT Hub
           href: iot/iot-json-setup.md
-        - name: Azure setup for IoT Intelligence core insights
+        - name: Azure setup
           href: iot/iot-azure-setup.md
-        - name: LCS setup for IoT Intelligence core insights
+        - name: Install the add-in in LCS
           href: iot/iot-lcs-setup.md
-        - name: Scenario setup for IoT Intelligence core insights
+        - name: Scenario setup
           href: iot/iot-scenario-setup.md
-        - name: Metrics setup for IoT Intelligence core insights
+        - name: Metrics setup
           href: iot/iot-metrics-setup.md
-        - name: Managing IoT Intelligence core insights
+        - name: Managing IoT Intelligence
           href: iot/iot-management.md    
     - name: Master planning
       items:
