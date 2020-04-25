@@ -37,9 +37,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 IoT Intelligence is an add-in for Microsoft Dynamics 365 Supply Chain Management that integrates IoT signals from machinery with business transactions (for example, inventory and quality) to enable manufacturers and distributors to manage production and stock in real time. IoT Intelligence supports the following scenarios:
 
-+ **Production delays** : Provides notification services and actions for managing delayed production orders. Displays impacted operations. Provides users with the ability to define order-delay metrics for combinations of resources and products, and notifies users when exceptions to these thresholds occur. Enables users to take relevant business actions for delayed orders, including the ability to view impact or create a maintenance request.
-+ **Equipment downtime**: Provides notification services and actions for managing equipment-down scenarios. Displays impacted operations. Provides users with the ability to define metrics for machine-down thresholds and notifies users when an exception to these thresholds occurs. Enables users to take relevant business actions for delayed orders, including the ability to view impact or create a maintenance work order.
-+ **Product quality**: Provides notification services and actions for managing quality anomalies. Provides users with the ability to define quality attributes for products and get notified when exceptions to these attributes occur.
++ **Production delays** : This scenario compares measured cycle time to planned cycle time. Supply Chain Management notifies you when production is not on schedule so that you can take actions to maximize operating efficiency and avoid order delays.
++ **Equipment downtime**: This scenario compares measured uptime to user-defined parameters. Supply Chain Management notifies you when out outage threshold is exceeded so that you can take actions like rescheduling a production work order or creating a maintenance work order.
++ **Product quality**: This scenario compares sensor readings, like moisture and temperature, to user-defined quality metrics. Supply Chain Management notifies you when a deviation occurs so that you can take actions to maintain quality standards and minimize waste.
 
 ## Setup
 
