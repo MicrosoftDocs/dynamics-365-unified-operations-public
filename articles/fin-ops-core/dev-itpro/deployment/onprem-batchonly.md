@@ -24,7 +24,7 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: osfaixat
 ms.search.validFrom: 2020-04-30 
-ms.dyn365.ops.version: Platform update 35 
+ms.dyn365.ops.version: Platform update 36 
 
 ---
 
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 35
 [!include [banner](../includes/preview-banner.md)]
 
 > [!IMPORTANT]
-> This feature is supported starting in application update 10.0.11, Platform update 35.
+> This feature is supported starting in application update 10.0.12, Platform update 36.
 
 This topic explains how to configure your environment so that you can deploy Batch-only and Interactive-only Application Object Server (AOS) nodes.
 
@@ -217,3 +217,9 @@ For production environments, there should be at least three nodes of each type.
     ```powershell
     Get-ServiceFabricClusterUpgrade
     ```
+
+12. Once the upgrade is finished from LCS use the Update Settings button without changing any settings to trigger an environment refresh. Alternatively you could also apply the latest hotfix.
+
+     > [!IMPORTANT]
+    > This step causes downtime so be sure that your environment can be unavailable for some time. 
+
