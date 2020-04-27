@@ -5,7 +5,7 @@ title: Checkout module
 description: This topic describes how to add a checkout module to a page and set the required properties.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 05/25/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -40,7 +40,10 @@ This topic describes how to add a checkout module to a page and set the required
 
 A checkout module is a special container that hosts all modules that are required to create an order. It presents a step-by-step flow that a customer uses to enter all the relevant information to make a purchase. It captures the shipping address, shipping method, and billing information. It also provides an order summary and other information that is related to a customer order.
 
-A checkout module renders data based on the cart ID. This cart ID is saved as a browser cookie. A cart ID is required to render information in the checkout module, such as the items in the order, the total amount, and discounts. Below is an example of Checkout page in Fabrikam showcasing all the modules.
+A checkout module renders data based on the cart ID. This cart ID is saved as a browser cookie. A cart ID is required to render information in the checkout module, such as the items in the order, the total amount, and discounts. 
+
+The following image shows an example of a Fabrikam checkout module on a checkout page.
+
 ![Example of a checkout module](./media/Checkout.PNG)
 
 ## Checkout module properties
@@ -50,9 +53,15 @@ A checkout module shows an order summary and provides the functionality for plac
 ### Modules that can be used in the checkout module
 
 - **Shipping address** – This module lets a customer add or select the shipping address for an order. If the customer is signed in, any addresses that were previously saved for that customer are shown. The customer can then select among those addresses. The customer can also add a new address. The shipping address is used for all the items in the order that require shipping. It can't be customized for individual line items. Shipping address formats are defined for each country or region, and the country/region-specific rules are enforced by this module. Although this module doesn't provide address validation, address validation can be implemented through customization. If the order includes only items that will be picked up in the store, this module is automatically hidden.
+
+The following image shows an example of a shipping address module on a checkout page.
+
 ![Example of a shipping address module](./media/ecommerce-shippingaddress.PNG)
 
 - **Delivery options** – This module lets a customer select a delivery option for an order. Delivery options are based on the shipping address. If the shipping address is changed, the delivery options must be retrieved again. If the order includes only items that will be picked up in the store, this module is automatically hidden.
+
+The following image shows an example of a delivery options module on a checkout page.
+
 ![Example of a delivery options module](./media/ecommerce-deliveryoptions.PNG)
 
 - **Checkout section container** – This module is a container that you can put multiple modules inside to create a section within the checkout flow. For example, you can put all payment-related modules inside this container to make them appear as one section. This module affects only the layout of the flow.
@@ -61,8 +70,13 @@ A checkout module shows an order summary and provides the functionality for plac
 - **Payment** – This module lets a customer pay for an order by using a credit card. If the total amount in the cart is covered by loyalty points or a gift card, or if it's 0 (zero), this module is automatically hidden. Credit card integration is provided by the Adyen payment connector for this module. For more information about how to use this connector, see [Dynamics 365 Payment Connector for Adyen](dev-itpro/adyen-connector.md).
 - **Billing address** – This module lets a customer provide billing information. This information is processed, together with the credit card information, by Adyen. This module includes an option that lets customers use their billing address as the shipping address.
 ecommerce-payments
+
 Below is an example of all gift card, loyalty, Payment and Billing address modules
-![Example of a payments ](./media/ecommerce-payments.PNG)
+
+The following image shows an example of gift card, loyalty, payment, and billing address modules on a checkout page.
+
+![Example of a gift card, loyalty, payment, and billing address modules](./media/ecommerce-payments.PNG)
+
 - **Contact information** – This module lets a customer add or change the contact information (email address) for an order.
 
 - **Text block** – This module contains any messaging that is driven by the content management system (CMS). For example, it might contain a message that states, "For issues with your order, contact 1-800-Fabrikam." 
