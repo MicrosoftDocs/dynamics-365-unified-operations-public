@@ -94,13 +94,13 @@ The following sections define and describe the aspects of backward compatibility
 
 All new updates are intended to be runtime backward-compatible. This compatibility covers both binary compatibility and functional compatibility. Runtime compatibility means that customizations that exist in production and sandbox environments will continue to work after new updates are deployed in those environments. These updates include both service updates and quality updates.
 
-Runtime compatibility also means that Microsoft changes to the platform will be backward-compatible with customizations that were compiled on an earlier platform.
+Runtime compatibility also means that changes made by Microsoft to the platform will be backward-compatible with customizations that were compiled on an earlier platform.
 
 Binary compatibility is backwards only. You can compile a customization on an older platform, and deploy it to a customer environment that has been updated to a later version. You cannot deploy code compiled on a later version than the one running on the environment you deploy to.
 
 ### Design-time compatibility
 
-Design-time backward compatibility (aka compile-time compatibility) means that developers can apply updates to their development environments and successfully compile their code without having to make any changes.
+Design-time backward compatibility (that is, compile-time compatibility) means that developers can apply updates to their development environments and successfully compile their code without having to make any changes.
 
 You must be aware of how APIs in your solution are used in your customers' implementations, and how you can use these APIs without causing breaking changes. As part of this effort, you must pay careful attention to what is changed and rely on engineering best practices. For examples of changes that you should avoid, see [Breaking changes](../extensibility/breaking-changes.md).
 
