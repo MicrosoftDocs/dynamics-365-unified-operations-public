@@ -217,9 +217,7 @@ You can enable license plate reservation on the order at any point in your deplo
 
 Even if the **Allow reservation on demand order** check box is selected for the **License plate** level, it is still possible not to reserve specific license plate on the order. In this case, default warehouse operations logic that is valid for reservation hierarchy will apply.
 
-To reserve a specific license plate, you must use an **Open data protocol (OData)**<!-- link to get corrected!-->
-https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/odata
-process. This can be achieved directly in the application from a sales order via the **Order-committed reservations per license plate** option of the **Open in Excel** experience. In the opened entity data in Excel add-in, you need to enter following reservation related data and press Publish to send data back to D365:
+To reserve a specific license plate, you must use an [**Open data protocol (OData)**](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/odata) process. This can be achieved directly in the application from a sales order via the **Order-committed reservations per license plate** option of the **Open in Excel** experience. In the opened entity data in Excel add-in, you need to enter following reservation related data and press Publish to send data back to D365:
 
 - Reference (Only *Sales order* is supported)
 - Order number (Can get derived from the lot)
@@ -235,7 +233,7 @@ If a warehouse work consists of lines that equal a complete pallet and have lice
 
 ![Flexible LP reservation hierarchy](media/Handle-by-LP-menu-item.png)
 
-Since Handle by license plate functionality does not support a case when a work covers several pallets, it is preferable to have a separate work for different license plates. To approach this, add **Order-committed license plate id** field as a work header break on the **Work template** page.
+Since **Handle by license plate** functionality does not support a case when a work covers several pallets, it is preferable to have a separate work for different license plates. To approach this, add **Order-committed license plate id** field as a work header break on the **Work template** page.
 
 ## Example scenario 2
 
@@ -362,8 +360,9 @@ This scenario describes how to set up and process order-committed license plate 
 
     > [!NOTE]
     > **Handle by license plate** option helps you to process entire license plate. If you need to process part of the license plate, it is not possible to use this option.
-    <!--Add INFO about breaking work template per LP-->
-
+    >
+    > It is recommended to have separate work generated for each license plate. To achieve this, use **Work header breaks** feature on the **Work template** page.
+    
     The license plate **LP02** is now picked for sales order lines and put in the **Baydoor** location. At this point, it’s ready to be loaded and dispatched to the customer.
 
 ## Exception handling of warehouse work thas has order-committed batch numbers
