@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Add License Files to a Deployable Package in Azure DevOps Pipelines
+title: Add License Files to a Software Deployable Package in Azure DevOps Pipelines
 description: The topic explains how you can add license files to an existing software deployable package when running build automation in Azure DevOps
 author: jorisdg
 manager: AnnBe
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer
-# ms.devlang: 
+# ms.devlang: N
 ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
@@ -45,5 +45,5 @@ To add the task to your YML or Classic Pipeline build, search the task list for 
 
 | Input Name | Mandatory | Description |
 | --- | --- | --- |
-| Search pattern for license files to add to the package | Yes | A list of license files or a search pattern for files, on the build agent. To make the license files available on the build agent, the files can be added to source control, or downloaded or generated in a previous step of the pipeline. |
+| Search pattern for license files to add to the package | Yes | A list of license files or a search pattern for files, on the build agent. To make the license files available on the build agent, the files can be added to source control or downloaded or generated in a previous step of the pipeline. See the Azure DevOps Documentation on [File matching patterns reference](https://docs.microsoft.com/azure/devops/pipelines/tasks/file-matching-patterns?view=azure-devops) to learn more. |
 | Filename and path of the deployable package to update | Yes | This specifies the path, including the filename, of an existing deployable package zip file to which the license file(s) should be added. |

@@ -127,7 +127,7 @@ A full pipeline should at least consist of the following steps:
 1. Install the NuGet packages
 2. [Update the model versions](pipeline-model-version.md)
 3. Build the solution or projects
-4. Install NuGet 3.3.0 or earlier on the agent (required for the create deployable package step)
+4. Install NuGet 3.3.0 or lower on the agent (required for the create deployable package step)
 5. [Create the deployable package](pipeline-create-deployable-package.md)
 6. Publish the deployable package artifact as the build output
 
