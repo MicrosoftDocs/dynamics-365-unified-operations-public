@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.11
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-Many retailers sell products that require serial control, or "serialized items." Some retailers may want to maintain serial numbers in for tracking purposes, others may want to capture serial numbers during the sales process for service and warranty. This topic explains how you can manage serialized items in the Commerce point of sale (POS) application.
+Many retailers sell products that require serial control, or "serialized items". Some retailers may want to maintain serial numbers in inventory for tracking purposes, others may want to capture serial numbers during the sales process for service and warranty. This topic explains how you can manage serialized items in the Commerce point of sale (POS) application.
 
 ## Serial number configurations
 
@@ -48,6 +48,9 @@ The **Inbound inventory** operation in POS enables users to perform the followin
 -	Register serial numbers against serialized items when receiving them into the store via a purchase order.
 
 -	Validate serial numbers that have been preregistered to serialized items when receiving them into the store via a purchase order or transfer order.
+
+> [!NOTE]
+> To use **Inbound inventory** operation to register or validate a serialized item, the item must be assigned a tracking dimension group that is set up to enable serial number for **Active** option not **Active in sales process** option.  
 
 To begin the receiving process, in the inbound operation, you can start with the **Receiving now** view by scanning the item bar code or entering the item ID, or you can start with the **Full order list** view by manually selecting the item.
 
