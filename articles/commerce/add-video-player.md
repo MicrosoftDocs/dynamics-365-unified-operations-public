@@ -5,7 +5,7 @@ title: Video player module
 description: This topic covers video player modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 05/25/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -52,7 +52,8 @@ The video player module also supports secondary audio tracks. When a video is up
 - Promotional videos or videos about policies on any marketing page
 - Marketing videos that highlight product features on product details pages or marketing pages
 
-Below is an example of video player shown on Fabrikam homepage.
+The following image shows an example of a video player module on a home page.
+
 ![Example of a video player module](./media/ecommerce-videoplayer.PNG)
 
 ### Video player module properties
