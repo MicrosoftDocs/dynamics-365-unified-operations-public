@@ -5,7 +5,7 @@ title: Test recorder and Regression suite automation tool for Cloud POS
 description: This topic explains how to automate user acceptance testing (UAT) by using the POS test recorder and the Regression suite automation tool (RSAT).
 author: mugunthanm
 manager: AnnBe
-ms.date: 04/07/2020
+ms.date: 04/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -173,7 +173,7 @@ To resume the recording session after you've paused it, select **Recording**.
 ### Create a recording
 
 > [!IMPORTANT]
-> Before creating the recording, turn off the Show app tour and Show app introduction after sign in CPOS Settings > Application help section (applicable only if the demo data is used).
+> Before creating the recording, turn off the Show app tour and Show app introduction after sign in. To do this, go to the **CPOS Settings > Application help** section (applicable only if demo data is used).
 
 Follow these steps to create a new recording by using the test recorder:
 
@@ -244,7 +244,7 @@ The following procedure describes the configuration that is required to run the 
 
 1. Open RSAT from your desktop.
 2. Select the **Settings** button in the upper right to configure RSAT.
-3. In the **Settings** dialog box, Click the **Optional** tab and check the **Configure Retail POS** option. Selecting configure Retail POS option will enable the Retail POS automation.
+3. In the **Settings** dialog box, click the **Optional** tab and select the **Configure Retail POS** option to enable the Retail POS automation.
 4. In the **Settings** dialog box, on the **Retail POS** tab, on the **Playback environment** tab, set the following fields:
 
     + **Cloud POS URL** – Enter the URL of the Cloud POS environment where you want to run the test.
@@ -273,9 +273,9 @@ The following procedure describes the configuration that is required to run the 
 
     [![POS user](./media/EditPosUser.png)](./media/EditPosUser.png)
 
-7. In the **Username** field, enter the user name for sign-in to POS.
-8. In the **Password** field, enter the password for sign-in to POS.
-9. Repeat steps 6 through 8 to enter other user names and passwords for sign-in to POS.
+7. In the **Username** field, enter the user name for signin to POS.
+8. In the **Password** field, enter the password for signin to POS.
+9. Repeat steps 6 through 8 to enter other user names and passwords.
 10. To edit a set of POS sign-in credentials, select **Edit**.
 11. To delete a set of POS sign-in credentials, select **Delete**.
 
@@ -371,7 +371,7 @@ You must manually delete these files and secure them as you require. All these f
 
 ### Creating test cases by using the test recorder
 
-+ Before creating the recording, turn off the Show app tour and Show app introduction after sign in CPOS Settings > Application help section (applicable only if the demo data is used).
++ Before creating the recording, turn off the Show app tour and Show app introduction after sign in. To do this, go to the **CPOS Settings > Application help** section (applicable only if demo data is used).
 + Make sure that all your recordings start from the POS log-in screen.
 + Keep individual recordings short, and focus on a business task that is performed by one user, such as the creation a sale transaction. This approach makes it easier to maintain and reuse test cases.
 + Don't record any scenario that includes secrets.
@@ -381,7 +381,7 @@ You must manually delete these files and secure them as you require. All these f
 + Keystroke recording performance may be slow, so type slowly while recording so that all the events are captured property.
 + Peripheral emulation is currently not supported, use a keyboard wedge-based device.
 + Don’t hold a key down during recording, as this could record multiple key press events.
-+ Extensions controls developed should follow the best practice of proper XPath and if possible have unique id for each HTML element.
++ Extension controls should follow the best practice of proper XPath and if possible have a unique ID for each HTML element.
 
 ## Troubleshooting guides
 
