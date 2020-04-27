@@ -137,12 +137,13 @@ To generate the **Norwegian SAF-T Financial data** report, follow these steps.
 
 5. Select the **Report tax information in sales tax currency** check box if you want to report tax information in tax code currency.
 
-    When **Report tax information in sales tax currency** check box is selected, **\<TaxInformation\>** element reports the following amounts in the Tax code currency:
+    If the **Report tax information in sales tax currency** check box is selected, the **\<TaxInformation\>** element reports the following amounts in the tax code currency:
 
     - *GeneralLedgerEntries/Journal/Transaction/Line/TaxInformation/TaxBase*
     - *GeneralLedgerEntries/Journal/Transaction/Line/TaxInformation/TaxAmount/Amount*
 
-    When the **Report tax information in sales tax currency** check box is not marked, the amounts in the **\<TaxInformation\>** element and all of the amounts in the reports are reported in the Accounting currency.
+
+    If the **Report tax information in sales tax currency** check box is not selected, the amounts in the **\<TaxInformation\>** element and all of the amounts in the reports are reported in the accounting currency.
 
     The following amount is always reported in document currency:
 
