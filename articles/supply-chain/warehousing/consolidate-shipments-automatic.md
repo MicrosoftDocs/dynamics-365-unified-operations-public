@@ -6,7 +6,7 @@ description: This topic provides an overview of functionality that provides use 
 author: GarmMSFT
 manager: tfehr
 ms.date: 04/23/2020
-ms.topic: use-shipment-consolidation-policies
+ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology:
@@ -47,12 +47,13 @@ The scenario described here assumes that you have already done the exercises and
 
 ## Create the sales orders for this scenario
 
-Start be creating a collection of sales orders that you can work with. You must work with a warehouse that is enabled for advanced warehouse (WHS) processes, and the same warehouse must be used for each of the following sets of orders unless another warehouse is explicitly mentioned.
+Start by creating a collection of sales orders that you can work with. You must work with a warehouse that is enabled for advanced warehouse (WHS) processes, and the same warehouse must be used for each of the following sets of orders unless another warehouse is explicitly mentioned.
 
 <!-- KFM: Should users set a **Warehouse** for each of the sales orders created here? If so, we should specify that for each of them. We should be able to specify a particular warehouse that is already set up correctly in the standard demo data -->
 
-
 <!-- KFM: Throughout this section we refer to item A0001 and A0002 as having no Code 4, while items D0001 and D0002 have Code 4 values. However, on my demo setup, I could only set Code 4 for items A0001 and A0002. The setting is disabled for D0001 and D0002. Therefore, the "Configure shipment consolidation policies" topic describes making this setting for items A0001 and A0002 (not D000x). We need to align this scenario with that one and with the actual USMF demo data people will have. (Or we need to add steps here for how to enable this setting for the D000x items.) -->
+
+<!-- KFM: We are never reserving the inventory for the order lines in this topic, but we do in one of the others. Should we also do that here? -->
 
 ### Create order set 1
 
@@ -318,7 +319,7 @@ When your done, you should see that four shipments were created:
 - Lines from sales orders 5 and 6 for customer *US-007* are grouped into one shipment using the *Order pool* shipment consolidation policy;
 - Lines from sales orders 7 and 8 for customer *US-007* are grouped into one shipment using the *CrossOrder* shipment consolidation policy.
 
-## Related articles and demo scripts
+## Related topics and scenarios
 
 - [About shipment consolidation policies](about-shipment-consolidation-policies.md)  
 - [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md)

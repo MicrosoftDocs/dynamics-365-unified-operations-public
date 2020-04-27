@@ -147,7 +147,7 @@ The following table summarizes how shipment consolidation works when you don't u
 | You can only use the **Consolidate shipments** command on the **All shipments** page for a single shipment | The **Shipment consolidation workbench** helps you find a set of shipments that aren't yet in a shipped state. These shipments are analyzed based on several key fields configured on your shipment consolidation policies, and shipments where the values in these fields match are suggested for consolidation. <br> It is possible to maintain the consolidation manually by removing and/or adding some shipments from suggested consolidations. Any of several types of errors may occur, but you can override some of them. |
 | **Design note:** The *Automatic release of sales orders to warehouse* procedure splits sales lines into groups. Each group has its own unique **ReleaseToWarehouseId** value and is processed by the *Release to warehouse* procedure separately, which creates new work regardless of work break setup. | **Design note:** The *Automatic release of sales orders to warehouse* procedure assigns the same **ReleaseToWarehouseId** value to all sales lines being processed. All sales lines are processed by the *Release to warehouse* procedure at once. Work break per shipment ID must be configured to ensure the legacy behavior. |
 
-## Related articles and demo scripts
+## Related topics and scenarios
 
 - [Configure shipment consolidation policies](../warehousing/configure-shipment-consolidation-policies.md)
 - [Consolidate shipments](../warehousing/consolidate-shipments.md)
