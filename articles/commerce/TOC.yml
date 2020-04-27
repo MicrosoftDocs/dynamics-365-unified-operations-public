@@ -644,6 +644,8 @@
             href: work-with-store-inventory.md
           - name: Working with serialized items 
             href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md?toc=/dynamics365/commerce/toc.json
+          - name: Work with serialized items in POS
+            href: pos-serialized-items.md
           - name: Push products from distribution center to store using buyer's push 
             href: tasks/push-products-distribution-center-store-buyers-push.md
           - name: Set up rules and parameters for cross-docking and buyer's push  
