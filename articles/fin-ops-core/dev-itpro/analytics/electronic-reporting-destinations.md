@@ -68,6 +68,7 @@ When you access the **Run in the background** tab and set the **Batch processing
 When you access the **Run in the background** tab and set the **Batch processing** option to **Yes**, an ER format is executed in
 [batch](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-processing-overview) mode. The appropriate batch job is created based on parameters that you specify on the ER parameters dialog page in the **Run in the background** tab. 
 
+> [!NOTE]
 > The job description is initiated to inform about the run of an ER format mapping. It also contains the name of the executed ER component.
 
 [![Running an ER format](./media/ER_Destinations-RunInBatchMode.png)](./media/ER_Destinations-RunInBatchMode.png)
@@ -77,7 +78,7 @@ You can find information about this job in sevaral places.
 -   Open the **Common \> Inquiries \> Batch jobs \> My batch jobs** page to check the status of the scheduled job.
 -   Open the **Organization administration \> Electronic reporting \> Electronic reporting jobs** page to check the status of the scheduled job and execution results of completed job. When the job execution successfully succeeded, on the **Electronic reporting jobs** page select **Show files** to get a generated outbound document.
 
-    >
+    > [!NOTE]
     > This document is stored as an attachment of the current job record and controlled by the [Document
     management](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management)
     framework. The [document
