@@ -5,7 +5,7 @@ title: Header module
 description: This topic covers header modules and describes how to create page headers in Microsoft Dynamics 365 Commerce.
 author: anupamar
 manager: annbe
-ms.date: 04/13/2020
+ms.date: 05/25/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -40,7 +40,9 @@ In Dynamics 365 Commerce, a page header comprises multiple modules, such as the 
 
 The header module includes a site logo, links to the navigation hierarchy, links to other pages on the site, a cart symbol, a wishlist symbol, sign-in options, and the search bar. A header module is automatically optimized for the device that the site is being viewed on (in other words, for a desktop device or a mobile device). For example, on a mobile device, the navigation bar is collapsed into a **Menu** button (which is sometimes referred to as a *hamburger menu*).
 
-![Example of header module](./media/ecommerce-header.PNG)
+The following image shows an example of a header module on a site page.
+
+![Example of header module](./media/ecommerce-header.png)
 
 ## Properties of a header module
 
@@ -49,8 +51,6 @@ A header module supports **Logo image**, **Logo link**, and **My account links**
 The **Logo image** and **Logo link** properties are used to define a logo on the page. For more information, see [Add a logo](add-logo.md). 
 
 The **My account links** property can be used to define account pages that the site owner wants to show quick links for in the header.
-
-
 
 ## Modules that are available in a header module
 
@@ -78,7 +78,6 @@ To create a header module, follow these steps.
 1. In the **Cart icon** slot of the header module, add a cart icon module. 
 1. In the property pane for the cart icon module, configure the properties of the cart icon module. If you want the cart icon to display a mini cart when hovered over, select **True** for **Show mini cart**.
 1. Save the page fragment, finish editing, and publish it. 
-
 
 To help guarantee that a header appears on every page, follow these steps on every page template that is created for the site.
 
