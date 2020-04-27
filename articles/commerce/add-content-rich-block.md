@@ -5,7 +5,7 @@ title: Text block module
 description: This topic covers text block modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 05/25/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -49,7 +49,8 @@ Text block modules can be used in the following ways:
 * To add custom messages on a product details page. (for example, "Free shipping for orders over $50").
 * For disclaimers and contact details on product details pages, cart pages, checkout pages, and other pages (for example, "Shipping and returns are subject to store policies").
 
-Below is an example of a text block module used on homepage
+The following image shows an example of a text block module used on a home page.
+
 ![Example of a text block module](./media/ecommerce-textblock.PNG)
 
 ## Text block module properties
