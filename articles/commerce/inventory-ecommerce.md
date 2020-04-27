@@ -37,11 +37,9 @@ ms.dyn365.ops.version:
 This topic covers Inventory settings and describes how these settings can be applied across ecommerce
 
 ## Overview
-Inventory checks on e-commerce provides the capability for a retailer to check if a product has sufficient inventory beofre allowing a shopper to make a purchase. It also allows a site author to showcase inventory driven merchandising such as "In Stock" "Only few left" etc
+This setting is defined under Sites Settings\Extensions ina group called "Inventory". These settings enable Inventory checks on e-commerce. The inventory checks  provide the capability for a retailer to showcase inventory driven merchandising such as "In Stock" "Only few left" etc. When a product is out of stock these settings ensure the product cannot be purchased.
 
-
-## Adding inventory on HQ
-https://docs.microsoft.com/en-us/dynamics365/commerce/calculated-inventory-retail-channels
+Microsoft Dynamics 365 Commerce provides on-hand availability for products which is used on e-commerce to drive the inventory scenarios. For details on how estimated on-hand availability is calculated for products see this  https://docs.microsoft.com/en-us/dynamics365/commerce/calculated-inventory-retail-channels. 
 
 ## Defining inventory thresholds and ranges on HQ
 
