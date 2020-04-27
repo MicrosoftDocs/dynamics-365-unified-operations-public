@@ -5,7 +5,7 @@ title: Container module
 description: This topic covers container modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 05/25/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -30,7 +30,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Container module
 
-
 [!include [banner](includes/banner.md)]
 
 This topic covers container modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
@@ -50,9 +49,9 @@ Three container modules are supported: container, container with 2-slots, and co
 - A site author wants a six-column layout, where six modules appear side by side. Therefore, the site author uses a container of the contain type that has six columns inside it.
 - A site author wants to put a module on a page but doesn't want it to fill the screen. Therefore, the site author adds the module to a container module and sets the container's **Width** property to **Fit container**.
 
-Below is an example from Site builder for Home page. The example shows the Carousel module inside a Container (friendly name Carousel Container) and is set to Fill screen
-![Example of a container module](./media/ecommerce-container.PNG)
+The following image shows an example of a container module containing a carousel module in Commerce site builder, where the container module has the width value set to **Fill screen**.
 
+![Example of a container module](./media/ecommerce-container.PNG)
 
 ## Container module properties
 
