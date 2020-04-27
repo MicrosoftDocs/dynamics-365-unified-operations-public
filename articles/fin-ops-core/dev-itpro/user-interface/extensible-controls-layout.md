@@ -63,7 +63,7 @@ Used to apply **ArrangeMethod** and **Columns** attributes to containers Options
 
 #### Children
 
--   Use **$data.Children **if the content handlers (append, replace) will be used to append children through this container. It should be used only if this control is a container.
+-   Use **$data.Children** if the content handlers (append, replace) will be used to append children through this container. It should be used only if this control is a container.
 
 **Example usage:**
 
