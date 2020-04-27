@@ -1,18 +1,18 @@
 > [!IMPORTANT]
-> Some environment specific records are not included in automated database movement operations and require additional steps. These include the following:
-> - Commerce Self-Service installer references
+> Some environment-specific records are not included in automated database movement operations and require additional steps. These include the following:
+> - Commerce self-service installer references
 > - Commerce Scale Unit channel database configuration records
 
 If you copy a database between environments, Commerce capabilities in the destination environment will not be fully functional until you perform the following additional steps.
 
 ### Initialize Commerce Scale Units
-If you are moving a database to a Sandbox UAT or Production environment, you must [Initialize Commerce Scale Unit](../deployment/Initialize-Retail-Channels.md) after the database movement operation is complete. Commerce Scale Units association from the source environment will not copy over to the destination environment. 
+If you are moving a database to a sandbox UAT or production environment, you must [Initialize Commerce Scale Unit](../deployment/Initialize-Retail-Channels.md) after the database movement operation is complete. The Commerce Scale Unit's association from the source environment will not copy over to the destination environment. 
 
 ### Synchronize Commerce self-service installers
-To be able to access Commerce self-service installers in HQ, you must [Synchronize self-service installers](../../commerce/dev-itpro/synchronize-installers.md) after database movement operation is complete.
+To be able to access Commerce self-service installers in HQ, you must [Synchronize self-service installers](../../commerce/dev-itpro/synchronize-installers.md) after the database movement operation is complete.
 
 > [!IMPORTANT]
-> Environment re-provisioning step has now been fully automated as part of database movement operations, and no longer needs to be run manually. Environment re-provisioning tool is still available in Asset Library and may be used in unusual situations to mitigate error conditions. 
+> The Environment re-provisioning step has now been fully automated as part of database movement operations, and no longer needs to be run manually. The Environment re-provisioning tool is still available in the Asset Library and may be used in unusual situations to mitigate error conditions. 
 
 To run the Environment reprovisioning tool on the destination environment, run the following steps:
 
