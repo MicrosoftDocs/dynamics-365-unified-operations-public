@@ -400,15 +400,15 @@ By using a **pre-release** Chromium browser extension that works for both the ne
         }
         ...
     ```
-4.  Open the new (Chromium-based) Microsoft Edge browser or Google Chrome.
-5.  Select **Settings and more &gt; Extensions"** in Microsoft Edge (or **Customize and control Google Chrome &gt; More tools &gt; Extensions** in Google Chrome).
+4.  Open the latest Microsoft Edge browser or Google Chrome.
+5.  Select **Settings and more &gt; Extensions** in Microsoft Edge (or **Customize and control Google Chrome &gt; More tools &gt; Extensions** in Google Chrome).
 
     ![This image shows the location of the Extensions menu in Google Chrome.](./media/taskrecorderguide-googlechromeextensionsmenu.png) 
 
-6.  Select the **Developer mode** box.
+6.  Select **Developer mode**.
 7.  Click **Load unpacked extension**.
 8.  Browse to the folder that contains the Task recorder extension, select the folder, and then click **OK**.
-9.  Make sure that the **Enabled** box is selected so that extension is turned on.
+9.  Make sure that **Enabled** is selected so that extension is turned on.
 10.  Restart the browser.
 
 Task recorder will now take screenshots of the tab where the client is running. These screenshots are available for one week after the recording has been played. (If you're running a platform version that is earlier than Platform update 16, the screenshots are available for only 15 minutes.) If the screenshots have expired, you can regenerate them by playing the task recording again.
