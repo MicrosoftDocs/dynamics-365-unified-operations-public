@@ -593,6 +593,8 @@
           href: cost-management/bom-calculations.md
         - name: BOM calculation groups
           href: cost-management/bom-calculation-groups.md
+        - name: Cost calculation level
+          href: cost-management/cost-calculation-level.md
         - name: Backflush costing
           href: cost-management/backflush-costing.md
         - name: Common sources of production variances
