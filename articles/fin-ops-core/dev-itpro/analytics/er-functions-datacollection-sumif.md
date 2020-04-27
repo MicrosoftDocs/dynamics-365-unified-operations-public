@@ -68,6 +68,8 @@ In the `condition value` argument, the wildcard character **"\*"** can be used t
 
 For more information about how to use this function, see the [ER Use data of format output for counting and summing](tasks/er-format-counting-summing-1.md) task guide, which is part of the **Acquire/Develop IT service/solution components** business process.
 
+Review [Defer the execution of sequence elements in ER formats](er-defer-sequence-element.md#Example) and [Defer the execution of XML elements in ER formats](er-defer-xml-element.md#Example) examples where this function is also used.
+
 ## Additional resources
 
 [Data collection functions](er-functions-category-data-collection.md)
