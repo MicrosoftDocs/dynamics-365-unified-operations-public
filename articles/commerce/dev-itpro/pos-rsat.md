@@ -273,8 +273,8 @@ The following procedure describes the configuration that is required to run the 
 
     [![POS user](./media/EditPosUser.png)](./media/EditPosUser.png)
 
-7. In the **Username** field, enter the user name for signin to POS.
-8. In the **Password** field, enter the password for signin to POS.
+7. In the **Username** field, enter the user name for sign in to POS.
+8. In the **Password** field, enter the password for sign in to POS.
 9. Repeat steps 6 through 8 to enter other user names and passwords.
 10. To edit a set of POS sign-in credentials, select **Edit**.
 11. To delete a set of POS sign-in credentials, select **Delete**.
