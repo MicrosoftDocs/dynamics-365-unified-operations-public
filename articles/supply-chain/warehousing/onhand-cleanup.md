@@ -37,8 +37,8 @@ This topic describes the on-hand entries cleanup job, which deletes records in t
 
 The cleanup job is available under **Inventory Management > Periodic tasks > Clean up > Warehouse management on-hand entries cleanup**. Use the standard job settings here to control the scope and schedule for running the job. In addition, the following settings are provided:
 
-- **Delete if not updated for this many days** - Use this field to reduce the risk of deleting on-hand entries that are still in use. <!-- KFM: maybe provide more details about this. Is 0 a special value here? -->
-- **Maximum execution time** - Enter a maximum execution time (in hours) for the cleanup job. If the job doesn't complete before the time is up, it will save the work completed so far and then exit. This capability is especially relevant for implementations that have high inventory usage, in which case you should schedule the job to run at times when the system is as lightly loaded as possible. Enter a value of "0" (or leave blank) to allow the batch job to continue running until it has finished. This setting is only available if it has been [enabled on your system](#max-execution-time). <!-- KFM: Please confirm the setting name. -->
+- **Delete if not updated for this many days** - Use this field to reduce the risk of deleting on-hand entries that are still in use. Enter a value of "0" (or leave blank) to allow clearing up as must as possible.
+- **Maximum execution time (hours)** - Enter a maximum execution time (in hours) for the cleanup job. If the job doesn't complete before the time is up, it will save the work completed so far and then exit. This capability is especially relevant for implementations that have high inventory usage, in which case you should schedule the job to run at times when the system is as lightly loaded as possible. Enter a value of "0" (or leave blank) to allow the batch job to continue running until it has finished. This setting is only available if it has been [enabled on your system](#max-execution-time).
 
 You can run the job during normal business hours, but we recommend running it outside of working hours to avoid conflicts where a user is working with a record that is also being cleaned up.
 
@@ -50,13 +50,9 @@ The job runs with a commit size of 100, which means that it will try to commit f
 
 The cleanup job deletes records in the `WHSInventReserve` and `InventSum` tables where all the field values are 0, because these don't contribute to the on-hand. The job only deletes records below the Location level.
 
-If negative physical inventory is allowed, then the job might not be able to delete all entries with all zeros. This is because the job must allow for a special scenario where a license plate has multiple serial numbers and one serial number has gone negative. For this special case, the job does a breadth-first delete, trying to delete from lower levels first.
-
-If negative physical inventory isn't allowed, the job deletes upwards in the hierarchy. This approach means that for a scenario were we have serial number 1 and 2 on the same license plate, and the job is stopped, we might still have a record in `WHSInventReserve` on the lowest level (for example, for serial number 2) but not one on the level above that). This is fine because since no record is semantically the same as "nothing available or reserved".
-
-<!-- KFM: I don't understand the above example. Maybe it's OK, but can we make it more clear? -->
-
-If we should get on-hand again after records have been deleted, the records will just be re-created as part of the normal business logic.
+If negative physical inventory is allowed, then the job might not be able to delete all entries with all zeros. This is because the job must allow for a special scenario where a license plate has multiple serial numbers and one serial number has gone negative.
+In the system we will have zero on-hand on the license plate level when a license plate is having +1 pcs of serial number #1 and -1 pcs with serial number #2.
+For this special case, the job does a breadth-first delete, trying to delete from lower levels first.
 
 ## Possible user impact
 
