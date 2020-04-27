@@ -91,6 +91,13 @@ The Finance and Operations applications represent the next-generation enterprise
 - [Update the Visual Studio development tools](update-development-tools.md)
 - [Development and build VMs that don't allow admin access FAQ](../sysadmin/VMs-no-admin-access.md)
 
+## Build automation using Azure
+
+- [Build automation using Microsoft-hosted agents and Azure Pipelines](hosted-build-automation.md)
+- [Add license files to a deployable package in Azure Pipelines](pipeline-add-license-package.md)
+- [Create deployable packages in Azure Pipelines](pipeline-create-deployable-package.md)
+- [X++ model-versioning in Azure Pipelines](pipeline-model-version.md)
+
 ## X++ programming language
 
 ### Overviews
@@ -103,15 +110,8 @@ The Finance and Operations applications represent the next-generation enterprise
 - [Changes in X++ and the X++ compiler](programming-language-support.md)
 - [EventHandlerResult classes in request or response scenarios](event-handler-result-class.md)
 - [Debug X++ code by using the debugger in Visual Studio](debug-xpp.md)
-- [Language Integrated Query (LINQ) provider for C\#(linq-provider-c.md)
+- [Language Integrated Query (LINQ) provider for C\#](linq-provider-c.md)
 - [Write best practice rules](author-best-practice-rules.md)
-
-## Build automation using Azure
-
-- [Build automation using Microsoft-hosted agents and Azure Pipelines](hosted-build-automation.md)
-- [Add License Files to a Deployable Package in Azure DevOps Pipelines](pipeline-add-license-package.md)
-- [Creating Deployable Packages in Azure DevOps Pipelines](pipeline-create-deployable-package.md)
-- [X++ Model Versioning in Azure DevOps Pipelines](pipeline-model-version.md)
 
 ### Reference
 

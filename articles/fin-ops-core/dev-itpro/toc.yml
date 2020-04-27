@@ -576,11 +576,11 @@
         items:
         - name: Build automation using Microsoft-hosted agents and Azure Pipelines
           href: dev-tools/hosted-build-automation.md
-        - name: Add License Files to a Deployable Package in Azure DevOps Pipelines
+        - name: Add license files to a deployable package in Azure Pipelines
           href: dev-tools/pipeline-add-license-package.md
-        - name: Creating Deployable Packages in Azure DevOps Pipelines
+        - name: Create deployable packages in Azure Pipelines
           href: dev-tools/pipeline-create-deployable-package.md
-        - name: X++ Model Versioning in Azure DevOps Pipelines
+        - name: X++ model-versioning in Azure Pipelines
           href: dev-tools/pipeline-model-version.md
       - name: Fleet Management sample application
         items:
