@@ -40,7 +40,7 @@ In Dynamics 365 Commerce, a page header comprises multiple modules, such as the 
 
 The header module includes a site logo, links to the navigation hierarchy, links to other pages on the site, a cart symbol, a wishlist symbol, sign-in options, and the search bar. A header module is automatically optimized for the device that the site is being viewed on (in other words, for a desktop device or a mobile device). For example, on a mobile device, the navigation bar is collapsed into a **Menu** button (which is sometimes referred to as a *hamburger menu*).
 
-The following image shows an example of a header module on a site page.
+The following image shows an example of a header module on a home page.
 
 ![Example of header module](./media/ecommerce-header.png)
 
