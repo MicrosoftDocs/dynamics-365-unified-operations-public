@@ -86,13 +86,17 @@ Most of the checkout information, such as the shipping address and shipping meth
 
 To add a checkout module to a new page and set the required properties, follow these steps.
 
-1. Go to **Fragment \> New Fragment**, and name the new fragment **Checkout fragment**.
-1. Add a checkout module to the fragment.
-1. Add a heading to the checkout module.
-1. Add shipping address, delivery options, checkout section container, and contact information modules. 
-1. In the checkout section container module, add gift card, loyalty points, and payment modules. In this way, you make sure that all the payment methods appear together in a section.
-1. Save and preview the fragment. Some modules that don't have a cart context might not be rendered in the preview.
-1. Finish editing the fragment, and publish it.
+1. Go to **Page Fragments** and select **+New** to create a new fragment.
+1. In the **New Page Fragment** dialog box, select the **Checkout module** module.
+1. Under **Page Fragment Name**, enter the name **Checkout fragment**, and then select **OK**.
+1. Select the **Checkout module** slot.
+1. In the properties pane on the right, select the pencil symbol, enter heading text in the box, and then select the check mark symbol.
+1. In the **Checkout Information** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Shipping address**, **Delivery options**, **Checkout section container**, and **Contact information** modules, and then select **OK**.
+1. In the **Checkout section container** module, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Gift card**, **Loyalty**, and **Payment** modules, and then select **OK**. In this way, you make sure that all the payment methods appear together in a section.
+1. Select **Save**, and then select **Preview** to preview the page. Some modules that don't have a cart context might not be rendered in the preview.
+1. Select **Finish editing** to check in the page, and then select **Publish** to publish it.
 1. Create a template that uses the new checkout fragment.
 1. Create a checkout page that uses the new template.
 
