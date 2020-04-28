@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Consolidate shipments using shipment consolidation policies
-description: This topic provides an overview of functionality that provides use of shipment consolidation policies.
+title: Consolidate shipments manually using the Consolidate shipments page
+description: This topic provides a scenario where multiple orders are released to the warehouse and then consolidated later using the Consolidate shipments page.
 author: GarmMSFT
-manager: PJacobse
-ms.date: 12/31/2019
-ms.topic: use-shipment-consolidation-policies
+manager: tfehr
+ms.date: 04/20/2020
+ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology:
@@ -17,91 +17,82 @@ ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: PJacobse
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry:
 ms.author: v-olbara
-ms.search.validFrom: 2019-08-31
+ms.search.validFrom: 2029-04-20
 ms.dyn365.ops.version: 10.0.3
 
 ---
 
-# Consolidate shipments manually in Consolidate shipments form
+# Consolidate shipments manually using the Consolidate shipments page
 
 [!include [banner](../includes/banner.md)]
 
-*Released in version 10.0.3*
+This topic provides a scenario where multiple orders are released to the warehouse and then consolidated later using the **Consolidate shipments** page.
 
-This demo will simulate a scenario where multiple orders are released to warehouse, and they will be consolidated later in **All shipments \> Consolidate shipments** form.
+## Enable demo data
 
-This scenario assumes that you went through shipment policies configuration scripts and have more than one consolidation policies (see [Configure shipment consolidation policies](../warehousing/configure-shipment-consolidation-policies.md) for instructions).
+Each of the scenarios in this topic reference values and records included in the standard demo data provided for Supply Chain Management. If you'd like to run the exercises using the values provided here, be sure to work on an environment with the demo data installed, and set the legal entity to **USMF** before you begin.
 
-Standard Contoso data is used with some additions done during configuration of policies.
+## Set up shipment consolidation policies and product filters
 
-## Sales orders creation
+The scenario described here assumes that you have already done the exercises and created the records described in [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md). Please do those exercises before continuing with this scenario.
 
-Go to **Accounts receivable \> Orders \> All sales orders** and create sales orders according to information below.
+## Create the sales orders for this scenario
 
-### Order set 1
+Start by creating a collection of sales orders that you can work with. You must work with a warehouse that is enabled for advanced warehouse (WHS) processes, and the same warehouse must be used for each of the following sets of orders unless another warehouse is explicitly mentioned. <!-- KFM: The original didn't mention warehouses. Should I remove that again? -->
 
-Create two identical sales orders.
+Go to **Accounts receivable \> Orders \> All sales orders** and create a collection of sales orders with the settings described in the following subsections.
 
-**Sales order 1 and 2**:
+### Create sales orders 1 and 2
 
-- In the **Customer account** field, select **US-007**.
-- In the **Pool** field, select **ShipCons**.
+Create two identical sales orders with the following settings:
 
-Add an order line to each sales order.
+- **Customer account** - *US-007*
+- **Pool** - *ShipCons*
+- Add an order line with the following settings:
+  - **Item number** - *A0001* (an item without a **Code 4** filter assigned)
+  - **Quantity** - *1.00*
+  - Select **Inventory \> Reservation** and then select **Reserve lot** on the action pane to reserve the order line.
 
-**Line 1**:
+### Create sales orders 3 and 4
 
-- In the **Item number** field, select **A0001** (an item without filter code 4);
-- In the **Quantity** field, enter **1.00**;
-- Click **Inventory > Reservation** and then **Reserve lot** to reserve the order line.
+Create two identical sales orders with the following settings:
 
-Create another two identical sales orders.
-
-**Sales order 3 and 4**:
-
-- In the **Customer account** field, select **US-007**;
-- Leave **Pool** field empty.
-
-Add an order line to each sales order.
-
-**Line 1**:
-
-- In the **Item number** field, select **A0001** (an item without filter code 4);
-- In the **Quantity** field, enter **1.00**;
-- Click **Inventory > Reservation** and then **Reserve lot** to reserve the order line.
+- **Customer account** - *US-007*
+- **Pool** - (Leave empty)
+- Add an order line with the following settings:
+  - **Item number** - *A0001* (an item without a **Code 4** filter assigned)
+  - **Quantity** - *1.00*
+  - Select **Inventory \> Reservation** and then select **Reserve lot** on the action pane to reserve the order line.
 
 ## Release to warehouse
 
-To release to warehouse a sales order using All sales orders form, follow these steps.
+Release to warehouse each of the sales orders you created for this scenario by doing the following:
 
-1. Go to **Accounts receivable > Orders > All sales orders**.
-1. Find and select desired sales order.
-1. On the Action Pane, on the **Warehouse** tab, click **Release to warehouse** to release a sales order.
-
-Release all sales orders from the order set using instructions above.
+1. Go to **Accounts receivable \> Orders \> All sales orders**.
+1. Find and select the target sales order.
+1. On the action pane, open the **Warehouse** tab and select **Actions \> Release to warehouse** to release the selected sales order.
+1. Repeat this procedure for each sales order you created for this scenario.
 
 ## Consolidate shipments
 
-1. Go to **Warehouse management > Shipments > All shipments**.
-1. Find and select a shipment created when Sales order 1 was released to warehouse (this shipment **Shipment consolidation policy** field set to **Order pool**).
-1. On the Action Pane, on the **Shipments** tab, click **Consolidate shipments**.
-1. Verify shipments suggested for consolidation:
-    - There is only one shipment with the same policy suggested for consolidation.
-1. Close the **Shipment consolidation** form.
-1. Find and select a shipment created when Sales order 3 was released to warehouse (this shipment **Shipment consolidation policy** field set to **Default**).
-1. On the Action Pane, on the **Shipments** tab, click **Consolidate shipments**.
-1. Verify there are no shipments suggested for consolidation.
-1. Click **Show filters** icon to open **Filters** pane.
-1. Remove **Order number** filter and click **Apply**.
-1. Verify shipments suggested for consolidation:
-    - There is only one shipment with the same policy suggested for consolidation.
+1. Go to **Warehouse management \> Shipments \> All shipments**.
+1. Find and select a shipment created when sales order 1 was released to warehouse (with its **Shipment consolidation policy** field set to *Order pool*).
+1. On the action pane, open the **Shipments** tab and then select **Shipments \> Consolidate shipments**.
+1. Verify the shipments suggested for consolidation. There should only be one shipment with the same policy suggested for consolidation.
+1. Close the **Shipment consolidation** page.
+1. Find and select a shipment created when sales order 3 was released to warehouse (with its **Shipment consolidation policy** field set to *Default*).
+1. On the action pane, open the **Shipments** tab and then select **Shipments \> Consolidate shipments**.
+1. Verify that there are no shipments suggested for consolidation.
+1. Select **Show filters** to open the **Filters** pane.
+1. Remove the **Order number** filter and select **Apply**.
+1. Verify the shipments suggested for consolidation. There should only be one shipment with the same policy suggested for consolidation.
 
 ## Related articles and demo scripts
 
