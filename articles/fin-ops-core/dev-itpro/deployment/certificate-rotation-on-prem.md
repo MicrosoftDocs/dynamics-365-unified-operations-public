@@ -270,7 +270,7 @@ This certificate is used to encrypt data stored in the database. By default ther
 
 Beginning with platform update 33, there is a batch job: “Encrypted data rotation system job that needs to run at off hours when the data encryption certificate rotated” that will reencrypt data with the newly rotated certificate. This is a crawler batch job that will run for 2 hours throught 3 days to reencrypt with the new certificate all of the encrypted data. Depending on the amount of data, it's possible that the crawler is able to finish in less time than mentioned previously. 
 
-    > [!WARNING]
-    > Make sure that the old Data Encryption certificate is not removed before all encrypted data has been re-encrypted and that it has not expired. Othwerise, this could lead to data loss. 
+> [!WARNING]
+> Make sure that the old Data Encryption certificate is not removed before all encrypted data has been re-encrypted and that it has not expired. Othwerise, this could lead to data loss. 
 
 
