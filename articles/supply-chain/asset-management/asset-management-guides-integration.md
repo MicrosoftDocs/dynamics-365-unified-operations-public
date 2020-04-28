@@ -37,6 +37,7 @@ To be able to attach guides to asset management work orders, you must first:
 
 - [Set up Dynamics 365 Supply Chain Management](../../fin-ops-core/fin-ops/index.md) version 10.0.9 or later.
 - [Enable dual-write for Supply Chain Management apps](../../fin-ops-core/dev-itpro/data-entities/dual-write/enable-dual-write.md).
+- [Enable flight](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#features-flighted-in-data-management-and-enabling-flighted-features) for the "MRGuidesFeature" feature. (For production environments, you must first raise a support ticket to have your tenant added to the flighting group.)
 - [Enable the following configuration keys](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/license-code-and-configuration-key-reference)  in the **License Configuration** form:
   - **Asset management \> Asset management mixed reality**
   - **Mixed reality \> Mixed reality guide**
@@ -91,17 +92,20 @@ To associate a guide with a maintenance checklist template:
 1. View the guide associated with the work order and workers by doing the following:
 
     1. Launch the [Asset management mobile workspace](asset-management-mobile-workspace.md) to access their work order.
-    1. [Go to the maintenance checklist](asset-management-mobile-workspace.md#view-maintenance-checklist-on-a-work-order-job)for the work order.
+
+    1. [Go to the maintenance checklist](asset-management-mobile-workspace.md#view-maintenance-checklist-on-a-work-order-job) for the work order.
+
     1. Select a checklist line to see the associated guide.  
     ![Select a maintenance job type](media/am-guides-integration-show-guide.png "Select a maintenance job type")
 
-    1. Open the guide on HoloLens.
+    1. Open the guide on HoloLens.  
+    ![Select a maintenance job type](media/am-guides-integration-hololens-select.png "Select a maintenance job type")
 
 > [!NOTE]
 > It's also possible to associate a guide directly in the maintenance checklist of a work order, or of a job type.
 
 > [!IMPORTANT]
-> There is a known issues where when you associate a **Maintenance Checklist template** to a **Maintenance job type default**, the guide that's tied to the template does not appear under the **Associated guides** section of the **Maintenance job type defaults**. The guide will be visible once that job type is applied to a work order under the **Associated guides** section.
+> There is a known issue where when you associate a **Maintenance Checklist template** to a **Maintenance job type default**, the guide that's tied to the template does not appear under the **Associated guides** section of the **Maintenance job type defaults**. The guide will be visible once that job type is applied to a work order under the **Associated guides** section.
 
 ### See also
 
