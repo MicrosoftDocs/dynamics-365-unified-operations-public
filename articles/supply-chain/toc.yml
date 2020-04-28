@@ -425,6 +425,8 @@
           href: asset-management/controlling-and-reporting/item-where-used.md
         - name: Maintenance status
           href: asset-management/controlling-and-reporting/maintenance-status.md
+      - name: Integrate asset management with Dynamics 365 Guides
+        href: asset-management/asset-management-guides-integration.md
       - name: Asset management mobile workspace
         href: asset-management/asset-management-mobile-workspace.md
     - name: Data management
