@@ -125,8 +125,8 @@ To create a sign up and sign in user flow policy, follow these steps.
 
     | **Collect  attribute** | **Return  claim** |
     | ---------------------- | ----------------- |
-    |                        | Email Addresses   |
     | Email Address          |                   |
+    |                        | Email Addresses   |
     | Given Name             | Given Name        |
     |                        | Identity Provider |
     | Surname                | Surname           |
