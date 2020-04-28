@@ -31,9 +31,15 @@ ms.dyn365.ops.version: Release 10.0.12
 
 The performance of queries used to calculate the on-hand inventory is affected by the number of records in the tables involved. One way to improve the performance of such operations is to reduce the number of records that the database has to consider.
 
-This topic describes the on-hand entries cleanup job, which deletes records in the `InventSum` and `WHSInventReserve` tables. These tables store on-hand information for items enabled for warehouse management processing (WHS items). Cleaning up these records can significantly improve the performance of on-hand calculations.
+This topic describes the on-hand entries cleanup job, which deletes unneeded records in the `InventSum` and `WHSInventReserve` tables. These tables store on-hand information for items enabled for warehouse management processing (WHS items). Cleaning up these records can significantly improve the performance of on-hand calculations.
 
-## Run the on-hand entry cleanup
+## What the clean up job does
+
+The cleanup job deletes records in the `WHSInventReserve` and `InventSum` tables where all the field values are 0, because these don't contribute to the on-hand. The job only deletes records below the Location level.
+
+If negative physical inventory is allowed, then the job might not be able to delete all the relevant entries. This is because the job must allow for a special scenario where a license plate has multiple serial numbers and one serial number has gone negative. For example, the system will have zero on-hand at the license plate level when a license plate has +1 pcs of serial number #1 and -1 pcs with serial number #2. For this special case, the job does a breadth-first delete, trying to delete from lower levels first.
+
+## Schedule and configure the on-hand entry cleanup job
 
 The cleanup job is available under **Inventory Management > Periodic tasks > Clean up > Warehouse management on-hand entries cleanup**. Use the standard job settings here to control the scope and schedule for running the job. In addition, the following settings are provided:
 
@@ -45,12 +51,6 @@ You can run the job during normal business hours, but we recommend running it ou
 If the job tries to delete a record for an item while it is being used by another user, a deadlock error will occur for either the cleanup job or the user.
 
 The job runs with a commit size of 100, which means that it will try to commit for every 100 deletes. However, since some deletes are set-based, there might be scenarios where more than 100 records can be deleted in the same transaction, so  lock escalations can still sometimes occur.
-
-## What the clean up job does
-
-The cleanup job deletes records in the `WHSInventReserve` and `InventSum` tables where all the field values are 0, because these don't contribute to the on-hand. The job only deletes records below the Location level.
-
-If negative physical inventory is allowed, then the job might not be able to delete all the relevant entries. This is because the job must allow for a special scenario where a license plate has multiple serial numbers and one serial number has gone negative. For example, the system will have zero on-hand at the license plate level when a license plate has +1 pcs of serial number #1 and -1 pcs with serial number #2. For this special case, the job does a breadth-first delete, trying to delete from lower levels first.
 
 ## Possible user impact
 
