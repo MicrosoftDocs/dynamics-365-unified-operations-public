@@ -80,16 +80,17 @@ SharePoint communication works for the current user only if the following condit
 - An Office 365 license is associated with the user's account.
 - The user is a typical user on the tenant, not an external user (for example, a user from another tenant).
 - There is a SharePoint site for the tenant (for example, Contoso.SharePoint.com).
+- The user has access to the folder that the document is stored in.
 
-If documents stored in SharePoint don't display in preview, follow these steps to troubleshoot the issue: 
+If documents stored in SharePoint don't open or don't display in preview, follow these steps to troubleshoot the issue: 
 
 1. Verify the Admin account has an associated email account (verify or change this in the **User** page). If this isn't set up, you need to add the email and provider  via the OData Excel add-in. By default, the email address isn't present in the Excel design. The user needs to edit the Excel design, add all fields, apply and refresh. Once complete, you can update the Admin account.
 
-2. After the Admin account has an associated email account, sign in to Dynamics 365 Human Resources as the admin.
+2. After the Admin account has an associated email account, sign in to Dynamics as the admin.
 
-3. Open an attachment that is stored in SharePoint to initiate the preview.
+3. Open an attachment that is stored in SharePoint.
 
-4. Sign in with any other user account that has access to attachments and verify that preview works.
+4. Sign in with any other user account that has read access to the attachments page and the configured SharePoint folder and verify that they can also open and preview the attachment.
 
 ## Configure file types
 
@@ -214,3 +215,6 @@ Although attachments can be exported, that capability isn't a standard capabilit
 
 To extract attachments, an Attachments entity must be built for a specific business document or record. There isn't a standard attachment entity because the identity for each record type is different. To learn how to build an Attachments entity, you can find examples in the Application explorer by searching for "Attachment" under the **AOT > Data Model > Data Entities** node.
 
+### How does the document preview work for attachments stored in SharePoint?
+
+The files are retrieved from SharePoint using the current user permissions by the WOPI service. Those files are then rendered in HTML to provide a document preview. So the current user needs access to the files to be able to preview them or open them.
