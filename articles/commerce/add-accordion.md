@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Breadcrumb module 
+title: Accordion module 
 description: This topic covers Accordion module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 manager: annbe
@@ -43,40 +43,41 @@ Below is an example of Accordion module used on a Store FAQ page to organize inf
 ![Example of a Accordion module](./media/ecommerce-accordion.PNG)
 
 ## Details
-**Accordion** is a container-like module that allows on or more **Accordion item** module to be added. Each Accordion item represents a collapsible drawer. Within each Accordion item 1 or more modules can be added. There are no restrictions on the type of modules that can be added within an Accordion item as its truly an organizer.
+**Accordion** is a container-like module that allows one or more **Accordion item** modules to be added to it. Each Accordion item represents a collapsible drawer. Within each Accordion item,  one or more modules can be added. There are no restrictions on the type of modules that can be added within an Accordion item as its truly an organizer.
+
 
 ## Accordion module properties
 
 | Property name  | Values | Description |
 |----------------|--------|-------------|
-| Root          | Link| A root can be defined for the breadcrumb, E.g. Home, Storefront etc. Its an optional field, if not configured there will be no root defined|
-| Breadcrumb link  | Link | If a page needs a manually configured breadcrumb, the links can defined via this link property. The links appear in the order they are added.|
+| Heading          | Heading| A heading can be provided to the Accordion module|
+| Expand All  | True/False | If true, an Expand/Collapse All functionality is provided to expand or collapse all items in the Accordion|
+| Interaction Style| Independent, Expand one item only| This defines the type of interaction the accordion items provide. With **Independent**, each Accordion item can be expanded/collapsed independently. With **Expand one item only**, only one item can be expanded at any time, as items are expanded, previous items are collapsed|
+
+## Accordion item module properties
+
+| Property name  | Values | Description |
+|----------------|--------|-------------|
+| Tite          | Text|  This defines the text for the accordion. Selecting on the Title region, expands/collapses the section|
+| Expand by default  | True/False | If true, this Accordion item will be expanded by defaul when the page is loaded|
 
 
 ## Add a Accordion module to a new page
 
-To add a Accordion module to a PDP and set the required properties, follow these steps.
-
-1. Go to Site settings/Extension and choose a **Breadcrumb style for PDP**. In this e.g. choose "Category heirarchy only" type
-1. Go to **Templates**, and choose the PDP template 
-1. In the Container for the Buy Box, add the Breadcrumb module. 
-1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.
-1. If you have a page for PDP, open the page or create a new page for PDP
-1. In the **Container** for the BuyBox, add a module
-1. In the **Add Module** dialog box, under **Select Modules**, select the Breadcrumb module, and then select **OK**.
-1. In the outline tree on the left, select the Breadcrumb module
-1. In the properties pane on the right, select a Root, define root as the **Home** page
+To add a Accordion module to a page and set the properties, follow these steps
+1. Create a new page *Store faq* using Marketing template in Fabrikam or any template without restrictions
+1. In the **Default page** add a Container
+1. To the Container, add Accordion module
+1. In the Accordion module property panel, set a heading "FAQ"
+1. In the Accordion module property panel, set Expand All to true and set Interaction style to Independent.
+1. To the Accordion module, add an Accordion item. Add Title as "How do returns work".
+1. To the Accordion item, add a Text block module. Add a  paragraph of text such as "Returns need to be processed...."
+1. To the Accordion module, add a few more Accordion items and add more modules to each of them
 1. Select **Save**, and then select **Preview** to preview the page.
 1. Select **Finish editing** to check in the template, and then select **Publish** to publish it. 
-
+1. The Store Faq page will show an Accordion with the content that was curated.
 
 ## Additional resources
 
 [Starter kit overview](starter-kit-overview.md)
-
-[Search results](category-search-page-overview.mdt.md)
-
-[Product collection](product-collection-module-overview.md)
-
-[Buy box](add-buy-box.md)
 
