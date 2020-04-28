@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-When updating an environment with a deployable package, a license might be required for ISV or partner X++ solutions. ISVs can setup pipelines to automatically include these licenses in release or build pipelines. Customers can setup their own pipeline to combine the ISV deployable package and the license file.
+When updating an environment with a deployable package, a license might be required for ISV or partner X++ solutions. ISVs can create pipelines to automatically include these licenses in release or build pipelines. Customers can create their own pipelines to combine the ISV deployable package and the license file.
 
 This article assumes a working knowledge of [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops).
 
@@ -47,5 +47,5 @@ To add the task to your YML or Classic Pipeline build, search the task list for 
 
 | Input Name | Mandatory | Description |
 | --- | --- | --- |
-| Search pattern for license files to add to the package | Yes | A list of license files or a search pattern for files, on the build agent. To make the license files available on the build agent, the files can be added to source control or downloaded or generated in a previous step of the pipeline. For more information, see [File matching patterns reference](https://docs.microsoft.com/azure/devops/pipelines/tasks/file-matching-patterns?view=azure-devops). |
-| Filename and path of the deployable package to update | Yes | This option specifies the path, including the filename, of an existing deployable package zip file to which the license files should be added. |
+| Search pattern for license files to add to the package | Yes | A list of license files or a search pattern for files, on the build agent. To make the license files available on the build agent, you can add the files to source control, or downloaded or generated in a previous step of the pipeline. For more information, see [File matching patterns reference](https://docs.microsoft.com/azure/devops/pipelines/tasks/file-matching-patterns?view=azure-devops). |
+| Filename and path of the deployable package to update | Yes | This option specifies the path and filename of an existing deployable package zip file to which the license files should be added. |
