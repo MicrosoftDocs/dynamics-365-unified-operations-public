@@ -85,6 +85,10 @@ Use these parameters to specify business scenarios and company specific informat
 On **Number sequences** tab fill in number sequences for e-invoice file number
 and transmission number.
 
+## Electronic document property types
+Settings these functionality can be used for different purpose and can be applied both to a customer or legal entity record:
+1. Stamp duty (Bollo), applied to Legal entity (The sum of the amounts of fees with this code will be then shown in DatiBollo block in the output XML file for Project electronic invoices) or (will be considered as stamp duty excluded from invoices totals;) Value Sl
+2. BolloPay (will be considered as stamp duty included into invoices totals.) value Slpay
 ## Customers 
 
 ### Authority office 
