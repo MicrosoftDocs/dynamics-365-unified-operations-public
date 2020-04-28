@@ -55,16 +55,17 @@ Alternatively, there is a legacy ecommerce setting called **Inventory out of sto
 
 **Out of stock threadshold**  - As mentioned earlier, this is a legacy setting. For this setting to take effect, you have to choose "Out of stock threshold" property in the "Inventory level based on" setting.
 
-## Scenarios that use the inventory setting on ecommerce
-
+## Modules that use the inventory setting on ecommerce
+Buy box, Cart, Wishlist, Store selector, Cart icon modules rely on the inventory settings. These modules display inventory ranges and/or error messages when a product cannot be added to cart due to lack of inventory. 
 
 ## Additional resources
 
 [Starter kit overview](starter-kit-overview.md)
 
-[Search results](category-search-page-overview.mdt.md)
-
-[Product collection](product-collection-module-overview.md)
-
 [Buy box](add-buy-box.md)
 
+[Cart]
+
+[Wishlist]
+
+[Store selectpr]
