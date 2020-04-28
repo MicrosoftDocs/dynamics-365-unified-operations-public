@@ -67,7 +67,7 @@ By defining **Work policies** with a **Work order type** of *Transfer receipt* a
 will not create work, but only register the inbound physical inventory on the license plate at the inbound receiving dock.
 
 > [!NOTE]
-> To enable a work policy a warehouse location must be defined as part of the **Inventory locations** section and the process will only apply for the defined locations.
+> You will need to define at least one location for a work policy as part of the **Inventory locations** section. It is not possible to specify the same location for multiple work policies.
 
 ### Receive inventory on a location which does not track license plates
 It is possible to use a warehouse location which is assigned to a **Location profile** without **Use license plate tracking** enabled and thereby directly register the inventory on-hand on a location when receiving inventory without work creation.
