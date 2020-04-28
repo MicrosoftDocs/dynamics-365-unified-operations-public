@@ -5,7 +5,7 @@ title: License plate receiving via the Warehousing mobile app
 description: This topic explains how to set up the Warehousing mobile app to support using a license plate receiving process to receive physical inventory.
 author: perlynne
 manager: tfehr
-ms.date: 04/28/2020
+ms.date: 04/29/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
