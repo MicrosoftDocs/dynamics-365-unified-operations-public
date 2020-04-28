@@ -43,7 +43,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Before you complete the steps in this topic, verify that the following prerequisites are met:
 
-- You have a development environment that has Platform update 21 or later in own your Microsoft Azure subscription.
+- You have a development environment that has Platform update 21 or later in your own Microsoft Azure subscription.
 > [!IMPORTANT]
 > If your Finance and Operations apps were deployed in 21Vianet, the platform update of your environment must be Platform Update 35 or above
 - You have Microsoft Visual Studio 2015 Enterprise edition in a development environment.
