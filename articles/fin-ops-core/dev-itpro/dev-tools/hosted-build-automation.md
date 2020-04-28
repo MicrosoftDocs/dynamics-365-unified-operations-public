@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-You can automate building X++ code and creating deployable packages on any build agent running on Windows, including [Microsoft-hosted agents](https://docs.microsoft.com/azure/devops/pipelines/agents/hosted?view=azure-devops). This avoids the need for the setup, maintenance, and cost of deploying build virtual machines. It also allows you to reuse existing build agents setup to run other .NET build automation.
+You can automate building X++ code and creating deployable packages on any build agent running on Windows, including [Microsoft-hosted agents](https://docs.microsoft.com/azure/devops/pipelines/agents/hosted?view=azure-devops). This automation avoids the need for the setup, maintenance, and cost of deploying build virtual machines. It also allows you to reuse existing build agents setup to run other .NET build automation.
 
 > [!NOTE]
 > This feature is limited to compiling and packaging. There is no support for X++ unit testing (SysTest), database synchronization or other features requiring the runtime (Application Object Server) or its components.
@@ -57,20 +57,20 @@ To build X++ code, the basic developer tools such as the X++ compiler (xppc.exe)
 
 The following packages can be downloaded from the **Shared Asset Library**:
 
-- Microsoft.Dynamics.AX.Platform.CompilerPackage : This package contains the X++ compiler and related tools necessary to perform a build.
-- Microsoft.Dynamics.AX.Platform.DevALM.BuildXpp : This package contains the compiled X++ code for the Application Platform and related modules, optimized for building.
-- Microsoft.Dynamics.AX.Application.DevALM.BuildXpp : This package contains the compiled X++ code for the Application Suite and related modules, optimized for building.
+- Microsoft.Dynamics.AX.Platform.CompilerPackage: This package contains the X++ compiler and related tools necessary to perform a build.
+- Microsoft.Dynamics.AX.Platform.DevALM.BuildXpp: This package contains the compiled X++ code for the Application Platform and related modules, optimized for building.
+- Microsoft.Dynamics.AX.Application.DevALM.BuildXpp: This package contains the compiled X++ code for the Application Suite and related modules, optimized for building.
 
-You should download these packages from LCS and add them to an Artifacts feed in the Azure DevOps account where the builds will run. For more information on creating an Artifacts feed and adding NuGet packages, see these topics:
+Download these packages from LCS and add them to an Artifacts feed in the Azure DevOps organization where the builds will run. For more information on creating an Artifacts feed and adding NuGet packages, see these topics:
 
 - [Get started with NuGet packages in Azure DevOps Services and TFS](https://docs.microsoft.com/azure/devops/artifacts/get-started-nuget?view=azure-devops)
 - [Create a feed](https://docs.microsoft.com/azure/devops/artifacts/get-started-nuget?view=azure-devops#create-a-feed)
 - [Create and publish your own NuGet package](https://docs.microsoft.com/azure/devops/artifacts/get-started-nuget?view=azure-devops#create-and-publish-your-own-nuget-package).
 
 > [!NOTE]
-> Free Azure DevOps accounts have limited storage for Artifacts. Consider deleting old and unused versions to free up storage capacity. For more information, see [Sign up for Azure Artifacts](https://docs.microsoft.com/azure/devops/artifacts/start-using-azure-artifacts?view=azure-devops#billing-and-free-monthly-usage).
+> Free Azure DevOps organizations have limited storage for Artifacts. Consider deleting old and unused versions to free up storage capacity. For more information, see [Sign up for Azure Artifacts](https://docs.microsoft.com/azure/devops/artifacts/start-using-azure-artifacts?view=azure-devops#billing-and-free-monthly-usage).
 
-To identify which packages to use during the build and where to find them, you must provide a **nuget.config** file and a **packages.config** during the build. Creating these files and adding them to the source control repository is the recommended way. The files can be stored anywhere in source control, since the path to these files are explicit inputs for the NuGet command.
+To identify which packages to use during the build and where to find them, you must provide a **nuget.config** file and a **packages.config** during the build. Creating these files and adding them to the source control repository is the recommended way. The files can be stored anywhere in source control, since the paths to these files are explicit inputs for the NuGet command.
 
 The **nuget.config** file provides NuGet with the source feed where the packages can be found. The **packages.config** file specifies the packages and their versions. To build against a newer version, updating the versions in **packages.config** is all that is required. For more information, including a sample **nuget.config** file, see [Restore Package Management NuGet packages in Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/packages/nuget-restore?view=azure-devops).
 
@@ -87,7 +87,7 @@ The following example shows a **packages.config** file for the three main packag
 
 ## Creating the pipeline
 
-Azure DevOps provides pipelines to automate builds. These come in two flavors: YML and Classic. YML pipelines are only available when using Git source control repositories. Team Foundation Version Control (TFVC) repositories can only be built using classic pipelines. For more information, see [Aure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops).
+Azure DevOps provides pipelines to automate builds. There are two types of pipelines, YML and Classic. YML pipelines are only available when using Git source control repositories. Team Foundation Version Control (TFVC) repositories can only be built using classic pipelines. For more information, see [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops).
 
 The topics below describe details of the needed steps in a pipeline to build X++ code. A sample pipeline that can be imported into an existing Azure DevOps project can be found on the [Dynamics365-Xpp-Samples-Tools](https://github.com/microsoft/Dynamics365-Xpp-Samples-Tools/tree/master/CI-CD/Pipeline-Samples) GitHub repository.
 
@@ -110,7 +110,7 @@ To build X++ using **MSBuild**, you must supply several arguments. In the build 
 | --- | --- | --- |
 | /p:BuildTasksDirectory | The path to the extracted compiler tools NuGet, including the subfolders into the DevAlm folder. |
 | /p:MetadataDirectory | The path to the X++ source code. |
-| /p:FrameworkDirectory | The path to the extracted compiler tools Nuget. |
+| /p:FrameworkDirectory | The path to the extracted compiler tools NuGet. |
 | /p:ReferenceFolder | A semi-colon separated list of paths containing binaries of X++ packages that are referenced and needed to compile, for example Application Platform and Application Suite. If the code that will be compiled has multiple packages that reference each other, the output directory should be included here as well. |
 | /p:ReferencePath | A semi-colon separated list of paths containing any non-X++ binaries that are referenced and needed to compile. You should include the extracted compiler tools location because it may contain needed references. |
 | /p:OutputDirectory | The path where the folders and binaries will be created by the compiler. |
@@ -129,7 +129,7 @@ In the pipeline samples, these commands are simplified using variables for NuGet
 
 ### Creating a full pipeline with packaging
 
-For the pipeline to be completely useful, it should include a versioning step and a packaging step. To add these steps to a pipeline, the [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension for Azure DevOps needs to be enabled and installed in the Azure DevOps Account. Review the [Azure DevOps documentation](https://docs.microsoft.com/azure/devops/marketplace/install-extension?view=azure-devops&tabs=browser) on how to install an extension for an organization.
+For the pipeline to be useful, it should include a versioning step and a packaging step. To add these steps to a pipeline, the [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension for Azure DevOps needs to be enabled and installed in the Azure DevOps Account. Review the [Azure DevOps documentation](https://docs.microsoft.com/azure/devops/marketplace/install-extension?view=azure-devops&tabs=browser) on how to install an extension for an organization.
 
 A full pipeline should at least consist of the following steps:
 
