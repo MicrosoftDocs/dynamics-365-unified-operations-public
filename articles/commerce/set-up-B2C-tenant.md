@@ -5,7 +5,7 @@ title: Set up a B2C tenant in Commerce
 description: This topic describes how to set up your Azure Active Directory (Azure AD) business-to-consumer (B2C) tenants for user site authentication in Dynamics 365 Commerce.
 author: BrianShook
 manager: annbe
-ms.date: 04/17 /2020
+ms.date: 04/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -125,8 +125,7 @@ To create a sign up and sign in user flow policy, follow these steps.
 
     | **Collect  attribute** | **Return  claim** |
     | ---------------------- | ----------------- |
-    | Email Address          |                   |
-    |                        | Email Addresses   |
+    | Email Address          | Email Addresses   |
     | Given Name             | Given Name        |
     |                        | Identity Provider |
     | Surname                | Surname           |
@@ -305,14 +304,14 @@ To add your AAD B2C tenant application information to Commerce, follow these ste
 1. Enter the following required items in the form displayed, using values from your B2C tenant and application. Fields that are not required (those without an asterisk) may be left blank.
 
     - **Application Name**: The name for your B2C Application, for example "Fabrikam B2C".
-    - **Tenant Name**: The name of your B2C Tenant, for example use "fabrikam" if the domain shows as "fabrikam.onmicrosoft.com" for the B2C Tenant. 
+    - **Tenant Name**: The name of your B2C tenant (for example, use "fabrikam" if the domain appears as "fabrikam.onmicrosoft.com" for the B2C tenant). 
     - **Forget Password Policy ID**: The forget password user flow policy ID, for example "B2C_1_PasswordReset".
     - **Signup Signin Policy ID**: The sign up and sign in user flow policy ID, for example "B2C_1_signup_signin".
     - **Client GUID**: The B2C application ID, for example "22290eb2-c52e-42e9-8b35-a2b0a3bcb9e6".
     - **Edit Profile Policy ID**: The profile editing user flow policy ID, for example "B2C_1A_ProfileEdit".
 
 1. Select **OK**. You should now see the name of your B2C application appear in the list.
-1. Select **Save** to save the entry or changes.
+1. Select **Save** to save your changes.
 
 ### Associate the B2C application to your site and channel
 
