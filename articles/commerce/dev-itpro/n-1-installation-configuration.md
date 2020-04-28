@@ -403,18 +403,18 @@ The following list describes all the KBs that are required for N-1 to work corre
 ### Dynamics 365 Retail – Microsoft Dynamics 365 7.2 headquarters
 | KB number | Title |
 |---|---|
-| 4095190 | Expose RetailSharedParameter's TransactionServiceProfileID in the RetailSharedParameters form as it is required to enable N-1 functionality when customer did not follow the official upgrade process to move data from 6.3 to D365. |
-| 4095209 | The Real-timeServiceAX63 N-1 component's webconfig contains an invalid authentication type name. This causes issue when the component tries to authenticate with the transaction service in D365 |
-| 4095189 | RetialTransactionServiceProfile table's Protocol column is not being synced to the old version channel databases from the new version D365 AX database. |
+| 4095190 | Expose RetailSharedParameter's TransactionServiceProfileID in the RetailSharedParameters form as it is required to enable N-1 functionality when customer did not follow the official upgrade process to move data from 6.3 to Dynamics 365. |
+| 4095209 | The Real-timeServiceAX63 N-1 component's webconfig contains an invalid authentication type name. This causes issue when the component tries to authenticate with the transaction service in Dynamics 365 |
+| 4095189 | RetialTransactionServiceProfile table's Protocol column is not being synced to the old version channel databases from the new version Dynamics 365 AX database. |
 | 4095191 | The user is not allowed to set the retail server URL to be http based URL as only secured URLs are allowed. This prevents the user from connecting to old (6.3) version retail servers while running in backward compatiility mode. |
 | 4132456 | \[Upgrade \& N-1\]\[Designer\] Number pad height should be extensible |
 | 4095926 | Upgrade \& N-1: Return order fails from 63MPOS as the transaction was not found on a N-1 non upgrade environment. |
 | 4095664 | Allow Microsoft Dynamics AX 2012 clients connecting to AX7.2 HQ to create new customers. |
 | 4132454 | N-1 version of 1070 fails due to duplicate record exception caused by the CompanyImage\_AX63 subjob. |
-| 4131243 | When running D365 Retail in N-1 mode, the user is not able to set the HardwareStationURL using the AX client hence may not be able to configure the 6.3 hardware station properly. |
+| 4131243 | When running Dynamics 365 Retail in N-1 mode, the user is not able to set the HardwareStationURL using the AX client hence may not be able to configure the 6.3 hardware station properly. |
 | 4338120 | Async service connector installer should use provided HQ message db name instead of always using a default name regardless of the HQ message database name provided by the user. |
-| 4337834 | When running D365 in N-1 backward compatibility the N-1 (6.3)version MPOS may fails while adding or updating customer from MPOS due to missing methods in RetailTransactionService. |
-| 4337864 | When running D365 in N-1 backward compatibility the N-1 (6.3)version MPOS may fails during login or payment when attempting to load or use the hardware profile payment merchant property. |
+| 4337834 | When running Dynamics 365 in N-1 backward compatibility the N-1 (6.3)version MPOS may fails while adding or updating customer from MPOS due to missing methods in RetailTransactionService. |
+| 4337864 | When running Dynamics 365 in N-1 backward compatibility the N-1 (6.3)version MPOS may fails during login or payment when attempting to load or use the hardware profile payment merchant property. |
 | 4132453 | Running the N-1 version of the Product download job(1040\_AX63) fails when moving data to the InventDim table in the 6.3 version channel database |
 | 4206905 | POS reports throw errors when they are run in non-upgrade N-1 environment. |
 | 4133289 | Running the N-1 version of the Product - Refunds from Journal or existing transactions failing |
