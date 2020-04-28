@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cost calculation level
-description: This topic describes the BOM level named Cost calculation level, which excludes production and batch orders from its calculations
+description: This topic describes the bill of materials (BOM) level that is named Cost calculation level. This BOM level excludes production and batch orders from its calculations.
 author: AndersGirke
 manager: tfehr
 ms.date: 04/23/2020
@@ -28,32 +28,36 @@ ms.dyn365.ops.version: Release 10.0.12
 ---
 # Cost calculation level
 
-The BOM level named **Cost calculation level** excludes production and batch orders from its calculations. The system uses this level when executing cost calculations in costing versions. The system will use the **Costing level** BOM level in processes such as recalculation and inventory close.
+The bill of materials (BOM) level that is named **Cost calculation level** excludes production orders and batch orders from its calculations. The system uses this level when it runs cost calculations in costing versions. In processes such as recalculation and inventory close, the system uses the **Costing level** BOM level instead.
 
-The following simple scenario explains the differences between the **Cost calculation level** and the **Costing level**.
+The following simple scenario shows the differences between the **Cost calculation level** BOM level and the **Costing level** BOM level.
 
-1. Consider three products A, B and C. Product C is the component of product B, and product B is the component of product A.
+You have three products: A, B, and C. Product C is the component of product B, and product B is the component of product A.
 
-    - The **Costing level** will assign following BOM levels:
-      - Product A is 0
-      - Product B is 1
-      - Product C is 2
+- **Costing level** assigns the following BOM levels:
 
-    - The **Cost calculation level** will assign following BOM levels:
-      - Product A is 0
-      - Product B is 1
-      - Product C is 2
+    - **Product A:** 0
+    - **Product B:** 1
+    - **Product C:** 2
 
-1. Then, a production order for product C is created and product A is added to the production order BOM.  After the order is estimated, BOM levels are updated as follows. 
+- **Cost calculation level** assigns the following BOM levels:
 
-    - The **Costing level** will assign following BOM levels:
-      - Product B is 1
-      - Product C is 2
-      - Product A is 3
+    - **Product A:** 0
+    - **Product B:** 1
+    - **Product C:** 2
 
-    - The **Cost calculation level** will assign following BOM levels:
-      - Product A is 0
-      - Product B is 1
-      - Product C is 2
+A production order for product C is then created, and product A is added to the production order BOM. After the order is estimated, BOM levels are updated in the following way:
 
-    This ensures that changes done to production order BOMs don't affect the cost calculations going forward.
+- **Costing level** assigns the following BOM levels:
+
+    - **Product B:** 1
+    - **Product C:** 2
+    - **Product A:** 3
+
+- **Cost calculation level** assigns the following BOM levels:
+
+    - **Product A:** 0
+    - **Product B:** 1
+    - **Product C:** 2
+
+This behavior ensures that changes to production order BOMs don't affect subsequent cost calculations.
