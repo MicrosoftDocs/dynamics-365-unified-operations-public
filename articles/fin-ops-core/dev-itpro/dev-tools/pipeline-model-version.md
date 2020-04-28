@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # X++ model-versioning in Azure Pipelines
 
-During build automation, X++ model versions can be updated to match or link to the build number of the pipeline. These updates makes it easier for customers to identify the version of the X++ packages they are running, and allows developers to track versions back to the build pipeline and the version of the source code files.
+During build automation, X++ model versions can be updated to match or link to the build number of the pipeline. These updates make it easier for customers to identify the version of the X++ packages they are running, and allows developers to track versions back to the build pipeline and the version of the source code files.
 
 This article assumes a working knowledge of [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops).
 

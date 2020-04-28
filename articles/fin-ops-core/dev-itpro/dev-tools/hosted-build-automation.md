@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-You can automate building X++ code and creating deployable packages on any build agent running on Windows, including [Microsoft-hosted agents](https://docs.microsoft.com/azure/devops/pipelines/agents/hosted?view=azure-devops). This automation avoids the need for the setup, maintenance, and cost of deploying build virtual machines. It also allows you to reuse existing build agents setup to run other .NET build automation.
+You can automate building X++ code and creating deployable packages on any build agent running on Windows, including [Microsoft-hosted agents](https://docs.microsoft.com/azure/devops/pipelines/agents/hosted?view=azure-devops). This avoids the need for the setup, maintenance, and cost of deploying build virtual machines. It also allows you to reuse existing build agents setup to run other .NET build automation.
 
 > [!NOTE]
 > This feature is limited to compiling and packaging. There is no support for X++ unit testing (SysTest), database synchronization or other features requiring the runtime (Application Object Server) or its components.
