@@ -35,9 +35,8 @@ ms.dyn365.ops.version: Platform update 25
 You may need to rotate the certificates used by your Dynamics 365 Finance + Operations (on-premises) environment as they approach their expiration date. In this topic, you will learn how to replace the existing certificates and update the references within the environment to use the new certificates.
 
 > [!WARNING]
-> The certificate rotation process should be initiated well before the certificates expire. Especially with the Data Encryption certificate as otherwise data loss could occurr for encrypted fields. See [After certificate rotation](#aftercertrotation). 
+> The certificate rotation process should be initiated well before the certificates expire. This is very important for the Data Encryption certificate, which could  cause data loss for encrypted fields. For more information, see [After certificate rotation](#aftercertrotation). 
 
-> [!NOTE]
 > Old certificates must remain in place until the certificate rotation process is complete, removing them in advance will cause the rotation process to fail.
 
 ## Preparation steps 
@@ -268,9 +267,7 @@ Continue this process following [Troubleshoot on-premises deployments](troublesh
 
 This certificate is used to encrypt data stored in the database. By default there are certain fields that are encrypted with this certificate, you can check those fields [here](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-scenario-goldenconfig#document-the-values-of-encrypted-fields). However, our API can be used to encrypt other fields that customers deem should be encrypted. 
 
-Beginning with platform update 33, there is a batch job: “Encrypted data rotation system job that needs to run at off hours when the data encryption certificate rotated” that will reencrypt data with the newly rotated certificate. This is a crawler batch job that will run for 2 hours throught 3 days to reencrypt with the new certificate all of the encrypted data. Depending on the amount of data, it's possible that the crawler is able to finish in less time than mentioned previously. 
+Beginning with platform update 33, the batch job titled “Encrypted data rotation system job that needs to run at off hours when the data encryption certificate rotated” will re-encrypt data with the newly rotated certificate. This is a crawler batch job that will run between 2 hours to 3 days to re-encrypt the new certificate with all of the encrypted data. Depending on the amount of data, it's possible that the crawler is able to finish in less time than note.
 
 > [!WARNING]
-> Make sure that the old Data Encryption certificate is not removed before all encrypted data has been re-encrypted and that it has not expired. Othwerise, this could lead to data loss. 
-
-
+> Make sure that the old Data Encryption certificate is not removed before all encrypted data has been re-encrypted and it has not expired. Otherwise, this could lead to data loss.
