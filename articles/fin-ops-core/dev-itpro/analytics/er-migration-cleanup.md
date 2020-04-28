@@ -65,4 +65,6 @@ Complete the following steps to properly resolve the mentioned above issues with
 
 [![Importing an ER format](./media/er-migration-cleanup-import.png)](./media/er-migration-cleanup-import.png)
 
+Similar issue may occur when you migrated your application instance to another location that has been used as a migration target more than once and Blob storage of which already contains files of ER templates.
+
 Because you might have several ER format configurations, this process can be time consuming. Therefore, the usage of the [Backup storage of ER templates](er-backup-storage-templates.md) feature to automatic recovery of template with broken references is preferable.
