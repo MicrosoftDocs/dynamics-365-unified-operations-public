@@ -197,47 +197,51 @@ For this example, demo data must be installed, and you must use the **USMF** dem
 
     The quantity of **10** for batch number **B11** is now picked for the sales order line and put in the **Baydoor** location. At this point, it's ready to be loaded onto the truck and dispatched to the customer's address.
 
-## Flexible license plate reservation 
+<!-- KFM: Start new -->
+
+## Flexible license plate reservation
 
 ### Business scenario
 
-In this scenario, a company uses warehouse management and work processing, and handles load planning on an individual pallet/container level outside of D365 capabilities before a work is created. These containers are represented by license plates in the inventory dimensions. Thus, this approach prior to picking assumes that specific license plates must be pre-assigned to sales order lines. Therefore, the company is looking for flexibility in the way that the license plate reservation rules are handled, so that the following behaviors occur:
+In this scenario, a company uses warehouse management and work processing, and handles load planning on an individual pallet/container level outside of Supply Chain Management before a work is created. These containers are represented by license plates in the inventory dimensions. Thus, this approach, prior to picking, assumes that specific license plates must be pre-assigned to sales order lines. Therefore, the company is looking for flexibility in the way that the license plate reservation rules are handled, so that the following behaviors occur:
 
 - A license plate can be recorded and reserved when the order is taken by the sales processor, and it can't be taken by other demands. This behavior helps guarantee that the license plate that was planned is shipped to the customer.
 
-- If the license plate isn't preliminary assigned to a sales order line, the warehouse operations can determine a license plate during picking work, after sales order registration and reservation have been done.
+- If the license plate isn't already assigned to a sales order line, the warehouse personnel can choose a license plate during picking work, after sales order registration and reservation are finished.
 
-## Reservation of a specific license plate on the sales order
+<!-- KFM: Should the following section be a subsection of the above? -->
 
-Like for specific batch reservation case, to enable license plate reservation on an order, it is required to select the **Allow reservation on demand order** check box for the **License plate** level on the **Inventory reservation hierarchies** page for hierarchy that is associated with the item.
+## Reserve a specific license plate on the sales order
+
+As for specific batch reservation case, to enable license plate reservation on an order, you must select the **Allow reservation on demand order** check box for the **License plate** level on the **Inventory reservation hierarchies** page for hierarchy that is associated with the item.
 
 ![Flexible LP reservation hierarchy](media/Flexible-LP-reservation-hierarchy.png)
 
-You can enable license plate reservation on the order at any point in your deployment. This change won’t affect any reservations and open warehouse work that were created before the change occurred. However, the **Allow reservation on demand order** check box can’t be cleared if open outbound inventory transactions with an "Issue" status of **On order**, **Reserved ordered**, or **Reserved physical** exist for one or more items that are associated with that reservation hierarchy.
+You can enable license plate reservation on the order at any point in your deployment. This change won't affect any reservations or open warehouse work that were created before the change occurred. However, you can't clear the **Allow reservation on demand order** check box if open outbound inventory transactions with an **Issue** status of *On order*, *Reserved ordered*, or *Reserved physical* exist for one or more items that are associated with that reservation hierarchy.
 
 Even if the **Allow reservation on demand order** check box is selected for the **License plate** level, it is still possible not to reserve specific license plate on the order. In this case, default warehouse operations logic that is valid for reservation hierarchy will apply.
 
-To reserve a specific license plate, you must use an [**Open data protocol (OData)**](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/odata) process. This can be achieved directly in the application from a sales order via the **Order-committed reservations per license plate** option of the **Open in Excel** experience. In the opened entity data in Excel add-in, you need to enter following reservation related data and press Publish to send data back to D365:
+To reserve a specific license plate, you must use an *[Open data protocol (OData)](../../fin-ops-core/dev-itpro/data-entities/odata.md)* process. You can do this directly in the application from a sales order via the **Order-committed reservations per license plate** option of the **Open in Excel** command. In the opened entity data in the Excel add-in, you must enter the following reservation-related data and then select **Publish** to send data back to Supply Chain Management:
 
 - Reference (Only *Sales order* is supported)
-- Order number (Can get derived from the lot)
+- Order number (Can be derived from the lot)
 - Lot ID
 - License plate
 - Quantity
 
-If you need to reserve specific license plate for a batch-tracked item, you may use the **Batch reservation** page. Please see [Batch specific reservation - Enter sales order details](#enter-sales-order-details) for the details. 
+If you need to reserve a specific license plate for a batch-tracked item, use the **Batch reservation** page, as described in [Batch specific reservation - Enter sales order details](#enter-sales-order-details).
 
-When the sales order line that uses order-committed license plate reservation is being processed by warehouse operations, location directives aren’t used.
+When the sales order line that uses an order-committed license plate reservation is being processed by warehouse operations, location directives aren't used.
 
-If a warehouse work consists of lines that equal a complete pallet and have license plate committed quantities, it is possible to optimize a picking process by using a mobile device menu item with **Handle by license plate** check box turned on. This option allows a warehouse worker to scan a license plate to complete a pick instead of scanning all the items from the work one by one.
+If a warehouse work item consists of lines that equal a complete pallet and have license plate committed quantities, you can optimize the picking process by using a mobile device menu item with the **Handle by license plate** check box turned on. This option allows a warehouse worker to scan a license plate to complete a pick instead of scanning all the items from the work one by one.
 
 ![Flexible LP reservation hierarchy](media/Handle-by-LP-menu-item.png)
 
-Since **Handle by license plate** functionality does not support a case when a work covers several pallets, it is preferable to have a separate work for different license plates. To approach this, add **Order-committed license plate id** field as a work header break on the **Work template** page.
+Because **Handle by license plate** functionality doesn't support work that covers several pallets, it's better to have a separate work item for different license plates. To approach this, add **Order-committed license plate id** field as a work header break on the **Work template** page.
 
 ## Example scenario 2
 
-This scenario describes how to set up and process order-committed license plate reservation. You need to use **USMF** legal entity from the standard **Contoso** demo data.
+This scenario describes how to set up and process order-committed license plate reservation. You must use the **USMF** legal entity from the standard **Contoso** demo data.
 
 ### Create an inventory reservation hierarchy that allows license plate reservation
 
@@ -255,7 +259,7 @@ This scenario describes how to set up and process order-committed license plate 
 
 1. Select **OK**.
 
-1. In the row for the **License plate** dimension level, select the **Allow reservation on demand order** check box. The **Location** level is automatically selected, and you can’t clear check box for it.
+1. In the row for the **License plate** dimension level, select the **Allow reservation on demand order** check box. The **Location** level is automatically selected, and you can't clear check box for it.
 
 1. Select **Save**.
 
@@ -336,9 +340,9 @@ This scenario describes how to set up and process order-committed license plate 
     > [!NOTE]
     > Reservation line will appear in the system only if publishing is finished without errors.
 
-1. To review item’s reservation, on the **Sales order lines** FastTab, select **Inventory**, and then, in the **Maintain** group, select **Reservation**. Notice that for the sales order line with **Item1**, inventory of **10** is reserved, and for the sales order line with **Item2**, inventory of **5** is reserved.
+1. To review item's reservation, on the **Sales order lines** FastTab, select **Inventory**, and then, in the **Maintain** group, select **Reservation**. Notice that for the sales order line with **Item1**, inventory of **10** is reserved, and for the sales order line with **Item2**, inventory of **5** is reserved.
 
-1. To review item’s inventory transactions that are related to the sales order line reservation, on the **Sales order lines** FastTab, select **Inventory**, and then, in the **View** group, select **Transactions**. Notice that there are two transactions related to reservation: with **Reference** set to **Sales order** and **Reference** set to **Order-committed reservation**. 
+1. To review item's inventory transactions that are related to the sales order line reservation, on the **Sales order lines** FastTab, select **Inventory**, and then, in the **View** group, select **Transactions**. Notice that there are two transactions related to reservation: with **Reference** set to **Sales order** and **Reference** set to **Order-committed reservation**. 
 
     > [!NOTE]
     > A transaction where the **Reference** field is set to **Sales order** represents the order line reservation for inventory dimensions that are above the **Location** level – site, warehouse, and inventory status.
@@ -351,10 +355,10 @@ This scenario describes how to set up and process order-committed license plate 
 
 1. On the **Sales order lines** FastTab, select **Warehouse** and then select **Work details**. 
 
-1. Like for specific batch reservation case, the system doesn’t use location directives during creation of the work for the sales order with license plate reservation. The order-committed reservation specifies all the inventory dimensions including the location, therefore there is no need to use location directives since these inventory dimensions are simply populated in the work. They are displayed on the **Work inventory transactions** page under the **From inventory dimensions** section.
+1. Like for specific batch reservation case, the system doesn't use location directives during creation of the work for the sales order with license plate reservation. The order-committed reservation specifies all the inventory dimensions including the location, therefore there is no need to use location directives since these inventory dimensions are simply populated in the work. They are displayed on the **Work inventory transactions** page under the **From inventory dimensions** section.
 
     > [!NOTE]
-    > After the work is created, the item’s inventory transaction where the **Reference** field is set to **Order-committed reservation** is removed. The inventory transaction where the **Reference** field is set to **Work** now holds the physical reservation on all the quantity’s inventory dimensions.
+    > After the work is created, the item's inventory transaction where the **Reference** field is set to **Order-committed reservation** is removed. The inventory transaction where the **Reference** field is set to **Work** now holds the physical reservation on all the quantity's inventory dimensions.
 
 1. On the mobile device, finish picking and putting the work using menu item with **Handle by license plate** check box turned on.
 
@@ -363,9 +367,11 @@ This scenario describes how to set up and process order-committed license plate 
     >
     > It is recommended to have separate work generated for each license plate. To achieve this, use **Work header breaks** feature on the **Work template** page.
     
-    The license plate **LP02** is now picked for sales order lines and put in the **Baydoor** location. At this point, it’s ready to be loaded and dispatched to the customer.
+    The license plate **LP02** is now picked for sales order lines and put in the **Baydoor** location. At this point, it's ready to be loaded and dispatched to the customer.
 
-## Exception handling of warehouse work thas has order-committed batch numbers
+<!-- KFM: End new -->
+
+## Exception handling of warehouse work that has order-committed batch numbers
 
 Warehouse work for picking order-committed batch numbers is subject to the same standard warehouse exception handling and actions as regular work. In general, the open work or work line can be canceled, it can be interrupted because a user location is full, it can be short-picked, and it can be updated because of a movement. Likewise, the picked quantity of work that has already been completed can be reduced, or the work can be reversed.
 
