@@ -5,7 +5,7 @@ title: Process life event changes
 description: Process life event changes in Microsoft Dynamics 365 Human Resources for life event changes.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -31,8 +31,6 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Process life event changes
-
-[!include [banner](includes/preview-feature.md)]
 
 Process life event changes in Microsoft Dynamics 365 Human Resources for two life event changes:
 

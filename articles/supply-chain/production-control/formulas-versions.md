@@ -4,7 +4,7 @@
 title: Formulas and formula versions
 description: This topic provides information about formulas and formula versions. A formula defines the materials, ingredients, and outcomes of a specific process in process manufacturing. Formulas are used to plan and produce products in process manufacturing.
 author: cvocph 
-manager: AnnBe
+manager: tfehr
 ms.date: 09/12/2017
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ ms.search.form: PlanActivity, ReqSupplyDemandSchedule
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 

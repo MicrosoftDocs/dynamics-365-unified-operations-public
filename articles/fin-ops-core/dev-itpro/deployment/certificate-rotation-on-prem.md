@@ -5,7 +5,7 @@ title: Certificate rotation
 description: This topic explains how to place existing certificates and update the references within the environment to use the new certificates.
 author: PeterRFriis
 manager: AnnBe
-ms.date: 03/16/2020
+ms.date: 04/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -68,8 +68,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 	
         ```powershell
         # If remoting, only execute
-        # .\Complete-PreReqs-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
-        # .\Test-D365FOConfiguration-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+        # .\Complete-PreReqs-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ForcePushLBDScripts
 
         .\Import-PfxFiles.ps1
         .\Set-CertificateAcls.ps1
@@ -78,6 +77,8 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
     3. Run the following script to validate the VM setup.
     
         ```powershell
+        # If remoting, only execute
+        # .\Test-D365FOConfiguration-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
         .\Test-D365FOConfiguration.ps1
         ```
 

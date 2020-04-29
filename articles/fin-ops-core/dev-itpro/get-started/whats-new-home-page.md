@@ -5,7 +5,7 @@ title: What's new and changed in Platform updates
 description: This topic points to topics that describe the new and changed features in each Platform update for Finance and Operations apps. 
 author: sericks007
 manager: AnnBe
-ms.date: 03/11/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -37,7 +37,8 @@ To see what's new or changed in the Platform updates for Finance and Operations 
 
 | **Version**        | **Build number** | **Auto-update availability** | **Learn more**                                                                                                                                                                                                                        |
 |--------------------|------------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Platform update 34 | 7.0.5600         | May 2020     | [Preview features in Platform update 34 for Finance and Operations apps](whats-new-platform-update-34.md)  |
+| Platform updates for 10.0.11 | 7.0.5644     | July 2020     | [Platform updates for version 10.0.11 of Finance and Operations apps](whats-new-platform-update-35.md)  |
+| Platform updates for 10.0.10 | 7.0.5600         | May 2020     | [Platform updates for version 10.0.10 of Finance and Operations apps](whats-new-platform-update-34.md)  |
 | Platform update 33 | 7.0.5559         | April 2020     | [What's new or changed in Platform update 33 for Finance and Operations apps](whats-new-platform-update-33.md)  |
 | Platform update 32 | 7.0.5493         | February 2020     | [What's new or changed in Platform update 32 for Finance and Operations apps](whats-new-platform-update-32.md)  |
 | Platform update 31 | 7.0.5457      | January 2020     | [What's new or changed in Platform update 31 for Finance and Operations apps](whats-new-platform-update-31.md) |

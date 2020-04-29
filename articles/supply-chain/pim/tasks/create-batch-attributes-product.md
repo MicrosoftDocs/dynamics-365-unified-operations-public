@@ -4,7 +4,7 @@
 title: Create batch attributes for a product
 description: This procedure shows how to create a batch attribute, assign default value ranges, and include the attribute in a group. 
 author: ShylaThompson
-manager: AnnBe 
+manager: tfehr 
 ms.date: 11/14/2016
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: PdsBatchAttrib
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  

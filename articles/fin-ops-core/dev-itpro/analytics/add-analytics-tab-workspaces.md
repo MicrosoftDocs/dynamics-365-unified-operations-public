@@ -90,7 +90,7 @@ Follow these steps to extend the form definition for the **Reservation managemen
 8. Right-click, and then select **New Tab Page**.
 9. Rename the tab page to something meaningful, such as **Analytics**.
 10. In the form designer, select **Analytics (Tab Page)**.
-11. Set the **Caption** property to **Analytics**.
+11. Set the **Caption** property to **Analytics**, and set the **Auto Declaration** property to **Yes**.
 12. Right-click the control, and then select **New** \> **Group** to add a new form group control.
 13. Rename the form group to something meaningful, such as **powerBIReportGroup**.
 14. In the form designer, select **PanoramaBody (Tab)**, and then drag the control onto the **Workspace** tab.

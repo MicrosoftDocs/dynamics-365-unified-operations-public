@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview banner](../../includes/preview-banner.md)]
+
 
 Worker data can be mastered in more than one Microsoft Dynamics 365 app. For example, Human resources (HR) data can be managed in Dynamics 365 Human Resources, Dynamics 365 Commerce, and Dynamics 365 Supply Chain Management. Regardless of where the data originates, it's integrated behind the scenes. The ability to integrate data about workers gives you the flexibility to master worker data in any Dynamics 365 app. It also provides a comprehensive view of the information in Dynamics 365 apps.
 

@@ -34,10 +34,9 @@ ms.dyn365.ops.version: 2012
 
 You can use Task recorder and Business process modeler (BPM) to create user acceptance test libraries. Task recorder is a powerful tool to record test cases and organize them by business process using BPM. As a Microsoft partner you can use BPM to distribute test libraries to your customers via LCS and LCS solutions. If you are a customer, use BPM to author and distribute test libraries across different projects and team.
 
-Because BPM can be synchronized with Azure DevOps (formerly known as Visual Studio Team Services), you can automatically create test cases (including test steps) in your Azure DevOps project. Azure DevOps can then serve as your test configuration and test management tool where you can create targeted test plans and test suites, manage the execution of tests and investigate results.  
+Because BPM can be synchronized with Azure DevOps (formerly known as Visual Studio Team Services), you can automatically create test cases (including test steps) in your Azure DevOps project. Azure DevOps can then serve as your test configuration and test management tool where you can create targeted test plans and test suites, manage the execution of tests and investigate results. For more information about testing with Azure DevOps, see [What are test plans, test suites, and test cases?](https://docs.microsoft.com/azure/devops/test/create-a-test-plan?view=azure-devops#what-are-test-plans-test-suites-and-test-cases)
 
 This topic walks through the process of creating and executing acceptance test suites to be used for manual or automated testing.
-
 
 ## Create a Scenario Acceptance Testing BPM library
 BPM is a great LCS tool to describe a hierarchy of business processes and user tasks. LCS also allows Microsoft partners and customers to author and distribute BPM libraries across LCS projects via the Asset library. This section describes how to take advantage of BPM to define your acceptance test library.
@@ -178,10 +177,7 @@ To learn more about using the Regression suite automation tool, see the followin
 - [PART 2: Regression Suite Automation Tool -- Testing Lifecycle Demo](https://infopedia.eventbuilder.com/event?eventid=r5j6c1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Regression suite automation tool](../perf-test/rsat/rsat-overview.md)
  
-For a hands-on lab experience, see the following topics:
-
-- [Set up and install Regression suite automation tool tutorial](../../fin-ops/get-started/hol-set-up-regression-suite-automation-tool.md)
-- [Use the Regression suite automation tool tutorial](../../fin-ops/get-started/hol-use-regression-suite-automation-tool.md)
+For a hands-on lab experience, see [Use the Regression suite automation tool tutorial](../../fin-ops/get-started/hol-use-regression-suite-automation-tool.md).
 
 #### Investigate test runs
 Once an automated run is complete, on the Azure DevOps toolbar, select **Test > Runs** (or **Test Plans > Runs**) to investigate your test run. Select the desired test run to investigate test case failures and errors. You can also go to your test suite in Azure DevOps to see the latest results associated with your test cases.

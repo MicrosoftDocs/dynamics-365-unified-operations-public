@@ -5,7 +5,7 @@ title: Work with preset layouts
 description: This topic describes how to work with preset layouts in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -48,7 +48,7 @@ There are two methods for creating a preset layout. You can save an existing cus
 To create a preset layout from an existing custom layout, follow these steps.
 
 1. Open an existing page that doesn't currently use a preset layout, and that has a module structure that you want to reuse for other pages on your site.
-1. Select **Check out**.
+1. Select **Edit** to check out the page.
 1. Select **Save as new layout**. The **Save as new layout** dialog box appears.
 1. Enter a name and description for your preset layout. The values that you enter will be shown to other authors when they create new pages from your layout or switch to it. Therefore, enter values that will be useful to page authors.
 1. Select **OK**.
@@ -95,14 +95,14 @@ To set or change the theme for all child pages that use your preset layout, foll
 To save and check in your preset layout, follow these steps.
 
 1. Select **Save** at the top of the layout editor. Saved changes don't affect downstream pages until they are checked in.
-1. Select **Check In**. Your changes are now discoverable for downstream workflows.
+1. Select **Finish editing**. Your changes are now discoverable for downstream workflows.
 
 To preview your changes, either open an existing page that uses the preset layout or create a new page from the layout.
 
 After you've previewed the changes to your preset layout, follow one of these steps to publish the layout to your live site:
 
 * Go to **Layouts**, select the layout, and then select **Publish**.
-* In the layout editor, select **Publish**.
+* Select the layout name to open the layout editor, and then select **Publish**.
 * Publish a page that references the unpublished layout. The layout will automatically be published.
 
 > [!WARNING]

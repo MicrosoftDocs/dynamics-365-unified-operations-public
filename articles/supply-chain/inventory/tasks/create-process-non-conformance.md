@@ -4,7 +4,7 @@
 title: Create and process a conformance
 description: This topic explains how to perform nonconformance management, based on an existing quality order.
 author: perlynne
-manager: AnnBe
+manager: tfehr
 ms.date: 08/07/2019
 ms.topic: business-process
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Operations
 # ms.tgt_pltfrm:  
 # ms.custom:  

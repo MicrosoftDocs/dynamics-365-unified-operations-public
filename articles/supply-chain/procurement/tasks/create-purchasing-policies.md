@@ -4,7 +4,7 @@
 title: Create purchasing policies
 description: This topic shows you how to create purchasing policies to align with your business processes for purchasing. 
 author: mkirknel
-manager: AnnBe 
+manager: tfehr 
 ms.date: 07/31/2019
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: SysPolicyListPage, SysPolicyParameters, SysPolicy, RequisitionPurposeRule   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  

@@ -5,7 +5,7 @@ title: Enrich a product page
 description: This topic describes how to enrich a product page in Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -58,7 +58,7 @@ To enrich a product page, follow these steps.
 1. Select **Feature**, and then select **OK**.
 1. In the properties pane on the right, in the **Rich Text** field, enter the updated description of the product.
 1. In the **Heading** field, enter heading text, and then select **OK**.
-1. Select **Save**, and then select **Check In**.
+1. Select **Save**, and then select **Finish editing**.
 1. In the **Comments** field, enter **Enriched a product**, and then select **OK**.
 1. Select **Preview** to preview the enriched product page. When you've finished, close the preview tab to return to the authoring tool.
 1. Select **Publish**.

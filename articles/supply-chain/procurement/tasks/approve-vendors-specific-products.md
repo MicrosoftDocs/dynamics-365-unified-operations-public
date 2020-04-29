@@ -4,7 +4,7 @@
 title: Approve vendors for specific products
 description: This procedure shows you how to approve vendors for specific products. 
 author: mkirknel
-manager: AnnBe 
+manager: tfehr 
 ms.date: 07/22/2019
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: EcoResProductDetailsExtended, PdsApprovedVendorList, VendTable   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  

@@ -4,7 +4,7 @@
 title: Register items for an advanced warehousing enabled item using an item arrival journal
 description: This procedure shows you how to register items using the item arrival journal when you are using advanced warehouse management processes. 
 author: ShylaThompson
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: WMSJournalTable, WMSJournalCreate, WHSLicensePlate   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  

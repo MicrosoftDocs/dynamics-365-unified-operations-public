@@ -3,8 +3,8 @@
  
 title: Create a repeat purchase order
 description: This topic shows you how to create a repeat purchase order (PO) by copying lines from an earlier purchase order document to a new PO or to an existing PO. 
-author: FrankDahl
-manager: AnnBe 
+author: mkirknel
+manager: tfehr 
 ms.date: 07/29/2019
 ms.topic: business-process 
 ms.prod:  
@@ -16,13 +16,13 @@ ms.technology:
 ms.search.form: PurchTable, PurchCreateOrder, PurchCopying   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: fdahl
+ms.author: mkirknel
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---

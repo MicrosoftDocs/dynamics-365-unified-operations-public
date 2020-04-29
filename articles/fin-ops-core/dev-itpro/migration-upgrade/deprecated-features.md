@@ -5,7 +5,7 @@ title: Removed or deprecated features in previous releases
 description: This topic describes features that have been removed, or that were planned for removal from Dynamics 365 for Finance and Operations and previous releases of that product.
 author: sericks007
 manager: AnnBe
-ms.date: 03/05/2020
+ms.date: 04/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -236,7 +236,7 @@ Support for creating project-based sales orders where the project contract has m
 | **Replaced by another feature?**   | No. |
 | **Product areas affected**         | Product information management |
 | **Deployment option**              | All  |
-| **Status**                         | Removed as of Finance and Operations 10.0.0 with Platform update 24. (If and only if you need to repair data corruption caused by a previous rename of the primary key of a released product, please contact Microsoft Support to request temporary removal of this restriction.) |
+| **Status**                         | Removed as of Finance and Operations 10.0.0 with Platform update 24.|
 
 
 ## Finance and Operations 8.1.3 with Platform update 23
@@ -269,11 +269,11 @@ Embedded key performance indicators (KPIs) could be modeled in Visual Studio by 
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | It is possible for table metadata definitions to have field groups containing invalid field references. This issue is currently categorized as a *compiler warning* rather than an *error*, meaning that the deployable package creation and deployment can proceed without fixing the issue. If deployed, this can cause runtime failures in Financial Reporting and SQL Server Reporting Services (SSRS). To fix this issue:<br><br>1. Remove the invalid field reference from the table field group definition.<br><br>2. Recompile.<br><br>3. Ensure any warnings or errors are addressed. |
-| **Replaced by another feature?**   | This warning will be replaced by a compile error in the future.  |
-| **Product areas affected**         | Visual Studio development tools. |
-| **Deployment option**              | All. |
-| **Status**                         | Deprecated: The warning will become a compile-time error in the future. We're currently targeting Platform update 30. |
+| **Reason for deprecation/removal** | It is possible for table metadata definitions to have field groups containing invalid field references. If deployed, this can cause runtime failures in Financial Reporting and SQL Server Reporting Services (SSRS). This issue is currently categorized as a *compiler warning* rather than an *error*, meaning that the deployable package creation and deployment can proceed without fixing the issue. To fix this issue:<br><br>1. Remove the invalid field reference from the table field group definition.<br><br>2. Recompile.<br><br>3. Ensure any warnings or errors are addressed. |
+| **Replaced by another feature?**   | This warning will be replaced by a compile error in the future. |
+| **Product areas affected**         | Visual Studio development tools |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: The warning is a compile-time error with platform updates for version 10.0.11 of Finance and Operations apps. |
 
 #### Complete list
 To access the full list of APIs that are being deprecated, see [Deprecation of methods and metadata elements](deprecation-deletion-apis.md).

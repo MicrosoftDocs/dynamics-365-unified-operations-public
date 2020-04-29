@@ -5,7 +5,7 @@ title: Test recorder and Regression suite automation tool for Cloud POS
 description: This topic explains how to automate user acceptance testing (UAT) by using the POS test recorder and the Regression suite automation tool (RSAT).
 author: mugunthanm
 manager: AnnBe
-ms.date: 03/23/2020
+ms.date: 04/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -172,6 +172,9 @@ To resume the recording session after you've paused it, select **Recording**.
 
 ### Create a recording
 
+> [!IMPORTANT]
+> Before creating the recording, turn off the Show app tour and Show app introduction after sign in. To do this, go to the **CPOS Settings > Application help** section (applicable only if demo data is used).
+
 Follow these steps to create a new recording by using the test recorder:
 
 1. Launch Cloud POS.
@@ -237,19 +240,12 @@ Download the Microsoft Windows Installer (MSI) package file for RSAT from [Regre
 
 The following procedure describes the configuration that is required to run the POS test cases.
 
-If you are using the preview version of POS RSAT, after the installation of RSAT, add the following setting in the Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config configuration file. This file is located in main RSAT installation folder (usually C:\Program Files (x86)\Regression Suite Automation Tool).
-
-```xml
-<add key="RetailPos" value="true" />
-```
-
-If this setting is not used, Retail POS tab will not be shown on the **RSAT Settings** tab.
-
 ### Configure the POS settings
 
 1. Open RSAT from your desktop.
 2. Select the **Settings** button in the upper right to configure RSAT.
-3. In the **Settings** dialog box, on the **Retail POS** tab, on the **Playback environment** tab, set the following fields:
+3. In the **Settings** dialog box, click the **Optional** tab and select the **Configure Retail POS** option to enable the Retail POS automation.
+4. In the **Settings** dialog box, on the **Retail POS** tab, on the **Playback environment** tab, set the following fields:
 
     + **Cloud POS URL** – Enter the URL of the Cloud POS environment where you want to run the test.
     + **Commerce Scale Unit URL** – Enter the Commerce Scale Unit URL that should be used for device activation, if the device hasn't already been activated.
@@ -265,7 +261,7 @@ If this setting is not used, Retail POS tab will not be shown on the **RSAT Sett
 
     [![Playback environment](./media/Settings.PNG)](./media/Settings.PNG)
 
-4. Select the **POS login credentials** tab.
+5. Select the **POS login credentials** tab.
 
     During a recording session, the test recorder captures only the user name from the POS. It doesn't store any password. However, to run the test, you must have both the user name and the password that are used to sign in to POS. This tab captures the POS user name and password, so that the password information is securely stored outside the recording file. During test execution, the user ID is then mapped to the same user ID that is entered in RSAT, and the password is retrieved.
     
@@ -273,15 +269,15 @@ If this setting is not used, Retail POS tab will not be shown on the **RSAT Sett
 
     [![POS login credentials](./media/PosLogin.png)](./media/PosLogin.png)
 
-5. Select **New**.
+6. Select **New**.
 
     [![POS user](./media/EditPosUser.png)](./media/EditPosUser.png)
 
-6. In the **Username** field, enter the user name for sign-in to POS.
-7. In the **Password** field, enter the password for sign-in to POS.
-8. Repeat steps 6 through 8 to enter other user names and passwords for sign-in to POS.
-9. To edit a set of POS sign-in credentials, select **Edit**.
-10. To delete a set of POS sign-in credentials, select **Delete**.
+7. In the **Username** field, enter the user name for sign in to POS.
+8. In the **Password** field, enter the password for sign in to POS.
+9. Repeat steps 6 through 8 to enter other user names and passwords.
+10. To edit a set of POS sign-in credentials, select **Edit**.
+11. To delete a set of POS sign-in credentials, select **Delete**.
 
 ## Run tests
 
@@ -320,6 +316,20 @@ This section explains how to modify Excel files by specifying input and validati
 In RSAT, select one or more test cases to modify, and then select **Edit**. An Excel window is opened for each test case that you selected. Alternatively, you can open the Excel files directly from the working directory.
 
 In addition to a **Summary** tab, the Excel file includes a **Variables** tab that has the details of all the variables that were generated. POS automatically generates variables for all the input values that are entered during a recording session. You don't have to generate the variables separately. Each variable has a unique variable ID that you can pass, in order, to different test cases in a single instance of test execution. All the variables on the **Variables** tab appear in the order that they were entered in during the recording session.
+
+To pass variables or values between POS test cases, select the test cases in the RSAT tool and open the Variables.xlsx file by selecting the Excel icon in the tool. Copy the Variable ID (Column C) value and paste it in the Variable value field (Column D). For example, to pass the Receipt ID from **Test case 1 - variable.xlsx** to **Test case 2 - variable.xlsx**, copy the variable ID value from column C: c8cc0571-9a27-b3c5-0749-c26c3cca6afe. Paste the value in the Variable value column D in to the test case 2 - variable.xlsx file, in braces: **{{ c8cc0571-9a27-b3c5-0749-c26c3cca6afe}}**
+
+### Test case 1 – Variable.xlsx
+
+| A  (Description)            | B (View name) | C (Variable ID)| D (Variable value) |
+|---------------------------------|-------------------------------|------------------------------|--------------------------------------|
+| Receipt Id "HOU123R456" | ShowJournalView        | c8cc0571-9a27-b3c5-0749-c26c3cca6afe   | HOU123R456     |
+
+### Test case 2 – Variable.xlsx
+
+| A  (Description)            | B (View name) | C (Variable ID)| D (Variable value) |
+|---------------------------------|-------------------------------|------------------------------|--------------------------------------|
+| Receipt Id "HOU123R456" | ShowJournalView  | 80f23afa-5b76-5442-d16a-6cc9b8b245cb| **{{c8cc0571-9a27-b3c5-0749-c26c3cca6afe}}** |
 
 ### Validate expected values
 
@@ -361,6 +371,7 @@ You must manually delete these files and secure them as you require. All these f
 
 ### Creating test cases by using the test recorder
 
++ Before creating the recording, turn off the Show app tour and Show app introduction after sign in. To do this, go to the **CPOS Settings > Application help** section (applicable only if demo data is used).
 + Make sure that all your recordings start from the POS log-in screen.
 + Keep individual recordings short, and focus on a business task that is performed by one user, such as the creation a sale transaction. This approach makes it easier to maintain and reuse test cases.
 + Don't record any scenario that includes secrets.
@@ -370,6 +381,7 @@ You must manually delete these files and secure them as you require. All these f
 + Keystroke recording performance may be slow, so type slowly while recording so that all the events are captured property.
 + Peripheral emulation is currently not supported, use a keyboard wedge-based device.
 + Don’t hold a key down during recording, as this could record multiple key press events.
++ Extension controls should follow the best practice of proper XPath and if possible have a unique ID for each HTML element.
 
 ## Troubleshooting guides
 

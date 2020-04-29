@@ -33,7 +33,6 @@ ms.dyn365.ops.version: AX 7.0.1
 # Health check for POS peripherals and services
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic describes the health check operation in the point of sale (POS).
 
