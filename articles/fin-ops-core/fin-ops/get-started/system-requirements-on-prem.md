@@ -114,7 +114,7 @@ This means that users of the Finance + Operations (on-premises) application will
 
 Examples for a full 2-way trust setup could be:
 
-<img src="./media/lbd-domain2WayTrust.png" width="700" hspace="50"/>
+<img src="./media/2WayTrust.png" width="700" hspace="50"/>
 
 #### Known limitations with using the full 2-way trust setup:
 * Import of security groups from the Windows Server 2008 R2 user domain is not supported.
