@@ -46,7 +46,7 @@ The following entities are now available. If you don't see these entities listed
 - **Measurement**
 - **Goal Measurement**
 
-In addition, **Total score** and **Average score** were added to the **Discussion** entity
+In addition, **Total score** and **Average score** were added to the **Discussion** entity.
 
 ## Increase length of leave request comments (275641)
 
