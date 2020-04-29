@@ -5,7 +5,7 @@ title: Certificate rotation
 description: This topic explains how to place existing certificates and update the references within the environment to use the new certificates.
 author: PeterRFriis
 manager: AnnBe
-ms.date: 04/20/2020
+ms.date: 04/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,7 +34,9 @@ ms.dyn365.ops.version: Platform update 25
 
 You may need to rotate the certificates used by your Dynamics 365 Finance + Operations (on-premises) environment as they approach their expiration date. In this topic, you will learn how to replace the existing certificates and update the references within the environment to use the new certificates.
 
-> [!NOTE]
+> [!WARNING]
+> The certificate rotation process should be initiated well before the certificates expire. This is very important for the Data Encryption certificate, which could  cause data loss for encrypted fields. For more information, see [After certificate rotation](#aftercertrotation). 
+
 > Old certificates must remain in place until the certificate rotation process is complete, removing them in advance will cause the rotation process to fail.
 
 ## Preparation steps 
@@ -257,4 +259,15 @@ Continue this process following [Troubleshoot on-premises deployments](troublesh
 
 1. Always check if the SQL server certificate has expired. For more information, see [Set up SQL Server](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#setupsql).
 
-2. Check to be sure that the Active Directory Federation Service (ADFS) certificate has not expired. 
+2. Check to be sure that the Active Directory Federation Service (ADFS) certificate has not expired.
+
+## <a name="aftercertrotation"></a> After certificate rotation
+
+### Data encryption certificate
+
+This certificate is used to encrypt data stored in the database. By default there are certain fields that are encrypted with this certificate, you can check those fields [here](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-scenario-goldenconfig#document-the-values-of-encrypted-fields). However, our API can be used to encrypt other fields that customers deem should be encrypted. 
+
+Beginning with platform update 33, the batch job titled “Encrypted data rotation system job that needs to run at off hours when the data encryption certificate rotated” will re-encrypt data with the newly rotated certificate. This is a crawler batch job that will run between 2 hours to 3 days to re-encrypt the new certificate with all of the encrypted data. Depending on the amount of data, it's possible that the crawler is able to finish in less time than note.
+
+> [!WARNING]
+> Make sure that the old Data Encryption certificate is not removed before all encrypted data has been re-encrypted and it has not expired. Otherwise, this could lead to data loss.
