@@ -72,7 +72,7 @@ These components depend on the following system software:
   > The domain controller must be Microsoft Windows Server 2012 R2 or later and must have a domain functional level of 2012 R2 or more.    For more information about domain functional levels, see the following topics:
   >   - [What Are Active Directory Functional Levels](https://technet.microsoft.com/library/cc787290(v=ws.10).aspx)
   >   - [Understanding Active Directory Domain Services Functional Levels](https://technet.microsoft.com/library/understanding-active-directory-functional-levels(v=ws.10).aspx)
-  >   - [Compatibility with Windows 2008 R2 Domain Functional Level through a full 2-way trust](../../fin-ops/get-started/system-requirements-on-prem.md#full-2-way-trust)
+  >   - [Full 2-way trust](../../fin-ops/get-started/system-requirements-on-prem.md#full-2-way-trust)
 
 
 ## Lifecycle Services
