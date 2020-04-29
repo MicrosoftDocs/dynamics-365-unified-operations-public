@@ -5,7 +5,7 @@ title: System requirements for on-premises deployments
 description: This topic lists the system requirements for on-premises deployments.
 author: kfend
 manager: AnnBe
-ms.date: 11/14/2019
+ms.date: 04/29/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
