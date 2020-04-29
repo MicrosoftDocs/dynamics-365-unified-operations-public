@@ -3351,25 +3351,25 @@
             - name: Create formats
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/finance/toc.json
             - name: Configure format to perform counting and summing
-              href: ../fin-ops-core/dev-itpro/analytics/er-format-counting-summing-2.md?toc=/dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/dynamics365/finance/toc.json
             - name: Generate the output for counting and summing
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/dynamics365/finance/toc.json
             - name: Run formats to perform counting and summing
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/dynamics365/finance/toc.json
           - name: Use the DOCUMENTS relations to access Document managfement files
             items:
             - name: Prepare data models
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-file-1.md?toc=dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/dynamics365/finance/toc.json
             - name: Extend data models to use Document management files
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-file-2.md?toc=dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/dynamics365/finance/toc.json
             - name: Create formats
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/dynamics365/finance/toc.json
             - name: Run formats to use Document management files
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/finance/toc.json
             - name: Modify and run formats to use Document management files
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files.5.md?toc=dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/finance/toc.json
             - name: Debug data sources
-              href: ../fin-ops-core-/dev-itpro/analytics/er-debug-data-sources.md?toc=dynamics365/finance/toc.json
+              href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=dynamics365/finance/toc.json
         - name: Configure country context dependent ER model mappings
           href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md
         - name: Configure ER formats to use parameters that are specified per legal entity
