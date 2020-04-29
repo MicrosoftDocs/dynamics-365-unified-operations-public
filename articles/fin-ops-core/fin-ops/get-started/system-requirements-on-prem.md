@@ -3,7 +3,7 @@
 
 title: System requirements for on-premises deployments
 description: This topic lists the system requirements for on-premises deployments.
-author: kfend
+author: PeterRFriis
 manager: AnnBe
 ms.date: 04/29/2020
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 55651
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kfend
+ms.author: perahlff
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 
