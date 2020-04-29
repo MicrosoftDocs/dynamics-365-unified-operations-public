@@ -990,6 +990,8 @@
         href: project-management/project-create-advanced-contracts-for-billing-based-progress.md
       - name: Project forecasts and budgets
         href: project-management/project-forecasts-budgets.md
+      - name: Create forecast models for project budgets
+        href: project-management/create-forecast-models-project-budgets.md
       - name: Transfer project budgets at fiscal year end
         href: project-management/process-project-budgets-for-fiscal-year-end.md
       - name: Project sales orders
