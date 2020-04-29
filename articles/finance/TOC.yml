@@ -3374,6 +3374,16 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/finance/toc.json
           - name: Cross-company ER data sources
             href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/finance/toc.json
+          - name: Use FINANCIAL DIMENSIONS DETAILS data sources
+            items:
+            - name: Design data models
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/dynamics365/finance/toc.json
+            - name: Map models to use financial dimensions
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/dynamics365/finance/toc.json
+            - name: Design reports
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/finance/toc.json
+            - name: Run reports
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/finance/toc.json
         - name: Configure country context dependent ER model mappings
           href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md
         - name: Configure ER formats to use parameters that are specified per legal entity
