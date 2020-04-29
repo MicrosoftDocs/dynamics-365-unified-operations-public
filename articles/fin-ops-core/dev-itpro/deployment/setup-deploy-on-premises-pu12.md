@@ -671,7 +671,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
     **Self-signed certificate for an Always-On SQL instance**
 
-    If setting up testing certificates for Always-On, you can use the following **remoting** script, which will perform the same as the following **manual** script and steps **4.**, **5.**, and **7.**.
+    If setting up testing certificates for Always-On, you can use the following **remoting** script, which will perform the same as the following **manual** script and steps **a.**, **b.**, **c.**, and **d.**.
 
     ```powershell
     .\Create-SQLTestCert-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml `
@@ -679,7 +679,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
         -SqlListenerName dax7sqlaosqla
     ```
 
-    **Manual** creation of test certificates.
+    **Manual Self-signed steps for an Always-On SQL instance** (Creation of test certificates)
     ```powershell
     # https://www.derekseaman.com/2014/11/sql-2014-alwayson-ag-pt-13-ssl.html
 
@@ -690,22 +690,24 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     $listenerName = 'dax7sqlaosqla'
     $cert = New-SelfSignedCertificate -Subject "$computerName.$domain" -DnsName "$listenerName.$domain", $listenerName, $computerName -Provider 'Microsoft Enhanced RSA and AES Cryptographic Provider'
     ```
+   > [!NOTE]
+    For further details: [How to enable SSL encryption for an instance of SQL Server by using Microsoft Management Console](https://support.microsoft.com/help/316898/how-to-enable-ssl-encryption-for-an-instance-of-sql-server-by-using-microsoft-management-console).
+    
+        For each node of the SQL cluster, follow these steps. Make sure that you make the changes on the non-active node, and that you fail over to it after changes are made.
 
-4. Use the certificate(s) to configure SSL on SQL Server. Follow the steps in [How to enable SSL encryption for an instance of SQL Server by using Microsoft Management Console](https://support.microsoft.com/help/316898/how-to-enable-ssl-encryption-for-an-instance-of-sql-server-by-using-microsoft-management-console).
-5. For each node of the SQL cluster, follow these steps. Make sure that you make the changes on the non-active node, and that you fail over to it after changes are made.
+        1. Import the certificate into LocalMachine\\My, unless you are setting up Always-On, in which case the certificate already exists on the node.
+        2. Grant certificate permissions to the service account that is used to run the SQL service. In Microsoft Management Console (MMC), right-click the certificate (**certlm.msc**), and then select **Tasks** \> **Manage Private Keys**.
+        3. Add the certificate thumbprint to HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\*MSSQL.x*\\MSSQLServer\\SuperSocketNetLib\\Certificate. For example, with SQL Server 2016 SP2: HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\MSSQL13.MSSQLSERVER\\MSSQLServer\\SuperSocketNetLib\\Certificate
+            1. From the start menu, type **regedit**, then select **regedit** to open the registry editor.
+            2. Navigate to the certificate, right-click **Modify**, then replace the value with the certificate thumbprint.
+        4. In Microsoft SQL Server Configuration Manager, set **ForceEncryption** to **Yes**.
+            1. In **SQL Server Configuration Manager**, expand **SQL Server Network Configuration**, right-click **Protocols for [server instance]**, and then select **Properties**.
+            2. In the **Protocols for [instance name] Properties** dialog box, on the **Certificate** tab, select the desired certificate from the drop-down menu for the **Certificate** box, and then click **OK**.
+            3. On the **Flags** tab, in the **ForceEncryption** box, select **Yes**, and then click **OK**
+            4. Restart the SQL Server service.
 
-    1. Import the certificate into LocalMachine\\My, unless you are setting up Always-On, in which case the certificate already exists on the node.
-    2. Grant certificate permissions to the service account that is used to run the SQL service. In Microsoft Management Console (MMC), right-click the certificate (**certlm.msc**), and then select **Tasks** \> **Manage Private Keys**.
-    3. Add the certificate thumbprint to HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\*MSSQL.x*\\MSSQLServer\\SuperSocketNetLib\\Certificate. For example, with SQL Server 2016 SP2: HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\MSSQL13.MSSQLSERVER\\MSSQLServer\\SuperSocketNetLib\\Certificate
-        1. From the start menu, type **regedit**, then select **regedit** to open the registry editor.
-        2. Navigate to the certificate, right-click **Modify**, then replace the value with the certificate thumbprint.
-    4. In Microsoft SQL Server Configuration Manager, set **ForceEncryption** to **Yes**.
-        1. In **SQL Server Configuration Manager**, expand **SQL Server Network Configuration**, right-click **Protocols for [server instance]**, and then select **Properties**.
-        2. In the **Protocols for [instance name] Properties** dialog box, on the **Certificate** tab, select the desired certificate from the drop-down menu for the **Certificate** box, and then click **OK**.
-        3. On the **Flags** tab, in the **ForceEncryption** box, select **Yes**, and then click **OK**
-        4. Restart the SQL Server service.
+4. Export the certificate (the .cer file) from each SQL cluster node, and install it in the trusted root of each Service Fabric node. You will have a minimum of 2 certificates for the Always-On cluster, but more should that have additional replicas. 
 
-6. Export the public key of the certificate (the .cer file), and install it in the trusted root of each Service Fabric node.
 
 > [!IMPORTANT]
 > If remoting was used, be sure to execute the clean up steps when the setup is complete. See the [20. Tear down CredSSP](#teardowncredssp) section for more information.
