@@ -3370,6 +3370,10 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/finance/toc.json 
           - name: Use RAW XML to add content
             href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/finance/toc.json
+          - name: Support parameterized calls of CALCULATED FIELD data sources
+            href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/finance/toc.json
+          - name: Cross-company ER data sources
+            href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/finance/toc.json
         - name: Configure country context dependent ER model mappings
           href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md
         - name: Configure ER formats to use parameters that are specified per legal entity
