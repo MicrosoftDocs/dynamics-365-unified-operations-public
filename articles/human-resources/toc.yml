@@ -109,6 +109,8 @@
         href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/human-resources/toc.json
       - name: Understand Lifecycle Services
         href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json
+    - name: Human Resources app in Teams
+      href: hr-admin-teams-leave-app.md
     - name: Documentation resources
       items:
       - name: Help system
@@ -511,6 +513,8 @@
         href: hr-employee-self-service-request-time-off.md
       - name: View team and company calendars
         href: hr-employee-self-service-calendar.md
+    - name: Manage leave requests in Teams
+      href: hr-teams-leave-app.md
     - name: Develop employees
       items:
       - name: Performance management overview
