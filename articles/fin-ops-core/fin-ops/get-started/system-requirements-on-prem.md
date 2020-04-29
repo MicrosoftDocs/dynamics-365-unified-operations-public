@@ -108,9 +108,9 @@ Consider the following domain requirements when you install Finance + Operations
 - The domain controller must be Microsoft Windows Server 2012 R2 or later, and the domain functional level must be 2012 R2 or more.
 
 ### Full 2-way trust
-For compatibility with corporate domain controllers on 2008 R2 domain functional level(DFL), a full 2-way trust between the 2008 R2 DFL user domain and the 2012 R2 DFL F&O service domain is supported from platform update 33 and onwards.
+For compatibility with corporate domain controllers on Windows 2008 R2 domain functional level (DFL), a full 2-way trust between the Windows 2008 R2 DFL user domain and the Windows 2012 R2 DFL Finance + Operations service domain is supported from Platform update 33 and later.
 
-This means that users of the Dynamics 365 F&O application will come from the 2008R2 DFL domain, and the resources and service accounts hosting the Dynamics 365 F&O infrastructure and services will come from the 2012R2 DFL domain.
+This means that users of the Dynamics 365 Finance + Operations (on-premises) application will come from the Windows 2008 R2 DFL domain, and the resources and service accounts hosting the Finance + Operations (on-premises) infrastructure and services will come from the Windows 2012 R2 DFL domain.
 
 Examples for a full 2-way trust setup could be:
 
