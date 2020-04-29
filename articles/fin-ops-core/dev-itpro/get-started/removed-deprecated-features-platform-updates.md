@@ -5,7 +5,7 @@ title: Removed or deprecated platform features
 description: This topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 03/03/2020
+ms.date: 04/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -41,6 +41,28 @@ This list is intended to help you consider these removals and deprecations for y
 
 > [!NOTE]
 > Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
+
+## Platform updates for version 10.0.11 of Finance and Operations apps
+
+### Field groups containing invalid field references
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Field groups in table metadata definitions can contain field references that aren't valid. If these field groups are deployed, they can cause runtime failures in Financial Reporting and Microsoft SQL Server Reporting Services (SSRS). Platform update 23 introduced a compiler *warning* that enabled this metadata issue to be addressed. Platform updates for version 10.0.11 of Finance and Operations apps categorize this issue as a compiler *error*.<p>To fix this issue, follow these steps.</p><ol><li>Remove the invalid field reference from the table field group definition.</li><li>Recompile.</li><li>Make sure that any errors are addressed.</li></ol> |
+| **Replaced by another feature?**   | This compiler error permanently replaces the compiler warning.  |
+| **Product areas affected**         | Visual Studio development tools |
+| **Deployment option**              | All |
+| **Status**                         | **Deprecated:** The compiler warning is a compiler error in platform updates for version 10.0.11 of Finance and Operations apps. |
+
+### ISV licenses created by using the SHA1 hashing algorithm
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The process for creating independent software vendor (ISV) licenses has changed. For more information, see [Independent software vendor (ISV) licensing](../dev-tools/isv-licensing.md#appendix-create-self-signed-certificates-for-test-purposes). |
+| **Replaced by another feature?**   | Yes. Use Windows PowerShell to create licenses. |
+| **Product areas affected**         | Visual Studio development tools |
+| **Deployment option**              | All |
+| **Status**                         | <strong>Deprecated:</strong> ISV licenses that were created by using the SHA1 hashing algorithm. This algorithm depended on certificates that were created by using the MakeCert utility, and this utility has been deprecated.<p><strong>Deprecated:</strong> The use of SHA1 for security or hashing purposes. SHA1 will cease to function in early 2021. Therefore, it should no longer be used.<p><strong>Removed:</strong> Support for Transport Layer Security (TLS) 1.0 and TLS 1.1 incoming or outgoing requests. |
 
 ## Platform update 32
 

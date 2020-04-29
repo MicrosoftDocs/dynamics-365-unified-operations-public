@@ -4,7 +4,7 @@
 title: Create an asset
 description: This topic describes how to create an asset in Asset Management.
 author: josaw1
-manager: AnnBe
+manager: tfehr
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2214
@@ -43,13 +43,13 @@ This topic describes how to create an asset in Asset Management.
 3. In the **Create assets** dialog, insert data regarding **Asset** (the asset ID) and the asset name. Select date and time for the asset in the **Effective** field. From that date, you are able to install the asset on a functional location as well as move and replace the asset in an asset structure.
 4. In the **Asset type** field, select the asset type for the asset (mandatory field). If required, select **Asset manufacturer** and **Asset model** for the asset. If only one product has been set up, that product is automatically selected in the **Asset manufacturer** field. The selections available in the **Asset manufacturer** and **Asset model** fields depend on the setup in [Asset manufacturers and models](../setup-for-objects/product-and-model.md).
 5. In the **Parent asset** group, the **Asset** field is blank as default. If required, you can select a parent asset, and then all fields in the **Parent asset** group will automatically be filled out.
->[!NOTE]  
->When you select a parent asset, two or three tabs are available: The **My assets** tab contains assets related to the functional locations to which you (the maintenance worker who is logged on the system) may be allocated. If no functional locations are set up on a maintenance worker in the [Maintenance workers and worker groups](../setup-for-objects/workers-and-worker-groups.md) form, the **My assets** tab will not be visible. The **Active assets** tab contains a list of all assets with asset lifecycle state "Active". The **Asset view** tab displays a tree view of functional locations and assets installed on those locations.
+    >[!NOTE]  
+    >When you select a parent asset, two or three tabs are available: The **My assets** tab contains assets related to the functional locations to which you (the maintenance worker who is logged on the system) may be allocated. If no functional locations are set up on a maintenance worker in the [Maintenance workers and worker groups](../setup-for-objects/workers-and-worker-groups.md) form, the **My assets** tab will not be visible. The **Active assets** tab contains a list of all assets with asset lifecycle state "Active". The **Asset view** tab displays a tree view of functional locations and assets installed on those locations.
 
 6. The default functional location you have set up is suggested for the asset in the **Asset** group > **Functional location** field. Select another functional location, if required.
 
->[!NOTE]
->After you have created an asset, you can install it on another functional location, if required. Only top-level assets (assets without a current parent asset) can be installed on a functional location. This means that you install the top level as well as any child assets on the selected functional location. Read more about installing assets on functional locations in [Introduction to functional locations](../functional-locations/introduction-to-functional-locations.md).
+    >[!NOTE]
+    >After you have created an asset, you can install it on another functional location, if required. Only top-level assets (assets without a current parent asset) can be installed on a functional location. This means that you install the top level as well as any child assets on the selected functional location. Read more about installing assets on functional locations in [Introduction to functional locations](../functional-locations/introduction-to-functional-locations.md).
 
 7. Click **OK**.
 8. Select the asset in the **All Assets** list and click the **Edit** button to add further information to the asset.

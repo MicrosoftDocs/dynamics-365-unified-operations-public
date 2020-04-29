@@ -4,7 +4,7 @@
 title: Inspect the quality of goods
 description: This topic explains how to process a quality order. 
 author: perlynne
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/01/2019
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: InventQualityOrderTable, InventQualityOrderLineResults, HcmWorkerLookUp   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  

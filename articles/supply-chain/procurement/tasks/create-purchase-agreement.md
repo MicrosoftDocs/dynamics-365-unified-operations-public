@@ -4,7 +4,7 @@
 title: Create a purchase agreement
 description: This topic guides you through the creation of a purchase agreement. 
 author: mkirknel
-manager: AnnBe 
+manager: tfehr 
 ms.date: 07/18/2019
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: PurchAgreement, PurchAgreementCreate, InventItemIdLookupSimple, AgreementConfirmRunForm, PurchAgreementHistory   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  

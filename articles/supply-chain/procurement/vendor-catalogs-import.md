@@ -4,7 +4,7 @@
 title: Import vendor catalogs
 description: This topic describes the process to import vendor catalog data.
 author: mkirknel
-manager: AnnBe
+manager: tfehr
 ms.date: 03/20/2018
 ms.topic: article
 ms.prod: 
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: VendProspectiveVendorRegistrationRequests  
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -44,20 +44,20 @@ The product data that a vendor submits to you, in the form of a catalog
 maintenance request (CMR) file, must be in XML file format. The CMR file should
 contain the details for the products that the vendor supplies to your
 company.
-
+''''
 ## Import vendor catalog data
-
+''
 To import vendor catalog data, you must complete the following tasks:
 
 1.  Set up a project in the Data management workspace where you have defined your
     data mapping rules. Select **Data management** and then select **Set up roles for data projects**. 
-
+''
 2.  Set up a procurement category hierarchy, and assign your vendors to
     procurement categories. If you use commodity codes, add the commodity codes
     to the procurement categories. For information about setting up a procurement category hierarchy, see [Set up a procurement category hierarchy](../procurement/tasks/set-up-procurement-category-hierarchy.md).
-
+''
 3.  Configure the vendor for catalog import. Select a vendor, and then select **Procurement** > **Set up** > **Configure vendor for catalog import**.
-
+''''
 4.  Configure workflow for catalog import. Create a CMR file template and share this with your vendor.
 
 5.  Select **Procurement and sourcing** \> **Common** \> **Catalogs** \> **Vendor
@@ -74,7 +74,7 @@ Approved products are added to the product master and are released to the select
 ## Generate a catalog import file template
 
 The catalog import file template is an XSD file that you use
-to create a CMR file for a vendor’s products. You can use the CMR file to create
+to create a CMR file for a vendor's products. You can use the CMR file to create
 a new catalog, replace an existing catalog, or modify an existing catalog.
 
 1.  Select **Procurement and sourcing** \> **Catalogs** \> **Vendor

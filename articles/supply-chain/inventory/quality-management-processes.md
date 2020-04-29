@@ -4,7 +4,7 @@
 title: Quality management processes
 description: This article provides information about the quality management process for nonconforming products. It describes how you can use quality control functionality, how to define and maintain nonconformances, and how to handle corrections.
 author: perlynne
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod:
@@ -17,7 +17,7 @@ ms.search.form: InventItemSampling, InventNonConformanceHistory, InventNonConfor
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 11574

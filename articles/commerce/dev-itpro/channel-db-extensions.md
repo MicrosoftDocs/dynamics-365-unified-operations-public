@@ -5,7 +5,7 @@ title: Channel database extensions
 description: This topic explains how to extend the channel database.
 author: mugunthanm
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-retail
@@ -145,7 +145,7 @@ CREATE VIEW [ext].[CONTOSORETAILSTOREHOURSVIEW] AS
     GO
     ```
 
-3. Grant **DataSyncUsersRole** permission if your table is going to send or eceive data from HQ.
+3. Grant **DataSyncUsersRole** permission if your table is going to send or receive data from HQ.
 
     ```sql
     GRANT SELECT, INSERT, UPDATE, DELETE, ALTER ON OBJECT::[ext].[EXTTABLENAME] TO [DataSyncUsersRole]
@@ -170,6 +170,9 @@ The attribute framework was extended to support attributes in cash and carry tra
 In this scenario we will explain how to create a new table and add it to the channel DB. All extension code has access to the **ext schema**.
 
 - Create a new table in the channel database in the **ext schema** either using SQL Server Management Studio Designer or using SQL scripts. The following is an example SQL script.
+
+> [!NOTE]
+> The **DataAreaId** column name hould not be explicitly included in new or extended table. This is automatically added by Commerce Data Exchange (CDX). If added, an error will occur during initialization of the retail scheduler.
 
     ```sql
     -- Create the extension table to store the custom fields.

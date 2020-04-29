@@ -5,7 +5,7 @@ title: Electronic reporting (ER) destinations
 description: This topic provides information about the management of Electronic reporting (ER) destinations, the types of destinations that are supported, and security considerations.
 author: nselin
 manager: AnnBe
-ms.date: 03/17/2020
+ms.date: 04/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -57,7 +57,36 @@ There is also a [Print](er-destination-type-print.md) destination type. To use i
 
 ## Overview
 
-You can set up destinations only for ER configurations that have been [imported](general-electronic-reporting.md#importing-an-er-component-from-lcs-to-use-it-internally) into the current Finance instance, and for the formats that are available on the **Electronic reporting configurations** page. The functionality for ER destination management is available at **Organization administration** \> **Electronic reporting** \> **Electronic reporting destination**. On the **Electronic reporting destination** page, you can override the default behavior for a configuration. Imported configurations aren't shown on this page until you select **New** and then, in the **Reference** field, select a configuration to create destination settings for.
+You can set up destinations only for ER configurations that have been [imported](general-electronic-reporting.md#importing-an-er-component-from-lcs-to-use-it-internally) into the current Finance instance, and for the formats that are available on the **Electronic reporting configurations** page. The functionality for ER destination management is available at **Organization administration** \> **Electronic reporting** \> **Electronic reporting destination**.
+
+### Default behavior
+
+The default behavior for an ER format configuration depends on the execution type that you specify when an ER format starts.
+
+In the **Intrastat Report** dialog box, on the **Run in the background** FastTab, if you set the **Batch processing** option to **No**, an ER format is run immediately in interactive mode. When this execution is successfully completed, a generated outbound document is made available for download.
+
+If you set the **Batch processing** option to **Yes**, an ER format is run in [batch](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-processing-overview) mode. The appropriate batch job is created, based on the parameters that you specify on the **Run in the background** tab of the **ER parameters** dialog box.
+
+> [!NOTE]
+> The job description is initiated to inform you about the run of an ER format mapping. It also contains the name of the executed ER component.
+
+[![Running an ER format](./media/ER_Destinations-RunInBatchMode.png)](./media/ER_Destinations-RunInBatchMode.png)
+
+You can find information about this job in several places:
+
+- Go to **Common** \> **Inquiries** \> **Batch jobs** \> **My batch jobs** to check the status of the scheduled job.
+- Go to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs** to check the status of the scheduled job and the execution results of the completed job. When job execution is successfully completed, select **Show files** on the **Electronic reporting jobs** page to get a generated outbound document.
+
+    > [!NOTE]
+    > This document is stored as an attachment of the current job record and is controlled by the [Document management](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) framework. The [document type](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management#configure-document-types) that is used to store ER artifacts of this type is configured in the [ER parameters](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
+
+- On the **Electronic reporting jobs** page, select **Show files** to view the list of any errors and warnings that were generated during job execution.
+
+    [![Reviewing the ER jobs list](./media/ER_Destinations-ReviewERJobs.png)](./media/ER_Destinations-ReviewERJobs.png)
+
+### User-configured behavior
+
+On the **Electronic reporting destination** page, you can override the default behavior for a configuration. Imported configurations aren't shown on this page until you select **New** and then, in the **Reference** field, select a configuration to create destination settings for.
 
 [![Selecting a configuration in the Reference field](./media/ER_Destinations-SelectFormat.png)](./media/ER_Destinations-SelectFormat.png)
 

@@ -4,7 +4,7 @@
 title: Create a released product for a single company
 description: This procedure walks through how to create a single released product in the context of a single legal unit. 
 author: ShylaThompson
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: EcoResProductDetailsExtended, EcoResProductCreate, UnitOfMeasureLookup, DimensionLookup   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  

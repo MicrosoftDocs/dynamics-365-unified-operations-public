@@ -4,7 +4,7 @@
 title: Schedule a production order with operations and job scheduling
 description: This topic focuses on scheduling a production order with operations scheduling and job scheduling. 
 author: ChristianRytt
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/19/2019
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: ProdTableListPage, ProdTableCreate, InventItemIdLookupPurchase, ProdSchedule, ProdTable, ProdRouteJob   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  

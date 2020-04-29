@@ -5,7 +5,7 @@ title: Scope of the Brazilian localization
 description: This topic describes the strategy and scope for tax, finance, and accounting laws and regulations in Brazil. 
 author: sndray
 manager: AnnBe
-ms.date: 12/12/2019
+ms.date: 03/25/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -62,7 +62,7 @@ In general, the Microsoft strategy for addressing the tax, financial, accounting
 
 - They implement the federal tax requirements that are detailed in the [Brazilian localization scope](#brazilian-localization-scope) section of this topic.
 - They implement, for the following states, the state/region requirements that are detailed in the [Brazilian localization scope](#brazilian-localization-scope) section: São Paulo (SP), Rio de Janeiro (RJ), Paraná (PR), Santa Catarina (SC), and Rio Grande do Sul (RS).
-- They deliver specific new regulatory features through configurations or development of new functionality that implements the federal and state/region requirements that are detailed in the [Brazilian localization scope](#brazilian-localization-scope) section, in accordance with the business rules that are specified in this topic and the Microsoft Dynamics roadmap on the [Microsoft Dynamics Localization Portal](https://mbs.microsoft.com/partnersource/deployment/resources/productreleases/gfmlocalizationportalmc.htm?printpage=false&sid=xdtafwuk1xh2l5jdjhhv0joy&stext=gfm%20localization%20portal).
+- They deliver specific new regulatory features through configurations or development of new functionality that implements the federal and state/region requirements that are detailed in the [Brazilian localization scope](#brazilian-localization-scope) section, in accordance with the business rules that are specified in this topic and the Microsoft Dynamics roadmap on the [Microsoft Dynamics Localization Portal](https://mbs.microsoft.com/customersource/UK/AX/support/support-news/GFMLocalizationPortalMC).
 - They deliver specific new regulatory features in the most recent service pack that is available, or in a new service pack, for supported versions of Microsoft Dynamics.
 - They apply National Standards and competitive features that Microsoft, at its sole discretion, determines to be necessary or appropriate, based on business needs in the region.
 - They don't focus on the requirements of specific businesses, segments, verticals, regions, or large enterprises, even when these requirements are required by laws, statutes, or regulations at the federal, state, or city level.
@@ -78,7 +78,7 @@ The user interface (UI) and online Help for Microsoft Dynamics are translated in
 
 The localization scope for Microsoft Dynamics available in Brazil is limited to tax calculation, accounting transactions, issuing/receiving fiscal documents, and issuing fiscal receipts in the following four scenarios: procure to pay, quote to cash, commerce, and regulatory/statutory reporting.
 
-The features that Microsoft delivers and supports as part of the Brazilian localization for Microsoft Dynamics are listed in the [Brazilian localization features](#brazilian-localization-features) section of this topic. Details about each of the features can be found in Help in Microsoft Dynamics, and in white papers that are published on the [Microsoft Dynamics Localization Portal](https://mbs.microsoft.com/partnersource/deployment/resources/productreleases/gfmlocalizationportalmc.htm?printpage=false&sid=xdtafwuk1xh2l5jdjhhv0joy&stext=gfm%20localization%20portal).
+The features that Microsoft delivers and supports as part of the Brazilian localization for Microsoft Dynamics are listed in the [Brazilian localization features](#brazilian-localization-features) section of this topic. Details about each of the features can be found in Help in Microsoft Dynamics, and in white papers that are published on the [Microsoft Dynamics Localization Portal](https://mbs.microsoft.com/customersource/UK/AX/support/support-news/GFMLocalizationPortalMC).
 
 ## Market availability
 
@@ -876,7 +876,7 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 <td>Generation of a text file and support for companies defined as Profile A
 <p>Available layout versions:</p>
 <ul>
-<li>Layout Code 13 and earlier</li>
+<li>Layout Code 14 and earlier</li>
 </ul>
 </td>
 <td>Yes</td>
@@ -886,15 +886,14 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 <td>&nbsp;</td>
 <td>Support for the following records for companies defined as Profile A:
 <ul>
-<li>Block 0: 0000-0001-0005-0015-0100-0150-0190-0200-0210-0220-0300-0305-0400-0450-0460-0500-0600-0990</li>
-<li>Block C: C001-C100-C101-C110-C111-C113-C114-C120-C130-C140-C141-C160-C170-C172-C190-C195-C400-C405-C410-C420-C460-C470-C490-C500 (incoming)-C590 (incoming)-C990</li>
+<li>Block 0: 0000-0001-0002-0005-0015-0100-0150-0190-0200-0210-0220-0300-0305-0400-0450-0460-0500-0600-0990</li>
+<li>Block C: C001-C100-C101-C110-C111-C113-C114-C120-C130-C140-C141-C160-C170-C172-C180-C185-C190-C191-C195-C400-C405-C410-C420-C460-C470-C490-C500(incoming)-C590 (incoming)-C990</li>
 <li>Block D (only for incoming fiscal documents): D001-D100-D190-D195-D500-D590-D990</li>
 <li>Block E: E001-E100-E110-E111-E116-E200-E210-E220-E250-E300-E310-E311-E312-E313-E316-E500-E510-E520-E530-E990</li>
 <li>Block G: G001-G110-G125-G126-G130-G140-G990</li>
-<li>Block H: H001-H005-H010-H020-H990</li>
-<li>Block K:&nbsp;<span style="display: inline !important; float: none; background-color: #ffffff; color: #000000; cursor: text; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;">K001-K100-K200-K220-K230-K235</span></li>
-<li>Block 1: 1001-1010-1990
-<ul>
+<li>Block H: H001-H005-H010-H020-H030-H990. Note: H005 and related records are only supported for reason code = 01, 05 for RS state and 06.</li>
+<li>Block K: K001-K100-K200-K220-K230-K235</span></li>
+<li>Block 1: 1001-1010-1250-12251990
 <li>Block 1900-1910-1920-1921-1923-1926-1990 only for Rio Grande do Sul state</li>
 </ul>
 </li>
@@ -931,10 +930,13 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 <ul>
 <li>SEF Portaria No. 396/2018</li>
 <li>SEF Portaria No. 208/2019</li>
+<li>SEF Portaria No. 254/2019</li>
+<li>SEF Portaria No. 343/2019</li>
+<li>SEF Portaria No. 416/2019</li>
 <li>Records:
 <ul>
 <li>Block 0: 0000-0001-0005-0100-0190-0200-0220</li>
-<li>Block 2: 2100-2110-2113-2114-2115-2120-2121-2130-2132-2133</li>
+<li>Block 2: 2100-2110-2113-2114-2115-2120-2121-2130-2131-2132-2133-2134</li>
 <li>Block H: H001-H005-H010-H990</li>
 <li>Block 9: 9001-9900-9990-9999</li>
 </ul>
@@ -945,8 +947,9 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 <td>Yes</td>
 </tr>
 <tr>
+
 <td>SPED Contributions (PIS and COFINS)</td>
-<td>Generation of a text file in accordance with layout 005 and earlier</td>
+<td>Generation of a text file in accordance with layout 006 and earlier</td>
 <td>Yes</td>
 <td>Yes</td>
 </tr>
@@ -966,13 +969,13 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 <td>&nbsp;</td>
 <td>Support for the following records:
 <ul>
-<li>Block 0: 0000-0001-0100-0110-0111-0140-0150-0190-0200-0400-0450-0990</li>
+<li>Block 0: 0000-0001-0100-0110-0111-0140-0150-0190-0200-0400-0450-0900-0990</li>
 <li>Block A: A001-A010-A100-A110-A111-A120-A170-A990</li>
 <li>Block C: C001-C010-C100-C110-C111-C120-C170-C175-C180-C181-C185-C188-C190-C191-C195-C198-C199-C380-C381-C385-C400-C405-C481-C485-C490-C491-C495-C500-C501-C505-C509</li>
 <li>Block D (only for incoming fiscal documents): D001-D010-D100-D101-D105-D111-D500-D501-D505-D509</li>
 <li>Block F: F010-F100-F111-F120-F129-F130-F600-F700-F800-F990</li>
 <li>Block M: M001-M100-M105-M110-M115-M200-M205-M210-M220-M225-M400-M410-M500-M505-M510-M515-M600-M606-M610-M620-M625-M800-M810-M990</li>
-<li>Block 1: 1100-1300-1500-1700</li>
+<li>Block 1: 1100-1010-1011-1300-1500-1700</li>
 </ul>
 </td>
 <td>Yes</td>
@@ -1026,7 +1029,7 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 <tr>
 <td>SPED Accounting</td>
 <td>Generation of SPED Cont&aacute;bil text files
-<p>Layout version supported: 7.0 and earlier</p>
+<p>Layout version supported: 8.0 and earlier</p>
 </td>
 <td>Yes</td>
 <td>Yes</td>
@@ -1148,7 +1151,7 @@ The following tax reporting requirements are out of scope for fiscal books for t
 
 ## References
 
-The [Microsoft Dynamics Localization Portal](https://mbs.microsoft.com/partnersource/deployment/resources/productreleases/gfmlocalizationportalmc.htm?printpage=false&sid=xdtafwuk1xh2l5jdjhhv0joy&stext=gfm%20localization%20portal) provides information about localization features and documents that have been released by Microsoft, and also localization features and documents that are planned for release.
+The [Microsoft Dynamics Localization Portal](https://mbs.microsoft.com/customersource/UK/AX/support/support-news/GFMLocalizationPortalMC) provides information about localization features and documents that have been released by Microsoft, and also localization features and documents that are planned for release.
 
 ## Notes
 

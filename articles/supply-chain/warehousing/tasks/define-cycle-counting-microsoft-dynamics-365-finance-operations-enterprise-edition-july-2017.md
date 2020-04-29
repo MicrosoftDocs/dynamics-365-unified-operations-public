@@ -4,7 +4,7 @@
 title: Define cycle counting 
 description: Cycle counting is a warehouse process that you can use to audit on-hand inventory items. 
 author: MarkusFogelberg
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/12/2019
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  

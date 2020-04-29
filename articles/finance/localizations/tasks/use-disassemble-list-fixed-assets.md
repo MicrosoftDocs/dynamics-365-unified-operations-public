@@ -28,7 +28,8 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Use disassemble list for fixed assets
 
-[!include [task guide banner](../../includes/task-guide-banner.md)][!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
+
 In Japan, you can transfer a component of a fixed asset to inventory. 
 
 
