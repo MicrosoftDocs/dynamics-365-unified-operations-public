@@ -112,7 +112,7 @@ To configure the IoT hub, follow these steps:
 
 ### Configure the key vault
 
-To configure the key vault to give the **Microsoft Dynamics ERP Microservices** first-party app Id access to the key vault, follow these steps:
+To configure the key vault, follow these steps:
 
 1. In your resources, click on the key vault resource.
 2. In the left navigation, click **Access policies**.
