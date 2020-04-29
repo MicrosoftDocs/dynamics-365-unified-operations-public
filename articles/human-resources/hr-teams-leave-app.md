@@ -28,7 +28,7 @@ ms.author: anbichse
 ms.search.validFrom: 2020-05-04
 ms.dyn365.ops.version: Human Resources
 
----
+--- 
 
 # Manage leave requests in Teams
 
