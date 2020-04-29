@@ -984,6 +984,8 @@
         href: project-management/project-contracts.md
       - name: Project forecasts and budgets
         href: project-management/project-forecasts-budgets.md
+      - name: Create forecast models for project budgets
+        href: project-management/create-forecast-models-project-budgets.md
       - name: Project sales orders
         href: project-management/project-sales-orders.md
       - name: Purchase orders for a project
