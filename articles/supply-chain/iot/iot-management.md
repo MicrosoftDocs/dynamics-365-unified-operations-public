@@ -39,15 +39,16 @@ This topic describes how to view the monitor and manage IoT Intelligence.
 
 There are several places to monitor IoT Intelligence processing:
 
-+ **Production control \> Inquiries and reports \> IoT Intelligence \> Notifications**. Here you can see the list of unresolved notifications.
-+ **Production control \> Inquiries and reports \> IoT Intelligence \> Closed notifications**. Here you can see the notifications that have been resolved or dismissed.
-+ **Production control \> Inquiries and reports \> IoT Intelligence \> Metric keys**. Here you can see the metric keys for the Resource Status times series graphs.
-+ **Production control \> Manufacturing execution \> Resource status**. You can configure this page to track specific metrics using the **Configure** dialog. If a scenario detects an exception, a notification with the exception details will appear.
-+ **Production control \> Setup \> IoT Intelligence \> Scenario parameters**. Click **Equipment downtime** to see all the machines that are available. Also, you can update the redis cache connection string and update scenario threshold values.
++ **Modules \> Production control \> Inquiries and reports \> IoT Intelligence \> Notifications**. Here you can see the list of unresolved notifications.
++ **Modules \> Production control \> Inquiries and reports \> IoT Intelligence \> Closed notifications**. Here you can see the notifications that have been resolved or dismissed.
++ **Modules \> Production control \> Inquiries and reports \> IoT Intelligence \> Metric keys**. Here you can see the metric keys for the Resource Status times series graphs.
++ **Modules \> Production control \> Manufacturing execution \> Resource status**. Here you can track specific metrics using the **Configure** dialog. If a scenario detects an exception, a notification with the exception details will appear.
++ **Modules \> Production control \> Setup \> IoT Intelligence \> Scenario parameters**. Click **Equipment downtime** to see all the machines that are available. Also, you can update the redis cache connection string and update scenario threshold values.
++ **Modules \> Workspaces \> Production floor management \> Notifications**. Here you can see the list of unresolved notifications.
 
 ## Modify a running IoT Intelligence scenario
 
-When a scenario is running, you can make this modifications:
+When a scenario is running, you can make these modifications:
 
 + Add new sensor schema definitions.
 + Select new signal data values to process.

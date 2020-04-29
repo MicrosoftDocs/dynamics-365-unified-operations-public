@@ -1071,7 +1071,7 @@
       items:
         - name: IoT Intelligence home page
           href: iot/iot-intelligence-home-page.md
-        - name: Message schema formats for IoT Hub
+        - name: Schema formats for IoT Hub messages
           href: iot/iot-json-setup.md
         - name: Azure setup
           href: iot/iot-azure-setup.md

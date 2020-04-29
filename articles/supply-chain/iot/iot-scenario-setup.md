@@ -45,14 +45,14 @@ The **Equipment downtime** scenario has these dependencies:
 
 + A production order must be running on a mapped machine for an alert to be triggered.
 + A signal representing a mapped machine's part out signal must be sent to the IoT Hub with a unique property name.
-+ A Unix milliseconds timestamp property must be present in the IoT Hub message.
++ A Unix milliseconds timestamp property must be present in the IoT hub message.
 
 To configure the scenario, follow these steps:
 
 1. Log into Supply Chain Management.
 2. Enable the IoT Intelligence feature flag. For more information, see [Feature management overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-3. Navigate to **Production control**.
-4. Configure the metrics. For more information, see [How to configure metrics](iot-metrics-setup.md#how-to-configure-metrics).
+3. Configure the metrics. For more information, see [How to configure metrics](iot-metrics-setup.md#how-to-configure-metrics).
+4. Navigate to **Production control**.
 5. Navigate to **Setup \> IoT Intelligence \> Scenario management**.
 6. Click **Configure** on the **Equipment downtime** tile. The configuration wizard starts with the **Equipment sensor schema definition** page. The goal here is to setup the schema in Supply Chain Management to match the JSON format of the IoT messages. Multiple message schemas can be defined. For more information, see [Message schema formats for IoT Hub](iot-json-setup.md). In this example, the message payload contains a batch of messages with this format:
 
@@ -80,15 +80,15 @@ To configure the scenario, follow these steps:
     2. Set the **Schema path** to **/payload[\*]/id**.
     3. Set the **Description** to **Message ID**.
 
-8. Add a row to the table. 
+8. Add a row to the table.
 
-    1. Set the **Schema name** to **timestamp**.
+    1. Set the **Schema name** to **Timestamp**.
     2. Set the **Schema path** to **/payload[\*]/timestamp**.
     3. Set the **Description** to **Message timestamp**.
 
-9. Add a row to the table. 
+9. Add a row to the table.
 
-    1. Set the **Schema name** to **value**.
+    1. Set the **Schema name** to **Value**.
     2. Set the **Schema path** to **/payload[\*]/value**.
     3. Set the **Description** to **Message value**.
 
@@ -97,22 +97,22 @@ To configure the scenario, follow these steps:
 10. Click **Next** to go to the **Equipment sensor schema map** page.
 11. In the row for **Equipment resource ID** set the **Schema name** to **ID**. The valid values are displayed in a dropdown table.
 12. In the row for **UTC time** set the **Schema name** to **Timestamp**. The valid values are displayed in a dropdown table.
-13. In the row for **Part produced signal** set the **Schema name** to **value**. The valid values are displayed in a dropdown table.
+13. In the row for **Part produced signal** set the **Schema name** to **Value**. The valid values are displayed in a dropdown table.
 14. Click **Next** for the **Equipment resource ID configuration** page.
 15. In this step, you map the IoT Hub message values to the Supply Chain Management resources.
 
-    1. For the **Schema path** - **/payload[\*]/ID**, in the **Signal Data Values** table, add a new row, and enter **IoTInt.Machine1225.PartOut** in the **Value** column. The value **IoTInt.Machine1225.PartOut** comes from the **id** property in the IoT hub message.
+    1. In the **Signal Data Values** table, add a new row, and enter **IoTInt.Machine1225.PartOut** in the **Value** column. The value **IoTInt.Machine1225.PartOut** comes from the JSON **id** property in the IoT hub message.
     2. Click **Save**.
     3. In the **Business Record Mapping** table, click **New**. The default value for the **Business record type** is autopopulated, and you don't need to change it.
     4. In the **Business record** column, select the Supple Chain Management machine resource this signal value is being sent from.
     5. Click **Save**.
-    6. Repeat these steps, adding a new business record mapping for **Machine1226**. You can map multiple **id** values from the messages to a single record in Supply Chain Management, but you can't map a single **id** value to multiple records in Supply Chain Management.
+    6. Repeat these steps, adding a new business record mapping for **Machine1226**. You can map multiple signal data values to a single record in Supply Chain Management, but you can't map a single **id** value to multiple records in Supply Chain Management.
 
-16. After you have entered signal mapping values, use the **Selected** column to choose when machines you want to process. You do not have to define all signal values and you do not have to select all machines.
+16. Use the **Selected** column to choose which machines you want to process. You do not have to define all signal values and you do not have to select all machines.
 17. Click **Next** to go to the **Part produced signal configuration** page.
-18. In the **Signal Data Values** table, add a row, and set **Value** to **True**. The value **True** comes from the JSON value property in the IoT hub message. You can add as many values as you need for your scenario.
+18. In the **Signal Data Values** table, add a row, and set **Value** to **True**. The value **True** comes from the JSON **value** property in the IoT hub message. You can add as many values as you need for your scenario.
 19. Click **Save**.
-20. Click **Next** to go to the **Equipment downtime threshold** page. The values for downtime threshold are already mapped according to the machine id. The machines listed are the machines previously mapped to signal values. In this step, you define a threshold to determine if a machine is down. For example, if you set the threshold to 10, Supply Chain Management generates a notification if there is no part out message from a machine 10 minutes.
+20. Click **Next** to go to the **Equipment downtime threshold** page. The machines listed are the machines previously mapped to signal values. In this step, you define a threshold to determine if a machine is down. For example, if you set the threshold to 10, Supply Chain Management generates a notification if there is no part out message from a machine for 10 minutes.
 21. Click **Next** to go to the **Enable scenario** page. Toggle the slider to enable the scenario.
 22. Click **Finish**.
 

@@ -34,10 +34,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ## How to configure metrics
 
-If you want to view graphs of your messages in Supply Chain Management, you must setup the metrics using these steps:
+If you want to view the time series graphs of your messages in Supply Chain Management, you must setup the metrics using these steps:
 
 1. Copy the Redis cache connection string:
-    1. In Azure, go to the Redis cache.
+    1. In the Azure portal, go to the Redis cache.
     2. Navigate to **Settings** \> **Access keys**.
     3. Copy the **Primary connection string** field.
 2. In Supply Chain Management, navigate to **Production control \> Setup \> IoT Intelligence \> Scenario parameters**.  

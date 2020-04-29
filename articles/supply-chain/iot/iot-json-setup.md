@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Message schema formats for IoT Hub
+title: Schema formats for IoT Hub messages
 description: This topic describes how you should design your message schema for use in IoT Intelligence.
 author: robinarh
 manager: AnnBe

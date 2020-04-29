@@ -39,9 +39,9 @@ This topic describes how to create and configure the Azure resources you need fo
 
 Follow these steps to create an IoT Hub, a Redis cache, and a key vault that is accessible by Microsoft Dynamics 365 Supply Chain Management:
 
-### Verify that **Microsoft Dynamics ERP Microservices** first-party app Id is inside your tenant
+### Verify that the **Microsoft Dynamics ERP Microservices** first-party app Id is inside your tenant
 
-To verify that **Microsoft Dynamics ERP Microservices** first-party app Id is inside your tenant, follow these steps:
+To verify that the **Microsoft Dynamics ERP Microservices** first-party app Id is inside your tenant, follow these steps:
 
 1. Sign in to the Azure portal at https://portal.azure.com.
 2. Navigate to **Azure Active Directory**.
@@ -127,14 +127,14 @@ To configure the key vault to give the **Microsoft Dynamics ERP Microservices** 
 To save the IoT hub connection string secret, follow these steps:
 
 1. Click on the IoT hub resource.
-2. Copy the value from the **Event Hub-compatible endpoint** textbox.
-3. Navigate to the key vault resource.
-4. In the left navigation, click on **Secrets**.
-5. Click on **Generate/Import**.
-6. Enter a name in the **Name** text box.
-7. Paste the endpoint into the **Value** textbox.
-8. Click **Create**.
-9. Navigate back to the resource group, and wait for the Redis cache to be provisioned. You can click the **Refresh** button to refresh the status.
+2. In the left navigation, click **Built-in endpoints**.
+3. Copy the value from the **Event Hub-compatible endpoint** textbox.
+4. Navigate to the key vault resource.
+5. In the left navigation, click on **Secrets**.
+6. Click on **Generate/Import**.
+7. Enter a name in the **Name** text box.
+8. Paste the endpoint into the **Value** textbox.
+9. Click **Create**.
 
 ### Save the Redis cache connection string secret
 
@@ -153,4 +153,4 @@ To save the Redis cache connection string secret, follow these steps:
 > [!NOTE]
 > Whenever you update one of the connection strings, you must also update the secret values.
 
-You are now done provisioning Azure. The next step is to [install the IoT Intelligence add-in in LCS](iot-lcs-setup.md).
+You are now done provisioning the required Azure resources. The next step is to [install the IoT Intelligence add-in in LCS](iot-lcs-setup.md).
