@@ -3,7 +3,7 @@ title: Solution Architects Learning Catalog
 description: Find all the training options for Finance and Operations.
 author: loreleishannonmsft
 ms.topic: article
-ms.date: 04/03/2020
+ms.date: 04/29/2020
 ms.author: v-lshann
 
 # optional metadata
