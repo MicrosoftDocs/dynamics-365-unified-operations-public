@@ -5,7 +5,7 @@ title: Configure document management
 description: This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 12/05/2019
+ms.date: 04/29/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -90,7 +90,7 @@ If documents stored in SharePoint don't open or don't display in preview, follow
 
 3. Open an attachment that is stored in SharePoint.
 
-4. Sign in with any other user account that has read access to the attachments page and the configured SharePoint folder and verify that they can also open and preview the attachment.
+4. Sign in with another user account that has read access to the attachments page and the configured SharePoint folder. Verify that they can also open and preview the attachment.
 
 ## Configure file types
 
@@ -177,7 +177,7 @@ Yes. SharePoint storage is supported natively and can be selected as the storage
 
 ### How does the default storage location for Document Management change in Finance + Operations environments?
 
-For Finance + Operations, the Azure Blob storage provider for attachments is replaced by a file folder storage provider so that attachments are kept on-premise instead of being stored in the cloud. Therefore, the default storage location for attachments is a file folder.
+For Finance + Operations, the Azure Blob storage provider for attachments is replaced by a file folder storage provider so that attachments are kept on-premises instead of being stored in the cloud. Therefore, the default storage location for attachments is a file folder.
 
 ### If I accidentally delete an attachment stored in Azure Blob storage, can it be restored?
 
@@ -217,4 +217,4 @@ To extract attachments, an Attachments entity must be built for a specific busin
 
 ### How does the document preview work for attachments stored in SharePoint?
 
-The files are retrieved from SharePoint using the current user permissions by the WOPI service. Those files are then rendered in HTML to provide a document preview. So the current user needs access to the files to be able to preview them or open them.
+The files are retrieved from SharePoint using the current user permissions by the WOPI service. Those files are then rendered in HTML to provide a document preview. This means that the current user needs access to the files to be able to preview them or open them.
