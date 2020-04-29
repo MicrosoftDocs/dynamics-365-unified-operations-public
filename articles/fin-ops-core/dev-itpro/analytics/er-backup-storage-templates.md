@@ -5,7 +5,7 @@ title: Backup storage of ER templates
 description: This topic explains how to use the Electronic reporting (ER) backup storage for recovery of templates.
 author: NickSelin
 manager: AnnBe
-ms.date: 08/19/2019
+ms.date: 04/29/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -97,7 +97,7 @@ If you upgraded your environment to Finance and Operations version 10.0.5 (Octob
 
 ## Manual recovery
 
-Open the **Organization administration \> Electronic reporting \> Restore broken templates** page to manually initiate the process of restoring ER templates from the backup storage location to the primary storage location. Before starting this process, on the **Restore broken templates** page you can specify whether it will be performed interactively, or the batch process will be scheduled for this.
+Go to **Organization administration** \> **Electronic reporting** \> **Restore broken templates** to manually initiate the process of restoring ER templates from the backup storage location to the primary storage location. Before you start this process, on the **Restore broken templates** page you can specify whether it will be performed interactively, or the batch process will be scheduled for this.
 
 ## Supported deployments
 
