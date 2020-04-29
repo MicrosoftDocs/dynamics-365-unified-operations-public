@@ -74,13 +74,12 @@ To turn on the trace log, follow these steps.
 To view the trace log, follow these steps.
 
 1. Sign in to the Finance and Operations app, open the **Settings** page, and then, under **Customization**, select **Plug-in Trace Log**.
-2. Find the trace logs where the **Type Name** field is set to **Microsoft.Dynamics.Integrator.CrmPlugins.Plugin**.
+2. Find the trace logs where the **Type Name** field is set to **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
 3. Double-click an item to view the full log, and then, on the **Execution** FastTab, review the **Message Block** text.
 
 ## Enable debug mode to troubleshoot live synchronization issues in Finance and Operations apps
 
 **Required role to view the errors:** System admin
-
 Dual-write errors that originate in Common Data Service can appear in the Finance and Operations app. In some cases, the full text of the error message isn't available because the message is too long or contains personally identifying information (PII). You can turn on verbose logging for errors by following these steps.
 
 1. All project configurations in Finance and Operations apps have an **IsDebugMode** property in the **DualWriteProjectConfiguration** entity. Open the **DualWriteProjectConfiguration** entity by using the Excel add-in.
@@ -96,7 +95,7 @@ Dual-write errors that originate in Common Data Service can appear in the Financ
 
 ## Check synchronization errors on the virtual machine for the Finance and Operations app
 
-**Required role to view the errors:** System admin
+**Required role to view the errors:** System administrator
 
 1. Sign in to Microsoft Dynamics Lifecycle Services (LCS).
 2. Open the LCS project that you chose to do the dual-write testing for.
@@ -108,7 +107,7 @@ Dual-write errors that originate in Common Data Service can appear in the Financ
 
 ## Unlink and link another Common Data Service environment from a Finance and Operations app
 
-**Required credentials to unlink the environment:** Azure AD tenant admin
+**Required role to unlink the environment:** System administrator for either Finance and Operations app or Common Data Service.
 
 1. Sign in to the Finance and Operations app.
 2. Go to **Workspaces \> Data management**, and select the **Dual Write** tile.
@@ -117,3 +116,13 @@ Dual-write errors that originate in Common Data Service can appear in the Financ
 5. Select **Yes** to confirm the operation.
 
 You can now link a new environment.
+
+## Unable to view the sales order line Information form 
+
+When you create a sales order in Dynamics 365 Sales, clicking on **+ Add products** might redirect you to the Dynamics 365 Project Operations order line form. There is no way from that form to view the sales order line **Information** form. The option for **Information** does not appear in the dropdown below **New Order Line**. This happens because Project Operations has been installed in your environment.
+
+To re-enable the **Information** form option, follow these steps:
+1. Navigate to the **Order Line** entity.
+2. Find the **Information** form under the forms node. 
+3. Select the **Information** form and click **Enable security roles**. 
+4. Change the security setting to **Display to everyone**.

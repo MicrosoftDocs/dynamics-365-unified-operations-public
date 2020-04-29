@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 Finance
 description: This topic points to topics that describe the new and changed features in each release of Dynamics 365 Finance
 author: roschlom
 manager: AnnBe
-ms.date: 03/11/2020
+ms.date: 04/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -37,6 +37,7 @@ To see what's new or changed in each release of Dynamics 365 Finance, see the fo
 
 | Version | Build number | Auto-update availability | Learn more |
 |---------|--------------|--------------|-------------|
+| 10.0.11  |   10.0.464   | July 2020   | [Preview features in Dynamics 365 Finance version 10.0.11](whats-new-changed-10-0-11.md) |
 | 10.0.10  |   10.0.420   | May 2020   | [Preview features in Dynamics 365 Finance version 10.0.10](whats-new-changed-10-0-10.md) |
 | 10.0.9  |   10.0.383   | April 2020   | [What's new and changed in Dynamics 365 Finance version 10.0.9](whats-new-changed-10-0-9.md) |
 | 10.0.8  |   10.0.319          | February 2020 | [What's new and changed in Dynamics 365 Finance version 10.0.8](whats-new-changed-10-0-8.md) |
