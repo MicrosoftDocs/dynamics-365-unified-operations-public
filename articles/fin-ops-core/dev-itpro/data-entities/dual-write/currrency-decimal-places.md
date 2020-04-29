@@ -54,7 +54,7 @@ Migration doesn't change any data. After the currency and exchange rate fields a
 
 ### Request a migration
 
-To make this feature available, email \<\<distlist\>\>, and include the following information:
+To make this feature available, email **CDSExpandDecimal@microsoft.com**, and include the following information:
 
 + **Subject:** Request to enable expanded decimal support for \<organizationID\>
 + **Body:** I would like to enable expanded decimal support for my org \<organizationID\>.
