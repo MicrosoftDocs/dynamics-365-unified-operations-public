@@ -65,7 +65,7 @@ You can find the Human Resources app in the Teams store.
 
 After the app installs, a welcome message appears, letting you know the types of actions the bot can take on your behalf.
 
-![Human Resources Teams leave app bot welcome message](/media/hr-teams-leave-app-bot.png)
+![Human Resources Teams leave app bot welcome message](./media/hr-teams-leave-app-bot.png)
  
 > [!NOTE]
 > When first interacting with the bot, you might need to sign in. If you don’t see a sign-in dialog, check your browser settings to allow pop-ups.
@@ -124,7 +124,7 @@ The **Time off** tab allows you to view:
 
 1. Select the **Drafts** tab.
 
-   ![Human Resources Teams leave app Drafts tab](./media/hr-teams-leave-app-bot-drafts-tab.png)
+   ![Human Resources Teams leave app Drafts tab].(/media/hr-teams-leave-app-bot-drafts-tab.png)
 
 2. Select the pencil to edit the request, or select the trash can to delete the request.
 
