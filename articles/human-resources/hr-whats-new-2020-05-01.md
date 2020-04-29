@@ -2,10 +2,10 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Human Resources (May 1, 2020)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources.
+description: This article describes features that are either new or changed in Microsoft Dynamics 365 Human Resources.
 author: Darinkramer
 manager: AnnBe
-ms.date: 5/1/2020
+ms.date: 05/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -25,43 +25,44 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: dkrame
-ms.search.validFrom: 2020-05-1
+ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Human Resources
 
 ---
-# "What's new or changed in Dynamics 365 Human Resources (May 1, 2020)"
+
+# What's new or changed in Dynamics 365 Human Resources (May 1, 2020)
 
 This article describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3196. The numbers in parentheses in some headings refer to LCS support numbers for reference.
 
 ## New Performance Management entities available in Data Management Framework (DMF)
 
-The following entities are now available. If you don't see these entities listed in the entities list, use the Refresh entities option in Framework Parameters > Entity settings > Refresh entity list.
+The following entities are now available. If you don't see these entities listed in the entities list, use the **Refresh entities** option in **Framework Parameters > Entity settings > Refresh entity list**.
 
-- Discussion Competency
-- Discussion Goals
-- Discussion Measurement
-- Discussion Topic
-- Performance Journal
-- Measurement
-- Goal Measurement
+- **Discussion Competency**
+- **Discussion Goals**
+- **Discussion Measurement**
+- **Discussion Topic**
+- **Performance Journal**
+- **Measurement**
+- **Goal Measurement**
 
-In addition, Total score and Average score were added to the Discussion entity
+In addition, **Total score** and **Average score** were added to the **Discussion** entity
 
-## Increase length of leave request comments - (275641)
+## Increase length of leave request comments (275641)
 
-With this change the comments on leave requests will now allow more than 100 characters.
+Comments on leave requests now allow more than 100 characters.
 
-## Final comments on reviews don't appear when the manager or the employee is logged into a different company.  - (431688)
+## Final comments on reviews don't appear when the manager or employee is signed into a different company (431688)
 
-This change allows for all comments to appear when viewing reviews.
+All comments will now appear when viewing reviews.
 
-## User-defined links are not supported on new worker form - (390374)
+## User-defined links aren't supported on new Worker form (390374)
 
-User defined links have been enabled on the streamlined worker form.
+User-defined links are now enabled on the streamlined **Worker** form.
 
-## HcmRatingLevelEntity causing OData API crash. - (439476)
+## HcmRatingLevelEntity causes OData API crash (439476)
 
-This change corrects the API crash. This error was caused because of a duplicate name.
+This change corrects the API crash. A duplicate name cased this error.
 
 ## In preview
 
@@ -69,25 +70,25 @@ This change corrects the API crash. This error was caused because of a duplicate
 
 You can suspend leave and absence in Human Resources for an employee. Suspending leave stops the leave accruals for selected leave types. If the suspension occurs after an accrual has been processed, suspending leave creates a prorated adjustment to the employee's leave balance. For more information, see [Suspend leave](hr-leave-and-absence-suspend-leave.md).
 
-## Update user experience to indicate that accrual is suspended - (429550)
+## Update user experience to indicate that accrual is suspended (429550)
 
-With this change, the user experience has been updated to indicate the accrual has been suspended for a plan.
+The user experience now indicates that the accrual has been suspended for a plan.
 
-## Suspend leave accrual for specified leave types - (272447)
+## Suspend leave accrual for specified leave types (272447)
 
-In this release, HR can create a rule to suspend leave accruals for employees with leave requests entered for unpaid leave. Unpaid leave may be a type, but doesn't have to be. Any leave can be suspended based on another leave type.
+In this release, HR can create a rule to suspend leave accruals for employees with leave requests entered for unpaid leave. Unpaid leave can be a type, but doesn't have to be. You can suspend any leave based on another leave type.
 
-## Data Management Framework (DMF) entity available for accrual suspensions - (429549)
+## DMF entity available for accrual suspensions (429549)
 
-In this release, a DMF entity is now available for accrual suspensions.
+A DMF entity is now available for accrual suspensions.
 
-## Add reason code to accrual suspensions - (429547)
+## Add reason code to accrual suspensions (429547)
 
 Reason codes have been added to the accrual suspension.
 
-## Begin transitioning from HR parameters to L&A parameters
+## Begin transitioning from Human Resources parameters to leave and absence parameters
 
-In this release, parameters for leave and absence and the Human Resource Parameters will start to be combined. 
+This release starts to combine Human Resources parameters with Leave and absence parameters.
 
 ## Carry forward rules
 
