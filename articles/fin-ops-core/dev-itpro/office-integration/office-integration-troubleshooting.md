@@ -5,7 +5,7 @@ title: Troubleshoot the Office integration
 description: This topic provides answers to questions, tips, and troubleshooting information for the Microsoft Office integration capabilities. The questions and issues that are discussed range across user, administration, and development scenarios.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 04/24/2020
+ms.date: 04/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -195,7 +195,7 @@ The following illustration shows the setup of SMTP on the **Email parameters** p
 
 **Long-term fix:** The long-term fix for this issue was put in place on May 10, 2016. The Office Add-ins now use a new Dialog API that the Office team added. 
 
-**Taking advantage of the add-in updates that support AD FS:** All Office installations should be updated via **File** > **Account** > **Updates** (for click-to-run installations) or via Windows Update (for MSI installations). The AD FS Dialog API was included in the May update ([16.0.6868.2060](https://answers.microsoft.com/msoffice/forum/all/may-update-16068682060-for-office-2016-on-windows/ea082237-7ec3-4b06-895b-83490980e6d2)). For information about updates, see the [Microsoft 365 client update channel releases](https://technet.microsoft.com/office/mt465751?f=255&MSPPError=-2147217396) page. 
+**Taking advantage of the add-in updates that support AD FS:** All Office installations should be updated via **File** > **Account** > **Updates** (for click-to-run installations) or via Windows Update (for MSI installations). The AD FS Dialog API was included in the May update (16.0.6868.2060). For information about updates, see the [Microsoft 365 client update channel releases](https://technet.microsoft.com/office/mt465751?f=255&MSPPError=-2147217396) page. 
 
 If your Office build isn't updated, you might be on the deferred track ([Overview of update channels for Microsoft 365 Apps](https://technet.microsoft.com/library/mt455210.aspx)). In this case, you can [use the Office Deployment Tool to move to the Current channel](https://technet.microsoft.com/library/jj219422.aspx?f=255&MSPPError=-2147217396) or sign up for the [Office Insider program](https://products.office.com/office-insider) to help guarantee that you have the latest updates. Additionally, see [Install the latest version of Office](https://docs.microsoft.com/office/dev/add-ins/develop/install-latest-office-version) and [Office 2016 Deployment Guides for Admins](https://technet.microsoft.com/library/cc303401(v=office.16).aspx). 
 
