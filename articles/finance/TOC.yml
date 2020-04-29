@@ -2978,7 +2978,7 @@
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?toc=/dynamics365/finance/toc.json
           - name: Test the prepared ER solution in the target application
             items:
-            - name: (ER) Import configurations from RCS
+            - name: Import configurations from RCS
               href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
             - name: Generate electronic documents for payments using a format configuration
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/dynamics365/finance/toc.json
@@ -3364,8 +3364,12 @@
             href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
       - name: Tutorials
         items: 
-        - name: Use JOIN data sources to get data from multiple application tables
-          href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md
+        - name: Learn how to use data sources
+          items: 
+          - name: Use JOIN to get data from multiple tables
+            href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/finance/toc.json 
+          - name: Use RAW XML to add content
+            href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/finance/toc.json
         - name: Configure country context dependent ER model mappings
           href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md
         - name: Configure ER formats to use parameters that are specified per legal entity
