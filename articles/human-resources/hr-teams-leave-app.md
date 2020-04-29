@@ -28,7 +28,7 @@ ms.author: anbichse
 ms.search.validFrom: 2020-05-04
 ms.dyn365.ops.version: Human Resources
 
---- 
+---
 
 # Manage leave requests in Teams
 
@@ -40,11 +40,11 @@ You can find the Human Resources app in the Teams store.
 
 1. In Microsoft Teams, select the ellipses.
 
-   ![Human Resources Teams leave app ellipses](./media/hr-teams-leave-app-ellipses.png)
+   ![Human Resources Teams leave app ellipses](/media/hr-teams-leave-app-ellipses.png)
  
 2. Search for Dynamics 365 Human Resources, and then select the **Human Resources** tile.
 
-   ![Human Resources Teams leave app HR tile](./media/hr-teams-leave-app-human-resources-tile.png)
+   ![Human Resources Teams leave app HR tile](/media/hr-teams-leave-app-human-resources-tile.png)
 
 3. Select the **Add** button to install the app.
 
