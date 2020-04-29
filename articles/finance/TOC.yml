@@ -3309,15 +3309,23 @@
             - name: Download configurations from the ER repository of the RCS type
               href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
             - name: Import configurations from RCS
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
         - name: Tutorials
           items: 
-          - name: Use JOIN data sources to get data from multiple application tables
-            href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md
-          - name: Configure country context dependent ER model mappings
-            href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md
-          - name: Configure ER formats to use parameters that are specified per legal entity
-            href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md
+          -name: Learn how to use ER data sources
+           items: 
+           - name: Use JOIN to get data from multiple tables
+             href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/finance/toc.json
+           - name: Use RAW XML to add content
+             href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/finance/toc.json
+           - name: Support parameterized calls of CALCULATED FIELD data sources
+             href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/finance/toc.json
+           - name: Cross-company ER data sources
+             href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/finance/toc.json
+           - name: Configure country context dependent ER model mappings
+             href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md
+           - name: Configure ER formats to use parameters that are specified per legal entity
+             href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md
           - name: Set up the parameters of an ER format per legal entity
             href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md
           - name: Defer execution of ER format elements
