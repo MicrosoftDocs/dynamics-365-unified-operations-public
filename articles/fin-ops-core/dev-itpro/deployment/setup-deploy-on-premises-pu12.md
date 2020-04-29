@@ -671,7 +671,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
     **Self-signed certificate for an Always-On SQL instance**
 
-    If setting up testing certificates for Always-On, you can use the following **remoting** script, which will perform the same as the following **manual** script and steps **a.**, **b.**, **c.**, and **d.**.
+    If setting up testing certificates for Always-On, you can use the following **remoting** script, which will perform the same as the following **manual** script and steps **a.**, **b.**, **c.**, **d.**, and **e.**.
 
     ```powershell
     .\Create-SQLTestCert-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml `
@@ -705,8 +705,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
         2. In the **Protocols for [instance name] Properties** dialog box, on the **Certificate** tab, select the desired certificate from the drop-down menu for the **Certificate** box, and then click **OK**.
         3. On the **Flags** tab, in the **ForceEncryption** box, select **Yes**, and then click **OK**
         4. Restart the SQL Server service.
-
-4. Export the certificate (the .cer file) from each SQL cluster node, and install it in the trusted root of each Service Fabric node. You will have a minimum of 2 certificates for the Always-On cluster, but more should that have additional replicas. 
+    5. Export the certificate (the .cer file) from each SQL cluster node, and install it in the trusted root of each Service Fabric node. You will have a minimum of 2 certificates for the Always-On cluster, but more should that have additional replicas. 
 
 
 > [!IMPORTANT]
