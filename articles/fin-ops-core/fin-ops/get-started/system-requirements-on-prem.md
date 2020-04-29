@@ -117,7 +117,7 @@ Examples for a full 2-way trust setup could be:
 <img src="./media/lbd-domain2WayTrust.png" width="700" hspace="50"/>
 
 #### Known limitations with using the Full 2-way trust setup:
-* Import of security groups from the 2008R2 user domain
+* Import of security groups from the 2008R2 user domain is not supported.
 
 ## Hardware requirements
 
@@ -304,6 +304,7 @@ The domain controller must be Windows Server 2012 R2 or later, and the domain fu
 
 - [What Are Active Directory Functional Levels](https://technet.microsoft.com/library/cc787290(v=ws.10).aspx)
 - [Understanding Active Directory Domain Services Functional Levels](https://technet.microsoft.com/library/understanding-active-directory-functional-levels(v=ws.10).aspx)
+- [Compatibility with Domain Functional Level 2008R2 through a full 2-way trust](../../fin-ops/get-started/system-requirements-on-prem.md#full-2-way-trust)
 
 ## Supported Microsoft Office applications
 
