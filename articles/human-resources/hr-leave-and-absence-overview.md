@@ -85,6 +85,10 @@ You can't set **Rounding precision** when you set **Rounding type**. You can onl
 
 You can try out new Leave and absence preview features in a **Sandbox** environment. For information about turning on preview features, see [Manage features](hr-admin-manage-features.md). The preview features include:
 
-- **Leave suspension** - You can suspend leave and absence in Human Resources for an employee. Suspending leave stops the leave accruals for selected leave types. If the suspension occurs after an accrual processes, suspending leave creates a prorated adjustment to the employee's leave balance. 
+- **Leave suspension** - You can suspend leave and absence in Human Resources for an employee. Suspending leave stops the leave accruals for selected leave types. If the suspension occurs after an accrual processes, suspending leave creates a prorated adjustment to the employee's leave balance. Reason codes can also be included when suspending an employee's leave. Also, when leave is supsended, the user experience has been updated to indicate suspension. 
 
 - **Carry forward rules** - You can specify a carry forward leave type for carry forward balances where carry forward adjustments are transferred. For example, if an employee carries forward 10 days, you can pick a different leave type for those 10 days. 
+
+- **Include reason code and comments for adjustments** - You can include a reason code and a comment when making an adjustment to an employee's leave balance. 
+
+- **Transition to Leave and absence parameters** - You can now use only Leave and absence parameters instead of using Human resources parameters. 
