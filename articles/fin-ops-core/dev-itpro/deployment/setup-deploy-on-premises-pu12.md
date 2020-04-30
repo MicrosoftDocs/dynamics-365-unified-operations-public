@@ -691,7 +691,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     $cert = New-SelfSignedCertificate -Subject "$computerName.$domain" -DnsName "$listenerName.$domain", $listenerName, $computerName -Provider 'Microsoft Enhanced RSA and AES Cryptographic Provider'
     ```
    > [!NOTE] 
-   > For further details: [How to enable SSL encryption for an instance of SQL Server by using Microsoft Management Console](https://support.microsoft.com/help/316898/how-to-enable-ssl-encryption-for-an-instance-of-sql-server-by-using-microsoft-management-console).
+   > For more information, see [How to enable SSL encryption for an instance of SQL Server by using Microsoft Management Console](https://support.microsoft.com/help/316898/how-to-enable-ssl-encryption-for-an-instance-of-sql-server-by-using-microsoft-management-console).
     
     For each node of the SQL cluster, follow these steps. Make sure that you make the changes on the non-active node, and that you fail over to it after changes are made.
 
