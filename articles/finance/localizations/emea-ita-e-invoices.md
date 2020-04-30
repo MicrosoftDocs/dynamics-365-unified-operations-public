@@ -109,6 +109,11 @@ Set values are used for output in the xml file blocks (see the table bellow how 
 
 > [!NOTE]  
 > The **Description** field (left) is filled in automatically when a user is filling **Group description** and **Description** (right) fields.
+> [!NOTE]
+> Set up Project categories with Fee/Expense transaction type, assign Category IDs equal to the codes defined for Follo (see the table in this section).
+> Project category of Fee type can be used only for stamp dute included in the invoice and Project category of Expense type can be used both for invoices included and not included in a customer invoice (**Bollo** document property type is used in both casess). 
+> Select the Category that was defined as one of stamp duty codes, enter Cost price - it will be considered as stamp duty amount, enter the same amount or zero into Sales price amount depending on the necessity to include or not this amount to the invoice total:
+
 
 ## Customers 
 
@@ -122,7 +127,7 @@ In these both cases the system fills in the CodiceDestinatario tag (xml file) wi
 
 If **Authority office** field value is empty, the system considers a customer as a private company or professional (Transmission Format is **FPR12**) and fills in the CodiceDestinatario tag (xml file) with **0000000**.
 
-In this case a certified e-mail address (**PEC**) should be set up (see the table in [Electronic document properties](/electronic-document-properties)).
+In this case a certified e-mail address (**PEC**) should be set up (see the table in the [Electronic document properties](/electronic-document-properties) section).
 
 ### Activate automatic creation of e-invoices  
 **Accounts receivable \> Customers \> All customers,** open a customer in **Edit** mode**, Invoice and delivery** FastTab, **E-INVOICE** field group, **eInvoice registe** option.
