@@ -126,13 +126,13 @@ The **Time off** tab allows you to view:
 
 1. Select the **Drafts** tab.
 
-   ![Human Resources Teams leave app Drafts tab](./media/hr-teams-leave-app-bot-drafts-tab.png)
+   ![Human Resources Teams leave app Drafts tab](./media/hr-teams-leave-app-drafts-tab.png)
 
 2. Select the pencil to edit the request, or select the trash can to delete the request.
 
 3. Make any necessary changes. When you're done entering information, type **Submit** to submit it for approval. You can also type **Save as draft** to come back to it later.
 
-   ![Human Resources Teams leave app edit draft](./media/hr-teams-leave-app-bot-edit.png)
+   ![Human Resources Teams leave app edit draft](./media/hr-teams-leave-app-drafts-edit.png)
 
 ## See also
 
