@@ -102,7 +102,13 @@ Set values are used for output in the xml file blocks (see the table bellow how 
 | Business scenario | Electronic document property type | Electronic document property type description | Applicability (Table) | Where to use | Element in the xml file |
 |-------------------|-----------------------------------|-----------------------------------------------|-----------------------|--------------|-------------------------|
 | For customers who are out of EU and don't have VAT registration codes VAT registration number should be 00000000000 | VATnonEU | For example: Customer, non-EU VAT number|CustTable (Customers) | Account receivable > Customers > All customers, Customer tab, Properties, Electronic document properties button. Value= 00000000000 |IdCodice (CessionarioCommittente\ DatiAnagrafici\ IdFiscaleIVA block) |
-|-------------------|-----------------------------------|-----------------------------------------------|-----------------------|--------------|-------------------------|
+| Certified e-mail address (PEC) for private or professional company | PEC | For example: Customer, Certified e-mail address | CustTable
+(Customers) | Account receivable > Customers > All customers, Customer tab, Properties, Electronic document properties button.
+Value = <Certified e-mail address> | PECDestinatario (DatiTrasmissione block) |
+
+
+
+
 
 
 ## Customers 
