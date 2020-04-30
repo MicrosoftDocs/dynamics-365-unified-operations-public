@@ -6,7 +6,7 @@ title: Manage employee leave
 description: Define human resources parameters for leave and absence in Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 05/04/2020
+ms.date: 04/30/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -26,7 +26,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: jcart
-ms.search.validFrom: 2020-05-04
+ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Human Resources
 
 ---
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: Human Resources
 
 You can manage an employee's leave by leave type. This includes expiring leave enrollment and adjusting leave type balances. 
 
-## Adjusting leave balances
+## Adjust leave balances
 
 1. On the employee's record, select **Leave**.
 
