@@ -41,7 +41,7 @@ Each of the scenarios in this topic reference values and records included in the
 
 ## Set up shipment consolidation policies and product filters
 
-The scenario described here assumes that you have already done the exercises and created the records described in [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md). Please do those exercises before continuing with this scenario.
+The scenario described here assumes that you have already enabled the feature, done the exercises, and created the policies and other records described in [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md). Please do those exercises before continuing with this scenario.
 
 ## Create the sales orders for this scenario
 

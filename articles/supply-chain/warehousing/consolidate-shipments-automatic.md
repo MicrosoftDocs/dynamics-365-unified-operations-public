@@ -43,7 +43,7 @@ Each of the scenarios in this topic reference values and records included in the
 
 ## Set up shipment consolidation policies and product filters
 
-The scenario described here assumes that you have already done the exercises and created the records described in [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md). Please do those exercises before continuing with this scenario.
+The scenario described here assumes that you have already enabled the feature, done the exercises, and created the policies and other records described in [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md). Please do those exercises before continuing with this scenario.
 
 ## Create the sales orders for this scenario
 
@@ -241,7 +241,7 @@ For each set of sales orders you created earlier, you'll work through the three 
 1. Find and select the required shipment.
 1. If a consolidation policy was used during shipment creation or update, you can find it in the **Shipment consolidation policy** field.
 
-### Release sales orders from Order set 1
+### Release sales orders from order set 1
 
 Follow the [basic release to warehouse procedure](#release-procedure) to release the sales orders from order set one.
 
@@ -250,7 +250,7 @@ When your done, you should see that two shipments were created:
 - The first shipment contains three lines and was created using the *CustomerMode* shipment consolidation policy.
 - The second shipment (without the *Airways* transportation mode of delivery) is created using the *CustomerOrderNo* shipment consolidation policy.
 
-### Release sales orders from Order set 2
+### Release sales orders from order set 2
 
 Follow the [basic release to warehouse procedure](#release-procedure) to release the sales orders from order set two.
 
@@ -259,7 +259,7 @@ When your done, you should see that three shipments were created:
 - The first shipment contains *Flammable* items.
 - Each of the other two shipments contains one line with the *Explosive* item.
 
-### Release sales orders from Order set 3
+### Release sales orders from order set 3
 
 Follow the [basic release to warehouse procedure](#release-procedure) to release the sales orders from order set three.
 
@@ -268,13 +268,13 @@ When your done, you should see that:
 - One existing shipment was updated (the one that was created as a result of order set 2 release to warehouse). A line with the *Flammable* item was added.
 - One new shipment was created. It contains the *Explosive* item.
 
-### Release sales orders from Order set 4
+### Release sales orders from order set 4
 
 Follow the [basic release to warehouse procedure](#release-procedure) to release the sales orders from order set four.
 
 When your done, you should see that one existing shipment (where **Customer requisition** = *1*) was updated to have one new line added to it.
 
-### Release sales orders from Order set 5
+### Release sales orders from order set 5
 
 Follow the [basic release to warehouse procedure](#release-procedure) to release the sales orders from order set five.
 
@@ -283,16 +283,16 @@ When your done, you should see that:
 - One existing shipment (where **Customer requisition** = *1*) was updated. It now has a line from sales order 5-3 (with **Customer requisition** = *1*) added to it.
 - One new shipment was created, where lines from sales orders 5-1 and 5-2 are grouped into one shipment.
 
-### Release sales orders from Order set 6
+### Release sales orders from order set 6
 
 Follow the [basic release to warehouse procedure](#release-procedure) to release the sales orders from order set six.
 
 When your done, you should see that four shipments were created:
 
-- Lines from two orders for customer *US-003* are grouped into one shipment using the *Order pool* shipment consolidation policy;
-- Lines from two orders for customer *US-004* are grouped into one shipment using the *Order pool* shipment consolidation policy;
-- Lines from sales orders 5 and 6 for customer *US-007* are grouped into one shipment using the *Order pool* shipment consolidation policy;
-- Lines from sales orders 7 and 8 for customer *US-007* are grouped into one shipment using the *CrossOrder* shipment consolidation policy.
+- Lines from two orders for customer *US-003* were grouped into one shipment using the *Order pool* shipment consolidation policy;
+- Lines from two orders for customer *US-004* were grouped into one shipment using the *Order pool* shipment consolidation policy;
+- Lines from sales orders 5 and 6 for customer *US-007* were grouped into one shipment using the *Order pool* shipment consolidation policy;
+- Lines from sales orders 7 and 8 for customer *US-007* were grouped into one shipment using the *CrossOrder* shipment consolidation policy.
 
 ## Related topics and scenarios
 

@@ -55,15 +55,6 @@ Use the **Shipment consolidation workbench** page to consolidate existing shipme
 
 <!-- KFM: What is the name of this feature? In feature management, it's "Consolidate shipment", but that's hard to tell from the existing feature. Maybe "Shipment consolidation policies"?  -->
 
-<a name="enable-consolidation-policies"></a>
-
-## Enable the shipment consolidation policies feature
-
-Before you can use this feature, it must be enabled on on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the feature status and enable it if needed. Here, the feature is listed as:
-
-- **Module** - *Warehouse management*
-- **Feature name** - *Consolidate shipment*
-
 ## Overview of new functionality
 
 This section describes the pages, menu items, and features that are modified or added when you enable and use the *Shipment consolidation policies* feature.

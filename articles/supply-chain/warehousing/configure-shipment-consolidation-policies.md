@@ -36,6 +36,13 @@ The shipment consolidation process using shipment consolidation policies allows 
 
 The scenarios provided in this topic illustrate how to set up default and custom shipment consolidation policies.
 
+## Enable the shipment consolidation policies feature
+
+Before you can use this feature, it must be enabled on on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the feature status and enable it if needed. Here, the feature is listed as:
+
+- **Module** - *Warehouse management*
+- **Feature name** - *Consolidate shipment*
+
 ## Enable demo data
 
 Each of the scenarios in this topic reference values and records included in the standard demo data provided for Supply Chain Management. If you'd like to run the exercises using the values provided here, be sure to work on an environment with the demo data installed, and set the legal entity to **USMF** before you begin.

@@ -41,7 +41,16 @@ Each of the scenarios in this topic reference values and records included in the
 
 ## Set up shipment consolidation policies and product filters
 
-The scenario described here assumes that you have already done the exercises and created the records described in [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md). Please do those exercises before continuing with this scenario.
+The scenario described here assumes that you have already enabled the feature, done the exercises, and created the policies and other records described in [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md). Please do those exercises before continuing with this scenario.
+
+## Enable the manual shipment consolidation feature
+
+Before you can use the manual shipment consolidation feature, it must be enabled on on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the feature status and enable it if needed. Here, the feature is listed as:
+
+- **Module** - *Warehouse management*
+- **Feature name** - *Manual shipment consolidation*
+
+As mentioned in [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md), you must also enable the *Consolidate shipment* feature before you can create the policies, but you should already have done that.
 
 ## Create the sales orders for this scenario
 
@@ -180,61 +189,55 @@ Release to warehouse each of the sales orders you created for this scenario by d
 
 ## Consolidate the shipments using the shipment consolidation workbench
 
-To consolidate shipments using **Shipment consolidation workbench** form, follow these steps.
+Do the following to consolidate shipments using the shipment consolidation workbench:
 
 1. Go to **Warehouse management \> Release to warehouse \> Shipment consolidation workbench**.
-1. Click **Edit query**.
-1. Click **Add** to add a new criteria line.
-1. In the **Table** field, select **Sales orders**.
-1. In th **Field** field, select **Sales order**.
-1. In the **Criteria** field, enter sales order numbers from all order sets.
-1. Click **OK**.
-1. Click **Consolidate shipments**.
-1. Select all the shipments and click **Consolidate**.
+1. Select **Edit query** on the action pane.
+1. The query editor pane opens. On the **Range** tab, select **Add** to add a new row to the table and make the following settings for it:
+    - **Table** - *Sales orders*
+    - **Field** - *Sales order*
+    - **Criteria** - Enter the sales order numbers for each of the order sets you created for this scenario. <!-- KFM: Which ones, all of them? Should we have taken note of the sales order numbers as we made them? Comma-separated? -->
+1. Select **OK** to save your query and close the pane.
+1. Select **Consolidate shipments** on the action pane.
+1. Select all of the shipments and then select **Consolidate** on the action pane.
 
-## Shipment verification
+## Verify the shipments
 
-To review created or updated shipment, follow these steps.
+The following procedure will let you verify shipments that have been created or updated as a result of shipment consolidation. Use it to review each of the order sets that you created for this scenario and then review the subsections that follow to check whether you have obtained the expected results.
 
-1. Go to **Warehouse management > Shipments > All shipments**.
-1. Find and select required shipment.
-1. If consolidation policy is used during shipment creation or update it can be found in the **Shipment consolidation policy** field.
-
-Using instructions above, verify shipments that are created or updated as a result of shipment consolidation according to expected results provided below.
+1. Go to **Warehouse management \> Shipments \> All shipments**.
+1. Find and select the required shipment.
+1. If a consolidation policy was used when the shipment was created or updated, you will be able to see it in the **Shipment consolidation policy** field.
 
 ### Order set 1 related shipments
 
-Expected result:
+Two shipments should have been created:
 
-- Two shipments are created:
-  - The first shipment contains three lines and is created using **CustomerMode** shipment consolidation policy;
-  - The second shipment (without **Airways** transportation mode of delivery) is created using **CustomerOrderNo** shipment consolidation policy.
+- The first shipment contains three lines and was created using the *CustomerMode* shipment consolidation policy.
+- The second shipment (without *Airways* transportation mode of delivery) was created using the *CustomerOrderNo* shipment consolidation policy.
 
 ### Order set 2 related shipments
 
-Expected result:
+Three shipments should have been created:
 
-- Three shipments are created:
-  - The first shipment contains **Flammable** items;
-  - Each of the other two shipments contains one line with **Explosive** item.
+- The first shipment contains *Flammable* items.
+- Each of the other two shipments contains one line with an *Explosive* item.
 
 ### Order set 3 related shipments
 
-Expected result:
+Two shipments should have been created:
 
-- Two shipments are created:
-  - The first shipment contains order lines from sales order with **1** customer requisition;
-  - The second shipment contains order lines from sales order with **2** customer requisition;
+- The first shipment contains order lines from the sales order with **Customer requisition** = *1*.
+- The second shipment contains order lines from sales order with **Customer requisition** = *2*.
 
 ### Order set 4 related shipments
 
-Expected result:
+Three shipments should have been created:
 
-- Three shipments are created:
-  - Lines from two orders for **US-003** customer are grouped into one shipment using **Order pool** shipment consolidation policy;
-  - Lines from two orders for **US-004** customer are grouped into one shipment using **Order pool** shipment consolidation policy;
-  - Lines from sales orders 5 and 6 for **US-007** customer are grouped into one shipment using **Order pool** shipment consolidation policy;
-  - Lines from sales orders 7 and 8 for **US-007** customer are grouped into one shipment using **CrossOrder** shipment consolidation policy.
+- Lines from two orders for customer *US-003* were grouped into one shipment using the *Order pool* shipment consolidation policy.
+- Lines from two orders for customer *US-004* were grouped into one shipment using the *Order pool* shipment consolidation policy.
+- Lines from sales orders 4-5 and 4-6 for customer *US-007* were grouped into one shipment using the *Order pool* shipment consolidation policy.
+- Lines from sales orders 4-7 and 4-8 for customer *US-007* were grouped into one shipment using the *CrossOrder* shipment consolidation policy.
 
 ## Related articles and demo scripts
 
