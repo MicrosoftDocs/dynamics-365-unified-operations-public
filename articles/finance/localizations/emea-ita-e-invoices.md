@@ -87,15 +87,15 @@ On **Number sequences** tab fill in number sequences for e-invoice file number
 and transmission number.
 
 ## Electronic document properties
-Electronic document properties functionality are used for setup of different business cases: 
+Electronic document properties functionality are used for setup of xml document blocks ofor different business cases: 
 1. VAT registration number for customers who are out of EU and don't have VAT registration codes.  
 2. Certified e-mail address (PEC) for private or professional companies.
 3. Stamp duty (payable and not payble by customer).
 2. Representative data
 
-for the functionality to work it is necessary to set up:
-1. **Document property types** (**Account receivable > Setup > Electronic document property types**) and to which table the document property type is aaplied. For the listed business cases the **Customers** and **Legal entities** tables are applied (**Applicability** button).
-2. Required values in set up tables (on the level of the customer and the legal entity). Open **Accounts receivable \> Customers \> All customers, Customer** tab, **Properties** and **Organization administration > Organizations > Legal entities**, **Electronic document properties** button.
+For the functionality to work it is necessary to set up:
+1. **Electronic document property types** (**Account receivable > Setup > Electronic document property types**) and to which table the document property type is aaplied. For electronic invoices functionality the **Customers** and **Legal entities** tables are applied (**Applicability** button).
+2. Required values in set tables on the level of the customer and the legal entity (**Accounts receivable \> Customers \> All customers, Customer** tab, **Electronic document properties** button and **Organization administration > Organizations > Legal entities**, **Electronic document properties** button.
 
 Set values are used for output in the xml file blocks (see the table bellow how to fiil and where these values are used).
 
@@ -110,10 +110,11 @@ Set values are used for output in the xml file blocks (see the table bellow how 
 > [!NOTE]  
 > In **Document property types** list page, the **Description** field (left) is filled in automatically when a user is filling **Group description** and **Description** (right) fields.
 
-> [!NOTE]
-> Set up Project categories with Fee/Expense transaction type, assign the Сategory IDs equal to the codes defined for **Follo** (see the table in this section).
-> Project category of Fee transaction type can be used only for stamp duty included in the invoice and Project category of expense transaction type can be used both for invoices included and not included in a customer invoice (**Bollo** document property type is used in both casess). 
-> Select the Category that was defined as stamp duty, enter Cost price. The system considers this cost price as stamp duty amount, enter the same amount or zero into Sales price amount depending on the necessity to include or not this amount to the invoice total:
+### Use of project categories for stamp duty
+
+Set up Project categories with Fee/Expense transaction type, assign the Сategory IDs equal to the codes defined for **Follo** (see the table in this section).
+Project category of Fee transaction type can be used only for stamp duty included in the invoice and Project category of expense transaction type can be used both for invoices included and not included in a customer invoice (**Bollo** document property type is used in both casess). 
+Select the Category that was defined as stamp duty, enter Cost price. The system considers this cost price as stamp duty amount, enter the same amount or zero into Sales price amount depending on the necessity to include or not this amount to the invoice total:
 
 
 ## Customers 
