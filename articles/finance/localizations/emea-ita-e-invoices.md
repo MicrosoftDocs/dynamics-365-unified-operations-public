@@ -95,6 +95,7 @@ Electronic document property types functionality are used for setup of different
 for the functionality to work it is necessary to set up:
 1. **Document property types** (**Account receivable > Setup > Electronic document property types**) and to which table the document property type is aaplied. For the listed business cases the **Customers** and **Legal entities** tables are applied (**Applicability** button).
 2. Required values in set up tables (on the level of the customer and legal entity). Open **Accounts receivable \> Customers \> All customers, Customer** tab, **Properties** and **Organization administration > Organizations > Legal entities**, **Electronic document properties** button.
+
 Set values are used for output in the xml file blocks (see the table bellow how to fiil and where these values are used).
 ## Customers 
 
