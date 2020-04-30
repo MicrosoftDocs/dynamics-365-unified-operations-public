@@ -675,7 +675,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
         -SqlListenerName dax7sqlaosqla
     ```
 
-    **Manual Self-signed steps for an Always-On SQL instance or Windows Server Failover Clustering with SQL Server** 
+    **Manual self-signed steps for an Always-On SQL instance or Windows Server Failover Clustering with SQL Server** 
         
     For each node of the SQL cluster, follow these steps. 
 
