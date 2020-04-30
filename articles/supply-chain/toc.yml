@@ -1321,7 +1321,7 @@
         items:
         - name: Planning Optimization overview
           href: master-planning/planning-optimization/planning-optimization-overview.md
-        - name: Negative on-hand is treated as zero on-hand
+        - name: Planning with negative on-hand quantities
           href: master-planning/planning-optimization/negative-on-hand.md 
         - name: Get started with Planning Optimization
           href: master-planning/planning-optimization/get-started.md
