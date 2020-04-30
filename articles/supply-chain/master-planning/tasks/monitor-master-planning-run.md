@@ -30,7 +30,6 @@ ms.dyn365.ops.version: Version 7.0.0
 # Monitor a master planning run
 
 [!include [banner](../../includes/banner.md)]
-[!include [banner](../../includes/preview-banner.md)]
 
 ## Use a Gantt chart to visualize master planning progress
 
