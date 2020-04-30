@@ -5,7 +5,7 @@ title: System requirements for on-premises deployments
 description: This topic lists the system requirements for on-premises deployments.
 author: PeterRFriis
 manager: AnnBe
-ms.date: 04/29/2020
+ms.date: 04/30/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -254,7 +254,7 @@ Finance + Operations falls under Microsoft's standard support policy regarding o
 
 The following software must be present on a computer before any Finance + Operations components can be installed:
 
-- The Microsoft .NET Framework version 4.5.1 or later
+- The Microsoft .NET Framework. See [Deployment setup](../../dev-itpro/deployment/setup-deploy-on-premises-pu12.md#setup) for version information.
 - Service Fabric
 
 For more information, see [Plan and prepare your Service Fabric cluster](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).

@@ -57,10 +57,7 @@ This topic explains how to log events to [Customer Application Insights](https:/
     > [!div class="mx-imgBorder"]
     > ![Search field](media/Search.png)
 
-4. Select **Create**.
-
-    > [!div class="mx-imgBorder"]
-    > ![Create button](media/Create.png)
+4. Click **Create** in the Application Insights page.
 
 5. On the **Basic** tab, set the **Subscription**, **Resource group**, **Name**, and **Region** fields.
 
