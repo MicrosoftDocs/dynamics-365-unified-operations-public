@@ -2643,6 +2643,8 @@
           href: inventory/inventory-statuses.md
         - name: Inventory tag counting
           href: inventory/inventory-tag-counting.md
+        - name: On-hand entry cleanup
+          href: warehousing/on-hand-cleanup.md
       - name: Replenishment
         items:
         - name: Replenishment overview
