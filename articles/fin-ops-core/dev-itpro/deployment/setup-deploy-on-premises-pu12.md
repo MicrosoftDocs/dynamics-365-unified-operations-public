@@ -662,8 +662,8 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     > [!NOTE]
     > Make sure that Always-On is set up as described in [Select Initial Data Synchronization Page (Always On Availability Group Wizards)](/sql/database-engine/availability-groups/windows/select-initial-data-synchronization-page-always-on-availability-group-wizards), and follow the instructions in [To Prepare Secondary Databases Manually](/sql/database-engine/availability-groups/windows/select-initial-data-synchronization-page-always-on-availability-group-wizards#PrepareSecondaryDbs).
 
-2. Run the SQL service as a domain user.
-3. Get an SSL certificate from a certificate authority to configure Finance + Operations. For testing purposes, you can create and use a self-signed certificate. You will need to replace the computer name and domain name in the following example.
+2. Run the SQL service as a domain user or a group-managed service account.
+3. Get an SSL certificate from a certificate authority to configure the SQL Server for Finance + Operations. For testing purposes, you can create and use a self-signed certificate. You will need to replace the computer name and domain name in the following examples:
 
     **Self-signed certificate for an Always-On SQL instance**
 
@@ -679,7 +679,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
         
     For each node of the SQL cluster, follow these steps. 
 
-    1. Run the following PowerShell script on each of the SQL Server Always-on replicas.
+    1. Run the following PowerShell script on each of the SQL Server Always-On replicas.
 
     ```powershell
     # Manually create certificate for each SQL Node (i.e. 2 nodes = 2 certificates)
@@ -690,7 +690,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     $cert = New-SelfSignedCertificate -Subject "$computerName.$domain" -DnsName "$listenerName.$domain", $listenerName, $computerName -Provider 'Microsoft Enhanced RSA and AES Cryptographic Provider' -CertStoreLocation "cert:\LocalMachine\My"
     ```
 
-    2. Grant certificate permissions to the service account that is used to run the SQL service. 
+    2. Grant certificate permissions to the account that is used to run the SQL service. 
         1. Open Manage Computer Certificates (**certlm.msc**).
         2. Right-click the certificate created, and then select **Tasks** \> **Manage Private Keys**.
         3. Add in the SQL Server service account and grant Read access.
