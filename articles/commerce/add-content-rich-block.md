@@ -65,15 +65,21 @@ The following image shows an example of a text block module used on a home page.
 
 To add a text block module to a new page and set the required properties, follow these steps.
 
-1. Create a page template that is named **Content template**. 
-1. In the **Body** slot, add a **Default page** module.
-1. Finish editing the template, and publish it.
-1. Use the content template that you just created to create a page that is named **Content page**.
-1. In the **Main** slot of the new page, add a container module.
+1. Go to **Templates** and select **+New** to create a new template.
+1. In the **New Template** dialog box, under **Template name** enter **Content template**.
+1. In the **Body** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Default page** module, and then select **OK**.
+1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.
+1. Go to **Pages** and select **+New** to create a new page.
+1. In the **Choose a template** dialog box, select **Content template**, under **Page name** enter **Content page**, and then select **OK**.
+1. In the **Main** slot of the new page, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Container** module, and then select **OK**.
 1. In the property pane for the container module, set the **Width** property to **Fill container**.
-1. Add a text block module to the container module. 
+1. In the **Container** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Text block** module, and then select **OK**. 
 1. In the property pane of the text block module, add text to the **Rich text** field.
-1. Finish editing the page, and publish it.
+1. Select **Save**, and then select **Preview** to preview the page.
+1. Select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
 ## Additional resources
 
