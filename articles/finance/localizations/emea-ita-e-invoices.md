@@ -86,9 +86,16 @@ On **Number sequences** tab fill in number sequences for e-invoice file number
 and transmission number.
 
 ## Electronic document property types
-Settings these functionality can be used for different purpose and can be applied both to a customer or legal entity record:
-1. Stamp duty (Bollo), applied to Legal entity (The sum of the amounts of fees with this code will be then shown in DatiBollo block in the output XML file for Project electronic invoices) or (will be considered as stamp duty excluded from invoices totals;) Value Sl
-2. BolloPay (will be considered as stamp duty included into invoices totals.) value Slpay
+Electronic document property types functionality are used for setup of different business cases: 
+1. VAT registration number for customers who are out of EU and don't have VAT registration codes.  
+2. Certified e-mail address (PEC) for private or professional companies.
+3. Stamp duty (payable and not payble by customer).
+2. Representative data
+
+for the functionality to work it is necessary to set up:
+1. **Document property types** (**Account receivable > Setup > Electronic document property types**) and to which table the document property type is aaplied. For the listed business cases the **Customers** and **Legal entities** tables are applied (**Applicability** button).
+2. Required values in set up tables (on the level of the customer and legal entity). Open **Accounts receivable \> Customers \> All customers, Customer** tab, **Properties** and **Organization administration > Organizations > Legal entities**, **Electronic document properties** button.
+Set values are used for output in the xml file blocks (see the table bellow how to fiil and where these values are used).
 ## Customers 
 
 ### Authority office 
