@@ -27,7 +27,7 @@ ms.search.validFrom: 2020-04-03
 ms.dyn365.ops.version: Release 10.0.12
 ---
 
-# On-hand entry cleanup
+# Warehouse management on-hand entries cleanup job
 
 The performance of queries used to calculate the on-hand inventory is affected by the number of records in the tables involved. One way to improve the performance of such operations is to reduce the number of records that the database has to consider.
 
@@ -41,7 +41,7 @@ If negative physical inventory is allowed, then the job might not be able to del
 
 ## Schedule and configure the on-hand entry cleanup job
 
-The cleanup job is available under **Inventory Management > Periodic tasks > Clean up > Warehouse management on-hand entries cleanup**. Use the standard job settings here to control the scope and schedule for running the job. In addition, the following settings are provided:
+The cleanup job is available under **Inventory management > Periodic tasks > Clean up > Warehouse management on-hand entries cleanup**. Use the standard job settings here to control the scope and schedule for running the job. In addition, the following settings are provided:
 
 - **Delete if not updated for this many days** - Enter a minimum number of days to wait before deleting an on-hand entry that has dropped to zero quantity. Use this setting to reduce the risk of deleting on-hand entries that are still in use. Enter a value of "0" (or leave blank) to allow cleaning up as soon as possible.
 - **Maximum execution time (hours)** - Enter a maximum execution time (in hours) for the cleanup job. If the job doesn't complete before the time is up, it will save the work completed so far and then exit. This capability is especially relevant for implementations that have high inventory usage, in which case you should schedule the job to run at times when the system is as lightly loaded as possible. Enter a value of "0" (or leave blank) to allow the batch job to continue running until it has finished. This setting is only available if it has been [enabled on your system](#max-execution-time).

@@ -2635,6 +2635,8 @@
           href: warehousing/partial-location-cycle-counting.md
         - name: Define partial location cycle counting process
           href: warehousing/tasks/define-partial-location-cycle-counting-process.md
+        - name: Warehouse management on-hand entries cleanup job
+          href: warehousing/onhand-cleanup.md
         - name: Inventory journal
           href: inventory/inventory-journals.md
         - name: Inventory location
@@ -2643,8 +2645,6 @@
           href: inventory/inventory-statuses.md
         - name: Inventory tag counting
           href: inventory/inventory-tag-counting.md
-        - name: On-hand entry cleanup
-          href: warehousing/onhand-cleanup.md
       - name: Replenishment
         items:
         - name: Replenishment overview
