@@ -5,7 +5,7 @@ title: Enable custom Commerce Data Exchange synchronization via extension
 description: This topic explains how you can extend the Commerce initialization class to support custom Commerce Data Exchange (CDX) synchronization.
 author: mugunthanm
 manager: AnnBe
-ms.date: 09/16/2019
+ms.date: 04/30/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
