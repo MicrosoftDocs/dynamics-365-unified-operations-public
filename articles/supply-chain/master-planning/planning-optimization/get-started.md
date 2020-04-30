@@ -96,7 +96,7 @@ The setting of the **Use Planning Optimization** option determines which plannin
 
 If the Planning Optimization preview is turned on, master planning is done by using the Planning Optimization Add-in. In this case, master planning results and features are affected.
 
-## Addtional resources
+## Additional resources
 
 [Terms and conditions for the preview](https://go.microsoft.com/fwlink/?linkid=2015274)
 
