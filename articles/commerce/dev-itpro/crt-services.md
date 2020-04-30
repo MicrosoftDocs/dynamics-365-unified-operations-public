@@ -72,7 +72,7 @@ For more information about each service, see the CRT request/response document i
 | ChargeService              | This service implements logic that calculates automatic charges, price charges, and shipping charges for transactions. |
 | CouponService              | This service validates and updates coupon-related requests. |
 | CurrencyService            | This service converts currencies, based on exchange rates. |
-| CustomerService            | This service contains customer related operations such as Save cusotomer, purchase history, get customer and customer balance. |
+| CustomerService            | This service contains customer related operations such as Save customer, purchase history, get customer and customer balance. |
 | EmployeeService            | This service gets employee-related information and employees by store. |
 | FormattingService          | This service implements logic for the format of numbers, currencies, and dates. |
 | GiftCardService            | This service provides information about internal activities that are related to gift cards, such as issuing the gift card, getting the balance, and adding value. |
