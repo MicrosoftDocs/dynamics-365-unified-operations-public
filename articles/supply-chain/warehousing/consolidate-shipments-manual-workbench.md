@@ -49,12 +49,6 @@ Start by creating a collection of sales orders that you can work with. You must 
 
 Go to **Accounts receivable \> Orders \> All sales orders** and create a collection of sales orders with the settings described in the following subsections.
 
-## Sales orders creation
-
-The same WHS-enabled warehouse must be used in the following sets of orders unless another warehouse is explicitly mentioned.
-
-Go to **Accounts receivable > Orders > All sales orders** and create sales orders according to information below.
-
 ### Create order set 1
 
 #### Sales orders 1-1 and 1-2

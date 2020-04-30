@@ -47,7 +47,9 @@ The scenario described here assumes that you have already done the exercises and
 
 ## Create the sales orders for this scenario
 
-Start by creating a collection of sales orders that you can work with. You must work with a warehouse that is enabled for advanced warehouse (WHS) processes, and the same warehouse must be used for each of the following sets of orders unless another warehouse is explicitly mentioned.
+Start by creating a collection of sales orders that you can work with. You must work with a warehouse that is enabled for advanced warehouse (WHS) processes, and the same warehouse must be used for each of the following sets of orders unless another warehouse is explicitly mentioned. <!-- KFM: The original didn't mention warehouses. Should I remove that again? -->
+
+Go to **Accounts receivable \> Orders \> All sales orders** and create a collection of sales orders with the settings described in the following subsections.
 
 <!-- KFM: Should users set a **Warehouse** for each of the sales orders created here? If so, we should specify that for each of them. We should be able to specify a particular warehouse that is already set up correctly in the standard demo data -->
 
@@ -57,178 +59,151 @@ Start by creating a collection of sales orders that you can work with. You must 
 
 ### Create order set 1
 
-1. Go to **Accounts receivable > Orders > All sales orders** and create a new sales order with the following settings:
+#### Sales order 1-1
 
-    - **Customer account** - *US-001*
-    - **Mode of delivery** - *Airwa-Air*
+Create a sales order with the following settings:
 
-1. Add an order line with the following settings to the sales order you just created:
+- **Customer account** - *US-001*
+- **Mode of delivery** - *Airwa-Air*
+- Add an order line with the following settings:
+  - **Item number** - *A0001* (an item without a **Code 4** filter assigned)
+  - **Quantity** - *1.00*
 
-    - **Item number** - *A0001* (an item without a **Code 4** filter assigned)
-    - **Quantity** - *1.00*
+#### Sales order 1-2
 
-1. Create a second sales order with the following settings:
+Create a sales order with the following settings:
 
-    - **Customer account** - *US-001*
-    - **Mode of delivery** - *Airwa-Air*
+- **Customer account** - *US-001*
+- **Mode of delivery** - *Airwa-Air*
+- Add an order line with the following settings:
+  - **Item number** - *A0001* (an item without a **Code 4** filter assigned)
+  - **Quantity** - *1.00*
 
-1. Add an order line with the following settings to the second sales order:
+#### Sales order 1-3
 
-    - **Item number** - *A0001* (an item without a **Code 4** filter assigned)
-    - **Quantity** - *1.00*
+Create a sales order with the following settings:
 
-1. Create a third sales order with the following settings:
-
-    - **Customer account** - *US-001*
-    - **Mode of delivery** - *10*
-    - **Customer requisition** - *1*
-
-1. Add an order line with the following settings to the third sales order you just created:
-
-    - **Item number** - *A0001* (an item without a **Code 4** filter assigned)
-    - **Quantity** - *1.00*
-
-1. Add a second order line with the following settings to the third sales order:
-
-    - **Item number** - *A0002* (an item without a **Code 4** filter assigned)
-    - **Quantity** - *1.00*
-    - **Mode of delivery** - *Airwa-Air*
-
-
-1. Add the following two order lines to the third sales order:
-
-    - Order line 1:
-        - **Item number** - *A0001* (an item without a **Code 4** filter assigned)
-        - **Quantity** - *1.00*
-
-    - Order line 2:
-        - **Item number** - *A0002* (an item without a **Code 4** filter assigned)
-        - **Quantity** - *1.00*
-        - **Mode of delivery** - *Airwa-Air*
+- **Customer account** - *US-001*
+- **Mode of delivery** - *10*
+- Add an order line with the following settings:
+  - **Item number** - *A0001* (an item without a **Code 4** filter assigned)
+  - **Quantity** - *1.00*
+- Add a second order line with the following settings:
+  - **Item number** - *A0002* (an item without a **Code 4** filter assigned)
+  - **Quantity** - *1.00*
+  - **Mode of delivery** - *Airwa-Air*
 
 ### Create order set 2
 
-1. Go to **Accounts receivable > Orders > All sales orders** and create a new sales order with the following settings:
+#### Sales orders 2-1 and 2-2
 
-    - **Customer account** - *US-002*
+Create two identical sales orders with the following settings:
 
-1. Add the following two order lines to the sales order you just created:
-
-    - Order line 1:
-        - **Item number** - *D0001* (an item with its **Code 4** filter set to *Flammable*)
-        - **Quantity** - *1.00*
-
-    - Order line 2:
-        - **Item number** - *D0002* (an item with its **Code 4** filter set to *Explosive*)
-        - **Quantity** - *1.00*
-
-1. Repeat this procedure to create a second sales order that is identical to this one.
+- **Customer account** - *US-002*
+- Add an order line with the following settings:
+  - **Item number** - *D0001* (an item with its **Code 4** filter set to *Flammable*)
+  - **Quantity** - *1.00*
+- Add a second order line with the following settings:
+  - **Item number** - *D0002* (an item with its **Code 4** filter set to *Explosive*)
+  - **Quantity** - *1.00*
+  - **Mode of delivery** - *Airwa-Air*
 
 ### Create order set 3
 
-1. Go to **Accounts receivable > Orders > All sales orders** and create a new sales order with the following settings:
+#### Sales order 3-1
 
-    - **Customer account** - *US-002*
+Create a sales order with the following settings:
 
-1. Add the following two order lines to the sales order you just created:
-
-    - Order line 1:
-        - **Item number** - *D0001* (an item with its **Code 4** filter set to *Flammable*)
-        - **Quantity** - *1.00*
-
-    - Order line 2:
-        - **Item number** - *D0002* (an item with its **Code 4** filter set to *Explosive*)
-        - **Quantity** - *1.00*
+- **Customer account** - *US-002*
+- Add an order line with the following settings:
+  - **Item number** - *D0001* (an item with its **Code 4** filter set to *Flammable*)
+  - **Quantity** - *1.00*
+- Add a second order line with the following settings:
+  - **Item number** - *D0002* (an item with its **Code 4** filter set to *Explosive*)
+  - **Quantity** - *1.00*
+  - **Mode of delivery** - *Airwa-Air*
 
 <!-- KFM: This order is identical to the two created in set 2. Is that intentional? If so, why not just create three orders in set 2 and drop this one? -->
 
 ### Create order set 4
 
-1. Go to **Accounts receivable > Orders > All sales orders** and create a new sales order with the following settings:
+#### Sales order 4-1
 
-    - **Customer account** - *US-001*
-    - **Customer requisition** - *1*
+Create a sales order with the following settings:
 
-1. Add an order line with the following settings to the sales order you just created:
-
-    - **Item number** - *A0001* (an item without a **Code 4** filter assigned)
-    - **Quantity** - *1.00*
+- **Customer account** - *US-001*
+- **Customer requisition** - *1*
+- Add an order line with the following settings:
+  - **Item number** - *A0001* (an item without a **Code 4** filter assigned)
+  - **Quantity** - *1.00*
 
 ### Create order set 5
 
-1. Go to **Accounts receivable > Orders > All sales orders** and create a new sales order with the following settings:
+#### Sales orders 5-1 and 5-2
 
-    - **Customer account** - *US-001*
-    - **Customer requisition** - *2*
+Create two identical sales orders with the following settings:
 
-1. Add an order line with the following settings to the sales order you just created:
+- **Customer account** - *US-001*
+- **Customer requisition** - *2*
+- Add an order line with the following settings:
+  - **Item number** - *A0001* (an item without a **Code 4** filter assigned)
+  - **Quantity** - *1.00*
 
-    - **Item number** - *A0001* (an item without a **Code 4** filter assigned)
-    - **Quantity** - *1.00*
+#### Sales order 5-3
 
-1. Repeat the previous two steps to create a second sales order that is identical to the first one.
+Create a sales order with the following settings:
 
-1. Create a third sales order with the following settings:
-
-    - **Customer account** - *US-001*
-    - **Customer requisition** - *1*
-
-1. Add an order line with the following settings to the third sales order:
-
-    - **Item number** - *A0001* (an item without a **Code 4** filter assigned)
-    - **Quantity** - *1.00*
+- **Customer account** - *US-001*
+- **Customer requisition** - *1*
+- Add an order line with the following settings:
+  - **Item number** - *A0001* (an item without a **Code 4** filter assigned)
+  - **Quantity** - *1.00*
 
 ### Create order set 6
 
-1. Go to **Accounts receivable > Orders > All sales orders** and create a new sales order with the following settings:
+#### Sales orders 6-1 and 6-2
 
-    - **Customer account** - *US-003*
+Create two identical sales orders with the following settings:
 
-1. Add an order line with the following settings to the sales order you just created:
+- **Customer account** - *US-003*
+- **Customer requisition** - *2*
+- Add an order line with the following settings:
+  - **Item number** - *A0001* (an item without a **Code 4** filter assigned)
+  - **Quantity** - *1.00*
 
-    - **Item number** - *A0001* (an item without a **Code 4** filter assigned)
-    - **Quantity** - *1.00*
+#### Sales orders 6-3 and 6-4
 
-1. Repeat the previous two steps to create a second sales order that is identical to the first one.
+Create two identical sales orders with the following settings:
 
-1. Create a third sales order with the following settings:
+- **Customer account** - *US-004*
+- **Customer requisition** - *1*
+- Add an order line with the following settings:
+  - **Item number** - *A0001* (an item without a **Code 4** filter assigned)
+  - **Quantity** - *1.00*
 
-    - **Customer account** - *US-004*
+#### Sales orders 6-5 and 6-6
 
-1. Add an order line with the following settings to the third sales order:
+Create two identical sales orders with the following settings:
 
-    - **Item number** - *A0001* (an item without a **Code 4** filter assigned)
-    - **Quantity** - *1.00*
+- **Customer account** - *US-007*
+- **Site** - *6*
+- **Warehouse** - *61*
+- **Pool** - *ShipCons*
+- Add an order line with the following settings:
+  - **Item number** - *A0001* (an item without a **Code 4** filter assigned)
+  - **Quantity** - *1.00*
 
-1. Repeat the previous two steps to create a fourth sales order that is identical to the third one.
+#### Sales orders 6-7 and 6-8
 
-1. Create a fifth sales order with the following settings:
+Create two identical sales orders with the following settings:
 
-    - **Customer account** - *US-007*
-    - **Site** - *6*
-    - **Warehouse** - *61*
-    - **Pool** - *ShipCons*
-
-1. Add an order line with the following settings to the fifth sales order:
-
-    - **Item number** - *A0001* (an item without a **Code 4** filter assigned)
-    - **Quantity** - *1.00*
-
-1. Repeat the previous two steps to create a sixth sales order that is identical to the fifth one.
-
-1. Create a seventh sales order with the following settings:
-
-    - **Customer account** - *US-007*
-    - **Site** - *6*
-    - **Warehouse** - *61*
-    - **Pool** - (leave empty)
-
-1. Add an order line with the following settings to the fifth sales order:
-
-    - **Item number** - *A0001* (an item without a **Code 4** filter assigned)
-    - **Quantity** - *1.00*
-
-1. Repeat the previous two steps to create an eighth sales order that is identical to the seventh one.
+- **Customer account** - *US-007*
+- **Site** - *6*
+- **Warehouse** - *61*
+- **Pool** - (leave empty)
+- Add an order line with the following settings:
+  - **Item number** - *A0001* (an item without a **Code 4** filter assigned)
+  - **Quantity** - *1.00*
 
 ## Automatic release of sales orders to the warehouse
 
