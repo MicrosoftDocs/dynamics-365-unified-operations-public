@@ -5,7 +5,7 @@ title: Overview
 description: In Dynamics 365 Human Resources, the Leave and absence workspace provides a flexible framework for creating new leave plans, workflows for managing requests, and an intuitive self service page for employees to request time off. 
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/03/2020
+ms.date: 05/04/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -83,12 +83,16 @@ You can't set **Rounding precision** when you set **Rounding type**. You can onl
 
 ## Leave and absence preview features
 
-You can try out new Leave and absence preview features in a **Sandbox** environment. For information about turning on preview features, see [Manage features](hr-admin-manage-features.md). The preview features include:
+You can try out new Leave and absence preview features in a **Sandbox** environment. For information about turning on preview features, see [Manage features](hr-admin-manage-features.md). 
 
-- **Leave suspension** - You can suspend leave and absence in Human Resources for an employee. Suspending leave stops the leave accruals for selected leave types. If the suspension occurs after an accrual processes, suspending leave creates a prorated adjustment to the employee's leave balance. Reason codes can also be included when suspending an employee's leave. Also, when leave is supsended, the user experience has been updated to indicate suspension. 
+[!include [banner](includes/preview-feature.md)]
+
+The preview features include:
+
+- **Leave suspension** - You can suspend leave and absence in Human Resources for an employee. Suspending leave stops the leave accruals for selected leave types. If the suspension occurs after an accrual processes, suspending leave creates a prorated adjustment to the employee's leave balance. You can also include reason codes when suspending an employee's leave. The user experience has been updated to indicate suspension. 
 
 - **Carry forward rules** - You can specify a carry forward leave type for carry forward balances where carry forward adjustments are transferred. For example, if an employee carries forward 10 days, you can pick a different leave type for those 10 days. 
 
 - **Include reason code and comments for adjustments** - You can include a reason code and a comment when making an adjustment to an employee's leave balance. 
 
-- **Transition to Leave and absence parameters** - You can now use only Leave and absence parameters instead of using Human resources parameters. 
+- **Transition to Leave and absence parameters** - You can now use only Leave and absence parameters instead of using Human Resources parameters. 

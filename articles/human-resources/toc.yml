@@ -505,6 +505,8 @@
         href: hr-leave-and-absence-accrue.md
       - name: Suspend leave
         href: hr-leave-and-absence-suspend-leave.md
+      - name: Manage employee leave
+        href: hr-leave-and-absence-manage-employee-leave.md
       - name: View analytics for leave and absence
         href: hr-leave-and-absence-analytics.md
       - name: Manage leave and absence requests
