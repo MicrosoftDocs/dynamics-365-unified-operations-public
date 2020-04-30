@@ -37,45 +37,44 @@ ms.dyn365.ops.version:
 This topic covers Tab module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 
 ## Overview
-Tab module is used to organize information within a page. It provides a collapsible drawer like capability that makes it ideal for organizing information. It can be used on any page to organize information/modules.
+Tab module is used to organize information within tabs on a page. It can be used on any page that requires information to be presented in tabs.
 
-Below is an example of Tab module used on a Store FAQ page to organize information
+Below is an example of tabs
 ![Example of a Accordion module](./media/ecommerce-accordion.PNG)
 
 ## Details
-**Accordion** is a container-like module that allows one or more **Accordion item** modules to be added to it. Each Accordion item represents a collapsible drawer. Within each Accordion item,  one or more modules can be added. There are no restrictions on the type of modules that can be added within an Accordion item.
+**Tab** is a container-like module that allows one or more **Tab item** modules to be added to it. Each Tab item represents a tab. Within each Tab item,  one or more modules can be added. There are no restrictions on the type of modules that can be added within a Tab item.
 
 
-## Accordion module properties
-
-| Property name  | Values | Description |
-|----------------|--------|-------------|
-| Heading          | Heading| A heading can be provided to the Accordion module|
-| Expand All  | True/False | If true, an Expand/Collapse All functionality is provided to expand or collapse all items in the Accordion|
-| Interaction Style| Independent, Expand one item only| This defines the type of interaction the accordion items provide. With **Independent**, each Accordion item can be expanded/collapsed independently. With **Expand one item only**, only one item can be expanded at any time, as items are expanded, previous items are collapsed|
-
-## Accordion item module properties
+## Tab module properties
 
 | Property name  | Values | Description |
 |----------------|--------|-------------|
-| Tite          | Text|  This defines the text for the accordion. Selecting on the Title region, expands/collapses the section|
-| Expand by default  | True/False | If true, this Accordion item will be expanded by defaul when the page is loaded|
+| Heading          | Heading| A heading can be provided to the Tab module|
+| Active tab index  | Number | This defines the tab index that should be active by default on page load. If no index is provided, it defaults to first tab as the active tab |
+
+## Tab item module properties
+
+| Property name  | Values | Description |
+|----------------|--------|-------------|
+| Tite          | Text|  This defines the text for the tab item|
 
 
-## Add a Accordion module to a new page
+## Add a Tab module to a new page
 
-To add a Accordion module to a page and set the properties, follow these steps
-1. Create a new page *Store faq* using Marketing template in Fabrikam or any template without restrictions
+To add a Tab module to a page and set the properties, follow these steps
+1. Create a new page *Store policies page* using Marketing template in Fabrikam or any template without restrictions
 1. In the **Default page** add a Container
-1. To the Container, add Accordion module
-1. In the Accordion module property panel, set a heading "Frequently asked questions"
-1. In the Accordion module property panel, set Expand All to true and set Interaction style to Independent.
-1. To the Accordion module, add an Accordion item. Add Title as "How do returns work".
-1. To the Accordion item, add a Text block module. Add a  paragraph of text such as "Returns need to be processed via call center. Contact 1-800-FABRIKAM for returns. Products have a 30-day return policy. Return must be initiated within this time frame."
-1. To the Accordion module, add a few more Accordion items and add more text block to each of them
+1. To the Container, add Tab module
+1. In the Tab module property panel, set a heading "Policies"
+1. To the Tab module, add an Tab item. Add Title as "Delivery".
+1. To the Tab item, add a Text block module. Add a few paragraphs of text explaining how Delivery works
+1. To the Tab module, add a few another Tab items called "Returns".
+1. To the "Returns" tab item, add a text block and add a few paragraphs of text explaining how Returns work
+1. Similarly, add few more tabs 
 1. Select **Save**, and then select **Preview** to preview the page.
 1. Select **Finish editing** to check in the template, and then select **Publish** to publish it. 
-1. The Store Faq page will show an Accordion with the content that was curated.
+1. The Store policies page will show an tab with the content that was curated.
 
 ## Additional resources
 
