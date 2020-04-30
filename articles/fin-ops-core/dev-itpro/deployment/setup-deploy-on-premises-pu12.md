@@ -699,7 +699,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
         2. In the **Properties** dialog box, on the **Certificate** tab, select the desired certificate from the drop-down menu for the **Certificate** box.
         3. In the **Properties** dialog box, on the **Flags** tab, in the **ForceEncryption** box, select **Yes**.
         4. Click **OK** to save.
-    4. Export the certificate (the .cer file) from each SQL cluster node, and install it in the trusted root of each Service Fabric node. You will have a minimum of 2 certificates for the Always-On cluster, but there may more should you have additional replicas. 
+    4. Export the certificate (the .cer file) from each SQL cluster node, and install it in the trusted root of each Service Fabric node. You will have a minimum of 2 certificates for the Always-On cluster, but there may be more if you have additional replicas. 
     5. Restart the SQL Server service.
    > [!NOTE] 
    > For more information, see [How to enable SSL encryption for an instance of SQL Server by using Microsoft Management Console](https://support.microsoft.com/help/316898/how-to-enable-ssl-encryption-for-an-instance-of-sql-server-by-using-microsoft-management-console).
