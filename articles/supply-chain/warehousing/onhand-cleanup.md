@@ -33,7 +33,7 @@ The performance of queries used to calculate the on-hand inventory is affected b
 
 This topic describes the on-hand entries cleanup job, which deletes unneeded records in the `InventSum` and `WHSInventReserve` tables. These tables store on-hand information for items enabled for warehouse management processing (WHS items). Cleaning up these records can significantly improve the performance of on-hand calculations.
 
-## What the clean up job does
+## What the cleanup job does
 
 The cleanup job deletes records in the `WHSInventReserve` and `InventSum` tables where all the field values are 0, because these don't contribute to the on-hand. The job only deletes records below the Location level.
 
