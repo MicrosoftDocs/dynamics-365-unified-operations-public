@@ -106,24 +106,9 @@ Set values are used for output in the xml file blocks (see the table bellow how 
 | Stamp duty not included into invoice total | **Bollo** Note. Used for sales order, free text and project invoices | For example:Stamp duty, not included into invoice totals | **CompanyInfo** (Legal entities) | **Organization administration > Legal entities**, **Electronic document properties** button Value=<Charge code/ Project category, which is used for stamp duties>. **Charges code**:Debit type for this charge code should be Ledger  **Project category**: should be billable | **ImportoBollo** (DatiBollo block) |
 | Stamp duty included into invoice total | **BolloPay**. Note. Used only for sales order and free text invoices | For example: Stamp duty, included into invoice totals | **CompanyInfo** (Legal entities) | **Organization administration > Legal entities**, **Electronic document properties** button, Value=<Charge code/ Project category, which is used for stamp duties>. **Charges code**: Debit type should be Customer/ Vendor, **Project category**: should be billable | **ImportoBollo** (DatiBollo block) |
 | Representative | TaxRepPaese, TaxRepPaese, TaxRepCodice, TaxRepDenominazione, TaxRepNome, TaxRepCognome | Any description | **CustTable** (Customers) | **Account receivable > Customers > All customers**, **Customer** tab, **Electronic document properties** button. Value=IT (for TaxRepPaese) For other types, fill in data of representative | **Cognome** (RappresentanteFiscale block) |
- 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+> [!NOTE]  
+> The **Description** field (left) is filled in automatically when a user is filling **Group description** and **Description** (right) fields.
 
 ## Customers 
 
@@ -137,20 +122,8 @@ In these both cases the system fills in the CodiceDestinatario tag (xml file) wi
 
 If **Authority office** field value is empty, the system considers a customer as a private company or professional (Transmission Format is **FPR12**) and fills in the CodiceDestinatario tag (xml file) with **0000000**.
 
-In this case a certified e-mail address (**PEC**) should be entered on Customer level.
-To do this:
--   Set up Electronic document property types (**Accounts receivable \> Setup \> Electronic document property types**).
+In this case a certified e-mail address (**PEC**) should be set up (see [Electronic document properties](/electronic-document properties)).
 
-> [!NOTE]  
-> The **Description** field (left) is filled in automatically when a user is filling **Group description** and **Description** (right) fields.
-
-Use **Applicability** button and fill in CustTable in the **Table name** field
-
-![electronic document property types](media/emea-ita-electronic-invocies-electronic-document-property-types.png)
-
-- After this setting it is possible to fill in **Electronic document properties**
-for a customer (**Accounts receivable \> Customers \> All customers, Customer**
-tab, **Properties**). Fill in **Value** field. The system fills in the **PECDestinatario** tag with this value.
 ### Activate automatic creation of e-invoices  
 **Accounts receivable \> Customers \> All customers,** open a customer in **Edit** mode**, Invoice and delivery** FastTab, **E-INVOICE** field group, **eInvoice registe** option.
 If this option is set to **Yes**, the system automatically creates the record in **Electronic customer invoices** page list (see [Overview of electronic invoices page](/overview-of-electronic-invoices-page).
