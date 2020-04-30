@@ -41,7 +41,7 @@ This topic assumes a working knowledge of [Azure Pipelines](https://docs.microso
 
 ## Add the task to a pipeline
 
-To add the task to your YML or Classic Pipeline build, search the task list for **Update Model Version**. The following table describes the options that are available for this task.
+To add the task to the build of your YML or Classic pipeline, search the task list for **Update Model Version**. The following table describes the options that are available for this task.
 
 | Input name | Mandatory | Description |
 | --- | --- | --- |
