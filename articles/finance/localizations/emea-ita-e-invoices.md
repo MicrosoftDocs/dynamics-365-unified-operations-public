@@ -122,7 +122,7 @@ In these both cases the system fills in the CodiceDestinatario tag (xml file) wi
 
 If **Authority office** field value is empty, the system considers a customer as a private company or professional (Transmission Format is **FPR12**) and fills in the CodiceDestinatario tag (xml file) with **0000000**.
 
-In this case a certified e-mail address (**PEC**) should be set up (see [Electronic document properties](/electronic-document properties)).
+In this case a certified e-mail address (**PEC**) should be set up (see the table in [Electronic document properties](/electronic-document-properties)).
 
 ### Activate automatic creation of e-invoices  
 **Accounts receivable \> Customers \> All customers,** open a customer in **Edit** mode**, Invoice and delivery** FastTab, **E-INVOICE** field group, **eInvoice registe** option.
