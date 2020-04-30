@@ -66,14 +66,14 @@ After you install the package deployer tool, install the solution package by fol
 
 To turn on the trace log, follow these steps.
 
-1. Sign in to the Finance and Operations app, open the **Settings** page, and then, under **System**, select **Administration**.
+1. Sign in to the Customer Engagement App, open the **Settings** page, and then, under **System**, select **Administration**.
 2. On the **Administration** page, select **System Settings**.
 3. On the **Customization** tab, in the **Plug-in and custom workflow activity tracing** field, select **All** to enable the plug-in trace log. If you want to log trace logs only when exceptions occur, you can select **Exception** instead.
 
 
 To view the trace log, follow these steps.
 
-1. Sign in to the Finance and Operations app, open the **Settings** page, and then, under **Customization**, select **Plug-in Trace Log**.
+1. Sign in to the Customer Engagement app, open the **Settings** page, and then, under **Customization**, select **Plug-in Trace Log**.
 2. Find the trace logs where the **Type Name** field is set to **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
 3. Double-click an item to view the full log, and then, on the **Execution** FastTab, review the **Message Block** text.
 
