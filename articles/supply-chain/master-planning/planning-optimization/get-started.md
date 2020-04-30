@@ -5,7 +5,7 @@ title: Get started with Planning Optimization
 description: This topic explains how to start to use the Planning Optimization functionality. 
 author: ChristianRytt
 manager: tfehr
-ms.date: 02/10/2020
+ms.date: 04/30/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -38,6 +38,11 @@ The Planning Optimization functionality doesn't currently support all the featur
 Eventually, Planning Optimization will replace the existing built-in Supply Chain Management planning engine.
 
 Before you turn on Planning Optimization, we strongly recommend that you evaluate the results of the Planning Optimization fit analysis. For more information, see [Planning Optimization fit analysis](planning-optimization-fit-analysis.md).
+
+### Availability
+Planning Optimization is currently available in the following Azure geographies: United States, Canada, Europe, United Kingdom, and Australia. If you try to install the add-in from another geographic region, then LCS will show a message that this geographic is not supported.
+
+Note that Planning Optimization does not support on-premises deployments of Dynamics 365 Supply Chain Management.
 
 ### Licensing
 
@@ -90,7 +95,7 @@ The setting of the **Use Planning Optimization** option determines which plannin
 
 If the Planning Optimization preview is turned on, master planning is done by using the Planning Optimization Add-in. In this case, master planning results and features are affected.
 
-## Related resources
+## Additional resources
 
 [Terms and conditions for the preview](https://go.microsoft.com/fwlink/?linkid=2015274)
 
