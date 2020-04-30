@@ -5,7 +5,7 @@ title: Enable custom Commerce Data Exchange synchronization via extension
 description: This topic explains how you can extend the Commerce initialization class to support custom Commerce Data Exchange (CDX) synchronization.
 author: mugunthanm
 manager: AnnBe
-ms.date: 09/16/2019
+ms.date: 04/30/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -63,7 +63,7 @@ If you created a new HQ table and a new channel database table, follow these ste
 1. Create a custom project and use the Application Object Tree (AOT) to add a custom table.
 2. Create a new resource file to add all custom job information. Here is the template for the resource file.
 
-    ```csharp
+```csharp
     <RetailCdxSeedData ChannelDBMajorVersion="7" ChannelDBSchema="ext" Name="AX7">
         <Jobs>
         </jobs>
@@ -71,7 +71,10 @@ If you created a new HQ table and a new channel database table, follow these ste
             <Subjob Id="" TargetTableSchema="" TargetTableName="">
         </Subjobs>
      </RetailCdxSeedData>
-    ```
+```
+
+> [!NOTE]
+> The **DataAreaId** column name should not be explicitly included in the field mapping. This is automatically added by Commerce Data Exchange (CDX). If added, an error will occur during initialization of the retail scheduler.
 
 3. Use the AOT to create a new XML resource. In the XML file for the resource, specify the new table and new job details, as shown in the following example.
 
