@@ -40,6 +40,12 @@ Eventually, Planning Optimization will replace the existing built-in Supply Chai
 
 Before you turn on Planning Optimization, we strongly recommend that you evaluate the results of the Planning Optimization fit analysis. For more information, see [Planning Optimization fit analysis](planning-optimization-fit-analysis.md).
 
+### Availability
+Planning Optimization is currently available in the following Azure geographies: United States, Canada, Europe, United Kingdom and Australia. If you try to install the add-in from another geographic, then LCS will show a message that this geographic Is not supported.
+
+Note that Planning Optimization do not support on-premises deployments of Dynamics 365 Supply Chain Management.
+
+
 ### Licensing
 
 If you can run master planning by using your current license, you don't have to buy an additional license to start to use Planning Optimization.
