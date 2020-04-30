@@ -108,11 +108,12 @@ Set values are used for output in the xml file blocks (see the table bellow how 
 | Representative | TaxRepPaese, TaxRepPaese, TaxRepCodice, TaxRepDenominazione, TaxRepNome, TaxRepCognome | Any description | **CustTable** (Customers) | **Account receivable > Customers > All customers**, **Customer** tab, **Electronic document properties** button. Value=IT (for TaxRepPaese) For other types, fill in data of representative | **Cognome** (RappresentanteFiscale block) |
 
 > [!NOTE]  
-> The **Description** field (left) is filled in automatically when a user is filling **Group description** and **Description** (right) fields.
+> In **Document property types** list page, the **Description** field (left) is filled in automatically when a user is filling **Group description** and **Description** (right) fields.
+
 > [!NOTE]
-> Set up Project categories with Fee/Expense transaction type, assign Category IDs equal to the codes defined for Follo (see the table in this section).
-> Project category of Fee type can be used only for stamp dute included in the invoice and Project category of Expense type can be used both for invoices included and not included in a customer invoice (**Bollo** document property type is used in both casess). 
-> Select the Category that was defined as one of stamp duty codes, enter Cost price - it will be considered as stamp duty amount, enter the same amount or zero into Sales price amount depending on the necessity to include or not this amount to the invoice total:
+> Set up Project categories with Fee/Expense transaction type, assign the Сategory IDs equal to the codes defined for **Follo** (see the table in this section).
+> Project category of Fee transaction type can be used only for stamp duty included in the invoice and Project category of expense transaction type can be used both for invoices included and not included in a customer invoice (**Bollo** document property type is used in both casess). 
+> Select the Category that was defined as stamp duty, enter Cost price. The system considers this cost price as stamp duty amount, enter the same amount or zero into Sales price amount depending on the necessity to include or not this amount to the invoice total:
 
 
 ## Customers 
