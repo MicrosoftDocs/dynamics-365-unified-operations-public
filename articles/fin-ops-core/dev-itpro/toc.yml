@@ -556,6 +556,16 @@
           href: dev-tools/development-system-requirements.md
       - name: Version control, metadata search, and navigation
         href: dev-tools/version-control-metadata-navigation.md
+      - name: Build automation using Azure
+        items:
+        - name: Build automation using Microsoft-hosted agents and Azure Pipelines
+          href: dev-tools/hosted-build-automation.md
+        - name: Add license files to a deployable package in Azure Pipelines
+          href: dev-tools/pipeline-add-license-package.md
+        - name: Create deployable packages in Azure Pipelines
+          href: dev-tools/pipeline-create-deployable-package.md
+        - name: X++ model-versioning in Azure Pipelines
+          href: dev-tools/pipeline-model-version.md
       - name: Fleet Management sample application
         items:
         - name: End-to-end scenario for the Fleet Management sample application
