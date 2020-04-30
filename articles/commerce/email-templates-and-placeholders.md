@@ -52,7 +52,7 @@ To create a new email template, follow these steps.
     - **Sender name**: This is the name that appears in the "From" field of most email clients.
     - **Sender email**: This is the email address for emails sent with this template.
     - **Default language code**: This value specifies the localized version of the email that is sent by default, if no language is provided by the channel that invokes this template.
-1. Under **Email message content**, select **+New**.
+    1. Under **Email message content**, select **+New**.
 1. Under **Language**, enter or select the language for the email template. You can add more languages and localized templates later.
 1. Under **Subject**, enter the email subject that will appear in the subject field of the email.
 1. Select **Edit** to upload your email template.
@@ -66,9 +66,18 @@ The message body of your email is composed with HTML. You can use any layout, st
 
 ## Add placeholders
 
-Your email may contain placeholders that are replaced with customer and transaction-specific values when the email is generated. Placeholders are always surrounded by percent (%) characters (for example, **%customername%**) and are inserted directly into the HTML document. 
+Your email may contain placeholders that are replaced with customer and transaction-specific values when the email is generated. Placeholders are always surrounded by percent (%) characters and are inserted directly into the HTML document. 
 
-### Order header placeholders
+For example:
+```
+<p>
+    Hello %customername%,<br />
+    Order number %salesid%, can be picked up from the <b>%pickupstorename%</b> store.
+</p>
+```
+### Order placeholders
+
+The following placeholders retrieve data that is defined at the sales order level (as opposed to the sales line level.) 
 
 | **Placeholder  name** | **Description**                                              |
 | --------------------- | ------------------------------------------------------------ |
@@ -95,13 +104,33 @@ Your email may contain placeholders that are replaced with customer and transact
 
 ### Order line placeholders in the message body
 
+The following placeholders retrieve data for individual products (lines) in the sales order. 
+
 When creating the HTML for individual order lines in the message body, surround the repeating block of HTML and placeholders for individual lines with the following placeholders within HTML comment tags as follows.
 
-&lt;!--%tablebegin.salesline%--&gt;
+<!--%tablebegin.salesline%-->
 
 *Insert repeating block of HTML and placeholders for individual lines here.*
 
-&lt;!--%tableend.salesline%--&gt;
+<!--%tableend.salesline%-->
+
+For example:
+```HTML
+  <table>
+    <tr>
+      <td>Product name</td>
+      <td>Quantity</td>
+      <td>Price</td>
+    </tr>
+    <!--%tablebegin.salesline%-->
+    <tr>
+      <td>%lineproductname%</td>
+      <td>%linequantity_withoutunit%</td>
+      <td>%lineprice</td>
+    </tr>
+    <!--%tableend.salesline%-->
+  </table>
+```
 
 ### Order line placeholders 
 
