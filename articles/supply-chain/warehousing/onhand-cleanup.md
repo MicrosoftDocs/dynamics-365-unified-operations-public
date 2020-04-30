@@ -43,7 +43,7 @@ If negative physical inventory is allowed, then the job might not be able to del
 
 The cleanup job is available under **Inventory Management > Periodic tasks > Clean up > Warehouse management on-hand entries cleanup**. Use the standard job settings here to control the scope and schedule for running the job. In addition, the following settings are provided:
 
-- **Delete if not updated for this many days** - Use this field to reduce the risk of deleting on-hand entries that are still in use. Enter a value of "0" (or leave blank) to allow cleaning up as much as possible.
+- **Delete if not updated for this many days** - Use this field to reduce the risk of deleting on-hand entries that only temporary have 0 quantities on-hand and thereby would need to automatically get created again after the cleanup. Enter a value of "0" (or leave blank) to allow cleaning up as much as possible.
 - **Maximum execution time (hours)** - Enter a maximum execution time (in hours) for the cleanup job. If the job doesn't complete before the time is up, it will save the work completed so far and then exit. This capability is especially relevant for implementations that have high inventory usage, in which case you should schedule the job to run at times when the system is as lightly loaded as possible. Enter a value of "0" (or leave blank) to allow the batch job to continue running until it has finished. This setting is only available if it has been [enabled on your system](#max-execution-time).
 
 You can run the job during normal business hours, but we recommend running it outside of working hours to avoid conflicts where a user is working with a record that is also being cleaned up.
