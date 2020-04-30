@@ -100,9 +100,9 @@ for the functionality to work it is necessary to set up:
 Set values are used for output in the xml file blocks (see the table bellow how to fiil and where these values are used).
 
 | Business scenario | Electronic document property type | Electronic document property type description | Applicability (Table) | Where to use | Element in the xml file |
---------------------|-----------------------------------|-----------------------------------------------|-----------------------|--------------|-------------------------|
+|-------------------|-----------------------------------|-----------------------------------------------|-----------------------|--------------|-------------------------|
 | For customers who are out of EU and don't have VAT registration codes VAT registration number should be 00000000000 | VATnonEU | For example: Customer, non-EU VAT number|CustTable (Customers) | Account receivable > Customers > All customers, Customer tab, Properties, Electronic document properties button. Value= 00000000000 |IdCodice (CessionarioCommittente\ DatiAnagrafici\ IdFiscaleIVA block) |
---------------------|-----------------------------------|-----------------------------------------------|-----------------------|--------------|-------------------------|
+|-------------------|-----------------------------------|-----------------------------------------------|-----------------------|--------------|-------------------------|
 
 
 ## Customers 
