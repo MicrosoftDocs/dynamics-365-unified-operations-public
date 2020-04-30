@@ -108,15 +108,15 @@ Consider the following domain requirements when you install Finance + Operations
 - The domain controller must be Microsoft Windows Server 2012 R2 or later, and the domain functional level must be 2012 R2 or more.
 
 ### Full 2-way trust
-For compatibility with corporate domain controllers on Windows Server 2008 R2 domain functional level (DFL), a full 2-way trust between the Windows Server 2008 R2 DFL user domain and the Windows Server 2012 R2 DFL Finance + Operations service domain is supported from Platform update 33 and later.
+For compatibility with corporate domain controllers on Windows Server 2008 R2 domain functional level (DFL), a full 2-way trust between the Windows Server 2008 R2 DFL user domain and the Windows Server 2012 R2 DFL Finance + Operations service domain is supported in Platform update 33 and later.
 
 This means that users of the Finance + Operations (on-premises) application will come from the Windows Server 2008 R2 DFL domain, and the resources and service accounts hosting the Finance + Operations (on-premises) infrastructure and services will come from the Windows Server 2012 R2 DFL domain.
 
-Examples for a full 2-way trust setup could be:
+Examples for a full 2-way trust setup could be.
 
 <img src="./media/2WayTrust.png" width="700" hspace="50"/>
 
-#### Known limitations with using the full 2-way trust setup:
+#### Known limitations with using the full 2-way trust setup
 * Import of security groups from the Windows Server 2008 R2 user domain is not supported.
 
 ## Hardware requirements
