@@ -239,6 +239,8 @@ If a warehouse work item consists of lines that equal a complete pallet and have
 
 Because **Handle by license plate** functionality doesn't support work that covers several pallets, it's better to have a separate work item for different license plates. To approach this, add **Order-committed license plate id** field as a work header break on the **Work template** page.
 
+<!-- KFM: Continue here -->
+
 ## Example scenario 2
 
 This scenario describes how to set up and process order-committed license plate reservation. You must use the **USMF** legal entity from the standard **Contoso** demo data.
