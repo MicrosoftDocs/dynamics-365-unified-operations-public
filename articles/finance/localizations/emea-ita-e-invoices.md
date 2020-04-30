@@ -110,11 +110,13 @@ Set values are used for output in the xml file blocks (see the table bellow how 
 > [!NOTE]  
 > In **Document property types** list page, the **Description** field (left) is filled in automatically when a user is filling **Group description** and **Description** (right) fields.
 
-### Use of project categories for stamp duty
+### How to use of project categories for stamp duty
 
-Set up Project categories with Fee/Expense transaction type, assign the Сategory IDs equal to the codes defined for **Follo** (see the table in this section).
-Project category of Fee transaction type can be used only for stamp duty included in the invoice and Project category of expense transaction type can be used both for invoices included and not included in a customer invoice (**Bollo** document property type is used in both casess). 
-Select the Category that was defined as stamp duty, enter Cost price. The system considers this cost price as stamp duty amount, enter the same amount or zero into Sales price amount depending on the necessity to include or not this amount to the invoice total:
+1. Set up Project categories with Fee/Expense transaction type (**Project management and accounting > Setup > Categories > Project categories**). Category Id should be equal to the value defined for **Follo** on the Legal entity level. (see the table in this section).
+2. Project category of Fee transaction type can be used only for stamp duty included in the invoice
+3. Project category of expense transaction type can be used both for invoices included and not included in a customer invoice (**Bollo** document property type is used in both casess). 
+3. When you create **Fee** or **Expese** journal lines select the category that was defined as stamp duty, enter Cost price. The system considers this cost price as stamp duty amount, 
+If you fill in sales price with the cost price amount, the system considers this ammount included in the invoice totals. Sales price amount is equal to zero, this transaction is not included in invoice totals. 
 
 
 ## Customers 
