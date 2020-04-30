@@ -679,7 +679,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
         -SqlListenerName dax7sqlaosqla
     ```
 
-    **Manual Self-signed steps for an Always-On SQL instance** (Creation of test certificates)
+    **Manual self-signed steps for an Always-On SQL instance** (Creation of test certificates)
     ```powershell
     # https://www.derekseaman.com/2014/11/sql-2014-alwayson-ag-pt-13-ssl.html
 
