@@ -242,7 +242,7 @@ Finance + Operations falls under Microsoft's standard support policy regarding o
 
 The following software must be present on a computer before any Finance + Operations components can be installed:
 
-- The Microsoft .NET Framework version 4.5.1 - 4.7.2
+- The Microsoft .NET Framework. See [Deployment setup](..\..\dev-itpro\deployment\setup-deploy-on-premises-pu12.md#Setup) for version information.
 - Service Fabric
 
 For more information, see [Plan and prepare your Service Fabric cluster](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
