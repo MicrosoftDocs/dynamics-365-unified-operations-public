@@ -182,7 +182,7 @@ The PDF conversion option can be turned on only for file components that are use
 >
 > The produced PDF is limited to a maximum number of 300 pages.
 >
-> In Microsoft Dynamics 365 Finance version 10.0.9 (April 2020) only landscape page orientation is supported in the PDF document that is produced from an Excel output. Starting from Microsoft Dynamics 365 Finance version 10.0.10 (May 2020) and onward, you can [specify page orientation](#SelectPdfPageOrientation) in the PDF document that is produced from an Excel output while you configure an ER destination.
+> In Microsoft Dynamics 365 Finance version 10.0.9 (April 2020) only landscape page orientation is supported in the PDF document that is produced from an Excel output. With the release of Dynamics 365 Finance version 10.0.10 (May 2020), you can [specify page orientation](#SelectPdfPageOrientation) in the PDF document that is produced from an Excel output while you configure an ER destination.
 >
 > Only the common system fonts of the Window operating system are used for the conversion of an output that contains no embedded fonts.
 
