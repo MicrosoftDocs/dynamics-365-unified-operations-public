@@ -59,7 +59,7 @@ Before starting work with the electronic invoice functionality, it is
 necessary to fulfil the following settings:
 - [Accounts receivable parameters](/accounts-receivable-parameters).
 - [E-invoice parameters](/e-invoices-parameters).
-- [electronic documents properties](/electronic-document-properties)
+- [Electronic documents properties](/electronic-document-properties)
 - [Customers](/customers).
 - [Digital certificate](/digital-certificates).
 - [Destination for xml file output](/destination-for-xml-file-output) (optional)
