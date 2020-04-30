@@ -5,7 +5,7 @@ title: Channel database extensions
 description: This topic explains how to extend the channel database.
 author: mugunthanm
 manager: AnnBe
-ms.date: 04/13/2020
+ms.date: 04/30/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-retail
