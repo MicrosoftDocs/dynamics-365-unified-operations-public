@@ -3,7 +3,7 @@
 
 title: System requirements for on-premises deployments
 description: This topic lists the system requirements for on-premises deployments.
-author: kfend
+author: PeterRFriis
 manager: AnnBe
 ms.date: 04/30/2020
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 55651
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kfend
+ms.author: perahlff
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 
@@ -106,6 +106,18 @@ Consider the following domain requirements when you install Finance + Operations
 - VMs that host Finance + Operations components must belong to an Active Directory domain. Active Directory Domain Services (AD DS) must be configured in native mode.
 - VMs that run Finance + Operations components must have access to each other. This access is configured in AD DS.
 - The domain controller must be Microsoft Windows Server 2012 R2 or later, and the domain functional level must be 2012 R2 or more.
+
+### Full 2-way trust
+For compatibility with corporate domain controllers on Windows Server 2008 R2 domain functional level (DFL), a full 2-way trust between the Windows Server 2008 R2 DFL user domain and the Windows Server 2012 R2 DFL Finance + Operations service domain is supported in Platform update 33 and later.
+
+This means that users of the Finance + Operations (on-premises) application will come from the Windows Server 2008 R2 DFL domain, and the resources and service accounts hosting the Finance + Operations (on-premises) infrastructure and services will come from the Windows Server 2012 R2 DFL domain.
+
+Examples for a full 2-way trust setup could be.
+
+<img src="./media/2WayTrust.png" width="700" hspace="50" alt="Examples of supported full 2-way trust between DFL versions"/>
+
+#### Known limitations with using the full 2-way trust setup
+* Import of security groups from the Windows Server 2008 R2 user domain is not supported.
 
 ## Hardware requirements
 
@@ -258,9 +270,8 @@ The following table lists the server operating systems that are supported.
 ## Software requirements for database servers
 
 - Only 64-bit versions of SQL Server 2016 are supported.
-- Only **SQL\_Latin1\_General\_CP1\_CI\_AS** is valid for the server and database collation.
+- Only **SQL\_Latin1\_General\_CP1\_CI\_AS** is valid for the server and database collation. For more information about how to select a collation for a SQL Server database, see the [SQL Server documentation](/sql/sql-server/sql-server-technical-documentation).
 - In a production environment, we recommend that you install the latest cumulative update (CU) for the version of SQL Server that you're using.
-- Finance + Operations supports Unicode collations that are case-insensitive, accent-sensitive, kana-sensitive, and width-insensitive. The collation must match the Windows locale of the computers that are running AOS instances. If you're setting up a new installation, we recommend that you select a Windows collation instead of a SQL Server collation. For more information about how to select a collation for a SQL Server database, see the [SQL Server documentation](/sql/sql-server/sql-server-technical-documentation).
 
 The following table lists the SQL Server versions that are supported for the databases. For more information, see the minimum hardware requirements for [SQL Server](https://www.microsoft.com/sql-server/sql-server-2016).
 
@@ -293,6 +304,7 @@ The domain controller must be Windows Server 2012 R2 or later, and the domain fu
 
 - [What Are Active Directory Functional Levels](https://technet.microsoft.com/library/cc787290(v=ws.10).aspx)
 - [Understanding Active Directory Domain Services Functional Levels](https://technet.microsoft.com/library/understanding-active-directory-functional-levels(v=ws.10).aspx)
+- [Full 2-way trust](../../fin-ops/get-started/system-requirements-on-prem.md#full-2-way-trust)
 
 ## Supported Microsoft Office applications
 
