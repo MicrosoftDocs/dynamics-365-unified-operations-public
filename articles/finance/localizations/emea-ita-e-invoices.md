@@ -59,6 +59,7 @@ Before starting work with the electronic invoice functionality, it is
 necessary to fulfil the following settings:
 - [Accounts receivable parameters](/accounts-receivable-parameters).
 - [E-invoice parameters](/e-invoices-parameters).
+- [electronic documents properties](/electronic-document-properties)
 - [Customers](/customers).
 - [Digital certificate](/digital-certificates).
 - [Destination for xml file output](/destination-for-xml-file-output) (optional)
@@ -85,7 +86,7 @@ Use these parameters to specify business scenarios and company specific informat
 On **Number sequences** tab fill in number sequences for e-invoice file number
 and transmission number.
 
-## Electronic document property types
+## Electronic document properties
 Electronic document property types functionality are used for setup of different business cases: 
 1. VAT registration number for customers who are out of EU and don't have VAT registration codes.  
 2. Certified e-mail address (PEC) for private or professional companies.
