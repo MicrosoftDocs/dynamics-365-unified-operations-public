@@ -43,7 +43,7 @@ Below is an example of Accordion module used on a Store FAQ page to organize inf
 ![Example of a Accordion module](./media/ecommerce-accordion.PNG)
 
 ## Details
-**Accordion** is a container-like module that allows one or more **Accordion item** modules to be added to it. Each Accordion item represents a collapsible drawer. Within each Accordion item,  one or more modules can be added. There are no restrictions on the type of modules that can be added within an Accordion item as its truly an organizer.
+**Accordion** is a container-like module that allows one or more **Accordion item** modules to be added to it. Each Accordion item represents a collapsible drawer. Within each Accordion item,  one or more modules can be added. There are no restrictions on the type of modules that can be added within an Accordion item.
 
 
 ## Accordion module properties
@@ -68,11 +68,11 @@ To add a Accordion module to a page and set the properties, follow these steps
 1. Create a new page *Store faq* using Marketing template in Fabrikam or any template without restrictions
 1. In the **Default page** add a Container
 1. To the Container, add Accordion module
-1. In the Accordion module property panel, set a heading "FAQ"
+1. In the Accordion module property panel, set a heading "Frequently asked questions"
 1. In the Accordion module property panel, set Expand All to true and set Interaction style to Independent.
 1. To the Accordion module, add an Accordion item. Add Title as "How do returns work".
-1. To the Accordion item, add a Text block module. Add a  paragraph of text such as "Returns need to be processed...."
-1. To the Accordion module, add a few more Accordion items and add more modules to each of them
+1. To the Accordion item, add a Text block module. Add a  paragraph of text such as "Returns need to be processed via call center. Contact 1-800-FABRIKAM for returns. Products have a 30-day return policy. Return must be initiated within this time frame."
+1. To the Accordion module, add a few more Accordion items and add more text block to each of them
 1. Select **Save**, and then select **Preview** to preview the page.
 1. Select **Finish editing** to check in the template, and then select **Publish** to publish it. 
 1. The Store Faq page will show an Accordion with the content that was curated.
@@ -81,3 +81,4 @@ To add a Accordion module to a page and set the properties, follow these steps
 
 [Starter kit overview](starter-kit-overview.md)
 
+[Text block](add-content-rich-block.md)
