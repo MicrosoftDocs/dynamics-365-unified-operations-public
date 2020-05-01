@@ -106,19 +106,24 @@ Additional properties can be used to optimize the layout for different view port
 
 To add a container player module to a new page and set the required properties, follow these steps.
 
-1. Create a page template that is named **container template**. 
-1. In the **Body** slot, add a **Default page** module.
-1. Finish editing the template, and publish it.
-1. Use the container template that you just created to create a page that is named **container page**.
-1. In the **Main** slot of the new page, add a container module.
+1. Go to **Templates** and select **+New** to create a new template.
+1. In the **New Template** dialog box, under **Template name** enter **Container template**, and then select **OK**.
+1. In the **Body** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Default Page** module, and then select **OK**.
+1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it. 
+1. Go to **Pages** and select **+New** to create a new page.
+1. In the **Choose a template** dialog box, select the video player template you created, under **Page name** enter **Container page**, and then select **OK**.
+1. In the **Main** slot of the new page, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Container** module, and then select **OK**.
 1. In the property pane for the container module, set the **Number of columns** property to **1** and the **Width** property to **Fill container**.
-1. In the container module, add a content block module.
+1. In the **Container** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Content block** module, and then select **OK**.
 1. In the property pane for the content block module, configure the heading, image, and layout.
-1. Save and preview the page. You should see one feature module that fits within the width of the container module.
+1. Select **Save** and then select **Preview** to preview the page. You should see one feature module that fits within the width of the container module.
 1. In the property pane for the container module, change the value of the **Number of columns** property to **3**.
-1. Add two more content block modules to the container module.
-1. Save and preview the page. You should now see three content block modules that appear side by side.
-1. After you've achieved the layout that you want, finish editing the page, and publish it.
+1. Add and configure two more content block modules to the container module.
+1. Select **Save** and then select **Preview** to preview the page. You should now see three content block modules that appear side by side.
+1. After you've achieved the layout that you want, select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
 ## Additional resources
 
