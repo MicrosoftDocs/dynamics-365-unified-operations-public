@@ -75,11 +75,11 @@ For example:
     Order number %salesid%, can be picked up from the <b>%pickupstorename%</b> store.
 </p>
 ```
-### Order placeholders
+### Order placeholders (sales order level)
 
-The following placeholders retrieve data that are defined at the sales order level (as opposed to the sales line level). 
+The following placeholders retrieve and display data that are defined at the sales order level (as opposed to the sales line level). 
 
-| **Placeholder name**  | **Description**                                              |
+| **Placeholder name**  | **Placeholder value**                                              |
 | --------------------- | ------------------------------------------------------------ |
 | customername          | Name of the customer who placed the order                   |
 | salesid               | Sales ID of the order                                        |
@@ -102,41 +102,11 @@ The following placeholders retrieve data that are defined at the sales order lev
 | pickupopenstorefrom   | Opening time of the pickup store                             |
 | pickupopenstoreto     | Closing time of the pickup store                             |
 
-### Order line placeholders in the message body
+### Order line placeholders (sales line level)
 
-The following placeholders retrieve data for individual products (lines) in the sales order. 
+The following placeholders retrieve and display data for individual products (lines) in the sales order. 
 
-When creating the HTML for individual order lines in the message body, surround the repeating block of HTML and placeholders for individual lines with the following placeholders within HTML comment tags as follows.
-
-&lt;!--%tablebegin.salesline%--&gt;
-
-*Insert repeating block of HTML and placeholders for individual lines here.*
-
-&lt;!--%tableend.salesline%--&gt;
-
-For example:
-```HTML
-  <table>
-    <tr>
-      <td>Product name</td>
-      <td>Quantity</td>
-      <td>Price</td>
-    </tr>
-    <!--%tablebegin.salesline%-->
-    <tr>
-      <td>%lineproductname%</td>
-      <td>%linequantity_withoutunit%</td>
-      <td>%lineprice</td>
-    </tr>
-    <!--%tableend.salesline%-->
-  </table>
-```
-
-### Order line placeholders 
-
-The following placeholders display information for individual lines in the order. 
-
-| **Placeholder  name**          | **Placeholder value**                                        |
+| **Placeholder name**           | **Placeholder value**                                        |
 | ------------------------------ | ------------------------------------------------------------ |
 | productid                      | Product ID for this line                                     |
 | lineproductname                | Name of the product                                          |
@@ -164,6 +134,35 @@ The following placeholders display information for individual lines in the order
 | giftcardexpiration             | Gift card expiration date for products of type gift card (specific to external gift cards) |
 | giftcardrecipientname          | Gift card recipient name for products of type gift card      |
 | giftcardbuyername              | Gift card buyer name for products of type gift card          |
+
+### Example of order line placeholders in the message body
+
+When creating the HTML for individual order lines in the message body, surround the repeating block of HTML and placeholders for individual lines with the following placeholders within HTML comment tags as follows.
+
+&lt;!--%tablebegin.salesline%--&gt;
+
+*Insert repeating block of HTML and placeholders for individual lines here.*
+
+&lt;!--%tableend.salesline%--&gt;
+
+For example:
+
+```HTML
+  <table>
+    <tr>
+      <td>Product name</td>
+      <td>Quantity</td>
+      <td>Price</td>
+    </tr>
+    <!--%tablebegin.salesline%-->
+    <tr>
+      <td>%lineproductname%</td>
+      <td>%linequantity_withoutunit%</td>
+      <td>%lineprice</td>
+    </tr>
+    <!--%tableend.salesline%-->
+  </table>
+```
 
 ## Create a template for emailed receipts
 
