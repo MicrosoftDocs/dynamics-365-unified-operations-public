@@ -158,7 +158,7 @@ For example:
     <tr>
       <td>%lineproductname%</td>
       <td>%linequantity_withoutunit%</td>
-      <td>%lineprice</td>
+      <td>%lineprice%</td>
     </tr>
     <!--%tableend.salesline%-->
   </table>
@@ -176,7 +176,7 @@ For more information about how to configure email receipts, see [Set up email re
 
 ## Upload your email HTML
 
-After you have created and tested the HTML for your message body, it must be uploaded to Commerce headquarters. Currently, email HTML cannot be exported, so you must maintain the master copy of your HTML outside of headquarters.
+After you have created and tested the HTML for your message body, it needs to be uploaded to Commerce headquarters. Currently, email HTML cannot be exported, so you must maintain the master copy of your HTML outside of headquarters.
 
 To upload a new or edited email template HTML, follow these steps.
 
@@ -188,7 +188,9 @@ To upload a new or edited email template HTML, follow these steps.
 1. After your email HTML appears in the preview window, select **OK**.
 1. Ensure that the **Has body** checkbox is selected for the row.
 
-If you have already configured Commerce headquarters to send email, your changes will go out to customers who conduct a transaction that invokes the event that is mapped to the template. For more information about configuring emails in Dynamics 365 Commerce, see [Configure and send email](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json). 
+If you have already configured Commerce headquarters to send email, your changes will go out to customers who conduct a transaction that invokes the event that is mapped to the template. 
+
+For more information about configuring emails in Dynamics 365 Commerce, see [Configure and send email](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json). 
 
 ## Additional resources 
 
