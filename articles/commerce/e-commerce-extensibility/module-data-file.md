@@ -46,11 +46,6 @@ The software development kit (SDK) includes a set of core data actions that can 
 The following example shows a sample data file for a new module.
 
 ```typescript
-/*---------------------------------------------------------------------------------------------
- *  Copyright (c) Microsoft Corporation. All rights reserved.
- *  Licensed under the MIT License. See License.txt in the project root for license information.
- *--------------------------------------------------------------------------------------------*/
-
 import { SimpleProduct } from '@msdyn365-commerce/commerce-entities';
 import { AsyncResult } from '@msdyn365-commerce/retail-proxy';
 import { IGetProductReviewsData } from '../../actions/getProductReviews';

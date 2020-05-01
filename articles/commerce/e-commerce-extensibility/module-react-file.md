@@ -45,11 +45,6 @@ The default template of a module breaks up the React component and view into two
 The following example shows the default React component file for a new module.
 
 ```typescript
-/*---------------------------------------------------------------------------------------------
- *  Copyright (c) Microsoft Corporation. All rights reserved.
- *  Licensed under the MIT License. See License.txt in the project root for license information.
- *--------------------------------------------------------------------------------------------*/
-
 import * as React from 'react';
 
 import { IProductFeatureData } from './product-feature.data';
