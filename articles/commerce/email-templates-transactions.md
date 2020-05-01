@@ -190,13 +190,13 @@ To upload a new or edited email template HTML, follow these steps.
 
 If you have already configured Commerce headquarters to send email, your changes will go out to customers who conduct a transaction that invokes the event that is mapped to the template. 
 
-For more information about configuring emails in Dynamics 365 Commerce, see [Configure and send email](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json). 
+For more information about configuring emails in Dynamics 365 Commerce, see [Configure and send email](../fin-ops-core/fin-ops/organization-administration/configure-email.md). 
 
 ## Additional resources 
 
 [Set up an email notification profile](email-notification-profiles.md)
 
-[Configure and send email](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json)
+[Configure and send email](../fin-ops-core/fin-ops/organization-administration/configure-email.md)
 
 [Set up email receipts](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-email-receipts)
 
