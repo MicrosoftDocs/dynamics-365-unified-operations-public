@@ -64,7 +64,7 @@ The message body of your email is composed with HTML. You can use any layout, st
 >[!NOTE] 
 > Email clients impose layout and style limitations that may require adjustments to the HTML and CSS you use for the message body. It is recommended that you familiarize yourself with best practices for authoring HTML that will be supported by the most popular email clients.
 
-## Add placeholders
+## Add placeholders to email message body
 
 Your email may contain placeholders that are replaced with customer and transaction-specific values when the email is generated. Placeholders are always surrounded by percent (%) characters and are inserted directly into the HTML document. 
 
@@ -135,7 +135,7 @@ The following placeholders retrieve and display data for individual products (li
 | giftcardrecipientname          | Gift card recipient name for products of type gift card      |
 | giftcardbuyername              | Gift card buyer name for products of type gift card          |
 
-### Example of order line placeholders in email message body
+### Format of order line placeholders in the email message body
 
 When creating the HTML for individual order lines in the email message body, surround the repeating block of HTML and placeholders for individual lines with the following placeholders within HTML comment tags as follows.
 
