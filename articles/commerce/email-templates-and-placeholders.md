@@ -5,7 +5,7 @@ title: Create transactional event email templates
 description: This topic describes how to create, upload, and configure transactional event email templates in Microsoft Dynamics 365 Commerce.
 author: stuharg
 manager: annbe
-ms.date: 04/20/2020
+ms.date: 05/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -52,14 +52,14 @@ To create a new email template, follow these steps.
     - **Sender name**: This is the name that appears in the "From" field of most email clients.
     - **Sender email**: This is the email address for emails sent with this template.
     - **Default language code**: This value specifies the localized version of the email that is sent by default, if no language is provided by the channel that invokes this template.
-    1. Under **Email message content**, select **+New**.
+    - Under **Email message content**, select **+New**.
 1. Under **Language**, enter or select the language for the email template. You can add more languages and localized templates later.
 1. Under **Subject**, enter the email subject that will appear in the subject field of the email.
 1. Select **Edit** to upload your email template.
 
 ## Create an email message body with HTML
 
-The message body of your email is composed with HTML. You can use any layout, styling, and branding that HTML and inline cascading style sheets (CSS) allow. Images can also be used if you host your images on a publicly available web endpoint and insert the image URL into the **src** attribute of the HTML **<img>** tag. 
+The message body of your email is composed with HTML. You can use any layout, styling, and branding that HTML and inline cascading style sheets (CSS) allow. Images can also be used if you host your images on a publicly available web endpoint and insert the image URL into the **src** attribute of the HTML **&lt;img&lt;** tag. 
 
 >[!NOTE] 
 > Email clients impose layout and style limitations that may require adjustments to the HTML and CSS you use for the message body. It is recommended that you familiarize yourself with best practices for authoring HTML that will be supported by the most popular email clients.
@@ -77,9 +77,9 @@ For example:
 ```
 ### Order placeholders
 
-The following placeholders retrieve data that is defined at the sales order level (as opposed to the sales line level.) 
+The following placeholders retrieve data that are defined at the sales order level (as opposed to the sales line level). 
 
-| **Placeholder  name** | **Description**                                              |
+| **Placeholder name**  | **Description**                                              |
 | --------------------- | ------------------------------------------------------------ |
 | customername          | Name of the customer who placed the order                   |
 | salesid               | Sales ID of the order                                        |
@@ -108,11 +108,11 @@ The following placeholders retrieve data for individual products (lines) in the 
 
 When creating the HTML for individual order lines in the message body, surround the repeating block of HTML and placeholders for individual lines with the following placeholders within HTML comment tags as follows.
 
-<!--%tablebegin.salesline%-->
+&lt;!--%tablebegin.salesline%--&gt;
 
 *Insert repeating block of HTML and placeholders for individual lines here.*
 
-<!--%tableend.salesline%-->
+&lt;!--%tableend.salesline%--&gt;
 
 For example:
 ```HTML
