@@ -2655,8 +2655,6 @@
           href: warehousing/material-replenishment-withdrawal-kanban.md
         - name: Set up a min-max replenishment process
           href: warehousing/tasks/set-up-min-max-replenishment-process.md
-        - name: Set up a work template for purchase orders
-          href: ../supply-chain/warehousing/tasks/set-up-work-template-purchase-orders.md
       - name: Install and configure the warehousing app
         items:
         - name: Install and configure overview
