@@ -194,12 +194,12 @@ For more information about configuring emails in Dynamics 365 Commerce, see [Con
 
 ## Additional resources 
 
-[Set up an email notification profile](email-notification-profiles)
+[Set up an email notification profile](email-notification-profiles.md)
 
 [Configure and send email](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json)
 
-[Set up email receipts](https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/set-up-email-receipts)
+[Set up email receipts](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-email-receipts)
 
-[Send email receipts from Modern POS ](https://docs.microsoft.com/en-us/dynamics365/commerce/email-receipts)
+[Send email receipts from Modern POS ](email-receipts.md)
 
 
