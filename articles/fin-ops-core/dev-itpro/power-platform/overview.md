@@ -1,7 +1,7 @@
---
+---
 # required metadata
 
-title: Power Platform integration overview
+title: Power Platform overview
 description: Description goes here.
 author: Sunil-Garg
 manager: AnnBe
@@ -19,14 +19,15 @@ audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
+# ms.custom: NotInToc
 ms.search.region: Global
 # ms.search.industry:
 ms.author: sunilg
-ms.search.validFrom: 2020-XX-XX
-ms.dyn365.ops.version: 10.0.XX
+ms.search.validFrom: 2020-10-31
+ms.dyn365.ops.version: 10.0.0
 ---
 
-# Power Platform integration overview
+# Power Platform overview
 
 [!include[banner](../includes/banner.md)]
 
