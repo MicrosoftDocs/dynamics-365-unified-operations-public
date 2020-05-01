@@ -50,7 +50,7 @@ Before you can use the manual shipment consolidation feature, it must be enabled
 - **Module** - *Warehouse management*
 - **Feature name** - *Manual shipment consolidation*
 
-As mentioned in [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md), you must also enable the *Consolidate shipment* feature before you can create the policies, but you should already have done that.
+As mentioned in [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md), you must also enable the *Consolidate shipment* feature before you can create the policies, but you should have done that already.
 
 ## Create the sales orders for this scenario
 
@@ -185,8 +185,6 @@ Release to warehouse each of the sales orders you created for this scenario by d
 1. On the action pane, open the **Warehouse** tab and select **Actions \> Release to warehouse** to release the selected sales order.
 1. Repeat this procedure for each sales order you created for this scenario.
 
-<!-- KFM: Continue from here -->
-
 ## Consolidate the shipments using the shipment consolidation workbench
 
 Do the following to consolidate shipments using the shipment consolidation workbench:
@@ -214,7 +212,7 @@ The following procedure will let you verify shipments that have been created or 
 Two shipments should have been created:
 
 - The first shipment contains three lines and was created using the *CustomerMode* shipment consolidation policy.
-- The second shipment (without *Airways* transportation mode of delivery) was created using the *CustomerOrderNo* shipment consolidation policy.
+- The second shipment (without the *Airways* transportation mode of delivery) was created using the *CustomerOrderNo* shipment consolidation policy.
 
 ### Order set 2 related shipments
 
@@ -232,7 +230,7 @@ Two shipments should have been created:
 
 ### Order set 4 related shipments
 
-Three shipments should have been created:
+Four shipments should have been created:
 
 - Lines from two orders for customer *US-003* were grouped into one shipment using the *Order pool* shipment consolidation policy.
 - Lines from two orders for customer *US-004* were grouped into one shipment using the *Order pool* shipment consolidation policy.
