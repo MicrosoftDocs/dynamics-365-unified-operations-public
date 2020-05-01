@@ -5,7 +5,7 @@ title: Consolidate shipments manually using the Consolidate shipments page
 description: This topic provides a scenario where multiple orders are released to the warehouse and then consolidated later using the Consolidate shipments page.
 author: GarmMSFT
 manager: tfehr
-ms.date: 04/20/2020
+ms.date: 05/01/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -24,7 +24,7 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 # ms.search.industry:
 ms.author: v-olbara
-ms.search.validFrom: 2029-04-20
+ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
 
 ---
@@ -94,7 +94,7 @@ Release to warehouse each of the sales orders you created for this scenario by d
 1. Remove the **Order number** filter and select **Apply**.
 1. Verify the shipments suggested for consolidation. There should only be one shipment with the same policy suggested for consolidation.
 
-## Related articles and demo scripts
+## Additional resources
 
 - [About shipment consolidation policies](../warehousing/about-shipment-consolidation-policies.md)  
 - [Configure shipment consolidation policies](../warehousing/configure-shipment-consolidation-policies.md)

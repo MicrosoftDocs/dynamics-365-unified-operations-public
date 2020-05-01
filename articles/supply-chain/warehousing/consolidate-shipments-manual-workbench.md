@@ -5,7 +5,7 @@ title: Consolidate shipments using the shipment consolidation workbench
 description: This topic provides a scenario where multiple orders are released to warehouse, and then consolidated into shipments later using the shipment consolidation workbench.
 author: GarmMSFT
 manager: tfehr
-ms.date: 04/20/2020
+ms.date: 05/01/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -24,7 +24,7 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 # ms.search.industry:
 ms.author: v-olbara
-ms.search.validFrom: 2019-08-31
+ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
 
 ---
@@ -237,7 +237,7 @@ Four shipments should have been created:
 - Lines from sales orders 4-5 and 4-6 for customer *US-007* were grouped into one shipment using the *Order pool* shipment consolidation policy.
 - Lines from sales orders 4-7 and 4-8 for customer *US-007* were grouped into one shipment using the *CrossOrder* shipment consolidation policy.
 
-## Related articles and demo scripts
+## Additional resources
 
 - [About shipment consolidation policies](../about-shipment-consolidation-policies.md)  
 - [Configure shipment consolidation policies](../configure-shipment-consolidation-policies.md)

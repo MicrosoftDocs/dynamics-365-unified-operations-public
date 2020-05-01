@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Consolidate shipments using shipment consolidation policies
-description: This topic provides an overview of functionality that provides use of shipment consolidation policies.
+title: Consolidate shipments when the shipment consolidation policy is overridden from the Release to warehouse page
+description: This topic provides a scenario where one or more sales lines must be released to warehouse manually from the Release to warehouse page, and there is a need to override the shipment consolidation policy defined by the system before the release.
 author: GarmMSFT
-manager: PJacobse
-ms.date: 12/31/2019
-ms.topic: use-shipment-consolidation-policies
+manager: tfehr
+ms.date: 05/01/2020
+ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology:
@@ -17,16 +17,15 @@ ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: PJacobse
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry:
 ms.author: v-olbara
-ms.search.validFrom: 2019-08-31
-ms.dyn365.ops.version: 10.0.3
-
+ms.search.validFrom: 2020-05-01
+ms.dyn365.ops.version: 10.0.6
 ---
 
 # Consolidate shipments when the shipment consolidation policy is overridden from the Release to warehouse page
@@ -67,15 +66,14 @@ To override shipment consolidation policy during release to warehouse, do the fo
 1. In the bottom section, select **Select new shipment consolidation policy**
 1. Choose a policy that enables consolidation with other open shipments of the same policy, for example, **CustomerOrderNo** policy.
 1. Select **Release to warehouse**.
-1. Select orders 2 and 3 created above.
-1. Select **Add** to add the lines to release to warehouse. Note that the **Default** policy is applied in the bottom section.
-1. Select the second line and select **Select new shipment consolidation policy**.
-1. Choose **CustomerOrderNo** policy from the list.
+1. Select the second and third sales orders that you created for this scenario.
+1. Select **Add** to add the lines to release to warehouse. Note that the *Default* policy is applied in the bottom section.
+1. Select the second line, open the **Select new shipment consolidation policy** drop-down list and choose the *CustomerOrderNo* policy from the list.
 1. Select **Release to warehouse** for both lines.
 
-## Shipments verification
+## Verify the shipments
 
-As a result, two shipments are created:
+Two shipments should have been created:
 
 - The first shipment is created using **CustomerOrderNo** policy and contains two lines ;
 - The second shipment is created using **Default** policy and contains one line.
@@ -86,7 +84,7 @@ To review created shipments, follow these steps.
 1. Find and select required shipment.
 1. Review consolidation policy that is used during shipment creation in the **Shipment consolidation policy** field.
 
-## Related articles and demo scripts
+## Additional resources
 
 - [About shipment consolidation policies](../warehousing/about-shipment-consolidation-policies.md)  
 - [Configure shipment consolidation policies](../warehousing/configure-shipment-consolidation-policies.md)

@@ -5,7 +5,7 @@ title: Configure shipment consolidation policies
 description: How to set up default and custom shipment consolidation policies.
 author: GarmMSFT
 manager: tfehr
-ms.date: 04/20/2020
+ms.date: 05/01/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -24,7 +24,7 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 # ms.search.industry:
 ms.author: v-olbara
-ms.search.validFrom: 2020-04-20
+ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
 ---
 
@@ -416,7 +416,7 @@ Now that you have created all of your policies, you must establish the order in 
     1. Cross-order
     1. Default
 
-## Related articles and demo scripts
+## Additional resources
 
 - [About shipment consolidation policies](../warehousing/about-shipment-consolidation-policies.md)  
 - [Consolidate shipments](../warehousing/consolidate-shipments.md)

@@ -5,7 +5,7 @@ title: Consolidate shipments using shipment consolidation policies
 description: This topic provides an overview of functionality that provides use of shipment consolidation policies.
 author: GarmMSFT
 manager: tfehr
-ms.date: 04/23/2020
+ms.date: 05/01/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -24,7 +24,7 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 # ms.search.industry:
 ms.author: v-olbara
-ms.search.validFrom: 2020-04-23
+ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
 
 ---
@@ -294,7 +294,7 @@ When your done, you should see that four shipments were created:
 - Lines from sales orders 5 and 6 for customer *US-007* were grouped into one shipment using the *Order pool* shipment consolidation policy;
 - Lines from sales orders 7 and 8 for customer *US-007* were grouped into one shipment using the *CrossOrder* shipment consolidation policy.
 
-## Related topics and scenarios
+## Additional resources
 
 - [About shipment consolidation policies](about-shipment-consolidation-policies.md)  
 - [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md)

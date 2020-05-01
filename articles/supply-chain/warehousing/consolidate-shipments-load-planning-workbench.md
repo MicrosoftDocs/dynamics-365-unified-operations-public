@@ -5,7 +5,7 @@ title: Consolidate shipments using release to warehouse from the load planning w
 description: This topic presents a scenario where multiple orders are released to warehouse within the same load, and they will be consolidated into shipments automatically.
 author: GarmMSFT
 manager: tfehr
-ms.date: 04/20/2020
+ms.date: 05/01/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -24,7 +24,7 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 # ms.search.industry:
 ms.author: v-olbara
-ms.search.validFrom: 2029-04-20
+ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
 
 ---
@@ -224,7 +224,7 @@ Three shipments should have been created:
 - Lines from sales orders 4-5 and 4-6 for **Customer account** *US-007* are grouped into one shipment using the *Order pool* shipment consolidation policy.
 - Lines from sales orders 7 and 8 for **Customer account** *US-007* are grouped into one shipment using the *CrossOrder* shipment consolidation policy.
 
-## Related topics and scenarios
+## Additional resources
 
 - [About shipment consolidation policies](../about-shipment-consolidation-policies.md)  
 - [Configure shipment consolidation policies](../configure-shipment-consolidation-policies.md)
