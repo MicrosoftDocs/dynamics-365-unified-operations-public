@@ -3373,17 +3373,19 @@
             - name: Debug data sources
               href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=dynamics365/finance/toc.json
         - name: Configure country context dependent ER model mappings
-          href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md
+          href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=dynamics365/finance/toc.json
         - name: Configure ER formats to use parameters that are specified per legal entity
-          href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md
+          href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=dynamics365/finance/toc.json
         - name: Set up the parameters of an ER format per legal entity
-          href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md
+          href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=dynamics365/finance/toc.json
         - name: Defer execution of ER format elements
           items: 
           - name: Defer execution of a sequence element
-            href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md
+            href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=dynamics365/finance/toc.json
           - name: Defer execution of a XML element
-            href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md
+            href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=dynamics365/finance/toc.json
+        - name: Relative path in data bindings
+          href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=dynamics365/finance/toc.json
       - name: Use Electronic reporting solutions in Finance and Operations
         items: 
         - name: Configure the framework
