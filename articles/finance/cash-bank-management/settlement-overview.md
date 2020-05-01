@@ -62,7 +62,7 @@ If payments are created manually, you can use the **Settle transactions** page t
 
 If a payment clerk enters a payment but doesn't settle that payment before it's posted, the payment can be automatically settled. You can turn on automatic settlement on the **Accounts receivable parameters** and **Accounts payable parameters** pages. Automatic settlement settles transactions only in the same legal entity. It doesn't settle transactions across multiple legal entities.
 
-When you use automatic settlement, you can use the predefined settlement, or you can define your own settlement priority on the **Accounts receivable parameters** page. This functionality is available only for Accounts receivable.
+When you use automatic settlement, you can use the predefined settlement priority, or you can define your own settlement priority on the **Accounts receivable parameters** page. This functionality is available only for Accounts receivable.
 
 ## Results of settlement
 
@@ -78,7 +78,7 @@ Settlements can also generate transactions. For example, the settlement of an in
 
 ## Identifying marked transactions during settlement
 
-When you try to settle a transaction, you might notice a symbol that indicates that the transaction is marked in another location. In this case, you can select the transaction on the **Settle transactions** page and then select **Inquiry \> Settlement from the settlement window**. The view for this inquiry shows journals, sales orders, invoices, payment proposals, and customer locations that might be blocking the transaction from settlement. To resolve the issue, you can select the link to go directly from the inquiry to the blocked location. You can then update the document with the adjustments that are required to settle it. You can also use the **Marked** to identify other documents that are included in the same blocking location.
+When you try to settle a transaction, you might notice a symbol that indicates that the transaction is marked in another location. In this case, you can select the transaction on the **Settle transactions** page and then select **Inquiry \> Settlement from the settlement window**. The view for this inquiry shows journals, sales orders, invoices, payment proposals, and customer locations that might be blocking the transaction from settlement. To resolve the issue, you can select the link to go directly from the inquiry to the blocked location. You can then update the document with the adjustments that are required to settle it. You can also use the **Marked** indicator to identify other documents that are included in the same blocking location.
 
 ## Additional resources
 
