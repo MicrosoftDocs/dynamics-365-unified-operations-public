@@ -135,9 +135,9 @@ The following placeholders retrieve and display data for individual products (li
 | giftcardrecipientname          | Gift card recipient name for products of type gift card      |
 | giftcardbuyername              | Gift card buyer name for products of type gift card          |
 
-### Example of order line placeholders in the message body
+### Example of order line placeholders in email message body
 
-When creating the HTML for individual order lines in the message body, surround the repeating block of HTML and placeholders for individual lines with the following placeholders within HTML comment tags as follows.
+When creating the HTML for individual order lines in the email message body, surround the repeating block of HTML and placeholders for individual lines with the following placeholders within HTML comment tags as follows.
 
 &lt;!--%tablebegin.salesline%--&gt;
 
