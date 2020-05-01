@@ -59,7 +59,7 @@ To create a new email template, follow these steps.
 
 ## Create an email message body with HTML
 
-The message body of your email is composed with HTML. You can use any layout, styling, and branding that HTML and inline cascading style sheets (CSS) allow. Images can also be used if you host your images on a publicly available web endpoint and insert the image URL into the **src** attribute of the HTML **&lt;img&lt;** tag. 
+The message body of your email is composed with HTML. You can use any layout, styling, and branding that HTML and inline cascading style sheets (CSS) allow. Images can also be used if you host your images on a publicly available web endpoint and insert the image URL into the **src** attribute of the HTML **&lt;img&gt;** tag. 
 
 >[!NOTE] 
 > Email clients impose layout and style limitations that may require adjustments to the HTML and CSS you use for the message body. It is recommended that you familiarize yourself with best practices for authoring HTML that will be supported by the most popular email clients.
@@ -186,7 +186,7 @@ To upload a new or edited email template HTML, follow these steps.
 1. In the flyout menu on the right, select **Browse** to navigate to the HTML document that you wish to upload, select it, and then select **Open**.
 1. Select **Upload**.
 1. After your email HTML appears in the preview window, select **OK**.
-1. Ensure that the **Has body** checkbox is selected for the row.
+1. Ensure that the **Has body** check box is selected for the row.
 
 If you have already configured Commerce headquarters to send email, your changes will go out to customers who conduct a transaction that invokes the event that is mapped to the template. 
 
