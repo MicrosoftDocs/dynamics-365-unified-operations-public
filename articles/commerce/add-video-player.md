@@ -77,16 +77,28 @@ The following image shows an example of a video player module on a home page.
 
 To add a video player module to a new page and set the required properties, follow these steps.
 
-1. Create a page template that is named **video player template**.
-1. In the **Main** slot of the default page, add a container module.
-1. In the container module, add video player and ambient video player modules.
-1. Finish editing the template, and publish it.
-1. Use the video player template that you created to create a page that is named **video player page**.
-1. In the **Main** slot of the new page, add a video player module.
-1. In the property pane for the video player module, select **Add a video**.
+1. Go to **Templates** and select **+New** to create a new template.
+1. In the **New Template** dialog box, under **Template name** enter **Video player template**, and then select **OK**.
+1. In the **Body** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Default Page** module, and then select **OK**.
+1. In the **Main** slot of the **Default Page** module, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Container** module, and then select **OK**.
+1. In the **Container** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Video player** module, and then select **OK**.
+1. Select **Save*, select**Finish editing** to check in the template, and then select **Publish** to publish it. 
+1. Go to **Pages** and select **+New** to create a new page.
+1. In the **Choose a template** dialog box, select the video player template you created, under **Page name** enter **Video player page**, and then select **OK**.
+1. In the **Main** slot of the new page, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Container** module, and then select **OK**.
+1. In the **Container** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Video player** module, and then select **OK**.
+1. In the property pane of the video player module, select **+Add a video**.
 1. In the **Media Picker** dialog box, select a video, and then select **Upload new media item**.
-1. Save and preview the page. You should see the video module on the page. You can change additional settings to customize the behavior of the module.
-1. Finish editing the page, and publish it.
+1. In File Explorer, select a video file, and then select **Open**.
+1. In the **Upload Media Item** dialog box, enter a title and other information as needed, and then select **OK**.
+1. In the **Media Picker** dialog box, select **Close**.
+1. Select **Save** and then select **Preview** to preview the page. You should see the video module on the page. You can change additional settings to customize the behavior of the module.
+1. Select **Finish editing** to check in the page, and then select **Publish** to publish it. 
 
 ## Additional resources
 
