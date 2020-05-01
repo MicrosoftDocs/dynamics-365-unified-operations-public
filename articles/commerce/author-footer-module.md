@@ -54,23 +54,23 @@ Like most containers, a footer module support properties for the heading and the
 
 ## Author a footer module
 
-1. In the navigation pane, select **Fragments**, and then select **New Page Fragment**.
-1. In the **New Page Fragment** dialog box, select the footer module, enter a name for the page fragment, and then select **OK**.
-1. In the outline tree on the left, select the ellipsis button (**...**) for the footer module, and then select **Add Module**.
-1. In the **Add Module** dialog box, select the footer category module, and then select **OK**.
-1. In the outline tree, select the ellipsis button for the footer category module, and then select **Add Module**.
-1. In the **Add Module** dialog box, select the footer item module, and then select **OK**.
-1. In the outline tree, select the footer item module. Then, in the properties pane on the right, configure the heading, link and link text, and image as you require.
-1. To add more footer items, repeat steps 5 through 7.
-1. To add a "back to top" link to your footer, select the ellipsis button for the footer category module, and then select **Add Module**.
-1. In the **Add Module** dialog box, select the back to top module, and then select **OK**.
-1. In the outline tree, select the back to top module. Then, in the properties pane on the right, configure the back to top module as you require.
-1. Save the page fragment, check it in, and publish it.
+1. Go to **Page Fragments** and select **+New** to create a new fragment.
+1. In the **New Page Fragment** dialog box, select the **Container** module, enter a name for the page fragment, and then select **OK**.
+1. In the **Default container** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Footer category** module, and then select **OK**.
+1. In the **Footer category** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Footer item** module, and then select **OK**.
+1. Select the **Footer item** slot, then in the properties pane on the right, configure the heading, link and link text, and image as needed.
+1. To add more footer items, repeat steps 5 through 7 for each.
+1. To add a "back to top" link to your footer, select the ellipsis (**...**) in the **Footer category** slot, and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Back to top** module, and then select **OK**.
+1. Select the **Back to top** slot, then in the properties pane on the right, configure the text and other module properties as needed.
+1. Select **Finish editing** to check in the fragment, and then select **Publish** to publish it.
 
 On every page template that has been created for the site, follow these steps.
 
-1. In the **Main** slot of the default page, in the footer module, add the footer fragment that you created.
-1. Save the template, check it in, and publish it.
+1. In the **Footer** slot of the **Default page** module, add the footer fragment that you created.
+1. Select **Finish editing** to check in the template, and then select **Publish** to publish it.
 
 By adding the page fragment to page templates, you help guarantee that the footer is rendered on every page.
 
