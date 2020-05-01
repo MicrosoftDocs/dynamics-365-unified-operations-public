@@ -106,7 +106,7 @@ To configure the scenario, follow these steps:
     3. In the **Business Record Mapping** table, click **New**. The default value for the **Business record type** is autopopulated, and you don't need to change it.
     4. In the **Business record** column, select the Supple Chain Management machine resource this signal value is being sent from.
     5. Click **Save**.
-    6. Repeat these steps, adding a new business record mapping for **Machine1226**. You can map multiple signal data values to a single record in Supply Chain Management, but you can't map a single **id** value to multiple records in Supply Chain Management.
+    6. Repeat these steps, adding a new business record mapping for **Machine1226**. You can map multiple signal data values to a single record in Supply Chain Management.
 
 16. Use the **Selected** column to choose which machines you want to process. You do not have to define all signal values and you do not have to select all machines.
 17. Click **Next** to go to the **Part produced signal configuration** page.
@@ -116,7 +116,7 @@ To configure the scenario, follow these steps:
 21. Click **Next** to go to the **Enable scenario** page. Toggle the slider to enable the scenario.
 22. Click **Finish**.
 
-The scenario setup is complete. IoT Intelligence will automatically starting processing the IoT Hub messages.
+The scenario setup is complete. IoT Intelligence will automatically start processing the IoT Hub messages.
 
 ## Configure the **Product quality** scenario in Supply Chain Management
 

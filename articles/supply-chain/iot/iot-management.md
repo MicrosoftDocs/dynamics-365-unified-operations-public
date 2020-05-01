@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 10.0.5
 
 This topic describes how to view the monitor and manage IoT Intelligence.
 
-## How monitor scenarios in Dynamics 365 Supply Chain Management
+## How to monitor scenarios in Dynamics 365 Supply Chain Management
 
 There are several places to monitor IoT Intelligence processing:
 
@@ -43,16 +43,15 @@ There are several places to monitor IoT Intelligence processing:
 + **Modules \> Production control \> Inquiries and reports \> IoT Intelligence \> Closed notifications**. Here you can see the notifications that have been resolved or dismissed.
 + **Modules \> Production control \> Inquiries and reports \> IoT Intelligence \> Metric keys**. Here you can see the metric keys for the Resource Status times series graphs.
 + **Modules \> Production control \> Manufacturing execution \> Resource status**. Here you can track specific metrics using the **Configure** dialog. If a scenario detects an exception, a notification with the exception details will appear.
-+ **Modules \> Production control \> Setup \> IoT Intelligence \> Scenario parameters**. Click **Equipment downtime** to see all the machines that are available. Also, you can update the redis cache connection string and update scenario threshold values.
-+ **Modules \> Workspaces \> Production floor management \> Notifications**. Here you can see the list of unresolved notifications.
++ **Workspaces \> Production floor management \> Notifications**. Here you can see the list of unresolved notifications.
 
 ## Modify a running IoT Intelligence scenario
 
 When a scenario is running, you can make these modifications:
 
 + Add new sensor schema definitions.
-+ Select new signal data values to process.
-+ Unselect existing new signal data values.
++ Select new signal data values.
++ Unselect existing signal data values.
 + Add and map new signal data values.
 + Update threshold values.
 

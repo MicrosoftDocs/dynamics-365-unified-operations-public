@@ -65,7 +65,7 @@ To create a key vault resource, follow these steps:
 2. Click **Add**.
 3. On the **New** page, in the search box, enter **Key vault**. Click **Create**.
 4. On the **Create key vault page**, enter a name in the **Key vault name** textbox.
-5. Leave the rest of default values, and click **Review + create**.
+5. Review the default values, and click **Review + create**.
 6. Click **Create**. The key vault is created in the background.
 
 ### Create an IoT Hub resource
@@ -76,7 +76,7 @@ To create an IoT Hub resource, follow these steps:
 2. Click **Add**.
 3. On the **New** page, in the search box, enter **Iot Hub**. Click **Create**.
 4. Enter a name in the **IoT hub name** textbox.
-5. Leave the rest of the default values, and click **Review + create**.
+5. Review the default values, and click **Review + create**.
 6. Click **Create**. The IoT hub is created in the background.
 
 > [!NOTE]
@@ -90,7 +90,7 @@ To create a Redis cache resource, follow these steps:
 2. Click **Add**.
 3. On the **New** page, in the search box, enter **Azure Cache for Redis**. Click **Create**.
 4. Enter a name in the **DNS name** textbox.
-5. Leave the rest of the default values, and click **Create**. The Redis cache is created in the background.
+5. Review the default values, and click **Create**. The Redis cache is created in the background.
 
 > [!NOTE]
 > We recommendation that you create only one Redis cache per environment.

@@ -53,7 +53,7 @@ If you want to view the time series graphs of your messages in Supply Chain Mana
 
 To configure Resource Status, follow these steps:
 
-1. In Supply Chain Management, navigate to **Production control \> Manufacturing execution \> Resource Status**. On the **Resource status** page, enter the values in the **Configure** pane.
+1. In Supply Chain Management, navigate to **Production control \> Manufacturing execution \> Resource Status**. On the **Resource status** page, click the **Configure** button.
 2. Select an item to monitor from the **Resource** list.
 3. Select the edit button for **Time series 1**.
 4. Select a metric from the table on the **Select time series** dialog. (You can also use the **Update metric keys** link to update the metric keys from this dialog.)

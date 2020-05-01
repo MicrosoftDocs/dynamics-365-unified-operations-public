@@ -45,11 +45,11 @@ IoT Intelligence is an add-in for Microsoft Dynamics 365 Supply Chain Management
 
 You can setup and configure IoT Intelligence without writing any code. The basic steps are:
 
-1. [Schema formats for IoT Hub messages](iot-json-setup.md): Configure your devices to send messages to IoT Hub, and define the JSON message format.
-2. [Azure setup for IoT Intelligence](iot-azure-setup.md): Create an IoT hub, a Redis cache, and a key vault that is accessible from Supply Chain Management.
+1. [Azure setup for IoT Intelligence](iot-azure-setup.md): Create an IoT hub, a Redis cache, and a key vault that is accessible from Supply Chain Management.
+2. [Schema formats for IoT Hub messages](iot-json-setup.md): Configure your devices to send messages to IoT Hub, and define the JSON message format.
 3. [LCS setup for IoT Intelligence](iot-lcs-setup.md): Install the add-in in Lifecycle Services (LCS), and configure the Azure secrets.
-4. [Scenario setup for IoT Intelligence](iot-scenario-setup.md): Setup the scenarios in Supply Chain Management.
-5. [Metrics setup for IoT Intelligence](iot-metrics-setup.md): Setup metrics in Supply Chain Management.
+4. [Metrics setup for IoT Intelligence](iot-metrics-setup.md): Setup metrics in Supply Chain Management.
+5. [Scenario setup for IoT Intelligence](iot-scenario-setup.md): Setup the scenarios in Supply Chain Management.
 
 ## Tracking and maintenance
 
