@@ -58,7 +58,8 @@ You can use the license plate receiving process without creating work. By defini
 - *License plate receiving and put away*
 
 > [!NOTE]
-> You must define at least one location for a work policy in the **Inventory locations** section. You can't specify the same location for multiple work policies.
+> - You must define at least one location for a work policy in the **Inventory locations** section. You can't specify the same location for multiple work policies.
+> - The warehousing mobile device menu item option **Print label** will not print a license plate label without work creation.
 
 To make this functionality available on your system, the *License plate receiving enhancements* feature must be enabled in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
