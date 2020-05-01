@@ -50,6 +50,36 @@ You can create a workflow in Dynamics 365 Human Resources to consistently manage
 
 5. Use the workflow editor to create a workflow for your leave requests. For more information about working with workflows, see [Create workflows overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/create-workflow?toc=/dynamics365/commerce/toc.json.)
 
+## Leave and absence request workflow data elements
+There are mulitple data elements that can be used to create conditional or automatic approvals in workflow for leave and absence requests. 
+
+These data elements include:
+- Comment
+- Company
+- Created by
+- Created date and time
+- End date
+- Leave type
+- Modified by
+- Modified date and time 
+- Reason code
+- Request ID
+- Start date
+- Status 
+- Submission date
+- Submitted by
+- Submitted by Human resources
+- Submitted by Manager
+- Submitted on behalf
+- Worker
+- Worker type
+
+Here are some examples of different types of workflow conditions using the data elements above. 
+
+1. Use **Reason code** in a [conditional statement] (https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow)  to route sick leave requests with the reason code of surgery to HR for approval while all other reason codes go to the manager for approval
+2. Use **Submitted by Human resources** and **Submitted by manager** in an [automatic action] (https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow) to auto-approve leave requests submitted by these roles for employees
+3. Use **Leave type** in a conditional statement or automatic action to control how requests with certain leave types are routed through workflow
+
 ## See also
 
 - [Leave and absence overview](hr-leave-and-absence-overview.md)
