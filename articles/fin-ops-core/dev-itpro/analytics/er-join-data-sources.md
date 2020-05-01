@@ -5,7 +5,7 @@ title: Use JOIN data sources in ER model mappings to get data from multiple appl
 description: This topic explains how you can use JOIN type data sources in Electronic reporting (ER).
 author: NickSelin
 manager: AnnBe
-ms.date: 10/25/2019
+ms.date: 05/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -264,31 +264,31 @@ Review settings of the ER model mapping component. The component is configured t
 
 ## Limitations
 
-As you can see from the example of this topic, **JOIN** data source can be built from several data sources describing individual datasets the records of which must be eventually joined. You can configure those data sources by using the ER built-in [FILTER](er-functions-list-filter.md) function. When you configure such a data source to be called beyond **JOIN** data source, you can use company ranges as part of the condition for data selection. The initial implementation of **JOIN** data source does not support such data sources - when you call a [FILTER](er-functions-list-filter.md) based data source within the scope of execution of a JOIN data source and the called data source contains company ranges as part of the condition for data selection, an exception is thrown.
+As you can see from the example in this topic, the **JOIN** data source can be built from several data sources that describe the individual datasets of the records that must eventually be joined. You can configure those data sources by using the built-in ER [FILTER](er-functions-list-filter.md) function. When you configure the data source to be called beyond the **JOIN** data source, you can use company ranges as part of the condition for data selection. The initial implementation of the **JOIN** data source doesn't support such data sources. For example, when you call a [FILTER](er-functions-list-filter.md) based a data source within the scope of execution of a JOIN data source and the called data source contains company ranges as part of the condition for data selection, an exception occurs.
 
-Starting from Microsoft Dynamics 365 Finance version 10.0.12 (August 2020) and onward, you can use company ranges as part of the condition for data selection in [FILTER](er-functions-list-filter.md) based data sources that are called within the scope of execution of a **JOIN** data source. Note that the company ranges are supported for the only first data source of **JOIN** data source due to limitations of the application [Query](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-library-objects#query-object-model) builder.
+With the release of Microsoft Dynamics 365 Finance version 10.0.12 (August 2020), you can use company ranges as part of the condition for data selection in [FILTER](er-functions-list-filter.md) based data sources that are called within the scope of execution of a **JOIN** data source. The company ranges are supported for only the first data source of a **JOIN** data source because of the limitations of the application [Query](../dev-ref/xpp-library-objects#query-object-model) builder.
 
 ### Example
 
-For example, you might need to make a single call to application database to get the list of foreign trade transactions of multiple companies and details of inventory item that is referred in every such transaction.
+For example, you might need to make a single call to the application database to get the list of foreign trade transactions of multiple companies and the details of the inventory item that is referred to in the transaction.
 
-For achieving this, at first you can configure the following artefacts in your ER model mapping:
+To do this, configure the following artifacts in your ER model mapping:
 
--   **Intrastat** root data source that represents the **Intrastat** table.
--   **Items** root data source that represents the **InventTable** table.
--   **Companies** root data source returning the list of companies (DEMF and GBSI in this example) which transactions must be accessed. The company code is available from the **Companies.Code** field.
--   **X1** root data source having the `FILTER (Intrastat, VALUEIN(Intrastat.dataAreaId, Companies, Companies.Code))` expression that contains the definition of company ranges `VALUEIN(Intrastat.dataAreaId, Companies, Companies.Code)` as part of the condition for data selection.
--   **X2** data source placing as a nested item of the **X1** data source and having the `FILTER (Items, Items.ItemId = X1.ItemId)` expression.
+- **Intrastat** root data source that represents the **Intrastat** table.
+- **Items** root data source that represents the **InventTable** table.
+- **Companies** root data source that returns the list of companies (DEMF and GBSI in this example) where transactions must be accessed. The company code is available from the **Companies.Code** field.
+- **X1** root data source with the `FILTER (Intrastat, VALUEIN(Intrastat.dataAreaId, Companies, Companies.Code))` expression that contains the definition of company ranges `VALUEIN(Intrastat.dataAreaId, Companies, Companies.Code)` as part of the condition for data selection.
+- **X2** data source as a nested item of the **X1** data source and includes the `FILTER (Items, Items.ItemId = X1.ItemId)` expression.
 
-Finally, you can configure a **JOIN** data source selecting the **X1** data source as the first one, **X2** data source as the second one and specifying the **Execute** option as **Query** forcing ER to execute this data source on database level as a direct SQL call.
+Finally, you can configure a **JOIN** data source with the **X1** data source as the first one, **X2** data source as the second, and specifying the **Execute** option as **Query**, forcing ER to execute this data source on the database level as a direct SQL call.
 
-When the configured in this way data source is executed while the ER execution is [traced](trace-execution-er-troubleshoot-perf.md), the following statement is shown in the ER model mapping designer as part of the ER performance trace:
+When the configured data source is executed while the ER execution is [traced](trace-execution-er-troubleshoot-perf.md), the following statement is shown in the ER model mapping designer as part of the ER performance trace:
 
 `SELECT ... FROM INTRASTAT T1 CROSS JOIN INVENTTABLE T2 WHERE ((T1.PARTITION=?) AND (T1.DATAAREAID IN (N'DEMF',N'GBSI') )) AND ((T2.PARTITION=?) AND (T2.ITEMID=T1.ITEMID AND (T2.DATAAREAID = T1.DATAAREAID) AND (T2.PARTITION = T1.PARTITION))) ORDER BY T1.DISPATCHID,T1.SEQNUM`
 
->
-> Note that an error occurs when you execute JOIN data source that has been configured as containing data selection conditions
-with company ranges for other than first data source of the executed JOIN data source.
+> [!NOTE]
+> An error occurs when you execute the JOIN data source that has been configured as containing data selection conditions
+with company ranges for additional data sources of the executed JOIN data source.
 
 ## Additional resources
 
