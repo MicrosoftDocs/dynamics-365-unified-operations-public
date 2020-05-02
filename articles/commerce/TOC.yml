@@ -1004,7 +1004,7 @@
         href: store-performance-information.md
       - name: Set up Recency, Frequency, and Monetary (RFM) analysis
         href: set-up-rfm-analysis.md
-    - name: Localization and regulatory features
+    - name: Globalization
       items:
       - name: Fiscal integration overview for Commerce channel
         href: localizations/fiscal-integration-for-retail-channel.md
