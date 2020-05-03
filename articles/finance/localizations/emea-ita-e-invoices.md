@@ -110,7 +110,7 @@ Set values are used for output to the xml file blocks (see the table bellow how 
 > [!NOTE]  
 > In **Electronic document property types** list page, the **Description** field (left) is filled in automatically when a user is filling **Group description** and **Description** (right) fields.
 
->[!NOTE]
+> [!NOTE]
 > Electronnic document property type must have the same code as specified in the table.
 
 ### How to use of project categories for stamp duty
@@ -121,11 +121,14 @@ Set values are used for output to the xml file blocks (see the table bellow how 
 3. When you create **Fee** or **Expese** journal lines select the category that was defined as stamp duty, enter Cost price. The system considers this cost price as stamp duty amount, 
 If you fill in sales price with the cost price amount, the system considers this ammount included in the invoice totals. Sales price amount is equal to zero, this transaction is not included in invoice totals. 
 
+> [!NOTE]
+> You can use only one of the journal type (Fee or Exepense) for stamp duty. So if a company uses only payable stamp dute it is possible to use Fee journal type. If a company uses both payable and unpayable stamp duty it is better to use Expense journal type.   
+
 
 ## Customers 
 
 ### Authority office 
-**Accounts receivable \> Customers \> All customers**, open a customer in **Edit** mode**, Sales demographics** FastTab, **Authority office** field).
+**Accounts receivable \> Customers \> All customers**, open a customer in **Edit** mode, **Sales demographics** FastTab, **Authority office** field).
 
 The system uses this field value for defining the type of communication (B2G or B2B). If the length of this value is 6 then the customer will be considered as public administration (Transmission Format is **FPA12**) and if the length of this value is 7 then this customer will be considered as private companies or professionals (Transmission Format is **FPR12**). 
 In these both cases the system fills in the CodiceDestinatario tag (xml file) with this field value.
