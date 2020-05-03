@@ -41,7 +41,7 @@ to accept paper invoices. Additionally, three months after the June 6 date,
 these same groups will no longer process payments (even partly) until an invoice
 is submitted in electronic format.
 
-In additionб the format for electronic invoices "FatturaPA" version 1.2 can be
+In addition, the format for electronic invoices "FatturaPA" version 1.2 can be
 used for all types of businesses, including public administrations, private
 and professional companies.  
 Specifically, the invoices in question must be in .xml format, must be endorsed
@@ -62,7 +62,7 @@ necessary to fulfil the following settings:
 - [Electronic documents properties](/electronic-document-properties)
 - [Customers](/customers).
 - [Digital certificate](/digital-certificates).
-- [Destination for xml file output](/destination-for-xml-file-output) (optional)
+- [Destination for xml file output](/destination-for-xml-file-output) (optional).
 
 ## Accounts receivable parameters
 
@@ -87,14 +87,14 @@ On **Number sequences** tab fill in number sequences for e-invoice file number
 and transmission number.
 
 ## Electronic document properties
-Electronic document properties functionality are used for settting output of xml document blocks for different business cases: 
+Electronic document properties functionality are used for settting output to xml document blocks for different business cases: 
 1. VAT registration number for customers who are out of EU and don't have VAT registration codes.  
 2. Certified e-mail address (PEC) for private or professional companies.
 3. Stamp duty (payable and not payble by customer).
 2. Representative data
 
-For the functionality to work it is necessary to set up:
-1. **Electronic document property types** (**Account receivable > Setup > Electronic document property types**) and to which table the document property type is applied. For electronic invoices functionality the **Customers** and **Legal entities** tables are applied (**Applicability** button).
+For the functionality to work, it is necessary to set up:
+1. **Electronic document property types** (**Account receivable > Setup > Electronic document property types**) and to which table the document property type is applied. For electronic invoice functionality the **Customers** and **Legal entities** tables are applied (**Applicability** button).
 2. Required values in set tables on the level of the customer and the legal entity (**Accounts receivable \> Customers \> All customers, Customer** tab, **Electronic document properties** button and **Organization administration > Organizations > Legal entities**, **Electronic document properties** button.
 
 Set values are used for output to the xml file blocks (see the table bellow how to fiil and where these values are used).
