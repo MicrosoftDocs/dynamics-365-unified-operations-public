@@ -1,4 +1,4 @@
----
+  ---
 # required metadata
 
 title: Customer electronic invoices
@@ -41,9 +41,9 @@ to accept paper invoices. Additionally, three months after the June 6 date,
 these same groups will no longer process payments (even partly) until an invoice
 is submitted in electronic format.
 
-In addition the format for electronic invoices "FatturaPA" version 1.2 can be
-used for all types of businesses, including public administrations and private
-companies and professionals.  
+In additionб the format for electronic invoices "FatturaPA" version 1.2 can be
+used for all types of businesses, including public administrations, private
+and professional companies.  
 Specifically, the invoices in question must be in .xml format, must be endorsed
 by using a qualified or digital electronic signature, and must be transmitted
 through an interchange data system or an authorized intermediary on the
@@ -81,23 +81,23 @@ Accounts receivable parameters**, **Electronic documents** tab).
 
 **Accounts receivable \> Setup \> Electronic invoice parameters**)
 
-Use these parameters to specify business scenarios and company specific information (**General**, **Company information** and **Art. 2250 Civil code registratio**n tabs).
+Use these parameters to specify business scenarios and company specific information (**General**, **Company information** and **Art. 2250 Civil code registration** tabs).
 
 On **Number sequences** tab fill in number sequences for e-invoice file number
 and transmission number.
 
 ## Electronic document properties
-Electronic document properties functionality are used for setup of xml document blocks ofor different business cases: 
+Electronic document properties functionality are used for settting output of xml document blocks for different business cases: 
 1. VAT registration number for customers who are out of EU and don't have VAT registration codes.  
 2. Certified e-mail address (PEC) for private or professional companies.
 3. Stamp duty (payable and not payble by customer).
 2. Representative data
 
 For the functionality to work it is necessary to set up:
-1. **Electronic document property types** (**Account receivable > Setup > Electronic document property types**) and to which table the document property type is aaplied. For electronic invoices functionality the **Customers** and **Legal entities** tables are applied (**Applicability** button).
+1. **Electronic document property types** (**Account receivable > Setup > Electronic document property types**) and to which table the document property type is applied. For electronic invoices functionality the **Customers** and **Legal entities** tables are applied (**Applicability** button).
 2. Required values in set tables on the level of the customer and the legal entity (**Accounts receivable \> Customers \> All customers, Customer** tab, **Electronic document properties** button and **Organization administration > Organizations > Legal entities**, **Electronic document properties** button.
 
-Set values are used for output in the xml file blocks (see the table bellow how to fiil and where these values are used).
+Set values are used for output to the xml file blocks (see the table bellow how to fiil and where these values are used).
 
 | Business scenario | Electronic document property type | Electronic document property type description | Applicability (Table) | Where to use | Element in the xml file |
 |-------------------|-----------------------------------|-----------------------------------------------|-----------------------|--------------|-------------------------|
@@ -108,7 +108,10 @@ Set values are used for output in the xml file blocks (see the table bellow how 
 | Representative | TaxRepPaese, TaxRepPaese, TaxRepCodice, TaxRepDenominazione, TaxRepNome, TaxRepCognome | Any description | **CustTable** (Customers) | **Account receivable > Customers > All customers**, **Customer** tab, **Electronic document properties** button. Value=IT (for TaxRepPaese) For other types, fill in data of representative | **Cognome** (RappresentanteFiscale block) |
 
 > [!NOTE]  
-> In **Document property types** list page, the **Description** field (left) is filled in automatically when a user is filling **Group description** and **Description** (right) fields.
+> In **Electronic document property types** list page, the **Description** field (left) is filled in automatically when a user is filling **Group description** and **Description** (right) fields.
+
+>[!NOTE]
+> Electronnic document property type must have the same code as specified in the table.
 
 ### How to use of project categories for stamp duty
 
