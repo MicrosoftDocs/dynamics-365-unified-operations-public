@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 10.0.5
 
 This topic describes how to view the monitor and manage IoT Intelligence.
 
-## How to monitor scenarios in Dynamics 365 Supply Chain Management
+## <a id="monitor-scenarios"/>How to monitor scenarios in Dynamics 365 Supply Chain Management
 
 There are several places to monitor IoT Intelligence processing:
 

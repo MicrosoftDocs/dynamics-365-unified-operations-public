@@ -53,9 +53,9 @@ This topic describes how to install the IoT Intelligence add-in in Lifecycle Ser
 
 LCS setup is complete. The next step is to [setup the scenarios](iot-scenario-setup.md).
 
-## How to uninstall the add-in
+## <a id="uninstall-addin"/>How to uninstall the add-in
 
-1. In Supply Chain Management, [disable the scenarios](iot-scenario-setup#how-to-disable-a-scenario.md).
+1. In Supply Chain Management, [disable the scenarios](iot-scenario-setup.md#how-to-disable-a-scenario).
 2. In Lifecycle Services (LCS), navigate to your Supply Chain Management environment.
 3. Scroll to the Environment add-ins section.
 4. Click **Uninstall** for the IoT Intelligence add-in.

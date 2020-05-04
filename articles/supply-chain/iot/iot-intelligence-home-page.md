@@ -53,8 +53,8 @@ You can setup and configure IoT Intelligence without writing any code. The basic
 
 ## Tracking and maintenance
 
-+ [How to view the monitors in Supply Chain Management](iot-management.md#how-to-view-the-monitors-in-supply-chain-management)
-+ [How to disable a scenario](iot-management.md#how-to-disable-a-scenario)
-+ [How to uninstall the add-in](iot-management.md#how-to-uninstall-the-add-in)
++ [How to view the monitors in Supply Chain Management](iot-management.md#monitor-scenarios)
++ [How to disable a scenario](iot-scenario-setup.md#how-to-disable-a-scenario)
++ [How to uninstall the add-in](iot-lcs-setup.md#uninstall-addin)
 + [Modify a running IoT Intelligence scenario](iot-management.md#modify-a-running-iot-intelligence-scenario)
 + [Simulation options](iot-management.md#simulation-options)
