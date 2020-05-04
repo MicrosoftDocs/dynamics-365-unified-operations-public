@@ -1404,6 +1404,8 @@
           href: sysadmin/tasks/identify-resolve-conflicts-segregation-duties.md
         - name: Assign users to security roles
           href: sysadmin/tasks/assign-users-security-roles.md
+        - name: Security diagnostics for task recordings
+          href: sysadmin/tasks/security-diagstics-task-recordings.md
       - name: Batch processing
         items:
         - name: Batch processing overview
