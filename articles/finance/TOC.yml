@@ -3246,34 +3246,40 @@
         href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
       - name: Design ER formats to generate outgoing electronic documents in various formats
         items: 
-        - name: (ER) Design a configuration for generating reports in OPENXML format
-          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/finance/toc.json 
-        - name: (ER) Design configurations to generate reports in Word format
+        - name: Design configurations to generate outgoing documents in Excel format
+          items:
+          - name: Design a configuration for generating documents in Excel format
+            href: ../fin-ops-core/dev-itpro/analytics/er-fillable-excel.md?toc=/dynamics365/finance/toc.json 
+          - name: Example of generating reports in OPENXML format
+            href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/finance/toc.json
+          - name: Modify ER formats by reapplying Excel templates
+            href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/finance/toc.json            
+          - name: Dynamically add columns to Excel reports as horizontally expandable ranges
+            items:
+            - name: Design formats to dynamically add columns to Excel reports
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/finance/toc.json
+            - name: Run formats to dynamically add columns to Excel reports
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/finance/toc.json
+        - name: Design configurations to generate reports in Word format
           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/finance/toc.json
         - name: Design configurations to fill out PDF templates
           href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/finance/toc.json
-      - name: Embed images and shapes
-        items:
-        - name: (ER) Embed images and shapes in documents that you generate
-          href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/finance/toc.json
-        - name: Example of embedding images and shapes
-          items: 
-          - name: Design configurations to generate reports in Office formats that have embedded images
-            href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/dynamics365/finance/toc.json
-          - name: Review configurations to generate reports in Office formats that have embedded images
-            href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/finance/toc.json
-          - name: Generate reports in Office formats that have embedded images
-            href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/finance/toc.json
-      - name: Modify Electronic reporting formats by reapplying Excel templates
-        href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/finance/toc.json
+        - name: Embed images and shapes
+          items:
+          - name: (ER) Embed images and shapes in documents that you generate
+            href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/finance/toc.json
+          - name: Example of embedding images and shapes
+            items: 
+            - name: Design configurations to generate reports in Office formats that have embedded images
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/dynamics365/finance/toc.json
+            - name: Review configurations to generate reports in Office formats that have embedded images
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/finance/toc.json
+            - name: Generate reports in Office formats that have embedded images
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/finance/toc.json
+        - name: Split generated XML files based on file size and content quantity
+          href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
       - name: Define the dependency of ER configurations on other components
         href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/finance/toc.json
-      - name: Dynamically add columns to Excel reports as horizontally expandable ranges
-        items:
-        - name: Design formats to dynamically add columns to Excel reports as horizontally expandable ranges
-          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/finance/toc.json
-        - name: Run formats to dynamically add columns to Excel reports as horizontally expandable ranges
-          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/finance/toc.json
       - name: Update application data using Electronic reporting
         items:
         - name: Generate electronic documents and update application data
@@ -3304,8 +3310,6 @@
             href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?toc=/dynamics365/finance/toc.json
           - name: Configure ER formats to import XML format files with optional attributes
             href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md
-      - name: Split generated XML files based on file size and content quantity
-        href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
       - name: Configuration lifecycle
         items:
         - name: Manage configurations lifecycle
