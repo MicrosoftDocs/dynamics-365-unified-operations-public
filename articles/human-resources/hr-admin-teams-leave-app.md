@@ -2,7 +2,7 @@
 # required metadata
 
 title: Human Resources app in Teams
-description: This article introduces the Microsoft Dynamics 365 Human Resources app in Microsoft Teams.
+description: This topic introduces the Microsoft Dynamics 365 Human Resources app in Microsoft Teams.
 author: andreabichsel
 manager: AnnBe
 ms.date: 05/04/2020
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [banner](includes/preview-feature.md)]
 
-The Microsoft Dynamics 365 Human Resources app in Microsoft Teams lets employees quickly request time off and view their time-off balance information in Teams. Employees can interact with a bot to request information, and they can see more detailed information on the **Time off** tab.
+The Microsoft Dynamics 365 Human Resources app in Microsoft Teams lets employees quickly request time off and view their time-off balance information in Microsoft Teams. Employees can interact with a bot to request information and view more details on the **Time off** tab.
 
 ![Human Resources Teams leaves app bot](./media/hr-admin-teams-leave-app-bot.png)
 
@@ -60,7 +60,7 @@ For information about managing app permissions in Teams, see [Manage app permiss
 
 The Human Resources app in Teams uses the Language Understanding Intelligent Service (LUIS) in Azure Cognitive Services. The app also uses Microsoft’s Azure Bot Service. The following links provide more information about these services and privacy.
 
-| For more information about... | See... |
+| For more information about | See |
 | --- | --- |
 | LUIS| [Language Understanding (LUIS)](https://www.luis.ai/home) |
 | User privacy with LUIS | [Export and delete your customer data in Language Understanding (LUIS) in Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/luis/luis-user-privacy) |
@@ -75,11 +75,7 @@ The LUIS service can only access user queries and isn't designed to be connected
 
 To manage admin settings for apps in Microsoft Teams, go to the Microsoft 365 admin center and open **Settings > Services & add-ins**, and then select **Microsoft Teams**. If you're signed in as an Office 365 admin, you can access these controls in the [Office 365 admin portal](https://admin.microsoft.com/adminportal/home#/Settings/ServicesAndAddIns). You can also uninstall from the admin portal.
 
-
-
-
-
-## See also
+## Additional resources
 
 [Manage leave requests in Teams](hr-teams-leave-app.md)
 
