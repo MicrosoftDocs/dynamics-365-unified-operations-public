@@ -101,8 +101,8 @@ The following set of rules is valid when quantities are processed, and a batch n
 
 The following example shows the end-to-end flow.
 
-## Example scenario 1
-<!-- KFM: Can this heading identify what this scenario shows? -->
+## Example scenario: Batch number allocation
+
 For this example, demo data must be installed, and you must use the **USMF** demo data company.
 
 ### Set up an inventory reservation hierarchy to allow batch-specific reservation
@@ -209,9 +209,7 @@ In this scenario, a company uses warehouse management and work processing, and h
 
 - If the license plate isn't already assigned to a sales order line, the warehouse personnel can choose a license plate during picking work, after sales order registration and reservation are finished.
 
-<!-- KFM: Should the following section be a subsection of the above? -->
-
-## Reserve a specific license plate on the sales order
+### Reserve a specific license plate on the sales order
 
 To enable license plate reservation on an order, you must select the **Allow reservation on demand order** check box for the **License plate** level on the **Inventory reservation hierarchies** page for the hierarchy that is associated with the relevant item.
 
@@ -363,8 +361,7 @@ Do the following:
 
 1. To release the sales order open the **Warehouse** tab on the action pane and then select **Actions > Release to warehouse**.
 
-### Review and process warehouse work that has order-committed license plate
-<!-- KFM: Something doesn't make sense about this heading -->
+### Review and process warehouse work with order-committed license plates assigned
 
 Do the following:
 
