@@ -50,7 +50,7 @@ You can find the Human Resources app in the Teams store.
 
 3. Select the **Add** button to install the app.
 
-   ![Human Resources Teams leave app install](./media/hr-teams-leave-in-store.png)
+   ![Human Resources Teams leave app install](./media/hr-teams-leave-app-in-store.png)
 
 4. After the app installs, select the **Settings** tab to sign in.
 
