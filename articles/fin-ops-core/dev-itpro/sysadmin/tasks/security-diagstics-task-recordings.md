@@ -4,7 +4,7 @@
 This topic describes how to analyze and manage security permission requirements based on a task recording.
 
 ## To diagnose security for a task recording:
-1.	A task recording of the user process being analyzed is a prerequisite. To record a business process, see [Task recorder resources](../dev-itpro/user-interface/task-recorder.md)
+1.	A task recording of the user process being analyzed is a prerequisite. To record a business process, see [Task recorder resources](../../dev-itpro/user-interface/task-recorder.md)
 2.	Go to **System administration > Security > Security diagnostic for task recording**.
 3.	Open the task recording from its location, i.e. click **Open from this PC** or **Open from Lifecycle Services**.
 4.	Click **Close**.
