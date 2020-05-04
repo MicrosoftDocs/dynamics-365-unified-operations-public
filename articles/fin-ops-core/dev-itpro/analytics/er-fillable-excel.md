@@ -2,7 +2,7 @@
 # required metadata
 
 title: Design a configuration for generating documents in Excel format
-description: This topic provides information about how to design an Electronic reporting (ER) format to fill in an Excel template and generate outbound documents in Excel format.
+description: This topic provides information about how to design an Electronic reporting (ER) format to fill in an Excel template, and then generate outbound Excel format documents.
 author: NickSelin
 manager: AnnBe
 ms.date: 05/04/2020
@@ -34,16 +34,16 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-You can design an [Electronic reporting (ER)](/general-electronic-reporting.md) format configuration containing an ER [format component](general-electronic-reporting.md#FormatComponentOutbound) that you can configure to generate an outbound document in Excel workbook format. Certain ER format components must be used for that.
+You can design an [Electronic reporting (ER)](general-electronic-reporting.md) format configuration with an ER [format component](general-electronic-reporting.md#FormatComponentOutbound) that you can configure to generate an outbound document in a Microsoft Excel workbook format. Specific ER format components must be used to do that.
 
 ## Add a new ER format
 
-When you add a new ER format configuration to generate an outbound document in Excel workbook format, you must either select the **Excel** value for the **Format type** attribute of this format or keep the **Format type** attribute blank.
+When you add a new ER format configuration to generate an outbound document in an Excel workbook format, you must select the **Excel** value for the **Format type** attribute of this format or keep the **Format type** attribute blank.
 
--   When you selected the **Excel** value for the **Format type** attribute for the added ER format, you can configure this format to generate an outbound document in the only Excel format.
--   When you keep the **Format type** attribute blank for the added ER format, you can configure this format to generate an outbound document in any format that is supported by the ER framework.
+- When you select the **Excel** value for the **Format type** attribute for the added ER format, you can configure this format to generate an outbound document only in Excel.
+- When the **Format type** attribute is blank for the added ER format, you can configure this format to generate an outbound document in any format that is supported by the ER framework.
 
-To configure the ER format component of the added ER format configuration, you need to select **Designer** and open the ER format component for editing in the ER Operation designer.
+To configure the ER format component of the configuration,  select **Designer** and open the ER format component for editing in the ER Operation designer.
 
 ![ER configurations page](./media/er-excel-format-add-format.png)
 
@@ -51,7 +51,7 @@ To configure the ER format component of the added ER format configuration, you n
 
 ### Manual entry
 
-You must add an **Excel\\File** component to the configured ER format to generate an outbound document in Excel format. To specify the layout of an outbound document, you must attach to the added **Excel\\File** component an Excel workbook in XLSX format as a template of an outbound document.
+You must add an **Excel\\File** component to the configured ER format to generate an outbound document in Excel. To specify the layout of an outbound document, attach an Excel workbook in XLSX format as the template of an outbound document to the **Excel\\File** component.
 
 ![ER Operation designer page](./media/er-excel-format-add-file-component.png)
 
