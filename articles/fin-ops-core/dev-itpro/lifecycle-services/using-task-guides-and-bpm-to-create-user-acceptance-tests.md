@@ -171,11 +171,7 @@ Developers can use the build and test automation capabilities of **build and tes
 
 Functional power users can automate the execution of their test cases using the **Regression suite automation tool**. For more information, [download the tool](https://www.microsoft.com/download/details.aspx?id=57357) and read the [Regression suite automation tool](../perf-test/rsat/rsat-overview.md).
 
-To learn more about using the Regression suite automation tool, see the following:
-
-- [PART 1: Regression Suite Automation Tool -- Background & Setup](https://infopedia.eventbuilder.com/event?eventid=j5m3w4&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [PART 2: Regression Suite Automation Tool -- Testing Lifecycle Demo](https://infopedia.eventbuilder.com/event?eventid=r5j6c1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [Regression suite automation tool](../perf-test/rsat/rsat-overview.md)
+To learn more about using the Regression suite automation tool, see [Regression suite automation tool](../perf-test/rsat/rsat-overview.md).
  
 For a hands-on lab experience, see [Use the Regression suite automation tool tutorial](../../fin-ops/get-started/hol-use-regression-suite-automation-tool.md).
 
