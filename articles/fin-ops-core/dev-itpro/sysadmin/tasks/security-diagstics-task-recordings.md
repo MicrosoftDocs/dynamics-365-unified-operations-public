@@ -18,8 +18,6 @@ ms.technology:
 
 This topic describes how to analyze and manage security permission requirements based on a task recording.
 
-## To diagnose security for a task recording
-
 1.	A task recording of the user process being analyzed is a prerequisite. To record a business process, see [Task recorder resources](../dev-itpro/user-interface/task-recorder.md)
 2.	Go to **System administration > Security > Security diagnostic for task recording**.
 3.	Open the task recording from its location, i.e. click **Open from this PC** or **Open from Lifecycle Services**.
@@ -32,7 +30,7 @@ This topic describes how to analyze and manage security permission requirements 
 6.	Finding and selecting a **User ID** will update the Missing permissions field. 
     Yes, will be displayed if the user is missing permissions for menu item(s):
 
-   [[Example of Security Menu Item Details](./media/Security-Menu-Item-Details.png)](./media/Security-Menu-Item-Details.png)
+  [[Security Menu Item Details form] (../media/Security-Menu-Item-Details.png)](../media/Security-Menu-Item-Details.png)
 
 7.	Click **Add Reference**, to see a list of the security objects, i.e. Roles, Duties and Privileges that grant the missing permission.
 8.	Select a security object from the list:
