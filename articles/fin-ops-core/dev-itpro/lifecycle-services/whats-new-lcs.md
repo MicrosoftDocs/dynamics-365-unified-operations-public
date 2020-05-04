@@ -46,8 +46,8 @@ The following sections list the features that are included in LCS releases.
 
 | Area | Feature |
 |------|---------|
-| Environment actions | [Lifecycle Services support for dual-write capabilities](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/lifecycle-services-support-dual-write-capabilities) - Preview|
-| Environment actions | [Removing Remote Desktop access to Tier 2-5 Standard Acceptance Test (or sandbox) environments](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/removing-remote-desktop-access-tier-2-5-standard-acceptance-test-or-sandbox-environments) - Preview|
+| Environment actions | [Lifecycle Services support for dual-write capabilities](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/lifecycle-services-support-dual-write-capabilities) - Preview|
+| Environment actions | [Removing Remote Desktop access to Tier 2-5 Standard Acceptance Test (or sandbox) environments](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/removing-remote-desktop-access-tier-2-5-standard-acceptance-test-or-sandbox-environments) - Preview|
 
 ## April 2020 - wave 1
 
