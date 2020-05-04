@@ -5,7 +5,7 @@ title: Use JOIN data sources in ER model mappings to get data from multiple appl
 description: This topic explains how you can use JOIN type data sources in Electronic reporting (ER).
 author: NickSelin
 manager: AnnBe
-ms.date: 05/01/2020
+ms.date: 05/04/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -266,7 +266,7 @@ Review settings of the ER model mapping component. The component is configured t
 
 As you can see from the example in this topic, the **JOIN** data source can be built from several data sources that describe the individual datasets of the records that must eventually be joined. You can configure those data sources by using the built-in ER [FILTER](er-functions-list-filter.md) function. When you configure the data source so that it's called beyond the **JOIN** data source, you can use company ranges as part of the condition for data selection. The initial implementation of the **JOIN** data source doesn't support data sources of this type. For example, when you call a [FILTER](er-functions-list-filter.md)-based data source within the scope of execution of a **JOIN** data source, if the called data source contains company ranges as part of the condition for data selection, an exception occurs.
 
-In Microsoft Dynamics 365 Finance version 10.0.12 (August 2020), you can use company ranges as part of the condition for data selection in [FILTER](er-functions-list-filter.md)-based data sources that are called within the scope of execution of a **JOIN** data source. Because of the limitations of the application [query](../dev-ref/xpp-library-objects#query-object-model) builder, the company ranges are supported only for the first data source of a **JOIN** data source.
+In Microsoft Dynamics 365 Finance version 10.0.12 (August 2020), you can use company ranges as part of the condition for data selection in [FILTER](er-functions-list-filter.md)-based data sources that are called within the scope of execution of a **JOIN** data source. Because of the limitations of the application [query](../dev-ref/xpp-library-objects.md#query-object-model) builder, the company ranges are supported only for the first data source of a **JOIN** data source.
 
 ### Example
 
