@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage leave requests in Teams
-description: This article shows how to request time off in the Dynamics 365 Human Resources app in Microsoft Teams.
+description: This topic shows how to request time off in the Dynamics 365 Human Resources app in Microsoft Teams.
 author: andreabichsel
 manager: AnnBe
 ms.date: 05/04/2020
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [banner](includes/preview-feature.md)]
 
-The Microsoft Dynamics 365 Human Resources app in Microsoft Teams lets you quickly request time off and view your time-off balance information right in Teams. You can interact with a bot to request information. The **Time off** tab provides more detailed information.
+The Microsoft Dynamics 365 Human Resources app in Microsoft Teams lets you quickly request time off and view your time-off balance information right in Microsoft Teams. You can interact with a bot to request information. The **Time off** tab provides more detailed information.
 
 ## Install the app
 
@@ -57,7 +57,7 @@ You can find the Human Resources app in the Teams store.
    ![Human Resources Teams leave app Settings tab](./media/hr-teams-leave-app-settings-tab.png)
 
    > [!NOTE]
-   > If you don’t see a sign-in dialog, check your browser settings to allow pop-ups. 
+   > If you don’t see a sign-in dialog box, check your browser settings to allow pop-ups. 
 
 If you have access to more than one instance of Human Resources, you can select which environment you want to connect to in the **Settings** tab.
  
@@ -68,7 +68,7 @@ After the app installs, a welcome message appears, letting you know the types of
 ![Human Resources Teams leave app bot welcome message](./media/hr-teams-leave-app-bot.png)
  
 > [!NOTE]
-> When first interacting with the bot, you might need to sign in. If you don’t see a sign-in dialog, check your browser settings to allow pop-ups.
+> When first interacting with the bot, you might need to sign in. If you don’t see a sign-in dialog box, check your browser settings to allow pop-ups.
 
 You can ask the bot to:
 
@@ -132,9 +132,6 @@ The **Time off** tab allows you to view:
 
    ![Human Resources Teams leave app edit draft](./media/hr-teams-leave-app-drafts-edit.png)
 
-## See also
+## Additional resources
 
 [Human Resources app in Teams](hr-admin-teams-leave-app.md)
-
-
-
