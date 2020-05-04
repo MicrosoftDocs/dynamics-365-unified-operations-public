@@ -102,7 +102,7 @@ The following set of rules is valid when quantities are processed, and a batch n
 The following example shows the end-to-end flow.
 
 ## Example scenario 1
-
+<!-- KFM: Can this heading identify what this scenario shows? -->
 For this example, demo data must be installed, and you must use the **USMF** demo data company.
 
 ### Set up an inventory reservation hierarchy to allow batch-specific reservation
@@ -233,17 +233,23 @@ If you need to reserve a specific license plate for a batch-tracked item, use th
 
 When the sales order line that uses an order-committed license plate reservation is being processed by warehouse operations, location directives aren't used.
 
-If a warehouse work item consists of lines that equal a complete pallet and have license plate committed quantities, you can optimize the picking process by using a mobile device menu item with the **Handle by license plate** check box turned on. This option allows a warehouse worker to scan a license plate to complete a pick instead of scanning all the items from the work one by one.
+If a warehouse work item consists of lines that equal a complete pallet and have license plate committed quantities, you can optimize the picking process by using a mobile device menu item with **Handle by license plate** set to **Yes**. This option allows a warehouse worker to scan a license plate to complete a pick instead of scanning all the items from the work one by one.
 
 ![Flexible LP reservation hierarchy](media/Handle-by-LP-menu-item.png)
 
 Because **Handle by license plate** functionality doesn't support work that covers several pallets, it's better to have a separate work item for different license plates. To approach this, add **Order-committed license plate id** field as a work header break on the **Work template** page.
 
-## Example scenario 2
+## Example scenario: Set up and process an order-committed license plate reservation
 
-This scenario describes how to set up and process an order-committed license plate reservation. You must use the **USMF** legal entity from the standard **Contoso** demo data.
+This scenario describes how to set up and process an order-committed license plate reservation.
+
+### Enable demo data
+
+This scenario references values and records included in the standard demo data provided for Supply Chain Management. If you'd like to run the exercises using the values provided here, be sure to work on an environment with the demo data installed, and set the legal entity to **USMF** before you begin.
 
 ### Create an inventory reservation hierarchy that allows license plate reservation
+
+Do the following:
 
 1. Go to **Warehouse management \> Setup \> Inventory \> Reservation hierarchy**.
 
@@ -265,6 +271,8 @@ This scenario describes how to set up and process an order-committed license pla
 
 ### Create two released products
 
+Do the following:
+
 1. Go to **Product information management \> Products \> Released products** and create two new released products, for example, **Item1** and **Item2** with the following settings: <!-- KFM Do you means we should set those values as Product number and Item number? -->
 
     - **Storage dimension group** – *Ware*.
@@ -281,6 +289,8 @@ This scenario describes how to set up and process an order-committed license pla
     | Item2     | 24           | FL-002   | LP02          | 5        |
 
 ### Create a sales order and reserve a specific license plate
+
+Do the following:
 
 1. Go to **Sales and marketing \> Sales orders \> All sales orders**.
 
@@ -355,6 +365,9 @@ This scenario describes how to set up and process an order-committed license pla
 
 ### Review and process warehouse work that has order-committed license plate
 <!-- KFM: Something doesn't make sense about this heading -->
+
+Do the following:
+
 1. On the **Sales order lines** FastTab, open the **Warehouse** menu and then select **Work details**.
 
 1. As for the specific batch reservation case, the system doesn't use location directives when creating the work for the sales order with license plate reservation. The order-committed reservation specifies all the inventory dimensions, including the location, so there is no need to use location directives because these inventory dimensions are simply populated in the work. They are displayed on the **Work inventory transactions** page under the **From inventory dimensions** section.
