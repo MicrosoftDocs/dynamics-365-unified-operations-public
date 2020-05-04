@@ -48,7 +48,7 @@ There are a few rules that apply to monitoring messages in IoT Intelligence.
         }
     ```
 
-    This message is not monitored, because the **value** property is missing:
+    This message isn't monitored, because the **value** property is missing:
 
     ```json
         {
@@ -59,7 +59,7 @@ There are a few rules that apply to monitoring messages in IoT Intelligence.
 
 + A Unix milliseconds timestamp property must be present in the IoT hub message.
 
-+ IoT Intelligence ignores properties in the message that are not defined in the scenario configuration. For example, if you define **id**, **timestamp**, and **value** properties, then IoT Intelligence will monitor all of these messages:
++ IoT Intelligence ignores properties in the message that aren't defined in the scenario configuration. For example, if you define **id**, **timestamp**, and **value** properties, then IoT Intelligence will monitor all of these messages:
 
     ```json
         {
@@ -81,7 +81,7 @@ There are a few rules that apply to monitoring messages in IoT Intelligence.
         },
     ```
 
-+ IoT Intelligence silently ignores messages is does not monitor.
++ IoT Intelligence silently ignores messages that it doesn't monitor.
 
 + You can define different schemas for different IoT Intelligence scenarios, or different schemas for different IoT Hub tasks unrelated to IoT Intelligence.
 
