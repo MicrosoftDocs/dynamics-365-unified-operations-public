@@ -142,8 +142,6 @@ If you haven't already done so, enable the feature in feature management and cre
 1. On the **Warehouse** FastTab, set **Code 4** to *Explosive*.
 1. Close the page.
 
-<!-- KFM: How do we enable a product for WMS? Do we have a link for this? -->
-
 #### Create a new transportation mode of delivery
 
 1. Go to **Transportation management > Setup > Carriers > Mode**.
