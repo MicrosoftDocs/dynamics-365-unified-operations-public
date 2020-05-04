@@ -5,7 +5,7 @@ title: Additional location zones
 description: This topic provides an overview of the new location zones that have been added to Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
 manager: AnnBe
-ms.date: 05/04/2020
+ms.date: 05/05/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
