@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Human Resources
 
 The Microsoft Dynamics 365 Human Resources app in Microsoft Teams lets employees quickly request time off and view their time-off balance information in Teams. Employees can interact with a bot to request information, and they can see more detailed information on the **Time off** tab.
 
-![Human Resources Teams leave app bot](./media/hr-admin-teams-leave-app-bot.png)
+![Human Resources Teams leaves app bot](./media/hr-admin-teams-leave-app-bot.png)
 
 ![Human Resources Teams leave app Time off tab](./media/hr-teams-leave-app-timeoff-tab.png)
 
@@ -53,20 +53,31 @@ For information about managing app permissions in Teams, see [Manage app permiss
 | The balance is incorrect when submitting time off for a future date. | Forecasting isn't yet available. The balance displays for the current date. |
 | When reducing the number of hours taken in an existing request, the **Remaining balance** goes down instead of up. | We'll address this known issue in the future. The display is incorrect, but the correct amounts are adjusted upon submission. |
 | The date picker isn't accessible in dark mode. | We'll add dark mode support in the future. |
-| Two **Upcoming time off** cards display for the same dates. | The cards represent individual submissions. We'll continue to take feedback and make adjustments if necessary. |
+| Two **Upcoming time off** cards display for the same dates. | The cards represent individual submissions. We'll continue to take feedback and make adjustments. |
 | Unable to cancel an **In review** request. | This functionality isn't currently supported and will be added in a future release. |
 
-## Privacy notice
+## Privacy information
 
-While using the model-driven apps in Dynamics 365 bot in Microsoft Teams, the user’s text inputs are analyzed for understanding the underlying query/intent. The user’s input such as “Search account Contoso” is routed to one of Microsoft’s Cognitive Service called Language Understanding Intelligent Service (LUIS). Read more about LUIS [here](https://www.luis.ai/). The LUIS service disambiguates or understands the intent of user input (in this case, the intent is to find information) and the target entity (in this case, the intended entity is an account named Contoso). This information is then passed on to Microsoft’s Azure bot framework which interacts with Dynamics 365 data and retrieves the desired information for the user query.
+The Human Resources app in Teams uses the Language Understanding Intelligent Service (LUIS) in Azure Cognitive Services. The app also uses Microsoft’s Azure Bot Service. The following links provide more information about these services and privacy.
 
-By installing and allowing access to use of the bot, you agree to allow the LUIS service and Azure bot framework to process the intent behind the input – which results in an enhanced conversational user experience. The LUIS service and [Azure bot framework](https://azure.microsoft.com/services/bot-service/) may have varying levels of compliance compared to Dynamics 365 Sales apps. While the LUIS service has access to only the user queries and is not designed to be connected to the user’s Dynamics data or account, a user of the Dynamics 365 Sales bot could voluntarily enter a query containing Customer Data, Personal Data or other data and such query content could get sent to the LUIS service and the Azure bot framework.
+| For more information about... | See... |
+| --- | --- |
+| LUIS| [Language Understanding (LUIS)](https://www.luis.ai/home) |
+| User privacy with LUIS | [Export and delete your customer data in Language Understanding (LUIS) in Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/luis/luis-user-privacy) |
+| Data storage in LUIS | [Data storage and removal in Language Understanding (LUIS) Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/luis/luis-concept-data-storage) | 
+| Azure Bot Service | [Azure Bot Service]() | 
+| Azure Cognitive Services | [Cognitive Services](https://azure.microsoft.com/services/cognitive-services/language-understanding-intelligent-service/)<br>[Language Understanding](https://azure.microsoft.com/services/cognitive-services/language-understanding-intelligent-service/) |
+| Azure Cognitive Services privacy | [Azure Cognitive Services](https://azure.microsoft.com/support/legal/cognitive-services-compliance-and-privacy/) |
+| Microsoft privacy | [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement) |
+| Teams privacy	| [For IT professionals: Privacy and security in Microsoft Teams](https://www.microsoft.com/microsoft-365/blog/2020/04/06/it-professionals-privacy-security-microsoft-teams/) |
 
-The content of user’s queries and messages is retained in LUIS system for a maximum of 30 days, encrypted at rest and is not used for training or service improvement. Read more about Cognitive Services [here](https://azure.microsoft.com/services/cognitive-services/language-understanding-intelligent-service/).
+The LUIS service can only access user queries and isn't designed to be connected to the user’s Dynamics data or account. However, a user of the Human Resources bot could voluntarily enter a query containing personal or other data, and that query content could be sent to LUIS and the Azure Bot Service.
 
-To manage admin settings for apps in Microsoft Teams, go to the Microsoft 365 admin center and open Settings > Services & add-ins, then choose Microsoft Teams. If you're signed in as an Office 365 admin, you can access these controls [here](https://admin.microsoft.com/adminportal/home#/Settings/ServicesAndAddIns), including the ability to uninstall.
+To manage admin settings for apps in Microsoft Teams, go to the Microsoft 365 admin center and open **Settings > Services & add-ins**, and then select **Microsoft Teams**. If you're signed in as an Office 365 admin, you can access these controls in the [Office 365 admin portal](https://admin.microsoft.com/adminportal/home#/Settings/ServicesAndAddIns). You can also uninstall from the admin portal.
 
-For more information about privacy in Human Resources, see [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement). For more information about privacy in Teams, see [For IT professionals: Privacy and security in Microsoft Teams](https://www.microsoft.com/microsoft-365/blog/2020/04/06/it-professionals-privacy-security-microsoft-teams/).
+
+
+
 
 ## See also
 
