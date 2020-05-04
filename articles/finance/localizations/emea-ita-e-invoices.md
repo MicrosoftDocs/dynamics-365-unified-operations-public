@@ -119,7 +119,7 @@ Set values are used for output to the xml file blocks (see the table bellow how 
 > [!NOTE 3]
 > Electronnic document property type must have the same code as specified in the table.
 
-### How to use of project categories for stamp duty
+### How to use project categories for stamp duty
 
 1. Set up Project categories with Fee/Expense transaction type (**Project management and accounting > Setup > Categories > Project categories**). Category Id should be equal to the value defined for **Follo** on the Legal entity level. (see the table in this section).
 2. Project category of Fee transaction type can be used only for stamp duty included in the invoice
