@@ -38,7 +38,7 @@ The Microsoft Dynamics 365 Human Resources app in Microsoft Teams lets employees
 
 ![Human Resources Teams leave app bot](./media/hr-admin-teams-leave-app-bot.png)
 
-![Human Resources Teams leave app Time off tab](./media/hr-admin-teams-leave-app-timeoff-tab.png)
+![Human Resources Teams leave app Time off tab](./media/hr-teams-leave-app-timeoff-tab.png)
 
 ## Install and setup
 

@@ -104,7 +104,7 @@ The **Time off** tab allows you to view:
 
 - Draft leave requests
 
-![Human Resources Teams leave app Time off tab](./media/hr-teams-leave-app-bot-timeoff-tab.png)
+![Human Resources Teams leave app Time off tab](./media/hr-teams-leave-app-timeoff-tab.png)
  
 ### Create a new request
 
