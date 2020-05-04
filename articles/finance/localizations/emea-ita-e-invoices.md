@@ -107,16 +107,16 @@ Set values are used for output to the xml file blocks (see the table bellow how 
 | Stamp duty included into invoice total | **BolloPay**. Note. Used only for sales order and free text invoices | **For example**: Stamp duty, included into invoice totals | **CompanyInfo** (Legal entities) | **Legal entity, Electronic document properties**, Value=<Charge code/ Project category, which is used for stamp duties>. **Charges code**: Debit type should be Customer/ Vendor | **ImportoBollo** (DatiBollo block) |
 | Representative | TaxRepPaese, TaxRepPaese, TaxRepCodice, TaxRepDenominazione, TaxRepNome, TaxRepCognome | Any description | **CustTable** (Customers) | **Customer, Electronic document properties**. Value=IT (for TaxRepPaese) For other types, fill in data of representative | **Cognome** (RappresentanteFiscale block) |
 
-> [!NOTE] In the table:
+> [!NOTE 1] In the table:
 
 >  **Customer, Electronic document properties** is **Account receivable > Customers > All customers**, **Customer** tab, **Electronic document properties** button.
 
 > **Legal entity, Electronic document properties** is **Organization administration > Legal entities**, **Electronic document properties** button
 
-> [!NOTE]  
+> [!NOTE 2]  
 > In **Electronic document property types** list page, the **Description** field (left) is filled in automatically when a user is filling **Group description** and **Description** (right) fields.
 
-> [!NOTE]
+> [!NOTE 3]
 > Electronnic document property type must have the same code as specified in the table.
 
 ### How to use of project categories for stamp duty
