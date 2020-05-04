@@ -108,7 +108,9 @@ Set values are used for output to the xml file blocks (see the table bellow how 
 | Representative | TaxRepPaese, TaxRepPaese, TaxRepCodice, TaxRepDenominazione, TaxRepNome, TaxRepCognome | Any description | **CustTable** (Customers) | **Customer, Electronic document properties**. Value=IT (for TaxRepPaese) For other types, fill in data of representative | **Cognome** (RappresentanteFiscale block) |
 
 > [!NOTE] In the table:
-> **Customer, Electronic document properties** is **Account receivable > Customers > All customers**, **Customer** tab, **Electronic document properties** button.
+
+>  **Customer, Electronic document properties** is **Account receivable > Customers > All customers**, **Customer** tab, **Electronic document properties** button.
+
 > **Legal entity, Electronic document properties** is **Organization administration > Legal entities**, **Electronic document properties** button
 
 > [!NOTE]  
