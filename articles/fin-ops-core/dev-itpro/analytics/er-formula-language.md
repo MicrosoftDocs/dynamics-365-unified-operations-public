@@ -5,7 +5,7 @@ title: Electronic reporting formula language
 description: This topic provides information about how to use the formula language in Electronic reporting (ER).
 author: NickSelin
 manager: kfend
-ms.date: 12/18/2019
+ms.date: 05/04/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -135,7 +135,7 @@ The remaining part of the absolute path is also shown in the [ER formula editor]
 
 ![Remaining part of the absolute path on the ER formula designer page](./media/ER-FormulaLanguage-RelativePath2.png)
 
-For more information about this feature, see [Use a relative path in data bindings of ER models and formats](relative-path-data-bindings-er-models-format.md).
+For more information, see [Use a relative path in data bindings of ER models and formats](relative-path-data-bindings-er-models-format.md).
 
 ## <a name="Functions">Functions</a>
 
