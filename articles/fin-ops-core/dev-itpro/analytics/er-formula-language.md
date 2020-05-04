@@ -135,6 +135,8 @@ The remaining part of the absolute path is also shown in the [ER formula editor]
 
 ![Remaining part of the absolute path on the ER formula designer page](./media/ER-FormulaLanguage-RelativePath2.png)
 
+For more information about this feature, see [Use a relative path in data bindings of ER models and formats](relative-path-data-bindings-er-models-format.md).
+
 ## <a name="Functions">Functions</a>
 
 ER built-in functions can be used in ER expressions. All data sources of the expression context (that is, the current ER model mapping or ER format) can be used as parameters of calling functions, in accordance with the list of arguments for calling functions. Constants can also be used as parameters of calling functions. For example, the current ER model mapping contains the **InvoiceTransactions** data source, and this data source returns a list of records. The **InvoiceTransactions** record structure contains the **AmountDebit** and **AmountCredit** fields, and both these fields return numeric values. Therefore, to calculate the invoiced amount, you can design the following expression that uses the built-in ER rounding function: `ROUND (InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit, 2)`.
