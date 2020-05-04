@@ -38,6 +38,8 @@ The scenarios provided in this topic illustrate how to set up default and custom
 
 ## Enable the shipment consolidation policies feature
 
+<!-- KFM Add IMPORTANT note here about not doing this in the upgrade scenario -->
+
 Before you can use this feature, it must be enabled on on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the feature status and enable it if needed. Here, the feature is listed as:
 
 - **Module** - *Warehouse management*
@@ -79,10 +81,10 @@ To set up default shipment consolidation policies on an environment where wareho
 1. Go to **Warehouse management \> Setup \> Release to warehouse \> Shipment consolidation policies**. (You may need to refresh your browser to see this new menu item right after enabling the feature.)
 
 1. Select **Create default setup** on the action pane to create the following:
-    - A **CrossOrder** policy for the **Policy type** *Sales orders*.
+    - A **CrossOrder** policy for the **Policy type** *Sales orders* (provided you have at least one warehouse enabled to use the legacy consolidation feature).
     - A **Default** policy for the **Policy type** *Sales orders*.
     - A **Default** policy for the **Policy type** *Transfer issue*.
-    <!-- KFM: The type appears to be "Transfer issue" not "transfer order"--am I in the right place? I also see a "CrossOrder" policy for transfer issues/orders here. -->
+    - A **CrossOrder** policy for the **Policy type** *Transfer issue* (provided you have at least one warehouse enabled to use the legacy consolidation feature).
 
     > [!NOTE]
     > - The **CrossOrder** policy takes the same fields into consideration as the legacy logic did, excluding the order number (to consolidate lines into shipments based on warehouse, transportation mode of delivery, address, and so on).
@@ -132,14 +134,14 @@ If you haven't already done so, enable the feature in feature management and cre
         - **Filter title** - *Code 4*
 
 1. Go to **Product information management \> Products \> Released products**.
-1. Open the product with **Item number** *A0001*. (You must select a product that is enabled for advanced warehouse (WHS) processes, and this one is pre-enabled in the **USMF** demo data)
+1. Open the product with **Item number** *A0001*. (You must select a product that is enabled for advanced warehouse (WMS) processes, and this one is pre-enabled in the **USMF** demo data)
 1. On the **Warehouse** FastTab, set **Code 4** to *Flammable*.
 1. Close the page.
 1. Open the product with **Item number** *A0002*.
 1. On the **Warehouse** FastTab, set **Code 4** to *Explosive*.
 1. Close the page.
 
-<!-- KFM: How do we enable a product for WHS? Do we have a link for this? -->
+<!-- KFM: How do we enable a product for WMS? Do we have a link for this? -->
 
 #### Create a new transportation mode of delivery
 

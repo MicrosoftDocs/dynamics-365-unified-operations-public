@@ -54,7 +54,7 @@ As mentioned in [Configure shipment consolidation policies](configure-shipment-c
 
 ## Create the sales orders for this scenario
 
-Start by creating a collection of sales orders that you can work with. You must work with a warehouse that is enabled for advanced warehouse (WHS) processes, and the same warehouse must be used for each of the following sets of orders unless another warehouse is explicitly mentioned. <!-- KFM: The original didn't mention warehouses. Should I remove that again? -->
+Start by creating a collection of sales orders that you can work with. You must work with a warehouse that is enabled for advanced warehouse (WMS) processes, and the same warehouse must be used for each of the following sets of orders unless another warehouse is explicitly mentioned. <!-- KFM: The original didn't mention warehouses. Should I remove that again? -->
 
 Go to **Accounts receivable \> Orders \> All sales orders** and create a collection of sales orders with the settings described in the following subsections.
 
@@ -62,7 +62,7 @@ Go to **Accounts receivable \> Orders \> All sales orders** and create a collect
 
 #### Sales orders 1-1 and 1-2
 
-Create two identical sales orders with the following settings: <!-- KFM: These were described separately but were otherwise identical, so I combined them. Was it the intention that they be identical? -->
+Create two identical sales orders with the following settings:
 
 - **Customer account** - *US-001*
 - **Mode of delivery** - *Airwa-Air*

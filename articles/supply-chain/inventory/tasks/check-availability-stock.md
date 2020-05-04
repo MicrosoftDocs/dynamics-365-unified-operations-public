@@ -38,7 +38,7 @@ This procedure shows you how to check on-hand and physical on-hand inventory for
 2. Select the **Item number** row. To query the on-hand inventory by item number, select the row where the Table is set to **On-hand inventory** and Field is set to **Item** number.
 3. In the **Criteria** field, select the item you want to query. If you're using the USMF demo data company, you can select 'M9201'.  
 4. Click **OK**.
-5. On the **Action pane**, click **Dimensions**. The **Dimensions** tab allows you select how much detail you want to see about your on-hand inventory. If you need data related to reservation, you must display all inventory dimensions for the items that use advanced warehouse (WHS) processes.
+5. On the **Action pane**, click **Dimensions**. The **Dimensions** tab allows you select how much detail you want to see about your on-hand inventory. If you need data related to reservation, you must display all inventory dimensions for the items that use advanced warehouse (WMS) processes.
 6. Click **OK**.
 7. On the **Action Pane**, click **Related information**. If you don’t see this option, you may need to click on the Ellipsis button (…) to see additional action pane options.
 8. Click **Supply overview**. The **Supply overview** tab provides supply information for a specific item, such as the quantity on-hand, the lead time, and vendor information.  

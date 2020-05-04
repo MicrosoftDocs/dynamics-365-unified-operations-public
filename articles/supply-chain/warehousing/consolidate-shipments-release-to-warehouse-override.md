@@ -30,8 +30,6 @@ ms.dyn365.ops.version: 10.0.6
 
 # Consolidate shipments when the shipment consolidation policy is overridden from the Release to warehouse page
 
-<!-- KFM: Can we shorten this title somehow? E.g., "Override a shipment consolidation policy from the Release to warehouse page"-->
-
 [!include [banner](../includes/banner.md)]
 
 This topic provides a scenario where one or more sales lines must be released to warehouse manually from the **Release to warehouse** page, and there is a need to override the shipment consolidation policy defined by the system before the release (for example, to consolidate with open shipments for an order that isn't usually consolidated with open shipments).

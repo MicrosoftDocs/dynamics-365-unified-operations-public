@@ -47,15 +47,15 @@ The scenario described here assumes that you have already enabled the feature, d
 
 ## Create the sales orders for this scenario
 
-Start by creating a collection of sales orders that you can work with. You must work with a warehouse that is enabled for advanced warehouse (WHS) processes, and the same warehouse must be used for each of the following sets of orders unless another warehouse is explicitly mentioned. <!-- KFM: The original didn't mention warehouses. Should I remove that again? -->
+Start by creating a collection of sales orders that you can work with. You must work with a warehouse that is enabled for advanced warehouse (WMS) processes, and the same warehouse must be used for each of the following sets of orders unless another warehouse is explicitly mentioned. <!-- KFM: The original didn't mention warehouses. Should I remove that again? >>> Add specific warehouse everywhere. Use Warehouse 24. -->
 
 Go to **Accounts receivable \> Orders \> All sales orders** and create a collection of sales orders with the settings described in the following subsections.
 
-<!-- KFM: Should users set a **Warehouse** for each of the sales orders created here? If so, we should specify that for each of them. We should be able to specify a particular warehouse that is already set up correctly in the standard demo data -->
+<!-- KFM: Should users set a **Warehouse** for each of the sales orders created here? If so, we should specify that for each of them. We should be able to specify a particular warehouse that is already set up correctly in the standard demo data >>> YES -->
 
 <!-- KFM: Throughout this section we refer to item A0001 and A0002 as having no Code 4, while items D0001 and D0002 have Code 4 values. However, on my demo setup, I could only set Code 4 for items A0001 and A0002. The setting is disabled for D0001 and D0002. Therefore, the "Configure shipment consolidation policies" topic describes making this setting for items A0001 and A0002 (not D000x). We need to align this scenario with that one and with the actual USMF demo data people will have. (Or we need to add steps here for how to enable this setting for the D000x items.) -->
 
-<!-- KFM: We are never reserving the inventory for the order lines in this topic, but we do in one of the others. Should we also do that here? -->
+<!-- KFM: We are never reserving the inventory for the order lines in this topic, but we do in one of the others. Should we also do that here? >>> NO, not needed here. -->
 
 ### Create order set 1
 
@@ -123,7 +123,8 @@ Create a sales order with the following settings:
   - **Quantity** - *1.00*
   - **Mode of delivery** - *Airwa-Air*
 
-<!-- KFM: This order is identical to the two created in set 2. Is that intentional? If so, why not just create three orders in set 2 and drop this one? -->
+> [!NOTE]
+> Although this order is the same as the two you created for order set 2, it is listed as its own order set because you will release it separately later in this scenario.
 
 ### Create order set 4
 
@@ -228,10 +229,10 @@ For each set of sales orders you created earlier, you'll work through the three 
 1. Set **Quantity to release** to *All*.
 1. Expand the **Records to include** FastTab and select **Filter** to open the query pane.
 1. On the **Range** tab, select **Add** to add a new row to the table and make the following settings for it:
-    - **Table** - <!-- KFM: What should this be? -->
-    - **Derived table** - <!-- KFM: What should this be? -->
-    - **Field** - *Sales order* <!-- KFM: Assuming this is table "Sales order", I see two different fields with this name here. Which one should I pick? -->
-    - **Criteria** -Enter sales order numbers from the desired order set. <!-- KFM: Which ones, all of them? Should we have taken note of the sales order numbers as we made them? Comma-separated? -->
+    - **Table** - *Sales order*
+    - **Derived table** - *Sales order*
+    - **Field** - *Sales order*
+    - **Criteria** - Enter sales order numbers from the desired order set. <!-- KFM:  Comma-separated -->
 1. Select **OK** to save your query.
 1. Select **OK** to launch the *automatic release to warehouse* procedure.
 

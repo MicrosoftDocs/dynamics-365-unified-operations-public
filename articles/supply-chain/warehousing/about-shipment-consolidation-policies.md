@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.3
 
 # About shipment consolidation policies
 
-The shipment consolidation process using shipment consolidation policies allows for automated shipment consolidation during automated and manual release to warehouse. Before the introduction of this functionality, automated consolidation was available with hardcoded fields and based on the **Consolidate shipment at release to warehouse** field set on a warehouse.
+The shipment consolidation process using shipment consolidation policies allows for automated shipment consolidation during automated and manual release to warehouse. Before the introduction of this functionality, automated consolidation was only available with hard-coded fields and based on the **Consolidate shipment at release to warehouse** field set on a warehouse.
 
 Shipment consolidation policies are used at the following instances of functionality:
 
@@ -43,17 +43,15 @@ Shipment consolidation policies are used at the following instances of functiona
 
 Before shipment consolidation policies were introduced, the consolidation function existed as a setting at the warehouse level, where the application treated orders by all customers from a single warehouse as having the same consolidation requirements. Shipment consolidation policies add support for scenarios where different organizations can have different requirements for shipment consolidation.
 
-The shipment consolidation policies follow a pattern (for example, of the wave templates) where queries are used to identify which policy applies, and then a modifiable set of fields drives how to group the load lines on the shipment level. In addition, a **Consolidate with existing shipments** setting has been added to each policy, which is able to find all open shipments that match the policy&mdash;in this case, an existing shipment/load will be selected instead of creating a new one.
+The shipment consolidation policies follow a pattern (similar to wave templates) where queries are used to identify which policy applies, and then a modifiable set of fields drives how to group the load lines on the shipment level. In addition, a **Consolidate with existing shipments** setting has been added to each policy, which is able to find all open shipments that match the policy&mdash;in this case, an existing shipment/load will be selected instead of creating a new one.
 
-The **Consolidate shipment at release to warehouse** setting previously available on the **Warehouses** setup page is now hidden. To help you transition to the new shipment consolidation feature, we've added a function on the **Shipment consolidation policies** page to create a default policy, which automatically includes the old setting for existing warehouses. After that, the **Consolidate shipment at release to warehouse** setting on the **Warehouses** setup page will no longer be taken into account.
+When shipment consolidation policies are enabled, the **Consolidate shipment at release to warehouse** setting previously available on the **Warehouses** setup page is hidden. To help you transition to the new shipment consolidation feature, we've added a function on the **Shipment consolidation policies** page to create a default policy, which automatically includes the old setting for existing warehouses. After that, the **Consolidate shipment at release to warehouse** setting on the **Warehouses** setup page will no longer be taken into account.
 
 Use the **Release to warehouse** page to manually override the applicable consolidation policy in the same way that you can override fulfillment policies.
 
 Use the **Release > Release to warehouse** menu item on the **Load planning workbench** page to build outbound loads based on sales and transfer order lines before releasing to warehouse and use the same consolidation logic introduced with the consolidation of shipment policies.  
 
 Use the **Shipment consolidation workbench** page to consolidate existing shipments that are not yet confirmed after they've been released to the warehouse. This functionality caters for  scenarios where the automated release process, with its own shipment consolidation, is run multiple times a day&mdash;but prior completing the shipment to carriers during the confirmation process, potential additional consolidations are identified manually. This functionality allows you to consolidate the outbound shipments created from sales or transfer order lines at any time after releasing to warehouse and before confirming the shipment. The page works similarly to the load building workbench, where you can assess multiple shipments at the same time and can choose to assign a non-consolidated order to a specific shipment. You can apply shipment consolidation templates to recurrently assess proposed consolidations and confirm them. Some rules are implemented to prevent unauthorized consolidation and to warn  of possible errors.
-
-<!-- KFM: What is the name of this feature? In feature management, it's "Consolidate shipment", but that's hard to tell from the existing feature. Maybe "Shipment consolidation policies"?  -->
 
 ## Overview of new functionality
 
@@ -122,8 +120,6 @@ The list of consolidation fields (fields that will be cleared when they have dif
 ## Comparison of functionality
 
 The following table summarizes how shipment consolidation works when you don't use shipment consolidation policies compared to when you do.
-
-<!-- KFM there were issues with this table (caused by extra carriage returns, I think). I tried to sort it out, but please confirm. -->
 
 | Without shipment consolidation policies | With shipment consolidation policies |
 |---|----|
