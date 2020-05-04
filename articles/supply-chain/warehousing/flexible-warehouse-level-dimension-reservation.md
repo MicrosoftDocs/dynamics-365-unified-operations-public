@@ -209,6 +209,13 @@ In this scenario, a company uses warehouse management and work processing, and h
 
 - If the license plate isn't already assigned to a sales order line, the warehouse personnel can choose a license plate during picking work, after sales order registration and reservation are finished.
 
+### Enable flexible license plate reservation
+
+Before you can use this feature, it must be enabled on on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the feature status and enable it if needed. You must enable two features, in the following order:
+
+1. First enable the feature with **Feature name** *Flexible warehouse-level dimension reservation*.
+1. Then enable the feature with **Feature name** *Flexible order-committed license plate reservation*.
+
 ### Reserve a specific license plate on the sales order
 
 To enable license plate reservation on an order, you must select the **Allow reservation on demand order** check box for the **License plate** level on the **Inventory reservation hierarchies** page for the hierarchy that is associated with the relevant item.
@@ -271,11 +278,22 @@ Do the following:
 
 Do the following:
 
-1. Go to **Product information management \> Products \> Released products** and create two new released products, for example, **Item1** and **Item2** with the following settings: <!-- KFM Do you means we should set those values as Product number and Item number? -->
+1. Go to **Product information management \> Products \> Released products**.
 
-    - **Storage dimension group** – *Ware*.
-    - **Tracking dimension group** – *None*.
-    - **Reservation hierarchy** – *FlexibleLP*.
+1. Select **New** on the action bar.
+
+1. The **New released product** pane opens. Enter the following settings:
+    - **Product number** - *Item1*
+    - **Item number** - *Item1*
+    - **Item model group** - *FIFO*
+    - **Item group** - *Audio*
+    - **Storage dimension group** – *Ware*
+    - **Tracking dimension group** – *None*
+    - **Reservation hierarchy** – *FlexibleLP*
+
+1. Select **OK** to create the product and close the pane. The new product opens. In the **Warehouse** FastTab, set **Unit sequence group ID** to *ea*.
+
+1. Repeat the previous steps to create a second new product with the same settings, except set the **Product number** and **Item number** to *Item2*.
 
 1. Open the **Manage inventory** tab on the action pane and select **View > On-hand inventory**, and then select **Quantity adjustment**. Adjust the on-hand inventory of the new items as specified in the following table: <!-- KFM: On-hand inventory was disabled when I tried this -->
 
@@ -300,7 +318,7 @@ Do the following:
 
 1. Select **OK**.
 
-1. On the **Sales order lines** FastTab, select **Add line**. <!-- KFM: I can't add this. It says "Item model group, Item group, Unit sequence group ID have not been specified for item Item1. Go to the Released product details form to complete the setup." I edit text, but couldn't confirm anything after this step. -->
+1. On the **Sales order lines** FastTab, select **Add line**.
 
 1. In the **Item number** field, enter **Item1**.
 
