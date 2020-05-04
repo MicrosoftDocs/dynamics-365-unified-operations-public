@@ -94,8 +94,6 @@
             href: get-started/whats-new-commerce-10-0-10.md
           - name: Commerce 10.0.9 (April 2020)
             href: get-started/whats-new-10-0-9.md
-          - name: Commerce 10.0.8 (February 2020)
-            href: get-started/whats-new-10-0-8.md
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features in Finance and Operations
@@ -1004,7 +1002,7 @@
         href: store-performance-information.md
       - name: Set up Recency, Frequency, and Monetary (RFM) analysis
         href: set-up-rfm-analysis.md
-    - name: Localization and regulatory features
+    - name: Globalization
       items:
       - name: Fiscal integration overview for Commerce channel
         href: localizations/fiscal-integration-for-retail-channel.md
@@ -1016,18 +1014,26 @@
           href: localizations/emea-aut-fi-sample.md
       - name: Eastern Europe
         items: 
-        - name: Advance invoices for Commerce for Eastern Europe
-          href: localizations/emea-eeu-advance-invoices-for-retail.md
-        - name: Petty cash management for Commerce for Eastern Europe
-          href: localizations/emea-eeu-petty-cash-for-retail.md
-        - name: Customer invoices and return sales orders in Eastern European countries
-          href: localizations/emea-eeu-retail-invoices.md
-        - name: Deployment guidelines for cash registers for Czech Republic, Hungary, and Poland
-          href: localizations/emea-eeu-deployment.md
-        - name: Fiscal printer integration sample for Poland
-          href: localizations/emea-pol-fpi-sample.md
-        - name: Fiscal registration service integration sample for Czech Republic
-          href: localizations/emea-cze-fi-sample.md
+        - name: Common
+          items:
+          - name: Advance invoices for Commerce for Eastern Europe
+            href: localizations/emea-eeu-advance-invoices-for-retail.md
+          - name: Petty cash management for Commerce for Eastern Europe
+            href: localizations/emea-eeu-petty-cash-for-retail.md
+          - name: Customer invoices and return sales orders in Eastern European countries
+            href: localizations/emea-eeu-retail-invoices.md
+          - name: Deployment guidelines for cash registers for Czech Republic, Hungary, and Poland
+            href: localizations/emea-eeu-deployment.md
+        - name: Czech Republic
+          items:
+          - name: Fiscal registration service integration sample for Czech Republic
+            href: localizations/emea-cze-fi-sample.md
+        - name: Poland
+          items:
+          - name: Fiscal printer integration sample for Poland
+            href: localizations/emea-pol-fpi-sample.md
+          - name: Customer information management for Poland
+            href: localizations/emea-pol-customer-information.md
       - name: France
         items:
         - name: Cash register functionality
@@ -1046,6 +1052,8 @@
         items:
         - name: Fiscal printer integration sample for Italy
           href: localizations/emea-ita-fpi-sample.md
+        - name: Customer information management for Italy
+          href: localizations/emea-ita-customer-information.md 
       - name: Mexico
         items:
         - name: Global CFDI e-invoices for Mexico
@@ -1060,7 +1068,9 @@
         items:
         - name: Cash register functionality
           href: localizations/emea-swe-cash-registers.md
-        - name: Sample for POS integration with control units
+        - name: Control unit integration sample for Sweden
+          href: localizations/emea-swe-fi-sample.md
+        - name: Sample for Retail POS integration with control units (legacy)
           href: localizations/retail-sdk-control-unit-sample.md
     - name: Reporting and Power BI integrations
       items:
