@@ -104,7 +104,7 @@ Configure your connection to the test environment.
 + **SOAP Hostname** – The SOAP hostname of the test environment. Typically, you must add a **soap** suffix to the hostname. For example, if your hostname is myhost.cloudax.dynamics.com, use myhost**soap**.cloudax.dynamics.com as the SOAP hostname.
 
     + If you don't know the SOAP hostname of your test environment, you can find it in the web.config file for the AOS server in Infrastructure.SoapServicesUrl.
-    + If your test environment is a user acceptance testing (UAT) or higher-tier sandbox environment that has no Remote Desktop access (because it was deployed [self-service](../../deployment/infrastructure-stack.md)), the SOAP hostname matches the hostname.
+    + If your test environment is a user acceptance testing (UAT) or higher-tier sandbox environment that has no Remote Desktop access, the SOAP hostname matches the hostname.
 
 + **Admin User Name** – The email address of an admin user in the test environment.
 + **Thumbprint** – The thumbprint of the authentication certificate that you're using.
@@ -173,7 +173,7 @@ After creating the certificate, configure AOS to trust the test automation conne
 
 #### If you have no Remote Desktop access to the server
 
-If your test environment doesn't allow for Remote Desktop access, follow these steps to configure the environment to trust the RSAT connection. An environment might not allow for Remote Desktop access if, for example, it's a UAT or higher-tier sandbox environment deployed [self-service](../../deployment/infrastructure-stack.md).
+If your test environment doesn't allow for Remote Desktop access, follow these steps to configure the environment to trust the RSAT connection.
 
 1. Create the RSAT authentication certificate by using the **New** button in the RSAT settings dialog box, as described earlier in this topic.
 2. Open a support request, and provide the following information to the support engineer:
