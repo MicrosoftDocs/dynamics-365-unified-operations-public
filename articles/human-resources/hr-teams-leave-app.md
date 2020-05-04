@@ -59,9 +59,7 @@ You can find the Human Resources app in the Teams store.
    > [!NOTE]
    > If you don’t see a sign-in dialog, check your browser settings to allow pop-ups. 
 
-5. If you have access to more than one instance of Human Resources, you can select which environment you want to connect to. If you only have access to one environment, it will display automatically for you.
-
-   ![Human Resources Teams leave app sign in](./media/hr-teams-leave-app-sign-in.png)
+If you have access to more than one instance of Human Resources, you can select which environment you want to connect to in the **Settings** tab.
  
 ## Use the bot
 
@@ -130,7 +128,7 @@ The **Time off** tab allows you to view:
 
 2. Select the pencil to edit the request, or select the trash can to delete the request.
 
-3. Make any necessary changes. When you're done entering information, type **Submit** to submit it for approval. You can also type **Save as draft** to come back to it later.
+3. Make any necessary changes. When you're done entering information, type **Submit** to submit it for approval. You can also select **Save as draft** to come back to it later.
 
    ![Human Resources Teams leave app edit draft](./media/hr-teams-leave-app-drafts-edit.png)
 

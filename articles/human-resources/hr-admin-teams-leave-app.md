@@ -42,7 +42,7 @@ The Microsoft Dynamics 365 Human Resources app in Microsoft Teams lets employees
 
 ## Install and setup
 
-You can find the Human Resources app in the Teams store. Your users will need to use their Human Resources credentials to sign into the app. For information about installing the Teams app, see [Manage leave requests in Teams](hr-teams-leave-app.md).
+You can find the Human Resources app in the Teams store. For information about installing the Teams app, see [Manage leave requests in Teams](hr-teams-leave-app.md).
 
 For information about managing app permissions in Teams, see [Manage app permission policies in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-app-permission-policies).
 
