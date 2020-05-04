@@ -48,30 +48,30 @@ As with (for example) the *Report as finished* mobile device menu item process, 
 
 ### Work policies with work creation
 
-Registration of physical on-hand where either the same warehouse worker immediately process a put-away work process following the inbound receiving (*License plate receiving and put away*) or where the registration and put away process gets handled as two different warehouse operations (License plate receiving) following the processing of the put-away work by using the existing work process via another mobile device menu item.
+Registration of physical on-hand inventory where either the same warehouse worker immediately processes a put-away work process following the inbound receiving (*License plate receiving and put away*), or the registration and put-away process gets handled as two different warehouse operations (License plate receiving) following the processing of the put-away work by using the existing work process via another mobile device menu item.
 
 ### Work policies without work creation
 
-You can use the license plate receiving process without creating work. By defining **Work policies** with a **Work order type** of *Transfer receipt* and/or *Purchase orders*, and using the **Process** for *License plate receiving (and put away)*, the following two Warehousing app processes won't create work, but only register the inbound physical inventory on the license plate at the inbound receiving dock:
+You can use the license plate receiving process without creating work. If you define work policies that have a work order type of *Transfer receipt* and/or *Purchase orders*, and you use the process for *License plate receiving (and put away)*, the following two Warehousing mobile app processes won't create work. Instead, they will just register the inbound physical inventory on the license plate at the inbound receiving dock.
 
 - *License plate receiving*
 - *License plate receiving and put away*
 
 > [!NOTE]
 > - You must define at least one location for a work policy in the **Inventory locations** section. You can't specify the same location for multiple work policies.
-> - The warehousing mobile device menu item option **Print label** won't print a license plate label without work creation.
+> - The **Print label** option for Warehousing mobile device menu items won't print a license plate label without work creation.
 
-To make this functionality available on your system, the *License plate receiving enhancements* feature must be enabled in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+To make this functionality available on your system, you must turn on the *License plate receiving enhancements* feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-### Receive inventory on a location which does not track license plates
+### Receive inventory on a location that doesn't track license plates
 
-It is possible to use a warehouse location that is assigned to a **Location profile** without **Use license plate tracking** enabled and thereby directly register the inventory on-hand on a location when receiving inventory without work creation.
+It's possible to use a warehouse location that is assigned to a location profile even when **Use license plate tracking** isn't turned on. Therefore, when you receive inventory, you can directly register the on-hand inventory on a location without work creation.
 
-## Add mobile device menu items for each receiving location within a warehouse
+## Add mobile device menu items for each receiving location in a warehouse
 
-The *License plate receiving enhancements* feature lets you receive at any location within a warehouse by adding location-specific license plate receiving (and put away) menu items to the warehousing mobile app. Previously, the system only supported receiving at the default location defined for each warehouse, but with this feature, mobile device menu items for license plate receiving (and put away) now provide the **Use default data** option (already available for some other types of menu items), which lets you choose a custom **To location** for each menu item.
+The *License plate receiving enhancements* feature lets you receive at any location in a warehouse by adding location-specific license plate receiving (and put away) menu items to the Warehousing mobile app. Previously, the system supported receiving only at the default location that is defined for each warehouse. However, when this feature is turned on, mobile device menu items for license plate receiving (and put away) now provide the **Use default data** option, which lets you select a custom "to" location for each menu item. (This option was already available for some other types of menu items.)
 
-To make this functionality available on your system, the *License plate receiving enhancements* feature must be enabled in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+To make this functionality available on your system, you must turn on the *License plate receiving enhancements* feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Show or skip the receiving summary page
 
@@ -82,15 +82,15 @@ When this feature is turned on, mobile device menu items for license plate recei
 - **Display a detailed summary** – During license plate receiving, workers will see an extra page that shows the full ASN information.
 - **Skip the summary** – Workers won't see the full ASN information. Warehouse workers also won't be able to set a disposition code or add exceptions during the receiving process.
 
-To make this functionality available on your system, the *Control whether to display a receiving summary page on mobile devices* feature must be enabled in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+To make this functionality available on your system, you must turn on the *Control whether to display a receiving summary page on mobile devices* feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-## Prevent transfer order shipped license plates from being used at warehouses other than the destination warehouse
+## Prevent transfer order–shipped license plates from being used at warehouses other than the destination warehouse
 
 A license plate receiving process can't be used if an ASN contains a license plate ID that already exists and has physical on-hand data at a warehouse location other than the warehouse location where the license plate registration occurs.
 
 For transfer order scenarios where the transit warehouse doesn't track license plates (and therefore also doesn't track physical on-hand inventory per license plate), you can use the *Prevent transfer order shipped license plates from being used on other warehouses than the destination warehouse* feature to prevent physical on-hand updates of license plates that are in transit.
 
-To make this functionality available on your system, the *Prevent transfer order shipped license plates from being used on other warehouses than the destination warehouse* feature must be enabled in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+To make this functionality available on your system, you must turn on the *Prevent transfer order shipped license plates from being used on other warehouses than the destination warehouse* feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 To manage the functionality when this feature is available, follow these steps.
 
@@ -102,7 +102,7 @@ To manage the functionality when this feature is available, follow these steps.
 
 ## More information
 
-For more information about *Mobile device menu items*, see [Set up mobile devices for warehouse work](configure-mobile-devices-warehouse.md).
+For more information about mobile device menu items, see [Set up mobile devices for warehouse work](configure-mobile-devices-warehouse.md).
 
 For more information about the *Report as finished* production scenario, see the [Warehouse work policies overview](warehouse-work-policies.md).
 
