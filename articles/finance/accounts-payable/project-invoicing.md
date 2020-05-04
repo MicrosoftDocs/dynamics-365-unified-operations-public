@@ -118,6 +118,9 @@ When you order an item from a vendor and assign the item to a project, the line 
 -   Invoice the project's customer for the item: Set the line property for the item to a chargeable value on the purchase order, and then invoice the customer by using the correct project invoicing method.
 -   Don’t invoice the project's customer for the item: Don’t select the **Chargeable** line property on the purchase order line for the item. You can then invoice the purchase order, and no further action is required.
 
+> [!NOTE] 
+> Release retention lines are non-chargeable by default. This means the ability to create an invoice proposal for the released retention is not enabled.
+
 ## Credit notes
 When an amount on a customer invoice has a negative value, the invoice is classified as a credit note. When the document is printed, it has the title "Credit note." 
 
