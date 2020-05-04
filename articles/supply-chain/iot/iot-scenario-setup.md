@@ -120,7 +120,7 @@ The scenario setup is complete. IoT Intelligence will automatically start proces
 
 ## Configure the **Product quality** scenario in Supply Chain Management
 
-The **Product quality** scenario generates a notification if an attribute of an item is outside a specified range. For example, a sensor could send the weight of each item to IoT Hub. In Supply Chain Management, a notification would be generated if the item was too heavy or too light. 
+The **Product quality** scenario generates a notification if an attribute of an item is outside a specified range. For example, a sensor could send the weight of each item to IoT Hub. In Supply Chain Management, a notification would be generated if the item was too heavy or too light.
 
 The scenario has these dependencies:
 
