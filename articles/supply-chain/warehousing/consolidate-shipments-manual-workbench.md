@@ -54,7 +54,7 @@ As mentioned in [Configure shipment consolidation policies](configure-shipment-c
 
 ## Create the sales orders for this scenario
 
-Start by creating a collection of sales orders that you can work with. You must work with a warehouse that is enabled for advanced warehouse (WMS) processes, and the same warehouse must be used for each of the following sets of orders unless another warehouse is explicitly mentioned. <!-- KFM: The original didn't mention warehouses. Should I remove that again? -->
+Start by creating a collection of sales orders that you can work with. You must work with a warehouse that is enabled for advanced warehouse (WMS) processes, and the same warehouse must be used for each of the following sets of orders unless another warehouse is explicitly mentioned.
 
 Go to **Accounts receivable \> Orders \> All sales orders** and create a collection of sales orders with the settings described in the following subsections.
 
@@ -94,11 +94,11 @@ Create two identical sales orders with the following settings:
 - **Customer account** - *US-002*
 - **Mode of delivery** - *Airwa-Air*
 - Add an order line with the following settings:
-  - **Item number** - *D0001* (an item with its **Code 4** filter set to *Flammable*)
+  - **Item number** - *M9200* (an item with its **Code 4** filter set to *Flammable*)
   - **Quantity** - *1.00*
   - Select **Inventory \> Reservation** and then select **Reserve lot** on the action pane to reserve the order line.
 - Add a second order line with the following settings:
-  - **Item number** - *D0002* (an item with its **Code 4** filter set to *Explosive*)
+  - **Item number** - *M9201* (an item with its **Code 4** filter set to *Explosive*)
   - **Quantity** - *1.00*
   - **Mode of delivery** - *Airwa-Air*
   - Select **Inventory \> Reservation** and then select **Reserve lot** on the action pane to reserve the order line.
@@ -194,7 +194,7 @@ Do the following to consolidate shipments using the shipment consolidation workb
 1. The query editor pane opens. On the **Range** tab, select **Add** to add a new row to the table and make the following settings for it:
     - **Table** - *Sales orders*
     - **Field** - *Sales order*
-    - **Criteria** - Enter the sales order numbers for each of the order sets you created for this scenario. <!-- KFM: Which ones, all of them? Should we have taken note of the sales order numbers as we made them? Comma-separated? -->
+    - **Criteria** - Enter the sales order numbers for each of the order sets you created for this scenario (as a comma-separated list).
 1. Select **OK** to save your query and close the pane.
 1. Select **Consolidate shipments** on the action pane.
 1. Select all of the shipments and then select **Consolidate** on the action pane.

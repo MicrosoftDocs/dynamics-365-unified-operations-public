@@ -45,7 +45,7 @@ The scenario described here assumes that you have already done the exercises and
 
 ## Create the sales orders for this scenario
 
-Start by creating a collection of sales orders that you can work with. You must work with a warehouse that is enabled for advanced warehouse (WMS) processes, and the same warehouse must be used for each of the following sets of orders unless another warehouse is explicitly mentioned. <!-- KFM: The original didn't mention warehouses. Should I remove that again? -->
+Start by creating a collection of sales orders that you can work with. You must work with a warehouse that is enabled for advanced warehouse (WMS) processes, and the same warehouse must be used for each of the following sets of orders unless another warehouse is explicitly mentioned.
 
 Go to **Accounts receivable \> Orders \> All sales orders** and create a collection of sales orders with the settings described in the following subsections.
 

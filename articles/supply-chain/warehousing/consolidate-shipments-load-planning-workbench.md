@@ -91,11 +91,11 @@ Create two identical sales orders with the following settings:
 
 - **Customer account** - *US-002*
 - Add an order line with the following settings:
-  - **Item number** - *D0001* (an item with its **Code 4** filter set to *Flammable*)
+  - **Item number** - *M9200* (an item with its **Code 4** filter set to *Flammable*)
   - **Quantity** - *1.00*
   - Select **Inventory \> Reservation** and then select **Reserve lot** on the action pane to reserve the order line.
 - Add a second order line with the following settings:
-  - **Item number** - *D0002* (an item with its **Code 4** filter set to *Explosive*)
+  - **Item number** - *M9201* (an item with its **Code 4** filter set to *Explosive*)
   - **Quantity** - *1.00*
   - **Mode of delivery** - *Airwa-Air*
   - Select **Inventory \> Reservation** and then select **Reserve lot** on the action pane to reserve the order line.

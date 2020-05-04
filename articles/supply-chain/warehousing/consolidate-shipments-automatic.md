@@ -47,15 +47,9 @@ The scenario described here assumes that you have already enabled the feature, d
 
 ## Create the sales orders for this scenario
 
-Start by creating a collection of sales orders that you can work with. You must work with a warehouse that is enabled for advanced warehouse (WMS) processes, and the same warehouse must be used for each of the following sets of orders unless another warehouse is explicitly mentioned. <!-- KFM: The original didn't mention warehouses. Should I remove that again? >>> Add specific warehouse everywhere. Use Warehouse 24. -->
+Start by creating a collection of sales orders that you can work with. You must work with a warehouse that is enabled for advanced warehouse (WMS) processes, and the same warehouse must be used for each of the following sets of orders unless another warehouse is explicitly mentioned.
 
 Go to **Accounts receivable \> Orders \> All sales orders** and create a collection of sales orders with the settings described in the following subsections.
-
-<!-- KFM: Should users set a **Warehouse** for each of the sales orders created here? If so, we should specify that for each of them. We should be able to specify a particular warehouse that is already set up correctly in the standard demo data >>> YES -->
-
-<!-- KFM: Throughout this section we refer to item A0001 and A0002 as having no Code 4, while items D0001 and D0002 have Code 4 values. However, on my demo setup, I could only set Code 4 for items A0001 and A0002. The setting is disabled for D0001 and D0002. Therefore, the "Configure shipment consolidation policies" topic describes making this setting for items A0001 and A0002 (not D000x). We need to align this scenario with that one and with the actual USMF demo data people will have. (Or we need to add steps here for how to enable this setting for the D000x items.) -->
-
-<!-- KFM: We are never reserving the inventory for the order lines in this topic, but we do in one of the others. Should we also do that here? >>> NO, not needed here. -->
 
 ### Create order set 1
 
@@ -101,10 +95,10 @@ Create two identical sales orders with the following settings:
 
 - **Customer account** - *US-002*
 - Add an order line with the following settings:
-  - **Item number** - *D0001* (an item with its **Code 4** filter set to *Flammable*)
+  - **Item number** - *M9200* (an item with its **Code 4** filter set to *Flammable*)
   - **Quantity** - *1.00*
 - Add a second order line with the following settings:
-  - **Item number** - *D0002* (an item with its **Code 4** filter set to *Explosive*)
+  - **Item number** - *M9201* (an item with its **Code 4** filter set to *Explosive*)
   - **Quantity** - *1.00*
   - **Mode of delivery** - *Airwa-Air*
 
@@ -116,10 +110,10 @@ Create a sales order with the following settings:
 
 - **Customer account** - *US-002*
 - Add an order line with the following settings:
-  - **Item number** - *D0001* (an item with its **Code 4** filter set to *Flammable*)
+  - **Item number** - *M9200* (an item with its **Code 4** filter set to *Flammable*)
   - **Quantity** - *1.00*
 - Add a second order line with the following settings:
-  - **Item number** - *D0002* (an item with its **Code 4** filter set to *Explosive*)
+  - **Item number** - *M9201* (an item with its **Code 4** filter set to *Explosive*)
   - **Quantity** - *1.00*
   - **Mode of delivery** - *Airwa-Air*
 
@@ -232,7 +226,7 @@ For each set of sales orders you created earlier, you'll work through the three 
     - **Table** - *Sales order*
     - **Derived table** - *Sales order*
     - **Field** - *Sales order*
-    - **Criteria** - Enter sales order numbers from the desired order set. <!-- KFM:  Comma-separated -->
+    - **Criteria** - Enter the sales order numbers from the desired order set (as a comma-separated list).
 1. Select **OK** to save your query.
 1. Select **OK** to launch the *automatic release to warehouse* procedure.
 

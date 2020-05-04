@@ -38,7 +38,8 @@ The scenarios provided in this topic illustrate how to set up default and custom
 
 ## Enable the shipment consolidation policies feature
 
-<!-- KFM Add IMPORTANT note here about not doing this in the upgrade scenario -->
+> [!IMPORTANT]
+> The [first scenario](#scenario-1) provided in this topic includes steps where you first set up a warehouse to use the legacy shipment consolidation feature and *then* enable the shipment consolidation policies. This will let you experience how the upgrade scenario works. If you are planning to use a demo-data environment to work through the first scenario, then don't enable the feature before you do the scenario.
 
 Before you can use this feature, it must be enabled on on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the feature status and enable it if needed. Here, the feature is listed as:
 
@@ -66,7 +67,7 @@ To set up default shipment consolidation policies on an environment where wareho
 
 1. Go to **Warehouse management \> Setup \> Warehouse \> Warehouses**.
 
-1. In the list, find and open the desired warehouse record (for example, warehouse 51 in the **USMF** demo data).
+1. In the list, find and open the desired warehouse record (for example, warehouse 24 in the **USMF** demo data).
 
 1. Select **Edit** on the action pane.
 
@@ -134,10 +135,10 @@ If you haven't already done so, enable the feature in feature management and cre
         - **Filter title** - *Code 4*
 
 1. Go to **Product information management \> Products \> Released products**.
-1. Open the product with **Item number** *A0001*. (You must select a product that is enabled for advanced warehouse (WMS) processes, and this one is pre-enabled in the **USMF** demo data)
+1. Open the product with **Item number** *M9200*. (You must select a product that is enabled for advanced warehouse (WMS) processes, and this one is pre-enabled in the **USMF** demo data)
 1. On the **Warehouse** FastTab, set **Code 4** to *Flammable*.
 1. Close the page.
-1. Open the product with **Item number** *A0002*.
+1. Open the product with **Item number** *M9201*. (This product is also pre-enabled for WMS in the in the **USMF** demo data.)
 1. On the **Warehouse** FastTab, set **Code 4** to *Explosive*.
 1. Close the page.
 
