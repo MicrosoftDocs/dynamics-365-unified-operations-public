@@ -96,6 +96,6 @@ Release to warehouse each of the sales orders you created for this scenario by d
 
 ## Additional resources
 
-- [About shipment consolidation policies](../warehousing/about-shipment-consolidation-policies.md)  
-- [Configure shipment consolidation policies](../warehousing/configure-shipment-consolidation-policies.md)
-- [Consolidate shipments](../warehousing/consolidate-shipments.md)
+- [About shipment consolidation policies](about-shipment-consolidation-policies.md)  
+- [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md)
+- [Consolidate shipments](consolidate-shipments.md)

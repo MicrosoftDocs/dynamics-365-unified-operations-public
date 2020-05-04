@@ -136,5 +136,5 @@ The following table summarizes how shipment consolidation works when you don't u
 
 ## Additional resources
 
-- [Configure shipment consolidation policies](../warehousing/configure-shipment-consolidation-policies.md)
-- [Consolidate shipments](../warehousing/consolidate-shipments.md)
+- [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md)
+- [Consolidate shipments](consolidate-shipments.md)

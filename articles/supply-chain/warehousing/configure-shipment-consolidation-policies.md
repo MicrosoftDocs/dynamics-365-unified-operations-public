@@ -117,7 +117,7 @@ This scenario shows show to set up custom shipment consolidation policies, which
 
 ### Enable the feature and prepare master data for this scenario
 
-Before you can work through the exercises in this scenario, you must enable the feature and prepare the master data needed to do the filtering, as described in this section. (This is also a precondition for the scenarios provided in [Consolidate shipments using shipment consolidation policies](../warehousing/consolidate-shipments.md).)
+Before you can work through the exercises in this scenario, you must enable the feature and prepare the master data needed to do the filtering, as described in this section. (This is also a precondition for the scenarios provided in [Consolidate shipments using shipment consolidation policies](consolidate-shipments.md).)
 
 #### Enable the feature and create the default policies
 
@@ -418,6 +418,5 @@ Now that you have created all of your policies, you must establish the order in 
     1. Default
 
 ## Additional resources
-
-- [About shipment consolidation policies](../warehousing/about-shipment-consolidation-policies.md)  
-- [Consolidate shipments](../warehousing/consolidate-shipments.md)
+- [About shipment consolidation policies](about-shipment-consolidation-policies.md)
+- [Consolidate shipments](consolidate-shipments.md)

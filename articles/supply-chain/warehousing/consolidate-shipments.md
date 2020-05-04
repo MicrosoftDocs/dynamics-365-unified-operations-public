@@ -47,5 +47,5 @@ Scenario 5: [Consolidate shipments manually in Consolidate shipments form](../wa
 
 ## Additional resources
 
-- [About shipment consolidation policies](../warehousing/about-shipment-consolidation-policies.md)  
-- [Configure shipment consolidation policies](../warehousing/configure-shipment-consolidation-policies.md)
+- [About shipment consolidation policies](about-shipment-consolidation-policies.md)  
+- [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md)
