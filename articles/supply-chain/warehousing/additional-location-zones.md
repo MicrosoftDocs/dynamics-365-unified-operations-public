@@ -34,6 +34,11 @@ ms.dyn365.ops.version: 10.0.1
 
 [!include [banner](../includes/banner.md)]
 
+## Enable the Additional location zone feature
+Before you can use this feature, it must be enabled on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature status and enable it if needed. Here, the feature is listed as:
+- **Module** - *Warehouse management* 
+- **Feature name** - *Additional location zone*
+
 Three new zone fields are available in Microsoft Dynamics 365 Supply Chain Management. Warehouse managers can use them to define additional warehouse organizations or layouts. The new zone fields can be set manually or by using the **Location setup** wizard. They can be used in any query or filtering that uses the Locations table.
 
 No additional setup is required to use the zone fields.
@@ -50,8 +55,8 @@ No additional setup is required to use the zone fields.
     - In the **Location profile ID** field, select **FLOOR**.
 
 3. Select the **Floor** line.
-4. In the **From number** field, enter **01**. In the **To number** field, enter **3**.
+4. In the **From number** field, enter **1**. In the **To number** field, enter **3**.
 5. Select the **Aisle** line.
 6. In the **From number** field, enter **1**. In the **To number** field, enter **5**.
-7. Select **Create**. You receive a message that states that new locations were added.
-6. Go to **Warehouse management \> Setup \> Warehouse setup \> Locations**. The new locations appear in the list, and all four zone fields are available (the existing zone field and the three new zone fields).
+7. Select **Create**. You will receive messages that state that new locations have been added. Click on the **Show messages** icon to view the messages.
+8. Go to **Warehouse management \> Setup \> Warehouse \> Locations**. The new locations appear in the list, and all zone fields are available (the existing zone field and the new additional zone fields).
