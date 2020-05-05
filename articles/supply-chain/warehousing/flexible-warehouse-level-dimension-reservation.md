@@ -376,7 +376,7 @@ Do the following:
 1. As for the specific batch reservation case, the system doesn't use location directives when creating the work for the sales order with license plate reservation. The order-committed reservation specifies all the inventory dimensions, including the location, so there is no need to use location directives because these inventory dimensions are simply populated in the work. They are displayed on the **Work inventory transactions** page under the **From inventory dimensions** section.
 
     > [!NOTE]
-    > After the work is created, the item's inventory transaction where the **Reference** field is set to **Order-committed reservation** is removed. The inventory transaction where the **Reference** field is set to **Work** now holds the physical reservation on all the quantity's inventory dimensions.
+    > After the work is created, the item's inventory transaction where the **Reference** field is set to *Order-committed reservation* is removed. The inventory transaction where the **Reference** field is set to *Work* now holds the physical reservation on all the quantity's inventory dimensions.
 
 1. On the mobile device, finish picking and putting the work using a menu item with the **Handle by license plate** check box selected.
 
@@ -385,7 +385,7 @@ Do the following:
     >
     > We recommend that you have separate work generated for each license plate. To achieve this, use the **Work header breaks** feature on the **Work template** page.
 
-    The license plate **LP02** is now picked for sales order lines and put in the **Baydoor** location. At this point, it's ready to be loaded and dispatched to the customer.
+    The license plate *LP02* is now picked for sales order lines and put in the *Baydoor* location. At this point, it's ready to be loaded and dispatched to the customer.
 
 ## Exception handling of warehouse work that has order-committed batch numbers
 
