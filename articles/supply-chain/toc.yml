@@ -1071,16 +1071,16 @@
       items:
         - name: IoT Intelligence home page
           href: iot/iot-intelligence-home-page.md
-        - name: Schema formats for IoT Hub messages
-          href: iot/iot-schema-format.md
         - name: Azure setup
           href: iot/iot-azure-setup.md
+        - name: Schema formats for IoT Hub messages
+          href: iot/iot-schema-format.md
         - name: Install the add-in in LCS
           href: iot/iot-lcs-setup.md
-        - name: Scenario setup
-          href: iot/iot-scenario-setup.md
         - name: Metrics setup
           href: iot/iot-metrics-setup.md
+        - name: Scenario setup
+          href: iot/iot-scenario-setup.md
         - name: Managing IoT Intelligence
           href: iot/iot-management.md    
     - name: Master planning
