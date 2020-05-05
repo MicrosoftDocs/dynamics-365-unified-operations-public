@@ -116,14 +116,26 @@ On the **Mapping** tab of the ER Operation designer you can configure the **Enab
 
 ## Cell component
 
-**Cell** component indicates a named Excel cell that must be filled in by this ER component. The name of this cell is defined in the **Excel range** property of this component.
+**Cell** component is used to fill in Excel named cells, shapes, and pictures. To indicate a named Excel object that must be filled in by **Cell** ER component, you must specify the name of this object in the **Excel range** property of this **Cell** component.
 
 On the **Mapping** tab of the ER Operation designer you can configure the **Enabled** property for a **Cell** component to specify whether it must be filled in in a generated document:
 
--   When an expression of the **Enabled** property is configured to return **True** at runtime or not configured at all, the appropriate cell will be filled in in a generated document. The binding of this **Cell** component specifies a value that is placed to the appropriate cell of an ER template and the data type of this value (String, Real, Integer, etc.).
--   When an expression of the **Enabled** property is configured to return **False** at runtime, the appropriate cell will be filled in in a generated document.
+-   When an expression of the **Enabled** property is configured to return **True** at runtime or not configured at all, the appropriate object will be filled in in a generated document. The binding of this **Cell** component specifies a value that is placed to the appropriate object.
+-   When an expression of the **Enabled** property is configured to return **False** at runtime, the appropriate object will not be filled in in a generated document.
 
-**Cell** component is used to fill in Excel cells as well as images and shapes. To learn more about embedding images and shapes, review the [Embed images and shapes in documents that you generate by using ER](electronic-reporting-embed-images-shapes.md) page.
+When a **Cell** component is configured to populate value to a named Excel cell, it is allowed to bind it with a data source returning value of a primitive data type (String, Real, Integer, etc.). This value is populated to an Excel cell as value of the same data type.
+
+When a **Cell** component is configured to populate value to a named Excel shape, it is allowed to bind it with a data source returning value of a primitive data type (String, Real, integer, etc.). This value is populated to an Excel shape as the text of this shape. For values of non-String data types, the conversion to text is automatically performed.
+
+> [!NOTE]
+> You can do it for the only Excel shapes for which a shape text property is supported.
+
+When a **Cell** component is configured to populate value to a named Excel picture, it is possible to bind it with a data source returning value of a **Container** data type representing an image in binary format. This value is populated to an Excel picture as an image.
+
+> [!NOTE]
+> Every Excel picture and shape is considered as anchored by its upper-left corner to a particular Excel cell or range. If you want to replicate an Excel picture or shape, you must configure its anchored cell or range as a replicated one.
+
+To learn more about embedding images and shapes, review the [Embed images and shapes in documents that you generate by using ER](electronic-reporting-embed-images-shapes.md) page.
 
 ## Page break component
 
