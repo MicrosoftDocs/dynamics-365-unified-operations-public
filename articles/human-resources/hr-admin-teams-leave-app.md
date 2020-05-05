@@ -62,10 +62,10 @@ The Human Resources app in Teams uses the Language Understanding Intelligent Ser
 
 | For more information about | See |
 | --- | --- |
-| LUIS| [Language Understanding (LUIS)](https://www.luis.ai/home) |
+| LUIS | [Language Understanding (LUIS)](https://www.luis.ai/home) |
 | User privacy with LUIS | [Export and delete your customer data in Language Understanding (LUIS) in Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/luis/luis-user-privacy) |
 | Data storage in LUIS | [Data storage and removal in Language Understanding (LUIS) Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/luis/luis-concept-data-storage) | 
-| Azure Bot Service | [Azure Bot Service]() | 
+| Azure Bot Service | [Azure Bot Service](https://azure.microsoft.com/services/bot-service/) | 
 | Azure Cognitive Services | [Cognitive Services](https://azure.microsoft.com/services/cognitive-services/language-understanding-intelligent-service/)<br>[Language Understanding](https://azure.microsoft.com/services/cognitive-services/language-understanding-intelligent-service/) |
 | Azure Cognitive Services privacy | [Azure Cognitive Services](https://azure.microsoft.com/support/legal/cognitive-services-compliance-and-privacy/) |
 | Microsoft privacy | [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement) |
