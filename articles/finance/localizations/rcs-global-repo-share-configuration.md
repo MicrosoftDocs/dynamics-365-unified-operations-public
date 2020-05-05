@@ -39,7 +39,7 @@ You can use Regulatory Configuration Services (RCS) to share Electronic reportin
 The following steps explain how a user in Microsoft RCS can share a version of an ER configuration that has been configured in an RCS instance with an external organization. To complete these steps, you must first complete the following:
 
 - Access an RCS instance
-- Create an active configuration provider. For more information, see [Create configuration providers and mark them as active](../../fin-ops-core/dev-itpro/analytics/er-configuration-provider-mark-it-active-2016-11.md)
+- Create an active configuration provider. For more information, see [Create configuration providers and mark them as active](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md)
 - Create and upload a new version of an ER configuration. For more information, see [Create and upload a new version of an Electronic reporting (ER) configuration](rcs-global-repo-upload.md)
 
 1. In a Dynamics 365 Finance and Operations app, go to **Organization administration** > **Workspaces** > **Electronic reporting**.
