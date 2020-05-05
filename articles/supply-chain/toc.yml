@@ -1072,7 +1072,7 @@
         - name: IoT Intelligence home page
           href: iot/iot-intelligence-home-page.md
         - name: Schema formats for IoT Hub messages
-          href: iot/iot-json-setup.md
+          href: iot/iot-schema-format.md
         - name: Azure setup
           href: iot/iot-azure-setup.md
         - name: Install the add-in in LCS
