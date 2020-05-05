@@ -37,8 +37,8 @@ ms.dyn365.ops.version: 10.0.12
 This topic lists the features that are included in the platform updates for version 10.0.12 of Finance and Operations apps. (These updates were formerly referred to as Platform update 35.) This version has a build number of 7.0.5644 and is available on the following schedule:
 
 - **Preview release:** May 2020
-- **General availability (self-update):** June 2020
-- **Auto-update:** July 2020
+- **General availability (self-update):** July 2020
+- **Auto-update:** August 2020
 
 ## Features included in this release
 
