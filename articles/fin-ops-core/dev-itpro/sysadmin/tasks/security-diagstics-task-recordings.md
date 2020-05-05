@@ -1,41 +1,58 @@
----
-# required metadata
-
+--- 
+# required metadata 
+ 
 title: Security diagnostics for task recordings
-description: This topic describes how to analyze and manage security permission requirements based on a task recording.
-author: peakerbl
-manager: kfend
-ms.date: 05/04/2020
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
+description: This topic provides information about how to analyze and manage security permission requirements based on a task recording.
+author: Peakerbl
+manager: AnnBe 
+ms.date: 05/05/2020
+ms.topic: business-process 
+ms.prod:  
+ms.service: dynamics-ax-applications 
+ms.technology:  
+ 
+# optional metadata 
+ 
+ms.search.form:    
+audience: Application User 
+# ms.devlang:  
+ms.reviewer: kfend
+ms.search.scope: Core, Operations 
+# ms.tgt_pltfrm:  
+# ms.custom:  
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: maertenm
+ms.search.validFrom: 
+ms.dyn365.ops.version: Version 10.0.9 
 ---
-
 # Security diagnostics for task recordings
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how to analyze and manage security permission requirements based on a task recording.
+## Before you begin
 
-## To diagnose security for a task recording
+Before you complete the steps in this topic, you must have a task recording of the user process being analyzed. To record a business process, see, [Task recorder resources](../../user-interface/task-recorder.md). 
 
-1.	A task recording of the user process being analyzed is a prerequisite. To record a business process, see [Task recorder resources](../dev-itpro/user-interface/task-recorder.md)
-2.	Go to **System administration > Security > Security diagnostic for task recording**.
-3.	Open the task recording from its location, i.e. click **Open from this PC** or **Open from Lifecycle Services**.
-4.	Click **Close**.
-5.	This will open the Security menu item details form that lists the security objects required for the process.
+## Diagnose security for a task recording
 
-   > [!NOTE]
-    > Menu items of type Action and Output are currently not included in the list.
+1. Go to **System administration** > **Security** > **Security diagnostic for task recording**.
+2. Open the task recording from its location, (select **Open from this PC** or **Open from Lifecycle Services**), and then select **Close**.
+3. This will open the **Security menu item details** page that lists the security objects required for the process.
 
-6.	Finding and selecting a **User ID** will update the Missing permissions field. 
-    Yes, will be displayed if the user is missing permissions for menu item(s):
+ > [!NOTE]
+ > The **Action** and **Output** menu items are not included in the list.
 
-  [[Security Menu Item Details form] (./media/Security-Menu-Item-Details.png)](./media/Security-Menu-Item-Details.png)
+4. In the **User ID** field, select a user. If the user is missing permissions for menu items, the **Missing permissions** field will update to **Yes**.
+  
+  ![Security menu item details page](../media/Security-Menu-Item-Details.png)
 
-7.	Click **Add Reference**, to see a list of the security objects, i.e. Roles, Duties and Privileges that grant the missing permission.
-8.	Select a security object from the list:
-	  - If a Role is select click **Add role to user**, to open the [Assign users to roles form](../dev-itpro/sysadmin/media/role-to-user-assignments.png)
-	  - If a Duty is selected click **Add duty to role** and then select the role(s) that the duty should be added to and click **OK**.
-	  - If a Privilege is selected click **Add privilege to duties** and then select the role(s) that the duty should be added to and click **OK**.
+5. Select **Add Reference**, to see a list of the security objects, including roles, duties, and privileges, that grant the missing permission.
+6. Select a security object from the list:
+
+	- If **Role** is selected, select **Add role to user**. This will open the **Assign users to roles** page.
+	  
+	  ![Assign users to roles page](../media/role-to-user-assignments.png)
+
+	- If **Duty** is selected, select **Add duty to role**, select the roles that the duty should be added to, and then select **OK**.
+	- If **Privilege** is selected, select **Add privilege to duties**, select the roles that the duty should be added to, and then select **OK**.
