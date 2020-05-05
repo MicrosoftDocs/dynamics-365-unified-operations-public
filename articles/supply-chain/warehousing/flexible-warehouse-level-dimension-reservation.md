@@ -270,7 +270,7 @@ Do the following:
 
 1. Select **OK**.
 
-1. In the row for the **License plate** dimension level, select the **Allow reservation on demand order** check box. The **Location** level is automatically selected, and you can't clear the check box for it. <!-- KFM: When I tried this, I couldn't edit any of the check boxes, and the location box also was not selected. -->
+1. In the row for the **License plate** dimension level, select the **Allow reservation on demand order** check box. The **Location** level is automatically selected, and you can't clear the check box for it.
 
 1. Select **Save**.
 
@@ -293,9 +293,9 @@ Do the following:
 
 1. Select **OK** to create the product and close the pane. The new product opens. In the **Warehouse** FastTab, set **Unit sequence group ID** to *ea*.
 
-1. Repeat the previous steps to create a second new product with the same settings, except set the **Product number** and **Item number** to *Item2*.
+1. Repeat the previous two steps to create a second new product with the same settings, except set the **Product number** and **Item number** to *Item2*.
 
-1. Open the **Manage inventory** tab on the action pane and select **View > On-hand inventory**, and then select **Quantity adjustment**. Adjust the on-hand inventory of the new items as specified in the following table: <!-- KFM: On-hand inventory was disabled when I tried this -->
+1. Open the **Manage inventory** tab on the action pane and select **View > On-hand inventory**, and then select **Quantity adjustment**. Adjust the on-hand inventory of the new items as specified in the following table: <!--KFM: I couldn't do this because the license plates don't exist. Should we include steps to add them? I created the LPs, but then got another error here "Location FL-001 does not allow Mixed Items". So then I changed FLOOR to allow mixed items, and that worked. Again, should we add steps for this? It told me also that Inventory status was required, so I set to "available". -->
 
     | Item      | Warehouse    | Location | License plate | Quantity |
     |-----------|--------------|----------|---------------|----------|
@@ -310,25 +310,19 @@ Do the following:
 
 1. Go to **Sales and marketing \> Sales orders \> All sales orders**.
 
-1. Select **New**.
+1. Select **New** and then enter the following settings in the **Create sales order** pane:
+    - **Customer account** - *US-001*
+    - **Warehouse** - *24*
 
-1. In the **Customer account** field, enter **US-001**.
+1. Select **OK** to close the **Create sales order** pane and open the new sales order. 
 
-1. In the **Warehouse** field, enter **24**.
+1. On the **Sales order lines** FastTab, add a line with the following settings:
+    - **Item number** - *Item1*
+    - **Quantity** - *10*
 
-1. Select **OK**.
-
-1. On the **Sales order lines** FastTab, select **Add line**.
-
-1. In the **Item number** field, enter **Item1**.
-
-1. In the **Quantity** field, enter **10**.
-
-1. Select **Add line** to create the second line.
-
-1. In the **Item number** field, enter **Item2**.
-
-1. In the **Quantity** field, enter **5**.
+1. Add a second sales order line with the following settings:
+    - **Item number** - *Item2*
+    - **Quantity** - *5*
 
 1. Select **Save**.
 
@@ -339,43 +333,37 @@ Do the following:
     >
     >If you enter the license plate directly on the sales order line, and confirm it to the system, warehouse management processing will not be used for the line.
 
-1. Select **Open in Microsoft Office** and then select **Order-committed reservations per license plate**. <!-- KFM: I don't see this here, so I couldn't confirm what follows. -->
+1. Select **Open in Microsoft Office**, select **Order-committed reservations per license plate**, and download the file.
 
-1. In Excel, select **Enable editing** to enable the Excel add-in to run.
+1. Open the downloaded file in Excel, select **Enable editing** to enable the Excel add-in to run.
 
 1. If you're running the Excel add-in for the first time, select **Trust this Add-in**.
 
 1. If you're prompted to sign in, select **Sign in**, and then sign in by using the same credentials that you used to sign into Supply Chain Management.
 
-1. To reserve an item on a specific license plate, select **New** in the Excel add-in.
+1. To reserve an item on a specific license plate, select **New** in the Excel add-in and then enter the following values for the new row:
+    - **Lot ID** - Enter the **Lot ID** value you found for the sales order line for **Item1**.
+    - **License plate** - *LP02*
+    - **ReservedInventoryQuantity** - *10*
 
-1. In the **Lot ID** cell, enter the **Lot ID** value you found for the sales order line for **Item1**.
+1. Select **New** to add another reservation line and enter the following values:
+    - **Lot ID** - Enter the **Lot ID** value you found for the sales order line for **Item2**.
+    - **License plate** - *LP02*
+    - **ReservedInventoryQuantity** - *5*
 
-1. In the **License plate** cell, enter **LP02**.
-
-1. In the **Quantity** cell, enter **10**.
-
-1. Select **New** to add another reservation line.
-
-1. In the **Lot ID** cell, enter noted **Lot ID** value you found for the sales order line for **Item2**.
-
-1. In the **License plate** cell, enter **LP02**.
-
-1. In the **Quantity** cell, enter **5**.  
-
-1. Select **Publish** to send data back to Dynamics 365 Finance and Operations.
+1. Select **Publish** in the Excel add-in to send data back to Supply Chain Management.
 
     > [!NOTE]
-    > The reservation line will only appear in the system if publishing finished without errors.
+    > The reservation line will only appear in the system if publishing finished without errors. <!-- KFM: I got errors. I don't know why. I couldn't confirm anything after this. -->
 
-1. To review the item's reservation, go to the **Sales order lines** FastTab, open the **Inventory** menu and then select **Maintain \> Reservation**. Notice that for the sales order line with **Item1**, inventory of **10** is reserved, and for the sales order line with **Item2**, inventory of **5** is reserved.
+1. Go back to Supply Chain Management. To review the item's reservation, go to the **Sales order lines** FastTab, open the **Inventory** menu and then select **Maintain \> Reservation**. Notice that for the sales order line with **Item1**, inventory of *10* is reserved, and for the sales order line with **Item2**, inventory of *5* is reserved.
 
-1. To review inventory transactions that are related to the sales order line reservation, go to the **Sales order lines** FastTab, open the **Inventory** menu and then select **View \> Transactions**. Notice that there are two transactions related to the reservation: one with **Reference** set to **Sales order** and one with **Reference** set to **Order-committed reservation**.
+1. To review inventory transactions that are related to the sales order line reservation, go to the **Sales order lines** FastTab, open the **Inventory** menu and then select **View \> Transactions**. Notice that there are two transactions related to the reservation: one with **Reference** set to *Sales order* and one with **Reference** set to *Order-committed reservation*.
 
     > [!NOTE]
-    > A transaction where the **Reference** field is set to **Sales order** represents the order line reservation for inventory dimensions that are above the **Location** level (site, warehouse, and inventory status).
+    > A transaction where the **Reference** field is set to *Sales order* represents the order line reservation for inventory dimensions that are above the **Location** level (site, warehouse, and inventory status).
     >
-    > A transaction where the **Reference** field is set to **Order-committed reservation** represents the order line reservation for the specific license plate and location.
+    > A transaction where the **Reference** field is set to *Order-committed reservation* represents the order line reservation for the specific license plate and location.
 
 1. To release the sales order open the **Warehouse** tab on the action pane and then select **Actions > Release to warehouse**.
 
