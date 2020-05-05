@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Opt out of Web activity event collection
+title: Opt out of web activity event collection
 description: This topic explains how you can let your website visitors opt out of web activity event collection in Microsoft Dynamics 365 Commerce. 
 author: aamiral
-manager: 
+manager: AnnBe
 ms.date: 05/05/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
+ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -17,12 +17,11 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: v-chgri
-ms.search.scope: 
+ms.reviewer: sericks
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: global
+# ms.custom: NotInToc
+ms.search.region: Global
 ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
