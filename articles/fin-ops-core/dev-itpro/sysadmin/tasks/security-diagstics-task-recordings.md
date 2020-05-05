@@ -50,9 +50,6 @@ Before you complete the steps in this topic, you must have a task recording of t
 5. Select **Add Reference**, to see a list of the security objects, including roles, duties, and privileges, that grant the missing permission.
 6. Select a security object from the list:
 
-	- If **Role** is selected, select **Add role to user**. This will open the **Assign users to roles** page.
-	  
-	  ![Assign users to roles page](../media/role-to-user-assignments.png)
-
+	- If **Role** is selected, select **Add role to user**. This will open the [**Assign users to roles**](assign-users-security-roles.md) page.
 	- If **Duty** is selected, select **Add duty to role**, select the roles that the duty should be added to, and then select **OK**.
 	- If **Privilege** is selected, select **Add privilege to duties**, select the roles that the duty should be added to, and then select **OK**.
