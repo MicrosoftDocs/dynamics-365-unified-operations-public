@@ -42,23 +42,22 @@ The warehousing app is available on the Google Play and Windows app stores. The 
 
 This topic describes how to install the warehousing app on each of your mobile devices and configure it to connect to your Supply Chain Management environment. You can configure each device manually, or import connection settings through a file or by scanning a QR code.
 
-## Prerequisites
+## System requirements
 
-The app is available on Android and Windows operating systems. To use this app, you must have one of the following supported operating systems installed on your mobile devices.
+The warehousing app is available for both Windows and Android operating systems. To use the latest version of the app, you must have one of the following operating systems installed on your mobile devices:
 
-| Platform | Version |
-| --- | --- |
-| **Android** | 4.4 and above |
-| **Windows (UWP)** | **1.7.0.0 and above:** Windows 10 Fall creators update 1709 (10.0.16299) and above<br>**1.6.3.0 and below:** Windows 10 November Update 1511 (10.0.10586) |
+- Windows 10 (UWP) Fall creators update 1709 (build 10.0.16299) or newer
+- Android 4.4 or newer
 
-<!-- KFM: I don't understand these Windows specifications, please clarify -->
+> [!NOTE]
+> If you need to support older Windows devices that can't run the latest version of Windows, you can still download version 1.6.3.0 of the warehousing app from the Microsoft Store. That version will run on Windows 10 (UWP) November Update 1511 (build 10.0.10586) or newer. Please note, however, that this version of the warehousing app doesn't support mass deployment of connection settings, so you must [configure the connection manually](#config-manually) on each device that runs this version of the app.
 
 ## Get the warehousing app
 
 Use one of the following links to download the app:
 
 - Windows (Universal Windows Platform (UWP)):<br>
-[Finance and Operations - Warehousing on the Windows Store](https://www.microsoft.com/store/apps/9p1bffd5tstm)
+[Finance and Operations - Warehousing on the Microsoft Store](https://www.microsoft.com/store/apps/9p1bffd5tstm)
 - Android:<br>
 [Finance and Operations - Warehousing on the Google Play Store](https://play.google.com/store/apps/details?id=com.Microsoft.Dynamics365forOperationsWarehousing)
 
@@ -235,6 +234,8 @@ To import connection settings from a file QR code:
 1. The app now connects to your Supply Chain Management server and shows the sign-in screen.
 
     ![Sign in screen](media/app-connect-sign-in.png "Sign in screen")
+
+<a name="config-manually></a>
 
 ## Configure the application manually
 
