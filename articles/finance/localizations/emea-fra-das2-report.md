@@ -73,16 +73,18 @@ Line 1 includes the configuration that has the classification **ZZ**. It's used 
 > [!NOTE]
 > Create the same configuration for the DAS-2 page.
 
-## Assign a tax registration ID to a vendor record
 
-Because the report includes the SIRET (Système d'identification du répertoire des établissements) registration, the tax registration ID that represents the SIRET uses the **VAT ID** registration category. Follow these steps to add a tax registration ID to a vendor record.
+## Vendor configuration
 
-1. Go to **Organization administration** \> **Global address book** \> **Registration types** \> **Registration types** and create the **SIRET** registration type.
-2. Go to **Organization administration** \> **Global address book** \> **Registration types** \> **Registration categories** to assign the **SIRET** registration type to the **VAT ID** category.
-3. Go to **Accounts payable** \> **Vendors** \> **All vendors**.
-4. Find and open the vendor record that you want to enter the registration ID for.
-5. On the **Vendor** page, select **Registration ID** to open the **Manage addresses** page.
-6. On the **Tax registration** tab, select **Add**, and then, in the **Registration ID** field, select **SIRET**.
+Because the report includes the SIRET (Système d'identification du répertoire des établissements) registration and profession, follow these steps to add the related information.
+
+1. Go to **Accounts payable > Vendors > All vendors**.
+2. Click the vendor record that you want to update.
+3. Expand the **Purchasing demographics** section.
+4. Click **Edit**.
+5. In the **French Siret** fields, type a value.
+6. In the **Line of Business** field, type a value to identify the profession.
+
 
 ## Generate the DAS-2 report
 
