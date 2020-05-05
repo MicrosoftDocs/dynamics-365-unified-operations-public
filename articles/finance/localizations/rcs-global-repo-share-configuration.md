@@ -43,7 +43,7 @@ The following steps explain how a user in Microsoft RCS can share a version of a
 - Create and upload a new version of an ER configuration. For more information, see [Create and upload a new version of an Electronic reporting (ER) configuration](rcs-global-repo-upload.md)
 
 1. In a Dynamics 365 Finance and Operations app, go to **Organization administration** > **Workspaces** > **Electronic reporting**.
-2. If no RCS environment is provisioned to your company, select **Regulatory services – Configuration** and follow the instructions to provision an RCS environment for your organization.
+2. If no RCS environment is provisioned to your company, select **Regulatory services – Configuration external** and follow the instructions to provision an RCS environment for your organization.
 
 > [!NOTE]
 > If an RCS environment has been already provisioned to your company, use the page URL to access it by selecting the sign-in option.
