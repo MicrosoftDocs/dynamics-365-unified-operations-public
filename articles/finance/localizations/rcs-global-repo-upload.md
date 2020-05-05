@@ -65,14 +65,12 @@ The following steps explain how a user in the System Administrator or Electronic
 To share a new or derived configuration that you have created with your organization, you can upload the configuration to the Global repository.
 
 1. Select the completed version of the configuration, and then select **Upload into repository**.
-2. Select **Configuration repository – Global (Microsoft)**, and then click **Select**.
+2. Select **Global (Microsoft)**, and then click **Upload**.
 
-![Upload to Global repo](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/RCS_Upload_to_GlobalRepo.JPG)
-
-3. On the confirmation/action message, select **Yes**. 
 
 ![Upload to Global repo options](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/RCS_Upload_to_GlobalRepo_options.JPG)
 
+3. On the confirmation/action message, select **Yes**. 
 4. If needed, update the version description and then select **OK**. 
 
 The configuration is updated to **Share** and the configuration is uploaded to the Global repository where it is available to be:
