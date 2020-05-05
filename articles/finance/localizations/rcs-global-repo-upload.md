@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: RCS Global repository upload
-description: This topic describes creation of ER configuration in RCS and how to upload to the RCS/Global repository
+title: Create Electronic reporting configurations in RCS and then upload to Global repository 
+description: This topic describes how to create an ER configuration in RCS and upload it to the RCS/Global repository.
 author: JaneA07      
 manager: AnnBe
-ms.date: 04/24/2020
+ms.date: 05/05/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,59 +30,55 @@ ms.dyn365.ops.version: AX 10.0.9
 
 ---
 
-# Regulatory Configuration Services (RCS): Create Electronic reporting (ER) configurations in RCS and upload to Global repository 
+# Create Electronic reporting configurations in RCS and then upload to Global repository 
 
 [!include [banner](../includes/banner.md)]
 
-You can use Regulatory Configuration Services (RCS) to design Electronic reporting (ER) configurations and publish them to use within your organization
+You can use Regulatory Configuration Services (RCS) to design Electronic reporting (ER) configurations and publish them to use within your organization.
 
-The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can create and upload a new version of an Electronic reporting (ER) configuration from Microsoft Regulatory Configuration Services (RCS). 
-In this example, you will create a derived version of an ER configuration that has been configured in an RCS instance and upload it to Global repository. To complete these steps, you must first complete the steps related to:
-- Access to an RCS instance
-- Creation of a configuration provider that is active - see [Create configuration providers and mark them as active](er-configuration-provider-mark-it-active-2016-11.md)
+The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can create a derived version of an ER configuration that has been configured in an RCS instance and upload it to the Global repository. To complete these steps, you must first complete the following:
 
-**From Dynamics F&O** you can take the following actions:
-- Go to **Organization administration > Workspaces > Electronic reporting.**
-- If you have no RCS environment provisioned to your company, you can click Regulatory services – Configuration external link and follow the instructions to provision an RCS environment for your organization.
+- Access an RCS instance
+- Create an active configuration provider. For more infofrmation, see [Create configuration providers and mark them as active](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
-**Note**: If RCS environment has been already provisioned to your company, use the page URLs to access it by selecting the sign in option.
+1. In a Dynamics 365 Finance and Operations app, go to **Organization administration** > **Workspaces** > **Electronic reporting**.
+2. If you have no RCS environment provisioned to your company, select **Regulatory services – Configuration external** and follow the instructions to provision an RCS environment for your organization.
 
-**Create derived version of configuration in RCS**
-1.	Click Electronic reporting workspace
-2.	Check that you have that you have a Configuration provider for your organization, for e.g. here we will use Contoso and make sure the provider is marked as Active
-3.	Click Reporting configurations 
-4.	Select configuration that you want to derive a new version of, for this example we will use Intrastat (DE). 
-**Tip** you can find this by using filter field above the Configuration tree
-5.	Select +Create configuration, check ‘Derive from Name’ radio button, complete fields Name (for e.g. Intrastat (DE) Contoso) and Description, then click ‘Create configuration’ to create a new derived version
-6.	Select your newly derived configuration and Change status to complete by adding version description and clicking ok
+> [!NOTE]
+> If an RCS environment has been already provisioned to your company, use the page URLs to access it by selecting the sign in option.
 
-**Note** you might get a validation error related ‘connected applications‘ on changing configuration status. You can turn off this validation in Configuration/User parameters – Skip validation at configuration’s status change and rebase. Slide to parameter to ‘Yes’ and click Ok
+## Create a derived version of a configuration in RCS
 
-**Upload to Global repository**
-To share configuration that you have created (either new or derived) with your organization you can upload the configuration to the Global repository
-
-1.	Selected Completed version of the configuration
-2.	Click Upload into repository
-3.	Select Configuration repository – Global (Microsoft), click select
-4.	Click Yes on the confirmation/action message 
-5.	Update description for the version (if needed), click Ok
-6.	Configuration status is updated to ‘Share’ and has been uploaded to the Global repository where it is available to be:
-i.	Imported into Dynamics F&O (see topic (ER) Import configurations from RCS), or
-ii.	Shared with 3rd party/external organizations
-
-**Related screen shots:**
-
-Create new version of format configuration by deriving from an existing format and complete:
+1. Go to the **Electronic reporting** workspace, and verify that you have an active configuration provider for your organization. 
+2. Select **Reporting configurations**.
+3. Select the configuration from which you want to derive a new version. You can use the filter field above the tree to narrow your search.
+4. Select **+Create configuration** > **Derive from Name**.
+5. Enter a name and description, and then select **Create configuration** to create a new derived version.
+6. Select your newly derived configuration, add a version description, and then select **OK**. This will change the status of the configuration to **Complete**.
 
 ![New version of config in RCS](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/RCS_CompleteConfig.JPG)
 
-Upload to Global repository:
+> [!NOTE]
+> When the configuration status is changed, you might get a validation error related to the **connected applications‘**. You can turn off this validation in the **Configuration/User parameters** by setting **Skip validation at configuration’s status change and rebase** to **Yes**.
+
+## Upload to the Global repository
+To share a new or derived configuration that you have created with your organization, you can upload the configuration to the Global repository.
+
+1. Select the completed version of the configuration, and then select **Upload into repository**.
+2. Select **Configuration repository – Global (Microsoft)**, and then click **Select**.
 
 ![Upload to Global repo](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/RCS_Upload_to_GlobalRepo.JPG)
 
+3. On the confirmation/action message, select **Yes**. 
+
 ![Upload to Global repo options](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/RCS_Upload_to_GlobalRepo_options.JPG)
 
-Derived Intrastat Contoso version successfully uploaded to Global repository:
+4. If needed, update the version description and then select **OK**. 
+
+The configuration is updated to **Share** and the configuration is uploaded to the Global repository where it is available to be:
+
+  - Imported into your Dynamics 365 instance. For more information, see[(ER)Import configurations from RCS](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md)
+  - Shared with a 3rd party or external organization
 
 ![Derived Intrastat Contoso version in Global repo](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/RCS_Config_upload_GlobalRepo.JPG)
 
