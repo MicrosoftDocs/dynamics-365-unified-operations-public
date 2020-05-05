@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.9
 
 ---
 
-# Create Electronic reporting configurations in RCS and upload to Global the repository 
+# Create Electronic reporting configurations in RCS and upload to the Global repository 
 
 [!include [banner](../includes/banner.md)]
 
