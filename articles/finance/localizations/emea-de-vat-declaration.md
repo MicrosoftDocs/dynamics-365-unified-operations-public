@@ -34,7 +34,7 @@ reporting codes for Germany.
 <tbody>
 <tr>
 <td colspan="4" width="614">
-<p><strong>Tax-free sales with input tax deduction for intra-community supplies (&sect;4, no. 1, letter b of the UStG [</strong><strong><a href="https://de.wikipedia.org/wiki/Umsatzsteuergesetz_(Deutschland)">Umsatzsteuergesetz</a>, or </strong><strong>VAT law])</strong></p>
+<p><strong>Tax-free sales with input tax deduction for intra-community supplies (&sect;4, no. 1, letter b of the UStG [Umsatzsteuergesetz</strong><strong>, or </strong><strong>VAT law])</strong></p>
 </td>
 </tr>
 <tr>
