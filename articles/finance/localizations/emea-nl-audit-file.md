@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 This functionality is available for legal entities whose primary address is in the Netherlands.
 
-This topic explains how to import Electronic reporting (ER) configurations for Audit file and how to generate the Audit file (XML Auditfile Financieel, XAF) for legal entities in the Netherlands.
+This topic explains how to import Electronic reporting (ER) configurations for the Audit file and how to generate the Audit file (XML Auditfile Financieel, XAF) for legal entities in the Netherlands.
 
 ## Import and set up ER configurations
 
@@ -39,15 +39,15 @@ To prepare Microsoft Dynamics 365 Finance to generate the Audit file, you must i
 
 | Number | ER configuration name         | Type                                 | Description |
 |--------|-------------------------------|--------------------------------------|-------------|
-| 1      | Audit file model              | Model                                | A model for Audit file for Netherlands. |
+| 1      | Audit file model              | Model                                | A model for the Audit file for Netherlands. |
 | 2      | Audit file (NL)               | Format (exporting)                   | ER format for XML Auditfile Financieel, XAF. |
 
-## Generate Audit file
+## Generate the Audit file
 
 The steps in this procedure walk you through using the Audit file (XML Auditfile Financieel, XAF).
 
 1. Go to **General ledger** > **Periodic tasks** > **Audit file**.
-2. In the **From date** field, enter a date. For example, enter or select 2012-11-01.
-3. In the **To date** field, enter a date. For example, enter or select 2012-11-30.
+2. In the **From date** field, enter a date. For example, enter or select 2020-11-01.
+3. In the **To date** field, enter a date. For example, enter or select 2020-11-30.
 4. In the **Format mapping** field, enter or select **Audit file (NL)**.
 5. Select **OK**.
