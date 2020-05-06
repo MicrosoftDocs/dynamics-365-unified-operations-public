@@ -750,7 +750,7 @@ For more information, see Download Electronic reporting configurations from Life
     log** page (**Tax \> Declarations \> Sales tax \> Electronic tax declaration
     log**).
 
-![](media/f5ae2f817d889a3c04378d40caa4f86f.png)
+![](media/1_Electronic_tax_declaration_log.png)
 
 ## Preview the XML file
 
@@ -819,11 +819,7 @@ The following table shows how to assign the sales tax reporting codes to sales t
 | EUS                |                   | 41                |                       |                       |                          |                    |             |                    |
 | THIRD              |                   | 43                |                       |                       |                          |                    |             |                    |
 
->   **Note:** The preceding configuration is just an example and depends on the
->   structure of the sales tax codes that are used. If you want values to be
->   calculated and transferred to the sales tax report, for each tax code that
->   is used in the sales tax payment process, you must set a relevant sales tax
->   reporting code in one or more fields on the **Report setup** FastTab.
+**Note:** The preceding configuration is just an example and depends on the structure of the sales tax codes that are used. If you want values to be calculated and transferred to the sales tax report, for each tax code that is used in the sales tax payment process, you must set a relevant sales tax reporting code in one or more fields on the **Report setup** FastTab.
 
 3.  Go to **Tax \> Setup \> Sales tax \> Electronic tax declaration setup**.
 
@@ -864,17 +860,17 @@ The following table shows how to assign the sales tax reporting codes to sales t
 12. On the **Electronic tax declaration log** page, select the **General** tab,
     and review the general information.
 
-![](media/5111b776232c1ab240d4a7f8a5549f1e.png)
+![](media/2_Electronic_tax_declaration_log.png)
 
 13.  Select the **Preview** tab, and review the reported values.
 
-![](media/6cea6c691e3c5541743883800957c70a.png)
+![](media/3_Electronic_tax_declaration_log.png)
 
 14.  Select the paper clip symbol in the upper-right corner.
 
 15.  Select **Open** at the top of the page, and review the XML file.
 
-![](media/2bfa3e98f3f6f7c7be09dee43e75e67c.png)
+![](media/4_XML_file.png)
 
 ### Correction transactions
 
@@ -908,7 +904,7 @@ The following table shows how to assign the sales tax reporting codes to sales t
 
 8.  Select the **Preview** tab, and review the reported values.
 
-![](media/b459d3ed1d569025ba25f3b277ce241e.png)
+![](media/5_Electronic_tax_declaration_log.png)
 
 Note that a correction transaction is added to the declaration in codes **86** and **83**.
 
@@ -916,7 +912,7 @@ Note that a correction transaction is added to the declaration in codes **86** a
 
 10.  Select **Open** at the top of the page, and review the XML file.
 
-![](media/ff6823f95d9fd6e26c706524795a83d0.png)
+![](media/6_XML_file.png)
 
 Note that a correction transaction is added to the declaration in codes **86** and **83**.
 
@@ -953,9 +949,9 @@ settlement period.
 If you post transactions as described in step 5 of the example earlier in this
 topic, you will see the following data.
 
-![](media/83b3c318c4623d826f19395b8cafa548.png)
+![](media/7_Sales_tax_reporting.png)
 
-![](media/b0c82374958390951b9abd847b6f30ad.png)
+![](media/8_Sales_tax_reporting.png)
 
 ### Print a sales tax payment report from a sales tax payment
 
