@@ -5,7 +5,7 @@ title: Design a configuration for generating documents in Excel format
 description: This topic provides information about how to design an Electronic reporting (ER) format to fill in an Excel template, and then generate outbound Excel format documents.
 author: NickSelin
 manager: AnnBe
-ms.date: 05/04/2020
+ms.date: 05/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -61,11 +61,11 @@ parameters](electronic-reporting-er-configure-parameters.md#parameters-to-manage
 
 ![ER Operation designer page](./media/er-excel-format-add-file-component2.png)
 
-To specify how an attached template will be filled in when you run the configured ER format, you need to add for the inserted **Excel\\File** component additional nested **Sheet**, **Range** and **Cell** ER components. Every such component must be associated with an appropriate Excel named item.
+To specify how an attached template will be filled in when you run the configured ER format, you need to add the nested components, **Sheet**, **Range**, and **Cell** for the **Excel\\File** component. Each nested component must be associated with an Excel named item.
 
 ### Template import
 
-You can select **Import** and then **Import from Excel** to import a new template to a blank ER format. In this case an **Excel\\File** component will be created automatically. The imported template will be attached to it. All necessary ER components will be created automatically as well based on the list of discovered Excel named items.
+You can select **Import** > **Import from Excel** to import a new template to a blank ER format. In this example, an **Excel\\File** component will be created automatically and the imported template will be attached to it. All necessary ER components will also be created automatically based on the list of discovered Excel named items.
 
 ![ER Operation designer page](./media/er-excel-format-import-template.png)
 
@@ -74,81 +74,83 @@ You can select **Import** and then **Import from Excel** to import a new templat
 
 ## Sheet component
 
-**Sheet** component indicates a worksheet of the attached Excel workbook to be filled in. The name of this worksheet in an Excel template is defined in the **Sheet** property of this component.
+The **Sheet** component indicates a worksheet of the attached Excel workbook must be filled in. The name of this worksheet in an Excel template is defined in the **Sheet** property of this component.
 
 > [!NOTE]
-> This component is optional for Excel workbooks containing a single worksheet.
+> This component is optional for Excel workbooks that contain a single worksheet.
 
-On the **Mapping** tab of the ER Operation designer you can configure the **Enabled** property for a **Sheet** component to specify whether it must be placed to a generated document.
+On the **Mapping** tab of the ER Operation designer, you can configure the **Enabled** property for a **Sheet** component to specify if it must be placed in a generated document.
 
--   When an expression of the **Enabled** property is configured to return **True** at runtime or not configured at all, the appropriate worksheet will be placed to a generated document.
--   When an expression of the **Enabled** property is configured to return **False** at runtime, a generated document will contain no such worksheet.
+- When an expression of the **Enabled** property is configured to return **True** at runtime or not configured at all, the appropriate worksheet will be placed to a generated document.
+- When an expression of the **Enabled** property is configured to return **False** at runtime, a generated document will not contain a worksheet.
 
 ![ER Operation designer page](./media/er-excel-format-sheet-component.png)
 
 ## Range component
 
-**Range** component indicates a named Excel range that must be controlled by this ER component. The name of this range is defined in the **Excel range** property of this component.
+The **Range** component indicates a specified Excel range that must be controlled by this ER component. The name of this range is defined in the **Excel range** property of this component.
 
 The **Replication direction** property specifies whether this range will be repeated in a generated document.
 
--   When the **Replication direction** property is set to **No replication**, the appropriate Excel range is not repeated in a generated document.
--   When the **Replication direction** property is set to **Vertical**, the appropriate Excel range is replicated in a generated document. Every replicated range is placed below the original range in an Excel template. The number of repetitions is defined by the number of records in a data source of the **Record list** type that is bound to this ER component.
--   When the **Replication direction** property is set to **Horizontal**, the appropriate Excel range is replicated in a generated document. Every replicated range is placed on the right from the original range in an Excel template. The number of repetitions is defined by the number of records in a data source of the **Record list** type that is bound to this ER component.
+- When the **Replication direction** property is set to **No replication**, the appropriate Excel range is not repeated in a generated document.
+- When the **Replication direction** property is set to **Vertical**, the appropriate Excel range is replicated in a generated document. Every replicated range is placed below the original range in an Excel template. The number of repetitions is defined by the number of records in a data source of the **Record list** type that is bound to this ER component.
+- When the **Replication direction** property is set to **Horizontal**, the appropriate Excel range is replicated in a generated document. Every replicated range is placed on the right from the original range in an Excel template. The number of repetitions is defined by the number of records in a data source of the **Record list** type that is bound to this ER component.
 
-To learn more about the horizontal replication, complete the steps of the [Use horizontally expandable ranges to dynamically add columns in Excel reports](tasks/er-horizontal-1.md) example.
+To learn more about the horizontal replication, complete the steps in the topic, [Use horizontally expandable ranges to dynamically add columns in Excel reports](tasks/er-horizontal-1.md).
 
-**Range** component can have other nested ER components using to populate values to the appropriate Excel named ranges.
+The **Range** component can have other nested ER components used to populate values to the appropriate Excel named ranges.
 
--   When any component of the **Text** group is used for that, this value is placed to an Excel range as a text value.  
+- When any component of the **Text** group is used to populate values, this value is placed to an Excel range as a text value.  
+    
     > [!NOTE]
     > Use this pattern to format populated values based on the locale that is defined in application.
 
--   When the **Cell** component of the **Excel** group is used for that, this value is placed to Excel range as a value of the data type that is defined by the binding of this **Cell** component (String, Real, Integer, etc.).  
+- When the **Cell** component of the **Excel** group is used to populate values, this value is placed in an Excel range as a value of the data type that is defined by the binding of this **Cell** component (String, Real, Integer, etc.).  
+    
     > [!NOTE]
-    > Use this pattern allowing Excel application to format populated values based on the locale of the local computer opening an outbound document.
+    > Use this pattern to allow the Excel application to format populated values based on the locale of the local computer opening an outbound document.
 
 On the **Mapping** tab of the ER Operation designer you can configure the **Enabled** property for a **Range** component to specify whether it must be placed to a generated document.
 
--   When an expression of the **Enabled** property is configured to return **True** at runtime or not configured at all, the appropriate range will be filled in in a generated document.
--   When an expression of the **Enabled** property is configured to return **False** at runtime and this range does not represent the entire rows or columns, the appropriate range will not be filled in in a generated document.
--   When an expression of the **Enabled** property is configured to return **False** at runtime and this range represents the entire rows or columns, a generated document will contain such rows and columns as hidden ones.
+- When an expression of the **Enabled** property is configured to return **True** at runtime or not configured at all, the appropriate range will be filled in in a generated document.
+- When an expression of the **Enabled** property is configured to return **False** at runtime and this range does not represent the entire rows or columns, the appropriate range will not be filled in in a generated document.
+- When an expression of the **Enabled** property is configured to return **False** at runtime and this range represents the entire rows or columns, a generated document will contain such rows and columns as hidden ones.
 
 ## Cell component
 
-**Cell** component is used to fill in Excel named cells, shapes, and pictures. To indicate a named Excel object that must be filled in by **Cell** ER component, you must specify the name of this object in the **Excel range** property of this **Cell** component.
+The **Cell** component is used to fill in Excel named cells, shapes, and pictures. To indicate a named Excel object that must be filled in by **Cell** ER component, you must specify the name of this object in the **Excel range** property of the **Cell** component.
 
-On the **Mapping** tab of the ER Operation designer you can configure the **Enabled** property for a **Cell** component to specify whether it must be filled in in a generated document:
+On the **Mapping** tab of the ER Operation designer, you can configure the **Enabled** property for a **Cell** component to specify whether it must be filled in in a generated document:
 
--   When an expression of the **Enabled** property is configured to return **True** at runtime or not configured at all, the appropriate object will be filled in in a generated document. The binding of this **Cell** component specifies a value that is placed to the appropriate object.
--   When an expression of the **Enabled** property is configured to return **False** at runtime, the appropriate object will not be filled in in a generated document.
+- When an expression of the **Enabled** property is configured to return **True** at runtime or not configured at all, the appropriate object will be filled in in a generated document. The binding of this **Cell** component specifies a value that is placed to the appropriate object.
+- When an expression of the **Enabled** property is configured to return **False** at runtime, the appropriate object will not be filled in in a generated document.
 
-When a **Cell** component is configured to populate value to a named Excel cell, it is allowed to bind it with a data source returning value of a primitive data type (String, Real, Integer, etc.). This value is populated to an Excel cell as value of the same data type.
+When a **Cell** component is configured to populate a value to a cell, it is allowed to bind it with a data source that returns the value of a primitive data type (String, Real, Integer, etc.). This value is populated to a cell as a value of the same data type.
 
-When a **Cell** component is configured to populate value to a named Excel shape, it is allowed to bind it with a data source returning value of a primitive data type (String, Real, integer, etc.). This value is populated to an Excel shape as the text of this shape. For values of non-String data types, the conversion to text is automatically performed.
-
-> [!NOTE]
-> You can do it for the only Excel shapes for which a shape text property is supported.
-
-When a **Cell** component is configured to populate value to a named Excel picture, it is possible to bind it with a data source returning value of a **Container** data type representing an image in binary format. This value is populated to an Excel picture as an image.
+When a **Cell** component is configured to populate value to an Excel shape, it is allowed to bind it with a data source that returns a value of a primitive data type (String, Real, integer, etc.). This value is populated to a shape as the text of this shape. For values of non-String data types, the conversion to text is automatically performed.
 
 > [!NOTE]
-> Every Excel picture and shape is considered as anchored by its upper-left corner to a particular Excel cell or range. If you want to replicate an Excel picture or shape, you must configure its anchored cell or range as a replicated one.
+> You can only configure a **Cell** component to populate a shape where a shape text property is supported.
 
-To learn more about embedding images and shapes, review the [Embed images and shapes in documents that you generate by using ER](electronic-reporting-embed-images-shapes.md) page.
+When a **Cell** component is configured to populate value to an Excel picture, it is possible to bind it with a data source that returns a value of a **Container** data type representing an image in binary format. This value is populated to an Excel picture as an image.
+
+> [!NOTE]
+> Every Excel picture and shape is considered to be anchored by its upper-left corner to a particular Excel cell or range. If you want to replicate an Excel picture or shape, you must configure its anchored cell or range as a replicated one.
+
+To learn more about embedding images and shapes, see [Embed images and shapes in documents that you generate by using ER](electronic-reporting-embed-images-shapes.md).
 
 ## Page break component
 
-**PageBreak** component forces Excel to start a new page. When you want Excel to do paging, this component is not needed. Use this component when you want to do Excel paging in your ER format.
+The **PageBreak** component forces Excel to start a new page. When you want Excel to do paging, this component is not needed. Use this component when you want Excel to do paging in your ER format.
 
 ## Edit an added ER format
 
 ### Update template
 
-You can select **Import** and then **Update from Excel** to import an updated template to an editable ER format. During this process, a template of the selected **Excel\\File** component will be replaced by a new one. The content of the editable ER format will be synchronized with the content of the updated ER template.
+You can select **Import** > **Update from Excel** to import an updated template to an editable ER format. During this process, a template of the selected **Excel\\File** component will be replaced by a new one. The content of the editable ER format will be synchronized with the content of the updated ER template.
 
--   A new ER format component will be automatically created for every Excel name if such ER format component has not been found in the editable format.
--   Every ER format component will be deleted from the editable ER format if the appropriate Excel name has not been found for it.
+- A new ER format component will be automatically created for every Excel name if the ER format component has not been found in the editable format.
+- Every ER format component will be deleted from the editable ER format if the appropriate Excel name has not been found for it.
 
 > [!NOTE]
 > Set **Create Excel Sheet format element** to **Yes** if you want to create the optional **Sheet** element in the editable ER format.
@@ -158,18 +160,18 @@ You can select **Import** and then **Update from Excel** to import an updated te
 
 ![ER Operation designer page](./media/er-excel-format-update-template.png)
 
-To learn more about this feature, complete the steps of the [Modify Electronic reporting formats by reapplying Excel
-templates](modify-electronic-reporting-format-reapply-excel-template.md) example.
+To learn more about this feature, complete the steps in the topic, [Modify Electronic reporting formats by reapplying Excel
+templates](modify-electronic-reporting-format-reapply-excel-template.md).
 
 ## Validate an ER format
 
-When you validate an editable ER format, the consistency check is performed to make sure that every mentioned in the editable ER format Excel name is presented in the currently used Excel template. You will be notified about any found inconsistency. For some of them the option to automatically fix it will be offered.
+When you validate an editable ER format, the consistency check is performed to make sure that the editable ER format Excel name is presented in the currently used Excel template. You will be notified about any inconsistencies. For some of them, the option to automatically fix issues will be offered.
 
 ![ER Operation designer page](./media/er-excel-format-validate.png)
 
 ## Example
 
-To learn more about this feature, complete the steps of the [Design a configuration for generating reports in OPENXML format](tasks/er-design-reports-openxml-2016-11.md) example.
+To learn more about this feature, complete the steps in the topic, [Design a configuration for generating reports in OPENXML format](tasks/er-design-reports-openxml-2016-11.md).
 
 ## Additional resources
 
