@@ -694,7 +694,8 @@ reporting codes for Germany.
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
-**Note:** For sample forms of advance VAT returns that include declaration row
+> [!NOTE]
+> For sample forms of advance VAT returns that include declaration row
 codes, see [Forms in the VAT procedure for the year 2020](https://umsatzsteuer-voranmeldung-2020.taxpool.net/Umsatzsteuer-Voranmeldung-2020.pdf).
 
 ## Set up sales tax codes
@@ -702,12 +703,13 @@ codes, see [Forms in the VAT procedure for the year 2020](https://umsatzsteuer-v
 Set up sales tax codes by following the instructions in [Sales tax codes for VAT
 reporting](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/391150_DE_VAT/articles/finance/localizations/emea-vat-reporting.md#sales-tax-codes-for-vat-reporting) and [Sales tax overview](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/391150_DE_VAT/articles/finance/general-ledger/indirect-taxes-overview.md).
 
-**Note:** In a German legal entity, sales tax codes for tax-free sales should be
+> [!NOTE]
+> In a German legal entity, sales tax codes for tax-free sales should be
 set up according to the following rules:
 
--   The tax rate is more than 0 (zero).
+> -   The tax rate is more than 0 (zero).
 
--   The tax code is marked as **Exempt** on the **Sales tax groups** page.
+> -   The tax code is marked as **Exempt** on the **Sales tax groups** page.
 
 ## Create a VAT declaration in XML format
 
@@ -820,7 +822,8 @@ The following table shows how to assign the sales tax reporting codes to sales t
 | EUS                |                   | 41                |                       |                       |                          |                    |             |                    |
 | THIRD              |                   | 43                |                       |                       |                          |                    |             |                    |
 
-**Note:** The preceding configuration is just an example and depends on the structure of the sales tax codes that are used. If you want values to be calculated and transferred to the sales tax report, for each tax code that is used in the sales tax payment process, you must set a relevant sales tax reporting code in one or more fields on the **Report setup** FastTab.
+> [!NOTE]
+> The preceding configuration is just an example and depends on the structure of the sales tax codes that are used. If you want values to be calculated and transferred to the sales tax report, for each tax code that is used in the sales tax payment process, you must set a relevant sales tax reporting code in one or more fields on the **Report setup** FastTab.
 
 3.  Go to **Tax \> Setup \> Sales tax \> Electronic tax declaration setup**.
 
