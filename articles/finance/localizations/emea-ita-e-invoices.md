@@ -181,16 +181,24 @@ Example of setup:
 # How to fill in data for CIG and CUP ouput
 
 Companies may report the following blocks in the output e-invoices: 
- - <DatiOrdineAcquisto> - block containing the information relative to the payment order 
- - <DatiContratto> - block containing the information relative to the contract 
- - <DatiConvenzione> - block containing the information relative to the agreement 
- - <DatiRicezione> - block containing the information relative to the data present on the management system used by the PA (Tax Agencies) regarding the reception phase 
- - <DatiFattureCollegate> - block containing the information relative to the invoices previously transmitted and to which the present document is connected; it regards the cases of the forwarding of a credit note and/or invoice pursuant to previous advance payment invoices 
+ - **DatiOrdineAcquisto** block contains the information relative to the payment order. 
+ - **DatiContratto** block contains the information relative to the contract. 
+ - **DatiConvenzione** block contains the information relative to the agreement. 
+ - **DatiRicezione** block contains the information relative to the data present on the management system used by the PA (Tax Agencies) regarding the reception phase. 
+ - **DatiFattureCollegate** block contains the information relative to the invoices previously transmitted and to which the present document is connected; it regards the cases of the forwarding of a credit note and/or invoice pursuant to previous advance payment invoices 
 
 In order to the system could populate these blocks the following fields should be filled in Free text invoice/ Sales order/ Project proposal:
 - **Accounts receivable \> Orders \> All sales orders**, **Header**, **Setup** FastTab, **Base document** field group.
 - **Accounts receivable \> Invoices \> All free text invoices**, **Header**, **Base document** field group.
-- **Project management and accounting \> Projects \> All projects**, **Manage** tab, **Invoice proposal** button, **Base document** field group
+- **Project management and accounting \> Projects \> All projects**, **Manage** tab, **Bill** \> **Invoice proposal** button, **Base document** field group
+
+> [!NOTE]
+> In which block the system outputs data from **Base document** fields depends on the value specified in the **Base document** field: 
+> Payment order - **DatiOrdineAcquisto** block
+> Contract - **DatiContratto** block
+> Agreement - **DatiConvenzione** block
+> Management system - **DatiRicezione** block
+> Original invoice - **DatiFattureCollegate** block
 
 # Overview of electronic invoices page 
 
