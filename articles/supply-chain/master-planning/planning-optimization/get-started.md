@@ -53,7 +53,7 @@ If you can run master planning by using your current license, you don't have to 
 To use Planning Optimization, install the Planning Optimization Add-in for Dynamics 365 Supply Chain Management. You can access the add-in from your LCS project and turn on the Planning Optimization functionality from the Supply Chain Management user interface (UI).
 
 > [!NOTE]
-> The requirement for Planning Optimization is an LCS enabled high-availability environment (not a OneBox environment), with Dynamics 365 Supply Chain Management version 10.0.7 or later.
+> The requirement for Planning Optimization is an LCS enabled high-availability environment, tier 2 or higher (not a OneBox environment), with Dynamics 365 Supply Chain Management version 10.0.7 or later. In case you try to install the add-in on a OneBox environment, then the installation will not complete and you will have to abort the installation.
 
 1. Sign in to LCS, and open the desired environment.
 1. Go to **Full details**.
