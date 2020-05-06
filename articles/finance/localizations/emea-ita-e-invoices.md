@@ -180,11 +180,11 @@ Example of setup:
 
 # How to fill in data for CIG and CUP ouput
 Companies are able to report the following blocks in the output eInvoice message: 
-2.1.2 <DatiOrdineAcquisto> - block containing the information relative to the purchase order 
-2.1.3 <DatiContratto> - block containing the information relative to the contract 
-2.1.4 <DatiConvenzione> - block containing the information relative to the agreement 
-2.1.5 <DatiRicezione> - block containing the information relative to the data present on the management system used by the PA (Tax Agencies) regarding the reception phase 
-2.1.6 <DatiFattureCollegate> - block containing the information relative to the invoices previously transmitted and to which the present document is connected; it regards the cases of the forwarding of a credit note and/or invoice pursuant to previous advance payment invoices 
+ - 2.1.2 <DatiOrdineAcquisto> - block containing the information relative to the purchase order 
+ - 2.1.3 <DatiContratto> - block containing the information relative to the contract 
+ - 2.1.4 <DatiConvenzione> - block containing the information relative to the agreement 
+ - 2.1.5 <DatiRicezione> - block containing the information relative to the data present on the management system used by the PA (Tax Agencies) regarding the reception phase 
+ - 2.1.6 <DatiFattureCollegate> - block containing the information relative to the invoices previously transmitted and to which the present document is connected; it regards the cases of the forwarding of a credit note and/or invoice pursuant to previous advance payment invoices 
 
 # Overview of electronic invoices page 
 
