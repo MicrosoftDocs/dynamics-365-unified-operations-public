@@ -712,7 +712,7 @@ set up according to the following rules:
 ## Create a VAT declaration in XML format
 
 
-1.  In [Microsoft Dynamics Lifecycle Services (LCS)] (https://lcs.dynamics.com/V2), in the **Shared asset
+1.  In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2), in the **Shared asset
     library**, download the latest versions of the Electronic reporting (ER)
     configurations for the VAT declaration format:
 
