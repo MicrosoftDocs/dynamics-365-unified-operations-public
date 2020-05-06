@@ -34,9 +34,11 @@ and sending sales and project invoices in electronic format (FatturaPA).
   
 Electronic invoices "FatturaPA" version 1.2 can be used for all types of businesses, including public administrations, private
 and professional companies. Specifically, the invoices in question must be in .xml format, must be endorsed by using a qualified or digital electronic signature, and must be transmitted through an interchange data system or an authorized intermediary on the websites.
+
 This topic contains:
 - [Setup](/setup).
-- [Overview of electronic invoices page](/overview-of-electronic-invoices-page)
+- [How to fill in data for CIG and CUP ouput](/How-to-fill-in-data-for-CIG-and-CUP-ouput).
+- [Overview of electronic invoices page](/overview-of-electronic-invoices-page).
 
 # Setup
 
@@ -76,7 +78,7 @@ Electronic document properties functionality are used for settting output to xml
 1. VAT registration number for customers who are out of EU and don't have VAT registration codes.  
 2. Certified e-mail address (PEC) for private or professional companies.
 3. Stamp duty (payable and not payble by customer).
-2. Representative data
+2. Customer's representative data 
 
 For the functionality to work, it is necessary to set up:
 1. **Electronic document property types** (**Account receivable > Setup > Electronic document property types**) and to which table the document property type is applied. For electronic invoice functionality the **Customers** and **Legal entities** tables are applied (**Applicability** button).
@@ -106,7 +108,7 @@ Set values are used for output to the xml file blocks (see the table bellow how 
 
 ### How to use project categories for stamp duty
 
-1. Set up Project categories with Fee/Expense transaction type (**Project management and accounting > Setup > Categories > Project categories**). Category Id should be equal to the value defined for **Follo** on the Legal entity level. (see the table in this section).
+1. Set up Project categories with Fee/Expense transaction type (**Project management and accounting > Setup > Categories > Project categories**). Category Id should be equal to the value defined for **Bollo** on the Legal entity level. (see the table in this section).
 2. Project category of Fee transaction type can be used only for stamp duty included in the invoice
 3. Project category of expense transaction type can be used both for invoices included and not included in a customer invoice (**Bollo** document property type is used in both casess). 
 3. When you create **Fee** or **Expese** journal lines select the category that was defined as stamp duty, enter Cost price. The system considers this cost price as stamp duty amount, 
@@ -176,7 +178,9 @@ Example of setup:
 
 ![Destination](media/emea-ita-electronic-invocies-destination.png)
 
-## Overview of electronic invoices page 
+# How to fill in data for CIG and CUP ouput
+
+# Overview of electronic invoices page 
 
 To overview all customer e-invoices and fulfil different actions open **Electronic customer invoices** page list (**Accounts receivable \> Invoices \> E-invoices \> Electronic invoices**).
 
