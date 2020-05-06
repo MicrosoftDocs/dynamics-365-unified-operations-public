@@ -32,26 +32,11 @@ ms.author: v-oloski
 This topic describes how to set up and work with the functionality for creation
 and sending sales and project invoices in electronic format (FatturaPA).  
   
-Effective June 6, 2014, the Italian Ministries, the Tax Authorities (Agenzia
-delle Entrate, Agenzia del Demanio, Agenzia del Territorio, Agenzia delle
-Dogane), and various national social security and welfare entities that are
-listed by the Istituto Nazionale di Statistica (Istat) (for example, INARCASSA,
-cassa forense, cassa geometri, cassa del notariato) will no longer be entitled
-to accept paper invoices. Additionally, three months after the June 6 date,
-these same groups will no longer process payments (even partly) until an invoice
-is submitted in electronic format.
-
-In addition, the format for electronic invoices "FatturaPA" version 1.2 can be
-used for all types of businesses, including public administrations, private
-and professional companies.  
-Specifically, the invoices in question must be in .xml format, must be endorsed
-by using a qualified or digital electronic signature, and must be transmitted
-through an interchange data system or an authorized intermediary on the
-following websites:
-
--   Italian: <http://www.fatturapa.gov.it/export/fatturazione/it/index.htm>
-
--   English: <http://www.fatturapa.gov.it/export/fatturazione/en/index.htm?l=en>
+Electronic invoices "FatturaPA" version 1.2 can be used for all types of businesses, including public administrations, private
+and professional companies. Specifically, the invoices in question must be in .xml format, must be endorsed by using a qualified or digital electronic signature, and must be transmitted through an interchange data system or an authorized intermediary on the websites.
+This topic contains:
+- [Setup](/setup).
+- [Overview of electronic invoices page](/overview-of-electronic-invoices-page)
 
 # Setup
 
