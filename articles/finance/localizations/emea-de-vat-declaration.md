@@ -1,6 +1,5 @@
----
-title: VAT declaration for Germany
----
+# VAT declaration for Germany
+
 
 This topic explains how to set up and generate the value-added tax (VAT)
 declaration for legal entities in Germany.
@@ -15,61 +14,685 @@ Set up sales tax reporting codes by following the instructions in Set up sales
 tax reporting codes. The following table provides an example of sales tax
 reporting codes for Germany.
 
-| **Code**                                                                                                                                    | **Description**                                                                                                                                                                                                                                                                                                                       | **Element in the XML file of the VAT declaration**                      | **Tax base or tax amount** |
-|---------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|----------------------------|
-| **Tax-free sales with input tax deduction for intra-community supplies (§4, no. 1, letter b of the UStG [Umsatzsteuergesetz, or VAT law])** |                                                                                                                                                                                                                                                                                                                                       |                                                                         |                            |
-| 41                                                                                                                                          | Intra-community shipment (§4, no. 1b of the UStG) to customers with tax registration.                                                                                                                                                                                                                                                 | Kz41                                                                    | Tax base                   |
-| 44                                                                                                                                          | Intra-community deliveries of new vehicles to customers without a VAT ID.                                                                                                                                                                                                                                                             | Kz44                                                                    | Tax base                   |
-| 49                                                                                                                                          | Intra-community deliveries of new vehicles outside a company.                                                                                                                                                                                                                                                                         | Kz49                                                                    | Tax base                   |
-| 43                                                                                                                                          | Additional tax-free sales with input tax deduction (for example, exports).                                                                                                                                                                                                                                                            | Kz43                                                                    | Tax base                   |
-| **Tax-free sales without input tax deduction (for example, sales according to §4, no. 8 through 28 of the UStG)**                           |                                                                                                                                                                                                                                                                                                                                       |                                                                         |                            |
-| 48                                                                                                                                          | Tax-free sales without input tax deduction.                                                                                                                                                                                                                                                                                           | Kz48                                                                    | Tax base                   |
-| **Taxable sales**                                                                                                                           |                                                                                                                                                                                                                                                                                                                                       |                                                                         |                            |
-| 81                                                                                                                                          | Tax base for deliveries or services that are charged at 19 percent.                                                                                                                                                                                                                                                                   | Kz81                                                                    | Tax base                   |
-| 181                                                                                                                                         | Tax amount for deliveries or services that are charged at 19 percent.                                                                                                                                                                                                                                                                 | Not shown separately in the XML file but considered in the total (Kz83) | Tax amount                 |
-| 86                                                                                                                                          | Tax base for deliveries or services that are charged at 7 percent.                                                                                                                                                                                                                                                                    | Kz86                                                                    | Tax base                   |
-| 186                                                                                                                                         | Tax amount for deliveries or services that are charged at 7 percent.                                                                                                                                                                                                                                                                  | Not shown separately in the XML file but considered in the total (Kz83) | Tax amount                 |
-| 35                                                                                                                                          | Tax base for deliveries or services at other tax rates.                                                                                                                                                                                                                                                                               | Kz35                                                                    | Tax base                   |
-| 36                                                                                                                                          | Tax amount for deliveries or services at other tax rates.                                                                                                                                                                                                                                                                             | Kz36                                                                    | Tax amount                 |
-| 77                                                                                                                                          | Deliveries of agricultural and forestry businesses, according to §24 of the UStG, to customers who have a VAT ID.                                                                                                                                                                                                                     | Kz77                                                                    | Tax base                   |
-| 76                                                                                                                                          | Tax base of turnover that tax is payable for, according to §24 of the UStG (sawmill products, beverages and alcoholic liquids, such as wine).                                                                                                                                                                                         | Kz76                                                                    | Tax base                   |
-| 80                                                                                                                                          | Tax amount of turnover that tax is payable for, according to §24 of the UStG (sawmill products, beverages and alcoholic liquids, such as wine).                                                                                                                                                                                       | Kz80                                                                    | Tax amount                 |
-| **Intra-community acquisitions and VAT payable for such acquisitions**                                                                      |                                                                                                                                                                                                                                                                                                                                       |                                                                         |                            |
-| 91                                                                                                                                          | Tax-free intra-community acquisitions.                                                                                                                                                                                                                                                                                                | Kz91                                                                    | Tax base                   |
-| 89                                                                                                                                          | Tax base for the acquisition of goods from countries in the European Union (EU), charged at 19 percent.                                                                                                                                                                                                                               | Kz89                                                                    | Tax base                   |
-| 189                                                                                                                                         | Tax amount for the acquisition of goods from countries in the EU, charged at 19 percent.                                                                                                                                                                                                                                              | Not shown separately in the XML file but considered in the total (Kz83) | Tax amount                 |
-| 93                                                                                                                                          | Tax base for the acquisition of goods from countries in the EU, charged at 7 percent.                                                                                                                                                                                                                                                 | Kz93                                                                    | Tax base                   |
-| 193                                                                                                                                         | Tax amount for the acquisition of goods from countries in the EU, charged at 7 percent.                                                                                                                                                                                                                                               | Not shown separately in the XML file but considered in the total (Kz83) | Tax amount                 |
-| 95                                                                                                                                          | Tax base for the acquisition of goods from countries in the EU at other tax rates.                                                                                                                                                                                                                                                    | Kz95                                                                    | Tax base                   |
-| 98                                                                                                                                          | Tax amount for the acquisition of goods from countries in the EU at other tax rates.                                                                                                                                                                                                                                                  | Kz98                                                                    | Tax amount                 |
-| 94                                                                                                                                          | Tax base for intra-community acquisitions of new vehicles (§1b, paragraphs 2 and 3 of the UStG) from suppliers without a VAT ID, at the general tax rate.                                                                                                                                                                             | Kz94                                                                    | Tax base                   |
-| 96                                                                                                                                          | Tax amount for intra-community acquisitions of new vehicles (§1b, paragraphs 2 and 3 of the UStG) from suppliers without a VAT ID, at the general tax rate.                                                                                                                                                                           | Kz96                                                                    | Tax amount                 |
-| **Additional information about sales**                                                                                                      |                                                                                                                                                                                                                                                                                                                                       |                                                                         |                            |
-| 42                                                                                                                                          | Deliveries by the first customer for intra-community triangular transactions (§25b of the UStG).                                                                                                                                                                                                                                      | Kz42                                                                    | Tax base                   |
-| 60                                                                                                                                          | Taxable sales of the performing entrepreneur that the service recipient owes the tax for, according to §13b (5) of the UStG.                                                                                                                                                                                                          | Kz60                                                                    | Tax base                   |
-| 21                                                                                                                                          | Other non-taxable services according to §18b, sentence 1, no. 2 of the UStG.                                                                                                                                                                                                                                                          | Kz21                                                                    | Tax base                   |
-| 45                                                                                                                                          | Other non-taxable sales (where the place of performance isn't in Germany).                                                                                                                                                                                                                                                            | Kz45                                                                    | Tax base                   |
-| **Beneficiary as tax debtor (§13b of the UStG)**                                                                                            |                                                                                                                                                                                                                                                                                                                                       |                                                                         |                            |
-| 46                                                                                                                                          | Tax base for other services in accordance with §3a (2) UStG of an entrepreneur that is located in the rest of the community (§13b (1) of the UStG).                                                                                                                                                                                   | Kz46                                                                    | Tax base                   |
-| 47                                                                                                                                          | Tax amount for other services in accordance with §3a (2) UStG of an entrepreneur that is located in the rest of the community (§13b (1) of the UStG).                                                                                                                                                                                 | Kz47                                                                    | Tax amount                 |
-| 73                                                                                                                                          | Tax base of turnover that is covered by the property transfer tax law – in particular, deliveries of land for which the performing entrepreneur has opted for tax liability in accordance with §9 (3) of the UStG.                                                                                                                    | Kz73                                                                    | Tax base                   |
-| 74                                                                                                                                          | Tax amount of turnover that is covered by the property transfer tax law – in particular, deliveries of land for which the performing entrepreneur has opted for tax liability in accordance with §9 (3) of the UStG.                                                                                                                  | Kz74                                                                    | Tax amount                 |
-| 84                                                                                                                                          | Tax base of other services (§13b (2), no. 1, 2, and 4 through 11 of the UStG).                                                                                                                                                                                                                                                        | Kz84                                                                    | Tax base                   |
-| 85                                                                                                                                          | Tax amount of other services (§13b (2), no. 1, 2, and 4 through 11 of the UStG).                                                                                                                                                                                                                                                      | Kz85                                                                    | Tax amount                 |
-| **Deductible input tax amounts**                                                                                                            |                                                                                                                                                                                                                                                                                                                                       |                                                                         |                            |
-| 66                                                                                                                                          | Tax on input from invoices of other companies (§15, paragraph 1, no. 1 of the UStG).                                                                                                                                                                                                                                                  | Kz66                                                                    | Tax amount                 |
-| 61                                                                                                                                          | Input VAT amount from intra-community acquisitions of objects (§15, paragraph 1, no. 3 of the UStG).                                                                                                                                                                                                                                  | Kz61                                                                    | Tax amount                 |
-| 62                                                                                                                                          | Import sales tax that is incurred (§15, paragraph 1, no. 2 of the UStG).                                                                                                                                                                                                                                                              | Kz62                                                                    | Tax amount                 |
-| 67                                                                                                                                          | Input tax amounts from services within the meaning of §13b of the UStG (§15, paragraph 1, clause 1, no. 4 of the UStG).                                                                                                                                                                                                               | Kz67                                                                    | Tax amount                 |
-| 63                                                                                                                                          | Input tax amounts that are calculated according to general average rates (§23 and §23a of the UStG).                                                                                                                                                                                                                                  | Kz63                                                                    | Tax amount                 |
-| 64                                                                                                                                          | Correction of input tax deduction (§15a of the UStG).                                                                                                                                                                                                                                                                                 | Kz64                                                                    | Tax amount                 |
-| 59                                                                                                                                          | Input tax deduction for intra-community deliveries of new vehicles outside a company (§2a of the UStG) and small businesses within the meaning of §19 (1) of the UStG (§15 (4a) of the UStG).                                                                                                                                         | Kz59                                                                    | Tax amount                 |
-| **Other tax amounts**                                                                                                                       |                                                                                                                                                                                                                                                                                                                                       |                                                                         |                            |
-| 65                                                                                                                                          | Tax because of changes in the form of taxation, and after-tax on taxed down payments, and so on, because of changes in tax rate.                                                                                                                                                                                                      | Kz65                                                                    | Tax amount                 |
-| 69                                                                                                                                          | Tax amounts that are shown incorrectly or unjustifiably on invoices (§14c of the UStG), and also tax amounts that are owed in accordance with §6a (4), sentence 2; §17 (1), sentence 6; and §25b (2) of the UStG, or tax amounts that are owed by an outsourcer or warehouse keeper in accordance with §13a (2) 1, no. 6 of the UStG. | Kz69                                                                    | Tax amount                 |
-| 39                                                                                                                                          | Deduction of the stipulated special advance payment for long-term extension (which usually will be completed only in the last advance notification of the taxation period).                                                                                                                                                           | Kz39                                                                    | Tax amount                 |
-| 83                                                                                                                                          | Total VAT amount (VAT advance payment or VAT surplus). On the VAT declaration in XML format, the value in this box is automatically calculated as the sum of reporting codes 181, 186, 36, 80, 189, 193, 98, 96, 47, 74, and 85, minus reporting codes 66, 61, 62, 67, 63, 64, 59, 69, and 39.                                        | Kz83                                                                    | Tax amount                 |
-
+<table width="614">
+<thead>
+<tr>
+<td width="75">
+<p><strong>Code</strong></p>
+</td>
+<td width="340">
+<p><strong>Description</strong></p>
+</td>
+<td width="95">
+<p><strong>Element in the XML file of the VAT declaration</strong></p>
+</td>
+<td width="104">
+<p><strong>Tax base or tax amount</strong></p>
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="4" width="614">
+<p><strong>Tax-free sales with input tax deduction for intra-community supplies (&sect;4, no. 1, letter b of the UStG [</strong><strong><a href="https://de.wikipedia.org/wiki/Umsatzsteuergesetz_(Deutschland)">Umsatzsteuergesetz</a>, or </strong><strong>VAT law])</strong></p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>41</p>
+</td>
+<td width="340">
+<p>Intra-community shipment (&sect;4, no. 1b of the UStG) to customers with tax registration.</p>
+</td>
+<td width="95">
+<p>Kz41</p>
+</td>
+<td width="104">
+<p>Tax base</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>44</p>
+</td>
+<td width="340">
+<p>Intra-community deliveries of new vehicles to customers without a VAT ID.</p>
+</td>
+<td width="95">
+<p>Kz44</p>
+</td>
+<td width="104">
+<p>Tax base</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>49</p>
+</td>
+<td width="340">
+<p>Intra-community deliveries of new vehicles outside a company.</p>
+</td>
+<td width="95">
+<p>Kz49</p>
+</td>
+<td width="104">
+<p>Tax base</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>43</p>
+</td>
+<td width="340">
+<p>Additional tax-free sales with input tax deduction (for example, exports).</p>
+</td>
+<td width="95">
+<p>Kz43</p>
+</td>
+<td width="104">
+<p>Tax base</p>
+</td>
+</tr>
+<tr>
+<td colspan="4" width="614">
+<p><strong>Tax-free sales without input tax deduction (for example, sales according to &sect;4, no. 8 through 28 of the UStG)</strong></p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>48</p>
+</td>
+<td width="340">
+<p>Tax-free sales without input tax deduction.</p>
+</td>
+<td width="95">
+<p>Kz48</p>
+</td>
+<td width="104">
+<p>Tax base</p>
+</td>
+</tr>
+<tr>
+<td colspan="4" width="614">
+<p><strong>Taxable sales</strong></p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>81</p>
+</td>
+<td width="340">
+<p>Tax base for deliveries or services that are charged at 19 percent.</p>
+</td>
+<td width="95">
+<p>Kz81</p>
+</td>
+<td width="104">
+<p>Tax base</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>181</p>
+</td>
+<td width="340">
+<p>Tax amount for deliveries or services that are charged at 19 percent.</p>
+</td>
+<td width="95">
+<p>Not shown separately in the XML file but considered in the total (Kz83)</p>
+</td>
+<td width="104">
+<p>Tax amount</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>86</p>
+</td>
+<td width="340">
+<p>Tax base for deliveries or services that are charged at 7 percent.</p>
+</td>
+<td width="95">
+<p>Kz86</p>
+</td>
+<td width="104">
+<p>Tax base</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>186</p>
+</td>
+<td width="340">
+<p>Tax amount for deliveries or services that are charged at 7 percent.</p>
+</td>
+<td width="95">
+<p>Not shown separately in the XML file but considered in the total (Kz83)</p>
+</td>
+<td width="104">
+<p>Tax amount</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>35</p>
+</td>
+<td width="340">
+<p>Tax base for deliveries or services at other tax rates.</p>
+</td>
+<td width="95">
+<p>Kz35</p>
+</td>
+<td width="104">
+<p>Tax base</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>36</p>
+</td>
+<td width="340">
+<p>Tax amount for deliveries or services at other tax rates.</p>
+</td>
+<td width="95">
+<p>Kz36</p>
+</td>
+<td width="104">
+<p>Tax amount</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>77</p>
+</td>
+<td width="340">
+<p>Deliveries of agricultural and forestry businesses, according to &sect;24 of the UStG, to customers who have a VAT ID.</p>
+</td>
+<td width="95">
+<p>Kz77</p>
+</td>
+<td width="104">
+<p>Tax base</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>76</p>
+</td>
+<td width="340">
+<p>Tax base of turnover that tax is payable for, according to &sect;24 of the UStG (sawmill products, beverages and alcoholic liquids, such as wine).</p>
+</td>
+<td width="95">
+<p>Kz76</p>
+</td>
+<td width="104">
+<p>Tax base</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>80</p>
+</td>
+<td width="340">
+<p>Tax amount of turnover that tax is payable for, according to &sect;24 of the UStG (sawmill products, beverages and alcoholic liquids, such as wine).</p>
+</td>
+<td width="95">
+<p>Kz80</p>
+</td>
+<td width="104">
+<p>Tax amount</p>
+</td>
+</tr>
+<tr>
+<td colspan="4" width="614">
+<p><strong>Intra-community acquisitions and VAT payable for such acquisitions</strong></p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>91</p>
+</td>
+<td width="340">
+<p>Tax-free intra-community acquisitions.</p>
+</td>
+<td width="95">
+<p>Kz91</p>
+</td>
+<td width="104">
+<p>Tax base</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>89</p>
+</td>
+<td width="340">
+<p>Tax base for the acquisition of goods from countries in the European Union (EU), charged at 19 percent.</p>
+</td>
+<td width="95">
+<p>Kz89</p>
+</td>
+<td width="104">
+<p>Tax base</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>189</p>
+</td>
+<td width="340">
+<p>Tax amount for the acquisition of goods from countries in the EU, charged at 19 percent.</p>
+</td>
+<td width="95">
+<p>Not shown separately in the XML file but considered in the total (Kz83)</p>
+</td>
+<td width="104">
+<p>Tax amount</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>93</p>
+</td>
+<td width="340">
+<p>Tax base for the acquisition of goods from countries in the EU, charged at 7 percent.</p>
+</td>
+<td width="95">
+<p>Kz93</p>
+</td>
+<td width="104">
+<p>Tax base</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>193</p>
+</td>
+<td width="340">
+<p>Tax amount for the acquisition of goods from countries in the EU, charged at 7 percent.</p>
+</td>
+<td width="95">
+<p>Not shown separately in the XML file but considered in the total (Kz83)</p>
+</td>
+<td width="104">
+<p>Tax amount</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>95</p>
+</td>
+<td width="340">
+<p>Tax base for the acquisition of goods from countries in the EU at other tax rates.</p>
+</td>
+<td width="95">
+<p>Kz95</p>
+</td>
+<td width="104">
+<p>Tax base</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>98</p>
+</td>
+<td width="340">
+<p>Tax amount for the acquisition of goods from countries in the EU at other tax rates.</p>
+</td>
+<td width="95">
+<p>Kz98</p>
+</td>
+<td width="104">
+<p>Tax amount</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>94</p>
+</td>
+<td width="340">
+<p>Tax base for intra-community acquisitions of new vehicles (&sect;1b, paragraphs 2 and 3 of the UStG) from suppliers without a VAT ID, at the general tax rate.</p>
+</td>
+<td width="95">
+<p>Kz94</p>
+</td>
+<td width="104">
+<p>Tax base</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>96</p>
+</td>
+<td width="340">
+<p>Tax amount for intra-community acquisitions of new vehicles (&sect;1b, paragraphs 2 and 3 of the UStG) from suppliers without a VAT ID, at the general tax rate.</p>
+</td>
+<td width="95">
+<p>Kz96</p>
+</td>
+<td width="104">
+<p>Tax amount</p>
+</td>
+</tr>
+<tr>
+<td colspan="4" width="614">
+<p><strong>Additional information about sales</strong></p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>42</p>
+</td>
+<td width="340">
+<p>Deliveries by the first customer for intra-community triangular transactions (&sect;25b of the UStG).</p>
+</td>
+<td width="95">
+<p>Kz42</p>
+</td>
+<td width="104">
+<p>Tax base</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>60</p>
+</td>
+<td width="340">
+<p>Taxable sales of the performing entrepreneur that the service recipient owes the tax for, according to &sect;13b (5) of the UStG.</p>
+</td>
+<td width="95">
+<p>Kz60</p>
+</td>
+<td width="104">
+<p>Tax base</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>21</p>
+</td>
+<td width="340">
+<p>Other non-taxable services according to &sect;18b, sentence 1, no. 2 of the UStG.</p>
+</td>
+<td width="95">
+<p>Kz21</p>
+</td>
+<td width="104">
+<p>Tax base</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>45</p>
+</td>
+<td width="340">
+<p>Other non-taxable sales (where the place of performance isn't in Germany).</p>
+</td>
+<td width="95">
+<p>Kz45</p>
+</td>
+<td width="104">
+<p>Tax base</p>
+</td>
+</tr>
+<tr>
+<td colspan="4" width="614">
+<p><strong>Beneficiary as tax debtor (&sect;13b of the UStG)</strong></p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>46</p>
+</td>
+<td width="340">
+<p>Tax base for other services in accordance with &sect;3a (2) UStG of an entrepreneur that is located in the rest of the community (&sect;13b (1) of the UStG).</p>
+</td>
+<td width="95">
+<p>Kz46</p>
+</td>
+<td width="104">
+<p>Tax base</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>47</p>
+</td>
+<td width="340">
+<p>Tax amount for other services in accordance with &sect;3a (2) UStG of an entrepreneur that is located in the rest of the community (&sect;13b (1) of the UStG).</p>
+</td>
+<td width="95">
+<p>Kz47</p>
+</td>
+<td width="104">
+<p>Tax amount</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>73</p>
+</td>
+<td width="340">
+<p>Tax base of turnover that is covered by the property transfer tax law &ndash; in particular, deliveries of land for which the performing entrepreneur has opted for tax liability in accordance with &sect;9 (3) of the UStG.</p>
+</td>
+<td width="95">
+<p>Kz73</p>
+</td>
+<td width="104">
+<p>Tax base</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>74</p>
+</td>
+<td width="340">
+<p>Tax amount of turnover that is covered by the property transfer tax law &ndash; in particular, deliveries of land for which the performing entrepreneur has opted for tax liability in accordance with &sect;9 (3) of the UStG.</p>
+</td>
+<td width="95">
+<p>Kz74</p>
+</td>
+<td width="104">
+<p>Tax amount</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>84</p>
+</td>
+<td width="340">
+<p>Tax base of other services (&sect;13b (2), no. 1, 2, and 4 through 11 of the UStG).</p>
+</td>
+<td width="95">
+<p>Kz84</p>
+</td>
+<td width="104">
+<p>Tax base</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>85</p>
+</td>
+<td width="340">
+<p>Tax amount of other services (&sect;13b (2), no. 1, 2, and 4 through 11 of the UStG).</p>
+</td>
+<td width="95">
+<p>Kz85</p>
+</td>
+<td width="104">
+<p>Tax amount</p>
+</td>
+</tr>
+<tr>
+<td colspan="4" width="614">
+<p><strong>Deductible input tax amounts</strong></p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>66</p>
+</td>
+<td width="340">
+<p>Tax on input from invoices of other companies (&sect;15, paragraph 1, no. 1 of the UStG).</p>
+</td>
+<td width="95">
+<p>Kz66</p>
+</td>
+<td width="104">
+<p>Tax amount</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>61</p>
+</td>
+<td width="340">
+<p>Input VAT amount from intra-community acquisitions of objects (&sect;15, paragraph 1, no. 3 of the UStG).</p>
+</td>
+<td width="95">
+<p>Kz61</p>
+</td>
+<td width="104">
+<p>Tax amount</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>62</p>
+</td>
+<td width="340">
+<p>Import sales tax that is incurred (&sect;15, paragraph 1, no. 2 of the UStG).</p>
+</td>
+<td width="95">
+<p>Kz62</p>
+</td>
+<td width="104">
+<p>Tax amount</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>67</p>
+</td>
+<td width="340">
+<p>Input tax amounts from services within the meaning of &sect;13b of the UStG (&sect;15, paragraph 1, clause 1, no. 4 of the UStG).</p>
+</td>
+<td width="95">
+<p>Kz67</p>
+</td>
+<td width="104">
+<p>Tax amount</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>63</p>
+</td>
+<td width="340">
+<p>Input tax amounts that are calculated according to general average rates (&sect;23 and &sect;23a of the UStG).</p>
+</td>
+<td width="95">
+<p>Kz63</p>
+</td>
+<td width="104">
+<p>Tax amount</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>64</p>
+</td>
+<td width="340">
+<p>Correction of input tax deduction (&sect;15a of the UStG).</p>
+</td>
+<td width="95">
+<p>Kz64</p>
+</td>
+<td width="104">
+<p>Tax amount</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>59</p>
+</td>
+<td width="340">
+<p>Input tax deduction for intra-community deliveries of new vehicles outside a company (&sect;2a of the UStG) and small businesses within the meaning of &sect;19 (1) of the UStG (&sect;15 (4a) of the UStG).</p>
+</td>
+<td width="95">
+<p>Kz59</p>
+</td>
+<td width="104">
+<p>Tax amount</p>
+</td>
+</tr>
+<tr>
+<td colspan="4" width="614">
+<p><strong>Other tax amounts</strong></p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>65</p>
+</td>
+<td width="340">
+<p>Tax because of changes in the form of taxation, and after-tax on taxed down payments, and so on, because of changes in tax rate.</p>
+</td>
+<td width="95">
+<p>Kz65</p>
+</td>
+<td width="104">
+<p>Tax amount</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>69</p>
+</td>
+<td width="340">
+<p>Tax amounts that are shown incorrectly or unjustifiably on invoices (&sect;14c of the UStG), and also tax amounts that are <strong>owed</strong> in accordance with &sect;6a (4), sentence 2; &sect;17 (1), sentence 6; and &sect;25b (2) of the UStG, or <strong>tax amounts that are owed</strong> by an outsourcer or warehouse keeper in accordance with &sect;13a (2) 1, no. 6 of the UStG.</p>
+</td>
+<td width="95">
+<p>Kz69</p>
+</td>
+<td width="104">
+<p>Tax amount</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>39</p>
+</td>
+<td width="340">
+<p>Deduction of the stipulated special advance payment for long-term extension (which usually will be completed only in the last advance notification of the taxation period).</p>
+</td>
+<td width="95">
+<p>Kz39</p>
+</td>
+<td width="104">
+<p>Tax amount</p>
+</td>
+</tr>
+<tr>
+<td width="75">
+<p>83</p>
+</td>
+<td width="340">
+<p>Total VAT amount (VAT advance payment or VAT surplus).</p>
+<p>On the VAT declaration in XML format, the value in this box is automatically calculated as the sum of reporting codes 181, 186, 36, 80, 189, 193, 98, 96, 47, 74, and 85, minus reporting codes 66, 61, 62, 67, 63, 64, 59, 69, and 39.</p>
+</td>
+<td width="95">
+<p>Kz83</p>
+</td>
+<td width="104">
+<p>Tax amount</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 **Note:** For sample forms of advance VAT returns that include declaration row
 codes, see Forms in the VAT procedure for the year 2020.
 
