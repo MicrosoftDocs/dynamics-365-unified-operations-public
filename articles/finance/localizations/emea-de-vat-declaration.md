@@ -7,8 +7,8 @@ declaration for legal entities in Germany.
 For general information about how to set up the VAT statement, see *VAT
 reporting for Europe*.
 
-Set up sales tax reporting codes for VAT reporting
-==================================================
+## Set up sales tax reporting codes for VAT reporting
+
 
 Set up sales tax reporting codes by following the instructions in Set up sales
 tax reporting codes. The following table provides an example of sales tax
@@ -696,8 +696,7 @@ reporting codes for Germany.
 **Note:** For sample forms of advance VAT returns that include declaration row
 codes, see Forms in the VAT procedure for the year 2020.
 
-Set up sales tax codes
-======================
+## Set up sales tax codes
 
 Set up sales tax codes by following the instructions in *Sales tax codes for VAT
 reporting* and Sales tax overview.
@@ -709,8 +708,8 @@ set up according to the following rules:
 
 -   The tax code is marked as **Exempt** on the **Sales tax groups** page.
 
-Create a VAT declaration in XML format
-======================================
+## Create a VAT declaration in XML format
+
 
 1.  In Microsoft Dynamics Lifecycle Services (LCS), in the **Shared asset
     library**, download the latest versions of the Electronic reporting (ER)
@@ -718,18 +717,17 @@ Create a VAT declaration in XML format
 
 -   **Elster (DE)**
 
->   For more information, see Download Electronic reporting configurations from
->   Lifecycle Services.
+For more information, see Download Electronic reporting configurations from Lifecycle Services.
 
-1.  Go to **Tax \> Setup \> Sales tax \> Electronic tax declaration setup**.
+2.  Go to **Tax \> Setup \> Sales tax \> Electronic tax declaration setup**.
 
-2.  In the **Format mapping** field, select the **Elster (DE)** format that you
+3.  In the **Format mapping** field, select the **Elster (DE)** format that you
     downloaded earlier.
 
-3.  Go to **Tax \> Declarations \> Sales tax \> Report sales tax for settlement
+4.  Go to **Tax \> Declarations \> Sales tax \> Report sales tax for settlement
     period**.
 
-4.  In the **Report sales tax for settlement period** dialog box, set the
+5.  In the **Report sales tax for settlement period** dialog box, set the
     following fields.
 
 | **Field**                 | **Description**                                                                                                                                                                                                                                                                         |
@@ -739,25 +737,22 @@ Create a VAT declaration in XML format
 | Transaction date          | Enter the date when the sales tax report is calculated. The default value is the current date. The sales tax payment is calculated for all transactions that were posted during the settlement period.                                                                                  |
 | Sales tax payment version | Select the type of sales tax settlement. If this sales tax settlement is the first sales tax settlement for the period, select **Original**. If a sales tax settlement has already been generated, select **Latest corrections**. For more information, see Create a sales tax payment. |
 
-5.  Select **OK**.
+6.  Select **OK**.
 
-6.  In the **German sales tax report** dialog box, set the following fields.
+7.  In the **German sales tax report** dialog box, set the following fields.
 
 | **Field**                      | **Description**                                                                                                                                                 |
 |--------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Create electronic tax document | Set this option to **Yes** to create an electronic document that contains the details of the report.                                                            |
 | Documents submitted separately | Set this option to **Yes** if the printed report isn't submitted together with the electronic document. In the XML file, code Kz22 should have the value **1**. |
 
-7.  Select **OK**. A new line is created on the **Electronic tax declaration
+8.  Select **OK**. A new line is created on the **Electronic tax declaration
     log** page (**Tax \> Declarations \> Sales tax \> Electronic tax declaration
     log**).
 
 ![](media/f5ae2f817d889a3c04378d40caa4f86f.png)
 
->   A screenshot of a cell phone Description automatically generated
-
-Preview the XML file
-====================
+## Preview the XML file
 
 1.  Go to **Tax \> Declarations \> Sales tax \> Electronic tax declaration
     log**.
@@ -773,8 +768,7 @@ Preview the XML file
     **Open** at the top of the page to open the file in the application that is
     associated with the .xml extension in your system.
 
-Submission the VAT declaration to ELSTER
-========================================
+## Submission the VAT declaration to ELSTER
 
 ELSTER (Elektronische Steuererklärung, or electronic tax declaration) is a
 German online tax office system that was designed by the Federal Central Tax
@@ -790,8 +784,7 @@ ELSTER, you must download ERiC dynamics-link libraries (DLLs).
 
 For more information about ERiC releases, see ELSTER website.
 
-Example
-=======
+## Example
 
 The following example shows how you can set up sales tax codes and sales tax
 reporting codes, post transactions, and generate the German VAT declaration.
@@ -813,8 +806,7 @@ reporting codes, post transactions, and generate the German VAT declaration.
 2.  On the **Sales tax codes** page, on the **Report setup** FastTab, assign
     reporting codes to sales tax codes.
 
->   The following table shows how to assign the sales tax reporting codes to
->   sales tax codes.
+The following table shows how to assign the sales tax reporting codes to sales tax codes.
 
 | **Sales tax code** | **Taxable sales** | **Tax-free sale** | **Sales tax payable** | **Taxable purchases** | **Sales tax receivable** | **Taxable import** | **Use tax** | **Offset use tax** |
 |--------------------|-------------------|-------------------|-----------------------|-----------------------|--------------------------|--------------------|-------------|--------------------|
@@ -833,12 +825,12 @@ reporting codes, post transactions, and generate the German VAT declaration.
 >   is used in the sales tax payment process, you must set a relevant sales tax
 >   reporting code in one or more fields on the **Report setup** FastTab.
 
-1.  Go to **Tax \> Setup \> Sales tax \> Electronic tax declaration setup**.
+3.  Go to **Tax \> Setup \> Sales tax \> Electronic tax declaration setup**.
 
-2.  In the **Format mapping** field, select the **Elster (DE)** format that you
+4.  In the **Format mapping** field, select the **Elster (DE)** format that you
     downloaded earlier.
 
-3.  Post the following transactions. For example, for customer invoices, go to
+5.  Post the following transactions. For example, for customer invoices, go to
     **Accounts receivable \> Invoices \> All free text invoices**. For vendor
     invoices, go to **Accounts payable \> Invoices \> Invoice journal**.
 
@@ -849,49 +841,43 @@ reporting codes, post transactions, and generate the German VAT declaration.
 | January 1, 2020 | Customer invoice (EU)     | 100            | 0              | EUS                | 41                                     | Not applicable                           |
 | January 1, 2020 | Customer invoice (export) | 100            | 0              | THIRD              | 43                                     | Not applicable                           |
 
-4.  Go to **Tax \> Declarations \> Sales tax \> Report sales tax for settlement
+6.  Go to **Tax \> Declarations \> Sales tax \> Report sales tax for settlement
     period**.
 
-5.  In the **Report sales tax for settlement period** dialog box, set the
+7.  In the **Report sales tax for settlement period** dialog box, set the
     following fields to the specified values:
 
     -   **Settlement period:** Mon
 
     -   **From date:** 1/1/2020
 
-6.  Select **OK**.
-
-7.  In the **German sales tax report** dialog box, select the **Create
-    electronic tax document** check box.
-
 8.  Select **OK**.
 
-9.  Go to **Tax \> Declarations \> Sales tax \> Electronic tax declaration
+9.  In the **German sales tax report** dialog box, select the **Create
+    electronic tax document** check box.
+
+10.  Select **OK**.
+
+11.  Go to **Tax \> Declarations \> Sales tax \> Electronic tax declaration
     log**, and select the required line.
 
-10. On the **Electronic tax declaration log** page, select the **General** tab,
+12. On the **Electronic tax declaration log** page, select the **General** tab,
     and review the general information.
 
 ![](media/5111b776232c1ab240d4a7f8a5549f1e.png)
 
->   A screenshot of a cell phone Description automatically generated
-
-1.  Select the **Preview** tab, and review the reported values.
+13.  Select the **Preview** tab, and review the reported values.
 
 ![](media/6cea6c691e3c5541743883800957c70a.png)
 
->   A screenshot of a social media post Description automatically generated
+14.  Select the paper clip symbol in the upper-right corner.
 
-1.  Select the paper clip symbol in the upper-right corner.
-
-2.  Select **Open** at the top of the page, and review the XML file.
+15.  Select **Open** at the top of the page, and review the XML file.
 
 ![](media/2bfa3e98f3f6f7c7be09dee43e75e67c.png)
 
->   A screenshot of a cell phone Description automatically generated
+### Correction transactions
 
-Correction transactions
------------------------
 
 1.  Post a new transaction. For example, to post a customer invoice, go to
     **Accounts receivable \> Invoices \> All free text invoices**.
@@ -924,29 +910,21 @@ Correction transactions
 
 ![](media/b459d3ed1d569025ba25f3b277ce241e.png)
 
->   A screenshot of a cell phone Description automatically generated
+Note that a correction transaction is added to the declaration in codes **86** and **83**.
 
->   Note that a correction transaction is added to the declaration in codes
->   **86** and **83**.
+9.  Select the paper clip symbol in the upper-right corner.
 
-1.  Select the paper clip symbol in the upper-right corner.
-
-2.  Select **Open** at the top of the page, and review the XML file.
+10.  Select **Open** at the top of the page, and review the XML file.
 
 ![](media/ff6823f95d9fd6e26c706524795a83d0.png)
 
->   A screenshot of a cell phone Description automatically generated
+Note that a correction transaction is added to the declaration in codes **86** and **83**.
 
->   Note that a correction transaction is added to the declaration in codes
->   **86** and **83**.
-
-Review sales tax report amounts 
-================================
+## Review sales tax report amounts 
 
 You can optionally review sales tax amount in SSRS report.
 
-Set up the report layout for sales tax authorities
---------------------------------------------------
+### Set up the report layout for sales tax authorities
 
 1.  Go to **Tax \> Indirect taxes \> Sales tax \> Sales tax authorities**.
 
@@ -955,8 +933,7 @@ Set up the report layout for sales tax authorities
 
 3.  In the **Report layout** field, select **German report layout**.
 
-Generate a sales tax payment and print the German sales tax report
-------------------------------------------------------------------
+### Generate a sales tax payment and print the German sales tax report
 
 At the end of the VAT reporting period, calculate the sales tax amounts for the
 settlement period.
@@ -976,12 +953,11 @@ settlement period.
 If you post transactions as described in step 5 of the example earlier in this
 topic, you will see the following data.
 
-![A screenshot of a cell phone Description automatically generated](media/83b3c318c4623d826f19395b8cafa548.png)
+![](media/83b3c318c4623d826f19395b8cafa548.png)
 
-![A close up of a device Description automatically generated](media/b0c82374958390951b9abd847b6f30ad.png)
+![](media/b0c82374958390951b9abd847b6f30ad.png)
 
-Print a sales tax payment report from a sales tax payment
----------------------------------------------------------
+### Print a sales tax payment report from a sales tax payment
 
 1.  Go to **Tax \> Inquiries and reports \> Sales tax payments**.
 
@@ -991,8 +967,7 @@ Print a sales tax payment report from a sales tax payment
 3.  In the dialog box, set the fields as described in the previous section, and
     then select **OK**.
 
-Report sales tax for the settlement period
-------------------------------------------
+### Report sales tax for the settlement period
 
 You can also generate the German sales tax report by using the **Report sales
 tax for settlement period** inquiry.
@@ -1017,14 +992,14 @@ tax for settlement period** inquiry.
 -   **Total list** – Generate a report for all sales transactions for the
     period. These transactions include original and corrected transactions.
 
-1.  Select **OK**.
+4.  Select **OK**.
 
-2.  Go to **Tax \> Declarations \> Sales tax \> Settle and post sales tax**.
+5.  Go to **Tax \> Declarations \> Sales tax \> Settle and post sales tax**.
 
-3.  In the **Settle and post sales tax** dialog box, in the **Sales tax payment
+6.  In the **Settle and post sales tax** dialog box, in the **Sales tax payment
     version** field, select **Original**.
 
-4.  Print the report, and review the data.
+7.  Print the report, and review the data.
 
 | **Reporting code** | **Sales tax amount** |
 |--------------------|----------------------|
@@ -1036,15 +1011,15 @@ tax for settlement period** inquiry.
 | 181                | 19                   |
 | 193                | 7                    |
 
-5.  Go to **Tax \> Declarations \> Sales tax \> Settle and post sales tax**.
+8.  Go to **Tax \> Declarations \> Sales tax \> Settle and post sales tax**.
 
-6.  In the **Settle and post sales tax** dialog box, in the **Sales tax payment
+9.  In the **Settle and post sales tax** dialog box, in the **Sales tax payment
     version** field, select **Latest corrections**.
 
-7.  Go to **Tax \> Declarations \> Sales tax \> Report sales tax for settlement
+10.  Go to **Tax \> Declarations \> Sales tax \> Report sales tax for settlement
     period**.
 
-8.  In the **Report sales tax for settlement period** dialog box, in the **Sales
+11.  In the **Report sales tax for settlement period** dialog box, in the **Sales
     tax payment version** field, select **Corrections**. The following table
     shows the result.
 
@@ -1053,10 +1028,10 @@ tax for settlement period** inquiry.
 | 86                 | 100                  |
 | 186                | 7                    |
 
-9.  Go to **Tax \> Declarations \> Sales tax \> Report sales tax for settlement
+12.  Go to **Tax \> Declarations \> Sales tax \> Report sales tax for settlement
     period**.
 
-10. In the **Report sales tax for settlement period** dialog box, in the **Sales
+13. In the **Report sales tax for settlement period** dialog box, in the **Sales
     tax payment version** field, select **Total list**. The following table
     shows the result.
 
