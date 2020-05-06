@@ -194,11 +194,11 @@ In order to the system could populate these blocks the following fields should b
 
 > [!NOTE]
 > In which block the system outputs data from **Base document** fields depends on the value specified in the **Base document** field: 
-> Payment order - **DatiOrdineAcquisto** block
-> Contract - **DatiContratto** block
-> Agreement - **DatiConvenzione** block
-> Management system - **DatiRicezione** block
-> Original invoice - **DatiFattureCollegate** block
+> - **Payment order** - **DatiOrdineAcquisto** block
+> - **Contract** - **DatiContratto** block
+> - **Agreement** - **DatiConvenzione** block
+> - **Management system** - **DatiRicezione** block
+> - **Original invoice** - **DatiFattureCollegate** block
 
 # Overview of electronic invoices page 
 
