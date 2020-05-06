@@ -37,4 +37,4 @@ This topic provides links to documentation resources for the Netherlands.
 - [VAT declaration](emea-nl-VAT-declaration.md)
 - [Electronic tax declarations (EVAT)](tasks/nl-00010-electronic-tax-declarations-evat.md)
 - [Semansys XBRL integration](tasks/nl-00003-semansys-xbrl-integration.md)
-- [NL-00011 Audit file (XML Auditfile Financieel, XAF)](emea-nl-audit-file.md)
+- [Audit file (XML Auditfile Financieel, XAF)](emea-nl-audit-file.md)
