@@ -73,11 +73,11 @@ Prices and discounts includes information about the prices, discounts, and rebat
 
 There are different options for the delivery process associated with a purchase order. Ordered products can be split into *delivery* schedules, where parts of the ordered quantity can be planned for delivery on different dates. Delivery can also include *direct delivery* initiated from a sales order, which automates the generation of the packing slip on the sales order at the same time as the product receipt is recorded on the purchase order. Purchase orders can also be part an *intercompany order* chain, also referred to as intercompany purchase orders, where products are ordered from a matching intercompany sales order. In this situation, some steps are automated across the two related intercompany orders.
 
-## Supplementary items
+### Supplementary items
 
 Products can be set up to include *supplementary items*. This is to propose products that are related to the product that's being ordered. The additional products may be required, or may be optional. In some cases, supplementary items may be added as free products that accompany the purchase of other products.
 
-## Purchase order charges
+### Purchase order charges
 
 Charges can be assigned to the purchase order. This can happen automatically through setup of automatic charges or by adding the charges manually. Charges can be assigned to the order at the header level, or at the order line level. Accounting of charges can be set up in different ways. For example, you can set up a charge to be accounted as a product cost. If you do this, the charges must be assigned at the order line level before the order can be confirmed. There is an option that can help allocate charges from the order header to the lines.
 
