@@ -1,6 +1,5 @@
----
-title: Calculate average and daily exchange rates (Hungary)
----
+
+# Calculate average and daily exchange rates (Hungary)
 
 According to the requirements for accounting foreign currencies under "Act C of
 2000 on Accounting," the cost of foreign currency holdings comprises either the
@@ -21,8 +20,8 @@ exchange rate for outgoing bank and cash transactions. It also explains how to
 use the function for calculating the daily exchange rate for incoming and
 outgoing bank and petty cash transactions.
 
-Daily exchange rate
-===================
+## Daily exchange rate
+
 
 You can use the function for calculating the daily exchange rate if you created
 ledger journal lines that have bank or petty cash transactions before you
@@ -46,14 +45,14 @@ March 31, 2020.
 
 -   **Exchange rate:** 92
 
-1.  Select **Save**.
+3.  Select **Save**.
 
-2.  Go to **General ledger \> Journal entries \> General journals**, and select
+4.  Go to **General ledger \> Journal entries \> General journals**, and select
     **New**.
 
-3.  In the **Name** field, select **GenJrn**.
+5.  In the **Name** field, select **GenJrn**.
 
-4.  Select **Lines**, and create the following lines.
+6.  Select **Lines**, and create the following lines.
 
 | **Date**      | **Account type** | **Account** | **Debit** | **Credit** | **Offset account type** | **Offset account** | **Currency** | **Exchange rate** |
 |---------------|------------------|-------------|-----------|------------|-------------------------|--------------------|--------------|-------------------|
@@ -62,34 +61,34 @@ March 31, 2020.
 | March 1, 2020 | Vendor           | DE-001      | 150       |            | Bank                    | DEMF USD           | USD          | 92                |
 | March 1, 2020 | Vendor           | DE-01001    | 250       |            | Bank                    | DEMF USD           | USD          | 92                |
 
-5.  Select **Save**, and verify that the currency exchange rate value on the
+7.  Select **Save**, and verify that the currency exchange rate value on the
     lines is **92**.
 
-6.  Go to **General ledger \> Currencies \> Currency exchange rates**, and
+8.  Go to **General ledger \> Currencies \> Currency exchange rates**, and
     select the **from USD to EUR** line.
 
-7.  Select **Add**, and set the fields to the following values:
+9.  Select **Add**, and set the fields to the following values:
 
 -   **Start date:** 3/1/2020
 
 -   **Exchange rate:** 91
 
-1.  Select **Save**.
+10.  Select **Save**.
 
-2.  Go to **General ledger \> Journal entries \> General journals**.
+11.  Go to **General ledger \> Journal entries \> General journals**.
 
-3.  Select the journal that you created earlier, and select **Lines**.
+12.  Select the journal that you created earlier, and select **Lines**.
 
-4.  Select **Functions \> Exchange rate calculation**.
+13.  Select **Functions \> Exchange rate calculation**.
 
-5.  In the **Exchange rate calculation** dialog box, set the fields to the
+14.  In the **Exchange rate calculation** dialog box, set the fields to the
     following values:
 
 -   **From date:** 3/1/2020
 
 -   **Calculation method:** Daily exchange rate
 
-1.  Select **OK**, and review the following data.
+15.  Select **OK**, and review the following data.
 
 | **Date**      | **Account type** | **Account** | **Debit** | **Credit** | **Offset account type** | **Offset account** | **Currency** | **Exchange rate** |
 |---------------|------------------|-------------|-----------|------------|-------------------------|--------------------|--------------|-------------------|
@@ -98,10 +97,10 @@ March 31, 2020.
 | March 1, 2020 | Vendor           | DE-001      | 150       |            | Bank                    | DEMF USD           | USD          | 91                |
 | March 1, 2020 | Vendor           | DE-01001    | 250       |            | Bank                    | DEMF USD           | USD          | 91                |
 
->   Notice that the **Exchange rate** column is set to **91** for all rows.
+Notice that the **Exchange rate** column is set to **91** for all rows.
 
-Average exchange rate
-=====================
+## Average exchange rate
+
 
 This example walks you through the function for calculating the average exchange
 rate for a bank account.
@@ -158,7 +157,7 @@ rate for a bank account.
 
 -   **Calculation method:** Average exchange rate
 
-1.  Select **OK**, and verify that the currency exchange rate value for the
+13.  Select **OK**, and verify that the currency exchange rate value for the
     outgoing bank transactions has been changed to **92**.
 
 | **Date**      | **Account type** | **Account** | **Debit** | **Credit** | **Offset account type** | **Offset account** | **Currency** | **Exchange rate** |
