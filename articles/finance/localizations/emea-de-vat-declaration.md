@@ -4,14 +4,14 @@
 This topic explains how to set up and generate the value-added tax (VAT)
 declaration for legal entities in Germany.
 
-For general information about how to set up the VAT statement, see *VAT
-reporting for Europe*.
+For general information about how to set up the VAT statement, see [VAT
+reporting for Europe](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/391150_DE_VAT/articles/finance/localizations/emea-vat-reporting.md).
 
 ## Set up sales tax reporting codes for VAT reporting
 
 
-Set up sales tax reporting codes by following the instructions in Set up sales
-tax reporting codes. The following table provides an example of sales tax
+Set up sales tax reporting codes by following the instructions in [Set up sales
+tax reporting codes](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/391150_DE_VAT/articles/finance/general-ledger/tasks/set-up-sales-tax-reporting-codes.md). The following table provides an example of sales tax
 reporting codes for Germany.
 
 <table width="614">
@@ -693,13 +693,14 @@ reporting codes for Germany.
 </table>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
+
 **Note:** For sample forms of advance VAT returns that include declaration row
-codes, see Forms in the VAT procedure for the year 2020.
+codes, see [Forms in the VAT procedure for the year 2020](https://umsatzsteuer-voranmeldung-2020.taxpool.net/Umsatzsteuer-Voranmeldung-2020.pdf).
 
 ## Set up sales tax codes
 
-Set up sales tax codes by following the instructions in *Sales tax codes for VAT
-reporting* and Sales tax overview.
+Set up sales tax codes by following the instructions in [Sales tax codes for VAT
+reporting](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/391150_DE_VAT/articles/finance/localizations/emea-vat-reporting.md#sales-tax-codes-for-vat-reporting) and [Sales tax overview](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/391150_DE_VAT/articles/finance/general-ledger/indirect-taxes-overview.md).
 
 **Note:** In a German legal entity, sales tax codes for tax-free sales should be
 set up according to the following rules:
@@ -711,13 +712,13 @@ set up according to the following rules:
 ## Create a VAT declaration in XML format
 
 
-1.  In Microsoft Dynamics Lifecycle Services (LCS), in the **Shared asset
+1.  In [Microsoft Dynamics Lifecycle Services (LCS)] (https://lcs.dynamics.com/V2), in the **Shared asset
     library**, download the latest versions of the Electronic reporting (ER)
     configurations for the VAT declaration format:
 
 -   **Elster (DE)**
 
-For more information, see Download Electronic reporting configurations from Lifecycle Services.
+For more information, see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
 2.  Go to **Tax \> Setup \> Sales tax \> Electronic tax declaration setup**.
 
@@ -735,7 +736,7 @@ For more information, see Download Electronic reporting configurations from Life
 | Settlement period         | Select the applicable reporting period.                                                                                                                                                                                                                                                 |
 | From date                 | Enter the first date of the sales tax settlement period that sales tax should be calculated for. This value corresponds to the date in the **From** field on the **Sales tax settlement periods** page.                                                                                 |
 | Transaction date          | Enter the date when the sales tax report is calculated. The default value is the current date. The sales tax payment is calculated for all transactions that were posted during the settlement period.                                                                                  |
-| Sales tax payment version | Select the type of sales tax settlement. If this sales tax settlement is the first sales tax settlement for the period, select **Original**. If a sales tax settlement has already been generated, select **Latest corrections**. For more information, see Create a sales tax payment. |
+| Sales tax payment version | Select the type of sales tax settlement. If this sales tax settlement is the first sales tax settlement for the period, select **Original**. If a sales tax settlement has already been generated, select **Latest corrections**. For more information, see [Create a sales tax payment](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/391150_DE_VAT/articles/finance/general-ledger/tasks/create-sales-tax-payment.md). |
 
 6.  Select **OK**.
 
@@ -774,15 +775,15 @@ ELSTER (Elektronische Steuererklärung, or electronic tax declaration) is a
 German online tax office system that was designed by the Federal Central Tax
 Office for online submission of tax declarations.
 
-The Developers area of the ELSTER website provides examples that show how
+The [Developers area](https://www.elster.de/elsterweb/entwickler/infoseite/download_eric_28.) of the ELSTER website provides examples that show how
 developers can interact with ELSTER Rich Client (ERiC) for the submission of VAT
 declarations in XML file format. Examples are provided for C++, C\#, and Java.
-To access this area of the website, you must be registered as a developer. An
+To access this area of the website, you must be [registered as a developer](https://www.elster.de/elsterweb/registrierung-entwickler). An
 example might help you create your own executable file that you can use to
 submit XML files via ERiC. To use an executable file to submit XML files to
 ELSTER, you must download ERiC dynamics-link libraries (DLLs).
 
-For more information about ERiC releases, see ELSTER website.
+For more information about ERiC releases, see [ELSTER website](https://www.elster.de/elsterweb/entwickler/infoseite/eric).
 
 ## Example
 
@@ -937,7 +938,7 @@ settlement period.
 1.  Go to **Tax \> Declarations \> Sales tax \> Settle and post sales tax**.
 
 2.  In the **Settle and post sales tax** dialog box, set the required fields as
-    described earlier.
+    described [earlier](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/391150_DE_VAT/articles/finance/localizations/emea-de-vat-declaration.md#create-a-vat-declaration-in-xml-format).
 
 3.  Select **OK**.
 
@@ -946,7 +947,7 @@ settlement period.
 
 5.  Select **OK** to generate the sales tax payment and review the report.
 
-If you post transactions as described in step 5 of the example earlier in this
+If you post transactions as described in step 5 of the [example](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/391150_DE_VAT/articles/finance/localizations/emea-de-vat-declaration.md#example) earlier in this
 topic, you will see the following data.
 
 ![](media/7_Sales_tax_reporting.png)
@@ -972,8 +973,8 @@ tax for settlement period** inquiry.
     period**.
 
 2.  In the **Report sales tax for settlement period** dialog box, set the
-    **Settlement period** and **From date** fields as described in the Generate
-    a sales tax payment and print the German sales tax report section earlier in
+    **Settlement period** and **From date** fields as described in the [Generate
+    a sales tax payment and print the German sales tax report](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/391150_DE_VAT/articles/finance/localizations/emea-de-vat-declaration.md#generate-a-sales-tax-payment-and-print-the-german-sales-tax-report) section earlier in
     this topic.
 
 3.  In the **Sales tax payment version** field, select one of the following
