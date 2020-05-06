@@ -150,15 +150,10 @@ You can import connection settings from a file or a QR code. Either way, you mus
 | **ActiveDirectoryResource** | Specify the Supply Chain Management root URL |
 | **ActiveDirectoryTenant** | Specify the Azure Active Directory tenant you are using with the Supply Chain Management Server. It takes the following form:<br>`https://login.windows.net/<your-AD-tenant-ID>`<br>For example:<br>`https://login.windows.net/contosooperations.onmicrosoft.com` |
 | **Company** | Enter the legal entity in Supply Chain Management to which you want the application to connect. |
-| **ConnectionType** | (Optional) Defines whether the connection setting should use a certificate or a client secret when connecting to an environment.
-Valid options are "certificate" or "clientsecret". The default value is "certificate".
-Note: It isn't possible to import a client secret. |
-| **IsEditable** | (Optional) Defines whether or not the connection setting should be editable by the app user.
-Valid options are "true" or "false". Default value is "true". |
-| **IsDefault** | (Optional) If a connection is set to be default, it will automatically be preselected when the app starts. Only one connection can be set as default.
-Valid options are "true" or "false". The default value is "false". |
-| **CertificateThumbprint** | (Optional) For Windows devices, you can specify the certificate thumbprint for the connection.
-For Android, the app user must select the certificate the first time a connection is used. |
+| **ConnectionType** | (Optional) Defines whether the connection setting should use a certificate or a client secret when connecting to an environment.<br><br>Valid options are "certificate" or "clientsecret". The default value is "certificate".<br><br>**Note:** It isn't possible to import a client secret. |
+| **IsEditable** | (Optional) Defines whether or not the connection setting should be editable by the app user.<br><br>Valid options are "true" or "false". The default value is "true". |
+| **IsDefault** | (Optional) If a connection is set to be default, it will automatically be preselected when the app starts. Only one connection can be set as default.<br><br>Valid options are "true" or "false". The default value is "false". |
+| **CertificateThumbprint** | (Optional) For Windows devices, you can specify the certificate thumbprint for the connection.<br><br>For Android, the app user must select the certificate the first time a connection is used. |
 
 The following example shows a valid connection settings file that contains two connections. As you can see, the connection list (called "ConnectionList" in the file) is an object with an array that stores each connection as an object. Each object must be enclosed inside curly braces and the array must be enclosed inside square brackets separated by commas.
 
@@ -235,7 +230,7 @@ To import connection settings from a file QR code:
 
     ![Sign in screen](media/app-connect-sign-in.png "Sign in screen")
 
-<a name="config-manually></a>
+<a name="config-manually"></a>
 
 ## Configure the application manually
 
