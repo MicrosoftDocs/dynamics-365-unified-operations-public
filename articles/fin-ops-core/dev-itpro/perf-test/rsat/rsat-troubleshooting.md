@@ -83,7 +83,7 @@ There was no endpoint listening at https://<yourURL>soap.sandbox.operations.dyna
 An error occurred while making the HTTP request to <Hostname>/Services/AxUserManagement/Service.svc/ws2007FedHttp. This could be due to the fact that the server certificate is not configured properly with HTTP.SYS in the HTTPS case. This could also be caused by a mismatch of the security binding between the client and the server.
 ```
 
-Assuming that you have specified the correct SOAP hostname in the settings dialog box, run the following PowerShell scripts on your client computer where the test tool is installed.
+Assuming that you have specified the correct SOAP hostname in the RSAT settings dialog box, run the following PowerShell scripts on your client computer where the test tool is installed.
 
 ```powershell
 Set-ItemProperty HKLM:\SOFTWARE\Microsoft\.NETFramework\v4.0.30319 -Name SchUseStrongCrypto -Value 1 -Type dword -Force -Confirm:$false
@@ -93,7 +93,7 @@ if ((Test-Path HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319))  
 
 You can also manually set the registry keys.
 
-### Cannot enumerate error
+### Cannot enumerate AX users error
 
 You may receive the following error when running a test case, or the error details may contain the following messages.
 
@@ -104,11 +104,11 @@ You may receive the following error when running a test case, or the error detai
 
 ![Enumerate error message box](media/cannot-enumerate.png)
  
-To resolve this error, verify the **Admin user name** specified in the RSAT settings dialog box. The **Admin user name** must be the email address of a user that belongs to the System Administrator role on the environment that RSAT is connecting to.
+To resolve this error, verify the **Admin user name** specified in the RSAT settings dialog box. The **Admin user name** must be the email address of a user that belongs to the System Administrator role on the Finance and Operations test environment that RSAT is connecting to. The user account (e-mail address) must also belong to the same tenant as the test environment. For example, if your F&O test environment's tenant is contoso.com, the admin user must end with @constoso.com .
 
 ## Browser
 
-The Chrome browser may not work with the Regression suite automation tool due to your Active Directory security settings. In this case, change your settings to use an Internet Explorer browser.
+The Google Chrome browser may not work with the Regression suite automation tool due to your Active Directory security settings. In this case, change your RSAT settings to use the new Microsoft Edge or Internet Explorer.
 
 ## Excel data tabs
 
