@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 10.0.9
 
 ## Before you begin
 
-Before you complete the steps in this topic, you must have a task recording of the business process that you want to analyze. To record a business process, see [Task recorder resources](../../user-interface/task-recorder.md). 
+This topic provides information about how to analyze and manage security permission requirements based on a task recording. Before you complete the steps in this topic, you must have a task recording of the business process that you want to analyze. To record a business process, see [Task recorder resources](../../user-interface/task-recorder.md). 
 
 ## Manage security for a task recording
 
