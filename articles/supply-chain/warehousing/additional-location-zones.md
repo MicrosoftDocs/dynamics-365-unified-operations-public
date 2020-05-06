@@ -34,16 +34,18 @@ ms.dyn365.ops.version: 10.0.1
 
 [!include [banner](../includes/banner.md)]
 
-## Enable the Additional location zone feature
-Before you can use this feature, it must be enabled on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature status and enable it if needed. Here, the feature is listed as:
-- **Module** - *Warehouse management* 
-- **Feature name** - *Additional location zone*
-
 Three new zone fields are available in Microsoft Dynamics 365 Supply Chain Management. Warehouse managers can use them to define additional warehouse organizations or layouts. The new zone fields can be set manually or by using the **Location setup** wizard. They can be used in any query or filtering that uses the Locations table.
 
 No additional setup is required to use the zone fields.
 
-## Use location zones 
+## Enable the Additional location zone feature
+
+Before you can use this feature, it must be enabled on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature status and enable it if needed. Here, the feature is listed as:
+
+- **Module** - *Warehouse management*
+- **Feature name** - *Additional location zone*
+
+## Use location zones
 
 1. Go to **Warehouse management \> Setup \> Warehouse \> Location setup wizard**.
 2. Set the following values:
