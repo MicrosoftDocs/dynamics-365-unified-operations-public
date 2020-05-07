@@ -48,7 +48,7 @@ As with (for example) the *Report as finished* mobile device menu item process, 
 
 ### Work policies with work creation
 
-Registration of physical on-hand where either the same warehouse worker immediately process a put-away work process following the inbound receiving (*License plate receiving and put away*) or where the registration and put away process gets handled as two different warehouse operations (License plate receiving) following the processing of the put-away work by using the existing work process via another mobile device menu item.
+When you register incoming items using a work policy that creates work, the system generates and saves put-away work records for each registration. If you use the *License plate receiving and put away* work process, then registration and put away are handled as a single operation using a single mobile device menu item. If you use the *License plate receiving* process, then the receiving and put-away processes are handled as two different warehouse operations, each with their own mobile device menu item.
 
 ### Work policies without work creation
 
