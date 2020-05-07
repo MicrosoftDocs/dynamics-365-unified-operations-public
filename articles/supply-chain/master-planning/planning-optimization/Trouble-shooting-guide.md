@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Trouble shooting
+title: Trouble shooting guide
 description: This topic focus on potential issues that you might encounter, related to Planning Optimization, and how to fix the issue.
 author: ChristianRytt
 manager: tfehr
@@ -29,7 +29,7 @@ ms.search.validFrom: 2020-5-7
 ms.dyn365.ops.version: AX 10.0.9
 
 ---
-# Trouble shooting
+# Trouble Shooting Guide
 
 [!include [banner](../../includes/banner.md)]
 
