@@ -41,7 +41,7 @@ This topic describes how to define and configure warehousing app field names and
 
 ## Configure warehousing app field names
 
-When you use Warehousing on your mobile device, you can configure how metadata should be displayed on your device on the **warehousing app field names** page. In a new company, select **Create default setup** to generate all field names that will be used in the warehouse mobile device workflows, and then assign a preferred input mode and input type to them. After you have generated all field names, you can select the following input options.
+When you use Warehousing on your mobile device, you can configure how metadata should be displayed on your device on the **Warehouse app field names** page. In a new company, select **Create default setup** to generate all field names that will be used in the warehouse mobile device workflows, and then assign a preferred input mode and input type to them. After you have generated all field names, you can select the following input options.
 
 <table>
 <colgroup>
@@ -74,7 +74,7 @@ When you use Warehousing on your mobile device, you can configure how metadata s
 
 ## Configure warehousing app field priority
 
-On the **warehousing app field priority** page, you can put field names into different priority groups. This makes it possible to decide what information should be displayed on the main task page when warehouse workers perform tasks using the app. If you click **Create default setup**, a default set of priority groups will be generated. It is possible to create as many priority groups as needed, but only three priority groups will be shown on the task page. When the system sends metadata to the app, it will assign each field a relative priority depending on its priority group, and the app will display the first three priority groups contained in the metadata on the task page. The rest of the overflowing metadata will be displayed on a secondary details page. The following table shows an example of five priority groups.
+On the **Warehouse app field priority** page, you can put field names into different priority groups. This makes it possible to decide what information should be displayed on the main task page when warehouse workers perform tasks using the app. If you click **Create default setup**, a default set of priority groups will be generated. It is possible to create as many priority groups as needed, but only three priority groups will be shown on the task page. When the system sends metadata to the app, it will assign each field a relative priority depending on its priority group, and the app will display the first three priority groups contained in the metadata on the task page. The rest of the overflowing metadata will be displayed on a secondary details page. The following table shows an example of five priority groups.
 
 <table>
 <colgroup>
