@@ -61,11 +61,19 @@ This is caused by a pending feature for Planning Optimization.
 
 **Fix**: Until the pending feature is available, filter or delete planned orders to remove supply suggestions outside of the coverage time fence.
 
-## Planning Operation can't be enabled
+## Can't enable Planning Operation
 
 The **Connection status** must be *Connected* before you can set **Use Planning Optimization** to *Yes*. For more information, see: [Get started with Planning Optimization](get-started.md).
 
-**Fix**: Make sure that the Planning Optimization add-in is successfully installed.
+**Fix**: Make sure that the Planning Optimization add-in was installed successfully.
+
+## Error message is shown during CTP
+
+If you run capable to promise (CTP) from a sales order with **Use Planning Optimization** set to *Yes*, you will see the following error message: *This operation triggered master planning that isn't supported when the Planning Optimization is enabled*.
+
+This is related to a pending feature that is planned as part of the support for production orders.
+
+**Fix:** Avoid CTP calculations when Planning Optimization is enabled until CTP support is available.
 
 ## Related resources
 
