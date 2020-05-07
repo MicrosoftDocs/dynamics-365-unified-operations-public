@@ -5,7 +5,7 @@ title: Planning Optimization fit analysis
 description: This topic explains how to verify your current setup and data against the capabilities of the Planning Optimization functionality. 
 author: ChristianRytt
 manager: tfehr
-ms.date: 04/17/2020
+ms.date: 05/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -102,7 +102,7 @@ The following table shows the various results that can be shown after a fit anal
 | Sales quotations | Master plans with sales quotations enabled: _\#_ | This feature is pending. Currently, quotations aren't considered when Planning Optimization is enabled. They will be ignored, regardless of this setting. |
 | Shelf life | Master plans with shelf life enabled: _\#_ | This feature is pending. Currently, shelf life isn't considered when Planning Optimization is enabled, regardless of this setting. |
 
-## Related resources
+## Additional resources
 
 [Planning Optimization overview](planning-optimization-overview.md)
 
