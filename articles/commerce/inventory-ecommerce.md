@@ -59,13 +59,13 @@ Alternatively, there is a legacy ecommerce setting called **Inventory out of sto
 Buy box, Cart, Wishlist, Store selector, Cart icon modules rely on the inventory settings. These modules display inventory ranges and/or error messages when a product cannot be added to cart due to lack of inventory. 
 
 Example of PDP showing In stock message
-![Example of a PDP module with in stock](./media/pdp-InStock.PNG)
+![Example of a PDP module with in stock](./media/pdp-InStock.png)
 
 Example of PDP showing Out of stock message
-![Example of a PDP module with out stock](./media/pdp-outofstock.PNG)
+![Example of a PDP module with out stock](./media/pdp-outofstock.png)
 
 Example of Cart showing In stock message
-![Example of a Cart module with in stock](./media/cart-instock.PNG)
+![Example of a Cart module with in stock](./media/cart-instock.png)
 
 ## Additional resources
 
