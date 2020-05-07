@@ -182,17 +182,6 @@ Before you enable dual-write, follow these steps to make sure that you meet the 
 
     Make sure that the Finance and Operations app and Common Data Service are installed under the same tenant. Cross-tenant scenarios aren't currently supported.
 
-9. Install the dual-write entity maps solution.
-
-    1. In Power Apps, in the left pane, select **Solutions**. Select **Open AppSource**, and search for the solution that is named **Dual-write application orchestration solution**. Select the solution, and follow the prompts to import it. After installation, you'll find several new solutions listed under **Manage your solutions**. For more information, see [Solutions overview](https://docs.microsoft.com/powerapps/maker/common-data-service/solutions-overview).
-
-    2. In the Finance and Operations app, on the **Dual-write** page, select **Apply Solution** to apply the entity maps that you just downloaded and installed. After you apply the solution, you should see that the default entity maps are published.
-
-        ![Applying the entity maps](media/apply-entity-maps.png)
-
-You've now successfully imported and applied a Microsoft-published dual-write entity map solution to your environment.
-
-![Dual-write imported and applied](media/dual-write-imported-applied.png)
 
 ## Next steps
 
