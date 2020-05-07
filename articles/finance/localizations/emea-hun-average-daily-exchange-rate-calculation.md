@@ -2,7 +2,7 @@
 # required metadata
 
 title: Calculate average and daily exchange rates
-description: This topic explains how to use the function for calculating the average currency exchange rate for outgoing bank and cash transactions.
+description: This topic explains how to calculate the average currency exchange rate for outgoing bank and cash transactions.
 author: v-lurodi
 manager: AnnBe
 ms.date: 05/07/2020
