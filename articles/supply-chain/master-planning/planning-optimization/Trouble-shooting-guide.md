@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Trouble shooting guide
-description: This topic focus on potential issues that you might encounter, related to Planning Optimization, and how to fix the issue.
+title: Planning Optimization trouble shooting guide
+description: This topic describes how to fix several common issues that you might encounter while working with Planning Optimization.
 author: ChristianRytt
 manager: tfehr
 ms.date: 05/07/2020
@@ -29,47 +29,43 @@ ms.search.validFrom: 2020-5-7
 ms.dyn365.ops.version: AX 10.0.9
 
 ---
-# Trouble Shooting Guide
+# Planning Optimization trouble shooting guide
 
 [!include [banner](../../includes/banner.md)]
 
-This topic focus on potential issues that you might encounter, related to Planning Optimization, and how to fix the issues.
+This topic describes how to fix several common issues that you might encounter while working with Planning Optimization.
 
-## Installation of Planning Optimization add-in from LCS is not completing
+## Installation of the Planning Optimization add-in doesn't complete
 
-The requirement for Planning Optimization is an LCS enabled high-availability environment, tier 2 or higher (not a OneBox environment), with Dynamics 365 Supply Chain Management version 10.0.7 or later. If you try to install the add-in on a OneBox environment, the installation will not complete and you will need to cancel the installation.
+Planning Optimization requires an LCS-enabled, high-availability environment, tier 2 or higher (not a OneBox environment), with Dynamics 365 Supply Chain Management version 10.0.7 or later. If you try to install the add-in on a OneBox environment, the installation won't complete.
 
-Fix: Cancel the installation and ensure to use a high-availability environment, tier 2 or higher (not a OneBox environment).
+**Fix**: Cancel the installation and be sure to use a high-availability environment, tier 2 or higher (not a OneBox environment).
 
-## Planning batch jobs fails with Planning Optimization enabled
+## Planning of batch jobs fails when Planning Optimization is enabled
 
-With Planning Optimization enabled the Built-in master planning engine is disabled. If existing planning batch jobs, that were created for the built-in Supply Chain Management planning engine, are triggered while the Use Planning Optimization option is set to Yes, those jobs will fail. 
+When you enable Planning Optimization, the built-in master planning engine is automatically disabled. Master planning batch jobs that were created for the built-in Supply Chain Management planning engine will fail if they are triggered while **Use Planning Optimization** is set to *Yes*.
 
-Error message example: This operation triggered master planning which is not supported when the Planning Optimization is enabled.
+**Error message example**: *This operation triggered master planning that isn't supported when Planning Optimization is enabled*.
 
-Fix: Ensure that these batch master planning jobs are canceled.
+**Fix**: Cancel all master planning batch jobs that were created for the built-in Supply Chain Management planning engine.
 
-## Master planning result with Planning Optimization enabled is not identical to earlier results
+## Planning Optimization results are different from earlier results
 
-Planning Optimization do differ from the built-in master planning design in some areas. This can also be caused by pending features.
+Planning Optimization differs from the built-in master planning design in some areas. This can also be caused by pending features.
 
-Fix: Run Planning Optimization fit analysis and analyze the result with the related documentation to understand the impact: [Planning Optimization fit analysis](planning-optimization-fit-analysis.md). 
+**Fix**: Run Planning Optimization fit analysis and then analyze the results while referring to the related documentation to understand the impact. See also [Planning Optimization fit analysis](planning-optimization-fit-analysis.md).
 
-## Master planning is not respecting Coverage time fence
+## Master planning doesn't respect the coverage time fence
 
 This is caused by a pending feature for Planning Optimization.
 
-Fix: Until the feature is available filter or deletion of planned orders can be used to remove supply suggestions outside of the Coverage time fence.
+**Fix**: Until the pending feature is available, filter or delete planned orders to remove supply suggestions outside of the coverage time fence.
 
-## Unable set Use Planning Optimization = Yes
+## Planning Operation can't be enabled
 
-The Connection status must be Connected before you can set Use Planning Optimization to Yes. Read more in the get started documentation: [Get started with Planning Optimization](get-started.md).
+The **Connection status** must be *Connected* before you can set **Use Planning Optimization** to *Yes*. For more information, see: [Get started with Planning Optimization](get-started.md).
 
-Fix: Ensure that the Planning Optimization add-in is successfully installed.
-
-
-
-
+**Fix**: Make sure that the Planning Optimization add-in is successfully installed.
 
 ## Related resources
 
