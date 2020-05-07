@@ -2,10 +2,10 @@
 # required metadata
 
 title: Unit of measure conversion per product variant
-description: This topic explains how unit of measure conversions can be set up on product variants.
+description: This topic explains how to set up unit of measure conversions for product variants. It includes an example of the setup.
 author: johanhoffmann
 manager: tfehr
-ms.date: 01/06/2020
+ms.date: 05/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,60 +34,75 @@ ms.dyn365.ops.version: 10.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how unit of measure conversions can be set up on product variants. It includes an example of the setup.
+This topic explains how to set up unit of measure conversions for various product variants.
 
-This feature makes it possible for companies to define different unit conversion between the variants of the same product. The following example is used in this topic. A company sells T-shirts in sizes Small, Medium, Large, and Extra-Large. The T-shirt is defined as a product, and the different sizes are defined as variants of the product. The T-shirts are packed in boxes and there can be five T-shirts in a box, except for the Extra-Large size where there is only space for four T-shirts. The company wants to track the different variants of the T-shirts in the unit **Pieces** but is selling the T-shirts in the unit **Boxes**. The conversion between the inventory unit and the sales unit is 1 Box = 5 Pieces, except for the variant Extra-Large, where the conversion is 1 Box = 4 Pieces.
+You can use product variants to create variations of a product instead of creating several individual products that must be maintained. A product variant could, for example, be a T-shirt of a given size and color. Previously, it was only possible to set up the unit conversion on the product master, which meant that all product variants had the same unit conversion rules. With this feature, if your T-shirts are sold in boxes, and the number of t-shirts that can be packed in a box depends on the size of the t-shirts, you can now set up unit conversions between the different shirt sizes and the boxes used for packaging.
 
-### Set up a product for unit conversion per variant
+## Enable the feature on your system
 
-Product variants can only be created for products of **Product subtype**: **Product master**. For more information, see [Create a product master](tasks/create-product-master.md).
+If you don't already see this feature on your system, go to [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and enable the *Unit of measure conversions for product variants* feature.
 
-The feature is not enabled for products that are set up for Catch Weight processes. 
+## Set up a product for unit conversion per variant
 
-When the product master with released products variants is created, unit conversions per variants can be set up. You can find the menu item for opening the unit conversion page in context of a product or a product variant on the following pages.
+Product variants can only be created for products that are **Product masters**. For more information, see [Create a product master](tasks/create-product-master.md). The feature is not enabled for products that are set up for catch weight processes.
 
--   **Product details** page
--   **Released products details** page
--   **Released product variants** page
+To configure a product master to support unit conversion per variant:
 
-When you open the **Unit conversion** page in context of a product master or released product variant, you can select if you want to set up the unit conversion for the product or for a product variant. You do that by selecting either **Product variant** or **Product** in the **Create conversion for** field.
+1. Go to **Product information management > Products > Product masters**.
+1. Create or open a product master to go to its **Product details** page.
+1. Set **Enable unit of measure conversions** to *Yes*.
+1. Open the **Product** tab on the action pane and then select **Set up > Unit conversions**.
+1. Select **Unit conversions** on the action pane to open the **Unit conversions** page.
+1. The **Unit conversions** page opens. Select one of the following tabs:
+    - **Intra-class conversions** - <!-- KFM what is this? Why would I pick this? -->
+    - **Inter-class conversions** - <!-- KFM what is this? Why would I pick this? -->
+1. Select **New** to add a new unit conversion. Then set **Create conversion for** to one of the following:
+    - **Product** - Lets you set up a unit conversion for the product master. This unit conversion will apply for all product variants that don't have a unit conversion defined.
+    - **Product variant** - Lets you select the specific variant that you want to set a unit conversion for. Use the **Product variant** field to choose the variant.
 
-### Product variant
+    ![Add a new unit conversion](media/uom-new-conversion.png "Add a new unit conversion")
 
-If you select **Product variant,** then you can select for which variant you want to set up the unit conversion in the **Product variant** field.
+1. Use the other fields provided here to set up your unit conversion. <!-- KFM: Is this sufficient? Do we have a topic we can link to for these details? -->
+1. Select **OK** to save the conversion.
 
-### Product
+<!-- KFM: I don't think we need this, but keeping it just in case:
 
-If you select **Product**, then you can set up a unit conversion for the product master. This unit conversion will apply for all product variants with no defined unit conversion.
+You can find the menu item for opening the unit conversion page in context of a product or a product variant on the following pages.
 
-### Example
+- **Product details** page
+- **Released products details** page
+- **Released product variants** page
 
-A product master, **T-Shirt**, has four released products variants Small, Medium, Large, and X-Large. The T-shirts are packed in boxes and there can be five T-shirts in a box, except for the Extra-large size where there is only space for four T-shirts.
+ -->
 
-First, open the **Unit conversion** page from the Release product details page for **T-shirt.**
+## Example scenario
 
-On the **Unit conversion** page, set up the unit conversion for the release product variant X-Large.
+In this scenario, a company is selling T-shirts in sizes small, medium, large, and extra-large. The T-shirt is defined as a product, and the different sizes are defined as variants of that product. The shirts are packed in boxes and there can be five shirts in a box, except for the extra-large size, where there is only space for four shirts. The company wants to track the different variants of the T-shirts in the unit *Pieces*, but is selling them in the unit *Boxes*. The conversion between the inventory unit and the sales unit is 1 Box = 5 Pieces, except for the variant extra-large, where the conversion is 1 Box = 4 Pieces.
 
-| **Field**             | **Setting**             |
-|-----------------------|-------------------------|
-| Create conversion for | Product variant         |
-| Product variant       | T-Shirt : : X-Large : : |
-| From unit             | Boxes                   |
-| Factor                | 4                       |
-| To Unit               | Pieces                  |
+1. First, open the **Unit conversion** page from the **Release product details** page for **T-shirt.**
 
-The Released product variants Small, Medium, and Large have the same unit conversion between the unit Box and Pieces, which means that you can define the unit conversion for these product variants on the product master.
+1. On the **Unit conversion** page, set up the unit conversion for the release product variant X-Large:
 
-| **Field**             | **Setting** |
-|-----------------------|-------------|
-| Create conversion for | Product     |
-| Product               | T-Shirt     |
-| From unit             | Boxes       |
-| Factor                | 5           |
-| To Unit               | Pieces      |
+    | **Field**             | **Setting**             |
+    |-----------------------|-------------------------|
+    | Create conversion for | Product variant         |
+    | Product variant       | T-Shirt : : X-Large : : |
+    | From unit             | Boxes                   |
+    | Factor                | 4                       |
+    | To Unit               | Pieces                  |
 
-### Using Excel to update the unit conversions
+1. The variants small, medium, and large all have the same unit conversion between the units box and pieces, which means that you can define the unit conversion for these product variants on the product master.
 
-If a product has many product variants with different unit conversions, it's a good idea to export the unit conversions from the **Unit conversion** page to an Excel spreadsheet, update the conversions, and then publish them back to Supply Chain Mangement.
+    | **Field**             | **Setting** |
+    |-----------------------|-------------|
+    | Create conversion for | Product     |
+    | Product               | T-Shirt     |
+    | From unit             | Boxes       |
+    | Factor                | 5           |
+    | To Unit               | Pieces      |
 
-The option to export to Excel and publish the edits back to Supply Chain Mangement is enabled from the **Open in Microsoft office** menu item on the Action Pane on the **Unit conversion** page.
+## Using Excel to update the unit conversions
+
+If a product has many product variants with different unit conversions, it's a good idea to export the unit conversions to an Excel spreadsheet, update the conversions, and then publish them back to Supply Chain Management.
+
+To export to Excel, go to the **Unit conversion** page and select **Open in Microsoft office** on the action pane.,
