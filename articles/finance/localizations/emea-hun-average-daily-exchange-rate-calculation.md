@@ -1,5 +1,37 @@
+---
+# required metadata
 
-# Calculate average and daily exchange rates (Hungary)
+title: Calculate average and daily exchange rates
+description: This topic explains how to use the function for calculating the average currency exchange rate for outgoing bank and cash transactions.
+author: v-lurodi
+manager: AnnBe
+ms.date: 05/07/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: AssetParameters
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kfend
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 264684
+ms.search.region: Hungary
+# ms.search.industry: 
+ms.author: epopov
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Version 1611
+
+---
+
+# Calculate average and daily exchange rates
+
+[!include [banner](../includes/banner.md)]
+
 
 According to the requirements for accounting foreign currencies under "Act C of
 2000 on Accounting," the cost of foreign currency holdings comprises either the
