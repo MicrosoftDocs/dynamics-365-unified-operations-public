@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Daylight Saving Time support for batch job active periods
-description: This topic provides information about a feature to introduce daylight saving time support for batch job active periods.
+title: Daylight saving time support for batch job active periods
+description: This topic provides information about daylight saving time support for batch job active periods.
 author: karimelazzouni
 manager: AnnBe
 ms.date: 05/07/2020
@@ -28,15 +28,20 @@ ms.dyn365.ops.version: Platform update 36
 
 [!include [banner](../includes/banner.md)]
 
-With the release of Platform update 36, it is possible to enable **Daylight Saving Time support for batch job active periods**, in [Feature management](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview). 
-As the name suggests, this feature will introduce DST support to [batch job active periods](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/activeperiod). It will also enable the user to associate their different active periods to different time zones.
+[!include [banner](../includes/preview-banner.md)]
+
+With the release of Microsoft Dynamics 365 Finance version 10.0.12, it is possible to enable **Daylight Saving Time support for batch job active periods**, in [Feature management](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview). 
+This feature introduces daylight saving time (DST) support to [batch job active periods](activeperiod.md) and enables users to associate their different active periods to different time zones.
 
 > [!NOTE] 
-> This feature is a one-way feature. It cannot be disabled once it's enabled.
+> This feature is a one-way feature. It can't be disabled after it's been enabled.
 
-## What happens once you enable the feature
+When this feature is enabled, the following occurs:
 
-1. The Batch jobs active periods form will have one additional field next to each active period: Timezone. This is the time zone that the active period would follow from now on. Every active period would initially follow the UTC time zone.
+- The **Batch jobs active periods** page will have the field, **Timezone** added next to each active period. This is the time zone that the active period would follow. Every active period initially follows the UTC time zone.
+
 ![Active Period Form](./media/active-periods-dst.png)
-1. Start and end times of the existing active periods will be adjusted to the UTC time zone. Effectively, they will run at the same time as before, but their displayed start and end times might change if the user’s preferred time zone is not UTC.
-1. Active periods will follow the daylight savings time adjustments of the time zones they’re associated with.
+
+- The start and end times of the existing active periods will be adjusted according to the UTC time zone. The times will run at the same time as before, but the displayed start and end times might change if the user’s preferred time zone is not UTC.
+
+- Active periods will follow the daylight savings time adjustments of the time zones they’re associated with.
