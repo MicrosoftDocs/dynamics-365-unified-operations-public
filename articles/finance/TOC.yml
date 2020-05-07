@@ -1744,8 +1744,6 @@
         items:
         - name: Hungary overview
           href: localizations/hungary.md
-        - name: Exchange rate calculation
-          href: localizations/tasks/hu-00001-exchange-rate-calculation.md
         - name: Fixed asset depreciation methods
           href: localizations/emea-hun-fixed-assets-depreciation-methods.md
         - name: Low-cost fixed assets
