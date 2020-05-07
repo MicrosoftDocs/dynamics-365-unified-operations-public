@@ -42,13 +42,9 @@ Breadcrumb module is used as secondary navigation on site pages. It provides a q
 The breadcrumb can also be used on any other page with a curated list of breadcrumb links, e.g. on an Account management page.
 
 Below is an example of breadcrumb on product details page showing the category heirarchy
-![Example of a breadcrumb module](./media/ecommerce-breadcrumb1.PNG)
+![Example of a breadcrumb module](./media/ecommerce-breadcrumb.PNG)
 
-Below is an example of breadcrumb on product details page showing the back to results.
-![Example of a breadcrumb module](./media/ecommerce-breadcrumb2.PNG)
 
-Below is an example of breadcrumb on the Account management page showing the curated set of links.
-![Example of a breadcrumb module](./media/ecommerce-breadcrumb3.PNG)
 
 ## Module overview
 Breadcrumb is a module that can be added to any page. Its typically showcased on the top of the page below the header.
