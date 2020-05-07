@@ -663,11 +663,11 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     > Make sure that Always-On is set up as described in [Select Initial Data Synchronization Page (Always On Availability Group Wizards)](/sql/database-engine/availability-groups/windows/select-initial-data-synchronization-page-always-on-availability-group-wizards), and follow the instructions in [To Prepare Secondary Databases Manually](/sql/database-engine/availability-groups/windows/select-initial-data-synchronization-page-always-on-availability-group-wizards#PrepareSecondaryDbs).
 
 2. Run the SQL service as a domain user or a group-managed service account.
-3. Get an SSL certificate from a certificate authority to configure the SQL Server for Finance + Operations. For testing purposes, you can create and use a self-signed certificate. You will need to replace the computer name and domain name in the following examples:
+3. Get an SSL certificate from a certificate authority to configure SQL Server for Finance + Operations. For testing purposes, you can create and use a self-signed certificate. You will need to replace the computer name and domain name in the following examples.
 
     **Self-signed certificate for an Always-On SQL instance**
 
-    If setting up testing certificates for Always-On, you can use the following **remoting** script, which will perform the same as the following **manual** script and steps **a-e**.
+    If you are setting up testing certificates for Always-On, use the following **remoting** script. This will perform the same as the following **manual** script and steps **a-e**.
 
     ```powershell
     .\Create-SQLTestCert-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml `
