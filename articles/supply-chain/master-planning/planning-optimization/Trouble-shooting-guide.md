@@ -61,7 +61,7 @@ This is caused by a pending feature for Planning Optimization.
 
 **Fix**: Until the pending feature is available, filter or delete planned orders to remove supply suggestions outside of the coverage time fence.
 
-## Can't enable Planning Operation
+## Can't enable Planning Optimization
 
 The **Connection status** must be *Connected* before you can set **Use Planning Optimization** to *Yes*. For more information, see: [Get started with Planning Optimization](get-started.md).
 
