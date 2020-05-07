@@ -57,7 +57,7 @@ To configure a product master to support unit conversion per variant:
     - **Intra-class conversions** - <!-- KFM what is this? Why would I pick this? -->
     - **Inter-class conversions** - <!-- KFM what is this? Why would I pick this? -->
 1. Select **New** to add a new unit conversion. Then set **Create conversion for** to one of the following:
-    - **Product** - Lets you set up a unit conversion for the product master. This unit conversion will apply for all product variants that don't have a unit conversion defined.
+    - **Product** - Lets you set up a unit conversion for the product master. This unit conversion will will serve as fallback for all product variants that don't have a unit conversion defined.
     - **Product variant** - Lets you select the specific variant that you want to set a unit conversion for. Use the **Product variant** field to choose the variant.
 
     ![Add a new unit conversion](media/uom-new-conversion.png "Add a new unit conversion")
