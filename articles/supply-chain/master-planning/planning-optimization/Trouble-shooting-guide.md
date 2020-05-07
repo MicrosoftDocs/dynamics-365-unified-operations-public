@@ -61,7 +61,7 @@ This is caused by a pending feature for Planning Optimization.
 
 **Fix:** Until the feature is available filter or deletion of planned orders can be used to remove supply suggestions outside of the Coverage time fence.
 
-## Unable set Use Planning Optimization = Yes
+## Unable to set Use Planning Optimization = Yes
 
 The Connection status must be Connected before you can set Use Planning Optimization to Yes. Read more in the get started documentation: [Get started with Planning Optimization](get-started.md).
 
