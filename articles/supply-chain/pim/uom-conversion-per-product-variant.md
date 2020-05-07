@@ -65,15 +65,12 @@ To configure a product master to support unit conversion per variant:
 1. Use the other fields provided here to set up your unit conversion. <!-- KFM: Is this sufficient? Do we have a topic we can link to for these details? -->
 1. Select **OK** to save the conversion.
 
-<!-- KFM: I don't think we need this, but keeping it just in case:
-
-You can find the menu item for opening the unit conversion page in context of a product or a product variant on the following pages.
-
-- **Product details** page
-- **Released products details** page
-- **Released product variants** page
-
- -->
+> [!TIP]
+> You can open the **Unit conversions** settings in the context of a product or a product variant from any of the following pages:
+> 
+> - **Product details**
+> - **Released products details**
+> - **Released product variants**
 
 ## Example scenario
 
