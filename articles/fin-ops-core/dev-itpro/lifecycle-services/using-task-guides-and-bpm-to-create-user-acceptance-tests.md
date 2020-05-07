@@ -171,10 +171,6 @@ Developers can use the build and test automation capabilities of **build and tes
 
 Functional power users can automate the execution of their test cases using the **Regression suite automation tool**. For more information, [download the tool](https://www.microsoft.com/download/details.aspx?id=57357) and read the [Regression suite automation tool](../perf-test/rsat/rsat-overview.md).
 
-To learn more about using the Regression suite automation tool, see [Regression suite automation tool](../perf-test/rsat/rsat-overview.md).
- 
-For a hands-on lab experience, see [Use the Regression suite automation tool tutorial](../../fin-ops/get-started/hol-use-regression-suite-automation-tool.md).
-
 #### Investigate test runs
 Once an automated run is complete, on the Azure DevOps toolbar, select **Test > Runs** (or **Test Plans > Runs**) to investigate your test run. Select the desired test run to investigate test case failures and errors. You can also go to your test suite in Azure DevOps to see the latest results associated with your test cases.
 For more information on testing and test management in Azure DevOps, see the [Azure DevOps documentation](https://docs.microsoft.com/azure/devops).
