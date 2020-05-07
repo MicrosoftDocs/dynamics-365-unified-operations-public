@@ -143,8 +143,7 @@ Before you enable dual-write, follow these steps to make sure that you meet the 
 
         By selecting **Accept**, you indicate that you're providing consent to install the app that has application ID **33976c19-1db5-4c02-810e-c243db79efde** in your tenant. Common Data Service requires this app to communicate with the Finance and Operations app.
 
-    3. Repeat the previous two steps for application ID **2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b**.
-
+    
     **Related health check result:**
 
     *Apps in tenant*
