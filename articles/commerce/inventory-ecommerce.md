@@ -39,9 +39,9 @@ This topic covers Inventory settings and describes how these settings can be app
 ## Overview
 Inventory settings for e-commerce are defined in Site builder under Sites Settings\Extensions within a  group called "Inventory Management". Inventory settings allow the site to decide if inventory should be checked before items are added to cart and also define inventory related merchandising such as "In Stock" "Only few left" etc. When a product is out of stock these settings ensure the product cannot be purchased.
 
-Microsoft Dynamics 365 Commerce provides on-hand availability for products which is used on e-commerce to drive the inventory scenarios. For details on how estimated on-hand availability is calculated for products see this  https://docs.microsoft.com/en-us/dynamics365/commerce/calculated-inventory-retail-channels. 
+Microsoft Dynamics 365 Commerce provides on-hand availability for products. For details on how estimated on-hand availability is calculated refer to [Calculate inventory availability for retail channels](calculated-inventory-retail-channels.md).
 
-Inventory thresholds and ranges for each product can be defined in Microsoft Dynamics 365 Commerce. For details, refer to 
+Inventory thresholds and ranges can be defined in Microsoft Dynamics 365 Commerce for a product or category. These ranges help define inventory settings that are in-stock vs. low-stock etc. For details, refer to [TBD](tbd)
 
 ## Site settings on ecommerce 
 
@@ -62,15 +62,10 @@ Buy box, Cart, Wishlist, Store selector, Cart icon modules rely on the inventory
 
 [Starter kit overview](starter-kit-overview.md)
 
-[Buy box](add-cart-module.md)
+[Cart](add-cart-module.md)
 
-[Cart](add-buy-box.md)
-
-[Wishlist](account-management.md)
 [Buy box](add-buy-box.md)
 
-[Cart]
+[Wishlist](account-management.md)
 
-[Wishlist]
-
-[Store selectpr]
+[Store selectpr](add-store-selector.md)
