@@ -5,6 +5,7 @@
       "redirect_url": "dev-retail-home-page",
       "redirect_document_id": "false"
     },
+    {
       "source_path": "articles/fin-ops-core/dev-itpro/data-entities/dual-write/initial-sync.md",
       "redirect_url": "enable-entity-map",
       "redirect_document_id": "false"
