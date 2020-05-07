@@ -66,7 +66,7 @@ The _Quality item sampling_ and _Quality order_ work order types are consumed by
 
 Before warehouse work can be automatically generated to move inventory to quality control, you must follow these steps to set up your system.
 
-1. Create separate work classes for the _Quality item sampling_ and _Quality order_ work order types. In this way, you ensure that appropriate work can be automatically generated based on the two work order types, and that this work can then be run by using the Warehousing mobile app (WMA).
+1. Create separate work classes for the _Quality item sampling_ and _Quality order_ work order types. In this way, you ensure that appropriate work can be automatically generated based on the two work order types, and that this work can then be run by using the warehousing app (WMA).
 1. Set up a work template for each work order type:
 
     - Set up a work template that uses the _Quality item sampling_ work order type to automatically move registered inventory to a quality control location.
