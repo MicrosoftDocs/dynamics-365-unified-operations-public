@@ -43,7 +43,7 @@ Planning Optimization requires an LCS-enabled, high-availability environment, ti
 
 ## Planning of batch jobs fails when Planning Optimization is enabled
 
-When you enable Planning Optimization, the built-in master planning engine is automatically disabled. Master planning batch jobs that were created for the built-in Supply Chain Management planning engine will fail if they are triggered while **Use Planning Optimization** is set to *Yes*.
+When you enable Planning Optimization, the built-in master planning engine is automatically disabled. Master planning batch jobs that were created for the built-in Supply Chain Management planning engine will fail if they are triggered while Planning Optimization is enabled.
 
 **Error message example**: *This operation triggered master planning that isn't supported when Planning Optimization is enabled*.
 
@@ -69,7 +69,7 @@ The **Connection status** must be *Connected* before you can set **Use Planning 
 
 ## Error message is shown during CTP
 
-If you run capable to promise (CTP) from a sales order with **Use Planning Optimization** set to *Yes*, you will see the following error message: *This operation triggered master planning that isn't supported when the Planning Optimization is enabled*.
+If you try to run capable to promise (CTP) from a sales order when Planning Optimization is enabled, you will see the following error message: *This operation triggered master planning that isn't supported when the Planning Optimization is enabled*.
 
 This is related to a pending feature that is planned as part of the support for production orders.
 
