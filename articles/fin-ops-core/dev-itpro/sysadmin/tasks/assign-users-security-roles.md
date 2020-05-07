@@ -3,9 +3,9 @@
  
 title: Assign users to security roles
 description: To access Finance and Operations apps, users must be assigned to security roles. 
-author: ChrisGarty
+author: Peakerbl
 manager: AnnBe 
-ms.date: 11/14/2019
+ms.date: 05/06/2020
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-To use anything other than common capabilities, users must be assigned to security roles. You can assign users to roles automatically, based on rules and business data, exclude users from automatic role assignment or add users to roles manually.
+To use anything other than common capabilities, users must be assigned to security roles. You can assign users to roles automatically, based on rules and business data, exclude users from automatic role assignment, or add users to roles manually.
 
 ## Automatically assign users to roles
 This procedure explains how system administrators can automatically assign users to roles, based on business data. 
@@ -57,10 +57,9 @@ This procedure explains how system administrators can automatically assign users
 
 ## Manually assign users to roles
 Users who are manually assigned to security roles must also be manually removed by the administrator. These users are not removed from roles by rules for automatic role assignment.
+
 1. Go to **Navigation pane > Modules > System administration > Security > Assign users to roles**.
-2. In the tree, select a role.
-3. In the **Users assigned to role** menu, select **Manually assign / exclude users**.
-4. In the **Assign users to or exclude users from role**. Users that has not been assinged the role are listed with Assignment mode 'None'. Select one or more users that should be assigned the role.
-5. On the **Action pane**, select **Assing to role**.
-6. Assignment mode is updated to 'Manual'and the users now have a new role assigned.
+2. In the tree, select a role, and in the **Users assigned to role** menu, select **Manually assign / exclude users**.
+4. In the **Assign users to or exclude users from role**, users that have not been assinged the role are listed with the **Assignment mode** set to **None**. Select one or more users that should be assigned the role.
+5. On the **Action pane**, select **Assign to role**. The **Assignment mode** is updated to **Manual** and the users now have a new role assigned.
 
