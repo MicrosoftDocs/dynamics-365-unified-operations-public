@@ -340,10 +340,10 @@ Finally, on the **Commerce parameters** page, you must specify the parameters fo
 You can download the ER configuration for the archive from Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Import electronic reporting configurations](../../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md). You must download the following versions, or later versions, of the configurations:
 
 - **Retail channel data.version.2** data model
-- **Archiving DMM.version.2.1** data model mapping
-- **Retail data archive FR .version.2.1** format
+- **Archiving DMM.version.2.3** data model mapping
+- **Retail data archive FR .version.2.5** format
 
-After you import the configurations, on the **Commerce parameters** page, on the **Electronic documents** tab, in the **Retail data archive export format** field, select the **Retail data archive FR .version.2.1** format.
+After you import the configurations, on the **Commerce parameters** page, on the **Electronic documents** tab, in the **Retail data archive export format** field, select the **Retail data archive FR .version.2.5** format.
 
 ### Renitialize Commerce components
 
