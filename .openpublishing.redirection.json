@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/commerce/dev-itpro/pos-override-handler.md",
+      "redirect_url": "dev-retail-home-page",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/commerce/retail-components.md",
       "redirect_url": "commerce-architecture",
       "redirect_document_id": "false"
