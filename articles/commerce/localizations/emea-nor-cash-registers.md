@@ -208,7 +208,7 @@ For more information about how to work with receipt formats, see [Set up and des
 The SAF-T Cash Register configuration is available for download from Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Import electronic reporting configurations](../../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md). You must download the following configurations:
 
 - **Retail channel data.version.1** – The data model configuration.
-- **DMM Retail channel data.version.1.6** – The data model mapping configuration.
+- **DMM Retail channel data.version.1.12** – The data model mapping configuration.
 - **NO SAF T Cash Register.version.1.15** – The format configuration.
 
 After you import the configurations, on the **Commerce parameters** page, on the **Electronic documents** tab, in the **SAF-T Cash register export format** field, select the name of the format configuration that was imported.
