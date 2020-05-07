@@ -5,7 +5,7 @@ title: Cash register functionality for Norway
 description: This topic provides an overview of the cash register functionality that is available for Norway. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
 manager: vastrup
-ms.date: 10/23/2017
+ms.date: 05/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
