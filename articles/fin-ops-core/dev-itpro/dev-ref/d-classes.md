@@ -8882,23 +8882,6 @@ Returns the ID of the security key for the table.
 
 The ID of the security key for the table; 0 (zero) if there is no security key for the table.
 
-#### Examples
-
-The following example shows the retrieval of the security key ID for a table.
-
-    DictTable dt; 
-    DictSecurityKey dsk; 
-    dt = new DictTable(tablenum(CustTable)); 
-    if (dt) 
-    { 
-        if (0 != dt.securityKeyId()) 
-        dsk = new DictSecurityKey(dt.securityKeyId()); 
-        if (dsk) 
-        { 
-            print (strfmt("The table's security key is %1.", dsk.name())); 
-        } 
-    }
-
 ### Method singularLabel
 
     public str singularLabel([boolean labelTranslation])

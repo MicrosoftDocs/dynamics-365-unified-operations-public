@@ -49,3 +49,5 @@ To learn more about the basic principles that Microsoft uses, visit the [Microso
 [Cookie compliance](cookie-compliance.md)
 
 [Add a privacy policy page](add-privacy-page.md)
+
+[Replace user IDs associated with tracked content changes](replace-IDs-tracked-changes.md)

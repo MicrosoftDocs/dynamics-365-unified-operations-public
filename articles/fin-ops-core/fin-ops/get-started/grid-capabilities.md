@@ -5,7 +5,7 @@ title: Grid capabilities
 description: This topic describes several powerful features of the grid control. The new grid feature must be enabled to have access to these capabilities. 
 author: jasongre
 manager: AnnBe
-ms.date: 04/10/2020
+ms.date: 04/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -49,7 +49,7 @@ There is a footer area at the bottom of every tabular grid in Finance and Operat
 - Grand totals at the bottom of configured, numeric columns
 - The number of rows in the dataset 
 
-This footer is hidden by default, but can be easily turned on. To show the footer for a grid, right-click on a column header in the grid and select the **Show footer** option. Once the footer has been turned on for a particular grid, that setting will be remembered until the user opts to hide the footer, which can be done by right-clicking on a column header and selecting **Hide footer**.  Note the placement of the **Show footer/Hide footer** action is expected to be re-located in a future update. 
+This footer is hidden by default but can be easily turned on. To show the footer for a grid, right-click on a column header in the grid and select the **Show footer** option. Once the footer has been turned on for a particular grid, that setting will be remembered until the user opts to hide the footer, which can be done by right-clicking on a column header and selecting **Hide footer**.  Note the placement of the **Show footer/Hide footer** action is expected to be re-located in a future update. 
 
 ### Specifying columns with totals
 Currently, no columns will be configured to show totals by default. Instead, this is considered a one-time setup activity, similar to adjusting the widths of columns in grids. Once you specify that you want to see totals for a column, that setting will be remembered the next time you visit the page.  
@@ -90,6 +90,23 @@ If you select **Group by this column** for a different column, the original grou
 
 To undo grouping in a grid, right-click on the grouping column and select **Ungroup**.  
 
+## Typing ahead of the system
+In many business scenarios, the ability to quickly enter data into the system is very important. Before the new grid control was introduced, users could change data only in the current row. Before they could create a new row or switch to a different row, they were forced to wait for the system to successfully validate any changes. In an attempt to reduce the amount of time that users wait for these validations to be completed, and to improve user productivity, the new grid adjusts these validations so that they are asynchronous. Therefore, the user can move to other rows to make changes while previous row validations are pending. 
+
+To support this new behavior, a new column for the row status has been added to the top of the grid when the grid is in edit mode. This column indicates one of the following statuses:
+
+- **Blank** – No status image indicates that the row has been successfully saved by the system.
+- **Processing pending** – This status indicates that the changes in the row haven't yet been saved by the server but are in a queue of changes that must be processed. Before you take action outside the grid, you must wait for all the pending changes to be processed. Additionally, the text in these rows is italicized to indicate the unsaved status of the rows. 
+- **Validation warning** – This status indicates that the system can't save the changes in the row because of some validation issue. In the old grid, were you forced back into the row to fix the issue immediately. However, in the new grid, you're notified that a validation issue was encountered, but you can decide when you want to fix any issues in the row. When you're ready to fix the issue, you can manually move focus back to the row. Alternatively, you can select the **Fix this issue** action. This action immediately moves focus back to the row that has the issue, and lets you make edits inside or outside the grid. Note that the processing of subsequent pending rows is stopped until this validation warning is resolved. 
+- **Paused** – This status indicates that processing by the server is paused because validation of the row triggered a pop-up dialog box that requires user input. Because the user might be entering data in some other row, the pop-up dialog box isn't immediately presented to that user. Instead, it will be presented when the user chooses to resume processing. This status is accompanied by a notification that informs the user about the situation. The notification includes a **Resume processing** action that will trigger the pop-up dialog box.  
+    
+When users are entering data ahead of the place where the server is processing, they can expect a few degradations in the data entry experience, such as a lack of lookups, control-level validation, and entry of default values. Users who need a drop-down list to find a value are encouraged to wait for the server to catch up to the current row. Control-level validation and entry of default values will also occur when the server processes that row.   
+
+### Pasting from Excel
+Users have always been able to export data from grids in Finance and Operations apps to Excel by using the **Export to Excel** mechanism. However, the ability to enter data ahead of the system enables the new grid to support copying tables from Excel and pasting them directly into grids in Finance and Operations apps. The grid cell that the paste operation is initiated from determines where the copied table begins to be pasted in. The contents of the grid are overwritten by the contents of the copied table, except in two cases:
+
+- If the number of columns in the copied table exceeds the number of columns that remain in the grid, starting from the paste location, the user is notified that the extra columns have been ignored. 
+- If the number of rows in the copied table exceeds the number of rows in the grid, starting from the paste location, the existing cells are overwritten by the pasted content, and any extra rows from the copied table are inserted as new rows at the bottom of the grid. 
 
 ## Evaluating math expressions
 As a productivity booster, users can enter mathematical formulas in numeric cells in a grid. They don't have to do the calculation in an app outside the system. For example, if you enter **=15\*4** and then press the **Tab** key to move out of the field, the system will evaluate the expression and save a value of **60** for the field.
@@ -116,3 +133,64 @@ The **New grid control** feature can be enabled in Tier 1 (Dev/Test) and Tier 2 
 4.	**Enable the feature**: Find the **New grid control** feature in the list of features, and select **Enable now** on the details pane. Note that a browser refresh is required. 
 
 All subsequent user sessions will start with the new grid control enabled.
+
+## Known issues
+This section maintains a list of known issues for the new grid control while the feature is in a preview state.  
+
+### Open issues
+
+- Card lists that were rendered as multiple columns are now rendered as a single column.
+- Grouped lists aren't rendered as groups or in separate columns.
+- Tooltips aren't shown for images.
+- The gridlines display doesn't work for all field types.
+- Intermittently, you can't click outside the grid after you multi-select some rows.
+- The **Validate** and **Copy** Task recorder options aren't available for date/number controls.
+
+### Fixed as part of 10.0.12
+
+> [!Note]
+> The following information is being provided so that you can plan accordingly. For more information about the targeted release schedule of version 10.0.12, see [Service update availability](../../fin-ops/get-started/public-preview-releases.md).
+
+- [Issue 429126] Controls outside the grid aren't updated after the last record is deleted.
+- [Issue 430575] Table controls don't update the contents of displayed items.
+- [KB 4558570] Items are still shown on the page after the record has been deleted.
+- [KB 4558584] Negative numbers aren't rendered correctly.
+- [KB 4558575] Fields aren't updated after a row change / Grid processing becomes stuck after row deletion.
+- [Issue 436980] Styling that is associated with the List Panel **ExtendedStyle** isn't applied.
+- [KB 4558573] Validation errors can't be fixed when the required change is outside the grid.
+	
+### Quality update for 10.0.11
+
+- [KB 4558381] Negative numbers aren't rendered correctly / Users sometimes become stuck after validation issues are encountered.
+
+### Fixed as part of 10.0.11
+
+- [KB 4558374] Records that require a polymorphic selector dialog box can't be created.
+- [KB 4558382] Unexpected client errors occur.
+- [KB 4558375] Help text isn't shown on columns in the new grid.
+- [KB 4558376] List Panel grids aren't rendered at the correct height in Internet Explorer.
+- [KB 4558377] Combo box columns that have **SizeToAvailable** width aren't rendered on some pages.
+- [KB 4549711] Lines in a payment proposal can't be removed correctly after the new grid control is enabled.
+- [KB 4558378] Drill-through sometimes opens the wrong record.
+- [KB 4558379] An error occurs when lookups are opened where **ReplaceOnLookup**=**No**.
+- [KB 4558380] The available space in the grid isn't filled immediately after part of the page is collapsed.
+- [Issue 432458] Empty or duplicated lines are shown at the beginning of some child collections.
+- [KB 4558587] Reference groups that have combo boxes for replacement fields don't show values.
+
+### Fixed as part of 10.0.10
+
+- [Issue 414301] Some data from previous lines disappears when new lines are created.
+- [KB 4550367] Time values aren't formatted correctly.
+- [KB 4549734] Active rows aren't treated as marked if the marking column is hidden.
+- [Bug 417044] There is no empty grid message for list-style grids.
+- [KB 4558367] Text selection is inconsistent when rows are changed.
+- [KB 4558372] The new grid becomes stuck in processing mode if the number of columns in content that is pasted in exceeds the number of remaining columns in the grid.
+- [KB 4558368] Multi-select via the keyboard is allowed in single-select scenarios.
+- [KB 4539058] Some grids (typically on FastTabs) sometimes aren't rendered (but they will be rendered if you zoom out).
+- [KB 4558369] Status images disappear in the hierarchical grid.
+- [KB 4558370] A new row isn't scrolled into view.
+- [KB 4549796] Values can't be edited in a grid when it's in view mode.
+
+### Quality update for 10.0.9/Platform update 33
+
+- [KB 4550367] Time values aren't formatted correctly.

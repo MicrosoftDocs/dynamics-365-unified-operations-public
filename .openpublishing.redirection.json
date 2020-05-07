@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/dual-write/initial-sync.md",
+      "redirect_url": "enable-entity-map",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/commerce/retail-components.md",
       "redirect_url": "commerce-architecture",
       "redirect_document_id": "false"

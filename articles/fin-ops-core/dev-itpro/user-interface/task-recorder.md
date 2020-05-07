@@ -5,7 +5,7 @@ title: Task recorder resources
 description: This topic describes how to use Task recorder to record business processes.
 author: jasongre
 manager: AnnBe
-ms.date: 04/14/2020
+ms.date: 04/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.search.form: SysTaskRecorderPane
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24271
@@ -351,9 +351,9 @@ Because the task guide can't find the UI element on the screen, the user must ma
 
 #### The control is not on the form
 
-*This error state usually occurs when the user has gone to the wrong form, either by navigating to the wrong form, or by leaving the correct form.*
+*This error state usually occurs when the user has gone to the wrong form, either by navigating to the wrong form or by leaving the correct form.*
 
-Because the UI element is not visible on the screen, the task guide pop-up will move to the upper-right side of the screen. In addition, when the task guide detects that the user is on the wrong from, the task guide pop-up text will change to inform the user of the form they should navigate to.
+Because the UI element is not visible on the screen, the task guide pop-up will move to the upper-right side of the screen. In addition, when the task guide detects the user is on the wrong form, the task guide pop-up text will change to inform the user of the form they should navigate to.
 
 In some cases, the task guide pop-up will not mention the form by name. This is because the user may need to navigate to a dynamic form. A dynamic form is a form that is not modeled, frequently known as a runtime-generated form. These sorts of forms do not have a proper name. Some examples of runtime-generated forms include simple and custom lookups. The way for a user to navigate to a lookup form is to re-open the lookup.
 
@@ -390,16 +390,26 @@ By using a **pre-release** Chromium browser extension that works for both the ne
         ...
     ```
 
-3.  Open the new (Chromium-based) Microsoft Edge browser or Google Chrome.
-4.  Select **Settings and more &gt; Extensions"** in Microsoft Edge (or **Customize and control Google Chrome &gt; More tools &gt; Extensions** in Google Chrome).
+3.  **21Vianet deployments only:** Adjust the manifest for the extension so that it matches the following code. Replace **.com** with **.cn**
+    ```xpp
+    ...
+    "content_scripts": [
+        {
+            "matches": ["https://*.dynamics.cn/*"],
+            "js": ["screenshot.js"]
+        }
+        ...
+    ```
+4.  Open the latest Microsoft Edge browser or Google Chrome.
+5.  Select **Settings and more &gt; Extensions** in Microsoft Edge (or **Customize and control Google Chrome &gt; More tools &gt; Extensions** in Google Chrome).
 
     ![This image shows the location of the Extensions menu in Google Chrome.](./media/taskrecorderguide-googlechromeextensionsmenu.png) 
 
-5.  Select the **Developer mode** box.
-6.  Click **Load unpacked extension**.
-7.  Browse to the folder that contains the Task recorder extension, select the folder, and then click **OK**.
-8.  Make sure that the **Enabled** box is selected, so that extension is turned on.
-9.  Restart the browser.
+6.  Select **Developer mode**.
+7.  Click **Load unpacked extension**.
+8.  Browse to the folder that contains the Task recorder extension, select the folder, and then click **OK**.
+9.  Make sure that **Enabled** is selected so that extension is turned on.
+10.  Restart the browser.
 
 Task recorder will now take screenshots of the tab where the client is running. These screenshots are available for one week after the recording has been played. (If you're running a platform version that is earlier than Platform update 16, the screenshots are available for only 15 minutes.) If the screenshots have expired, you can regenerate them by playing the task recording again.
 

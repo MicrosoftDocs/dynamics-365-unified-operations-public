@@ -3,8 +3,18 @@ title: Developer Learning Catalog
 description: Find all the training options for Finance and Operations.
 author: loreleishannonmsft
 ms.topic: article
-ms.date: 04/03/2020
+ms.date: 04/17/2020
 ms.author: v-lshann
+
+# optional metadata
+
+# ms.search.form:  [Operations AOT form name to tie this topic to]
+audience: Application user
+ms.reviewer: margoc
+ms.search.scope: Operations
+ms.search.region: Global
+ms.search.validFrom: 2019-1-29
+ms.dyn365.ops.version: 8.1
 ---
 
 # Developer Learning Catalog
@@ -13,10 +23,13 @@ Do you need to write code to integrate with other data sources, extend core syst
 
 The following catalog is organized from core knowledge to specific domains, and from most basic to most advanced. If content exists in multiple formats, we'll let you know, so that you can choose the training format that best meets your needs. 
 
+
 ## Get started<a name="get-started"></a>
 | Content  | Description     | Format     | Length    | 
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-----------|----------------------------------------------------------|
 | [Get started with Finance and Operations apps](https://docs.microsoft.com/learn/paths/get-started-finance-operations/)	|Learn how Microsoft Dynamics 365 for Finance and Operations supports businesses to manage their global financial systems, operational business processes, and streamlined supply chains to empower people to make fast informed decisions. As the first step in your career of working with Finance and Operations you must familiarize yourself with its features and functionality regardless of your desired role.|	Free  self-paced online learning path|	2.2 hours|	
+
+
 ## Core development concepts<a name="core-development-concepts"></a>
 | Content  | Description  | Format   | Length    | 
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-----------|----------------------------------------------------------|

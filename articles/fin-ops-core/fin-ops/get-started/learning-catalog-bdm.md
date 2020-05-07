@@ -5,6 +5,16 @@ author: loreleishannonmsft
 ms.date: 02/27/2020
 ms.topic: article
 ms.author: v-lshann
+
+# optional metadata
+
+# ms.search.form:  [Operations AOT form name to tie this topic to]
+audience: Application user
+ms.reviewer: margoc
+ms.search.scope: Operations
+ms.search.region: Global
+ms.search.validFrom: 2019-1-29
+ms.dyn365.ops.version: 8.1
 ---
 
 # Business and Technical Decision Makers Learning Catalog
