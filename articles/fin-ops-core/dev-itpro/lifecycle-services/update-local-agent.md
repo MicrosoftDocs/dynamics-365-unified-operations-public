@@ -52,7 +52,7 @@ This topic explains how to update the local agent. The latest version of the loc
 ## What's new in local agent 2.4.0
 
 - Local agent 2.4.0 now requires .Net Framework 4.8 to uptake the newest changes from Lifecycle Services (LCS). Please be sure to run the latest Infrastructure Scripts available in LCS to meet the newest requirements.
-- This release also fixes the 255/-1 exit error from the AOSSetupHybridCloud.exe where the deployment ended when deploying the AXSFType.
+- This release also fixes an issue where the deployment of the AXService would fail in slower environments due to a hardcoded timeout.
 
 ## What's new in local agent 2.3.0
 
