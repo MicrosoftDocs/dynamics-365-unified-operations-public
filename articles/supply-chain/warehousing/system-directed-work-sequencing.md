@@ -160,55 +160,56 @@ Default Contoso data should support this scenario but review the Location Direct
 
 ### Reserve inventory
 
-1. Select **Sales Order 1** and open **Sales order details**
-1. In the **Sales order lines** fast tab focus on the order line
-1. On the fast tab **Action pane** select **Inventory**
-1. In the menu select **Reservation**
-1. In the **Reservation** header the sales line order quantity is displayed in the **On order** field
-1. In the **Detailed availability by dimension** fast tab, enter the value from the **On order** field in the header into the **Reservation** field
-1. Tab off of the **Reservation** field
+You can reserve inventory quantities for a specific sales order. This means that reserved inventory cannot be withdrawn from the warehouse for other orders unless the inventory reservation, or part of the inventory reservation, is canceled. 
+
+To reserve inventory:
+
+1. Select **Sales Order 1** and open to display the **Sales order details** form
+1. In the **Sales order lines** section focus on the order line
+1. On the section's **Action pane** select **Inventory** and select **Reservation** from the list
+1. In the **Reservation** header the sales line order quantity is displayed in the **On order** field. In the **Detailed availability by dimension** section, enter the value from the **On order** field in the header into the **Reservation** field
+1. Press **Tab** to move off of the **Reservation** field
 1. The form updates, **Reserved physical** field is updated and **Lock reservations** fast tab is updated
 1. **Close** the **Reservation** form
-1. Repeat the steps above for each line on the remaining 3 Sales Orders
-    1. _**Option**_: After reserving inventory for each Sales Order, follow the steps for releasing to warehouse before moving to the next sales order.
+1. Repeat the steps above for each line on the remaining Sales Orders
+
+    _**Option**_: After reserving inventory for each Sales Order, follow the steps for releasing to warehouse before moving to the next sales order.
 
 ### Release to Warehouse
 
-1. Select **Sales Order 1** and open *Sales order details**
-1. In the Action pane select the **Warehouse** tab
-1. Select **Release to warehouse**
-1. When the release to warehouse process completes 4 informational messages are displayed:
-    1. \#### shipments have been created
-    1. Wave #### has been created for shipment ####
-    1. Work has been created under work build ID ####
-    1. Wave #### has been posted
-1. In the **Sales order lines** fast tab select **Warehouse** from the Action pane
-1. Select **Work details** from the sub-menu
-1. **Work** form opens
+Sales orders must be released to the warehouse in order for work to be created. Work in the warehouse defines the instructions to the warehouse worker of what tasks to perform. 
+
+To release the sales order to the warehouse and create work:
+
+1. Select **Sales Order 1** and open to display the **Sales order details** form
+1. In the Action pane select the **Warehouse** tab then select **Release to warehouse** initiate the release process
+1. When the release to warehouse process completes 4 **informational messages** are displayed: the number of **shipments** that have been created,  **Wave** number that has been created for the **shipment**, the **Work build ID** number, and, the **Wave** that is posted.
+1. In the **Sales order lines** section select **Warehouse** from the Action pane then select **Work details** from the list
+1. The **Work** form opens
 1. On the **Overview** tab in the grid field **Work ID** the Work ID number is displayed.
-    1. Make note of the **Work ID** for **Sales Order 1
+1. Make note of the **Work ID** for **Sales Order 1**
 1. **Close** the **Work** form
 1. Repeat the steps above for each of the remaining 3 Sales Orders
 
 Four different Work IDs should have been created.
 
-1. Work ID 1 – 20 ea
-2. Work ID 2 – 6 ea (sum of both lines)
-3. Work ID 3 – 15 ea (sum of both lines)
-4. Work ID 4 – 35 ea (sum of both lines)
+1. Sales Order 1 / Work ID 1 – 20 ea
+2. Sales Order 2 / Work ID 2 – 6 ea (sum of both lines)
+3. Sales Order 3 / Work ID 3 – 15 ea (sum of both lines)
+4. Sales ORder 4 / Work ID 4 – 35 ea (sum of both lines)
 
 ## Mobile device flow execution
 
 Before executing the flow on the mobile device, ensure that only the created work is in Open status for Warehouse 51 and Work order type Sales order. If not, the results of the test may vary as the System direct picking will include all eligible work.
 
-1. Navigate to **Warehouse management** > **Work** > **All work**
-1. In the **All work** grid filter on **Warehouse** for warehouse **51**
+1. Navigate to **Warehouse management** > **Work** > **Outbound** > **Open sales work**
+1. In the **Open sales work** grid filter on **Warehouse** for warehouse **51**
 1. Confirm that the only work displayed are the 4 **Work ID**'s created in the steps above.
 1. **Close** **Work** form
 
-Enter mobile device and select the menu where the System Directed Query Order is located (_Outbound - Sales picking – System_). Based on our setup, the system will feed the user Work, sorted from highest Work line quantity to lowest, but less than 20 each on a single line.
+Enter mobile device and select the menu where the System Directed Query Order is located **Outbound** > **Sales picking – System**. Based on our setup, the system will feed the user Work, sorted from highest Work line quantity to lowest, but less than 20 each on a single line.
 
-Remember that this setup will capture any work that has at least one line with less than 20ea. Hence, if the Work has another line with exactly 20ea or more than 20ea, it will also be valid.
+Remember that this setup will capture any work that has at least one line with less than 20 ea. Hence, if the Work has another line with exactly 20 ea or more than 20 ea, it will also be valid.
 
 Select the _Sales Picking – System_ menu and initiate the pick. After selecting the menu, the user will be presented with the Pick step of the Work ID 4. This is due to the System Directed Query Order setup, where we have specified that Work should be sequenced based on Work line Quantity - Descending.
 
@@ -220,7 +221,7 @@ Next, Work ID 2 is presented to the worker. This work&#39;s pick line is next in
 
 No work should be presented to the user after this completion. Work ID 1 is not eligible for this mobile device menu item, because it has been specified on the Query that only Work headers with Work lines less than 20 should be considered.
 
-# Appendix
+## Tips <!--HHM: in line comments in code -->
 
 The **System directed work sequence queries is**  **inclusive** , which is important to know with certain setups. For example, if the user wishes for a certain menu item to process only work with work unit in eaches and it specifies that on the Range, all Work with at least one Work line with Work unit eaches will be fed to the user. This will therefore also include all Work with other Work units besides _eaches_ (box or pallet) and it will not exclude those. It will exclude only Work where no Work lines have Work Unit set as each.
 
