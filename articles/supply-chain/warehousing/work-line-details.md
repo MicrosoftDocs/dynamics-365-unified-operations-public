@@ -63,7 +63,7 @@ To work through this demo using the sample records and values specified here, yo
 
 You can also use this demo as guidance for how to use this feature when working on a production system, but then you must then substitute your own values, and you may be missing some types of required records that would otherwise be provided by the standard demo data.
 
-### Make sure the demo setup includes enough available inventory
+### Make sure the scenario setup includes enough available inventory
 
 If you are working with **USMF** demo data, then start by making sure your system is set up with enough inventory at each relevant pick location. This demo expects that you have the following inventory available:
 
