@@ -470,20 +470,20 @@ and the posting profile that is specified in the order header are used.
 
 1.  Create the following inventory profiles.
 
-| **Inventory profile** | **Kind of activity** |
-|-----------------------|----------------------|
-| GEN                   | Basic                |
-| MAT                   | Basic                |
-| COM                   | Commissioner         |
+      | **Inventory profile** | **Kind of activity** |
+      |-----------------------|----------------------|
+      | GEN                   | Basic                |
+      | MAT                   | Basic                |
+      | COM                   | Commissioner         |
 
 2.  Create a purchase order that has the following lines.
 
-| **Item number** | **Inventory profile** | **Quantity** | **Unit price** | **Posting profile** |
-|-----------------|-----------------------|--------------|----------------|---------------------|
-| Item1           | GEN                   | 8            | 10             | GEN                 |
-| Item1           | COM                   | 10           | 9              | COM                 |
-| Item1           | MAT                   | 2            | 12             | GEN                 |
-| Item2           |                       | 5            | 20             | Общий               |
+      | **Item number** | **Inventory profile** | **Quantity** | **Unit price** | **Posting profile** |
+      |-----------------|-----------------------|--------------|----------------|---------------------|
+      | Item1           | GEN                   | 8            | 10             | GEN                 |
+      | Item1           | COM                   | 10           | 9              | COM                 |
+      | Item1           | MAT                   | 2            | 12             | GEN                 |
+      | Item2           |                       | 5            | 20             | Общий               |
 
 3.  Set the current date to January 7, 2019, and specify that the purchase order
     has payment terms that use a delay of five days.
@@ -494,24 +494,452 @@ and the posting profile that is specified in the order header are used.
 
 The cash flow forecast for the purchase order will contain the following lines.
 
-| **Posting profile** | **Kind of activity** | **Ledger account** | **Date**   | **Posting**       | **Currency** | **Amount in currency** | **Amount** |
-|---------------------|----------------------|--------------------|------------|-------------------|--------------|------------------------|------------|
-| COM                 | Commissioner         | 41.COM             | 01.07.2019 | Purchase, receipt | RUB          | 90,00                  | 90,00      |
-| COM                 | Commissioner         | 51.TEST            | 06.07.2019 | Vendor balance    | RUB          | \-140,00               | \-140,00   |
-| COM                 | Commissioner         | 60.1.COM           | 01.07.2019 | Vendor balance    | RUB          | \-140,00               | \-140,00   |
-| COM                 | Commissioner         | 60.1.COM           | 06.07.2019 | Vendor balance    | RUB          | 140,00                 | 140,00     |
-| MAT                 | Basic                | 41.MAT             | 01.07.2019 | Purchase, receipt | RUB          | 24,00                  | 24,00      |
-| MAT                 | Basic                | 51.TEST            | 06.07.2019 | Vendor balance    | RUB          | \-74,00                | \-74,00    |
-| MAT                 | Basic                | 60.1.MAT           | 01.07.2019 | Vendor balance    | RUB          | \-74,00                | \-74,00    |
-| MAT                 | Basic                | 60.1.MAT           | 06.07.2019 | Vendor balance    | RUB          | 74,00                  | 74,00      |
-| Общий               | Basic                | 10.100             | 01.07.2019 | Purchase, receipt | RUB          | 100,00                 | 100,00     |
-| Общий               | Basic                | 51.101             | 06.07.2019 | Vendor balance    | RUB          | \-150,00               | \-150,00   |
-| Общий               | Basic                | 60.030             | 01.07.2019 | Vendor balance    | RUB          | \-150,00               | \-150,00   |
-| Общий               | Basic                | 60.030             | 06.07.2019 | Vendor balance    | RUB          | 150,00                 | 150,00     |
-| GEN                 | Basic                | 41.GEN             | 01.07.2019 | Purchase, receipt | RUB          | 80,00                  | 80,00      |
-| GEN                 | Basic                | 51.TEST            | 06.07.2019 | Vendor balance    | RUB          | \-130,00               | \-130,00   |
-| GEN                 | Basic                | 60.1.GEN           | 01.07.2019 | Vendor balance    | RUB          | \-130,00               | \-130,00   |
-| GEN                 | Basic                | 60.1.GEN           | 06.07.2019 | Vendor balance    | RUB          | 130,00                 | 130,00     |
+<table>
+<tbody>
+<tr>
+<td width="79">
+<p><strong>Posting profile</strong></p>
+</td>
+<td width="125">
+<p><strong>Kind of activity</strong></p>
+</td>
+<td width="96">
+<p><strong>Ledger account</strong></p>
+</td>
+<td width="91">
+<p><strong>Date</strong></p>
+</td>
+<td width="92">
+<p><strong>Posting</strong></p>
+</td>
+<td width="76">
+<p><strong>Currency</strong></p>
+</td>
+<td width="94">
+<p><strong>Amount in currency</strong></p>
+</td>
+<td width="95">
+<p><strong>Amount</strong></p>
+</td>
+</tr>
+<tr>
+<td width="79">
+<p>COM</p>
+</td>
+<td width="125">
+<p>Commissioner</p>
+</td>
+<td width="96">
+<p>41.COM</p>
+</td>
+<td width="91">
+<p>01.07.2019</p>
+</td>
+<td width="92">
+<p>Purchase, receipt</p>
+</td>
+<td width="76">
+<p>RUB</p>
+</td>
+<td width="94">
+<p>90,00</p>
+</td>
+<td width="95">
+<p>90,00</p>
+</td>
+</tr>
+<tr>
+<td width="79">
+<p>COM</p>
+</td>
+<td width="125">
+<p>Commissioner</p>
+</td>
+<td width="96">
+<p>51.TEST</p>
+</td>
+<td width="91">
+<p>06.07.2019</p>
+</td>
+<td width="92">
+<p>Vendor balance</p>
+</td>
+<td width="76">
+<p>RUB</p>
+</td>
+<td width="94">
+<p>-140,00</p>
+</td>
+<td width="95">
+<p>-140,00</p>
+</td>
+</tr>
+<tr>
+<td width="79">
+<p>COM</p>
+</td>
+<td width="125">
+<p>Commissioner</p>
+</td>
+<td width="96">
+<p>60.1.COM</p>
+</td>
+<td width="91">
+<p>01.07.2019</p>
+</td>
+<td width="92">
+<p>Vendor balance</p>
+</td>
+<td width="76">
+<p>RUB</p>
+</td>
+<td width="94">
+<p>-140,00</p>
+</td>
+<td width="95">
+<p>-140,00</p>
+</td>
+</tr>
+<tr>
+<td width="79">
+<p>COM</p>
+</td>
+<td width="125">
+<p>Commissioner</p>
+</td>
+<td width="96">
+<p>60.1.COM</p>
+</td>
+<td width="91">
+<p>06.07.2019</p>
+</td>
+<td width="92">
+<p>Vendor balance</p>
+</td>
+<td width="76">
+<p>RUB</p>
+</td>
+<td width="94">
+<p>140,00</p>
+</td>
+<td width="95">
+<p>140,00</p>
+</td>
+</tr>
+<tr>
+<td width="79">
+<p>MAT</p>
+</td>
+<td width="125">
+<p>Basic</p>
+</td>
+<td width="96">
+<p>41.MAT</p>
+</td>
+<td width="91">
+<p>01.07.2019</p>
+</td>
+<td width="92">
+<p>Purchase, receipt</p>
+</td>
+<td width="76">
+<p>RUB</p>
+</td>
+<td width="94">
+<p>24,00</p>
+</td>
+<td width="95">
+<p>24,00</p>
+</td>
+</tr>
+<tr>
+<td width="79">
+<p>MAT</p>
+</td>
+<td width="125">
+<p>Basic</p>
+</td>
+<td width="96">
+<p>51.TEST</p>
+</td>
+<td width="91">
+<p>06.07.2019</p>
+</td>
+<td width="92">
+<p>Vendor balance</p>
+</td>
+<td width="76">
+<p>RUB</p>
+</td>
+<td width="94">
+<p>-74,00</p>
+</td>
+<td width="95">
+<p>-74,00</p>
+</td>
+</tr>
+<tr>
+<td width="79">
+<p>MAT</p>
+</td>
+<td width="125">
+<p>Basic</p>
+</td>
+<td width="96">
+<p>60.1.MAT</p>
+</td>
+<td width="91">
+<p>01.07.2019</p>
+</td>
+<td width="92">
+<p>Vendor balance</p>
+</td>
+<td width="76">
+<p>RUB</p>
+</td>
+<td width="94">
+<p>-74,00</p>
+</td>
+<td width="95">
+<p>-74,00</p>
+</td>
+</tr>
+<tr>
+<td width="79">
+<p>MAT</p>
+</td>
+<td width="125">
+<p>Basic</p>
+</td>
+<td width="96">
+<p>60.1.MAT</p>
+</td>
+<td width="91">
+<p>06.07.2019</p>
+</td>
+<td width="92">
+<p>Vendor balance</p>
+</td>
+<td width="76">
+<p>RUB</p>
+</td>
+<td width="94">
+<p>74,00</p>
+</td>
+<td width="95">
+<p>74,00</p>
+</td>
+</tr>
+<tr>
+<td width="79">
+<p>Общий</p>
+</td>
+<td width="125">
+<p>Basic</p>
+</td>
+<td width="96">
+<p>10.100</p>
+</td>
+<td width="91">
+<p>01.07.2019</p>
+</td>
+<td width="92">
+<p>Purchase, receipt</p>
+</td>
+<td width="76">
+<p>RUB</p>
+</td>
+<td width="94">
+<p>100,00</p>
+</td>
+<td width="95">
+<p>100,00</p>
+</td>
+</tr>
+<tr>
+<td width="79">
+<p>Общий</p>
+</td>
+<td width="125">
+<p>Basic</p>
+</td>
+<td width="96">
+<p>51.101</p>
+</td>
+<td width="91">
+<p>06.07.2019</p>
+</td>
+<td width="92">
+<p>Vendor balance</p>
+</td>
+<td width="76">
+<p>RUB</p>
+</td>
+<td width="94">
+<p>-150,00</p>
+</td>
+<td width="95">
+<p>-150,00</p>
+</td>
+</tr>
+<tr>
+<td width="79">
+<p>Общий</p>
+</td>
+<td width="125">
+<p>Basic</p>
+</td>
+<td width="96">
+<p>60.030</p>
+</td>
+<td width="91">
+<p>01.07.2019</p>
+</td>
+<td width="92">
+<p>Vendor balance</p>
+</td>
+<td width="76">
+<p>RUB</p>
+</td>
+<td width="94">
+<p>-150,00</p>
+</td>
+<td width="95">
+<p>-150,00</p>
+</td>
+</tr>
+<tr>
+<td width="79">
+<p>Общий</p>
+</td>
+<td width="125">
+<p>Basic</p>
+</td>
+<td width="96">
+<p>60.030</p>
+</td>
+<td width="91">
+<p>06.07.2019</p>
+</td>
+<td width="92">
+<p>Vendor balance</p>
+</td>
+<td width="76">
+<p>RUB</p>
+</td>
+<td width="94">
+<p>150,00</p>
+</td>
+<td width="95">
+<p>150,00</p>
+</td>
+</tr>
+<tr>
+<td width="79">
+<p>GEN</p>
+</td>
+<td width="125">
+<p>Basic</p>
+</td>
+<td width="96">
+<p>41.GEN</p>
+</td>
+<td width="91">
+<p>01.07.2019</p>
+</td>
+<td width="92">
+<p>Purchase, receipt</p>
+</td>
+<td width="76">
+<p>RUB</p>
+</td>
+<td width="94">
+<p>80,00</p>
+</td>
+<td width="95">
+<p>80,00</p>
+</td>
+</tr>
+<tr>
+<td width="79">
+<p>GEN</p>
+</td>
+<td width="125">
+<p>Basic</p>
+</td>
+<td width="96">
+<p>51.TEST</p>
+</td>
+<td width="91">
+<p>06.07.2019</p>
+</td>
+<td width="92">
+<p>Vendor balance</p>
+</td>
+<td width="76">
+<p>RUB</p>
+</td>
+<td width="94">
+<p>-130,00</p>
+</td>
+<td width="95">
+<p>-130,00</p>
+</td>
+</tr>
+<tr>
+<td width="79">
+<p>GEN</p>
+</td>
+<td width="125">
+<p>Basic</p>
+</td>
+<td width="96">
+<p>60.1.GEN</p>
+</td>
+<td width="91">
+<p>01.07.2019</p>
+</td>
+<td width="92">
+<p>Vendor balance</p>
+</td>
+<td width="76">
+<p>RUB</p>
+</td>
+<td width="94">
+<p>-130,00</p>
+</td>
+<td width="95">
+<p>-130,00</p>
+</td>
+</tr>
+<tr>
+<td width="79">
+<p>GEN</p>
+</td>
+<td width="125">
+<p>Basic</p>
+</td>
+<td width="96">
+<p>60.1.GEN</p>
+</td>
+<td width="91">
+<p>06.07.2019</p>
+</td>
+<td width="92">
+<p>Vendor balance</p>
+</td>
+<td width="76">
+<p>RUB</p>
+</td>
+<td width="94">
+<p>130,00</p>
+</td>
+<td width="95">
+<p>130,00</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 The miscellaneous charges for the purchase order or sales order header is
 repeated in the cash flow forecast for all combinations of a kind of activity
