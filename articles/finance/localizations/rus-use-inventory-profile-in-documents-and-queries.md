@@ -67,11 +67,11 @@ in the purchase order header are used.
     inventory profiles for **GEN**, **COM**, and **MAT**. Finally, set up a
     relation between the inventory profiles and the vendor posting profiles.
 
-| **Inventory profile relation** | **Kind of activity** | **Inventory profile** | **Vendor posting profile** |
-|--------------------------------|----------------------|-----------------------|----------------------------|
-| Profile                        | Basic                | GEN                   | GEN                        |
-| Profile                        | Commissioner         | COM                   | COM                        |
-| Profile                        | Basic                | MAT                   | GEN                        |
+    | **Inventory profile relation** | **Kind of activity** | **Inventory profile** | **Vendor posting profile** |
+    |--------------------------------|----------------------|-----------------------|----------------------------|
+    | Profile                        | Basic                | GEN                   | GEN                        |
+    | Profile                        | Commissioner         | COM                   | COM                        |
+    | Profile                        | Basic                | MAT                   | GEN                        |
 
 4.  Create the following items:
 
@@ -85,23 +85,23 @@ in the purchase order header are used.
 
 5.  Create a purchase order that has the following lines.
 
-| **Item** | **Inventory profile** | **Quantity** | **Vendor posting profile** |
-|----------|-----------------------|--------------|----------------------------|
-| Item1    | GEN                   | 10           | GEN                        |
-| Item2    | MAT                   | 10           | GEN                        |
-| Item3    | COM                   | 10           | COM                        |
-| Item4    |                       | 10           |                            |
+    | **Item** | **Inventory profile** | **Quantity** | **Vendor posting profile** |
+    |----------|-----------------------|--------------|----------------------------|
+    | Item1    | GEN                   | 10           | GEN                        |
+    | Item2    | MAT                   | 10           | GEN                        |
+    | Item3    | COM                   | 10           | COM                        |
+    | Item4    |                       | 10           |                            |
 
 6.  Create a product receipt. You should see the following lines on the
     **Overview** and **Lines** FastTabs of the **Posting product receipt** page.
 
-| **Overview**        |                            |                      | **Lines** |                       |              |
-|---------------------|----------------------------|----------------------|-----------|-----------------------|--------------|
-| **Product receipt** | **Vendor posting profile** | **Kind of activity** | **Item**  | **Inventory profile** | **Quantity** |
-| PR1                 | GEN                        | Basic                | Item1     | GEN                   | 10           |
-|                     |                            |                      | Item2     | MAT                   | 10           |
-| PR2                 | COM                        | Commissioner         | Item3     | COM                   | 10           |
-| PR3                 | Общий                      | Basic                | Item4     |                       | 10           |
+    | **Overview**        |                            |                      | **Lines** |                       |              |
+    |---------------------|----------------------------|----------------------|-----------|-----------------------|--------------|
+    | **Product receipt** | **Vendor posting profile** | **Kind of activity** | **Item**  | **Inventory profile** | **Quantity** |
+    | PR1                 | GEN                        | Basic                | Item1     | GEN                   | 10           |
+    |                     |                            |                      | Item2     | MAT                   | 10           |
+    | PR2                 | COM                        | Commissioner         | Item3     | COM                   | 10           |
+    | PR3                 | Общий                      | Basic                | Item4     |                       | 10           |
 
 7.  Select **Post**. Three product receipts are generated. A similar split will
     be done for purchase order invoices.
@@ -208,11 +208,11 @@ balances for.
 
 1.  Set up the following inventory profiles.
 
-| **Inventory profile** | **Kind of activity** | **Matching priority** | **Compatible inventory profiles** | **Physically available balance of item Item1** |
-|-----------------------|----------------------|-----------------------|-----------------------------------|------------------------------------------------|
-| GEN                   | Basic                | 1                     | COM, MAT                          | 8                                              |
-| MAT                   | Basic                | 2                     | GEN                               | 7                                              |
-| COM                   | Commissioner         | 3                     |                                   | 10                                             |
+    | **Inventory profile** | **Kind of activity** | **Matching priority** | **Compatible inventory profiles** | **Physically available     balance of item Item1** |
+    |-----------------------|----------------------|-----------------------|-----------------------------------|------------------------     ------------------------|
+    | GEN                   | Basic                | 1                     | COM, MAT                          | 8                                              |
+    | MAT                   | Basic                | 2                     | GEN                               | 7                                              |
+    | COM                   | Commissioner         | 3                     |                                   | 10                                             |
 
 2.  On the **Accounts receivable parameters** page, set the **Split order lines
     by inventory profiles** option to **Yes**.
