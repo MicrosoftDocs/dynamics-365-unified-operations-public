@@ -26,9 +26,9 @@ The following features are available for export sales processing:
 
 -   Processing factures to determine the VAT tax base:
 
--   Preliminary processing of export factures
+    -   Preliminary processing of export factures
 
--   Outgoing VAT processing
+    -   Outgoing VAT processing
 
 -   Creating corrective factures to charge the VAT on unconfirmed export during
     the preliminary facture processing
@@ -226,6 +226,127 @@ As a result of preprocessing, the following updates occur:
 
 -   The system creates a corrective facture where the tax is calculated
     according to the tax code for the domestic market.
+    
+<table width="775">
+<thead>
+<tr>
+<td width="104">
+<p><strong>Operation type</strong></p>
+</td>
+<td width="387">
+<p><strong>Description</strong></p>
+</td>
+<td width="284">
+<p><strong>Note</strong></p>
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td width="104">
+<p>VAT 0%</p>
+</td>
+<td width="387">
+<p>This value is set for factures when the export is confirmed on time (that is, before the deadline). The confirmation date meets the following conditions:</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; It falls within the current processing period.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; It's before the expiration date.</p>
+<p>As a result of the preliminary facture processing, the following updates occur on the <strong>Foreign trade</strong> tab of the Facture journal:</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The <strong>Operation type</strong> field is set.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The <strong>Latest status change date</strong> field is set to the end date of the processing period.</p>
+</td>
+<td width="284">
+<p>This value can be manually set if the <strong>Operation type</strong> field is currently blank.</p>
+</td>
+</tr>
+<tr>
+<td width="104">
+<p>Unconfirmed VAT 0%</p>
+</td>
+<td width="387">
+<p>This value is set for factures where the export hasn't yet been confirmed and the confirmation period expires during the current processing period. In other words, the following conditions are met:</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The confirmation date isn't set.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The expiration date falls within the current processing period.</p>
+<p>As a result of preprocessing, the following updates occur:</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The <strong>Operation type</strong> field is set in the Facture journal.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The system creates a facture where the tax is calculated according to the tax code for domestic market.</p>
+</td>
+<td width="284">
+<p>This value can be manually set if the <strong>Operation type</strong> field is currently blank, or if it's set to <strong>VAT 0%</strong>.</p>
+<p>For the facture that is created at the domestic tax rate, the <strong>Facture source</strong> field in the Facture journal is set to <strong>Facture</strong>. This facture will be included in the outgoing VAT processing as a corrective facture to the original export facture.</p>
+<p>The original facture, where the <strong>Operation type</strong> field is set to <strong>Unconfirmed VAT 0%</strong>, won't be included in the outgoing VAT processing.</p>
+</td>
+</tr>
+<tr>
+<td width="104">
+<p>VAT 0% with correction</p>
+</td>
+<td width="387">
+<p>This value is set for factures that have both the following characteristics:</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The export was confirmed during the current period.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Before the expiration date, the facture was already included in the sales book at the standard tax rate or the reduced tax rate (where the <strong>Operation type</strong> field was set to <strong>Unconfirmed VAT 0%</strong>).</p>
+<p>As a result of preprocessing, the following updates occur:</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The <strong>Operation type</strong> field is set.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The <strong>Latest status change date</strong> field is set to the end date of the processing period.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The system creates corrective factures for each period during which the factures were included in the sales book at the standard tax.</p>
+</td>
+<td width="284">
+<p>This value is automatically set and can't be manually changed.</p>
+<p>For the corrective facture that is created, the <strong>Facture source</strong> field in the Facture journal is set to <strong>Facture</strong>.</p>
+<p>Additional factures adjust the previous periods during which the facture was included in the sales book at the standard tax.</p>
+</td>
+</tr>
+<tr>
+<td width="104">
+<p>Unconfirmed VAT 0% with correction</p>
+</td>
+<td width="387">
+<p>This value is set for factures that have both the following characteristics:</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The export wasn't confirmed during the current period, and the confirmation period expires during the current period.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The facture was previously included in the sales book at the 0-percent rate (where the <strong>Operation type</strong> field was set to <strong>VAT 0%</strong>).</p>
+<p>As a result of preprocessing, the following updates occur:</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The <strong>Operation type</strong> field is set.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The system create correctives factures for each period in which the original factures were included in the sales book at the 0-percent rate. The tax is calculated according to the tax code for the domestic market.</p>
+</td>
+<td width="284">
+<p>This value is automatically set and can't be manually changed.</p>
+<p>For the facture that is created at the domestic tax rate, the <strong>Facture source</strong> field in the Facture journal is set to <strong>Facture</strong>. This facture will be included in the outgoing VAT processing as a corrective facture to the original export facture.</p>
+<p>The original facture, where the <strong>Operation type</strong> field is set to <strong>Unconfirmed VAT 0% with correction</strong>, won't be reflected in the outgoing VAT processing.</p>
+<p>The factures that are created adjust the previous periods during which the facture was included in the sales book at the 0-percent rate.</p>
+</td>
+</tr>
+<tr>
+<td width="104">
+<p>Overdue confirmation</p>
+</td>
+<td width="387">
+<p>This value is set for factures that have both the following characteristics:</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The export was confirmed during the current period.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The confirmation period expired during previous periods.</p>
+<p>Previously, these factures were already included in the sales book at the standard tax rate or the reduced tax rate (where the <strong>Operation type</strong> field was set to <strong>Unconfirmed VAT 0%</strong> or <strong>Unconfirmed VAT 0% with correction</strong>).</p>
+<p>As a result of preprocessing, the following updates occur:</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The <strong>Operation type</strong> field is set.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The <strong>Latest status change date</strong> field is set to the end date of the processing period.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The system creates a corrective facture where the tax is calculated according to the tax code for the domestic market.</p>
+</td>
+<td width="284">
+<p>This value is automatically set and can't be manually changed.</p>
+<p>For the corrective facture that is created, the <strong>Facture source</strong> field in the Facture journal is set to <strong>Facture</strong>.</p>
+</td>
+</tr>
+<tr>
+<td width="104">
+<p>Unconfirmed VAT 0% cancellation</p>
+</td>
+<td width="387">
+<p>This value is set for factures that are created because the overdue confirmation operation is applied. (The, factures that are created cancel factures where the <strong>Operation type</strong> field is set to <strong>Unconfirmed VAT 0%</strong>.)</p>
+</td>
+<td width="284">
+<p>Factures where the <strong>Operation type</strong> field is set to <strong>Unconfirmed VAT 0% cancellation</strong> are included in the incoming VAT processing.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
 
 ##### Default operation type
 
