@@ -427,7 +427,7 @@ Preliminary setup
     for domestic market** field, select the sales tax code for the domestic
     market.
 
-![A screenshot of a computer Description automatically generated](media/b7d3c40be74cce1942347ac1d4d2f1cf.png)
+![](media/1_Sales_tax_codes.png)
 
 ### Set up a document collection period and confirm the application of VAT at 0 percent
 
@@ -452,7 +452,7 @@ the following formula:
     that is set for confirming VAT at a rate of 0 percent. The maximum length of
     the export confirmation period is 180 days.
 
-    ![A screenshot of a cell phone Description automatically generated](media/50eed6f3026364976fc6e049a6cdd824.png)
+![](media/2_Export_confirmation_period.png)
 
 ### Set up a default operation type
 
@@ -463,14 +463,14 @@ the following formula:
     default operation type for factures that haven't yet reached the time when
     an operation type is assigned to them.
 
-![A screenshot of a computer Description automatically generated](media/76393b00aed16fe78736353d75e2febb.png)
+![](media/3_Accounts_receivable_parameters.png)
 
 ### Set up parameters for the VAT process
 
 1.  Go to **Accounts receivable \> Periodic tasks \> Sales book \> Parameters of
     VAT process**.
 
-    ![A screenshot of a computer Description automatically generated](media/f23cc42554c4120ca301d1b18a4cebfa.png)
+    ![](media/4_Parameters_of_VAT_process.png)
 
 2.  On the Action Pane, select **New** to create a new VAT operation code.
 
@@ -520,7 +520,7 @@ the following formula:
 
 5.  In the **Factor** field, enter the factor.
 
-    ![A screenshot of a cell phone Description automatically generated](media/a8df3db13ac79a87767934fe347b684b.png)
+![](media/5_Refinancing_rate.png)
 
 ### Set up a main account for fine accounting
 
@@ -559,7 +559,7 @@ the following formula:
     specify the tax reporting date for the period. This date is used when fines
     are created for late payment of VAT.
 
-![A screenshot of a computer Description automatically generated](media/45d7f4966502c9b44e59c3cefd338e8f.png)
+![](media/6_Sales_tax_settlement_periods.png)
 
 Create a facture for export sales
 ---------------------------------
@@ -622,7 +622,7 @@ Preliminary processing of export factures
 6.  On the **Records to include** FastTab, select **Filter** to specify
     selection criteria.
 
-![](media/84c7dd1dc7386d1d500c1c0a00d628a7.png)
+    ![](media/7_Select_factures_for_processing.png)
 
 7.  Select **OK**.
 
@@ -642,7 +642,7 @@ Preliminary processing of export factures
 
 -   The lower pane shows the lines of the factures.
 
-    ![A screenshot of a computer Description automatically generated](media/757dce68a0cf0f6dce37cf65a5ad553e.png)
+    ![](media/8_Preliminary_processing_of_export_factures.png)
 
 9.  On the Action Pane, select **Update** to process the marked factures
     according to the assigned operation type.
@@ -693,18 +693,18 @@ Outgoing VAT processing
 
 6.  Select **OK**.
 
-![](media/3f5ba4625582502d451ed12fff2aa936.png)
+    ![](media/9_Outgiong_VAT_processing_-_select_data_for_period.png)
 
 7.  On the **Sales book (Outgoing VAT processing)** page, mark factures for
     posting, and then, on the Action Pane, select **Post**.
 
-![](media/228c18a112eff82e77d5dc2da0313eee.png)
+    ![](media/10_Sales_book_(Outgiong_VAT_processing).png)
 
 8.  In the **Outgoing VAT processing – ledger posting** dialog box, in the
     **Transaction date** field, select a transaction date, and then select
     **OK**.
 
-    ![A screenshot of a cell phone Description automatically generated](media/834c95fb60f475bd48ac546458e5f318.png)
+    ![](media/11_Outgoing_VAT_processing_-_ledger_posting.png)
 
 As a result of posting the marked factures, the following actions occur:
 
@@ -723,7 +723,7 @@ As a result of posting the marked factures, the following actions occur:
 2.  On the **VAT processing log** page, you can view the transactions that were
     created and the factures that were processed.
 
-![A screenshot of a computer Description automatically generated](media/5a5d4f2ce4df91189b53c647947440a0.png)
+![](media/12_VAT_processing_log_OK.png)
 
 ### Cancel processed VAT
 
@@ -737,7 +737,7 @@ As a result of posting the marked factures, the following actions occur:
     on the **Parameters** FastTab, in the **From date** and **To date** fields,
     specify the period that you want to cancel processed VAT for.
 
-![A screenshot of a cell phone Description automatically generated](media/75a808a59247fb72893c56b9d6b47d95.png)
+    ![](media/13_VAT_processing_cancellation_-_select_data_for_period.png)
 
 4.  Select **OK**.
 
@@ -752,7 +752,7 @@ Calculate the fine amount
 3.  On the **Fine calculation** page, on the Action Pane, select **Select** to
     open the **Fine calculation** dialog box.
 
-![](media/fbb1913097a6fbe6f20348df27593d99.png)
+    ![](media/14_Fine_calculation.png)
 
 4.  On the **Parameters** FastTab, in the **Date of fine calculation** field,
     specify the date when you want to calculate the fine amount.
@@ -776,7 +776,7 @@ Calculate the fine amount
     **Fine** section, in the **Date of fine calculation** field, you can view
     the date when the fine was calculated.
 
->   *Note.* If the **Date of fine calculation** field was set before the
+>   **Note.** If the **Date of fine calculation** field was set before the
 >   calculation was done, the facture won't be included in the calculation.
 
 11. In the **Fine amount** field, you can view the calculated fine amount.
