@@ -207,82 +207,81 @@ balances for.
 ### Example
 
 1.  Set up the following inventory profiles.
- <table>
-<thead>
-<tr>
-<td width="94">
-<p><strong>Inventory profile</strong></p>
-</td>
-<td width="132">
-<p><strong>Kind of activity</strong></p>
-</td>
-<td width="85">
-<p><strong>Matching priority</strong></p>
-</td>
-<td width="142">
-<p><strong>Compatible inventory profiles</strong></p>
-</td>
-<td width="180">
-<p><strong>Physically available balance of item Item1</strong></p>
-</td>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td width="94">
-<p>GEN</p>
-</td>
-<td width="132">
-<p>Basic</p>
-</td>
-<td width="85">
-<p>1</p>
-</td>
-<td width="142">
-<p>COM, MAT</p>
-</td>
-<td width="180">
-<p>8</p>
-</td>
-</tr>
-<tr>
-<td width="94">
-<p>MAT</p>
-</td>
-<td width="132">
-<p>Basic</p>
-</td>
-<td width="85">
-<p>2</p>
-</td>
-<td width="142">
-<p>GEN</p>
-</td>
-<td width="180">
-<p>7</p>
-</td>
-</tr>
-<tr>
-<td width="94">
-<p>COM</p>
-</td>
-<td width="132">
-<p>Commissioner</p>
-</td>
-<td width="85">
-<p>3</p>
-</td>
-<td width="142">
-<p>&nbsp;</p>
-</td>
-<td width="180">
-<p>10</p>
-</td>
-</tr>
-</tbody>
-</table>
-<p>&nbsp;</p>
-
+            <table>
+            <thead>
+            <tr>
+            <td width="94">
+            <p><strong>Inventory profile</strong></p>
+            </td>
+            <td width="132">
+            <p><strong>Kind of activity</strong></p>
+            </td>
+            <td width="85">
+            <p><strong>Matching priority</strong></p>
+            </td>
+            <td width="142">
+            <p><strong>Compatible inventory profiles</strong></p>
+            </td>
+            <td width="180">
+            <p><strong>Physically available balance of item Item1</strong></p>
+            </td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td width="94">
+            <p>GEN</p>
+            </td>
+            <td width="132">
+            <p>Basic</p>
+            </td>
+            <td width="85">
+            <p>1</p>
+            </td>
+            <td width="142">
+            <p>COM, MAT</p>
+            </td>
+            <td width="180">
+            <p>8</p>
+            </td>
+            </tr>
+            <tr>
+            <td width="94">
+            <p>MAT</p>
+            </td>
+            <td width="132">
+            <p>Basic</p>
+            </td>
+            <td width="85">
+            <p>2</p>
+            </td>
+            <td width="142">
+            <p>GEN</p>
+            </td>
+            <td width="180">
+            <p>7</p>
+            </td>
+            </tr>
+            <tr>
+            <td width="94">
+            <p>COM</p>
+            </td>
+            <td width="132">
+            <p>Commissioner</p>
+            </td>
+            <td width="85">
+            <p>3</p>
+            </td>
+            <td width="142">
+            <p>&nbsp;</p>
+            </td>
+            <td width="180">
+            <p>10</p>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+            <p>&nbsp;</p>
 2.  On the **Accounts receivable parameters** page, set the **Split order lines
     by inventory profiles** option to **Yes**.
 
