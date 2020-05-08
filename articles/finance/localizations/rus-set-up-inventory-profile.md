@@ -145,9 +145,9 @@ Set up inventory posting in the context of an inventory profile
 >   have priority over the other settings. For example, you have two sets of posting
 >   settings:
 >   
->       -   Settings for a specific item and any inventory profile
+>   -   Settings for a specific item and any inventory profile
 >   
->       -   Settings for a specific inventory profile and all items
+>   -   Settings for a specific inventory profile and all items
 >   
 >   In this case, the system will select the second set of settings.
 
@@ -195,35 +195,104 @@ customer, agreement, or warehouse master record. On the **All vendors**, **All
 customers**, **Purchase agreements**, **Sales agreements**, or **Warehouses**
 page, set the following fields.
 
-| **Page**            | **FastTab**                        | **Section**       | **Fields**                                                                                                                           |
-|---------------------|------------------------------------|-------------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| All vendors         | Purchase order defaults            | Inventory profile | **Kind of activity** – Select the kind of activity that should be entered by default in purchase orders from the vendor.             |
-| All customers       | Sales order defaults               | Inventory profile | **Kind of activity** – Select the kind of activity that should be entered by default in sales orders from the customer.              |
-| Purchase agreements | Financial (in the **Header** view) | Inventory profile | **Kind of activity** – Select the kind of activity that should be entered by default in purchase orders from the purchase agreement. |
-| Sales agreements    | Financial (in the **Header** view) | Inventory profile | **Kind of activity** – Select the kind of activity that should automatically be used in sales orders that use the sales agreement.   |
-| Warehouses          | General                            | Inventory profile | **Kind of activity** – Select the kind of activity that should be entered by default in transfer orders from the warehouse.          |
-
--   **Inventory profile** – Select the inventory profile that should be entered
-    by default in purchase orders from the vendor.
-
--   **Inventory profile** – Select the inventory profile that should be entered
-    by default in sales orders from the customer.
-
--   **Inventory profile** – Select the inventory profile that should be entered
-    by default in purchase orders from the purchase agreement.
-
-When you create a new purchase agreement with a vendor, the **Kind of activity**
-and **Inventory profile** fields are automatically filled in from the vendor.
-
--   **Inventory profile** – Select the inventory profile that should
-    automatically be used in sales orders that use the sales agreement.
-
-When you create a new sales agreement with a customer, the **Kind of activity**
-and **Inventory profile** fields are automatically filled in from the customer
-record.
-
--   **Inventory profile** field, select the inventory profile that should be
-    entered by default in transfer orders from the warehouse.
+<table>
+<thead>
+<tr>
+<td width="123">
+<p><strong>Page</strong></p>
+</td>
+<td width="123">
+<p><strong>FastTab</strong></p>
+</td>
+<td width="104">
+<p><strong>Section</strong></p>
+</td>
+<td width="369">
+<p><strong>Fields</strong></p>
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td width="123">
+<p>All vendors</p>
+</td>
+<td width="123">
+<p>Purchase order defaults</p>
+</td>
+<td width="104">
+<p>Inventory profile</p>
+</td>
+<td width="369">
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Kind of activity</strong> &ndash; Select the kind of activity that should be entered by default in purchase orders from the vendor.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Inventory profile</strong> &ndash; Select the inventory profile that should be entered by default in purchase orders from the vendor.</p>
+</td>
+</tr>
+<tr>
+<td width="123">
+<p>All customers</p>
+</td>
+<td width="123">
+<p>Sales order defaults</p>
+</td>
+<td width="104">
+<p>Inventory profile</p>
+</td>
+<td width="369">
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Kind of activity</strong> &ndash; Select the kind of activity that should be entered by default in sales orders from the customer.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Inventory profile</strong> &ndash; Select the inventory profile that should be entered by default in sales orders from the customer.</p>
+</td>
+</tr>
+<tr>
+<td width="123">
+<p>Purchase agreements</p>
+</td>
+<td width="123">
+<p>Financial (in the <strong>Header</strong> view)</p>
+</td>
+<td width="104">
+<p>Inventory profile</p>
+</td>
+<td width="369">
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Kind of activity</strong> &ndash; Select the kind of activity that should be entered by default in purchase orders from the purchase agreement.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Inventory profile</strong> &ndash; Select the inventory profile that should be entered by default in purchase orders from the purchase agreement.</p>
+<p>When you create a new purchase agreement with a vendor, the <strong>Kind of activity</strong> and <strong>Inventory profile</strong> fields are automatically filled in from the vendor.</p>
+</td>
+</tr>
+<tr>
+<td width="123">
+<p>Sales agreements</p>
+</td>
+<td width="123">
+<p>Financial (in the <strong>Header</strong> view)</p>
+</td>
+<td width="104">
+<p>Inventory profile</p>
+</td>
+<td width="369">
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<strong>Kind of activity</strong> &ndash; Select the kind of activity that should automatically be used in sales orders that use the sales agreement.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Inventory profile</strong> &ndash; Select the inventory profile that should automatically be used in sales orders that use the sales agreement.</p>
+<p>When you create a new sales agreement with a customer, the <strong>Kind of activity</strong> and <strong>Inventory profile</strong> fields are automatically filled in from the customer record.</p>
+</td>
+</tr>
+<tr>
+<td width="123">
+<p>Warehouses</p>
+</td>
+<td width="123">
+<p>General</p>
+</td>
+<td width="104">
+<p>Inventory profile</p>
+</td>
+<td width="369">
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Kind of activity</strong> &ndash; Select the kind of activity that should be entered by default in transfer orders from the warehouse.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Inventory profile</strong> field, select the inventory profile that should be entered by default in transfer orders from the warehouse.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
 
 >   **Note**. When you select a specific inventory profile, the **Kind of activity**
 >   field is automatically set to the corresponding kind of activity.
@@ -242,12 +311,12 @@ Set up a default inventory profile for BOMs
 >   **Note**. You can't explode or accept the BOM, or create a production order, if
 >   all the following conditions are met:
 >
->       -   The inventory profile is active for the item on the BOM line.
+>   -   The inventory profile is active for the item on the BOM line.
 >   
->       -   The BOM line doesn't specify the **Inventory profile** dimension.
+>   -   The BOM line doesn't specify the **Inventory profile** dimension.
 >   
->       -   The **Inventory profile** field on the **Bills of materials** tab of the
->           **Inventory and warehouse management parameters** page is blank.
+>   -   The **Inventory profile** field on the **Bills of materials** tab of the
+>       **Inventory and warehouse management parameters** page is blank.
 
 Set up a default inventory profile for purchase orders
 ------------------------------------------------------
