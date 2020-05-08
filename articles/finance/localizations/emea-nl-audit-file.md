@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: NL-00011 Audit file (XML Auditfile Financieel, XAF)
+title: Audit file (XML Auditfile Financieel, XAF)
 description: This topic explains how to set up and generate the Audit file (XML Auditfile Financieel, XAF) for legal entities in the Netherlands.  
 author: liza-golub
 ms.date: 05/06/2020

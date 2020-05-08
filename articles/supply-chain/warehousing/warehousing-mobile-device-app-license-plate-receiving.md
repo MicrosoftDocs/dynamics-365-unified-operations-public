@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: License plate receiving via the Warehousing mobile app
-description: This topic explains how to set up the Warehousing mobile app to support using a license plate receiving process to receive physical inventory.
+title: License plate receiving via the warehousing app
+description: This topic explains how to set up the warehousing app to support using a license plate receiving process to receive physical inventory.
 author: perlynne
 manager: tfehr
 ms.date: 03/31/2020
@@ -27,9 +27,9 @@ ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Release 10.0.11
 ---
 
-# License plate receiving via the Warehousing mobile app
+# License plate receiving via the warehousing app
 
-This topic explains how to set up the Warehousing mobile app so that it supports using a license plate receiving process to receive physical inventory.
+This topic explains how to set up the warehousing app so that it supports using a license plate receiving process to receive physical inventory.
 
 You can use this functionality to quickly record the receipt of inbound inventory that is related to an advance ship notice (ASN). The system automatically creates an ASN when warehouse management processes are used to ship a transfer order. For the purchase order process, an ASN can be manually recorded, or it can be automatically imported by using an inbound ASN data entity process.
 
@@ -68,7 +68,7 @@ For more information about the *Report as finished* production scenario, see the
 
 ## Show or skip the receiving summary page
 
-You can use the *Control whether to display a receiving summary page on mobile devices* feature to take advantage of an additional detailed Warehouse app flow as part of the license plate receiving process.
+You can use the *Control whether to display a receiving summary page on mobile devices* feature to take advantage of an additional detailed warehousing app flow as part of the license plate receiving process.
 
 Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, this feature is listed in the following way:
 
