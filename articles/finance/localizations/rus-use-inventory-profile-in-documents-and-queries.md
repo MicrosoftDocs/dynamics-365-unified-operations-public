@@ -281,7 +281,6 @@ balances for.
             </tr>
             </tbody>
             </table>
-            <p>&nbsp;</p>
 2.  On the **Accounts receivable parameters** page, set the **Split order lines
     by inventory profiles** option to **Yes**.
 
