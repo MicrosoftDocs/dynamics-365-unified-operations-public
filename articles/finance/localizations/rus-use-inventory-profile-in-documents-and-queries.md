@@ -15,35 +15,34 @@ Purchase orders
 
 4.  In the **Inventory profile** field, select an inventory profile.
 
->   If you set the **Kind of activity** and **Inventory profile** fields in the
->   vendor master record, in the purchase agreement master record, or on the
->   **Accounts payable parameters** page, the values are entered by default in
->   the purchase order.
+    If you set the **Kind of activity** and **Inventory profile** fields in the
+    vendor master record, in the purchase agreement master record, or on the
+    **Accounts payable parameters** page, the values are entered by default in
+    the purchase order.
 
-1.  Switch to the **Lines** view.
+5.  Switch to the **Lines** view.
 
-2.  On the **Line details** FastTab, on the **Product** tab, in the **Tracking
+6.  On the **Line details** FastTab, on the **Product** tab, in the **Tracking
     dimensions** section, in the **Inventory profile** field, you can select
     only an inventory profile value that corresponds to the kind of activity
     that you selected in the document header. If you selected and inventory
     profile in the **Header** view, you can select only the same inventory
     profile on the line.
 
-3.  On the **Setup** tab, in the **Posting** section, note the following
+7.  On the **Setup** tab, in the **Posting** section, note the following
     details:
+    -   The **Ledger account** field isn't available if the inventory profile is
+        active for the item on the purchase order line. The ledger account is
+        determined by the inventory profile that is specified on a purchase order
+        line.
 
--   The **Ledger account** field isn't available if the inventory profile is
-    active for the item on the purchase order line. The ledger account is
-    determined by the inventory profile that is specified on a purchase order
-    line.
-
--   The **Posting profile** field is automatically set, based on the inventory
-    profile on the purchase order line and the relation between the inventory
-    profiles and the vendor posting profiles. If the posting profile can't be
-    defined by the inventory profile, or if an inventory profile isn't selected
-    on the purchase order line, the **Posting profile** field on the purchase
-    order line remains blank. In this case, when you post an invoice, the
-    posting profile that is specified in the purchase order header will be used.
+    -   The **Posting profile** field is automatically set, based on the inventory
+        profile on the purchase order line and the relation between the inventory
+        profiles and the vendor posting profiles. If the posting profile can't be
+        defined by the inventory profile, or if an inventory profile isn't selected
+        on the purchase order line, the **Posting profile** field on the purchase
+        order line remains blank. In this case, when you post an invoice, the
+        posting profile that is specified in the purchase order header will be used.
 
 ### Rules for automatically splitting product receipts and invoices
 
@@ -107,9 +106,9 @@ in the purchase order header are used.
 7.  Select **Post**. Three product receipts are generated. A similar split will
     be done for purchase order invoices.
 
-**Note**. If miscellaneous charges are attached to the purchase order header,
-when you post purchase order invoices that split by kinds of activity and
-posting profiles, those miscellaneous charges will be attached to each invoice.
+>   **Note**. If miscellaneous charges are attached to the purchase order header,
+>   when you post purchase order invoices that split by kinds of activity and
+>   posting profiles, those miscellaneous charges will be attached to each invoice.
 
 ### Rules for automatically splitting invoice-factures
 
@@ -133,9 +132,7 @@ steps.
     factures for. The lower pane shows the invoices that have the selected kind
     of activity.
 
-![](media/dcd9ba864aa572e3e77ac24b19baa039.png)
-
->   A screenshot of a computer Description automatically generated
+   ![](media/14_Update_facture.png)
 
 The system saves the kind of activity that is used for posting in the product
 receipts, invoices, and invoice-factures for the purchase order. You can view
@@ -167,32 +164,32 @@ Sales orders
     profiles that are compatible with the inventory profile that is selected in
     the sales order header should be used on the sales order lines.
 
->   If you set the **Kind of activity** and **Inventory profile** fields in the
->   customer master record, in the sales agreement master record, or on the
->   **Accounts receivable parameters** page, the values are entered by default
->   in the sales order.
+    If you set the **Kind of activity** and **Inventory profile** fields in the
+    customer master record, in the sales agreement master record, or on the
+    **Accounts receivable parameters** page, the values are entered by default
+    in the sales order.
 
-1.  Switch to the **Lines** view.
+6.  Switch to the **Lines** view.
 
-2.  On the **Line details** FastTab, on the **Product** tab, in the **Tracking
+7.  On the **Line details** FastTab, on the **Product** tab, in the **Tracking
     dimensions** section, in the **Inventory profile** field, you can select
     only an inventory profile that is compatible with the kind of activity that
     you selected in the header.
 
-3.  On the **Setup** tab, in the **Posting** section, note the following
+8.  On the **Setup** tab, in the **Posting** section, note the following
     details:
 
--   The **Main account** field isn't editable if the inventory profile is active
-    for the item on the sales order line. The ledger account is determined by
-    the inventory profile that is specified on a sales order line.
+    -   The **Main account** field isn't editable if the inventory profile is active
+        for the item on the sales order line. The ledger account is determined by
+        the inventory profile that is specified on a sales order line.
 
--   The **Posting profile** field is automatically set, based on the inventory
-    profile on the sales order line and the relation between the inventory
-    profiles and the posting profiles. If the posting profile can't be defined
-    by the inventory profile, or if an inventory profile isn't selected on the
-    sales order line, the **Posting profile** field on the sales order line
-    remains blank. In this case, when you post an invoice, the posting profile
-    that is specified in the sales order header will be used.
+    -   The **Posting profile** field is automatically set, based on the inventory
+        profile on the sales order line and the relation between the inventory
+        profiles and the posting profiles. If the posting profile can't be defined
+        by the inventory profile, or if an inventory profile isn't selected on the
+        sales order line, the **Posting profile** field on the sales order line
+        remains blank. In this case, when you post an invoice, the posting profile
+        that is specified in the sales order header will be used.
 
 When you post a sales order invoice or packing slip, the system splits the
 documents by the posting profiles and kinds of activity that are defined in the
@@ -227,88 +224,88 @@ balances for.
 5.  In the **Create lines** dialog box, set the following fields on the line
     that has the **Item1** reference in the **Item number** field:
 
--   In the **Sales quantity** field, enter **20**.
+    -   In the **Sales quantity** field, enter **20**.
 
--   Leave the **Inventory profile** field blank.
+    -   Leave the **Inventory profile** field blank.
 
-1.  Select **Create**. Depending on the sales order settings, the system creates
+6.  Select **Create**. Depending on the sales order settings, the system creates
     the following sales order lines:
 
--   **Option 1:** The sales order has the following settings.
+    -   **Option 1:** The sales order has the following settings.
 
-| **Kind of activity** | **Inventory profile** | **Use compatible inventory profiles** |
-|----------------------|-----------------------|---------------------------------------|
-| Unspecified          |                       | No                                    |
+        | **Kind of activity** | **Inventory profile** | **Use compatible inventory profiles** |
+        |----------------------|-----------------------|---------------------------------------|
+        | Unspecified          |                       | No                                    |
 
-In this case, the system creates the following lines.
+        In this case, the system creates the following lines.
 
-| **Item number** | **Inventory profile** | **Quantity** |
-|-----------------|-----------------------|--------------|
-| Item1           | GEN                   | 8            |
-| Item1           | MAT                   | 7            |
-| Item1           | COM                   | 5            |
+        | **Item number** | **Inventory profile** | **Quantity** |
+        |-----------------|-----------------------|--------------|
+        | Item1           | GEN                   | 8            |
+        | Item1           | MAT                   | 7            |
+        | Item1           | COM                   | 5            |
 
->   The system selects the inventory profiles from the balances, based on the
->   priority for the selection of inventory profiles.
+        The system selects the inventory profiles from the balances, based on the
+        priority for the selection of inventory profiles.
 
--   **Option 2:** The sales order has the following settings.
+    -   **Option 2:** The sales order has the following settings.
 
-| **Kind of activity** | **Inventory profile** | **Use compatible inventory profiles** |
-|----------------------|-----------------------|---------------------------------------|
-| Basic                |                       | No                                    |
+        | **Kind of activity** | **Inventory profile** | **Use compatible inventory profiles** |
+        |----------------------|-----------------------|---------------------------------------|
+        | Basic                |                       | No                                    |
 
-In this case, the system creates the following lines.
+        In this case, the system creates the following lines.
 
-| **Item number** | **Inventory profile** | **Quantity** |
-|-----------------|-----------------------|--------------|
-| Item1           | GEN                   | 13           |
-| Item1           | MAT                   | 7            |
+        | **Item number** | **Inventory profile** | **Quantity** |
+        |-----------------|-----------------------|--------------|
+        | Item1           | GEN                   | 13           |
+        | Item1           | MAT                   | 7            |
 
->   The system selects inventory profiles from the balances, based on the
->   priority for the selection of inventory profiles and the specified kind of
->   activity. The system adds the quantity that is missing in the balances to
->   the order line that contains the inventory profile has the highest selection
->   priority (**GEN** in this example).
+        The system selects inventory profiles from the balances, based on the
+        priority for the selection of inventory profiles and the specified kind of
+        activity. The system adds the quantity that is missing in the balances to
+        the order line that contains the inventory profile has the highest selection
+        priority (**GEN** in this example).
 
--   **Option 3:** The sales order has the following settings.
+    -   **Option 3:** The sales order has the following settings.
 
-| **Kind of activity** | **Inventory profile** | **Use compatible inventory profiles** |
-|----------------------|-----------------------|---------------------------------------|
-| Unspecified          |                       | Yes                                   |
+        | **Kind of activity** | **Inventory profile** | **Use compatible inventory profiles** |
+        |----------------------|-----------------------|---------------------------------------|
+        | Unspecified          |                       | Yes                                   |
 
-In this case, the system creates the following lines.
+        In this case, the system creates the following lines.
 
-| **Item number** | **Inventory profile** | **Quantity** |
-|-----------------|-----------------------|--------------|
-| Item1           | GEN                   | 8            |
-| Item1           | COM                   | 10           |
-| Item1           | MAT                   | 2            |
+        | **Item number** | **Inventory profile** | **Quantity** |
+        |-----------------|-----------------------|--------------|
+        | Item1           | GEN                   | 8            |
+        | Item1           | COM                   | 10           |
+        | Item1           | MAT                   | 2            |
 
->   The system selects the inventory profiles from the balances, based on the
->   priority for the selection of inventory profiles and the settings of
->   compatible inventory profiles. First, the **GEN** inventory profile is
->   selected, because it has the highest priority. Then the **COM** and **MAT**
->   inventory profiles that are compatible with the **GEN** inventory profile
->   are selected, in accordance with the procedure for selecting compatible
->   inventory profiles.
+        The system selects the inventory profiles from the balances, based on the
+        priority for the selection of inventory profiles and the settings of
+        compatible inventory profiles. First, the **GEN** inventory profile is
+        selected, because it has the highest priority. Then the **COM** and **MAT**
+        inventory profiles that are compatible with the **GEN** inventory profile
+        are selected, in accordance with the procedure for selecting compatible
+        inventory profiles.
 
--   **Option 4:** The sales order has the following settings.
+    -   **Option 4:** The sales order has the following settings.
 
-| **Kind of activity** | **Inventory profile** | **Use compatible inventory profiles** |
-|----------------------|-----------------------|---------------------------------------|
-| Unspecified          | GEN                   | Yes                                   |
+        | **Kind of activity** | **Inventory profile** | **Use compatible inventory profiles** |
+        |----------------------|-----------------------|---------------------------------------|
+        | Unspecified          | GEN                   | Yes                                   |
 
-In this case, the system creates the following lines.
+        In this case, the system creates the following lines.
 
-| **Item number** | **Inventory profile** | **Quantity** |
-|-----------------|-----------------------|--------------|
-| Item1           | GEN                   | 13           |
-| Item1           | MAT                   | 7            |
+        | **Item number** | **Inventory profile** | **Quantity** |
+        |-----------------|-----------------------|--------------|
+        | Item1           | GEN                   | 13           |
+        | Item1           | MAT                   | 7            |
 
-The system selects the inventory profiles from the balances, based on the
-inventory profile that is selected in the sales order and the settings of
-compatible inventory profiles. Only the inventory profiles that correspond to
-the kind of activity that is specified in the sales order can be selected.
+        The system selects the inventory profiles from the balances, based on the
+        inventory profile that is selected in the sales order and the settings of
+        compatible inventory profiles. Only the inventory profiles that correspond to
+        the kind of activity that is specified in the sales order can be selected.
 
 Transfer orders
 ---------------
