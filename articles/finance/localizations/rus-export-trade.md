@@ -570,7 +570,7 @@ Create a facture for export sales
     counteragent. For more information, see the [Set up a customer as a foreign
     counteragent](#set-up-a-customer-as-a-foreign-counteragent) section.
 
-    >   **Note:** The requested receipt date must be in the open sales book.
+    >   **Note**. The requested receipt date must be in the open sales book.
 
 3.  On the **Sales order** page, on the **Line details** FastTab, in the **Sales
     tax** section, set the **Sales tax group** and **Item sales tax group**
