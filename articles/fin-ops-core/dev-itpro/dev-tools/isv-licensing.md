@@ -103,7 +103,7 @@ Follow these steps to enable licensing for your solution.
 
     ![Creating a license code](media/isv_new_license_code.png)
 
-4. Map the certificate to the license code. In the Properties window for the license code, select the certificate.
+4. Map the certificate to the license code. In the Properties window for the license code, set the **Certificate** property to your certificate resource. In this example, we set **Certificate** to **ISVCert**.
 
     ![Mapping the certificate to the license code](media/isv_map_license_cert.png)
 
@@ -123,7 +123,7 @@ Follow these steps to enable licensing for your solution.
 
     ![Adding a button to the new form](media/isv_button_designtime.png)
 
-    At runtime, the button will be visible because it isn't controlled by a configuration key at first. 
+    At runtime, the button is visible because it isn't controlled by a configuration key at first. 
 
     ![New button is visible when it's first added](media/isv_button_visible_runtime.png)
 
@@ -131,7 +131,7 @@ Follow these steps to enable licensing for your solution.
 
     ![Associating a configuration key with the button](media/isv_select_key_for_button.png) 
 
-    At runtime, the button will no longer be visible because the configuration key must be available and enabled. 
+    At runtime, the button is not visible because the configuration key must be available and enabled. 
 
     ![Button is no longer visible](media/isv_button_invisible_runtime.png)
 
