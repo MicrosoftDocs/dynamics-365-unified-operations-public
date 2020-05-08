@@ -570,30 +570,30 @@ Create a facture for export sales
     counteragent. For more information, see the [Set up a customer as a foreign
     counteragent](#set-up-a-customer-as-a-foreign-counteragent) section.
 
->   **Note:** The requested receipt date must be in the open sales book.
+    >   **Note:** The requested receipt date must be in the open sales book.
 
-1.  On the **Sales order** page, on the **Line details** FastTab, in the **Sales
+3.  On the **Sales order** page, on the **Line details** FastTab, in the **Sales
     tax** section, set the **Sales tax group** and **Item sales tax group**
     fields. The sales tax group and item sales tax group that you select must
     contain the sales tax code that the tax code for the domestic market set up
     for.
 
-2.  On the Action Pane, on the **Sell** tab, in the **Generate** section, select
+4.  On the Action Pane, on the **Sell** tab, in the **Generate** section, select
     **Confirm sales order**.
 
-3.  Create the invoice and facture.
+5.  Create the invoice and facture.
 
-4.  On the **Sales order** page, on the Action Pane, on the **Invoice** tab, in
+6.  On the **Sales order** page, on the Action Pane, on the **Invoice** tab, in
     the **Journals** section, select **Facture**.
 
-5.  On the **Facture journal** page, on the **Foreign trade** tab, in the
+7.  On the **Facture journal** page, on the **Foreign trade** tab, in the
     **Export date** field, enter the date when export is allowed.
 
-6.  Optional: In the **Package date** field, select the date when confirmation
+8.  Optional: In the **Package date** field, select the date when confirmation
     documents are collected. In the **Confirmation date** field, select the date
     when the tax authority confirms the 0-percent VAT rate.
 
-7.  Optional: In the **Expiration date** field, view the deadline for collecting
+9.  Optional: In the **Expiration date** field, view the deadline for collecting
     the confirmation documents. You can also view the settings of the
     **Operation type** fields and the **Into processing** check box.
 
@@ -631,14 +631,14 @@ Preliminary processing of export factures
 
 -   The upper pane shows a list of selected factures:
 
--   In the **Current operation type** field, you can view the operation type
-    that was assigned when the facture was processed. This field isn't editable.
+    -   In the **Current operation type** field, you can view the operation type
+        that was assigned when the facture was processed. This field isn't editable.
 
--   The **Operation type** field is automatically set to the new operation type.
-    You can change this value as required.
+    -   The **Operation type** field is automatically set to the new operation type.
+        You can change this value as required.
 
--   You can use the **Mark** check boxes, and the **Mark all** button on the
-    Action Pane, to mark factures for processing.
+    -   You can use the **Mark** check boxes, and the **Mark all** button on the
+        Action Pane, to mark factures for processing.
 
 -   The lower pane shows the lines of the factures.
 
@@ -776,7 +776,7 @@ Calculate the fine amount
     **Fine** section, in the **Date of fine calculation** field, you can view
     the date when the fine was calculated.
 
->   **Note.** If the **Date of fine calculation** field was set before the
->   calculation was done, the facture won't be included in the calculation.
+    >   **Note.** If the **Date of fine calculation** field was set before the
+    >   calculation was done, the facture won't be included in the calculation.
 
 11. In the **Fine amount** field, you can view the calculated fine amount.
