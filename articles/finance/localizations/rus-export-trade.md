@@ -1,9 +1,8 @@
----
-title: Process invoice-factures for export trade
----
+Process invoice-factures for export trade
+=========================================
 
 Introduction
-============
+------------
 
 Export sales are taxable at a value-added tax (VAT) rate of 0 (zero) percent.
 However, taxpayers can apply this tax rate only after they receive confirmation
@@ -19,8 +18,7 @@ VAT rate that is applicable in the domestic market, together with any tax that
 is overdue from the export confirmation. Export factures for both confirmed
 export and unconfirmed export are included in the sales book.
 
-Overview
---------
+### Overview
 
 The following features are available for export sales processing:
 
@@ -41,7 +39,7 @@ The following features are available for export sales processing:
 
 -   Calculating fines for overdue tax payments
 
-### Number sequences for export factures and VAT processing
+#### Number sequences for export factures and VAT processing
 
 After export factures are processed on the **Outgoing VAT processing** page,
 they are reflected in the sales book in a deferred mode. Therefore, you must set
@@ -56,7 +54,7 @@ For more information, see the [Set up number sequences for export factures and
 VAT processing](#set-up-number-sequences-for-export-factures-and-vat-processing)
 section.
 
-### Customer as a foreign counteragent
+#### Customer as a foreign counteragent
 
 To receive items that must be exported, a customer must be set up as a foreign
 counteragent. The customer must be set up as a foreign counteragent before you
@@ -65,7 +63,7 @@ can create a customs journal for the export operation.
 For more information, see the [Set up a customer as a foreign
 counteragent](#set-up-a-customer-as-a-foreign-counteragent) section.
 
-### Facture for export sales
+#### Facture for export sales
 
 A facture is an *export facture* if it's created based on invoices that contain
 sales tax codes where the **Type of tax** field is set to **VAT 0%**. The tax
@@ -73,8 +71,8 @@ code for the domestic market must be set up for these codes. For more
 information, see the [Set up a sales tax code for export
 trade](#set-up-a-sales-tax-code-for-export-trade) section.
 
-*Note.* All the invoices that are included in a facture must have the same type
-of VAT.
+>   **Note.** All the invoices that are included in a facture must have the same type
+>   of VAT.
 
 1.  Go to **Accounts receivable \> Inquiries and reports \> Facture**.
 
@@ -121,7 +119,7 @@ of VAT.
 For more information about export factures, see the [Create a facture for export
 sales](#create-a-facture-for-export-sales) section.
 
-### Processing of export factures
+#### Processing of export factures
 
 The preliminary processing of export factures determines the following
 information:
@@ -141,7 +139,7 @@ previous periods.
 For more information, see the [Preliminary processing of export
 factures](#preliminary-processing-of-export-factures) section.
 
-### Operation types
+#### Operation types
 
 VAT operation types are rules that are used for the preliminary processing of
 export factures. The system automatically assigns a value to a facture, based on
@@ -229,7 +227,7 @@ As a result of preprocessing, the following updates occur:
 -   The system creates a corrective facture where the tax is calculated
     according to the tax code for the domestic market.
 
-#### Default operation type
+##### Default operation type
 
 You can set up a default operation type that is used for factures that haven't
 yet reached the time when an operation type is assigned to them. For example,
@@ -249,7 +247,7 @@ Other operation types can't be manually set up as default operation types.
 For more information, see the [Set up a default operation
 type](#set-up-a-default-operation-type) section.
 
-#### VAT operation codes
+##### VAT operation codes
 
 On the **Parameters of VAT process** page, you can define the parameters for
 outgoing VAT processing operations. You can then use the **Outgoing VAT
@@ -265,7 +263,7 @@ operation codes determine the following behavior:
 For more information, see the [Set up parameters for the VAT
 process](#set-up-parameters-for-the-vat-process) section.
 
-### Processing of outgoing VAT
+#### Processing of outgoing VAT
 
 During the preliminary processing of export factures, the following actions
 occur:
@@ -294,7 +292,7 @@ the **VAT processing log** page.
 For more information, see the [Outgoing VAT
 processing](#outgoing-vat-processing) section.
 
-### Fine calculation
+#### Fine calculation
 
 The fine amount is calculated based on export factures that the confirmation was
 overdue for. For these factures, the tax payment also wasn't made on time. To
@@ -349,10 +347,9 @@ For more information, see the [Calculate the fine
 amount](#calculate-the-fine-amount) section.
 
 Preliminary setup
-=================
+-----------------
 
-Set up number sequences for export factures and VAT processing
---------------------------------------------------------------
+### Set up number sequences for export factures and VAT processing
 
 1.  Go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
 
@@ -365,8 +362,7 @@ Set up number sequences for export factures and VAT processing
     generate numbers for the ledger documents that are used to post taxes on the
     **Outgoing VAT processing** page.
 
-Set up a customer as a foreign counteragent
--------------------------------------------
+### Set up a customer as a foreign counteragent
 
 1.  Go to **Accounts receivable \> Customers \> All customers**.
 
@@ -379,8 +375,7 @@ Set up a customer as a foreign counteragent
     the **Sales tax group** field, select a sales tax group that contains the
     sales tax group where the **Type of tax** field is set to **VAT 0%**.
 
-Set up a sales tax code for export trade
-----------------------------------------
+### Set up a sales tax code for export trade
 
 1.  Go to **Tax \> Indirect taxes \> Sales tax \> Sales tax codes**.
 
@@ -393,8 +388,7 @@ Set up a sales tax code for export trade
 
 ![A screenshot of a computer Description automatically generated](media/b7d3c40be74cce1942347ac1d4d2f1cf.png)
 
-Set up a document collection period and confirm the application of VAT at 0 percent
------------------------------------------------------------------------------------
+### Set up a document collection period and confirm the application of VAT at 0 percent
 
 The date when the tax base on export is determined and the reflection of the
 export sale in the tax reporting depend on the period that is allowed for
@@ -419,8 +413,7 @@ the following formula:
 
     ![A screenshot of a cell phone Description automatically generated](media/50eed6f3026364976fc6e049a6cdd824.png)
 
-Set up a default operation type
--------------------------------
+### Set up a default operation type
 
 1.  Go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
 
@@ -431,8 +424,7 @@ Set up a default operation type
 
 ![A screenshot of a computer Description automatically generated](media/76393b00aed16fe78736353d75e2febb.png)
 
-Set up parameters for the VAT process
--------------------------------------
+### Set up parameters for the VAT process
 
 1.  Go to **Accounts receivable \> Periodic tasks \> Sales book \> Parameters of
     VAT process**.
@@ -474,8 +466,7 @@ Set up parameters for the VAT process
     posting groups** page (**Tax \> Set up \> Sales tax \> Ledger posting
     groups**) will be used.
 
-Set up a refinancing rate and factor for fine calculation
----------------------------------------------------------
+### Set up a refinancing rate and factor for fine calculation
 
 1.  Go to **General ledger \> Ledger setup \> Refinancing rate**.
 
@@ -490,8 +481,7 @@ Set up a refinancing rate and factor for fine calculation
 
     ![A screenshot of a cell phone Description automatically generated](media/a8df3db13ac79a87767934fe347b684b.png)
 
-Set up a main account for fine accounting
------------------------------------------
+### Set up a main account for fine accounting
 
 1.  Go to **Tax \> Setup \> Profit tax \> Sales tax relations**.
 
@@ -519,8 +509,7 @@ Set up a main account for fine accounting
     ledger account. This account will be in the credit of the voucher for fine
     accrual.
 
-Set up a reporting date for fine calculation
---------------------------------------------
+### Set up a reporting date for fine calculation
 
 1.  Go to **Tax \> Indirect taxes \> Sales tax \> Sales tax settlement
     periods**.
@@ -532,7 +521,7 @@ Set up a reporting date for fine calculation
 ![A screenshot of a computer Description automatically generated](media/45d7f4966502c9b44e59c3cefd338e8f.png)
 
 Create a facture for export sales
-=================================
+---------------------------------
 
 1.  Create a new sales order.
 
@@ -568,10 +557,9 @@ Create a facture for export sales
     **Operation type** fields and the **Into processing** check box.
 
 Preliminary processing of export factures
-=========================================
+-----------------------------------------
 
-Process export factures
------------------------
+### Process export factures
 
 1.  Go to **Accounts receivable \> Periodic tasks \> Sales book \> Preliminary
     processing export factures**.
@@ -595,11 +583,9 @@ Process export factures
 
 ![](media/84c7dd1dc7386d1d500c1c0a00d628a7.png)
 
->   A screenshot of a cell phone Description automatically generated
+7.  Select **OK**.
 
-1.  Select **OK**.
-
-2.  On the **Preliminary processing of export factures** page, notice the
+8.  On the **Preliminary processing of export factures** page, notice the
     following details:
 
 -   The upper pane shows a list of selected factures:
@@ -617,11 +603,10 @@ Process export factures
 
     ![A screenshot of a computer Description automatically generated](media/757dce68a0cf0f6dce37cf65a5ad553e.png)
 
-1.  On the Action Pane, select **Update** to process the marked factures
+9.  On the Action Pane, select **Update** to process the marked factures
     according to the assigned operation type.
 
-Cancel processing of export factures
-------------------------------------
+### Cancel processing of export factures
 
 1.  Go to **Accounts receivable \> Periodic tasks \> Sales book \> Cancel
     preliminary processing of export factures**.
@@ -643,10 +628,9 @@ factures that were created because of preliminary processing, if the facture
 isn't already included in the sales book.
 
 Outgoing VAT processing
-=======================
+-----------------------
 
-Process outgoing VAT
---------------------
+### Process outgoing VAT
 
 1.  Go to **Accounts receivable \> Periodic tasks \> Sales book \> Outgoing VAT
     processing**.
@@ -670,16 +654,12 @@ Process outgoing VAT
 
 ![](media/3f5ba4625582502d451ed12fff2aa936.png)
 
->   A screenshot of a cell phone Description automatically generated
-
-1.  On the **Sales book (Outgoing VAT processing)** page, mark factures for
+7.  On the **Sales book (Outgoing VAT processing)** page, mark factures for
     posting, and then, on the Action Pane, select **Post**.
 
 ![](media/228c18a112eff82e77d5dc2da0313eee.png)
 
->   A screenshot of a computer Description automatically generated
-
-1.  In the **Outgoing VAT processing – ledger posting** dialog box, in the
+8.  In the **Outgoing VAT processing – ledger posting** dialog box, in the
     **Transaction date** field, select a transaction date, and then select
     **OK**.
 
@@ -691,11 +671,10 @@ As a result of posting the marked factures, the following actions occur:
 
 -   Export sales factures are included in the sales book.
 
-*Note*. The sales book can't be closed until all VAT has been processed for the
-period.
+>   **Note**. The sales book can't be closed until all VAT has been processed for the
+>   period.
 
-View processed factures
------------------------
+### View processed factures
 
 1.  Go to **Accounts receivable \> Periodic tasks \> Sales book \> VAT
     processing log**.
@@ -705,8 +684,7 @@ View processed factures
 
 ![A screenshot of a computer Description automatically generated](media/5a5d4f2ce4df91189b53c647947440a0.png)
 
-Cancel processed VAT
---------------------
+### Cancel processed VAT
 
 1.  Go to **Accounts receivable \> Periodic tasks \> Sales book \> Cancel
     processed VAT**.
@@ -720,10 +698,10 @@ Cancel processed VAT
 
 ![A screenshot of a cell phone Description automatically generated](media/75a808a59247fb72893c56b9d6b47d95.png)
 
-1.  Select **OK**.
+4.  Select **OK**.
 
 Calculate the fine amount
-=========================
+-------------------------
 
 1.  Go to **Accounts receivable \> Periodic tasks \> Sales book \> Sales books
     journal**.
@@ -735,31 +713,29 @@ Calculate the fine amount
 
 ![](media/fbb1913097a6fbe6f20348df27593d99.png)
 
->   A screenshot of a cell phone Description automatically generated
-
-1.  On the **Parameters** FastTab, in the **Date of fine calculation** field,
+4.  On the **Parameters** FastTab, in the **Date of fine calculation** field,
     specify the date when you want to calculate the fine amount.
 
-2.  On the **Records to include** FastTab, select **Filter** to specify
+5.  On the **Records to include** FastTab, select **Filter** to specify
     selection criteria.
 
-3.  Select **OK** to calculate the fine.
+6.  Select **OK** to calculate the fine.
 
-4.  On the **Fine calculation** page, in the lower pane, in the **Fine to post**
+7.  On the **Fine calculation** page, in the lower pane, in the **Fine to post**
     field, you can view and edit the calculated fine amount.
 
-5.  In the upper pane, mark the factures for posting the fine amount, and then,
+8.  In the upper pane, mark the factures for posting the fine amount, and then,
     on the Action Pane, select **Into journal**.
 
-6.  Select the journal where the lines for fine accrual should be created, and
+9.  Select the journal where the lines for fine accrual should be created, and
     then select **OK**. The amounts for the marked factures will be transferred
     to the specified journal.
 
-7.  On the **Facture journal** page, on the **Foreign trade** tab, in the
+10. On the **Facture journal** page, on the **Foreign trade** tab, in the
     **Fine** section, in the **Date of fine calculation** field, you can view
     the date when the fine was calculated.
 
 >   *Note.* If the **Date of fine calculation** field was set before the
 >   calculation was done, the facture won't be included in the calculation.
 
-1.  In the **Fine amount** field, you can view the calculated fine amount.
+11. In the **Fine amount** field, you can view the calculated fine amount.
