@@ -411,10 +411,10 @@ customer record and sales agreement record aren't selected.
 
     ![](media/10_Accounts_receivable_parameters.png)
 
->   **Note.** In the **Invoice** column, the **Posting profile** and **Kind of
->   activity** options are always set to **Yes** and can't be changed.
->   Therefore, sales order invoices are always split by customer posting
->   profiles and kinds of activity.
+    >   **Note.** In the **Invoice** column, the **Posting profile** and **Kind of
+    >   activity** options are always set to **Yes** and can't be changed.
+    >   Therefore, sales order invoices are always split by customer posting
+    >   profiles and kinds of activity.
 
 7.  On the **Updates** tab, on the **Order lines** FastTab, select **Update
     order lines** to open the **Update order lines** dialog box.
@@ -461,7 +461,7 @@ for the warehouse record aren't selected.
     created and exploded, and when reporting as finished is processed, if an
     inventory profile isn't specified on the BOM lines.
 
-    ![](media/13_Inventory_and_warehouse_management_parameters.png)
+![](media/13_Inventory_and_warehouse_management_parameters.png)
 
 Find more details in the following topics:
 
