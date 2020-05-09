@@ -50,7 +50,7 @@ Using a Secure File task is the recommended approach for Universal Windows Platf
 ![MPOS app signing flow](media/POSSigningFlow.png)
 
 > [!NOTE] 
-> Currently the OOB packaging supports signing only the appx file, the different self-service installers like MPOIS, RSSU, and HWS are not signed by this process. You need to manually sign it using SignTool or other signing tools.
+> Currently the OOB packaging supports signing only the appx file, the different self-service installers like MPOIS, RSSU, and HWS are not signed by this process. You need to manually sign it using SignTool or other signing tools. The certificate used for signing the appx file must be installed in the machine where Modern POS is installed..
 
 ## Steps to configure the certificate for signing
 
