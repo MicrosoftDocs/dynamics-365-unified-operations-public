@@ -151,7 +151,7 @@ This section maintains a list of known issues for the new grid control while the
 > [!Note]
 > The following information is being provided so that you can plan accordingly. For more information about the targeted release schedule of version 10.0.12, see [Service update availability](../../fin-ops/get-started/public-preview-releases.md).
 
-- [Issue 429126] Controls outside the grid aren't updated after the last record is deleted.
+- [KB 4558383] Controls outside the grid aren't updated after the last record is deleted.
 - [Issue 430575] Table controls don't update the contents of displayed items.
 - [KB 4558570] Items are still shown on the page after the record has been deleted.
 - [KB 4558584] Negative numbers aren't rendered correctly.
