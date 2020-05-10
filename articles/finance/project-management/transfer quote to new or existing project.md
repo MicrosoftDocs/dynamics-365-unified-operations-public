@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Create contracts for fixed-price project with milestones
-description: This article describes how to create contracts
+title: Transfer quotation to a new or existing project
+description: This article describes how to transfer a quotation in the "Created" status, to a new or existing project.
 author: RadhikaRS
 manager: AnnBe
-ms.date: 03/27/2020
+ms.date: 05/08/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
