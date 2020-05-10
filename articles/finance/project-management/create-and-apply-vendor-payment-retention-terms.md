@@ -33,3 +33,5 @@ ms.search.validFrom: 2019-01-15
 # Create and apply vendor payment retention terms
 
 [!include [banner](../includes/banner.md)]
+
+
