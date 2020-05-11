@@ -37,7 +37,7 @@ ms.dyn365.ops.version: Operations
 Finance and Operations apps are often customized and extended to fit an organization's needs. If your solution is based on Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, or Dynamics 365 Commerce, you can connect solution-specific and customer-specific Help content to the [Help pane](../../fin-ops/get-started/help-overview.md#in-product-help) in the Finance and Operations client. This topic describes the main steps and decision points.
 
 > [!NOTE]
-> Users of Finance and Operations apps can create [custom task guides](../../fin-ops/get-started/help-connect.md#create-custom-help-with-task-guides) to supplement conceptual content that describes the functionality of their solution. These conceptual descriptions are also referred to as Help and can be provided by Microsoft, partners, and an organization itself. For more information, see [Help system](../../fin-ops/get-started/help-overview.md).
+> Users of Finance and Operations apps can create custom task guides to supplement conceptual content that describes the functionality of their solution. These conceptual descriptions are also referred to as Help and can be provided by Microsoft, partners, and an organization itself. For more information, see [Help system](../../fin-ops/get-started/help-overview.md).
 
 The following illustration, and this topic in general, use the term *Help* for conceptual descriptions that either include or exclude how-to guides. The term *task guides* refers to in-product task guides.
 
