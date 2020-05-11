@@ -143,10 +143,27 @@ Operations entity is not used at all.
 As stated above, GUID is the only information that is used to identify a record uniquely in a native CDS entity (including native to native relationships) or a Finance and Operations virtual entity (including virtual entity to virtual entity relationship). However, let’s take an example where, we want to show sales orders from Finance and Operations for an account Account A in CDS. The
 query sent to Finance and Operations for this relationship will have a WHERE clause on the GUID of the entity key of the native accounts entity in CDS. This is because, the scenario is asking to filter the sales orders for a specific account in CDS.
 
-In this example however, Finance and Operations does not know anything about the GUID of the entity in CDS and hence, the query is not going to return any sales orders. The query will be successful only if the WHERE clause has conditions based on the fields that Finance and Operations knows. This leads to the question as to, how can the GUID of the accounts entity in CDS be replaced with field(s) that are in Finance and Operations such that, the query sent to Finance and Operations will be executed to return the correct list of sales orders?
+Finance and Operations does not know anything about the GUID of the entity in CDS and hence, the query is not going to return any sales orders. The query will be successful only if the WHERE clause had conditions based on the fields that Finance and Operations knew. This leads to the question as to, how can the GUID of the accounts entity in CDS be replaced with field(s) that are in Finance and Operations such that, the query sent to Finance and Operations will be executed to return the correct list of sales orders?
 
-To solve this problem and enable a rich set of scenarios that allows for virtual entity to native entity relationships, additional metadata can be added to such a relationship in the entity in Finance and Operations. Continuing this example, a new relationship must be added to the sales order entity in Finance and Operations that relates to the account entity in CDS. In addition to this,
-additional metadata must be added to this relationship to capture the mapping between the sales order field that has the customer id and the CDS account entity that has the account number. When this additional information is made available in the relationship definition, the query generated will have the WHERE clause based on the fields that Finance and Operations will understand and the query will return the filtered list of sales orders as expected.
+To solve this problem and enable a rich set of scenarios that allows for virtual entity to native entity relationships, relations can be added to such an entity in Finance and Operations. The relation will show up as a relationship when the virtual entity is synced. Sample x++ code is shown below.
+
+```x++
+[CDSVirtualEntitySyntheticRelationshipAttribute('synthaccount', 'account', '\@SYS11307', 'accountcompanyidx')]
+    public static Map syntheticAccountRelationship()
+    {
+        Map fieldMapping = new Map(Types::String, Types::String);
+
+        // Assumes the CDS account entity has a key on [msdyn_accountnumber, msdyn_companyid]
+        // Also assumes that the CDS cdm_Company entity has a key on [msdyn_companycode]
+        fieldMapping.insert(fieldStr(CDSVirtualEntityTestEntity, StringField), 'msdyn_accountnumber');
+        fieldMapping.insert(fieldStr(CDSVirtualEntityTestEntity, DataAreaId), 'msdyn_companyid');
+
+        return fieldMapping;
+    }
+
+```
+
+When this additional relations are made avaialble in CDS information is made available in the relationship definition, the query generated will have the WHERE clause based on the fields that Finance and Operations will understand and the query will return the filtered list of sales orders as expected.
 
 ### Native entity to virtual entity relationship
 
