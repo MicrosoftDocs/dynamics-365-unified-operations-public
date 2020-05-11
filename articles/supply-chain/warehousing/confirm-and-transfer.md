@@ -79,7 +79,9 @@ To use confirm-and-transfer feature, you must enable it on each of your relevant
 
 1. Go to **Warehouse management** > **Setup** > **Loads** > **Load templates**.
 1. Select **Edit** on the action pane to put the page into edit mode.
-1. Select the **Allow load split during ship confirm** check box for each listed template where you'd like to enable this feature (or select **Add** to create a new template and configure it as needed). Every load that you create using this template will now inherit this functionality <!-- KFM: also existing loads, or just new ones? -->. <br>(If you're working with the **USMF** legal-entity demo data, then enable this feature for the **20' Container** load template.)
+1. Select the **Allow load split during ship confirm** check box for each listed template where you'd like to enable this feature (or select **Add** to create a new template and configure it as needed). Every load that you create using this template will now inherit this functionality (If you're working with the **USMF** legal-entity demo data, then enable this feature for the **20' Container** load template.)
+
+<!-- KFM: also existing loads, or just new ones? -->
 
 <!--
 KFM: I'm not sure what to do with the following text. I think maybe it belongs in the intro or in the scenario:
@@ -98,7 +100,7 @@ KFM: I'm not sure what to do with the following text. I think maybe it belongs i
 This setup isn't required in all situations. The example shown here ensures that work can be broken by shipment, which will support the example scenario provided later in this topic. There are also other ways to accomplish this.
 
 1. Go to **Warehouse management** > **Setup** > **Work** > **Work templates**.
-1. Find or create a work template where you want to set up the confirm-and-transfer feature.<br>(If you're working with the **USMF** legal-entity demo data, then edit the **51 Pick to stage** work template.)
+1. Find or create a work template where you want to set up the confirm-and-transfer feature (If you're working with the **USMF** legal-entity demo data, then edit the **51 Pick to stage** work template.)
 1. Select **Edit query** on the action pane to open the **Sales** flyout.
 1. Open the **Sorting** tab on the flyout.
 1. Select **Add** to add a new row to the table and then make the following settings for the new row: <!-- KMF: what are we doing here? What do these settings do? Do we always want to do this? Do we have a link for more info? -->
@@ -115,17 +117,20 @@ This setup isn't required in all situations. The example shown here ensures that
     - **Field name**: Shipment ID
     - **Group by this field**: (Selected)
 1. Select **Save** on the action pane.
+1. **Close** the form.
 
-## Example scenario
+## Scenario
 
-This scenario illustrates an example where the picking process isn't finished yet, but the items picked so far need to be loaded onto a truck and shipped anyway. The user will therefore be able to _split_ the unpicked load lines into a new load with all data relationships updated automatically.
+This scenario illustrates an example where the picking process isn't finished yet, but the items picked so far need to be loaded onto a truck and shipped anyway. The user will therefore be able to _**split**_ the unpicked load lines into a new load with all data relationships updated automatically.
 
 > [!NOTE]
 > The specific values suggested in this scenario are based on the **USMF** legal-entity demo data. We recommend you use this demo data while demonstrating or learning the feature. If you aren't using the **USMF** demo data, then substitute your own values as needed.
 
 ### Step 1: Create a load with multiple load lines
 
-Before you can use this functionality, you must have a load with multiple load lines. To create a qualifying load:
+Before you can use this functionality, you must have a load with multiple load lines. Also, ensure you have enough inventory in the pick locations for all of the items in the sales orders you will create. Review the **Location directive** setting (**Warehouse management** > **Setup** > **Location directives**) and take note of the picking locations are used for sales order picking. If you need to adjust the inventory, create manual movements, use replenishment, or any other flow as needed.
+
+To create a qualifying load first create three sales orders:
 
 1. Go to **Sales and Marketing** > **Sales orders** > **All sales orders**.
 
@@ -133,63 +138,116 @@ Before you can use this functionality, you must have a load with multiple load l
 
 1. In the flyout, make the following settings (at minimum):
 
-    - In the **Customer** FastTab, select an appropriate **Customer account**.
+    - In the **Customer** FastTab, select **US-004**, - **Cave Wholesales**.
     - In the **General** FastTab, set the **Warehouse** to "51".
 
 1. Select **OK** to create the sales order and close the flyout.
 
-1. Your new sales order now opens. In the **Sales order** lines table, use the **Add line** button to add a line with the following values:
+1. Your new sales order now opens. In the **Sales order** lines table, add a line with the following values:
 
     - **Item number** "M9200", **Quantity** "40", **Unit**: "ea"
+1. In the **Sales order lines** FastTab, select **Inventory**, then select **Reservation** from the menu.
+1. Select **Reserve lot** from the Action pane to open the **Reservation** form and reserve the inventory on the sales line.
+1. Close the **Reservation** form.
 
-1. Repeat this procedure to add a second sales order for the same **Customer** and **Warehouse**, but this time with the following order lines:
+1. Repeat **steps 1 - 4** to add a second sales order for the same **Customer** and **Warehouse**, but this time with the following order lines:
 
     - Line 1: **Item number** "M9200", **Quantity** "30", **Unit** "ea"
-    - LIne 2: **Item number** "M9201", **Quantity** "20", **Unit** "ea"
+    - Line 1: Reserve the inventory for the sales line (**steps 6 - 8**).
+        - Select **Add line** to add an additional line
+    - Line 2: **Item number** "M9201", **Quantity** "20", **Unit** "ea"
+    - Line 2: Reserve the inventory for the sales line (**steps 6 - 8**).
 
 1. Repeat this procedure to add a third sales order for the same **Customer** and **Warehouse**, but this time with the following order lines:
     - Line 1: **Item number** "M9201", **Quantity** "20", **Unit** "ea"
+    - Line 1: Reserve the inventory for the sales line (**steps 6 - 8**).
+        - Select **Add line** to add an additional line
     - Line 2: **Item number** "M9202", **Quantity** "60", **Unit** "ea"
+    - Line 2: Reserve the inventory for the sales line (**steps 6 - 8**).
 
     <!-- KMF: I was unable to confirm any of the steps after this point. -->
 
-1. Make sure you have enough inventory in the pick locations for all of the items in the sales orders you just created. Review the **Location directive** setting and take note of the picking locations are used for sales order picking. If you need to adjust the inventory, create manual movements, use replenishment, or any other flow as needed.  <!-- KMF: How do I do these things? Where is the **location directive** setting? Do we have links for more info? -->
+<!-- HHM: Commenting this text out after adding above. 1. Make sure you have enough inventory in the pick locations for all of the items in the sales orders you just created. Review the **Location directive** setting and take note of the picking locations are used for sales order picking. If you need to adjust the inventory, create manual movements, use replenishment, or any other flow as needed. -->
 
-1. Reserve the inventory. <!-- KMF: How? Inventory > Reservation? Then what? Use all three SOs?  Do we have a link for more info? -->
+<!-- KMF: How do I do these things? Where is the **location directive** setting? Do we have links for more info? -->
 
-1. Go to **Warehouse management** > **Loads** > **Load planning workbench** and open the workbench where the new load will be created with the desired load template. <!-- KMF: I only see one workbench. What load template do you mean? How do I know where my load will be created? -->
+<!-- HHM: Commenting out, added steps above. 1. Reserve the inventory. -->
+<!-- KMF: How? Inventory > Reservation? Then what? Use all three SOs?  Do we have a link for more info? -->
 
-1. Select the load template from the setup. <!-- KMF: How do I choose a template? Which template should I choose? (Earlier, we prepare the **20' Container** load template.) What setup do you mean? -->
+### Load Planning Workbench
 
-1. A new load is now created. <!-- KMF: How/when is it created? Does this happen automatically after choosing a load template in the last step? -->
+The load planning workbench will utilize the **Load template ID** to build the shipments and release the sales order lines to the warehouse.
 
-1. In the **Loads** section of the **Load planning workbench**, go to **Release** and **Release to warehouse** for the newly created load. This will create work orders for the added load lines. <!-- KMF: This makes no sense to me. I suspect several steps are missing. -->
+1. Go to **Warehouse management** > **Loads** > **Load planning workbench**
+1. Select warehouse **51** in the **Warehouse field**.
+1. Select **Sales lines** tab. Now you will build the load for the sales orders you just created.
+1. In the **Sales lines** grid, select the sales lines for the sales orders you just created.
+1. On the Action Pane, select **Supply and demand**.
+1. Select **To new load**.
+1. In the **Load template assignment** FlyOut, select **20' Container** from **Load template ID**
+1. In the **Loads** section of the **Load planning workbench**, find your newly created **Load ID** for warehouse **51**. Scroll right until you see the column **Allow load split during ship confirm**. Your load will be checked.
+1. Select the load.
+1. Select **Release** from the **Loads** action pane, then select **Release to warehouse** to create work.
+1. In the **Release load to warehouse** FlyOut, validate that your **Load ID** is displayed in the **Records to include** FastTab.Expand the section if necessary.
+1. Select **OK**.
+1. A **Processing operation** popup may display while the system creates the shipments and work.
+1. In the **Loads** section your load will now have a **Load status** of **Waved**. Select your load then select **Related information** from the **Loads** action pane.
+1. There are several menu options to choose from, select **Wave details** to view the **Shipment ID**'s created.
+1. Select **Work details** to view the work created for the sales orders.
+1. Make note of the **Work ID**'s created, you may need to scroll right to identify the sales **Order number** and **Shipment ID** associated with the work ID.
+
+<!-- HHM: Karl, I addressed your comments below in the above. >
+<!-- KMF: I only see one workbench. What load template do you mean? How do I know where my load will be created? -->
+<!-- KMF: How do I choose a template? Which template should I choose? (Earlier, we prepare the **20' Container** load template.) What setup do you mean? -->
+<!-- KMF: How/when is it created? Does this happen automatically after choosing a load template in the last step? -->
+<!-- KMF: This makes no sense to me. I suspect several steps are missing. -->
 
 ### Step 2: Set up the execution flow for mobile devices
 
 <!-- KMF: I couldn't edit this section because none of it makes sense to me. I suspect many steps and/or links are missing. Please review and revise. -->
+<!-- HHM: Kyle, I addressed your concern below. We may want to discuss how to address for all mobile device tasks in a common format. The mobile device relies heavily on License Plate ID's and Work ID's that in the field would be readily available to users in the form of scanning a barcode where in scenario testing you need that information provided to you.  -->
 
-Enter mobile device and select the menu where the new Sales order picking mobile device menu is located.
+Mobile device tasks will require user input of information, such as **Work ID** or **License Plate**. In the field, this information is typically provided for warehouse users in the form of barcodes found on documentation, packaging or racking. To complete the mobile device steps of scenarios, ensure that you have identified the work ID's for the transactions and the license plate ID's for the item and location in the transactions.
 
-Select the _Sales Pick_ menu item and initiate the pick. After selecting the menu and entering the first Work ID, the user will be presented with the Pick step. Complete the pick until the Put to Stage step for Work ID 1 and repeat the same for Work ID 2.
+1. Log in to the mobile device with a **User ID** and **Password** for warehouse **51**.
+1. Select the **Outbound** menu item.
+1. Select **Sales Picking** menu item.
+1. You have the option to enter the **Work ID** or **License Plate ID**, enter the **work ID** for the first **Sales order**, select **Enter**.
+1. Enter the displayed location in the **LOC** field to confirm the picking location, select **Enter**.
+1. Enter the **License plate ID** in the **LP** field. License plate ID must match to the Item, Warehouse and Location of the item being picked from the selected location, select **Enter**.
+1. Enter the **Item number** in the **ITEM** field to confirm the item being picked, select **Enter**.
+1. Enter the quantity of the item being picked in the **QTY** field, select **Enter**.
+1. Enter a **Target License plate ID** in the **Target LP** field. Target LP's are user defined, enter a LP ID you will remember, suggest a format of current date plus a 2 digit sequence (example: YYMMDD##, 19112301), select **Enter**.
+1. Review information displayed, this is the **Pick** information that will now become the **Put** data for the put transaction, select **Enter**.
+1. **Work Completed**
+1. Repeat **Steps 4 - 10** for the **Work ID** of the second **Sales order**.
 
-Next, load the two picked pallets to the truck. Select the _Sales Loading_ menu item to start the loading process. After selecting the menu and entering the first Work ID, the user will be presented with the Pick step. Complete the loading of Work ID 1 and repeat the same for Work ID 2.
+Next step is to load the two picked license plates to the truck.
+
+1. Log in to the mobile device with a **User ID** and **Password** for warehouse **51**.
+1. Select the **Outbound** menu item.
+1. Select **Sales Loading** menu item.
+1. Enter the user defined **Target License plate ID** created in **Step 9** above, select **Enter** to **Put** the target LP into the **STAGE** location.
+1. Enter the target license plate ID again and select **Enter** to **Put** the LP into the **BAYDOOR** location.
+1. Repeat for the **Target License plate ID** created for the second work ID.
 
 These two Work IDs will now be closed (loaded).
 
 ### Step 3: Confirm the outbound shipment
 
-1. Go to **Warehouse management** > **Loads** > **Load planning workbench** and select the load you just created to view its details.
+In this step you will confirm the two Sales orders/Work that have been completed for the load to **ship** the picked items of the load and create a new load for the unpicked items. **Outbound shipment confirmation** must be done on the **Load details** form.
 
-1. On the action bar, open the **Ship and receive** tab and then select **Outbound shipment** from the **Confirm** section to initiate the confirmation.
+1. Go to **Warehouse management** > **Loads** > **Load planning workbench**.
+1. In the **Load planning workbench** form, select the **Load ID** you created from the grid in the **Loads** section.
+1. Select the **Load ID** ***hyperlink*** to open **Load Details**.
+1. On the **Load details** Action Pane, select **Ship and receive** tab and then select **Outbound shipment** from the **Confirm** section to initiate the confirmation.
+1. On the **Ship confirm** FlyOut, in the **Load split method during ship confirm** field, select **Split quantity to new load**.
+1. Select **OK**. A processing operation message may appear.
+1. Informational messages are displayed indicating that the **shipment** for your load has been confirmed, and, a new **Load** has been created from the split quantity.
 
 <!-- KMF: I couldn't reproduce this procedure after this point, so I wasn't able to edit after here. -->
 
-New _Ship confirm_ form will be presented to the user indicating that _Ship confirm will split Load_, where the user has the option to continue or cancel.
-
-For the purpose of this demo, select option _Split quantity to new load_ and press _OK._
-
-The system will show a message to the user &quot;The shipment for load %1 has been confirmed&quot;.On the main screen, the user is presented with the newly created Load after a refresh.
+On the main screen, the user is presented with the newly created Load after a refresh.
 
 You can also confirm that transaction relations have been updated accordingly.
 
