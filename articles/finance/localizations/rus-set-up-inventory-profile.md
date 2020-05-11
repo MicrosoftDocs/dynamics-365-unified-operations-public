@@ -326,4 +326,4 @@ On the **Inventory and warehouse management parameters** page, you can select a 
 Find more details in the following topics:
 
 - [Inventory profile overview](rus-inventory-profile-overview.md)
-- [Use inventory profile in documents and queries](rus-use-inventory-profile-in-documents-and-queries.md)
+- [Use an inventory profile in documents and queries](rus-use-inventory-profile-documents-queries.md)
