@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Configure Batch-only and Interactive-only AOS nodes in on-premises deployments
-description: This topic explains how to configure your environment so that you can deploy Batch-only and Interactive-only AOS nodes.
+title: Configure batch-only and interactive-only AOS nodes in on-premises deployments
+description: This topic explains how to configure your environment so that you can deploy batch-only and interactive-only AOS nodes.
 author: faix
 manager: AnnBe
 ms.date: 03/26/2020
@@ -36,12 +36,12 @@ ms.dyn365.ops.version: Platform update 36
 > [!IMPORTANT]
 > This feature is supported starting in application update 10.0.12, Platform update 36.
 
-This topic explains how to configure your environment so that you can deploy Batch-only and Interactive-only Application Object Server (AOS) nodes.
+This topic explains how to configure your environment so that you can deploy batch-only and interactive-only Application Object Server (AOS) nodes.
 
-To make this feature available, Microsoft has introduced two new Microsoft Azure Service Fabric node types. For Batch-only AOS nodes, the new node type is **BatchOnlyAOSNodeType**. For Interactive-only AOS nodes, the new node type is **InteractiveOnlyAOSNodeType**.
+To make this feature available, Microsoft has introduced two new Microsoft Azure Service Fabric node types. For batch-only AOS nodes, the new node type is **BatchOnlyAOSNodeType**. For interactive-only AOS nodes, the new node type is **InteractiveOnlyAOSNodeType**.
 
 > [!NOTE]
-> The traditional deployment option, where an AOS node is Interactive and is running Batch, is still supported and isn't affected by these changes.
+> The traditional deployment option, where an AOS node is interactive and is running batch jobs, is still supported and isn't affected by these changes.
 
 ## Sizing
 
@@ -56,16 +56,16 @@ For production environments, there should be at least three nodes of each type.
     ```xml
     <NodeType name="InteractiveOnlyAOSNodeType" primary="false" namePrefix="AOS" purpose="AOS">
         <VMList>
-            <VM name="LBDEN05FS1AOS01" ipAddress="192.168.5.11" faultDomain="fd:/fd0" updateDomain="ud0" />
-            <VM name="LBDEN05FS1AOS02" ipAddress="192.168.5.12" faultDomain="fd:/fd1" updateDomain="ud1" />
-            <VM name="LBDEN05FS1AOS03" ipAddress="192.168.5.13" faultDomain="fd:/fd0" updateDomain="ud2" />
+            <VM name="LBDE05FS1AOS01" ipAddress="192.168.5.51" faultDomain="fd:/fd0" updateDomain="ud0" />
+            <VM name="LBDE05FS1AOS02" ipAddress="192.168.5.52" faultDomain="fd:/fd1" updateDomain="ud1" />
+            <VM name="LBDE05FS1AOS03" ipAddress="192.168.5.53" faultDomain="fd:/fd0" updateDomain="ud2" />
         </VMList>
     </NodeType>
     <NodeType name="BatchOnlyAOSNodeType" primary="false" namePrefix="AOS" purpose="AOS">
         <VMList>
-            <VM name="LBDEN05FS1AOS04" ipAddress="192.168.5.14" faultDomain="fd:/fd0" updateDomain="ud0" />
-            <VM name="LBDEN05FS1AOS05" ipAddress="192.168.5.15" faultDomain="fd:/fd1" updateDomain="ud1" />
-            <VM name="LBDEN05FS1AOS06" ipAddress="192.168.5.16" faultDomain="fd:/fd0" updateDomain="ud2" />
+            <VM name="LBDE05FS1AOS04" ipAddress="192.168.5.54" faultDomain="fd:/fd0" updateDomain="ud0" />
+            <VM name="LBDE05FS1AOS05" ipAddress="192.168.5.55" faultDomain="fd:/fd1" updateDomain="ud1" />
+            <VM name="LBDE05FS1AOS06" ipAddress="192.168.5.56" faultDomain="fd:/fd0" updateDomain="ud2" />
         </VMList>
     </NodeType>
     ```
