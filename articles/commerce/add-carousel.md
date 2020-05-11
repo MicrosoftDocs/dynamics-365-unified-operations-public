@@ -65,7 +65,7 @@ The following example shows a carousel module used on a homepage with multiple c
 
 To add a carousel module to a new page and set the required properties, follow these steps.
 
-1. Select **New** to create a page template.
+1. Go to **Templates** and select **+New** to create a new template.
 1. In the **New Template** dialog box, under **Template Name**, enter **Carousel template**, and then select **OK**.
 1. In the **Body** slot, add a **Default page** module.
 1. Select **Finish editing** to check in the template, and then select **Publish** to publish it.  
