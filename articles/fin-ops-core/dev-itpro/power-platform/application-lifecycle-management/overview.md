@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.0
 
 # Overview
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]
 
 
 Text goes here.
