@@ -175,11 +175,11 @@ __|__cart-extension.action.ts
 |__themes
 |__|__spring
 |__|__|__|__definition-extensions
-|__|__|__|__|__|__product-feature.definition.ext.json
+|__|__|__|__|__product-feature.definition.ext.json
 |__|__|__|__styles
 |__|__|__|__view
-|__|__|__|__|__|__product-feature.data.ts
-|__|__|__|__|__|__product-feature.view.tsx
+|__|__|__|__|__product-feature.data.ts
+|__|__|__|__|__product-feature.view.tsx
 ```
 
 Data returned from a data action must be assigned to a variable declared in the MODULE_NAME.data.ts file under the **views** directory.  The below is an example.  Note the name of the variable **cartNameExtension** must match the name provided in the **dataAction** section of the module definition extension file.  
