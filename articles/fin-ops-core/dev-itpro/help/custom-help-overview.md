@@ -5,7 +5,7 @@ title: Custom Help overview
 description: This topic explains how you can extend the Microsoft Help system so that it reflects your solution and then connect your content to the Help pane. 
 author: edupont04
 manager: AnnBe
-ms.date: 03/17/2020
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: Operations
 Finance and Operations apps are often customized and extended to fit an organization's needs. If your solution is based on Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, or Dynamics 365 Commerce, you can connect solution-specific and customer-specific Help content to the [Help pane](../../fin-ops/get-started/help-overview.md#in-product-help) in the Finance and Operations client. This topic describes the main steps and decision points.
 
 > [!NOTE]
-> Users of Finance and Operations apps can create [custom task guides](/../../fin-ops/get-started/help-connect.md#create-custom-help-with-task-guides) to supplement conceptual content that describes the functionality of their solution. These conceptual descriptions are also referred to as Help and can be provided by Microsoft, partners, and an organization itself. For more information, see [Help system](../../fin-ops/get-started/help-overview.md).
+> Users of Finance and Operations apps can create custom task guides to supplement conceptual content that describes the functionality of their solution. These conceptual descriptions are also referred to as Help and can be provided by Microsoft, partners, and an organization itself. For more information, see [Help system](../../fin-ops/get-started/help-overview.md).
 
 The following illustration, and this topic in general, use the term *Help* for conceptual descriptions that either include or exclude how-to guides. The term *task guides* refers to in-product task guides.
 
@@ -82,7 +82,7 @@ The following table outlines the main objectives that admins typically have for 
 | I want to reuse my existing Dynamics AX content. | See [Convert Dynamics AX custom Help for use in Dynamics 365](migrate-dynamicsax2012.md). |
 | I want to set up a website for my Help content. | See the [Custom Help websites](#custom-help-sites) section of this topic. |
 | I want to add my content to the **Help** pane. | See [Connect a custom Help website to the Help pane](connect-help-pane.md). |
-| Our technical writers want guidance that will help them convert our earlier content into Markdown for a better Help customization story going forward. | See [Moving to Markdown](migrate-dynamicsax2012.md#moving-to-markdown). |
+| Our technical writers want guidance that will help them convert our earlier content into Markdown so that it becomes easier for them to customize the Microsoft content. | See [Moving to Markdown](migrate-dynamicsax2012.md#moving-to-markdown). |
 
 ## <a name="custom-help-sites"></a>Custom Help websites
 

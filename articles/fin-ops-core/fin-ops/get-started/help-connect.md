@@ -5,7 +5,7 @@ title: Configure the Help experience for Finance and Operations apps
 description: This topic provides information about the components of the Help system for some Microsoft Dynamics 365 apps. It also explains how to connect those apps and provides a summary of the process for creating custom Help. 
 author: margoc
 manager: AnnBe
-ms.date: 03/17/2020
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -88,7 +88,7 @@ You can use task guides to create custom Help, or you can connect a custom Help 
 
 You can create custom Help for the supported apps by creating task recordings that reflect your implementation and then saving them to a Business process library in LCS. You can't create custom task guides for Human Resources.
 
-If you're a partner, and you promote a library to a corporate library and include it in a solution, it will be available to your customers. You can also make a copy of the APQC Unified global library, and then open the task recordings in the copy, edit them, and save your changes. For more information, see [Task recorder resources](../../dev-itpro/user-interface/task-recorder.md).
+If you're a partner, and you promote a library to a corporate library and include it in a solution, it will be available to your customers. You can also make a copy of the APQC Unified Library, and then open the task recordings in the copy, edit them, and save your changes. For more information, see [Task recorder resources](../../dev-itpro/user-interface/task-recorder.md).
 
 ### Connect a custom Help site
 

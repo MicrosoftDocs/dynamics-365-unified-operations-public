@@ -5,7 +5,7 @@ title: Prepare content for use with the Help pane
 description: This topic describes how you can prepare content so that it can be used with the Help pane. 
 author: edupont04
 manager: AnnBe
-ms.date: 03/18/2020
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

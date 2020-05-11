@@ -5,7 +5,7 @@ title: Convert Dynamics AX custom Help for use in Dynamics 365
 description: This topic describes how you can reuse content from Microsoft Dynamics AX for your Dynamics 365 solution. 
 author: edupont04
 manager: AnnBe
-ms.date: 03/18/2020
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -85,7 +85,6 @@ After you've converted your content to Markdown, you can use open-source tools s
 
 ## See also
 
-[Deploying custom Help sites](custom-help-overview.md)  
 [Custom Help overview](custom-help-overview.md)  
 [Custom Help Toolkit](custom-help-toolkit.md)  
 [Extend, customize, and collaborate on the Help](contributor-guide.md)
