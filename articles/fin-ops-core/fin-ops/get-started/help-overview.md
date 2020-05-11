@@ -5,7 +5,7 @@ title: Help system
 description: This topic provides an overview of the Help system for Finance and Operations apps.
 author: edupont04
 manager: AnnBe
-ms.date: 03/17/2020
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -105,7 +105,7 @@ You can use Task recorder to create your own custom task guides. For more inform
 
 ## In-product Help
 
-Some fields have field descriptions to help users get unblocked. Additionally, the in-product **Help** pane provides context-sensitive access to content that can help users get started, get unblocked, and learn more.
+Some fields have field descriptions to help users get unblocked when they are uncertain about the data that the field contains, for example. Additionally, the in-product **Help** pane provides context-sensitive access to content that can help users get started, get unblocked, and learn more.
 
 To access Help content, select the **Help** button (**?**), and then select **Help**. Alternatively, press **Ctrl+Shift+?**. In both cases, the **Help** pane appears. From the **Help** pane, you can access conceptual topics or task guides that are relevant to the area of the product that you're currently in.
 
