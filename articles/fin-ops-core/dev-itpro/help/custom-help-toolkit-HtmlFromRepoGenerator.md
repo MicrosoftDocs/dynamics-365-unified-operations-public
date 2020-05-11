@@ -5,7 +5,7 @@ title: Custom Help Toolkit - The HtmlFromRepoGenerator tool
 description: This topic describes the HtmlFromRepoGenerator tool that is included in the Custom Help Toolkit for Finance and Operations apps. 
 author: edupont04
 manager: AnnBe
-ms.date: 03/18/2020
+ms.date: 05/11/2020
 ms.topic: article
 ms.service: dynamics-ax-platform
 
@@ -43,7 +43,7 @@ The **HtmlFromRepoGenerator** tool provides functionality that supports the crea
 - Update links to files that are no longer present in the clone.
 - Update the value of the **ms.locale** property so that it matches the language options that are supported by the Finance and Operations client.
 
-    The language descriptors that the client uses differ from the language descriptors that are used in the corresponding GitHub repos. Before localized custom Help can be called, the language indicators in the source content must be changed so that they match the client's languages. For more information, see [Language and locale descriptors in the product and in Help](language-locale.md).
+    The language descriptors that the client uses differ from the language descriptors that are used in the corresponding GitHub repos. Before localized custom Help can be called, the language descriptors in the source content must be changed so that they match the client's languages. For more information, see [Language and locale descriptors in the product and in Help](language-locale.md).
 
 - Generate HTML files that can be used to publish content.
 
