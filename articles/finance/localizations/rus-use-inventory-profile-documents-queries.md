@@ -737,4 +737,4 @@ The miscellaneous charges for the purchase order or sales order header is repeat
 Find more details in the following topics:
 
 -  [Inventory profile overview](rus-inventory-profile-overview.md)
--  [Set up inventory profile](rus-set-up-inventory-profile.md)
+-  [Set up an inventory profile](rus-set-up-inventory-profile.md)
