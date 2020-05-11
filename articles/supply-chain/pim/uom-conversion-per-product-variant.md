@@ -102,4 +102,8 @@ In this scenario, a company is selling T-shirts in sizes small, medium, large, a
 
 If a product has many product variants with different unit conversions, it's a good idea to export the unit conversions to an Excel spreadsheet, update the conversions, and then publish them back to Supply Chain Management.
 
-To export to Excel, go to the **Unit conversion** page and select **Open in Microsoft office** on the action pane.,
+To export to Excel, go to the **Unit conversion** page and select **Open in Microsoft office** on the action pane.
+
+## Additional resources
+
+[Manage unit of measure](tasks/manage-unit-measure.md)
