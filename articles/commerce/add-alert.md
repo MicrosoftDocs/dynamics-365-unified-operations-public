@@ -5,7 +5,7 @@ title: Promo banner module
 description: This topic covers promo banner modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 manager: annbe
-ms.date: 04/14/2020
+ms.date: 05/25/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -53,7 +53,7 @@ Promo banners can be used in the site header to show site-wide promotions or mes
 
 "Shop for Thanksgiving SALE!" 
 
-The following image shows n example promo banner.
+The following image shows an example of a promo banner.
 
 ![Example of promobanner modules](./media/ecommerce-Promobanner.PNG)
 
