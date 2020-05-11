@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Use inventory profile in documents and queries
+title: Use an inventory profile in documents and queries
 description: This topic provides information about using inventory profile.
 author: v-nadyuz
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# Use inventory profile in documents and queries
+# Use an inventory profile in documents and queries
 [!include [banner](../includes/banner.md)]
 
 
