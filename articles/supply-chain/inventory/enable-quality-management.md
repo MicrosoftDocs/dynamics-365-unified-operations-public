@@ -47,7 +47,11 @@ Quality management is flexible and can be implemented in various ways to meet th
 
 -   Automatically start a quality control process, based on predefined criteria (upon warehouse registration of a purchase order from a specific vendor).
 -   Block inventory during inspection to prevent non-approved inventory from being used (full blocking of purchase order quantities).
--   Use item sampling as part of a quality association to define the amount of current physical inventory that must be inspected. Sampling can be based on fixed quantities or a percentage.
+-   Use item sampling as part of a quality association to define the amount of current physical inventory that must be inspected. Sampling can be based on fixed quantities, a percentage, or full license plate.
+
+> [!NOTE]
+> The _Quality management for warehouse processes_ feature extends the capabilities of quality management. If you are using this feature, then see [Quality management for warehouse processes](quality-management-for-warehouses-processes.md) for examples of how quality management works when it's enabled.
+
 -   Create quality orders for partial receipts. To create a quality order that is based on the quantity that is physically received with an order, you must select the **Per updated quantity** check box on the **Item sampling** form.
 -   Create test types that include minimum, maximum, and target test values, and perform qualitative-versus-quantitative testing that has predefined validation results.
 -   Specify an acceptable quality level (AQL) to control quality measure tolerances.
@@ -432,6 +436,9 @@ In production, if you set the **Event type** field to **Report as finished** and
 </tbody>
 </table>
 
+> [!NOTE]
+> The *Quality management for warehouse processes* feature adds capabilities for quality order processing for production with **Event type** set to *Report as finished* and **Execution** set to *After*, and for purchases with **Event type** set to *Registration*. For details, see [Quality management for warehouse processes](quality-management-for-warehouses-processes.md).
+
 ## Quality management pages
 <table>
 <colgroup>
@@ -499,3 +506,5 @@ Additional resources
 [Quality management processes](quality-management-processes.md)
 
 [Nonconformance management](enable-nonconformance-management.md)
+
+[Quality management for warehouse processes](quality-management-for-warehouses-processes.md)

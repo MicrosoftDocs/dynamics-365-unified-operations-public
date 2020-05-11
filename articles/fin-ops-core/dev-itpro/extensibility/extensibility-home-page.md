@@ -113,7 +113,7 @@ Information about customization is also shared through blogs where various topic
 + [Extensible base enumerations](https://kashperuk.blogspot.dk/2016/09/development-tutorial-extensible-base.html)
 + [Static event subscription](https://community.dynamics.com/365/financeandoperations/b/mfp/posts/x-in-ax7-static-event-subscription/)
 + [Subscribing to onValidatingWrite](https://community.dynamics.com/365/financeandoperations/b/mfp/posts/subscribing-to-onvalidatingwrite/)
-+ [Embrace the extensions mindset with Dynamics 365 for Finance and Operations](https://blogs.msdn.microsoft.com/axinthefield/embrace-the-extensions-mindset-with-dynamics-365-for-finance-and-operations/)
++ [Embrace the extensions mindset with Dynamics 365 for Finance and Operations](https://community.dynamics.com/ax/b/axinthefield/posts/embrace-the-extensions-mindset-with-dynamics-365-for-finance-and-operations-2-sysextension-framework)
 + [Extensible X++ - Method Signatures](https://community.dynamics.com/365/financeandoperations/b/mfp/posts/extensible-x-method-signatures/)
 
 ## How do I create an extensible solution?

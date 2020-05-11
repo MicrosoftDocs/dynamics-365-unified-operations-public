@@ -3,13 +3,29 @@
 title: System requirements and prerequisites
 description: This topic describes the system requirements and prerequisites that must be in place before you can enable dual-write for Finance and Operations apps.
 author: sabinn-msft
-
-ms.technology: 
-ms.topic: conceptual
+manager: AnnBe
 ms.date: 03/20/2020
-ms.author: v-douklo
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
 
-LocalizationGroup: 
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Developer
+# ms.devlang: 
+ms.reviewer: v-douklo
+ms.search.scope: Operations
+# ms.tgt_pltfrm: 
+ms.custom:
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: sabinn
+ms.search.validFrom: 2020-03-20
+ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # System requirements and prerequisites
@@ -127,8 +143,7 @@ Before you enable dual-write, follow these steps to make sure that you meet the 
 
         By selecting **Accept**, you indicate that you're providing consent to install the app that has application ID **33976c19-1db5-4c02-810e-c243db79efde** in your tenant. Common Data Service requires this app to communicate with the Finance and Operations app.
 
-    3. Repeat the previous two steps for application ID **2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b**.
-
+    
     **Related health check result:**
 
     *Apps in tenant*
@@ -166,16 +181,6 @@ Before you enable dual-write, follow these steps to make sure that you meet the 
 
     Make sure that the Finance and Operations app and Common Data Service are installed under the same tenant. Cross-tenant scenarios aren't currently supported.
 
-9. Install the dual-write entity maps solution.
-
-    1. In Power Apps, in the left pane, select **Solutions**. Select **Open AppSource**, and search for the solution that is named **Dual-write application orchestration solution**. Select the solution, and follow the prompts to import it.
-    2. In the Finance and Operations app, on the **Dual-write** page, select **Apply Solution** to apply the entity maps that you just downloaded and installed. After you apply the solution, you should see that the default entity maps are published.
-
-        ![Applying the entity maps](media/apply-entity-maps.png)
-
-You've now successfully imported and applied a Microsoft-published dual-write entity map solution to your environment.
-
-![Dual-write imported and applied](media/dual-write-imported-applied.png)
 
 ## Next steps
 

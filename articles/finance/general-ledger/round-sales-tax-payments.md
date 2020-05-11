@@ -5,7 +5,7 @@ title: Sales tax payments and rounding rules
 description: This article explains how the rounding rule setup on the Sales tax authorities works and rounding the sales tax balance during the Settle and post sales tax job.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 05/30/2018
+ms.date: 04/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -47,27 +47,26 @@ The total sales tax for a period shows a credit balance of -98,765.43. The legal
 
 The legal entity wants to use a rounding method that rounds the balance to the nearest 1.00. The user who is responsible for sales tax accounting performs the following steps.
 
-1.  Click Tax &gt; Indirect taxes &gt; Sales tax &gt; Sales tax authorities
-2.  On the General FastTab, select Normal in the Rounding form field.
-3.  In the Round-off field, enter 1.00.
-4.  When it is time to pay the sales taxes to the tax authority, open the Settle and post sales tax page. (Click Tax &gt; Declarations &gt; Sales tax &gt; Settle and post sales tax.)
-5.  On the sales tax settlement account, the tax liability amount of 98,765.43 is rounded to 98,765.
+1. Click **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax authorities**.
+2. On the **General** FastTab, in the **Rounding form** field, select **Normal**.
+3. In the **Round-off** field, enter 1.00.
+4. When it is time to pay the sales taxes to the tax authority, go to **Tax** > **Declarations** > **Sales tax** > **Settle and post sale tax**. On the sales tax settlement account, you can see that the tax liability amount of **98,765.43** is rounded to **98,765**.
 
-The following table shows how an amount of 98,765.43 is rounded by using each rounding method that is available in the Rounding form field in the Sales tax authorities page.
+The following table shows how an amount of 98,765.43 is rounded by using each rounding method that is available in the **Rounding form** field in the **Sales tax authorities** page.
 
-| Rounding form option                | Round-off value = 0.01 | Round-off value = 0.10 | Round-off value = 1.00 | Round-off value = 100.00 |
-|-------------------------------------|------------------------|------------------------|------------------------|--------------------------|
-| Normal                              | 98,765.43              | 98,765.40              | 98,765.00              | 98,800.00                |
-| Downward                            | 98,765.43              | 98,765.40              | 98,765.00              | 98,700.00                |
-| Rounding-up                         | 98,765.43              | 98,765.50              | 98,766.00              | 98,800.00                |
-| Own advantage, for a credit balance | 98,765.43              | 98,765.40              | 98,765.00              | 98,700.00                |
-| Own advantage, for a debit balance  | 98,765.43              | 98,765.50              | 98,766.00              | 98,800.00                |
+> [!NOTE]                                                                                  
+> If the round-off value is set as 0.00, then:
+>
+> - For normal rounding, the rounding behavior is the same as for **Round-off = 0.01**.
+> - For the **Rounding form options**, **Downward**, **Rounding-up**, and **Own advantage**, the behavior is the same as for **Round-off = 1.00**.
 
-
-### No rounding at all, since the round-off is 0.00
-
-round(1.0151, 0.00) = 1.0151 
-round(1.0149, 0.00) = 1.0149
+| Rounding form option                | Round-off value = 0.01 | Round-off value = 0.10 | Round-off value = 1.00 | Round-off value = 100.00 | Round-off value = 0.00   |
+|-------------------------------------|------------------------|------------------------|------------------------|--------------------------|--------------------------|
+| Normal                              | 98,765.43              | 98,765.40              | 98,765.00              | 98,800.00                | 98,765.43                |
+| Downward                            | 98,765.43              | 98,765.40              | 98,765.00              | 98,700.00                | 98,765.00                |
+| Rounding-up                         | 98,765.43              | 98,765.50              | 98,766.00              | 98,800.00                | 98,766.00                |
+| Own advantage, for a credit balance | 98,765.43              | 98,765.40              | 98,765.00              | 98,700.00                | 98,765.00                |
+| Own advantage, for a debit balance  | 98,765.43              | 98,765.50              | 98,766.00              | 98,800.00                | 98,766.00                |
 
 ### Normal round, and round precision is 0.01
 

@@ -112,7 +112,7 @@ empty."}\],"isErrorCountUpdated":true}*
 
 Here is what the error looks like in the model-driven app in Dynamics 365:
 
-*An unexpected error occurred from ISV code. (ErrorType = ClientError) Unexpected exception from plug-in (Execute): Microsoft.Dynamics.Integrator.CrmPlugins.Plugin: System.Exception: failed to process entity account - (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond*
+*An unexpected error occurred from ISV code. (ErrorType = ClientError) Unexpected exception from plug-in (Execute): Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PostCommitPlugin: System.Exception: failed to process entity account - (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond*
 
 This error occurs when the Common Data Service environment is incorrectly reset at the same time that you try to create data in the Finance and Operations app.
 

@@ -3,13 +3,29 @@
 title: Use the dual-write wizard to link your environments
 description: This topic explains how to use the dual-write wizard to link a Finance and Operations app environment to your Common Data Service environment.
 author: sabinn-msft
-
+manager: AnnBe
+ms.date: 05/08/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
 ms.technology: 
-ms.topic: conceptual
-ms.date: 03/20/2020
-ms.author: v-douklo
 
-LocalizationGroup: 
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Developer
+# ms.devlang: 
+ms.reviewer: v-douklo
+ms.search.scope: Operations
+# ms.tgt_pltfrm: 
+ms.custom:
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: sabinn
+ms.search.validFrom: 2020-03-20
+ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Use the dual-write wizard to link your environments
@@ -46,6 +62,19 @@ You've now linked your Finance and Operations app to the Common Data Service env
 
 > [!NOTE]
 > If you don't see your entity maps, or if you see a blank page, be sure to install the entity map solution for the Finance and Operations app.
+
+7. Install the dual-write entity maps solution.
+
+    1. In Power Apps, in the left pane, select **Solutions**. Select **Open AppSource**, and search for the solution that is named **Dual-write application orchestration solution**. Select the solution, and follow the prompts to import it. After installation, you'll find several new solutions listed under **Manage your solutions**. For more information, see [Solutions overview](https://docs.microsoft.com/powerapps/maker/common-data-service/solutions-overview).
+
+    2. In the Finance and Operations app, on the **Dual-write** page, select **Apply Solution** to apply the entity maps that you just downloaded and installed. After you apply the solution, you should see that the default entity maps are published.
+
+        ![Applying the entity maps](media/apply-entity-maps.png)
+
+You've now successfully imported and applied a Microsoft-published dual-write entity map solution to your environment.
+
+![Dual-write imported and applied](media/dual-write-imported-applied.png)
+
 
 ## Next steps
 

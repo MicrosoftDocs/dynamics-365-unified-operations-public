@@ -70,7 +70,7 @@
           items:
           - name: What's new or changed in Supply Chain Management home page
             href: get-started/whats-new-home-page.md
-          - name: Supply Chain Management 10.0.11 (June 2020)
+          - name: Supply Chain Management 10.0.11 (July 2020)
             href: get-started/whats-new-scm-10-0-11.md
           - name: Supply Chain Management 10.0.10 (May 2020)
             href: get-started/whats-new-scm-10-0-10.md
@@ -94,8 +94,8 @@
           href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/supply-chain/toc.json
         - name: Connect the Help system
           href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/supply-chain/toc.json
-        - name: Connect a custom help site
-          href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/supply-chain/toc.json    
+        - name: Custom help overview
+          href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/supply-chain/toc.json    
         - name: View and export field descriptions
           href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/supply-chain/toc.json
         - name: Task Recorder
@@ -349,6 +349,8 @@
         items:
         - name: Forecasts, work orders, and projects
           href: asset-management/integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md
+      - name: Integrate asset management with fixed assets
+        href: asset-management/integration-to-fixed-assets/fixed-asset-integration.md
       - name: Preventive and reactive maintenance
         items: 
         - name: Preventive maintenance overview
@@ -423,6 +425,8 @@
           href: asset-management/controlling-and-reporting/item-where-used.md
         - name: Maintenance status
           href: asset-management/controlling-and-reporting/maintenance-status.md
+      - name: Integrate asset management with Dynamics 365 Guides
+        href: asset-management/asset-management-guides-integration.md
       - name: Asset management mobile workspace
         href: asset-management/asset-management-mobile-workspace.md
     - name: Data management
@@ -581,7 +585,9 @@
           href: cost-management/inventory-close.md
         - name: Adjust on-hand inventory cost values
           href: cost-management/adjust-hand-inventory-cost-values.md
-        - name: Inventory aging report
+        - name: Inventory value storage report
+          href: cost-management/inventory-value-report-storage.md
+        - name: Inventory aging report storage
           href: cost-management/inventory-aging-report-storage.md
       - name: Manufacturing accounting
         items:
@@ -1225,6 +1231,8 @@
           href: inventory/enable-quality-management.md
         - name: Quality management processes
           href: inventory/quality-management-processes.md
+        - name: Quality management for warehouse processes
+          href: inventory/quality-management-for-warehouses-processes.md
         - name: Nonconformance management
           href: inventory/enable-nonconformance-management.md
         - name: Set up prerequisites for management
@@ -1313,7 +1321,7 @@
         items:
         - name: Planning Optimization overview
           href: master-planning/planning-optimization/planning-optimization-overview.md
-        - name: Negative on-hand is treated as zero on-hand
+        - name: Planning with negative on-hand quantities
           href: master-planning/planning-optimization/negative-on-hand.md 
         - name: Get started with Planning Optimization
           href: master-planning/planning-optimization/get-started.md
@@ -1327,6 +1335,8 @@
           href: master-planning/planning-optimization/planning-optimization-auto-firming.md
         - name: Cancel a planning job
           href: master-planning/planning-optimization/cancel-planning-job.md
+        - name: Troubleshoot Planning Optimization
+          href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
       - name: Master plans
         items:
         - name: Master plans overview
@@ -2647,8 +2657,6 @@
           href: warehousing/material-replenishment-withdrawal-kanban.md
         - name: Set up a min-max replenishment process
           href: warehousing/tasks/set-up-min-max-replenishment-process.md
-        - name: Set up a work template for purchase orders
-          href: ../supply-chain/warehousing/tasks/set-up-work-template-purchase-orders.md
       - name: Install and configure the warehousing app
         items:
         - name: Install and configure overview
@@ -2657,7 +2665,7 @@
           href: warehousing/configure-app-field-names-priorities-warehouse.md
         - name: Set up mobile devices for warehouse work
           href: warehousing/configure-mobile-devices-warehouse.md
-        - name: License plate receiving with the Warehousing mobile app
+        - name: License plate receiving with the warehousing app
           href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
         - name: Set up a mobile device menu item for completing work in a purchase order
           href: warehousing/tasks/set-up-mobile-device-menu.md

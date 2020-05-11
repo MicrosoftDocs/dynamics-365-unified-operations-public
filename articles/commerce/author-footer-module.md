@@ -44,7 +44,7 @@ The following image shows an example of a footer module on a site page.
 
 ## Footer module properties 
 
-Like most containers, a footer module support properties for the heading and the width. It also supports the addition of multiple footer category modules. Each footer category module that is added is rendered as a column in the footer module.
+Like most containers, a footer module supports properties for the heading and the width. It also supports the addition of multiple footer category modules. Each footer category module that is added is rendered as a column in the footer module.
 
 ## Modules available in a footer module
 
@@ -52,7 +52,7 @@ Like most containers, a footer module support properties for the heading and the
 
 **Back to top** – A back to top module provides a link for quick navigation to the top of the page. A destination is required. The default destination value is #, which takes the user to the top of the page.
 
-## Author a footer module
+## Create a footer module
 
 1. Go to **Page Fragments** and select **+New** to create a new fragment.
 1. In the **New Page Fragment** dialog box, select the **Container** module, enter a name for the page fragment, and then select **OK**.
@@ -67,7 +67,7 @@ Like most containers, a footer module support properties for the heading and the
 1. Select the **Back to top** slot, then in the properties pane on the right, configure the text and other module properties as needed.
 1. Select **Finish editing** to check in the fragment, and then select **Publish** to publish it.
 
-On every page template that has been created for the site, follow these steps.
+To help guarantee that a header appears on every page, follow these steps on every page template that is created for the site.
 
 1. In the **Footer** slot of the **Default page** module, add the footer fragment that you created.
 1. Select **Finish editing** to check in the template, and then select **Publish** to publish it.

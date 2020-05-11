@@ -51,11 +51,6 @@ The Dynamics 365 Commerce platform includes a set of core data actions that can 
 Here is an example of a template TypeScript file that is created for a new data action.
 
 ```typescript
-/*---------------------------------------------------------------------------------------------
- *  Copyright (c) Microsoft Corporation. All rights reserved.
- *  Licensed under the MIT License. See License.txt in the project root for license information.
- *--------------------------------------------------------------------------------------------*/
-
 import * as Msdyn365 from '@msdyn365-commerce/core';
 
 /**
