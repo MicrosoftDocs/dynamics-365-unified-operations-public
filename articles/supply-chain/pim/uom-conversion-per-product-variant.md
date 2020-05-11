@@ -5,7 +5,7 @@ title: Unit of measure conversion per product variant
 description: This topic explains how to set up unit of measure conversions for product variants. It includes an example of the setup.
 author: johanhoffmann
 manager: tfehr
-ms.date: 05/07/2020
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -54,15 +54,15 @@ To configure a product master to support unit conversion per variant:
 1. Open the **Product** tab on the action pane and then select **Set up > Unit conversions**.
 1. Select **Unit conversions** on the action pane to open the **Unit conversions** page.
 1. The **Unit conversions** page opens. Select one of the following tabs:
-    - **Intra-class conversions** - <!-- KFM what is this? Why would I pick this? -->
-    - **Inter-class conversions** - <!-- KFM what is this? Why would I pick this? -->
+    - **Intra-class conversions** - Select this tab to convert between units that belong to the same unit class.
+    - **Inter-class conversions** - Select this tab to convert between units that belong to different unit classes.
 1. Select **New** to add a new unit conversion. Then set **Create conversion for** to one of the following:
     - **Product** - Lets you set up a unit conversion for the product master. This unit conversion will will serve as fallback for all product variants that don't have a unit conversion defined.
     - **Product variant** - Lets you select the specific variant that you want to set a unit conversion for. Use the **Product variant** field to choose the variant.
 
     ![Add a new unit conversion](media/uom-new-conversion.png "Add a new unit conversion")
 
-1. Use the other fields provided here to set up your unit conversion. <!-- KFM: Is this sufficient? Do we have a topic we can link to for these details? -->
+1. Use the other fields provided here to set up your unit conversion.
 1. Select **OK** to save the conversion.
 
 > [!TIP]
