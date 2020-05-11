@@ -35,11 +35,16 @@ ms.dyn365.ops.version: AX 7.0.0
 > [!IMPORTANT]
 > **Availability**<br>Not available for Dynamics 365 Finance and Operations apps operated by 21Vianet in China.
 
-IoT Intelligence is an add-in for Microsoft Dynamics 365 Supply Chain Management. The add-in integrates IoT signals from machinery, for example, inventory and quality, to enable manufacturers and distributors to manage production and stock in real time. IoT Intelligence supports the following scenarios:
+IoT Intelligence is an add-in for Microsoft Dynamics 365 Supply Chain Management. The add-in integrates IoT signals with data in Supply Chain Management to produce actionable insights. IoT Intelligence supports the following scenarios:
 
 + **Production delays**: This scenario compares measured cycle time to planned cycle time. Supply Chain Management notifies you when production isn't on schedule so that you can intervene to maximize operating efficiency and avoid order delays.
 + **Equipment downtime**: This scenario compares measured uptime to user-defined parameters. Supply Chain Management notifies you when an outage threshold is exceeded so that you can take actions like rescheduling a production work order or creating a maintenance work order.
 + **Product quality**: This scenario compares sensor readings, like moisture and temperature, to user-defined quality metrics. Supply Chain Management notifies you when a deviation occurs so that you can intervene to maintain quality standards and minimize waste.
+
+The following images describes the interaction of IoT Hub, IoT Intelligence, and Supply Chain Management.
+
+![IoT Hub, IoT Intelligence, and Supply Chain Management](media/iot_intelligence.png)
+
 
 ## Setup
 
