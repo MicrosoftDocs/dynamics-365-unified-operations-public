@@ -5,7 +5,7 @@ title: Set up and deploy on-premises environments (Platform updates 8 and 11)
 description: This topic provides information about how to plan, set up, and deploy an on-premises environment.
 author: PeterRFriis
 manager: AnnBe
-ms.date: 05/11/2020
+ms.date: 05/12/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
