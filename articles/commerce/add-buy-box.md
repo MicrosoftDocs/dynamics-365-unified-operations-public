@@ -90,7 +90,9 @@ The buy box module retrieves product information using Commerce Scale Unit APIs.
 
 To add a buy box module to a new page and set the required properties, follow these steps.
 
-1. Create a fragment that is named **buy box fragment**, and add a buy box module to it.
+1. Go to **Page Fragments** and select **+New** to create a new fragment.
+1. In the **New Page Fragment** dialog box, select the **Buybox** module.
+1. Under **Page Fragment Name**, enter the name **Buy box fragment**, and then select **OK**.
 1. In the **Media** slot of the buy box module, add a media gallery module.
 1. In the **Store selector** slot of the buy box module, add a store selector module.
 1. Select **Save**, select **Finish editing** to check in the fragment, and then select **Publish** to publish it.
