@@ -130,7 +130,7 @@ This topic provides information about functionality that supports Russian regula
 - [Inventory reports](rus-inventory-reports.md)
 - [Inventory profile overview](rus-inventory-profile-overview.md)
 - [Set up an inventory profile](rus-set-up-inventory-profile.md)
-- [Use an inventory profile in documents and queries](rus-use-inventory-profile-in-documents-and-queries.md)
+- [Use an inventory profile in documents and queries](rus-use-inventory-profile-documents-queries.md)
 
 ## Reporting
 
