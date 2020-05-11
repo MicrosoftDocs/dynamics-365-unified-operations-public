@@ -106,7 +106,7 @@ There are a few changes to X++ that require corresponding changes in legacy cust
     -   `pause`
     -   `window`
 -   In legacy X++, it was possible to designate a method to run either on the client or the server. This is no longer possible. All compiled X++ code is executed as .NET CIL on the server. There is no longer any X++ code that is evaluated at the client site or in the browser, therefore, the two keywords, *client* and *server*, are now ignored. Their use doesn't cause a compile error, but they should not be used in any new X++ code.
--   In Microsoft Dynamics AX 2012, there were a few areas where X++ behaved differently when compiled to p-code versus CIL. In Finance and Operations applications, all these areas behave as they did in CIL in Microsoft Dynamics AX 2012. The significant behavioral differences between X++ p-code versus X+ as CIL were as follows:
+-   In Microsoft Dynamics AX 2012, there were a few areas where X++ behaved differently when compiled to p-code versus CIL. In Finance and Operations applications, all these areas behave as they did in CIL in Microsoft Dynamics AX 2012. The significant behavioral differences between X++ p-code versus X++ as CIL were as follows:
     -   In CIL, the `real `data type is represented as `System.Decimal`. This means the range and precision for each `real` is different than it was under p-code. This change was already in effect in Microsoft Dynamics AX 2012 when .NET CIL was run.
     -   An assignment of one entire array to another was performed in value in p-code mode, but it's performed by reference in CIL mode.
     -   CIL helper methods such as `Global::runClassMethodIL` have been removed, since they're no longer relevant.

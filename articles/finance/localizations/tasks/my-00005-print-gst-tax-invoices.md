@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # MY-00005 Print GST tax invoices
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure walks you through how to print a GST tax invoice. Before you can complete this procedure, you must select the Invoice type 'GST invoice' in general ledger parameters.
 

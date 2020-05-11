@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # EEU-00047 Advance payment to employee
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure demonstrates how to set up and register transactions for an advance holder. This procedure was created using the demo data company DEMF with a primary address in Lithuania. This task only works for legal entities with a primary address in Poland, Lithuania, Latvia, Estonia, Czech Republic, or Hungary. This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.
 

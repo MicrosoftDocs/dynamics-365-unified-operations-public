@@ -4,7 +4,7 @@
 title: Monitor a master planning run
 description: This topic explains how the production planner can see whether a master planning run is in progress. 
 author: josaw1
-manager: AnnBe 
+manager: tfehr 
 ms.date: 11/04/2019
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, SysQueryForm, InventItemIdLookupSimple, ReqLog, ReqProcessTaskTrace
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -30,7 +30,6 @@ ms.dyn365.ops.version: Version 7.0.0
 # Monitor a master planning run
 
 [!include [banner](../../includes/banner.md)]
-[!include [banner](../../includes/preview-banner.md)]
 
 ## Use a Gantt chart to visualize master planning progress
 

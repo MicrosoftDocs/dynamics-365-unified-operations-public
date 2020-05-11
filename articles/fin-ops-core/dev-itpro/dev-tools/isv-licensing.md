@@ -5,7 +5,7 @@ title: Independent software vendor (ISV) licensing
 description: This topic describes the independent software vendor (ISV) licensing feature. 
 author: jorisdg
 manager: AnnBe
-ms.date: 01/22/2020
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -220,9 +220,10 @@ More than one license can be installed at a time. If one of the licenses depends
 > [!NOTE]
 > Self-signed certificates can be used only during development. They aren't supported in production environments.
 
-For Platform update 32 and earlier:
+For Platform update 34 and earlier:
+(Deprecated - uses SHA1 hash algorithm for license creation)
 
-1.  For test purposes, create a self-signed CA certificate. Use the Visual Studio tools prompt to run the following command.
+1. For test purposes, create a self-signed CA certificate. Use the Visual Studio tools prompt to run the following command.
 
     ```Console
     makecert -r -pe -n "CN=IsvCertTestAuthority O=IsvCertTestAuthority" -ss CA -sr LocalMachine -a sha256 -len 2048 -cy authority -sky signature -b 01/01/2016 -sv c:\temp\CA.pvk c:\temp\CA.cer
@@ -230,19 +231,19 @@ For Platform update 32 and earlier:
 
     For more information, see the [MakeCert](https://msdn.microsoft.com/library/windows/desktop/aa386968(v=vs.85).aspx) documentation.
 
-2.  Create a certificate by using the CA.
+2. Create a certificate by using the CA.
 
     ```Console
     makecert -pe -n "CN=IsvCertTest O=IsvCertTest" -ss ISVStore -sr LocalMachine -a sha256 -len 2048 -cy end -sky signature -eku 1.3.6.1.5.5.7.3.3 -ic c:\temp\ca.cer -iv c:\temp\ca.pvk -b **/**/**** -sv c:\temp\isvcert.pvk c:\temp\isvcert.cer
     ```
 
-3.  Convert the ISV certificate to PFX format.
+3. Convert the ISV certificate to PFX format.
 
     ```Console
     pvk2pfx -pvk c:\temp\isvcert.pvk -spc c:\temp\isvcert.cer -pfx c:\temp\isvcert.pfx -po ********
     ```
 
-4.  For a test scenario, import the self-signed CA certificate manually on all the AOS instances.
+4. For a test scenario, import the self-signed CA certificate manually on all the AOS instances.
 
     ```Console
     certutil -addstore root c:\temp\ca.cer
@@ -254,29 +255,43 @@ For Platform update 32 and earlier:
     certutil -addstore root c:\temp\isvcert.cer
     ```
 
-For Platform update 33 and later:
+For Platform update 35 and later:
+(Uses SHA256 hash algorithm for license creation)
 
 1. For test purposes, create a self-signed certificate using the PowerShell command `New-SelfSignedCertificate`:
-    1. Create the certificate.
+    1. Create the certificate. (Note: adjust start and end dates accordingly.)
+
         ```PowerShell
-        $cert = New-SelfSignedCertificate -CertStoreLocation Cert:\LocalMachine\My -DnsName "IsvCertTest" -Type CodeSigningCert -KeyExportPolicy Exportable -HashAlgorithm sha256 -KeyLength 2048 -KeySpec Signature -Provider "Microsoft Enhanced RSA and AES Cryptographic Provider" -NotBefore (Get-Date -Year 2020 -Month 1 -Day 1)
+        $cert = New-SelfSignedCertificate -CertStoreLocation Cert:\LocalMachine\My -DnsName "IsvCert" -Type CodeSigningCert -KeyExportPolicy Exportable -HashAlgorithm sha256 -KeyLength 2048 -KeySpec Signature -Provider "Microsoft Enhanced RSA and AES Cryptographic Provider" -NotBefore (Get-Date -Year 2020 -Month 1 -Day 1) -NotAfter (Get-Date -Year 2022 -Month 12 -Day 31)
         ```
+
     2. Get a reference to the new certificate.
+
         ```PowerShell
         [String]$certPath = Join-Path -Path "cert:\LocalMachine\My\" -ChildPath "$($cert.Thumbprint)"
         ```
-    3. Create the secure string password that the certificate uses.
+
+    3. Create the secure string password that the certificate uses. (Replace "##############" with the certificate password)
+
         ```PowerShell
-        [System.Security.SecureString]$certPassword = ConvertTo-SecureString -String "########" -Force -AsPlainText
-        ```
-    4. Export the certificate private key as **.pfx** file using the password.
-        ```PowerShell
-        Export-PfxCertificate -Cert $certPath -FilePath "C:\Temp\TestISVLicenseSHA256Cert.pfx" -Password $rootcertPassword
-        ```
-    5. Export the certificate public key as a **.crt** file.
-        ```PowerShell
-        Export-Certificate -Cert $certPath -FilePath "C:\Temp\TestISVLicenseSHA256Cert.cer"
+        [System.Security.SecureString]$certPassword = ConvertTo-SecureString -String "##############" -Force -AsPlainText
         ```
 
-2. Import the exported *cer* file into the **Trusted Root Certificate Authorities\Certificates** folder for the local machine.
+    4. Export the certificate private key as **.pfx** file using the password.
+
+        ```PowerShell
+        Export-PfxCertificate -Cert $certPath -FilePath "C:\Temp\IsvCert.pfx" -Password $certPassword
+        ```
+
+    5. Export the certificate public key as a **.cer** file.
+
+        ```PowerShell
+        Export-Certificate -Cert $certPath -FilePath "C:\Temp\IsvCert.cer"
+        ```
+
+2. Add the certificate to the root store.
+
+    ```PowerShell
+    certutil -addstore root C:\Temp\IsvCert.cer
+    ```
 

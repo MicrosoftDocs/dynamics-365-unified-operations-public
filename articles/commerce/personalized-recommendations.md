@@ -5,7 +5,7 @@ title: Enable personalized product recommendations
 description: This topic describes how to make personalized product recommendations available for customers in Microsoft Dynamics 365 Commerce. 
 author: bebeale
 manager: AnnBe
-ms.date: 01/28/2020
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -114,12 +114,20 @@ To apply personalization to an existing recommendation list in the Commerce site
 
 [Product recommendations overview](product-recommendations.md)
 
+[Enable ADLS in a Dynamics 365 Commerce environment](enable-adls-environment.md)
+
 [Enable product recommendations](enable-product-recommendations.md)
 
-[GDPR and product recommendations](personalization-gdpr.md)
+[Opt out of personalized recommendations](personalization-gdpr.md)
 
-[Add product recommendation lists to pages](add-reco-list-to-page.md)
+[Add product recommendations on POS](product.md)
 
-[Add recommendations panel to POS devices](add-recommendations-control-pos-screen.md)
+[Add recommendations to the transaction screen](add-recommendations-control-pos-screen.md)
 
-[Product collection module overview](product-collection-module-overview.md)
+[Adjust AI-ML recommendations results](modify-product-recommendation-results.md)
+
+[Manually create curated recommendations](create-editorial-recommendation-lists.md)
+
+[Create recommendations with demo data](product-recommendations-demo-data.md)
+
+[Product recommendations FAQ](faq-recommendations.md)

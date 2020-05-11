@@ -5,7 +5,7 @@ title: Create a working time calendar
 description: Define a working time calendar, holidays, and non-work times in Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -73,10 +73,6 @@ You can add or change non-work times separately from a working time calendar.
 1. On the **Organization administration** page, select **Non-work time**.
 
 2. Select **New** and enter a name and time range for the non-work time.
-
-## Leave and absence preview feature
-
-[!include [banner](includes/preview-feature-leave-absence.md)]
 
 If you've enabled the Leave and absence bank holiday corrections preview feature, Human Resources uses holidays and closure dates to determine the number of days to adjust for employees enrolled in the calendar.
 

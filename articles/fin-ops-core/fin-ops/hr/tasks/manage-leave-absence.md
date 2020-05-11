@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Manage leave of absence
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure walks through the creation of employee leave records. You can track leave time for reasons that include medical, educational, or parental activities. The demo data company used to create this procedure is USMF.
 

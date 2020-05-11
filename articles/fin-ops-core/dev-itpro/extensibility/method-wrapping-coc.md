@@ -228,10 +228,13 @@ If a method is explicitly marked as **[Hookable(false)]**, the method can't be w
 ```xpp
 class AnyClass1 
 {
-    [HookableAttribute(false)]
+    [Hookable(false)]
     public void anyMethod() {...}
 }
 ```
+
+> [!NOTE]
+> For compatibility reasons, **[Hookable(false)]** overrides the behavior of chain of command in addition to pre- and post-handlers. However, **[Hookable(true)]** only applies to pre- and post-handlers and does not influence chain of command wrapping.
 
 ### Final methods and the Wrappable attribute
 Public and protected methods that are marked as **final** can't be wrapped in extension classes. You can override this restriction by using the **Wrappable** attribute and setting the attribute parameter to **true** (**[Wrappable(true)]**). Similarly, to override the default capability for (non-final) public or protected methods, you can mark those methods as non-wrappable (**[Wrappable(false)]**).

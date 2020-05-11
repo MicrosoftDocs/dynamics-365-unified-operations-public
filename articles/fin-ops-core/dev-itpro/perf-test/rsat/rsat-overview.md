@@ -50,6 +50,12 @@ RSAT usage is described in these topics:
 + [Troubleshoot the Regression Suite Automation Tool](rsat-troubleshooting.md)
 
 
+## Getting started videos
+These videos will help introduce RSAT and get you started.
+
++ [Use task recorder to create a test case for the Regression suite automation tool (RSAT)](https://youtu.be/bBr4BXAxTNI)
++ [Create a test plan in Azure DevOps to use with the Regression suite automation tool (RSAT)](https://youtu.be/3jIuBleAnQk)
+
 ## End-to-end flow
 This tool is part of the end to end flow described below. The application, along with Microsoft Dynamics Lifecycle Services (LCS) and Azure DevOps, provide a set of tools for test case authoring (using Task recorder), configuration, execution, investigation, and reporting.
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Handling cash discounts for overpayments
+title: Cash discounts for overpayments
 description: This article provides scenarios that show how a payment is handled when the customer takes a cash discount but also overpays. 
 author: ShylaThompson
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Handling cash discounts for overpayments
+# Cash discounts for overpayments
 
 [!include [banner](../includes/banner.md)]
 

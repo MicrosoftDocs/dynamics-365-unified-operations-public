@@ -5,7 +5,7 @@ title: X++ composite data types
 description: This topic describes composite data types in X++.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/17/2019
+ms.date: 04/08/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -200,7 +200,7 @@ public void ContainerExample()
     myContainer33 += [34, "banana"];
 }
 
-// List class example. In this example, variable2 and variable3 refer to the same List object.
+// Container example. In this example, variable2 and variable33 hold different containers.
 static void JobC(Args _args)
 {
     container variable2, variable33;
@@ -209,7 +209,7 @@ static void JobC(Args _args)
     variable2 += [97];
 }
 
-// Container example. The variable2 and variable3 hold different containers.
+// List class example. In this example, variable2 and variable33 refer to the same List object.
 static void JobL(Args _args)
 {
     List variable2,variable33;

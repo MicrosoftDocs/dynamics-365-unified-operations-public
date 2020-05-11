@@ -5,7 +5,7 @@ title: Enable Azure Active Directory authentication for POS sign-in
 description: This topic explains how to configure the sign-in experience for the Microsoft Dynamics 365 Commerce point of sale (POS) so that it uses Azure Active Directory authentication.
 author: boycezhu
 manager: annbe
-ms.date: 03/04/2020
+ms.date: 03/08/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-commerce
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.10
 
 # Enable Azure Active Directory authentication for POS sign-in
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 Many customers who use Microsoft Dynamics 365 Commerce also use other Microsoft cloud services, and they might use Azure Active Directory (Azure AD) to manage user credentials for those services. In those cases, the customers might want to use the same Azure AD account across applications. This topic explains how to configure the Commerce point of sale (POS) sign-in experience to use Azure AD authentication.
 

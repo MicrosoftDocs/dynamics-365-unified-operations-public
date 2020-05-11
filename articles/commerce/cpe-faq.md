@@ -5,7 +5,7 @@ title: Dynamics 365 Commerce preview environment FAQ
 description: This topic provides answers to frequently asked questions about the Microsoft Dynamics 365 Commerce preview environment.
 author: v-chgri
 manager: annbe
-ms.date: 12/10/2019
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -81,8 +81,6 @@ We grant a quota of one Commerce preview environment for each request that is ac
 ## Dynamics 365 Commerce preview environment contact information
 
 To contact Microsoft if you have questions or requests that are related to the Commerce preview environment, visit the [Microsoft Dynamics 365 Commerce Preview Yammer group](https://aka.ms/Dynamics365CommercePreviewYammer) for help.
-
-If you experience issues when you try to access the Yammer group, you can contact Microsoft by email at <Dynamics365Commerce@microsoft.com>. This email address isn't actively monitored. Therefore, expect a delay in the response.
 
 ## Additional resources
 

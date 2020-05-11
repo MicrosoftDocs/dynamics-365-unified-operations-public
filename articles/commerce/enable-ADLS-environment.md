@@ -5,7 +5,7 @@ title: Enable ADLS in a Dynamics 365 Commerce environment
 description: This topic explains how to enable and test Azure Data Lake Storage (ADLS) for a Dynamics 365 Commerce environment, which is a prerequisite for enabling product recommendations.
 author: bebeale
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -52,7 +52,8 @@ For more information about ADLS, see [ADLS official documentation](https://azure
   
 ## Configuration steps
 
-This section covers the configuration steps necessary for enabling ADLS in an environment.
+This section covers the configuration steps necessary for enabling ADLS in an environment as it relates to product recommendations.
+For a more in-depth overview of the steps required to enable ADLS, see [Make entity store available as a Data Lake](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
 
 ### Enable ADLS in the environment
 
@@ -95,12 +96,24 @@ If not completed already, follow the steps for [enabling product recommendations
 
 ## Additional resources
 
+[Make entity store available as a data lake](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md)
+
 [Product recommendations overview](product-recommendations.md)
 
 [Enable product recommendations](enable-product-recommendations.md)
 
-[Add product recommendation lists to pages](add-reco-list-to-page.md)
+[Enable personalized recommendations](personalized-recommendations.md)
 
-[Add a recommendations control to the transaction screen on POS devices](../retail/add-recommendations-control-pos-screen.md?toc=/dynamics365/commerce/toc.json)
+[Opt out of personalized recommendations](personalization-gdpr.md)
 
+[Add product recommendations on POS](product.md)
 
+[Add recommendations to the transaction screen](add-recommendations-control-pos-screen.md)
+
+[Adjust AI-ML recommendations results](modify-product-recommendation-results.md)
+
+[Manually create curated recommendations](create-editorial-recommendation-lists.md)
+
+[Create recommendations with demo data](product-recommendations-demo-data.md)
+
+[Product recommendations FAQ](faq-recommendations.md)

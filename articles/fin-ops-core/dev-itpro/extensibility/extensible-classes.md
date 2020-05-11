@@ -45,7 +45,7 @@ A class and its methods should have a single responsibility. Keep the following 
 
 **Non-extensible code**
 
-```
+```xpp
     void calculatePrice(SalesLine _saleLine, AmountMST _amount)
     {
         // cannot add extra condition if needed
@@ -62,7 +62,7 @@ A class and its methods should have a single responsibility. Keep the following 
 
 **Extensible code**
 
-```
+```xpp
  protected boolean canUpdateSalesPrice(SalesLine _saleLine)
     {
         return (_saleLine.QtyOrdered > 0 &&

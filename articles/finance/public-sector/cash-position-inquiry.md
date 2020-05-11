@@ -31,8 +31,6 @@ ms.dyn365.ops.version: 10.0.7
 # Cash position inquiry
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
-
 The **Cash position** inquiry allows you to determine the corresponding cash positions for financial dimension sets that contain self-balancing dimensions. The inquiry shows the beginning cash balance, and the effect of the addition of cash receipts, the subtraction of cash disbursements, and the subtraction of interfund transfers to arrive at an ending balance. Then, from the ending balance, general budget reservations, encumbrances, or pre-encumbrances are subtracted to arrive at an unencumbered balance.
 
 This inquiry is unique in that it allows users to customize the terminology for column names and for the main accounts that are used to derive amounts for the columns. On the **Cash position parameters** page, the columns that appear in the inquiry are numbered starting with the left-most data column as column one.

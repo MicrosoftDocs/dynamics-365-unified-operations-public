@@ -4,7 +4,7 @@
 title: Set up containerization
 description: This topic describes how to automate the containerization of loads in Warehouse management. 
 author: ShylaThompson
-manager: AnnBe 
+manager: tfehr 
 ms.date: 07/22/19
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Set up containerization
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic describes how to automate the containerization of loads in Warehouse management. Automated containerization creates containers and the picking work for shipments when a wave is processed and work lines can be split into quantities that fit the containers. This helps warehouse workers to pick the items directly into the chosen container. Compared to the manual packing process, tasks such as creating containers, assigning items, and closing containers are automated by the system. This procedure uses the USMF demo company and is performed by a Warehouse manager.
 
@@ -41,7 +41,7 @@ This topic describes how to automate the containerization of loads in Warehouse 
 5. In the **Site** field, enter or select a value.
 6. In the **Warehouse** field, enter or select a value.
 7. Expand the **Methods** section. The **Selected methods** pane lists the methods for the selected wave template type. The wave template must include the containerize method.  
-8. In the **Wave step code** field, type a value. Enter a Wave step code for the added method, which can be any code. It’s possible to add the method more than once and assign different wave step codes. To do this, select **Repeatable for this method** in the **Wave process methods** page.  
+8. In the **Wave step code** field, type a value. Enter a Wave step code for the added method, which can be any code. It's possible to add the method more than once and assign different wave step codes. To do this, select **Repeatable for this method** in the **Wave process methods** page.  
 9. Select **Save**.
 10. Close the page.
 

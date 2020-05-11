@@ -6,7 +6,7 @@ description: Before you can deploy Microsoft Dynamics AX 2012 R3 on Microsoft Az
 author: kfend
 manager: AnnBe
 
-ms.date: 11/13/2017
+ms.date: 04/24/2020
 
 ms.topic: article
 ms.prod: dynamics-ax-2012 
@@ -237,7 +237,7 @@ Licensing the various components of the AX 2012 R3 virtual machine environment i
 <ul>
 <li><strong>License Mobility through Software Assurance on Azure program</strong> License Mobility through Software Assurance gives Microsoft volume licensing customers the flexibility to deploy eligible server applications with active Software Assurance on Azure. With this Software Assurance benefit, there is no need to purchase new licenses and no associated mobility fees. This enables you to easily deploy existing licenses on the Azure cloud platform. For more information, see <a href="https://www.windowsazure.com/pricing/license-mobility/">this page</a>. For Development, Test, and High Availability topologies trial versions of SharePoint, Visual Studio, SQL Server, and Office are provided. The trials range from 30-180 days. Please apply licenses accordingly.</li>
 <li><strong>Microsoft Dynamics AX volume licensing buyer’s guide</strong> For an overview of key licensing options with Microsoft Dynamics AX, see <a href="https://go.microsoft.com/fwlink/?LinkId=397363">this page</a>.</li>
-<li><strong>Shared computer activation for Office 365 ProPlus</strong> Shared computer activation lets you to deploy Office 365 ProPlus to a computer in your organization that is accessed by multiple users. For more information, see <a href="https://technet.microsoft.com/library/dn782860(v=office.15).aspx">this page</a>.</li>
+<li><strong>Shared computer activation for Microsoft 365 Apps for enterprise</strong> Shared computer activation lets you to deploy Microsoft 365 Apps for enterprise to a computer in your organization that is accessed by multiple users. For more information, see <a href="https://technet.microsoft.com/library/dn782860(v=office.15).aspx">this page</a>.</li>
 </ul></td>
 </tr>
 </tbody>
@@ -602,7 +602,7 @@ This environment includes several virtual machines, by default. These virtual ma
 <li>Developer tools</li>
 </ul></li>
 <li>Microsoft SharePoint Server 2013 Client Components SDK</li>
-<li>Microsoft Office 365 ProPlus</li>
+<li>Microsoft 365 Apps for enterprise</li>
 <li>AX 2012 R3 or AX 2012 R3 CU8 components:
 <ul>
 <li>Management Reporter components:
@@ -987,7 +987,7 @@ Deploy this environment to use AX 2012 R3 in an environment that can be configur
 <li>Developer tools</li>
 </ul></li>
 <li>Microsoft SharePoint Server 2013 Client Components SDK</li>
-<li>Microsoft Office 365 ProPlus</li>
+<li>Microsoft 365 Apps for enterprise</li>
 <li>AX 2012 R3 or AX 2012 R3 CU8 components:
 <ul>
 <li>Management Reporter components:

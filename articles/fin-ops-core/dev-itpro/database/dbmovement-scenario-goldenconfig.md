@@ -5,7 +5,7 @@ title: Golden configuration promotion
 description: This topic explains a golden configuration promotion for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 01/20/2020
+ms.date: 03/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -125,6 +125,25 @@ drop user axmrruntimeuser
 drop user axretaildatasyncuser
 drop user axretailruntimeuser
 drop user axdeployextuser
+
+--Tidy up the batch server config from the previous environment
+DELETE FROM SYSSERVERCONFIG
+
+--Tidy up server sessions from the previous environment
+DELETE FROM SYSSERVERSESSIONS
+
+--Tidy up printers from the previous environment
+DELETE FROM SYSCORPNETPRINTERS
+
+--Tidy up client sessions from the previous environment
+DELETE FROM SYSCLIENTSESSIONS
+
+--Tidy up batch sessions from the previous environment
+DELETE FROM BATCHSERVERCONFIG
+
+--Tidy up batch server to batch group relation table
+DELETE FROM BATCHSERVERGROUP
+
 -- Clear encrypted hardware profile merchant properties
 update dbo.RETAILHARDWAREPROFILE set SECUREMERCHANTPROPERTIES = null where SECUREMERCHANTPROPERTIES is not null
 ```

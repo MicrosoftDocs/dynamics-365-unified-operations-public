@@ -74,9 +74,9 @@ The search query is a search string that consists of a set of filters in this ge
 -   **Property**: Apply property filters. Each comma-separated value should be in the form *property\_name=property\_value*
 -   **Code**: Filter using code snippets, use quotes around code snippets. The matching source code is the elements that contain the specified code snippet.
 
-You can get help about using filter and filter syntax by opening the drop-down menu available in the search box.!
+You can get help about using filter and filter syntax by opening the drop-down menu available in the search box.
 
-[metadatasearchfilter](./media/metadatasearchfilter.jpg)
+[![metadatasearchfilter](./media/metadatasearchfilter.jpg)]
 
 ## Examples
 

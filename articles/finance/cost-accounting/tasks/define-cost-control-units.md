@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Define cost control units
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure shows how to define cost control units in the cost accounting ledger. You select the cost object dimension for which you want to control costs in the ledger. The cost object dimension members are transformed into cost objects of the cost control units. The demo data company used to create this procedure is USP2.
 

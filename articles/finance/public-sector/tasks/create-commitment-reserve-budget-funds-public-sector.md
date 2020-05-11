@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create a commitment to reserve budget funds for the public sector
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Commitments are budget control source documents used by public sector entities in France. This task guide was created using the PSUS demo company data in the public sector partition.
 

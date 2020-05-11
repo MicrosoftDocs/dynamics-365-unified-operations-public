@@ -5,7 +5,7 @@ title: Bring your own database (BYOD)
 description: This topic explains how to export entities to your own Azure SQL database.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 10/30/2019
+ms.date: 04/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -82,6 +82,10 @@ If you're using the BYOD feature for integration with a business intelligence (B
     In this connection string, the logical server name should resemble **nnnn.database.windows.net**. You should be able to find the logical server name in Azure portal. The following illustration shows an example of a connection string.
 
     ![Connection string on the New record page](media/NewRecord.png)
+    
+    
+> [!NOTE]
+> The default extension field shown in the image above does not apply to BYOD.
 
 4. Select **Validate**, and make sure that the connection is successful.
 

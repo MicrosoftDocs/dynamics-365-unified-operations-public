@@ -4,7 +4,7 @@
 title: Compare item prices storage report
 description: Learn how to generate a Compare item prices storage report and then browse and/or export the result.
 author: AndersGirke
-manager: AnnBe
+manager: tfehr
 ms.date: 01/30/2020
 ms.topic: article
 ms.prod:

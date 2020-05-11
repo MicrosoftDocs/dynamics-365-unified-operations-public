@@ -5,7 +5,7 @@ title: Configure eligibility rules and options
 description: Set eligibility rules and options in Benefits management in Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -31,8 +31,6 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Configure eligibility rules and options
-
-[!include [banner](includes/preview-feature.md)]
 
 After you've configured the necessary parameters for Benefits management in Microsoft Dynamics 365 Human Resources, you can create eligibility rules, bundles, periods, and programs that you will associate with your benefit plans.
 
@@ -62,6 +60,7 @@ During open enrollment, employees can select benefit plans. If they become ineli
    | **Employment category** | The employee’s employment category if the **Use employment category** toggle is set to **Yes**. |
    | **Use new hire rule** | Specifies whether to use a new hire’s new hire period value as part of the benefits eligibility rule. |
    | **Enrollment period** | The time period when new hire enrollment is allowed. If you also set this in parameters, the parameters setting takes precedence over this one. |
+   | **Use former employment status** | Specifies whether to use an employee’s previous employment status as part of the benefits eligibility rule. For example, you can specify an eligibility rule that waives a coverage waiting period for all employees that have transitioned from a **Laid off** status to an **Employed** status within 90 days of their previous employment. |
 
 4. Under **Additional criteria**, select the following options and add information as necessary:
 

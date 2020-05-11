@@ -34,7 +34,7 @@ ms.search.validFrom: 2020-01-27
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+
 
 Every business works with a basic set of financial data, such as the fiscal calendar year, the currency that business is transacted in, the accounts that the money to run the business comes in to or goes out of, tax rates, and remittance. This data resides in Finance and Operations apps. However, it's exposed to Common Data Service so that model-driven apps in Microsoft Dynamics 365 can have a single source for finance and tax data. In this way, data is uniform across the business ecosystem. 
 

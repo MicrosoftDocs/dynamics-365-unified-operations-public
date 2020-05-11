@@ -3,8 +3,8 @@
  
 title: Create a purchase order
 description: This topic shows you how to create a purchase order manually. 
-author: FrankDahl
-manager: AnnBe 
+author: mkirknel
+manager: tfehr 
 ms.date: 07/18/2019
 ms.topic: business-process 
 ms.prod:  
@@ -16,21 +16,21 @@ ms.technology:
 ms.search.form: PurchTable, PurchCreateOrder, InventDimParmFixed, InventItemIdLookupPurchase, InventProductDimensionLookup, PurchTotals   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: fdahl
+ms.author: mkirknel
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Create a purchase order
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-This topic shows you how to create a purchase order manually. It’s more typical for purchase orders to be created automatically as result of master planning, direct delivery, and other processes. Purchase orders are typically created by a purchasing agent. The example shown here can be used in the USMF demo data company using the values that are suggested in the notes for various steps.
+This topic shows you how to create a purchase order manually. It's more typical for purchase orders to be created automatically as result of master planning, direct delivery, and other processes. Purchase orders are typically created by a purchasing agent. The example shown here can be used in the USMF demo data company using the values that are suggested in the notes for various steps.
 
 
 ## Create the purchase order header
@@ -60,10 +60,10 @@ This topic shows you how to create a purchase order manually. It’s more typica
 
     - Select the quantity that you want to purchase. The **Quantity** field is automatically populated with the minimum order quantity for the product if this is set up, or with the value of 1.  
     - The **Unit** field indicates the unit of measure for the ordered quantity. Typically, the unit is automatically provided from the purchasing unit on the product master data, but you can change this.  
-    - The **Unit price** field typically contains a value from either a purchase agreement or a trade agreement. It’s possible to change the unit price on individual order lines, for example if a unique price is negotiated with the vendor.  
+    - The **Unit price** field typically contains a value from either a purchase agreement or a trade agreement. It's possible to change the unit price on individual order lines, for example if a unique price is negotiated with the vendor.  
     - The **Discount** field represents a discount amount per unit. This discount therefore reduces the unit price by the discount. This discount is commonly supplied automatically from purchase agreements or trade agreements, but it is possible to override on individual lines if unique discounts have been negotiated with the vendor.  
     - A discount percentage can be entered that reduces the net amount for the line accordingly. The discount percent is often supplied automatically from purchase agreements or trade agreements, but it is possible to override on individual lines if a unique discount percentage has been negotiated with the vendor.  
-    - The value in the **Net Amount** field is calculated from other fields on the line including quantity, unit price, discount, and discount percent. It’s possible to change the Net amount, but then the **Unit Price**, **Discount**, and **Discount percent** fields will be blank and when you post toward the line, the amount posted will be proportional to the net amount. Typically the **Net Amount** field is only used for displaying the net amount of the line.  
+    - The value in the **Net Amount** field is calculated from other fields on the line including quantity, unit price, discount, and discount percent. It's possible to change the Net amount, but then the **Unit Price**, **Discount**, and **Discount percent** fields will be blank and when you post toward the line, the amount posted will be proportional to the net amount. Typically the **Net Amount** field is only used for displaying the net amount of the line.  
 
 8. Expand the **Line details** section.
 9. Select the **Delivery** tab. A unique delivery date can be assigned to each order line. The date is inherited from the field on the purchase order header, but you can change this.  
@@ -71,7 +71,7 @@ This topic shows you how to create a purchase order manually. It’s more typica
 ## Review order totals
 1. Select **Totals**.
 
-    - If you don’t see the **Totals** action, select the **Purchase Order** tab on the action bar.  
+    - If you don't see the **Totals** action, select the **Purchase Order** tab on the action bar.  
     - This dialog box shows totals for the whole order.  
     - The **Selection** field allows you to change the basis of how totals are calculated. For example, you could choose **Product receipt quantity** to show totals that relate to the amount of the product(s) that have been received, or **Ordered quantity** to show the amount of product that was ordered.  
 

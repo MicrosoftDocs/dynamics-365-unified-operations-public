@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Category pricing rules to create trade agreements
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This procedure demonstrates how to create sales price trade agreements using a category pricing rule. The demo data company used to create this task is USRT. This task is intended for the Commerce merchandising manager role.
 

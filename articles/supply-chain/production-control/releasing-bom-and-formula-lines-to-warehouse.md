@@ -4,7 +4,7 @@
 title: Release BOM and formula lines to the warehouse
 description: This topic describes the process for releasing raw material for BOM lines and formula lines to the warehouse.
 author: johanhoffmann
-manager: AnnBe
+manager: tfehr
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ ms.search.form: SysOperationTemplateForm
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 1705903

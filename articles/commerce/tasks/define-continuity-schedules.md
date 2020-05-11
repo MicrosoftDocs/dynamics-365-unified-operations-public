@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Define continuity schedules
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic walks through setting up a continuity program (otherwise known as reoccurring orders). This topic uses company USRT in the demo data.
 

@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create a bank facility agreement for the letter of guarantee
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This task creates a bank facility agreement to process a letter of guarantee. This task uses the USMF demo company. 
 

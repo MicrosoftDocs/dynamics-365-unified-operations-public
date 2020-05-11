@@ -5,7 +5,7 @@ title: Upgrade the Document Routing Agent
 description: This topic explains how to upgrade the Document Routing Agent.
 author: TJVass
 manager: AnnBe
-ms.date: 09/06/2019
+ms.date: 04/09/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -40,6 +40,9 @@ If you don't upgrade existing installations of the DRA to Platform update 12 or 
 - Inconsistent handling of printed documents that have custom margins
 
 IT administrators must perform the following procedures on each domain resource that is used to host a DRA.
+
+> [!NOTE]
+> When you complete the DRA upgrade, IT administrators should register any printers that are connected through the host server. For network printers that are identified by their network paths, if the paths have not changed, updates are not required.
 
 ## Get started
 To continue to run the DRA as a Microsoft Windows service, you must have both the user name and the password of the domain account that is used to run the service. This information must be available after the upgrade is completed. To find the information for the active service account, start the Microsoft Management Console (MMC) Services snap-in, and select **Microsoft Dynamics 365 Document Routing Service** in the list.

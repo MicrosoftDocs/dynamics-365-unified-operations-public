@@ -5,7 +5,7 @@ title: Business document management overview
 description: This topic provides information about how to use the Business document management feature of the ER framework.
 author: NickSelin
 manager: AnnBe
-ms.date: 01/15/2020
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -32,6 +32,8 @@ ms.dyn365.ops.version: 10.0.5
 
 # Business document management overview
 
+[!include [banner](../includes/banner.md)]
+
 Business users use the [Electronic reporting (ER)](general-electronic-reporting.md) framework to configure formats for outbound documents in accordance with the legal requirements of various countries/regions. Users can also define the dataflow to specify what application data is placed in generated documents. The ER framework generates outbound documents in Microsoft Office formats (Excel workbooks or Word documents) by using predefined templates. The templates are populated with required data in accordance to configured dataflow while required documents are generated. Each configured format can be published as part of an ER solution to generate specific outbound documents. This is represented by an ER format configuration that can contain templates you can use to generate different outbound documents. Business users can use this framework to manage required business documents.
 
 **Business document management** is built on top of the ER framework and enables business users to edit business document templates by using Microsoft Office 365 service or appropriate Microsoft Office desktop application. Edits to the documents might include changing business document designs and adding placeholders for additional data without source code changes and new deployments. No knowledge of the ER framework is required to update templates of business documents.
@@ -49,7 +51,7 @@ To use Business document management for editing templates in Excel or Word forma
 
 ## Business document availability
 
-The following reports, with Excel-based templates, will available with the release of the public preview:
+The following reports, with Excel-based templates, will become available with the release of the public preview:
 
 **Accounts receivable** (August 2019)
 
@@ -103,7 +105,7 @@ Use the following procedure to import each file. Import the ER *data model* conf
 2. On the top of the page, select **Exchange**.
 3. Select **Load from XML file**.
 4. Select **Browse** to load the required XML file.
-5. Select **OK** to confirm configuration’s import.
+5. Select **OK** to confirm configuration's import.
 
 ![ER configurations page](./media/BDM-Overview-ERSolutions.png)
 
@@ -163,7 +165,7 @@ Use the following procedure to set up the basic parameters for all legal entitie
 
 1. Sign in as a user with access to the **Business document parameters** page.
 2. Go to **Organization administration** \> **Electronic reporting** \> **Business document management** \> **Business document parameters**.
-3.	On the **Business document parameters** page, on the **Attachments** tab, in the **SharePoint document type** field, define the document type that should be used to temporarily store templates in Office formats while they are edited using the Office desktop applications. 
+3.    On the **Business document parameters** page, on the **Attachments** tab, in the **SharePoint document type** field, define the document type that should be used to temporarily store templates in Office formats while they are edited using the Office desktop applications. 
 
 > [!NOTE]
 > Only document types that are configured using a SharePoint location are available for this parameter.
@@ -251,9 +253,18 @@ Use the following procedure to edit free text invoice templates in the Business 
 1. Sign in as a user with access to the Business document management workspace.
 2. Open the Business document management workspace.
 
+When the **Office-like UI experience for Business document management** feature is turned off in the **Feature management** workspace, the main grid in the **Business document management** workspace shows the following templates:
+
+- Templates that are owned by your ER configuration provider (that is, the provider that is currently marked as active in the **Electronic reporting** workspace). After you select one of these templates, you can select **Edit template** to start or continue to edit it.
+- Templates that are owned by other ER configuration providers. After you select one of these templates, you can select **New document** to create a copy of it that is owned by your ER configuration provider, and then start to edit the copy.
+
 ![Business document management workspace page](./media/BDM-Overview-EditingTemplate1.png)
 
 The **Template** tab presents the content of the selected template. Select the **Details** tab to review details of the selected template as well as details of an ER format configuration this template resides in. Notice that all of the templates have a status of **Published**, and contain no details in the **Revision** column. This means that these templates are not currently being edited.
+
+When the **Office-like UI experience for Business document management** feature is turned on in the **Feature management** workspace, the main grid in the **Business document management** workspace shows templates that are owned by your ER configuration provider (that is, the provider that is currently marked as active in the **Electronic reporting** workspace). After you select one of these templates, you can select **Edit template** to start or continue to edit it.
+
+To work with templates that are owned by other ER configuration providers, select **New document** to create a copy of the template that is owned by your ER provider. You can then start to edit the copy. For more information, see [New document user interface in Business document management](er-business-document-management-new-template-ui.md).
 
 ### Initiate editing templates owned by your configuration provider
 
@@ -295,7 +306,7 @@ The **BDM template editor** page will open. The selected template will be availa
 
 ### <a name="EditInOffice365">Edit a template in Office 365</a>
 
-You can modify the template using Office 365. For example, in Office online, change the font of the field prompts in the template header from **Regular** to **Bold**. These changes are automatically stored in the editable template that is stored in the primary template’s storage (by default, the Azure blob storage). This is configured for the ER framework.
+You can modify the template using Office 365. For example, in Office online, change the font of the field prompts in the template header from **Regular** to **Bold**. These changes are automatically stored in the editable template that is stored in the primary template's storage (by default, the Azure blob storage). This is configured for the ER framework.
 
 ![Business document management template editor page](./media/BDM-Overview-EditingLayout2.png)
 
@@ -333,7 +344,7 @@ You can modify the template using Office 365. For example, in Office online, cha
 
 4. Close the **BDM template editor** page.
 
-The updated template is shown on the **Template** tab. Notice that the status of the edited template is now **Draft** and the current revision is no longer empty. This means that the process of this template’s editing has been started.
+The updated template is shown on the **Template** tab. Notice that the status of the edited template is now **Draft** and the current revision is no longer empty. This means that the process of this template's editing has been started.
 
 ![Business document management workspace page](./media/BDM-Overview-EditingTemplate5.png)
 
@@ -364,7 +375,7 @@ The modified template is used to generate the free text invoice report for the s
 
     ![Business document management workspace page](./media/BDM-Overview-AddRevision.png)
 
-    You created a new revision of your template that has been stored in the permanent template’s storage. Now you can continue editing the template of the second revision that is currently selected as active.
+    You created a new revision of your template that has been stored in the permanent template's storage. Now you can continue editing the template of the second revision that is currently selected as active.
 
 5. Select the first revision and then select **Set active**. You can select another revision as active if at any time you want to return to that revision of the template.
 6. Select the second revision, and then select **Delete**.
@@ -403,7 +414,7 @@ Yes, you can. In the first application session, select **Open in Desktop App**. 
 3. On the **BDM template editor** page of the first application session, select **Sync stored copy**.
 4. Execute this template ER format in the second application session.
 
-#### I get the error ‘Value cannot be null. Parameter name: externalId’ when I select **Open in Desktop App**. How do I work around this? 
+#### I get the error 'Value cannot be null. Parameter name: externalId' when I select **Open in Desktop App**. How do I work around this? 
 Most likely you signed in to the current instance of the app of the Azure AD domain which differs from the Azure AD domain that was used to deploy this instance. Because the SharePoint service, which is used to store templates for making them available for editing by using the Office desktop applications, belongs to the same domain, we have no permissions to access the SharePoint service. To resolve this issue, sign in to the current instance using the credentials of a user with the correct Azure AD domain.
 
 ## Additional resources

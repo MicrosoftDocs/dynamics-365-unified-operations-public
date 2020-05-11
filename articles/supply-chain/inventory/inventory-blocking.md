@@ -4,7 +4,7 @@
 title: Inventory blocking
 description: This topic provides an overview of inventory blocking, which is part of the quality inspection process in Supply Chain Management. You can use inventory blocking to prevent items from being processed or consumed.
 author: perlynne
-manager: AnnBe
+manager: tfehr
 ms.date: 01/17/2020
 ms.topic: article
 ms.prod:
@@ -17,7 +17,7 @@ ms.search.form: InventBlocking, InventQualityOrderTable
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 2094

@@ -34,7 +34,7 @@ ms.search.validFrom: 2020-01-27
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+
 
 An important goal of most businesses is to convert prospects to customers and then maintain an ongoing business relationship with those customers. In Microsoft Dynamics 365 apps, the prospect-to-cash process occurs through quotations or order processing workflows, and the financials are reconciled and recognized. Integration of prospect-to-cash with dual-write creates a workflow that takes a quotation and an order that originate in either Dynamics 365 Sales or Dynamics 365 Supply Chain Management, and makes the quotation and order available in both apps.
 
@@ -70,6 +70,14 @@ Sales quotations can be created in either Sales or Supply Chain Management. If y
 + You can add a discount to the product on the quotation. In this case, the discount will be synced to Supply Chain Management. The **Discount**, **Charges**, and **Tax** fields on the header are controlled by a setup in Supply Chain Management. This setup doesn't support integration mapping. Instead, the **Price**, **Discount**, **Charge**, and **Tax** fields are maintained and handled in Supply Chain Management.
 + The **Discount %**, **Discount**, and **Freight Amount** fields on the sales quotation header are read-only fields.
 + The **Freight terms**, **Delivery terms**, **Shipping method**, and **Delivery mode** fields aren't part of the default mappings. To map these fields, you must set up a value mapping that is specific to the data in the organizations that the entity is synced between.
+
+If you are also using the Field Service solution, make sure to re-enable the **Quote Line Quick Craete** parameter. Re-enabling the parameter lets you to continue creating quote lines using the quick create function.
+1. Navigate to your Dynamics 365 Sales application.
+2. Select the settings icon in the top navigation bar.
+3. Select **Advanced Settings**.
+4. Choose the **Customize the System** option.
+5. Select the **Quote Line** menu item.
+6. Go to the **Data Services** section and select the **Allow quick create** checkbox.
 
 ## Sales orders
 

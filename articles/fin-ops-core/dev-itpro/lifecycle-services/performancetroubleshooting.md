@@ -3,7 +3,7 @@
 
 title: Performance troubleshooting using tools in Lifecycle Services (LCS)
 description: This topic describes the various tools that Microsoft Dynamics Lifecycle Services (LCS) provides to help you diagnose and mitigate performance issues in your sandbox and production environments.
-author: manalidongre
+author: meeramahabala
 manager: AnnBe
 ms.date: 03/04/2019
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 267184
 ms.assetid: eb056816-ccf4-43a5-aed3-cf72543353de
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: manado
+ms.author: meeram
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 

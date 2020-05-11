@@ -5,7 +5,7 @@ title: Log extension events to Application Insights
 description: This topic explains how to log events to Customer Application Insights from Commerce runtime (CRT) extensions.
 author: mugunthanm
 manager: AnnBe
-ms.date: 11/26/2019
+ms.date: 04/29/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -57,10 +57,7 @@ This topic explains how to log events to [Customer Application Insights](https:/
     > [!div class="mx-imgBorder"]
     > ![Search field](media/Search.png)
 
-4. Select **Create**.
-
-    > [!div class="mx-imgBorder"]
-    > ![Create button](media/Create.png)
+4. Click **Create** in the Application Insights page.
 
 5. On the **Basic** tab, set the **Subscription**, **Resource group**, **Name**, and **Region** fields.
 
@@ -134,7 +131,7 @@ This topic explains how to log events to [Customer Application Insights](https:/
 5. In the **..\\RetailServer\\webroot\\bin\\Ext** folder, open the **CommerceRuntime.Ext.config** file, and update the **\<settings\>** section with the Applications Insights instrumentation key that you generated earlier. Here is an example.
 
     ```xml
-    <add name="ext.AppInsightsKey" value="xxxxxxx"/>;
+    <add name="ext.AppInsightsKey" value="xxxxxxx"/>
     ```
 
 6. Restart your Commerce Scale Unit.

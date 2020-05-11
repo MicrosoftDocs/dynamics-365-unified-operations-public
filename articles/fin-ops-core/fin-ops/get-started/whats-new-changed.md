@@ -32,10 +32,9 @@ ms.dyn365.ops.version: Platform update 2
 ---
 
 # What's new or changed in Finance and Operations apps home page
+
 [!include [banner](../includes/banner.md)]
 
-
-[!include [release notes](../includes/release-notes.md)]
 
 ## Application releases
 

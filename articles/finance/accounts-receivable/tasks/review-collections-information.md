@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Review collections information
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic explains how to review collections information as well as various setup options and collections transactions. This procedure uses the USMF demo company.
 
@@ -110,10 +110,10 @@ This topic explains how to review collections information as well as various set
 - Update the aging snapshot for the customer, using the current date as the aging date that the transaction dates are compared with. If the aging snapshot contains information for multiple legal entities, the updated aging snapshot contains information for the same set of legal entities. Amounts are stored in the accounting currency of the legal entity that you are logged on to when you update the aging snapshot.  
 - Select an aging period definition. By default, the aging period definition that is associated with the aging snapshot for the customer is displayed. The aging period definition controls the aging periods and amounts that are shown in the **Aged balances** and **Credit information** FactBoxes.  
 - Open a menu that contains the following items:    
-  - Company – Display amounts in the Aged balances and Credit information FactBoxes in the legal entity’s accounting currency.  
-  - Customer – Display amounts in the Aged balances and Credit information Fact boxes in the customer’s currency.  
-- Select one or more legal entities in the customer’s aging snapshot for which to view information. The legal entities that are shown in the list were selected when the aging snapshot was created.  
-- View the customer’s statement in Microsoft Excel format. You can select a starting date for the range of transactions to include on the statement and decide whether to include only open transactions, or both open and settled transactions. If the aging snapshot contains information for multiple legal entities, transactions are included for all the legal entities.  
+  - Company – Display amounts in the Aged balances and Credit information FactBoxes in the legal entity's accounting currency.  
+  - Customer – Display amounts in the Aged balances and Credit information Fact boxes in the customer's currency.  
+- Select one or more legal entities in the customer's aging snapshot for which to view information. The legal entities that are shown in the list were selected when the aging snapshot was created.  
+- View the customer's statement in Microsoft Excel format. You can select a starting date for the range of transactions to include on the statement and decide whether to include only open transactions, or both open and settled transactions. If the aging snapshot contains information for multiple legal entities, transactions are included for all the legal entities.  
 - Open the **Documents** form, in which you can create or edit documents or notes.  
 4. On the Action Pane, select **Communicate**.  
 - Open Outlook, where you can send an email message to the contact that is specified in the Contact field. If a collections contact is not specified, the primary address for the customer is used. If a primary contact is not specified, email messages will be sent to the first address listed in the **Contacts** form. The transactions that are selected are included as an attachment. The attachment is in Excel format and contains three worksheets. An email template for messages to customer contacts can be specified in the **Accounts receivable parameters** form.  
@@ -122,7 +122,7 @@ This topic explains how to review collections information as well as various set
 - This button is not available if the contact that is selected in this form does not have an email address set up.  
 - Open Outlook, where you can send an email message to the employee who is specified as the sales representative for the sales group that is assigned to the customer. If transactions are selected, they are included as an attachment. The attachment is in Excel format and contains two worksheets. An email template for messages to salespeople can be specified in the **Accounts receivable parameters** form.  
 - This button is not available if the salesperson that is displayed in this form does not have an email address set up.  
-- View and perform actions on transactions for the customer. If you are using centralized payments, information for all legal entities that are included in the customer’s aging snapshot is included. You can restrict the legal entity information by selecting **Company** in the **Select** group on the action pane.  
+- View and perform actions on transactions for the customer. If you are using centralized payments, information for all legal entities that are included in the customer's aging snapshot is included. You can restrict the legal entity information by selecting **Company** in the **Select** group on the action pane.  
 - Change the collections status for the selected transactions.    
   - Not disputed – No collections action has occurred for the transaction.    
   - Disputed – The customer has notified you that there is a problem with the transaction.    

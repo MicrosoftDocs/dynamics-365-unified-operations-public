@@ -28,17 +28,17 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # ER Use horizontally expandable ranges to dynamically add columns in Excel reports (Part 1 - Design format)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to generate reports as OPENXML worksheets (Excel) files in which the required columns can be created dynamically as horizontally expandable ranges. These steps can be performed in any company.
 
 To complete these steps, you must first complete these three task guides: 
 
-“ER Create a configuration provider and mark it as active”
+"ER Create a configuration provider and mark it as active"
 
-“ER Use financial dimensions as a data source (Part 1: Design data model)”
+"ER Use financial dimensions as a data source (Part 1: Design data model)"
 
-“ER Use financial dimensions as a data source (Part 2: Model mapping)”
+"ER Use financial dimensions as a data source (Part 2: Model mapping)"
 
 You must also download and save a local copy of the template with a sample report found here, [Sample Financial Dimensions Web Service Report](https://go.microsoft.com/fwlink/?linkid=862266).
 
@@ -60,18 +60,18 @@ This procedure is for a feature that was added in Dynamics 365 for Operations ve
 
 ## Design the report format
 1. Click Designer.
-2. Turn on the ‘Show details’ toggle button.
+2. Turn on the 'Show details' toggle button.
 3. On the Action Pane, click Import.
 4. Click Import from Excel.
 5. Click Attachments.
-    * Import the report’s template. Use Excel file that you downloaded for that.  
+    * Import the report's template. Use Excel file that you downloaded for that.  
 6. Click New.
 7. Click File.
 8. Close the page.
 9. In the Template field, enter or select a value.
     * Select the downloaded template.  
 10. Click OK.
-    * Add a new range to dynamically create Excel output with as many columns as you selected (in the user dialog form) for financial dimensions. Each cell for every column will represent a single financial dimension’s name.  
+    * Add a new range to dynamically create Excel output with as many columns as you selected (in the user dialog form) for financial dimensions. Each cell for every column will represent a single financial dimension's name.  
 11. Click Add to open the drop dialog.
 12. In the tree, select 'Excel\Range'.
 13. In the Excel range field, type 'DimNames'.
@@ -88,7 +88,7 @@ This procedure is for a feature that was added in Dynamics 365 for Operations ve
 23. In the tree, expand 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical'.
 24. In the tree, expand 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical'.
 25. In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical'.
-    * Add a new range to dynamically create Excel output with as many columns as you selected (in the user dialog form) for financial dimensions. Each cell for every column will represent a single financial dimension’s value for each reporting transaction.  
+    * Add a new range to dynamically create Excel output with as many columns as you selected (in the user dialog form) for financial dimensions. Each cell for every column will represent a single financial dimension's value for each reporting transaction.  
 26. Click Add Range.
 27. In the Excel range field, type 'DimValues'.
     * DimValues  

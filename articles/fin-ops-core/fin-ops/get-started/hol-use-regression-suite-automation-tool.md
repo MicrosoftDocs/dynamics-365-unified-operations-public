@@ -3,7 +3,7 @@
 
 title: Use the Regression suite automation tool tutorial
 description: This topic shows how to use Regression suite automation tool (RSAT). It describes various features and provides examples that use advanced scripting. 
-author: kfend
+author: robinarh
 manager: AnnBe
 ms.date: 06/09/2019
 ms.topic: article
@@ -17,13 +17,13 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21761
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kfend
+ms.author: rhaertle
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
 
@@ -36,79 +36,13 @@ ms.dyn365.ops.version: AX 7.0.0, Operations
 > [!NOTE]
 > Use your internet browser tools to download and save this page in pdf format. 
 
-This tutorial walks through some of the advanced features of the Regression suite automation tool (RSAT), includes a demo assignment, and describes strategy and key learning points.
+This tutorial walks through some of the advanced features of the Regression suite automation tool (RSAT), includes a demo assignment, and describes strategy and key learning points. 
 
-## Features of RSAT/Task recorder
+## Notable Features of RSAT and Task recorder
 
 ### Validate a field value
 
-For information about this feature, see the [Create a new task recording that has a Validate function](./hol-set-up-regression-suite-automation-tool.md#create-a-new-task-recording-that-has-a-validate-function).
-
-### Saved variable
-
-For information about this feature, see the [Modify an existing task recording to create a saved variable](./hol-set-up-regression-suite-automation-tool.md#modify-an-existing-task-recording-to-create-a-saved-variable).
-
-### Derived test case
-
-1. Open Regression suite automation tool (RSAT), and select both the test cases that you created in [Set up and install Regression suite automation tool tutorial](./hol-set-up-regression-suite-automation-tool.md).
-2. Select **New \> Create derived test case**.
-
-    ![Create derived test case command on the New menu](./media/use_rsa_tool_01.png)
-
-3. You receive a message that states that a derived test case will be created for each selected test case in the current test suite, and that each derived test case will have its own copy of the Excel parameter file. Select **OK**.
-
-    > [!NOTE]
-    > When you run a derived test case, it uses the task recording of its parent test case and its own copy of the Excel parameter file. In this way, you can run the same test with different parameters, without having to maintain more than one task recording. A derived test case doesn't have to be part of the same test suite as its parent test case.
-
-    ![Message box](./media/use_rsa_tool_02.png)
-
-    Two additional derived test cases are created, and the **Derived?** check box is selected for them.
-
-    ![Derived test cases created](./media/use_rsa_tool_03.png)
-
-    A derived test case is automatically created in Azure DevOps. It's a child item of the **Create a new product** test case and is tagged with a special keyword: **RSAT:DerivedTestSteps**. These test cases are also automatically added to the test plan in Azure DevOps.
-
-    ![RSAT:DerivedTestSteps keyword](./media/use_rsa_tool_04.png)
-
-    > [!NOTE]
-    > If, for any reason, the derived test cases that are created aren't in the correct order, go to Azure DevOps, and reorder the test cases in the test suite, so that RSAT can run them in the correct order.
-
-4. Select the derived test cases, and then select **Edit** to open the corresponding Excel parameter files.
-5. Edit these Excel parameter files in the same way that you edited the parent files. In other words, make sure that the product ID is set so that it's automatically generated. Also make sure that the saved variable is copied to the relevant fields.
-6. On the **General** tab of both Excel parameter files, update the value of the **Company** field to **USSI**, so that the derived test cases will be run against a different legal entity than the parent test case. To run the test cases against a specific user (or the role that is associated with a specific user), you can update the value of the **Test User** field.
-7. Select **Run**, and validate that the product is created in both the USMF legal entity and the USSI legal entity.
-
-### Validate notifications
-
-This feature can be used to validate whether an action occurred. For example, when a production order is created, estimated, and then started, the app shows a "Production – Start" message to notify you that the production order has been started.
-
-![Production – Start notification](./media/use_rsa_tool_05.png)
-
-You can validate this message through RSAT by entering the message text on the **MessageValidation** tab of the Excel parameter file for the appropriate recording.
-
-![Message Validation tab](./media/use_rsa_tool_06.png)
-
-After the test case is run, the message in the Excel parameter file is compared to the message that is shown. If the messages don't match, the test case will fail.
-
-> [!NOTE]
-> You can enter more than one message on the **MessageValidation** tab in the Excel parameter file. The messages also can be error or warning messages instead of informational messages.
-
-### Validate values by using operators
-
-In previous versions of RSAT, you could validate values only if a control value equaled an expected value. The new feature lets you validate that a variable isn't equal to, is less than, or is more than a specified value.
-
-- To use this feature, open the **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** file under the RSAT installation folder (for example, **C:\\Program Files (x86)\\Regression Suite Automation Tool**), and change the value in the following element from **false** to **true**.
-
-    ```xml
-    <add key="AddOperatorFieldsToExcelValidation" value="false" />
-    ```
-
-    In the Excel parameter file, a new **Operator** field appears.
-
-    > [!NOTE]
-    > If you've been using an older version of RSAT, you must generate new Excel parameter files.
-
-    ![Operator field](./media/use_rsa_tool_07.png)
+RSAT allows you to include validation steps within your test case to validate expected values. For information about this feature, see the article [Validate expected values](../../dev-itpro/perf-test/rsat/rsat-validate-expected.md).
 
 The following example shows how you can use this feature to validate whether the on-hand inventory is more than 0 (zero).
 
@@ -121,7 +55,7 @@ The following example shows how you can use this feature to validate whether the
     5. In the list, mark the selected row.
     6. Validate that the value of the **Total available** field is **411.0000000000000000**.
 
-2. Save the task recording to the BPM library in LCS, and sync it to Azure DevOps.
+2. Save the task recording and attach it to your test case in Azure Devops.
 3. Add the test case to the test plan, and load the test case into RSAT.
 4. Open the Excel parameter file. On the **InventOnhandItem** tab, you will see a **Validate InventOnhandItem** section that includes an **Operator** field.
 
@@ -136,28 +70,32 @@ The following example shows how you can use this feature to validate whether the
 
 Now, if the value of the **Total Available** field for the specified item in inventory is more than 0 (zero), tests will pass, regardless of the actual on-hand inventory value.
 
-### Generator logs
+### Saved variables and chaining of test cases
 
-This feature creates a folder that contains the logs of the test cases that have been run.
+One of the key features of RSAT is the chaining of test cases, that is, the ability of a test to pass variables to other tests. For more information, see the article [Copy variables to chain test cases](../../dev-itpro/perf-test/rsat/rsat-chain-test-cases.md).
 
-- To use this feature, open the **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** file under the RSAT installation folder (for example, **C:\\Program Files (x86)\\Regression Suite Automation Tool**), and change the value in the following element from **false** to **true**.
+### Derived test case
 
-    ```xml
-    <add key="LogGeneration" value="false" />
-    ```
+RSAT lets you use the same task recording with multiple test cases, enabling a task to run with different data configurations. See the article [Derived test cases](../../dev-itpro/perf-test/rsat/rsat-derived-test-cases.md) for more information.
 
-After the test cases are run, you can find the log files under **C:\\Users\\\<Username\>\\AppData\\Roaming\\regressionTool\\generatorLogs**.
+### Validate notifications and messages
 
-![GeneratorLogs folder](./media/use_rsa_tool_10.png)
+This feature can be used to validate whether an action occurred. For example, when a production order is created, estimated, and then started, the app shows a "Production – Start" message to notify you that the production order has been started.
+
+![Production – Start notification](./media/use_rsa_tool_05.png)
+
+You can validate this message through RSAT by entering the message text on the **MessageValidation** tab of the Excel parameter file for the appropriate recording.
+
+![Message Validation tab](./media/use_rsa_tool_06.png)
+
+After the test case is run, the message in the Excel parameter file is compared to the message that is shown. If the messages don't match, the test case will fail.
 
 > [!NOTE]
-> If there were existing test cases before you changed the value in the .config file, logs won't be generated for those test cases until you generate new test execution files.
-> 
-> ![Generate Text Execution files only command on the New menu](./media/use_rsa_tool_11.png)
+> You can enter more than one message on the **MessageValidation** tab in the Excel parameter file. The messages also can be error or warning messages instead of informational messages.
 
 ### Snapshot
 
-This feature takes screenshots of the steps that were performed during task recording.
+This feature takes screenshots of the steps that were performed during task recording. It is useful for auditing or debugging purposes.
 
 - To use this feature, open the **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** file under the RSAT installation folder (for example, **C:\\Program Files (x86)\\Regression Suite Automation Tool**), and change the value of the following element from **false** to **true**.
 
@@ -165,13 +103,7 @@ This feature takes screenshots of the steps that were performed during task reco
     <add key="VerboseSnapshotsEnabled" value="false" />
     ```
 
-Under **C:\\Users\\\<Username\>\\AppData\\Roaming\\regressionTool\\playback**, a separate folder is created for each test case that is run.
-
-![Snapshot folder for a test case](./media/use_rsa_tool_12.png)
-
-In each of these folders, you can find snapshots of the steps that were performed while the test cases were run.
-
-![Snapshot files](./media/use_rsa_tool_13.png)
+When your run the test case, RSAT will generate snapshots (images) of the steps in the playback folder of the test cases in the working diretory. If you are using an older version of RSAT, the images are saved to **C:\\Users\\\<Username\>\\AppData\\Roaming\\regressionTool\\playback**, a separate folder is created for each test case that is run.
 
 ## Assignment
 
@@ -189,7 +121,7 @@ The following illustration shows the flow for this scenario.
 
 ![Flow for the demo scenario](./media/use_rsa_tool_14.png)
 
-The following illustration shows the business processes for this scenario in RSAT.
+The following illustration shows the business processes hierarchy for this scenario in the LCS Business Process Modeler.
 
 ![Business processes for the demo scenario](./media/use_rsa_tool_15.png)
 
@@ -386,7 +318,7 @@ You can use ``listtestsuitenames`` command to get all available test suits. Use 
 
 
 #### help
-Identical to the [?](####?) command
+Identical to the [?](#section) command
 
 
 #### list
@@ -523,6 +455,8 @@ Shows two ways to invoke this application: one using a default setting file, ano
 
 ### Windows PowerShell examples
 
+[!IMPORTANT] The example scripts below are provided AS IS for illustration purposes and are not supported by Microsoft.
+
 #### Run a test case in a loop
 
 You have a test script that creates a new customer. Via scripting, this test case can be run in a loop by randomizing the following data before each iteration is run:
@@ -562,7 +496,7 @@ function RunTestCase
     $cmd = $cmd + $filename
     cmd /c $cmd
 }
-$excelFilename = "full path to excel file parameter file"
+$excelFilename = "full path to Excel parameter file"
 l$sheetName = "DirPartyQuickCreateForm"
 for ($i = $start; $i -lt $start + $nr; $i++ )
 {

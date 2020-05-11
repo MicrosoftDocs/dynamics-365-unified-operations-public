@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Import and create multiple one-time vendors and invoices in the public sector
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 When approval or a contract in the form of a purchase order is not required, you can create an invoice for a new vendor with whom you have no regular relationship, at the same time as creating a record for the vendor. This procedure was created using the PSUS demo company data in the public sector partition.
 
@@ -39,6 +39,6 @@ When approval or a contract in the form of a purchase order is not required, you
 5. Click OK.
     * The vendor and invoice information is imported. If there are errors, a report will be printed, and you should correct any listed entries in the import file and then reimport the file.  
 6. Go to Accounts payable > Periodic tasks > Process one-time vendors and invoices.
-    * Duplicate vendor names or Federal tax IDs will be looked for.  Important: If you choose not to process duplicate vendors, the related invoices won’t be processed either. You can manually create an invoice by using the information in the CSV file.    
+    * Duplicate vendor names or Federal tax IDs will be looked for.  Important: If you choose not to process duplicate vendors, the related invoices won't be processed either. You can manually create an invoice by using the information in the CSV file.    
 7. Click OK.
 

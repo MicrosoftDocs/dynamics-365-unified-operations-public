@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Set up PIS and COFINS tables (Brazil)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Before the PIS and COFINS tax assessment can be created, you must set up the tables for the credit source and credit type. As a reference, you should use tables 4.3.7 and 4.3.6 that are published by the tax authority. This task uses the BRMF demo company.
 
