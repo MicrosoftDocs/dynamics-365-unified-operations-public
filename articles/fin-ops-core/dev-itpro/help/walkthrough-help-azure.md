@@ -5,7 +5,7 @@ title: Deploy custom Help to Azure
 description: This topic walks you through an example that shows how you can deploy Microsoft Dynamics 365 Help content to an Azure web app. 
 author: edupont04
 manager: AnnBe
-ms.date: 03/18/2020
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -57,7 +57,7 @@ The general process for creating your Azure resources consists of the following 
 
     When you complete this step, you put the HTML files in the relevant language subfolders, based on the locales that the content was written for. For information about the names to use for these subfolders, see [Language and locale descriptors in the product and in Help](language-locale.md).
 
-4. [Upload JSON files](#jsonstorage) into Blob storage in the Storage container, in subfolders that correspond to the language subfolders for the HTML files.
+4. [Upload JSON files](#jsonstorage) into Azure Blob storage in the storage container, in subfolders that correspond to the language subfolders for the HTML files.
 5. [Configure the search service](#searchconfig) so that it has a data source, index, and indexer on the search service, by using the REST application programming interface (API).
 
     In this example, an API tool that is named [Postman](https://www.postman.com/) is used to make the REST API calls. To use a language-specific index analyzer, you must create language-specific indexes.
@@ -203,7 +203,7 @@ Next, you will configure the search service so that it has an index of the conte
 3. Select **Send**, and make sure that the **Status** field is set to **201 Created**.
 4. If you prepared custom Help content for multiple languages, repeat these steps to create a unique index for each language.
 
-The index isn't an index until it has been processed by an indexer. Like the librarian who maintains the index of the books in a library, the indexer for your search service fills in the index, based on a search. For more information, see [Indexers in Azure Cognitive Search](/azure/search/search-indexer-overview).
+The index isn't an index until it has been processed by an indexer. Think of the table of contents in a reference book. It would not really be useful unless it also lists the page numbers for where to find the various sections in the book. Similarly, the indexer for your search service fills in the index, based on a search. For more information, see [Indexers in Azure Cognitive Search](/azure/search/search-indexer-overview).
 
 ### <a name="searchindexer"></a>Create an indexer
 
