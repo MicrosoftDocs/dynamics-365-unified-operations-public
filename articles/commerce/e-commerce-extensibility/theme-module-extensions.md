@@ -40,6 +40,7 @@ Dynamics 365 Commerce e-Commerce themes can optionally contain the following ext
 
 - Module view extensions that provide new layout views on a module
 - Definition extensions to change a module's configurations
+- Data action extensions to call additional data actions
 
 ## Theme module view extensions
 
