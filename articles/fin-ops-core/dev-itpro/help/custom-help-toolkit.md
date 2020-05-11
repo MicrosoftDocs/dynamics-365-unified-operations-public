@@ -2,7 +2,7 @@
 # required metadata
 
 title: Custom Help Toolkit
-description: This article describes the components in the custom help toolkit for Finance and Operations apps. 
+description: This topic describes the components of the Custom Help Toolkit for Finance and Operations apps. 
 author: edupont04
 manager: AnnBe
 ms.date: 03/18/2020
@@ -32,39 +32,39 @@ ms.dyn365.ops.version: Operations
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft has published a GitHub repository with scripts and tools that can help you prepare context-sensitive Help for customized Finance and Operations solutions. This context-sensitive Help can be accessed from the in-product Help pane.
+Microsoft has published a GitHub repository (repo) that includes scripts and tools that can help you prepare context-sensitive Help for customized Finance and Operations solutions. This context-sensitive Help can be accessed from the in-product **Help** pane.
 
 ## Tools in the toolkit
 
-The toolkit is available at [https://github.com/microsoft/dynamics365f-o-custom-help/](https://github.com/microsoft/dynamics365f-o-custom-help/). The repo contains the following tools and the source code for the tools:
+The Custom Help Toolkit is available at [https://github.com/microsoft/dynamics365f-o-custom-help](https://github.com/microsoft/dynamics365f-o-custom-help/). The repo contains the following tools and the source code for those tools:
 
-- HtmlFromRepoGenerator tool
+- The **HtmlFromRepoGenerator** tool
 
-    For more information, see [Custom Help Toolkit: The HtmlFromRepoGenerator tool](custom-help-toolkit-HtmlFromRepoGenerator.md)
+    For more information, see [Custom Help Toolkit: The HtmlFromRepoGenerator tool](custom-help-toolkit-HtmlFromRepoGenerator.md).
 
-- ConvertHtmlToJson tool
+- The **ConvertHtmlToJson** tool
 
-    For more information, see [Custom Help Toolkit: The ConvertHtmlToJson tool](custom-help-toolkit-ConvertHtmlToJson.md)
+    For more information, see [Custom Help Toolkit: The ConvertHtmlToJson tool](custom-help-toolkit-ConvertHtmlToJson.md).
 
-- HtmlLocaleChanger tool
+- The **HtmlLocaleChanger** tool
 
-    For more information, see [Custom Help Toolkit: The HtmlLocaleChanger tool](custom-help-toolkit-HtmlLocaleChanger.md)
+    For more information, see [Custom Help Toolkit: The HtmlLocaleChanger tool](custom-help-toolkit-HtmlLocaleChanger.md).
 
-- "Help Pane extension" Visual Studio project
+- The **Help Pane extension** Microsoft Visual Studio project
 
-    For more information, see [Connect your Help website with the Help pane](connect-help-pane.md)
+    For more information, see [Connect a custom Help website to the Help pane](connect-help-pane.md).
 
-- AX 2012 metadata scripts
+- Dynamics AX 2012 metadata scripts
 
-    For more information, see [Convert Dynamics AX custom Help for use in Dynamics 365](migrate-dynamicsax2012.md)
+    For more information, see [Convert Dynamics AX custom Help for use in Dynamics 365](migrate-dynamicsax2012.md).
 
 > [!NOTE]
-> The first version of this toolkit is available as a [release in the GitHub repo](https://github.com/microsoft/dynamics365f-o-custom-help/releases).  
+> The first version of the toolkit is available as a [release in the GitHub repo](https://github.com/microsoft/dynamics365f-o-custom-help/releases).
 
 ## See also
 
-[Custom Help Overview](custom-help-overview.md)  
-[Deploying custom help to Azure](walkthrough-help-azure.md)  
-[Connect your Help website with the Help pane](connect-help-pane.md)
-[Language and locale descriptors in across product and Help](language-locale.md)  
-[Convert Dynamics AX custom Help for use in Dynamics 365](migrate-dynamicsax2012.md)  
+[Custom Help overview](custom-help-overview.md)  
+[Deploy custom Help to Azure](walkthrough-help-azure.md)  
+[Connect a custom Help website to the Help pane](connect-help-pane.md)  
+[Language and locale descriptors in the product and in Help](language-locale.md)  
+[Convert Dynamics AX custom Help for use in Dynamics 365](migrate-dynamicsax2012.md)
