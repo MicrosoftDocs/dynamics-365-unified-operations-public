@@ -12478,6 +12478,11 @@
       "redirect_document_id": "false"
     },
     {
+      "source_path": "articles/fin-ops-core/fin-ops/get-started/help-custom.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/help/deploy",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/talent/hr-copy-instance.md",
       "redirect_url": "/dynamics365/human-resources/hr-admin-setup-copy-instance",
       "redirect_document_id": "false"
