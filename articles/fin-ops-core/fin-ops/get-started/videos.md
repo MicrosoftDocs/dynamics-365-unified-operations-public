@@ -83,7 +83,7 @@ On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/
 - [Uptake a new platform release after Platform update 3](https://www.youtube.com/watch?v=nkiKP2Au6OQ&feature=youtu.be)
 - [Use telemetry to monitor key performance counters in Dynamics Lifecycle Services](https://www.youtube.com/watch?v=18u6SC8GeFY&feature=youtu.be)
 
-## Regression suite automation tool (RSAT)
+### Regression suite automation tool (RSAT)
 
 - [How to use task recorder to create a test case for the Regression suite automation tool (RSAT)](https://youtu.be/bBr4BXAxTNI)
 - [How to create a test plan in Azure DevOps to use with the Regression suite automation tool (RSAT)](https://youtu.be/3jIuBleAnQk) 
