@@ -82,7 +82,7 @@ Before you start creating work, make sure that your warehouse is set up to respo
 
 Create some picking work by doing the following:
 
-1. Go to **Accounts receivable > Orders > All sales orders**.
+1. Go to **Sales and marketing > Sales orders > All sales orders**.
 1. Select **New** to open the **Create sales order** pane.
 1. In the **Create sales order** pane, make the following settings:
     - On the **Customer** FastTab, set **Customer account** to "US-001".
@@ -113,7 +113,7 @@ Create some picking work by doing the following:
 
 1. Go to **Warehouse management > Work > Work line details**.
 1. Find and select one of the work lines that you created for this demo. (Note that you can only cancel or change quantities for work lines with a **Work type** of "pick".)
-1. Select **Cancel work** on the Action Pane.
+1. Select **Cancel work line** on the Action Pane.
 1. The **Quantity to cancel** pane opens. Edit the **Quantity** field here to set the quantity to *subtract from* the currently quantity set for the line. By default, the **Quantity** field shows the full quantity.
     - If you cancel the full quantity, then the **Work status** will be changed to "Canceled", but the **Work quantity** will still show the original value.
     - If you cancel just part of the quantity, then **Work quantity** will update to show the new value, but the **Work status** won't change.
