@@ -28,7 +28,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Create a new theme
+# Theme module extensions
 
 [!include [banner](../includes/banner.md)]
 
