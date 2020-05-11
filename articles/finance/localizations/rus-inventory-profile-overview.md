@@ -119,7 +119,7 @@ Some inventory profile values might also indicate that they can't be used for au
 
 If a kind of activity is specified in the sales order, the sales order line can be split only by the inventory profile values that are related to that kind of activity.
 
-For more information, see [Create sales order lines](rus-use-inventory-profile-in-documents-and-queries.md#create-sales-order-lines).
+For more information, see [Create sales order lines](rus-use-inventory-profile-documents-queries.md#create-sales-order-lines).
 
 ## Split documents by inventory profile
 
@@ -129,7 +129,7 @@ The value of the kind of activity is stored in the invoices and invoice-factures
 
 Posted documents are divided based on the number of unique combinations of a kind of activity and a customer or vendor posting profile. Items that aren't accounted for in the context of inventory profiles are included in invoices, and the **Basic** kind of activity and the customer or vendor posting profile are specified in the order header. Splitting by kinds of activity and customer or vendor posting profiles is done regardless of the summary update settings.
 
-For more information, see [Set up a default inventory profile for purchase orders](rus-set-up-inventory-profile.md#set-up-a-default-inventory-profile-for-purchase-orders), [Set up a default inventory profile for sales orders](rus-set-up-inventory-profile.md#set-up-a-default-inventory-profile-for-sales-orders), [Purchase orders](rus-use-inventory-profile-in-documents-and-queries.md#purchase-orders), and [Sales orders](rus-use-inventory-profile-in-documents-and-queries.md#sales-orders).
+For more information, see [Set up a default inventory profile for purchase orders](rus-set-up-inventory-profile.md#set-up-a-default-inventory-profile-for-purchase-orders), [Set up a default inventory profile for sales orders](rus-set-up-inventory-profile.md#set-up-a-default-inventory-profile-for-sales-orders), [Purchase orders](rus-use-inventory-profile-documents-queries.md#purchase-orders), and [Sales orders](rus-use-inventory-profile-documents-queries.md#sales-orders).
 
 ## Inventory profile in BOMs
 
@@ -155,7 +155,7 @@ For more information, see the [Set up a default inventory profile for BOMs](rus-
 
 When you generate a cash flow forecast for purchase orders or sales orders, the inventory profiles that is specified on the order lines are considered when the posting accounts of inventory movements and customer and vendor transactions are determined. Ledger accounts for customer and vendor transactions are defined from the posting profiles that correspond to the inventory profiles that are specified on the order lines. For order lines where an inventory profile isn't specified, the **Basic** kind of activity and the posting profile that is specified in the order header are used.
 
-For more information, see the [Cash flow forecasts on purchase and sales orders](rus-use-inventory-profile-in-documents-and-queries.md#cash-flow-forecasts-on-purchase-and-sales-orders) section later in this topic.
+For more information, see the [Cash flow forecasts on purchase and sales orders](rus-use-inventory-profile-documents-queries.md#cash-flow-forecasts-on-purchase-and-sales-orders) section later in this topic.
 
 ## Cash flow forecasts based on planned purchases and sales
 
@@ -163,5 +163,5 @@ When you generate a cash flow forecast for planned sales and purchases, the inve
 
 Find more details in the following topics:
 
-- [Set up inventory profile](rus-set-up-inventory-profile.md)
-- [Use inventory profile in documents and queries](rus-use-inventory-profile-in-documents-and-queries.md)
+- [Set up an inventory profile](rus-set-up-inventory-profile.md)
+- [Use an inventory profile in documents and queries](rus-use-inventory-profile-documents-queries.md)
