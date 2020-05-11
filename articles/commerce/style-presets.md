@@ -1,3 +1,18 @@
+---
+# required metadata
+
+title: Style presets in site builder
+description: This topic describes how to work with site style presets in site builder.
+author: niholman
+manager: brendans
+ms.date: 5/11/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-365-commerce
+ms.technology: 
+
+---
+
 # Style presets
 
 ## Overview
