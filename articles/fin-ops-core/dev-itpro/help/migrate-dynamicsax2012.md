@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Convert Dynamics AX 2012 content for Dynamics 365
-description: This article describes how you can reuse content from Dynamics AX for your Dynamics 365 solution. 
+title: Convert Dynamics AX custom Help for use in Dynamics 365
+description: This topic describes how you can reuse content from Microsoft Dynamics AX for your Dynamics 365 solution. 
 author: edupont04
 manager: AnnBe
 ms.date: 03/18/2020
@@ -34,61 +34,58 @@ ms.dyn365.ops.version: Operations
 
 [!include [banner](../includes/banner.md)]
 
-If you have existing content from Dynamics AX 2012, you can reuse that for Dynamics 365 Finance, Supply Chain Management, and Commerce. However, you must transform the HTML files so that they can be used in the custom Help environment.  
+If you have existing content from Microsoft Dynamics AX 2012, you can reuse it for Dynamics 365 Finance, Dynamics 365 Supply Chain Management, and Dynamics 365 Commerce. However, you must first transform the HTML files so that they can be used in the custom Help environment.
 
-## Converting Dynamics AX 2012 content
+## Converting AX 2012 content
 
-Microsoft's [Custom Help Toolkit](custom-help-toolkit.md) includes a Windows PowerShell script, ```run_ax2012.ps1```, that can transform Dynamics AX 2012 HTML files so that they can be used in the custom Help environment. The script makes the following changes to the Dynamics AX 2012 HTML files:  
+The Microsoft [Custom Help Toolkit](custom-help-toolkit.md) includes a Windows PowerShell script, **run_ax2012.ps1**, that can transform AX 2012 HTML files so that they can be used in the custom Help environment. The script makes the following changes to the AX 2012 HTML files:
 
-- Replaces the **Microsoft.Help.F1** metadata name with **ms.search.form**  
-
-- Replaces the **Title** metadata name with **title**  
-
-- Changes the file name extension from **.htm** to **.html**  
-
-- Adds the following metadata:  
+- Replace the **Microsoft.Help.F1** metadata name with **ms.search.form**.
+- Replace the **Title** metadata name with **title**.
+- Change the file name extension from **.htm** to **.html**.
+- Add the following metadata.
 
     ```html
-    <meta name="ms.search.region" content="Global" />  
-    <meta name="ms.search.scope" content="Operations, Core" />  
-    <meta name="ms.dyn365.ops.version" content="AX 7.0.0" />  
-    <meta name="ms.search.validFrom" content="2016-05-31" />  
-    <meta name="ms.search.industry" content="cross" />  
+    <meta name="ms.search.region" content="Global" />
+    <meta name="ms.search.scope" content="Operations, Core" />
+    <meta name="ms.dyn365.ops.version" content="AX 7.0.0" />
+    <meta name="ms.search.validFrom" content="2016-05-31" />
+    <meta name="ms.search.industry" content="cross" />
     ```
 
 ### Running the script
 
-You can run the following command from a Command Prompt window, or you can run the script directly in Windows PowerShell.  
+You can run the following command from a Command Prompt window, or you can run the script directly in Windows PowerShell.
 
 ```powershell
-    PowerShell.exe -File run_ax2012.ps1 "Original file location" "New file location"  
+PowerShell.exe -File run_ax2012.ps1 "Original file location" "New file location"
 ```
 
-The following metadata is currently used or is reserved for use in indexing.  
+The following metadata is currently used, or it's reserved so that it can be used during indexing.
 
 ```html
-    <meta name="title" content="Title of file" />  
-    <meta name="ms.locale" content="locale" />  
-    <meta name="ms.search.form" content="FormAOTName" />  
-    <meta name="description" content="Description of file" />  
-    <meta name="ms.search.region" content="Global" />  
-    <meta name="ms.search.scope" content="Operations, Core" />  
-    <meta name="ms.dyn365.ops.version" content="AX 7.0.0" />  
-    <meta name="ms.search.validFrom" content="2016-05-31" />  
-    <meta name="ms.search.industry" content="cross" />  
+<meta name="title" content="Title of file" />
+<meta name="ms.locale" content="locale" />
+<meta name="ms.search.form" content="FormAOTName" />
+<meta name="description" content="Description of file" />
+<meta name="ms.search.region" content="Global" />
+<meta name="ms.search.scope" content="Operations, Core" />
+<meta name="ms.dyn365.ops.version" content="AX 7.0.0" />
+<meta name="ms.search.validFrom" content="2016-05-31" />
+<meta name="ms.search.industry" content="cross" />
 ```
 
-For a description of the required metadata, see [Metadata requirements for custom help articles](preparing-content.md#metadata).
+For a description of the required metadata, see [Metadata requirements for custom Help topics](preparing-content.md#metadata).
 
-##  <a name="moving-to-markdown"></a>Moving to MarkDown
+## <a name="moving-to-markdown"></a>Moving to Markdown
 
-Converting your existing content to MarkDown can be done using third-party tools, including but not limited to [PanDoc](https://pandoc.org) or the [Writage](https://writage.com) plugin for Word.  
+To convert your existing content to Markdown, you can use various third-party tools, such as [PanDoc](https://pandoc.org) and the [Writage](http://www.writage.com) plug-in for Word.
 
-When you have converted your content to MarkDown, you can use open source tools such as [DocFx](https://dotnet.github.io/docfx/) to generate content for your website. In general, working in MarkDown means that you have access to a world of open-source tools. For more information, see [Extend, Customize, and Collaborate on the Help](contributor-guide.md).  
+After you've converted your content to Markdown, you can use open-source tools such as [DocFx](https://dotnet.github.io/docfx/) to generate content for your website. In general, by working in Markdown, you gain access to a wide range of open-source tools. For more information, see [Extend, customize, and collaborate on the Help](contributor-guide.md).
 
 ## See also
 
-[Deploying custom help sites](custom-help-overview.md)  
-[Custom Help Overview](custom-help-overview.md)  
+[Deploying custom Help sites](custom-help-overview.md)  
+[Custom Help overview](custom-help-overview.md)  
 [Custom Help Toolkit](custom-help-toolkit.md)  
-[Extend, Customize, and Collaborate on the Help](contributor-guide.md)  
+[Extend, customize, and collaborate on the Help](contributor-guide.md)
