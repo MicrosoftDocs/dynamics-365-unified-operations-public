@@ -5,7 +5,7 @@ title: Custom Help overview
 description: This topic explains how you can extend the Microsoft Help system so that it reflects your solution and then connect your content to the Help pane. 
 author: edupont04
 manager: AnnBe
-ms.date: 03/17/2020
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -82,7 +82,7 @@ The following table outlines the main objectives that admins typically have for 
 | I want to reuse my existing Dynamics AX content. | See [Convert Dynamics AX custom Help for use in Dynamics 365](migrate-dynamicsax2012.md). |
 | I want to set up a website for my Help content. | See the [Custom Help websites](#custom-help-sites) section of this topic. |
 | I want to add my content to the **Help** pane. | See [Connect a custom Help website to the Help pane](connect-help-pane.md). |
-| Our technical writers want guidance that will help them convert our earlier content into Markdown for a better Help customization story going forward. | See [Moving to Markdown](migrate-dynamicsax2012.md#moving-to-markdown). |
+| Our technical writers want guidance that will help them convert our earlier content into Markdown so that it becomes easier for them to customize the Microsoft content. | See [Moving to Markdown](migrate-dynamicsax2012.md#moving-to-markdown). |
 
 ## <a name="custom-help-sites"></a>Custom Help websites
 
