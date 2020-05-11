@@ -1714,6 +1714,8 @@
         href: ../fin-ops-core/dev-itpro/office-integration/customize-open-office-menu.md?toc=/dynamics365/commerce/toc.json
       - name: Configure and send email
         href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json
+      - name: Create email templates for transactional events
+        href: email-templates-transactions.md
       - name: Develop email experiences
         href: ../fin-ops-core/dev-itpro/dev-tools/sysmailer-develop.md?toc=/dynamics365/commerce/toc.json
       - name: Troubleshoot the Office integration
