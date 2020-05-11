@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Custom Help Toolkit
-description: This article describes the components in the custom help toolkit for Finance and Operations apps. 
+title: Custom Help Toolkit - The ConvertHtmlToJson tool
+description: This topic describes the ConvertHtmlToJson tool that is included in the Custom Help Toolkit for Finance and Operations apps. 
 author: edupont04
 manager: AnnBe
 ms.date: 03/18/2020
@@ -32,31 +32,31 @@ ms.dyn365.ops.version: Operations
 
 [!include [banner](../includes/banner.md)]
 
-The [Custom Help Toolkit](custom-help-toolkit.md) includes the **ConvertHtmlToJson** tool that converts HTML files to JSON files. The JSON files are used by the search service so that the content can be indexed.  
+The [Custom Help Toolkit](custom-help-toolkit.md) includes the **ConvertHtmlToJson** tool, which converts HTML files to JavaScript Object Notation (JSON) files. The search service uses the JSON files to index Help content.
 
 ## <a name="json"></a>Use the ConvertHtmlToJson tool to generate JSON files
 
-The ConvertHtmlToJson tool transforms HTML files into JSON files. You can then add the JSON files to the Azure Search service that will generate context-sensitive links to your Help content.  
+The **ConvertHtmlToJson** tool transforms HTML files into JSON files. You can then add the JSON files to the Microsoft Azure Search service, which will generate context-sensitive links to your Help content.
 
-The JSON files include metadata that is used by the indexer to identify the form and language that the target Help page is intended for.  
+The JSON files include metadata that the indexer uses to identify the form and language that the target Help page is intended for.
 
-Here is the syntax for ConvertHtmlToJson.exe:  
+Here is the syntax for running ConvertHtmlToJson.exe.
 
 ```
 ConvertHtmlToJson.exe --h <path> -j <path> --v <true|false>
 ```
 
-Here is an explanation of the parameters:
+Here is an explanation of the parameters.
 
-|Parameter   |Description  |
-|------------|-------------|
-|h|Specifies the path to the HTML files that you want to process. |
-|j|Specifies the folder that the JSON files will be saved to. The folder must already exist.|
-|v|True to enable verbose logging; otherwise false.|
+| Parameter | Description |
+|-----------|-------------|
+| h | Specify the path of the HTML files to process. |
+| j | Specify the folder to save the JSON files to. The specified folder must already exist. |
+| v | Set this parameter to **true** to turn on verbose logging. Otherwise, set it to **false**. |
 
-## Examples
+## Example
 
-The following example generates JSON files without verbose logging:
+The following example generates JSON files without verbose logging.
 
 ```
 ConvertHtmlToJson.exe --h D:\D365-Operations\d365F-O\supply-chain\de -j D:\D365-Operations\json\supply-chain\de
@@ -64,7 +64,7 @@ ConvertHtmlToJson.exe --h D:\D365-Operations\d365F-O\supply-chain\de -j D:\D365-
 
 ## See also
 
-[Custom Help Overview](custom-help-overview.md)  
-[Deploying custom help to Azure](walkthrough-help-azure.md)  
-[Language and locale descriptors in across product and Help](language-locale.md)  
-[Convert Dynamics AX custom Help for use in Dynamics 365](migrate-dynamicsax2012.md)  
+[Custom Help overview](custom-help-overview.md)  
+[Deploy custom Help to Azure](walkthrough-help-azure.md)  
+[Language and locale descriptors in the product and in Help](language-locale.md)  
+[Convert Dynamics AX custom Help for use in Dynamics 365](migrate-dynamicsax2012.md)
