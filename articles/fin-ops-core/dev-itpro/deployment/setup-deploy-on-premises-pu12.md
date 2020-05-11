@@ -5,7 +5,7 @@ title: Set up and deploy on-premises environments (Platform update 12 and later)
 description: This topic provides information about how to plan, set up, and deploy Dynamics 365 Finance + Operations (on-premises) with Platform update 12 and later.
 author: PeterRFriis
 manager: AnnBe
-ms.date: 05/07/2020
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -35,9 +35,6 @@ ms.dyn365.ops.version: Platform update 12
 [!include [banner](../includes/banner.md)]
 
 This topic provides information about how to plan, set up, and deploy Dynamics 365 Finance + Operations (on-premises) with Platform update 12 and later.
-
-> [!IMPORTANT]
-> This topic applies only to deploying on-premises environments on Platform update 12 and later. For information about deploying to Platform update 8 or Platform update 11 installations, see [Set up and deploy on-premises environments (Platform updates 8 and 11)](setup-deploy-on-premises-pu8-pu11.md). 
 
 The [Local Business Data Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13595809&view=all) is available. You can post questions or feedback you may have about the on-premises deployment there.
 
