@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Set up inventory profile 
+title: Set up an inventory profile 
 description: This topic provides information about setting up inventory profile.
 author: v-nadyuz
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# Set up inventory profile 
+# Set up an inventory profile 
 [!include [banner](../includes/banner.md)]
 
 ## Create an inventory profile
