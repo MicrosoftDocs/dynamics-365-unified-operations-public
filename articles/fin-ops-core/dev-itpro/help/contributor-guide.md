@@ -20,7 +20,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.date: 03/17/2020
+ms.date: 05/11/2020
 ms.author: edupont
 ---
 
@@ -78,7 +78,7 @@ You can convert content from Microsoft Word to Markdown by using open-source too
 
 ### Get updates from Microsoft
 
-Microsoft makes frequent changes to the content, and those changes show up in the public GitHub repos. The base repo, MicrosoftDocs/Dynamics-365-Unified-Operations-public, is updated weekly. However, you can choose to get updates monthly, twice a year, or once a year, for example. (Translations are updated monthly.)
+Microsoft makes frequent changes to the content, and those changes show up in the public GitHub repos. The base repo, MicrosoftDocs/Dynamics-365-Unified-Operations-public, is updated weekly. However, you can choose to get updates monthly, twice a year, or once a year, for example. The translation repos are updated less frequently, so you might want a monthly schedule or less frequent updates, as appropriate.  
 
 When you decide that it's time to get the latest version of the content from Microsoft, you can use the Git command line or GitHub Desktop. The Help for GitHub provides [an example that shows how this process works in GitBash](https://help.github.com/en/articles/merging-an-upstream-repository-into-your-fork). In GitHub Desktop, you use the **Merge into current branch** command to pull changes from the origin into your fork.
 
