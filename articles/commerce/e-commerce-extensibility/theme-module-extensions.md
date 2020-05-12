@@ -2,7 +2,7 @@
 # required metadata
 
 title: Theme module extensions
-description: This topic describes how to extend a theme to add module extensions. 
+description: This topic describes how to extend a theme to add module extensions in Dynamics 365 Commerce. 
 author: samjarawan
 manager: annbe
 ms.date: 05/11/2020
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to extend a theme to add module extensions.
+This topic describes how to extend a theme to add module extensions in Dynamics 365 Commerce.
 
 ## Overview
 
