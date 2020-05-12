@@ -5,7 +5,7 @@ title: Shipment consolidation policies
 description: This topic provides an overview of the functionality that provides flexible configuration of shipment consolidation policies.
 author: GarmMSFT
 manager: tfehr
-ms.date: 05/01/2020
+ms.date: 05/12/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -141,4 +141,3 @@ The following table summarizes how shipment consolidation works when you don't u
 ## Additional resources
 
 - [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md)
-- [Consolidate shipments by using shipment consolidation policies](consolidate-shipments.md)

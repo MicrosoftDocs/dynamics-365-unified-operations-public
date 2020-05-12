@@ -5,7 +5,7 @@ title: Configure shipment consolidation policies
 description: This topic explains how to set up default and custom shipment consolidation policies.
 author: GarmMSFT
 manager: tfehr
-ms.date: 05/01/2020
+ms.date: 05/12/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -105,7 +105,7 @@ This scenario shows how to set up custom shipment consolidation policies. Custom
 
 ### Turn on the feature and prepare master data for this scenario
 
-Before you can go through the exercises in this scenario, you must turn on the feature and prepare the master data that is required to do the filtering, as described in the following subsections. (These prerequisites also apply to the scenarios in [Consolidate shipments by using shipment consolidation policies](consolidate-shipments.md).)
+Before you can go through the exercises in this scenario, you must turn on the feature and prepare the master data that is required to do the filtering, as described in the following subsections. (These prerequisites also apply to the scenarios listed in [Example scenarios of how to use shipment consolidation policies](#example-scenarios).)
 
 #### Turn on the feature and create the default policies
 
@@ -344,7 +344,7 @@ Now that you've created all your policies, you must establish the order that the
     1. Cross-order
     1. Default
 
-## Example scenarios of how to use shipment consolidation policies
+## <a name="example-scenarios"></a> Example scenarios of how to use shipment consolidation policies
 
 The following scenarios illustrate how you could use the shipment consolidation policies that you created for this topic. Each will walk you through the shipment consolidation process that uses shipment consolidation policies during automated and manual release to the warehouse:
 
@@ -358,4 +358,3 @@ The following scenarios illustrate how you could use the shipment consolidation 
 ## Additional resources
 
 - [Shipment consolidation policies](about-shipment-consolidation-policies.md)
-- [Consolidate shipments by using shipment consolidation policies](consolidate-shipments.md)

@@ -5,7 +5,7 @@ title: Consolidate shipments when they are released to the warehouse by using Au
 description: This topic presents a scenario where multiple orders are released to the warehouse in the same automated release-to-warehouse periodic procedure.
 author: GarmMSFT
 manager: tfehr
-ms.date: 05/01/2020
+ms.date: 05/12/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -324,4 +324,3 @@ When you've finished, you should see that four shipments were created:
 
 - [Shipment consolidation policies](about-shipment-consolidation-policies.md)
 - [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md)
-- [Consolidate shipments by using shipment consolidation policies](consolidate-shipments.md)
