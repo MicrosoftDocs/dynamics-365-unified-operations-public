@@ -3362,6 +3362,10 @@
             href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
           - name: Import configurations from RCS
             href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
+        - name: Create ER configurations in RCS and upload them to the Global repository
+          href: localizations/rcs-global-repo-upload.md
+        - name: Share ER configurations in RCS with external organizations  
+          href: localizations/rcs-global-repo-share-configuration.md
       - name: Tutorials
         items: 
         - name: Use JOIN data sources to get data from multiple application tables
