@@ -82,7 +82,7 @@ The following image shows an example of gift card, loyalty, payment, and billing
 
 Most of the checkout information, such as the shipping address and shipping method, is stored in the cart and processed as part of the order. The only exception is the credit card information. This information is processed directly by using the Adyen payment connector. The payment is authorized but isn't charged.
 
-## Add a checkout module to a new page and set the required properties
+## Add a checkout module to a page and set the required properties
 
 To add a checkout module to a new page and set the required properties, follow these steps.
 
