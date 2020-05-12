@@ -60,11 +60,11 @@ You may need to regenerate your wave process methods to make the load building m
 To take advantage of advanced wave load building, you must include the `buildLoads` method in each of your relevant [wave templates](tasks/configure-wave-processing.md) as follows:
 
 1. Go to **Warehouse management** > **Setup** >  **Waves** > **Wave templates**.
-1. Select a relevant wave template.<BR>(If you're working with the **USMF** legal-entity demo data, select the **62 Shipping Default** template.)
+1. Select a relevant wave template. (If you're working with the **USMF** legal-entity demo data, select the **62 Shipping Default** template.)
 1. Select **Edit** on the action pane to put the page into edit mode.
 1. In the **Methods** FastTab, select the **buildLoads** method from the **Remaining methods** table.
 1. Select the right-pointing arrow button between the tables to move the **buildLoads** method to the **Selected Methods** table.
-1. Assign a value in the **Wave step code** column for the **LoadBuild** method you just added to the **Selected Methods** table. You can choose any value you want, but take note of it because you'll need it later. More information: [Wave step codes](wave-step-codes.md)<BR>(If you're working with the **USMF** legal-entity demo data, you could enter "WSC2112", which is the value we'll show later in this topic.)
+1. Assign a value in the **Wave step code** column for the **LoadBuild** method you just added to the **Selected Methods** table. You can choose any value you want, but take note of it because you'll need it later. More information: [Wave step codes](wave-step-codes.md) (If you're working with the **USMF** legal-entity demo data, you could enter "WSC2112", which is the value we'll show later in this topic.)
 
 <!-- KFM: Anything more to say about how to pick a wave step code? -->
 
@@ -75,10 +75,10 @@ Load mix groups establish rules for which types of items can be combined into a 
 
 1. Go to **Warehouse management** > **Setup** >  **Load** > **Load mix groups**.
 1. Select **New** on the action pane to create a new load group.
-1. Enter a relevant name for your new group in the **Load mix group ID** field.<BR>(If you're working with the **USMF** legal-entity demo data, enter "TV".)
-1. In the **Load mix group criteria** FastTab, select the **New** button to add a row here and then make settings in each column as needed for the new row.<BR>(If you're working with the **USMF** legal-entity demo data, select **TV&Video** in the **Item group** column.) <!-- KFM: We should add a sentence to explain what this will do, as we do later in this procedure. What are all these "code" columns for? -->
+1. Enter a relevant name for your new group in the **Load mix group ID** field. (If you're working with the **USMF** legal-entity demo data, enter "TV".)
+1. In the **Load mix group criteria** FastTab, select the **New** button to add a row here and then make settings in each column as needed for the new row. (If you're working with the **USMF** legal-entity demo data, select **TV&Video** in the **Item group** column.) <!-- KFM: We should add a sentence to explain what this will do, as we do later in this procedure. What are all these "code" columns for? -->
 1. Select **Save** on the action pane to save your work.
-1. In the **Load mix group constraints** FastTab, select **New** to create a new row here and then make settings in each column as needed. <BR>(If you're working with the **USMF** legal-entity demo data, select **CarAudio** in the **Item group** column and **Restrict** in the **Load build action** column. This will prevent items with an item group of **CarAudio** from being on the same load as items with an item group of **TV&Video**.) <!-- KFM: What are all these "code" columns for? -->
+1. In the **Load mix group constraints** FastTab, select **New** to create a new row here and then make settings in each column as needed. (If you're working with the **USMF** legal-entity demo data, select **CarAudio** in the **Item group** column and **Restrict** in the **Load build action** column. This will prevent items with an item group of **CarAudio** from being on the same load as items with an item group of **TV&Video**.) <!-- KFM: What are all these "code" columns for? -->
 1. Continue working with these rules until you have added all the criteria and constraints you need for this load mix group.
 
 ### Set up your load build templates
@@ -95,13 +95,13 @@ You can set up as many load build templates as you need, but to use this feature
     | **Sequence** | <!-- KFM: What is this? --> | 1 |
     | **Load build template name** | Enter the name of the template you created or updated previously during this setup. <!-- KFM: Exact? Seems like I get no help --> | 62 Shipping Default <!-- KFM: Or just "62" --> |
     | **Wave step code** | Enter the code you chose for the LoadBuild method when you set up the wave template previously during this setup <!-- KFM: Exact? Looks like a drop-down but offers no values --> | WSC2112 |
-    | **Load template ID** | The load template defines maximum weight and volume permitted for the entire load. Select the load template to use for any loads that are created.   <!-- Seems like we have no documentation about load templates. --> | Stnd Load Template |
+    | **Load template ID** | The load template defines maximum weight and volume permitted for the entire load. Select the load template to use for any loads that are created.   <!-- Seems like we have no documentation about load templates. --> | Standard Load Template |
     | **Equipment** | <!-- KFM: This setting is offered, but you didn't mention it. Should we? --> |  |
     | **Load mix group ID** | The mix group establishes rules for which types of items can can't be combined in a single load. Select one of the mix groups that you created previously during this setup. | TV |
     | **Use open loads** | Choose whether to allow existing loads to be used (any or none) | Any |
     | **Create loads** | Choose whether to create a new load if no existing loads match the criteria. <!-- KFM: Which criteria? What happens if this is "no" and we don't have a match? --> | Yes (selected) |
     | **Allow shipment line split** | Choose whether to allow a single line to be split across multiple loads if the full line exceeds the load capacity. <!-- KFM: What happens if this is "no" and we are over capacity? --> | No (unselected) |
-    | **Validate volumetrics** | Choose whether to evaluate the volumetric limits of the specified load template. <!-- KFM: Does the load template do anythign if this is set to "no"? What happens if this is "yes" and the check fails? --> | No (unselected) |
+    | **Validate volumetrics** | Choose whether to evaluate the volumetric limits of the specified load template. <!-- KFM: Does the load template do anything if this is set to "no"? What happens if this is "yes" and the check fails? --> | No (unselected) |
 
 1. Select **Edit query** on the action pane to open a flyout for editing the query.
 
@@ -133,6 +133,6 @@ This scenario shows how the settings previously described in this topic will aff
 1. Open the **Inventory** drop-down list at the top of the **Sales order lines** table and select **Reservation**. <!-- KFM: How do I "reserve inventory to the line" here, just edit the **Reservation** column? -->
 1. Select the close (X) button in the upper-right corner to return to your sales order.
 1. Open the **Warehouse** tab on the action pane and then select **Actions** > **Release to warehouse** here. The system creates a shipment and adds it to a new load because there is no existing load that contains load lines with this order number. <!-- KFM: Where is a good place to go to confirm this? -->
-1. Return to the sales order you just set up. In the **Sales order lines** FastTab, select **Add line** to add another line to your sales order. This time add **Item number** "A0002" with a **Quantity** of "1". 
+1. Return to the sales order you just set up. In the **Sales order lines** FastTab, select **Add line** to add another line to your sales order. This time add **Item number** "A0002" with a **Quantity** of "1".
 1. Reserve the line and release the order to the warehouse, as you did previously.  The system now creates a new shipment for the new line, but because you are using advanced wave load building, it adds that shipment and load line to the existing wave. Without this feature, a new load would have been created for the shipment.
 1. Create a third line for the same sales order, this time for **Item number** "M9200" with a **Quantity** of "1". Reserve the line and release the order to the warehouse. As before, a new shipment is created, but because this item is from the **CarAudio** item group, it fails to pass the load mix group constraints we set up earlier and is therefore added to a new load. If a load mix group hadn't been specified on the load build template, then this shipment would have been added to the first load as well. <!-- KFM: It seems like I can't reserve this item (none in warehouse?). Does the demo data really support this example? -->
