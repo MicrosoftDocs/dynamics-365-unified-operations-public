@@ -68,7 +68,7 @@ By completing this configuration step, you enable to contact the PowerBI.com ser
 - **Sign-on URL** - The base URL of your client. For example, `https://contosoax7.cloud.dynamics.com`.
 
 > [!NOTE]
-> Depending on your version, you may need to add /oauth as a suffix to the URL, or use http instead of https as the protocol, such as: `https://contosoax7.cloud.dynamics.com/oauth/` or `http://contosoax7.cloud.dynamics.com/oauth/`.
+> Depending on your version, you may need to add /oauth as a suffix to the URL, or use http instead of https as the protocol, such as: `https://contosoax7.cloud.dynamics.com/oauth` or `http://contosoax7.cloud.dynamics.com/oauth`.
 			 
 4. Click **Create**.
 5. Copy the **Application ID**. This will be used to connect to the PowerBI.com service.
