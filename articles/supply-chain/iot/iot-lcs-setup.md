@@ -2,7 +2,7 @@
 # required metadata
 
 title: Install the IoT Intelligence add-in in LCS
-description: This topic describes how to install the IoT Intelligence add-in in LCS.
+description: This topic explains how to install the IoT Intelligence add-in in Microsoft Dynamics Lifecycle Services (LCS).
 author: robinarh
 manager: AnnBe
 ms.date: 08/16/2019
@@ -33,29 +33,31 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how to install the IoT Intelligence add-in in Lifecycle Services (LCS). Before you can install the add-in, you must [create the Azure resources](iot-azure-setup.md).
+This topic explains how to install the IoT Intelligence add-in in Microsoft Dynamics Lifecycle Services (LCS). Before you can install the add-in, you must [create the Azure resources](iot-azure-setup.md).
 
-## LCS Environment setup
+## Set up the LCS environment
 
-1. Open Lifecycle Services (LCS) and navigate to your Supply Chain Management environment.
+1. Open LCS, and go to your Microsoft Dynamics 365 Supply Chain Management environment.
 2. Scroll to the **Environment add-ins** section.
-3. Click **Install a new add-in** to populate the list of add-ins that have been enabled for the environment.
-4. In the **Select an add-in to install** dialog, click **IoT Intelligence**.
-5. In the **Setup add-in** dialog, provide the details of your IoT hub and Redis cache. You can find the values that you need in the key vault you created in the [create the Azure resources](iot-azure-setup.md).
-    + **Tenant ID**: In the Azure key vault, in the left navigation, click **Overview**. Copy the **Directory ID**. In the **Setup add-in** dialog, paste in the value.
-    + **IoT Event Hub-compatible endpoint Key Vault URI**: In the Azure key vault, in the left navigation, click **Overview**. Copy the **DNS name**. In the **Setup add-in** dialog, paste in the value.
-    + **IoT Event Hub-compatible endpoint secret name**: In the Azure key vault, in the left navigation, click **Secrets**. Copy the secret name where the IoT hub connection string is stored. In the **Setup add-in** dialog, paste in the value.
-    + **Redis cache key vault URI**: In the Azure key vault, in the left navigation, click **Overview**. Copy the **DNS name**. In the **Setup add-in** dialog, paste in the value.
-    + **Redis cache endpoint secret name**: In the Azure key vault, in the left navigation, click **Secrets**. Copy the secret name where the Redis cache connection string is stored. In the **Setup add-in** dialog, paste in the value.
-6. Select the checkbox to accept the terms and conditions.
-7. Click **Install**.
-8. A dialog appears that says **Add-in has been successfully triggered for installation**. Click **OK**.
+3. Select **Install a new add-in** to show the list of add-ins that have been enabled for the environment.
+4. In the **Select an add-in to install** dialog box, select **IoT Intelligence**.
+5. In the **Setup add-in** dialog box, provide the details of your IoT hub and Redis cache. You can find the required values in the key vault that you created in [Create Azure resources](iot-azure-setup.md).
 
-LCS setup is complete. The next step is to [setup the scenarios](iot-scenario-setup.md).
+    + **Tenant ID** – In the Azure portal, go to the key vault, and then, in the left navigation pane, select **Overview**, and copy the **Directory ID** value. Paste that value in the **Setup add-in** dialog box.
+    + **IoT Event Hub-compatible endpoint Key Vault URI** – Go to the key vault, and then, in the left navigation pane, select **Overview**, and copy the **DNS name** value. Paste that value in the **Setup add-in** dialog box.
+    + **IoT Event Hub-compatible endpoint secret name** – Go to the key vault, and then, in the left navigation pane, select **Secrets**, and copy the name of the secret where the connection string for the IoT hub is stored. Paste that value in the **Setup add-in** dialog box.
+    + **Redis cache key vault URI** – Go to the key vault, and then, in the left navigation pane, select **Overview**, and copy the **DNS name** value. Paste that value in the **Setup add-in** dialog box.
+    + **Redis cache endpoint secret name** – Go to the key vault, and then, in the left navigation pane, select **Secrets**, and copy the name of the secret where the connection string for the Redis cache is stored. Paste that value in the **Setup add-in** dialog box.
 
-## <a id="uninstall-addin"/>How to uninstall the add-in
+6. Select the check box to accept the terms and conditions.
+7. Select **Install**.
+8. A message box appears that states, "Add-in has been successfully triggered for installation." Select **OK**.
+
+LCS setup is now completed. The next step is to [set up the scenarios](iot-scenario-setup.md).
+
+## <a id="uninstall-addin"></a>Uninstall the add-in
 
 1. In Supply Chain Management, [disable the scenarios](iot-scenario-setup.md#how-to-disable-a-scenario).
-2. In Lifecycle Services (LCS), navigate to your Supply Chain Management environment.
-3. Scroll to the Environment add-ins section.
-4. Click **Uninstall** for the IoT Intelligence add-in.
+2. In LCS, go to your Supply Chain Management environment.
+3. Scroll to the **Environment add-ins** section.
+4. Select **Uninstall** for the IoT Intelligence add-in.
