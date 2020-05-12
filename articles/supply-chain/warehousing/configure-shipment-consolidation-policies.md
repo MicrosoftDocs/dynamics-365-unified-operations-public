@@ -79,10 +79,10 @@ Follow these steps to set up default shipment consolidation policies in an envir
     - A **CrossOrder** policy for the *Transfer issue* policy type (provided you have at least one warehouse that is set up to use the earlier consolidation feature)
 
     > [!NOTE]
-    > - The **CrossOrder** policy considers the same set of fields as the earlier logic, except the field for the order number. (That field is used to consolidate lines into shipments, based on factors such as the warehouse, transportation mode of delivery, and address.)
+    > - Both **CrossOrder** policies consider the same set of fields as the earlier logic, except for the field for the order number. (That field is used to consolidate lines into shipments, based on factors such as the warehouse, transportation mode of delivery, and address.)
     > - Both **Default** policies consider the same set of fields as the earlier logic, including the field for the order number. (That field is used to consolidate lines into shipments, based on factors such as the order number, warehouse, transportation mode of delivery, and address.)
 
-1. Select the **CrossOrder** policy, and then, on the Action Pane, select **Edit query**.
+1. Select the **CrossOrder** policy for the *Sales orders* policy type, and then, on the Action Pane, select **Edit query**.
 1. In the query editor dialog box, notice that warehouses where the **Consolidate shipment at release to warehouse** option is set to *Yes* are listed. Therefore, they are included in the query.
 
 ### Create default policies for a new environment
@@ -179,7 +179,7 @@ Follow these steps to create the shipment consolidation policy for this business
 
 1. Go to **Warehouse management \> Setup \> Release to warehouse \> Shipment consolidation policies**.
 1. Set the **Policy type** field to *Sales orders*.
-1. On the action pane, select **New** to create a policy that has the following settings:
+1. On the Action Pane, select **New** to create a policy that has the following settings:
 
     - **Policy name:** *CustomerMode*
     - **Policy description:** *Customer account and mode of delivery*
@@ -214,7 +214,7 @@ Follow these steps to create the shipment consolidation policy for this business
 
 1. Go to **Warehouse management \> Setup \> Release to warehouse \> Shipment consolidation policies**.
 1. Set the **Policy type** field to *Sales orders*.
-1. On the action pane, select **New** to create a policy that has the following settings:
+1. On the Action Pane, select **New** to create a policy that has the following settings:
 
     - **Policy name:** *Item type*
     - **Policy description:** *Consolidate the same type of item across orders*
@@ -251,7 +251,7 @@ Follow these steps to create the shipment consolidation policy for this business
 
 1. Go to **Warehouse management \> Setup \> Release to warehouse \> Shipment consolidation policies**.
 1. Set the **Policy type** field to *Sales orders*.
-1. On the action pane, select **New** to create a policy that has the following settings:
+1. On the Action Pane, select **New** to create a policy that has the following settings:
 
     - **Policy name:** *CustomerOrderNo*
     - **Policy description:** *Consolidate lines based on customer PO*
@@ -282,7 +282,7 @@ Follow these steps to create the shipment consolidation policy for this business
 
 1. Go to **Warehouse management \> Setup \> Release to warehouse \> Shipment consolidation policies**.
 1. Set the **Policy type** field to *Sales orders*.
-1. On the action pane, select **New** to create a policy that has the following settings:
+1. On the Action Pane, select **New** to create a policy that has the following settings:
 
     - **Policy name:** *Order pool*
     - **Policy description:** *Consolidate across orders based on order pool*
@@ -316,7 +316,7 @@ Typically, this business case can be addressed by using the default policies tha
 
 1. Go to **Warehouse management \> Setup \> Release to warehouse \> Shipment consolidation policies**.
 1. Set the **Policy type** field to *Sales orders*.
-1. On the action pane, select **New** to create a policy that has the following settings:
+1. On the Action Pane, select **New** to create a policy that has the following settings:
 
     - **Policy name:** *Cross-order*
     - **Policy description:** *Cross-order consolidation for specific warehouses*
@@ -335,7 +335,7 @@ Now that you've created all your policies, you must establish the order that the
 
 1. Go to **Warehouse management \> Setup \> Release to warehouse \> Shipment consolidation policies**.
 1. Set the **Policy type** field to *Sales orders*.
-1. Select each policy that is listed in the left column, and then use the **Move up** and **Move down** buttons on the action pane to arrange the policies in the following order:
+1. Select each policy that is listed in the left column, and then use the **Move up** and **Move down** buttons on the Action Pane to arrange the policies in the following order:
 
     1. CustomerMode
     1. Item type
