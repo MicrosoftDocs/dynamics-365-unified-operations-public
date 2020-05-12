@@ -5,7 +5,7 @@ title: Platform updates for version 10.0.12 of Finance and Operations apps (Augu
 description: This topic lists the features are included in the platform updates for version 10.0.12 of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 05/05/2020
+ms.date: 05/12/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -42,11 +42,11 @@ This topic lists the features that are included in the platform updates for vers
 
 ## Features included in this release
 
-- [Feaure name](URL to feature in the Release Plans) – For more information, see [Topic name](URL of topic that has detailed info).
-- [Feaure name](URL to feature in the Release Plans) – For more information, see [Topic name](URL of topic that has detailed info).
-- [Feaure name](URL to feature in the Release Plans) – For more information, see [Topic name](URL of topic that has detailed info).
-- [Feaure name](URL to feature in the Release Plans) – For more information, see [Topic name](URL of topic that has detailed info).
-- [Feaure name](URL to feature in the Release Plans) – For more information, see [Topic name](URL of topic that has detailed info).
+- [Feature name](URL to feature in the Release Plans) – For more information, see [Topic name](URL of topic that has detailed info).
+- [Feature name](URL to feature in the Release Plans) – For more information, see [Topic name](URL of topic that has detailed info).
+- [Feature name](URL to feature in the Release Plans) – For more information, see [Topic name](URL of topic that has detailed info).
+- [Feature name](URL to feature in the Release Plans) – For more information, see [Topic name](URL of topic that has detailed info).
+- [Feature name](URL to feature in the Release Plans) – For more information, see [Topic name](URL of topic that has detailed info).
 
 ## Additional resources
 
