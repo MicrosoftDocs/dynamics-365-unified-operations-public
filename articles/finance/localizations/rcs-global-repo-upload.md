@@ -30,13 +30,15 @@ ms.dyn365.ops.version: AX 10.0.9
 
 ---
 
-# Create ER configurations in RCS and upload them to the Global repository
+# Create ER configurations in Regulatory Configuration Services (RCS) and upload them to the Global repository
 
 [!include [banner](../includes/banner.md)]
 
 You can use Microsoft Regulatory Configuration Services (RCS) to design Electronic reporting (ER) configurations and publish them so that they can be used in your organization.
 
-The following procedures explain how a user in the System Administrator or Electronic Reporting Developer role can create a derived version of an ER configuration that has been configured in an RCS instance, and then upload the derived configuration to the Global repository. Before you can complete those procedures, you must complete the following prerequisites:
+The following procedures explain how a user in the System Administrator or Electronic Reporting Developer role can create a derived version of an ER configuration that has been configured in an RCS instance, and then upload the derived configuration to the Global repository. 
+
+Before you can complete those procedures, you must complete the following prerequisites:
 
 - Access an RCS instance.
 - Create an active configuration provider. For more information, see [Create configuration providers and mark them as active](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
@@ -60,7 +62,7 @@ If an RCS environment has been already provisioned for your company, use the pag
 ![New configuration version in RCS](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/RCS_CompleteConfig.JPG)
 
 > [!NOTE]
-> When the configuration status is changed, you might receive a validation error message that is related to the connected applications. You can turn off the validation by setting the **Skip validation at configuration's status change and rebase** option to **Yes** in **Configuration/User parameters**.
+> When the configuration status is changed, you might receive a validation error message that is related to the connected applications. To turn off the validation, on the Action Pane on the **Configurations** tab, select **User parameters**, and then set the **Skip validation at configuration's status change and rebase** option to **Yes** 
 
 ## Upload a configuration to the Global repository
 
@@ -74,9 +76,9 @@ To share a new or derived configuration with your organization, you can upload i
 3. In the confirmation message box, select **Yes**. 
 4. Update the description of the version as required, and then select **OK**. 
 
-The configuration is updated to **Share**, and the configuration is uploaded to the Global repository. From there, you can work with it in the following ways:
+The status of the configuration is updated to **Share**, and the configuration is uploaded to the Global repository. From there, you can work with it in the following ways:
 
 - Import it into your Dynamics 365 instance. For more information, see [(ER) Import configurations from RCS](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md).
-- Share it with a third party or an external organization.
+- Share it with a third party or an external organization, see [rcs-global-share-configuration.md].(https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/rcs-global-share-configuration.md)
 
 ![Derived Intrastat Contoso configuration version in the Global repository](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/RCS_Config_upload_GlobalRepo.JPG)
