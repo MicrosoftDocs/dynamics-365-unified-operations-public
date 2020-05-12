@@ -64,7 +64,13 @@ To take advantage of advanced wave load building, you must include the `buildLoa
 1. Select **Edit** on the action pane to put the page into edit mode.
 1. In the **Methods** FastTab, select the **buildLoads** method from the **Remaining methods** table.
 1. Select the right-pointing arrow button between the tables to move the **buildLoads** method to the **Selected Methods** table.
-1. Assign a value in the **Wave step code** column for the **LoadBuild** method you just added to the **Selected Methods** table. You can choose any value you want, but take note of it because you'll need it later. More information: [Wave step codes](wave-step-codes.md) (If you're working with the **USMF** legal-entity demo data, you could enter "WSC2112", which is the value we'll show later in this topic.)
+1. Assign a value in the **Wave step code** column for the **buildLoads** method you just added to the **Selected Methods** table. You can choose any value you want, but take note of it because you'll need it later. More information: [Wave step codes](wave-step-codes.md) (If you're working with the **USMF** legal-entity demo data, you could enter "WSC2112", which is the value we'll show later in this topic.)
+
+[!NOTE] Wave step codes are codes that users can set up and use to link specific instances of wave methods to a corresponding template. The templates include templates for replenishment, containerization, label printing, load building, and sorting.
+
+When wave step codes aren't used, users must enter free text to reference a specific template from the wave method instance. Free text is prone to errors because users must make sure that the wave step text that they add for a specific wave step method in a wave template exactly matches the wave step text in the target template.
+
+Wave step codes for a specific wave step type are set up on a separate page. For every wave step method instance in a wave template that requires a wave step code, the wave step code must be selected in a drop-down list. Selection in a drop-down list replaces free text entry and helps reduce the risk and impact of human error. Setup codes are used to link a wave step method in a wave template to a target template for the method.
 
 <!-- KFM: Anything more to say about how to pick a wave step code? -->
 
