@@ -346,7 +346,7 @@ Now that you've created all your policies, you must establish the order that the
 
 ## <a name="example-scenarios"></a> Example scenarios of how to use shipment consolidation policies
 
-The following scenarios illustrate how you could use the shipment consolidation policies that you created for this topic. Each will walk you through the shipment consolidation process that uses shipment consolidation policies during automated and manual release to the warehouse:
+The following scenarios illustrate how you could use the shipment consolidation policies that you created while reading this topic. Each scenario walks you through a shipment consolidation process that uses shipment consolidation policies during automated or manual release to the warehouse:
 
 - Scenario 1: [Consolidate shipments when they are released to the warehouse by using Automatic release of sales orders](../warehousing/consolidate-shipments-automatic.md)
 - Scenario 2: [Consolidate shipments when the shipment consolidation policy is overridden from the Release to warehouse page](../warehousing/consolidate-shipments-release-to-warehouse-override.md)
