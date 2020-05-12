@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.9
 
 ---
 
-# Share ER configurations in RCS/the Global repository with external organizations
+# Share Electronic reporting (ER) configurations in Regulatory Configuration Services (RCS) Global repository with external organizations
 
 [!include [banner](../includes/banner.md)]
 
@@ -78,3 +78,5 @@ After a configuration has been created under your configuration provider, you ca
 The configuration is shared with the external organization and is available to that organization in the Global repository. From there, it can be imported into the organization's instance of RCS or into its instances of Finance and Operations apps.
 
 ![Configuration shared with an external organization](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_Share_with_test.com)
+
+6. To unshare a configuration that has been previously shared with an external organization, select the configuration and click **Unshare**, and then select **OK**
