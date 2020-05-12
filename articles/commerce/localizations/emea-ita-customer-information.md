@@ -158,37 +158,39 @@ This section provides deployment guidance for enabling customer information mana
 
 ### Update customizations
 
-# [Retail 10.0.7](#tab/retail-10.0.7)
+* Follow these steps to update customizations.
 
-Follow these steps if any of your customizations includes request handlers for the `SaveCartRequest` or `CreateSalesOrderServiceRequest`.
+    # [Retail 10.0.7](#tab/retail-10.0.7)
 
-1. Find the request handler for the `SaveCartRequest`.
-1. Find the line of code that runs the original request handler.
-1. Add the following line before calling the original request handler:
+    If any of your customizations includes request handlers for the `SaveCartRequest` or `CreateSalesOrderServiceRequest`:
 
-    ```cs
-    using Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdItaly.Services;
+    1. Find the request handler for the `SaveCartRequest`.
+    1. Find the line of code that runs the original request handler.
+    1. Add the following line before calling the original request handler:
 
-    ...
+        ```cs
+        using Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdItaly.Services;
 
-    new TaxRegistrationIdFiscalCustomerService().Execute(request);
-    ```
+        ...
 
-1. Find the request handler for the `CreateSalesOrderServiceRequest`.
-1. Find the line of code that runs the original request handler.
-1. Replace it with the following code:
+        new TaxRegistrationIdFiscalCustomerService().Execute(request);
+        ```
 
-    ```cs
-    using Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdItaly.Services;
+    1. Find the request handler for the `CreateSalesOrderServiceRequest`.
+    1. Find the line of code that runs the original request handler.
+    1. Replace it with the following code:
 
-    ...
+        ```cs
+        using Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdItaly.Services;
 
-    return new TaxRegistrationIdFiscalCustomerService().Execute(request);
-    ```
+        ...
 
-# [Retail 10.0.12](#tab/retail-10.0.12)
+        return new TaxRegistrationIdFiscalCustomerService().Execute(request);
+        ```
 
-No updating is required since 10.0.12. If you have references to the `TaxRegistrationIdFiscalCustomerService`, they must be removed.
+    # [Retail 10.0.12](#tab/retail-10.0.12)
+
+    If customizations have references to the `TaxRegistrationIdFiscalCustomerService`, they must be removed.
 
 ### Update a development environment
 
