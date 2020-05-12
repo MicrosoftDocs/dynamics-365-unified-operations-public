@@ -151,7 +151,7 @@ This section provides deployment guidance for enabling customer information mana
 
 Follow these steps to update customizations.
 
-# [Retail 10.0.7](#tab/retail-10.0.7)
+# [Retail 10.0.7](#tab/retail-10.0.7/)
 
 If any of your customizations includes request handlers for the `SaveCartRequest` or `CreateSalesOrderServiceRequest`:
 
@@ -179,7 +179,7 @@ If any of your customizations includes request handlers for the `SaveCartRequest
     return new TaxRegistrationIdFiscalCustomerService().Execute(request);
     ```
 
-# [Retail 10.0.12](#tab/retail-10.0.12)
+# [Retail 10.0.12](#tab/retail-10.0.12/)
 
 If customizations have references to the `TaxRegistrationIdFiscalCustomerService`, they must be removed.
 
