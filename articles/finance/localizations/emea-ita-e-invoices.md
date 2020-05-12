@@ -33,7 +33,10 @@ This topic describes how to set up and work with the functionality for creation
 and sending sales and project invoices in electronic format (FatturaPA).  
   
 Electronic invoices "FatturaPA" version 1.2 can be used for all types of businesses, including public administrations, private
-and professional companies. Specifically, the invoices in question must be in .xml format, must be endorsed by using a qualified or digital electronic signature, and must be transmitted through an interchange data system or an authorized intermediary on the websites.
+companies and professionals. 
+
+> [!NOTE] 
+> The primary address of the legal entity must be in Italy.
 
 This topic contains:
 - [Setup](/setup).
@@ -65,10 +68,9 @@ Accounts receivable parameters**, **Electronic documents** tab).
  >   See [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
 ## E-Invoices parameters
+Use these parameters to specify business scenarios and company specific information (**Accounts receivable \> Setup \> Electronic invoice parameters**)
 
-**Accounts receivable \> Setup \> Electronic invoice parameters**)
-
-Use these parameters to specify business scenarios and company specific information (**General**, **Company information** and **Art. 2250 Civil code registration** tabs).
+Fill in **General**, **Company information** and **Art. 2250 Civil code registration** tabs.
 
 On **Number sequences** tab fill in number sequences for e-invoice file number
 and transmission number.
@@ -76,7 +78,7 @@ and transmission number.
 ## Electronic document properties
 Electronic document properties functionality are used for settting output to xml document blocks for different business cases: 
 1. VAT registration number for customers who are out of EU and don't have VAT registration codes.  
-2. Certified e-mail address (PEC) for private or professional companies.
+2. Certified e-mail address (PEC) for private companies or professionals.
 3. Stamp duty (payable and not payble by customer).
 2. Customer's representative data 
 
@@ -89,7 +91,7 @@ Set values are used for output to the xml file blocks (see the table bellow how 
 | Business scenario | Electronic document property type | Electronic document property type description | Applicability (Table) | Where to use | Element in the xml file |
 |-------------------|-----------------------------------|-----------------------------------------------|-----------------------|--------------|-------------------------|
 | For customers who are out of EU and don't have VAT registration codes VAT registration number should be 00000000000 | **VATnonEU** | For example: Customer, non-EU VAT number|**CustTable** (Customers) | **Customer, Electronic document properties**, Value=00000000000 |**IdCodice** (CessionarioCommittente\ DatiAnagrafici\ IdFiscaleIVA block) |
-| Certified e-mail address (PEC) for private or professional company | **PEC** | **For example:** Customer, Certified e-mail address | **CustTable** (Customers) | **Customer, Electronic document properties**,   Value= < PEC >  | **PECDestinatario** (DatiTrasmissione block) |
+| Certified e-mail address (PEC) for private companies or professionals | **PEC** | **For example:** Customer, Certified e-mail address | **CustTable** (Customers) | **Customer, Electronic document properties**,   Value= < PEC >  | **PECDestinatario** (DatiTrasmissione block) |
 | Stamp duty not included into invoice total (for sales invoices) and included/ not included for project invoices | **Bollo** Note. Used for sales order, free text and project invoices | **For example**: Stamp duty, included/ not included into invoice totals | **CompanyInfo** (Legal entities) |**Legal entity, Electronic document properties**,  Value=<Charge code/ Project category, which is used for stamp duties>. **Charges code**: Debit type for this charge code should be Ledger  **Project category**: should be billable | **ImportoBollo** (DatiBollo block) |
 | Stamp duty included into invoice total | **BolloPay**. Note. Used only for sales order and free text invoices | **For example**: Stamp duty, included into invoice totals | **CompanyInfo** (Legal entities) | **Legal entity, Electronic document properties**, Value=<Charge code/ Project category, which is used for stamp duties>. **Charges code**: Debit type should be Customer/ Vendor | **ImportoBollo** (DatiBollo block) |
 | Representative | TaxRepPaese, TaxRepPaese, TaxRepCodice, TaxRepDenominazione, TaxRepNome, TaxRepCognome | Any description | **CustTable** (Customers) | **Customer, Electronic document properties**. Value=IT (for TaxRepPaese) For other types, fill in data of representative | **Cognome** (RappresentanteFiscale block) |
