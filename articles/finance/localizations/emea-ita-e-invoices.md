@@ -181,10 +181,10 @@ Example of setup:
 
 ![Destination](media/emea-ita-electronic-invocies-destination.png)
 
-# How to fill in data for CIG and CUP ouput
+# How to fill in data for related documents
 
-Companies may report the following blocks in the output e-invoices: 
- - **DatiOrdineAcquisto** block contains the information relative to the payment order. 
+Companies may report additional information about some base documents related to invoices : 
+ - **DatiOrdineAcquisto** block contains the information relative to the purchase order. 
  - **DatiContratto** block contains the information relative to the contract. 
  - **DatiConvenzione** block contains the information relative to the agreement. 
  - **DatiRicezione** block contains the information relative to the data present on the management system used by the PA (Tax Agencies) regarding the reception phase. 
@@ -203,7 +203,9 @@ In order to the system could populate these blocks the following fields should b
 > - **Management system** - **DatiRicezione** block
 > - **Original invoice** - **DatiFattureCollegate** block
 
-# Overview of electronic invoices page 
+For each base document, a user can add the details about document number and date, CUP code (managed by Inter Ministerial Committee for Economic Planning), CIG code (tender procedure identification code), agreement code, etc.
+
+# Overview of electronic invoices register 
 
 To overview all customer e-invoices and fulfil different actions open **Electronic customer invoices** page list (**Accounts receivable \> Invoices \> E-invoices \> Electronic invoices**).
 
