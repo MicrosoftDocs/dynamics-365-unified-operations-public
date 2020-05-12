@@ -105,6 +105,8 @@ Set values are used for output to the xml file blocks (see the table bellow how 
 > [!NOTE 2]  
 > In **Electronic document property types** list page, the **Description** field (left) is filled in automatically when a user is filling **Group description** and **Description** (right) fields.
 
+[Electronic document property types](/emea-ita-electronic-invocies-electronic-document-property-types.png)
+
 > [!NOTE 3]
 > Electronnic document property type must have the same code as specified in the table.
 
