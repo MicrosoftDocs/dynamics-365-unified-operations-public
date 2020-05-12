@@ -344,6 +344,17 @@ Now that you've created all your policies, you must establish the order that the
     1. Cross-order
     1. Default
 
+## Example scenarios of how to use shipment consolidation policies
+
+The following scenarios illustrate how you could use the shipment consolidation policies that you created for this topic. Each will walk you through the shipment consolidation process that uses shipment consolidation policies during automated and manual release to the warehouse:
+
+- Scenario 1: [Consolidate shipments when they are released to the warehouse by using Automatic release of sales orders](../warehousing/consolidate-shipments-automatic.md)
+- Scenario 2: [Consolidate shipments when the shipment consolidation policy is overridden from the Release to warehouse page](../warehousing/consolidate-shipments-release-to-warehouse-override.md)
+- Scenario 3: [Consolidate shipments by using Release to warehouse from the load planning workbench](../warehousing/consolidate-shipments-load-planning-workbench.md)
+- Scenario 4: [Consolidate shipments by using the shipment consolidation workbench](../warehousing/consolidate-shipments-manual-workbench.md)
+- Scenario 5: [Consolidate shipments manually by using the Consolidate shipments page](../warehousing/consolidate-shipments-manual-form.md)
+
+
 ## Additional resources
 
 - [Shipment consolidation policies](about-shipment-consolidation-policies.md)
