@@ -70,10 +70,10 @@ Accounts receivable parameters**, **Electronic documents** tab).
 ## E-Invoices parameters
 Use these parameters to specify business scenarios and company specific information (**Accounts receivable \> Setup \> Electronic invoice parameters**)
 
-Fill in **General**, **Company information** and **Art. 2250 Civil code registration** tabs.
-
-On **Number sequences** tab fill in number sequences for e-invoice file number
-and transmission number.
+- On the  **General** tab, a user can specify the electronic signature requirement (Disable, Optional, Mandatory).
+- On the **Company information** tab, a user can specify company information and tax reperesentative (if needed). This information overrides the information in the Legal entity 
+- On the **Art. 2250 Civil code registration** tab, a user can specify information if the company is registered under the terms of Art. 2250 of the Italian Civil Code.
+- On **Number sequences** tab fill in number sequences for e-invoice file number and transmission number.
 
 ## Electronic document properties
 Electronic document properties functionality are used for settting output to xml document blocks for different business cases: 
