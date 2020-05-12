@@ -39,7 +39,7 @@ You can use triggers to capture events that occur before or after Retail Modern 
 - Use the post-trigger for scenarios where you want to show custom messages or insert custom fields after the standard logic is performed. 
 
 
-The following table lists the available triggers and denotes whether they can be cancelled.
+The following table lists the available triggers and denotes whether they can be canceled.
 
 ## Application triggers
 
