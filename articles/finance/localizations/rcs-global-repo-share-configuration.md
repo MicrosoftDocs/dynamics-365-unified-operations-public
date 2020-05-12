@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Create Electronic reporting configurations in RCS and upload to the Global repository
-description: This topic describes how to directly share configurations in the RCS/Global repository with external organizations.
-author: JaneA07      
+title: Share ER configurations in RCS/the Global repository with external organizations
+description: This topic explains how to share Electronic reporting (ER) configurations in Microsoft Regulatory Configuration Services (RCS)/the Global repository directly with external organizations.
+author: JaneA07
 manager: AnnBe
 ms.date: 05/04/2020
 ms.topic: article
@@ -30,51 +30,51 @@ ms.dyn365.ops.version: AX 10.0.9
 
 ---
 
-# Create Electronic reporting configurations in RCS and upload to the Global repository 
+# Share ER configurations in RCS/the Global repository with external organizations
 
 [!include [banner](../includes/banner.md)]
 
-You can use Regulatory Configuration Services (RCS) to share Electronic reporting (ER) configurations and then publish them to external organizations.
+You can use Microsoft Regulatory Configuration Services (RCS) to share Electronic reporting (ER) configurations and then publish them to external organizations.
 
-The following steps explain how a user in Microsoft RCS can share a version of an ER configuration that has been configured in an RCS instance with an external organization. To complete these steps, you must first complete the following:
+The following procedures explain how an RCS user can share a version of an ER configuration that has been configured in an RCS instance with an external organization. Before you can complete those procedures, you must complete the following prerequisites:
 
-- Access an RCS instance
-- Create an active configuration provider. For more information, see [Create configuration providers and mark them as active](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md)
-- Create and upload a new version of an ER configuration. For more information, see [Create and upload a new version of an Electronic reporting (ER) configuration](rcs-global-repo-upload.md)
+- Access an RCS instance.
+- Create an active configuration provider. For more information, see [Create configuration providers and mark them as active](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
+- Create and upload a new version of an ER configuration. For more information, see [Create and upload a new version of an Electronic reporting (ER) configuration](rcs-global-repo-upload.md).
 
-1. In a Dynamics 365 Finance and Operations app, go to **Organization administration** > **Workspaces** > **Electronic reporting**.
-2. If no RCS environment is provisioned to your company, select **Regulatory services – Configuration external** and follow the instructions to provision an RCS environment for your organization.
+You must also make sure that an RCS environment is provisioned for your company.
 
-> [!NOTE]
-> If an RCS environment has been already provisioned to your company, use the page URL to access it by selecting the sign-in option.
+1. In a Finance and Operations app, go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
+2. If no RCS environment is provisioned for your company, select **Regulatory services – Configuration external**, and then follow the instructions to provision one.
 
-## Check the configuration that you want to share 
-Complete the following steps to verify that the configuration that you want to share is already uploaded to Global repository.
+If an RCS environment has been already provisioned for your company, use the page URL to access it by selecting the sign-in option.
 
-1. Open the **Electronic reporting** workspace and select **Repositories** for your configuration provides. 
+## Verify the configuration that you want to share
 
-![Open the repository for your Configuration provider](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_config_provider.JPG)
+Follow these steps to verify that the configuration that you want to share has already been uploaded to the Global repository.
 
-2. Select **Global repository** > **Open**.
-3. Search for the configuration that you want to share. You can use the filter field to narrow your search.
-If you can't find the configuration in the global repository, follow the steps in the topic, [Create and upload a new version of an Electronic reporting (ER) configuration](rcs-global-repo-upload.md)
+1. In the **Electronic reporting** workspace, select **Repositories** for your configuration provider.
+
+    ![Configuration providers](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_config_provider.JPG)
+
+2. Select **Global repository** \> **Open**.
+3. Search for the configuration that you want to share. You can use the filter field to narrow your search. If you can't find the configuration in the Global repository, follow the steps in [Create and upload a new version of an Electronic reporting (ER) configuration](rcs-global-repo-upload.md).
 
 ## Share ER configurations with external organizations
 
-After a configuration has been created under your configuration provider, you can directly share it with external organizations by selecting **Share with** on the **Global repository** page.
+After a configuration has been created under your configuration provider, you can share it directly with external organizations by using the **Shared with** FastTab on the **Global configuration repository** page.
+
 1. In the **Electronic reporting** workspace, select **Repositories** for your configuration provider.
-2. Select **Global repository** > **Open**. 
-3. Select the configuration that you want to share. 
-4. Go to **Shared with**, and select **+Organization**.
+2. Select **Global repository** \> **Open**. 
+3. Select the configuration that you want to share.
+4. On the **Shared with** FastTab, select **Organization**.
 
-![Go to ‘Share with’ and click +Organization](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_Share_with_org.JPG)
+    ![Shared with FastTab](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_Share_with_org.JPG)
 
-5. Enter the parameters domain name for the external organization and then select **OK**.
+5. In the dialog box, enter the domain name for the external organization, and then select **OK**.
 
-![Enter organization domain name and click ‘Share’](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_Share_with_form.JPG)
+    ![Share configuration version with external organization dialog box](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_Share_with_form.JPG)
 
-The configuration is shared with the external organization and is available for them in the Global repository where it can be imported for use into their RCS or the instance of their Finance and Operations apps.
+The configuration is shared with the external organization and is available to that organization in the Global repository. From there, it can be imported into the organization's instance of RCS or into its instances of Finance and Operations apps.
 
-![Configuration is ‘shared with’](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_Share_with_test.com)
-
-
+![Configuration shared with an external organization](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_Share_with_test.com)
