@@ -126,7 +126,7 @@ In the procedure above, after you click **Accept**, you might receive the follow
 | Error                                                       | Resolution |
 |-------------------------------------------------------------|------------|
 | The Power BI service is unavailable.                        | This issue doesn't occur very often, but the Power BI service might sometimes be unreachable. You don't have to re-register. Try to pin a tile to a workspace later. |
-| You can't access the application.                           | You probably didn't select all the check boxes under **Step 8 in the Registration proces** during the registration process. Start Power BI, and re-run the registration process. |
+| You can't access the application.                           | You probably didn't select all the check boxes under **Step 8 in the Registration process** during the registration process. Start Power BI, and re-run the registration process. |
 | The Power BI tiles page is empty (no content is shown).     | Your PowerBI.com account might not have a dashboard or any tiles. Add a dashboard, such as a sample dashboard, and try to pin a tile again. |
 | Error when authorizing Power BI                             | On the Azure Admin dashboard, under **Users and Groups \> User settings**, make sure that the **Users can consent to apps accessing company data on their behalf** option is set to **Yes**. |
 
