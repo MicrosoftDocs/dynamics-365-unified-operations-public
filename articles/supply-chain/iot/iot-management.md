@@ -2,7 +2,7 @@
 # required metadata
 
 title: Monitor and manage IoT Intelligence
-description: This topic describes how to view the monitor and manage IoT Intelligence.
+description: This topic explains how to monitor and manage IoT Intelligence.
 author: robinarh
 manager: AnnBe
 ms.date: 08/16/2019
@@ -29,35 +29,35 @@ ms.dyn365.ops.version: 10.0.5
 
 ---
 
-# Managing IoT Intelligence
+# Monitor and manage IoT Intelligence
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how to view the monitor and manage IoT Intelligence.
+This topic explains how to monitor and manage IoT Intelligence.
 
-## <a id="monitor-scenarios"/>How to monitor scenarios in Dynamics 365 Supply Chain Management
+## <a id="monitor-scenarios"></a>Monitor scenarios in Microsoft Dynamics 365 Supply Chain Management
 
-There are several places to monitor IoT Intelligence processing:
+You can monitor IoT Intelligence processing from several places:
 
-+ **Modules \> Production control \> Inquiries and reports \> IoT Intelligence \> Notifications**. Here you can see the list of unresolved notifications.
-+ **Modules \> Production control \> Inquiries and reports \> IoT Intelligence \> Closed notifications**. Here you can see the notifications that have been resolved or dismissed.
-+ **Modules \> Production control \> Inquiries and reports \> IoT Intelligence \> Metric keys**. Here you can see the metric keys for the Resource Status times series graphs.
-+ **Modules \> Production control \> Manufacturing execution \> Resource status**. Here you can track specific metrics using the **Configure** dialog. If a scenario detects an exception, a notification with the exception details will appear.
-+ **Workspaces \> Production floor management \> Notifications**. Here you can see the list of unresolved notifications.
++ **Modules \> Production control \> Inquiries and reports \> IoT Intelligence \> Notifications** – View the list of unresolved notifications.
++ **Modules \> Production control \> Inquiries and reports \> IoT Intelligence \> Closed notifications** – View the list of notifications that have been resolved or dismissed.
++ **Modules \> Production control \> Inquiries and reports \> IoT Intelligence \> Metric keys** – View the metric keys for the Resource Status times series charts.
++ **Modules \> Production control \> Manufacturing execution \> Resource status** – Track specific metrics by using the **Configure** dialog box. If a scenario detects an exception, a notification shows the details of the exception.
++ **Workspaces \> Production floor management \> Notifications** – View the list of unresolved notifications.
 
 ## Modify a running IoT Intelligence scenario
 
-When a scenario is running, you can make these modifications:
+When a scenario is running, you can make these changes:
 
 + Add new sensor schema definitions.
 + Select new signal data values.
-+ Unselect existing signal data values.
++ Cancel the selection of existing signal data values.
 + Add and map new signal data values.
 + Update threshold values.
 
-When a scenario is running, these modifications are prohibited:
+When a scenario is running, these changes are prohibited:
 
-+ Delete or modify any schema definitions currently consumed by an enabled scenario.
++ Delete or modify any schema definitions that are currently consumed by an enabled scenario.
 + Change the enabled scenario's selected schema paths.
 
 ## Simulation options
