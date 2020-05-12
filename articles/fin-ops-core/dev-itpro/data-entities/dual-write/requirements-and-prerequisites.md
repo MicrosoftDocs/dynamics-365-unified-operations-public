@@ -173,11 +173,20 @@ Before you enable dual-write, follow these steps to make sure that you meet the 
 
     *To ensure listening into CRUD operations on the Common Data Service, the dual-write plugins need to be enabled*
 
-7. Uninstall the Prospect to Cash (P2C) solution.
+7. Install the dual-write application orchestration solution maps solution.
+
+    In Power Apps, in the left pane, select **Solutions**. Select **Open AppSource**, and search for the solution that is named **Dual-write application orchestration solution**. Select the solution, and follow the prompts to import it. After installation, you'll find several new solutions listed under **Solutions**. For more information, see [Solutions overview](https://docs.microsoft.com/powerapps/maker/common-data-service/solutions-overview). 
+ 
+    While dual-write core solution contains metadata for your entity maps, dual-write application orchestration solution covers the master data scenarios for customers, products, and vendors, and for end-to-end process flows like prospect to cash, and for on-demand functions like pricing and reference data for ledger, tax, payment terms, and schedules. Dual-write will continue to expand in the future to support more scenarios for party, project, on-hand inventory, and more. The framework is extensible and accommodates customer-centric business data exchange through a few additional clicks.
+    
+    > [!NOTE]
+    > You would need to **Apply Solution** as part of the next steps, when you use the dual-write wizard to link your environments 
+
+8. Uninstall the Prospect to Cash (P2C) solution.
 
     The P2C solution doesn't work concurrently with dual-write. Therefore, don't install the P2C solution. If it's already installed, you must uninstall it before you enable dual-write.
 
-8. Provide the supported tenant configuration.
+9. Provide the supported tenant configuration.
 
     Make sure that the Finance and Operations app and Common Data Service are installed under the same tenant. Cross-tenant scenarios aren't currently supported.
 
