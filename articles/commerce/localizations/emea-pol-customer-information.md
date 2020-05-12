@@ -113,7 +113,7 @@ The following example scenarios show how to work with customer information in PO
 1. Sign in to POS.
 1. Add items to the cart.
 1. Select **Add customer**, and then select **New**.
-1. Specify the new customer's attributes. 
+1. Specify the new customer's attributes.
 1. Select **Create a new address**. Then specify the new customer's contact information and an address.
 1. In the **VAT number** field, enter the customer's VAT number.
 1. Save the customer record and the customer address record, and add the customer to the transaction.
@@ -149,23 +149,37 @@ This section provides deployment guidance for enabling customer information mana
 
 ### Update customizations
 
-Follow these steps if any of your customizations include request handlers for the SaveCartRequest or CreateSalesOrderServiceRequest request.
+# [Retail 10.0.7](#tab/retail-10.0.7)
 
-1. Find the request handler for the **SaveCartRequest** request.
-1. Find the line of code that runs the original handler.
-1. Replace the original handler class with **TaxRegistrationIdFiscalCustomerService**.
+Follow these steps if any of your customizations includes request handlers for the `SaveCartRequest` or `CreateSalesOrderServiceRequest`.
+
+1. Find the request handler for the `SaveCartRequest`.
+1. Find the line of code that runs the original request handler.
+1. Add the following line before calling the original request handler:
 
     ```cs
     using Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdPoland.Services;
 
     ...
 
-    var requestHandler = new TaxRegistrationIdFiscalCustomerService();
-    var response = request.RequestContext.Runtime.Execute<SaveCartResponse>(request, request.RequestContext, requestHandler, skipRequestTriggers: false);
+    new TaxRegistrationIdFiscalCustomerService().Execute(request);
     ```
 
-1. Repeat steps 1 through 3 for the **CreateSalesOrderServiceRequest** request.
+1. Find the request handler for the `CreateSalesOrderServiceRequest`.
+1. Find the line of code that runs the original request handler.
+1. Replace it with the following code:
 
+    ```cs
+    using Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdPoland.Services;
+
+    ...
+
+    return new TaxRegistrationIdFiscalCustomerService().Execute(request);
+    ```
+
+# [Retail 10.0.12](#tab/retail-10.0.12)
+
+No updating is required since 10.0.12. If you have references to the `TaxRegistrationIdFiscalCustomerService`, they must be removed.
 ### Update a development environment
 
 Follow these steps to update a development environment.
