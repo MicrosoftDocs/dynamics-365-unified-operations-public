@@ -207,7 +207,7 @@ For each base document, a user can add the details about document number and dat
 
 # Overview of electronic invoices register 
 
-To overview all customer e-invoices and fulfil different actions open **Electronic customer invoices** page list (**Accounts receivable \> Invoices \> E-invoices \> Electronic invoices**).
+To overview all customer e-invoices and perform various actions open **Electronic customer invoices** page list (**Accounts receivable \> Invoices \> E-invoices \> Electronic invoices**).
 
 In this page list a user can:
 
