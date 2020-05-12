@@ -41,7 +41,3 @@ Asset leasing is an advanced module for managing, tracking and automating lessee
 > [!Note] 
 > For more information regarding accounting standards, refer to the standard documentation of IFRS 16 and US GAAP ASC 842. 
 
-## Asset leasing elements 
-
-The below diagram illustrates the main elements of lease business process. 
-
