@@ -28,22 +28,22 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # GB-00009 Create a credit note on the settlement discount
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This walkthrough was created using the demo company DEMF with country context switched for the United Kingdom (Country/region GBR). 
 
 This task walks you through creating a customer invoice that includes cash discount, with further prompt payment and generating credit note on cash discount to adjust the VAT entries posted on the original invoice. 
 
-Prior to this task, the “Setup parameters for credit note on prompt payment discount” tasks should be completed.
+Prior to this task, the "Setup parameters for credit note on prompt payment discount" tasks should be completed.
 
 1. Go to Accounts receivable > Invoices > All free text invoices.
 2. Click New.
 3. In the Customer account field, click the drop-down button to open the lookup.
-    * For this example, select ‘DE-010' customer account  
+    * For this example, select 'DE-010' customer account  
 4. In the list, find and select the desired record.
 5. In the list, click the link in the selected row.
 6. In the Cash discount field, click the drop-down button to open the lookup.
-    * For this example, select ‘4%10d’ cash discount code.  
+    * For this example, select '4%10d' cash discount code.  
 7. In the list, find and select the desired record.
 8. In the list, click the link in the selected row.
 9. In the list, mark the selected row.
@@ -76,7 +76,7 @@ Prior to this task, the “Setup parameters for credit note on prompt payment di
 31. Close the page.
 32. Go to Accounts receivable > Customers > All customers.
 33. In the list, find and select the desired record.
-    * For this example, select ‘DE-010' customer account  
+    * For this example, select 'DE-010' customer account  
 34. On the Action Pane, click Invoice.
 35. Click Invoice journal.
 36. In the list, find and select the desired record.

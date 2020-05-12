@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Cookie compliance
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic describes considerations for cookie compliance and the default policies that are included in Microsoft Dynamics 365 Commerce.
@@ -49,3 +49,5 @@ To learn more about the basic principles that Microsoft uses for cookie complian
 [Compliance overview](compliance-overview.md)
 
 [Add a privacy policy page](add-privacy-page.md)
+
+[Replace user IDs associated with tracked content changes](replace-IDs-tracked-changes.md)

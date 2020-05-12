@@ -4,7 +4,7 @@
 title: Subcontracting
 description: This topic will help you build a walkthrough of subcontracting in manufacturing in Dynamics 365 Supply Chain Management.
 author: christophernread 
-manager: AnnBe
+manager: tfehr
 ms.date: 09/28/2018
 ms.topic: article
 ms.prod: 
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:  
 audience: Application User
 # ms.devlang:
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: 
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -217,7 +217,7 @@ A production order of 10 pieces is created for product D8100, "Coated Cabinet." 
 
     ![Two sets of work for raw material picking on the Work page](./media/subcontract22_work-page.png)
 
-26. Start the warehouse app to process the warehouse work for operation 10.
+26. Start the warehousing app to process the warehouse work for operation 10.
 
     <!-- TBD – screen shots for processing pick work for the materials. -->
 
@@ -235,7 +235,7 @@ A production order of 10 pieces is created for product D8100, "Coated Cabinet." 
 
     Notice that the status of the production order is now **Started**. The materials for operation 10 are consumed by an automatic posting of the picking list journal. Time consumption for operation 10 is accounted for by an automatic posting of a route card journal.
 
-32. Start the warehouse app to process the warehouse work for operation 20.
+32. Start the warehousing app to process the warehouse work for operation 20.
 
     <!-- TBD – screen shots for processing pick work for the materials. -->
 

@@ -5,7 +5,7 @@ title: Localize a module
 description: This topic describes how to localize a module for rendering, and how to localize general module information, such as the module name, description, and configuration fields.
 author: samjarawan
 manager: annbe
-ms.date: 10/25/2019
+ms.date: 02/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -30,7 +30,6 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Localize a module
 
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 This topic describes how to localize a module for rendering. It also describes how to localize general module information, such as the module name, description, and configuration fields.
@@ -73,7 +72,7 @@ The following example shows a resource schema.
 
 The following example shows a resource file.
 
-``` json
+```json
 {
     "noResultsForRefinersText": {
         "value": "No results found for refinement criteria",
@@ -94,10 +93,15 @@ To use a resource string in a module, you must reference the resource string key
 {
     "$type": "contentModule",
     "friendlyName": "Product Feature",
-    "name": "productFeature",
+    "name": "product-feature",
     "description": "Feature module used to highlight a product.",
-    "categories": ["storytelling"],
-    "tags": [""],
+    "categories": [
+        "storytelling"
+    ],
+    "tags": [
+        ""
+    ],
+    "dataActions": {},
     "config": {
         "imageAlignment": {
             "friendlyName": "Image Alignment",
@@ -110,12 +114,43 @@ To use a resource string in a module, you must reference the resource string key
             "default": "left",
             "scope": "module",
             "group": "Layout Properties"
+        },
+        "productTitle": {
+            "type": "string",
+            "friendlyName": "Product Title",
+            "description": "Product placement title"
+        },
+        "productDetails": {
+            "type": "richText",
+            "friendlyName": "Product Details",
+            "description": "Rich text representing the featured product details"
+        },
+        "productImage": {
+            "type": "image",
+            "friendlyName": "Product Image",
+            "description": "Image representing the featured product"
+        },
+        "buttonText": {
+            "type": "string",
+            "friendlyName": "Button Text",
+            "description": "Text to show on the call to action button"
+        },
+        "productIds": {
+            "friendlyName": "Product ID",
+            "description": "Provide a Product Id that the module will display",
+            "type": "string",
+            "scope": "module",
+            "group": "Content Properties"
         }
     },
     "resources": {
-        "resultNotFoundText": {
-            "value": "Result not found text",
-            "comment": "Result not found text for a category"
+        "nextButtonText": {
+            "value": "next",
+            "comment": "Text for the next button"
+        },
+        "previousButtonText": {
+            "value": "previous",
+            "comment": "Text for the previous button"
         }
     }
 }
@@ -123,11 +158,11 @@ To use a resource string in a module, you must reference the resource string key
 
 ### Access resources in the module view file
 
-Resources can be accessed in the module view file by using the **this.props.resources** API, as shown in the following example.
+Resources can be accessed in the module React file and module view file by using the **this.props.resources** property, as shown in the following example.
 
 ```html
-<button class="resultNotFoundText">
-    {this.props.resources.resultNotFoundText}
+<button className="nextButton">
+    {this.props.resources.nextButtonText}
 </button>
 ```
 
@@ -258,6 +293,40 @@ The following example shows a resource file.
 
 You can generate global.json files for module resources and authoring resources by running the **yarn msdyn365 generate-resources src** command in the SDK root folder. This command picks up both the module and authoring strings that are defined in the \*.definition.json files, and it generates the resources/modules/global.json and resources/authoring/global.json files.
 
+### Example global.json file
+
+```json
+{
+    "nextButtonText": {
+        "value": "next",
+        "_value.comment": "Text for the next button"
+    },
+    "previousButtonText": {
+        "value": "previous",
+        "_value.comment": "Text for the previous button"
+    }
+}
+```
+
+### Example fr-fr.json localized file
+
+```json
+{
+    "nextButtonText": {
+        "value": "prochain",
+        "_value.comment": "Text for the next button"
+    },
+    "previousButtonText": {
+        "value": "précédent",
+        "_value.comment": "Text for the previous button"
+    }
+}
+```
+
+## Testing localized content
+
+To test localized content, you must use a page mock and change the locale to the locale that you're testing. For more information about page mocks, see [Testing modules with page mocks](test-page-mock.md).
+
 ## Additional resources
 
 [Create a new module](create-new-module.md)
@@ -267,8 +336,6 @@ You can generate global.json files for module resources and authoring resources 
 [Add module configuration fields](add-module-config-fields.md)
 
 [Preview and debug a module](test-module.md)
-
-[Debug modules](debug-modules.md)
 
 [Test modules by using module mocks](test-module-mock.md)
 

@@ -1,0 +1,2 @@
+> [!IMPORTANT]
+> Functionality noted in this article is available as a public preview in any Sandbox or Trial environment. It's not available in Production environments. The content and the functionality are subject to change. For more information about preview features, see [Manage features](../hr-admin-manage-features.md).

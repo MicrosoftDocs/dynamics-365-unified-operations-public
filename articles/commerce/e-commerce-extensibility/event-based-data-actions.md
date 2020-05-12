@@ -30,7 +30,6 @@ ms.dyn365.ops.version:
 ---
 # Use event-based data actions
 
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 This topic describes how to use event-based data actions.

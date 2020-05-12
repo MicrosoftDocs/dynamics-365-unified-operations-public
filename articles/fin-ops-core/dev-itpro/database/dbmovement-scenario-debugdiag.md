@@ -67,7 +67,7 @@ In SSMS, enter the SQL Server, username, and password. On the **Connection Prope
 
 After you're connected, open a query against the database, and enter your IP address in the following Transact-SQL (T-SQL) command.
 
-```
+```sql
 -- Create database-level firewall setting for IP a.b.c.d 
 EXECUTE sp_set_database_firewall_rule N'Debugging rule for DevTest environment', 'a.b.c.d', 'a.b.c.d'; 
 ```
@@ -90,7 +90,7 @@ On your Services drive, go to the **AoSService\\WebRoot** directory. (Typically,
 
 Update these configurations so that they use the values from the environment details page for the UAT environment in LCS.
 
-```
+```xml
 <add key="DataAccess.Database" value="<example_axdb_fromAzure>" />
 <add key="DataAccess.DbServer" value="<example_axdb_server.database.windows.net>" />
 <add key="DataAccess.SqlPwd" value="<axdbadmin_password_from_LCS>" />

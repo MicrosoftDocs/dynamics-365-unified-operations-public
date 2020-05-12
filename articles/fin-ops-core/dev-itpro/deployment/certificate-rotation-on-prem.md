@@ -5,7 +5,7 @@ title: Certificate rotation
 description: This topic explains how to place existing certificates and update the references within the environment to use the new certificates.
 author: PeterRFriis
 manager: AnnBe
-ms.date: 09/05/2019
+ms.date: 04/30/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,7 +34,9 @@ ms.dyn365.ops.version: Platform update 25
 
 You may need to rotate the certificates used by your Dynamics 365 Finance + Operations (on-premises) environment as they approach their expiration date. In this topic, you will learn how to replace the existing certificates and update the references within the environment to use the new certificates.
 
-> [!NOTE]
+> [!WARNING]
+> The certificate rotation process should be initiated well before the certificates expire. This is very important for the Data Encryption certificate, which could  cause data loss for encrypted fields. For more information, see [After certificate rotation](#aftercertrotation). 
+> 
 > Old certificates must remain in place until the certificate rotation process is complete, removing them in advance will cause the rotation process to fail.
 
 ## Preparation steps 
@@ -68,8 +70,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 	
         ```powershell
         # If remoting, only execute
-        # .\Complete-PreReqs-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
-        # .\Test-D365FOConfiguration-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+        # .\Complete-PreReqs-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ForcePushLBDScripts
 
         .\Import-PfxFiles.ps1
         .\Set-CertificateAcls.ps1
@@ -78,6 +79,8 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
     3. Run the following script to validate the VM setup.
     
         ```powershell
+        # If remoting, only execute
+        # .\Test-D365FOConfiguration-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
         .\Test-D365FOConfiguration.ps1
         ```
 
@@ -87,7 +90,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 
     ```powershell
     .\Get-DeploymentSettings.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
-    `````
+    ```
 
 
 ## Activate new certificates within Service Fabric cluster
@@ -95,72 +98,73 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 ### Service Fabric with certificates that are not expired
 
 1. Edit the Clusterconfig.json file. Find the following section in the file.  
-    ```
-                       "security":  {
-                                        "metadata":  "The Credential type X509 indicates this is cluster is secured using X509 Certificates. The thumbprint format is - d5 ec 42 3b 79 cb e5 07 fd 83 59 3c 56 b9 d5 31 24 25 42 64.",
-                                        "ClusterCredentialType":  "X509",
-                                        "ServerCredentialType":  "X509",
-                                        "CertificateInformation":  {
-                                                                       "ClusterCertificate":  {
-                                                                                                  "X509StoreName":  "My",
-                                                                                                  "Thumbprint": "*Old server thumbprint(Star/SF)*"
-                                                                                              },
-                                                                       "ServerCertificate":  {
-                                                                                                 "X509StoreName":  "My",
-												 "Thumbprint": "*Old server thumbprint(Star/SF)*"
-                                                                                             },
-                                                                       "ClientCertificateThumbprints":  [
-                                                                                                            {
-                                                                                                                "CertificateThumbprint": "*Old client thumbprint*",
-                                                                                                                "IsAdmin":  true
-                                                                                                            }
-                                                                                                        ]
-                                                                   }
-                                    },
+    ```json
+    "security": {
+        "metadata":  "The Credential type X509 indicates this is cluster is secured using X509 Certificates. The thumbprint format is - d5 ec 42 3b 79 cb e5 07 fd 83 59 3c 56 b9 d5 31 24 25 42 64.",
+        "ClusterCredentialType":  "X509",
+        "ServerCredentialType":  "X509",
+        "CertificateInformation":  {
+            "ClusterCertificate":  {
+                                       "X509StoreName":  "My",
+                                        "Thumbprint": "*Old server thumbprint(Star/SF)*"
+                                   },
+            "ServerCertificate":   {
+                                        "X509StoreName":  "My",
+										"Thumbprint": "*Old server thumbprint(Star/SF)*"
+                                   },
+            "ClientCertificateThumbprints":  [
+                                       {
+                                            "CertificateThumbprint": "*Old client thumbprint*",
+                                            "IsAdmin":  true
+                                       }
+                                             ]
+                                   }
+                },
     ```
 
 2. Replace that section in the file with following section.
 
-    ```
-                       "security":  {
-                                        "metadata":  "The Credential type X509 indicates this is cluster is secured using X509 Certificates. The thumbprint format is - d5 ec 42 3b 79 cb e5 07 fd 83 59 3c 56 b9 d5 31 24 25 42 64.",
-                                        "ClusterCredentialType":  "X509",
-                                        "ServerCredentialType":  "X509",
-                                        "CertificateInformation":  {
-                                                                       "ClusterCertificate":  {
-                                                                                                  "X509StoreName":  "My",
-                                                                                                  "Thumbprint":  "New Server humbprint(Star/SF)"
-												 ,"ThumbprintSecondary": "Old Server humbprint(Star/SF)"
-                                                                                              },
-                                                                       "ServerCertificate":  {
-                                                                                                 "X509StoreName":  "My",
-                                                                                                 "Thumbprint":  "New Server humbprint(Star/SF)"
-												 ,"ThumbprintSecondary":"Old Server humbprint(Star/SF)"
-                                                                                             },
-                                                                       "ClientCertificateThumbprints":  [
-                                                                                                            {
-                                                                                                                "CertificateThumbprint":  "Old Client Thumbprint",
-                                                                                                                "IsAdmin":  false
-                                                                                                            },
-                                                                                                            {
-                                                                                                                "CertificateThumbprint":  "New Client Thumbprint",
-                                                                                                                "IsAdmin":  true
-                                                                                                            }
-                                                                                                        ]
-                                                                   }
-                                    },
+    ```json
+    "security":  {
+        "metadata":  "The Credential type X509 indicates this is cluster is secured using X509 Certificates. The thumbprint format is - d5 ec 42 3b 79 cb e5 07 fd 83 59 3c 56 b9 d5 31 24 25 42 64.",
+        "ClusterCredentialType":  "X509",
+        "ServerCredentialType":  "X509",
+        "CertificateInformation":  {
+                                        "ClusterCertificate":  {
+                                                                    "X509StoreName":  "My",
+                                                                    "Thumbprint":  "New server thumbprint(Star/SF)"
+                                                                    ,"ThumbprintSecondary": "Old server thumbprint(Star/SF)"
+                                                               },
+                                        "ServerCertificate":   {
+                                                                    "X509StoreName":  "My",
+                                                                    "Thumbprint":  "New server thumbprint(Star/SF)"
+                                                                    ,"ThumbprintSecondary":"Old server thumbprint(Star/SF)"
+                                                               },
+                                        "ClientCertificateThumbprints":  [
+                                                                                                                                                                                           {
+                                                                                "CertificateThumbprint":  "Old client thumbprint",
+                                                                                "IsAdmin":  false
+                                                                            },
+                                                                            {
+                                                                                "CertificateThumbprint":  "New client thumbprint",
+                                                                                "IsAdmin":  true
+                                                                            }
+                                                                          ]
+                                       }
+                    },
     ```
 
 3. Edit the new and old thumbprint values. 
 
 4. Change clusterConfigurationVersion to the new version, for example 2.0.0.
 
-    ```
+    ```json
     {
     "name": "Dynamics365Operations",
     "clusterConfigurationVersion": "2.0.0",
     "apiVersion": "10-2017",
     ```
+    
 5. Save the new ClusterConfig.json file.
 
 6. Run the following PowerShell command.
@@ -218,14 +222,14 @@ Continue this process following [Troubleshoot on-premises deployments](troublesh
 
 > [!NOTE]
 >  Note that the Client, Data Signing, and Encipherment certificates will only be replaced. You will also need to recreate the Credentials.json file, as described in [Encrypt credentials](setup-deploy-on-premises-pu12.md#encryptcred).
-
+>
 > Before you continue, you need to make a backup of the local Dynamics database.
 
 1. In LCS, select the "Full Details" link for the environment where you want to change the certificates.
 
 2. Select **Maintain** and then select **Update Settings**.
 
-	!Apply update settings[](media/addf4f1d0c0a86d840a6a412f774e474.png)
+	![Apply update settings](media/addf4f1d0c0a86d840a6a412f774e474.png)
 
 3. Change the thumbprints to the new ones that you have previously configured (you can find these in the ConfigTemplate.xml file in the InfrastructureScripts folder).
 
@@ -255,4 +259,15 @@ Continue this process following [Troubleshoot on-premises deployments](troublesh
 
 1. Always check if the SQL server certificate has expired. For more information, see [Set up SQL Server](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#setupsql).
 
-2. Check to be sure that the Active Directory Federation Service (ADFS) certificate has not expired. 
+2. Check to be sure that the Active Directory Federation Service (ADFS) certificate has not expired.
+
+## <a name="aftercertrotation"></a> After certificate rotation
+
+### Data encryption certificate
+
+This certificate is used to encrypt data stored in the database. By default there are certain fields that are encrypted with this certificate, you can check those fields [here](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-scenario-goldenconfig#document-the-values-of-encrypted-fields). However, our API can be used to encrypt other fields that customers deem should be encrypted. 
+
+Beginning with platform update 33, the batch job titled “Encrypted data rotation system job that needs to run at off hours when the data encryption certificate rotated” will re-encrypt data with the newly rotated certificate. This is a crawler batch job that will run between 2 hours to 3 days to re-encrypt the new certificate with all of the encrypted data. Depending on the amount of data, it's possible that the crawler is able to finish in less time than note.
+
+> [!WARNING]
+> Make sure that the old Data Encryption certificate is not removed before all encrypted data has been re-encrypted and it has not expired. Otherwise, this could lead to data loss.

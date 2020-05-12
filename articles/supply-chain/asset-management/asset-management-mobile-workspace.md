@@ -5,7 +5,7 @@ title: Asset management mobile workspace
 
 description: This topic provides information about the Asset management mobile workspace.
 author: josaw1 
-manager: AnnBe
+manager: tfehr
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
@@ -18,7 +18,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 

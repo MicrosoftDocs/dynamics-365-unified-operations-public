@@ -4,7 +4,7 @@
 title: Calculations for product configuration models FAQ
 description: This topic describes calculations for product configuration models and explains how to use calculations together with constraints.
 author: cvocph
-manager: AnnBe
+manager: tfehr
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ ms.search.form: PCConstraintEditor, PCProductConfigurationModelDetails, PCRuntim
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19191

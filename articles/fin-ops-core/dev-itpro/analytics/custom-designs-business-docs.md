@@ -64,7 +64,7 @@ The following walkthrough shows the process of introducing a custom report desig
 6. **Add a new X++ class that extends the standard report controller.** Give the class a name that appropriately describes that it's a handler for an existing application report. For this example, rename the class **SalesConfirmControllerExt** to distinguish it from other report controllers.
 7. **Use the extended class to load the custom design.** Add a **main** method that refers to the custom report design. (You can just copy the **main** method from the standard solution and add references to the new **Controller** class.) Here is the code that extends the standard solution.
 
-    ```
+    ```xpp
     class SalesConfirmControllerExt extends SalesConfirmController
     {
         public static SalesConfirmControllerExt construct()
@@ -87,7 +87,7 @@ The following walkthrough shows the process of introducing a custom report desig
 8. **Add a new report handler (X++) class to the project.** Give the class a name that appropriately describes that it's a handler for Print management–based documents. For this example, rename the class **PrintMgtDocTypeHandlerExt** to distinguish it from other object handlers.
 9. **Add a delegate handler method to start to use your custom report.** In this example, extend the **getDefaultReportFormatDelegate** method in the **PrintMgtDocTypeHandlerExt** class by using the following code.
 
-    ```
+    ```xpp
     class PrintMgtDocTypeHandlersExt
     {
         [SubscribesTo(classstr(PrintMgmtDocType), delegatestr(PrintMgmtDocType, getDefaultReportFormatDelegate))]

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Run Regression suite automation tool test cases
+title: Run test cases by using the Regression suite automation tool (RSAT)
 description: This topic explains how to load test cases from Azure DevOps, generate automation files, modify test parameters, run tests, investigate results, and save your work back to Azure DevOps.
 author: robadawy
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Run Regression suite automation tool test cases
+# Run test cases by using the Regression suite automation tool (RSAT)
 
 [!include [banner](../../includes/banner.md)]
 
@@ -53,15 +53,17 @@ When you select **New**, test automation files are generated in your working dir
 
 ![List of test cases that were loaded](media/rsat-test-cases.png)
  
-You can also generate binary and XML files only without overwriting your parameter files. Use submenu **New > Generate Execution Files** to only regenerate execution files and leave Excel files unaffected. This is typical when you install a new version of the tool, you can update your execution files while preserving the test parameter files.
+You can also generate **test execution files** only, without overwriting your parameter files. Select **New \> Generate Execution Files** to regenerate only execution files and leave Excel files unaffected. 
+
+You must generate test execution files when you install a new version of the tool, and when you modify or load a recording file. In this way, you update your execution files but also preserve the test parameter files.
 
 ![Generate Test Execution files only menu item](media/generate-execution-files.png)
 
 ## Modify test parameters
 
-This section describes how to modify Excel files to specify input and validation parameters for your test run. Select one or more test cases you want to modify and select **Edit**. This will open an Excel window for each selected test case. Alternatively, you can open the Excel files directly from the working directory. 
+This section describes how to modify Excel files to specify input and validation parameters for your test run. Select one or more test cases to modify, and then select the Microsoft Excel symbol on the toolbar. An Excel window is opened for each test case that you selected. Alternatively, you can open the Excel files directly from the working directory. 
 
-In addition to the **General** tab, the Excel file contains a data tab for every form that the test case visits.
+In addition to the **General** tab, the Excel parameter file contains a data tab for every form that the test case visits.
 
 Select the desired form (Excel tab) that you want to edit and identify the parameter values that you want to change. Values are identified by their control name. If you are not sure which control is correct, open the form in the application, right-click the control whose value you want to change, and select **form information**.
 
@@ -70,10 +72,25 @@ Save the Excel files when you are done making edits.
 ### Run a test as a specific user
 By default, tests are executed using the admin role. If you want to run the test as a specific security role, specify the email address of a user under the **Test User** parameter in the **General** tab of the Excel parameter file. The **Test User** must be a valid user of the environments you are connecting to. The test will run under the security roles that the specific user belongs to. You need version 1.200 or newer for this feature to be functional.
 
-![Test user column](media/run-specific-user.png)
+![General tab of the Excel parameter file](media/rsat-excel-general-tab.png)
  
 ### Run a test in the context of a specific company
 The **General** tab of the Excel parameter file also allows you to specify the name of a legal entity (Company). The test will run in the context of this company. You can specify your default company in the **Settings** dialog box of the tool.
+
+### Other notable test case execution settings
+
+**Fail on warning message in the Infolog**
+
+By default, test cases fail when an error occurs or a validation step fails. If you want a test case to fail
+in response to a warning message too, set the **Fail on warning message in the Infolog** option to **True** on the **General** tab of the Excel parameter file. This setting is useful if, for example, a test case adds a duplicate customer. The default setting is **False**.
+
+**Abort test suite execution on failure**
+
+If you set the **Abort test suite execution on failure** option to **True**, execution of the test suite is aborted if the test case fails. All the remaining test cases will have a status of **Not Executed**. The default setting is **False**.
+
+**Pause between steps**
+
+The number of seconds to pause between test steps. The default value is **0** (zero).
 
 ### Infolog and message validation
 Excel parameter files that are generated using version 1.200 or newer contain a **MessageValidation** tab.
@@ -126,3 +143,17 @@ You need version 1.200 or newer for response times to be available.
 ## Save your work
 To preserve your work, select **Upload**. This will upload test automation files, including Excel test parameter files, of all selected test cases to Azure DevOps for future use.
 After test automation files are uploaded to Azure DevOps, the next time you use the Regression suite automation tool, even from a different computer, you can simply use **Load** and then **Run**, without generating test execution files or editing Excel parameter files.
+
+## Process compliance
+RSAT provides capabilities for managing the readiness of test cases. It also provides a sign-off process for test runs.
+
+![Process compliance file](media/rsat-process-compliance-settings.png)
+
+### Enforce test case readiness
+
+You can set up the test case so that it isn't run unless it has a status of **Ready** in Azure DevOps. In the **Settings** dialog box, on the **Process** tab, select the **Enforce test case readiness** check box. By default, the check box is cleared.
+
+### Signoffs
+
+When your test run is completed, RSAT can create sign-off work items in Azure DevOps. In the **Settings** dialog box, on the **Process** tab, select the **Sign-off tasks** check box. Then set the type of work item that should be created for each person who signs off. You can select **Functional**, **IT Manager** and **Team Manager** roles for sign-offs, and then specify appropriate email addresses. Work items will then be created in Azure DevOps and assigned to owners for approval.
+

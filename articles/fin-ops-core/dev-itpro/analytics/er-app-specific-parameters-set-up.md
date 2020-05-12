@@ -245,7 +245,7 @@ In the preceding example, you have accessed application-specific parameters of a
     
         By using this approach, you can specify a unique solution ID (defined via the **GUID** value) to allow access to the application-specific parameters of only a specific ER format and descendant copies that have been derived from it.
         
-        ```
+        ```xpp
         public void clicked()
             {
                 super();

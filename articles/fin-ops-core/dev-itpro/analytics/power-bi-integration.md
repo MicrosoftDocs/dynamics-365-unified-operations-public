@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Features and services available through Power BI integration
+title: Features available through PowerBI.com integration
 description: This topic explains how you can use the features and services that are included in Microsoft Power BI to access, explore, and gain insight from your data.
 author: TJVass 
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Features and services available through Power BI integration
+# Features available through PowerBI.com integration
 
 [!include [banner](../includes/banner.md)]
 

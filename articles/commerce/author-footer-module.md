@@ -5,7 +5,7 @@ title: Footer module
 description: This topic covers footer modules and how to author them in Dynamics 365 Commerce.
 author: anupamar
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Footer module  
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic covers footer modules and describes how to create them in Microsoft Dynamics 365 Commerce.
@@ -41,7 +41,7 @@ The footer module is a special container that is used to host the modules that a
 
 ## Footer module properties 
 
-Like most containers, a footer module support properties for the heading and the width. It also supports the addition of multiple footer category modules. Each footer category module that is added is rendered as a column in the footer module.
+Like most containers, a footer module supports properties for the heading and the width. It also supports the addition of multiple footer category modules. Each footer category module that is added is rendered as a column in the footer module.
 
 ## Modules available in a footer module
 
@@ -62,12 +62,12 @@ Like most containers, a footer module support properties for the heading and the
 1. To add a "back to top" link to your footer, select the ellipsis button for the footer category module, and then select **Add Module**.
 1. In the **Add Module** dialog box, select the back to top module, and then select **OK**.
 1. In the outline tree, select the back to top module. Then, in the properties pane on the right, configure the back to top module as you require.
-1. Save the page fragment, check it in, and publish it.
+1. Select **Save**, select **Finish editing** to check in the page fragment, and then select **Publish** to publish it.
 
 On every page template that has been created for the site, follow these steps.
 
 1. In the **Main** slot of the default page, in the footer module, add the footer fragment that you created.
-1. Save the template, check it in, and publish it.
+1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.
 
 By adding the page fragment to page templates, you help guarantee that the footer is rendered on every page.
 

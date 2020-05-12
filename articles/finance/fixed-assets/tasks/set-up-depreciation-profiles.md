@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Set up and create depreciation profiles
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Depreciation profiles determine the type and the frequency of depreciation for an asset.   This recording uses the USMF demo company and the accountant role.
 

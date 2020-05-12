@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add links to your organization's legal terms and privacy statement
-description: This topic explains how administrators can add links to their organization's legal terms and privacy statement in the About pane of Microsoft Dynamics 365 Finance, Supply Chain Management, and Retail.
+description: This topic explains how administrators can add links to their organization's legal terms and privacy statement in the About pane of Microsoft Dynamics 365 Finance, Supply Chain Management, and Commerce.
 author: aneesmsft
 manager: AnnBe
 ms.date: 10/02/2017
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0, Application update 4
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how administrators can add links to their organization's legal terms and privacy statement in the <strong>About</strong> pane of Microsoft Dynamics 365 Finance, Supply Chain Management, and Retail.
+This topic explains how administrators can add links to their organization's legal terms and privacy statement in the <strong>About</strong> pane of Microsoft Dynamics 365 Finance, Supply Chain Management, and Commerce.
 
 Organizations often need to ensure that the links to their legal terms and privacy statement are readily available and visible to users in order to meet legal and compliance requirements. Administrators of an organization can follow these steps to have the links to their legal terms and privacy statement be available in the **About** pane (**Settings** &gt; **About**).
 
@@ -45,23 +45,23 @@ Organizations often need to ensure that the links to their legal terms and priva
 
     2.  Enter the link to a page that outlines the privacy statement for your organization.
 
-> [!NOTE]
-> Make sure that you enter the full URL, starting with either *https* or *http*.
+        > [!NOTE]
+        > Make sure that you enter the full URL, starting with either *https* or *http*.
 
 2.  Click **Save**.
 
-3.  If you are using Retail, go to the **Distribution
-    schedules** page. On this page:
+3.  If you are using Commerce, go to the **Distribution schedules** page. On this page:
 
     1.  Select the **1110 – Global configuration** job.
 
     2.  Click **Run now**.
 
->   To verify that the job completed, go to the **Download sessions** page.
+        > [!NOTE]
+        > To verify that the job completed, go to the **Download sessions** page.
 
 ## Validate links
 
-### Validate the links in Finance, Supply Chain Management, and Retail
+### Validate the links in Finance, Supply Chain Management, and Commerce
 
 To validate that the links have been added, on the toolbar at the top of the page, click the **Settings** icon, and then click **About**. In the **Links** section of the pane, you should see two new links:
 

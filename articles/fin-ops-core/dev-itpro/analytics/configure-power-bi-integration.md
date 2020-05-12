@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure Power BI integration for workspaces
+title: Configure PowerBI.com integration
 description: This topic describes how to configure a new Finance and Operations environment to support integration with PowerBI.com. This configuration enables workspaces to show the Power BI control and lets users pin visualizations to a workspace.
 author: MilindaV2
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Configure Power BI integration for workspaces
+# Configure PowerBI.com integration
 
 [!include [banner](../includes/banner.md)]
 

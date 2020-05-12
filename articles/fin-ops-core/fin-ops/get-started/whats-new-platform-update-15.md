@@ -115,7 +115,7 @@ The following examples use Display/Edit methods on augmented classes for tables 
 
 #### Class extension for a form
 
-```
+```xpp
 [ExtensionOf(formstr(abForm))]
 public final class abClassForm_Extension
 {
@@ -142,7 +142,7 @@ public final class abClassForm_Extension
 
 #### Class extension for a table
 
-```
+```xpp
 [ExtensionOf(tablestr(abTable))]
 public final class abClassTable_Extension
 {

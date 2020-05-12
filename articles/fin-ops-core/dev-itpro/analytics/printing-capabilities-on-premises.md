@@ -72,7 +72,7 @@ The following illustration shows the page that is used to manage network printer
 ### Turning on embedded links in business documents
 Here is the code that you can use to make embedded drill-through links available in PDF documents. 
 
-```
+```xpp
 class Controller extends SrsReportRunController
 {
     protected void preRunModifyContract()

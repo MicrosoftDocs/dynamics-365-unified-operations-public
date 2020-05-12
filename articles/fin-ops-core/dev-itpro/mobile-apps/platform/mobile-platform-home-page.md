@@ -5,7 +5,7 @@ title: Mobile platform resources
 description: The mobile platform lets you create mobile apps for your workspaces.
 author: RobinARH
 manager: AnnBe
-ms.date: 08/28/2019
+ms.date: 03/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -102,8 +102,8 @@ During development it can be useful to attach a debugger to get more detailed in
 
 2. Install the Android debug apk for the Finance and Operations app on an Android device:
     - One time only, allow the installation of apk files -  Go to **Menu** > **Settings** > **Security** and then check **Unknown Sources** to allow the phone to install apps from sources other than the Google Play Store.
-    - Uninstall the Unified Operations app - Ensure that any previous version of the Unified Operations app has been uninstalled.
-    - Download the apk file - From the device’s browser, navigate to the latest [Finance and Operations Android debug apk on Github](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/blob/master/android-debug.apk) and click **Download** (or use [this direct link to the file](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/raw/master/android-debug.apk)).
+    - Uninstall the Finance and Operations app - Ensure that any previous version of the Finance and Operations app has been uninstalled.
+    - Download the apk file - From the device’s browser, navigate to the latest [Finance and Operations Android debug apk on GitHub](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/blob/master/android-debug.apk) and click **Download** (or use [this direct link to the file](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/raw/master/android-debug.apk)).
     - Install the Finance and Operations apk file - Confirm install of the Finance and Operations app via the apk file.
     - Run the debug Finance and Operations app on the device and sign in.
 
@@ -156,7 +156,7 @@ During development it can be useful to attach a debugger to get more detailed in
 ## Troubleshooting the app
 ### The Mobile Client app is not working on particular devices
 Sometimes the cache associated with the app becomes corrupt or obsolete and needs to be cleared. Unfortunately, the only way to clear the data associated with the app is to uninstall the app.
-To completely uninstall the app, don't use the "long-press wiggle and x on the app icon" method. Instead, completely uninstall the app by navigating to **Settings** > **General** > **iPhone Storage** > **Dynamics 365 Unified Operations**, and then click **Delete App**. After 10-15 seconds, the app can be reinstalled.
+To completely uninstall the app, don't use the "long-press wiggle and x on the app icon" method. Instead, completely uninstall the app by navigating to **Settings** > **General** > **iPhone Storage** > **Finance and Operations (Dynamics 365)**, and then click **Delete App**. After 10-15 seconds, the app can be reinstalled.
 
 ### On Android devices with non-English regions, the comma can't be used as the decimal separator in an amount field
 On Android devices with non-English regions, using a comma as the decimal separator is standard practice. Problems using a comma in an amount field is an Android-specific problem because iPhone works as expected. On Android, use of the comma in an amount field is a problem with the default "gboard" keyboard and some other keyboards. Installing the SwiftKey keyboard (published by Microsoft) allows the entry of commas just like on iPhone: [SwiftKey Keyboard](https://www.microsoft.com/swiftkey).
@@ -164,7 +164,7 @@ On Android devices with non-English regions, using a comma as the decimal separa
 ### Change needed for ADFS to support Mobile Client in on-premises environments 
 If Active Directory Federation Services (ADFS) is in use on the domain and the environment is on-premises, then **ADFS must be configured to provide a regular forms-based authentication screen** instead of using Windows Integrated Authentication (WIA). The Finance and Operations apps for iOS and Android require the regular forms-based authentication screen. ADFS should be configured to only provide WIA for browser clients (use cases). For more information, see [Configure intranet forms based authentication for devices that do not support WIA](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-intranet-forms-based-authentication-for-devices-that-do-not-support-wia).
 
-### Using multi-factor authentication with Finance and Operations apps
+### Using multi-factor authentication with the Finance and Operations app
 The Finance and Operations (Mobile Client) app facilitates user authentication with Azure Active Directory (Azure AD) by presenting the Azure AD sign-in web page within an embedded browser. After a successful sign in, it will retrieve the user token from the cookies and use that when communicating with the user interaction service that it shares with the web client. Some multi-factor authentication mechanisms that involve switching to a different app on the same device will cause the embedded browser to close, so the sign in will fail. The workarounds for this include:
 
 - Different device - Use a different device for the multi-factor authentication response so the app remains active on the original device.
@@ -172,6 +172,9 @@ The Finance and Operations (Mobile Client) app facilitates user authentication w
 - Use the "touch and hold" gesture on the authentication notification and then select the **Accept** option. Because the notification acceptance will not require an app switch, the sign in will proceed as usual.
 
 If there are continued problems with MFA authentication, it is helpful to [submit the Microsoft Authenticator app logs](https://github.com/AzureAD/azure-activedirectory-library-for-objc/wiki/Instructions-on-Collecting-Microsoft-Authenticator-Logs) and provide support with the resulting Incident ID.
+
+### Intune support and conditional access
+The Finance and Operations (Mobile Client) app does not have Microsoft Intune policies implemented, so it does not support Intune initially. However, the app is free and can be added to [Intune](https://docs.microsoft.com/mem/intune/apps/store-apps-ios) to support scenarios like using [Conditional Access with Intune](https://docs.microsoft.com/mem/intune/protect/conditional-access#use-conditional-access-with-intune).
 
 ### Trouble signing out of the app and signing in with new credentials
 If you experience trouble signing out of the app and signing in with new credentials, then you might need to "forget old credentials" on the Azure AD sign-in screen.

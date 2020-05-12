@@ -38,7 +38,7 @@ The `DAYS` function returns an *Integer* value that represents the number of day
 
 ## Syntax
 
-```
+```vb
 DAYS (date 1, date 2) as Integer
 ```
 

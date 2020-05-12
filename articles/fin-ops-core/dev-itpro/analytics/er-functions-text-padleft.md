@@ -38,7 +38,7 @@ The `PADLEFT` function returns a *String* value of the specified length, where t
 
 ## Syntax
 
-```
+```vb
 PADLEFT (text, length, padding chars)
 ```
 

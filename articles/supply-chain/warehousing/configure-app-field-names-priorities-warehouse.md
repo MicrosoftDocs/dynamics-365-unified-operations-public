@@ -2,9 +2,9 @@
 # required metadata
 
 title: Configure app field names in Warehousing app
-description: This topic describes how to define and configure warehouse app field names and priorities in Dynamics 365 Supply Chain Management. 
+description: This topic describes how to define and configure warehousing app field names and priorities in Dynamics 365 Supply Chain Management. 
 author: MarkusFogelberg
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ ms.search.form: WHSMobileAppField, WHSMobileAppFieldPriority
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269434
@@ -34,12 +34,12 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to define and configure warehouse app field names and priorities in Dynamics 365 Supply Chain Management. 
+This topic describes how to define and configure warehousing app field names and priorities in Dynamics 365 Supply Chain Management. 
 
 > [!NOTE]
-> This topic applies to features in Warehouse management. It doesn’t apply to features in Inventory management. Warehousing is an application that you can use to perform warehouse tasks. You can define and configure the field names that are used in the app, as well as configure the priority to which the field names should be assigned. This topic explains how to define and configure these warehouse app field names and priorities, and how they are used in Warehousing. For detailed information about how to configure the connection to FWarehousing, refer to the tutorial [Install and configure the Warehousing app overview](install-configure-warehousing-app.md).
+> This topic applies to features in Warehouse management. It doesn’t apply to features in Inventory management. Warehousing is an application that you can use to perform warehouse tasks. You can define and configure the field names that are used in the app, as well as configure the priority to which the field names should be assigned. This topic explains how to define and configure these warehousing app field names and priorities, and how they are used in Warehousing. For detailed information about how to configure the connection to FWarehousing, refer to the tutorial [Install and configure the Warehousing app overview](install-configure-warehousing-app.md).
 
-## Configure warehouse app field names
+## Configure warehousing app field names
 
 When you use Warehousing on your mobile device, you can configure how metadata should be displayed on your device on the **Warehouse app field names** page. In a new company, select **Create default setup** to generate all field names that will be used in the warehouse mobile device workflows, and then assign a preferred input mode and input type to them. After you have generated all field names, you can select the following input options.
 
@@ -72,7 +72,7 @@ When you use Warehousing on your mobile device, you can configure how metadata s
 </tbody>
 </table>
 
-## Configure warehouse app field priority
+## Configure warehousing app field priority
 
 On the **Warehouse app field priority** page, you can put field names into different priority groups. This makes it possible to decide what information should be displayed on the main task page when warehouse workers perform tasks using the app. If you click **Create default setup**, a default set of priority groups will be generated. It is possible to create as many priority groups as needed, but only three priority groups will be shown on the task page. When the system sends metadata to the app, it will assign each field a relative priority depending on its priority group, and the app will display the first three priority groups contained in the metadata on the task page. The rest of the overflowing metadata will be displayed on a secondary details page. The following table shows an example of five priority groups.
 
@@ -136,7 +136,7 @@ For example, when a warehouse worker is performing a task on a mobile device, if
 -   Item description
 -   Size and Location
 
-Based on the warehouse app field priority set up in the table above, the following 3 rows of information will be displayed on the task page:
+Based on the warehousing app field priority set up in the table above, the following 3 rows of information will be displayed on the task page:
 
 -   Row 1: Item, Quantity, Unit of measure
 -   Row 2: Item description

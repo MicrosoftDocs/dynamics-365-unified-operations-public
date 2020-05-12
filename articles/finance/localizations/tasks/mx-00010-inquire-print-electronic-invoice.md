@@ -2,7 +2,7 @@
 # required metadata 
  
 title: MX-00010 Inquire and print an electronic invoice
-description: Use the CFDI – Electronic invoices form to view, email, export, or print an already-generated CFDI electronic invoice based on a customer’s request. 
+description: Use the CFDI – Electronic invoices form to view, email, export, or print an already-generated CFDI electronic invoice based on a customer's request. 
 author: sndray
 manager: AnnBe 
 ms.date: 08/29/2018
@@ -28,9 +28,9 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # MX-00010 Inquire and print an electronic invoice
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-Use the CFDI – Electronic invoices form to view, email, export, or print an already-generated CFDI electronic invoice based on a customer’s request. The printed CFDI electronic invoice includes two-dimensional bar code in accordance with the format of QR Code (Quick Response Code) that is described in the standard ISO/IEC18004. This task was completed using the MXMF demo data company.
+Use the CFDI – Electronic invoices form to view, email, export, or print an already-generated CFDI electronic invoice based on a customer's request. The printed CFDI electronic invoice includes two-dimensional bar code in accordance with the format of QR Code (Quick Response Code) that is described in the standard ISO/IEC18004. This task was completed using the MXMF demo data company.
 
 1. Go to Accounts receivable > Inquiries and reports > CFDI (electronic invoices).
 2. In the list, click the link in the selected row.

@@ -38,7 +38,7 @@ The `ROUNDAMOUNT` function returns a *Real* value as the result of the rounding 
 
 ## Syntax
 
-```
+```vb
 ROUNDAMOUNT (number, decimals, round rule)
 ```
 

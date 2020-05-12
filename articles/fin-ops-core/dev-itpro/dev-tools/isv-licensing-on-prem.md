@@ -76,7 +76,7 @@ The following procedure can be used for a sandbox environment or a production en
 
     Here is an example of the command.
 
-    ```
+    ```Console
     C:\AOSService\PackagesLocalDirectory\Bin\axutil genlicense /file:c:\templicense.txt /certificatepath:c:\tempisvcert.pfx /licensecode:ISVLicenseCode /customer:TAEOfficial.ccsctp.net /serialnumber:4dbfcf74-c5a6-4727-b638-d56e51d1f381 /password:********
     ```
 

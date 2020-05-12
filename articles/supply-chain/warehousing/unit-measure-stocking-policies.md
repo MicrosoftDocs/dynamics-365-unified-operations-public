@@ -4,7 +4,7 @@
 title: Unit of measure and stocking policies
 description: This article describes how default units, unit sequences, and unit conversions are used in warehouse processes.
 author: perlynne
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ ms.search.form: EcoResProductDetails, EcoResProductDetailsExtended, EcoResStorag
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 29611

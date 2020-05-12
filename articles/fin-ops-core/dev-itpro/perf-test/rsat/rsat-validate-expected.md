@@ -39,9 +39,13 @@ An important component of a test case is validation of expected values. You can 
  
 For more information about how to create task recordings, see [Task recorder resources](../../user-interface/task-recorder.md).
 
+When RSAT generates the Excel parameter file for a test case, validation steps are added as shown in the image below. You can enter the expected value to use during execution of the test case. 
+
+![validate variables](media/rsat-validate-variables.png)
+
 ## Validate expected values using operators
 
-To utilize this feature, you need to edit the config file named **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** in the Regression suite automation tool installation folder. Edit the file and modify the value of the **AddOperatorFieldsToExcelValidation** to **true**.
+You can also use operators in your validation steps. To utilize this feature, you need to edit the config file named **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** in the Regression suite automation tool installation folder. Edit the file and modify the value of the **AddOperatorFieldsToExcelValidation** to **true**.
 
 ```Xml
 <add key=" AddOperatorFieldsToExcelValidation" value="true" />

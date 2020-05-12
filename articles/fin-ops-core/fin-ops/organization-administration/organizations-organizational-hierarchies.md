@@ -52,7 +52,7 @@ A company is a type of legal entity. Currently, companies are the only kind of l
 
 An operating unit is an organization that is used to divide the control of economic resources and operational processes in a business. People in an operating unit have a duty to maximize the use of scarce resources, improve processes, and account for their performance.
 
-The types of operating units include cost centers, business units, value streams, departments, and retail channels. The following table provides more information about each type of operating unit.
+The types of operating units include cost centers, business units, value streams, departments, and commerce channels. The following table provides more information about each type of operating unit.
 
 | Operating unit type | Description | Purpose |
 |---------------------|-------------|---------|
@@ -60,7 +60,7 @@ The types of operating units include cost centers, business units, value streams
 | Business unit       | A semi-autonomous operating unit that is created to meet strategic business objectives. | Used for financial reporting that is based on industries or product lines that the organization serves independently of legal entities. |
 | Value stream        | An operating unit that controls one or more production flows. | Commonly used in lean manufacturing to control the activities and flows that are required to supply a product or service to consumers. |
 | Department          | An operating unit that represents a category or functional part of an organization that performs a specific task, such as sales or accounting. | Used to report on functional areas. A department may have profit and loss responsibility, and may consist of a group of cost centers. |
-| Retail channel      | An operating unit that represents a brick and mortar store, an online store or an online marketplace. | Used for the management and operational control of one or more stores within or across legal entities. |
+| Commerce channel      | An operating unit that represents a brick and mortar store, an online store or an online marketplace. | Used for the management and operational control of one or more stores within or across legal entities. |
 
 ### Teams
 

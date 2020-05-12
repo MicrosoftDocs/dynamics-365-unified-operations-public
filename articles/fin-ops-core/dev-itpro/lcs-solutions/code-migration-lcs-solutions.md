@@ -36,11 +36,15 @@ To complete your solution package, the first step is to upgrade your code by usi
 
 To generate the CAR, run the following command on a development environment.
 
-    xppbp.exe -metadata=<local packages folder> -all -model=<ModelName> -xmlLog=C:\BPCheckLogcd.xml -module=<PackageName> -car=<reportlocation>
+```Console
+xppbp.exe -metadata=<local packages folder> -all -model=<ModelName> -xmlLog=C:\BPCheckLogcd.xml -module=<PackageName> -car=<reportlocation>
+```
 
 Here is an example of this command.
 
-    xppbp.exe -metadata=C:\Packages -all -model=MyAppSuiteCustomizations -xmlLog=C:\temp\BPCheckLogcd.xml -module=ApplicationSuite -car=c:\temp\CAReport.xlsx
+```Console
+xppbp.exe -metadata=C:\Packages -all -model=MyAppSuiteCustomizations -xmlLog=C:\temp\BPCheckLogcd.xml -module=ApplicationSuite -car=c:\temp\CAReport.xlsx
+```
 
 The xppbp.exe file is located in c:\\packages\\bin or I:\\AosService\\Packages\\LocalDirectory\\bin. You must resolve any warnings or errors that appear on the **Issues** tab of the report. You must then submit a copy of the CAR to Microsoft before your validation meeting. For more information, see [Customization Analysis Report (CAR)](../dev-tools/customization-analysis-report.md). For information about issues and exceptions, see the [Customization Analysis Report: Exceptions and known issues](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/03/21/customization-analysis-report-exceptions-and-known-issues) post on the Dynamics 365 Community blog.
 
@@ -51,11 +55,15 @@ The first step in completing your solution package is to upgrade your code using
 
 To generate the Customization Analysis report (CAR), run the following command on a development environment.
 
-    xppbp.exe -metadata=<local packages folder> -all -model=<ModelName> -xmlLog=C:\BPCheckLogcd.xml -module=<PackageName> -car=<reportlocation>
+```Console
+xppbp.exe -metadata=<local packages folder> -all -model=<ModelName> -xmlLog=C:\BPCheckLogcd.xml -module=<PackageName> -car=<reportlocation>
+```
 
 Here's an example of how this command might look.
 
-    xppbp.exe -metadata=C:\Packages -all -model=MyAppSuiteCustomizations -xmlLog=C:\temp\BPCheckLogcd.xml -module=ApplicationSuite -car=c:\temp\CAReport.xlsx
+```Console
+xppbp.exe -metadata=C:\Packages -all -model=MyAppSuiteCustomizations -xmlLog=C:\temp\BPCheckLogcd.xml -module=ApplicationSuite -car=c:\temp\CAReport.xlsx
+```
 
 The xppbp.exe file is located in *c:\packages\bin* or *I:\AosService\Packages\LocalDirectory\bin)*. Any warnings or errors that appear on the **Issues** tab of the report must be resolved. A copy of the CAR report must be submitted to Microsoft prior to your validation meeting. For more information, see [Customization Analysis Report (CAR)](../dev-tools/customization-analysis-report.md) or refer to the [Dynamics Community blog](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/03/21/customization-analysis-report-exceptions-and-known-issues) for issues and exceptions.
 

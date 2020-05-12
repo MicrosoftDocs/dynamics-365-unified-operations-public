@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Commerce preview environment FAQ
+title: Dynamics 365 Commerce preview environment FAQ
 description: This topic provides answers to frequently asked questions about the Microsoft Dynamics 365 Commerce preview environment.
 author: v-chgri
 manager: annbe
-ms.date: 12/10/2019
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -28,9 +28,8 @@ ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
 ---
 
-# Commerce preview environment FAQ
+# Dynamics 365 Commerce preview environment FAQ
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 This topic provides answers to frequently asked questions about the Microsoft Dynamics 365 Commerce preview environment.
@@ -83,14 +82,12 @@ We grant a quota of one Commerce preview environment for each request that is ac
 
 To contact Microsoft if you have questions or requests that are related to the Commerce preview environment, visit the [Microsoft Dynamics 365 Commerce Preview Yammer group](https://aka.ms/Dynamics365CommercePreviewYammer) for help.
 
-If you experience issues when you try to access the Yammer group, you can contact Microsoft by email at <Dynamics365Commerce@microsoft.com>. This email address isn't actively monitored. Therefore, expect a delay in the response.
-
 ## Additional resources
 
-[Commerce preview environment overview](cpe-overview.md)
+[Dynamics 365 Commerce preview environment overview](cpe-overview.md)
 
-[Provision a Commerce preview environment](provisioning-guide.md)
+[Provision a Dynamics 365 Commerce preview environment](provisioning-guide.md)
 
-[Configure a Commerce preview environment](cpe-post-provisioning.md)
+[Configure a Dynamics 365 Commerce preview environment](cpe-post-provisioning.md)
 
-[Configure optional features for a Commerce preview environment](cpe-optional-features.md)
+[Configure optional features for a Dynamics 365 Commerce preview environment](cpe-optional-features.md)

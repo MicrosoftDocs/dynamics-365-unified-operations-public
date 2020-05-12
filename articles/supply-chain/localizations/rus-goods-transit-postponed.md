@@ -4,7 +4,7 @@
 title: Register goods shipped to customers (Russia)
 description: This topic explains how to register the shipment and transfer the ownership of goods that are transported to a customer. 
 author: kfend
-manager: AnnBe
+manager: tfehr
 ms.date: 04/24/2019
 ms.topic: article
 ms.prod: 
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 

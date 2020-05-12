@@ -83,11 +83,15 @@ Unlike the web client, which is highly connected to the server and maintains an 
 
 If you decide to modify existing forms so that they work with the mobile framework, instead of building new mobile-specific forms, you might have to conditionally change the form's behavior for mobile-specific scenarios. You can use the following static X++ application programming interfaces (APIs) in your X++ code to determine whether the code is being accessed during a session where a web client user is designing pages/actions or during a session that the mobile framework back end created to load pages/actions for a mobile user. **When a form is being used with the mobile designer**
 
-    SysTaskRecorderController::isDesigningApp()
+```xpp
+SysTaskRecorderController::isDesigningApp()
+```
 
 **When a form is being used by the mobile framework back end to load pages and run actions**
 
-    SysTaskRecorderController::isExecutingApp()
+```xpp
+SysTaskRecorderController::isExecutingApp()
+```
 
 #### Form control support
 

@@ -3,8 +3,8 @@
  
 title: Record the receipt of goods on the purchase order
 description: This topic explains how to record receipt of goods directly on a purchase order. 
-author: FrankDahl
-manager: AnnBe 
+author: mkirknel
+manager: tfehr 
 ms.date: 07/09/19
 ms.topic: business-process 
 ms.prod:  
@@ -16,21 +16,21 @@ ms.technology:
 ms.search.form: PurchTable, PurchCreateOrder, InventItemIdLookupPurchase, PurchEditLines   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: fdahl
+ms.author: mkirknel
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Record the receipt of goods on the purchase order
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-This topic explains how to record receipt of goods directly on a purchase order. It’s also possible to register product receipt in the warehouse, and then later record it on the purchase order. This task is typically done by a purchasing agent or an accounts payable coordinator. The example shown in this guide can be used in the USMF demo data company. The example includes steps to create a simple purchase order so that you can play the procedure as a task guide. If you were using the procedure on your own data, you would start at the **Record receipt of goods** subtask.
+This topic explains how to record receipt of goods directly on a purchase order. It's also possible to register product receipt in the warehouse, and then later record it on the purchase order. This task is typically done by a purchasing agent or an accounts payable coordinator. The example shown in this guide can be used in the USMF demo data company. The example includes steps to create a simple purchase order so that you can play the procedure as a task guide. If you were using the procedure on your own data, you would start at the **Record receipt of goods** subtask.
 
 
 ## Prepare a new purchase order for receipt of goods

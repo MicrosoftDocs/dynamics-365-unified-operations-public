@@ -28,14 +28,14 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # ER Upload a configuration into Lifecycle Services
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can create a new Electronic reporting (ER) configuration and upload it into Microsoft Lifecycle Services (LCS).
 
-In this example, you will create a configuration and upload it to LCS for sample company, Litware, Inc. These steps can be performed in any company as ER configurations are shared among companies. To complete these steps, you must first complete the steps in the “Create a configuration provider and mark it as active” procedure. Access to LCS is also required for completion of these steps.
+In this example, you will create a configuration and upload it to LCS for sample company, Litware, Inc. These steps can be performed in any company as ER configurations are shared among companies. To complete these steps, you must first complete the steps in the "Create a configuration provider and mark it as active" procedure. Access to LCS is also required for completion of these steps.
 
 1. Go to Organization administration > Workspaces > Electronic reporting.
-2. Select ‘Litware, Inc.’ and set it as active.
+2. Select 'Litware, Inc.' and set it as active.
 3. Click Configurations.
 
 ## Create a new data model configuration
@@ -82,19 +82,19 @@ In this example, you will create a configuration and upload it to LCS for sample
 2. In the tree, select 'Sample model configuration'.
     * Select a created configuration that has been already completed.  
 3. In the list, find and select the desired record.
-    * Select the version of the selected configuration with the status of ‘Completed’.  
+    * Select the version of the selected configuration with the status of 'Completed'.  
 4. Click Change status.
 5. Click Share.
-    * The configuration status will change from ‘Completed’ to ‘Shared’ when it is published in LCS.  
+    * The configuration status will change from 'Completed' to 'Shared' when it is published in LCS.  
 6. Click OK.
 7. In the list, find and select the desired record.
     * Select the configuration version with the status of 'Shared'.  
-    * Note that the status of the selected version has changed from ‘Completed’ to ‘Shared’.  
+    * Note that the status of the selected version has changed from 'Completed' to 'Shared'.  
 8. Close the page.
 9. Click Repositories.
     * This enables you to open the list of repositories for the Litware, Inc. configuration provider.  
 10. Click Open.
     * Select the LCS repository and open it.  
     * Note that the selected configuration is shown as an asset of the selected LCS project.  
-    * Open LCS using https://lcs.dynamics.com. Open a project that was used earlier for repository registration, open the ‘Asset library’ of this project, and expand the content of the ‘GER configuration’ asset type – the uploaded ER configuration will be available. Note that the uploaded LCS configuration can be imported to another instance if providers have access to this LCS project.  
+    * Open LCS using https://lcs.dynamics.com. Open a project that was used earlier for repository registration, open the 'Asset library' of this project, and expand the content of the 'GER configuration' asset type – the uploaded ER configuration will be available. Note that the uploaded LCS configuration can be imported to another instance if providers have access to this LCS project.  
 

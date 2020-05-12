@@ -24,7 +24,7 @@ ms.custom: 76764
 ms.assetid: f061b6cf-16f7-440e-94b9-f40666dd7431
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -113,7 +113,9 @@ The **Error List** pane in Visual Studio shows the build errors and warning that
 
 You can double-click most errors and warnings to see the source of the issue. The element designer or code editor will open, where you can see what property setting or code is causing the error or warning. The **Task List** pane in Visual Studio shows tasks that have been flagged with "TODO" comments in code. For example, the following comment indicates that some object references still require validation.
 
-    // TODO: validate object references
+```xpp
+// TODO: validate object references
+```
 
 When the code is built, these "TODO" comments appear in the **Task List** pane. To view the **Task List** pane, on the **View** menu, click **Task List**. 
 

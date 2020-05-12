@@ -42,8 +42,10 @@ In Japan, the Japan Postal Office provides a ZIP code file that you can import i
 
 3. Open the file for editing, and add the following row for the column headings.
 
-        LocalAuthCode,OldZipCode,ZipCode,PrefectureName,KanaCity,KanaStreetName,State,City,StreetName,MoreZipCodeFlag,SmallerAreaFlag,StreetChomeFlag,MoreStreetFlag,UpdateFlag,Reason
-
+    ```Text
+    LocalAuthCode,OldZipCode,ZipCode,PrefectureName,KanaCity,KanaStreetName,State,City,StreetName,MoreZipCodeFlag,SmallerAreaFlag,StreetChomeFlag,MoreStreetFlag,UpdateFlag,Reason
+    ```
+    
 4. In the file, add zeros before any ZIP code that has fewer than seven digits. ZIP codes that have fewer than seven digits won't be accepted.)
 
 ## Create a data import project and import the data

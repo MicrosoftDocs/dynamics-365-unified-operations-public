@@ -4,7 +4,7 @@
 title: Enable license plate label printing
 description: This topic shows how to enable the automatic printing of a Serial shipping container code (SSCC) label after the last item is picked from inventory in a sales picking work process. 
 author: perlynne
-manager: AnnBe 
+manager: tfehr 
 ms.date: 07/19/2019
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: SysCorpNetPrinterList, WHSParameters, NumberSequenceTableListPage, NumberSequenceDetails, WHSDocumentRoutingLayout, WHSDocumentRouting, WHSRFMenuItem, WHSRFMenu, WHSWorkTemplateTable   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,9 +28,9 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Enable license plate label printing
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-This topic shows how to enable the automatic printing of a Serial shipping container code (SSCC) label after the last item is picked from inventory in a sales picking work process. You can run this procedure in demo data company USMF. If you’re run it using your own data, you need to have a number sequence set up for license plates. You need to set up a label printer before you begin this task. Go to Organization administration > Setup > Network printers. On the Action pane, click Options, and then click the Download document routing agent installer button. Run the installer and make sure that you have a working network printer set to Active before you continue with the procedure.
+This topic shows how to enable the automatic printing of a Serial shipping container code (SSCC) label after the last item is picked from inventory in a sales picking work process. You can run this procedure in demo data company USMF. If you're run it using your own data, you need to have a number sequence set up for license plates. You need to set up a label printer before you begin this task. Go to Organization administration > Setup > Network printers. On the Action pane, click Options, and then click the Download document routing agent installer button. Run the installer and make sure that you have a working network printer set to Active before you continue with the procedure.
 
 
 ## Set up the GS1 company prefix

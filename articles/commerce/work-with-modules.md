@@ -5,7 +5,7 @@ title: Work with modules
 description: This topic describes how and when to use modules in Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes how and when to use modules in Microsoft Dynamics 365 Commerce.
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 ## Overview
@@ -103,12 +103,10 @@ The following procedures describe how to configure content and container modules
 
 To configure a content module on a page, follow these steps.
 
-1. In the outline pane on the left, select a content module type (for example, **Feature**, **Hero**, or **Banner**).
-1. In the properties pane on the right, expand the nested controls by selecting the headers, and set any required control values.
-1. If the properties pane has a **Data Configuration** section, select it to expand it. Otherwise, go to step 5.
-1. If there is a **Add Data Source** button, select it, and then select the content items to add.
-1. Enter settings for any required or desired module controls.
-1. Select **Save**.
+1. In the outline pane on the left, expand the tree and select any content module (for example, **Feature**, **Hero**, or **Banner**).
+1. In the properties pane on the right, find the module's content and settings controls.
+1. Enter properties for any desired module controls.
+1. Select **Save** in the command bar. This will also refresh the preview canvas.
 
 ### Configure a container module
 
@@ -116,7 +114,7 @@ To configure a container module on a page, follow these steps.
 
 1. Select a container module on your page (for example, a carousel or fluid container module).
 1. In the properties pane on the right, expand the nested controls by selecting the headers, and set any required control values.
-1. In the outline pane on the left, select the ellipsis button next to the name of either the container or any slots inside the container, and then select **Add Module**. Then add child modules to the selected container. For more information, see the [Add a module](#add-a-module) procedure earlier in this topic.
+1. In the outline pane on the left, select the ellipsis button next to the name of either the container or any slots inside the container, and then select **Add Module**. Then, add child modules to the selected container. For more information, see the [Work with modules](#add-a-module) section earlier in this topic.
 1. If multiple child modules exist as siblings in a parent container, you can change their display order in the parent container. Select the ellipsis button for a module, and then use the up arrow and down arrow buttons.
 
 ## Additional resources
@@ -130,8 +128,6 @@ To configure a container module on a page, follow these steps.
 [Work with fragments](work-with-fragments.md)
 
 [Add a container module to a page](add-container-module.md)
-
-[Add content placement modules to a page](add-content-placement-modules.md)
 
 [Work with publish groups](publish-groups.md)
 

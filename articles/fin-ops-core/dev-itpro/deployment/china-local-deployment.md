@@ -5,7 +5,7 @@ title: Finance and Operations apps - operated by 21Vianet in China
 description: This topic provides information about Finance and Operations apps - operated by 21Vianet in China.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 03/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -67,8 +67,6 @@ For information on provisioning environments, see [Create and manage environment
 Due to certain technical dependencies, the following features listed will not be available for general availability of the Dynamics 365 Services operated by 21Vianet. For information about future feature availability, see [Business applications and platform release plans](https://go.microsoft.com/fwlink/?linkid=2010158).
 
 -   **Development, build, and testing of customizations** will be unavailable in **Azure DevOps in Mainland China**. However, use of Azure DevOps on-premises will be available in China in April 2019. Also, Azure DevOps can be used in other regions. For more information, see [Developer guide for Azure China 21Vianet](https://docs.microsoft.com/azure/china/china-get-started-developer-guide).
-
--   **Retail cloud scale unit** functionality will be unavailable. However, the [Retail Store Scale Unit](../../../retail/dev-itpro/retail-store-system-begin.md) and Retail Modern Store app will be available in April 2019.
 
 -   [Set up and maintain vendor collaboration](../../../supply-chain/procurement/set-up-maintain-vendor-collaboration.md) will be unavailable due to Azure Active Directory limitations.
 

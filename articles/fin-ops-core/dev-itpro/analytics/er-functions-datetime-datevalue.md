@@ -38,13 +38,13 @@ The `DATEVALUE` function returns a *Date* value that is converted from a given t
 
 ## Syntax 1
 
-```
+```vb
 DATEVALUE (text, format)
 ```
 
 ## Syntax 2
 
-```
+```vb
 DATEVALUE (text, format, culture)
 ```
 

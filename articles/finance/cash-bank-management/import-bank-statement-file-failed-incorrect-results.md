@@ -63,9 +63,11 @@ The BAI2 and MT940 files are text-based files and require an adjustment to enabl
 
 1.  Create an XML file, and copy the following text into it.
 
-        <Batch><![CDATA[PASTESTATEMENTFILEHERE
+    ```xml
+    <Batch><![CDATA[PASTESTATEMENTFILEHERE
         ]]></Batch>
-
+    ```
+    
 2.  Copy the contents of the bank statement file, and paste them into the XML file so that they replace **PASTESTATEMENTFILEHERE**.
 
 ### Debug the XSLT

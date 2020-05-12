@@ -38,7 +38,7 @@ The `CONVERTCURRENCY` function returns a *Real* value that represents the result
 
 ## Syntax
 
-```
+```vb
 CONVERTCURRENCY (amount, source currency, target currency, date, company)
 ```
 

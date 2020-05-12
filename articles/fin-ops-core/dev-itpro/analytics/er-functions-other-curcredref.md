@@ -38,7 +38,7 @@ The `CURCREDREF` function returns a *String* value that represents a creditor re
 
 ## Syntax
 
-```
+```vb
 CURCREDREF (invoice number digits)
 ```
 

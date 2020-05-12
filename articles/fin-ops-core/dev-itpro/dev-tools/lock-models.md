@@ -47,12 +47,14 @@ Transitioning a model from over-layering to extensions involves three steps:
 
 Currently, there is no tooling that you can use to manipulate the property that disables customizations. Instead, you must add the **Customization** XML element to the model descriptor file, as shown in the following example. You can find the model descriptor file at ...\\&lt;packages&gt;\\&lt;package name&gt;\\Descriptor\\&lt;model name&gt;.xml.
 
-    <?xml version="1.0" encoding="utf-8"?>
-    <AxModelInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
-    <Customization>DoNotAllow</Customization>
-    <Description>My cool locked application</Description>
-    ...
-    <</AxModelInfo>
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<AxModelInfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+<Customization>DoNotAllow</Customization>
+<Description>My cool locked application</Description>
+...
+<</AxModelInfo>
+```
 
 There are three levels of customization settings:
 
@@ -60,42 +62,51 @@ There are three levels of customization settings:
 -   **Soft-locking** – If you require soft-locking, use the text **AllowAndWarn** inside the **Customization** element.
 -   **Hard-locking** – To disable customization of the model, use the text **DoNotAllow** inside the **Customization** element, as shown in the preceding example.
 
-**Note:** Elements in the descriptor file must be listed in alphabetical order.
+> [!NOTE]
+> Elements in the descriptor file must be listed in alphabetical order.
 
 ## Backward compatibility of the platform
 There is a requirement that your application must continue to run even if a newer version of a dependent platform model is installed. Therefore, we enforce strict requirements for backward compatibility on all the changes that we make in those platform models. We can clarify this point through an example. For this example, you have a base model M that has the following class.
 
-    public void DoSomething(int arg)
-    {
-        // Do great stuff
-    }
+```xpp
+public void DoSomething(int arg)
+{
+    // Do great stuff
+}
+```
 
 In your model that depends on model M, you want to take advantage of all the great functionality that the **DoSomething** class offers. Therefore, you have the following code.
 
-    {
-        var c = new SomeClass();
-        c.DoSomething(42);
-    }
+```xpp
+{
+    var c = new SomeClass();
+    c.DoSomething(42);
+}
+```
 
 Later, your vendor (perhaps Microsoft) releases a new, updated version of the model that you depend on (model M). When this model is released, we must support the public interface, because things must run without recompilation. Suppose that we changed the method signature by adding another parameter, as shown here.
 
-    public void DoSomething(int arg, str anotherArg)
-    {
-        // Do greater stuff
-    }
+```xpp
+public void DoSomething(int arg, str anotherArg)
+{
+    // Do greater stuff
+}
+```
 
 In this case, we break the app. The common language runtime (CLR) can’t call the method, because the parameter profile that is assumed in the call isn’t the same as the parameter profile of the callee (the calling code provided one parameter, but two are now required). Therefore, it’s a good idea to limit what is publicly consumable. If something is private, nobody can use it from outside your model. However, another option is to make the artifact internal. If you apply the **internal** modifier to a class or method, the artifact is visible only inside your model and can’t be reached from the outside. Essentially, you must assume that anything that isn’t internal or private will be used from outside your model. Therefore, you must support it forever. Never make anything public or protected unless it absolutely must be public or protected, and use interfaces to hide implementation details that aren’t relevant outside the boundary of your model. There is no way to mark metadata (as opposed to code) with the internal visibility specifier.
 
 ## Testing internal functionality
 By limiting the surface area of your model, you help guarantee that you will be able to fix issues in your models that do not allow customizations, and that the application will run smoothly. However, you might argue that, by making things internal, you limit the ability to test your code. To remedy this situation, you can inform your test packages about the packages that they should test. In other words, the test packages can access internal things. To implement this solution, you edit the descriptor file, as shown in the following example.
 
-    <?xml version="1.0" encoding="utf-8"?>
-    <AxModelInfo xmlns:i=http://www.w3.org/2001/XMLSchema-instance>
-    <InternalsVisibleTo xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-    <d2p1:string>ExternalPackageName</d2p1:string>
-    </InternalsVisibleTo>
-    ...
-    </AxModelInfo>
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<AxModelInfo xmlns:i=http://www.w3.org/2001/XMLSchema-instance>
+<InternalsVisibleTo xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+<d2p1:string>ExternalPackageName</d2p1:string>
+</InternalsVisibleTo>
+...
+</AxModelInfo>
+```
 
 You can provide any number of external packages by including them in the **InternalsVisibleTo** element. This information is provided for the package that contains the code to test, not for the package that contains the testing code. In other words, the package determines who it shares information with. **Note:** The elements under **AxModelInfo** must be in alphabetical order.
 
@@ -109,43 +120,49 @@ Sometimes, you no longer want to support source code that is public. As we menti
 
 In the following example, the **DoSomething** method is defined in the first release of a model.
 
-    class SomeApi
+```xpp
+class SomeApi
+{
+    void DoSomething()
     {
-        void DoSomething()
-        {
-            // Do great stuff
-        }
+        // Do great stuff
     }
+}
+```
 
 In the second release, you’ve determined that there is a better way to accomplish something. Therefore, you add the new implementation and make the old implementation obsolete.
 
-    class SomeApi
+```xpp
+class SomeApi
+{
+    [SysObsolete("Use DoSomethingNew instead", false)]
+    void DoSomething()
     {
-        [SysObsolete("Use DoSomethingNew instead", false)]
-        void DoSomething()
-        {
-            // Do great stuff
-        }
-
-        void DoSomethingNew()
-        {
-        }
+        // Do great stuff
     }
+
+    void DoSomethingNew()
+    {
+    }
+}
+```
 
 All your existing customers will continue to call the old version. This situation is fine, but the customers won’t be able to take advantage of the benefits of the new version. Anyone who codes against your class will receive a build warning together with the message that you provided in the **SysObsolete** attribute argument. Presumably, these clients will update their code so that it uses the new method. As time passes, more clients will move to the new version. Therefore, at some point, it will make sense for you to make coding against the method a hard error.
 
-    class SomeApi
+```xpp
+class SomeApi
+{
+    [SysObsolete("Use DoSomethingNew instead", true)]
+    void DoSomething()
     {
-        [SysObsolete("Use DoSomethingNew instead", true)]
-        void DoSomething()
-        {
-            // Do great stuff
-        }
-
-        void DoSomethingNew()
-        {
-        }
+        // Do great stuff
     }
+
+    void DoSomethingNew()
+    {
+    }
+}
+```
 
 Again, for the reasons that we mentioned earlier, you may never be able to get rid of the old method completely, because it was not made private or internal.
 

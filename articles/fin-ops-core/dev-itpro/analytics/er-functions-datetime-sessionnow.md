@@ -38,7 +38,7 @@ The `SESSIONNOW` function returns a *DateTime* value that represents the current
 
 ## Syntax
 
-```
+```vb
 SESSIONNOW ()
 ```
 

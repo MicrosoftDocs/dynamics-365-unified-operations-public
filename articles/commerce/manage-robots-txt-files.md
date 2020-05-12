@@ -5,7 +5,7 @@ title: Manage robots.txt files
 description: This topic describes how to manage robots.txt files in Microsoft Dynamics 365 Commerce.
 author: BrianShook
 manager: annbe
-ms.date: 01/08/2020
+ms.date: 03/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 
 # Manage robots.txt files
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic describes how to manage robots.txt files in Microsoft Dynamics 365 Commerce.
@@ -96,11 +96,19 @@ To delete a robots.txt file in Commerce, follow these steps.
 
 [Deploy a new e-Commerce site](deploy-ecommerce-site.md)
 
+[Set up an online store channel](online-stores.md)
+
 [Create an e-Commerce site](create-ecommerce-site.md)
 
 [Associate an online site with a channel](associate-site-online-store.md)
 
+[Upload URL redirects in bulk](upload-bulk-redirects.md)
+
+[Set up a B2C tenant in Commerce](set-up-B2C-tenant.md)
+
 [Set up custom pages for user logins](custom-pages-user-logins.md)
+
+[Configure multiple B2C tenants in a Commerce environment](configure-multi-B2C-tenants.md)
 
 [Add support for a content delivery network (CDN)](add-cdn-support.md)
 

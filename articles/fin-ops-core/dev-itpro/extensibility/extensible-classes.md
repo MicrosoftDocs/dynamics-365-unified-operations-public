@@ -45,7 +45,7 @@ A class and its methods should have a single responsibility. Keep the following 
 
 **Non-extensible code**
 
-```
+```xpp
     void calculatePrice(SalesLine _saleLine, AmountMST _amount)
     {
         // cannot add extra condition if needed
@@ -62,7 +62,7 @@ A class and its methods should have a single responsibility. Keep the following 
 
 **Extensible code**
 
-```
+```xpp
  protected boolean canUpdateSalesPrice(SalesLine _saleLine)
     {
         return (_saleLine.QtyOrdered > 0 &&
@@ -97,7 +97,7 @@ Some existing factory methods might not instantiate subclasses by using the inst
 For more information about class hierarchies, see the following blog posts:
 
 + [SysExtension Framework – to the rescue](https://community.dynamics.com/365/financeandoperations/b/mfp/posts/sysextension-framework-to-the-rescue)
-+ [Embrace the extensions mindset with Dynamics 365 for Finance and Operations #2 – SysExtension framework](https://blogs.msdn.microsoft.com/axinthefield/embrace-the-extensions-mindset-with-dynamics-365-for-finance-and-operations-2-sysextension-framework/)
++ [Embrace the extensions mindset with Dynamics 365 for Finance and Operations #2 – SysExtension framework](https://community.dynamics.com/ax/b/axinthefield/posts/embrace-the-extensions-mindset-with-dynamics-365-for-finance-and-operations-2-sysextension-framework)
 
 ## Deprecation
 If a class or a public or protected method is no longer required, always use a warning first to notify consumers that the method is obsolete. Then, when all consumers have had the chance to uptake the changes or the new API, the method can be deprecated. Deprecation of classes and methods (or removal of class members in other cases) is a breaking change. For more information, see [Breaking changes](breaking-changes.md).

@@ -4,7 +4,7 @@
 title: Inventory statuses
 description: This article describes how you can use inventory statuses to categorize and keep track of inventory.
 author: MarkusFogelberg
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod:
@@ -17,7 +17,7 @@ ms.search.form: EcoResStorageDimensionGroup, WHSInventStatus
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 21331

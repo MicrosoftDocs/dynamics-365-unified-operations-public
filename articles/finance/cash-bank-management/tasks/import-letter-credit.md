@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Import letter of credit
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This procedure walks through the process of importing a letter of credit. The following must be set up before completing this procedure: bank facilities, posting profiles, a bank facility agreement and vendor bank details.
 

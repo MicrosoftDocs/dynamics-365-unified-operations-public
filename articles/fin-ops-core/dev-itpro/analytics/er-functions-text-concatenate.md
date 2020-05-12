@@ -38,7 +38,7 @@ The `CONCATENATE` function returns all the specified text strings as a *String* 
 
 ## Syntax
 
-```
+```vb
 CONCATENATE (text 1[, text 2, …, text N])
 ```
 

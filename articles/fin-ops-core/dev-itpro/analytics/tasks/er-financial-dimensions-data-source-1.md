@@ -28,16 +28,16 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # ER Use financial dimensions as a data source (Part 1 - Design data model)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 The following steps explain how either a system administrator or electronic reporting developer can configure an Electronic reporting (ER) model to use financial dimensions as a data source for ER reports. These steps can be performed in any company.
 
-To complete these steps, you must first complete the steps in the procedure, “Create a configuration provider and mark it as active”.
+To complete these steps, you must first complete the steps in the procedure, "Create a configuration provider and mark it as active".
 
 
 ## Create a new data model
 1. Go to Organization administration > Workspaces > Electronic reporting.
-    * Make sure that the “Litware, Inc.” provider is available and marked as active.  
+    * Make sure that the "Litware, Inc." provider is available and marked as active.  
 2. Click Reporting configurations.
 3. Click Create configuration to open the drop dialog.
 4. In the Name field, type 'Financial dimensions sample model'.
@@ -49,7 +49,7 @@ To complete these steps, you must first complete the steps in the procedure, “
 10. Click New to open the drop dialog.
 11. In the Name field, type 'Company'.
 12. Click Add.
-    * We will add to our model a new record list. This list will expose (for any ER reports using this model as data source) the settings of selected financial dimensions. Each financial dimension will be presented in this list as a record with appropriate fields representing dimension’s setting.  
+    * We will add to our model a new record list. This list will expose (for any ER reports using this model as data source) the settings of selected financial dimensions. Each financial dimension will be presented in this list as a record with appropriate fields representing dimension's setting.  
 13. Click New to open the drop dialog.
 14. In the Name field, type 'Dimensions setting'.
 15. In the Item type field, select 'Record list'.
@@ -96,7 +96,7 @@ To complete these steps, you must first complete the steps in the procedure, “
 56. In the Name field, type 'Dimensions data'.
 57. In the Item type field, select 'Record list'.
 58. Click Add.
-    * We added to our model a new record list. This list will expose (for any ER reports using this model as data source) the values of selected financial dimensions. Each financial dimension will be presented in this list as a record with appropriate fields representing dimension’s values. Dimension name will be also presented in this record as a field to be used, if needed, for selection purposes.  
+    * We added to our model a new record list. This list will expose (for any ER reports using this model as data source) the values of selected financial dimensions. Each financial dimension will be presented in this list as a record with appropriate fields representing dimension's values. Dimension name will be also presented in this record as a field to be used, if needed, for selection purposes.  
 59. Click New to open the drop dialog.
 60. In the Name field, type 'Code'.
 61. In the Item type field, select 'String'.

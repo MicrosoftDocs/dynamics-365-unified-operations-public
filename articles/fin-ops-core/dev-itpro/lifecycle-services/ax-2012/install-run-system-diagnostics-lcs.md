@@ -49,7 +49,7 @@ To install the System diagnostics on-premises component, the following is requir
 
 This section describes the permissions that are required for the service account that the Lifecycle Services Diagnostic Service (LCSDiagFXService.exe) runs as.
 
--   The service account must be a domain account that is a user in Microsoft Dynamics AX and a member of the **BusinessConnector** role. We strongly recommend that, if possible, the account be the same account used for the .NET Business Connector proxy. For more information, see [Specify the .NET Business Connector proxy account](http://technet.microsoft.com/library/3e46dc0a-2ff4-4a06-ae61-041e52dcc774(AX.60).aspx) and [Assign users to security roles](http://technet.microsoft.com/library/214ee45b-5b99-4ea8-9454-f4297f68e38c(AX.60).aspx).
+-   The service account must be a domain account that is a user in Microsoft Dynamics AX and a member of the **BusinessConnector** role. We strongly recommend that, if possible, the account be the same account used for the .NET Business Connector proxy. For more information, see [Specify the .NET Business Connector proxy account](https://technet.microsoft.com/library/3e46dc0a-2ff4-4a06-ae61-041e52dcc774(AX.60).aspx) and [Assign users to security roles](https://technet.microsoft.com/library/214ee45b-5b99-4ea8-9454-f4297f68e38c(AX.60).aspx).
 
     | **Note**                                                                                                                     |
     |------------------------------------------------------------------------------------------------------------------------------|
@@ -95,8 +95,8 @@ To grant access to collect data from the Windows registry on a server that hosts
 <tr class="odd">
 <td>As you are configuring rights in the registry, do not reduce account privileges that already exist. For more information about Advanced security settings, see:
 <ul>
-<li><a href="http://technet.microsoft.com/library/jj134043.aspx">Windows Server 2012 Access Control and Authorization Overview</a></li>
-<li><a href="http://technet.microsoft.com/library/cc730772.aspx">Windows Server 2008 R2 Advanced Security Settings Properties Page - Permissions Tab</a></li>
+<li><a href="https://technet.microsoft.com/library/jj134043.aspx">Windows Server 2012 Access Control and Authorization Overview</a></li>
+<li><a href="https://technet.microsoft.com/library/cc730772.aspx">Windows Server 2008 R2 Advanced Security Settings Properties Page - Permissions Tab</a></li>
 </ul></td>
 </tr>
 </tbody>
@@ -115,7 +115,7 @@ You must make the services of the AOS remotely accessible in Group Policy.
 
 #### Configure Windows event log and WMI permissions
 
-The service account must be able to read the Windows event logs on each server in the environment, and must be able to monitor remote Windows Management Instrumentation connections. For more information, see [Add a member to a local group](http://technet.microsoft.com/library/cc772524(v=WS.10).aspx).
+The service account must be able to read the Windows event logs on each server in the environment, and must be able to monitor remote Windows Management Instrumentation connections. For more information, see [Add a member to a local group](https://technet.microsoft.com/library/cc772524(v=WS.10).aspx).
 
 -   On each server in the environment, add the service account to the **Event Log Readers** local group, the **Distributed COM Users** local group and the **Performance Monitor Users** local group.
 
@@ -146,15 +146,15 @@ On each server in your environment that hosts an AOS instance or Microsoft Dynam
 
 7.  Repeat step 6 for the Performance Monitor Users group, and then close all windows.
 
-For more information, see [Securing a Remote WMI Connection](http://msdn.microsoft.com/library/windows/desktop/aa393266(v=vs.85).aspx).
+For more information, see [Securing a Remote WMI Connection](https://msdn.microsoft.com/library/windows/desktop/aa393266(v=vs.85).aspx).
 
 #### Configure SQL Server permissions
 
 The service account must be able to read the data in the Microsoft Dynamics AX business database and must have access to the default dynamic management views in SQL Server.
 
-1.  Add the service account as a login to the SQL Server instance where the Microsoft Dynamics AX business database is installed. For information about how to perform this step, see [Create a Login](http://msdn.microsoft.com/library/aa337562.aspx).
-2.  Add the account as a user of the business database. For information about how to perform this step, see [How to: Create a Database User](http://msdn.microsoft.com/library/aa337545.aspx).
-3.  Add the service account to the db\_datareader role in the business database. For information about how to perform this step, see [Join a Role](http://msdn.microsoft.com/library/ff877886.aspx).
+1.  Add the service account as a login to the SQL Server instance where the Microsoft Dynamics AX business database is installed. For information about how to perform this step, see [Create a Login](https://msdn.microsoft.com/library/aa337562.aspx).
+2.  Add the account as a user of the business database. For information about how to perform this step, see [How to: Create a Database User](https://msdn.microsoft.com/library/aa337545.aspx).
+3.  Add the service account to the db\_datareader role in the business database. For information about how to perform this step, see [Join a Role](https://msdn.microsoft.com/library/ff877886.aspx).
 4.  Grant the service account the VIEW SERVER STATE permission in the SQL Server instance.
     1.  In SQL Server Management Studio, expand **Databases**, right-click the **Microsoft Dynamics AX** database, and then click **Properties**.
     2.  Click **Permissions**, and then click **View server permissions**.
@@ -163,7 +163,7 @@ The service account must be able to read the data in the Microsoft Dynamics AX b
 
 ### Verify that the .NET Business connector service is running in the environment
 
-The Business Connector service must be running on the host where the Lifecycle Services Diagnostic Service is installed. If more than one environment is to be discovered, the .Net Business Connector proxy account must be the same for each server that is running a Microsoft Dynamics AX Application Object Server (AOS) instance. For more information, see [Install the .NET Business Connector](http://technet.microsoft.com/library/c67944e8-73c5-4434-94d6-84484c810333(AX.60).aspx).
+The Business Connector service must be running on the host where the Lifecycle Services Diagnostic Service is installed. If more than one environment is to be discovered, the .Net Business Connector proxy account must be the same for each server that is running a Microsoft Dynamics AX Application Object Server (AOS) instance. For more information, see [Install the .NET Business Connector](https://technet.microsoft.com/library/c67944e8-73c5-4434-94d6-84484c810333(AX.60).aspx).
 
 ### Install the Microsoft Dynamics Lifecycle Services System diagnostics
 
@@ -212,7 +212,7 @@ You can collect data on demand from the **Environment Discovery** window. We rec
 1.  To run an initial data collection in the **Environment Discovery** window, click **Collect now**. We recommend that you run an initial collection immediately after discovering an environment for the first time.
 2.  To generate a collection command that you can use to schedule collection jobs, click **Generate collection command**.
 3.  Copy the generated command to the clipboard.
-4.  Schedule the command to run by using a scheduling engine, such as **Windows Task Scheduler**. For more information about using **Task Scheduler**, see [Schedule a task](http://technet.microsoft.com/library/cc766428.aspx).
+4.  Schedule the command to run by using a scheduling engine, such as **Windows Task Scheduler**. For more information about using **Task Scheduler**, see [Schedule a task](https://technet.microsoft.com/library/cc766428.aspx).
 
 ## Use same X509 certificate for all environments
 

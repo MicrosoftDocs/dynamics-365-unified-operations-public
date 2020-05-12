@@ -38,7 +38,7 @@ The `FIRSTORNULL` function returns the first record of the specified list as a *
 
 ## Syntax
 
-```
+```vb
 FIRSTORNULL (list)
 ```
 

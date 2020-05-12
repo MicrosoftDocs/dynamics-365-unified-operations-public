@@ -4,7 +4,7 @@
 title: Register driver check-in and check-out for an appointment
 description: This procedure shows how to register a driver check-in and a driver check-out. 
 author: ShylaThompson
-manager: AnnBe 
+manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: TMSDriverLogListPage, TMSDriverCheckIn   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,9 +28,9 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Register driver check-in and check-out for an appointment
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-This procedure shows how to register a driver check-in and a driver check-out. This is typically done by a transportation coordinator. You can use this procedure in the USMF demo data company. Before you start, there must be an appointment set up for a load. To create an appointment, you can run the “Set up an appointment for a load” procedure as a prerequisite.
+This procedure shows how to register a driver check-in and a driver check-out. This is typically done by a transportation coordinator. You can use this procedure in the USMF demo data company. Before you start, there must be an appointment set up for a load. To create an appointment, you can run the "Set up an appointment for a load" procedure as a prerequisite.
 
 
 ## Select an appointment

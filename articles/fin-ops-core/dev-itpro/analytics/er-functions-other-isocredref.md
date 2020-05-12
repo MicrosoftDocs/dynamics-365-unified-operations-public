@@ -38,7 +38,7 @@ The `ISOCREDREF` function returns a *String* value that represents an Internatio
 
 ## Syntax
 
-```
+```vb
 ISOCREDREF (invoice number digits)
 ```
 

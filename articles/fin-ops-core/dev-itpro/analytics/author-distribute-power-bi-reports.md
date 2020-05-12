@@ -45,7 +45,7 @@ When you use Power BI Desktop, you can create a report in your development or te
 > To develop or extend analytical workspaces and reports in the application suite, customers must use a development environment running in their own subscription or on local machines. You won’t be able to develop or extend embedded analytical reports in Microsoft-provided, Tier-1 environments. You need administrator rights to install Power BI Desktop.
 
 ### Step 1: Populate the local Entity Store database
-For this example, we will stage the aggregate models that the Retail analytical solution consumes in the local Entity Store. The models that the Retail application uses are defined in the RetailCube aggregate measurement. 
+For this example, we will stage the aggregate models that the Commerce analytical solution consumes in the local Entity Store. The models that the application uses are defined in the RetailCube aggregate measurement. 
 
 1. In the client, open the **Entity Store** page. (Select **System administration** \> **Setup** \> **Entity Store**.) 
 2. Select the **RetailCube** aggregate measurement, and then select **Refresh**. 

@@ -3,9 +3,9 @@
 
 title: Create deployable packages of models
 description: This topic describes the workflow for creating and applying a deployable package.
-author: robadawy
+author: jorisdg
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 05/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -23,7 +23,7 @@ ms.search.scope: Operations
 ms.custom: 24211
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -33,11 +33,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-An AOT package is a deployment and compilation unit of one or more models that can be applied to an environment. It includes model metadata, binaries, reports and other associated resources. One or more AOT packages can be packaged into a deployable package, which is the vehicle used for deployment of code (and customizations) on demo, sandbox and production environments. This article guides you through the process of creating and applying a deployable package. 
+An AOT package is a deployment and compilation unit of one or more models that can be applied to an environment. It includes model metadata, binaries, reports and other associated resources. One or more AOT packages can be packaged into a deployable package, which is the vehicle used for deployment of code (and customizations) on demo, sandbox, and production environments. This topic guides you through the process of creating and applying a deployable package. 
 
 ## Overview of the process
 
-In order to deploy your code and customizations to a runtime environment (Demo, Sandbox or Production), you must create deployable packages of your solution or implementation. Deployable packages can be created using the **Visual Studio dev tools**, or by the **build automation process** that are available on build environments. These deployable packages are referred to as Application Deployable Packages or AOT Deployable Packages. The image below is an overview of the process. Once a deployable package is created, it must be uploaded to the LCS project's asset library. An administrator can then go to the LCS environment page and apply the package to a runtime environment using the **Maintain &gt; Apply updates** tool. 
+In order to deploy your code and customizations to a runtime environment (demo, sandbox, or production), you must create deployable packages of your solution or implementation. Deployable packages can be created by using **Visual Studio dev tools** or by using the **build automation process** that is available on build environments. These deployable packages are referred to as Application Deployable Packages or AOT Deployable Packages. The following image shows an overview of the process. After a deployable package is created, it must be uploaded to the Lifecycle Services (LCS) project's asset library. An administrator can then go to the LCS environment page and apply the package to a runtime environment using the **Maintain &gt; Apply updates** tool. 
+
+> [!NOTE]
+> Custom payment connector for Commerce needs to be packaged using a combined AOT deployable package. For more information, see [Create payment packaging for Application Explorer in Service Fabric deployments](../../../commerce/dev-itpro/payment-connector-package.md).
 
 ![Create and apply a deployment package](./media/createandapplydeployablepackage.png)
 
@@ -57,12 +60,12 @@ On a development environment, after you have completed development and testing, 
 2.  Select the packages that contain your models, and then select a location in which to create the deployable package. 
 ![Select a location](./media/pack4.png)
 
-3.  After a deployable package is created, sign in to Microsoft Dynamics Lifecycle Services (LCS), and then, in your LCS project, click the **Asset Library** tile.
+3.  After a deployable package is created, sign in to Lifecycle Services, and then, in your LCS project, click the **Asset Library** tile.
 
 4.  Upload the deployable package that you created earlier.
 
 ## Apply a deployable package
-To apply a deployable package to an environment, see the article [Apply updates to cloud environments](apply-deployable-package-system.md).
+To apply a deployable package to an environment, see [Apply updates to cloud environments](apply-deployable-package-system.md).
 
 ## Remove a deployable package
-To uninstall or remove a deployable package from an environment, see the article [Uninstall a package](uninstall-deployable-package.md).
+To uninstall or remove a deployable package from an environment, see [Uninstall a package](uninstall-deployable-package.md).

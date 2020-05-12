@@ -33,9 +33,9 @@ ms.dyn365.ops.version: Platform update 4
 
 [!include [banner](../includes/banner.md)]
 
-Dynamics 365 Finance, Supply Chain, and Retail are extensively customized by partners, value added resellers (VARs), and even some customers. The ability to customize the product is a strength that has historically been supported through overlayering of the application code. The move to the cloud, together with more agile servicing and frequent updates, requires a less intrusive customization model, so that updates are less likely to affect custom solutions. This new model is called *extensibility* and has replaced customization through overlayering.
+Dynamics 365 Finance, Supply Chain, and Commerce are extensively customized by partners, value added resellers (VARs), and even some customers. The ability to customize the product is a strength that has historically been supported through overlayering of the application code. The move to the cloud, together with more agile servicing and frequent updates, requires a less intrusive customization model, so that updates are less likely to affect custom solutions. This new model is called *extensibility* and has replaced customization through overlayering.
 
-Extensibility is the only customization framework in Finance, Supply Chain, and Retail. Overlayering isn't supported.
+Extensibility is the only customization framework in Finance, Supply Chain, and Commerce. Overlayering isn't supported.
 
 ## Introduction
 
@@ -113,7 +113,7 @@ Information about customization is also shared through blogs where various topic
 + [Extensible base enumerations](https://kashperuk.blogspot.dk/2016/09/development-tutorial-extensible-base.html)
 + [Static event subscription](https://community.dynamics.com/365/financeandoperations/b/mfp/posts/x-in-ax7-static-event-subscription/)
 + [Subscribing to onValidatingWrite](https://community.dynamics.com/365/financeandoperations/b/mfp/posts/subscribing-to-onvalidatingwrite/)
-+ [Embrace the extensions mindset with Dynamics 365 for Finance and Operations](https://blogs.msdn.microsoft.com/axinthefield/embrace-the-extensions-mindset-with-dynamics-365-for-finance-and-operations/)
++ [Embrace the extensions mindset with Dynamics 365 for Finance and Operations](https://community.dynamics.com/ax/b/axinthefield/posts/embrace-the-extensions-mindset-with-dynamics-365-for-finance-and-operations-2-sysextension-framework)
 + [Extensible X++ - Method Signatures](https://community.dynamics.com/365/financeandoperations/b/mfp/posts/extensible-x-method-signatures/)
 
 ## How do I create an extensible solution?
@@ -131,4 +131,8 @@ This section includes some best practices on how to create/make your solution ex
 + [Attributes that make methods extensible](extensibility-attributes.md)
 
 ## Breaking changes
-When you make your solution extensible, you also help guarantee that you won't break those extension points later. For pointers that can help you avoid breaking your consumers, see [Breaking changes](breaking-changes.md).
+
+When you make your solution extensible, you also help guarantee that you won't break those extension points later. 
+
++ For pointers that can help you avoid breaking your consumers, see [Breaking changes](breaking-changes.md).
++ The [compatibility checker tool](compatibility-checker-tool.md) can detect metadata breaking changes against a given baseline release or update, helping to ensure backward compatibility.

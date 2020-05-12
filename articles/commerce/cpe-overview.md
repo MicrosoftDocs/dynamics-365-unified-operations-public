@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Commerce preview environment overview
+title: Dynamics 365 Commerce preview environment overview
 description: This topic gives an overview of the Microsoft Dynamics 365 Commerce preview environment.
 author: v-chgri
 manager: annbe
@@ -28,9 +28,9 @@ ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
 ---
 
-# Commerce preview environment overview
+# Dynamics 365 Commerce preview environment overview
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic gives an overview of the Microsoft Dynamics 365 Commerce preview environment.
@@ -56,10 +56,10 @@ To provision the Commerce preview environment, see [Provision a Commerce preview
 
 ## Additional resources
 
-[Provision a Commerce preview environment](provisioning-guide.md)
+[Provision a Dynamics 365 Commerce preview environment](provisioning-guide.md)
 
-[Configure a Commerce preview environment](cpe-post-provisioning.md)
+[Configure a Dynamics 365 Commerce preview environment](cpe-post-provisioning.md)
 
-[Configure optional features for a Commerce preview environment](cpe-optional-features.md)
+[Configure optional features for a Dynamics 365 Commerce preview environment](cpe-optional-features.md)
 
-[Commerce preview environment FAQ](cpe-faq.md)
+[Dynamics 365 Commerce preview environment FAQ](cpe-faq.md)

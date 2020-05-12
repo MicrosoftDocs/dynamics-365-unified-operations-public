@@ -38,7 +38,7 @@ The `ROUND` function returns the specified number as a *Real* value after it has
 
 ## Syntax
 
-```
+```vb
 ROUND (number, decimals)
 ```
 
