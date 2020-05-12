@@ -5,7 +5,7 @@ title: Override POS request handler
 description: This topic explains how you can extend Commerce Data Exchange - Real-time service by adding extension methods to the RetailTransactionServiceEx class. Real-time service enables clients to interact with Commerce functionality in real time.
 author: mugunthanm
 manager: AnnBe
-ms.date: 02/06/2020
+ms.date: 05/12/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -59,7 +59,7 @@ In each monthly update we will be adding additional extension points, so check t
 | GetReceiptEmailAddressClientRequestHandler | Executed when you get a receipt email address.                                                 |
 | DepositOverrideOperationRequestHandler     | Executed when you override a deposit.                                                          |
 | GetShippingChargeClientRequestHandler      | Executed when get shipping charge workflow initiated during customer order flow.                                                             |
-| GetKeyedInPriceClientRequestHandler      | Executed when the must key in product price dialog is shown.                                                           |
+| GetKeyedInPriceClientRequestHandler      | Executed when the key in product price dialog box is shown.                                                           |
 
 **Payment extension handler**
 
