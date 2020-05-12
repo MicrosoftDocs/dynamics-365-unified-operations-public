@@ -1,11 +1,11 @@
-  ---
+---
 # required metadata
 
 title: Customer electronic invoices
-description: This topic provides information about customer electronic invoices management for Italy.
+description: This topic provides information about managing customer electronic invoices for Italy.
 author: v-oloski
 manager: 
-ms.date: 04/24/2020
+ms.date: 05/12/2020
 ms.topic: article
 ms.: 
 ms.service: dynamics-ax-applications
@@ -23,23 +23,23 @@ ms.search.scope: Core, Operations
 ms.search.region: Italy
 # ms.search.industry: 
 ms.author: v-oloski
+
 ---
 
 # Customer electronic invoices
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to set up and work with the functionality for creation
-and sending sales and project invoices in electronic format (FatturaPA).  
+This topic describes how to set up and work with the functionality for creation and sending sales and project invoices in electronic format (FatturaPA).  
   
-Electronic invoices "FatturaPA" version 1.2 can be used for all types of businesses, including public administrations, private
-companies and professionals. 
+Electronic invoices "FatturaPA" version 1.2 can be used for all types of businesses, including public administrations, private companies and professionals. 
 
 > [!NOTE] 
 > The primary address of the legal entity must be in Italy.
 
 This topic contains:
-- [Setup](/setup).
+
+- [Setup](/setup)
 - [How to fill in data for CIG and CUP ouput](/How-to-fill-in-data-for-CIG-and-CUP-ouput).
 - [Overview of electronic invoices page](/overview-of-electronic-invoices-page).
 
