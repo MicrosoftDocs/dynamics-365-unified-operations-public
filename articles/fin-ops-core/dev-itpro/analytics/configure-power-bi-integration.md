@@ -5,7 +5,7 @@ title: Configure PowerBI.com integration
 description: This topic describes how to configure a new Finance and Operations environment to support integration with PowerBI.com. This configuration enables workspaces to show the Power BI control and lets users pin visualizations to a workspace.
 author: MilindaV2
 manager: AnnBe
-ms.date: 10/23/2019
+ms.date: 05/12/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -68,7 +68,7 @@ By completing this configuration step, you enable to contact the PowerBI.com ser
 - **Sign-on URL** - The base URL of your client. For example, `https://contosoax7.cloud.dynamics.com`.
 
 > [!NOTE]
-> Depending on your version, you may need to add /oauth as a suffix to the URL, or use http instead of https as the protocol, such as: `https://contosoax7.cloud.dynamics.com/oauth/` or `http://contosoax7.cloud.dynamics.com/oauth/`.
+> Depending on your version, you may need to add /oauth as a suffix to the URL, or use http instead of https as the protocol, such as: `https://contosoax7.cloud.dynamics.com/oauth` or `http://contosoax7.cloud.dynamics.com/oauth`.
 			 
 4. Click **Create**.
 5. Copy the **Application ID**. This will be used to connect to the PowerBI.com service.
