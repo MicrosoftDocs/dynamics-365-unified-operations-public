@@ -59,6 +59,7 @@ In each monthly update we will be adding additional extension points, so check t
 | GetReceiptEmailAddressClientRequestHandler | Executed when you get a receipt email address.                                                 |
 | DepositOverrideOperationRequestHandler     | Executed when you override a deposit.                                                          |
 | GetShippingChargeClientRequestHandler      | Executed when get shipping charge workflow initiated during customer order flow.                                                             |
+| GetKeyedInPriceClientRequestHandler      | Executed when the must key in product price dialog is shown.                                                           |
 
 **Payment extension handler**
 
