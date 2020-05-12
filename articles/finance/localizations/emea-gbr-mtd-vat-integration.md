@@ -3,9 +3,9 @@
 
 title: Prepare for integration with MTD for VAT (United Kingdom)
 description: This topic explains the process of setting up Making Tax Digital (MTD) for value-added tax (VAT) in the United Kingdom.
-author: lizagolub
+author: liza-golub
 manager: AnnBe
-ms.date: 01/29/2020
+ms.date: 04/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,7 +23,7 @@ ms.search.scope: Core, Operations
 # ms.custom: 
 ms.search.region: United Kingdom
 # ms.search.industry: 
-ms.author: v-elgolu
+ms.author: elgolu
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -268,7 +268,10 @@ Three parameters uniquely identify each web application on the HMRC side:
 
 - **Client ID** – The unique identifier of the web application.
 - **Client secret** – The secret passphrase that is used to authorize the web application.
-- **Server token** – The secret token that is used to authorize the web application when requests are made to any application-restricted endpoint.
+- **Server token** – The secret token that is used to authorize the web application when requests are made to any application-restricted endpoint. 
+
+    > [!IMPORTANT]
+    > The server token has been deprecated on the HMRC side and is no longer in use.
 
 These parameters are used when requests are sent to HMRC. They must be filled in before you start the authorization process for a web application.
 
@@ -343,12 +346,10 @@ These three parameters must be used together.
 
 To get test user credentials, complete the following steps. 
 
-1. Go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, select **UK MTD VAT TEST**, and then, on the **Messages** FastTab, select **New**. 
-2. Select the **Create test user request** action, and then select **OK**. A new electronic message is created. You don't have to fill in any fields of this electronic message to create a test user request. 
-3. On the **Messages** FastTab, select **Generate report**, and then select **OK** to confirm that you want to send a test user request to HMRC. A **Generate test user request** action is initialized together with the **Send test user request** action.
-4. The response from HMRC will be attached to the electronic message as an attachment in JSON format. To open it, select the electronic message, and then select **Attachments** (the paper clip symbol) in the upper-right corner of the page. 
-5. On the **Attachments** page for the selected electronic message, select the last **TestUserInfo.txt** file, and then, on the Action Pane, select **Open**. In the opened file, you will find **userID**, **password**, and **VRN** fields, and their respective values.
-6. Update the **Tax exempt number** value of the legal entity that you're working in with the **VRN** value that you obtained from HMRC. Don't change this value while you're working with the sandbox web application, unless you get new test user credentials.
+1. Complete the steps described in the [Create a test user](https://developer.service.hmrc.gov.uk/api-test-user) section of the HMRC portal.
+2. The test user generated in the [Create a test user](https://developer.service.hmrc.gov.uk/api-test-user) section contains information about **UserID**, **Password**, and **Making Tax Digital Income Tax ID** fields, and their respective values.
+3. Update the **Tax exempt number** value of the legal entity that you're working in with the **Making Tax Digital Income Tax ID** value that you obtained from HMRC. Don't change this value while you're working with the sandbox web application, unless you get new test user credentials. 
+4. Store the **UserID** and **Password** values related to the test user that you created. You will need these values during next steps of the authorization process.
 
 After you've updated the **Tax exempt number** value of the legal entity that you're working in, you can proceed with authorization in HMRC. You must complete the following two tasks before your system is authorized to interoperate with HMRC:
 
@@ -368,8 +369,8 @@ Complete the following steps to get an authorization code.
     - read:vat write:vat
 
 5. We recommend that you enter **read:vat write:vat** in this field, because the same application must be used for both GET and POST HTTPS requests to the web service. When you've finished, select **OK** to send the authorization request to HMRC. You're redirected to the HMRC portal for authorization. 
-6. On the **Sign in** page, enter the **userID** and **password** values from the response that you received when you got test user credentials. The next page shows the authorization code that HMRC granted. 
-7. Copy it to the clipboard, and then get an access token. 
+6. On the **Sign in** page, enter the **UserID** and **Password** values from the test user you created earlier. The next page shows the authorization code that HMRC granted. 
+7. Copy the authorization code to the clipboard, and then get an access token.
 
 > [!IMPORTANT]
 > The authorization code is valid for only 10 minutes. You must obtain the access token during this time. If you don't obtain the access token within 10 minutes, and the authorization code expires. You can get a new authorization code by using the same test user credentials. Alternatively, you can get new test user credentials.

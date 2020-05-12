@@ -31,7 +31,6 @@ ms.dyn365.ops.version: AX 10.0.5
 ---
 # Planning with negative on-hand quantities
 
-[!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
 
 If the system shows a negative aggregate on-hand quantity, the planning engine treats the quantity as 0 (zero) to help avoid over-supply. Here is how this functionality works:

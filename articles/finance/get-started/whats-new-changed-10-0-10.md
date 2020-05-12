@@ -2,10 +2,10 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Finance 10.0.10 (May 2020)
-description: This topic describes features that are either new or changed in the Dynamics 365 Finance version 10.0.10 preview release.
+description: This topic describes features that are either new or changed in Dynamics 365 Finance 10.0.10.
 author: roschlom
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 04/08/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,12 +29,11 @@ ms.search.validFrom: 2020-03-05
 ms.dyn365.ops.version: 10.0.10
 
 ---
-# Preview features in Dynamics 365 Finance 10.0.10 (May 2020)
+# What's new or changed in Dynamics 365 Finance 10.0.10 (May 2020)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists features that are new or changed for Microsoft Dynamics 365 Finance 10.0.10. This version has a build number of 10.0.420 and is available as follows:
+This topic lists features that are either new or changed in Microsoft Dynamics 365 Finance 10.0.10. This version has a build number of 10.0.420 and is available as follows:
 
 - **Preview release:** March 2020
 - **General availability (self-update):** April 2020
@@ -76,6 +75,9 @@ Dynamics 365 Finance 10.0.10 includes platform updates. To learn more, see [Plat
 
 ### Bug fixes 
 For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=424137&dbType=3&qc=bf63d49dcc96e51eb42ac1dd66c6c5e5d7548f1e176f729e324ea3353b9860cb).
+
+### Regulatory updates
+For information about regulatory updates for Dynamics 365 Finance and Operations apps, see [Regulatory updates](https://docs.microsoft.com/dynamics365/finance/localizations/regulatory-updates). Another way to learn about regulatory updates is to sign in to LCS and view the planned regulatory updates using the issue search tool. Issue search lets you search by country, type of feature, and release. 
 
 ### Dynamics 365: 2020 release wave 1 plan
 

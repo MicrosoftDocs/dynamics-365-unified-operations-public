@@ -1,4 +1,4 @@
-- name: Dynamics 365 Commerce
+﻿- name: Dynamics 365 Commerce
   items:
   - name: Dynamics 365 Commerce
     items:
@@ -94,12 +94,12 @@
             href: get-started/whats-new-commerce-10-0-10.md
           - name: Commerce 10.0.9 (April 2020)
             href: get-started/whats-new-10-0-9.md
-          - name: Commerce 10.0.8 (February 2020)
-            href: get-started/whats-new-10-0-8.md
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features in Finance and Operations
             href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/commerce/toc.json
+          - name: Removed or deprecated features in Dynamics 365 Commerce
+            href: get-started/removed-deprecated-features-commerce.md
         - name: AX 2012 features that were postponed
           href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/commerce/toc.json
         - name: Features not implemented in on-premises deployments
@@ -112,8 +112,8 @@
           href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/commerce/toc.json
         - name: Connect the Help system
           href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/commerce/toc.json
-        - name: Connect a custom help site
-          href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/commerce/toc.json    
+        - name: Custom help overview
+          href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/commerce/toc.json    
         - name: View and export field descriptions
           href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/commerce/toc.json
         - name: Task recorder
@@ -644,6 +644,8 @@
             href: work-with-store-inventory.md
           - name: Working with serialized items 
             href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md?toc=/dynamics365/commerce/toc.json
+          - name: Work with serialized items in POS
+            href: pos-serialized-items.md
           - name: Push products from distribution center to store using buyer's push 
             href: tasks/push-products-distribution-center-store-buyers-push.md
           - name: Set up rules and parameters for cross-docking and buyer's push  
@@ -1002,7 +1004,7 @@
         href: store-performance-information.md
       - name: Set up Recency, Frequency, and Monetary (RFM) analysis
         href: set-up-rfm-analysis.md
-    - name: Localization and regulatory features
+    - name: Globalization
       items:
       - name: Fiscal integration overview for Commerce channel
         href: localizations/fiscal-integration-for-retail-channel.md
@@ -1014,18 +1016,26 @@
           href: localizations/emea-aut-fi-sample.md
       - name: Eastern Europe
         items: 
-        - name: Advance invoices for Commerce for Eastern Europe
-          href: localizations/emea-eeu-advance-invoices-for-retail.md
-        - name: Petty cash management for Commerce for Eastern Europe
-          href: localizations/emea-eeu-petty-cash-for-retail.md
-        - name: Customer invoices and return sales orders in Eastern European countries
-          href: localizations/emea-eeu-retail-invoices.md
-        - name: Deployment guidelines for cash registers for Czech Republic, Hungary, and Poland
-          href: localizations/emea-eeu-deployment.md
-        - name: Fiscal printer integration sample for Poland
-          href: localizations/emea-pol-fpi-sample.md
-        - name: Fiscal registration service integration sample for Czech Republic
-          href: localizations/emea-cze-fi-sample.md
+        - name: Common
+          items:
+          - name: Advance invoices for Commerce for Eastern Europe
+            href: localizations/emea-eeu-advance-invoices-for-retail.md
+          - name: Petty cash management for Commerce for Eastern Europe
+            href: localizations/emea-eeu-petty-cash-for-retail.md
+          - name: Customer invoices and return sales orders in Eastern European countries
+            href: localizations/emea-eeu-retail-invoices.md
+          - name: Deployment guidelines for cash registers for Czech Republic, Hungary, and Poland
+            href: localizations/emea-eeu-deployment.md
+        - name: Czech Republic
+          items:
+          - name: Fiscal registration service integration sample for Czech Republic
+            href: localizations/emea-cze-fi-sample.md
+        - name: Poland
+          items:
+          - name: Fiscal printer integration sample for Poland
+            href: localizations/emea-pol-fpi-sample.md
+          - name: Customer information management for Poland
+            href: localizations/emea-pol-customer-information.md
       - name: France
         items:
         - name: Cash register functionality
@@ -1044,6 +1054,8 @@
         items:
         - name: Fiscal printer integration sample for Italy
           href: localizations/emea-ita-fpi-sample.md
+        - name: Customer information management for Italy
+          href: localizations/emea-ita-customer-information.md 
       - name: Mexico
         items:
         - name: Global CFDI e-invoices for Mexico
@@ -1058,7 +1070,9 @@
         items:
         - name: Cash register functionality
           href: localizations/emea-swe-cash-registers.md
-        - name: Sample for POS integration with control units
+        - name: Control unit integration sample for Sweden
+          href: localizations/emea-swe-fi-sample.md
+        - name: Sample for Retail POS integration with control units (legacy)
           href: localizations/retail-sdk-control-unit-sample.md
     - name: Reporting and Power BI integrations
       items:
@@ -1700,6 +1714,8 @@
         href: ../fin-ops-core/dev-itpro/office-integration/customize-open-office-menu.md?toc=/dynamics365/commerce/toc.json
       - name: Configure and send email
         href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json
+      - name: Create email templates for transactional events
+        href: email-templates-transactions.md
       - name: Develop email experiences
         href: ../fin-ops-core/dev-itpro/dev-tools/sysmailer-develop.md?toc=/dynamics365/commerce/toc.json
       - name: Troubleshoot the Office integration

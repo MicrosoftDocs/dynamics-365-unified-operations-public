@@ -48,7 +48,6 @@ These topics describe dual-write integration.
 + [System requirements for dual-write](dual-write-system-req.md)
 + [Supported scenarios for dual-write setup](connection-setup.md)
 + [Dual-write setup from Lifecycle Services](lcs-setup.md)
-+ [Initial synchronization choices and administration views](initial-sync.md)
 + Enable dual-write for existing Finance and Operations apps
 
     + [Enable dual-write for existing Finance and Operations apps](enable-dual-write.md)

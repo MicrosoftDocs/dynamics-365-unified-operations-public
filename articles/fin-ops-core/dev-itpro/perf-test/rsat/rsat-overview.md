@@ -5,7 +5,7 @@ title: Regression suite automation tool
 description: The Regression suite automation tool lets you record business tasks using the task recorder and convert them into a suite of automated tests without the need to write source code.
 author: robadawy
 manager: AnnBe
-ms.date: 08/01/2019
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -48,6 +48,28 @@ RSAT usage is described in these topics:
 + [Derived test cases](rsat-derived-test-cases.md)
 + [Regression Suite Automation Tool best practices](rsat-best-practices.md)
 + [Troubleshoot the Regression Suite Automation Tool](rsat-troubleshooting.md)
+
+
+## Getting started videos
+These videos will help introduce RSAT and get you started.
+
+### Use task recorder to create a test case for RSAT
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4uM5U]
+
+The [How to use task recorder to create a test case for the Regression suite automation tool (RSAT)](https://youtu.be/bBr4BXAxTNI) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
+
+### Create a test plan in Azure DevOps to use with RSAT
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4vx0I]
+
+The [How to create a test plan in Azure DevOps to use with the Regression suite automation tool (RSAT)](https://youtu.be/3jIuBleAnQk) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
+
+### How to use RSAT
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4vl8Z]
+
+The [How to use the Regression suite automation tool (RSAT)](https://youtu.be/uhN9JItzGAk) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
 
 ## End-to-end flow
