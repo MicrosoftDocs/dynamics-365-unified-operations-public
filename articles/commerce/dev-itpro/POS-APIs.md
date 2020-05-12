@@ -215,6 +215,8 @@ The following is a list of APIs exposed to perform cart-related functionality.
 | ReturnCartLineOperationRequest |
 | ReturnItemOperationRequest |
 | AddExpenseAccountLineToCartOperationRequest |
+| ShipAllCartLinesOperationRequest |
+| ShipSelectedCartLinesOperationRequest |
 
 
 ### Payments
@@ -240,6 +242,7 @@ The following is a list of APIs exposed to perform peripheral-related functional
 | CardPaymentExecuteTaskRequest                          |
 | CardPaymentRefundPaymentRequest                        |
 | CardPaymentVoidPaymentRequest                          |
+| CardPaymentAuthorizeCardTokenPeripheralRequest                          |
 | CashDrawerIsOpenRequest                                |
 | HardwareStationDeviceActionRequest                     |
 | HardwareStationStatusRequest                           |
@@ -256,6 +259,7 @@ The following is a list of APIs exposed to perform peripheral-related functional
 | PaymentTerminalRefundPaymentRequest                    |
 | PaymentTerminalUpdateLinesRequest                      |
 | PaymentTerminalVoidPaymentRequest                      |
+| PaymentTerminalFetchTokenPeripheralRequest             |
 | PrinterPrintRequest                                    |
 | ScaleReadRequest                                       |
 
@@ -286,6 +290,7 @@ The following is a list of APIs exposed to perform authentication-related functi
 | POS API                |
 |------------------------|
 | LogOffOperationRequest |
+| LockRegisterOperationRequest |
 
 ### DataService
 
@@ -373,6 +378,17 @@ The following is a list of APIs exposed to perform products-related functionalit
 | GetSerialNumberClientRequest               |
 | GetRefinerValuesByTextServiceRequest       |
 | SelectProductClientRequest |
+| SelectProductVariantClientRequest |
+| GetActivePricesServiceRequest |
+
+### Categories
+
+The following is a list of APIs exposed to perform categories-related functionality.
+
+| POS API                                    |
+|--------------------------------------------|
+| GetCategoriesServiceRequest              |
+
 
 ### SalesOrders
 
@@ -438,6 +454,6 @@ The following is a list of APIs exposed to perform store operations-related func
 | IssueLoyaltyCardOperationRequest                |
 | GetPickingAndReceivingOrdersClientRequest       |
 | BankDropOperationRequest                 |
-| DeclareStartAmountOperationRequest        |
+| DeclareStartAmountOperationRequest        | 
 
 
