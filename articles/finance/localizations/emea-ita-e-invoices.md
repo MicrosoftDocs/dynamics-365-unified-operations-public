@@ -84,6 +84,7 @@ Electronic document properties functionality are used for settting output to xml
 
 For the functionality to work, it is necessary to set up:
 1. **Electronic document property types** (**Account receivable > Setup > Electronic document property types**) and to which table the document property type is applied. For electronic invoice functionality the **Customers** and **Legal entities** tables are applied (**Applicability** button).
+![Electronic document property types](media/emea-ita-electronic-invocies-electronic-document-property-types.png)
 2. Required values in set tables on the level of the customer and the legal entity (**Accounts receivable \> Customers \> All customers, Customer** tab, **Electronic document properties** button and **Organization administration > Organizations > Legal entities**, **Electronic document properties** button.
 
 Set values are used for output to the xml file blocks (see the table bellow how to fiil and where these values are used).
@@ -104,8 +105,6 @@ Set values are used for output to the xml file blocks (see the table bellow how 
 
 > [!NOTE 2]  
 > In **Electronic document property types** list page, the **Description** field (left) is filled in automatically when a user is filling **Group description** and **Description** (right) fields.
-
-[Electronic document property types](/emea-ita-electronic-invocies-electronic-document-property-types.png)
 
 > [!NOTE 3]
 > Electronnic document property type must have the same code as specified in the table.
