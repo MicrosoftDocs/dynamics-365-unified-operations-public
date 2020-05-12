@@ -2,7 +2,7 @@
 # required metadata
 
 title: Install, set up, and update the Customer portal
-description: Licensing details and setup instructions for the Customer portal
+description: This topic provides licensing details and setup instructions for the Customer portal.
 author: dasani-madipalli
 manager: tfehr
 ms.date: 04/22/2020
@@ -33,8 +33,8 @@ ms.dyn365.ops.version: Release 10.0.13
 
 To implement the Customer portal, you must have the following licenses:
 
-- **Power Apps portals** – This license is required to host the Customer portal. Portals are licensed based on usage. For details, see the [Power Apps portals licensing requirements](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#portals).
-- **Dual-write** - You will need the necessary licenses to make Dual-write enabled for supply chain management entities. Refer to the [System requirements for dual-write](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-system-req.md) to learn more
+- **Power Apps portals** – This license is required to host the Customer portal. Portals are licensed based on usage. For more information, see the [Power Apps portals licensing requirements](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#portals).
+- **Dual-write** – You must have the necessary licenses to enable dual-write for Supply Chain Management entities. For more information, see the [system requirements for dual-write](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-system-req.md).
 
 ## Dependencies on dual-write and Power Apps portals
 
@@ -42,11 +42,9 @@ The Customer portal depends on Power Apps portals and dual-write, as shown in th
 
 ![Customer portal dependencies](media/customer-portal-elements.png "Customer portal dependencies")
 
-Unlike other features from Supply Chain Management, the template resides in Power Apps portals. Therefore, the Customer portal is limited by the functionality and capabilities that are provided by Power Apps portal and the entities in dual-write.
+Unlike other features from Supply Chain Management, the Customer portal template resides in Power Apps portals. Therefore, the Customer portal is limited by the functionality and capabilities that are provided by Power Apps portals and the entities in dual-write.
 
-<a name="required-setup"></a>
-
-## Required setup to enable the Customer portal
+## <a name="required-setup"></a>Required setup to enable the Customer portal
 
 After you've made sure that you have the required licenses, you can set up dual-write as described in the [dual-write initial synchronization instructions](../../fin-ops-core/dev-itpro/data-entities/dual-write/initial-sync.md).
 
@@ -58,13 +56,13 @@ Be sure to enable the following entity mappings in dual-write:
 - Contacts
 - Products
 
-After these entities are enabled, you can provision the Customer portal template.
+After this setup is completed, you can provision the Customer portal template.
 
 ## Provision the Customer portal
 
-Before you provision the Customer portal, make sure that you've already completed the [required setup](#required-setup). Then, to provision the Customer portal, follow these steps.
+Before you begin, make sure that you've already completed the [required setup](#required-setup). Then follow these steps to provision the Customer portal.
 
-1. Go to [make.powerapps.com](http://make.powerapps.com/).
+1. Go to [make.powerapps.com](https://make.powerapps.com/).
 2. Make sure that you're using the environment where you enabled dual-write.
 3. On the **Create** tab, scroll down to the **Start from template** section, and select the template that is named **Supply Chain Management Customer**.
 4. Follow the on-screen instructions.
@@ -76,7 +74,7 @@ After provisioning is completed, you can access the Customer portal in the **You
 
 ## Update the Customer portal
 
-More functionality might be added to the Customer portal later. Any changes that Microsoft makes to the underlying solution components will automatically appear in your environment. However, changes in the configuration data won't automatically be present on the provisioned website. You will have to manually apply these changes by getting the code from the new template and merging it with the website that is provisioned in your environment.
+More functionality might be added to the Customer portal later. Any changes that Microsoft makes to the underlying solution components will automatically appear in your environment. However, the website that is provisioned in your environment won't automatically reflect changes that are made to the configuration data. You will have to manually apply those changes by getting the code from the new template and merging it with the provisioned website.
 
 ## Resources
 
@@ -85,7 +83,7 @@ To learn how you can set up and customize the Customer portal, you should start 
 - [Power Apps portals documentation](https://docs.microsoft.com/powerapps/maker/portals/overview)
 - [Dual-write documentation](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md)
 
-To effectively manage your portals, you must understand the Power Apps portals and Common Data Service lifecycle. For details, review the following resources:
+To effectively manage your portals, you must understand the Power Apps portals and Common Data Service lifecycle. For more information, see the following resources:
 
 - [About portal lifecycle](https://docs.microsoft.com/powerapps/maker/portals/admin/portal-lifecycle)
 - [Upgrade a portal](https://docs.microsoft.com/powerapps/maker/portals/admin/upgrade-portal)
