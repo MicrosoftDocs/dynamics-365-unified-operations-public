@@ -2659,7 +2659,7 @@
           href: warehousing/tasks/set-up-min-max-replenishment-process.md
       - name: Install and configure the warehousing app
         items:
-        - name: Install and configure overview
+        - name: Install and connect the warehousing app
           href: warehousing/install-configure-warehousing-app.md
         - name: Configure field names in warehousing app
           href: warehousing/configure-app-field-names-priorities-warehouse.md
