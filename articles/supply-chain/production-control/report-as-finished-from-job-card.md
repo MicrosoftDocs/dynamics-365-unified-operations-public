@@ -116,7 +116,7 @@ When you use this scenario, the **Report progress** page on the job card device 
 
 For items that are enabled for the advanced warehouse processes, reporting as finished is always done to a specific *Production output location*, which is defined on the resource for the last operation in the production route. <!-- KFM: (Read more about it here). Please provide this link. -->
 
-When you use advanced warehouse processes, the job card device supports two scenarios for reporting as finished to a license plate-controlled output location:
+When you use advanced warehouse processes, the job card device supports two scenarios for reporting as finished to a license-plate controlled output location:
 
 - Workers report as finished to an existing license plate on the production output location. This is relevant, for example, if the license plate represents a pallet and workers continually report items to the same pallet as the finished goods are completed in the production process.
 - Workers report as finished to a new license plate each time, and print out a license plate label with the new license plate number
@@ -124,7 +124,7 @@ When you use advanced warehouse processes, the job card device supports two scen
 <!-- KFM: I couldn't find any of the things described below. I think I need a demo. -->
 You can define the production output location to be tracked by its license plate. This is setup in the **Location profile ID** in the field **Use license plate tracking**. The **Location profile ID** is associated the location. If the production output location is setup to be tracked by license plate, then a license plate has to be specified when reporting as finished.
 
-To <!-- ... KFM: What are we doing here? -->, go to **Production control > Setup > Manufacturing execution > Configure job card for devices** and make the following settings:
+To <!-- ... KFM: What are we doing here? -->, go to **Production control > Setup > Manufacturing execution > Configure job card for devices** and set the following options:
 
 - **Generate license plate**: Set this to **Yes** to generate a new license plate for each report as finished. <!-- ... KFM: I don't see this in the UI. Do we need to enable something? Also, what happens if this is set to No? -->
 - **Print label**: Set this to **Yes** if the worker needs to print a license plate label for each report as finished. The label is configured in the **Document routing** menu. <!-- ... KFM: Again, I don't see this in the UI. Do we need to enable something? Where is the Document routing menu, and how do we "configure" it? Also, what happens if this is set to No? -->
