@@ -78,7 +78,7 @@ export default (props: IProductFeatureViewProps) => {
 
 ## Theme definition extensions
 
-You may have scenarios where you must extend the **config**, **slots**, **data action", or **resources** sections of a module definition, and access those sections from the module view extension. Although you can add new configurations, slots, and resources, you can't modify existing ones. However, by using **disableConfigProperties**, you can disable the inheritance of some configurations.
+You may have scenarios where you must extend the **config**, **slots**, **data action**, or **resources** sections of a module definition, and access those sections from the module view extension. Although you can add new configurations, slots, and resources, you can't modify existing ones. However, by using **disableConfigProperties**, you can disable the inheritance of some configurations.
 
 Definition extensions are stored under the **definition-extensions** folder. They follow the naming pattern **MODULE\_NAME.definition.ext.json**, where **MODULE\_NAME** is the name of the module that you're extending.  
 
