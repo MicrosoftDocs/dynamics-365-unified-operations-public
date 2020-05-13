@@ -100,7 +100,7 @@ Microsoft frequently reviews all incoming service requests. By selecting the cor
 
       - Turn on maintenance mode in a production environment. For more information, see [Maintenance mode](../sysadmin/maintenance-mode.md).
       - Define explicit Internet Protocol (IP) whitelist rules in a production environment.
-       > [!NOTE]
+        > [!NOTE]
         > The support for explicit whitelisting is now deprecated for Self-service environments
       - Request that Microsoft Power BI Embedded be activated in a sandbox environment, Standard Acceptance Test environment, or production environment if you receive the following message: "Power BI embedded isn't enabled. Please contact your system administrator."
 
