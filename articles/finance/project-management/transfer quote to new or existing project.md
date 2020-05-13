@@ -32,8 +32,6 @@ ms.search.validFrom: 2019-01-15
 
 [!include [banner](../includes/banner.md)]
 
-# Transfer quotation to a new or existing project
-
 When a project quotation has a status of **Confirmed**, you can transfer some or all the lines of the  quotation to a new or existing project, by using the Transfer to project wizard. 
 
 To start the wizard, complete the following steps.
