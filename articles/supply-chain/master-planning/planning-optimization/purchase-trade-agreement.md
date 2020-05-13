@@ -69,12 +69,12 @@ There are many parameters that controls the vendor and lead time for a planned p
 | **Vendor** | **Lead time** | **Vendor is overwritten** | **Lead time is overwritten** | **Vendor** | **Lead time** | **Ignore lead time** | **Vendor** | **Lead time** |
 | **US001** | **1** | No | No | US003 | 3 | NO | **US001** | **1** |
 | US001 | 1 | **Yes, US002** | **Yes, 2** | US003 | 3 | NO | **US002** | **2** |
-| &#39;blank&#39;  | 0 | No | No | **US003** | **3** | NO | **US003** | **3** |
-|  &#39;blank&#39; | **0** | No | No | **US003** | 3 | YES | **US003** | **0** |
-|  &#39;blank&#39; | **0** | **Yes, US002** | No | US003 | 3 | NO | **US002** | **0** |
-|  &#39;blank&#39; | **0** | **Yes, US002** | No | US002 | 3 | NO | **US002** | **0** |
-|  &#39;blank&#39; | 0 | No | Yes, 2 | **US003** | **3** | NO | **US003** | **3** |
-|  &#39;blank&#39; | 0 | No | **Yes, 2** | **US003** | 3 | YES | **US003** | **2** |
+| &#39;blank&#39;  | 1 | No | No | **US003** | **3** | NO | **US003** | **3** |
+|  &#39;blank&#39; | **1** | No | No | **US003** | 3 | YES | **US003** | **1** |
+|  &#39;blank&#39; | **1** | **Yes, US002** | No | US003 | 3 | NO | **US002** | **1** |
+|  &#39;blank&#39; | **1** | **Yes, US002** | No | US002 | 3 | NO | **US002** | **1** |
+|  &#39;blank&#39; | 1 | No | Yes, 2 | **US003** | **3** | NO | **US003** | **3** |
+|  &#39;blank&#39; | 1 | No | **Yes, 2** | **US003** | 3 | YES | **US003** | **2** |
 
 
 ## Additional resources
