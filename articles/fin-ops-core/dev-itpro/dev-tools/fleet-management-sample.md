@@ -221,32 +221,38 @@ The web client enables users who have appropriate permissions to modify KPI defi
 11. Click the **Name** column header, change the filter operator to **contains**, and update the filter field value to **Number**. You will see the new KPI is available in the list.
 
     [![KPI List](./media/kpilist_introfleetmgmt1.png)](./media/kpilist_introfleetmgmt1.png)
+    
+    ![KPI list](media/fmt_kpi_list.png)
 
 ## Launch an operational report
 In this tutorial, you’ll launch an operational report that contains a list of customers who are currently renting vehicles.
 
 1.  Use the dashboard to open the **Reservation management** workspace.
-2.  Click the **Customers report** tile. Do not enter anything in the parameter for **Customer group**. 
+2.  On the right side of the page, under **Reports** click **Customer list**. Do not enter anything in the parameter for **Customer group**. 
 
     [![Customer List](./media/customerlist_introfleetmgmt1.png)](./media/customerlist_introfleetmgmt1.png)
+    
+    ![Customer list](media/fmt_customer_list_report.png)
 
 3.  Click **OK** to close the dialog box. The report will be rendered and show the list of customers. The report may take a minute to render.
 
 ## Secure access using the role-based security system
 In this tutorial, you’ll access the system as a user that has been assigned a different security role. This tutorial requires that you have created at least one additional end user.
 
-1.  On the dashboard, in the **System administration** section, click **Users**.
+1.  On the dashboard, in the **System administration** section, click **Users** and then **Users**.
 2.  On the Action Pane, click **New**.
-3.  Enter the following field information.
+3.  Enter the following field information. ??? These fields do not match the screen.
 
-    | **Property**        | **Value**                                                                                 |
-    |---------------------|-------------------------------------------------------------------------------------------|
-    | **User ID**         | Eight character unique ID                                                                 |
-    | **User name**       | The first name of the user                                                                |
-    | **Network domain**  | urn:Federation:MicrosoftOnline                                                            |
-    | **Alias**           | <tim@lucernepublishers.ccsctp.net> (Replace with the organization account email address.) |
-    | **Default Company** | DAT                                                                                       |
-    | **Enabled**         | Verify that this slider is set to **Yes**.                                                |
+    | Property        | Value                                                                                 |
+    |-----------------|-------------------------------------------------------------------------------------------|
+    | User ID         | Eight character unique ID                                                                 |
+    | User name       | The first name of the user                                                                |
+    | Network domain  | `urn:Federation:MicrosoftOnline`                                                            |
+    | Alias           | `tim@lucernepublishers.ccsctp.net` (Replace with the organization account email address.) |
+    | Default Company | `DAT`                                                                                       |
+    | Enabled         | Verify that this slider is set to **Yes**.                                                |
+
+    ![New user record](media/fmt_new_user_record.png)
 
 4.  Click **Assign Roles**. 
 
