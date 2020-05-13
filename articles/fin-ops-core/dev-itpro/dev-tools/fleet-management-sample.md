@@ -153,14 +153,20 @@ Remember that you’re working with the migrated app in this section. The forms 
 11. You might again need to wait up to two minutes for the batch framework to process the change. On the Action Pane, click **Refresh** periodically, until you see the **Status** field change. Notice that the vehicle now has a status of **Awaiting Service**.
 12. Optionally, you can continue to repeat these workflow steps to take the vehicle through the service and cleaning phases. After cleaning is completed, the final status is **Done**.
 13. Click **Workflow**, and then click **View history**. The **Workflow history** form provides information about the vehicle workflow.
-14. Click **Tracking details** to see the activities. [![Tracking details](./media/workflow.jpg)](./media/workflow.jpg)
+14. Click **Tracking details** to see the activities. 
+
+    [![Tracking details](./media/workflow.jpg)](./media/workflow.jpg)
+
+    ![Tracking details](media/worflow_history.jpg)
 
 ### To view the setup behind the workflow
 
-1.  On the dashboard, navigate to **Fleet Management** &gt; **Setup** &gt; **Workflow setup**. The **Workflow Setup** page shows the list of workflows. 
+1.  On the dashboard, navigate to **Fleet Management** \> **Setup** \> **Workflow setup**. The **Workflow Setup** page shows the list of workflows. 
 
     [![Workflow setup](./media/workflowsetup.jpg)](./media/workflowsetup.jpg)
 
+    ![Workflow setup](media/fmt_workflow_setup.png)
+    
 2.  In the **Workflow ID** column, click the ID of your vehicle maintenance workflow.
 3.  Accept any prompts that ask you for permission to run code. After a short wait, the workflow editor opens. This step works on the one-box environment, but not in the cloud. You can view the workflow diagram in the workflow editor. The following illustration shows the workflow.
 
@@ -177,33 +183,39 @@ The web client enables users who have appropriate permissions to modify KPI defi
 4.  On the Action Pane, click **New**. The **New KPI** dialog will open.
 5.  Enter following values for the new KPI definition.
 
-    | **Field**         | **Value**               |
-    |-------------------|-------------------------|
-    | **Name**          | Number of Rentals       |
-    | **Measurement**   | FMAggregateMeasurements |
-    | **Measure Group** | FmRentalCharges         |
-    | **Measure**       | NoRentals               |
-    | **Goal is**       | Fixed Value             |
-    | **Goal Value**    | 30                      |
+    | Field         | Value               |
+    |---------------|-------------------------|
+    | Name          | Number of Rentals       |
+    | Measurement   | FMAggregateMeasurements |
+    | Measure group | FmRentalCharges         |
+    | Measure       | NoRentals               |
+    | KPI Goal Type | Fixed Value             |
+    | Goal value    | 30                      |
 
 
 6.  Click **Save**. 
 
     [![New KPI](./media/newkpi_introfleetmgmt1.png)](./media/newkpi_introfleetmgmt1.png) 
+    
+    ![New KPI](media/fmt_new_kpi.png)
 
-    **Note:** If the **Save** button isn’t visible in the **New KPI** dialog box, use a higher screen resolution so that you can see the entire dialog. You can see the KPI details page that contains details about the KPI that you created. You can make changes in the **Details** section. You will modify the default threshold values so that if the value is less than 90% of the goal, the KPI will show red and if the value is over 110% of the goal, the KPI will show green.
+    > [!NOTE]
+    > If the **Save** button isn’t visible in the **New KPI** dialog box, use a higher screen resolution so that you can see the entire dialog. You can see the KPI details page that contains details about the KPI that you created. You can make changes in the **Details** section. You will modify the default threshold values so that if the value is less than 90% of the goal, the KPI will show red and if the value is over 110% of the goal, the KPI will show green.
+
 7.  Click **Edit**.
+
 8.  Scroll to the right of the screen, and modify the values in the thresholds fields as follows.
 
-    | **Property**           | **Value** |
-    |------------------------|-----------|
-    | **Red if less than**   | 90        |
-    | **Green if more than** | 110       |
-
+    | Property           | Value     |
+    |--------------------|-----------|
+    | Bad if less than   | 90        |
+    | Good if more than  | 110       |
 
 9.  In the application bar, click **Save**. 
 
     [![KPI Graph](./media/kpigraph_introfleetmgmt.png)](./media/kpigraph_introfleetmgmt.png)
+    
+    ![KPI graph](media/fmt_kip_value.png)
 
 10. Click the form caption to return to the grid view.
 11. Click the **Name** column header, change the filter operator to **contains**, and update the filter field value to **Number**. You will see the new KPI is available in the list.
