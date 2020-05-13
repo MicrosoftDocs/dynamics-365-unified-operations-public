@@ -143,28 +143,29 @@ This section maintains a list of known issues for the new grid control while the
 - Grouped lists aren't rendered as groups or in separate columns.
 - Tooltips aren't shown for images.
 - The gridlines display doesn't work for all field types.
-- Intermittently, you can't click outside the grid after you multi-select some rows.
-- The **Validate** and **Copy** Task recorder options aren't available for date/number controls.
 
 ### Fixed as part of 10.0.12
 
 > [!Note]
 > The following information is being provided so that you can plan accordingly. For more information about the targeted release schedule of version 10.0.12, see [Service update availability](../../fin-ops/get-started/public-preview-releases.md).
 
-- [KB 4558383] Controls outside the grid aren't updated after the last record is deleted.
-- [Issue 430575] Table controls don't update the contents of displayed items.
+- [KB 4562647] Focus resets to first control on the Publish dialog after adding a new row in the security roles grid
+- [KB 4562153] Multi-select checkboxes are not visible on list/card grids
+- [KB 4562141] Grid indices are off after adding a new record
+- [KB 4562646] Cannot click outside the grid sometimes after multi-selecting rows in the grid
+- [KB 4562151] The **Validate** and **Copy** Task recorder options aren't available for date/number controls. 
+- [KB 4558545] Table controls don't update the contents of displayed items.
 - [KB 4558570] Items are still shown on the page after the record has been deleted.
 - [KB 4558584] Negative numbers aren't rendered correctly.
-- [KB 4558575] Fields aren't updated after a row change / Grid processing becomes stuck after row deletion.
-- [Issue 436980] Styling that is associated with the List Panel **ExtendedStyle** isn't applied.
+- [KB 4558572] Styling that is associated with the List Panel **ExtendedStyle** isn't applied.
 - [KB 4558573] Validation errors can't be fixed when the required change is outside the grid.
-	
-### Quality update for 10.0.11
-
-- [KB 4558381] Negative numbers aren't rendered correctly / Users sometimes become stuck after validation issues are encountered.
 
 ### Fixed as part of 10.0.11
 
+- [KB 4562645] Exception when opening a lookup while running RSAT tests 
+- [KB 4562143] Fields aren't updated after a row change / Grid processing becomes stuck after row deletion.
+- [KB 4562143] Controls outside the grid aren't updated after the last record is deleted.
+- [KB 4558381] Negative numbers aren't rendered correctly / Users sometimes become stuck after validation issues are encountered.
 - [KB 4558374] Records that require a polymorphic selector dialog box can't be created.
 - [KB 4558382] Unexpected client errors occur.
 - [KB 4558375] Help text isn't shown on columns in the new grid.
@@ -180,7 +181,7 @@ This section maintains a list of known issues for the new grid control while the
 ### Fixed as part of 10.0.10
 
 - [Issue 414301] Some data from previous lines disappears when new lines are created.
-- [KB 4550367] Time values aren't formatted correctly.
+- [KB 4562631] Time values aren't formatted correctly.
 - [KB 4549734] Active rows aren't treated as marked if the marking column is hidden.
 - [Bug 417044] There is no empty grid message for list-style grids.
 - [KB 4558367] Text selection is inconsistent when rows are changed.
