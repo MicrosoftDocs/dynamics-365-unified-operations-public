@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.x
 
 ---
 
-# In-place upgrade process for on-premises environments
+#  Data upgrade process for AX2012 to D365 For Finance and Operations on-premises
 
 [!include [banner](../includes/banner.md)]
 
@@ -52,11 +52,11 @@ An overview of each path is given below:
 
 ### Prerequisites
 
-1. [Sign up for a Lifecycle Services trial or partner project](./upgrade-overview-2012#sign-up-for-a-lifecycle-services-trial-or-partner-project)
+1. [Sign up for a Lifecycle Services trial or partner project](./upgrade-overview-2012.md#sign-up-for-a-lifecycle-services-trial-or-partner-project)
 
 1. For each release, please update to the latest available cumulative update before upgrading to the latest Finance and Operations application release.
 
-1. Install the pre-upgrade checklist, more details can be found [here](./prepare-data-upgrade#installation)
+1. Install the pre-upgrade checklist, more details can be found [here](./prepare-data-upgrade.md#installation)
 
 1. Go through the data upgrade preparation steps. You can skip the one related to users. #TODO find correct step name.  
 
@@ -74,18 +74,12 @@ An overview of each path is given below:
 
 1.  Depending on your planned on-premises target version of 10.0.x and the VHD image you downloaded, you may need to download and apply the required Application and Platform Update from the Shared Asset Library under **Select asset type** and **Software deployable package**. For more information, see [Install deployable packages from the command line](../deployment/install-deployable-package.md).
 
-[!IMPORTANT]
+>[!IMPORTANT]
 > In any case, ensure that you have applied the latest quality update to your VHD to ensure it contains the latest fixes for carrying out data upgrades. 
 
 1.  If you have any extensions or customizations install them into the VHD now, otherwise the upgrade process will remove any data related to customizations. Check with your independent software vendor (ISV) or value-added reseller (VAR) if you need to prepare your environment before the upgrade.
 
 ### Upgrading from within VHD
-
-1.  In the VHD, go to C:\\AOSService\\PackagesLocalDirectory\\Bin\\CustomDeployablePackage and copy the MajorVersionDataUpgrade zip file.
-
-1.  Paste the file wherever you want and unzip it. For example: c:\\D365FFOUpgrade\\
-
-1.  Open a Command Prompt as Administrator and change the directory to the unzipped folder in the previous step.
 
 1.  Restore the backup that you created into the OneBox VM. For more information, see [Restore a Database Backup Using SSMS](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2016).
 
@@ -99,7 +93,13 @@ An overview of each path is given below:
 
     The script will run a database connection test to check that the information you provide is valid.
 
-1.  Using the Command Prompt from step 5, execute the following commands:
+1.  In the VHD, go to C:\\AOSService\\PackagesLocalDirectory\\Bin\\CustomDeployablePackage and copy the MajorVersionDataUpgrade zip file.
+
+1.  Paste the file wherever you want and unzip it. For example: c:\\D365FFOUpgrade\\
+
+1.  Open a Command Prompt as Administrator and change the directory to the unzipped folder in the previous step.
+
+1.  Using the Command Prompt from the previous step, execute the following commands:
 
     a.  `AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml`
 
@@ -121,9 +121,9 @@ An overview of each path is given below:
 
         1.  Use this file to create a new database (typically AXDB) using the restore backup option from SQL server. For more information, see [Restore a Database Backup Using SSMS](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017).
         
-        1.  The database will need to be configured. Follow the steps in [Configure the Finance and Operations database](../deployment/setup-deploy-on-premises-pu12#configure-the-finance-and-operations-database).
+        1.  The database will need to be configured. Follow the steps in [Configure the Finance and Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance-and-operations-database).
 
-        1.  In LCS, set up a new environment and deploy it with version 10.0.x (Redeploy). For more information, see [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12). When you deploy, the name of the database that you specify should be the one created in step 11c (typically AXDB).
+        1.  In LCS, set up a new environment and deploy it with version 10.0.x (Redeploy). For more information, see [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12.md). When you deploy, the name of the database that you specify should be the one created in the step above (typically AXDB).
 
         1.  Apply your own customizations as well as ISV/VAR modules, to your newly created 10.0.x environment. Otherwise, when the environment initially syncs with the database it will delete any customization or extensions related data.
 
@@ -133,7 +133,7 @@ An overview of each path is given below:
 
         1.  Start on-premises AOS, BI, and MR servers, or start the services from the Service Fabric portal (Activate).
 
-        [!NOTE]
+        > [!NOTE]
         > The Database synchronization process will be triggered when the AOS nodes startup and your environment will be unavailable until the process is finished.
 
     1. If you didn't have customizations:
@@ -147,10 +147,6 @@ An overview of each path is given below:
 1.  Back up your database from your on-premises environment (typically AXDB). For more information, see [Create a Full Database Backup (SQL Server)](https://docs.microsoft.com/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server?view=sql-server-2016).
 
 1.  Restore the backup that you just created into the database server and give it a different name (AXDBtoupgrade). For more information, see [Restore a Database Backup Using SSMS](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2016).
-
-1.  Once connected, go to C:\\AOSService\\PackagesLocalDirectory\\Bin\\CustomDeployablePackage and copy the MajorVersionDataUpgrade zip file.
-
-1.  Paste the file wherever you want and unzip it. For example: C:\\D365FFOUpgrade\\
 
 1.  Open a new PowerShell as Administrator and execute:
     
@@ -170,7 +166,11 @@ An overview of each path is given below:
     >
     > - When you install the Certificate Authority in the OneBox, make sure you use the FQDN or IP for connecting to the database that appears there. If you can't access it by using the domain name because it doesn't point to that server, edit your hosts file and add the FQDN and the IP it should resolve to.
 
-1.  Open a Command Prompt as Administrator and change the directory to the unzipped folder from step 3.
+1.  In the VHD, go to C:\\AOSService\\PackagesLocalDirectory\\Bin\\CustomDeployablePackage and copy the MajorVersionDataUpgrade zip file.
+
+1.  Paste the file wherever you want and unzip it. For example: c:\\D365FFOUpgrade\\
+
+1.  Open a Command Prompt as Administrator and change the directory to the unzipped folder in the previous step.
 
 1.  Using the Command Prompt from the previous step, execute the following commands:
 
@@ -204,7 +204,7 @@ An overview of each path is given below:
 
         1.  Start on-premises AOS, BI, and MR servers, or start the services from the Service Fabric portal.
 
-        [!NOTE]
+        > [!NOTE]
         > The Database synchronization process will be triggered when the AOS nodes startup and your environment will be unavailable until the process is finished.
 
 1. If you don't have customizations:
