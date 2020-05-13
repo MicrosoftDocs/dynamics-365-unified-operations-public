@@ -30,18 +30,16 @@ ms.dyn365.ops.version: Platform update 36
 
 [!include [banner](../includes/preview-banner.md)]
 
-With the release of Microsoft Dynamics 365 Finance version 10.0.12, it is possible to enable **Daylight Saving Time support for batch job active periods**, in [Feature management](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview). 
-This feature introduces daylight saving time (DST) support to [batch job active periods](activeperiod.md) and enables users to associate their different active periods to different time zones.
+Microsoft Dynamics 365 Finance version 10.0.12 includes a **Daylight Saving Time support for batch job active periods** feature that can be turned on in [Feature management](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview). This feature introduces daylight saving time (DST) support for the [active periods for batch jobs](activeperiod.md) and lets users associate their active periods with different time zones.
 
 > [!NOTE] 
-> This feature is a one-way feature. It can't be disabled after it's been enabled.
+> This feature is a one-way feature. In other words, it can't be turned off after it's turned on.
 
-When this feature is enabled, the following occurs:
+When this feature is turned on, the following changes occur:
 
-- The **Batch jobs active periods** page will have the field, **Timezone** added next to each active period. This is the time zone that the active period would follow. Every active period initially follows the UTC time zone.
+- On the **Active periods for batch jobs** page, a **Timezone** field is added for each active period. This field specifies the time zone that the active period uses. By default, every active period initially uses the Coordinated Universal Time (UTC) time zone.
 
-![Active Period Form](./media/active-periods-dst.png)
+    ![Timezone field on the Active periods for batch jobs page](./media/active-periods-dst.png)
 
-- The start and end times of the existing active periods will be adjusted according to the UTC time zone. The times will run at the same time as before, but the displayed start and end times might change if the user’s preferred time zone is not UTC.
-
-- Active periods will follow the daylight savings time adjustments of the time zones they’re associated with.
+- The start and end times of existing active periods are adjusted according to the UTC time zone. Although the times will run at the same time that they previously ran, the start and end times that are shown might change if the user's preferred time zone isn't UTC.
+- Active periods will follow the DST adjustments of the time zones that they are associated with.
