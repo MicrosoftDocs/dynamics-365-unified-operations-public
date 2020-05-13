@@ -23,8 +23,8 @@ ms.search.scope: Operations
 ms.search.region: Global
 # ms.search.industry:
 ms.author: sunilg
-ms.search.validFrom: 2020-10-31
-ms.dyn365.ops.version: 10.0.0
+ms.search.validFrom: 2020-05-31
+ms.dyn365.ops.version: 10.0.12
 ---
 
 # Power portal reference
@@ -44,7 +44,7 @@ Authenticated access
 --------------------
 
 Fully authenticated user access from the Power Portal to Finance and Operations allows for users in Finance and Operations to also interact from Power Portal. The user signing into the Portal is also a known user in Finance and Operations with appropriate security role(s). The existing roles from the business process in Finance and Operations will govern the security access for such authenticated
-users in Power Portal. Since, Power Portal authentication is tied to contacts entity in CDS, there must be a mapping established between the CDS contact and the corresponding user in Finance and Operations. This mapping can be done by adding entries to the msdyn_externalportalusermapping entity. Virtual entities that are made available to authenticated users must be configured as Global
+users in Power Portal. Since, Power Portal authentication is tied to contacts entity in Common Data Service, there must be a mapping established between the Common Data Service contact and the corresponding user in Finance and Operations. This mapping can be done by adding entries to the msdyn_externalportalusermapping entity. Virtual entities that are made available to authenticated users must be configured as Global
 scope from a security perspective in the Portal.
 
 When authenticated users from a different tenant must be added as users to Finance and Operations, the [existing new user
