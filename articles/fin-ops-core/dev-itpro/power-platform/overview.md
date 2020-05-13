@@ -38,20 +38,11 @@ Pre-requisite reading
 Understanding how Common Data Service and virtual entities work will be essential to understanding the architecture of virtual entities for Finance and Operations. The following documentation is a pre-requisite to these related topics.
 
 - [What is Common Data Service?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
-- [Working with entities in Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/entity-overview)
-- [Working with entity relationships in Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/relationships-overview)
-- [Working with virtual entities in Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-virtual-entities)
-- [Working with Power Portals](https://docs.microsoft.com/powerapps/maker/portals/overview)
-- [Working with Power Apps](https://docs.microsoft.com/powerapps/maker/)
-
-| Topic                                    | Documentation                                                                                       |
-|------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| What is Common Data Service?       | <https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro>          |
-| Working with entities in Common Data Service             | <https://docs.microsoft.com/powerapps/maker/common-data-service/entity-overview>              |
-| Working with entity relationships in Common Data Service | <https://docs.microsoft.com/powerapps/maker/common-data-service/relationships-overview>       |
-| Working with virtual entities in Common Data Service     | <https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-virtual-entities> |
-| Working with Power Portals               | <https://docs.microsoft.com/powerapps/maker/portals/overview>                                 |
-| Working with Power Apps                  | <https://docs.microsoft.com/powerapps/maker/>                                                 |
+- [Entity overview](https://docs.microsoft.com/powerapps/maker/common-data-service/entity-overview)
+- [Entity relationships overview](https://docs.microsoft.com/powerapps/maker/common-data-service/relationships-overview)
+- [Create and edit virtual entities that contain data from an external data source](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-virtual-entities)
+- [What is Power Apps portals?](https://docs.microsoft.com/powerapps/maker/portals/overview)
+- [Overview of creating apps in Power Apps](https://docs.microsoft.com/powerapps/maker/)
 
 Virtual entities for Finance and Operations
 -------------------------------------------
