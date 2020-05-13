@@ -47,13 +47,14 @@ To work with the sample, you must install the provided demo data.
 
 1.  In the VM, open Internet Explorer and navigate to the application's base URL.
 2.  Sign in.
-3.  On the dashboard, open the navigation pane and go to **Fleet Management &gt; Setup &gt; Fleet setup**. 
+3.  On the dashboard, open the navigation pane and go to **Fleet Management \> Setup\> Fleet setup**. 
 
     [![Fleet Setup](./media/fleetsetup1_introfleetmgmt1.png)](./media/fleetsetup1_introfleetmgmt1.png)
 
-4.  Select **Setup Demo Data**. 
+4.  On the **Data setup** tab, select **Create**. 
 
     [![Load Demo Data](./media/loaddemodata_introfleetmgmt1.png)](./media/loaddemodata_introfleetmgmt1.png)
+    ![Load Demo Data](media/fmt_data_setup_create.png)
 
 5.  If you're prompted to reload the demo data, click **Yes**.
 6.  When the data is finished loading, select **Close**.
