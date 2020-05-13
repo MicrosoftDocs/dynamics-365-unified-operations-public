@@ -115,7 +115,7 @@ In this example, a notification is raised after an export to Excel is completed 
 ```xpp
 // Set up the notification 
 SystemNotificationDataContract notification = new SystemNotificationDataContract();
-notification.Users().values(1, curUserId());
+notification.Users().value(1, curUserId());
 notification.Title("Export to Excel finished");
 notification.RuleId('ExcelStaticExport');
 notification.Message("We finished your export from the Customers page");
