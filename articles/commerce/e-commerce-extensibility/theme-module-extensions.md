@@ -5,7 +5,7 @@ title: Extend a theme to add module extensions
 description: This topic describes how to extend a theme to add module extensions in Dynamics 365 Commerce. 
 author: samjarawan
 manager: annbe
-ms.date: 05/11/2020
+ms.date: 05/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -222,4 +222,4 @@ export default (props: IProductFeatureViewProps & IProductFeatureProps<{ICartExt
 
 [Configure theme settings](configure-theme-settings.md)
 
-[Extend a theme](extend-theme.md)
+[Extend a theme from a base theme](extend-theme.md)
