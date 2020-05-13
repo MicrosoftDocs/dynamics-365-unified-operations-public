@@ -39,6 +39,7 @@ This tutorial walks you through an end-to-end scenario that the Fleet Management
 In this tutorial, you’ll take a tour of the Fleet Management sample. The overviews in this tutorial provide some background knowledge and contextual info. You’ll walk through an end-to-end scenario that this sample application is designed to support. This is information that you should have before proceeding to other tutorials.
 
 ## Prerequisite
+
 -   You must first be provisioned as an end user before you start this tutorial.
 -   This tutorial mainly explores the FleetManagement Migrated project and the application that it builds.
 
@@ -50,6 +51,8 @@ To work with the sample, you must install the provided demo data.
 3.  On the dashboard, open the navigation pane and go to **Fleet Management \> Setup\> Fleet setup**. 
 
     [![Fleet Setup](./media/fleetsetup1_introfleetmgmt1.png)](./media/fleetsetup1_introfleetmgmt1.png)
+    
+    ![Fleet setup](media/fmt_setup_data.png)
 
 4.  On the **Data setup** tab, select **Create**. 
 
@@ -63,26 +66,41 @@ To work with the sample, you must install the provided demo data.
 Remember that you’re working with the migrated app in this section. The forms that you see are directly ported from the Microsoft Dynamics AX 2012 version of the sample. Although they have been modified and restyled, they have not been reimagined.
 
 1.  Open Internet Explorer, and sign into the Finance and Operations application.
-2.  To return to the **Dashboard**, select the Microsoft Dynamics logo in the top-left corner of the page.[![Return to Dash](./media/returntodash_introfleetmgmt.png)](./media/returntodash_introfleetmgmt.png) The dashboard is the main working hub. You can see the various tiles, organized into sections, which lead to parts of the application. The dashboard is designed for horizontal scrolling, which is an optimization for working well on modern devices. The button to the right of the dashboard shows the navigation bar.
-3.  From the Dashboard, open the navigation bar and go to **Fleet Management** &gt; **Common** &gt; **Customers** &gt; **Customer**. 
+2.  To return to the **Dashboard**, select the Microsoft Dynamics logo in the top-left corner of the page.
+
+    [![Return to Dash](./media/returntodash_introfleetmgmt.png)](./media/returntodash_introfleetmgmt.png) 
+    
+    ![Return to dashboard](media/fmt_logo.png)
+    
+    The dashboard is the main working hub. You can see the various tiles, organized into sections, which lead to parts of the application. The dashboard is designed for horizontal scrolling, which is an optimization for working well on modern devices. The button to the right of the dashboard shows the navigation bar.
+3.  From the Dashboard, open the navigation bar and go to **Fleet Management \> Customers \> Customer**. 
 
     [![Customers](./media/customers_introfleetmgmt.png)](./media/customers_introfleetmgmt.png) 
 
     [![New Customer](./media/newcustomer_introfleetmgmt1.png)](./media/newcustomer_introfleetmgmt1.png)
 
-4.  On the Action Pane, select the Microsoft Office logo, then select **Customers** under **Export to Excel** to send the information in the grid view to a Microsoft Excel spreadsheet. This operation can take some time.
+    ![New customer](media/fmt_new_customer.png)
+
+4.  On the Action Pane, select the Microsoft Office logo, then select **Customers** under **Export to Excel**. Click **Download** to send the information in the grid view to a Microsoft Excel spreadsheet. This operation can take some time. ???Requires documentation setup. You have to go to the document management parameters form, and it appears that SharePoint is the only option.
 
     [![Export to excel](./media/exporttoexcel.jpg)](./media/exporttoexcel.jpg)
+
+    ![Export to Excel](media/fmt_export_excel.png)
 
 5.  When prompted, click **Open** to view the data in Excel.
 6.  Close Excel.
 7.  To switch to the **Details** view, select a value in the **First Name** column. 
 
     [![First name](./media/customer.jpg)](./media/customer.jpg) This view shows detailed information for a single customer.
+    
+    ![First name to details view](media/fmt_details_view.png)
 
 8.  Click **Show list** to show the navigation list. 
 
     [![Navigation list](./media/listnav_introfleetmgmt1.png)](./media/listnav_introfleetmgmt1.png)
+    
+    
+   ![Navigation list](media/fmt_show_list.png)
 
 9.  Click the various customer names in the navigation list in the side pane, and watch as the detailed information about each customer changes.
 10. Select the customer **Phil Spencer**. You'll notice the charts update to indicate Phil's previous rental preferences.
