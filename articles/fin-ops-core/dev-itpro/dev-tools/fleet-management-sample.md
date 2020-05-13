@@ -99,16 +99,20 @@ Remember that you’re working with the migrated app in this section. The forms 
 
     [![Navigation list](./media/listnav_introfleetmgmt1.png)](./media/listnav_introfleetmgmt1.png)
     
-    
    ![Navigation list](media/fmt_show_list.png)
 
 9.  Click the various customer names in the navigation list in the side pane, and watch as the detailed information about each customer changes.
-10. Select the customer **Phil Spencer**. You'll notice the charts update to indicate Phil's previous rental preferences.
-11. Hover over the pie slices to see the details. You'll notice that, in the past, Phil has often rented red SUVs. This might give the sales clerk a cue to look for available red SUVs the next time Phil makes a reservation. This is a simple example of proactively providing insights.
+10. Select the customer **Eduardo Cobo**. You'll notice the charts update to indicate Eduardo's previous rental preferences.
+
+    ![Details view](media/fmt_details_view.png)
+
+11. Hover over the pie slices to see the details. You'll notice that, in the past, Eduardo has often rented red SUVs. This might give the sales clerk a cue to look for available red SUVs the next time Eduardo makes a reservation. This is a simple example of proactively providing insights.
 12. Add yourself as a customer.
     -   On the Action Pane, click **New**. 
 
         [![Add yourself](./media/addyourself_introfleetmgmt1.png)](./media/addyourself_introfleetmgmt1.png)
+        
+        ![Add yourself](media/fmt_add_new.png)
 
     -   Fill in the form to add yourself as a customer. Make sure that you provide your name, a 16-digit number in the credit card field, and address information, at a minimum. **Note**: You don't have to take any action to save a new record.
 
@@ -118,8 +122,8 @@ Remember that you’re working with the migrated app in this section. The forms 
     3.  In the **Vehicle** field, select a vehicle.
     4.  In the **Customer** field, select your name.
     5.  In the **To** field, pick an end date.
-    6.  In the **Start** field, enter “35,000”.
-    7.  In the **Pickup** field, enter Full.
+    6.  In the **Start** field, enter **35,000**.
+    7.  In the **Pickup** field, enter **Full**.
     8.  When you are done, click **Save**.
 
 14. Start the rental period.
@@ -127,19 +131,23 @@ Remember that you’re working with the migrated app in this section. The forms 
     2.  In the dialog box, verify the values in the fields and click **OK**.
 
 ## Use Fleet Management to run a workflow
-1.  Click the Dynamics icon to return to the dashboard.
+1.  Click the **Home** icon to return to the dashboard.
+    ![Home icon](media/fmt_home_icon.png)
 2.  Find the **Reservation Management** tile and select it to open the Reservation Management workspace.
 3.  Click **Current rentals**.
 4.  On the **Rentals** form, click the ID of your rental.
 5.  On the Details view of the **Rentals** form, on the Action Pane, click **Complete rental**.
-6.  In the **New mileage** field, enter 40,000, and then click **OK**.
-7.  Click the Dynamics icon to return to the dashboard.
-8.  On the navigation bar, navigate to **Fleet management** &gt; **Vehicles** &gt; **Vehicle Maintenance**. 
+6.  In the **New mileage** field, enter **40,000**, and then click **OK**.
+7.  Click the **Home** icon to return to the dashboard.
+8.  On the navigation bar, navigate to **Fleet management** &gt; **Vehicles** &gt; **Vehicle Maintenance**. In the **Vehicle Maintenance** form, the **Status** field shows that your rental is awaiting examination by the service department.
 
     [![Vehicle Maintenance](./media/vehiclemaintenance_introfleetmgmt.png)](./media/vehiclemaintenance_introfleetmgmt.png) 
+    
+    ![Vehicle mainenance](media/fmt_vehicle_examination.png)
+        
+    > [!NOTE]
+    > You might need to wait up to two minutes for the batch framework to change the status of the vehicle. On the Action Pane, click **Refresh** periodically to update the view, until you see the status change. Keep in mind that a different person usually handles each step in a workflow; the brief delay introduced by the batch framework is not an issue in a real-world application.
 
-    In the **Vehicle Maintenance** form, the **Status** field shows that your rental is awaiting examination by the service department. > [!NOTE]
-> You might need to wait up to two minutes for the batch framework to change the status of the vehicle. On the Action Pane, click **Refresh** periodically to update the view, until you see the status change. Keep in mind that a different person usually handles each step in a workflow; the brief delay introduced by the batch framework is not an issue in a real-world application.
 9.  Select the row that contains your rental. On the Action Pane, click **Workflow**, and then click **Examination complete**. You may need to refresh the page to get the full set of options under Workflow.
 10. Enter a comment, and then click **Examination complete**.
 11. You might again need to wait up to two minutes for the batch framework to process the change. On the Action Pane, click **Refresh** periodically, until you see the **Status** field change. Notice that the vehicle now has a status of **Awaiting Service**.
