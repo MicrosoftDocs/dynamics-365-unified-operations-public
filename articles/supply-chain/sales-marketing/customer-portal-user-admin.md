@@ -86,11 +86,11 @@ Unauthorized users can't view any data. They can see only public information, su
 
 The following table shows which sales orders the users in each web role can see in the system.
 
-| Sales order | Administrator | Customer representative for customer X | Authorized user: Jane | Authorized user: Sam | Unauthorized user: May |
+| Sales order | Administrator | Customer representative for customer&nbsp;X | Authorized user: Jane | Authorized user: Sam | Unauthorized user: May |
 |---|---|---|---|---|---|
-| Customer&nbsp;X Orderer:&nbsp;Jane | &#10004; | &#10004; | &#10004; | &#10007; | &#10007; |
-| Customer&nbsp;X Orderer:&nbsp;Sam | &#10004; | &#10004; | &#10007; | &#10004; | &#10007; |
-| Customer&nbsp;Y Orderer:&nbsp;May | &#10004; | &#10007; | &#10007; | &#10007; | &#10007; |
+| Customer&nbsp;X Orderer:&nbsp;Jane | Yes | Yes | Yes | No | No |
+| Customer&nbsp;X Orderer:&nbsp;Sam | Yes | Yes | No | Yes | No |
+| Customer&nbsp;Y Orderer:&nbsp;May | Yes | No | No | No | No |
 
 > [!NOTE]
 > Even though both Sam and Jane are contacts who work for customer X, they can see only the orders that they themselves have placed and nothing else. Although May has an order in the system, she can't see that order in the Customer portal, because she is an unauthorized user. (Additionally, she must have placed the order through some channel other than the Customer portal.)
