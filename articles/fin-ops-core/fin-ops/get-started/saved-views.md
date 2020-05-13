@@ -142,7 +142,7 @@ If the changes that you want to make to a published view only involve the publis
 7. [10.0.9/Platform update 33 or later] If you had originally chosen this published view to be the default view, it will be the default view for these users again after the re-publish.  
 
 If the changes to the published view involve modifying the personalizations or filters associated with the view, follow these steps: 
-1.	Switch to the published view that you want to modify. 
+1.	Load the published view that you want to modify. 
 2.	Save a copy of the published view to create a local draft of the published view. 
 3.	Modify the local draft with the needed changes.
 4.	Publish the view with the original name. 
@@ -155,14 +155,18 @@ While all users see a **My views** tab showing their personal views, users with 
 For the list of all published views for the page, the following set of actions are available. 
 
 -    **Publish**: Use the **Publish** action to republish a view after publish parameters (name, description, security roles, or legal entities) are changed.
+-    **Save as personal**: Use the **Save as personal** action to create a personal draft copy of the published view. This can be useful for understanding the contents of a view that wasn't published to you or that hasn't been published yet, or as a means for making edits and re-publishing a view. This capability is introduced in 10.0.12.  
 -    **Remove**: Use the **Remove** action to permanently delete a published view. This action removes the view for all users in the system. Removing published views will take effect after the **Save** button is selected.
+
+## Managing views globally
+While some management capabilities are surfaced on each page as indicated in this article, system and view administrators can manage views more holistically for the system via the Personalization page. See the "Personalize this
 
 ## Frequently asked questions
 ### How do I enable saved views in my environment? 
 Note: The **Saved views** feature requires the Personalization system in Finance and Operations to be enabled. If personalization is turned off for the entire environment, views will be disabled even if you follow steps below. 
 
 **10.0.9 / Platform update 33 and later**
-The **Saved views** feature is available directly in Feature management in any environment. Like other public preview features, enabling this feature in production is subject to the [Supplemental Terms of Use Agreement](https://go.microsoft.com/fwlink/?linkid=2105274).  
+The **Saved views** feature is available directly in Feature management in any environment. Like other preview features, enabling this feature in production is subject to the [Supplemental Terms of Use Agreement](https://go.microsoft.com/fwlink/?linkid=2105274).  
 
 **10.0.8 / Platform update 32 and prior**
 The **Saved views** feature can be enabled in Tier 1 (Dev/Test) and Tier 2 (Sandbox) environments in order to provide additional testing and design changes by following the steps below.
