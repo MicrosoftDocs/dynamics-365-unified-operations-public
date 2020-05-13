@@ -5,7 +5,7 @@ title: Removed or deprecated platform features
 description: This topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 04/17/2020
+ms.date: 05/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -43,6 +43,16 @@ This list is intended to help you consider these removals and deprecations for y
 > Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
 
 ## Platform updates for version 10.0.11 of Finance and Operations apps
+
+### Explicit whitelisting for self-service environments
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | <Please briefly explain why this feature is deprecated.> |
+| **Replaced by another feature?**   | <Please indicate if another feature/capability can be used as a replacement.  |
+| **Product areas affected**         | <Indicate what product ares are affected.> |
+| **Deployment option**              | <Indicate if this affects Cloud, On-premises, or both.> |
+| **Status**                         | **Deprecated:** <Indicate when (the quarter or year) this feature will be removed.> |
 
 ### Field groups containing invalid field references
 
