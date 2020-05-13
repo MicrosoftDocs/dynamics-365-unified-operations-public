@@ -53,7 +53,7 @@ The cost accounting service doesn't currently support all the cost management fe
 > [!IMPORTANT]
 > To use the cost accounting service, you must have an LCS-enabled high-availability environment (not a OneBox environment), and you must be running Dynamics 365 Supply Chain Management version 10.0.11 or later.
 
-To sign up for the cost accounting service private preview, please send your LCS environment ID by email to [Cost accounting service (private preview)](mailto:aevengir@microsoft.com?subject=Cost%20accounting%20service%20%28private%20preview%29). On approving you for the program, we will send you a follow up email that contains a cost accounting service beta key. Upon receiving the beta key you can proceed with the [installation](#install).
+To sign up for the cost accounting service private preview, please send your LCS environment ID by email to [Cost accounting service (private preview)](mailto:aevengir@microsoft.com?subject=Cost%20accounting%20service%20%28private%20preview%29). On approving you for the program, we will send you a follow up email that contains a cost accounting service beta key. On receiving the beta key, you can proceed by [installing the add-in](#install).
 
 ## Licensing
 
