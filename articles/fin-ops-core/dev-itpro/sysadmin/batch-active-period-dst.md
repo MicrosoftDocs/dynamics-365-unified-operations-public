@@ -5,7 +5,7 @@ title: Daylight saving time support for active batch periods
 description: This topic provides information about daylight saving time support for active batch periods.
 author: karimelazzouni
 manager: AnnBe
-ms.date: 05/07/2020
+ms.date: 05/13/2020
 ms.topic: article
 ms.prod:
 ms.service: Dynamics365Operations
@@ -41,5 +41,5 @@ When this feature is turned on, the following changes occur:
 
     ![Timezone field on the Active periods for batch jobs page](./media/active-periods-dst.png)
 
-- The start and end times of existing active periods are adjusted according to the UTC time zone. Although the times will run at the same time that they previously ran, the start and end times that are shown might change if the user's preferred time zone isn't UTC.
+- The start and end times of existing active periods are adjusted according to the UTC time zone. 'Although the active periods will continue to start and end at the same times that they previously started and ended, the times that are shown might change if the user's preferred time zone isn't UTC.
 - Active periods will follow the DST adjustments of the time zones that they are associated with.
