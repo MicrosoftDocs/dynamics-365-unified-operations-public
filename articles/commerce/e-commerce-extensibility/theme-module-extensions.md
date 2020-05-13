@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Theme module extensions
+title: Extend a theme to add module extensions
 description: This topic describes how to extend a theme to add module extensions in Dynamics 365 Commerce. 
 author: samjarawan
 manager: annbe
@@ -28,7 +28,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Theme module extensions
+# Extend a theme to add module extensions
 
 [!include [banner](../includes/banner.md)]
 
@@ -162,6 +162,7 @@ export default (props: IProductFeatureViewProps & IProductFeatureProps<{}>) ) =>
 ```
 
 ### Data action extensions
+
 Any additional data actions added to the module theme definition extension file will be fired upon page load for pages that use the module when the theme is selected.  Data action added to a module theme extension will be called before data actions definied on the original module.
 
 The return data from a data action call must be declared in a THEME_NAME.data.ts file under the themes **/views** directory.  The below represents an example file struture of a theme calling a data action called **cart-extension.action**. Notice the new data action is included in the **actions** folder. The above example definition file shows an additional data action **cart-extension** called using a relative path from within the **&#42;.definition.ext.json** file.
