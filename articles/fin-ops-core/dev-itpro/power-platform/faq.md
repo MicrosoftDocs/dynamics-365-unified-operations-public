@@ -23,8 +23,8 @@ ms.search.scope: Operations
 ms.search.region: Global
 # ms.search.industry:
 ms.author: sunilg
-ms.search.validFrom: 2020-10-31
-ms.dyn365.ops.version: 10.0.0
+ms.search.validFrom: 2020-05-31
+ms.dyn365.ops.version: 10.0.12
 ---
 
 # FAQ
