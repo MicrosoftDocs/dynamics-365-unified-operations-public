@@ -156,7 +156,7 @@ To solve this problem and enable a rich set of scenarios that allows for virtual
 
 ```
 
-When this additional relations are made avaialble in Common Data Service information is made available in the relationship definition, the query generated will have the WHERE clause based on the fields that Finance and Operations will understand and the query will return the filtered list of sales orders as expected.
+When this additional relations are made available in Common Data Service information is made available in the relationship definition, the query generated will have the WHERE clause based on the fields that Finance and Operations will understand and the query will return the filtered list of sales orders as expected.
 
 ### Native entity to virtual entity relationship
 
