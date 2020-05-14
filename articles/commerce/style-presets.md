@@ -33,7 +33,7 @@ This topic describes how to work with site style presets in Dynamics 365 Commerc
 
 ## Overview
 
-A style preset is a stored set of all authorable style values accross a site's theme, and can be used to immediately alter the look of a site from within site builder. Style presets enable Commerce site builder authors to change, preview, and activate a set of style values accross their site quickly without the need for cascading style sheets (CSS) or theme deployment. For example, font styles, button styles, and site colors are all common style variables that can be managed through style presets. The available set of style variables within a site is determined by the theme and module library deployed to a site's tenant. The Dynamics 365 Commerce online software development kit (SDK) enables developers to implement as many (or as few) authorable style variables as they need for a given theme. By enabling more style variables, a theme developer can put final site style choices into the hands of site builder authors. This makes previewing and updating site styles within the toolset possible for non-developers, and is also useful for any scenario where direct theme or CSS changes would cause unnecessary overhead.  
+A style preset is a stored set of all authorable style values across a site's theme, and can be used to immediately alter the look of a site from within site builder. Style presets enable Commerce site builder authors to change, preview, and activate a set of style values across their site quickly without the need for cascading style sheets (CSS) or theme deployment. For example, font styles, button styles, and site colors are all common style variables that can be managed through style presets. The available set of style variables within a site is determined by the theme and module library deployed to a site's tenant. The Dynamics 365 Commerce online software development kit (SDK) enables developers to implement as many (or as few) authorable style variables as they need for a given theme. By enabling more style variables, a theme developer can put final site style choices into the hands of site builder authors. This ability enables non-developers to update and preview site styles within the toolset, and is also useful for any scenario where direct theme or CSS changes would cause unnecessary overhead.  
 
 Themes that have enabled authorable style variables will require a default style preset, and can optionally include additional preset options as part of a deployed theme package. For example, a theme could deploy with a single default "modern light" style preset, or it could include additional style preset options such as the default preset plus "modern dark," "vintage light," or "vintage dark." Such built-in theme presets are created by developers, and can be used as starting points for new site design. Within site builder, authors can choose from a theme's built-in presets, or they can create their own style presets and customizations using enabled style variables. A style preset can be previewed in site builder prior to activating it on the live site.  Once an author's style changes are reviewed, the style preset can then be set to "'active"' for the live site.
 
@@ -50,7 +50,7 @@ To preview a style preset on your site in site builder, follow these steps.
 
 1. On the command bar, select **Preview**.
 1. Choose a URL from your site to use for previewing the style preset, and then select **OK**.
-1. Choose the channel and locale-specific URL variant you with to preview by selecting the variant's name. This will launch a new browser window with your selected style preset applied to the chosen page where you can preview it.
+1. Choose the channel and locale-specific URL variant you with to preview by selecting the variant's name. A new preview browser window will then launch with your selected style preset applied to the chosen page.
 
 >[!NOTE]
 >The preview URL is persistent and authenticated, which means you can copy, paste, and send it to other authenticated co-workers for review prior to setting it active on your live site. The preview URL is also useful for checking styles on different devices, browsers, and screens. 
@@ -65,14 +65,14 @@ To create a custom style preset in site builder, follow these steps.
 1. In the left navigation pane for your site, go to **Site Settings \> Design**.
 1. Select the **Style presets** tab at the top of the design editor.
 1. On the command bar, select **New preset**.
-1. Enter a name and description for the new preset, and then select **Save**. This will create a new customizable preset with the theme's default values as its starting point. 
+1. Enter a name and description for the new preset, and then select **Save**. A new customizable preset is then created that uses the theme's default values as a starting point. 
 
 >[!NOTE]
 >A new custom style preset can also be created from any existing preset by selecting **Save as** from an existing preset's ellipsis menu ("**...**"), or from the command bar within the preset editor. 
 
 ## Modify global and module type style values
 
-Some of a theme's style variables are shared between mutiple module types. These style variables are referred to as **global**.  Examples of common global type style variables include primary site colors, default font styles, or button styles. Setting global variables may change the look across many different module types.  
+Some of a theme's style variables are shared between multiple module types. These style variables are referred to as **global**.  Examples of common global type style variables include primary site colors, default font styles, or button styles. Setting global variables may change the look across many different module types.  
 
 Some style values can be unique to a module type, or may need to optionally override a default global value. If a site's theme has implemented module type style variables, site builder authors can customize the style of a module type independent from the global settings. Module type variables can either augment or override the global style variables within a theme.
 
@@ -107,7 +107,7 @@ To set a style preset as the new active one on your site, do the following.
     - The command bar in style preset editor.
     - The ellipsis menu ("**...**") on any available preset from within the main **Design \> Style presets** view.
 
-This will make a preset's style values active accross your public facing website.
+This will make a preset's style values active across your public facing website.
 
 ## Additional resources
 
