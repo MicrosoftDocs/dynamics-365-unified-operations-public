@@ -46,33 +46,29 @@ To preview a style preset on your site in site builder, follow these steps.
 1. From the **Available presets** list, select one preset and then select **View** to navigate to the preset editor. If there are no options under **Available presets**, see [Create a custom style preset](#create-a-custom-style-preset) below for instructions on how to create a custom style preset.
 
     >[!NOTE]
-    >Presets that came with the theme are indicated with a **Built-in** badge. These built-in presets are read-only, so use the **Save as** option on the ellipsis menu ("**...**") to copy any built-in preset as a new customizable preset.
+    >Presets that came with the theme are indicated with a **Built-in** badge. These built-in presets are read-only. To copy any built-in preset as a new customizable preset, select **Save as** from the existing preset's ellipsis menu ("**...**").
 
 1. On the command bar, select **Preview**.
 1. Choose a URL from your site to use for previewing the style preset, and then select **OK**.
 1. Choose the channel and locale-specific URL variant you with to preview by selecting the variant's name. This will launch a new browser window with your selected style preset applied to the chosen page where you can preview it.
 
-    >[!NOTE]
-    >The preview URL is persistent and authenticated, which means you can copy, paste, and send it to other authenticated co-workers for review prior to setting it active on your live site. The preview URL is also useful for checking styles on different devices, browsers, and screens. 
+>[!NOTE]
+>The preview URL is persistent and authenticated, which means you can copy, paste, and send it to other authenticated co-workers for review prior to setting it active on your live site. The preview URL is also useful for checking styles on different devices, browsers, and screens. 
 
-    >[!TIP]
-    >While editing a style preset, it can be helpful to leave its full preview window open in a separate browser window for quickly validating changes. After saving changes to a preset, refresh the open preview browser window to validate the user experience.
+>[!TIP]
+>While editing a style preset, it can be helpful to leave its full preview window open in a separate browser window for quickly validating changes. After saving changes to a preset, refresh the open preview browser window to validate the user experience.
 
 ## Create a custom style preset
 
 To create a custom style preset in site builder, follow these steps.
 
-1. In the left navigation pane for your site, go to **Site Settings \> **Design**.
-1. Validate that you are in the **Style presets** tab at the top of the design editor.
+1. In the left navigation pane for your site, go to **Site Settings \> Design**.
+1. Select the **Style presets** tab at the top of the design editor.
+1. On the command bar, select **New preset**.
+1. Enter a name and description for the new preset, and then select **Save**. This will create a new customizable preset with the theme's default values as its starting point. 
 
-1. Click on the **New preset** button in the action bar.
-
-1. Enter a name and description for the new preset, and click **Save**.
-
-1. This will create a new customizable preset with the theme's default values as its starting point. 
-
-   >[!Note]
-   >A new custom style preset can also be created from any existing preset by using the **Save as** option within an existing preset's elipse button menu ("**...**"), or the action bar within the preset editor. 
+>[!NOTE]
+>A new custom style preset can also be created from any existing preset by using the **Save as** option within an existing preset's elipse button menu ("**...**"), or the action bar within the preset editor. 
 
 ## Modify global and module-type style values
 
@@ -80,58 +76,35 @@ Some of a theme's style variables are shared between mutiple module types.  Thes
 
 Other style values can be unique to a module type, or may need to optionally over-ride a default global value.  If the site's theme has implemented module type style variables, then site builder authors can customize the style of a module type, independent from the global settings.  Module type variables can either augment or over-ride the global style variables within a theme.
 
-   >[!Note]
-   >The hierarchy of style values within a site will behave as follows:
-   >**Theme default values**  < **Global style values** < **Module type style values**  < .**CSS override**, where the style values on the right, override the values to the left.
+>[!NOTE]
+>The hierarchy of style values within a site will behave as follows, where the style values on the right override the values to the left:
+>**Theme default values** \< **Global style values** \< **Module type style values**  \< **CSS override**
 
 To change a style preset's global or module level values in site builder, follow these steps.
 
-1. In site builder, click on **Design** from the left navigation pane.
-
-   >[!Note]
-   >In some environments you will need to first exapand **Site Settings**  in the lower left of the navigation pane to see the **Design** tab.
-
-1. Validate that you are in the **Style presets** tab at the top of the design editor. 
-
-1. Click the **View** button on any style preset to navigate to the editor.
-
-1. Click the **Preview** button  and follow the URL selection steps to open a full browser window preview for your preset.   
-
-1. Leave this preview browser window open, and return to the style editor browser window.
-
-1. Click the **Edit** button in the upper right of the editor.
-
-1. Change some global style values using the the style variable controls in the editor.
-
-1. Now click the **Modules** tab to the right of the **Global** tab at the top of the editor.
-
+1. In the left navigation pane for your site, go to **Site Settings \> Design**.
+1. Select the **Style presets** tab at the top of the design editor.
+1. Select **View** on any style preset to navigate to the preset editor.
+1. Select **Preview** and then follow the URL selection steps to open a full browser window preview for your preset. Leave this preview browser window open.
+1. In the preset editor, select **Edit** on the upper right.
+1. Using the style variable controls in the editor, change some global style values .
+1. Select the **Modules** tab to the right of the **Global** tab at the top of the editor.
 1. Select a module type that needs to be styled.
+1. Using the style controls, change some values for the module type.
+1. When ready to preview, select **Save** on the command bar.  
+1. Return to the open preview window and refresh the URL. The full browser window preview is useful for checking style changes at different view breakpoints, browsers, and device platforms.
+1. When all changes are complete and validated, select **Finish editing** on the upper right of the editor.
 
-1. Change some values for the module type using the style controls.
-
-1. When ready to preview, click **Save** in the action bar.  
-
-1. Return to the open preview window from *step 5* above and refresh the URL.  
-
-    >[!Note]
-    >Full browser window preview is usefull for checking style changes at different view breakpoints, browsers, and even different device platforms, just as your end-users will see it.
-
-1. Repeat *steps 7-9* until changes are complete and validated, then click **Finish editing** in the upper right of the editor.
-
-   >[!Note]
-   >If you are editing the currently active preset on your site, you will see a blue **Active** badge in the editor to indicate that it is already live on your website.  If you make changes to the active preset, clicking the **Publish** button will push these changes to your live site.
+>[!NOTE]
+>If you are editing the currently active preset on your site, you will see a blue **Active** badge in the editor to indicate that it is already live on your website.  If you make changes to the active preset, clicking the **Publish** button will push these changes to your live site.
 
 ## Set a new style preset active on your live site
 
 To set a style preset as the new active one on your site, follow these steps.
 
-* Click the **Set as active button** in either:
-
-  * The action bar in style preset editor 
-
-    or,
-
-  * The elipse button menu ("**...**") on any available preset card within the main **Design > Style presets** view.
+- Select the **Set as active button** on either:
+    - The command bar in style preset editor.
+    - The ellipsis menu ("**...**") on any available preset within the main **Design \> Style presets** view.
 
 This will make a preset's style values active accross your public facing website.
 
