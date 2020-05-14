@@ -49,7 +49,7 @@ Three container modules are supported: container, container with 2-slots, and co
 - A site author wants a six-column layout, where six modules appear side by side. Therefore, the site author uses a container of the contain type that has six columns inside it.
 - A site author wants to put a module on a page but doesn't want it to fill the screen. Therefore, the site author adds the module to a container module and sets the container's **Width** property to **Fit container**.
 
-The following image shows an example of a container module containing a carousel module in Commerce site builder, where the container module has the width value set to **Fill screen**.
+The following image shows an example of a container module that contains a carousel module in Commerce site builder. In this example, the **Width** property of the container module is set to **Fill Screen**.
 
 ![Example of a container module](./media/ecommerce-container.PNG)
 
@@ -106,23 +106,23 @@ Additional properties can be used to optimize the layout for different view port
 
 To add a container player module to a new page and set the required properties, follow these steps.
 
-1. Go to **Templates** and select **+New** to create a new template.
-1. In the **New Template** dialog box, under **Template name** enter **Container template**, and then select **OK**.
+1. Go to **Templates**, and select **New** to create a new template.
+1. In the **New Template** dialog box, under **Template name**, enter **Container template**, and then select **OK**.
 1. In the **Body** slot, select the ellipsis (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, select the **Default Page** module, and then select **OK**.
 1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it. 
-1. Go to **Pages** and select **+New** to create a new page.
-1. In the **Choose a template** dialog box, select the video player template you created, under **Page name** enter **Container page**, and then select **OK**.
+1. Go to **Pages**, and select **New** to create a new page.
+1. In the **Choose a template** dialog box, select the video player template that you created. Under **Page name**, enter **Container page**, and then select **OK**.
 1. In the **Main** slot of the new page, select the ellipsis (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, select the **Container** module, and then select **OK**.
 1. In the property pane for the container module, set the **Number of columns** property to **1** and the **Width** property to **Fill container**.
 1. In the **Container** slot, select the ellipsis (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, select the **Content block** module, and then select **OK**.
 1. In the property pane for the content block module, configure the heading, image, and layout.
-1. Select **Save** and then select **Preview** to preview the page. You should see one feature module that fits within the width of the container module.
+1. Select **Save**, and then select **Preview** to preview the page. You should see one feature module that fits within the width of the container module.
 1. In the property pane for the container module, change the value of the **Number of columns** property to **3**.
-1. Add and configure two more content block modules to the container module.
-1. Select **Save** and then select **Preview** to preview the page. You should now see three content block modules that appear side by side.
+1. Add two more content block modules to the container module, and configure them.
+1. Select **Save**, and then select **Preview** to preview the page. You should now see three content block modules that appear side by side.
 1. After you've achieved the layout that you want, select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
 ## Additional resources
