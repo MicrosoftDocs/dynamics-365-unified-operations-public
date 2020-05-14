@@ -157,7 +157,7 @@ Remember that you’re working with the migrated app in this section. The forms 
 
     [![Tracking details](./media/workflow.jpg)](./media/workflow.jpg)
 
-    ![Tracking details](media/worflow_history.jpg)
+    ![Tracking details](media/fmt_worflow_history.jpg)
 
 ### To view the setup behind the workflow
 
@@ -215,7 +215,7 @@ The web client enables users who have appropriate permissions to modify KPI defi
 
     [![KPI Graph](./media/kpigraph_introfleetmgmt.png)](./media/kpigraph_introfleetmgmt.png)
     
-    ![KPI graph](media/fmt_kip_value.png)
+    ![KPI graph](media/fmt_kpi_value.png)
 
 10. Click the form caption to return to the grid view.
 11. Click the **Name** column header, change the filter operator to **contains**, and update the filter field value to **Number**. You will see the new KPI is available in the list.
