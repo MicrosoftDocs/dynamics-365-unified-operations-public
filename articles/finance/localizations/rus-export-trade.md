@@ -85,7 +85,7 @@ A facture is an *export facture* if it's created based on invoices that contain 
 
     If the **Into processing** option is set to **Yes** for the facture, the facture isn't directly included in the sales book. Instead, it's processed by the outgoing VAT processing. For more information, see the [Outgoing VAT processing](#outgoingvatprocessing) section.
 
-    The **Operation type** field shows a rule for facture processing. The system automatically assigns a value during the preliminary processing of export factures. However, you can manually change the value. For more information about operation types, see the [Preliminary processing of export factures](#preliminary-processing-of-export-factures) and [Operation types](#operation-types) sections.
+    The **Operation type** field shows a rule for facture processing. The system automatically assigns a value during the preliminary processing of export factures. However, you can manually change the value. For more information about operation types, see the [Preliminary processing of export factures](#preliminaryprocessing-exportfactures) and [Operation types](#operation) sections.
 
 For more information about export factures, see the [Create a facture for export sales](#createfactureexport) section.
 
@@ -102,7 +102,7 @@ You can cancel the preliminary processing of export factures for current or prev
 
 For more information, see the [Preliminary processing of export factures](#preliminaryprocessingexportfactures) section.
 
-#### Operation types
+### <a name="operation"></a> Operation types
 
 VAT operation types are rules that are used for the preliminary processing of export factures. The system automatically assigns a value to a facture, based on the export date, confirmation date, and expiration date.
 
