@@ -247,9 +247,9 @@ In this tutorial, you’ll access the system as a user that has been assigned a 
     |-----------------|-------------------------------------------------------------------------------------------|
     | User ID         | Eight character unique ID                                                                 |
     | User name       | The first name of the user                                                                |
-    | Network domain  | `urn:Federation:MicrosoftOnline`                                                            |
+    | Network domain  | `urn:Federation:MicrosoftOnline`                                                          |
     | Alias           | `tim@lucernepublishers.ccsctp.net` (Replace with the organization account email address.) |
-    | Default Company | `DAT`                                                                                       |
+    | Default Company | `DAT`                                                                                     |
     | Enabled         | Verify that this slider is set to **Yes**.                                                |
 
     ![New user record](media/fmt_new_user_record.png)
@@ -257,11 +257,13 @@ In this tutorial, you’ll access the system as a user that has been assigned a 
 4.  Click **Assign Roles**. 
 
     [![Assign Roles](./media/assignroles_introfleetmgmt.png)](./media/assignroles_introfleetmgmt.png)
+    
+    ![Assign branch manager](media/fmt_branch_manager.png)
 
 5.  Select **Fleet management branch manager**, and then click **OK**.
 6.  Click the user name on the top right, and then click **Sign Out**. You’ll be redirected back to the sign-n page
 7.  Sign in using the credentials for the user who you assigned the security role to in the steps above.
-8.  Notice that in the dashboard, this user can see only items that are related to his security role. Items that system administrators can see are now hidden.
+8.  Notice that in the dashboard, this user can see only items that are related to the branch manager security role. Items that system administrators can see are now hidden.
 9.  Click **Sign out** to sign out of the session.
 
 
