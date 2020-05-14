@@ -5,7 +5,7 @@ title: Design a configuration for generating documents in Excel format
 description: This topic provides information about how to design an Electronic reporting (ER) format to fill in an Excel template, and then generate outbound Excel format documents.
 author: NickSelin
 manager: AnnBe
-ms.date: 05/06/2020
+ms.date: 05/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -35,6 +35,8 @@ ms.dyn365.ops.version: Version 7.0.0
 [!include[banner](../includes/banner.md)]
 
 You can design an [Electronic reporting (ER)](general-electronic-reporting.md) format configuration that has an ER [format component](general-electronic-reporting.md#FormatComponentOutbound) that you can configure to generate an outbound document in a Microsoft Excel workbook format. Specific ER format components must be used for this purpose.
+
+To learn more about this feature, follow the steps in the topic, [Design a configuration for generating reports in OPENXML format](tasks/er-design-reports-openxml-2016-11.md).
 
 ## Add a new ER format
 
@@ -142,7 +144,7 @@ To learn more about how to embed images and shapes, see [Embed images and shapes
 
 ## Page break component
 
-The **PageBreak** component forces Excel to start a new page. This component isn't required when you want Excel to do paging. Use it when you want Excel to do paging in your ER format.
+The **PageBreak** component forces Excel to start a new page. This component isn't required when you want to use Excel's default paging, but you should use it when you want Excel to follow your ER format to structure paging.
 
 ## Edit an added ER format
 
@@ -164,13 +166,10 @@ To learn more about this feature, follow the steps in [Modify Electronic reporti
 
 ## Validate an ER format
 
-When you validate an editable ER format, a consistency check is done to make sure that the editable ER format Excel name is presented in the Excel template that is currently used. You will be notified about any inconsistencies. For some inconsistencies, the option to automatically fix issues will be offered.
+When you validate an ER format that can be edited, a consistency check is done to make sure that the Excel name is present in the Excel template that is currently used. You will be notified about any inconsistencies. For some inconsistencies, the option to automatically fix issues will be offered.
 
 ![Validation error message](./media/er-excel-format-validate.png)
 
-## Example
-
-To learn more about this feature, follow the steps in [Design a configuration for generating reports in OPENXML format](tasks/er-design-reports-openxml-2016-11.md).
 
 ## Additional resources
 
