@@ -42,7 +42,7 @@ The cart module supports signed-in checkout and guest checkout. It also supports
 
 The cart module renders data based on the cart ID, which is a browser cookie available throughout the site. 
 
-The following image shows an example of a Fabrikam site cart page.
+The following image shows an example of a cart page on the Fabrikam site.
 
 ![Example of a cart module](./media/cart2.PNG)
 
@@ -73,21 +73,21 @@ The cart module retrieves product information by using Commerce Scale Unit APIs.
 
 To add a cart module to a new page and set the required properties, follow these steps.
 
-1. Go to **Page Fragments** and select **+New** to create a new fragment.
+1. Go to **Page Fragments**, and select **New** to create a new fragment.
 1. In the **New Page Fragment** dialog box, select the **Cart** module.
 1. Under **Page Fragment Name**, enter the name **Cart fragment**, and then select **OK**.
 1. Select the **Cart** slot.
-1. In the properties pane on the right, select the pencil symbol, enter heading text in the box, and then select the check mark symbol.
+1. In the properties pane on the right, select the pencil symbol, enter heading text in the field, and then select the check mark symbol.
 1. In the **Cart** slot, select the ellipsis (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, select the **Store selector** module, and then select **OK**.
 1. Select **Save**, select **Finish editing** to check in the fragment, and then select **Publish** to publish it.
-1. Go to **Templates** and select **+New** to create a new template.
-1. In the **New Template** dialog box, under **Template name** enter a name for the template.
+1. Go to **Templates**, and select **New** to create a new template.
+1. In the **New Template** dialog box, under **Template name**, enter a name for the template.
 1. In the outline tree, select the **Body** slot, select the ellipsis (**...**), and then select **Add Fragment**.
 1. In the **Select Page Fragment** dialog box, select the **Cart fragment** fragment, and then select **OK**.
 1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.
-1. Go to **Pages** and select **+New** to create a new page.
-1. In the **Choose a template** dialog box, select the template you created, enter a page name, and then select **OK**.
+1. Go to **Pages**, and select **New** to create a new page.
+1. In the **Choose a template** dialog box, select the template that you created, enter a page name, and then select **OK**.
 1. Select **Save**, and then select **Preview** to preview the page.
 1. Select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
