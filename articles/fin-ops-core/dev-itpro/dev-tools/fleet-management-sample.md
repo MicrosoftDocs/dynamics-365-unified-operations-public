@@ -100,8 +100,6 @@ Remember that you’re working with the migrated app in this section. The forms 
 11. Hover over the pie slices to see the details. You'll notice that, in the past, Eduardo has often rented red SUVs. This might give the sales clerk a cue to look for available red SUVs the next time Eduardo makes a reservation. This is a simple example of proactively providing insights.
 12. Add yourself as a customer.
     -   On the Action Pane, click **New**. 
-
-        [![Add yourself](./media/addyourself_introfleetmgmt1.png)](./media/addyourself_introfleetmgmt1.png)
         
         ![Add yourself](media/fmt_add_new.png)
 
@@ -122,18 +120,18 @@ Remember that you’re working with the migrated app in this section. The forms 
     2.  In the dialog box, verify the values in the fields and click **OK**.
 
 ## Use Fleet Management to run a workflow
-1.  Click the **Home** icon to return to the dashboard.
-    ![Home icon](media/fmt_home_icon.png)
-2.  Find the **Reservation Management** tile and select it to open the Reservation Management workspace.
-3.  Click **Current rentals**.
-4.  On the **Rentals** form, click the ID of your rental.
-5.  On the Details view of the **Rentals** form, on the Action Pane, click **Complete rental**.
-6.  In the **New mileage** field, enter **40,000**, and then click **OK**.
-7.  Click the **Home** icon to return to the dashboard.
-8.  On the navigation bar, navigate to **Fleet management** &gt; **Vehicles** &gt; **Vehicle Maintenance**. In the **Vehicle Maintenance** form, the **Status** field shows that your rental is awaiting examination by the service department.
+1. Click the **Home** icon to return to the dashboard.
 
-    [![Vehicle Maintenance](./media/vehiclemaintenance_introfleetmgmt.png)](./media/vehiclemaintenance_introfleetmgmt.png) 
-    
+    ![Home icon](media/fmt_home_icon.png)
+
+2. Find the **Reservation Management** tile and select it to open the Reservation Management workspace.
+3. Click **Current rentals**.
+4. On the **Rentals** form, click the ID of your rental.
+5. On the Details view of the **Rentals** form, on the Action Pane, click **Complete rental**.
+6. In the **New mileage** field, enter **40,000**, and then click **OK**.
+7. Click the **Home** icon to return to the dashboard.
+8. On the navigation bar, navigate to **Fleet management** &gt; **Vehicles** &gt; **Vehicle Maintenance**. In the **Vehicle Maintenance** form, the **Status** field shows that your rental is awaiting examination by the service department.
+
     ![Vehicle mainenance](media/fmt_vehicle_examination.png)
         
     > [!NOTE]
@@ -153,8 +151,6 @@ Remember that you’re working with the migrated app in this section. The forms 
 ### To view the setup behind the workflow
 
 1.  On the dashboard, navigate to **Fleet Management** \> **Setup** \> **Workflow setup**. The **Workflow Setup** page shows the list of workflows. 
-
-    [![Workflow setup](./media/workflowsetup.jpg)](./media/workflowsetup.jpg)
 
     ![Workflow setup](media/fmt_workflow_setup.png)
     
@@ -185,8 +181,6 @@ The web client enables users who have appropriate permissions to modify KPI defi
 
 
 6.  Click **Save**. 
-
-    [![New KPI](./media/newkpi_introfleetmgmt1.png)](./media/newkpi_introfleetmgmt1.png) 
     
     ![New KPI](media/fmt_new_kpi.png)
 
@@ -203,15 +197,11 @@ The web client enables users who have appropriate permissions to modify KPI defi
     | Good if more than  | 110       |
 
 9.  In the application bar, click **Save**. 
-
-    [![KPI Graph](./media/kpigraph_introfleetmgmt.png)](./media/kpigraph_introfleetmgmt.png)
     
     ![KPI graph](media/fmt_kpi_value.png)
 
 10. Click the form caption to return to the grid view.
 11. Click the **Name** column header, change the filter operator to **contains**, and update the filter field value to **Number**. You will see the new KPI is available in the list.
-
-    [![KPI List](./media/kpilist_introfleetmgmt1.png)](./media/kpilist_introfleetmgmt1.png)
     
     ![KPI list](media/fmt_kpi_list.png)
 
@@ -220,8 +210,6 @@ In this tutorial, you’ll launch an operational report that contains a list of 
 
 1.  Use the dashboard to open the **Reservation management** workspace.
 2.  On the right side of the page, under **Reports** click **Customer list**. Do not enter anything in the parameter for **Customer group**. 
-
-    [![Customer List](./media/customerlist_introfleetmgmt1.png)](./media/customerlist_introfleetmgmt1.png)
     
     ![Customer list](media/fmt_customer_list_report.png)
 
@@ -247,8 +235,6 @@ In this tutorial, you’ll access the system as a user that has been assigned a 
 
 4.  Click **Assign Roles**. 
 
-    [![Assign Roles](./media/assignroles_introfleetmgmt.png)](./media/assignroles_introfleetmgmt.png)
-    
     ![Assign branch manager](media/fmt_branch_manager.png)
 
 5.  Select **Fleet management branch manager**, and then click **OK**.
