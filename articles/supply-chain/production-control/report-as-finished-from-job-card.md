@@ -123,15 +123,12 @@ When you use this scenario, the **Report progress** page on the job card device 
 
 ## Report as finished items that are enabled for advanced warehouse processes
 
-The advanced warehouse processes uses the license plate dimension to track inventory on warehouse locations. You need to specify a license plate number when you report as finished to a location that has been set up to be tracked by the license plate dimension. In that case you can either re-use an existing license plate number or use a new one. 
+The advanced warehouse processes uses the license plate dimension to track inventory on warehouse locations that have been set up to be tracked by the license plate dimension. In that case, the license plate number is needed when you report as finished. In the configuration page for the job card device you can set up if you during report as finished want to re-use an existing license plate or a new one should be generated This can either be an existing license plate that is re-used or a new license plate number.Go to **Production control > Setup > Manufacturing execution > Configure job card for devices** and set the following options:
 
-* **Re-use an existing license plate** Workers report as finished to an existing license plate. This is relevant, for example, if the license plate represents a pallet and workers continually report items to the same pallet as the finished goods are completed in the production process.
-* **Create a new licese plate** Workers report as finished to a new license plate each time, and print out a license plate label with the new license plate number
+* **Generate license plate**: Set this to **Yes** to generate a new license plate for each report as finished. Set this to **No** if an existing license plate should be used for each report as finished.  <!-- ... KFM: I don't see this in the UI. Do we need to enable something? Also, what happens if this is set to No? --> <!-- johanho: Field enabled in FM. I have elaborated on value: No -->
+* **Print label**: Set this to **Yes** if the worker needs to print a license plate label for each report as finished. Set this to **No** if no label is required to be printed. The label is configured in the **Document routing** menu. 
 
-The rules for reporting as finished to a license plate controlled location are managed from the configuration page for the job card device. Go to **Production control > Setup > Manufacturing execution > Configure job card for devices** and set the following options:
 
-- **Generate license plate**: Set this to **Yes** to generate a new license plate for each report as finished. Set this to **No** if an existing license plate should be used for each report as finished.  <!-- ... KFM: I don't see this in the UI. Do we need to enable something? Also, what happens if this is set to No? --> <!-- johanho: Field enabled in FM. I have elaborated on value: No -->
-- **Print label**: Set this to **Yes** if the worker needs to print a license plate label for each report as finished. Set this to **No** if no label is required to be printed. The label is configured in the **Document routing** menu. 
 
 <!-- ... KFM: Again, I don't see this in the UI. Do we need to enable something? Where is the Document routing menu, and how do we "configure" it? Also, what happens if this is set to No? -->
 <!-- JOHANHO: You need to enable that i Feature management. Also explained No -->
