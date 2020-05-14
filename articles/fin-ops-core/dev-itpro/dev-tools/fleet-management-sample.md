@@ -70,10 +70,6 @@ Remember that you’re working with the migrated app in this section. The forms 
     The dashboard is the main working hub. You can see the various tiles, organized into sections, which lead to parts of the application. The dashboard is designed for horizontal scrolling, which is an optimization for working well on modern devices. The button to the right of the dashboard shows the navigation bar.
 3.  From the Dashboard, open the navigation bar and go to **Fleet Management \> Customers \> Customer**. 
 
-    [![Customers](./media/customers_introfleetmgmt.png)](./media/customers_introfleetmgmt.png) 
-
-    [![New Customer](./media/newcustomer_introfleetmgmt1.png)](./media/newcustomer_introfleetmgmt1.png)
-
     ![Navigate to customer list](media/fmt_customers_customer.png)
     
     ![New customer](media/fmt_new_customer.png)
@@ -95,7 +91,7 @@ Remember that you’re working with the migrated app in this section. The forms 
 9.  Click the various customer names in the navigation list in the side pane, and watch as the detailed information about each customer changes.
 10. Select the customer **Eduardo Cobo**. You'll notice the charts update to indicate Eduardo's previous rental preferences.
 
-    ![Details view](media/fmt_details_view.png)
+    ![Details view](media/fmt_another_customer.png)
 
 11. Hover over the pie slices to see the details. You'll notice that, in the past, Eduardo has often rented red SUVs. This might give the sales clerk a cue to look for available red SUVs the next time Eduardo makes a reservation. This is a simple example of proactively providing insights.
 12. Add yourself as a customer.
@@ -180,11 +176,10 @@ The web client enables users who have appropriate permissions to modify KPI defi
     | Measure       | NoRentals               |
     | KPI Goal Type | Fixed Value             |
     | Goal value    | 30                      |
-
-
-6.  Click **Save**. 
     
     ![New KPI](media/fmt_new_kpi.png)
+
+6.  Click **Save**. 
 
     > [!NOTE]
     > If the **Save** button isn’t visible in the **New KPI** dialog box, use a higher screen resolution so that you can see the entire dialog. You can see the KPI details page that contains details about the KPI that you created. You can make changes in the **Details** section. You will modify the default threshold values so that if the value is less than 90% of the goal, the KPI will show red and if the value is over 110% of the goal, the KPI will show green.
