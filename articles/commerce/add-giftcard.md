@@ -42,7 +42,7 @@ For more information on support for external gift cards such as SVS and Givex, s
 
 The following image shows an example of a gift card module on a checkout page.
 
-![Example of a Gift card module](./media/ecommerce-giftcard.PNG)
+![Example of a gift card module](./media/ecommerce-giftcard.PNG)
 
 ## Module properties
 
