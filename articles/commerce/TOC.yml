@@ -509,7 +509,9 @@
           - name: Omni-channel payments overview 
             href: omni-channel-payments.md
           - name: Payments FAQ 
-            href: dev-itpro/payments-retail.md     
+            href: dev-itpro/payments-retail.md
+      - name: Manage Bing Maps for your organization
+        href: dev-itpro/manage-bing-maps.md
     - name: Merchandizing your products and services  
       items:
       - name: Categories, products, and assortments 
