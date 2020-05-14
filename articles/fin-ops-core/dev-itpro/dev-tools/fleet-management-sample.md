@@ -78,7 +78,7 @@ Remember that you’re working with the migrated app in this section. The forms 
     
     ![New customer](media/fmt_new_customer.png)
 
-4.  On the Action Pane, select the Microsoft Office logo, then select **Customers** under **Export to Excel**. Click **Download** to send the information in the grid view to a Microsoft Excel spreadsheet. This operation can take some time. ???Requires documentation setup. You have to go to the document management parameters form, and it appears that SharePoint is the only option.
+4.  On the Action Pane, select the Microsoft Office logo, then select **Customers** under **Export to Excel**. Click **Download** to send the information in the grid view to a Microsoft Excel spreadsheet. This operation can take some time.
 
     ![Export to Excel](media/fmt_export_excel.png)
 
@@ -222,7 +222,7 @@ In this tutorial, you’ll access the system as a user that has been assigned a 
 
 1.  On the dashboard, in the **System administration** section, click **Users** and then **Users**.
 2.  On the Action Pane, click **New**.
-3.  Enter the following field information. ??? These fields do not match the screen.
+3.  Enter the following field information.
 
     | Property        | Value                                                                                 |
     |-----------------|-------------------------------------------------------------------------------------------|
