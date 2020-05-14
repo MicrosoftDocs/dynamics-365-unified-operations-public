@@ -58,7 +58,7 @@ Expense entry has been enhanced through the introduction of optical character re
 
 ## Installation
 
-This feature works in combination with the **Expense reports re-imagined** feature to help simplify the expense experience.
+This feature works in combination with the **Expense reports re-imagined** feature to help simplify the expense experience. This feature is only available for Tier 2+ environments, which are Sandbox and Production.
 
 To use these advanced expense capabilities, install the Expense Management Service add-in for Microsoft Dynamics 365 Finance, and turn on the features in your instance. You can access the add-in from your project in Microsoft Dynamics Lifecycle Services (LCS).
 
