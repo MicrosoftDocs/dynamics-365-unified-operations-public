@@ -1,7 +1,7 @@
 {
   "redirections": [
     {
-      "source_path": "articles/finance/localizations/tasks/hu-00001-exchange-rate-calculation.md      ",
+      "source_path": "articles/finance/localizations/tasks/hu-00001-exchange-rate-calculation.md",
       "redirect_url": "../emea-hun-average-daily-exchange-rate-calculation",
       "redirect_document_id": "false"
     },
