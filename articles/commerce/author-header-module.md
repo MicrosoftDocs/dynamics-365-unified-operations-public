@@ -42,7 +42,7 @@ The header module includes a site logo, links to the navigation hierarchy, links
 
 The following image shows an example of a header module on a home page.
 
-![Example of header module](./media/ecommerce-header.png)
+![Example of a header module](./media/ecommerce-header.png)
 
 ## Properties of a header module
 
@@ -66,14 +66,14 @@ The following modules can be used in a header module:
 
 To create a header module, follow these steps.
 
-1. Go to **Page Fragments** and select **+New** to create a new fragment.
+1. Go to **Page Fragments**, and select **New** to create a new fragment.
 1. In the **New Page Fragment** dialog box, select the **Container** module, enter a name for the page fragment, and then select **OK**.
-1. Select the **Default container** slot, then in the properties pane on the right, set the **Width** property to **Fill container**.
+1. Select the **Default container** slot, and then, in the properties pane on the right, set the **Width** property to **Fill container**.
 1. In the **Default container** slot, select the ellipsis (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, select the **Promo banner** and **Cookie consent** modules, and then select **OK**.
 1. In the **Default container** slot, select the ellipsis (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, select the **Container** module, and then select **OK**.
-1. Select the **Container** slot, then in the properties pane on the right, set the **Width** property to **Fill container**.
+1. Select the **Container** slot, and then, in the properties pane on the right, set the **Width** property to **Fill container**.
 1. In the **Container** slot, select the ellipsis (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, select the **Header** module, and then select **OK**.
 1. In the **Navigation menu** slot of the header module, select the ellipsis (**...**), and then select **Add Module**.
@@ -84,7 +84,7 @@ To create a header module, follow these steps.
 1. In the property pane for the search module, configure the properties as needed.
 1. In the **Cart icon** slot of the header module, select the ellipsis (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, select the **Cart icon** module, and then select **OK**.
-1. In the property pane for the cart icon module, configure the properties as needed. If you want the cart icon to display a mini cart when hovered over, select **Show mini cart**.
+1. In the property pane for the cart icon module, configure the properties as needed. If you want the cart icon to show a miniature cart when users hover over it, select **Show mini cart**.
 1. Select **Save**, select **Finish editing** to check in the fragment, and then select **Publish** to publish it.
 
 To help guarantee that a header appears on every page, follow these steps on every page template that is created for the site.
