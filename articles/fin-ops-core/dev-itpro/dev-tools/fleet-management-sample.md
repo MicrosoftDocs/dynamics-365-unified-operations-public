@@ -238,9 +238,9 @@ In this tutorial, you’ll access the system as a user that has been assigned a 
     |-----------------|-------------------------------------------------------------------------------------------|
     | User ID         | Eight character unique ID                                                                 |
     | User name       | The first name of the user                                                                |
-    | Network domain  | `urn:Federation:MicrosoftOnline`                                                          |
-    | Alias           | `tim@lucernepublishers.ccsctp.net` (Replace with the organization account email address.) |
-    | Default Company | `DAT`                                                                                     |
+    | Provider        | `urn:Federation:MicrosoftOnline`                                                          |
+    | Email           | Use an email alias that you can login with for testing.                                   |
+    | Company         | `DAT`                                                                                     |
     | Enabled         | Verify that this slider is set to **Yes**.                                                |
 
     > [!div class="mx-imgBorder"]
