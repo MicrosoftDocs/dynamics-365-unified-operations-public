@@ -172,6 +172,10 @@ Titles and notes provide places for user-specified text to be associated with a 
 - **Title** – The title lets you specify the text that appears above the step instruction for this step in the task guide. The title a good place to put text that you want users to read before they complete the action that is indicated by the step instruction.
 - **Note** – You can use a note to specify text that appears in the expandable section of the pop-up for this step in the task guide. A note is a good place to put optional reading material or other information that might be useful to users, but that they aren't required to read to complete the action that is indicated by the step instruction.
 
+### Change recorded values
+
+Starting in 10.0.12, you can adjust the values recorded in basic input controls (including string, number, date, and picklist fields) without having to re-record those steps. Notably lookup controls and reference groups are not currently supported.  
+
 ### Hide from task guide
 
 The **Hide this step** option lets the author prevent specific steps from appearing in the task guide. This option is useful for hiding steps that are required for the task recording to run in playback mode, but that should not be seen by users. Examples of these steps include copy steps, system-generated steps, and data clean-up steps. If you hide a sub-task, all the steps that are recorded inside that sub-task will also be hidden.
