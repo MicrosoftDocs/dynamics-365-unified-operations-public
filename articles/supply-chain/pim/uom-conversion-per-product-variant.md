@@ -53,9 +53,8 @@ To configure a product master to support unit conversion per variant, follow the
 1. Go to **Product information management \> Products \> Product masters**.
 1. Create or open a product master to go to its **Product details** page.
 1. Set the **Enable unit of measure conversions** option to *Yes*.
-1. On the Action Pane, on the **Product** tab, select **Set up** \> **Unit conversions**.
-1. On the Action Pane, select **Unit conversions** to open the **Unit conversions** page.
-1. Select one of the following tabs:
+1. On the Action Pane, on the **Product** tab, in the **Set up** group, select **Unit conversions**.
+1. The **Unit conversions** page opens. Select one of the following tabs:
 
     - **Intra-class conversions** – Select this tab to convert between units that belong to the same unit class.
     - **Inter-class conversions** – Select this tab to convert between units that belong to different unit classes.
