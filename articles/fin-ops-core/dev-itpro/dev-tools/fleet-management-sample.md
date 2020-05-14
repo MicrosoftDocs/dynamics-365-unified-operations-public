@@ -50,13 +50,10 @@ To work with the sample, you must install the provided demo data.
 2.  Sign in.
 3.  On the dashboard, open the navigation pane and go to **Fleet Management \> Setup\> Fleet setup**. 
 
-    [![Fleet Setup](./media/fleetsetup1_introfleetmgmt1.png)](./media/fleetsetup1_introfleetmgmt1.png)
-    
     ![Fleet setup](media/fmt_setup_data.png)
 
 4.  On the **Data setup** tab, select **Create**. 
-
-    [![Load Demo Data](./media/loaddemodata_introfleetmgmt1.png)](./media/loaddemodata_introfleetmgmt1.png)
+    
     ![Load Demo Data](media/fmt_data_setup_create.png)
 
 5.  If you're prompted to reload the demo data, click **Yes**.
@@ -66,10 +63,8 @@ To work with the sample, you must install the provided demo data.
 Remember that you’re working with the migrated app in this section. The forms that you see are directly ported from the Microsoft Dynamics AX 2012 version of the sample. Although they have been modified and restyled, they have not been reimagined.
 
 1.  Open Internet Explorer, and sign into the Finance and Operations application.
-2.  To return to the **Dashboard**, select the Microsoft Dynamics logo in the top-left corner of the page.
+2.  To return to the **Dashboard**, select the product name in the top-left corner of the page.
 
-    [![Return to Dash](./media/returntodash_introfleetmgmt.png)](./media/returntodash_introfleetmgmt.png) 
-    
     ![Return to dashboard](media/fmt_logo.png)
     
     The dashboard is the main working hub. You can see the various tiles, organized into sections, which lead to parts of the application. The dashboard is designed for horizontal scrolling, which is an optimization for working well on modern devices. The button to the right of the dashboard shows the navigation bar.
@@ -79,27 +74,23 @@ Remember that you’re working with the migrated app in this section. The forms 
 
     [![New Customer](./media/newcustomer_introfleetmgmt1.png)](./media/newcustomer_introfleetmgmt1.png)
 
+    ![Navigate to customer list](media/fmt_customers_customer.png)
+    
     ![New customer](media/fmt_new_customer.png)
 
 4.  On the Action Pane, select the Microsoft Office logo, then select **Customers** under **Export to Excel**. Click **Download** to send the information in the grid view to a Microsoft Excel spreadsheet. This operation can take some time. ???Requires documentation setup. You have to go to the document management parameters form, and it appears that SharePoint is the only option.
-
-    [![Export to excel](./media/exporttoexcel.jpg)](./media/exporttoexcel.jpg)
 
     ![Export to Excel](media/fmt_export_excel.png)
 
 5.  When prompted, click **Open** to view the data in Excel.
 6.  Close Excel.
-7.  To switch to the **Details** view, select a value in the **First Name** column. 
+7.  To switch to the **Details** view, select a value in the **First Name** column. This view shows detailed information for a single customer.
 
-    [![First name](./media/customer.jpg)](./media/customer.jpg) This view shows detailed information for a single customer.
-    
     ![First name to details view](media/fmt_details_view.png)
 
 8.  Click **Show list** to show the navigation list. 
 
-    [![Navigation list](./media/listnav_introfleetmgmt1.png)](./media/listnav_introfleetmgmt1.png)
-    
-   ![Navigation list](media/fmt_show_list.png)
+    ![Navigation list](media/fmt_show_list.png)
 
 9.  Click the various customer names in the navigation list in the side pane, and watch as the detailed information about each customer changes.
 10. Select the customer **Eduardo Cobo**. You'll notice the charts update to indicate Eduardo's previous rental preferences.
