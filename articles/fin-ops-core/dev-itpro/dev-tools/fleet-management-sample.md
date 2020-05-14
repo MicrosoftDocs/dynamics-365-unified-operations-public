@@ -52,13 +52,13 @@ To work with the sample, you must install the provided demo data.
 
     ![Fleet setup](media/fmt_setup_data.png)
     
-    :::image type="content" source="media/fmt_setup_data.png" alt-text="Fleet setup"
+    :::image type="content" source="media/fmt_setup_data.png" alt-text="Fleet setup":::
 
 4.  On the **Data setup** tab, select **Create**. 
     
     ![Load Demo Data](media/fmt_data_setup_create.png)
 
-    :::image type="content" source="media/fmt_data_setup_create.png" alt-text="Load Demo Data"
+    :::image type="content" source="media/fmt_data_setup_create.png" alt-text="Load Demo Data":::
 
 5.  If you're prompted to reload the demo data, click **Yes**.
 6.  When the data is finished loading, select **Close**.
