@@ -37,13 +37,13 @@ Workers use the **Report progress** page on the job card device to report quanti
 <!-- KFM: It would be nice to describe the what each of those settings does. -->
 <!-- JOHANHO: It would be nice to describe the what each of those settings does. -->
 
-**No**: No quantity will be added to the inventory when reporting quantities on the last operation. The status of the production order will never change.
+* **No**: No quantity will be added to the inventory when reporting quantities on the last operation. The status of the production order will never change.
 
 * **Status + Quantity**: The production order will change status to reported as finished and the quantity is reported as finished to inventory.
 
 * **Quantity**: The quantity is reported as finished to the inventory, but the production order will never change.
 
-**Status**: Only the status of the production order will change, but no quantities will be added to the inventory when reporting quantities on the last operation.
+* **Status**: Only the status of the production order will change, but no quantities will be added to the inventory when reporting quantities on the last operation.
 
 Quantities reported as finished on operations that aren't defined as the last operation are not tracked in inventory, but can be used to view progress and can be included in rules that control whether workers are permitted to start the next operation before reaching a defined threshold of reported quantities on the previous operation. You can define these rules on the **Quantity validation** tab of the **Production order defaults** page.
 
