@@ -142,7 +142,7 @@ Remember that you’re working with the migrated app in this section. The forms 
 
     [![Tracking details](./media/workflow.jpg)](./media/workflow.jpg)
 
-    ![Tracking details](media/fmt_workflow_history.jpg)
+    ![Tracking details](media/fmt_workflow_history.png)
 
 ### To view the setup behind the workflow
 
