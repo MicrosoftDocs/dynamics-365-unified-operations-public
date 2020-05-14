@@ -46,7 +46,7 @@ In this tutorial, you’ll take a tour of the Fleet Management sample. The overv
 ## Installing the demo data
 To work with the sample, you must install the provided demo data.
 
-1.  In the VM, open Internet Explorer and navigate to the application's base URL.
+1.  In the virtual machine (VM), open Internet Explorer and navigate to the application's base URL.
 2.  Sign in.
 3.  On the dashboard, open the navigation pane and go to **Fleet Management \> Setup\> Fleet setup**. 
 
