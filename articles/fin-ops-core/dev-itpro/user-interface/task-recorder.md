@@ -174,7 +174,7 @@ Titles and notes provide places for user-specified text to be associated with a 
 
 ### Change recorded values
 
-Starting in 10.0.12, you can adjust the values recorded in basic input controls (including string, number, date, and picklist fields) without having to re-record those steps. Notably lookup controls and reference groups are not currently supported.  
+Starting in 10.0.12, you can adjust the values recorded in basic input controls (including sipmle text, numeric, date, and picklist fields) without having to re-record those steps. Notably, lookup controls and reference groups are not currently supported.  
 
 ### Hide from task guide
 
