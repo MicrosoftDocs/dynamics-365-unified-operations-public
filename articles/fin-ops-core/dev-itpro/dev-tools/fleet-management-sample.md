@@ -155,7 +155,7 @@ Remember that you’re working with the migrated app in this section. The forms 
 
     [![Workflow diagram](./media/workflow_introfleetmgmt.png)](./media/workflow_introfleetmgmt.png)
     
-    ![Workflow editor](media/fmt_workfow_editor.png)
+    ![Workflow editor](media/fmt_workflow_editor.png)
 
 4.  When you are done, close the **Workflow** window.
 
