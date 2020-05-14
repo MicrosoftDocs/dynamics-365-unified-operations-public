@@ -1,19 +1,35 @@
 ---
 # required metadata
-
-title: Style presets in site builder
-description: This topic describes how to work with site style presets in site builder.
-author: niholman
-manager: brendans
-ms.date: 5/11/2020
+title: Work with style presets
+description: This topic describes how to work with site style presets in Dynamics 365 Commerce site builder. 
+author: phinneyridge
+manager: annbe
+ms.date: 05/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
 ms.technology: 
-
+# optional metadata
+# ms.search.form: 
+audience: Application user
+# ms.devlang: 
+ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: niholman
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
 ---
 
-# Style presets
+# Work with style presets
+
+[!include [banner](includes/banner.md)]
+
+This topic describes how to work with site style presets in Dynamics 365 Commerce site builder.
 
 ## Overview
 
@@ -139,3 +155,25 @@ To set a style preset as the new active one on your site:
   * The elipse button menu ("**...**") on any available preset card within the main **Design > Style presets** view.
 
 This will make a preset's style values active accross your public facing website.
+
+## Additional resources
+
+[Add a logo](add-logo.md)
+
+[Select a site theme](select-site-theme.md)
+
+[Work with CSS override files](css-override-files.md)
+
+[Add a favicon](add-favicon.md)
+
+[Add a welcome message](add-welcome-message.md)
+
+[Add a copyright notice](add-copyright-notice.md)
+
+[Add languages to your site](add-languages-to-site.md)
+
+[Add script code to site pages to support telemetry](add-telemetry.md)
+
+
+
+
