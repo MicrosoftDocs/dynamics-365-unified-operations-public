@@ -40,7 +40,7 @@ The footer module is a special container that is used to host the modules that a
 
 The following image shows an example of a footer module on a site page.
 
-![Example of footer module](./media/ecommerce-footer.PNG)
+![Example of a footer module](./media/ecommerce-footer.PNG)
 
 ## Footer module properties 
 
@@ -50,21 +50,21 @@ Like most containers, a footer module supports properties for the heading and th
 
 **Footer items** – A footer items module can contain a heading, an image, and a link. The heading can be used either alone or in combination with an image and a link. Every link in the footer can be configured so that it has just text (for example, "Contact Us" and "Privacy" links), or so that it has both text and an image (for example, social media links).
 
-**Back to top** – A back to top module provides a link for quick navigation to the top of the page. A destination is required. The default destination value is #, which takes the user to the top of the page.
+**Back to top** – A back to top module provides a link for quick navigation to the top of the page. A destination is required. The default destination value is \#, which takes the user to the top of the page.
 
 ## Create a footer module
 
-1. Go to **Page Fragments** and select **+New** to create a new fragment.
+1. Go to **Page Fragments**, and select **New** to create a new fragment.
 1. In the **New Page Fragment** dialog box, select the **Container** module, enter a name for the page fragment, and then select **OK**.
 1. In the **Default container** slot, select the ellipsis (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, select the **Footer category** module, and then select **OK**.
 1. In the **Footer category** slot, select the ellipsis (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, select the **Footer item** module, and then select **OK**.
-1. Select the **Footer item** slot, then in the properties pane on the right, configure the heading, link and link text, and image as needed.
+1. Select the **Footer item** slot, and then, in the properties pane on the right, configure the heading, link and link text, and image as needed.
 1. To add more footer items, repeat steps 5 through 7 for each.
 1. To add a "back to top" link to your footer, select the ellipsis (**...**) in the **Footer category** slot, and then select **Add Module**.
 1. In the **Add Module** dialog box, select the **Back to top** module, and then select **OK**.
-1. Select the **Back to top** slot, then in the properties pane on the right, configure the text and other module properties as needed.
+1. Select the **Back to top** slot, and then, in the properties pane on the right, configure the text and other module properties as needed.
 1. Select **Finish editing** to check in the fragment, and then select **Publish** to publish it.
 
 To help guarantee that a header appears on every page, follow these steps on every page template that is created for the site.
