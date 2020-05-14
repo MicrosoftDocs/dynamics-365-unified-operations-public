@@ -55,7 +55,7 @@ Promo banners can be used in the site header to show site-wide promotions or mes
 
 The following image shows an example of a promo banner.
 
-![Example of promobanner modules](./media/ecommerce-Promobanner.PNG)
+![Example of a promo banner module](./media/ecommerce-Promobanner.PNG)
 
 ## Promo banner module properties
 
@@ -73,7 +73,7 @@ The following image shows an example of a promo banner.
 
 To add a promo banner module to a page and set the required properties, follow these steps.
 
-1. Go to **Templates** and select **+New** to create a new template.
+1. Go to **Templates**, and select **New** to create a new template.
 1. In the **New Template** dialog box, under **Template Name**, enter **Promo banner template**, and then select **OK**.
 1. Under **Page Outline**, add a **Default page** module to the **Body** slot. 
 1. Select **Finish editing** to check in the template, and then select **Publish** to publish it. 
