@@ -5,7 +5,7 @@ title: Create payment packaging for Application Explorer for self-service deploy
 description: This topic explains how to package a payment connector for Application Explorer for self-service deployment in Microsoft Dynamics 365 Commerce.
 author: mugunthanm
 manager: AnnBe
-ms.date: 04/22/2020
+ms.date: 05/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
