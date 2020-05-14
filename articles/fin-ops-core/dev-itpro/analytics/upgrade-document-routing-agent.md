@@ -5,7 +5,7 @@ title: Update the Document Routing Agent
 description: This topic explains how to update the Document Routing Agent.
 author: TJVass
 manager: AnnBe
-ms.date: 05/12/2020
+ms.date: 05/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-The solution for managing the print job queue is designed so that the Print Job Management service can be scaled to satisfy high-volume printing requirements. Although the Print Job Management service is backward-compatible with in-market versions of the Document Routing Agent (DRA) client, we strongly recommend that customers update **all** existing DRA clients that are hosted on-premises.
+The solution for managing the print job queue is designed to allow customers to properly scale Dynamics 365 Finance and Operations apps to satisfy high-volume printing requirements. Although public service endpoints used to manage print jobs are backward-compatible, we strongly recommend that customers update **all** existing Document Routing Agent (DRA) clients.
 
 If you don't update existing installations of the DRA the most current version, you might experience issues such as:
 
