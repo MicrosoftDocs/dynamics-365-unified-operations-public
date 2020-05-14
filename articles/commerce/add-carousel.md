@@ -47,9 +47,9 @@ You can add content block modules inside a carousel module. The properties of th
 - A carousel that has multiple promotional modules inside it can be used on a product details page.
 - A carousel can be used on any marketing page to promote multiple promotions or products.
 
-The following example shows a carousel module used on a homepage with multiple content block items.
+The following image shows an example of a carousel module that is used on a home page. This carousel module contains multiple content block items.
 
-![Example of a hero module](./media/Hero.PNG)
+![Example of a carousel module](./media/Hero.PNG)
 
 ## Carousel module properties
 
@@ -65,7 +65,7 @@ The following example shows a carousel module used on a homepage with multiple c
 
 To add a carousel module to a new page and set the required properties, follow these steps.
 
-1. Go to **Templates** and select **+New** to create a new template.
+1. Go to **Templates**, and select **New** to create a new template.
 1. In the **New Template** dialog box, under **Template Name**, enter **Carousel template**, and then select **OK**.
 1. In the **Body** slot, add a **Default page** module.
 1. Select **Finish editing** to check in the template, and then select **Publish** to publish it.  
