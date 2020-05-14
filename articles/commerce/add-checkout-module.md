@@ -54,15 +54,15 @@ A checkout module shows an order summary and provides the functionality for plac
 
 - **Shipping address** – This module lets a customer add or select the shipping address for an order. If the customer is signed in, any addresses that were previously saved for that customer are shown. The customer can then select among those addresses. The customer can also add a new address. The shipping address is used for all the items in the order that require shipping. It can't be customized for individual line items. Shipping address formats are defined for each country or region, and the country/region-specific rules are enforced by this module. Although this module doesn't provide address validation, address validation can be implemented through customization. If the order includes only items that will be picked up in the store, this module is automatically hidden.
 
-The following image shows an example of a shipping address module on a checkout page.
+    The following image shows an example of a shipping address module on a checkout page.
 
-![Example of a shipping address module](./media/ecommerce-shippingaddress.PNG)
+    ![Example of a shipping address module](./media/ecommerce-shippingaddress.PNG)
 
 - **Delivery options** – This module lets a customer select a delivery option for an order. Delivery options are based on the shipping address. If the shipping address is changed, the delivery options must be retrieved again. If the order includes only items that will be picked up in the store, this module is automatically hidden.
 
-The following image shows an example of a delivery options module on a checkout page.
+    The following image shows an example of a delivery options module on a checkout page.
 
-![Example of a delivery options module](./media/ecommerce-deliveryoptions.PNG)
+    ![Example of a delivery options module](./media/ecommerce-deliveryoptions.PNG)
 
 - **Checkout section container** – This module is a container that you can put multiple modules inside to create a section within the checkout flow. For example, you can put all payment-related modules inside this container to make them appear as one section. This module affects only the layout of the flow.
 - **Gift card** – This module lets a customer pay for an order by using a gift card. It supports only Microsoft Dynamics 365 Commerce gift cards. One or more gift cards can be applied to an order. If the balance of the gift card doesn't cover the amount in the cart, the gift card can be combined with another payment method. Gift cards can be redeemed only if the customer is signed in.
@@ -70,9 +70,9 @@ The following image shows an example of a delivery options module on a checkout 
 - **Payment** – This module lets a customer pay for an order by using a credit card. If the total amount in the cart is covered by loyalty points or a gift card, or if it's 0 (zero), this module is automatically hidden. Credit card integration is provided by the Adyen payment connector for this module. For more information about how to use this connector, see [Dynamics 365 Payment Connector for Adyen](dev-itpro/adyen-connector.md).
 - **Billing address** – This module lets a customer provide billing information. This information is processed, together with the credit card information, by Adyen. This module includes an option that lets customers use their billing address as the shipping address.
 
-The following image shows an example of gift card, loyalty, payment, and billing address modules on a checkout page.
+    The following image shows an example of gift card, loyalty points, payment, and billing address modules on a checkout page.
 
-![Example of a gift card, loyalty, payment, and billing address modules](./media/ecommerce-payments.PNG)
+    ![Example of gift card, loyalty points, payment, and billing address modules](./media/ecommerce-payments.PNG)
 
 - **Contact information** – This module lets a customer add or change the contact information (email address) for an order.
 
@@ -86,11 +86,11 @@ Most of the checkout information, such as the shipping address and shipping meth
 
 To add a checkout module to a new page and set the required properties, follow these steps.
 
-1. Go to **Page Fragments** and select **+New** to create a new fragment.
+1. Go to **Page Fragments**, and select **New** to create a new fragment.
 1. In the **New Page Fragment** dialog box, select the **Checkout** module.
 1. Under **Page Fragment Name**, enter the name **Checkout fragment**, and then select **OK**.
 1. Select the **Checkout module** slot.
-1. In the properties pane on the right, select the pencil symbol, enter heading text in the box, and then select the check mark symbol.
+1. In the properties pane on the right, select the pencil symbol, enter heading text in the field, and then select the check mark symbol.
 1. In the **Checkout Information** slot, select the ellipsis (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, select the **Shipping address**, **Delivery options**, **Checkout section container**, and **Contact information** modules, and then select **OK**.
 1. In the **Checkout section container** module, select the ellipsis (**...**), and then select **Add Module**.
