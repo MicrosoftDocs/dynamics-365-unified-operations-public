@@ -140,8 +140,6 @@ Remember that you’re working with the migrated app in this section. The forms 
 13. Click **Workflow**, and then click **View history**. The **Workflow history** form provides information about the vehicle workflow.
 14. Click **Tracking details** to see the activities. 
 
-    [![Tracking details](./media/workflow.jpg)](./media/workflow.jpg)
-
     ![Tracking details](media/fmt_workflow_history.png)
 
 ### To view the setup behind the workflow
@@ -152,8 +150,6 @@ Remember that you’re working with the migrated app in this section. The forms 
     
 2.  In the **Workflow ID** column, click the ID of your vehicle maintenance workflow.
 3.  Accept any prompts that ask you for permission to run code. After a short wait, the workflow editor opens. This step works on the one-box environment, but not in the cloud. You can view the workflow diagram in the workflow editor. The following illustration shows the workflow.
-
-    [![Workflow diagram](./media/workflow_introfleetmgmt.png)](./media/workflow_introfleetmgmt.png)
     
     ![Workflow editor](media/fmt_workflow_editor.png)
 
