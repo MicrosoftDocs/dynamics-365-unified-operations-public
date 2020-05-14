@@ -158,6 +158,8 @@ Remember that you’re working with the migrated app in this section. The forms 
 3.  Accept any prompts that ask you for permission to run code. After a short wait, the workflow editor opens. This step works on the one-box environment, but not in the cloud. You can view the workflow diagram in the workflow editor. The following illustration shows the workflow.
 
     [![Workflow diagram](./media/workflow_introfleetmgmt.png)](./media/workflow_introfleetmgmt.png)
+    
+    ![Workflow editor](media/fmt_workfow_editor.png)
 
 4.  When you are done, close the **Workflow** window.
 
