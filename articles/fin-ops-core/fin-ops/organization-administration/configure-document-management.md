@@ -157,15 +157,14 @@ When attachment recovery is enabled, attachments can be recovered in one of thre
 3. In **System administration** > **Inquiries**, the **Deleted attachments** page provides access to the list of deleted attachments that can be recovered for any record. The deleted attachments can be opened for review, permanently deleted, or restored.
 
 ## Scanning attachments for viruses and malicious code
-When working with attachments, you may want the ability to scan the files for viruses and malicious code. While Finance and Operations does not provide this capability out-of-the-box, two delegates have been added in the attachments space that allow customers to integrate the file scanning software of their choice with attachments. See the [File upload control]() article for corresponding guidance on file upload.  
+When working with attachments, you may want the ability to scan the files for viruses and malicious code. While Finance and Operations does not provide this capability out-of-the-box, extension points have been added that allow customers to integrate the file scanning software of their choice into the attachments space. A similar extension point has been added for file upload; see the [File upload control]() article for more details.
 
-### Delegates for document scanning
-The **Docu** class has the following delegates for which handlers can be implemented for document scanning: 
+The **Docu** class exposes the following two delegates, for which handlers can be implemented for document scanning: 
 -  **Docu.delegateScanDocument()** This delegate applies scanning for an existing document attachment when a user attempts to preview or download the attachment. The corresponding action will fail if the scanning service deems the file to be malicious.  
 -  **Docu.delegateScanDeletedDocument()** This delegate applies the file scanning logic on documents in the attachments recycle bin when a user attempts to preview or download a file. The corresponding action will fail if the scanning service deems the file to be malicious.  
 
-### Implementing handlers for the file scan delegates
-Boilerplate code for the various handlers are shown in an example ScanDocuments class below. For general information on implementing handlers for delegates, see [EventHandlerResult classes in request or response scenarios](../../dev-tools/event-handler-result-class.md).
+### Implementation details
+Boilerplate code for the two handlers are shown in an example ScanDocuments class below. For general information on implementing handlers for delegates, see [EventHandlerResult classes in request or response scenarios](../../dev-tools/event-handler-result-class.md).
 
     public final class ScanDocuments
     {
@@ -207,8 +206,6 @@ Boilerplate code for the various handlers are shown in an example ScanDocuments 
         }
 
     }
-
-
 
 ## Frequently asked questions
 
