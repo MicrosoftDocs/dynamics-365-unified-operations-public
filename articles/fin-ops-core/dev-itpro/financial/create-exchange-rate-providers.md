@@ -2,10 +2,10 @@
 # required metadata
 
 title: Create exchange rate providers
-description: This article describes how to set up an exchange rate provider. 
+description: This topic describes how to set up an exchange rate provider. 
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 05/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,9 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to set up an exchange rate provider. 
-
-This article describes the steps that are required in order to set up an exchange rate provider. For the purpose of illustration, the OANDA exchange rate service is used throughout this article. By following the steps that are described in this article, you will create a functional exchange rate provider. The code is production code. You can find the source in the **ExchangeRateProviderOanda** class. You can reference this class as you read through this article. To request an OANDA test account and receive information about the OANDA exchange rate service, go to <https://developer.oanda.com/exchange-rates-api/>.
+This topic describes the steps that are required in order to set up an exchange rate provider. For the purpose of illustration, the OANDA exchange rate service is used throughout this article. By following the steps that are described in this article, you will create a functional exchange rate provider. The code is production code. You can find the source in the **ExchangeRateProviderOanda** class. You can reference this class as you read through this topic. To request an OANDA test account and receive information about the OANDA exchange rate service, see [OANDA Exchange Rates API](https://developer.oanda.com/exchange-rates-api/).
 
 ## Terminology
 -   **Import currency exchange rates** – The process that retrieves exchange rates from exchange rate providers and imports them. This process is a system operation that supports batch processing.
@@ -45,7 +43,7 @@ This article describes the steps that are required in order to set up an exchang
 -   **Exchange rate provider configuration** – The configuration settings of an exchange rate provider that determine how it will be used.
 -   **Exchange rate service** – A free or paid subscription service that provides a list of exchange rates that have been published. Foreign Exchange Rates Powered by OANDA is an example of a service that provides exchange rates.
 -   **The framework** – The import currency exchange rates framework that coordinates the retrieval of exchange rates from providers and appropriate storage of the exchange rates.
--   **SysPlugin framework** - This extension framework is based on the Managed Extension Framework. The Managed Extension Framework makes the SysPlugin extension framework available to non-X++ code. More information can be found here: https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/extensibility/register-subclass-factory-methods. 
+-   **SysPlugin framework** - This extension framework is based on the Managed Extension Framework. The Managed Extension Framework makes the SysPlugin extension framework available to non-X++ code. For more information, see [Register subclasses for factory methods] (https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/extensibility/register-subclass-factory-methods). 
 
 ## Conceptual/class model
 The following illustration shows the main interfaces and classes that make up the exchange rate provider framework, and the relationships among them. New exchange rate providers should be derived from the **IExchangeRateProvider** interface. Exchange rate providers are written in X++. Because X++ is a .NET language, it's easy to use the Microsoft .NET Framework in our provider. 
