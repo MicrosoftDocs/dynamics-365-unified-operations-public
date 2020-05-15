@@ -54,9 +54,9 @@ If you want to view the time series charts of your messages in Microsoft Dynamic
 
 All the metric keys in the Redis cache are retrieved and added to the **Metric keys** list. Metric values won't appear until you [enable the scenarios](iot-scenario-setup.md).
 
-## Configure Resource Status
+## Configure the Resource Status time series
 
-To configure Resource Status, follow these steps.
+To configure the **Resource Status** time series, follow these steps.
 
 1. In Supply Chain Management, go to **Production control \> Manufacturing execution \> Resource Status**.
 2. On the **Resource status** page, select **Configure**.
@@ -65,7 +65,7 @@ To configure Resource Status, follow these steps.
 4. In the **Select time series** dialog box, select a metric in the grid. (You can also use the **Update metric keys** link to update the metric keys from this dialog box.)
 5. Select **OK** to return to the **Configure** dialog box.
 6. Enter a display name.
-7. Select a time frame for **Show data from**.
+7. In the **Show data from** field, select a time frame.
 8. Select **OK**.
 
 The chart is shown.
