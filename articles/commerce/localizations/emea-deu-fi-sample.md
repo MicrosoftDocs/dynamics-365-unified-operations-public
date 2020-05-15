@@ -276,7 +276,7 @@ Complete the fiscal integration setup steps as described in [Set up the fiscal i
 - [Set error handling settings](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
 > [!WARNING]
-> The error handling capabilities of the fiscal integration framework may be not fully align with the local fiscal regulations.
+> The error handling capabilities of the fiscal integration framework may be not fully aligned with the local fiscal regulations.
 >    - It is not recommended to enable the **Continue on error** option on the **Fiscal registration process** page as all transactions must be properly registered even if the first attempt of the fiscal registration was not successful.
 >    - Before enabling **Skip** or **Mark as registered** option on the **Fiscal registration process** page, you should verify these changes of the fiscal registration process with your tax consultant or with the local tax office. 
 
