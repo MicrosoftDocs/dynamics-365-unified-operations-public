@@ -85,63 +85,63 @@ The **Docu** and **FileUploadResultBase** classes have the following delegates f
 ### Implementing handlers for the file scan delegates
 Boilerplate code for the various handlers are shown in an example ScanDocuments class below. For general information on implementing handlers for delegates, see [EventHandlerResult classes in request or response scenarios](../dev-tools/event-handler-result-class.md). 
 
-'public final class ScanDocuments
-'{
-'
-    [SubscribesTo(classStr(FileUploadResultBase), staticDelegateStr(FileUploadResultBase, delegateScanStream))]
-    public static void FileUploadResultBase_delegateScanStream(System.IO.Stream _stream, EventHandlerRejectResult _validationResult)
+    public final class ScanDocuments
     {
-        if (!ScanDocuments::scanStream(_stream))
+
+        [SubscribesTo(classStr(FileUploadResultBase), staticDelegateStr(FileUploadResultBase, delegateScanStream))]
+        public static void FileUploadResultBase_delegateScanStream(System.IO.Stream _stream, EventHandlerRejectResult _validationResult)
         {
-            _validationResult.reject();           
+            if (!ScanDocuments::scanStream(_stream))
+            {
+                _validationResult.reject();           
+            }
         }
-    }
 
-    [SubscribesTo(classStr(Docu), staticDelegateStr(Docu, delegateScanDocument))]
-    public static void Docu_delegateScanDocument(DocuRef _docuRef, EventHandlerRejectResult _validationResult)
-    {
-        if (!ScanDocuments::scanDocument(_docuRef))
+        [SubscribesTo(classStr(Docu), staticDelegateStr(Docu, delegateScanDocument))]
+        public static void Docu_delegateScanDocument(DocuRef _docuRef, EventHandlerRejectResult _validationResult)
         {
-            _validationResult.reject();
+            if (!ScanDocuments::scanDocument(_docuRef))
+            {
+                _validationResult.reject();
+            }
         }
-    }
 
-    [SubscribesTo(classStr(Docu), staticDelegateStr(Docu, delegateScanDeletedDocument))]
-    public static void Docu_delegateScanDeletedDocument(DocuDeletedRef _docuDeletedRef, EventHandlerRejectResult _validationResult)
-    {
-        if (!ScanDocuments::scanDeletedDocument(_docuDeletedRef))
+        [SubscribesTo(classStr(Docu), staticDelegateStr(Docu, delegateScanDeletedDocument))]
+        public static void Docu_delegateScanDeletedDocument(DocuDeletedRef _docuDeletedRef, EventHandlerRejectResult _validationResult)
         {
-            _validationResult.reject();
+            if (!ScanDocuments::scanDeletedDocument(_docuDeletedRef))
+            {
+                _validationResult.reject();
+            }
         }
-    }
 
-    private static boolean scanStream(System.IO.Stream _stream)
-    {
-        /* 
-        Customer will need to come with their own piece of code for connecting to a scanning service
-        if document scanning process found an issue return false; otherwise true;
-        */
-        return true;
-    }
+        private static boolean scanStream(System.IO.Stream _stream)
+        {
+            /* 
+            Custom implementation required for connecting to a scanning service
+            If document scanning process found an issue, return false; otherwise, return true;
+            */
+            return true;
+        }
 
-    private static boolean scanDocument(DocuRef _docuRef)
-    {
-        /*
-        Customer will need to come with their own piece of code for connecting to a scanning service
-        if document scanning process found an issue return false; otherwise true;
-        */
-        return true;
-    }
+        private static boolean scanDocument(DocuRef _docuRef)
+        {
+            /*
+            Custom implementation required for connecting to a scanning service
+            If document scanning process found an issue, return false; otherwise, return true;
+            */
+            return true;
+        }
 
-    private static boolean scanDeletedDocument(DocuDeletedRef _docuDeletedRef)
-    {
-        /*
-        Customer will need to come with their own piece of code for connecting to a scanning service
-        if document scanning process found an issue return false; otherwise true;
-        */
-        return true;
-    }
+        private static boolean scanDeletedDocument(DocuDeletedRef _docuDeletedRef)
+        {
+            /*
+            Custom implementation required for connecting to a scanning service
+            If document scanning process found an issue, return false; otherwise, return true;
+            */
+            return true;
+        }
 
-}
+    }
 
 
