@@ -61,9 +61,9 @@ The following image shows an example of an accordion module used to organize inf
 | Expand by default  | True/False | If True, this accordion item will be expanded by default when the page is loaded|
 
 
-## Add a Accordion module to a new page
+## Add a accordion module to a page
 
-To add a accordion module to a page and set its properties, follow these steps.
+To add a accordion module to a page and set its properties in site builder, follow these steps.
 
 1. Create a new page *Store faq* using Marketing template in Fabrikam or any template without restrictions
 1. In the **Default page** add a Container
