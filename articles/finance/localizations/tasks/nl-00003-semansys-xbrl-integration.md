@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: NL-00003 Semansys XBRL integration
+title: Semansys XBRL integration
 description: This procedure walks you through using Dutch functionality to export financial data in the XML format. 
 author: mrolecki
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
-# NL-00003 Semansys XBRL integration
+# Semansys XBRL integration
 
 [!include [banner](../../includes/banner.md)]
 

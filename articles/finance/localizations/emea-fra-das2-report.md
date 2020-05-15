@@ -5,7 +5,7 @@ title: DAS-2 report
 description: This topic guides you through the process of generating the Standard Audit File for France (FEC) in Microsoft Dynamics 365 Finance.
 author: sndray
 manager: AnnBe
-ms.date: 03/16/2020
+ms.date: 05/05/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -73,16 +73,17 @@ Line 1 includes the configuration that has the classification **ZZ**. It's used 
 > [!NOTE]
 > Create the same configuration for the DAS-2 page.
 
-## Assign a tax registration ID to a vendor record
 
-Because the report includes the SIRET (Système d'identification du répertoire des établissements) registration, the tax registration ID that represents the SIRET uses the **VAT ID** registration category. Follow these steps to add a tax registration ID to a vendor record.
+## Vendor configuration
 
-1. Go to **Organization administration** \> **Global address book** \> **Registration types** \> **Registration types** and create the **SIRET** registration type.
-2. Go to **Organization administration** \> **Global address book** \> **Registration types** \> **Registration categories** to assign the **SIRET** registration type to the **VAT ID** category.
-3. Go to **Accounts payable** \> **Vendors** \> **All vendors**.
-4. Find and open the vendor record that you want to enter the registration ID for.
-5. On the **Vendor** page, select **Registration ID** to open the **Manage addresses** page.
-6. On the **Tax registration** tab, select **Add**, and then, in the **Registration ID** field, select **SIRET**.
+Because the report includes the SIRET Système d'identification du répertoire des établissements (SIRET) registration and profession, follow these steps to add the related information.
+
+1. Go to **Accounts payable > Vendors > All vendors**.
+2. Select the vendor record that you want to update.
+3. Expand the **Purchasing demographics** section.
+4. Select **Edit**.
+5. In the **French Siret** fields, type a value.
+6. In the **Line of Business** field, type a value to identify the profession.
 
 ## Generate the DAS-2 report
 
@@ -98,4 +99,4 @@ Follow these steps to generate the tax declaration report.
 4. Select the vendor posting profile. Vendor posting profiles let you easily include vendor transactions for all vendors, a group of vendors, or a single vendor on the report that is generated. You can create a vendor posting profile that is used specifically for DAS-2 reports.
 
 > [!NOTE]
-> The DAS-2 report includes all purchase invoices that are fully settled during the selected period and for the vendor profile. Invoices that are partially settled aren't included on this report.
+> The DAS-2 report includes all purchase invoices that are fully settled during the selected period and for the vendor profile. Invoices that are partially settled aren't included in this report.

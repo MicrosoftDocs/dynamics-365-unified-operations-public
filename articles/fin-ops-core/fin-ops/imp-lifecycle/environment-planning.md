@@ -5,7 +5,7 @@ title: Environment planning
 description: This topic provides an overview of various aspects that you must consider while you plan for your project's environment.
 author: ClaudiaBetz-Haubold
 manager: AnnBe
-ms.date: 08/13/2018
+ms.date: 05/08/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -63,9 +63,7 @@ You can use the following environment types for your project:
 | Tier-1 | Tier-2 and higher |
 |--------|-------------------|
 | Single-box environment | Multi-box environment |
-
 | All components are installed on the same server. These components include Application Object Server (AOS), the database, Dynamics 365 Commerce, and Management Reporter. | Components are installed on multiple servers. |
-
 | Microsoft SQL Server is used. | [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/) is used. |
 | The architecture differs from the architecture of the production environment to maximize efficiency and cost of the development team. | The architecture is the same as the architecture of the production environment, even though this type of environment has a different sizing and isn't enabled for disaster recovery. |
 | The environment can be deployed in various ways. For example, it can be deployed as an add-on, it can be cloud-hosted, or it can be deployed as an environment image (VHD). | The environment can be deployed only as a standard environment or an add-on environment. It can't be cloud-hosted. |
@@ -75,7 +73,7 @@ You can use the following environment types for your project:
 
 The standard cloud offer includes three environments:
 
-- **Tier-1 environment: Develop and test** – One develop/test instance is provided for the duration of the subscription. This instance is a non-production single-box instance that the customer can use as a development enviroment, automated build and test environment, or golden configuration environment. Additional develop/test instances can be purchased separately as an optional add-on.
+- **Tier-1 environment: Develop and test** – One develop/test instance is provided for the duration of the subscription. This instance is a non-production single-box instance that the customer can use as a development environment, automated build and test environment, or golden configuration environment. Additional develop/test instances can be purchased separately as an optional add-on.
 - **Tier-2 environment: Standard Acceptance Testing** – One Standard Acceptance Testing (UAT) instance is provided for the duration of the subscription. This instance is a non-production multi-box instance that customers can use for UAT, integration testing, and training. Additional sandbox/staging instances can be purchased separately as an optional add-on.
 - **Production environment** – One production instance is provided per tenant. The production multi-box instance includes disaster recovery and high availability. It will be provisioned when the implementation approaches the Operate phase, after the required activities in the Microsoft Dynamics Lifecycle Services (LCS) methodology and a successful go-live assessment are completed. Additionally, some file storage and database storage are included in the offer:
 
