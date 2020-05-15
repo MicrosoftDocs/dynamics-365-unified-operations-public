@@ -2,7 +2,7 @@
   items:
   - name: Dynamics 365 Supply Chain Management
     items:
-    - name: Dynamics 365 Supply Chain Management
+    - name: Dynamics 365 Supply Chain Management home page
       href: index.md
     - name: Get started
       items:
@@ -94,8 +94,8 @@
           href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/supply-chain/toc.json
         - name: Connect the Help system
           href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/supply-chain/toc.json
-        - name: Connect a custom help site
-          href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/supply-chain/toc.json    
+        - name: Custom help overview
+          href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/supply-chain/toc.json    
         - name: View and export field descriptions
           href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/supply-chain/toc.json
         - name: Task Recorder
@@ -1335,6 +1335,8 @@
           href: master-planning/planning-optimization/planning-optimization-auto-firming.md
         - name: Cancel a planning job
           href: master-planning/planning-optimization/cancel-planning-job.md
+        - name: Troubleshoot Planning Optimization
+          href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
       - name: Master plans
         items:
         - name: Master plans overview
@@ -2657,13 +2659,13 @@
           href: warehousing/tasks/set-up-min-max-replenishment-process.md
       - name: Install and configure the warehousing app
         items:
-        - name: Install and configure overview
+        - name: Install and connect the warehousing app
           href: warehousing/install-configure-warehousing-app.md
         - name: Configure field names in warehousing app
           href: warehousing/configure-app-field-names-priorities-warehouse.md
         - name: Set up mobile devices for warehouse work
           href: warehousing/configure-mobile-devices-warehouse.md
-        - name: License plate receiving with the Warehousing mobile app
+        - name: License plate receiving with the warehousing app
           href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
         - name: Set up a mobile device menu item for completing work in a purchase order
           href: warehousing/tasks/set-up-mobile-device-menu.md

@@ -5,7 +5,7 @@ title: Cash register functionality for France
 description: This topic provides an overview of the cash register functionality that is available for France. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
 manager: vastrup
-ms.date: 04/13/2018
+ms.date: 05/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -340,10 +340,10 @@ Finally, on the **Commerce parameters** page, you must specify the parameters fo
 You can download the ER configuration for the archive from Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Import electronic reporting configurations](../../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md). You must download the following versions, or later versions, of the configurations:
 
 - **Retail channel data.version.2** data model
-- **Archiving DMM.version.2.1** data model mapping
-- **Retail data archive FR .version.2.1** format
+- **Archiving DMM.version.2.3** data model mapping
+- **Retail data archive FR .version.2.5** format
 
-After you import the configurations, on the **Commerce parameters** page, on the **Electronic documents** tab, in the **Retail data archive export format** field, select the **Retail data archive FR .version.2.1** format.
+After you import the configurations, on the **Commerce parameters** page, on the **Electronic documents** tab, in the **Retail data archive export format** field, select the **Retail data archive FR .version.2.5** format.
 
 ### Renitialize Commerce components
 

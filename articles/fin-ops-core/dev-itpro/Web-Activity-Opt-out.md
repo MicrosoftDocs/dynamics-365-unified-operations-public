@@ -5,7 +5,7 @@ title: Opt out of web activity event collection
 description: This topic explains how you can let visitors to your website opt out of web activity event collection in Microsoft Dynamics 365 Commerce. 
 author: aamiral
 manager: AnnBe
-ms.date: 05/05/2020
+ms.date: 05/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-applications
@@ -29,7 +29,6 @@ ms.dyn365.ops.version: 10.0.5
 ---
 
 # Opt out of web activity event collection
-
 [!include [banner](includes/banner.md)]
 
 This topic explains how you can let customers opt out of web activity event collection in Microsoft Dynamics 365 Commerce.
@@ -37,6 +36,7 @@ This topic explains how you can let customers opt out of web activity event coll
 ## Overview
 
 Dynamics 365 Commerce lets site administrators analyze the web activity of users of their e-commerce sites. In that way, they can better understand how their sites are used, and they can optimize the sites to provide an improved user experience and meet business objectives.
+
 
 ## Ways for administrators to implement an opt-out experience
 
@@ -49,7 +49,7 @@ In Account management in Commerce headquarters (HQ), administrators can opt out 
 1. In the HQ client, on the **All customers** page, search for and select a customer.
 1. On the customer details page, on the **Retail** FastTab, in the **Privacy** section, set the **Do not track web activity** option to **Yes**.
 
-    ![Privacy settings](.../../../commerce/media/Disablepersonalizationpart2.png)
+    ![Privacy settings](../../../commerce/media/Disablepersonalizationpart2.png)
 
 1. Select **Save**, and then close the page.
 
@@ -59,4 +59,4 @@ Administrators can let authenticated users opt out of web activity event collect
 
 ### Custom extensions
 
-Administrators can create their own extensions to manage the opt-out experience for users. For more information, see [Call Retail Server APIs](e-commerce-extensibility/call-retail-server-apis.md) and [Online channel extensibility](e-commerce-extensibility/overview.md).
+Administrators can create their own extensions to manage the opt-out experience for users. For more information, see [Call Retail Server APIs](../../commerce/e-commerce-extensibility/call-retail-server-apis.md) and [Online channel extensibility](../../commerce/e-commerce-extensibility/overview.md).

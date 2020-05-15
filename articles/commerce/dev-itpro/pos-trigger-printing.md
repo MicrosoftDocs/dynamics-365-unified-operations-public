@@ -5,7 +5,7 @@ title: Modern POS (MPOS) triggers and printing
 description: You can use triggers to capture events that occur before and after any Modern POS operations. 
 author: mugunthanm
 manager: AnnBe
-ms.date: 01/17/2020
+ms.date: 05/12/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -39,7 +39,7 @@ You can use triggers to capture events that occur before or after Retail Modern 
 - Use the post-trigger for scenarios where you want to show custom messages or insert custom fields after the standard logic is performed. 
 
 
-The following table lists the available triggers and denotes whether they can be cancelled.
+The following table lists the available triggers and denotes whether they can be canceled.
 
 ## Application triggers
 
@@ -204,6 +204,7 @@ The following table lists the available triggers and denotes whether they can be
 | PreRecallTransactionTrigger        | Cancelable     | Executed before the customer order is recalled.       |
 | PostRecallTransactionTrigger       | Non-Cancelable | Executed after the customer order is recalled.        |
 | PreSelectTransactionPaymentMethodTrigger       | Cancelable |  When the user selects the **Totals** button in the **Cart view - totals** panel, the available payment methods are shown and this trigger will get executed before this dialog is shown. You can us extension code to modify the available payment methods from this trigger.      |
+| PreShipSelectedCartLinesTrigger       | Cancelable |  Executed when the product is selected for shipping.      |
 
 ## Reason code triggers
 | Trigger              | Type           | Description                                             |
