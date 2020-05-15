@@ -84,9 +84,9 @@ When channel-side calculation is correctly configured and managed, it can provid
 
 ### Get started with POS channel-side calculated inventory availability
 
-To use the channel-side calculation logic and turn off real-time service calls for inventory lookups from the POS application, you must first enable the **Optimized product availabity calculation** feature through the **Feature management** workspace in Commerce Headquarters.  In addition to enabling the feature, changes must be made to the **Functionality profile** 
+To use the channel-side calculation logic and turn off real-time service calls for inventory lookups from the POS application, you must first enable the **Optimized product availabity calculation** feature through the **Feature management** workspace in Commerce Headquarters. In addition to enabling the feature, you must make changes to the **Functionality profile**.
 
-To change the **Functionality profile** follow these steps:
+To change the **Functionality profile**, follow these steps:
 
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**.
 1. Select a functionality profile.
