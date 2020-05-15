@@ -230,7 +230,7 @@ You need to reinstall the LocalAgent in the following cases:
 
 ## Update your current deployment configuration
 
-As you have updated your certificates, the configuration file present in your environment is outdated and it has to be manually updated (just this time). If you don't update it the cleanup job will fail.
+As you have updated your certificates, the configuration file present in your environment is outdated and it has to be manually updated (just this time). If you don't update it the cleanup job will likely fail.
 
 1. Open your configuration file. You can find the location of this file by running the following command:
 
