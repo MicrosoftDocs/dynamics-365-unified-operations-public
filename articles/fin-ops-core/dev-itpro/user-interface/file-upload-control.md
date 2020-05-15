@@ -74,8 +74,17 @@ The file upload control accepts the file and upload strategy in the client, and 
 [![File upload sequence diagram](./media/fileuploadcontrolusageanddesign1.png)](./media/fileuploadcontrolusageanddesign1.png)
 
 ## Scanning uploaded files for viruses and malicious code
-When uploading files into the system, you may want to scan the files for viruses or malicious code before uploading. While Finance and Operations does not provide this capability out-of-the-box, Microsoft has added two delegates that allow customers to 
+When uploading files into the system, you may want to scan the files for viruses or malicious code before uploading. While Finance and Operations does not provide this capability out-of-the-box, two delegates have been added that allows customers to integrate the file scanning software of their choice. 
 
-integrate for allowing customer  there is a hookpoint available for developers within the file upload to allow you to integrate with the file scanner software of your choice
+### Delegates for document scanning
+The **Docu** and **FileUploadResultBase** classes have the following delegates for which handlers can be implemented for document scanning: 
+-  Docu.delegateScanDocument()
+-  Docu.delegateScanDeletedDocument()
+-  FileUploadResultBase.delegateScanStream()
+
+### Implementing handlers for the file scan delegates
+
+
+[EventHandlerResult classes in request or response scenarios](../dev-tools/event-handler-result-class.md). 
 
 
