@@ -46,15 +46,19 @@ To use warehouse slotting, you must set up the following elements in your system
 
 ### Unit-of-measure tiers for slotting
 
-Unit-of-measure tiers allow multiple units of measure to be grouped together for the purposes of slotting. For example, if there are multiple sizes of boxes that all get picked from the same box picking area, one tier could be created for all the sizes of boxes.
+Unit-of-measure tiers allow multiple units of measure to be grouped together for the purposes of slotting. For example, if there are multiple sizes of boxes that all get picked from the same box picking area, one tier could be created for all the sizes of boxes. ***A line must be created for each unit of measure that should be part of the tier***.
 
 1. Go to **Warehouse management > Setup > Replenishment > Slotting unit of measure tiers**
 1. Select **New**.
-1. Add a **Unit of measure tier**, enter **EaBoxPl**.
-1. Add a **Description**, enter **Each box pallet**.
+1. In the header enter the following: **Unit of measure tier** - *EaBoxPl*, **Description** - *Each box pallet*.
 1. Select **Save**.
-1. In the **Units of measure** fast tab, select **New**.
-1. In the new line created add the following: **Unit** - *Box*; **Description** - *Box*, and **Unit class** - *Quantity* will automatically update when you select **Save**.
+1. In the **Units of measure** FastTab, select **New**.
+1. In the new line created add the following: **Unit** - *Box*, **Description** - (will auto populate once saved), **Unit class** - *Quantity*
+1. Select **New** to add a second line to the table.
+1. In the new line created add the following: **Unit** - *ea*, **Description** - (will auto populate once saved), **Unit class** - *Quantity*
+1. Select **New** to add a second line to the table.
+1. In the new line created add the following: **Unit** - *PL*, **Description** - (will auto populate once saved), **Unit class** - *Quantity*
+1. Select **Save** to save the tier.
 
 ### Create a directive code for slotting
 
@@ -156,7 +160,7 @@ You must have at least one location directive set up to support slotting picks. 
 1. Select **New** from the action pane
 1. In the **Location directives** header **Name** field, enter *61 Slotting pick*
 
-##### Location directives fast tab
+##### Location directives FastTab
 
 Enter the following in the appropriate field, accept the defaults for other fields.
 
@@ -164,18 +168,18 @@ Enter the following in the appropriate field, accept the defaults for other fiel
 - **Site** – _6_
 - **Warehouse** – _61_
 - **Directive code** – _Slotting_
-- Select **Save** to activate *Lines* fast tab
+- Select **Save** to activate *Lines* FastTab
 
-##### Lines fast tab
+##### Lines FastTab
 
 Create a new line and enter the following in the appropriate field, accept the defaults for other fields:
 
 - Select **New** from the **Lines** action pane
 - **From quantity** – _0_
 - **To quantity** – _1000000_
-- Select **Save** to activate *Location Directive Actions* fast tab
+- Select **Save** to activate *Location Directive Actions* FastTab
 
-##### Location Directive Actions fast tab
+##### Location Directive Actions FastTab
 
 Create a new line and enter the following in the appropriate field, accept the defaults for other fields:
 
@@ -195,20 +199,6 @@ Create a new line and enter the following in the appropriate field, accept the d
   - **Criteria** - *Bulk*
     - Select the *Double plus sign* (++) in the field to expand the drop down list and select *Bulk* from the list
   - Select **OK**
-
-### Set up automatic slotting
-
-Once all of the required elements are in place, you can set slotting to run automatically by doing the following:
-
-1. Go to **Warehouse management > Replenishment > Run slotting**
-1. Specify which slotting steps you want to run by selecting one or more of the following:
-    - **Generate demand**
-    - **Locate demand**
-    - **Create replenishment work**
-1. Specify which slotting template to use.
-1. Set the recurrence to run automatically if desired.
-
-For the exercises in the scenario, do not setup automatic slotting.
 
 ## Scenario
 
@@ -254,21 +244,55 @@ Once you have all of the prerequisite elements in place, as described in the pre
 
 #### Generate demand
 
-Go to **Warehouse management > Setup > Replenishment > Slotting templates** and select the slotting template created earlier. Select **Generate demand** on the action bar. This will evaluate all demand that is in the system and matches the slotting template query. The total demand across all order will be consolidated into one line per Qty/UOM.
+1. Go to **Warehouse management > Setup > Replenishment > Slotting templates** and select the slotting template created earlier.
+1. Select **Generate demand** on the action bar. This will evaluate all demand that is in the system and matches the slotting template query. The total demand across all order will be consolidated into one line per Qty/UOM.
+1. An information message appears when completed.
+
+#### Slotting demand
+
+Slotting demand displays the results of the generation based on the setup of the slotting template.
+
+1. Select **Slotting demand** on the action pane to view the results from *Generate demand*. The lines in *Slotting demand* can be edited: *Delete* a line, add a *New* line or edit the line details.
 
 > [!NOTE]
 > You could instead edit demand manually, or import in from an external system using data management. Whatever is in the slotting demand will be used in the next step, regardless of where it came from.
 
 #### Locate demand
 
-Once demand has been generated, select **Locate demand** on the action pane.
+Once demand has been generated you will need to run the locate demand process to generate the *Slotting plan*.
 
-The slotting process now runs. Select **Slotting Plan** on the action pane to see the results.
+1. Select **Locate demand** on the action pane. The slotting process now runs.
+1. An information message appears when completed.
 
-The slotting plan shows the location that each item/qty was assigned, whether overflow was used, whether let-up work was created, and which template line was used. Any demand that couldn't be slotted will be highlighted in red.
+#### Slotting plan
+
+The slotting plan shows the location that each item/qty was assigned, whether overflow was used, whether let-up work was created, and which template line was used. ***Any demand that couldn't be slotted will be highlighted in red***.
+
+1. Select **Slotting Plan** on the action pane to see the results.
 
 #### Create replenishment
 
-After the slotting plan has been created, select **Run Replenishment** in the action pane to create replenishment based on the plan.
+After the slotting plan has been created you need to create replenishment work based on the plan.
+
+1. Select **Run Replenishment** in the action pane
+1. An information message appears when completed indicating the number of headers created for the work build ID.
 
 Location directives to use will be identified based on the directive code specified on each template line.
+
+## Tips
+
+### Set up automatic slotting
+
+Once all of the required elements are in place, you can set slotting to run automatically by doing the following:
+
+1. Go to **Warehouse management > Replenishment > Run slotting**
+1. Specify which slotting steps you want to run by selecting one or more of the following:
+    - **Generate demand**
+    - **Locate demand**
+    - **Create replenishment work**
+
+1. The slotting steps are progressive, in order to select *Locate demand* you must first select *Generate demand*.
+1. Specify which slotting template to use.
+1. Set the recurrence to run automatically if desired.
+
+For the exercises in the scenario, do not setup automatic slotting.
