@@ -49,10 +49,10 @@ Once enabled, in the **Retail and Commerce** module **Inventory management** men
 
 ## Create and configure inventory level profile
 
-**Inventory level profile** is defined to determine if a given quantity is considered in stock, out of stock or other custom levels. You can create multiple profiles per legal entity. Each profile consists of a set of inventory levels and each level is defined by a **range**, a **code**, and a label.
+**Inventory level profile** is defined to determine if a given quantity is considered in stock, out of stock or other custom levels. You can create multiple profiles per legal entity. Each profile consists of a set of inventory levels and each level is defined by a **range**, a **code**, and a **label**.
 -	**Range** is defined by **start quantity** and **end quantity**. A quantity value falls into a range if it is greater than the start quantity and not greater than the end quantity of that range.
 -	**Code** is an internal abbreviation to represent the level. Customers who directly integrate with our inventory APIs can utilize code to build additional logic for a given inventory level. For example, disable purchase capability for an item when its inventory level code is “OOS”.
--	**Label** is a meaningful message that explains the level and could be shown to the end customers in e-Commerce storefronts.
+-	**Label** is a meaningful message that explains the level and could be shown to the end customers in e-Commerce sites.
 
 ### Create inventory level profile
 
@@ -73,3 +73,60 @@ When a new profile is created, two “special” inventory levels get initialize
 > It’s not allowed to have gap or overlap between ranges in the profile definition.
 
 You can use the **Translations** function on Action Pane to configure localized strings for the label message, and then run the **1110 (Global configuration)** distribution schedule job to sync the localized strings to channels.
+
+### Configure inventory level profile
+
+You can configure inventory level profile at product category and/or individual product level. When a product has an inventory level profile configured, its inventory level will be determined based on the defined ranges in the linked profile. Otherwise, the inventory level as “available” or “out of stock” is determined based on whether the product has a positive on-hand quantity.
+
+To configure an inventory level profile for a category, follow these steps.
+1.	Go to **Retail and commerce** > **Products and categories** > **Commerce product hierarchy**.
+1.	Select a category that you want to configure inventory level profile.
+1.	In the **Sell product properties** FastTab, select a legal entity.
+1.	In the **Commerce inventory** section, set the value for **Inventory level profile** field by selecting one of predefined inventory level profiles from the dropdown list.
+
+You can use the **Update products** function on the Action Pane to propagate the category level profile value to its underlying products. For more information, see [Manage product categories and products](https://docs.microsoft.com/dynamics365/commerce/category-management-product-creation).
+
+To configure an inventory level profile for a released product, follow these steps.
+1.	Go to **Retail and commerce** > **Products and categories** > **Released products by category**.
+1.	Select a product, and then open its product details page.
+1.	In the **Sell** FastTab, in the **Commerce inventory** section, set the value for **Inventory level profile** field by selecting one of predefined inventory level profiles from the dropdown list.
+
+Like many other product level attributes, when creating a new product, the **Inventory level profile** field will be populated with the value configured for the category it is associated to.
+
+> [!NOTE]
+> The inventory level profile is a legal entity specific attribute. For the same category or product, the inventory level profile value can differ across legal entities.
+
+To sync the inventory level profile configurations to channels, follow these steps.
+
+1.	Go to **Retail and Commerce** > **Retail and Commerce IT** > **Distribution schedule**.
+1.	Run the **1040 (Product)** distribution schedule.
+
+## Configure inventory buffer	
+
+**Inventory buffer** is a user defined value to subtract additional quantity out of the original quantity of an item to calculate its estimated quantity. This estimated quantity gives retailers a safe buffer to not over sell a product that exceeds its actual on-hand inventory. You can configure inventory buffer at product category and/or individual product level. If not specified, the default buffer value is **zero**. 
+
+To configure an inventory buffer for a category, follow these steps.
+
+1.	Go to **Retail and commerce** > **Products and categories** > **Commerce product hierarchy**.
+1.	Select a category that you want to configure inventory buffer.
+1.	In the **Sell product properties** FastTab, select a legal entity.
+1.	In the **Commerce inventory** section, enter a positive value for the **Inventory buffer** field.
+
+You can use the **Update products** function on the Action Pane to propagate the category level buffer value to its underlying products. For more information, see [Manage product categories and products](https://docs.microsoft.com/dynamics365/commerce/category-management-product-creation).
+
+To configure an inventory level profile for a released product, follow these steps.
+
+1.	Go to **Retail and commerce** > **Products and categories** > **Released products by category**.
+1.	Select a product, and then open its product details page.
+1.	In the **Sell** FastTab, in the **Commerce inventory** section, enter a positive value for the **Inventory buffer** field.
+
+When creating a new product, the **Inventory buffer** field will be populated with the value configured for the category it is associated to. 
+
+> [!NOTE]
+> If a product has both inventory buffer and inventory level profile configured, its estimated quantity (original quantity subtracting the buffer value) will be used for range calculation to determine the inventory level.
+
+To sync the inventory buffer configurations to channels, follow these steps.
+
+1.	Go to **Retail and Commerce** > **Retail and Commerce IT** > **Distribution schedule**.
+1.	Run the **1040 (Product)** distribution schedule.
+
