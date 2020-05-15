@@ -826,6 +826,8 @@
           href: search-engine-optimization-considerations.md
         - name: Manage Content Security Policy (CSP)
           href: manage-csp.md
+        - name: Opt out of web activity event collection
+          href: web-activity-opt-out.md
       - name: Manage your site content 
         items:
         - name: Ways to add content
