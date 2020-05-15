@@ -79,31 +79,24 @@ Remember that you’re working with the migrated app in this section. The forms 
     > [!div class="mx-imgBorder"]
     > ![New customer](media/fmt_new_customer.png)
 
-4.  On the Action Pane, select the Microsoft Office logo, then select **Customers** under **Export to Excel**. Click **Download** to send the information in the grid view to a Microsoft Excel spreadsheet. This operation can take some time.
-
-    > [!div class="mx-imgBorder"]
-    > ![Export to Excel](media/fmt_export_excel.png)
-
-5.  When prompted, click **Open** to view the data in Excel.
-6.  Close Excel.
-7.  To switch to the **Details** view, select a value in the **First Name** column. This view shows detailed information for a single customer.
+4.  To switch to the **Details** view, select a value in the **First Name** column. This view shows detailed information for a single customer.
 
     > [!div class="mx-imgBorder"]
     > ![First name to details view](media/fmt_details_view.png)
 
-8.  Click **Show list** to show the navigation list. 
+5.  Click **Show list** to show the navigation list. 
 
     > [!div class="mx-imgBorder"]
     > ![Navigation list](media/fmt_show_list.png)
 
-9.  Click the various customer names in the navigation list in the side pane, and watch as the detailed information about each customer changes.
-10. Select the customer **Eduardo Cobo**. You'll notice the charts update to indicate Eduardo's previous rental preferences.
+6.  Click the various customer names in the navigation list in the side pane, and watch as the detailed information about each customer changes.
+7. Select the customer **Eduardo Cobo**. You'll notice the charts update to indicate Eduardo's previous rental preferences.
 
     > [!div class="mx-imgBorder"]
     > ![Details view](media/fmt_another_customer.png)
 
-11. Hover over the pie slices to see the details. You'll notice that, in the past, Eduardo has often rented red SUVs. This might give the sales clerk a cue to look for available red SUVs the next time Eduardo makes a reservation. This is a simple example of proactively providing insights.
-12. Add yourself as a customer.
+8. Hover over the pie slices to see the details. You'll notice that, in the past, Eduardo has often rented red SUVs. This might give the sales clerk a cue to look for available red SUVs the next time Eduardo makes a reservation. This is a simple example of proactively providing insights.
+9. Add yourself as a customer.
     -   On the Action Pane, click **New**. 
         
         > [!div class="mx-imgBorder"]
@@ -111,8 +104,8 @@ Remember that you’re working with the migrated app in this section. The forms 
 
     -   Fill in the form to add yourself as a customer. Make sure that you provide your name, a 16-digit number in the credit card field, and address information, at a minimum. **Note**: You don't have to take any action to save a new record.
 
-13. Create a new rental.
-    1.  On the navigation bar, go to **Fleet management** &gt; **Rentals** &gt; **Rental**.
+10. Create a new rental.
+    1.  On the navigation bar, go to **Fleet management** \> **Rentals** \> **Rental**.
     2.  In the **Rental** form, on the Action Pane, click **New.**
     3.  In the **Vehicle** field, select a vehicle.
     4.  In the **Customer** field, select your name.
@@ -121,7 +114,7 @@ Remember that you’re working with the migrated app in this section. The forms 
     7.  In the **Pickup** field, enter **Full**.
     8.  When you are done, click **Save**.
 
-14. Start the rental period.
+11. Start the rental period.
     1.  On the Action Pane, click **Start rental**.
     2.  In the dialog box, verify the values in the fields and click **OK**.
 
