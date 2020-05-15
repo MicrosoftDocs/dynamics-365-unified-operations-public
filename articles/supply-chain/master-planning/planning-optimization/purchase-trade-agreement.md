@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Purchase trade agreement
-description: This topic describes how Planning Optimization can select vendor and lead time based on the best price or lead time found in purchase trade agreements.
+title: Master planning with purchase trade agreements
+description: This topic describes how Planning Optimization can find the vendor and/or lead time for a planned order based on the best price or lead time found in purchase trade agreements.
 author: ChristianRytt
 manager: tfehr
 ms.date: 12/07/2020
@@ -29,11 +29,11 @@ ms.search.validFrom: 2020-5-12
 ms.dyn365.ops.version: AX 10.0.12
 
 ---
-# Purchase trade agreement
+# Master planning with purchase trade agreements
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how Planning Optimization can select the vendor and/or lead time for a planned order based on the best price or lead time found in purchase trade agreements.
+This topic describes how Planning Optimization can find the vendor and/or lead time for a planned order based on the best price or lead time found in purchase trade agreements.
 
 ## Enable the purchase trade agreement feature
 
@@ -42,7 +42,7 @@ Before you can use this feature, it must be enabled on on your system. Administr
 - **Module** - *Master planning*
 - **Feature name** - *Purchase trade agreements for Planning Optimization*
 
-## Preapre your system to consider purchase trade agreements during master planning
+## Prepare your system to consider purchase trade agreements during master planning
 
 To configure your system to apply Planning Optimization that considers purchase trade agreements:
 
@@ -52,9 +52,9 @@ To configure your system to apply Planning Optimization that considers purchase 
 1. Go to **Procurement and sourcing > Setup > Prices and discounts > Activate price/discount** and make sure **Vendor** is set to **Yes**. <!-- KFM: I put this here because it seems like a site-wide setting: is that right? Also, Vendor group, and all vendors, don't matter? -->
 1. Go to **Product information management > Setup > Dimension and variant groups > Storage dimension groups** and select a storage dimension group that applies to products for which master planning should consider purchase trade agreements. Make sure that each relevant storage dimension in this group shows a check mark in the **For purchase prices** column. Repeat this step for each relevant storage dimension group. <!-- KMF: Is this specific enough regarding how to select the group and dimension? --> 
 
-## Prepare a released product for Planning Optimization with purchase trade agreements
+## Prepare a released product to consider purchase trade agreements during master planning
 
-Once your system is prepared to allow Planning Optimization to consider purchase trade agreements, you should check to make sure that each of the products that you want to use with this feature are properly set up, as described in the following procedure.
+Once your system is prepared as described previously, you should check to make sure that each of the products that you want to use with this feature is properly set up, as described in the following procedure.
 
 1. Go to **Product information management > Products > Released products** and then open a target product.
 1. Expand the **Purchase** FastTab and make sure no **Vendor** is assigned.
@@ -67,7 +67,7 @@ Once your system is prepared to allow Planning Optimization to consider purchase
 
 ## Examples of how Planning Optimization finds vendor and lead times
 
-The following table provides examples of how various settings made for a released product and its associated purchase agreements will affect the values found for the resulting planned purchase order to be considered by Planning Optimization. The values shown in bold in the two rightmost columns are the ones selected by Planning Optimization, while the values shown in bold-italic in the other columns indicate the setting that generated thos resulting values for each row.
+The following table provides examples of how various settings made for a released product and its associated purchase agreements will affect the values found for the resulting planned purchase order. The values shown in bold in the two rightmost columns are the ones selected by Planning Optimization, while the values shown in bold-italic in the other columns indicate the setting that produced those resulting values for each row.
 
 <!-- KFM: We haven't mentioned "Default order settings: Lead time" or "Item coverage: Overwrite lead time" before now. Should we add these to the earlier procedure? -->
 
