@@ -66,11 +66,11 @@ If more than one due date limit applies to an invoice, the due date limit that h
 ## Set up due date limits to calculate invoice due dates
 Use the **Due date limits** page to create due date limits that specify the maximum number of days that invoice payments must be made within.
 
-1. Select **Accounts payable \> Setup > Payment \> Due date limits**.
+1. Select **Accounts payable \> Payments setup \> Due date limits**.
 
     –or–
 
-    Select **Accounts receivable \> Setup \> Payment \> Due date limits**.
+    Select **Accounts receivable \> Payments setup \> Due date limits**.
 
 2. Select **New** to create a due date limit.
 3. In the **Due date limit** field, enter a name for the new due date limit. In the **Description** field, enter a description.
@@ -88,11 +88,11 @@ When you create and post sales invoices or purchase invoices, the invoice due da
 
 Use the **Terms of payment** page to specify a due date limit, so that you can make sure that the invoice due date that is calculated is in the specified due date limit.
 
-1. Select **Accounts payable \> Setup \> Payment \> Terms of payment**.
+1. Select **Accounts payable \> Payments setup \> Terms of payment**.
 
     –or– 
 
-    Select **Accounts receivable \> Setup \> Payment \> Terms of payment**.
+    Select **Accounts receivable \> Payments setup \> Terms of payment**.
 
 2. Press the **New** button to create terms of payment, or select a terms of payment line.
 3. On the **Setup** FastTab, set the **Use the delivery date to calculate the payment due date** option to **Yes** to calculate the due date by applying terms of payment to the delivery date instead of the invoice date.
