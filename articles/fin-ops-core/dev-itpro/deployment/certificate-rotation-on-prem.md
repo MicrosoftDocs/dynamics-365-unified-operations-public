@@ -317,7 +317,7 @@ As you have updated your certificates, the configuration file present in your en
 
 This section should be performed either after a successful certificate rotation or before the next certificate rotation.
 
-1. Remove the old thumbprints from the cluster configuration. Once you remove them the appropriate section should look similar to this:
+1. Remove the old/secondary thumbprints from the cluster configuration. Once you remove them the appropriate section should look similar to this:
 
     ```json
     "security": {
@@ -327,15 +327,15 @@ This section should be performed either after a successful certificate rotation 
         "CertificateInformation":  {
             "ClusterCertificate":  {
                                        "X509StoreName":  "My",
-                                        "Thumbprint": "*New server thumbprint(Star/SF)*"
+                                        "Thumbprint": "server thumbprint(Star/SF)"
                                    },
             "ServerCertificate":   {
                                         "X509StoreName":  "My",
-										"Thumbprint": "*New server thumbprint(Star/SF)*"
+										"Thumbprint": "server thumbprint(Star/SF)"
                                    },
             "ClientCertificateThumbprints":  [
                                        {
-                                            "CertificateThumbprint": "*New client thumbprint*",
+                                            "CertificateThumbprint": "client thumbprint",
                                             "IsAdmin":  true
                                        }
                                              ]
