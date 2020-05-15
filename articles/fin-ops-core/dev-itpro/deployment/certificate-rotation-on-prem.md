@@ -5,7 +5,7 @@ title: Certificate rotation
 description: This topic explains how to place existing certificates and update the references within the environment to use the new certificates.
 author: PeterRFriis
 manager: AnnBe
-ms.date: 04/30/2020
+ms.date: 05/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -53,8 +53,8 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
     # Create self-signed certs
     .\New-SelfSignedCertificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
-    >[!IMPORTANT]
-    > Self-signed certificates should never be used in production environments. If you are using trusted certificates please update the values of those certificates in the ConfigTemplate.xml manually.
+    > [!IMPORTANT]
+    > Self-signed certificates should never be used in production environments. If you are using trusted certificates, please update the values of those certificates in the ConfigTemplate.xml file manually.
 
     ```powershell
     # Export Pfx files into a directory VMs\<VMName>, all the certs will be written to infrastructure\Certs folder
@@ -101,8 +101,9 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 
 ### <a name="sfcertrotationnotexpired"></a> Service Fabric with certificates that are not expired
 
-1. Edit the Clusterconfig.json file. Find the following section in the file. If you have a secondary thumbprint defined please go to [Cleanup old SF certificates](#cleanupoldsfcerts) before proceeding further.
-    ```json
+1. Edit the Clusterconfig.json file. Find the following section in the file. If you have a secondary thumbprint defined, please go to [Cleanup old Service Fabric certificates](#cleanupoldsfcerts) before proceeding further.
+   
+   ```json
     "security": {
         "metadata":  "The Credential type X509 indicates this is cluster is secured using X509 Certificates. 
         The thumbprint format is - d5 ec 42 3b 79 cb e5 07 fd 83 59 3c 56 b9 d5 31 24 25 42 64.",
@@ -232,7 +233,7 @@ You need to reinstall the LocalAgent in the following cases:
 
 ## Update your current deployment configuration
 
-As you have updated your certificates, the configuration file present in your environment is outdated and it has to be manually updated (just this time). If you don't update it the cleanup job will likely fail.
+As you have updated your certificates, the configuration file present in your environment is outdated and it has to be manually updated (just this time). If you don't update it, the cleanup job will likely fail.
 
 1. Open your configuration file. You can find the location of this file by running the following command:
 
