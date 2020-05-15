@@ -49,11 +49,11 @@ In Account management in Commerce HQ, administrators can opt out on behalf of us
 1. In the HQ client, navigate to **All customers** form.
 1. Search for and select a customer, and then select the **Retail** FastTab.
 
-    ![Retail FastTab](../../Commerce/media/Disablepersonalizationpart1.png)
+    ![Retail FastTab](../../commerce/media/Disablepersonalizationpart1.png)
 
 1. Under **Privacy**, set the **Do not track web activity** option to **Yes**.
 
-    ![Privacy settings](../../Commerce/media/Disablepersonalizationpart2.png)
+    ![Privacy settings](../../commerce/media/Disablepersonalizationpart2.png)
 
 1. Select **Save**, and close the page.
 
