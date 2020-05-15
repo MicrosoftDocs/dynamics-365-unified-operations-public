@@ -63,4 +63,4 @@ Administrators can let authenticated users opt out of web activity event collect
 
 ### Custom extensions
 
-Administrators can create their own extensions to manage the opt-out experience for users. For more information, see [Call Retail Server APIs](e-commerce-extensibility/call-retail-server-apis.md) and [Online channel extensibility](e-commerce-extensibility/overview.md).
+Administrators can create their own extensions to manage the opt-out experience for users. For more information, see [Call Retail Server APIs](../../commerce/e-commerce-extensibility/call-retail-server-apis.md) and [Online channel extensibility](../../commerce/e-commerce-extensibility/overview.md).
