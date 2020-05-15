@@ -73,6 +73,9 @@ The file upload control accepts the file and upload strategy in the client, and 
 
 [![File upload sequence diagram](./media/fileuploadcontrolusageanddesign1.png)](./media/fileuploadcontrolusageanddesign1.png)
 
+## Scanning uploaded files for viruses and malicious code
+When uploading files into the system, you may want to scan the files for viruses or malicious code before uploading. While Finance and Operations does not provide this capability out-of-the-box, Microsoft has added two delegates that allow customers to 
 
+integrate for allowing customer  there is a hookpoint available for developers within the file upload to allow you to integrate with the file scanner software of your choice
 
 
