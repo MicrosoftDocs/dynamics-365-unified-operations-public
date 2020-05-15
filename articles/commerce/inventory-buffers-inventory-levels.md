@@ -130,3 +130,16 @@ To sync the inventory buffer configurations to channels, follow these steps.
 1.	Go to **Retail and Commerce** > **Retail and Commerce IT** > **Distribution schedule**.
 1.	Run the **1040 (Product)** distribution schedule.
 
+## Utilize inventory buffers and inventory levels in e-Commerce scenario 
+
+Our out-of-box e-Commerce solution is utilizing the inventory buffers and inventory levels capabilities in HQ to drive the inventory availability displays in e-Commerce sites. For more information, see [Inventory settings on e-Commerce](https://docs.microsoft.com/dynamics365/commerce/inventory-ecommerce).
+
+Alternatively, for customers who integrate with 3rd party e-Commerce solution, you can use the **GetEstimatedAvailability** and **GetEstimatedProductWarehouseAvailability** APIs to show inventory availability for a product in your e-Commerce scenario. For more information about these APIs, see [Calculate inventory availability for retail channels](https://docs.microsoft.com/dynamics365/commerce/calculated-inventory-retail-channels).
+
+With the introduction of inventory buffers and inventory levels, these APIs will now return inventory level code and label message, calculated based on **total available** and **available physical**. They can be further configured to determine if inventory quantity is returned along with the message, and if available quantity will be reduced by inventory buffer value.
+
+To configure the desired API response, follow these steps.
+
+1.	Go to **Retail and commerce** > **Headquarters setup** > **Parameters** > **Commerce parameters**.
+1.	Select **Inventory** tab, in the **Store inventory** section, select one of the options from the dropdown list for the **Product availability APIs for e-Commerce** parameter.
+1.	To apply the settings to channels, run the **1110 (Global configuration)** distribution schedule job.
