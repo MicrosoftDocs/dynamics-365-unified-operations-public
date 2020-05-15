@@ -6,7 +6,7 @@ description: This topic describes capabilities of the point of sale (POS) outbou
 author: hhaines
 manager: annbe
 
-ms.date: 03/02/2020
+ms.date: 05/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -124,17 +124,17 @@ In the **Full order list** view, you can manually select a line in the list and 
 
 Validations occur during the receiving process for the document lines. They include validations for over-delivery. If a user tries to receive more inventory than was ordered on a purchase order, but either over-delivery isn't configured or the quantity that is received exceeds the over-delivery tolerance that is configured for the purchase order line, the user receives an error and isn't allowed to receive the excess quantity.
 
-### Under-delivery close lines
+### Underdelivery close lines
 
-In version 10.0.12 a new feature was added that will allow for POS users to close/cancel remaining quantities during outbound order shipment if the outbound warehouse decides they can not ship the full quantity requested (even at a later time).   In order to enable this capability, the company must be configured to allow underdelivery of Transfer orders and an underdelivery percentage must be defined for the transfer order line.   To configure the company to allow underdelivery of Transfer orders, in **Commerce headquarters**, navigate to **Inventory Management>Setup>Inventory and warehouse management parameters** on the **Transfer orders** tab of this parameters form, locate the **Accept underdelivery** parameter and enable it.   
+In Commerce version 10.0.12, functionality was added that will allow POS users to close or cancel remaining quantities during outbound order shipment, if the outbound warehouse decides they can not ship the full quantity requested. Quantities can be closed or canceled  at a later time as well. To enable this capability, the company must be configured to allow underdelivery of transfer orders and an underdelivery percentage must be defined for the transfer order line. To configure the company to allow underdelivery of transfer orders, in Commerce Headquarters, go to **Inventory Management > Setup > Inventory and warehouse management parameters**. On the **Transfer orders** tab of the **Inventory and warehouse management parameters** page, enable the **Accept underdelivery** parameter.   
 
-Ensure that HQ parameter changes are synchronized to your store channel by running the **1070** distribution scheduler job. 
+Ensure that the parameter changes are synchronized to your store channel by running the **1070** distribution scheduler job. 
 
-Underdelivery percentages for a Transfer order line can be pre-defined on the products as part of product configuration in HQ, or they can be set or overwritten on a specific Transfer order line through HQ.
+Underdelivery percentages for a transfer order line can be pre-defined on products as part of product configuration in Commerce Headquarters, or they can be set or overwritten on a specific transfer order line through Commerce Headquarters.
 
-If the organization has enabled the transfer order underdelivery configuration, users will begin to see a new option in the **Details** panel when selecting an outbound transfer order line through the **Outbound operation** in POS.  The **Close remaining quantity** slider will allow the user to send a request to HQ to cancel the remaining unshipped quantity when the user completes the shipment using the **Finish fulfillment** operation.   When a user chooses to **Close remaining quantity** the application will peform a validation to ensure the quantity to be canceled is within the underdelivery percentage tolerance as defined on the Transfer order line.  If the underdelivery tolerance is being exceeded, the user will receive an error and will not be able to close remaining quantity until the previously shipped+ship now quantity meets or exceeds the underdelivery tolerance.   
+If the organization has enabled the transfer order underdelivery configuration, users will begin to see a new option in the **Details** panel when selecting an outbound transfer order line through the **Outbound operation** in POS. The **Close remaining quantity** slider will allow the user to send a request to Commerce Headquarters to cancel the remaining unshipped quantity when the user completes the shipment using the **Finish fulfillment** operation. When a user chooses to close the remaining quantity, Commerce will peform a validation to ensure the quantity being canceled is within the underdelivery percentage tolerance as defined on the transfer order line.  If the underdelivery tolerance is exceeded, the user will receive an error and will not be able to close remaining quantity until the previously shipped and ship now quantity meets or exceeds the underdelivery tolerance.   
 
-Once the shipment is synchronized to HQ, the quantities defined in the **Ship now** field in POS for the Transfer order line will be updated to a shipped status in HQ.  Any unshipped quantities that would previously have been considered **Ship remain** quantities to be shipped at a later time will instead be considered as canceled quantity.  The **Ship remain** quantity for the transfer order line will be set to 0 and the line will be considered fully shipped.   
+Once the shipment is synchronized to Commerce Headquarters, the quantities defined in the **Ship now** field in POS for the transfer order line will be updated to a shipped status in Commerce Headquarters. Any unshipped quantities that would previously have been considered "ship remain" quantities (to be shipped at a later time) will be considered as canceled quantity instead. The "ship remain" quantity for the transfer order line will be set to "0" and the line will be considered fully shipped.   
 
 ### Shipping location-controlled items
 
