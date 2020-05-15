@@ -95,6 +95,7 @@ Customers are now required to complete additional setup to connect to virtual ma
 > - If computers outside the customer's CORPNET (e.g. a home office) are used to connect to the Sandbox environment(s), only the specific IP addresses of the computers used to connect to the sandbox environment(s) must be added.
 > - Azure Datacenter IP Address ranges must NOT be added
 > - Public IP addresses, such as a coffee shop location must NOT be configured.     
+> - IP whitelist rules should be removed when not in use. Periodic review of environment IP whitelist rules is recommended.
 
 > [!WARNING]
 > Microsoft will run periodic tests on the Microsoft Managed environments validating that the environments are sufficiently restricted.
