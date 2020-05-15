@@ -52,7 +52,11 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
     ```powershell
     # Create self-signed certs
     .\New-SelfSignedCertificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
-    
+    ```
+    >[!IMPORTANT]
+    > Self-signed certificates should never be used in production environments. If you are using trusted certificates please update the values of those certificates in the ConfigTemplate.xml manually.
+
+    ```powershell
     # Export Pfx files into a directory VMs\<VMName>, all the certs will be written to infrastructure\Certs folder
     .\Export-PfxFiles.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
@@ -95,9 +99,9 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 
 ## Activate new certificates within Service Fabric cluster
 
-### Service Fabric with certificates that are not expired
+### <a name="sfcertrotationnotexpired"></a> Service Fabric with certificates that are not expired
 
-1. Edit the Clusterconfig.json file. Find the following section in the file.  
+1. Edit the Clusterconfig.json file. Find the following section in the file. If you have a secondary thumbprint defined please go to [Cleanup old SF certificates](#cleanupoldsfcerts) before proceeding further.
     ```json
     "security": {
         "metadata":  "The Credential type X509 indicates this is cluster is secured using X509 Certificates. The thumbprint format is - d5 ec 42 3b 79 cb e5 07 fd 83 59 3c 56 b9 d5 31 24 25 42 64.",
@@ -193,7 +197,13 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 
 Continue this process following [Troubleshoot on-premises deployments](troubleshoot-on-prem.md#clean-up-an-existing-environment-and-redeploy).
 
-## LocalAgent certificate update (if needed)
+## LocalAgent certificate update
+
+You need to reinstall the LocalAgent in the following cases:
+
+    - You changed the service fabric cluster/server certificate.
+    - You changed the service fabric client certificate.
+    - You changed the LocalAgent certificate.
 
 1. Run the following PowerShell command on one of the Orchestrator nodes.
 
@@ -217,6 +227,48 @@ Continue this process following [Troubleshoot on-premises deployments](troublesh
 	- Client certificate thumbprint
 	- Server certificate thumbprint
 	- Tenant service principle certificate thumbprint
+
+## Update your current deployment configuration
+
+As you have updated your certificates, the configuration file present in your environment is outdated and it has to be manually updated (just this time). If you don't update it the cleanup job will fail.
+
+1. Open your configuration file. You can find the location of this file by running the following command:
+
+    ```sql
+    select Location from DeploymentInstanceArtifact where AssetId='config.json' and DeploymentInstanceId = '<LCSENVIRONMENTID>'
+    ```
+    >[!NOTE]
+    > Replace <LCSENVIRONMENTID> with your environments id. 
+    > You can obtain this from your environment's page in LCS. 
+
+2. The beginning of the file should look something like this.
+
+    ```json
+    {
+    "serviceFabric": {
+        "connectionEndpoint": "192.168.8.22:19000",
+        "clusterId": "Orch",
+        "certificateSettings": {
+        "serverCertThumbprint": "Old server thumbprint(Star/SF)",
+        "clientCertThumbprint": "Old client thumbprint"
+        }
+    },
+    ```
+
+3. Replace the serverCertThumprint and clientCertThumbprint with the new thumbprints:
+
+    ```json
+    {
+    "serviceFabric": {
+        "connectionEndpoint": "192.168.8.22:19000",
+        "clusterId": "Orch",
+        "certificateSettings": {
+        "serverCertThumbprint": "New server thumbprint(Star/SF)",
+        "clientCertThumbprint": "New client thumbprint"
+        }
+    },
+    ```
+4. Save the file and exit. Remember to close any programs that are accessing this network location or the cleanup process may fail.
 
 ## Update deployment settings in LCS
 
@@ -260,6 +312,37 @@ Continue this process following [Troubleshoot on-premises deployments](troublesh
 1. Always check if the SQL server certificate has expired. For more information, see [Set up SQL Server](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#setupsql).
 
 2. Check to be sure that the Active Directory Federation Service (ADFS) certificate has not expired.
+
+## <a name="cleanupoldsfcerts"></a> Cleanup old SF certificates
+
+This section should be performed either after a successful certificate rotation or before the next certificate rotation.
+
+1. Remove the old thumbprints from the cluster configuration. Once you remove them the appropriate section should look similar to this:
+
+    ```json
+    "security": {
+        "metadata":  "The Credential type X509 indicates this is cluster is secured using X509 Certificates. The thumbprint format is - d5 ec 42 3b 79 cb e5 07 fd 83 59 3c 56 b9 d5 31 24 25 42 64.",
+        "ClusterCredentialType":  "X509",
+        "ServerCredentialType":  "X509",
+        "CertificateInformation":  {
+            "ClusterCertificate":  {
+                                       "X509StoreName":  "My",
+                                        "Thumbprint": "*New server thumbprint(Star/SF)*"
+                                   },
+            "ServerCertificate":   {
+                                        "X509StoreName":  "My",
+										"Thumbprint": "*New server thumbprint(Star/SF)*"
+                                   },
+            "ClientCertificateThumbprints":  [
+                                       {
+                                            "CertificateThumbprint": "*New client thumbprint*",
+                                            "IsAdmin":  true
+                                       }
+                                             ]
+                                   }
+                },
+    ```
+1. Execute steps 4,5,6 from the section [Service Fabric with certificates that are not expired](#sfcertrotationnotexpired) above. 
 
 ## <a name="aftercertrotation"></a> After certificate rotation
 
