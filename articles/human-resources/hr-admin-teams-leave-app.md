@@ -5,7 +5,7 @@ title: Human Resources app in Teams
 description: This topic introduces the Microsoft Dynamics 365 Human Resources app in Microsoft Teams.
 author: andreabichsel
 manager: AnnBe
-ms.date: 05/04/2020
+ms.date: 05/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -25,7 +25,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: anbichse
-ms.search.validFrom: 2020-05-04
+ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
 
 ---
@@ -52,28 +52,9 @@ For information about managing app permissions in Teams, see [Manage app permiss
 | --- | --- |
 | The balance is incorrect when submitting time off for a future date. | Forecasting isn't yet available. The balance displays for the current date. |
 | When reducing the number of hours taken in an existing request, the **Remaining balance** goes down instead of up. | We'll address this known issue in the future. The display is incorrect, but the correct amounts are adjusted upon submission. |
-| The date picker isn't accessible in dark mode. | We'll add dark mode support in the future. |
 | Two **Upcoming time off** cards display for the same dates. | The cards represent individual submissions. We'll continue to take feedback and make adjustments. |
 | Unable to cancel an **In review** request. | This functionality isn't currently supported and will be added in a future release. |
-
-## Privacy information
-
-The Human Resources app in Teams uses the Language Understanding Intelligent Service (LUIS) in Azure Cognitive Services. The app also uses Microsoft’s Azure Bot Service. The following links provide more information about these services and privacy.
-
-| For more information about | See |
-| --- | --- |
-| LUIS | [Language Understanding (LUIS)](https://www.luis.ai/home) |
-| User privacy with LUIS | [Export and delete your customer data in Language Understanding (LUIS) in Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/luis/luis-user-privacy) |
-| Data storage in LUIS | [Data storage and removal in Language Understanding (LUIS) Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/luis/luis-concept-data-storage) | 
-| Azure Bot Service | [Azure Bot Service](https://azure.microsoft.com/services/bot-service/) | 
-| Azure Cognitive Services | [Cognitive Services](https://azure.microsoft.com/services/cognitive-services/language-understanding-intelligent-service/)<br>[Language Understanding](https://azure.microsoft.com/services/cognitive-services/language-understanding-intelligent-service/) |
-| Azure Cognitive Services privacy | [Azure Cognitive Services](https://azure.microsoft.com/support/legal/cognitive-services-compliance-and-privacy/) |
-| Microsoft privacy | [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement) |
-| Teams privacy	| [For IT professionals: Privacy and security in Microsoft Teams](https://www.microsoft.com/microsoft-365/blog/2020/04/06/it-professionals-privacy-security-microsoft-teams/) |
-
-The LUIS service can only access user queries and isn't designed to be connected to the user’s Dynamics data or account. However, a user of the Human Resources bot could voluntarily enter a query containing personal or other data, and that query content could be sent to LUIS and the Azure Bot Service.
-
-To manage admin settings for apps in Microsoft Teams, go to the Microsoft 365 admin center and open **Settings > Services & add-ins**, and then select **Microsoft Teams**. If you're signed in as an Office 365 admin, you can access these controls in the [Office 365 admin portal](https://admin.microsoft.com/adminportal/home#/Settings/ServicesAndAddIns). You can also uninstall from the admin portal.
+| Balance information is calculated as of today. | The system currently doesn't display balances as of the accrual period, even if it's configured in Leave and absence parameters. |
 
 ## Additional resources
 

@@ -5,7 +5,7 @@ title: Manage leave requests in Teams
 description: This topic shows how to request time off in the Dynamics 365 Human Resources app in Microsoft Teams.
 author: andreabichsel
 manager: AnnBe
-ms.date: 05/04/2020
+ms.date: 05/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -25,7 +25,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: anbichse
-ms.search.validFrom: 2020-05-04
+ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
 
 ---
@@ -52,7 +52,7 @@ You can find the Human Resources app in the Teams store.
 
    ![Human Resources Teams leave app install](./media/hr-teams-leave-app-in-store.png)
 
-4. After the app installs, select the **Settings** tab to sign in.
+If the app doesn't automatically sign you in, select the **Settings** tab to sign in.
 
    ![Human Resources Teams leave app Settings tab](./media/hr-teams-leave-app-settings-tab.png)
 
