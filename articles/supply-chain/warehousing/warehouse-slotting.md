@@ -149,15 +149,16 @@ In the query for the second line, specify the criteria for what location(s) the 
 
 #### Location directives
 
-You must have at least one location directive set up to support slotting picks. <!-- KFM: what is this and why do we need it for this feature? -->
+You must have at least one location directive set up to support slotting picks. Create a new *replenishment location directive* for slotting picks. <!-- KFM: what is this and why do we need it for this feature? -->
 
 1. Go to **Warehouse management > Setup > Location directives**
+1. In the left pane **Work order type** select *Replenishment*
 1. Select **New** from the action pane
 1. In the **Location directives** header **Name** field, enter *61 Slotting pick*
 
 ##### Location directives fast tab
 
-Create a new replenishment location directive for slotting picks. Enter the following in the appropriate field, accept the defaults for other fields.
+Enter the following in the appropriate field, accept the defaults for other fields.
 
 - **Work type** – _Pick_
 - **Site** – _6_
