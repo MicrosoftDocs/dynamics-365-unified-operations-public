@@ -65,7 +65,7 @@ After test execution files are generated, you can find the log file under **[RSA
 
 + If you have used a previous version of RSAT on the same computer, close it and uninstall it before installing a new version.
 
-## Screen resolution
+## Screen resolution when using Internet Explorer
 
 If you have selected Internet Explorer as your browser, your desktop resolution should be set to 100% to run the tests successfully. To change the settings, use Windows **Display settings > Scale and layout**, as shown in the following image:
 
@@ -106,7 +106,17 @@ You may receive the following error when running a test case, or the error detai
  
 To resolve this error, verify the **Admin user name** specified in the RSAT settings dialog box. The **Admin user name** must be the email address of a user that belongs to the System Administrator role on the Finance and Operations test environment that RSAT is connecting to. The user account (e-mail address) must also belong to the same tenant as the test environment. For example, if your test environment's tenant is **contoso.com**, the admin user must end with **\@constoso.com**.
 
-## Browser
+### Unsecured fault exception
+
+If a test case inconsistently fails with the following error, this usually indicates an incomplete configuration of the authentication thumbprints on the AOS virtual machines.
+
+```Text
+<Message>An unsecured or incorrectly secured fault was received from the other party. See the inner FaultException for the fault code and detail.</Message>
+<Message>At least one security token in the message could not be validated.</Message>
+```
+Typically, this error happens when the test case is running against a standard acceptance test environment (Tier 2 or higher) and you have not configured the authentication thumbprint on all of the AOS virtual machines. Make sure you properly add the thumbprint to the wif.config file on all of the AOS machines. [Click here for more details.](rsat-install-configure.md#configure-the-test-environment-to-trust-the-connection)
+
+## Google Chrome Browser
 
 The Google Chrome browser may not work with the Regression suite automation tool due to your Active Directory security settings. In this case, change your RSAT settings to use the new Microsoft Edge or Internet Explorer.
 
@@ -115,5 +125,5 @@ The Google Chrome browser may not work with the Regression suite automation tool
 Microsoft Excel data tabs display the system identifiers for data variables. Excel does not display friendly names.
 
 ##  Validating blank dates
-If your test case requires validation that a certain control of type Date/Time is blank, you can insert the following value into the Excel cell corresponding to this control: “01/01/1900”.   
+If your test case requires validation that a certain control of type Date/Time is blank, you can insert the following value into the Excel cell corresponding to this control: “01/01/1900”.
 
