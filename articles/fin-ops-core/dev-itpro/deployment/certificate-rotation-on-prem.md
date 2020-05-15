@@ -203,9 +203,9 @@ Continue this process following [Troubleshoot on-premises deployments](troublesh
 
 You need to reinstall the LocalAgent in the following cases:
 
-    - You changed the service fabric cluster/server certificate.
-    - You changed the service fabric client certificate.
-    - You changed the LocalAgent certificate.
+- You changed the service fabric cluster/server certificate.
+- You changed the service fabric client certificate.
+- You changed the LocalAgent certificate.
 
 1. Run the following PowerShell command on one of the Orchestrator nodes.
 
