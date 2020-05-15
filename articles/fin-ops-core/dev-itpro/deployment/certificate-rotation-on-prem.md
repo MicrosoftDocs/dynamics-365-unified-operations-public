@@ -101,7 +101,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 
 ### <a name="sfcertrotationnotexpired"></a> Service Fabric with certificates that are not expired
 
-1. Edit the Clusterconfig.json file. Find the following section in the file. If you have a secondary thumbprint defined, please go to [Cleanup old Service Fabric certificates](#cleanupoldsfcerts) before proceeding further.
+1. Edit the Clusterconfig.json file. Find the following section in the file. If you have a secondary thumbprint defined, go to [Cleanup old Service Fabric certificates](#cleanupoldsfcerts) before proceeding further.
    
    ```json
     "security": {
@@ -202,7 +202,7 @@ Continue this process following [Troubleshoot on-premises deployments](troublesh
 
 ## LocalAgent certificate update
 
-You need to reinstall the LocalAgent in the following cases:
+You must reinstall the LocalAgent if:
 
 - You changed the service fabric cluster/server certificate.
 - You changed the service fabric client certificate.
@@ -286,7 +286,7 @@ As you have updated your certificates, the configuration file present in your en
 
 	![Apply update settings](media/addf4f1d0c0a86d840a6a412f774e474.png)
 
-3. Change the thumbprints to the new ones that you have previously configured (you can find these in the ConfigTemplate.xml file in the InfrastructureScripts folder).
+3. Change the thumbprints to the new ones that you have previously configured (you can find them in the ConfigTemplate.xml file in the InfrastructureScripts folder).
 
 	![Deployment settings thumbprint](media/07da4d7e02f11878ee91c61b4f561a50.png)
 
@@ -302,7 +302,7 @@ As you have updated your certificates, the configuration file present in your en
 
 7. During the update, the environment will be unavailable.
 
-8. After the environment is successfully updated with the new certificates, you can check the new thumbprints in Service Fabric Cluster Explorer. Note that the name of the thumbprint name from Service Fabric Explorer might differ from the names of the thumbprints that are in Lifecycle Services. Despite the differences, the values should be the same.
+8. After the environment is successfully updated with the new certificates, you can check the new thumbprints in Service Fabric Cluster Explorer. The name of the thumbprint name from Service Fabric Explorer might differ from the names of the thumbprints that are in Lifecycle Services. Despite the differences, the values should be the same.
 
 	Here is an example of how the name of the same thumbprint might differ.
 
@@ -320,7 +320,7 @@ As you have updated your certificates, the configuration file present in your en
 
 This section should be performed either after a successful certificate rotation or before the next certificate rotation.
 
-1. Remove the old/secondary thumbprints from the cluster configuration. Once you remove them the appropriate section should look similar to this:
+1. Remove the old/secondary thumbprints from the cluster configuration. Once you remove them, the appropriate section should look similar to:
 
     ```json
     "security": {
@@ -354,7 +354,7 @@ This section should be performed either after a successful certificate rotation 
 
 This certificate is used to encrypt data stored in the database. By default there are certain fields that are encrypted with this certificate, you can check those fields [here](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-scenario-goldenconfig#document-the-values-of-encrypted-fields). However, our API can be used to encrypt other fields that customers deem should be encrypted. 
 
-Beginning with platform update 33, the batch job titled “Encrypted data rotation system job that needs to run at off hours when the data encryption certificate rotated” will re-encrypt data with the newly rotated certificate. This is a crawler batch job that will run between 2 hours to 3 days to re-encrypt the new certificate with all of the encrypted data. Depending on the amount of data, it's possible that the crawler is able to finish in less time than note.
+Beginning with platform update 33, the batch job titled “Encrypted data rotation system job that needs to run at off hours when the data encryption certificate rotated” will re-encrypt data with the newly rotated certificate. This is a crawler batch job that will run for 2 hours during 3 days to re-encrypt the new certificate with all of the encrypted data. Depending on the amount of data, it's possible that the crawler is able to finish in less time than note.
 
 > [!WARNING]
 > Make sure that the old Data Encryption certificate is not removed before all encrypted data has been re-encrypted and it has not expired. Otherwise, this could lead to data loss.
