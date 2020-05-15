@@ -41,8 +41,6 @@ Tab module is used to organize information within tabs on a page. It can be used
 
 Below is an example of tabs.
 
-![TEST](./media/ecommerce-tab.PNG)
-
 ![Example of a tab module](./media/ecommerce-tab.png)
 
 ## Details
