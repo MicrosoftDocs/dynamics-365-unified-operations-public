@@ -40,7 +40,7 @@ This topic covers Tab module and describes how to add it to site pages in Micros
 Tab module is used to organize information within tabs on a page. It can be used on any page that requires information to be presented in tabs.
 
 Below is an example of tabs
-![Example of a tab module](./media/ecommerce-tab.PNG)
+![Example of a tab module](./media/ecommerce-tab.png)
 
 ## Details
 **Tab** is a container-like module that allows one or more **Tab item** modules to be added to it. Each Tab item represents a tab. Within each Tab item,  one or more modules can be added. There are no restrictions on the type of modules that can be added within a Tab item.
