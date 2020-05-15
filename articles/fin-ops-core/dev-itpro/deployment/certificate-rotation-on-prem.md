@@ -104,7 +104,8 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 1. Edit the Clusterconfig.json file. Find the following section in the file. If you have a secondary thumbprint defined please go to [Cleanup old SF certificates](#cleanupoldsfcerts) before proceeding further.
     ```json
     "security": {
-        "metadata":  "The Credential type X509 indicates this is cluster is secured using X509 Certificates. The thumbprint format is - d5 ec 42 3b 79 cb e5 07 fd 83 59 3c 56 b9 d5 31 24 25 42 64.",
+        "metadata":  "The Credential type X509 indicates this is cluster is secured using X509 Certificates. 
+        The thumbprint format is - d5 ec 42 3b 79 cb e5 07 fd 83 59 3c 56 b9 d5 31 24 25 42 64.",
         "ClusterCredentialType":  "X509",
         "ServerCredentialType":  "X509",
         "CertificateInformation":  {
@@ -130,32 +131,33 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 
     ```json
     "security":  {
-        "metadata":  "The Credential type X509 indicates this is cluster is secured using X509 Certificates. The thumbprint format is - d5 ec 42 3b 79 cb e5 07 fd 83 59 3c 56 b9 d5 31 24 25 42 64.",
+        "metadata":  "The Credential type X509 indicates this is cluster is secured using X509 Certificates. 
+        The thumbprint format is - d5 ec 42 3b 79 cb e5 07 fd 83 59 3c 56 b9 d5 31 24 25 42 64.",
         "ClusterCredentialType":  "X509",
         "ServerCredentialType":  "X509",
         "CertificateInformation":  {
-                                        "ClusterCertificate":  {
-                                                                    "X509StoreName":  "My",
-                                                                    "Thumbprint":  "New server thumbprint(Star/SF)"
-                                                                    ,"ThumbprintSecondary": "Old server thumbprint(Star/SF)"
-                                                               },
-                                        "ServerCertificate":   {
-                                                                    "X509StoreName":  "My",
-                                                                    "Thumbprint":  "New server thumbprint(Star/SF)"
-                                                                    ,"ThumbprintSecondary":"Old server thumbprint(Star/SF)"
-                                                               },
-                                        "ClientCertificateThumbprints":  [
-                                                                                                                                                                                           {
-                                                                                "CertificateThumbprint":  "Old client thumbprint",
-                                                                                "IsAdmin":  false
-                                                                            },
-                                                                            {
-                                                                                "CertificateThumbprint":  "New client thumbprint",
-                                                                                "IsAdmin":  true
-                                                                            }
-                                                                          ]
+            "ClusterCertificate":  {
+                                       "X509StoreName":  "My",
+                                        "Thumbprint": "*New server thumbprint(Star/SF)*",
+                                        "ThumbprintSecondary": "Old server thumbprint(Star/SF)"
+                                   },
+            "ServerCertificate":   {
+                                        "X509StoreName":  "My",
+										"Thumbprint": "*New server thumbprint(Star/SF)*",
+                                        "ThumbprintSecondary": "Old server thumbprint(Star/SF)"
+                                   },
+            "ClientCertificateThumbprints":  [
+                                       {
+                                            "CertificateThumbprint": "*Old client thumbprint*",
+                                            "IsAdmin":  false
+                                       },
+                                       {
+                                            "CertificateThumbprint": "*New client thumbprint*",
+                                            "IsAdmin":  true
                                        }
-                    },
+                                             ]
+                                   }
+                },
     ```
 
 3. Edit the new and old thumbprint values. 
@@ -321,7 +323,8 @@ This section should be performed either after a successful certificate rotation 
 
     ```json
     "security": {
-        "metadata":  "The Credential type X509 indicates this is cluster is secured using X509 Certificates. The thumbprint format is - d5 ec 42 3b 79 cb e5 07 fd 83 59 3c 56 b9 d5 31 24 25 42 64.",
+        "metadata":  "The Credential type X509 indicates this is cluster is secured using X509 Certificates.
+        The thumbprint format is - d5 ec 42 3b 79 cb e5 07 fd 83 59 3c 56 b9 d5 31 24 25 42 64.",
         "ClusterCredentialType":  "X509",
         "ServerCredentialType":  "X509",
         "CertificateInformation":  {
