@@ -2,10 +2,10 @@
 # required metadata
 
 title: Accordion module 
-description: This topic covers Accordion module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
+description: This topic covers accordion modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 manager: annbe
-ms.date: 04/24/2020
+ms.date: 05/25/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -31,40 +31,40 @@ ms.dyn365.ops.version:
 
 # Accordion module
 
-
 [!include [banner](includes/banner.md)]
 
-This topic covers Accordion module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
+This topic covers accordion modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
 ## Overview
-Accordion module is used to organize information within a page. It provides a collapsible drawer like capability that makes it ideal for organizing information. It can be used on any page to organize information/modules.
 
-Below is an example of Accordion module used on a Store FAQ page to organize information
+Accordion modules are container-like modules used to organize information within a page by providing a collapsible drawer-like capability. An accordion module can be used on any page to organize information or modules.
+
+The accordion module allows one or more accordion item modules to be added to it. Each accordion item represents a collapsible drawer. Within each accordion item, one or more modules can be added. There are no restrictions on the type of modules that can be added within an accordion item.
+
+The following image shows an example of an accordion module used to organize information on a store FAQ page.
+
 ![Example of a Accordion module](./media/ecommerce-accordion.PNG)
-
-## Details
-**Accordion** is a container-like module that allows one or more **Accordion item** modules to be added to it. Each Accordion item represents a collapsible drawer. Within each Accordion item,  one or more modules can be added. There are no restrictions on the type of modules that can be added within an Accordion item.
-
 
 ## Accordion module properties
 
 | Property name  | Values | Description |
 |----------------|--------|-------------|
-| Heading          | Heading| A heading can be provided to the Accordion module|
-| Expand All  | True/False | If true, an Expand/Collapse All functionality is provided to expand or collapse all items in the Accordion|
-| Interaction Style| Independent, Expand one item only| This defines the type of interaction the accordion items provide. With **Independent**, each Accordion item can be expanded/collapsed independently. With **Expand one item only**, only one item can be expanded at any time, as items are expanded, previous items are collapsed|
+| Heading          | Heading| Optional heading for the accordion module|
+| Expand All  | True/False | If true, an Expand/Collapse All functionality is enabled to expand or collapse all items in the accordion module|
+| Interaction Style| Independent, Expand one item only| Defines the type of interaction the accordion items provide. With **Independent**, each accordion item can be expanded or collapsed independently. With **Expand one item only**, only one item can be expanded at any time, and as items are expanded, previous items are collapsed|
 
 ## Accordion item module properties
 
 | Property name  | Values | Description |
 |----------------|--------|-------------|
-| Tite          | Text|  This defines the text for the accordion. Selecting on the Title region, expands/collapses the section|
-| Expand by default  | True/False | If true, this Accordion item will be expanded by defaul when the page is loaded|
+| Title          | Text|  This defines the text for the accordion. Selecting on the title region expands or collapses the section|
+| Expand by default  | True/False | If True, this accordion item will be expanded by default when the page is loaded|
 
 
 ## Add a Accordion module to a new page
 
-To add a Accordion module to a page and set the properties, follow these steps
+To add a accordion module to a page and set its properties, follow these steps.
+
 1. Create a new page *Store faq* using Marketing template in Fabrikam or any template without restrictions
 1. In the **Default page** add a Container
 1. To the Container, add Accordion module
