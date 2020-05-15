@@ -237,10 +237,10 @@ As you have updated your certificates, the configuration file present in your en
 1. Open your configuration file. You can find the location of this file by running the following command:
 
     ```sql
-    select Location from DeploymentInstanceArtifact where AssetId='config.json' and DeploymentInstanceId = '<LCSENVIRONMENTID>'
+    select Location from DeploymentInstanceArtifact where AssetId='config.json' and DeploymentInstanceId = 'LCSENVIRONMENTID'
     ```
     >[!NOTE]
-    > Replace <LCSENVIRONMENTID> with your environments id. 
+    > Replace LCSENVIRONMENTID with your environments LCS id. 
     > You can obtain this from your environment's page in LCS. 
 
 2. The beginning of the file should look something like this.
