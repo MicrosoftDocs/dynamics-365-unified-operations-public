@@ -173,14 +173,21 @@ Before you enable dual-write, follow these steps to make sure that you meet the 
 
     *To ensure listening into CRUD operations on the Common Data Service, the dual-write plugins need to be enabled*
 
-7. Install the dual-write application orchestration solution maps solution.
+7. Install the **Dual-write application orchestration solution** maps solution.
 
     In Power Apps, in the left pane, select **Solutions**. Select **Open AppSource**, and search for the solution that is named **Dual-write application orchestration solution**. Select the solution, and follow the prompts to import it. After installation, you'll find several new solutions listed under **Solutions**. For more information, see [Solutions overview](https://docs.microsoft.com/powerapps/maker/common-data-service/solutions-overview). 
  
-    While dual-write core solution contains metadata for your entity maps, dual-write application orchestration solution covers the master data scenarios for customers, products, and vendors, and for end-to-end process flows like prospect to cash, and for on-demand functions like pricing and reference data for ledger, tax, payment terms, and schedules. Dual-write will continue to expand in the future to support more scenarios for party, project, on-hand inventory, and more. The framework is extensible and accommodates customer-centric business data exchange through a few additional clicks.
+    While the dual-write core solution contains metadata for your entity maps, the dual-write application orchestration solution covers these additional master data scenarios:
+    
+    + Customers, products, and vendors.
+    + End-to-end process flows like prospect to cash.
+    + On-demand functions like pricing.
+    + Reference data for ledger, tax, payment terms, and schedules. 
+    
+    Dual-write will continue to expand in the future to support more scenarios including party, project, and hands-on inventory. The framework is extensible and accommodates customer-centric business data exchange through a few additional clicks.
     
     > [!NOTE]
-    > You would need to **Apply Solution** as part of the next steps, when you use the dual-write wizard to link your environments 
+    > You must select **Apply Solution** as part of the next steps, when you use the dual-write wizard to link your environments. 
 
 8. Uninstall the Prospect to Cash (P2C) solution.
 
