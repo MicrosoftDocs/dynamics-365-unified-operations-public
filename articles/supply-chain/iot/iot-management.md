@@ -41,7 +41,7 @@ You can monitor IoT Intelligence processing from several places:
 
 + **Modules \> Production control \> Inquiries and reports \> IoT Intelligence \> Notifications** – View the list of unresolved notifications.
 + **Modules \> Production control \> Inquiries and reports \> IoT Intelligence \> Closed notifications** – View the list of notifications that have been resolved or dismissed.
-+ **Modules \> Production control \> Inquiries and reports \> IoT Intelligence \> Metric keys** – View the metric keys for the Resource Status times series charts.
++ **Modules \> Production control \> Inquiries and reports \> IoT Intelligence \> Metric keys** – View the metric keys for the **Resource Status** times series charts.
 + **Modules \> Production control \> Manufacturing execution \> Resource status** – Track specific metrics by using the **Configure** dialog box. If a scenario detects an exception, a notification shows the details of the exception.
 + **Workspaces \> Production floor management \> Notifications** – View the list of unresolved notifications.
 
