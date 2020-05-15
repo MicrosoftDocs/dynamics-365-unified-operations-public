@@ -116,7 +116,7 @@ This topic explains how to log events to [Customer Application Insights](https:/
                     {
                         if (client == null)
                         {
-                            string key = context.Runtime.Configuration.GetSettingValue("ext.AppInsightsKey");
+                            string key = context.Runtime.Configuration.GetSettingValue("ext.AppInsightsKey") ?? string.Empty;
                             client = new TelemetryClient(new TelemetryConfiguration(key));
                         }
                     }
