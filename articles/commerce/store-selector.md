@@ -84,3 +84,5 @@ A store selector module needs the context of a product, so it can only be used w
 [Quick tour of Cart and checkout](quick-tour-cart-checkout.md)
 
 [Set up modes of delivery](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
+
+[Manage Bing Maps for your organization](dev-itpro/manage-bing-maps.md)

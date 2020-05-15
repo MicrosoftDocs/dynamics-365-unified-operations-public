@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Help resources for Supply Chain Management
+title: Supply Chain Management home page
 description: This page provides a list of the help topics and other resources for Supply Chain Management features.   
 author: josaw1
 manager: tfehr
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Help resources for Supply Chain Management
+# Supply Chain Management home page
 
 [!include [banner](includes/banner.md)]
 

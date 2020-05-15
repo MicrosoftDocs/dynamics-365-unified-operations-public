@@ -143,8 +143,7 @@ Before you enable dual-write, follow these steps to make sure that you meet the 
 
         By selecting **Accept**, you indicate that you're providing consent to install the app that has application ID **33976c19-1db5-4c02-810e-c243db79efde** in your tenant. Common Data Service requires this app to communicate with the Finance and Operations app.
 
-    3. Repeat the previous two steps for application ID **2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b**.
-
+    
     **Related health check result:**
 
     *Apps in tenant*
@@ -174,25 +173,30 @@ Before you enable dual-write, follow these steps to make sure that you meet the 
 
     *To ensure listening into CRUD operations on the Common Data Service, the dual-write plugins need to be enabled*
 
-7. Uninstall the Prospect to Cash (P2C) solution.
+7. Install the **Dual-write application orchestration solution** maps solution.
+
+    In Power Apps, in the left pane, select **Solutions**. Select **Open AppSource**, and search for the solution that is named **Dual-write application orchestration solution**. Select the solution, and follow the prompts to import it. After installation, you'll find several new solutions listed under **Solutions**. For more information, see [Solutions overview](https://docs.microsoft.com/powerapps/maker/common-data-service/solutions-overview). 
+ 
+    While the dual-write core solution contains metadata for your entity maps, the dual-write application orchestration solution covers these additional master data scenarios:
+    
+    + Customers, products, and vendors.
+    + End-to-end process flows like prospect to cash.
+    + On-demand functions like pricing.
+    + Reference data for ledger, tax, payment terms, and schedules. 
+    
+    Dual-write will continue to expand in the future to support more scenarios including party, project, and hands-on inventory. The framework is extensible and accommodates customer-centric business data exchange through a few additional clicks.
+    
+    > [!NOTE]
+    > You must select **Apply Solution** as part of the next steps, when you use the dual-write wizard to link your environments. 
+
+8. Uninstall the Prospect to Cash (P2C) solution.
 
     The P2C solution doesn't work concurrently with dual-write. Therefore, don't install the P2C solution. If it's already installed, you must uninstall it before you enable dual-write.
 
-8. Provide the supported tenant configuration.
+9. Provide the supported tenant configuration.
 
     Make sure that the Finance and Operations app and Common Data Service are installed under the same tenant. Cross-tenant scenarios aren't currently supported.
 
-9. Install the dual-write entity maps solution.
-
-    1. In Power Apps, in the left pane, select **Solutions**. Select **Open AppSource**, and search for the solution that is named **Dual-write application orchestration solution**. Select the solution, and follow the prompts to import it. After installation, you'll find several new solutions listed under **Manage your solutions**. For more information, see [Solutions overview](https://docs.microsoft.com/powerapps/maker/common-data-service/solutions-overview).
-
-    2. In the Finance and Operations app, on the **Dual-write** page, select **Apply Solution** to apply the entity maps that you just downloaded and installed. After you apply the solution, you should see that the default entity maps are published.
-
-        ![Applying the entity maps](media/apply-entity-maps.png)
-
-You've now successfully imported and applied a Microsoft-published dual-write entity map solution to your environment.
-
-![Dual-write imported and applied](media/dual-write-imported-applied.png)
 
 ## Next steps
 
