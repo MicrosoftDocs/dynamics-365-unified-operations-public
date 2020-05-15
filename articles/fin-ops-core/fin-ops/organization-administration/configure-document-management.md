@@ -126,9 +126,12 @@ Here are some other configuration options to consider, although these options ar
 
 ## Accessing document management attachments 
 
-Document management appears to users as the **Attach** button (keyboard shortcut: **Ctrl**+**Shift**+**A**) at the top of most forms that contain data sources. Clicking the **Attach** button will open the **Attachments** form in the context of the data source of the currently selected control on the form.
+Document management appears to users as the **Attach** button (keyboard shortcut: **Ctrl**+**Shift**+**A**) at the top of most pages that contain data. Selecting the **Attach** button will open the **Attachments** page in the context of the data source of the currently selected control on the page. This page will show all the attachments related to the corresponding data source. 
 
-The **Attach** button will also show a count of attachments for the currently selected record, so the user can see whether there are attachments on the current record without opening that form. The count will show 0-9, and then 9+ to limit the performance impact and visual noise of determining and showing larger counts.
+The **Attach** button will also show a count of attachments for the currently selected record, so the user can see whether there are attachments on the current record without opening the **Attachments** page. The count will show 0-9, and then 9+ to limit the performance impact and visual noise of determining and showing larger counts.
+
+In 10.0.12, the **Show related document attachments** feature modifies the document attachment experience in two ways. First, instead of the **Attachments** page only showing attachments related to a single data source, with this feature enabled the **Attachments** page shows attachments from all data sources on the page that are related to the active record. The count of attachments on the **Attach** button also reflects this change. Second, users are able to move and copy attachments between those related data sources on the **Attachments** page.  
+
 
 ## Attachment recovery
 
