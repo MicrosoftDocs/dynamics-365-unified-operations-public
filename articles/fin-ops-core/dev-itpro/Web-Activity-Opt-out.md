@@ -2,7 +2,7 @@
 # required metadata
 
 title: Opt out of web activity event collection
-description: This topic explains how you can let your website visitors opt out of web activity event collection in Microsoft Dynamics 365 Commerce. 
+description: This topic explains how you can let visitors to your website opt out of web activity event collection in Microsoft Dynamics 365 Commerce. 
 author: aamiral
 manager: AnnBe
 ms.date: 05/15/2020
@@ -35,27 +35,23 @@ This topic explains how you can let customers opt out of web activity event coll
 
 ## Overview
 
-Dynamics 365 Commerce allows site administrators to analyze web activity of users on their e-commerce sites to better understand usage of their e-commerce site and optimize the site to provide an improved user experience and to meet business objectives.
+Dynamics 365 Commerce lets site administrators analyze the web activity of users of their e-commerce sites. In that way, they can better understand how their sites are used, and they can optimize the sites to provide an improved user experience and meet business objectives.
 
 
 ## Ways for administrators to implement an opt-out experience
 
 Administrators have three ways to implement an opt-out experience.
 
-### Opting out on behalf of users
+### Opt out on behalf of users
 
-In Account management in Commerce HQ, administrators can opt out on behalf of users.
+In Account management in Commerce headquarters (HQ), administrators can opt out on behalf of users.
 
-1. In the HQ client, navigate to **All customers** form.
-1. Search for and select a customer, and then select the **Retail** FastTab.
-
-    ![Retail FastTab](../../commerce/media/Disablepersonalizationpart1.png)
-
-1. Under **Privacy**, set the **Do not track web activity** option to **Yes**.
+1. In the HQ client, on the **All customers** page, search for and select a customer.
+1. On the customer details page, on the **Retail** FastTab, in the **Privacy** section, set the **Do not track web activity** option to **Yes**.
 
     ![Privacy settings](../../commerce/media/Disablepersonalizationpart2.png)
 
-1. Select **Save**, and close the page.
+1. Select **Save**, and then close the page.
 
 ### Module-based opt-out experience
 
