@@ -5,7 +5,7 @@ title: Calculate inventory availability for retail channels
 description: This topic describes the options that are available for showing the on-hand inventory for the store and online channels.
 author: hhainesms
 manager: annbe
-ms.date: 02/25/2020
+ms.date: 05/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
