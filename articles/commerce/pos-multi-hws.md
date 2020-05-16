@@ -7,7 +7,7 @@ author: rubendel
 manager: AnnBe
 ms.date: 05/16/2020
 ms.topic: article
-ms.prod: tfehr
+ms.prod: tonyafehr
 ms.service: dynamics-365-retail
 ms.technology: 
 
@@ -30,30 +30,58 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
-# Health check for POS peripherals and services
+# Dedicated payment terminal with prompt for printer and cash drawer
 
 [!include [banner](includes/banner.md)]
 
-This topic describes the health check operation in the point of sale (POS).
+This topic provides an overview of the capability to have a dedicated payment terminal while prompting the user to select a cash drawer and receipt printer.
 
 ## Overview
 
-Retail stores can be complex environments where many applications and devices are used. As operations grow, it can become difficult to ensure that operations always run smoothly, because of dependencies on, for example, peripherals that can break or accidentally become unplugged over the course of a day. Troubleshooting for issues that are related to devices and services can be costly for larger merchants and equally frustrating for smaller operations.
+Modern retailers are always searching for ways to streamline the in-store chekout experience. In addition to making the purchasing experience friction-free, recent trends toward paperless checkout with electronic payments are lessening the need to have a full compliment of peripheral devices available for every store associate. 
 
-Microsoft Dynamics 365 Commerce versions 10.0.10 and later include a health check operation that can help prevent some of this cost and frustration. This operation provides a method for testing devices directly from the POS outside of normal operations. Therefore, it can help retailers detect issues before they occur.
+This feature supports these trends in retail by enabling a scenario where the point of sale device can have a full-time payment terminal assigned to it without its own receipt printer or cash drawer. When the associate needs to print a receipt or take a cash payment, they are prompted to select a hardware station where those devices are configured.
 
 ## Key terms
 
 | Term | Description |
 |---|---|
-| Peripheral | Any device that the POS application uses to facilitate transactions and other operations in the store. Examples include cash drawers, bar code scanners, and payment terminals. |
-| Service | In this topic, a service is an ancillary application that the POS application depends on to perform transactions and daily operations. Examples include apps that help with tax or shipping calculations. |
+| Register | The entity which is used to configure an instance of a point of sale register. |
+| Device | Represents the physical instance of a point of sale register and the Modern POS application that is assigned to that register. |
+| Dedicated hardware station | The hardware station business logic that is built into the Modern POS for Windows and Android applications. |
+| d/k port | The d/k (drawer kick) port is a traditional method for connecting a cash drawer to a receipt printer. |
+| Network peripherals | Built-in support for network enabled payment terminals, receipt printers, and cash drawers. |
 
-## Health check operation
+## Supported POS clients and devices
 
-The health check operation is operation 717 on the **POS Operations** page in Commerce Headquarters. It can be used while the POS is in non-drawer mode. However, a hardware station must be active.
+This feature is supported with the Modern POS for Windows and Modern POS for Android point of sale clients. 
 
-By default, the health check tests only devices that are configured in the hardware profile for the hardware station that is currently active for a register. If a register uses multiple hardware stations over the course of a day, to do health checks for all of them, it must connect to one hardware station at a time. There is no store-level health check. However, it's possible that this type of check can be done through Commerce Server extensibility.
+This feature supports network enabled payment terminals and receipt printers. Cash drawer support is provided by connecting the cash drawer via d/k port to the network enabled receipt printer.
+
+Out of box, this feature is supported by the [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3), but other payment connectors may be supported via the SDK. Receipt printers supported by this feature include Star Micronics network enabled receipt printers. 
+
+To set up Star receipt printers, use the Star Micronics Printer Utility to configure the device for use over the network. This utility will also provide the IP address of the device. 
+
+To set up Epson receipt printers, use the Epson e-POS Print utility to set up the device to use network protocols. 
+
+For more information on setting up network peripherals, visit the [Network peripherals setup topic](https://go.microsoft.com/fwlink/?linkid=2129965).
+
+## Set up
+
+### Hardware profiles
+
+This feature requires two types of hardware profiles. The first is assigned to the register and the second is assigned to a hardware station at the store level and used to logically group network receipt printers and cash drawers. 
+
+#### Register hardware profile
+
+The hardware profile assigned to the register should be set up as follows:
+
+| Device | Type | Description | Additional details |
+| --- | --- | --- | ---|
+| Printer | Fallback | <Description> | Print profile should be the same as the print profile mapped to the network printer set up in the hardware profile assigned to the hardware station at the channel level. |
+| Cash drawer | Fallback | <Description> | **Use shared shift** = **Yes** |
+| EFT service | Adyen | N/A | To set up the out of box Adyen connector, visit [this article](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3). Other payment connectors can be supported through the [payments SDK](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/end-to-end-payment-extension). 
+
 
 ### Out-of-box health checks
 
