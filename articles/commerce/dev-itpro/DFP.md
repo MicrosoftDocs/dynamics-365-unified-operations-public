@@ -43,6 +43,8 @@ This topic describes out-of-box integrations that are available between Microsof
 |---|---|
 | Purchase protection | The Fraud Protection module that analyzes purchases for fraud, based on risk levels that are determined by the merchant. |
 | Storefront | The out-of-box e-commerce storefront that is provided with Commerce. |
+| DFP | Microsoft Dynamics 365 Fraud Protection |
+| ASLS | Azure Data Lake Storage is used to make Commerce data available for processing by the Loss Prevention module. |
 
 ## Overview
 
@@ -120,6 +122,38 @@ Next, select the Key Vault URL that is used to store the Fraud Protection secret
 
 > [!NOTE]
 > The Key Vault and Fraud Protection settings are company-specific. To enable Fraud Protection for production environments, you don't enter the Azure AD client ID through the user interface (UI). Instead, you must create and submit a [service request](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team). In the title of your request, clearly indicate that the request is to configure Fraud Protection purchase protection for a production Commerce or Retail environment.
+
+
+## Loss Prevention in Commerce
+
+### Availability
+
+- DFP Loss Prevention module will be generally available on July 1,2020. 
+- The out of box integration for Loss Prevention will be available in Commerce starting with monthly update 10.0.12. 
+
+### Loss Prevention overview
+
+Fraud stemming from return and discount policy abuse is a top source of shrinkage for retailers. Existing physical deterrents are easy to work around, so identifying loss through AI is critical to catching the most sophisticated forms of abuse. 
+
+The Loss prevention module from Dynamics Fraud Prevention analyzes in-store returns and discounts to identify anomalies that may be caused by return and discount policy abuse resulting in shrinkage. Using AI, the loss prevention module can identify patterns that are commonly missed, but indicative of abusive behavior, and uncover hard to detect sources of shrinkage.
+
+The Loss prevention module analyzes Commerce data available through ADLS. This is an opt-in integration and not enabled by default. 
+
+Once the data has been analyzed by the Loss Prevention module, the results are then surfaced in a [Dynamics Fraud Protection](https://go.microsoft.com/fwlink/?linkid=2131023) dashboard, where users can evaluate the results and observe trends that may be indicative of abusive behavior. 
+
+### Enabling the Loss Prevention integration with Commerce
+
+#### Set up Fraud Protection
+
+To set up Fraud Protection, [request a callback](https://dynamics.microsoft.com/get-started/?appname=fraudprotection) from a Dynamics 365 sales representative. When the merchant's Fraud Protection environment is available, and loss prevention settings have been configured, the setup can continue with enabling ADLS for the Commerce environment.
+
+#### Enable ADLS for your Commerce environment
+
+For the data to be available in ADLS, the service must be enabled for the Dynamics 365 Commerce environment. For details on enabling ADLS for your Commerce environment, visit [Enable ADLS in a Dynamics 365 Commerce environment](https://docs.microsoft.com/en-us/dynamics365/commerce/enable-adls-environment).
+
+#### Turn on the Loss Prevention feature
+
+The Loss Prevention integration can be enabled through the Feature Management workspace in Commerce. The feature is called "Dynamics 365 Fraud Protection (DFP) Loss Prevention". This is the only setup step within Commerce that is required to enable the integration. 
 
 ## Privacy notice
 
