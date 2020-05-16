@@ -83,8 +83,8 @@ The hardware profile assigned to the register should be set up as follows:
 
 | Device | Type | Device name | Additional details |
 | --- | --- | --- | ---|
-| Printer | Fallback | **Epson** or **Star** | Print profile should be the same as the print profile mapped to the network printer set up in the hardware profile assigned to the hardware station at the channel level. |
-| Cash drawer | Fallback | **Epson** or **Star** | **Use shared shift** = **Yes** |
+| Printer | Fallback | "**Epson**" or "**Star**" | Device name is case sensitive. Print profile should be the same as the print profile mapped to the network printer set up in the hardware profile assigned to the hardware station at the channel level. |
+| Cash drawer | Fallback | "**Epson**" or "**Star**" | Device name is case sensitive. **Use shared shift** = **Yes** |
 | EFT service | Adyen | N/A | To set up the out of box Adyen connector, visit [this article](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3). Other payment connectors can be supported through the [payments SDK](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/end-to-end-payment-extension). 
 | PIN pad | Network | **MicrosoftAdyenDeviceV001** | |
 
@@ -107,8 +107,8 @@ The hardware profile used to group network receipt printer and cash drawer shoul
 
 | Device | Type | Description | Additional details |
 | --- | --- | --- | ---|
-| Printer | Network | **Epson** or **Star** | Print profile should be the same as the one mapped to the printer set up in the hardware profile assigned to the register. |
-| Cash drawer | Fallback | **Epson** or **Star** | **Use shared shift** = **Yes** |
+| Printer | Network | "**Epson**" or "**Star**" | Device name is case sensitive. Print profile should be the same as the one mapped to the printer set up in the hardware profile assigned to the register. |
+| Cash drawer | Fallback | "**Epson**" or "**Star**" | Device name is case sensitive. **Use shared shift** = **Yes** |
 
 5. Click **Save**.
 
