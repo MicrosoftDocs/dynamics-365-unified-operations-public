@@ -44,7 +44,7 @@ This topic describes out-of-box integrations that are available between Microsof
 | Purchase protection | The Fraud Protection module that analyzes purchases for fraud, based on risk levels that are determined by the merchant. |
 | Storefront | The out-of-box e-commerce storefront that is provided with Commerce. |
 | DFP | Microsoft Dynamics 365 Fraud Protection |
-| ASLS | Azure Data Lake Storage is used to make Commerce data available for processing by the Loss Prevention module. |
+| ADLS | Azure Data Lake Storage is used to make Commerce data available for processing by the Loss Prevention module. |
 
 ## Overview
 
