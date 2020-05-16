@@ -5,7 +5,7 @@ title: Network peripheral support overview
 description: This topic provides an overview network peripherals supported in the store.
 author: rubendel
 manager: AnnBe
-ms.date: 05/15/2020
+ms.date: 05/16/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -52,25 +52,78 @@ The Modern POS application includes support for certain network peripheral devic
 
 ## Supported POS clients and devices
 
-This feature is supported with the Modern POS for Windows and Modern POS for Android point of sale clients. 
+This feature is supported with the **Modern POS for Windows** and **Modern POS for Android** point of sale clients. 
 
 This feature supports network enabled payment terminals and receipt printers. Cash drawer support is provided by connecting the cash drawer via d/k port to the network enabled receipt printer.
 
-Out of box, this feature is supported by the [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3), but other payment connectors may be supported via the SDK. Receipt printers supported by this feature include Star Micronics network enabled receipt printers. 
+Out of box, this feature is supported by the **[Dynamics 365 Payment Connector for Adyen]**(https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3), but other payment connectors may be supported via the SDK. Receipt printers supported by this feature include Star Micronics network enabled receipt printers. 
 
-To set up Star receipt printers, use the Star Micronics Printer Utility to configure the device for use over the network. This utility will also provide the IP address of the device. 
-
-To set up Epson receipt printers, use the Epson e-POS Print utility to set up the device to use network protocols. 
-
-For more information on setting up network peripherals, visit the [Network peripherals setup topic](https://go.microsoft.com/fwlink/?linkid=2129965).
+Out of box, network protocols for **Epson** and **Star Micronics** receipt printers are supported. Cash drawer connected to those printers via d/k port are supported via ESC/POS protocols.
 
 ## Set up
 
-### Hardware profiles
+### Adyen payment terminal
 
-This feature requires two types of hardware profiles. The first is assigned to the register and the second is assigned to a hardware station at the store level and used to logically group network receipt printers and cash drawers. 
+For details related to Adyen payment terminal setup, visit the [payment terminal setup section](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3#pos-payment-terminal) on the Adyen connector page.
 
-#### Register hardware profile
+### Epson or Star Micronics receipt printer with cash drawer
+
+#### Epson prerequisite
+
+If your printer supports **Epson ePOS-Print**,  refer to the Epson's product manuals for directions on how to access **Epson Printers Configuration Website** and enable **ePOS-Print**. When **ePOS-Print** is configured, the printer will print a chit that shows its IP address after a power cycle. 
+
+#### Star Micronics prerequisite 
+
+Network enabled Star Micronics printers that support ethernet can be configured to use network protocols using the **Star Micronics Printer Utility**. Refer to documentation provided by Star Micronics for details around setting their devices up to support network printing. When the device is configured correctly, the IP address for the printer can be obtained through the UI for the printer utility. 
+  
+#### Hardware profile setup
+
+1. In Dynamics 365 Commerce, search for **Hardware profiles**.
+2. Click **New**
+3. Assign a hardware profile number, then provide a description. 
+4. In the device type fasttabs, set up the following:
+
+| Device | Type | Device name | Additional details |
+| --- | --- | --- | ---|
+| Printer | Network | **Epson** or **Star** (This is case sensitive) | Assign a printing profile |
+| Cash drawer | Network | **Epson** or **Star** (This is case sensitive)| **Use shared shift** = **Yes** if the cash drawer will be shared among different POS devices. |
+| EFT service | Adyen | N/A | To set up the out of box Adyen connector, visit [this article](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3). Other payment connectors can be supported through the [payments SDK](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/end-to-end-payment-extension). 
+| PIN pad | Network | **MicrosoftAdyenDeviceV001** | |
+
+
+Edit the Hardware Profile assigned the store/register you will be working with
+Step 4:  Under Printers Set the following:
+A.	Printer =  Network
+B.	Device Name =  Epson     (this is case sensitive) 
+Step 5:  Click Save
+ 
+***If using MPOS with Dedicated(IPC) hardware station follow  the below steps:
+
+Step 6a: Go to Retail Module > Channel Setup > POS Setup > Registers
+Step 7a:  Select the Register you are working with
+Step 8a: Click the Register Tab at the top > Select Configure IP Address
+Step 9a: Click Edit
+Step 10a: Set the IP Address for your Printer (Refer to your Epson Device manual for how to retrieve this information)
+
+**Note leave Port field blank
+
+Step 11a: Click Save
+ 
+***If using CPOS follow the below steps:
+
+Step 6b:  Go to Retail module > Channels > Retail Stores > All Retail Stores
+Step 7b:  Edit the Retail Store you are working with
+Step 8b:  In the Hardware Station Fast Tab > Select the Shared hardware Station record 
+Step 9b: Click Configure IP Addresses
+Step 10b: Set the IP Address for your Printer (Refer to your Epson Device manual for how to retrieve this information)
+
+**Note leave Port field blank
+
+Step 11b: Click Save
+ 
+Step 12: Execute the 1070 & 1090 sync job to push this data out to your channel database. 
+
+
 
 The hardware profile assigned to the register should be set up as follows:
 
@@ -81,7 +134,7 @@ The hardware profile assigned to the register should be set up as follows:
 
 | Device | Type | Device name | Additional details |
 | --- | --- | --- | ---|
-| Printer | Fallback | **Epson** or **Star** | Print profile should be the same as the print profile mapped to the network printer set up in the hardware profile assigned to the hardware station at the channel level. |
+| Printer | Network | **Epson** or **Star** | Print profile should be the same as the print profile mapped to the network printer set up in the hardware profile assigned to the hardware station at the channel level. |
 | Cash drawer | Fallback | **Epson** or **Star** | **Use shared shift** = **Yes** |
 | EFT service | Adyen | N/A | To set up the out of box Adyen connector, visit [this article](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3). Other payment connectors can be supported through the [payments SDK](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/end-to-end-payment-extension). 
 | PIN pad | Network | **MicrosoftAdyenDeviceV001** | |
