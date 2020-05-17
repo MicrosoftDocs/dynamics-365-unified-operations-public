@@ -56,3 +56,7 @@ Here are a few suggestions that can assist you whe creating new policies for exp
 ## When to evaluate policies
 
 In expense management parameters, there is an option to either evaluate expense management policies when a line is saved or when an expense report is submitted. If you choose to evaluate when a line is saved this ensures that users have earlier visibility into what they need to do to complete their expense report all at once. Otherwise, you can delay policy evaluation and save time if you have validation occur at the end, during submission to workflow.
+
+## Policy evaluation for Intercompany Scenarios
+
+Expense management policies are evaluated against the source entity by default. For Intercompany scenarios, you can set up the policy to be evaluated against destination entity (borrowing entity) instead. In order to run the policies against destination entity, turn on the feature "Evaluate Expense policy against borrowing legal entity  " from the Feature Management workspace. 	
