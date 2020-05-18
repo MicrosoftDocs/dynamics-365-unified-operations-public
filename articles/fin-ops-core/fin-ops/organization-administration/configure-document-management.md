@@ -5,7 +5,7 @@ title: Configure document management
 description: This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 04/29/2020
+ms.date: 05/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -164,7 +164,7 @@ The **Docu** class exposes the following two delegates, for which handlers can b
 -  **Docu.delegateScanDeletedDocument()** This delegate applies the file scanning logic on documents in the attachments recycle bin when a user attempts to preview or download a file. The corresponding action will fail if the scanning service deems the file to be malicious.  
 
 ### Implementation details
-Boilerplate code for the two handlers are shown in an example ScanDocuments class below. For general information on implementing handlers for delegates, see [EventHandlerResult classes in request or response scenarios](../../dev-tools/event-handler-result-class.md).
+Boilerplate code for the two handlers are shown in an example ScanDocuments class below. For general information on implementing handlers for delegates, see [EventHandlerResult classes in request or response scenarios](../../dev-itpro/dev-tools/event-handler-result-class.md).
 
     public final class ScanDocuments
     {
