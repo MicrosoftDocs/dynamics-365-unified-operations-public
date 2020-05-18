@@ -2699,6 +2699,22 @@
           href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
         - name: Set up a work template for purchase orders
           href: warehousing/tasks/set-up-work-template-purchase-orders.md
+      - name: Shipment consolidation policies
+        items:
+        - name: Shipment consolidation policies
+          href: warehousing/about-shipment-consolidation-policies.md
+        - name: Configure shipment consolidation policies
+          href: warehousing/configure-shipment-consolidation-policies.md
+        - name: Scenario 1 - Consolidate shipments when they are released to the warehouse by using Automatic release of sales orders
+          href: warehousing/consolidate-shipments-automatic.md
+        - name: Scenario 2 - Consolidate shipments when the shipment consolidation policy is overridden from the Release to warehouse page
+          href: warehousing/consolidate-shipments-release-to-warehouse-override.md
+        - name: Scenario 3 - Consolidate shipments by using Release to warehouse from the load planning workbench
+          href: warehousing/consolidate-shipments-load-planning-workbench.md
+        - name: Scenario 4 - Consolidate shipments by using the shipment consolidation workbench
+          href: warehousing/consolidate-shipments-manual-workbench.md
+        - name: Scenario 5 - Consolidate shipments manually by using the Consolidate shipments page
+          href: warehousing/consolidate-shipments-manual-form.md
     - name: Supply Chain Management development 
       items:
       - name: Gantt control development guide
