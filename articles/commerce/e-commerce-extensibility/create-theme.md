@@ -36,9 +36,9 @@ This topic describes how to create a new theme for a Microsoft Dynamics 365 Comm
 
 ## Overview
 
-The Dynamics 365 Commerce online software development kit (SDK) allows the creation of custom themes that can be applied to your online site and shared across sites within a single tenant if desired.
+The Dynamics 365 Commerce online software development kit (SDK) lets you create custom themes that can be applied to your online site. They can also be shared across the sites in a single tenant if desired.
 
-After a theme is created and uploaded to your sandbox or production environment, you can then use Commerce site builder to set the theme on your site (or sites) so that when an online page is rendered, the appropriate theme is applied. In this way, modules will have a consistent look and feel across site pages.
+After a theme is created and uploaded to your sandbox or production environment, you can use Commerce site builder to set the theme on your site (or sites). Then, when an online page is rendered, the appropriate theme is applied. In this way, modules will have a consistent look and feel across site pages.
 
 Themes contain Sassy Cascading Style Sheet (SCSS) files that you can use to style your online site and individual modules. They can also optionally contain the following extensions:
 
