@@ -86,10 +86,10 @@ The **General** FastTab lets you configure each of the various options available
 - **Allow workers to set personal filters** - 
 - **Allow locking the touchscreen** -
 - **Screen lock duration** -
-- **Production unit** - 
-- **Resource group** - 
-- **Resource** - 
-- **Generate license plate** - 
+- **Production unit** - Select a production unit as a default filter criteria for the assigned jobs shown for the user of the job card device. Only jobs that are scheduled on resources grouped under the selected production unit will be shown in the device.
+- **Resource group** - Select a Resource group as a default filter criteria for the assigned jobs shown for the user of the job card device. Only jobs that are scheduled on resources grouped under the selected resource group will be shown in the device.
+- **Resource** - Select a Resource as a default filter criteria for the assigned jobs shown for the user of the job card device. Only jobs that are scheduled on the selected resource will be shown in the device. 
+- **Generate license plate** - Select this option to generate a new license plate when the user does report as finished on the job card device. The license plate number is generated from a number sequence set up in the warehouse parameter page. If this option is not selected the user will have to specify an existing license plate during registration of report as finsihed.
 - **Print label** - 
 
 ## Assigned users
