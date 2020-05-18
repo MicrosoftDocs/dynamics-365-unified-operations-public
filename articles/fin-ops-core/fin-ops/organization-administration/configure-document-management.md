@@ -157,7 +157,7 @@ When attachment recovery is enabled, attachments can be recovered in one of thre
 3. In **System administration** > **Inquiries**, the **Deleted attachments** page provides access to the list of deleted attachments that can be recovered for any record. The deleted attachments can be opened for review, permanently deleted, or restored.
 
 ## Scanning attachments for viruses and malicious code
-When working with attachments, you may want the ability to scan the files for viruses and malicious code. While Finance and Operations does not provide this capability out-of-the-box, extension points have been added that allow customers to integrate the file scanning software of their choice into the attachments space. A similar extension point has been added for file upload; see the [File upload control]() article for more details.
+When working with attachments, you may want the ability to scan the files for viruses and malicious code. While Finance and Operations does not provide this capability out-of-the-box, extension points have been added that allow customers to integrate the file scanning software of their choice into the attachments space. A similar extension point has been added for file upload; see the [File upload control](../../dev-itpro/user-interface/file-upload-control.md) article for more details.
 
 The **Docu** class exposes the following two delegates, for which handlers can be implemented for document scanning: 
 -  **Docu.delegateScanDocument()** This delegate applies scanning for an existing document attachment when a user attempts to preview or download the attachment. The corresponding action will fail if the scanning service deems the file to be malicious.  
