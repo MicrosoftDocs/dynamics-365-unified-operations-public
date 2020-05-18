@@ -41,7 +41,7 @@ Inventory settings specify if inventory should be checked before products are ad
 
 Microsoft Dynamics 365 Commerce provides on-hand availability for products. For details on how estimated on-hand availability is calculated, see [Calculate inventory availability for retail channels](calculated-inventory-retail-channels.md).
 
-Inventory thresholds and ranges can be defined in Commerce for a product or category. These ranges help define inventory settings that are in stock vs. low stock. <!--For details, see [TBD](tbd)-->.
+Inventory thresholds and ranges can be defined in Commerce for a product or category. These ranges help define inventory settings that are in stock vs. low stock. <!--For details, see [TBD](tbd).-->
 
 ## Inventory settings 
 
@@ -54,6 +54,7 @@ Inventory settings in Dynamics 365 Commerce are defined in site builder under **
 The **Out of stock threshold** property is a legacy option. When this property is selected, the inventory count is determined from the **Total Available** property results but the threshold is defined by the **Out of stock threshold** numeric setting (see below). This threshold setting applies to all products across an e-Commerce site. If inventory is below the threshold number, the product is considered to be out of stock, otherwise it is considered to be in stock. The capabilities of this legacy setting option are limited and it is not recommended for use with release versions 10.0.12 and later.
 
 **Inventory ranges** - This setting defines which inventory range messages are displayed on site modules, and is only applicable if either the **Total Available** or **Physical Available** properties are selected for the **Inventory level based on** setting. The property options for this setting are **All**, **Low and out of stock**, and **Out of stock**. 
+
     - When **All** is selected, all inventory ranges from in stock ("Available") to "Out of stock" will be displayed.
     - When **Low and out of stock** is selected, all ranges except in stock ("Available") will be displayed. 
     - When **Out of stock** is selected, only the "Out of stock" message will be displayed.
