@@ -61,21 +61,27 @@ The following image shows an example of an accordion module used to organize inf
 | Expand by default  | True/False | If True, this accordion item will be expanded by default when the page is loaded|
 
 
-## Add a accordion module to a page
+## Add an accordion module to a test page
 
-To add a accordion module to a page and set its properties in site builder, follow these steps.
+To add a accordion module to a test page and set its properties in site builder, follow these steps.
 
-1. Create a new page *Store faq* using Marketing template in Fabrikam or any template without restrictions
-1. In the **Default page** add a Container
-1. To the Container, add Accordion module
-1. In the Accordion module property panel, set a heading "Frequently asked questions"
-1. In the Accordion module property panel, set Expand All to true and set Interaction style to Independent.
-1. To the Accordion module, add an Accordion item. Add Title as "How do returns work".
-1. To the Accordion item, add a Text block module. Add a  paragraph of text such as "Returns need to be processed via call center. Contact 1-800-FABRIKAM for returns. Products have a 30-day return policy. Return must be initiated within this time frame."
-1. To the Accordion module, add a few more Accordion items and add more text block to each of them
-1. Select **Save**, and then select **Preview** to preview the page.
-1. Select **Finish editing** to check in the template, and then select **Publish** to publish it. 
-1. The Store Faq page will show an Accordion with the content that was curated.
+1. Create a new page named "Store FAQ" using the Fabrikam marketing template (or any template without restrictions).
+1. In the **Main** slot of the **Default page**, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Container** module, and then select **OK**.
+1. In the **Container** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Accordion** module, and then select **OK**.
+1. In the accordion module property pane on the right, next to the pencil symbol select **Heading**.
+1. In the **Heading** dialog box, enter "Frequently asked questions" under **Heading Text**, and then select **OK**.
+1. In the accordion module property pane, select the **Show expand all** check box, and then select **Independent** from the **Interaction style** drop down menu.
+1. In the **Accordion** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Accordion item** module, and then select **OK**.
+1. In the accordion module property pane, enter "How do returns work" under **Title**.
+1. In the **Accordion item** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Text block** module, and then select **OK**.
+1. In the text block module property pane, enter a paragraph of text such as "Returns need to be processed via call center. Contact 1-800-FABRIKAM for returns. Products have a 30-day return policy. Return must be initiated within this time frame.".
+1. In the **Accordion** slot, add a few more accordion item modules, each containing a text block with content added. 
+1. Select **Save**, and then select **Preview** to preview the page. The page will show an accordion module with the content that was added above.
+1. Select **Finish editing** to check in the page, and then select **Publish** to publish it. 
 
 ## Additional resources
 
