@@ -80,9 +80,9 @@ The **General** FastTab lets you configure each of the various options available
 
 - **Report quantity at clock-out** - 
 - **Lock employee** - 
-- **Barcode scanner** - 
+- **Barcode scanner** - When this option is selected a field for the identification of a produciton job is shown in the job card device screen. If the users s
 - **Use the actual time of registration** - 
-- **Single worker** - 
+- **Single worker** - Select this option to indicate that only one worker is using the job card device. When this option is selected the device will not return to the log-in screen when the user starts a job from the device. 
 - **Allow workers to set personal filters** - Select this option to allow the user of the job card device to apply a filter on the assigned jobs available on the device. The user can select between three filter criteria **Production unit**, **Resource group** and **Resource**. Only jobs that are scheduled on resources matching the selected filter criteria will be shown on the device.
 - **Allow locking the touchscreen** - Select this option to lock the job card device touchscreen for sanitazion. When enabled, a button called "Lock screen for sanitizing" is added to the device log-in page. When a user selects this button, the touchscreen temporarily locks to prevent unintended input and a countdown timer is shown. The user can now safely clean the device and the screen. When the countdown completes, the touchscreen automatically unlocks again. 
 - **Screen lock duration** - When the **Allow locking touchscreen** option is enabled, use this option so specify number of seconds the device touchscreen should be locked for sanitizing. Number of seconds must be greater than 5 and lower than 120 seconds.
