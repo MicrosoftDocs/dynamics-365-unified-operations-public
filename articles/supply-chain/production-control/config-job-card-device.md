@@ -38,6 +38,31 @@ ms.search.form: Add the form name for context help; I think that's (other?): Jmg
 
 <!-- KFM: Add a short intro. What is a job card device, what does it do? What will we do in this topic? -->
 
+## Enable new features in feature management
+
+A few of the settings described in this topic must be enabled on your system before they will be available to you. Use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to enable any or all of the following features as required:
+
+### Generate license plate
+
+To make this feature available, enable the following features in feature management (in order):
+
+1. 
+1. 
+
+### Print label
+
+To make this feature available, enable the following features in feature management (in order):
+
+1. 
+1. 
+
+### Allow locking of touch screen
+
+To make this feature available, enable the following features in feature management (in order):
+
+1. 
+1. 
+
 ## Manage and configure your devices
 
 To configure your job card devices, go to **Production control > Setup > Manufacturing execution > Configure job card for devices**. The **Configure job card for devices** page opens, which shows a list of existing devices. From here, you can do the following:
