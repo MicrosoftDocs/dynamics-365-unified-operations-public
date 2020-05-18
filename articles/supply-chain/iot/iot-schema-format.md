@@ -38,6 +38,10 @@ This topic describes how you should design your message schema for use in IoT In
 
 There are a few rules that apply to monitoring messages in IoT Intelligence.
 
++ Message schemas must be in JSON format.
+
++ A Unix milliseconds timestamp property must be present in the IoT hub message.
+
 + A message is tracked only if it contains all the properties defined in the scenario setup. For example, if you define **id**, **timestamp**, and **value** properties then this message is monitored:
 
     ```json
@@ -56,8 +60,6 @@ There are a few rules that apply to monitoring messages in IoT Intelligence.
             "timestamp": 1576016821614,
         }
     ```
-
-+ A Unix milliseconds timestamp property must be present in the IoT hub message.
 
 + IoT Intelligence ignores properties in the message that aren't defined in the scenario configuration. For example, if you define **id**, **timestamp**, and **value** properties, then IoT Intelligence will monitor all of these messages:
 
