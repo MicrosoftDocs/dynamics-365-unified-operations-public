@@ -90,7 +90,7 @@ The **General** FastTab lets you configure each of the various options available
 - **Resource group** - Select a Resource group as a default filter criteria for the assigned jobs shown for the user of the job card device. Only jobs that are scheduled on resources grouped under the selected resource group will be shown in the device.
 - **Resource** - Select a Resource as a default filter criteria for the assigned jobs shown for the user of the job card device. Only jobs that are scheduled on the selected resource will be shown in the device. 
 - **Generate license plate** - Select this option to generate a new license plate when the user does report as finished on the job card device. The license plate number is generated from a number sequence set up in the warehouse parameter page. If this option is not selected the user will have to specify an existing license plate during registration of report as finsihed.
-- **Print label** - 
+- **Print label** - Select this option to print a license plate label during register report as finished. The configuration of the label is setup in document routing: https://docs.microsoft.com/en-us/dynamics365/supply-chain/warehousing/document-routing-layout-for-license-plates
 
 ## Assigned users
 
