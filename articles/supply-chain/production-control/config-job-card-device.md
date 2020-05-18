@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure job card for devices
-description: XXXX <!-- KFM: Add description based on intro -->
+description: XXXX
 author: johanhoffmann
 manager: tfehr
 ms.date: 05/29/2020
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  <!-- KFM: Add the form name; I think that's (other?): JmgRegistrationSetupTouch  -->
+ms.search.form: XXXX
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
@@ -26,6 +26,13 @@ ms.author: johanho
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: Release 10.0.12
 ---
+<!-- KFM: In above meta data, add: 
+
+description: Add description based on intro
+ms.search.form: Add the form name for context help; I think that's (other?): JmgRegistrationSetupTouch
+
+ -->
+
 
 # Configure job card for devices
 
