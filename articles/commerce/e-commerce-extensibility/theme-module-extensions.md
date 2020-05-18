@@ -2,7 +2,7 @@
 # required metadata
 
 title: Extend a theme to add module extensions
-description: This topic describes how to extend a theme to add module extensions in Dynamics 365 Commerce. 
+description: This topic describes how to extend a theme to add module extensions in Microsoft Dynamics 365 Commerce. 
 author: samjarawan
 manager: annbe
 ms.date: 05/13/2020
@@ -32,27 +32,27 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to extend a theme to add module extensions in Dynamics 365 Commerce.
+This topic describes how to extend a theme to add module extensions in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-Dynamics 365 Commerce e-Commerce themes can optionally contain the following module extensions to the Commerce starter kit set of modules or to custom modules:
+Dynamics 365 Commerce e-Commerce themes can optionally contain the following module extensions to either the set of modules in the Commerce starter kit or custom modules:
 
 - Module view extensions that provide new layout views on a module
-- Definition extensions to change a module's configurations
-- Data action extensions to call additional data actions
+- Definition extensions that change a module's configurations
+- Data action extensions that call additional data actions
 
 ## Theme module view extensions
 
-Themes allow you to include customized module view extensions, which are generally used to change the default layout of a module for a selected theme. These customized module view extensions are supported for both starter kit modules and custom modules. For example, you may want to add a new button to a starter kit module to support additional features. By creating a view extension, you can avoid having to use the **clone** command line interface (CLI) command to create a full copy of the starter kit module. Also, in some cases you might want to extend the module definition and also add more configuration properties, slots, or resources. For more information about how to create definition extensions, see [Create a module view extension](#create-a-module-view-extension) below.
+Themes let you include customized module view extensions, which are generally used to change the default layout of a module for a selected theme. These customized module view extensions are supported for both starter kit modules and custom modules. For example, you might want to add a new button to a starter kit module to support additional features. By creating a view extension, you can avoid having to use the **clone** command-line interface (CLI) command to create a full copy of the starter kit module. In some cases, you might want to extend the module definition, and also add more configuration properties, slots, or resources. For more information about how to create definition extensions, see the [Create a module view extension](#create-a-module-view-extension) section of this topic.
 
 View extensions are stored under the **...\\src\\themes\\THEME\_NAME\\views** directory and follow a naming pattern that resembles the naming pattern for module views (**MODULE\_NAME.view.tsx**). For example, a view extension might be named **product-feature.view.tsx**. If a view extension exists in the selected theme, the React component will call it instead of the default view file. Therefore, view extensions can be written exactly like a module view that is used for a module.
 
-In general, you may want to examine the existing view file for one of the starter kit modules before you create a new view on it. You might also want to copy and paste additional code into the existing view file. To view the source code of a starter kit module view, open the **...\\node\_modules\\@msdyn365-commerce-modules** directory, and look for the module that you're interested in. You may have to fix the file path references for relative path imports.
+In general, you might want to examine the existing view file for one of the starter kit modules before you create a new view on it. You might also want to copy and paste additional code into the existing view file. To view the source code of a starter kit module view, open the **...\\node\_modules\\@msdyn365-commerce-modules** directory, and look for the module that you're interested in. You might have to fix the file path references for relative path imports.
 
 ### Create a module view extension
 
-The online SDK provides the **add-view-extension** CLI command. To create a new module view extension in Commerce, you run the command **yarn msdyn365 add-view-extension THEME\_NAME MODULE\_NAME**, replacing **THEME\_NAME** with the name of the theme to which you want to add the view extension, and **MODULE\_NAME** with the name of the module that you're extending.
+The online software development kit (SDK) provides the **add-view-extension** CLI command. To create a new module view extension in Commerce, you run the command **yarn msdyn365 add-view-extension THEME\_NAME MODULE\_NAME**, replacing **THEME\_NAME** with the name of the theme that you want to add the view extension to and **MODULE\_NAME** with the name of the module that you're extending.
 
 For example, run the following command to add a new file that is named **product-feature.view.ts** under the **spring-theme** theme's view directory.
 
@@ -78,15 +78,15 @@ export default (props: IProductFeatureViewProps) => {
 
 ## Theme definition extensions
 
-You may have scenarios where you must extend the config, slots, data action, or resources sections of a module definition, and then access those sections from the module view extension. Although you can add new configurations, slots, and resources, you can't modify existing ones. However, by using **disableConfigProperties**, you can disable the inheritance of some configurations.
+You might have scenarios where you must extend the **config**, **slots**, **dataActions**, or **resources** section of a module definition, and then access those sections from the module view extension. Although you can add new configurations, slots, and resources, you can't modify existing ones. However, by using a **disableConfigProperties** section, you can disable the inheritance of some configurations.
 
-Definition extensions are stored under the **definition-extensions** folder. They follow the naming pattern **MODULE\_NAME.definition.ext.json**, where **MODULE\_NAME** is the name of the module that you're extending.  
+Definition extensions are stored under the **definition-extensions** folder. They follow the naming pattern **MODULE\_NAME.definition.ext.json**, where **MODULE\_NAME** is the name of the module that you're extending.
 
 ### Create a module definition extension
 
-To create a new definition extension, create a new file under the **/src/themes/THEME\_NAME/definition-extensions** folder that matches the module that you're extending, for example **/src/themes/spring-theme/definition-extensions/product-feature.definition.ext.json**.
+To create a new definition extension, create a new file under the **/src/themes/THEME\_NAME/definition-extensions** folder that matches the module that you're extending. For example, the path of a definition extension might be **/src/themes/spring-theme/definition-extensions/product-feature.definition.ext.json**.
 
-The following example shows a theme definition extension file where several configurations, slots, and resources have been added in addition to a new data action. Notice that the **$type** property must be set to **"definitionExtension"**. In the definition file, you can declare new properties under the **dataActions**, **config**, **slots**, and **resources** nodes as shown below.  
+The following example shows a theme definition extension file where several configurations, slots, and resources have been added, in addition to a new data action. Notice that the **$type** property must be set to **"definitionExtension"**. In the definition file, you can declare new properties under the **dataActions**, **config**, **slots**, and **resources** nodes, as shown in this example.
 
 ```json
 {
@@ -141,9 +141,9 @@ The **disableConfigProperties** section can be used to define configuration fiel
 
 When the **yarn start** command is run, a new props file is automatically generated and appears in the definition extension directory. This file includes the merge of the parent module and the extended module, based on the properties and rules that are defined in the definition extension file.
 
-If you're using a definition extension together with a module view extension, you must add the reference to the new automatically-generated file in your view file to take advantage of the new definition changes.
+If you're using a definition extension together with a module view extension, you must add the reference to the new automatically generated file in your view file to take advantage of the new definition changes.
 
-The following example shows the addition of the new automatically-generated file. It also imports the module data file if that is required.
+The following example shows the addition of the new automatically generated file. This example also imports the module data file if it's required.
 
 ```typescript
 import * as React from 'react';
@@ -163,9 +163,9 @@ export default (props: IProductFeatureViewProps & IProductFeatureProps<{}>) ) =>
 
 ### Data action extensions
 
-Any additional data actions added to the module theme definition extension file will be fired upon page load for pages that use the module when the theme is selected. A data action added to a module theme extension will be called before data actions defined on the original module.
+After a theme is selected, any additional data actions that are added to the module theme definition extension file are triggered when pages that use the module are loaded. Any data actions that are added to a module theme extension are called before data actions that are defined on the original module.
 
-The return data from a data action call must be declared in a **THEME\_NAME.data.ts** file under the themes **/views** directory. The example below shows a file structure of a theme that calls a data action called **cart-extension.action**. Notice that the new data action is included in the **actions** folder. The example definition file above shows an additional data action **cart-extension** that is called using a relative path from within the **&#42;.definition.ext.json** file.
+The return data from a data action call must be declared in a **THEME\_NAME.data.ts** file under the theme's **/views** directory. The following example shows the file structure of a theme that calls a data action that is named **cart-extension.action**. Notice that the new data action is included in the **actions** folder. The example definition extension file that was shown earlier includes an additional data action, **cart-extension**, that is called by using a relative path from within the **\*.definition.ext.json** file.
 
 
 ```text
@@ -183,7 +183,7 @@ __|__|__|__|__product-feature.data.ts
 __|__|__|__|__product-feature.view.tsx
 ```
 
-Data returned from a data action must be assigned to a variable declared in the **MODULE\_NAME.data.ts** file that is located under the **views** directory. The name of the variable must match the name provided in the **dataAction** section of the module definition extension file. In the following example, note that the variable name **cartNameExtension** matches the variable name provided in the definition extension file example above.  
+Data that is returned from a data action must be assigned to a variable that is declared in the **MODULE\_NAME.data.ts** file under the **views** directory. The name of the variable must match the name that is provided in the **dataAction** section of the module definition extension file. In the following example, notice that the variable name **cartNameExtension** matches the variable name that is provided in the example definition extension file that was shown earlier.
 
 ```typescript
 import { AsyncResult } from '@msdyn365-commerce/retail-proxy';
@@ -194,7 +194,7 @@ export interface ICartExtensionData {
 }
 ```
 
-The module view file can now consume the data returned from the new data action by importing the new interface, as in the following example for **product-feature.view.tsx**.
+To consume the data that is returned from the new data action, the module view file can now import the new interface, as shown in the following example for **product-feature.view.tsx**.
 
 ```typescript
 import * as React from 'react';
