@@ -45,7 +45,7 @@ This topic explains how to install the IoT Intelligence add-in in Microsoft Dyna
 
     + **Tenant ID** – In the Azure portal, go to the key vault, and then, in the left navigation pane, select **Overview**, and copy the **Directory ID** value. Paste that value in the **Setup add-in** dialog box.
     + **IoT Event Hub-compatible endpoint Key Vault URI** – Go to the key vault, and then, in the left navigation pane, select **Overview**, and copy the **DNS name** value. Paste that value in the **Setup add-in** dialog box.
-    + **IoT Event Hub-compatible endpoint secret name** – Go to the key vault, and then, in the left navigation pane, select **Secrets**, and copy the name of the secret where the connection string for the IoT hub is stored. Paste that value in the **Setup add-in** dialog box.
+    + **IoT Event Hub-compatible endpoint secret name** – Go to the key vault, and then, in the left navigation pane, select **Secrets**, and copy the name of the secret where the event hub connection string for the IoT hub is stored. Paste that value in the **Setup add-in** dialog box.
     + **Redis cache key vault URI** – Go to the key vault, and then, in the left navigation pane, select **Overview**, and copy the **DNS name** value. Paste that value in the **Setup add-in** dialog box.
     + **Redis cache endpoint secret name** – Go to the key vault, and then, in the left navigation pane, select **Secrets**, and copy the name of the secret where the connection string for the Redis cache is stored. Paste that value in the **Setup add-in** dialog box.
 
