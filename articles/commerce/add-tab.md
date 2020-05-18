@@ -2,7 +2,7 @@
 # required metadata
 
 title: Tab module 
-description: This topic covers Tab module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
+description: This topic covers tab modules and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 manager: annbe
 ms.date: 05/25/2020
@@ -31,37 +31,34 @@ ms.dyn365.ops.version:
 
 # Tab module
 
-
 [!include [banner](includes/banner.md)]
 
-This topic covers Tab module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
+This topic covers tab modules and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 
 ## Overview
-Tab module is used to organize information within tabs on a page. It can be used on any page that requires information to be presented in tabs.
 
-Below is an example of tabs.
+Tab modules are container-like modules used to organize information within tabs on a site page, and can be used on any page that requires information to be presented in tabs.
+
+A tab module can have one or more tab item modules added to it, with each tab item module representing a single tab. Within each tab item module, one or more modules can be added. There are no restrictions on the type of modules that can be added to tab item modules.
+
+The following image shows an example of a tabs module on a site page with the **Shipping** tab selected.
 
 ![Example of a tab module](./media/ecommerce-tab.PNG)
-
-## Details
-**Tab** is a container-like module that allows one or more **Tab item** modules to be added to it. Each Tab item represents a tab. Within each Tab item,  one or more modules can be added. There are no restrictions on the type of modules that can be added within a Tab item.
-
 
 ## Tab module properties
 
 | Property name  | Values | Description |
 |----------------|--------|-------------|
-| Heading          | Heading| A heading can be provided to the Tab module|
-| Active tab index  | Number | This defines the tab index that should be active by default on page load. If no index is provided, it defaults to first tab as the active tab |
+| Heading          | Text | This property specifies an optional text heading for the tab module.|
+| Active tab index  | Number | This property specifies the tab index that should be active by default on page load. If no tab index is provided, it defaults to the first tab item as the active tab. |
 
 ## Tab item module properties
 
 | Property name  | Values | Description |
 |----------------|--------|-------------|
-| Tite          | Text|  This defines the text for the tab item|
+| Title          | Text|  This property specifies the title text for the tab item module.|
 
-
-## Add a Tab module to a new page
+## Add a tab module to a page
 
 To add a Tab module to a page and set the properties, follow these steps
 1. Create a new page *Store policies page* using Marketing template in Fabrikam or any template without restrictions
