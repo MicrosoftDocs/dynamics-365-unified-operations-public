@@ -5,7 +5,7 @@ title: Grid capabilities
 description: This topic describes several powerful features of the grid control. The new grid feature must be enabled to have access to these capabilities. 
 author: jasongre
 manager: AnnBe
-ms.date: 04/23/2020
+ms.date: 05/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -97,7 +97,7 @@ To support this new behavior, a new column for the row status has been added to 
 
 - **Blank** – No status image indicates that the row has been successfully saved by the system.
 - **Processing pending** – This status indicates that the changes in the row haven't yet been saved by the server but are in a queue of changes that must be processed. Before you take action outside the grid, you must wait for all the pending changes to be processed. Additionally, the text in these rows is italicized to indicate the unsaved status of the rows. 
-- **Invalid state** – This status indicates that some warning or message was triggered during the processing of that row, which may have prevented the the system from saving the changes in the row. In the old grid, if the save was unsuccessful, you were forced back into the row to fix the issue immediately. However, with the new grid, you're notified that a validation issue was encountered, but you can decide when you want to fix any issues in the row. When you're ready to fix the issue, you can manually move focus back to the row. Alternatively, you can select the **Fix this issue** action. This action immediately moves focus back to the row that has the issue, and lets you make edits inside or outside the grid. Note that the processing of subsequent pending rows is stopped until this validation warning is resolved. 
+- **Invalid state** – This status indicates that some warning or message was triggered during the processing of that row, which may have prevented the system from saving the changes in the row. In the old grid, if the save was unsuccessful, you were forced back into the row to fix the issue immediately. However, with the new grid, you're notified that a validation issue was encountered, but you can decide when you want to fix any issues in the row. When you're ready to fix the issue, you can manually move focus back to the row. Alternatively, you can select the **Fix this issue** action. This action immediately moves focus back to the row that has the issue, and lets you make edits inside or outside the grid. Note that the processing of subsequent pending rows is stopped until this validation warning is resolved. 
 - **Paused** – This status indicates that processing by the server is paused because validation of the row triggered a pop-up dialog box that requires user input. Because the user might be entering data in some other row, the pop-up dialog box isn't immediately presented to that user. Instead, it will be presented when the user chooses to resume processing. This status is accompanied by a notification that informs the user about the situation. The notification includes a **Resume processing** action that will trigger the pop-up dialog box.  
     
 When users are entering data ahead of the place where the server is processing, they can expect a few degradations in the data entry experience, such as a lack of lookups, control-level validation, and entry of default values. Users who need a drop-down list to find a value are encouraged to wait for the server to catch up to the current row. Control-level validation and entry of default values will also occur when the server processes that row.   
