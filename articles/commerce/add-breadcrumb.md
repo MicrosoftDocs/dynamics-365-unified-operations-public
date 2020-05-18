@@ -68,18 +68,19 @@ The module relies on the **Breadcrumb display type on PDP** feature, which is de
 
 To add a breadcrumb module to a PDP and set the required properties, follow these steps.
 
-1. Go to Site settings/Extension and choose a **Breadcrumb style for PDP**. In this e.g. choose "Category hierarchy only" type
-1. Go to **Templates**, and choose the PDP template 
-1. In the Container for the Buy Box, add the Breadcrumb module. 
+1. Go to **Site Settings /> Extensions** and under **Breadcrumb display type on PDP**, select "Show category hierarchy" from the drop down menu.
+1. Go to **Templates**, and select the PDP template.
+1. In the **Container** slot that contains the buy box module, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Breadcrumb** module, and then select **OK**.
 1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.
-1. If you have a page for PDP, open the page or create a new page for PDP
-1. In the **Container** for the BuyBox, add a module
-1. In the **Add Module** dialog box, under **Select Modules**, select the Breadcrumb module, and then select **OK**.
-1. In the outline tree on the left, select the Breadcrumb module
-1. In the properties pane on the right, select a Root, define root as the **Home** page
+1. Go to **Pages** and open a PDP page that uses the PDP template. If a PDP page doesn't yet exist, create one. 
+1. In the **Container** slot that contains the buy box module, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Breadcrumb** module, and then select **OK**.
+1. In the properties pane of the **Breadcrumb** slot, select **Link text** under **Root**.
+1. In the **Link text** dialog box, enter "Home", and then select **+Add a link** under **Link target**.
+1. In the **Add a link** dialog box, select a link for the breadcrumb root, and then select **OK**. 
 1. Select **Save**, and then select **Preview** to preview the page.
 1. Select **Finish editing** to check in the template, and then select **Publish** to publish it. 
-
 
 ## Additional resources
 
