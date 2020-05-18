@@ -46,15 +46,15 @@ A few of the settings described in this topic must be enabled on your system bef
 
 To make this feature available, enable the following features in feature management (in order):
 
-1. 
-1. 
+1. *License plate for reporting as finished added to the Job Card Device*
+1. *Enable automatic generation of license plate number when reporting as finished in the job card device*
 
 ### Print label
 
 To make this feature available, enable the following features in feature management (in order):
 
-1. 
-1. 
+1. *License plate for reporting as finished added to the Job Card Device*
+1. *Print label from Job Card Device*
 
 ### Allow locking of touch screen
 
