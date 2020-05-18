@@ -5,7 +5,7 @@ title: Task recorder resources
 description: This topic describes how to use Task recorder to record business processes.
 author: jasongre
 manager: AnnBe
-ms.date: 04/27/2020
+ms.date: 05/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -174,7 +174,7 @@ Titles and notes provide places for user-specified text to be associated with a 
 
 ### Change recorded values
 
-Starting in 10.0.12, you can adjust the values recorded in basic input controls (including simple text, numeric, date, and picklist fields) without having to re-record those steps. Notably, lookup controls and reference groups are not currently supported.  
+Starting in version 10.0.12, you can adjust the values recorded in basic input controls (including simple text, numeric, date, and picklist fields) without having to re-record those steps. Notably, lookup controls and reference groups are not currently supported.  
 
 ### Hide from task guide
 
