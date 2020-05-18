@@ -5,7 +5,7 @@ title: Set up POS hybrid app on Android and iOS
 description: This topic shows how to set up the POS hybrid app on Android and iOS.
 author: mugunthanm 
 manager: AnnBe
-ms.date: 03/11/2020
+ms.date: 05/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -109,7 +109,7 @@ Out of the box, the hybrid Android app supports using payment terminals and rece
 | --- | --- |
 | Payment terminals | Any supported by the [Adyen Payment Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api) through the Dynamics 365 Payment Connector for Adyen. |
 | Receipt printer | Network enabled Epson printers which support the Epson SOAP HTTP interface. Network enabled Star Micronics printers |
-| Cash drawer | **New for 10.0.8** Cash drawers connected to network enabled printers via d/k port. |
+| Cash drawer | Introduced in Commerce version 10.0.8: Cash drawers connected to network enabled printers via d/k port. |
 
 Support for other payment processors and peripheral devices can be implemented by ISVs through the Payments and Hardware SDKs. 
 
