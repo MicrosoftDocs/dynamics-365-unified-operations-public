@@ -141,56 +141,62 @@ This section maintains a list of known issues for the new grid control while the
 
 - Card lists that were rendered as multiple columns are now rendered as a single column.
 - Grouped lists aren't rendered as groups or in separate columns.
-- Tooltips aren't shown for images.
-- The gridlines display doesn't work for all field types.
+
+### Fixed as part of 10.0.13
+
+> [!Note]
+> The following information is being provided so that you can plan accordingly. For more information about the targeted release schedule of version 10.0.13, see [Service update availability](../../fin-ops/get-started/public-preview-releases.md).
+
+- [KB 4563317] Tooltips aren't shown for images.
 
 ### Fixed as part of 10.0.12
 
-> [!Note]
-> The following information is being provided so that you can plan accordingly. For more information about the targeted release schedule of version 10.0.12, see [Service update availability](../../fin-ops/get-started/public-preview-releases.md).
-
-- [KB 4562647] Focus resets to first control on the Publish dialog after adding a new row in the security roles grid
-- [KB 4562153] Multi-select checkboxes are not visible on list/card grids
-- [KB 4562141] Grid indices are off after adding a new record
-- [KB 4562646] Cannot click outside the grid sometimes after multi-selecting rows in the grid
-- [KB 4562151] The **Validate** and **Copy** Task recorder options aren't available for date/number controls. 
 - [KB 4558545] Table controls don't update the contents of displayed items.
 - [KB 4558570] Items are still shown on the page after the record has been deleted.
-- [KB 4558584] Negative numbers aren't rendered correctly.
 - [KB 4558572] Styling that is associated with the List Panel **ExtendedStyle** isn't applied.
 - [KB 4558573] Validation errors can't be fixed when the required change is outside the grid.
+- [KB 4558584] Negative numbers aren't rendered correctly.
+- [KB 4560726] Unexpected client error after swapping between lists using a List View control
+- [KB 4562141] Grid indices are off after adding a new record
+- [KB 4562151] The **Validate** and **Copy** Task recorder options aren't available for date/number controls. 
+- [KB 4562153] Multi-select checkboxes are not visible on list/card grids
+- [KB 4562646] Cannot click outside the grid sometimes after multi-selecting rows in the grid
+- [KB 4562647] Focus resets to first control on the Publish dialog after adding a new row in the security roles grid
+- [KB 4563310] Enhanced preview doesn't close after changing row
+- [KB 4563313] "Unexpected client error" in IE when selecting a value from a lookup
+- [KB 4563324] Navigation doesn't work after opening the Personnel Management workspace
 
 ### Fixed as part of 10.0.11
 
-- [KB 4562645] Exception when opening a lookup while running RSAT tests 
-- [KB 4562143] Fields aren't updated after a row change / Grid processing becomes stuck after row deletion.
-- [KB 4562143] Controls outside the grid aren't updated after the last record is deleted.
-- [KB 4558381] Negative numbers aren't rendered correctly / Users sometimes become stuck after validation issues are encountered.
+- [Issue 432458] Empty or duplicated lines are shown at the beginning of some child collections.
+- [KB 4549711] Lines in a payment proposal can't be removed correctly after the new grid control is enabled.
 - [KB 4558374] Records that require a polymorphic selector dialog box can't be created.
-- [KB 4558382] Unexpected client errors occur.
 - [KB 4558375] Help text isn't shown on columns in the new grid.
 - [KB 4558376] List Panel grids aren't rendered at the correct height in Internet Explorer.
 - [KB 4558377] Combo box columns that have **SizeToAvailable** width aren't rendered on some pages.
-- [KB 4549711] Lines in a payment proposal can't be removed correctly after the new grid control is enabled.
 - [KB 4558378] Drill-through sometimes opens the wrong record.
 - [KB 4558379] An error occurs when lookups are opened where **ReplaceOnLookup**=**No**.
 - [KB 4558380] The available space in the grid isn't filled immediately after part of the page is collapsed.
-- [Issue 432458] Empty or duplicated lines are shown at the beginning of some child collections.
+- [KB 4558381] Negative numbers aren't rendered correctly / Users sometimes become stuck after validation issues are encountered.
+- [KB 4558382] Unexpected client errors occur.
+- [KB 4558383] Controls outside the grid aren't updated after the last record is deleted.
 - [KB 4558587] Reference groups that have combo boxes for replacement fields don't show values.
+- [KB 4562143] Fields aren't updated after a row change / Grid processing becomes stuck after row deletion.
+- [KB 4562645] Exception when opening a lookup while running RSAT tests 
 
 ### Fixed as part of 10.0.10
 
 - [Issue 414301] Some data from previous lines disappears when new lines are created.
-- [KB 4562631] Time values aren't formatted correctly.
-- [KB 4549734] Active rows aren't treated as marked if the marking column is hidden.
 - [Bug 417044] There is no empty grid message for list-style grids.
-- [KB 4558367] Text selection is inconsistent when rows are changed.
-- [KB 4558372] The new grid becomes stuck in processing mode if the number of columns in content that is pasted in exceeds the number of remaining columns in the grid.
-- [KB 4558368] Multi-select via the keyboard is allowed in single-select scenarios.
 - [KB 4539058] Some grids (typically on FastTabs) sometimes aren't rendered (but they will be rendered if you zoom out).
+- [KB 4549734] Active rows aren't treated as marked if the marking column is hidden.
+- [KB 4549796] Values can't be edited in a grid when it's in view mode.
+- [KB 4558367] Text selection is inconsistent when rows are changed.
+- [KB 4558368] Multi-select via the keyboard is allowed in single-select scenarios.
 - [KB 4558369] Status images disappear in the hierarchical grid.
 - [KB 4558370] A new row isn't scrolled into view.
-- [KB 4549796] Values can't be edited in a grid when it's in view mode.
+- [KB 4558372] The new grid becomes stuck in processing mode if the number of columns in content that is pasted in exceeds the number of remaining columns in the grid.
+- [KB 4562631] Time values aren't formatted correctly.
 
 ### Quality update for 10.0.9/Platform update 33
 
