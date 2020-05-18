@@ -55,9 +55,9 @@ The **Out of stock threshold** property is a legacy option. When this property i
 
 **Inventory ranges** - This setting defines which inventory range messages are displayed on site modules, and is only applicable if either the **Total Available** or **Physical Available** properties are selected for the **Inventory level based on** setting. The property options for this setting are **All**, **Low and out of stock**, and **Out of stock**. 
 
-    - When **All** is selected, all inventory ranges from in stock ("Available") to "Out of stock" will be displayed.
-    - When **Low and out of stock** is selected, all ranges except in stock ("Available") will be displayed. 
-    - When **Out of stock** is selected, only the "Out of stock" message will be displayed.
+- When **All** is selected, all inventory ranges from in stock ("Available") to "Out of stock" will be displayed.
+- When **Low and out of stock** is selected, all ranges except in stock ("Available") will be displayed. 
+- When **Out of stock** is selected, only the "Out of stock" message will be displayed.
 
 **Out of stock threshold** - As noted above, this is a legacy setting. For this numeric setting to take effect, the **Out of stock threshold** property must be selected in the **Inventory level based on** setting.
 
