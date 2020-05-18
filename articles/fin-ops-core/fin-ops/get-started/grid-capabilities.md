@@ -156,15 +156,15 @@ This section maintains a list of known issues for the new grid control while the
 - [KB 4558572] Styling that is associated with the List Panel **ExtendedStyle** isn't applied.
 - [KB 4558573] Validation errors can't be fixed when the required change is outside the grid.
 - [KB 4558584] Negative numbers aren't rendered correctly.
-- [KB 4560726] Unexpected client error after swapping between lists using a List View control
-- [KB 4562141] Grid indices are off after adding a new record
-- [KB 4562151] The **Validate** and **Copy** Task recorder options aren't available for date/number controls. 
-- [KB 4562153] Multi-select checkboxes are not visible on list/card grids
-- [KB 4562646] Cannot click outside the grid sometimes after multi-selecting rows in the grid
-- [KB 4562647] Focus resets to first control on the Publish dialog after adding a new row in the security roles grid
-- [KB 4563310] Enhanced preview doesn't close after changing row
-- [KB 4563313] "Unexpected client error" in IE when selecting a value from a lookup
-- [KB 4563324] Navigation doesn't work after opening the Personnel Management workspace
+- [KB 4560726] Unexpected client error after swapping between lists using a List View control.
+- [KB 4562141] Grid indices are off after adding a new record.
+- [KB 4562151] The **Validate** and **Copy** task recorder options aren't available for date/number controls. 
+- [KB 4562153] Multi-select checkboxes are not visible on list/card grids.
+- [KB 4562646] Cannot click outside the grid sometimes after multi-selecting rows in the grid.
+- [KB 4562647] Focus resets to first control on the Publish dialog after adding a new row in the security roles grid.
+- [KB 4563310] Enhanced preview doesn't close after changing row.
+- [KB 4563313] "Unexpected client error" in Internet Explorer when selecting a value from a lookup.
+- [KB 4563324] Navigation doesn't work after opening the Personnel Management workspace.
 
 ### Fixed as part of 10.0.11
 
