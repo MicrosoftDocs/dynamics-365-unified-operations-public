@@ -5,7 +5,7 @@ title: Cart module
 description: This topic covers cart modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 04/13/2020
+ms.date: 05/25/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -57,7 +57,7 @@ The cart module has a **Heading** property that can be set to values such as **S
 Cart modules have the following settings that can be configured at **Site Settings \> Extensions**:
 
 - **Maximum quantity** – This property is used to specify the maximum number of each item that can be added to the cart. For example, a retailer might decide that only 10 of each product can be sold in a single transaction.
-- **Inventory** –  Refer to [Inventory settings in e-commerce](inventory-ecommerce.md) for details on the settings.
+- **Inventory** – See [Apply inventory settings](inventory-settings.md) for details on applying inventory settings.
 - **Back to shopping** – This property is used to specify the route for the **Back to shopping** link. The route can be configured at the site level, allowing retailers to take the customer back to the home page or any other page on the site.
 
 ## Commerce Scale Unit interaction
