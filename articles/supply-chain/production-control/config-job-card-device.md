@@ -83,9 +83,9 @@ The **General** FastTab lets you configure each of the various options available
 - **Barcode scanner** - 
 - **Use the actual time of registration** - 
 - **Single worker** - 
-- **Allow workers to set personal filters** - 
-- **Allow locking the touchscreen** -
-- **Screen lock duration** -
+- **Allow workers to set personal filters** - Select this option to allow the user of the job card device to apply a filter on the assigned jobs available on the device. The user can select between three filter criteria **Production unit**, **Resource group** and **Resource**. Only jobs that are scheduled on resources matching the selected filter criteria will be shown on the device.
+- **Allow locking the touchscreen** - Select this option to lock the job card device touchscreen for sanitazion. When enabled, a button called "Lock screen for sanitizing" is added to the device log-in page. When a user selects this button, the touchscreen temporarily locks to prevent unintended input and a countdown timer is shown. The user can now safely clean the device and the screen. When the countdown completes, the touchscreen automatically unlocks again. 
+- **Screen lock duration** - When the **Allow locking touchscreen** option is enabled, use this option so specify number of seconds the device touchscreen should be locked for sanitizing. Number of seconds must be greater than 5 and lower than 120 seconds.
 - **Production unit** - Select a production unit as a default filter criteria for the assigned jobs shown for the user of the job card device. Only jobs that are scheduled on resources grouped under the selected production unit will be shown in the device.
 - **Resource group** - Select a Resource group as a default filter criteria for the assigned jobs shown for the user of the job card device. Only jobs that are scheduled on resources grouped under the selected resource group will be shown in the device.
 - **Resource** - Select a Resource as a default filter criteria for the assigned jobs shown for the user of the job card device. Only jobs that are scheduled on the selected resource will be shown in the device. 
