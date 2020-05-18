@@ -74,7 +74,7 @@ The file upload control accepts the file and upload strategy in the client, and 
 [![File upload sequence diagram](./media/fileuploadcontrolusageanddesign1.png)](./media/fileuploadcontrolusageanddesign1.png)
 
 ## Scanning uploaded files for viruses and malicious code
-When uploading a file into the system, you may want to scan the file for viruses or malicious code before uploading. While Finance and Operations does not provide this capability out-of-the-box, an extension point has been added in 10.0.12 that allows customers to integrate the file scanning software of their choice into the file upload process. Similar extension points have been added for scanning attachments; see the [Configure document management](../../fin-ops/organization-administration/configure-document-management.md) article for more details. 
+When uploading a file into the system, you may want to scan the file for viruses or malicious code before uploading. While Finance and Operations apps do not provide this capability out-of-the-box, an extension point has been added in version 10.0.12 that allows customers to integrate the file scanning software of their choice into the file upload process. Similar extension points have been added for scanning attachments; see the [Configure document management](../../fin-ops/organization-administration/configure-document-management.md) article for more details. 
 
 In particular, the **FileUploadResultBase** class exposes the **delegateScanStream()** delegate, which applies to any file upload scenario where the **Upload strategy class** has been implemented. The upload will fail if the scanning service deems the file to be malicious.    
 
