@@ -95,4 +95,4 @@ Use the **Assigned users** FastTab to ... <!-- KFM: Describe this, why we have i
 
 ## Additional resources
 
-[Report production orders as finished](report-production-orders-as-finished.md)
+[Report as finished from the job card device](report-finished-job-device.md)
