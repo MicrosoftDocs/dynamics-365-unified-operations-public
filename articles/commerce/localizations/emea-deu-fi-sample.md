@@ -5,7 +5,7 @@ title:  Fiscal registration service integration sample for Germany
 description: This topic provides an overview of the fiscal integration sample for Germany.
 author: josaw
 manager: annbe
-ms.date: 05/13/2020
+ms.date: 05/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -33,22 +33,22 @@ ms.dyn365.ops.version: 10.0.12
 
 ## Introduction
 
-To meet local fiscal requirements for cash registers in Germany, the Dynamics 365 Commerce functionality for Germany includes a sample integration of the point of sale (POS) with an external fiscal registration service. The sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md). It's based on the [EFR (Electronic Fiscal Register)](https://www.efsta.eu/at/fiskalloesungen/oesterreich) solution from [EFSTA](https://www.efsta.eu/at/) and enables communication with the EFR service via the HTTPS protocol. The EFR service should be hosted on either the Retail Hardware station or a separate machine that can be connected to from the Hardware station. The sample is provided in the form of source code and is part of the Retail software development kit (SDK).
+To meet local fiscal requirements for cash registers in Germany, the Dynamics 365 Commerce functionality for Germany includes a sample integration of the point of sale (POS) with an external fiscal registration service. The sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md). It's based on the [EFR (Electronic Fiscal Register)](https://www.efsta.eu/at/fiskalloesungen/oesterreich) solution from [EFSTA](https://www.efsta.eu/at/) and enables communication with the EFR service via the HTTPS protocol. The EFR service should be hosted on either the Retail Hardware station or a separate machine that can be connected to from the hardware station. The sample is provided in the form of source code and is part of the Retail software development kit (SDK).
 
 Microsoft doesn't release any hardware, software, or documentation from EFSTA. For information about how to get the EFR solution and operate it, contact [EFSTA](https://www.efsta.eu/at/kontakt).
 
 
 ## Scenarios
 
-The following scenarios are covered by the fiscal registration service integration sample for Germany:
+The following scenarios are covered by the fiscal registration service integration sample for Germany.
 
 ### Sales operations
 
 - Registration of cash-and-carry sales and returns in the fiscal registration service:
     - The beginning of each transaction is registered in a **Technical security element (TSE)** connected to EFR.
-    - As a result of the transaction start registration a TSE assigns a **Transaction ID (TID)**.
-    - When a transaction is concluded on POS, it is registered with the same TID, that was assigned during registration of the transaction start. At that moment detailed transaction data is sent to the fiscal registration service. This data includes sales line information, and information about discounts, payments, and taxes.
-    - Capture a response from the fiscal registration service. The security data is received from TSE as a part of a response and saved in the transaction in the channel database. The security data consist of:
+    - As a result of the transaction start registration, a TSE assigns a **Transaction ID (TID)**.
+    - When a transaction is concluded on POS, it is registered with the same TID that was assigned during registration of the transaction start. At that momen,t detailed transaction data is sent to the fiscal registration service. This data includes sales line information, and information about discounts, payments, and taxes.
+    - It will capture a response from the fiscal registration service. The security data is received from TSE as a part of a response and saved in the transaction in the channel database. The security data consist of:
         - Transaction ID (TID)
         - Date and time of the transaction start
         - Date and time of the transaction end
@@ -64,7 +64,7 @@ The following scenarios are covered by the fiscal registration service integrati
 
 #### Notifying users about fiscal registration failures
 
-There are two ways how the fiscal registration service can notify users about failures occurred during the fiscal registration:
+There are two ways that the fiscal registration service can notify users about failures occurred during the fiscal registration:
 
 - Print additional information from response in receipts in the **Info message** field.
 - Display notifications from the fiscal service as a user message on POS.
@@ -74,8 +74,7 @@ There are two ways how the fiscal registration service can notify users about fa
 
 #### Printing receipts
 
-Printing receipts is mandatory in Germany.
-All receipts must contain at least the following information:
+Printing receipts is mandatory in Germany. All receipts must contain at least the following information:
 
 - Name and address of the company
 - Information about goods including their prices and quantities
@@ -91,18 +90,18 @@ All receipts must contain at least the following information:
 - Info message
 
 > [!NOTE]
-> Printing a QR-code in receipts is optional but highly recommended. For more information how to get QR-code being a part of response from the fiscal registration service, see the **EFR Guide [DE]** document published on the [EFSTA documentation](https://public.efsta.net/efr/) web-site.
+> Printing a QR-code in receipts is optional but highly recommended. For more information how to get QR-code as a part of response from the fiscal registration service, see the **EFR Guide [DE]** document published on the [EFSTA documentation](https://public.efsta.net/efr/) web-site.
 > **Info message** field in receipts displays a notification from the fiscal registration service, for example, if the signature device is broken.
 
-#### Void, suspend and recall transactions:
+#### Void, suspend, and recall transactions
 
-- Voided transaction is registered as a request to abort transaction in the fiscal registration service.
-- Suspended transaction is registered as a request to abort transaction in the fiscal registration service.
+- Voided transaction is registered as a request to terminate transaction in the fiscal registration service.
+- Suspended transaction is registered as a request to terminate transaction in the fiscal registration service.
 - Recall of suspended transaction is registered as beginning of a new transaction in the fiscal registration service.
 
 ### Non-sales transactions and shift closing
 
-The following non-sales transactions are registered as non-fiscal operations in the  fiscal registration service with the **NFS** tag:
+The following non-sales transactions are registered as non-fiscal operations in the fiscal registration service with the **NFS** tag:
 - Declare start amount
 - Float entry
 - Tender removal
@@ -116,8 +115,9 @@ The **Close shift** operation is also registered as a non-fiscal operation in th
 ### Data export and audit
 
 All transactions must be signed by a **Technical security element (TSE)** to ensure their integrity, authenticity and completeness and prevent manipulations with recorded data. 
+
 > [!WARNING]
-> Only certified TSE can be used. Please see the **EFR Guide [DE]** document published on the [EFSTA documentation](https://public.efsta.net/efr/) web-site to find what types and models of TSE are supported in the EFR solution. 
+> Only certified TSE can be used. Please see the **EFR Guide [DE]** document published on the [EFSTA documentation](https://public.efsta.net/efr/) website to find what types and models of TSE are supported in the EFR solution. 
 > For information about how to choose and obtain a TSE, contact [EFSTA](https://www.efsta.eu/at/kontakt).
 
 Support of the DSFinV-K export is required due to regulations in Germany. The DSFinV-K export can be triggered in the EFR solution. 
@@ -127,21 +127,25 @@ Support of the DSFinV-K export is required due to regulations in Germany. The DS
 
 ### Default data mapping
 
-The following default data mapping is included in the fiscal document provider configuration that is provided as part of the fiscal integration sample:
+The following default data mapping is included in the fiscal document provider configuration that is provided as part of the fiscal integration sample.
 
 - Tender type mapping:
 
     *1: 0; 2: 1; 3: 3; 4: 8; 5: 2; 6: 0; 7: 7; 8: 6; 9: 0; 10: 8; 11: 1*
+    
 > [!NOTE]
 > In each pair of values separated by ';' the first number refers to a payment method set up for the store, and the second value means a respective payment group in the EFR service represented by the 'PayG' attribute.
 
 - Value-added tax (VAT) rates mapping:
 
     *A: 19.00; B: 7.00; C: 10.70; D: 5.50; E: 0.00*
+    
 > [!NOTE]
 > In each pair of values separated by ';' the letter refers to a tax group in the EFR service represented by the 'TaxG' attribute, and the second value refers to the tax percentage.
+
 - Tax group for gift cards and deposits: *G*
 - Tax group for VAT exempt: *F*
+
 > [!WARNING]
 > Tax settings in the default data mapping are responsible for matching between tax settings in the system and tax groups in the EFR service. Printing tax groups in receipts also requires the **Code for printing** field being specified on the **Sales tax codes** page. 
 
@@ -151,18 +155,18 @@ The fiscal registration service supports only scenarios where sales tax is inclu
 
 A situation when more than one sales tax code is applied to the same transaction line is not supported in the fiscal service.
 
-Sales quotations are not supported in the fiscal integration framework and due to that these operations are not registered in the fiscal service.
+Sales quotations are not supported in the fiscal integration framework and as a result, these operations are not registered in the fiscal service.
 
 ## Set up Commerce for Germany
 
 This section describes the Commerce settings that are specific to and recommended for Germany. For more information set up information, see [Commerce home page](../index.md).
 
-To use the Germany-specific functionality, you must specify the following settings:
+To use the Germany-specific functionality, you must specify the following settings.
 
 - In the primary address of the legal entity, set the **Country/region** field to **DEU** (Germany).
 - In the POS functionality profile of every store that is located in Austria, set the **ISO code** field to **DE** (Germany).
 
-You must also specify the following settings for Germany. Note that you must run appropriate distribution jobs after you complete the setup.
+You must also specify the following settings for Germany. Be sure to run appropriate distribution jobs after you complete the setup.
 
 ### Set up VAT per German requirements
 
@@ -183,7 +187,7 @@ On the **All stores** page, update the store details. Specifically, set the foll
 
 ### Set up functionality profiles
 
-Set up POS functionality profiles:
+Set up POS functionality profiles.
 
 - On the **Receipt numbering** FastTab, set up receipt numbering by creating or updating records for the **Sale**, **Sales order**, and **Return** receipt transaction types.
 
@@ -270,14 +274,14 @@ For more information about how to work with receipt formats, see [Set up and des
 
 ### Configure fiscal integration
 
-Complete the fiscal integration setup steps as described in [Set up the fiscal integration for Commerce channels](setting-up-fiscal-integration-for-retail-channel.md):
+Complete the fiscal integration setup steps as described in [Set up the fiscal integration for Commerce channels](setting-up-fiscal-integration-for-retail-channel.md).
 
 - [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Note also the settings for the fiscal registration process that are [specific to this fiscal registration service integration sample](#set-up-the-registration-process).
 - [Set error handling settings](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
 > [!WARNING]
 > The error handling capabilities of the fiscal integration framework may be not fully aligned with the local fiscal regulations.
->    - It is not recommended to enable the **Continue on error** option on the **Fiscal registration process** page as all transactions must be properly registered even if the first attempt of the fiscal registration was not successful.
+>    - It is not recommended to enable the **Continue on error** option on the **Fiscal registration process** page, as all transactions must be properly registered even if the first attempt of the fiscal registration was not successful.
 >    - Before enabling **Skip** or **Mark as registered** option on the **Fiscal registration process** page, you should verify these changes of the fiscal registration process with your tax consultant or with the local tax office. 
 
 - [Enable manual execution of postponed fiscal registration](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
@@ -377,7 +381,7 @@ The Hardware station extension components are included in the Hardware station s
 
 ### Set up the registration process
 
-To enable the registration process, follow these steps to set up Headquarters. For more details, see [Set up the fiscal integration for Commerce channels](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
+To enable the registration process, follow these steps to set up Commerce Headquarters. For more details, see [Set up the fiscal integration for Commerce channels](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.
 2. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors**, and load the connector configuration. The file location is **RetailSdk\\SampleExtensions\\HardwareStation\\Extension.EFRSample\\Configuration\\ConnectorEFRSample.xml**.
@@ -444,13 +448,11 @@ The previous procedure enables the extensions that are components of the fiscal 
 
 The purpose of the extension that is a fiscal document provider is to generate service-specific documents and handle responses from the fiscal registration service.
 
-The CRT extension is **Runtime.Extensions.DocumentProvider.EFRSample**.
-For more details about the design of the fiscal integration solution, see [Overview of fiscal integration for Commerce channels](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
+The CRT extension is **Runtime.Extensions.DocumentProvider.EFRSample**. For more details about the design of the fiscal integration solution, see [Overview of fiscal integration for Commerce channels](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
 
 #### Request handler
 	
-There is a single **DocumentProviderEFRFiscalDEU** request handler for document provider, which is used to generate fiscal documents for the fiscal registration service.
-This handler is inherited from the **INamedRequestHandler** interface. The **HandlerName** method is responsible for returning the name of the handler. The handler name should match the connector document provider name that is specified in Headquarters.
+There is a single **DocumentProviderEFRFiscalDEU** request handler for document provider, which is used to generate fiscal documents for the fiscal registration service. This handler is inherited from the **INamedRequestHandler** interface. The **HandlerName** method is responsible for returning the name of the handler. The handler name should match the connector document provider name that is specified in Headquarters.
 
 The connector supports the following requests:
 
@@ -463,10 +465,10 @@ The **DocumentProviderFiscalEFRSampleGermany** configuration file is located i
 
 The following settings are added:
 
-- **VAT rates mapping** - mapping of tax percentage values, that are set up for the sales tax codes, to values of the **TaxG** attribute (Tax group) in requests sent to the fiscal service.
+- **VAT rates mapping** - mapping of tax percentage values that are set up for the sales tax codes, to values of the **TaxG** attribute (Tax group) in requests sent to the fiscal service.
 - **Tax group for gift cards and deposits** - value of the **TaxG** attribute in requests sent to the fiscal service based on operations with gift cards or deposits.
-- **Tender type mapping** - mapping of payment methods to values of the **PayG** attribute (Payment group) in requests sent to the fiscal service.
-- **Tax group for VAT exempt** - value of the **TaxG** attribute in requests sent to the fiscal service based on operations, that are exempt from tax obligations.
+- **Tender type mapping** - mapping of payment methods to values of the **PayG** attribute (payment group) in requests sent to the fiscal service.
+- **Tax group for VAT exempt** - value of the **TaxG** attribute in requests sent to the fiscal service based on operations that are exempt from tax obligations.
 - **Include customer data** - if this parameter is enabled, then requests to the fiscal service will contain information about customers such as their names and addresses, where a customer is added to a transaction.
 
 ### Hardware station extension design
@@ -477,8 +479,7 @@ The Hardware station extension is **HardwareStation.Extension.EFRSample**. The 
 
 #### Request handler
 
-The **EFRHandler** request handler is the entry point for handling requests to the fiscal registration service.
-The handler is inherited from the **INamedRequestHandler** interface. The **HandlerName** method is responsible for returning the name of the handler. The handler name should match the fiscal connector name that is specified in Headquarters.
+The **EFRHandler** request handler is the entry point for handling requests to the fiscal registration service. The handler is inherited from the **INamedRequestHandler** interface. The **HandlerName** method is responsible for returning the name of the handler. The handler name should match the fiscal connector name that is specified in Commerce Headquarters.
 
 The connector supports the following requests:
 
