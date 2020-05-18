@@ -36,6 +36,8 @@ ms.search.form: Add the form name for context help; I think that's (other?): Jmg
 
 # Configure job card for devices
 
+[!include [banner](../includes/banner.md)]
+
 <!-- KFM: Add a short intro. What is a job card device, what does it do? What will we do in this topic? -->
 
 ## Enable new features in feature management
