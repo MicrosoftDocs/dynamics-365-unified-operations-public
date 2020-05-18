@@ -5,7 +5,7 @@ title: Personalize the user experience
 description: This topic explains how you can personalize the app.
 author: jasongre
 manager: AnnBe
-ms.date: 04/13/2020
+ms.date: 05/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
