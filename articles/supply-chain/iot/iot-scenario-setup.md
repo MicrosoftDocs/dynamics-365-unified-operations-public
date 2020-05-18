@@ -51,7 +51,7 @@ To configure the scenario, follow these steps:
 
 1. Log into Supply Chain Management.
 2. Enable the IoT Intelligence feature flag. For more information, see [Feature management overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-3. Configure the metrics. For more information, see [How to configure metrics](iot-metrics-setup.md#how-to-configure-metrics).
+3. Configure the metrics. For more information, see [How to configure metrics](iot-metrics-setup.md#configure-metrics).
 4. Navigate to **Production control**.
 5. Navigate to **Setup \> IoT Intelligence \> Scenario management**.
 6. Click **Configure** on the **Equipment downtime** tile. The configuration wizard starts with the **Equipment sensor schema definition** page. The goal here is to setup the schema in Supply Chain Management to match the JSON format of the IoT messages. Multiple message schemas can be defined. For more information, see [Message schema formats for IoT Hub](iot-schema-format.md). In this example, the message payload contains a batch of messages with this format:
