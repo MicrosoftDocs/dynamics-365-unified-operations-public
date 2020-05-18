@@ -126,7 +126,7 @@ To enable direct hardware support for the hybrid Android app, set up a dedicated
 
 To set up the payment connector, follow the standard setup steps noted in the [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#setup-and-configuration). Skip the section labeled "Update the Modern POS or IIS Hardware Station configuration."
 
-For details on setting up network connected peripherals the docs [article dedicated to setting up those devices](https://go.microsoft.com/fwlink/?linkid=2129965).
+For details on setting up network connected peripherals the docs [Support for network peripherals](https://go.microsoft.com/fwlink/?linkid=2129965).
 
 ## Additional resources
 - [Payments FAQ](payments-retail.md)
