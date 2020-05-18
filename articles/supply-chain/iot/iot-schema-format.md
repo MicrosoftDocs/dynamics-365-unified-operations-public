@@ -81,7 +81,7 @@ There are a few rules that apply to monitoring messages in IoT Intelligence.
         },
     ```
 
-+ IoT Intelligence silently ignores messages that it doesn't monitor.
++ IoT Intelligence silently ignores messages that don't match the scenario configuration criteria.
 
 + You can define different schemas for different IoT Intelligence scenarios, or different schemas for different IoT Hub tasks unrelated to IoT Intelligence.
 
