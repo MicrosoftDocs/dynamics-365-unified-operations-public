@@ -84,7 +84,8 @@ The **General** FastTab lets you configure each of the various options available
 - **Use the actual time of registration** - 
 - **Single worker** - 
 - **Allow workers to set personal filters** - 
-- **Allow locking the touchscreen** - 
+- **Allow locking the touchscreen** -
+- **Screen lock duration** -
 - **Production unit** - 
 - **Resource group** - 
 - **Resource** - 
