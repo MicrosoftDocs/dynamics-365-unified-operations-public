@@ -58,21 +58,26 @@ The following image shows an example of a tabs module on a site page with the **
 |----------------|--------|-------------|
 | Title          | Text|  This property specifies the title text for the tab item module.|
 
-## Add a tab module to a page
+## Add a tab module to an example page
 
-To add a Tab module to a page and set the properties, follow these steps
-1. Create a new page *Store policies page* using Marketing template in Fabrikam or any template without restrictions
-1. In the **Default page** add a Container
-1. To the Container, add Tab module
-1. In the Tab module property panel, set a heading "Policies"
-1. To the Tab module, add an Tab item. Add Title as "Delivery".
-1. To the Tab item, add a Text block module. Add a few paragraphs of text explaining how Delivery works
-1. To the Tab module, add a few another Tab items called "Returns".
-1. To the "Returns" tab item, add a text block and add a few paragraphs of text explaining how Returns work
-1. Similarly, add few more tabs 
-1. Select **Save**, and then select **Preview** to preview the page.
-1. Select **Finish editing** to check in the template, and then select **Publish** to publish it. 
-1. The Store policies page will show an tab with the content that was curated.
+To add a tab module to an example page and set the properties, follow these steps.
+
+1. Create a new page named **Store policies page** using the Fabrikam marketing template (or any template without restrictions).
+1. In the **Main** slot of the **Default page**, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Container** module, and then select **OK**.
+1. In the **Container** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Tab** module, and then select **OK**.
+1. In the tab module property pane, next to the pencil symbol select **Heading**.
+1. In the **Heading** dialog box, enter "Policies" under **Heading Text**, and then select **OK**.
+1. In the **Tab** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Tab item** module, and then select **OK**.
+1. In the tab item module property pane, enter "Delivery" under **Title**.
+1. In the **Tab item** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Text block** module, and then select **OK**.
+1. In the text block module property pane, enter a paragraph of text explaining how deliveries work.
+1. In the **Tab** slot, add a few more tab item modules with titles, each containing a text block with content added. 
+1. Select **Save**, and then select **Preview** to preview the page. The page will show a tab module with the content that was added above.
+1. Select **Finish editing** to check in the page, and then select **Publish** to publish it. 
 
 ## Additional resources
 
