@@ -5,7 +5,7 @@ title: Self-service deployment overview
 description: This topic provides an overview of self-service deployment.
 author: rashmansur
 manager: AnnBe
-ms.date: 03/04/2020
+ms.date: 05/18/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -71,4 +71,4 @@ Customers using the self-service capabilities will see the following changes in 
 - Sub reports are no longer supported in document reports defined using the SSRS development tools. Application solutions that include sub reports will need to be recreated or replaced with solutions that take advantage of other reporting options supported by the service.
 
     > [!IMPORTANT]
-    > Support for sub report items has been re-introduced with the Platform Update 36 release. Customers dependent on solutions that include properly formatted sub report items can transition to self-service deployments running on PU36 or later.
+    > Support for sub report items has been re-introduced with the Platform update 36 release. Customers dependent on solutions that include properly formatted sub report items can transition to self-service deployments running on Platform update 36 or later.
