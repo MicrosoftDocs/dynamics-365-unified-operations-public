@@ -49,7 +49,7 @@ To configure your system to apply Planning Optimization that considers purchase 
 1. Go to **Master planning \> Setup \> Master planning parameters**, open the **Planned orders** tab, and make the following settings in the **Vendor** group:
     - **Find trade agreement** - Set this to **Yes** to include trade agreements in your master planning.
     - **Search criterion** - Choose which aspect of each purchase trade agreement to prioritize: **Minimum lead time** or **Lowest unit price**.
-1. Go to **Procurement and sourcing > Setup > Prices and discounts > Activate price/discount** and make sure **Vendor** is set to **Yes**. <!-- KFM: I put this here because it seems like a site-wide setting: is that right? Also, Vendor group, and all vendors, don't matter? -->
+1. Go to **Procurement and sourcing > Setup > Prices and discounts > Activate price/discount** and make sure **Vendor** is set to **Yes**. <!-- KFM: I put this here because it seems like a site-wide setting: is that right? Also, Vendor group, and all vendors, don't matter? CRYTT: Correct keep as is --> 
 1. Go to **Product information management > Setup > Dimension and variant groups > Storage dimension groups** and select a storage dimension group that applies to products for which master planning should consider purchase trade agreements. Make sure that each relevant storage dimension in this group shows a check mark in the **For purchase prices** column. Repeat this step for each relevant storage dimension group. <!-- KMF: Is this specific enough regarding how to select the group and dimension? --> 
 
 ## Prepare a released product to consider purchase trade agreements during master planning
@@ -58,7 +58,7 @@ Once your system is prepared as described previously, you should check to make s
 
 1. Go to **Product information management > Products > Released products** and then open a target product.
 1. Expand the **Purchase** FastTab and make sure no **Vendor** is assigned.
-1. On the Action Pane, open the **Plan** tab and, in the **Coverage** group, select **Item coverage**. Make sure that the **Use specific setting** check box is not selected. This will ensure that your settings here won't overwrite the vendor suggested by Planning Optimization. <!-- KFM: Should we also mention overwriting the lead time here, as mentioned in the table? -->
+1. On the Action Pane, open the **Plan** tab and, in the **Coverage** group, select **Item coverage**. Make sure that the **Use specific setting** check box is not selected. This will ensure that your settings here won't overwrite the vendor suggested by Planning Optimization. <!-- KFM: Should we also mention overwriting the lead time here, as mentioned in the table? CRYTT: Good point, please add this. -->
 1. Close the **Item coverage** page to return to the details page for your selected product.
 1. On the Action Pane, open the **Plan** tab and, in the **Forecast** group, select **Supply forecast**. Make sure that none of the rows shown here shows a value in the **Vendor account** column.
 1. Close the **Supply forecast** page to return to the details page for your selected product.
@@ -69,7 +69,7 @@ Once your system is prepared as described previously, you should check to make s
 
 The following table provides examples of how various settings made for a released product and its associated purchase agreements will affect the values found for the resulting planned purchase order. The values shown in bold in the two rightmost columns are the ones selected by Planning Optimization, while the values shown in bold-italic in the other columns indicate the setting that produced those resulting values for each row.
 
-<!-- KFM: We haven't mentioned "Default order settings: Lead time" or "Item coverage: Overwrite lead time" before now. Should we add these to the earlier procedure? -->
+<!-- KFM: We haven't mentioned "Default order settings: Lead time" or "Item coverage: Overwrite lead time" before now. Should we add these to the earlier procedure? CRYTT: Yes, good point. Please add this. -->
 
 | **Released product: Vendor** | **Default order settings: Lead time** | **Item coverage: Overwrite vendor** | **Item coverage: Overwrite lead time** | **Trade agreement: Vendor** | **Trade agreement: Lead time** | **Trade agreement: Disregard lead time** | **Resulting vendor** | **Resulting lead time** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -86,4 +86,4 @@ The following table provides examples of how various settings made for a release
 
 [Purchase agreements](../../procurement/purchase-agreements.md)
 
-<!-- KFM: Are "purchase agreements", "trade agreements" and "purchase trade agreements" all the same thing? Can we choose just one of these terms for this topic? -->
+<!-- KFM: Are "purchase agreements", "trade agreements" and "purchase trade agreements" all the same thing? Can we choose just one of these terms for this topic? CRYTT: Yes, please use "purchase trade agreements" -->
