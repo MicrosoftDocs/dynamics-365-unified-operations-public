@@ -181,7 +181,7 @@ As the database has previously been synchronized successfully, synchronization w
 
 #### Platform Update 37 or later
 
-1. Run the following command against your database:
+Run the following command against your business data database (AXDB):
 
 ```sql
 	UPDATE SF.synclog SET STATE=5 WHERE CODEPACKAGEVERSION in (SELECT TOP(1) CODEPACKAGEVERSION from SF.SYNCLOG ORDER BY CREATIONDATE DESC)
@@ -189,7 +189,7 @@ As the database has previously been synchronized successfully, synchronization w
 
 #### Platform Update 36 or earlier
 
-1. Run the following command against your database:
+Run the following command against your business data database (AXDB):
 
 ```sql
     DELETE FROM SF.synclog WHERE CODEPACKAGEVERSION in (SELECT TOP(1) CODEPACKAGEVERSION from SF.SYNCLOG ORDER BY CREATIONDATE DESC)
