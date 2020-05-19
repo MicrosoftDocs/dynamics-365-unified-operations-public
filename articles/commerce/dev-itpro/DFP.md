@@ -145,7 +145,7 @@ To set up Fraud Protection, [request a callback](https://dynamics.microsoft.com/
 
 #### Enable ADLS for your Commerce environment
 
-For the data to be available in ADLS, the service must be enabled for the Commerce environment. For details on enabling ADLS for your Commerce environment, visit [Enable ADLS in a Dynamics 365 Commerce environment](https://docs.microsoft.com/en-us/dynamics365/commerce/enable-adls-environment).
+For the data to be available in ADLS, the service must be enabled for the Commerce environment. For details on enabling ADLS for your Commerce environment, visit [Enable ADLS in a Dynamics 365 Commerce environment](https://docs.microsoft.com/dynamics365/commerce/enable-adls-environment).
 
 #### Turn on loss prevention
 
