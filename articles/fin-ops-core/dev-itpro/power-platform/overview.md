@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Power Platform overview
+title: Microsoft Power Platform overview
 description: Description goes here.
 author: Sunil-Garg
 manager: AnnBe
@@ -27,15 +27,13 @@ ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: 10.0.0
 ---
 
-# Power Platform overview
+# Microsoft Power Platform overview
 
 [!include[banner](../includes/banner.md)]
 
+## Prerequisite reading
 
-Pre-requisite reading
----------------------
-
-Understanding how Common Data Service and virtual entities work will be essential to understanding the architecture of virtual entities for Finance and Operations. The following documentation is a pre-requisite to these related topics.
+To understand the architecture of virtual entities for Finance and Operations, you must understand how Common Data Service and virtual entities work. Therefore, the following documentation is a prerequisite:
 
 - [What is Common Data Service?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
 - [Entity overview](https://docs.microsoft.com/powerapps/maker/common-data-service/entity-overview)
@@ -44,24 +42,20 @@ Understanding how Common Data Service and virtual entities work will be essentia
 - [What is Power Apps portals?](https://docs.microsoft.com/powerapps/maker/portals/overview)
 - [Overview of creating apps in Power Apps](https://docs.microsoft.com/powerapps/maker/)
 
-Virtual entities for Finance and Operations
--------------------------------------------
+## Virtual entities for Finance and Operations
 
-Finance and Operations is a virtual data source in Common Data Service allowing full CRUD (Create, Read, Update, Delete) operations from Common Data Service and Power Platform. By definition of virtual entities as described in the pre-requisite reading, the data for virtual entities do not reside in Common Data Service but, it continues to reside in the application where it belongs. As a result, the CRUD operations that are enabled on the Finance and Operations entities by making them available in Common Data Service as virtual entities allows for data operations from Common Data Service and Power Platform on data that is residing in Finance and Operations, thereby allowing direct interaction.
+Finance and Operations is a virtual data source in Common Data Service, and enables full CRUD (create, read, update, delete) operations from Common Data Service and Microsoft Power Platform. As the definition of virtual entities that is provided in the prerequisite reading indicates, the data for virtual entities doesn't reside in Common Data Service. Instead, it continues to reside in the application where it belongs. To enable CRUD operations on Finance and Operations entities, you make those entities available as virtual entities in Common Data Service. The CRUD operations then enable data operations to be performed, from Common Data Service and Microsoft Power Platform, on data that resides in Finance and Operations. In this way, they allow for direct interaction.
 
-All OData entities in Finance and Operations are available as virtual entities in Common Data Service and thus also in the Power Platform. Makers are now able to build experiences in applications like Sales, Marketing, Customer Engagement etc. along-side with data directly from Finance and Operations with full CRUD capability. Power Portals can be used to build external facing web sites to
-enable collaboration scenarios for business processes in Finance and Operations.
+All Open Data Protocol (OData) entities in Finance and Operations are available as virtual entities in Common Data Service, and therefore also in Microsoft Power Platform. Makers can now build experiences in applications such as Microsoft Dynamics 365 Sales, Dynamics 365 Marketing, and Customer Engagement alongside data directly from Finance and Operations with full CRUD capability. Power Portals can be used to build external-facing websites that enable collaboration scenarios for business processes in Finance and Operations.
 
-Architecture
-------------
+## Architecture
 
-Virtual entities are a Common Data Service concept useful beyond Finance and Operations. This diagram illustrates how the Finance and Operations provider for virtual entities is implemented. There are six primary methods implemented by the provider. The first five are the standard CRUD operations of create, update, delete, retrieve, and retrieve multiple. The last, perform action, is used for calling OData actions as described later. Calls to the Finance and Operations Virtual Entity Data Provider (shown as “VE Plugin” in the diagram) will result in a SSL/TLS1.2 secure web call to the CDSVirtualEntityService WebAPI endpoint of Finance and Operations. This web service then converts the queries into calls to the associated physical entities in Finance and Operations, invoking CRUD or OData operations on those entities. Since the Finance and Operations entity is directly invoked in all operations, any business logic on the entity or its
-backing tables is also invoked.
+Virtual entities are a Common Data Service concept that is useful beyond Finance and Operations. The following illustration shows how the Finance and Operations provider for virtual entities is implemented. Six primary methods are implemented by the provider. The first five methods are the standard CRUD operations: **Create**, **Update**, **Delete**, **Retrieve**, and **RetrieveMultiple**. The last method, **PerformAction**, is used to call OData actions, as described later. Calls to the Finance and Operations Virtual Entity Data Provider (shown as "VE Plugin" in the illustration) will cause a Secure Sockets Layer (SSL)/Transport Layer Security (TLS) 1.2 secure web call to the CDSVirtualEntityService web API endpoint of Finance and Operations. This web service then converts the queries into calls to the associated physical entities in Finance and Operations, and invokes CRUD or OData operations on those entities. Because a Finance and Operations entity is directly invoked in all operations, any business logic on the entity or its backing tables is also invoked.
 
 [![Architecture](../media/fovearchitecture.png)](../media/fovearchitecture.png)
 
-There are two points of translation from Common Data Service to Finance and Operations during calls. The first is in the VE Plugin, which translates concepts like entity physical names to Finance and Operations entity names, as well as converting some well-known concepts like Company references. The web service call still uses the EntityCollection, Entity, and QueryExpression objects to express the operations being performed, using the translated entity names and concepts from the VE Plugin. Finally, the CDSVirtualEntityAdapterService WebAPI in Finance and Operations completes the translation from QueryExpression to QueryBuildDataSource and other internal Finance and Operations language constructs.
+During calls, there are two points of translation from Common Data Service to Finance and Operations. The first point of translation occurs in the VE Plugin, which translates concepts such as entity physical names into Finance and Operations entity names. It also converts some well-known concepts, such as Company references. The web service call still uses the EntityCollection, Entity, and QueryExpression objects to express the operations that are performed, by using the translated entity names and concepts from the VE Plugin. Finally, the CDSVirtualEntityAdapterService web API in Finance and Operations completes the translation from QueryExpression to QueryBuildDataSource and other internal Finance and Operations language constructs.
 
-All calls between Common Data Service and Finance and Operations as part of virtual entity are performed as Service-to-Service (S2S) calls using the AAD Application specified in the configuration. This application user should have access *only* to the CDSVirtualEntityAdapterService WebAPI and the Catalog Entity, CDSVirtualEntityListEntity. These privileges are included in the out-of-the-box security role named CDSVirtualEntityApplication. During these S2S calls, Common Data Service will provide the identity of the user in Common Data Service invoking the action. The CDSVirtualEntityAdapterService will look up the associated user in Finance and Operations and run the query in the context of that user. This allows the S2S call to not have explicit access to all the Finance and Operations entities, but instead rely upon the privileges of the user invoking the action to determine data access.
+All calls between Common Data Service and Finance and Operations as part of virtual entities are done as service-to-service (S2S) calls by using the Azure Active Directory (Azure AD) application that is specified in the configuration. The user of this application should have access *only* to the CDSVirtualEntityAdapterService web API and the Catalog entity, CDSVirtualEntityListEntity. These privileges are included in the out-of-box security role that is named CDSVirtualEntityApplication. During the S2S calls, Common Data Service provides the identity of the user in Common Data Service who is invoking the action. The CDSVirtualEntityAdapterService web API looks up the associated user in Finance and Operations and runs the query in the context of that user. Therefore, the S2S call doesn't have to have explicit access to all the Finance and Operations entities. Instead, it can rely on the privileges of the user who is invoking the action to determine data access.
 
-Power Portal is also able to access virtual entities. Since Power Portal authorization is based upon the contact record, a mapping between contact records and Finance and Operations users is maintained in the msdyn_externalportalusermapping table in Common Data Service. This table should only be editable by highly privileged users in Common Data Service who have the rights to control security access of portal users to Finance and Operations virtual entities. Any Finance and Operations user specified for Portal access must have the CDSVirtualEntityAuthorizedPortalUser security role assigned and cannot have the system administrator or security administrator roles assigned. Regardless of what portal security setting is applied to virtual entities, the resulting query to Finance and Operations will always run as the associated Finance and Operations user, subject to that user’s entity and row security settings. Anonymous portal access is also supported which is explained in the portal section on how this can be done. Portal is covered in a separate section.
+Power Portal can also access virtual entities. Because Power Portal authorization is based on contact records, a mapping between contact records and Finance and Operations users is maintained in the msdyn\_externalportalusermapping table in Common Data Service. This table should be editable only by highly privileged users in Common Data Service, who have the rights to control the security access of portal users to Finance and Operations virtual entities. Any Finance and Operations user who is set up for Portal access must have the CDSVirtualEntityAuthorizedPortalUser security role assigned, and can't have the System administrator or Security administrator role assigned. Regardless of the portal security setting that is applied to virtual entities, the resulting query to Finance and Operations is always run as the associated Finance and Operations user, and is subject to that user's entity and row security settings. Anonymous portal access is also supported. For information about this type of access and how it can be done, see [Power Portal reference](power-portal-reference.md). Portal is covered in a separate topic.
