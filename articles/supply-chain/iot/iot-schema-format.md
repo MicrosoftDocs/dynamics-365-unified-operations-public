@@ -85,7 +85,9 @@ There are a few rules that apply to monitoring messages in IoT Intelligence.
 
 + IoT Intelligence silently ignores messages that don't match the scenario configuration criteria.
 
-+ You can define different schemas for different IoT Intelligence scenarios, or different schemas for different IoT Hub tasks unrelated to IoT Intelligence.
++ You can define and use multiple types of message schemas.
+
++ Every type of message schema does not need to be defined. Only schemas that will be used for the IoT Intelligence scenarios need to be defined.
 
 ## Id-value pair schema
 
