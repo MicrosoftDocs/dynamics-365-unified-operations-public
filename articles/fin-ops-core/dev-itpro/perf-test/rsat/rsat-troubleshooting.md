@@ -97,7 +97,7 @@ You can also manually set the registry keys.
 
 You may receive the following error when running a test case, or the error details may contain the following messages.
 
-```Text
+```Xml
 <Message>The type initializer for 'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' threw an exception.</Message>
 <Message>Could not enumerate AX users</Message>  (InnerError)`
 ```
@@ -110,7 +110,7 @@ To resolve this error, verify the **Admin user name** specified in the RSAT sett
 
 If a test case inconsistently fails with the following error, this usually indicates an incomplete configuration of the authentication thumbprints on the AOS virtual machines.
 
-```Text
+```Xml
 <Message>An unsecured or incorrectly secured fault was received from the other party. See the inner FaultException for the fault code and detail.</Message>
 <Message>At least one security token in the message could not be validated.</Message>
 ```
