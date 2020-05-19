@@ -70,7 +70,7 @@ After you've specified the basic information about your RFQ, you specify the goo
 7. In the **Vendor account** field, enter or select a value. Once you've selected a vendor, the status is Created. This means that the vendor information has been saved in the RFQ, but you have not sent the RFQ to the vendor. You can add a vendor to an RFQ regardless of the vendor status.  
 
 ## Send the RFQ to vendors
-1. On the **Action pane**, click **Send**. In the Sending request for quotation page, check that the vendors in the list are the ones that you want to receive the RFQ.  
+1. On the **Action Pane**, click **Send**. In the Sending request for quotation page, check that the vendors in the list are the ones that you want to receive the RFQ.  
 2. Click **Print**. This dialog allows you to print the RFQ. If you choose to print a reply sheet, the contents of this are defined in Procurement and Sourcing parameters. To choose how to print reply sheets, once you've opened the Print dialog, click Advanced printing options. One RFQ will be printed for each vendor containing the lines that have the status of Created or Sent. Canceled lines and lines with registered replies will not be printed.   
 3. Click **Cancel**.
 4. Click **OK**.
