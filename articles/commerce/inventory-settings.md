@@ -47,11 +47,11 @@ Inventory thresholds and ranges can be defined in Commerce for a product or cate
 
 Inventory settings in Dynamics 365 Commerce are defined in site builder under **Site Settings \> Extensions \> Inventory Management**. There are four inventory settings, one of them deprecated.
 
-**Enable inventory check on app** - This setting turns on a product inventory check. When this setting is selected, buy box, cart, and pick up in store modules will check product inventory and will only allow the product to be added to the cart if inventory is available.
+**Enable inventory check on app** - This setting turns on a product inventory check. When this setting is selected, buy box, cart, and pick up in store modules will check product inventory and will only allow a product to be added to the cart if inventory is available.
 
 **Inventory level based on** - This setting defines how inventory levels are calculated. The available setting properties are **Total Available**, **Physical Available**, and **Out of stock threshold**. In Dynamics 365 Commerce, inventory threshold and ranges can be defined for each product and category. The inventory APIs return product inventory information for both the **Total Available** and **Physical Available** properties. The retailer decides which of the **Total Available** or **Physical Available** properties should be used for determining the inventory count and the corresponding ranges for in-stock and out-of-stock statuses. 
 
-The **Out of stock threshold** property of the **Inventory level based on** setting is a deprecated, legacy option. When this property is selected, the inventory count is determined from the **Total Available** property results but the threshold is defined by the **Out of stock threshold** numeric setting (see below). This threshold setting applies to all products across an e-Commerce site. If inventory is below the threshold number, the product is considered to be out of stock, otherwise it is considered to be in stock. The capabilities of this legacy setting option are limited and it is not recommended for use with release versions 10.0.12 and later.
+The **Out of stock threshold** property of the **Inventory level based on** setting is a deprecated, legacy option. When this property is selected, the inventory count is determined from the **Total Available** property results, but the threshold is defined by the **Out of stock threshold** numeric setting (see below). This threshold setting applies to all products across an e-Commerce site. If inventory is below the threshold number, a product is considered to be out of stock, otherwise it is considered to be in stock. The capabilities of this legacy setting option are limited and it is not recommended for use with release versions 10.0.12 and later.
 
 **Inventory ranges** - This setting defines which inventory range messages are displayed on site modules, and is only applicable if either the **Total Available** or **Physical Available** properties are selected for the **Inventory level based on** setting. The property options for this setting are **All**, **Low and out of stock**, and **Out of stock**. 
 
@@ -63,7 +63,7 @@ The **Out of stock threshold** property of the **Inventory level based on** sett
 
 ## Modules that use inventory settings
 
-Buy box, wishlist, store selector, cart, and cart icon modules rely on inventory settings. These modules display the inventory ranges and messages when a product cannot be added to the cart due to lack of inventory. 
+Buy box, wishlist, store selector, cart, and cart icon modules use inventory settings to display the inventory ranges and messages. 
 
 The following image shows am example of a PDP displaying an in stock message ("Available").
 ![Example of a PDP module with in stock](./media/pdp-InStock.png)
