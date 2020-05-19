@@ -71,6 +71,39 @@ information about your storage account and the application to the Data Lake
 offer in Microsoft Dynamics Lifecycle Services (LCS).
 
 
+In **Azure portal**
+
+1.  Create a Microsoft Azure Data Lake Storage Gen2 account (a storage account)
+    in your subscription
+
+2.  Create an Application in Azure Active Directory. Get the App ID and an
+    generate an App secret.
+
+3.  Create a Key vault and create 3 secrets that contain the storage account
+    name as well as the application ID and App secret
+
+4.  Authorize the Application you created earlier so that it can read the
+    secrets in the key vault.
+
+5.  Grant Access control roles so that your application can access the storage
+    account
+
+When following above process, the document will instruct you to save several
+values such as Key vault details that are required for subsequent steps. Next
+you are going to provide these values (via a key vault) to Finance and
+Operations using the **Dynamics Life cycle services (LCS),** you will need
+Administrator access to LCS in order to perform this step
+
+1.  Install the **Export to Data Lake** add-in in **LCS**
+
+In **Finance and Operations**,
+
+1.  Turn on the **Export to Azure Data Lake** feature.
+
+2.  Select data (that is, the tables and entities that should be staged in Data
+    Lake).
+
+3.  Monitor the tables in Data Lake.
 
 
 
