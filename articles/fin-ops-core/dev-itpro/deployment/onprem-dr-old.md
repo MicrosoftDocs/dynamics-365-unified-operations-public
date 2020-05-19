@@ -30,6 +30,9 @@ ms.dyn365.ops.version: Platform update 37
 
 # On-premise Disaster Recovery Configuration
 
+>[!IMPORTANT]
+> This guide should be used for older environments where a LocalAgent with the pre and post deployment scripts is not present or the base topology does not support the Update Settings feature of LCS.
+
 The term disaster is used here to mean an event which makes the primary datacenter unusable – for example, a connection outage which makes the primary datacenter inaccessible. High Availability configuration is not covered within this document – for the minimum setup required for High Availability please read [System requirements for on-premises deployments](../../fin-ops/get-started-system-requirements-on-prem.md#minimum-infrastructure-requirements)
 
 ### Limitations of this document
@@ -134,3 +137,52 @@ To bring the DR environment online in place of production we will re-point DR AO
 
 ### Re-point the AOS nodes to the replicated production database
 
+If your DR environment is missing packages you want to first make sure both environments are running on the same version. To do that skip all the way to [Mirror AOS version on the fly](#mirroraosversion). If your environments are already running the same version keep reading.
+
+The AOS machines need to be reconfigured to point to the replicated copy of the production database. Each contain a configuration file which tells the local AOS the database server and database to connect to, for example:
+
+C:\ProgramData\SF\AOS_10\Fabric\work\Applications\AXSFType_App203\AXSF.Package.1.0.xml
+
+>[!NOTE]
+> Note that the “AOS_11” and “AXSFType_App203” will contain different numbers on different environments/machines.
+
+The elements which control the database server and database are:
+
+![Database Settings](media/DBSettings.png)
+
+Edit these elements to the desired values and restart the AOS via Service Fabric (SF) explorer to switch the AOS to a different database. The picture below shows how to restart an AOS via SF explorer:
+
+![Restart SF node](media/RestartNode.png)
+
+#### <a name="mirroraosversion"></a> Mirror AOS version on the fly
+
+
+### Reconfigure BYODB (Optional)
+
+If the BYODB feature is in use in production, then also reconfigure this feature to point to the BYODB database used by the DR environment – as this information is stored in the business data (AXDB) database, it will by default still point to the primary datacentre’s BYODB database.
+
+The BYODB connection string is stored within the AXDB. The connection string is encrypted in the database so it cannot be updated directly in TSQL, however it can be updated through the D365 application, as follows:
+
+From the “Data management” workspace, click “Configure entity export to database”:
+
+![Configure entity export to database](media/dmfbyodb.png)
+
+Select the record for BYODB (it may be named differently within your environment):
+
+![BYODB record](media/dmfbyodb1.png)
+
+Edit the connection string value to point to the correct database server and database:
+
+![BYODB connection string](media/dmfbyodb2.png)
+
+Click validate to check the connection is working, then click the Publish ribbon tab. Check the “show published only” box, select all the grid records and then click Publish. Click yes when the warning message appears.
+
+In a few seconds you should receive a confirmation that the entities published successfully.
+
+Perform a “full push” export of entities, this will repopulate the BYODB database with data and may take some time to run depending on the entities used. This can be performed simply – if you have kept the batch job used when you performed the initial full push (which is required when first setting up BYODB) – simply look up this batch job in System Administration->Inquiries->Batch jobs and re-run it.
+
+If the original batch job for full push of entities is no longer available in the environment then you can configure a new one, the detailed instructions are available [here](../analytics/export-entities-to-your-own-database.md#exporting-data-into-your-database)
+
+### Reconfigure Financial Reporting
+
+On each Financial Reporting server (previously known as Management Reporter) there is a configuration file which specifies where the database server and database is for the FinancialReporting database:
