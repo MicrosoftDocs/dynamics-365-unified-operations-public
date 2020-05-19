@@ -54,7 +54,7 @@ The cart module has a **Heading** property that can be set to values such as **S
 
 ## Module properties
 
-Cart modules have the following settings that can be configured at **Site Settings \> Extensions**:
+The following cart module settings can be configured at **Site Settings \> Extensions**.
 
 - **Maximum quantity** – This property is used to specify the maximum number of each item that can be added to the cart. For example, a retailer might decide that only 10 of each product can be sold in a single transaction.
 - **Inventory** – See [Apply inventory settings](inventory-settings.md) for details on applying inventory settings.
