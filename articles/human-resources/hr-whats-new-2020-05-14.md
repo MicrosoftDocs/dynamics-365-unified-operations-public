@@ -36,7 +36,7 @@ This topic describes features that are either new or changed in Dynamics 365 Hum
 
 ## Platform changes
 
-Platform changes are included in this week's release. For more information, see [Platform updates for version 10.0.10 of Finance and Operations apps (May 2020)](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34). This release includes bug fixes and changes to saved views.
+Platform changes are included in this week's release. For more information, see [Platform updates for version 10.0.10 of Finance and Operations apps (May 2020)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34). This release includes bug fixes and changes to saved views.
  
 ## Ensure Common Data Service picklists are consistent with Leave enums (436343)
 
