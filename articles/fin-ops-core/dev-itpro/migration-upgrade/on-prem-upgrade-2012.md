@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.x
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides the process for upgrading AX2012 databases to D365 for Finance and Operations on-premises 10.0.x. Upgrade is currently only supported from either Dynamics AX 2012 R2 or Dynamics AX 2012 R3. 
+This topic provides the process for upgrading Microsoft Dynamics AX 2012 databases to D365 for Finance and Operations on-premises 10.0.x. Upgrade is currently only supported from either Dynamics AX 2012 R2 or Dynamics AX 2012 R3. 
 
 > [!IMPORTANT]
 > This guide only explains the process of performing a data upgrade. For information on how to do a code upgrade please check the upgrade guides available for cloud versions. The code upgrade tooling is only available through LCS.
@@ -54,11 +54,11 @@ An overview of each path is given below:
 
 1. [Sign up for a Lifecycle Services trial or partner project](./upgrade-overview-2012.md#sign-up-for-a-lifecycle-services-trial-or-partner-project)
 
-1. For each release, please update to the latest available cumulative update before upgrading to the latest Finance and Operations application release.
+1. For each AX 2012 release, please update to the latest available cumulative update before upgrading to the latest Finance and Operations application release.
 
 1. Install the pre-upgrade checklist, more details can be found [here](./prepare-data-upgrade.md#installation)
 
-1. Go through the data upgrade preparation steps. You can skip the one related to users. #TODO find correct step name.  
+1. Go through the data upgrade preparation steps. You can skip the **Setup User Mapping** step. This is only relevant for cloud hosted upgrades.   
 
 1. Take a backup of your database (i.e. MicrosoftDynamicsAX). For more information, see [Create a Full Database Backup](https://docs.microsoft.com/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server?view=sql-server-2016)
 
@@ -109,7 +109,7 @@ An overview of each path is given below:
 
 1.  When the upgrade process has finished successfully, back up the newly upgraded database. If you have customizations from ISVs or VARs, check if you have to run some post data upgrade scripts.
 
-1. Restore the database into your environment with a different name from the production one (for example, AXDBupgraded).
+1. Restore the database into your on-premises environment's SQL Server, with a different name from the production one (for example, AXDBupgraded).
 
 1. Deploy a new D365 for Finance and Operations On-premise environment.
 
