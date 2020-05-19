@@ -56,7 +56,7 @@ Follow these steps to create a GST reference number sequence group and assign it
     | Accounts payable    | Advanced payment voucher | The **Advance payment voucher** number sequence is used when vendor advance payment transactions that have GST transactions are posted. |
     | Accounts payable    | GST invoice              | The **GST invoice** number sequence is used when vendor purchases are posted that have GST transactions together with reverse charge transactions. |
     
-# Type of supply and GST number sequence reference ID generation 
+## Type of supply and GST number sequence reference ID generation 
 
 Under GST law, the broader classification of the type of supply is shown below: 
 - Taxable supply 
