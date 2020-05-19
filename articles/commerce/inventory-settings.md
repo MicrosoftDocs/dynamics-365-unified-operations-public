@@ -84,4 +84,4 @@ The following image shows am example of a cart displaying an in stock message ("
 
 [Wishlist](account-management.md)
 
-[Store selector](add-store-selector.md)
+[Store selector](store-selector.md)
