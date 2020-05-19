@@ -132,7 +132,7 @@ To sync the inventory buffer configurations to channels, follow these steps.
 
 ## Utilize inventory buffers and inventory levels in e-Commerce scenario 
 
-Our out-of-box e-Commerce solution is utilizing the inventory buffers and inventory levels capabilities in HQ to drive the inventory availability displays in e-Commerce sites. For more information, see [Inventory settings on e-Commerce](inventory-ecommerce.md).
+Our out-of-box e-Commerce solution is utilizing the inventory buffers and inventory levels capabilities in HQ to drive the inventory availability displays in e-Commerce sites. For more information, see [Apply inventory settings](inventory-settings.md).
 
 Alternatively, for customers who integrate with 3rd party e-Commerce solution, you can use the **GetEstimatedAvailability** and **GetEstimatedProductWarehouseAvailability** APIs to show inventory availability for a product in your e-Commerce scenario. For more information about these APIs, see [Calculate inventory availability for retail channels](calculated-inventory-retail-channels.md).
 
@@ -148,6 +148,6 @@ To configure the desired API response, follow these steps.
 
 [Manage product categories and products](category-management-product-creation.md)
 
-[Inventory settings on e-Commerce](inventory-ecommerce.md)
+[Apply inventory settings](inventory-settings.md)
 
 [Calculate inventory availability for retail channels](calculated-inventory-retail-channels.md)
