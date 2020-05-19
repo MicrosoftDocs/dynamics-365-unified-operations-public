@@ -5,7 +5,7 @@ title: Inventory buffers and inventory levels
 description: This topic explains how to utilize inventory buffers and inventory levels to drive the inventory availability displays in e-Commerce.
 author: boycezhu
 manager: annbe
-ms.date: 05/14/2020
+ms.date: 05/25/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-commerce
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom:
@@ -84,7 +84,7 @@ To configure an inventory level profile for a category, follow these steps.
 1.	In the **Sell product properties** FastTab, select a legal entity.
 1.	In the **Commerce inventory** section, set the value for **Inventory level profile** field by selecting one of predefined inventory level profiles from the dropdown list.
 
-You can use the **Update products** function on the Action Pane to propagate the category level profile value to its underlying products. For more information, see [Manage product categories and products](https://docs.microsoft.com/dynamics365/commerce/category-management-product-creation).
+You can use the **Update products** function on the Action Pane to propagate the category level profile value to its underlying products. For more information, see [Manage product categories and products](category-management-product-creation.md).
 
 To configure an inventory level profile for a released product, follow these steps.
 1.	Go to **Retail and commerce** > **Products and categories** > **Released products by category**.
@@ -112,7 +112,7 @@ To configure an inventory buffer for a category, follow these steps.
 1.	In the **Sell product properties** FastTab, select a legal entity.
 1.	In the **Commerce inventory** section, enter a positive value for the **Inventory buffer** field.
 
-You can use the **Update products** function on the Action Pane to propagate the category level buffer value to its underlying products. For more information, see [Manage product categories and products](https://docs.microsoft.com/dynamics365/commerce/category-management-product-creation).
+You can use the **Update products** function on the Action Pane to propagate the category level buffer value to its underlying products. For more information, see [Manage product categories and products](category-management-product-creation.md).
 
 To configure an inventory level profile for a released product, follow these steps.
 
@@ -132,9 +132,9 @@ To sync the inventory buffer configurations to channels, follow these steps.
 
 ## Utilize inventory buffers and inventory levels in e-Commerce scenario 
 
-Our out-of-box e-Commerce solution is utilizing the inventory buffers and inventory levels capabilities in HQ to drive the inventory availability displays in e-Commerce sites. For more information, see [Inventory settings on e-Commerce](https://docs.microsoft.com/dynamics365/commerce/inventory-ecommerce).
+Our out-of-box e-Commerce solution is utilizing the inventory buffers and inventory levels capabilities in HQ to drive the inventory availability displays in e-Commerce sites. For more information, see [Inventory settings on e-Commerce](inventory-ecommerce.md).
 
-Alternatively, for customers who integrate with 3rd party e-Commerce solution, you can use the **GetEstimatedAvailability** and **GetEstimatedProductWarehouseAvailability** APIs to show inventory availability for a product in your e-Commerce scenario. For more information about these APIs, see [Calculate inventory availability for retail channels](https://docs.microsoft.com/dynamics365/commerce/calculated-inventory-retail-channels).
+Alternatively, for customers who integrate with 3rd party e-Commerce solution, you can use the **GetEstimatedAvailability** and **GetEstimatedProductWarehouseAvailability** APIs to show inventory availability for a product in your e-Commerce scenario. For more information about these APIs, see [Calculate inventory availability for retail channels](calculated-inventory-retail-channels.md).
 
 With the introduction of inventory buffers and inventory levels, these APIs will now return inventory level code and label message, calculated based on **total available** and **available physical**. They can be further configured to determine if inventory quantity is returned along with the message, and if available quantity will be reduced by inventory buffer value.
 
@@ -143,3 +143,11 @@ To configure the desired API response, follow these steps.
 1.	Go to **Retail and commerce** > **Headquarters setup** > **Parameters** > **Commerce parameters**.
 1.	Select **Inventory** tab, in the **Store inventory** section, select one of the options from the dropdown list for the **Product availability APIs for e-Commerce** parameter.
 1.	To apply the settings to channels, run the **1110 (Global configuration)** distribution schedule job.
+
+## Additional resources
+
+[Manage product categories and products](category-management-product-creation.md)
+
+[Inventory settings on e-Commerce](inventory-ecommerce.md)
+
+[Calculate inventory availability for retail channels](calculated-inventory-retail-channels.md)
