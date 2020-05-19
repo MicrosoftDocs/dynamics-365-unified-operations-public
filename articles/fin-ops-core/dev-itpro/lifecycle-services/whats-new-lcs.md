@@ -45,7 +45,7 @@ The following sections list the features that are included in LCS releases.
 ## May 2020 - wave 1
 | Area | Feature |Status |
 |------|---------|-------|
-| Issue Search improvements | [Lifecyle Services Issue search improvements](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/lifecyle-services-issue-search-improvements) | Generally available | 
+| Issue Search improvements | [Lifecyle Services Issue search improvements](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/lifecyle-services-issue-search-improvements) | General availability | 
 
 
 ## April 2020 - wave 2
@@ -64,8 +64,8 @@ This release contains general performance improvements and minor bug fixes.
 | Area | Feature | Status |
 |------|---------|--------|
 | Admin APIs | [RESTful APIs for database export](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/restful-apis-database-export) | Preview |
-| Environment actions | [Apply data upgrade packages for AX2012 customers on sandbox environments](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/apply-data-upgrade-packages-ax-2012-customers-sandbox-environments) | Generally available |
-| Environment actions | [Platform update 20 required for database movement operations](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/platform-update-20-required-database-movement-operations) | Generally available|
+| Environment actions | [Apply data upgrade packages for AX2012 customers on sandbox environments](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/apply-data-upgrade-packages-ax-2012-customers-sandbox-environments) | General availability |
+| Environment actions | [Platform update 20 required for database movement operations](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/platform-update-20-required-database-movement-operations) | General availability|
 
 ## March 2020 - wave 1
 
@@ -75,13 +75,13 @@ This release contains general performance improvements and minor bug fixes.
 
 | Area | Feature | Status |
 |------|---------|--------|
-| Environment actions | [Platform update 20 required for database movement operations](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/platform-update-20-required-database-movement-operations) | Generally available |
+| Environment actions | [Platform update 20 required for database movement operations](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/platform-update-20-required-database-movement-operations) | General availability |
 
 ## February 2020 - wave 1
 
 | Area | Feature | Status |
 |------|---------|-------|
-| Admin APIs | [Database movement RESTful APIs](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/database-movement-restful-apis-lifecycle-services) | Generally available |
+| Admin APIs | [Database movement RESTful APIs](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/database-movement-restful-apis-lifecycle-services) | General availability |
 
 ## LCS releases before November 2019
 
