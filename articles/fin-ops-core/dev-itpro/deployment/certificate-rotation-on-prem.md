@@ -357,7 +357,7 @@ This procedure should be completed either after a successful certificate rotatio
 
 This certificate is used to encrypt data stored in the database. By default there are certain fields that are encrypted with this certificate, you can check those fields [here](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-scenario-goldenconfig#document-the-values-of-encrypted-fields). However, our API can be used to encrypt other fields that customers deem should be encrypted. 
 
-In Platform update 33 and later, the batch job that is named "Encrypted data rotation system job that needs to run at off hours when the data encryption certificate rotated" will use the newly rotated certificate to re-encrypt data. This batch job crawls through your data to re-encrypt the new certificate with all the encrypted data. It will run for two hours per day for three consecutive days. Depending on the amount of data, the batch job might be able to finish running in less time.
+In Platform update 33 and later, the batch job that is named "Encrypted data rotation system job that needs to run at off hours when the data encryption certificate rotated" will use the newly rotated certificate to re-encrypt data. This batch job crawls through your data to re-encrypt all the encrypted data by using the new certificate. It will run for two hours per day for three consecutive days. Depending on the amount of data, the batch job might be able to finish running in less time.
 
 > [!WARNING]
 > Make sure that the old Data Encryption certificate is not removed before all encrypted data has been re-encrypted and it has not expired. Otherwise, this could lead to data loss.
