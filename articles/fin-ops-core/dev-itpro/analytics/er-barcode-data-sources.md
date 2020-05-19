@@ -135,7 +135,7 @@ In addition, download the Excel file containing the modified template for the pr
 
 1.  Go to **Organization administration \> Workspaces \> Electronic reporting**.
 2.  On the **Localization configurations** page, in the **Configuration providers** section, make sure that the [configuration
-    provider](general-electronic-reporting#Provider) for the **Litware, Inc. (http://www.litware.com)** sample company is listed, and
+    provider](general-electronic-reporting.md#Provider) for the **Litware, Inc. (http://www.litware.com)** sample company is listed, and
     that it's marked as active. If this configuration provider isn't listed, or if it isn't marked as active, follow the steps in the [Create a configuration provider and mark it as active](tasks/er-configuration-provider-mark-it-active-2016-11.md) topic.
 
 ![ER workspace page](./media/er-barcode-data-source-active-provider.png)
