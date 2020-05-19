@@ -40,7 +40,8 @@ This topic contains information about how to troubleshoot the Regression suite a
 To troubleshoot issues that happen during playback of a test case, open the developer error log located at **[RSAT working directory]\\[test case ID]\\playback\\[TestName]Log.txt**. The RSAT working directory is the directory specified in the RSAT settings dialog.
 Analyze the error message to determine the possible cause of a failure.
 
-[!NOTE] For RSAT versions prior to 1.210, the log is located at **C:\\Users\\[YourUserName]\\AppData\\Roaming\\regressionTool\\playback\\[TestName]Log.txt**.
+> [!NOTE]
+> For RSAT versions prior to 1.210, the log is located at **C:\\Users\\[YourUserName]\\AppData\\Roaming\\regressionTool\\playback\\[TestName]Log.txt**.
 
 ## Generator logs
 
@@ -48,20 +49,22 @@ To troubleshoot errors when generating test execution and parameter files, enabl
 
 Open the **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** file under the RSAT installation folder (for example, **C:\\Program Files (x86)\\Regression Suite Automation Tool**), and change the value in the following element from **false** to **true**.
 
-    ```xml
-    <add key="LogGeneration" value="true" />
-    ```
+```xml
+<add key="LogGeneration" value="true" />
+```
+
 After test execution files are generated, you can find the log file under **[RSAT working directory]\\[test case ID]\\generatorLogs**
 
-[!NOTE] For RSAT versions prior to 1.210, the logs are generated under **C:\\Users\\[Username]\\AppData\\Roaming\\regressionTool\\generatorLogs**.
+> [!NOTE]
+> For RSAT versions prior to 1.210, the logs are generated under **C:\\Users\\[Username]\\AppData\\Roaming\\regressionTool\\generatorLogs**.
 
 ## Authentication certificate and installation
 
 + The authentication certificate must be created and installed by an administrator on the same computer where RSAT is installed. If it is not created by an admin, you will encounter the following error message when you try to run a test case.  
 
-  ```Text
-  Cannot access Finance and Operations environment. Verify your settings and make sure the environment is available.
-  ```
+```Plaintext
+Cannot access Finance and Operations environment. Verify your settings and make sure the environment is available.
+```
 
 + If you have used a previous version of RSAT on the same computer, close it and uninstall it before installing a new version.
 
@@ -77,7 +80,7 @@ If you have selected Internet Explorer as your browser, your desktop resolution 
 
 If you are testing against a Standard Acceptance Test Sandbox environment (Tier2) or any other multi-box environment, and you may receive one of the following errors when you run a test.
 
-```Text
+```Plaintext
 There was no endpoint listening at https://<yourURL>soap.sandbox.operations.dynamics.com/Services/AxUserManagement/Service.svc/ws2007FedHttp that could accept the message. This is often caused by an incorrect address or SOAP action…
 
 An error occurred while making the HTTP request to <Hostname>/Services/AxUserManagement/Service.svc/ws2007FedHttp. This could be due to the fact that the server certificate is not configured properly with HTTP.SYS in the HTTPS case. This could also be caused by a mismatch of the security binding between the client and the server.
