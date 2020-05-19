@@ -53,4 +53,24 @@ Tab 3 text
 
 ## Next section header
 
+Overview
+--------
+
+Configuring Export to Data lake has several steps.
+
+You must create a storage account in your own Azure subscription and use a key
+vault to provide that account to the system.
+
+Next, you must create an Azure Active Directory (Azure AD) application ID that
+grants access to the root of your storage account. The system will use the Azure
+AD application to gain access to storage – and create the folder structure and
+write data.
+
+Finally, you must create a key vault in your subscription, and provide
+information about your storage account and the application to the Data Lake
+offer in Microsoft Dynamics Lifecycle Services (LCS).
+
+
+
+
 
