@@ -45,7 +45,7 @@ The following sections list the features that are included in LCS releases.
 ## May 2020 - wave 1
 | Area | Feature |Status |
 |------|---------|-------|
-| Issue Search improvements | [Lifecyle Services Issue search improvements](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/lifecyle-services-issue-search-improvements) | General availability | 
+| Issue Search improvements | [Lifecycle Services Issue search improvements](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/lifecyle-services-issue-search-improvements) | General availability | 
 
 
 ## April 2020 - wave 2
