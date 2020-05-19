@@ -55,7 +55,7 @@ To preview a style preset on your site in site builder, follow these steps.
 
 1. On the command bar, select **Preview**.
 1. Select a URL from your site to use to preview the style preset, and then select **OK**.
-1. Select the channel and locale-specific URL variant to preview by selecting the variant's name. A new preview browser window is opened, where the selected style preset is applied to the specified page.
+1. Select the channel-specific and locale-specific URL variant to preview by selecting the variant's name. A new preview browser window is opened, where the selected style preset is applied to the specified page.
 
 > [!NOTE]
 > The preview URL is persistent and authenticated. Therefore, you can copy, paste, and send it to other authenticated co-workers for review before you set it to "active" on your live site. The preview URL is also useful for checking styles on different devices, in different browsers, and on different screens.
