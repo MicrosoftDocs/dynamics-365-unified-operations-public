@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 37
 
 # On-premise Disaster Recovery Configuration
 
-The term disaster is used here to mean an event which makes the primary datacenter unusable – for example, a connection outage which makes the primary datacenter inaccessible. High Availability configuration is not covered within this document – for the minimum setup required for High Availability read [System requirements for on-premises deployments](../../../fin-ops/get-started-system-requirements-on-prem.md#minimum-infrastructure-requirements)
+The term disaster is used here to mean an event which makes the primary datacenter unusable – for example, a connection outage which makes the primary datacenter inaccessible. High Availability configuration is not covered within this document – for the minimum setup required for High Availability read [System requirements for on-premises deployments](../../fin-ops/get-started/system-requirements-on-prem.md#minimum-infrastructure-requirements)
 
 ### Limitations of this document
 
@@ -49,7 +49,7 @@ The diagram below illustrates, at a high level, the required setup:
 
 Within LCS the production environment will be deployed as usual, using the environment slot named **PRODUCTION**. 
 
-Note that Dynamics 365 for Finance and Operations [AOS and SQL Server must be co-located](../../../fin-ops/get-started-system-requirements-on-prem.md#network-requirements) within the same datacenter.
+Note that Dynamics 365 for Finance and Operations [AOS and SQL Server must be co-located](../../fin-ops/get-started/system-requirements-on-prem.md#network-requirements) within the same datacenter.
 
 ## Deploying code packages to Production
 
