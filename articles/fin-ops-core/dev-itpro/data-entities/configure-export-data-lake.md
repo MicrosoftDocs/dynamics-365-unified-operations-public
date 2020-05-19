@@ -313,3 +313,58 @@ directory.
 | Your application from step 2 (b) | Storage Account Contributor |
 | Your application from step 2 (b) | Storage Blob Data Owner     |
 | AI Builder Authorization Service | Storage Blob Data Reader    |
+
+Install the Export to Data Lake add-in in LCS 
+----------------------------------------------
+
+Before you can export data to your Data lake from Finance and Operations, you
+must install the **Export to Data Lake** add-in in LCS. To complete this task,
+you must be an environment administrator in LCS for the environment that you
+want to use.
+
+You need the following information before you start. Keep the information handy
+before you begin.
+
+| **Information you need for Export to Data lake add-in**   | **Where can you find it**                                                                                                                                                                                                |
+|-----------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Your environment AAD Tenant ID                            | You can find your Azure AD tenant ID in the Azure portal. Sign into the **Azure portal** and open the **Azure Active Directory** service. Open the **Properties** page and copy the value in the **Directory ID** field. |
+| DNS name of your Key vault                                | You should have created a key vault by following the steps \<here\> You need the DNS name of your Key vault                                                                                                              |
+| The secret that contains the name of your storage account |                                                                                                                                                                                                                          |
+| Secret that contains the Application ID                   |                                                                                                                                                                                                                          |
+| Secret that contains the Application secret               |                                                                                                                                                                                                                          |
+
+1.  Sign in to [LCS](https://lcs.dynamics.com). Navigate to your environment.
+
+2.  On the **Environment** page, select the **Environment add-ins** Tab. If
+    **Export Data Lake** appears in the list, the Data Lake add-in is already
+    installed, and you can skip the rest of this procedure. Otherwise, follow
+    the remaining steps to install the Data Lake add-in.
+
+-   to do: picture the Data Lake add-in is installed
+
+1.  Select **Install a new add-in**.
+
+2.  In the **Select an add-in to install** dialog box, select **Export to Data
+    lake** in the list. If it isn't listed, the feature might not yet be
+    available for your environment.
+
+-   Selecting the Azure Data lake option
+
+    Selecting the Azure Data lake option
+
+1.  In the **Setup add-in** dialog box, provide the required information. To
+    answer the questions, you must already have a storage account. If you don't
+    already have a storage account, create one, or ask your admin to create one
+    on your behalf.
+
+-   Entering details for the Data Lake add-in
+
+    Entering details for the Data Lake add-in
+
+1.  Accept the terms of the offer by selecting the check box, and then select
+    **Install**.
+
+The system installs and configures the data lake for the environment. After
+installation and configuration are completed, you should see **Azure Data Lake**
+listed on the **Environment** page.
+
