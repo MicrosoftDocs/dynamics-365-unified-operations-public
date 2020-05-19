@@ -53,7 +53,7 @@ You can set up and configure IoT Intelligence without writing any code. Here are
 
 1. [Set up Azure resources](iot-azure-setup.md) – Create an IoT hub, a Redis cache, and a key vault that can be accessed from Supply Chain Management.
 2. [Message schema formats for IoT Hub](iot-schema-format.md) – Configure your devices to send messages to IoT Hub, and define the JavaScript Object Notation (JSON) message format.
-3. Turn on flight for the IoT Intelligence feature. (You must submit a support ticket to have your tenant added to the flighting group.) 
+3. In Feature Management, enable the IoT Intelligence feature flag. 
 4. [Install the IoT Intelligence add-in in Microsoft Dynamics Lifecycle Services (LCS)](iot-lcs-setup.md) – Install the add-in in LCS, and configure the Azure secrets.
 5. [Set up metrics](iot-metrics-setup.md) – Set up metrics in Supply Chain Management.
 6. [Scenario setup](iot-scenario-setup.md) – Set up the scenarios in Supply Chain Management.
