@@ -205,7 +205,8 @@ To protect your configuration keys and license codes, we recommend that you rele
 ## Production environments
 To install ISV licenses in production systems, you must use a deployable package through LCS. You can find a template package for configuration mode at the following location in all installations: \<PackagesFolder\>\\bin\\CustomDeployablePackage\\ImportISVLicense.zip (Packages folder is typically under j:\\AOSService\\PackagesLocalDirectory or c:\\AOSService\\PackagesLocalDirectory\\) 
 
-![Location of the template package for configuration mode](media/isv_template_location.png)
+> [!div class="mx-imgBorder"]
+> ![Location of the template package for configuration mode](media/isv_template_location.png)
 
 1.  Make a copy of the package template.
 2.  Put the license file in the following folder within the package template: ImportISVLicense.zip\\AosService\\Scripts\\License
