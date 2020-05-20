@@ -49,7 +49,7 @@ You can define three types of policies:
  - Justification – Requires the worker or a manager to enter a justification for exceeding the policy amount before submitting the expense report or travel requisition.        
 
 ## Policy tips
-Here are a few suggestions that can assist you whe creating new policies for expense management. 
+Here are a few suggestions that can assist you when creating new policies for expense management. 
 * Policies are date effective and won't take effect if the policy is created with a date after the date that the expense occurred. For example, if you are creating a new policy today to enforce a maximum meal expense of $50, then any existing expenses entered as of yesterday won't be checked against this policy.
 * When creating a policy for an expense category that can be itemized, consider adding a condition for expense line type. Some policies such as requiring a receipt may not make sense for itemized lines and should only be applied to the header line or a non-itemized line. 
 * Expense management policies are evaluated against the source entity by default. For intercompany scenarios, you can set the policy to be evaluated against the destination entity (borrowing entity) instead. To run the policies against the destination entity, turn on the "Evaluate Expense policy against borrowing legal entity" feature in the **Feature Management** workspace.
