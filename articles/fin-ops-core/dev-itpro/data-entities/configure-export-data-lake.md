@@ -349,7 +349,6 @@ installation and configuration are completed, you should see **Azure Data Lake**
 listed on the **Environment** page.
 
 ## Trouble-shooting tips
----------------------
 
 ### Can’t find Microsoft Dynamics ERP Microservices or AI Builder Authorization Service
 
@@ -389,6 +388,7 @@ You will need **Azure Active Directory tenant administrator** rights to perform 
 8.  Login as the Azure Active Directory administrator when prompted.
 
 >   Connect-AzureAD
+
 >   New-AzureADServicePrincipal –AppId \<AppId\>
 
 
