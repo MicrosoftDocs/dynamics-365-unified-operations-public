@@ -2,7 +2,7 @@
   items:
   - name: Dynamics 365 Commerce
     items:
-    - name: Dynamics 365 Commerce
+    - name: Dynamics 365 Commerce home page
       href: index.md
     - name: Get started
       items:
@@ -79,7 +79,7 @@
         - name: Phased Rollout (N-1) installation, configuration, and cutover
           href: dev-itpro/n-1-installation-configuration.md
         - name: Upgrade the Retail channel extension to the latest Retail SDK
-          href: dev-itpro/retailSDK-update.md
+          href: dev-itpro/RetailSDK-update.md
       - name: What's new or changed
         items:
         - name: What's new or changed in Finance and Operations apps
@@ -499,7 +499,7 @@
           - name: Adyen payment connector
             href: dev-itpro/adyen-connector.md
           - name: Saving online payment instruments with the Adyen connector
-            href: dev-itpro/adyen-connector-listpi.md
+            href: dev-itpro/adyen-connector-listPI.md
           - name: Seamless offline switch for gift card and credit memo operations
             href: dev-itpro/seamless-offline-improvements.md
           - name: Set up pay invoice scenarios 
@@ -509,7 +509,9 @@
           - name: Omni-channel payments overview 
             href: omni-channel-payments.md
           - name: Payments FAQ 
-            href: dev-itpro/payments-retail.md     
+            href: dev-itpro/payments-retail.md
+        - name: Manage Bing Maps for your organization
+          href: dev-itpro/manage-bing-maps.md
     - name: Merchandizing your products and services  
       items:
       - name: Categories, products, and assortments 
@@ -824,6 +826,8 @@
           href: search-engine-optimization-considerations.md
         - name: Manage Content Security Policy (CSP)
           href: manage-csp.md
+        - name: Opt out of web activity event collection
+          href: web-activity-opt-out.md
       - name: Manage your site content 
         items:
         - name: Ways to add content
@@ -1714,6 +1718,8 @@
         href: ../fin-ops-core/dev-itpro/office-integration/customize-open-office-menu.md?toc=/dynamics365/commerce/toc.json
       - name: Configure and send email
         href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json
+      - name: Create email templates for transactional events
+        href: email-templates-transactions.md
       - name: Develop email experiences
         href: ../fin-ops-core/dev-itpro/dev-tools/sysmailer-develop.md?toc=/dynamics365/commerce/toc.json
       - name: Troubleshoot the Office integration
@@ -2116,6 +2122,8 @@
           href: dev-itpro/async-commerce-extension.md
         - name: Pre-extended columns in the channel database
           href: dev-itpro/extended-columns.md
+        - name: Extend Commerce Data Exchange - Real-time Service
+          href: dev-itpro/extend-commerce-data-exchange.md
       - name: Payment connector extensibility
         items:
         - name: Create a payment integration for a payment terminal

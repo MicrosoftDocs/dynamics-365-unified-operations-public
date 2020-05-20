@@ -55,7 +55,7 @@ If you want to delete a contact, it's only possible to delete the ones that you'
 Vendor collaboration user requests can be raised by a procurement professional, or by an external vendor administrator.
 
 -   If you're an external vendor, you submit requests from the **All contacts** page within the **Vendor collaboration** module.
--   If you're a procurement professional, you submit requests from the **View contacts** page. To do this, on the vendor record, in the **Setup** section in the Action pane, select **Contacts** &gt; **View contacts**.
+-   If you're a procurement professional, you submit requests from the **View contacts** page. To do this, on the vendor record, in the **Setup** section on the Action Pane, select **Contacts** &gt; **View contacts**.
 
 You can make a request to provision a user, to inactivate a user, or to modify security roles. If you're an external vendor administrator, you must be registered as a contact person for the vendor accounts that you want to make user requests for, and you must have access to the vendor collaboration interface for those vendor accounts.  
 

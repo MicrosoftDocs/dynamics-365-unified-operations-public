@@ -38,7 +38,7 @@ This procedure shows you how to create a trade agreement where you register a ne
 2. Click **New**.
 3. In the **Name** field, click the drop-down button to open the lookup.
 4. In the list, find and select the desired record.
-5. On **Action pane**, click **Lines**.
+5. On **Action Pane**, click **Lines**.
 6. In the **Account code** field, select 'Table'.
     
     In this example, you're updating the price for a specific customer, which means you need to choose Table. If you were updating the product's list price, you would select 'All', so that the new price is valid for all customers. If you were differentiating prices among different customer segments, then you would select Group. To select Group, you must have set up Customer price groups.  

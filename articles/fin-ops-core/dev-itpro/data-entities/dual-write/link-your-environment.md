@@ -56,24 +56,20 @@ ms.dyn365.ops.version: AX 7.0.0
 
 6. Review the summary, privacy notice, and consent, and then select **Create**.
 
-You've now linked your Finance and Operations app to the Common Data Service environment. The next step is to enable entity maps for dual-write.
-
-![Entity maps successfully linked](media/entity-maps-linked.png)
+You've now linked your Finance and Operations app to the Common Data Service environment. 
 
 > [!NOTE]
-> If you don't see your entity maps, or if you see a blank page, be sure to install the entity map solution for the Finance and Operations app.
+> If you don't see your entity maps, or if you see a blank page, be sure to **Apply** the Dual-write application orchestration solution that you installed as part of the system requirements and prerequisities.
 
-7. Install the dual-write entity maps solution.
+7. Apply the dual-write application orchestration solution.
 
-    1. In Power Apps, in the left pane, select **Solutions**. Select **Open AppSource**, and search for the solution that is named **Dual-write application orchestration solution**. Select the solution, and follow the prompts to import it. After installation, you'll find several new solutions listed under **Manage your solutions**. For more information, see [Solutions overview](https://docs.microsoft.com/powerapps/maker/common-data-service/solutions-overview).
+    In the Finance and Operations app, on the **Dual-write** page, select **Apply Solution** to apply the entity maps that you just downloaded and installed. After you apply the solution, you should see that the default entity maps are published.
 
-    2. In the Finance and Operations app, on the **Dual-write** page, select **Apply Solution** to apply the entity maps that you just downloaded and installed. After you apply the solution, you should see that the default entity maps are published.
-
-        ![Applying the entity maps](media/apply-entity-maps.png)
+     ![Applying the entity maps](media/apply-entity-maps.png)
 
 You've now successfully imported and applied a Microsoft-published dual-write entity map solution to your environment.
 
-![Dual-write imported and applied](media/dual-write-imported-applied.png)
+![Entity maps successfully linked](media/entity-maps-linked.png)
 
 
 ## Next steps

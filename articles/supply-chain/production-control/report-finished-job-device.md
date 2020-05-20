@@ -140,12 +140,14 @@ To use the features described in this section, you must use [feature management]
 
 ### Set up reporting as finished to a license plate
 
+
 To control whether workers should reuse an existing license plate or generate a new one when reporting as finished, go to **Production control > Setup > Manufacturing execution > Configure job card for devices** and set the following options for each device:
 
 - **Generate license plate** - Set this to **Yes** to generate a new license plate for each report as finished. Set this to **No** if an existing license plate should be used for each report as finished.
 - **Print label** - Set this to **Yes** if the worker must print a license plate label for each report as finished. Set this to **No** if no label is required. 
 
 ![Configure job card for devices page](media/config-job-card-raf.png "Configure job card for devices page")
+
 
 > [!NOTE]
 > You can configure the label by going to **Warehouse management > Setup > Document routing > Document routing**. See also [Enable license plate label printing](../warehousing/tasks/license-plate-label-printing.md).
