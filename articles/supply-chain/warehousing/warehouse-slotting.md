@@ -37,12 +37,14 @@ This functionality allows warehouse managers to plan picking locations intellige
 
 Before you can use this feature, it must be enabled on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the feature status and enable it if needed. Here, the feature is listed as:
 
-- **Module** - Warehouse management
-- **Feature name** - Warehouse slotting feature <!-- kfm: look  up this value --> <!--<a name="required-settings"></a> -->
+- **Module** - *Warehouse management*
+- **Feature name** - *Warehouse slotting feature*
 
 ## Set up warehouse slotting
 
 To use warehouse slotting, you must set up the following elements in your system:
+
+<a name="unit-tiers"></a>
 
 ### Unit-of-measure tiers for slotting
 
@@ -153,7 +155,7 @@ In the query for the second line, specify the criteria for what location(s) the 
 
 #### Location directives
 
-You must have at least one location directive set up to support slotting picks. Create a new *replenishment location directive* for slotting picks. <!-- KFM: what is this and why do we need it for this feature? -->
+You must have at least one location directive set up to support slotting picks. Create a new *replenishment location directive* for slotting picks.
 
 1. Go to **Warehouse management > Setup > Location directives**
 1. In the left pane **Work order type** select *Replenishment*
@@ -202,8 +204,6 @@ Create a new line and enter the following in the appropriate field, accept the d
 
 ## Scenario
 
-<!-- HHM: <a name="set-up-demo"></a> -->
-
 ### Set up the scenario
 
 For this scenario, use the built-in sample data and create the records described in this section.
@@ -211,8 +211,6 @@ For this scenario, use the built-in sample data and create the records described
 #### Use the USMF sample data
 
 To work through this scenario using the sample records and values specified here, you must be on a system with the standard [demo data](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) installed, and you must select the **USMF** legal entity before you begin.
-
-<!-- HHM: <a name="unit-tiers"></a> -->
 
 #### Create demand
 
