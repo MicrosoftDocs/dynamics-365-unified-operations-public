@@ -242,6 +242,22 @@ As of Platform update 11, users can discover currently available shortcuts direc
 | Move up/down a row in the lookup                                                                                        | Up arrow / Down arrow            |
 | Move up/down a page in the lookup                                                                                       | Page up / Page down              |
 | Move to the top/bottom of the lookup                                                                                    | Home / End                       |
+
+## Task recorder shortcuts
+
+| To do this                                                                    | Press                      |
+|-------------------------------------------------------------------------------|----------------------------|
+| Stop the recording                                                            | Alt+R,S                    |
+| Toggle the visibility of the Task recorder pane (while recording)             | Alt+R,T                    |
+| Toggle Rails mode                                                             | Alt+R,L                    |
+| Go to the previous step (task guide)                                          | Alt+R,P                    |
+| Go to the next step (task guide)                                              | Alt+R,N                    |
+| Toggle focus between the page and the task guide qtip                         | Alt+R,F                    |
+| Expand/collapse something...                                                  | Alt+R,C                    |
+| Show more/less information in the task guide qtip                             | Alt+R,M                    |
+| Toggle focus between the page and the task guide qtip                         | Alt+R,F                    |
+
+
 ## Additional resources
 
 - [Keyboard shortcuts for missing account analysis](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
