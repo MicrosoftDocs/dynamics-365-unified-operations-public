@@ -26,7 +26,7 @@ ms.dyn365.ops.version: 8.1.2
 
 ---
 
-# Goods in transit from vendor
+# Goods in transit from vendor (Russia)
 
 [!include [banner](../includes/banner.md)]
 
