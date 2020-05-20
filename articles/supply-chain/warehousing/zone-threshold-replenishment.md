@@ -8,16 +8,14 @@ As with location-based min/max replenishment, zone-based min/max replenishment i
 
 Unlike location-based min/max replenishment, zone replenishment does not require fixed locations to evaluate whether locations should store a certain item or not. Zone-based replenishment therefore allows you to use min/max replenishment without fixed locations for each item or item variant within the warehouse. When a quantity in the zone falls below the specified minimum, replenishment will be created, and location directives will determine which specific location to put the inventory into.
 
-<!-- KAMAYBAC: It seems like this feature isn't under Feature Management. Is that right? -->
-<!-- HHM: Feature was added 11 OCT 2019 -->
-<!-- HHM: <a name="setup"></a> -->
-
 ## Enable the Zone threshold replenishment feature
 
 Before you can use this feature, it must be enabled on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature status and enable it if needed. Here, the feature is listed as:
 
 - **Module** - *Warehouse management*
 - **Feature name** - *Zone threshold replenishment*
+
+<a name="setup"></a>
 
 ## Set up zone-based replenishment
 
@@ -242,8 +240,6 @@ Do the following to make sure your system includes enough inventory to support t
         - Select **Save**
     - In the **Inventory adjustment** action pane, select **Validate**, address any errors before posting
     - In the **Inventory adjustment** action pane, select **Post** to post the inventory to the warehouse
-
-<!-- KAMAYBAC: Can we give links for how to do these things? -->
 
 ### Sample scenario: Run zone min/max replenishment
 
