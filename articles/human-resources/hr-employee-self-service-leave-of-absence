@@ -30,10 +30,6 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Leave of absence request
-
-[!include [banner](includes/preview-feature.md)]
-
 # Request a leave of absence
 
 You can submit requests for a leave of absence and and see the status of your leave requests in Dynamics 365 Human Resources.
@@ -59,3 +55,5 @@ You can submit requests for a leave of absence and and see the status of your le
 
 2. To view your leave of absence requests, select **View leave of absence**.
 
+## See also
+- [Suspend leave](hr-leave-and-absence-suspend-leave.md)
