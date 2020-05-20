@@ -43,8 +43,8 @@ This topic lists the features that are included in the platform updates for vers
 ## Features included in this release
 
 -  [Designate fields as required via the Personalization toolbar](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/usability-improvements-filtering-personalization) – For more information, see 
-[Personalize the user experience](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/personalize-user-experience). 
--  [Edit basic control values in task recordings](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/new-task-recorder-capabilities-rsat) – For more information, see [Task recorder resources](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/user-interface/task-recorder).
+[Personalize the user experience](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/personalize-user-experience). 
+-  [Edit basic control values in task recordings](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/new-task-recorder-capabilities-rsat) – For more information, see [Task recorder resources](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/user-interface/task-recorder).
 -  [Scanning files and attachments for malicious code](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=c0cade82-ea96-ea11-a811-000d3a579c38) – For more information, see [File upload control](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/user-interface/file-upload-control) and [Configure document management](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management).
 -  [Show related document attachments](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=1c7a5aec-3d96-ea11-a811-000d3a579c34) – For more information, see [Configure document management](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management).
 - [Feature name](URL to feature in the Release Plans) – For more information, see [Topic name](URL of topic that has detailed info).
@@ -77,7 +77,7 @@ For breaking changes that affect only compilation time, but that are binary-comp
 
 ## Embedded PDF Viewer is Generally Available
 
-The embedded PDF viewer is now the default experience for previewing reports in Dynamics 365 applications. The modern viewer control allows users to navigate documents that exactly match printed output and easily print to local devices. [Click here](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/preview-pdf-documents) for more information on previewing reports using the embedded PDF viewer.
+The embedded PDF viewer is now the default experience for previewing reports in Dynamics 365 applications. The modern viewer control allows users to navigate documents that exactly match printed output and easily print to local devices. [Click here](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/preview-pdf-documents) for more information on previewing reports using the embedded PDF viewer.
 
 ## Export reports to Word documents
 
@@ -85,6 +85,6 @@ Use built-in controls to export reports as Word documents. This option is now av
 
 ## Sub reports supported in self-service deployments
 
-In response to partner feedback, we have added support for application solutions that include sub reports items to self-service deployments. A [sub report](https://docs.microsoft.com/en-us/sql/reporting-services/report-design/subreports-report-builder-and-ssrs?view=sql-server-ver15) item allows the designer to embed an entire report inside the main body of another report. This can be an effective tool for reports like *Customer Payment Proposals* that include both a header and body in the document. Using a sub report, the report author was able to efficiently exclude or include the document header at runtime depending on an evaluation of the report parameters. 
+In response to partner feedback, we have added support for application solutions that include sub reports items to self-service deployments. A [sub report](https://docs.microsoft.com/sql/reporting-services/report-design/subreports-report-builder-and-ssrs?view=sql-server-ver15) item allows the designer to embed an entire report inside the main body of another report. This can be an effective tool for reports like *Customer Payment Proposals* that include both a header and body in the document. Using a sub report, the report author was able to efficiently exclude or include the document header at runtime depending on an evaluation of the report parameters. 
 
 **Important:** The use of sub report items within a Tablix control is *not* recommended for application solutions. Report design definitions that include sub report items within a Tablix control are highly discouraged and may produce runtime errors in the service.
