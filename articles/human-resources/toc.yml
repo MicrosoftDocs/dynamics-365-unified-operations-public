@@ -521,6 +521,8 @@
         href: hr-employee-self-service-calendar.md
       - name: Buy and sell leave
         href: hr-leave-and-absence-buy-and-sell-leave.md
+      - name: Buy and sell leave request
+        href: hr-employee-self-service-buy-sell-request
         
     - name: Manage leave requests in Teams
       href: hr-teams-leave-app.md
