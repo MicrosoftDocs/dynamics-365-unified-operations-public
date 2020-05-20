@@ -74,17 +74,3 @@ The [Removed or deprecated platform features](removed-deprecated-features-platfo
 A deprecation notice will be added in the [Removed or deprecated platform features](removed-deprecated-features-platform-updates.md) topic 12 months before the removal of any feature from the product.
 
 For breaking changes that affect only compilation time, but that are binary-compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these changes are functional updates that must be made to the compiler.
-
-## Embedded PDF Viewer is Generally Available
-
-The embedded PDF viewer is now the default experience for previewing reports in Dynamics 365 applications. The modern viewer control allows users to navigate documents that exactly match printed output and easily print to local devices. [Click here](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/preview-pdf-documents) for more information on previewing reports using the embedded PDF viewer.
-
-## Export reports to Word documents
-
-Use built-in controls to export reports as Word documents. This option is now available in the Destination tab of the report parameter slider.
-
-## Sub reports supported in self-service deployments
-
-In response to partner feedback, we have added support for application solutions that include sub reports items to self-service deployments. A [sub report](https://docs.microsoft.com/sql/reporting-services/report-design/subreports-report-builder-and-ssrs?view=sql-server-ver15) item allows the designer to embed an entire report inside the main body of another report. This can be an effective tool for reports like *Customer Payment Proposals* that include both a header and body in the document. Using a sub report, the report author was able to efficiently exclude or include the document header at runtime depending on an evaluation of the report parameters. 
-
-**Important:** The use of sub report items within a Tablix control is *not* recommended for application solutions. Report design definitions that include sub report items within a Tablix control are highly discouraged and may produce runtime errors in the service.
