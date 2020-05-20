@@ -142,61 +142,61 @@ Finance and Operations.
 
 To create a key vault and a secret, follow the steps below
 
-1.  In the Azure portal, create a new Key Vault. (choose **Create new resource**
+6.  In the Azure portal, create a new Key Vault. (choose **Create new resource**
     and search for **Key Vault**)
 
-2.  In the **Create key vault** dialog box, in the **Location** field, select
+7.  In the **Create key vault** dialog box, in the **Location** field, select
     the data center where your environment is located.
 
-3.  After Key Vault is created, select it in the list, and then
+8.  After Key Vault is created, select it in the list, and then
     select **Secrets**.
 
-4.  Select **Generate/Import**.
+9.  Select **Generate/Import**.
 
-5.  In the **Create a secret** dialog box, in the **Upload options** field,
+10.  In the **Create a secret** dialog box, in the **Upload options** field,
     select **Manual**.
 
-6.  Enter a name for the secret. Make a note of the name, because you will have
+11.  Enter a name for the secret. Make a note of the name, because you will have
     to provide it later.
 
-7.  In the value field, enter the **storage account name** that you obtained
+12.  In the value field, enter the **storage account name** that you obtained
     from the storage account in the previous procedure.
 
-8.  Select **Enabled**, and then select **Create**. The secret is created and
+13.  Select **Enabled**, and then select **Create**. The secret is created and
     added to Key Vault.
 
 Create an Application in Azure Active Directory
 -----------------------------------------------
 
-1.  In the Azure portal, select **Azure Active Directory**, and then
+14.  In the Azure portal, select **Azure Active Directory**, and then
     select **App registrations**.
 
-2.  Select **New registration**, and enter the following information:
+15.  Select **New registration**, and enter the following information:
 
     -   **Name:** Enter a name for the app
 
     -   Choose the appropriate option for **Supported Account types**
 
-3.  After the application is created, select it. Copy and save the **Application
+16.  After the application is created, select it. Copy and save the **Application
     (client) ID** that you see on the top of the page. You will need this later
 
-4.  Next select **API permissions** option from the left navigation.
+17.  Next select **API permissions** option from the left navigation.
 
-5.  Choose **+Add a permission** option. Select **Azure Key vault** from the
+18.  Choose **+Add a permission** option. Select **Azure Key vault** from the
     **Request API permissions** dialog
 
-6.  Select **Delegated permissions**, check **user_impersonation** and select
+19.  Select **Delegated permissions**, check **user_impersonation** and select
     **Add permissions.** The result will look like the one below
 
 ![](media/ce7b48fc554ff31d7256e20e6398fb6f.png)
 
-1.  Select **Certificates & secrets** option on the left menu for the app.
+20.  Select **Certificates & secrets** option on the left menu for the app.
 
-2.  Select **+New client secret**. In the **Description** field, enter a name.
+21.  Select **+New client secret**. In the **Description** field, enter a name.
     Select an option in the **Expires** option. Then select **Add**.
 
-3.  The system will generate a secret next. **Immediately copy the secret to the
-    clipboard**, as it will disappear within one or two minutes. You will have
+22.  The system will generate a secret next. **Immediately copy the secret to the clipboard**, 
+    as it will disappear within one or two minutes. You will have
     to provide this secret value when setting up the key vault later.
 
 ![](media/5062180174bd6ba94b22f29b43e8aacd.png)
@@ -216,42 +216,42 @@ and provide the value you saved from earlier steps.
 
 You will need to perform the following steps 3 times, once for each secret
 
-1.  In the Azure portal, go to the Key vault you created earlier. Select
+23.  In the Azure portal, go to the Key vault you created earlier. Select
     **Secrets** in the left navigation menu
 
-2.  Select **+Generate/Import**.
+24.  Select **+Generate/Import**.
 
-3.  In the **Create a secret** dialog box, in the **Upload options** field,
+25.  In the **Create a secret** dialog box, in the **Upload options** field,
     select **Manual**.
 
-4.  Provide a **name** for the secret – see the suggested names above.
+26.  Provide a **name** for the secret – see the suggested names above.
 
-5.  Copy and paste the corresponding secret value in the **value** field
+27.  Copy and paste the corresponding secret value in the **value** field
 
-6.  Select **enabled** and then select **create**.
+28.  Select **enabled** and then select **create**.
 
-7.  You will notice the secret created in the list of secrets
+29.  You will notice the secret created in the list of secrets
 
 Authorize the Application so that it can read the secrets in the Key vault
 --------------------------------------------------------------------------
 
-1.  In **Azure Portal**, open the Key Vault that you created earlier.
+30.  In **Azure Portal**, open the Key Vault that you created earlier.
 
-2.  Select **Access policies** in the left navigation menu and then select
+31.  Select **Access policies** in the left navigation menu and then select
     **+Add Access Policy** to create a new policy. **Add access policy** dialog
     will be shown
 
-3.  In the **Select principal** field, search for the name of the application
+32.  In the **Select principal** field, search for the name of the application
     you created earlier.
 
-4.  When you find your application in the list of principals, **click** on the
+33.  When you find your application in the list of principals, **click** on the
     application, and click the **select** button at the bottom of the dialog.
 
-5.  Select **Add** in the Add access policy dialog
+34.  Select **Add** in the Add access policy dialog
 
-6.  Select **Save**
+35.  Select **Save**
 
-7.  Open issue: why do we add the microservices app ID?
+36.  Open issue: why do we add the microservices app ID?
 
 | Application                                                   | Permissions |
 |---------------------------------------------------------------|-------------|
@@ -266,27 +266,27 @@ Next, you need to grant your application with permissions to read and write to
 the storage account. These permissions are granted via Roles in Active
 directory.
 
-1.  In **Azure Portal**, open the storage account created you created earlier
+37.  In **Azure Portal**, open the storage account created you created earlier
 
-2.  Select **Access Control (IAM)** in the left navigation. You will see the
+38.  Select **Access Control (IAM)** in the left navigation. You will see the
     Access control page.
 
-3.  Select the **Role assignments** tab in the page
+39.  Select the **Role assignments** tab in the page
 
-4.  Click on **+ Add**, at the top of the page and choose **Add role
+40.  Click on **+ Add**, at the top of the page and choose **Add role
     assignment**
 
-5.  In the **Add role assignment** dialog, select the **Role** field and select
+41.  In the **Add role assignment** dialog, select the **Role** field and select
     **Owner**.
 
-6.  Keep field **Assign access to**” unchanged as “**Azure AD user, group, or
+42.  Keep field **Assign access to**” unchanged as “**Azure AD user, group, or
     service principal**”
 
-7.  In the **Select** field, choose the application you registered earlier.
+43.  In the **Select** field, choose the application you registered earlier.
 
-8.  Select **Save**
+44.  Select **Save**
 
-9.  You need to add all the roles shown in the following table by following
+45.  You need to add all the roles shown in the following table by following
     similar steps (you already added the owner role. You need to add the rest.
 
 | **Application to be selected**   | **Role to be assigned**     |
@@ -316,35 +316,25 @@ before you begin.
 | Secret that contains the Application ID                   |                                                                                                                                                                                                                          |
 | Secret that contains the Application secret               |                                                                                                                                                                                                                          |
 
-1.  Sign in to [LCS](https://lcs.dynamics.com). Navigate to your environment.
+46.  Sign in to [LCS](https://lcs.dynamics.com). Navigate to your environment.
 
-2.  On the **Environment** page, select the **Environment add-ins** Tab. If
+47.  On the **Environment** page, select the **Environment add-ins** Tab. If
     **Export Data Lake** appears in the list, the Data Lake add-in is already
     installed, and you can skip the rest of this procedure. Otherwise, follow
-    the remaining steps to install the Data Lake add-in.
+    the remaining steps.
 
--   to do: picture the Data Lake add-in is installed
+48.  Select **Install a new add-in**.
 
-1.  Select **Install a new add-in**.
-
-2.  In the **Select an add-in to install** dialog box, select **Export to Data
+49.  In the **Select an add-in to install** dialog box, select **Export to Data
     lake** in the list. If it isn't listed, the feature might not yet be
     available for your environment.
 
--   Selecting the Azure Data lake option
-
-    Selecting the Azure Data lake option
-
-1.  In the **Setup add-in** dialog box, provide the required information. To
+50.  In the **Setup add-in** dialog box, provide the required information. To
     answer the questions, you must already have a storage account. If you don't
     already have a storage account, create one, or ask your admin to create one
     on your behalf.
 
--   Entering details for the Data Lake add-in
-
-    Entering details for the Data Lake add-in
-
-1.  Accept the terms of the offer by selecting the check box, and then select
+51.  Accept the terms of the offer by selecting the check box, and then select
     **Install**.
 
 The system installs and configures the data lake for the environment. After
