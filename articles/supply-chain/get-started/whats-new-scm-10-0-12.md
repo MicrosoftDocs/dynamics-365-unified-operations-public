@@ -44,11 +44,22 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 
 The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. Additional links point to additional documentation or videos that are currently available for that feature. Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
+- [Allow locking the job card touchscreen for sanitization](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/allow-locking-job-card-touchscreen-sanitization) - For more information, see [Configure job card for devices](../production-control/config-job-card-device.md).
+- [Capture product variants and tracking dimensions in the warehousing app during load item receiving](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/capture-product-variants-tracking-dimensions-warehousing-app-during-load-item-receiving) - For more information, see [Set up mobile devices for warehouse work](../warehousing/configure-mobile-devices-warehouse.md).
+- Cost calculation level (New BOM level) - For more information, see [Cost calculation level](../cost-management/cost-calculation-level.md)
+- [Customer portal for Dynamics 365 Supply Chain Management](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/customer-self-service-experiences) - For more information, see [Customer portal for Dynamics 365 Supply Chain Management overview](../sales-marketing/customer-portal-overview.md)
+- [Inventory on-hand service](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/inventory-on-hand-service)
+- [IoT intelligence core insights](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/iot-intelligence-core-insights)  - For more information, see [IoT Intelligence home page](../iot/iot-intelligence-home-page.md)
+- [License plate receiving enhancements for the warehousing app (continued)](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app-continued) - For more information, see [License plate receiving via the warehousing app](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md)
+- [Mass deployment for Warehouse mobile app](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/mass-deployment-warehouse-mobile-app) - For more information, see [Install and configure the Warehousing app overview](../warehousing/install-configure-warehousing-app.md)
+- [Maximum execution time for the warehouse management on-hand entries cleanup job](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/maximum-execution-time-warehouse-management-on-hand-entries-cleanup-job) - For more information, see [Warehouse management on-hand entries cleanup job](../warehousing/onhand-cleanup.md)
+- [Planning Optimization support for purchase trade agreements](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/planning-optimization-support-purchase-trade-agreements) - For more information, see [Master planning with purchase trade agreements](../master-planning/planning-optimization/purchase-trade-agreement.md)
+
 ## Additional resources
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.12 includes platform updates. To learn more, see [Platform updates for version 10.0.12 of Finance and Operations apps (Augst 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-36.md). <!-- KFM: Check/update this link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.12 includes platform updates. To learn more, see [Platform updates for version 10.0.12 of Finance and Operations apps (August 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-36.md). <!-- KFM: Check/update this link -->
 
 ### Bug fixes
 
