@@ -2279,8 +2279,6 @@
           href: warehousing/tasks/create-location-profile.md
         - name: Configure locations in a WMS-enabled warehouse
           href: warehousing/tasks/configure-locations-wms-enabled-warehouse.md
-        - name: Additional location zones
-          href: warehousing/additional-location-zones.md
         - name: Schedule load utilization
           href: warehousing/schedule-load-utilization.md
         - name: Schedule workload capacity
