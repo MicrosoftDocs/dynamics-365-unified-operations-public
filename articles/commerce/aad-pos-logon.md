@@ -54,7 +54,7 @@ To apply the settings to POS clients, follow these steps.
 > Azure AD authentication requires an internet connection. It won't work when POS is in offline mode.
 
 > [!NOTE]
-> For now, the **Manager override** function does not support Azure AD as an authentication method. Operator ID and password are required even if Azure AD is configured as the POS logon authentication method.
+> For now, the **Manager override** function does not support Azure AD as an authentication method. An operator ID and password are required even if Azure AD is configured as the POS logon authentication method.
 
 ## Associate an Azure AD account with a worker
 
