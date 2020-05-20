@@ -44,49 +44,41 @@ You must create a storage account in your own Azure subscription. This storage
 account will be used to store data.
 
 Next, you must create an Azure Active Directory (Azure AD) application ID that
-grants access to the root of your storage account. The system will use the Azure
+grants access to the root of your storage account. Finance and Operations will use the Azure
 AD application to gain access to storage – and create the folder structure and
 write data.
 
-Finally, you must create a key vault in your subscription, and provide
-information about your storage account and the application to the Data Lake
-offer in Microsoft Dynamics Lifecycle Services (LCS).
+Finally, you must create a key vault in your subscription, and store the names of the storage account, application ID and the application secrets. If you don't have permissions to create resources in Azure portal, you will need assistance from someone in your organization with required permissions.
 
 Let's review the steps in detail
 
 In **Azure portal**
 
-1.  Create a Microsoft Azure Data Lake Storage Gen2 account (a storage account)
+a.  Create a Microsoft Azure Data Lake Storage Gen2 account (a storage account)
     in your subscription
 
-2.  Create an Application in Azure Active Directory. Get the App ID and an
+b.  Create an Application in Azure Active Directory. Get the App ID and an
     generate an App secret.
 
-3.  Create a Key vault and create 3 secrets that contain the storage account
+c.  Create a Key vault and create 3 secrets that contain the storage account
     name as well as the application ID and App secret
 
-4.  Authorize the Application you created earlier so that it can read the
+d.  Authorize the Application you created earlier so that it can read the
     secrets in the key vault.
 
-5.  Grant Access control roles so that your application can access the storage
+e.  Grant Access control roles so that your application can access the storage
     account
 
-When following above process, the document will instruct you to save several
-values such as Key vault details that are required for subsequent steps. Next
-you are going to provide these values (via a key vault) to Finance and
+When following above process in Azure portal, the document will instruct you to save several
+values such as the name of storage account for subsequent steps. 
+
+Next you are going to provide these values to Finance and
 Operations using the **Dynamics Life cycle services (LCS),** you will need
-Administrator access to LCS in order to perform this step
+Administrator access to LCS in order to perform this step.
 
-1.  Install the **Export to Data Lake** add-in in **LCS**
+f.  Install the **Export to Data Lake** add-in in **LCS**
 
-In **Finance and Operations**,
-
-1.  Turn on the **Export to Azure Data Lake** feature.
-
-2.  Select data (that is, the tables and entities that should be staged in Data
-    Lake).
-
-3.  Monitor the tables in Data Lake.
+You are done with the configuration step. 
 
 
 Create a Data Lake Storage (Gen2) account in your subscription
@@ -138,9 +130,7 @@ Create a key vault and a secret that contains the Storage account
 -----------------------------------------------------------------
 
 A key vault is a secure way to hand over details such as storage account name to
-Finance and Operations.
-
-To create a key vault and a secret, follow the steps below
+Finance and Operations. To create a key vault and a secret, follow the steps below
 
 6.  In the Azure portal, create a new Key Vault. (choose **Create new resource**
     and search for **Key Vault**)
@@ -148,19 +138,18 @@ To create a key vault and a secret, follow the steps below
 7.  In the **Create key vault** dialog box, in the **Location** field, select
     the data center where your environment is located.
 
-8.  After Key Vault is created, select it in the list, and then
-    select **Secrets**.
+8.  After Key Vault is created, select it in the list. Select **Overview** from the left navigation menu. Save the value of the field **DNS name** that you see on the top right of the page. You will need this value later.
 
-9.  Select **Generate/Import**.
+9.  Next, select **Secrets** in the left navigation menu. Select **Generate/Import**.
 
 10.  In the **Create a secret** dialog box, in the **Upload options** field,
     select **Manual**.
 
-11.  Enter a name for the secret. Make a note of the name, because you will have
+11.  Enter a name for the secret, ex. **storage-account-name**. Make a note of the name, because you will have
     to provide it later.
 
 12.  In the value field, enter the **storage account name** that you obtained
-    from the storage account in the previous procedure.
+    from the storage account in step (5). 
 
 13.  Select **Enabled**, and then select **Create**. The secret is created and
     added to Key Vault.
@@ -251,17 +240,16 @@ Authorize the Application so that it can read the secrets in the Key vault
 
 36.  Select **Add** in the Add access policy dialog
 
-Next you are going to add **Microsoft Dynamics ERP Microservices** service to access your key vault.
+Next you are going to allow  **Microsoft Dynamics ERP Microservices** service to access your key vault.
 
 37.  Select **Access policies** in the left navigation menu and then select
     **+Add Access Policy** to create a new policy. **Add access policy** dialog
     will be shown
 
 38.  In the **Select principal** field, search for the application **Microsoft Dynamics ERP Microservices**
-    Can't fnd this application? - pl. see the trouble-shooting section
-
-39.  When you find your application in the list of principals, **click** on the
-    application, and click the **select** button at the bottom of the dialog.
+    
+39.  When you find your **Microsoft Dynamics ERP Microservices** in the list of principals, **click** on the
+    application, and click the **select** button at the bottom of the dialog. Can't fnd **Microsoft Dynamics ERP Microservices**? - see the trouble-shooting section at the end of this document
 
 40.  In the **Key permissions** field, select **Get** and **List** options. 
 
@@ -269,7 +257,7 @@ Next you are going to add **Microsoft Dynamics ERP Microservices** service to ac
 
 42.  Select **Add** in the Add access policy dialog
 
-You should now see the following application provided with the permissions shown below
+You should see 2 applications with access to your key vault as shown below
 
 | Application                                                   | Key Permissions | Secret permissions |
 |---------------------------------------------------------------|-----------------|--------------------|
@@ -330,10 +318,10 @@ before you begin.
 | **Information you need for Export to Data lake add-in**   | **Where can you find it**                                                                                                                                                                                                |
 |-----------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Your environment AAD Tenant ID                            | You can find your Azure AD tenant ID in the Azure portal. Sign into the **Azure portal** and open the **Azure Active Directory** service. Open the **Properties** page and copy the value in the **Directory ID** field. |
-| DNS name of your Key vault                                | You should have created a key vault by following the steps \<here\> You need the DNS name of your Key vault                                                                                                              |
-| The secret that contains the name of your storage account |                                                                                                                                                                                                                          |
-| Secret that contains the Application ID                   |                                                                                                                                                                                                                          |
-| Secret that contains the Application secret               |                                                                                                                                                                                                                          |
+| DNS name of your Key vault                                | You should have saved this name by following step (8). Enter the  the DNS name of your Key vault                                                                                                               |
+| The secret that contains the name of your storage account |  If you used the suggested names for steps 23..28, enter **storage-account-name**. if not, enter the secret name you defined.                                                                                                                                                                                                                         |
+| Secret that contains the Application ID                   |  If you used the suggested names for steps 23..28, enter **app-id**. if not, enter the secret name you defined.                                                                                       |
+| Secret that contains the Application secret               |  If you used the suggested names for steps 23..28, enter **app-secret**. if not, enter the secret name you defined.                                                                                             |
 
 53.  Sign in to [LCS](https://lcs.dynamics.com). Navigate to your environment.
 
