@@ -103,16 +103,16 @@ This setup isn't required in all situations. The example shown here ensures that
 1. Find or create a work template where you want to set up the confirm-and-transfer feature (If you're working with the **USMF** legal-entity demo data, then edit the **51 Pick to stage** work template.)
 1. Select **Edit query** on the action pane to open the **Sales** flyout.
 1. Open the **Sorting** tab on the flyout.
-1. Select **Add** to add a new row to the table and then make the following settings for the new row: <!-- KMF: what are we doing here? What do these settings do? Do we always want to do this? Do we have a link for more info? -->
+1. Select **Add** to add a new row to the table and then make the following settings for the new row: <!-- KFM: what are we doing here? What do these settings do? Do we always want to do this? Do we have a link for more info? -->
     - **Table**: Temporary work transactions
     - **Derived table**: Temporary work transactions
     - **Field**: Shipment ID
     - **Search direction**: Ascending
 1. Select **OK** to save your settings and close the flyout.
-1. You may see an alert telling you that grouping will be reset. Select **Yes** to continue. <!-- KMF: I got this warning. Anything more to say here? -->
+1. You may see an alert telling you that grouping will be reset. Select **Yes** to continue. <!-- KFM: I got this warning. Anything more to say here? -->
 1. In the **Work templates** table, select the template that you just edited and then select **Work header breaks** on the action pane.
 1. Select **Edit** on the action pane to put the page into edit mode.
-1. Make the following settings in the table: <!-- KMF: what are we doing here? What do these settings do? Do we always want to do this? Do we have a link for more info? -->
+1. Make the following settings in the table: <!-- KFM: what are we doing here? What do these settings do? Do we always want to do this? Do we have a link for more info? -->
     - **Table name**: Temporary work transactions
     - **Field name**: Shipment ID
     - **Group by this field**: (Selected)
@@ -165,14 +165,14 @@ To create a qualifying load first create three sales orders:
     - Line 2: **Item number** "M9202", **Quantity** "60", **Unit** "ea"
     - Line 2: Reserve the inventory for the sales line (**steps 6 - 8**).
 
-    <!-- KMF: I was unable to confirm any of the steps after this point. -->
+    <!-- KFM: I was unable to confirm any of the steps after this point. -->
 
 <!-- HHM: Commenting this text out after adding above. 1. Make sure you have enough inventory in the pick locations for all of the items in the sales orders you just created. Review the **Location directive** setting and take note of the picking locations are used for sales order picking. If you need to adjust the inventory, create manual movements, use replenishment, or any other flow as needed. -->
 
-<!-- KMF: How do I do these things? Where is the **location directive** setting? Do we have links for more info? -->
+<!-- KFM: How do I do these things? Where is the **location directive** setting? Do we have links for more info? -->
 
 <!-- HHM: Commenting out, added steps above. 1. Reserve the inventory. -->
-<!-- KMF: How? Inventory > Reservation? Then what? Use all three SOs?  Do we have a link for more info? -->
+<!-- KFM: How? Inventory > Reservation? Then what? Use all three SOs?  Do we have a link for more info? -->
 
 ### Load Planning Workbench
 
@@ -197,14 +197,14 @@ The load planning workbench will utilize the **Load template ID** to build the s
 1. Make note of the **Work ID**'s created, you may need to scroll right to identify the sales **Order number** and **Shipment ID** associated with the work ID.
 
 <!-- HHM: Karl, I addressed your comments below in the above. >
-<!-- KMF: I only see one workbench. What load template do you mean? How do I know where my load will be created? -->
-<!-- KMF: How do I choose a template? Which template should I choose? (Earlier, we prepare the **20' Container** load template.) What setup do you mean? -->
-<!-- KMF: How/when is it created? Does this happen automatically after choosing a load template in the last step? -->
-<!-- KMF: This makes no sense to me. I suspect several steps are missing. -->
+<!-- KFM: I only see one workbench. What load template do you mean? How do I know where my load will be created? -->
+<!-- KFM: How do I choose a template? Which template should I choose? (Earlier, we prepare the **20' Container** load template.) What setup do you mean? -->
+<!-- KFM: How/when is it created? Does this happen automatically after choosing a load template in the last step? -->
+<!-- KFM: This makes no sense to me. I suspect several steps are missing. -->
 
 ### Step 2: Set up the execution flow for mobile devices
 
-<!-- KMF: I couldn't edit this section because none of it makes sense to me. I suspect many steps and/or links are missing. Please review and revise. -->
+<!-- KFM: I couldn't edit this section because none of it makes sense to me. I suspect many steps and/or links are missing. Please review and revise. -->
 <!-- HHM: Kyle, I addressed your concern below. We may want to discuss how to address for all mobile device tasks in a common format. The mobile device relies heavily on License Plate ID's and Work ID's that in the field would be readily available to users in the form of scanning a barcode where in scenario testing you need that information provided to you.  -->
 
 Mobile device tasks will require user input of information, such as **Work ID** or **License Plate**. In the field, this information is typically provided for warehouse users in the form of barcodes found on documentation, packaging or racking. To complete the mobile device steps of scenarios, ensure that you have identified the work ID's for the transactions and the license plate ID's for the item and location in the transactions.
@@ -245,7 +245,7 @@ In this step you will confirm the two Sales orders/Work that have been completed
 1. Select **OK**. A processing operation message may appear.
 1. Informational messages are displayed indicating that the **shipment** for your load has been confirmed, and, a new **Load** has been created from the split quantity.
 
-<!-- KMF: I couldn't reproduce this procedure after this point, so I wasn't able to edit after here. -->
+<!-- KFM: I couldn't reproduce this procedure after this point, so I wasn't able to edit after here. -->
 
 On the main screen, the user is presented with the newly created Load after a refresh.
 
@@ -260,7 +260,7 @@ You can also confirm that transaction relations have been updated accordingly.
 
 ## Notes and tips
 
-- You can also enable **Allow load split during ship confirm** after the load has been created with the **Load template** parameter turned off, but before the loading process has started. To do so, navigate to the desired load and on the header view enable the parameter. <!-- KMF: Please clarify the last sentence here. -->
+- You can also enable **Allow load split during ship confirm** after the load has been created with the **Load template** parameter turned off, but before the loading process has started. To do so, navigate to the desired load and on the header view enable the parameter. <!-- KFM: Please clarify the last sentence here. -->
 - The **Split quantity to new load** option also works when some of the remaining work headers have a status of **In process**, which means that you can still use the functionality even if workers are already executing the pick orders.
 - If you select **Cancel unfulfilled quantity** while there is remaining work with a status of **Open** or **In progress**, you will get the following error: *Unable to cancel remaining qty for load. Work exists for load*.
 - If you select **Cancel unfulfilled quantity** when there is no work remaining (but unreleased load lines are on the load), you will get the following error: *The shipment for load could not be confirmed because the quantity for item exceeds the percentage that is defined for under delivery.* You can avoid this by setting the **Under delivery** percentage on the unreleased load line to 100%. This won't move unreleased lines to a new load, but will confirm the current load with under delivery. You won't be able to re-release the original order in this case, so you'll have to handle it in some other way.
