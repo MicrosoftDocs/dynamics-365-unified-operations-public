@@ -51,10 +51,10 @@ There are four fields on the **Locations** page that track information about the
 
 Before you can use this feature, it must be enabled on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the feature status and enable it if needed. Here, the feature is listed as:
 
-- **Module** - Warehouse management
-- **Feature name** - Warehouse location status
+- **Module** - *Warehouse management*
+- **Feature name** - *Warehouse location status*
 
-## Setup warehouse location status
+## Set up warehouse location status
 
 ### Prepare the sample data required for this example scenario
 
@@ -68,7 +68,7 @@ To work through the example scenario using the sample records and values specifi
 
 The example scenario requires that you prepare two location profiles as follows:
 
-1. Go to **Warehouse management > Setup > Warehouse > Location profiles**.
+1. Go to **Warehouse management \> Setup \> Warehouse \> Location profiles**.
 
 1. Select **Edit** to put the page into edit mode.
 
@@ -86,7 +86,7 @@ The example scenario requires that you prepare two location profiles as follows:
 
 ### Scenario
 
-1. Go to **Procurement and Sourcing > Purchase orders > All purchase orders**.
+1. Go to **Procurement and Sourcing \> Purchase orders \> All purchase orders**.
 
 1. Select **New**.
 
@@ -103,7 +103,7 @@ The example scenario requires that you prepare two location profiles as follows:
 
 1. Confirm the purchase order. On the Action Pane select **Purchase**, in the **Actions** group select **Confirm**.
 
-1. Open the mobile device and go to **Inbound > Purchase Receive**.
+1. Open the mobile device and go to **Inbound \> Purchase Receive**.
 
 1. Select the **PONUM** field
 
@@ -123,7 +123,7 @@ The example scenario requires that you prepare two location profiles as follows:
 
 1. In the **Lines** section and note the **Pick** and **Put** *Location*.
 
-1. On the mobile device, go to **Inbound > Purchase Put-away**.
+1. On the mobile device, go to **Inbound \> Purchase Put-away**.
 
 1. Select the **ID** field.
 
@@ -139,7 +139,7 @@ The example scenario requires that you prepare two location profiles as follows:
 
 1. Select **Back** to return to the **Main Menu**.
 
-1. In Finance and Operations, go to **Warehouse management > Setup > Warehouse > Locations**.
+1. In Finance and Operations, go to **Warehouse management \> Setup \> Warehouse \> Locations**.
 
 1. Filter on **Location**, and enter the putaway location from the purchase order work.
 
@@ -163,13 +163,13 @@ The example scenario requires that you prepare two location profiles as follows:
 
 1. Select the **3 lines** (*Hamburger*) in the upper right corner and select **Cancel** to exit **Movement** and return to the *Quality Management* menu. Select **Back** to return to the **Main Menu**.
 
-1. In Finance and Operations, go to **Warehouse management > Setup > Warehouse > Locations**.
+1. In Finance and Operations, go to **Warehouse management \> Setup \> Warehouse \> Locations**.
 
 1. On the **Locations** page, refresh and view the original putaway location again. Notice that the **Location Status** is now "Empty", and the **Item number** column is blank.
 
 1. View the record for location **06A07R2S1B** and notice that the **Status** changed to "Storage" and the **Item number** and **Last Activity Date and Time** fields are updated.
 
-1. Go to **Sales and marketing > Sales orders > All sales orders**.
+1. Go to **Sales and marketing \> Sales orders \> All sales orders**.
 
 1. Select **New**.
 
@@ -222,7 +222,7 @@ The **QTY** screen gives you two options to enter a value, select the **Plus (+)
 
 1. Select the **3 lines** (*Hamburger*) in the upper right corner and select **Cancel** to complete picking activity and return to the Outbound menu.
 
-1. In Finance and Operations, go to **Warehouse management > Setup > Warehouse > Locations**.
+1. In Finance and Operations, go to **Warehouse management \> Setup \> Warehouse \> Locations**.
 
 1. Filter on **Location**, and enter the pick location from the sales order work.
 
