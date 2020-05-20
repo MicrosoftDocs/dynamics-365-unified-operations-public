@@ -34,7 +34,15 @@ The term disaster is used here to mean an event which makes the primary datacent
 
 ### Limitations of this document
 
-This document will not go into specific configuration details for disaster recovery of ADFS, file storage components, or SQL.
+This document will not go into specific configuration details for disaster recovery of AD FS, file storage components, or SQL server.
+
+### Recommendations
+
+Remember to keep your DR environment updated with the latest Windows Updates so your environment has the latest security updates and it doesn't require any updates during a disaster event.
+
+Ensure that you are applying new pre-requisites that are specified by Microsoft as well as keeping your Service Fabric Cluster updated and performing certificate rotations as required.
+
+Once you have read through this document write up the steps that need to be taken by your team and run through this scenario multiple times to ensure you don't encounter unexpected problems and minimize the potential downtime. 
 
 ## Overview
 
@@ -57,9 +65,9 @@ When code packages are deployed to the production environment, they don't need t
 
 ## Environment deployment settings
 
-The DR environment shares some environment deployment settings with the production environment – the shared settings allow the DR environment to operate against the replicated copies of the production database after a disaster event, the table below illustrates the shared and specific settings for DR:
+The DR environment should have almost the same configuration as the production environment – the shared settings allow the DR environment to operate against the replicated copies of the production database after a disaster event, the table below illustrates the shared and specific settings for DR:
 
-| Environment Deployment Settings | DR Environment | Explanation |
+| Environment Settings | DR Environment | Explanation |
 |---------------------------------|----------------|-------------|
 | **Active Directory Settings**   |                |             |
 | Administrator user              | Same as production|          |
@@ -74,10 +82,10 @@ The DR environment shares some environment deployment settings with the producti
 | File share for document store   | Same as production |            |
 | File share certificate thumbprint | Same as production |            |
 | **SSRS Configuration Settings** |                 |             |
-| IP address of SSRS instance     | Can be different | SSRS is referenced by IP, if the exact same ip can't be configured in the DR environment this can be different. |
+| IP address of SSRS instance     | Can be different | SSRS is referenced by IP, if the exact same machine ip can't be configured in the DR environment this can be different. |
 | SSRS certificate thumbprint     | Same as production |          |
 | **Configure Service Settings**  |                 |             |
-| DNS host name of Dynamics 365 instance | Can be different | This depends on your network configuration, if you have a load balancer that can divert traffic to the other environment then the host name can be the same. If you are unable to do that, then use a different host name. |
+| DNS host name of Dynamics 365 instance | Can be different | This depends on your network configuration, if you have a load balancer that can handle diverting traffic to the other environment then the host name can be the same. If you are unable to do that, then use a different host name. |
 | AOS service user                | Same as production |            |
 | MR application service user     | Same as production |            |
 | MR process service user         | Same as production |            |
@@ -128,6 +136,15 @@ From now on and until your main production environment comes back online. This L
 
 Pre-deployment scripts are necessary when changes to the deployment configuration are required. This script will have to modify the config.json file with the values you specify. It will be the customers' responsibility to come up with this script.
 
+You can find the location of the config.json file by running the following command.
+
+    ```sql
+    select Location from DeploymentInstanceArtifact where AssetId='config.json' and DeploymentInstanceId = 'LCSENVIRONMENTID'
+    ```
+
+    > [!NOTE]
+    > Replace **LCSENVIRONMENTID** with the ID of your environment. You can obtain this ID from the page for your environment in LCS. 
+
 In the case that the SSRS node IP is different you will have to modify the following values:
 
 ```json
@@ -175,7 +192,7 @@ If changing the host name the following modifications will be required:
 >[!IMPORTANT]
 > If changing the hostname url for your deployment ensure that your AD FS server is configured to accept the new url. For more information check out [Reuse the same AD FS instance for multiple environments](./onprem-reuseadfs.md).
 
-### Ensure reports are deployed
+### Ensure reports get deployed
 
 As the database has previously been synchronized successfully, synchronization would normally be skipped. However, we need to synchronize the reports as the SSRS node is empty. Perform the actions below according to the Platform update that your environment is in. 
 
@@ -234,8 +251,4 @@ Once the failover has happened, start up the AOS, SSRS, and MR nodes in your pri
 Your primary environment will be back to functionioning as usual and can once again be serviced.
 
 Clean up your DR environment by manually unprovisioning all Dynamics Service Fabric Service.
-
->[!NOTE]
-> Remember to keep your DR environment updated with the latest Windows Updates.
-> Also, remember to keep updated certificates and pre-requisites.
 
