@@ -215,7 +215,7 @@ An overview of each path is given below:
 
 ### Configuring existing users
 
-If you followed either of the steps above, you will be able to login with the Administrator user you specified in LCS. The rest of your users however will not be able to login as they haven't been configured for the new system. Execute a Select statement against your USERINFO table and take note of the value in the NETWORKDOMAIN fied for the Admin user. Set the NETWORKDOMAIN field of all interactive users for which you want to enable logging in to the same value that the Admin user has.
+If you followed either of the procedures above, you will be able to login with the Administrator user you specified in LCS. The rest of your users however will not be able to login as they haven't been configured for the new system. Execute a Select statement against your USERINFO table and take note of the value in the NETWORKDOMAIN fied for the Admin user. Set the NETWORKDOMAIN field of all interactive users for which you want to enable logging in to the same value that the Admin user has (i.e. https://adfs.contoso.com/adfs or http://adfs.contoso.com/adfs/services/trust). The NETWORKALIAS column will also need to be modified. In Dynamics 365 for Finance and Operation we require that this field be set to the users email address (i.e. testuser@contoso.com). 
 
 ## Appendix A
 
