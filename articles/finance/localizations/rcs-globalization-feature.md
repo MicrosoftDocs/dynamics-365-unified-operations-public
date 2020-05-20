@@ -43,7 +43,7 @@ You can use Microsoft Regulatory Configuration Services (RCS) to create a Global
 The following steps explain how a user in RCS can add a feature with related components, update its status and enable it for use in a Globalization service, like e-Invoicing service for an F&O environment. 
 To complete these steps, you must first complete the steps related to:
 -	Access to an RCS instance
--	Creation of a configuration provider that is active - Create configuration providers and mark them as active
+-	Creation of a configuration provider that is active, see [Create configuration providers and mark them as active](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md)
 
 From Dynamics F&O you can take the following actions:
 - Go to **Organization administration > Workspaces > Electronic reporting**.
@@ -51,21 +51,23 @@ From Dynamics F&O you can take the following actions:
 
 Note: If RCS environment has been already provisioned to your company, use the page URL to access it by selecting the sign in option.
 
-# Requires Feature enablement:
+## Requires Feature enablement:
 -	Go to your instance of RCS and click on ** Feature management** tile
 -	From the list select **Globalization features**
 -	Click **Enable now** button
 
 scrnshot
 
-[Feature management text: This feature provides a new Globalization features workspace, a new form for creating, importing, and setting up available Globalization features for Globalization services use, such as e-Invoicing and tax services.]
+![Upload into repository options](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/RCS_Upload_to_GlobalRepo_options.JPG)
 
-# Globalization feature
+> Note: Feature management text: This feature provides a new Globalization features workspace, a new form for creating, importing, and setting up available Globalization features for Globalization services use, such as e-Invoicing and tax services.
+
+## Globalization feature
 To use a Globalization feature user needs to import them from RCS/Global repository and create their own version of the feature to use it. There are two ways to utilize Globalization feature, user can either:
 -	Add a new feature, based on an existing feature that has been published or shared with them by add/derive, or
 -	Add a new feature from scratch
 
-# Accessing Globalization features
+## Accessing Globalization features
 -	Enable feature in **Feature management**
 -	Go to New **Globalization feature workspace**
 -	Click **e-Invoicing** feature tile
@@ -76,7 +78,7 @@ scrnshot
 
 scrnshot
 
-# Add feature by deriving from existing Globalization feature 
+## Add feature by deriving from existing Globalization feature 
 -	Import feature from Global repository
   -	Click **import** from **Action pane**
   
@@ -119,7 +121,7 @@ scrnshot
   -	**Published** to Global repository
     - Features with ‘Feature version status’ of Published can be shared with external organization
 
-# Add new Globalization feature 
+## Add new Globalization feature 
 -	Add Feature by creating a new feature from scratch:
   -	Click **Add**
   -	Select **New feature**
@@ -138,7 +140,7 @@ scrnshot
   -	**Published** to Global repository
     -	Features with ‘Feature version status’ of Published can be shared with external organization
 
-# Feature components overview
+## Feature components overview
 
 Globalization feature has several components parts that cover: 
 -	**Version**
@@ -152,7 +154,7 @@ Globalization feature has several components parts that cover:
 -	**Organizations to share with**
   -	Allows user to share feature with external organization
   
-# Configuring feature components:
+## Configuring feature components:
 
 -	**Version**
   -	Version manages Globalization feature lifecycle. Status can be changed through version tab ‘status change’. Permissible statuses are:
@@ -182,27 +184,28 @@ Globalization feature has several components parts that cover:
     scrnshot 
 
 -	**Environments**
-  -	Enable – For a selected Feature version, it allows the user to choose a published environment and enable it with an ‘Effective from’ date onwards – for details see **Configuring Environments for enablement section** below
-  -	Cancel – Allows user to remove an environment for a Feature setup
+ -	Enable – For a selected Feature version, it allows the user to choose a published environment and enable it with an ‘Effective from’ date onwards – for details see **Configuring Environments for enablement section** below
+ -	Cancel – Allows user to remove an environment for a Feature setup
 
 -	**Share with**
   -	To share a Globalization feature with an external organization user needs to take the following steps
-    -	Select the feature that you want to share
-    -	Go to **Share with** tab
-    -	Click **+Organization**
-    -	Enter Organization domain name and click **Share**
+   -	Select the feature that you want to share
+   -	Go to **Share with** tab
+   -	Click **+Organization**
+   -	Enter Organization domain name and click **Share**
     
-    scrnshot
+   scrnshot
 
-    -	Feature is **Shared with** the organization and is available for them in the Global repository where it can be imported for use either into their RCS or F&O instance
+  -	Feature is **Shared with** the organization and is available for them in the Global repository where it can be imported for use either into their RCS or F&O instance
 
-# Rebasing a derived Globalization features:
+
+## Rebasing a derived Globalization features:
 User can leverage the ability to rebase a derived feature to the new/updated base feature version. This will allow changes that have occurred in the base version to be automatically updated: 
-  -	Updated base version feature is created (by originating Configuration provider) and published or shared with user, for example: 
+- Updated base version feature is created (by originating Configuration provider) and published or shared with user, for example: 
  
  scrnshot
  
- -	User wants to rebase the derived version of the feature that they created
+ - User wants to rebase the derived version of the feature that they created
   -	Get the latest version of the feature by importing from Global repository
     -	Click **import** from **action pane**
     -	Click **Synchronize** to get latest features 
@@ -218,32 +221,32 @@ scrnshot
 
 scrnshot
 
-    -	Click **Rebase** side window appears on right
-    -	Click the **drop down** and select the latest version of the feature to rebase to:
+  - Click **Rebase** side window appears on right
+  - Click the **drop down** and select the latest version of the feature to rebase to:
 
 scrnshot
 
-    -	Click **Ok**
-    -	Message: A feature version rebase operation completed successfully
+  -	Click **Ok**
+  -	Message: A feature version rebase operation completed successfully
     
-  -	Note: Feature version components have been updated to the latest version
-  -	User can review feature components to make any changes required
-  -	Then click **Change status** to complete the rebased feature to be able to take subsequent actions like publishing and/or enabling for Globalization service use
+-	Note: Feature version components have been updated to the latest version
+-	User can review feature components to make any changes required
+-	Then click **Change status** to complete the rebased feature to be able to take subsequent actions like publishing and/or enabling for Globalization service use
 
 scrnshot
 
-# Configuring Environments for enablement: 
+## Configuring Environments for enablement: 
 Allows users of Globalization services, for example e-invoicing service, to manage the environment where they want to use feature setup version, as well granting authorization for the users that will have access to it
 -	Click on tile **e-invoicing** under **Environments**
 
 scrnshot
 
 -	Click **Key Vault parameters** to enter the details for the digital certificate
-  -	Click **New** to create a Key Vault secret: 
-    -	**Name** - name of the key vault
-    -	**Description** - description of the key vault
-    -	**Key Vault URI** - link that identifies the key vault resource in Azure
-    -	Click **Add** to aggregate certificate names: 
+ -	Click **New** to create a Key Vault secret: 
+      -	**Name** - name of the key vault
+      -	**Description** - description of the key vault
+      -	**Key Vault URI** - link that identifies the key vault resource in Azure
+  -	Click **Add** to aggregate certificate names: 
       -	**Name** - name of certificate
       -	**Description** - description of the certificate
 
@@ -254,12 +257,12 @@ scrnshot
   -	**Description** - environment description
   -	**Storage SAS token secret** - name of stored certificate in key vault
   -	**Publish** - status of the environment:
-    -	Not published: environment is created
-    -	Changed: some of the environment attributes are changed, but not published yet
-    -	Published: environment is published
+   -	Not published: environment is created
+   -	Changed: some of the environment attributes are changed, but not published yet
+   -	Published: environment is published
   -	Click **New** to add the users that will have permission to access this environment:
-  -	**User ID** – create User ID
-  -	**Email** - users email address 
+   -	**User ID** – create User ID
+   -	**Email** - users email address 
 -	Click **Publish** to publish the environment
 
 scrnshot
