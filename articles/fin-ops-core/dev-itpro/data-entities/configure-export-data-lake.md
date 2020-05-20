@@ -171,10 +171,8 @@ Create an Application in Azure Active Directory
 14.  In the Azure portal, select **Azure Active Directory**, and then
     select **App registrations**.
 
-15.  Select **New registration**, and enter the following information:
-
+15.  Select **New registration**, and enter the following information: 
     -   **Name:** Enter a name for the app
-
     -   Choose the appropriate option for **Supported Account types**
 
 16.  After the application is created, select it. Copy and save the **Application
@@ -210,9 +208,9 @@ and provide the value you saved from earlier steps.
 
 | **Suggested secret Name** | **Secret value (what you saved earlier…)**                                |
 |---------------------------|---------------------------------------------------------------------------|
-| app-id                    | The ID of the application created in step (c)                             |
-| app-secret                | The client secret specified in step (c)                                   |
-| storage-account-name      | The name of the storage account created in step (a). E.g. storageaccount1 |
+| app-id                    | The ID of the application created in step (16)                             |
+| app-secret                | The client secret specified in step (22)                                   |
+| storage-account-name      | The name of the storage account created in step (5). E.g. storageaccount1 |
 
 You will need to perform the following steps 3 times, once for each secret
 
@@ -242,22 +240,43 @@ Authorize the Application so that it can read the secrets in the Key vault
     will be shown
 
 32.  In the **Select principal** field, search for the name of the application
-    you created earlier.
+    you created earlier in step (16)
 
 33.  When you find your application in the list of principals, **click** on the
     application, and click the **select** button at the bottom of the dialog.
 
-34.  Select **Add** in the Add access policy dialog
+34.  In the **Key permissions** field, select **Get** and **List** options. 
 
-35.  Select **Save**
+35.  In the **Secret permissions** field, select **Get** and **List** options. 
 
-36.  Open issue: why do we add the microservices app ID?
+36.  Select **Add** in the Add access policy dialog
 
-| Application                                                   | Permissions |
-|---------------------------------------------------------------|-------------|
-| Display name of the new application you created from step (c) | Get, List   |
-| Microsoft Dynamics ERP Microservices                          | Get, List   |
+Next you are going to add **Microsoft Dynamics ERP Microservices** service to access your key vault.
 
+37.  Select **Access policies** in the left navigation menu and then select
+    **+Add Access Policy** to create a new policy. **Add access policy** dialog
+    will be shown
+
+38.  In the **Select principal** field, search for the application **Microsoft Dynamics ERP Microservices**
+    Can't fnd this application? - pl. see the trouble-shooting section
+
+39.  When you find your application in the list of principals, **click** on the
+    application, and click the **select** button at the bottom of the dialog.
+
+40.  In the **Key permissions** field, select **Get** and **List** options. 
+
+41.  In the **Secret permissions** field, select **Get** and **List** options. 
+
+42.  Select **Add** in the Add access policy dialog
+
+You should now see the following application provided with the permissions shown below
+
+| Application                                                   | Key Permissions | Secret permissions |
+|---------------------------------------------------------------|-----------------|--------------------|
+| Display name of the new application you created from step (16) | Get, List       | Get, List          |
+| Microsoft Dynamics ERP Microservices                          | Get, List       | Get, List          |
+
+43.  Select **Save**
 
 Grant Access control roles to applications 
 -------------------------------------------
@@ -266,27 +285,27 @@ Next, you need to grant your application with permissions to read and write to
 the storage account. These permissions are granted via Roles in Active
 directory.
 
-37.  In **Azure Portal**, open the storage account created you created earlier
+44.  In **Azure Portal**, open the storage account created you created earlier
 
-38.  Select **Access Control (IAM)** in the left navigation. You will see the
+45.  Select **Access Control (IAM)** in the left navigation. You will see the
     Access control page.
 
-39.  Select the **Role assignments** tab in the page
+46.  Select the **Role assignments** tab in the page
 
-40.  Click on **+ Add**, at the top of the page and choose **Add role
+47.  Click on **+ Add**, at the top of the page and choose **Add role
     assignment**
 
-41.  In the **Add role assignment** dialog, select the **Role** field and select
+48.  In the **Add role assignment** dialog, select the **Role** field and select
     **Owner**.
 
-42.  Keep field **Assign access to**” unchanged as “**Azure AD user, group, or
+49.  Keep field **Assign access to**” unchanged as “**Azure AD user, group, or
     service principal**”
 
-43.  In the **Select** field, choose the application you registered earlier.
+50.  In the **Select** field, choose the application you registered earlier.
 
-44.  Select **Save**
+51.  Select **Save**
 
-45.  You need to add all the roles shown in the following table by following
+52.  You need to add all the roles shown in the following table by following
     similar steps (you already added the owner role. You need to add the rest.
 
 | **Application to be selected**   | **Role to be assigned**     |
@@ -316,25 +335,25 @@ before you begin.
 | Secret that contains the Application ID                   |                                                                                                                                                                                                                          |
 | Secret that contains the Application secret               |                                                                                                                                                                                                                          |
 
-46.  Sign in to [LCS](https://lcs.dynamics.com). Navigate to your environment.
+53.  Sign in to [LCS](https://lcs.dynamics.com). Navigate to your environment.
 
-47.  On the **Environment** page, select the **Environment add-ins** Tab. If
+54.  On the **Environment** page, select the **Environment add-ins** Tab. If
     **Export Data Lake** appears in the list, the Data Lake add-in is already
     installed, and you can skip the rest of this procedure. Otherwise, follow
     the remaining steps.
 
-48.  Select **Install a new add-in**.
+55.  Select **Install a new add-in**.
 
-49.  In the **Select an add-in to install** dialog box, select **Export to Data
+56.  In the **Select an add-in to install** dialog box, select **Export to Data
     lake** in the list. If it isn't listed, the feature might not yet be
     available for your environment.
 
-50.  In the **Setup add-in** dialog box, provide the required information. To
+57.  In the **Setup add-in** dialog box, provide the required information. To
     answer the questions, you must already have a storage account. If you don't
     already have a storage account, create one, or ask your admin to create one
     on your behalf.
 
-51.  Accept the terms of the offer by selecting the check box, and then select
+58.  Accept the terms of the offer by selecting the check box, and then select
     **Install**.
 
 The system installs and configures the data lake for the environment. After
