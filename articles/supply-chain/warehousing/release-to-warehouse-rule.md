@@ -37,14 +37,14 @@ The release to warehouse rule feature provides flexibility when releasing to the
 
 Before you can use this feature, it must be enabled on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the feature status and enable it if needed. Here, the feature is listed as:
 
-- **Module** - Warehouse management
-- **Feature name** - Warehouse release rule
+- **Module** - *Warehouse management*
+- **Feature name** - *Warehouse release rule*
 
 ### Initialize the feature
 
 Once the feature is enabled on your system, you must initialize it to set the rule to the correct initial state for all warehouses.
 
-- For warehouses that aren't enabled for warehouse management, the rule will initially be set to **Not applicable**. <!-- KAMAYBACH: how do we enable a warehouse for warehouse management? Do we have a link for this? (maybe https://docs.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-management-overview ?) -->
+- For warehouses that aren't enabled for warehouse management, the rule will initially be set to **Not applicable**.
 - For warehouses that are enabled for warehouse management, the rule will initially be set to **Allow partial reservation**
 
 To initialize the enable release to warehouse rule for all warehouses:
@@ -54,7 +54,7 @@ To initialize the enable release to warehouse rule for all warehouses:
 1. In the **Company information** section, select **Initialize release to warehouse** rule. (If this link isn't shown, then the feature either isn't turned on or has already been initialized.)
 1. You are prompted to confirm the action. Select **Yes** to initialize the feature.
 
-<!-- HHM: <a name="set-option-warehouse"></a> -->
+<a name="set-option-warehouse"></a>
 
 ## Set the release to warehouse rule for each warehouse
 
@@ -81,7 +81,7 @@ To work through these scenarios using the sample records and values specified he
 
 You can also use these scenarios as guidance for how to use this feature when working on a production system, but then you must then substitute your own values, and you may be missing some types of required records that would otherwise be provided by the standard demo data.
 
-<!-- HHM: <a name="demo1"></a> -->
+<a name="scenario1"></a>
 
 ### Scenario 1: Require full Release (no planned cross-docking)
 
@@ -91,8 +91,8 @@ This scenario illustrates how this feature works for warehouses set to **Require
 1. Go to **Sales and marketing > Sales orders > All sales orders**.
 1. Select **New** to create a new sales order.
 1. The **Create sales order** flyout opens. Make the following settings here:
-    - On the **Customer** FastTab, set **Customer account** to "US-004".
-    - On the **General** FastTab, set **Warehouse** to "62".
+    - On the **Customer** FastTab, set **Customer account** to _US-004_.
+    - On the **General** FastTab, set **Warehouse** to _62_.
 1. Select **OK** to create the new sales order and close the flyout.
 1. Your new sales order opens. Add the following two order lines to the **Sales order lines** table:
     - ***Line 1***: Set **Item number** to *A0001*, and **Quantity** to *2*.
@@ -113,9 +113,9 @@ This scenario illustrates how this feature works for warehouses set to **Require
 This scenario illustrates how this feature works for warehouses set to **Allow Partial Release**.
 
 1. Go to **Warehouse management > Setup > Warehouse > Warehouses** and set warehouse *62* to **Allow partial reservation**, as described in [Set the release to warehouse rule for each warehouse](#set-option-warehouse).
-1. As you did in the [previous scenario](#scenario1), go to **Sales and marketing > Sales orders > All sales orders**, create a new sales order for **Customer account** "US-004" from **Warehouse** "62", and add the following two order lines:
-    - Line 1: Set **Item number** to "A0001", **Quantity** to "2", and **Unit** to "Pcs".
-    - Line 2: Set **Item number** to "A0002", **Quantity** to "2", and **Unit** to "Pcs".
+1. As you did in the [previous scenario](#scenario1), go to **Sales and marketing > Sales orders > All sales orders**, create a new sales order for **Customer account** _US-004_ from **Warehouse** _62_, and add the following two order lines:
+    - Line 1: Set **Item number** to _A0001_, **Quantity** to _2_, and **Unit** to _Pcs_.
+    - Line 2: Set **Item number** to _A0002_, **Quantity** to _2_, and **Unit** to _Pcs_.
 1. As you did in the [previous scenario](#scenario1), reserve the full quantity for order line 1, but don't reserve order line 2.
 1. Open the **Warehouse** tab and select **Release to warehouse**.
 1. Note that this time, no error is shown. Instead, the system creates work, shipments, and loads as required and displays the results.
