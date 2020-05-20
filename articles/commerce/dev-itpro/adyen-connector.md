@@ -239,7 +239,7 @@ The following table shows the set of features that the Dynamics 365 Payment Conn
 | Omni Channel Tokenization | ✔ | ✔ |
 | Linked Refunds | ✔<br>(Starting with 10.0.1) | ✔<br>(Starting with 10.0.1) |
 | [Save online payments](../dev-itpro/adyen-connector-listPI.md) | | ✔<br>(Starting with 10.0.2) | 
-| [SCA payment redirect](https://go.microsoft.com/fwlink/?linkid=2131175) | ✔<br>(Starting with 10.0.12) |
+| [SCA payment redirect](https://go.microsoft.com/fwlink/?linkid=2131175) | | ✔<br>(Starting with 10.0.12) |
 
 ## Sign up with Adyen
 
