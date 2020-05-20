@@ -5,7 +5,7 @@ title: Configure batch-only and interactive-only AOS nodes in on-premises deploy
 description: This topic explains how to configure your environment so that you can deploy batch-only and interactive-only AOS nodes.
 author: faix
 manager: AnnBe
-ms.date: 03/26/2020
+ms.date: 05/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -74,7 +74,7 @@ For production environments, there should be at least three nodes of each type.
 
 ## Existing deployments
 
-1. Follow the instructions in [Remove an AOS node](./onprem-remove-reinstall-AOS-node#option-1-use-a-configuration-file-preferred-option) up through the point where you save the configuration file.
+1. Follow the instructions in [Remove an AOS node](onprem-remove-reinstall-AOS-node.md#option-1-use-a-configuration-file-preferred-option) up through the point where you save the configuration file.
 
     > [!IMPORTANT]
     > You must use option 1, "Use a configuration file (preferred option)." Do **not** use option 2.
@@ -138,7 +138,7 @@ For production environments, there should be at least three nodes of each type.
     ]
     ```
 
-3. Continue to follow the instructions in [Remove an AOS node](./onprem-remove-reinstall-AOS-node#option-1-use-a-configuration-file-preferred-option) from the point where you stopped until you've finished removing the nodes from your cluster.
+3. Continue to follow the instructions in [Remove an AOS node](onprem-remove-reinstall-AOS-node.md#option-1-use-a-configuration-file-preferred-option) from the point where you stopped until you've finished removing the nodes from your cluster.
 4. On the machines that you've removed from the Service Fabric cluster, follow these steps:
 
     1. Delete the contents of your Service Fabric data root (**C:\\ProgramData\\SF**) and your Service Fabric log root (**C:\\ProgramData\\SF\\Log**).
