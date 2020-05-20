@@ -275,7 +275,7 @@ To process payments across point of sale (POS) terminals, a call center, or e-Co
     |---|---|:-:|:-:|---|
     | Assembly Name | Auto populated name of the assembly for the Dynamics 365 Payment Connector for Adyen. | Yes | Yes | *Binary name* |
     | Service account ID | Auto populated unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes (such as invoicing) should use. | Yes | Yes | *Guid* |
-    | Version | Enter the version of the Dynamics 365 Payment Connector for Adyen to use. *e-Commerce Only* If if [SCA support](https://go.microsoft.com/fwlink/?linkid=2131175) is required, use "V002"  | Yes | Yes | "V001"/"V002" |
+    | Version | Enter the version of the Dynamics 365 Payment Connector for Adyen to use. <br>*e-Commerce Only*- If if [SCA support](https://go.microsoft.com/fwlink/?linkid=2131175) is required, use "V002"  | Yes | Yes | "V001"/"V002" |
     | Gateway environment | Enter the Adyen gateway environment to map to. The possible values are **Test** and **Live**. You should set this field to **Live** only for production devices and transactions. | Yes | Yes | Live |
     | Optional Domain | The optional domain is required for Live environments and should be obtained by contacting Adyen. | Live only | No | Contact Adyen |
     | Merchant account ID | Enter the unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | MerchantIdenfier |
@@ -329,7 +329,7 @@ After the payment terminal is onboarded, sign in to the [Adyen Customer Area](ht
     |---|---|:-:|:-:|---|
     | Assembly Name | Auto populated name of the assembly for the Dynamics 365 Payment Connector for Adyen. | Yes | Yes | *Binary name* |
     | Service account ID | Auto populated unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes (such as invoicing) should use. | Yes | Yes | *Guid* |
-    | Version | Enter the version of the Dynamics 365 Payment Connector for Adyen to use. *e-Commerce Only* If if [SCA support](https://go.microsoft.com/fwlink/?linkid=2131175) is required, use "V002"  | Yes | Yes | "V001"/"V002" |
+    | Version | Enter the version of the Dynamics 365 Payment Connector for Adyen to use. <br>*e-Commerce Only* If if [SCA support](https://go.microsoft.com/fwlink/?linkid=2131175) is required, use "V002"  | Yes | Yes | "V001"/"V002" |
     | Gateway environment | Enter the Adyen gateway environment to map to. The possible values are **Test** and **Live**. You should set this field to **Live** only for production devices and transactions. | Yes | Yes | Live |
     | Optional Domain | The optional domain is required for Live environments and should be obtained by contacting Adyen. | Live only | No | Contact Adyen |
     | Merchant account ID | Enter the unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | MerchantIdenfier |
@@ -406,7 +406,7 @@ To configure the Dynamics 365 Payment Connector for Adyen for call center paymen
     |---|---|:-:|:-:|---|
     | Assembly Name | Auto populated name of the assembly for the Dynamics 365 Payment Connector for Adyen. | Yes | Yes | *Binary name* |
     | Service account ID | Auto populated unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes (such as invoicing) should use. | Yes | Yes | *Guid* |
-    | Version | Enter the version of the Dynamics 365 Payment Connector for Adyen to use. *e-Commerce Only* If if [SCA support](https://go.microsoft.com/fwlink/?linkid=2131175) is required, use "V002"  | Yes | Yes | "V001"/"V002" |
+    | Version | Enter the version of the Dynamics 365 Payment Connector for Adyen to use. <br>*e-Commerce Only* If if [SCA support](https://go.microsoft.com/fwlink/?linkid=2131175) is required, use "V002"  | Yes | Yes | "V001"/"V002" |
     | Gateway environment | Enter the Adyen gateway environment to map to. The possible values are **Test** and **Live**. | Yes | Yes | Live |
     | Optional Domain | Enter the domain to use when payment requests are made to Adyen. | No | No | https://terminal-api-live.adyen.com/sync |
     | Merchant account ID | Enter the unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | MerchantIdenfier |
