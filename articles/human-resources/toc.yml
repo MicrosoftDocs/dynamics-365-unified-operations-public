@@ -519,6 +519,9 @@
         href: hr-employee-self-service-request-time-off.md
       - name: View team and company calendars
         href: hr-employee-self-service-calendar.md
+      - name: Buy and sell leave
+        href: hr-leave-and-absence-buy-and-sell-leave.md
+        
     - name: Manage leave requests in Teams
       href: hr-teams-leave-app.md
     - name: Develop employees
