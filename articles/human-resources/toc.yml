@@ -509,6 +509,8 @@
         href: hr-leave-and-absence-accrue.md
       - name: Suspend leave
         href: hr-leave-and-absence-suspend-leave.md
+      - name: Leave of absence request
+        href: hr-employee-self-service-leave-of-absence.md
       - name: Manage employee leave
         href: hr-leave-and-absence-manage-employee-leave.md
       - name: View analytics for leave and absence
@@ -522,7 +524,7 @@
       - name: Buy and sell leave
         href: hr-leave-and-absence-buy-and-sell-leave.md
       - name: Buy and sell leave request
-        href: hr-employee-self-service-buy-sell-request
+        href: hr-employee-self-service-buy-sell-request.md
         
     - name: Manage leave requests in Teams
       href: hr-teams-leave-app.md
