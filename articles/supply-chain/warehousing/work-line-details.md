@@ -48,14 +48,12 @@ To view the list or work line details, go to **Warehouse management > Work > Wor
 - Select any column heading to to open a menu where you can choose to sort or filter the list by values in that column.
 - Select a work line and then select **Change location** to open a pane where you can change the location for that work line (which will override the location directive setup).
 - Select a work line and then select **Cancel work line** to open a pane where you can partially or fully reduce the quantity of that work line.
-- Adjust quantities. <!-- KAMAYBAC: seems like we can only reduce quantities. Is that right? If so, the above point covers this. -->
-- View transactions behind any work line.  <!-- KAMAYBAC: What does this mean? How do we do this? -->
+- Adjust quantities.
+- View transactions behind any work line.
 
 ## Try out the feature
 
 This section provides a three-part example of how to work with work line details.
-
-<!-- KAMAYBAC: I think we should remove this demo. The setup seems difficult, and then the demos don't even reference the demo data. I think we could keep just parts 2 and 3 as generic procedures. -->
 
 ### Enable sample data
 
@@ -72,30 +70,30 @@ If you are working with **USMF** demo data, then start by making sure your syste
 
 To confirm that you have enough inventory available and make adjustments as needed:
 
-1. Go to **Warehouse management > Setup > Location directives** and find out which picking locations are used for sales order picking at warehouse 51 (see also [Control warehouse work by using work templates and location directives](control-warehouse-location-directives.md)). <!-- KAMAYBAC: What am I looking for here? How can I use this? -->
-1. Check the inventory levels at the relevant locations. <!-- KAMAYBAC: where/how do I do this? Can we give a link? -->
-1. Adjust inventory as required. You can create manual movements, use replenishment, or apply any other flow as needed to adjust the inventory. <!-- KAMAYBAC: where/how do I do this? Can we give a link? -->
+1. Go to **Warehouse management > Setup > Location directives** and find out which picking locations are used for sales order picking at warehouse 51 (see also [Control warehouse work by using work templates and location directives](control-warehouse-location-directives.md)).
+1. Check the inventory levels at the relevant locations.
+1. Adjust inventory as required. You can create manual movements, use replenishment, or apply any other flow as needed to adjust the inventory.
 
 ### Part 1: Create picking work
 
-Before you start creating work, make sure that your warehouse is set up to respond to work requests as expected. <!-- KAMAYBAC: where/how do I do this? Can we give a link?-->
+Before you start creating work, make sure that your warehouse is set up to respond to work requests as expected.
 
 Create some picking work by doing the following:
 
 1. Go to **Sales and marketing > Sales orders > All sales orders**.
 1. Select **New** to open the **Create sales order** pane.
 1. In the **Create sales order** pane, make the following settings:
-    - On the **Customer** FastTab, set **Customer account** to "US-001".
-    - On the **General** FastTab, set **Warehouse** to "51".
+    - On the **Customer** FastTab, set **Customer account** to _US-001_.
+    - On the **General** FastTab, set **Warehouse** to _51_.
 1. Select **OK** to create the sales order and close the pane.
-1. Your new sales order opens. It includes a new, empty row in the **Sales order lines** table. For this order line, set **Item number** to "M9200", **Quantity** to "20" and **Unit** to "ea".
+1. Your new sales order opens. It includes a new, empty row in the **Sales order lines** table. For this order line, set **Item number** to _M9200_, **Quantity** to _20_ and **Unit** to _ea_.
 1. Select the new order line, open the **Inventory** drop-down list and select **Reservation**.
 1. The **Reservation** page opens. Select **Reserve lot** to reserve your selected line's full quantity in the warehouse.
 1. Close the **Reservation** page to return to your sales order.
 1. Open the **Warehouse** tab and select **Release to warehouse**. The system creates a shipment, adds it to a new load, and creates the required work.
 1. Create a second sales order for the same **Customer account** and **Warehouse** as before. Add the following two order lines to this order:
-    - Line 1 - **Item number** "M9200", **Quantity** "25", **Unit** "ea"
-    - Line 2 - **Item number** "M9202", **Quantity** "10", **Unit** "ea"
+    - Line 1 - Set **Item number** to _M9200_, **Quantity** to _25_, and **Unit** to _ea_.
+    - Line 2 - Set **Item number** to _M9202_, **Quantity** to _10_, and **Unit** to _ea_.
 1. As you did previously, reserve the inventory for each of these two order lines (one at a time) and then release the order to warehouse.
 
 ### Part 2: Change the location for a work line
@@ -112,12 +110,12 @@ Create some picking work by doing the following:
 ### Part 3: Change the quantity of or cancel a work line
 
 1. Go to **Warehouse management > Work > Work line details**.
-1. Find and select one of the work lines that you created for this demo. (Note that you can only cancel or change quantities for work lines with a **Work type** of "pick".)
+1. Find and select one of the work lines that you created for this demo. (Note that you can only cancel or change quantities for work lines with a **Work type** of _pick_.)
 1. Select **Cancel work line** on the Action Pane.
 1. The **Quantity to cancel** pane opens. Edit the **Quantity** field here to set the quantity to *subtract from* the currently quantity set for the line. By default, the **Quantity** field shows the full quantity.
-    - If you cancel the full quantity, then the **Work status** will be changed to "Canceled", but the **Work quantity** will still show the original value.
+    - If you cancel the full quantity, then the **Work status** will be changed to _Canceled_, but the **Work quantity** will still show the original value.
     - If you cancel just part of the quantity, then **Work quantity** will update to show the new value, but the **Work status** won't change.
 1. Select **OK** to apply your change and close the pane.
 
 > [!IMPORTANT]
-> If you cancel just part of the quantity for a work line, then you must also take other measures to remove the obsolete quantity from the load line, otherwise it won't be possible to be ship confirmed (unless under delivery is set up correctly). <!-- KAMAYBAC: We should clarify this note and add links for how to do these things. I'm not familiar with the terms "ship confirmed" and "under delivery", so I'm not sure we are using them correctly. -->
+> If you cancel just part of the quantity for a work line, then you must also take other measures to remove the obsolete quantity from the load line, otherwise it won't be possible to be ship confirmed (unless under delivery is set up correctly).
