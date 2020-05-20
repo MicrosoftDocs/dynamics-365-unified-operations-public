@@ -5,7 +5,7 @@ title: Enable Azure Active Directory authentication for POS sign-in
 description: This topic explains how to configure the sign-in experience for the Microsoft Dynamics 365 Commerce point of sale (POS) so that it uses Azure Active Directory authentication.
 author: boycezhu
 manager: annbe
-ms.date: 03/08/2020
+ms.date: 05/20/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-commerce
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom:
@@ -54,7 +54,7 @@ To apply the settings to POS clients, follow these steps.
 > Azure AD authentication requires an internet connection. It won't work when POS is in offline mode.
 
 > [!NOTE]
-> For now, the **Manager override** function does not support Azure AD as authentication method. Operator ID and password are required even Azure AD is configured as POS logon authentication method.
+> For now, the **Manager override** function does not support Azure AD as an authentication method. Operator ID and password are required even if Azure AD is configured as the POS logon authentication method.
 
 ## Associate an Azure AD account with a worker
 
