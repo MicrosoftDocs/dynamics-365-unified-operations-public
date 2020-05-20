@@ -42,7 +42,7 @@ This topic explains how you can utilize the inventory buffers and inventory leve
 
 The inventory buffers and inventory levels feature is controlled by **Feature management** in HQ. To turn on this feature, follow these steps.
 
-1.	Go to **System administration** > **Workspaces** > **Feature management**.
+1.	Go to **System administration** \> **Workspaces** \> **Feature management**.
 1.	Search for **Enable inventory buffers and inventory levels** feature, and **Enable** it.
 
 Once enabled, in the **Retail and Commerce** module **Inventory management** menu group you can find an **Inventory levels** menu item.
@@ -58,7 +58,7 @@ Once enabled, in the **Retail and Commerce** module **Inventory management** men
 
 To create an inventory level profile, follow these steps.
 
-1.	Go to **Retail and Commerce** > **Inventory management** > **Inventory levels**.
+1.	Go to **Retail and Commerce** \> **Inventory management** \> **Inventory levels**.
 1.	On the Action Pane, select **New**, fill in the **Profile ID** and **Description** fields.
 1.	In the **Ranges** FastTab, select **Add** to add a new level, then set values in the **Start quantity**, **End quantity**, **Code** and **Label** columns for that level. Repeat this step to add more levels.
 1.	You can edit the values in the data grid or select **Delete** to remove a level as needed.
@@ -79,7 +79,7 @@ You can use the **Translations** function on Action Pane to configure localized 
 You can configure inventory level profile at product category and/or individual product level. When a product has an inventory level profile configured, its inventory level will be determined based on the defined ranges in the linked profile. Otherwise, the inventory level as “available” or “out of stock” is determined based on whether the product has a positive on-hand quantity.
 
 To configure an inventory level profile for a category, follow these steps.
-1.	Go to **Retail and commerce** > **Products and categories** > **Commerce product hierarchy**.
+1.	Go to **Retail and commerce** \> **Products and categories** \> **Commerce product hierarchy**.
 1.	Select a category that you want to configure inventory level profile.
 1.	In the **Sell product properties** FastTab, select a legal entity.
 1.	In the **Commerce inventory** section, set the value for **Inventory level profile** field by selecting one of predefined inventory level profiles from the dropdown list.
@@ -87,7 +87,7 @@ To configure an inventory level profile for a category, follow these steps.
 You can use the **Update products** function on the Action Pane to propagate the category level profile value to its underlying products. For more information, see [Manage product categories and products](category-management-product-creation.md).
 
 To configure an inventory level profile for a released product, follow these steps.
-1.	Go to **Retail and commerce** > **Products and categories** > **Released products by category**.
+1.	Go to **Retail and commerce** \> **Products and categories** \> **Released products by category**.
 1.	Select a product, and then open its product details page.
 1.	In the **Sell** FastTab, in the **Commerce inventory** section, set the value for **Inventory level profile** field by selecting one of predefined inventory level profiles from the dropdown list.
 
@@ -98,7 +98,7 @@ Like many other product level attributes, when creating a new product, the **Inv
 
 To sync the inventory level profile configurations to channels, follow these steps.
 
-1.	Go to **Retail and Commerce** > **Retail and Commerce IT** > **Distribution schedule**.
+1.	Go to **Retail and Commerce** \> **Retail and Commerce IT** \> **Distribution schedule**.
 1.	Run the **1040 (Product)** distribution schedule.
 
 ## Configure inventory buffer	
@@ -107,7 +107,7 @@ To sync the inventory level profile configurations to channels, follow these ste
 
 To configure an inventory buffer for a category, follow these steps.
 
-1.	Go to **Retail and commerce** > **Products and categories** > **Commerce product hierarchy**.
+1.	Go to **Retail and commerce** \> **Products and categories** \> **Commerce product hierarchy**.
 1.	Select a category that you want to configure inventory buffer.
 1.	In the **Sell product properties** FastTab, select a legal entity.
 1.	In the **Commerce inventory** section, enter a positive value for the **Inventory buffer** field.
@@ -116,7 +116,7 @@ You can use the **Update products** function on the Action Pane to propagate the
 
 To configure an inventory level profile for a released product, follow these steps.
 
-1.	Go to **Retail and commerce** > **Products and categories** > **Released products by category**.
+1.	Go to **Retail and commerce** \> **Products and categories** \> **Released products by category**.
 1.	Select a product, and then open its product details page.
 1.	In the **Sell** FastTab, in the **Commerce inventory** section, enter a positive value for the **Inventory buffer** field.
 
@@ -127,7 +127,7 @@ When creating a new product, the **Inventory buffer** field will be populated wi
 
 To sync the inventory buffer configurations to channels, follow these steps.
 
-1.	Go to **Retail and Commerce** > **Retail and Commerce IT** > **Distribution schedule**.
+1.	Go to **Retail and Commerce** \> **Retail and Commerce IT** \> **Distribution schedule**.
 1.	Run the **1040 (Product)** distribution schedule.
 
 ## Utilize inventory buffers and inventory levels in e-Commerce scenario 
@@ -140,7 +140,7 @@ With the introduction of inventory buffers and inventory levels, these APIs will
 
 To configure the desired API response, follow these steps.
 
-1.	Go to **Retail and commerce** > **Headquarters setup** > **Parameters** > **Commerce parameters**.
+1.	Go to **Retail and commerce** \> **Headquarters setup** \> **Parameters** \> **Commerce parameters**.
 1.	Select **Inventory** tab, in the **Store inventory** section, select one of the options from the dropdown list for the **Product availability APIs for e-Commerce** parameter.
 1.	To apply the settings to channels, run the **1110 (Global configuration)** distribution schedule job.
 
