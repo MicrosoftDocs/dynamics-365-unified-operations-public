@@ -197,7 +197,7 @@ Database storage is Azure SQL Database. File storage is Azure Blob storage. Azur
 
 ### How much storage do we get for Azure Blob storage?
 
-That information is in the [licensing guide](https:/go.microsoft.com/fwlink/?LinkId=866544). Currently, you get 40 gigabytes (GB) of storage.
+That information is in the [licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544). Currently, you get 40 gigabytes (GB) of storage.
 
 ### What is the cost for additional storage?
 
