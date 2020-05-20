@@ -5,7 +5,7 @@ title: Configure document management
 description: This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 04/29/2020
+ms.date: 05/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -197,7 +197,7 @@ Database storage is Azure SQL Database. File storage is Azure Blob storage. Azur
 
 ### How much storage do we get for Azure Blob storage?
 
-That information is in the [licensing guide](https://mbs.microsoft.com/Files/public/365/Dynamics365LicensingGuide.pdf). Currently, you get 40 gigabytes (GB) of storage.
+That information is in the [licensing guide](https:/go.microsoft.com/fwlink/?LinkId=866544). Currently, you get 40 gigabytes (GB) of storage.
 
 ### What is the cost for additional storage?
 
