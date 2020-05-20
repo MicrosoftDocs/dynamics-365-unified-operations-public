@@ -40,7 +40,7 @@ incurs expenses is called the borrowing legal entity.
 Before a worker can create and submit expenses for work that is performed for a different legal entity, in the loaning legal entity, 
 on the **Expense management parameters** page, select the **Allow intercompany expense lines** option. 
 
-## Tax Posting for Intercompany expenses
+## Tax posting for intercompany expenses
 
 [!include [banner](../includes/banner.md)]
 
