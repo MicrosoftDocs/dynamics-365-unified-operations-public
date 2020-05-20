@@ -2,7 +2,7 @@
   items:
   - name: Dynamics 365 Supply Chain Management
     items:
-    - name: Dynamics 365 Supply Chain Management
+    - name: Dynamics 365 Supply Chain Management home page
       href: index.md
     - name: Get started
       items:
@@ -94,8 +94,8 @@
           href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/supply-chain/toc.json
         - name: Connect the Help system
           href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/supply-chain/toc.json
-        - name: Connect a custom help site
-          href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/supply-chain/toc.json    
+        - name: Custom help overview
+          href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/supply-chain/toc.json    
         - name: View and export field descriptions
           href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/supply-chain/toc.json
         - name: Task Recorder
@@ -1313,6 +1313,22 @@
           href: cost-management/adjust-hand-inventory-cost-values.md
         - name: Tracking running average cost per inventory dimension
           href: cost-management/track-running-average-cost-per-inventory-dimension.md
+    - name: IoT Intelligence
+      items:
+        - name: IoT Intelligence home page
+          href: iot/iot-intelligence-home-page.md
+        - name: Set up Azure resources
+          href: iot/iot-azure-setup.md
+        - name: Message schema formats for IoT Hub
+          href: iot/iot-schema-format.md
+        - name: Install the add-in in LCS
+          href: iot/iot-lcs-setup.md
+        - name: Set up metrics
+          href: iot/iot-metrics-setup.md
+        - name: Scenario setup
+          href: iot/iot-scenario-setup.md
+        - name: Monitor and manage
+          href: iot/iot-management.md   
     - name: Master planning
       items:
       - name: Master planning home page
@@ -1335,6 +1351,8 @@
           href: master-planning/planning-optimization/planning-optimization-auto-firming.md
         - name: Cancel a planning job
           href: master-planning/planning-optimization/cancel-planning-job.md
+        - name: Troubleshoot Planning Optimization
+          href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
       - name: Master plans
         items:
         - name: Master plans overview
@@ -2657,7 +2675,7 @@
           href: warehousing/tasks/set-up-min-max-replenishment-process.md
       - name: Install and configure the warehousing app
         items:
-        - name: Install and configure overview
+        - name: Install and connect the warehousing app
           href: warehousing/install-configure-warehousing-app.md
         - name: Configure field names in warehousing app
           href: warehousing/configure-app-field-names-priorities-warehouse.md
@@ -2697,6 +2715,22 @@
           href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
         - name: Set up a work template for purchase orders
           href: warehousing/tasks/set-up-work-template-purchase-orders.md
+      - name: Shipment consolidation policies
+        items:
+        - name: Shipment consolidation policies
+          href: warehousing/about-shipment-consolidation-policies.md
+        - name: Configure shipment consolidation policies
+          href: warehousing/configure-shipment-consolidation-policies.md
+        - name: Scenario 1 - Consolidate shipments when they are released to the warehouse by using Automatic release of sales orders
+          href: warehousing/consolidate-shipments-automatic.md
+        - name: Scenario 2 - Consolidate shipments when the shipment consolidation policy is overridden from the Release to warehouse page
+          href: warehousing/consolidate-shipments-release-to-warehouse-override.md
+        - name: Scenario 3 - Consolidate shipments by using Release to warehouse from the load planning workbench
+          href: warehousing/consolidate-shipments-load-planning-workbench.md
+        - name: Scenario 4 - Consolidate shipments by using the shipment consolidation workbench
+          href: warehousing/consolidate-shipments-manual-workbench.md
+        - name: Scenario 5 - Consolidate shipments manually by using the Consolidate shipments page
+          href: warehousing/consolidate-shipments-manual-form.md
     - name: Supply Chain Management development 
       items:
       - name: Gantt control development guide
