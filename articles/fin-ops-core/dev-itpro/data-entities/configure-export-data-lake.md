@@ -81,7 +81,7 @@ f.  Install the **Export to Data Lake** add-in in **LCS**
 You are done with the configuration step. 
 
 
-Create a Data Lake Storage (Gen2) account in your subscription
+##Create a Data Lake Storage (Gen2) account in your subscription
 --------------------------------------------------------------
 
 The storage account will be used to store data from Finance and Operations. To
@@ -126,7 +126,7 @@ To create a storage account, follow the steps below.
         Copy **connection string** from either key 1 or key 2
         
 
-Create a key vault and a secret that contains the Storage account
+##Create a key vault and a secret that contains the Storage account
 -----------------------------------------------------------------
 
 A key vault is a secure way to hand over details such as storage account name to
@@ -154,7 +154,7 @@ Finance and Operations. To create a key vault and a secret, follow the steps bel
 13.  Select **Enabled**, and then select **Create**. The secret is created and
     added to Key Vault.
 
-Create an Application in Azure Active Directory
+##Create an Application in Azure Active Directory
 -----------------------------------------------
 
 14.  In the Azure portal, select **Azure Active Directory**, and then
@@ -188,7 +188,7 @@ Create an Application in Azure Active Directory
 
 ![](media/5062180174bd6ba94b22f29b43e8aacd.png)
 
-Add secrets to the Key vault
+##Add secrets to the Key vault
 ----------------------------
 
 You are going to create 3 secrets in the key vault and add the values saved from
@@ -219,7 +219,7 @@ You will need to perform the following steps 3 times, once for each secret
 
 29.  You will notice the secret created in the list of secrets
 
-Authorize the Application so that it can read the secrets in the Key vault
+##Authorize the Application so that it can read the secrets in the Key vault
 --------------------------------------------------------------------------
 
 30.  In **Azure Portal**, open the Key Vault that you created earlier.
@@ -266,7 +266,7 @@ You should see 2 applications with access to your key vault as shown below
 
 43.  Select **Save**
 
-Grant Access control roles to applications 
+##Grant Access control roles to applications 
 -------------------------------------------
 
 Next, you need to grant your application with permissions to read and write to
@@ -304,7 +304,7 @@ directory.
 | Your application from step 2 (b) | Storage Blob Data Owner     |
 | AI Builder Authorization Service | Storage Blob Data Reader    |
 
-Install the Export to Data Lake add-in in LCS 
+##Install the Export to Data Lake add-in in LCS 
 ----------------------------------------------
 
 Before you can export data to your Data lake from Finance and Operations, you
@@ -347,4 +347,48 @@ before you begin.
 The system installs and configures the data lake for the environment. After
 installation and configuration are completed, you should see **Azure Data Lake**
 listed on the **Environment** page.
+
+## Trouble-shooting tips
+---------------------
+
+### Can’t find Microsoft Dynamics ERP Microservices or AI Builder Authorization Service
+
+You will need **Azure Active Directory tenant administrator** rights to perform these steps.
+
+1.  Launch Azure portal
+
+2.  Go to Azure Active Directory
+
+3.  On the left-side menu bar select Manage \> Enterprise Applications and
+    search for the following applications (see steps below if you cannot find
+    those applications):
+
+| **Application**                          | **App ID**                           |
+|------------------------------------------|--------------------------------------|
+| Microsoft Dynamics ERP Microservices     | 0cdb527f-a8d1-4bf8-9436-b352c68682b2 |
+| Microsoft Dynamics ERP Microservices CDS | 703e2651-d3fc-48f5-942c-74274233dba8 |
+| AI Builder Authorization Service         | ad40333e-9910-4b61-b281-e3aeeb8c3ef3 |
+
+>   **If you are unable to find any of the above applications in Azure Active
+>   Directory -\> Enterprise Applications**:
+
+4.  On your local machine: Click on the Start menu and search for powershell.
+
+5.  Right-click on Windows Powershell and choose “Run as administrator”.
+
+6.  Run the following command to install “AzureAD” module
+
+     >   *Install-Module -Name AzureAD*
+
+  - If NuGet provider is required to continue, select “Y” to install it.*
+  -  If Untrusted repository message appears, select “Y” to continue.
+
+7.  For each application that needs to be added, run the following commands to
+    add the application to the Azure Active Directory.
+
+8.  Login as the Azure Active Directory administrator when prompted.
+
+>   Connect-AzureAD
+>   New-AzureADServicePrincipal –AppId \<AppId\>
+
 
