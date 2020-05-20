@@ -89,10 +89,9 @@ You can try out new Leave and absence preview features in a **Sandbox** environm
 
 The preview features include:
 
-- **Leave suspension** - You can suspend leave and absence in Human Resources for an employee. Suspending leave stops the leave accruals for selected leave types. If the suspension occurs after an accrual processes, suspending leave creates a prorated adjustment to the employee's leave balance. You can also include reason codes when suspending an employee's leave. The user experience has been updated to indicate suspension. 
+- **Leave accrual per company or plan** - You can run the accrual process either for all companies or for a single company. You can also run the accrual process for a specific leave and absence plan for a specific company. 
 
-- **Carry forward rules** - You can specify a carry forward leave type for carry forward balances where carry forward adjustments are transferred. For example, if an employee carries forward 10 days, you can pick a different leave type for those 10 days. 
+- **Buy leave** - You can enable and create buy leave policies for employees to submit buy requests. Employees can submit buy requests and have balances automatically updated to reflect the request.  
 
-- **Include reason code and comments for adjustments** - You can include a reason code and a comment when making an adjustment to an employee's leave balance. 
+- **Add attachments to approved leave requests** - You can add an attachment to a leave request that's already been approved. 
 
-- **Transition to Leave and absence parameters** - You can now use only Leave and absence parameters instead of using Human Resources parameters. 
