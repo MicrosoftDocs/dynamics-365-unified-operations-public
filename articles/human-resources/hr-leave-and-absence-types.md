@@ -77,7 +77,10 @@ If you've enabled preview features for Leave and absence, you need to configure 
 
 [!include [banner](includes/preview-feature-leave-absence.md)]
 
-1. Choose the leave type for carry forward balances to be transferred to. You can also create a new leave type for carry forward. 
+1. Choose the expiry rules for the leave type. Select the unit of time and the duration for expiring a leave type on the Accrual rules tab for the leave type. 
+
+2. When submitting a leave of absence request, you can automatically suspend another leave type by creating a suspension relation. Select the relation type and choose the leave type to suspend or to be suspended by. 
+
 
 ## See also
 
