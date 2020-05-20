@@ -81,8 +81,7 @@ f.  Install the **Export to Data Lake** add-in in **LCS**
 You are done with the configuration step. 
 
 
-##Create a Data Lake Storage (Gen2) account in your subscription
---------------------------------------------------------------
+## Create a Data Lake Storage (Gen2) account in your subscription
 
 The storage account will be used to store data from Finance and Operations. To
 manually create a storage account, you must be a user who has administrative
@@ -126,8 +125,7 @@ To create a storage account, follow the steps below.
         Copy **connection string** from either key 1 or key 2
         
 
-##Create a key vault and a secret that contains the Storage account
------------------------------------------------------------------
+## Create a key vault and a secret that contains the Storage account
 
 A key vault is a secure way to hand over details such as storage account name to
 Finance and Operations. To create a key vault and a secret, follow the steps below
@@ -155,7 +153,6 @@ Finance and Operations. To create a key vault and a secret, follow the steps bel
     added to Key Vault.
 
 ##Create an Application in Azure Active Directory
------------------------------------------------
 
 14.  In the Azure portal, select **Azure Active Directory**, and then
     select **App registrations**.
