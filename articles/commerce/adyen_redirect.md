@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Strong Customer Authentication(SCA) in Storefront using the Adyen connector  
+title: Strong Customer Authentication(SCA) in Storefront  
 description: This topic describes Strong Customer Authentication(SCA) in the Storefront checkout.
 author: rubendel
 manager: TonyaFehr
@@ -65,3 +65,4 @@ When a customer is redirected for SCA, they will be presented with a challege by
 
 - [Payments FAQ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 - [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3)
+- [Checkout module](https://docs.microsoft.com/en-us/dynamics365/commerce/add-checkout-module)
