@@ -30,6 +30,7 @@ ms.dyn365.ops.version: 10.0.12
 # Admin reference
 
 [!include[banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 How to set up virtual entities for Finance and Operations
 ---------------------------------------------------------
