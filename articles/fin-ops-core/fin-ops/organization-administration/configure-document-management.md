@@ -125,11 +125,11 @@ Here are some other configuration options to consider, although these options ar
 
 ## Accessing document management attachments 
 
-Document management appears to users as the **Attach** button (keyboard shortcut: **Ctrl**+**Shift**+**A**) at the top of most pages that contain data. Selecting the **Attach** button will open the **Attachments** page in the context of the data source of the currently selected control on the page. This page will show all the attachments related to the corresponding data source. 
+Document management appears to users as the **Attach** button at the top of most pages that contain data. When you select the **Attach** button (or when you use the corresponding keyboard shortcut, **Ctrl**+**Shift**+**A**), the **Attachments** page is opened in the context of the data source of the control that is currently selected on the page. This page shows all the attachments that are related to the corresponding data source. 
 
-The **Attach** button will also show a count of attachments for the currently selected record, so the user can see whether there are attachments on the current record without opening the **Attachments** page. The count will show 0-9, and then 9+ to limit the performance impact and visual noise of determining and showing larger counts.
+The **Attach** button also shows a count of the attachments for the currently selected record. Therefore, you can determine whether there are attachments for the current record without having to open the **Attachments** page. The button shows exact counts for zero through nine attachments. If there are more than nine attachments, the button shows **9+** as the count. In this way, the performance impact and visual noise that exact larger counts might cause are reduced.
 
-In 10.0.12, the **Show related document attachments** feature modifies the document attachment experience in two ways. First, instead of the **Attachments** page only showing attachments related to a single data source, with this feature enabled the **Attachments** page shows attachments from all data sources on the page that are related to the active record. The count of attachments on the **Attach** button also reflects this change. Second, users are able to move and copy attachments between those related data sources on the **Attachments** page.  
+In version 10.0.12, the **Show related document attachments** feature changes the document attachment experience in two ways. First, when the feature is enabled, the **Attachments** page doesn't show only attachments that are related to a single data source. Instead, it shows attachments from all data sources on the page that are related to the active record. The count of attachments on the **Attach** button also reflects this change. Second, users can move and copy attachments between the related data sources on the **Attachments** page.  
 
 > [!IMPORTANT]
 > Version 10.0.12 is a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
@@ -141,7 +141,7 @@ In Platform update 29, an attachment recovery feature has been added that provid
 
 ### Configuration of attachment recovery
 
-Attachment recovery can be enabled by going to **Document management parameters** > **General** >  **Deferred deletion** > **Deferred deletion enabled**. The default for **Number of days to defer deletion** is 30 days, but can be changed as needed. If the **Number of days to defer deletion** value is zero this means that the deleted attachments will be recoverable for an indefinite period. 
+Attachment recovery can be enabled by going to **Document management parameters** > **General** >  **Deferred deletion** > **Deferred deletion enabled**. The default for **Number of days to defer deletion** is 30 days, but can be changed as needed. If the **Number of days to defer deletion** value is zero, this means that the deleted attachments will be recoverable for an indefinite period. 
 
 After attachment recovery is enabled, a batch job with this name will be created, "Scans for deleted references which have reached the end of their retention period". This batch job will use the **Number of days to defer deletion** to determine how long to retain a deleted attachment based on the **Deleted data and time**.
 
@@ -159,14 +159,16 @@ When attachment recovery is enabled, attachments can be recovered in one of thre
 3. In **System administration** > **Inquiries**, the **Deleted attachments** page provides access to the list of deleted attachments that can be recovered for any record. The deleted attachments can be opened for review, permanently deleted, or restored.
 
 ## Scanning attachments for viruses and malicious code
-When working with attachments, you may want the ability to scan the files for viruses and malicious code. While Finance and Operations does not provide this capability out-of-the-box, extension points have been added that allow customers to integrate the file scanning software of their choice into the attachments space. A similar extension point has been added for file upload; see the [File upload control](../../dev-itpro/user-interface/file-upload-control.md) article for more details.
+When you work with attachments, you might want to be able to scan the files for viruses and malicious code. Although Finance and Operations apps don't provide this capability out of the box, extension points have been added so that customers can integrate file scanning software of their choice into the attachments space. A similar extension point has been added for file upload. For more information, see [File upload control](../../dev-itpro/user-interface/file-upload-control.md).
 
-The **Docu** class exposes the following two delegates, for which handlers can be implemented for document scanning: 
--  **Docu.delegateScanDocument()** This delegate applies scanning for an existing document attachment when a user attempts to preview or download the attachment. The corresponding action will fail if the scanning service deems the file to be malicious.  
--  **Docu.delegateScanDeletedDocument()** This delegate applies the file scanning logic on documents in the attachments recycle bin when a user attempts to preview or download a file. The corresponding action will fail if the scanning service deems the file to be malicious.  
+The **Docu** class exposes the following two delegates. Handlers can be implemented for these delegates for document scanning purposes:
+
+- **Docu.delegateScanDocument()** – This delegate applies the file scanning logic to an existing document attachment when a user tries to preview or download that attachment. The corresponding action will fail if the scanning service determines that the file is malicious.
+-  **Docu.delegateScanDeletedDocument()** – This delegate applies the file scanning logic to documents in the attachments recycle bin when a user tries to preview or download a file. The corresponding action will fail if the scanning service determines that the file is malicious.
 
 ### Implementation details
-Boilerplate code for the two handlers are shown in an example ScanDocuments class below. For general information on implementing handlers for delegates, see [EventHandlerResult classes in request or response scenarios](../../dev-itpro/dev-tools/event-handler-result-class.md).
+The following example of the **ScanDocuments** class shows boilerplate code for the two handlers. For general information about how to implement handlers for delegates, see [EventHandlerResult classes in request or response scenarios](../dev-tools/event-handler-result-class.md).
+
 
     public final class ScanDocuments
     {
