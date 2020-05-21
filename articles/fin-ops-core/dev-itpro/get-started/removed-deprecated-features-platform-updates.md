@@ -44,6 +44,17 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Platform updates for version 10.0.11 of Finance and Operations apps
 
+### Visual Studio 2015
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | To support the latest versions of Visual Studio, some changes have to be made to the X++ extensions for Visual Studio, that are incompatible with Visual Studio 2015. |
+| **Replaced by another feature?**   | Visual Studio 2017 will replace Visual Studio 2015 as the deployed and required version. |
+| **Product areas affected**         | Visual Studio development tools |
+| **Deployment option**              | All |
+| **Status**                         | New VMs deployed with 10.0.12/PU37 will include Visual Studio 2017. Existing VMs with only Visual Studio 2015 will have to be redeployed by Release Wave 1 of 2021. |
+
+
 ### Field groups containing invalid field references
 
 |   |  |
