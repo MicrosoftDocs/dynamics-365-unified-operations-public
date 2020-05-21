@@ -11,7 +11,7 @@ Before you can use this feature, it must be enabled on your system. Administrato
 - **Module** - Warehouse management
 - **Feature name** - Wave template grouping
 
-<a name="set-up-template"></a>
+<a name=*set-up-template*></a>
 
 ## Set a wave template to use wave template grouping
 
@@ -25,14 +25,22 @@ To enable wave template grouping, set up your [wave template](tasks/configure-wa
     - **Process wave at release to warehouse** - Set to **No**. <!-- KAMAYBAC: Why are we setting this? Is this required to use this feature? What effect does it have? Or is this setting only important for the upcoming demo? -->
 1. Select **Edit query** to open the query-editor panel.
 1. In the query panel, open the **Sorting** tab.
-1. Review your sorting criteria and make sure you have a rule that includes the field you want to use to group your waves.<br>(If you're preparing to work through the demo using sample data, then add a row with **Table** "Shipments", **Derived table** "Shipments", **Field** "Carrier service", and **Search direction** "Ascending".)
+1. Review your sorting criteria and make sure you have a rule that includes the field you want to use to group your waves.
+    1. If you're preparing to work through the demo using sample data, then add a row with the following:
+        1. **Table** - *Shipments*
+        1. **Derived table** - *Shipments*
+        1. **Field** - *Carrier service*
+            1. You may receive a popup message *Field Carrier service is not an index field. Do you want to add sorting on this?* Select **Yes**
+        1. **Search direction** - *Ascending*
 1. Select **OK** to save your changes and close the query panel.
-1. Select **Wave template grouping** to open the **Wave template grouping** page.
-1. Select the **Group by**check box for each row that you want to use for grouping your order lines into waves as needed.<br>(If you're preparing to work through the demo using sample data, then mark the **Group by** check box for the **Carrier service** row.)
+1. In the Action Pane, select **Wave template grouping** to open the **Wave template grouping** page.
+1. Select the **Group by**check box for each row that you want to use for grouping your order lines into waves as needed.
+    1. If you're preparing to work through the demo using sample data, then mark the **Group by** check box for the *Carrier service* row.
+1. Select **Save**.
 1. Close the **Wave template grouping** page.
 1. Select **Save** to save your template.
 
-## Try out the feature
+## Scenario
 
 This section provides a demo script that you can work through to get a feel for what this feature does and how to work with it.
 
@@ -42,40 +50,105 @@ To work through this demo using the sample records and values specified here, yo
 
 You can also use this demo as guidance for how to use this feature when working on a production system, but then you must then substitute your own values, and you may be missing some types of required records that would otherwise be provided by the standard demo data.
 
-### Demo: Wave template grouping
+### Scenario: Wave template grouping
 
-This demo illustrates how to use wave template grouping to automatically create multiple waves based on grouping criteria defined in a wave template. In this example, we'll set up the system to create one wave per carrier service.
+This scenario illustrates how to use wave template grouping to automatically create multiple waves based on grouping criteria defined in a wave template. In this example, we'll set up the system to create one wave per carrier service.
 
-1. Prepare your wave template as described in [Set a wave template to use wave template grouping](#set-up-template). Be sure to use the demo values suggested in that procedure if you will be working with demo data for this procedure. This setup will group your waves according to the carrier service set for each sales order.
+Prepare your wave template as described in [Set a wave template to use wave template grouping](#set-up-template). Be sure to use the demo values suggested in that procedure if you will be working with demo data for this procedure. This setup will group your waves according to the carrier service set for each sales order.
+
+#### Create a Sales Order
+
 1. Go to **Sales and marketing > Sales orders > All sales orders**.
 1. Select **New** to create a new sales order.
-1. The **Create sales order** panel opens. Make the following settings here:
-    - On the **Customer** FastTab, set **Customer account** to "US-004".
-    - On the **General** FastTab, set **Warehouse** to "62".
-1. Select **OK** to create the new sales order and close the panel.
-1. Your new sales order opens with the **Lines** tab showing. Go to the **Header** tab, expand the **Delivery** FastTab, and make the following settings in the **Transportation** section here:
-    - **Shipping carrier** - Air cargo
-    - **Carrier service** - Air
-1. Go back to the **Lines** tab for your sales order and add a line to the **Sales order lines** table with the following values:
-    - **Item number** - A0002
-    - **Quantity** - 2
-    - **Unit** - Pcs
-1. Select the new order line, open the **Inventory** drop-down list and select **Reservation**.
+1. The **Create sales order** FlyOut opens. Make the following settings here:
+    - On the **Customer** FastTab, set **Customer account** to *US-004*.
+    - On the **General** FastTab, set **Warehouse** to *62*.
+1. Select **OK** to create the new sales order and close the FlyOut.
+1. Your new sales order opens with the **Lines** section tab showing. ***Make note of the sales order number***.
+1. Select the **Header** section tab and expand the **Delivery** FastTab. Then make the following settings in the **Transportation** group:
+    - **Shipping carrier** - *Air cargo*
+    - **Carrier service** - *Air*
+1. Select the **Lines** section tab.
+1. Select *Add line* in the **Sales order lines** FastTab to add a line with the following values:
+    - **Item number** - *A0002*
+    - **Quantity** - *2*
+1. Focus on the new order line, in the **Sales order lines** FastTab select **Inventory** then select *Reservation* from the list.
 1. The **Reservation** page opens. Select **Reserve lot** to reserve your selected line's full quantity in the warehouse.
 1. Close the **Reservation** page to return to your sales order.
-1. Open the **Warehouse** tab and select **Release to warehouse**. The system announces that it has created a new shipment and wave for this order. Note the wave number.
-1. Go to **Warehouse management > Outbound Waves > Shipment Waves > All Waves**,  open the newly created wave, and note that the shipment has been added to it on the **Wave lines** FastTab.
-1. Go back to **Sales and marketing > Sales orders > All sales orders** and create a second sales order, this time for **Customer account** "US-005" and **Warehouse** "62".
-1. For this second sales order, go again to the **Header** tab, expand the **Delivery** FastTab, and make the following settings, this time to establish different transportation options:
-    - **Shipping carrier** - Flower moving
-    - **Carrier service** - STD
-1. Go back to the **Lines** tab for your second sales order and add a line to the **Sales order lines** table with the following values:
-    - **Item number** - A0001
-    - **Quantity** - 1
-    - **Unit** - Pcs
-1. As before, reserve inventory for this order line and then release the order to warehouse. The system announces that it has created a new shipment and wave for this order. Note the wave number and notice that it is different from the first wave number.
-1. Go to **Warehouse management > Outbound Waves > Shipment Waves > All Waves**,  open the second new wave, and note that the shipment has been added to it. A new wave was created for this shipment because it uses a different carrier service than the first sales order.
-1. Go back to **Sales and marketing > Sales orders > All sales orders** and create a third sales order, this time for **Customer account** "US-006" and **Warehouse** "62".
+1. In the Action Pane, select the **Warehouse** tab.
+1. Select **Release to warehouse** from the *Actions* group. 
+1. An informational message displays with the shipment and wave for this order. Note the ***Wave ID*** number and the ***Shipment ID*** numbers.
+
+#### View the Wave
+
+1. Go to **Warehouse management > Outbound Waves > Shipment Waves > All Waves**
+1. Select the *Wave ID* created from the sales order.
+1. Select the wave ID to open the wave details.
+1. Note that the shipment has been added to the **Wave lines** FastTab.
+
+#### Create another Sales Order
+
+1. Go to **Sales and marketing > Sales orders > All sales orders**
+1. Select **New** to create a new sales order.
+1. The **Create sales order** FlyOut opens. Make the following settings here:
+    - On the **Customer** FastTab, set **Customer account** to *US-005*.
+    - On the **General** FastTab, set **Warehouse** to *62*.
+1. Select **OK** to create the new sales order and close the FlyOut.
+1. Your new sales order opens with the **Lines** section tab showing. ***Make note of the sales order number***.
+1. Select the **Header** section tab and expand the **Delivery** FastTab. Then make the following settings in the **Transportation** group:
+    - **Shipping carrier** - *Flower moving*
+    - **Carrier service** - *Std*
+1. Select the **Lines** section tab.
+1. Select *Add line* in the **Sales order lines** FastTab to add a line with the following values:
+    - **Item number** - *A0001*
+    - **Quantity** - *1*
+1. Focus on the new order line, in the **Sales order lines** FastTab select **Inventory** then select *Reservation* from the list.
+1. The **Reservation** page opens. Select **Reserve lot** to reserve your selected line's full quantity in the warehouse.
+1. Close the **Reservation** page to return to your sales order.
+1. In the Action Pane, select the **Warehouse** tab.
+1. Select **Release to warehouse** from the *Actions* group. 
+1. An informational message displays with the shipment and wave for this order. Note the ***Wave ID*** number and the ***Shipment ID*** numbers. Note that the *Wave* number is different from the first sales order's wave number.
+
+#### View the Wave
+
+1. Go to **Warehouse management > Outbound Waves > Shipment Waves > All Waves**
+1. Select the *Wave ID* created from the second sales order.
+1. Select the wave ID to open the wave details.
+1. Note that the shipment has been added to the **Wave lines** FastTab.
+1. A new wave was created for this shipment because it uses a different carrier service than the first sales order.
+
+#### Create a Third Sales Order
+
+1. Go to **Sales and marketing > Sales orders > All sales orders**
+1. Select **New** to create a new sales order.
+1. The **Create sales order** FlyOut opens. Make the following settings here:
+    - On the **Customer** FastTab, set **Customer account** to *US-006*.
+    - On the **General** FastTab, set **Warehouse** to *62*.
+1. Select **OK** to create the new sales order and close the FlyOut.
+1. Your new sales order opens with the **Lines** section tab showing. ***Make note of the sales order number***.
+1. Select the **Header** section tab and expand the **Delivery** FastTab. Then make the following settings in the **Transportation** group:
+    - **Shipping carrier** - *Air Cargo*
+    - **Carrier service** - *Air*
+1. Select the **Lines** section tab.
+1. Select *Add line* in the **Sales order lines** FastTab to add a line with the following values:
+    - **Item number** - *A0001*
+    - **Quantity** - *1*
+1. Focus on the new order line, in the **Sales order lines** FastTab select **Inventory** then select *Reservation* from the list.
+1. The **Reservation** page opens. Select **Reserve lot** to reserve your selected line's full quantity in the warehouse.
+1. Close the **Reservation** page to return to your sales order.
+1. In the Action Pane, select the **Warehouse** tab.
+1. Select **Release to warehouse** from the *Actions* group. 
+1. An informational message displays with the shipment and wave for this order. Note the ***Wave ID*** number and the ***Shipment ID*** numbers. Note that the *Wave* number is the same as the first sales order's wave number. <!-- HHM: script says what should happen, but a new wave and shipment were created. -->
+
+#### View the Wave
+
+1. Go to **Warehouse management > Outbound Waves > Shipment Waves > All Waves**
+1. Select the *Wave ID* created from the third sales order.
+1. Select the wave ID to open the wave details.
+1. Note that the shipment has been added to the **Wave lines** FastTab along with the first sales order shipment.
+
+<!-- HHM: >
+1. Go back to **Sales and marketing > Sales orders > All sales orders** and create a third sales order, this time for **Customer account** *US-006* and **Warehouse** *62*.
 1. For this third sales order, go again to the **Header** tab, expand the **Delivery** FastTab, and make the following settings, this time with the same transportation options as the first sales order:
     - **Shipping carrier** - Air cargo
     - **Carrier service** - Air
@@ -84,6 +157,6 @@ This demo illustrates how to use wave template grouping to automatically create 
     - **Quantity** - 1
     - **Unit** - Pcs
 1. As before, reserve inventory for this order line and then release the order to warehouse. The system announces that it has created a new shipment and wave for this order. Note the wave number, which should be the same as the wave number for your first sales order.
-1. Go to **Warehouse management > Outbound Waves > Shipment Waves > All Waves**,  open the combined wave, and note that it now has two shipments listed on the **Wave lines** FastTab. These shipments have been combined into the same wave because both of them are set to use the same carrier service.
+1. Go to **Warehouse management > Outbound Waves > Shipment Waves > All Waves**,  open the combined wave, and note that it now has two shipments listed on the **Wave lines** FastTab. These shipments have been combined into the same wave because both of them are set to use the same carrier service. -->
 
 <!-- KAMAYBAC: When I did this, I got a new wave each time, even though the carrier service was the same. I did it twice, same result. Is something missing here? -->
