@@ -30,116 +30,109 @@ ms.dyn365.ops.version: 10.0.12
 # Entity modeling
 
 [!include[banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 ## Generating virtual entities
 
-Virtual entities for Finance and Operations apps do not exist in Common Data Service by default. A user is required to query the catalog entity to view the entities available in the linked instance of Finance and Operations. From the catalog, the user can select one or more entities and ask Common Data Service to generate the virtual entities. This procedure if explained in subsequent sections.
+By default, virtual entities for Finance and Operations apps don't exist in Common Data Service. A user must query the catalog entity to view the entities that are available in the linked instance of Finance and Operations. From the catalog, the user can select one or more entities, and then request that Common Data Service generate the virtual entities. This procedure is explained in later sections.
 
 ## Entity fields
 
-When a virtual entity is generated for a Finance and Operations entity, each field in the Finance and Operations entity is attempted to be created in the corresponding virtual entity in Common Data Service. In an ideal case, the total number of fields should be the same in both entities unless there is any mismatch in supported data types between Finance and Operations and Common Data Service as explained below. For data types that are supported, the field properties in Common Data Service are set based on the properties in Finance and Operations. The supported and not supported data types are discussed next. More information about fields in Common Data Service can be found in [Fields overview](https://docs.microsoft.com/powerapps/maker/common-data-service/fields-overview).
+When a virtual entity is generated for a Finance and Operations entity, the system tries to create each field in the Finance and Operations entity in the corresponding virtual entity in Common Data Service. In an ideal case, the total number of fields is the same in both entities, unless there is a mismatch in supported data types between Finance and Operations and Common Data Service, as explained later in this section. For data types that are supported, the field properties in Common Data Service are set based on the properties in Finance and Operations.
 
-| **Finance and Operations data type**               | **Modeled data type in Common Data Service**                                                                                                                                                                                                                                                                                                                                                                                              |
-|---------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Real                            | Decimal (possible mismatch explained below)                                                                                                                                                                                                                                                                                                                                                                                |
-| Long                            | Decimal with precision = 0                                                                                                                                                                                                                                                                                                                                                                                                 |
-| Int                             | Integer                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| String (non-memo) String (memo) | String – single line of text String – multiple lines of text.                                                                                                                                                                                                                                                                                                                                                               |
-| UtcDateTime                     | DateTime - DateTimeFormat.DateAndTime, DateTimeBehavior.TimeZoneIndependent Empty date of 1/1/1900 in Finance and Operations is surfaced as an null value in Common Data Service.                                                                                                                                                                                                                                                                              |
-| Date                            | DateTime - DateTimeFormat.DateOnly, DateTimeBehavior.TimeZoneIndependent Empty date of 1/1/1900 in Finance and Operations is surfaced as an empty value in Common Data Service.                                                                                                                                                                                                                                                                                |
-| Enum                            | Picklist Finance and Operations Enum is generated as global OptionSets in Common Data Service solution. Matching between systems is done by the "External Name" property of values Enum integer value on Common Data Service is not guaranteed stable between systems and should not be relied upon (especially in the case of extensible enums in Finance and Operations which do not have a stable ID either) Option set metadata is refreshed when an entity using the option set is refreshed. |
+This rest of this section describes supported and unsupported data types. For more information about fields in Common Data Service, see [Fields overview](https://docs.microsoft.com/powerapps/maker/common-data-service/fields-overview).
 
-Fields of data type *real* and *long* in Finance and Operations are modeled as data type *decimal* in Common Data Service. Due to the mismatch in precision and scale between the two data types, the following behavior must be considered.
+| Data type in Finance and Operations | Modeled data type in Common Data Service |
+|-------------------------------------|------------------------------------------|
+| Real                                | Decimal<p>For information about the possible mismatch, see the next table.</p> |
+| Long                                | Decimal, where the precision equals 0 (zero) |
+| Int                                 | Integer |
+| String (non-memo) String (memo)     | String – single line of text String – multiple lines of text |
+| UtcDateTime                         | DateTime - DateTimeFormat.DateAndTime, DateTimeBehavior.TimeZoneIndependent<p>An empty date (January 1, 1900) in Finance and Operations is surfaced as a null value in Common Data Service.</p> |
+| Date                                | DateTime - DateTimeFormat.DateOnly, DateTimeBehavior.TimeZoneIndependent<p>An empty date (January 1, 1900) in Finance and Operations is surfaced as an empty value in Common Data Service.</p> |
+| Enum                                | Picklist<p>Finance and Operations enumerations (enums) are generated as global OptionSets in Common Data Service. Matching between the systems is done by using the **External Name** property of values. Enum integer values in Common Data Service aren't guaranteed to be stable between the systems. Therefore, you should not rely on them, especially in the case of extensible enums in Finance and Operations, because these enums don't have a stable ID either. OptionSet metadata is updated when an entity that uses the OptionSet is updated. |
 
-| **Use case**                            | **Resulting behavior**                                                                                                                                                                                                                                                                                             |
-|-----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Common Data Service has higher precision                | Should never happen unless the metadata is out of sync.                                                                                                                                                                                                                                                             |
-| Finance and Operations has higher precision                | On read, value is rounded in Common Data Service to the closest precision value. If value is edited in Common Data Service, it gets rounded to the closest precision in Finance and Operations. On write, writes the value specified in Common Data Service (since Finance and Operations supports more precision).                                                                      |
-| Common Data Service has higher scale                    | Not applicable                                                                                                                                                                                                                                                                                                     |
-| Finance and Operations has higher scale | Common Data Service will show Finance and Operations value even if it exceeds 100 billion, though precision losses will occur. For instance, 987,654,100,000,000,000 is displayed in Common Data Service as "987,654,099,999,999,900". If the value of this field is edited in Common Data Service, Common Data Service validation throws an error that it exceeds the max value before sending to Finance and Operations. |
+Fields of the *real* and *long* data types in Finance and Operations are modeled as the *decimal* data type in Common Data Service. Because of the mismatch in precision and scale between the two data types, the following behavior must be considered.
 
-The following data types in Finance and Operations are not supported in Common Data Service. Fields of such a data type in Finance and Operations entity will not be made available in the corresponding virtual entity in Common Data Service. If such fields are used as parameters in OData actions, those actions will not be available for use in the corresponding virtual entity. OData actions are explained in a subsequent section.
+| Use case                                     | Resulting behavior |
+|----------------------------------------------|--------------------|
+| Common Data Service has higher precision.    | This use case should never occur unless the metadata is out of sync. |
+| Finance and Operations has higher precision. | During a read operation, the value is rounded to the closest precision value in Common Data Service. If the value is edited in Common Data Service, it's rounded to the closest precision value in Finance and Operations. During a write operation, the value that is specified in Common Data Service is written, because Finance and Operations supports higher precision. |
+| Common Data Service has higher scale.        | Not applicable |
+| Finance and Operations has higher scale.     | Common Data Service shows the Finance and Operations value, even if it exceeds 100 billion. However, there will be a loss of precision. For example, 987,654,100,000,000,000 is shown in Common Data Service as "987,654,099,999,999,900". If the value of this field is edited in Common Data Service, Common Data Service validation throws an error that the value exceeds the maximum value before that value is sent to Finance and Operations. |
 
--   AnyType 
+The following data types in Finance and Operations aren't supported in Common Data Service. Fields of these data types in Finance and Operations entities won't be made available in the corresponding virtual entities in Common Data Service. If fields of these data types are used as parameters in Open Data Protocol (OData) actions, those actions won't be available for use in the corresponding virtual entities. For more information about OData actions, see the [OData actions](#odata-actions) section later in this topic.
 
--   BLOB 
+- AnyType
+- BLOB
+- Class
+- Container
+- Guid
+- Record
+- Time
+- UserType
+- VarArg
+- Void (Void return types on OData actions are supported.)
 
--   Class 
+Data type that are supported in Common Data Service but not in Finance and Operations aren't supported in virtual entities for Finance and Operations.
 
--   Container 
+## Entity key/primary key
 
--   Guid 
+In Finance and Operations, entities can have one or more fields of various data types as the entity key. An entity key uniquely identifies a record in a Finance and Operations entity. Additionally, a record in an entity can be uniquely identified by a record ID primary key of the Int64 type.
 
--   Record 
+In Common Data Service, the primary key is always a globally unique identifier (GUID). The GUID-based primary key enables a record in an entity in Common Data Service to be uniquely identified.
 
--   Time 
-
--   UserType 
-
--   VarArg 
-
--   Void (void return types on OData actions are supported)
-
-Data type that are supported in Common Data Service but not in Finance and Operations, cannot be supported in virtual entities for Finance and Operations.
-
-## Entity key/Primary key
-
-In Finance and Operations, entities can have one or more fields of varying data types as the entity key. Entity key uniquely identifies a record in a Finance and Operations entity. Additionally, a record in an entity can also be uniquely identified by a Rec Id primary key of type Int64.
-
-In Common Data Service, the primary key is always a GUID. The GUID based primary key allows to uniquely identify a record in an entity in Common Data Service.
-
-In order to bridge this implementation gap between Finance and Operations and Common Data Service, the primary key of the virtual entity for Finance and Operations is a GUID (to comply with Common Data Service) which is comprised of the data entity ID in the first 4 bytes, and the rec ID of the root data source in the entity as the last 8 bytes. This design satisfies Common Data Service’s requirements to have a GUID as the entity key and allows unique identification of the entity record in Finance and Operations using the table Id and rec ID.
+To bridge the implementation gap between Finance and Operations and Common Data Service, the primary key of a virtual entity for Finance and Operations is a GUID (to comply with Common Data Service). This GUID consists of the data entity ID in the first 4 bytes, and the record ID of the root data source in the entity as the last 8 bytes. This design satisfies Common Data Service's requirement that a GUID be used as the entity key. It also enables the table ID and record ID to be used to uniquely identify the entity record in Finance and Operations.
 
 ## Primary field
 
-In Common Data Service, each entity must have a primary field which must be a single field of type string. The primary field is used in Common Data Service in the following scenarios.
+In Common Data Service, each entity must have a primary field. This field must be a single field of the string type. The primary field is used in Common Data Service in the following scenarios:
 
--   The default views that are created for an entity includes the primary field.
+- The default views that are created for an entity include the primary field.
+- The quick view form for an entity includes the primary field.
+- A lookup to another entity is added to a page and shows the data from the primary field.
 
--   The quick view form for an entity includes the primary field.
+Based on this use of the primary field in Common Data Service, the primary field for a virtual entity for Finance and Operations is designed to use the entity key of the corresponding entity in Finance and Operations.
 
--   When a look up to another entity is added to a form, the look up shows the data from the primary field.
-
-Based on the above usage of the primary field in Common Data Service, the design of the primary field for a virtual entity for Finance and Operations is to use the entity key of the corresponding entity in Finance and Operations.
-
-Since the primary field in Common Data Service is expected to only have one field of type string, while the entity key in Finance and Operations can have multiple fields of varying data type, the entity key fields are converted to string and the values are concatenated and \| separated to a max length of 255. Any value longer than 255 will be truncated. This virtual entity field representing the
-primary field is called mserp_primaryfield.
+Because the primary field in Common Data Service is expected to have only one field of the string type, whereas the entity key in Finance and Operations can have multiple fields of various data types, the entity key fields are converted to strings. The strings are concatenated and separated by a pipe (\|), to a maximum length of 255. Any value that exceeds 255 is truncated. This virtual entity field that represents the primary field is named **mserp\_primaryfield**.
 
 ## Relations
 
-Relations in Finance and Operations entity is modeled as a 1:n or n:1. This is modeled as a relationship in the virtual entity in Common Data Service. Note, n:n relations are not supported in Finance and Operations. As an example, in Finance and Operations, if Entity A has a foreign key to Entity B, this relation will be modeled as a n:1 relationship in the virtual entity Entity A in Common Data Service. The schema name of this relationship in Common Data Service will have a naming convention of mserp_FK_\<source entity name\>_\<relation name\> which has a max string length limit of 120 characters. Any relation whose schema name would result in a longer name will not be generated in the virtual entity in Common Data Service. The external name of this relationship follows a naming convention of FK_\<relation name\>. The external name is used to determine the relation in Finance and Operations when building the query sent to Finance and Operations.
+Relations in Finance and Operations entities are modeled as one-to-many (1:n) or many-to-one (n:1) relations. These relations are modeled as relationships in the virtual entity in Common Data Service. Note that many-to-many (n:n) relations aren't supported in Finance and Operations.
 
-When a relationship is generated in Common Data Service for a virtual entity, a new field of type look up is also added to the source entity. In the above example, when the relationship was created, a new field of type look up with naming convention of mserp_fk_\<target_entity\>_id is added to the source entity Entity A. Since there can be several relations in an entity in Finance and Operations, there will be as many look up fields (one per related entity) created in the source virtual entity. When this look up field is added to a form or a view, the look up will show the primary field value from the related entity.
+For example, in Finance and Operations, if Entity A has a foreign key to Entity B, this relation will be modeled as an n:1 relationship in virtual entity Entity A in Common Data Service. The schema name of this relationship in Common Data Service uses the naming convention **mserp\_FK\_\<source entity name\>\_\<relation name\>**. This naming convention has a maximum string length of 120 characters. Any relation where the schema name will produce a name that exceeds 120 characters won't be generated in the virtual entity in Common Data Service.
 
-A relationship in the virtual entity in Common Data Service will be generated if and only if the related entity in the relation already exists as a virtual entity in Common Data Service. In the above example, if Entity B did not exist as a virtual entity in Common Data Service, the relation to Entity B would not be created in Entity A when Entity A was generated as a virtual entity. This relation will only get added to Entity A when Entity B is generated as a virtual entity. This means, when generating a virtual entity for Finance and Operations, validations are done to ensure only relationships that can be complete and functional are generated in the virtual entity being generated. So, in summary, the following can be one of the reasons for why a relationship to another Finance and Operations virtual entity does not exist in the virtual entity.
+The external name of this relationship uses the naming convention **FK\_\<relation name\>**. The external name is used to determine the relation in Finance and Operations when the query that is sent to Finance and Operations is built.
 
--   The Finance and Operations entity participating in the relationship does not exist as a virtual entity.
+When a relationship is generated for a virtual entity in Common Data Service, a new field of the lookup type is also added to the source entity. In the preceding example, when the relationship is created, a new lookup field that uses the naming convention **mserp\_fk\_\<target\_entity\>\_id** is added to source entity Entity A. Because there can be several relations in an entity in Finance and Operations, the same number of lookup fields (one per related entity) will be created in the source virtual entity. When this lookup field is added to a page or a view, it will show the primary field value from the related entity.
 
--   The name length of the relationship name exceeds 120 characters.
+A relationship in the virtual entity in Common Data Service will be generated only if the related entity in the relation already exists as a virtual entity in Common Data Service. In the preceding example, if Entity B doesn't exist as a virtual entity in Common Data Service, the relation to Entity B won't be created in Entity A when Entity A is generated as a virtual entity. This relation will be added to Entity A only when Entity B is generated as a virtual entity. Therefore, when a virtual entity is generated for Finance and Operations, validations are done to ensure that only relationships that can be complete and functional are generated in the virtual entity that is being generated.
 
-Note, if an error is encountered when generating any part of a Finance and Operations virtual entity in Common Data Service, the virtual entity will not be created at all. The above factors are not considered as errors.
+In summary, a relationship to another Finance and Operations virtual entity might not exist in the virtual entity for either of the following reasons:
 
-### Native entity to native entity relationship
+- The Finance and Operations entity that is participating in the relationship doesn't exist as a virtual entity.
+- The length of the name of the relationship exceeds 120 characters.
 
-This is the standard Common Data Service functionality where the relationships are resolved using the GUID of the related entity which is the entity key. The GUID identifies the unique entity record in the related entity.
+Note that if an error is encountered when any part of a Finance and Operations virtual entity is generated in Common Data Service, the virtual entity won't be created at all. If relationships don't exist for either of the preceding reasons, the situation isn't considered an error.
 
-### Virtual entity to virtual entity relationship
+### Native entity–to–native entity relationships
 
-The relationships between two Finance and Operations virtual entities are driven by the relation metadata in the Finance and Operations entity. As explained above, these relations are generated as relationships in Common Data Service when the virtual entity is generated. Like native entity behavior in Common Data Service, such relationships use the GUID to identify the unique record of the entity in Finance and Operations. Semantically, the GUID on the Finance and Operations virtual entity behaves like the GUID on the native Common Data Service entity. The implementation details of the GUID in the Finance and Operations virtual entity is explained in an earlier section.
+Native entity–to–native entity relationships are the standard Common Data Service functionality, where relationships are resolved by using the GUID of the related entity. (This GUID is the entity key.) The GUID identifies the unique entity record in the related entity.
 
-In the above example, the GUID of the related entity, which is the entity key of Entity B in this example, will be used to build queries to identify a record in Finance and Operation using the relation Entity A has to Entity B.
+### Virtual entity–to–virtual entity relationships
 
-So, in effect, the only information in a relation coming from Finance and Operations that is used is the entity name. The entity name gives access to the primary field in the related entity to show in the look up while, it also gives access to the GUID of the related entity to use in other queries as explained above. The actual field on which the relation is built in the Finance and
-Operations entity is not used at all.
+The relationships between two Finance and Operations virtual entities are driven by the relation metadata in the Finance and Operations entities. As was explained earlier, these relations are generated as relationships in Common Data Service when the virtual entity is generated. As in the behavior for native entities in Common Data Service, these relationships use the GUID to identify the unique record of the entity in Finance and Operations. Semantically, the GUID on the Finance and Operations virtual entity behaves like the GUID on the native Common Data Service entity. For information about the implementation of the GUID in Finance and Operations virtual entities, see the [Entity key/primary key](#entity-key/primary-key) section earlier in this topic.
 
-### Virtual entity to native entity relationship
+In the preceding example, the GUID of the related entity is the entity key of Entity B and will be used to build queries to identify a record in Finance and Operation. The relation that Entity A has to Entity B will be used.
 
-As stated above, GUID is the only information that is used to identify a record uniquely in a native Common Data Service entity (including native to native relationships) or a Finance and Operations virtual entity (including virtual entity to virtual entity relationship). However, let’s take an example where, we want to show sales orders from Finance and Operations for an account Account A in Common Data Service. The query sent to Finance and Operations for this relationship will have a WHERE clause on the GUID of the entity key of the native accounts entity in Common Data Service. This is because, the scenario is asking to filter the sales orders for a specific account in Common Data Service.
+Therefore, in effect, the entity name is the only information that is used in a relation that comes from Finance and Operations. The entity name gives access to the primary field in the related entity, so that it can be shown in the lookup. It also gives access to the GUID of the related entity, so that it can be used in other queries, as was explained earlier. The actual field that the relation is built on in the Finance and Operations entity isn't used at all.
 
-Finance and Operations does not know anything about the GUID of the entity in Common Data Service and hence, the query is not going to return any sales orders. The query will be successful only if the WHERE clause had conditions based on the fields that Finance and Operations knew. This leads to the question as to, how can the GUID of the accounts entity in Common Data Service be replaced with field(s) that are in Finance and Operations such that, the query sent to Finance and Operations will be executed to return the correct list of sales orders?
+### Virtual entity–to–native entity relationship
 
-To solve this problem and enable a rich set of scenarios that allows for virtual entity to native entity relationships, relations can be added to such an entity in Finance and Operations. The relation will show up as a relationship when the virtual entity is synced. Sample x++ code is shown below.
+As was explained earlier, the GUID is the only information that is used to uniquely identify a record in a native Common Data Service entity (including in native entity–to–native entity relationships) or in a Finance and Operations virtual entity (including in virtual entity–to–virtual entity relationships). However, consider an example where you want to show sales orders from Finance and Operations for Account A in Common Data Service. The query that is sent to Finance and Operations for this relationship will have a WHERE clause on the GUID of the entity key of the native accounts entity in Common Data Service, because the sales orders must be filtered for a specific account in Common Data Service. However, because Finance and Operations doesn't have any information about the GUID of the entity in Common Data Service, the query won't return any sales orders. The query will be successful only if the WHERE clause has conditions that are based on the fields that Finance and Operations understands.
+
+Therefore, how can the GUID of the accounts entity in Common Data Service be replaced with fields that are in Finance and Operations, in such a way that the query that is sent to Finance and Operations will return the correct list of sales orders?
+
+To solve this issue and enable a rich set of scenarios that allows for virtual entity–to–native entity relationships, relations can be added to this type of entity in Finance and Operations. The relation will appear as a relationship when the virtual entity is synced. The following example shows sample X++ code.
 
 ```x++
 [CDSVirtualEntitySyntheticRelationshipAttribute('synthaccount', 'account', '\@SYS11307', 'accountcompanyidx')]
@@ -154,62 +147,53 @@ To solve this problem and enable a rich set of scenarios that allows for virtual
 
         return fieldMapping;
     }
-
 ```
 
-When this additional relations are made available in Common Data Service information is made available in the relationship definition, the query generated will have the WHERE clause based on the fields that Finance and Operations will understand and the query will return the filtered list of sales orders as expected.
+When these additional relations are made available in Common Data Service, information becomes available in the relationship definition. The query that is generated will have a WHERE clause that is based on the fields that Finance and Operations understands. That query will then return the filtered list of sales orders, as expected.
 
-### Native entity to virtual entity relationship
+### Native entity–to–virtual entity relationships
 
-The native entity to virtual entity relationships works much the same way as the native to native works. The users associate native records to virtual records in Finance and Operations, the GUID of the virtual entity is saved on the native entity record. Recall from the earlier discussion that the entities participating in a relationship will have the related entity’s GUID field on it. As a result, when a quote in Common Data Service is associated to a customer in Finance and Operations virtual entity, the GUID of the customer virtual entity will be saved in the quote entity. This allows for retrieval of records as expected which is per standard Common Data Service functionality. 
+<!--HERE-->Native entity–to–virtual entity relationships works much like native entity–to–native entity relationships. Users associate native records with virtual records in Finance and Operations, and the GUID of the virtual entity is saved on the native entity record. As was explained earlier, the entities that participate in a relationship will have the GUID field of the related entity on them. Therefore, when a quotation in Common Data Service is associated with a customer in a Finance and Operations virtual entity, the GUID of the customer virtual entity will be saved in the quotation entity. This behavior enables records to be retrieved as expected, by using standard Common Data Service functionality.
 
-## Enum
+## Enums
 
-Enums in Finance and Operations are modeled as OptionSets in Common Data Service. When a virtual entity for Finance and Operations is generated, the required Enum(s) are also generated as OptionSets. If an OptionSet already exists, it is used instead.
+Enums in Finance and Operations are modeled as OptionSets in Common Data Service. When a virtual entity for Finance and Operations is generated, the required enums are generated as OptionSets. If an OptionSet already exists, it's used instead.
 
 ## Company
 
-An entity in Finance and Operations can be bound to a company or be global. Virtual entity for a Finance and Operations entity that is bound to company will have a relationship to the cdm_company entity in Common Data Service. The cdm_company entity is a native entity in Common Data Service and is part of the Dynamics365Company solution. As always, when a relationship is created, a look up field is also created in the virtual entity for the related entity which in this case is the cdm_company entity. This look up field is called Company and must be used to provide optimal user experience where users can pick a value from a list of values or can navigate to the details of the related record. A field called Company Code also gets added as a four-character string field in the virtual entity. This field must be used in programming.
+An entity in Finance and Operations can be bound to a company, or it can be global. The virtual entity for a Finance and Operations entity that is bound to a company will have a relationship to the cdm\_company entity in Common Data Service. The cdm\_company entity is a native entity in Common Data Service and is part of the Dynamics365Company solution. As always, when a relationship is created, a lookup field is also created in the virtual entity for the related entity (cdm\_company in this case). This lookup field is named **Company**, and it must be used to provide an optimal user experience where users can select a value in a list or go to the details of the related record. A field that is named **Company Code** is also added in the virtual entity. The value is a four-character string. This field must be used in programming.
 
 ## Attachments
 
-Attachments in Finance and Operations entities are supported on a per entity basis. For example, an invoice header entity will implement an invoice related attachments entity to [enable attachments via entities](../../fin-ops/organization-administration/configure-document-management.md#how-can-attachments-be-extracted-from-the-system).
+Attachments in Finance and Operations entities are supported on a per-entity basis. For example, an invoice header entity will implement an invoice-related attachments entity to [enable attachments via entities](../../fin-ops/organization-administration/configure-document-management.md#how-can-attachments-be-extracted-from-the-system).
 
-Such entities will have relations with the corresponding attachments entity in Finance and Operations and thus will follow the same pattern as any other relations discussed earlier. In other words, Finance and Operations entities that have implemented attachments functionality also make attachments available using virtual entities. Finance and Operations entities that do not support attachments will also not support attachments when virtualized in Common Data Service.
+Entities of this type will have relations with the corresponding attachments entity in Finance and Operations. Therefore, they will follow the same pattern as the other relations that were discussed earlier. In other words, Finance and Operations entities that have implemented attachments functionality will also make attachments available by using virtual entities. Finance and Operations entities that don't support attachments also won't support attachments when they are virtualized in Common Data Service.
 
-It must be noted that, Finance and Operations virtual entities only support reading of attachments. It currently does not support create, update, or delete of attachments using virtual entities.
+Note that Finance and Operations virtual entities support only the reading of attachments. They don't currently support the creation, update, or deletion of attachments by using virtual entities.
 
 ## Default views
 
-When an entity is created in Common Data Service (native or virtual), five default views are also created for the entity. The following are the types of views that are created.
+When an entity (either native or virtual) is created in Common Data Service, five default views are also created for it:
 
--   Default public view
+- Default public view
+- Quick find view
+- Advanced find view
+- Associated view
+- Lookup view
 
--   Quick find view
+Common Data Service adds the primary field of the entity to all these views. Makers can add additional fields to these views as they require.
 
--   Advanced find view
+By default, Finance and Operations entities have five field groups:
 
--   Associated view
+- AutoReport
+- AutoLookup
+- AutoIdentification
+- AutoSummary
+- AutoBrowse
 
--   Lookup view
+The field groups are used to fill in additional fields for the Finance and Operations virtual entities in the default views in Common Data Service. The following table shows the mapping of the field groups to the default views.
 
-Common Data Service added the primary field of the entity to all these views. Makers can add additional fields to these views as needed.
-
-Finance and Operations entities have five field groups by default which are the following.
-
--   AutoReport
-
--   AutoLookup
-
--   AutoIdentification
-
--   AutoSummary
-
--   AutoBrowse
-
-The field groups are used to populate additional fields in the default views in Common Data Service for the Finance and Operations virtual entities. The mapping of the field groups to the default views is given below.
-
-| **Field group**    | **Default view**    |
+| Field group        | Default view        |
 |--------------------|---------------------|
 | AutoReport         | Default public view |
 | AutoLookup         | Lookup view         |
@@ -219,42 +203,33 @@ The field groups are used to populate additional fields in the default views in 
 
 ## OData actions
 
-OData actions in the Finance and Operations entities are made available as SDK messages in Common Data Service. More information on what SDK messages are and what they enable in Common Data Service can be read here.
+OData actions in the Finance and Operations entities are made available as software development kit (SDK) messages in Common Data Service. For more information about SDK messages and what they enable in Common Data Service, see here.
 
-Input and output parameters of the following types are supported. If an input or output parameter is of a different type, then the OData action does not show up as the SDK message in Common Data Service.
+Input and output parameters of the following types are supported. If an input or output parameter is of a different type, the OData action doesn't appear as the SDK message in Common Data Service.
 
--   Integer
+- Integer
+- String
+- Guid
+- Boolean
+- Date/Datetime
 
--   String
+Here are some examples of OData actions that are supported in Finance and Operations entities, but that aren't supported in the corresponding virtual entities in Common Data Service:
 
--   Guid
-
--   Boolean
-
--   Date/Datetime
-
-Some examples of OData actions that are supported in Finance and Operations entity but is not supported in the corresponding virtual entity in Common Data Service are listed below.
-
--   RetailStoreTenderTypeTable.queryDistinctTenderTypeIdAndName (collection of
-    RetailStoreTenderTypeTable entity)
-
--   DocumentRoutingClientApp.syncPrinters (DocumentRoutingClientApp entity)
-
--   DocumentRoutingClientApp.updateJobStatus (DocumentRoutingJobStatus enum)
-
--   DimensionCombination.getCombinationDisplayValue (LedgerJournalACType enum)
+- RetailStoreTenderTypeTable.queryDistinctTenderTypeIdAndName (a collection of RetailStoreTenderTypeTable entity)
+- DocumentRoutingClientApp.syncPrinters (DocumentRoutingClientApp entity)
+- DocumentRoutingClientApp.updateJobStatus (DocumentRoutingJobStatus enum)
+- DimensionCombination.getCombinationDisplayValue (LedgerJournalACType enum)
 
 ## Labels and localization
 
-Labels defined on metadata such as entity names and field names in Finance and Operations are retrieved at virtual entity generation time in Common Data Service by passing the list of language locales installed in Common Data Service. Finance and Operations returns each label as a list of locale/value sets, which are then used to construct a label instance in Common Data Service. Only the language packs that existed at the time of entity generation or refresh will be included and only labels for which Finance and Operations has a translation provided. Any missing translations revert to the label ID, such as \@SYS:DataEntity. After installing a new language pack in Common Data Service, existing entities would need to be refreshed to pick up the new label information if labels of that language exist in Finance and Operations.
+Labels that are defined on metadata, such as entity names and field names in Finance and Operations, are retrieved when virtual entities are generated in Common Data Service. The labels are retrieved by passing the list of language locales that are installed in Common Data Service. Finance and Operations returns each label as a list of locale/value sets that are then used to construct a label instance in Common Data Service. Only the language packs that exist at the time of entity generation or update are included. Additionally, only labels that Finance and Operations has provided a translation for are included. Any missing translations revert to the label ID, such as **\@SYS:DataEntity**. After a new language pack is installed in Common Data Service, existing entities must be updated to pick up the new label information, if labels in that language exist in Finance and Operations.
 
-Any runtime labels will be returned in the language of the current user context, meaning the language specified on that user's UserInfo record in Finance and Operations. This includes any error messages.
+Any runtime labels are returned in the language of the current user context. In other words, they are returned in the language that is specified on that user's UserInfo record in Finance and Operations. This behavior also applies to error messages.
 
 ## Error handling
 
-Finance and Operations CRUD business logic on the entity and backing tables is executed when called through the virtual entity in Common Data Service. If any exception is thrown on the Finance and Operations side, then the last message in the error log is returned back to Common Data Service and thrown as an InvalidPluginExecutionException containing the info log message from Finance and Operations. Since the Finance and Operations code runs in the context of the user, the language of the error message will be based on the specified language for the UserInfo record in Finance and Operations. Any messages written to the info log in Finance and Operations that do not result in an exception are not shown in Common Data Service.
+Finance and Operations create, read, update, and delete (CRUD) business logic on entities and backing tables is run when it's called through the virtual entity in Common Data Service. If any exception is thrown on the Finance and Operations side, the last message in the error log is returned to Common Data Service and is thrown as an InvalidPluginExecutionException exception that contains the info log message from Finance and Operations. Because the Finance and Operations code runs in the context of the user, the language of the error message is based on the language that is specified on the UserInfo record in Finance and Operations. If any messages that are written to the info log in Finance and Operations don't result in an exception, they aren't shown in Common Data Service.
 
-## Calculated/Unmapped fields
+## Calculated/unmapped fields
 
-Calculated and un-mapped fields in Finance and Operations entities are also available in the corresponding virtual entities in Common Data Service.
-
+Calculated and unmapped fields in Finance and Operations entities are also available in the corresponding virtual entities in Common Data Service.
