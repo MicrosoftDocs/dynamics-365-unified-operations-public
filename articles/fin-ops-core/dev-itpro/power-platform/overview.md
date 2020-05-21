@@ -30,6 +30,7 @@ ms.dyn365.ops.version: 10.0.0
 # Microsoft Power Platform overview
 
 [!include[banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 ## Prerequisite reading
 
