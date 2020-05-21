@@ -1302,6 +1302,20 @@
             href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluedesign.md
           - name: ValueMetadata type
             href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md
+    - name: Power Platform integration
+      items:
+      - name: Power Platform overview
+        href: power-platform/overview.md
+      - name: Entity modeling
+        href: power-platform/entity-modeling.md
+      - name: Application lifecycle management
+        href: power-platform/application-lifecycle-management.md
+      - name: Power Portal reference
+        href: power-platform/power-portal-reference.md
+      - name: Admin reference
+        href: power-platform/admin-reference.md
+      - name: FAQ
+        href: power-platform/faq.md
     - name: Regression suite automation tool
       items:
       - name: Regression suite automation tool overview
