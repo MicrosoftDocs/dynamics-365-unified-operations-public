@@ -51,11 +51,11 @@ PSD2.0 requires that SCA is supported during online shopping checkout so a custo
 
 ## Prerequisites for SCA support
 
-Support for SCA is provided by the out-of-box [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3) and may be implemented by any third-party connector using the payments SDK.
+Support for SCA is provided by the out-of-box [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3) and may be implemented by any third-party connector using the payments SDK.
 
 ## Setup
 
-Setup details will vary by payment connector. For setup details related to the out-of-box Adyen connector, visit the [e-Commerce section](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce) of the Adyen connector topic. 
+Setup details will vary by payment connector. For setup details related to the out-of-box Adyen connector, visit the [e-Commerce section](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce) of the Adyen connector topic. 
 
 ## Functional experience
 
@@ -64,5 +64,5 @@ When a customer is redirected for SCA, they will be presented with a challege by
 ## Related articles
 
 - [Payments FAQ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
-- [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3)
-- [Checkout module](https://docs.microsoft.com/en-us/dynamics365/commerce/add-checkout-module)
+- [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3)
+- [Checkout module](https://docs.microsoft.com/dynamics365/commerce/add-checkout-module)
