@@ -56,9 +56,7 @@ Note: If RCS environment has been already provisioned to your company, use the p
 -	From the list select **Globalization features**
 -	Click **Enable now** button
 
-scrnshot
-
-![Upload into repository options](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/RCS_Upload_to_GlobalRepo_options.JPG)
+![Feature management Global feature](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/janeaug_rcs_Global-feature/articles/finance/localizations/media/RCS_GlobalF_1%20Feature%20mgmt.JPG)
 
 > Note: Feature management text: This feature provides a new Globalization features workspace, a new form for creating, importing, and setting up available Globalization features for Globalization services use, such as e-Invoicing and tax services.
 
@@ -72,30 +70,30 @@ To use a Globalization feature user needs to import them from RCS/Global reposit
 -	Go to New **Globalization feature workspace**
 -	Click **e-Invoicing** feature tile
 
-scrnshot
+![Feature management Global feature](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/janeaug_rcs_Global-feature/articles/finance/localizations/media/RCS_GlobalF_2%20Feature%20wrkspace.JPG)
 
 - Which opens the **Globalization features** form:
 
-scrnshot
+![Feature management Global feature](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/janeaug_rcs_Global-feature/articles/finance/localizations/media/RCS_GlobalF_3%20Feature%20form.JPG)
 
 ## Add feature by deriving from existing Globalization feature 
 -	Import feature from Global repository
   -	Click **import** from **Action pane**
   
-scrnshot
+![Feature management Global feature](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/janeaug_rcs_Global-feature/articles/finance/localizations/media/RCS_GlobalF_4%20Feature%20import%20form%20GR.JPG)
  
   - Click **Synchronize** to get latest features 
     - Message: Global repo list updated
     - Note features that you see in the list are features that are available to you either:
-      - Published by Microsoft, or 
-      - Shared with you by another configuration provider
+    - Published by Microsoft, or 
+    - Shared with you by another configuration provider
   
-scrnshot
+![Feature management Global feature](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/janeaug_rcs_Global-feature/articles/finance/localizations/media/RCS_GlobalF_5%20Feature%20GR%20sync.JPG)
  
   - Select feature(s) to import from feature list and click **import**
     - Message: Feature has been successfully imported
 
-scrnshot  
+![Feature management Global feature](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/janeaug_rcs_Global-feature/articles/finance/localizations/media/RCS_GlobalF_6%20Feature%20GR%20import%20success.JPG)  
 
 -	Add Feature by deriving:
   - Click **Add**
@@ -104,11 +102,11 @@ scrnshot
   - Select base version of the feature to derive from the list of available features 
   - Click **Create feature** 
 
-scrnshot 
+![Feature management Global feature](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/janeaug_rcs_Global-feature/articles/finance/localizations/media/RCS_GlobalF_7%20Feature%20create%20derived.JPG) 
 
 -	Newly added feature is created with a status of **Draft**
 
-scrnshot 
+![Feature management Global feature](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/janeaug_rcs_Global-feature/articles/finance/localizations/media/RCS_GlobalF_8%20Feature%20draft%20create.JPG) 
 
 -	Review the feature components to see if updates are needed:
   - Review Configurations in case it becomes necessary to customize the Electronic Reporting (ER) formats and its binding with format mappings for the feature version
@@ -119,7 +117,7 @@ scrnshot
 -	Completed features can be:
   -	**Enable for** for a specific environment so the feature can be use in Globalization services
   -	**Published** to Global repository
-    - Features with ‘Feature version status’ of Published can be shared with external organization
+  - Note: Features with ‘Feature version status’ of Published can be shared with external organization
 
 ## Add new Globalization feature 
 -	Add Feature by creating a new feature from scratch:
@@ -128,7 +126,7 @@ scrnshot
   -	Fill in Feature name and description
   -	Click **Create feature** 
 
-scrnshot   
+![Global feature create](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/janeaug_rcs_Global-feature/articles/finance/localizations/media/RCS_GlobalF_9%20Feature%20create%20new.JPG) 
 
 -	Newly added feature is created with a status of **draft**
 -	Add required feature components – see below
@@ -138,7 +136,7 @@ scrnshot
 -	Completed features can be:
   -	**Enable for** for a specific environment so the feature can be use in Globalization services
   -	**Published** to Global repository
-    -	Features with ‘Feature version status’ of Published can be shared with external organization
+  - Note: Features with ‘Feature version status’ of Published can be shared with external organization
 
 ## Feature components overview
 
@@ -158,11 +156,11 @@ Globalization feature has several components parts that cover:
 
 -	**Version**
   -	Version manages Globalization feature lifecycle. Status can be changed through version tab ‘status change’. Permissible statuses are:
-    -	Draft – feature can be edited only as draft
-    -	Complete – feature and all related components are finalized and cannot be edited 
-    -	Published – feature and all related components are published to Global repo
-    -	Shared – feature and all related components are shared with external organizations
-    -	Enabled – feature and all related components are enabled for use in a Globalization service, for example e-Invoicing
+  -	Draft – feature can be edited only as draft
+  -	Complete – feature and all related components are finalized and cannot be edited 
+  -	Published – feature and all related components are published to Global repo
+  -	Shared – feature and all related components are shared with external organizations
+  -	Enabled – feature and all related components are enabled for use in a Globalization service, for example e-Invoicing
     Note: Some statuses are required to be moved through sequentially, so every status may not be available at every lifecycle stage.
 
 -	**Configurations**
@@ -176,12 +174,13 @@ Globalization feature has several components parts that cover:
   -	Delete – Allows user to delete selected feature setup
   -	View – Allows user to view the underlying feature setup that do not require any editing/updating
   -	Edit – Allows user to Create, Delete or Modify the attributes of the three main components of a feature setup:
-    -	Actions and their parameters
-    -	Applicability rules
-    -	Variables
-    Note: for more details, consult article: <TBD>
+  -	Actions and their parameters
+  -	Applicability rules
+  -	Variables
+  
+  Note: for more details, consult article: <TBD>
     
-    scrnshot 
+![Feature set up](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/janeaug_rcs_Global-feature/articles/finance/localizations/media/RCS_GlobalF_10%20Feature%20set%20up.JPG) 
 
 -	**Environments**
  -	Enable – For a selected Feature version, it allows the user to choose a published environment and enable it with an ‘Effective from’ date onwards – for details see **Configuring Environments for enablement section** below
@@ -195,6 +194,8 @@ Globalization feature has several components parts that cover:
    -	Enter Organization domain name and click **Share**
     
    scrnshot
+   
+   ![Global feature - Share with](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/janeaug_rcs_Global-feature/articles/finance/localizations/media/RCS_GlobalF_11%20Feature%20share%20with.JPG) 
 
   -	Feature is **Shared with** the organization and is available for them in the Global repository where it can be imported for use either into their RCS or F&O instance
 
@@ -205,6 +206,8 @@ User can leverage the ability to rebase a derived feature to the new/updated bas
  
  scrnshot
  
+ ![Feature management Global feature](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/janeaug_rcs_Global-feature/articles/finance/localizations/media/RCS_GlobalF_9%20Feature%20create%20new.JPG) 
+ 
  - User wants to rebase the derived version of the feature that they created
   -	Get the latest version of the feature by importing from Global repository
     -	Click **import** from **action pane**
@@ -214,6 +217,8 @@ User can leverage the ability to rebase a derived feature to the new/updated bas
      -	Message: Feature has been successfully imported
 
 scrnshot
+
+![Feature management Global feature](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/janeaug_rcs_Global-feature/articles/finance/localizations/media/RCS_GlobalF_9%20Feature%20create%20new.JPG) 
  
   -	User goes to **Feature list** and selects feature that they want to be rebased:
     -	Go to **Version** tab and click **New** to create draft version. 
@@ -221,10 +226,14 @@ scrnshot
 
 scrnshot
 
+![Feature management Global feature](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/janeaug_rcs_Global-feature/articles/finance/localizations/media/RCS_GlobalF_9%20Feature%20create%20new.JPG) 
+
   - Click **Rebase** side window appears on right
   - Click the **drop down** and select the latest version of the feature to rebase to:
 
 scrnshot
+
+![Feature management Global feature](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/janeaug_rcs_Global-feature/articles/finance/localizations/media/RCS_GlobalF_9%20Feature%20create%20new.JPG) 
 
   -	Click **Ok**
   -	Message: A feature version rebase operation completed successfully
@@ -235,11 +244,15 @@ scrnshot
 
 scrnshot
 
+![Feature management Global feature](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/janeaug_rcs_Global-feature/articles/finance/localizations/media/RCS_GlobalF_9%20Feature%20create%20new.JPG) 
+
 ## Configuring Environments for enablement: 
 Allows users of Globalization services, for example e-invoicing service, to manage the environment where they want to use feature setup version, as well granting authorization for the users that will have access to it
 -	Click on tile **e-invoicing** under **Environments**
 
 scrnshot
+
+![Feature management Global feature](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/janeaug_rcs_Global-feature/articles/finance/localizations/media/RCS_GlobalF_9%20Feature%20create%20new.JPG) 
 
 -	Click **Key Vault parameters** to enter the details for the digital certificate
  -	Click **New** to create a Key Vault secret: 
@@ -251,6 +264,8 @@ scrnshot
       -	**Description** - description of the certificate
 
 scrnshot
+
+![Feature management Global feature](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/janeaug_rcs_Global-feature/articles/finance/localizations/media/RCS_GlobalF_9%20Feature%20create%20new.JPG) 
 
 -	Click **New** to create a new environment: 
   -	**Name** - environment name
@@ -266,5 +281,7 @@ scrnshot
 -	Click **Publish** to publish the environment
 
 scrnshot
+
+![Feature management Global feature](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/janeaug_rcs_Global-feature/articles/finance/localizations/media/RCS_GlobalF_9%20Feature%20create%20new.JPG) 
 
 
