@@ -48,11 +48,11 @@ This list is intended to help you consider these removals and deprecations for y
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | <Please briefly explain why this feature is deprecated.> |
-| **Replaced by another feature?**   | <Please indicate if another feature/capability can be used as a replacement.  |
-| **Product areas affected**         | <Indicate what product ares are affected.> |
-| **Deployment option**              | <Indicate if this affects Cloud, On-premises, or both.> |
-| **Status**                         | **Deprecated:** <Indicate when (the quarter or year) this feature will be removed.> |
+| **Reason for deprecation/removal** | The process for IP whitelisting has changed. Self-Service no longer supports IP whitelisting |
+| **Replaced by another feature?**   | Please see [Configuring Azure Active Directory Conditional Access](https://docs.microsoft.com/en-us/appcenter/general/configuring-aad-conditional-access) for more details|
+| **Product areas affected**         | Security |
+| **Deployment option**              | Cloud |
+| **Status**                         | **Deprecated:** This feature is fully deprecated on self-service and is actively being removed from the v1 Cloud service.<br><br> |
 
 ### Field groups containing invalid field references
 
