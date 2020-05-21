@@ -36,9 +36,9 @@ This topic explains how to configure inventory buffers and inventory levels that
 
 ## Overview
 
-Dynamics 365 Commerce headquarters holds inventory data, various channels including point of sale (POS) applications, e-Commerce storefronts, and other custom integrated applications that pull and push inventory around in an asynchronous way. Therefore, the available inventory values obtained through the headquarters on-hand inventory page, point of sale (POS) user interface, and e-Commerce inventory availability APIs are not always 100% accurate in real time. 
+Dynamics 365 Commerce headquarters holds inventory data, various channels including point of sale (POS) applications, e-Commerce storefronts, and other custom integrated applications that pull and push inventory around in an asynchronous way. Consequently, the available inventory values obtained through the headquarters on-hand inventory page, point of sale (POS) user interface, and e-Commerce inventory availability APIs are not always 100% accurate in real time. 
 
-Instead of showing actual inventory values on e-Commerce storefronts, many retailers prefer to simply show inventory availability status messaging (for example, "Available" or "Out of stock") to inform customers as to whether an item is available for purchase or potentially out of stock.
+Instead of showing actual inventory values on e-Commerce storefronts, many retailers prefer to simply show inventory availability status messaging (for example, "Available" or "Out of stock") to inform customers as to whether an item is available for purchase or potentially out of stock. To accomplish this, inventory buffers and inventory levels that determine inventory availability messaging must be enabled and configured.
 
 ## Prerequisite: Enable inventory buffers and inventory levels feature
 
@@ -53,11 +53,11 @@ Once enabled, you can find **Inventory levels** in **Retail and Commerce \> Inve
 
 ## Create and configure an inventory level profile
 
-An inventory level profile determine if a given product quantity status is considered to be in stock, out of stock, or some other custom status. You can create and configure multiple inventory level profiles per legal entity. Each profile consists of a set of inventory levels and each level is defined by a *range*, a *code*, and a *label*.
+An inventory level profile determines if a given product quantity status is considered to be in stock, out of stock, or some other custom status. You can create and configure multiple inventory level profiles per legal entity. Each profile consists of a set of inventory levels and each level is defined by a *range*, a *code*, and a *label*.
 
 -	**Range** is defined by *start quantity* and *end quantity*. A quantity value falls into a range if it is greater than the start quantity and not greater than the end quantity of that range.
 -	**Code** is an internal abbreviation to represent the level. Customers who directly integrate with the inventory APIs can use code to build additional logic for a given inventory level, for example disabling the purchase capability for a product when its inventory level code is "OOS" ("out of stock").
--	**Label** is a meaningful message that explains the inventory level and can be shown to the customers on an e-Commerce site.
+-	**Label** is a meaningful customer-facing message that conveys an inventory level to customers on an e-Commerce site.
 
 ### Create an inventory level profile
 
@@ -68,7 +68,7 @@ To create an inventory level profile, follow these steps.
 1.	On the **Ranges** FastTab, select **Add** to add a new level, and then enter values in the **Start quantity**, **End quantity**, **Code**, and **Label** columns for that level. Repeat this step to add more levels. You can edit the values in the data grid or select **Delete** to remove a level as needed.
 1.	On the Action Pane, select **Save**.
 
-When a new profile is created, two "special" inventory levels get initialized systematically:
+When a new profile is created, two inventory levels are automatically initialized.
 
 - **OOS** – Refers to the "out of stock" level where the lower bound of the range is negative infinity. The start quantity and code are not editable for this level.
 -	**AVAIL** – Refers to the "available" range where the upper bound of the range is infinity. The end quantity and code are not editable for this level.
