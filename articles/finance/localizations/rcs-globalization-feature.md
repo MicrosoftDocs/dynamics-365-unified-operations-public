@@ -1,7 +1,37 @@
 ---
 # required metadata
 
-title: Regulatory Configuration Services (RCS): Globalization feature
+title: Display debit and credit amounts in ledger accounts for China
+description: This topic shows how to display credit and debit amounts for ledger accounts in two separate columns in the general ledger for China. 
+author: ShylaThompson
+manager: AnnBe
+ms.date: 03/21/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: LedgerParameters
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kfend
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 265884
+ms.assetid: 0f23b25b-45e5-4156-9e38-621a97046552
+ms.search.region: China (PRC)
+# ms.search.industry: 
+ms.author: leguo
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Version 1611
+
+---
+---
+# required metadata
+
+title: 
 description: This topic explains how to use Microsoft Regulatory Configuration Services (RCS) and the Global repository to create and use Globalization features.
 author: JaneA07
 manager: AnnBe
@@ -14,7 +44,6 @@ ms.technology:
 # optional metadata
 
 ms.search.form: RCS, RCSWorkspace, e-Invoicing service
-# ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
