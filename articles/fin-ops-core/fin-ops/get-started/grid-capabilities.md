@@ -97,7 +97,7 @@ To support this new behavior, a new column for the row status has been added to 
 
 - **Blank** – No status image indicates that the row has been successfully saved by the system.
 - **Processing pending** – This status indicates that the changes in the row haven't yet been saved by the server but are in a queue of changes that must be processed. Before you take action outside the grid, you must wait for all the pending changes to be processed. Additionally, the text in these rows is italicized to indicate the unsaved status of the rows. 
-- **Invalid state** – This status indicates that some warning or message was triggered during the processing of that row, which may have prevented the system from saving the changes in the row. In the old grid, if the save was unsuccessful, you were forced back into the row to fix the issue immediately. However, with the new grid, you're notified that a validation issue was encountered, but you can decide when you want to fix any issues in the row. When you're ready to fix the issue, you can manually move focus back to the row. Alternatively, you can select the **Fix this issue** action. This action immediately moves focus back to the row that has the issue, and lets you make edits inside or outside the grid. Note that the processing of subsequent pending rows is stopped until this validation warning is resolved. 
+- **Invalid state** – This status indicates that some warning or message was triggered during the processing of the row, and it might have prevented the system from saving the changes in that row. In the old grid, if the save operation was unsuccessful, you were forced back into the row to fix the issue immediately. However, in the new grid, you're notified that a validation issue was encountered, but you can decide when you want to fix any issues in the row. When you're ready to fix an issue, you can manually move focus back to the row. Alternatively, you can select the **Fix this issue** action. This action immediately moves focus back to the row that has the issue, and lets you make edits inside or outside the grid. Note that the processing of subsequent pending rows is stopped until this validation warning is resolved. 
 - **Paused** – This status indicates that processing by the server is paused because validation of the row triggered a pop-up dialog box that requires user input. Because the user might be entering data in some other row, the pop-up dialog box isn't immediately presented to that user. Instead, it will be presented when the user chooses to resume processing. This status is accompanied by a notification that informs the user about the situation. The notification includes a **Resume processing** action that will trigger the pop-up dialog box.  
     
 When users are entering data ahead of the place where the server is processing, they can expect a few degradations in the data entry experience, such as a lack of lookups, control-level validation, and entry of default values. Users who need a drop-down list to find a value are encouraged to wait for the server to catch up to the current row. Control-level validation and entry of default values will also occur when the server processes that row.   
@@ -144,7 +144,7 @@ This section maintains a list of known issues for the new grid control while the
 
 ### Fixed as part of 10.0.13
 
-> [!Note]
+> [!NOTE]
 > The following information is being provided so that you can plan accordingly. For more information about the targeted release schedule of version 10.0.13, see [Service update availability](../../fin-ops/get-started/public-preview-releases.md).
 
 - [KB 4563317] Tooltips aren't shown for images.
@@ -156,15 +156,15 @@ This section maintains a list of known issues for the new grid control while the
 - [KB 4558572] Styling that is associated with the List Panel **ExtendedStyle** isn't applied.
 - [KB 4558573] Validation errors can't be fixed when the required change is outside the grid.
 - [KB 4558584] Negative numbers aren't rendered correctly.
-- [KB 4560726] Unexpected client error after swapping between lists using a List View control.
-- [KB 4562141] Grid indices are off after adding a new record.
+- [KB 4560726] An "unexpected client error" occurs after swapping between lists is done by using a List View control.
+- [KB 4562141] Grid indices are off after a new record is added.
 - [KB 4562151] The **Validate** and **Copy** task recorder options aren't available for date/number controls. 
-- [KB 4562153] Multi-select checkboxes are not visible on list/card grids.
-- [KB 4562646] Cannot click outside the grid sometimes after multi-selecting rows in the grid.
-- [KB 4562647] Focus resets to first control on the Publish dialog after adding a new row in the security roles grid.
-- [KB 4563310] Enhanced preview doesn't close after changing row.
-- [KB 4563313] "Unexpected client error" in Internet Explorer when selecting a value from a lookup.
-- [KB 4563324] Navigation doesn't work after opening the Personnel Management workspace.
+- [KB 4562153] Multi-select check boxes aren't visible on list/card grids.
+- [KB 4562646] You sometimes can't click outside the grid after you multi-select rows in the grid.
+- [KB 4562647] Focus is reset to the first control in the **Publish** dialog box after a new row is added in the security roles grid.
+- [KB 4563310] The enhanced preview isn't closed after a row is changed.
+- [KB 4563313] An "unexpected client error" occurs in Internet Explorer when a value is selected in a lookup.
+- [KB 4563324] Navigation doesn't work after the **Personnel management** workspace is opened.
 
 ### Fixed as part of 10.0.11
 
@@ -182,7 +182,7 @@ This section maintains a list of known issues for the new grid control while the
 - [KB 4558383] Controls outside the grid aren't updated after the last record is deleted.
 - [KB 4558587] Reference groups that have combo boxes for replacement fields don't show values.
 - [KB 4562143] Fields aren't updated after a row change / Grid processing becomes stuck after row deletion.
-- [KB 4562645] Exception when opening a lookup while running RSAT tests 
+- [KB 4562645] An exception occurs when a lookup is opened while Remote Server Administration Tools (RSAT) tests are running.
 
 ### Fixed as part of 10.0.10
 
