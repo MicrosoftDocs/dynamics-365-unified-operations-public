@@ -5,7 +5,7 @@ title: Customer electronic invoices
 description: This topic provides information about managing customer electronic invoices for Italy.
 author: v-oloski
 manager: 
-ms.date: 05/15/2020
+ms.date: 05/21/2020
 ms.topic: article
 ms.: 
 ms.service: dynamics-ax-applications
