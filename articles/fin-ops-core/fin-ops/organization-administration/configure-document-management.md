@@ -30,8 +30,6 @@ ms.dyn365.ops.version: July 2017 update
 # Configure document management
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
-
 
 This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records. It includes information about the concepts and features that are involved in this functionality.
 
@@ -132,6 +130,9 @@ Document management appears to users as the **Attach** button (keyboard shortcut
 The **Attach** button will also show a count of attachments for the currently selected record, so the user can see whether there are attachments on the current record without opening the **Attachments** page. The count will show 0-9, and then 9+ to limit the performance impact and visual noise of determining and showing larger counts.
 
 In 10.0.12, the **Show related document attachments** feature modifies the document attachment experience in two ways. First, instead of the **Attachments** page only showing attachments related to a single data source, with this feature enabled the **Attachments** page shows attachments from all data sources on the page that are related to the active record. The count of attachments on the **Attach** button also reflects this change. Second, users are able to move and copy attachments between those related data sources on the **Attachments** page.  
+
+> [!IMPORTANT]
+> Version 10.0.12 is a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
 
 
 ## Attachment recovery
