@@ -30,6 +30,7 @@ ms.dyn365.ops.version: 10.0.12
 # FAQ
 
 [!include[banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 **Do Tier 1 Finance and Operations environments or demo topologies work?**
 
