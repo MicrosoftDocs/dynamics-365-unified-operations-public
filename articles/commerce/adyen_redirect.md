@@ -42,12 +42,12 @@ This topic describes Strong Customer Authentication (SCA) support built into the
 | Term | Description |
 |---|---|
 | Redirect | The action of moving an online shopper's browsing session out of the context of the merchant's storefront. |
-| SCA | Stront Customer Authentication. Part of the EU Payment Services Directive 2.0 (PSD2.0) which requires that online shoppers are authenticated outside of their online shopping experience when paying with an electronic payment method. |
-| Issuing bank | The financial institution which issues a payment instrument to a customer. |
+| SCA | Strong Customer Authentication. Part of the EU Payment Services Directive 2.0 (PSD2.0) that requires online shoppers to be authenticated outside of their online shopping experience when paying with an electronic payment method. |
+| Issuing bank | The financial institution that issues a payment instrument to a customer. |
 
 ## Overview
 
-PSD2.0 requires that SCA is supported during online shopping checkout so a customer can be authenticated by the bank that issued their payment method. This commonly occurs when a shopper is going through the checkout for an online order and after they have provided their payment details. Those details are evaluated, and based on a criteria provided by PSD2.0, the customer may be redirected to their bank. Upon being redirected to their bank, the customer is required to provide some form of authentication to confirm that they are an authorized user for the payment instrument submitted for payment during checkout. If the user is confirmed to be the cardholder, they are then redirected back to the storefront where the payment was previously submitted and checkout is allowed to proceed. If SCA fails, they will not be allowed to proceed with the transaction.
+PSD2.0 requires that SCA is supported during online shopping checkout so a customer can be authenticated by the bank that issued their payment method. The authentication commonly occurs when a shopper is going through the checkout for an online order and after they have provided their payment details. Those details are evaluated, and based on a criteria provided by PSD2.0, the customer may be redirected to their bank. Upon being redirected to their bank, the customer is required to provide some form of authentication to confirm that they are an authorized user for the payment instrument. If the user is confirmed to be the cardholder, they are then redirected back to the storefront where the payment was previously submitted and checkout is allowed to proceed. If SCA fails, they will not be allowed to proceed with the transaction.
 
 ## Prerequisites for SCA support
 
@@ -59,7 +59,7 @@ Setup details will vary by payment connector. For setup details related to the o
 
 ## Functional experience
 
-When a customer is redirected for SCA, they will be presented with a challege by their bank, typically within a new browser window or iFrame. Once they have been authenticated, they will be redirected back to the checkout session. If the validation fails, they will not be allowed to continue with checkout. 
+When a customer is redirected for SCA, they will be presented with a challenge by their bank, typically within a new browser window or iFrame. Once they have been authenticated, they will be redirected back to the checkout session. If the validation fails, they will not be allowed to continue with checkout. 
 
 ## Related articles
 
