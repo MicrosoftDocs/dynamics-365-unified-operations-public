@@ -49,7 +49,7 @@ To turn on **Feature management** in Commerce headquarters, follow these steps.
 1.	Go to **System administration** \> **Workspaces** \> **Feature management**.
 1.	Search for the **Enable inventory buffers and inventory levels** feature, select its row, and then select **Enable now**.
 
-Once enabled, you can find **Inventory levels** in **Retail and Commerce \> Inventory management**.
+Once enabled, you can find inventory levels at **Retail and Commerce \> Inventory management**.
 
 ## Create and configure an inventory level profile
 
@@ -136,15 +136,15 @@ To sync the inventory buffer configurations to channels, follow these steps.
 1.	Go to **Retail and Commerce** \> **Retail and Commerce IT** \> **Distribution schedule**.
 1.	Run the **1040 (Product)** distribution schedule.
 
-## Utilize inventory buffers and inventory levels in e-Commerce scenario 
+## Use inventory buffers and inventory levels in e-Commerce scenario 
 
-Commerce site builder ues the inventory buffers and inventory levels capabilities in Commerce headquarters to determine inventory availability messaging on e-Commerce sites. For more information, see [Apply inventory settings](inventory-settings.md).
+Commerce site builder uses the inventory buffer and inventory level capabilities in Commerce headquarters to determine inventory availability messaging on e-Commerce sites. For more information, see [Apply inventory settings](inventory-settings.md).
 
 Alternatively, if you integrate with a third party e-Commerce solution you can use the **GetEstimatedAvailability** and **GetEstimatedProductWarehouseAvailability** APIs to display inventory availability for a product in your e-Commerce scenario. For more information about these APIs, see [Calculate inventory availability for retail channels](calculated-inventory-retail-channels.md).
 
 With the introduction of inventory buffers and inventory levels, these APIs will now return inventory level codes and label messages that are determined based on **total available** and **available physical** values. They can be further configured to determine if the inventory quantity is returned with the message and if the available quantity is reduced by the inventory buffer value.
 
-To configure the desired API response, follow these steps.
+To configure the desired product availability API response, follow these steps.
 
 1.	Go to **Retail and commerce** \> **Headquarters setup** \> **Parameters** \> **Commerce parameters**.
 1.	In the **Store inventory** section, select **Inventory** tab, and then select one of the options from the **Product availability APIs for e-Commerce** parameter drop down menu.
