@@ -55,7 +55,7 @@ The following features that have infrastructure dependencies are not yet impleme
 
 | **Feature**                 | **Description**                                           |
 |-----------------------------|-----------------------------------------------------------|
-| Commerce                      | Commerce support is now enabled with the 10.0.10 release.                        |
+| Commerce                      | Commerce support is now enabled with the 10.0.10 release. Please see [Payment connector package support for commerce on self-service](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/payment-connector-package) for more details          |
 | Trace Parser                | Perf tools are not yet supported.                         |
 
 ### Features not intended to be implemented
