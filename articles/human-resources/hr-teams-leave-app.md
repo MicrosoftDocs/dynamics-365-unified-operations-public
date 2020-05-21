@@ -54,12 +54,15 @@ You can find the Human Resources app in the Teams store.
 
 If the app doesn't automatically sign you in, select the **Settings** tab to sign in.
 
-   ![Human Resources Teams leave app Settings tab](./media/hr-teams-leave-app-settings-tab.png)
+![Human Resources Teams leave app Settings tab](./media/hr-teams-leave-app-settings-tab.png)
 
-   > [!NOTE]
-   > If you don’t see a sign-in dialog box, check your browser settings to allow pop-ups. 
+> [!NOTE]
+> If you don’t see a sign-in dialog box, check your browser settings to allow pop-ups. 
 
 If you have access to more than one instance of Human Resources, you can select which environment you want to connect to in the **Settings** tab.
+
+> [!WARNING]
+> The app doesn't currently support the System Administrator security role, and will display an error message if you sign in with a System Administrator account. To sign in with a different account, on the **Settings** tab, select the **Switch accounts** button, and then sign in with a user account that doesn’t have System Administrator privileges.
  
 ## Use the bot
 
