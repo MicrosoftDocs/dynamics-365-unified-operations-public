@@ -1,44 +1,14 @@
 ---
 # required metadata
 
-title: Display debit and credit amounts in ledger accounts for China
-description: This topic shows how to display credit and debit amounts for ledger accounts in two separate columns in the general ledger for China. 
-author: ShylaThompson
+title: Regulatory Configuration Services (RCS) - Globalization feature
+description: This topic explains how to use Microsoft Regulatory Configuration Services (RCS) and the Global repository to create and use Globalization features. 
+author: JaneA07
 manager: AnnBe
-ms.date: 03/21/2018
+ms.date: 05/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: LedgerParameters
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: 
-ms.custom: 265884
-ms.assetid: 0f23b25b-45e5-4156-9e38-621a97046552
-ms.search.region: China (PRC)
-# ms.search.industry: 
-ms.author: leguo
-ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-
----
----
-# required metadata
-
-title: 
-description: This topic explains how to use Microsoft Regulatory Configuration Services (RCS) and the Global repository to create and use Globalization features.
-author: JaneA07
-manager: AnnBe
-ms.date: 05/20/2020
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -53,65 +23,63 @@ ms.custom: 97423
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: janeaug
+ms.author: leguo
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: AX 10.0.11
 
 ---
 
-# Regulatory Configuration Services (RCS): Globalization feature
+# Regulatory Configuration Services (RCS) - Globalization feature
 
 [!include [banner](../includes/banner.md)]
 
-You can use Microsoft Regulatory Configuration Services (RCS) to create a Globalization feature for use in Globalization services. Feature allows user to:
--	Define related feature components (Electronic reporting (ER) configurations and setup parameters) 
--	Manage feature lifecycle (through feature status)
--	Enable feature for Globalization features for defined F&O environments 
--	Sharing of feature with other organization
+You can use Microsoft Regulatory Configuration Services (RCS) to create a Globalization feature to use in Globalization services. RCS allows you to:
+-	Define related feature components 
+-	Manage the feature lifecycle through a feature's status
+-	Enable a Globalization feature for a defined environments 
+-	Share a feature with other organizations
 
-The following steps explain how a user in RCS can add a feature with related components, update its status and enable it for use in a Globalization service, like e-Invoicing service for an F&O environment. 
+The following steps explain how a user in RCS can add a feature with related components, update it's status, and enable it for use in a Globalization service, like an e-Invoicing service. 
 To complete these steps, you must first complete the steps related to:
--	Access to an RCS instance
--	Creation of a configuration provider that is active, see [Create configuration providers and mark them as active](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md)
+-	Accessing an RCS instance
+-	Creating a configuration provider that is active. For more information, see [Create configuration providers and mark them as active](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
-From Dynamics F&O you can take the following actions:
-- Go to **Organization administration > Workspaces > Electronic reporting**.
-- If you have no RCS environment provisioned to your company, you can click  **Regulatory services – Configuration** external link and follow the instructions to provision an RCS environment for your organization.
+In your Dynamics 365 Finance or Operations app instance, you can take the following actions:
+1. Go to **Organization administration** > **Workspaces** > **Electronic reporting**.
+2. If you have no RCS environment provisioned to your company, select **Regulatory services – Configuration** and follow the instructions to provision an RCS environment for your organization.
 
-Note: If RCS environment has been already provisioned to your company, use the page URL to access it by selecting the sign in option.
+> [!NOTE]
+> If an RCS environment has been provisioned to your company, use the page URL to access it by selecting the sign in option.
 
-## Requires Feature enablement:
--	Go to your instance of RCS and click on **Feature management** tile
--	From the list select **Globalization features**
--	Click **Enable now** button
+## Enable the Globalization features
+1. Go to your instance of RCS and select the **Feature management** tile.
+2. From the list, select **Globalization features** and then select **Enable now**.
 
 ![Feature management Global feature](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/janeaug_rcs_Global-feature/articles/finance/localizations/media/RCS_GlobalF_1%20Feature%20mgmt.JPG)
 
-> Note: Feature management text: This feature provides a new Globalization features workspace, a new form for creating, importing, and setting up available Globalization features for Globalization services use, such as e-Invoicing and tax services.
-
 ## Globalization feature
-To use a Globalization feature user needs to import them from RCS/Global repository and create their own version of the feature to use it. There are two ways to utilize Globalization feature, user can either:
-- Add a new feature, based on an existing feature that has been published or shared with them by add/derive, or
-- Add a new feature from scratch
+To use a Globalization feature, you need to import the feature from the RCS/Global repository and create your own version of the feature to use it. There are two ways to utilize Globalization feature, user can either:
+- Add a new feature based on an existing feature that has been published or shared
+- Add a new feature that you have created from scratch
 
-## Accessing Globalization features
--	Enable feature in **Feature management**
--	Go to New **Globalization feature workspace**
--	Click **e-Invoicing** feature tile
+## Access Globalization features
+1. Navigate to **Feature management** to enable the feature.
+2. Go to the new **Globalization feature workspace**.
+3. Select the **e-Invoicing** tile.
 
   ![Global feature workspace](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/janeaug_rcs_Global-feature/articles/finance/localizations/media/RCS_GlobalF_2%20Feature%20wrkspace.JPG)
 
-- Which opens the **Globalization features** form:
+The **Globalization features** page will open.
 
   ![Global feature form](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/janeaug_rcs_Global-feature/articles/finance/localizations/media/RCS_GlobalF_3%20Feature%20form.JPG)
 
-## Add feature by deriving from existing Globalization feature 
--	Import feature from Global repository
-  -	Click **Import** from **Action pane**
+## Add a derived feature 
+1. Import the feature from the Global repository.
+2. On the Action Pane, select **Import**.
     
  ![Global feature import](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/janeaug_rcs_Global-feature/articles/finance/localizations/media/RCS_GlobalF_4%20Feature%20import%20form%20GR.JPG)
  
-  - Click **Synchronize** to get latest features 
+3. Select **Synchronize** to get the latest features: 
     - Message: Global repo list updated
     - Note features that you see in the list are features that are available to you either:
     - Published by Microsoft, or 
