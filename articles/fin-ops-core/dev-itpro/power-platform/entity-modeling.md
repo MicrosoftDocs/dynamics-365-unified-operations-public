@@ -30,6 +30,7 @@ ms.dyn365.ops.version: 10.0.12
 # Entity modeling
 
 [!include[banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 ## Generating virtual entities
 
