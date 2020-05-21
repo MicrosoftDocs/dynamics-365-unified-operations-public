@@ -174,10 +174,7 @@ Titles and notes provide places for user-specified text to be associated with a 
 
 ### Change recorded values
 
-Starting in version 10.0.12, you can adjust the values recorded in basic input controls (including simple text, numeric, date, and picklist fields) without having to re-record those steps. Notably, lookup controls and reference groups are not currently supported.  
-
-> [!IMPORTANT]
-> Version 10.0.12 is a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
+Starting in version 10.0.12, you can adjust the values that are recorded in basic input controls (for example, simple text, numeric, date, and picklist fields), without having to re-record those steps. Note that lookup controls and reference groups aren't currently supported.  
 
 ### Hide from task guide
 
