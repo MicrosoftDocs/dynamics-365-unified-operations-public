@@ -52,7 +52,7 @@ From Dynamics F&O you can take the following actions:
 Note: If RCS environment has been already provisioned to your company, use the page URL to access it by selecting the sign in option.
 
 ## Requires Feature enablement:
--	Go to your instance of RCS and click on ** Feature management** tile
+-	Go to your instance of RCS and click on **Feature management** tile
 -	From the list select **Globalization features**
 -	Click **Enable now** button
 
@@ -62,25 +62,25 @@ Note: If RCS environment has been already provisioned to your company, use the p
 
 ## Globalization feature
 To use a Globalization feature user needs to import them from RCS/Global repository and create their own version of the feature to use it. There are two ways to utilize Globalization feature, user can either:
--	Add a new feature, based on an existing feature that has been published or shared with them by add/derive, or
--	Add a new feature from scratch
+- Add a new feature, based on an existing feature that has been published or shared with them by add/derive, or
+- Add a new feature from scratch
 
 ## Accessing Globalization features
 -	Enable feature in **Feature management**
 -	Go to New **Globalization feature workspace**
 -	Click **e-Invoicing** feature tile
 
-![Global feature workspace](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/janeaug_rcs_Global-feature/articles/finance/localizations/media/RCS_GlobalF_2%20Feature%20wrkspace.JPG)
+  ![Global feature workspace](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/janeaug_rcs_Global-feature/articles/finance/localizations/media/RCS_GlobalF_2%20Feature%20wrkspace.JPG)
 
 - Which opens the **Globalization features** form:
 
-![Global feature form](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/janeaug_rcs_Global-feature/articles/finance/localizations/media/RCS_GlobalF_3%20Feature%20form.JPG)
+  ![Global feature form](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/janeaug_rcs_Global-feature/articles/finance/localizations/media/RCS_GlobalF_3%20Feature%20form.JPG)
 
 ## Add feature by deriving from existing Globalization feature 
 -	Import feature from Global repository
-  -	Click **import** from **Action pane**
-  
-![Global feature import](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/janeaug_rcs_Global-feature/articles/finance/localizations/media/RCS_GlobalF_4%20Feature%20import%20form%20GR.JPG)
+  -	Click **Import** from **Action pane**
+    
+ ![Global feature import](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/janeaug_rcs_Global-feature/articles/finance/localizations/media/RCS_GlobalF_4%20Feature%20import%20form%20GR.JPG)
  
   - Click **Synchronize** to get latest features 
     - Message: Global repo list updated
@@ -88,12 +88,12 @@ To use a Globalization feature user needs to import them from RCS/Global reposit
     - Published by Microsoft, or 
     - Shared with you by another configuration provider
   
-![Global feature sync](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/janeaug_rcs_Global-feature/articles/finance/localizations/media/RCS_GlobalF_5%20Feature%20GR%20sync.JPG)
+  ![Global feature sync](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/janeaug_rcs_Global-feature/articles/finance/localizations/media/RCS_GlobalF_5%20Feature%20GR%20sync.JPG)
  
-  - Select feature(s) to import from feature list and click **import**
+  - Select feature(s) to import from feature list and click **Import**
     - Message: Feature has been successfully imported
 
-![Global feature import msg](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/janeaug_rcs_Global-feature/articles/finance/localizations/media/RCS_GlobalF_6%20Feature%20GR%20import%20success.JPG)  
+  ![Global feature import msg](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/janeaug_rcs_Global-feature/articles/finance/localizations/media/RCS_GlobalF_6%20Feature%20GR%20import%20success.JPG)  
 
 -	Add Feature by deriving:
   - Click **Add**
@@ -150,13 +150,14 @@ Globalization feature has several components parts that cover:
 ## Configuring feature components:
 
 -	**Version** 
--	Version manages Globalization feature lifecycle. Status can be changed through version tab ‘status change’. Permissible statuses are:
-  -	Draft – feature can be edited only as draft
-  -	Complete – feature and all related components are finalized and cannot be edited 
-  -	Published – feature and all related components are published to Global repo
-  -	Shared – feature and all related components are shared with external organizations
-  -	Enabled – feature and all related components are enabled for use in a Globalization service, for example e-Invoicing
-    Note: Some statuses are required to be moved through sequentially, so every status may not be available at every lifecycle stage.
+-	Version manages Globalization feature lifecycle. Status can be changed through version tab ‘status change’. 
+- Permissible statuses are:
+ -	Draft – feature can be edited only as draft
+ -	Complete – feature and all related components are finalized and cannot be edited 
+ -	Published – feature and all related components are published to Global repo
+ -	Shared – feature and all related components are shared with external organizations
+ -	Enabled – feature and all related components are enabled for use in a Globalization service, for example e-Invoicing
+ Note: Some statuses are required to be moved through sequentially, so every status may not be available at every lifecycle stage.
 
 -	**Configurations** 
   -	View – Clicking view will allow the user to view the underlying feature configuration that don’t require any editing/updating
