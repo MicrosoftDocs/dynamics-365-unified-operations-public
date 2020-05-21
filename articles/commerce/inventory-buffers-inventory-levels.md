@@ -36,9 +36,7 @@ This topic explains how to configure inventory buffers and inventory levels that
 
 ## Overview
 
-The Dynamics 365 Commerce omni-channel solution lives in an asynchronous world, where Commerce headquarters holds inventory data, various channels including point of sale (POS) applications, e-Commerce storefronts, and other custom integrated applications that pull and push inventory around in an asynchronous way. 
-
-Therefore, the available inventory values obtained through the headquarters on-hand inventory page, point of sale (POS) user interface, and e-Commerce inventory availability APIs are not always 100% accurate in real time. 
+Dynamics 365 Commerce headquarters holds inventory data, various channels including point of sale (POS) applications, e-Commerce storefronts, and other custom integrated applications that pull and push inventory around in an asynchronous way. Therefore, the available inventory values obtained through the headquarters on-hand inventory page, point of sale (POS) user interface, and e-Commerce inventory availability APIs are not always 100% accurate in real time. 
 
 Instead of showing actual inventory values on e-Commerce storefronts, many retailers prefer to simply show inventory availability status messaging (for example, "Available" or "Out of stock") to inform customers as to whether an item is available for purchase or potentially out of stock.
 
@@ -53,13 +51,13 @@ To turn on **Feature management** in Commerce headquarters, follow these steps.
 
 Once enabled, you can find **Inventory levels** in **Retail and Commerce \> Inventory management**.
 
-## Create and configure inventory level profile
+## Create and configure an inventory level profile
 
-**Inventory level profile** is defined to determine if a given quantity is considered in stock, out of stock or other custom levels. You can create multiple profiles per legal entity. Each profile consists of a set of inventory levels and each level is defined by a **range**, a **code**, and a **label**.
+An inventory level profile determine if a given product quantity status is considered to be in stock, out of stock, or some other custom status. You can create and configure multiple inventory level profiles per legal entity. Each profile consists of a set of inventory levels and each level is defined by a *range*, a *code*, and a *label*.
 
--	**Range** is defined by **start quantity** and **end quantity**. A quantity value falls into a range if it is greater than the start quantity and not greater than the end quantity of that range.
--	**Code** is an internal abbreviation to represent the level. Customers who directly integrate with our inventory APIs can utilize code to build additional logic for a given inventory level. For example, disable purchase capability for an item when its inventory level code is “OOS”.
--	**Label** is a meaningful message that explains the level and could be shown to the end customers in e-Commerce sites.
+-	**Range** is defined by *start quantity* and *end quantity*. A quantity value falls into a range if it is greater than the start quantity and not greater than the end quantity of that range.
+-	**Code** is an internal abbreviation to represent the level. Customers who directly integrate with the inventory APIs can use code to build additional logic for a given inventory level, for example disabling the purchase capability for a product when its inventory level code is "OOS" ("out of stock").
+-	**Label** is a meaningful message that explains the inventory level and can be shown to the customers on an e-Commerce site.
 
 ### Create an inventory level profile
 
@@ -67,7 +65,7 @@ To create an inventory level profile, follow these steps.
 
 1.	Go to **Retail and Commerce** \> **Inventory management** \> **Inventory levels**.
 1.	On the Action Pane, select **New**, and then fill in the **Profile ID** and **Description** fields.
-1.	On the **Ranges** FastTab, select **Add** to add a new level, and then enter values in the **Start quantity**, **End quantity**, **Code** and **Label** columns for that level. Repeat this step to add more levels. You can edit the values in the data grid or select **Delete** to remove a level as needed.
+1.	On the **Ranges** FastTab, select **Add** to add a new level, and then enter values in the **Start quantity**, **End quantity**, **Code**, and **Label** columns for that level. Repeat this step to add more levels. You can edit the values in the data grid or select **Delete** to remove a level as needed.
 1.	On the Action Pane, select **Save**.
 
 When a new profile is created, two "special" inventory levels get initialized systematically:
@@ -82,12 +80,12 @@ You can use the **Translations** function on Action Pane to configure localized 
 
 ### Configure an inventory level profile
 
-You can configure an inventory level profile at the product category level and/or individual product level. When a product has an inventory level profile configured, its inventory level will be determined based on the defined ranges in the linked profile. Otherwise, the inventory level of "available" or "out of stock" is determined based on whether the product has a positive on-hand quantity.
+You can configure an inventory level profile at the product category level or individual product level. When a product has an inventory level profile configured, its inventory level will be determined based on the defined ranges in the linked profile. Otherwise, the inventory level of "available" or "out of stock" is determined based on whether the product has a positive on-hand quantity.
 
 To configure an inventory level profile for a category, follow these steps.
 
-1.	Go to **Retail and commerce** \> **Products and categories** \> **Commerce product hierarchy**.
-1.	Select a category for which you want to configure inventory level profile.
+1.	Go to **Retail and Commerce** \> **Products and categories** \> **Commerce product hierarchy**.
+1.	Select a category for which you want to configure the inventory level profile.
 1.	On the **Sell product properties** FastTab, select a legal entity.
 1.	In the **Commerce inventory** section, set the value for the **Inventory level profile** field by selecting one of the predefined inventory level profiles from the drop down menu.
 
@@ -95,7 +93,7 @@ You can use the **Update products** function on the Action Pane to propagate the
 
 To configure an inventory level profile for a released product, follow these steps.
 
-1.	Go to **Retail and commerce** \> **Products and categories** \> **Released products by category**.
+1.	Go to **Retail and Commerce** \> **Products and categories** \> **Released products by category**.
 1.	Select a product, and then open its product details page.
 1.	In the **Commerce inventory** section of the **Sell** FastTab, set the value for the **Inventory level profile** field by selecting one of the predefined inventory level profiles from the drop down menu.
 
@@ -111,12 +109,12 @@ To sync the inventory level profile configurations to channels, follow these ste
 
 ## Configure an inventory buffer	
 
-The **Inventory buffer** is a user-defined value that subtracts the additional quantity from of the original quantity of an item to calculate its estimated quantity. This estimated quantity value gives retailers a safe buffer to not oversell a product that exceeds its actual on-hand inventory. You can configure the inventory buffer at the product category and/or individual product level. If not specified, the default buffer value is **zero**. 
+The **Inventory buffer** is a user-defined value that subtracts the additional quantity from of the original quantity of an item to calculate its estimated quantity. This estimated quantity value provides retailers with a safe buffer to not oversell a product that exceeds its actual on-hand inventory. You can configure the inventory buffer at the product category or individual product level. If not specified, the default buffer value is **zero**. 
 
 To configure an inventory buffer for a category, follow these steps.
 
-1.	Go to **Retail and commerce** \> **Products and categories** \> **Commerce product hierarchy**.
-1.	Select a category that you want to configure inventory buffer.
+1.	Go to **Retail and Commerce** \> **Products and categories** \> **Commerce product hierarchy**.
+1.	Select a category for which you want to configure the inventory buffer.
 1.	On the **Sell product properties** FastTab, select a legal entity.
 1.	In the **Commerce inventory** section, enter a positive value in the **Inventory buffer** field.
 
@@ -124,14 +122,14 @@ You can use the **Update products** function on the Action Pane to propagate the
 
 To configure an inventory level profile for a released product, follow these steps.
 
-1.	Go to **Retail and commerce** \> **Products and categories** \> **Released products by category**.
+1.	Go to **Retail and Commerce** \> **Products and categories** \> **Released products by category**.
 1.	Select a product, and then open its product details page.
 1.	In the **Commerce inventory** section of the **Sell** FastTab, enter a positive value in the **Inventory buffer** field.
 
-When creating a new product, the **Inventory buffer** field will be populated with the value configured for the category that it is associated with. 
+When creating a new product, the **Inventory buffer** field will be populated with the value that is configured for the category that it is associated with. 
 
 > [!NOTE]
-> If a product has both the inventory buffer and inventory level profiles configured, its estimated quantity (original quantity subtracting the buffer value) will be used for range calculation to determine the inventory level.
+> If a product has both the inventory buffer and inventory level profiles configured, its estimated quantity (the original quantity minus the buffer value) will be used for range calculation to determine the inventory level.
 
 To sync the inventory buffer configurations to channels, follow these steps.
 
@@ -140,11 +138,11 @@ To sync the inventory buffer configurations to channels, follow these steps.
 
 ## Utilize inventory buffers and inventory levels in e-Commerce scenario 
 
-Our out-of-box e-Commerce solution is utilizing the inventory buffers and inventory levels capabilities in headquarters to drive the inventory availability displays in e-Commerce sites. For more information, see [Apply inventory settings](inventory-settings.md).
+Commerce site builder ues the inventory buffers and inventory levels capabilities in Commerce headquarters to determine inventory availability messaging on e-Commerce sites. For more information, see [Apply inventory settings](inventory-settings.md).
 
-Alternatively, if you integrate with a third party e-Commerce solution you can use the **GetEstimatedAvailability** and **GetEstimatedProductWarehouseAvailability** APIs to show inventory availability for a product in your e-Commerce scenario. For more information about these APIs, see [Calculate inventory availability for retail channels](calculated-inventory-retail-channels.md).
+Alternatively, if you integrate with a third party e-Commerce solution you can use the **GetEstimatedAvailability** and **GetEstimatedProductWarehouseAvailability** APIs to display inventory availability for a product in your e-Commerce scenario. For more information about these APIs, see [Calculate inventory availability for retail channels](calculated-inventory-retail-channels.md).
 
-With the introduction of inventory buffers and inventory levels, these APIs will now return inventory level codes and label messages that are determined based on **total available** and **available physical** values. They can be further configured to determine if the inventory quantity is returned with the message, and if the available quantity is reduced by the inventory buffer value.
+With the introduction of inventory buffers and inventory levels, these APIs will now return inventory level codes and label messages that are determined based on **total available** and **available physical** values. They can be further configured to determine if the inventory quantity is returned with the message and if the available quantity is reduced by the inventory buffer value.
 
 To configure the desired API response, follow these steps.
 
