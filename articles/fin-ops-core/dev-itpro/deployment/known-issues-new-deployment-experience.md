@@ -47,16 +47,6 @@ The following LCS features are deprecated and will not be implemented in self-se
 ### Known issues in this release
 Know issues are bugs that will be addressed in upcoming releases. Every 2 weeks there is a new release of LCS.
 
--   Log files listing deployment failures are not yet available through LCS. Currently, you can open a support ticket if you need the log files.
-
--   LCS integration from the application environment does not work. The features that are not available as a result of this include:
-
-    -   Getting started
-
-    -   Online Help enabled through BPM libraries. Online Help from docs.microsoft.com is available.
-
-    -   Raising support tickets from within the application. Cloud-powered support from LCS is enabled.
-
 ## Finance and Operations apps 
 
 ### Features not yet implemented
@@ -65,7 +55,7 @@ The following features that have infrastructure dependencies are not yet impleme
 
 | **Feature**                 | **Description**                                           |
 |-----------------------------|-----------------------------------------------------------|
-| Commerce                      | Commerce support is not yet enabled.                        |
+| Commerce                      | Commerce support is now enabled with the 10.0.10 release.                        |
 | Trace Parser                | Perf tools are not yet supported.                         |
 
 ### Features not intended to be implemented
@@ -73,5 +63,6 @@ The following features are deprecated and will not be implemented in the modern 
 
 | **Feature**  | **Description**                     |
 |--------------|-------------------------------------|
-| Custom fonts | Custom fonts will not be supported. |
+| Custom fonts | Custom fonts will not be supported. Please see [Document Reporting Service in Dynamics 365 applications](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/reporting-experience-iias-environments) for more details.
+| List of all deprecated features us here  | [Removed or deprecated features on Self-Service](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features)|
 
