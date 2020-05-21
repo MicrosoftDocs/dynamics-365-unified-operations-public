@@ -146,7 +146,7 @@ Globalization feature has several components parts that cover:
 -	**Setups** - Allows users of Globalization services, for example e-invoicing service, to manage the related Feature version set-up, supporting the flexible construction of communication and responses rules
 -	**Environment** - Allows users of Globalization services, for example e-invoicing service, to manage the environment where they want to use feature setup version, as well granting authorization for the users that will have access to it
 -	**Organizations** - Allows user to share feature with external organization
-  
+
 ## Configuring feature components:
 
 **Version** 
@@ -189,7 +189,7 @@ Globalization feature has several components parts that cover:
    -	Click **+Share with**
    -	Enter Organization domain name and click **Share**
      
-   ![Global feature - Share with](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/janeaug_rcs_Global-feature/articles/finance/localizations/media/RCS_GlobalF_20%20Feature%20orgn%20share%20with.JPG) 
+   ![Global feature - Share with](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/janeaug_rcs_Global-feature/articles/finance/localizations/media/RCS_GlobalF_20%20Feature%20orgn_share%20with.JPG) 
 
   -	Feature is **Shared with** the organization and is available for them in the Global repository where it can be imported for use either into their RCS or F&O instance
 
