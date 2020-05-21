@@ -176,6 +176,9 @@ Titles and notes provide places for user-specified text to be associated with a 
 
 Starting in version 10.0.12, you can adjust the values recorded in basic input controls (including simple text, numeric, date, and picklist fields) without having to re-record those steps. Notably, lookup controls and reference groups are not currently supported.  
 
+> [!IMPORTANT]
+> Version 10.0.12 is a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
+
 ### Hide from task guide
 
 The **Hide this step** option lets the author prevent specific steps from appearing in the task guide. This option is useful for hiding steps that are required for the task recording to run in playback mode, but that should not be seen by users. Examples of these steps include copy steps, system-generated steps, and data clean-up steps. If you hide a sub-task, all the steps that are recorded inside that sub-task will also be hidden.
