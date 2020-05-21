@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 # File upload control
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 This topic provides information about the file upload control. This control lets users upload files.
 
@@ -76,6 +76,9 @@ The file upload control accepts the file and upload strategy in the client, and 
 
 ## Scanning uploaded files for viruses and malicious code
 When uploading a file into the system, you may want to scan the file for viruses or malicious code before uploading. While Finance and Operations apps do not provide this capability out-of-the-box, an extension point has been added in version 10.0.12 that allows customers to integrate the file scanning software of their choice into the file upload process. Similar extension points have been added for scanning attachments; see the [Configure document management](../../fin-ops/organization-administration/configure-document-management.md) article for more details. 
+
+> [!IMPORTANT]
+> Version 10.0.12 is a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
 
 In particular, the **FileUploadResultBase** class exposes the **delegateScanStream()** delegate, which applies to any file upload scenario where the **Upload strategy class** has been implemented. The upload will fail if the scanning service deems the file to be malicious.    
 
