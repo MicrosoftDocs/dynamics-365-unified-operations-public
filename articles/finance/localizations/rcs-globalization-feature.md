@@ -149,23 +149,23 @@ Globalization feature has several components parts that cover:
   
 ## Configuring feature components:
 
--	**Version** 
+**Version** 
 -	Version manages Globalization feature lifecycle. Status can be changed through version tab ‘status change’. 
 - Permissible statuses are:
- -	Draft – feature can be edited only as draft
- -	Complete – feature and all related components are finalized and cannot be edited 
- -	Published – feature and all related components are published to Global repo
- -	Shared – feature and all related components are shared with external organizations
- -	Enabled – feature and all related components are enabled for use in a Globalization service, for example e-Invoicing
- Note: Some statuses are required to be moved through sequentially, so every status may not be available at every lifecycle stage.
+  -	Draft – feature can be edited only as draft
+  -	Complete – feature and all related components are finalized and cannot be edited 
+  -	Published – feature and all related components are published to Global repo
+  -	Shared – feature and all related components are shared with external organizations
+  -	Enabled – feature and all related components are enabled for use in a Globalization service, for example e-Invoicing
+- Note: Some statuses are required to be moved through sequentially, so every status may not be available at every lifecycle stage.
 
--	**Configurations** 
+**Configurations** 
   -	View – Clicking view will allow the user to view the underlying feature configuration that don’t require any editing/updating
   -	Edit – Click editing will create a draft version of the selected configuration and allow user to make edits to the format or format mapping through the Format designer
   -	Delete – Allows user to delete selected configuration from the feature
   -	Rebase – Allows user to rebase the feature – for details see **Rebase section** below
 
--	**Setups**
+**Setups**
   -	Add – Allows user to create a new feature setup, which can be either derived from an existing feature setup, or created from the scratch
   -	Delete – Allows user to delete selected feature setup
   -	View – Allows user to view the underlying feature setup that do not require any editing/updating
@@ -178,11 +178,11 @@ Globalization feature has several components parts that cover:
     
   ![Global feature set up](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/janeaug_rcs_Global-feature/articles/finance/localizations/media/RCS_GlobalF_10%20Feature%20set%20up.JPG) 
 
--	**Environments**
+**Environments**
  -	Enable – For a selected Feature version, it allows the user to choose a published environment and enable it with an ‘Effective from’ date onwards – for details see **Configuring Environments for enablement section** below
  -	Cancel – Allows user to remove an environment for a Feature setup
 
--	**Share with**
+**Share with**
   -	To share a Globalization feature with an external organization user needs to take the following steps
    -	Select the feature that you want to share
    -	Go to **Share with** tab
