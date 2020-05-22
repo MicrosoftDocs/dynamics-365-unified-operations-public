@@ -55,7 +55,7 @@ The diagram below illustrates, at a high level, the required setup:
 
 ## Environment Configuration
 
-Within LCS the production environment will be deployed as usual, using the environment slot named **PRODUCTION**. 
+Within LCS the production environment will be deployed as usual, using the environment slot named **PRODUCTION**. Your DR environment will **not** be assigned an environment slot. It will **reuse** the slot for your production environment. 
 
 Note that Dynamics 365 for Finance and Operations [AOS and SQL Server must be co-located](../../fin-ops/get-started/system-requirements-on-prem.md#network-requirements) within the same datacenter.
 
@@ -132,7 +132,10 @@ To bring the DR environment online, we will have LCS deploy what is currently av
 
 Download the LocalAgent installer and configuration file from LCS to your disaster recovery environment. Once you have the configuration file open it and ensure that the connectionEndpoint under the serviceFabric section points to the IP or FQDN of a server in the DR environment.
 
-Once you have modified the file, deploy the LocalAgent as you normally would.
+Once you have modified the file, save it locally and deploy the LocalAgent as you normally would.
+
+>[!IMPORTANT]
+> Do not make changes to your connector settings in LCS. 
 
 From now on and until your main production environment comes back online. This LocalAgent will process all requests that LCS puts into the Message Queue for the LocalAgent to pick up. This is why its important that you ensure that no services are running in your production environment. Eventually, when your orchestrator nodes come back up in your primary datacenter, unprovision the LocalAgent from the cluster.  
 
@@ -147,7 +150,7 @@ You can find the location of the config.json file by running the following comma
     ```
 
     > [!NOTE]
-    > Replace **LCSENVIRONMENTID** with the ID of your environment. You can obtain this ID from the page for your environment in LCS. 
+    > Replace **LCSENVIRONMENTID** with the ID of your environment. You can obtain this ID from the full details page for your environment in LCS. 
 
 In the case that the SSRS node IP is different you will have to modify the following values:
 
@@ -227,13 +230,13 @@ If your production environment is on Platform update 36 or earlier. Follow the i
 
 1. Select **Maintain** and then select **Update Settings**.
 
-![Apply update settings](media/addf4f1d0c0a86d840a6a412f774e474.png)
+  ![Apply update settings](media/addf4f1d0c0a86d840a6a412f774e474.png)
 
 1. Don't change any values and select **Prepare**.
 
 1. After downloading is finished and preparation is completed, the Update environment button will be displayed.
 
-![Update environment button](media/0a9d43044593450f1a828c0dd7698024.png)
+  ![Update environment button](media/0a9d43044593450f1a828c0dd7698024.png)
 
 1. Select Update environment to start updating your environment.
 
@@ -252,7 +255,7 @@ Secure a downtime window in which you can switch operation from the DR environme
 
 Once the failover has happened, start up the AOS, SSRS, and MR nodes in your primary datacenter. Carry out validation tests to ensure that your environment is functioning as expected. Once you decide that the environment is working as expected. Remove the LocalAgent from your Disaster Recovery environment and Install it on your Production environment.
 
-Your primary environment will be back to functionioning as usual and can once again be serviced.
+Your primary environment will be back to functioning as usual and can once again be serviced.
 
 Clean up your DR environment by manually unprovisioning all Dynamics Service Fabric Service.
 
