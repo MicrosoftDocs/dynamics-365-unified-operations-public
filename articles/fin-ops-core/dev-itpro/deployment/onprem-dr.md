@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: On-premise Disaster Recovery Configuration
+title: On-premises Disaster Recovery Configuration
 description: This document describes how to configure Dynamics 365 for Finance and Operations on-premises for Disaster Recovery (DR) and the process for switching between the primary and secondary datacenters.
 author: faix
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Platform update 37
 
 ---
 
-# On-premise Disaster Recovery Configuration
+# On-premises Disaster Recovery Configuration
 
 The term disaster is used here to mean an event which makes the primary datacenter unusable – for example, a connection outage which makes the primary datacenter inaccessible. High Availability configuration is not covered within this document – for the minimum setup required for High Availability read [System requirements for on-premises deployments](../../fin-ops/get-started/system-requirements-on-prem.md#minimum-infrastructure-requirements)
 
@@ -67,6 +67,7 @@ When code packages are deployed to the production environment, they don't need t
 
 The DR environment should have almost the same configuration as the production environment – the shared settings allow the DR environment to operate against the replicated copies of the production database after a disaster event, the table below illustrates the shared and specific settings for DR:
 
+[!div class="mx-tdBreakAll"]
 | Environment Settings | DR Environment | Explanation |
 |---------------------------------|----------------|-------------|
 | **Active Directory Settings**   |                |             |
