@@ -1,197 +1,265 @@
 # Outbound sorting
 
-# Released in version 10.0.4
-#
-# About
-
 With this functionality, several industries will experience easier handling of small containers and will enable the warehouse workers to better plan and organize pallet capacity within the truck.
 
-With the outbound sorting  you now can sort packed containers to a correct pallet after packing station and to build a packing hierarchy.
-
-This functionality allows for the building of pallets from containers packed through the [Packing](https://bluehorseshoe.sharepoint.com/SitePages/Packing.aspx)  functionality. The container is not sent to the final shipping location as it would be in the original Packing flow. Instead, this functionality allows the user to close the container and move it to a Sort type location. They can then sort containers onto positions, each position has a license plate. Once the containers have been sorted, work can be created to send the whole LP to the final shipping dock or stage locations based on Location Directives/customer requirements. The closing of the sort position can also immediately move the inventory to the final shipping location and pick it to the order.
-
-# Setup
-
-For this demo, standard Contoso data is used with warehouse 62 with some additions noted below.
-
-## Location type
-
-Navigate to _Warehouse management_ _-__Setup_ _-_ _Warehouse_ _-_ _Location types_ and create a new location type:
-
-- Location type = SORT
-- Description = Sort
-
-## Warehouse management parameters
-
-Navigate to _Warehouse management_ _-_ _Setup_ _-_ _Warehouse management parameters_, General – Location types FastTab. Enter the new SORT location type as the Sorting location type.
-
-## Location profile
-
-Navigate to _Warehouse management - Setup - Warehouse - Location profiles_ and create new Location profile for Sorting location.
-
-In the **header** of the new profile, name the new profile:
-
-- **--** Location profile ID – _SORTING_
-- **--** Name – _Sorting_
-
-In the **General** tab, the following must be specified:
-
-- **--** Location format – _ASRB_
-- **--** Location type – _SORT_
-- **--** Use license plate tracking – _Yes_
-- **--** Allow mixed items – _Yes_
-- **--** Allow mixed inventory statuses – _Yes_
-
-This profile will be used in a new parameter under the Advanced Warehouse parameters form​​.
-
-## Locations
-
-Navigate to _Warehouse management_ _-_ _Setup_ _-_ _Warehouse_ _-_ _Locations_ and create a new _Location_:
-
-Unselect _Generate check digits for_ locations and click _New._ Assign the following criteria:
-
-- **--** Warehouse – _62_
-- **--** Location – _SORT_
-- **--** Location profile ID – _SORTING_
-
-## Outbound sorting template
-
-The Outbound sort template determines if work will be created out of Sort location and how sorting will take place, either manual or automatic.
-
-For Pallet building after packing station
-
-Navigate to _Warehouse Management_ _-_ _Setup_ _-_ _Packing_ _-_ _Outbound sorting template_ and create a new sorting template.
-
-In the **header** of the new template, specify the following:
-
-- **--** Sort template ID – _AutoWork_
-- **--** Description – _Auto Work Creation_
-- **--** Outbound sorting template type – _Container_
-- **--** Warehouse - _62_
-- **--** Location – _SORT_
-
-In the **general** tab, specify the following parameters:
-
-- **--** Sort verification – _Position scan –_ the type of verification used when sorting containers to the sort position
-  - **oo** None
-  - **oo** License plate scan
-  - **oo** Position scan
-- **--** Create work on position close – _Yes_
-- **--** Position assignment - Automatic
-
-In the top ribbon, select **Edit Query** to specify the criteria used for this Sort template. Under _Sorting_ tab add a new line with the following setup:
-
-- --Table – _Shipments_
-- --Derived table – _Shipments_
-- --Field – _Carrier service_
-- --Search direction – _Ascending_
-
-This will enable the **Outbound sorting template breaks** button in the top ribbon of the template form. Select it to open the new form. Check the Group by field box to group by Shipments – Carrier service.
-
-## Container packing policies
-
-Navigate to _Warehouse management_ _-_ _Setup_ _-_ _Containers_ _-_ _Container packing policies_ and create a new Container packing policy.
-
-In the **header** , specify the following:
-
-- --Container packing policy – _Sort_
-- --Description – _Sort_
-
-In the **Overview** fast tab, specify the following parameters:
-
-- --Warehouse – _62_
-- --Default location for sorting – _SORT_
-- --Weight unit – _kg_
-- --Container closing policy – _Automatic release_
-- --Container release policy – _Assign container to outbound sorting position_
-
-## Packing profiles
-
-Navigate to _Warehouse management - Setup - Packing - Packing profiles_ and create a new Packing profile to be used with sorting functionality.
-
-New Packing profile should be created with the following criteria:
-
-- --Packing profile ID – _Sort_
-- --Description – _Sort_
-- --Container packing policy - _Sort_
-- --Container ID mode – _Auto_
-- --Container type – _Box-Large_
-- --Auto create container at container close – _No_
-
-## Mobile device menu items
-
-Navigate to _Warehouse management - Setup - Mobile device - Mobile device menu items_ and create a new menu item to be used for sorting.
-
-In **Header** , specify the following:
-
-- --Menu item name – _Pallet build_
-- --Title – _Pallet build_
-- --Mode – _Indirect_
-- --Use existing work – _No_
-
-In **General** fast tab, the following setting can be specified:
-
-- --Activity code – _Outbound sorting_
-- --Outbound sorting template ID – _AutoWork_
-
-## Mobile device menu
-
-Navigate to _Warehouse management - Setup - Mobile device -Mobile device menu_ and add the newly created menu item to the Outbound menu.
-
-## Location directives
-
-Navigate to _Warehouse management_ _-_ _Setup_ _-_ _Location directives_ and change the work order type to Sorted inventory picking.
-
-Create a new location directive:
-
-**Header**
-
-- Seqeunce – 1
-- Name – Baydoor
-- Work type – Put
-- Site – 6
-- Warehouse – 62
-
-**Lines:**
-
-- Sequence – 1
-- From – 0
-- To – 1,000,000
-
-**Location directive actions**
-
-- Sequence – 1
-- Name – Baydoor
-
-Edit the query for the action to specify location &#39;Baydoor&#39;
-
-Create a copy of this directive, name &#39;Baydoor Mutli&#39; and enable the &#39;Multiple SKU&#39; button on the header.
-
-## Work classes
-
-Navigate to _Warehouse management - Setup - Work - Work classes_and create new Work class for Sorting:
-
-- --Work class ID – _Sort_
-- --Description – _Sort_
-- --Work order type – _Sorted inventory picking_
-
-## Work templates
-
-Navigate to _Warehouse management_ _-_ _Setup_ _-_ _Work_ _-_ _Work templates_, change the work order type to Sorted inventory picking. Create a new work template.
-
-**Header**
-
-- Sequence – 1
-- Work template – Sort
-- Work template description – Sort
-
-Create two lines, a pick and a put. Both use the _Sort_ work class.
-
-# Demo
-
-This demo will simulate a scenario where the packed containers should be automatically sorted to different positions (pallets) after the packing station, based on the shipping carrier service. After all items from the Load are packed and sorted by address, the pallets will be moved to the baydoor.
-
-## Picking
+With outbound sorting you now can sort packed containers to the correct pallet after a packing station, and to build a packing hierarchy.
+
+This functionality allows for the building of pallets from containers packed through the <!-- HHM: Link should not be to Blue Horseshoe site. Either remove link or link to the Docs location. [Packing](https://bluehorseshoe.sharepoint.com/SitePages/Packing.aspx) --> packing functionality. The container is not sent to the final shipping location as it would be in the original Packing flow. Instead, this functionality allows the user to close the container and move it to a Sort type location. They can then sort containers onto positions, each position has a license plate. Once the containers have been sorted, work can be created to send the whole LP to the final shipping dock or stage locations based on Location Directives/customer requirements. The closing of the sort position can also immediately move the inventory to the final shipping location and pick it to the order.
+
+## Enable the Outbound sorting feature
+
+Before you can use this feature, it must be enabled on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature status and enable it if needed. Here, the feature is listed as:
+
+- **Module** - *Warehouse management*
+- **Feature name** - *Outbound sorting*
+
+## Setup
+
+For this scenario, standard Contoso demo data is used with Warehouse 62 and some additional setups as noted below.
+
+### Location type
+
+1. Go to **Warehouse management > Setup > Warehouse > Location types**
+1. Select **New** from the Action Pane
+1. Enter the following to create new location type:
+    - **Location type** - *SORT*
+    - **Description** - *Sort*
+1. Close *Location types* form
+
+### Warehouse management parameters
+
+1. Go to **Warehouse management > Setup > Warehouse management parameters**
+1. Select **General** group and expand the **Location types** FastTab.
+1. Enter the following:
+    - **Sorting location type** - *SORT*
+1. Close the *Warehouse management parameters* form.
+
+### Location profiles
+
+1. Go to **Warehouse management > Setup -> Warehouse -> Location profiles**
+1. Select **New** from the Action Pane
+1. Enter the following in the header:
+    - **Location profile ID** – *SORTING*
+    - **Name** – *Sorting*
+1. In the **General** FastTab, enter the following:
+    - **Location format** – *ASRB* (Aisle-Rack-Shelf-Bin)
+    - **Location type** – *SORT*
+    - **Use license plate tracking** – *Yes*
+    - **Allow mixed items** – *Yes*
+        - **Allow mixed inventory batches** is automatically changed to *Yes* and cannot be independently changed.
+    - **Allow mixed inventory statuses** – *Yes*
+1. This profile will be used in a new parameter under the Advanced Warehouse parameters form​​.
+
+### Locations
+
+1. Go to **Warehouse management > Setup > Warehouse > Locations**
+1. Unselect **Generate check digits for location** in the header
+1. Select **New** from the Action Pane to create a new *Location*. Enter the following:
+    - **Warehouse** – *62*
+    - **Location** – *SORT*
+    - **Location profile ID** – *SORTING*
+1. Select **Save** and close *Locations*
+
+### Outbound sorting template
+
+The Outbound sorting template determines if work will be created out of Sort location and how sorting will take place, either manual or automatic.
+
+#### For Pallet building after packing station
+
+1. Go to **Warehouse Management > Setup > Packing > Outbound sorting template**
+1. Select **New** in the Action Pane
+1. In the **header** of the new template, enter the following:
+    - **Outbound sorting template ID** – *AutoWork*
+    - **Description** – *Auto Work Creation*
+    - **Outbound sorting template type** – *Container*
+    - **Warehouse** - *62*
+    - **Location** – *SORT*
+1. In the **General** FastTab, enter the following:
+    - **Sort verification** – *Position scan*
+        - Verification that is required when sorting
+            - None
+            - License plat scan
+            - Position scan
+    - **Create work on position close** – *Yes*
+        - When enabled work will be created when the position is closed to move inventory to the final shipping location. When disabled, inventory will be immediately picked to the order at the time of position close.
+    - **Position assignment** - *Automatic*
+        - Type of position assignment. When 'Manual' the user must always indicate which position the inventory should be sorted to. When 'Automatic' the system will automatically guide the inventory to a position when possible, based on the sort template breaks.
+        - Select **Save** to enable *Edit query*
+1. In the Action Pane, select **Edit Query** to specify the criteria used for this Outbound sort template.
+    - Select the **Sorting** tab
+    - Select **Add** a new line with the following setup:
+        - **Table** – *Shipments*
+        - **Derived table** – *Shipments*
+        - **Field** – *Carrier service*
+            - You may get a message: *Field Carrier service is not an index field. Do you want to add sorting on this?* Select **Yes**
+        - **Search direction** – *Ascending*
+        - Select **OK**
+            - If you get the message: *Grouping will be reset, continue?* Select **Yes**
+        - This will enable the *Outbound sorting template breaks* button in the Action Pane
+    - Select **Outbound sorting template breaks**
+        - The **Outbound sorting criteria** FlyOut opens
+            - **Reference table name** - *Shipments*
+            - **Reference field name** - *Carrier service*
+            - Select the **Group by field** to group shipments by Carrier service
+        - Select **OK**
+
+### Container packing policies
+
+1. Go to **Warehouse management > Setup > Containers > Container packing policies**
+1. Select **New** in the Action Pane
+1. In the **Header** enter the following:
+    - **Container packing policy** – *Sort*
+    - **Description** – *Sort*
+1. In the **Overview** FastTab, enter the following:
+    - **Warehouse** – *62*
+    - **Default location for sorting** – *SORT*
+    - **Weight unit** – *kg*
+    - **Container closing policy** – *Automatic release*
+    - **Container release policy** – *Assign container to outbound sorting position*
+1. Select **Save**
+
+### Packing profiles
+
+1. Go to **Warehouse management > Setup > Packing > Packing profiles**
+1. and create a new Packing profile to be used with sorting functionality.
+1. In the Action Pane select **New**
+1. In the new line created, enter the following:
+    - **Packing profile ID** – *Sort*
+    - **Description** – *Sort*
+    - **Container packing policy** - *Sort*
+    - **Container ID mode** – *Auto*
+    - **Container type** – *Box-Large*
+    - **Auto create container at container close** – *No* (unselected)
+    - Select **Save**
+
+### Mobile device menu items
+
+1. Go to **Warehouse management > Setup > Mobile device > Mobile device menu items**
+1. Select **New** from the Action Pane
+1. In the **Header**, enter the following:
+    - **Menu item name** – *Pallet build*
+    - **Title** – *Pallet build*
+    - **Mode** – *Indirect*
+    - **Use existing work** – *No*
+1. In **General** FastTab, enter the following:
+    - **Activity code** – *Outbound sorting*
+        - When selected the *Outbound sorting template ID* field is displayed
+    - **Use process guide** - *Yes*
+        - When *Outbound sorting* is selected this is automatically set to *Yes*
+    - **Outbound sorting template ID** – *AutoWork*
+    - Select **Save**
+
+### Mobile device menu
+
+Add the *Mobile device menu item* for *Pallet build* to the Outbound menu of the mobile device.
+
+1. Go to **Warehouse management > Setup > Mobile device > Mobile device menu**
+1. Add the **Pallet build** menu item that you just created to a *Mobile device menu*
+1. Select the **Outbound** menu
+1. Select **Edit** from the Action Pane
+1. Scroll in the **AVAILABLE MENUS AND MENU ITEMS** until you find *Pallet build*
+1. Select **Pallet build**, the arrow pointing to the **MENU STRUCTURE** list will be enabled
+1. Select the ***arrow*** button to move the *Pallet build* menu item into the *Outbound* menu structure
+1. Select *Pallet build* from the **MENU STRUCTURE** list then select the *UP* or *DOWN* arrows to move the menu item into the desired position on the mobile device menu.
+
+### Location directives
+
+*Location directives* are rules tha help identify pick and put locations for inventory movement. Create a rule to manage the sorting work.
+
+#### Single sku directive
+
+1. Go to **Warehouse management > Setup > Location directives**
+1. On the left pane, change **Work order type** to *Sorted inventory picking*
+1. In the Action Pane, select **New**
+1. In the **Header** enter the following:
+    - **Sequence** – *1*
+    - **Name** – *Baydoor*
+1. In the **Location directives** FastTab, enter the following:
+    - **Work type** – *Put*
+    - **Site** – *6*
+    - **Warehouse** – *62*
+    - **Multiple SKU** - *No*
+    - Select **Save** to enable the *Lines* FastTab
+1. In the **Lines** FastTab, select **New** in the Action Pane and enter the following on the new line:
+    - **Sequence** – *1*
+    - **From** – *0*
+    - **To** – *1,000,000*
+    - Accept the defaults for the remaining fields
+    - Select **Save** to enable the *Location Directive Actions* FastTab
+1. In the **Location directive actions** FastTab, select **New** in the Action Pane and enter the following on the new line:
+    - **Sequence** – *1*
+    - **Name** – *Baydoor*
+    - Accept the defaults for the remaining fields
+    - Select **Save**
+1. In the **Location directive actions** FastTab Action Pane, select *Edit query*
+    - On the **Range** tab, find in the grid the row where **Field** = *Location* and enter the following:
+        - **Criteria** - *Baydoor*
+        - Select **OK**
+
+#### Multiple sku directive
+
+1. Go to **Warehouse management > Setup > Location directives**
+1. On the left pane, change **Work order type** to *Sorted inventory picking*
+1. In the Action Pane, select **New**
+1. In the **Header** enter the following:
+    - **Sequence** – *2*
+    - **Name** – *Baydoor Multi*
+1. In the **Location directives** FastTab, enter the following:
+    - **Work type** – *Put*
+    - **Site** – *6*
+    - **Warehouse** – *62*
+    - **Multiple SKU** - *Yes*
+    - Select **Save** to enable the *Lines* FastTab
+1. In the **Lines** FastTab, select **New** in the Action Pane and enter the following on the new line:
+    - **Sequence** – *1*
+    - **From** – *0*
+    - **To** – *1,000,000*
+    - Accept the defaults for the remaining fields
+    - Select **Save** to enable the *Location Directive Actions* FastTab
+1. In the **Location directive actions** FastTab, select **New** in the Action Pane and enter the following on the new line:
+    - **Sequence** – *1*
+    - **Name** – *Baydoor Multi*
+    - Accept the defaults for the remaining fields
+    - Select **Save**
+1. In the **Location directive actions** FastTab Action Pane, select *Edit query*
+    - On the **Range** tab, find in the grid the row where **Field** = *Location* and enter the following:
+        - **Criteria** - *Baydoor*
+        - Select **OK**
+
+### Work classes
+
+1. Go to **Warehouse management > Setup > Work > Work classes**
+1. Select **New** from the Action Pane
+and create new Work class for Sorting:
+    - **Work class ID** – *Sort*
+    - **Description** – *Sort*
+    - **Work order type** – *Sorted inventory picking*
+1. Select **Save**
+
+### Work templates
+
+1. Go to **Warehouse management > Setup > Work > Work templates**
+1. change the **Work order type** to *Sorted inventory picking* 1. Select **New** from the Action Pane to create a new work template
+1. In the **Overview** tab, enter the following:
+    - **Sequence** – *1*
+    - **Work template** – *Sort*
+    - **Work template description** – *Sort*
+    - Select **Save** to enable the *Work Template Details*
+1. In **Work Template Details** select **New** to add ***Line 1***
+1. Enter the following on *Line 1*:
+    - **Work type** - *Pick*
+    - **Work class ID** - *SORT*
+1. In **Work Template Details** select **New** to add ***Line 2***
+1. Enter the following on *Line 2*:
+    - **Work type** - *Put*
+    - **Work class ID** - *SORT*
+1. Select **Save**
+
+## Scenario
+
+This scenario will simulate a situation where the packed containers should be automatically sorted to different positions (pallets) after the packing station, based on the shipping carrier service. After all items from the Load are packed and sorted by address, the pallets will be moved to the baydoor.
+
+### Picking
 
 Create a new sales order:
 
@@ -217,7 +285,7 @@ Reserve both lines and release to warehouse.
 
 Complete the created work using the mobile device to the pack station
 
-## Packing
+### Packing
 
 Open the pack form, and specify:
 
@@ -239,7 +307,7 @@ Pack quantity 1 of A0001 into the container. Close it, using the system weight.
 
 Create a second container, pack quantity 1 of A0002 into the container. Close it, using the system weight.
 
-## Sorting
+### Sorting
 
 Open the Pallet build menu item on the mobile device.
 
