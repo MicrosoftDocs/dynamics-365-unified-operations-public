@@ -230,13 +230,13 @@ If your production environment is on Platform update 36 or earlier. Follow the i
 
 1. Select **Maintain** and then select **Update Settings**.
 
-  ![Apply update settings](media/addf4f1d0c0a86d840a6a412f774e474.png)
+    ![Apply update settings](media/addf4f1d0c0a86d840a6a412f774e474.png)
 
 1. Don't change any values and select **Prepare**.
 
 1. After downloading is finished and preparation is completed, the Update environment button will be displayed.
 
-  ![Update environment button](media/0a9d43044593450f1a828c0dd7698024.png)
+    ![Update environment button](media/0a9d43044593450f1a828c0dd7698024.png)
 
 1. Select Update environment to start updating your environment.
 
