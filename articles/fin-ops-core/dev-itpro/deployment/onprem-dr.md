@@ -55,7 +55,7 @@ The diagram below illustrates, at a high level, the required setup:
 
 ## Environment Configuration
 
-Within LCS the production environment will be deployed as usual, using the environment slot named **PRODUCTION**. Your DR environment will **not** be assigned an environment slot. It will **reuse** the slot for your production environment. 
+Within LCS the production environment will be deployed as usual, using the environment slot named **PRODUCTION**. Your DR environment will **not** use an additional environment slot in LCS. It will instead **reuse** the slot for your production environment. 
 
 Note that Dynamics 365 for Finance and Operations [AOS and SQL Server must be co-located](../../fin-ops/get-started/system-requirements-on-prem.md#network-requirements) within the same datacenter.
 
