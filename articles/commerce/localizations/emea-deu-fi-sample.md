@@ -277,11 +277,11 @@ Set up the fiscal integration by completing the following steps that are describ
   1. [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Also note the settings for the fiscal registration process that are [specific to this fiscal registration service integration sample](#set-up-the-registration-process).
   2. [Set error handling settings](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
-    > [!WARNING]
-    > The error handling capabilities of the fiscal integration framework might be not fully aligned with the local fiscal regulations.
-    >
-    > - We recommend that you leave the **Continue on error** option on the **Fiscal registration process** page turned off, because all transactions must be correctly registered, even if the first attempt at fiscal registration wasn't successful.
-    > - Before you turn on the **Skip** or **Mark as registered** option on the **Fiscal registration process** page, you should discuss these changes to the fiscal registration process with your tax consultant or the local tax office.
+> [!WARNING]
+> The error handling capabilities of the fiscal integration framework might be not fully aligned with the local fiscal regulations.
+>
+> - We recommend that you leave the **Continue on error** option on the **Fiscal registration process** page turned off, because all transactions must be correctly registered, even if the first attempt at fiscal registration wasn't successful.
+> - Before you turn on the **Skip** or **Mark as registered** option on the **Fiscal registration process** page, you should discuss these changes to the fiscal registration process with your tax consultant or the local tax office.
 
   3. [Enable manual execution of postponed fiscal registration](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
 
