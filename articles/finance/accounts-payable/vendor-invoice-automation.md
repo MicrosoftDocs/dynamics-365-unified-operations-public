@@ -5,7 +5,7 @@ title: Vendor invoice automation
 description: This topic explains the features that are available for end-to-end automation of vendor invoices, even invoices that include attachments.
 author: abruer
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 05/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -64,7 +64,7 @@ A data package is the unit of work that must be sent so that invoice headers, in
 
 Vendor invoice document attachment is a new data entity that is introduced as part of this feature. The Vendor invoice header entity has been modified so that it supports attachments. The Vendor invoice line entity hasn’t been modified for this feature.
 
-For a detailed definition of a data package, see [Data management overview](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md). For information on how to create data packages using the data management workspace, see [Process and consume data packages in Dynamics 365 Finance and Operations apps solution](../../fin-ops-core/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions.md).
+For detailed information about data packages, see [Data management overview](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md). For information about how to create data packages using the data management workspace, see [Process and consume data packages in Dynamics 365 Finance and Operations apps solution](../../fin-ops-core/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions.md).
 
 To quickly generate test data that includes invoices and attachments, follow these steps.
 
