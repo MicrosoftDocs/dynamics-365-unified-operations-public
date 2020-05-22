@@ -128,9 +128,9 @@ If you have records with values in these fields in the vendor entity follow the 
     1. Navigate to **Data management \> Data Entities**.
     2. Select the **Vendors V2** entity.
     3. Click **Options** from the menu bar, and then **Change tracking**.
-        ![self or circular reference 5](media/vend_selfref5.png)
+        ![self or circular reference 5](media/selfref_options.png)
     4. Click **Disable Change Tracking**.
-        ![self or circular reference 6](media/vend_selfref6.png)
+        ![self or circular reference 6](media/selfref_tracking.png)
 
 3. Run the initial sync of **Vendors V2 (msdyn_vendors)** mapping. The initial sync should run successfully without any errors.
 
@@ -168,9 +168,9 @@ If you have records with values in these fields in the customer entity follow th
     1. Navigate to **Data management \> Data Entities**.
     2. Select the **Customers V3** entity.
     3. Click **Options** from the menu bar, and then **Change tracking**.
-        ![self or circular reference 5](media/cust_selfref5.png)
+        ![self or circular reference 5](media/selfref_options.png)
     4. Click **Disable Change Tracking**.
-        ![self or circular reference 6](media/cust_selfref6.png)
+        ![self or circular reference 6](media/selfref_tracking.png)
 
 3. Run the initial sync for the **Customers V3 (Accounts)** mapping. The initial sync should run successfully without any errors.
 
