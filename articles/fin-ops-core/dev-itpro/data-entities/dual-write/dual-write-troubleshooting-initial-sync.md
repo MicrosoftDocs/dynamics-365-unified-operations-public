@@ -125,7 +125,7 @@ If you have records with values in these fields in the vendor entity follow the 
     
     4. Repeat to delete the **InvoiceVendorAccountNumber** field.
     
-        ![self or circular reference 3](media/vend_selfref4.png)
+        ![self or circular reference 4](media/vend-selfref4.png)
     
     5. Save the mapping changes.
 
