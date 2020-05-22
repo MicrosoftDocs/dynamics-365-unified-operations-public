@@ -95,7 +95,7 @@ The following illustration shows the lifecycle of a sales order in a DOM system.
     >
     > If you enable the feature, the options available for location selection when you create pickup or shipment orders in POS will be updated.
     >
-    > Enabling the feature also results in improved pages in POS when the "ship all" or "ship selected" operations are selected.
+    > Enabling the feature also results in updated pages in POS when the "ship all" or "ship selected" operations are selected.
 
 9. To define rules, go to **Retail and Commerce \> Distributed order management \> Setup \> Manage rules**. The following DOM rules are currently supported:
 
