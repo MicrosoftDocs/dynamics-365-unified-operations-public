@@ -34,15 +34,18 @@ The term disaster is used here to mean an event that makes the primary datacente
 
 ### Limitations of this document
 
-This document won't go into specific configuration details for disaster recovery of AD FS, file storage components, or SQL server.
+This document won't go into specific configuration details for disaster recovery of the following components:
+  - AD FS
+  - File storage
+  - SQL server.
 
 ### Recommendations
 
-Remember to keep your DR environment updated with the latest Windows Updates so your environment has the latest security updates and it doesn't require any updates during a disaster event.
+Remember to keep your DR environment updated with the latest Windows Updates. Your environment will have the latest security updates and won't require updates during a disaster event.
 
-Ensure that you're applying new pre-requisites that are specified by Microsoft, keeping your Service Fabric Cluster updated and doing certificate rotations as required.
+Ensure that you're applying new pre-requisites that are specified by Microsoft. Also, keep your Service Fabric Cluster updated and do certificate rotations as required.
 
-Once you've read through this document write-up the steps that need to be taken by your team and run through this scenario multiple times to ensure you don't come across unexpected problems and minimize the potential downtime. 
+Once you've read through this document, write-up the steps that need to be taken by your team. Afterwards, run through the steps multiple times to ensure you don't come across unexpected problems and minimize the potential downtime. 
 
 ## Overview
 
@@ -55,7 +58,7 @@ The diagram below illustrates, at a high level, the required setup:
 
 ## Environment Configuration
 
-Within LCS the production environment will be deployed as usual, using the environment slot named **PRODUCTION**. Your DR environment will **not** use an additional environment slot in LCS. It will instead **reuse** the slot for your production environment. 
+Within LCS, the production environment should be deployed as usual by using the environment slot named **PRODUCTION**. Your DR environment **won't** use an additional environment slot in LCS. It will instead **reuse** the slot for your production environment. 
 
 Dynamics 365 for Finance and Operations [AOS and SQL Server must be colocated](../../fin-ops/get-started/system-requirements-on-prem.md#network-requirements) within the same datacenter.
 
@@ -65,7 +68,7 @@ When code packages are deployed to the production environment, they don't need t
 
 ## Environment deployment settings
 
-The DR environment should have almost the same configuration as the production environment – the shared settings allow the DR environment to operate against the replicated copies of the production database after a disaster event, the table below illustrates the shared and specific settings for DR:
+The DR environment should have almost the same configuration as the production environment. The table below illustrates the shared and specific settings for DR:
 
 | Environment Settings | DR Environment|
 |---------------------------------|----------------|
@@ -97,7 +100,7 @@ The DR environment should have almost the same configuration as the production e
 | SSL certificate thumbprint       | Same as production |
 | Management reporter certificate thumbprint | Same as production |
 
-<sup>1</sup> SSRS is referenced by IP. If the exact same machine IP can't be configured in the DR environment the ip can be different.
+<sup>1</sup> SSRS is referenced by IP. If the exact same machine IP can't be configured in the DR environment, the IP can be different.
 
 <sup>2</sup> This depends on your network configuration, if you've a load balancer that can handle diverting traffic to the other environment then the host name can be the same. If you're unable to do that, then use a different host name. 
 
@@ -130,14 +133,12 @@ To bring the DR environment online, you'll have LCS deploy what is currently ava
 
 ### Deploy the LocalAgent
 
-Download the LocalAgent installer and configuration file from LCS to your disaster recovery environment. Once you've the configuration file, open it and ensure that the connectionEndpoint under the serviceFabric section points to the IP or FQDN of a server in the DR environment.
-
-Once you've modified the file, save it locally and deploy the LocalAgent as you normally would.
+Download the LocalAgent installer and configuration file from LCS to your disaster recovery environment. Once you have the configuration file, open it. Ensure that the connectionEndpoint under the serviceFabric section points to the IP or FQDN of a server in the DR environment. After modifying the file, save it locally and deploy the LocalAgent as you normally would.
 
 >[!IMPORTANT]
 > Do not make changes to your connector settings in LCS. 
 
-From now on and until your main production environment comes back online, this LocalAgent will process all requests that LCS puts into the Message Queue. That's why its important that you ensure that no services are running in your production environment. Eventually, when your orchestrator nodes come back up in your primary datacenter, unprovision the LocalAgent from the cluster.  
+From now on and until your main production environment comes back online, this LocalAgent will process all requests that LCS puts into the Message Queue. That's why its important you ensure no services are running in your production environment. Eventually, when your orchestrator nodes come back up in your primary datacenter, unprovision the LocalAgent from the cluster.  
 
 ### Prepare your pre-deployment scripts (optional)
 
@@ -199,11 +200,11 @@ If changing the host name, the following modifications will be required:
 >[!IMPORTANT]
 > If changing the hostname url for your deployment ensure that your AD FS server is configured to accept the new url. For more information check out [Reuse the same AD FS instance for multiple environments](./onprem-reuseadfs.md).
 
-As the fileshare is shared between the production and DR environments, the predeployment script shouldn't be present or should be disabled when doing deployments to the production environment.
+As the fileshare is shared between the production and DR environments, this predeployment script should be disabled. Only enable it when deploying to your Disaster Recovery environment. 
 
 ### Ensure reports get deployed
 
-As the database has previously been synchronized successfully, synchronization would normally be skipped. However, we need to synchronize the reports as the SSRS node is empty. Perform the actions below according to the Platform update that your environment is in. 
+As the database has previously been synchronized successfully, synchronization would normally be skipped. However, we need to synchronize the reports as the SSRS node is empty. Do the actions below according to the Platform update that your environment is in. 
 
 #### Platform Update 37 or later
 
@@ -246,7 +247,7 @@ If your production environment is on Platform update 36 or earlier. Follow the i
 
 ## Using your DR environment
 
-You can use your DR environment as you normally would except that updates or hotfixes shouldn't be applied to the environment. If you must apply updates to your environment your failback process will differ from the one described below. Failing back under this condition isn't covered in this guide.
+You can use your DR environment as you normally would except that updates or hotfixes shouldn't be applied to the environment. If you must apply updates to your environment, your failback process will differ from the one described below. Failing back under this condition isn't covered in this guide.
 
 ## Failing back to your production environment
 
@@ -255,7 +256,7 @@ You can use your DR environment as you normally would except that updates or hot
 
 Secure a downtime window in which you can switch operation from the DR environment to the Production environment. Once in the downtime window, disable all non-Orchestrator nodes in the DR environment through Service Fabric Explorer. Once all nodes are disabled, failover your SQL Server to the production data center.
 
-Once the failover has happened, start up the AOS, SSRS, and MR nodes in your primary datacenter. Carry out validation tests to ensure your environment is functioning as expected. Once you decide the environment is working as expected, remove the LocalAgent from your Disaster Recovery environment and re-install it on your Production environment.
+Once the failover has happened, start up the AOS, SSRS, and MR nodes in your primary datacenter. Carry out validation tests to ensure your environment is functioning as expected. Once you decide the environment is working as expected, remove the LocalAgent from your Disaster Recovery environment and reinstall it on your Production environment.
 
 Your primary environment will be back to functioning as usual and can once again be serviced.
 
