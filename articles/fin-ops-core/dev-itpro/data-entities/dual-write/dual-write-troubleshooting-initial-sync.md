@@ -206,7 +206,7 @@ If you have records with values in these fields in the customer entity follow th
 
     1. In Power Apps, create a data integration project between the **Sales.Account** and **Finance and Operations apps.Customers V3** entities. The data direction must be from Common Data Service to the Finance and Operations app.  Because **InvoiceAccount** is a new attribute in dual-write, you may want to skip initial sync for this attribute. For more information, see [Integrate data into Common Data Service](https://docs.microsoft.com/power-platform/admin/data-integrator).
 
-        The following image shows a project that updates **InvoiceAccount** and **ContactPersonId**.
+        The following image shows a project that updates **CustomerAccount** and **ContactPersonId**.
 
         ![self or circular reference](media/cust_selfref6.png)
 
