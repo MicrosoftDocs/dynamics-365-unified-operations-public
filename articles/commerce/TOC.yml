@@ -1,4 +1,4 @@
-﻿- name: Dynamics 365 Commerce
+- name: Dynamics 365 Commerce
   items:
   - name: Dynamics 365 Commerce
     items:
@@ -500,6 +500,8 @@
             href: dev-itpro/adyen-connector.md
           - name: Saving online payment instruments with the Adyen connector
             href: dev-itpro/adyen-connector-listPI.md
+          - name: Strong Customer Authentication (SCA) using the Adyen connector
+            href: adyen_redirect.md
           - name: Seamless offline switch for gift card and credit memo operations
             href: dev-itpro/seamless-offline-improvements.md
           - name: Set up pay invoice scenarios 
