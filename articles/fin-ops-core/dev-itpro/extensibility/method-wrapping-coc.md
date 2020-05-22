@@ -442,7 +442,7 @@ In a CoC extension method, the next call must not be called conditionally. Howev
 Currently, only methods that are defined in regular classes can be wrapped. Methods that are defined in extension classes can't be wrapped by augmenting the extension classes. This capability is planned for a future release.
 
 ### Extensions of constructors
-Constructors cannot be extended. A **new** method that is defined on an extension class will define a constructor for the extension class itself. Additionally, the **new** method has to be public and cannot not have any arguments. For more information, see [Constructors](class-extensions.md#constructors).
+Constructors cannot be extended. A **new** method that is defined on an extension class will define a constructor for the extension class itself. Additionally, the **new** method has to be public, and it can't have any arguments. For more information, see [Constructors](class-extensions.md#constructors).
 
 ### Tooling
 For the features that are described in this topic, the Microsoft Visual Studio X++ editor doesn't yet offer complete support for cross-references and Microsoft IntelliSense.
