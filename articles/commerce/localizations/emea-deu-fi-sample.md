@@ -47,15 +47,15 @@ The following scenarios are covered by the fiscal registration service integrati
 
 Registration of sales operations includes the following steps: 
 
-    1. Registration of the transaction start
+  1. Registration of the transaction start
     
 The start of each transaction is registered in a technical security element (TSE) that is connected to the EFR service. As a result of    registration a TSE assigns a transaction ID (TID).
     
-    2. Registration of the transaction end
+  2. Registration of the transaction end
     
 When a transaction is concluded at the POS, it's registered by using the same TID that was assigned during registration of the transaction start. At that moment, detailed transaction data is sent to the fiscal registration service. This data includes sales line information, and information about discounts, payments, and taxes.
 
-    3. Capturing a response from the fiscal registration service 
+  3. Capturing a response from the fiscal registration service 
     
 Security data is received from a TSE as a part of a response and is saved in the transaction in the channel database. The security data consist of the following information:
         - TID
