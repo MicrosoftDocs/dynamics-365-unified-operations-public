@@ -35,153 +35,75 @@ ms.dyn365.ops.version: Platform Update 33
 
 [!include [banner](../includes/banner.md)]
 
+To configure the export to Data Lake, you must create a storage account in your own Azure subscription. This storage account will be used to store data. Next, you must create an Azure Active Directory (Azure AD) application ID that grants access to the root of your storage account. Your Dynamics 365 Finance or Operations app will use the Azure AD application to gain access to storag,  and create the folder structure and write data. You must create a key vault in your subscription, and store the names of the storage account, application ID and the application secrets. If you don't have permissions to create resources in Azure portal, you will need assistance from someone in your organization with required permissions.
 
-Configuring the export to Data lake has several steps.
+The steps, which take place in the Azure portal, are as follows: 
 
-1. You must create a storage account in your own Azure subscription. This storage account will be used to store data.
-2. Next, you must create an Azure Active Directory (Azure AD) application ID that grants access to the root of your storage account. Your Dynamics 365 Finance or Operations app will use the Azure AD application to gain access to storag,  and create the folder structure and write data.
-3. You must create a key vault in your subscription, and store the names of the storage account, application ID and the application secrets. If you don't have permissions to create resources in Azure portal, you will need assistance from someone in your organization with required permissions.
+1. Create a Microsoft Azure Data Lake Storage Gen2 account (a storage account) in your subscription.
+2. Create an application in Azure Active Directory, get the App ID, and then generate an App secret.
+3. Create a Key vault, and create three secrets that contain the storage account name as well as the application ID and App secret.
+4. Authorize the application you created so that it can read the secrets in the Key vault.
+5. Grant Access control roles so that your application can access the storage account.
 
-Let's review the steps in detail
+When following steps in Azure portal, you will be instructed to save several values for subsequent steps. You will also provide some of these values to your Finance and Operations apps by using Life cycle services (LCS). You will need Administrator access to LCS in order to do this.
 
-In **Azure portal**
-
-a.  Create a Microsoft Azure Data Lake Storage Gen2 account (a storage account)
-    in your subscription
-
-b.  Create an Application in Azure Active Directory. Get the App ID and an
-    generate an App secret.
-
-c.  Create a Key vault and create 3 secrets that contain the storage account
-    name as well as the application ID and App secret
-
-d.  Authorize the Application you created earlier so that it can read the
-    secrets in the key vault.
-
-e.  Grant Access control roles so that your application can access the storage
-    account
-
-When following above process in Azure portal, the document will instruct you to save several
-values such as the name of storage account for subsequent steps. 
-
-Next you are going to provide these values to Finance and
-Operations using the **Dynamics Life cycle services (LCS),** you will need
-Administrator access to LCS in order to perform this step.
-
-f.  Install the **Export to Data Lake** add-in in **LCS**
-
-You are done with the configuration step. 
-
+6.  Install the **Export to Data Lake** add-in in **LCS**
 
 ## Create a Data Lake Storage (Gen2) account in your subscription
 
-The storage account will be used to store data from Finance and Operations. To
-manually create a storage account, you must be a user who has administrative
-rights to your organization's Azure subscription.
+The Data Lake Storage account will be used to store data from your Finance and Operations apps. To manually create a storage account, you must have administrative rights to your organization's Azure subscription. To create a storage account, complete the following steps.
 
-To create a storage account, follow the steps below.
+1. In the Azure portal, select **Create new resource**, and then search for and select **Storage account – blob, file, table, queue**.
+2. In the **Create storage account** dialog box, provide values for the following parameter fields:
 
-1.  In the Azure portal, create a new storage account. (choose **Create new
-    resource** and search for **Storage account – blob, file, table, queue**)
+    - **Location:** Select the data center where your environment is located. If the data center that you select is in a different Azure region, you may incur additional data movement costs. If your Microsoft Power BI or your data warehouse is in a different region, you can use replication to move storage between regions.
+    - **Performance**: We recommend you select **Standard**.
+    - **Account kind**: You must select **StorageV2**. In the **Advanced options** dialog box, you will see the option, **Data Lake storage Gen2**.
 
-2.  In the Create storage account dialog box, provide values for the following
-    parameter fields:
+3. On the **Advanced tab**, select **Data Lake storage Gen2** \> **Hierarchical namespaces**, and then select **Enabled**. If you disable this option, you may not be able to consume data that is written by Finance and Operations apps with services such as Power BI data flows and AI builder.
+4. Select **Review and create**. When the deployment is complete, the new resource will be shown in the Azure portal.
+5. Copy and keep the following information from the storage account that you created:
 
-    -   **Location:** Select the data center where your environment is located.
-        If the data center that you select is in a different Azure region, you
-        may incur additional data movement costs. If your Microsoft Power BI
-        and/or your data warehouse is in a different region, you can use
-        replication to move storage between regions.
-
-    -   **Performance**: We recommend that you select Standard.
-
-    -   **Account kind**: You must **select StorageV2**. In the Advanced options
-        dialog box, you will see the Data Lake storage Gen2 option.
-
-3.  Select the **Advanced tab** and select Enabled under the option for **Data
-    Lake storage Gen2 \> Hierarchical namespaces**. If you disable this option,
-    you may not be able to consume data written by Finance and Operations apps
-    with services such as Power BI data flows and AI builder.
-
-4.  Select **Review and create**. When the deployment is completed, the new
-    resource will be shown in the Azure portal.
-
-5.  You will need to copy and keep the following information from the storage
-    account created above
-
-    -   In Azure portal, select the created storage account. Copy and save the
-        **storage account name**. it should be shown on top left of the storage
-        account page.
-
-    -   Select **Settings \> access keys** form the navigation menu on the left.
-        Copy **connection string** from either key 1 or key 2
+    i. In the Azure portal, select the storage account you created. Copy and save the **storage account name**.
+    ii. On the left navigation pane, select **Settings** \> **Access keys**, and copy the **Connection string** from Key 1 or Key 2.
         
 
-## Create a key vault and a secret that contains the Storage account
+## Create a Key vault and a secret that contains the storage account
 
-A key vault is a secure way to hand over details such as storage account name to
-Finance and Operations. To create a key vault and a secret, follow the steps below
+A key vault is a secure way to share details such as storage account name to your Dynamics 365 Finance and Operations apps. Complete the following steps to create a key vault and a secret.
 
-1.  In the Azure portal, create a new Key Vault. (choose **Create new resource**
-    and search for **Key Vault**)
+1. In the Azure portal, select **Create a new resource** and then search for and select, **Key Vault**.
+2. In the **Create key vault** dialog box, in the **Location** field, select the data center where your environment is located.
+3. After the Key vault is created, select it from the list, and on the left navigation pane, select **Overview**. 
+4. Save the value in the**DNS name** field. You will need this value later.
+5. In the left navigation pane, select **Secrets** > **Generate/Import**.
+6. In the **Create a secret** dialog box, in the **Upload options** field, select **Manual**.
+7. Enter a name for the secret, for example **storage-account-name**. Make a note of the name, because you will have to provide it later.
+8. In the **Value** field, enter the storage account name that you obtained in the previous procedure.
+9. Select **Enabled**, and then select **Create**. The secret is created and added to Key vault.
 
-2.  In the **Create key vault** dialog box, in the **Location** field, select
-    the data center where your environment is located.
+## Create an application in Azure Active Directory
 
-3.  After Key Vault is created, select it in the list. Select **Overview** from the left navigation menu. Save the value of the field **DNS name** that you see on the top right of the page. You will need this value later.
+1. In the Azure portal, select **Azure Active Directory**, and then select **App registrations**.
+2. Select **New registration**, and enter the following information: 
 
-4.  Next, select **Secrets** in the left navigation menu. Select **Generate/Import**.
+    -  **Name:** Enter a name for the app.
+    -   **Supported Account types**: Choose the appropriate option.
 
-5.  In the **Create a secret** dialog box, in the **Upload options** field,
-    select **Manual**.
+3. After the application is created, select it and then copy and save the **Application (client) ID** at the top of the page. You will need this later.
+4. On the left navigation pane, select **API permissions** .
+5. Select **+Add a permission**, and in the **Request API permissions** dialog, select **Azure Key vault**.
+6. Select **Delegated permissions**, check **user_impersonation**, and then select**Add permissions.** 
+7. On the left navigation pane, select **Certificates & secrets**, and then select **+New client secret**. 
+8. In the **Description** field, enter a name.
+9. In the **Expires** field, select an option, and then select **Add**.
 
-6.  Enter a name for the secret, ex. **storage-account-name**. Make a note of the name, because you will have
-    to provide it later.
-
-7.  In the value field, enter the **storage account name** that you obtained
-    from the storage account in step (5). 
-
-8.  Select **Enabled**, and then select **Create**. The secret is created and
-    added to Key Vault.
-
-## Create an Application in Azure Active Directory
-
-1.  In the Azure portal, select **Azure Active Directory**, and then
-    select **App registrations**.
-
-2.  Select **New registration**, and enter the following information: 
-    -   **Name:** Enter a name for the app
-    -   Choose the appropriate option for **Supported Account types**
-
-3.  After the application is created, select it. Copy and save the **Application
-    (client) ID** that you see on the top of the page. You will need this later
-
-4.  Next select **API permissions** option from the left navigation.
-
-5.  Choose **+Add a permission** option. Select **Azure Key vault** from the
-    **Request API permissions** dialog
-
-6.  Select **Delegated permissions**, check **user_impersonation** and select
-    **Add permissions.** The result will look like the one below
-
-![](media/ce7b48fc554ff31d7256e20e6398fb6f.png)
-
-7.  Select **Certificates & secrets** option on the left menu for the app.
-
-8.  Select **+New client secret**. In the **Description** field, enter a name.
-    Select an option in the **Expires** option. Then select **Add**.
-
-9.  The system will generate a secret next. **Immediately copy the secret to the clipboard**, 
-    as it will disappear within one or two minutes. You will have
-    to provide this secret value when setting up the key vault later.
-
-![](media/5062180174bd6ba94b22f29b43e8aacd.png)
+> [!IMPORTANT]
+> The system will generate a secret. Immediately copy the secret to the clipboard, as it will disappear within one or two minutes. You will have to provide this secret value when setting up the key vault later.
 
 ## Add secrets to the Key vault
 
-You are going to create 3 secrets in the key vault and add the values saved from
-previous steps. For each of the secrets, you will need to provide a secret name
-and provide the value you saved from earlier steps.
+You are going to create three secrets in the Key vault and then add the values saved from previous steps. For each of the secrets, you will need to provide a secret name and provide the value you saved from earlier steps.
 
 | **Suggested secret Name** | **Secret value (what you saved earlier…)**                                |
 |---------------------------|---------------------------------------------------------------------------|
@@ -189,129 +111,88 @@ and provide the value you saved from earlier steps.
 | app-secret                | The client secret specified in step (22)                                   |
 | storage-account-name      | The name of the storage account created in step (5). E.g. storageaccount1 |
 
-You will need to perform the following steps 3 times, once for each secret
+You will need to complete the following steps three times, once for each secret.
 
-1.  In the Azure portal, go to the Key vault you created earlier. Select
-    **Secrets** in the left navigation menu
+1. In the Azure portal, go to the Key vault you created earlier and on the left navigation pane, select **Secrets**.
+2. Select **+Generate/Import**, and in the the **Create a secret** dialog box, in the **Upload options** field, select **Manual**.
+3. Enter a name for the secret. See the table in the introduction of this section for suggested names.
+4. Copy and paste the corresponding secret value in the **Value** field.
+6.  Select **Enabled**, and then select **Create**. 
 
-2.  Select **+Generate/Import**.
+You will notice the secret created in the list of secrets.
 
-3.  In the **Create a secret** dialog box, in the **Upload options** field,
-    select **Manual**.
+## Authorize the application to read secrets in the Key vault
 
-4.  Provide a **name** for the secret – see the suggested names above.
+1. In **Azure Portal**, open the Key Vault that you created earlier.
+2. On the left navigation page, select **Access policies** > **+Add Access Policy** to create a new policy. 
+3. On the **Add access policy** dialog, in the **Select principal** field, search for the name of the application you created earlier.
+4. When you find your application in the list of principals, select the application, and then click **Select**.
+5. In the **Key permissions** and **Secret permissions** fields, select **Get** and **List**.  
+6. In the **Add access policy** dialog, select **Add**..
+7. On the left navigation pane, select **Access policies** > **+Add Access Policy** to create a new policy. 
+8. On the **Add access policy** dialog, in the **Select principal** field, locate and select the application, **Microsoft Dynamics ERP Microservices**, and then click **Select**. 
 
-5.  Copy and paste the corresponding secret value in the **value** field
+> [!NOTE]
+> If you can't fnd **Microsoft Dynamics ERP Microservices**, see the trouble-shooting section at the end of this document.
 
-6.  Select **enabled** and then select **create**.
+9. In the **Key permissions**  and **Secret permissions** fields, select **Get** and **List**.  
+10. In the **Access policy** dialog, select **Add**.
 
-7.  You will notice the secret created in the list of secrets
-
-## Authorize the Application so that it can read the secrets in the Key vault
-
-1.  In **Azure Portal**, open the Key Vault that you created earlier.
-
-2.  Select **Access policies** in the left navigation menu and then select
-    **+Add Access Policy** to create a new policy. **Add access policy** dialog
-    will be shown
-
-3.  In the **Select principal** field, search for the name of the application
-    you created earlier in step (16)
-
-4.  When you find your application in the list of principals, **click** on the
-    application, and click the **select** button at the bottom of the dialog.
-
-5.  In the **Key permissions** field, select **Get** and **List** options. 
-
-6.  In the **Secret permissions** field, select **Get** and **List** options. 
-
-7.  Select **Add** in the Add access policy dialog
-
-Next you are going to allow  **Microsoft Dynamics ERP Microservices** service to access your key vault.
-
-8.  Select **Access policies** in the left navigation menu and then select
-    **+Add Access Policy** to create a new policy. **Add access policy** dialog
-    will be shown
-
-9.  In the **Select principal** field, search for the application **Microsoft Dynamics ERP Microservices**
-    
-10.  When you find your **Microsoft Dynamics ERP Microservices** in the list of principals, **click** on the
-    application, and click the **select** button at the bottom of the dialog. Can't fnd **Microsoft Dynamics ERP Microservices**? - see the trouble-shooting section at the end of this document
-
-11.  In the **Key permissions** field, select **Get** and **List** options. 
-
-12.  In the **Secret permissions** field, select **Get** and **List** options. 
-
-13.  Select **Add** in the Add access policy dialog
-
-You should see 2 applications with access to your key vault as shown below
+You should see two applications with access to your key vault as shown below:
 
 | Application                                                   | Key Permissions | Secret permissions |
 |---------------------------------------------------------------|-----------------|--------------------|
-| Display name of the new application you created from step (16) | Get, List       | Get, List          |
+| Display name of the new application you created  | Get, List       | Get, List          |
 | Microsoft Dynamics ERP Microservices                          | Get, List       | Get, List          |
 
-14.  Select **Save**
+11.  Select **Save**.
 
-## Grant Access control roles to applications 
+## Grant access control roles to applications 
 
-Next, you need to grant your application with permissions to read and write to the storage account. These permissions are granted via Roles in Active directory.
+You need to grant your application permissions to read and write to the storage account. These permissions are granted by using Roles in Active directory.
 
-1.  In **Azure Portal**, open the storage account created you created earlier
+1. In **Azure Portal**, open the storage account that you created earlier.
+2. Select **Access Control (IAM)** in the left navigation. 
+3. On the **Access control** page, select the **Role assignments** tab.
+4. Select **+ Add** at the top of the page, and then select **Add role assignment**.
+5. In the **Add role assignment** dialog, select the **Role** field and then select **Owner**.
 
-2.  Select **Access Control (IAM)** in the left navigation. You will see the
-    Access control page.
+> [!NOTE]
+> Don't make any changes to the fields, **Assign access to** and **Azure AD user, group, or service principal**.
 
-3.  Select the **Role assignments** tab in the page
+6. In the **Select** field, select the application that you registered earlier.
+7. Select **Save**
+8. Add the remaining roles shown in the following table by repeating steps 4 - 7.
 
-4.  Click on **+ Add**, at the top of the page and choose **Add role
-    assignment**
-
-5.  In the **Add role assignment** dialog, select the **Role** field and select
-    **Owner**.
-
-6.  Keep field **Assign access to**” unchanged as “**Azure AD user, group, or
-    service principal**”
-
-7.  In the **Select** field, choose the application you registered earlier.
-
-8.  Select **Save**
-
-9.  You need to add all the roles shown in the following table by following
-    similar steps (you already added the owner role. You need to add the rest.
-
-| **Application to be selected**   | **Role to be assigned**     |
+|   Application to be selected     |     Role to be assigned     |
 |----------------------------------|-----------------------------|
 | Your application from step 2 (b) | Owner                       |
 | Your application from step 2 (b) | Contributor                 |
-| Your application from step 2 (b) | Storage Account Contributor |
-| Your application from step 2 (b) | Storage Blob Data Owner     |
-| AI Builder Authorization Service | Storage Blob Data Reader    |
+| Your application from step 2 (b) | Storage account contributor |
+| Your application from step 2 (b) | Storage blob data owner     |
+| AI builder authorization service | Storage blob data reader    |
 
 ## Install the Export to Data Lake add-in in LCS 
 
-Before you can export data to your Data lake from Finance and Operations, you must install the **Export to Data Lake** add-in in LCS. To complete this task, you must be an environment administrator in LCS for the environment that you want to use.
+Before you can export data to your Data lake from you Finance and Operations apps, you must install the **Export to Data Lake** add-in in LCS. To complete this task, you must be an environment administrator in LCS for the environment that you want to use.
 
 You need the following information before you start. Keep the information handy before you begin.
 
 | **Information you need for Export to Data lake add-in**   | **Where can you find it**                                                                                                                                                                                                |
 |-----------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Your environment AAD Tenant ID                            | You can find your Azure AD tenant ID in the Azure portal. Sign into the **Azure portal** and open the **Azure Active Directory** service. Open the **Properties** page and copy the value in the **Directory ID** field. |
-| DNS name of your Key vault                                | You should have saved this name by following step (8). Enter the  the DNS name of your Key vault                                                                                                               |
+| Your environment AAD Tenant ID                            | Your Azure AD tenant ID in the Azure portal. Sign in to the **Azure portal** and open the **Azure Active Directory** service. Open the **Properties** page and copy the value in the **Directory ID** field. |
+| DNS name of your Key vault                                | This name should have been saved in the previous procedure. Enter the DNS name of your Key vault.                                                                                                               |
 | The secret that contains the name of your storage account |  If you used the suggested names for steps 23..28, enter **storage-account-name**. if not, enter the secret name you defined.                                                                                                                                                                                                                         |
 | Secret that contains the Application ID                   |  If you used the suggested names for steps 23..28, enter **app-id**. if not, enter the secret name you defined.                                                                                       |
-| Secret that contains the Application secret               |  If you used the suggested names for steps 23..28, enter **app-secret**. if not, enter the secret name you defined.                                                                                             |
+| Secret that contains the Application secret               |  If you used the suggested name, enter **app-secret**. If not, enter the secret name you defined.                                                                                             |
 
-1.  Sign in to [LCS](https://lcs.dynamics.com). Navigate to your environment.
+1.  Sign in to [LCS](https://lcs.dynamics.com) and navigate to your environment.
+2.  On the **Environment** page, select the **Environment add-ins** tab. If **Export Data Lake** appears in the list, the Data Lake add-in is already installed, and you can skip the rest of this procedure. Otherwise, complete the remaining steps.
+3.  Select **Install a new add-in**, and in the dialog box, select **Export to Data lake** in the list. If **Export to data lake** isn't listed, the feature might not be available for your environment at this time.
+4.  In the **Setup add-in** dialog box, provide the required information. To answer the questions, you must already have a storage account. If you don't already have a storage account, create one, or ask your admin to create one on your behalf.
+5.  Accept the terms of the offer by selecting the check box, and then select **Install**.
 
-2.  On the **Environment** page, select the **Environment add-ins** Tab. If **Export Data Lake** appears in the list, the Data Lake add-in is already installed, and you can skip the rest of this procedure. Otherwise, follow the remaining steps.
-3.  Select **Install a new add-in**.
-4.  In the **Select an add-in to install** dialog box, select **Export to Data lake** in the list. If it isn't listed, the feature might not yet be available for your environment.
-5.  In the **Setup add-in** dialog box, provide the required information. To answer the questions, you must already have a storage account. If you don't already have a storage account, create one, or ask your admin to create one on your behalf.
-6.  Accept the terms of the offer by selecting the check box, and then select
-**Install**.
-
-The system installs and configures the data lake for the environment. After installation and configuration are completed, you should see **Azure Data Lake** listed on the **Environment** page.
+The system installs and configures the data lake for the environment. After installation and configuration are complete, you should see **Azure Data Lake** listed on the **Environment** page.
 
 ## Trouble-shooting tips
 
@@ -319,9 +200,8 @@ The system installs and configures the data lake for the environment. After inst
 
 You will need **Azure Active Directory tenant administrator** rights to perform these steps.
 
-1. Launch Azure portal
-2. Go to Azure Active Directory
-3. On the left-side menu bar select Manage \> Enterprise Applications and search for the following applications (see steps below if you cannot find those applications):
+1. Launch the Azure portal and go to the Azure Active Directory.
+2. On the left-side menu bar, select **Manage** \> **Enterprise Applications** and search for the following applications:
 
 | **Application**                          | **App ID**                           |
 |------------------------------------------|--------------------------------------|
@@ -329,22 +209,25 @@ You will need **Azure Active Directory tenant administrator** rights to perform 
 | Microsoft Dynamics ERP Microservices CDS | 703e2651-d3fc-48f5-942c-74274233dba8 |
 | AI Builder Authorization Service         | ad40333e-9910-4b61-b281-e3aeeb8c3ef3 |
 
-> [!NOTE]
-> If you are unable to find any of the above applications in Azure Active Directory -\> Enterprise Applications**:
 
-4. On your local machine: Click on the Start menu and search for powershell.
-5. Right-click on Windows Powershell and choose “Run as administrator”.
-6. Run the following command to install “AzureAD” module
+If you are unable to find any of the above applications complete steps 3 - 7:
+
+3. On your local machine, open the  Start menu and search for **Powershell**.
+4. Right-click on **Windows Powershell** and select **Run as administrator**.
+5. Run the following command to install **AzureAD** module:
 
      >   *Install-Module -Name AzureAD*
 
-  - If NuGet provider is required to continue, select “Y” to install it.*
-  -  If Untrusted repository message appears, select “Y” to continue.
+  - If NuGet provider is required to continue, select **Y** to install it.
+  - If an **Untrusted repository** message appears, select **Y** to continue.
 
-7. For each application that needs to be added, run the following commands to add the application to the Azure Active Directory.
-8. Login as the Azure Active Directory administrator when prompted.
+6. For each application that needs to be added, run the following commands to add the application to the Azure Active Directory.
 
-> Connect-AzureAD
-> New-AzureADServicePrincipal –AppId \<AppId\>
+    > Connect-AzureAD
+    > New-AzureADServicePrincipal –AppId \<AppId\>
+
+7. Log in as the Azure Active Directory administrator when prompted.
+
+
 
 
