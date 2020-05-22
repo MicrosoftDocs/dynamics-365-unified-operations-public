@@ -199,6 +199,8 @@ If changing the host name the following modifications will be required:
 >[!IMPORTANT]
 > If changing the hostname url for your deployment ensure that your AD FS server is configured to accept the new url. For more information check out [Reuse the same AD FS instance for multiple environments](./onprem-reuseadfs.md).
 
+As the fileshare is shared between the production and DR environments the predeployment script should not be present or should be disabled when doing deployments to the production environment.
+
 ### Ensure reports get deployed
 
 As the database has previously been synchronized successfully, synchronization would normally be skipped. However, we need to synchronize the reports as the SSRS node is empty. Perform the actions below according to the Platform update that your environment is in. 
