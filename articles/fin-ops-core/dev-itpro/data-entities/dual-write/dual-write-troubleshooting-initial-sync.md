@@ -155,7 +155,7 @@ If you have records with values in these fields in the vendor entity follow the 
 
 ## <a id="error-customer-map"></a>Resolve an error in Customers V3 to Accounts entity mapping
 
-You might run into the following initial sync errors on the **Customers V3** to **Accounts** mapping if the entities have existing records with values in the **Primary Contact** and **InvoiceAccount** fields. This because **InvoiceAccount** is a self-referencing field, and **Primary Contact** is a circular reference in the vendor mapping.
+You might run into the following initial sync errors on the **Customers V3** to **Accounts** mapping if the entities have existing records with values in the **ContactPersonID** and **InvoiceAccount** fields. This because **InvoiceAccount** is a self-referencing field, and **ContactPersonID** is a circular reference in the vendor mapping.
 
 *Couldn't resolve the guid for the field: <field>. The lookup was not found: <value>. Try this URL(s) to check if the reference data exists: https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/<entity>?$select=<field>&$filter=<field> eq <value>*
 
