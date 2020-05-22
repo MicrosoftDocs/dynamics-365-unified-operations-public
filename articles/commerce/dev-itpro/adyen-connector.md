@@ -5,7 +5,7 @@ title: Dynamics 365 Payment Connector for Adyen
 description: This topic provides an overview of the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: rassadi
 manager: AnnBe
-ms.date: 01/29/2020
+ms.date: 05/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -275,7 +275,7 @@ To process payments across point of sale (POS) terminals, a call center, or e-Co
     |---|---|:-:|:-:|---|
     | Assembly Name | Auto populated name of the assembly for the Dynamics 365 Payment Connector for Adyen. | Yes | Yes | *Binary name* |
     | Service account ID | Auto populated unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes (such as invoicing) should use. | Yes | Yes | *Guid* |
-    | Version | Enter the version of the Dynamics 365 Payment Connector for Adyen to use. <br>*e-Commerce Only*- If if [SCA support](https://go.microsoft.com/fwlink/?linkid=2131175) is required, use "V002"  | Yes | Yes | "V001"/"V002" |
+    | Version | Enter the version of the Dynamics 365 Payment Connector for Adyen to use. <br>*e-Commerce Only*- If [SCA support](https://go.microsoft.com/fwlink/?linkid=2131175) is required, use "V002".  | Yes | Yes | "V001"/"V002" |
     | Gateway environment | Enter the Adyen gateway environment to map to. The possible values are **Test** and **Live**. You should set this field to **Live** only for production devices and transactions. | Yes | Yes | Live |
     | Optional Domain | The optional domain is required for Live environments and should be obtained by contacting Adyen. | Live only | No | Contact Adyen |
     | Merchant account ID | Enter the unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | MerchantIdenfier |
@@ -291,7 +291,7 @@ To process payments across point of sale (POS) terminals, a call center, or e-Co
     | Terminal gift card entry | *POS Only* Allows the customer to select between **Manual** or **Swipe**. | Yes | Yes | True/False |
     | Allow saving payment information in e-commerce | *e-Commerce only* Gives signed-in users the option to save payment details for future online purchases.  | Yes | Yes | True/False |
     | Authorization stale period (days) | *POS Only* Number of days before an authorization is considered stale and should decline before going to the processor for capture. | Yes | Yes | "7" |
-    | Origin Key | *e-Commerce Only* Only required when "V002" is designated for the Version. You can obtain this key by following the instructions on the [How to get an origin key](https://docs.adyen.com/user-management/how-to-get-an-origin-key) page on the Adyen website. |
+    | Origin Key | *e-Commerce Only* Only required when "V002" is designated for the version. You can obtain this key by following the instructions on the [How to get an origin key](https://docs.adyen.com/user-management/how-to-get-an-origin-key) page on the Adyen website. |
 
 
 
@@ -329,7 +329,7 @@ After the payment terminal is onboarded, sign in to the [Adyen Customer Area](ht
     |---|---|:-:|:-:|---|
     | Assembly Name | Auto populated name of the assembly for the Dynamics 365 Payment Connector for Adyen. | Yes | Yes | *Binary name* |
     | Service account ID | Auto populated unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes (such as invoicing) should use. | Yes | Yes | *Guid* |
-    | Version | Enter the version of the Dynamics 365 Payment Connector for Adyen to use. <br>*e-Commerce Only* If if [SCA support](https://go.microsoft.com/fwlink/?linkid=2131175) is required, use "V002"  | Yes | Yes | "V001"/"V002" |
+    | Version | Enter the version of the Dynamics 365 Payment Connector for Adyen to use. <br>*e-Commerce Only* If [SCA support](https://go.microsoft.com/fwlink/?linkid=2131175) is required, use "V002".  | Yes | Yes | "V001"/"V002" |
     | Gateway environment | Enter the Adyen gateway environment to map to. The possible values are **Test** and **Live**. You should set this field to **Live** only for production devices and transactions. | Yes | Yes | Live |
     | Optional Domain | The optional domain is required for Live environments and should be obtained by contacting Adyen. | Live only | No | Contact Adyen |
     | Merchant account ID | Enter the unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | MerchantIdenfier |
@@ -345,7 +345,7 @@ After the payment terminal is onboarded, sign in to the [Adyen Customer Area](ht
     | Terminal gift card entry | *POS Only* Allows the customer to select between **Manual** or **Swipe**. | Yes | Yes | True/False |
     | Allow saving payment information in e-commerce | *e-Commerce only* Gives signed-in users the option to save payment details for future online purchases.  | Yes | Yes | True/False |
     | Authorization stale period (days) | *POS Only* Number of days before an authorization is considered stale and should decline before going to the processor for capture. | Yes | Yes | "7" |
-    | Origin Key | *e-Commerce Only* Only required when "V002" is designated for the Version. You can obtain this key by following the instructions on the [How to get an origin key](https://docs.adyen.com/user-management/how-to-get-an-origin-key) page on the Adyen website. |
+    | Origin Key | *e-Commerce Only* Only required when "V002" is designated for the version. You can obtain this key by following the instructions on the [How to get an origin key](https://docs.adyen.com/user-management/how-to-get-an-origin-key) page on the Adyen website. |
 
 4. On the Action Pane, select **Save**.
 
@@ -406,7 +406,7 @@ To configure the Dynamics 365 Payment Connector for Adyen for call center paymen
     |---|---|:-:|:-:|---|
     | Assembly Name | Auto populated name of the assembly for the Dynamics 365 Payment Connector for Adyen. | Yes | Yes | *Binary name* |
     | Service account ID | Auto populated unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes (such as invoicing) should use. | Yes | Yes | *Guid* |
-    | Version | Enter the version of the Dynamics 365 Payment Connector for Adyen to use. <br>*e-Commerce Only* If if [SCA support](https://go.microsoft.com/fwlink/?linkid=2131175) is required, use "V002"  | Yes | Yes | "V001"/"V002" |
+    | Version | Enter the version of the Dynamics 365 Payment Connector for Adyen to use. <br>*e-Commerce Only* If [SCA support](https://go.microsoft.com/fwlink/?linkid=2131175) is required, use "V002".  | Yes | Yes | "V001"/"V002" |
     | Gateway environment | Enter the Adyen gateway environment to map to. The possible values are **Test** and **Live**. | Yes | Yes | Live |
     | Optional Domain | Enter the domain to use when payment requests are made to Adyen. | No | No | https://terminal-api-live.adyen.com/sync |
     | Merchant account ID | Enter the unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | MerchantIdenfier |
@@ -422,10 +422,7 @@ To configure the Dynamics 365 Payment Connector for Adyen for call center paymen
     | Terminal gift card entry | *POS Only* Allows the customer to select between **Manual** or **Swipe**. | Yes | Yes | True/False |
     | Allow saving payment information in e-commerce | *e-Commerce only* Gives signed-in users the option to save payment details for future online purchases.  | Yes | Yes | True/False |
     | Authorization stale period (days) | *POS Only* Number of days before an authorization is considered stale and should decline before going to the processor for capture. | Yes | Yes | "7" |
-    | Origin Key | *e-Commerce Only* Only required when "V002" is designated for the Version. You can obtain this key by following the instructions on the [How to get an origin key](https://docs.adyen.com/user-management/how-to-get-an-origin-key) page on the Adyen website. |
-
-    
-
+    | Origin Key | *e-Commerce Only* Only required when "V002" is designated for the version. You can obtain this key by following the instructions on the [How to get an origin key](https://docs.adyen.com/user-management/how-to-get-an-origin-key) page on the Adyen website. |
 
 6. On the Action Pane, select **Save**.
 
@@ -510,6 +507,6 @@ When payment transactions aren't successfully processed through the Adyen paymen
 </tbody>
 </table>
 
-## Related articles
+## Additional resources
 
 - [Payments FAQ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
