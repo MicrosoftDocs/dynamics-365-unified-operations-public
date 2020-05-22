@@ -116,20 +116,31 @@ If you have records with values in these fields in the vendor entity follow the 
 1. In the Finance and Operations app, delete the **PrimaryContactPersonId** and **InvoiceVendorAccountNumber** fields from the mapping and save the changes.
 
     1. Navigate to the dual-write mapping page for **Vendors V2 (msdyn_vendors)**, and select the **Entity mappings** tab. In the left filter, select **Finance and Operations apps.Vendors V2**. In the right filter, select **Sales.Vendor**.
+
     2. Search for **primarycontactperson** to find the source field **PrimaryContactPersonId**.
+    
     3. Click the **Actions** button, and select **Delete**.
+    
         ![self or circular reference 3](media/vend_selfref3.png)
+    
     4. Repeat to delete the **InvoiceVendorAccountNumber** field.
+    
         ![self or circular reference 3](media/vend_selfref4.png)
+    
     5. Save the mapping changes.
 
 2. Disable the change tracking for the **Vendors V2** entity.
 
     1. Navigate to **Data management \> Data Entities**.
+    
     2. Select the **Vendors V2** entity.
+    
     3. Click **Options** from the menu bar, and then **Change tracking**.
+    
         ![self or circular reference 5](media/selfref_options.png)
+    
     4. Click **Disable Change Tracking**.
+    
         ![self or circular reference 6](media/selfref_tracking.png)
 
 3. Run the initial sync of **Vendors V2 (msdyn_vendors)** mapping. The initial sync should run successfully without any errors.
@@ -156,20 +167,31 @@ If you have records with values in these fields in the customer entity follow th
 1. In the Finance and Operations app, delete the fields **ContactPersonID** and **InvoiceAccount** from the **Customers V3 (accounts)** mapping and save the mapping.
 
     1. Navigate to the dual-write mapping page for **Customers V3 (accounts)**, select the **Entity mappings** tab. In the left filter, select **Finance and Operations app.Customers V3**. In the right filter, select **Common Data Service.Account**.
+
     2. Search for **contactperson** to find the source field **ContactPersonID**.
+    
     3. Click the **Actions** button, and select **Delete**.
+    
         ![self or circular reference 3](media/cust_selfref3.png)
+    
     4. Repeat to delete the **InvoiceAccount** field.
+    
         ![self or circular reference](media/cust_selfref4.png)
+    
     5. Save the mapping changes.
 
 2. Disable the change tracking for the **Customers V3** entity.
 
     1. Navigate to **Data management \> Data Entities**.
+    
     2. Select the **Customers V3** entity.
+    
     3. Click **Options** from the menu bar, and then **Change tracking**.
+    
         ![self or circular reference 5](media/selfref_options.png)
+    
     4. Click **Disable Change Tracking**.
+    
         ![self or circular reference 6](media/selfref_tracking.png)
 
 3. Run the initial sync for the **Customers V3 (Accounts)** mapping. The initial sync should run successfully without any errors.
