@@ -67,35 +67,39 @@ When code packages are deployed to the production environment, they don't need t
 
 The DR environment should have almost the same configuration as the production environment – the shared settings allow the DR environment to operate against the replicated copies of the production database after a disaster event, the table below illustrates the shared and specific settings for DR:
 
-| Environment Settings | DR Environment &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| Explanation |
-|---------------------------------|----------------|-------------|
-| **Active Directory Settings**   |                |             |
-| Administrator user              | Same as production|          |
-| ADFS URL                        | Same as production|          |
-| ADFS OpenId Connect client ID for AOS | Same as production|          |
-| ADFS OpenId Connect client ID for Financial Reporting | Same as production|          |
-| **SQL Database Configuration**  |                 |             |
-| SQL server name                 | Same as production |         |
-| AX database name                | Same as production |         |
-| Financial Reporting database name| Same as production |        |
-| **File Share Settings**         |                 |             |
-| File share for document store   | Same as production |            |
-| File share certificate thumbprint | Same as production |            |
-| **SSRS Configuration Settings** |                 |             |
-| IP address of SSRS instance     | Can be different | SSRS is referenced by IP, if the exact same machine ip can't be configured in the DR environment this can be different. |
-| SSRS certificate thumbprint     | Same as production |          |
-| **Configure Service Settings**  |                 |             |
-| DNS host name of Dynamics 365 instance | Can be different | This depends on your network configuration, if you have a load balancer that can handle diverting traffic to the other environment then the host name can be the same. If you are unable to do that, then use a different host name. |
-| AOS service user                | Same as production |            |
-| MR application service user     | Same as production |            |
-| MR process service user         | Same as production |            |
-| MR click-once service user      | Same as production |            |
-| **Application Certificate Settings** |                 |             |
-| Data encryption certificate thumbprint| Same as production |          |
-| Data signing certificate thumbprint | Same as production   |          |
-| Session authentication certificate thumbprint | Same as production |          |
-| SSL certificate thumbprint       | Same as production |             |
-| Management reporter certificate thumbprint | Same as production |     |
+| Environment Settings | DR Environment|
+|---------------------------------|----------------|
+| **Active Directory Settings**   |                |
+| Administrator user              | Same as production|
+| ADFS URL                        | Same as production|
+| ADFS OpenId Connect client ID for AOS | Same as production|
+| ADFS OpenId Connect client ID for Financial Reporting | Same as production|
+| **SQL Database Configuration**  |                 |
+| SQL server name                 | Same as production |
+| AX database name                | Same as production |
+| Financial Reporting database name| Same as production |
+| **File Share Settings**         |                 |
+| File share for document store   | Same as production |
+| File share certificate thumbprint | Same as production |
+| **SSRS Configuration Settings** |                 |
+| IP address of SSRS instance     | Can be different <sup>1</sup> |
+| SSRS certificate thumbprint     | Same as production |
+| **Configure Service Settings**  |                 |
+| DNS host name of Dynamics 365 instance | Can be different <sup>2</sup>|
+| AOS service user                | Same as production |
+| MR application service user     | Same as production |
+| MR process service user         | Same as production |
+| MR click-once service user      | Same as production |
+| **Application Certificate Settings** |                 |
+| Data encryption certificate thumbprint| Same as production |
+| Data signing certificate thumbprint | Same as production   |
+| Session authentication certificate thumbprint | Same as production |
+| SSL certificate thumbprint       | Same as production |
+| Management reporter certificate thumbprint | Same as production |
+
+<sup>1</sup> SSRS is referenced by IP, if the exact same machine ip can't be configured in the DR environment this can be different.
+
+<sup>2</sup> This depends on your network configuration, if you have a load balancer that can handle diverting traffic to the other environment then the host name can be the same. If you are unable to do that, then use a different host name. 
 
 ## SQL Server Always-On Availability Configuration
 
