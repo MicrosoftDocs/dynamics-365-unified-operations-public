@@ -45,11 +45,19 @@ The following scenarios are covered by the fiscal registration service integrati
 
 - **Registration of cash-and-carry sales and returns in the fiscal registration service:**
 
-    - The start of each transaction is registered in a technical security element (TSE) that is connected to EFR.
-    - As a result of registration of the transaction start, a TSE assigns a transaction ID (TID).
-    - When a transaction is concluded at the POS, it's registered by using the same TID that was assigned during registration of the transaction start. At that moment, detailed transaction data is sent to the fiscal registration service. This data includes sales line information, and information about discounts, payments, and taxes.
-    - It captures a response from the fiscal registration service. Security data is received from a TSE as a part of a response and is saved in the transaction in the channel database. The security data consist of the following information:
+Registration of sales operations includes the following steps: 
 
+    1. Registration of the transaction start
+    
+The start of each transaction is registered in a technical security element (TSE) that is connected to the EFR service. As a result of    registration a TSE assigns a transaction ID (TID).
+    
+    2. Registration of the transaction end
+    
+When a transaction is concluded at the POS, it's registered by using the same TID that was assigned during registration of the transaction start. At that moment, detailed transaction data is sent to the fiscal registration service. This data includes sales line information, and information about discounts, payments, and taxes.
+
+    3. Capturing a response from the fiscal registration service 
+    
+Security data is received from a TSE as a part of a response and is saved in the transaction in the channel database. The security data consist of the following information:
         - TID
         - Date and time of the transaction start
         - Date and time of the transaction end
@@ -266,8 +274,8 @@ For more information about how to work with receipt formats, see [Set up and des
 
 Set up the fiscal integration by completing the following steps that are described in [Set up the fiscal integration for Commerce channels](setting-up-fiscal-integration-for-retail-channel.md):
 
-- [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Also note the settings for the fiscal registration process that are [specific to this fiscal registration service integration sample](#set-up-the-registration-process).
-- [Set error handling settings](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+  1. [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Also note the settings for the fiscal registration process that are [specific to this fiscal registration service integration sample](#set-up-the-registration-process).
+  2. [Set error handling settings](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
     > [!WARNING]
     > The error handling capabilities of the fiscal integration framework might be not fully aligned with the local fiscal regulations.
@@ -275,7 +283,7 @@ Set up the fiscal integration by completing the following steps that are describ
     > - We recommend that you leave the **Continue on error** option on the **Fiscal registration process** page turned off, because all transactions must be correctly registered, even if the first attempt at fiscal registration wasn't successful.
     > - Before you turn on the **Skip** or **Mark as registered** option on the **Fiscal registration process** page, you should discuss these changes to the fiscal registration process with your tax consultant or the local tax office.
 
-- [Enable manual execution of postponed fiscal registration](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
+  3. [Enable manual execution of postponed fiscal registration](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
 
 ## Deployment guidelines for cash registers for Germany
 
