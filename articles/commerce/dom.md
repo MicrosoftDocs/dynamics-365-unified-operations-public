@@ -87,6 +87,11 @@ The following illustration shows the lifecycle of a sales order in a DOM system.
     2. Select **New**, and enter a name and description for the new group.
     3. Select **Save**.
     4. Select **Add line** to add a single location to the group. Alternatively, select **Add lines** to add multiple locations.
+    > [!NOTE]
+    > New feature added from 10.0.12 release: **Ability to sepcify locations as 'Shipping' or 'Pickup' enabled within Fulfillment group** (Needs to be enabled via **Feature Management** workspace. 
+    > This feature provides new configurations on the Fulfillment group form to define if the warehouse can be used for shipping or if the warehouse/store combination can be used for shipping, pickup or both. 
+    > Enabling this feature will update the options available for location selection when creating pickup or shipment orders in POS.
+    > Enabling this feature will also change the user experience with improved forms in POS when the Ship all or Ship selected operation is utilized.
 
 9. To define rules, go to **Retail and Commerce \> Distributed order management \> Setup \> Manage rules**. The following DOM rules are currently supported:
 
@@ -139,6 +144,11 @@ The following illustration shows the lifecycle of a sales order in a DOM system.
     3. Enter values in the **Profile** and **Description** fields.
     4. Set the **Auto apply result** option. If you set this option to **Yes**, the results of the DOM run for the profile will be automatically applied to the sales order lines. If you set it to **No**, the results can only be viewed in the fulfillment plan. They won't be applied to the sales order lines.
     5. If you want the DOM profile to be run for orders that have every sales order origin, even orders where the sales order origin is undefined, set the **Process orders with empty sales origin** option to **Yes**. To run the profile for only a few sales order origins, you can define them on the **Sales origins** page, as explained later.
+    > [!NOTE]
+    > New feature added from 10.0.12 release: **Ability to assign Fulfillment group to a Fulfillment Profile** (Needs to be enabled via **Feature Management** workspace. 
+    > This feature provides a new configuration on the Fulfillment profile form to be associated to a single Fulfilment group. 
+    > Selecting the Fulfilment group, allows the DOM rules for that Fulfilment profile to efficiently run against the ‘Shipping’ warehouses included in that Fulfilment group. 
+    > For effectively using this feature, ensure that there is one Fulfillment group that contains all the Shipping warehouses and associate that fulfillment group to the fulfillment profile.
     6. On the **Legal entities** FastTab, select **Add**, and then select a legal entity.
     7. On the **Rules** FastTab, select **Add**, and then select the rule to link to the profile.
     8. Repeat the previous two steps until all the required rules are associated with the profile.
