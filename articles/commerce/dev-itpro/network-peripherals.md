@@ -2,7 +2,7 @@
 # required metadata
 
 title: Support for network peripherals
-description: This topic provides an overview of network peripherals supported in the store.
+description: This topic provides an overview of network peripherals that are supported in the store.
 author: rubendel
 manager: AnnBe
 ms.date: 05/20/2020
@@ -34,115 +34,107 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](includes/banner.md)]
 
-This topic describes support for and setup of network peripheral within the store.
+This topic describes the support for and setup of network peripherals in the store.
 
 ## Key terms
 
 | Term | Description |
 |---|---|
-| Register | The entity that is used to configure an instance of a POS register. |
-| Device | Represents the physical instance of a POS register and the Modern POS application that is assigned to that register. |
-| Dedicated hardware station | The hardware station business logic that is built into the Modern POS for Windows and Android applications. |
-| d/k port | The d/k (drawer kick) port is a traditional method for connecting a cash drawer to a receipt printer. |
+| Register | The entity that is used to configure an instance of a point of sale (POS) register. |
+| Device | A representation of the physical instance of a POS register and the Modern POS application that is assigned to it. |
+| Dedicated hardware station | The hardware station business logic that is built into the Modern POS for Windows and Modern POS for Android applications. |
+| Drawer kick (d/k) port | A traditional method for connecting a cash drawer to a receipt printer. |
 | Network peripherals | Built-in support for network-enabled payment terminals, receipt printers, and cash drawers. |
 
 ## Supported POS clients and devices
 
-Network peripheral functionality is supported with the "Modern POS for Windows" and "Modern POS for Android" POS clients. 
+Functionality for network peripherals is supported by the Modern POS for Windows and Modern POS for Android POS clients.
 
-This functionality supports network enabled payment terminals and receipt printers. Cash drawer support is provided by connecting the cash drawer via the d/k port to the network-enabled receipt printer.
+This functionality supports network-enabled payment terminals and receipt printers. You can provide cash drawer support by connecting the cash drawer to the network-enabled receipt printer via the d/k port.
 
-Out of the box, this functionality is supported by the [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3), but other payment connectors may be supported via the Retail software development kit (Retail SDK). Supported receipt printers include Star Micronics network-enabled receipt printers. 
+Out-of-box support for this functionality is provided by the [Microsoft Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3). However, other payment connectors might be supported via the Retail software development kit (SDK). Supported receipt printers include network-enabled receipt printers from Star Micronics.
 
-Out of the box, network protocols for Epson and Star Micronics receipt printers are supported. Cash drawers connected to those printers via the d/k port are supported via ESC/POS protocols.
+Out-of-box support is provided for network protocols for Epson and Star Micronics receipt printers. Cash drawers that are connected to those printers via the d/k port are supported via ESC/POS protocols.
 
 ## Set up network peripherals
 
 ### Adyen payment terminal
 
-For details on how to aet up Adyen payment terminal, visit the [payment terminal setup section](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3#pos-payment-terminal) on the Adyen connector page.
+For information about how to set up an Adyen payment terminal, see the "POS payment terminal" section in [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3#pos-payment-terminal).
 
-### Epson or Star Micronics receipt printer with cash drawer
+### Epson or Star Micronics receipt printer and a cash drawer
 
 #### Epson prerequisite
 
-If your printer supports Epson ePOS-Print, refer to Epson's product manuals for directions on how to access the Epson Printers Configuration Website and enable "ePOS-Print". When ePOS-Print is configured, the printer will print a chit that shows its IP address after a power cycle. 
+If your printer supports Epson ePOS-Print, see Epson's product manuals for information about how to access the Epson Printers Configuration Website and enable ePOS-Print. When ePOS-Print is configured, the printer will print a chit that shows its IP address after a power cycle.
 
-#### Star Micronics prerequisite 
+#### Star Micronics prerequisite
 
-Network-enabled Star Micronics printers that support ethernet can be configured to use network protocols using the **Star Micronics Printer Utility**. Refer to documentation provided by Star Micronics for details on setting their devices up to support network printing. When the device is configured correctly, the IP address for the printer can be obtained through the UI for the printer utility. 
-  
-#### Set up the hardware profile
+Network-enabled Star Micronics printers that support Ethernet can be configured to use network protocols through the Star Micronics Printer Utility. For information about how to set up Star Micronics devices to support network printing, see the documentation that is provided by Star Micronics. When a device is correctly configured, the IP address of the printer can be obtained through the user interface (UI) of the printer utility.
+
+#### Set up a hardware profile
 
 1. In Dynamics 365 Commerce, search for **Hardware profiles**.
-2. Click **New**.
-3. Assign a hardware profile number, then provide a description. 
-4. In the device type fasttabs, set up the following:
+2. Select **New**.
+3. Assign a hardware profile number, and then enter a description.
+4. On the device type FastTabs, set up the following device types.
 
-| Device | Type | Device name | Additional details |
-| --- | --- | --- | ---|
-| Printer | Network | **Epson** or **Star** (case sensitive) | Assign a printing profile. |
-| Cash drawer | Network | **Epson** or **Star** (case sensitive)| Set **Use shared shift** to **Yes** if the cash drawer will be shared among different POS devices. |
+    | Device | Type | Device name | Additional details |
+    |---|---|---|---|
+    | Printer | Network | **Epson** or **Star** | The device name is case-sensitive. Assign a printing profile. |
+    | Cash drawer | Network | **Epson** or **Star** | The device name is case-sensitive. Set the **Use shared shift** option to **Yes** if the cash drawer will be shared by multiple POS devices. |
 
-5. Click **Save**.
- 
-#### Modern POS for Windows or Android clients with built-in hardware station logic
+5. Select **Save**.
+
+#### Set up Modern POS for Windows or Modern POS for Android clients that have built-in hardware station logic
 
 1. In Dynamics 365 Commerce, search for **Registers**.
-2. Select a register by clicking the register number, and then click **Edit**.
-3. Assign the previously created hardware profile to the register that will be using a dedicated payment terminal. The device mapped to this register must be use either the Modern POS for Windows or Android applications.
-4. Click **Save**.
-5. In the ribbon, click **Registers** > **Configure IP addresses**.
-6. Select the printer fasttab and enter the IP address for the printer. Leave the port number blank.
-7. Select the cash drawer fasttab and enter the IP address for the printer. Leave the port number blank.
-8. Click **Save**.
+2. Select a register by selecting the register number, and then select **Edit**.
+3. Assign the hardware profile that you just created to the register that should use a dedicated payment terminal. The device that is mapped to this register must use either the Modern POS for Windows application or the Modern POS for Android application.
+4. Select **Save**.
+5. On the Action Pane, on the **Registers** tab, select **Configure IP addresses**.
+6. On the printer FastTab, enter the IP address of the printer. Leave the field for the port number blank.
+7. On the cash drawer FastTab, enter the IP address of the printer. Leave the field for the port number blank.
+8. Select **Save**.
 9. Search for **All stores**.
-10. Select a store by clicking on its **Retail Channel Id**.
-11. Click **Edit**.
-12. Scroll down to the **Hardware stations** fasttab and click to expand.
-13. Click **Add**.
-14. Set **Hardware station type** to **Dedicated**.
-15. Provide a description. 
-16. Do not specify a hardware profile or any other properties. 
-17. Click **Save**.
-18. Search for **Distribution schedules**.
-19. Select distribution schedule **1090** and click **Run now**.
-20. Select distribution schedule **1070** and click **Run now**.
+10. Select a store by selecting its **Retail Channel Id** value, and then select **Edit**.
+11. On the **Hardware stations** FastTab, select **Add**.
+12. Set the **Hardware station type** field to **Dedicated**.
+13. Enter a description, but don't specify a hardware profile or set any other values for this hardware station.
+14. Select **Save**.
+15. Search for **Distribution schedules**.
+16. Select distribution schedule **1090**, and then select **Run now**.
+17. Select distribution schedule **1070**, and then select **Run now**.
 
- 
-If you are using Modern POS for iOS or Cloud, which do not have built-in hardware station logic, do the following:
+The Modern POS for iOS and Modern POS for Cloud applications don't have built-in hardware station logic. If you're using either of these applications, follow these steps.
 
 1. In Dynamics 365 Commerce, search for **All stores**.
-2. Select a store by clicking the **Retail Channel Id**.
-3. Click **Edit**.
-4. Scroll down to the **Hardware stations** fasttab and click to expand.
-5. Click **Add**.
-6. Set **Hardware station type** to **Shared**.
-7. Provide a description. This hardware station may be shared among POS clients, including those with built-in hardware station logic. 
-8. Assign the hardware profile for network peripherals to this hardware station using the dropdown.
-9. Click **Save**.
-9. With the hardware station for receipt printer and cash drawer selected, click **Configure IP addresses**.
-10. Select the printer fasttab and enter the IP address for the printer. Leave the port number blank.
-11. Select the cash drawer fasttab and enter the IP address for the printer. Leave the port number blank.
+2. Select a store by selecting its **Retail Channel Id** value, and then select **Edit**.
+3. On the **Hardware stations** FastTab, select **Add**.
+4. Set the **Hardware station type** field to **Shared**.
+5. Enter a description. This hardware station can be shared by multiple POS clients, including POS clients that have built-in hardware station logic.
+6. In the **Hardware profile** field, use the drop-down arrow to assign the hardware profile for network peripherals to this hardware station.
+7. Select **Save**.
+8. While the hardware station for the receipt printer and cash drawer is still selected, select **Configure IP addresses**.
+9. On the printer FastTab, enter the IP address of the printer. Leave the field for the port number blank.
+10. On the cash drawer FastTab, enter the IP address of the printer. Leave the field for the port number blank.
 
-> [!NOTE]
-> For full instructions related to setting up shared hardware stations, visit the topic [Configure and install Retail hardware station] (https://docs.microsoft.com/en-us/dynamics365/commerce/retail-hardware-station-configuration-installation).
+    > [!NOTE]
+    > For detailed information about how to set up shared hardware stations, see [Configure and install Retail hardware station](https://docs.microsoft.com/dynamics365/commerce/retail-hardware-station-configuration-installation).
 
-12. Click **Save**
-13. Search for **Distribution schedules**.
-14. Select distribution schedule **1090** and click **Run now**.
-15. Select distribution schedule **1070** and click **Run now**.
-
+11. Select **Save**
+12. Search for **Distribution schedules**.
+13. Select distribution schedule **1090**, and then select **Run now**.
+14. Select distribution schedule **1070**, and then select **Run now**.
 
 ### Sharing network peripherals
 
-Network receipt printers and cash drawers may be shared among POS devices. Sharing can be accomplished by using a shared hardware station to broker the connection to the devices. Devices may also be shared by configuring the same devices directly on the register properties when Modern POS for Windows or Android are used. 
+Network receipt printers and cash drawers can be shared by multiple POS devices. To share them, you can use a shared hardware station to broker the connection to the devices. Alternatively, if you're using Modern POS for Windows or Modern POS for Android, you can configure the same devices directly in the register properties.
 
-Payment terminals may only be shared when a shared hardware station is deployed to broker the connection to the payment terminal. Setting the same payment terminal IP address directly at the register level in order to share the payment terminal is not supported and will cause issues when individual POS clients attempt to lock and claim the device. 
-
+Payment terminals can be shared only if a shared hardware station is deployed to broker the connection to the payment terminal. You can't share a payment terminal by setting the same payment terminal IP address directly at the register level. If you try to use this approach, issues will occur when individual POS clients try to lock and claim the device.
 
 ## Related articles
 
-[Set up POS hybrid app on Android and iOS](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp)
-[Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3)
-[Dedicated payment terminal with prompt for printer and cash drawer](https://go.microsoft.com/fwlink/?linkid=2129966)
+- [Set up POS hybrid app on Android and iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp)
+- [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3)
+- [Dedicated payment terminals and prompts for a printer and cash drawer](https://go.microsoft.com/fwlink/?linkid=2129966)
