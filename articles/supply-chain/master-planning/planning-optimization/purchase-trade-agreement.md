@@ -37,7 +37,7 @@ This topic describes how Planning Optimization can find the vendor and/or lead t
 
 ## Enable the purchase trade agreements for Planning Optimization feature
 
-Before you can use this feature, it must be enabled on on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature status and enable it if needed. Here, the feature is listed as:
+Before you can use this feature, it must be enabled on your system. Administrators can use the [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature status and enable it if needed. Here, the feature is listed as:
 
 - **Module** - *Master planning*
 - **Feature name** - *Purchase trade agreements for Planning Optimization*
@@ -60,7 +60,7 @@ Once your system is prepared as described previously, you should check to make s
 
 1. Expand the **Purchase** FastTab and make sure no **Vendor** is assigned.
 
-1. On the Action Pane, open the **Plan** tab and, in the **Coverage** group, select **Item coverage** to open the **Item coverage** page for your selected product. Check the following:
+1. On the Action Pane, open the **Plan** tab and, in the **Coverage** group, select **Item coverage** to open the **Item coverage** page for your selected product. Check the following settings:
 
     - On the **General** tab, you are able to set up vendor overrides. You should disable vendor overrides if you want to allow Planning Optimization to use purchase trade agreements to select a vendor. To prevent vendor overrides, clear the **Use specific setting** check box.
     - On the **Lead time** tab, you are able to set up lead-time overrides. You should disable these if you want to allow Planning Optimization to use purchase trade agreements to select lead times. To prevent lead-time overrides, clear the check box for each type of lead time that you want to select using purchase trade agreements (**Purchase**, **Production**, and/or **Transfer**).
