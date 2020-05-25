@@ -67,11 +67,10 @@ Themes can be used to remove or change the order of buy box product properties a
 
 ## Buy box module settings
 
-The following buy box module settings can be configured at **Site Settings \> Extensions**.
+The following buy box module settings can be configured at **Site Settings \> Extensions**:
 
 - **Cart line quantity limit** – This property is used to specify the maximum number of each item that can be added to the cart. For example, a retailer might decide that only 10 of each product can be sold in a single transaction.
-
-- **Inventory** – See [Apply inventory settings](inventory-settings.md) for details on applying inventory settings.
+- **Inventory** – For information about how to apply inventory settings, see [Apply inventory settings](inventory-settings.md).
 
 ## Commerce Scale Unit interaction
 
