@@ -41,7 +41,7 @@ To control whether and how the quantities that are reported as finished on the l
 1. On the **Report as finished** tab, set the **Update finished report on-line** field to one of the following values:
 
     - **No** – No quantity will be added to inventory when quantities are reported on the last operation. The status of the production order will never change.
-    - **Status + Quantity** – The status of the production order will change to reported as finished, and the quantity will be reported as finished to inventory.
+    - **Status + Quantity** – The status of the production order will change to *Reported as finished*, and the quantity will be reported as finished to inventory.
     - **Quantity** – The quantity will be reported as finished to inventory, but the status of the production order will never change.
     - **Status** – Only the status of the production order will change. No quantities will be added to inventory when quantities are reported on the last operation.
 
