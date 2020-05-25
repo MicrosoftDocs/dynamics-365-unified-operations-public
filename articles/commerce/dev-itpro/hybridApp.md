@@ -59,7 +59,7 @@ After you've installed Xamarin, you must update it to the latest stable version 
 
 ### Build the Android Retail hybrid app
 
-1. When installation is complete, launch Visual Studio and sign in with your Microsoft account (this is the same account that you use with Windows). Check for Xamarin updates by clicking **Tools > Options > Xamarin** or **Tools > Options > Xamarin > Other**. Here you’ll find a **Check Now** link. If you do not see an option for Xamarin in **Tools > Options**, review your installation, or try restarting Visual Studio. You can also search for Xamarin in the **Options** dialog box. If needed, download and install the latest version.
+1. When installation is complete, launch Visual Studio and sign in with your Microsoft account (this is the same account that you use with Windows). Check for Xamarin updates by clicking **Tools > Options > Xamarin** or **Tools > Options > Xamarin > Other**. Here you'll find a **Check Now** link. If you do not see an option for Xamarin in **Tools > Options**, review your installation, or try restarting Visual Studio. You can also search for Xamarin in the **Options** dialog box. If needed, download and install the latest version.
       
 2.  In the Retail SDK folder, open SampleExtensions\HybridApp\Android\solution. Build and deploy using the emulator and verify that everything appears as it should.
   
@@ -88,13 +88,13 @@ For more detailed steps on installing Xamarin on iOS, refer to [Xamarin.iOS inst
   1.  In the Retail SDK folder, open SampleExtensions\HybridApp\iOS\solution.
       After connecting to the Mac and building the application in Visual Studio, select the iOS device type and deploy the app on the selected device.
       
-         ![POS iOS app VS setting for deployment](./media/iOSSetting.png)
+       ![POS iOS app VS setting for deployment](./media/iOSSetting.png)
       
   2.  Using the Emulator, go to **Settings > RetailMPOS**. Enter the Commerce Scale Unit URL.
       
-         ![POS iOS app setting](./media/iOSApp.png)
+       ![POS iOS app setting](./media/iOSApp.png)
       
-         ![POS iOS app setting for RS URL](./media/iOSRSURL.png)
+       ![POS iOS app setting for RS URL](./media/iOSRSURL.png)
       
   3.  Launch the MPOS app. You should be able to sign in and activate the device.
   
@@ -108,8 +108,8 @@ Out of the box, the hybrid Android app supports using payment terminals and rece
 | Device | Description |
 | --- | --- |
 | Payment terminals | Any supported by the [Adyen Payment Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api) through the Dynamics 365 Payment Connector for Adyen. |
-| Receipt printer | Network enabled Epson printers which support the Epson SOAP HTTP interface. Network enabled Star Micronics printers |
-| Cash drawer | Introduced in Commerce version 10.0.8: Cash drawers connected to network enabled printers via d/k port. |
+| Receipt printer | Network-enabled Epson printers that support the Epson SOAP HTTP interface.<p>Network-enabled Star Micronics printers.</p> |
+| Cash drawer | Introduced in Dynamics 365 Commerce version 10.0.8: Cash drawers that are connected to network-enabled printers via the drawer kick (d/k) port. |
 
 Support for other payment processors and peripheral devices can be implemented by ISVs through the Payments and Hardware SDKs. 
 
