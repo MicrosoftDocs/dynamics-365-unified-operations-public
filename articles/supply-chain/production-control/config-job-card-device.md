@@ -78,10 +78,10 @@ See the following sections for details about each of the settings and FastTabs p
 
 The **General** FastTab lets you configure each of the various options available for the job card device. The following settings are available here:
 
-- **Report quantity at clock-out** - 
-- **Lock employee** - 
+- **Report quantity at clock-out** - When this option is selected the user of the job card device will be prompted for reporting feedback on a job in progress when clocking out. If the option is not selected the user will not be prompted to provide feedback on jobs in progress. 
+- **Lock employee** - When this option is selected, the job card device page will not return to the log-in page when the user of the job card device starts a job. When this option is not selected, the job card device page will always return to the log-in page when the user starts a job. 
 - **Barcode scanner** - When this option is selected a field for the identification of a production job is shown in the job card device screen. If the users s
-- **Use the actual time of registration** - 
+- **Use the actual time of registration** - Use this option to specify if you want to use the time the worker logs in to the device or the actual time where the worker is making a registration in the job card device. 
 - **Single worker** - Select this option to indicate that only one worker is using the job card device. When this option is selected the device will not return to the log-in screen when the user starts a job from the device. 
 - **Allow workers to set personal filters** - Select this option to allow the user of the job card device to apply a filter on the assigned jobs available on the device. The user can select between three filter criteria **Production unit**, **Resource group** and **Resource**. Only jobs that are scheduled on resources matching the selected filter criteria will be shown on the device.
 - **Allow locking the touchscreen** - Select this option to lock the job card device touchscreen for sanitization. When enabled, a button called "Lock screen for sanitizing" is added to the device log-in page. When a user selects this button, the touchscreen temporarily locks to prevent unintended input and a countdown timer is shown. The user can now safely clean the device and the screen. When the countdown completes, the touchscreen automatically unlocks again.
