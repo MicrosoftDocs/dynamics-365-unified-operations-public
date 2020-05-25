@@ -54,10 +54,10 @@ The cart module has a **Heading** property that can be set to values such as **S
 
 ## Module properties
 
-The following cart module settings can be configured at **Site Settings \> Extensions**.
+The following cart module settings can be configured at **Site Settings \> Extensions**:
 
 - **Maximum quantity** – This property is used to specify the maximum number of each item that can be added to the cart. For example, a retailer might decide that only 10 of each product can be sold in a single transaction.
-- **Inventory** – See [Apply inventory settings](inventory-settings.md) for details on applying inventory settings.
+- **Inventory** – For information about how to apply inventory settings, see [Apply inventory settings](inventory-settings.md).
 - **Back to shopping** – This property is used to specify the route for the **Back to shopping** link. The route can be configured at the site level, allowing retailers to take the customer back to the home page or any other page on the site.
 
 ## Commerce Scale Unit interaction
