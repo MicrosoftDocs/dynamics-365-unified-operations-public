@@ -5,7 +5,7 @@ title: Master planning with purchase trade agreements
 description: This topic describes how Planning Optimization can find the vendor and/or lead time for a planned order based on the best price or lead time found in purchase trade agreements.
 author: ChristianRytt
 manager: tfehr
-ms.date: 12/07/2020
+ms.date: 05/29/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,7 +25,7 @@ ms.assetid:
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
-ms.search.validFrom: 2020-5-12
+ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
 
 ---
