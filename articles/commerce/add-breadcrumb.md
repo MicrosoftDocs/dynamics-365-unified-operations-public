@@ -37,48 +37,46 @@ This topic covers breadcrumb modules and describes how to add them to site pages
 
 ## Overview
 
-Breadcrumb modules are used to provide secondary navigation on site pages, and are typically displayed on the top of a page below the header. Breadcrumb modules can be added to any page, but are most commonly used on product details pages (PDPs) to show the product category hierarchy and provide a quick way to navigate around a site. A breadcrumb module can also be used to show a "Back to results" link when a user navigates to a PDP from a search or list page, which helps the user quickly return to their filtered list page to continue shopping.
+Breadcrumb modules are used to provide secondary navigation on site pages. They are typically shown at the top of a page, below the header. Although breadcrumb modules can be added to any page, they are most often used on product details pages (PDPs), to show the product category hierarchy and provide a quick way to move around a site. A breadcrumb module can also be used to show a "Back to results" link when users open a PDP from a search or list page. In this way, users can quickly return to their filtered list page to continue shopping.
 
-On pages that have product category context such as PDP and category pages, breadcrumb modules display the category hierarchy. If a page does not have category context, the breadcrumb it will default to displaying **&lt;Site root&gt; / &lt;Current page&gt;**. The breadcrumb module can also be manually configured on other types of site pages to display links to specific pages within the site.
+On pages that have product category context, such as PDPs and category pages, breadcrumb modules show the category hierarchy. On pages that don't have category context, breadcrumb modules show **&lt;Site root&gt; / &lt;Current page&gt;** by default. Breadcrumb modules can also be manually configured on other types of site pages to show links to specific pages on the site.
 
-The following image shows an example of a breadcrumb displaying the category hierarchy on a product details page.
+The following image shows an example of a breadcrumb module that shows the category hierarchy on a PDP.
 
 ![Example of a breadcrumb module](./media/ecommerce-breadcrumb.PNG)
 
 ## Breadcrumb module settings
 
-The module relies on the **Breadcrumb display type on PDP** setting, which is defined in site builder under **Site Settings \> Extensions**. The feature has three possible properties.
+The breadcrumb module relies on the **Breadcrumb display type on PDP** setting, which is defined at **Site Settings \> Extensions** in site builder. This setting has three possible properties:
 
-**Show category hierarchy** - When this property is selected, a breadcrumb will show the full category hierarchy of the viewed product on the PDP.
-
-**Show back to results** - When this property is selected, a breadcrumb will show a "Back to results" link on a PDP if a user navigates to the PDP from a module that allows it. This functionality is available when a user navigates from category, search, list, and recommendation lists pages. To support this scenario, product collection and search results modules have a property called **Allow back to results on PDP** that provides the flexibility to define which scenarios should support the "back to results" functionality on the PDP. For example, when **Show back to results** is selected and the search page search results module has **Allow back to results on PDP** property selected, a "Back to results" link will be displayed when a user navigates from the search page to a PDP.
-
-**Show category hierarchy and back to results** - This setting is a combination of the above two. When this property is selected, breadcrumb will show both the full category hierarchy and a "Back to results" link (if configured) on a PDP. 
+- **Show category hierarchy** – When this property is selected, the breadcrumb module will show the full category hierarchy of the product that is viewed on the PDP.
+- **Show back to results** – When this property is selected, the breadcrumb module will show a "Back to results" link on a PDP if the user opened the PDP from a module that allows it. This functionality is available when users navigate from category, search, list, and recommendation lists pages. To support this scenario, product collection and search results modules have a property that is named **Allow back to results on PDP**. This property gives you the flexibility to define which scenarios should support the "Back to results" link functionality on the PDP. For example, when **Show back to results** is selected for the **Breadcrumb display type on PDP** setting of the breadcrumb module, and the **Allow back to results on PDP** property is selected for the search page search results module, a "Back to results" link will be shown when users navigate from the search page to a PDP.
+- **Show category hierarchy and back to results** – This property is a combination of the previous two. When this property is selected, the breadcrumb module will show both the full category hierarchy and a "Back to results" link (if it's configured) on a PDP.
 
 ## Breadcrumb module properties
 
-| Property name  | Values | Description |
-|----------------|--------|-------------|
-| Root          | Text, Link| This optional property specifies link text and a link target for the breadcrumb site root. If not configured, no root will be defined.|
-| Breadcrumb link  | Link | This optional property specifies links for a manually configured breadcrumb, if needed. Links appear in the order they are listed.|
+| Property name | Values | Description |
+|---------------|--------|-------------|
+| Root | Text or link| This optional property specifies link text and a link target for the breadcrumb site root. If this property isn't configured, no root will be defined. |
+| Breadcrumb link | Link | This optional property specifies links for a manually configured breadcrumb, if these links are required. Links appear in the order that they are listed in. |
 
 ## Add a breadcrumb module to a new page
 
 To add a breadcrumb module to a PDP and set the required properties, follow these steps.
 
-1. Go to **Site Settings /> Extensions** and under **Breadcrumb display type on PDP**, select **Show category hierarchy** from the drop down menu.
+1. Go to **Site Settings /> Extensions**, and then, for the **Breadcrumb display type on PDP** setting, select **Show category hierarchy**.
 1. Go to **Templates**, and select the PDP template.
 1. In the **Container** slot that contains the buy box module, select the ellipsis (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, select the **Breadcrumb** module, and then select **OK**.
 1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.
-1. Go to **Pages** and open a PDP that uses the PDP template. If a PDP doesn't yet exist, create a new one. 
+1. Go to **Pages**, and open a PDP that uses the PDP template. If a PDP doesn't yet exist, create one.
 1. In the **Container** slot that contains the buy box module, select the ellipsis (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, select the **Breadcrumb** module, and then select **OK**.
-1. In the properties pane of the **Breadcrumb** slot, select **Link text** under **Root**.
-1. In the **Link text** dialog box, enter "Home", and then select **+Add a link** under **Link target**.
-1. In the **Add a link** dialog box, select a link for the breadcrumb root, and then select **OK**. 
+1. In the properties pane of the **Breadcrumb** slot, under **Root**, select **Link text**.
+1. In the **Link text** dialog box, enter **Home**, and then, under **Link target**, select **Add a link**.
+1. In the **Add a link** dialog box, select a link for the breadcrumb root, and then select **OK**.
 1. Select **Save**, and then select **Preview** to preview the page.
-1. Select **Finish editing** to check in the template, and then select **Publish** to publish it. 
+1. Select **Finish editing** to check in the template, and then select **Publish** to publish it.
 
 ## Additional resources
 
@@ -89,4 +87,3 @@ To add a breadcrumb module to a PDP and set the required properties, follow thes
 [Product collection](product-collection-module-overview.md)
 
 [Buy box](add-buy-box.md)
-
