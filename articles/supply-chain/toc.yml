@@ -1989,7 +1989,7 @@
             href: production-control/release-production-orders.md
           - name: Report production orders as finished
             href: production-control/report-production-orders-as-finished.md
-          - name: Report as finished to a license plate controlled location 
+          - name: Report as finished from the job card device 
             href: production-control/report-finished-job-device.md        
           - name: Reverse the production order status
             href: production-control/reverse-production-order-status.md
