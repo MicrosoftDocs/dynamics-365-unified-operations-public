@@ -2,7 +2,7 @@
 # required metadata
 
 title: Entity modeling
-description: Description goes here.
+description: This topic explains relational modelling concepts using virtual entities for Finance and Operations entities.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 05/20/2020
@@ -31,13 +31,15 @@ ms.dyn365.ops.version: 10.0.12
 
 [!include[banner](../includes/banner.md)]
 
+Building an app requires capabilties to perform relational modeling between entities that are being used in the app. In the context of virtual entities, there will be scenarios where virtual entities and native entities in CDS must work together to enable the desired user experience. This topic explains concepts of relational modelling that can be implemented using virtual entities for Finance and Operations.
+
 ## Generating virtual entities
 
 By default, virtual entities for Finance and Operations apps don't exist in Common Data Service. A user must query the catalog entity to view the entities that are available in the linked instance of Finance and Operations. From the catalog, the user can select one or more entities, and then request that Common Data Service generate the virtual entities. This procedure is explained in later sections.
 
 ## Entity fields
 
-When a virtual entity is generated for a Finance and Operations entity, the system tries to create each field in the Finance and Operations entity in the corresponding virtual entity in Common Data Service. In an ideal case, the total number of fields is the same in both entities, unless there is a mismatch in supported data types between Finance and Operations and Common Data Service, as explained later in this section. For data types that are supported, the field properties in Common Data Service are set based on the properties in Finance and Operations.
+When a virtual entity is generated for a Finance and Operations entity, the system tries to create each field in the Finance and Operations entity in the corresponding virtual entity in Common Data Service. In an ideal case, the total number of fields will be the same in both entities, unless there is a mismatch in supported data types between Finance and Operations and Common Data Service. For data types that are supported, the field properties in Common Data Service are set based on the properties in Finance and Operations.
 
 This rest of this section describes supported and unsupported data types. For more information about fields in Common Data Service, see [Fields overview](https://docs.microsoft.com/powerapps/maker/common-data-service/fields-overview).
 
@@ -46,9 +48,9 @@ This rest of this section describes supported and unsupported data types. For mo
 | Real                                | Decimal<p>For information about the possible mismatch, see the next table.</p> |
 | Long                                | Decimal, where the precision equals 0 (zero) |
 | Int                                 | Integer |
-| String (non-memo) String (memo)     | String – single line of text String – multiple lines of text |
-| UtcDateTime                         | DateTime - DateTimeFormat.DateAndTime, DateTimeBehavior.TimeZoneIndependent<p>An empty date (January 1, 1900) in Finance and Operations is surfaced as a null value in Common Data Service.</p> |
-| Date                                | DateTime - DateTimeFormat.DateOnly, DateTimeBehavior.TimeZoneIndependent<p>An empty date (January 1, 1900) in Finance and Operations is surfaced as an empty value in Common Data Service.</p> |
+| String (non-memo), String (memo)    | String – single line of text, String – multiple lines of text |
+| UtcDateTime                         | DateTime (DateTimeFormat.DateAndTime, DateTimeBehavior.TimeZoneIndependent)<p>An empty date (January 1, 1900) in Finance and Operations is surfaced as a null value in Common Data Service.</p> |
+| Date                                | DateTime - (DateTimeFormat.DateOnly, DateTimeBehavior.TimeZoneIndependent)<p>An empty date (January 1, 1900) in Finance and Operations is surfaced as an empty value in Common Data Service.</p> |
 | Enum                                | Picklist<p>Finance and Operations enumerations (enums) are generated as global OptionSets in Common Data Service. Matching between the systems is done by using the **External Name** property of values. Enum integer values in Common Data Service aren't guaranteed to be stable between the systems. Therefore, you should not rely on them, especially in the case of extensible enums in Finance and Operations, because these enums don't have a stable ID either. OptionSet metadata is updated when an entity that uses the OptionSet is updated. |
 
 Fields of the *real* and *long* data types in Finance and Operations are modeled as the *decimal* data type in Common Data Service. Because of the mismatch in precision and scale between the two data types, the following behavior must be considered.
@@ -93,7 +95,7 @@ In Common Data Service, each entity must have a primary field. This field must b
 
 Based on this use of the primary field in Common Data Service, the primary field for a virtual entity for Finance and Operations is designed to use the entity key of the corresponding entity in Finance and Operations.
 
-Because the primary field in Common Data Service is expected to have only one field of the string type, whereas the entity key in Finance and Operations can have multiple fields of various data types, the entity key fields are converted to strings. The strings are concatenated and separated by a pipe (\|), to a maximum length of 255. Any value that exceeds 255 is truncated. This virtual entity field that represents the primary field is named **mserp\_primaryfield**.
+Because the primary field in Common Data Service is expected to have only one field of the string type, whereas the entity key in Finance and Operations can have multiple fields of various data types, the entity key fields are converted to strings. The strings are concatenated and separated by a pipe (\|), to a maximum length of 255 characters. Any value that exceeds 255 is truncated. This virtual entity field that represents the primary field is named **mserp\_primaryfield**.
 
 ## Relations
 
@@ -203,7 +205,7 @@ The field groups are used to fill in additional fields for the Finance and Opera
 
 ## OData actions
 
-OData actions in the Finance and Operations entities are made available as software development kit (SDK) messages in Common Data Service. For more information about SDK messages and what they enable in Common Data Service, see here.
+OData actions in the Finance and Operations entities are made available as custom actions in Common Data Service. For more information about custom actions and what they enable in Common Data Service, see [Custom actions](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/custom-actions).
 
 Input and output parameters of the following types are supported. If an input or output parameter is of a different type, the OData action doesn't appear as the SDK message in Common Data Service.
 
@@ -228,7 +230,7 @@ Any runtime labels are returned in the language of the current user context. In 
 
 ## Error handling
 
-Finance and Operations create, read, update, and delete (CRUD) business logic on entities and backing tables is run when it's called through the virtual entity in Common Data Service. If any exception is thrown on the Finance and Operations side, the last message in the error log is returned to Common Data Service and is thrown as an InvalidPluginExecutionException exception that contains the info log message from Finance and Operations. Because the Finance and Operations code runs in the context of the user, the language of the error message is based on the language that is specified on the UserInfo record in Finance and Operations. If any messages that are written to the info log in Finance and Operations don't result in an exception, they aren't shown in Common Data Service.
+Finance and Operations create, read, update, and delete (CRUD) business logic on entities and backing tables is run when it's called through the virtual entity in Common Data Service. If any exception is thrown on the Finance and Operations side, the last message in the error log is returned to Common Data Service and is thrown as an InvalidPluginExecutionException exception that contains the message from Finance and Operations. Because the Finance and Operations code runs in the context of the user, the language of the error message is based on the language that is specified on the UserInfo record in Finance and Operations. If any messages that are written to the info log in Finance and Operations don't result in an exception, they aren't shown in Common Data Service.
 
 ## Calculated/unmapped fields
 
