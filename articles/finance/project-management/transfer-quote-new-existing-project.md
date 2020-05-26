@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Transfer quotation to a new or existing project
-description: This article describes how to transfer a quotation in the "Created" status, to a new or existing project.
-author: RadhikaRS
+title: Transfer a quotation to a project
+description: This topic provides information about how to transfer a quotation to a new or existing project.
+author: kfend
 manager: AnnBe
-ms.date: 05/08/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,14 +32,8 @@ ms.search.validFrom: 2019-01-15
 
 [!include [banner](../includes/banner.md)]
 
-When a project quotation has a status of **Confirmed**, you can transfer some or all the lines of the  quotation to a new or existing project, by using the Transfer to project wizard. 
-
-To start the wizard, complete the following steps.
+When a project quotation has a status of **Confirmed**, you can transfer some or all the quotation lines to a new or existing project by using the **Transfer to project** wizard. 
 
 1. Go to **Project management and accounting** > **Quotations** > **Project quotations**.
-
-2. Select the quotation you want to transfer from.
-
-3. On the **Follow up** tab, in the **Modify** group, select **Transfer to project**.
-
-4. Follow the **Transfer quotation to project** wizard to associate the quotation with a project and to transfer the quotation transactions to a project.
+2. Select the quotation you want to transfer and on the **Follow up** tab, in the **Modify** group, select **Transfer to project**.
+3. Follow the **Transfer quotation to project** wizard to associate and transfer the quotation with a project.
