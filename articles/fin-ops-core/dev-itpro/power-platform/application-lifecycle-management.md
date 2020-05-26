@@ -2,10 +2,10 @@
 # required metadata
 
 title: Application lifecycle management
-description: This topic explains application lifecycle for solutions that use virtual entities for Finance and Operations.
+description: This topic explains the application lifecycle for solutions that use virtual entities for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 05/20/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.0
 [!include[banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-Application lifecycle for an end to end solution using Finance and Operations virtual entities will encompass both Finance and Operations as well as the Common Data Service. This topic explains this in detail.
+The application lifecycle for an end-to-end solution using Finance and Operations virtual entities will encompass both Finance and Operations as well as the Common Data Service. This topic explains this in detail.
 
 ## Solution management
 
