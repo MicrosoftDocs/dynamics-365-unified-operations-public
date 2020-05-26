@@ -5,7 +5,7 @@ title: Entity modeling
 description: This topic explains relational modelling concepts using virtual entities for Finance and Operations entities.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 05/20/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -205,7 +205,7 @@ The field groups are used to fill in additional fields for the Finance and Opera
 
 ## OData actions
 
-OData actions in the Finance and Operations entities are made available as custom actions in Common Data Service. For more information about custom actions and what they enable in Common Data Service, see [Custom actions](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/custom-actions).
+OData actions in the Finance and Operations entities are made available as custom actions in Common Data Service. For more information about custom actions and what they enable in Common Data Service, see [Custom actions](https://docs.microsoft.com/powerapps/developer/common-data-service/custom-actions).
 
 Input and output parameters of the following types are supported. If an input or output parameter is of a different type, the OData action doesn't appear as the SDK message in Common Data Service.
 
