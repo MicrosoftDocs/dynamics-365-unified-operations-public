@@ -66,7 +66,8 @@ The Data Lake Storage account will be used to store data from your Finance and O
 4. Select **Review and create**. When the deployment is complete, the new resource will be shown in the Azure portal.
 5. Copy and keep the following information from the storage account that you created:
 
-    i. In the Azure portal, select the storage account you created. Copy and save the <a name="storageaccount"></a>**storage account name**.
+    i. In the Azure portal, select the storage account you created. Copy and save the <a name="storageaccount"></a>storage account name.
+    
     ii. On the left navigation pane, select **Settings** \> **Access keys**, and copy the **Connection string** from Key 1 or Key 2.
         
 
