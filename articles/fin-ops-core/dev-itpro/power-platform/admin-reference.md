@@ -46,20 +46,20 @@ Ensure the following solutions are installed in CDS. These solutions must be ext
 -   Dynamics365Company
     -   This adds the “Company” entity, which is referenced by all Finance and Operations entities with a PrimaryCompanyContext metadata value.
 -   MicrosoftOperationsVESupport
-    -   This provides the core support for the Finance and Operations Virtual Entity feature.
+    -   This provides the core support for the Finance and Operations virtual entity feature.
 
 -   MicrosoftOperationsERPCatalog
-    -   This provides a list of available Finance and Operations entities through the mserp_financeandoperationsentity Virtual Entity.
+    -   This provides a list of available Finance and Operations entities through the mserp_financeandoperationsentity virtual entity.
 
 -   MicrosoftOperationsERPVE
-    -   This is the API-managed solution which will contain the generated Virtual Entities as they are made visible.
+    -   This is the API-managed solution which will contain the generated virtual entities as they are made visible.
 
 Alternatively, you can also import the solutions package directly as a single unit in CDS by using the [PackageDeployer
 tool](https://docs.microsoft.com/power-platform/admin/deploy-packages-using-package-deployer-windows-powershell#PD_tool).
 
 ## Authentication & Authorization
 
-After the solutions are imported in the CDS environment, both environments must be set up to connect to each other. CDS will call Finance and Operations using Service-to-Service (S2S) authentication, based upon an Azure Active Directory (AAD) application. This new AAD application represents the single instance of the CDS environment. If you have multiple pairs of CDS and Finance and Operations environments, separate AAD applications for each pair must be created to ensure connections are established between the correct pair of F&O and CDS environments. The below procedure shows the creation of the AAD application.
+After the solutions are imported in the CDS environment, both environments must be set up to connect to each other. CDS will call Finance and Operations using Service-to-Service (S2S) authentication, based upon an Azure Active Directory (AAD) application. This new AAD application represents the single instance of the CDS environment. If you have multiple pairs of CDS and Finance and Operations environments, separate AAD applications for each pair must be created to ensure connections are established between the correct pair of Finance and Operations and CDS environments. The below procedure shows the creation of the AAD application.
 
 1.  Navigate to <https://portal.azure.com> \> Azure Active Directory \> App registrations
 
@@ -85,8 +85,8 @@ After the solutions are imported in the CDS environment, both environments must 
 
     4.  Click Save. A key will be created and displayed. Copy this value for later use.
 
-The AAD application created above will be used by CDS to call Finance and Operations. As such, it must be trusted by F&O and associated with a user account with the appropriate rights in F&O. A special service user must be created in Finance and Operations with rights *only* to the virtual entity functionality, and no other rights. After completing this step, any application with the secret of the AAD application create above, will be able to call this Finance and Operations environment and access the Virtual Entity functionality.
-The next steps walks through this process in F&O.
+The AAD application created above will be used by CDS to call Finance and Operations. As such, it must be trusted by Finance and Operations and associated with a user account with the appropriate rights in Finance and Operations. A special service user must be created in Finance and Operations with rights *only* to the virtual entity functionality, and no other rights. After completing this step, any application with the secret of the AAD application create above, will be able to call this Finance and Operations environment and access the virtual entity functionality.
+The next steps walks through this process in Finance and Operations.
 
 1.  In Finance and Operations, navigate to System Administration \> Users \> Users
 
@@ -114,7 +114,7 @@ The next steps walks through this process in F&O.
 
     4.  User ID = The user ID created above
 
-The next step in the process is to tell CDS, which F&O instance to connect to. The following steps walks through this part of the process.
+The next step in the process is to tell CDS, which Finance and Operations instance to connect to. The following steps walks through this part of the process.
 
 1.  In CDS, navigate to Advanced Settings \> Administration \> Virtual Entity Data Sources
 
@@ -154,13 +154,13 @@ Due to the large number of OData enabled entities available in Finance and Opera
 
 ## Refreshing virtual entity metadata
 
-The virtual entity metadata can be force-refreshed when it is expected for the entity metadata in F&O to have changed. This can be done by selecting Refresh = Yes and saving. This will sync the latest entity definition from Finance and Operations to CDS and update the virtual entity.
+The virtual entity metadata can be force-refreshed when it is expected for the entity metadata in Finance and Operations to have changed. This can be done by selecting Refresh = Yes and saving. This will sync the latest entity definition from Finance and Operations to CDS and update the virtual entity.
 
-Referencing Virtual Entities
+Referencing virtual entities
 ----------------------------
 
-The Virtual Entities are all generated in the MicrosoftOperationsERPVE solution which is "API Managed". That means the items in the solution change as you make entities visible/hidden, but it is still a "managed" solution that you can take dependency upon. The standard ALM flow would be to just take a standard reference to a Virtual Entity from this solution with the "add existing" option
-in the ISV solution. It will then show as a missing dependency of the solution and be checked at solution import time. During import if a specified Virtual Entity does not yet exist, it would automatically be made visible without needing additional work.
+The virtual entities are all generated in the MicrosoftOperationsERPVE solution which is "API Managed". That means the items in the solution change as you make entities visible/hidden, but it is still a "managed" solution that you can take dependency upon. The standard ALM flow would be to just take a standard reference to a virtual entity from this solution with the "add existing" option
+in the ISV solution. It will then show as a missing dependency of the solution and be checked at solution import time. During import if a specified virtual entity does not yet exist, it would automatically be made visible without needing additional work.
 
 To consume virtual entities:
 
