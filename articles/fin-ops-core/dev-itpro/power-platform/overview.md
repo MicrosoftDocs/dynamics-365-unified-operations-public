@@ -2,7 +2,7 @@
 # required metadata
 
 title: Microsoft Power Platform overview
-description: Description goes here.
+description: This topic describes virtaul entities for Finance and Operations in Common Data Service
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 05/20/2020
@@ -31,6 +31,7 @@ ms.dyn365.ops.version: 10.0.0
 
 [!include[banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
+Finance and Operations is a virtual data source in Common Data Service, and enables full CRUD (create, read, update, delete) operations from Common Data Service and Microsoft Power Platform. By definition, the data for virtual entities doesn't reside in Common Data Service. Instead, it continues to reside in the application where it belongs. To enable CRUD operations on Finance and Operations entities from the Common Data Service, entities must be made available as virtual entities in Common Data Service. The allows CRUD operations to be performed, from Common Data Service and Microsoft Power Platform, on data that resides in Finance and Operations.
 
 ## Prerequisite reading
 
@@ -45,9 +46,7 @@ To understand the architecture of virtual entities for Finance and Operations, y
 
 ## Virtual entities for Finance and Operations
 
-Finance and Operations is a virtual data source in Common Data Service, and enables full CRUD (create, read, update, delete) operations from Common Data Service and Microsoft Power Platform. As the definition of virtual entities that is provided in the prerequisite reading indicates, the data for virtual entities doesn't reside in Common Data Service. Instead, it continues to reside in the application where it belongs. To enable CRUD operations on Finance and Operations entities, you make those entities available as virtual entities in Common Data Service. The CRUD operations then enable data operations to be performed, from Common Data Service and Microsoft Power Platform, on data that resides in Finance and Operations. In this way, they allow for direct interaction.
-
-All Open Data Protocol (OData) entities in Finance and Operations are available as virtual entities in Common Data Service, and therefore also in Microsoft Power Platform. Makers can now build experiences in applications such as Microsoft Dynamics 365 Sales, Dynamics 365 Marketing, and Customer Engagement alongside data directly from Finance and Operations with full CRUD capability. Power Portals can be used to build external-facing websites that enable collaboration scenarios for business processes in Finance and Operations.
+All Open Data Protocol (OData) entities in Finance and Operations are available as virtual entities in Common Data Service, and therefore also in Microsoft Power Platform. Makers can now build experiences in Dynamics 365 with data directly from Finance and Operations with full CRUD capability and without copying to CDS. Power Apps Portals can be used to build external-facing websites that enable collaboration scenarios for business processes in Finance and Operations.
 
 ## Architecture
 
@@ -59,4 +58,4 @@ During calls, there are two points of translation from Common Data Service to Fi
 
 All calls between Common Data Service and Finance and Operations as part of virtual entities are done as service-to-service (S2S) calls by using the Azure Active Directory (Azure AD) application that is specified in the configuration. The user of this application should have access *only* to the CDSVirtualEntityAdapterService web API and the Catalog entity, CDSVirtualEntityListEntity. These privileges are included in the out-of-box security role that is named CDSVirtualEntityApplication. During the S2S calls, Common Data Service provides the identity of the user in Common Data Service who is invoking the action. The CDSVirtualEntityAdapterService web API looks up the associated user in Finance and Operations and runs the query in the context of that user. Therefore, the S2S call doesn't have to have explicit access to all the Finance and Operations entities. Instead, it can rely on the privileges of the user who is invoking the action to determine data access.
 
-Power Portal can also access virtual entities. Because Power Portal authorization is based on contact records, a mapping between contact records and Finance and Operations users is maintained in the msdyn\_externalportalusermapping table in Common Data Service. This table should be editable only by highly privileged users in Common Data Service, who have the rights to control the security access of portal users to Finance and Operations virtual entities. Any Finance and Operations user who is set up for Portal access must have the CDSVirtualEntityAuthorizedPortalUser security role assigned, and can't have the System administrator or Security administrator role assigned. Regardless of the portal security setting that is applied to virtual entities, the resulting query to Finance and Operations is always run as the associated Finance and Operations user, and is subject to that user's entity and row security settings. Anonymous portal access is also supported. For information about this type of access and how it can be done, see [Power Portal reference](power-portal-reference.md). Portal is covered in a separate topic.
+Power Apps Portal can also access virtual entities. Because Power Apps Portal authorization is based on contact records, a mapping between contact records and Finance and Operations users is maintained in the msdyn\_externalportalusermapping table in Common Data Service. This table should be editable only by highly privileged users in Common Data Service, who have the rights to control the security access of portal users to Finance and Operations virtual entities. Any Finance and Operations user who is set up for Power Apps Portal access must have the CDSVirtualEntityAuthorizedPortalUser security role assigned, and can't have the System administrator or Security administrator role assigned. Regardless of the Power Apps Portal security setting that is applied to virtual entities, the resulting query to Finance and Operations is always run as the associated Finance and Operations user, and is subject to that user's entity and row security settings. Anonymous portal access is also supported. For information about this type of access and how it can be done, see [Power Apps Portal reference](power-portal-reference.md).
