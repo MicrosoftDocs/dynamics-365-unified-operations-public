@@ -31,6 +31,7 @@ ms.dyn365.ops.version:
 
 # Apply inventory settings
 
+[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 This topic covers inventory settings and describes how to apply them in Microsoft Dynamics 365 Commerce.
@@ -48,17 +49,17 @@ In Commerce, inventory thresholds and ranges can be defined for a product or a c
 In Commerce, inventory settings are defined at **Site Settings \> Extensions \> Inventory Management** in site builder. There are four inventory settings, one of which is obsolete (deprecated):
 
 - **Enable inventory check on app** – This setting turns on a product inventory check. Buy box, cart, and pick up in store modules will then check product inventory, and will allow a product to be added to the cart only if inventory is available.
-- **Inventory level based on** – This setting defines how inventory levels are calculated. The available properties are **Total Available**, **Physical Available**, and **Out of stock threshold**. In Commerce, inventory threshold and ranges can be defined for each product and category. The inventory APIs return product inventory information for both the **Total Available** property and the **Physical Available** property. The retailer decides which of the **Total Available** or **Physical Available** properties should be used to determine the inventory count and the corresponding ranges for in-stock and out-of-stock statuses.
+- **Inventory level based on** – This setting defines how inventory levels are calculated. The available values are **Total Available**, **Physical Available**, and **Out of stock threshold**. In Commerce, inventory threshold and ranges can be defined for each product and category. The inventory APIs return product inventory information for both the **Total Available** property and the **Physical Available** property. The retailer decides whether the **Total Available** or **Physical Available** value should be used to determine the inventory count and the corresponding ranges for in-stock and out-of-stock statuses.
 
-    The **Out of stock threshold** property of the **Inventory level based on** setting is an old (legacy), obsolete property. When it's selected, the inventory count is determined from the results of the **Total Available** property, but the threshold is defined by the **Out of stock threshold** numeric setting that is described later. This threshold setting applies to all products across an e-Commerce site. If inventory is below the threshold number, a product is considered out of stock. Otherwise, it's considered in stock. The capabilities of the **Out of stock threshold** property are limited, and we don't recommend that you use it in version 10.0.12 and later.
+    The **Out of stock threshold** value of the **Inventory level based on** setting is an old (legacy), obsolete value. When it's selected, the inventory count is determined from the results of the **Total Available** value, but the threshold is defined by the **Out of stock threshold** numeric setting that is described later. This threshold setting applies to all products across an e-Commerce site. If inventory is below the threshold number, a product is considered out of stock. Otherwise, it's considered in stock. The capabilities of the **Out of stock threshold** value are limited, and we don't recommend that you use it in version 10.0.12 and later.
 
-- **Inventory ranges** – This setting defines the inventory ranges that message are shown for on site modules. It's applicable only if either the **Total Available** property or the **Physical Available** property is selected for the **Inventory level based on** setting. The available properties are **All**, **Low and out of stock**, and **Out of stock**.
+- **Inventory ranges** – This setting defines the inventory ranges that message are shown for on site modules. It's applicable only if either the **Total Available** value or the **Physical Available** value is selected for the **Inventory level based on** setting. The available values are **All**, **Low and out of stock**, and **Out of stock**.
 
     - When **All** is selected, messages for all inventory ranges, from in stock ("Available" message) to out of stock ("Out of stock" message), will be shown.
     - When **Low and out of stock** is selected, messages for all inventory ranges except in stock ("Available" message) will be shown.
     - When **Out of stock** is selected, only the "Out of stock" message will be shown.
 
-- **Out of stock threshold** – This old numeric setting will take effect only if the **Out of stock threshold** property is selected for the **Inventory level based on** setting.
+- **Out of stock threshold** – This old numeric setting will take effect only if the **Out of stock threshold** value is selected for the **Inventory level based on** setting.
 
 ## Modules that use inventory settings
 
