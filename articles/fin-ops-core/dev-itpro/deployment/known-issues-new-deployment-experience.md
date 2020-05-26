@@ -55,13 +55,13 @@ The following features that have infrastructure dependencies are not yet impleme
 
 | **Feature**                 | **Description**                                           |
 |-----------------------------|-----------------------------------------------------------|
-| Commerce                      | Commerce support is now enabled with the 10.0.10 release. Please see [Payment connector package support for commerce on self-service](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/payment-connector-package) for more details          |
+| Commerce                      | Commerce support is now enabled with the 10.0.10 release. Please see [Create payment packaging for Application Explorer for self-service deployment](../../../commerce/dev-itpro/payment-connector-package.md) for more details.          |
 
 ### Features not intended to be implemented
 The following features are deprecated and will not be implemented in the modern deployment experience.
 
 | **Feature**  | **Description**                     |
 |--------------|-------------------------------------|
-| Custom fonts | Custom fonts will not be supported. Please see [Document Reporting Service in Dynamics 365 applications](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/reporting-experience-iias-environments) for more details.
+| Custom fonts | Custom fonts are not supported. Please see [Document Reporting Service in Dynamics 365 applications](../analytics/reporting-experience-iias-environments.md) for more details.
 | List of all deprecated features us here  | [Removed or deprecated features on Self-Service](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features)|
 
