@@ -5,7 +5,7 @@ title: Support for network peripherals
 description: This topic provides an overview of network peripherals that are supported in the store.
 author: rubendel
 manager: AnnBe
-ms.date: 05/20/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Support for network peripherals
 
-[!include [banner](includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the support for and setup of network peripherals in the store.
 
