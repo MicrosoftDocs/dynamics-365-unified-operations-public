@@ -66,7 +66,7 @@ The Data Lake Storage account will be used to store data from your Finance and O
 4. Select **Review and create**. When the deployment is complete, the new resource will be shown in the Azure portal.
 5. Copy and keep the following information from the storage account that you created:
 
-    i. In the Azure portal, select the storage account you created. Copy and save the **storage account name**.
+    i. In the Azure portal, select the storage account you created. Copy and save the <a name="storageaccount">**storage account name**</a>.
     ii. On the left navigation pane, select **Settings** \> **Access keys**, and copy the **Connection string** from Key 1 or Key 2.
         
 
@@ -77,7 +77,7 @@ A key vault is a secure way to share details such as storage account name to you
 1. In the Azure portal, select **Create a new resource** and then search for and select, **Key Vault**.
 2. In the **Create key vault** dialog box, in the **Location** field, select the data center where your environment is located.
 3. After the Key vault is created, select it from the list, and on the left navigation pane, select **Overview**. 
-4. Save the value in the**DNS name** field. You will need this value later.
+4. Save the value in the <a name="dnsname">**DNS name** field</a>. You will need this value later.
 5. In the left navigation pane, select **Secrets** > **Generate/Import**.
 6. In the **Create a secret** dialog box, in the **Upload options** field, select **Manual**.
 7. Enter a name for the secret, for example **storage-account-name**. Make a note of the name, because you will have to provide it later.
@@ -98,20 +98,17 @@ A key vault is a secure way to share details such as storage account name to you
 6. Select **Delegated permissions**, check **user_impersonation**, and then select**Add permissions.** 
 7. On the left navigation pane, select **Certificates & secrets**, and then select **+New client secret**. 
 8. In the **Description** field, enter a name.
-9. In the **Expires** field, select an option, and then select **Add**.
-
-> [!IMPORTANT]
-> The system will generate a secret. Immediately copy the secret to the clipboard, as it will disappear within one or two minutes. You will have to <a name="secret">provide this secret value</a> when setting up the key vault later.
+9. In the **Expires** field, select an option, and then select **Add**. The system will generate a secret. Immediately copy the secret to the clipboard, as it will disappear within one or two minutes. You will have to <a name="secret">provide this secret value</a> when setting up the key vault later.
 
 ## <a name="addsecrets"></a>Add secrets to the Key vault
 
 You are going to create three secrets in the Key vault and then add the values saved from previous steps. For each of the secrets, you will need to provide a secret name and provide the value you saved from earlier steps.
 
-| **Suggested secret Name** | **Secret value (what you saved earlier…)**                                |
+| <a name="suggest"></a>**Suggested secret Name** | **Secret value (what you saved earlier…)**                                |
 |---------------------------|---------------------------------------------------------------------------|
 | app-id                    | The ID of the application [created earlier](#appid).                             |
 | app-secret                | The [client secret](#secret) specified earlier.                                 |
-| storage-account-name      | The name of the storage account created in step (5). E.g. storageaccount1 |
+| storage-account-name      | The name of the [storage account](#storageaccount) created earlier. |
 
 You will need to complete the following steps three times, once for each secret.
 
@@ -127,7 +124,7 @@ You will notice the secret created in the list of secrets.
 
 1. In **Azure Portal**, open the Key Vault that you created earlier.
 2. On the left navigation page, select **Access policies** > **+Add Access Policy** to create a new policy. 
-3. On the **Add access policy** dialog, in the **Select principal** field, search for the name of the application you created earlier.
+3. On the **Add access policy** dialog, in the **Select principal** field, search for the [name of the application you created earlier](#appid).
 4. When you find your application in the list of principals, select the application, and then click **Select**.
 5. In the **Key permissions** and **Secret permissions** fields, select **Get** and **List**.  
 6. In the **Add access policy** dialog, select **Add**..
@@ -135,7 +132,7 @@ You will notice the secret created in the list of secrets.
 8. On the **Add access policy** dialog, in the **Select principal** field, locate and select the application, **Microsoft Dynamics ERP Microservices**, and then click **Select**. 
 
 > [!NOTE]
-> If you can't fnd **Microsoft Dynamics ERP Microservices**, see the trouble-shooting section at the end of this document.
+> If you can't fnd **Microsoft Dynamics ERP Microservices**, see the [trouble-shooting section](#troubleshooting) at the end of this document.
 
 9. In the **Key permissions**  and **Secret permissions** fields, select **Get** and **List**.  
 10. In the **Access policy** dialog, select **Add**.
@@ -144,7 +141,7 @@ You should see two applications with access to your key vault as shown below:
 
 | Application                                                   | Key Permissions | Secret permissions |
 |---------------------------------------------------------------|-----------------|--------------------|
-| Display name of the new application you created  | Get, List       | Get, List          |
+| Display name of the new [application you created](#appid)  | Get, List       | Get, List          |
 | Microsoft Dynamics ERP Microservices                          | Get, List       | Get, List          |
 
 11.  Select **Save**.
@@ -168,10 +165,10 @@ You need to grant your application permissions to read and write to the storage 
 
 |   Application to be selected     |     Role to be assigned     |
 |----------------------------------|-----------------------------|
-| Your application from step 2 (b) | Owner                       |
-| Your application from step 2 (b) | Contributor                 |
-| Your application from step 2 (b) | Storage account contributor |
-| Your application from step 2 (b) | Storage blob data owner     |
+| [Your application](#appid) you created earlier | Owner                       |
+| [Your application](#appid) you created earlier | Contributor                 |
+| [Your application](#appid) you created earlie | Storage account contributor |
+| [Your application](#appid) you created earlier | Storage blob data owner     |
 | AI builder authorization service | Storage blob data reader    |
 
 ## <a name="installaddin"></a>Install the Export to Data Lake add-in in LCS 
@@ -183,10 +180,10 @@ You need the following information before you start. Keep the information handy 
 | **Information you need for Export to Data lake add-in**   | **Where can you find it**                                                                                                                                                                                                |
 |-----------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Your environment AAD Tenant ID                            | Your Azure AD tenant ID in the Azure portal. Sign in to the **Azure portal** and open the **Azure Active Directory** service. Open the **Properties** page and copy the value in the **Directory ID** field. |
-| DNS name of your Key vault                                | This name should have been saved in the previous procedure. Enter the DNS name of your Key vault.                                                                                                               |
-| The secret that contains the name of your storage account |  If you used the suggested names for steps 23..28, enter **storage-account-name**. if not, enter the secret name you defined.                                                                                                                                                                                                                         |
-| Secret that contains the Application ID                   |  If you used the suggested names for steps 23..28, enter **app-id**. if not, enter the secret name you defined.                                                                                       |
-| Secret that contains the Application secret               |  If you used the suggested name, enter **app-secret**. If not, enter the secret name you defined.                                                                                             |
+| DNS name of your Key vault                                | This name should have been previously saved. Enter the [DNS name](#dnsname) of your Key vault.                                                                                                               |
+| The secret that contains the name of your storage account |  If you used the suggested name, enter **storage-account-name**. if not, enter the [secret name you defined](#suggest).                                                                                                                                                                                                                         |
+| Secret that contains the Application ID                   |  If you used the suggested name, enter **app-id**. if not, enter the [secret name you defined](#suggest).                                                                                       |
+| Secret that contains the Application secret               |  If you used the suggested name, enter **app-secret**. If not, enter the [secret name you defined](#suggest).                                                                                             |
 
 1.  Sign in to [LCS](https://lcs.dynamics.com) and navigate to your environment.
 2.  On the **Environment** page, select the **Environment add-ins** tab. If **Export Data Lake** appears in the list, the Data Lake add-in is already installed, and you can skip the rest of this procedure. Otherwise, complete the remaining steps.
@@ -196,7 +193,7 @@ You need the following information before you start. Keep the information handy 
 
 The system installs and configures the data lake for the environment. After installation and configuration are complete, you should see **Azure Data Lake** listed on the **Environment** page.
 
-## Trouble-shooting tips
+## <a name="troubleshooting"></a>Trouble-shooting tips
 
 ### Can’t find Microsoft Dynamics ERP Microservices or AI Builder Authorization Service
 
