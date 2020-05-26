@@ -259,14 +259,17 @@ and create new Work class for Sorting:
 
 This scenario will simulate a situation where the packed containers should be automatically sorted to different positions (pallets) after the packing station, based on the shipping carrier service. After all items from the Load are packed and sorted by address, the pallets will be moved to the baydoor.
 
-### Picking
+### Create a new sales order
 
-Create a new sales order:
-
-- Customer = US-005
-- Warehouse = 62
-- Shipping carrier = Air cargo
-- Carrier service = Air
+1. Go to **Sales and marketing > Sales orders > All sales orders**
+1. Select **New** from the Action Pane
+1. On the **Create sales order FlyOut, enter the following:
+    - **Customer account** = *US-005*
+    - **Warehouse** = *62*
+    - Select **OK** to close the form and create a new sales order
+1. Your new sales order opens. It should include a new, empty line in the **Sales order lines** table.
+    - Shipping carrier = Air cargo
+    - Carrier service = Air
 
 Add a line for item A0001, quantity 2. Reserve the order line and release to warehouse.
 
@@ -282,6 +285,8 @@ Add a line for item A0001, quantity 1. Specify Mode of delivery = Flowe-STD
 Add a second line for item A0002, quantity 1. Specify Mode of delivery = Air C-Air
 
 Reserve both lines and release to warehouse.
+
+### Picking
 
 Complete the created work using the mobile device to the pack station
 
