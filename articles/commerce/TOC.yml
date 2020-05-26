@@ -604,7 +604,7 @@
         items:
         - name:	Product recommendations overview	
           href:	product-recommendations.md	
-        - name:	Enable ADLS in a Dynamics 365 Commerce environment	
+        - name:	Enable Azure Data Lake Storage in a Dynamics 365 Commerce environment	
           href:	enable-ADLS-environment.md	
         - name:	Enable product recommendations
           href:	enable-product-recommendations.md
@@ -1048,6 +1048,10 @@
           href: localizations/emea-fra-cash-registers.md
         - name: Deployment guidelines for cash registers
           href: localizations/emea-fra-deployment.md
+      - name: Germany
+        items:
+        - name: Fiscal registration service integration sample for Germany
+          href: localizations/emea-deu-fi-sample.md
       - name: India
         items:
         - name: Goods and Services Tax (GST) integration for cash registers

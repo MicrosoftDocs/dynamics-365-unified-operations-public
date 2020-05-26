@@ -2,10 +2,10 @@
 # required metadata
 
 title: Deploy and access development environments
-description: This topic describes how to access development instances, configure on-premises development VMs, and find important configuration settings for developers and administrators.
+description: This topic describes how to access development instances, configure local development VMs, and find important configuration settings for developers and administrators.
 author: laneswenka
 manager: AnnBe
-ms.date: 02/14/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to access development instances, configure on-premises development virtual machines (VMs), and find important configurations settings for developers and administrators.
+This topic describes how to access development instances, configure local development virtual machines (VMs), and find important configurations settings for developers and administrators.
 
 ## Definitions
 
@@ -113,7 +113,7 @@ For any environments deployed **on or after Platform update 12** , there are dis
 
 After you sign in to the environment through Remote Desktop, if you want to access the local application from the browser, use the same base URL that you use to access the application from a remote computer. The previous section explains how to obtain this base URL from LCS.
 
-## VM that is running on-premises
+## VM that is running locally
 A virtual hard disk (VHD) is made available for download from LCS, so that you can set it up on a local machine. This system is intended to be accessed by a developer and is a pre-configured one-box development environment of Finance and Operations apps. The VHD is available in the Shared Asset library of LCS under the asset type **Downloadable VHD**.
 
 1. Go to the LCS main page and select **Shared asset library** or go to [Shared Asset Library](https://lcs.dynamics.com/V2/SharedAssetLibrary).

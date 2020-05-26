@@ -5,7 +5,7 @@ title: Fiscal registration service integration sample for Germany
 description: This topic provides an overview of the fiscal integration sample for Germany.
 author: josaw
 manager: annbe
-ms.date: 05/22/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -412,13 +412,14 @@ In the previous procedure, you enabled the extensions that are components of the
         ``` xml	
         <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.EFRSample" />
         <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR" />
-        <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsGermany" />
         ```
 
-    - In the **HardwareStation.Extension.config** configuration file, add the following line to the **composition** section.
+    - In the **HardwareStation.Extension.config** configuration file, add the following lines to the **composition** section.
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.HardwareStation.EFRSample" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR" />
+        <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsGermany" />
         ```
 
 2. Make the following changes in the **BuildTools\\Customization.settings** package customization configuration file:
@@ -428,13 +429,13 @@ In the previous procedure, you enabled the extensions that are components of the
         ``` xml
         <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.EFRSample.dll" />
         <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll" />
-        <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll" />
         ```
 
-    - Add the following line to include the Hardware station extension in the deployable packages.
+    - Add the following lines to include the Hardware station extensions in the deployable packages.
 
         ``` xml
-        <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.EFRSample" />
+        <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.EFRSample.dll" />
+        <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll" />
         ```
 
 3. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
