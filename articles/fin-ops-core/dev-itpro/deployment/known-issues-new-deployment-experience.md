@@ -5,7 +5,7 @@ title: Known issues with self-service deployment
 description: This topic lists known issues that you might experience when using self-service deployment.
 author: rashmansur
 manager: AnnBe
-ms.date: 09/18/2019
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -55,13 +55,13 @@ The following features that have infrastructure dependencies are not yet impleme
 
 | **Feature**                 | **Description**                                           |
 |-----------------------------|-----------------------------------------------------------|
-| Commerce                      | Commerce support is now enabled with the 10.0.10 release. Please see [Payment connector package support for commerce on self-service](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/payment-connector-package) for more details          |
+| Commerce                      | Commerce support is now enabled with the 10.0.10 release. Please see [Payment connector package support for commerce on self-service](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/payment-connector-package) for more details          |
 
 ### Features not intended to be implemented
 The following features are deprecated and will not be implemented in the modern deployment experience.
 
 | **Feature**  | **Description**                     |
 |--------------|-------------------------------------|
-| Custom fonts | Custom fonts will not be supported. Please see [Document Reporting Service in Dynamics 365 applications](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/reporting-experience-iias-environments) for more details.
-| List of all deprecated features us here  | [Removed or deprecated features on Self-Service](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features)|
+| Custom fonts | Custom fonts will not be supported. Please see [Document Reporting Service in Dynamics 365 applications](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/reporting-experience-iias-environments) for more details.
+| List of all deprecated features us here  | [Removed or deprecated features on Self-Service](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features)|
 
