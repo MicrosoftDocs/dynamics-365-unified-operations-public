@@ -5,7 +5,7 @@ title: FAQ
 description: This topic is a list of frequently asked questions about Finance and Operations virtual entities.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 05/20/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.12
 [!include[banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic is a collections of frequently asked questions on Finance and Operations virtual entities. This list will be updated as new questions come up and will be useful to share in this doc.
+This topic is a collections of frequently asked questions on Finance and Operations virtual entities. This list will be updated as new questions come up.
 
 **Do Tier 1 Finance and Operations environments or demo topologies work?**
 
