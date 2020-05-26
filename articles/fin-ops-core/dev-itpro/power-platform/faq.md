@@ -2,7 +2,7 @@
 # required metadata
 
 title: FAQ
-description: Description goes here.
+description: This topic is a list of frequently asked questions about Finance and Operations virtual entities.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 05/20/2020
@@ -27,10 +27,12 @@ ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
 ---
 
-# FAQ
+# FAQ's on Finance and Operations virtual entities
 
 [!include[banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
+
+This topic is a collections of frequently asked questions on Finance and Operations virtual entities. This list will be updated as new questions come up and will be useful to share in this doc.
 
 **Do Tier 1 Finance and Operations environments or demo topologies work?**
 
@@ -42,7 +44,7 @@ Yes, Tier 1 and DEVTEST and DEMO topologies should work.
 
 **Can a solution from an independent software vendor (ISV) take a dependency on virtual entities? What does the application lifecycle management (ALM) look like?**
 
-Yes. The virtual entities are all generated in the MicrosoftOperationsERPVE solution, which is "API-managed." In other words, the items in the solution change as you make entities visible or hidden, but the solution is still a managed solution that you can take dependency on. The standard ALM flow just takes a standard reference to a virtual entity from this solution with the "add existing" option in the ISV solution. It then appears as a missing dependency of the solution and will be checked when the solution is imported. During import, if a specified virtual entity doesn't yet exist, it's automatically made visible. No additional work is required.
+Yes. The virtual entities are all generated in the MicrosoftOperationsERPVE solution, which is "API-managed." In other words, the items in the solution change as you make entities visible or hidden, but the solution is still a managed solution that you can take dependency on. The standard ALM flow just takes a standard reference to a virtual entity from this solution with the **Add existing** option in the ISV solution. Missing dependency of the solution will be checked when the solution is imported and during import, if a specified virtual entity doesn't yet exist, the virtual entity is automatically made visible.
 
 **Which entities from Finance and Operations do users see in the catalog in Common Data Service?**
 
@@ -78,10 +80,10 @@ This approach isn't currently possible in Common Data Service.
 
 **How do I add subcomponents in the new Power Apps experience?**
 
-As in the classic Power Apps user interface (UI), you must redo the **Add Existing** operation. After the solution is selected, and Customer Groups has already been added as an entity, follow these steps.
+As in the previous Power Apps user interface (UI), you must redo the **Add Existing** operation. After the solution is selected, and Customer Groups has already been added as an entity, follow these steps.
 
 1. Select **Add existing** \> **Entity**.
-2. Select customer group, and then select **Next**.
+2. Select customer group entity, and then select **Next**.
 3. Under **Components**, select **Select components**.
 4. Select the fields, relationships, forms, and so on, that you want, and then select **Add**.
 
@@ -89,13 +91,13 @@ As in the classic Power Apps user interface (UI), you must redo the **Add Existi
 
 Yes. Here is the order of calls:
 
-1. Common Data Service sends a create or update.
+1. Common Data Service sends a create or update message.
 2. All the existing logic on the Finance and Operations entity and backing tables is invoked. This logic includes default value entry that might change values.
 3. Common Data Service sends another Retrieve (single) message to get the latest copy of the data, including any fields that default values were entered for.
 
-**Can I hit the debug on Finance and Operations when we do a create, read, update, and delete (CRUD) operation from Common Data Service? If so, which process do I have to attach?**
+**Can I debug Finance and Operations when we do a create, read, update, and delete (CRUD) operation from Common Data Service? If so, which process do I have to attach?**
 
-Yes, to debug in Finance and Operations, open Visual Studio as an admin. Usually, the Finance and Operations one box runs under w3wp.exe as a process. However, when you open Visual Studio as an admin, IISExpress.exe is automatically opened, and Finance and Operations is hosted there. You can attach to IISExpress.exe (or to w3wp.exe if not running as an admin). To set breakpoints in the virtual entity code, find the **CDSVirtualEntityAdapter** and **CDSVirtualEntityController** classes. The adapter class is the first class that is called, and it just does serialization/deserialization. It then delegates to the controller class to do the actual queries. Therefore, the controller class is usually the easiest place to put breakpoints.
+Yes, to debug in Finance and Operations, open Visual Studio as an admin. Usually, the Finance and Operations runs under w3wp.exe as a process. However, when you open Visual Studio as an admin, IISExpress.exe is automatically opened, and Finance and Operations is hosted there. You can attach to IISExpress.exe (or to w3wp.exe if not running Visual Studio as an admin). To set breakpoints in the virtual entity code, find the **CDSVirtualEntityAdapter** and **CDSVirtualEntityController** classes. The adapter class is the first class that is called, and it just does serialization/deserialization. It then delegates to the controller class to do the actual queries. Therefore, the controller class is usually the easiest place to put breakpoints.
 
 **Does the form business logic in Finance and Operations get called through virtual entities?**
 
