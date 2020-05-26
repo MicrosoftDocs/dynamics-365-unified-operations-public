@@ -5,7 +5,7 @@ title: Deploy and access development environments
 description: This topic describes how to access development instances, configure local development VMs, and find important configuration settings for developers and administrators.
 author: laneswenka
 manager: AnnBe
-ms.date: 02/14/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
