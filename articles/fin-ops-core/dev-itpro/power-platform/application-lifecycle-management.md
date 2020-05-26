@@ -2,7 +2,7 @@
 # required metadata
 
 title: Application lifecycle management
-description: Description goes here.
+description: This topic explains application lifecycle for solutions that use virtual entities for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 05/20/2020
@@ -31,6 +31,8 @@ ms.dyn365.ops.version: 10.0.0
 
 [!include[banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
+
+Application lifecycle for an end to end solution using Finance and Operations virtual entities will encompass both Finance and Operations as well as the Common Data Service. This topic explains this in detail.
 
 ## Solution management
 
@@ -70,4 +72,4 @@ The established guidelines and ALM for entity development in Finance and Operati
 
 ### Managing a Finance and Operation instance in a Common Data Service environment for virtual entities
 
-One Finance and Operations instance must be linked to a Common Data Service environment for virtual entities. The connection setup information that is required is captured in a virtual entity data source for Finance and Operations. This data source is included in the MicrosoftOperationsERPCatalog solution. For information about how to set up this data source, see a subsequent section.
+One Finance and Operations instance must be linked to a Common Data Service environment for virtual entities. The connection setup information that is required is captured in a virtual entity data source for Finance and Operations. This data source is included in the MicrosoftOperationsERPCatalog solution.
