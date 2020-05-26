@@ -39,17 +39,19 @@ To configure the export to Data Lake, you must create a storage account in your 
 
 The steps, which take place in the Azure portal, are as follows: 
 
-1. Create a Microsoft Azure Data Lake Storage Gen2 account (a storage account) in your subscription.
-2. Create an application in Azure Active Directory, get the App ID, and then generate an App secret.
-3. Create a Key vault, and create three secrets that contain the storage account name as well as the application ID and App secret.
-4. Authorize the application you created so that it can read the secrets in the Key vault.
-5. Grant Access control roles so that your application can access the storage account.
+1. [Create a Data Lake Storage (Gen2 account) in your subscription](#createsubscription)
+2. [Create a Key vault and a secret that contain the storage account](#createkeyvault)
+3. [Create an application in Azure Active Directory](#createapplication) 
+4. [Add secrets to the Key vault](#addsecrets)
+5. [Authorize the application to read secrets in the Key vault](#authorize)
+6. [Grant access control roles to applications](#grantaccess)
 
-When following steps in Azure portal, you will be instructed to save several values for subsequent steps. You will also provide some of these values to your Finance and Operations apps by using Life cycle services (LCS). You will need Administrator access to LCS in order to do this.
+    > [!NOTE]
+    > When you are working in the Azure portal, you will be instructed to save several values for subsequent steps. You will also provide some of these values to your Finance and Operations apps by using Life cycle services (LCS). You will need Administrator access to LCS in order to do this.
 
-6.  Install the **Export to Data Lake** add-in in **LCS**
+7. [Install the Export to Data Lake add-in in LCS](#installaddin)
 
-## Create a Data Lake Storage (Gen2) account in your subscription
+## <a name="createsubscription"></a>Create a Data Lake Storage (Gen2) account in your subscription
 
 The Data Lake Storage account will be used to store data from your Finance and Operations apps. To manually create a storage account, you must have administrative rights to your organization's Azure subscription. To create a storage account, complete the following steps.
 
@@ -68,7 +70,7 @@ The Data Lake Storage account will be used to store data from your Finance and O
     ii. On the left navigation pane, select **Settings** \> **Access keys**, and copy the **Connection string** from Key 1 or Key 2.
         
 
-## Create a Key vault and a secret that contains the storage account
+## <a name="createkeyvault"></a>Create a Key vault and a secret that contains the storage account
 
 A key vault is a secure way to share details such as storage account name to your Dynamics 365 Finance and Operations apps. Complete the following steps to create a key vault and a secret.
 
@@ -82,7 +84,7 @@ A key vault is a secure way to share details such as storage account name to you
 8. In the **Value** field, enter the storage account name that you obtained in the previous procedure.
 9. Select **Enabled**, and then select **Create**. The secret is created and added to Key vault.
 
-## Create an application in Azure Active Directory
+## <a name="createapplication">,/a>Create an application in Azure Active Directory
 
 1. In the Azure portal, select **Azure Active Directory**, and then select **App registrations**.
 2. Select **New registration**, and enter the following information: 
@@ -90,7 +92,7 @@ A key vault is a secure way to share details such as storage account name to you
     -  **Name:** Enter a name for the app.
     -   **Supported Account types**: Choose the appropriate option.
 
-3. After the application is created, select it and then copy and save the **Application (client) ID** at the top of the page. You will need this later.
+3. After the application is created, select it and then copy and save the <a name="appid">Application (client) ID</a> at the top of the page. You will need this later.
 4. On the left navigation pane, select **API permissions** .
 5. Select **+Add a permission**, and in the **Request API permissions** dialog, select **Azure Key vault**.
 6. Select **Delegated permissions**, check **user_impersonation**, and then select**Add permissions.** 
@@ -99,16 +101,16 @@ A key vault is a secure way to share details such as storage account name to you
 9. In the **Expires** field, select an option, and then select **Add**.
 
 > [!IMPORTANT]
-> The system will generate a secret. Immediately copy the secret to the clipboard, as it will disappear within one or two minutes. You will have to provide this secret value when setting up the key vault later.
+> The system will generate a secret. Immediately copy the secret to the clipboard, as it will disappear within one or two minutes. You will have to <a name="secret">provide this secret value</a> when setting up the key vault later.
 
-## Add secrets to the Key vault
+## <a name="addsecrets"></a>Add secrets to the Key vault
 
 You are going to create three secrets in the Key vault and then add the values saved from previous steps. For each of the secrets, you will need to provide a secret name and provide the value you saved from earlier steps.
 
 | **Suggested secret Name** | **Secret value (what you saved earlier…)**                                |
 |---------------------------|---------------------------------------------------------------------------|
-| app-id                    | The ID of the application created in step (16)                             |
-| app-secret                | The client secret specified in step (22)                                   |
+| app-id                    | The ID of the application [created earlier](#appid).                             |
+| app-secret                | The [client secret](#secret) specified earlier.                                 |
 | storage-account-name      | The name of the storage account created in step (5). E.g. storageaccount1 |
 
 You will need to complete the following steps three times, once for each secret.
@@ -121,7 +123,7 @@ You will need to complete the following steps three times, once for each secret.
 
 You will notice the secret created in the list of secrets.
 
-## Authorize the application to read secrets in the Key vault
+## <a name="authorize"></a>Authorize the application to read secrets in the Key vault
 
 1. In **Azure Portal**, open the Key Vault that you created earlier.
 2. On the left navigation page, select **Access policies** > **+Add Access Policy** to create a new policy. 
@@ -147,7 +149,7 @@ You should see two applications with access to your key vault as shown below:
 
 11.  Select **Save**.
 
-## Grant access control roles to applications 
+## <a name="grantaccess"></a>Grant access control roles to applications 
 
 You need to grant your application permissions to read and write to the storage account. These permissions are granted by using Roles in Active directory.
 
@@ -172,7 +174,7 @@ You need to grant your application permissions to read and write to the storage 
 | Your application from step 2 (b) | Storage blob data owner     |
 | AI builder authorization service | Storage blob data reader    |
 
-## Install the Export to Data Lake add-in in LCS 
+## <a name="installaddin"></a>Install the Export to Data Lake add-in in LCS 
 
 Before you can export data to your Data lake from you Finance and Operations apps, you must install the **Export to Data Lake** add-in in LCS. To complete this task, you must be an environment administrator in LCS for the environment that you want to use.
 
