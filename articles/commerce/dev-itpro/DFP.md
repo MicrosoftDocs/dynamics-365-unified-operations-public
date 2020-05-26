@@ -5,7 +5,7 @@ title: Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce
 description: This topic describes out-of-box integrations that are available between Microsoft Dynamics 365 Fraud Protection and Dynamics 365 Commerce. 
 author: rubendel
 manager: AnnBe
-ms.date: 05/19/2020 
+ms.date: 05/26/2020 
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -144,7 +144,7 @@ To set up Fraud Protection, [request a callback](https://dynamics.microsoft.com/
 
 #### Turn on Data Lake Storage Gen2 for your Commerce environment
 
-Before the data can be available in Data Lake Storage Gen2, the service must be turned on for the Commerce environment. For information about how to turn on Data Lake Storage Gen2 for your Commerce environment, see [Enable ADLS in a Dynamics 365 Commerce environment](https://docs.microsoft.com/dynamics365/commerce/enable-adls-environment).
+Before the data can be available in Data Lake Storage Gen2, the service must be turned on for the Commerce environment. For information about how to turn on Data Lake Storage Gen2 for your Commerce environment, see [Enable Azure Data Lake Storage in a Dynamics 365 Commerce environment](https://docs.microsoft.com/dynamics365/commerce/enable-adls-environment).
 
 #### Turn on Loss prevention
 
