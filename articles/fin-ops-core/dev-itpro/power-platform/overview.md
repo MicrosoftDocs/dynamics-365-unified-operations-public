@@ -2,7 +2,7 @@
 # required metadata
 
 title: Microsoft Power Platform overview
-description: This topic describes virtual entities for Finance and Operations in Common Data Service
+description: This topic describes virtual entities for Finance and Operations in Common Data Service.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 05/26/2020
@@ -46,7 +46,7 @@ To understand the architecture of virtual entities for Finance and Operations, y
 
 ## Virtual entities for Finance and Operations
 
-All Open Data Protocol (OData) entities in Finance and Operations are available as virtual entities in Common Data Service, and therefore also in Microsoft Power Platform. Makers can now build experiences in Dynamics 365 with data directly from Finance and Operations with full CRUD capability and without copying to CDS. Power Apps Portals can be used to build external-facing websites that enable collaboration scenarios for business processes in Finance and Operations.
+All Open Data Protocol (OData) entities in Finance and Operations are available as virtual entities in Common Data Service, and therefore also in Microsoft Power Platform. Makers can now build experiences in customer engagement apps with data directly from Finance and Operations with full CRUD capability and without copying to CDS. Power Apps Portals can be used to build external-facing websites that enable collaboration scenarios for business processes in Finance and Operations.
 
 ## Architecture
 
