@@ -138,7 +138,10 @@ Download the LocalAgent installer and configuration file from LCS to your disast
 >[!IMPORTANT]
 > Do not make changes to your connector settings in LCS. 
 
-From now on and until your main production environment comes back online, this LocalAgent will process all requests that LCS puts into the Message Queue. That's why its important you ensure no services are running in your production environment. Eventually, when your orchestrator nodes come back up in your primary datacenter, unprovision the LocalAgent from the cluster.  
+From now on and until your main production environment comes back online, this LocalAgent will process all requests that LCS puts into the Message Queue. That's why its important you ensure no services are running in your production environment. Eventually, when your orchestrator nodes come back up in your primary datacenter, unprovision the LocalAgent from the cluster. 
+
+>[!CAUTION]
+> The LocalAgent must only be running in one datacenter at a time. At this point it should only be running in your secondary datacenter.
 
 ### Prepare your pre-deployment scripts (optional)
 
@@ -211,7 +214,7 @@ As the database has previously been synchronized successfully, synchronization w
 Run the following command against your business data database (AXDB):
 
 ```sql
-	UPDATE SF.synclog SET STATE=5 WHERE CODEPACKAGEVERSION in (SELECT TOP(1) CODEPACKAGEVERSION from SF.SYNCLOG ORDER BY CREATIONDATE DESC)
+	UPDATE SF.synclog SET STATE=5, SyncStepName = 'ReportSyncstarted' WHERE CODEPACKAGEVERSION in (SELECT TOP(1) CODEPACKAGEVERSION from SF.SYNCLOG ORDER BY CREATIONDATE DESC)
 ```
 
 #### Platform Update 36 or earlier
@@ -252,13 +255,24 @@ You can use your DR environment as you normally would except that updates or hot
 ## Failing back to your production environment
 
 >[!IMPORTANT]
-> At this point no Dynamics Service Fabric services should be running in your production environment. 
+> At this point **no** Dynamics Service Fabric services should be running in your production environment. 
 
 Secure a downtime window in which you can switch operation from the DR environment to the Production environment. Once in the downtime window, disable all non-Orchestrator nodes in the DR environment through Service Fabric Explorer. Once all nodes are disabled, failover your SQL Server to the production data center.
 
 Once the failover has happened, start up the AOS, SSRS, and MR nodes in your primary datacenter. Carry out validation tests to ensure your environment is functioning as expected. Once you decide the environment is working as expected, remove the LocalAgent from your Disaster Recovery environment and reinstall it on your Production environment.
 
-Your primary environment will be back to functioning as usual and can once again be serviced.
-
 Clean up your DR environment by manually unprovisioning all Dynamics Service Fabric Service.
 
+>[!CAUTION]
+> Do not use the Cleanup functionality in LCS to carry out the cleanup of your DR environment. 
+
+### Failback Checklist
+
+[] 1. Non-Orchestrator nodes are disabled in DR datacenter.
+[] 2. SQL Server is failed back to primary datacenter.
+[] 3. LocalAgent is uninstalled in your DR datacenter.
+[] 4. All Dynamics Service Fabric services (including LocalAgent) are running in your primary datacenter.
+[] 5. No Dynamics Service Fabric services are deployed in your DR datacenter. 
+
+>[!IMPORTANT]
+> Your primary environment will be back to functioning as usual and can once again be serviced once you ensure all items in the checklist are verified.
