@@ -5,7 +5,7 @@ title: Create a new theme
 description: This topic describes how to create a new theme for a Microsoft Dynamics 365 Commerce online site. 
 author: samjarawan
 manager: annbe
-ms.date: 05/13/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -30,6 +30,7 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Create a new theme
 
+[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 This topic describes how to create a new theme for a Microsoft Dynamics 365 Commerce online site.
