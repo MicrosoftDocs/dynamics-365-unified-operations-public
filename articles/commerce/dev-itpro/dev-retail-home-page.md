@@ -107,6 +107,7 @@ This page lists the resources that are available for IT pros and developers who 
 - [Log extension events to Application Insights](commerce-application-insights.md)
 - [Create async Commerce (CRT) APIs in your business logic](async-commerce-extension.md)
 - [Pre-extended columns in the channel database](extended-columns.md)
+- [Extend Commerce Data Exchange - Real-time Service](extend-commerce-data-exchange.md)
 
 ## Retail SDK
 - [Retail software development kit (SDK) architecture](retail-sdk/retail-sdk-overview.md)

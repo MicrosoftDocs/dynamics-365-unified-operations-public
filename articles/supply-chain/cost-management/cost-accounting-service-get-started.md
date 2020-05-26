@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Get started with the cost accounting service
+title: Get started with the cost accounting service (private preview)
 description: This topic provides licensing details and installation instructions for the cost accounting service.
 author: AndersGirke
 manager: tfehr
@@ -27,7 +27,7 @@ ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: Release 10.0.12
 ---
 
-# Get started with the cost accounting service
+# Get started with the cost accounting service (private preview)
 
 [!INCLUDE [banner](../includes/banner.md)]
 
@@ -48,16 +48,22 @@ The cost accounting service is an add-in. To makes its features available, you m
 
 The cost accounting service doesn't currently support all the cost management features that are built into Dynamics 365 Supply Chain Management. Therefore, it's important that you evaluate whether the set of features that is currently available will meet your requirements.
 
-## Licensing
-
-The cost accounting service is licensed together with the standard features of inventory accounting that are available for Supply Chain Management. You don't have to purchase an additional license to use the cost accounting service.
-
-## Install the add-in
+## <a name="sign-up"></a>How to get the cost accounting service (private preview)
 
 > [!IMPORTANT]
 > To use the cost accounting service, you must have an LCS-enabled high-availability environment (not a OneBox environment), and you must be running Dynamics 365 Supply Chain Management version 10.0.11 or later.
 
+To sign up for the cost accounting service private preview, please send your LCS environment ID by email to [Cost accounting service (private preview)](mailto:aevengir@microsoft.com?subject=Cost%20accounting%20service%20%28private%20preview%29). On approving you for the program, we will send you a follow up email that contains a cost accounting service beta key. On receiving the beta key, you can proceed by [installing the add-in](#install).
+
+## Licensing
+
+The cost accounting service is licensed together with the standard features of inventory accounting that are available for Supply Chain Management. You don't have to purchase an additional license to use the cost accounting service.
+
+## <a name="install"></a>Install the add-in
+
 To use the cost accounting service, install the cost accounting service add-in for Supply Chain Management as described in the following procedure.
+
+1. [Sign up](#sign-up) for the cost accounting service (private preview).
 
 1. Sign in to LCS.
 

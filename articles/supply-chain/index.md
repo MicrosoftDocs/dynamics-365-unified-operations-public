@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Help resources for Supply Chain Management
+title: Supply Chain Management home page
 description: This page provides a list of the help topics and other resources for Supply Chain Management features.   
 author: josaw1
 manager: tfehr
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Help resources for Supply Chain Management
+# Supply Chain Management home page
 
 [!include [banner](includes/banner.md)]
 
@@ -47,6 +47,7 @@ Select a feature area to learn more about it.
 - [Cost accounting](../finance/cost-accounting/cost-accounting-home-page.md)
 - [Cost management](cost-management/cost-management-home-page.md)  
 - [Inventory management](inventory/inventory-home-page.md)
+- [IoT Intelligence](iot/iot-intelligence-home-page.md)
 - [Master planning](master-planning/master-planning-home-page.md)
 - [Procurement and sourcing](procurement/procurement-sourcing-overview.md)
 - [Product information management](pim/product-information.md)

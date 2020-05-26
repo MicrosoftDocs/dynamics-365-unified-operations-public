@@ -5,7 +5,7 @@ title: Fiscal registration service integration sample for Germany
 description: This topic provides an overview of the fiscal integration sample for Germany.
 author: josaw
 manager: annbe
-ms.date: 05/22/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -412,7 +412,6 @@ In the previous procedure, you enabled the extensions that are components of the
         ``` xml	
         <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.EFRSample" />
         <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR" />
-        <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsGermany" />
         ```
 
     - In the **HardwareStation.Extension.config** configuration file, add the following lines to the **composition** section.
@@ -420,6 +419,7 @@ In the previous procedure, you enabled the extensions that are components of the
         ``` xml
         <add source="assembly" value="Contoso.Commerce.HardwareStation.EFRSample" />
         <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR" />
+        <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsGermany" />
         ```
 
 2. Make the following changes in the **BuildTools\\Customization.settings** package customization configuration file:
