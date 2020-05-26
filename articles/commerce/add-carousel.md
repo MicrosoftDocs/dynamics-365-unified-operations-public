@@ -5,7 +5,7 @@ title: Carousel module
 description: This topic covers carousel modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 manager: annbe
-ms.date: 05/25/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -31,6 +31,7 @@ ms.dyn365.ops.version:
 
 # Carousel module
 
+[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 This topic covers carousel modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
