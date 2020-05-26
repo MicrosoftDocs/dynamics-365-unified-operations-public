@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Platform Update 33
 
 [!include [banner](../includes/banner.md)]
 
-To configure the export to Data Lake, you must create a storage account in your own Azure subscription. This storage account will be used to store data. Next, you must create an Azure Active Directory (Azure AD) application ID that grants access to the root of your storage account. Your Dynamics 365 Finance or Operations app will use the Azure AD application to gain access to storag,  and create the folder structure and write data. You must create a key vault in your subscription, and store the names of the storage account, application ID and the application secrets. If you don't have permissions to create resources in Azure portal, you will need assistance from someone in your organization with required permissions.
+To configure the export to Data Lake, you must create a storage account in your own Azure subscription. This storage account will be used to store data. Next, you must create an Azure Active Directory (Azure AD) application ID that grants access to the root of your storage account. Your Dynamics 365 Finance or Operations app will use the Azure AD application to gain access to storage,  and create the folder structure and write data. You must create a key vault in your subscription, and store the names of the storage account, application ID and the application secrets. If you don't have permissions to create resources in Azure portal, you will need assistance from someone in your organization with required permissions.
 
 The steps, which take place in the Azure portal, are as follows: 
 
@@ -93,7 +93,7 @@ A key vault is a secure way to share details such as storage account name to you
     -   **Supported Account types**: Choose the appropriate option.
 
 3. After the application is created, select it and then copy and save the <a name="appid">Application (client) ID</a> at the top of the page. You will need this later.
-4. On the left navigation pane, select **API permissions** .
+4. On the left navigation pane, select **API permissions**.
 5. Select **+Add a permission**, and in the **Request API permissions** dialog, select **Azure Key vault**.
 6. Select **Delegated permissions**, check **user_impersonation**, and then select**Add permissions.** 
 7. On the left navigation pane, select **Certificates & secrets**, and then select **+New client secret**. 
@@ -113,7 +113,7 @@ You are going to create three secrets in the Key vault and then add the values s
 You will need to complete the following steps three times, once for each secret.
 
 1. In the Azure portal, go to the Key vault you created earlier and on the left navigation pane, select **Secrets**.
-2. Select **+Generate/Import**, and in the the **Create a secret** dialog box, in the **Upload options** field, select **Manual**.
+2. Select **+Generate/Import**, and in the **Create a secret** dialog box, in the **Upload options** field, select **Manual**.
 3. Enter a name for the secret. See the table in the introduction of this section for suggested names.
 4. Copy and paste the corresponding secret value in the **Value** field.
 6.  Select **Enabled**, and then select **Create**. 
@@ -122,12 +122,12 @@ You will notice the secret created in the list of secrets.
 
 ## <a name="authorize"></a>Authorize the application to read secrets in the Key vault
 
-1. In **Azure Portal**, open the Key Vault that you created earlier.
+1. In **Azure portal**, open the Key Vault that you created earlier.
 2. On the left navigation page, select **Access policies** > **+Add Access Policy** to create a new policy. 
 3. On the **Add access policy** dialog, in the **Select principal** field, search for the [name of the application you created earlier](#appid).
 4. When you find your application in the list of principals, select the application, and then click **Select**.
 5. In the **Key permissions** and **Secret permissions** fields, select **Get** and **List**.  
-6. In the **Add access policy** dialog, select **Add**..
+6. In the **Add access policy** dialog, select **Add**.
 7. On the left navigation pane, select **Access policies** > **+Add Access Policy** to create a new policy. 
 8. On the **Add access policy** dialog, in the **Select principal** field, locate and select the application, **Microsoft Dynamics ERP Microservices**, and then click **Select**. 
 
@@ -150,7 +150,7 @@ You should see two applications with access to your key vault as shown below:
 
 You need to grant your application permissions to read and write to the storage account. These permissions are granted by using Roles in Active directory.
 
-1. In **Azure Portal**, open the storage account that you created earlier.
+1. In **Azure portal**, open the storage account that you created earlier.
 2. Select **Access Control (IAM)** in the left navigation. 
 3. On the **Access control** page, select the **Role assignments** tab.
 4. Select **+ Add** at the top of the page, and then select **Add role assignment**.
@@ -167,13 +167,13 @@ You need to grant your application permissions to read and write to the storage 
 |----------------------------------|-----------------------------|
 | [Your application](#appid) you created earlier | Owner                       |
 | [Your application](#appid) you created earlier | Contributor                 |
-| [Your application](#appid) you created earlie | Storage account contributor |
+| [Your application](#appid) you created earlier | Storage account contributor |
 | [Your application](#appid) you created earlier | Storage blob data owner     |
 | AI builder authorization service | Storage blob data reader    |
 
 ## <a name="installaddin"></a>Install the Export to Data Lake add-in in LCS 
 
-Before you can export data to your Data lake from you Finance and Operations apps, you must install the **Export to Data Lake** add-in in LCS. To complete this task, you must be an environment administrator in LCS for the environment that you want to use.
+Before you can export data to your Data lake from your Finance and Operations apps, you must install the **Export to Data Lake** add-in in LCS. To complete this task, you must be an environment administrator in LCS for the environment that you want to use.
 
 You need the following information before you start. Keep the information handy before you begin.
 
@@ -211,8 +211,8 @@ You will need **Azure Active Directory tenant administrator** rights to perform 
 
 If you are unable to find any of the above applications complete steps 3 - 7:
 
-3. On your local machine, open the  Start menu and search for **Powershell**.
-4. Right-click on **Windows Powershell** and select **Run as administrator**.
+3. On your local machine, open the  Start menu and search for **PowerShell**.
+4. Right-click on **Windows PowerShell** and select **Run as administrator**.
 5. Run the following command to install **AzureAD** module:
 
      >   *Install-Module -Name AzureAD*
