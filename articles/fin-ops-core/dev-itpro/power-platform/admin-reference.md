@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.12
 [!include[banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic provides step by step procedure to set up and configure virtual entities for Finance and Operations in the Common Data Service.
+This topic provides step-by-step procedure to set up and configure virtual entities for Finance and Operations in the Common Data Service.
 
 ## Getting the solution
 The CDS solution for Finance and Operations virtual entities must be downloaded [virtual entity solution](https://www.yammer.com/dynamicsaxfeedbackprograms/#/files/596330233856).
@@ -52,7 +52,7 @@ Ensure the following solutions are installed in CDS. These solutions must be ext
     -   This provides a list of available Finance and Operations entities through the mserp_financeandoperationsentity Virtual Entity.
 
 -   MicrosoftOperationsERPVE
-    -   This is the API Managed solution which will contain the generated Virtual Entities as they are made visible.
+    -   This is the API-managed solution which will contain the generated Virtual Entities as they are made visible.
 
 Alternatively, you can also import the solutions package directly as a single unit in CDS by using the [PackageDeployer
 tool](https://docs.microsoft.com/power-platform/admin/deploy-packages-using-package-deployer-windows-powershell#PD_tool).
