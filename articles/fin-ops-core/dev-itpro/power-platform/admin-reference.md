@@ -2,7 +2,7 @@
 # required metadata
 
 title: Admin reference
-description: Description goes here.
+description: This topic covers set up and configuration of virtual entities for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 05/20/2020
@@ -32,10 +32,30 @@ ms.dyn365.ops.version: 10.0.12
 [!include[banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-How to set up virtual entities for Finance and Operations
----------------------------------------------------------
+This topic provides step by step procedure to set up and configure virtual entiites for Finance and Operations in the Common Data Service.
 
 ## Getting the solution
+The CDS solution for Finance and Operations virtual entities must be downloaded [virtual entity solution](https://www.yammer.com/dynamicsaxfeedbackprograms/#/files/596330233856).
+
+The solutions providing the virtual entity functionality are available under the
+Files / CDSSolutions section of the general channel.
+<https://microsoft.sharepoint.com/:f:/t/PRIVATEPowerPlatformforFO/EjlwVEM0gwdDoJbSmGpg4Y0Bzp4r9sO0ql43WMaeKJRVZw?e=zMPJfv>
+
+Ensure the following solutions are installed in CDS. These solutions must be extracted from the downloaded pacakge.
+
+-   Dynamics365Company
+    -   This adds the “Company” entity, which is referenced by all Finance and Operations entities with a PrimaryCompanyContext metadata value.
+-   MicrosoftOperationsVESupport
+    -   This provides the core support for the Finance and Operations Virtual Entity feature.
+
+-   MicrosoftOperationsERPCatalog
+    -   This provides a list of available Finance and Operations entities through the mserp_financeandoperationsentity Virtual Entity.
+
+-   MicrosoftOperationsERPVE
+    -   This is the API Managed solution which will contain the generated Virtual Entities as they are made visible.
+
+Alternatively, you can also import the solutions package directly as a single unit in CDS by using the [PackageDeployer
+tool](https://docs.microsoft.com/en-us/power-platform/admin/deploy-packages-using-package-deployer-windows-powershell#PD_tool).
 
 ## Authentication & Authorization
 
