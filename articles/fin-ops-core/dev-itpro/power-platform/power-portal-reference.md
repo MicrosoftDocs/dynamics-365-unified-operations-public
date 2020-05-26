@@ -27,23 +27,25 @@ ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
 ---
 
-# Power Portal reference
+# Power Apps Portal reference
 
 [!include[banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-## Anonymous access
+Power Apps Portals will enable create, update and delete operations to Finance and Operations entities that are available as virtual entities in the Common Data Service. This topic explains the scenarios that are be implemented in Power Apps Portals for Finance and Operations.
 
-Collaboration scenarios in business processes such as bidding or onboarding of prospects in Finance and Operations require that external users participate from the Power Portal, even though they aren't users in Finance and Operations. The simplicity of anonymous access is appealing in these types of scenarios because the users, who might not be users in Finance and Operations, don't have to sign in at all. However, they are expected to perform create, read, update, and delete (CRUD) operations in Finance and Operations to complete any meaningful tasks in the business processes.
+## Anonymous access from Power Apps Portal
+
+Collaboration scenarios in business processes such as bidding or onboarding of prospects in Finance and Operations require that external users participate from the Power Apps Portal, even though they aren't users in Finance and Operations. The simplicity of anonymous access is appealing in these types of scenarios because the users, who might not be users in Finance and Operations, don't have to sign in at all. However, they are expected to perform create, read, update, and delete (CRUD) operations in Finance and Operations to complete any meaningful tasks in the business processes.
 
 To ensure that only the required entities are enabled for anonymous access, a user in Finance and Operations must be designated as the user who is used for anonymous access. This designation is configured in the **Anonymous portal access user ID** field on the **Virtual entity** tab of the **System parameters** page (**System administration \> System parameters**). The designated user can then be assigned to duties and security roles to control access to specific data that must be made available to all users who will interact anonymously from the Power Portal.
 
 Note that, because this scenario involves anonymous access, the only user context that matters, from a security perspective, is the user who is designated in the **Anonymous portal access user ID** field.
 
-## Authenticated access
+## Authenticated access from Power Apps Portal
 
-Fully authenticated user access from the Power Portal to Finance and Operations lets users in Finance and Operations also interact with the app from Power Portal. A user who signs in to the Power Portal is also a known user in Finance and Operations who has appropriate security roles. The existing roles from the business process in Finance and Operations govern the security access for this type of authenticated user in the Power Portal.
+Fully authenticated user access from the Power Apps Portal to Finance and Operations lets users in Finance and Operations also interact from Power Apps Portal. A user who signs in to the Power Apps Portal is also a known user in Finance and Operations who has appropriate security roles. The existing roles from the business process in Finance and Operations govern the security access for this type of authenticated user in the Power Portal.
 
-Because Power Portal authentication is linked to the Contacts entity in Common Data Service, a mapping must be established between the Common Data Service contact and the corresponding user in Finance and Operations. This mapping can be done by adding entries to the msdyn\_externalportalusermapping entity. From a security perspective, the scope of virtual entities that are made available to authenticated users must be configured as **Global** in the Power Portal.
+Because Power Apps Portal authentication is linked to the Contacts entity in Common Data Service, a mapping must be established between the Common Data Service contact and the corresponding user in Finance and Operations. This mapping can be done by adding entries to the msdyn\_externalportalusermapping entity. From a security perspective, the scope of virtual entities that are made available to authenticated users must be configured as **Global** in the Power Apps Portal.
 
 When authenticated users from a different tenant have to be added to Finance and Operations as users, you must use the [Create new user](../sysadmin/tasks/create-new-users.md) process in Finance and Operations. This process adds cross-tenant users as Microsoft Azure Active Directory (Azure AD) business-to-business (B2B) guest users.
