@@ -75,7 +75,7 @@ The following Microsoft Office applications are supported in cloud:
 
 ## Requirements for development on local VMs
 
-For information about the requirements for development on local virtual machines (VMs), see [VM that is running on-premises](../../dev-itpro/dev-tools/access-instances.md#vm-that-is-running-on-premises).
+For information about the requirements for development on local virtual machines (VMs), see [VM that is running locally](../../dev-itpro/dev-tools/access-instances.md#vm-that-is-running-locally).
 
 ## Database collation
 
