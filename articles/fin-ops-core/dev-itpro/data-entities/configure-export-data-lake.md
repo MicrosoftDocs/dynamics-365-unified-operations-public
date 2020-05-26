@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Platform Update 33
 
 [!include [banner](../includes/banner.md)]
 
-To configure the export to Data Lake, you must create a storage account in your own Azure subscription. This storage account will be used to store data. Next, you must create an Azure Active Directory (Azure AD) application ID that grants access to the root of your storage account. Your Dynamics 365 Finance or Operations app will use the Azure AD application to gain access to storage,  and create the folder structure and write data. You must create a key vault in your subscription, and store the names of the storage account, application ID and the application secrets. If you don't have permissions to create resources in Azure portal, you will need assistance from someone in your organization with required permissions.
+To configure the export to Data Lake, you must create a storage account in your own Azure subscription. This storage account will be used to store data. Next, you must create an Azure Active Directory (Azure AD) application ID that grants access to the root of your storage account. Your Dynamics 365 Finance or Operations app will use the Azure AD application to gain access to storage,  and create the folder structure and write data. Create a key vault in your subscription and store the names of the storage account, application ID, and the application secrets. If you don't have permissions to create resources in Azure portal, you will need assistance from someone in your organization with required permissions.
 
 The steps, which take place in the Azure portal, are as follows: 
 
@@ -154,7 +154,7 @@ You need to grant your application permissions to read and write to the storage 
 2. Select **Access Control (IAM)** in the left navigation. 
 3. On the **Access control** page, select the **Role assignments** tab.
 4. Select **+ Add** at the top of the page, and then select **Add role assignment**.
-5. In the **Add role assignment** dialog, select the **Role** field and then select **Owner**.
+5. In the **Add role assignment** dialog, select the **Role** field, and then select **Owner**.
 
 > [!NOTE]
 > Don't make any changes to the fields, **Assign access to** and **Azure AD user, group, or service principal**.
@@ -209,7 +209,7 @@ You will need **Azure Active Directory tenant administrator** rights to perform 
 | AI Builder Authorization Service         | ad40333e-9910-4b61-b281-e3aeeb8c3ef3 |
 
 
-If you are unable to find any of the above applications complete steps 3 - 7:
+If you are unable to find any of the above applications, complete steps 3 - 7:
 
 3. On your local machine, open the  Start menu and search for **PowerShell**.
 4. Right-click on **Windows PowerShell** and select **Run as administrator**.
