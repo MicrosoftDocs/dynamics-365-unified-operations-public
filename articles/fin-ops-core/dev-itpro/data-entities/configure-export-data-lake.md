@@ -5,7 +5,7 @@ title: Configure export to Azure Data Lake
 description: This topic provides information about configuring the export to Azure Data Lake.
 author: MilindaV2
 manager: AnnBe
-ms.date: 05/21/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -84,7 +84,7 @@ A key vault is a secure way to share details such as storage account name to you
 8. In the **Value** field, enter the storage account name that you obtained in the previous procedure.
 9. Select **Enabled**, and then select **Create**. The secret is created and added to Key vault.
 
-## <a name="createapplication">,/a>Create an application in Azure Active Directory
+## <a name="createapplication"></a>Create an application in Azure Active Directory
 
 1. In the Azure portal, select **Azure Active Directory**, and then select **App registrations**.
 2. Select **New registration**, and enter the following information: 
