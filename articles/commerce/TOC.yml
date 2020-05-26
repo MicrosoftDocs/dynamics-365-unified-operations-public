@@ -1042,6 +1042,10 @@
           href: localizations/emea-fra-cash-registers.md
         - name: Deployment guidelines for cash registers
           href: localizations/emea-fra-deployment.md
+      - name: Germany
+        items:
+        - name: Fiscal registration service integration sample for Germany
+          href: localizations/emea-deu-fi-sample.md
       - name: India
         items:
         - name: Goods and Services Tax (GST) integration for cash registers
