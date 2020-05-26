@@ -5,7 +5,7 @@ title: Admin reference
 description: This topic covers set up and configuration of virtual entities for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 05/20/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -55,7 +55,7 @@ Ensure the following solutions are installed in CDS. These solutions must be ext
     -   This is the API Managed solution which will contain the generated Virtual Entities as they are made visible.
 
 Alternatively, you can also import the solutions package directly as a single unit in CDS by using the [PackageDeployer
-tool](https://docs.microsoft.com/en-us/power-platform/admin/deploy-packages-using-package-deployer-windows-powershell#PD_tool).
+tool](https://docs.microsoft.com/power-platform/admin/deploy-packages-using-package-deployer-windows-powershell#PD_tool).
 
 ## Authentication & Authorization
 
