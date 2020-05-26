@@ -2,10 +2,10 @@
 # required metadata
 
 title: Microsoft Power Platform overview
-description: This topic describes virtaul entities for Finance and Operations in Common Data Service
+description: This topic describes virtual entities for Finance and Operations in Common Data Service
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 05/20/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
