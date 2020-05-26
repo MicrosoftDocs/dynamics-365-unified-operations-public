@@ -2,7 +2,7 @@
 # required metadata
 
 title: Power Portal reference
-description: Description goes here.
+description: This topic explains how Power Apps Portals can be used with Finance and Operations
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 05/20/2020
