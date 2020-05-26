@@ -63,5 +63,6 @@ The following features are deprecated and will not be implemented in the modern 
 | **Feature**  | **Description**                     |
 |--------------|-------------------------------------|
 | Custom fonts | Custom fonts are not supported. Please see [Document Reporting Service in Dynamics 365 applications](../analytics/reporting-experience-iias-environments.md) for more details.
-| List of all deprecated features us here  | [Removed or deprecated features on Self-Service](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features)|
 
+> !Note
+> Deprecated features are not intended to be implemented, as well.  To see a list of deprecated features, see [Removed or deprecated platform features](../get-started/removed-deprecated-features-platform-updates.md) and [Removed or deprecated features](../migration-upgrade/deprecated-features.md) and [Removed or deprecated features in previous releases](../get-started/removed-deprecated-features-platform-updates.md).
