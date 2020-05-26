@@ -604,7 +604,7 @@
         items:
         - name:	Product recommendations overview	
           href:	product-recommendations.md	
-        - name:	Enable ADLS in a Dynamics 365 Commerce environment	
+        - name:	Enable Azure Data Lake Storage in a Dynamics 365 Commerce environment	
           href:	enable-ADLS-environment.md	
         - name:	Enable product recommendations
           href:	enable-product-recommendations.md
