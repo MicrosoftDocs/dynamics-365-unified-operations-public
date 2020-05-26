@@ -45,7 +45,7 @@ This rest of this section describes supported and unsupported data types. For mo
 
 | Data type in Finance and Operations | Modeled data type in Common Data Service |
 |-------------------------------------|------------------------------------------|
-| Real                                | Decimal<p>For information about the possible mismatch, see the next table.</p> |
+| Real                                | Decimal<br><br>For information about the possible mismatch, see the next table.</p> |
 | Long                                | Decimal, where the precision equals 0 (zero) |
 | Int                                 | Integer |
 | String (non-memo), String (memo)    | String – single line of text, String – multiple lines of text |
