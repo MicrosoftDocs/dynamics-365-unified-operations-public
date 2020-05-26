@@ -48,11 +48,11 @@ This list is intended to help you consider these removals and deprecations for y
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | The process for IP whitelisting has changed. Self-Service no longer supports IP whitelisting |
-| **Replaced by another feature?**   | Please see [Configuring Azure Active Directory Conditional Access](https://docs.microsoft.com/appcenter/general/configuring-aad-conditional-access) for more details|
+| **Reason for deprecation/removal** | The process for IP whitelisting has changed. Self-service no longer supports IP whitelisting. |
+| **Replaced by another feature?**   | Please see [Configuring Azure Active Directory Conditional Access](https://docs.microsoft.com/appcenter/general/configuring-aad-conditional-access) for more details.|
 | **Product areas affected**         | Security |
 | **Deployment option**              | Cloud |
-| **Status**                         | **Deprecated:** This feature is fully deprecated on self-service and is actively being removed from the v1 Cloud service.<br><br> |
+| **Status**                         | **Deprecated:** This feature is fully-deprecated on self-service and is actively being removed from the v1 Cloud service. |
 
 ### Field groups containing invalid field references
 
