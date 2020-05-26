@@ -177,7 +177,7 @@ Before you can set up system-directed cluster picking, you must create eligible 
         - Select **Line 1**.
         - On the **Sales order lines** Action Pane, select **Inventory**, and then select **Reservation** from the list.
         - On the **Reservation** form, select **Reserve lot** to reserve the inventory.
-        - Close the *Reservation* form when the reservation is completed.
+        - Close the **Reservation** form when the reservation is completed.
         - Repeat these steps to reserve inventory for **Line 2**.
     - Close the sales order and return to the **All sales orders** list page.
 1. Find the two sales orders you just created (you may need to refresh the page). In the table, select both sales orders using the section check mark.
