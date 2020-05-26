@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: FAQ
+title: Finance and Operations virtual entities FAQ
 description: This topic is a list of frequently asked questions about Finance and Operations virtual entities.
 author: Sunil-Garg
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
 ---
 
-# FAQ's on Finance and Operations virtual entities
+# Finance and Operations virtual entities FAQ
 
 [!include[banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
