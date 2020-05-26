@@ -31,6 +31,7 @@ ms.dyn365.ops.version:
 
 # Accordion module
 
+[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 This topic covers accordion modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
