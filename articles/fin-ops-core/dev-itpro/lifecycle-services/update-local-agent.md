@@ -5,7 +5,7 @@ title: Update the local agent
 description: This topic explains how to update the local agent.
 author: faix
 manager: AnnBe
-ms.date: 05/11/2020
+ms.date: 05/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -53,7 +53,7 @@ This topic explains how to update the local agent. The latest version of the loc
 ## What's new in local agent 2.5.0
 
 - Local agent 2.5.0 uptakes new versions of various dependencies. The main changes are Service Fabric and Entity Framework.
-- This release also fixes a bug where if cleanup fails without cleaning up any services, subsequent retries would always fail during cleanup.
+- This release also fixes a bug where, if cleanup fails without cleaning up any services, subsequent reattempts always fail during cleanup.
 
 ## What's new in local agent 2.4.0
 
