@@ -48,11 +48,11 @@ This topic explains how to update the local agent. The latest version of the loc
 | 2.3.0               | This version adds support for pre- and post-deployment scripts.  |
 | 2.3.1               | This version fixes orchestration service crashes that may occur during clean up on some environments.<br><br>Deploying version 10.0.5 with Platform update 29 or earlier requires the use of pre-deployment scripts for automatic updating of FinancialReportingDeployer.exe.config. For more information, see [Troubleshoot on-premises deployments](../../dev-itpro/deployment/troubleshoot-on-prem.md#FREntityFramework). |
 | 2.4.0               | This version fixes a deployment issue and upgrades the runtime of the local agent. |
-| 2.5.0               | This version updates dependent frameworks, and fixes a cleanup bug. |
+| 2.5.0               | This version updates dependencies, and fixes a cleanup bug. |
 
 ## What's new in local agent 2.5.0
 
-- Local agent 2.5.0 uptakes new versions of various frameworks we consume. The main changes are Service Fabric and Entity Framework.
+- Local agent 2.5.0 uptakes new versions of various dependencies. The main changes are Service Fabric and Entity Framework.
 - This release also fixes a bug where if cleanup fails without cleaning up any services, subsequent retries would always fail during cleanup.
 
 ## What's new in local agent 2.4.0
