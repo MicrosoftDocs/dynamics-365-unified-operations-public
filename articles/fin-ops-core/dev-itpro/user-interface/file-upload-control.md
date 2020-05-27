@@ -62,10 +62,10 @@ The **FileTypesAccepted** property of the file upload control lets you limit the
 You can use the **OnBrowseButtonClicked**, **OnUploadAttemptStarted**, and **OnUploadCompleted** overrides to hook into the various stages of the file upload process. You can also create custom file upload strategies and associate them with a file upload control by using the **FileUpload Strategy Class** property.
 
 ## Design classes
-There are two main types of classes that developers can work with for the file upload control:
+There are two base classes that developers can work with for the file upload control:
 
--   **Upload strategy class** – This class lets developers control various parameters that should be enforced for uploaded files, such as the types of files that a user can upload and the maximum size of a file. It also lets developers determine where and how the uploaded file should be stored. All upload strategy classes must inherit from the abstract **FileUploadStrategyBase** class.
--   **Upload result class** – This class lets developers access the details of a file that was uploaded by a user, such as its name, content type, and upload status. It also lets developers open and delete the corresponding file. All upload result classes must inherit from the abstract **FileUploadResultBase** class.
+-   **Upload strategy class** – This base class lets developers control various parameters that should be enforced for uploaded files, such as the types of files that a user can upload and the maximum size of a file. It also lets developers determine where and how the uploaded file should be stored. All derived classes used for upload strategies must inherit from the abstract **FileUploadStrategyBase** class.
+-   **Upload result class** – This base class lets developers access the details of a file that was uploaded by a user, such as its name, content type, and upload status. It also lets developers open and delete the corresponding file. All derived classes used for specializing upload results must inherit from the abstract **FileUploadResultBase** class.
 
 The framework provides a default upload strategy class that is named **FileUploadTemporaryStorageStrategy** and a default upload result class that is named **FileUploadTemporaryStorageResult**. This upload result class stores uploaded files to the temporary blob storage and provides a download URL. Developers can also implement their own custom upload strategy and upload result classes as required. For the upload strategy, two abstract methods from the **FileUploadStrategyBase** class must be implemented: **uploadFile** and **getResultClassName**. The **uploadFile** method handles where and how the file is stored. The **getResultClassName** method retrieves the upload result class that is used in this strategy. The **FileUploadResultBase** class has fields for the file name, the upload status, the content type of the file, and the log message. This class can be extended as required. All new properties should be able to be serialized and deserialized. The **openResult** method opens the file as a stream, and the **deleteResult** method deletes the file from the corresponding data storage.
 
@@ -80,7 +80,7 @@ Before you upload a file into the system, you might want to scan it for viruses 
 > [!IMPORTANT]
 > Version 10.0.12 is a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
 
-In particular, the **FileUploadResultBase** class exposes the **delegateScanStream()** delegate. This delegate applies to any file upload scenario where the **Upload strategy class** has been implemented. The upload process will fail if the scanning service determines that the file is malicious.    
+In particular, the **FileUploadResultBase** class exposes the **delegateScanStream()** delegate. This delegate applies to any file upload scenario where the **Upload strategy class** has been specialized. The upload process will fail if the scanning service determines that the file is malicious.    
 
 ### Implementation details
 The following example of the **ScanDocuments** class shows boilerplate code for the handler. For general information about how to implement handlers for delegates, see [EventHandlerResult classes in request or response scenarios](../dev-tools/event-handler-result-class.md).
