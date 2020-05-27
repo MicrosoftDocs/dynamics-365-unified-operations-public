@@ -95,6 +95,9 @@ An overview of each path is given below:
 
 1.  In the VHD, go to C:\\AOSService\\PackagesLocalDirectory\\Bin\\CustomDeployablePackage and copy the MajorVersionDataUpgrade zip file.
 
+    >[!NOTE]
+    > If you have not applied updates to your VHD, then obtain the MajorVersionDataUpgrade.zip file from LCS instead. You can find it under the software deployable package tab in the shared asset library (i.e. AX2012DataUpgrade-10-0-8).
+
 1.  Paste the file wherever you want and unzip it. For example: c:\\D365FFOUpgrade\\
 
 1.  Open a Command Prompt as Administrator and change the directory to the unzipped folder in the previous step.
@@ -167,6 +170,9 @@ An overview of each path is given below:
     > - When you install the Certificate Authority in the OneBox, make sure you use the FQDN or IP for connecting to the database that appears there. If you can't access it by using the domain name because it doesn't point to that server, edit your hosts file and add the FQDN and the IP it should resolve to.
 
 1.  In the VHD, go to C:\\AOSService\\PackagesLocalDirectory\\Bin\\CustomDeployablePackage and copy the MajorVersionDataUpgrade zip file.
+
+    >[!NOTE]
+    > If you have not applied updates to your VHD, then obtain the MajorVersionDataUpgrade.zip file from LCS instead. You can find it under the software deployable package tab in the shared asset library (i.e. AX2012DataUpgrade-10-0-8).
 
 1.  Paste the file wherever you want and unzip it. For example: c:\\D365FFOUpgrade\\
 
