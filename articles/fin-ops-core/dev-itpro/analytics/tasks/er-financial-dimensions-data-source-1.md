@@ -110,5 +110,5 @@ To complete these steps, you must first complete the steps in the procedure, "Cr
 69. Click Save.
 70. Close the page.
 
-![ER data model designer page](./mediaer-financial-dimensions-guides-data-model.png)
+![ER data model designer page](./media/er-financial-dimensions-guides-data-model.png)
 
