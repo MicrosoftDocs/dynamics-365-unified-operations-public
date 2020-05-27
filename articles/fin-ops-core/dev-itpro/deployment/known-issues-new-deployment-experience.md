@@ -5,7 +5,7 @@ title: Known issues with self-service deployment
 description: This topic lists known issues that you might experience when using self-service deployment.
 author: rashmansur
 manager: AnnBe
-ms.date: 05/26/2020
+ms.date: 05/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -49,13 +49,8 @@ Know issues are bugs that will be addressed in upcoming releases. Every 2 weeks 
 
 ## Finance and Operations apps 
 
-### Features not yet implemented
-
-The following features that have infrastructure dependencies are not yet implemented in the modern deployment experience. These features have not been deprecated.
-
-| **Feature**                 | **Description**                                           |
-|-----------------------------|-----------------------------------------------------------|
-| Commerce                      | Commerce support is now enabled with the 10.0.10 release. Please see [Create payment packaging for Application Explorer for self-service deployment](../../../commerce/dev-itpro/payment-connector-package.md) for more details.          |
+> [!Note]
+> Dynamics 365 Commerce is implemented in the modern deployment experience with the 10.0.10 release. Please see [Create payment packaging for Application Explorer for self-service deployment](../../../commerce/dev-itpro/payment-connector-package.md) for more details.
 
 ### Features not intended to be implemented
 The following features are deprecated and will not be implemented in the modern deployment experience.
