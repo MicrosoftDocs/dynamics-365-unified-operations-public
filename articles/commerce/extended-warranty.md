@@ -2,7 +2,7 @@
 # required metadata
 
 title: Extended warranty 
-description: This topic covers accordion modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+description: This topic covers extended warranties and describes how to create and configure them in Microsoft Dynamics 365 Commerce.
 author:  sijoshi
 manager: annbe
 ms.date: 06/08/2020
@@ -31,60 +31,36 @@ ms.dyn365.ops.version:
 
 # Extended Warranty
 
-
 ## Overview
 
-Customers are opting for extended support and services when they buy products,
-especially for consumer products that sell at a premium price point like phones,
-computers, cards, etc. Extended warranties can be sold in the retail channel
-during the initial purchase or for a limited time period after the initial
-purchase. For a retailer, providing an extended warranty can help build customer
-loyalty. With the extended warranty purchase, customers know where to go for
-service and support in case of issues and can gain the confidence that their
-issues will be handled well.
+Customers are opting for extended support and services when they buy products, especially for consumer products that sell at a premium price point like phones, computers, cards, etc. Extended warranties can be sold in the retail channel during the initial purchase or for a limited time period after the initial purchase. For a retailer, providing an extended warranty can help build customer loyalty. With the extended warranty purchase, customers know where to go for service and support in case of issues and can gain the confidence that their issues will be handled well.
 
 ## Warranty item set up
 
-We are providing the functionality to set up a warranty item type and set
-attributes for the item including the association between a product and warranty
-item, price of the warranty, warranty duration, and more. Once the warranty item
-is set up and released to the organizational unit, a retailer will then be able
-to sell warranties through Modern POS, online, and across other retail channels.
+We are providing the functionality to set up a warranty item type and set attributes for the item including the association between a product and warranty item, price of the warranty, warranty duration, and more. Once the warranty item is set up and released to the organizational unit, a retailer will then be able to sell warranties through Modern POS, online, and across other retail channels.
 
 ## Warranty item sell
 
-Extended warranties are sold in a retail channel during the initial purchase or
-for a limited timeframe after the initial purchase. In point of sale (POS), a
-sales associate will be prompted to consider an extended warranty when a related
-product is added to cart. This provides an upsell or cross-sell opportunity to
-the sales associate as part of the sales flow. A customer can also come back
-later and buy an extended warranty for the product. In this case, sales
-associates can look up the original transaction and sell the customer the
+Extended warranties are sold in a retail channel during the initial purchase or for a limited timeframe after the initial purchase. In point of sale (POS), a sales associate will be prompted to consider an extended warranty when a related product is added to cart. This provides an upsell or cross-sell opportunity to the sales associate as part of the sales flow. A customer can also come back later and buy an extended warranty for the product. In this case, sales associates can look up the original transaction and sell the customer the
 related extended warranty.
 
 ## Warranty policy
 
-Once the extended warranty is sold, a warranty policy entity will be created.
-The warranty policy number can be shared to the customer to give them a
-reference for the extended warranty purchased. The warranty policy will include
-the start date, end date, terms and conditions, serial number of the item, and
-more for the warranty sold.
+Once the extended warranty is sold, a warranty policy entity will be created. The warranty policy number can be shared to the customer to give them a reference for the extended warranty purchased. The warranty policy will include the start date, end date, terms and conditions, serial number of the item, and more for the warranty sold.
 
 ## Terminology
 
-| TERM / ABBREVIATION          | DESCRIPTION                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| TERM / ABBREVIATION          | DESCRIPTION                                                                                             |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Extended Warranty / Warranty | An **extended warranty** refers to service agreement or a service contract which gives a prolonged **warranty** to consumers. ... The **extended warranty** provides a seller to provide the additional service of replacing or repairing goods that fail within the **extended** period.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Extended Warranty / Warranty | An **extended warranty** refers to service agreement or a service contract which gives a prolonged **warranty** to consumers. ... The **extended warranty** provides a seller to provide the additional service of replacing or repairing goods that fail within the **extended** period.                                                                                         
 | Manufacturer warranty        | A manufacturer's warranty (often called limited warranty) is the warranty you receive when you purchase a product. Some features of a manufacturer's warranty are: 1. The warranty cost is included in the cost of the product. You don't have to pay any additional amount for a manufacturer's warranty. 2. Depending on the product category, a manufacturer's warranty generally lasts for 30 days, 6 months or 1 year. (For most consumer electronics, the warranty lasts for 1 year). 3. This warranty covers any defects caused by mechanical or electrical failures. The coverage is limited, and it doesn't include any accidental damage to your products. If you would like to protect your product from everyday damages, you should invest in an extended warranty, which lasts for 2-10 years depending on the product category, has wider coverage and covers everyday mishaps such as drops, spills, stains, etc. |
-| Warranty Item                | Extended warranty item sold for the warrantable item E.g. 2-year Accidental Protection Plan for Laptops                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| Warrantable Item             | Serialized Item for which warranty is being sold. E.g. Laptop is a warrantable item for which 2 year and 3 year extended warranty is sold                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-
+| Warranty Item                | Extended warranty item sold for the warrantable item E.g. 2-year Accidental Protection Plan for Laptops 
+| Warrantable Item             | Serialized Item for which warranty is being sold. E.g. Laptop is a warrantable item for which 2 year and 3 year extended warranty is sold                                                                                                                                                                                                                    
 ## Warranty items
 
 ### Create a warranty item
 
-Warranty is a service provided to the customer. Warranty Product is modeled as a
-Product of type Service and ServiceType = Warranty.
+Warranty is a service provided to the customer. Warranty Product is modeled as a Product of type Service and ServiceType = Warranty.
 
 1. Go to: **Products and categories \> Products**
 
@@ -125,10 +101,7 @@ Product of type Service and ServiceType = Warranty.
 
 ## Warranty groups
 
-Warranty Groups form enables to group Warranty products with the Warrantable
-products. It is basically a relationship between Warrantable and Warranty
-products. This setting is then used by POS to determine which Warranty products
-should be prompted when Warrantable product is added to cart.
+Warranty Groups form enables to group Warranty products with the Warrantable products. It is basically a relationship between Warrantable and Warranty products. This setting is then used by POS to determine which Warranty products should be prompted when Warrantable product is added to cart.
 
 ### Set up a warranty group
 
@@ -170,8 +143,7 @@ Warranty settings form allows to set Warranty Feature settings
 
 ### Configure channel-specific settings
 
-Channel specific settings allow to set configuration to enable prompting of
-Warranty item when Warrantable item is added to cart in Point of sale.
+Channel specific settings allow to set configuration to enable prompting of Warranty item when Warrantable item is added to cart in Point of sale.
 
 1. Go to: **Products and categories \> Warranty \> Warranty settings\>Channel
     Specific**
@@ -202,27 +174,19 @@ Warranty policy number sequence is set here
 
 Two new POS operations are added to sell warranty item during sell workflow.
 
-**Add Warranty -** POS operation **Add Warranty** will trigger prompt to show
-applicable warranties for the Warrantable item
+**Add Warranty -** POS operation **Add Warranty** will trigger prompt to show applicable warranties for the Warrantable item
 
 ![Example of](./media/ew-add-warranty.png)
 
 ![Example of](./media/ew-sell-warranty.png)
 
-**Add Warranty to existing transaction –** POS operation **Add Warranty to
-existing transaction** will allow selling warranty for Warrantable item sold
-earlier. Original transaction can be found by entering the receipt number of the
-original transaction with warrantable items.
+**Add Warranty to existing transaction –** POS operation **Add Warranty to existing transaction** will allow selling warranty for Warrantable item sold earlier. Original transaction can be found by entering the receipt number of the original transaction with warrantable items.
 
 ![Example of](./media/ew-add-warranty-existing.png)
 
 **Process warranty transactions**
 
-For warranty added in cash and carry transactions, user needs to go through
-statement posting so that those transactions are posted in HQ, then go to Retail
-and Commerce \> Products and categories \> Warranty \> Process warranty
-transactions. This will process warranty transactions and create warranty
-policy.
+For warranty added in cash and carry transactions, user needs to go through statement posting so that those transactions are posted in HQ, then go to Retail and Commerce \> Products and categories \> Warranty \> Process warranty transactions. This will process warranty transactions and create warranty policy.
 
 ![Example of](./media/ew-process-warranty.png)
 
@@ -264,14 +228,14 @@ Warranty Policy details
 
 ## Frequently asked questions (FAQs)
 
-Q: **Why don’t I see warranty prompted in POS?**
+**Why don’t I see warranty prompted in POS?**
 
-A: Check if the warranty product is assorted to the channel. Check if the warranty group is configured to include the channel in question (need to access the warranty group form in Retail and Commerce, not the one in Product information management).
+Check if the warranty product is assorted to the channel. Check if the warranty group is configured to include the channel in question (need to access the warranty group form in Retail and Commerce, not the one in Product information management).
 
-Q: **When clicking Add warranty to existing transaction and entering receipt number (for a customer order), I don’t see any lines.**
+**When clicking Add warranty to existing transaction and entering receipt number (for a customer order), I don’t see any lines.**
 
-A: Run P-Job to upload the receipts to HQ, which is required for the receipt to be found.
+Run P-Job to upload the receipts to HQ, which is required for the receipt to be found.
 
-Q: **Why is Warranty feature only applicable for serialized items?**
+**Why is Warranty feature only applicable for serialized items?**
 
-A: Warranty is a service provided for a product. In Dynamics 365 a product can be uniquely identified with a serial number. Hence warranty feature is only applicable for a serialized item.
+Warranty is a service provided for a product. In Dynamics 365 a product can be uniquely identified with a serial number. Hence warranty feature is only applicable for a serialized item.
