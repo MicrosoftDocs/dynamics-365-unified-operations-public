@@ -38,7 +38,7 @@ ms.search.form: Add the form name for context help; I think that's (other?): Jmg
 
 [!include [banner](../includes/banner.md)]
 
-<!-- KFM: Add a short intro. What is a job card device, what does it do? What will we do in this topic? -->
+The job card device is used by the shop floor workers to make their daily work related registrations such as starting and reporting feedback on jobs and registering indirect activities and absence. The registrations are the basis for tracking progress and cost on production orders and calculating the basis for the workers pay. This topic descripe the different options for configuring the job card device.
 
 ## Enable new features in feature management
 
@@ -80,7 +80,7 @@ The **General** FastTab lets you configure each of the various options available
 
 - **Report quantity at clock-out** - When this option is selected the user of the job card device will be prompted for reporting feedback on a job in progress when clocking out. If the option is not selected the user will not be prompted to provide feedback on jobs in progress. 
 - **Lock employee** - When this option is selected, the job card device page will not return to the log-in page when the user of the job card device starts a job. When this option is not selected, the job card device page will always return to the log-in page when the user starts a job. 
-- **Barcode scanner** - When this option is selected a field for the identification of a production job is shown in the job card device screen. If the users s
+- **Barcode scanner** - When this option is selected a field for the identification of a production job is shown in the job card device screen. 
 - **Use the actual time of registration** - Use this option to specify if you want to use the time the worker logs in to the device or the actual time where the worker is making a registration in the job card device. 
 - **Single worker** - Select this option to indicate that only one worker is using the job card device. When this option is selected the device will not return to the log-in screen when the user starts a job from the device. 
 - **Allow workers to set personal filters** - Select this option to allow the user of the job card device to apply a filter on the assigned jobs available on the device. The user can select between three filter criteria **Production unit**, **Resource group** and **Resource**. Only jobs that are scheduled on resources matching the selected filter criteria will be shown on the device.
@@ -94,7 +94,7 @@ The **General** FastTab lets you configure each of the various options available
 
 ## Assigned users
 
-Use the **Assigned users** FastTab to ... <!-- KFM: Describe this, why we have it, and what we can do here -->
+Use the **Assigned users** FastTab to associate a system user to the configuration. Only system users associated the configuration can log in to the job card device with that configuration. A user can only be assoicated one configuration.
 
 ## Additional resources
 
