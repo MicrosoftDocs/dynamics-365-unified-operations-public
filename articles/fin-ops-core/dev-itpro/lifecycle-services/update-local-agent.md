@@ -5,7 +5,7 @@ title: Update the local agent
 description: This topic explains how to update the local agent.
 author: faix
 manager: AnnBe
-ms.date: 05/17/2020
+ms.date: 05/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -57,7 +57,7 @@ This topic explains how to update the local agent. The latest version of the loc
 
 ## What's new in local agent 2.4.0
 
-- Local agent 2.4.0 now requires .Net Framework 4.8 to uptake the newest changes from Lifecycle Services (LCS). Please be sure to run the latest Infrastructure Scripts available in LCS to meet the newest requirements.
+- Local agent 2.4.0 now requires .NET Framework 4.8 to uptake the newest changes from Lifecycle Services (LCS). Be sure to run the latest Infrastructure Scripts available in LCS to meet the newest requirements.
 - This release also fixes an issue where the deployment of the AXService would fail in slower environments due to a hard-coded timeout.
 
 ## What's new in local agent 2.3.0
