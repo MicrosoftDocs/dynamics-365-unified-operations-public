@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customer electronic invoices
-description: This topic provides information about managing customer electronic invoices for Italy.
+description: This topic provides information about management of customer electronic invoices for Italy.
 author: v-oloski
 manager: 
 ms.date: 05/21/2020
@@ -30,187 +30,195 @@ ms.author: v-oloski
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to set up and work with the functionality for creating and sending sales and project invoices in an electronic format (FatturaPA).  
-  
-Electronic invoices "FatturaPA" version 1.2, can be used for all types of businesses, including public administrations, private companies, and professionals. 
+This topic describes how to set up and work with the functionality for creating and sending sales and project invoices in an electronic format (FatturaPA).
+
+Version 1.2 of FatturaPA electronic invoices can be used for all types of businesses, including public administrations, private companies, and professionals. 
 
 > [!NOTE] 
 > The primary address of the legal entity must be in Italy.
 
-This topic contains information about:
+This topic contains the following information:
 
-- Setup
-- How to fill in data for CIG and CUP ouput
-- Overview of **Electronic invoices** page
+- Setup information
+- How to fill in data for output of a tender procedure identification code (Codice Identificativo di Gara \[CIG\]) and unique project code (Codice Unico di Progetto \[CUP\])
+- Overview of the **Electronic invoices** page
 
 ## Setup
 
-Before you can begin to work with the electronic invoice functionality, the following must be set up:
+Before you can begin to work with the electronic invoice functionality, the following data must be set up:
+
 - [Accounts receivable parameters](#arparameters)
-- [E-invoice parameters](#einvoicesparameters)
+- [Electronic invoice parameters](#einvoicesparameters)
 - [Electronic documents properties](#edproperties)
 - [Customers](#customers)
-- [Digital certificate](#digitalcert)
-- Optional - [Destination for xml file output](#destination)
+- [Digital certificates](#digitalcert)
+- Optional: [Destination for XML file output](#destination)
 
-## <a name="arparameters"></a>Accounts receivable parameters
+### <a name="arparameters"></a>Accounts receivable parameters
 
-Select the configurations to create electronic invoice xml files for Sales and Free text invoices, Sales and Free text credit notes,
-Project invoices, and Project credit notes. These configurations are located on the **Electronic document** tab of the **Accounts receivable parameters** page (**Accounts receivable \> Setup \> Accounts receivable parameters**).
+Select the configurations that are used to create electronic invoice XML files for sales and free text invoices, sales and free text credit notes,
+project invoices, and project credit notes. You can find these configurations on the **Electronic document** tab of the **Accounts receivable parameters** page (**Accounts receivable \> Setup \> Accounts receivable parameters**).
 
-![Accounts receivable parameters](media/emea-ita-electronic-invocies-AR-parameter-e-invoices.png)
+![Electronic document tab of the Accounts receivable parameters page](media/emea-ita-electronic-invocies-AR-parameter-e-invoices.png)
 
- > [!NOTE] 
- > The configurations must be imported before they are selected. For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+> [!NOTE] 
+> The configurations must be imported before they can be selected. For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
-## <a name="einvoicesparameters"></a>E-Invoices parameters
+### <a name="einvoicesparameters"></a>Electronic invoice parameters
+
 Use these parameters to specify business scenarios and company-specific information. 
 
 1. Go to **Accounts receivable \> Setup \> Electronic invoice parameters**.
-2. On the  **General** tab, specify the electronic signature requirement.
-3. On the **Company information** tab, specify the company information and tax reperesentative, if needed. This information overrides the information in the Legal entity record.
-4. On the **Art. 2250 Civil code registration** tab, provide any necessary information if the company is registered under the terms of Art. 2250 of the Italian Civil Code.
-5. On the **Number sequences** tab, fill in number sequences for the e-invoice file number and transmission number.
+2. On the **General** tab, specify the electronic signature requirement.
+3. On the **Company information** tab, specify the company information and tax representative, as required. This information overrides the information in the legal entity record.
+4. On the **Art. 2250 Civil code registration** tab, provide any required information if the company is registered under the terms of Article 2250 of the Italian Civil Code.
+5. On the **Number sequences** tab, fill in number sequences for the **eInvoice unique file number** and **eInvoice transmission number** references.
 
-## <a name="edproperties"></a>Electronic document properties
-Electronic document properties functionality are used for setting the output to xml document blocks for different business cases including: 
+### <a name="edproperties"></a>Electronic document properties
 
-- A VAT registration number for customers who are not in the EU and don't have VAT registration codes  
-- A certified e-mail address (PEC) for private companies or professionals
-- A stamp duty (payable and not payble by customer)
-- A customer's representative data 
+Electronic document properties functionality is used to set the output to XML document blocks for different business cases. Here are some examples: 
 
-For the functionality to work, the following must be set up:
+- A value-added tax (VAT) registration number for customers who aren't in the European Union (EU) and don't have VAT registration codes
+- A certified email address (posta elettronica certificata \[PEC\]) for private companies or professionals
+- A stamp duty (payable and not payable by the customer)
+- Data about a customer's representative 
 
-- **Electronic document property types** (**Account receivable > Setup > Electronic document property types**) and the table to which the document property type is applied. For electronic invoice functionality, the **Customers** and **Legal entities** tables are applied.
+For the functionality to work, the following data must be set up:
 
-![Electronic document property types](media/emea-ita-electronic-invocies-electronic-document-property-types.png)
+- Electronic document property types (**Accounts receivable \> Setup \> Electronic document property types**) and the table that each document property type is applicable to. For electronic invoice functionality, the **Customers** and **Legal entities** tables are used.
 
-- Required values in set tables on the customer and legal entity level (**Accounts receivable** \> **Customers** \> **All customers**, **Customer** tab, **Electronic document properties** button and **Organization administration** > **Organizations** > **Legal entities**, **Electronic document properties** button).
+    ![Setting applicability on the Electronic document property types page](media/emea-ita-electronic-invocies-electronic-document-property-types.png)
 
-Set values are used for output to the xml file blocks. The following table provides information about how and where these values are used.
+- Required values in the specified tables at the customer and legal entity levels:
 
-| Business scenario | Electronic document property type | Electronic document property type description | Applicability (table) | Where to use | Element in the xml file |
+    - **Customer:** Go to **Accounts receivable \> Customers \> All customers**, and then, on the Action Pane, on the **Customer** tab, select **Electronic document properties**.
+    - **Legal entity:** Go to **Organization administration \> Organizations \> Legal entities**, and then, on the Action Pane, select **Electronic document properties**.
+
+The specified values are used for output to the XML file blocks. The following table provides information about how and where those values are used.
+
+| Business scenario | Electronic document property type | Electronic document property type description | Applicability (table) | Where to use the values | Element in the XML file |
 |-------------------|-----------------------------------|-----------------------------------------------|-----------------------|--------------|-------------------------|
-| For customers who are outside of the EU and don't have VAT registration codes, the VAT registration number should be 00000000000 | **VATnonEU** | For example: Customer, non-EU VAT number|**CustTable** (Customers) | **Customer, Electronic document properties**, Value=00000000000 |**IdCodice** (CessionarioCommittente\ DatiAnagrafici\ IdFiscaleIVA block) |
-| Certified e-mail address (PEC) for private companies or professionals | **PEC** | For example: Customer, Certified e-mail address | **CustTable** (Customers) | **Customer, Electronic document properties**,   Value = < PEC >  | **PECDestinatario** (DatiTrasmissione block) |
-| Stamp duty not included in invoice total (for sales invoices) and included/not included for project invoices | **Bollo** Note that it is used for sales order, free text, and project invoices | For example: Stamp duty, included/not included into invoice totals | **CompanyInfo** (Legal entities) |**Legal entity, Electronic document properties**,  Value = <Charge code/Project category, which is used for stamp duties>. **Charges code**: Debit type for this charge code should be Ledger  **Project category**: should be billable | **ImportoBollo** (DatiBollo block) |
-| Stamp duty included into invoice total | **BolloPay**. Note that it is used only for sales order and free text invoices | For example: Stamp duty, included into invoice totals | **CompanyInfo** (Legal entities) | **Legal entity, Electronic document properties**, Value=<Charge code/Project category, which is used for stamp duties>. **Charges code**: Debit type should be Customer/Vendor | **ImportoBollo** (DatiBollo block) |
-| Representative | TaxRepPaese, TaxRepPaese, TaxRepCodice, TaxRepDenominazione, TaxRepNome, TaxRepCognome | Any description | **CustTable** (Customers) | **Customer, Electronic document properties**. Value=IT (for TaxRepPaese) For other types, fill in data of representative | **Cognome** (RappresentanteFiscale block) |
-
-> [!NOTE 1] 
-> In the table:
->
-> - **Customer, Electronic document properties** is **Account receivable > Customers > All customers**, **Customer** tab, **Electronic document properties** button.
-> - **Legal entity, Electronic document properties** is **Organization administration > Legal entities**, **Electronic document properties** button
-
-> [!NOTE 2]  
-> In **Electronic document property types** list page, the **Description** field is filled in automatically when a user enters information in the **Group description** and **Description**fields.
-
-> [!NOTE 3]
-> Electronic document property type must have the same code as specified in the table.
-
-### Use project categories for stamp duty
-
-- Go to **Project management and accounting** > **Setup** > **Categories** > **Project categories** to set up Project categories with a Fee/Expense transaction type. The Category ID should be equal to the value defined for **Bollo** on the legal entity level. For m ore informaito, see the table above.
-
-The Project category of Fee transaction type can be used only for stamp duty included in the invoice. The Project category of expense transaction type can be used both for invoices included and not included in a customer invoice. In both cases, the **Bollo** document property type is used. When you create **Fee** or **Expese** journal lines, select the category that was defined as stamp duty, and enter a Cost price. The system considers this cost price as stamp duty amount. If you fill in sales price with the cost price amount, the system considers this ammount included in the invoice totals. Sales price amount is equal to zero (0), and this transaction is not included in invoice totals. 
-
-> [!NOTE]
-> You can use only one of the journal types (Fee or Exepense) for stamp duty. If a company uses only payable stamp dute it is possible to use Fee journal type. If a company uses both payable and unpayable stamp duty it is better to use Expense journal type.   
-
-
-## <a name="customers"></a>Customers 
-
-### Authority office field
-The **Authority office** field is located under, **Accounts receivable** \> **Customers** \> **All customers**, open a customer record in **Edit** mode, and expand the **Sales demographics** FastTab.
-
-This field value is used to define the type of communication (B2G or B2B). If the length of this value is 6, the customer will be considered a public administration (Transmission format is **FPA12**). If the length of this value is 7, the customer will be considered private companies or professionals (Transmission Format is **FPR12**). 
-In both of these cases, the system fills in the **CodiceDestinatario** tag (xml file) with this field value.
-
-![Authority office](media/emea-ita-electronic-invocies-customer-authority-office.png)
-
-If **Authority office** field value is empty, the system considers a customer a private company or professional (Transmission format is **FPR12**) and fills in the **CodiceDestinatario** tag (xml file) with **0000000**.
-
-In this case, a certified e-mail address (**PEC**) should be set up. For more information, see the table in the [Electronic document properties](/electronic-document-properties) section.
-
-### Activate automatic creation of e-invoices  
-
-**Accounts receivable** \> **Customers** \> **All customers**. Open a customer record in **Edit** mode, and on the **Invoice and delivery** FastTab, in the **E-INVOICE** field group, find **eInvoice register** option.
-
-If this option is set to **Yes**, the system automatically creates the record in **Electronic customer invoices** page list. For more information, see the [Overview of electronic invoices page](/overview-of-electronic-invoices-page.
-
-![E-invoice activation](media/emea-ita-electronic-invocies-customer-e-invoice.png)
-
-## <a name="digitalcert"></a>Digital certificates
-
-Go to **Accounts receivable** \> **Setup** \> **Electronic invoice digital certificates** to perform electronic signing of e-Invoices by using either a **Company** or **User** certificate.
-
-![digital certificate](media/emea-ita-electronic-invocies-certificate.png)
-
-Each [FatturaPA file](http://www.fatturapa.gov.it/export/fatturazione/en/b-2.htm) that is transmitted to the [Exchange System](http://www.fatturapa.gov.it/export/fatturazione/en/sdi.htm) must be signed by using a qualified signature certificate by the party that is issuing the invoice.  
-A qualified signature certificate may be obtained from one of the certifiers in the [list of authorized certifiers](http://www.digitpa.gov.it/firma-digitale/certificatori-accreditati).  
-  
-Dynamics 365 Finance supports the **XAdES-BES** signature format. To support FatturaPA you must perform the following steps:
-
-1. Install and configure digital certificates that have private and public keys in the **Certificate Server** to the **Personal** node on client computers.  
-      
-  > [!NOTE] 
-  > You can complete the isntallation and configuration by using standard Windows functionality.
-
-2. As required, define company-level certificates and user-level certificates.
-
-## <a name="destination"></a>Destination for xml file output
-
-If xml files must be output to a specified place when invoices are posted, for example a SharePoint folder, set up a document type and then set up a destination. For more information about these tasks, see [Configure document management](../../fin-ops-core/fin-ops/organization-administration/configure-document-management.md) and [Electronic reporting (ER) destinations](../../dev-itpro/analytics/electronic-reporting-destinations.md).
+| Customers who are outside the EU and don't have VAT registration codes. For these customers, the VAT registration number should be **00000000000**. | VATnonEU | Example: **Customer, non-EU VAT number** | **CustTable** (Customers) | In customer electronic document properties, set the **Value** field to **00000000000**. | **IdCodice** (**CessionarioCommittente\\DatiAnagrafici\\IdFiscaleIVA** block) |
+| Certified email address (PEC) for private companies or professionals | PEC | Example: **Customer, Certified e-mail address** | **CustTable** (Customers) | In customer electronic document properties, set the **Value** field to **\<PEC\>**. | **PECDestinatario** (**DatiTrasmissione** block) |
+| Stamp duty that isn't included in the invoice total for sales invoices, and is or isn't included for project invoices | Bollo<p><strong>Note:</strong> This document property type is used for sales order invoices, free text invoices, and project invoices.</p> | Example: **Stamp duty, included/not included into invoice totals** | **CompanyInfo** (Legal entities) | In legal entity electronic document properties, set the **Value** field to **\<Charge code/Project category that is used for stamp duties\>**:<ul><li>**Charge code** – The debit type for this charge code should be **Ledger**.</li><li>**Project category** – This project category should be billable.</li></ul> | **ImportoBollo** (**DatiBollo** block) |
+| Stamp duty that is included in the invoice total | BolloPay<p><strong>Note:</strong> This document property type is used only for sales order invoices and free text invoices.</p> | Example: **Stamp duty, included into invoice totals** | **CompanyInfo** (Legal entities) | In legal entity electronic document properties, set the **Value** field to **\<Charge code/Project category that is used for stamp duties\>**:<ul><li>**Charge code** – The debit type should be **Customer/Vendor**.</li></ul> | **ImportoBollo** (**DatiBollo** block) |
+| Representative | TaxRepPaese, TaxRepPaese, TaxRepCodice, TaxRepDenominazione, TaxRepNome, TaxRepCognome | Any description | **CustTable** (Customers) | In customer electronic document properties, set the **Value** field to **IT** for the **TaxRepPaese** document property type. For other types, fill in data of the representative. | **Cognome** (**RappresentanteFiscale** block) |
 
 > [!NOTE] 
-> **Print invoice** must be set to **Yes** and if the destination is set up, the e-invoice record for this invoice is automatically given a status of **Sent**.
+> The preceding table uses the following shorthand:
+>
+> - "Customer electronic document properties" refers to the **Electronic document properties** page that is opened by selecting **Electronic document properties** on the **Customer** tab on the Action Pane of the **All customers** page (**Accounts receivable \> Customers \> All customers**).
+> - "Legal entity electronic document properties" refers the **Electronic document properties** page that is opened by selecting **Electronic document properties** on the Action Pane of the **Legal entities** page (**Organization administration \> Organizations \> Legal entities**).
+> 
+> On the **Electronic document property types** list page, the **Description** field is automatically filled in when a user enters information in the **Group description** and **Description** fields.
+>
+> The electronic document property type must have the same code that is specified in the table.
+
+#### Use project categories for stamp duty
+
+Go to **Project management and accounting \> Setup \> Categories \> Project categories** to set up project categories that have a **Fee** or **Expense** transaction type. The category ID should equal the value that is defined for **Bollo** at the legal entity level. For more information, see the previous table.
+
+The project category of the **Fee** transaction type can be used only for stamp duty that is included in the invoice. The project category of the **Expense** transaction type can be used both for invoices that are included and aren't included in a customer invoice. In both cases, the **Bollo** document property type is used.
+
+When you create **Fee** or **Expense** journal lines, select the category that was defined for stamp duty, and enter a cost price. The system considers this cost price the stamp duty amount. If you fill in a sales price with the cost price amount, the system considers this amount included in invoice totals. The sales price amount equals 0 (zero), and the transaction isn't included in invoice totals. 
+
+> [!NOTE]
+> You can use only one of the journal types (**Fee** or **Expense**) for stamp duty. A company that uses only payable stamp duty can use the **Fee** journal type. If a company uses both payable and non-payable stamp duty, it's better to use the **Expense** journal type.
+
+### <a name="customers"></a>Customers 
+
+#### Authority office field
+
+You can find the **Authority office** field on the **Sales demographics** FastTab of a customer record (go to **Accounts receivable** \> **Customers** \> **All customers**, and open the customer record in **Edit** mode).
+
+The value of this field is used to define the type of communication (business to government \[B2G\] or business to business \[B2B\]):
+
+- If the length of the value is 6, the customer is considered a public administration (the transmission format equals **FPA12**).
+- If the length of the value is 7, the customer is considered a private company or professional (the transmission format equals **FPR12**).
+
+In both cases, the system enters the value of this field in the **CodiceDestinatario** tag in the XML file.
+
+![Authority office field on the Sales demographics FastTab of a customer record](media/emea-ita-electronic-invocies-customer-authority-office.png)
+
+If the **Authority office** field is blank, the system considers the customer a private company or professional (the transmission format equals **FPR12**) and enters **0000000** in the **CodiceDestinatario** tag in the XML file. In this case, a certified e-mail address (PEC) should be set up. For more information, see the table in the [Electronic document properties](/electronic-document-properties) section earlier in this topic.
+
+#### Activate automatic creation of e-invoices
+
+Go to **Accounts receivable** \> **Customers** \> **All customers**. Open a customer record in **Edit** mode, and then, on the **Invoice and delivery** FastTab, in the **E-invoice** section, find the **eInvoice register** option. If this option is set to **Yes**, the system automatically creates the record on the **Electronic customer invoices** list page. For more information, see [Overview of electronic invoices page](/overview-of-electronic-invoices-page).
+
+![E-invoice section on the Invoice and delivery FastTab of a customer record](media/emea-ita-electronic-invocies-customer-e-invoice.png)
+
+### <a name="digitalcert"></a>Digital certificates
+
+Go to **Accounts receivable** \> **Setup** \> **Electronic invoice digital certificates** to electronically sign electronic invoices by using a certificate of either the **Company** type or the **User** type.
+
+![Electronic signature certificates page](media/emea-ita-electronic-invocies-certificate.png)
+
+Each [FatturaPA file](http://www.fatturapa.gov.it/export/fatturazione/en/b-2.htm) that is transmitted to the [Exchange System](http://www.fatturapa.gov.it/export/fatturazione/en/sdi.htm) must be signed by the party that is issuing the invoice, by using a qualified signature certificate.
+
+A qualified signature certificate can be obtained from one of the certifiers in the [list of authorized certifiers](http://www.digitpa.gov.it/firma-digitale/certificatori-accreditati).
+
+Microsoft Dynamics 365 Finance supports the **XAdES-BES** signature format. To enable Finance to support FatturaPA, follow these steps.
+
+1. On client computers, install and configure digital certificates that have private and public keys in the **Certificate Server** to the **Personal** node.
+
+    > [!NOTE] 
+    > You can complete the installation and configuration by using standard Windows functionality.
+
+2. Define company-level certificates and user-level certificates, as required.
+
+### <a name="destination"></a>Destination for XML file output
+
+If XML files must be sent as output to a specific place when invoices are posted (for example, to a SharePoint folder), set up a document type, and then set up a destination. For more information about these steps, see [Configure document management](../../fin-ops-core/fin-ops/organization-administration/configure-document-management.md) and [Electronic reporting (ER) destinations](../../dev-itpro/analytics/electronic-reporting-destinations.md).
+
+> [!NOTE] 
+> The **Print invoice** option must be set to **Yes**. If the destination is set up, the status of the electronic invoice record for this invoice is automatically set to **Sent**.
 
 ## Fill in data for related documents
 
-Companies may report additional information about some base documents related to invoices. This includes: 
+Companies can report additional information about some base documents that are related to invoices. Here are some examples: 
 
- - The **DatiOrdineAcquisto** block contains the information relative to the purchase order. 
- - The **DatiContratto** block contains the information relative to the contract. 
- - The **DatiConvenzione** block contains the information relative to the agreement. 
- - The **DatiRicezione** block contains the information relative to the data present on the management system that is used by the PA (tax agencies) regarding the reception phase. 
- - The **DatiFattureCollegate** block contains the information relative to the invoices previously transmitted and to which the present document is connected. The block regards the cases of the forwarding of a credit note and/or invoice pursuant to previous advance payment invoices.
+- The **DatiOrdineAcquisto** block contains information that is related to the purchase order. 
+- The **DatiContratto** block contains information that is related to the contract. 
+- The **DatiConvenzione** block contains information that is related to the agreement. 
+- The **DatiRicezione** block contains information that is related to the data about the reception phase that is present in the management system that is used by the PA (tax agencies). 
+- The **DatiFattureCollegate** block contains information that is related to invoices that were previously transmitted and that the present document is connected to. This block is used for cases where a credit note and/or invoice is forwarded pursuant to previous advance payment invoices.
 
-So that the system can populate these blocks, the following fields should be filled in on the **Free text invoice**, **Sales order**, and **Project proposal** pages:
+To enable the system to enter information in these blocks, set the following fields:
 
-- **Accounts receivable** \> **Orders** \> **All sales orders**, the **Header** view, on the **Setup** FastTab, the **Base document** field group.
-- **Accounts receivable** \> **Invoices** \> **All free text invoices**, the **Header** view, the **Base document** field group.
-- **Project management and accounting** \> **Projects** \> **All projects**, the **Manage** tab, **Bill** \> **Invoice proposal**, **Base document** field group
+- On the **Sales order** page (**Accounts receivable** \> **Orders** \> **All sales orders**), in the **Header** view, on the **Setup** FastTab, set the fields in the **Base document** section.
+- On the **Free text invoice** page (**Accounts receivable** \> **Invoices** \> **All free text invoices**), in the **Header** view, on the **General** FastTab, set the fields in the **Base document** section.
+- On the **Project proposal** page (**Project management and accounting** \> **Projects** \> **All projects**), on the **Manage** tab, **Bill** \> **Invoice proposal**, **Base document** section.
 
 > [!NOTE]
-> The block from which the system outputs data from **Base document** fields depends on the value specified in the **Base document** field: 
-> - **Payment order** - **DatiOrdineAcquisto** block
-> - **Contract** - **DatiContratto** block
-> - **Agreement** - **DatiConvenzione** block
-> - **Management system** - **DatiRicezione** block
-> - **Original invoice** - **DatiFattureCollegate** block
+> Data from the fields in the **Base document** section is sent as output from different blocks, depending on the value of the **Base document** field.
+> 
+> | Value of the Base document field | Block that data is sent from |
+> |---|---|
+> | Payment order | DatiOrdineAcquisto |
+> | Contract | DatiContratto |
+> | Agreement | DatiConvenzione |
+> | Management system | DatiRicezione |
+> | Original invoice | DatiFattureCollegate
 
-For each base document, a user can add the details about document number and date, CUP code (managed by Inter Ministerial Committee for Economic Planning), CIG code (tender procedure identification code), and agreement code.
+For each base document, users can add details about the document number and date, CUP (unique project code, which is managed by the Inter Ministerial Committee for Economic Planning), CIG (tender procedure identification code), and agreement code.
 
-## Electronic invoices register 
+## Electronic invoice register 
 
-To view all customer e-invoices and perform various actions, go to**Accounts receivable** \> **Invoices** \> **E-invoices** \> **Electronic invoices**, to open the **Electronic customer invoices** page.
+To view all customer electronic invoices and perform various actions, go to **Accounts receivable** \> **Invoices** \> **E-Invoices** \> **Electronic invoices** to open the **Electronic customer invoices** page.
 
-In this page, you can:
+On this page, you can perform any of the following actions:
 
-- Click **Select** to select invoices based on different criteria. This function is useful if the **eInvoice register** option is not set to **Yes**.
-- Create xml files and a digital signature for selected invoices and send them.
-- Export the selected invoice to an xml file.
+- Select **Select** to select invoices, based on various criteria. This function is useful if the **eInvoice register** option is set to **No**.
+- Select **Create XML**, **Create signature**, and **Send** to create XML files and a digital signature for selected invoices, and send them.
+- Select **Export** to export a selected invoice to an XML file.
 
->[!NOTE]
-> The system outputs a file to the folder set up on your computer (the destination settings are not used).   
+    > [!NOTE]
+    > The system sends a file to the folder that is set up on your computer. (The destination settings aren't used.)
 
-- Overview details of the electronic invoice.
+- Select the **Details** tab to view details of the electronic invoice.
 
-> [!NOTE]  
-> A similar page with the same functions is the**Electronic invoices** page (**Project management and accounting** \> **Project invoices** \> **E-invoices** \> **Electronic invoices**).
+> [!NOTE]
+> The **Electronic invoices** page (**Project management and accounting** \> **Project invoices** \> **E-invoices** \> **Electronic invoices**) resembles the **Electronic customer invoices** page and has the same functions.
 
-![Customer electronic invoices](media/emea-ita-electronic-invocies-electronic-customer-invoices.png)
-
- 
+![Electronic customer invoices page](media/emea-ita-electronic-invocies-electronic-customer-invoices.png)
