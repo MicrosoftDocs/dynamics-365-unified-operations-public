@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 33
 
 [!include [banner](../includes/banner.md)]
 
-You can use Microsoft Dynamics Lifecycle Services (LCS) to do a point-in-time restore (PITR) of the production database to a user acceptance testing (UAT) sandbox environment. Microsoft maintains [automated backups](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups) according to default settings for Microsoft Azure SQL Database, for a maximum of 30 days.
+You can use Microsoft Dynamics Lifecycle Services (LCS) to do a point-in-time restore (PITR) of the production database to a user acceptance testing (UAT) sandbox environment. Microsoft maintains [automated backups](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups) according to default settings for Microsoft Azure SQL Database, for a maximum of 28 days for your Business and Financial Reporting database.
 
 > [!IMPORTANT]
 > Microsoft doesn't support copying production data to a sandbox environment for the purpose of production reporting.
