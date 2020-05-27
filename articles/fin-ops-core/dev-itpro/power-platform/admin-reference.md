@@ -5,7 +5,7 @@ title: Admin reference
 description: This topic covers set up and configuration of virtual entities for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 05/26/2020
+ms.date: 05/27/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -36,11 +36,6 @@ This topic provides step-by-step procedure to set up and configure virtual entit
 
 ## Getting the solution
 The CDS solution for Finance and Operations virtual entities must be downloaded from the [virtual entity solution](https://www.yammer.com/dynamicsaxfeedbackprograms/#/files/596330233856).
-
-The solutions providing the virtual entity functionality are available under the
-Files / CDSSolutions section of the general channel:
-
-<https://microsoft.sharepoint.com/:f:/t/PRIVATEPowerPlatformforFO/EjlwVEM0gwdDoJbSmGpg4Y0Bzp4r9sO0ql43WMaeKJRVZw?e=zMPJfv>
 
 Ensure the following solutions are installed in CDS. These solutions must be extracted from the downloaded package.
 
