@@ -52,7 +52,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Please see [Configuring Azure Active Directory Conditional Access](https://docs.microsoft.com/appcenter/general/configuring-aad-conditional-access) for more details.|
 | **Product areas affected**         | Security |
 | **Deployment option**              | Cloud |
-| **Status**                         | **Deprecated:** This feature is fully-deprecated on self-service and is actively being removed from the v1 Cloud service. |
+| **Status**                         | **Deprecated:** This feature is fully-deprecated in self-service deployment. |
 
 ### Field groups containing invalid field references
 
