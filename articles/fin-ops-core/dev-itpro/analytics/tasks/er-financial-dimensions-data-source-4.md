@@ -41,8 +41,8 @@ To complete these steps, you must first complete the steps in the "ER Use financ
 3. In the tree, select 'Financial dimensions sample model\Ledger journal report'.
 4. Click Run.
 ![ER configurations page](../media/er-financial-dimensions-guides-run1.png)
-5. In the Dimension name field, In the Dimension name field, enter or select a value..
-    * To select all dimensions in the current company, enter the following:  BusinessUnit;CostCenter;Department;ItemGroup;MainAccount;Project  
+5. In the Dimension name field, enter or select a value.
+    * To select all dimensions in the current company, enter the following information:  BusinessUnit;CostCenter;Department;ItemGroup;MainAccount;Project  
 ![ER configurations page](../media/er-financial-dimensions-guides-run2.png)
 6. Expand the Records to include section.
 7. Click Filter.
@@ -51,5 +51,5 @@ To complete these steps, you must first complete the steps in the "ER Use financ
 10. Click OK.
 11. Click OK.
 ![ER configurations page](../media/er-financial-dimensions-guides-run3.png)
-    * Review the generated output. Note that for each transaction of the selected batch, the financial dimensions from the corresponding dimensions set are presented. Run this report and select different dimensions to see that the report is not dependent on the number of selected dimensions or the number of dimensions configured for this instance.  
+    * Review the generated output. For each transaction of the selected batch, the financial dimensions from the corresponding dimensions set are presented. Run this report and select different dimensions to see that the report is not dependent on the number of selected dimensions or the number of dimensions configured for this instance.  
 ![ER configurations page](../media/er-financial-dimensions-guides-run4.png)
