@@ -5,7 +5,7 @@ title: Platform updates for version 10.0.12 of Finance and Operations apps (Augu
 description: This topic lists the features are included in the platform updates for version 10.0.12 of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 05/20/2020
+ms.date: 05/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -47,10 +47,7 @@ This topic lists the features that are included in the platform updates for vers
 -  [Edit basic control values in task recordings](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/new-task-recorder-capabilities-rsat) – For more information, see [Task recorder resources](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/user-interface/task-recorder).
 -  [Scanning files and attachments for malicious code](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=c0cade82-ea96-ea11-a811-000d3a579c38) – For more information, see [File upload control](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/user-interface/file-upload-control) and [Configure document management](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management).
 -  [Show related document attachments](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=1c7a5aec-3d96-ea11-a811-000d3a579c34) – For more information, see [Configure document management](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management).
-- [Finance and Operations entities in Common data service as virtual entities](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/finance-operations-entities-common-data-service-as-virtual-entities) – For more information, see [F&O virtual entities](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/power-platform/overview).
-- [Feature name](URL to feature in the Release Plans) – For more information, see [Topic name](URL of topic that has detailed info).
-- [Feature name](URL to feature in the Release Plans) – For more information, see [Topic name](URL of topic that has detailed info).
-- [Feature name](URL to feature in the Release Plans) – For more information, see [Topic name](URL of topic that has detailed info).
+- [Finance and Operations entities in Common data service as virtual entities](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/finance-operations-entities-common-data-service-as-virtual-entities) – For more information, see [Microsoft Power Platform overview](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/power-platform/overview).
 
 ## Additional resources
 
