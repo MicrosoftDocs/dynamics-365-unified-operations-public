@@ -1,7 +1,7 @@
 ---
 title: Project onboarding
 description: This topic provides information about the Project onboarding wizard in Lifecycle Services.
-author: ClaudiaBetzHaubold
+author: VetrivelChandranath
 manager: AnnBe
 ms.date: 05/20/2020
 ms.topic: article
