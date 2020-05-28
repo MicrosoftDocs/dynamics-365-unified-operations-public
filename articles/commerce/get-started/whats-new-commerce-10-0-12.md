@@ -42,7 +42,8 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 
 ## Features included in this release
 
-- [name](link to release plan)
+- [Warranty setup and sell](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/warranty-set-up-sell)
+- [Inventory buffers and inventory levels for e-Commerce](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/define-utilize-inventory-buffers-drive-inventory-level-displays-e-commerce)
 
 ## Additional resources
 
