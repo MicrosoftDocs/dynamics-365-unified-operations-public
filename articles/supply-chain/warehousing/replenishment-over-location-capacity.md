@@ -1,20 +1,20 @@
 # Replenishment over location capacity
 
-# Released in version 10.0.4
-#
-# About
+## Released in version 10.0.4
 
-Some high volume or space constrained warehouses will need to ship more quantity of an item in a day than what will fit in the picking location. Replenishment over location capacity allows all replenishment work to be created that will be needed for the day and manages availability of the replenishment work to ensure that the pick location doesn&#39;t run out of inventory, but also doesn&#39;t go above capacity.
+## About
+
+Some high volume or space constrained warehouses will need to ship more quantity of an item in a day than what will fit in the picking location. Replenishment over location capacity allows all replenishment work to be created that will be needed for the day and manages availability of the replenishment work to ensure that the pick location doesn't run out of inventory, but also doesn't go above capacity.
 
 The features allow more replenishment work to be created than will fit in a location and will block replenishment work from being completed once the location is full. As inventory in the pick location drops below a configurable threshold, more replenishment work will be made available.
 
-# Setup
+## Setup
 
-## Location profile
+### Location profile
 
 The replenish over capacity functionality is enabled on the location profile.
 
-Navigate to _Warehouse management_ _-_ _ Setup - Warehouse - Locations profiles_ and select &#39;PICK-06.&#39;In the Replenishment FastTab, set the &#39;Exceed Location Capacity&#39; parameter to Yes. This parameter dictates whether the replenishment overflow functionality is turned on or off.
+Navigate to _Warehouse management_ _-_ _Setup - Warehouse - Locations profiles_ and select &#39;PICK-06.&#39;In the Replenishment FastTab, set the &#39;Exceed Location Capacity&#39; parameter to Yes. This parameter dictates whether the replenishment overflow functionality is turned on or off.
 
 You also must decide if you&#39;re releasing work by Quantity or Percent. In the _Work availability threshold type,_ choose _Quantity_, set the _Overflow quantity_ to 0.5 and the _Overflow unit_ to PL. This will make more replenishment work available when the location gets down to 0.5 PL.
 
@@ -48,7 +48,7 @@ _Navigate to Warehouse management - Setup - Waves - Wave templates_ and select 6
 
 In the Selected Methods area, change the Wave step code for the replenish step to &#39;Replen&#39;.
 
-# Demo
+## Scenario
 
 ## Create work
 
@@ -80,7 +80,7 @@ After the completion of the second Replenishment work header, the mobile device 
 
 This status was triggered because the picking location the work is being put to has a location stocking limit of 1 pl, and the previous two work headers filled the location to its stocking limit. Until inventory is picked from the location that brings it below the work release threshold on the mobile device menu item, this replenishment will remain held.
 
-On the mobile device, navigate to Outbound _-_ Sales picking. Enter the work id for the anypiece of picking work created. Enter the LP to pick from and confirm the pick. Repeat this process for the possible picking work. This is to empty the pick location and bring it below the previously specified threshold of 0.5PL.
+On the mobile device, navigate to Outbound _-_ Sales picking. Enter the work id for the any piece of picking work created. Enter the LP to pick from and confirm the pick. Repeat this process for the possible picking work. This is to empty the pick location and bring it below the previously specified threshold of 0.5PL.
 
 As soon as the pick location on-hand quantity is below the threshold, you will be able to process the remaining replenishment work.
 
@@ -88,7 +88,7 @@ Go back to work details, and the Replenishment work availability for the final p
 
 You can now process this Replenishment work via the mobile device.
 
-# Addendum
+## Addendum
 
 - This functionality works with all types of replenishment (wave demand, min/max, load demand, and slotting)
 - The Replenishment work availability for each work header can be manually overridden from the work details screen if desired
