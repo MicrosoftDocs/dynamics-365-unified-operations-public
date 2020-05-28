@@ -88,7 +88,7 @@ To set up payment methods, follow these steps for each payment type supported on
 
 The following image shows an example of a cash payment method.
 
-![Example payment methods](media/channel-setup-retail-5.png)
+![Example payment methods](media/channel-setup-callcenter-payments.png)
 
 ### Set up modes of delivery
 
