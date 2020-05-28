@@ -5,7 +5,7 @@ title: Preview features in Dynamics 365 Commerce 10.0.12 (August 2020)
 description: This topic describes features that are either new or changed in Dynamics 365 Commerce 10.0.12. 
 author: josaw1
 manager: AnnBe
-ms.date: 05/27/2020
+ms.date: 05/29/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -44,7 +44,7 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 
 - [Warranty setup and sell](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/warranty-set-up-sell)
 - [Inventory buffers and inventory levels for e-Commerce](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-commerce/define-utilize-inventory-buffers-drive-inventory-level-displays-e-commerce)
-- [Close lines for underdelivery in Outbound operation](https://docs.microsoft.com/en-us/dynamics365/commerce/pos-outbound-inventory-operation)
+- [Close lines for underdelivery in Outbound operation](../pos-outbound-inventory-operation.md)
 
 ## Additional resources
 
