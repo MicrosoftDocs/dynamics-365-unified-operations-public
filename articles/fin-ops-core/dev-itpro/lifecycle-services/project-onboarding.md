@@ -55,7 +55,7 @@ General guidance and information that will be needed to complete project onboard
 
 - Provide the overview information for this implementation project.
 - Provide the vision and goals for this project in few sentences. This will help us understand the goals you want to achieve and how you define success for the project.
-- Specify the estimated number of future user licenses (Estimate – after complete roll-out). This number could be different from the current license purchase. If no change is planned, provide the current user license count. Use 0 (zero) if a license type is not applicable.
+- Specify the estimated number of future user licenses (Estimate – after complete roll-out). This number could be different from the current license purchase. If no change is planned, provide the current user license count. Use '0' (zero) if a license type is not applicable.
 - If your implementation project is a demo project or moving from another tenant, provide the details.
 
 ## Project scope 
@@ -66,8 +66,8 @@ General guidance and information that will be needed to complete project onboard
 ## Define your team 
 
 - Verify all project team members are invited and configured.
-- Set the **Primary contact for FastTrack** toggle to **Yes** for at least two users with an active email address in the user list. If no team member has this option enabled, FastTrack will reach out to all team members, if necessary. You should nominate at least one customer and one partner team member to be contacted by FastTrack.
-- Each team member will be assigned a project security role and an implementation role. We highly recommend that you include representatives from the customer to the project team members with a monitored email address**.**
+- Set the **Primary contact for FastTrack** toggle to **'Yes'** for at least two users with an active email address in the user list. If no team member has this option enabled, FastTrack will reach out to all team members for implementation guidance during your implementation. if necessary, You should nominate at least one customer and one partner team member to be contacted by FastTrack.
+- Each team member will be assigned a project security role and an implementation role. We highly recommend that you include representatives from the customer to the project team members with a monitored email address.
 - The project security role is relevant to the LCS project workspace access. The implementation role is relevant to the individual team member’s role in the implementation team.
 
 ## Define milestone dates 
