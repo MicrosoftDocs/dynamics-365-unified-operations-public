@@ -34,7 +34,7 @@ Project Onboarding is a self-paced, wizard-driven onboarding experience that gui
 
 At Microsoft, we rely on the information you provide. You must complete your Project onboarding with the most current and accurate data. After you have completed your Project onboarding, you will be able to deploy environments and proceed with the project implementation.
 
-To access Project onboarding, log in to LCS, and on the main menu, select **Project onboarding**.
+To access Project onboarding, log in to LCS and on the main menu, select **Project onboarding**.
 
 > [!NOTE]
 > Project Onboarding is available for implementation projects and must be completed before deploying any of the Microsoft-managed environments. For more information about the implementation project, see [Lifecycle Services (LCS) for Finance and Operations apps customers](lcs-works-lcs.md#lcs-workspace-for-the-current-versions-of-the-finance-and-operations-apps).
@@ -54,8 +54,9 @@ General guidance and information that will be needed to complete project onboard
 ## Project overview 
 
 - Provide the overview information for this implementation project.
+- If you are upgrading from AX 2012, provide the same in the Legacy system. Also you can choose your Legacy system if not upgrading from AX 2012.
 - Provide the vision and goals for this project in few sentences. This will help us understand the goals you want to achieve and how you define success for the project.
-- Specify the estimated number of future user licenses (Estimate – after complete roll-out). This number could be different from the current license purchase. If no change is planned, provide the current user license count. Use '0' (zero) if a license type is not applicable.
+- Specify the estimated number of future user licenses (Full estimate – after complete roll-out). This number could be different from the current license purchase. If no change is planned, provide the current user license count. Use '0' (zero) if a license type is not applicable.
 - If your implementation project is a demo project or moving from another tenant, provide the details.
 
 ## Project scope 
@@ -86,7 +87,7 @@ General guidance and information that will be needed to complete project onboard
 - Map work items between Lifecycle Services (LCS) and Business Process Modeler (BPM).
 - Acknowledge the setup.
 - If you choose to use a custom process template, follow the best practice in your custom template:
-    
+
     - Don’t remove any existing work item types
     - Don’t remove any existing state of a work item type
     - Don’t add any required fields to a work item type
