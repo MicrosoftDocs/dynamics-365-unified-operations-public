@@ -2,7 +2,7 @@
 # required metadata
 
 title: Confirm, update, and send a project quotation
-description: This article provides information about sending a quote to the customer for confirmation, modifying based on feedback, and then resending the quotation.
+description: This topic provides information about sending a quote to the customer for confirmation, modifying based on feedback, and then resending the quotation.
 author: kfend
 manager: AnnBe
 ms.date: 05/09/2020
@@ -44,8 +44,8 @@ You can send an existing project quotation for confirmation through email or as 
 2. On the **Project quotation** page, select the quotation you want to send for confirmation. 
 3. On the **Follow up** tab, in the **Generate** group, select **Confirm**. 
 4. On the **Confirm quotation** page, set the required parameters. For example, to print the confirmation, under **Print** options, turn on **Print confirmation**, and then select **OK**.
-5. On the **Send quotation** page, select **Options**, and on the **Print destination settings** page, select whether you want the quotation sent to **Screen**, **E-mail**, **File**, **Print archive** or **Printer**, and then make any adjustments that you want in the **Specification** area to route the quotation.
-6. Select **OK** in the **Print destination settings** page.  
+5. On the **Send quotation** page, select **Options**, and on the **Print destination settings** page, select whether you want the quotation sent to **Screen**, **E-mail**, **File**, **Print archive**, or **Printer**, and then make any adjustments that you want in the **Specification** area to route the quotation.
+6. On the **Print destination settings** page, select **OK**.  
 
 ## Update a project quotation
 
