@@ -44,6 +44,36 @@ This topic describes the steps for initializing Retail Cloud Scale Unit.
 1. Deploy a Tier-2 sandbox or production environment that has application version 8.1.2.x or later.
 2. If you require more than 1 RCSU per environment, in Microsoft Dynamics Lifecycle Services (LCS), create a support request, and enter **Access request for multiple Retail Cloud Scale Units** and indicate the environment ID, number of RCSUs, and corresponding datacenter regions. The request will be completed within five business days. If you do not require multiple RCSUs per environment, you do not need to create a support request. 
 
+## Region availability
+Commerce Scale Unit is available for deployment in the following regions.
+
+| Global location | Region              | Availability        |
+|-----------------|---------------------|---------------------|
+| AMERICAS        | East US             | Generally Available |
+| AMERICAS        | East US 2           | Generally Available |
+| AMERICAS        | North Central US    | Generally Available |
+| AMERICAS        | South Central US    | Generally Available |
+| AMERICAS        | Central US          | Generally Available |
+| AMERICAS        | West US             | Generally Available |
+| AMERICAS        | West US 2           | Generally Available |
+| AMERICAS        | Canada Central      | Limited Capacity    |
+| AMERICAS        | Canada East         | Limited Capacity    |
+| AMERICAS        | West Central US     | Limited Capacity    |
+| APAC            | Australia East      | Generally Available |
+| APAC            | Southeast Asia      | Generally Available |
+| APAC            | Japan East          | Generally Available |
+| APAC            | Japan West          | Generally Available |
+| APAC            | Australia Southeast | Limited Capacity    |
+| APAC            | East Asia           | Limited Capacity    |
+| APAC            | India South         | Limited Capacity    |
+| APAC            | India Central       | Limited Capacity    |
+| EMEA            | West Europe         | Generally Available |
+| EMEA            | North Europe        | Generally Available |
+| EMEA            | UK South            | Limited Capacity    |
+| EMEA            | UK West             | Limited Capacity    |
+
+If you have a compelling business need, for deployment in a Limited Capacity region, please file a Support Request. Requests for deployments in Limited Capacity regions are evaluated on a case by case basis.
+
 ## Initialize Retail Cloud Scale Unit as part of a new environment deployment
 
 Please make sure the headquarters is available. This is required to register the scale unit with the headquarters during the initialization process. It is not recommended to initialize a scale unit when the headquarters is under servicing, as it may become unavailable during its servicing process.
