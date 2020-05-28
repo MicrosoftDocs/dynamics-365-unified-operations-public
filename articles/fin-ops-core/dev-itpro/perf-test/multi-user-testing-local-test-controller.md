@@ -5,7 +5,7 @@ title: Multi-user testing with the Performance SDK and a local test controller
 description: This topic explains how to do multi-user testing by using Microsoft Visual Studio and the Performance SDK together with performance test scripts that are generated from Task recorder.
 author: hasaid
 manager: AnnBe
-ms.date: 10/09/2019
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -43,9 +43,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Before you complete the steps in this topic, verify that the following prerequisites are met:
 
-- You have a development environment that has Platform update 21 or later in your own Microsoft Azure subscription.
+- You have a development environment that has Platform update 21 or later in your Microsoft Azure subscription.
 > [!IMPORTANT]
-> If your Finance and Operations apps were deployed in 21Vianet, the platform update of your environment must be Platform Update 35 or above
+> If your Finance and Operations apps were deployed in 21Vianet, the platform update of your environment must be Platform Update for 10.0.11 or above.
 - You have Microsoft Visual Studio 2015 Enterprise edition in a development environment.
 - You have a tier-2 or above sandbox environment that has the same release (application version and platform update) as your development environment.
 - You've configured your development environment by following the steps in [Single-user testing with Task recorder and the Performance SDK](single-user-test-perf-sdk.md).
@@ -140,7 +140,7 @@ Before you complete the steps in this topic, verify that the following prerequis
 
     [![Updated CloudEnvironment.config file](./media/multi-user-test-local-10.png)](./media/multi-user-test-local-10.png)
 
-    - If your Finance and Operations apps were deployed in 21Vianet, please ensure you specify **NetworkDomain="https://sts.chinacloudapi.cn/"** in **SelfMintingSysUser** and **SelfMintingAdminUser**.
+    - If your Finance and Operations apps were deployed in 21Vianet, make sure to specify **NetworkDomain="https://sts.chinacloudapi.cn/"** in **SelfMintingSysUser** and **SelfMintingAdminUser**.
 
 4. Configure **vsonline.testsettings**. In the **Test Settings** dialog box, on the **General** tab, in the **Test run Location** field group, select the **Run tests using local computer or a test controller** option.
 
