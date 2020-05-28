@@ -5,7 +5,7 @@ title: Troubleshooting guide for single-user or multi-user testing with the Perf
 description: This topic provides troubleshooting information for common issues that you might encounter during single-user or multi-user testing that uses the Performance SDK. 
 author: hasaid
 manager: AnnBe
-ms.date: 05/17/2019
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -134,7 +134,7 @@ Three scenarios can cause this error:
 
 - The user who is specified as **SelfMintingAdminUser** in the CloudEnvironment.config file has a provider other than `https://sts.windows-ppe.net/` or `https://sts.windows.net/`. Sometimes, a company-specific domain is included in the **Provider** field for the admin user. 
 
-- If your Finance and Operations apps were deployed in 21Vianet, please ensure you specify **NetworkDomain="https://sts.chinacloudapi.cn/"** in **SelfMintingSysUser** and **SelfMintingAdminUser**.
+- If your Finance and Operations apps were deployed in 21Vianet, make sure that you have specified **NetworkDomain="https://sts.chinacloudapi.cn/"** in **SelfMintingSysUser** and **SelfMintingAdminUser**.
 
 To work around this issue, create a user who has any name and email address. Assign the **System Administrator** role to the new user. You don't have to link the user to a real Microsoft Azure Active Directory (Azure AD) user. Specify this new admin user as **SelfMintingAdminUser** in the CloudEnvironment.config file.
 
@@ -158,7 +158,7 @@ Three known scenarios can cause this error:
 
     [![CloudEnvironment.Config file](./media/troubleshoot-perf-sdk-05.jpg)](./media/troubleshoot-perf-sdk-05.jpg)
 
-- If your Finance and Operations apps were deployed in 21Vianet, please make sure your development and performance testing environments are in Platform Update 35 or above. 
+- If your Finance and Operations apps were deployed in 21Vianet, make sure that your development and performance testing environments are in Platform Update for 10.0.11 or above. 
 
 ## At least one security token in the message could not be validated
 
@@ -333,7 +333,7 @@ The type or namespace name 'InventTransferOrders' could not be found (are you mi
 
 ### Solution
 
-The sample solution shipped together with perfSDK was prepared long time back and didn't get updated after packages split. Adding assembly **MS.Dynamics.TestTools.DirectoryProxyLibrary.dll** under \<Service volume\>:\\PerfSDK\\PerfSDKLocalDirectory as a reference to resolve the issue.
+The sample solution shipped with the perfSDK was previously prepared and wasn't updated after the packages split. To resolve the issue, add the assembly **MS.Dynamics.TestTools.DirectoryProxyLibrary.dll** under \<Service volume\>:\\PerfSDK\\PerfSDKLocalDirectory as a reference.
 
 ## Assembly was built against the ".NETFramework,Version=v4.6" framework
 
@@ -341,4 +341,4 @@ The sample solution shipped together with perfSDK was prepared long time back an
 The primary reference "MS.Dynamics.TestTools.ApplicationSuiteProxyLibrary" could not be resolved because it has an indirect dependency on the assembly "MS.Dynamics.TestTools.DirectoryProxyLibrary, Version=7.0.0.0, Culture=neutral, PublicKeyToken=a7cf325ee2c8a9ff" which was built against the ".NETFramework,Version=v4.6" framework. This is a higher version than the currently targeted framework ".NETFramework,Version=v4.5".
 
 ### Solution
-Change the **Target framework** property in the properties window of PerfSDKSample to .Net Framework 4.6
+Change the **Target framework** property in the properties window of PerfSDKSample to .Net Framework 4.6.
