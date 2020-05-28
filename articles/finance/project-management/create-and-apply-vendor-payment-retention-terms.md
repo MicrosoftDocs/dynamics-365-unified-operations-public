@@ -46,9 +46,9 @@ Use the following steps to set up and maintain retention terms for vendor paymen
 2. Select **New** to add a new vendor retention term. The **Rule ID** value for the new term is automatically entered. 
 3. Enter a brief description in the **Description** field, and on the **Terms** FastTab, select **Add line** to enter term values for the following:
 
-  - **Percentage of units delivered**: Enter a percentage of completion for the term. Amounts are automatically retained on vendor invoices until the project stage of completion is equal to the specified percentage. For example, if you enter 50.00, amounts are retained until the project is 50 percent completed.
-  - **Percentage to retain**: Enter a percentage of the vendor invoice amount to be retained. For example, if you enter 10.00, then 10 percent of the amount on a vendor invoice is retained until the project reaches the percentage of completion as set in the **Percentage of units delivered field**.
-  - **Percentage to release**: Select **Add line** to enter a percentage of any previously retained amounts to be released for the selected level of project completion.
+   - **Percentage of units delivered**: Enter a percentage of completion for the term. Amounts are automatically retained on vendor invoices until the project stage of completion is equal to the specified percentage. For example, if you enter 50.00, amounts are retained until the project is 50 percent completed.
+   - **Percentage to retain**: Enter a percentage of the vendor invoice amount to be retained. For example, if you enter 10.00, then 10 percent of the amount on a vendor invoice is retained until the project reaches the percentage of completion as set in the **Percentage of units delivered field**.
+   - **Percentage to release**: Select **Add line** to enter a percentage of any previously retained amounts to be released for the selected level of project completion.
 
 > [!NOTE]
 > If you have more than one milestone for different levels of project completion, enter a separate vendor retention term line for each retention rule. Each line can specify a different retention percentage and a different release percentage for each designated level of project completion.
