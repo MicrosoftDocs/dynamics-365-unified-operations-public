@@ -53,12 +53,19 @@ The following tables describes the set of supported authentication mechanisms fo
 
 |API Category|Scenario|Supported Authentication Method|Required Setup|Additional details|
 |----------|-----------|------------|------------|------------|
-|**Employee**|**Dynamics 365 POS authentication flows** |Simple Cashier Username & Password |Configure worker in Dynamics 365 F&O / Commerce HQ with username and password. |[POS worker logon](https://docs.microsoft.com/en-us/dynamics365/commerce/retail-modern-pos-device-activation#create-a-worker) |
+|**Employee**|**Dynamics 365 POS authentication flows /* ** |Simple Cashier Username & Password |Configure worker in Dynamics 365 F&O / Commerce HQ with username and password. |[POS worker logon](https://docs.microsoft.com/en-us/dynamics365/commerce/retail-modern-pos-device-activation#create-a-worker) |
 | | |AAD Credentials  |Configure worker in Dynamics 365 F&O / Configure worker in Dynamics 365 F&O / Commerce HQ mapping to AAD credentials. |[Enable Azure Active Directory authentication for POS sign-in](https://docs.microsoft.com/en-us/dynamics365/commerce/aad-pos-logon) |
-|**Customer**|**Dynamics 365 e-Commerce authentication flows**|Site user authentication using AAD B2C |Create an AAD B2C application. |[Set up a B2C tenant in Commerce](https://docs.microsoft.com/en-us/dynamics365/commerce/set-up-b2c-tenant) |
+| | |Extended Logon Credentials (e.g. barcode or MSR)  |Configure worker in Dynamics 365 F&O / Commerce HQ configured for extended logon. |[Set up extended logon functionality for MPOS and Cloud POS](https://docs.microsoft.com/en-us/dynamics365/commerce/extended-logon) |
+|**Customer**|**Dynamics 365 e-Commerce authentication flows**|Site user authentication using AAD B2C |Create an AAD B2C application. Add the AAD B2C application to the accepted list of identity providers in Dynamics 365 F&O / HQ. Configure the AAD B2C application in the e-Commerce Site Builder.|[Set up a B2C tenant in Commerce](https://docs.microsoft.com/en-us/dynamics365/commerce/set-up-b2c-tenant)  [Set up custom pages for user sign-ins](https://docs.microsoft.com/en-us/dynamics365/commerce/custom-pages-user-logins)|
+| | |Site user authentication using external identity provider that supports Open ID Connect |Create an AAD B2C application and configure it to support external identity providers.
+
+Add the AAD B2C application to the accepted list of identity providers in Dynamics 365 F&O / HQ.
+
+Configure the AAD B2C application in the e-Commerce Site Builder.
+ |[Set up a B2C tenant in Commerce](https://docs.microsoft.com/en-us/dynamics365/commerce/set-up-b2c-tenant) |
 |**Application**|**3rd party app or service authentication flows**|AAD Service to Service / application authentication |Add external identity provider to the accepted list of identity providers in Dynamics 365 F&O / HQ. | |
 
-* POS logon requires device activation for each terminal. Learn more under [Point of Sale (POS) device activation](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/retail-device-activation).
+/* POS logon requires device activation for each terminal. Learn more under [Point of Sale (POS) device activation](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/retail-device-activation).
 
 ### Unsupported Authentication Flows
 
