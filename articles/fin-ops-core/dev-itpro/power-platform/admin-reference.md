@@ -54,7 +54,7 @@ tool](https://docs.microsoft.com/power-platform/admin/deploy-packages-using-pack
 
 After the solutions are imported in the Common Data Service environment, both environments must be set up to connect to each other. Common Data Service will call Finance and Operations using Service-to-Service (S2S) authentication, based on an Azure Active Directory (AAD) application. This new AAD application represents the single instance of the Common Data Service environment. If you have multiple pairs of Common Data Service and Finance and Operations environments, separate AAD applications for each pair must be created to ensure connections are established between the correct pair of Finance and Operations and Common Data Service environments. The following procedure shows the creation of the AAD application.
 
-1.  Go to <https://portal.azure.com> \> Azure Active Directory \> App registrations
+1.  Go to <https://portal.azure.com> **\> Azure Active Directory \> App registrations**.
 
 2.  Select **New Registration**. Enter the following information:
 
@@ -82,7 +82,7 @@ The AAD application created above will be used by Common Data Service to call Fi
 
 The next steps walks through this process in Finance and Operations apps.
 
-1.  In Finance and Operations, go to System Administration \> Users \> Users.
+1.  In Finance and Operations, go to **System Administration \> Users \> Users**.
 
 2.  Select **New** to add a new user. Enter the following information:
 
@@ -90,7 +90,7 @@ The next steps walks through this process in Finance and Operations apps.
 
     - **User name** - Enter **cds integration** (or a different value).
 
-    - **Provider** = Leave at the default value.
+    - **Provider** - Leave at the default value.
 
     - **Email** - Enter **cdsintegration** (or a different value, does *not* need to be a valid email account).
 
@@ -98,7 +98,7 @@ The next steps walks through this process in Finance and Operations apps.
 
     - Remove all other roles including **System user**.
 
-3.  Go to System Administration \> Setup \> Azure Active Directory applications to register Common Data Service. 
+3.  Go to **System Administration \> Setup \> Azure Active Directory applications** to register Common Data Service. 
 
     - Add a new row.
 
@@ -110,7 +110,7 @@ The next steps walks through this process in Finance and Operations apps.
 
 The next step in the process is to provide Common Data Service with the Finance and Operations instance to connect to. The following steps walks through this part of the process.
 
-1.  In Common Data Service, go to Advanced Settings \> Administration \> Virtual Entity Data Sources.
+1.  In Common Data Service, go to **Advanced Settings \> Administration \> Virtual Entity Data Sources**.
 
 2.  Select the data source named “Finance and Operations”.
 
@@ -118,7 +118,7 @@ The next step in the process is to provide Common Data Service with the Finance 
 
     - **Target URL** - The URL at which you can access Finance and Operations.
 
-    - **OAuth URL** = https://login.windows.net/
+    - **OAuth URL** - https://login.windows.net/
 
     - **Tenant ID** - Your tenant, such as “contoso.com”.
 
@@ -148,7 +148,7 @@ Due to the large number of OData enabled entities available in Finance and Opera
 
 ## Refreshing virtual entity metadata
 
-The virtual entity metadata can be force-refreshed when it is expected for the entity metadata in Finance and Operations to have changed. This can be done by selecting Refresh = Yes and saving. This will sync the latest entity definition from Finance and Operations to Common Data Service and update the virtual entity.
+The virtual entity metadata can be force-refreshed when it is expected for the entity metadata in Finance and Operations to have changed. This can be done by setting **Refresh** to **Yes** and saving. This will sync the latest entity definition from Finance and Operations to Common Data Service and update the virtual entity.
 
 Referencing virtual entities
 ----------------------------
@@ -160,7 +160,7 @@ To consume virtual entities:
 
 1.  Create a separate solution as usual in Common Data Service, which will contain the consuming logic.
 
-2.  Select Entities \> Add Existing. Select the virtual entity that you want to reference from the list.
+2.  Select **Entities \> Add Existing**. Select the virtual entity that you want to reference from the list.
 
 3.  When prompted to select assets to add, select any forms, views, or other elements that you want to customize, then select **Finish**.
 
