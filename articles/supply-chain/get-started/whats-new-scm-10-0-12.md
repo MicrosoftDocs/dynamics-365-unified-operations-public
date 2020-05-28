@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.12
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management, preview version 10.0.12. This version has a build number of 10.0.505 <!-- KFM: Find real build number --> and is available as follows:
+This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management, preview version 10.0.12. This version has a build number of 10.0.507 <!-- KFM: I think this is the right build number, but check again --> and is available as follows:
 
 - **Preview release:** May 2020
 - **General availability (self-update):** July 2020
@@ -59,7 +59,7 @@ The following features are included in this release. The feature titles link to 
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.12 includes platform updates. To learn more, see [Platform updates for version 10.0.12 of Finance and Operations apps (August 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-36.md). <!-- KFM: Check/update this link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.12 includes platform updates. To learn more, see [Platform updates for version 10.0.12 of Finance and Operations apps (August 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12.md). <!-- KFM: Check/update this link -->
 
 ### Bug fixes
 
