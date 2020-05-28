@@ -118,9 +118,9 @@ The specified values are used for output to the XML file blocks. The following t
 
 Go to **Project management and accounting \> Setup \> Categories \> Project categories** to set up project categories that have a **Fee** or **Expense** transaction type. The category ID should equal the value that is defined for **Bollo** at the legal entity level. For more information, see the previous table.
 
-The project category of the **Fee** transaction type can be used only for stamp duty that is included in the invoice. The project category of the **Expense** transaction type can be used both for invoices that are included and aren't included in a customer invoice. In both cases, the **Bollo** document property type is used.
+The project category of the **Fee** transaction type can be used only for stamp duty that is included in the invoice. The project category of the **Expense** transaction type can be used both for stamp duty that is included and isn't included in a customer invoice. In both cases, the **Bollo** document property type is used.
 
-When you create **Fee** or **Expense** journal lines, select the category that was defined for stamp duty, and enter a cost price. The system considers this cost price the stamp duty amount. If you fill in a sales price with the cost price amount, the system considers this amount included in invoice totals. The sales price amount equals 0 (zero), and the transaction isn't included in invoice totals. 
+When you create **Fee** or **Expense** journal lines, select the category that was defined for stamp duty, and enter a cost price. The system considers this cost price the stamp duty amount. 'If you enter a sales price that equals the cost price amount, the system considers this amount included in invoice totals. The sales price amount equals 0 (zero), and the transaction isn't included in invoice totals. 
 
 > [!NOTE]
 > You can use only one of the journal types (**Fee** or **Expense**) for stamp duty. A company that uses only payable stamp duty can use the **Fee** journal type. If a company uses both payable and non-payable stamp duty, it's better to use the **Expense** journal type.
@@ -150,7 +150,7 @@ Go to **Accounts receivable** \> **Customers** \> **All customers**. Open a cust
 
 ### <a name="digitalcert"></a>Digital certificates
 
-Go to **Accounts receivable** \> **Setup** \> **Electronic invoice digital certificates** to electronically sign electronic invoices by using a certificate of either the **Company** type or the **User** type.
+Go to **Accounts receivable** \> **Setup** \> **Electronic signature certificates** to electronically sign electronic invoices by using a certificate of either the **Company** type or the **User** type.
 
 ![Electronic signature certificates page](media/emea-ita-electronic-invocies-certificate.png)
 
@@ -188,7 +188,8 @@ To enable the system to enter information in these blocks, set the following fie
 
 - On the **Sales order** page (**Accounts receivable** \> **Orders** \> **All sales orders**), in the **Header** view, on the **Setup** FastTab, set the fields in the **Base document** section.
 - On the **Free text invoice** page (**Accounts receivable** \> **Invoices** \> **All free text invoices**), in the **Header** view, on the **General** FastTab, set the fields in the **Base document** section.
-- On the **Project proposal** page (**Project management and accounting** \> **Projects** \> **All projects**), on the **Manage** tab, **Bill** \> **Invoice proposal**, **Base document** section.
+- On the **Project proposal** page (**Project management and accounting** \> **Projects** \> **All projects**), on the Action Pane, on the **Manage** tab, in the **Bill** group, select **Invoice proposal**, and then set the fields in the **Base document** section.
+
 
 > [!NOTE]
 > Data from the fields in the **Base document** section is sent as output from different blocks, depending on the value of the **Base document** field.
