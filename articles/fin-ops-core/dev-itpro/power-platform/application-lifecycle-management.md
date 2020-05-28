@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.0
 [!include[banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-The application lifecycle for an end-to-end solution using Finance and Operations virtual entities will encompass both Finance and Operations as well as the Common Data Service. This topic explains this in detail.
+The application lifecycle for an end-to-end solution using Finance and Operations virtual entities will encompass both Finance and Operations as well as Common Data Service. This topic explains this in detail.
 
 ## Solution management
 
@@ -54,13 +54,13 @@ All these solutions must be present in an environment. Otherwise, virtual entiti
 
 ## Managing entities from multiple environments
 
-The MicrosoftOperationsVESupport solution consists of the msdyn\_financeandoperationsvirtualentity entity. This entity represents the virtual entity data source for Finance and Operations that captures connection setup information. Each record in this entity represents a connection to a Finance and Operations instance.
+The MicrosoftOperationsVESupport solution consists of the **msdyn\_financeandoperationsvirtualentity** entity. This entity represents the virtual entity data source for Finance and Operations that captures connection setup information. Each record in this entity represents a connection to a Finance and Operations instance.
 
 A catalog is used to list all the entities in a Finance and Operations instance that are available for virtualization in Common Data Service (in other words, all the entities in Finance and Operations that are enabled for Open Data Protocol \[OData\]). The catalog is part of the default MicrosoftOperationsERPCatalog solution and is applicable to a Finance and Operations instance.
 
-Note that each Common Data Service environment must point to only one Finance and Operations instance at any time, and each Finance and Operations environment must point to only one Common Data Service environment. Therefore, there should be only one record in the msdyn\_financeandoperationsvirtualentity entity.
+Note that each Common Data Service environment must point to only one Finance and Operations instance at any time, and each Finance and Operations environment must point to only one Common Data Service environment. Therefore, there should be only one record in the **msdyn\_financeandoperationsvirtualentity** entity.
 
-The mserp\_financeandoperationsentity entity that represents the catalog can be queried to list the entities in a Finance and Operations instance. Because this entity is a virtual entity, the catalog is never persisted in Common Data Service.
+The **mserp\_financeandoperationsentity** entity that represents the catalog can be queried to list the entities in a Finance and Operations instance. Because this entity is a virtual entity, the catalog is never persisted in Common Data Service.
 
 Notice that the name of the catalog entity has the "mserp\_" prefix. This prefix identifies the entities in the catalog as Finance and Operations entities. The same prefix is also added to the system names of the virtual entities that are generated for Finance and Operations in the MicrosoftOperationsERPVE solution. Therefore, the maker can distinguish Finance and Operations virtual entities from other entities. The prefix is set in the managed solution and can't be changed.
 
