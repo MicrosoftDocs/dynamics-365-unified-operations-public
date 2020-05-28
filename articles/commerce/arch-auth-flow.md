@@ -34,8 +34,18 @@ ms.dyn365.ops.version: Release 10.0.11
 
 [!include [banner](includes/banner.md)]
 
-This topic provides an overview of the various authentication flows for the Dynamics 365 Commerce solution. While there are a number of different authentication scenarios and flows currently supported on the Dynamics 365 Commerce solution as described below, it is worth noting that the core authentication infrastructure of the headless commerce engine is fully based on <a href="https://openid.net/connect/" target="_blank">![OpenID Connect].
+This topic provides an overview of the various authentication flows for the Dynamics 365 Commerce solution. While there are a number of different authentication scenarios and flows currently supported on the Dynamics 365 Commerce solution as described below, it is worth noting that the core authentication infrastructure of the headless commerce engine is fully based on [OpenID Connect](https://openid.net/connect/).
 
-The following illustration shows an overview of Dynamics 365 Commerce components.
+## Overview
+### Authentication Methods
+Access to each of the APIs on the Headless Commerce Engine (i.e. Commerce Scale Unit) is natively restricted by one or more of the following roles.
 
-<a href="https://docs.microsoft.com/en-us/dynamics365/commerce/media/commerce-component-overview.jpg" target="_blank">![Dynamics 365 Commerce Component Overview](./media/commerce-component-overview.jpg)</a>
+1. **Employee**: These APIs require a POS device activation / token and authenticated employee to access.
+1. **Customer**: These APIs require an authenticated customer and are generally used by e-Commerce site, e.g. to retrieve order history or change customer details.
+1. **Application**: These APIs require application level authentication (e.g. AAD service to service authentication).
+1. **Anonymous**: These APIs are primarily used by e-Commerce sites without user login.
+1. **Customized APIs**: Access to these APIs can be restricted using any of the method described above, e.g. POS devices, end-user, or anonymous authentication.
+
+The full list of Headless Commerce Engine APIs and their access restrictions can be found under [Commerce Scale Unit customer and consumer APIs](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/retail-server-customer-consumer-api).
+
+(./media/commerce-component-overview.jpg)
