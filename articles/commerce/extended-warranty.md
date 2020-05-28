@@ -31,24 +31,27 @@ ms.dyn365.ops.version:
 
 # Extended Warranty
 
+This topic covers extended warranties and describes how to create and configure them in Microsoft Dynamics 365 Commerce.
+
 ## Overview
 
-Customers are opting for extended support and services when they buy products, especially for consumer products that sell at a premium price point like phones, computers, cards, etc. Extended warranties can be sold in the retail channel during the initial purchase or for a limited time period after the initial purchase. For a retailer, providing an extended warranty can help build customer loyalty. With the extended warranty purchase, customers know where to go for service and support in case of issues and can gain the confidence that their issues will be handled well.
+Customers are increasingly opting for extended support and services when they buy products, especially for consumer products that sell at a premium price point like phones and computers. For a retailer, providing extended warranties for purchase can help build customer loyalty. With extended warranties, customers know where to go for service and support and can have confidence that their issues will be handled effectively.
 
-## Warranty item set up
+Extended warranties can be sold to customers in the retail channel during the initial product purchase, or for a limited time period after the initial purchase. 
 
-We are providing the functionality to set up a warranty item type and set attributes for the item including the association between a product and warranty item, price of the warranty, warranty duration, and more. Once the warranty item is set up and released to the organizational unit, a retailer will then be able to sell warranties through Modern POS, online, and across other retail channels.
+### Warranty item setup
 
-## Warranty item sell
+Dynamics 365 Commerce provides the functionality to set up a warranty item type and set attributes for the item including the association between a product and warranty item, price of the warranty, warranty duration, and more. Once the warranty item is set up and released to the organizational unit, a retailer will then be able to sell warranties through Modern Point of Sale (POS), online stores, and other retail channels.
 
-Extended warranties are sold in a retail channel during the initial purchase or for a limited timeframe after the initial purchase. In point of sale (POS), a sales associate will be prompted to consider an extended warranty when a related product is added to cart. This provides an upsell or cross-sell opportunity to the sales associate as part of the sales flow. A customer can also come back later and buy an extended warranty for the product. In this case, sales associates can look up the original transaction and sell the customer the
-related extended warranty.
+### Warranty item sales
 
-## Warranty policy
+Extended warranties are sold in a retail channel during the initial product purchase, or for a limited time after the initial purchase. At the POS, a sales associate will be prompted to consider an extended warranty when a related product is added to a customer's cart. This provides an upsell or cross-sell opportunity to the sales associate as part of the sales flow. A customer can also return later and buy an extended warranty for the previously-purchased product. A sales associates can then look up the original transaction and sell the customer the related extended warranty item.
 
-Once the extended warranty is sold, a warranty policy entity will be created. The warranty policy number can be shared to the customer to give them a reference for the extended warranty purchased. The warranty policy will include the start date, end date, terms and conditions, serial number of the item, and more for the warranty sold.
+### Warranty policy
 
-## Terminology
+Once the extended warranty is sold, a warranty policy entity is created. The warranty policy number can be shared with the customer to give them a reference for the extended warranty purchased. The warranty policy will include information such as the purchased warranty item's start and end dates, terms and conditions, and serial number of the item.
+
+### Terminology
 
 | TERM / ABBREVIATION          | DESCRIPTION                                                                                             |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
