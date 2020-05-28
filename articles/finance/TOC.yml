@@ -2288,7 +2288,7 @@
           href: localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
         - name: Semansys XBRL integration
           href: localizations/tasks/nl-00003-semansys-xbrl-integration.md
-        - name: Audit file: XML Auditfile Financieel, XAF
+        - name: XML Auditfile Financieel, XAF
           hred: localizations/emea-nl-audit-file.md
       - name: Norway
         items:
