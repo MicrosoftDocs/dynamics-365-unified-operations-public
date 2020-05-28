@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ## Verify requirements and grant access
 
-Before you enable dual-write, follow these steps to make sure that you meet the minimum system requirements and to grant access to the apps that must connect to each other. The dual-write health check validates the prerequisites as you complete the dual-write wizard to link a Finance and Operations app environment to a Common Data Service environment having CRM prime solution installed. Alternatively, you can choose a model-driven app for Dynamics 365 environment that comes with Common Data Service having CRM prime solution.
+Before you enable dual-write, follow these steps to make sure that you meet the minimum system requirements and to grant access to the apps that must connect to each other. The dual-write health check validates the prerequisites as you complete the dual-write wizard to link a Finance and Operations app environment to a Common Data Service environment.
 
 1. Validate the platform update and app version.
 
