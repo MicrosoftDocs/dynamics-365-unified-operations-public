@@ -160,7 +160,7 @@ A qualified signature certificate can be obtained from one of the certifiers in 
 
 Microsoft Dynamics 365 Finance supports the **XAdES-BES** signature format. To enable Finance to support FatturaPA, follow these steps.
 
-1. On client computers, install and configure digital certificates that have private and public keys in the **Certificate Server** to the **Personal** node.
+1. On client computers, install and configure digital certificates that have private and public keys in the **Application server machine** to the **Personal** node.
 
     > [!NOTE] 
     > You can complete the installation and configuration by using standard Windows functionality.
