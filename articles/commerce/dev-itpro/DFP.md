@@ -124,23 +124,23 @@ Next, select the Key Vault URL that is used to store the Fraud Protection secret
 
 ## Loss prevention in Commerce
 
-The **Loss prevention** module in Fraud Protection will be made generally available in the third quarter (Q3) of 2020. The out-of-box integration for Loss prevention will be available in Commerce version 10.0.12.
+The **Loss prevention** capability in Fraud Protection will be made generally available in the third quarter (Q3) of 2020. The out-of-box integration for Loss prevention will be available in Commerce version 10.0.12.
 
 ### Loss prevention overview
 
 Fraud that arises from abuse of return and discount policies is a top source of shrinkage for retailers. Existing physical deterrents are easy to work around. Therefore, to catch the most sophisticated forms of abuse, it's critical that retailers use artificial intelligence (AI) to identify loss.
 
-The **Loss prevention** module in Fraud Prevention analyzes in-store returns and discounts to identify anomalies that might be caused by abuse of return and discount policies. By using AI, the **Loss prevention** module can identify patterns that are often missed but that are indicators of abusive behavior, and can uncover hard-to-detect sources of shrinkage.
+The **Loss prevention** module in Fraud Prevention analyzes in-store returns and discounts to identify anomalies that might be caused by abuse of return and discount policies. By using AI, the **Loss prevention** module can identify patterns and anomalies that indicate potential fraud, and can uncover hard-to-detect sources of shrinkage.
 
 The **Loss prevention** module analyzes Commerce data that is available through Data Lake Storage Gen2. This integration is an opt-in integration and isn't turned on by default.
 
-After the **Loss prevention** module has finished analyzing the data, the results are surfaced in a [Fraud Protection](https://go.microsoft.com/fwlink/?linkid=2131023) dashboard. From there, users can evaluate the results and observe trends that might indicate of abusive behavior.
+After **Loss prevention** has finished analyzing the data, the results are surfaced in a [Fraud Protection](https://go.microsoft.com/fwlink/?linkid=2131023) dashboard. From there, users can evaluate the results and observe trends that might indicate of potential fraud.
 
 ### Turning on the Loss prevention integration with Commerce
 
 #### Set up Fraud Protection
 
-To set up Fraud Protection, [request a callback](https://dynamics.microsoft.com/get-started/?appname=fraudprotection) from a Dynamics 365 sales representative. When the merchant's Fraud Protection environment is available, and loss prevention settings have been configured, you can continue the setup by turning on Data Lake Storage Gen2 for the Commerce environment.
+To set up Fraud Protection, [request a callback](https://dynamics.microsoft.com/get-started/?appname=fraudprotection) from a Dynamics 365 sales representative. When the merchant's Fraud Protection environment is available, and loss prevention settings have been configured, you can continue the setup by turning on Data Lake Storage Gen2 for the Commerce environment.  
 
 #### Turn on Data Lake Storage Gen2 for your Commerce environment
 
@@ -149,6 +149,10 @@ Before the data can be available in Data Lake Storage Gen2, the service must be 
 #### Turn on Loss prevention
 
 You can turn on the Loss prevention integration through the **Feature management** workspace in Commerce. The feature is named "Dynamics 365 Fraud Protection (DFP) Loss Prevention." No other setup in Commerce is required to turn on the integration.
+
+#### Configure Loss Prevention to connect to Data Lake Storage Gen2
+
+The final step will be to return to the Fraud Protection environment and connect Loss Prevention to the Data Lake Storage Gen2 pool associated with the Commerce account. 
 
 ## Privacy notice
 
