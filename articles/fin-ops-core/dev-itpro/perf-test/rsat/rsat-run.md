@@ -29,11 +29,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Run test cases by using the Regression suite automation tool (RSAT)
+# Use the Regression suite automation tool (RSAT)
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to load test cases from Azure DevOps, generate automation files, modify test parameters, run tests, investigate results, and save your work back to Azure DevOps.
+This topic explains how to load test cases from Azure DevOps, generate automation files, modify test parameters, run and investigate results, and save your work back to Azure DevOps.
 
 ## Load test cases and create automation files
 In Azure DevOps, select **Load** to download test cases and test case automation files. All test cases belonging to the test plan specified in the **Settings** dialog box are downloaded.
@@ -108,7 +108,10 @@ Select **Run** to execute the selected test cases. Only test cases with existing
 You can modify the order in which test cases are executed using the up and down arrow buttons.
 
 ### Pause prior to a test case run 
-You can add a pause before a test case starts execution. If you want to pause, update the cell **Pause (seconds)** on the **General** tab of the Excel parameters file.
+You can add a pause before a test case starts execution. If you want to pause, update the cell **Pause (seconds)** on the **General** tab of the Excel parameters file of the desired test case.
+
+### Abort a run
+When a test run is in progress, you can click the Stop button to abort the run. Execution will terminate after the currently running test case completes. The remaining test cases will be marked as **Not Executed** in Azure DevOps.
 
 ## Investigate results
 When all test cases complete execution, **Pass** or **Fail** will be populated in the **Result** column. You can click on the result to see error messages.
@@ -140,9 +143,12 @@ You can also review the response time of each step of the test case by opening t
 
 You need version 1.200 or newer for response times to be available.
 
-## Save your work
-To preserve your work, select **Upload**. This will upload test automation files, including Excel test parameter files, of all selected test cases to Azure DevOps for future use.
-After test automation files are uploaded to Azure DevOps, the next time you use the Regression suite automation tool, even from a different computer, you can simply use **Load** and then **Run**, without generating test execution files or editing Excel parameter files.
+## Upload to Azure DevOps to commit your work
+To commit your work to Azure DevOps, select **Upload**. This will upload test automation files, including Excel test parameter files, of all selected test cases to Azure DevOps for future use. After test automation files are uploaded to Azure DevOps, the next time you use the Regression suite automation tool, even from a different computer, you can simply use **Load** and then **Run**, without generating test execution files or editing Excel parameter files.
+
+In the upload menu, you also have the option to upload recording files (Task recordings) only. 
+
+If you are unsure what test cases to select, and you want to commit all changes (Since last load) to Azure DevOps, select **Upload all modified automation files** in the upload menu.
 
 ## Process compliance
 RSAT provides capabilities for managing the readiness of test cases. It also provides a sign-off process for test runs.
