@@ -945,6 +945,8 @@ To specify how a template is filled in at runtime, you must bind every format el
 8.  Configure similar bindings for the rest of format elements as described in the table below.
 9.  Select **Save**.
 
+The content of the **Data source path** column in the table below is presented assuming that the [relative path](relative-path-data-bindings-er-models-format.md) ER feature is enabled.
+
 | **Format element path**                                        | **Data source path**                                                  |
 |----------------------------------------------------------------|-----------------------------------------------------------------------|
 | Excel \\ ReportTitle                                           |`@"GER_LABEL:ReportTitle"`                                             |
