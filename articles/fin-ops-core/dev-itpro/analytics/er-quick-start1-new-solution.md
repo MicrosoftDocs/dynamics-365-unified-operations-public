@@ -348,7 +348,7 @@ Using this technique, compete the entry of required fields of the editable data 
 <td>Flag whether this question is primary</td>
 </tr>
 <tr>
-]<td>*** SequenceNumber</td>
+<td>*** SequenceNumber</td>
 <td>Integer</td>
 <td>Sequence number of the current question</td>
 </tr>
