@@ -134,7 +134,7 @@ The **Loss prevention** module in Fraud Prevention analyzes in-store returns and
 
 The **Loss prevention** module analyzes Commerce data that is available through Data Lake Storage Gen2. This integration is an opt-in integration and isn't turned on by default.
 
-After **Loss prevention** has finished analyzing the data, the results are surfaced in a [Fraud Protection](https://go.microsoft.com/fwlink/?linkid=2131023) dashboard. From there, users can evaluate the results and observe trends that might indicate of potential fraud.
+After **Loss prevention** has finished analyzing the data, the results are surfaced in a [Fraud Protection](https://go.microsoft.com/fwlink/?linkid=2131023) dashboard. From there, users can evaluate the results and observe trends that might indicate potential fraud.
 
 ### Turning on the Loss prevention integration with Commerce
 
@@ -152,7 +152,7 @@ You can turn on the Loss prevention integration through the **Feature management
 
 #### Configure Loss Prevention to connect to Data Lake Storage Gen2
 
-The final step will be to return to the Fraud Protection environment and connect Loss Prevention to the Data Lake Storage Gen2 pool associated with the Commerce account. 
+The final step is to return to the Fraud Protection environment and connect Loss Prevention to the Data Lake Storage Gen2 pool that is associated with the Commerce account. 
 
 ## Privacy notice
 
