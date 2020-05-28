@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.0
 [!include[banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-Finance and Operations is a virtual data source in Common Data Service, and enables full CRUD (create, read, update, delete) operations from Common Data Service and Microsoft Power Platform. By definition, the data for virtual entities doesn't reside in Common Data Service. Instead, it continues to reside in the application where it belongs. To enable CRUD operations on Finance and Operations entities from the Common Data Service, entities must be made available as virtual entities in Common Data Service. The allows CRUD operations to be performed, from Common Data Service and Microsoft Power Platform, on data that resides in Finance and Operations.
+Finance and Operations is a virtual data source in Common Data Service, and enables full CRUD (create, read, update, delete) operations from Common Data Service and Microsoft Power Platform. By definition, the data for virtual entities doesn't reside in Common Data Service. Instead, it continues to reside in the application where it belongs. To enable CRUD operations on Finance and Operations entities from Common Data Service, entities must be made available as virtual entities in Common Data Service. The allows CRUD operations to be performed, from Common Data Service and Power Platform, on data that resides in Finance and Operations apps.
 
 ## Prerequisite reading
 
@@ -47,7 +47,7 @@ To understand the architecture of virtual entities for Finance and Operations ap
 
 ## Virtual entities for Finance and Operations apps
 
-All Open Data Protocol (OData) entities in Finance and Operations are available as virtual entities in Common Data Service, and therefore also in Microsoft Power Platform. Makers can now build experiences in customer engagement apps with data directly from Finance and Operations with full CRUD capability and without copying to Common Data Service. Power Apps Portals can be used to build external-facing websites that enable collaboration scenarios for business processes in Finance and Operations.
+All Open Data Protocol (OData) entities in Finance and Operations are available as virtual entities in Common Data Service, and therefore also in Power Platform. Makers can now build experiences in customer engagement apps with data directly from Finance and Operations with full CRUD capability and without copying to Common Data Service. Power Apps Portals can be used to build external-facing websites that enable collaboration scenarios for business processes in Finance and Operations.
 
 ## Architecture
 
