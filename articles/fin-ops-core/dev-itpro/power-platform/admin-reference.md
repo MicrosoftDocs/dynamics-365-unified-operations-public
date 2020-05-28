@@ -32,142 +32,140 @@ ms.dyn365.ops.version: 10.0.12
 [!include[banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic provides step-by-step procedure to set up and configure virtual entities for Finance and Operations in the Common Data Service.
+This topic provides step-by-step instructions about how to set up and configure virtual entities for Finance and Operations apps in Common Data Service.
 
 ## Getting the solution
-The CDS solution for Finance and Operations virtual entities must be downloaded from the [virtual entity solution](https://www.yammer.com/dynamicsaxfeedbackprograms/#/files/596330233856).
+The Common Data Service solution for Finance and Operations virtual entities must be downloaded from the [virtual entity solution](https://www.yammer.com/dynamicsaxfeedbackprograms/#/files/596330233856).
 
-Ensure the following solutions are installed in CDS. These solutions must be extracted from the downloaded package.
+Ensure the following solutions are installed in Common Data Service. These solutions must be extracted from the downloaded package.
 
--   Dynamics365Company
-    -   This adds the “Company” entity, which is referenced by all Finance and Operations entities with a PrimaryCompanyContext metadata value.
--   MicrosoftOperationsVESupport
-    -   This provides the core support for the Finance and Operations virtual entity feature.
+- **Dynamics365Company** - This adds the **Company** entity, which is referenced by all Finance and Operations entities with a PrimaryCompanyContext metadata value.
 
--   MicrosoftOperationsERPCatalog
-    -   This provides a list of available Finance and Operations entities through the mserp_financeandoperationsentity virtual entity.
+- **MicrosoftOperationsVESupport** - This provides the core support for the Finance and Operations virtual entity feature.
 
--   MicrosoftOperationsERPVE
-    -   This is the API-managed solution which will contain the generated virtual entities as they are made visible.
+- **MicrosoftOperationsERPCatalog** - This provides a list of available Finance and Operations entities through the mserp_financeandoperationsentity virtual entity.
 
-Alternatively, you can also import the solutions package directly as a single unit in CDS by using the [PackageDeployer
+- **MicrosoftOperationsERPVE** - This is the API-managed solution, which will contain the generated virtual entities as they are made visible.
+
+Alternatively, you can also import the solutions package directly as a single unit in Common Data Service by using the [PackageDeployer
 tool](https://docs.microsoft.com/power-platform/admin/deploy-packages-using-package-deployer-windows-powershell#PD_tool).
 
-## Authentication & Authorization
+## Authentication and authorization
 
-After the solutions are imported in the CDS environment, both environments must be set up to connect to each other. CDS will call Finance and Operations using Service-to-Service (S2S) authentication, based upon an Azure Active Directory (AAD) application. This new AAD application represents the single instance of the CDS environment. If you have multiple pairs of CDS and Finance and Operations environments, separate AAD applications for each pair must be created to ensure connections are established between the correct pair of Finance and Operations and CDS environments. The below procedure shows the creation of the AAD application.
+After the solutions are imported in the Common Data Service environment, both environments must be set up to connect to each other. Common Data Service will call Finance and Operations using Service-to-Service (S2S) authentication, based on an Azure Active Directory (AAD) application. This new AAD application represents the single instance of the Common Data Service environment. If you have multiple pairs of Common Data Service and Finance and Operations environments, separate AAD applications for each pair must be created to ensure connections are established between the correct pair of Finance and Operations and Common Data Service environments. The following procedure shows the creation of the AAD application.
 
-1.  Navigate to <https://portal.azure.com> \> Azure Active Directory \> App registrations
+1.  Go to <https://portal.azure.com> \> Azure Active Directory \> App registrations
 
-2.  Click New Registration
+2.  Select **New Registration**. Enter the following information:
 
-    1.  Name = \<unique name\>
+    - **Name** - Enter a unique name.
 
-    2.  Account type = “Any Azure AD directory” (single or multi-tenant)
+    - **Account type** - Enter **Any Azure AD directory** (single or multi-tenant).
 
-    3.  Redirect URI = (Leave blank)
+    - **Redirect URI** - Leave blank.
 
-    4.  Click register
+    - Select **Register**.
 
-    5.  Make note of the “Application (client) ID” value, you will need it later.
+    - Make note of the **Application (client) ID** value, you will need it later.
 
-3.  Create a symmetric key for the application
+3.  Create a symmetric key for the application.
 
-    1.  Click Certificates & secrets in the newly created application
+    - Select **Certificates & secrets** in the newly created application.
 
-    2.  Click New client secret
+    - Select **New client secret**.
 
-    3.  Provide a description and an expiration date
+    - Provide a description and an expiration date.
 
-    4.  Click Save. A key will be created and displayed. Copy this value for later use.
+   - Select **Save**. A key will be created and displayed. Copy this value for later use.
 
-The AAD application created above will be used by CDS to call Finance and Operations. As such, it must be trusted by Finance and Operations and associated with a user account with the appropriate rights in Finance and Operations. A special service user must be created in Finance and Operations with rights *only* to the virtual entity functionality, and no other rights. After completing this step, any application with the secret of the AAD application create above, will be able to call this Finance and Operations environment and access the virtual entity functionality.
-The next steps walks through this process in Finance and Operations.
+The AAD application created above will be used by Common Data Service to call Finance and Operations apps. As such, it must be trusted by Finance and Operations and associated with a user account with the appropriate rights in Finance and Operations. A special service user must be created in Finance and Operations with rights *only* to the virtual entity functionality, and no other rights. After completing this step, any application with the secret of the AAD application create above will be able to call this Finance and Operations environment and access the virtual entity functionality.
 
-1.  In Finance and Operations, navigate to System Administration \> Users \> Users
+The next steps walks through this process in Finance and Operations apps.
 
-2.  Select “New” to add a new user
+1.  In Finance and Operations, go to System Administration \> Users \> Users.
 
-    1.  User ID = “cdsintegration” (or a different value)
+2.  Select **New** to add a new user. Enter the following information:
 
-    2.  User name = “cds integration” (or a different value)
+    - **User ID** - Enter **cdsintegration** (or a different value).
 
-    3.  Provider = (leave at its default value)
+    - **User name** - Enter **cds integration** (or a different value).
 
-    4.  Email = “cdsintegration” (or a different value, does *not* need to be a valid email account)
+    - **Provider** = Leave at the default value.
 
-    5.  Assign the security role “CDS virtual entity application” to this user
+    - **Email** - Enter **cdsintegration** (or a different value, does *not* need to be a valid email account).
 
-    6.  Remove all other roles including “System user”
+    - Assign the security role **CDS virtual entity application** to this user.
 
-3.  Navigate to System Administration \> Setup \> Azure Active Directory applications to register CDS
+    - Remove all other roles including **System user**.
 
-    1.  Add a new row
+3.  Go to System Administration \> Setup \> Azure Active Directory applications to register Common Data Service. 
 
-    2.  Client ID = The “Application (client) ID” created above
+    - Add a new row.
 
-    3.  Name = “CDS Integration” (or a different name)
+    - **Client ID** - The **Application (client) ID** created above
 
-    4.  User ID = The user ID created above
+    - **Name** - Enter **CDS Integration** (or a different name).
 
-The next step in the process is to tell CDS, which Finance and Operations instance to connect to. The following steps walks through this part of the process.
+    - **User ID** - The user ID created above.
 
-1.  In CDS, navigate to Advanced Settings \> Administration \> Virtual Entity Data Sources
+The next step in the process is to provide Common Data Service with the Finance and Operations instance to connect to. The following steps walks through this part of the process.
 
-2.  Select the data source named “Finance and Operations”
+1.  In Common Data Service, go to Advanced Settings \> Administration \> Virtual Entity Data Sources.
 
-3.  Fill in the information from the steps above
+2.  Select the data source named “Finance and Operations”.
 
-    1.  Target URL = (The URL at which you can access Finance and Operations)
+3.  Fill in the information from the steps above.
 
-    2.  OAuth URL = https://login.windows.net/
+    - **Target URL** - The URL at which you can access Finance and Operations.
 
-    3.  Tenant ID = (Your tenant, such as “contoso.com”)
+    - **OAuth URL** = https://login.windows.net/
 
-    4.  AAD Application ID = The “Application (client) ID” created above
+    - **Tenant ID** - Your tenant, such as “contoso.com”.
 
-    5.  AAD Application Secret = The secret generated above
+    - **AAD Application ID** - The **Application (client) ID** created above.
 
-    6.  AAD Resource = 00000015-0000-0000-c000-000000000000 (this is the AAD application representing Finance and Operations, and should always be this same value)
+    - **AAD Application Secret** - The secret generated above.
 
-    7.  Save the changes
+    - **AAD Resource** - Enter 00000015-0000-0000-c000-000000000000 (this is the AAD application representing Finance and Operations, and should always be this same value).
+
+4.  Save the changes.
 
 ## Enabling virtual entities
 
-Due to the large number of OData enabled entities available in Finance and Operations, by default, the entities are not available as virtual entities in CDS. The steps outlines below allows for enabling entities to be virtual as needed.
+Due to the large number of OData enabled entities available in Finance and Operations, by default, the entities are not available as virtual entities in Common Data Service. The following steps allow for enabling entities to be virtual, as needed.
 
-1. In CDS, go to advanced find
+1. In Common Data Service, go to **Advanced find**.
 
-2. Look for “Available Finance and Operations Entities” and click results
+2. Look for “Available Finance and Operations Entities” and select **Results**.
 
 ![Catalog](../media/fovecatalog.png)
 
-3. Locate and open the entity you wish to enable
+3. Locate and open the entity that you want to enable.
 
-4. Set visible = Yes and save. This will generate the virtual entity and cause it to appear in all appropriate menus such as the advanced find dialog.
+4. Set **Visible** to **Yes** and save. This will generate the virtual entity, so that it will appear in all of the appropriate menus, such as the advanced find dialog box.
 
 ![Enable VE](../media/foveenable.png)
 
 ## Refreshing virtual entity metadata
 
-The virtual entity metadata can be force-refreshed when it is expected for the entity metadata in Finance and Operations to have changed. This can be done by selecting Refresh = Yes and saving. This will sync the latest entity definition from Finance and Operations to CDS and update the virtual entity.
+The virtual entity metadata can be force-refreshed when it is expected for the entity metadata in Finance and Operations to have changed. This can be done by selecting Refresh = Yes and saving. This will sync the latest entity definition from Finance and Operations to Common Data Service and update the virtual entity.
 
 Referencing virtual entities
 ----------------------------
 
-The virtual entities are all generated in the MicrosoftOperationsERPVE solution which is "API Managed". That means the items in the solution change as you make entities visible/hidden, but it is still a "managed" solution that you can take dependency upon. The standard ALM flow would be to just take a standard reference to a virtual entity from this solution with the "add existing" option
+The virtual entities are all generated in the MicrosoftOperationsERPVE solution, which is API Managed. That means the items in the solution change as you make entities visible/hidden, but it is still a managed solution that you can take dependency on. The standard ALM flow would be to just take a standard reference to a virtual entity from this solution with the **Add existing** option
 in the ISV solution. It will then show as a missing dependency of the solution and be checked at solution import time. During import if a specified virtual entity does not yet exist, it would automatically be made visible without needing additional work.
 
 To consume virtual entities:
 
-1.  Create a separate solution as usual in CDS which will contain the consuming logic.
+1.  Create a separate solution as usual in Common Data Service, which will contain the consuming logic.
 
-2.  Select Entities \> Add Existing and select the virtual entity you wish to reference from the list.
+2.  Select Entities \> Add Existing. Select the virtual entity that you want to reference from the list.
 
-3.  When prompted to select assets to add, select any forms, views, or other elements you wish to customize, then select finish.
+3.  When prompted to select assets to add, select any forms, views, or other elements that you want to customize, then select **Finish**.
 
-From the development tooling, existing elements such as forms may be modified for the virtual entity. Additionally, new forms, views, and other elements may also be added.
+From the development tooling, existing elements such as forms can be modified for the virtual entity. Additionally, new forms, views, and other elements can also be added.
 
 ![Solution](../media/fovesolution.png)
 
-When the resulting solution is exported, it will contain hard dependencies upon the virtual entity generated in the MicrosoftOperationsERPVE solution.
+When the solution is exported, it will contain hard dependencies on the virtual entity generated in the MicrosoftOperationsERPVE solution.
