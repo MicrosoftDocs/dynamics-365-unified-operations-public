@@ -39,7 +39,7 @@ To access Project onboarding, log in to LCS and on the main menu, select **Proje
 > [!NOTE]
 > Project Onboarding is available for implementation projects and must be completed before deploying any of the Microsoft-managed environments. For more information about the implementation project, see [Lifecycle Services (LCS) for Finance and Operations apps customers](lcs-works-lcs.md#lcs-workspace-for-the-current-versions-of-the-finance-and-operations-apps).
 
-For more information about the onboarding process, see [Onboard an implementation project](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/onboard#lcs-implementation-project-workspace) and watch the [Tech Talk, Finance and Operations: Onboarding to Dynamics 365](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-onboarding-to-dynamics-365-1-10-19)
+For more information about the onboarding process, see [Onboard an implementation project](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/onboard#lcs-implementation-project-workspace) and watch the [Tech Talk, Finance and Operations: Onboarding to Dynamics 365](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-onboarding-to-dynamics-365-1-10-19)
 
 ## Onboarding steps
 
