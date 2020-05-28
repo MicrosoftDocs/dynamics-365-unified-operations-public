@@ -2,7 +2,7 @@
 # required metadata
 
 title: Warehouse slotting
-description: Warehouse slotting lets you consolidate demand by item and unit of measure from orders that have a status of ordered, reserved, or released. It allows warehouse managers to plan picking locations intelligently before releasing orders to the warehouse and creating picking work.
+description: This topic provides information about warehouse slotting. Warehouse slotting lets you consolidate demand by item and unit of measure from orders that have a status of Ordered, Reserved, or Released. It helps warehouse managers intelligently plan picking locations before they release orders to the warehouse and create picking work.
 author: mirzaab
 manager: AnnBe
 ms.date: 03/05/2020
@@ -29,268 +29,326 @@ ms.dyn365.ops.version: Release 10.0.8
 
 # Warehouse slotting
 
-Warehouse slotting lets you consolidate demand by item and unit of measure from orders that have a status of *ordered*, *reserved*, or *released*. Generated demand can then be applied to locations that will be used for picking based on quantity, unit, physical dimensions, fixed locations, and more. Once the slotting plan has been established, replenishment work can then be created to bring the appropriate amount of inventory to each location.
+Warehouse slotting lets you consolidate demand by item and unit of measure from orders that have a status of *Ordered*, *Reserved*, or *Released*. Generated demand can then be applied to locations that will be used for picking, based on quantity, unit, physical dimensions, fixed locations, and more. After the slotting plan has been established, replenishment work can be created to bring the appropriate amount of inventory to each location.
 
-This functionality allows warehouse managers to plan picking locations intelligently before releasing orders to the warehouse and creating picking work.
+This functionality helps warehouse managers intelligently plan picking locations before they release orders to the warehouse and create picking work.
 
-## Enable the warehouse slotting feature
+## Turn on the warehouse slotting feature
 
-Before you can use this feature, it must be enabled on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the feature status and enable it if needed. Here, the feature is listed as:
+Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on if it's required. In the **Feature management** workspace, the feature is listed in the following way:
 
-- **Module** - *Warehouse management*
-- **Feature name** - *Warehouse slotting feature*
+- **Module:** *Warehouse management*
+- **Feature name:** *Warehouse slotting feature*
 
 ## Set up warehouse slotting
 
-To use warehouse slotting, you must set up the following elements in your system:
+To use warehouse slotting, you must set up the following elements in your system.
 
-<a name="unit-tiers"></a>
+### <a name="unit-tiers"></a>Create unit-of-measure tiers for slotting
 
-### Unit-of-measure tiers for slotting
+Unit-of-measure tiers enable multiple units of measure to be grouped together for the purposes of slotting. For example, if multiple sizes of boxes are all picked from the same box picking area, one tier can be created for all the sizes. **A line must be created for each unit of measure that should be part of the tier.**
 
-Unit-of-measure tiers allow multiple units of measure to be grouped together for the purposes of slotting. For example, if there are multiple sizes of boxes that all get picked from the same box picking area, one tier could be created for all the sizes of boxes. ***A line must be created for each unit of measure that should be part of the tier***.
-
-1. Go to **Warehouse management > Setup > Replenishment > Slotting unit of measure tiers**
+1. Go to **Warehouse management \> Setup \> Replenishment \> Slotting unit of measure tiers**.
 1. Select **New**.
-1. In the header enter the following: **Unit of measure tier** - *EaBoxPl*, **Description** - *Each box pallet*.
+1. In the header, set the following values:
+
+    - **Unit of measure tier:** *EaBoxPl*
+    - **Description:** *Each box pallet*
+
 1. Select **Save**.
-1. In the **Units of measure** FastTab, select **New**.
-1. In the new line created add the following: **Unit** - *Box*, **Description** - (will auto populate once saved), **Unit class** - *Quantity*
-1. Select **New** to add a second line to the table.
-1. In the new line created add the following: **Unit** - *ea*, **Description** - (will auto populate once saved), **Unit class** - *Quantity*
-1. Select **New** to add a second line to the table.
-1. In the new line created add the following: **Unit** - *PL*, **Description** - (will auto populate once saved), **Unit class** - *Quantity*
+1. On the **Units of measure** FastTab, select **New** to add a line to the grid.
+1. On the new line, set the following values:
+
+    - **Unit:** *Box*
+    - **Description:** Leave this field blank. It will be filled in automatically when you save your changes.
+    - **Unit class:** *Quantity*
+    
+1. Select **New** to add a second line to the grid.
+1. On the new line, set the following values:
+
+    - **Unit:** *ea*
+    - **Description:** Leave this field blank. It will be filled in automatically when you save your changes.
+    - **Unit class:** *Quantity*
+    
+1. Select **New** to add a third line to the grid.
+1. On the new line, set the following values:
+
+    - **Unit:** *PL*
+    - **Description:** Leave this field blank. It will be filled in automatically when you save your changes.
+    - **Unit class:** *Quantity*
+    
 1. Select **Save** to save the tier.
 
 ### Create a directive code for slotting
 
-Select the directive code to associate to a template.
+You must select the directive code that should be associated with a template.
 
-1. Go to **Warehouse management > Setup > Directive codes**
-1. Select **New** from the Action Pane.
-1. In the **Directive code** field, enter **Slotting**
-1. In the **Directive description** field, enter **Slotting**.
+1. Go to **Warehouse management \> Setup \> Directive codes**.
+1. On the Action Pane, select **New**.
+1. In the **Directive code** field, enter *Slotting*.
+1. In the **Directive description** field, enter *Slotting*.
 
-### Slotting templates
+### Set up slotting templates
 
-Each slotting template controls how inventory gets assigned to location for a specific warehouse.
+Each slotting template controls how inventory is assigned to locations for a specific warehouse. Each template must include a line for each slotting specification. Use the procedures in this section to set up slotting templates.
 
-1. To set them up, go to **Warehouse management > Setup > Replenishment > Slotting templates**. Each template must include a line for each slotting specification.
-1. Select **New**.
+1. Go to **Warehouse management \> Setup \> Replenishment \> Slotting templates**.
+1. Select **New** to create a template.
 
-#### Slotting template header
+Next, you must set up the template header, slotting specifications, and location directives, as explained in the following subsections.
 
-1. In the header of the template, enter the following:
-    - **Slotting template** – _61_
-    - **Description** – _61_
-    - **Demand type** – *Sales order* (Currently only Sales orders is supported)
-    - **Demand strategy** – _Ordered_.  
-        The following values are available:
-      - **Ordered** – The full ordered quantity on the sales order will be considered as demand.
-      - **Reserved** – Only the sales order line quantities that are reserved (physical and ordered) will be considered as demand.
-    - **Warehouse** – _61_
-    - **Allow wave demand to use unreserved quantities** - _Yes_
+#### Set up a slotting template header
 
-You can also specify a query to narrow the scope of what demand is evaluated.
+1. In the header for the template, set the following values:
+
+    - **Slotting template:** _61_
+    - **Description:** _61_
+    - **Demand type:** *Sales order*
+
+        Currently, *Sales order* is the only demand type that is supported.
+
+    - **Demand strategy:** _Ordered_
+
+        The following values are available in this field:
+
+        - **Ordered** – The full ordered quantity on the sales order should be considered demand.
+        - **Reserved** – Only the sales order line quantities that are reserved (physical and ordered) should be considered demand.
+
+    - **Warehouse:** _61_
+    - **Allow wave demand to use unreserved quantities:** _Yes_
+
+You can also specify a query to narrow the scope of the demand that is evaluated.
 
 #### Set up slotting specifications for each template
 
-For each templates that you create, add a line for each slotting specification. Make the following settings for each line:
+For each template that you create, follow these steps to add a line for each slotting specification.
 
-- Select **New** from **Slotting template details** action pane.
-- **Sequence** – _1_
-- **Description** – _Fixed location_
-- **Minimum quantity** – _1_  
-    Sets the minimum quantity of demand that is required for the line.
-- **Maximum quantity** – _1000000_  
-    Sets the maximum quantity of demand that is valid for this line.
-- **Unit** – _(empty)_
-    Sets the unit of measure the minimum and maximum quantities refer to.
-- **Unit of Measure Tier** – _EaBoxPl_  
-    Sets the unit(s) of measure of demand that are valid to be used on this line (See also [Set up unit-of-measure tiers for slotting](#unit-tiers))
-- **Assign slot criteria** – _Consider qty_.  
-    The following values are available:
-  - **Assume empty** – Assumes that all locations in the picking area are empty, does not check the locations for inventory.
-  - **Consider qty** – Checks if the locations in the picking area already contain inventory. Skips any locations that are not empty
-- **Directive code** – _Slotting_  
-    Sets the location directive to use when finding the picking location of the replenishment work.
-- **Overflow location** – _(empty)_  
-    Sets the location inventory that will be put to if the quantity fails to find a location during processing of the line.
-- **Allow let up** – _Yes_  
-    When enabled, if any demand couldn't be slotted, movement work will be created to take inventory out of locations that have inventory, but where nothing was slotted. The template is then run again, ignoring the inventory in the locations. Works best when **Assign slot criteria** = _Consider qty_.
-- **Fixed location usage** – _Only fixed locations for the product_.  
-    The following values are available:
-  - **Fixed and non-fixed locations** – Will not restrict to only using fixed locations
-  - **Only fixed locations for the product** – Will only slot to locations that are fixed locations for the product
-  - **Only fixed locations for the product variant** – Will only slot to locations that are fixed locations for the product variant
-  - Select **Save**
+1. On the **Slotting template details** FastTab, select **New** to create a template line.
+1. On the new line, set the following values:
 
-Create a second template line with the following values:
+    - **Sequence:** _1_
+    - **Description:** _Fixed location_
+    - **Minimum quantity:** _1_
 
-- Select **New** from the **Slotting template details** action pane
-- **Sequence** – _2_
-- **Description** – _Other_
-- **Minimum Qty** – _1_
-- **Maximum Qty** – _1000000_
-- **Unit** – _(empty)_
-- **Unit of measure tier** – _EaBoxPl_
-- **Assign slot criteria** – _Consider qty_
-- **Directive code** – _Slotting_
-- **Overflow location** – _(empty)_
-- **Allow let up** – _Yes_
-- **Use fixed locations** – _Fixed and non-fixed locations_
+        This field defines the minimum quantity of demand that is required for the line.
 
-In the query for the second line, specify the criteria for what location(s) the demand this line can be slotted to.
+    - **Maximum quantity:** _1000000_
 
-1. Focus on **Sequence** *2*
-1. In the **Slotting template details** action pane, select **Edit query**
-1. On the **Range** tab, select **Add** to add a line to the table and enter the following values:
+        This field defines the maximum quantity of demand that is valid for the line.
 
-- **Table** - *Locations*
-- **Derived table** - *Locations*
-- **Field** - *Location profile ID*
-- **Criteria** - *Pick-06*
-  - Select the *Double plus sign* (++) in the field to expand the drop down list and select *Pick-06* - *Picking Site 6* from the list
-- Select **OK**
+    - **Unit:** Leave this field blank.
 
-#### Location directives
+        This field defines the unit of measure that the minimum and maximum quantities refer to.
 
-You must have at least one location directive set up to support slotting picks. Create a new *replenishment location directive* for slotting picks.
+    - **Unit of Measure Tier:** _EaBoxPl_
 
-1. Go to **Warehouse management > Setup > Location directives**
-1. In the left pane **Work order type** select *Replenishment*
-1. Select **New** from the action pane
-1. In the **Location directives** header **Name** field, enter *61 Slotting pick*
+        This field defines the units of measure of demand that are valid for the line. (For more information, see the [Set up unit-of-measure tiers for slotting](#unit-tiers) section earlier in this topic.)
 
-##### Location directives FastTab
+    - **Assign slot criteria:** _Consider qty_
 
-Enter the following in the appropriate field, accept the defaults for other fields.
+        The following values are available in this field:
 
-- **Work type** – _Pick_
-- **Site** – _6_
-- **Warehouse** – _61_
-- **Directive code** – _Slotting_
-- Select **Save** to activate *Lines* FastTab
+        - **Assume empty** – This system should assume that all locations in the picking area are empty and should not check those locations for inventory.
+        - **Consider qty** – The system should check the locations in the picking area for inventory and should skip any locations that aren't empty.
 
-##### Lines FastTab
+    - **Directive code:** _Slotting_
 
-Create a new line and enter the following in the appropriate field, accept the defaults for other fields:
+        This field defines the location directive that is used to find the picking location of the replenishment work.
 
-- Select **New** from the **Lines** action pane
-- **From quantity** – _0_
-- **To quantity** – _1000000_
-- Select **Save** to activate *Location Directive Actions* FastTab
+    - **Overflow location:** Leave this field blank.
 
-##### Location Directive Actions FastTab
+        This field defines the location that inventory that is put to if a location can't be found for the quantity when the line is processed.
 
-Create a new line and enter the following in the appropriate field, accept the defaults for other fields:
+    - **Allow let up:** _Yes_
 
-- Select **New** from the **Location Directives Actions** action pane
-- **Name** – _Bulk_
-- **Strategy** – _None_
-- Select **Save** to activate *Edit query*
+        When this option is set to *Yes*, if any demand can't be slotted, movement work will be created to take inventory out of locations where there is inventory, but where nothing was slotted. The template is then run again. This time, it ignores the inventory in the locations. This functionality works best when the **Assign slot criteria** field is set to _Consider qty_.
 
-##### Edit query
+    - **Fixed location usage:** _Only fixed locations for the product_
 
-- Select **Edit query** from the **Location Directives Actions** action pane
-- In the **Range** tab, select **Add** to add a line to the table
-- Enter the following in the appropriate fields:
-  - **Table** - *Locations*
-  - **Derived table** - *Locations*
-  - **Field** - *Zone ID*
-  - **Criteria** - *Bulk*
-    - Select the *Double plus sign* (++) in the field to expand the drop down list and select *Bulk* from the list
-  - Select **OK**
+        The following values are available in this field:
+
+        - **Fixed and non-fixed locations** – The system should not be limited to using only fixed locations.
+        - **Only fixed locations for the product** – The system should slot only to locations that are fixed locations for the product.
+        - **Only fixed locations for the product variant** – The system should slot only to locations that are fixed locations for the product variant.
+
+1. Select **Save**.
+1. Select **New** to create a second template line.
+1. On the new line, set the following values:
+
+    - **Sequence:** _2_
+    - **Description:** _Other_
+    - **Minimum Qty:** _1_
+    - **Maximum Qty:** _1000000_
+    - **Unit:** Leave this field blank.
+    - **Unit of measure tier:** _EaBoxPl_
+    - **Assign slot criteria:** _Consider qty_
+    - **Directive code:** _Slotting_
+    - **Overflow location:** Leave this field blank.
+    - **Allow let up:** _Yes_
+    - **Use fixed locations:** _Fixed and non-fixed locations_
+
+    In the query for the second line, you will now specify the criteria that are used to determine what locations the demand for that line can be slotted to.
+
+1. Select the line where the **Sequence** field is set to *2*.
+1. Select **Edit query**.
+1. On the **Range** tab, select **Add** to add a line to the grid.
+1. On the new line, set the following values:
+
+    - **Table:** *Locations*
+    - **Derived table:** *Locations*
+    - **Field:** *Location profile ID*
+    - **Criteria:** *Pick-06* (Select the double plus sign \[**++**\] in the field to expand the list, and then select *Pick-06* - *Picking Site 6*.)
+
+1. Select **OK**.
+
+#### Set up location directives
+
+At least one location directive must be set up to support slotting picks. Use the procedures in this section to set up a new *replenishment location directive* for slotting picks.
+
+1. Go to **Warehouse management \> Setup \> Location directives**.
+1. In the left pane, in the **Work order type** field, select *Replenishment*.
+1. On the Action Pane, select **New**.
+1. In the header for the new location directive, in the **Name** field, enter *61 Slotting pick*.
+
+##### Configure the Location directives FastTab
+
+1. On the **Location directives** FastTab, set the following values. Accept the default values for all other fields.
+
+    - **Work type:** _Pick_
+    - **Site:** _6_
+    - **Warehouse:** _61_
+    - **Directive code:** _Slotting_
+
+1. Select **Save** to make the **Lines** FastTab available.
+
+##### Configure the Lines FastTab
+
+1. On the **Lines** FastTab, select **New** to create a line.
+1. On the new line, set the following values. Accept the default values for all other fields.
+
+    - **From quantity:** _0_
+    - **To quantity:** _1000000_
+
+1. Select **Save** to make the **Location Directive Actions** FastTab available.
+
+##### Configure the Location Directive Actions FastTab
+
+1. On the **Location Directive Actions** FastTab, select **New** to create a line.
+1. On the new line, set the following values. Accept the default values for all other fields.
+
+    - **Name:** _Bulk_
+    - **Strategy:** _None_
+
+1. Select **Save** to make the **Edit query** button available.
+
+##### Edit the query
+
+1. On the **Location Directive Actions** FastTab, select **Edit query**.
+1. On the **Range** tab, select **Add** to add a line to the grid.
+1. On the new line, set the following values:
+
+    - **Table:** *Locations*
+    - **Derived table:** *Locations*
+    - **Field:** *Zone ID*
+    - **Criteria:** *Bulk* (Select the double plus sign \[**++**\] in the field to expand the list, and then select *Bulk*.)
+
+1. Select **OK**.
 
 ## Scenario
 
 ### Set up the scenario
 
-For this scenario, use the built-in sample data and create the records described in this section.
+For this scenario, use the built-in sample data, and create the records that are described in this section.
 
 #### Use the USMF sample data
 
-To work through this scenario using the sample records and values specified here, you must be on a system with the standard [demo data](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) installed, and you must select the **USMF** legal entity before you begin.
+To work through this scenario by using the sample records and values that are specified here, you must be on a system where the standard [demo data](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) is installed. Additionally, you must select the **USMF** legal entity before you begin.
 
 #### Create demand
 
-Do the following to create the demand for which you will apply slotting:
+Follow these steps to create the demand that you will apply slotting to.
 
-1. Go to **Sales and Marketing > Sales orders >  All sales order**.
-1. Select **New** to create a new sales order.
-1. In the **Create sales order** flyout, select **Customer account** - _US-007_
-1. Select **Warehouse** - _61_
+1. Go to **Sales and marketing \> Sales orders \> All sales order**.
+1. Select **New** to create a sales order.
+1. In the **Create sales order** dialog box, in the **Customer account** field, select _US-007_.
+1. In the **Warehouse** field, select _61_.
 1. Select **OK**.
-1. Your new sales order opens. It includes an empty line in the **Sales order lines** section. Enter the following values:
-    - **Item** - _L0101_
-    - **Quantity** - _20_
-1. Select **Add line** in the **Sales order lines** action pane. Add the following values:
-    - **Item** - _T0100_
-    - **Quantity** - _8_
-1. Select **Save**
+1. The new sales order is opened. It includes an empty line in the **Sales order lines** section. On this line, set the following values:
+
+    - **Item:** _L0101_
+    - **Quantity:** _20_
+
+1. Select **Add line** to add a new line, and set the following values:
+
+    - **Item:** _T0100_
+    - **Quantity:** _8_
+
+1. Select **Save**.
 1. Select **New** to create a second sales order.
-1. In the **Create sales order** flyout, select **Customer account** - _US-008_
-1. Select **Warehouse** - _61_
-1. Your new sales order opens. It includes an empty line in the **Sales order lines** section. Enter the following values:
-    - **Item** - _T0100_
-    - **Quantity** - _1_
-1. Select **Save**
+1. In the **Create sales order** dialog box, in the **Customer account** field, select _US-008_.
+1. In the **Warehouse** field, select _61_.
+1. The new sales order is opened. It includes an empty line in the **Sales order lines** section. On this line, set the following values:
+
+    - **Item:** _T0100_
+    - **Quantity:** _1_
+
+1. Select **Save**.
 
 ### Walk through a typical slotting scenario
 
-Once you have all of the prerequisite elements in place, as described in the previous section, you are ready to try out the feature by working through each of the exercises in this section.
+After all the prerequisite elements are in place, as described in the previous section, you're ready to try out the feature by working through each exercise in this section.
 
 #### Generate demand
 
-1. Go to **Warehouse management > Setup > Replenishment > Slotting templates** and select the slotting template created earlier.
-1. Select **Generate demand** on the action bar. This will evaluate all demand that is in the system and matches the slotting template query. The total demand across all order will be consolidated into one line per Qty/UOM.
-1. An information message appears when completed.
+1. Go to **Warehouse management \> Setup \> Replenishment \> Slotting templates**, and select the slotting template that you created earlier.
+1. On the action bar, select **Generate demand**. This command evaluates all demand that is in the system, and that matches the slotting template query. The total demand across all orders is then consolidated onto one line per quantity/unit of measure. An informational message appears when the process is completed.
 
 #### Slotting demand
 
-Slotting demand displays the results of the generation based on the setup of the slotting template.
+The *slotting demand* shows the results of demand generation, based on the setup of the slotting template.
 
-1. Select **Slotting demand** on the action pane to view the results from *Generate demand*. The lines in *Slotting demand* can be edited: *Delete* a line, add a *New* line or edit the line details.
+- On the Action Pane, select **Slotting demand** to view the results from the **Generate demand** command. The lines in the slotting demand can be edited. You can delete a line, add a new line, or edit the line details.
 
 > [!NOTE]
-> You could instead edit demand manually, or import in from an external system using data management. Whatever is in the slotting demand will be used in the next step, regardless of where it came from.
+> You can edit demand manually, or you can import it from an external system by using data management. Whatever is in the slotting demand will be used in the next step, regardless of where it came from.
 
 #### Locate demand
 
-Once demand has been generated you will need to run the locate demand process to generate the *Slotting plan*.
+After demand has been generated, you must use the **Locate demand** command to generate the *slotting plan*.
 
-1. Select **Locate demand** on the action pane. The slotting process now runs.
-1. An information message appears when completed.
+- On the Action Pane, select **Locate demand**. The slotting process runs. An informational message appears when the process is completed.
 
 #### Slotting plan
 
-The slotting plan shows the location that each item/qty was assigned, whether overflow was used, whether let-up work was created, and which template line was used. ***Any demand that couldn't be slotted will be highlighted in red***.
+The slotting plan shows the location that each item/quantity was assigned to, whether overflow was used, whether let-up work was created, and the template line that was used. **Any demand that could not be slotted is highlighted in red.**
 
-1. Select **Slotting Plan** on the action pane to see the results.
+- On the Action Pane, select **Slotting plan** to view the results.
 
 #### Create replenishment
 
-After the slotting plan has been created you need to create replenishment work based on the plan.
+After the slotting plan has been created, you must create *replenishment work*, based on the plan.
 
-1. Select **Run Replenishment** in the action pane
-1. An information message appears when completed indicating the number of headers created for the work build ID.
+- On the Action Pane, select **Run replenishment**. An informational message appears when the process is completed. This message indicates the number of headers that were created for the work build ID.
 
-Location directives to use will be identified based on the directive code specified on each template line.
+Location directives that will be used are identified based on the directive code that is specified on each template line.
 
 ## Tips
 
 ### Set up automatic slotting
 
-Once all of the required elements are in place, you can set slotting to run automatically by doing the following:
+After all the required elements are in place, you can set up slotting to run automatically by following these steps.
 
-1. Go to **Warehouse management > Replenishment > Run slotting**
-1. Specify which slotting steps you want to run by selecting one or more of the following:
-    - **Generate demand**
-    - **Locate demand**
-    - **Create replenishment work**
+1. Go to **Warehouse management \> Replenishment \> Run slotting**.
+1. Specify the slotting steps to run. Select one or more of the following slotting steps:
 
-1. The slotting steps are progressive, in order to select *Locate demand* you must first select *Generate demand*.
-1. Specify which slotting template to use.
-1. Set the recurrence to run automatically if desired.
+    - Generate demand
+    - Locate demand
+    - Create replenishment work
 
-For the exercises in the scenario, do not setup automatic slotting.
+    > [!NOTE]
+    > The slotting steps are progressive. If you want to select *Locate demand*, you must first select *Generate demand*.
+
+1. Specify the slotting template to use.
+1. Set the recurrence to run automatically, if you want.
+
+For the exercises in the scenario, do **not** set up automatic slotting.
