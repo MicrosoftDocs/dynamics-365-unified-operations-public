@@ -5,7 +5,7 @@ title: Transfer a quotation to a project
 description: This topic provides information about how to transfer a quotation to a new or existing project.
 author: kfend
 manager: AnnBe
-ms.date: 05/26/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -28,7 +28,7 @@ ms.author: v-radsh
 ms.dyn365.ops.version: 7.0
 ms.search.validFrom: 2019-01-15
 ---
-# Transfer a quote to new or existing projects
+# Transfer a quotation to a project
 
 [!include [banner](../includes/banner.md)]
 
