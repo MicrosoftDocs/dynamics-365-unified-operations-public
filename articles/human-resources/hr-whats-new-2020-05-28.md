@@ -73,6 +73,10 @@ In this release, HR can create a rule to suspend leave accruals for employees wi
 
 A DMF entity is now available for accrual suspensions.
 
+## Attachments capabilities in Employee self-service benefits enrollment
+ 
+With this new capability, attachments can be added during the benefits enrollment process for each plan that the employee is enrolling in.  The attachments added by employees can then be viewed within the Worker enrolled benefit form for review by the benefits assistant.
+
 ## In preview
 
 ## Human Resources application in Teams
@@ -100,7 +104,3 @@ In some organizations, a provided benefit is to allow employees to buy or sell t
 ## Benefits Entities - Data management framework entities for Benefits Management
  
 Benefits management entities are releasing.  DMF entities allow for importing and exporting data to easily configure benefits management. A benefit management template will also be available to move data.  The template exports and imports the data in a sequential manner to respect data dependencies.
- 
-## Attachments capabilities in Employee self-service benefits enrollment
- 
-With this new capability, attachments can be added during the benefits enrollment process for each plan that the employee is enrolling in.  The attachments added by employees can then be viewed within the Worker enrolled benefit form for review by the benefits assistant.
