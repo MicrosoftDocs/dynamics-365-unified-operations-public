@@ -113,6 +113,24 @@ You can add a pause before a test case starts execution. If you want to pause, u
 ### Abort a run
 When a test run is in progress, you can click the Stop button to abort the run. Execution will terminate after the currently running test case completes. The remaining test cases will be marked as **Not Executed** in Azure DevOps.
 
+### Validate readiness of test automation files
+Optionally, you can turn on a setting that validates whether your test cases are ready for execution. This will prevent unknown errors related to the validity of recordings and test automation files. This option is available as of RSAT version 1.210. You can enable this feature in the Optional tab of the Settings dialog.
+
+![enable-local-file-validation-rules](media/enable-local-file-validation-rules.png)
+
+When enabled, a background process will continuously validates the following for each test case.
++ The local working directory exists.
++ The Excel parameter file exists.
++ Test automation files (binary and xml files) needed for execution exist.
++ Test automation files are compatible with current version of RSAT (You need to regenerate test automation files
+when you install a new version of RSAT).
++ Test case ID specified in the Excel parameter file matches the test cases ID in Azure DevOps.
+
+The Valid column in the grid will indicate the result of the validation process. If validation fails, click on the X to view the
+error and recommended action.
+
+![enable-local-file-validation-rules-2](media/enable-local-file-validation-rules-2.png)
+
 ## Investigate results
 When all test cases complete execution, **Pass** or **Fail** will be populated in the **Result** column. You can click on the result to see error messages.
 
