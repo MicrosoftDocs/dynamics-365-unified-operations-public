@@ -5,7 +5,7 @@ title: Semansys XBRL integration
 description: This procedure walks you through using Dutch functionality to export financial data in the XML format. 
 author: mrolecki
 manager: AnnBe 
-ms.date: 08/29/2018
+ms.date: 05/28/2020
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -31,22 +31,23 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This document walks you through the steps to map, export and ultimaly deliver XBRL (eXtensible Business Reporting Language) to the Dutch regulatory body.  
+This topic walks you through the steps to map, export, and deliver XBRL (eXtensible Business Reporting Language) to the Dutch regulatory body.  
 
-The high level process is a System to Human to System process.  The first system involved is Microsoft Dynamics 365 Finance.  This system is responsible for creating all the necessary entries, chart of accounts and mappings necessary.  Once this is done, then a user will export the data into the Semansys DataBridge format.  This exported data can then be uploaded into the XBRLOne portal to convert to XBRL, validate and deliver to the correct Dutch regulatory body. 
+The high-level process is a System-to-Human-to-System process. The first system involved is Microsoft Dynamics 365 Finance. This system is responsible for creating all the necessary entries, chart of accounts, and mappings necessary. After this is complete, a user will export the data into the Semansys DataBridge format. This exported data can then be uploaded into the XBRLOne portal to convert to XBRL and then validate and deliver to the correct Dutch regulatory body. 
 
 There are a few prerequisties for this process:
-* The report data is available for mapping via the General Ledger in Microsoft Dynamics 365 Finance
-* Knowledge of the correct taxonomy for which you're reporting and confirmation that you're delivering to a Dutch regulatory body
-* Import "**Dutch XBRL integration model**" and "**Semansys XBRL (NL)**" electronic reporting configurations
+- The report data is available for mapping by using the General Ledger in Finance.
+- Knowledge of the correct taxonomy for which you're reporting and the confirmation that you're delivering to a Dutch regulatory body.
+- Import "**Dutch XBRL integration model**" and "**Semansys XBRL (NL)**" electronic reporting configurations.
 
-For more information about how to download ER configurations from Microsoft Dynamics Lifecycle Services (LCS), see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+For more information about how to download ER configurations from Microsoft Dynamics Lifecycle Services (LCS), see [Download Electronic reporting configurations from Lifecycle Services](../../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 Below are the example steps for a user to export the data necessary for reporting a 2019 annual report. 
+
 1. Go to **General ledger** > **Periodic tasks** > **Export financial data to XBRL**.
-2. In the From date field, enter a date; e.g. *2019-01-01*  
-3. In the To date field, enter a date; e.g *2019-12-31*  
-4. In the Format mapping field, enter the correct formats
-5. Click **OK**.
+2. In the **From date** field, enter a date. For example, *2019-01-01*  
+3. In the **To date** field, enter a date. For example, *2019-12-31*  
+4. In the **Format mapping** field, enter the correct formats,
+5. Select **OK**.
 
 You can now take this Semansys DataBridge format package to the XBRLOne portal for next steps.
