@@ -72,7 +72,7 @@ For more information about each service, see the CRT request/response document i
 | ChargeService              | This service implements logic that calculates automatic charges, price charges, and shipping charges for transactions. |
 | CouponService              | This service validates and updates coupon-related requests. |
 | CurrencyService            | This service converts currencies, based on exchange rates. |
-| CustomerService            | This service contains customer related operations such as Save cusotomer, purchase history, get customer and customer balance. |
+| CustomerService            | This service contains customer related operations such as Save customer, purchase history, get customer and customer balance. |
 | EmployeeService            | This service gets employee-related information and employees by store. |
 | FormattingService          | This service implements logic for the format of numbers, currencies, and dates. |
 | GiftCardService            | This service provides information about internal activities that are related to gift cards, such as issuing the gift card, getting the balance, and adding value. |
@@ -160,6 +160,62 @@ public class MyService : IRequestHandler
     {
         return myresponse;
     }
+}
+```
+
+
+## How to execute the base handler in extension
+
+### NotHandledResponse()
+
+If the overridden logic executes the base handler for some scenarios, this can achieved by returning **NotHandledResponse().** If the NotHandledResponse is returned, the CRT framework will use the extension that is requesting to execute the base or out of band logic, so the CRT framework will execute the out of band handler.
+
+**NotHandledResponse** can be used in scenarios where the extension executes the base handler logic. For example, if the overridden request executes the base handler logic then it can return the NotHandledResponse for the base handler to execute. Or if the extension executes custom logic and base logic, then the extension code can return NotHandledResponse after executing the custom logic.
+
+```C#
+  private Response GetCustomReceiptFieldForSalesTransactionReceipts(GetLocalizationCustomReceiptFieldServiceRequest request)
+        {
+            ThrowIf.Null(request.SalesOrder, nameof(request.SalesOrder));
+
+            string receiptFieldName = request.CustomReceiptField;
+            string receiptFieldValue = string.Empty;
+
+            if (request.SalesOrder.TaxCalculationType == TaxCalculationType.GTE)
+            {
+                switch (receiptFieldName)
+                {
+                    case "Sample":
+                        receiptFieldValue = this.GetGstRegistrationNumber(request);
+                        break;
+                    default:
+                        return new NotHandledResponse();
+                }
+            }
+            else
+            {
+                return new NotHandledResponse();
+            }
+
+            int receiptFieldLength = request.ReceiptItemInfo == null ? 0 : request.ReceiptItemInfo.Length;
+            var returnValue = ReceiptStringUtils.WrapString(receiptFieldValue, receiptFieldLength);
+
+            return new GetCustomReceiptFieldServiceResponse(returnValue);
+        }
+
+```
+
+## How to execute extension request for a channel type
+
+If an extension request needs to be executed only for a certain channel type, such as execute the request for online channel not for the Retail channel (physical store), then before executing the request, check the channel type and execute the custom logic executed or execute the base logic by calling the NotHandledResponse().
+
+```C#
+if (requestContext.GetChannel().OrgUnitType == RetailChannelType.RetailStore)
+{
+    // run your extension code here.
+}
+else
+{
+    return new NotHandledResponse();
 }
 ```
 

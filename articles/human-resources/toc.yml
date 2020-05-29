@@ -5,6 +5,10 @@
     items:
     - name: What's new or changed in Human Resources
       href: hr-admin-whats-new.md
+    - name: May 14, 2020
+      href: hr-whats-new-2020-05-14.md
+    - name: May 1, 2020
+      href: hr-whats-new-2020-05-01.md
     - name: April 13, 2020
       href: hr-whats-new-2020-04-13.md
     - name: April 3, 2020
@@ -109,14 +113,16 @@
         href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/human-resources/toc.json
       - name: Understand Lifecycle Services
         href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json
+    - name: Human Resources app in Teams
+      href: hr-admin-teams-leave-app.md
     - name: Documentation resources
       items:
       - name: Help system
         href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json
       - name: Connect the Help system
         href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/human-resources/toc.json
-      - name: Connect a custom help site
-        href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/human-resources/toc.json        
+      - name: Custom help overview
+        href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/human-resources/toc.json
       - name: View and export field descriptions
         href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/human-resources/toc.json
       - name: Task Recorder
@@ -503,6 +509,8 @@
         href: hr-leave-and-absence-accrue.md
       - name: Suspend leave
         href: hr-leave-and-absence-suspend-leave.md
+      - name: Manage employee leave
+        href: hr-leave-and-absence-manage-employee-leave.md
       - name: View analytics for leave and absence
         href: hr-leave-and-absence-analytics.md
       - name: Manage leave and absence requests
@@ -511,6 +519,8 @@
         href: hr-employee-self-service-request-time-off.md
       - name: View team and company calendars
         href: hr-employee-self-service-calendar.md
+    - name: Manage leave requests in Teams
+      href: hr-teams-leave-app.md
     - name: Develop employees
       items:
       - name: Performance management overview

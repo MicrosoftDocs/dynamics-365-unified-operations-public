@@ -5,7 +5,7 @@ title: Update the local agent
 description: This topic explains how to update the local agent.
 author: faix
 manager: AnnBe
-ms.date: 12/19/2019
+ms.date: 05/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -48,11 +48,17 @@ This topic explains how to update the local agent. The latest version of the loc
 | 2.3.0               | This version adds support for pre- and post-deployment scripts.  |
 | 2.3.1               | This version fixes orchestration service crashes that may occur during clean up on some environments.<br><br>Deploying version 10.0.5 with Platform update 29 or earlier requires the use of pre-deployment scripts for automatic updating of FinancialReportingDeployer.exe.config. For more information, see [Troubleshoot on-premises deployments](../../dev-itpro/deployment/troubleshoot-on-prem.md#FREntityFramework). |
 | 2.4.0               | This version fixes a deployment issue and upgrades the runtime of the local agent. |
+| 2.5.0               | This version updates dependencies and fixes a cleanup bug. |
+
+## What's new in local agent 2.5.0
+
+- Local agent 2.5.0 uptakes new versions of various dependencies. The main changes are Service Fabric and Entity Framework.
+- This release also fixes a bug where, if cleanup fails without cleaning up any services, subsequent reattempts always fail during cleanup.
 
 ## What's new in local agent 2.4.0
 
-- Local agent 2.4.0 now requires .Net Framework 4.8 to uptake the newest changes from Lifecycle Services (LCS). Please be sure to run the latest Infrastructure Scripts available in LCS to meet the newest requirements.
-- This release also fixes the 255/-1 exit error from the AOSSetupHybridCloud.exe where the deployment ended when deploying the AXSFType.
+- Local agent 2.4.0 now requires .NET Framework 4.8 to uptake the newest changes from Lifecycle Services (LCS). Be sure to run the latest Infrastructure Scripts available in LCS to meet the newest requirements.
+- This release also fixes an issue where the deployment of the AXService would fail in slower environments due to a hard-coded timeout.
 
 ## What's new in local agent 2.3.0
 

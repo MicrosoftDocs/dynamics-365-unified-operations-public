@@ -112,7 +112,7 @@ Digipoort is the service that is used to transmit declarations to the Dutch gove
 
 ![Key vault parameters page](media/2_Key_Vault_parameters.png)
 
-For more information about how to set up Key Vault parameters, see [Setting up Azure Key Vault Client](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/KeyVault/articles/finance/localizations/setting-up-azure-key-vault-client.md).
+For more information about how to set up Key Vault parameters, see [Set up the Azure Key Vault client](setting-up-azure-key-vault-client.md).
 
 ### Set up electronic tax declaration parameters
 
