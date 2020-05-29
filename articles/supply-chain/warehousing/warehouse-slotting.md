@@ -62,21 +62,21 @@ Unit-of-measure tiers enable multiple units of measure to be grouped together fo
     - **Unit:** *Box*
     - **Description:** Leave this field blank. It will be filled in automatically when you save your changes.
     - **Unit class:** *Quantity*
-    
+
 1. Select **New** to add a second line to the grid.
 1. On the new line, set the following values:
 
     - **Unit:** *ea*
     - **Description:** Leave this field blank. It will be filled in automatically when you save your changes.
     - **Unit class:** *Quantity*
-    
+
 1. Select **New** to add a third line to the grid.
 1. On the new line, set the following values:
 
     - **Unit:** *PL*
     - **Description:** Leave this field blank. It will be filled in automatically when you save your changes.
     - **Unit class:** *Quantity*
-    
+
 1. Select **Save** to save the tier.
 
 ### Create a directive code for slotting
@@ -273,7 +273,7 @@ Follow these steps to create the demand that you will apply slotting to.
 1. In the **Create sales order** dialog box, in the **Customer account** field, select _US-007_.
 1. In the **Warehouse** field, select _61_.
 1. Select **OK**.
-1. The new sales order is opened. It includes an empty line in the **Sales order lines** section. On this line, set the following values:
+1. The new sales order is opened. It includes an empty line on the **Sales order lines** FastTab. On this line, set the following values:
 
     - **Item:** _L0101_
     - **Quantity:** _20_
@@ -287,7 +287,7 @@ Follow these steps to create the demand that you will apply slotting to.
 1. Select **New** to create a second sales order.
 1. In the **Create sales order** dialog box, in the **Customer account** field, select _US-008_.
 1. In the **Warehouse** field, select _61_.
-1. The new sales order is opened. It includes an empty line in the **Sales order lines** section. On this line, set the following values:
+1. The new sales order is opened. It includes an empty line on the **Sales order lines** FastTab. On this line, set the following values:
 
     - **Item:** _T0100_
     - **Quantity:** _1_
@@ -301,7 +301,7 @@ After all the prerequisite elements are in place, as described in the previous s
 #### Generate demand
 
 1. Go to **Warehouse management \> Setup \> Replenishment \> Slotting templates**, and select the slotting template that you created earlier.
-1. On the action bar, select **Generate demand**. This command evaluates all demand that is in the system, and that matches the slotting template query. The total demand across all orders is then consolidated onto one line per quantity/unit of measure. An informational message appears when the process is completed.
+1. On the Action Pane, select **Generate demand**. This command evaluates all demand that is in the system, and that matches the slotting template query. The total demand across all orders is then consolidated onto one line per quantity/unit of measure. An informational message appears when the process is completed.
 
 #### Slotting demand
 
