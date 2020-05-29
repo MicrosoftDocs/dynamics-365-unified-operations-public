@@ -25,7 +25,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: MichaelFruergaardPontoppidan
-ms.search.validFrom: 2018-XX-XX
+ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
 
 ---
@@ -33,8 +33,6 @@ ms.dyn365.ops.version: App Update 10.0.2
 # Test data methods
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 Entity and helper navigation objects expose test methods that let you set up test data. This topic provides information about the most common types of test data methods.
 

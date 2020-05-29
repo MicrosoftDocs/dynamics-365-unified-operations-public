@@ -5,7 +5,7 @@ title: Removed or deprecated platform features
 description: This topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 04/13/2020
+ms.date: 04/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -52,7 +52,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | This compiler error permanently replaces the compiler warning.  |
 | **Product areas affected**         | Visual Studio development tools |
 | **Deployment option**              | All |
-| **Status**                         | **Deprecated:** The compiler warning is now a compiler error in platform updates for version 10.0.11 of Finance and Operations apps. |
+| **Status**                         | **Deprecated:** The compiler warning is a compiler error in platform updates for version 10.0.11 of Finance and Operations apps. |
 
 ### ISV licenses created by using the SHA1 hashing algorithm
 

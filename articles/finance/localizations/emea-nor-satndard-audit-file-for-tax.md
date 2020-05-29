@@ -3,9 +3,9 @@
 
 title: Standard Audit File for Tax (SAF-T) for Norway
 description: This topic explains how to set up and generate the Standard Audit File for Tax (SAF-T) for legal entities that have their primary address in Norway. 
-author: LizaGolub
-ms.author: v-elgolu
-ms.date: 12/18/2019
+author: liza-golub
+ms.author: elgolu
+ms.date: 04/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -133,7 +133,23 @@ To generate the **Norwegian SAF-T Financial data** report, follow these steps.
     
     If the **Financial dimensions** check box is cleared, only those financial dimensions that were used in transactions during the reporting period will be reported in the **\<MasterFiles\>** node of the report.
 
-4. In the **Personnel number** field, select an employee to add the employee to the **\<UserID\>** node of the report. This node reports the ID of the user who generated the audit file.
+4. In the **Personnel number** field, select an employee to add the employee to the **\<AuditFileSender\>** node of the report. This node reports information about the contact person for the audit file (First name and Last name).
+
+5. Select the **Report tax information in sales tax currency** check box if you want to report tax information in tax code currency.
+
+    If the **Report tax information in sales tax currency** check box is selected, the **\<TaxInformation\>** element reports the following amounts in the tax code currency:
+
+    - *GeneralLedgerEntries/Journal/Transaction/Line/TaxInformation/TaxBase*
+    - *GeneralLedgerEntries/Journal/Transaction/Line/TaxInformation/TaxAmount/Amount*
+
+
+    If the **Report tax information in sales tax currency** check box is not selected, the amounts in the **\<TaxInformation\>** element and all of the amounts in the reports are reported in the accounting currency.
+
+    The following amount is always reported in document currency:
+
+    - *GeneralLedgerEntries/Journal/Transaction/Line/TaxInformation/TaxAmount/CurrencyAmount*
+
+    Where *GeneralLedgerEntries/Journal/Transaction/Line/TaxInformation/TaxAmount/Currency* represents the document currency.
 
 You can also apply filters for the **Main accounts** and **General journal entry** fields by using **Records to include** FastTab in the dialog box for the report.
 

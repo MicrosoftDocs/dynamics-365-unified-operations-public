@@ -5,7 +5,7 @@ title: Upload URL redirects in bulk
 description: This topic describes how to implement URL redirects in bulk by uploading a redirect comma-separate values (CSV) file in Microsoft Dynamics 365 Commerce.
 author: BrianShook
 manager: annbe
-ms.date: 03/02/2020
+ms.date: 05/05/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -60,7 +60,7 @@ Here is an explanation of the elements of this schema:
 
 The following example shows a set of redirect rows in a redirect CSV file.
 
-```
+```plaintext
 https://www.oldsite.com/shop, https://www.newsite.com/allstores, 301, true
 
 https://www.oldsite.com/news, https://www.newsite.com/updates, 301, false

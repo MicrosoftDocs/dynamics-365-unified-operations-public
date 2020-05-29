@@ -5,7 +5,7 @@ title: Sign up for preview subscriptions
 description: This topic explains how to subscribe to the preview/partner offer and deploy an environment.
 author: RobinARH
 manager: AnnBe
-ms.date: 05/30/2018
+ms.date: 04/24/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -48,13 +48,13 @@ This topic explains how to subscribe to the preview/partner offer and deploy an 
 - **Microsoft Azure Active Directory** – The cloud environment includes Azure AD. Azure AD helps you manage users, groups, security roles, and licenses for online applications, much as you manage them for on-premise environments.
 - **Users** – Users of the services that your organization has subscribed to are managed in Azure AD. Any users in your tenant can be added and assigned to security roles.
 - **Developers and administrators** – Developers and administrators are users who also have access to LCS that lets them manage projects and environments. These users are also end users.
-- **Organizational account** – Users receive Azure AD credentials. These credentials are separate from other desktop or corporate credentials. The Azure AD credentials are used to sign in to Microsoft Office 365 and other Microsoft cloud services. Users sign in by using their organizational account.
+- **Organizational account** – Users receive Azure AD credentials. These credentials are separate from other desktop or corporate credentials. The Azure AD credentials are used to sign in to Microsoft 365 and other Microsoft cloud services. Users sign in by using their organizational account.
 
     > [!IMPORTANT]
-    > For this release, we ask that you not use any existing credentials that are associated with other online services, such as Office 365 or Microsoft Dynamics CRM Online.
+    > For this release, we ask that you not use any existing credentials that are associated with other online services, such as Microsoft 365 or Microsoft Dynamics CRM Online.
 
 - **Microsoft account** – Microsoft accounts were formerly known as Passport accounts or Windows Live ID accounts. Currently, Microsoft accounts can't be used with Finance and Operations applications, Microsoft Dynamics 365 Commerce, or other Microsoft Online Services. However, Microsoft accounts are still required for Microsoft Connect and other Microsoft Business Solutions sites, such as CustomerSource, PartnerSource, Information Source, and Microsoft Dynamics Community. You will continue to use your Microsoft account to access these services.
-- **Microsoft Office 365 admin center** – Office 365 admin center is the subscription management portal that Office 365 provides for administrators. Office 365 admin center is used to provide management functions for users and subscriptions.
+- **Microsoft 365 admin center** – Microsoft 365 admin center is the subscription management portal that Microsoft 365 provides for administrators. Microsoft 365 admin center is used to provide management functions for users and subscriptions.
 - **Environments** – You can deploy as many single instances of a virtual machine (VM) as you require. We call these instances *environments*.
 
 ## Prerequisites
@@ -92,11 +92,11 @@ To use LCS to manage your environments, you must create a new project.
     ![New project](./media/projectworkspace.jpg)
 
 ## Add users to LCS
-You're already set up as a user of your LCS project. If you've also added other Office 365 users, you must add them to this project. Other administrators and developers will then be able to deploy their own environments. These LCS users are team members who will actively work on the implementation. Don't confuse them with end users. Start on the project page in LCS.
+You're already set up as a user of your LCS project. If you've also added other Microsoft 365 users, you must add them to this project. Other administrators and developers will then be able to deploy their own environments. These LCS users are team members who will actively work on the implementation. Don't confuse them with end users. Start on the project page in LCS.
 
 1. Scroll to the right, and then, in the **More tools** section, select the **Project users** tile.
 2. In the upper left, select the plus sign (**+**) to add a new user.
-3. In the **Email** field, enter the email address of the user that you're adding. This email address should be the Office 365 organization email address that you created earlier.
+3. In the **Email** field, enter the email address of the user that you're adding. This email address should be the Microsoft 365 organization email address that you created earlier.
 4. In the **Project role** field, select **Project Owner**.
 5. Select **Invite**.
 6. Repeat steps 2 through 5 for all users in your organization.
@@ -157,15 +157,15 @@ LCS is the starting point for performing online administrative activities. Here 
 
     The available tiles include various tools and services in LCS. They also include the following additional tiles:
 
-    - **My subscription** – The Office 365 subscription management portal is where you can view and work with your online subscriptions. By selecting **User and Groups** in the left navigation section of the page, you can also manage your online users.
+    - **My subscription** – The Microsoft 365 subscription management portal is where you can view and work with your online subscriptions. By selecting **User and Groups** in the left navigation section of the page, you can also manage your online users.
 
         > [!NOTE]
         > To access the page, you must be a member of the **Global Administrator** role for your organization's Microsoft Online Services tenant.
 
     - **Feedback and bugs** – This tile opens the **General Feedback** page in Microsoft Connect. Use this page to record bugs, and to design change requests, feature requests, and suggestions.
-    - **Office 365 users** – This tile opens the **Users and groups** page in Office 365 admin center. You can add, update, and remove users, reset passwords, and assign licenses for other services.
+    - **Microsoft 365 users** – This tile opens the **Users and groups** page in Microsoft 365 admin center. You can add, update, and remove users, reset passwords, and assign licenses for other services.
 
         > [!NOTE]
         > To access the page, you must be a member of the **Global Administrator** role for your organization's Microsoft Online Services tenant. The installing user is always a global administrator, but other users must be added to this role.
 
-        [![Active users in Office 365 admin center](./media/activeusersadmin.png)](./media/activeusersadmin.png)
+        [![Active users in Microsoft 365 admin center](./media/activeusersadmin.png)](./media/activeusersadmin.png)
