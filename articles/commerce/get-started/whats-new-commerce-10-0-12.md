@@ -53,7 +53,7 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 Dynamics 365 Commerce 10.0.12 includes platform updates. To learn more, see [Platform updates for version 10.0.12 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-36.md).
 
 ### Bug fixes 
-For information about the bug fixes that are included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/)
+For information about the bug fixes that are included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=453382&dbType=3&qc=a68cf77635c0ab926e7b1b75c6925c82a23058c524c4d728ba8b30fedaf41746)
 
 ### Dynamics 365: 2020 release wave 1 plan
 
