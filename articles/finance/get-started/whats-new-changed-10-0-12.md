@@ -55,17 +55,13 @@ The following features are included in this release. The feature titles link to 
  - [Allow interest distribution and escheatment to update bank balances when posting](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/allow-interest-distribution-escheatment-use-feature--lets-update-bank-balances-when-posting-advanced-ledger-entries)
  - [Remove option to replace budget plan](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/remove-option-replace-budget-plan)
  
- ### Localization
- - I don't have any localization features to list yet. 
-
-
 ## Additional resources
 
 ### Platform updates for Finance and Operations apps
 Dynamics 365 Finance 10.0.12 includes platform updates. To learn more, see [Platform updates for version 10.0.12 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-36.md). 
 
 ### Bug fixes 
-For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=438264&dbType=3&qc=d7dbe350d53c7743949f6afa556ea8d19b4fc1d3e16824e1a2eef32e0c3b300a).
+For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=453382&dbType=3&qc=a68cf77635c0ab926e7b1b75c6925c82a23058c524c4d728ba8b30fedaf41746).
 
 ### Regulatory updates
 For information about regulatory updates for Dynamics 365 Finance and Operations apps, see [Regulatory updates](https://docs.microsoft.com/dynamics365/finance/localizations/regulatory-updates). Another way to learn about regulatory updates is to sign in to LCS and view the planned regulatory updates using the issue search tool. Issue search lets you search by country, type of feature, and release. 
