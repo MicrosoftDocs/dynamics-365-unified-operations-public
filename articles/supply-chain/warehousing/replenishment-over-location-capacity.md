@@ -15,13 +15,13 @@ The replenish over capacity functionality is enabled on the location profile.
 1. Go to **Warehouse management > Setup > Warehouse > Locations profiles**
 1. In left side column, select **PICK-06**
 1. In the Action Pane select **Edit**
-1. In the Replenishment FastTab, select the following:
+1. In the **Replenishment** FastTab, select the following:
     - **Exceed Location Capacity** - *Yes*
         - This parameter dictates whether the replenishment overflow functionality is turned on or off.
         - When enabled, the maximum capacity of the location will be allowed to be exceeded by replenishment work.
     - **Work availability threshold type** - *Quantity*
         - What method is used for determining when to release more work. You can release by either *Quantity* or *Percent*
-            - Capacity uses a percentage based on stocking limits or volumetrics.
+            - Percent uses a percentage capacity based on stocking limits or volumetrics.
             - Quantity uses a specific quantity value.
     - **Overflow quantity** - *0.50*
         - Quantity at which the location overflows. Work will be available whenever the location on hand + work quantity is below this value.
@@ -29,38 +29,62 @@ The replenish over capacity functionality is enabled on the location profile.
         - Unit associated with the overflow quantity.
 1. This will make more replenishment work available when the location gets down to 0.50 PL.
     - **Overflow percentage**
-        - This field is only enabled when the **Work availability threshold type** - *Percent*
+        - This field is only enabled when the **Work availability threshold type** - *Percent* is selected.
             - Percentage at which the location overflows. Work will be available whenever the location on hand + work quantity is below this percentage.
 
 #### Work available threshold type: Quantity
 
-This option is used when you&#39;re not using volumetric for the locations being replenishment, or you have consistent quantities at which you want to let more inventory be brought to the location.
+This option is used when you are not using volumetric for the locations being replenishment, or you have consistent quantities at which you want to let more inventory be brought to the location.
 
-If this option is selected, populate the _Overflow quantity_ and _Overflow unit_ fields with the quantity and unit that will be used to control when more replenishment work is made available.
+If this option is selected, populate the *Overflow quantity* and *Overflow unit* fields with the quantity and unit that will be used to control when more replenishment work is made available.
 
 #### Work available threshold type: Percent
 
 If the picking locations use volumetric, then the Percent option can be used.
 
-Set the _Overflow percentage_ field to the percentage at which more replenishment work will be made available.
+Set the *Overflow percentage* field to the percentage at which more replenishment work will be made available.
 
 ### Wave step code
 
-Navigate to _Warehouse Management - Setup - Waves - Wave Step Code_. Click new and specify:
+1. Go to **Warehouse Management > Setup > Waves > Wave Step Codes**
+1. Select **New** and enter the following:
+    - **Wave step code** – *Replen*
+    - **Wave step description** – *Replenishment*
+    - **Wave step type** - *Replenishment*
 
-- Wave step code – Replen
-- Description – Replenishment
-- Wave Step Type - Replenishment
+1. Select **Save**
 
 ### Replenishment template
 
-Navigate to _Warehouse management - Setup - Replenishment -  Replenishment templates_ and select &#39;Demand replenish.&#39; Check the box for &#39;Allow wave demand to use unreserved quantities.&#39; Select the wave step code of &#39;Replen&#39;
+Replenishment templates are a set of rules that control when and how to replenish a location.
+
+1. Go to **Warehouse management > Setup > Replenishment >  Replenishment templates**
+1. Select **Edit** in the Action Pane.
+1. In the **Overview** section, focus on the line **Replenish template** - *Demand replenish*
+1. Select the following:
+    - **Wave step code** - *Replen*
+    - **Allow wave demand to use unreserved quantities** - *Yes* (selected)
+
+1. Select **Save**
 
 ### Wave template
 
-_Navigate to Warehouse management - Setup - Waves - Wave templates_ and select 61 Shipping.&#39; Set the &#39;Automate replenishment work release&#39; flag to Yes.
+When **Automate replenishment work release** is set to *Yes*, it will create demand-based replenishment work and release it automatically. You must add the replenishment wave method to the wave template and create a replenishment template of the type Wave demand.
 
-In the Selected Methods area, change the Wave step code for the replenish step to &#39;Replen&#39;.
+1. Go to **Warehouse management > Setup > Waves > Wave templates**
+1. On the left side pane, ensure **Wave template type** is set to *Shipping*
+1. Select template **61 Shipping** in the pane.
+1. Select **Edit** from the Action Pane.
+1. On the **General** FastTab:
+    - **Automate replenishment work release** - *Yes*
+
+1. On the **Methods** FastTab, in the *SELECTED METHODS* area, edit the following line:
+    - **Method sequence** - *4* (may be different)
+    - **Method name** - *replenish*
+    - **Name** - *Replenishment*
+    - **Wave step code** - *Replen*
+
+1. Select **Save**.
 
 ## Scenario
 
