@@ -27,7 +27,7 @@ ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: 10.0.0
 ---
 
-# Microsoft Power Platform overview
+# Microsoft Power Platform Integration with Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
