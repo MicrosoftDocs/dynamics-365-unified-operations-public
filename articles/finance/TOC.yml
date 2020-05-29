@@ -402,7 +402,7 @@
         items:
         - name: Credit and collections overview
           href: accounts-receivable/cm-credit-and-collections-overview.md
-        - name: Credit and collections in Accounts receivable
+        - name: Collections in Accounts receivable
           href: accounts-receivable/collections-credit-accounts-receivable.md
         - name: Configure Accounts receivables and credit and collections
           href: accounts-receivable/accounts-receivables-set-up-overview.md
