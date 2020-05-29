@@ -41,7 +41,11 @@ A cart module shows the items that have been added to the cart before the custom
 
 The cart module supports signed-in checkout and guest checkout. It also supports a **Back to shopping** link. You can configure the route for this link at **Site Settings \> Extensions \> Routes**.
 
-The cart module renders data based on the cart ID, which is a browser cookie available throughout the site.
+The cart module renders data based on the cart ID, which is a browser cookie available throughout the site. 
+
+The following image shows an example of a cart page on the Fabrikam site.
+
+![Example of a cart module](./media/cart2.PNG)
 
 ## Cart module properties and slots
 
@@ -51,7 +55,6 @@ The cart module has a **Heading** property that can be set to values such as **S
 
 - **Text block** – This module supports custom messaging in the cart module. The messages are driven by the content management system (CMS). Any message can be added, such as "For issues with your order, contact 1-800-Fabrikam."
 - **Store selector** – This module shows a list of nearby stores where an item is available for pickup. It lets users enter a location to find stores that are nearby. For more information on this module, see [Store selector module](store-selector.md).
-
 
 ## Module properties
 
@@ -69,15 +72,23 @@ The cart module retrieves product information by using Commerce Scale Unit APIs.
 
 To add a cart module to a new page and set the required properties, follow these steps.
 
-1. Create a fragment named **Cart fragment**, and add a cart module to the new fragment.
-1. Add a heading to the cart module.
-1. Add a store selector module to the cart module.
-1. Save the fragment, finish editing, and then publish the fragment.
-1. Create a template named **Cart template**, and add the cart fragment that you just created.
-1. Save the template, finish editing, and then publish the template.
-1. Create a page that uses the new template.
-1. Save and preview the page.
-1. Finish editing the page, and then publish the page.
+1. Go to **Page Fragments**, and select **New** to create a new fragment.
+1. In the **New Page Fragment** dialog box, select the **Cart** module.
+1. Under **Page Fragment Name**, enter the name **Cart fragment**, and then select **OK**.
+1. Select the **Cart** slot.
+1. In the properties pane on the right, select the pencil symbol, enter heading text in the field, and then select the check mark symbol.
+1. In the **Cart** slot, select the ellipsis (**...**), and then select **Add Module**.
+1. In the **Add Module** dialog box, select the **Store selector** module, and then select **OK**.
+1. Select **Save**, select **Finish editing** to check in the fragment, and then select **Publish** to publish it.
+1. Go to **Templates**, and select **New** to create a new template.
+1. In the **New Template** dialog box, under **Template name**, enter a name for the template.
+1. In the outline tree, select the **Body** slot, select the ellipsis (**...**), and then select **Add Fragment**.
+1. In the **Select Page Fragment** dialog box, select the **Cart fragment** fragment, and then select **OK**.
+1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.
+1. Go to **Pages**, and select **New** to create a new page.
+1. In the **Choose a template** dialog box, select the template that you created, enter a page name, and then select **OK**.
+1. Select **Save**, and then select **Preview** to preview the page.
+1. Select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
 ## Additional resources
 
