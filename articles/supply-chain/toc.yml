@@ -595,6 +595,8 @@
           href: cost-management/bom-calculations.md
         - name: BOM calculation groups
           href: cost-management/bom-calculation-groups.md
+        - name: Cost calculation level
+          href: cost-management/cost-calculation-level.md
         - name: Backflush costing
           href: cost-management/backflush-costing.md
         - name: Common sources of production variances
@@ -1345,6 +1347,8 @@
           href: master-planning/planning-optimization/planning-optimization-fit-analysis.md 
         - name: Apply filters to a plan
           href: master-planning/planning-optimization/plan-filters.md
+        - name: Master planning with purchase trade agreements
+          href: master-planning/planning-optimization/purchase-trade-agreement.md
         - name: View plan history and planning logs
           href: master-planning/planning-optimization/plan-history-logs.md
         - name: Auto-firming with Planning Optimization
@@ -2655,6 +2659,8 @@
           href: warehousing/partial-location-cycle-counting.md
         - name: Define partial location cycle counting process
           href: warehousing/tasks/define-partial-location-cycle-counting-process.md
+        - name: Warehouse management on-hand entries cleanup job
+          href: warehousing/onhand-cleanup.md
         - name: Inventory journal
           href: inventory/inventory-journals.md
         - name: Inventory location
