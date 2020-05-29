@@ -127,3 +127,5 @@ The following example resembles the previous example. It shows that you can also
 [Create a theme](create-theme.md)
 
 [Configure theme settings](configure-theme-settings.md)
+
+[Extend a theme to add module extensions](theme-module-extensions.md)
