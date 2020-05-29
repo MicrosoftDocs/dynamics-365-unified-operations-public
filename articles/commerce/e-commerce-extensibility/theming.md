@@ -108,4 +108,6 @@ Custom themes can be created by using the Dynamics 365 Commerce online SDK. They
 
 [Configure theme settings](configure-theme-settings.md)
 
-[Extend a theme](extend-theme.md)
+[Extend a theme to add module extensions](theme-module-extensions.md)
+
+[Extend a theme from a base theme](extend-theme.md)
