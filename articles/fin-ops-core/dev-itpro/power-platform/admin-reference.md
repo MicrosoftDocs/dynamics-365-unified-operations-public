@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Admin reference
+title: F&O and CDS Admin reference
 description: This topic covers set up and configuration of virtual entities for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
