@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 Human Resources (May 28, 2020)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources.
 author: Darinkramer
 manager: AnnBe
-ms.date: 5/28/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -29,33 +29,66 @@ ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: Human Resources
 
 ---
-# "What's new or changed in Dynamics 365 Human Resources (May 19, 2020)"
 
-This article describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3287. The numbers in parentheses in some headings refer to LCS support numbers for reference.
+# What's new or changed in Dynamics 365 Human Resources (May 28, 2020)
 
-## LeaveRequest entity does not work if multiple types per leave plan feature enabled - (447498)
+This topic describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3287. The numbers in parentheses in some headings refer to LCS support numbers for reference.
 
-With this change, the LeaveEnrollmentV2Entity is now available to correct the error when multiple leave types per plan is enabled.
+## LeaveRequest entity doesn't work when you enable multiple types per leave plan (447498)
 
-## Batch contention reduction feature (preview) - (446619)
+With this change, the **LeaveEnrollmentV2Entity** is now available to correct the error that occurs when you enable multiple leave types.
 
-Environments experiencing heavy blocking on batch framework tables while selecting tasks and finishing jobs can expect a reduction in blocking when this feature is enabled.
+## Batch contention reduction feature (preview) (446619)
 
-## UpdateConflict saving worker - Cannot edit a record in People - (427915)
+When you enable this feature, you can expect a reduction in blocking on batch framework tables while selecting tasks and finishing jobs.
 
-This change corrects an error when adding a new worker, updating address information and changing language preference. In this unique scenario a error was displayed indicating the record could not be updated. 
+## UpdateConflict while saving worker prevents editing a record in People (427915)
 
-## Unable to add an attachment to an approved leave request to resubmit - (425407)
+This change corrects an error when adding a new worker, updating address information, and changing language preference. In this unique scenario, an error displayed indicating the record couldn't be updated. 
 
-This change will now allow attachments to approved leave requests.
+## Unable to add an attachment to an approved leave request to resubmit (425407)
 
-## User can enter compensation for an employee in different Legal Entity - Streamlined Employee form - (409529)
+This change now allows attachments to approved leave requests.
+
+## User can enter compensation for an employee in a different legal entity form (409529)
 
 This change disables compensation options to prevent inadvertent entry of compensation records for the wrong legal entity.
 
-## Error when Transferring an employee and the Worker position assignment date is prior to the duration of the position - (429402)
+## Error when you transfer an employee and the Worker position assignment date is before the position duration (429402)
 
-Error messages when transferring an employee in this scenario has been updated to better describe the changes needed to correct this scenario.
+Error messages when transferring an employee in this scenario have been updated to better describe the changes needed to correct the problem.
+
+## Attachments capabilities in Employee self service benefits enrollment
+ 
+Now you can add attachments during the benefits enrollment process for each plan that the employee's enrolling in. You can then view the attachments within the **Worker enrolled benefit** form.
+
+## In preview
+
+## Human Resources application in Teams
+
+Employees can view and request time away from work within Microsoft Teams. They can interact with a bot to create leave requests. For more information, see [Human Resources app in Teams](https://go.microsoft.com/fwlink/?linkid=2127841). 
+
+## Leave suspension
+
+You can suspend leave and absence in Human Resources for an employee. Suspending leave stops the leave accruals for selected leave types. If the suspension occurs after an accrual has been processed, suspending leave creates a prorated adjustment to the employee's leave balance. For more information, see [Suspend leave](hr-leave-and-absence-suspend-leave.md).
+
+## Update user experience to indicate that accrual is suspended (429550)
+
+The user experience now indicates that the accrual has been suspended for a plan.
+
+## Coming soon
+
+## Database logging (in preview in June)
+
+The database logging feature allows you to determine which table and fields should be monitored. It also lets you determine the events that should trigger change tracking. Inquiry capabilities are available to see these changes over time.
+
+## Buy and sell leave (in preview June 1)
+
+Some organizations provide a benefit that allows employees to buy or sell their leave. This process is often managed manually. This feature provides a more automated way to manage policies and requests for the HR department, and it helps eliminate mistakes while streamlining the leave management process.
+
+## Data management framework (DMF) entities for Benefits management
+ 
+Benefits management entities are releasing. DMF entities allow importing and exporting data to easily configure benefits management. A Benefits management template will also be available to move data. The template exports and imports the data in a sequential manner to respect data dependencies.
 
 ## Add reason code to accrual suspensions (June 1)
 
@@ -72,35 +105,3 @@ In this release, HR can create a rule to suspend leave accruals for employees wi
 ## DMF entity available for accrual suspensions (June 1)
 
 A DMF entity is now available for accrual suspensions.
-
-## Attachments capabilities in Employee self-service benefits enrollment
- 
-With this new capability, attachments can be added during the benefits enrollment process for each plan that the employee is enrolling in.  The attachments added by employees can then be viewed within the Worker enrolled benefit form for review by the benefits assistant.
-
-## In preview
-
-## Human Resources application in Teams
-
-Employees can view and request time away from work within Microsoft Teams. Employees can interact with a bot to help create leave requests as well as work with the personal app to create and edit leave information. For more in formation, see [Human Resources app in Teams](https://go.microsoft.com/fwlink/?linkid=2127841). 
-
-## Leave suspension
-
-You can suspend leave and absence in Human Resources for an employee. Suspending leave stops the leave accruals for selected leave types. If the suspension occurs after an accrual has been processed, suspending leave creates a prorated adjustment to the employee's leave balance. For more information, see [Suspend leave](hr-leave-and-absence-suspend-leave.md).
-
-## Update user experience to indicate that accrual is suspended (429550)
-
-The user experience now indicates that the accrual has been suspended for a plan.
-
-## Coming soon
-
-## Database Logging (Preview June)
-
-The database logging feature allows you to determine which table, and fields should be monitored and the events that should trigger the change tracking. Inquiry capabilities are available to see these changes over time. 
-
-## Buy and Sell Leave (Preview June 1)
-
-In some organizations, a provided benefit is to allow employees to buy or sell their leave. This enables employees to get the most out of their leave benefit. Managing this process is often done manually. This feature provides a more automated way to manage the policies and requests for the human resource department, and helps eliminate mistakes while streamlining the leave management process.
-
-## Benefits Entities - Data management framework entities for Benefits Management
- 
-Benefits management entities are releasing.  DMF entities allow for importing and exporting data to easily configure benefits management. A benefit management template will also be available to move data.  The template exports and imports the data in a sequential manner to respect data dependencies.
