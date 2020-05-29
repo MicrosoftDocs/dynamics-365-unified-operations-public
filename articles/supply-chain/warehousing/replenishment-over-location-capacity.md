@@ -1,7 +1,5 @@
 # Replenishment over location capacity
 
-## Released in version 10.0.4
-
 ## About
 
 Some high volume or space constrained warehouses will need to ship more quantity of an item in a day than what will fit in the picking location. Replenishment over location capacity allows all replenishment work to be created that will be needed for the day and manages availability of the replenishment work to ensure that the pick location doesn't run out of inventory, but also doesn't go above capacity.
@@ -14,9 +12,25 @@ The features allow more replenishment work to be created than will fit in a loca
 
 The replenish over capacity functionality is enabled on the location profile.
 
-Navigate to _Warehouse management_ _-_ _Setup - Warehouse - Locations profiles_ and select &#39;PICK-06.&#39;In the Replenishment FastTab, set the &#39;Exceed Location Capacity&#39; parameter to Yes. This parameter dictates whether the replenishment overflow functionality is turned on or off.
-
-You also must decide if you&#39;re releasing work by Quantity or Percent. In the _Work availability threshold type,_ choose _Quantity_, set the _Overflow quantity_ to 0.5 and the _Overflow unit_ to PL. This will make more replenishment work available when the location gets down to 0.5 PL.
+1. Go to **Warehouse management > Setup > Warehouse > Locations profiles**
+1. In left side column, select **PICK-06**
+1. In the Action Pane select **Edit**
+1. In the Replenishment FastTab, select the following:
+    - **Exceed Location Capacity** - *Yes*
+        - This parameter dictates whether the replenishment overflow functionality is turned on or off.
+        - When enabled, the maximum capacity of the location will be allowed to be exceeded by replenishment work.
+    - **Work availability threshold type** - *Quantity*
+        - What method is used for determining when to release more work. You can release by either *Quantity* or *Percent*
+            - Capacity uses a percentage based on stocking limits or volumetrics.
+            - Quantity uses a specific quantity value.
+    - **Overflow quantity** - *0.50*
+        - Quantity at which the location overflows. Work will be available whenever the location on hand + work quantity is below this value.
+    - **Overflow unit** - *PL*
+        - Unit associated with the overflow quantity.
+1. This will make more replenishment work available when the location gets down to 0.50 PL.
+    - **Overflow percentage**
+        - This field is only enabled when the **Work availability threshold type** - *Percent*
+            - Percentage at which the location overflows. Work will be available whenever the location on hand + work quantity is below this percentage.
 
 #### Work available threshold type: Quantity
 
@@ -30,7 +44,7 @@ If the picking locations use volumetric, then the Percent option can be used.
 
 Set the _Overflow percentage_ field to the percentage at which more replenishment work will be made available.
 
-## Wave step code
+### Wave step code
 
 Navigate to _Warehouse Management - Setup - Waves - Wave Step Code_. Click new and specify:
 
@@ -38,11 +52,11 @@ Navigate to _Warehouse Management - Setup - Waves - Wave Step Code_. Click new a
 - Description – Replenishment
 - Wave Step Type - Replenishment
 
-## Replenishment template
+### Replenishment template
 
 Navigate to _Warehouse management - Setup - Replenishment -  Replenishment templates_ and select &#39;Demand replenish.&#39; Check the box for &#39;Allow wave demand to use unreserved quantities.&#39; Select the wave step code of &#39;Replen&#39;
 
-## Wave template
+### Wave template
 
 _Navigate to Warehouse management - Setup - Waves - Wave templates_ and select 61 Shipping.&#39; Set the &#39;Automate replenishment work release&#39; flag to Yes.
 
@@ -50,7 +64,7 @@ In the Selected Methods area, change the Wave step code for the replenish step t
 
 ## Scenario
 
-## Create work
+### Create work
 
 Navigate to _Sales and Marketing - Sales orders - All sales orders_. Click New in the action bar to create a new sales order. Specify US-007 as the customer, and in the General section warehouse 61.
 
@@ -70,7 +84,7 @@ Navigate to _Warehouse management - Work - Work details._ You should have 7 tota
 
 Depending on your on-hand quantities, the work created quantities might vary slightly from case to case, but overall the created work headers should match this demo example.
 
-## Process
+### Process
 
 Open the warehouse mobile device app, log in to warehouse 61, and navigate to _Inventory - Replenishment_. You will be prompted to complete the first replenishment work created (qty 40). Confirm the pick and the put.
 
