@@ -5,7 +5,7 @@ title: ER Use financial dimensions as a data source (Part 1 - Design data model)
 description: The following steps explain how either a system administrator or electronic reporting developer can configure an Electronic reporting (ER) model to use financial dimensions as a data source for ER reports. 
 author: NickSelin
 manager: AnnBe 
-ms.date: 08/29/2018
+ms.date: 05/27/2020
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -109,4 +109,6 @@ To complete these steps, you must first complete the steps in the procedure, "Cr
 68. Click Add.
 69. Click Save.
 70. Close the page.
+
+![ER data model designer page](../media/er-financial-dimensions-guides-data-model.png)
 

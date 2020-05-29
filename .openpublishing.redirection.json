@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/commerce/dev-itpro/add-properties-sales-order.md",
+      "redirect_url": "order-attributes",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/finance/localizations/tasks/hu-00001-exchange-rate-calculation.md",
       "redirect_url": "../emea-hun-average-daily-exchange-rate-calculation",
       "redirect_document_id": "false"
