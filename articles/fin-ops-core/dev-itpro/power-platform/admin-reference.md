@@ -79,7 +79,7 @@ After the solutions are imported in the Common Data Service environment, both en
 
 The AAD application created above will be used by Common Data Service to call Finance and Operations apps. As such, it must be trusted by Finance and Operations and associated with a user account with the appropriate rights in Finance and Operations. A special service user must be created in Finance and Operations with rights *only* to the virtual entity functionality, and no other rights. After completing this step, any application with the secret of the AAD application create above will be able to call this Finance and Operations environment and access the virtual entity functionality.
 
-The next steps walks through this process in Finance and Operations apps.
+The next steps walk through this process in Finance and Operations apps.
 
 1.  In Finance and Operations, go to **System Administration \> Users \> Users**.
 
