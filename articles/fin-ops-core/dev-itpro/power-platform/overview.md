@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Power Platform Integration with Finance and Operations
+title: Microsoft Power Platform integration with Finance and Operations
 description: This topic describes virtual entities for Finance and Operations in Common Data Service.
 author: Sunil-Garg
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: 10.0.0
 ---
 
-# Microsoft Power Platform Integration with Finance and Operations
+# Microsoft Power Platform integration with Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
