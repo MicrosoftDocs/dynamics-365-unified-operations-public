@@ -1098,15 +1098,15 @@
           href: lifecycle-services/use-translation-service-tm.md
     - name: Microsoft Power Platform integration
       items:
-      - name: Microsoft Power Platform overview
+      - name: Microsoft Power Platform integration with Finance and Operations
         href: power-platform/overview.md
       - name: Entity modeling
         href: power-platform/entity-modeling.md
       - name: Application lifecycle management
         href: power-platform/application-lifecycle-management.md
-      - name: Admin reference
+      - name: Finance and Operations and Common Data Service admin reference
         href: power-platform/admin-reference.md
-      - name: Power Apps portals reference
+      - name: Power Apps portals with Finance and Operations
         href: power-platform/power-portal-reference.md
       - name: Finance and Operations virtual entities FAQ
         href: power-platform/faq.md
