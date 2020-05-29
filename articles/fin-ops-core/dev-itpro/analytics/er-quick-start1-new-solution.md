@@ -138,6 +138,7 @@ To learn more about ER parameters, review the [Configure the ER framework](elect
 Every added ER configuration is marked as owned by an ER solution provider. The activated in the ER workspace ER solution provider is used for that. Therefore, you must activate an ER solution provider in the ER workspace before you start adding or editing any ER configuration.
 
 > [!NOTE]
+>
 > The only owner of an ER configuration can edit it. Therefore, the appropriate ER solution provider must be activated in the ER workspace for editing an ER configuration.
 
 #### <a name="ReviewProvidersList">Review ER solution providers list</a>
