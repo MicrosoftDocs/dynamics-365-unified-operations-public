@@ -74,12 +74,16 @@ To create a warranty item in Commerce, follow these steps.
 1. On Released product form. Enter **Price range base**, **Lower limit**, **Upper Limit**
 1. **Assort** the Warranty product to the channel where it needs to be sold. (add link on how to assort products)
 
+The following image shows and example of 
+
 ![Example of](./media/ew-time-properties.png)
 
 | **Property Name** | **Values** | **Description** |
 |-------------------|------------|-----------------|
 | Unit of time | Day(s), Week(s), Month(s), Year(s) | This will be the Interval specifying how long the warranty is valid for. |
 | Length of time | Positive Integer value specifying warranty duration | The duration of the warranty E.g. For a warranty of duration 2 years the values are: Unit of time = "Year(s)", Length of time = "2" |
+
+The following image shows and example of 
 
 ![Example of](./media/ew-release-product-details.png)
 
@@ -95,6 +99,8 @@ Warranty settings form allows to set Warranty Feature settings
 
 Channel-specific settings allow to set configuration to enable prompting of Warranty item when Warrantable item is added to cart in Point of sale.
 
+To configure channel-specific setting in Commerce, follow these steps.
+
 1. Go to: **Products and categories \> Warranty \> Warranty settings\> Channel Specific**
 1. Set **Enable/Disable “**Prompt for warranty" for your channel
     - **Enable** – Warranty item will be prompted when Warrantable item is added
@@ -103,13 +109,15 @@ Channel-specific settings allow to set configuration to enable prompting of Warr
     added to cart.
 1. Run **1070** job to sync the data to the channel.
 
-### Configure the policy number sequence
+### Configure the warranty policy number sequence
 
-Warranty policy number sequence is set here
+To configure the warranty policy number sequence in Commerce, follow these steps.
 
 1. Go to: **Products and categories \> Warranty \> Warranty settings\>Number sequences**
 1. Set the **Number sequence code** (Add link on how to create number sequence
     code)
+
+The following image shows and example of 
 
 ![Example of](./media/ew-number-sequences.png)
 
@@ -136,17 +144,25 @@ Two POS features enable sales associates to sell warranty item during the custom
 
 **Add Warranty** - The **Add Warranty** POS operation triggers a prompt that shows applicable warranties for a warrantable item.
 
+The following image shows and example of 
+
 ![Example of](./media/ew-add-warranty.png)
+
+The following image shows and example of 
 
 ![Example of](./media/ew-sell-warranty.png)
 
 **Add Warranty to existing transaction** - The **Add Warranty to existing transaction** POS feature enable sales associates to sell warranties for warrantable items sold earlier. The original transaction can be found by entering the receipt number of the original warrantable item transaction.
+
+The following image shows and example of 
 
 ![Example of](./media/ew-add-warranty-existing.png)
 
 ## Process warranty transactions
 
 For warranties added in cash and carry transactions, user needs to go through statement posting so that those transactions are posted in headquarters, then go to **Retail and Commerce \> Products and categories \> Warranty \> Process warranty transactions**. This will process warranty transactions and create warranty policy.
+
+The following image shows and example of 
 
 ![Example of](./media/ew-process-warranty.png)
 
@@ -195,3 +211,5 @@ Run P-Job to upload the receipts to HQ, which is required for the receipt to be 
 **Why is Warranty feature only applicable for serialized items?**
 
 Warranty is a service provided for a product. In Dynamics 365 a product can be uniquely identified with a serial number. Hence warranty feature is only applicable for a serialized item.
+
+## Additional resources
