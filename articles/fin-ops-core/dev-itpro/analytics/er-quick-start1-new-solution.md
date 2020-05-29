@@ -106,7 +106,9 @@ The following steps explain how a user in the System Administrator, Electronic R
     -   [Run format from application to preview it as PDF document](#RunFormatFromApp3)
 -   [Additional resources](#References)
 
-In this example, you will create a new ER solution for the [Questionnaire](https://docs.microsoft.com/dynamics365/human-resources/hr-learning-questionnaires) module. This new ER solution will allow you to generate the Questionnaire report in Excel or PDF format in addition to the existing SSRS report. To run the existing report, you must open the **Modules \> Questionnaire \> Design** page and select the **Questionnaire report** menu item.
+In this example, you will create a new ER solution for the [Questionnaire](https://docs.microsoft.com/dynamics365/human-resources/hr-learning-questionnaires) module. This new ER solution will allow you to design a report using an Excel worksheet as a template and generate the Questionnaire report in Excel or PDF format in addition to the existing SSRS report. You can modify this new report later on upon request with no coding.
+
+To run the existing report, you must open the **Modules \> Questionnaire \> Design** page and select the **Questionnaire report** menu item.
 
 ![Questionnaire module](./media/er-quick-start1-application-menu-origin.png)
 
@@ -133,7 +135,7 @@ To learn more about ER parameters, review the [Configure the ER framework](elect
 
 ### <a name="ActivateProvider">Activate an ER solution provider</a>
 
-Every added ER configuration is marked as owned by an ER solution provider. The activated in the ER workspace ER solution provider is used for that. Therefore, you must activate an ER solution provider in the ER workspace before you start adding any ER configuration.
+Every added ER configuration is marked as owned by an ER solution provider. The activated in the ER workspace ER solution provider is used for that. Therefore, you must activate an ER solution provider in the ER workspace before you start adding or editing any ER configuration.
 
 > [!NOTE]
 > The only owner of an ER configuration can edit it. Therefore, the appropriate ER solution provider must be activated in the ER workspace for editing an ER configuration.
@@ -779,7 +781,7 @@ The final state of the editable model mapping is presented on the screenshot bel
 #### <a name="AddMmBindings3">Finalize data model fields binding</a>
 
 1.  Save changes.
-2.  Leave the ER model designer.
+2.  Leave the ER model mapping designer.
 
 #### <a name="CompleteModelMapping">Complete the model mapping design</a>
 
@@ -813,7 +815,7 @@ Excel names have been added to populate questionnaire details.
 
 ![Excel template](./media/er-quick-start1-template-names.png)
 
-Report labels have been added as fixed text in English language. You can replace them by new Excel names to fill them in by language dependent text using ER format labels as you did for language dependent expressions in the configured model mapping.
+Report labels have been added as fixed text in English language. You can replace them by new Excel names to fill them in by language dependent text using ER format [labels](#AddMmLabels) as you did for language dependent expressions in the configured model mapping. In this case, ER labels must be added in the editable ER format.
 
 Custom report header has been specified to allow Excel do paging.
 
@@ -928,7 +930,7 @@ To specify how a template is filled in at runtime, you must bind every format el
 
 1.  In the format tree, select **Report\\CompanyName** format element.
 2.  On the **Mapping** tab, select **model.CompanyName** data source field of the **String** type.
-3.  Select **Bind**. to populate a report title to a template.
+3.  Select **Bind**. to populate a company name to a template.
 4.  In the format tree, select **Report\\Questionnaire** element.
 5.  On the **Mapping** tab, select **model.Questionnaire** data source field of the **Record list** type.
 6.  Select **Bind**.
@@ -982,7 +984,7 @@ Finally, you must have the following data bindings.
 
 ### <a name="RunFormatFromER">Run a designed format from ER</a>
 
-You can now run a designed format for testing purposes from ER framework.
+You can now run a designed format for testing purposes from the ER configurations page (from ER).
 
 1.  Go to **Modules \> Organization administration \> Electronic reporting \> Configurations**.
 2.  In the configurations tree, expand **Questionnaire model**.
@@ -1006,7 +1008,7 @@ delivered as an Excel file that is offered for downloading by using web browser.
 
 ### <a name="ModifyToChangeName">Modify a format to change the name of a generated document</a>
 
-Note that by default a generated document is named by using alias of the current user. You can change this behavior by modifying your format to name a generated document based on the current session date and time.
+Note that by default a generated document is named by using alias of the current user. You can change this behavior by modifying your format to name a generated document based on your custom logic, for example, based on the current session date and time and the report’s title.
 
 1.  In the Operation designer, select the **Report** root item.
 2.  Select the **Mapping** tab.
@@ -1289,7 +1291,7 @@ You can pass to the running ER format via such ER model mapping all information 
 #### <a name="ControllerClass">Add report controller class</a>
 
 Add to your Microsoft Visual Studio project the new **QuestionnairesErReportController** class and write code to run an ER format in
-synchronous of batch mode depending on user’s choice on the dialog page that is built based on the logic of the provided **QuestionnairesErReportUIBuilder** class.
+synchronous or batch mode depending on user’s choice on the dialog page that is built based on the logic of the provided **QuestionnairesErReportUIBuilder** class.
 
 ```xpp
 /// <summary>
@@ -1368,7 +1370,7 @@ You can modify the configured ER solution to use the developed data provider cla
 
 1.  Go to **Modules \> Organization administration \> Electronic reporting \> Configurations**.
 2.  In the configurations tree, expand **Questionnaire model**.
-3.  Select type **Questionnaire mapping**.
+3.  Select **Questionnaire mapping**.
 4.  Select **Designer** to open the model mappings page.
 5.  Select **Designer** to open the selected mapping in the model mapping designer.
 6.  In **Data source types** tree, select **Dynamics 365 for Operations \\ Object** type.
@@ -1378,7 +1380,7 @@ You can modify the configured ER solution to use the developed data provider cla
 10. Select **OK**.
 11. Expand **RunTimeParameters**.
 
-Note that the added data source provides information about the record Id of the running ER format.
+Note that the added data source provides information about the record Id of the running ER format mapping.
 
 ![ER model mapping designer page](./media/er-quick-start1-mapping3.png)
 
@@ -1443,7 +1445,7 @@ You can modify the configured ER format to show its name in the footer of a repo
 6.  Select **Add** to add a new nested format element for the selected **Report** one.
 7.  Select **Excel\\Footer**.
 8.  In the **Name** field, type **Footer**.
-9.  Select **Footer**.
+9.  Select **Report\Footer**.
 10. Select **Add**.
 11. Select **Text\\String**.
 
@@ -1500,8 +1502,10 @@ Note that the footer of a generated report does not contains the name of ER form
 
 ### <a name="ConfigureDestination">Configure format destination for screen preview</a>
 
-1.  Set up **Screen** [destination](er-destination-type-screen.md) for the **Report** format component that has been [added](#AddFormatRootElement) as the root element of the configured ER **Questionnaire report** format.
-2.  Configure this destination to convert a report to [PDF format](electronic-reporting-destinations.md#OutputConversionToPDF)
+1.  Go to **Modules \> Organization administration \> Electronic reporting \> Electronic reporting destination**.
+2.  Add the destination record for the configured **Questionnaire report** ER format.
+3.  Set up **Screen** [destination](er-destination-type-screen.md) for the **Report** format component that has been [added](#AddFormatRootElement) as the root element of the configured **Questionnaire report** ER format.
+4.  Configure this destination to convert a report to [PDF format](electronic-reporting-destinations.md#OutputConversionToPDF)
     using the **Landscape** page orientation.
 
     ![ER destination page](./media/er-quick-start1-destination.png)
