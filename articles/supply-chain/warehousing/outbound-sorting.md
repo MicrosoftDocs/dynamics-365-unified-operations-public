@@ -216,8 +216,8 @@ This menu item allows users to move the sorted inventory items to the shipping l
     - **Mode** – *Work*
     - **Use existing work** – *Yes*
 
-1. In **General** FastTab, enter the following:
-    - **Direct by** – *User directed*
+1. In the **General** FastTab, enter the following:
+    - **Directed by** – *User directed*
 
 1. In the **Work classes** FastTab
 1. Select **New** and enter the following:
