@@ -324,14 +324,6 @@
         href: accounts-receivable/copy-customer.md
       - name: Customer workflow
         href: accounts-receivable/customer-workflow.md
-      - name: Credit and collections in Accounts receivable
-        href: accounts-receivable/collections-credit-accounts-receivable.md
-      - name: Configure Accounts receivables and credit and collections
-        href: accounts-receivable/accounts-receivables-set-up-overview.md
-      - name: Set up credit and collections
-        href: accounts-receivable/set-up-collections.md
-      - name: Review collections information
-        href: accounts-receivable/tasks/review-collections-information.md
       - name: Revenue recognition overview
         href: accounts-receivable/revenue-recognition-overview.md
       - name: Revenue recognition setup
@@ -410,6 +402,14 @@
         items:
         - name: Credit and collections overview
           href: accounts-receivable/cm-credit-and-collections-overview.md
+        - name: Credit and collections in Accounts receivable
+          href: accounts-receivable/collections-credit-accounts-receivable.md
+        - name: Configure Accounts receivables and credit and collections
+          href: accounts-receivable/accounts-receivables-set-up-overview.md
+        - name: Set up credit and collections
+          href: accounts-receivable/set-up-collections.md
+        - name: Review collections information
+          href: accounts-receivable/tasks/review-collections-information.md
         - name: Credit management setup
           href: accounts-receivable/cm-credit-mgmt-setup.md
         - name: Credit management setup information
