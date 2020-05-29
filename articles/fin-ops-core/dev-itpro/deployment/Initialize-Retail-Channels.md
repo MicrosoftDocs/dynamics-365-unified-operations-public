@@ -72,7 +72,7 @@ Commerce Scale Unit is available for deployment in the following regions.
 | EMEA            | UK South            | Limited Capacity    |
 | EMEA            | UK West             | Limited Capacity    |
 
-Deployment capacity in Limited Capacity regions are extremely constrained. Requests for deployment are evaluated on a case by case basis. If you have a compelling business need for deployment in Limited Capacity regions, you may file a Support Request to be added to the waitlist.
+Deployment capacity in Limited Capacity regions are extremely constrained. Requests for deployment are evaluated on a case-by-case basis. If you have a compelling business need for deployment in Limited Capacity regions, you may file a support request to be added to the waitlist.
 
 ## Initialize Retail Cloud Scale Unit as part of a new environment deployment
 
