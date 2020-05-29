@@ -74,6 +74,8 @@ Commerce Scale Unit is available for deployment in the following regions.
 
 Deployment capacity in Limited Capacity regions are extremely constrained. Requests for deployment are evaluated on a case-by-case basis. If you have a compelling business need for deployment in Limited Capacity regions, you may file a support request to be added to the waitlist.
 
+![Map showing region availability](media/Commerce-Scale-Unit-Region-Availability.png "Map showing region availability")
+
 ## Initialize Retail Cloud Scale Unit as part of a new environment deployment
 
 Please make sure the headquarters is available. This is required to register the scale unit with the headquarters during the initialization process. It is not recommended to initialize a scale unit when the headquarters is under servicing, as it may become unavailable during its servicing process.
