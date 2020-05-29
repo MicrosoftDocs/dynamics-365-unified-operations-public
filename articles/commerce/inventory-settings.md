@@ -42,7 +42,7 @@ Inventory settings specify whether inventory should be checked before products a
 
 Dynamics 365 Commerce provides estimates of on-hand availability for products. For information about how estimated on-hand availability is calculated, see [Calculate inventory availability for retail channels](calculated-inventory-retail-channels.md).
 
-In Commerce site builder, inventory thresholds and ranges can be defined for a product or a category. They determine whether inventory can be classified as in stock, low stock, or out of stock. For details, see [Configure inventory buffers and inventory levels](inventory-buffers-levels.md).
+In Commerce site builder, inventory thresholds and ranges can be defined for a product or a category. They determine whether inventory can be classified as in stock, low stock, or out of stock. <!-- For details, see [Configure inventory buffers and inventory levels](inventory-buffers-levels.md).-->
 
 ## Inventory settings
 
