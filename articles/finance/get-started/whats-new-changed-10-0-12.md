@@ -44,16 +44,16 @@ This topic lists features that are new or changed for Microsoft Dynamics 365 Fin
 The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. 
 
 ### Dynamics 365 Finance
-- [Customer payment predictions](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/customer-payment-predictions)
- - [Treasurer workspace](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/treasurer-workspace)
- - [Forecast bank balance](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/forecast-bank-balance)
- - [External data for cashflow forecasting](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/external-data-cash-forecasting)
- - [Advanced ledger settlement: Settlement and reverse settlement processed separately](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/advanced-ledger-settlement-settlement-reverse-settlement-processed-separately)
- - [Automatic vendor payment proposal](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/automatic-vendor-payment-proposal)
+- [Customer payment predictions](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/customer-payment-predictions)
+ - [Treasurer workspace](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/treasurer-workspace)
+ - [Forecast bank balance](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/forecast-bank-balance)
+ - [External data for cashflow forecasting](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/external-data-cash-forecasting)
+ - [Advanced ledger settlement: Settlement and reverse settlement processed separately](https://docs.microsoft.coms/dynamics365-release-plan/2020wave1/dynamics365-finance/advanced-ledger-settlement-settlement-reverse-settlement-processed-separately)
+ - [Automatic vendor payment proposal](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/automatic-vendor-payment-proposal)
  
  ### Public sector
- - [Allow interest distribution and escheatment to update bank balances when posting](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/allow-interest-distribution-escheatment-use-feature--lets-update-bank-balances-when-posting-advanced-ledger-entries)
- - [Remove option to replace budget plan](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/remove-option-replace-budget-plan)
+ - [Allow interest distribution and escheatment to update bank balances when posting](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/allow-interest-distribution-escheatment-use-feature--lets-update-bank-balances-when-posting-advanced-ledger-entries)
+ - [Remove option to replace budget plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/remove-option-replace-budget-plan)
  
 ## Additional resources
 
