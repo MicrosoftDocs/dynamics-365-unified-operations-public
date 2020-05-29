@@ -71,11 +71,10 @@ Themes can be used to remove or change the order of buy box product properties a
 
 ## Buy box module settings
 
-Buy box modules have four settings that can be configured at **Site Settings \> Extensions**:
+The following buy box module settings can be configured at **Site Settings \> Extensions**:
 
-- **Maximum quantity** – This property is used to specify the maximum number of each item that can be added to the cart. For example, a retailer might decide that only 10 of each product can be sold in a single transaction.
-- **Inventory check** – When the value is set to **True**, an item is added to the cart only after the buy box module makes sure that it's in stock. This inventory check is done for scenarios where the item will be shipped and scenarios where the item will be picked up in the store. If the value is set to **False**, no inventory check is done before an item is added to the cart and the order is placed. For information about how to configure inventory settings in the back office, see [Calculate inventory availability for retail channels](calculated-inventory-retail-channels.md).
-- **Inventory buffer** – This property is used to specify a buffer number for inventory. Inventory is maintained in real time, and when many customers place orders, it can be difficult to maintain an accurate inventory count. When an inventory check is done, if the inventory is less than the buffer amount, the product is treated as out of stock. Therefore, when sales occur quickly through several channels, and the inventory count isn't fully synced, there is less risk that an item that is out of stock will be sold.
+- **Cart line quantity limit** – This property is used to specify the maximum number of each item that can be added to the cart. For example, a retailer might decide that only 10 of each product can be sold in a single transaction.
+- **Inventory** – For information about how to apply inventory settings, see [Apply inventory settings](inventory-settings.md).
 - **Add to cart** - This property is used to specify the behavior after an item is added to the cart. The possible values are **Navigate to cart**, **Do not navigate to cart**, and **Show notifications**. When the value is set to **Navigate to cart**, users are sent to the cart page after they add an item. When the value is set to **Do not navigate to cart**, users aren't sent to the cart page after they add an item. When the value is set to **Show notifications**, users are shown a confirmation notification and can continue to browse on the product details page. 
 
     The following image shows an example of an "added to cart" confirmation notification on the Fabrikam site.
