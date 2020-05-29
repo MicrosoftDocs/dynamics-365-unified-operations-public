@@ -67,7 +67,7 @@ The following tables describes the set of supported authentication mechanisms fo
 
 |Scenario|Unsupported scenario|Details|
 |----------|-----------|------------|
-|**Dynamics 365 POS authentication flows**|**Dynamics 365 POS authentication flows** |Authentication without device activation / token. |All POS related Commerce Scale Unit APIs require a device activation / token for authentication. |
+|**Dynamics 365 POS authentication flows**|Authentication without device activation / token. |All POS related Commerce Scale Unit APIs require a device activation / token for authentication. |
 
 ## Dynamics 365 POS Employee Authentication Flows
 ![Dynamics 365 POS Employee Authentication Flows](./media/arch-auth-flow-1.jpg)
