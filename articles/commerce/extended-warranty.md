@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Extended warranty 
+title: Create and configure extended warranties 
 description: This topic covers extended warranties and describes how to create and configure them in Microsoft Dynamics 365 Commerce.
 author:  sijoshi
 manager: annbe
@@ -29,7 +29,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 
 ---
 
-# Extended Warranty
+# Create and configure extended warranties
 
 This topic covers extended warranties and describes how to create and configure them in Microsoft Dynamics 365 Commerce.
 
@@ -41,15 +41,11 @@ Extended warranties can be sold to customers in the retail channel during the in
 
 ### Warranty item setup
 
-Dynamics 365 Commerce provides the functionality to set up a warranty item type and set attributes for the item including the association between a product and warranty item, price of the warranty, warranty duration, and more. Once the warranty item is set up and released to the organizational unit, a retailer will then be able to sell warranties through Modern Point of Sale (POS), online stores, and other retail channels.
+Dynamics 365 Commerce provides the functionality to create a warranty item and set attributes for it including the association between a product and warranty item, price of the warranty, warranty duration, and more. Once a warranty item is configured and released to the organizational unit, a retailer will then be able to sell warranties through Modern Point of Sale (POS), online stores, and other retail channels.
 
 ### Warranty item sales
 
-Extended warranties are sold in a retail channel during the initial product purchase, or for a limited time after the initial purchase. At the POS, a sales associate will be prompted to consider an extended warranty when a related product is added to a customer's cart. This provides an upsell or cross-sell opportunity to the sales associate as part of the sales flow. A customer can also return later and buy an extended warranty for the previously-purchased product. A sales associates can then look up the original transaction and sell the customer the related extended warranty item.
-
-### Warranty policy creation
-
-Once an extended warranty item is sold, a warranty policy entity is created in Commerce. The warranty policy number can be shared with the customer to give them a reference for the extended warranty purchased. The warranty policy will include information such as the purchased warranty item's start and end dates, terms and conditions, and serial number of the warranted product.
+Extended warranties are sold in a retail channel during the initial product purchase, or for a limited time after the initial purchase. At the POS, a sales associate will be prompted to consider an extended warranty when a related product is added to a customer's cart. This presents an upsell or cross-sell opportunity to the sales associate as part of the sales flow. A customer can also return at a later time and buy an extended warranty for a previously-purchased product. In this case, a sales associates can then look up the original transaction and sell the customer the related extended warranty item.
 
 ### Terminology
 
@@ -59,7 +55,8 @@ Once an extended warranty item is sold, a warranty policy entity is created in C
 | Manufacturer's warranty | A *manufacturer's warranty* (often called a limited warranty) is the warranty a customer receives when they purchase a product. Some features of a manufacturer's warranty are: <br/><br/><ul><li>The warranty cost is included in the cost of the product. Customers don't have to pay any additional amount for a manufacturer's warranty.</li><li>Depending on the product category, a manufacturer's warranty generally lasts for 30 days, 6 months, or 1 year. (For most consumer electronics, the warranty lasts for 1 year).</li><li>The warranty covers any defects caused by mechanical or electrical failures. Coverage is limited, and it does not include any accidental damage to the purchased product. If a customer wants to protect their purchased product from everyday damages, they should invest in an extended warranty, which lasts for 2-10 years depending on the product category. Extended warranties have wider coverage and cover everyday mishaps such as drops, spills, and stains.</li></ul> |
 | Warranty item | A *warranty item* is an extended warranty item sold for a warrantable item, for example a 2-year accidental protection plan for laptops. | 
 | Warrantable item | A *warrantable item* is a serialized product for which a warranty is being sold. For example, a laptop is a warrantable item for which 2-year and 3-year extended warranties are sold. |
-| Warranty group | A *warranty group* is a relationship between Warranty items and warrantable items. This association is used by POS to determine which warranty items should be prompted when a warrantable item is added to a customer's cart.
+| Warranty group | A *warranty group* is a relationship between Warranty items and warrantable items. This association is used by POS to determine which warranty items should be prompted when a warrantable item is added to a customer's cart. |
+| Warranty policy | A *warranty policy* is an entity created in Commerce when a warranty policy is sold. A warranty policy includes information such as the purchased warranty item's start and end dates, terms and conditions, and serial number of the warranted product. The warranty policy number can be shared with the customer to give them a reference for the purchased extended warranty item. |
 
 ## Create a warranty item
 
@@ -90,7 +87,7 @@ To create a warranty item in Commerce, follow these steps.
 |-------------------|------------|-----------------|
 | Warrantable Price Range | None, Base price, Selling price | None – Price range “Lower Limit’ and ‘Upper Limit’ is not applicable Base Price A particular Warranty will be applicable if the Base price (Price without discounts) of the Warrantable Item falls between ’Upper’ and ’Lower’ limit specified here Based on price of Warrantable item Selling price Reserved for future use |                             | Lower limit and Upper limit | Price limit of Warrantable item in Company currency | The upper and lower price limit can be based on base price (MSRP) of the product This attribute will define how the current warranty product is applicable to warranty product If set as base price – Prompt Only warranties where base price of Warrantble product falls within Lower Limit’ and ’Upper Limit’ values of the warranty item E.g. Laptop has base price = \$999 2 Warranties: Warranty1 with LowerPriceLimit = \$500 and UpperPriceLimit = \$1000 and PriceTier = MSRP Warranty2 with LowerPriceLimit = \$1001 and UpperPriceLimit = \$ 2000 and PriceTier = Base price In this case, Warranty1 will be prompted when Laptop with value \$999 is added to cart in POS or online or AX sales order  |
 
-## Configure warranty settings
+## Configure warranty item settings
 
 Warranty settings form allows to set Warranty Feature settings
 
@@ -106,7 +103,7 @@ Channel-specific settings allow to set configuration to enable prompting of Warr
     added to cart.
 1. Run **1070** job to sync the data to the channel.
 
-### Configure policy number sequence
+### Configure the policy number sequence
 
 Warranty policy number sequence is set here
 
@@ -116,7 +113,7 @@ Warranty policy number sequence is set here
 
 ![Example of](./media/ew-number-sequences.png)
 
-### Set up a warranty group
+## Set up a warranty group
 
 To set up a warranty group in Commerce, follow these steps.
 
@@ -133,21 +130,21 @@ To set up a warranty group in Commerce, follow these steps.
 1. Click on **Publish** to publish the Warranty Group.
 1. Run **1040** job to sync the data to channel
 
-**Selling Warranty in Point of Sale**
+## Sell warranty items in POS
 
-Two new POS operations are added to sell warranty item during sell workflow.
+Two POS features enable sales associates to sell warranty item during the customer purchase workflow.
 
-**Add Warranty -** POS operation **Add Warranty** will trigger prompt to show applicable warranties for the Warrantable item
+**Add Warranty** - The **Add Warranty** POS operation triggers a prompt that shows applicable warranties for a warrantable item.
 
 ![Example of](./media/ew-add-warranty.png)
 
 ![Example of](./media/ew-sell-warranty.png)
 
-**Add Warranty to existing transaction –** POS operation **Add Warranty to existing transaction** will allow selling warranty for Warrantable item sold earlier. Original transaction can be found by entering the receipt number of the original transaction with warrantable items.
+**Add Warranty to existing transaction** - The **Add Warranty to existing transaction** POS feature enable sales associates to sell warranties for warrantable items sold earlier. The original transaction can be found by entering the receipt number of the original warrantable item transaction.
 
 ![Example of](./media/ew-add-warranty-existing.png)
 
-**Process warranty transactions**
+## Process warranty transactions
 
 For warranties added in cash and carry transactions, user needs to go through statement posting so that those transactions are posted in headquarters, then go to **Retail and Commerce \> Products and categories \> Warranty \> Process warranty transactions**. This will process warranty transactions and create warranty policy.
 
