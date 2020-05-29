@@ -38,7 +38,7 @@ The `TODAY` function returns a *Date* value that represents the current applicat
 
 ## Syntax
 
-```
+```xpp
 TODAY ()
 ```
 
