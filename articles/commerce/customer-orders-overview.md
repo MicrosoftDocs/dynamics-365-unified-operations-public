@@ -58,6 +58,10 @@ Here are some of the parameters that can be set on the **Commerce parameters** p
 
     - Charges are applied at the level of the sales order header, and when some quantity of a product line is returned, the maximum refund of shipping charges that is allowed for the products and the quantity can't be determined in way that works for all customers.
     - Shipping charges are incurred for every instance of shipping. If a customer returns products multiple times, and the retailer's policy specifies that the retailer will bear the cost of return shipping charges, the return shipping charges will be more than the actual shipping charges.
+    
+## Disable "Pay later" option
+
+New for Commerce version 10.0.12, merchants have the ability to remove the "Pay later" option when a customer order is created at the point of sale. To disable the "Pay later" option, open the **Functionality profile** for the channel where pay later will not be allowed and click **Edit**. On the **General** tab, click the dropdown for **Require payment for fulfillment**. If "Pay later" should not be allowed at the point of sale, select "Card required" and click **Save**. Be sure to run the **1070** distribution schedule to synchronize this change to the channel. 
 
 ## Transaction flow for customer orders
 
