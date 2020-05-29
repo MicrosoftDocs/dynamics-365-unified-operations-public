@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Power Platform overview
+title: Microsoft Power Platform Integration with Finance and Operations
 description: This topic describes virtual entities for Finance and Operations in Common Data Service.
 author: Sunil-Garg
 manager: AnnBe
