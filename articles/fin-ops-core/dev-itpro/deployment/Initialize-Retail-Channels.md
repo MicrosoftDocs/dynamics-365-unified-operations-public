@@ -37,7 +37,7 @@ If you're using a Tier-2 sandbox or production environment that has application 
 This topic describes the steps for initializing Retail Cloud Scale Unit.
 
 > [!IMPORTANT]
-> For existing customers using retail channel functionality in the cloud, to ensure continued and uninterrupted support for your business, we require that you update your retail channels to use Cloud Scale Unit. New environments deployed without Cloud Scale Unit will no longer recieve quality and service updates for cloud-hosted retail channel components. There is no action required for customers who exclusively use Store Scale Unit.  Contact your Microsoft FastTrack solution architect if you require an extension.
+> For existing customers using retail channel functionality in the cloud, to ensure continued and uninterrupted support for your business, we require that you update your retail channels to use Cloud Scale Unit. New environments deployed without Cloud Scale Unit will no longer receive quality and service updates for cloud-hosted retail channel components. There is no action required for customers who exclusively use Store Scale Unit.  Contact your Microsoft FastTrack solution architect if you require an extension.
 
 ## Prerequisites
 
@@ -49,30 +49,30 @@ Commerce Scale Unit is available for deployment in the following regions.
 
 | Global location | Region              | Availability        |
 |-----------------|---------------------|---------------------|
-| AMERICAS        | East US             | Generally Available |
-| AMERICAS        | East US 2           | Generally Available |
-| AMERICAS        | North Central US    | Generally Available |
-| AMERICAS        | South Central US    | Generally Available |
-| AMERICAS        | Central US          | Generally Available |
-| AMERICAS        | West US             | Generally Available |
-| AMERICAS        | West US 2           | Generally Available |
-| AMERICAS        | Canada Central      | Limited Capacity    |
-| AMERICAS        | Canada East         | Limited Capacity    |
-| AMERICAS        | West Central US     | Limited Capacity    |
-| APAC            | Australia East      | Generally Available |
-| APAC            | Southeast Asia      | Generally Available |
-| APAC            | Japan East          | Generally Available |
-| APAC            | Japan West          | Generally Available |
-| APAC            | Australia Southeast | Limited Capacity    |
-| APAC            | East Asia           | Limited Capacity    |
-| APAC            | India South         | Limited Capacity    |
-| APAC            | India Central       | Limited Capacity    |
-| EMEA            | West Europe         | Generally Available |
-| EMEA            | North Europe        | Generally Available |
-| EMEA            | UK South            | Limited Capacity    |
-| EMEA            | UK West             | Limited Capacity    |
+| AMERICAS        | East US             | Generally available |
+| AMERICAS        | East US 2           | Generally available |
+| AMERICAS        | North Central US    | Generally available |
+| AMERICAS        | South Central US    | Generally available |
+| AMERICAS        | Central US          | Generally available |
+| AMERICAS        | West US             | Generally available |
+| AMERICAS        | West US 2           | Generally available |
+| AMERICAS        | Canada Central      | Limited capacity    |
+| AMERICAS        | Canada East         | Limited capacity    |
+| AMERICAS        | West Central US     | Limited capacity    |
+| APAC            | Australia East      | Generally available |
+| APAC            | Southeast Asia      | Generally available |
+| APAC            | Japan East          | Generally available |
+| APAC            | Japan West          | Generally available |
+| APAC            | Australia Southeast | Limited capacity    |
+| APAC            | East Asia           | Limited capacity    |
+| APAC            | India South         | Limited capacity    |
+| APAC            | India Central       | Limited capacity    |
+| EMEA            | West Europe         | Generally available |
+| EMEA            | North Europe        | Generally available |
+| EMEA            | UK South            | Limited capacity    |
+| EMEA            | UK West             | Limited capacity    |
 
-Deployment capacity in Limited Capacity regions are extremely constrained. Requests for deployment are evaluated on a case-by-case basis. If you have a compelling business need for deployment in Limited Capacity regions, you may file a support request to be added to the waitlist.
+Deployment capacity in Limited capacity regions are extremely constrained. Requests for deployment are evaluated on a case-by-case basis. If you have a compelling business need for deployment in Limited capacity regions, you can file a support request to be added to the waitlist.
 
 ![Map showing region availability](media/Commerce-Scale-Unit-Region-Availability.png "Map showing region availability")
 
