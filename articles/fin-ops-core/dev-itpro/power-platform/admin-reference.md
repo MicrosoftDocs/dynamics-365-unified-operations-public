@@ -107,7 +107,7 @@ The next steps walk through this process in Finance and Operations apps.
 
     - **User ID** - The user ID created above.
 
-The next step in the process is to provide Common Data Service with the Finance and Operations instance to connect to. The following steps walks through this part of the process.
+The next step in the process is to provide Common Data Service with the Finance and Operations instance to connect to. The following steps walk through this part of the process.
 
 1.  In Common Data Service, go to **Advanced Settings \> Administration \> Virtual Entity Data Sources**.
 
