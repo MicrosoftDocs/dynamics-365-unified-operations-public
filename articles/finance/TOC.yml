@@ -978,6 +978,8 @@
         href: project-management/tasks/configure-intercompany-project-invoicing.md
       - name: Configure standard costs for labor and expenses
         href: project-management/tasks/configure-standard-costs-labor-expenses.md
+      - name: Create and apply vendor payment retention terms
+        href: project-management/create-and-apply-vendor-payment-retention-terms.md
       - name: Set up and use pay-when-paid vendor payments
         href: project-management/setup-manage-vendor-payments.md
       - name: Project cost accrual on purchase receipts
@@ -1000,6 +1002,10 @@
         href: project-management/project-purchase-orders.md
       - name: Project quotations
         href: project-management/project-quotations.md
+      - name: Confirm, update, and send a project quotation
+        href: project-management/confirm-update-send-project-quotation.md
+      - name: Transfer a quotation to a project
+        href: project-management/transfer-quote-new-existing-project.md
       - name: Project resourcing
         href: project-management/project-resourcing.md
       - name: Receive items on purchase order from item requirement
@@ -1022,6 +1028,8 @@
           href: project-management/custom-fields-mobile.md
       - name: Project grants
         href: project-management/project-grants.md
+      - name: Eliminate a project estimate
+        href: project-management/eliminate-project-estimate.md
     - name: Public sector
       items:
       - name: Public sector home page
@@ -2288,8 +2296,8 @@
           href: localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
         - name: Semansys XBRL integration
           href: localizations/tasks/nl-00003-semansys-xbrl-integration.md
-        - name: Audit file - XML Auditfile Financieel, XAF
-          hred: localizations/emea-nl-audit-file.md
+        - name: Audit file (XML Auditfile Financieel XAF)
+          href: localizations/emea-nl-audit-file.md
       - name: Norway
         items:
         - name: Norway overview
