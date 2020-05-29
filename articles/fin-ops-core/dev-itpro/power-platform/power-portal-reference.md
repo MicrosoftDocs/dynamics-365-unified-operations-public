@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Power Apps portals reference
+title: Power Apps portals with Finance and Operations
 description: This topic explains how Power Apps portals can be used with Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.12
 ---
 
-# Power Apps portals reference
+# Power Apps portals with Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
