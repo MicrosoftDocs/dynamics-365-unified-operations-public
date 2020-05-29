@@ -5,7 +5,7 @@ title: Inventory aging report
 description: This topic describes the functionality that lets you run an Inventory aging report.
 author: RichardLuan
 manager: AnnBe
-ms.date: 5/9/2020
+ms.date: 5/29/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -25,7 +25,7 @@ ms.assetid:
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: riluan
-ms.search.validFrom: 2020-5-9
+ms.search.validFrom: 2020-5-29
 ms.dyn365.ops.version: 
 
 ---
@@ -36,23 +36,31 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/preview-banner.md)] <!-- KFM: Is this really preview functionality? -->
 
-The **Inventory aging** report categorizes on-hand quantity and inventory values for a selected item or item group into several period buckets. This topic illustrates the internal logic of the report. <!-- KFM: I think we need to set the scene a bit more here. It looks like we are illustrating the logic by setting up a specific example and then discussing the result. Are we using demo data, such as USMF? -->
+This topic presents some examples of how to interpret results of the **Inventory aging** report, which categorizes on-hand quantity and inventory values for a selected item or item group into several period buckets. It also illustrates the internal logic of the report. 
 
 > [!NOTE]
-> We recommend that you use the [Inventory aging report storage](inventory-aging-report-storage.md), which displays the result as a form and a chart, rather than use SSRS. Especially when you have a large number of items and warehouses to process. <!-- KFM: Spell out SSRS. Also, when we try to generate the report described here, we get a warning that it has been deprecated. Can we instead provide an example based on the new report? It's a little strange that we are publishing new documentation for deprecated functionality. -->
+> This topic presents an example that illustrates results as they would appear in a standard inventory aging report. However, we recommend that you normally use the [Inventory aging report storage](inventory-aging-report-storage.md) version of this report, which displays the result as a form and a chart, especially when you have a large number of items and warehouses to process.
 
-## Inventory transactions
+## Sample data used in these examples
 
-Create a new item with following **Storage dimension** setup. <!-- KFM: Give a short description of why we are doing this. We may also need a procedure for how to do this (I don't happen to know how). Alternatively, we could present all of the tables in this section as example values without expecting that users will run this as an exercise, but I still think we should be a bit more explicit about where these values are set. -->
+To illustrate how this report works, we will present examples based on the example inventory transaction data described in this section.
+
+### Storage dimension setup
+
+The example system contains the following **Storage dimension** setup .
 
 | Name      | Active | Physical inventory | Financial inventory |
 |-----------|--------|--------------------|---------------------|
 | Site      | Yes    | Yes                | Yes                 |
 | Warehouse | Yes    | Yes                | No                  |
 
-The **Inventory model** is *FIFO*, and **Cost price** is set to  *Include physical value*. <!-- KFM: I am not sure what this means. Are these settings? Should the reader set these values? -->
+### Inventory model
 
-Create the following inventory transactions on the item. <!-- KFM: Give a short description of why we are doing this and how. -->
+For this example system, the **Inventory model** for the released products is *FIFO*, and  the **Cost price** setting for the inventory model is *Include physical value*.
+
+### Inventory transactions
+
+The example system contains the following inventory transactions for a released product with **Item number** *1000*. <!-- KFM: I assumed this item number. Please confirm.  -->
 
 | Reference      | Site | Warehouse | Receipt   | Issue | Physical date | Financial date | Quantity | Cost amount | Physical cost amount |
 |----------------|------|-----------|-----------|-------|---------------|----------------|----------|-------------|----------------------|
@@ -63,22 +71,17 @@ Create the following inventory transactions on the item. <!-- KFM: Give a short 
 | Transfer order | 1    | 12        | Purchased |       | 2-May         | 2-May          | 5        |  458.33   |  458.33            |
 | Sales order    | 1    | 12        |           | Sold  | 3-May         | 3-May          | -1       |  -91.67   |  -91.67            |
 
-## Run an Inventory aging report
+## How quantities and amounts in each bucket are calculated
 
-<!-- KFM: Provide a short intro here. -->
+Using the sample data presented previously, you could create an inventory aging report using the following settings:
 
-1. Go to **Cost management \> Inquiries and reports \> Inventory accounting \- analysis reports \> Inventory aging**.
+- **As of date** - *9 May*
+- **Site** - *View*
+- **Warehouse** to *No*
+- **Item number** - *Total*
+- **Aging period** - Is set to generate monthly buckets.
 
-1. The **Inventory aging** pane opens. Make the following settings here: <!-- KFM:Leave all other settings at default? -->
-
-    - **As of date** - *9 May* <!-- KFM do we need a year? -->
-    - **Site** - *View*
-    - **Item number** - *Total*
-    - **Aging period** - <!-- KFM: what should we specify here? -->
-
-1. Select **OK** to generate the report.
-
-<!-- KFM: We should introduce the following table. Is it what we should expect to see based on demo data and our specific settings? Or just a typical example? -->
+The content of this report could appear as shown in the following example.
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -165,17 +168,17 @@ Create the following inventory transactions on the item. <!-- KFM: Give a short 
 </tbody>
 </table>
 
-The **Inventory value quantity**, **Inventory value** and **Average unit cost** shown in the report are values for the financial inventory dimension (which is **Site** in this case). Taking Site 1 as an example, note the following:
+Note the following in the example report:
 
-- The **Inventory value quantity** is 14 (10 + 5 - 5 + 5 - 1)
-- The **Inventory value** is 1,283.33 (1,000 + 375 - 458.33 + 458.33 - 91.67)
-- The **Average unit cost** is 91.67.
-- The **On-hand value** and the **Amount** in each period bucket are calculated by **Average unit cost**.
+- The **Inventory value quantity**, **Inventory value** and **Average unit cost** shown in the report are values for the financial inventory dimension (which is **Site** in this case).
+- Taking **Site 1** as an example:
+  - The **Inventory value quantity** is 14 (10 + 5 - 5 + 5 - 1)
+  - The **Inventory value** is 1,283.33 (1,000 + 375 - 458.33 + 458.33 - 91.67)
+  - The **Average unit cost** is 91.67.
+  - The **On-hand value** and the **Amount** in each period bucket are calculated by **Average unit cost**.
+- The report determines the on-hand quantity for each period bucket by summarizing the total received inventory quantity for each period buckets, then applies the FIFO (First In First Out) principle to deduct the total issued quantity regardless of which inventory model the items use.
 
-> [!NOTE]
-> The report determines the on-hand quantity for each period bucket by summarizing the total received inventory quantity for each period buckets, then applies the FIFO (First In First Out) principle to deduct the total issued quantity regardless of which inventory model the items use.
-
-Run the report again, but this time set both **Site** and **Warehouse** to *View*.
+If you were to run the same report again, but this time with both **Site** and **Warehouse** to *View*, the new report could appear as shown in the following example.
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -281,7 +284,14 @@ Run the report again, but this time set both **Site** and **Warehouse** to *View
 
 This time, **Site 1** is split into two rows for warehouse **11** and **12**. However **Inventory value quantity**, **Inventory value** and **Average unit cost** are the same, because warehouse isn't a financial inventory dimension. Note that the quantity distribution of **Site 1** is also different. In the first report run, the system ignores the transfer order that happens within the same site, and deducts the quantity of the sales invoice from the bucket **3/31/2020 - 3/1/2020** in **Site 1**. In the second report run, the system deducts the quantity in the sales invoice from the bucket **5/8/2020 - 5/1/2020** in **Warehouse 12**.
 
-Run the inventory closing for May  and then run the report again with **As of date** set to *5/31/2020*. **Inventory value** and **Average unit cost** will be updated, **On-hand value** and all the other **Amount** values in each bucket are also updated accordingly. <!-- KFM: I think we may need to be a bit more explicit here. I am not sure what to do. We may need to describe how to "run the inventory closing for May" -->
+## Effects of inventory closing
+
+If you were to run the inventory closing for May and then run the previous report again with **As of date** set to *5/31/2020*, you would notice the following results:
+
+- **Inventory value** and **Average unit cost** will be updated
+- **On-hand value** and all the other **Amount** values in each bucket will also updated accordingly.
+
+The new report could appear as shown in the following example.
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
