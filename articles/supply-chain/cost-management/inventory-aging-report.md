@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Inventory aging report
-description: This topic describes the functionality that lets you run an Inventory aging report.
+title: Inventory aging report examples and logic
+description: This topic presents some examples that illustrate how to interpret the results of an inventory aging report.
 author: RichardLuan
 manager: AnnBe
 ms.date: 5/29/2020
@@ -36,10 +36,9 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/preview-banner.md)] <!-- KFM: Is this really preview functionality? -->
 
-This topic presents some examples of how to interpret results of the **Inventory aging** report, which categorizes on-hand quantity and inventory values for a selected item or item group into several period buckets. It also illustrates the internal logic of the report. 
+This topic presents some examples that illustrate how to interpret the results of an **Inventory aging** report, which categorizes on-hand quantity and inventory values for a selected item or item group into several period buckets. This topic also illustrates the internal logic of the report.
 
-> [!NOTE]
-> This topic presents an example that illustrates results as they would appear in a standard inventory aging report. However, we recommend that you normally use the [Inventory aging report storage](inventory-aging-report-storage.md) version of this report, which displays the result as a form and a chart, especially when you have a large number of items and warehouses to process.
+This topic presents an example that illustrates results as they would be presented by a standard inventory aging report. However, we recommend that you normally use the [Inventory aging report storage](inventory-aging-report-storage.md) version of this report, especially when you have a large number of items and warehouses to process. Inventory aging report storage saves each report that you generate, displays results as an interactive page and a chart, and lets you export any saved report.
 
 ## Sample data used in these examples
 
