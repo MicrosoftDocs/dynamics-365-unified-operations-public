@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.12
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management, preview version 10.0.12. This version has a build number of 10.0.507 <!-- KFM: I think this is the right build number, but check again --> and is available as follows:
+This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management, preview version 10.0.12. This version has a build number of 10.0.507 and is available as follows:
 
 - **Preview release:** May 2020
 - **General availability (self-update):** July 2020
@@ -44,10 +44,9 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 
 The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. Additional links point to additional documentation or videos that are currently available for that feature. Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
-- [Allow locking the job card touchscreen for sanitization](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/allow-locking-job-card-touchscreen-sanitization) - For more information, see [Configure job card for devices](../production-control/config-job-card-device.md).
+- [Allow locking the job card touchscreen for sanitization](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/allow-locking-job-card-touchscreen-sanitization) <!-- KFM - For more information, see [Configure job card for devices](../production-control/config-job-card-device.md). -->
 - [Capture product variants and tracking dimensions in the warehousing app during load item receiving](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/capture-product-variants-tracking-dimensions-warehousing-app-during-load-item-receiving) - For more information, see [Set up mobile devices for warehouse work](../warehousing/configure-mobile-devices-warehouse.md).
-- Cost calculation level (new BOM level) - For more information, see [Cost calculation level](../cost-management/cost-calculation-level.md).
-- [Customer portal for Dynamics 365 Supply Chain Management](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/customer-self-service-experiences) - For more information, see [Customer portal for Dynamics 365 Supply Chain Management overview](../sales-marketing/customer-portal-overview.md).
+- Cost calculation level (new BOM level) - For more information, see [Cost calculation level](../cost-management/cost-calculation-level.md).<!-- KFM - [Customer portal for Dynamics 365 Supply Chain Management](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/customer-self-service-experiences) - For more information, see [Customer portal for Dynamics 365 Supply Chain Management overview](../sales-marketing/customer-portal-overview.md). -->
 - [Inventory on-hand service](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/inventory-on-hand-service)
 - [IoT intelligence core insights](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/iot-intelligence-core-insights)  - For more information, see [IoT Intelligence home page](../iot/iot-intelligence-home-page.md).
 - [License plate receiving enhancements for the warehousing app (continued)](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app-continued) - For more information, see [License plate receiving via the warehousing app](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
@@ -57,13 +56,13 @@ The following features are included in this release. The feature titles link to 
 
 ## Additional resources
 
-### Platform updates for Finance and Operations apps
+<!-- KFM: UPDATE THESE LINKS  ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.12 includes platform updates. To learn more, see [Platform updates for version 10.0.12 of Finance and Operations apps (August 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12.md). <!-- KFM: Check/update this link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.12 includes platform updates. To learn more, see [Platform updates for version 10.0.12 of Finance and Operations apps (August 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12.md).
 
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of 10.0.12, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=438264&dbType=3&qc=d7dbe350d53c7743949f6afa556ea8d19b4fc1d3e16824e1a2eef32e0c3b300a). <!-- KFM: Find this link -->
+For information about the bug fixes included in each of the updates that are part of 10.0.12, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=438264&dbType=3&qc=d7dbe350d53c7743949f6afa556ea8d19b4fc1d3e16824e1a2eef32e0c3b300a). -->
 
 ### Dynamics 365: 2020 release wave 1 plan
 

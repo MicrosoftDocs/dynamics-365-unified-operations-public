@@ -37,7 +37,7 @@ ms.dyn365.ops.version: 10.0.9
 ## Releases of Dynamics 365 Supply Chain Management
 
 To see what's new or changed in each release of Dynamics 365 Supply Chain Management, see the following topics.
-<!-- KFM: I think below is the right build number, but check again -->
+
 | Version | Build number | Auto-update availability | Learn more |
 |---|---|---|---|
 | 10.0.12 | 10.0.507 | June 2020 | [What's new and changed in Dynamics 365 Supply Chain Management version 10.0.12](whats-new-scm-10-0-12.md) |
