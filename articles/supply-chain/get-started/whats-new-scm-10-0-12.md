@@ -56,13 +56,13 @@ The following features are included in this release. The feature titles link to 
 
 ## Additional resources
 
-<!-- KFM: UPDATE THESE LINKS  ### Platform updates for Finance and Operations apps
+### Platform updates for Finance and Operations apps
 
 Microsoft Dynamics 365 Supply Chain Management 10.0.12 includes platform updates. To learn more, see [Platform updates for version 10.0.12 of Finance and Operations apps (August 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12.md).
 
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of 10.0.12, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=438264&dbType=3&qc=d7dbe350d53c7743949f6afa556ea8d19b4fc1d3e16824e1a2eef32e0c3b300a). -->
+For information about the bug fixes included in each of the updates that are part of 10.0.12, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=453382&dbType=3&qc=a68cf77635c0ab926e7b1b75c6925c82a23058c524c4d728ba8b30fedaf41746).
 
 ### Dynamics 365: 2020 release wave 1 plan
 
