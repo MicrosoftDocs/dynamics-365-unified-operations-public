@@ -58,13 +58,13 @@ The functionality that is described in this topic is supported by the Modern POS
 
 This functionality supports network-enabled payment terminals and receipt printers. You can provide cash drawer support by connecting the cash drawer to the network-enabled receipt printer via the d/k port.
 
-Out-of-box support for this functionality is provided by the [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3). However, other payment connectors might be supported via the Commerce software development kit (SDK). Supported receipt printers include network-enabled receipt printers from Star Micronics.
+Out-of-box support for this functionality is provided by the [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3). However, other payment connectors might be supported via the Commerce software development kit (SDK) for payments. Supported receipt printers include network-enabled receipt printers from Star Micronics and Epson.
 
 To set up Star Micronics receipt printers, use the Star Micronics Printer Utility to configure the device so that it can be used over the network. This utility will also provide the IP address of the device.
 
-To set up Epson receipt printers, use the Epson e-POS Print utility to set up the device to use network protocols.
+To set up Epson receipt printers, use the Epson ePOS-Print utility to set up the device to use network protocols.
 
-For more information about how to set up network peripherals, see [Network peripherals setup](https://go.microsoft.com/fwlink/?linkid=2129965).
+For more information about how to set up network peripherals, see [Network peripheral support overview](https://go.microsoft.com/fwlink/?linkid=2129965).
 
 ## Set up a dedicated payment terminal and a prompt for a printer and cash drawer
 
@@ -79,13 +79,13 @@ To set up the hardware profile that is assigned to the register, follow these st
 1. In Dynamics 365 Commerce, search for **Hardware profile**.
 2. Select **New**.
 3. Assign a hardware profile number, and then enter a description. This hardware profile will be assigned to the register itself. Therefore, a description such as **Dedicated with fallback** will suffice.
-4. On the **Device type** FastTab, set up the following device types.
+4. On the FastTabs for different device types, set up the following device types.
 
     | Device | Type | Device name | Additional details |
     |---|---|---|---|
-    | Printer | Fallback | **Epson** or **Star** | The device name is case-sensitive. The print profile should be the same as the print profile that is mapped to the network printer that is set up in the hardware profile that is assigned to the hardware station at the channel level. |
+    | Printer | Fallback | **Epson** or **Star** | The device name is case-sensitive. The **Receipt profile ID** should be the same as the **Receipt profile ID** that is mapped to the network printer that is set up in the hardware profile that is assigned to the hardware station at the channel level. |
     | Cash drawer | Fallback | **Epson** or **Star** | The device name is case-sensitive. Set the **Use shared shift** option to **Yes**. |
-    | EFT service | Adyen | Not applicable | For information about how to set up the out-of-box Adyen connector, see [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3). Other payment connectors can be supported via the [payments SDK](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/end-to-end-payment-extension). |
+    | EFT service | Adyen | Not applicable | For information about how to set up the out-of-box Adyen connector, see [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3). Other payment connectors can be supported via the [Commerce software development kit (SDK) for payments](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/end-to-end-payment-extension). |
     | PIN pad | Network | **MicrosoftAdyenDeviceV001** | None. |
 
 5. In Dynamics 365 Commerce, search for **Registers**.
@@ -103,11 +103,11 @@ To set up the hardware profile that is used to group the network receipt printer
 1. In Dynamics 365 Commerce, search for **Hardware profile**.
 2. Select **New**.
 3. Assign a hardware profile number, and then enter a description. This hardware profile will be used to group the receipt printer and cash drawer. Therefore, a description such as **Network printer and cash drawer** will suffice.
-4. On the **Device type** FastTabs, set up the following device types.
+4. On the FastTabs for different device types, set up the following device types.
 
     | Device | Type | Description | Additional details |
     |---|---|---|---|
-    | Printer | Network | **Epson** or **Star** | The device name is case-sensitive. The print profile should be the same as the print profile that is mapped to the printer that is set up in the hardware profile that is assigned to the register. |
+    | Printer | Network | **Epson** or **Star** | The device name is case-sensitive. The **Receipt profile ID** should be the same as the **Receipt profile ID** that is mapped to the printer that is set up in the hardware profile that is assigned to the register. |
     | Cash drawer | Fallback | **Epson** or **Star** | The device name is case-sensitive. set the **Use shared shift** option to **Yes**. |
 
 5. Select **Save**.
@@ -158,4 +158,4 @@ Store associates are prompted to select a hardware station only one time per tra
 
 - [Set up POS hybrid app on Android and iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp)
 - [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3)
-- [Configuring network peripherals](https://go.microsoft.com/fwlink/?linkid=2129965)
+- [Network peripheral support overview](https://go.microsoft.com/fwlink/?linkid=2129965)
