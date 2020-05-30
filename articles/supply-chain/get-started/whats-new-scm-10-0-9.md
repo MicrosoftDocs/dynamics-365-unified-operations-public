@@ -72,7 +72,7 @@ The following features are included in this release. The feature titles link to 
 - [Visual scheduling for work orders in Asset Management](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/visual-scheduling-work-orders-asset-management) - For more information, see [Work with scheduled work orders using a gantt chart](../asset-management/work-order-scheduling/schedule-work-orders.md#gantt)
 - [Warehouse slotting](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-slotting)
 - [Wave label printing enhancements](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-label-printing-enhancements)
-- [Wave step code](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-step-code)
+- [Wave step code](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-step-code) - For more information, see [Wave step codes](../warehousing/wave-step-codes.md)
 
 ## Additional resources
 
