@@ -14,6 +14,8 @@
         items:
         - name: What's new or changed in Platform updates home page
           href: get-started/whats-new-home-page.md
+        - name: Platform updates for 10.0.12 (August 2020)
+          href: get-started/whats-new-platform-update-10-0-12.md
         - name: Platform updates for 10.0.11 (July 2020)
           href: get-started/whats-new-platform-update-35.md
         - name: Platform updates for 10.0.10 (May 2020)
@@ -1118,6 +1120,20 @@
           href: lifecycle-services/use-translation-service-ua.md
         - name: Translation memory files
           href: lifecycle-services/use-translation-service-tm.md
+    - name: Microsoft Power Platform integration
+      items:
+      - name: Microsoft Power Platform integration with Finance and Operations
+        href: power-platform/overview.md
+      - name: Entity modeling
+        href: power-platform/entity-modeling.md
+      - name: Application lifecycle management
+        href: power-platform/application-lifecycle-management.md
+      - name: Finance and Operations and Common Data Service admin reference
+        href: power-platform/admin-reference.md
+      - name: Power Apps portals with Finance and Operations
+        href: power-platform/power-portal-reference.md
+      - name: Finance and Operations virtual entities FAQ
+        href: power-platform/faq.md
     - name: Mobile platform
       items:
       - name: Mobile platform resources

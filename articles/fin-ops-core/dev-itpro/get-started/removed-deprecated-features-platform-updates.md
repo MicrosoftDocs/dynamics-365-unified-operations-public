@@ -42,6 +42,18 @@ This list is intended to help you consider these removals and deprecations for y
 > [!NOTE]
 > Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
 
+## Platform updates for version 10.0.12 of Finance and Operations apps
+
+### Grid or group control form extensions containing invalid field references
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The data group property on grid or group controls is used to automatically show all the fields of a field group. A grid or group control added by extension could contain fields that are no longer defined on the field group, or it might be missing fields that are defined on the field group. This can cause inconsistent behavior at runtime. Platform updates for version 10.0.12 of Finance and Operations apps now categorize this issue as a compiler *warning*. To fix this issue, open the form extension and save it.
+| **Replaced by another feature?**   | This compiler warning will be replaced with a compiler error in a future update. |
+| **Product areas affected**         | Visual Studio development tools |
+| **Deployment option**              | All |
+| **Status**                         | A compiler warning is introduced in platform updates for version 10.0.12 of Finance and Operations apps. |
+
 ## Platform updates for version 10.0.11 of Finance and Operations apps
 
 ### Visual Studio 2015
