@@ -45,6 +45,7 @@ This topic describes the support for and setup of network peripherals in the sto
 | Dedicated hardware station | The hardware station business logic that is built into the Modern POS for Windows and Modern POS for Android applications. |
 | Drawer kick (d/k) port | A traditional method for connecting a cash drawer to a receipt printer. |
 | Network peripherals | Built-in support for network-enabled payment terminals, receipt printers, and cash drawers. |
+| ESC/P | Epson Standard Code for Printers, aslo know as "Escape/P, is printer a control language created by Epson that is commonly used to send commands to point of sale printers. |
 
 ## Supported POS clients and devices
 
@@ -52,9 +53,9 @@ Functionality for network peripherals is supported by the Modern POS for Windows
 
 This functionality supports network-enabled payment terminals and receipt printers. You can provide cash drawer support by connecting the cash drawer to the network-enabled receipt printer via the d/k port.
 
-Out-of-box support for this functionality is provided by the [Microsoft Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3). However, other payment connectors might be supported via the Retail software development kit (SDK). Supported receipt printers include network-enabled receipt printers from Star Micronics.
+Out-of-box support for this functionality is provided by the [Microsoft Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3). However, other payment connectors might be supported via the Commerce software development kit (SDK). Supported receipt printers include network-enabled receipt printers from Star Micronics and Epson.
 
-Out-of-box support is provided for network protocols for Epson and Star Micronics receipt printers. Cash drawers that are connected to those printers via the d/k port are supported via ESC/POS protocols.
+Out-of-box support is provided for network protocols for Epson and Star Micronics receipt printers. Cash drawers that are connected to those printers via the d/k port are supported via ESC/P protocols.
 
 ## Set up network peripherals
 
@@ -77,11 +78,11 @@ Network-enabled Star Micronics printers that support Ethernet can be configured 
 1. In Dynamics 365 Commerce, search for **Hardware profiles**.
 2. Select **New**.
 3. Assign a hardware profile number, and then enter a description.
-4. On the device type FastTabs, set up the following device types.
+4. On the FastTabs for different device types, set up the following device types.
 
     | Device | Type | Device name | Additional details |
     |---|---|---|---|
-    | Printer | Network | **Epson** or **Star** | The device name is case-sensitive. Assign a printing profile. |
+    | Printer | Network | **Epson** or **Star** | The device name is case-sensitive. Assign a **Receipt profile ID**. |
     | Cash drawer | Network | **Epson** or **Star** | The device name is case-sensitive. Set the **Use shared shift** option to **Yes** if the cash drawer will be shared by multiple POS devices. |
 
 5. Select **Save**.
@@ -93,8 +94,8 @@ Network-enabled Star Micronics printers that support Ethernet can be configured 
 3. Assign the hardware profile that you just created to the register that should use a dedicated payment terminal. The device that is mapped to this register must use either the Modern POS for Windows application or the Modern POS for Android application.
 4. Select **Save**.
 5. On the Action Pane, on the **Registers** tab, select **Configure IP addresses**.
-6. On the printer FastTab, enter the IP address of the printer. Leave the field for the port number blank.
-7. On the cash drawer FastTab, enter the IP address of the printer. Leave the field for the port number blank.
+6. On the **Printer** FastTab, enter the IP address of the printer. Leave the field for the port number blank.
+7. On the **Cash drawer** FastTab, enter the IP address of the printer. Leave the field for the port number blank.
 8. Select **Save**.
 9. Search for **All stores**.
 10. Select a store by selecting its **Retail Channel Id** value, and then select **Edit**.
