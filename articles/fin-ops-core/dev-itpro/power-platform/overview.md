@@ -32,6 +32,9 @@ ms.dyn365.ops.version: 10.0.0
 [!include[banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
+> [!IMPORTANT]
+> This functionality requires service update 189 for Common Data Service. The release information for Common Data Service is published in the [latest version availability page.](https://docs.microsoft.com/en-us/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability)
+
 Finance and Operations is a virtual data source in Common Data Service, and enables full create, read, update, delete (CRUD) operations from Common Data Service and Microsoft Power Platform. By definition, the data for virtual entities doesn't reside in Common Data Service. Instead, it continues to reside in the application where it belongs. To enable CRUD operations on Finance and Operations entities from Common Data Service, entities must be made available as virtual entities in Common Data Service. The allows CRUD operations to be performed, from Common Data Service and Microsoft Power Platform, on data that resides in Finance and Operations apps.
 
 ## Prerequisite reading
