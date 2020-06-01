@@ -5,7 +5,7 @@ title: Power Apps portals with Finance and Operations
 description: This topic explains how Power Apps portals can be used with Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 05/27/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
