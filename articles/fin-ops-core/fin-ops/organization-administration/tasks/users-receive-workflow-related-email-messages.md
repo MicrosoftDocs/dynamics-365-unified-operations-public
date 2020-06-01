@@ -43,3 +43,8 @@ You can configure the system to send email messages to users when workflow-relat
 6. Click **Save**.
 7. Close the page.
 
+## Troubleshooting
+
+### Where do workflow email templates come from?
+
+The email templates will be sourced from either system email templates or organization email templates depending on whether the workflow is a system-level (not company specific) or organization-level (company specific) workflow.
