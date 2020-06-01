@@ -106,16 +106,16 @@ After you've finished playing back an edited recording, save it. It's then ready
 
 ## Copy test cases in Azure DevOps
 
-As you are building your test suites in Azure DevOps, It is handy and common to duplicate test cases along with their
+As you are building your test suites in Azure DevOps, it is handy and common to duplicate test cases along with their
 attachments. If a copied test case contains an existing Excel parameter file attached, RSAT cannot execute it without
-manual edits to the Excel file. The Test Case ID in the Excel parameter file must match the Azure DevOps test case ID.
-You will need to edit all copied Excel parameter files. For example: In the image below, the Excel file is associated with
+manual edits to the Excel file. The **Test Case ID** in the Excel parameter file must match the Azure DevOps test case ID.
+You will need to edit all copied Excel parameter files. In the following image, the Excel file is associated with
 Test Case number 53 in Azure DevOps.
 
 ![copy-test-cases](media/copy-test-cases.png)
 
-As of RSAT version 1.210, this process is easier. You can automatically fix all occurrences of a mismatch: Select the
-desired test cases in the grid, then select Resolve test case ID mismatch in the New menu.
+As of RSAT version 1.210, this process is easier. To automatically fix all occurrences of a mismatch, select the
+desired test cases in the grid, and then select **Resolve test case ID mismatch** in the **New** menu.
 ![resolve-test-case-id-mismatch](media/resolve-test-case-id-mismatch.png)
 
 
