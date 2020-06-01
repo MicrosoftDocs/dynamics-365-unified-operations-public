@@ -47,7 +47,7 @@ Dynamics 365 Commerce provides the functionality to create a warranty item and s
 
 Extended warranties are sold in a retail channel during the initial product purchase, or for a limited time after the initial purchase. At the POS, a sales associate will be prompted to consider an extended warranty when a related product is added to a customer's cart. This presents an upsell or cross-sell opportunity to the sales associate as part of the sales flow. A customer can also return at a later time and buy an extended warranty for a previously-purchased product. In this case, a sales associates can then look up the original transaction and sell the customer the related extended warranty item.
 
-### Terminology
+### Warranty terminology
 
 | TERM / ABBREVIATION          | DESCRIPTION |
 |------------------------------|--------------|
@@ -60,36 +60,44 @@ Extended warranties are sold in a retail channel during the initial product purc
 
 ## Create a warranty item
 
-Warranty is a service provided to the customer. Warranty Product is modeled as a Product of type Service and ServiceType = Warranty.
-
 To create a warranty item in Commerce, follow these steps.
 
-1. Go to: **Products and categories \> Products**
-1. Click **New** to create a new Warranty Product
-1. Set **Product type** = **Service, Product subtype** = **Product, Product service type** = **Service**
-1. Set **Product name**, **Product number**, **Retail category** and click **Ok**
-1. In **Warranty** Fasttab set **Unit of time** and **Length of time**
-1. Click **Save** to save the Warranty Product
-1. Release the Warranty Product to the company to sell the Warranty Product (see link for steps on how to Release a product to a company)
-1. On Released product form. Enter **Price range base**, **Lower limit**, **Upper Limit**
+1. Go to **Products and categories \> Products**
+1. Select **+New** to create a new warranty item.
+1. For **Product type**, select **Service** from the drop down menu.
+1. For **Product subtype**, select = **Product**.
+1. For **Product service type**, select **Service**.
+1. For **Product name**, enter the product name.
+1. For **Retail category**, select a value from the drop down menu, and then select **OK**.
+1. For **Product number**, enter the product number.
+1. Select **OK**
+1. On the **Warranty** FastTab, enter values for **Unit of time** and **Length of time**. See the table below for descriptions of the time properties.
+1. On the Action Pane, select **Save** to save the warranty item.
+1. Release the warranty product to the company to be able to sell it (see link for steps on how to Release a product to a company).
+1. On the **Warranty** FastTab of the **Released product details** page, enter values for **Price range base**, **Lower limit**, and **Upper Limit**.
 1. **Assort** the Warranty product to the channel where it needs to be sold. (add link on how to assort products)
 
-The following image shows and example of 
+The following table shows values and descriptions for the time properties on the **Warranty** FastTab.
+
+| **Property name** | **Values** | **Description** |
+|-------------------|------------|-----------------|
+| Unit of time | Day(s), Week(s), Month(s), Year(s) | This value specifies the unit of time to be used for the warranty. |
+| Length of time | Positive integer value | This value specifies the duration of the warranty (for example, the values for a 2-year warranty would be **Unit of time** = **Year(s)** and **Length of time** = **2**). |
+
+The following image shows an example of the time properties on the **Warranty** FastTab.
 
 ![Example of](./media/ew-time-properties.png)
 
+The following table shows values and descriptions for the time properties on the **Warranty** FastTab of the **Released product details** page.
+
 | **Property Name** | **Values** | **Description** |
 |-------------------|------------|-----------------|
-| Unit of time | Day(s), Week(s), Month(s), Year(s) | This will be the Interval specifying how long the warranty is valid for. |
-| Length of time | Positive Integer value specifying warranty duration | The duration of the warranty E.g. For a warranty of duration 2 years the values are: Unit of time = "Year(s)", Length of time = "2" |
+| Price range base | None, Base price, Selling price | <ul><li>None – Price range "Lower Limit" and "Upper Limit" is not applicable.</li><li>Base Price - A particular warranty will be applicable if the base price (the price without discounts) of the warrantable item falls between upper and lower limits specified here based on price of the warrantable item.</li><li>Selling price  - Reserved for future use</li></ul> | 
+| Lower limit and Upper limit | Price limit of the warrantable item in company currency | The upper and lower price limit can be based on base price (MSRP) of the product This attribute will define how the current warranty product is applicable to warranty product If set as base price – Prompt Only warranties where base price of Warrantble product falls within Lower Limit’ and ’Upper Limit’ values of the warranty item E.g. Laptop has base price = \$999 2 Warranties: Warranty1 with LowerPriceLimit = \$500 and UpperPriceLimit = \$1000 and PriceTier = MSRP Warranty2 with LowerPriceLimit = \$1001 and UpperPriceLimit = \$ 2000 and PriceTier = Base price In this case, Warranty1 will be prompted when Laptop with value \$999 is added to cart in POS or online or AX sales order  |
 
-The following image shows and example of 
+The following image shows an example of the **Warranty** FastTab properties on the **Released product details** page. 
 
 ![Example of](./media/ew-release-product-details.png)
-
-| **Property Name** | **Values** | **Description** |
-|-------------------|------------|-----------------|
-| Warrantable Price Range | None, Base price, Selling price | None – Price range “Lower Limit’ and ‘Upper Limit’ is not applicable Base Price A particular Warranty will be applicable if the Base price (Price without discounts) of the Warrantable Item falls between ’Upper’ and ’Lower’ limit specified here Based on price of Warrantable item Selling price Reserved for future use |                             | Lower limit and Upper limit | Price limit of Warrantable item in Company currency | The upper and lower price limit can be based on base price (MSRP) of the product This attribute will define how the current warranty product is applicable to warranty product If set as base price – Prompt Only warranties where base price of Warrantble product falls within Lower Limit’ and ’Upper Limit’ values of the warranty item E.g. Laptop has base price = \$999 2 Warranties: Warranty1 with LowerPriceLimit = \$500 and UpperPriceLimit = \$1000 and PriceTier = MSRP Warranty2 with LowerPriceLimit = \$1001 and UpperPriceLimit = \$ 2000 and PriceTier = Base price In this case, Warranty1 will be prompted when Laptop with value \$999 is added to cart in POS or online or AX sales order  |
 
 ## Configure warranty item settings
 
