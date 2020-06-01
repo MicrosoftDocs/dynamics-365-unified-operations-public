@@ -2,7 +2,7 @@
 # required metadata
 
 title: Release to warehouse rule
-description: Release to warehouse rule provides flexibility when releasing to warehouse. It serves as a defining setup parameter to determine whether release of partially reserved order lines is allowed by the system or not.
+description: This topic provides information about the Release to warehouse rule feature, which provides flexibility during release to the warehouse. It adds a configuration option that controls whether the system allows partially reserved order lines to be released.
 author: mirzaab
 manager: AnnBe
 ms.date: 02/01/2020
@@ -29,101 +29,107 @@ ms.dyn365.ops.version: Release 10.0.8
 
 # Release to warehouse rule
 
-The release to warehouse rule feature provides flexibility when releasing to the warehouse. It provides a configuration option for each warehouse, which lets you decide whether release of partially reserved order lines is allowed for that warehouse or not. It works hand-in-hand with advanced cross-docking functionality in situations where part of an order line quantity is marked against a supply source and the remaining part can be processed in the warehouse, thus allowing the line to be released so warehouse processing of the available inventory quantity can continue.
+The *Release to warehouse rule* feature provides flexibility during release to the warehouse. It adds a configuration option for each warehouse. You can use this option to specify whether partially reserved order lines can be released for that warehouse. The feature works together with advanced cross-docking functionality in situations where part of an order line quantity is marked against a supply source, but the remaining part can be processed in the warehouse. Therefore, the line can be released so that warehouse processing of the available inventory quantity can continue.
 
-## Enable release to warehouse rule
+## Turn on and initialize the Release to warehouse rule feature
 
 ### Turn on the feature
 
-Before you can use this feature, it must be enabled on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the feature status and enable it if needed. Here, the feature is listed as:
+Before you can use the *Warehouse release rule* feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on if it's required. In the **Feature management** workspace, the feature is listed in the following way:
 
-- **Module** - *Warehouse management*
-- **Feature name** - *Warehouse release rule*
+- **Module:** *Warehouse management*
+- **Feature name:** *Warehouse release rule*
 
 ### Initialize the feature
 
-Once the feature is enabled on your system, you must initialize it to set the rule to the correct initial state for all warehouses.
+After the feature is turned on in your system, you must initialize it to set the rule to the correct initial state for all warehouses.
 
-- For warehouses that aren't enabled for warehouse management, the rule will initially be set to **Not applicable**.
-- For warehouses that are enabled for warehouse management, the rule will initially be set to **Allow partial reservation**
+- For warehouses that aren't enabled for warehouse management, the rule is initially set to **Not applicable**.
+- For warehouses that are enabled for warehouse management, the rule is initially set to **Allow partial reservation**
 
-To initialize the enable release to warehouse rule for all warehouses:
+To initialize the feature and set the release to warehouse rule for all warehouses, follow these steps.
 
-1. Go to **Warehouse management > Setup > Warehouse management parameters**.
-1. Open the **General** tab of the **Warehouse management parameters** page.
-1. In the **Company information** section, select **Initialize release to warehouse** rule. (If this link isn't shown, then the feature either isn't turned on or has already been initialized.)
-1. You are prompted to confirm the action. Select **Yes** to initialize the feature.
+1. Go to **Warehouse management \> Setup \> Warehouse management parameters**.
+1. On the **Warehouse management parameters** page, on the **General** tab, in the **Company information** section, select the link for the **Initialize release to warehouse** rule. (If this link isn't shown, either the feature isn't turned on or it has already been initialized.)
+1. When you're prompted to confirm the action, select **Yes** to initialize the feature.
 
-<a name="set-option-warehouse"></a>
+## <a name="set-option-warehouse"></a>Set the release to warehouse rule for each warehouse
 
-## Set the release to warehouse rule for each warehouse
+After the feature is turned on and initialized, all your warehouses will have an initial setting, as described in the previous section. You can change this setting for individual warehouses by following these steps.
 
-On activating the feature, each of your warehouses will have an initial setting for it, as described in the previous section. You can now set this option as needed for each warehouse by doing the following:
-
-1. Go to **Warehouse management > Setup > Warehouse > Warehouses**.
-1. Select the warehouse you want to configure.
+1. Go to **Warehouse management \> Setup \> Warehouse \> Warehouses**.
+1. Select the warehouse to configure.
 1. Select **Edit** to put the page into edit mode.
-1. Expand the **Warehouse** FastTab.
-1. In the **Reservations** section of the **Warehouse** FastTab, find **Requirement for inventory reservation** (Controls if partial release of orders is allowed. When set to Require full reservation, orders will not be able to be released if the total quantity is not either physically reserved or planned for cross docking)
-1. Select one of the following options:
-    - **Not applicable** – When the feature is first enabled an initialized, this value is automatically assigned to all warehouses that aren't enabled for warehouse management and can't be changed. You can't select this option for warehouses that are enabled for warehouse management.
-    - **Allow partial reservation** – Allows orders to be released with any quantity reserved. The system will evaluate whether the unreserved quantity should be marked for advanced cross docking, and will mark that quantity as needed. If no marking exists, the system will only create work for the reserved quantity. When the feature is first enabled an initialized, this value is automatically assigned to all warehouses that are enabled for warehouse management. This option isn't available for warehouses that aren't enabled for warehouse management.
-    - **Require full reservation** – Orders can only be released if the entire quantity is reserved. This option isn't available for warehouses that aren't enabled for warehouse management.
+1. On the **Warehouse** FastTab, in the **Reservations** section, the **Requirement for inventory reservation** field controls whether partial release of orders is allowed. Select one of the following values:
+
+    - **Not applicable** – When the feature is first turned on and initialized, this value is automatically assigned to all warehouses that aren't enabled for warehouse management. It can't be changed. This value isn't available for warehouses that are enabled for warehouse management.
+    - **Allow partial reservation** – Orders can be released when any quantity is reserved. The system will evaluate whether the unreserved quantity should be marked for advanced cross-docking and will mark that quantity as required. If no marking exists, the system will create work only for the reserved quantity. When the feature is first turned on and initialized, this value is automatically assigned to all warehouses that are enabled for warehouse management. This value isn't available for warehouses that aren't enabled for warehouse management.
+    - **Require full reservation** – Orders can be released only if the whole quantity is reserved. They can't be released if the total quantity isn't either physically reserved or planned for cross-docking. This value isn't available for warehouses that aren't enabled for warehouse management.
+
 1. Select **Save**.
 
 ## Scenarios
 
-This section provides two scenario scripts that you can work through to get a feel for what this feature does and how to work with it.
+This section provides two scenarios that you can work through to learn what the feature does and how to use it.
 
-### Enable sample data
+### Make sample data available
 
-To work through these scenarios using the sample records and values specified here, you must be on a system with the standard [demo data](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) installed, and you must select the **USMF** legal entity before you begin.
+To work through these scenarios by using the sample records and values that are specified here, you must be on a system where the standard [demo data](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) is installed. Additionally, you must select the **USMF** legal entity before you begin.
 
-You can also use these scenarios as guidance for how to use this feature when working on a production system, but then you must then substitute your own values, and you may be missing some types of required records that would otherwise be provided by the standard demo data.
+You can also use these scenarios as guidance for the feature when you work on a production system. However, in that case, you must substitute your own values, and you might be missing some types of required records that the standard demo data provides.
 
-<a name="scenario1"></a>
+### <a name="scenario1"></a>Scenario 1: Require full release (no planned cross-docking)
 
-### Scenario 1: Require full Release (no planned cross-docking)
+This scenario shows how the feature works for warehouses that are set to **Require full reservation**.
 
-This scenario illustrates how this feature works for warehouses set to **Require full reservation**.
+1. Go to **Warehouse management \> Setup \> Warehouse \> Warehouses**.
+1. For warehouse _62_, set the **Requirement for inventory reservation** field to **Require full reservation**, as described in the [Set the release to warehouse rule for each warehouse](#set-option-warehouse) section earlier in this topic.
+1. Go to **Sales and marketing \> Sales orders \> All sales orders**.
+1. Select **New** to create a sales order.
+1. In the **Create sales order** dialog box, set the following values:
 
-1. Go to **Warehouse management > Setup > Warehouse > Warehouses** and set warehouse 62 to **Require full reservation**, as described in [Set the release to warehouse rule for each warehouse](#set-option-warehouse).
-1. Go to **Sales and marketing > Sales orders > All sales orders**.
-1. Select **New** to create a new sales order.
-1. The **Create sales order** flyout opens. Make the following settings here:
-    - On the **Customer** FastTab, set **Customer account** to _US-004_.
-    - On the **General** FastTab, set **Warehouse** to _62_.
-1. Select **OK** to create the new sales order and close the flyout.
-1. Your new sales order opens. Add the following two order lines to the **Sales order lines** table:
-    - ***Line 1***: Set **Item number** to *A0001*, and **Quantity** to *2*.
-    - Select **Add line** in the **Sales order lines** action pane.
-    - ***Line 2***: Set **Item number** to *A0002*, and **Quantity** to *2*.
-1. Select the first order line, in the **Sales order lines** action pane open the **Inventory** drop-down list and select **Reservation**.
-1. The **Reservation** page opens. Select **Reserve lot** to reserve your selected line's full quantity in the warehouse.
-1. Close the **Reservation** page to return to your sales order.
-1. Do not reserve the second order line.
-1. In the **Sales orders** action pane select the **Warehouse** tab and select **Release to warehouse**.
-1. Note that the following error is now shown: "The full quantity must be physically reserved." Therefore, the system doesn't create any work, shipment or load for the order.
+    - On the **Customer** FastTab, set the **Customer account** field to _US-004_.
+    - On the **General** FastTab, set the **Warehouse** field to _62_.
 
-> [!NOTE]
-> The same error will be also shown when the second line is partially reserved.
+1. Select **OK** to create the new sales order and close the dialog box.
+1. Your new sales order is opened. It includes an empty line in the grid in the **Sales order lines** section. On this line, set the following values:
 
-### Scenario 2: Allow Partial Release
+    - **Item number:** *A0001*
+    - **Quantity:** *2*
 
-This scenario illustrates how this feature works for warehouses set to **Allow Partial Release**.
+1. Select **Add line** to add a new line, and set the following values:
 
-1. Go to **Warehouse management > Setup > Warehouse > Warehouses** and set warehouse *62* to **Allow partial reservation**, as described in [Set the release to warehouse rule for each warehouse](#set-option-warehouse).
-1. As you did in the [previous scenario](#scenario1), go to **Sales and marketing > Sales orders > All sales orders**, create a new sales order for **Customer account** _US-004_ from **Warehouse** _62_, and add the following two order lines:
-    - Line 1: Set **Item number** to _A0001_, **Quantity** to _2_, and **Unit** to _Pcs_.
-    - Line 2: Set **Item number** to _A0002_, **Quantity** to _2_, and **Unit** to _Pcs_.
+    - **Item number:** *A0002*
+    - **Quantity:** *2*
+
+1. Select the first order line, and then, on the **Inventory** menu above the grid, select **Reservation**.
+1. On the **Reservation** page, select **Reserve lot** to reserve the selected line's full quantity in the warehouse.
+1. Close the **Reservation** page to return to the sales order.
+1. Don't reserve the second order line.
+1. On the Action Pane, on the **Warehouse** tab, select **Release to warehouse**.
+1. Notice that you receive the following error message: "The full quantity must be physically reserved." Therefore, the system doesn't create any work, shipment, or load for the order.
+
+    > [!NOTE]
+    > You will receive the same error message if you partially reserve the second line.
+
+### Scenario 2: Allow partial release
+
+This scenario shows how the feature works for warehouses that are set to **Allow partial release**.
+
+1. Go to **Warehouse management \> Setup \> Warehouse \> Warehouses**.
+1. For warehouse _62_, set the **Requirement for inventory reservation** field to **Allow partial reservation**, as described in the [Set the release to warehouse rule for each warehouse](#set-option-warehouse) section earlier in this topic.
+1. As you did in the [previous scenario](#scenario1), go to **Sales and marketing \> Sales orders \> All sales orders**, and create a sales order for customer account _US-004_ from warehouse _62_. Add the following two order lines:
+
+    - **Line 1:** Set the **Item number** field to _A0001_, the **Quantity** field to _2_, and the **Unit** field to _Pcs_.
+    - **Line 2:** Set the **Item number** field to _A0002_, the **Quantity** field to _2_, and the **Unit** field to _Pcs_.
+
 1. As you did in the [previous scenario](#scenario1), reserve the full quantity for order line 1, but don't reserve order line 2.
-1. Open the **Warehouse** tab and select **Release to warehouse**.
-1. Note that this time, no error is shown. Instead, the system creates work, shipments, and loads as required and displays the results.
+1. On the Action Pane, on the **Warehouse** tab, select **Release to warehouse**.
+1. Notice that you don't receive an error message this time. Instead, the system creates work, shipments, and loads as required, and shows the results.
+1. To view the shipment, load, and work information, use the options on the **Warehouse** menu above the grid:
 
-1. To view the work, shipment and loads information, do the following from the **Sales order lines** action pane:
-
-    - ***Line 1***: Select **Warehouse**, note that the three menu options are all activated, select each to view the details of the *Shipment*, *Load* and *Work* created when the order was released to the warehouse.
-    - ***Line 2***: Select **Warehouse**, note that only *Work details* is active, select it to open. No work has been created because no inventory was reserved, therefore, no Shipment or Load was created either.
+    - **Line 1:** Three options are available: **Shipment details**, **Load details**, and **Work details**. Select each option to view the details of the shipment, load, and work that were created when the order was released to the warehouse.
+    - **Line 2:** Only the **Work details** option is available. Select it, and notice that no work has been created, because no inventory was reserved. Therefore, no shipment or load was created either.
 
 > [!NOTE]
-> The same results is expected when the second line is partially reserved. In this case, work will be created for the reserved line quantity, but not for the unreserved quantity.
+> The same result is expected when the second line is partially reserved. In this case, work will be created for the reserved line quantity but not for the unreserved quantity.
