@@ -135,7 +135,15 @@ As was explained earlier, the GUID is the only information that is used to uniqu
 
 Therefore, how can the GUID of the accounts entity in Common Data Service be replaced with fields that are in Finance and Operations, in such a way that the query that is sent to Finance and Operations will return the correct list of sales orders?
 
-To solve this issue and enable a rich set of scenarios that allows for virtual entity–to–native entity relationships, relations can be added to this type of entity in Finance and Operations. The relation will appear as a relationship when the virtual entity is synced. The following example shows sample X++ code.
+To solve this issue and enable a rich set of scenarios that allows for virtual entity–to–native entity relationships, relations can be added to this type of entity in Finance and Operations. The relation will appear as a relationship when the virtual entity is synced.
+
+In the above example, the relationship between the SalesOrderHeader virtual entity and the Account native entity should be based upon the Account Number and Company fields. By default the native account entity in Common Data Service does not have a company field. For this example, we will add a company lookup field named new_testcompany to the native Account entity.
+
+Next, we add a new key named new_accountcompanyidx which specifies that (accountnumber, new_testcompany) together represent a unique row in the account entity in the Common Data Service.
+
+Next step is to define this relationhip in X++. The following example shows sample X++ code. The names of the fields, index, and mapping information should match the names of the fields and indexes created in the Common Data Service. In this example, a relationship named “synthaccount” will be created between the virtual SalesorderHeader entity and the native account entity in the Common Data Service. The fields mapped make up the new_accountcompanyidx index. The display name for the relationship will be \@SYS11307. Note the escape backslash at the start of the display name. This ensures the label defines the relationship, so that it is appropriately translated.
+
+The field mapping indicates which field on the virtual entity maps to which field on the native entity. In the field mapping, the key is the virtual entity field, and the value is the native entity field.
 
 ```x++
 [CDSVirtualEntitySyntheticRelationshipAttribute('synthaccount', 'account', '\@SYS11307', 'accountcompanyidx')]
@@ -151,8 +159,9 @@ To solve this issue and enable a rich set of scenarios that allows for virtual e
         return fieldMapping;
     }
 ```
+Next step is to generate or refresh the Virtual Entity to get the new relation. It must be noted that, relations between a virtual entity and a native entity cannot be updated in the Common Data Service once it is created. The only way to make an update will be to to physically remove the relationship, refresh the entity, then physically re-add the relationship in order to resolve the issue.
 
-When these additional relations are made available in Common Data Service, information becomes available in the relationship definition. The query that is generated will have a WHERE clause that is based on the fields that Finance and Operations understands. That query will then return the filtered list of sales orders, as expected.
+This relationship looks like a normal GUID-based relationship, but has extra metadata to translate query filters on the relationship into restrictions on the backing fields. The query that is now generated will have a WHERE clause that is based on the fields that Finance and Operations understands. That query will then return the filtered list of sales orders, as expected.
 
 ### Native entity–to–virtual entity relationships
 
