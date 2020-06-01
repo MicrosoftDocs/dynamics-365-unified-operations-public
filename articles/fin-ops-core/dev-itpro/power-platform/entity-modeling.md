@@ -32,6 +32,9 @@ ms.dyn365.ops.version: 10.0.12
 [!include[banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
+> [!IMPORTANT]
+> This functionality requires service update 189 for Common Data Service. The release information for Common Data Service is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
+
 Building an app requires capabilities to perform relational modeling between entities that are being used in the app. In the context of virtual entities, there will be scenarios where virtual entities and native entities in Common Data Service must work together to enable the desired user experience. This topic explains concepts of relational modeling that can be implemented using virtual entities for Finance and Operations.
 
 ## Generating virtual entities
