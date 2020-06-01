@@ -44,7 +44,7 @@ Before you can map a specific transactional event to an email template, you must
 
 To create an email template, follow these steps.
 
-1. In Commerce headquarters, go to **Retail and Commerce \> Headquarters setup \> Organization email templates**.
+1. In Commerce headquarters, navigate to **Organization email templates**, under **Retail and Commerce \> Headquarters setup \> Organization email templates**, or **Organization administration \> Setup \> Organization email templates**.
 1. Select **New**.
 1. Under **General**, set the following fields:
 
