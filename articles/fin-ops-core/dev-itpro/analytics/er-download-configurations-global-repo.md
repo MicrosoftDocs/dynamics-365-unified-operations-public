@@ -101,7 +101,7 @@ This tutorial guides you through the process of downloading the newest version o
 
 > [!NOTE]
 >
-> ER configuratoins might be configured as dependent on other configurations. Thefore, along with a selected configuration, other configurations might be automatically imported. For more about configuration dependencies, see [Define the dependency of ER configurations on other components](#tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md).
+> ER configuratoins might be configured as dependent on other configurations. Thefore, along with a selected configuration, other configurations might be automatically imported. For more about configuration dependencies, see [Define the dependency of ER configurations on other components](tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md).
 
 ## Additional resources
 
