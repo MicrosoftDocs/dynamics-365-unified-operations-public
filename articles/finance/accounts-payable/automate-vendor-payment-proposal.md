@@ -2,7 +2,7 @@
 # required metadata
 
 title: Automate vendor payment proposals
-description: Organizations that pay vendors on a recurring schedule can now automate the process of generating vendor payment proposals. 
+description: This topic explains how organizations that pay vendors on a recurring schedule can automate the process of generating vendor payment proposals.
 author: kweekley
 manager: AnnBe
 ms.date: 04/08/2020
@@ -35,109 +35,119 @@ ms.dyn365.ops.version: 10.0.11
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Organizations that pay vendors on a recurring schedule can now automate the process of generating vendor payment proposals. The payment proposal automation defines the following things: 
+Organizations that pay vendors on a recurring schedule can now automate the process of generating vendor payment proposals. Vendor payment proposal automations define the following details:
 
- - When payment proposals are run
- - What criteria is used to select the invoices to pay
- - What vendor payment journal the resulting payments are saved in.  
+- When payment proposals are run
+- What criteria are used to select the invoices that should be paid
+- What vendor payment journal the resulting payments are saved in
 
-The payment proposal automation does not automatically post the payments, which lets you continue using any validation and workflow processes you have for approving the payments that are created. 
+Payment proposal automations don't automatically post the payments. Therefore, you can continue to use any validation and workflow processes that you currently use to approve the payments that are created.
 
-## Define vendor payment proposal occurrence
-The vendor payment proposal automation uses the Process automation framework.  The Process automation is used by different business processes to define the recurrence of the selected process. For vendor payment proposal, the automation can be accessed under **Accounts payable – Payment setup – Process automation**.
+## Define the occurrence of vendor payment proposals
 
-Begin by using the Create new process automation option and select Vendor payment proposal. A wizard will open to lead you through the process of setting up the vendor payment proposal. 
+Vendor payment proposal automations use the Process automation framework. Different business processes use this framework to define the recurrence of a selected process. For vendor payment proposals, the automation can be accessed at **Accounts payable \> Payment setup \> Process automation**.
 
-## General page in wizard
-Enter the Name of the vendor proposal you are creating.  For example, if you pay all domestic vendors by check on Monday, enter a descriptive name such as Domestic_Check.  The name displays on the process automation weekly view, which is on the **Vendor payment** workspace. 
+First, use the **Create new process** automation option, and select **Vendor payment proposal**. A wizard then guides you through the process of setting up the vendor payment proposal.
 
-Define the owner of the payment journal that is created. This is usually the AP payment clerk, who is responsible for the payment journal after it’s created.  
+## General page
 
-The remaining settings are generic to the process automation and are used to define the recurrence pattern used for this version of the vendor payment proposal.  For example, if this occurrence is for check payments on Monday, you could define the occurrence to run **Weekly**, and select Monday as the day of the week when it runs. Also, enter an early Schedule time such as 2:00 am so the process automation will be complete by the start of the next business day. 
+On the **General** page of the wizard, enter the name of the vendor payment proposal that you're creating. For example, if you pay all domestic vendors by check on Monday, enter a descriptive name such as **Domestic\_Check**. The name that you enter is shown in the process automation weekly view in the **Vendor payments** workspace.
 
-It’s important to understand that you’re setting up the wizard to define when to process the vendor payment proposal. You don’t use the wizard to define when the vendor payments are generated, printed, and posted. The vendor payment proposal process automation will display in the weekly view on the days marked in the occurrence pattern. 
+Next, define the owner of the payment journal that is created. The owner is usually the Accounts payable (AP) payment clerk, who is responsible for the payment journal after it's created.
 
-Refer to the Process automation documentation for more information about the other fields found on the **General** tab.  
+The remaining settings on the page are generic and are used to define the occurrence pattern for this version of the vendor payment proposal. For example, if an occurrence is for check payments on Monday, you can define it so that it runs weekly, and you can select Monday as the day of the week when it runs. You can also enter an early schedule time, such as 2:00 AM, so that the process automation will be completed before the start of the next business day.
 
-## Vendor payment proposal page in wizard
-The vendor payment proposal page is next in the wizard and is used to define the criteria for selecting the vendor invoices to pay.  Most options are the same as found in the payment proposal on the vendor payment journal, with a few exceptions.  For example, all dates must be defined as relative dates since the payment proposal date changes each time the proposal is run.  
+It's important that you understand that you're using the wizard to define when the vendor payment proposal is processed. You aren't defining when the vendor payments are generated, printed, and posted. In the weekly view, the process automation for vendor payment proposals will appear on the days that are selected in the occurrence pattern.
+
+For more information about the other fields on the **General** page, see the process automation documentation.
+
+## Vendor payment proposal page
+
+The next page in the wizard is the **Vendor payment proposal** page. It's used to define the criteria for selecting the vendor invoices that should be paid. In general, the same options are found in the payment proposal in the vendor payment journal. However, there are a few exceptions. For example, all dates on this page must be defined as relative dates, because the payment proposal date changes every time that the proposal is run.
 
 ### Journal name
-The **Journal name** field defines the journal name into which to create the vendor payments.  The results of the vendor payment proposal automation will create payments in the defined journal, but the journal does not post. 
 
-### From date and To date
-Rather than defining a From date and To date for selecting invoices based on the due date or cash discount date, you must use the **Define to date criteria** and **Number of days adjustment for To date** fields to define the To date. There is no concept of a from date in the payment proposal automation.
+The **Journal name** field defines the journal name that the vendor payments are created in. The results of the vendor payment proposal automation will create payments in the defined journal, but the journal isn't posted.
 
-If you accept the default entry, No, in the **Define to date criteria** field, the process will select all invoices to pay when the process is run because no To date has been defined. 
+### "From" date and "to" date
 
-If you set **Define to date criteria** field to Yes, use the **Number of days adjustment for To date** field to define the number of days before or after the date that the process runs on for selecting invoices. The number can be positive, negative or zero. The system will then pay invoices whose due dates, or cash discount dates, follow or precede the date the process runs on by that number of days. For example, if this payment series creates payments to all vendors by check on Wednesday for all invoices that are due through Friday, set this field to 2. When the occurrence of the payment proposal is run on Wednesday, March 25th, all invoices with a due date or cash discount date on or before March 27th will be selected for payment. 
+Instead of defining a "from" date and a "to" date to select invoices based on the due date or cash discount date, you must use the **Define to date criteria** option and the **Number of days adjustment for To date** field to define the "to" date. There is no concept of a "from" date in payment proposal automations.
+
+By default, the **Define to date criteria** option is set to **No**. If you use this default value, the process will select all invoices for payment when the process is run, because no "to" date has been defined.
+
+If you set the **Define to date criteria** option to **Yes**, use the **Number of days adjustment for To date** field to define the date when invoices are selected as the specified number of days before or after the date when the process runs. The number can be positive, negative, or 0 (zero). The system will then pay invoices where the due dates, or cash discount dates, are the specified number of days before or after the date when the process runs. For example, for all invoices that are due on or before Friday, the payment series creates payments to all vendors by check on Wednesday. In this case, set the **Number of days adjustment for To date** field to **2**. When the occurrence of the payment proposal is run on Wednesday, March 25, all invoices that have a due date or cash discount date on or before March 27 will be selected for payment.
 
 ### Minimum payment date
-The minimum payment date is used to define the earliest date used when creating payments. You must first set **Define minimum payment date criteria** to Yes. This setting lets you use the minimum payment date functionality.  If this field is yes, define **Number of days adjustment for minimum payment date** as the number of days before or after the day that the process is run to use as the minimum payment date. The number can be positive, negative or zero.  For example, if this series generates payment on Wednesday with the intention of including all payments that have a minimum payment date of the preceding Monday, set this field to -2.
 
-Assume the payment proposal automation is defined to run on Wednesday. The To date value of 1 is entered in the **Number of days adjustment for To date** field, based on the due date and the value of -2 in the **Number of days adjustment for minimum payment date** field. If the payment process automation starts on Wednesday, March 25, all invoices that are due on or before March 26 will be included in the payment proposal. Payment proposals will be generated as follows. 
+The minimum payment date defines the earliest date that is used when payments are created. You must first set the **Define minimum payment date criteria** option to **Yes**. This setting lets you use the minimum payment date functionality. If this option is set to **Yes**, use the **Number of days adjustment for minimum payment date** field to define the minimum payment date as the specified number of days before or after the date when the process runs. The number can be positive, negative, or 0 (zero). For example, the payment series generates payments on Wednesday to include all payments that have a minimum payment date of the preceding Monday. In this case, set the **Number of days adjustment for minimum payment date** field to **-2**.
 
- - All invoices that are due on or before March 23, will have a payment date of March 23  
- - Invoices that are due on March 24, will have a payment date of March 24
- - Invoices that are due on March 25, will have a payment date of March 25
- - Invoices that are due on March 26 will have a payment date of March 26 
+Here is an example that shows how the fields for the "to" date and the minimum payment date work together. The payment proposal automation is set up to run on Wednesday. The **Number of days adjustment for To date** field is set to **1** to define the "to" date based on the due date. The **Number of days adjustment for minimum payment date** field is set to **-2**. If the payment process automation starts on Wednesday, March 25, all invoices that are due on or before March 26 will be included in the payment proposal. Payment proposals will be generated in the following way:
+
+- All invoices that are due on or before March 23 will have a payment date of March 23.
+- Invoices that are due on March 24 will have a payment date of March 24.
+- Invoices that are due on March 25 will have a payment date of March 25.
+- Invoices that are due on March 26 will have a payment date of March 26.
 
 ### Summarized payment date
-The summarized payment date is only used when the method of payment on the invoices is defined by setting the **Period** field to **Total**. If your methods of payment are set up as Total, you must set the **Define summarized payment date criteria** to Yes. If this field is set to yes, enter the number of days before or after the day that processing is run to use as the summarized payment date. Enter this value in the **Number of days adjustment for summarized payment date** field. The number can be positive, negative or zero. For example, if this series generates payment on Wednesday and the company wants to create a summarized payment on Wednesday, set this field to 0.
+
+The summarized payment date is used only when the **Period** field is set to **Total** for the method of payment of the invoices. If the **Period** field is set to **Total** for your methods of payment, you must set the **Define summarized payment date criteria** option to **Yes**. If this option is set to **Yes**, use the **Number of days adjustment for summarized payment date** field to define the summarized payment date as the specified number of days before or after the date when the process runs. The number can be positive, negative or 0 (zero). For example, the series generates payments on Wednesday, and the company wants to create a summarized payment on Wednesday. In this case, set the **Number of days adjustment for summarized payment date** field to **0**.
 
 ### Records to include
-The Filter options can still be defined on the payment proposal.  If a filter is defined, the filter criteria doesn’t display on the wizard page, but can be viewed by reopening the Filter.  
 
-The remaining fields on the proposal work the same as on the payment proposal on the vendor payment journal.  See Create vendor payments by using payment proposal for information about the other fields. 
+The filter options can still be defined for the payment proposal. If a filter is defined, the filter criteria aren't shown on the wizard page. However, they can be viewed by reopening the filter.
 
- > [!Note]
- > Some country-specific fields, as well as some Public sector fields, are not yet available in the vendor payment proposal automation. 
+The remaining fields for the proposal work just as they work for the payment proposal in the vendor payment journal. For information about the other fields, see Create vendor payments by using payment proposal.
 
-We recommend that you evaluate whether the automation will be beneficial to your organization, based on your requirements. 
+> [!NOTE]
+> Some country/region-specific fields, and some Public sector fields, aren't yet available in vendor payment proposal automations.
 
-## View results for vendor payment proposal automation
-After the vendor payment proposal automation series is created, the occurrences for each payment can be seen on the process automation weekly view.  For vendor payments, the process automation weekly view has been added to the **Vendor payments** workspace, as well as to the **Process automation** page. 
+We recommend that you evaluate whether the automation will be beneficial to your organization, based on your requirements.
 
-[![Vendor payments page](./media/vendor-payment-proposal-1.png)](./media/vendor-payment-proposal-1.png)
+## View the results of a vendor payment proposal automation
 
-The process automation weekly view shown here will display only vendor payment proposal automations.  It will show all occurrences of payments for the current week, for all legal entities that user has security to.  For example, if the AP payment clerk is responsible for payments in companies USMF and USSI, they will see the vendor payment proposal automation occurrences for those two companies, but not other companies. 
+After the vendor payment proposal automation series is created, the occurrences for each payment are shown in the process automation weekly view. For vendor payments, the process automation weekly view has been added to both the **Vendor payments** workspace and the **Process automation** page.
 
-[![Vendor payments page](./media/vendor-payment-proposal-2.png)](./media/vendor-payment-proposal-2.png)
+[![Process automation weekly view in the Vendor payments workspace](./media/vendor-payment-proposal-1.png)](./media/vendor-payment-proposal-1.png)
 
-Each occurrence will display various pieces of information. 
+The process automation weekly view in the **Vendor payments** workspace shows only vendor payment proposal automations. It shows all occurrences of payments for the current week, for all legal entities that the signed-in user has security permissions to. For example, if the AP payment clerk is responsible for payments in the USMF and USSI companies, he or she will see the occurrences of the vendor payment proposal automation for those two companies but not for other companies.
 
- - Each occurrence displays the company that the payment journal was, or will be, created in.  
- - If payments are created using centralized payments, the company displayed is the company that payments will be created in, and not necessarily which companies’ invoices will be paid
+[![Process automation weekly view for the USMF and USSI companies](./media/vendor-payment-proposal-2.png)](./media/vendor-payment-proposal-2.png)
 
-The name of the payment proposal occurrence is also shown to provide context that identifies the  payment proposal that’s displayed.
+Each occurrence shows the company that the payment journal was or will be created in. If payments are created by using centralized payments, the company that is shown is the company that payments will be created in. The occurrence doesn't necessarily show which companies' invoices will be paid.
 
-The state for each occurrence is shown to make it easier to see the status of the occurrence.
+The name of each occurrence is also shown to help identify the payment proposal.
 
- - Scheduled – The payment proposal is scheduled but hasn’t executed yet.
- - Error – The payment proposal has run but an error resulted. The errors can be viewed by choosing the View results button.
- - Completed – The payment proposal has successfully run.  The payments can be viewed by clicking the View payments hyperlink. This will open the payment journal created by the automation occurrence. 
- 
-After the payments are created, you can see the payment amounts in the journal. The amounts are shown in the transaction currencies. For example, if the payment journal contains payments in both the US and Canadian dollars, the total payments for each currency are shown.  
-The payment journal can be deleted after it’s created through the process automation. If a payment is completely deleted, the following things happen. 
+Additionally, the status of each occurrence is shown. The following statuses are used:
 
- - The process automation view for the week will remain in a **Completed** state
- - The process will remove the payment totals and the **View payments** link will be replaced with a **View results** button
- - A message indicating that the original journal was deleted will be displayed when you view the results 
+- **Scheduled** – The payment proposal is scheduled, but it hasn't yet run.
+- **Error** – The payment proposal has run, but an error occurred. You can view the errors by selecting the **View results** button.
+- **Completed** – The payment proposal has successfully run. You can view the payments by selecting the **View payments** link. This link opens the payment journal that was created by the occurrence.
 
-The invoices will be open again for payment.  A new occurrence can be created to pay the invoices again. 
+After the payments are created, you can view the payment amounts in the journal. The amounts are shown in the transaction currencies. For example, if the payment journal contains payments in both US dollars and Canadian dollars, the total payments for each currency are shown. 
 
-## Edit vendor payment proposal automation
-The process automation framework lets you edit the payment the series, and the occurrences created for the payment proposal. The series can be edited from either the **Process automation** page or the process automation weekly view.  For example, suppose the AP manager decides to generate all check for domestic vendors on Wednesday instead of Monday. The manager can find an occurrence on the weekly view and select **View/Edit – Series**.  If a series is changed, the system will prompt you to indicate whether the change should be made to all existing occurrences, or only the new occurrences.  Historical occurrences that are already **Completed**, or that end in an **Error** status will not be changed. 
+The payment journal can be deleted after it's created through the process automation. If a payment is completely deleted, the following events occur:
 
-You can also add a new occurrence or change an existing occurrence. For example, suppose the next payment proposal occurrence is scheduled to run Wednesday, January 1, which is a holiday.  You can change the occurrence from the process automation weekly view or from the Process automation page.  A page will open with the schedule details and payment proposal criteria lets you edit the scheduled time and date, as well as the payment proposal criteria, if necessary. For example, if you change the date of the payment occurrence on January 1, to January 2, you might also want to change the relative dates for the To date as a result of changing the scheduled date. 
-You can also disable an occurrence or series. Select an occurrence on the weekly view and select Disable to suspend processing that occurrence. The series can be disabled on the Process automation page.
+- The status of the process automation view for the week remains **Completed**.
+- The process removes the payment totals, and the **View payments** link is replaced with a **View results** button.
+- When you view the results, you receive a message that states that the original journal was deleted.
 
-## Security for payment proposal automation
-The following duties and privileges have been added for the vendor payment proposal automation. These are the default security settings, but they can be changed based on your organization’s requirements. For example, if the AP payment clerk can edit and create schedule occurrences as well as the AP manager, then assign the Maintain schedule occurrences duty to the person in the AP payment clerk role. 
+After a payment is deleted, the invoices will be open again for payment. A new occurrence can then be created to pay the invoices again.
 
-|                   Duty                  |    Role                                                                               |    Privileges                                                                                                                                                                                                                                                                                           |
-|:---------------------------------------:|---------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    Maintain schedule series             |    Accounts payable manager                                                           |    This duty allows the creation and maintenance of the payment proposal   automation series and occurrences through the following privileges:       - Maintain schedule occurrences   - Maintain schedule series   - ProcessScheduleOccurrenceListMaintain   - View the occurrences weekly view        |
-|    Inquiry into schedule occurrences    |    Accounts payable payment clerk       Accounts payable Centralized payment clerk    |                                                                                                 ﷒          This duty allows the rights to view the   payment proposal automation occurrences through the following privileges:   - View schedule occurrences   - View the occurrence weekly view        |
-|    Inquire into schedule series         |    <none>                                                                             |                                                                                This duty allows the rights to view the series and occurrences set up   through the following privileges:       - View schedule occurrences   - View the occurrences list page   - View the occurrence weekly view        |
-|    Maintain schedule occurrences        |    <none>                                                                             |                                                                                                                         This duty allows the creation and maintenance of an occurrence through   the following privileges:   - Maintain schedule occurrences   - View the occurrence weekly view        |
+## Edit a vendor payment proposal automation
+
+The Process automation framework lets you edit the payment, the series, and the occurrences that are created for the payment proposal. The series can be edited from either the **Process automation** page or the process automation weekly view. For example, if the AP manager decides to generate all checks for domestic vendors on Wednesday instead of Monday, he or she can find an occurrence in the weekly view and select **View/Edit – Series**. If you edit a series, the system prompts you to specify whether the change should be made to all existing occurrences or only to new occurrences. Historical occurrences that already have a status of **Completed**, or that ended in an **Error** status won't be changed.
+
+You can also add a new occurrence or change an existing occurrence. For example, the next payment proposal occurrence is scheduled to run Wednesday, January 1, but this date is a holiday. You can change the occurrence from either the process automation weekly view or the **Process automation** page. A page is opened that shows the schedule details and payment proposal criteria. Here, you can edit the scheduled time and date. You can also edit the payment proposal criteria, if changes are required. For example, if you change the scheduled date of the payment occurrence from January 1 to January 2, you might also want to change the relative dates for the "to" date.
+
+You can also disable an occurrence or a series. To disable an occurrence and suspend processing for it, select it in the process automation weekly view, and then select **Disable**. You can disable a series on the **Process automation** page.
+
+## Security for payment proposal automations
+
+The following duties and privileges have been added for vendor payment proposal automations. These duties and privileges are the default security settings, but they can be changed based on your organization's requirements. For example, if not only the AP manager but also the AP payment clerk can edit and create schedule recurrence, assign the **Maintain schedule occurrences** duty to the person in the AP payment clerk role.
+
+| Duty                              | Role                                                                       | Privileges |
+|-----------------------------------|----------------------------------------------------------------------------|------------|
+| Maintain schedule series          | Accounts payable manager                                                   | This duty grants the rights to create and maintain the payment proposal automation series and occurrences through the following privileges:<ul><li>Maintain schedule occurrences</li><li>Maintain schedule series</li><li>ProcessScheduleOccurrenceListMaintain</li><li>View the occurrences weekly view</li></ul> |
+| Inquiry into schedule occurrences | Accounts payable payment clerk, Accounts payable Centralized payment clerk | This duty grants the rights to view the payment proposal automation occurrences through the following privileges:<ul><li>View schedule occurrences</li><li>View the occurrence weekly view</li></ul> |
+| Inquire into schedule series      | None                                                                       | This duty grants the rights to view the setup of series and occurrences through the following privileges:<ul><li>View schedule occurrences</li><li>View the occurrences list page</li><li>View the occurrence weekly view</li></ul>|
+| Maintain schedule occurrences     | None                                                                       | This duty grants the rights to create and maintain an occurrence through the following privileges:<ul><li>Maintain schedule occurrences</li><li>View the occurrence weekly view</li></ul> |
