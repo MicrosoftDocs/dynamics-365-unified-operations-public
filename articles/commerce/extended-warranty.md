@@ -73,11 +73,11 @@ To create a warranty item in Commerce, follow these steps.
 1. Select **OK**
 1. On the **Warranty** FastTab, enter values for **Unit of time** and **Length of time**. See the table below for descriptions of the time properties.
 1. On the Action Pane, select **Save** to save the warranty item.
-1. Release the warranty product to the company to be able to sell it (see link for steps on how to Release a product to a company).
+1. Release the warranty product to the company to be able to sell it. >>>(NEED LINK for steps on how to release a product to a company)<<<
 1. On the **Warranty** FastTab of the **Released product details** page, enter values for **Price range base**, **Lower limit**, and **Upper Limit**.
-1. **Assort** the Warranty product to the channel where it needs to be sold. (add link on how to assort products)
+1. Assort the warranty item to the channel where it will be sold. >>>(NEED LINK on how to assort products.)<<<
 
-The following table shows values and descriptions for the time properties on the **Warranty** FastTab.
+The following table describes values and descriptions for the time properties on the **Warranty** FastTab.
 
 | **Property name** | **Values** | **Description** |
 |-------------------|------------|-----------------|
@@ -86,65 +86,61 @@ The following table shows values and descriptions for the time properties on the
 
 The following image shows an example of the time properties on the **Warranty** FastTab.
 
-![Example of](./media/ew-time-properties.png)
+![Example of time properties on the **Warranty** FastTab](./media/ew-time-properties.png)
 
-The following table shows values and descriptions for the time properties on the **Warranty** FastTab of the **Released product details** page.
+The following table describes values and descriptions for the time properties on the **Released product details** page.
 
 | **Property Name** | **Values** | **Description** |
 |-------------------|------------|-----------------|
-| Price range base | None, Base price, Selling price | <ul><li>None – Price range "Lower Limit" and "Upper Limit" is not applicable.</li><li>Base Price - A particular warranty will be applicable if the base price (the price without discounts) of the warrantable item falls between upper and lower limits specified here based on price of the warrantable item.</li><li>Selling price  - Reserved for future use</li></ul> | 
-| Lower limit and Upper limit | Price limit of the warrantable item in company currency | The upper and lower price limit can be based on base price (MSRP) of the product This attribute will define how the current warranty product is applicable to warranty product If set as base price – Prompt Only warranties where base price of Warrantble product falls within Lower Limit’ and ’Upper Limit’ values of the warranty item E.g. Laptop has base price = \$999 2 Warranties: Warranty1 with LowerPriceLimit = \$500 and UpperPriceLimit = \$1000 and PriceTier = MSRP Warranty2 with LowerPriceLimit = \$1001 and UpperPriceLimit = \$ 2000 and PriceTier = Base price In this case, Warranty1 will be prompted when Laptop with value \$999 is added to cart in POS or online or AX sales order  |
+| Price range base | None, Base price, Selling price | <ul><li>**None** – Price ranges "Lower Limit" and "Upper Limit" are not applicable.</li><li>**Base Price** - A particular warranty will be applicable if the base price (the price without discounts) of the warrantable item falls between upper and lower limits specified here based on price of the warrantable item.</li><li>**Selling price** - Reserved for future use.</li></ul> | 
+| Lower limit, Upper limit | Positive integer value | These properties specify the upper and lower price limits of the warrantable item in company currency. These limits can be based on the warrantable item's base price (also known as the manufacturer's suggested retail price, or MSRP). >>>CONFUSING SECTION NEEDS TO BE REWORDED. This attribute will define how the current warranty product is applicable to warranty product If set as base price – Prompt Only warranties where base price of Warrantble product falls within Lower Limit’ and ’Upper Limit’ values of the warranty item E.g. Laptop has base price = \$999 2 Warranties: Warranty1 with LowerPriceLimit = \$500 and UpperPriceLimit = \$1000 and PriceTier = MSRP Warranty2 with LowerPriceLimit = \$1001 and UpperPriceLimit = \$ 2000 and PriceTier = Base price In this case, Warranty1 will be prompted when Laptop with value \$999 is added to cart in POS or online or AX sales order<<<  |
 
-The following image shows an example of the **Warranty** FastTab properties on the **Released product details** page. 
+The following image shows an example of the price range properties on the **Released product details** page. 
 
-![Example of](./media/ew-release-product-details.png)
+![Example of price range properties on the **Released product details** page](./media/ew-release-product-details.png)
 
-## Configure warranty item settings
-
-Warranty settings form allows to set Warranty Feature settings
-
-### Configure channel-specific settings
+## Configure channel-specific settings
 
 Channel-specific settings allow to set configuration to enable prompting of Warranty item when Warrantable item is added to cart in Point of sale.
 
 To configure channel-specific setting in Commerce, follow these steps.
 
-1. Go to: **Products and categories \> Warranty \> Warranty settings\> Channel Specific**
+1. Go to **Products and categories \> Warranty \> Warranty settings\> Channel Specific**.
 1. Set **Enable/Disable “**Prompt for warranty" for your channel
-    - **Enable** – Warranty item will be prompted when Warrantable item is added
-    to cart.
-    - **Disable** – Warranty item will not be prompted when Warrantable item is
-    added to cart.
-1. Run **1070** job to sync the data to the channel.
+    - **Enable** – Warranty item will be prompted when the warrantable item is added to the cart.
+    - **Disable** – Warranty item will not be prompted when the warrantable item is added to the cart.
+1. Run the **1070** job to sync the data to the channel.
 
-### Configure the warranty policy number sequence
+## Configure the warranty policy number sequence
 
-To configure the warranty policy number sequence in Commerce, follow these steps.
+The warranty policy number sequence is a unique identifier of the policy.
 
-1. Go to: **Products and categories \> Warranty \> Warranty settings\>Number sequences**
-1. Set the **Number sequence code** (Add link on how to create number sequence
-    code)
+To configure the warranty policy number sequence in Commerce, follow these steps.>>>(NEED LINK/INFO on how to create number sequence code)<<<
 
-The following image shows and example of 
+1. Go to **Products and categories \> Warranty \> Warranty settings \> Number sequences**.
+1. Under **Number sequence code**, select a value from the drop down menu. 
 
-![Example of](./media/ew-number-sequences.png)
+The following image shows the **Number sequence code** field under **Warranty settings**.
+
+![Image of the **Number sequence code** field under **Warranty settings**](./media/ew-number-sequences.png)
 
 ## Set up a warranty group
 
 To set up a warranty group in Commerce, follow these steps.
 
-1. Go to **Retail and Commerce \> Products and categories \>Warranty \> Warranty groups**
-1. Click on **New** to create a new warranty group
-1. Enter name and description for the new group.
-1. Under **Warranty products** fast tab, click on **Add line** to add a Warranty product
-1. Specify the **Display order.** Display order needs to be a number. POS will respect this setting by showing the Warranty products in ascending order in the warranty prompt.
-1. Under **Warrantable products** fast tab, click on **Add line** to add Warrantable products (products for which you want to sell warranty)
-1. Select a **Category** to specify the Warrantable products category if the Warranty product is applicable for the entire category
-1. Select a specific **Product** to specify a Warrantable product for which the warranty is applicable
-1. Under **Applicable channels** fast tab, click on **Add line** to add channel where you want to sell Warranty.
-1. Click **Save** to save the configuration
-1. Click on **Publish** to publish the Warranty Group.
-1. Run **1040** job to sync the data to channel
+1. Go to **Retail and Commerce \> Products and categories \>Warranty \> Warranty groups**.
+1. Select **+New** to create a new warranty group.
+1. Under **Name**, enter a name for the new group.
+1. Under **Description**, enter a description for the new group.
+1. On the **Warranty products** FastTab, select **+Add line** to add a warranty item.
+1. Under **Display order**, enter a number to rank the warrant group on the POS, which will display warranty products in ascending order at the warranty prompt.
+1. On the **Warrantable products** FastTab, select **+Add line** to add warrantable products.
+1. Under **Category**, select a warrantable products category from the drop down menu if the warranty item is applicable for the entire category.
+1. Under **Product**, select the warrantable product for which the warranty item is applicable.
+1. On the **Applicable channels** FastTab, select **+Add line** to add the channel where you want to sell the warranty item.
+1. Select **Save** to save the configuration.
+1. Select **Publish** to publish the warranty group.
+1. Run the **1040** job to sync the data to channel.
 
 ## Sell warranty items in POS
 
@@ -178,7 +174,7 @@ The following image shows and example of
 
 Once the extended warranty is sold, a warranty policy entity will be created. The warranty policy number can be shared to the customer to give them a reference for the extended warranty purchased. The warranty policy will include the start date, end date, terms and conditions, serial number of the item, and more for the warranty sold.
 
-Warranty Policy details
+Warranty Policy details >>>WHAT ARE THESE STRINGS?<<<
 
 *PolicyNumber - string (20)*
 
