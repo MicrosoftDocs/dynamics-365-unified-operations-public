@@ -510,7 +510,7 @@
       - name: Suspend leave
         href: hr-leave-and-absence-suspend-leave.md
       - name: Leave of absence request
-        href: hr-employee-self-service-leave-of-absence.md
+        href: hr-employee-self-service-request-leave-of-absence.md
       - name: Manage employee leave
         href: hr-leave-and-absence-manage-employee-leave.md
       - name: View analytics for leave and absence
@@ -521,11 +521,10 @@
         href: hr-employee-self-service-request-time-off.md
       - name: View team and company calendars
         href: hr-employee-self-service-calendar.md
+      - name: Manage buy and sell leave policies
+        href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
       - name: Buy and sell leave
-        href: hr-leave-and-absence-buy-and-sell-leave.md
-      - name: Buy and sell leave request
-        href: hr-employee-self-service-buy-sell-request.md
-        
+        href: hr-employee-self-service-buy-and-sell-leave.md
     - name: Manage leave requests in Teams
       href: hr-teams-leave-app.md
     - name: Develop employees

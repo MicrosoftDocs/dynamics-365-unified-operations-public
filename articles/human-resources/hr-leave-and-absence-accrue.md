@@ -5,7 +5,7 @@ title: Accrue leave and absence plans
 description: You can accrue leave and absence in Dynamics 365 Human Resources for multiple employees or for an individual.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -110,16 +110,17 @@ Delete accrual records for a specific plan and date range. Accrual dates must be
 
 ## Configure preview features
 
-If you've enabled preview features for Leave and absence, you need to configure settings for them, too.
-
 [!include [banner](includes/preview-feature-leave-absence.md)]
 
-## Accrue leave per company or per leave plan
-When accruing leave and absence plans, you can choose to accrue for all companies. If you choose all companies, can't select the individual leave plans. If you choose to not accrue for all companies, you can accrue for a specific leave plan. 
+If you've enabled preview features for Leave and absence, you need to configure settings for them, too.
+
+### Accrue leave per company or per leave plan
+
+When accruing leave and absence plans, you can choose to accrue for all companies. If you choose all companies, you can't select individual leave plans. If you choose to not accrue for all companies, you can accrue for a specific leave plan. 
 
 These options are available when accruing for all employees or individual employees. 
 
 ## See also
 
-- [Leave and absence overview](hr-leave-and-absence-overview.md)
-- [Create a leave and absence plan](hr-leave-and-absence-plans.md)
+[Leave and absence overview](hr-leave-and-absence-overview.md)</br>
+[Create a leave and absence plan](hr-leave-and-absence-plans.md)

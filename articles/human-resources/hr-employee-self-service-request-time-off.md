@@ -48,8 +48,9 @@ You can submit requests for time off, view your vacation and leave balances, and
 
 6. Select **Submit** when you're ready to submit your request. Otherwise, select **Save draft**.
 
-[!include [banner](includes/preview-feature.md)]
 ## Add an attachment to an existing request
+
+[!include [banner](includes/preview-feature.md)]
 
 When updating an existing time off request, you can add an attachment. You can also see all of the related requests for a specific date. 
 

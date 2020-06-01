@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Leave of absence request
-description: You can submit a leave of absence request. 
+title: Request a leave of absence
+description: Submit a leave of absence request. 
 author: andreabichsel
 manager: AnnBe
 ms.date: 06/01/2020
@@ -32,17 +32,17 @@ ms.dyn365.ops.version: Human Resources
 
 # Request a leave of absence
 
-You can submit requests for a leave of absence and and see the status of your leave requests in Dynamics 365 Human Resources.
+You can submit a request for a leave of absence and see the status of your leave requests in Dynamics 365 Human Resources.
 
 ## Request a leave of absence
 
 1. In the **Employee self service** workspace, select **More** (...) in the **Time Off Balances** tile.
 
-2. To submit a leave of absence request,select **Request leave of absence** 
+2. To submit a leave of absence request, select **Request leave of absence**.
 
 3. Enter information for **Leave type**, **Start date**, and **End date**.
 
-4.If you need to submit any supporting documentation, select **Upload** under **Attachments**.
+4. If you need to submit any supporting documentation, select **Upload** under **Attachments**.
 
 5. Enter information in **Comment**, if needed.
 
@@ -56,4 +56,5 @@ You can submit requests for a leave of absence and and see the status of your le
 2. To view your leave of absence requests, select **View leave of absence**.
 
 ## See also
-- [Suspend leave](hr-leave-and-absence-suspend-leave.md)
+
+[Suspend leave](hr-leave-and-absence-suspend-leave.md)

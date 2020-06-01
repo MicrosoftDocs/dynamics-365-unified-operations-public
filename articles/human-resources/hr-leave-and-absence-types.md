@@ -5,7 +5,7 @@ title: Configure leave and absence types
 description: Set up types of leave that employees can take in Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -63,7 +63,7 @@ Leave types in Dynamics 365 Human Resources define the types of absences that em
 
 9. Under **Suspension relations**, choose if you want to have this leave type either suspend another leave type or be suspended by another leave type. When a leave of absence request is submitted for the suspending leave type, a leave suspension will automatically be created for the suspended leave type. 
 
-9. Select **Save**.
+10. Select **Save**.
 
 ## Configure leave type rules
 

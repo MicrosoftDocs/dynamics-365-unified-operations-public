@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Buy and sell leave request
+title: Buy and sell leave
 description: You can submit requests to buy and sell leave.
 author: andreabichsel
 manager: AnnBe
@@ -42,11 +42,11 @@ You can submit requests to buy leave.
 
 2. Add a **Leave type** and enter an **Amount** for the amount of leave you'd like to buy. 
 
-3. Select **Submit** when you are ready to submit your request. 
+3. Select **Submit** when you're ready to submit your request. 
 
 Once the request is submitted, your balances will automatically be updated with the amount of leave you requested to buy. 
 
-
 ## See also
 
-- [Leave and absence overview](hr-leave-and-absence-overview.md)
+[Leave and absence overview](hr-leave-and-absence-overview.md)</br>
+[Manage buy and sell leave policies](hr-leave-and-absence-buy-and-sell-leave-policies.md)
