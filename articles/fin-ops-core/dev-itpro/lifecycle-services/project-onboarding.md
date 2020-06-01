@@ -3,7 +3,7 @@ title: Project onboarding
 description: This topic provides information about the Project onboarding wizard in Microsoft Dynamics Lifecycle Services.
 author: VetrivelChandranath
 manager: AnnBe
-ms.date: 05/20/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -67,7 +67,7 @@ The **Welcome** page provides general guidance and information that you will nee
 
 - Verify that all project team members are invited and configured.
 - Set the **Primary contact for FastTrack** option to **Yes** for at least two users who have an active email address in the user list. If this option isn't set to **Yes** for any team member, FastTrack will reach out to all team members for implementation guidance during your implementation. If necessary, you should nominate at least one customer and one partner team member to be contacted by FastTrack.
-- Each team member will be assigned a project security role and an implementation role. The project security role is relevant to access to the LCS project workspace, and the implementation role is relevant to the individual team member's role on the implementation team. We highly recommend that you include representatives from the customer to the project team members with a monitored email address.
+- Each team member will be assigned a project security role and an implementation role. The project security role is relevant to access to the LCS project workspace, and the implementation role is relevant to the individual team member's role on the implementation team. We highly recommend that you include representatives from the customer among the project team members who have a monitored email address.
 
 ## Define milestone dates
 
@@ -92,7 +92,7 @@ The **Welcome** page provides general guidance and information that you will nee
 ## FastTrack
 
 - The **FastTrack** page introduces the FastTrack program. It explains what the program consists of and how your implementation can benefit from it.
-- We strongly recommend that you watch the existing TechTalks and subscribe to upcoming TechTalks as Microsoft continues to share best practice guidance and information about the changes that are occurring in the product and platform.
+- We strongly recommend that you watch the existing [TechTalks](https://community.dynamics.com/365/b/alltechtalks) and subscribe to upcoming TechTalks as Microsoft continues to share best practice guidance and information about the changes that are occurring in the product and platform.
 
 ## Next Steps
 
