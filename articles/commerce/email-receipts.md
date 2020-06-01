@@ -5,7 +5,7 @@ title: Send email receipts from Modern POS (MPOS)
 description: In Modern Point of Sale (MPOS), you can send receipt emails when a transaction is tendered at the point of sale (POS).  
 author: jashanno
 manager: AnnBe
-ms.date: 02/06/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -81,30 +81,30 @@ To send email receipts, you must configure a Simple Mail Transfer Protocol (SMTP
 
 ### Set up an email template for receipts
 
-1. Go to **Organization email templates**, which may be found under **Retail and Commerce &gt; Headquarters setup &gt; Setup &gt; Organization email templates** or **Organization administration &gt; Setup &gt; Organization email templates**.
-2. Click **+New**
-3. Enter information for the following fields:
+1. Go to **Organization email templates** under either **Retail and Commerce &gt; Headquarters setup &gt; Setup &gt; Organization email templates** or **Organization administration &gt; Setup &gt; Organization email templates**.
+2. Select **New**.
+3. Enter information in the following fields:
 
     - In the **Email ID** field, enter **EmailRecpt**.
     - In the **Email description** field, enter an optional description.
     - In the **Sender name** field, specify the name that should appear as the sender of the email. Customers will see this name as the **From** name on the email.
     - In the **Sender email** field, specify a valid email address. Customers will see this email address as the **From** email address on the email.
 
-4. Under **General**, enter information for the following fields:
+4. Under **General**, enter information in the following fields:
   - In the **Default language code** field, select a language. This is the language that the receipt will be sent in when templates for multiple languages are configured and the store or customer's preferred language doesn't match any of those additional languages. 
 
-5. In the **Email message content** pane, click **+New** to create a new template instance, and configure the following fields:
-    - In the **Language** field, specify the language this template will be localized in. NOTE: this only applies to emailed receipts that contain HTML with static content above and/or below the %message% placeholder
+5. In the **Email message content** pane, select **New** to create a new template instance. Enter information in the following fields:
+    - In the **Language** field, specify the language this template will be localized in. Note that this only applies to emailed receipts that contain HTML with static content above and/or below the %message% placeholder.
     - In the **Subject** field, enter a title for the email receipts.
-    - Check the **Has body** checkbox
-    - Click Edit to upload your template HTML. At a minimum, your template instance must contain the following code: 
+    - Select the **Has body** check box.
+    - Select **Edit** to upload your template HTML. At a minimum, your template instance must contain the following code: 
  
     ``` xml
     <pre>
     %message%
     </pre>
     ```
-You can also add HTML to display a header, footer, logo or any other static content you want included in the receipt email. For more information about creating HTML receipt templates, see [Create a template for emailed receipts](email-templates-transactions.md#create-a-template-for-emailed-receipts) section of the [Create email templates for transactional events](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/articles/commerce/email-templates-transactions.md) topic. 
+You can also add HTML to display a header, footer, logo or any other static content that you want included in the receipt email. For more information about creating HTML receipt templates, see [Create a template for emailed receipts](email-templates-transactions.md#create-a-template-for-emailed-receipts). 
 
 5. Depending on the settings that you configured, you must run the appropriate distribution schedule jobs to synchronize the changes to MPOS.
 
