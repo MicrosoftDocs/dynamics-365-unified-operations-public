@@ -81,6 +81,8 @@ The following image shows an example of a cart that is showing an in-stock ("Ava
 
 [Starter kit overview](starter-kit-overview.md)
 
+[Configure inventory buffers and inventory levels](inventory-buffers-levels.md)
+
 [Cart module](add-cart-module.md)
 
 [Buy box module](add-buy-box.md)
