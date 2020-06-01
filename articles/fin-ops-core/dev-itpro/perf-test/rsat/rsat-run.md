@@ -110,24 +110,24 @@ You can modify the order in which test cases are executed using the up and down 
 ### Pause prior to a test case run 
 You can add a pause before a test case starts execution. If you want to pause, update the cell **Pause (seconds)** on the **General** tab of the Excel parameters file of the desired test case.
 
-### Abort a run
-When a test run is in progress, you can click the Stop button to abort the run. Execution will terminate after the currently running test case completes. The remaining test cases will be marked as **Not Executed** in Azure DevOps.
+### Stop a run
+When a test run is in progress, you can click the **Stop** button to cancel the run. Execution stops after the currently running test case completes. The remaining test cases will be marked as **Not Executed** in Azure DevOps.
 
 ### Validate readiness of test automation files
-Optionally, you can turn on a setting that validates whether your test cases are ready for execution. This will prevent unknown errors related to the validity of recordings and test automation files. This option is available as of RSAT version 1.210. You can enable this feature in the Optional tab of the Settings dialog.
+Optionally, you can turn on a setting that validates whether your test cases are ready for execution. This setting prevents unknown errors related to the validity of recordings and test automation files. This option is available as of RSAT version 1.210. You can enable this feature in the **Optional** tab of the **Settings** dialog.
 
 ![enable-local-file-validation-rules](media/enable-local-file-validation-rules.png)
 
-When enabled, a background process will continuously validates the following for each test case.
+When enabled, a background process continuously validates the following for each test case.
+
 + The local working directory exists.
 + The Excel parameter file exists.
-+ Test automation files (binary and xml files) needed for execution exist.
-+ Test automation files are compatible with current version of RSAT (You need to regenerate test automation files
-when you install a new version of RSAT).
++ Test automation files (binary and Xml files) needed for execution exist.
++ Test automation files are compatible with current version of RSAT. You must regenerate test automation files
+when you install a new version of RSAT.
 + Test case ID specified in the Excel parameter file matches the test cases ID in Azure DevOps.
 
-The Valid column in the grid will indicate the result of the validation process. If validation fails, click on the X to view the
-error and recommended action.
+The Valid column in the grid indicates the result of the validation process. If validation fails, click on the **X** in the **Valid** column to view the error and recommended action.
 
 ![enable-local-file-validation-rules-2](media/enable-local-file-validation-rules-2.png)
 
@@ -166,7 +166,7 @@ To commit your work to Azure DevOps, select **Upload**. This will upload test au
 
 In the upload menu, you also have the option to upload recording files (Task recordings) only. 
 
-If you are unsure what test cases to select, and you want to commit all changes (Since last load) to Azure DevOps, select **Upload all modified automation files** in the upload menu.
+If you are unsure what test cases to select, and you want to commit all changes (since last load) to Azure DevOps, select **Upload all modified automation files** in the upload menu.
 
 ## Process compliance
 RSAT provides capabilities for managing the readiness of test cases. It also provides a sign-off process for test runs.
