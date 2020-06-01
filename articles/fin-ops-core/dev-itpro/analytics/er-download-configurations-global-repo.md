@@ -34,9 +34,7 @@ ms.dyn365.ops.version: AX 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to download [Electronic reporting (ER)](general-electronic-reporting.md) [configurations](general-electronic-reporting.md#Configuration) from Gloabl repository of for [Configuration service](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
-
-This tutorial guides you through the process of downloading the newest version of ER configurations from Gloabl repository of Configuration service.
+This topic explains how to download [Electronic reporting (ER)](general-electronic-reporting.md) [configurations](general-electronic-reporting.md#Configuration) from Gloabl repository of [Configuration service](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
 
 ## Open configurations repository
 
