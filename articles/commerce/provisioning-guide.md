@@ -43,7 +43,7 @@ Before you begin, we recommend that you take a quick scan through this topic to 
 
 ## Overview
 
-To successfully provision your Commerce preview environment, you must create a project that has a specific product name and type. The environment and commerce scale unit (CSU) also have some specific parameters that you must use when you provision e-Commerce later. The instructions in this topic describe all the steps required to complete provisioning and the parameters that you must use.
+To successfully provision your Commerce preview environment, you must create a project that has a specific product name and type. The environment and Commerce scale unit (CSU) also have some specific parameters that you must use when you provision e-Commerce later. The instructions in this topic describe all the steps required to complete provisioning and the parameters that you must use.
 
 After you successfully provision your Commerce preview environment, you must complete a few post-provisioning steps to prepare it. Some steps are optional, depending on the aspects of the system that you want to evaluate. You can always complete the optional steps later.
 
@@ -197,7 +197,7 @@ To deploy the environment, follow these steps.
 
 1. Before you continue, make sure that the status of your environment is **Deployed**.
 
-### Initialize the commerce scale unit (CSU)
+### Initialize the Commerce Scale Unit (Cloud)
 
 To initialize CSU, follow these steps.
 
@@ -219,7 +219,7 @@ To initialize e-Commerce, follow these steps.
 
 1. On the **e-Commerce** tab, review the preview consent, and then select **Setup**.
 1. In the **e-Commerce tenant name** field, enter a name. However, be aware that this name will appear in some of the URLs that point to your e-Commerce instance.
-1. In the **Commerce scale unit name** field, select your CSU in the list. (The list should have only one option.)
+1. In the **Commerce Scale Unit name** field, select your CSU in the list. (The list should have only one option.)
 
     The **e-Commerce geography** field is set automatically, and the value can't be changed.
 
@@ -255,7 +255,7 @@ To continue the process of provisioning and configuring your Commerce preview en
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
-[Retail Cloud Scale Unit (RCSU)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+[Commerce Scale Unit (Cloud)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 
 [Microsoft Azure portal](https://azure.microsoft.com/features/azure-portal)
 
