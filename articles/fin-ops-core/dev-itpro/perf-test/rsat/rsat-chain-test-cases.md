@@ -57,20 +57,24 @@ In the image below, two different variables are used in a formula.
  
 ![Creating a formula in Excel](media/formulas.png)
 
-As of RSAT version 1.220, you can also use Excel functions (such as ROUND, CONCAT, UPPER ...etc.) to create formulas with RSAT variables. This is implemented using the Excel formula evaluation functionality, so any function supported by Excel is supported by RSAT. 
+As of RSAT version 1.220, you can also use Excel functions, such as **ROUND**, **CONCAT**, and **UPPER**, to create formulas with RSAT variables. This is implemented using the Excel formula evaluation functionality, so any function supported by Excel is supported by RSAT. 
 
 For example,
 + To round a value into the nearest whole number, use:
-``` =ROUND({{Item_Price_3274_Copy}}, 0)```
+
+    ``` =ROUND({{Item_Price_3274_Copy}}, 0)```
 
 + To concatenate strings, use:
-```=CONCATENATE({{AccountNum_3274_Copy}}, " ", {{ AddressBP_Locator_3274_Copy}})```
+
+    ```=CONCATENATE({{AccountNum_3274_Copy}}, " ", {{ AddressBP_Locator_3274_Copy}})```
  
 + To calculate and format a date and convert it to a string, use:
-```=TEXT(DATEVALUE({{SystemDate_CurrentDate_3276_Copy}}) - 1, "mm/dd/yyyy")```
-(Always convert RSAT date values to text for reliable test case execution)
 
-RSAT evaluates these formulas during test execution, so you must precede the formula with a single quote **'** to prevent Excel from attempting to prematurely calculate the formula. An example is shown in this image.
+    ```=TEXT(DATEVALUE({{SystemDate_CurrentDate_3276_Copy}}) - 1, "mm/dd/yyyy")```
+
+    (Always convert RSAT date values to text for reliable test case execution.)
+
+RSAT evaluates these formulas during test execution, so you must precede the formula with a single quote **\'** to prevent Excel from attempting to prematurely calculate the formula. An example is shown in this image.
 
 ![Creating a formula in Excel 2](media/formulas-2.png)
 
