@@ -116,6 +116,7 @@ Test Case number 53 in Azure DevOps.
 
 As of RSAT version 1.210, this process is easier. To automatically fix all occurrences of a mismatch, select the
 desired test cases in the grid, and then select **Resolve test case ID mismatch** in the **New** menu.
+
 ![resolve-test-case-id-mismatch](media/resolve-test-case-id-mismatch.png)
 
 
