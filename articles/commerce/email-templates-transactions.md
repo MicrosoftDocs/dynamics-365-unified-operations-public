@@ -5,7 +5,7 @@ title: Create email templates for transactional events
 description: This topic describes how to create, upload, and configure email templates for transactional events in Microsoft Dynamics 365 Commerce.
 author: stuharg
 manager: annbe
-ms.date: 05/11/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -44,7 +44,7 @@ Before you can map a specific transactional event to an email template, you must
 
 To create an email template, follow these steps.
 
-1. In Commerce headquarters, go to **Retail and Commerce \> Headquarters setup \> Organization email templates**.
+1. In Commerce headquarters, go to **Organization email templates**, which is under **Retail and Commerce \> Headquarters setup \> Organization email templates** or **Organization administration \> Setup \> Organization email templates**.
 1. Select **New**.
 1. Under **General**, set the following fields:
 
