@@ -123,7 +123,7 @@ Configure your connection to the test environment.
 Configure your local settings.
 
 + **Working directory** - Folder location for storing test automation files, including Excel test data files. For example: **C:\Temp\RegressionTool**.
-+ **Default browser** - Select the browser to use for test execution. RSAT supports (the new) Microsoft Edge, Microsoft Internet Explorer and Google Chrome. We recommend Microsoft Edge, download it from [here](https://www.microsoft.com/en-us/edge). 
++ **Default browser** - Select the browser to use for test execution. RSAT supports (the new) Microsoft Edge, Microsoft Internet Explorer and Google Chrome. We recommend Microsoft Edge, which you can download from [Introducing the new Microsoft Edge](https://www.microsoft.com/edge). 
 
 Select **Ok** to apply your settings and close the dialog box. Select **Cancel** to cancel your changes and close the dialog. The **Save As** and **Open** buttons allow you to save your settings for reuse later. Select **Save As** to save your current settings into a configuration file on your computer. Select **Open** to restore your settings from a configuration file.
 
@@ -140,7 +140,7 @@ Select the **Optional** tab to configure optional settings.
 
     > [!IMPORTANT]
     > The **Cloud provider** setting is required, and the selected value must be **China** if your Finance and Operations apps were deployed in 21Vianet.
-+ **Configure Retail POS** - Check this box to configure RSAT for automated testing of cloud POS, part of Microsoft Dynamics 365 Commerce". Once enabled, a new tab named Retail POS will appear on the Settings dialog. For more information on RSAT with cloud POS, go to [this topic](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/pos-rsat).
++ **Configure Retail POS** - Check this box to configure RSAT for automated testing of cloud POS, part of Microsoft Dynamics 365 Commerce. Once enabled, a tab named **Retail POS** appears on the **Settings** dialog. For more information on RSAT with cloud POS, go to [Test recorder and Regression suite automation tool for Cloud POS](../../../../commerce/dev-itpro/pos-rsat).
 
 ### Configure the test environment to trust the connection
 
