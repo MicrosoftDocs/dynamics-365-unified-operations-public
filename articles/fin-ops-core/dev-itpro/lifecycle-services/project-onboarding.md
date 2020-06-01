@@ -30,16 +30,20 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
+
 Project onboarding is a self-paced, wizard-driven onboarding experience that guides project users in Microsoft Dynamics Lifecycle Services (LCS) through the process of setting up the key configuration components for a new implementation project for Dynamic 365 Finance, Dynamics 365 Supply Chain Management, or Dynamic 365 Retail. This wizard can also be accessed during and after the implementation, and can be used to update the information as required.
 
 Microsoft relies on the information that you provide. You must provide the most current and accurate data as you complete Project onboarding. After you complete Project onboarding, you can deploy environments and continue with the project implementation.
 
 To access Project onboarding, sign in to LCS, and then, on the main menu, select **Project onboarding**.
 
+
 > [!NOTE]
 > Project onboarding is available for implementation projects and must be completed before any of the Microsoft-managed environments are deployed. For more information about implementation projects, see [Lifecycle Services (LCS) for Finance and Operations apps customers](lcs-works-lcs.md#lcs-workspace-for-the-current-versions-of-the-finance-and-operations-apps).
 
+
 For more information about the onboarding process, see [Onboard an implementation project](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/onboard#lcs-implementation-project-workspace), and watch the [Finance and Operations: Onboarding to Dynamics 365](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-onboarding-to-dynamics-365-1-10-19) TechTalk.
+
 
 ## Onboarding steps
 
