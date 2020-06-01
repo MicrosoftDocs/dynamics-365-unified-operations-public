@@ -285,6 +285,12 @@ Users that are external to the primary tenant will not have exchange accounts on
 
 The system communicates with Exchange or an SMTP server like a typical email client, so standard behavior and limits apply. For example, standard [Exchange Online receiving and sending limits](https://technet.microsoft.com/library/exchange-online-limits.aspx#RecipientLimits) apply.
 
+## Troubleshooting
+
+### Where do workflow email templates come from?
+
+The email templates will be sourced from either system email templates or organization email templates depending on whether the workflow is a system-level (not company specific) or organization-level (company specific) workflow.
+
 ## Additional resources
 
 [Troubleshoot the Office integration](../../dev-itpro/office-integration/office-integration-troubleshooting.md)
