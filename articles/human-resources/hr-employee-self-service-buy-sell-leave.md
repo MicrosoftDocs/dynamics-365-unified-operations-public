@@ -49,4 +49,4 @@ Once the request is submitted, your balances will automatically be updated with 
 ## See also
 
 [Leave and absence overview](hr-leave-and-absence-overview.md)</br>
-[Manage buy and sell leave policies](hr-leave-and-absence-buy-and-sell-leave-policies.md)
+[Manage buy and sell leave policies](hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
