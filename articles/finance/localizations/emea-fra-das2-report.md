@@ -5,7 +5,7 @@ title: DAS-2 report
 description: This topic guides you through the process of generating the Standard Audit File for France (FEC) in Microsoft Dynamics 365 Finance.
 author: sndray
 manager: AnnBe
-ms.date: 05/05/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -54,9 +54,10 @@ After you've finished downloading the ER configurations from LCS, follow these s
 
 1. In Microsoft Dynamics 365 Finance, select the related French company.
 2. Go to **Workspaces** \> **Electronic reporting**, and set the **Microsoft** provider to **Active**.
-3. Select **Configurations** \> **Exchange**, and load the configuration from the XML file to import the tax declaration model and the Goods and services tax (GST) report format file.
-4. In the **Electronic reporting** workspace, select **Configurations** \> **Setup**.
-5. On the **Conditions** tab, select version **32.14**, and create the configuration that will let you set up the mapping between main accounts that are configured in your company and the related tax authority classification of the DAS-2 report.
+3. Select **Configurations** \> **Exchange**, and load the configurations from the XML files to import the Statistics model, model mapping, DAS-2 report and DAS-2 form format file.
+4. Select **DAS-2 report** format.
+5. In the **Electronic reporting** workspace, select **Configurations** \> **Setup**.
+6. On the **Conditions** tab, select version **32.14**, and create the configuration that will let you set up the mapping between the main accounts that are configured in your company and the related tax authority classification of the DAS-2 report.
 
     1. In the **Lookup result** field, select the related classification.
     2. In the **Main account** field, select the main account that is used to post the related transactions that belong to the selected classification.
@@ -66,12 +67,12 @@ After you've finished downloading the ER configurations from LCS, follow these s
 
 [![Example of a configuration](./media/emea-fra-das2-report-configuration.png)](./media/emea-fra-das2-report-configuration.png)
 
-On line 2 of the preceding configuration, main account **622600**, which is used to post fee expense transactions, is mapped to classification **H** (**Fees and Vacations**), which is established by the tax authority.
+On line 1 of the preceding configuration , main account **622000**, which is used to post fee expense transactions, is mapped to classification **C** (**Comissions**), which is established by the tax authority.
 
-Line 1 includes the configuration that has the classification **ZZ**. It's used when the invoice journal has other expense transactions that won't be detailed on the DAS-2 report. For each VAT main account and DAS-2 classification, create an additional line that will be used when the invoice has tax amounts that are included in the transactions.
+Line 5 includes the configuration that has the classification **ZZ** and is mapped to ***Not Blanks***. It's used when the invoice journal has other expense transactions that won't be detailed on the DAS-2 report. This line should always be the last line. If you need to introduce additional classifications, remove this line and introduce the new ones.
 
 > [!NOTE]
-> Create the same configuration for the DAS-2 page.
+> Create the same configuration for the DAS-2 form format.
 
 
 ## Vendor configuration

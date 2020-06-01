@@ -31,6 +31,9 @@ ms.dyn365.ops.version: 10.0.12
 [!include[banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
+> [!IMPORTANT]
+> This functionality requires service update 189 for Common Data Service. The release information for Common Data Service is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
+
 This topic provides step-by-step instructions about how to set up and configure virtual entities for Finance and Operations apps in Common Data Service.
 
 ## Getting the solution
@@ -75,7 +78,7 @@ After the solutions are imported in the Common Data Service environment, both en
 
     - Provide a description and an expiration date.
 
-   - Select **Save**. A key will be created and displayed. Copy this value for later use.
+    - Select **Save**. A key will be created and displayed. Copy this value for later use.
 
 The AAD application created above will be used by Common Data Service to call Finance and Operations apps. As such, it must be trusted by Finance and Operations and associated with a user account with the appropriate rights in Finance and Operations. A special service user must be created in Finance and Operations with rights *only* to the virtual entity functionality, and no other rights. After completing this step, any application with the secret of the AAD application create above will be able to call this Finance and Operations environment and access the virtual entity functionality.
 
