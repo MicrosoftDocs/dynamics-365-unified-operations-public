@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Apply updates and extensions to Retail Cloud Scale Unit
+title: Apply updates and extensions to Commerce Scale Unit (Cloud)
 description: This topic shows how to apply updates and extensions to cloud-hosted Commerce channel components.
 author: AamirAllaq
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 8.0
 ---
 
 
-# Apply updates and extensions to Retail Cloud Scale Unit
+# Apply updates and extensions to Commerce Scale Unit (Cloud)
 
 [!include[banner](../includes/banner.md)]
 
