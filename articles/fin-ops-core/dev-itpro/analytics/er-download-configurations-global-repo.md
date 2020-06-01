@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Download ER configurations from Gloabl repository of Configuration service (RCS)
-description: This topic explains how to download Electronic reporting (ER) configurations from Global repository of Configuration service (RCS).
+title: Download ER configurations from the Global repository of Configuration service (RCS)
+description: This topic explains how to download Electronic reporting (ER) configurations from the Global repository of Configuration service (RCS).
 author: NickSelin
 manager: AnnBe
-ms.date: 05/29/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.5
 
 ---
 
-# Import Electronic reporting (ER) configurations from Gloabl repository of Configuration service
+# Download ER configurations from the Global repository of Configuration service (RCS)
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,67 +38,59 @@ This topic explains how to download [Electronic reporting (ER)](general-electron
 
 ## Open configurations repository
 
-1. Sign in to the Finance application by using one of the following roles:
+1. Sign in to the Dynamics 365 Finance application using one of the following roles:
 
     - Electronic reporting developer
     - Electronic reporting functional consultant
     - System administrator
 
-2. Go to **Organization administration** &gt; **Workspaces** &gt; **Electronic reporting**.
+2. Go to **Organization administration** /> **Workspaces** /> **Electronic reporting**.
 3. In the **Configuration providers** section, select the **Microsoft** tile.
-4. On the **Microsoft** tile, click **Repositories**.
+3. On the **Microsoft** tile, select **Repositories**.
 
     ![Electronic reporting workspace](./media/er-download-configurations-global-repo-er-workspace.png)
 
-5. On the **Configuration repositories** page, in the grid, select the existing repository of the **Global** type. If this repository doesn't appear in the grid, follow these steps:
+4. On the **Configuration repositories** page, in the grid, select the existing repository of the **Global** type. If this repository doesn't appear in the grid, follow these steps:
 
-    1. Click **Add** to add a new repository.
-    2. Select **Global** as the repository type.
-    3. Click **Create repository**.
-    4. If prompted, follow the authorization instructions.
-    5. Enter a name and description for the repository.
-    6. Click **OK** to confirm the new repository entry.
-    7. In the grid, select the new repository of the **Global** type.
+    1. Select **Add** to add a new repository.
+    2. Select **Global** as the repository type, and then select **Create repository**.
+    3. If prompted, follow the authorization instructions.
+    4. Enter a name and description for the repository and then select **OK** to confirm the new repository entry.
+    5. In the grid, select the new repository of the **Global** type.
 
-6. Click **Open** to view the list of ER configurations for the selected repository.
+5. Select **Open** to view the list of ER configurations for the selected repository.
 
     ![Configuration repositories page](./media/er-download-configurations-global-repo-repositories-list.png)
 
 ## Import a single configuration
 
-1. In the configurations tree in the left pane, select the ER configuration that you require.
+1. On the **Configuration repositories** page, in the configurations tree, select the ER configuration that you want.
 2. On the **Versions** FastTab, select the required version of the selected ER configuration.
-3. On the **Versions** FastTab, click **Import** to download the selected version from Gloabl repository to the current instance.
+3. Select **Import** to download the selected version from Gloabl repository to the current Finance instance.
 
     > [!NOTE]
-    >
     > The **Import** button is unavailable for ER configuration versions that are already present in the current Finance instance.
 
     ![Configuration repository page](./media/er-download-configurations-global-repo-repository-content.png)
 
 ## Import filtered configurations
 
-1. Expand **Filter** FasTab.
-2. Specify selection conditions to import desire configurations:
-    1. In the **Tags** grid, add desire tags.
-    2. In the **Country/region applicability** field, select desire country/region codes.
-    3. Select **Apply filter**.
+1. On the **Configuration repositories** page, in the configurations tree, expand the **Filter** FasTab.
+2. In the **Tags** grid, add desire tags.
+3. In the **Country/region applicability** field, select the appropriate country/region codes, and then select  **Apply filter**.
 
     > [!NOTE]
-    >
-    > The **Configurations** FastTab shows all configuratons that have been filtered as satisfying specified selection conditions.
+    > The **Configurations** FastTab shows all the configuratons that satisfy the specified selection conditions.
 
-3. On the **Configurations** FastTab, click **Import** to download the filtered configurations from Gloabl repository to the current instance.
-4. On the **Configurations** FastTab, click **Reset filter** to clean up specified selection conditions.
+4. On the **Configurations** FastTab, select **Import** to download the filtered configurations from the Global repository to the current instance.
+5. On the **Configurations** FastTab, select **Reset filter** to clean up the specified selection conditions.
 
     ![Configuration repository page](./media/er-download-configurations-global-repo-filtered-configurations.png)
 
 > [!NOTE]
->
-> Depending on the ER settings, configurations are validated after they are imported. You might be notified about any inconsistency issues that are discovered. You must resolve those issues before you can use the imported configuration version. For more information, see the list of related articles for this topic.
+> Depending on the ER settings, configurations are validated after they are imported. You might be notified about any inconsistency issues that are discovered. Before you can use the imported configuration version, you must resolve the issues. For more information, see the list of related articles for this topic.
 
 > [!NOTE]
->
 > ER configuratoins might be configured as dependent on other configurations. Thefore, along with a selected configuration, other configurations might be automatically imported. For more about configuration dependencies, see [Define the dependency of ER configurations on other components](tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md).
 
 ## Additional resources
