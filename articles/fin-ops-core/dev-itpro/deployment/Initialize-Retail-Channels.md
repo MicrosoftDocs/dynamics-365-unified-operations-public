@@ -5,7 +5,7 @@ title: Initialize Retail Cloud Scale Unit
 description: This topic explains how to initialize Retail Cloud Scale Unit.
 author: AamirAllaq
 manager: AnnBe
-ms.date: 05/29/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -103,10 +103,10 @@ You can issue a re-deployment of the scale unit, without changing any components
 
 1. In LCS, on the environment details page, select **Environment features \> Retail**.
 2. On the setup deployment page, select the scale unit you would like to redeploy.
-3. On the scale unit's operation menu, select **Update**
-4. On the slider, on the drop-down for **Select version**, pick the option **Specify a version**
-5. On the text box under **Specify a version**, type in the version shown for your scale unit, shown besides the **Current version** label
-6. Click on **Update** button
+3. On the scale unit's operation menu, select **Update**.
+4. On the slider, on the drop-down for **Select version**, pick the option **Specify a version**.
+5. On the text box under **Specify a version**, type in the version shown for your scale unit, shown besides the **Current version** label.
+6. Click on **Update** button.
 
 You do not need to select **Update extensions**, even if you have applied extensions previously, since the last extension package applied to the scale unit is automatically picked when updating a scale unit.
 
@@ -144,9 +144,9 @@ This process should be first performed in a sandbox environment after a database
 
 Because the Cloud Scale Unit provides dedicated and isolated compute and storage resources from other components, it has its own channel database. This means the following precautions should be taken before migration:
 
-1. **Make sure that all shifts at the POS are closed.** After migration, you won't be able to close any shifts that were active during the migration process
+1. **Make sure that all shifts at the POS are closed.** After migration, you won't be able to close any shifts that were active during the migration process.
 2. **Make sure that all P-jobs have been successfully completed.** While the previous channel database is maintained and any transactional data will still be synced back to the headquarters, it is recommended that you run P-JOBs before you start.
-3. **Sign out of all POS devices.** POS operations are not supported during migration
+3. **Sign out of all POS devices.** POS operations are not supported during migration.
 
 Here is what occurs during the initialization period:
 
