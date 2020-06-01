@@ -34,16 +34,16 @@ ms.dyn365.ops.version: 10.0.1
 
 [!include [banner](../includes/banner.md)]
 
-Three new zone fields are available in Microsoft Dynamics 365 Supply Chain Management. Warehouse managers can use them to define additional warehouse organizations or layouts. The new zone fields can be set manually or by using the **Location setup** wizard. They can be used in any query or filtering that uses the Locations table.
+Three new zone fields are available in Microsoft Dynamics 365 Supply Chain Management. Warehouse managers can use them to define additional warehouse organizations or layouts. The new zone fields can be set either manually or by using the **Location setup** wizard. They can be used in any query or filtering that uses the Locations table.
 
 No additional setup is required to use the zone fields.
 
-## Enable the Additional location zone feature
+## Turn on the Additional location zone feature
 
-Before you can use this feature, it must be enabled on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature status and enable it if needed. Here, the feature is listed as:
+Before you can use the *Additional location zone* feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on if it's required. In the **Feature management** workspace, the feature is listed in the following way:
 
-- **Module** - *Warehouse management*
-- **Feature name** - *Additional location zone*
+- **Module:** *Warehouse management*
+- **Feature name:** *Additional location zone*
 
 ## Use location zones
 
@@ -60,5 +60,6 @@ Before you can use this feature, it must be enabled on your system. Administrato
 4. In the **From number** field, enter _1_. In the **To number** field, enter _3_.
 5. Select the **Aisle** line.
 6. In the **From number** field, enter _1_. In the **To number** field, enter _5_.
-7. Select **Create**. You will receive messages that state that new locations have been added. Select the **Show messages** icon to view the messages.
-8. Go to **Warehouse management \> Setup \> Warehouse \> Locations**. The new locations appear in the list, and all zone fields are available (the existing zone field and the new additional zone fields).
+7. Select **Create**.
+8. You receive messages that state that new locations have been added. Select the **Show messages** button to view the messages.
+9. Go to **Warehouse management \> Setup \> Warehouse \> Locations**. The new locations appear in the list, and all zone fields are available (that is, the existing zone field and the new additional zone fields).
