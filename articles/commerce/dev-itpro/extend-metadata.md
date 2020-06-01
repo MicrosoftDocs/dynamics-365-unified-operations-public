@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Extend the default Cloud Scale Unit metadata controller
+# Extend the default Commerce Scale Unit metadata controller
 
 [!include [banner](../includes/banner.md)]
 
