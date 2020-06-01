@@ -3350,6 +3350,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
           - name: Global repository (GR)
             items: 
+            - name: Import configurations from GR
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-download-configurations-global-repo.md?toc=/dynamics365/finance/toc.json
             - name: Enhanced filtering to find configurations in GR
               href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
             - name: Upload configurations to GR
