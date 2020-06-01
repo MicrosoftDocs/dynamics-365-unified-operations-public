@@ -490,6 +490,8 @@
             href: deployment/certificate-rotation-on-prem.md
           - name: Client internet connectivity
             href: user-interface/client-disconnected.md
+          - name: Configure Batch-only and Interactive-only AOS nodes in on-premises deployments
+            href: deployment/onprem-batchonly.md
           - name: Configure proxies for on-premises environments
             href: deployment/onprem-reverseproxy.md
           - name: On-premises diagnostics
