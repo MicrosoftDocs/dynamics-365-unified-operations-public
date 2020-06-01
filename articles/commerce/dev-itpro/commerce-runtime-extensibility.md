@@ -144,7 +144,7 @@ The preceding steps are used for manual deployment and testing in your developme
 
 **Debugging CRT**
 
-To debug CRT from POS, you should attach the CRT extension project to the **w3wp.exe (IIS process for Commerce Scale Unit)** process for online (that is, when POS is connected to CRT). For offline, attach the CRT extension project to the **dllhost.exe** process.
+To debug CRT from POS, you should attach the CRT extension project to the **w3wp.exe (IIS process for Commerce Scale Unit (Self-hosted))** process for online (that is, when POS is connected to CRT). For offline, attach the CRT extension project to the **dllhost.exe** process.
 
 **Using extension properties on CRT entities and requests and responses**
 
