@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Commerce Scale Unit
-description: This topic describes the Commerce Scale Unit and when to use it.
+title: Commerce Scale Unit (Self-hosted)
+description: This topic describes the Commerce Scale Unit (Self-hosted) and when to use it.
 author: athinesh99
 manager: AnnBe
 ms.date: 12/17/2017
@@ -30,16 +30,16 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Commerce Scale Unit
+# Commerce Scale Unit (Self-hosted)
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the Commerce Scale Unit and when to use it.
+This topic describes the Commerce Scale Unit (Self-hosted) and when to use it.
 
 Overview
 --------
 
-Commerce Scale Unit is a set of features that supports selling products in a store that have inconsistent internet connectivity to a back office or headquarters (HQ). The Store Scale Unit is designed specifically for in-store operation, and enables cross-terminal transactions and shift operations despite poor internet service. By automatically connecting to the back office, when you do have internet connectivity, your store can seamlessly process credit card transactions, issue gift cards, and sync data with HQ. The Store Scale Unit is available for download in the standard HQ deployment.
+Commerce Scale Unit (Self-hosted) is a set of features that supports selling products in a store that have inconsistent internet connectivity to a back office or headquarters (HQ). The Store Scale Unit is designed specifically for in-store operation, and enables cross-terminal transactions and shift operations despite poor internet service. By automatically connecting to the back office, when you do have internet connectivity, your store can seamlessly process credit card transactions, issue gift cards, and sync data with HQ. The Store Scale Unit is available for download in the standard HQ deployment.
 
 ## Is the Commerce Scale Unit right for you?
 Before you begin setting up Commerce Scale Unit, take a moment determine whether this option is the right fit for your store. Commerce Scale Unit is a deployment choice intended for retailers with store locations that have slow or intermittent internet connectivity, who need the flexibility of the Commerce Scale Unit deployed on premises in each store. 
