@@ -32,6 +32,9 @@ ms.dyn365.ops.version: 10.0.12
 [!include[banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
+> [!IMPORTANT]
+> This functionality requires service update 189 for Common Data Service. The release information for Common Data Service is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
+
 This topic is a collection of frequently asked questions about Finance and Operations virtual entities. 
 
 ## Do Tier 1 Finance and Operations environments or demo topologies work?
