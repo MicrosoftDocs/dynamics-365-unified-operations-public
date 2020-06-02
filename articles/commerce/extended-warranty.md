@@ -75,9 +75,9 @@ To create a warranty item in Commerce, follow these steps.
 1. Select **OK**.
 1. On the **Warranty** FastTab, enter values for **Unit of time** and **Length of time**. (See the table below for descriptions of the time properties on the **Warranty** FastTab.)
 1. On the Action Pane, select **Save** to save the warranty item.
-1. Release the warranty product to the company to be able to sell it. >>>(NEED LINK for steps on how to release a product to a company)<<<
+1. Release the warranty product to the company to be able to sell it. 
 1. On the **Warranty** FastTab of the **Released product details** page, enter values for **Price range base**, **Lower limit**, and **Upper Limit**. (See the table below for descriptions of the time properties on the **Released product details** page.)
-1. Assort the warranty item to the channel where it will be sold. >>>(NEED LINK on how to assort products.)<<<
+1. Assort the warranty item to the channel where it will be sold. 
 
 The following table contains values and descriptions for the time properties on the **Warranty** FastTab.
 
@@ -118,8 +118,6 @@ To configure channel-specific setting in Commerce, follow these steps.
 The warranty policy number sequence is a unique identifier of the policy.
 
 To configure the warranty policy number sequence in Commerce, follow these steps.
-
->>>(NEED LINK/INFO on how to create number sequence code)<<<
 
 1. Go to **Products and categories \> Warranty \> Warranty settings \> Number sequences**.
 1. Under **Number sequence code**, select a value from the drop down menu. 
