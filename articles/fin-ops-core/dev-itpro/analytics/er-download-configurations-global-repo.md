@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Download ER configurations from the Global repository of Configuration service (RCS)
-description: This topic explains how to download Electronic reporting (ER) configurations from the Global repository of Configuration service (RCS).
+title: Download ER configurations from the Global repository of Configuration service 
+description: This topic explains how to download Electronic reporting (ER) configurations from the Global repository of Configuration service.
 author: NickSelin
 manager: AnnBe
-ms.date: 06/01/2020
+ms.date: 06/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.5
 
 ---
 
-# Download ER configurations from the Global repository of Configuration service (RCS)
+# Download ER configurations from the Global repository of Configuration service
 
 [!include [banner](../includes/banner.md)]
 
