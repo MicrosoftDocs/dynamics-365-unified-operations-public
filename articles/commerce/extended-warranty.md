@@ -95,9 +95,7 @@ The following table contains values and descriptions for the time properties on 
 | **Property name** | **Values** | **Description** |
 |-------------------|------------|-----------------|
 | Price range base | None, Base price, Selling price | <ul><li>**None** – Price ranges "Lower Limit" and "Upper Limit" are not applicable.</li><li>**Base Price** - A particular warranty will be applicable if the base price (the price without discounts) of the warrantable item falls between upper and lower limits specified here based on price of the warrantable item.</li><li>**Selling price** - Reserved for future use.</li></ul> | 
-| Lower limit, Upper limit | Positive integer value | These properties specify the upper and lower price limits of the warrantable item in company currency. These limits can be based on the warrantable item's base price (also known as the manufacturer's suggested retail price, or MSRP). 
-
->>>CONFUSING SECTION NEEDS TO BE REWORDED. This attribute will define how the current warranty product is applicable to warranty product If set as base price – Prompt Only warranties where base price of Warrantble product falls within Lower Limit’ and ’Upper Limit’ values of the warranty item E.g. Laptop has base price = \$999 2 Warranties: Warranty1 with LowerPriceLimit = \$500 and UpperPriceLimit = \$1000 and PriceTier = MSRP Warranty2 with LowerPriceLimit = \$1001 and UpperPriceLimit = \$ 2000 and PriceTier = Base price In this case, Warranty1 will be prompted when Laptop with value \$999 is added to cart in POS or online or AX sales order<<<  |
+| Lower limit, Upper limit | Positive integer value | These properties specify the upper and lower price limits of the warrantable item in company currency. These limits can be based on the warrantable item's base price (also known as the manufacturer's suggested retail price, or MSRP). |
 
 The following image shows an example of the price range properties on the **Released product details** page. 
 
@@ -108,8 +106,6 @@ The following image shows an example of the price range properties on the **Rele
 Configuring channel-specific settings enables the prompt to add a warranty item when a warrantable item is added to the cart at the POS.
 
 To configure channel-specific setting in Commerce, follow these steps.
-
->>>Please provide a screenshot for this operation, I can't get to this page to confirm steps.<<<
 
 1. Go to **Products and categories \> Warranty \> Warranty settings\> Channel Specific**.
 1. For **Prompt for warranty**, select one of the following values for your channel:
@@ -176,14 +172,7 @@ The following image shows an example of a prompt to add a warranty item on a POS
 
 For warranties added in cash and carry transactions, sales associates must proceed through statement posting so that the transactions are posted in Commerce headquarters. Then Commerce users can go to **Retail and Commerce \> Products and categories \> Warranty \> Process warranty transactions** to run the "Process warranty transactions" job that will process warranty transactions and create warranty policy.
 
-
-<!--The following image shows and example of-->
-
-<!--![Example of](./media/ew-process-warranty.png)-->
-
 ## Warranty policies
-
->>>This Warranty policies section is unnecessary IMO, I've moved the warranty policy description to the terms table. If we want to provide the policy details properties here, we'll need more information explaining what they are and where they can be found.
 
 Once an extended warranty is sold, a warranty policy entity will be created. The warranty policy number can be shared to the customer to give them a reference for the extended warranty purchased. The warranty policy will include the start date, end date, terms and conditions, serial number of the item, and more for the warranty sold.
 
@@ -209,11 +198,7 @@ Warranty Policy details
 
 Check if the warranty product is assorted to the channel. In Retail and Commerce, check if the warranty group is configured to include the relevant channel.
 
->>>WHAT DOES "LINES" MEAN BELOW?<<<
-
 **When trying to add a warranty to existing transaction and entering the customer order receipt number, I don't see any lines**.
-
->>>NEED MORE INFO HERE, PLEASE PROVIDE A LINK<<<
 
 Run a pull job (P-Job) to upload the receipts to headquarters, which is required for the receipt to be found.
 
@@ -223,4 +208,3 @@ A warranty is a service provided for a specific, unique product. In Dynamics 365
 
 ## Additional resources
 
->>>PLEASE PROVIDE SOME RELEVANT LINKS<<<
