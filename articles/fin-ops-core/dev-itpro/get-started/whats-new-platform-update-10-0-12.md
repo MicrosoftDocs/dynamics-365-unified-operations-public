@@ -5,7 +5,7 @@ title: Platform updates for version 10.0.12 of Finance and Operations apps (Augu
 description: This topic lists the features are included in the platform updates for version 10.0.12 of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 05/29/2020
+ms.date: 06/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -45,8 +45,8 @@ This topic lists the features that are included in the platform updates for vers
 -  [Designate fields as required via the Personalization toolbar](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/usability-improvements-filtering-personalization) – For more information, see 
 [Personalize the user experience](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/personalize-user-experience). 
 -  [Edit basic control values in task recordings](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/new-task-recorder-capabilities-rsat) – For more information, see [Task recorder resources](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/user-interface/task-recorder).
--  Scanning files and attachments for malicious code – For more information, see [File upload control](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/user-interface/file-upload-control) and [Configure document management](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management).
--  Show related document attachments – For more information, see [Configure document management](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management).
+-  [Scanning files and attachments for malicious code](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/scanning-files-attachments-malicious-code) – For more information, see [File upload control](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/user-interface/file-upload-control) and [Configure document management](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management).
+-  [Show related document attachments](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/show-related-document-attachments) – For more information, see [Configure document management](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management).
 - [Finance and Operations entities in Common Data Service as virtual entities](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/finance-operations-entities-common-data-service-as-virtual-entities) – For more information, see [Microsoft Power Platform integration with Finance and Operations](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/power-platform/overview).
 
 ## Additional resources
