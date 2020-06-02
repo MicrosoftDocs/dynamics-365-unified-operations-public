@@ -42,7 +42,7 @@ Microsoft strives to maintain functional parity between our commercially availab
 
 Customers in China have two options from which to select how they want to access Finance and Supply Chain Management apps.
 
-- Services operated by 21Vianet in China - 21Vianet operates and offers Finance and Su services in China. This option provides a consistent application experience that is the same as global offerings. This option also meets the demands of customers who prefer to use online services provided by a local company that stores their data within China. These services are subject to Chinese laws.
+- Services operated by 21Vianet in China - 21Vianet operates and offers Finance and Supply Chain Management services in China. This option provides a consistent application experience that is the same as global offerings. This option also meets the demands of customers who prefer to use online services provided by a local company that stores their data within China. These services are subject to Chinese laws.
 
 - Services operated by Microsoft – This option is for Finance and Supply Chain Management customers that prefer to use services managed and delivered by Microsoft. For all new customers and existing customers, if the customer purchases Microsoft Azure, Dynamics 365, and Office using an Enterprise Agreement, Office 365 and/or Dynamics 365 can co-exist on the tenant.
 
