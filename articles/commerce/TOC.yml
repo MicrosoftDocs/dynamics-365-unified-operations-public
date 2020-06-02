@@ -648,6 +648,8 @@
           items:
           - name: Store inventory management  
             href: work-with-store-inventory.md
+          - name: Configure inventory buffers and inventory levels
+            href: inventory-buffers-levels.md
           - name: Work with serialized items in POS
             href: pos-serialized-items.md
           - name: Push products from distribution center to store using buyer's push 
