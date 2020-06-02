@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.8
 
 # Set up and use advanced wave load building
 
-Advanced wave load building automatically assigns shipments to existing waves <!-- do we mean *existing loads*? --> during wave execution, which can help you create meaningful loads that represent trucks without requiring you to use the load-planning workbench. This is useful for businesses who want to use the concept of loads to track and plan the shipment of goods in a truck/trailer, but don't want to manually create these loads each day.
+Advanced wave load building automatically assigns shipments to existing waves during wave execution, which can help you create meaningful loads that represent trucks without requiring you to use the load-planning workbench. This is useful for businesses who want to use the concept of loads to track and plan the shipment of goods in a truck/trailer, but don't want to manually create these loads each day.
 
 During wave processing, the system normally creates a new load for each shipment that doesn't have a load assigned, but with advanced wave load building, the system instead  assigns each unassigned shipment to an existing load (when an appropriate load exists) and only creates new loads when required. The advanced wave load building feature creates loads automatically based on criteria that you define. You'll set the system up as follows:
 
@@ -39,15 +39,15 @@ During wave processing, the system normally creates a new load for each shipment
 
 ## Enable advanced wave load building on your system
 
-Before you begin trying to set up or use advanced wave load building, you must make sure the feature is available on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the feature status and enable it if needed. Here, the feature is listed listed as:
+Before you can use this feature, two features must be enabled on on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of these features and enable them if needed. Here, the features are listed listed as:
 
-- **Module**: Warehouse management
-- **Feature name**: Wave load building feature
+1. Wave load building feature:
+    - **Module**: Warehouse management
+    - **Feature name**: Wave load building feature
 
-The **Wave load building feature** is dependent upon another feature to be enabled, **Organization wide wave step code**. You must also enable this feature. Here, the feature is listed listed as:
-
-- **Module**: Warehouse management
-- **Feature name**: Organization wide wave step code
+1. Organization wide wave step code:
+    - **Module**: Warehouse management
+    - **Feature name**: Organization wide wave step code
 
 ### Enable sample data
 
@@ -156,15 +156,13 @@ Load mix groups establish rules for which types of items can be combined into a 
     1. Select **Save** to enable the **Load mix group criteria** FastTab.
 1. In the **Load mix group criteria** fast tab, select the **New** button to add a row.
 1. Then configure the desired values in each column as needed for the new row. This determines which item groups are considered for the load mix.
-    1. If you're working with the **USMF** legal-entity demo data:
-        1. In the **Item group** column select *TV&Video*.
+    1. If you're working with the **USMF** legal-entity demo data, then in the **Item group** column select *TV&Video*.
     1. Select **Save** on the action pane to enable the **Load mix group constraints** FastTab.
 1. In the **Load mix group constraints** fast tab, select **New** to create a new row.
 1. Then configure the desired values in each column as needed.
 1. If you're working with the **USMF** legal-entity demo data:
     1. In the **Item group** field, select *CarAudio*.
-    1. In the **Load build action** field, select *Restrict*.
-        1. *This will prevent items with an item group of **CarAudio** from being on the same load as items with an item group of **TV&Video**.
+    1. In the **Load build action** field, select *Restrict*. This will prevent items with an item group of **CarAudio** from being on the same load as items with an item group of **TV&Video**.
 1. Continue working with these rules until you have added all the criteria and constraints you need for this load mix group.
 1. If you are working with **USMF** legal-entity demo data, you are done.
 
@@ -215,19 +213,18 @@ This scenario shows how the settings previously described in this topic will aff
 1. Go to **Sales and Marketing** > **Sales orders** >  **All sales orders**.
 1. Select **New** on the action pane to open a FlyOut for creating a new sales order.
 1. In the FlyOut, enter the following:
-    - On the **Customer** fast tab, set **Customer account** to "US-007".
-    - On the **General** fast tab, set **Warehouse** to "62".
+    - On the **Customer** fast tab, set **Customer account** to *US-007*.
+    - On the **General** fast tab, set **Warehouse** to *62*.
 1. Select **OK** to create the sales order and close the FlyOut.
-1. Your new sales order opens. It should include a new, empty line in the **Sales order lines** table. For this new line, set the **Item number** to "A0001" and the **Quantity** to "1".
+1. Your new sales order opens. It should include a new, empty line in the **Sales order lines** table. For this new line, set the **Item number** to *A0001* and the **Quantity** to *1*.
 1. Open the **Inventory** drop-down list at the top of the **Sales order lines** table and select **Reservation**.
 1. Select **Reserve lot** from the action pane.
 1. Select the close **(X)** button in the upper-right corner to return to your sales order.
 1. Open the **Warehouse** tab on the action pane and then select **Actions** > **Release to warehouse**. The system creates a shipment and adds it to a new load because there is no existing load that contains load lines with this order number.
-1. Informational messages are displayed indicating the Work, Wave and shipment created for this order.
-    1. Load, Shipment and Work details can be confirmed on the sales line by focusing on the line and selecting **Warehouse** on the Action Pane, then selecting the *details* menu item you are validating.
+1. Informational messages are displayed indicating the Work, Wave and shipment created for this order. Load, Shipment and Work details can be confirmed on the sales line by focusing on the line and selecting **Warehouse** on the Action Pane, then selecting the *details* menu item you are validating.
 1. On the sales order you just created, in the **Sales order lines** fast tab, select **Add line** to add another line to your sales order.
-1. Add **Item number** "A0002" with a **Quantity** of "1".
+1. Add **Item number** *A0002* with a **Quantity** of *1*.
 1. **Reserve** the line and **Release to warehouse**, as you did previously.  The system now creates a **new** shipment for the added line, but because you are using advanced wave load building, it adds that shipment and load line to the existing wave. *Without this feature*, a new load would have been created for the shipment.
 1. On the sales order you just created, in the **Sales order lines** fast tab, select **Add line** to add another line to your sales order.
-1. Add **Item number** "M9200" with a **Quantity** of "1". Reserve the line and release the order to the warehouse. As before, a new shipment is created, but because this item is from the **CarAudio** item group, it ***fails to pass the load mix group constraints*** we set up earlier and is therefore ***added to a new load***.
+1. Add **Item number** *M9200* with a **Quantity** of *1*. Reserve the line and release the order to the warehouse. As before, a new shipment is created, but because this item is from the **CarAudio** item group, it ***fails to pass the load mix group constraints*** we set up earlier and is therefore ***added to a new load***.
 1. If a load mix group hadn't been specified on the load build template, then this shipment would have been added to the first load as well.
