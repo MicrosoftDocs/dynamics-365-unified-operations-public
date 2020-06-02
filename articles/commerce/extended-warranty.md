@@ -156,9 +156,9 @@ To set up a warranty group in Commerce, follow these steps.
 
 Two POS features enable sales associates to sell warranty item during the customer purchase workflow.
 
-- **Add Warranty** - The **Add Warranty** feature triggers a prompt that displays applicable warranties for a warrantable item that is in the cart.
+- **Add warranty** - The **Add Warranty** feature triggers a prompt that displays applicable warranties for a warrantable item that is in the cart.
 
-- **Add Warranty to existing transaction** - The **Add Warranty to existing transaction** feature enables sales associates to sell warranties for warrantable items sold previously. The original transaction can be found by entering the receipt number of the original warrantable item transaction.
+- **Add warranty to existing transaction** - The **Add Warranty to existing transaction** feature enables sales associates to sell warranties for warrantable items sold previously. The original transaction can be found by entering the receipt number of the original warrantable item transaction.
 
 The following image shows an example of a POS terminal screen for a purchase.
 
@@ -183,11 +183,11 @@ For warranties added in cash and carry transactions, sales associates must proce
 
 ## Warranty policies
 
->>>This section is unnecessary IMO, I've moved warranty policy info to the terms table.
+>>>This Warranty policies section is unnecessary IMO, I've moved the warranty policy description to the terms table. If we want to provide the policy details properties here, we'll need more information explaining what they are and where they can be found.
 
-<!--Once an extended warranty is sold, a warranty policy entity will be created. The warranty policy number can be shared to the customer to give them a reference for the extended warranty purchased. The warranty policy will include the start date, end date, terms and conditions, serial number of the item, and more for the warranty sold.-->
+Once an extended warranty is sold, a warranty policy entity will be created. The warranty policy number can be shared to the customer to give them a reference for the extended warranty purchased. The warranty policy will include the start date, end date, terms and conditions, serial number of the item, and more for the warranty sold.
 
-Warranty Policy details >>>WHAT ARE THESE STRINGS?<<<
+Warranty Policy details
 
 *PolicyNumber - string (20)*
 *WarrantiedItemId - string (20)*
@@ -209,10 +209,12 @@ Warranty Policy details >>>WHAT ARE THESE STRINGS?<<<
 
 Check if the warranty product is assorted to the channel. In Retail and Commerce, check if the warranty group is configured to include the relevant channel.
 
->>>WHAT DOES "LINES" MEAN?<<<
+>>>WHAT DOES "LINES" MEAN BELOW?<<<
+
 **When trying to add a warranty to existing transaction and entering the customer order receipt number, I don't see any lines**.
 
 >>>NEED MORE INFO HERE, PLEASE PROVIDE A LINK<<<
+
 Run a pull job (P-Job) to upload the receipts to headquarters, which is required for the receipt to be found.
 
 **Why is the warranty feature only applicable for serialized products?**
