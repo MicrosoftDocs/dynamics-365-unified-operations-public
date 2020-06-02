@@ -5,7 +5,7 @@ title: Commerce for IT pros and developers
 description: This page lists the resources that are available for IT pros and developers who support Commerce.
 author: RobinARH
 manager: AnnBe
-ms.date: 11/15/2019
+ms.date: 06/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -52,7 +52,7 @@ This page lists the resources that are available for IT pros and developers who 
 -   [Point of sale (POS) device activation](retail-device-activation.md)
 -   [Install the POS Layout designer](../install-pos-layout-designer.md)
 -   [Configure and install Retail hardware station](../retail-hardware-station-configuration-installation.md)
--   [Configure and install Commerce Scale Unit (Self-hosted)](retail-store-scale-unit-configuration-installation.md)
+-   [Configure and install Commerce Scale Unit (self-hosted)](retail-store-scale-unit-configuration-installation.md)
 -   [Retail component events for diagnostics and troubleshooting](retail-component-events-diagnostics-troubleshooting.md)
 -   [Access instances](../../dev-itpro/dev-tools/access-instances.md)
 
@@ -91,7 +91,7 @@ This page lists the resources that are available for IT pros and developers who 
 -   [Extend the default Commerce Scale Unit metadata controller](extend-metadata.md)
 -   [Commerce Scale Unit customer and consumer APIs](retail-server-customer-consumer-api.md)
 -   [Commerce Scale Unit](retail-store-system-begin.md)
--   [Configure and install Commerce Scale Unit (Self-hosted)](retail-store-scale-unit-configuration-installation.md)
+-   [Configure and install Commerce Scale Unit (self-hosted)](retail-store-scale-unit-configuration-installation.md)
 
 ## Hardware station
 -   [Configure and install Retail hardware station](../retail-hardware-station-configuration-installation.md)
