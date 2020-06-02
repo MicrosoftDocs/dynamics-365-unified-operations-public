@@ -70,13 +70,13 @@ The following tables describes the set of supported authentication mechanisms fo
 |**Dynamics 365 POS authentication flows**|Authentication without device activation / token. |All POS related Commerce Scale Unit APIs require a device activation / token for authentication. |
 
 ## Dynamics 365 POS Employee Authentication Flows
-![Dynamics 365 POS Employee Authentication Flows](./media/arch-auth-flow-1.jpg)
+<a href="https://docs.microsoft.com/en-us/dynamics365/commerce/media/arch-auth-flow-1.jpg" target="_blank">![Dynamics 365 POS Employee Authentication Flows](./media/arch-auth-flow-1.jpg)
 
 ## Dynamics 365 e-Commerce Customer Authentication Flows
-![Dynamics 365 POS Employee Authentication Flows](./media/arch-auth-flow-2.jpg)
+<a href="https://docs.microsoft.com/en-us/dynamics365/commerce/media/arch-auth-flow-2.jpg" target="_blank">![Dynamics 365 POS Employee Authentication Flows](./media/arch-auth-flow-2.jpg)
 
 ## 3rd Party e-Commerce Customer Authentication Flows
-![Dynamics 365 POS Employee Authentication Flows](./media/arch-auth-flow-3.jpg)
+<a href="https://docs.microsoft.com/en-us/dynamics365/commerce/media/arch-auth-flow-3.jpg" target="_blank">![Dynamics 365 POS Employee Authentication Flows](./media/arch-auth-flow-3.jpg)
 
 ## 3rd Party Application Authentication Flows
-![Dynamics 365 POS Employee Authentication Flows](./media/arch-auth-flow-4.jpg)
+<a href="https://docs.microsoft.com/en-us/dynamics365/commerce/media/arch-auth-flow-4.jpg" target="_blank">![Dynamics 365 POS Employee Authentication Flows](./media/arch-auth-flow-4.jpg)
