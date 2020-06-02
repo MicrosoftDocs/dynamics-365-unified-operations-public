@@ -5,7 +5,7 @@ title: Provision a Dynamics 365 Commerce preview environment
 description: This topic explains how to provision a Microsoft Dynamics 365 Commerce preview environment.
 author: psimolin
 manager: annbe
-ms.date: 04/10/2020
+ms.date: 06/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -43,7 +43,7 @@ Before you begin, we recommend that you take a quick scan through this topic to 
 
 ## Overview
 
-To successfully provision your Commerce preview environment, you must create a project that has a specific product name and type. The environment and Commerce scale unit (CSU) also have some specific parameters that you must use when you provision e-Commerce later. The instructions in this topic describe all the steps required to complete provisioning and the parameters that you must use.
+To successfully provision your Commerce preview environment, you must create a project that has a specific product name and type. The environment and Commerce Scale Unit (CSU) also have some specific parameters that you must use when you provision e-Commerce later. The instructions in this topic describe all the steps required to complete provisioning and the parameters that you must use.
 
 After you successfully provision your Commerce preview environment, you must complete a few post-provisioning steps to prepare it. Some steps are optional, depending on the aspects of the system that you want to evaluate. You can always complete the optional steps later.
 
