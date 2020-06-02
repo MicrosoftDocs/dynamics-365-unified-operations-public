@@ -3,9 +3,9 @@
 
 title: Cross-company data sharing
 description: This topic provides information about cross-company data sharing. Cross-company sharing is a mechanism for sharing reference and group data among companies in a Finance and Operations deployment.
-author: aprilolson
+author: peakerbl
 manager: AnnBe
-ms.date: 11/05/2019
+ms.date: 06/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,14 +17,14 @@ ms.search.form: SysDataSharingConfiguration
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 89071
 ms.assetid: 0bbe7453-624f-4551-a1d0-842484067311
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: aolson
+ms.author: peakerbl
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 
@@ -45,19 +45,19 @@ Here are some examples of cross-company data sharing and the basic logic:
 
 -   The same payment terms and payment day definitions are used across 15 legal entities.
 -   The same terms of delivery are used across seven legal entities in three countries/regions.
--   Records created, updated, and deleted in any of the companies in the policy will immediately be replicated across all the companies.
-- 	Fields that are not selected for sharing are maintained in each company and will not trigger any replication.
--   As part of enabling a policy is optional to copy/replicate any existing records.
+-   Records created, updated, and deleted in any of the companies within the policy, will be replicated immediately across all the companies.
+-   Fields that are not selected for sharing are maintained in each company and will not trigger any replication.
+-   As part of enabling a policy, it is optional to copy any existing records.
 
 
 Cross-company data sharing has the following limitations:
 
 -   It can’t be used to share transactional data between companies.
--   Only reference and group data can be shared or tables that has specifically been enabled, i.e. Data Sharing Type is set to Duplicate.
--   It supports replication of fewer than one million total records per job. (This total is calculated as the number of shared records × the number of shared companies.) The limit is increased to two million records from PU34.
--   It supports replication for up to 100 companies per policy. The limit is increased to 300 companies from PU34.
+-   Only reference and group data can be shared, or tables that have specifically been enabled. For example, **Data Sharing Type** is set to **Duplicate**.
+-   It supports replication of fewer than one million total records per job. This total is calculated as the number of shared records × the number of shared companies. The limit is increased to two million records from the Platform Update for version 10.0.10.
+-   It supports replication for up to 100 companies per policy. The limit is increased to 300 companies from the Platform Update for version 10.0.10.
 -   Only one level of child relationships is exposed. To protect data consistency, replication doesn't occur if another level is required.
-- 	Fields that reference Financial dimension, e.g. Ledger or Default dimension, cannot be shared across companies. 
+- 	Fields that reference Financial dimension, for example **Ledger** or **Default** dimension, can't be shared across companies. 
       o	Dimensions hold a loose foreign key reference to the backing dimension data, which can reference both company-specific and non-company specific data. Determining the appropriate action to be taken for each dimension value has inherent complexity and would require a change from the current implementation, which could dramatically impact performance.
 
 
@@ -69,9 +69,10 @@ Data sharing is managed by defined policies that are saved in data packages. Tem
 -   The entities that participate in the replication
 -   The companies that participates in the sharing
 
-The same company and table can only be in one policy. It is possible to share the same table in more than policy. This can be used when limits in number of records or companies are reached, or to create policies for tables that needs to be shared differently for different country/regions. 
+The same company and table can only be in one policy. It is possible to share the same table in more than policy. This can happen when the limits of records or companies are reached, or to create policies for tables that need to be shared differently for different country/regions. 
 
-Note that only mandatory foreign key fields are selected by default and that optional foreign keys needs to be selected manually to be included. The best practice is to Add tables when selecting a foreign key field, unless the table has already been added.
+> [!NOTE]
+> Only mandatory foreign key fields are selected by default. Optional foreign keys need to be selected manually to be included. The best practice is to add one or more tables when selecting a foreign key field, unless the table has already been added.
 
 Policy templates that Microsoft has tested and supports are available as downloadable data packages on Microsoft Dynamics Lifecycle Services (LCS). 
 
@@ -108,9 +109,9 @@ Cross-company data sharing isn't supported for the following scenarios:
 
 
 ## Customer and vendor master data sharing
-Customer and vendor master data sharing allows you to share customer and vendor data across multiple companies. If you would like to be considered for this feature, complete the following survey and contact Support, [Data sharing application](https://aka.ms/MSDYN365FODataSharing).
+Customer and vendor master data sharing allows you to share customer and vendor data across multiple companies. If you would like to be considered for this feature, complete the [Data sharing application](https://aka.ms/MSDYN365FODataSharing) and contact Support.
 
-From PU36, Customer and vendor master data sharing can be enabled using Feature management, e.g. feature: Master company sharing. There is no need to first complete a survey. It is important to consider limits in number of records and companies stated above.
+Wiht the release of Plaform Update for version 10.0.12, customer and vendor master data sharing can be enabled using the **Master company sharing** feature in the **Feature management** module. There is no need to complete a surveyfirst. It is important to consider limits in the number of records and companies stated above.
 
 > [!NOTE]
 > Default dimensions set up against a customer or vendor cannot be shared across companies. When configuring the customer or vendor record for cross-company data sharing, the **DefaultDimension** field is disabled, and cannot be included in the data sharing policy.
