@@ -70,12 +70,12 @@
           items:
           - name: What's new or changed in Finance home page
             href: get-started/whats-new-home-page.md
+          - name: Finance 10.0.12 (August 2020)
+            href: get-started/whats-new-changed-10-0-12.md     
           - name: Finance 10.0.11 (July 2020)
             href: get-started/whats-new-changed-10-0-11.md           
           - name: Finance 10.0.10 (May 2020)
             href: get-started/whats-new-changed-10-0-10.md            
-          - name: Finance 10.0.9 (April 2020)
-            href: get-started/whats-new-changed-10-0-9.md
       - name: Removed or deprecated features
         items:
           - name: Removed or deprecated features in Dynamics 365 Finance
@@ -978,6 +978,8 @@
         href: project-management/tasks/configure-intercompany-project-invoicing.md
       - name: Configure standard costs for labor and expenses
         href: project-management/tasks/configure-standard-costs-labor-expenses.md
+      - name: Create and apply vendor payment retention terms
+        href: project-management/create-and-apply-vendor-payment-retention-terms.md
       - name: Set up and use pay-when-paid vendor payments
         href: project-management/setup-manage-vendor-payments.md
       - name: Project cost accrual on purchase receipts
@@ -1000,6 +1002,10 @@
         href: project-management/project-purchase-orders.md
       - name: Project quotations
         href: project-management/project-quotations.md
+      - name: Confirm, update, and send a project quotation
+        href: project-management/confirm-update-send-project-quotation.md
+      - name: Transfer a quotation to a project
+        href: project-management/transfer-quote-new-existing-project.md
       - name: Project resourcing
         href: project-management/project-resourcing.md
       - name: Receive items on purchase order from item requirement
@@ -1022,6 +1028,8 @@
           href: project-management/custom-fields-mobile.md
       - name: Project grants
         href: project-management/project-grants.md
+      - name: Eliminate a project estimate
+        href: project-management/eliminate-project-estimate.md
     - name: Public sector
       items:
       - name: Public sector home page
@@ -2288,8 +2296,8 @@
           href: localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
         - name: Semansys XBRL integration
           href: localizations/tasks/nl-00003-semansys-xbrl-integration.md
-        - name: Audit file - XML Auditfile Financieel, XAF
-          hred: localizations/emea-nl-audit-file.md
+        - name: Audit file (XML Auditfile Financieel XAF)
+          href: localizations/emea-nl-audit-file.md
       - name: Norway
         items:
         - name: Norway overview
@@ -2970,6 +2978,8 @@
         items:
         - name: Create configurations
           href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=/dynamics365/finance/toc.json
+        - name: Define the dependency of ER configurations on other components
+          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/finance/toc.json
         - name: Prepare components of the Electronic reporting solution
           items: 
           - name: Design domain specific data model
@@ -3252,10 +3262,6 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?toc=/dynamics365/finance/toc.json
             - name: "Text: Text"
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/finance/toc.json
-      - name: Manage ER model mapping in separate ER configurations
-        href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
-      - name: Select data model definitions when you create formats
-        href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
       - name: Design ER formats to generate outgoing electronic documents in various formats
         items: 
         - name: Design configurations to generate outgoing documents in Excel format
@@ -3290,8 +3296,6 @@
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/finance/toc.json
         - name: Split generated XML files based on file size and content quantity
           href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
-      - name: Define the dependency of ER configurations on other components
-        href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/finance/toc.json
       - name: Update application data using Electronic reporting
         items:
         - name: Generate electronic documents and update application data
@@ -3321,31 +3325,37 @@
           - name: Import files in XML format with optional attributes
             href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?toc=/dynamics365/finance/toc.json
           - name: Configure ER formats to import XML format files with optional attributes
-            href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md
+            href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md?toc=/dynamics365/finance/toc.json
       - name: Configuration lifecycle
         items:
         - name: Manage configurations lifecycle
           href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/dynamics365/finance/toc.json
-        - name: Upload configurations into lifecycle Services
-          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/dynamics365/finance/toc.json
-        - name: Import configurations from Lifecycle Services
-          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/dynamics365/finance/toc.json
-        - name: Download configurations from Lifecycle Services
-          href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/finance/toc.json
-        - name: Import configurations
-          href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/finance/toc.json
-        - name: Enhanced filtering options for finding configurations in the Global repository 
-          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
-        - name: Download ER configurations from the RCS repository
-          items: 
-          - name: Download configurations from the ER repository of the RCS type
-            href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
-          - name: Import configurations from RCS
-            href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
-        - name: Create ER configurations in RCS and upload them to the Global repository
-          href: localizations/rcs-global-repo-upload.md
-        - name: Share ER configurations in RCS with external organizations  
-          href: localizations/rcs-global-repo-share-configuration.md
+        - name: Lifecycle Services (LCS)
+          items:
+          - name: Upload configurations into LCS
+            href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/dynamics365/finance/toc.json
+          - name: Import configurations from LCS
+            href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/dynamics365/finance/toc.json
+          - name: Download configurations from LCS
+            href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/finance/toc.json
+          - name: Import configurations (LBD)
+            href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/finance/toc.json
+        - name: Regulatory service (RCS)
+          items:
+          - name: Download ER configurations to Finance
+            items: 
+            - name: Download configurations from RCS
+              href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
+            - name: Import configurations from RCS
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
+          - name: Global repository (GR)
+            items: 
+            - name: Enhanced filtering to find configurations in GR
+              href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
+            - name: Upload configurations to GR
+              href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
+            - name: Share configurations in GR  
+              href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
       - name: Tutorials
         items: 
         - name: Learn how to use data sources
@@ -3392,18 +3402,26 @@
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/finance/toc.json
             - name: Debug data sources
               href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=dynamics365/finance/toc.json
-        - name: Configure country context dependent ER model mappings
-          href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=dynamics365/finance/toc.json
-        - name: Configure ER formats to use parameters that are specified per legal entity
-          href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=dynamics365/finance/toc.json
-        - name: Set up the parameters of an ER format per legal entity
-          href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=dynamics365/finance/toc.json
-        - name: Defer execution of ER format elements
+        - name: Configure model mappings
           items: 
-          - name: Defer execution of a sequence element
-            href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=dynamics365/finance/toc.json
-          - name: Defer execution of an XML element
-            href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=dynamics365/finance/toc.json
+          - name: Configure country context dependent ER model mappings
+            href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=dynamics365/finance/toc.json
+          - name: Manage ER model mapping in separate ER configurations
+            href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
+        - name: Configure formats
+          items: 
+          - name: Configure ER formats to use parameters that are specified per legal entity
+            href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=dynamics365/finance/toc.json
+          - name: Set up the parameters of an ER format per legal entity
+            href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=dynamics365/finance/toc.json
+          - name: Select model definitions when you create formats
+            href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
+          - name: Defer execution of ER format elements
+            items: 
+            - name: Defer execution of a sequence element
+              href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=dynamics365/finance/toc.json
+            - name: Defer execution of an XML element
+              href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=dynamics365/finance/toc.json
         - name: Relative path in data bindings
           href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=dynamics365/finance/toc.json
       - name: Use Electronic reporting solutions in Finance and Operations

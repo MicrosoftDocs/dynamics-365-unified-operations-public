@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations platform
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 25 (April 2019). 
 author: tonyafehr
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -43,7 +43,7 @@ The [second wave of platform extensibility enhancements](https://docs.microsoft.
 You can take advantage of improved flexibility in customization options available in the web client for power users by using built-in tooling to replace standard analytical reports embedded in the application with custom solutions hosted on PowerBI.com. With the latest Platform update, power users can replace the standard reports in application workspaces with reports hosted on PowerBI.com. These updates are immediately made available to other users of the workspace, replacing the standard solution. Additional options include the ability to revert back to the analytical reports that were originally released with the application.
 
 ## Entity store in Azure Data Lake (public preview)
-Entity store is an Operational data warehouse that contains simplified transactional data for reporting with Power BI. Now you can stage entity store in your own Azure Data Lake Storage (ADLS Gen2). You can use PowerBI.com in addition to other Azure and third-party tools to work with data. When this feature is enabled, entity store data isn't populated in the relational entity store database in the Microsoft subscription. Instead, it's populated in an Azure Data Lake Storage Gen2 account in your own subscription. You can use the full capabilities of PowerBI.com and other Azure tools to work with entity store.
+Entity store is an Operational data warehouse that contains simplified transactional data for reporting with Power BI. Now you can stage entity store in your own Azure Data Lake Storage Gen2. You can use PowerBI.com in addition to other Azure and third-party tools to work with data. When this feature is enabled, entity store data isn't populated in the relational entity store database in the Microsoft subscription. Instead, it's populated in an Azure Data Lake Storage Gen2 account in your own subscription. You can use the full capabilities of PowerBI.com and other Azure tools to work with entity store.
 
 To enable this feature, see [Entity store in your own Business Data Lake](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/erp-data-entity-store-byod-business-data-lake).
 

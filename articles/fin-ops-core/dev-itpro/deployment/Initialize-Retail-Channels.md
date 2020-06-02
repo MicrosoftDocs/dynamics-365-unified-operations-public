@@ -5,7 +5,7 @@ title: Initialize Retail Cloud Scale Unit
 description: This topic explains how to initialize Retail Cloud Scale Unit.
 author: AamirAllaq
 manager: AnnBe
-ms.date: 04/24/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -37,12 +37,44 @@ If you're using a Tier-2 sandbox or production environment that has application 
 This topic describes the steps for initializing Retail Cloud Scale Unit.
 
 > [!IMPORTANT]
-> For existing customers using retail channel functionality in the cloud, to ensure continued and uninterrupted support for your business, we require that you update your retail channels to use Cloud Scale Unit. New environments deployed without Cloud Scale Unit will no longer recieve quality and service updates for cloud-hosted retail channel components. There is no action required for customers who exclusively use Store Scale Unit.  Contact your Microsoft FastTrack solution architect if you require an extension.
+> For existing customers using retail channel functionality in the cloud, to ensure continued and uninterrupted support for your business, we require that you update your retail channels to use Cloud Scale Unit. New environments deployed without Cloud Scale Unit will no longer receive quality and service updates for cloud-hosted retail channel components. There is no action required for customers who exclusively use Store Scale Unit.  Contact your Microsoft FastTrack solution architect if you require an extension.
 
 ## Prerequisites
 
 1. Deploy a Tier-2 sandbox or production environment that has application version 8.1.2.x or later.
 2. If you require more than 1 RCSU per environment, in Microsoft Dynamics Lifecycle Services (LCS), create a support request, and enter **Access request for multiple Retail Cloud Scale Units** and indicate the environment ID, number of RCSUs, and corresponding datacenter regions. The request will be completed within five business days. If you do not require multiple RCSUs per environment, you do not need to create a support request. 
+
+## Region availability
+Commerce Scale Unit is available for deployment in the following regions.
+
+| Global location | Region              | Availability        |
+|-----------------|---------------------|---------------------|
+| AMERICAS        | East US             | Generally available |
+| AMERICAS        | East US 2           | Generally available |
+| AMERICAS        | North Central US    | Generally available |
+| AMERICAS        | South Central US    | Generally available |
+| AMERICAS        | Central US          | Generally available |
+| AMERICAS        | West US             | Generally available |
+| AMERICAS        | West US 2           | Generally available |
+| AMERICAS        | Canada Central      | Limited capacity    |
+| AMERICAS        | Canada East         | Limited capacity    |
+| AMERICAS        | West Central US     | Limited capacity    |
+| APAC            | Australia East      | Generally available |
+| APAC            | Southeast Asia      | Generally available |
+| APAC            | Japan East          | Generally available |
+| APAC            | Japan West          | Generally available |
+| APAC            | Australia Southeast | Limited capacity    |
+| APAC            | East Asia           | Limited capacity    |
+| APAC            | India South         | Limited capacity    |
+| APAC            | India Central       | Limited capacity    |
+| EMEA            | West Europe         | Generally available |
+| EMEA            | North Europe        | Generally available |
+| EMEA            | UK South            | Limited capacity    |
+| EMEA            | UK West             | Limited capacity    |
+
+Deployment capacity in Limited capacity regions are extremely constrained. Requests for deployment are evaluated on a case-by-case basis. If you have a compelling business need for deployment in Limited capacity regions, you can file a support request to be added to the waitlist.
+
+![Map showing region availability](media/Commerce-Scale-Unit-Region-Availability.png "Map showing region availability")
 
 ## Initialize Retail Cloud Scale Unit as part of a new environment deployment
 
@@ -71,10 +103,10 @@ You can issue a re-deployment of the scale unit, without changing any components
 
 1. In LCS, on the environment details page, select **Environment features \> Retail**.
 2. On the setup deployment page, select the scale unit you would like to redeploy.
-3. On the scale unit's operation menu, select **Update**
-4. On the slider, on the drop-down for **Select version**, pick the option **Specify a version**
-5. On the text box under **Specify a version**, type in the version shown for your scale unit, shown besides the **Current version** label
-6. Click on **Update** button
+3. On the scale unit's operation menu, select **Update**.
+4. On the slider, on the drop-down for **Select version**, pick the option **Specify a version**.
+5. On the text box under **Specify a version**, type in the version shown for your scale unit, shown besides the **Current version** label.
+6. Click on **Update** button.
 
 You do not need to select **Update extensions**, even if you have applied extensions previously, since the last extension package applied to the scale unit is automatically picked when updating a scale unit.
 
@@ -112,9 +144,9 @@ This process should be first performed in a sandbox environment after a database
 
 Because the Cloud Scale Unit provides dedicated and isolated compute and storage resources from other components, it has its own channel database. This means the following precautions should be taken before migration:
 
-1. **Make sure that all shifts at the POS are closed.** After migration, you won't be able to close any shifts that were active during the migration process
+1. **Make sure that all shifts at the POS are closed.** After migration, you won't be able to close any shifts that were active during the migration process.
 2. **Make sure that all P-jobs have been successfully completed.** While the previous channel database is maintained and any transactional data will still be synced back to the headquarters, it is recommended that you run P-JOBs before you start.
-3. **Sign out of all POS devices.** POS operations are not supported during migration
+3. **Sign out of all POS devices.** POS operations are not supported during migration.
 
 Here is what occurs during the initialization period:
 

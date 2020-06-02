@@ -5,7 +5,7 @@ title: Finance and Operations apps data in Azure Data Lake
 description: This topic explains how to configure your Finance and Operations apps environment so that it has a data lake.
 author: MilindaV2
 manager: AnnBe
-ms.date: 03/30/2020
+ms.date: 05/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,8 +34,6 @@ ms.dyn365.ops.version: Platform Update 34
 # Finance and Operations apps data in Azure Data Lake
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 The **Export to Azure Data Lake** feature lets you configure your Finance and Operations apps environment so that it uses a data lake. After the configuration is completed, your data lake will reflect tables and entities from Finance and Operations apps.
 
