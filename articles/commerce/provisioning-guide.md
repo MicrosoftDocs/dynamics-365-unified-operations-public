@@ -197,7 +197,7 @@ To deploy the environment, follow these steps.
 
 1. Before you continue, make sure that the status of your environment is **Deployed**.
 
-### Initialize the Commerce Scale Unit (Cloud)
+### Initialize the Commerce Scale Unit (cloud)
 
 To initialize CSU, follow these steps.
 
@@ -255,7 +255,7 @@ To continue the process of provisioning and configuring your Commerce preview en
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
-[Commerce Scale Unit (Cloud)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+[Commerce Scale Unit (cloud)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 
 [Microsoft Azure portal](https://azure.microsoft.com/features/azure-portal)
 
