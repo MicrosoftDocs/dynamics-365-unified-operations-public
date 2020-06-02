@@ -96,7 +96,7 @@ The summarized payment date is used only when the **Period** field is set to **T
 
 The filter options can still be defined for the payment proposal. If a filter is defined, the filter criteria aren't shown on the wizard page. However, they can be viewed by reopening the filter.
 
-The remaining fields for the proposal work just as they work for the payment proposal in the vendor payment journal. For information about the other fields, see Create vendor payments by using payment proposal.
+The remaining fields for the proposal work just as they work for the payment proposal in the vendor payment journal. For information about the other fields, see [Create vendor payments by using payment proposal](create-vendor-payments-payment-proposal.md).
 
 > [!NOTE]
 > Some country/region-specific fields, and some Public sector fields, aren't yet available in vendor payment proposal automations.
@@ -127,7 +127,7 @@ After the payments are created, you can view the payment amounts in the journal.
 
 The payment journal can be deleted after it's created through the process automation. If a payment is completely deleted, the following events occur:
 
-- The status of the process automation view for the week remains **Completed**.
+- The status of the process automation for the week remains **Completed**.
 - The process removes the payment totals, and the **View payments** link is replaced with a **View results** button.
 - When you view the results, you receive a message that states that the original journal was deleted.
 
@@ -149,5 +149,5 @@ The following duties and privileges have been added for vendor payment proposal 
 |-----------------------------------|----------------------------------------------------------------------------|------------|
 | Maintain schedule series          | Accounts payable manager                                                   | This duty grants the rights to create and maintain the payment proposal automation series and occurrences through the following privileges:<ul><li>Maintain schedule occurrences</li><li>Maintain schedule series</li><li>ProcessScheduleOccurrenceListMaintain</li><li>View the occurrences weekly view</li></ul> |
 | Inquiry into schedule occurrences | Accounts payable payment clerk, Accounts payable Centralized payment clerk | This duty grants the rights to view the payment proposal automation occurrences through the following privileges:<ul><li>View schedule occurrences</li><li>View the occurrence weekly view</li></ul> |
-| Inquire into schedule series      | None                                                                       | This duty grants the rights to view the setup of series and occurrences through the following privileges:<ul><li>View schedule occurrences</li><li>View the occurrences list page</li><li>View the occurrence weekly view</li></ul>|
+| Inquire into schedule series      | None                                                                       | This duty grants the rights to view the settings of the series and occurrences through the following privileges:<ul><li>View schedule occurrences</li><li>View the occurrences list page</li><li>View the occurrence weekly view</li></ul>|
 | Maintain schedule occurrences     | None                                                                       | This duty grants the rights to create and maintain an occurrence through the following privileges:<ul><li>Maintain schedule occurrences</li><li>View the occurrence weekly view</li></ul> |
