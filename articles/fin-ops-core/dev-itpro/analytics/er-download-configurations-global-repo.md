@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to download [Electronic reporting (ER)](general-electronic-reporting.md) [configurations](general-electronic-reporting.md#Configuration) from Gloabl repository of [Configuration service](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
+This topic explains how to download [Electronic reporting (ER) configurations](general-electronic-reporting.md#Configuration) from the Global repository of configuration service. For more information, see [Microsoft Dynamics 365 for Finance and Operations - Regulatory Services, Configuration service](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
 
 ## Open configurations repository
 
@@ -44,7 +44,7 @@ This topic explains how to download [Electronic reporting (ER)](general-electron
     - Electronic reporting functional consultant
     - System administrator
 
-2. Go to **Organization administration** /> **Workspaces** /> **Electronic reporting**.
+2. Go to **Organization administration > Workspaces > Electronic reporting**.
 3. In the **Configuration providers** section, select the **Microsoft** tile.
 3. On the **Microsoft** tile, select **Repositories**.
 
@@ -66,7 +66,7 @@ This topic explains how to download [Electronic reporting (ER)](general-electron
 
 1. On the **Configuration repositories** page, in the configurations tree, select the ER configuration that you want.
 2. On the **Versions** FastTab, select the required version of the selected ER configuration.
-3. Select **Import** to download the selected version from Gloabl repository to the current Finance instance.
+3. Select **Import** to download the selected version from Global repository to the current Finance instance.
 
     > [!NOTE]
     > The **Import** button is unavailable for ER configuration versions that are already present in the current Finance instance.
@@ -75,12 +75,12 @@ This topic explains how to download [Electronic reporting (ER)](general-electron
 
 ## Import filtered configurations
 
-1. On the **Configuration repositories** page, in the configurations tree, expand the **Filter** FasTab.
-2. In the **Tags** grid, add desire tags.
+1. On the **Configuration repositories** page, in the configurations tree, expand the **Filter** FastTab.
+2. In the **Tags** grid, add any tags that are needed.
 3. In the **Country/region applicability** field, select the appropriate country/region codes, and then select  **Apply filter**.
 
     > [!NOTE]
-    > The **Configurations** FastTab shows all the configuratons that satisfy the specified selection conditions.
+    > The **Configurations** FastTab shows all the configurations that satisfy the specified selection conditions.
 
 4. On the **Configurations** FastTab, select **Import** to download the filtered configurations from the Global repository to the current instance.
 5. On the **Configurations** FastTab, select **Reset filter** to clean up the specified selection conditions.
@@ -88,10 +88,10 @@ This topic explains how to download [Electronic reporting (ER)](general-electron
     ![Configuration repository page](./media/er-download-configurations-global-repo-filtered-configurations.png)
 
 > [!NOTE]
-> Depending on the ER settings, configurations are validated after they are imported. You might be notified about any inconsistency issues that are discovered. Before you can use the imported configuration version, you must resolve the issues. For more information, see the list of related articles for this topic.
+> Depending on the ER settings, configurations are validated after they are imported. You might be notified about any inconsistency issues that are discovered. Before you can use the imported configuration version, you must resolve the issues. For more information, see the list of related resources for this topic.
 
 > [!NOTE]
-> ER configuratoins might be configured as dependent on other configurations. Thefore, along with a selected configuration, other configurations might be automatically imported. For more about configuration dependencies, see [Define the dependency of ER configurations on other components](tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md).
+> ER configurations can be configured as being dependent on other configurations. Therefore, along with a selected configuration, other configurations might be automatically imported. For more about configuration dependencies, see [Define the dependency of ER configurations on other components](tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md).
 
 ## Additional resources
 
