@@ -93,10 +93,7 @@ An overview of each path is given below:
 
     The script will run a database connection test to check that the information you provide is valid.
 
-1.  In the VHD, go to C:\\AOSService\\PackagesLocalDirectory\\Bin\\CustomDeployablePackage and copy the MajorVersionDataUpgrade zip file.
-
-    >[!NOTE]
-    > If you have not applied updates to your VHD, then obtain the MajorVersionDataUpgrade.zip file from LCS instead. You can find it under the software deployable package tab in the shared asset library (i.e. AX2012DataUpgrade-10-0-8).
+1.  Download the MajorVersionDataUpgrade.zip file from LCS. You can find it under the software deployable package tab in the shared asset library (i.e. AX2012DataUpgrade-10-0-8).
 
 1.  Paste the file wherever you want and unzip it. For example: c:\\D365FFOUpgrade\\
 
@@ -112,7 +109,7 @@ An overview of each path is given below:
 
 1.  When the upgrade process has finished successfully, back up the newly upgraded database. If you have customizations from ISVs or VARs, check if you have to run some post data upgrade scripts.
 
-1. Restore the database into your on-premises environment's SQL Server, with a different name from the production one (for example, AXDBupgraded).
+1. Restore the database into your on-premises environment's SQL Server, with a different name from the AX2012 (for example, AXDBupgraded). The restored database will need to be configured. Follow the steps in [Configure the Finance and Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
 
 1. Deploy a new D365 for Finance and Operations On-premise environment.
 
@@ -124,15 +121,17 @@ An overview of each path is given below:
 
         1.  Use this file to create a new database (typically AXDB) using the restore backup option from SQL server. For more information, see [Restore a Database Backup Using SSMS](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017).
         
-        1.  The database will need to be configured. Follow the steps in [Configure the Finance and Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
+        1.  The demo database will need to be configured. Follow the steps in [Configure the Finance and Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
 
-        1.  In LCS, set up a new environment and deploy it with version 10.0.x (Redeploy). For more information, see [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12.md). When you deploy, the name of the database that you specify should be the one created in the step above (typically AXDB).
+        1.  In LCS, set up a new environment and deploy it with version 10.0.x. For more information, see [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12.md). When you deploy, the name of the database that you specify should be the one created in the step above (typically AXDB).
 
         1.  Apply your own customizations as well as ISV/VAR modules, to your newly created 10.0.x environment. Otherwise, when the environment initially syncs with the database it will delete any customization or extensions related data.
 
         1.  Shut-down on-premises AOS, BI, and MR servers, or stop the services from the Service Fabric portal (Deactivate (Restart)).
 
         1.  Rename or delete the demo database (typically AXDB) used in the deploy and then rename your new database (typically AXDBupgraded) to the name that the demo database had (typically AXDB).
+        
+        1. The renamed database will need to be configured. Follow the steps in [Configure the Finance and Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
 
         1.  Start on-premises AOS, BI, and MR servers, or start the services from the Service Fabric portal (Activate).
 
@@ -169,10 +168,7 @@ An overview of each path is given below:
     >
     > - When you install the Certificate Authority in the OneBox, make sure you use the FQDN or IP for connecting to the database that appears there. If you can't access it by using the domain name because it doesn't point to that server, edit your hosts file and add the FQDN and the IP it should resolve to.
 
-1.  In the VHD, go to C:\\AOSService\\PackagesLocalDirectory\\Bin\\CustomDeployablePackage and copy the MajorVersionDataUpgrade zip file.
-
-    >[!NOTE]
-    > If you have not applied updates to your VHD, then obtain the MajorVersionDataUpgrade.zip file from LCS instead. You can find it under the software deployable package tab in the shared asset library (i.e. AX2012DataUpgrade-10-0-8).
+1.  Download the MajorVersionDataUpgrade.zip file from LCS. You can find it under the software deployable package tab in the shared asset library (i.e. AX2012DataUpgrade-10-0-8).
 
 1.  Paste the file wherever you want and unzip it. For example: c:\\D365FFOUpgrade\\
 
@@ -188,6 +184,8 @@ An overview of each path is given below:
 
 1.  If you have customizations from ISVs or VARs, verify if you have to run some post data upgrade scripts.
 
+1. Configure your upgraded database for Dynamics 365 for Finance and Operations by following the steps under [Configure the Finance + Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
+
 1. Deploy a new D365 for Finance and Operations On-premise environment.
 
     1. If you have customizations:
@@ -198,7 +196,7 @@ An overview of each path is given below:
 
         1.  Use this file to create a new database (typically AXDB) using the restore backup option from SQL server. For more information, see [Restore a Database Backup Using SSMS](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2016).
 
-        1.  The database will need to be configured. Follow the steps under [Configure the Finance + Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
+        1.  The demo database will need to be configured. Follow the steps under [Configure the Finance + Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
 
         1.  In LCS, set up a new environment and deploy it with version 10.0.x (Redeploy). For more information, see [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12.md). When you deploy, the database that you should specify should be the one you configured in the step above (typically AXDB).
 
@@ -221,7 +219,15 @@ An overview of each path is given below:
 
 ### Configuring existing users
 
-If you followed either of the procedures above, you will be able to login with the Administrator user you specified in LCS. The rest of your users however will not be able to login as they haven't been configured for the new system. Execute a Select statement against your USERINFO table and take note of the value in the NETWORKDOMAIN fied for the Admin user. Set the NETWORKDOMAIN field of all interactive users for which you want to enable logging in to the same value that the Admin user has (i.e. https://adfs.contoso.com/adfs or http://adfs.contoso.com/adfs/services/trust). The NETWORKALIAS column will also need to be modified. In Dynamics 365 for Finance and Operation we require that this field be set to the users email address (i.e. testuser@contoso.com). 
+If you followed either of the procedures above, you will be able to login with the Administrator user you specified in LCS. The rest of your users however will not be able to login as they haven't been configured for the new system. Execute a Select statement against your USERINFO table and take note of the value in the NETWORKDOMAIN fied for the Admin user. Set the NETWORKDOMAIN field of all interactive users for which you want to enable logging in to the same value that the Admin user has (i.e. https://adfs.contoso.com/adfs or http://adfs.contoso.com/adfs/services/trust). The NETWORKALIAS column will also need to be modified. In Dynamics 365 for Finance and Operation we require that this field be set to the users email address (i.e. testuser@contoso.com).
+
+### Resetting VHD Database (Optional)
+
+If you have run the Configure-On-Premises-Upgrade.ps1 script. Run the following command to reset your database configuration to default:
+
+```powershell
+.\Configure-OnPremUpgrade.ps1 -DatabaseName 'AxDB' -DatabaseServer 'localhost' -DatabaseUser 'axdbadmin' -DatabasePassword 'AOSWebSite@123'
+```
 
 ## Appendix A
 
@@ -236,7 +242,7 @@ If you want to pass an additional parameter like DatabaseServer, or DatabaseUser
 
 The parameters that can be passed to the script are:
 
--   **-DatabaseName** - Database name that you want to upgrade.
+-   **-DatabaseName** - Name of the database you want to upgrade.
 
 -   **-DatabaseServer** - Database server containing Finance and Operations (on-premises) database.
 
