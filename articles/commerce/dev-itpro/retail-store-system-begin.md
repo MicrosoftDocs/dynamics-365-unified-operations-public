@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Commerce Scale Unit (Self-hosted)
-description: This topic describes the Commerce Scale Unit (Self-hosted) and when to use it.
+title: Commerce Scale Unit (self-hosted)
+description: This topic describes the Commerce Scale Unit (self-hosted) and when to use it.
 author: athinesh99
 manager: AnnBe
 ms.date: 06/02/2020
