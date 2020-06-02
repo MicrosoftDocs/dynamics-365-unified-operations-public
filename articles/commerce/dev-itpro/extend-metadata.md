@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Extend the default Cloud Scale Unit metadata controller
+title: Extend the default Commerce Scale Unit metadata controller
 description: This article provides code to extend the CommerceModelFactory class.
 author: kfend
 manager: AnnBe
