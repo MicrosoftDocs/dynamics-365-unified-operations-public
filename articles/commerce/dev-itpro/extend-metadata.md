@@ -5,7 +5,7 @@ title: Extend the default Cloud Scale Unit metadata controller
 description: This article provides code to extend the CommerceModelFactory class.
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 06/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
