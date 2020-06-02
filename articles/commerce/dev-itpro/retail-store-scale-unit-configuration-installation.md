@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Configure and install Commerce Scale Unit (Self-hosted)
-description: This topic explains how you can use self-service to configure Commerce Scale Unit (Self-hosted) in Commerce Headquarters, download it, and install it on one or more computers in a brick-and-mortar store.
+title: Configure and install Commerce Scale Unit (self-hosted)
+description: This topic explains how you can use self-service to configure Commerce Scale Unit (self-hosted) in Commerce Headquarters, download it, and install it on one or more computers in a brick-and-mortar store.
 author: jashanno
 manager: AnnBe
-ms.date: 01/24/2020
+ms.date: 06/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Configure and install Commerce Scale Unit (Self-hosted)
+# Configure and install Commerce Scale Unit (self-hosted)
 
 [!include [banner](../includes/banner.md)]
 
