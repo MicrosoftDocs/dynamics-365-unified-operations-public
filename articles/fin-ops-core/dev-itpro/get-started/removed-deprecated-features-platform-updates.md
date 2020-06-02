@@ -5,7 +5,7 @@ title: Removed or deprecated platform features
 description: This topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 04/17/2020
+ms.date: 06/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -55,6 +55,16 @@ This list is intended to help you consider these removals and deprecations for y
 | **Status**                         | A compiler warning is introduced in platform updates for version 10.0.12 of Finance and Operations apps. |
 
 ## Platform updates for version 10.0.11 of Finance and Operations apps
+
+### Explicit whitelisting for self-service environments
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The process for IP whitelisting has changed. Self-service no longer supports IP whitelisting. |
+| **Replaced by another feature?**   | For more information, see [Configuring Azure Active Directory Conditional Access](https://docs.microsoft.com/appcenter/general/configuring-aad-conditional-access).|
+| **Product areas affected**         | Security |
+| **Deployment option**              | Cloud |
+| **Status**                         | **Deprecated:** This feature is fully-deprecated for self-service deployments. |
 
 ### Visual Studio 2015
 
