@@ -1,8 +1,8 @@
-﻿- name: Dynamics 365 Commerce
+- name: Dynamics 365 Commerce
   items:
   - name: Dynamics 365 Commerce
     items:
-    - name: Dynamics 365 Commerce
+    - name: Dynamics 365 Commerce home page
       href: index.md
     - name: Get started
       items:
@@ -79,7 +79,7 @@
         - name: Phased Rollout (N-1) installation, configuration, and cutover
           href: dev-itpro/n-1-installation-configuration.md
         - name: Upgrade the Retail channel extension to the latest Retail SDK
-          href: dev-itpro/retailSDK-update.md
+          href: dev-itpro/RetailSDK-update.md
       - name: What's new or changed
         items:
         - name: What's new or changed in Finance and Operations apps
@@ -88,6 +88,8 @@
           items:
           - name: What's new or changed in Commerce home page
             href: get-started/whats-new-home-page.md
+          - name: Commerce 10.0.12 (August 2020)
+            href: get-started/whats-new-commerce-10-0-12.md
           - name: Commerce 10.0.11 (July 2020)
             href: get-started/whats-new-commerce-10-0-11.md
           - name: Commerce 10.0.10 (May 2020)
@@ -499,7 +501,9 @@
           - name: Adyen payment connector
             href: dev-itpro/adyen-connector.md
           - name: Saving online payment instruments with the Adyen connector
-            href: dev-itpro/adyen-connector-listpi.md
+            href: dev-itpro/adyen-connector-listPI.md
+          - name: Strong Customer Authentication (SCA) using the Adyen connector
+            href: adyen_redirect.md
           - name: Seamless offline switch for gift card and credit memo operations
             href: dev-itpro/seamless-offline-improvements.md
           - name: Set up pay invoice scenarios 
@@ -509,7 +513,9 @@
           - name: Omni-channel payments overview 
             href: omni-channel-payments.md
           - name: Payments FAQ 
-            href: dev-itpro/payments-retail.md     
+            href: dev-itpro/payments-retail.md
+        - name: Manage Bing Maps for your organization
+          href: dev-itpro/manage-bing-maps.md
     - name: Merchandizing your products and services  
       items:
       - name: Categories, products, and assortments 
@@ -600,7 +606,7 @@
         items:
         - name:	Product recommendations overview	
           href:	product-recommendations.md	
-        - name:	Enable ADLS in a Dynamics 365 Commerce environment	
+        - name:	Enable Azure Data Lake Storage in a Dynamics 365 Commerce environment	
           href:	enable-ADLS-environment.md	
         - name:	Enable product recommendations
           href:	enable-product-recommendations.md
@@ -642,8 +648,8 @@
           items:
           - name: Store inventory management  
             href: work-with-store-inventory.md
-          - name: Working with serialized items 
-            href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md?toc=/dynamics365/commerce/toc.json
+          - name: Configure inventory buffers and inventory levels
+            href: inventory-buffers-levels.md
           - name: Work with serialized items in POS
             href: pos-serialized-items.md
           - name: Push products from distribution center to store using buyer's push 
@@ -820,10 +826,14 @@
           href: authoring-home-overview.md
         - name: Manage users and roles
           href: manage-ecommerce-users-roles.md
+        - name: Apply inventory settings
+          href: inventory-settings.md
         - name: Search engine optimization (SEO) considerations for your site
           href: search-engine-optimization-considerations.md
         - name: Manage Content Security Policy (CSP)
           href: manage-csp.md
+        - name: Opt out of web activity event collection
+          href: web-activity-opt-out.md
       - name: Manage your site content 
         items:
         - name: Ways to add content
@@ -842,6 +852,8 @@
             href: select-site-theme.md
           - name: Work with CSS override files
             href: css-override-files.md
+          - name: Work with style presets
+            href: style-presets.md
           - name: Add a favicon
             href: add-favicon.md
           - name: Add a welcome message
@@ -926,6 +938,10 @@
           items:
           - name: Container module
             href: add-container-module.md
+          - name: Accordion module
+            href: add-accordion.md
+          - name: Tab module
+            href: add-tab.md
         - name: Marketing modules
           items:
           - name: Promo banner module 
@@ -972,6 +988,10 @@
           items:
           - name: Product collection modules
             href: product-collection-module-overview.md
+        - name: Navigation modules
+          items:
+          - name: Breadcrumb module
+            href: add-breadcrumb.md
       - name: Search
         items:
         - name: Default category landing page and search results page
@@ -1042,6 +1062,10 @@
           href: localizations/emea-fra-cash-registers.md
         - name: Deployment guidelines for cash registers
           href: localizations/emea-fra-deployment.md
+      - name: Germany
+        items:
+        - name: Fiscal registration service integration sample for Germany
+          href: localizations/emea-deu-fi-sample.md
       - name: India
         items:
         - name: Goods and Services Tax (GST) integration for cash registers
@@ -1970,7 +1994,9 @@
             href: e-commerce-extensibility/create-theme.md
           - name: Configure theme settings
             href: e-commerce-extensibility/configure-theme-settings.md
-          - name: Extend a theme
+          - name: Extend a theme to add module extensions
+            href: e-commerce-extensibility/theme-module-extensions.md
+          - name: Extend a theme from a base theme
             href: e-commerce-extensibility/extend-theme.md
         - name: Inject script
           items:
@@ -2090,8 +2116,6 @@
           href: dev-itpro/add-customer-preference-channel.md
         - name: Manage secrets for Retail channels
           href: dev-itpro/manage-secrets.md
-        - name: Add properties to sales orders
-          href: dev-itpro/add-properties-sales-order.md
         - name: CRT extensibility and triggers
           href: dev-itpro/commerce-runtime-extensibility-trigger.md
         - name: Block transactions using triggers
@@ -2118,6 +2142,8 @@
           href: dev-itpro/async-commerce-extension.md
         - name: Pre-extended columns in the channel database
           href: dev-itpro/extended-columns.md
+        - name: Extend Commerce Data Exchange - Real-time Service
+          href: dev-itpro/extend-commerce-data-exchange.md
       - name: Payment connector extensibility
         items:
         - name: Create a payment integration for a payment terminal

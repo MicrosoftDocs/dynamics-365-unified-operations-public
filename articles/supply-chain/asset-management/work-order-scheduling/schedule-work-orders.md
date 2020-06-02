@@ -142,4 +142,4 @@ To view and work with the gantt chart:
     - The gantt chart updates to show the scheduled work orders that match your settings. Each work order is represented by a blue rectangle.
     - To reschedule a displayed work order, select and then drag it to the appropriate new date and time.
 
-1. If you made any changes, select **Save** on the action pane to save them.
+1. If you made any changes, select **Save** on the Action Pane to save them.
