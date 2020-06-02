@@ -5,7 +5,7 @@ title: Extend a Commerce Scale Unit OData controller
 description: This topic provides code that extends the CustomController class.
 author: kfend
 manager: AnnBe
-ms.date: 11/01/2018
+ms.date: 06/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
