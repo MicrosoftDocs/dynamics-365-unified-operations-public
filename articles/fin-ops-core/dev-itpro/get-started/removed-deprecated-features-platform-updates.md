@@ -5,7 +5,7 @@ title: Removed or deprecated platform features
 description: This topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
 author: sericks007
 manager: AnnBe
-ms.date: 05/27/2020
+ms.date: 06/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -52,7 +52,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Please see [Configuring Azure Active Directory Conditional Access](https://docs.microsoft.com/appcenter/general/configuring-aad-conditional-access) for more details.|
 | **Product areas affected**         | Security |
 | **Deployment option**              | Cloud |
-| **Status**                         | **Deprecated:** This feature is fully-deprecated in self-service deployment. |
+| **Status**                         | **Deprecated:** This feature is fully-deprecated for self-service deployments. |
 
 ### Field groups containing invalid field references
 
