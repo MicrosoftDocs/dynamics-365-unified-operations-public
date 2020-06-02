@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Cloud Scale Unit customer and consumer APIs
+title: Commerce Scale Unit customer and consumer APIs
 description: This topic provides an overview of the APIs that are available across various roles, and that can be used by various clients. The focus is on customer-facing application clients and eCommerce clients.
 author: mugunthanm
 manager: AnnBe
-ms.date: 11/04/2019
+ms.date: 06/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
