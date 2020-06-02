@@ -72,6 +72,9 @@ After your system is prepared as described in the previous section, you should f
 1. On the Action Pane, on the **Plan** tab, in the **Order settings** group, select **Default order settings** to open the **Default order settings** page for the selected product. On the **Purchase order** FastTab, view the value of the **Purchase lead time** field. If no item coverage lead-time override is defined, Planning Optimization will use this value when it selects trade agreements where the **Disregard lead time** option is set to **Yes**. Therefore, you should adjust this value as you require.
 1. Repeat this procedure for each relevant product.
 
+> [!NOTE]
+> Currency on the purchase trade agreement line must match the currency of the selected vendor. Master planning will only include information from purchase trade agreement lines where the currency match the currency on the vendor.
+
 ## Examples of how Planning Optimization finds vendor and lead times
 
 The following table provides examples that show how various settings for a released product and its associated purchase trade agreements affect the values that are found for the resulting planned purchase order. The **bold** values in the two rightmost columns are the values that are selected by Planning Optimization. The ***bold and italic*** values in the other columns are the settings that produced those resulting values for each row.
