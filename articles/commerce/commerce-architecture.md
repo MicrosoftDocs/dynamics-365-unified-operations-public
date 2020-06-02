@@ -5,7 +5,7 @@ title: Dynamics 365 Commerce architecture overview
 description: This topic provides an overview of all components in the Microsoft Dynamics 365 Commerce ecosystem, including integration points to the suite of Dynamics 365 products.
 author: samjarawan
 manager: AnnBe
-ms.date: 04/09/2020
+ms.date: 06/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -108,15 +108,15 @@ The Dynamics 365 Commerce application, which is often referred to as the Commerc
 
 Retailers are distributed organizations, where the business topography can be represented as a hub and spoke model. Dynamics 365 Commerce supports this model by having head-office capabilities (the hub), and also many distributed channel components (the spokes) that can be deployed and self-managed in-store or in nearby Microsoft-managed Azure datacenters. The spokes are referred to as Scale Units, because they represent physical isolation (a function of scale) and an atomic unit of update.
 
-To facilitate cloud and edge computing scenarios, a Commerce Scale Unit is available both as a software as a service (SaaS) component that is managed by Microsoft (Commerce Scale Unit in the Cloud) and as a self-managed component that can be deployed locally (Self-hosted). A single environment can have a mixture of Commerce Scale Units (Cloud and Self-hosted). Therefore, organizations can tune their investments in operational overhead on a store-by-store basis by implementing network redundancy for poor connectivity. For more information, see [Select an in-store topology](https://docs.microsoft.com/dynamics365/retail/dev-itpro/retail-in-store-topology).
+To facilitate cloud and edge computing scenarios, a Commerce Scale Unit is available both as a software as a service (SaaS) component that is managed by Microsoft (Commerce Scale Unit in the Cloud) and as a self-managed component that can be deployed locally (self-hosted). A single environment can have a mixture of Commerce Scale Units (cloud and self-hosted). Therefore, organizations can tune their investments in operational overhead on a store-by-store basis by implementing network redundancy for poor connectivity. For more information, see [Select an in-store topology](https://docs.microsoft.com/dynamics365/retail/dev-itpro/retail-in-store-topology).
 
-#### Commerce Scale Units (Cloud)
+#### Commerce Scale Units (cloud)
 
 Multiple Commerce Scale Units can be associated with each environment. Each Commerce Scale Unit can be independently serviced and updated, and each can serve one or more channels across one or more legal entities. Each Commerce Scale Unit can be deployed to any of the supported Azure regions, and multiple Commerce Scale Units can be deployed to the same region. The independent nature of each Commerce Scale Unit allows for phased rollout of updates across a collection of channels.
 
-#### Commerce Scale Units (Self-hosted)
+#### Commerce Scale Units (self-hosted)
 
-The ability to bring the Commerce Scale Units to edge computing helps accommodate scenarios where internet connectivity is poor or unreliable. For retailers, this approach typically means having a physical footprint in their stores. By using a Commerce Scale Unit (Self-hosted), retailers can bring the same business logic and capabilities that run in the Azure cloud into their stores. In these cases, although in-store connectivity is presumably more reliable, self-management of these components will involve additional overhead in terms of monitoring and updates. For more information, see [Select an in-store topology](https://docs.microsoft.com/dynamics365/retail/dev-itpro/retail-in-store-topology).
+The ability to bring the Commerce Scale Units to edge computing helps accommodate scenarios where internet connectivity is poor or unreliable. For retailers, this approach typically means having a physical footprint in their stores. By using a Commerce Scale Unit (self-hosted), retailers can bring the same business logic and capabilities that run in the Azure cloud into their stores. In these cases, although in-store connectivity is presumably more reliable, self-management of these components will involve additional overhead in terms of monitoring and updates. For more information, see [Select an in-store topology](https://docs.microsoft.com/dynamics365/retail/dev-itpro/retail-in-store-topology).
 
 ### E-commerce platform
 
