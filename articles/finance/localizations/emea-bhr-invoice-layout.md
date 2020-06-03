@@ -78,4 +78,10 @@ In **Accounts receivable** > **Setup** > **Forms** > **Forms setup**, in **Gener
 - **Customer invoice** select **Sales invoice (Excel) (BH)**;
 - **Free text invoice** select **Free text invoice (Excel) (BH)**
 
+![Print management configuration](media/emea-bhr-print_management.jpg)
+
+### Sales tax specification
+In **Accounts receivable** > **Setup** > **Forms** > **Forms setup**, in **General** FastTab, choose **Registration and company currencies** value for **Sales tax specification** field.
+
+![Sales tax specification](media/emea-bhr-tax-spec.jpg)
 
