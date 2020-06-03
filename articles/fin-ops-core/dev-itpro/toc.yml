@@ -709,23 +709,23 @@
           - name: X++ data selection and manipulation
             items:
             - name: X++ data selection and manipulation overview
-              href: xpp-data/xpp-data-home-page.md
+              href: dev-ref/xpp-data/xpp-data-home-page.md
             - name: Select statement
-              href: xpp-data/xpp-select-statement.md
+              href: dev-ref/xpp-data/xpp-select-statement.md
             - name: Select data
-              href: xpp-data/xpp-select.md
+              href: dev-ref/xpp-data/xpp-select.md
             - name: Insert data
-              href: xpp-data/xpp-insert.md
+              href: dev-ref/xpp-data/xpp-insert.md
             - name: Update data
-              href: xpp-data/xpp-update.md
+              href: dev-ref/xpp-data/xpp-update.md
             - name: Delete data
-              href: xpp-data/xpp-delete.md
+              href: dev-ref/xpp-data/xpp-delete.md
             - name: Writing a select statement as an expression
-              href: xpp-data/xpp-select-expression.md
+              href: dev-ref/xpp-data/xpp-select-expression.md
             - name: X++ transactional integrity
-              href: xpp-data/xpp-transaction.md
+              href: dev-ref/xpp-data/xpp-transaction.md
             - name: Speeding up SQL operations
-              href: xpp-data/xpp-data-perf.md
+              href: dev-ref/xpp-data/xpp-data-perf.md
             - name: Data access using the SysDa API
               href: dev-ref/sysda.md
           - name: X++ macros
