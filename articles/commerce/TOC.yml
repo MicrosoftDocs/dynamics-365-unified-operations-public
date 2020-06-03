@@ -214,7 +214,7 @@
         items:
         - name: Synchronize self-service installers in Dynamics 365 Commerce
           href: dev-itpro/Synchronize-installers.md
-        - name: Commerce Scale Unit
+        - name: Commerce Scale Unit (self-hosted)
           href: dev-itpro/retail-store-system-begin.md
         - name: Configure and install Commerce Scale Unit
           href: dev-itpro/retail-store-scale-unit-configuration-installation.md
