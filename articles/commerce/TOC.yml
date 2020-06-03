@@ -216,7 +216,7 @@
           href: dev-itpro/Synchronize-installers.md
         - name: Commerce Scale Unit (self-hosted)
           href: dev-itpro/retail-store-system-begin.md
-        - name: Configure and install Commerce Scale Unit
+        - name: Configure and install Commerce Scale Unit (self-hosted)
           href: dev-itpro/retail-store-scale-unit-configuration-installation.md
         - name: Modern POS configuration and installation
           href: retail-modern-pos-device-activation.md
@@ -2094,9 +2094,9 @@
         items:
         - name: Extend a Commerce Scale Unit OData controller
           href: dev-itpro/extend-retail-server-odata-controller.md
-        - name: Retail Server customer and consumer APIs
+        - name: Commerce Scale Unit customer and consumer APIs
           href: dev-itpro/retail-server-customer-consumer-api.md
-        - name: Extend the default Retail Server metadata controller
+        - name: Extend the default Commerce Scale Unit metadata controller
           href: dev-itpro/extend-metadata.md
         - name: Call the CRT service in offline mode
           href: dev-itpro/call-crt-service-offline.md
