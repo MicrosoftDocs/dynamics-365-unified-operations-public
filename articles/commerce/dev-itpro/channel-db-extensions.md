@@ -181,6 +181,7 @@ In this scenario we will explain how to create a new table and add it to the cha
     [OPENTIME] [int] NOT NULL DEFAULT ((0)),
     [CLOSINGTIME] [int] NOT NULL DEFAULT ((0)),
     [RETAILSTORETABLE] [bigint] NOT NULL DEFAULT ((0)),
+    [REPLICATIONCOUNTERFROMORIGIN] [int] IDENTITY(1,1) NOT NULL,
     CONSTRAINT [I_CONTOSORETAILSTOREHOURSTABLE_RECID] PRIMARY KEY CLUSTERED
     (
         [RECID] ASC
@@ -191,6 +192,9 @@ In this scenario we will explain how to create a new table and add it to the cha
     GO
     GRANT SELECT, INSERT, UPDATE, DELETE ON OBJECT::[ext].[CONTOSORETAILSTOREHOURSTABLE] TO [DataSyncUsersRole]
     GO
+
+> [!NOTE]
+> If the new extension table need to be pulled to Retail headquarters using Commerce Data exchange (CDX) then the extension table must include the REPLICATIONCOUNTERFROMORIGIN identity column ([REPLICATIONCOUNTERFROMORIGIN] [int] IDENTITY(1,1) NOT NULL,), this is required for CDX pull job. REPLICATIONCOUNTERFROMORIGIN is not required if the data is pushed from Retail headquarters to channel database, needed only if the data is pulled from channel database to Retail headquarters.
 
 ## Extending an existing table
 
