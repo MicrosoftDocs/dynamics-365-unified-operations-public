@@ -1,6 +1,4 @@
----
-title: Online invoicing system
----
+# Online invoicing system
 
 The National Tax and Customs Administration of Hungary has announced that,
 starting July 1, 2018, companies in Hungary are required to supply data of their
@@ -20,8 +18,7 @@ The topic includes information about how to complete the following tasks:
 
 -   Work with EM functionality for RTIR.
 
-\#\# Import ER configurations
-=============================
+## Import ER configurations
 
 To prepare your Microsoft Dynamics 365 Finance application for RTIR, you must
 import the following ER configurations.
@@ -51,8 +48,7 @@ For more information about how to download ER configurations from Microsoft
 Dynamics Lifecycle Services (LCS), see Download Electronic reporting
 configurations from Lifecycle Services.
 
-\#\# Set up application-specific parameters
-===========================================
+## Set up application-specific parameters
 
 The format that is used to report invoice data to the Hungarian Online Invoicing
 System requires specific values from enumerated lists for some elements (for
@@ -60,7 +56,7 @@ example, units of measure or line expression indicators). For these elements,
 before you start to use RTIR, you must set up application-specific parameters
 that the **RTIR Invoice Data (HU)** format will use.
 
-\#\#\# Line expression indicator
+### Line expression indicator
 
 The **lineExpressionIndicator** element of the Boolean type must be reported to
 the Online invoicing system for invoice lines. For natural units of measure, a
@@ -106,8 +102,7 @@ the description on all invoices lines of all types, except invoices that are
 posted from a sales order. In that case, the **lineDescription** element will
 report the item.
 
-\#\#\# Unit of measure
-----------------------
+### Unit of measure
 
 For the **unitOfMeasure** element, one of the values from the enumerated list
 that is defined by the XSD schema of the **Invoice Data** format must be
@@ -264,8 +259,7 @@ For more information about the predefined setup that is included in the data
 entities in the package for RTIR, see [Appendix 1: Electronic messages setup for
 RTIR](appendix1) later in this topic.
 
-\#\# Set up EM for RTIR
-=======================
+## Set up EM for RTIR
 
 After the data entities are imported into the database, follow these steps to
 make the EM functionality ready to use.
@@ -419,8 +413,7 @@ make the EM functionality ready to use.
     security group is defined for the processing, only a system admin can see
     the processing on the **Electronic messages** page.
 
-\#\# \<a name="financialreasons"\>\</a\>Set up financial reasons for RTIR
-=========================================================================
+## \<a name="financialreasons"\>\</a\>Set up financial reasons for RTIR
 
 For each invoice that is reported to the Hungarian Online invoicing system, a
 specific operation type must be defined and transmitted in the
@@ -458,14 +451,12 @@ has a value of **Storno** value in **Operation** field. To submit a corrective
 invoice that has no reference to the original invoice, specify a financial
 reason that has a value of **Modify** in the **Operation** field.
 
-\#\# RTIR process
-=================
+## RTIR process
 
 Finance automatically runs actions that are included in the processing, based on
 the status of messages and message items.
 
-\#\#\# \<a name="additionalfields"\>\</a\>Additional fields for message items
------------------------------------------------------------------------------
+### \<a name="additionalfields"\>\</a\>Additional fields for message items
 
 All message items have additional fields that are required for processing. The
 system automatically fills in values for additional fields when it runs actions.
@@ -477,8 +468,7 @@ system automatically fills in values for additional fields when it runs actions.
 | Index                      | This additional field specifies the invoice position in the request (package of invoices). The value is reported in the **\<index\>** element in the **ManageInvoiceRequest.xml** file. This additional field is automatically filled in when the **Generate invoice request** action is run.                                                                                                                                          |
 | Last line reference number | For message items of the **Create** operation type, this additional field contains the last number (invoice line quantity) in the package. For message items of the **Modify** or **Storno** operation type, this additional field contains the **Index** value of the original invoice, as reported in the **\<modificationIndex\>** element. This additional field is automatically filled in when the **Evaluation** action is run. |
 
-\#\#\# Run Online invoicing processing
---------------------------------------
+### Run Online invoicing processing
 
 This procedure walks you through the RTIR process.
 
@@ -494,7 +484,7 @@ This procedure walks you through the RTIR process.
     specific action, select the **Choose action** check box, and then, in the
     **Action** field, select the action to run.
 
-\#\#\# Exclude invoice reporting in RTIR
+#\#\# Exclude invoice reporting in RTIR
 ----------------------------------------
 
 To exclude an invoice from processing in RTIR, follow these steps.
@@ -513,7 +503,7 @@ To exclude an invoice from processing in RTIR, follow these steps.
 4.  Define additional criteria by using the **Records to include** FastTab to
     specify which invoices must be excluded from further processing.
 
-**\#\#\# Postpone invoice reporting in RTIR**
+### Postpone invoice reporting in RTIR**
 
 To postpone reporting of an invoice in RTIR, follow these steps.
 
@@ -534,8 +524,7 @@ To postpone reporting of an invoice in RTIR, follow these steps.
 You can always reverse the status of **Excluded** or **Postponed** message items
 by selecting **Update to initial status**.
 
-\#\# \<a name="appendix1"\>\</a\>Appendix 1: Electronic message setup for RTIR
-==============================================================================
+## \<a name="appendix1"\>\</a\>Appendix 1: Electronic message setup for RTIR
 
 This appendix provides information about how the EM functionality should be set
 up so that it supports **Online invoicing** processing. Use this information to
@@ -546,8 +535,7 @@ it doesn't include all the data. We recommend that you use a package of data
 entities that provides a predefined setup of the functionality, and that
 includes all the data that is required to set up the processing for RTIR.
 
-\#\#\# Web service settings
----------------------------
+### Web service settings
 
 **Online Invoicing** processing use the following web services.
 
@@ -557,8 +545,7 @@ includes all the data that is required to set up the processing for RTIR.
 | Query invoice status | https://api-test.onlineszamla.nav.gov.hu/invoiceService/v2/queryTransactionStatus |
 | Token exchange       | https://api-test.onlineszamla.nav.gov.hu/invoiceService/v2/tokenExchange          |
 
-\#\#\# Additional fields
-------------------------
+### Additional fields
 
 For a full description of the additional fields for **Online invoicing**
 processing, see the [Message item additional fields](\#additionalfields) section
@@ -566,13 +553,12 @@ earlier in this topic.
 
 **Note:** These fields can't be changed by the user.
 
-\#\#\# Electronic message item types
-------------------------------------
+### Electronic message item types
 
 The setup of electronic messages for **Online Invoicing** processing uses one
 type of electronic message item: **Customer invoice**.
 
-### \#\#\# Electronic message item statuses
+### Electronic message item statuses
 
 **Online Invoicing** processing uses the following electronic message item
 statuses.
@@ -595,8 +581,7 @@ statuses.
 | Sent                        | The message item was sent to the Online invoicing system.                                            | Yes                                       |
 | Saved                       | The message item was saved in the Online invoicing system, but processing hasn't yet been completed. | Yes                                       |
 
-\#\#\# Electronic message statuses
-----------------------------------
+### Electronic message statuses
 
 **Online Invoicing** processing uses the following electronic message statuses.
 
@@ -624,15 +609,13 @@ statuses.
 | Token request submitted                 | The token request was submitted.                                                        | No                                        |
 | Transaction ID received                 | The invoice response that includes the transaction ID was received.                     | No                                        |
 
-\#\#\# Electronic message actions
----------------------------------
+### Electronic message actions
 
 For a full description of the electronic message actions of **OnlineInvoicing**
 processing, see the [Import a package of data entities that includes a
 predefined EM setup](\#import) section earlier in this topic.
 
-Electronic processing actions
------------------------------
+### Electronic processing actions
 
 **Online Invoicing** processing uses the following electronic processing
 actions.
