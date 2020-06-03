@@ -5,7 +5,7 @@ title: Cross-company data sharing
 description: This topic provides information about cross-company data sharing. Cross-company sharing is a mechanism for sharing reference and group data among companies in a Finance and Operations deployment.
 author: peakerbl
 manager: AnnBe
-ms.date: 06/02/2020
+ms.date: 06/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
