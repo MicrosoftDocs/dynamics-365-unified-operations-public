@@ -6,7 +6,7 @@ This functionality extends the current system directed picking with new System d
 
 Warehouse picking processes can therefore be further optimized as this feature identifies work orders that match the defined criteria and assigns those to the correct mobile device menu item, and consequently presents them to a worker based on a specific skillset, picking equipment, or any other requirement.
 
-_NOTE_: If different criteria is needed, multiple mobile device menu items will have to be used.
+*NOTE*: If different criteria is needed, multiple mobile device menu items will have to be used.
 
 ## Enable the Organization-wide system directed work sequencing feature
 
@@ -17,187 +17,189 @@ Before you can use this feature, it must be enabled on your system. Administrato
 
 ## Setup
 
-**Warehouse used:** 51
+- **Warehouse used**: *51*
+- **Data**: *Default Contoso data*
 
-**Data:** Default Contoso data
+> [!IMPORTANT]
+>Before releasing the orders to warehouse, ensure there is enough inventory on the pick locations for all the items on the orders.
+>
+>Default Contoso data should support this scenario. If you are not using demo date, review the Location Directive setting to be sure what picking locations are used for sales order picking. You can create manual movements, use replenishment, or any other flow if needed to adjust the inventory.
 
-## Mobile device menu item
+### Mobile device menu item
 
-1. Go to __Warehouse management__ > __Setup__ > __Mobile device__ > __Mobile device menu items__
+1. Go to **Warehouse management > Setup > Mobile device > Mobile device menu items**
 
-1. Select **Sales Picking – System**
-    1. Item is already created and can be used for this purpose.
-        - **Directed by** is set to __System directed__
+1. Select **Sales Picking – System** from the column on the left.
+    - Menu item is already created and can be used for this purpose. Confirm the following settings:
+        - **Directed by** - *System directed*
         - **Work classes**
-            - **Work class ID** Sales, **Work order type** Sales orders
-            - **Work class ID** SO Pick, **Work order type** Sales orders
+            - **Work class ID** - *Sales*,  **Work order type** - *Sales orders*
+            - **Work class ID** *SO Pick*, **Work order type** - *Sales orders*
 
-1. Select **System directed work sequence queries** button in the **Action pane**.
-1. Delete the existing line
-    1. In the message window select **Yes**
+1. In the **Action pane**, select **System directed work sequence queries**.
+1. Select **Edit**
+1. Delete the existing line.
+    - In the message window select **Yes**
+1. In the Action Pane, select **New** to create a new line.
+    - Enter the following values
+        - **Sequence number** - *1*
+        - **Description field** - *Work quantity less than 20 and Descending*
 
-1. Select **New** to create a new line
-    1. Set the following values
-        - In **Sequence number** field, select __1__
-        - In **Description field** field, enter __Work quantity less than 20 and Descending__
 1. Select **Save**
+1. In the Action Pane, select **Edit Query**.
+1. Select the **Sorting** tab.
+1. Select **Add**
+1. On the new line, enter the following:
+    - **Table** - *Work lines*
+    - **Derived table** - *Work lines*
+    - **Field** - *Work quantity*
+        - In the message window select **Yes** to add sorting to this field.
+    - **Search direction** - *Descending*
 
-1. Select **Edit Query** button in **Action Pane**
-1. Select **Sorting** tab
-    1. Select **Add**
-    1. On the grid line in the **Sorting** tab, specify the following data:
-
-    - In the **Table** field, select __Work lines__
-    - In the **Derived table** field, select __Work lines__
-    - In the **Field** field, select __Work quantity__
-        - In the message window select **Yes** to add sorting to this field
-    - In the **Search direction** field, select __Descending__
-
-1. Select **Range** tab
-    1. If only specific _**Work**_ criteria should be included in the sequencing, you can specify that on the Range.
-    1. In this example, we will want to include only Work with less than 20 eaches (lowest unit of measure).
-
-    1. Select **Add**
-
-        1. Note that there are already some lines included which should not be removed.
-
-1. On the new grid line in the **Range** tab, specify the following data:
-
-    - In the **Table** field, select __Work lines__
-    - In the **Derived table** field, select __Work lines__
-    - In the **Field** field, select **Inventory work quantity**
-    - In the **Criteria** field, enter \<20
+1. Select the **Range** tab.
+    - If only specific _**Work**_ criteria should be included in the sequencing, you can specify that on the Range.
+    - In this example, we will want to include only Work with less than 20 eaches (lowest unit of measure).
+    - Select **Add**
+        - Note that there are already some lines included which should not be removed.
+1. On the new line, enter the following:
+    - **Table** - *Work lines*
+    - **Derived table** - *Work lines*
+    - **Field** - *Inventory work quantity*
+    - **Criteria** - *<20*
         - (less than 20)
 
 1. Select **OK**
-1. Select **Save** on the **System Directed Work Sequence Queries | SALES PICKING - SYSTEM : SYSTEM DIRECTED** form
+1. Select **Save**
 1. **Close** the form to return to the **Mobile device menu items** form
 
-This is now the criteria based on which the mobile device menu item will be fed the eligible work. If more Query criteria lines are used, the system will first use the Query line with lowest sequence number.
+>[!NOTE]
+>This is now the criteria based on which the mobile device menu item will be fed the eligible work. If more Query criteria lines are used, the system will first use the Query line with lowest sequence number.
+>
+>Therefore, all eligible Work for Sequence number 1 will first be fed to the user, and after that all Work for Sequence number 2 will be presented to the user. Hence if certain Range and Sorting need to be used in tandem, they should be specified on the same System directed work sequence query.
+>
+>Note that this setup will capture any work that has at least one line with less than 20 ea. Hence, if the same Work has another line with exactly 20 ea or more than 20 ea, it will also be valid, as long as at least one line has less than 20 ea.
 
-Therefore, all eligible Work for Sequence number 1 will first be fed to the user, and after that all Work for Sequence number 2 will be presented to the user. Hence if certain Range and Sorting need to be used in tandem, they should be specified on the same System directed work sequence query.
+### Location directives
 
-Note that this setup will capture any work that has at least one line with less than 20 ea. Hence, if the same Work has another line with exactly 20 ea or more than 20 ea, it will also be valid, as long as at least one line has less than 20 ea.
-
-## Location directives
-
-Default Contoso Data will not require editing of the location directive action query. When applying this feature in a non-Contoso environment, ensure that the Location Directives will capture the items on the Sales orders by creating a new location directive. Select **Edit  query** the Location Directive Actions sequence for **Pick** and ensure there is no restriction for the **Location** criteria in the query. Save the change.
+Default Contoso Data will not require editing of the location directive action query. When applying this feature in a non-Contoso environment, ensure that the Location Directives will capture the items on the Sales orders by creating a new location directive. To verify the settings in the demo environment, do the following:
 
 1. Go to **Warehouse management** > **Setup** > **Location directives**
-1. Select **Work order type** **Sales orders**
-1. Select the **Sequence number** and **Name** of the location directive.
-1. In the **Location Directive Actions** pane, select the **Sequence number** line for the **Pick** action.
-1. Select **Edit query**
-1. Review the **Range** query and ensure that the **Location** **Criteria** has no restrictions.
+1. Select **Work order type** - *Sales orders*
+1. Select the following **Location directive**:
+    - **Name** - *51 Pick*
+
+1. In the **Location Directive Actions** FastTab, select the line for the **Pick** action.
+1. Select **Edit query** on the Toolbar.
+1. Review the **Range** query.
+    - Find the line with **Field** - *Location*
+    - Ensure that **Criteria** has no restrictions (blank).
 
 ## Scenario
 
-### Create picking work
+### Create sales order picking work
 
 Before system directed picking is executed, some outbound work should be created. Based on the specified System directed work sequence queries, create 4 different **Sales Orders**, with the below specifications.
 
-1. Navigate to **Sales and marketing** > **Sales orders** > **All sales orders**
-1. Create _**Sales Order 1**_
-    1. Select **New** to create a new sales order.
-    1. In **Customer account** select **US-004** -- **Cave Wholesales**
-    1. Expand the **General** section
-    1. In the **Warehouse** field, select **51**
-    1. Select **OK**
-    1. Make note of the Sales order number for **Cave Wholesales**
-    1. Add a new line to the sales order
-        1. In the **Item number** field select **M9200**
-        1. In the **Quantity** field enter **20**
-    1. Select **Save**
-1. Create _**Sales order 2**_
-    1. Select **New** to create a new sales order.
-    1. In **Customer account** select **US-007** -- **Desert Wholesales**
-    1. Expand the **General** section
-    1. In the **Warehouse** field, select **51**
-    1. Select **OK**
-    1. Make note of the Sales order number for **Desert Wholesales**
-    1. Add a new line to the sales order
-        1. In the **Item number** field select **M9200**
-        1. In **Quantity** field enter **5**
-    1. Select **Add line**
-        1. In the **Item number** field select **M9201**
-        1. In **Quantity** field enter **1**
-    1. Select **Save**
-1. Create _**Sales order 3**_
-    1. Select **New** to create a new sales order.
-    1. In **Customer account** select **US-009** -- **Owl Wholesales**
-    1. Expand the **General** section
-    1. In the **Warehouse** field, select **51**
-    1. Select **OK**
-    1. Make note of the Sales order number for **Owl Wholesales**
-    1. Add a new line to the sales order
-        1. In the **Item number** field select **M9200**
-        1. In **Quantity** field enter **7**
-    1. Select **Add line**
-        1. In the **Item number** field select **M9202**
-        1. In **Quantity** field enter **8**
-    1. Select **Save**
-1. Create _**Sales order 4**_
-    1. Select **New** to create a new sales order.
-    1. In **Customer account** select **US-010** -- **Sunset Wholesales**
-    1. Expand the **General** section
-    1. In the **Warehouse** field, select **51**
-    1. Select **OK**
-    1. Make note of the Sales order number for **Sunset Wholesales**
-    1. Add a new line to the sales order
-        1. In the **Item number** field select **M9200**
-        1. In **Quantity** field enter **25**
-    1. Select **Add line**
-        1. In the **Item number** field select **M9202**
-        1. In **Quantity** field enter **10**
-    1. Select **Save**
+You will reserve inventory quantities for a specific sales order. This means that reserved inventory cannot be withdrawn from the warehouse for other orders unless the inventory reservation, or part of the inventory reservation, is canceled.
 
-## Reserve Inventory and Release to Warehouse
+You will release the sales order to the warehouse to create the work.
 
-Before releasing the orders to warehouse, ensure there is enough inventory on the pick locations for all the items on the orders.
+#### Sales order 1
 
-Default Contoso data should support this scenario but review the Location Directive setting to be sure what picking locations are used for sales order picking. You can create manual movements, use replenishment, or any other flow if needed to adjust the inventory.
+1. Go to **Sales and marketing > Sales orders > All sales orders**
+1. In the Action Pane, select **New** to create **Sales Order 1**.
+1. In the **Create sales order** FlyOut, select the following:
+    - In the Customer section:
+        - **Customer account** - *US-004*
+    - In the **General** section
+        - **Warehouse** - *51*
+    - Select **OK** to close the FlyOut.
+        - Make note of the Sales order number.
 
-### Reserve inventory
+1. Add a new line to the sales order and reserve the inventory, enter and select the following:
+    - **Item number** - *M9200*
+    - **Quantity** - *20*
+    - Select **Inventory** n the FastTab's **Toolbar**  then select **Reservation** from the list.
+        - On the **Reservation** form, select **Reserve lot** to reserve the inventory.
+        - **Close** the **Reservation** form.
 
-You can reserve inventory quantities for a specific sales order. This means that reserved inventory cannot be withdrawn from the warehouse for other orders unless the inventory reservation, or part of the inventory reservation, is canceled.
+1. On the Action Pane, select the **Warehouse** tab and then *Release to warehouse* to create work for the warehouse.
+1. Informational messages are displayed with the *Wave ID* and *Shipment ID*(s) created for the sales order.
 
-To reserve inventory:
+#### Sales order 2
 
-1. Select **Sales Order 1** and open to display the **Sales order details** form
-1. In the **Sales order lines** section focus on the order line
-1. On the section's **Action pane** select **Inventory** and select **Reservation** from the list
-1. In the **Reservation** header the sales line order quantity is displayed in the **On order** field. In the **Detailed availability by dimension** section, enter the value from the **On order** field in the header into the **Reservation** field
-1. Press **Tab** to move off of the **Reservation** field
-1. The form updates, **Reserved physical** field is updated and **Lock reservations** fast tab is updated
-1. **Close** the **Reservation** form
-1. Repeat the steps above for each line on the remaining Sales Orders
+1. In the Action Pane, select **New** to create **Sales Order 2**.
+1. In the **Create sales order** FlyOut, enter the following:
+    - **Customer account** - *US-007*
+    - **Warehouse** - *51*
+    - Select **OK** to close the FlyOut.
+        - Make note of the Sales order number.
 
-    _**Option**_: After reserving inventory for each Sales Order, follow the steps for releasing to warehouse before moving to the next sales order.
+1. Add a line to sales order 2, enter the following:
+    - **Item number** - *M9200*
+    - **Quantity** - *5*
 
-### Release to Warehouse
+1. Select **Add line** to add a second line and enter the following:
+    - **Item number** - *M9201*
+    - **Quantity** - *1*
 
-Sales orders must be released to the warehouse in order for work to be created. Work in the warehouse defines the instructions to the warehouse worker of what tasks to perform.
+1. Reserve inventory for both lines.
+1. Release the order to the warehouse.
 
-To release the sales order to the warehouse and create work:
+#### Sales order 3
 
-1. Select **Sales Order 1** and open to display the **Sales order details** form
-1. In the Action pane select the **Warehouse** tab then select **Release to warehouse** initiate the release process
-1. When the release to warehouse process completes 4 **informational messages** are displayed: the number of **shipments** that have been created,  **Wave** number that has been created for the **shipment**, the **Work build ID** number, and, the **Wave** that is posted.
-1. In the **Sales order lines** section select **Warehouse** from the Action pane then select **Work details** from the list
-1. The **Work** form opens
-1. On the **Overview** tab in the grid field **Work ID** the Work ID number is displayed.
-1. Make note of the **Work ID** for **Sales Order 1**
-1. **Close** the **Work** form
-1. Repeat the steps above for each of the remaining 3 Sales Orders
+1. In the Action Pane, select **New** to create **Sales Order 3**.
+1. In the **Create sales order** FlyOut, enter the following:
+    - **Customer account** - *US-009*
+    - **Warehouse** - *51*
+    - Select **OK** to close the FlyOut.
+        - Make note of the Sales order number.
 
-Four different Work IDs should have been created.
+1. Add a line to sales order 3, enter the following:
+    - **Item number** - *M9200*
+    - **Quantity** - *7*
 
-1. Sales Order 1 / Work ID 1 – 20 ea
-2. Sales Order 2 / Work ID 2 – 6 ea (sum of both lines)
-3. Sales Order 3 / Work ID 3 – 15 ea (sum of both lines)
-4. Sales ORder 4 / Work ID 4 – 35 ea (sum of both lines)
+1. Select **Add line** to add a second line and enter the following:
+    - **Item number** - *M9202*
+    - **Quantity** - *8*
 
-## Mobile device flow execution
+1. Reserve inventory for both lines.
+1. Release the order to the warehouse.
+
+#### Sales order 4
+
+1. In the Action Pane, select **New** to create **Sales Order 4**.
+1. In the **Create sales order** FlyOut, enter the following:
+    - **Customer account** - *US-010*
+    - **Warehouse** - *51*
+    - Select **OK** to close the FlyOut.
+        - Make note of the Sales order number.
+
+1. Add a line to sales order 4, enter the following:
+    - **Item number** - *M9200*
+    - **Quantity** - *25*
+
+1. Select **Add line** to add a second line and enter the following:
+    - **Item number** - *M9202*
+    - **Quantity** - *10*
+
+1. Reserve inventory for both lines.
+1. Release the order to the warehouse.
+
+### Get  Work ID's for the created work
+
+1. Go to **Warehouse management > Work > Work details**.
+1. Filter for **Warehouse** - *51*.
+
+Four different Work IDs should have been created. Make note of the work ID for each sales order.
+
+**Sales Order / Work ID / Work quantity**
+Sales Order 1 / Work ID 1 – 20 ea
+Sales Order 2 / Work ID 2 – 6 ea (sum of both lines)
+Sales Order 3 / Work ID 3 – 15 ea (sum of both lines)
+Sales ORder 4 / Work ID 4 – 35 ea (sum of both lines)
+
+### Mobile device flow execution
 
 Before executing the flow on the mobile device, ensure that only the created work is in Open status for Warehouse 51 and Work order type Sales order. If not, the results of the test may vary as the System direct picking will include all eligible work.
 
