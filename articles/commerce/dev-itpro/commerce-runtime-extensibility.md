@@ -120,6 +120,10 @@ Attributes are also supported (configuration-driven development). For extension 
 </tbody>
 </table>
 
+> [!NOTE]
+> CRT extension code must not refer or use any of the CRT business logic classes, methods or handlers (classes from Runtime.Workflow, Runtime.Services, Runtime.DataServices etc.) these classes are not backward compatible and during upgrade this may break your extensions. Extension can only use Request, response and Entities classes from Runtime.*.Messages, Runtime.Framework, Runtime.Data and Runtime.Entities.
+
+ 
 **Manually deploying the CRT extension for 7.1 with May update and later**
 
 After you extend CRT, you should put the custom library in the **…\\RetailServer\\webroot\\bin\\Ext** folder for online (that is, when POS is connected to Commerce Scale Unit). You should also update the **composition** section in the **CommerceRuntime.Ext.config** file with the custom library information, as shown here.
