@@ -341,9 +341,9 @@ Alternatively, if you set the **Use advanced certificate store** option to **No*
 
 | **Web service name** | **Testing internet address**                                                      |
 |----------------------|-----------------------------------------------------------------------------------|
-| Manage invoices      | https://api-test.onlineszamla.nav.gov.hu/invoiceService/v2/manageInvoice          |
-| Query invoice status | https://api-test.onlineszamla.nav.gov.hu/invoiceService/v2/queryTransactionStatus |
-| Token exchange       | https://api-test.onlineszamla.nav.gov.hu/invoiceService/v2/tokenExchange          |
+| Manage invoices      | `https://api-test.onlineszamla.nav.gov.hu/invoiceService/v2/manageInvoice`         |
+| Query invoice status | `https://api-test.onlineszamla.nav.gov.hu/invoiceService/v2/queryTransactionStatus` |
+| Token exchange       | `https://api-test.onlineszamla.nav.gov.hu/invoiceService/v2/tokenExchange`          |
 
 Internet addresses are subject to change by the Hungarian Online invoicing system. Therefore, we recommend that you check for actual internet addresses on the [official web site of the Hungarian Online invoicing system](https://onlineszamla.nav.gov.hu/). The website also has information about the actual *production* internet addresses that you should set up.
 
@@ -461,7 +461,7 @@ To exclude an invoice from processing in RTIR, follow these steps.
 4.  Define additional criteria by using the **Records to include** FastTab to
     specify which invoices must be excluded from further processing.
 
-### Postpone invoice reporting in RTIR**
+### Postpone invoice reporting in RTIR
 
 To postpone reporting of an invoice in RTIR, follow these steps.
 
@@ -499,9 +499,9 @@ includes all the data that is required to set up the processing for RTIR.
 
 | **Web service name** | **Testing Internet address**                                                      |
 |----------------------|-----------------------------------------------------------------------------------|
-| Manage invoices      | https://api-test.onlineszamla.nav.gov.hu/invoiceService/v2/manageInvoice          |
-| Query invoice status | https://api-test.onlineszamla.nav.gov.hu/invoiceService/v2/queryTransactionStatus |
-| Token exchange       | https://api-test.onlineszamla.nav.gov.hu/invoiceService/v2/tokenExchange          |
+| Manage invoices      | `https://api-test.onlineszamla.nav.gov.hu/invoiceService/v2/manageInvoice`          |
+| Query invoice status | `https://api-test.onlineszamla.nav.gov.hu/invoiceService/v2/queryTransactionStatus` |
+| Token exchange       | `https://api-test.onlineszamla.nav.gov.hu/invoiceService/v2/tokenExchange`          |
 
 ### Additional fields
 
