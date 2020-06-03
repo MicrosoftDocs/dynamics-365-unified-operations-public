@@ -45,8 +45,8 @@ set the **Default for model mapping** option to **Yes** for the **RTIR mapping**
 and **RTIR import model mapping** configurations.
 
 For more information about how to download ER configurations from Microsoft
-Dynamics Lifecycle Services (LCS), see Download Electronic reporting
-configurations from Lifecycle Services.
+Dynamics Lifecycle Services (LCS), see [Download Electronic reporting
+configurations from Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
 ## Set up application-specific parameters
 
@@ -169,14 +169,14 @@ field to **Completed**, save your changes, and close the page.
 
 EM functionality is provided to maintain different electronic reporting
 processes for different document types. For more information about electronic
-messages, see Electronic messaging.
+messages, see [Electronic messaging](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/HU-RTIR/articles/finance/general-ledger/electronic-messaging.md).
 
 The process of setting up the EM functionality for RTIR has many steps. Because
 the names of some predefined entities are used in the ER configurations, it's
 important that you use a set of predefined values that are delivered in a
 package of data entities for the related tables.
 
-1.  In LCS, go to the Shared asset library, and select the **Data package**
+1.  In [LCS](https://lcs.dynamics.com/v2), go to the Shared asset library, and select the **Data package**
     asset type.
 
 2.  In the list of data package files, find **HU RTIR setup.zip**, and download
@@ -190,11 +190,11 @@ package of data entities for the related tables.
 4.  In the **Data management** workspace, go to **Framework parameters** \>
     **Entity settings**, and then select **Refresh entity list**. Wait for
     confirmation that the refresh has been completed. For more information about
-    how to refresh the entity list, see Entity list refresh.
+    how to refresh the entity list, see [Entity list refresh](https://docs.microsoft.com/dynamics365/dev-itpro/data-entities/data-entities#entity-list-refresh).
 
 5.  Validate that the source data and target data are correctly mapped. For more
-    information, see the section about validation in Data import and export
-    jobs.
+    information, see the section about validation in [Data import and export
+    jobs](https://docs.microsoft.com/dynamics365/dev-itpro/data-entities/data-import-export-job#validate-that-the-source-data-and-target-data-are-mapped-correctly).
 
 6.  Before the data entities are used for the first time to import the data from
     the package, sync the mapping of source data and target data. In the list
@@ -207,7 +207,7 @@ package of data entities for the related tables.
 8.  Repeat steps 6 through 7 for each data entity in the package before you
     start the import.
 
-    For more information about data management, see Data management.
+    For more information about data management, see [Data management](https://docs.microsoft.com/dynamics365/dev-itpro/data-entities/data-entities-data-packages).
 
 9.  You must now import data from the HU RTIR setup.zip file into the selected
     company. In the **Data management** workspace, select **Import**.
@@ -254,7 +254,7 @@ processing.
 
 For more information about the predefined setup that is included in the data
 entities in the package for RTIR, see [Appendix 1: Electronic messages setup for
-RTIR](appendix1) later in this topic.
+RTIR](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/HU-RTIR/articles/finance/localizations/emea-hun-online-invoicing.md#appendix-1-electronic-message-setup-for-rtir) later in this topic.
 
 ## Set up EM for RTIR
 
@@ -305,8 +305,8 @@ Interoperation with the Hungarian Online invoicing system requires a technical u
 7.  Go to **System administration** \> **Setup** \> **System parameters**, and
     set the **Use advanced certificate store** option to **No** to store
     sensitive data locally. Set the option to **Yes** to use Key Vault storage.
-    For more information about how to set up Key Vault, see Setting up Azure Key
-    Vault Client and Maintaining Azure Key Vault storage.
+    For more information about how to set up Key Vault, see [Setting up Azure Key
+    Vault Client](https://support.microsoft.com/help/4040305/setting-up-azure-key-vault-client) and [Maintaining Azure Key Vault storage](https://support.microsoft.com/help/4040294/maintaining-azure-key-vault-storage).
 
 8.  If you set the **Use advanced certificate store** option to **Yes** on the
     **System parameters** page, you must set up the Key Vault parameters at
@@ -331,7 +331,7 @@ Interoperation with the Hungarian Online invoicing system requires a technical u
 
 ![](media/6_Key_Vault.png)
 
-Alternatively, if you set the **Use advanced certificate store** option to **No**, manually enter the technical user name and password, signature key, and replacement key that you obtained for interoperation with the Hungarian Online invoicing system. For more information, see the information about the registration procedure.
+Alternatively, if you set the **Use advanced certificate store** option to **No**, manually enter the technical user name and password, signature key, and replacement key that you obtained for interoperation with the Hungarian Online invoicing system. For more information, see the [information about the registration procedure](https://onlineszamla-test.nav.gov.hu/tajekoztatas_a_regisztraciorol).
 
 ![](media/7_system_parameters.png)
 
@@ -345,9 +345,7 @@ Alternatively, if you set the **Use advanced certificate store** option to **No*
 | Query invoice status | https://api-test.onlineszamla.nav.gov.hu/invoiceService/v2/queryTransactionStatus |
 | Token exchange       | https://api-test.onlineszamla.nav.gov.hu/invoiceService/v2/tokenExchange          |
 
-Internet addresses are subject to change by the Hungarian Online invoicing system. Therefore, we recommend that you check for actual internet addresses on the official web site of the Hungarian Online invoicing system.
-
-The website also has information about the actual *production* internet addresses that you should set up.
+Internet addresses are subject to change by the Hungarian Online invoicing system. Therefore, we recommend that you check for actual internet addresses on the [official web site of the Hungarian Online invoicing system](https://onlineszamla.nav.gov.hu/). The website also has information about the actual *production* internet addresses that you should set up.
 
 12.  Go to **Tax** \> **Setup** \> **Parameters** \> **Electronic messages** \>
     **Message processing actions**, and select **Generate EM**.
@@ -424,7 +422,7 @@ system automatically fills in values for additional fields when it runs actions.
 
 | **Additional field**       | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                        |
 |----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Operation                  | Values include **Create**, **Modify**, and **Storno**. Finance sets the value of this additional field during execution of the **Evaluate EM items** action. The value of the **Operation** additional field can be defined automatically or through a financial reason on the invoice. For more information, see the [Set up financial reasons for RTIR](\#financialreasons) section earlier in this topic.                           |
+| Operation                  | Values include **Create**, **Modify**, and **Storno**. Finance sets the value of this additional field during execution of the **Evaluate EM items** action. The value of the **Operation** additional field can be defined automatically or through a financial reason on the invoice. For more information, see the [Set up financial reasons for RTIR](#set-up-financial-reasons-for-rtir) section earlier in this topic.                           |
 | Original invoice item      | If the **Operation** additional field is set to **Modify** or **Storno**, the **Original invoice item** additional field must be set. If the system can't set this field, it sets the status of the related message item to **Manual editing**, and you must manually set this field.                                                                                                                                                  |
 | Index                      | This additional field specifies the invoice position in the request (package of invoices). The value is reported in the **\<index\>** element in the **ManageInvoiceRequest.xml** file. This additional field is automatically filled in when the **Generate invoice request** action is run.                                                                                                                                          |
 | Last line reference number | For message items of the **Create** operation type, this additional field contains the last number (invoice line quantity) in the package. For message items of the **Modify** or **Storno** operation type, this additional field contains the **Index** value of the original invoice, as reported in the **\<modificationIndex\>** element. This additional field is automatically filled in when the **Evaluation** action is run. |
@@ -508,7 +506,7 @@ includes all the data that is required to set up the processing for RTIR.
 ### Additional fields
 
 For a full description of the additional fields for **Online invoicing**
-processing, see the [Message item additional fields](\#additionalfields) section
+processing, see the [Additional fields for message items](#additional-fields-for-message-items) section
 earlier in this topic.
 
 **Note:** These fields can't be changed by the user.
@@ -573,7 +571,7 @@ statuses.
 
 For a full description of the electronic message actions of **OnlineInvoicing**
 processing, see the [Import a package of data entities that includes a
-predefined EM setup](\#import) section earlier in this topic.
+predefined EM setup](#import-a-package-of-data-entities-that-includes-a-predefined-em-setup) section earlier in this topic.
 
 ### Electronic processing actions
 
