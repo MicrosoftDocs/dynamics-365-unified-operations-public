@@ -182,7 +182,9 @@ An overview of each path is given below:
 
     c.  `AxUpdateInstaller.exe execute -runbookid=upgrade`
 
-1.  If you have customizations from ISVs or VARs, verify if you have to run some post data upgrade scripts.
+1. If you have customizations from ISVs or VARs, verify if you have to run some post data upgrade scripts.
+
+1. Execute the Configure-OnpremUpgrade.ps1 script with the values stated in [Resetting VHD Database](#resetting-vhd-database-optional)
 
 1. Configure your upgraded database for Dynamics 365 for Finance and Operations by following the steps under [Configure the Finance + Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
 
@@ -223,7 +225,7 @@ If you followed either of the procedures above, you will be able to login with t
 
 ### Resetting VHD Database (Optional)
 
-If you have run the Configure-On-Premises-Upgrade.ps1 script. Run the following command to reset your database configuration to default:
+If you have used the Configure-On-Premises-Upgrade.ps1 script. Run the following command to reset your database configuration to default:
 
 ```powershell
 .\Configure-OnPremUpgrade.ps1 -DatabaseName 'AxDB' -DatabaseServer 'localhost' -DatabaseUser 'axdbadmin' -DatabasePassword 'AOSWebSite@123'
