@@ -724,6 +724,8 @@
               href: xpp-data/xpp-select-expression.md
             - name: X++ transactional integrity
               href: xpp-data/xpp-transaction.md
+            - name: Speeding up SQL operations
+              href: xpp-data/xpp-data-perf.md
             - name: Data access using the SysDa API
               href: dev-ref/sysda.md
           - name: X++ macros
