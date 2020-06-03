@@ -88,4 +88,9 @@ In **Accounts receivable** > **Setup** > **Forms** > **Forms setup**, in **Gener
 ### Packing slip specification
 In **Accounts receivable** > **Setup** > **Forms** > **Forms setup**, in **Invoice** FastTab, mark **Print packing slip specifications** check-box.
 
-![Packing slip specification](emea-bhr-packing-spec.jpg)
+![Packing slip specification](media/emea-bhr-packing-spec.jpg)
+
+### Credit invoicing activation
+In **Accounts receivable** > **Setup** > **Accounts receivable parameters**, in **Updates** FastTab, enable **Apply the credit invoicing layout into sales and project invoice reports** option.
+
+![Credit invoicing activation](media/emea-bhr-credit.jpg)
