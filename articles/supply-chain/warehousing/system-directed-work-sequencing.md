@@ -12,7 +12,7 @@ _NOTE_: If different criteria is needed, multiple mobile device menu items will 
 
 Before you can use this feature, it must be enabled on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature status and enable it if needed. Here, the feature is listed as:
 
-- **Module** - *Warehouse management* 
+- **Module** - *Warehouse management*
 - **Feature name** - *Organization-wide system directed work sequencing*
 
 ## Setup
@@ -54,7 +54,7 @@ Before you can use this feature, it must be enabled on your system. Administrato
     - In the **Search direction** field, select __Descending__
 
 1. Select **Range** tab
-    1. If only specific _**Work**_ criteria should be included in the sequencing, you can specify that on the Range. 
+    1. If only specific _**Work**_ criteria should be included in the sequencing, you can specify that on the Range.
     1. In this example, we will want to include only Work with less than 20 eaches (lowest unit of measure).
 
     1. Select **Add**
@@ -72,7 +72,6 @@ Before you can use this feature, it must be enabled on your system. Administrato
 1. Select **OK**
 1. Select **Save** on the **System Directed Work Sequence Queries | SALES PICKING - SYSTEM : SYSTEM DIRECTED** form
 1. **Close** the form to return to the **Mobile device menu items** form
-
 
 This is now the criteria based on which the mobile device menu item will be fed the eligible work. If more Query criteria lines are used, the system will first use the Query line with lowest sequence number.
 
@@ -160,7 +159,7 @@ Default Contoso data should support this scenario but review the Location Direct
 
 ### Reserve inventory
 
-You can reserve inventory quantities for a specific sales order. This means that reserved inventory cannot be withdrawn from the warehouse for other orders unless the inventory reservation, or part of the inventory reservation, is canceled. 
+You can reserve inventory quantities for a specific sales order. This means that reserved inventory cannot be withdrawn from the warehouse for other orders unless the inventory reservation, or part of the inventory reservation, is canceled.
 
 To reserve inventory:
 
@@ -177,7 +176,7 @@ To reserve inventory:
 
 ### Release to Warehouse
 
-Sales orders must be released to the warehouse in order for work to be created. Work in the warehouse defines the instructions to the warehouse worker of what tasks to perform. 
+Sales orders must be released to the warehouse in order for work to be created. Work in the warehouse defines the instructions to the warehouse worker of what tasks to perform.
 
 To release the sales order to the warehouse and create work:
 
