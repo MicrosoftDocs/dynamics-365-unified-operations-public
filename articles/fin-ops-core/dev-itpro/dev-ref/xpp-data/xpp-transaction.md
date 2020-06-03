@@ -32,7 +32,7 @@ ms.search.validFrom: 2016-02-28
 
 # Transactional integrity
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic describes transactional integrity in the X++ language.
 
