@@ -454,9 +454,9 @@
           href: ../fin-ops/imp-lifecycle/architecture-overview.md
         - name: Apply updates to cloud environments
           href: deployment/apply-deployable-package-system.md
-        - name: Apply updates and extensions to cloud hosted Retail channel components
+        - name: Apply updates and extensions to Commerce Scale Unit (cloud)
           href: deployment/Update-retail-channel.md  
-        - name: Initialize Retail Cloud Scale Unit
+        - name: Initialize Commerce Scale Unit (cloud)
           href: deployment/Initialize-Retail-Channels.md  
         - name: Retail data residency
           href: deployment/retail-data-residency.md
