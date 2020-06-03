@@ -5,7 +5,7 @@ title: Tax directives for Europe
 description: You can specify to include an explanation of sales tax codes on sales invoices and project invoices. You can print reference numbers on sales invoices, free text invoices, and project invoices.
 author: epodkolz 
 manager: AnnBe
-ms.date: 05/12/2017
+ms.date: 06/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -38,4 +38,4 @@ EU Directive lists the information that is required by suppliers for their custo
 - For credit notes, the number and date of the original invoice are printed along with the reason for correction.
 
 > [!NOTE]
-> Make sure that in **Form setup** page (Accounts receivable > Setup > Forms > Form setup, General tab) a **Sales tax specification** option is set to either **Registration currency** or **Registration and company currency**.
+> Verify on the **Form setup** page (**Accounts receivable** > **Setup** > **Forms** > **Form setup**, on the **General tab**), that the **Sales tax specification** field is set to **Registration currency** or **Registration and company currency**.
