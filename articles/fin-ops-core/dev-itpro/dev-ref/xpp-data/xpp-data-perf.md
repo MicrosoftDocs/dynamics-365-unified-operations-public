@@ -32,7 +32,7 @@ ms.search.validFrom: 2016-02-28
 
 # Speeding up SQL operations
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic describes how to speed up SQL operations in the X++ language.
 
