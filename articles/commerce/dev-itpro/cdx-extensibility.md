@@ -148,6 +148,9 @@ To pull data from a new channel table to HQ, you have two options:
 
 + Update the existing resource file with the new information, so that you don't have to add a new line. To upload you set the **IsUpload** attribute to **true** in the resource file and add information about your custom pull job, as shown in the following example.
 
+> [!NOTE]
+> If the new extension table data need to be pulled to Retail headquarters using Commerce Data exchange (CDX) then the extension table must include the REPLICATIONCOUNTERFROMORIGIN identity column ([REPLICATIONCOUNTERFROMORIGIN] [int] IDENTITY(1,1) NOT NULL,), this is required for CDX pull job. REPLICATIONCOUNTERFROMORIGIN is not required if the data is pushed from Retail headquarters to channel database, needed only if the data is pulled from channel database to Retail headquarters.
+
     ```xml
     <Subjob Id="ContosoRetailSeatReservationTrans" TargetTableSchema="ext" IsUpload="true"
     ReplicationCounterFieldName="ReplicationCounterFromOrigin" AxTableName="ContosoRetailSeatReservationTrans">
@@ -168,7 +171,7 @@ To pull data from a new channel table to HQ, you have two options:
     </Subjob>
     ```
   > [!NOTE]
-  > You can either add this new table as part of the existing pull job (P-1000) or create a new pull job.
+  > You can either add this new table as part of the existing pull job (P-1000) or create a new pull job. 
 
 ## Other scenarios
 For the remaining push and pull scenarios, only the information for the sample resource file is described, because initialization is the same as we described in the previous sections.
