@@ -44,17 +44,12 @@ If you are shipping items with hazardous material, then you will usually need to
 
 | Group | Setting | Description |
 | --- | --- | --- |
-| **Multimodal Dangerous Goods** | **Regulation code** | Choose the regulation to be used when generating a multimodal dangerous goods report. For more information about regulation codes, see [Hazardous material regulations](#_Hazardous_material_regulations).
- |
-| **Hazardous Material stock limits** | **Regulation code** | Choose the regulation to be used when evaluating stock limits. For more information about regulation codes, see [Hazardous material regulations](#_Hazardous_material_regulations). |
-| **Carriage of merchandise by road** | **CMR group product** | CMR stands for carcinogenic, mutagenic and reprotoxic substances. Set this to **Yes** to configure the system to print specific warnings and messages related to the handling of these substances.
- |
+| **Multimodal&nbsp;Dangerous Goods** | **Regulation&nbsp;code** | Choose the regulation to be used when generating a multimodal dangerous goods report. |
+| **Hazardous Material stock limits** | **Regulation code** | Choose the regulation to be used when evaluating stock limits. |
+| **Carriage of merchandise by road** | **CMR group product** | CMR stands for carcinogenic, mutagenic, and reprotoxic substances. Set this to **Yes** to configure the system to print specific warnings and messages related to the handling of these substances. |
 | **Carriage of merchandise by road** | **Hazardous material group description** | Enter text with specific warnings related to CMR and carriage of merchandise by road. This text will be included in the report. |
-| **Shippers declaration** | **Warning** | Enter text with a warning message to be printed on the shipper's declaration form (for example, "Warning: Dangerous Goods, Flammable").
- |
-| **Shippers declaration** | **Footer declaration**
- | Enter text to provide a specific message at the bottom of the shipment declaration document.
- |
+| **Shippers declaration** | **Warning** | Enter text with a warning message to be printed on the shipper's declaration form (for example, "Warning: Dangerous Goods, Flammable"). |
+| **Shippers declaration** | **Footer declaration** | Enter text to provide a specific message at the bottom of the shipment declaration document. |
 | **Hazardous goods report language** | **Hazardous goods domestic report language** | Select the default language to be used for hazardous material reports associated with domestic shipments |
 | **Hazardous goods report language** | **Hazardous goods export report language** | Select the default language to be used for hazardous material reports associated with international shipments. |
 
@@ -64,15 +59,17 @@ The **Hazardous materials** report shows a list of all items that have been set 
 
 To view this information, go to **Product information management \> Inquiries and reports \> Hazardous material shipping documentation \> Hazardous materials.**
 
+<a name="stock-limit-report"></a>
+
 ## Hazardous material stock limit report
 
 The **Hazardous material stock limit report** page lets you monitor the stock levels of the hazardous materials in your warehouse locations to make sure they remain under established, safe limits. The limits shown here come from those defined for each released product.
 
 To view the report, go to **Product information management \> Inquiries and reports \> Hazardous shipping documentation \> Hazardous material stock limits.**
 
-For more information about how to set stock limits on each released product, see [Set stock limits for hazardous products](#_Set_stock_limits).
+For more information about how to set stock limits on each released product, see [Set stock limits for hazardous products](hazmat-items.md#stock-limits).
 
-The regulation used for the stock limits list are defined on the **Warehouse management \> Setup \> Warehouse management parameters** page. Open the **Reports** tab and set a **Regulation code** for the **Hazardous materials stock limit** parameter. See also Set up hazardous materials reporting.
+The regulation used for stock limits is defined on the **Warehouse management \> Setup \> Warehouse management parameters** page. Open the **Reports** tab and set a **Regulation code** for the **Hazardous materials stock limit** parameter. See also Set up hazardous materials reporting.
 
 ## Verified gross mass report
 
@@ -86,7 +83,7 @@ This report is provided for shipments to be moved using a combination of transpo
 
 To generate and print this report, go to **Warehouse management \> shipments \> All shipments** and open the relevant shipment. Then open the **Shipments** tab in the Action Pane and, in the **Hazardous materials document** group, select **Multi model dangerous goods.**
 
-When you generate this report, the information is saved so you can edit and/or reprint it if needed. To edit a generated report, go to **Warehouse management \> Inquiries and reports \> Hazardous materials hipping documentation \> Multimodal dangerous goods** and then locate the relevant report in the list. After editing the content as needed, select **Print** from the Action Pane to print the report.
+When you generate this report, the information is saved so you can edit and/or reprint it if needed. To edit a generated report, go to **Warehouse management \> Inquiries and reports \> Hazardous materials shipping documentation \> Multimodal dangerous goods** and then locate the relevant report in the list. After editing the content as needed, select **Print** from the Action Pane to print the report.
 
 ## Shippers declaration report
 
@@ -100,7 +97,7 @@ This is similar to a bill of lading but is commonly used for road transportation
 
 To generate and print this report, go to **Warehouse management \> shipments \> All shipments** and open the relevant shipment. Then open the **Shipments** tab in the Action Pane and, in the **Hazardous materials document** group, select **Carriage of merchandise by road.**
 
-When you generate this report, the information is saved so you can edit and/or reprint it if needed. To edit a generated report, go to **Warehouse management \> Inquiries and reports \> Hazardous materials hipping documentation \> Carriage of merchandise by road** and then locate the relevant report in the list. After editing the content as needed, select **Print** from the Action Pane to print the report.
+When you generate this report, the information is saved so you can edit and/or reprint it if needed. To edit a generated report, go to **Warehouse management \> Inquiries and reports \> Hazardous materials shipping documentation \> Carriage of merchandise by road** and then locate the relevant report in the list. After editing the content as needed, select **Print** from the Action Pane to print the report.
 
 ## Shipment summary report
 

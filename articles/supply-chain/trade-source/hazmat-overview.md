@@ -45,7 +45,7 @@ Broadly, there are two main areas where you will review, set up, and use this fu
 
 ## Product information management
 
-Product information management provides a range of set up tables where you can enter reference information for the various dangerous goods lists for road, air, and sea freight.
+Product information management provides a range of setup tables where you can enter reference information for the various dangerous goods lists for road, air, and sea freight.
 
  The common regulations that were referenced when developing this functionality were:
 
