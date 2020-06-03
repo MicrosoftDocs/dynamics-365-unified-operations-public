@@ -196,7 +196,7 @@ Warranty Policy details
 
 Check if the warranty product is assorted to the channel. In Retail and Commerce, check if the warranty group is configured to include the relevant channel.
 
-**When trying to add a warranty to existing transaction and entering the customer order receipt number, I don't see any lines**.
+**When trying to add a warranty to existing transaction and entering the customer order receipt number, why don't I see any transaction line items**?
 
 Run a pull job (P-Job) to upload the receipts to headquarters, which is required for the receipt to be found.
 
