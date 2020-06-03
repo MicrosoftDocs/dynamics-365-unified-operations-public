@@ -38,7 +38,7 @@ Using inventory availability, you can check your inventory before you add a prod
 
 ## On-hand Inventory 
 
-In the header of the **Quotes**, **Orders**, or **Invoices** forms in Dynamics 365 Sales, a new button **On-hand Inventory** is added. When you click the button, a dialog box appears and you can specify the company and the product for which you want to check the on-hand inventory. It returns the inventory information from the Dynamics 365 Supply Chain Management, and shows the same information as [On-hand inventory](../../../../supply-chain/inventory/tasks/check-availability-stock.md). The information includes these quantities:
+In the header of the **Quotes**, **Orders**, or **Invoices** forms in Dynamics 365 Sales, a new button **On-hand Inventory** is added. When you click the button, a dialog box appears and you can specify the company and the product for which you want to check the on-hand inventory. It returns the inventory information from Dynamics 365 Supply Chain Management, and shows the same information as [On-hand inventory](../../../../supply-chain/inventory/tasks/check-availability-stock.md). The information includes these quantities:
 
 - **On-hand Quantity**
 - **Reserved On-hand Quantity**
