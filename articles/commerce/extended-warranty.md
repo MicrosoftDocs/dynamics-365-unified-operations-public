@@ -75,9 +75,9 @@ To create a warranty item in Commerce, follow these steps.
 1. Select **OK**.
 1. On the **Warranty** FastTab, enter values for **Unit of time** and **Length of time**. (See the table below for descriptions of the time properties on the **Warranty** FastTab.)
 1. On the Action Pane, select **Save** to save the warranty item.
-1. Release the warranty product to the company to be able to sell it. 
+1. Release the warranty product to the company to be able to sell it. For more information, see [Set up retail products](set-up-retail-products.md).
 1. On the **Warranty** FastTab of the **Released product details** page, enter values for **Price range base**, **Lower limit**, and **Upper Limit**. (See the table below for descriptions of the time properties on the **Released product details** page.)
-1. Assort the warranty item to the channel where it will be sold. 
+1. Assort the warranty item to the channel where it will be sold. For more information, see [Set up assortments](set-up-assortments.md).
 
 The following table contains values and descriptions for the time properties on the **Warranty** FastTab.
 
@@ -107,10 +107,10 @@ Configuring channel-specific settings enables the prompt to add a warranty item 
 
 To configure channel-specific setting in Commerce, follow these steps.
 
-1. Go to **Products and categories \> Warranty \> Warranty settings\> Channel Specific**.
-1. For **Prompt for warranty**, select one of the following values for your channel:
-    - **Enable** – A prompt for the warranty item will be sent when the warrantable item is added to the cart.
-    - **Disable** – A prompt for the warranty item will not be sent when the warrantable item is added to the cart.
+1. Go to **Products and categories \> Warranty \> Warranty settings\> Channel specific**.
+1. In the **Prompt for warranty** column for your channel, do one of the following:
+    - Select the check box to enable the warranty item prompt. When enabled, a prompt for the warranty item will be sent when the warrantable item is added to the cart.
+    - Clear the check box to disable the warranty item prompt. When disabled, no prompt for the warranty item will be sent when the warrantable item is added to the cart.
 1. Run the **1070** job to sync the data to the channel.
 
 ## Configure the warranty policy number sequence
