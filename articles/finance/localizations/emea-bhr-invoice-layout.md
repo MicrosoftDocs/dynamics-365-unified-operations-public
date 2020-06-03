@@ -34,6 +34,11 @@ ms.dyn365.ops.version: 10.0.13
 
 The article explains how to configure printable invoice layouts to make it compliant with Bahraini legal requiremets.
 
+Bahrain-specific invoice layouts are implemented using **Configurable business documents** concept.
+For more information about Configurable business documents, see [Business document management overview](../../fin-and-ops/dev-itpro/analytics/er-business-document-management.md).
+
+The steps below illustrate how to enable and configure invoice layouts specific for Bahrain.
+
 ## Prerequisites
 
 - The primary address of the legal entity must be in Bahrain.
@@ -47,7 +52,13 @@ In the **Feature management** workspace, enable the following features:
 For more information how to enable features, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Import
-After ...
+Import the following Electronic Reporting formats into the system:
+ - Sales invoice (Excel) (BH);
+ - Free text invoice (Excel) (BH).
+ 
+> [!NOTE]
+> The formats above are based on **Invoice model** and use **Invoice model mapping**. These additional configurations will be automatically imported.
+
 For more information how to import Electronic Reporting configurations, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 ## Configure conversion to PDF
@@ -61,5 +72,4 @@ For each format, mark **Convert to PDF** check-box, select **Portrait** page ori
 
 ![Enable conversion to PDF](media/emea-bhr-pdf.jpg)
 aa
-> [!NOTE]
-> When...
+
