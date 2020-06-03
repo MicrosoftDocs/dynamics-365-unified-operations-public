@@ -3359,6 +3359,7 @@
             - name: Share configurations in GR  
               href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
       - name: Quick start quides
+        items:
         - name: Customize the provided ER format
           href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md?toc=/dynamics365/finance/toc.json
       - name: Tutorials
