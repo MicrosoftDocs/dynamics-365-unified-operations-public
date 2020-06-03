@@ -97,7 +97,7 @@ For more information about each service, see the CRT request/response document i
 For extension scenarios, you can override any of the requests in the service class. For example, to change the customer search flow, extend the **CustomersSearchServiceRequest** request from the **CustomerService** service.
 
 > [!NOTE]
-> You don't customize the service class. Instead, you extend the request/response in the service class. By itself, the service class doesn't have any logic. It just routes the call to the correct request.
+> CRT extension code must not refer or use any of the CRT business logic classes, methods or handlers (classes from Runtime.Workflow, Runtime.Services, Runtime.DataServices etc.) these classes are not backward compatible and during upgrade this may break your extensions. Extension can only use Request, response and Entities classes from Runtime.*.Messages, Runtime.Framework, Runtime.Data and Runtime.Entities. Don't customize or consume the service class only consume the request/response/entities in the extension classes. 
 
 ## Sample service class implementation
 
