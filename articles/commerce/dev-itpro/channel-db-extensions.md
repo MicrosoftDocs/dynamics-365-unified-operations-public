@@ -5,7 +5,7 @@ title: Channel database extensions
 description: This topic explains how to extend the channel database.
 author: mugunthanm
 manager: AnnBe
-ms.date: 04/30/2020
+ms.date: 06/03/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-retail
@@ -181,6 +181,7 @@ In this scenario we will explain how to create a new table and add it to the cha
     [OPENTIME] [int] NOT NULL DEFAULT ((0)),
     [CLOSINGTIME] [int] NOT NULL DEFAULT ((0)),
     [RETAILSTORETABLE] [bigint] NOT NULL DEFAULT ((0)),
+    [REPLICATIONCOUNTERFROMORIGIN] [int] IDENTITY(1,1) NOT NULL,
     CONSTRAINT [I_CONTOSORETAILSTOREHOURSTABLE_RECID] PRIMARY KEY CLUSTERED
     (
         [RECID] ASC
@@ -191,6 +192,9 @@ In this scenario we will explain how to create a new table and add it to the cha
     GO
     GRANT SELECT, INSERT, UPDATE, DELETE ON OBJECT::[ext].[CONTOSORETAILSTOREHOURSTABLE] TO [DataSyncUsersRole]
     GO
+
+> [!NOTE]
+> If the new extension table data needs to be pulled to Retail headquarters using Commerce Data Exchange (CDX), then the extension table must include the REPLICATIONCOUNTERFROMORIGIN identity column ([REPLICATIONCOUNTERFROMORIGIN] [int] IDENTITY(1,1) NOT NULL,). This is required for a CDX pull job. REPLICATIONCOUNTERFROMORIGIN is not required if the data is pushed from Retail headquarters to channel database, this is only needed if the data is pulled from channel database to Retail headquarters.
 
 ## Extending an existing table
 
