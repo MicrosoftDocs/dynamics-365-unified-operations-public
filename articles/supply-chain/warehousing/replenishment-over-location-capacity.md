@@ -154,7 +154,7 @@ When **Automate replenishment work release** is set to *Yes*, it will create dem
 1. In the **Overview** section, filter the **Warehouse** column for *61*.
 1. You should have 7 total **Work order type** headers created:
     - **Replenishment** - *3*
-    - **Sales orders** - *4*
+    - **Sales orders** - *4* (Picking)
         - Make note of the **Work ID** for the Sales orders.
 1. All 3 **Replenishment** Work order types should have the same *Pick* and *Put* locations in the **Lines** section:
     - **Pick** - *02A01R5S1B*
@@ -211,7 +211,6 @@ Until inventory is picked from the location that brings it below the work releas
 1. Go to **Outbound > Sales Picking**.
 1. Enter the **Work ID** for any of the Sales orders picking work created.
     - Refer to the Work ID's for Sales orders from the Work details form.
-
 
     Enter the LP to pick from and confirm the pick. Repeat this process for the possible picking work. This is to empty the pick location and bring it below the previously specified threshold of 0.5PL.
 
