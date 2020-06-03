@@ -30,7 +30,7 @@ ms.search.validFrom: 2016-02-28
 
 # X++ data selection and manipulation overview
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 You can use SQL statements, either interactively or within source code, to retrieve and modify data that is stored in the database. These topics describe using the [X++ select statement](xpp-select.md). You use the following types of statements for data manipulation:
 
