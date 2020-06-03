@@ -36,4 +36,4 @@ EU Directive lists the information that is required by suppliers for their custo
 
 - To print a description of sales tax codes on a sales invoice, free text invoice, or project invoice report, set up the Tax Directive reference text on the sales tax codes.
 - For credit notes, the number and date of the original invoice are printed along with the reason for correction.
-
+NOTE
