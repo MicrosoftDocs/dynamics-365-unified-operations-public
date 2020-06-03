@@ -2092,7 +2092,7 @@
           href: dev-itpro/hardware-device-extension.md
       - name: Retail Server extensibility
         items:
-        - name: Extend a Retail Server OData controller
+        - name: Extend a Commerce Scale Unit OData controller
           href: dev-itpro/extend-retail-server-odata-controller.md
         - name: Retail Server customer and consumer APIs
           href: dev-itpro/retail-server-customer-consumer-api.md
