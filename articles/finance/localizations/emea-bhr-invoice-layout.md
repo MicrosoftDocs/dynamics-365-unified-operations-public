@@ -32,19 +32,28 @@ ms.dyn365.ops.version: 10.0.13
 
 [!include [banner](../includes/banner.md)]
 
-In Bahrain,...
+The article explains how to configure printable invoice layouts to make it compliant with Bahraini legal requiremets.
 
 ## Prerequisites
 
 - The primary address of the legal entity must be in Bahrain.
-- In the **Feature management** workspace, verify that the **Convert...** feature is turned on. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
-
 
     ![New layout selected for customer invoices](media/emea-ita-exil-invoice-packing-slip-pic2.jpg)
 
 > [!NOTE]
 > When...
 
+## Features enabling
+
+In the **Feature management** workspace, enable the following features:
+- (Bahrain) Credit invoicing layout for sales and project invoice reports
+- Convert Electronic Reporting outbound documents from Microsoft Office formats to PDF
+
+For more information how to enable features, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+
 ## Import
 
 After ...
+For more information how to import Electronic Reporting configurations, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+
+aaa
