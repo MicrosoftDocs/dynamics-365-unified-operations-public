@@ -66,7 +66,7 @@ To prepare your Microsoft Dynamics 365 Finance application for RTIR, you must im
 > [!NOTE]
 > After all the ER configurations from the preceding table are imported, set the **Default for model mapping** option to **Yes** for the **RTIR mapping** and **RTIR import model mapping** configurations.
 
-For more information about how to download ER configurations from Microsoft Dynamics Lifecycle Services (LCS), see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+For more information about how to download ER configurations from Microsoft Dynamics Lifecycle Services (LCS), see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 ## Set up application-specific parameters
 
@@ -76,7 +76,7 @@ The format that is used to report invoice data to the Hungarian Online Invoicing
 
 The **lineExpressionIndicator** element of the Boolean type must be reported to the Online invoicing system for invoice lines. For natural units of measure, a value of **true** must be reported for the **lineExpressionIndicator** element. If the unit of measure isn't indicated for an invoice line, a value of **false** must be reported for the **lineExpressionIndicator** element.
 
-1. In the **Electronic reporting** workspace select the most recent imported version of the **RTIR Invoice Data (HU)** format.
+1. In the **Electronic reporting** workspace, select the most recent imported version of the **RTIR Invoice Data (HU)** format.
 2. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
 3. On the **Lookups** FastTab, select **UnitOfMeasureTypeLookup** for the most recent version of the format, and then define which units of measure must be reported as natural (that is, a value of **true** must be reported for the **lineExpressionIndicator** element in the Online invoicing system).
 4. Match all the units in your Legal entity. For example, for kilometers, add the following line:
@@ -186,7 +186,7 @@ The following table describes the processing actions of **Online invoicing** pro
 | Submit status request          | Web service                         | This action submits the **QueryInvoiceStatusRequest.xml** file to the **Query invoice status** web service.                                                                                                                                                                                                                                                                                                        |
 | Import status response         | Electronic reporting import         | This action imports the response from the Online invoicing system. If the status of the EM item is **Received** (which indicates that the invoice was received by the Online invoicing system) or **Processing** (which indicates that the invoice is being processed in the Online invoicing system), the system will send the status request again, until the status of the EM item is updated to **Processed**. |
 | Exclude EM items               | User processing                     | This manual user action resets the status of the EM item from **Evaluated** to **Excluded** and excludes the item from processing.                                                                                                                                                                                                                                                                                 |
-| Include EM items in processing | User processing                     | This manual user action resets the status of the EM item from **Excluded** or **Manual editing** to **Evaluated**,.                                                                                                                                                                                                                                                                                                |
+| Include EM items in processing | User processing                     | This manual user action resets the status of the EM item from **Excluded** or **Manual editing** to **Evaluated**.                                                                                                                                                                                                                                                                                                |
 | Reset EM item status           | User processing                     | This manual user action resets the status of the EM item from **Rejected** to **Created**.                                                                                                                                                                                                                                                                                                                         |
 | Reset EM status                | Message level user processing       | This manual user action resets the status of the electronic message from **Error invoice response importing**, **Error sending invoice request**, or **Error Token response importing** to **Generated** so that processing for the electronic message can continue.                                                                                                                                               |
 
@@ -263,7 +263,7 @@ Internet addresses are subject to change by the Hungarian Online invoicing syste
 ![](media/8_actions.png)
 
 15. Go to **Ta**x \> **Setup** \> **Electronic messages** \> **Electronic message processing**, select **Online invoicing** processing, and then, on the **Batch** FastTab, select **Create batch**.
-16. Set up security roles for **Online invoicing** processing. Different groups of users might require access to **Online invoicing** processing. You can limit access to the processing, based on security groups that are defined inthe system. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**, select **Online invoicing** processing, and add the security groups that must work with this processing. If no security group is defined for the processing, only a system admin can see the processing on the **Electronic messages** page.
+16. Set up security roles for **Online invoicing** processing. Different groups of users might require access to **Online invoicing** processing. You can limit access to the processing, based on security groups that are defined in the system. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**, select **Online invoicing** processing, and add the security groups that must work with this processing. If no security group is defined for the processing, only a system admin can see the processing on the **Electronic messages** page.
 
 ## Set up financial reasons for RTIR
 
@@ -336,7 +336,7 @@ Although this appendix includes the most important information about the setup, 
 
 ### Web service settings
 
-**Online Invoicing** processing use the following web services.
+**Online Invoicing** processing uses the following web services.
 
 | **Web service name** | **Testing Internet address**                                                      |
 |----------------------|-----------------------------------------------------------------------------------|
