@@ -3,7 +3,7 @@
 
 title: Inventory availability in dual write
 description: This topic provides information about checking inventory availability in dual-write.
-author: RichardLuan
+author: yijialuan
 manager: AnnBe
 ms.date: 05/26/2020
 ms.topic: article
@@ -30,13 +30,11 @@ ms.search.validFrom: 2020-05-26
 
 ---
 
-# Inventory availability in dual-write
+# Inventory availability
 
 [!include [banner](../../includes/banner.md)]
 
-One of the important activities in the process of [prospect-to-cash](dual-write-prospect-to-cash.md) is to check if and when the order can be fulfilled. 
-
-With the inventory availability, you can check the on-hand inventory before you add product into **Quotes**, **Orders**, or **Invoices**. In case there isn't enough physical inventory, you want to decide the proper delivery date by considering the projected inventory receipts and issues, you can check the product's ATP information, where you can find the ATP quantity in the pre-defined time fence. 
+With the inventory availability, you can check your inventory before you add a product into the **Quotes**, **Orders**, or **Invoices** forms in model-driven apps in Dynamics 365. For example, checking inventory and determining a fulfullment date is a key task in the [prospect-to-cash](dual-write-prospect-to-cash.md) process. If you don't have enough inventory, you can estimate a delivery date based on projected inventory receipts and issues. You can also check the product's available-to-promise (ATP) information, where you can find the ATP quantity in the pre-defined time fence.
 
 ## On-hand Inventory 
 
