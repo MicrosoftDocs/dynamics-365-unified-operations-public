@@ -217,7 +217,7 @@ package of data entities for the related tables.
 
 11.  After the data entities are uploaded, on the Action Pane, select **Import**.
 
-    ![](media/db014ed0ef3833ad5f6d185dfc274767.png)
+![](media/1_Setup_EM.png)
 
 You will receive a notification in **Messages**, or you can manually refresh the
 page to view the data import progress. When the import process is completed, the
@@ -228,7 +228,7 @@ processing in the EM functionality that supports interoperation with the
 Hungarian Online invoicing system. The following illustration shows the schema
 for **Online invoicing** processing.
 
-![A close up of a map Description automatically generated](media/c55609f908e1c02690b1eaefde909dd4.png)
+![](media/2_Scema.png)
 
 The following table describes the processing actions of **Online invoicing**
 processing.
@@ -270,7 +270,7 @@ make the EM functionality ready to use.
 3.  In the dialog box, on the **Records to include** FastTab, define values for
     the parameters of the query.
 
-![](media/7f361cc65546048690cb181d4f21aac2.png)
+![](media/3_New_EM_items.png)
 
 4.  Select **OK**.
 
@@ -280,7 +280,7 @@ make the EM functionality ready to use.
     **Parameters** on the Action Pane, and then, in the dialog box, define
     values for the parameters of the executable class.
 
-![](media/10be2d4c18269dacae656169846183fd.png)
+![](media/4_Additional_fields.png)
 
 The following values must be set for the parameters.
 
@@ -312,7 +312,7 @@ Interoperation with the Hungarian Online invoicing system requires a technical u
     **System parameters** page, you must set up the Key Vault parameters at
     **System administration** \> **Setup** \> **Key Vault parameters**.
 
-![](media/5f588d91894096f2654f73ad90f9a2e6.png)
+![](media/5_Key_Vault.png)
 
 9.  Go to **Tax** \> **Setup** \> **Parameters** \> **Online invoicing system
     parameters**, and specify the following information:
@@ -329,11 +329,11 @@ Interoperation with the Hungarian Online invoicing system requires a technical u
     **System parameters** page, select related secrets on the **General** tab of
     the **Online invoicing system parameters** page.
 
-![](media/af9bea89d21a9b42e45809569b1e5e62.png)
+![](media/6_Key_Vault.png)
 
 Alternatively, if you set the **Use advanced certificate store** option to **No**, manually enter the technical user name and password, signature key, and replacement key that you obtained for interoperation with the Hungarian Online invoicing system. For more information, see the information about the registration procedure.
 
-![](media/ab487c003da3adc6841a67713d4766d3.png)
+![](media/7_system_parameters.png)
 
 11.  Go to **Tax** \> **Setup** \> **Parameters** \> **Electronic messages** \>
     **Web service settings**, and enter the following information to define the
@@ -359,7 +359,7 @@ The website also has information about the actual *production* internet addresse
 14.  In the **Items attached compression type** field, specify **None**, and set
     the **Attach files from output archive to items** option to **Yes**.
 
-![](media/a41a87a6b4cb0718b711dff5f06615c5.png)
+![](media/8_actions.png)
 
 15.  Go to **Ta**x \> **Setup** \> **Electronic messages** \> **Electronic
     message processing**, select **Online invoicing** processing, and then, on
