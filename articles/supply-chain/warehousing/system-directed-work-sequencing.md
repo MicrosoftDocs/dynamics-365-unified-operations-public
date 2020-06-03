@@ -193,13 +193,11 @@ You will release the sales order to the warehouse to create the work.
 
 Four different Work IDs should have been created. Make note of the work ID for each sales order.
 
-**Sales Order / Work ID / Work quantity**
-Sales Order 1 / Work ID 1 – 20 ea
-Sales Order 2 / Work ID 2 – 6 ea (sum of both lines)
-Sales Order 3 / Work ID 3 – 15 ea (sum of both lines)
-Sales ORder 4 / Work ID 4 – 35 ea (sum of both lines)
-
-### Mobile device flow execution
+- **Sales Order ID / Work ID / Work quantity**
+  - Sales Order 1 / Work ID 1 / 20 ea
+  - Sales Order 2 / Work ID 2 / 6 ea (sum of both lines)
+  - Sales Order 3 / Work ID 3 / 15 ea (sum of both lines)
+  - Sales ORder 4 / Work ID 4 / 35 ea (sum of both lines)
 
 Before executing the flow on the mobile device, ensure that only the created work is in Open status for Warehouse 51 and Work order type Sales order. If not, the results of the test may vary as the System direct picking will include all eligible work.
 
@@ -208,11 +206,18 @@ Before executing the flow on the mobile device, ensure that only the created wor
 1. Confirm that the only work displayed are the 4 **Work ID**'s created in the steps above.
 1. **Close** **Work** form
 
-Enter mobile device and select the menu where the System Directed Query Order is located **Outbound** > **Sales picking – System**. Based on our setup, the system will feed the user Work, sorted from highest Work line quantity to lowest, but less than 20 each on a single line.
+### Mobile device flow execution
+
+Based on the setup, the system will feed the user *Work*, sorted from highest Work line quantity to lowest, but less than 20 each on a single line.
 
 Remember that this setup will capture any work that has at least one line with less than 20 ea. Hence, if the Work has another line with exactly 20 ea or more than 20 ea, it will also be valid.
 
-Select the _Sales Picking – System_ menu and initiate the pick. After selecting the menu, the user will be presented with the Pick step of the Work ID 4. This is due to the System Directed Query Order setup, where we have specified that Work should be sequenced based on Work line Quantity - Descending.
+#### Mobile app
+
+1. Log on to the warehousing app with a user in **Warehouse** - *51*.
+1. Go to **Outbound > Sales Picking - System**.
+    - After selecting the menu, the user will be presented with the Pick step of the **Work ID** - *4*.
+        - This is due to the System Directed Query Order setup, where we have specified that Work should be sequenced based on Work line Quantity - Descending.
 
 Complete the necessary Pick and Put to Close the Work ID.
 
