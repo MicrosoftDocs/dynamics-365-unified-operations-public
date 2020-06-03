@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Work with hazardous material products
-description: This topic describes how to set hazardous material properties on release products, how to set stock limits on hazardous items, and how to include hazardous materials in a sales order.
+title: Hazardous materials in products, orders, shipments, and loads
+description: This topic describes how to set hazardous material properties on release products, how to set stock limits on hazardous items, and how to include hazardous materials in a sales order, shipment, or load.
 author: dasani-madipalli
 manager: tfehr
 ms.date: 06/10/2020
@@ -27,11 +27,11 @@ ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Release 10.0.11
 ---
 
-# Work with hazardous material products
+# Hazardous materials in products, orders, shipments, and loads
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to set hazardous material properties on release products, how to set stock limits on hazardous items, and how to include hazardous materials in a sales order.
+This topic describes how to set hazardous material properties on release products, how to set stock limits on hazardous items, and how to include hazardous materials in a sales order, shipment, or load.
 
 ## Set hazardous material specifications for products
 
@@ -149,7 +149,7 @@ For safety reasons, you may need to limit the total amount of a given product th
 
 The **Hazardous material stock limit report** page lets you monitor the stock levels of the hazardous materials in your warehouse locations to make sure they remain under the established, safe limits established here. For details, see [Hazardous material stock limit report](hazmat-reports.md#stock-limit-report).
 
-## Sales order transactions
+## Sales order transactions with hazardous materials
 
 To include a product classified as a hazardous material on a sales order, you must associate the relevant shipping carrier to the sales order. To do this, open the sales order, expand the **Delivery** FastTab, and set the **Shipping carrier** and **Carrier service** as needed.
 
@@ -157,7 +157,7 @@ The shipping carrier is also associated with the mode of delivery, so you must e
 
 Once a sales order is finalized and ready to be shipped, it can be released to warehouse to indicate the transfer between sales to warehouse operations.
 
-## Shipments
+## Shipments with hazardous materials
 
 ### View hazardous material scores for each shipment line
 
@@ -186,7 +186,7 @@ To check whether all the hazardous materials included in a shipment are suitable
 
 The system evaluates compatibility by checking the compatibility group assigned to each product included in the shipment. For more information, see [Hazardous material compatibility groups](#_Hazardous_material_compatibility).
 
-## Loads
+## Loads with hazardous materials
 
 ### View hazardous material scores for each load line
 
@@ -215,4 +215,4 @@ To check whether all the hazardous materials included in a load are suitable to 
 
 1. The system returns a message to inform you of the results of the check.
 
-The system evaluates compatibility by checking the compatibility group assigned to each product included in the shipment. For more information, see [Hazardous material compatibility groups](hazmat-setup.md#compatibility-groups).
+The system evaluates compatibility by checking the compatibility group assigned to each product included in the load. For more information, see [Hazardous material compatibility groups](hazmat-setup.md#compatibility-groups).

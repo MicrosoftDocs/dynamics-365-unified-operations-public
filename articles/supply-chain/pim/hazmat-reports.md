@@ -39,7 +39,6 @@ The following diagram shows the sequence of activities that occur when the syste
 
 ![Hazardous material reports sequence](media/hazmat-report-sequence.png "Hazardous material reports sequence")
 
-
 ## Set up hazardous materials reporting
 
 If you are shipping items with hazardous material, then you will usually need to generate specific reports to preserve safety and comply with hazardous materials regulations. To set up your reports:

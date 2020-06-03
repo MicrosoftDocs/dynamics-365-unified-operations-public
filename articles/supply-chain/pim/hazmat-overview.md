@@ -61,7 +61,7 @@ Each of these regulations has a list of dangerous goods list with reference code
 For more information about how to set up hazard material regulations and values, and assign these values to relevant products, see the following topics:
 
 - [Set up hazardous materials](hazmat-setup.md)
-- [Work with hazardous material products](hazmat-items.md)
+- [Hazardous materials in products, orders, shipments, and loads](hazmat-items.md)
 
 ## Warehouse management
 

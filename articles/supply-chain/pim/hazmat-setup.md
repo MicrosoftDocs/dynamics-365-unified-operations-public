@@ -125,7 +125,7 @@ To manage your hazardous material definitions:
 2. Select the regulation for which you want to set up a hazardous material definition.
 3. On the Action Pane, open the **Setup** tab and select **Hazardous materials**.
 4. Enter a **Material code** for the hazardous material definitions. This is the value you will select when you apply the material to a released product. The **Regulation code** is read-only and shows the regulation you selected previously.
-5. Use the rest of settings on this page to create and set up each of the hazardous materials that apply for your selected regulation. The settings offered here are a subset of the hazardous material settings offered for individual released products; see [Work with hazardous material products](hazmat-items.md) for details.
+5. Use the rest of settings on this page to create and set up each of the hazardous materials that apply for your selected regulation. The settings offered here are a subset of the hazardous material settings offered for individual released products; see [Hazardous materials in products, orders, shipments, and loads](hazmat-items.md) for details.
 
 <a name="classification-groups"></a>
 
@@ -232,7 +232,7 @@ One example of a hazardous material specification is its _stowage code_, which s
 
 These hazardous material specification values aren't specific to each legal entity, so you can have a set of common values that are shared among all your legal entities.
 
-Use [material codes](#hazmat-codes) to establish common collection of settings for each of these specifications as they apply to a given regulation. You can then apply the appropriate code to each released product as needed. For details about how to apply a hazardous material code to a specific released product, and how to make individual settings on that product for any of the specifications described here, see [Work with hazardous material products](hazmat-items.md).
+Use [material codes](#hazmat-codes) to establish common collection of settings for each of these specifications as they apply to a given regulation. You can then apply the appropriate code to each released product as needed. For details about how to apply a hazardous material code to a specific released product, and how to make individual settings on that product for any of the specifications described here, see [Hazardous materials in products, orders, shipments, and loads](hazmat-items.md).
 
 ### Hazardous material emergency response
 
