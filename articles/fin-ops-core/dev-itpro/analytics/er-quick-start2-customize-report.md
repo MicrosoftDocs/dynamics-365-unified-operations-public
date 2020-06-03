@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 ---
 
-# Customize the provided ER solution to generate a custom electronic document
+# Customize the provided ER format to generate a custom electronic document
 
 [!include[banner](../includes/banner.md)]
 
