@@ -67,7 +67,7 @@ Each regulation allows you to define a materials list that you can use as a temp
 
 You can define a print setup for each regulation, which allows you to define how the shipping text for an item is constructed. The print setup will be used on the released item to construct the shipping print text.
 
-To set up hazardous material regulations, go to **Product information management \> Setup \> Hazardous material shipping documentation \> Hazardous material regulation.** From here, you can create any number of regulations and configure each of them using the settings described in the following subsections.
+To set up hazardous material regulations, go to **Product information management \> Setup \> Hazardous material shipping documentation \> Hazardous material regulation**. From here, you can create any number of regulations and configure each of them using the settings described in the following subsections.
 
 ### Hazardous material regulation header
 
@@ -317,4 +317,4 @@ To set up values for this specification, go to **Product information management 
 
 This specification restricts the types of tunnels that a hazardous material can be transported through by specifying which types of tunnels must be used. Tunnel categories are established by applicable hazardous material transport regulations. This normally applies only to road transport.
 
-To set up values for this specification, go to **Product information management \> Setup \> Hazardous material shipping documentation \> Hazardous material tunnel.** From here, you can create any number of tunnel identifiers and configure each of them with an identifying code and a short description.
+To set up values for this specification, go to **Product information management \> Setup \> Hazardous material shipping documentation \> Hazardous material tunnel**. From here, you can create any number of tunnel identifiers and configure each of them with an identifying code and a short description.
