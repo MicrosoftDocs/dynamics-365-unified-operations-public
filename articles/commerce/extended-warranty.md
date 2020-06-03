@@ -115,7 +115,7 @@ To configure channel-specific setting in Commerce, follow these steps.
 
 ## Configure the warranty policy number sequence
 
-The warranty policy number sequence is a unique identifier of the policy.
+The warranty policy number sequence is a unique identifier of the policy. For more information on number sequences, see [Number sequences overview](./fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md).
 
 To configure the warranty policy number sequence in Commerce, follow these steps.
 
@@ -205,4 +205,10 @@ Run a pull job (P-Job) to upload the receipts to headquarters, which is required
 A warranty is a service provided for a specific, unique product. In Dynamics 365, a product can only be uniquely identified with a serial number.
 
 ## Additional resources
+
+[Set up retail products](set-up-retail-products.md)
+
+[Set up assortments](set-up-assortments.md)
+
+[Number sequences overview](./fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md)
 
