@@ -74,24 +74,24 @@ For each format, mark **Convert to PDF** check-box, select **Portrait** page ori
 
 ## Parameters configuration
 ### Print management configuration
-In **Accounts receivable** > **Setup** > **Forms** > **Forms setup**, in **General** FastTab, select **Print management** and define the references to the imported formats for:
+In **Accounts receivable** > **Setup** > **Forms** > **Forms setup**, in **General** tab, select **Print management** and define the references to the imported formats for:
 - **Customer invoice** select **Sales invoice (Excel) (BH)**;
 - **Free text invoice** select **Free text invoice (Excel) (BH)**
 
 ![Print management configuration](media/emea-bhr-print_management.jpg)
 
 ### Sales tax specification
-In **Accounts receivable** > **Setup** > **Forms** > **Forms setup**, in **General** FastTab, choose **Registration and company currenciy** value for **Sales tax specification** field.
+In **Accounts receivable** > **Setup** > **Forms** > **Forms setup**, in **General** tab, choose **Registration and company currenciy** value for **Sales tax specification** field.
 
 ![Sales tax specification](media/emea-bhr-tax-spec.jpg)
 
 ### Packing slip specification
-In **Accounts receivable** > **Setup** > **Forms** > **Forms setup**, in **Invoice** FastTab, mark **Print packing slip specifications** check-box.
+In **Accounts receivable** > **Setup** > **Forms** > **Forms setup**, in **Invoice** tab, mark **Print packing slip specifications** check-box.
 
 ![Packing slip specification](media/emea-bhr-packing-spec.jpg)
 
 ### Credit invoicing activation
-In **Accounts receivable** > **Setup** > **Accounts receivable parameters**, in **Updates** FastTab, enable **Apply the credit invoicing layout into sales and project invoice reports** option.
+In **Accounts receivable** > **Setup** > **Accounts receivable parameters**, in **Updates** tab, **Invoice** FastTab, enable **Apply the credit invoicing layout into sales and project invoice reports** option.
 
 ![Credit invoicing activation](media/emea-bhr-credit.jpg)
 
