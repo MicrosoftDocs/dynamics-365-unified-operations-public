@@ -30,7 +30,7 @@ ms.search.validFrom: 2016-02-28
 
 # Select data
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 
 The following example fetches all the columns in the first row of the **CustomerTable** table and prints the **AccountNum** column of the row.
@@ -62,12 +62,6 @@ next customerTable;
 info("AccountNum: " + customerTable.AccountNum);
 ```
 
-
-# Select statement
-
-[!include [banner](../includes/banner.md)]
-
-This topic describes the **select** statement in the X++ language.
 
 ## select statements
 
