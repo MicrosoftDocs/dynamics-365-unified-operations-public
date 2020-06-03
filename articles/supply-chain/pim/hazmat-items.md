@@ -184,7 +184,7 @@ To check whether all the hazardous materials included in a shipment are suitable
 
 1. The system returns a message to inform you of the results of the check.
 
-The system evaluates compatibility by checking the compatibility group assigned to each product included in the shipment. For more information, see [Hazardous material compatibility groups](#_Hazardous_material_compatibility).
+The system evaluates compatibility by checking the compatibility group assigned to each product included in the shipment. For more information, see [Hazardous material compatibility groups](hazmat-setup.md#compatibility-groups).
 
 ## Loads with hazardous materials
 
