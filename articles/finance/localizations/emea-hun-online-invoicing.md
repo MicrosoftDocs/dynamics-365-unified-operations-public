@@ -83,9 +83,7 @@ must be reported for the **lineExpressionIndicator** element.
 -   **Line:** 1
 
 -   **Unit of measure code:** km
-
->   This value is the value from the **Units** page for your legal entity
->   (**Organization administration** \> **Setup** \> **Units**).
+    This value is the value from the **Units** page for your legal entity (**Organization administration** \> **Setup** \> **Units**).
 
 **Important**: At the end of the list, add the following two lines.
 
@@ -125,7 +123,7 @@ reported.
 
 -   **Unit of measure code:** km
 
->   (This value is the value from the **Units** page for your legal entity.)
+    (This value is the value from the **Units** page for your legal entity.)
 
 Match all the units in your legal entity that you can find a related value for
 in the enumerated list.
@@ -209,15 +207,15 @@ package of data entities for the related tables.
 8.  Repeat steps 6 through 7 for each data entity in the package before you
     start the import.
 
->   For more information about data management, see Data management.
+    For more information about data management, see Data management.
 
-1.  You must now import data from the HU RTIR setup.zip file into the selected
+9.  You must now import data from the HU RTIR setup.zip file into the selected
     company. In the **Data management** workspace, select **Import**.
 
-2.  Select **Upload and add**, select the **HU RTIR setup.zip** file on your
+10.  Select **Upload and add**, select the **HU RTIR setup.zip** file on your
     computer, and upload it.
 
-3.  After the data entities are uploaded, on the Action Pane, select **Import**.
+11.  After the data entities are uploaded, on the Action Pane, select **Import**.
 
     ![](media/db014ed0ef3833ad5f6d185dfc274767.png)
 
@@ -274,22 +272,9 @@ make the EM functionality ready to use.
 
 ![](media/7f361cc65546048690cb181d4f21aac2.png)
 
->   p Search for a page C) Finance and Operations Preview Edit New Delete
->   Parameters Executable class settings p Filter Executable class Additional
->   fields evaluation Message items creation Add new electronic message items
->   Options Description Evaluate additional fields for me... Create electronic
->   message items Executable class name EMAdditionalFieldsEvaluationCo...
->   EMCreateltemsController HIJ Execution level Message Item Message Item Class
->   description Hungarian Online Invoicing addi... Hungarian Online Invoicing
->   elec... Records to include Filter CUSTOMER INVOICE JOURNAL Date "1/1/2020"
->   Invoice account PROJECT INVOICE Date "1/1/2020" Invoice account TAX EXEMPT
->   NUMBER TABLE Country/ reg ion HUN SALES TAX CODES Type of tax Standard VAT,
->   Reduce... TAX EXEMPT NUMBER TABLE (2) Country/ reg ion HUN SALES TAX CODES
->   (2) Type of tax Standard VAT, Reduce...
+4.  Select **OK**.
 
-1.  Select **OK**.
-
-2.  On the **Executable class settings** page, select the **Additional fields
+5.  On the **Executable class settings** page, select the **Additional fields
     evaluation** executable class that is associated with the
     **EMAdditionalFieldsEvaluationController_HU** executable class name, select
     **Parameters** on the Action Pane, and then, in the dialog box, define
@@ -297,21 +282,7 @@ make the EM functionality ready to use.
 
 ![](media/10be2d4c18269dacae656169846183fd.png)
 
->   p Search for a page C) Finance and Operations Preview Edit New Delete
->   Parameters Executable class settings p Filter Executable class Additional
->   fields evaluation Message items creation Additional fields evaluation
->   parameters Options Description Evaluate additional fields for me... Create
->   electronic message items Executable class name
->   EMAdditionalFieldsEvaluationCo.„ EMCreateltemsController HIJ Execution level
->   Message Item Message Item Class description Hungarian Online Invoicing
->   addi... Hungarian Online Invoicing elec... Parameters PARAMETERS Report
->   period start date 2/1/2024 Status for excluded items Excluded Status for
->   items requiring manual editi... Manual editing ADDITIONAL FIELDS Operation
->   field Operation Original message item field Original message item Last line
->   reference number field Last line reference number Modification index
->   Modification index
-
->   The following values must be set for the parameters.
+The following values must be set for the parameters.
 
 | **Parameter name**                        | **Value**                            |
 |-------------------------------------------|--------------------------------------|
@@ -323,29 +294,27 @@ make the EM functionality ready to use.
 | Last line reference number field          | Last line reference number           |
 | Modification index                        | Modification index                   |
 
-5. Select **OK**.
+6. Select **OK**.
 
->   Interoperation with the Hungarian Online invoicing system requires a
->   technical user name and password, and signature and replacement keys. There
->   are two options for storing this sensitive data:
+Interoperation with the Hungarian Online invoicing system requires a technical user name and password, and signature and replacement keys. There are two options for storing this sensitive data:
 
 -   Azure Key Vault storage
 
 -   Local storage
 
-1.  Go to **System administration** \> **Setup** \> **System parameters**, and
+7.  Go to **System administration** \> **Setup** \> **System parameters**, and
     set the **Use advanced certificate store** option to **No** to store
     sensitive data locally. Set the option to **Yes** to use Key Vault storage.
     For more information about how to set up Key Vault, see Setting up Azure Key
     Vault Client and Maintaining Azure Key Vault storage.
 
-2.  If you set the **Use advanced certificate store** option to **Yes** on the
+8.  If you set the **Use advanced certificate store** option to **Yes** on the
     **System parameters** page, you must set up the Key Vault parameters at
     **System administration** \> **Setup** \> **Key Vault parameters**.
 
 ![](media/5f588d91894096f2654f73ad90f9a2e6.png)
 
-1.  Go to **Tax** \> **Setup** \> **Parameters** \> **Online invoicing system
+9.  Go to **Tax** \> **Setup** \> **Parameters** \> **Online invoicing system
     parameters**, and specify the following information:
 
 -   Technical user name
@@ -356,21 +325,17 @@ make the EM functionality ready to use.
 
 -   Replacement key
 
-1.  If you set the **Use advanced certificate store** option to **Yes** on the
+10.  If you set the **Use advanced certificate store** option to **Yes** on the
     **System parameters** page, select related secrets on the **General** tab of
     the **Online invoicing system parameters** page.
 
 ![](media/af9bea89d21a9b42e45809569b1e5e62.png)
 
->   Alternatively, if you set the **Use advanced certificate store** option to
->   **No**, manually enter the technical user name and password, signature key,
->   and replacement key that you obtained for interoperation with the Hungarian
->   Online invoicing system. For more information, see the information about the
->   registration procedure.
+Alternatively, if you set the **Use advanced certificate store** option to **No**, manually enter the technical user name and password, signature key, and replacement key that you obtained for interoperation with the Hungarian Online invoicing system. For more information, see the information about the registration procedure.
 
 ![](media/ab487c003da3adc6841a67713d4766d3.png)
 
-1.  Go to **Tax** \> **Setup** \> **Parameters** \> **Electronic messages** \>
+11.  Go to **Tax** \> **Setup** \> **Parameters** \> **Electronic messages** \>
     **Web service settings**, and enter the following information to define the
     internet address for web services.
 
@@ -380,30 +345,27 @@ make the EM functionality ready to use.
 | Query invoice status | https://api-test.onlineszamla.nav.gov.hu/invoiceService/v2/queryTransactionStatus |
 | Token exchange       | https://api-test.onlineszamla.nav.gov.hu/invoiceService/v2/tokenExchange          |
 
->   Internet addresses are subject to change by the Hungarian Online invoicing
->   system. Therefore, we recommend that you check for actual internet addresses
->   on the official web site of the Hungarian Online invoicing system.
+Internet addresses are subject to change by the Hungarian Online invoicing system. Therefore, we recommend that you check for actual internet addresses on the official web site of the Hungarian Online invoicing system.
 
->   The website also has information about the actual *production* internet
->   addresses that you should set up.
+The website also has information about the actual *production* internet addresses that you should set up.
 
-1.  Go to **Tax** \> **Setup** \> **Parameters** \> **Electronic messages** \>
+12.  Go to **Tax** \> **Setup** \> **Parameters** \> **Electronic messages** \>
     **Message processing actions**, and select **Generate EM**.
 
-2.  In the **Number of message items per export** field, define the number of
+13.  In the **Number of message items per export** field, define the number of
     message items that can be included in one message. This number should not
     exceed 100.
 
-3.  In the **Items attached compression type** field, specify **None**, and set
+14.  In the **Items attached compression type** field, specify **None**, and set
     the **Attach files from output archive to items** option to **Yes**.
 
 ![](media/a41a87a6b4cb0718b711dff5f06615c5.png)
 
-1.  Go to **Ta**x \> **Setup** \> **Electronic messages** \> **Electronic
+15.  Go to **Ta**x \> **Setup** \> **Electronic messages** \> **Electronic
     message processing**, select **Online invoicing** processing, and then, on
     the **Batch** FastTab, select **Create batch**.
 
-2.  Set up security roles for **Online invoicing** processing. Different groups
+16.  Set up security roles for **Online invoicing** processing. Different groups
     of users might require access to **Online invoicing** processing. You can
     limit access to the processing, based on security groups that are defined in
     the system. Go to **Tax** \> **Setup** \> **Electronic messages** \>
