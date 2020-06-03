@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: APAC-IND-Newsletter-10-0-01
+title: APAC-IND-Newsletter-10-0
 description: This topic describes changes incorporated in Dynamics 365 Application version 10-0-01
 author: prabhatb
 manager: Wangcheng
