@@ -94,3 +94,7 @@ In **Accounts receivable** > **Setup** > **Forms** > **Forms setup**, in **Invoi
 In **Accounts receivable** > **Setup** > **Accounts receivable parameters**, in **Updates** FastTab, enable **Apply the credit invoicing layout into sales and project invoice reports** option.
 
 ![Credit invoicing activation](media/emea-bhr-credit.jpg)
+
+## Invoices generation
+
+Having all the steps above completed, invoices based on sales orders and free text invoices can be printed in accordance with Bahraini legal requirements.
