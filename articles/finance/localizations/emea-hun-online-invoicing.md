@@ -167,7 +167,7 @@ have the same structure of lookup fields.
 When you've finished setting up conditions, change the value of the **State**
 field to **Completed**, save your changes, and close the page.
 
-\#\# \<a name="import"\>\</a\>Import a package of data entities that includes a predefined EM setup
+## Import a package of data entities that includes a predefined EM setup
 ===================================================================================================
 
 EM functionality is provided to maintain different electronic reporting
@@ -413,7 +413,7 @@ make the EM functionality ready to use.
     security group is defined for the processing, only a system admin can see
     the processing on the **Electronic messages** page.
 
-## \<a name="financialreasons"\>\</a\>Set up financial reasons for RTIR
+## Set up financial reasons for RTIR
 
 For each invoice that is reported to the Hungarian Online invoicing system, a
 specific operation type must be defined and transmitted in the
@@ -456,7 +456,7 @@ reason that has a value of **Modify** in the **Operation** field.
 Finance automatically runs actions that are included in the processing, based on
 the status of messages and message items.
 
-### \<a name="additionalfields"\>\</a\>Additional fields for message items
+### Additional fields for message items
 
 All message items have additional fields that are required for processing. The
 system automatically fills in values for additional fields when it runs actions.
@@ -484,8 +484,7 @@ This procedure walks you through the RTIR process.
     specific action, select the **Choose action** check box, and then, in the
     **Action** field, select the action to run.
 
-#\#\# Exclude invoice reporting in RTIR
-----------------------------------------
+### Exclude invoice reporting in RTIR
 
 To exclude an invoice from processing in RTIR, follow these steps.
 
@@ -524,7 +523,7 @@ To postpone reporting of an invoice in RTIR, follow these steps.
 You can always reverse the status of **Excluded** or **Postponed** message items
 by selecting **Update to initial status**.
 
-## \<a name="appendix1"\>\</a\>Appendix 1: Electronic message setup for RTIR
+## Appendix 1: Electronic message setup for RTIR
 
 This appendix provides information about how the EM functionality should be set
 up so that it supports **Online invoicing** processing. Use this information to
