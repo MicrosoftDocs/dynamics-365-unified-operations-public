@@ -168,7 +168,6 @@ When you've finished setting up conditions, change the value of the **State**
 field to **Completed**, save your changes, and close the page.
 
 ## Import a package of data entities that includes a predefined EM setup
-===================================================================================================
 
 EM functionality is provided to maintain different electronic reporting
 processes for different document types. For more information about electronic
