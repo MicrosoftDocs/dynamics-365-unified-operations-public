@@ -35,6 +35,11 @@ Supply Chain Management provides a variety of reports related to hazardous mater
 
 These reports, with the exception of the multi-model dangerous goods report, use the delivery method defined on the shipment to locate the regulation to use for printing the item shipping text. The mode of delivery is associated with the shipping carrier and the carrier service. You must set up a shipping carrier and service and link that to a mode of delivery. The mode of delivery is related to the hazardous materials regulation.
 
+The following diagram shows the sequence of activities that occur when the system generates hazardous material reports.
+
+![Hazardous material reports sequence](media/hazmat-report-sequence.png "Hazardous material reports sequence")
+
+
 ## Set up hazardous materials reporting
 
 If you are shipping items with hazardous material, then you will usually need to generate specific reports to preserve safety and comply with hazardous materials regulations. To set up your reports:

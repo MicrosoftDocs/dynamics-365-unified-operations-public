@@ -157,8 +157,6 @@ The shipping carrier is also associated with the mode of delivery, so you must e
 
 Once a sales order is finalized and ready to be shipped, it can be released to warehouse to indicate the transfer between sales to warehouse operations.
 
-The following diagram shows the sequence of activities that occur when the system generates hazardous material reports.
-
 ## Shipments
 
 ### View hazardous material scores for each shipment line

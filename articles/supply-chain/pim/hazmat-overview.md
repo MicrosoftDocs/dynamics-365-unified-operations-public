@@ -33,16 +33,18 @@ ms.dyn365.ops.version: Release 10.0.11
 
 To remain compliant with shipping and transport regulations, organizations that ship materials classified as dangerous goods must include additional paperwork with their shipments. The hazardous materials feature lets customers store information related to released items. This information can then be used to help prepare shipping documentation. The sending organization must have their own processes and procedures for managing the dangerous goods shipping process. Dynamics 365 Supply Chain Management is just a tool that can help in generating the required documents.
 
-The hazardous materials feature is set up within product information management and provides documents that can be printed through warehouse management.
+![Hazardous material functionality setup and use](media/hazmat-overview.png "Hazardous material functionality setup and use")
 
-> [!IMPORTANT]
-> Dynamics 365 Supply Chain Management helps you manage the shipping of dangerous goods by setting up shipping documents and reference information related to hazardous products. The system does not, by itself, make you compliant with regulations; it is only a tool to help with your overall program.
+The hazardous materials feature is set up within product information management and provides documents that can be printed through warehouse management.
 
 Broadly, there are two main areas where you will review, set up, and use this functionality:
 
 - Product-information management, where you set up the codes to be applied to a released product.
 - Warehouse management, where you will work with additional shipping documents to print for shipments.
 
+
+> [!IMPORTANT]
+> Dynamics 365 Supply Chain Management helps you manage the shipping of dangerous goods by setting up shipping documents and reference information related to hazardous products. The system does not, by itself, make you compliant with regulations; it is only a tool to help with your overall program.
 ## Product information management
 
 Product information management provides a range of setup tables where you can enter reference information for the various dangerous goods lists for road, air, and sea freight.
