@@ -198,6 +198,8 @@
                   href: data-entities/dual-write/in-house-assets.md
                 - name: Integrated worker, job, and position
                   href: data-entities/dual-write/integrated-hr.md
+                - name: Inventory availability
+                  href: data-entities/dual-write/inventory-availability.md
             - name: Support for dual-write
               items:
                 - name: Support for Field Service solutions and Project Service Automation solutions
