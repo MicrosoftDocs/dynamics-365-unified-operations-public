@@ -5,7 +5,7 @@ title: Channel database extensions
 description: This topic explains how to extend the channel database.
 author: mugunthanm
 manager: AnnBe
-ms.date: 04/30/2020
+ms.date: 06/03/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-retail
@@ -194,7 +194,7 @@ In this scenario we will explain how to create a new table and add it to the cha
     GO
 
 > [!NOTE]
-> If the new extension table data need to be pulled to Retail headquarters using Commerce Data exchange (CDX) then the extension table must include the REPLICATIONCOUNTERFROMORIGIN identity column ([REPLICATIONCOUNTERFROMORIGIN] [int] IDENTITY(1,1) NOT NULL,), this is required for CDX pull job. REPLICATIONCOUNTERFROMORIGIN is not required if the data is pushed from Retail headquarters to channel database, needed only if the data is pulled from channel database to Retail headquarters.
+> If the new extension table data needs to be pulled to Retail headquarters using Commerce Data Exchange (CDX), then the extension table must include the REPLICATIONCOUNTERFROMORIGIN identity column ([REPLICATIONCOUNTERFROMORIGIN] [int] IDENTITY(1,1) NOT NULL,). This is required for a CDX pull job. REPLICATIONCOUNTERFROMORIGIN is not required if the data is pushed from Retail headquarters to channel database, this is only needed if the data is pulled from channel database to Retail headquarters.
 
 ## Extending an existing table
 
