@@ -156,15 +156,15 @@ Two POS features enable sales associates to sell warranty item during the custom
 
 The following image shows an example of a POS terminal screen for a purchase.
 
-![Example ofa prompt to add a warranty on a POS terminal screen for a current purchase](./media/ew-add-warranty.png)
+![Example of a prompt to add a warranty on a POS terminal screen for a current purchase](./media/ew-add-warranty.png)
 
 The following image shows an example of a prompt to add a warranty item on a POS terminal screen for a current purchase.
 
 ![Example of](./media/ew-sell-warranty.png)
 
-The following image shows an example of a prompt to add a warranty item on a POS terminal screen for an existing purchase (a warrantable item sold previously). 
+The following image shows an example of the "add warranty to existing transaction" feature on a POS terminal screen for a warrantable item sold previously. 
 
-![Example of of a prompt to add a warranty on a POS terminal screen for an existing purchase](./media/ew-add-warranty-existing.png)
+![Example of the "add warranty to existing transaction" feature on a POS terminal screen](./media/ew-add-warranty-existing.png)
 
 ## Process warranty transactions
 
