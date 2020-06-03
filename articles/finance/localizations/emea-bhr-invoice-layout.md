@@ -52,7 +52,7 @@ In the **Feature management** workspace, enable the following features:
 For more information how to enable features, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Import
-Import the following Electronic Reporting formats into the system:
+In **Electronic reporting** workspace, import the following Electronic Reporting formats from the repository:
  - Sales invoice (Excel) (BH);
  - Free text invoice (Excel) (BH).
  
