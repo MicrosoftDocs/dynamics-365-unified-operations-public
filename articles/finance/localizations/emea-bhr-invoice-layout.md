@@ -81,7 +81,11 @@ In **Accounts receivable** > **Setup** > **Forms** > **Forms setup**, in **Gener
 ![Print management configuration](media/emea-bhr-print_management.jpg)
 
 ### Sales tax specification
-In **Accounts receivable** > **Setup** > **Forms** > **Forms setup**, in **General** FastTab, choose **Registration and company currencies** value for **Sales tax specification** field.
+In **Accounts receivable** > **Setup** > **Forms** > **Forms setup**, in **General** FastTab, choose **Registration and company currenciy** value for **Sales tax specification** field.
 
 ![Sales tax specification](media/emea-bhr-tax-spec.jpg)
 
+### Packing slip specification
+In **Accounts receivable** > **Setup** > **Forms** > **Forms setup**, in **Invoice** FastTab, mark **Print packing slip specifications** check-box.
+
+![Packing slip specification](emea-bhr-packing-spec.jpg)
