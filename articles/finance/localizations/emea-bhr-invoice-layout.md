@@ -51,7 +51,7 @@ In the **Feature management** workspace, enable the following features:
 
 For more information how to enable features, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
 
-## Import
+## Import of Electronic Reporting configurations
 In **Electronic reporting** workspace, import the following Electronic Reporting formats from the repository:
  - Sales invoice (Excel) (BH);
  - Free text invoice (Excel) (BH).
@@ -71,5 +71,11 @@ In **Electronic reporting** workspace > **Electronic reporting destinations**, c
 For each format, mark **Convert to PDF** check-box, select **Portrait** page orientation and enable printing to **Screen**.
 
 ![Enable conversion to PDF](media/emea-bhr-pdf.jpg)
-aa
+
+## Parameters configuration
+### Print management configuration
+In **Accounts receivable** > **Setup** > **Forms** > **Forms setup**, in **General** FastTab, select **Print management** and define the references to the imported formats for:
+- **Customer invoice** select **Sales invoice (Excel) (BH)**;
+- **Free text invoice** select **Free text invoice (Excel) (BH)**
+
 
