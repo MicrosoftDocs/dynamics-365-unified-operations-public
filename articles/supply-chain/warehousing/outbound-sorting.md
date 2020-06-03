@@ -228,7 +228,7 @@ This menu item allows users to move the sorted inventory items to the shipping l
 
 ### Mobile device menu
 
-Add the *Mobile device menu item* for *Pallet build* to the Outbound menu of the mobile device.
+Add the *Mobile device menu item* for **Pallet build** and **Load from Sorting** to the Outbound menu of the mobile device.
 
 1. Go to **Warehouse management > Setup > Mobile device > Mobile device menu**
 1. Add the **Pallet build** menu item that you just created to a *Mobile device menu*
@@ -240,6 +240,8 @@ Add the *Mobile device menu item* for *Pallet build* to the Outbound menu of the
     - Select *Pallet build* from the **MENU STRUCTURE** list then select the *UP* or *DOWN* arrows to move the menu item into the desired position on the mobile device menu.
 
 1. Select **Save**
+
+1. Repeat the above steps to add **Load from Sorting** to the Outbound menu.
 
 ### Location directives
 
