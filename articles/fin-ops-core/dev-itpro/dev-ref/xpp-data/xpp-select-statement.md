@@ -30,7 +30,7 @@ ms.search.validFrom: 2016-02-28
 
 # Select statement
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic describes the **select** statement in the X++ language.
 
