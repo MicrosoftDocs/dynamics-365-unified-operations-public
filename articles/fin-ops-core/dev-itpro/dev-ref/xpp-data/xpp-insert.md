@@ -31,7 +31,7 @@ ms.search.validFrom: 2016-02-28
 
 # Insert data
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 You can use SQL statements, either interactively or within source code, to insert one or more rows into tables stored in the database. This topic describes the select statement withing source code. The options for inserting new rows are:
 
