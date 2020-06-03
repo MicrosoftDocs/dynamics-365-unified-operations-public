@@ -31,7 +31,7 @@ ms.search.validFrom: 2016-02-28
 
 # Update data
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic describes the update method and the doUpdate method in the X++ language. 
 
