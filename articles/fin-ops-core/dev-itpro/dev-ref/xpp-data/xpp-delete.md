@@ -31,7 +31,7 @@ ms.search.validFrom: 2016-02-28
 
 # Delete data
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic describes the delete method and doDelete method in the X++ language.
 
