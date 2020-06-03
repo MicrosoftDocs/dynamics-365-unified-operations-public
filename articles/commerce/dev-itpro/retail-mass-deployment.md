@@ -5,7 +5,7 @@ title: Mass deployment of self-service components
 description: This topic explains how you can use self-service to do silent servicing updates and initial deployments. It also explains some aspects of special deployment. 
 author: jashanno
 manager: AnnBe
-ms.date: 01/07/2020
+ms.date: 06/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -57,7 +57,7 @@ Note that silent servicing maintains all components that are currently installed
 
 ### Examples of commands for silent servicing
 
-This section shows examples of commands that are used for self-service mass deployment. These commands work for all the standard self-service installers, such as the installers for Modern POS (both the installer that has offline support and the installer that doesn't have offline support), Hardware station, and Commerce Scale Unit.
+This section shows examples of commands that are used for self-service mass deployment. These commands work for all the standard self-service installers, such as the installers for Modern POS (both the installer that has offline support and the installer that doesn't have offline support), Hardware station, and Commerce Scale Unit (self-hosted).
 
 #### Silently update the current installation of Modern POS
 
@@ -70,9 +70,9 @@ ModernPOSSetup_V72.exe -S
 > [!NOTE]
 > A configuration file is still required for Retail Store Scale Unit. However, the installer keeps all the values that are currently installed, whenever it can.
 
-#### Silently update the current installation of Commerce Scale Unit
+#### Silently update the current installation of Commerce Scale Unit (self-hosted)
 
-The following command silently updates the current installation of Commerce Scale Unit by using a specific configuration file. (This configuration file might not be in the same location as the executable file for the installer.) This command skips the prerequisite check and moves on to the installation steps. We recommend that you use this command only for testing and development purposes.
+The following command silently updates the current installation of Commerce Scale Unit (self-hosted) by using a specific configuration file. (This configuration file might not be in the same location as the executable file for the installer.) This command skips the prerequisite check and moves on to the installation steps. We recommend that you use this command only for testing and development purposes.
 
 ```Console
 StoreSystemSetup_V72.exe -S -C "C:\Temp\StoreSystemSetup_V72_Houston.xml" -SkipPrerequisiteCheck
