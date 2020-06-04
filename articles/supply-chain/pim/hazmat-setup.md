@@ -147,7 +147,7 @@ To set up hazardous material classification groups, go to **Product information 
 | **Division code** | Associate a hazardous material [division code](#divisions). |
 | **Packing group code** | Associate a [packing group code](#packing-group). |
 | **Transport category code** | Associate a [transport category code](#transport-category). |
-| **Multiplier** | Enter a multiplier. <!--KFM: give more info here --> |
+| **Multiplier** | Enter the hazardous material multiplier that applies for this class and division of hazardous materials according to the applicable regulation. This multiplier is used as part of the formula for calculating the total *hazardous material points* included in a load or shipment. For more information about hazardous material points and this multiplier, see [Material management FastTab](hazmat-items.md#material-management) |
 
 <a name="classes"></a>
 

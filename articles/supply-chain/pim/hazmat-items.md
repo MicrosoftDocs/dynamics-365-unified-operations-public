@@ -72,7 +72,7 @@ The following table describes the settings available on the **Descriptions** Fas
 | --- | --- |
 | **Proper shipping name** | Enter the standard description for the material as specified by the applicable regulation. |
 | **Technical name** | Select the common or generic name for the material that may have been established for your company. |
-| **N.O.S.** | Mark this as a not-otherwise-specific (N.O.S.) name for the item. N.O.S. shipping names cover groups of similar chemicals and materials with particular end uses that aren't specifically listed by name in the hazmat table. <!-- KFM: A better description is needed here. -->  |
+| **N.O.S.** | Mark this to indicate that the value specified for the **Proper shipping name** is a not-otherwise-specific (N.O.S.) name for the item. N.O.S. shipping names cover groups of similar chemicals and materials with particular end uses that aren't necessarily specifically listed by name in the hazmat table in a specific regulation. |
 
 ### Item ship text translation FastTab
 
@@ -104,10 +104,37 @@ The following table describes the settings available on the **Material managemen
 | **Description** | Displays the description defined for the group selected in the **Packing group** field (read only). |
 | **Packing Descriptions** | Select the applicable packing description code, which references a description of how the product must be packed. |
 | **Hazardous material labels** | Select a code that references the applicable dangerous goods label that should be applied to the product. |
-| **Limited quantity** | <!-- KFM: Final description needed from Lachlan -->  |
-| **Quantity** | Enter the maximum quantity (in the specified **Unit**) of this product that will be permitted per shipment if you enable the **Limited quantity** option. |
-| **Multiplier** | <!-- KFM: Final description needed from Lachlan -->  |
-| **Unit** | Select the unit of measure that applies to the specified **Quantity**. This will default to the inventory unit for the item. The quantity limit and hazardous points calculations will convert from this unit to the shipping units as needed based on the conversion rates established in your system. |
+| **Limited quantity** | Set this to **Yes** to report the total weight of hazardous material content for this item that is included in each load and load line.  |
+| **Quantity** | Enter the quantity of hazardous material contained in this product (using the specified **Unit**). This will be used to calculate the total hazardous material score for loads and shipments that include this product. |
+| **Multiplier** | Enter the multiplier that applies when calculating the hazardous material score for each load line that includes this product. This value is specified by the applicable regulation according to the type of hazardous material contained in this product. |
+| **Unit** | Select unit of measure that applies to the specified **Quantity** of hazardous material included in this product. This will be used to calculate the total hazardous material score for loads and shipments that include this product. |
+
+#### How the hazardous material score is calculated
+
+Several of the values specified on the **Material management** FastTab for a product are used to calculate a *hazardous material score* for each load line that includes that product. The score is calculated as follows:
+
+Hazardous material score = *&lt;QtyFromLine&gt;* * *&lt;UnitConversion&gt;* * *&lt;HazmatQty&gt;* * *&lt;Multiplier&gt;*
+
+Where:
+
+- *&lt;QtyFromLine&gt;* is the quantity of product specified for a load line.
+- *&lt;UnitConversion&gt;* is a conversion factor for converting between the unit used for the load line quantity and the **Unit** specified for a product on the product's **Material management** FastTab.
+- *&lt;HazmatQty&gt;* is the **Quantity** specified for a product on the product's **Material management** FastTab.
+- *&lt;Multiplier&gt;* is the **Multiplier** specified for a product on the product's **Material management** FastTab.
+
+This score is reported for each load line that contains a product where these values are specified.
+
+#### How the hazardous material weight is calculated
+
+Loads and load lines that contain products where Limited quantity is set to **Yes** on the **Material management** FastTab will display the total hazardous material weight. The total weight for each load line is calculated as follows:
+
+Hazardous material weight = *&lt;QtyFromLine&gt;* * *&lt;ProductWeight&gt;* *&lt;UnitConversion&gt;*
+
+Where:
+- *&lt;QtyFromLine&gt;* is the quantity of product specified for a load line.
+- *&lt;ProductWeight&gt;* is the weight specified for the product.
+- *&lt;UnitConversion&gt;* is a conversion factor for converting between the unit used for the load line quantity and the *&lt;ProductWeight&gt;*.
+
 
 ### Transport information FastTab
 
@@ -161,16 +188,16 @@ Once a sales order is finalized and ready to be shipped, it can be released to w
 
 ### View hazardous material scores for each shipment line
 
-When viewing **Shipment details**, you can see the hazardous materials points values calculated for each of the load lines included in that shipment. To view the scores:
+When viewing **Shipment details**, you can see the total hazardous material weight and point values calculated for each of the load lines included in that shipment. To view the scores and weights:
 
 1. Go to **Warehouse management \> Shipments \> All shipments**.
 
 1. Select a shipment to open its **Shipment details** page.
 
-1. Inspect the lines in the **Load lines** FastTab, where you can see the scores in the following columns:
+1. Inspect the lines in the **Load lines** FastTab, where you can see the hazardous material calculations in the following columns:
 
-    - **Hazardous material points**: This calculation is based on the products that are marked as hazardous material in the released product setup. It will take the quantity on the load line and reference to the multiplier on the released product [material management setup](#material-management).
-    - **Limited quantity net weight:** This calculation is based on the products that are marked as hazardous material in the released product setup. It will take the quantity on each load line and reference the weight on the released product [material management setup](#material-management) if this item is marked as limited quantity.
+    - **Hazardous material points**: This the hazardous material score for the load line. It is calculated according to the rules and values established for the applicable regulation and in the released product setup. It will take the quantity on the load line and reference the multiplier on the released product [material management setup](#material-management).
+    - **Limited quantity net weight:** For products marked as limited quantity due to their hazardous material content, this value is the total net weight of hazardous content included on the load line. This calculation is based on the products that are marked as hazardous material in the released product setup. It will take the quantity on each load line and reference the weight on the released product [material management setup](#material-management) if this item is marked as limited quantity.
 
 ### Check for compatibility among hazardous materials included in a shipment
 
@@ -190,18 +217,18 @@ The system evaluates compatibility by checking the compatibility group assigned 
 
 ### View hazardous material scores for each load line
 
-When viewing **Load details**, you can see the hazardous materials points values calculated for each of the load lines included in that load. To view the scores:
+When viewing **Load details**, you can see the total hazardous material weight and point values calculated for that load, and for each load line. To view the scores and weights:
 
 1. Go to **Warehouse management \> Shipments \> All loads**.
 
 1. Select a load to open its **Load details** page. (You can also open load details by selecting a link from a related shipment.)
 
-1. In the **Load** FastTab, you can review the total scores for entire load by inspecting the following fields:
+1. In the **Load** FastTab, you can review the total hazardous material scores and weights for entire load by inspecting the following fields:
 
-    - **Hazardous material points total**: This calculation is based on the products that are marked as hazardous material in the released product setup. It will take the quantity on the load line and reference to the multiplier on the released product [material management setup](#material-management).
-    - **Limited quantity net weight:** This calculation is based on the products that are marked as hazardous material in the released product setup. It will take the quantity on the load lines and reference the weight on the released product [material management setup](#material-management) if this item is marked as limited quantity.
+    - **Hazardous material points**: This the hazardous material score for the load. It is calculated according to the rules and values established for the applicable regulation and in the released product setup. It will take the quantity included in the load and reference the multiplier on the released product [material management setup](#material-management).
+    - **Limited quantity net weight:** For products marked as limited quantity due to their hazardous material content, this value is the total net weight of hazardous content included in the load. This calculation is based on the products that are marked as hazardous material in the released product setup. It will take the quantity in each load and reference the weight on the released product [material management setup](#material-management) if this item is marked as limited quantity.
 
-1. To review the scores for each individual line, go to the **Load lines** FastTab, which provides values for each line similar to those described for the previous step.
+1. To review the scores and weights for each individual line, go to the **Load lines** FastTab, which provides values for each line similar to those described in the previous step for the entire load.
 
 ### Check for compatibility among hazardous materials included in a load
 
