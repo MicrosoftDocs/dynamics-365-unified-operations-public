@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 
 ---
 
-# Inventory aging report
+# Inventory aging report examples and logic
 
 [!include [banner](../includes/banner.md)]
 
@@ -281,7 +281,7 @@ If you were to run the same report again, but this time with both **Site** and *
 </tbody>
 </table>
 
-This time, **Site 1** is split into two rows for warehouse **11** and **12**. However **Inventory value quantity**, **Inventory value** and **Average unit cost** are the same, because warehouse isn't a financial inventory dimension. Note that the quantity distribution of **Site 1** is also different. In the first report run, the system ignores the transfer order that happens within the same site, and deducts the quantity of the sales invoice from the bucket **3/31/2020 - 3/1/2020** in **Site 1**. In the second report run, the system deducts the quantity in the sales invoice from the bucket **5/8/2020 - 5/1/2020** in **Warehouse 12**.
+This time, **Site 1** is split into two rows (one each for warehouse **11** and **12**). However **Inventory value quantity**, **Inventory value** and **Average unit cost** are the same, because warehouse isn't a financial inventory dimension. Note that the quantity distribution of **Site 1** is also different. In the first report run, the system ignores the transfer order that happens within the same site, and deducts the quantity of the sales invoice from the bucket **3/31/2020 - 3/1/2020** in **Site 1**. In the second report run, the system deducts the quantity in the sales invoice from the bucket **5/8/2020 - 5/1/2020** in **Warehouse 12**.
 
 ## Effects of inventory closing
 

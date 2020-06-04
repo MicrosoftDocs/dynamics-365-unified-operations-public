@@ -587,10 +587,10 @@
           href: cost-management/adjust-hand-inventory-cost-values.md
         - name: Inventory value storage report
           href: cost-management/inventory-value-report-storage.md
-        - name: Inventory aging report
-          href: cost-management/inventory-aging-report.md
         - name: Inventory aging report storage
           href: cost-management/inventory-aging-report-storage.md
+        - name: Inventory aging report examples and logic
+          href: cost-management/inventory-aging-report.md
       - name: Manufacturing accounting
         items:
         - name: BOM calculations
