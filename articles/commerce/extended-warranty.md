@@ -86,11 +86,11 @@ The following table contains values and descriptions for the time properties on 
 | Unit of time | Day(s), Week(s), Month(s), Year(s) | This value specifies the unit of time to be used for the warranty. |
 | Length of time | Positive integer value | This value specifies the duration of the warranty (for example, the values for a 2-year warranty would be **Unit of time** = **Year(s)** and **Length of time** = **2**). |
 
-The following image shows an example of the time properties on the **Warranty** FastTab.
+The following image shows an example of the time properties on the **Warranty** FastTab of the **Prodduct details** page.
 
 ![Example of time properties on the **Warranty** FastTab](./media/ew-time-properties.png)
 
-The following table contains values and descriptions for the time properties on the **Released product details** page.
+The following table contains values and descriptions for the time properties on the **Warranty** FastTab of the **Released product details** page.
 
 | **Property name** | **Values** | **Description** |
 |-------------------|------------|-----------------|
@@ -196,7 +196,10 @@ The following image shows an example of ???
 
 ## Warranty policies
 
-When an extended warranty is sold, a warranty policy entity is automatically created. The warranty policy number can be shared with the customer to give them a reference for the purchased warranty item. Warranty policy properties include the warranty effective start date, expiration date, terms and conditions, warrantable item serial number, and more for the warranty sold.
+When an extended warranty is sold, a warranty policy entity is automatically created. The warranty policy number can be shared with the customer to give them a reference for the purchased warranty item. Warranty policy properties include the warranty effective start date, expiration date, terms and conditions, and warrantable item serial number, for the warranty sold.
+
+>[!NOTE]
+>Warranty policy properties are generated automatically during policy entity creation and currently cannot be manually configured or edited.
 
 The following table contains warranty policy properties, values, and descriptions.
 
