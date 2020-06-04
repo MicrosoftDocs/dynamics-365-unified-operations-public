@@ -5,7 +5,7 @@ title: Commerce runtime (CRT) services
 description: This topic describes the Commerce runtime (CRT) services, which are a collection of portable .NET libraries that contain the core business logic for the commerce channel and pricing functionality.
 author: mugunthanm 
 manager: AnnBe
-ms.date: 05/23/2018
+ms.date: 06/04/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -97,7 +97,7 @@ For more information about each service, see the CRT request/response document i
 For extension scenarios, you can override any of the requests in the service class. For example, to change the customer search flow, extend the **CustomersSearchServiceRequest** request from the **CustomerService** service.
 
 > [!NOTE]
-> CRT extension code must not refer or use any of the CRT business logic classes, methods or handlers (classes from Runtime.Workflow, Runtime.Services, Runtime.DataServices etc.) these classes are not backward compatible and during upgrade this may break your extensions. Extension can only use Request, response and Entities classes from Runtime.*.Messages, Runtime.Framework, Runtime.Data and Runtime.Entities. Don't customize or consume the service class only consume the request/response/entities in the extension classes. 
+> CRT extension code should not refer to or use any of the CRT business logic classes, methods, or handlers (such as classes from Runtime.Workflow, Runtime.Services, or Runtime.DataServices). These classes are not backward compatible, which could break extensions during an upgrade. Extensions should only use request, response, and entity classes from Runtime.*.Messages, Runtime.Framework, Runtime.Data, and Runtime.Entities.
 
 ## Sample service class implementation
 
