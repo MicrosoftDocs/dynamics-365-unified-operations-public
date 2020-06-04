@@ -13,7 +13,7 @@ ms.technology:
  
 # optional metadata 
  
-ms.search.form: HcmJob   
+ms.search.form: HcmJob, HcmPersonnelManagementWorkspace
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: anbichse

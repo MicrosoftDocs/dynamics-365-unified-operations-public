@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: HRCCompGrid, HRCCompRefPointSetup, HRMCompEligibility, HRMCompEvent, HRMFixedCompPlanTable
+ms.search.form: HRCCompGrid, HRCCompRefPointSetup, HRMCompEligibility, HRMCompEvent, HRMFixedCompPlanTable, HcmCompensationWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
