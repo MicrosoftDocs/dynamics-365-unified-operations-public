@@ -5,7 +5,7 @@ title: Regulatory Configuration Services (RCS) - Globalization features
 description: This topic explains how to use Microsoft Regulatory Configuration Services (RCS) and the Global repository to create and use Globalization features. 
 author: JaneA07
 manager: AnnBe
-ms.date: 05/22/2020
+ms.date: 06/04/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -72,7 +72,7 @@ To use a Globalization feature, you must first import it from the the Global rep
 ## Access Globalization features
 
 1. Make sure that the **Globalization features** feature is turned on in Feature management, as described earlier in this topic.
-2.  'Open the new **Globalization Features** workspace, and then, under **Features**, select the **e-Invoicing** tile'.
+2. Open the new **Globalization Features** workspace, and then, under **Features**, select the **e-Invoicing** tile.
 
     ![Global Features workspace](./media/RCS_GlobalF_2%20Feature%20wrkspace.JPG)
 
@@ -84,7 +84,7 @@ To use a Globalization feature, you must first import it from the the Global rep
 
 You can add a new Globalization feature by deriving it from an existing feature that has been published or shared.
 
-1. Open the **Import feature from Global repository** page, by clicking the **Import** menu item.
+1. Select **Import** to open the **Import feature from Global repository** page.
 
     ![Import feature from Global repository page](./media/RCS_GlobalF_4%20Feature%20import%20form%20GR.JPG)
 
@@ -111,7 +111,7 @@ You can add a new Globalization feature by deriving it from an existing feature 
 7. Review the feature components to determine whether updates are required:
 
     - Review the configurations, in case you need to customize the Electronic reporting (ER) formats and their binding with format mappings for the feature version.
-    - Review the setup, in case you need to customize the Actions tab, Applicability rules tab, or Variables tab for the feature version.
+    - Review the setup, in case you need to customize the **Actions** tab, **Applicability rules** tab, or **Variables** tab for the feature version.
 
 8. On the **Versions** tab, select an **Effective from** date, and enter a description if the **Description** field is blank.
 9. Select **Change status** to complete the feature. Completed features can be made available for a specific environment so that they can be used in Globalization services, or they can be published to the Global repository.
