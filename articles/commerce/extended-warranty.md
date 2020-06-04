@@ -105,10 +105,10 @@ The following image shows an example of the price range properties on the **Rele
 
 A laptop warrantable item (product) has a base price $999 and there are two laptop warranty items as follows:
 
-- Warranty_1 has a lower limit of $500 and upper limit of $1000 and price range base value of **Base price**.
-- Warranty_2 has a lower limit of $1001 and upper limit of $2000 and price range base value of **Base price**.
+- Warranty_1 has a lower limit of $500 and upper limit of $1000 and **Price range base** value of **Base price**.
+- Warranty_2 has a lower limit of $1001 and upper limit of $2000 and **Price range base** value of **Base price**.
 
-In this case, a prompt to add Warranty_1 will be sent when the laptop with value $999 is added to cart in POS, since the price of the laptop falls within the lower and upper limit values for Warranty_1.
+In this case, a prompt to add Warranty_1 will be sent at the POS when the laptop warrantable item with a base price of $999 is added to the cart, since the price of the laptop falls within the lower and upper limit values for Warranty_1.
 
 >{!NOTE]
 > For the example above, if you want prompts to be sent for both Warranty_1 and Warranty_2 regardless of the laptop (warrantable item) price, you would set the **Price range base** value to **None**.
