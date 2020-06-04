@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Data upgrade process for AX2012 to D365 For Finance and Operations on-premises
-description: This topic provides the process for upgrading AX2012 databases to D365 for Finance and Operations on-premises 10.0.x.  
+title: Data upgrade process for AX 2012 to Dynamics 365 Finance + Operations (on-premises)
+description: This topic provides the process for upgrading AX 2012 databases to Dynamics 365 Finance + Operations (on-premises) version 10.0.x.
 author: faix
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 06/04/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,21 +23,21 @@ ms.search.scope: Operations
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: osfaixat
-ms.search.validFrom: 2018-10-31 
-ms.dyn365.ops.version: 10.0.x
+ms.search.validFrom: 2020-06-30 
+ms.dyn365.ops.version: 10.0.0
 
 ---
 
-#  Data upgrade process for AX2012 to D365 For Finance and Operations on-premises
+#  Data upgrade process for AX 2012 to Dynamics 365 Finance + Operations (on-premises)
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides the process for upgrading Microsoft Dynamics AX 2012 databases to D365 for Finance and Operations on-premises 10.0.x. Upgrade is currently only supported from either Dynamics AX 2012 R2 or Dynamics AX 2012 R3. 
+This topic provides the process for upgrading Microsoft Dynamics AX 2012 databases to Dynamics 365 Finance + Operations (on-premises) version 10.0.x. Upgrade is currently only supported from either Dynamics AX 2012 R2 or Dynamics AX 2012 R3. 
 
 > [!IMPORTANT]
-> This guide only explains the process of performing a data upgrade. For information on how to do a code upgrade please check the upgrade guides available for cloud versions. The code upgrade tooling is only available through LCS.
+> This guide only explains the process of performing a data upgrade. For information on how to do a code upgrade please check the upgrade guides available for cloud versions. The code upgrade tooling is only available through Lifecycle Services (LCS).
 
-## AX2012 upgrade to D365 for Finance and Operations On-premise
+## AX 2012 upgrade to Dynamics 365 Finance + Operations (on-premises)
 
 To upgrade, there are two possible paths that are currently supported.
 
@@ -52,17 +52,17 @@ An overview of each path is given below:
 
 ### Prerequisites
 
-1. [Sign up for a Lifecycle Services trial or partner project](./upgrade-overview-2012.md#sign-up-for-a-lifecycle-services-trial-or-partner-project)
+1. [Sign up for a Lifecycle Services trial or partner project](upgrade-overview-2012.md#sign-up-for-a-lifecycle-services-trial-or-partner-project)
 
 1. For each AX 2012 release, please update to the latest available cumulative update before upgrading to the latest Finance and Operations application release.
 
-1. Install the pre-upgrade checklist, more details can be found [here](./prepare-data-upgrade.md#installation)
+1. Install the pre-upgrade checklist, more details can be found [here](prepare-data-upgrade.md#installation)
 
-1. Go through the data upgrade preparation steps. You can skip the **Setup User Mapping** step. This is only relevant for cloud hosted upgrades.   
+1. Go through the data upgrade preparation steps. You can skip the **Setup User Mapping** step. This is only relevant for cloud-hosted upgrades.   
 
-1. Take a backup of your database (i.e. MicrosoftDynamicsAX). For more information, see [Create a Full Database Backup](https://docs.microsoft.com/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server?view=sql-server-2016)
+1. Take a backup of your database (i.e. MicrosoftDynamicsAX). For more information, see [Create a Full Database Backup](https://docs.microsoft.com/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server?view=sql-server-2016).
 
-1.  In Lifecycle Services (LCS), go to the Shared Assets Library (right side of the screen).
+1.  In LCS, go to the Shared Assets Library (right side of the screen).
 
 1.  Under **Select asset type**, choose **Downloadable VHD**, and download all parts of the VHD package that closely matches the version you will be upgrading to in your on-premises environment. The image requires a high amount of disk space, so be sure to download and extract on a drive with adequate free space. 
 
@@ -70,7 +70,7 @@ An overview of each path is given below:
 
 1.  Using Hyper-V, launch a virtual machine (VM) and attach the VHD. (Note that the machine must be Generation 1.)
 
-1.  Connect to the VM. You can find the credentials in [Running the Virtual Machine (VM) locally](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/dev-tools/access-instances#running-the-virtual-machine-vm-locally).
+1.  Connect to the VM. You can find the credentials in [Running the Virtual Machine (VM) locally](../dev-tools/access-instances.md#running-the-virtual-machine-vm-locally).
 
 1.  Depending on your planned on-premises target version of 10.0.x and the VHD image you downloaded, you may need to download and apply the required Application and Platform Update from the Shared Asset Library under **Select asset type** and **Software deployable package**. For more information, see [Install deployable packages from the command line](../deployment/install-deployable-package.md).
 
@@ -97,9 +97,9 @@ An overview of each path is given below:
 
 1.  Paste the file wherever you want and unzip it. For example: c:\\D365FFOUpgrade\\
 
-1.  Open a Command Prompt as Administrator and change the directory to the unzipped folder in the previous step.
+1.  Open a command prompt as administrator and change the directory to the unzipped folder in the previous step.
 
-1.  Using the Command Prompt from the previous step, execute the following commands:
+1.  Using the command prompt from the previous step, execute the following commands:
 
     a.  `AxUpdateInstaller.exe generate -runbookid=upgrade -runbookfile=upgrade.xml -topologyfile=defaulttopologydata.xml -servicemodelfile=defaultservicemodeldata.xml`
 
@@ -109,15 +109,15 @@ An overview of each path is given below:
 
 1.  When the upgrade process has finished successfully, back up the newly upgraded database. If you have customizations from ISVs or VARs, check if you have to run some post data upgrade scripts.
 
-1. Restore the database into your on-premises environment's SQL Server, with a different name from the AX2012 (for example, AXDBupgraded). The restored database will need to be configured. Follow the steps in [Configure the Finance and Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
+1. Restore the database into your on-premises environment's SQL Server, with a different name from the AX 2012 (for example, AXDBupgraded). The restored database will need to be configured. Follow the steps in [Configure the Finance and Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
 
-1. Deploy a new D365 for Finance and Operations On-premise environment.
+1. Deploy a new Dynamics 365 Finance + Operations (on-premises) environment.
 
     1. If you have customizations:
 
         1.  In LCS, go to the Shared Assets Library.
 
-        1.  Under **Select asset type**, choose **Model** and download: Dynamics 365 for Finance and Operations on-premises, Version 10.0.x Demo Data. Select the version closest to the 10.0.x environment that you will deploy as the on-premises baseline.
+        1.  Under **Select asset type**, choose **Model** and download: Dynamics 365 Finance and Operations on-premises, Version 10.0.x Demo Data. Select the version closest to the 10.0.x environment that you will deploy as the on-premises baseline.
 
         1.  Use this file to create a new database (typically AXDB) using the restore backup option from SQL server. For more information, see [Restore a Database Backup Using SSMS](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017).
         
@@ -140,7 +140,7 @@ An overview of each path is given below:
 
     1. If you didn't have customizations:
 
-        a.  (Optional) Rename your old database (typically AXDBold) and then rename your new database (typically AXDB). Make sure that in the next step you input the name of the upgraded DB.
+        a.  (Optional) Rename your old database (typically AXDBold) and then rename your new database (typically AXDB). Make sure that in the next step you input the name of the upgraded database.
 
         b.  In LCS, set up a new environment and deploy it with version 10.0.x (Redeploy). For more information, see [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12.md).
 
