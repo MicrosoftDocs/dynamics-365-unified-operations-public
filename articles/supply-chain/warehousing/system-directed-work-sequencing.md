@@ -116,10 +116,10 @@ You will release the sales order to the warehouse to create the work.
     - Select **OK** to close the FlyOut.
         - Make note of the Sales order number.
 
-1. Add a new line to the sales order and reserve the inventory, enter and select the following:
+1. Add a new line to the sales order and reserve the inventory, enter, and select the following:
     - **Item number** - *M9200*
     - **Quantity** - *20*
-    - Select **Inventory** n the FastTab's **Toolbar**  then select **Reservation** from the list.
+    - Select **Inventory** on the FastTab **Toolbar**  then select **Reservation** from the list.
         - On the **Reservation** form, select **Reserve lot** to reserve the inventory.
         - **Close** the **Reservation** form.
 
@@ -197,7 +197,7 @@ Four different Work IDs should have been created. Make note of the work ID for e
   - Sales Order 1 / Work ID 1 / 20 ea
   - Sales Order 2 / Work ID 2 / 6 ea (sum of both lines)
   - Sales Order 3 / Work ID 3 / 15 ea (sum of both lines)
-  - Sales ORder 4 / Work ID 4 / 35 ea (sum of both lines)
+  - Sales Order 4 / Work ID 4 / 35 ea (sum of both lines)
 
 Before executing the flow on the mobile device, ensure that only the created work is in Open status for Warehouse 51 and Work order type Sales order. If not, the results of the test may vary as the System direct picking will include all eligible work.
 
@@ -218,17 +218,13 @@ Remember that this setup will capture any work that has at least one line with l
 1. Go to **Outbound > Sales Picking - System**.
     - After selecting the menu, the user will be presented with the Pick step of the **Work ID** - *4*.
         - This is due to the System Directed Query Order setup, where we have specified that Work should be sequenced based on Work line Quantity - Descending.
+    - Complete the necessary Pick and Put to Close the Work ID.
+    - Next, **Work ID** - *3* is presented to the worker. One of its work lines is next in the sequence based on Work line Quantity. Complete the Pick and Put to Close the Work ID.
+    - Next, **Work ID** - *2* is presented to the worker. This work's pick line is next in the sequence based on our setup. Complete the Pick and Put to Close the Work ID.
+    - No work should be presented to the user after this completion. **Work ID** - *1* is not eligible for this mobile device menu item, because it has been specified on the Query that only Work headers with Work lines less than 20 should be considered.
 
-Complete the necessary Pick and Put to Close the Work ID.
+## Tips
 
-Next, Work ID 3 is presented to the worker. One of it&#39;s work lines is next in the sequence based on Work line Quantity. Complete the Pick and Put to Close the Work ID.
+The **System directed work sequence queries is inclusive**, which is important to know with certain setups. For example, if the user wishes for a certain menu item to process only work with work unit in eaches and it specifies that on the Range, all Work with at least one Work line with Work unit eaches will be fed to the user. This will therefore also include all Work with other Work units besides *eaches* (box or pallet) and it will not exclude those. It will exclude only Work where no Work lines have Work Unit set as each.
 
-Next, Work ID 2 is presented to the worker. This work&#39;s pick line is next in the sequence based on our setup. Complete the Pick and Put to Close the Work ID.
-
-No work should be presented to the user after this completion. Work ID 1 is not eligible for this mobile device menu item, because it has been specified on the Query that only Work headers with Work lines less than 20 should be considered.
-
-## Tips <!--HHM: in line comments in code -->
-
-The **System directed work sequence queries is**  **inclusive** , which is important to know with certain setups. For example, if the user wishes for a certain menu item to process only work with work unit in eaches and it specifies that on the Range, all Work with at least one Work line with Work unit eaches will be fed to the user. This will therefore also include all Work with other Work units besides _eaches_ (box or pallet) and it will not exclude those. It will exclude only Work where no Work lines have Work Unit set as each.
-
-- --Hence, in the example from this demo, the Work ID 4 was also captured by the query. It was created with 2 lines, one for 25 ea and another one for 10 ea. The Work was still be assigned to the user because at least one Work line had less than 20 ea. This can be prevented with Work breaks, depending on the scenario.
+- Hence, in the example from this scenario, the Work ID 4 was also captured by the query. It was created with 2 lines, one for 25 ea and another one for 10 ea. The Work was still be assigned to the user because at least one Work line had less than 20 ea. This can be prevented with Work breaks, depending on the scenario.
