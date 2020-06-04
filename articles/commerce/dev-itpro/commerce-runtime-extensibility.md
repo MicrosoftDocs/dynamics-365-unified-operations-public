@@ -5,7 +5,7 @@ title: Commerce runtime (CRT) and Server extensibility
 description: This topic describes various ways that you can extend the commerce runtime (CRT) and Commerce Scale Unit. It explains the concept of extension properties, and shows how to add them to a CRT entity both with and without persistence. It also shows how to add an action to a Commerce Scale Unit controller and add a controller for an entity.
 author: mugunthanm
 manager: AnnBe
-ms.date: 07/13/2018
+ms.date: 06/04/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -121,7 +121,7 @@ Attributes are also supported (configuration-driven development). For extension 
 </table>
 
 > [!NOTE]
-> CRT extension code must not refer or use any of the CRT business logic classes, methods or handlers (classes from Runtime.Workflow, Runtime.Services, Runtime.DataServices etc.) these classes are not backward compatible and during upgrade this may break your extensions. Extension can only use Request, response and Entities classes from Runtime.*.Messages, Runtime.Framework, Runtime.Data and Runtime.Entities.
+> CRT extension code should not refer to or use any of the CRT business logic classes, methods, or handlers (such as classes from Runtime.Workflow, Runtime.Services, or Runtime.DataServices). These classes are not backward compatible, which could break extensions during an upgrade. Extensions should only use request, response, and entity classes from Runtime.*.Messages, Runtime.Framework, Runtime.Data, and Runtime.Entities.
 
  
 **Manually deploying the CRT extension for 7.1 with May update and later**
