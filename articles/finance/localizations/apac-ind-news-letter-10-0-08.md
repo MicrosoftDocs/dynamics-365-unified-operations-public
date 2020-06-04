@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: APAC-IND-Newsletter-10-0-08
-description: This topic describes changes incorporated in Dynamics 365 Application version 10-0-08
+title: APAC India GST Localization Newsletter 10.0.08
+description: This topic describes changes incorporated in Dynamics 365 Application version 10.0.08
 author: prabhatb
 manager: Wangcheng
 ms.date: 05/31/2020
@@ -33,9 +33,9 @@ ms.dyn365.ops.version:
 
 This newsletter includes a summary of the new features and critical bug fixes released in version 10.0.08 for India.
 You can learn more about the shipped features in 
--[ What's new or changed in Finance and Operations version ] (https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-8)
+-[ What's new or changed in Finance and Operations version ] (https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-8)
 
-# New Features
+## New Features
 ## Enable users to change tax rate type in purchase invoice 
 In India, the invoice received from the supplier may have different tax rates from the purchase order. 
 Now it is supported by tax rate type (please refer to the newsletter of 10.0.5).
@@ -62,10 +62,10 @@ Recently, we’ve observed several customers encountered posting failure due to 
 The error message like “Posting results for journal batch number ### Error: Number sequence group: "###", 
 transaction type: "Debit/Credit note" has not been set up for the GST reference number sequence group of tax information "###".” 
 In order to resolve the issue, please follow (https://docs.microsoft.com/en-us/dynamics365/finance/localizations/apac-ind-gst-define-gstin-numbers-number-sequences)  
-and (https://docs.microsoft.com/en-us/dynamics365/finance/localizations/apac-ind-gst-reference-groups)
+and (https://docs.microsoft.com/dynamics365/finance/localizations/apac-ind-gst-reference-groups)
 to setup the GST number sequence correctly.
 
-# Critical Fixes 
+## Critical Fixes 
 
 - Tax amount showing in Purchase Order totals and Purchase Invoice totals even the Reverse charge mechanical is applied 100%.
 - In Purchase Order after defining the tax information, we are not able to see the tax account lines in view distribution form. 
@@ -76,7 +76,7 @@ to setup the GST number sequence correctly.
 -	Assessable value is not updated correctly in vendor invoice form when excel file  imported through data entity.
 
 
-# Upcoming critical fixes in 10.0.9 
+## Upcoming critical fixes in 10.0.9 
 
 - Free text invoice print not working for Non-GST Invoices. 
 -	Tax is not getting calculated when we import the data through data entity file. 
