@@ -49,13 +49,10 @@ As per new amended GST Law : The following sequence is required to be maintained
 ### New settlement rule can be configured as below :  
 ### Path :- Tax > Setup > Sales tax hierarchies > View > Setoff rules for sales tax hierarchies  
 
-![](media/New set off Rules-10.0.11.png)
+![](media/GST-tax-settlement-new-rules-1-10-0-11.PNG)
 
 New tax settlement change has been incorporated in Tax settlement  hierarchy. User can define tax set off hierarchy for a tax component
-with any  tax settlement priority. In existing solution by default each tax component recoverable amount will settle against tax payable 
-amount of own tax component first and later on with other tax components. Going forward user can define set off priority of a tax component 
-with any other tax component.For example  user can set up settlement priority of Input tax credit of CGST again IGST  first and then with CGST, 
-similarly SGST can be set off against IGST first, than with SGST. Previously IGST, CGST and SGST  can be settle first with own tax components only.  
+with any  tax settlement priority. In existing solution by default each tax component recoverable amount will settle against tax payable amount of own tax component first and later on with other tax components. Going forward user can define set off priority of a tax component with any other tax component.For example  user can set up settlement priority of Input tax credit of CGST again IGST  first and then with CGST,similarly SGST can be set off against IGST first, than with SGST. Previously IGST, CGST and SGST  can be settle first with own tax components only.  
 
 ## DATA entity for Stock transfer order transaction 
 Stock transfer transaction upload through data entity is provided so that user having large size  stock transfer order can use 
