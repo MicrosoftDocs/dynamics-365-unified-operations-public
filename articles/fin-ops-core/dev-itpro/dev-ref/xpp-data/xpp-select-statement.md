@@ -277,7 +277,7 @@ select
     validTimeState(dateFrom, dateTo)
     *
     from history;
-recid = history.getFieldValue("RecId");
+recid = history.RecId;
 info('RecId:' + int642Str(recid));
 ```
 
