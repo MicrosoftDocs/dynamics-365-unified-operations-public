@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: APAC-IND-Newsletter-10-0-02
+title: APAC India GST Localization Newsletter 10.0.02
 description: This topic describes changes incorporated in Dynamics 365 Application version 10-0-02
 author: prabhatb
 manager: Wangcheng
@@ -33,16 +33,16 @@ ms.dyn365.ops.version:
 
 This newsletter includes a summary of the new features and critical bug fixes released in version 10.0.02 for India.
 You can learn more about the shipped features in 
--[ What's new or changed in Finance and Operations version ] (https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-2)
+-[ What's new or changed in Finance and Operations version ] (https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-2)
 
-# New Features
+## New Features
 ## Auto completion when editing tax formulas or conditions
 Advanced editor is enabled for Global Tax Engine formulas/conditions to improve user productivity
 How to enable: Electronic Reporting -> Tax Configuration -> Configurations -> User Parameter -> Enable advanced formula editor = 'Yes'
 
  ![](media/GST-advance-editor-1-10-0-02.PNG)
 
-# Critical Fixes 
+## Critical Fixes 
 
 - Fixed exchange rate in sales order header is used for invoice posting but not used for GSTR 1 report 
 -	Invoice date and GST tax document date are different when posting credit note invoice 
@@ -54,7 +54,8 @@ How to enable: Electronic Reporting -> Tax Configuration -> Configurations -> Us
 -	GSTR report UQC field from HSN file is not showing value fully as length is 10 characters 
 -	Production order form gets hanged while clicking production order 
 -	Tax adjustment value is not posted when voucher number allocation on posting parameter is enabled 
--	GST is not updated in tax document when consolidated invoice with misc. charges having GST  is generated / posted  by consolidation of 2 or more product receipts or purchase orders  
+-	GST is not updated in tax document when consolidated invoice with misc. charges having GST  is generated / posted 
+  by consolidation  of 2 or more product receipts or purchase orders  
 -	Tax journal does not update the correct tax component and amount  
 -	State Place of Supply is wrong for report GSTR 2 
 -	IGST credit posted through tax journal is showing as recoverable in tax settlement form 
@@ -67,7 +68,7 @@ How to enable: Electronic Reporting -> Tax Configuration -> Configurations -> Us
 -	Tax document form fails to open from the Stock Transfer order 
 -	Tax column has no value in accounts payable module invoice journal report
 
-# Upcoming critical fixes in 10.0.3 
+## Upcoming critical fixes in 10.0.3 
 
 - Subtotal amount value wrong in Adjustment form in Settle and post sales tax
 -	Adjusted withholding Tax origin amount not reflecting in the posted withholding tax enquiry form
