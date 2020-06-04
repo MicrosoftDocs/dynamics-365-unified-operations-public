@@ -36,7 +36,7 @@ You can learn more about the shipped features in
 
 ## New Features
 ## New Configuration 
-The following configurations, which you can get from Shared Asset Library in LCS and use it in version 10.0.5, are available. You can also find all the released configuration with details here: https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/apac-ind-gst.
+The following configurations, which you can get from Shared Asset Library in LCS and use it in version 10.0.5, are available. You can also find all the released configuration with details here: https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/apac-ind-gst.
  
 - Taxable Document.version.82.xml
 - Taxable Document (India).version.82.143.xml
