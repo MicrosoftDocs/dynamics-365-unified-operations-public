@@ -105,7 +105,7 @@ Setup TDS exchange rate as TDS and Accounting currency exchange rate type as Def
 -	When user posted Free text Invoice with GST tax amount and do rounding off setup under  currencies  system not
   rounding invoice amount
   for customer sub-ledger account but customer main ledger is rounding off correctly in voucher.  
-  ###Path >General ledger module>> currencies >>currencies Go to INR currencies >> Go to Rounding rules >>General rounding 
+  ### Path >General ledger module>> currencies >>currencies Go to INR currencies >> Go to Rounding rules >>General rounding 
   rule 0.01 >> Sales order rounding rule 1.00 
 -	TDS section code and invoice number is not  appearing in TDS inquiries 
  
