@@ -45,7 +45,7 @@ Commerce Scale Unit (self-hosted) is a set of features that supports selling pro
 Before you begin setting up Commerce Scale Unit (self-hosted), take a moment determine whether this option is the right fit for your store. Commerce Scale Unit (self-hosted) is a deployment choice intended for retailers with store locations that have slow or intermittent internet connectivity, who need the flexibility of the Commerce Scale Unit deployed on premises in each store. 
 In scenarios where a stable internet connection is available and there is low latency to the cloud environment, then it is recommended to consider operating the store as Cloud only, without setting up a Commerce Scale Unit. Consider the following before you begin:
 
--   Carefully choose the store topology configuration for each store to either operate with a self-hosted or cloud hosted Commerce Scale Unit topology. Re-configuring a live store from a self-hosted to cloud hosted Commerce Scale Unit or vice versa may cause a service disruption.
+-   Carefully choose the store topology configuration for each store to either operate with a self-hosted or cloud-hosted Commerce Scale Unit topology. Re-configuring a live store from a self-hosted to cloud-hosted Commerce Scale Unit or vice versa may cause a service disruption.
 -   Commerce Scale Unit will support both MPOS and Cloud POS within the store.
 -   Commerce Scale Unit (self-hosted) can be set up in a one-box deployment topology on a single computer (recommended) or in a multi-box topology on different computers.
 -   If you choose the one-box option, most of the settings are pre-configured. For a multi-box topology, you will have to manually configure connections between components.
