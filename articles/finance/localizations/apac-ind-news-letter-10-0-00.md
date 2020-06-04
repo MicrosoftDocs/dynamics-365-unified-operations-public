@@ -49,29 +49,29 @@ You can differentiate customer GST registration number from vendor GST registrat
 
 You can choose to determine the tax rate based on invoice date for the purchase transactions, like purchase invoice.
 
-![](media/Tax rate on Invoice date 10.0.png)
+![](media/GST-invoice-date-rate-setup-2-10-0-00.PNG)
 
 You can create Non-GST transaction, and it will be reflected in GSTR.
 
-![](media/Non GST transaction 10.0.png)
+![](media/GST-non-gst-transaction-3-10-0-00.PNG)
 
 ## Import/export tax setup
 
 You can import/export tax setup for Rate, Reverse Charge Percentage, Load on Inventory Percentage, etc. 
 
-![](media/Import Export tax setup 10.0.png)
+![](media/GST-import-export-tax-setup-4-10-0-00.PNG)
 
 ## GTE designer enhancement
 
 You can multi-select lookup columns, and search available columns.
 
-![](media/Design enhancement-10.0.png)
+![](media/GST-gte-multi-select-5-10-0-00.PNG)
 
 # Critical Fixes 
 
 - Cannot synchronize extended configuration if you change the data model in your extended tax document.
 
-  ![](media/Cannot syncronise-10.0.png)
+  ![](media/GST-extended-configuration-6-10-0-00.PNG)
 
 - Exclude the transactions without GST from GSTR. If there is no GST applicable for the transaction (unless it's exempt or Non-GST),
   it will not be in the GSTR
