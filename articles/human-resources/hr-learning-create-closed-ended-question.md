@@ -13,7 +13,7 @@ ms.technology:
  
 # optional metadata 
  
-ms.search.form: KMAnswerCollection, KMAnswer, KMQuestion   
+ms.search.form: KMAnswerCollection, KMAnswer, KMQuestion, HcmLearningWorkspace  
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: anbichse

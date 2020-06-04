@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: ESSLeaveofAbsenceRequestEntry
+ms.search.form: ESSLeaveofAbsenceRequestEntry, EssWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
