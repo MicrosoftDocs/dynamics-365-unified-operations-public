@@ -88,3 +88,23 @@ info(strFmt("Count of unblocked customers: %1", nRecId));
 There are some limitations of **expression select statements**:
 + The `join` keyword isn't supported in **expression select statements**. 
 + You can only mention one table in an **expression select statement**, therefore subselects are not supported as a workaround to the unsupported `join` keyword.
+
+
+
+### select statements on fields
+
+You can use a **select** statement in a lookup on a field. After a **select** statement that fetches a record in a table, you can enter **.fieldName** to reference a field in the table. These **select** statements must be used in expressions. A *normal **select** statement* differs from a *field **select** statement*:
+
+-   The field **select** statement operates directly on a table.
+-   The normal **select** statement operates on a table buffer variable.
+
+### select field example
+
+```xpp
+// Prints the NameRef field from the selected customer
+print (select CustTable order by AccountStatement).AccountStatement;
+
+// Uses the balance field from the customer with AccountNum 3000
+if ((select custTable where CustTable.AccountNum == '3000').CreditMax < 5000)
+print "This customer has a credit maximum less than $5000.";
+```

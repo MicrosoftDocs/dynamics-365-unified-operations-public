@@ -7,22 +7,22 @@ author: robinarh
 manager: AnnBe
 ms.date: 11/08/2019
 ms.topic: article
-ms.prod: 
+ms.prod:
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
-# ROBOTS: 
+# ms.search.form:
+# ROBOTS:
 audience: Developer
-# ms.devlang: 
+# ms.devlang:
 ms.reviewer: rhaertle
 ms.search.scope: Operations
-# ms.tgt_pltfrm: 
+# ms.tgt_pltfrm:
 ms.custom: 150273
 ms.search.region: Global
-# ms.search.industry: 
+# ms.search.industry:
 ms.author: robinr
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
@@ -32,9 +32,25 @@ ms.search.validFrom: 2016-02-28
 
 [!include [banner](../../includes/banner.md)]
 
-You can use SQL statements, either interactively or within source code, to retrieve and modify data that is stored in the database. These topics describe using the [X++ select statement](xpp-select.md). You use the following types of statements for data manipulation:
+You can use SQL statements, either interactively or within source code, to retrieve and modify data that is stored in the database. You can use the **select** statement for these tasks:
 
-- **select** – Select the data to view or modify.
-- **insert** – Add one or more new records to a table. The **insert** statement inserts one record at a time. The **array insert**, **insert\_recordset**, and **RecordInsertList** statements insert multiple records at the same time.
-- **update** – Modify data in existing table records. The **update** statement updates one record at a time. The **update\_recordset** statement updates multiple records at the same time.
-- **delete** – Remove existing records from a table. The **delete** statement deletes one record at a time.
+- [Select data](xpp-select.md): Select the data to view or modify.
+
+    - [select statement](xpp-select-statement.md): Fetches records.
+
+- [Insert data](xpp-insert.md): Add one or more new records to a table. You can use these statement to insert records:
+
+    - [insert](xpp-insert.md#insert-statement) statement: Inserts one record at a time.
+    - [array insert](xpp-insert.md#array-insert-statement) statement: Inserts multiple records at the same time.
+    - [insert\_recordset](xpp-insert.md#insert-statement) statement: Inserts multiple records at the same time.
+    - [RecordInsertList](xpp-insert.md#insert-statement) statement: Inserts multiple records at the same time.
+
+- [Update data](xpp-update.md): Modify data in existing table records.
+    - [update](xpp-update.md#update-statement) statement: Updates one record at a time.
+    - [update\_recordset](xpp-update.md#update-recordset-statement) statement: Updates multiple records at the same time.
+
+- [Delete data](xpp-delete.md): Remove existing records from a table.
+
+    - [delete](xpp-delete.md) statement: Deletes one record at a time.
+
+You can also use the [SysDa classes](../sysda.md) to retrieve and modify data. The extensible SysDa API provides almost all the data access possibilities that are available in X++.
