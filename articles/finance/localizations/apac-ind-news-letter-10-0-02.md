@@ -40,7 +40,7 @@ You can learn more about the shipped features in
 Advanced editor is enabled for Global Tax Engine formulas/conditions to improve user productivity
 How to enable: Electronic Reporting -> Tax Configuration -> Configurations -> User Parameter -> Enable advanced formula editor = 'Yes'
 
- ![](media/Auto completion-10.0.2.png)
+ ![](media/GST-advance-editor-1-10-0-02.PNG)
 
 # Critical Fixes 
 
