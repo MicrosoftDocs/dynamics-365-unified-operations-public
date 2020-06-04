@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: APAC-IND-Newsletter-10-0-03
+title: APAC India GST Localization Newsletter 10.0.03
 description: This topic describes changes incorporated in Dynamics 365 Application version 10-0-03
 author: prabhatb
 manager: Wangcheng
@@ -33,11 +33,11 @@ ms.dyn365.ops.version:
 
 This newsletter includes a summary of the new features and critical bug fixes released in version 10.0.03 for India.
 You can learn more about the shipped features in 
--[ What's new or changed in Finance and Operations version ] (https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-3)
+-[ What's new or changed in Finance and Operations version ] (https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-3)
 
-# New Features
+## New Features
 ## The document of GST solution is updated 
-(https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/apac-ind-gst)
+(https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/apac-ind-gst)
 
 ## GSTR report performance improvement
 GSTR report generating overall time reduced 30%  by replacing line by line data fetch with dataset operation.
@@ -48,13 +48,13 @@ Besides delete one single record and delete all records, delete select records i
 ![](media/GST-delete-multiple-tax-lookup-1-10-0-03.PNG)
 
 ## Enable tax calculation based on accounting currency for import/export order
-Refer the [what's new of 10.0.3 ] (https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-3#calculate-tax-in-accounting-currency-for-importexport-order)
+Refer the [what's new of 10.0.3 ] (https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-3#calculate-tax-in-accounting-currency-for-importexport-order)
 
 ![](media/GST-tax-based-accounting-currency-2-10-0-03.PNG	)
 
 ## Please use Tax transaction inquiry for TDS/TCS instead of Post withholding tax
 
-# Critical Fixes 
+## Critical Fixes 
 
 - Create an export order , there are both BCD and SWS, when it's get posted, there is only posting of BCD. 
   Following configuration is needed to solve the issue.
@@ -75,7 +75,7 @@ Refer the [what's new of 10.0.3 ] (https://docs.microsoft.com/en-us/dynamics365/
 -	Invoice number does not come in posted withholding tax inquiry after posting withholding tax adjustment journal
 
 
-# Upcoming critical fixes in 10.0.4 
+## Upcoming critical fixes in 10.0.4 
 
 - GSTR-2 mismatch in figures when invoice journal is posted with multi-line transaction 
 -	Standard sales tax does not get calculated in account payable
