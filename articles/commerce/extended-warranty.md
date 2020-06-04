@@ -125,6 +125,10 @@ To configure channel-specific setting in Commerce, follow these steps.
     - Clear the check box to disable the warranty item prompt. When disabled, no prompt for the warranty item will be shown when the warrantable item is added to the cart.
 1. Run the **1070** job to sync the data to the channel.
 
+The following image shows an example of the **Prompt for warranty** check box on the **Channel specific** page. 
+
+![Example of the **Prompt for warranty** check box on the **Channel specific** page](./media/ew-channel-specific.png)
+
 ## Configure the warranty policy number sequence
 
 The warranty policy number sequence is a unique identifier of the policy. For more information on number sequences, see [Number sequences overview](../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md).
@@ -158,6 +162,10 @@ To set up a warranty group in Commerce, follow these steps.
 1. Select **Publish** to publish the warranty group.
 1. Run the **1040** job to sync the data to channel.
 
+The following image shows an example of the **Warranty products**, **Warrantable products**, and **Applicable channels** FastTabs on the **Warranty groups** page. 
+
+![Example of the FastTabs on the **Warranty groups** page](./media/ew-warranty-group.png)
+
 ## Sell warranty items at the POS
 
 Two POS operations enable sales associates to sell warranty item during the customer purchase workflow.
@@ -180,7 +188,7 @@ The following image shows an example of the "add warranty to existing transactio
 
 ## Process warranty transactions
 
-For warranties added in cash and carry transactions, sales associates must proceed through statement posting so that the transactions are posted in Commerce headquarters. Then Commerce users can go to **Retail and Commerce \> Products and categories \> Warranty \> Process warranty transactions** to run the "Process warranty transactions" job that will process warranty transactions and create warranty policy.
+For warranties sold in cash and carry transactions, once the transaction is posted in Commerce headquarters, Commerce users can go to **Retail and Commerce \> Products and categories \> Warranty \> Process warranty transactions** to run the "Process warranty transactions" job that will process warranty transactions and create warranty policy.
 
 The following image shows an example of ???
 
