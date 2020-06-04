@@ -108,10 +108,10 @@ A laptop warrantable item (product) has a base price $999 and there are two lapt
 - Warranty_1 has a lower limit of $500 and upper limit of $1000 and **Price range base** value of **Base price**.
 - Warranty_2 has a lower limit of $1001 and upper limit of $2000 and **Price range base** value of **Base price**.
 
-In this case, a prompt to add Warranty_1 will be sent at the POS when the laptop warrantable item with a base price of $999 is added to the cart, since the price of the laptop falls within the lower and upper limit values for Warranty_1.
+In this case, a prompt to add Warranty_1 will be shown at the POS when the laptop warrantable item with a base price of $999 is added to the cart, since the price of the laptop falls within the lower and upper limit values for Warranty_1.
 
 >{!NOTE]
-> For the example above, if you want prompts to be sent for both Warranty_1 and Warranty_2 regardless of the laptop (warrantable item) price, you would set the **Price range base** value to **None**.
+> For the example above, if you want prompts to be shown for both Warranty_1 and Warranty_2 regardless of the laptop (warrantable item) price, you would set the **Price range base** value to **None**.
 
 ## Configure channel-specific settings
 
@@ -121,8 +121,8 @@ To configure channel-specific setting in Commerce, follow these steps.
 
 1. Go to **Products and categories \> Warranty \> Warranty settings\> Channel specific**.
 1. In the **Prompt for warranty** column for your channel, do one of the following:
-    - Select the check box to enable the warranty item prompt. When enabled, a prompt for the warranty item will be sent when the warrantable item is added to the cart.
-    - Clear the check box to disable the warranty item prompt. When disabled, no prompt for the warranty item will be sent when the warrantable item is added to the cart.
+    - Select the check box to enable the warranty item prompt. When enabled, a prompt for the warranty item will be shown when the warrantable item is added to the cart.
+    - Clear the check box to disable the warranty item prompt. When disabled, no prompt for the warranty item will be shown when the warrantable item is added to the cart.
 1. Run the **1070** job to sync the data to the channel.
 
 ## Configure the warranty policy number sequence
@@ -160,11 +160,11 @@ To set up a warranty group in Commerce, follow these steps.
 
 ## Sell warranty items at the POS
 
-Two POS features enable sales associates to sell warranty item during the customer purchase workflow.
+Two POS operations enable sales associates to sell warranty item during the customer purchase workflow.
 
-- **Add warranty** - The **Add Warranty** feature triggers a prompt that displays applicable warranties for a warrantable item that is in the cart.
+- **Add warranty** - The **Add Warranty** operation triggers a prompt that displays applicable warranties for a warrantable item that is selected in the cart.
 
-- **Add warranty to existing transaction** - The **Add Warranty to existing transaction** feature enables sales associates to sell warranties for warrantable items sold previously. The original transaction can be found by entering the receipt number of the original warrantable item transaction.
+- **Add warranty to existing transaction** - The **Add Warranty to existing transaction** operation enables sales associates to sell warranties for warrantable items sold previously. The original transaction can be found by entering the receipt number of the original warrantable item transaction.
 
 The following image shows an example of a POS terminal screen for a purchase.
 
