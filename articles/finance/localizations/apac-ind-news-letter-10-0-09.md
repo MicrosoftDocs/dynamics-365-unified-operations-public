@@ -43,7 +43,7 @@ Charges allocation on a sales order
 
 ## Sales order :
 
-![](media/Charge allocation-10.0.9.png)
+![](media/GST-Charge-Allocation -1-10-0-09.PNG)
 
 In the header user can mark "Assessable value" on charge line . Based on this selection  distributed charge value added 
 to line item taxable value and taxes are computed accordingly 
@@ -54,7 +54,7 @@ This feature will default customer business address in the tax information tab o
 in the tax information tab of a direct delivery purchase order.
 User can enable this feature through feature management. 
  
-![](media/Default Business address-10.0.9.png)
+![](media/GST-customer-business-address-2-10-00-09.PNG)
 
 By using Direct delivery functionality user can create deliveries directly from vendors to customers,
 reducing delivery time and order administration. During direct delivery when purchase order is created Customer 
@@ -66,7 +66,7 @@ default in tax information.
 Under New GSTR return process GST ANX-1 (Annexure of  supplies) and Annexure of Inward Supplies 
 (GST ANX-2) will be filed as part of FORM GST RET-1 (Normal)  returns. User can generate following GSTR returns 
 
-![](media/New GSTR offline tool-10.0.9.png)
+![](media/GST-new-GSTR-offline-tool-3-10-0-09.PNG)
 
 Please find all the details about the New GSTR Return offline Tool report in KB article:
 (https://support.microsoft.com/en-us/help/4549665)  
@@ -81,16 +81,16 @@ Dynamics 365 Finance and the GTE, and the hit posting profile.
 
 Step 1: Append &debug=vs%2CconfirmExit& to D365 AOS URL and press enter to open a new session
 
-![](media/GTE debug mode-10.0.9.png)
+![](media/GST-debug-mode-4-1-10-0-09.PNG)
 
 Step 2: Go to Tax > setup > Tax configuration > Tax setup and check ‘Check model mapping discrepancies’ parameter
  
- ![](media/GTE debug mode-2-10.0.9.png)
+ ![](media/GST-debug-mode-4-2-10-0-09.PNG)
  
 Step 3: Calculate tax for the transaction or re-calculate tax for the transaction, and then click Save to save 
 the ‘GTETroubleshotingLog.txt, and provide the file to Microsoft for investigation.
  
-  ![](media/GTE debug mode-3-10.0.9.png)
+  ![](media/GST-debug-mode-4-3-10-0-09.PNG)
  
 # Critical Fixes 
 
