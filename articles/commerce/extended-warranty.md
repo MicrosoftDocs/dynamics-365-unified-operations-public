@@ -182,11 +182,13 @@ The following image shows an example of the "add warranty to existing transactio
 
 For warranties added in cash and carry transactions, sales associates must proceed through statement posting so that the transactions are posted in Commerce headquarters. Then Commerce users can go to **Retail and Commerce \> Products and categories \> Warranty \> Process warranty transactions** to run the "Process warranty transactions" job that will process warranty transactions and create warranty policy.
 
+The following image shows an example of ???
+
+![Example of](./media/ew-process-warranty.png)
+
 ## Warranty policies
 
 When an extended warranty is sold, a warranty policy entity is automatically created. The warranty policy number can be shared with the customer to give them a reference for the purchased warranty item. Warranty policy properties include the warranty effective start date, expiration date, terms and conditions, warrantable item serial number, and more for the warranty sold.
-
-![Example of](./media/ew-process-warranty.png)
 
 The following table contains warranty policy properties, values, and descriptions.
 
