@@ -47,7 +47,7 @@ You can enable the feature in feature management workspace, feature name is "Ena
  ![](media/GST-Tax-component-Pre-defined-rule-1-10-0-07.PNG)
  
  With the feature enabled, there are several controls enabled in the dialog box, you can use them to control the behavior 
- of the tax component. Refer (https://docs.microsoft.com/en-us/dynamics365/finance/localizations/tax-engine-create-tax-component)
+ of the tax component. Refer (https://docs.microsoft.com/dynamics365/finance/localizations/tax-engine-create-tax-component)
  for details.
  
  ![](media/GST-Tax-component-pre-defined-2-10-0-07.PNG)
