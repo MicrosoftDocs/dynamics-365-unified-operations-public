@@ -2,7 +2,7 @@
 # required metadata
 
 title: APAC India GST Localization Newsletter 10.0.03
-description: This topic describes changes incorporated in Dynamics 365 Application version 10-0-03
+description: This topic describes changes incorporated in Dynamics 365 Application version 10.0.03
 author: prabhatb
 manager: Wangcheng
 ms.date: 05/31/2020
