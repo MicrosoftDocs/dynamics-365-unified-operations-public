@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Regulatory Configuration Services (RCS) - Globalization feature
+title: Regulatory Configuration Services (RCS) - Globalization features
 description: This topic explains how to use Microsoft Regulatory Configuration Services (RCS) and the Global repository to create and use Globalization features. 
 author: JaneA07
 manager: AnnBe
@@ -29,201 +29,232 @@ ms.dyn365.ops.version: AX 10.0.11
 
 ---
 
-# Regulatory Configuration Services (RCS) - Globalization feature
+# Regulatory Configuration Services (RCS) - Globalization features
 
 [!include [banner](../includes/banner.md)]
 
-You can use Microsoft Regulatory Configuration Services (RCS) to create a Globalization feature to use in Globalization services. RCS allows you to:
--	Define related feature components 
--	Manage the feature lifecycle through a feature's status
--	Enable a Globalization feature for a defined environments 
--	Share a feature with other organizations
+You can use Microsoft Regulatory Configuration Services (RCS) to create a Globalization feature that can be used in Globalization services, such as an e-invoicing service. RCS lets you perform these tasks:
 
-The following steps explain how a user in RCS can add a feature with related components, update it's status, and enable it for use in a Globalization service, like an e-Invoicing service. 
-To complete these steps, you must first complete the steps related to:
--	Accessing an RCS instance
--	Creating a configuration provider that is active. For more information, see [Create configuration providers and mark them as active](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
+- Define related components of a feature.
+- Manage the feature lifecycle through a feature's status.
+- Make a feature available for defined environments.
+- Share a feature with other organizations.
 
-In your Dynamics 365 Finance or Operations app instance, you can take the following actions:
-1. Go to **Organization administration** > **Workspaces** > **Electronic reporting**.
-2. If you have no RCS environment provisioned to your company, select **Regulatory services – Configuration** and follow the instructions to provision an RCS environment for your organization.
+The following procedures explain how a user in RCS can add a Globalization feature and related components, update the feature's status, and make the feature available so that it can be used in Globalization services.
+
+Before you complete the procedures, you must complete the steps that are related to the following tasks:
+
+- Accessing an RCS instance.
+- Creating and activating a configuration provider. For more information, see [Create configuration providers and mark them as active](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
+
+In your Dynamics 365 Finance or Operations app instance, follow these steps.
+
+1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
+2. If no RCS environment is provisioned for your company, select **Regulatory services – Configuration**, and follow the instructions to provision one.
 
 > [!NOTE]
-> If an RCS environment has been provisioned to your company, use the page URL to access it by selecting the sign in option.
+> If an RCS environment has already been provisioned for your company, use the page URL to access the environment by selecting the sign-in option.
 
-## Enable the Globalization features
-1. Go to your instance of RCS and select the **Feature management** tile.
-2. From the list, select **Globalization features** and then select **Enable now**.
+## Turn on the Globalization features
 
-![Feature management Global feature](./media/RCS_GlobalF_1%20Feature%20mgmt.JPG)
+1. In your RCS instance, select the **Feature management** tile.
+2. In the **Feature management** workspace, select **Globalization features** in the list, and then select **Enable now**.
 
-## Globalization feature
-To use a Globalization feature, you need to import the feature from the RCS/Global repository and create your own version of the feature to use it. There are two ways to utilize Globalization feature, user can either:
-- Add a new feature based on an existing feature that has been published or shared
-- Add a new feature that you have created from scratch
+    ![Globalization features in Feature management](./media/RCS_GlobalF_1%20Feature%20mgmt.JPG)
+
+## Globalization features
+
+To use a Globalization feature, you must import it from the RCS/Global repository and create your own version of it. There are two ways to add Globalization features:
+
+- Add a derived feature that is based on an existing feature that has been published or shared.
+- Add a new feature that you've created from scratch.
 
 ## Access Globalization features
-1. Navigate to **Feature management** to enable the feature.
-2. Go to the new **Globalization feature workspace** and then select the **e-Invoicing** tile.
 
-  ![Global feature workspace](./media/RCS_GlobalF_2%20Feature%20wrkspace.JPG)
+1. Make sure that the **Globalization features** feature is turned on in Feature management, as described earlier in this topic.
+2. Open the new **Globalization Features** workspace, and select the **e-Invoicing** tile.
 
-The **Globalization features** page will open.
+    ![Global Features workspace](./media/RCS_GlobalF_2%20Feature%20wrkspace.JPG)
 
-  ![Global feature form](./media/RCS_GlobalF_3%20Feature%20form.JPG)
+    The **e-Invoicing Features** page is opened.
 
-## Add a derived feature 
-1. On the **Import feature from Global repository** page.
-    
- ![Global feature import](./media/RCS_GlobalF_4%20Feature%20import%20form%20GR.JPG)
- 
-2. Select **Synchronize** to get the latest features. 
+    ![e-Invoicing Features page](./media/RCS_GlobalF_3%20Feature%20form.JPG)
 
-The features that you see in the synchronized list are features that are available to you because they were published by Microsoft or because they were shared with you by another configuration provider.
-  
-  ![Global feature sync](./media/RCS_GlobalF_5%20Feature%20GR%20sync.JPG)
- 
-3. Select the features from the list that you want to import, and then select **Import**.
+## Add a derived Globalization feature
 
-  ![Global feature import msg](./media/RCS_GlobalF_6%20Feature%20GR%20import%20success.JPG)  
+You can add a new Globalization feature by deriving it from an existing feature that has been published or shared.
 
-4. Select **Add**, and then select **Based on existing version**.
-5. Enter the feature name and description.
-6. Select the base version of the feature from the list of available features, and then select **Create feature**.
+1. Open the **Import feature from Global repository** page.
 
-![Global feature derived](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/janeaug_rcs_Global-feature/articles/finance/localizations/media/RCS_GlobalF_7%20Feature%20create%20derived.JPG) 
+    ![Import feature from Global repository page](./media/RCS_GlobalF_4%20Feature%20import%20form%20GR.JPG)
 
-The feature you added is created with a status of **Draft**.
+2. Select **Synchronize** to get the latest features.
 
-![Global feature create draft](./media/RCS_GlobalF_8%20Feature%20draft%20create.JPG) 
+    The synced list includes features that are available to you either because they were published by Microsoft or because they were shared with you by another configuration provider.
 
-7. Review the feature components to see if updates are needed.
-  - Review the configurations in case you have to customize the Electronic Reporting (ER) formats and their binding with format mappings for the feature version.
-  - Review the setup in case you have to customize the **Actions set**, **Applicability rules**, or **Variables** for the feature version.
+    ![Synced list of features](./media/RCS_GlobalF_5%20Feature%20GR%20sync.JPG)
 
-8. On the **Versions** tab, select an **Effective from** date, and if the **Description** field is empty, enter a description.
-9. Select **Change status** to complete the feature. Completed features can be enabled for a specific environment so the feature can be use in Globalization services, or published to the Global repository.
+3. In the list, select the features to import, and then select **Import**. You receive a message when the selected features have been successfully imported.
+
+    ![Successful import message](./media/RCS_GlobalF_6%20Feature%20GR%20import%20success.JPG)
+
+4. Select **Add**, and then, in the drop-down dialog box, select the **Based on existing version** option.
+5. Enter a name and description for the feature.
+6. In the list of available features, select the base version of the feature, and then select **Create feature**.
+
+    ![Adding a derived feature](./media/RCS_GlobalF_7%20Feature%20create%20derived.JPG)
+
+    The feature that you added is created and has a status of **Draft**.
+
+    ![Derived feature that has Draft status](./media/RCS_GlobalF_8%20Feature%20draft%20create.JPG)
+
+7. Review the feature components to determine whether updates are required:
+
+    - Review the configurations, in case you must customize the Electronic reporting (ER) formats and their binding with format mappings for the feature version.
+    - Review the setup, in case you must customize the **Actions set**, **Applicability rules**, or **Variables** for the feature version.
+
+8. On the **Versions** tab, select an **Effective from** date, and enter a description if the **Description** field is blank.
+9. Select **Change status** to complete the feature. Completed features can be made available for a specific environment so that they can be used in Globalization services, or they can be published to the Global repository.
 
 > [!NOTE]
-> Features with a **Feature version status** of **Published** can be shared with external organizations.
+> Features that have a **Feature version status** value of **Published** can be shared with external organizations.
 
-## Add a new Globalization feature 
-You can add a new Globalization feature by creating the new feature from scratch.
+## Add a new Globalization feature
 
-1. On the **Import feature from Global repository** page, select **Add** > **New feature**.
+You can add a new Globalization feature by creating it from scratch.
+
+1. On the **Import feature from Global repository** page, select **Add**, and then, in the drop-down dialog box, select the **New feature** option.
 2. Enter a name and description for the feature.
 3. Select **Create feature**.
 
-![Global feature create new](./media/RCS_GlobalF_9%20Feature%20create%20new.JPG) 
+    ![Adding a new feature](./media/RCS_GlobalF_9%20Feature%20create%20new.JPG)
 
-4. On the **Versions** tab, select an **Effective from** date and then select **Change status** to complete the feature.	Completed features can be enabled for a specific environment so the feature can be use in Globalization services, or published to the Global repository.
+4. On the **Versions** tab, select an **Effective from** date, and then select **Change status** to complete the feature. Completed features can be made available for a specific environment so that they can be used in Globalization services, or they can be published to the Global repository.
 
 > [!NOTE]
-> Features with a **Feature version status** of **Published** can be shared with external organizations.
+> Features that have a **Feature version status** value of **Published** can be shared with external organizations.
 
-## Feature components overview
+## Feature component overview
 
-Globalization feature has several components parts that cover: 
--	**Version** - Supports feature lifecycle management and allows user to manage status for different versions of the feature
--	**Configurations** - Allows user to manage, view and edit related Electronic Reporting (ER) formats and format mappings
--	**Setups** - Allows users of Globalization services, for example e-invoicing service, to manage the related Feature version set-up, supporting the flexible construction of communication and responses rules
--	**Environment** - Allows users of Globalization services, for example e-invoicing service, to manage the environment where they want to use feature setup version, as well granting authorization for the users that will have access to it
--	**Organizations** - Allows user to share feature with external organization
+Globalization features have several components:
+
+- **Version** – This component supports feature lifecycle management and lets users manage the status for different versions of the feature.
+- **Configurations** – This component lets users manage, view, and edit related ER formats and format mappings.
+- **Setups** – This component lets users of Globalization services, such as an e-invoicing service, manage the setup of the related feature version. Therefore, it supports the flexible construction of communication and responses rules.
+- **Environment** – This component lets users of Globalization services, such as an e-invoicing service, manage the environment where the feature version setup is used and grant authorization to the users who will have access to it.
+- **Organizations** – This component lets users to share the feature with external organizations.
 
 ## Configuring feature components
 
 ### Version and status
-Version manages the Globalization feature lifecycle. The status can be changed in the **Status** field on the **Version** tab. 
-- The status types include:
-  -	**Draft**: The feature can be edited only in this status.
-  -	**Complete**: The feature and all related components are finalized and can't be edited.
-  -	**Published**: The feature and all related components are published to the Global repository.
-  -	**Shared**: The feature and all related components are shared with external organizations.
-  -	**Enabled**: The feature and all related components are enabled for use in a Globalization service, for example e-Invoicing.
-  
-  > [!NOTE]
-  > Some statuses are required to be moved through sequentially, so every status may not be available at every lifecycle stage.
+
+The version is used to manage the Globalization feature lifecycle.
+
+The status can be changed in the **Status** field on the **Version** tab. The following statuses are available:
+
+- **Draft** – The feature can be edited only when it's in this status.
+- **Complete** – The feature and all related components have been finalized (completed) and can't be edited.
+- **Published** – The feature and all related components have been published to the Global repository.
+- **Shared** – The feature and all related components have been shared with external organizations.
+- **Enabled** – The feature and all related components have been enabled for use in a Globalization service, such as an e-invoicing service.
+
+> [!NOTE]
+> Features must move sequentially through some of these statuses. Therefore, not every status might be available at every lifecycle stage.
 
 ### Configurations
-  -	**View**: View the underlying feature configurations that don’t require any updating.
-  -	**Edit**: Create a draft version of the selected configuration to edit the format or format mapping through the **Format designer**.
-  -	**Delete**: Delete a selected configuration from the feature
-  -	**Rebase**: Rebase the feature. For more information, see the [Rebasing a derived globalization feature](#rebase) section later in the topic.
+
+The following actions are available for configurations:
+
+- **View** – View the underlying feature configurations that don't require any update.
+- **Edit** – Create a draft version of a selected configuration so that you can edit the format or format mapping in the Format designer.
+- **Delete** – Delete a selected configuration from the feature.
+- **Rebase** – Rebase the feature. For more information, see the [Rebase derived Globalization features](#rebase) section later in this topic.
 
 ### Setups
-  -	**Add**: Create a new feature setup, which can be  derived from an existing feature setup or created from the scratch.
-  -	**Delete**: Delete a selected feature setup.
-  -	**View**: View the underlying feature setup that does not require any modifying.
-  -	**Edit**: Create, delete, or modify the attributes of the three main components of a feature setup:
-      - Actions and their parameters
-      - Applicability rules
-      - Variables
-  
-For more information about feature setup, see [Configuring feature set-up for e-Invoicing](../../fin-ops-core/dev-itpro/analytics/tasks/configuration-feature-set-for-einvoicing.md).
-    
-  ![Global feature set up](./media/RCS_GlobalF_10%20Feature%20set%20up.JPG) 
-  
+
+The following actions are available for feature setups:
+
+- **Add** – Create a new feature setup. This feature setup can be derived from an existing feature setup or created from scratch.
+- **Delete** – Delete a selected feature setup.
+- **View** – View an underlying feature setup that doesn't require any changes.
+- **Edit** – Create, delete, or modify the attributes of the three main components of a feature setup:
+
+    - Actions and their parameters
+    - Applicability rules
+    - Variables
+
+For more information about feature setups, see [Configuring feature set-up for e-Invoicing](../../fin-ops-core/dev-itpro/analytics/tasks/configuration-feature-set-for-einvoicing.md).
+
+![Feature version setup page](./media/RCS_GlobalF_10%20Feature%20set%20up.JPG)
+
 ### Environments
- - **Enable**: For a selected feature version, choose a published environment and enable it with an **Effective from** date. For more information, see the [Configuring Environments for enablement section](#configureenvironment) later in this topic.
- -	**Cancel**: Remove an environment for a feature setup.
+
+The following actions are available for environments:
+
+- **Enable** – For a selected feature version, select a published environment, and select an **Effective from** date when it should be available. For more information, see the [Configure environments for enablement](#configureenvironment) section later in this topic.
+- **Cancel** – Remove an environment for a feature setup.
 
 ### Organizations
-Complete the following steps to share a Globalization feature with an external organization.
 
-1. Select the feature that you want to share and on the **Organizations** tab, select **+Share with**.
-2. Enter the organization domain name, and then select **Share**.
-     
-   ![Global feature - Share with](./media/RCS_GlobalF_20%20Feature%20orgn_share%20with.JPG) 
+Follow these steps to share a Globalization feature with an external organization.
 
-The feature is shared with the selected organization and is available for them in the Global repository where it can be imported for use  into their RCS or Finance instance.
+1. Select the feature to share.
+2. On the **Organizations** tab, select **Share with**, and then, in the drop-down dialog box, enter the organization's domain name.
+3. Select **Share**.
 
+    ![Sharing a feature with an organization](./media/RCS_GlobalF_20%20Feature%20orgn_share%20with.JPG)
 
-## <a name="rebase"></a>Rebasing a derived Globalization features
-You can rebase a derived feature to the new or updated base feature version. This allows changes that have occurred in the base version to be automatically updated. The updated base version feature is created by the originating configuration provider, and published or shared.
- 
- ![Global feature new version](./media/RCS_GlobalF_12%20Feature%20new%20version.JPG) 
- 
-For example, if you want to rebase the derived version of a feature you created, you want to start by getting the latest version of the feature by importing it from the Global repository.
+The feature is shared with the selected organization and is available for that organization in the Global repository. From there, the feature can be imported into the organization's instance of RCS or Dynamics 365 Finance so that it can be used.
+
+## <a name="rebase"></a>Rebase derived Globalization features
+
+You can rebase a derived Globalization feature to the new or updated base feature version. In this way, changes that have occurred in the base version can be automatically updated. The updated base feature version is created by the originating configuration provider, and it's then published or shared.
+
+![Updated base feature version](./media/RCS_GlobalF_12%20Feature%20new%20version.JPG)
+
+For example, if you want to rebase the derived version of a feature that you created, you first get the latest version of the feature by importing it from the Global repository.
 
 1. On the Action Pane, select **Import**.
-2. Select **Synchronize** to get latest features.
-3. Select features to import from feature list, and select **Import**.
+2. Select **Synchronize** to get the latest features.
+3. In the list of features, select the features to import, and then select **Import**.
 
-  ![Global feature new version import](./media/RCS_GlobalF_13%20Feature%20new%20version%20import.JPG) 
- 
-4. From the feature list, select the feature to be rebased.
-5. On the **Version** tab, select **New** to create draft version.  
+    ![Importing the latest version of a feature](./media/RCS_GlobalF_13%20Feature%20new%20version%20import.JPG)
 
-  ![Global feature rebase](./media/RCS_GlobalF_14%20Feature%20new%20base%20version.JPG) 
+4. In the list of features, select the feature to rebase.
+5. On the **Version** tab, select **New** to create a draft version.
 
-6. Select **Rebase**. 
-7. In the **Rebase** dialog, select the latest version of the feature to rebase to.
+    ![New draft version created](./media/RCS_GlobalF_14%20Feature%20new%20base%20version.JPG)
 
-  ![Global feature version](./media/RCS_GlobalF_15%20Feature%20rebase%20version.JPG) 
+6. Select **Rebase**.
+7. In the **Rebase** dialog box, select the latest version of the feature to rebase to.
+
+    ![Rebase dialog box](./media/RCS_GlobalF_15%20Feature%20rebase%20version.JPG)
 
 8. Select **OK**.
-9. Review the feature components and make any changes.
-10. Select **Change status** to complete the rebased feature. When the rebase is complete, you will be able to take additional actions including publishing and enabling the feature for use in the Globalization service.
+9. Review the feature components, and make any changes that are required.
+10. Select **Change status** to complete the rebased feature. When the rebase is completed, you can perform additional actions. For example, you can publish the feature and make it available for use in Globalization services.
 
-  ![Global feature complete status](./media/RCS_GlobalF_16%20Feature%20rebase%20version%20complete.JPG) 
+    ![Feature status updated to Completed](./media/RCS_GlobalF_16%20Feature%20rebase%20version%20complete.JPG)
 
-## <a name="configureenvironment"></a>Configuring environments for enablement
-Users of the Globalization services can manage the environment to set up the feature and provide authorization to other users that will have access the feature.
+## <a name="configureenvironment"></a>Configure environments for enablement
 
-1. Under **Environments**, select the **e-invoicing** tile.
+Users of Globalization services can manage the environment to set up a Globalization feature and grant authorization to other users who will have access to it.
 
-  ![Global feature environment](./media/RCS_GlobalF_17%20Feature%20environment.JPG) 
+1. In the **Globalization Features** workspace, under **Environments**, select the **e-Invoicing** tile.
 
-2. Select **Key Vault parameters**, and then select **New** to create a Key vault secret. 
-3. Enter a name and description for the Key vault and in the **Key Vault URI** field, enter the link that identifies the key vault resource in Azure.
-4. Select **Add** to add certificate names, and provide a name and description for each certificate. 
+    ![Globalization Features workspace](./media/RCS_GlobalF_17%20Feature%20environment.JPG)
 
-  ![Global feature key vault](./media/RCS_GlobalF_18%20Feature%20envn%20key%20vault%20parameter.JPG) 
+2. Select **Key Vault parameters**, and then select **New** to create an Azure Key Vault secret.
+3. Enter a name and description for the key vault, and then, in the **Key Vault URI** field, enter the URL that identifies the Key Vault resource in Azure.
+4. On the **Certificates** FastTab, select **Add** to add certificate names, and enter a name and description for each certificate.
 
-5. Select **New** to create a new environment and provide a name, description and the storage SAS token secret. 
-6. Select **New** to add users that will have permission to access this environment.
-7. Provide the user ID and email for each user that you add. 
-8. Select **Publish** to publish the environment.
+    ![Certificate added](./media/RCS_GlobalF_18%20Feature%20envn%20key%20vault%20parameter.JPG)
 
-  ![Global feature environment publishing](./media/RCS_GlobalF_19%20Feature%20envn%20publishing.JPG) 
+5. Select **New** to create a new environment.
+6. Enter a name, a description, and the storage shared access signature token secret.
+7. On the **Users** FastTab, select **New** to add a user who will have permission to access this environment.
+8. Enter the user's user ID and email address.
+9. Repeat steps 7 and 8 to add more users.
+10. Select **Publish** to publish the environment.
 
+    ![Published environment](./media/RCS_GlobalF_19%20Feature%20envn%20publishing.JPG)
