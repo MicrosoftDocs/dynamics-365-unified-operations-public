@@ -35,7 +35,7 @@ This newsletter includes a summary of the new features and critical bug fixes re
 You can learn more about the shipped features in 
 -[ What's new or changed in Finance and Operations version ] (https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0)
 
-# New Features
+## New Features
 ## New Configuration 
 The following configurations, which you can get from Shared Asset Library in LCS and use it in version 10, are available:
 
@@ -67,7 +67,7 @@ You can multi-select lookup columns, and search available columns.
 
 ![](media/GST-gte-multi-select-5-10-0-00.PNG)
 
-# Critical Fixes 
+## Critical Fixes 
 
 - Cannot synchronize extended configuration if you change the data model in your extended tax document.
 
@@ -77,7 +77,7 @@ You can multi-select lookup columns, and search available columns.
   it will not be in the GSTR
 - Block the posting with GST if there isn't GST transaction ID. 
 
-# Upcoming critical fixes in 10.0.1
+## Upcoming critical fixes in 10.0.1
 
 - Total Item Discount Amount is not coming in GSTR.
 - Item Unit Of Measurement should show both unit and its description.
