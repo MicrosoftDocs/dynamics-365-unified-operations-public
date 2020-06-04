@@ -140,7 +140,9 @@ order to mitigate difference for custom duty
 
 - Create new posting account "Tax payable reverse charge" 
 
+
 ![](media/GST-tax-payable-reverse charge-6-10-0-05.PNG)
+
 
 ![](media/GST-Reverse-charge-posting-7-10-0-05.PNG)
 
