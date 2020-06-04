@@ -184,23 +184,27 @@ For warranties added in cash and carry transactions, sales associates must proce
 
 ## Warranty policies
 
-Once an extended warranty is sold, a warranty policy entity will be created. The warranty policy number can be shared to the customer to give them a reference for the extended warranty purchased. The warranty policy will include the start date, end date, terms and conditions, serial number of the item, and more for the warranty sold.
+When an extended warranty is sold, a warranty policy entity is automatically created. The warranty policy number can be shared with the customer to give them a reference for the purchased warranty item. Warranty policy properties include the warranty effective start date, expiration date, terms and conditions, warrantable item serial number, and more for the warranty sold.
 
-Warranty Policy details
+![Example of](./media/ew-process-warranty.png)
 
-*PolicyNumber - string (20)*
-*WarrantiedItemId - string (20)*
-*WarrantiedInventoryLotId - string (20)*
-*WarrantiedSerialNumber - string (20)*
-*WarrantiedFulfilledDate - Date*
-*WarrantyItemId - string (20)*
-*WarrantyInventoryLotId - string (20)*
-*WarrantySalesDate - Date*
-*WarrantyEffectiveDate - Date*
-*WarrantyExpirationDate - Date*
-*CustAccount - string (20)*
-*Status - enum (Created / Voided / Effective / Expired)*
-*Notes - string (255)*-->
+The following table contains warranty policy properties, values, and descriptions.
+
+| **Property name** | **Value** | **Description** |
+|-------------------|------------|-----------------|
+| PolicyNumber |  character string (20 max) | Warranty policy number |
+| WarrantiedItemId |  character string (20 max) | Warrantable item ID |
+| WarrantiedInventoryLotId |  character string (20 max) | Warrantable item lot ID |
+| WarrantiedSerialNumber |  character string (20 max) | Warrantable item serial number |
+| WarrantiedFulfilledDate |  Date | Warranty policy fulfillment date |
+| WarrantyItemId |  character string (20 max) | Warranty item ID |
+| WarrantyInventoryLotId |  character string (20 max) | Warranty item inventory lot ID |
+| WarrantySalesDate |  Date | Warranty item sale date |
+| WarrantyEffectiveDate |  Date | Warranty policy effective date |
+| WarrantyExpirationDate |  Date | Warranty policy expiration date |
+| CustAccount |  character string (20 max) | Customer account number |
+| Status |  Created, Voided, Effective, Expired) | Warranty policy status |
+| Notes |  character string (255 max) | Warranty policy notes, such as terms and conditions |
 
 ## Frequently asked questions (FAQs)
 
