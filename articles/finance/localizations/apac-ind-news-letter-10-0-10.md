@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: APAC-IND-Newsletter-10-0-10
-description: This topic describes changes incorporated in Dynamics 365 Application version 10-0-10
+title: APAC India GST Localization Newsletter 10.0.10
+description: This topic describes changes incorporated in Dynamics 365 Application version 10.0.10
 author: prabhatb
 manager: Wangcheng
 ms.date: 05/31/2020
@@ -33,9 +33,9 @@ ms.dyn365.ops.version:
 
 This newsletter includes a summary of the new features and critical bug fixes released in version 10.0.10 for India.
 You can learn more about the shipped features in 
--[ What's new or changed in Finance and Operations version ] (https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-10)
+-[ What's new or changed in Finance and Operations version ] (https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-10)
 
-# New Features
+## New Features
 ## Import order over-delivery setup respected at Invoice registration stage
 
 In case of import order user do setup to accept over delivery . At the time of invoice registration user can adjust receive quantity.
@@ -73,7 +73,7 @@ Setup TDS exchange rate as TDS and Accounting currency exchange rate type as Def
 |     TDS Payable            |              |                   |     10                  |     TDS Exchange Rate                           |
 |     Total                  |     118      |                   |     118                 |                                                 |
 
-# Critical Fixes 
+## Critical Fixes 
 
 - Enable date time tracking for tax run time lookup condition table. 
 -	Transaction type not showing in case of tax Journal posting . 
@@ -92,7 +92,7 @@ Setup TDS exchange rate as TDS and Accounting currency exchange rate type as Def
   - Creating Invoice/Debit note to customer (GST is calculating positive value for discount) 
 
 
-# Upcoming critical fixes in 10.0.11 
+## Upcoming critical fixes in 10.0.11 
 
 -	When created one main vendor with multiple sub-vendor. Currently system is picking the main supplier name and
   address and displaying in GSTR-2 ,
