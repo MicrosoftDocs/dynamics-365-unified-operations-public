@@ -43,7 +43,7 @@ Charges allocation on a sales order
 
 ## Sales order :
 
-![](media/GST-Charge-Allocation -1-10-0-09.PNG)
+![](media/GST-charge-allocation-1-10-0-09.PNG)
 
 In the header user can mark "Assessable value" on charge line . Based on this selection  distributed charge value added 
 to line item taxable value and taxes are computed accordingly 
