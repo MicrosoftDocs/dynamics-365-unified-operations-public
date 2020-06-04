@@ -55,8 +55,10 @@ Coupons can be configured as limited-use coupons. The usage limit can be defined
 
 The limit is enforced per coupon code on a coupon. For example, a single-use coupon that has two coupon codes can be used two times: one time for each coupon code. Each code on a coupon can be independently set to active.
 
+The coupons can be used across any selling channel however, for call center orders, the limited use coupons can be used for only those call centers orders where the "Order completion" setting on the call center is enabled. If this setting is disabled, then only non-limited use type coupons can be used in such call center orders.
+
 > [!NOTE]
-> Once a coupon code has reached its usage limit, the system does *not* automatically change the status of the coupon code to "Used". The system however, does not allow further usage of a coupon code which has reached its usage limit. If the status of a coupon code is manually set to anything apart from "Active" then this coupon code cannot be used in any channel.
+> Once a coupon code has reached its usage limit, the system does *not* automatically change the status of the coupon code to "Used". The system however, does not allow further usage of a coupon code which has reached its usage limit. If the status of a coupon code is manually set to anything apart from "Active" then this coupon code cannot be used in any channel.  
 
 ## Managing coupons
 
