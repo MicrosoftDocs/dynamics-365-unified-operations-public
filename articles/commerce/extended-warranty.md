@@ -210,15 +210,15 @@ The following table contains warranty policy properties, values, and description
 
 ## Frequently asked questions (FAQs)
 
-**Why don't I see warranty prompt in POS?**
+**Why don't I see a warranty prompt in POS?**
 
-Check if the warranty product is assorted to the channel. In Retail and Commerce, check if the warranty group is configured to include the relevant channel.
+Check if the warranty product is assorted to the channel. Also check if the warranty group is configured to include the relevant channel.
 
-**When trying to add a warranty to existing transaction and entering the customer order receipt number, why don't I see any transaction line items**?
+**When I try to add a warranty to an existing transaction and enter the customer order receipt number, why don't I see any transaction line items**?
 
 Run a pull job (P-Job) to upload the receipts to headquarters, which is required for the receipt to be found.
 
-**Why is the warranty feature only applicable for serialized products?**
+**Why is the warranty feature only applicable to serialized products?**
 
 A warranty is a service provided for a specific, unique product. In Dynamics 365, a product can only be uniquely identified with a serial number.
 
