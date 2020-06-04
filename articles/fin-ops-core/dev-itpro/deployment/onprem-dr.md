@@ -29,11 +29,11 @@ ms.dyn365.ops.version: Platform update 37
 ---
 
 # On-premises Disaster Recovery Configuration
-"Disaster Recovery (DR) is an important consideration also for on-premise deployments of Dynamics 365 F&O to protect you from any event that may put your organization's operations at risk. Examples for this can be equipment failures, data center break downs due to cyber attacks, electrical, physical or other disasters.
+Disaster Recovery (DR) is an important consideration also for on-premise deployments of Dynamics 365 F&O to protect you from any event that may put your organization's operations at risk. Examples for this can be equipment failures, data center break downs due to cyber attacks, electrical, physical or other disasters.
 
-The core concept of DR involves the use of a second data center including a data recover environment (DR environment). It is recommended to plan, document and test DR as carefully as your production setup."
+The core concept of DR involves the use of a second data center including a data recover environment (DR environment). It is recommended to plan, document and test DR as carefully as your production setup.
 
-Please note:
+**Please note:**
 High Availability configuration isn't covered within this document – for the minimum setup required for High Availability read [System requirements for on-premises deployments](../../fin-ops/get-started/system-requirements-on-prem.md#minimum-infrastructure-requirements)
 
 ### Limitations of this document
