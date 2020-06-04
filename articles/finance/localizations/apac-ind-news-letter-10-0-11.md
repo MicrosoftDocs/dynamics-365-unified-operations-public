@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: APAC-IND-Newsletter-10-0-11
-description: This topic describes changes incorporated in Dynamics 365 Application version 10-0-11
+title: APAC India GST Localization Newsletter 10.0.11
+description: This topic describes changes incorporated in Dynamics 365 Application version 10.0.11
 author: prabhatb
 manager: Wangcheng
 ms.date: 05/31/2020
@@ -33,9 +33,9 @@ ms.dyn365.ops.version:
 
 This newsletter includes a summary of the new features and critical bug fixes released in version 10.0.11 for India.
 You can learn more about the shipped features in 
--[ What's new or changed in Finance and Operations version ] (https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-11)
+-[ What's new or changed in Finance and Operations version ] (https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-11)
 
-# New Features
+## New Features
 
 ## GST Tax settlement as per new settlement rules  (vide Circular No. 98/17)
 
@@ -58,7 +58,7 @@ with any  tax settlement priority. In existing solution by default each tax co
 Stock transfer transaction upload through data entity is provided so that user having large size  stock transfer order can use 
 the data management to upload stock transfer transactions.  
 
-# Critical Fixes 
+## Critical Fixes 
 
 - TDS adjustment Journal for adjusting TDS amount on already posted  transaction is not taking place and throwing an error message.
   This is happening when transfer adjustment amount from tax journal to general Journal for posting.  
@@ -90,7 +90,7 @@ the data management to upload stock transfer transactions. 
   rate for the whole transaction 
 
 
-# Upcoming critical fixes in 10.0.12 
+## Upcoming critical fixes in 10.0.12 
 
 - Tax information fields are not getting updated automatically when user copy lines from original free text invoice   
 -	TDS statement and Voucher reversal, tax payment error was appearing when vendor invoice Journal with TDS is posted.  
