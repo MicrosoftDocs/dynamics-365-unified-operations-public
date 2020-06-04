@@ -33,7 +33,7 @@ ms.dyn365.ops.version:
 
 This newsletter includes a summary of the new features and critical bug fixes released in version 10.0.01 for India.
 You can learn more about the shipped features in 
--[ What's new or changed in Finance and Operations version ] (https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-1)
+-[ What's new or changed in Finance and Operations version ] (https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-1)
 
 ## New Features
 ## New Configuration 
