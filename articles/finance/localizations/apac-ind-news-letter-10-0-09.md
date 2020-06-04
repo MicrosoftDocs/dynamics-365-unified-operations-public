@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: APAC-IND-Newsletter-10-0-09
-description: This topic describes changes incorporated in Dynamics 365 Application version 10-0-09
+title: APAC India GST Localization Newsletter 10.0.09
+description: This topic describes changes incorporated in Dynamics 365 Application version 10.0.09
 author: prabhatb
 manager: Wangcheng
 ms.date: 05/31/2020
@@ -33,9 +33,9 @@ ms.dyn365.ops.version:
 
 This newsletter includes a summary of the new features and critical bug fixes released in version 10.0.09 for India.
 You can learn more about the shipped features in 
--[ What's new or changed in Finance and Operations version ] (https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-9)
+-[ What's new or changed in Finance and Operations version ] (https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-9)
 
-# New Features
+## New Features
 ## Charge allocation feature in sales order  
 Introducing new feature charge allocation to all sales order lines.
 To enable this feature Go to feature management > check for updates > enable the below features
@@ -69,7 +69,7 @@ Under New GSTR return process GST ANX-1 (Annexure of  supplies) and Annexure of 
 ![](media/GST-new-GSTR-offline-tool-3-10-0-09.PNG)
 
 Please find all the details about the New GSTR Return offline Tool report in KB article:
-(https://support.microsoft.com/en-us/help/4549665)  
+(https://support.microsoft.com/help/4549665)  
 
 ## GTE debug mode
 Sometimes tax cannot be calculated and/or posted properly after you extend the GST configuration. If you change the data model,
@@ -92,7 +92,7 @@ the ‘GTETroubleshotingLog.txt, and provide the file to Microsoft for investiga
  
   ![](media/GST-debug-mode-4-3-10-0-09.PNG)
  
-# Critical Fixes 
+## Critical Fixes 
 
 - Business address is not updated automatically by system in tax information field while crating Sales order .
 -	While generating "Free text invoice" from legal entity system throw error " Something went wrong while generating the request" 
@@ -114,7 +114,7 @@ the ‘GTETroubleshotingLog.txt, and provide the file to Microsoft for investiga
 -	Transfer order posting not picking up IGST account .
 
 
-# Upcoming critical fixes in 10.0.10 
+## Upcoming critical fixes in 10.0.10 
 
 - Import order-over-delivery setup respected at invoice registration stage 
 -	Enable date time tracking for tax run time lookup condition table 
