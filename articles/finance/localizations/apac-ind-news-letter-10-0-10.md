@@ -93,8 +93,7 @@ Setup TDS exchange rate as TDS and Accounting currency exchange rate type as Def
 ## Upcoming critical fixes in 10.0.11 
 
 -	When created one main vendor with multiple sub-vendor. Currently system is picking the main supplier name and
-  address and displaying in GSTR-2 ,
-  which not selected in the Tax Information at the time of posting . 
+  address and displaying in GSTR-2 ,which not selected in the Tax Information at the time of posting . 
 -	Withholding tax Journal is crated to  adjust the withholding tax (TDS) amount and select the voucher transaction for adjustment. 
   When post the Journal system is throwing an error log once the transaction has been selected and transfer to General Journal. 
 -	This fix was done to display warning message  when user defined the charge code with the posting type as Ledger and item combination
@@ -103,9 +102,8 @@ Setup TDS exchange rate as TDS and Accounting currency exchange rate type as Def
 -	Wrong Tax information in Sales order created from sales agreement. In this issue address field is populating legal entity address
   instead of warehouse address. 
 -	When user posted Free text Invoice with GST tax amount and do rounding off setup under  currencies  system not
-  rounding invoice amount
-  for customer sub-ledger account but customer main ledger is rounding off correctly in voucher.  
-  ### Path >General ledger module>> currencies >>currencies Go to INR currencies >> Go to Rounding rules >>General rounding 
+  rounding invoice amount for customer sub-ledger account but customer main ledger is rounding off correctly in voucher.  
+  Path >General ledger module>> currencies >>currencies Go to INR currencies >> Go to Rounding rules >>General rounding 
   rule 0.01 >> Sales order rounding rule 1.00 
 -	TDS section code and invoice number is not  appearing in TDS inquiries 
  
