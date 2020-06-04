@@ -44,13 +44,13 @@ like add tax measures, configure tax calculation formula, configure tax posting 
 
 You can enable the feature in feature management workspace, feature name is "Enable creating tax component with pre-defined rules"
 
- ![](media/Tax code with predefined-10.0.7.png)
+ ![](media/GST-Tax- component-Pre-defined-rule-1-10-0-07.PNG)
  
  With the feature enabled, there are several controls enabled in the dialog box, you can use them to control the behavior 
  of the tax component. Refer (https://docs.microsoft.com/en-us/dynamics365/finance/localizations/tax-engine-create-tax-component)
  for details.
  
- ![](media/Tax code with predefined -II-10.0.7.png)
+ ![](media/GST-Tax- component-Pre-defined-rule-1-10-0-07.PNG)
  
 # Critical Fixes 
 
