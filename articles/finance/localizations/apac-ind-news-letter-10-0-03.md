@@ -45,12 +45,12 @@ GSTR report generating overall time reduced 30%  by replacing line by line data 
 ## Enable to delete the selected (multiple) tax lookup condition record
 Besides delete one single record and delete all records, delete select records is now supported to improve operation efficiency
 
-![](media/Deleted multiple tax lookup-10.0.3.png)
+![](media/GST-delete-multiple-tax-lookup-1-10-0-03.PNG)
 
 ## Enable tax calculation based on accounting currency for import/export order
 Refer the [what's new of 10.0.3 ] (https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-3#calculate-tax-in-accounting-currency-for-importexport-order)
 
-![](media/Tax calculation on accounting currency-10.0.3.png	)
+![](media/GST-tax-based-accounting-currency-2-10-0-03.PNG	)
 
 ## Please use Tax transaction inquiry for TDS/TCS instead of Post withholding tax
 
